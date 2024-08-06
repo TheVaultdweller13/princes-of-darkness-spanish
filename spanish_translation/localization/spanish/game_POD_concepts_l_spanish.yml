@@ -1,18 +1,18 @@
 ﻿l_spanish:
  game_concept_princes_of_darkness: "Princes of Darkness" #NT!
  game_concept_princesofdarkness: "$game_concept_princes_of_darkness$" #NT!
- game_concept_princes_of_darkness_desc: "Un mod para Crusader Kings 3 centrado en las criaturas sobrenaturales de '[world_of_darkness|E]' de White Wolf. ¡Estás jugando ahora mismo! Un [prince|E] es el título de propiedad principal para un [GetTrait('vampire').GetName( GetNullCharacter )] que gobierna un dominio, equivalente a un CK3 [duchy|E]. ¿Qué es la oscuridad? Mira dentro de tí mismo." #NT!
- game_concept_POD: "Vaina" #NT!
+ game_concept_princes_of_darkness_desc: "Un mod para Crusader Kings 3 centrado en las criaturas sobrenaturales de '[world_of_darkness|E]' de White Wolf. ¡Estás jugando ahora mismo! Un [prince|E] es un título de propiedad para un [GetTrait('vampire').GetName( GetNullCharacter )] que gobierna un dominio, equivalente a un [duchy|E] en CK3. ¿Qué es la oscuridad? Mira dentro de ti mismo." #NT!
+ game_concept_POD: "PoD" #NT!
   
  game_concept_world_of_darkness: "Mundo de tinieblas" #NT!
- game_concept_WoD: "Guerra de Drogas" #NT!
+ game_concept_WoD: "MDT" #NT!
  game_concept_world_of_darkness_desc: "El Mundo de Tinieblas es un universo que lleva más de 30 años en funcionamiento y que ha sido cubierto por cientos de libros y otros medios. La idea principal es que, en nuestro mundo, varias facciones de criaturas sobrenaturales interactúan bajo la superficie, creando un inframundo lleno de intrigas e historias." #NT!
   
  game_concept_prince: "Príncipe" #NT!
- game_concept_the_prince: "El príncipe" #NT!
- game_concept_the_princes: "La princesa" #NT!
+ game_concept_the_prince: "El Príncipe" #NT!
+ game_concept_the_princes: "Los Principes" #NT!
  game_concept_princes: "Príncipes" #NT!
- game_concept_prince_desc: "Un príncipe es el título territorial principal de un [GetTrait('vampire').GetName( GetNullCharacter )] que gobierna un dominio, equivalente a un CK3 [duchy|E]." #NT!
+ game_concept_prince_desc: "Un Príncipe es el título territorial principal de un [GetTrait('vampire').GetName( GetNullCharacter )] que gobierna un dominio, equivalente a un CK3 [duchy|E]." #NT!
   
  game_concept_bloodpotency: "Potencia de la sangre" #NT!
  game_concept_bloodpotency_desc: "$game_concept_bloodpotency$ es el poder inherente de la sangre de un [GetTrait('vampire').GetName( GetNullCharacter )] que crece lentamente con el tiempo y está limitado por el [vampgeneration|E] del [GetTrait('vampire').GetName( GetNullCharacter )]. $game_concept_bloodpotency$ disminuye lentamente en [torpor|E]. Puede aumentar más rápidamente al diabolizar a $POD_splat_vampire_plural$ con mayor potencia de sangre. $game_concept_bloodpotency$ afecta la rapidez con la que el uso de [discipline|E] aumenta el hambre y el impacto que tienen tus poderes [GetTrait('vampire').GetName( GetNullCharacter )] como [GetTrait('vampire').GetName( GetNullCharacter )]0." #NT!
@@ -20,7 +20,7 @@
   
  game_concept_vampgeneration: "Generación" #NT!
  game_concept_generation: "Generación" #NT!
- game_concept_vampgeneration_desc: "Según [cainites|E], es la distancia de la sangre de un [GetTrait('vampire').GetName( GetNullCharacter )] con el padre de todos los $POD_splat_vampire_plural$: Caín. Caín es de [GetTrait('vampgeneration1').GetName( GetNullCharacter )]. Los vampiros de [GetTrait('vampgeneration14').GetName( GetNullCharacter )] o superior son de "sangre débil" y son casi humanos y apenas vampiros. Los vampiros que no creen que Caín sea el progenitor a menudo rastrean su [vampgeneration|E] hasta algún otro fundador mítico. Los vampiros pueden disminuir su [vampgeneration|E], y así aumentar su poder potencial, al comprometer [diablerie|E] en un vampiro de [vampgeneration|E] menor que el suyo." #NT!
+ game_concept_vampgeneration_desc: "Según los [cainites|E], es la distancia de la sangre de un [GetTrait('vampire').GetName( GetNullCharacter )] con el padre de todos los $POD_splat_vampire_plural$: Caine. Caine es de [GetTrait('vampgeneration1').GetName( GetNullCharacter )]. Los vampiros de [GetTrait('vampgeneration14').GetName( GetNullCharacter )] o superior son de "sangre débil" y son casi humanos y apenas vampiros. Los vampiros que no creen que Caine sea el progenitor a menudo rastrean su [vampgeneration|E] hasta algún otro fundador mítico. Los vampiros pueden disminuir su [vampgeneration|E], y así aumentar su poder potencial, al comprometer [diablerie|E] en un vampiro de [vampgeneration|E] menor que el suyo." #NT!
   
  game_concept_bloodbond: "Vínculo de sangre" #NT!
  game_concept_bloodbond_desc: "Beber sangre de [GetTrait('vampire').GetName( GetNullCharacter )] suele generar sentimientos de intensa lealtad y obediencia hacia el [GetTrait('vampire').GetName( GetNullCharacter )]. También llamado "Juramento de sangre", actúa como un gancho de intensidad creciente a medida que se consume más sangre. Algunos vampiros no pueden crear vínculos con su sangre. Otros vampiros son completamente incapaces de crear vínculos." #NT!
@@ -30,12 +30,12 @@
   
  game_concept_beast: "Bestia" #NT!
  game_concept_the_beast: "$game_concept_thebeast$" #NT!
- game_concept_thebeast: "La bestia" #NT!
+ game_concept_thebeast: "La Bestia" #NT!
  game_concept_beast_desc: "[the_beast|E] es un término usado por $POD_splat_vampire_plural$ para describir al depredador interno que lucha por controlar su mente. Se opone directamente a su Humanidad y es responsable de muchos de los impulsos degradados que [cainites|E] siente cada noche.\n\nEn momentos de extrema angustia, la Bestia puede abrumar a un [GetTrait('vampire').GetName( GetNullCharacter )] obligándolo a entrar en Frenesí, un estado de lucha o huida puramente animal.\n\nEn [princes_of_darkness|E], la Bestia a veces te hablará a ti #R de esta manera#!. Si un [GetTrait('vampire').GetName( GetNullCharacter )] se vuelve negativo en [piety|E], corre el riesgo de caer en un frenesí permanente y convertirse en un [GetTrait('wight').GetName( GetNullCharacter )]. Esto es una abdicación de facto a su $POD_splat_vampire_plural$0." #NT!
   
- game_concept_the_masquerade: "La mascarada" #NT!
- game_concept_masquerade: "La mascarada" #NT!
- game_concept_masquerade_exposure: "Exposición de mascaradas" #NT!
+ game_concept_the_masquerade: "La Mascarada" #NT!
+ game_concept_masquerade: "La Mascarada" #NT!
+ game_concept_masquerade_exposure: "Exposición de la Mascarada" #NT!
  game_concept_masquerade_i: "¡@masquerade_icon!" #NT!
  game_concept_masquerade_exposure_with_icon: "@masquerade_icon! Exposición de Masquerade" #NT!
  game_concept_masquerade_desc: "La Mascarada es un término usado por $POD_splat_vampire_plural$ para describir el hecho de mantener su existencia en secreto de los mortales. Violar la Mascarada puede llevar a complicaciones como ser atacado por cazadores. En algunos dominios, puede considerarse como un [crime|E] entre los vampiros.\nLa mayoría de las religiones pueden encubrir las violaciones de la Mascarada usando un [character_interaction|E] personal. Tener una Exposición a la Mascarada demasiado alta llevará a revueltas de facciones y eventos en los que tu personaje será atacado." #NT!
@@ -70,7 +70,7 @@
   
  game_concept_hunger: "Hambre" #NT!
  game_concept_hunger_desc: "$game_concept_hunger$ es el deseo de un [GetTrait('vampire').GetName( GetNullCharacter )] de consumir sangre. Es causado por [the_beast|E]. Cuanto mayor sea el $game_concept_bloodpotency$ de un [GetTrait('vampire').GetName( GetNullCharacter )], más sangre necesitará para reducir su $game_concept_hunger$. Aumentar $game_concept_hunger$ tiene impactos positivos pero en gran medida negativos para un [GetTrait('vampire').GetName( GetNullCharacter )]. La única forma de saciar por completo el $game_concept_hunger$ de un [GetTrait('vampire').GetName( GetNullCharacter )] es matando y drenando toda la sangre de una víctima. Incluso esa saciedad de $game_concept_hunger$ es temporal." #NT!
- game_concept_the_hunger: "El hambre" #NT!
+ game_concept_the_hunger: "El Hambre" #NT!
  game_concept_blood_hunger: "Hambre de sangre" #NT!
  game_concept_the_thirst: "La sed" #NT!
  game_concept_thirst: "Sed" #NT!
@@ -570,10 +570,10 @@
   
  game_concept_coterie: "Coterie" #NT!
  game_concept_coterie_sabbat: "Manada" #NT!
- game_concept_coterie_tmr: "Columna" #NT!
+ game_concept_coterie_tmr: "Pilar" #NT!
  game_concept_coterie_anarch: "Pandilla" #NT!
  game_concept_coterie_baali: "Aquelarre" #NT!
- game_concept_coterie_baali_hyron: "Nido" #NT!
+ game_concept_coterie_baali_hyron: "Enjambre" #NT!
  game_concept_coterie_beastcourts: "Sentai" #NT!
  game_concept_coterie_werewolf: "Manada" #NT!
  game_concept_coterie_nagah: "Nido" #NT!
@@ -582,10 +582,10 @@
  game_concept_coterie_hunter: "Celúla" #NT!
  game_concept_coterie_demon: "Conciliábulo" #NT!
  game_concept_coterie_mage: "Cábala" #NT!
- game_concept_coterie_redcap: "Corby" #NT!
- game_concept_coterie_fae: "Grupo" #NT!
+ game_concept_coterie_redcap: "Grupo" #NT!
+ game_concept_coterie_fae: "Círculo" #NT!
  game_concept_coterie_wraith: "Círculo" #NT!
- game_concept_coterie_spectre: "Grupo" #NT!
+ game_concept_coterie_spectre: "Círculo" #NT!
  game_concept_coterie_kueijin: "Wu" #NT!
  game_concept_coterie_mummy: "Pacto" #NT!
  game_concept_coterie_generic: "Grupo" #NT!
@@ -607,7 +607,7 @@
  game_concept_anathema: "Anatema" #NT!
  game_concept_blood_hunt_desc: "Cuando un [GetTrait('vampire').GetName(GetNullCharacter)] ha cometido una ofensa grave contra la seguridad de [masquerade|E], la Camarilla puede declararlo [GetTrait('anathema').GetName(GetNullCharacter)] y convocar una Cacería de Sangre contra él.\n\nEn [princes_of_darkness|E], ser [GetTrait('anathema').GetName(GetNullCharacter)] se representa con un [trait|E]. Los miembros de la Camarilla pueden seleccionar a [GetTrait('anathema').GetName(GetNullCharacter)] como objetivo con la Cacería de Sangre [casus_belli|E], que encarcela a todos los [rulers|E] en el reino del objetivo." #NT!
   
- game_concept_patron_council: "Consejo Patrono" #NT!
+ game_concept_patron_council: "Consejo de Patrones" #NT!
  game_concept_patron_council_desc: "El Consejo de Patrones (más comúnmente conocido como "los Patrones") es una alianza informal de hadas tradicionalistas. "Tradicionalista" en este sentido se refiere a un punto de la historia anterior a la Guerra de las Estaciones, cuando cada Corte gobernaba el mundo durante un tiempo determinado. La Corte líder entregaba las riendas del poder a la siguiente Corte cuando terminaba su mandato acordado." #NT!
   
  game_concept_golconda: "Golconda" #NT!
@@ -618,8 +618,8 @@
  game_concept_golconda_planning_speed: "Velocidad de planificación de Golconda" #NT!
  game_concept_golconda_planning_speed_desc: "La mejor manera de aumentar el [planning_speed|E] de los [golconda|E] [journey|E] es ​​tener un mortal [GetCourtPositionType('touchstones_court_position').GetName()]. Son un [court_position|E] desbloqueado por [faiths|E] con #TOOLTIP:GAME_FAITH_DOCTRINE,doctrine_enlightenment_virtues_conscience_and_selfcontrol #L Conciencia#!#!, y puedes aumentar su [aptitude|E] teniendo un buen [golconda|E]0 con ellos (como [golconda|E]1 o [golconda|E]2).\n\nOtras formas de aumentar la velocidad:\n[golconda|E]3Tener otros personajes con el [golconda|E]4 o [golconda|E]5 [golconda|E]6 en tu [golconda|E]7\n[golconda|E]3Ser un [golconda|E]9, [journey|E]0 o [journey|E]1\n[golconda|E]3Poseer un [journey|E]3 con Golconda Lore" #NT!
   
- game_concept_hungerless: "Sin hambre" #NT!
- game_concept_hungerless_desc: "Un $POD_splat_vampire$ sin hambre ha superado por completo la necesidad de sangre. Puede usar libremente [disciplines|E] y otras habilidades que de otro modo costarían sangre.\n\nSin embargo, esto también significa que ya no puede ganar [resonance|E] de experiencia cazando." #NT!
+ game_concept_hungerless: "Saciado" #NT!
+ game_concept_hungerless_desc: "Un $POD_splat_vampire$ Saciado ha superado por completo la necesidad de sangre. Puede usar libremente [disciplines|E] y otras habilidades que de otro modo costarían sangre.\n\nSin embargo, esto también significa que ya no puede ganar [resonance|E] de experiencia cazando." #NT!
   
  game_concept_umbra: "Umbra" #NT!
  game_concept_umbra_desc: "La Umbra, también llamada el Mundo Espiritual, la Sombra o la Sombra de Terciopelo, es un reino que existe junto al mundo material y, sin embargo, separado de él." #NT!
@@ -633,7 +633,7 @@
  game_concept_tao_te_hsien: "Tao Te Hsien" #NT!
  game_concept_tao_te_hsien_desc: "No es el Taoísmo de Lao Tse, aunque se inspiró en él. Su objetivo es que el shinma comprenda su lugar en el cosmos desde la llegada del Muro. A diferencia de la filosofía humana, tiene un objetivo... dar al hsien el poder de atravesar el Muro y viajar a los Mundos Espirituales. Comparte muchas de las características del Tao. Los seguidores tienden a retirarse de las trampas del mundo y ven una vida de tranquilidad contemplativa en la naturaleza. Aman el aprendizaje por el aprendizaje en sí mismo, pero les importa poco la política. Algunos son científicos, otros sacerdotes, otros mendigos, otros guerreros. Los hsien de Japón lo han modificado a una filosofía más parecida al zen llamada Hsien-do y, a diferencia de algunas religiones mortales, el Tao Te Hsien da la bienvenida al cambio y al individualismo, siempre que no se convierta en autoengrandecimiento. Es tranquilo, misterioso y profundo. Tiene cinco pasos que corresponden aproximadamente a la historia de la creación taoísta, pero al revés. Para los taoístas, primero estaba Wu-Wo: No Nada. De Wu-Wo vino Wu Chi: Sin Límites. Esto engendró Hu T'un: Caos. En el centro de este Caos había un punto quieto, una mota al principio que se convirtió en T'ai Chi: el Gran Polo y de este creció Gran Cambio: T'ai I que se divide en dos etapas: T'ai Chu: el Gran Primero o forma, y ​​T'ai Shih: el Gran Comienzo o el Primer Aliento (Chi). Todos estos eventualmente llevaron a la creación del [first_age|E]: T'ai Su: el Gran Primordial.\n¿Por qué los pasos están al revés? Los pasos representan la lucha por regresar a Sin Límites; para romper los lazos que limitan el viaje del shinma a los Mundos Espirituales. Hay muchos caminos de regreso a Sin Límites, pero el más seguro es el Tao Te Hsien. Se rumorea que los Dioses Profanos tienen su propia versión de Nei Tan llamada Hac Tao o el Camino Negro; una forma dictada por un Rey Yama durante el [third_age|E]." #NT!
   
- game_concept_cantrip: "Broma" #NT!
+ game_concept_cantrip: "Truco" #NT!
  game_concept_cantrips: "Trucos" #NT!
  game_concept_fae_realm: "Reino" #NT!
  game_concept_cantrip_desc: "Los trucos son los hechizos mágicos del $POD_splat_fae$. Tienen dos componentes: el #bold Arte#! y el #bold Reino#!.\n\nEl Arte determina el efecto del truco. Un personaje puede aprender nuevas Artes haciendo un [journey|E] a #italic Aprender nuevas Habilidades#!, y luego desbloqueando [perks|E] en uno de los Arte [lifestyles|E].\n\nEl Reino determina a quién se puede apuntar con el Truco. Un $POD_splat_fae$ no habilidoso solo puede afectar a personajes muy específicos con su magia, mientras que uno que ha dominado los Reinos puede encantar a cualquiera en el mundo.\n\nHay seis Reinos:\n#bold1#bold2 #bold3 Actor#!#! permite lanzar Trucos sobre objetivos menos familiares.\n#bold1#bold6 #bold3 Fae#!#! permite lanzar Trucos sobre #bold9 más poderosos.\n#bold1#!1 #bold3 Prop#!#! permite lanzar Trucos sobre #!4 más raros.\n#bold1#!6 #bold3 Nature#!#! permite afectar a los naturales. fenómenos.\n#bold1#bold0 #bold3 Escena#!#! determina el alcance y el área de los Cantrips.\n#bold1#bold4 #bold3 Tiempo#!#! determina la duración y el tiempo de reutilización de los Cantrips.\n\nTodos los personajes de sangre feérica pueden desbloquear [perks|E] en los #bold8 #bold9, pero dominar por completo un Reino requiere un [journey|E]." #NT!
@@ -644,13 +644,13 @@
  game_concept_unconquered_soul: "Alma desatada" #NT!
  game_concept_unconquered_soul_desc: "Alma desatada es un evento en el que tu retrato, tus rasgos y tu fe pueden ser sobrescritos por la víctima de tu diablerie." #NT!
   
- game_concept_umbra_expedition: "Expedición Umbra" #NT!
- game_concept_umbra_expedition_desc: "Explorar una ubicación de umbra con interés requiere superar una serie de desafíos, puede implicar duelos contra espíritus, pruebas de habilidad o una oportunidad de obtener un tesoro." #NT!
+ game_concept_umbra_expedition: "Expedición de la Umbra" #NT!
+ game_concept_umbra_expedition_desc: "Explorar una ubicación de la Umbra con interés requiere superar una serie de desafíos, puede implicar duelos contra espíritus, pruebas de habilidad o una oportunidad de obtener un tesoro." #NT!
   
  game_concept_roguelike_mode: "Modo Roguelike" #NT!
  game_concept_roguelike_mode_desc: "Un modo difícil #N#! para [princes_of_darkness|E].\n\nAl comienzo del juego, cambiarás a un gobernante aleatorio de una provincia. Ese gobernante también estará maldito. Puedes seleccionar una de las siguientes maldiciones:\n$EFFECT_LIST_BULLET$[GetModifier('POD_roguelike_no_wealth').GetNameWithTooltip]\n$EFFECT_LIST_BULLET$[GetModifier('POD_roguelike_no_love').GetNameWithTooltip]\n$EFFECT_LIST_BULLET$[GetModifier('POD_roguelike_no_rest').GetNameWithTooltip]\n$EFFECT_LIST_BULLET$#!0\n$EFFECT_LIST_BULLET$#!2\n$EFFECT_LIST_BULLET$#!4\n$EFFECT_LIST_BULLET$#!6\n\nAlternativamente, puedes dejar que el juego seleccione una maldición aleatoria para ti, o recibir todas las maldiciones a la vez.\n\nSolo tienes una vida. Si tu gobernante inicial muere mientras aún está maldito, se acaba el juego.\n\nAl completar uno de los objetivos principales, se eliminarán tus maldiciones.\n\nBuena suerte." #NT!
   
- game_concept_true_faith: "Verdadera fe" #NT!
+ game_concept_true_faith: "Fe verdadera" #NT!
  game_concept_true_faith_desc: "Algunas personas tienen una fe tan inquebrantable en lo divino que su propia convicción las protege. Esto se conoce como #bold Fe Verdadera#!, y otorga al creyente poderes sobrenaturales.\n\n$POD_splat_vampire_plural$ son repelidos por ella. $POD_splat_werewolf_plural$ son despojados de su ira en su presencia. $POD_splat_demon_plural$ y $POD_splat_wraith_plural$ son especialmente vulnerables a ella. Sin embargo, la Fe Verdadera se puede encontrar entre muchos [splats|E], e incluso algunos vampiros la tienen.\n\nEn [princes_of_darkness|E], [GetTrait('truefaith').GetName(GetNullCharacter)] es un [trait|E] que desbloquea un nuevo #!,0. Un personaje con una fe especialmente fuerte es #!,1.\n\nLa adoración a los demonios de un #!,2 es mutuamente excluyente con la Fe Verdadera. #!,3 también puede perder la Fe Verdadera si tiene una personalidad pecaminosa." #NT!
   
  game_concept_infiltration: "Infiltración" #NT!
