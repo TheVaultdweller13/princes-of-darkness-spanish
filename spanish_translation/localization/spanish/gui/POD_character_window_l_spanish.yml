@@ -1,0 +1,55 @@
+﻿l_spanish:
+ HERD: "Rebaño" #NT!
+ GHOULS: "Ghouls" #NT!
+ WRAITHS: "Espectros" #NT!
+ MINIONS_tab: "Esbirros" #NT!
+ AGE_ANCIENT: "Este personaje es antiguo" #NT!
+ AGE_PREHISTORY: "Este personaje es anterior a la historia." #NT!
+ YOU_LOSE: "TÚ PIERDES" #NT!
+ gui_lore_tt: "Historia del personaje" #NT!
+ GHOULS_LABEL: "Ghouls" #NT!
+ DOMITOR_LABEL: "Domitor" #NT!
+  
+ POD_feeding_restriction_valid: "[Character.GetFirstNameNoTooltip] #P encaja #! tu [feeding_restrictions|E]" #NT!
+ POD_feeding_restriction_invalid: "[Character.GetFirstNameNoTooltip] #N no encaja #! tu [feeding_restrictions|E]" #NT!
+  
+ minions_button_name: "Esbirros" #NT!
+ minions_button_name_werewolf: "Familiares" #NT!
+ cultists_button_name: "Cultistas" #NT!
+ neterus_button_name: "Neterus" #NT!
+  
+ coterie_row_header: "[CharacterWindow.GetCharacter.Custom('PODCoterie')]: [CharacterWindow.GetCharacter.Custom('PODGetCoterieName')] #weak ([GuiScope.SetRoot(CharacterWindow.GetCharacter.MakeScope).ScriptValue('coterie_size')]/[EmptyScope.ScriptValue('coterie_max_size')])#!" #NT!
+ ghouls_row_header: "Ghouls #weak ([GetDataModelSize(CharacterWindow.GetRelationsOfType( GetRelation( 'ghoul_thrall' ) ))]/[CharacterWindow.GetCharacter.MakeScope.ScriptValue('max_ghoul_cap')|0])#!" #NT!
+ herd_row_header: "Rebaño #weak ([GetDataModelSize(CharacterWindow.GetRelationsOfType( GetRelation( 'herd_member' ) ))]/[CharacterWindow.GetCharacter.MakeScope.ScriptValue('max_herd_cap')|0])#!" #NT!
+ dreamer_row_header: "Soñador #weak ([GetDataModelSize(CharacterWindow.GetRelationsOfType( GetRelation( 'dreamer_member' ) ))]/[CharacterWindow.GetCharacter.MakeScope.ScriptValue('max_herd_cap')|0])#!" #NT!
+ bound_wraiths_row_header: "Espectros atados #weak ([GetDataModelSize(CharacterWindow.GetRelationsOfType( GetRelation( 'bound_wraith' ) ))]/[CharacterWindow.GetCharacter.MakeScope.ScriptValue('max_wraith_cap')|0])#!" #NT!
+ thrall_row_header: "Esclavo #weak ([GetDataModelSize(CharacterWindow.GetRelationsOfType( GetRelation( 'demonic_thrall' ) ))]/[CharacterWindow.GetCharacter.MakeScope.ScriptValue('max_thrall_cap')|0])#!" #NT!
+ bound_demons_row_header: "Demonios atados #weak ([GetDataModelSize(CharacterWindow.GetRelationsOfType( GetRelation( 'bound_demon' ) ))])#!" #NT!
+ possessed_targets_row_header: "Cuerpo poseído #weak ([GetDataModelSize(CharacterWindow.GetRelationsOfType( GetRelation( 'possessed_target' ) ))])#!" #NT!
+ stolen_hearts_row_header: "Corazones robados #weak ([GetDataModelSize(CharacterWindow.GetRelationsOfType( GetRelation( 'heart_of_darkness_heartless' ) ))])#!" #NT!
+ effigies_row_header: "Efigies #weak ([GetDataModelSize(CharacterWindow.GetRelationsOfType( GetRelation( 'effigy_character' ) ))])#!" #NT!
+ animantis_row_header: "Animantis #weak ([GetDataModelSize(CharacterWindow.GetRelationsOfType( GetRelation( 'animantis_character' ) ))])#!" #NT!
+ manifestation_row_header: "Manifestación #weak ([GetDataModelSize(CharacterWindow.GetRelationsOfType( GetRelation( 'manifestation_character' ) ))])#!" #NT!
+ shadow_twin_row_header: "Sombra gemela" #NT!
+ mirror_duplicate_row_header: "Duplicado de espejo" #NT!
+ darkling_mirror_row_header: "P'o dividido" #NT!
+ shadowy_duplicate_row_header: "Duplicado sombrío #weak ([GetDataModelSize(CharacterWindow.GetRelationsOfType( GetRelation( 'shadowy_duplicate_servant' ) ))])#!" #NT!
+ phantom_shadow_row_header: "Sombra fantasma" #NT!
+ separated_khaibit_row_header: "Khaibit separado" #NT!
+ separated_shadow_row_header: "Sombra" #NT!
+ unspeakable_servitor_row_header: "Servidor inefable" #NT!
+  
+ ghouls_row_header_expanded: "Ghouls #weak ([GetDataModelSize(CharacterWindow.GetRelationsOfType( GetRelation( 'ghoul_thrall' ) ))])#!" #NT!
+ herd_row_header_expanded: "Ganado #weak ([GetDataModelSize(CharacterWindow.GetRelationsOfType( GetRelation( 'herd_member' ) ))])#!" #NT!
+ dreamer_row_header_expanded: "Soñador #weak ([GetDataModelSize(CharacterWindow.GetRelationsOfType( GetRelation( 'dreamer_member' ) ))])#!" #NT!
+ bound_wraiths_row_header_expanded: "Espectros atados #weak ([GetDataModelSize(CharacterWindow.GetRelationsOfType( GetRelation( 'bound_wraith' ) ))])#!" #NT!
+ bound_demons_row_header_expanded: "Demonios atados #weak ([GetDataModelSize(CharacterWindow.GetRelationsOfType( GetRelation( 'bound_demon' ) ))])#!" #NT!
+ stolen_hearts_row_header_expanded: "Corazones robados #weak ([GetDataModelSize(CharacterWindow.GetRelationsOfType( GetRelation( 'heart_of_darkness_heartless' ) ))])#!" #NT!
+ effigies_row_header_expanded: "Efigies #weak ([GetDataModelSize(CharacterWindow.GetRelationsOfType( GetRelation( 'effigy_character' ) ))])#!" #NT!
+ animantis_row_header_expanded: "Animantis #weak ([GetDataModelSize(CharacterWindow.GetRelationsOfType( GetRelation( 'animantis_character' ) ))])#!" #NT!
+ manifestation_row_header_expanded: "Manifestación #weak ([GetDataModelSize(CharacterWindow.GetRelationsOfType( GetRelation( 'manifestation_character' ) ))])#!" #NT!
+ thralls_row_header_expanded: "Esclavo #weak ([GetDataModelSize(CharacterWindow.GetRelationsOfType( GetRelation( 'demonic_thrall' ) ))])#!" #NT!
+  
+ cultists_row_header_expanded: "Cultista #weak ([GetDataModelSize(CharacterWindow.GetRelationsOfType( GetRelation( 'worshipping_cultist' ) ))])#!" #NT!
+ neterus_row_header_expanded: "Neteru #weak ([GetDataModelSize(CharacterWindow.GetRelationsOfType( GetRelation( 'worshipping_neteru' ) ))])#!" #NT!
+ mass_thrall_release_valid: "¿Por qué habría de hacer eso?" #NT!

@@ -1,0 +1,244 @@
+﻿l_spanish:
+  # Remove dynasty from character name localization (fix for "Odin Odin") "Odín Odín" #NT!
+ CHARACTER_FIRST_NAME_AND_DYNASTY: "$NAME$" #NT!
+ CHARACTER_FULL_NAME_UNLANDED: "$NAME$" #NT!
+ CHARACTER_FIRST_NAME_AND_DYNASTY_NICKNAMED: "$NAME$ '$NICK$'" #NT!
+ CHARACTER_FULL_NAME_NICKNAMED_PREFIX: "$NICK$ $TIER$ $NAME$ de $TITLE$" #NT!
+ CHARACTER_FULL_NAME_UNLANDED_NICKNAMED: "$NAME$ '$NICK$'" #NT!
+ CHARACTER_FULL_NAME_UNLANDED_NICKNAMED_PREFIX: "$NICK$ $NAME$" #NT!
+ CHARACTER_FIRST_NAME_AND_DYNASTY_PATRONYM: "$NAME$" #NT!
+ CHARACTER_FULL_NAME_UNLANDED_PATRONYM: "$NAME$ $PATRONYM$" #NT!
+ CHARACTER_FULL_NAME_NICKNAMED_PATRONYM: "$TIER$ $NAME$ '$NICK$' de $TITLE$" #NT!
+ CHARACTER_FULL_NAME_NICKNAMED_PREFIX_PATRONYM: "$NICK$ $TIER$ $NAME$ de $TITLE$" #NT!
+ CHARACTER_FULL_NAME_UNLANDED_NICKNAMED_PATRONYM: "$NAME$ '$NICK$'" #NT!
+ CHARACTER_FULL_NAME_UNLANDED_NICKNAMED_PREFIX_PATRONYM: "$NICK$ $NAME$" #NT!
+  
+  # Replace perks loca 
+ planned_cultivation_perk_name: "Mundano" #NT!
+ DOMESTIC_AFFAIRS_EFFICIENCY_BONUS: "[domestic_affairs|E] Eficiencia: #P +[EmptyScope.ScriptValue('chains_of_loyalty_percentage')|0]%#!\nUnlocks el [buy_artifact_claim_interaction|E]" #NT!
+  # Replace religion_core_tenets loca 
+ doctrine_parameter_piety_from_feasts_active: "Alojando un [GetActivityType('activity_feast').GetName] o un Elysium ganas [piety|E]" #NT!
+  # Replace holy order requirement loca 
+ I_HAVE_TWO_CASTLE_COUNTY: "Tienes un [barony|E] que se puede alquilar como sede de la Sagrada Orden." #NT!
+  # Replace Gamerule loca 
+ setting_on_empire_obscurity_requirement_desc: "[de_jure|E] [empires|E] será destruido a menos que el poseedor controle al menos el 10% de su De Jure [counties|E]." #NT!
+ setting_1453_end_date: "2200" #NT!
+ setting_1453_end_date_desc: "El juego terminará en 2200." #NT!
+  
+  # Replace Court Amenities loca 
+ court_food_quality: "Campos de entrenamiento" #NT!
+ court_food_quality_default: "No hay campos de entrenamiento" #NT!
+ court_food_quality_modest: "Pequeños campos de entrenamiento" #NT!
+ court_food_quality_decent: "Campos de entrenamiento decentes" #NT!
+ court_food_quality_lavish: "Amplios campos de entrenamiento" #NT!
+ court_food_quality_exotic: "Gran campo de entrenamiento" #NT!
+ court_food_quality_default_desc: "Los guardias de este tribunal se alojan con los sirvientes, siendo a veces difíciles de distinguir unos de otros." #NT!
+ court_food_quality_modest_desc: "Alojamiento adecuado para los guardias de la corte, aunque no hay mucho que ver." #NT!
+ court_food_quality_decent_desc: "Alojamiento adecuado y algún espacio para el entrenamiento de los guardias de la corte." #NT!
+ court_food_quality_lavish_desc: "Un alojamiento adecuado y un campo de entrenamiento sólido. Muchos campeones locales vienen aquí a entrenar." #NT!
+ court_food_quality_exotic_desc: "Conocidos en todo el país, estos cuarteles militares son el sueño de todo aspirante a campeón." #NT!
+  # Age hack 
+ CHARACTER_DEAD_TOOLTIP_DATE_INFO: "[Character.GetDeathDate.GetString|V] #weak a la edad#! #V [Character.MakeScope.ScriptValue('true_age')]#! (nacido el [SelectLocalization( Or(LessThanOrEqualTo_int32( Character.GetDeathDate.GetYear, '(int32)150' ), GreaterThanOrEqualTo_int32( Character.GetAge, '(int32)999' )), 'TrueBirthDate', 'DefaultBirthDate')])" #NT!
+ TrueBirthDate: "[Character.GetBirthDate.GetStringShortNoYear|V], [Character.MakeScope.ScriptValue('true_birth_age')|V0]" #NT!
+ DefaultBirthDate: "[Character.GetBirthDate.GetString|V]" #NT!
+ SteleCommemoratesAncestors_Gluttonous: "$SteleCommemoratesAncestors_Intro$. Ni una sola vez en [second.MakeScope.Var('stele_container').Char.MakeScope.ScriptValue('true_age')] [second.MakeScope.Var('stele_container').Char.GetSheHe] se saltó una comida. $SteleCommemoratesCarver$." #NT!
+ CHARACTER_TT_NAME_AGE: "[Character.GetUINameNotMeNoTooltip]#medium , [Character.MakeScope.ScriptValue('true_age')|0]#!" #NT!
+ CHARACTER_TT_AGE: "[Character.MakeScope.ScriptValue('true_age')|0] años" #NT!
+ LEGACY_NAME: "[LegacyItem.GetCharacter.GetShortUINameNotMeNoTooltip], [SelectLocalization(EqualTo_int32(LegacyItem.GetCharacter.GetAge, '(int32)0'), 'POD_num0', 'LEGACY_NAME_TRUEAGE')]" #NT!
+ LEGACY_NAME_TRUEAGE: "[LegacyItem.GetCharacter.MakeScope.ScriptValue('true_age')]" #NT!
+ OUTLINER_PINNED_CHARACTER: "[Character.GetShortUINameNotMeNoTooltip]#medium, [Character.MakeScope.ScriptValue('true_age')]#!" #NT!
+ SUCCESSION_EVENT_WINDOW_DEAD_INTRO_DEFAULT_1: "[ROOT.Char.GetFullNameNoTooltip] ha entregado su alma a los [ROOT.Char.MakeScope.ScriptValue('true_age')] años de edad." #NT!
+ SUCCESSION_EVENT_WINDOW_DEAD_INTRO_DEFAULT_2: "[ROOT.Char.GetFullNameNoTooltip] ha abandonado la vida mortal de [ROOT.Char.GetHerHis] a los [ROOT.Char.MakeScope.ScriptValue('true_age')] años de edad." #NT!
+ SUCCESSION_EVENT_WINDOW_DEAD_INTRO_DEFAULT_3: "[ROOT.Char.GetFullNameNoTooltip] ha fallecido a los [ROOT.Char.MakeScope.ScriptValue('true_age')] años de edad." #NT!
+ SUCCESSION_EVENT_WINDOW_DEAD_INTRO_DEFAULT_4: "[ROOT.Char.GetFullNameNoTooltip] ha dejado este mundo a los [ROOT.Char.MakeScope.ScriptValue('true_age')] años de edad." #NT!
+ SUCCESSION_EVENT_WINDOW_DEAD_INTRO_DEFAULT_5: "[ROOT.Char.GetFullNameNoTooltip] falleció a los [ROOT.Char.MakeScope.ScriptValue('true_age')] años de edad y [ROOT.Char.Custom('GetAfterLifeDestination')]." #NT!
+ SUCCESSION_EVENT_WINDOW_DEAD_INTRO_PIOUS: "El espíritu de [ROOT.Char.GetFullNamePossessiveNoTooltip] ha volado hacia [ROOT.Char.GetFaith.PositiveAfterLife] a los [ROOT.Char.MakeScope.ScriptValue('true_age')] años de edad." #NT!
+ SUCCESSION_EVENT_WINDOW_DEAD_INTRO_WICKED: "[ROOT.Char.GetFullNamePossessiveNoTooltip] alma finalmente ha sido convertida en [ROOT.Char.GetFaith.NegativeAfterLife] a los [ROOT.Char.MakeScope.ScriptValue('true_age')] años de edad." #NT!
+ SUCCESSION_EVENT_WINDOW_DEAD_INTRO_WOUNDED: "[ROOT.Char.GetFullNameNoTooltip] finalmente encontró la paz a [ROOT.Char.MakeScope.ScriptValue('true_age')] años de edad." #NT!
+ SUCCESSION_EVENT_WINDOW_DEAD_INTRO_CHRISTIANITY_1: "[ROOT.Char.GetFullNameNoTooltip] ha encontrado la paz en el abrazo de Cristo a los [ROOT.Char.MakeScope.ScriptValue('true_age')] años de edad." #NT!
+ SUCCESSION_EVENT_WINDOW_DEAD_INTRO_CHRISTIANITY_2: "[ROOT.Char.GetFullNameNoTooltip] descansa en los brazos del Señor a los [ROOT.Char.MakeScope.ScriptValue('true_age')] años de edad." #NT!
+ SUCCESSION_EVENT_WINDOW_DEAD_INTRO_ISLAM_1: "[ROOT.Char.GetFullNameNoTooltip] ha abandonado la casa transitoria por llamada del Verdadero a los [ROOT.Char.MakeScope.ScriptValue('true_age')] años de edad." #NT!
+ SUCCESSION_EVENT_WINDOW_DEAD_INTRO_ISLAM_2: "[ROOT.Char.GetFullNameNoTooltip] ha abandonado este mundo transitorio y ha volado a [ROOT.Char.GetFaith.PositiveAfterLife] a los [ROOT.Char.MakeScope.ScriptValue('true_age')] años de edad." #NT!
+ SUCCESSION_EVENT_WINDOW_DEAD_INTRO_ISLAM_3: "[ROOT.Char.GetFullNameNoTooltip] ha pasado a la eternidad a los [ROOT.Char.MakeScope.ScriptValue('true_age')] años de edad." #NT!
+ SUCCESSION_EVENT_WINDOW_DEAD_INTRO_NORSE_1: "[ROOT.Char.GetFullNameNoTooltip] se ha unido a la fiesta en [ROOT.Char.GetFaith.PositiveAfterLife] a los [ROOT.Char.MakeScope.ScriptValue('true_age')] años de edad." #NT!
+ SUCCESSION_EVENT_WINDOW_DEAD_INTRO_HELLENIC_1: "[ROOT.Char.GetFullNameNoTooltip] ha cruzado el río Estigia a los [ROOT.Char.MakeScope.ScriptValue('true_age')] años de edad." #NT!
+ SUCCESSION_EVENT_WINDOW_DEAD_INTRO_EASTERN_1: "[ROOT.Char.GetFullNameNoTooltip] ha trascendido la forma material [ROOT.Char.GetHerHis] a los [ROOT.Char.MakeScope.ScriptValue('true_age')] años de edad." #NT!
+ SUCCESSION_EVENT_WINDOW_DEAD_INTRO_TRIBAL_1: "[ROOT.Char.GetFullNameNoTooltip] ha cruzado la puerta al mundo de los espíritus a los [ROOT.Char.MakeScope.ScriptValue('true_age')] años de edad." #NT!
+  # Replace struggle loca 
+ ENDING_DECISION_AREA_HEADER: "#high Poniendo fin a la lucha#!" #NT!
+ catalyst_usurp_title_desc: "Usurpar un nuevo [title|E] que sea parte del [de_jure|E] del área de lucha" #NT!
+  
+ DYNASTY_VIEW_LEGACY_EXPLANATION: "Todos los miembros de la Dinastía #high [Dynasty.GetBaseNameNoTooltip]#! obtienen los beneficios de estos [dynasty_perks|E]. Adquirir nuevos [dynasty_perks|E] se vuelve cada vez más difícil a medida que el costo aumenta en [dynasty_prestige_i]#V 1000#! cada vez" #NT!
+ culture_parameter_archer_era_improvement: "Los [GetMaA('longbowmen').GetName] [men_at_arms|E] mejoran cada vez más cada [era|E] hasta (e incluyendo) la era medieval tardía." #NT!
+  
+  #Remove bookmark age 
+  
+ BOOKMARK_CHARACTER_AGE: ""
+ BOOKMARK_CHARACTER_INFO: "#high;bold [BookmarkCharacter.GetName]#!" #NT!
+ BOOKMARK_CHARACTER_AGE_DATA: ""
+  
+  #Replace court tutor loca 
+  
+ court_tutor_court_position_desc: "El $court_tutor_court_position$ está a cargo del [education|E] de todos en la corte, y su habilidad influirá en cuánto influirá en los estudiantes." #NT!
+  
+  #Diarchies replacement 
+  
+ dismissal_requires_gift: "A Diarch se le puede dar un regalo para intentar despedirlos." #NT!
+ regency_free_end_below_this_point: "La lucha por el poder necesita el consentimiento del Diarca para ser destituido" #NT!
+ diarch_attempt_to_overthrow_liege.tt.majority_powerful_vassal_support: "Actualmente tienes [SCOPE.ScriptValue('pv_overthrow_tally_display_value')|0] partidarios elegibles [powerful_vassal|E] #weak (incluyéndote a ti)#! en tu conspiración, de los [SCOPE.ScriptValue('pv_overthrow_threshold_display_value')|0] requeridos.\nPuedes reclutar conspiradores para tu golpe a través de un [character_interaction|E] en los vasallos poderosos de tu reino o directamente en tu codiarca." #NT!
+ regency_cant_be_ended_above_this_point: "[lieges|E] no puede intentar despedir a su diarch" #NT!
+  
+  #Vanilla inefficiency 
+ has_province_modifier_trigger: "Tiene modificador de provincia: $MODIFIER$" #NT!
+  
+  #Sunny day is too sunny 
+ warhorse.1101.t: "[ROOT.Char.Custom('WarhorseStoryName')|U]: Hermosa noche" #NT!
+ warhorse.1101.b: "¡La noche es demasiado hermosa para no apreciarla adecuadamente!" #NT!
+ bp1_yearly.7100.desc: "En un momento estaba disfrutando de un agradable paseo por el [owned_county.GetName] y al siguiente estaba cubierto de excrementos y revolcándome en el barro. Una vez que me he limpiado furiosamente los excrementos de mi [ROOT.Char.Custom('EyeEyes')], encuentro al culpable con facilidad.\n\n"¡[potential_nemesis.GetTitledFirstName] le envía saludos a [potential_nemesis.GetHerHis]!" El campesino que cuelga de la ventana grita antes de huir de la escena.\n\nPatéticamente, intento lavar una piel que valoro especialmente en un arroyo cercano, pero está claro que no se puede salvar." #NT!
+  
+  #Accolade succession is disabled but scripted in UI 
+ find_suitable_accolade_successor_interaction_desc: "Tu personaje no puede buscar un sucesor de galardón automáticamente." #NT!
+  
+  #Hastiluder trait is replaced for broader use 
+  # EP2 
+ trait_tourney_participant: "Concursante" #NT!
+ trait_tourney_participant_desc: "Este personaje ha participado en juegos organizados, agudizando sus habilidades en el proceso." #NT!
+ trait_tourney_participant_character_desc: "[ROOT.GetCharacter.GetFirstNameNoTooltip] ha participado en juegos organizados, agudizando sus habilidades en el proceso." #NT!
+ trait_track_foot: "Físico" #NT!
+  
+  #Drunk stuff 
+ bp1_yearly.9010.desc.drunk: ", claramente no se siente bien. [bp1_yearly_9007_doppelganger.GetSheHe|U] se tambalea hacia mí con furia en los ojos de [bp1_yearly_9007_doppelganger.GetHerHis].\n\n"¡Impostora! Ese *#EMP hic#!*" #NT!
+ bp1_yearly.9010.desc.stoner: ", claramente no se siente bien. [bp1_yearly_9007_doppelganger.GetHerHis|U] ojos ensangrentados que se desvían fruncen el ceño al área alrededor de mi cabeza mientras [bp1_yearly_9007_doppelganger.GetSheHe] se tambalea perezosamente hacia mí, riendo como un loco[bp1_yearly_9007_doppelganger.GetWomanMan] todo el camino.\n\n"¡Impostor! Ese *#EMP tose#!*" #NT!
+ bp1_yearly.9010.desc.outro: "[ROOT.Char.Custom('InsultAdjective')] [ROOT.Char.Custom('InsultNoun')] no es [ROOT.Char.GetNameNoTooltip]! ¡Soy el verdadero [ROOT.Char.GetNameNoTooltip]!"\n\nAunque es una mentira obvia, ¡mi corte parece de alguna manera muy divertida de que mi verdadera identidad sea puesta en disputa! Cuando [bp1_yearly_9007_doppelganger.GetNameNoTooltip] saca el arma de [bp1_yearly_9007_doppelganger.GetHerHis], queda claro que la violencia es la única respuesta." #NT!
+  
+  # Grand City stuff 
+  # Gruesome Festival (Colosseum) 
+ gruesomefestivalname_spectacle: "Espectáculo" #NT!
+ gruesomefestivalname_spectacles: "Gafas" #NT!
+ fp1_other_decisions.0002.b: "¡Traed una bestia por cada [blotter.Custom('WomanManPerson_GenderPreference')]!" #NT!
+ fp1_other_decisions.0003.desc.intro.colosseum_small: "Aunque la concurrencia en el Coliseo es pequeña, el ambiente en el [blotter.Custom('GruesomeFestivalName')] es entusiasta. El público se empuja y se abuchea mientras" #NT!
+ fp1_other_decisions.0003.desc.intro.colosseum_medium: "Aproximadamente la mitad de los asientos del Coliseo están llenos de gente feliz y entusiasta, todos rugiendo mientras" #NT!
+ fp1_other_decisions.0003.desc.intro.colosseum_large: "Los invitados al [blotter.Custom('GruesomeFestivalName')] son tan numerosos que lograron llenar el Coliseo hasta su capacidad máxima, emitiendo un rugido cacofónico mientras" #NT!
+ fp1_other_decisions.0003.desc.colosseum_animals.regular: "una manada de lobos feroces llega a la arena.\n\n" #NT!
+ fp1_other_decisions.0003.desc.colosseum_animals.magnificent: "Una magnífica manada de leones es conducida a la arena." #NT!
+ fp1_other_decisions.0003.desc.colosseum_humans.regular.sans_chief: "Un grupo de prisioneros marcha hacia la arena, se les entregan armas y se les suelta ante nuestros lobos." #NT!
+ fp1_other_decisions.0003.desc.colosseum_humans.magnificent.sans_chief: "Un grupo de gladiadores de aspecto temible entra en la arena, seguido por una magnífica manada de leones." #NT!
+ fp1_other_decisions.0003.desc.colosseum_humans.regular.plus_chief: "[sacrifice.GetFirstName] es llevado a la arena, completamente desarmado, y abandonado a su suerte frente a una horda de prisioneros y lobos.\n\n" #NT!
+ fp1_other_decisions.0003.desc.colosseum_humans.magnificent.plus_chief: "[sacrifice.GetFirstName] es conducido a la arena, completamente desarmado, y abandonado para defenderse de una horda de gladiadores y leones.\n\n" #NT!
+ fp1_other_decisions.0003.desc.sacrifice.named.colosseum: "El ataque interminable acaba por desgastar a [sacrifice.GetHerHim|l]. Después de una cantidad verdaderamente ridícula de violencia y derramamiento de sangre, [sacrifice.GetFirstName] muere, lo que provoca una ovación ensordecedora del público." #NT!
+ fp1_other_decisions.0003.desc.sacrifice.unnamed.colosseum: "Algunos de los gladiadores están entrenados para el combate, otros no. No importa. Al final, ninguno de ellos queda en pie." #NT!
+ fp1_other_decisions.0003.desc.sacrifice.animal.colosseum: "Muchas de las bestias hambrientas se destrozan unas a otras, luego nuestros cazadores entrenados se encargan del resto." #NT!
+ fp1_other_decisions.0003.desc.outro.colosseum: "\n\nEsta gran exhibición será el tema de conversación de mi corte durante los próximos meses." #NT!
+ fp1_other_decisions.0003.g: "Esta parece una excelente oportunidad para impresionar a la nobleza." #NT!
+ fp1_other_decisions.0003.h: "¡Es hora de codearse con la basura común!" #NT!
+  
+  # Vanilla CK3 typo fix :| 
+ activity_pulse_action_local_baron_tax: "[first.GetShortUIName|U] Obligados a pagar impuestos" #NT!
+ county_opinion: "Opinión del condado: $NUM|=V$" #NT!
+ msg_house_unity_change_stage_desc: "Tu [house_unity|E] ha cambiado de nivel a [Localize('$HOUSE_UNITY_STAGE_NAME$')]" #NT!
+  
+  # Meditation activity 
+ religious_decision.0201.basilica: "La basílica de San Michele." #NT!
+ religious_decision.0211.desc.beginning.basilica: "Retirándome a una capilla apartada en la Basílica de San Michele, comencé un largo período de ayuno y meditación.\n\nLa arquitectura ecléctica y el arte religioso de la capilla son una vista inspiradora. No hay otro lugar en la Tierra de Dios donde pueda sentirme tan cerca de Él." #NT!
+ religious_decision.0211.desc.result.medium_stress: "\n\nLa ubicación inaccesible fue una gran ventaja, ya que me brindó un respiro de los problemas diarios con los que normalmente tengo que lidiar en la corte." #NT!
+ religious_decision.0211.desc.result.major_stress: "\n\nAunque estaba aislado, descubrí que los problemas que me agobiaban en la corte ya no tenían ningún peso. Por primera vez en mucho tiempo, estaba en paz." #NT!
+  
+  # Artifacts in placeholder inventories 
+ ARTIFACT_CURRENT_HOLDER: "Titular actual: [Artifact.Custom('PODArtifactOwner')]" #NT!
+ ARTIFACT_CREATOR: "Creador: [Artifact.Custom('PODArtifactCreator')]" #NT!
+ ARTIFACT_TITLE_ASSOCIATION: "[Artifact.Custom('PODArtifactOwnerCourt')]" #NT!
+  
+  # Crown authority 
+ crown_authority_3_effects: "$EFFECT_LIST_BULLET$Los gobernantes pueden designar a sus [heir|E]\n$EFFECT_LIST_BULLET$Durante una guerra defensiva, los vasallos ducales y del reino que bordeen (solo tierra) el reino del atacante serán llamados como participantes." #NT!
+ tribal_authority_3_effects: "$EFFECT_LIST_BULLET$Los vasallos no pueden declarar ninguna guerra sin un gancho sobre su señor." #NT!
+ tribal_authority_1_effects: "$EFFECT_LIST_BULLET$[characters|E] puede ser [imprisoned|E]" #NT!
+  
+  # Golconda warnings for schemes 
+ MURDER_SUCCESS_DESC: "[AddTextIf(GetScriptedGui('is_on_golconda_gui').IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End), Concatenate(Localize('POD_golconda_murder_alert'),'\n'))][TARGET_CHARACTER.GetShortUIName|U] es asesinado" #NT!
+ STEAL_BACK_ARTIFACT_SUCCESS_DESC: "[AddTextIf(GetScriptedGui('is_on_golconda_gui').IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End), Concatenate(Localize('POD_golconda_theft_alert'),'\n'))]Robarás un artefacto de [TARGET_CHARACTER.GetShortUIName] sobre el cual tienes un derecho" #NT!
+  
+  #Tax stuff 
+ TAX_JURISDICTIONS_BUTTON: "#T Contratos de vasallaje#!" #NT!
+  
+  # "DLC" button "Contenido descargable" #NT!
+ DLC_BUTTON_TOOLTIP: "#T [DlcItem.GetDlc.GetName]#!\n[DlcItem.GetDlc.GetDesc]\n\n#low [SelectLocalization( Or( DlcItem.GetDlc.IsEnabled, EqualTo_string(DlcItem.GetDlc.GetName, Localize('dlc_POD') ) ), 'DLC_ENABLED', 'DLC_NOT_ENABLED' )]#![AddTextIf( Not( EqualTo_string(DlcItem.GetDlc.GetName, Localize('dlc_POD') ) ), '\n#I Haz clic para visitar la tienda#!' )]" #NT!
+  
+  #Non commitment 
+ culture_parameter_gain_gold_from_battles: "Gana más [gold|E][gold_i] de [battles|E]" #NT!
+ LEGACY_GOLD_FROM_BATTLES: "Gana más [gold|E][gold_i] de [battles|E]" #NT!
+  
+  #War dec contract refactored 
+ war_declaration_rights_allowed: "Revocado $war_declaration_rights$" #NT!
+ war_declaration_rights_allowed_desc: "#emphasis #bold Los vasallos no pueden declarar ninguna guerra sin un gancho sobre su señor.#!#!" #NT!
+ war_declaration_rights_allowed_short: "Revocado" #NT!
+  
+  #We broaden vanilla macedonian to represent post alexander pre rome greeks 
+ macedonian: "helénico" #NT!
+ macedonian_prefix: "Helenístico" #NT!
+ macedonian_collective_noun: "Helenos" #NT!
+  
+  #Epidemics are named after rulers, so those are needed to not have "Mithras' flu" or "Horus passing stomach ache" as names of diseases "Gripe de Mitra" o "Horus pasando dolor de estómago" #NT!
+  #... or "Courts of Love's ergotism" or "Shadow Curtain's dysentery" or "Helena's lover pox" "El ergotismo de las Cortes del Amor o la disentería de la Cortina de Sombras o la viruela de los amantes de Helena" #NT!
+  #You wouldn't believe the horrors I saw 
+  
+ epidemic_ruler_loc: "[ROOT.Epidemic.GetStartingOutbreakProvince.GetCounty.GetTitle.GetHolder.GetTopLiege.GetPrimaryTitle.GetAdjectiveNoTooltip|U]" #NT!
+ epidemic_province_loc: "[ROOT.Epidemic.GetStartingOutbreakProvince.GetCounty.GetTitle.GetHolder.GetTopLiege.GetPrimaryTitle.GetAdjectiveNoTooltip|U]" #NT!
+ epidemic_province_loc: "[ROOT.Epidemic.GetStartingOutbreakProvince.GetCounty.GetTitle.GetHolder.GetTopLiege.GetPrimaryTitle.GetAdjectiveNoTooltip|U]" #NT!
+ epidemic_province_loc: "[ROOT.Epidemic.GetStartingOutbreakProvince.GetCounty.GetTitle.GetHolder.GetTopLiege.GetPrimaryTitle.GetAdjectiveNoTooltip|U]" #NT!
+ epidemic_province_loc: "[ROOT.Epidemic.GetStartingOutbreakProvince.GetCounty.GetTitle.GetAdjectiveNoTooltip|U]" #NT!
+ epidemic_devils_loc: "[ROOT.Epidemic.GetStartingOutbreakProvince.GetCounty.GetTitle.GetAdjectiveNoTooltip|U]" #NT!
+ epidemic_random_saint_loc: "[ROOT.Epidemic.GetStartingOutbreakProvince.GetCounty.GetTitle.GetAdjectiveNoTooltip|U]" #NT!
+ epidemic_rulers_plague: "$epidemic_province_loc$ Plaga" #NT!
+ epidemic_plague_of_ruler: "$epidemic_province_loc$ Plaga" #NT!
+ epidemic_realm_plague: "$epidemic_province_loc$ Plaga" #NT!
+ epidemic_realm_pox: "$epidemic_province_loc$ viruela" #NT!
+ epidemic_holder_pox: "$epidemic_province_loc$ Viruela" #NT!
+ epidemic_culture_pox: "$epidemic_province_loc$ Viruela" #NT!
+ epidemic_rulers_pox: "$epidemic_province_loc$ Viruela" #NT!
+ epidemic_titled_rulers_pox: "$epidemic_province_loc$ Viruela" #NT!
+  
+ epidemic_realm_boils: "$epidemic_province_loc$ hierve" #NT!
+ epidemic_rulers_boils: "$epidemic_province_loc$ hierve" #NT!
+ epidemic_titled_rulers_boils: "$epidemic_province_loc$ hierve" #NT!
+ epidemic_holder_boils: "$epidemic_province_loc$ hierve" #NT!
+ epidemic_culture_boils: "$epidemic_province_loc$ hierve" #NT!
+ epidemic_rulers_fever: "$epidemic_province_loc$ Fiebre" #NT!
+ epidemic_titled_rulers_fever: "$epidemic_province_loc$ Fiebre" #NT!
+ epidemic_realm_fever: "$epidemic_province_loc$ Fiebre" #NT!
+ epidemic_culture_sweats: "[ROOT.Epidemic.GetStartingOutbreakProvince.GetTerrain.GetNameNoTooltip|U] Sudores" #NT!
+ epidemic_devils_fever: "Fiebre del diablo" #NT!
+ epidemic_titles_evil: "El mal de la humanidad" #NT!
+ epidemic_realm_flu: "$epidemic_province_loc$ Gripe" #NT!
+ epidemic_titled_ruler_flu: "$epidemic_province_loc$ Gripe" #NT!
+ epidemic_ruler_flu: "$epidemic_province_loc$ Gripe" #NT!
+ epidemic_ruler_coughs: "$epidemic_province_loc$ Tose" #NT!
+ epidemic_holder_flu: "$epidemic_province_loc$ Gripe" #NT!
+ epidemic_holder_coughs: "$epidemic_province_loc$ Tose" #NT!
+ epidemic_realm_coughs: "$epidemic_province_loc$ Tose" #NT!
+ epidemic_random_saint_plague: "La plaga de Gabriel" #NT!
+ epidemic_evil_god_pestilence: "La peste del diablo" #NT!
+ epidemic_realm_flux: "$epidemic_province_loc$ Flujo" #NT!
+ epidemic_ruler_flux: "$epidemic_province_loc$ Flujo" #NT!
+ epidemic_titled_ruler_flux: "$epidemic_province_loc$ Flujo" #NT!
+ epidemic_culture_flux: "$epidemic_province_loc$ Flujo" #NT!
+ epidemic_location_flux: "$epidemic_province_loc$ Flujo" #NT!
+ epidemic_evil_god_flux: "Flujo del diablo" #NT!
+ epidemic_holder_flux: "$epidemic_province_loc$ Flujo" #NT!
+ epidemic_realm_dancing_plague: "La plaga del baile" #NT!
+ epidemic_culture_dancing_plague: "$epidemic_province_loc$ Plaga danzante" #NT!
+ epidemic_location_dancing_plague: "$epidemic_province_loc$ Plaga danzante" #NT!
+ epidemic_realm_fire: "$epidemic_province_loc$ Fuego" #NT!
+ epidemic_ruler_fire: "$epidemic_province_loc$ Fuego" #NT!
+ epidemic_culture_fire: "$epidemic_province_loc$ Fuego" #NT!
+ epidemic_location_fire: "$epidemic_province_loc$ Fuego" #NT!
+ epidemic_evil_god_fire: "$epidemic_province_loc$ Fuego" #NT!
+ epidemic_random_saint_fire: "$epidemic_province_loc$ Fuego" #NT!
+ epidemic_holder_fire: "$epidemic_province_loc$ Fuego" #NT!
+ epidemic_culture_plague: "$epidemic_province_loc$ Plaga" #NT!
+ epidemic_location_plague: "$epidemic_province_loc$ Plaga" #NT!
+ epidemic_ruler_plague: "$epidemic_province_loc$ Plaga" #NT!
+ epidemic_titled_ruler_plague: "$epidemic_province_loc$ Plaga" #NT!
+  
+  #We use saint for more broad stuff than just christianity 
+  
+ trait_saint_desc: "Una figura imponente que inspira adoración y celo." #NT!

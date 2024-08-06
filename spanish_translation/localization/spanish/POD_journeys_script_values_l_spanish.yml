@@ -1,0 +1,231 @@
+﻿l_spanish:
+  
+  ################################### 
+  ##### Monthly Progress Values ##### 
+  ################################### 
+  
+  # Datafunctions (no translation needed) 
+  # the default ones are used in the journey detail window, or before starting a journey via character interaction 
+  # the ones with "current" are referring to var:current_journey "actual" #NT!
+  
+ five_months_monthly_num: "#TOOLTIP:five_months_monthly_tt #V;L [GetPlayer.MakeScope.ScriptValue('five_months_progress')|0]%#!#!" #NT!
+ five_months_monthly_tt: "$POD_journey_time_until_completion$ #V [GetPlayer.MakeScope.ScriptValue('five_months_progress_years')|0] $POD_journey_years$, [GetPlayer.MakeScope.ScriptValue('five_months_progress_months')|0] $POD_journey_months$#!\n\n[GetPlayer.MakeScope.GetScriptValueDesc('five_months_progress')]" #NT!
+  
+ five_months_monthly_num_current: "#TOOLTIP:five_months_monthly_tt_current #V;L [GetPlayer.MakeScope.ScriptValue('five_months_progress')|0]%#!#!" #NT!
+ five_months_monthly_tt_current: "$POD_journey_time_remaining$ #V [GetPlayer.MakeScope.ScriptValue('five_months_progress_years_current')|0] $POD_journey_years$, [GetPlayer.MakeScope.ScriptValue('five_months_progress_months_current')|0] $POD_journey_months$#!\n\n[GetPlayer.MakeScope.GetScriptValueDesc('five_months_progress')]" #NT!
+  
+ ten_months_monthly_num: "#TOOLTIP:ten_months_monthly_tt #V;L [GetPlayer.MakeScope.ScriptValue('ten_months_progress')|0]%#!#!" #NT!
+ ten_months_monthly_tt: "$POD_journey_time_until_completion$ #V [GetPlayer.MakeScope.ScriptValue('ten_months_progress_years')|0] $POD_journey_years$, [GetPlayer.MakeScope.ScriptValue('ten_months_progress_months')|0] $POD_journey_months$#!\n\n[GetPlayer.MakeScope.GetScriptValueDesc('ten_months_progress')]" #NT!
+  
+ ten_months_monthly_num_current: "#TOOLTIP:ten_months_monthly_tt_current #V;L [GetPlayer.MakeScope.ScriptValue('ten_months_progress')|0]%#!#!" #NT!
+ ten_months_monthly_tt_current: "$POD_journey_time_remaining$ #V [GetPlayer.MakeScope.ScriptValue('ten_months_progress_years_current')|0] $POD_journey_years$, [GetPlayer.MakeScope.ScriptValue('ten_months_progress_months_current')|0] $POD_journey_months$#!\n\n[GetPlayer.MakeScope.GetScriptValueDesc('ten_months_progress')]" #NT!
+  
+  
+ twelve_months_monthly_num: "#TOOLTIP:twelve_months_monthly_tt #V;L [GetPlayer.MakeScope.ScriptValue('twelve_months_progress')|1]%#!#!" #NT!
+ twelve_months_monthly_tt: "$POD_journey_time_until_completion$ #V [GetPlayer.MakeScope.ScriptValue('twelve_months_progress_years')|0] $POD_journey_years$, [GetPlayer.MakeScope.ScriptValue('twelve_months_progress_months')|0] $POD_journey_months$#!\n\n[GetPlayer.MakeScope.GetScriptValueDesc('twelve_months_progress')]" #NT!
+  
+ twelve_months_monthly_num_current: "#TOOLTIP:twelve_months_monthly_tt_current #V;L [GetPlayer.MakeScope.ScriptValue('twelve_months_progress')|1]%#!#!" #NT!
+ twelve_months_monthly_tt_current: "$POD_journey_time_remaining$ #V [GetPlayer.MakeScope.ScriptValue('twelve_months_progress_years_current')|0] $POD_journey_years$, [GetPlayer.MakeScope.ScriptValue('twelve_months_progress_months_current')|0] $POD_journey_months$#!\n\n[GetPlayer.MakeScope.GetScriptValueDesc('twelve_months_progress')]" #NT!
+  
+  
+ two_years_monthly_num: "#TOOLTIP:two_years_monthly_tt #V;L [GetPlayer.MakeScope.ScriptValue('two_years_progress')|1]%#!#!" #NT!
+ two_years_monthly_tt: "$POD_journey_time_until_completion$ #V [GetPlayer.MakeScope.ScriptValue('two_years_progress_years')|0] $POD_journey_years$, [GetPlayer.MakeScope.ScriptValue('two_years_progress_months')|0] $POD_journey_months$#!\n\n[GetPlayer.MakeScope.GetScriptValueDesc('two_years_progress')]" #NT!
+  
+ two_years_monthly_num_current: "#TOOLTIP:two_years_monthly_tt_current #V;L [GetPlayer.MakeScope.ScriptValue('two_years_progress')|1]%#!#!" #NT!
+ two_years_monthly_tt_current: "$POD_journey_time_remaining$ #V [GetPlayer.MakeScope.ScriptValue('two_years_progress_years_current')|0] $POD_journey_years$, [GetPlayer.MakeScope.ScriptValue('two_years_progress_months_current')|0] $POD_journey_months$#!\n\n[GetPlayer.MakeScope.GetScriptValueDesc('two_years_progress')]" #NT!
+  
+  
+ five_years_monthly_num: "#TOOLTIP:five_years_monthly_tt #V;L [GetPlayer.MakeScope.ScriptValue('five_years_progress')|1]%#!#!" #NT!
+ five_years_monthly_tt: "$POD_journey_time_until_completion$ #V [GetPlayer.MakeScope.ScriptValue('five_years_progress_years')|0] $POD_journey_years$, [GetPlayer.MakeScope.ScriptValue('five_years_progress_months')|0] $POD_journey_months$#!\n\n[GetPlayer.MakeScope.GetScriptValueDesc('five_years_progress')]" #NT!
+  
+ five_years_monthly_num_current: "#TOOLTIP:five_years_monthly_tt_current #V;L [GetPlayer.MakeScope.ScriptValue('five_years_progress')|1]%#!#!" #NT!
+ five_years_monthly_tt_current: "$POD_journey_time_remaining$ #V [GetPlayer.MakeScope.ScriptValue('five_years_progress_years_current')|0] $POD_journey_years$, [GetPlayer.MakeScope.ScriptValue('five_years_progress_months_current')|0] $POD_journey_months$#!\n\n[GetPlayer.MakeScope.GetScriptValueDesc('five_years_progress')]" #NT!
+  
+  
+ ten_years_monthly_num: "#TOOLTIP:ten_years_monthly_tt #V;L [GetPlayer.MakeScope.ScriptValue('ten_years_progress')|1]%#!#!" #NT!
+ ten_years_monthly_tt: "$POD_journey_time_until_completion$ #V [GetPlayer.MakeScope.ScriptValue('ten_years_progress_years')|0] $POD_journey_years$, [GetPlayer.MakeScope.ScriptValue('ten_years_progress_months')|0] $POD_journey_months$#!\n\n[GetPlayer.MakeScope.GetScriptValueDesc('ten_years_progress')]" #NT!
+  
+ ten_years_monthly_num_current: "#TOOLTIP:ten_years_monthly_tt_current #V;L [GetPlayer.MakeScope.ScriptValue('ten_years_progress')|1]%#!#!" #NT!
+ ten_years_monthly_tt_current: "$POD_journey_time_remaining$ #V [GetPlayer.MakeScope.ScriptValue('ten_years_progress_years_current')|0] $POD_journey_years$, [GetPlayer.MakeScope.ScriptValue('ten_years_progress_months_current')|0] $POD_journey_months$#!\n\n[GetPlayer.MakeScope.GetScriptValueDesc('ten_years_progress')]" #NT!
+  
+  
+ hunt_journey_monthly_num: "#TOOLTIP:hunt_journey_monthly_tt #V;L [GetPlayer.MakeScope.ScriptValue('hunt_journey_progress')|1]%#!#!" #NT!
+ hunt_journey_monthly_tt: "$POD_journey_time_until_completion$ #V [GetPlayer.MakeScope.ScriptValue('hunt_journey_progress_years')|0] $POD_journey_years$, [GetPlayer.MakeScope.ScriptValue('hunt_journey_progress_months')|0] $POD_journey_months$#!\n\n[GetPlayer.MakeScope.GetScriptValueDesc('hunt_journey_progress')]" #NT!
+  
+ hunt_journey_monthly_num_current: "#TOOLTIP:hunt_journey_monthly_tt_current #V;L [GetPlayer.MakeScope.ScriptValue('hunt_journey_progress')|1]%#!#!" #NT!
+ hunt_journey_monthly_tt_current: "$POD_journey_time_remaining$ #V [GetPlayer.MakeScope.ScriptValue('hunt_journey_progress_years_current')|0] $POD_journey_years$, [GetPlayer.MakeScope.ScriptValue('hunt_journey_progress_months_current')|0] $POD_journey_months$#!\n\n[GetPlayer.MakeScope.GetScriptValueDesc('hunt_journey_progress')]" #NT!
+  
+  
+ wake_from_torpor_monthly_num_current: "#TOOLTIP:wake_from_torpor_monthly_tt_current #V;L [GetPlayer.MakeScope.ScriptValue('wake_from_torpor_progress')|1]%#!#!" #NT!
+ wake_from_torpor_monthly_tt_current: "$POD_journey_time_remaining$ #V [GetPlayer.MakeScope.ScriptValue('wake_from_torpor_progress_years_current')|0] $POD_journey_years$, [GetPlayer.MakeScope.ScriptValue('wake_from_torpor_progress_months_current')|0] $POD_journey_months$#!\n\n[GetPlayer.MakeScope.GetScriptValueDesc('wake_from_torpor_progress')]" #NT!
+  
+  
+ assault_lair_monthly_num_current: "#TOOLTIP:assault_lair_monthly_tt_current #V;L [GetPlayer.MakeScope.ScriptValue('assault_lair_progress')|1]%#!#!" #NT!
+ assault_lair_monthly_tt_current: "$POD_journey_time_remaining$ #V [GetPlayer.MakeScope.ScriptValue('assault_lair_progress_years_current')|0] $POD_journey_years$, [GetPlayer.MakeScope.ScriptValue('assault_lair_progress_months_current')|0] $POD_journey_months$#!\n\n[GetPlayer.MakeScope.GetScriptValueDesc('assault_lair_progress')]" #NT!
+  
+  
+ hunt_young_fiend_monthly_num: "#TOOLTIP:hunt_young_fiend_monthly_tt #V;L [GetPlayer.MakeScope.ScriptValue('hunt_young_fiend_progress')|1]%#!#!" #NT!
+ hunt_young_fiend_monthly_tt: "$POD_journey_time_until_completion$ #V [GetPlayer.MakeScope.ScriptValue('hunt_young_fiend_progress_years')|0] $POD_journey_years$, [GetPlayer.MakeScope.ScriptValue('hunt_young_fiend_progress_months')|0] $POD_journey_months$#!\n\n[GetPlayer.MakeScope.GetScriptValueDesc('hunt_young_fiend_progress')]" #NT!
+  
+ hunt_young_fiend_monthly_num_current: "#TOOLTIP:hunt_young_fiend_monthly_tt_current #V;L [GetPlayer.MakeScope.ScriptValue('hunt_young_fiend_progress')|1]%#!#!" #NT!
+ hunt_young_fiend_monthly_tt_current: "$POD_journey_time_remaining$ #V [GetPlayer.MakeScope.ScriptValue('hunt_young_fiend_progress_years_current')|0] $POD_journey_years$, [GetPlayer.MakeScope.ScriptValue('hunt_young_fiend_progress_months_current')|0] $POD_journey_months$#!\n\n[GetPlayer.MakeScope.GetScriptValueDesc('hunt_young_fiend_progress')]" #NT!
+  
+  
+ werewolf_training_monthly_num: "#TOOLTIP:werewolf_training_monthly_tt #V;L [GetPlayer.MakeScope.ScriptValue('werewolf_training_progress')|1]%#!#!" #NT!
+ werewolf_training_monthly_tt: "$POD_journey_time_until_completion$ #V [GetPlayer.MakeScope.ScriptValue('werewolf_training_progress_years')|0] $POD_journey_years$, [GetPlayer.MakeScope.ScriptValue('werewolf_training_progress_months')|0] $POD_journey_months$#!\n\n[GetPlayer.MakeScope.GetScriptValueDesc('werewolf_training_progress')]" #NT!
+  
+ werewolf_training_monthly_num_current: "#TOOLTIP:werewolf_training_monthly_tt_current #V;L [GetPlayer.MakeScope.ScriptValue('werewolf_training_progress')|1]%#!#!" #NT!
+ werewolf_training_monthly_tt_current: "$POD_journey_time_remaining$ #V [GetPlayer.MakeScope.ScriptValue('werewolf_training_progress_years_current')|0] $POD_journey_years$, [GetPlayer.MakeScope.ScriptValue('werewolf_training_progress_months_current')|0] $POD_journey_months$#!\n\n[GetPlayer.MakeScope.GetScriptValueDesc('werewolf_training_progress')]" #NT!
+  
+  
+ seek_knowledge_monthly_num: "#TOOLTIP:seek_knowledge_monthly_tt #V;L [GetPlayer.MakeScope.ScriptValue('seek_knowledge_progress_preview')|1]%#!#!" #NT!
+ seek_knowledge_monthly_tt: "$POD_journey_time_until_completion$ #V [GetPlayer.MakeScope.ScriptValue('seek_knowledge_progress_years')|0] $POD_journey_years$, [GetPlayer.MakeScope.ScriptValue('seek_knowledge_progress_months')|0] $POD_journey_months$#!\n\n[GetPlayer.MakeScope.GetScriptValueDesc('seek_knowledge_progress_preview')]\n\n$POD_journey_progress_seek_knowledge_gui$" #NT!
+  
+ seek_knowledge_monthly_num_current: "#TOOLTIP:seek_knowledge_monthly_tt_current #V;L [GetPlayer.MakeScope.ScriptValue('seek_knowledge_progress')|1]%#!#!" #NT!
+ seek_knowledge_monthly_tt_current: "$POD_journey_time_remaining$ #V [GetPlayer.MakeScope.ScriptValue('seek_knowledge_progress_years_current')|0] $POD_journey_years$, [GetPlayer.MakeScope.ScriptValue('seek_knowledge_progress_months_current')|0] $POD_journey_months$#!\n\n[GetPlayer.MakeScope.GetScriptValueDesc('seek_knowledge_progress')]" #NT!
+  
+  
+ realm_mastery_monthly_num: "#TOOLTIP:realm_mastery_monthly_tt #V;L [GetPlayer.MakeScope.ScriptValue('realm_mastery_progress_preview')|1]%#!#!" #NT!
+ realm_mastery_monthly_tt: "$POD_journey_time_until_completion$ #V [GetPlayer.MakeScope.ScriptValue('realm_mastery_progress_years')|0] $POD_journey_years$, [GetPlayer.MakeScope.ScriptValue('realm_mastery_progress_months')|0] $POD_journey_months$#!\n\n[GetPlayer.MakeScope.GetScriptValueDesc('realm_mastery_progress_preview')]\n\n$POD_journey_progress_seek_knowledge_gui$" #NT!
+  
+ realm_mastery_monthly_num_current: "#TOOLTIP:realm_mastery_monthly_tt_current #V;L [GetPlayer.MakeScope.ScriptValue('realm_mastery_progress')|1]%#!#!" #NT!
+ realm_mastery_monthly_tt_current: "$POD_journey_time_remaining$ #V [GetPlayer.MakeScope.ScriptValue('realm_mastery_progress_years_current')|0] $POD_journey_years$, [GetPlayer.MakeScope.ScriptValue('realm_mastery_progress_months_current')|0] $POD_journey_months$#!\n\n[GetPlayer.MakeScope.GetScriptValueDesc('realm_mastery_progress')]" #NT!
+  
+  
+ find_artifact_monthly_num: "#TOOLTIP:find_artifact_monthly_tt #V;L [GetPlayer.MakeScope.ScriptValue('find_artifact_progress')|1]%#!#!" #NT!
+ find_artifact_monthly_tt: "$POD_journey_time_until_completion$ #V [GetPlayer.MakeScope.ScriptValue('find_artifact_progress_years')|0] $POD_journey_years$, [GetPlayer.MakeScope.ScriptValue('find_artifact_progress_months')|0] $POD_journey_months$#!\n\n[GetPlayer.MakeScope.GetScriptValueDesc('find_artifact_progress')]" #NT!
+  
+ find_artifact_monthly_num_current: "#TOOLTIP:find_artifact_monthly_tt_current #V;L [GetPlayer.MakeScope.ScriptValue('find_artifact_progress')|1]%#!#!" #NT!
+ find_artifact_monthly_tt_current: "$POD_journey_time_remaining$ #V [GetPlayer.MakeScope.ScriptValue('find_artifact_progress_years_current')|0] $POD_journey_years$, [GetPlayer.MakeScope.ScriptValue('find_artifact_progress_months_current')|0] $POD_journey_months$#!\n\n[GetPlayer.MakeScope.GetScriptValueDesc('find_artifact_progress')]" #NT!
+  
+  
+ golconda_1_monthly_num: "#TOOLTIP:golconda_1_monthly_tt #V;L [GetPlayer.MakeScope.ScriptValue('golconda_1_progress')|1]%#!#!" #NT!
+ golconda_1_monthly_tt: "$POD_journey_time_until_completion$ #V [GetPlayer.MakeScope.ScriptValue('golconda_1_progress_years')|0] $POD_journey_years$, [GetPlayer.MakeScope.ScriptValue('golconda_1_progress_months')|0] $POD_journey_months$#!\n\n[GetPlayer.MakeScope.GetScriptValueDesc('golconda_1_progress')]" #NT!
+  
+ golconda_1_monthly_num_current: "#TOOLTIP:golconda_1_monthly_tt_current #V;L [GetPlayer.MakeScope.ScriptValue('golconda_1_progress')|1]%#!#!" #NT!
+ golconda_1_monthly_tt_current: "$POD_journey_time_remaining$ #V [GetPlayer.MakeScope.ScriptValue('golconda_1_progress_years_current')|0] $POD_journey_years$, [GetPlayer.MakeScope.ScriptValue('golconda_1_progress_months_current')|0] $POD_journey_months$#!\n\n[GetPlayer.MakeScope.GetScriptValueDesc('golconda_1_progress')]" #NT!
+  
+  
+ golconda_2_monthly_num: "#TOOLTIP:golconda_2_monthly_tt #V;L [GetPlayer.MakeScope.ScriptValue('golconda_2_progress')|1]%#!#!" #NT!
+ golconda_2_monthly_tt: "$POD_journey_time_until_completion$ #V [GetPlayer.MakeScope.ScriptValue('golconda_2_progress_years')|0] $POD_journey_years$, [GetPlayer.MakeScope.ScriptValue('golconda_2_progress_months')|0] $POD_journey_months$#!\n\n[GetPlayer.MakeScope.GetScriptValueDesc('golconda_2_progress')]\n\n$POD_journey_progress_golconda_2_gui$" #NT!
+  
+ golconda_2_monthly_num_current: "#TOOLTIP:golconda_2_monthly_tt_current #V;L [GetPlayer.MakeScope.ScriptValue('golconda_2_progress')|1]%#!#!" #NT!
+ golconda_2_monthly_tt_current: "$POD_journey_time_remaining$ #V [GetPlayer.MakeScope.ScriptValue('golconda_2_progress_years_current')|0] $POD_journey_years$, [GetPlayer.MakeScope.ScriptValue('golconda_2_progress_months_current')|0] $POD_journey_months$#!\n\n[GetPlayer.MakeScope.GetScriptValueDesc('golconda_2_progress')]\n\n$POD_journey_progress_golconda_2_gui$" #NT!
+  
+ POD_journey_progress_golconda_2_gui: "#help Para obtener sugerencias sobre cómo aumentar aún más la velocidad de planificación, consulte [golconda_planning_speed|E].#!" #NT!
+  
+  
+  # Text starts here 
+  
+ instant_monthly_num: "Instante" #NT!
+ instant_monthly_num_current: "$instant_monthly_num$" #NT!
+ seek_knowledge_instant_monthly_num: "$instant_monthly_num$" #NT!
+ seek_knowledge_instant_monthly_num_current: "$instant_monthly_num$" #NT!
+  
+  
+ POD_journey_time_until_completion: "Tiempo hasta la finalización:" #NT!
+ POD_journey_time_remaining: "Tiempo restante:" #NT!
+ POD_journey_years: "años" #NT!
+ POD_journey_months: "meses" #NT!
+  
+  
+ POD_journey_progress_base: "Base [planning_speed|E]" #NT!
+  
+ POD_journey_progress_diplomacy: "Tu [diplomacy|E] #weak (limitado a [EmptyScope.ScriptValue('coterie_skill_hardcap')])#!" #NT!
+ POD_journey_progress_diplomacy_coterie: "[diplomacy|E] de $POD_player_coterie$ #weak (limitado a [EmptyScope.ScriptValue('coterie_skill_hardcap')])#!" #NT!
+ POD_journey_progress_diplomacy_target: "[diplomacy|E] de [PlayerJourneyTarget.GetFirstName] #weak (limitado a [EmptyScope.ScriptValue('coterie_skill_hardcap')])#!" #NT!
+ POD_journey_progress_martial: "Tu [martial|E] #weak (limitado a [EmptyScope.ScriptValue('coterie_skill_hardcap')])#!" #NT!
+ POD_journey_progress_martial_coterie: "[martial|E] de $POD_player_coterie$ #weak (limitado a [EmptyScope.ScriptValue('coterie_skill_hardcap')])#!" #NT!
+ POD_journey_progress_martial_target: "[martial|E] de [PlayerJourneyTarget.GetFirstName] #weak (limitado a [EmptyScope.ScriptValue('coterie_skill_hardcap')])#!" #NT!
+ POD_journey_progress_stewardship: "Tu [stewardship|E] #weak (limitado a [EmptyScope.ScriptValue('coterie_skill_hardcap')])#!" #NT!
+ POD_journey_progress_stewardship_coterie: "[stewardship|E] de $POD_player_coterie$ #weak (limitado a [EmptyScope.ScriptValue('coterie_skill_hardcap')])#!" #NT!
+ POD_journey_progress_stewardship_target: "[stewardship|E] de [PlayerJourneyTarget.GetFirstName] #weak (limitado a [EmptyScope.ScriptValue('coterie_skill_hardcap')])#!" #NT!
+ POD_journey_progress_intrigue: "Tu [intrigue|E] #weak (limitado a [EmptyScope.ScriptValue('coterie_skill_hardcap')])#!" #NT!
+ POD_journey_progress_intrigue_coterie: "[intrigue|E] de $POD_player_coterie$ #weak (limitado a [EmptyScope.ScriptValue('coterie_skill_hardcap')])#!" #NT!
+ POD_journey_progress_intrigue_target: "[intrigue|E] de [PlayerJourneyTarget.GetFirstName] #weak (limitado a [EmptyScope.ScriptValue('coterie_skill_hardcap')])#!" #NT!
+ POD_journey_progress_learning: "Tu [learning|E] #weak (limitado a [EmptyScope.ScriptValue('coterie_skill_hardcap')])#!" #NT!
+ POD_journey_progress_learning_coterie: "[learning|E] de $POD_player_coterie$ #weak (limitado a [EmptyScope.ScriptValue('coterie_skill_hardcap')])#!" #NT!
+ POD_journey_progress_learning_target: "[learning|E] de [PlayerJourneyTarget.GetFirstName] #weak (limitado a [EmptyScope.ScriptValue('coterie_skill_hardcap')])#!" #NT!
+ POD_journey_progress_prowess: "Tu [prowess|E]" #NT!
+ POD_journey_progress_prowess_coterie: "[prowess|E] de $POD_player_coterie$" #NT!
+ POD_journey_progress_prowess_target: "[prowess|E] de [PlayerJourneyTarget.GetFirstName]" #NT!
+  
+ POD_journey_progress_court_tutor_none: "No empleas a un [GetCourtPositionType('court_tutor_court_position').GetName()]" #NT!
+ POD_journey_progress_court_tutor_1: "Tu [GetCourtPositionType('court_tutor_court_position').GetName()] tiene Pobre [aptitude|E]" #NT!
+ POD_journey_progress_court_tutor_2: "Tu [GetCourtPositionType('court_tutor_court_position').GetName()] tiene [aptitude|E] adecuado" #NT!
+ POD_journey_progress_court_tutor_3: "Tu [GetCourtPositionType('court_tutor_court_position').GetName()] tiene Bueno [aptitude|E]" #NT!
+ POD_journey_progress_court_tutor_4: "Tu [GetCourtPositionType('court_tutor_court_position').GetName()] tiene Excelente [aptitude|E]" #NT!
+  
+ POD_journey_progress_antiquarian_none: "No empleas un [GetCourtPositionType('antiquarian_court_position').GetName()]" #NT!
+ POD_journey_progress_antiquarian_1: "Tu [GetCourtPositionType('antiquarian_court_position').GetName()] tiene Pobre [aptitude|E]" #NT!
+ POD_journey_progress_antiquarian_2: "Tu [GetCourtPositionType('antiquarian_court_position').GetName()] tiene [aptitude|E] adecuado" #NT!
+ POD_journey_progress_antiquarian_3: "Tu [GetCourtPositionType('antiquarian_court_position').GetName()] tiene Bueno [aptitude|E]" #NT!
+ POD_journey_progress_antiquarian_4: "Tu [GetCourtPositionType('antiquarian_court_position').GetName()] tiene Excelente [aptitude|E]" #NT!
+  
+ POD_journey_progress_touchstones_4: "Tienes #V [GetPlayer.MakeScope.ScriptValue('touchstones_4_count')]#! [GetCourtPositionType('touchstones_court_position').GetName()] con Excelente [aptitude|E]" #NT!
+ POD_journey_progress_touchstones_3: "Tienes #V [GetPlayer.MakeScope.ScriptValue('touchstones_3_count')]#! [GetCourtPositionType('touchstones_court_position').GetName()] con Bueno [aptitude|E]" #NT!
+ POD_journey_progress_touchstones_2: "Tienes #V [GetPlayer.MakeScope.ScriptValue('touchstones_2_count')]#! [GetCourtPositionType('touchstones_court_position').GetName()] con Adecuado [aptitude|E]" #NT!
+ POD_journey_progress_touchstones_1: "Tienes #V [GetPlayer.MakeScope.ScriptValue('touchstones_1_count')]#! [GetCourtPositionType('touchstones_court_position').GetName()] con Pobre [aptitude|E]" #NT!
+ POD_journey_progress_touchstones_0: "Tienes #V [GetPlayer.MakeScope.ScriptValue('touchstones_0_count')]#! [GetCourtPositionType('touchstones_court_position').GetName()] con Terrible [aptitude|E]" #NT!
+  
+ POD_journey_progress_patient: "Eres [GetTrait('patient').GetName(GetPlayer)]" #NT!
+ POD_journey_progress_calm: "Eres [GetTrait('calm').GetName(GetPlayer)]" #NT!
+ POD_journey_progress_forgiving: "Eres [GetTrait('forgiving').GetName(GetPlayer)]" #NT!
+ POD_journey_progress_brave: "Eres [GetTrait('brave').GetName(GetPlayer)]" #NT!
+ POD_journey_progress_diligent: "Eres [GetTrait('diligent').GetName(GetPlayer)]" #NT!
+ POD_journey_progress_diablerist: "Eres un [GetTrait('diablerist').GetName(GetPlayer)]" #NT!
+ POD_journey_progress_impatient: "Eres [GetTrait('impatient').GetName(GetPlayer)]" #NT!
+ POD_journey_progress_wrathful: "Eres [GetTrait('wrathful').GetName(GetPlayer)]" #NT!
+ POD_journey_progress_vengeful: "Eres [GetTrait('vengeful').GetName(GetPlayer)]" #NT!
+ POD_journey_progress_craven: "Eres [GetTrait('craven').GetName(GetPlayer)]" #NT!
+ POD_journey_progress_lazy: "Eres [GetTrait('lazy').GetName(GetPlayer)]" #NT!
+ POD_journey_progress_confider: "Eres un [GetTrait('confider').GetName(GetPlayer)]" #NT!
+ POD_journey_progress_journaller: "Eres un [GetTrait('journaller').GetName(GetPlayer)]" #NT!
+ POD_journey_progress_reclusive: "Eres [GetTrait('reclusive').GetName(GetPlayer)]" #NT!
+  
+ POD_journey_progress_golcondalore: "Tienes un [artifact|E] con [golconda|E] de conocimiento" #NT!
+  
+ POD_journey_progress_instinct_conviction: "Tus valores [faith|E] #TOOLTIP:GAME_FAITH_DOCTRINE,doctrine_enlightenment_virtues_conviction_and_instinct #L Instinto#!#!" #NT!
+ POD_journey_progress_instinct_conscience: "Tus valores [faith|E] #TOOLTIP:GAME_FAITH_DOCTRINE,doctrine_enlightenment_virtues_conscience_and_instinct #L Instinto#!#!" #NT!
+  
+ # Example text: "2 miembros del círculo de Brunhilde conocen esta habilidad" #NT!
+ POD_journey_progress_seek_knowledge: "#V [GetPlayer.MakeScope.ScriptValue('seek_knowledge_coterie_member_count')]#! [Select_CString( EqualTo_CFixedPoint( GetPlayer.MakeScope.ScriptValue('seek_knowledge_coterie_member_count'), '(CFixedPoint)1' ), 'member', 'members' )] de $POD_player_coterie$ [Select_CString( EqualTo_CFixedPoint( GetPlayer.MakeScope.ScriptValue('seek_knowledge_coterie_member_count'), '(CFixedPoint)1' ), 'knows', 'know' )] esta habilidad" #NT!
+ POD_journey_progress_seek_knowledge_gui: "#help [planning_speed|E] aumentará aún más por cada miembro de tu [GetPlayer.Custom('PODCoterie')] que ya conozca esta habilidad.#!" #NT!
+  
+ POD_journey_progress_golconda_members: "#V [GetPlayer.MakeScope.ScriptValue('golconda_coterie_member_count')]#! [Select_CString( EqualTo_CFixedPoint( GetPlayer.MakeScope.ScriptValue('golconda_coterie_member_count'), '(CFixedPoint)1' ), 'member', 'members' )] de $POD_player_coterie$ [Select_CString( EqualTo_CFixedPoint( GetPlayer.MakeScope.ScriptValue('golconda_coterie_member_count'), '(CFixedPoint)1' ), 'has', 'have' )] logrados [GetTrait('golconda').GetName(GetNullCharacter)]" #NT!
+ POD_journey_progress_golconda_seeker_members: "#V [GetPlayer.MakeScope.ScriptValue('golconda_seeker_coterie_member_count')]#! [Select_CString( EqualTo_CFixedPoint( GetPlayer.MakeScope.ScriptValue('golconda_seeker_coterie_member_count'), '(CFixedPoint)1' ), 'member', 'members' )] de $POD_player_coterie$ [SelectLocalization( EqualTo_CFixedPoint( GetPlayer.MakeScope.ScriptValue('golconda_seeker_coterie_member_count'), '(CFixedPoint)1' ), 'POD_golconda_seeker_singular', 'POD_golconda_seeker_plural' )]" #NT!
+ POD_journey_progress_golconda_seeker: "Eres un [GetTrait('golconda_seeker').GetName(GetPlayer)]" #NT!
+ POD_golconda_seeker_singular: "es un [GetTrait('golconda_seeker').GetName(GetNullCharacter)]" #NT!
+ POD_golconda_seeker_plural: "son #TOOLTIP:GAME_TRAIT,golconda_seeker,[GetNullCharacter] #L Buscadores de Golconda#!#!" #NT!
+  
+ POD_journey_progress_target_rank_empire: "[PlayerJourneyTarget.GetFirstName] gobierna sobre [empire|E]" #NT!
+ POD_journey_progress_target_rank_kingdom: "[PlayerJourneyTarget.GetFirstName] gobierna sobre [kingdom|E]" #NT!
+ POD_journey_progress_target_rank_duchy: "[PlayerJourneyTarget.GetFirstName] gobierna sobre [duchy|E]" #NT!
+ POD_journey_progress_target_rank_barony: "[PlayerJourneyTarget.GetFirstName] solo gobierna sobre [barony|E]" #NT!
+ POD_journey_progress_target_rank_unlanded: "[PlayerJourneyTarget.GetFirstName] es [unlanded|E]" #NT!
+  
+ POD_journey_progress_target_age_1000: "[PlayerJourneyTarget.GetFirstName] tiene más de #V 1000#! años" #NT!
+ POD_journey_progress_target_age_400: "[PlayerJourneyTarget.GetFirstName] tiene más de #V 400#! años" #NT!
+ POD_journey_progress_target_age_200: "[PlayerJourneyTarget.GetFirstName] tiene más de #V 200#! años" #NT!
+  
+ POD_journey_progress_target_masquerade0: "[PlayerJourneyTarget.GetFirstName] tiene [GetModifier('masquerade0_modifier').GetNameWithTooltip]" #NT!
+ POD_journey_progress_target_masquerade2: "[PlayerJourneyTarget.GetFirstName] tiene [GetModifier('masquerade2_modifier').GetNameWithTooltip]" #NT!
+ POD_journey_progress_target_masquerade3: "[PlayerJourneyTarget.GetFirstName] tiene [GetModifier('masquerade3_modifier').GetNameWithTooltip]" #NT!
+ POD_journey_progress_target_masquerade4: "[PlayerJourneyTarget.GetFirstName] tiene [GetModifier('masquerade4_modifier').GetNameWithTooltip]" #NT!
+ POD_journey_progress_target_masquerade5: "[PlayerJourneyTarget.GetFirstName] tiene [GetModifier('masquerade5_modifier').GetNameWithTooltip]" #NT!
+  
+ POD_journey_progress_target_obfuscate: "[PlayerJourneyTarget.GetFirstName] sabe [GetTrait('obfuscate').GetName(GetNullCharacter)]" #NT!
+ POD_journey_progress_target_obfuscateadvanced: "[PlayerJourneyTarget.GetFirstName] sabe [GetTrait('obfuscateadvanced').GetName(GetNullCharacter)]" #NT!
+ POD_journey_progress_target_chimerstry: "[PlayerJourneyTarget.GetFirstName] sabe [GetTrait('chimerstry').GetName(GetNullCharacter)]" #NT!
+ POD_journey_progress_target_chimerstryadvanced: "[PlayerJourneyTarget.GetFirstName] sabe [GetTrait('chimerstryadvanced').GetName(GetNullCharacter)]" #NT!
+  
+ POD_journey_progress_unity_2: "[GetPlayer.GetDynasty.GetName] tiene #TOOLTIP:DYNASTY_PERK,unity_legacy_2 #L $unity_legacy_2_name$#!#!" #NT!
+ POD_journey_progress_san_michele_cloisters: "Eres dueño del #TOOLTIP:BUILDING,rome_san_michele_cloisters_03 #L $building_rome_san_michele_cloisters_03$#!#!" #NT!
+  
+  
+  ##### Value breakdown formats 
+  
+ POD_PROGRESS_FORMAT_POSITIVE: "$KEY$: #P +$VALUE|2$#!" #NT!
+ POD_PROGRESS_FORMAT_NEGATIVE: "$KEY$: #N $VALUE|2$#!" #NT!
+  
+ POD_PROGRESS_FORMAT_PERCENTAGE_POSITIVE: "$KEY$: #P $VALUE|=0%$#!" #NT!

@@ -1,0 +1,39 @@
+﻿l_spanish:
+ POD_hunt_target_interaction: "Caza" #NT!
+ POD_hunt_target_interaction_desc_vampire: "Ve a cazar [journey|E] y podrás drenar [recipient.GetHerHis] de sangre para reponer tus reservas." #NT!
+ POD_hunt_target_interaction_effect_vampire: "Irás en un [journey|E] a cazar [recipient.GetShortUIName] y beberás [recipient.GetHerHis|l] sangre." #NT!
+ POD_hunt_target_interaction_desc_chi: "Ve a cazar [journey|E] y podrás drenar [recipient.GetHerHis] Chi para reponer tus reservas." #NT!
+ POD_hunt_target_interaction_effect_chi: "Irás en un [journey|E] para cazar [recipient.GetShortUIName] y drenar [recipient.GetHerHis|l] Chi." #NT!
+ POD_hunt_target_interaction_desc_banemummy: "Ve a cazar [journey|E] y podrás comer [recipient.GetHerHis] carnes para reponer tu Sekhem." #NT!
+ POD_hunt_target_interaction_effect_banemummy: "Irás en un [journey|E] a cazar [recipient.GetShortUIName] y comerás carne de [recipient.GetHerHis|l]." #NT!
+ POD_hunt_target_interaction_monthly: "El [journey|E] tendrá un [planning_speed|E] de $hunt_journey_monthly_num$ por mes." #NT!
+  
+ POD_wake_from_torpor_interaction: "encontrar un escondite" #NT!
+ POD_wake_from_torpor_interaction_desc: "Ve a [journey|E] para conocer la ubicación exacta de este vampiro aletargado. Luego, podrías invitar a [recipient.GetHerHim] a tu corte o atacar a [recipient.GetHerHim]..." #NT!
+ POD_wake_from_torpor_interaction_effect: "Te embarcarás en un viaje de [journey|E] para intentar averiguar la ubicación exacta de este vampiro aletargado. Luego, comienza la caza. Obviamente, existen serios riesgos involucrados..." #NT!
+ POD_wake_from_torpor_interaction_monthly: "#help El [planning_speed|E] de este [journey|E] se basa en el [intrigue_skill|E] de ti y tu objetivo.#!" #NT!
+  
+ POD_assault_lair_interaction: "Encuentra guarida" #NT!
+ POD_assault_lair_interaction_desc: "Sigue un [journey|E] para conocer la ubicación exacta de este demonio. Luego comienza la caza. Obviamente, hay serios riesgos involucrados..." #NT!
+ POD_assault_lair_interaction_effect: "Tendrás que emprender un viaje de [journey|E] para averiguar la ubicación exacta de este demonio. Luego, la caza comenzará. Obviamente, existen serios riesgos involucrados..." #NT!
+ POD_assault_lair_interaction_monthly: "#help El [planning_speed|E] de este [journey|E] se basa en muchos factores, como la edad de tu objetivo, su rango, [intrigue|E], [masquerade_exposure|E] y otros.#!" #NT!
+ POD_assault_lair_interaction_instant: "#help Como tienes [GetModifier('tracked_down_modifier').GetNameWithTooltip|L] como objetivo, el [journey|E] se completará instantáneamente.#!" #NT!
+  
+ POD_heist_interaction_wary: "@warning_icon! #X [recipient.GetShortUINameNoTooltip] es [GetModifier('wary_of_infiltrators_modifier').GetNameWithTooltip]#!" #NT!
+ POD_heist_interaction_dont_scout: "El mapa no será revelado de antemano." #NT!
+ POD_heist_interaction_scout: "El mapa #P;bold será revelado#!, pero el [planning_phase|E] tardará el doble." #NT!
+ POD_heist_interaction_one_key: "Tu objetivo estará en una bóveda bloqueada #N;bold#!. Tendrás que encontrar la llave durante el [infiltration|E]." #NT!
+ POD_heist_interaction_two_keys: "Tu objetivo estará en una bóveda cerrada #N;bold#!. Como es un artefacto valioso, tendrás que encontrar #N;bold dos llaves#! durante el [infiltration|E]." #NT!
+  
+ POD_gold_heist_interaction: "Robar oro" #NT!
+ POD_gold_heist_interaction_desc: "Ve a [infiltration_mission|E] para robar [gold|E] de [recipient.GetShortUINameNoTooltip]" #NT!
+ POD_gold_heist_dont_scout: "Prepárate rápidamente" #NT!
+ POD_gold_heist_scout: "Explorar a fondo" #NT!
+ POD_gold_heist_interaction_effect: "Irás a un [infiltration_mission|E] para robarle [gold|E] a [recipient.GetShortUIName]." #NT!
+ POD_gold_heist_interaction_monthly: "El [journey|E] tendrá un [planning_speed|E] de $twelve_months_monthly_num$ por mes." #NT!
+ POD_gold_heist_interaction_monthly_scouted: "El [journey|E] tendrá un [planning_speed|E] de $two_years_monthly_num$ por mes." #NT!
+  
+ POD_artifact_heist_interaction: "Robo de artefactos" #NT!
+ POD_artifact_heist_interaction_desc: "Ve a un [infiltration_mission|E] para robar un [artifact|E] de [recipient.GetShortUINameNoTooltip]" #NT!
+ POD_artifact_heist_interaction_effect: "Irás a un [infiltration_mission|E] para robarle [target.Custom('ColorizedArtifactName')] a [recipient.GetShortUIName]." #NT!
+ POD_artifact_heist_interaction_monthly: "#help El [planning_speed|E] de este [journey|E] se basa en tu [stewardship_skill|E].#!" #NT!

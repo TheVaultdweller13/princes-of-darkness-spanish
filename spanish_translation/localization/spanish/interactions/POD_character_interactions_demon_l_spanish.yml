@@ -1,0 +1,330 @@
+﻿l_spanish:
+ POD_set_thrall_interaction: "Cautivar" #NT!
+ POD_set_thrall_interaction_desc: "Enthrall [recipient.GetFirstName], convirtiéndolo en un Thrall a tu servicio." #NT!
+ POD_set_thrall_interaction_extra_icon: "$hook_extra_icon$" #NT!
+ POD_remove_thrall_interaction: "Cancelar pacto" #NT!
+ POD_remove_thrall_interaction_desc: "Cancela el pacto, haciendo que [recipient.GetFirstName] ya no sea tu [thrall|E]." #NT!
+ POD_enthrall_interaction_limit: "¡El tamaño de los esclavos está limitado! (3 más 1 por [intrigue_i]#V 8#! [intrigue|E] más cualquier bonificación de otras fuentes)" #NT!
+  
+ POD_set_cultist_interaction: "Reconocer al cultista" #NT!
+ POD_set_cultist_interaction_desc: "Reconoce a [recipient.GetFirstName] como tu cultista." #NT!
+ POD_set_cultist_interaction_extra_icon: "$hook_extra_icon$" #NT!
+ POD_remove_cultist_interaction: "Rechazar cultista" #NT!
+ POD_remove_cultist_interaction_desc: "Rechaza la adoración a [recipient.GetFirstNamePossessive], deja de considerar a [recipient.GetHerHim] como tu cultista." #NT!
+  
+ POD_designate_vessel_interaction: "Designar buque" #NT!
+ POD_designate_vessel_interaction_desc: "Designa [recipient.GetFirstName] como tu próxima embarcación para cuando la actual ya no pueda usarse." #NT!
+  
+ POD_possess_host_interaction: "Poseer anfitrión" #NT!
+ POD_possess_host_interaction_desc: "Posee [recipient.GetFirstName] para poder disfrutar de los placeres mortales o salvarte de ser llamado de nuevo a [abyss|E]." #NT!
+ POD_demonic_possess_artifact_interaction: "Posesión demoníaca #weak (Objeto)#!" #NT!
+ POD_demonic_possess_title_interaction: "Posesión demoníaca #weak (Lugar)#!" #NT!
+ POD_demonic_possess_dead_interaction: "Posesión demoníaca #weak (muerto)#!" #NT!
+ POD_demonic_possess_interaction_desc: "Posee una embarcación para que no termines en el [abyss|E]." #NT!
+ POD_demonic_possess_interaction.tt: "Posee [recipient.GetFirstName] para que no termines en el [abyss|E]." #NT!
+ POD_demonic_possess_host_leech.tt: "Tu anfitrión te "proporcionará" algunas de sus fortalezas después de la posesión. (Dependiendo de la suma de [recipient.GetHerHis] [skills|E])" #NT!
+ POD_demonic_possess_maintenance.tt: "El acto de posesión condenará a [recipient.GetFirstName] a una muerte inevitable y espantosa. ([actor.MakeScope.ScriptValue('host_kill_chance')|V0]% de probabilidad al inicio del año, dependiendo de tu Tormento)" #NT!
+ POD_demonic_possess_servitor.tt: "Poseer a tus sirvientes no provocará su muerte, pero tampoco obtendrás ninguna bonificación estadística de ellos." #NT!
+ become_earhbound: "Te convertirás en un ser terrenal y nunca más podrás volver a caer." #NT!
+  
+ POD_abandon_vessel_interaction: "Abandonar el buque" #NT!
+ POD_abandon_vessel_interaction_desc: "Abandona tu recipiente actual para entrar en un estado espiritual, con el riesgo de terminar en el [abyss|E] en cualquier momento." #NT!
+ POD_abandon_host_interaction: "Abandonar el host" #NT!
+ POD_abandon_host_interaction_desc: "Abandona tu cuerpo anfitrión actual, con el riesgo de terminar en el [abyss|E] si no estás ligado a la Tierra." #NT!
+  
+ POD_arcana_shapeshift_interaction: "Cambio de forma" #NT!
+ POD_arcana_shapeshift_interaction_desc: "Usa tus arcanos para cambiar de forma." #NT!
+ POD_shapeshift_interaction_purchase_arsenal_of_the_beast: "Compra Arsenal de la Bestia" #NT!
+  
+ POD_revelation_interaction: "Revelación" #NT!
+ POD_revelation_interaction_desc: "Resolver cosecha ampliando directamente [recipient.GetFirstName]." #NT!
+  
+ POD_regeneration_interaction: "Regeneración" #NT!
+ POD_regeneration_interaction_desc: "Usa el poder de los Arcanos para sanar tus heridas." #NT!
+ POD_regeneration_interaction_options_heading: "¿Qué debo invocar a Arcana para sanar?" #NT!
+  
+ POD_healing_touch_interaction: "Toque sanador" #NT!
+ POD_healing_touch_interaction_desc: "Usa el poder de Arcana para curar [recipient.GetFirstNamePossessive] heridas." #NT!
+ POD_healing_touch_interaction_options_heading: "¿Qué debo invocar en Arcana para sanar?" #NT!
+  
+ POD_arcana_purge_disease_interaction: "Enfermedad de purga" #NT!
+ POD_arcana_purge_disease_interaction_desc: "Usa el poder de Arcana para curar [recipient.GetFirstNamePossessive] enfermedades." #NT!
+ POD_arcana_purge_disease_interaction_options_heading: "¿Qué enfermedad debo recurrir a Arcanos para curar?" #NT!
+  
+ POD_arcana_inflict_disease_interaction: "Infligir enfermedad" #NT!
+ POD_arcana_inflict_disease_interaction_desc: "Usa el poder de Arcana para infectar a [recipient.GetFirstName] con una enfermedad." #NT!
+ POD_arcana_inflict_disease_interaction_options_heading: "¿Qué enfermedad debo invocar en Arcana para infectar?" #NT!
+  
+ POD_open_gate_interaction: "Puerta abierta" #NT!
+ POD_open_gate_interaction_desc: "Abre el espacio para crear un portal a la ubicación [recipient.GetFirstNamePossessive], o a tu próximo destino cuando [traveling|E]." #NT!
+  
+ POD_compel_sin_interaction: "Obligar al pecado" #NT!
+  
+ POD_donate_resolve_interaction: "Donar Resolver" #NT!
+ POD_donate_resolve_interaction_desc: "Dona Resuelve a [recipient.GetFirstName] para reducir [stress|E]." #NT!
+ POD_donate_resolve_interaction_options_heading: "¿Cuánto Resolve debo donar?" #NT!
+  
+ POD_arcana_discover_true_name_interaction: "Descubre el nombre celestial #weak (Esquema)#!" #NT!
+ POD_infernalist_discover_true_name_interaction: "Descubre el nombre celestial #weak (Esquema)#!" #NT!
+  
+ POD_arcana_summon_interaction: "Convocar" #NT!
+ POD_arcana_summon_interaction_desc: "Invoca el nombre [recipient.GetFirstNamePossessive] y convoca a [recipient.GetHerHim] a tu corte." #NT!
+ POD_arcana_summon_interaction_sucess: "[recipient.GetFirstName] ha sido citado a su tribunal." #NT!
+ POD_arcana_summon_interaction_fail: "[recipient.GetFirstName] se ha resistido." #NT!
+  
+ POD_sin_eating_interaction: "Comer pecado" #NT!
+ POD_sin_eating_interaction_desc: "Usa Tormento para tentar, amenazar o coaccionar a [recipient.GetFirstName] para que peque, lo que te permitirá obtener Resolución." #NT!
+ POD_sin_eating_interaction_sucess: "[recipient.GetFirstName] ha cometido el pecado." #NT!
+ POD_sin_eating_interaction_fail: "[recipient.GetFirstName] se ha resistido." #NT!
+  
+ POD_raise_the_dead_interaction: "resucitar a los muertos" #NT!
+ POD_raise_the_dead_interaction_desc: "Levanta cadáveres como zombis sin mente para hacer la oferta [recipient.GetFirstName]." #NT!
+  
+ POD_train_arcana_interaction: "Entrenamiento de Arcanos" #NT!
+ POD_train_arcana_interaction_desc: "Enséñale a [recipient.GetFirstName] uno de tus arcanos." #NT!
+  
+ POD_summon_demon_interaction: "Invocar demonio" #NT!
+ POD_summon_demon_interaction_desc: "Invoca un [GetTrait('demon').GetName( GetPlayer )] en [recipient.GetFirstName]." #NT!
+  
+ POD_tempt_interaction: "Tentación #weak (Esquema)#!" #NT!
+ POD_tempt_interaction_desc: "Tenta a [recipient.GetFirstName], lo que les permite obtener tu rasgo Pecado, lo que permite una corrupción más profunda después." #NT!
+  
+ POD_corrupt_interaction: "Corrupto #weak (Plan)#!" #NT!
+ POD_corrupt_interaction_desc: "Corrompe a [recipient.GetFirstName] y usa su rasgo de Pecado existente para hacer que se conviertan a tu fe." #NT!
+  
+ SAME_FAITH: "Eres de la misma fe: $VALUE|+0$" #NT!
+  
+ POD_command_thrall_gold_interaction: "Comando [thrall|E] #Weak (Oro)#!" #NT!
+ POD_command_thrall_gold_interaction_desc: "Ofrece un regalo de poder para que [recipient.GetFirstName] te pague oro." #NT!
+ POD_command_thrall_gold_interaction_option_minor_gold: "Oro menor" #NT!
+ POD_command_thrall_gold_interaction_option_medium_gold: "Oro medio" #NT!
+ POD_command_thrall_gold_interaction_option_major_gold: "Oro mayor" #NT!
+ POD_command_thrall_gold_interaction_option_massive_gold: "Oro masivo" #NT!
+ POD_command_thrall_gold_interaction_option_monumental_gold: "Oro monumental" #NT!
+ POD_command_thrall_gold_interaction_option_excessive_gold: "Oro excesivo" #NT!
+ POD_command_thrall_gold_interaction_option_omega_gold: "Oro Omega" #NT!
+  
+ POD_command_thrall_artifact_interaction: "Comando [thrall|E] #Weak (Artefacto)#!" #NT!
+ POD_command_thrall_artifact_interaction_desc: "Ofrece un regalo de poder para hacer que [recipient.GetFirstName] te regale un artefacto." #NT!
+  
+ POD_command_thrall_title_interaction: "Comando [thrall|E] #Weak (Título)#!" #NT!
+ POD_command_thrall_title_interaction_desc: "Ofrece un regalo de poder para que [recipient.GetFirstName] te regale un título (nunca el principal)." #NT!
+  
+ POD_command_thrall_vassal_interaction: "Comando [thrall|E] #Weak (Vasallo)#!" #NT!
+ POD_command_thrall_vassal_interaction_desc: "Ofrece un regalo de poder para hacer que [recipient.GetFirstName] te transfiera un vasallo." #NT!
+ recipient_secondary_POD_command_thrall_vassal_interaction: "Vasallo" #NT!
+  
+ POD_command_thrall_war_interaction: "Comando [thrall|E] #Weak (Guerra)#!" #NT!
+ POD_command_thrall_war_interaction_desc: "Ofrece un regalo de poder para hacer que [recipient.GetFirstName] inicie una guerra contra un gobernante vecino." #NT!
+ recipient_secondary_POD_command_thrall_war_interaction: "Objetivo de guerra" #NT!
+  
+ POD_demonic_submission_interaction: "Poder detrás del trono" #NT!
+ POD_demonic_submission_interaction_desc: "Regala tu título principal a [recipient.GetFirstName] y jura lealtad a [recipient.GetHerHim]." #NT!
+  
+ EMINENCE_LEVEL_DESC: "Tu nivel de Eminencia te otorga la siguiente bonificación: $VALUE|+0=-+$" #NT!
+  
+ POD_add_potential_vessel_interaction: "Agregar un anfitrión potencial" #NT!
+ POD_add_potential_vessel_interaction_desc: "Agrega [recipient.GetFirstName] a tu lista de posibles anfitriones. Si tu anfitrión actual muere, [recipient.GetSheHe] ocupará su lugar." #NT!
+  
+ POD_demonic_influence_inversion_interaction: "Invertir la influencia demoníaca" #NT!
+ POD_demonic_influence_inversion_interaction_desc: "Invierte tu efecto de influencia en el condado seleccionado." #NT!
+  
+ POD_train_lore_interaction: "Entrenamiento de conocimientos" #NT!
+ POD_train_lore_interaction_desc: "Enséñale a [recipient.GetFirstName] uno de tus conocimientos." #NT!
+  
+ POD_break_alliance_interaction: "Romper la alianza" #NT!
+ POD_break_alliance_interaction_desc: "Romper una alianza que tiene [recipient.GetFirstName]." #NT!
+ actor_secondary_POD_break_alliance_interaction: "Aliado" #NT!
+  
+ POD_cancel_truce_interaction: "Cancelar la tregua" #NT!
+ POD_cancel_truce_interaction_desc: "Cancelar una tregua que tiene [recipient.GetFirstName]." #NT!
+ actor_secondary_POD_cancel_truce_interaction: "Tregua con" #NT!
+  
+ POD_end_scheme_interaction: "Esconderse del esquema" #NT!
+ POD_end_scheme_interaction_desc: "Poner fin a todos los planes contra [recipient.GetFirstName]." #NT!
+  
+ POD_remove_title_claim_interaction: "Eliminar reclamo #Weak (Título)#!" #NT!
+ POD_remove_title_claim_interaction_desc: "Eliminar un reclamo que [recipient.GetFirstName] tiene sobre tu título." #NT!
+  
+ POD_remove_artifact_claim_interaction: "Eliminar reclamo #Weak (artefacto)#!" #NT!
+ POD_remove_artifact_claim_interaction_desc: "Eliminar un reclamo que [recipient.GetFirstName] tiene sobre tu artefacto." #NT!
+  
+ POD_unspeakable_servitor_interaction: "Servidor inefable" #NT!
+ POD_unspeakable_servitor_interaction_desc: "Crea una estatua que puedas utilizar como cuerpo anfitrión permanente." #NT!
+  
+ POD_enslave_interaction: "Esclavizar" #NT!
+  
+ POD_mind_rape_interaction: "Violación mental" #NT!
+ POD_mind_rape_interaction_desc: "Usa tu evocación para conocer todos los secretos y planes de [recipient.GetFirstName]." #NT!
+  
+ POD_create_corrupt_relic_interaction: "Crear reliquia corrupta" #NT!
+ POD_create_corrupt_relic_interaction_desc: "Crea tus artefactos mágicos personales." #NT!
+ artifact_corrupt_relic_name: "Reliquia corrupta" #NT!
+ artifact_corrupt_relic_description: "Las reliquias son objetos con poderes sobrenaturales creados a través del [lore_lifestyle|E] de la Forja o del [lore_lifestyle|E] de la Contaminación. Las reliquias suelen combinar los efectos de varios caminos del saber en un solo efecto especial, similar a un ritual. Deben ser activadas por una persona a través de un acto de voluntad." #NT!
+  
+ POD_unleash_chaos_interaction: "Desata el caos" #NT!
+ POD_unleash_chaos_interaction_desc: "Desata el caos en el reino [recipient.GetFirstNamePossessive]." #NT!
+ POD_unleash_chaos_interaction.tt: "Desatarás el caos en el reino [recipient.GetFirstNamePossessive]" #NT!
+ POD_unleash_chaos_interaction.duel.success: "Has desatado el Caos con éxito." #NT!
+ POD_unleash_chaos_interaction.duel.tt.attacker_wins: "[recipient.GetFirstNamePossessive] reino se sumerge en el Caos, creando un pequeño pedazo de Infierno en la Tierra." #NT!
+ POD_unleash_chaos_interaction.duel.failure: "No logras desatar el Caos" #NT!
+ POD_unleash_chaos_interaction.duel.tt.attacker_lost: "Fallaste" #NT!
+ POD_unleash_chaos_interaction_actor_toast: "Has desatado con éxito el Caos en el reino [recipient.GetFirstNamePossessive]" #NT!
+ POD_unleash_chaos_interaction_recipient_toast: "El caos se desató en tu capital por [actor.GetFirstName]" #NT!
+ POD_unleash_chaos_interaction_failed_toast: "No pudiste desatar el Caos sobre el reino [recipient.GetFirstNamePossessive]" #NT!
+ reality_tremors_modifier: "Perturbado por los temblores de la realidad" #NT!
+ reality_tremors_modifier_desc: "Esta zona se ve perturbada por una lluvia de peces o algo similar que no es posible bajo las leyes normales de la realidad." #NT!
+ sphere_of_chaos_modifier: "Dañado por una esfera de caos" #NT!
+ sphere_of_chaos_modifier_desc: "Las leyes de causa y efecto de esta área quedan suspendidas." #NT!
+ wave_of_mutilation_modifier: "Dañado por una ola de mutilaciones" #NT!
+ wave_of_mutilation_modifier_desc: "La población de esta zona está dañada por energías caóticas." #NT!
+ hell_on_earth_modifier: "El infierno en la tierra" #NT!
+ hell_on_earth_modifier_desc: "Todo es posible en la zona afectada: las leyes de la física y la cordura quedan completamente suspendidas y las pesadillas recorren la Tierra. Lluvias de sangre; pilares flotantes cubiertos de bocas con colmillos que gritan; tentáculos que brotan al azar de la carne... todo lo que es imposible se vuelve realidad." #NT!
+ POD_unleash_chaos_interaction_custom: "Todos los edificios en la capital de [target.GetNameNoTier] serán eliminados." #NT!
+  
+ POD_distant_damage_interaction: "Daños a distancia" #NT!
+ POD_distant_damage_interaction_desc: "Causa daño desde lejos a [recipient.GetFirstName]." #NT!
+  
+ POD_declare_soul_interaction: "Declarar el alma" #NT!
+  
+ POD_bind_demon_interaction: "Atar demonio" #NT!
+ POD_bind_demon_interaction_desc: "Vincula [recipient.GetFirstName] con el nombre verdadero de [recipient.GetHerHis]." #NT!
+ POD_request_pact_interaction: "Solicitar Pacto" #NT!
+ POD_request_pact_interaction_desc: "Pacto con [recipient.GetFirstName] para obtener una inversión demoníaca." #NT!
+ POD_request_enthrall_interaction: "Solicitud Enthrall" #NT!
+ POD_request_enthrall_interaction_desc: "Conviértete en [recipient.GetFirstNamePossessive] [thrall|E] para obtener acceso a los arcanos." #NT!
+ POD_infernalist_sacrifice_prisoner_interaction: "Sacrificio #Weak (Prisionero)#!" #NT!
+ POD_infernalist_sacrifice_prisoner_interaction_desc: "Sacrifica a todos tus prisioneros a [actor.Custom('GreatDemonName')], la duración del modificador dependerá del número de prisioneros (los prisioneros verdaderamente inmortales no cuentan)." #NT!
+ POD_infernalist_sacrifice_holding_interaction: "Sacrificio #Weak (Sosteniendo)#!" #NT!
+ POD_infernalist_sacrifice_holding_interaction_desc: "Sacrifica una propiedad y toda su población a [actor.Custom('GreatDemonName')], la duración del modificador dependerá del nivel de construcción combinado de esta propiedad." #NT!
+ POD_infernalist_sacrifice_region_interaction: "Sacrificio #Weak (Región)#!" #NT!
+ POD_infernalist_sacrifice_region_interaction_desc: "Sacrifica una región entera y toda su población a [actor.Custom('GreatDemonName')], la duración del modificador dependerá del nivel de desarrollo combinado de este título." #NT!
+ lesser_abaddon_buff_modifier: "#Weak (Menor)#! Regalo de Abaddon" #NT!
+ greater_abaddon_buff_modifier: "#Weak (Mayor)#! Don de Abaddon" #NT!
+ potent_abaddon_buff_modifier: "#Weak (Potente)#! Don de Abaddon" #NT!
+ lesser_asmodeus_buff_modifier: "#Weak (Menor)#! Regalo de Asmodeo" #NT!
+ greater_asmodeus_buff_modifier: "#Weak (Mayor)#! Regalo de Asmodeo" #NT!
+ potent_asmodeus_buff_modifier: "#Weak (Potente)#! Regalo de Asmodeo" #NT!
+ lesser_azrael_buff_modifier: "#Weak (Menor)#! El regalo de Azrael" #NT!
+ greater_azrael_buff_modifier: "#Weak (Mayor)#! El regalo de Azrael" #NT!
+ potent_azrael_buff_modifier: "#Weak (Potente)#! El regalo de Azrael" #NT!
+ lesser_belial_buff_modifier: "#Weak (Menor)#! Don de Belial" #NT!
+ greater_belial_buff_modifier: "#Weak (Mayor)#! Don de Belial" #NT!
+ potent_belial_buff_modifier: "#Weak (Potente)#! "El regalo de Belial" #NT!
+ lesser_dagon_buff_modifier: "#Weak (Menor)#! El regalo de Dagon" #NT!
+ greater_dagon_buff_modifier: "#Weak (Mayor)#! Regalo de Dagón" #NT!
+ potent_dagon_buff_modifier: "#Weak (Potente)#! Don de Dagon" #NT!
+ POD_infernalist_sacrifice_holding_interaction_custom: "Todos los edificios en [target.GetNameNoTier] serán eliminados." #NT!
+ POD_infernalist_sacrifice_region_interaction_custom: "Todos los edificios en [target.GetNameNoTier] serán eliminados." #NT!
+ NOT_POD_infernalist_sacrifice_prisoner_interaction_valid: "No tienes ningún prisionero mortal." #NT!
+ NOT_POD_infernalist_sacrifice_region_interaction_valid: "No tienes #bold ningún titulo con suficiente desarrollo." #NT!
+  
+ POD_emotion_projection_interaction: "Proyección de emociones" #NT!
+ POD_life_leech_interaction: "Sanguijuela de vida" #NT!
+ POD_life_leech_interaction_desc: "Consume [recipient.GetFirstNamePossessive] de fuerza de voluntad para ganar fuerza vital." #NT!
+ POD_teleportation_interaction: "Teletransportarse" #NT!
+ POD_teleportation_interaction_desc: "Teletransportarse a la ubicación [recipient.GetFirstNamePossessive], o a su próximo destino cuando [traveling|E]." #NT!
+ POD_turn_to_toad_interaction: "Gire a Sapo" #NT!
+ POD_turn_to_toad_interaction_desc: "Convierte a [recipient.GetFirstName] en sapo." #NT!
+ POD_mammons_gift_interaction: "El regalo de Mammón" #NT!
+ POD_mammons_gift_interaction_desc: "Convierte un pequeño ser inerte en oro." #NT!
+ POD_command_demon_interaction: "Comando Demonio" #NT!
+ POD_command_demon_interaction_desc: "Ordena a tu demonio atado." #NT!
+ POD_command_demon_interaction_option_assist_arcana: "Ayudar al entrenamiento de Arcana" #NT!
+ POD_command_demon_interaction_option_assist_lore: "Ayudar a la formación de Lore" #NT!
+ POD_command_demon_interaction_option_assist_investiture: "Proporcionar más investidura" #NT!
+ POD_command_demon_interaction_option_cancel: "Cancelar tarea" #NT!
+ bound_demon_assist_arcana_modifier: "Entrenamiento de Arcanos Asistidos" #NT!
+ bound_demon_assist_lore_modifier: "Capacitación asistida sobre conocimientos" #NT!
+ bound_demon_assist_investiture_modifier: "Aumento de la ganancia por investidura" #NT!
+  
+ POD_summon_demon_character_interaction: "Invocar Demonio #weak (Persona)#!" #NT!
+ POD_summon_demon_character_interaction_desc: "Invoca a [recipient.GetFirstName] desde [abyss|E] como prisionero." #NT!
+ any_prisoner_can_be_demonic_possesed: "No tienes ningún prisionero que pueda ser poseído por un demonio." #NT!
+ recipient_secondary_POD_summon_demon_character_interaction: "Prisionero" #NT!
+ POD_summon_demon_artifact_interaction: "Invocar demonio #weak (Objeto)#!" #NT!
+ POD_summon_demon_artifact_interaction_desc: "Invoca a [recipient.GetFirstName] desde [abyss|E] en un artefacto." #NT!
+  
+ POD_banish_demon_interaction: "Desterrar demonio" #NT!
+ POD_banish_demon_interaction_desc: "Destierra [recipient.GetFirstName] al [abyss|E]." #NT!
+  
+ POD_initiate_demonology_interaction: "Iniciar la demonología" #NT!
+ POD_initiate_demonology_interaction_desc: "Enseña demonología a [recipient.GetFirstName]." #NT!
+ POD_learn_demonology_interaction: "Solicitar Mentoría" #NT!
+ POD_learn_demonology_interaction_desc: "Puedes pedirle a un amigo, amante o alma gemela que te enseñe demonología." #NT!
+  
+ POD_store_resolve_interaction: "Tienda Resolve" #NT!
+ POD_store_resolve_interaction_desc: "Guarde Resolve en su recipiente Resolve." #NT!
+ POD_store_resolve_interaction_options_heading: "¿Cuánto quieres almacenar?" #NT!
+ POD_extract_resolve_interaction: "Extraer resolución almacenada" #NT!
+ POD_extract_resolve_interaction_desc: "Extrae la Resolución almacenada de la nave de Resolución para reabastecerte." #NT!
+ POD_extract_resolve_interaction_options_heading: "¿Cuánto quieres extraer?" #NT!
+ POD_extract_resolve: "Gasta $VALUE|0V$ Resolución almacenada" #NT!
+ POD_extracted_resolve: "Gastó $VALUE|0V$ Resolución almacenada" #NT!
+ POD_you_extract_resolve: "Gastas $VALUE|0V$ Resolución almacenada" #NT!
+ POD_you_extracted_resolve: "Gastaste $VALUE|0V$ resolución almacenada" #NT!
+ POD_they_extract_resolve: "[CHARACTER.GetShortUIName] gasta $VALUE|0V$ almacenado Resolución" #NT!
+ POD_they_extracted_resolve: "[CHARACTER.GetShortUIName] gastados $VALUE|0V$ almacenados Resolución" #NT!
+ POD_store_resolve: "Tienda $VALUE|0V$ ganó Resolución" #NT!
+ POD_stored_resolve: "Almacenado $VALUE|0V$ Resolución obtenida" #NT!
+ POD_you_store_resolve: "Almacenas $VALUE|0V$ Resolución ganada" #NT!
+ POD_you_stored_resolve: "Almacenaste $VALUE|0V$ obtuviste Resolución" #NT!
+ POD_they_store_resolve: "[CHARACTER.GetShortUIName] tienda $VALUE|0V$ Resolución ganada" #NT!
+ POD_they_stored_resolve: "[CHARACTER.GetShortUIName] almacenado $VALUE|0V$ obtenido Resolución" #NT!
+ resolve_vessel_damaged: "Resolver buque dañado" #NT!
+  
+ POD_secret_demonology_player: "[AddTextIf( ObjectsEqual(CHARACTER.Self,GetPlayer), Localize('POD_secret_demonology_player_hint') )]" #NT!
+ POD_secret_demonology_player_hint: "#TOOLTIP:POD_secret_demonology_player_xp #weak;L (ver información sobre herramientas para conocer la experiencia actual)#!#!" #NT!
+ POD_secret_demonology_player_xp: "#T [secret|E] [GetTrait('demonology').GetName(GetNullCharacter)]#!\n#TOOLTIP:RASGO_DEL_JUEGO,demonología,[ObtenerPersonajeNulo] #L $trait_track_demonologist$#!#! [trait_level_track_xp|E]: [GetPlayer.MakeScope.Var('secret_demonologist_xp').GetValue|V0]\n#TOOLTIP:RASGO_DEL_JUEGO,demonología,[ObtenerPersonajeNulo] #L [secret|E]1#!#! [trait_level_track_xp|E]: [secret|E]4\n#TOOLTIP:RASGO_DEL_JUEGO,demonología,[ObtenerPersonajeNulo] #L [secret|E]7#!#! [trait_level_track_xp|E]: [GetTrait('demonology').GetName(GetNullCharacter)]0" #NT!
+  
+ POD_add_demonologist_xp_global: "Ganancias $VALUE|0V$ ocultas [trait_level_track_xp|E] en $trait_track_demonologist$ $POD_secret_demonology_player$" #NT!
+ POD_add_demonologist_xp_global_past: "Ganado $VALUE|0V$ oculto [trait_level_track_xp|E] en $trait_track_demonologist$ $POD_secret_demonology_player$" #NT!
+ POD_add_demonologist_xp_first: "Obtienes $VALUE|0V$ ocultos [trait_level_track_xp|E] en $trait_track_demonologist$ $POD_secret_demonology_player$" #NT!
+ POD_add_demonologist_xp_first_past: "Ganaste $VALUE|0V$ ocultos [trait_level_track_xp|E] en $trait_track_demonologist$ $POD_secret_demonology_player$" #NT!
+ POD_add_demonologist_xp_third: "[CHARACTER.GetShortUIName] ganancias $VALUE|0V$ oculto [trait_level_track_xp|E] en $trait_track_demonologist$ $POD_secret_demonology_player$" #NT!
+ POD_add_demonologist_xp_third_past: "[CHARACTER.GetShortUIName] ganado $VALUE|0V$ oculto [trait_level_track_xp|E] en $trait_track_demonologist$ $POD_secret_demonology_player$" #NT!
+  
+ POD_add_thrall_xp_global: "Ganancias $VALUE|0V$ ocultas [trait_level_track_xp|E] en $trait_track_thrall$ $POD_secret_demonology_player$" #NT!
+ POD_add_thrall_xp_global_past: "Ganado $VALUE|0V$ oculto [trait_level_track_xp|E] en $trait_track_thrall$ $POD_secret_demonology_player$" #NT!
+ POD_add_thrall_xp_first: "Obtienes $VALUE|0V$ ocultos [trait_level_track_xp|E] en $trait_track_thrall$ $POD_secret_demonology_player$" #NT!
+ POD_add_thrall_xp_first_past: "Ganaste $VALUE|0V$ ocultos [trait_level_track_xp|E] en $trait_track_thrall$ $POD_secret_demonology_player$" #NT!
+ POD_add_thrall_xp_third: "[CHARACTER.GetShortUIName] ganancias $VALUE|0V$ oculto [trait_level_track_xp|E] en $trait_track_thrall$ $POD_secret_demonology_player$" #NT!
+ POD_add_thrall_xp_third_past: "[CHARACTER.GetShortUIName] ganado $VALUE|0V$ oculto [trait_level_track_xp|E] en $trait_track_thrall$ $POD_secret_demonology_player$" #NT!
+  
+ POD_add_diabolist_xp_global: "Ganancias $VALUE|0V$ ocultas [trait_level_track_xp|E] en $trait_track_diabolist$ $POD_secret_demonology_player$" #NT!
+ POD_add_diabolist_xp_global_past: "Ganado $VALUE|0V$ oculto [trait_level_track_xp|E] en $trait_track_diabolist$ $POD_secret_demonology_player$" #NT!
+ POD_add_diabolist_xp_first: "Obtienes $VALUE|0V$ ocultos [trait_level_track_xp|E] en $trait_track_diabolist$ $POD_secret_demonology_player$" #NT!
+ POD_add_diabolist_xp_first_past: "Ganaste $VALUE|0V$ ocultos [trait_level_track_xp|E] en $trait_track_diabolist$ $POD_secret_demonology_player$" #NT!
+ POD_add_diabolist_xp_third: "[CHARACTER.GetShortUIName] ganancias $VALUE|0V$ oculto [trait_level_track_xp|E] en $trait_track_diabolist$ $POD_secret_demonology_player$" #NT!
+ POD_add_diabolist_xp_third_past: "[CHARACTER.GetShortUIName] ganado $VALUE|0V$ oculto [trait_level_track_xp|E] en $trait_track_diabolist$ $POD_secret_demonology_player$" #NT!
+  
+ POD_black_whispers_interaction: "Susurros negros" #NT!
+ POD_black_whispers_interaction_desc: "Compra conocimiento de Yama Kings, te permitirá aprender todos los secretos y esquemas de [recipient.GetFirstName]." #NT!
+  
+ POD_the_mark_of_the_celestials_perk_interaction: "La marca de los celestiales" #NT!
+ POD_the_mark_of_the_celestials_perk_interaction_desc: "Haz que [recipient.GetFirstName] no sea del agrado de nadie, lo que dificultará todas sus interacciones sociales." #NT!
+ POD_personality_revelation_interaction: "Revelando la verdadera personalidad" #NT!
+ POD_personality_revelation_interaction_desc: "Esto abrirá un menú que le permitirá modificar la personalidad de [recipient.GetFirstNamePossessive]." #NT!
+ POD_sexuality_revelation_interaction: "Revelando la verdadera sexualidad" #NT!
+ POD_sexuality_revelation_interaction_desc: "Cambiar [recipient.GetFirstNamePossessive] sexualidad." #NT!
+  
+ POD_find_the_faithful_interaction: "Encuentra a los fieles" #NT!
+ POD_find_the_faithful_interaction_desc: "Encuentra un mortal con atributos específicos." #NT!
+ POD_find_the_faithful_interaction_effect: "Podrás elegir el [skills|E] del mortal que estás buscando." #NT!
+ POD_cleanse_interaction: "Limpiar" #NT!
+ POD_cleanse_interaction_desc: "Usa el poder del Lore para curar [recipient.GetFirstNamePossessive] enfermedades." #NT!
+ POD_lore_heal_interaction: "Sanar" #NT!
+ POD_lore_heal_interaction_desc: "Usa el poder de Lore para curar [recipient.GetFirstNamePossessive] herida." #NT!
+ POD_lore_auto_resurrection_interaction: "Protéjase contra la muerte" #NT!
+ POD_lore_auto_resurrection_interaction_desc: "Recuperar automáticamente a una persona que ha sido asesinada recientemente, con un costo enorme de piedad." #NT!
+  
+ POD_call_sin_dragon_to_war_interaction: "Llama al dragón del pecado" #NT!
+ POD_call_sin_dragon_to_war_interaction_desc: "Llama a tu Dragón del Pecado a la guerra." #NT!
+ POD_call_sin_dragon_to_war_interaction_tt: "Ya has llamado a tu Dragón del Pecado a [GetPlayer.MakeScope.GetVariable('sin_dragon_summon').War.GetName]." #NT!
+  
+ POD_scry_interaction: "Adivinar" #NT!
+ POD_scry_interaction_desc: "Utiliza tu evocación para observar cada secreto y esquema de [recipient.GetFirstName]." #NT!
+ POD_scry_interaction_tt: "Tienes algún artefacto sobre el cual [recipient.GetFirstName] tiene derecho." #NT!
+ POD_touch_from_afar_interaction: "Tocar desde lejos" #NT!
+ POD_touch_from_afar_interaction_desc: "Usa tu evocación para acelerar tu plan en [recipient.GetFirstName]." #NT!
+ POD_touch_from_afar_interaction_tt: "Estás conspirando contra [recipient.GetFirstName]." #NT!

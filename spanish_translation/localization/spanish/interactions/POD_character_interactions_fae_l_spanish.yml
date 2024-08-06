@@ -1,0 +1,537 @@
+﻿l_spanish:
+ NOT_realm_actor_0_valid: "Debes ser el [best_friend|E], [soulmate|E], [close_family|E] o [host|E] del objetivo que le dio cualquier posición en la corte." #NT!
+ NOT_realm_actor_1_valid: "Debes ser el [friend|E], [lover|E], empleador, señor directo, miembro de la casa del objetivo, tener un [title_claim|E] o [strong_hook|E] fuerte en él o conocer su [secret|E] criminal." #NT!
+ NOT_realm_actor_2_valid: "Debes ser [friend|E], [lover|E], [host|E], [vassal|E], [liege|E], miembro de la dinastía del objetivo, tener un [title_claim|E] o [hook|E] en ellos, o conocer su [secret|E]." #NT!
+ NOT_realm_actor_3_valid: "Debes tener una buena relación con el objetivo, ser [host|E], [vassal|E], [liege|E], miembro de la dinastía del objetivo, tener un reclamo o [hook|E] sobre ellos, o conocer su [secret|E]." #NT!
+  
+ POD_train_cantrips_interaction: "Entrenar Truco" #NT!
+ POD_train_cantrips_interaction_desc: "Enseña a [recipient.GetFirstName] una de tus Artes o Reino" #NT!
+ POD_train_cantrips_interaction_option_art: "Arte" #NT!
+ POD_mass_train_cantrips_interaction: "Truco del tren masivo" #NT!
+ POD_mass_train_cantrips_interaction_desc: "Enseña a tus súbditos una de tus artes" #NT!
+ POD_train_chicanery: "Un estudiante elegido al azar obtendrá [GetTrait('art_chicanery').GetName(GetNullCharacter)] si aún no lo tiene." #NT!
+ POD_train_legerdemain: "Un estudiante elegido al azar obtendrá [GetTrait('art_legerdemain').GetName(GetNullCharacter)] si aún no lo tiene." #NT!
+ POD_train_primal: "Un estudiante elegido al azar obtendrá [GetTrait('art_primal').GetName(GetNullCharacter)] si aún no lo tiene." #NT!
+ POD_train_soothsay: "Un estudiante elegido al azar obtendrá [GetTrait('art_soothsay').GetName(GetNullCharacter)] si aún no lo tiene." #NT!
+ POD_train_wayfare: "Un estudiante elegido al azar obtendrá [GetTrait('art_wayfare').GetName(GetNullCharacter)] si aún no lo tiene." #NT!
+ POD_train_aphrodesia: "Un estudiante elegido al azar obtendrá [GetTrait('art_aphrodesia').GetName(GetNullCharacter)] si aún no lo tiene." #NT!
+ POD_train_kryos: "Un estudiante elegido al azar obtendrá [GetTrait('art_kryos').GetName(GetNullCharacter)] si aún no lo tiene." #NT!
+ POD_train_metamorphosis: "Un estudiante elegido al azar obtendrá [GetTrait('art_metamorphosis').GetName(GetNullCharacter)] si aún no lo tiene." #NT!
+ POD_train_pyretics: "Un estudiante elegido al azar obtendrá [GetTrait('art_pyretics').GetName(GetNullCharacter)] si aún no lo tiene." #NT!
+ POD_train_chronos: "Un estudiante elegido al azar obtendrá [GetTrait('art_chronos').GetName(GetNullCharacter)] si aún no lo tiene." #NT!
+ POD_train_dream_craft: "Un estudiante elegido al azar obtendrá [GetTrait('art_dream_craft').GetName(GetNullCharacter)] si aún no lo tiene." #NT!
+ POD_train_naming: "Un estudiante elegido al azar obtendrá [GetTrait('art_naming').GetName(GetNullCharacter)] si aún no lo tiene." #NT!
+ POD_train_sovereign: "Un estudiante elegido al azar obtendrá [GetTrait('art_sovereign').GetName(GetNullCharacter)] si aún no lo tiene." #NT!
+ POD_train_infusion: "Un estudiante elegido al azar obtendrá [GetTrait('art_infusion').GetName(GetNullCharacter)] si aún no lo tiene." #NT!
+ POD_train_tale_craft: "Un estudiante elegido al azar obtendrá [GetTrait('art_tale_craft').GetName(GetNullCharacter)] si aún no lo tiene." #NT!
+ POD_train_petros: "Un estudiante elegido al azar obtendrá [GetTrait('art_petros').GetName(GetNullCharacter)] si aún no lo tiene." #NT!
+ POD_train_aquis: "Un estudiante elegido al azar obtendrá [GetTrait('art_aquis').GetName(GetNullCharacter)] si aún no lo tiene." #NT!
+ POD_train_pyros: "Un estudiante elegido al azar obtendrá [GetTrait('art_pyros').GetName(GetNullCharacter)] si aún no lo tiene." #NT!
+ POD_train_stratus: "Un estudiante elegido al azar obtendrá [GetTrait('art_stratus').GetName(GetNullCharacter)] si aún no lo tiene." #NT!
+ POD_train_verdage: "Un estudiante elegido al azar obtendrá [GetTrait('art_verdage').GetName(GetNullCharacter)] si aún no lo tiene." #NT!
+ POD_train_tieh_tan: "Un estudiante elegido al azar obtendrá [GetTrait('art_tieh_tan').GetName(GetNullCharacter)] si aún no lo tiene." #NT!
+ POD_train_lin_tan: "Un estudiante elegido al azar obtendrá [GetTrait('art_lin_tan').GetName(GetNullCharacter)] si aún no lo tiene." #NT!
+ POD_train_shui_tan: "Un estudiante elegido al azar obtendrá [GetTrait('art_shui_tan').GetName(GetNullCharacter)] si aún no lo tiene." #NT!
+ POD_train_hou_tan: "Un estudiante elegido al azar obtendrá [GetTrait('art_hou_tan').GetName(GetNullCharacter)] si aún no lo tiene." #NT!
+ POD_train_di_tan: "Un estudiante elegido al azar obtendrá [GetTrait('art_di_tan').GetName(GetNullCharacter)] si aún no lo tiene." #NT!
+ POD_train_nei_tan: "Un estudiante elegido al azar obtendrá [GetTrait('art_nei_tan').GetName(GetNullCharacter)] si aún no lo tiene." #NT!
+  
+ TRUCE_SIGNED_FAE: "\nTregua firmada debido al uso del poder de los Ojos Velados." #NT!
+ copied_artifact_name: "Copia al carbón de [target.GetNameNoTooltip]" #NT!
+ copied_artifact_desc: "La manipulación del glamour lo suficientemente compleja como para copiar algo requiere tiempo y paciencia para perfeccionarse, pero una vez dominada, puede crear réplicas lo suficientemente buenas como para engañar a un observador, al menos por un tiempo." #NT!
+ POD_trash_artifact: "[ARTIFACT.GetName] es un artefacto basura/no deseado/maldito." #NT!
+ NOT_POD_trash_artifact: "[ARTIFACT.GetName] es #bold no #! un artefacto basura/no deseado/maldito." #NT!
+ POD_unique_artifact: "[ARTIFACT.GetName] es un artefacto único." #NT!
+ NOT_POD_unique_artifact: "[ARTIFACT.GetName] es #bold, no #!, un artefacto único." #NT!
+ POD_reverie_title: "Ensueño" #NT!
+ has_artifact_fans_of_ma_yi_yuan: "[recipient.GetFirstName] tiene los fans de Ma Yi Yuan [artifact|E]" #NT!
+  
+ POD_has_inspiration: "[TARGET_CHARACTER.GetFirstName] tiene un [inspiration|E]" #NT!
+ NOT_POD_has_inspiration: "[TARGET_CHARACTER.GetFirstName] tiene #bold no#! tiene un [inspiration|E]" #NT!
+ POD_inspire_book: "[inspired_character.GetShortUIName] se inspira para escribir un libro" #NT!
+ POD_inspire_weaver: "[inspired_character.GetShortUIName] se inspira para tejer" #NT!
+ POD_inspire_adventure: "[inspired_character.GetShortUIName] se inspira para emprender una aventura" #NT!
+ POD_inspire_artisan: "[inspired_character.GetShortUIName] se inspira para #EMP crear #!" #NT!
+ POD_inspire_smith: "[inspired_character.GetShortUIName] se inspira para forjar algo" #NT!
+ POD_inspire_armor: "[inspired_character.GetShortUIName] se inspira para hacer una armadura" #NT!
+ POD_inspire_weapon: "[inspired_character.GetShortUIName] se inspira para forjar un arma" #NT!
+ POD_inspire_alchemy: "[inspired_character.GetShortUIName] se inspira para experimentar con la alquimia" #NT!
+  
+ POD_ravaging_interaction: "Devastador" #NT!
+ POD_ravaging_interaction_desc: "Devastador [recipient.GetFirstNamePossessive] [inspiration|E] para ganar glamour." #NT!
+ POD_rhapsody_interaction: "Rapsodia" #NT!
+ POD_rhapsody_interaction_desc: "Rhapsody [recipient.GetFirstName] para ganar glamour." #NT!
+ POD_reaving_interaction: "Desgarrando" #NT!
+ POD_reaving_interaction_desc: "Aprovecha tu ubicación actual para ganar glamour." #NT!
+  
+ POD_musing_interaction_limit: "¡El tamaño del soñador está limitado! (3 más 1 por [diplomacy_i]#V 8#! [diplomacy|E] más cualquier bonificación de otras fuentes)" #NT!
+ POD_musing_interaction.tt: "[recipient.GetFirstName] ganará [inspiration|E] entre [recipient.MakeScope.ScriptValue('min_musing_days')|V0] y [recipient.MakeScope.ScriptValue('max_musing_days')|V0] días." #NT!
+ POD_musing_mortal_interaction: "Reflexionando #weak (Esquema)#!" #NT!
+ POD_musing_mortal_interaction_desc: "Conspira para conseguir [recipient.GetFirstName] como un soñador del que podrás saquear con seguridad el glamour a tu antojo." #NT!
+ POD_musing_prisoner_interaction: "Prisionero meditabundo" #NT!
+ POD_musing_prisoner_interaction_desc: "Haz de [recipient.GetFirstName], por la fuerza, tu soñador." #NT!
+ POD_musing_prisoner_interaction.tt: "[recipient.GetFirstName] se convierte en tu soñador." #NT!
+ POD_remove_dreamer_interaction: "Libera a Dreamer" #NT!
+ POD_remove_dreamer_interaction_desc: "Deja de considerar a [recipient.GetFirstName] como tu soñador." #NT!
+  
+ POD_season_kingmaker_interaction: "pedir favor" #NT!
+ POD_season_kingmaker_interaction_desc: "Como hacedor de reyes de la temporada, pídele un favor a un miembro ascendido de la corte de la temporada." #NT!
+  
+ POD_create_glamour_vessel_interaction: "Crea un recipiente glamoroso" #NT!
+ POD_create_glamour_vessel_interaction_desc: "Crea un artefacto para almacenar Glamour" #NT!
+ POD_store_glamour_interaction: "Tienda Glamour" #NT!
+ POD_store_glamour_interaction_desc: "Guarda Glamour en tu recipiente de Glamour." #NT!
+ POD_store_glamour_interaction_options_heading: "¿Cuánto quieres almacenar?" #NT!
+ POD_extract_glamour_interaction: "Extracto de glamour almacenado" #NT!
+ POD_extract_glamour_interaction_desc: "Extrae el Glamour almacenado del recipiente de Glamour para reabastecerte." #NT!
+ POD_extract_glamour_interaction_options_heading: "¿Cuánto quieres extraer?" #NT!
+ POD_extract_glamour: "Gasta $VALUE|0V$ Glamour almacenado" #NT!
+ POD_extracted_glamour: "Gastado $VALUE|0V$ Glamour almacenado" #NT!
+ POD_you_extract_glamour: "Gastas $VALUE|0V$ Glamour almacenado" #NT!
+ POD_you_extracted_glamour: "Gastaste $VALUE|0V$ Glamour almacenado" #NT!
+ POD_they_extract_glamour: "[CHARACTER.GetShortUIName] gasta $VALUE|0V$ Glamour almacenado" #NT!
+ POD_they_extracted_glamour: "[CHARACTER.GetShortUIName] gastados $VALUE|0V$ almacenados Glamour" #NT!
+ POD_store_glamour: "Tienda $VALUE|0V$ ganó Glamour" #NT!
+ POD_stored_glamour: "Almacenado $VALUE|0V$ ganó Glamour" #NT!
+ POD_you_store_glamour: "Almacenas $VALUE|0V$ Glamour ganado" #NT!
+ POD_you_stored_glamour: "Almacenaste $VALUE|0V$ ganaste Glamour" #NT!
+ POD_they_store_glamour: "[CHARACTER.GetShortUIName] tienda $VALUE|0V$ ganó Glamour" #NT!
+ POD_they_stored_glamour: "[CHARACTER.GetShortUIName] almacenados $VALUE|0V$ ganado Glamour" #NT!
+ glamour_vessel_damaged: "Vasija de glamour dañada" #NT!
+  
+ POD_fuddle_perk_interaction: "Emborracharse" #NT!
+ POD_fuddle_perk_interaction_desc: "Confundir sentido para hacer [recipient.GetFirstName] más o menos resistente a los esquemas." #NT!
+ POD_veiled_eyes_perk_war_interaction: "Ocultar dominio" #NT!
+ POD_veiled_eyes_perk_war_interaction_desc: "Haga que su dominio pase desapercibido para [recipient.GetFirstName]." #NT!
+ POD_veiled_eyes_perk_scheme_interaction: "Ocultar persona" #NT!
+ POD_veiled_eyes_perk_scheme_interaction_desc: "Haz que [recipient.GetFirstName] esté oculto a los esquemas." #NT!
+ POD_veiled_eyes_perk_scheme_interaction_tooltip: "Todo plan dirigido a [recipient.GetFirstName], ya sea personal u hostil, será detenido." #NT!
+ POD_fugue_perk_interaction: "Fuga" #NT!
+ POD_fugue_perk_interaction_desc: "Haz que [recipient.GetFirstName] lo olvide." #NT!
+ POD_fugue_perk_crime_interaction: "Fuga #weak (Crimen)#!" #NT!
+ POD_fugue_perk_crime_interaction_desc: "Ocultar [recipient.GetFirstNamePossessive] crimen." #NT!
+ POD_haunted_heart_perk_interaction: "Corazón embrujado" #NT!
+ POD_haunted_heart_perk_interaction_desc: "Manipular [recipient.GetFirstNamePossessive] emociones." #NT!
+  
+ POD_effigy_perk_interaction: "Efigie" #NT!
+ POD_effigy_perk_interaction_desc: "Copiar [recipient.GetFirstName] artefacto propio." #NT!
+ POD_mooch_perk_interaction: "Vagar a" #NT!
+ POD_mooch_perk_interaction_desc: "Roba [recipient.GetFirstName] artefacto de propiedad." #NT!
+ POD_phantom_shadows_perk_interaction: "Sombra fantasma" #NT!
+ POD_phantom_shadows_perk_interaction_desc: "Crea una sombra fantasma de [recipient.GetFirstName]." #NT!
+ POD_phantom_shadows_perk_interaction.tt: "Intentarás crear una Sombra Fantasma" #NT!
+  
+ POD_fae_interactions.11.t: "Crear sombra fantasma" #NT!
+ POD_fae_interactions.11.desc: "Con tu dominio de la prestidigitación, puedes intentar invocar una Sombra Fantasma de [cloned_character.GetFirstName] para el combate." #NT!
+ POD_fae_interactions.11.option.a: "¡Te convoco!" #NT!
+ POD_fae_interactions.11.option.a.tt: "Intentarás invocar una Sombra Fantasma." #NT!
+ POD_fae_interactions.11.option.a.desc: "Una lucha con tu fuerza de voluntad" #NT!
+ POD_fae_interactions.11.option.a.tt.success: "[cloned_character.GetFirstNamePossessive] Phantom Shadow se invocó con éxito" #NT!
+ POD_fae_interactions.11.option.a.tt.failure: "No logras invocar a [cloned_character.GetFirstNamePossessive] Sombra Fantasma" #NT!
+ POD_fae_interactions.11.option.b: "Ahora no es el momento adecuado" #NT!
+ POD_fae_interactions.11.option.b.tt: "Abandonarás tu idea de invocar una Sombra Fantasma." #NT!
+ POD_fae_interactions.12.t: "Invoca a Phantom Shadow II" #NT!
+ POD_fae_interactions.12.desc: "Con tu dominio de la prestidigitación, lograste invocar con éxito las Sombras Fantasmales de [cloned_character.GetFirstName], ahora es momento de dar órdenes." #NT!
+ POD_fae_interactions.12.option.a: "Apóyame en la batalla" #NT!
+ POD_fae_interactions.12.option.a.tt: "[cloned_character.GetFirstNamePossessive] Phantom Shadow se invocó con éxito." #NT!
+ POD_fae_interactions.13.t: "Invoca a Phantom Shadow II" #NT!
+ POD_fae_interactions.13.desc: "Ni siquiera tu dominio de la prestidigitación es suficiente para invocar a [cloned_character.GetFirstNamePossessive] Sombra Fantasma... por ahora." #NT!
+ POD_fae_interactions.13.option.a: "no estoy lista todavia" #NT!
+ POD_fae_interactions.13.option.a.tt: "No pudiste invocar a [cloned_character.GetFirstNamePossessive] Phantom Shadow" #NT!
+ POD_fae_interactions.14.t: "Desvanecimiento de la sombra fantasma" #NT!
+ POD_fae_interactions.14.desc: "Tu Sombra Fantasma ha sufrido un incidente y se ha desvanecido." #NT!
+ POD_fae_interactions.14.option.a: "Mi Sombra Fantasma está destruida" #NT!
+ POD_fae_interactions.14.option.a.tt: "Tu Sombra Fantasma ya no existe" #NT!
+  
+ POD_eldritch_prime_interaction: "El tiempo en la magia" #NT!
+ POD_eldritch_prime_worldly_interaction: "Truco meteorológico #Weak (mundano)#!" #NT!
+ POD_eldritch_prime_interaction_desc: "Provocar peligro natural en zona seleccionada." #NT!
+ POD_oakenshield_interaction: "Escudo de Roble" #NT!
+ POD_oakenshield_worldly_interaction: "Escudo de Roble #Weak (Mundano)#!" #NT!
+ POD_oakenshield_interaction_desc: "Desatando el reino [GetModifier('oakenshield_modifier').GetNameWithTooltip] sobre el reino [recipient.GetFirstNamePossessive]." #NT!
+ POD_oakenshield_interaction_desc.middle_east: "Desatando [GetModifier('oakenshield_modifier').GetNameWithTooltip] sobre el Medio Oriente." #NT!
+ POD_oakenshield_interaction_desc.india: "Desatando [GetModifier('oakenshield_modifier').GetNameWithTooltip] sobre la India." #NT!
+ POD_oakenshield_interaction_desc.tibet: "Desatando [GetModifier('oakenshield_modifier').GetNameWithTooltip] sobre el Tíbet." #NT!
+ POD_oakenshield_interaction_desc.steppe: "Desatando [GetModifier('oakenshield_modifier').GetNameWithTooltip] sobre la estepa." #NT!
+ POD_oakenshield_interaction_desc.asia_minor: "Desatando [GetModifier('oakenshield_modifier').GetNameWithTooltip] sobre Asia Menor." #NT!
+ POD_oakenshield_interaction_desc.africa: "Desatando [GetModifier('oakenshield_modifier').GetNameWithTooltip] sobre África." #NT!
+ POD_oakenshield_interaction_desc.europe: "Desatando [GetModifier('oakenshield_modifier').GetNameWithTooltip] sobre Europa." #NT!
+ POD_heathe_balm_character_interaction: "Bálsamo de brezo" #NT!
+ POD_heathe_balm_character_interaction_desc: "Usa el poder de Cantrip para curar [recipient.GetFirstNamePossessive] heridas." #NT!
+ POD_heathe_balm_character_interaction_options_heading: "¿Qué debo invocar en Cantrip para curar?" #NT!
+ POD_holly_strike_character_interaction: "Huelga de acebo" #NT!
+ POD_holly_strike_character_interaction_desc: "Usa el poder de Cantrip para causar heridas en [recipient.GetFirstName]." #NT!
+ POD_holly_strike_character_interaction_options_heading: "¿Qué debo invocar en Cantrip para dañar?" #NT!
+ POD_holly_strike_artifact_interaction: "Romper artefacto" #NT!
+ POD_holly_strike_artifact_interaction_desc: "Usa el poder de Cantrip para romper el artefacto objetivo en pedazos." #NT!
+ POD_fae_shapeshift_interaction: "Cambio de forma" #NT!
+ POD_fae_shapeshift_interaction_desc: "Usa tu poder para cambiar tu forma." #NT!
+  
+ POD_omen_perk_interaction: "Presagio" #NT!
+ POD_omen_perk_interaction_desc: "Utilice la adivinación para conocer todos los secretos y planes de [recipient.GetFirstName]." #NT!
+ POD_fae_wealth_and_influence_interaction: "Falta o regular" #NT!
+ POD_fae_wealth_and_influence_interaction_desc: "Utilice la adivinación para hacer que [recipient.GetFirstName] gane o pierda riqueza e influencia." #NT!
+ foul_is_fair_interaction: "Justo" #NT!
+ fair_is_foul_interaction: "Falta" #NT!
+ POD_tattletale_perk_interaction: "Chismoso" #NT!
+ POD_tattletale_perk_interaction_desc: "Utilice la adivinación para hacer que el artefacto objetivo sean sus ojos." #NT!
+ POD_augury_perk_interaction: "Augurio" #NT!
+ POD_augury_perk_interaction_desc: "Utilice la adivinación para tener la posibilidad de que ocurra un evento aleatorio para [recipient.GetFirstName]." #NT!
+ POD_fate_fire_perk_interaction: "Fuego del destino" #NT!
+ POD_fate_fire_perk_interaction_desc: "Utilice la adivinación para acelerar el destino." #NT!
+  
+ POD_flicker_flash_perk_interaction: "Destello parpadeante" #NT!
+ POD_flicker_flash_perk_interaction_desc: "Teletransportarse a la ubicación [recipient.GetFirstNamePossessive], o a su próximo destino cuando [traveling|E]." #NT!
+  
+ POD_dream_time_interaction: "Tiempo de soñar #Weak (Título)#!" #NT!
+ POD_dream_time_worldly_interaction: "Tiempo de soñar #Weak (Mundano)#!" #NT!
+ POD_dream_time_interaction_desc: "Cambia la velocidad del reino [recipient.GetFirstNamePossessive]." #NT!
+ POD_dream_time_interaction_desc.positive: "Causa [GetModifier('dream_time_perk_county_positive_modifier').GetNameWithTooltip] sobre [target.GetName]" #NT!
+ POD_dream_time_interaction_desc.negative: "Causa [GetModifier('dream_time_perk_county_negative_modifier').GetNameWithTooltip] sobre [target.GetName]" #NT!
+ POD_dream_time_interaction_desc.middle_east.positive: "Causa [GetModifier('dream_time_perk_county_positive_modifier').GetNameWithTooltip] sobre el Medio Oriente." #NT!
+ POD_dream_time_interaction_desc.india.positive: "Causa [GetModifier('dream_time_perk_county_positive_modifier').GetNameWithTooltip] sobre la India." #NT!
+ POD_dream_time_interaction_desc.tibet.positive: "Causa [GetModifier('dream_time_perk_county_positive_modifier').GetNameWithTooltip] sobre el Tíbet." #NT!
+ POD_dream_time_interaction_desc.steppe.positive: "Causa [GetModifier('dream_time_perk_county_positive_modifier').GetNameWithTooltip] sobre la estepa." #NT!
+ POD_dream_time_interaction_desc.asia_minor.positive: "Causa [GetModifier('dream_time_perk_county_positive_modifier').GetNameWithTooltip] sobre Asia Menor." #NT!
+ POD_dream_time_interaction_desc.africa.positive: "Causa [GetModifier('dream_time_perk_county_positive_modifier').GetNameWithTooltip] sobre África." #NT!
+ POD_dream_time_interaction_desc.europe.positive: "Causa [GetModifier('dream_time_perk_county_positive_modifier').GetNameWithTooltip] sobre Europa." #NT!
+ POD_dream_time_interaction_desc.middle_east.negative: "Causa [GetModifier('dream_time_perk_county_negative_modifier').GetNameWithTooltip] sobre el Medio Oriente." #NT!
+ POD_dream_time_interaction_desc.india.negative: "Causa [GetModifier('dream_time_perk_county_negative_modifier').GetNameWithTooltip] sobre la India." #NT!
+ POD_dream_time_interaction_desc.tibet.negative: "Causa [GetModifier('dream_time_perk_county_negative_modifier').GetNameWithTooltip] sobre el Tíbet." #NT!
+ POD_dream_time_interaction_desc.steppe.negative: "Causa [GetModifier('dream_time_perk_county_negative_modifier').GetNameWithTooltip] sobre la estepa." #NT!
+ POD_dream_time_interaction_desc.asia_minor.negative: "Causa [GetModifier('dream_time_perk_county_negative_modifier').GetNameWithTooltip] sobre Asia Menor." #NT!
+ POD_dream_time_interaction_desc.africa.negative: "Causa [GetModifier('dream_time_perk_county_negative_modifier').GetNameWithTooltip] sobre África." #NT!
+ POD_dream_time_interaction_desc.europe.negative: "Causa [GetModifier('dream_time_perk_county_negative_modifier').GetNameWithTooltip] sobre Europa." #NT!
+ POD_dream_time_character_interaction: "Tiempo de soñar #Weak (Personaje)#!" #NT!
+ POD_dream_time_character_interaction_desc: "Cambia la velocidad del tiempo para una persona." #NT!
+ POD_permanence_interaction: "Permanencia" #NT!
+ POD_permanence_interaction_desc: "Extiende la duración de un Arte." #NT!
+ POD_reversa_of_fortune_interaction: "Cambio de suerte" #NT!
+ POD_reversa_of_fortune_interaction_desc: "Regreso del futuro." #NT!
+  
+ POD_dream_riding_interaction: "Cabalgando en sueños" #NT!
+ POD_dream_riding_interaction_desc: "Interactúa con el sueño [recipient.GetFirstNamePossessive] mientras estás en el [dreaming|E]." #NT!
+  
+ POD_rune_interaction: "Runa" #NT!
+ POD_rune_interaction_desc: "Mejora el modificador del artefacto o dale un nuevo modificador." #NT!
+ POD_cantrip_discover_true_name_interaction: "Descubre el nombre verdadero" #NT!
+ POD_reweaving_interaction: "Retejiendo" #NT!
+ POD_reweaving_interaction_desc: "Editar [recipient.GetFirstNamePossessive] rasgos." #NT!
+ POD_reweaving_interaction.tt: "Debes haber estudiado el nombre verdadero de al menos un [trait|E] a través de [character_interaction|E]." #NT!
+  
+ POD_fae_interactions.200.t: "Editor de rasgos" #NT!
+ POD_fae_interactions.201.t: "Editor de rasgos: rasgos educativos" #NT!
+ POD_fae_interactions.202.t: "Editor de rasgos: rasgos de estilo de vida" #NT!
+ POD_fae_interactions.203.t: "Editor de rasgos: rasgos del comandante" #NT!
+ POD_fae_interactions.204.t: "Editor de rasgos: rasgos de personalidad" #NT!
+ POD_fae_interactions.205.t: "Editor de rasgos: rasgos físicos" #NT!
+ POD_fae_interactions.206.t: "Editor de rasgos: rasgos de salud" #NT!
+ POD_fae_interactions.207.t: "Editor de rasgos: rasgos de estrés" #NT!
+ POD_fae_interactions.208.t: "Editor de rasgos: rasgos de fama" #NT!
+ POD_fae_interactions.200.desc: "Editar [effigy_character.GetFirstNamePossessive] rasgos." #NT!
+ POD_fae_interactions.200.option.a: "Rasgos educativos" #NT!
+ POD_fae_interactions.200.option.b: "Rasgos de estilo de vida" #NT!
+ POD_fae_interactions.200.option.c: "Rasgos del comandante" #NT!
+ POD_fae_interactions.200.option.d: "Rasgos de personalidad" #NT!
+ POD_fae_interactions.200.option.e: "Rasgos físicos" #NT!
+ POD_fae_interactions.200.option.f: "Rasgos de salud" #NT!
+ POD_fae_interactions.200.option.g: "Rasgos del estrés" #NT!
+ POD_fae_interactions.200.option.h: "Rasgos de fama" #NT!
+ POD_fae_interactions.200.option.i: "Nada" #NT!
+  
+ POD_fae_study_true_name_interaction: "Estudia los nombres verdaderos" #NT!
+ POD_fae_study_true_name_interaction_desc: "Usa tu conocimiento del nombre verdadero de [recipient.GetFirstNamePossessive] para estudiar [recipient.GetHerHis] [traits|E]." #NT!
+ POD_fae_study_true_name_interaction_trait_requirement: "[recipient.GetShortUIName] tiene #bold no#! un rasgo cuyo verdadero nombre puedes aprender" #NT!
+ POD_fae_study_true_name_interaction_all_traits: "Estudia todos los rasgos" #NT!
+ POD_fae_study_true_name_interaction_select_traits: "Selecciona qué rasgos quieres estudiar" #NT!
+ POD_fae_study_true_name_interaction_select_traits_tt: "Podrás elegir cuál de [recipient.GetShortUINamePossessive] [traits|E] estudiar" #NT!
+  
+ POD_dictum_interaction: "Dictamen" #NT!
+ POD_dictum_interaction_desc: "Ganancia de gancho de [recipient.GetFirstName]." #NT!
+ POD_grandeur_interaction: "Grandeza" #NT!
+ POD_grandeur_interaction_desc: "Reclutar o encarcelar a [recipient.GetFirstName]." #NT!
+  
+ POD_oathbreaking: "Rompimiento del juramento" #NT!
+ has_any_can_be_exposed_secret: "No tienes ningún secreto que pueda ser expuesto." #NT!
+  
+ POD_oath_of_secrecy_interaction: "Juramento de secreto" #NT!
+ POD_oath_of_secrecy_interaction_desc: "Un juramento para proteger información valiosa." #NT!
+ POD_oath_of_secrecy_interaction_tooltip: "[recipient.GetFirstName] se convertirá en [GetTrait('oathbreaker').GetName( GetPlayer )] si [recipient.GetSheHe] expone tu secreto." #NT!
+ oath_of_secrecy_opinion: "Juramento de secreto" #NT!
+ oath_of_secrecy_modifier: "Juramento de secreto" #NT!
+ oath_of_secrecy_modifier_desc: "Así como las Nieblas envuelven las mentes mortales y la puerta de [arcadia|E] permanece incógnita, yo mantendré en secreto y en secreto el conocimiento que obtenga en este momento y lugar. Nunca saldrá de mis labios, de lo contrario la noche podría convertirse en día y todas las cosas ocultas quedarían expuestas.\n#weak El personaje se convertirá en [GetTrait('oathbreaker').GetName( GetPlayer )] si expone el secreto del objetivo del juramento.#!" #NT!
+  
+ POD_oath_of_guardianship_interaction: "Juramento de tutela" #NT!
+ POD_oath_of_guardianship_interaction_desc: "Juramento de proteger a una persona, lugar o cosa." #NT!
+ POD_oath_of_guardianship_interaction_tooltip: "[recipient.GetFirstName] se convertirá en [GetTrait('oathbreaker').GetName( GetPlayer )] si [secondary_recipient.GetFirstName] mueren." #NT!
+ recipient_secondary_POD_oath_of_guardianship_interaction: "Persona de juramento" #NT!
+ oath_of_guardianship_opinion: "Juramento de tutela" #NT!
+ oath_of_guardianship_modifier: "Juramento de tutela" #NT!
+ oath_of_guardianship_modifier_desc: "Como el sol protege la Tierra durante el día y las estrellas durante la noche, así te serviré. Este es mi deber. No te abandonaré hasta el momento prometido, de lo contrario, las estrellas cerrarán sus ojos y dormirán.\n#weak El personaje intentará salvar al objetivo del juramento del asesinato.\nEl personaje se convertirá en [GetTrait('oathbreaker').GetName( GetPlayer )] si el objetivo del juramento muere.#!" #NT!
+  
+ POD_oath_of_truehearts_interaction: "Juramento de corazones sinceros" #NT!
+ POD_oath_of_truehearts_interaction_desc: "Juramento que los amantes de la Estirpe hacen entre sí." #NT!
+ POD_oath_of_truehearts_interaction_tooltip: "[recipient.GetFirstName] se convertirá en [GetTrait('oathbreaker').GetName( GetPlayer )] si [recipient.GetSheHe] tiene sexo con otro." #NT!
+ oath_of_truehearts_opinion: "Juramento de corazones sinceros" #NT!
+ oath_of_truehearts_modifier: "Juramento de corazones sinceros" #NT!
+ oath_of_truehearts_modifier_desc: "Te doy un regalo de mí mismo. Tómalo libremente; libremente se te ofrece, y por siempre me tendrás bajo tu cuidado. Te juro amor y te prometo mi fidelidad. Que quienes velan por el amor velen por este juramento y por quienes lo cumplen, y que nunca encontremos faltas a sus ojos.\n#weak El personaje intentará no tener sexo con otras personas.\nEl personaje se convertirá en [GetTrait('oathbreaker').GetName( GetPlayer )] si tuvo sexo con otros.#!" #NT!
+  
+ POD_fae_interactions.300.t: "$murder_save_header$ Guardián del juramento" #NT!
+ POD_fae_interactions.300.desc.assassin: "¡Mi asesino no logró matar a [target.GetTitledFirstName]! Al parecer, [target.GetFirstNamePossessiveNoTooltip] Guardián del Juramento [oath_guardian.GetTitledFirstName] intervino, apareciendo segundos antes de que se llevara a cabo el asesinato y acabando con mi asesino a sueldo." #NT!
+ POD_fae_interactions.300.desc.thugs: "¡Los matones que contraté para matar a [target.GetTitledFirstName] fracasaron en su misión! A pesar de su crueldad, [target.GetFirstNamePossessiveNoTooltip] Guardián del Juramento pudo mantener a [target.GetHerHim] a salvo el tiempo suficiente para que los guardias [target.GetHerHis] pudieran reunirse y acabar con los bandidos restantes." #NT!
+ POD_fae_interactions.300.desc.mob: "Mientras que la turba que incité a matar a [target.GetTitledFirstName] logró arrastrar a [target.GetHerHim] del caballo de [target.GetHerHis], no pudieron terminar el trabajo antes de que [target.GetFirstNamePossessiveNoTooltip] Guardián del Juramento interviniera. [oath_guardian.GetSheHe|U] despachó sin piedad a los campesinos que estaban dentro del alcance de ataque de [target.GetFirstNameNoTooltip] y asustó a los demás para que huyeran." #NT!
+ POD_fae_interactions.300.desc.lured_into_forest: "Había pensado que mi plan de perder a [target.GetTitledFirstName] en el bosque había salido perfectamente cuando llegó la noche sin señales del díscolo [target.Custom('GirlBoy')].\n\nDesafortunadamente, justo cuando estaba a punto de irme a la cama recibí la noticia de que [target.GetFirstNamePossessiveNoTooltip] Oath Guardian Salió del bosque con el [target.Custom('GirlBoy')] a cuestas. Aparentemente, [oath_guardian.GetSheHe] se encargó de [oath_guardian.GetHerselfHimself] para seguir el rastro de [target.GetFirstNamePossessiveNoTooltip] a través del bosque y lo encontró justo antes de que lo hicieran los animales hambrientos." #NT!
+ POD_fae_interactions.300.desc.child_pushed: "¡El pequeño tonto [target.Custom('GirlBoy')] que sería [target.GetTitleAsNameNoTooltip] fue lo suficientemente estúpido como para caer en mi trampa! [target.GetFirstName] trepó al borde del balcón tal como estaba planeado, y mi agente empujó a [target.GetHerHim] hacia el aire libre...\n\n..Pero lo que debería haber sido una caída letal no lo fue, cuando [target.GetSheHe] fue atrapado por [target.GetHerHis] Oath Guardian justo antes de golpear el suelo. [target.GetSheHe|U] vive para ver otro día, y es poco probable que caiga en esa estratagema nuevamente." #NT!
+ POD_fae_interactions.300.oath_guardian_dies: "\n\nPor lo menos, [oath_guardian.GetFirstNameNoTooltip] no volverá a molestarme, ya que [oath_guardian.GetSheHe] murió a causa de [oath_guardian.GetHerHis] heridas." #NT!
+ POD_fae_interactions.300.a: "Se acabó..." #NT!
+ POD_fae_interactions.300.b: "... ¡No termina hasta que yo diga que termina!" #NT!
+ POD_fae_interactions.301.t: "$murder_save_header$ Guardián del juramento" #NT!
+ POD_fae_interactions.301.desc.assassin: "¡Casi muero hoy! Si [oath_guardian.GetFirstName] no se hubiera dado cuenta de que algo andaba mal y me hubiera seguido hasta mi habitación, ahora sería un cadáver.\n\nLo primero que oí del asesino fue que [oath_guardian.GetFirstNameNoTooltip] derribó a alguien al suelo justo detrás de mí, y luego todo fue un borrón de cuchillos y puños hasta que el agresor quedó muerto." #NT!
+ POD_fae_interactions.301.desc.assassin.oath_guardian_dies: "\n\nLamentablemente, [oath_guardian.GetFirstNameNoTooltip] pagó el precio más alto. Aunque el asesino está muerto, las heridas de [oath_guardian.GetHerHis] resultaron fatales." #NT!
+ POD_fae_interactions.301.desc.thugs: "Estoy viajando con mi séquito cuando se oye un grito desde un bosquecillo de árboles. "¡Ataquen! ¡A por el [ROOT.Char.GetTitleTierName]!" ¡Una emboscada!\n\n¡Estos no son simples bandidos que buscan mi oro, sino matones que buscan mi vida! Mi Guardián del Juramento [oath_guardian.GetFirstNameNoTooltip] corre en mi defensa, colocando el cuerpo de [oath_guardian.GetHerHis] entre los bandidos sedientos de sangre y yo.\n\n[oath_guardian.GetFirstNameNoTooltip|U] organiza una retirada de combate mientras mis enemigos convergen en nuestra posición blandiendo espadas, pero pronto mis otros guardias pueden unirse a nuestra defensa y acabar con los atacantes restantes." #NT!
+ POD_fae_interactions.301.desc.thugs.oath_guardian_dies: "Sólo cuando la lucha ha terminado, [oath_guardian.GetSheHe] cae al suelo y descubro las heridas profundas de [oath_guardian.GetHerHis]. [oath_guardian.GetSheHe] realmente me protegió hasta el último momento..." #NT!
+ POD_fae_interactions.301.desc.mob: "Estoy cabalgando por las calles de [home_province.GetName] cuando una turba de campesinos que gritan y vociferan desciende sobre mi séquito. Antes de que me dé cuenta de lo que está sucediendo, los plebeyos me sacan de mi caballo y comienzan a golpearme.\n\nMi Guardián del Juramento [oath_guardian.GetFirstName] corre en mi defensa con [oath_guardian.Custom('signature_weapon')] en la mano, atacando sin piedad [oath_guardian.Custom('SignatureWeaponWoundVerb1PresentParticiple')] a los campesinos que me estaban golpeando y, tal vez de manera poco glamorosa, protegiéndome de más daño mientras me entierran debajo de sus cadáveres." #NT!
+ POD_fae_interactions.301.desc.mob.oath_guardian_lives: "\n\nDespués de que cesan los sonidos de la lucha, [oath_guardian.GetFirstNameNoTooltip] me quita los cuerpos de encima y me ayuda a ponerme de pie. Aparte de nosotros, la calle ahora está desierta, todos los conspiradores están muertos o huyeron." #NT!
+ POD_fae_interactions.301.desc.mob.oath_guardian_dies: "\n\nCuando logro salir de la pila de cadáveres, la calle está desierta salvo por los cuerpos de los caídos, [oath_guardian.GetFirstNameNoTooltip] entre ellos." #NT!
+ POD_fae_interactions.301.desc.lured_into_forest: "Estaba jugando al escondite con algunos cortesanos en el bosque cuando me di cuenta de que había pasado mucho tiempo desde que había escuchado a alguien buscándome. Demasiado tiempo.\n\nLlamé, pero no escuché nada. Me abandonaron... Intenté encontrar el camino a casa, pero no sé cuál es cuál, y oscureció rápidamente.\n\nPronto pude escuchar a las bestias moviéndose entre los árboles, pero antes de que pudieran alcanzarme, mi Guardián del Juramento [oath_guardian.GetFirstName] estaba allí, sin aliento y blandiendo una antorcha encendida. El fuego parecía disuadir a las bestias, que se mantenían a distancia mientras [oath_guardian.GetSheHe] jadeaba: "Vamos a llevarte... a casa... mi señor..."" #NT!
+ POD_fae_interactions.301.desc.child_pushed: "\n\n#EMP WHUMP#!\n\nI han caído en los brazos de mi Guardián del Juramento, [oath_guardian.GetFirstNameNoTooltip]. "¡Niña tonta! Si no hubiera llegado a ti a tiempo... no importa. Déjanos llevarte a un lugar seguro"." #NT!
+ POD_fae_interactions.301.owner_discovered: "\n\nSólo una persona podría ser responsable de este ataque: [owner.Custom2('MyCharacterIntroductionNoComma', ROOT.Char)]!" #NT!
+ POD_fae_interactions.301.a: "¿Quién querría que me mataran a mí?" #NT!
+ POD_fae_interactions.301.b: "[owner.GetSheHe|U] sufrirá por esto!" #NT!
+  
+ POD_create_animantis_interaction: "Crear Animantis" #NT!
+ POD_create_animantis_interaction_desc: "Crea un personaje [GetTrait('automaton').GetName( GetPlayer )]." #NT!
+  
+ POD_fae_interactions.400.t: "Asignar atributo: Marcial" #NT!
+ POD_fae_interactions.401.t: "Asignar atributo: Mayordomía" #NT!
+ POD_fae_interactions.402.t: "Asignar atributo: Diplomacia" #NT!
+ POD_fae_interactions.403.t: "Asignar atributo: Intriga" #NT!
+ POD_fae_interactions.404.t: "Asignar atributo: aprendizaje" #NT!
+ POD_fae_interactions.405.t: "Asignar atributo: destreza" #NT!
+ POD_fae_interactions.400.desc: "Puntos de atributo disponibles: [effigy_character.MakeScope.ScriptValue('animantis_atribute_points')|V0]" #NT!
+  
+ POD_gilgul_interaction: "Gilgul" #NT!
+ POD_gilgul_interaction_desc: "Editar los rasgos mentales y físicos del objetivo [GetTrait('automaton').GetName( GetPlayer )]." #NT!
+  
+ POD_fae_interactions.500.t: "$learning_true_names_head$ Elige" #NT!
+ POD_fae_interactions.500.desc: "¿Qué tipo de nombre verdadero quieres aprender?" #NT!
+ POD_fae_interactions.500.personality: "Personalidad" #NT!
+ POD_fae_interactions.500.education: "Educación" #NT!
+ POD_fae_interactions.500.commander: "Comandante" #NT!
+ POD_fae_interactions.500.lifestyle: "Estilo de vida" #NT!
+ POD_fae_interactions.500.fame: "Fama" #NT!
+ POD_fae_interactions.500.stress: "Estrés" #NT!
+ POD_fae_interactions.500.health: "Salud" #NT!
+ POD_fae_interactions.500.physical: "Físico" #NT!
+  
+ POD_fae_interactions.501.t: "$learning_true_names_head$ Nuevo nombre verdadero descubierto" #NT!
+ POD_fae_interactions.501.desc: "Has aprendido con éxito el verdadero nombre de [this_trait.GetName( GetPlayer.Self )], ahora puedes usarlo para nombrar trucos." #NT!
+ POD_fae_interactions.501.a: "Continuaré estudiando." #NT!
+ POD_fae_interactions.501.a.tt: "Repetirás el proceso de aprender el nombre verdadero el próximo año." #NT!
+ POD_fae_interactions.501.b: "Ahora tomaré un descanso." #NT!
+ POD_fae_interactions.501.b.tt: "No repetirás el proceso de aprender el nombre verdadero el próximo año." #NT!
+  
+ POD_fae_interactions.502.t: "$learning_true_names_head$ No hay nombre verdadero por descubrir" #NT!
+ POD_fae_interactions.502.desc: "Has aprendido todo el Nombre Verdadero sobre este tema que alguna vez podrías usar." #NT!
+ POD_fae_interactions.502.a: "Elegiré otra materia para estudiar." #NT!
+  
+ POD_fae_interactions.601.t: "Un digno sucesor" #NT!
+ POD_fae_interactions.601.desc: "Tu sirviente te trae el que mejor se adapta a todos tus criterios, ahora es el momento de hacer que este sprite se convierta en tu sucesor." #NT!
+ POD_fae_interactions.601.a: "Proceda con la acogida." #NT!
+  
+ POD_fae_interactions.610.t: "Forjar la personalidad" #NT!
+ POD_fae_interactions.610.desc: "Recientemente se convirtió en hada y su nuevo sucesor se perdió muchas experiencias de vida en el mundo de la vigilia. Como padre, debe enseñarle a su sucesor cómo mirar verdaderamente al mundo, y recientemente encontró una oportunidad para hacerlo." #NT!
+ POD_fae_interactions.610.skip: "Tal vez la próxima vez" #NT!
+ POD_fae_interactions.611.a: "Sé valiente, incluso en los problemas." #NT!
+ POD_fae_interactions.611.b: "Tenga cuidado si surgen problemas." #NT!
+ POD_fae_interactions.612.a: "Tienes tiempo." #NT!
+ POD_fae_interactions.612.b: "Muestra tu ira." #NT!
+ POD_fae_interactions.613.a: "Leal a tu consorte." #NT!
+ POD_fae_interactions.613.b: "El amor es para todos." #NT!
+ POD_fae_interactions.614.a: "Estás bien." #NT!
+ POD_fae_interactions.614.b: "Ve por más." #NT!
+ POD_fae_interactions.615.a: "Tienes una causa." #NT!
+ POD_fae_interactions.615.b: "El tiempo está de nuestro lado." #NT!
+ POD_fae_interactions.616.a: "Siempre hay otra manera." #NT!
+ POD_fae_interactions.616.b: "Quédate como estás." #NT!
+ POD_fae_interactions.617.a: "La venganza es eterna." #NT!
+ POD_fae_interactions.617.b: "El odio no es el punto." #NT!
+ POD_fae_interactions.618.a: "El oro no es la preocupación." #NT!
+ POD_fae_interactions.618.b: "Sin dinero nada es posible." #NT!
+ POD_fae_interactions.619.a: "Puedes confiar en la gente." #NT!
+ POD_fae_interactions.619.b: "No puedes confiar en nadie." #NT!
+ POD_fae_interactions.620.a: "Se honesto." #NT!
+ POD_fae_interactions.620.b: "Una pequeña mentira no hace daño." #NT!
+ POD_fae_interactions.621.a: "Eres sólo uno entre muchos." #NT!
+ POD_fae_interactions.621.b: "Usted es excelente." #NT!
+ POD_fae_interactions.622.a: "La ley por encima de todo." #NT!
+ POD_fae_interactions.622.b: "Tú por encima de todo." #NT!
+ POD_fae_interactions.623.a: "Dale tiempo." #NT!
+ POD_fae_interactions.623.b: "El tiempo no espera." #NT!
+ POD_fae_interactions.624.a: "Los placeres son una distracción." #NT!
+ POD_fae_interactions.624.b: "Disfruta tu vida." #NT!
+ POD_fae_interactions.625.a: "La confianza es la clave." #NT!
+ POD_fae_interactions.625.b: "Traiciona al mundo antes de que el mundo te traicione a ti." #NT!
+ POD_fae_interactions.626.a: "Fiel a tu camino." #NT!
+ POD_fae_interactions.626.b: "Tu camino no es tan importante." #NT!
+ POD_fae_interactions.627.a: "Se bueno." #NT!
+ POD_fae_interactions.627.b: "Piensa en ti primero." #NT!
+ POD_fae_interactions.627.c: "Comparte tu dolor con el mundo." #NT!
+  
+ POD_fae_interactions.701.t: "[GetPlayer.MakeScope.Var('current_journey').Var('target_trait').Trait.GetName(GetPlayer)] Perspectivas" #NT!
+ POD_fae_interactions.701.desc: "Mi contemplación ha dado frutos.\n\nHe adquirido una comprensión completa de un nuevo nombre verdadero." #NT!
+ POD_fae_interactions.701.a: "Mi mente se expande. Y con ella, las posibilidades." #NT!
+ POD_fae_interactions.701.a.tt: "Aprendiste el verdadero nombre del [GetPlayer.MakeScope.Var('current_journey').Var('target_trait').Trait.GetName(GetPlayer)] [trait|E]." #NT!
+  
+ POD_fae_interactions.702.t: "El tejido del tapiz" #NT!
+ POD_fae_interactions.702.desc: "¿Qué [traits|E] quieres estudiar?" #NT!
+ POD_fae_interactions.702.a: "Estudia estos rasgos." #NT!
+ POD_fae_interactions.702.a.trigger: "Primero debes seleccionar un rasgo" #NT!
+ POD_fae_interactions.702.b: "Cambié de opinión. No quiero estudiar ahora mismo." #NT!
+ POD_true_name_widget_select_all: "Seleccionar todos los rasgos" #NT!
+  
+ POD_convert_to_catlover_interaction: "Conviértete en un amante de los gatos" #NT!
+ POD_convert_to_catlover_interaction_desc: "Convierte [recipient.GetFirstName] en amante de los gatos." #NT!
+ convert_to_catlover: "Conviértete en un amante de los gatos" #NT!
+ convert_to_catlover_action: "Conviértete en un amante de los gatos" #NT!
+ convert_to_catlover_desc: "Convierto a [SCHEME.GetTarget.GetShortUINameNoTooltip] en amante de los gatos." #NT!
+ convert_to_catlover_desc_general: "Intenta convertir al objetivo en un amante de los gatos" #NT!
+ convert_to_catlover_SUCCESS_DESC: "Harás que [TARGET_CHARACTER.GetShortUIName] adopte un gato" #NT!
+ convert_to_catlover_my_diplomacy: "Tu diplomacia: $VALUE|=+0$" #NT!
+ convert_to_catlover_my_rival: "Tu víctima: $VALUE|=+0$" #NT!
+ convert_to_catlover_scheme_invalidated_title: "@scheme_icon: ¡Finaliza el plan de conversión a amantes de los gatos!" #NT!
+ SCHEME_I_AM_CATLOVER: "Tienes un gato:$VALUE|0=-+$" #NT!
+  
+ POD_fancy_perk_interaction: "Elegante" #NT!
+ POD_fancy_perk_interaction_desc: "Haz que [recipient.GetFirstName] tenga una buena impresión de ti." #NT!
+ POD_yearn_perk_interaction: "Añorar" #NT!
+ POD_yearn_perk_interaction_desc: "Haz que [recipient.GetFirstNamePossessive] vecinos estén ansiosos por robar sus artefactos." #NT!
+ actor_secondary_POD_yearn_perk_interaction: "Reclamante" #NT!
+ POD_covet_perk_interaction: "Codiciar" #NT!
+ POD_covet_perk_interaction_desc: "Haz que [recipient.GetFirstName] anhele ser tu amigo o amante." #NT!
+ POD_covet_perk_interaction_options_heading: "¿Qué plan se pondrá en marcha?" #NT!
+ can_start_covet: "[recipient.GetFirstName] puede iniciar [GetScheme('befriend').GetTypeName()], [GetScheme('courting').GetTypeName()], [GetScheme('seduce').GetTypeName()] o [GetScheme('sway').GetTypeName()] [scheme|E] contigo." #NT!
+ can_start_covet_befriend: "El objetivo puede #bold no#! iniciar [GetScheme('befriend').GetTypeName()] [scheme|E] contigo." #NT!
+ can_start_covet_courting: "El objetivo puede #bold no#! iniciar [GetScheme('courting').GetTypeName()] [scheme|E] contigo." #NT!
+ can_start_covet_seduce: "El objetivo puede #bold no#! iniciar [GetScheme('seduce').GetTypeName()] [scheme|E] contigo." #NT!
+ can_start_covet_sway: "El objetivo puede #bold no#! iniciar [GetScheme('sway').GetTypeName()] [scheme|E] contigo." #NT!
+ POD_crave_perk_interaction: "Pedir" #NT!
+ POD_crave_perk_interaction_desc: "Haz que [recipient.GetFirstNamePossessive] vecinos estén ansiosos por reclamar y conquistar sus tierras." #NT!
+ actor_secondary_POD_crave_perk_interaction: "Reclamante" #NT!
+ POD_need_perk_interaction: "Necesidad" #NT!
+ POD_need_perk_interaction_desc: "Hacer [recipient.GetFirstName] inicia un [single_combat_duel|E] contra cualquier personaje que tenga [recipient.GetFirstNamePossessive] títulos o artefactos reclamados, o cualquier personaje que comparta el mismo amigo, amante o consorte con [recipient.GetHerHim]." #NT!
+ recipient_secondary_POD_need_perk_interaction: "Víctima" #NT!
+  
+ POD_cold_shock_perk_interaction: "Choque de frío" #NT!
+ POD_cold_shock_perk_interaction_desc: "Haz que [recipient.GetFirstNamePossessive] cortesanos e invitados obtengan una opinión negativa de [recipient.GetHerHim]." #NT!
+ POD_frost_facsimile_perk_interaction: "Facsímil de escarcha" #NT!
+ POD_frost_facsimile_perk_interaction_desc: "Produce un objeto a partir de hielo sólido." #NT!
+ POD_crysta_prison_perk_interaction: "Prisión de cristal" #NT!
+ POD_crysta_prison_perk_interaction_desc: "Encierra a [recipient.GetFirstName] en un bloque sólido de hielo." #NT!
+ POD_coldheart_perk_interaction: "Corazón frío" #NT!
+ POD_coldheart_perk_interaction_desc: "Se congela completamente [recipient.GetFirstName]." #NT!
+  
+ POD_healing_waters_character_interaction: "Aguas curativas" #NT!
+ POD_healing_waters_character_interaction_desc: "Usa el poder de Sliver para curar [recipient.GetFirstNamePossessive] heridas." #NT!
+ POD_healing_waters_character_interaction_options_heading: "¿A qué debo invocar para que Sliver sane?" #NT!
+ POD_healing_waters_artifact_interaction: "Arreglar artefacto" #NT!
+ POD_healing_waters_artifact_interaction_desc: "Usa el poder de Sliver para reparar el artefacto objetivo." #NT!
+  
+ POD_strings_of_the_soul_interaction: "Cuerdas del alma" #NT!
+ POD_strings_of_the_soul_interaction_desc: "Manipular [recipient.GetFirstNamePossessive] emociones." #NT!
+ POD_inferno_firebombs_interaction: "Equiparse con bombas incendiarias" #NT!
+ POD_inferno_firespewer_interaction: "Equiparse con lanzafuego" #NT!
+  
+ POD_illusion_interaction: "Espejismo" #NT!
+ POD_illusion_interaction_desc: "Hacer que un [recipient.GetFirstName] no pueda usar [recipient.GetHerHis] sentidos." #NT!
+  
+ POD_solarium_interaction: "Solárium" #NT!
+ POD_solarium_worldly_interaction: "Solárium #Weak (Mundano)#!" #NT!
+ POD_solarium_interaction_desc: "Influye en la planta del reino [recipient.GetFirstNamePossessive]." #NT!
+ POD_solarium_interaction_desc.crop: "Causa [GetModifier('rich_crop_modifier').GetNameWithTooltip] sobre [target.GetName]" #NT!
+ POD_solarium_interaction_desc.weed: "Causa [GetModifier('grow_weed_modifier').GetNameWithTooltip] sobre [target.GetName]" #NT!
+ POD_solarium_interaction_desc.flower: "Causa [GetModifier('grow_flower_modifier').GetNameWithTooltip] sobre [target.GetName]" #NT!
+ POD_solarium_interaction_desc.thorn: "Causa [GetModifier('grow_thorn_modifier').GetNameWithTooltip] sobre [target.GetName]" #NT!
+ POD_solarium_interaction_desc.tree: "Causa [GetModifier('grow_tree_modifier').GetNameWithTooltip] sobre [target.GetName]" #NT!
+ POD_solarium_interaction_desc.mushroom: "Causa [GetModifier('grow_mushroom_modifier').GetNameWithTooltip] sobre [target.GetName]" #NT!
+ POD_solarium_interaction_desc.middle_east.crop: "Causa [GetModifier('rich_crop_modifier').GetNameWithTooltip] sobre el Medio Oriente." #NT!
+ POD_solarium_interaction_desc.india.crop: "Causa [GetModifier('rich_crop_modifier').GetNameWithTooltip] sobre la India." #NT!
+ POD_solarium_interaction_desc.tibet.crop: "Causa [GetModifier('rich_crop_modifier').GetNameWithTooltip] sobre el Tíbet." #NT!
+ POD_solarium_interaction_desc.steppe.crop: "Causa [GetModifier('rich_crop_modifier').GetNameWithTooltip] sobre la estepa." #NT!
+ POD_solarium_interaction_desc.asia_minor.crop: "Causa [GetModifier('rich_crop_modifier').GetNameWithTooltip] sobre Asia Menor." #NT!
+ POD_solarium_interaction_desc.africa.crop: "Causa [GetModifier('rich_crop_modifier').GetNameWithTooltip] sobre África." #NT!
+ POD_solarium_interaction_desc.europe.crop: "Causa [GetModifier('rich_crop_modifier').GetNameWithTooltip] sobre Europa." #NT!
+ POD_solarium_interaction_desc.middle_east.weed: "Causa [GetModifier('grow_weed_modifier').GetNameWithTooltip] sobre el Medio Oriente." #NT!
+ POD_solarium_interaction_desc.india.weed: "Causa [GetModifier('grow_weed_modifier').GetNameWithTooltip] sobre la India." #NT!
+ POD_solarium_interaction_desc.tibet.weed: "Causa [GetModifier('grow_weed_modifier').GetNameWithTooltip] sobre el Tíbet." #NT!
+ POD_solarium_interaction_desc.steppe.weed: "Causa [GetModifier('grow_weed_modifier').GetNameWithTooltip] sobre la estepa." #NT!
+ POD_solarium_interaction_desc.asia_minor.weed: "Causa [GetModifier('grow_weed_modifier').GetNameWithTooltip] sobre Asia Menor." #NT!
+ POD_solarium_interaction_desc.africa.weed: "Causa [GetModifier('grow_weed_modifier').GetNameWithTooltip] sobre África." #NT!
+ POD_solarium_interaction_desc.europe.weed: "Causa [GetModifier('grow_weed_modifier').GetNameWithTooltip] sobre Europa." #NT!
+ POD_solarium_interaction_desc.middle_east.flower: "Causa [GetModifier('grow_flower_modifier').GetNameWithTooltip] sobre el Medio Oriente." #NT!
+ POD_solarium_interaction_desc.india.flower: "Causa [GetModifier('grow_flower_modifier').GetNameWithTooltip] sobre la India." #NT!
+ POD_solarium_interaction_desc.tibet.flower: "Causa [GetModifier('grow_flower_modifier').GetNameWithTooltip] sobre el Tíbet." #NT!
+ POD_solarium_interaction_desc.steppe.flower: "Causa [GetModifier('grow_flower_modifier').GetNameWithTooltip] sobre la estepa." #NT!
+ POD_solarium_interaction_desc.asia_minor.flower: "Causa [GetModifier('grow_flower_modifier').GetNameWithTooltip] sobre Asia Menor." #NT!
+ POD_solarium_interaction_desc.africa.flower: "Causa [GetModifier('grow_flower_modifier').GetNameWithTooltip] sobre África." #NT!
+ POD_solarium_interaction_desc.europe.flower: "Causa [GetModifier('grow_flower_modifier').GetNameWithTooltip] sobre Europa." #NT!
+ POD_solarium_interaction_desc.middle_east.thorn: "Causa [GetModifier('grow_thorn_modifier').GetNameWithTooltip] sobre el Medio Oriente." #NT!
+ POD_solarium_interaction_desc.india.thorn: "Causa [GetModifier('grow_thorn_modifier').GetNameWithTooltip] sobre la India." #NT!
+ POD_solarium_interaction_desc.tibet.thorn: "Causa [GetModifier('grow_thorn_modifier').GetNameWithTooltip] sobre el Tíbet." #NT!
+ POD_solarium_interaction_desc.steppe.thorn: "Causa [GetModifier('grow_thorn_modifier').GetNameWithTooltip] sobre la estepa." #NT!
+ POD_solarium_interaction_desc.asia_minor.thorn: "Causa [GetModifier('grow_thorn_modifier').GetNameWithTooltip] sobre Asia Menor." #NT!
+ POD_solarium_interaction_desc.africa.thorn: "Causa [GetModifier('grow_thorn_modifier').GetNameWithTooltip] sobre África." #NT!
+ POD_solarium_interaction_desc.europe.thorn: "Causa [GetModifier('grow_thorn_modifier').GetNameWithTooltip] sobre Europa." #NT!
+ POD_solarium_interaction_desc.middle_east.tree: "Causa [GetModifier('grow_tree_modifier').GetNameWithTooltip] sobre el Medio Oriente." #NT!
+ POD_solarium_interaction_desc.india.tree: "Causa [GetModifier('grow_tree_modifier').GetNameWithTooltip] sobre la India." #NT!
+ POD_solarium_interaction_desc.tibet.tree: "Causa [GetModifier('grow_tree_modifier').GetNameWithTooltip] sobre el Tíbet." #NT!
+ POD_solarium_interaction_desc.steppe.tree: "Causa [GetModifier('grow_tree_modifier').GetNameWithTooltip] sobre la estepa." #NT!
+ POD_solarium_interaction_desc.asia_minor.tree: "Causa [GetModifier('grow_tree_modifier').GetNameWithTooltip] sobre Asia Menor." #NT!
+ POD_solarium_interaction_desc.africa.tree: "Causa [GetModifier('grow_tree_modifier').GetNameWithTooltip] sobre África." #NT!
+ POD_solarium_interaction_desc.europe.tree: "Causa [GetModifier('grow_tree_modifier').GetNameWithTooltip] sobre Europa." #NT!
+ POD_solarium_interaction_desc.middle_east.mushroom: "Causa [GetModifier('grow_mushroom_modifier').GetNameWithTooltip] sobre el Medio Oriente." #NT!
+ POD_solarium_interaction_desc.india.mushroom: "Causa [GetModifier('grow_mushroom_modifier').GetNameWithTooltip] sobre la India." #NT!
+ POD_solarium_interaction_desc.tibet.mushroom: "Causa [GetModifier('grow_mushroom_modifier').GetNameWithTooltip] sobre el Tíbet." #NT!
+ POD_solarium_interaction_desc.steppe.mushroom: "Causa [GetModifier('grow_mushroom_modifier').GetNameWithTooltip] sobre la estepa." #NT!
+ POD_solarium_interaction_desc.asia_minor.mushroom: "Causa [GetModifier('grow_mushroom_modifier').GetNameWithTooltip] sobre Asia menor." #NT!
+ POD_solarium_interaction_desc.africa.mushroom: "Causa [GetModifier('grow_mushroom_modifier').GetNameWithTooltip] sobre África." #NT!
+ POD_solarium_interaction_desc.europe.mushroom: "Causa [GetModifier('grow_mushroom_modifier').GetNameWithTooltip] sobre Europa." #NT!
+ POD_coalesce_interaction: "Juntarse" #NT!
+ POD_coalesce_interaction_desc: "Convierte las plantas en material exótico para la venta." #NT!
+ POD_mold_interaction: "Moho" #NT!
+ POD_mold_interaction_desc: "Convierte a [recipient.GetFirstName] en un artefacto viviente." #NT!
+  
+ POD_awaken_true_jade_interaction: "Despierta el verdadero jade" #NT!
+ POD_awaken_true_jade_interaction_desc: "Despierta [true_jade|E] para almacenar Chi." #NT!
+ POD_awaken_true_jade_interaction_options_heading: "¿Qué tipo de [true_jade|E] quieres despertar?" #NT!
+ POD_awaken_true_jade_interaction_option_dragon_jade: "Dragón de jade" #NT!
+ POD_awaken_true_jade_interaction_option_feng_jade: "Feng Jade" #NT!
+ POD_awaken_true_jade_interaction_option_tiger_jade: "Tigre de jade" #NT!
+ POD_awaken_true_jade_interaction_option_tortoise_jade: "Tortuga de jade" #NT!
+ POD_awaken_true_jade_interaction_option_mandarin_jade: "Jade mandarín" #NT!
+  
+ POD_transmute_metal_interaction: "Transmutar metal" #NT!
+ POD_transmute_metal_interaction_desc: "Convierta el metal común en metal precioso con fines de venta." #NT!
+ POD_transmute_earth_interaction: "Transmutar la Tierra" #NT!
+ POD_transmute_earth_interaction_desc: "Convierte un puñado de piedras en gemas para mostrar tu prestigio y grandeza." #NT!
+  
+ POD_banish_fae_interaction: "Desterrar a los Fae" #NT!
+ POD_banish_fae_interaction_desc: "Destierra [recipient.GetFirstName] al [arcadia|E]." #NT!
+  
+ bunk.duel.desc: "[bunk|E]" #NT!
+  
+ POD_changeling_interaction: "Secuestrar a un niño" #NT!
+ POD_changeling_interaction_desc: "Secuestra al hijo de [recipient.GetFirstName] y reemplázalo por tu hijo, dando como resultado dos cambiantes." #NT!
+ actor_secondary_POD_changeling_interaction_desc: "Sustituto" #NT!
+ recipient_secondary_POD_changeling_interaction_desc: "Secuestrado" #NT!
+  
+ POD_create_changeling_interaction: "Conviértete en un Changeling" #NT!
+ POD_create_changeling_interaction_desc: "Encantar y dominar a [recipient.GetFirstName], hacer que [recipient.GetFirstName] se distancie de su humanidad y eventualmente se convierta en un cambiante." #NT!
+ CHANGELING_IS_SHUNNED: "[GetTrait('changeling').GetName( GetPlayer )] es rechazado: $VALUE|+0$" #NT!
+ CHANGELING_IS_CRIME: "[GetTrait('changeling').GetName( GetPlayer )] es Crimen: $VALUE|+0$" #NT!
+  
+ POD_charjoin_become_changeling_interaction: "Preguntar encantamiento" #NT!
+ POD_charjoin_become_changeling_interaction_desc: "Quieres que [recipient.GetFirstName] te convierta en un cambiaformas." #NT!
+  
+ POD_call_patron_interaction: "Llamar al patrón" #NT!
+ POD_call_patron_interaction_desc: "Llamar a [recipient.GetFirstName] al conflicto contra un extraño." #NT!

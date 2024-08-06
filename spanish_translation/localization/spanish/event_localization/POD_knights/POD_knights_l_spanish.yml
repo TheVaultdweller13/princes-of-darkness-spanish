@@ -1,0 +1,40 @@
+﻿l_spanish:
+  
+ pod_knights.1.t: "El campeón arrogante" #NT!
+ pod_knights.1.desc: "Se te ha informado de que uno de tus campeones ha sido descuidado recientemente. [knight.GetSheHe] se vio involucrado en una pelea con mortales y usó los poderes de la sangre para aplastarlos fácilmente, una clara violación de [masquerade|E]. Peor aún, ¡[knight.GetSheHe] luego se jactó de ello en la ciudad!\nEs seguro que este comportamiento atraerá la mirada no deseada de la Inquisición, pero aún podrías salvar la situación si cortas tu asociación con este molesto fanfarrón." #NT!
+ pod_knights.1.a: "¡Sal de mi vista, idiota!" #NT!
+ pod_knights.1.b: "Estás perdonado, esta vez" #NT!
+ pod_knights.2.t: "El campeón engañoso" #NT!
+ pod_knights.2.desc: "Uno de tus campeones ha sido un verdadero dolor de cabeza durante bastante tiempo. Al difundir rumores uno tras otro, pensaste por un tiempo que [knight.GetSheHe] estaba preparando algún complot en tu contra. Pero después de una investigación cuidadosa, estás bastante seguro de que lo hace más por diversión que por algún motivo oculto.\nAun así, esta es una clara amenaza a tu credibilidad y es posible que quieras tomar medidas más pronto que tarde." #NT!
+ pod_knights.2.a: "¡Vete, chismoso molesto!" #NT!
+ pod_knights.2.b: "...Demasiado importante para simplemente descartarlo, lamentablemente." #NT!
+ pod_knights.3.t: "El campeón iracundo" #NT!
+ pod_knights.3.desc: "No sabes cómo empezó todo, pero uno de tus campeones, conocido por su carácter fogoso, ha entrado en frenesí en medio de tu corte por un insulto insignificante o algo similar. Tienes dos opciones: puedes llamar a los guardias y a tus otros guerreros para que sometan a este berserker, aunque esa humillación social probablemente significaría que [knight.GetSheHe] nunca volvería a ponerse a tu servicio. O puedes dejar que el frenesí siga su curso, sin importarte las posibles víctimas..." #NT!
+ pod_knights.3.a: "Saca a esta bestia de mi vista." #NT!
+ pod_knights.3.b: "Supongo que es hora de sacrificar algunos vasallos." #NT!
+ pod_knights.4.t: "El campeón cobarde" #NT!
+ pod_knights.4.desc: "Uno de tus campeones es un conocido cobarde. Siempre buscando una salida a las peleas, [knight.GetSheHe] se ha convertido en el hazmerreír de tu corte, aunque nadie se atreve a decirlo en voz alta... todavía. Tú claramente anticipas que esto cambiará muy pronto, y será una gran mancha para tu prestigio albergar a un individuo así.\nPodrías simplemente soportarlo, o eliminar al cobarde de tu servicio antes de que se convierta en un problema." #NT!
+ pod_knights.4.a: "Saquen a este idiota de mi cancha" #NT!
+ pod_knights.4.b: "Déjalos hablar, no me importa." #NT!
+ pod_knights.5.t: "El campeón codicioso" #NT!
+ pod_knights.5.desc: "Es la cuarta vez este mes que uno de tus campeones te pide más dinero. Ni siquiera sabes si se trata de armaduras, armas o caballos. O tal vez [knight.GetSheHe] ni siquiera se molestó en ocultar su absoluta codicia esta vez.\nObviamente, tienes derecho a detenerlo ahora mismo, pero ¿quizás estás valorando la destreza marcial más que el oro?" #NT!
+ pod_knights.5.a: "Echa a este bastardo codicioso de mi corte." #NT!
+ pod_knights.5.b: "Tendrás tu maldito caballo, o armadura, lo que sea." #NT!
+ pod_knights.6.t: "El campeón paranoico" #NT!
+ pod_knights.6.desc: "Uno de tus campeones está acusando... bueno, a casi todo el mundo de conspirar contra tu legítimo gobierno. Ya sean mortales, cortesanos, vasallos o transeúntes al azar. Estás bastante seguro de que esto es una ligera simplificación excesiva de la situación, pero... tal vez [knight.GetSheHe] tenga razón.\nTus asesores te están diciendo que expulses a esta mala influencia de tu corte, pero... ¡¿quizás ellos también estén en esta conspiración global?!" #NT!
+ pod_knights.6.a: "Aunque tienen razón..." #NT!
+ pod_knights.6.b: "¡Traidores por todas partes!" #NT!
+ pod_knights.7.t: "El campeón cínico" #NT!
+ pod_knights.7.desc: "Uno de tus campeones, siempre el abogado del diablo, no deja de insistir en la corte y en ti mismo sobre la hipocresía de los Caminos y la inevitable victoria de la Bestia sobre todos los [cainites|E] al final. Algunos de tus cortesanos te han pedido que elimines a este cínico personaje de tu entorno antes de que sus discursos empiecen a erosionar la fuerza de voluntad de todos tus seguidores." #NT!
+ pod_knights.7.a: "La salvación del alma no tiene precio." #NT!
+ pod_knights.7.b: "...pero puede esperar un poco más" #NT!
+ pod_knights.8.t: "El campeón vengativo" #NT!
+ pod_knights.8.desc: "Un campeón ha venido a ti para pedirte venganza por un supuesto desaire que [knight.GetSheHe] sufrió en un pueblo cercano. Sabes que este personaje es muy apasionado en este tipo de asuntos y que esto podría llegar muy lejos, muy lejos. Pero también sabes que [knight.GetSheHe] no se tomará con agrado que digas que no a esta petición..." #NT!
+ pod_knights.8.a: "Ocúpate de esto tú mismo" #NT!
+ pod_knights.8.b: "¡Yo ayudaré, pero no quemaremos todo el lugar!... No del todo al menos." #NT!
+  
+ pod_knights.100.t: "Desleal $knight_culture_player_plural_no_tooltip$" #NT!
+ pod_knights.100.desc: "$knight_culture_player_plural$ solo están dispuestos a luchar por un líder en el que realmente creen. Después de todo, están arriesgando sus vidas.\n\nÚltimamente, ha habido rumores en la corte de que algunos de sus campeones están considerando irse y buscar fortuna en otro lado." #NT!
+ pod_knights.100.tt: "Estos $knight_culture_player_plural$ abandonarán tu cancha por falta de [loyalty_with_icon|E] si su opinión sigue estando por debajo de [GetPlayer.MakeScope.ScriptValue('POD_loyalty_opinion')|0V] el próximo año:" #NT!
+ pod_knights.100.a: "Sobre." #NT!
+ pod_knights.100.message: "$knight_culture_player$ se va por falta de [loyalty_with_icon|E]" #NT!

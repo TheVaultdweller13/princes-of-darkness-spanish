@@ -1,0 +1,610 @@
+﻿l_spanish:
+  
+  # Necromancer # 
+  
+ POD_bind_interaction: "Atar espectro" #NT!
+ POD_bind_interaction_desc: "Ata un espectro con magia oscura y voluntad pura. Es poco probable que el espectro disfrute de estar atado y probablemente se resentirá mucho contigo por ello. Los intentos repetidos pueden fortalecer la unión." #NT!
+ POD_bind_interaction_limit: "¡El tamaño del espectro de enlace tiene un límite! (1 por [learning_i]#V 8#! [learning|E] más cualquier bonificación de otras fuentes)" #NT!
+  
+ POD_convert_to_wraith_interaction: "Asesinato ritual" #NT!
+ POD_convert_to_wraith_interaction_desc: "Mancha el alma de esta persona y luego mátala con antiguas técnicas ocultas que garantizarán que regrese como un espectro a tu corte." #NT!
+ convert_to_wraith_desc_general: "Crea un espectro" #NT!
+  
+ POD_manipulate_bound_wraith_interaction: "Manipular el espectro atado" #NT!
+ POD_manipulate_bound_wraith_interaction_desc: "Manipula a tus espectros atados." #NT!
+ recipient_secondary_POD_manipulate_bound_wraith_interaction: "Fantasma" #NT!
+ command_wraith_interaction.recall: "Recordar" #NT!
+ command_wraith_interaction.release: "Desatar" #NT!
+ POD_command_wraith_interaction.movecourt: "[secondary_actor.GetTitledFirstName] se moverá a la cancha [recipient.GetTitledFirstNamePossessive]." #NT!
+ POD_command_wraith_possess_desc: "Envía tu Espectro a [possess|E] tu objetivo." #NT!
+ POD_command_wraith_spy_desc: "Envía a tu fantasma para revelar un secreto que la víctima te está ocultando." #NT!
+ POD_command_wraith_haunt_desc: "Envía a tu Espectro para acosar a una víctima, debilitándola de una de varias maneras." #NT!
+ POD_not_in_possession: "¿#bold no es #! y no posee algún carácter?" #NT!
+  
+ POD_command_wraith_recall_interaction: "Recordar" #NT!
+ POD_command_wraith_recall_interaction_desc: "[recipient.GetTitledFirstName] se moverá a tu cancha." #NT!
+  
+ POD_marked_for_return_interaction: "Marcar para devolver" #NT!
+ POD_marked_for_return_interaction_desc: "Dale a [recipient.GetFirstName] una marca que dure 10 años, esta marca hará que [recipient.GetHerHim] sea convocado a tu corte como [GetTrait('wraith').GetName( GetNullCharacter )] cuando [recipient.GetSheHe] muera." #NT!
+ marked_wraith_has_arrive: "El espectro marcado ha llegado" #NT!
+  
+ POD_reshape_the_lost_soul_interaction: "Remodelar el alma perdida" #NT!
+ POD_reshape_the_lost_soul_interaction_desc: "Alterar las pasiones de [recipient.GetFirstName]." #NT!
+ POD_reshape_the_lost_soul_interaction_increase: "Aumentar" #NT!
+ POD_reshape_the_lost_soul_interaction_decrease: "Disminuir" #NT!
+  
+ POD_calm_local_spirit_interaction: "Espíritu local tranquilo" #NT!
+ POD_calm_local_spirit_interaction_desc: "Hable con un espíritu de su ubicación y trate de obtener una opinión positiva de ellos." #NT!
+  
+ POD_soulforging_character_interaction: "Forja de almas" #NT!
+ POD_soulforging_character_interaction_desc: "Convirtiendo [recipient.GetFirstName] en un artefacto." #NT!
+ POD_soulforging_character_interaction_white_jade: "Jade blanco" #NT!
+ POD_soulforging_armor_tooltip: "Los resultados de la calidad de la armadura se basan en [martial|E] y [prowess|E] de [recipient.GetFirstName]" #NT!
+ POD_soulforging_weapon_tooltip: "Los resultados de la calidad del arma se basan en [martial|E] y [prowess|E] de [recipient.GetFirstName]" #NT!
+ POD_soulforging_smith_tooltip: "Los resultados de calidad de los shiny se basan en [stewardship|E], [diplomacy|E] y [prowess|E] de [recipient.GetFirstName]" #NT!
+ POD_soulforging_book_tooltip: "Los resultados de la calidad del libro se basan en [learning|E] de [recipient.GetFirstName]" #NT!
+ POD_soulforging_weaver_tooltip: "Los resultados de la calidad de los muebles se basan en [diplomacy|E] de [recipient.GetFirstName]" #NT!
+ POD_soulforging_artisan_tooltip: "Los resultados de la calidad de las baratijas se basan en [stewardship|E] de [recipient.GetFirstName]" #NT!
+ POD_soulforging_mount_tooltip: "Los resultados de la calidad de la montura se basan en [prowess|E], [diplomacy|E] y [learning|E] de [recipient.GetFirstName]" #NT!
+ soulforging_soft_goods: "Tú o tu [GetCourtPositionType('artificer_journeymen_court_position').GetName()] debéis saber [GetTrait('arcanos_moliate').GetName( ROOT.Char )]." #NT!
+  
+ POD_send_to_skinland_character_interaction: "Llamado a Skinlands" #NT!
+ POD_send_to_skinland_character_interaction_desc: "Llama al [recipient.GetFirstName] al [skinlands|E] para que puedas enviar pedidos al [recipient.GetHerHim]." #NT!
+ POD_send_to_shadowland_character_interaction: "Enviar a Shadowlands" #NT!
+ POD_send_to_shadowland_character_interaction_desc: "Envía [recipient.GetFirstName] al [underworld|E] para que puedas dejar de pagar anualmente fuerza de voluntad para mantener a [recipient.GetHerHim] en el mundo mortal." #NT!
+ POD_send_to_dark_kingdom_character_interaction: "Enviar al Reino Oscuro" #NT!
+ POD_send_to_dark_kingdom_character_interaction_desc: "Envía [recipient.GetFirstName] a cualquier [dark_kingdom|E] para que [recipient.GetFirstName] pueda aprender un nuevo [Arcanoi|E] (con el riesgo de convertirse en un [GetTrait('spectre').GetName( GetNullCharacter )])." #NT!
+ POD_send_to_dark_kingdom_character_interaction.random.tt: "Como no tienes suficiente conocimiento de [dark_kingdom|E] para saber dónde enviar, [recipient.GetFirstName] tendrá una gran posibilidad de perderse y convertirse en [GetTrait('spectre').GetName( GetNullCharacter )]." #NT!
+ POD_send_to_yomi_wan_character_interaction: "Enviar a Yomi" #NT!
+ POD_send_to_yomi_wan_character_interaction_desc: "Envía [recipient.GetFirstName] a [yomi_wan|E] para que [recipient.GetFirstName] pueda regresar como [GetTrait('kueijin').GetName( GetPlayer )]." #NT!
+ POD_send_to_labyrinth_character_interaction: "Enviar al laberinto" #NT!
+ POD_send_to_labyrinth_character_interaction_desc: "Envía [recipient.GetFirstName] a [labyrinth|E] para que [recipient.GetFirstName] pueda regresar como [GetModifier('doomslayer_modifier').GetNameWithTooltip]." #NT!
+  
+ POD_banish_wraith_interaction: "Desterrar espectro" #NT!
+ POD_banish_wraith_interaction_desc: "Destierra [recipient.GetFirstName] al [dark_kingdom|E]." #NT!
+  
+ POD_offer_seeds_of_pomegranate_interaction: "Oferta Semillas de Granada" #NT!
+ POD_offer_seeds_of_pomegranate_interaction_desc: "Convierte [recipient.GetFirstName] en [GetTrait('risen').GetName( GetPlayer )]." #NT!
+  
+  # Arcanoi # 
+  
+ POD_possess_interaction: "Poseer" #NT!
+ POD_possess_interaction_desc: "Posee a este personaje, gana control sobre [recipient.GetHerHis] acciones y les otorga parte de tu poder. Los usos posteriores profundizan el nivel de control y fortalecen los poderes que le otorgas al objetivo." #NT!
+ POD_command_wraith_possess_interaction: "Poseer #weak (Comando Espectro)#!" #NT!
+ POD_command_wraith_possess_interaction_desc: "Ordena a uno de tus espectros atados que posea a este personaje, lo que le otorgará control sobre [recipient.GetHerHis] acciones y le otorgará parte del poder del espectro. Los usos posteriores profundizarán el nivel de control y fortalecerán los poderes que el espectro le otorga al objetivo." #NT!
+ actor_secondary_POD_command_wraith_possess_interaction: "Fantasma" #NT!
+  
+ POD_depossess_interaction: "Poner fin a la posesión" #NT!
+ POD_depossess_interaction_desc: "Abandonar este cuerpo en pos de otro, o de la mera independencia." #NT!
+ POD_command_wraith_depossess_interaction: "Fin de la posesión #weak (Comando Espectro)#!" #NT!
+ POD_command_wraith_depossess_interaction_desc: "Ordena a los espectros poseedores que abandonen este cuerpo en busca de otro, o mera independencia." #NT!
+ actor_secondary_POD_command_wraith_depossess_interaction: "Fantasma" #NT!
+  
+ POD_haunt_interaction: "Guarida" #NT!
+ POD_haunt_interaction_desc: "Atormenta a este personaje con tus poderes fantasmales, convirtiendo la vida (o la no vida) de [recipient.GetHerHis] en un infierno." #NT!
+ POD_command_wraith_haunt_interaction: "Haunt #weak (Comando Espectro)#!" #NT!
+ POD_command_wraith_haunt_interaction_desc: "Ordena a uno de tus espectros atados que persiga a este personaje con sus poderes fantasmales, convirtiendo la vida (o no vida) de [recipient.GetHerHis] en un infierno." #NT!
+ actor_secondary_POD_command_wraith_haunt_interaction: "Fantasma" #NT!
+  
+ POD_spy_interaction: "Espiar" #NT!
+ POD_spy_interaction_desc: "Usa tu invisibilidad e insustancialidad para encontrar los secretos de tu víctima." #NT!
+ POD_command_wraith_spy_interaction: "Espía #weak (Comando Espectro)#!" #NT!
+ POD_command_wraith_spy_interaction_desc: "Ordena a uno de tus espectros atados que use su invisibilidad e insustancialidad para encontrar los secretos de tu víctima." #NT!
+ actor_secondary_POD_command_wraith_spy_interaction: "Fantasma" #NT!
+  
+ POD_control_creature_interaction: "Controlar criatura" #NT!
+ POD_control_creature_interaction_desc: "Encuentra un animal y toma el control de él." #NT!
+ POD_command_wraith_control_creature_interaction: "Controlar criatura #weak (Comando Espectro)#!" #NT!
+ POD_command_wraith_control_creature_interaction_desc: "Ordena a uno de tus espectros atados que encuentre un animal y tome control de él." #NT!
+ actor_secondary_POD_command_wraith_control_creature_interaction: "Fantasma" #NT!
+ POD_control_creature_interaction_options_heading: "¿Qué animal debo controlar?" #NT!
+ POD_control_creature_interaction_horse: "Caballo" #NT!
+ POD_control_creature_interaction_cat: "Gato" #NT!
+ POD_control_creature_interaction_dog: "Perro" #NT!
+ POD_control_creature_interaction_wolf: "Lobo" #NT!
+ POD_control_creature_interaction_bear: "Oso" #NT!
+ POD_control_creature_interaction_lion: "León" #NT!
+ POD_control_creature_interaction_tiger: "Tigre" #NT!
+ POD_control_creature_interaction_rat: "Rata" #NT!
+ POD_control_creature_interaction_cockroach: "Cucaracha" #NT!
+  
+ POD_wraith_shapeshift_interaction: "Cambio de forma" #NT!
+ POD_wraith_shapeshift_interaction_desc: "Usa tu poder para cambiar de forma." #NT!
+  
+ POD_create_conduit_interaction: "Crear conducto" #NT!
+ POD_create_conduit_interaction_desc: "Convierte a un animal en un Conducto para el Resucitado." #NT!
+ POD_create_conduit_interaction_options_heading: "¿A qué animal debo convertir?" #NT!
+ cat_conduit_modifier: "Conducto para gatos" #NT!
+ cat_conduit_modifier_desc: "El proceso de usarlos como conducto crea algunas criaturas de aspecto inquietante." #NT!
+ dog_conduit_modifier: "Conducto para perros" #NT!
+ dog_conduit_modifier_desc: "El proceso de usarlos como conducto crea algunas criaturas de aspecto inquietante." #NT!
+ horse_conduit_modifier: "Conducto para caballos" #NT!
+ horse_conduit_modifier_desc: "El proceso de usarlos como conducto crea algunas criaturas de aspecto inquietante." #NT!
+ wolf_conduit_modifier: "Conducto de lobo" #NT!
+ wolf_conduit_modifier_desc: "El proceso de usarlos como conducto crea algunas criaturas de aspecto inquietante." #NT!
+ bear_conduit_modifier: "Conducto de oso" #NT!
+ bear_conduit_modifier_desc: "El proceso de usarlos como conducto crea algunas criaturas de aspecto inquietante." #NT!
+ lion_conduit_modifier: "Conducto del león" #NT!
+ lion_conduit_modifier_desc: "El proceso de usarlos como conducto crea algunas criaturas de aspecto inquietante." #NT!
+ tiger_conduit_modifier: "Conducto del tigre" #NT!
+ tiger_conduit_modifier_desc: "El proceso de usarlos como conducto crea algunas criaturas de aspecto inquietante." #NT!
+ rat_conduit_modifier: "Conducto para ratas" #NT!
+ rat_conduit_modifier_desc: "El proceso de usarlos como conducto crea algunas criaturas de aspecto inquietante." #NT!
+ cockroach_conduit_modifier: "Conducto para cucarachas" #NT!
+ cockroach_conduit_modifier_desc: "El proceso de usarlos como conducto crea algunas criaturas de aspecto inquietante." #NT!
+  
+ POD_pathos_heal: "El patetismo cura" #NT!
+ POD_pathos_heal_action: "El patetismo cura" #NT!
+ POD_pathos_heal_interaction: "El patetismo cura" #NT!
+ POD_pathos_heal_interaction_desc: "Usa el poder de Pathos para curar [recipient.GetFirstNamePossessive] heridas." #NT!
+ POD_pathos_heal_interaction_options_heading: "¿Qué debo invocar para que Pathos sane?" #NT!
+ POD_command_wraith_pathos_heal_interaction: "Curación de Pathos #weak (Comando Espectro)#!" #NT!
+ POD_command_wraith_pathos_heal_interaction_desc: "Ordena a uno de tus espectros atados que use el poder de Pathos para curar [recipient.GetFirstNamePossessive] heridas." #NT!
+ actor_secondary_POD_command_wraith_pathos_heal_interaction: "Fantasma" #NT!
+  
+ POD_set_fetter_character_interaction: "Asignar [Fetters|E] #weak (Persona)#!" #NT!
+ POD_set_fetter_artifact_interaction: "Asignar [Fetters|E] #weak (Objeto)#!" #NT!
+ POD_set_fetter_title_interaction: "Asignar [Fetters|E] #weak (Lugar)#!" #NT!
+ POD_set_fetter_conduit_interaction: "Asignar [Fetters|E] #weak (Conducto)#!" #NT!
+ POD_set_fetter_interaction_desc: "Tienes [actor.MakeScope.ScriptValue('unset_fetter_point')|0] puntos para asignar a tu [Fetters|E], con calificaciones que van del uno al cinco." #NT!
+ POD_set_fetter_interaction_options_heading: "¿Qué calificación le doy a este [Fetter|E]?" #NT!
+ POD_set_fetter_character_interaction_tooltip: "Este [Fetter|E] será destruido cuando el personaje objetivo muera." #NT!
+ POD_set_fetter_artifact_interaction_tooltip: "Este [Fetter|E] se degradará cuando el artefacto pase a la mano de otra persona y se destruirá cuando el artefacto sea destruido." #NT!
+ POD_set_fetter_title_interaction_tooltip: "Este [Fetter|E] será destruido cuando el título pase a manos de otra persona." #NT!
+ POD_set_fetter_conduit_interaction_tooltip: "Este [Fetter|E] será destruido cuando pierdas tu cuerpo." #NT!
+ fetter_neglected_notification: "[Fetter|E] Descuidado" #NT!
+ fetter_destroyed_notification: "[Fetter|E] Destruido" #NT!
+ fetter_destroyed_tooltip: "Tu [Fetter|E] ha sido destruido" #NT!
+ end_of_a_fetter_notification: "Alerta Temprana: Cerca del Fin" #NT!
+ end_of_a_fetter_tooltip: "Tu [Fetter|E] estará muerto dentro de un año." #NT!
+ is_fetter: "Ya es [Fetter|E]" #NT!
+  
+ POD_resolve_fetter_character_interaction: "Resolviendo [Fetters|E] #weak (Persona)#!" #NT!
+ POD_resolve_fetter_artifact_interaction: "Resolviendo [Fetters|E] #weak (Objeto)#!" #NT!
+ POD_resolve_fetter_title_interaction: "Resolviendo [Fetters|E] #weak (Lugar)#!" #NT!
+ POD_resolve_fetter_conduit_interaction: "Resolviendo [Fetters|E] #weak (Conducto)#!" #NT!
+ POD_resolve_fetter_interaction_desc: "Aunque los detalles exactos de este proceso varían ampliamente, en última instancia, la resolución proviene de poder dejar atrás el [Fetter|E] sin arrepentimiento." #NT!
+ POD_resolve_fetter_interaction_tooltip: "La calificación de este [Fetter|E] disminuye en uno." #NT!
+  
+ POD_learn_arcanos_interaction: "Solicitar Mentoría" #NT!
+ POD_learn_arcanos_interaction_desc: "Puedes pedirle a un amigo, amante o alma gemela que te enseñe un [Arcanos|E] que aún no conozcas." #NT!
+ POD_learn_arcanos_interaction_accept: "Si tu mentor tiene algo que enseñarte, tendrás la opción de [Arcanos|E] para aprender." #NT!
+ POD_mentoring_disciplines.0002.t: "Mentoría" #NT!
+ POD_mentoring_disciplines.0002.desc: "Si su posible mentor sabe que [Arcanos|E] [Select_CString( actor.IsLocalPlayer, 'you', 'the bound wraith' )] no, puede pedirle que comparta sus conocimientos con [Select_CString( actor.IsLocalPlayer, 'you', 'the bound wraith' )]." #NT!
+ POD_mentoring_disciplines.0002.option.a: "No esta vez" #NT!
+ POD_learn_arcanos_custom: "Si tu amigo no tiene [Arcanos|E] que [Select_CString( actor.IsLocalPlayer, 'you', 'the bound wraith' )] pueda aprender, no puedes hacer nada ahora mismo" #NT!
+ POD_ask_learn_arcanos_interaction: "Pide Mentoría #weak (Espectro Atado)#!" #NT!
+ POD_ask_learn_arcanos_interaction_desc: "Puedes pedirle a un amigo, amante o alma gemela que te enseñe un [Arcanos|E] a uno de tus espectros atados que aún no conozca." #NT!
+ POD_ask_learn_arcanos_interaction_accept: "Si el mentor tiene algo que enseñarle a uno de tus espectros atados, tendrás la opción de [Arcanos|E] para aprender." #NT!
+ actor_secondary_POD_ask_learn_arcanos_interaction: "Fantasma" #NT!
+  
+ POD_manipulate_fetter_interaction: "Manipular [Fetter|E]" #NT!
+ POD_manipulate_fetter_interaction_desc: "Manipular [recipient.GetFirstNamePossessive] [Fetters|E]" #NT!
+ create_temporary_fetter_option: "Crear un [Fetter|E] temporal" #NT!
+ strip_fetter_option: "Desnudarse un [Fetter|E]" #NT!
+  
+ POD_walk_the_web_interaction: "Pasea por la red" #NT!
+ POD_walk_the_web_interaction_desc: "Viaja rápidamente a un [Fetter|E]." #NT!
+  
+ POD_remove_caul_interaction: "quitar caul" #NT!
+ POD_remove_caul_interaction_desc: "Encuentra un Reaper para eliminar [recipient.GetFirstNamePossessive] Caul" #NT!
+  
+ POD_inspire_interaction: "Inspirar" #NT!
+ POD_inspire_no_dlc_interaction: "Inspirar" #NT!
+ POD_inspire_interaction_desc: "Dale una inspiración a [recipient.GetFirstName]." #NT!
+ POD_command_wraith_inspire_interaction: "Inspirar #weak (Comando Espectro)#!" #NT!
+ POD_command_wraith_inspire_interaction_desc: "Ordena a uno de tus espectros atados que le dé una inspiración a [recipient.GetFirstName]." #NT!
+ actor_secondary_POD_inspire_interaction: "Fantasma" #NT!
+  
+ POD_drain_pathos_interaction: "Drenar energía" #NT!
+ POD_drain_pathos_interaction_desc: "Drena energía de [recipient.GetFirstName] como Pathos." #NT!
+ POD_command_wraith_drain_pathos_interaction: "Drenaje de energía #weak (Comando Espectro)#!" #NT!
+ POD_command_wraith_drain_pathos_interaction_desc: "Ordena a uno de tus espectros atados que drene energía de [recipient.GetFirstName] como Pathos." #NT!
+ actor_secondary_POD_drain_pathos_interaction: "Fantasma" #NT!
+  
+ POD_stop_dreaming_interaction: "Deja de soñar" #NT!
+ POD_stop_dreaming_interaction_desc: "Despierta [recipient.GetFirstName]." #NT!
+ POD_stop_awaking_interaction: "Deja de despertar" #NT!
+ POD_stop_awaking_interaction_desc: "Evita que [recipient.GetFirstName] se despierte." #NT!
+  
+ POD_change_mood_interaction: "Cambiar el estado de ánimo" #NT!
+ POD_convert_to_barghest_interaction: "Crear Bloodhound" #NT!
+ POD_convert_to_barghest_interaction_desc: "Convierte [recipient.GetFirstName] en [GetTrait('barghest').GetName( GetPlayer )]." #NT!
+ POD_control_barghest_interaction: "Controlar el sabueso" #NT!
+ POD_control_barghest_interaction_desc: "Objetivo de control [GetTrait('barghest').GetName( GetPlayer )]." #NT!
+  
+ POD_create_rumor_interaction: "Crear rumor" #NT!
+ POD_create_rumor_interaction_desc: "Al crear una historia o una canción, puedes inventar una afirmación escandalosa y hacerla cierta. O al menos, cierta para los demás." #NT!
+ POD_create_rumor_interaction_success: "Éxito" #NT!
+ POD_create_rumor_interaction_success_tooltip: "Prepararás un falso [secret|E] en el objetivo y te asegurarás de que sólo suficientes personas escuchen el rumor para respaldarlo, pero no suficientes para revelar el secreto." #NT!
+ POD_create_rumor_interaction_success_toast: "¡Triunfo!" #NT!
+ POD_create_rumor_interaction_success_fail: "Falla" #NT!
+ POD_create_rumor_interaction_success_fail_toast: "¡Falla!" #NT!
+ POD_create_rumor_interaction_success_fail_tooltip: "Serás descubierto y despreciado." #NT!
+ POD_command_wraith_create_rumor_interaction: "Crear rumor #weak (Comando Espectro)#!" #NT!
+ POD_command_wraith_create_rumor_interaction_desc: "Ordena a uno de tus espectros atados que invente una historia o una canción, invente una afirmación escandalosa y que la haga cierta. O al menos, cierta para los demás." #NT!
+ actor_secondary_POD_command_wraith_create_rumor_interaction: "Fantasma" #NT!
+  
+ POD_enthrall_interaction: "Cautivar" #NT!
+  
+ POD_upgrade_relation_interaction: "Relación de actualización" #NT!
+ POD_upgrade_relation_interaction_desc: "Dale a [recipient.GetFirstName] una emoción abrumadora para intensificar la relación con [recipient.GetHerHis]" #NT!
+ recipient_secondary_POD_upgrade_relation_interaction: "Objetivo de la relación" #NT!
+ POD_command_wraith_upgrade_relation_interaction: "Relación de actualización #weak (Command Wraith) #!" #NT!
+ POD_command_wraith_upgrade_relation_interaction_desc: "Ordena a uno de tus espectros atados que le dé a [recipient.GetFirstName] una emoción abrumadora para intensificar la relación [recipient.GetHerHis]" #NT!
+ actor_secondary_POD_command_wraith_upgrade_relation_interaction: "Fantasma" #NT!
+ recipient_secondary_POD_command_wraith_upgrade_relation_interaction: "Objetivo de la relación" #NT!
+  
+ POD_create_foul_food_interaction: "Crea comida asquerosa" #NT!
+ POD_create_foul_food_interaction_desc: "Crea una comida de aspecto realista (pero de sabor desagradable)." #NT!
+ POD_gift_foolfood_interaction: "Regalo de comida asquerosa" #NT!
+ POD_gift_foolfood_interaction_desc: "Regalale una comida asquerosa a [recipient.GetFirstName]." #NT!
+ POD_foul_food: "Comida asquerosa" #NT!
+ POD_foul_food_desc: "¡Se ve delicioso!" #NT!
+ POD_command_wraith_gift_foolfood_interaction: "Regalo Comida asquerosa #weak (Comando Espectro)#!" #NT!
+ POD_command_wraith_gift_foolfood_interaction_desc: "Ordena a uno de tus espectros atados que cree una comida y un regalo de aspecto realista (pero de sabor desagradable) para [recipient.GetFirstName]." #NT!
+ actor_secondary_POD_command_wraith_gift_foolfood_interaction: "Fantasma" #NT!
+  
+ POD_eschers_stair_interaction: "La escalera de Escher" #NT!
+ POD_eschers_stair_interaction_desc: "Conecta dos puertas u otros portales a través de [labyrinth|E], lo que te permitirá teletransportarte a la ubicación [recipient.GetFirstNamePossessive]." #NT!
+ fall_into_labyrinth_tooltip: "Estás perdido en el [labyrinth|E]." #NT!
+ POD_command_wraith_eschers_stair_interaction: "Escalera de Escher #weak (Comando Espectro)#!" #NT!
+ POD_command_wraith_eschers_stair_interaction_desc: "Ordena a uno de tus espectros atados que conecte dos puertas u otros portales a través de [labyrinth|E], lo que te permitirá teletransportarte a la ubicación [recipient.GetFirstNamePossessive]." #NT!
+ actor_secondary_POD_command_wraith_eschers_stair_interaction: "Fantasma" #NT!
+  
+ POD_strengthen_artifact_interaction: "Fortalecer artefacto" #NT!
+ POD_strengthen_artifact_interaction_desc: "Fortalece una reliquia o un objeto inanimado con Pathos." #NT!
+ POD_command_wraith_strengthen_artifact_interaction: "Fortalecer artefacto #weak (Comando Espectro)#!" #NT!
+ POD_command_wraith_strengthen_artifact_interaction_desc: "Ordena a uno de tus espectros atados que fortalezca una reliquia o un objeto inanimado con Pathos." #NT!
+ actor_secondary_POD_command_wraith_strengthen_artifact_interaction: "Fantasma" #NT!
+ POD_impress_artifact_interaction: "Artefacto Impresionante" #NT!
+ POD_impress_artifact_interaction_desc: "Coloca los recuerdos y la personalidad de [recipient.GetFirstName] en un objeto no vivo." #NT!
+ POD_command_wraith_impress_artifact_interaction: "Impresionar artefacto #weak (Comando Espectro)#!" #NT!
+ POD_command_wraith_impress_artifact_interaction_desc: "Ordena a uno de tus espectros atados que coloque los recuerdos y la personalidad de [recipient.GetFirstName] en un objeto no vivo." #NT!
+ actor_secondary_POD_command_wraith_impress_artifact_interaction: "Fantasma" #NT!
+ POD_reweave_artifact_interaction: "Artefacto de retejido" #NT!
+ POD_reweave_artifact_interaction_desc: "Reteje el artefacto a partir de piezas del artefacto en el inventario." #NT!
+  
+ POD_corpus_heal_interaction: "[Corpus|E] Curar" #NT!
+ POD_corpus_heal_interaction_desc: "Usa el poder de [Corpus|E] para curar [recipient.GetFirstNamePossessive] heridas." #NT!
+ POD_corpus_heal_interaction_options_heading: "¿A qué debo llamar a [Corpus|E] para sanar?" #NT!
+ POD_command_wraith_corpus_heal_interaction: "[Corpus|E] Curación #weak (Comando Espectro)#!" #NT!
+ POD_command_wraith_corpus_heal_interaction_desc: "Ordena a uno de tus espectros atados que use el poder de [Corpus|E] para curar [recipient.GetFirstNamePossessive] heridas." #NT!
+ actor_secondary_POD_command_wraith_corpus_heal_interaction: "Fantasma" #NT!
+ POD_transfer_pathos_in_interaction: "Transferir patetismo en" #NT!
+ POD_transfer_pathos_in_interaction_desc: "Transfiere [recipient.GetFirstNamePossessive] Pathos a ti mismo." #NT!
+ POD_transfer_corpus_in_interaction: "Transferencia [Corpus|E] En" #NT!
+ POD_transfer_corpus_in_interaction_desc: "Transfiere [recipient.GetFirstNamePossessive] [Corpus|E] a ti mismo." #NT!
+ POD_transfer_arcanos_in_interaction: "Transferencia de Arcanos en" #NT!
+ POD_transfer_arcanos_in_interaction_desc: "Transfiere [recipient.GetFirstNamePossessive] Arcanos a ti mismo." #NT!
+ POD_transfer_pathos_out_interaction: "Transferencia de Pathos hacia fuera" #NT!
+ POD_transfer_pathos_out_interaction_desc: "Vende [recipient.GetFirstName] tu Pathos." #NT!
+ POD_transfer_corpus_out_interaction: "Transferir [Corpus|E] Fuera" #NT!
+ POD_transfer_corpus_out_interaction_desc: "Vende [recipient.GetFirstName] tu [Corpus|E]." #NT!
+ POD_transfer_arcanos_out_interaction: "Transferir Arcanos Fuera" #NT!
+ POD_transfer_arcanos_out_interaction_desc: "Vende [recipient.GetFirstName] tus Arcanos." #NT!
+ POD_transfer_pathos_facilitate_interaction: "Facilitar el patetismo" #NT!
+ POD_transfer_pathos_facilitate_interaction_desc: "Transfiere el Pathos del prisionero a [recipient.GetFirstName]." #NT!
+ actor_secondary_POD_transfer_pathos_facilitate_interaction: "Prisionero" #NT!
+ POD_transfer_corpus_facilitate_interaction: "Facilitar [Corpus|E]" #NT!
+ POD_transfer_corpus_facilitate_interaction_desc: "Transfiere el [Corpus|E] del prisionero a [recipient.GetFirstName]." #NT!
+ actor_secondary_POD_transfer_corpus_facilitate_interaction: "Prisionero" #NT!
+ POD_transfer_arcanos_facilitate_interaction: "Facilitar Arcanos" #NT!
+ POD_transfer_arcanos_facilitate_interaction_desc: "Transfiere los Arcanos del prisionero a [recipient.GetFirstName]." #NT!
+ actor_secondary_POD_transfer_arcanos_facilitate_interaction: "Prisionero" #NT!
+  
+ POD_create_pathos_vessel_interaction: "Crear recipiente Pathos" #NT!
+ POD_create_pathos_vessel_interaction_desc: "Crea un artefacto para almacenar Pathos" #NT!
+ POD_store_pathos_interaction: "Tienda Pathos" #NT!
+ POD_store_pathos_interaction_desc: "Guarda Pathos en tu recipiente Pathos." #NT!
+ POD_store_pathos_interaction_options_heading: "¿Cuánto quieres almacenar?" #NT!
+ POD_extract_pathos_interaction: "Extraer Pathos almacenado" #NT!
+ POD_extract_pathos_interaction_desc: "Extrae el Pathos almacenado del recipiente de Pathos para reabastecerte." #NT!
+ POD_extract_pathos_interaction_options_heading: "¿Cuánto quieres extraer?" #NT!
+ POD_extract_pathos: "Gasta $VALUE|0V$ Pathos almacenado" #NT!
+ POD_extracted_pathos: "Gastado $VALUE|0V$ almacenado Pathos" #NT!
+ POD_you_extract_pathos: "Gastas $VALUE|0V$ Pathos almacenado" #NT!
+ POD_you_extracted_pathos: "Gastaste $VALUE|0V$ Pathos almacenado" #NT!
+ POD_they_extract_pathos: "[CHARACTER.GetShortUIName] gasta $VALUE|0V$ almacenado Pathos" #NT!
+ POD_they_extracted_pathos: "[CHARACTER.GetShortUIName] gastados $VALUE|0V$ almacenados Pathos" #NT!
+ POD_store_pathos: "Tienda $VALUE|0V$ ganó Pathos" #NT!
+ POD_stored_pathos: "Almacenado $VALUE|0V$ ganó Pathos" #NT!
+ POD_you_store_pathos: "Almacenas $VALUE|0V$ Pathos ganado" #NT!
+ POD_you_stored_pathos: "Almacenaste $VALUE|0V$ ganaste Pathos" #NT!
+ POD_they_store_pathos: "[CHARACTER.GetShortUIName] tienda $VALUE|0V$ ganó Pathos" #NT!
+ POD_they_stored_pathos: "[CHARACTER.GetShortUIName] almacenado $VALUE|0V$ ganado Pathos" #NT!
+ pathos_vessel_damaged: "Vaso Pathos dañado" #NT!
+  
+ POD_create_angst_vessel_interaction: "Crear recipiente de angustia" #NT!
+ POD_create_angst_vessel_interaction_desc: "Crea un artefacto para almacenar angustia" #NT!
+ POD_store_angst_interaction: "Angst de la tienda" #NT!
+ POD_store_angst_interaction_desc: "Almacena Angst en tu recipiente de Angst." #NT!
+ POD_store_angst_interaction_options_heading: "¿Cuánto quieres almacenar?" #NT!
+ POD_extract_angst_interaction: "Extraer la angustia almacenada" #NT!
+ POD_extract_angst_interaction_desc: "Extrae la Angst almacenada del recipiente de Angst para reabastecerte." #NT!
+ POD_extract_angst_interaction_options_heading: "¿Cuánto quieres extraer?" #NT!
+ POD_extract_angst: "Gasta $VALUE|0V$ Angst almacenado" #NT!
+ POD_extracted_angst: "Gastado $VALUE|0V$ almacenado Angst" #NT!
+ POD_you_extract_angst: "Gastas $VALUE|0V$ Angst almacenado" #NT!
+ POD_you_extracted_angst: "Gastaste $VALUE|0V$ Angst almacenado" #NT!
+ POD_they_extract_angst: "[CHARACTER.GetShortUIName] gasta $VALUE|0V$ almacenado Angst" #NT!
+ POD_they_extracted_angst: "[CHARACTER.GetShortUIName] gastado $VALUE|0V$ almacenado Angustia" #NT!
+ POD_store_angst: "La tienda $VALUE|0V$ ganó Angst" #NT!
+ POD_stored_angst: "Almacenado $VALUE|0V$ ganó Angst" #NT!
+ POD_you_store_angst: "Almacenas $VALUE|0V$ ganado Angst" #NT!
+ POD_you_stored_angst: "Almacenaste $VALUE|0V$ Angst ganado" #NT!
+ POD_they_store_angst: "[CHARACTER.GetShortUIName] tienda $VALUE|0V$ ganó Angst" #NT!
+ POD_they_stored_angst: "[CHARACTER.GetShortUIName] almacenado $VALUE|0V$ ganado Angustia" #NT!
+ angst_vessel_damaged: "Buque de angustia dañado" #NT!
+  
+ POD_shadow_wrack_interaction: "Resto de sombras" #NT!
+ POD_shadow_wrack_interaction_desc: "Despojar a [recipient.GetFirstName] de Angustia y llevar a [recipient.GetHerHis] Psique al frente de la [recipient.GetHerHis] personalidad." #NT!
+ POD_command_wraith_shadow_wrack_interaction: "Sombra Wrack #weak (Comando Espectro)#!" #NT!
+ POD_command_wraith_shadow_wrack_interaction_desc: "Ordena a uno de tus espectros atados que despoje a [recipient.GetFirstName] de Angst y ponga a [recipient.GetHerHis] Psyche al frente de [recipient.GetHerHis] personalidad." #NT!
+ actor_secondary_POD_command_wraith_shadow_wrack_interaction: "Fantasma" #NT!
+  
+ POD_purchase_arcanos_interaction: "Comprar Arcanoi" #NT!
+ POD_purchase_arcanos_interaction_desc: "Compra arcanoi [perk|E] puntos desde [recipient.GetFirstName]." #NT!
+  
+ POD_weaken_dark_passion_interaction: "Debilitar la pasión oscura" #NT!
+ POD_weaken_dark_passion_interaction_desc: "Elimina una de tus pasiones oscuras [decisions|E]." #NT!
+ POD_weaken_dark_passion_interaction_options_heading: "¿Qué pasión oscura debo eliminar?" #NT!
+ POD_weaken_dark_passion_interaction_tooltip: "Los [decision|E] seleccionados se eliminarán hasta la próxima actualización de Pasión Oscura." #NT!
+  
+ POD_trimming_thorns_interaction: "Recortar espinas" #NT!
+ POD_trimming_thorns_interaction_desc: "Eliminar el modificador negativo que proviene de [thorn_lifestyle|E]." #NT!
+ POD_trimming_thorns_interaction_options_heading: "¿Cual debo eliminar?" #NT!
+  
+ POD_transfer_angst_interaction: "Angustia de transferencia" #NT!
+ POD_transfer_angst_interaction_desc: "Transfiere los rasgos de afrontamiento a [stress|E], o viceversa." #NT!
+ POD_transfer_angst_interaction_options_heading: "¿Qué rasgos de afrontamiento debo agregar o eliminar?" #NT!
+  
+  # Lament # 
+  
+ HAS_FIVE_LAMENTS_COURTIERS: "Tienes #V 5#! [courtier|E] con [trait|E] [GetTrait('lament').GetName( GetPlayer )] #weak ([TARGET_CHARACTER.MakeScope.ScriptValue('medium_courtiers_count')|0])#!" #NT!
+ HAS_TWENTY_MEDIUM_COURTIERS: "Tienes #V 20#! [courtier|E] con [trait|E] [GetTrait('lament').GetName( GetPlayer )] #weak ([CHARACTER.MakeScope.ScriptValue('medium_courtiers_count')|0])#!" #NT!
+  
+ POD_unleash_maelstrom_interaction: "Desata el Maelstrom" #NT!
+ POD_unleash_maelstrom_interaction_desc: "Desatando un torbellino de viento que causará estragos en una zona." #NT!
+ POD_unleash_maelstrom_interaction.tt: "Desatarás un torbellino de viento sobre el reino [recipient.GetFirstNamePossessive]" #NT!
+ POD_unleash_maelstrom_interaction.duel.success: "Abriste lágrimas con éxito en Stormwall." #NT!
+ POD_unleash_maelstrom_interaction.duel.tt.attacker_wins: "[recipient.GetFirstNamePossessive] reino se sumerge en un torbellino de viento que causa estragos dondequiera que pasa." #NT!
+ POD_unleash_maelstrom_interaction.duel.failure: "No logras abrir lágrimas en el Muro de la Tormenta" #NT!
+ POD_unleash_maelstrom_interaction.duel.tt.attacker_lost: "Fallaste" #NT!
+ POD_unleash_maelstrom_interaction_actor_toast: "Has liberado con éxito un viento vorágine sobre el reino [recipient.GetFirstNamePossessive]" #NT!
+ POD_unleash_maelstrom_interaction_recipient_toast: "Un torbellino de viento se desató en tu capital por [actor.GetFirstName]" #NT!
+ POD_unleash_maelstrom_interaction_failed_toast: "No podrías liberar un viento vorágine sobre el reino [recipient.GetFirstNamePossessive]" #NT!
+ maelstrom_winds_modifier: "Dañado por el viento Maelstrom" #NT!
+ maelstrom_winds_modifier_desc: "Esta área está dañada por un viento maelstrom liberado desde el [tempest|E]." #NT!
+  
+ POD_haunted_construction_interaction: "Construcción embrujada" #NT!
+ POD_haunted_construction_interaction_desc: "Poseer edificios y manipularlos para autoconstruirlos." #NT!
+ POD_haunted_construction_interaction.tt: "Tu provincia del reino construirá edificios automáticamente." #NT!
+ POD_haunted_construction_interaction.duel.success: "Usted poseyó con éxito los edificios." #NT!
+ POD_haunted_construction_interaction.duel.tt.attacker_wins: "Cada provincia de tu reino generará automáticamente un edificio." #NT!
+ POD_haunted_construction_interaction.duel.failure: "No logras poseer los edificios" #NT!
+ POD_haunted_construction_interaction.duel.tt.attacker_lost: "Fallaste" #NT!
+ POD_haunted_construction_interaction_toast: "Has logrado que las provincias de tu reino construyan edificios automáticamente." #NT!
+ POD_haunted_construction_interaction_failed_toast: "No podrías poseer los edificios de tu reino." #NT!
+  
+ POD_distant_attack_interaction: "Ataque a distancia" #NT!
+ POD_distant_attack_interaction_desc: "Combina los poderes de tus cortesanos para permitir que sus zarcillos plateados afecten a [recipient.GetFirstNamePossessive] caballeros." #NT!
+ POD_distant_attack_interaction.tt: "Lanzarás un ataque a [recipient.GetFirstNamePossessive] caballeros" #NT!
+ POD_distant_attack_interaction.duel.success: "Sorprendiste con éxito a [recipient.GetFirstNamePossessive] caballeros en forma fantasma." #NT!
+ POD_distant_attack_interaction.duel.tt.attacker_wins: "[recipient.GetFirstNamePossessive] caballeros han sido sorprendidos por ti y tus cortesanos." #NT!
+ POD_distant_attack_interaction.duel.failure: "No logras sorprender a [recipient.GetFirstNamePossessive] caballeros" #NT!
+ POD_distant_attack_interaction.duel.tt.attacker_lost: "Fallaste" #NT!
+ POD_distant_attack_interaction_actor_toast: "Has sorprendido con éxito a [recipient.GetFirstNamePossessive] caballeros." #NT!
+ POD_distant_attack_interaction_recipient_toast: "Tus caballeros quedaron sorprendidos por [actor.GetFirstName]" #NT!
+ POD_distant_attack_interaction_failed_toast: "No podrías sorprender a [recipient.GetFirstNamePossessive] caballeros" #NT!
+  
+ POD_give_random_disease_interaction: "Dar enfermedad" #NT!
+ POD_give_random_disease_interaction_desc: "Dale a [recipient.GetFirstName] una enfermedad aleatoria." #NT!
+  
+ POD_create_clone_interaction: "Crear clon" #NT!
+ POD_create_clone_interaction_desc: "Crea un clon mortal de [recipient.GetFirstName]." #NT!
+ POD_create_clone_interaction.duel.success: "Has creado con éxito un clon mortal de [recipient.GetFirstName]." #NT!
+ POD_create_clone_interaction.duel.failure: "No logras crear un clon mortal de [recipient.GetFirstName]." #NT!
+  
+ POD_mob_control_interaction: "Control de turbas" #NT!
+ POD_mob_control_interaction_desc: "Controlar las mentes de los líderes de la población." #NT!
+ POD_mob_control_interaction.tt: "La provincia de tu reino permanecerá bajo control absoluto." #NT!
+ POD_mob_control_interaction.duel.success: "Controlas con éxito las mentes de la población." #NT!
+ POD_mob_control_interaction.duel.failure: "No logras controlar la población" #NT!
+ POD_mob_control_interaction_toast: "Has controlado con éxito las provincias de tu reino." #NT!
+ POD_mob_control_interaction_failed_toast: "No pudiste controlar las provincias de tu reino" #NT!
+  
+ POD_storm_teleport_interaction: "Tormenta destructora" #NT!
+ POD_storm_teleport_interaction_desc: "Teletransportarse a la ubicación [recipient.GetFirstNamePossessive], o a su próximo destino cuando [traveling|E]." #NT!
+  
+ POD_consume_artifact_interaction: "Consumir" #NT!
+ POD_consume_artifact_interaction_desc: "Borrar completamente un artefacto." #NT!
+  
+ POD_soul_beacon_interaction: "Faro del alma" #NT!
+ POD_soul_beacon_interaction_desc: "Conviértete en un faro fantasmal que atrae espíritus a su ubicación." #NT!
+ POD_soul_beacon_interaction_options_heading: "¿Qué tipo de alma debería dibujar?" #NT!
+ POD_soul_beacon_interaction_diplomacy: "Algunos con alta diplomacia #Weak (> 25)#!" #NT!
+ POD_soul_beacon_interaction_martial: "Algunos con alto nivel marcial #Weak (> 25)#!" #NT!
+ POD_soul_beacon_interaction_stewardship: "Algunos con alta administración #Weak (> 25)#!" #NT!
+ POD_soul_beacon_interaction_intrigue: "Algunos con mucha intriga #Weak (> 25)#!" #NT!
+ POD_soul_beacon_interaction_learning: "Algunos con alto nivel de aprendizaje #Weak (> 25)#!" #NT!
+ POD_soul_beacon_interaction_artifact: "Algunos con artefactos famosos o ilustres" #NT!
+ POD_soul_beacon_interaction_gold: "Algunos con mucho oro #Weak (> 1500)#!" #NT!
+ POD_soul_beacon_interaction.duel.success: "Te conviertes con éxito en un faro del alma." #NT!
+ POD_soul_beacon_interaction.duel.failure: "No logras convertirte en un faro del alma." #NT!
+ soul_beacon_modifier: "Faro del alma" #NT!
+ soul_beacon_modifier_desc: "Trae automáticamente un alma recientemente fallecida que cumpla con el requisito a tu corte." #NT!
+  
+ POD_dream_transport_interaction: "Caminante de sueños" #NT!
+ POD_dream_transport_interaction_desc: "Teletransportarse a la ubicación [recipient.GetFirstNamePossessive]." #NT!
+  
+ POD_salvation_interaction: "Salvación" #NT!
+ POD_salvation_interaction_desc: "Infunde Vitalidad a [recipient.GetFirstName] y reduce Rencor a [recipient.GetHerHis] para convertirlo en un Huérfano-Moledor." #NT!
+  
+ POD_horror_shapeshift_interaction: "Cambio de forma" #NT!
+ POD_horror_shapeshift_interaction_desc: "Usa tu poder para cambiar de forma." #NT!
+  
+ POD_nightmare_trap_interaction: "Trampa de pesadilla" #NT!
+ POD_nightmare_trap_interaction_desc: "Trampa [recipient.GetFirstName] en una elaborada ilusión que refleja la peor pesadilla de [recipient.GetHerHis]." #NT!
+ POD_nightmare_trap_interaction.duel.success: "Has atrapado con éxito a [recipient.GetFirstName] en una pesadilla." #NT!
+ POD_nightmare_trap_interaction.duel.failure: "No logras utilizar el poder." #NT!
+ POD_nightmare_trap_interaction_actor_toast: "Has atrapado con éxito a [recipient.GetFirstName] en una pesadilla." #NT!
+ POD_nightmare_trap_interaction_recipient_toast: "Quedaste atrapado en una pesadilla por [actor.GetFirstName]" #NT!
+ POD_nightmare_trap_interaction_failed_toast: "No pudiste atrapar a [recipient.GetFirstName] en una pesadilla" #NT!
+ terrible_madness_modifier: "Terrible locura" #NT!
+  
+ POD_absorption_interaction: "Absorción" #NT!
+ POD_immortal_absorption_interaction: "Absorción" #NT!
+ POD_absorption_interaction_desc: "Absorbe a tu mascota y aprovecha sus habilidades." #NT!
+ POD_absorption_interaction_options_heading: "¿Qué mascota debo absorber?" #NT!
+  
+ POD_zombu_summon_interaction: "Invocación de zombi" #NT!
+ POD_zombu_summon_interaction_desc: "Levanta cadáveres como zombis sin mente para hacer la oferta [recipient.GetFirstName]." #NT!
+ POD_zombu_summon_interaction.duel.success: "Has dominado con éxito el poder de invocar zombis." #NT!
+ POD_zombu_summon_interaction.duel.failure: "No logras utilizar el poder." #NT!
+ zombu: "Zombú" #NT!
+ zombu_summon_modifier: "Invocación Zombu" #NT!
+ zombu_summon_modifier_desc: "Aparece automáticamente [GetMaA('shambler').GetName] [men_at_arms|E] después de ocupar una provincia como comandante." #NT!
+  
+ POD_train_horror_interaction: "Entrenamiento de terror" #NT!
+ POD_train_horror_interaction_desc: "Enséñale a [recipient.GetFirstName] uno de tus poderes de terror." #NT!
+ POD_determine_horror_interaction: "Determinar los talentos de proyección del alma" #NT!
+ POD_determine_horror_interaction_desc: "Prueba [recipient.GetFirstNamePossessive] potencial para talentos de proyección del alma." #NT!
+ POD_determine_horror_interaction_sucess: "Parece que [recipient.GetFirstName] tiene talentos para proyectar el alma." #NT!
+ POD_determine_horror_interaction_fail: "Parece que [recipient.GetFirstName] no tiene ningún talento de proyección de alma, por lo que [recipient.GetFirstName] no podrá probarlo nuevamente." #NT!
+ POD_test_horror_interaction: "Solicite una prueba de proyección del alma" #NT!
+ POD_test_horror_interaction_desc: "Puedes pedirle a un amigo, amante o alma gemela que pruebe tu potencial para los talentos de proyección del alma." #NT!
+ POD_test_horror_interaction_sucess: "Parece que [actor.GetFirstName] tiene talento para proyectar el alma." #NT!
+ POD_test_horror_interaction_fail: "Parece que [actor.GetFirstName] no tiene ningún talento de proyección de alma, por lo que [actor.GetFirstName] no podrá probarlo nuevamente." #NT!
+  
+  # Thorn # 
+  
+ POD_instigate_catharsis_interaction: "Instigar la catarsis" #NT!
+ POD_instigate_catharsis_interaction_desc: "Deja que tu Sombra se convierta en la personalidad dominante." #NT!
+ catharsis_modifier: "Catarsis" #NT!
+ catharsis_modifier_desc: "La Sombra toma la delantera y controla físicamente a un espectro.\n#weak Obtén acceso a las Espinas de la Sombra.#!" #NT!
+ POD_resist_catharsis_interaction: "Resistir la catarsis" #NT!
+ POD_resist_catharsis_interaction_desc: "Deja que tu Psique recupere el control." #NT!
+  
+ POD_manifest_tainted_relic_interaction: "Reliquia Manifiesta Manchada" #NT!
+ POD_manifest_tainted_relic_interaction_desc: "Manifiesta tu reliquia personal como Sombra." #NT!
+ artifact_tainted_relic_name: "Reliquia contaminada" #NT!
+ artifact_tainted_relic_description: "Una reliquia contaminada siempre se manifestará cuando lo haga la Sombra, incluso si se ha “perdido” o “destruido”." #NT!
+  
+ POD_pact_of_doom_interaction: "Pacto de perdición" #NT!
+ POD_pact_of_doom_interaction_desc: "Aprende arcanoi de tu Sombra." #NT!
+  
+ POD_create_shadow_familiar_interaction: "Crear familiar de sombra" #NT!
+ POD_create_shadow_familiar_interaction_desc: "Convierte a un animal en un familiar de las sombras." #NT!
+ POD_create_shadow_familiar_interaction_options_heading: "¿A qué animal debo recurrir?" #NT!
+  
+ POD_siphon_angst_interaction: "Angustia del sifón" #NT!
+ POD_siphon_angst_interaction_desc: "Extrae la angustia de [recipient.GetFirstName] para tus propios fines." #NT!
+  
+ POD_separate_shadow_interaction: "Materializa tu sombra" #NT!
+ POD_separate_shadow_interaction_desc: "Materializa tu Sombra como una entidad separada de [recipient.GetFirstName]." #NT!
+ POD_separate_shadow_interaction.tt: "Tu Sombra se separará de tu Psique." #NT!
+  
+ POD_shadow_offer_interaction: "Oferta de sombra" #NT!
+ POD_shadow_offer_interaction_desc: "Recibe la oferta adicional de la Sombra." #NT!
+ POD_shadow_offer_interaction_options_heading: "¿Qué tipo de ayuda debo aceptar?" #NT!
+ shadow_offer_diplomacy_modifier: "Diplomacia en la sombra" #NT!
+ shadow_offer_martial_modifier: "Marcial de la sombra" #NT!
+ shadow_offer_stewardship_modifier: "Mayordomía en la sombra" #NT!
+ shadow_offer_intrigue_modifier: "Intriga de las sombras" #NT!
+ shadow_offer_learning_modifier: "Aprendizaje en la sombra" #NT!
+ shadow_offer_prowess_modifier: "Destreza en las sombras" #NT!
+  
+  # Forbidden Arcanoi # 
+  
+ POD_render_relic_interaction: "Reliquia de renderizado" #NT!
+ POD_render_relic_interaction_desc: "Destruye un artefacto para obtener Pathos." #NT!
+ POD_command_wraith_render_relic_interaction: "Reliquia de renderizado #weak (Comando Espectro)#!" #NT!
+ POD_command_wraith_render_relic_interaction_desc: "Ordena a uno de tus espectros atados que destruya un artefacto para obtener Pathos." #NT!
+ actor_secondary_POD_command_wraith_render_relic_interaction: "Fantasma" #NT!
+  
+ POD_automaton_interaction: "Automatización" #NT!
+ POD_automaton_interaction_desc: "Obtén estadísticas temporales de tu artefacto equipado." #NT!
+  
+ POD_gleaming_interaction: "Artefacto del deseo" #NT!
+ POD_gleaming_interaction_desc: "Hacer que el artefacto objetivo sea reclamado por el gobernante vecino." #NT!
+ POD_command_wraith_gleaming_interaction: "Artefacto del deseo #weak (Comando Espectro)#!" #NT!
+ POD_command_wraith_gleaming_interaction_desc: "Ordena a uno de tus espectros atados que haga que el gobernante vecino reclame el artefacto objetivo." #NT!
+ actor_secondary_POD_gleaming_interaction: "Fantasma" #NT!
+  
+ POD_ignite_interaction: "Tierra de obsesión" #NT!
+ POD_ignite_interaction_desc: "Hacer que el título objetivo sea reclamado por un gobernante vecino y lanzar una guerra por él." #NT!
+ POD_command_wraith_ignite_interaction: "Tierra de obsesión #weak (Comando Wraith)#!" #NT!
+ POD_command_wraith_ignite_interaction_desc: "Ordena a uno de tus espectros atados que haga que el título objetivo sea reclamado por el gobernante vecino y lance una guerra por él." #NT!
+ actor_secondary_POD_command_wraith_ignite_interaction: "Fantasma" #NT!
+  
+ POD_erasure_interaction: "Borradura" #NT!
+ POD_erasure_interaction_desc: "Borra un recuerdo aleatorio de [recipient.GetFirstName] para reducir el estrés." #NT!
+  
+ POD_set_relation_interaction: "Crear relación" #NT!
+ POD_set_relation_interaction_desc: "Cambiar la memoria de [recipient.GetFirstName] para crear una relación con [recipient.GetHerHim]." #NT!
+ POD_command_wraith_set_relation_interaction: "Crear relación #weak (Comando Wraith)#!" #NT!
+ POD_command_wraith_set_relation_interaction_desc: "Ordena a uno de tus espectros atados que cambie la memoria de [recipient.GetFirstName] para crear una relación con [recipient.GetHerHim]." #NT!
+ actor_secondary_POD_command_wraith_set_relation_interaction: "Fantasma" #NT!
+  
+ POD_erase_from_memory_interaction: "Borrar de la memoria" #NT!
+ POD_erase_from_memory_interaction_desc: "Borrar a [recipient.GetFirstName] de la memoria colectiva, haciendo que [recipient.GetHerHim] pierda sus relaciones, consortes y prestigio." #NT!
+ POD_erase_from_memory_interaction_sucess: "[recipient.GetFirstName] ha sido borrado de la memoria colectiva." #NT!
+ POD_erase_from_memory_interaction_fail: "No logras utilizar este poder." #NT!
+ POD_command_wraith_erase_from_memory_interaction: "Borrar de la memoria #weak (Comando Wraith)#!" #NT!
+ POD_command_wraith_erase_from_memory_interaction_desc: "Ordena a uno de tus espectros atados que borre a [recipient.GetFirstName] de la memoria colectiva, haciendo que [recipient.GetHerHim] pierda sus relaciones, consortes y prestigio." #NT!
+ actor_secondary_POD_erase_from_memory_interaction: "Fantasma" #NT!
+  
+  ## Jade Arcanoi ## 
+  
+ POD_shackles_perk_interaction: "Encadenar" #NT!
+ POD_shackles_perk_interaction_desc: "Vínculo de alma [recipient.GetFirstName] para obtener gancho." #NT!
+ POD_snare_perk_interaction: "Trampa" #NT!
+ POD_snare_perk_interaction_desc: "Invoca a [recipient.GetFirstName] a tu corte." #NT!
+ POD_net_perk_interaction: "Neto" #NT!
+ POD_net_perk_interaction_desc: "Vincula almas o invoca [recipient.GetFirstNamePossessive] cortesanos o invitados." #NT!
+  
+ POD_reap_the_hungry_ghost_perk_interaction: "Cosechar el fantasma hambriento" #NT!
+ POD_reap_the_hungry_ghost_perk_interaction_desc: "Recoge el [Corpus|E] del formulario [recipient.GetFirstName]." #NT!
+  
+ artifact_true_jade_name: "verdadero jade" #NT!
+ artifact_true_jade_description: "$game_concept_true_jade_desc$" #NT!
+ artifact_white_jade_name: "Jade blanco" #NT!
+ artifact_white_jade_description: "El Jade Blanco es Jade fabricado a partir del plasma de los fantasmas de los Manantiales Amarillos." #NT!
+  
+ POD_rework_artifact_interaction: "Reliquia de reelaboración" #NT!
+ POD_rework_artifact_interaction_desc: "Potencia un artefacto usando Jade Verdadero o Jade Blanco." #NT!
+ POD_empower_jade_interaction: "Reliquia imbuida" #NT!
+ POD_empower_jade_interaction_desc: "Potenciar un artefacto usando Pathos." #NT!
+  
+ POD_gold_to_pathos_interaction: "Convertir el oro en patetismo" #NT!
+ POD_gold_to_pathos_interaction_desc: "Convierte el oro en patetismo." #NT!
+ POD_pathos_to_gold_interaction: "Convierte el patetismo en oro" #NT!
+ POD_pathos_to_gold_interaction_desc: "Convierte el patetismo en oro." #NT!
+ POD_pathos_to_renown_interaction: "Convierte el patetismo en renombre" #NT!
+ POD_pathos_to_renown_interaction_desc: "Convierte el patetismo en renombre." #NT!
+ POD_withdraw_artifact_interaction: "Retirar el jade blanco" #NT!
+ POD_withdraw_artifact_interaction_desc: "Convierte el jade blanco en patetismo." #NT!
+  
+ POD_alter_demeanor_interaction: "Alterar la conducta" #NT!
+ POD_alter_demeanor_interaction_desc: "Invierte la personalidad según la que tenga tu Hun." #NT!
+  
+ POD_convert_arcanoi_perk_interaction: "Convertir punto de beneficio de Arcanoi" #NT!
+ POD_convert_arcanoi_perk_interaction_desc: "Convierte un punto de beneficio arcanoi entre estilos de vida." #NT!
+  
+ POD_control_puppet_interaction: "Marioneta de control" #NT!
+ POD_control_puppet_interaction_desc: "Arroja tu alma lejos para controlar el cuerpo de [recipient.GetTitledFirstNamePossessive]." #NT!
+ POD_control_puppet_interaction_tt: "Ahora jugarás [recipient.GetFirstName], si [recipient.GetFirstName] muere, [actor.GetFirstName] también puede morir dependiendo del motivo de la muerte." #NT!
+ POD_switch_control_puppet_interaction: "Marioneta de control" #NT!
+ POD_switch_control_puppet_interaction_desc: "Cambia tu alma para controlar el cuerpo de [recipient.GetTitledFirstNamePossessive]." #NT!
+ POD_stop_control_puppet_interaction: "Cancelar control de marionetas" #NT!
+ POD_stop_control_puppet_interaction_desc: "Regresa a tu cuerpo original (o vuelve a ser un espíritu libre)." #NT!
+  
+ POD_choose_necromancer_interaction: "Elige un nigromante" #NT!
+ POD_choose_necromancer_interaction_desc: "Quieres que [recipient.GetFirstName] se convierta en tu maestro." #NT!
+ POD_choose_necromancer_interaction.tt: "¿Estás seguro de que quieres ser un espectro atado de [recipient.GetFirstName]?" #NT!
+  
+ POD_create_manifestation_interaction: "Crear manifestación" #NT!
+ POD_create_manifestation_interaction_desc: "Crea un personaje [GetTrait('automaton').GetName( GetPlayer )]." #NT!
+  
+ has_artifact_black_torc_of_carniog: "Tienes el Torc Negro de Carniog [artifact|E]" #NT!

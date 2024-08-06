@@ -1,0 +1,20 @@
+﻿l_spanish:
+  
+ POD_seek_knowledge.2.t: "Conociendo al Mentor" #NT!
+ POD_seek_knowledge.2.desc: "Después de llegar a [ROOT.Var('current_journey').Var('destination').Province.GetCounty.GetTitle.GetNameNoTier], empiezo a hacer averiguaciones sobre el paradero de mi futuro profesor.\n\n" #NT!
+ POD_seek_knowledge.2.desc.local_ruler: "Resulta que no es otro que el gobernante del dominio local, [recipient.GetNameNicknamed]." #NT!
+ POD_seek_knowledge.2.desc.wanderer: "En una posada sórdida, finalmente me encuentro con la persona que estaba buscando: un vagabundo llamado [recipient.GetFirstName]." #NT!
+ POD_seek_knowledge.2.desc.ghoul: "En una taberna abandonada en las afueras de la ciudad, me encuentro con la persona que estaba buscando: un [GetTrait('ghoul').GetName(recipient)] independiente llamado [recipient.GetFirstName]. Parece que [recipient.GetSheHe] se liberó recientemente del vínculo de sangre y ahora está revelando los secretos del antiguo amo de [recipient.GetHerHis] como forma de venganza." #NT!
+ POD_seek_knowledge.2.desc.gargoyle: "En un callejón oculto en las afueras de la ciudad, me encuentro con la persona que estaba buscando: un solitario [GetTrait('gargoyle').GetName(recipient)] llamado [recipient.GetFirstName]." #NT!
+ POD_seek_knowledge.2.desc.fae: "En un parque abandonado en las afueras de la ciudad, me encuentro con la persona que estaba buscando: un misterioso hada llamado [recipient.GetFirstName]." #NT!
+ POD_seek_knowledge.2.desc.mortal: "En una posada sórdida, finalmente conocí a la persona que estaba buscando: un enigmático mortal llamado [recipient.GetFirstName]." #NT!
+ POD_seek_knowledge.2.desc.2: "Intercambiamos algunas palabras amables iniciales, luego la conversación gira en torno a cuestiones más prácticas." #NT!
+ POD_seek_knowledge.2.option.a: "Estoy listo para aprender." #NT!
+ POD_seek_knowledge.2.option.a.tt: "Continuarás aprendiendo esta nueva habilidad." #NT!
+ POD_seek_knowledge.2.option.b: "Estamos listos para aprender." #NT!
+ POD_seek_knowledge.2.option.b.tt: "Como viajan juntos, los demás miembros de $POD_player_coterie$ también aprenderán esta habilidad (si son elegibles)." #NT!
+  
+ POD_seek_knowledge.100.t: "Clase perdida" #NT!
+ POD_seek_knowledge.100.desc: "Después de un largo período de estudio y práctica, mi comprensión finalmente está completa." #NT!
+ POD_seek_knowledge.100.desc.tutor: "No podría haberlo hecho sin mi [GetCourtPositionType('court_tutor_court_position').GetName()], [court_tutor.GetNameNicknamed]." #NT!
+ POD_seek_knowledge.100.option.a: "Mi duro trabajo ha dado sus frutos." #NT!

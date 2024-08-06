@@ -1,0 +1,87 @@
+﻿l_spanish:
+ FAITH_DOCTRINE_CHANGE_WINDOW_TITLE: "Cambiar la doctrina" #NT!
+ FAITH_DOCTRINE_CHANGE_WINDOW_POWERFUL_VASSALS: "Aprobación del electorado" #NT!
+ FAITH_DOCTRINE_CHANGE_WINDOW_POWERFUL_VASSALS_DESC: "Todos los electores deben aprobar para poder cambiar #bold cualquiera#! [doctrine|E]" #NT!
+ FAITH_DOCTRINE_CHANGE_WINDOW_CHANGE: "Cambiar la doctrina" #NT!
+ FAITH_DOCTRINE_CHANGE_WINDOW_CHOOSE_NEW: "Doctrina disponible" #NT!
+ FAITH_DOCTRINE_CHANGE_WINDOW_TAB_MAIN: "Principal" #NT!
+ FAITH_DOCTRINE_CHANGE_WINDOW_TAB_CRIME: "Delito" #NT!
+ FAITH_DOCTRINE_CHANGE_WINDOW_TAB_SPLAT: "Aceptación sobrenatural" #NT!
+ FAITH_DOCTRINE_CHANGE_WINDOW_TAB_CLAN: "Aceptación del clan" #NT!
+ FAITH_DOCTRINE_CHANGE_WINDOW_TAB_TENET: "Principio" #NT!
+ FAITH_DOCTRINE_CHANGE_WINDOW_ENACT_COST: "Costo: [prestige_i] [Faith.MakeScope.ScriptValue('POD_doctrine_change_value')|0]" #NT!
+ FAITH_DOCTRINE_CHANGE_WINDOW_APPROVE: "#weak aprueba#!" #NT!
+ FAITH_DOCTRINE_CHANGE_WINDOW_OPPOSE: "#X se opone#!" #NT!
+ FAITH_DOCTRINE_CHANGE_WINDOW_APPROVE_TT: "#T Aprueba el cambio de doctrina#!\n[Character.GetShortUIName] apoya, o al menos no puede oponerse, a este cambio de [doctrine|E].\n\n[Character.GetSheHe|U] lo aprueba debido a:\n$BULLET_WITH_TAB$Tener un [opinion|E] positivo de ti\n$BULLET_WITH_TAB$Ser [cowed|E] por ti\ n$BULLET_WITH_TAB$Ser [imprisoned|E] (por cualquiera)" #NT!
+ FAITH_DOCTRINE_CHANGE_WINDOW_OPPOSE_TT: "#T Se opone al cambio de doctrina#!\n[Character.GetShortUIName] evitará este cambio de [doctrine|E].\n\nPara aprobar, [Character.GetShortUIName] debe:\n$BULLET_WITH_TAB$Tener una opinión positiva de [opinion|E] de ti\n$BULLET_WITH_TAB$Ser [cowed|E] de ti\n$BULLET_WITH_TAB$Ser [imprisoned|E] (de cualquiera)" #NT!
+ FAITH_DOCTRINE_CHANGE_WINDOW_CURRENT_DOCTRINE: "#V Doctrina actual#!" #NT!
+ FAITH_DOCTRINE_CHANGE_WINDOW_THREE_TENET: "Las creencias deben tener exactamente #V 3#! principios." #NT!
+  
+ CONVENTION_OF_THORNS_WINDOW_TITLE: "Convención de Espinas" #NT!
+ CONVENTION_OF_THORNS_WINDOW_CHANGE: "Aplicar Votar" #NT!
+ CONVENTION_OF_THORNS_WINDOW_TAB_VOTE: "Votos actuales" #NT!
+ CONVENTION_OF_THORNS_WINDOW_TAB_MY_VOTE: "Mi voto" #NT!
+ CONVENTION_OF_THORNS_WINDOW_CHOOSE_NEW: "Principio votado" #NT!
+ HAPPY_THORN_ELECTOR_DESC: "[TARGET_CHARACTER.GetFirstName] está #P contento#! con el voto, lo que hace que [TARGET_CHARACTER.GetHerHim] tenga más probabilidades de unirse a la Camarilla." #NT!
+ UNHAPPY_THORN_ELECTOR_DESC: "[TARGET_CHARACTER.GetFirstName] está #N descontento#! con el voto, lo que hace que [TARGET_CHARACTER.GetHerHim] tenga menos probabilidades de unirse a la Camarilla." #NT!
+ CONVENTION_OF_THORNS_WINDOW_CONFIRM: "Ventana de confirmación" #NT!
+ CONVENTION_OF_THORNS_WINDOW_APPROVE_DESC: "Es menos probable que los electores de la oposición se unan a la Camarilla." #NT!
+ CONVENTION_OF_THORNS_WINDOW_APPROVE: "#P aprueba#!" #NT!
+ CONVENTION_OF_THORNS_WINDOW_OPPOSE: "#X Se opone#!" #NT!
+ CONVENTION_OF_THORNS_WINDOW_APPROVE_TT: "#T Voto de Aprobación de Doctrina#!$line_break$$TOTAL_DOCTRINE_VOTE$$TOTAL_DOCTRINE_VOTE_VALUE$" #NT!
+ CONVENTION_OF_THORNS_WINDOW_OPPOSE_TT: "#T Voto en contra de la doctrina #!$line_break$$TOTAL_DOCTRINE_VOTE$$TOTAL_DOCTRINE_VOTE_VALUE$" #NT!
+ CONVENTION_OF_THORNS_WINDOW_ELECTOR_DESC: "Los electores se opondrán si se aceptan menos de 10 de sus propuestas" #NT!
+  
+ TOTAL_DOCTRINE_VOTE: "[Character.Custom('enlightenment_virtues_vote')][Character.Custom('vampirethemasquerade_vote')][Character.Custom('vampirediablerie_vote')][Character.Custom('vampirefrenzy_vote')][Character.Custom('vampirethinblood_vote')][Character.Custom('vampirebloodoath_vote')][Character.Custom('vampireghouling_vote')][Character.Custom('bloodsorcery_vote')][Character.Custom('infernalism_vote')][Character.Custom('shifter_vote')][Character.Custom('vampirethemasquerade_vote')]0[Character.Custom('vampirethemasquerade_vote')]1[Character.Custom('vampirethemasquerade_vote')]2[Character.Custom('vampirethemasquerade_vote')]3[Character.Custom('vampirethemasquerade_vote')]4" #NT!
+ TOTAL_DOCTRINE_VOTE_VALUE: "$line_break$Votos totales aprobados: [Character.MakeScope.ScriptValue('passed_voted_doctine_value')|0V]" #NT!
+ doctrine_enlightenment_virtues_conscience_and_selfcontrol_vote: "$line_break$Votó [GetFaithDoctrine( 'doctrine_enlightenment_virtues_conscience_and_selfcontrol' ).GetGroup.GetName( Character.GetFaith.Self )]: [GetFaithDoctrine( 'doctrine_enlightenment_virtues_conscience_and_selfcontrol' ).GetBaseName]" #NT!
+ doctrine_enlightenment_virtues_conviction_and_selfcontrol_vote: "$line_break$Votó [GetFaithDoctrine( 'doctrine_enlightenment_virtues_conviction_and_selfcontrol' ).GetGroup.GetName( Character.GetFaith.Self )]: [GetFaithDoctrine( 'doctrine_enlightenment_virtues_conviction_and_selfcontrol' ).GetBaseName]" #NT!
+ doctrine_enlightenment_virtues_conscience_and_instinct_vote: "$line_break$Votó [GetFaithDoctrine( 'doctrine_enlightenment_virtues_conscience_and_instinct' ).GetGroup.GetName( Character.GetFaith.Self )]: [GetFaithDoctrine( 'doctrine_enlightenment_virtues_conscience_and_instinct' ).GetBaseName]" #NT!
+ doctrine_enlightenment_virtues_conviction_and_instinct_vote: "$line_break$Votó [GetFaithDoctrine( 'doctrine_enlightenment_virtues_conviction_and_instinct' ).GetGroup.GetName( Character.GetFaith.Self )]: [GetFaithDoctrine( 'doctrine_enlightenment_virtues_conviction_and_instinct' ).GetBaseName]" #NT!
+ doctrine_vampirethemasquerade_strict_vote: "$line_break$Votó [GetFaithDoctrine( 'doctrine_vampirethemasquerade_strict' ).GetGroup.GetName( Character.GetFaith.Self )]: [GetFaithDoctrine( 'doctrine_vampirethemasquerade_strict' ).GetBaseName]" #NT!
+ doctrine_vampirethemasquerade_lax_vote: "$line_break$Votó [GetFaithDoctrine( 'doctrine_vampirethemasquerade_lax' ).GetGroup.GetName( Character.GetFaith.Self )]: [GetFaithDoctrine( 'doctrine_vampirethemasquerade_lax' ).GetBaseName]" #NT!
+ doctrine_vampirethemasquerade_none_vote: "$line_break$Votó [GetFaithDoctrine( 'doctrine_vampirethemasquerade_none' ).GetGroup.GetName( Character.GetFaith.Self )]: [GetFaithDoctrine( 'doctrine_vampirethemasquerade_none' ).GetBaseName]" #NT!
+ doctrine_vampirethemasquerade_cult_vote: "$line_break$Votó [GetFaithDoctrine( 'doctrine_vampirethemasquerade_cult' ).GetGroup.GetName( Character.GetFaith.Self )]: [GetFaithDoctrine( 'doctrine_vampirethemasquerade_cult' ).GetBaseName]" #NT!
+ doctrine_vampirethemasquerade_family_vote: "$line_break$Votó [GetFaithDoctrine( 'doctrine_vampirethemasquerade_family' ).GetGroup.GetName( Character.GetFaith.Self )]: [GetFaithDoctrine( 'doctrine_vampirethemasquerade_family' ).GetBaseName]" #NT!
+ doctrine_vampirethemasquerade_consent_vote: "$line_break$Votó [GetFaithDoctrine( 'doctrine_vampirethemasquerade_consent' ).GetGroup.GetName( Character.GetFaith.Self )]: [GetFaithDoctrine( 'doctrine_vampirethemasquerade_consent' ).GetBaseName]" #NT!
+ doctrine_vampirediablerie_crime_vote: "$line_break$Votó [GetFaithDoctrine( 'doctrine_vampirediablerie_crime' ).GetGroup.GetName( Character.GetFaith.Self )]: [GetFaithDoctrine( 'doctrine_vampirediablerie_crime' ).GetBaseName]" #NT!
+ doctrine_vampirediablerie_shunned_vote: "$line_break$Votó [GetFaithDoctrine( 'doctrine_vampirediablerie_shunned' ).GetGroup.GetName( Character.GetFaith.Self )]: [GetFaithDoctrine( 'doctrine_vampirediablerie_shunned' ).GetBaseName]" #NT!
+ doctrine_vampirediablerie_accepted_vote: "$line_break$Votó [GetFaithDoctrine( 'doctrine_vampirediablerie_accepted' ).GetGroup.GetName( Character.GetFaith.Self )]: [GetFaithDoctrine( 'doctrine_vampirediablerie_accepted' ).GetBaseName]" #NT!
+ doctrine_vampirefrenzy_crime_vote: "$line_break$Votó [GetFaithDoctrine( 'doctrine_vampirefrenzy_crime' ).GetGroup.GetName( Character.GetFaith.Self )]: [GetFaithDoctrine( 'doctrine_vampirefrenzy_crime' ).GetBaseName]" #NT!
+ doctrine_vampirefrenzy_shunned_vote: "$line_break$Votado [GetFaithDoctrine( 'doctrine_vampirefrenzy_shunned' ).GetGroup.GetName( Character.GetFaith.Self )]: [GetFaithDoctrine( 'doctrine_vampirefrenzy_shunned' ).GetBaseName]" #NT!
+ doctrine_vampirefrenzy_accepted_vote: "$line_break$Votó [GetFaithDoctrine( 'doctrine_vampirefrenzy_accepted' ).GetGroup.GetName( Character.GetFaith.Self )]: [GetFaithDoctrine( 'doctrine_vampirefrenzy_accepted' ).GetBaseName]" #NT!
+ doctrine_vampirethinblood_crime_vote: "$line_break$Votó [GetFaithDoctrine( 'doctrine_vampirethinblood_crime' ).GetGroup.GetName( Character.GetFaith.Self )]: [GetFaithDoctrine( 'doctrine_vampirethinblood_crime' ).GetBaseName]" #NT!
+ doctrine_vampirethinblood_shunned_vote: "$line_break$Votó [GetFaithDoctrine( 'doctrine_vampirethinblood_shunned' ).GetGroup.GetName( Character.GetFaith.Self )]: [GetFaithDoctrine( 'doctrine_vampirethinblood_shunned' ).GetBaseName]" #NT!
+ doctrine_vampirethinblood_accepted_vote: "$line_break$Votó [GetFaithDoctrine( 'doctrine_vampirethinblood_accepted' ).GetGroup.GetName( Character.GetFaith.Self )]: [GetFaithDoctrine( 'doctrine_vampirethinblood_accepted' ).GetBaseName]" #NT!
+ doctrine_vampirebloodoath_crime_vote: "$line_break$Votó [GetFaithDoctrine( 'doctrine_vampirebloodoath_crime' ).GetGroup.GetName( Character.GetFaith.Self )]: [GetFaithDoctrine( 'doctrine_vampirebloodoath_crime' ).GetBaseName]" #NT!
+ doctrine_vampirebloodoath_shunned_vote: "$line_break$Votó [GetFaithDoctrine( 'doctrine_vampirebloodoath_shunned' ).GetGroup.GetName( Character.GetFaith.Self )]: [GetFaithDoctrine( 'doctrine_vampirebloodoath_shunned' ).GetBaseName]" #NT!
+ doctrine_vampirebloodoath_accepted_vote: "$line_break$Votado [GetFaithDoctrine( 'doctrine_vampirebloodoath_accepted' ).GetGroup.GetName( Character.GetFaith.Self )]: [GetFaithDoctrine( 'doctrine_vampirebloodoath_accepted' ).GetBaseName]" #NT!
+ doctrine_vampireghouling_crime_vote: "$line_break$Votó [GetFaithDoctrine( 'doctrine_vampireghouling_crime' ).GetGroup.GetName( Character.GetFaith.Self )]: [GetFaithDoctrine( 'doctrine_vampireghouling_crime' ).GetBaseName]" #NT!
+ doctrine_vampireghouling_shunned_vote: "$line_break$Votó [GetFaithDoctrine( 'doctrine_vampireghouling_shunned' ).GetGroup.GetName( Character.GetFaith.Self )]: [GetFaithDoctrine( 'doctrine_vampireghouling_shunned' ).GetBaseName]" #NT!
+ doctrine_vampireghouling_accepted_vote: "$line_break$Votó [GetFaithDoctrine( 'doctrine_vampireghouling_accepted' ).GetGroup.GetName( Character.GetFaith.Self )]: [GetFaithDoctrine( 'doctrine_vampireghouling_accepted' ).GetBaseName]" #NT!
+ doctrine_vampireghouling_mass_vote: "$line_break$Votó [GetFaithDoctrine( 'doctrine_vampireghouling_mass' ).GetGroup.GetName( Character.GetFaith.Self )]: [GetFaithDoctrine( 'doctrine_vampireghouling_mass' ).GetBaseName]" #NT!
+ doctrine_bloodsorcery_crime_vote: "$line_break$Votó [GetFaithDoctrine( 'doctrine_bloodsorcery_crime' ).GetGroup.GetName( Character.GetFaith.Self )]: [GetFaithDoctrine( 'doctrine_bloodsorcery_crime' ).GetBaseName]" #NT!
+ doctrine_bloodsorcery_shunned_vote: "$line_break$Votado [GetFaithDoctrine( 'doctrine_bloodsorcery_shunned' ).GetGroup.GetName( Character.GetFaith.Self )]: [GetFaithDoctrine( 'doctrine_bloodsorcery_shunned' ).GetBaseName]" #NT!
+ doctrine_bloodsorcery_accepted_vote: "$line_break$Votó [GetFaithDoctrine( 'doctrine_bloodsorcery_accepted' ).GetGroup.GetName( Character.GetFaith.Self )]: [GetFaithDoctrine( 'doctrine_bloodsorcery_accepted' ).GetBaseName]" #NT!
+ doctrine_infernalism_crime_vote: "$line_break$Votó [GetFaithDoctrine( 'doctrine_infernalism_crime' ).GetGroup.GetName( Character.GetFaith.Self )]: [GetFaithDoctrine( 'doctrine_infernalism_crime' ).GetBaseName]" #NT!
+ doctrine_infernalism_shunned_vote: "$line_break$Votó [GetFaithDoctrine( 'doctrine_infernalism_shunned' ).GetGroup.GetName( Character.GetFaith.Self )]: [GetFaithDoctrine( 'doctrine_infernalism_shunned' ).GetBaseName]" #NT!
+ doctrine_infernalism_accepted_vote: "$line_break$Votó [GetFaithDoctrine( 'doctrine_infernalism_accepted' ).GetGroup.GetName( Character.GetFaith.Self )]: [GetFaithDoctrine( 'doctrine_infernalism_accepted' ).GetBaseName]" #NT!
+ doctrine_shifter_crime_vote: "$line_break$Votó [GetFaithDoctrine( 'doctrine_shifter_crime' ).GetGroup.GetName( Character.GetFaith.Self )]: [GetFaithDoctrine( 'doctrine_shifter_crime' ).GetBaseName]" #NT!
+ doctrine_shifter_shunned_vote: "$line_break$Votado [GetFaithDoctrine( 'doctrine_shifter_shunned' ).GetGroup.GetName( Character.GetFaith.Self )]: [GetFaithDoctrine( 'doctrine_shifter_shunned' ).GetBaseName]" #NT!
+ doctrine_shifter_accepted_vote: "$line_break$Votó [GetFaithDoctrine( 'doctrine_shifter_accepted' ).GetGroup.GetName( Character.GetFaith.Self )]: [GetFaithDoctrine( 'doctrine_shifter_accepted' ).GetBaseName]" #NT!
+ doctrine_magicraft_crime_vote: "$line_break$Votó [GetFaithDoctrine( 'doctrine_magicraft_crime' ).GetGroup.GetName( Character.GetFaith.Self )]: [GetFaithDoctrine( 'doctrine_magicraft_crime' ).GetBaseName]" #NT!
+ doctrine_magicraft_shunned_vote: "$line_break$Votó [GetFaithDoctrine( 'doctrine_magicraft_shunned' ).GetGroup.GetName( Character.GetFaith.Self )]: [GetFaithDoctrine( 'doctrine_magicraft_shunned' ).GetBaseName]" #NT!
+ doctrine_magicraft_accepted_vote: "$line_break$Votó [GetFaithDoctrine( 'doctrine_magicraft_accepted' ).GetGroup.GetName( Character.GetFaith.Self )]: [GetFaithDoctrine( 'doctrine_magicraft_accepted' ).GetBaseName]" #NT!
+ doctrine_haunting_crime_vote: "$line_break$Votado [GetFaithDoctrine( 'doctrine_haunting_crime' ).GetGroup.GetName( Character.GetFaith.Self )]: [GetFaithDoctrine( 'doctrine_haunting_crime' ).GetBaseName]" #NT!
+ doctrine_haunting_shunned_vote: "$line_break$Votó [GetFaithDoctrine( 'doctrine_haunting_shunned' ).GetGroup.GetName( Character.GetFaith.Self )]: [GetFaithDoctrine( 'doctrine_haunting_shunned' ).GetBaseName]" #NT!
+ doctrine_haunting_accepted_vote: "$line_break$Votó [GetFaithDoctrine( 'doctrine_haunting_accepted' ).GetGroup.GetName( Character.GetFaith.Self )]: [GetFaithDoctrine( 'doctrine_haunting_accepted' ).GetBaseName]" #NT!
+ doctrine_glamour_crime_vote: "$line_break$Votó [GetFaithDoctrine( 'doctrine_glamour_crime' ).GetGroup.GetName( Character.GetFaith.Self )]: [GetFaithDoctrine( 'doctrine_glamour_crime' ).GetBaseName]" #NT!
+ doctrine_glamour_shunned_vote: "$line_break$Votó [GetFaithDoctrine( 'doctrine_glamour_shunned' ).GetGroup.GetName( Character.GetFaith.Self )]: [GetFaithDoctrine( 'doctrine_glamour_shunned' ).GetBaseName]" #NT!
+ doctrine_glamour_accepted_vote: "$line_break$Votó [GetFaithDoctrine( 'doctrine_glamour_accepted' ).GetGroup.GetName( Character.GetFaith.Self )]: [GetFaithDoctrine( 'doctrine_glamour_accepted' ).GetBaseName]" #NT!
+ doctrine_undying_crime_vote: "$line_break$Votó [GetFaithDoctrine( 'doctrine_undying_crime' ).GetGroup.GetName( Character.GetFaith.Self )]: [GetFaithDoctrine( 'doctrine_undying_crime' ).GetBaseName]" #NT!
+ doctrine_undying_shunned_vote: "$line_break$Votó [GetFaithDoctrine( 'doctrine_undying_shunned' ).GetGroup.GetName( Character.GetFaith.Self )]: [GetFaithDoctrine( 'doctrine_undying_shunned' ).GetBaseName]" #NT!
+ doctrine_undying_accepted_vote: "$line_break$Votó [GetFaithDoctrine( 'doctrine_undying_accepted' ).GetGroup.GetName( Character.GetFaith.Self )]: [GetFaithDoctrine( 'doctrine_undying_accepted' ).GetBaseName]" #NT!
+ doctrine_kueijin_crime_vote: "$line_break$Votado [GetFaithDoctrine( 'doctrine_kueijin_crime' ).GetGroup.GetName( Character.GetFaith.Self )]: [GetFaithDoctrine( 'doctrine_kueijin_crime' ).GetBaseName]" #NT!
+ doctrine_kueijin_shunned_vote: "$line_break$Votó [GetFaithDoctrine( 'doctrine_kueijin_shunned' ).GetGroup.GetName( Character.GetFaith.Self )]: [GetFaithDoctrine( 'doctrine_kueijin_shunned' ).GetBaseName]" #NT!
+ doctrine_kueijin_accepted_vote: "$line_break$Votó [GetFaithDoctrine( 'doctrine_kueijin_accepted' ).GetGroup.GetName( Character.GetFaith.Self )]: [GetFaithDoctrine( 'doctrine_kueijin_accepted' ).GetBaseName]" #NT!
+  

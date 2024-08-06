@@ -1,0 +1,290 @@
+﻿l_spanish:
+ GLADE_FREEHOLD_BUILDING_ENABLED: "La provincia es de Selva [terrain|E], Bosque [terrain|E] o Taiga [terrain|E]" #NT!
+ EYRIE_FREEHOLD_BUILDING_ENABLED: "La provincia es de Montañas [terrain|E] o Montañas desérticas [terrain|E]" #NT!
+ GROTTO_FREEHOLD_BUILDING_ENABLED: "La provincia tiene un claro [building|E] o alguna mina [special_building|E]" #NT!
+  
+ building_type_glade_freehold_01: "Claro" #NT!
+ building_type_glade_freehold_01_desc: "#F Los claros son valles silvestres, generalmente ubicados en lo profundo de un bosque. Los cambiantes prefieren los claros para muchos de sus festivales. A diferencia de la mayoría de los feudos, los claros son fuentes naturales de glamour.#!" #NT!
+ building_glade_freehold_01: "Pequeño claro" #NT!
+ building_glade_freehold_01_desc: "Los claros son valles boscosos, generalmente ubicados en lo profundo de un bosque. Los cambiantes los prefieren para muchos de sus festivales." #NT!
+ building_glade_freehold_02: "Claro medio" #NT!
+ building_glade_freehold_02_desc: "Los claros son valles silvestres, generalmente ubicados en lo profundo de un bosque. Los cambiantes prefieren los claros para muchos de sus festivales." #NT!
+ building_glade_freehold_03: "Gran claro" #NT!
+ building_glade_freehold_03_desc: "Los claros son valles silvestres, generalmente ubicados en lo profundo de un bosque. Los cambiantes prefieren los claros para muchos de sus festivales." #NT!
+ glade_freehold_effect_desc: "Si se construye en capital, regenera Glamour adicional cada mes (33 % de probabilidad por nivel)." #NT!
+  
+ building_type_hearth_freehold_01: "Hogar" #NT!
+ building_type_hearth_freehold_01_desc: "#F Un feudo de Hearth es una taberna, bar o cafetería de hadas, generalmente con una entrada por un callejón. Todos los cambiantes son bienvenidos siempre que tengan algo para intercambiar.#!" #NT!
+ building_hearth_freehold_01: "Pequeño hogar" #NT!
+ building_hearth_freehold_01_desc: "Un hogar libre es una taberna, bar o cafetería de hadas, generalmente con una entrada por un callejón trasero." #NT!
+ building_hearth_freehold_02: "Hogar mediano" #NT!
+ building_hearth_freehold_02_desc: "Un hogar libre es una taberna, bar o cafetería de hadas, generalmente con una entrada por un callejón trasero." #NT!
+ building_hearth_freehold_03: "Hogar grande" #NT!
+ building_hearth_freehold_03_desc: "Un hogar libre es una taberna, bar o cafetería de hadas, generalmente con una entrada por un callejón trasero." #NT!
+  
+ building_type_lodge_freehold_01: "Presentar" #NT!
+ building_type_lodge_freehold_01_desc: "#F Las cabañas, casas y mansiones, consideradas colectivamente como logias, pueden ser propiedades libres. Las logias suelen ser las fortalezas de los nobles, que pasan gran parte de su tiempo en ellas.#!" #NT!
+ building_lodge_freehold_01: "Pequeño Lodge" #NT!
+ building_lodge_freehold_01_desc: "Las cabañas, casas y mansiones, consideradas colectivamente como logias, pueden ser propiedades libres." #NT!
+ building_lodge_freehold_02: "Logia mediana" #NT!
+ building_lodge_freehold_02_desc: "Las cabañas, casas y mansiones, consideradas colectivamente como logias, pueden ser propiedades libres." #NT!
+ building_lodge_freehold_03: "Gran Logia" #NT!
+ building_lodge_freehold_03_desc: "Las cabañas, casas y mansiones, consideradas colectivamente como logias, pueden ser propiedades libres." #NT!
+  
+ building_type_manor_freehold_01: "Señorío" #NT!
+ building_type_manor_freehold_01_desc: "#F Una mansión es un pequeño valle de hadas que rodea una cabaña u otro edificio, y generalmente está ubicada en el desierto.#!" #NT!
+ building_manor_freehold_01: "Pequeña mansión" #NT!
+ building_manor_freehold_01_desc: "Una mansión es un pequeño valle de hadas que rodea una cabaña u otro edificio y generalmente está ubicada en el desierto." #NT!
+ building_manor_freehold_02: "Mansión Mediana" #NT!
+ building_manor_freehold_02_desc: "Una mansión es un pequeño valle de hadas que rodea una cabaña u otro edificio y generalmente está ubicada en el desierto." #NT!
+ building_manor_freehold_03: "Gran mansión" #NT!
+ building_manor_freehold_03_desc: "Una mansión es una pequeña cañada de hadas que rodea una cabaña u otro edificio, y generalmente está ubicada en el desierto." #NT!
+  
+ building_type_eyrie_freehold_01: "Nidos de águilas" #NT!
+ building_type_eyrie_freehold_01_desc: "#F Los nidos son dominios de alta montaña y suelen ser refugios de marginados.#!" #NT!
+ building_eyrie_freehold_01: "Pequeños nidos de águilas" #NT!
+ building_eyrie_freehold_01_desc: "Los nidos son feudos de alta montaña y suelen ser refugio de marginados." #NT!
+ building_eyrie_freehold_02: "Nidos medianos" #NT!
+ building_eyrie_freehold_02_desc: "Los nidos de águilas son territorios de alta montaña y suelen ser el refugio de los marginados." #NT!
+ building_eyrie_freehold_03: "Grandes nidos de águilas" #NT!
+ building_eyrie_freehold_03_desc: "Los nidos son feudos de alta montaña y suelen ser refugio de marginados." #NT!
+  
+ building_type_grotto_freehold_01: "Gruta" #NT!
+ building_type_grotto_freehold_01_desc: "#F Las grutas suelen ser claros forestales invadidos por la vegetación o minas abandonadas. [GetTrait('sluagh').GetName(GetNullCharacter)] y #TOOLTIP:GAME_TRAIT,nocker,[GetNullCharacter] #L Los nockers#!#! suelen reunirse en esos feudos apartados, aunque otros también los utilizan.#!" #NT!
+ building_grotto_freehold_01: "Pequeña Gruta" #NT!
+ building_grotto_freehold_01_desc: "Las grutas son a menudo claros forestales cubiertos de vegetación o minas abandonadas." #NT!
+ building_grotto_freehold_02: "Gruta Mediana" #NT!
+ building_grotto_freehold_02_desc: "Las grutas son a menudo claros forestales cubiertos de vegetación o minas abandonadas." #NT!
+ building_grotto_freehold_03: "Gruta Grande" #NT!
+ building_grotto_freehold_03_desc: "Las grutas son a menudo claros forestales cubiertos de vegetación o minas abandonadas." #NT!
+  
+ building_type_faerie_ring_freehold_01: "Anillo de hadas" #NT!
+ building_type_faerie_ring_freehold_01_desc: "#F Un anillo de hadas es un valle muy pequeño que se encuentra en lo profundo del bosque. Estos territorios libres que se encuentran en la naturaleza se vuelven cada vez más raros a medida que los lugares salvajes del mundo disminuyen.#!" #NT!
+ building_faerie_ring_freehold_01: "Pequeño anillo de hadas" #NT!
+ building_faerie_ring_freehold_01_desc: "Un Anillo de Hadas es un valle muy pequeño que se encuentra en lo profundo del bosque." #NT!
+ building_faerie_ring_freehold_02: "Anillo de hadas mediano" #NT!
+ building_faerie_ring_freehold_02_desc: "Un anillo de hadas es una cañada muy pequeña que se encuentra en lo profundo del bosque." #NT!
+ building_faerie_ring_freehold_03: "Anillo de hadas grande" #NT!
+ building_faerie_ring_freehold_03_desc: "Un anillo de hadas es una cañada muy pequeña que se encuentra en lo profundo del bosque." #NT!
+  
+ building_type_isle_freehold_01: "Isla" #NT!
+ building_type_isle_freehold_01_desc: "#F Estas islas encantadas rara vez aparecen en los mapas o son mancilladas por los pies de los mortales. Las islas son refugios privados y se encuentran entre los territorios libres más preciados.#!" #NT!
+ building_isle_freehold_01: "Isla pequeña" #NT!
+ building_isle_freehold_01_desc: "Estas islas encantadas rara vez aparecen en los mapas o son mancilladas por pies mortales." #NT!
+ building_isle_freehold_02: "Isla Mediana" #NT!
+ building_isle_freehold_02_desc: "Estas islas encantadas rara vez aparecen en los mapas o son mancilladas por pies mortales." #NT!
+ building_isle_freehold_03: "Isla grande" #NT!
+ building_isle_freehold_03_desc: "Estas islas encantadas rara vez aparecen en los mapas o son mancilladas por pies mortales." #NT!
+  
+ building_type_thorpe_freehold_01: "Thorpe" #NT!
+ building_type_thorpe_freehold_01_desc: "#F Un thorpe es un pueblo de hadas.#!" #NT!
+ building_thorpe_freehold_01: "Pequeño Thorpe" #NT!
+ building_thorpe_freehold_01_desc: "Un thorpe es un pueblo de hadas." #NT!
+ building_thorpe_freehold_02: "Thorpe mediano" #NT!
+ building_thorpe_freehold_02_desc: "Un thorpe es un pueblo de hadas." #NT!
+ building_thorpe_freehold_03: "Gran Thorpe" #NT!
+ building_thorpe_freehold_03_desc: "Un thorpe es un pueblo de hadas." #NT!
+  
+ building_type_urban_freehold_01: "Urbano" #NT!
+ building_type_urban_freehold_01_desc: "#F Solo los miembros más valientes de la Estirpe se atreven a vivir en las asfixiantes extensiones urbanas del Mundo de Tinieblas. La banalidad está en su punto más alto aquí y el glamour puro escasea. Estas tierras están al borde del invierno que se avecina.#!" #NT!
+ building_urban_freehold_01: "Pequeño Urbano" #NT!
+ building_urban_freehold_01_desc: "Sólo los Kithain más resistentes se atreven a vivir en las asfixiantes extensiones urbanas del Mundo de Tinieblas." #NT!
+ building_urban_freehold_02: "Urbano medio" #NT!
+ building_urban_freehold_02_desc: "Sólo los Kithain más resistentes se atreven a vivir en las asfixiantes extensiones urbanas del Mundo de Tinieblas." #NT!
+ building_urban_freehold_03: "Gran Urbano" #NT!
+ building_urban_freehold_03_desc: "Sólo los Kithain más resistentes se atreven a vivir en las asfixiantes extensiones urbanas del Mundo de Tinieblas." #NT!
+  
+ building_type_market_freehold_01: "Mercado" #NT!
+ building_type_market_freehold_01_desc: "#F Los mercados de hadas son lugares, a menudo feudos, donde los cambiantes vienen a comprar, vender e intercambiar tesoros extraños de mil reinos. Estos lugares a menudo comparten espacio con los mercados humanos de forma encubierta, aunque pueden existir completamente en el [dreaming|E], como el [goblin_market|E]. Un humano puede comprar una pieza de artesanía feérica "accidentalmente" en ocasiones. Tales transacciones pueden ser afortunadas o desastrosas para el humano incauto.#!" #NT!
+ building_market_freehold_01: "Mercado pequeño" #NT!
+ building_market_freehold_01_desc: "Los mercados de hadas son lugares, a menudo propiedades libres, donde los cambiantes vienen a comprar, vender e intercambiar tesoros extraños de mil reinos." #NT!
+ building_market_freehold_02: "Mercado medio" #NT!
+ building_market_freehold_02_desc: "Los mercados de hadas son lugares, a menudo propiedades libres, donde los cambiantes vienen a comprar, vender e intercambiar tesoros extraños de mil reinos." #NT!
+ building_market_freehold_03: "Gran mercado" #NT!
+ building_market_freehold_03_desc: "Los mercados de hadas son lugares, a menudo propiedades libres, donde los cambiantes vienen a comprar, vender e intercambiar tesoros extraños de mil reinos." #NT!
+  
+ building_type_homestead_freehold_01: "Granja" #NT!
+ building_type_homestead_freehold_01_desc: "#F Las haciendas son feudos que se encuentran completamente en el [dreaming|E], pero sin acceso a un Rath. No tienen la naturaleza dual de la mayoría de las haciendas; su principal virtud es la estabilidad. La Estirpe construye haciendas para soportar los rigores del [dreaming|E]. Los colonos son pocos, pero ferozmente independientes. Algunos changelings de cada estirpe establecen haciendas (incluso pequeñas aldeas) en el Cercano [dreaming|E].#!" #NT!
+ building_homestead_freehold_01: "Pequeña finca" #NT!
+ building_homestead_freehold_01_desc: "Las granjas son propiedades libres que se encuentran totalmente en [dreaming|E], pero sin acceso a un Rath." #NT!
+ building_homestead_freehold_02: "Finca mediana" #NT!
+ building_homestead_freehold_02_desc: "Las granjas son propiedades libres que se encuentran totalmente en [dreaming|E], pero sin acceso a un Rath." #NT!
+ building_homestead_freehold_03: "Gran finca" #NT!
+ building_homestead_freehold_03_desc: "Las granjas son propiedades libres que se encuentran totalmente en [dreaming|E], pero sin acceso a un Rath." #NT!
+  
+ building_type_land_trod_01: "Tierra pisada" #NT!
+ building_type_land_trod_01_desc: "#F Los caminos de tierra pueden ser cualquier cosa, desde una amplia autopista hasta un estrecho sendero junto a un precipicio. Pueden atravesar idílicos pueblos de hadas, literalmente desiertos en llamas o bosques de niebla y árboles quejumbrosos. Un duende puede caminar, montar a caballo o conducir a lo largo de estos caminos; el modo de viajar está limitado solo por el terreno.#!" #NT!
+ building_land_trod_01: "Pequeña tierra pisada" #NT!
+ building_land_trod_01_desc: "Los pasos de tierra pueden ser cualquier cosa, desde una amplia autopista hasta un camino angosto a lo largo de un precipicio." #NT!
+ building_land_trod_02: "Tierra Media Pisada" #NT!
+ building_land_trod_02_desc: "Los pasos de tierra pueden ser cualquier cosa, desde una amplia autopista hasta un camino angosto a lo largo de un precipicio." #NT!
+ building_land_trod_03: "Gran tierra pisada" #NT!
+ building_land_trod_03_desc: "Los pasos de tierra pueden ser cualquier cosa, desde una amplia autopista hasta un camino angosto a lo largo de un precipicio." #NT!
+ land_trod_effect_desc: "Si se construye en capital, obtenga acceso al [dreaming|E]." #NT!
+  
+ building_type_water_trod_01: "Agua pisada" #NT!
+ building_type_water_trod_01_desc: "#F Estos senderos pueden ser tan pequeños como un arroyo de montaña o tan vastos como mil océanos. Debido a la falta de puntos de referencia reconocibles, los viajeros que recorren este tipo de senderos deben confiar en mapas y otros recursos de navegación para recorrer estos caminos acuáticos de manera segura.#!" #NT!
+ building_water_trod_01: "Pequeña plataforma de agua" #NT!
+ building_water_trod_01_desc: "Estos pasos pueden ser tan pequeños como un arroyo de montaña o tan grandes como mil océanos." #NT!
+ building_water_trod_02: "Pisada de agua media" #NT!
+ building_water_trod_02_desc: "Estos pasos pueden ser tan pequeños como un arroyo de montaña o tan grandes como mil océanos." #NT!
+ building_water_trod_03: "Gran plataforma de agua" #NT!
+ building_water_trod_03_desc: "Estos pasos pueden ser tan pequeños como un arroyo de montaña o tan grandes como mil océanos." #NT!
+  
+ building_type_sun_trod_01: "pisada del sol" #NT!
+ building_type_sun_trod_01_desc: "#F Los senderos solares son senderos celestiales que solo están abiertos durante el día. Solo aquellos changelings que pueden volar (incluso en globo) pueden viajar por estas carreteras etéreas. Los senderos solares pueden aparecer como rayos de sol concentrados o como caminos a lo largo de nubes iluminadas por el sol. Un changeling que viaja por un sendero solar debe encontrar un sendero lunar para continuar su viaje después del anochecer.#!" #NT!
+ building_sun_trod_01: "Pequeño Sol Pisado" #NT!
+ building_sun_trod_01_desc: "Los miradores solares son miradores celestiales que están abiertos solo durante el día." #NT!
+ building_sun_trod_02: "Sol medio pisado" #NT!
+ building_sun_trod_02_desc: "Los miradores solares son miradores celestiales que están abiertos solo durante el día." #NT!
+ building_sun_trod_03: "Gran sol pisado" #NT!
+ building_sun_trod_03_desc: "Los miradores solares son miradores celestiales que están abiertos solo durante el día." #NT!
+  
+ building_type_moon_trod_01: "La Luna Pisada" #NT!
+ building_type_moon_trod_01_desc: "#F Los senderos lunares son senderos celestiales que solo están abiertos por la noche. Solo aquellos cambiantes que pueden volar pueden recorrer estos senderos fantasmales lunares. Los senderos lunares pueden aparecer como motas de polvo que bailan en rayos de luz de luna pálida o como caminos a lo largo de las nubes del cielo nocturno.#!" #NT!
+ building_moon_trod_01: "Pequeña Luna Pisada" #NT!
+ building_moon_trod_01_desc: "Los pasos lunares son pasos del cielo que están abiertos solo por la noche." #NT!
+ building_moon_trod_02: "Luna Mediana Pisada" #NT!
+ building_moon_trod_02_desc: "Los pasos lunares son pasos celestiales que están abiertos solo por la noche." #NT!
+ building_moon_trod_03: "Gran Luna Pisada" #NT!
+ building_moon_trod_03_desc: "Los pasos lunares son pasos celestiales que están abiertos solo por la noche." #NT!
+  
+ building_type_chimerical_trod_01: "Trodo quimérico" #NT!
+ building_type_chimerical_trod_01_desc: "#F Los senderos quiméricos son demasiado etéreos para que las criaturas materiales como las hadas los recorran, pero las quimeras no tienen muchos problemas para utilizar estos caminos ricos en glamour. Algunas artes arcanas pueden permitir a los changelings el acceso a estos senderos alienígenas. Estos caminos son extraordinariamente peligrosos, incluso para los Kithain más poderosos. El Sendero Plateado no se extiende por estos senderos.#!" #NT!
+ building_chimerical_trod_01: "Pequeño trod quimérico" #NT!
+ building_chimerical_trod_01_desc: "Los caminos quiméricos son demasiado etéreos para que los puedan recorrer criaturas materiales como las hadas, pero las quimeras no tienen muchos problemas para utilizar estos caminos ricos en Glamour." #NT!
+ building_chimerical_trod_02: "Pisada Quimérica Mediana" #NT!
+ building_chimerical_trod_02_desc: "Los caminos quiméricos son demasiado etéreos para que los puedan recorrer criaturas materiales como las hadas, pero las quimeras no tienen muchos problemas para utilizar estos caminos ricos en Glamour." #NT!
+ building_chimerical_trod_03: "Gran piso quimérico" #NT!
+ building_chimerical_trod_03_desc: "Los caminos quiméricos son demasiado etéreos para que los puedan recorrer criaturas materiales como las hadas, pero las quimeras no tienen muchos problemas para utilizar estos caminos ricos en Glamour." #NT!
+  
+ building_type_nightmare_trod_01: "La pesadilla pisoteó" #NT!
+ building_type_nightmare_trod_01_desc: "#F Los [nightmare_realms|E] se pudren en los [deep_dreaming|E] como un cáncer insaciable. De ellos salen espirales oscuras y retorcidas que tocan casi todas las demás partes de los [dreaming|E]. Quimeras malignas e incluso criaturas más oscuras recorren estos temibles caminos. Algunos cambiantes Unseelie usan estos caminos para realizar encargos secretos, pero estos caminos son peligrosos incluso para ellos. El Camino Plateado existe a lo largo de algunos de estos caminos. La mayoría cree que los Tuatha de Danaan construyeron el camino allí durante sus guerras con los Fomorianos.#!" #NT!
+ building_nightmare_trod_01: "Pequeña pesadilla pisoteada" #NT!
+ building_nightmare_trod_01_desc: "El [nightmare_realms|E] supura en el [deep_dreaming|E] como un cáncer insaciable." #NT!
+ building_nightmare_trod_02: "Pesadilla mediana pisoteada" #NT!
+ building_nightmare_trod_02_desc: "El [nightmare_realms|E] supura en el [deep_dreaming|E] como un cáncer insaciable." #NT!
+ building_nightmare_trod_03: "Gran pesadilla pisoteada" #NT!
+ building_nightmare_trod_03_desc: "El [nightmare_realms|E] supura en el [deep_dreaming|E] como un cáncer insaciable." #NT!
+  
+ building_type_wild_portal_01: "Portal salvaje" #NT!
+ building_type_wild_portal_01_desc: "#F Nadie está seguro de dónde provienen estos fenómenos ni cómo llegaron a existir. Los Fae Seelie creen que son obra de los Unseelie, mientras que los Unseelie culpan a los Seelie. Ambos bandos afirman que los poderosos Fae crearon deliberadamente los portales para atraer y atrapar enemigos. Otros postulan que estos portales son creaciones del propio Sueño de la época del [shattering|E]... un último suspiro de Magia que intentaba mantener una conexión con el mundo mundano cuando el anterior falló y se cerró.#!" #NT!
+ building_wild_portal_01: "Pequeño portal salvaje" #NT!
+ building_wild_portal_01_desc: "Un Portal Salvaje es un tipo de entrada desconocida y no controlada al [dreaming|E]." #NT!
+ building_wild_portal_02: "Portal salvaje mediano" #NT!
+ building_wild_portal_02_desc: "Un Portal Salvaje es un tipo de entrada desconocida y no controlada al [dreaming|E]." #NT!
+ building_wild_portal_03: "Gran portal salvaje" #NT!
+ building_wild_portal_03_desc: "Un Portal Salvaje es un tipo de entrada desconocida e incontrolada al [dreaming|E]." #NT!
+  
+ building_type_silvers_gate_01: "La puerta de plata" #NT!
+ building_type_silvers_gate_01_desc: "#F La Isla de los Sueños brillaba sobre el agua, una extensión verde de terreno que se elevaba suavemente y que culminaba en una colina redondeada en el centro de la isla. En la cima de la colina, un castillo de hadas con agujas de cristal y torres prismáticas coronaba el punto más alto de la isla. Frente a la puerta del castillo se encontraban un par de estatuas de piedra, caballeros elegantemente vestidos con cabello largo y suelto.#!" #NT!
+ building_silvers_gate_01: "La puerta de plata" #NT!
+ building_silvers_gate_01_desc: "En el centro de la isla se encontraba la Puerta de Plata, un portal al corazón de Tir-na-N’og, ahora conocida como [arcadia|E]." #NT!
+  
+ building_type_gwyddnos_track_01: "La pista de Gwyddno" #NT!
+ building_type_gwyddnos_track_01_desc: "#F Solo recordada en rumores y leyendas, la entrada a un sarn (pisado en galés) de poder antiguo se encuentra escondida en Powys.#!" #NT!
+ building_gwyddnos_track_01: "La pista de Gwyddno" #NT!
+ building_gwyddnos_track_01_desc: "El sarn, que se utilizó por última vez durante el reinado del rey Gwyddno Garanhir, se extendió a todos los cantrevs de Cymru y también a Hibernia." #NT!
+  
+ building_type_pookas_favor_01: "El favor de Pooka" #NT!
+ building_type_pookas_favor_01_desc: "#F Este sarn (que en galés significa trod) se extiende desde Gwynt hasta Edimburgo, y quienes lo controlan no piden precio por viajar desde Cymru hasta la capital de Escocia.#!" #NT!
+ building_pookas_favor_01: "El favor de Pooka" #NT!
+ building_pookas_favor_01_desc: "Este sarn (que en galés significa trod) se extiende desde Gwynt hasta Edimburgo, y los [GetTrait('pooka').GetName(GetNullCharacter)] que lo controlan no piden precio por viajar desde Cymru hasta la capital de Escocia.\n\nSin embargo, cuando un viajero intenta regresar a Gwynt desde Escocia, el pasaje de ida y vuelta es caro, al menos en términos de orgullo. El dinero no tiene ningún interés para los [GetTrait('pooka').GetName(GetNullCharacter)]; prefieren pasteles en la cara, cabezas rapadas o desnudez, según su estado de ánimo y la personalidad del viajero." #NT!
+  
+ building_type_pen_mynydd_01: "Pluma Mynydd" #NT!
+ building_type_pen_mynydd_01_desc: "#F Este es un sarn secreto que va desde el monte Snowdon en Cymru hasta Ben Nevis en Escocia. [GetTrait('sluagh').GetName(GetNullCharacter)] es un sarn (en galés, trod) guardado celosamente por los ban-durrag escoceses que lo mantienen. Estas criaturas repugnantes lo llaman el retorcimiento de Ban-Durrag.#!" #NT!
+ building_pen_mynydd_01: "Pluma Mynydd" #NT!
+ building_pen_mynydd_01_desc: "El túnel de Ban-Durrag es una serie de túneles que conectan las alturas de Ben Nevis con las alcantarillas de Glasgow y los riscos del monte Snowdon en Gales. Los Ban-Durrag que controlan estos túneles forman un grupo de Unseelie [GetTrait('sluagh').GetName(GetNullCharacter)] que los utilizan para ocultar los cuerpos de sus víctimas e intercambiar información. Solo [GetTrait('sluagh').GetName(GetNullCharacter)] puede pasar por las entradas de estos túneles." #NT!
+  
+ building_type_cefn_yr_oguf_01: "Cefn yr Oguf" #NT!
+ building_type_cefn_yr_oguf_01_desc: "#F Esta carrera, que va desde Clwyd hasta el Puente de Londres y sube hasta Chester, es un premio muy disputado en Clwyd.#!" #NT!
+ building_cefn_yr_oguf_01: "Cefn yr Oguf" #NT!
+ building_cefn_yr_oguf_01_desc: "Este sarn (que en galés significa trod), que va desde Clwyd hasta el Puente de Londres y sube hasta Chester, es un premio muy disputado en Clwyd." #NT!
+  
+ building_type_camelot_01: "Camelot" #NT!
+ building_type_camelot_01_desc: "#F Como prueba, os presento Camelot. No son muchos los que recuerdan que la leyenda del Rey Arturo surgió por primera vez en Cymru, en el incomparable relato de Culhwch y Olwen, que es demasiado largo para contarlo aquí. Lo que digo es que los cuentos de Arturo surgen de esta tierra de Gales, sin importar las versiones de la Edad Oscura que escuchéis ahora, la propaganda inventada por la Tecnocracia.#!" #NT!
+ building_camelot_01: "Camelot en ruinas" #NT!
+ building_camelot_01_desc: "Las verdaderas leyendas, el verdadero corazón de Camelot, han crecido en el [dreaming|E]. Todas las visiones del mito de Arturo existen allí juntas y todas son correctas. La gente de las historias vive allí, como tú y yo aquí, pero en sus muchos aspectos, y los que llegamos a ellas vemos sólo un aspecto a la vez, como tú puedes ver sólo un brillo de las muchas facetas de un diamante." #NT!
+ building_camelot_02: "Recuperando Camelot" #NT!
+ building_camelot_02_desc: "Las verdaderas leyendas, el verdadero corazón de Camelot, han crecido en el [dreaming|E]. Todas las visiones del mito de Arturo existen allí juntas, y todas son correctas. Las personas de las historias viven allí, como tú y yo aquí, pero en sus múltiples aspectos, y quienes llegamos a ellas vemos sólo un aspecto a la vez, como tú puedes ver sólo un destello de las múltiples facetas de un diamante." #NT!
+ building_camelot_03: "Camelot triunfante" #NT!
+ building_camelot_03_desc: "Las verdaderas leyendas, el verdadero corazón de Camelot, han crecido en el [dreaming|E]. Todas las visiones del mito de Arturo existen allí juntas, y todas son correctas. Las personas de las historias viven allí, como tú y yo aquí, pero en sus múltiples aspectos, y quienes llegamos a ellas vemos sólo un aspecto a la vez, como tú puedes ver sólo un destello de las múltiples facetas de un diamante." #NT!
+  
+ building_type_chaw_gully_mine_01: "Mina Chaw Gully" #NT!
+ building_type_chaw_gully_mine_01_desc: "#F En el [mythic_age|E], cuando los #TOOLTIP:GAME_TRAIT,nocker,[GetNullCharacter] #L Nockers#!#! eran todavía unos jóvenes, llegaron a las tierras que un día se llamarían Cornualles y Challacombe Ridge. En su avaricia por el estaño, pero más aún por el oro, que yacía bajo la tierra, arrancaron el corazón mismo del páramo.#!" #NT!
+ building_chaw_gully_mine_01: "Mina bloqueada" #NT!
+ building_chaw_gully_mine_01_desc: "Las leyendas dicen que, además del estaño, en la zona había oro. Y había... mucho. Los #TOOLTIP:GAME_TRAIT,nocker,[GetNullCharacter] #L Nockers#!#! guardaban la cantidad real solo insinuada para mantener vivos los sueños, pero rara vez permitían que los mortales la encontraran." #NT!
+ building_chaw_gully_mine_02: "Mina reabierta" #NT!
+ building_chaw_gully_mine_02_desc: "Las leyendas dicen que, además del estaño, en la zona había oro. Y había... mucho. Los #TOOLTIP:GAME_TRAIT,nocker,[GetNullCharacter] #L Nockers#!#! guardaban la cantidad real solo insinuada para mantener vivos los sueños, pero rara vez permitían que los mortales la encontraran." #NT!
+ building_chaw_gully_mine_03: "Mina excavada" #NT!
+ building_chaw_gully_mine_03_desc: "Las leyendas dicen que, además del estaño, en la zona había oro. Y había... mucho. Los #TOOLTIP:GAME_TRAIT,nocker,[GetNullCharacter] #L Nockers#!#! guardaban la cantidad real solo insinuada para mantener vivos los sueños, pero rara vez permitían que los mortales la encontraran." #NT!
+  
+ building_type_balors_tower_01: "Torre de Balor" #NT!
+ building_type_balors_tower_01_desc: "#F En el extremo oriental de la isla Tory, un promontorio rocoso llamado Torre de Balor marca el hogar legendario de Balor del Mal de Ojo.#!" #NT!
+ building_balors_tower_01: "Torre de Balor" #NT!
+ building_balors_tower_01_desc: "En el extremo oriental de la isla Tory, un promontorio rocoso llamado Torre de Balor marca el legendario hogar de Balor del Mal de Ojo." #NT!
+  
+ building_type_brides_lodge_01: "Logia de la novia" #NT!
+ building_type_brides_lodge_01_desc: "#F Justo al oeste de Glastonbury, a orillas de un río, se encuentra otra colina, a la que los lugareños llaman Bride's Mound. Cerca del pie de Bride's Mound se encuentra una casa de tres pisos con un pequeño jardín en el exterior, en el número 19 de Bride's Lane.#!" #NT!
+ building_brides_lodge_01: "Logia de la novia" #NT!
+ building_brides_lodge_01_desc: "Justo al oeste de Glastonbury, a orillas de un río, se encuentra otra colina, a la que los lugareños llaman Bride's Mound. Cerca del pie de Bride's Mound se encuentra una casa de tres pisos con un pequeño jardín exterior, en 19 Bride's Lane.\n\nLa casa es una de las propiedades más antiguas de todo Albion. Consta de una docena de dormitorios pequeños (principalmente en el segundo y tercer piso), una cocina, un baño y una gran sala de reuniones en el centro. Aunque a lo largo de los años muchas cosas han cambiado en la casa, una cosa sigue igual: la chimenea. El punto focal de la sala principal es un gran hogar de piedra, donde arde el Gran Fuego de Albión desde tiempos inmemoriales." #NT!
+  
+ building_type_bullring_01: "Plaza de toros" #NT!
+ building_type_bullring_01_desc: "#F La Plaza de Toros se encuentra en Barcelona, ​​España, y si recibió su nombre por los actos de osadía que los invitados han realizado allí o por la cantidad de verdad detrás de las historias que comparten es una cuestión de opinión.#!" #NT!
+ building_bullring_01: "Plaza de toros" #NT!
+ building_bullring_01_desc: "La Plaza de Toros se encuentra en Barcelona, ​​España, y si recibió su nombre de los actos de osadía que los invitados han realizado allí o de la cantidad de verdad detrás de las historias que comparten es una cuestión de opinión.\n\nDe cualquier manera, es un lugar agradable: un complejo elegante para los ojos mortales y un gran castillo antiguo de estilo morisco para los quiméricos." #NT!
+  
+ building_type_rock_of_cashel_01: "Cashelmore" #NT!
+ building_type_rock_of_cashel_01_desc: "#F Elevándose 200 pies sobre las llanuras del condado de Tipperary, la empinada y escarpada colina conocida como la Roca de Cashel sirvió como el sitio desde el cual gobernaban los reyes de Munster y como un monumento religioso.#!" #NT!
+ building_rock_of_cashel_01: "Cashelmore" #NT!
+ building_rock_of_cashel_01_desc: "Elevándose 200 pies sobre las llanuras del condado de Tipperary, la empinada y escarpada colina conocida como la Roca de Cashel sirvió como sitio desde el cual gobernaban los reyes de Munster y como monumento religioso.\n\nDentro de la roca, accesible a través de una puerta oculta cerca de la base de la colina, se encuentra Cashelmore." #NT!
+  
+ building_type_dun_aenghus_01: "Dun Aenghus" #NT!
+ building_type_dun_aenghus_01_desc: "#F Dún Aenghus, que en su día fue la fortaleza de un legendario jefe Fir-bholg tras el exilio de esa raza por parte de los Tuatha de Danaan al oeste de Irlanda, se convirtió más tarde en un poderoso lugar de magia feérica.#!" #NT!
+ building_dun_aenghus_01: "Dun Aenghus" #NT!
+ building_dun_aenghus_01_desc: "Dún Aenghus, que alguna vez fue el hogar fortaleza de un legendario jefe Fir-bholg después del exilio de esa raza por los Tuatha de Danaan al oeste de Irlanda, se convirtió más tarde en un poderoso sitio de magia feérica.\n\nDespués de su abandono por parte de los habitantes originales, un príncipe de la Casa Dougal descubrió la asociación innata del triple círculo de piedra con la magia latente de la tierra. Usando Glamour para evocar y despertar el poder durmiente, este príncipe sin nombre construyó una enorme bóveda del tesoro en la que albergar algunas de las posesiones más valiosas de los sidhe." #NT!
+  
+ building_type_emain_macha_01: "Emain Macha" #NT!
+ building_type_emain_macha_01_desc: "#F Las leyendas se refieren al Fuerte Navan como Emain Macha (“Los gemelos de Macha”) y lo asocian con la maldición de muerte de la veloz esposa de Cruinniuc.#!" #NT!
+ building_emain_macha_01: "Emain Macha" #NT!
+ building_emain_macha_01_desc: "Las leyendas se refieren al Fuerte Navan como Emain Macha ("Los gemelos de Macha") y lo asocian con la maldición agonizante de la veloz esposa de Cruinniuc.\n\nEl palacio es hermoso, su extraña geometría y los colores oscuros y ricos de su interior inducen un humor que huele al peso de la historia y la leyenda, lleno de violencia latente y profunda pasión." #NT!
+  
+ building_type_glenlea_01: "Glenlea" #NT!
+ building_type_glenlea_01_desc: "#F No muy lejos de Glencolumbkille, aunque no se encuentra en ningún mapa, se encuentra el hada Thorpe de Glenlea, un pequeño pueblo encantado habitado en su totalidad por Kithain y algunos mortales encantados lo suficientemente afortunados (o desafortunados) como para encontrarse con uno de los aldeanos y recibir una invitación para "dejar atrás las preocupaciones del mundo". #!" #NT!
+ building_glenlea_01: "Glenlea" #NT!
+ building_glenlea_01_desc: "No muy lejos de Glencolumbkille, aunque no se encontrará en ningún mapa, se encuentra el hada Thorpe de Glenlea, un pequeño pueblo encantado enteramente habitado por Kithain y unos pocos mortales encantados lo suficientemente afortunados (o desafortunados) como para encontrarse con uno de los aldeanos. y reciba una invitación a “dejar atrás las preocupaciones del mundo”.\n\nLa ciudad en sí consta de una calle principal llena de tiendas y casas con techo de paja, con algunas callejuelas laterales que conducen a otras viviendas." #NT!
+  
+ building_type_shalott_01: "Shalott" #NT!
+ building_type_shalott_01_desc: "#F Los estudiosos sostienen que una propiedad que no sobrevivió sirvió de base para los cuentos de "Shalott".#!" #NT!
+ building_shalott_01: "La perdida de Shalott" #NT!
+ building_shalott_01_desc: "Los eruditos sostienen que una propiedad que no sobrevivió fue la base de los cuentos de "Shalott".\n\nUna torre encantada cuyos habitantes fueron maldecidos a conocer el mundo mortal solo a través de visiones que aparecían en un tapiz mágico." #NT!
+  
+ building_type_tuath_of_chronos_01: "Tuath de Cronos" #NT!
+ building_type_tuath_of_chronos_01_desc: "#F El Tuath de Cronos es un lugar misterioso que se cree que se encuentra en un túmulo mágico en algún lugar de las orillas del Tay. Muchos hadas creen que un poderoso Vidente de Cronos y su esposa hada lograron ocultar un sitio anterior a [shattering|E] de los estragos del tiempo y la Banalidad.#!" #NT!
+ building_tuath_of_chronos_01: "Tuath de Cronos" #NT!
+ building_tuath_of_chronos_01_desc: "Si un cambiante ve un montículo coronado por un árbol enorme con muchas ramas, cada una con nuevos brotes de hojas, mientras deambula por las orillas del Tay, puede encontrarse con el Tuath de Chronos. Un cuerno plateado cuelga de una de las ramas y, acunado por las enormes raíces del árbol, hay un pozo hecho de piedra blanca. Los magos y hadas que viven en este tuath guardan celosamente sus secretos." #NT!
+  
+ building_type_pearl_of_dawn_01: "Perla del amanecer" #NT!
+ building_type_pearl_of_dawn_01_desc: "#F El feudo rodea un exuberante oasis y se encuentra en la convergencia de varios Trods importantes en el [dreaming|E] y ha adquirido una reputación dentro de la Tribu como el punto de partida para muchos viajes únicos, ya que la mezcla ecléctica de hadas que se encuentra allí prácticamente garantiza una aventura. estallando tarde o temprano.#!" #NT!
+ building_pearl_of_dawn_01: "Perla del amanecer" #NT!
+ building_pearl_of_dawn_01_desc: "El feudo rodea un exuberante oasis y se encuentra en la convergencia de varios Trods importantes en el [dreaming|E] y ha adquirido una reputación dentro de la Tribu como el punto de partida para muchos viajes únicos, ya que la mezcla ecléctica de hadas que se encuentra allí prácticamente garantiza una aventura. tarde o temprano." #NT!
+  
+ building_type_garden_of_olives_01: "Huerto de los Olivos" #NT!
+ building_type_garden_of_olives_01_desc: "#F El Jardín de los Olivos alberga a cambiantes de todo el mundo. El gobernante dirige y actúa regularmente en representaciones de los dramas griegos clásicos.#!" #NT!
+ building_garden_of_olives_01: "Jardín de los Olivos" #NT!
+ building_garden_of_olives_01_desc: "El Jardín de los Olivos acoge a personajes de todo el mundo. El gobernante dirige y actúa regularmente en representaciones de los dramas clásicos griegos." #NT!
+  
+ building_type_eternal_story_01: "Historia eterna" #NT!
+ building_type_eternal_story_01_desc: "#F Desde la Historia Eterna, cerca de las afueras de Adís Abeba, el gobernante orquesta una considerable colección de eshu, sátiros y #TOOLTIP:GAME_TRAIT,pooka,[GetNullCharacter] #L Pookas#!#!.#!" #NT!
+ building_eternal_story_01: "Historia eterna" #NT!
+ building_eternal_story_01_desc: "Desde la Historia Eterna, cerca de las afueras de Adís Abeba, el gobernante orquesta una considerable colección de eshu, sátiros y #TOOLTIP:GAME_TRAIT,pooka,[GetNullCharacter] #L Pookas#!#!." #NT!
+  
+ building_type_oasis_of_lingering_dreams_01: "Oasis de sueños persistentes" #NT!
+ building_type_oasis_of_lingering_dreams_01_desc: "#F Los cambiantes de Arabia Saudita combinan el estilo desértico con los cuentos románticos de las tribus beduinas. El gobernante actual habita en su feudo, el Oasis de los Sueños Persistentes, ubicado en el desierto a las afueras de la capital, Riad.#!" #NT!
+ building_oasis_of_lingering_dreams_01: "Oasis de sueños persistentes" #NT!
+ building_oasis_of_lingering_dreams_01_desc: "Los cambiantes de Arabia Saudita combinan la elegancia del desierto con los cuentos románticos de las tribus beduinas. El gobernante actual habita en su feudo, el Oasis de los Sueños Persistentes, ubicado en el desierto, a las afueras de la capital, Riad." #NT!
+  
+ building_type_grimsfen_tor_01: "Puerta de Grimsfen" #NT!
+ building_type_grimsfen_tor_01_desc: "#F Un túmulo de hadas particularmente poderoso y antiguo en Grimsfen Tor en las Tierras Medias.#!" #NT!
+ building_grimsfen_tor_01: "Puerta de Grimsfen" #NT!
+ building_grimsfen_tor_01_desc: "Un túmulo de hadas particularmente poderoso y antiguo en Grimsfen Tor en las Tierras Medias." #NT!

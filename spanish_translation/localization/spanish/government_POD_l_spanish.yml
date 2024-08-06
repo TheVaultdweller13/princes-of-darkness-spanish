@@ -1,0 +1,555 @@
+﻿l_spanish:
+ traditions_government: "Tradiciones" #NT!
+ traditions_government_adjective: "Tradicional" #NT!
+ traditions_government_realm: "[cainite|E] Reino" #NT!
+ traditions_government_vassals_label: "[cainite|E] [obligations|E] se basan en cada [vassal|E] [feudal_contract|E]" #NT!
+ traditions_government_desc: "La gran mayoría de los reinos vampíricos siguen las Tradiciones de Caín, un código de conducta algo aproximado sobre cómo comportarse con los mortales y otros parientes." #NT!
+ #free_state_government: "Estado libre" #NT!
+ #free_state_government_adjective: "Gratis" #NT!
+ #free_state_government_realm: "Estado libre" #NT!
+ #free_state_government_vassals_label: "Estado Libre [obligations|E] se basan en cada [vassal|E] [opinion|E] del líder del reino." #NT!
+ #free_state_government_desc: "Al no aceptar las leyes de Caín, los Estados Libres son una alianza flexible de [cainites|E] con ideas similares que se reúnen alrededor de un gobernante carismático." #NT!
+ inquisition_government: "Orden de la Inquisición" #NT!
+ inquisition_government_adjective: "Inquisición" #NT!
+ inquisition_government_realm: "Orden de la Inquisición" #NT!
+ inquisition_government_vassals_label: "Los inquisidores [obligations|E] se basan en [opinion|E]" #NT!
+ inquisition_government_desc: "Una célula de Inquisidores que destruyen la influencia sobrenatural dondequiera que la encuentren." #NT!
+ august_court_government: "Corte de agosto" #NT!
+ august_court_government_adjective: "Agosto" #NT!
+ august_court_government_realm: "Corte de agosto" #NT!
+ august_court_government_vassals_label: "Corte de agosto [obligations|E] se basan en cada [vassal|E] [feudal_contract|E]" #NT!
+ august_court_government_desc: "Las primeras estructuras sociales organizadas de los Wan-Kuei en el Reino Medio." #NT!
+ heretical_court_government: "Tribunal herético" #NT!
+ heretical_court_government_adjective: "Herético" #NT!
+ heretical_court_government_realm: "Tribunal herético" #NT!
+ heretical_court_government_vassals_label: "La Corte Hereje [obligations|E] se basa en cada [vassal|E]'s [feudal_contract|E]" #NT!
+ heretical_court_government_desc: "La Corte gobernaba por un Ancestro Imperial por su cuenta, sin tener reconocimiento de las cortes augustas." #NT!
+ cell_government: "Celúla" #NT!
+ cell_government_adjective: "Celúla" #NT!
+ cell_government_realm: "Celúla" #NT!
+ cell_government_vassals_label: "La celda [obligations|E] se basa en [opinion|E]" #NT!
+ cell_government_desc: "Un grupo de cazadores unidos por los intereses de la protección, el trabajo en equipo y la causa común." #NT!
+ celestial_army_government: "Ejército celestial" #NT!
+ celestial_army_government_adjective: "Ejército celestial" #NT!
+ celestial_army_government_realm: "Ejército celestial" #NT!
+ celestial_army_government_vassals_label: "Ejército Celestial [obligations|E] se basa en [piety_level|E] de [liege|E]" #NT!
+ celestial_army_government_desc: "La gran organización de cazadores orientales, que se creía desaparecida hace mucho tiempo, está regresando." #NT!
+ cult_government: "Culto a la momia" #NT!
+ cult_government_adjective: "Culto" #NT!
+ cult_government_realm: "Culto a la momia" #NT!
+ cult_government_vassals_label: "Culto a la momia [obligations|E] se basa en [piety_level|E] de [liege|E]" #NT!
+ cult_government_desc: "Desde la antigüedad, los Renacidos han comandado grupos de mortales devotos que los sirven. Incluso durante sus largos períodos de sueño, estas organizaciones continúan transmitiendo sus secretos y deberes a la siguiente generación y vigilando las tumbas de sus amos." #NT!
+  
+ legacy_rights: "#BLOODRED La Primera Tradición: El Pacto#!" #NT!
+ legacy_rights_none: "Desprotegidos religiosamente" #NT!
+ legacy_rights_none_short: "#BLOODRED Obligado#!" #NT!
+ legacy_rights_none_desc: "#flavor “Tu sangre te convierte en mi prole, creada a mi imagen. Mi maldición es tuya y mi salvación es tuya. Yo estoy ante ti y por encima de ti como dios regente. Yo soy el camino, mis Tradiciones mi pacto. Renuncia a mí y renuncia a toda esperanza”. Así habló Caín.#! \n\nEl [liege|E] puede usar [demand_conversion|E] de los [vassal|E]\nEl [liege|E] puede usar [convert_county|E] en las tierras [vassals|E]." #NT!
+ legacy_rights_protected: "Protegido religiosamente" #NT!
+ legacy_rights_protected_desc: "#flavor “Tu sangre te convierte en mi prole, creada a mi imagen. Mi maldición es tuya y mi salvación es tuya. Yo estoy ante ti y por encima de ti como dios regente. Yo soy el camino, mis Tradiciones mi pacto. Renuncia a mí y renuncia a toda esperanza”. Así habló Caín.#! \n\n#emphasis #bold [vassal|E] Privilegios:#!#!\nLos [liege|E] no pueden usar [demand_conversion|E] de los [vassal|E]\nLos [liege|E] no pueden usar #!0 en las tierras de los #!1\n\n#flavor Se le otorga a los [vassal|E] un estatus especial de protección, y el reino reconoce oficialmente su derecho a practicar su propio #!4.#!" #NT!
+ legacy_rights_protected_short: "#BLOODRED No aplicado#!" #NT!
+  
+ #destruction_rights: "#BLOODRED La Quinta Tradición: La Destrucción #!" #NT!
+ #destruction_rights_none: "Sin derechos de destrucción" #NT!
+ #destruction_rights_none_desc: "“Se te prohíbe derramar la sangre de otro de tu especie que sea mayor. Este derecho pertenece solo a los más cercanos a mí y a nadie más. Está prohibido que los de sangre más débil se levanten contra sus mayores. Este es mi pacto final”. Así habló Caín.\n\n#flavor El [vassal] no tiene permitido destruir a sus parientes en su dominio. Solo el [liege] puede convocar una Cacería de Sangre.#!" #NT!
+ #destruction_rights_none_short: "#BLOODRED Ninguno#!" #NT!
+ #destruction_rights_allowed: "Destrucción permitida" #NT!
+ #destruction_rights_allowed_desc: "“Te está prohibido derramar la sangre de otro de tu especie que sea mayor. Este derecho pertenece solo a los más cercanos a mí y a nadie más. Está prohibido que los de sangre más débil se levanten contra sus mayores. Este es mi pacto final”. Así habló Caín.\n\n#emphasis #bold El [liege] permite al [vassal] hacer cumplir la Lextalionis y convocar una cacería de sangre en el dominio del [vassal].#!#!" #NT!
+ #destruction_rights_allowed_short: "#BLOODRED Permitido#!" #NT!
+ #destruction_rights_open_war: "Guerra abierta" #NT!
+ #destruction_rights_open_war_desc: "“Se te prohíbe derramar la sangre de otro de tu especie que sea mayor. Este derecho pertenece solo a los más cercanos a mí y a nadie más. Está prohibido que los de sangre más débil se levanten contra sus mayores. Este es mi pacto final”. Así habló Caín.\n\n#emphasis #bold [vassal|E] Privilegios:#!#!\nThe [vassal|E] puede declarar [war|E] independientemente de [lieges|E] [crown_authority|E]\nEl [vassal|E] paga #high #bold0%#bold1 menos por #bold2 dentro de #bold3\n\n#bold4 El #bold5 no tiene que gastar #bold6 si su #bold7 #bold8 le impide hacer la guerra. Este tratamiento especial también hace que sea más fácil para los #bold5 declarar guerras dentro de los #bold3, reduciendo el costo en un #high #bold0%#bold1.#bold1" #NT!
+ #destruction_rights_open_war_short: "#BLOODRED Guerra abierta#!" #NT!
+  
+ progeny_rights: "#BLOODRED La Tercera Tradición: La Progenie #!" #NT!
+ progeny_rights_none: "Sin derechos de progenie" #NT!
+ progeny_rights_none_short: "#BLOODRED Ninguno#!" #NT!
+ progeny_rights_none_desc: "#flavor “Solo podrás [Sire|E] crear a otro con el permiso y la bendición de tu mayor. Crear es la providencia de los más cercanos a mí, porque ellos serán responsables. Rompe esto y tanto tú como tu progenie moriréis”. Así habló Caín.#! \n\n#emphasis #bold El [vassal] no tiene derecho a crear progenie por su [liege]. Incluso la creación de ghouls está prohibida.#!#!" #NT!
+ progeny_rights_granted: "Derechos completos de progenie" #NT!
+ progeny_rights_granted_short: "#BLOODRED Cualquiera#!" #NT!
+ progeny_rights_granted_desc: "#flavor “Solo podrás [Sire|E] crear a otro con el permiso y la bendición de tu mayor. Crear es la providencia de los más cercanos a mí, porque ellos serán responsables. Rompe esto y tanto tú como tu progenie moriréis”. Así habló Caín.#! \n\n#emphasis #bold El [vassal] tiene pleno derecho a crear progenie por su [liege]. Esto incluye tanto a los hijos vampíricos como a los ghouls.#!#!" #NT!
+ progeny_rights_ghouls: "Derechos de creación de Ghoul" #NT!
+ progeny_rights_ghouls_short: "#BLOODRED Ghoul #!" #NT!
+ progeny_rights_ghouls_desc: "#flavor “Solo podrás [Sire|E] crear a otro con el permiso y la bendición de tu mayor. Crear es la providencia de los más cercanos a mí, porque ellos serán responsables. Rompe esto, y tanto tú como tu progenie moriréis”. Así habló Caín.#! \n\n#emphasis #bold Los [vassal] han recibido de sus [liege] los derechos para crear ghouls, pero no chiquillos vampíricos.#!#!" #NT!
+ progeny_rights_childer: "Derechos de los descendientes de parientes" #NT!
+ progeny_rights_childer_short: "#BLOODRED Vástago #!" #NT!
+ progeny_rights_childer_desc: "#flavor “Solo podrás [Sire|E] con otro con el permiso y la bendición de tu mayor. Crear es la providencia de los más cercanos a mí, porque ellos serán responsables. Rompe esto, y tanto tú como tu progenie moriréis”. Así habló Caín"#! \n\n#emphasis #bold Los [vassal] han recibido de sus [liege] los derechos sobre los hijos vampíricos, pero no sobre los ghouls.#!#!" #NT!
+  
+ #blood_oaths: "#BLOODRED La Cuarta Tradición: La Contabilidad#!" #NT!
+ #blood_oaths_none: "No se requieren juramentos de sangre" #NT!
+ #blood_oaths_none_short: "#BLOODRED Libre albedrío#!" #NT!
+ #blood_oaths_none_desc: "“Aquellos que creas son tu propia sangre hasta que los liberes de tu cargo. Hasta ese momento, sus pecados, su sangre y sus castigos son tuyos”. Así habló Caín.\n\n#emphasis #bold El [vassal] no está obligado a hacer un juramento de sangre a su [liege].#!#!" #NT!
+ #blood_oaths_required: "Juramentos de sangre requeridos" #NT!
+ #blood_oaths_required_short: "#BLOODRED Juramentos de sangre#!" #NT!
+ #blood_oaths_required_desc: "“Aquellos que creas son tu propia sangre hasta que los liberes de tu cargo. Hasta ese momento, sus pecados, su sangre y sus castigos son tuyos”. Así habló Caín.\n\n#emphasis #bold El [vassal] debe hacer un juramento de sangre a su [liege] y beber un trago de la sangre de su [liege]. Este es un vínculo de sangre menor y un anzuelo débil.#!#!" #NT!
+  
+ domain_revocation_rights: "#BLOODRED La Segunda Tradición: El Dominio #!" #NT!
+ domain_revocation_rights_default: "Revocación de dominio" #NT!
+ domain_revocation_rights_default_short: "#BLOODRED Testamento de Lieja#!" #NT!
+ domain_revocation_rights_default_desc: "El [liege] puede revocar un dominio siempre que las leyes de la corona lo permitan." #NT!
+ domain_revocation_rights_protected: "Dominio protegido" #NT!
+ domain_revocation_rights_protected_desc: "#flavor “Como soy el amo de Nod, tu dominio es asunto tuyo. Tú eres su amo, y todos respetarán esto o sufrirán tu ira. Todos se presentarán al entrar, y tú los protegerás a su vez. Por derecho, se te permite cazar dentro de los límites de tu dominio, su sangre es tuya. Acepta su responsabilidad, administra tu dominio y muestra a los demás el mismo respeto que esperas”. Así habló Caín.#! \n\n[vassal|E] Privilegio:#!#!\nEl [liege|E] no puede revocar el [vassals_possessive|E] [titles|E]\n\n#flavor El [vassal] tiene garantizada la propiedad de su [titles], lo que impide que el [liege|E] lo revoque, independientemente de que el [liege|E] tenga un #!2 o no.#!" #NT!
+ domain_revocation_rights_protected_short: "#BLOODRED Protegido#!" #NT!
+  
+ #masquerade_protocol: "#BLOODRED La Sexta Tradición: La Mascarada #!" #NT!
+ #masquerade_protocol_none: "Sin mascarada" #NT!
+ #masquerade_protocol_none_desc: "#flavor El [liege] no impone el Silencio de la Sangre en el dominio del [vassal].#!" #NT!
+ #masquerade_protocol_none_short: "#BLOODRED Ninguno#!" #NT!
+ #masquerade_protocol_lax: "Mascarada relajada" #NT!
+ #masquerade_protocol_lax_desc: "“Nunca revelarás tu verdadera naturaleza a aquellos que no son de la sangre. Al hacerlo, renunciarás a tus derechos sobre mis pactos”. Así habló Caín.\n\n#emphasis #bold El [liege] solo hace cumplir las violaciones extremas del Silencio de Sangre en el dominio del [vassal].#!#!" #NT!
+ #masquerade_protocol_lax_short: "#BLOODRED relajado#!" #NT!
+ #masquerade_protocol_strict: "Mascarada estricta" #NT!
+ #masquerade_protocol_strict_desc: "“Nunca revelarás tu verdadera naturaleza a aquellos que no son de la sangre. Al hacerlo, renunciarás a tus derechos sobre mis pactos”. Así habló Caín.\n\n#emphasis #bold El [liege] impone una interpretación estricta del Silencio de Sangre en el dominio del [vassal].#!#!" #NT!
+ #masquerade_protocol_strict_short: "#BLOODRED Estricto#!" #NT!
+  
+ blood_tithe: "#BLOODRED Diezmo de sangre#!" #NT!
+ blood_tithe_none: "No $blood_tithe$" #NT!
+ blood_tithe_none_short: "#BLOODRED Ninguno#!" #NT!
+ blood_tithe_none_desc: "#emphasis #bold El [vassal] no le debe ningún diezmo de sangre a su [liege].#!#!" #NT!
+ blood_tithe_required: "Diezmo de sangre de vacas" #NT!
+ blood_tithe_required_short: "#BLOODRED vacas#!" #NT!
+ blood_tithe_required_desc: "#emphasis #bold Si se lo piden, el [vassal] debe proporcionar una de las vacas a la corte de su [liege]. Normalmente, esto significa la muerte del mortal.#!#!" #NT!
+ blood_tithe_vampiric: "Diezmo de sangre de Vassal Vitae" #NT!
+ blood_tithe_vampiric_short: "#BLOODRED Tu Vitae#!" #NT!
+ blood_tithe_vampiric_desc: "#emphasis #bold A pedido, el [vassal] debe proporcionar su propia sangre vampírica a su [liege]. Esto aumentará el hambre de donantes.#!#!" #NT!
+ blood_tithe_childer: "Diezmo de sangre de los niños" #NT!
+ blood_tithe_childer_short: "#BLOODRED Tu hijo#!" #NT!
+ blood_tithe_childer_desc: "#emphasis #bold Si se lo piden, el [vassal] debe proporcionar uno de sus hijos a su [liege]. Esto suele llevar a la destrucción del hijo.#!#!" #NT!
+  
+ primogen_rights: "#BLOODRED Círculo interior #!" #NT!
+ primogen_rights_none: "Sin asiento en el círculo interior" #NT!
+ primogen_rights_none_desc: "#emphasis Al [vassal] no se le conceden privilegios fuera de lo común cuando se trata del Inner [council].#!" #NT!
+ primogen_rights_none_short: "#BLOODRED Ninguno#!" #NT!
+ primogen_rights_guaranteed: "Asiento del círculo interior" #NT!
+ primogen_rights_guaranteed_desc: "#emphasis #bold [vassal|E] Privilegio:#!#!\nThe #high $force_onto_council$#! [interaction|E] se puede usar a voluntad\n\n#flavor Al [vassal] se le otorgan privilegios especiales de Inner #bold0 y esperará un asiento permanente en el #bold0. Otorgar este privilegio a demasiados #bold2 eventualmente molestará al #bold3 del #bold4.#!" #NT!
+ primogen_rights_guaranteed_short: "#BLOODRED Garantizado#!" #NT!
+  
+ type_of_courts: "Tipo de Tribunal" #NT!
+ type_of_courts_political: "Tribunal político" #NT!
+ type_of_courts_political_desc: "#flavor Los tribunales políticos son, con diferencia, los más comunes. Se reúnen para supervisar los intereses de los Kuei-jin y de los mortales de una zona geográfica concreta, como pueblos o ciudades. Las grandes ciudades pueden albergar varios tribunales políticos, cada uno con su propio territorio y tradición y cada uno con un conjunto único de problemas que ponen a prueba duramente al antepasado de una ciudad.#!" #NT!
+ type_of_courts_social: "Tribunal Social" #NT!
+ type_of_courts_social_desc: "#flavor Los tribunales sociales son menos comunes que sus contrapartes políticas y se ubican en los lugares más inusuales. Se forman en torno a objetivos sociales (como proteger y mantener un Nido de Dragón), áreas de interés académico e incluso preocupaciones regionales.#!" #NT!
+ type_of_courts_political_short: "Político" #NT!
+ type_of_courts_social_short: "Social" #NT!
+  
+ litany_government: "Letanía" #NT!
+ litany_government_adjective: "Letanía" #NT!
+ litany_government_realm: "Tribu de hombres lobo" #NT!
+ litany_government_vassals_label: "Letanía [obligations|E] se basa en [opinion|E]" #NT!
+ litany_government_desc: "La Letanía, o Letanía Oscura de los Danzantes de la Espiral Negra, es el código de leyes que conservan los Garou. Fue codificado al final del Imperio." #NT!
+  
+ hierarchy_government: "Jerarquía" #NT!
+ hierarchy_government_adjective: "Jerarquía" #NT!
+ hierarchy_government_realm: "Reino oscuro del hierro" #NT!
+ hierarchy_government_vassals_label: "La jerarquía [obligations|E] se basa en cada [vassal|E] [feudal_contract|E]" #NT!
+ hierarchy_government_desc: "Fundada por Caronte como un medio para unificar y ordenar el caótico más allá, se ha convertido en una burocracia estratificada y calcificada "dirigida" por Señores de la Muerte combatientes y basada en la esclavitud de miles de almas para su uso como esclavos o materias primas." #NT!
+ guild_government: "Gremios estigios" #NT!
+ guild_government_adjective: "Gremio" #NT!
+ guild_government_realm: "Gremios estigios" #NT!
+ guild_government_vassals_label: "El gremio [obligations|E] se basa en [prestige_level|E] de [liege|E]" #NT!
+ guild_government_desc: "En la sociedad estigia, el dominio de los Arcanoi está tradicionalmente controlado por los gremios estigios. Estas organizaciones promovían el uso, el estudio y la regulación de cada Arcano." #NT!
+ heretic_government: "Herejes" #NT!
+ heretic_government_adjective: "Hereje" #NT!
+ heretic_government_realm: "Herejes" #NT!
+ heretic_government_vassals_label: "Hereje [obligations|E] se basa en [piety_level|E] de [liege|E]" #NT!
+ heretic_government_desc: "Los herejes, espectros que defienden una perspectiva religiosa particular sobre el [underworld|E], se oponen a la Jerarquía. Muchos herejes enfatizan la Trascendencia como algo por lo que todos los espectros deberían esforzarse y usan sus recursos para ayudar a otros en sus esfuerzos." #NT!
+ ferryman_government: "Sociedad de barqueros" #NT!
+ ferryman_government_adjective: "Barquero" #NT!
+ ferryman_government_realm: "Sociedad de barqueros" #NT!
+ ferryman_government_vassals_label: "Los barqueros [obligations|E] se basan en [piety_level|E] de [liege|E]" #NT!
+ ferryman_government_desc: "La Sociedad de los Barqueros, o el Círculo de Juramento del Remo, comúnmente llamados los Barqueros por aquellos que no están familiarizados con sus secretos (una lista que abarca a casi todo el mundo), es una de las sociedades más antiguas y poderosas del [underworld|E]." #NT!
+ far_shore_government: "Orillas lejanas" #NT!
+ far_shore_government_adjective: "Costa lejana" #NT!
+ far_shore_government_realm: "Orillas lejanas" #NT!
+ far_shore_government_vassals_label: "Far Shore [obligations|E] se basa en [piety_level|E] de [liege|E]" #NT!
+ far_shore_government_desc: "Las Costas Lejanas son un territorio misterioso en el [underworld|E] controlado por entidades pitónicas llamadas Brillantes." #NT!
+ renegade_government: "Renegados" #NT!
+ renegade_government_adjective: "Renegado" #NT!
+ renegade_government_realm: "Renegados" #NT!
+ renegade_government_vassals_label: "Los renegados [obligations|E] se basan en [opinion|E]" #NT!
+ renegade_government_desc: "Los renegados son los espectros de Estigia, cuya agenda no consiste en seguir al gobierno de los muertos ni en buscar la Trascendencia. En cambio, los renegados marchan a su propio ritmo y se ocupan de una amplia gama de intereses, desde luchar activamente contra la Jerarquía hasta simplemente querer que los dejen a su suerte." #NT!
+ hive_mind_government: "Mente de la colmena" #NT!
+ hive_mind_government_adjective: "Colmena" #NT!
+ hive_mind_government_realm: "Mente de la colmena" #NT!
+ hive_mind_government_vassals_label: "Hive-Mind [obligations|E] son iguales para todos los Hive [vassals|E]" #NT!
+ hive_mind_government_desc: "Todos los Espectros son parte de la Mente Colmena, lo que les permite comunicarse entre sí telepáticamente." #NT!
+ hive_mind_government_obligations: "[GetGovernment( 'hive_mind_government' ).GetName] [obligations|E]" #NT!
+ infernal_court_government: "Corte infernal" #NT!
+ infernal_court_government_adjective: "Corte" #NT!
+ infernal_court_government_realm: "Corte infernal" #NT!
+ infernal_court_government_vassals_label: "Corte Infernal [obligations|E] se basan en cada [vassal|E]'s [feudal_contract|E]" #NT!
+ infernal_court_government_desc: "Los demonios que han regresado del Abismo generalmente se organizan en Cortes, que son restos de la Era de la Ira, cuando los Caídos gobernaban sus propios Bastiones en su guerra contra el Cielo." #NT!
+ yellow_springs_government: "Manantiales amarillos" #NT!
+ yellow_springs_government_adjective: "Manantiales amarillos" #NT!
+ yellow_springs_government_realm: "Manantiales amarillos" #NT!
+ yellow_springs_government_vassals_label: "Yellow Springs [obligations|E] se basa en [vassal|E]'s [feudal_contract|E]" #NT!
+ yellow_springs_government_desc: "El gobierno de las Fuentes Amarillas es una monarquía absoluta bajo el control de Yu Huang, la sombra de Qin Shihuang, primer emperador de China." #NT!
+ household_government: "Hogares" #NT!
+ household_government_adjective: "Familiar" #NT!
+ household_government_realm: "Hogares" #NT!
+ household_government_vassals_label: "Los hogares [obligations|E] se basan en [vassal|E]'s [feudal_contract|E]" #NT!
+ household_government_desc: "Una Casa es un grupo de Changelings vinculados a un feudo que sirven al gobernante local como vasallos o como sirvientes." #NT!
+  
+ celestial_army_government_modifier: "El gobierno del Ejército Celestial otorga una reducción del costo de creación de [title|E], una reducción de mantenimiento de oro de [army|E], una bonificación de probabilidad de guerra de IA y una bonificación mensual de [prestige|E]." #NT!
+ hierarchy_government_modifier: "La religión de la Legión otorga una bonificación de pérdida de [stress|E]." #NT!
+ guild_government_modifier: "La religión del gremio otorga a los Arcanoi una bonificación de [lifestyle|E] [experience|E]." #NT!
+ yellow_springs_government_modifier: "El gobierno de Yellow Springs otorga acceso a [jade_arcanoi|E] [lifestyle|E]." #NT!
+  
+ vampire_antagonistic: "Antagonista" #NT!
+ vampire_antagonistic_desc: "Pocas cosas pueden estimular tanto a las personas como las rivalidades o los celos. Es mejor que vigiles tu espalda en esta casa o podrías encontrarte con alguien que intente clavarle un cuchillo." #NT!
+ vampire_competitive: "Competitivo" #NT!
+ vampire_competitive_desc: "La competencia en la familia puede ser algo saludable. Impulsa a los miembros de la casa a superarse entre sí, ya sea en el campo de batalla o en un intento por asegurarse el trono..." #NT!
+ vampire_impassive: "Impasivo" #NT!
+ vampire_impassive_desc: "¿Por qué gastar tiempo y energía preocupándose por lo que hace el resto de la familia? Estos miembros de la casa tienden a preocuparse principalmente por sí mismos." #NT!
+ vampire_friendly: "Amigable" #NT!
+ vampire_friendly_desc: "Puede que no siempre estén de acuerdo, pero los miembros de esta casa siempre mantienen una relación amistosa." #NT!
+ vampire_harmonious: "Armonioso" #NT!
+ vampire_harmonious_desc: "Una casa en perfecta armonía. Los miembros de esta casa hacen lo posible por mantenerse unidos y prestarse ayuda en todo momento." #NT!
+  
+ vampire_tax_slot: "Influencia vasalla" #NT!
+  
+ #blood_tithe_required_tax_collector: "Diezmo de sangre" #NT!
+ #blood_tithe_required_tax_collector_desc: "#emphasis #bold Si se lo piden, el [vassal] debe proporcionar una de las vacas a la corte de su [liege]. Normalmente, esto significa la muerte del mortal.#!#!" #NT!
+ #blood_tithe_required_tax_collector_flavor_desc: "#flavor El señor del dominio pide sangre, y recibirá lo que le corresponde.#!" #NT!
+  # 
+ #progeny_rights_tax_collector: "Derechos de progenie" #NT!
+ #progeny_rights_tax_collector_flavor_desc: "#emphasis #bold “Sólo podrás [Sire|E] con el permiso y la bendición de tu mayor. Crear es la providencia de los más cercanos a mí, porque ellos serán responsables. Rompe esto y tanto tú como tu progenie moriréis”. Así habló Caín.#!" #NT!
+ #progeny_rights_tax_collector_desc: "#flavor \n\n#emphasis #bold El [vassal] no tiene derecho a crear descendencia por su [liege]. Incluso la creación de ghouls está prohibida.#!#!" #NT!
+  # 
+ legacy_rights_protected_tax_collector: "Derechos heredados" #NT!
+ legacy_rights_protected_tax_collector_desc: "#emphasis #bold El [liege|E] no puede [demand_conversion|E] de los [vassal|E]\nEl [liege|E] no puede usar [convert_county|E] en las tierras [vassals|E].#!#!" #NT!
+ legacy_rights_protected_tax_collector_flavor_desc: "#flavor “Tu sangre te convierte en mi prole, creada a mi imagen. Mi maldición es tuya y mi salvación es tuya. Yo estoy delante y por encima de ti como regente divino. Yo soy el camino, mis Tradiciones mi pacto. Renuncia a mí y renuncia a toda esperanza”. Así habló Caín.#!" #NT!
+  
+ domain_revocation_rights_protected_tax_collector: "Derechos de dominio" #NT!
+ domain_revocation_rights_protected_tax_collector_desc: "#emphasis #bold El [liege|E] no puede revocar al [vassals_possessive|E] [titles|E]\n\n El [vassal] tiene garantizada la propiedad de su [titles], lo que evita que el [liege|E] lo revoque, independientemente de que el [liege|E] tenga un [revoke_title_reason] o no.#bold0" #NT!
+ domain_revocation_rights_protected_tax_collector_flavor_desc: "#flavor “Como soy el amo de Nod, tu dominio es asunto tuyo. Tú eres su amo, y todos respetarán esto o sufrirán tu ira. Todos se presentarán al entrar, y tú los protegerás a su vez. Por derecho, se te permite cazar dentro de los límites de tu dominio, su sangre es tuya. Acepta su responsabilidad, administra tu dominio y muestra a los demás el mismo respeto que esperas”. Así habló Caín.#!" #NT!
+  
+ guaranteed_council_tax_collector: "Posición del Consejo" #NT!
+ guaranteed_council_tax_collector_desc: "#emphasis #bold Este vasallo siempre puede abrirse paso en el consejo de su señor. #!#!" #NT!
+ guaranteed_council_tax_collector_flavor_desc: "#flavor Un asiento en la prestigiosa mesa del consejo de un poderoso señor es un honor que algunos creen que les corresponde.#!" #NT!
+  
+ POD_strict_taxation_tax_collector: "Impuestos severos" #NT!
+ POD_strict_taxation_tax_collector_flavor_desc: "#flavor Quieres oro. Ellos tienen oro. Una pareja perfecta.#!" #NT!
+  
+ POD_tributary_tax_collector: "Afluente" #NT!
+ POD_tributary_tax_collector_desc: "#emphasis #bold El [liege|E] no puede revocar el [vassals_possessive|E] [titles|E]\n\nEl [vassal] tiene garantizada la propiedad de sus [titles], lo que impide que el [liege|E] los revoque, independientemente de que el [liege|E] tenga un [revoke_title_reason] o no. El [liege|E] no puede usar el #bold1 del #bold2\nEl [liege|E] no puede usar el #bold4 en las tierras del #bold5.#bold6" #NT!
+ POD_tributary_tax_collector_flavor_desc: "#flavor Este vasallo apenas reconoce tu autoridad. Tu control sobre su tierra es, en el mejor de los casos, tenue.#!" #NT!
+  
+ POD_hard_control_tax_collector: "Control absoluto" #NT!
+ POD_hard_control_tax_collector_desc: "#emphasis #bold Los vasallos no pueden declarar ninguna guerra sin un gancho sobre su señor.#!#!" #NT!
+ POD_hard_control_tax_collector_flavor_desc: "#flavor Pagarán. Proporcionarán tropas. Obedecerán. No tienen otra opción.#!" #NT!
+  
+ #vampire_tax_collector_court_position: "Sátrapa" #NT!
+ #vampire_tax_collector_court_position_desc: "La autoridad central encarga al sátrapa mantener la lealtad de los dominios jurando lealtad a un vampiro más poderoso. Son, a todos los efectos, la mano del Príncipe cuando trata con sus subordinados.\nEl concepto de sátrapas fue inventado por Mitra mezclando su herencia persa con el feudalismo inglés. Luego, el término se ha extendido por todas partes para representar a los agentes de vampiros poderosos que tratan con sus vasallos." #NT!
+  
+ rose_treaty: "Tratado de la rosa" #NT!
+ rose_treaty_granted_desc: "#emphasis #bold [vassal|E] Privilegios:#!#!\nThe [liege|E] no puede [demand_conversion|E] de los [vassal|E]\nLos [liege|E] no pueden usar [convert_county|E] en las tierras de los [vassals|E]\n\n #bold0 Firmado en 1215, el tratado de la Rosa le dio a Mitra un imperio unificado para gobernar y le dio a sus súbditos un marco bajo el cual operar. Es uno de los primeros sistemas de gobierno vampíricos que se basa en el feudalismo para administrar un reino.#bold1" #NT!
+ rose_treaty_granted: "Tratado de la Rosa Aceptado" #NT!
+ rose_treaty_granted_short: "Aceptado" #NT!
+ rose_treaty_none: "Tratado de la Rosa Negado" #NT!
+ rose_treaty_none_short: "Denegado" #NT!
+  
+ roaming_court: "Tribunal itinerante" #NT!
+ roaming_court_granted_desc: "#flavor Creada por Hardestadt como una forma de vigilar siempre a sus vasallos (y hacerles temer su posible llegada en cualquier momento), la corte errante de los Cainitas alemanes se ha convertido en un elemento básico de esta región.#!" #NT!
+ roaming_court_granted: "Corte itinerante opresiva" #NT!
+ roaming_court_granted_short: "Opresivo" #NT!
+ roaming_court_none: "Tribunal de itinerancia benigna" #NT!
+ roaming_court_none_short: "Benigno" #NT!
+  
+ #roaming_court_tax_collector: "Tribunal itinerante" #NT!
+ #roaming_court_tax_collector_flavor_desc: "#flavor Creada por Hardestadt como una forma de vigilar siempre a sus vasallos (y hacerles temer su posible llegada en cualquier momento), la corte errante de los Cainitas alemanes se ha convertido en un elemento básico de esta región.#!" #NT!
+  
+ #ravnos_war_machine_tax_collector: "Guerrero eterno" #NT!
+ #ravnos_war_machine_tax_collector_flavor_desc: "#flavor La guerra eterna por la India requiere soldados, no comerciantes. Estás en el frente o estás fuera.#!" #NT!
+  
+ ravnos_war_machine: "Ravnos Kshatriya" #NT!
+ ravnos_war_machine_granted_desc: "#flavor La Guerra Eterna por la India requiere soldados, no comerciantes. Estás en primera línea o estás fuera.#!" #NT!
+ ravnos_war_machine_granted: "Listo para la guerra" #NT!
+ ravnos_war_machine_granted_short: "Preparado" #NT!
+ ravnos_war_machine_none: "A gusto" #NT!
+ ravnos_war_machine_none_short: "aliviado" #NT!
+  
+ #free_state_tax_collector: "Estado libre" #NT!
+ #free_state_tax_collector_flavor_desc: "#flavor No eres un tirano. Deja que tus camaradas gobiernen su tierra como quieran y difundan la revuelta por su cuenta.#!" #NT!
+ #free_state_tax_collector_desc: "#emphasis #bold El [vassal|E] paga menos a [piety|E] por usar [holy_war|E] [casus_bellis|E].\nEs más probable que el vasallo inicie guerras.\n\nEl [vassal] tiene garantizada la propiedad de sus [titles], lo que evita que el [liege|E] los revoque, independientemente de que el [liege|E] tenga un #bold0 o no.#bold1" #NT!
+ #need_anarch_vassal_tt: "El vasallo debe ser de la Vía Furores, la Vía Liberatio o la fe Anarquista Libre." #NT!
+  
+ free_state: "Estado libre" #NT!
+ free_state_granted_desc: "#emphasis #bold El [vassal|E] paga menos que el [piety|E] por usar el [holy_war|E] [casus_bellis|E].\nEs más probable que el vasallo inicie guerras.\n\nEl [vassal] tiene garantizada la propiedad de su [titles], lo que evita que el [liege|E] lo revoque, independientemente de que el [liege|E] tenga un #bold0 o no.#bold1 \n\n#bold2 No eres un tirano. Deja que tus camaradas gobiernen su tierra como quieran y difundan la revuelta por su cuenta.#bold3" #NT!
+ free_state_granted: "Estado libre" #NT!
+ free_state_granted_short: "Gratis" #NT!
+ free_state_none: "Estado encadenado" #NT!
+ free_state_none_short: "Encadenado" #NT!
+  
+ #cult_tax_collector: "Influencia del culto" #NT!
+ #cult_tax_collector_flavor_desc: "#flavor Los verdaderos creyentes pueden confiar en tu indulgencia como compañero practicante. O al menos eso esperan.#!" #NT!
+ #cult_tax_collector_desc: "#emphasis #bold Al [vassal] se le garantiza la propiedad de sus [titles], lo que evita que el [liege|E] los revoque, independientemente de que el [liege|E] tenga un [revoke_title_reason] o no.#!#!" #NT!
+ #vassal_should_same_faith_tt: "El vasallo debe ser de la misma fe que tú." #NT!
+  
+ cult_contract: "Culto" #NT!
+ cult_contract_granted_desc: "#emphasis #bold El [vassal] tiene garantizada la propiedad de su [titles], lo que impide que el [liege|E] lo revoque, independientemente de que el [liege|E] tenga un [revoke_title_reason] o no.#!#! \n\n#flavor Los verdaderos creyentes pueden confiar en tu indulgencia como compañero practicante. O al menos eso esperan.#!" #NT!
+ cult_contract_granted: "Estado de culto" #NT!
+ cult_contract_granted_short: "Culto" #NT!
+ cult_contract_none: "Estado laico" #NT!
+ cult_contract_none_short: "Secular" #NT!
+  
+ #the_pyramid_tax_collector: "La pirámide" #NT!
+ #the_pyramid_tax_collector_flavor_desc: "#flavor Los Tremere solo sobrevivirán si se aplica una disciplina implacable. Todos los recursos deben regresar a la cima de la pirámide.#!" #NT!
+ #vassal_should_have_pyramid_tt: "El vasallo debe tener el principio de la Pirámide en su fe." #NT!
+  
+ pyramid_contract: "La pirámide" #NT!
+ pyramid_contract_granted_desc: "#flavor Los Tremere solo sobrevivirán si se aplica una disciplina implacable. Todos los recursos deben regresar a la cima de la pirámide.#!" #NT!
+ pyramid_contract_granted: "Contrato piramidal" #NT!
+ pyramid_contract_granted_short: "Piramidal" #NT!
+ pyramid_contract_none: "Contrato regular" #NT!
+ pyramid_contract_none_short: "Regular" #NT!
+  
+ #tzimisce_hospitality_tax_collector: "Hospitalidad Tzimisce" #NT!
+ #tzimisce_hospitality_tax_collector_flavor_desc: "#flavor Les estás dejando vivir. Deberían estar agradecidos.#!" #NT!
+ #tzimisce_hospitality_tax_collector_desc: "#emphasis #bold Los vasallos no pueden declarar ninguna guerra sin un gancho sobre su señor.#!#!" #NT!
+  
+ tzimisce_hospitality: "Hospitalidad Tzimisce" #NT!
+ tzimisce_hospitality_granted_desc: "#emphasis #bold Los vasallos no pueden declarar ninguna guerra sin que su señor les ponga un anzuelo.#!#! \n\n #flavor Les estás dejando vivir. Deberían estar agradecidos.#!" #NT!
+ tzimisce_hospitality_granted: "Invitado bienvenido" #NT!
+ tzimisce_hospitality_granted_short: "Bienvenido" #NT!
+ tzimisce_hospitality_none: "Invitado no deseado" #NT!
+ tzimisce_hospitality_none_short: "Molesto" #NT!
+  
+ #vampire_tax_slot_add: "Número de jurisdicciones fiscales disponibles:" #NT!
+  
+ #show_of_force_tax_collector: "Demostración de fuerza" #NT!
+ #show_of_force_tax_collector_flavor_desc: "#flavor ¿Solo respetan la fuerza? Tú les darás fuerza. #!" #NT!
+  
+ POD_is_giovanni_trigger_tt: "debe ser un giovanni" #NT!
+  
+ #family_business_tax_collector: "Negocio familiar" #NT!
+ #family_business_tax_collector_flavor_desc: "#flavor La Familia protege a los suyos... pero no espera hacerlo gratis.#!" #NT!
+ #family_business_tax_collector_desc: "#emphasis #bold Al [vassal] se le garantiza la propiedad de sus [titles], lo que evita que el [liege|E] los revoque, independientemente de que el [liege|E] tenga un [revoke_title_reason] o no.#!#!" #NT!
+  
+ family_business: "Negocio familiar" #NT!
+ family_business_granted_desc: "#emphasis #bold Al [vassal] se le garantiza la propiedad de su [titles], lo que evita que el [liege|E] los revoque, independientemente de que el [liege|E] tenga un [revoke_title_reason] o no.#!#! \n\n #flavor La Familia protege a los suyos... pero no espera hacerlo gratis.#!" #NT!
+ family_business_granted: "La familia primero" #NT!
+ family_business_granted_short: "Familia" #NT!
+ family_business_none: "El individuo primero" #NT!
+ family_business_none_short: "Individual" #NT!
+  
+ #eternal_senate_tax_collector: "Impuestos senatoriales" #NT!
+ #eternal_senate_tax_collector_flavor_desc: "#flavor El Senado Eterno de Antasia hace que todos paguen sus cuotas como cualquier otra organización política, pero su esfuerzo por hacer que los vasallos se sientan apreciados durante el proceso se nota.#!" #NT!
+  
+ #show_of_force_tax_collector_tt: "Tu recaudador de impuestos necesita más destreza que los vasallos gravados." #NT!
+  
+ eternal_senate_contract: "Senador eterno" #NT!
+ eternal_senate_contract_granted_desc: "#flavor El Senado Eterno de Antasia hace que todos paguen sus cuotas como cualquier otra organización política. Una silla senatorial es un título prestigioso para un vasallo, pero también costoso.#!" #NT!
+ eternal_senate_contract_granted: "Senador eterno" #NT!
+ eternal_senate_contract_granted_short: "Senador" #NT!
+ eternal_senate_contract_none: "Plebeyo" #NT!
+ eternal_senate_contract_none_short: "Plebeyo" #NT!
+  
+  
+ vampire_tax_collector_obligations: "[tax_collector|E] Aptitud" #NT!
+  
+ POD_frontier_region_tax_collector: "Frontera imperial" #NT!
+ POD_frontier_region_tax_collector_flavor_desc: "#flavor Una región encargada de proporcionar un fuerte baluarte contra la horda de bárbaros en nuestras fronteras.#!" #NT!
+  
+ POD_tightened_bureaucracy_tax_collector: "Burocracia reforzada" #NT!
+ POD_tightened_bureaucracy_tax_collector_flavor_desc: "#flavor Con un agente competente al frente de la investigación, seguramente podrás encontrar algunas "irregularidades" que necesiten corrección. #!" #NT!
+ POD_tightened_bureaucracy_tax_collector_tt: "Tu recaudador de impuestos debe tener más administración que los vasallos que pagan impuestos." #NT!
+  
+ POD_core_region_tax_collector: "Región central" #NT!
+ POD_core_region_tax_collector_flavor_desc: "#flavor Directamente supervisada por tu corte, la región central es tu centro de poder donde tu influencia se siente más.#!" #NT!
+ POD_core_region_tax_collector_tt: "Sólo puedes tener una región central." #NT!
+  
+ POD_mandate_of_hell_tax_collector: "Mandato del infierno" #NT!
+ POD_mandate_of_hell_tax_collector_flavor_desc: "#flavor Eres el Ancestro gobernante. Como tal, todo, desde los soldados hasta el oro, debe llegar a ti. Los gobernantes menores bajo tu mando deben recordar ese hecho. #!" #NT!
+  
+ #kueijin_tax_slot: "Influencia vasalla" #NT!
+  
+ #hunters_tax_slot: "Influencia vasalla" #NT!
+  
+ #POD_clerical_oversight_tax_collector: "Supervisión administrativa" #NT!
+ #POD_clerical_oversight_tax_collector_flavor_desc: "#flavor Al utilizar a miembros de confianza del clero local para que lo representen, se asegura de que los vasallos se mantengan en línea en asuntos tanto espirituales como temporales.#!" #NT!
+ #POD_clerical_oversight_tax_collector_desc: "#emphasis #bold Los vasallos no pueden declarar ninguna guerra sin un gancho sobre su señor.#!#!" #NT!
+  
+ POD_clerical_oversight: "Supervisión administrativa" #NT!
+ POD_clerical_oversight_granted_desc: "#emphasis #bold Los vasallos no pueden declarar ninguna guerra sin un gancho sobre su señor.#!#! \n\n #flavor Al utilizar miembros confiables del clero local para representarte, te aseguras de que los vasallos se mantengan a raya en asuntos tanto espirituales como temporales.#!" #NT!
+ POD_clerical_oversight_granted: "Supervisión administrativa" #NT!
+ POD_clerical_oversight_granted_short: "Vigilancia" #NT!
+ POD_clerical_oversight_none: "Sin supervisión administrativa" #NT!
+ POD_clerical_oversight_none_short: "Ninguno" #NT!
+  
+ #POD_popular_donations_tax_collector: "Donaciones populares" #NT!
+ #POD_popular_donations_tax_collector_flavor_desc: "#flavor Tu causa es justa y la gente de esta zona lo sabe. Están felices de financiar a los valientes defensores que los protegen de los horrores de la noche. Organizarás esta generosidad para que sea un activo rentable para tu pedido.#!" #NT!
+  
+ POD_popular_donations: "Donaciones populares" #NT!
+ POD_popular_donations_granted_desc: "#flavor Tu causa es justa y la gente de esta zona lo sabe. Están felices de financiar a los valientes defensores que los protegen de los horrores de la noche. Organizarás esta generosidad para que sea un activo rentable para tu pedido.#!" #NT!
+ POD_popular_donations_granted: "Donaciones populares" #NT!
+ POD_popular_donations_granted_short: "Donaciones" #NT!
+ POD_popular_donations_none: "No hay donaciones populares" #NT!
+ POD_popular_donations_none_short: "Ninguno" #NT!
+  
+ #POD_popular_recruits_tax_collector: "Reclutamiento popular" #NT!
+ #POD_popular_recruits_tax_collector_flavor_desc: "#flavor Los jóvenes acuden en masa a tu causa justa en esta región, deseosos de unirse a la lucha contra la oscuridad. Tú fomentarás esto estableciendo centros de reclutamiento.#!" #NT!
+  
+ POD_popular_recruits: "Reclutamiento popular" #NT!
+ POD_popular_recruits_granted_desc: "#flavor Los jóvenes acuden en masa a tu causa justa en esta región, deseosos de unirse a la lucha contra la oscuridad. Tú fomentarás esto estableciendo centros de reclutamiento.#!" #NT!
+ POD_popular_recruits_granted: "Reclutamiento popular" #NT!
+ POD_popular_recruits_granted_short: "Reclutamiento" #NT!
+ POD_popular_recruits_none: "Sin reclutamiento popular" #NT!
+ POD_popular_recruits_none_short: "Ninguno" #NT!
+  
+ #POD_training_center_tax_collector: "Centro de entrenamiento" #NT!
+ #POD_training_center_tax_collector_flavor_desc: "#flavor Enfocas esta región en brindar el mejor y más costoso régimen de entrenamiento para los soldados que pronto estarán en el frente contra las fuerzas de la oscuridad.#!" #NT!
+  
+ POD_training_center: "Centro de entrenamiento" #NT!
+ POD_training_center_granted_desc: "#flavor Enfocas esta región en brindar el mejor y más costoso régimen de entrenamiento para los soldados que pronto estarán en el frente contra las fuerzas de la oscuridad.#!" #NT!
+ POD_training_center_granted: "Centro de entrenamiento" #NT!
+ POD_training_center_granted_short: "Capacitación" #NT!
+ POD_training_center_none: "Sin centro de formación" #NT!
+ POD_training_center_none_short: "Ninguno" #NT!
+  
+ #POD_fortress_center_tax_collector: "Zona fortificada" #NT!
+ #POD_fortress_center_tax_collector_flavor_desc: "#flavor Esta región debe saber que puede ser asediada por las fuerzas de la oscuridad en cualquier momento. Te asegurarás de que estén preparados para ello.#!" #NT!
+  
+ POD_fortress_center: "Centro de la fortaleza" #NT!
+ POD_fortress_center_granted_desc: "#flavor Esta región debe saber que puede ser asediada por las fuerzas de la oscuridad en cualquier momento. Te asegurarás de que estén preparados para ello.#!" #NT!
+ POD_fortress_center_granted: "Centro de la fortaleza" #NT!
+ POD_fortress_center_granted_short: "Fortaleza" #NT!
+ POD_fortress_center_none: "No hay centro de fortaleza" #NT!
+ POD_fortress_center_none_short: "Ninguno" #NT!
+  
+ #POD_consolidation_effort_tax_collector: "Esfuerzos de consolidación" #NT!
+ #POD_consolidation_effort_tax_collector_flavor_desc: "#flavor Luchas por los inocentes. Cuando termine la batalla, es hora de atender al rebaño y ayudarlos a recuperarse.#!" #NT!
+  
+ POD_consolidation_effort: "Esfuerzo de consolidación" #NT!
+ POD_consolidation_effort_granted_desc: "#flavor Luchas por los inocentes. Cuando la batalla termina, es hora de cuidar al rebaño y ayudarlo a recuperarse.#!" #NT!
+ POD_consolidation_effort_granted: "Esfuerzo de consolidación" #NT!
+ POD_consolidation_effort_granted_short: "Consolidación" #NT!
+ POD_consolidation_effort_none: "Sin esfuerzo de consolidación" #NT!
+ POD_consolidation_effort_none_short: "Ninguno" #NT!
+  
+ court_position_ghoul_trait: "Ghoul" #NT!
+  
+ #demons_tax_slot: "Influencia vasalla" #NT!
+  
+ #POD_infernal_pact_tax_collector: "Pacto infernal" #NT!
+ #POD_infernal_pact_tax_collector_flavor_desc: "#flavor Eres tu dueño. Su sumisión es tu fuerza.#!" #NT!
+  
+ POD_infernal_pact: "Pacto infernal" #NT!
+ POD_infernal_pact_granted_desc: "#flavor Eres tu dueño. Su sumisión es tu fuerza.#!" #NT!
+ POD_infernal_pact_granted: "Pacto infernal" #NT!
+ POD_infernal_pact_granted_short: "Pacto" #NT!
+ POD_infernal_pact_none: "No hay pacto infernal" #NT!
+ POD_infernal_pact_none_short: "Sin pacto" #NT!
+  
+ #POD_faith_pact_tax_collector: "Pacto de Adoración" #NT!
+ #POD_faith_pact_tax_collector_flavor_desc: "#flavor Su fe te da poder. Un pequeño remanente de días pasados, cuando la humanidad escuchó tu llamado y te miró con asombro.#!" #NT!
+  
+ POD_faith_pact: "Pacto del alma" #NT!
+ POD_faith_pact_granted_desc: "#flavor Su fe te da poder. Un pequeño remanente de días pasados, cuando la humanidad escuchó tu llamado y te miró con asombro.#!" #NT!
+ POD_faith_pact_granted: "Pacto del alma" #NT!
+ POD_faith_pact_granted_short: "Pacto" #NT!
+ POD_faith_pact_none: "Sin pacto de almas" #NT!
+ POD_faith_pact_none_short: "Sin pacto" #NT!
+  
+ #POD_obedience_pact_tax_collector: "Pacto de obediencia" #NT!
+ #POD_obedience_pact_tax_collector_flavor_desc: "#flavor No pueden mover un dedo sin pedirte permiso. Como debería ser con toda la humanidad.#!" #NT!
+ #POD_obedience_pact_tax_collector_desc: "#emphasis #bold Los vasallos no pueden declarar ninguna guerra sin un gancho sobre su señor.#!#!" #NT!
+  
+ POD_obedience_pact: "Pacto de obediencia" #NT!
+ POD_obedience_pact_granted_desc: "#emphasis #bold Los vasallos no pueden declarar ninguna guerra sin que su señor les ponga un garfio.#!#! \n\n #flavor No pueden mover un dedo sin pedirte permiso. Como debería ser con toda la humanidad.#!" #NT!
+ POD_obedience_pact_granted: "Pacto de obediencia" #NT!
+ POD_obedience_pact_granted_short: "Pacto" #NT!
+ POD_obedience_pact_none: "No hay pacto de obediencia" #NT!
+ POD_obedience_pact_none_short: "Sin pacto" #NT!
+  
+ #POD_iron_pact_tax_collector: "Pacto de hierro" #NT!
+ #POD_iron_pact_tax_collector_flavor_desc: "#flavor Lucharán y morirán por ti. Y se considerarán bendecidos durante todo ese tiempo.#!" #NT!
+  
+ POD_iron_pact: "Pacto de hierro" #NT!
+ POD_iron_pact_granted_desc: "#flavor Lucharán y morirán por ti. Y se considerarán bendecidos durante todo ese tiempo.#!" #NT!
+ POD_iron_pact_granted: "Pacto de hierro" #NT!
+ POD_iron_pact_granted_short: "Pacto" #NT!
+ POD_iron_pact_none: "Sin pacto de hierro" #NT!
+ POD_iron_pact_none_short: "Sin pacto" #NT!
+  
+ #POD_gold_pact_tax_collector: "Pacto del oro" #NT!
+ #POD_gold_pact_tax_collector_flavor_desc: "#flavor Al parecer, es mejor servir tanto a Dios como a Mammón.#!" #NT!
+  
+ POD_gold_pact: "Pacto del oro" #NT!
+ POD_gold_pact_granted_desc: "#flavor Al parecer, es mejor servir tanto a Dios como a Mammón.#!" #NT!
+ POD_gold_pact_granted: "Pacto del oro" #NT!
+ POD_gold_pact_granted_short: "Pacto" #NT!
+ POD_gold_pact_none: "No hay pacto del oro" #NT!
+ POD_gold_pact_none_short: "Sin pacto" #NT!
+  
+ #POD_glory_pact_tax_collector: "Pacto Glorioso" #NT!
+ #POD_glory_pact_tax_collector_flavor_desc: "#flavor Cantan tus alabanzas y elevan tu nombre a los Cielos en desafío a Aquel que nos abandonó a todos.#!" #NT!
+  
+ POD_glory_pact: "Pacto de gloria" #NT!
+ POD_glory_pact_granted_desc: "#flavor Cantan tus alabanzas y elevan tu nombre a los Cielos en desafío a Aquel que nos abandonó a todos.#!" #NT!
+ POD_glory_pact_granted: "Pacto de Gloria" #NT!
+ POD_glory_pact_granted_short: "Pacto" #NT!
+ POD_glory_pact_none: "Sin pacto de gloria" #NT!
+ POD_glory_pact_none_short: "Sin pacto" #NT!
+  
+ imperial_tax_slot: "Influencia vasalla" #NT!
+  
+ imperial_unity_government: "Administración Imperial" #NT!
+ imperial_unity_government_adjective: "Imperial" #NT!
+ imperial_unity_government_realm: "Reino imperial" #NT!
+ imperial_unity_government_vassals_label: "Imperial [obligations|E] se basan en jurisdicciones fiscales." #NT!
+ imperial_unity_government_desc: "Parte de un reino enorme, que gobierna con la ayuda de un número creciente de intermediarios." #NT!
+  
+ imperial_no_unity_government: "Administración Imperial" #NT!
+ imperial_no_unity_government_adjective: "Imperial" #NT!
+ imperial_no_unity_government_realm: "Reino imperial" #NT!
+ imperial_no_unity_government_vassals_label: "Imperial [obligations|E] se basan en jurisdicciones fiscales." #NT!
+ imperial_no_unity_government_desc: "Parte de un reino enorme, que gobierna con la ayuda de un número creciente de intermediarios." #NT!
+  
+ imperial_tribal_government: "Administración Imperial" #NT!
+ imperial_tribal_government_adjective: "Imperial" #NT!
+ imperial_tribal_government_realm: "Reino imperial" #NT!
+ imperial_tribal_government_vassals_label: "Imperial [obligations|E] se basan en jurisdicciones fiscales." #NT!
+ imperial_tribal_government_desc: "Parte de un reino enorme, que gobierna con la ayuda de un número creciente de intermediarios." #NT!
+  
+ #POD_seru_court_tax_collector: "Tribunal de Seru" #NT!
+ #POD_seru_court_tax_collector_desc: "#emphasis #bold El [liege|E] no puede [demand_conversion|E] de los [vassal|E]\nEl [liege|E] no puede usar [convert_county|E] en las tierras [vassals|E].#!#!" #NT!
+ #POD_seru_court_tax_collector_flavor_desc: "#flavor Este sistema, que recibe su nombre del tradicional evento del Antiguo Egipto en el que un grupo de ancianos de una comunidad rural se ocupaba de asuntos judiciales, representa el nivel mínimo de supervisión que una momia puede ofrecer a sus vasallos.#!" #NT!
+  
+ POD_seru_court: "Tribunal de Seru" #NT!
+ POD_seru_court_granted_desc: "#emphasis #bold El [liege|E] no puede [demand_conversion|E] de los [vassal|E]\nEl [liege|E] no puede usar [convert_county|E] en las tierras [vassals|E].#!#! \n\n #flavor Este sistema, que lleva el nombre del tradicional evento del Antiguo Egipto en el que un grupo de ancianos de una comunidad rural se ocupaba de asuntos judiciales, representa la menor cantidad de supervisión que una Momia puede ofrecer a sus vasallos.#bold0" #NT!
+ POD_seru_court_granted: "Tribunal de Seru" #NT!
+ POD_seru_court_granted_short: "Corte" #NT!
+ POD_seru_court_none: "No seru corte" #NT!
+ POD_seru_court_none_short: "Sin tribunal" #NT!
+  
+ #POD_kenbet_court_tax_collector: "Tribunal de Kenbet" #NT!
+ #POD_kenbet_court_tax_collector_flavor_desc: "#flavor Este sistema, que recibe su nombre del tribunal de justicia regional tradicional del Antiguo Egipto, representa el nivel intermedio de supervisión que una momia puede aplicar a sus vasallos.#!" #NT!
+  
+ POD_kenbet_court: "Tribunal de Kenbet" #NT!
+ POD_kenbet_court_granted_desc: "#flavor Este sistema, que recibe su nombre del tribunal de justicia regional tradicional del Antiguo Egipto, representa el nivel intermedio de supervisión que una momia puede aplicar a sus vasallos.#!" #NT!
+ POD_kenbet_court_granted: "Tribunal de Kenbet" #NT!
+ POD_kenbet_court_granted_short: "Corte" #NT!
+ POD_kenbet_court_none: "No hay cancha de Kenbet" #NT!
+ POD_kenbet_court_none_short: "Sin tribunal" #NT!
+  
+ #POD_djadjat_court_tax_collector: "Tribunal de Djadjat" #NT!
+ #POD_djadjat_court_tax_collector_desc: "#emphasis #bold Los vasallos no pueden declarar ninguna guerra sin un gancho sobre su señor.#!#!" #NT!
+ #POD_djadjat_court_tax_collector_flavor_desc: "#flavor Este sistema, que recibe su nombre de la tradicional corte imperial de justicia del Antiguo Egipto, representa el nivel más estricto de supervisión que una momia puede aplicar a sus vasallos.#!" #NT!
+  
+ POD_djadjat_court: "Tribunal de Djadjat" #NT!
+ POD_djadjat_court_granted_desc: "#emphasis #bold Los vasallos no pueden declarar ninguna guerra sin un gancho sobre su señor.#!#! \n\n #flavor Este sistema, que lleva el nombre de la tradicional corte imperial de justicia del Antiguo Egipto, representa la cantidad más estricta de supervisión que una Momia puede aplicar a sus vasallos.#!" #NT!
+ POD_djadjat_court_granted: "Tribunal de Djadjat" #NT!
+ POD_djadjat_court_granted_short: "Corte" #NT!
+ POD_djadjat_court_none: "Tribunal No Djadjat" #NT!
+ POD_djadjat_court_none_short: "Sin tribunal" #NT!
+  
+ #POD_nomarch_oversight_tax_collector: "Supervisión del nomarca" #NT!
+ #POD_nomarch_oversight_tax_collector_flavor_desc: "#flavor El nomarca es un gobernador regional que supervisa la provincia y se asegura de que todos los hombres capaces estén disponibles para los proyectos más importantes del reino.#!" #NT!
+  
+ POD_nomarch_oversight: "Supervisión del nomarca" #NT!
+ POD_nomarch_oversight_granted_desc: "#flavor El nomarca es un gobernador regional que supervisa la provincia y se asegura de que todos los hombres capaces estén disponibles para los proyectos más importantes del reino.#!" #NT!
+ POD_nomarch_oversight_granted: "Supervisión del nomarca" #NT!
+ POD_nomarch_oversight_granted_short: "Vigilancia" #NT!
+ POD_nomarch_oversight_none: "Sin supervisión del nomarca" #NT!
+ POD_nomarch_oversight_none_short: "Sin supervisión" #NT!
+  
+  

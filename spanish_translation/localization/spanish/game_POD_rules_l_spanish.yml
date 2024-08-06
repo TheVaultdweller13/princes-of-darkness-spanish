@@ -1,0 +1,144 @@
+﻿l_spanish:
+ POD_gamerule: "#color:{0.7,0,0};glow_color:{1,0,0,0.5} [Concept('princes_of_darkness','PoD:')]#!" #NT!
+ #POD_gamerule: "[Concept('princes_of_darkness','@POD_icon! ')]" #NT!
+  
+ rule_NPC_vampire_ruler_lifestyle_learning: "$POD_gamerule$ Aprendizaje antiguo" #NT!
+ setting_NPC_vampire_rulers_do_not_learn_lifestyle_perks: "Los ancianos no aprenden trucos nuevos." #NT!
+ setting_NPC_vampire_rulers_do_not_learn_lifestyle_perks_desc: "Los personajes no jugadores vampiros gobernantes NO aprenden ventajas de estilo de vida." #NT!
+ setting_NPC_vampire_rulers_learn_lifestyle_perks: "Los ancianos aprenden nuevos trucos." #NT!
+ setting_NPC_vampire_rulers_learn_lifestyle_perks_desc: "Los personajes vampiros gobernantes no jugadores aprenden ventajas de estilo de vida después de comenzar el juego." #NT!
+  
+ rule_pod_lore_restrictions: "$POD_gamerule$ Restricciones Loreful" #NT!
+ setting_pod_lore_restrictions_default: "Restricciones predeterminadas" #NT!
+ setting_pod_lore_restrictions_default_desc: "Una experiencia equilibrada, adecuada para la mayoría de los jugadores." #NT!
+ setting_pod_lore_restrictions_more: "Más restricciones" #NT!
+ setting_pod_lore_restrictions_more_desc: "[storyteller_mode_with_icon|E] está activo. Adecuado para jugadores experimentados. #N Esto hará que la experiencia de juego sea más difícil. #!" #NT!
+ setting_pod_lore_restrictions_less: "Menos restricciones" #NT!
+ setting_pod_lore_restrictions_less_desc: "[samuel_haight_mode_with_icon|E] está activo. Adecuado para jugadores que disfrutan de personajes con superpoderes. #N Esto dará lugar a una experiencia de juego más sencilla y a resultados ridículos.#!" #NT!
+  
+ rule_age_of_inquisition_difficulty: "$POD_gamerule$ Dificultad de la Inquisición" #NT!
+ setting_age_of_inquisition_difficulty_easy: "Inquisición fácil" #NT!
+ setting_age_of_inquisition_difficulty_easy_desc: "Los Inquisidores del final del juego apenas harán mella en los reinos de los vampiros." #NT!
+ setting_age_of_inquisition_difficulty_default: "Inquisición por defecto" #NT!
+ setting_age_of_inquisition_difficulty_default_desc: "Los Inquisidores del final del juego sacudirán el mundo de los vampiros, pero luego serán rechazados lentamente." #NT!
+ setting_age_of_inquisition_difficulty_hard: "Inquisición apocalíptica" #NT!
+ setting_age_of_inquisition_difficulty_hard_desc: "Es probable que los Inquisidores del final del juego acaben con la "civilización" vampírica." #NT!
+  
+ #rule_web_of_knives_difficulty: "$POD_gamerule$ Red de cuchillos Letalidad" #NT!
+ #setting_web_of_knives_difficulty_default: "Red de cuchillos predeterminada" #NT!
+ #setting_web_of_knives_difficulty_default_desc: "Los asesinos Banu Haqim de la Red de Cuchillos serán letales en sus fortalezas regionales, pero su alcance no se extenderá tan bien en otras áreas." #NT!
+ #setting_web_of_knives_difficulty_hard: "Red mortal de cuchillos" #NT!
+ #setting_web_of_knives_difficulty_hard_desc: "Los asesinos Banu Haqim de la Red de Cuchillos ahora pueden alcanzar su objetivo en cualquier parte del mundo, lo que significa que es solo cuestión de tiempo antes de que cumplan su sangrienta misión." #NT!
+  
+  
+ #rule_eyes_of_abyss: "$POD_gamerule$ Ojos del abismo" #NT!
+ #setting_lasombra_have_normal_eyes: "Ojos normales" #NT!
+ #setting_lasombra_have_normal_eyes_desc: "Los Lasombra tienen ojos normales, incluso si tienen la 'Vista del Olvido'." #NT!
+ #setting_lasombra_have_black_eyes: "Ojos del abismo" #NT!
+ #setting_lasombra_have_black_eyes_desc: "Los Lasombra con 'Visión del Olvido' tienen ojos negros." #NT!
+  
+ rule_banu_haqim_darken: "$POD_gamerule$ Maldición de Banu Haqim" #NT!
+ setting_banu_haqim_default_darken: "Oscurecerse con la edad" #NT!
+ setting_banu_haqim_default_darken_desc: "La piel de los Banu Haqim, los Assamitas, se oscurece hasta convertirse en obsidiana a medida que envejecen." #NT!
+ setting_banu_haqim_never_darken: "Nunca oscurezcas" #NT!
+ setting_banu_haqim_never_darken_desc: "Los Banu Haqim no tendrán un efecto visual oscuro de obsidiana a medida que envejezcan." #NT!
+  
+ rule_world_of_darkness: "$POD_gamerule$ Mundo de tinieblas" #NT!
+ setting_world_of_monsters: "Mundo de tinieblas" #NT!
+ setting_world_of_monsters_desc: "La mayoría de los personajes terrestres son criaturas sobrenaturales o aquellos que las cazan." #NT!
+ setting_world_of_minions_and_monsters: "Mundo de sombras" #NT!
+ setting_world_of_minions_and_monsters_desc: "La mayoría de los personajes terrestres son criaturas sobrenaturales o aquellos que les sirven o les cazan." #NT!
+ setting_world_of_minions: "Mundo de corrupción" #NT!
+ setting_world_of_minions_desc: "La mayoría de los personajes terrestres son servidores de criaturas sobrenaturales o aquellos que las cazan." #NT!
+ setting_world_of_mortals_player_knows: "Mundo de secretos" #NT!
+ setting_world_of_mortals_player_knows_desc: "El mundo ignora los horrores que acechan en la noche, pero el personaje del jugador lo sabe muy bien..." #NT!
+ setting_world_of_mortals: "Mundo de ignorancia" #NT!
+ setting_world_of_mortals_desc: "La mayoría de los personajes terrestres ignoran lo sobrenatural, incluso el personaje del jugador." #NT!
+  
+ rule_splats: "$POD_gamerule$ Dominación sobrenatural" #NT!
+ setting_vampires: "Vampiro: la mascarada" #NT!
+ setting_vampires_desc: "Los Vástagos poseen la mayoría de los títulos de tierras." #NT!
+ setting_hunters: "Inquisidor de la Edad Oscura" #NT!
+ setting_hunters_desc: "La mayoría de los personajes titulados son cazadores o monstruos sobrenaturales." #NT!
+ setting_werewolves: "Hombre lobo: el apocalipsis" #NT!
+ setting_werewolves_desc: "Los Garou poseen la mayoría de los títulos territoriales." #NT!
+ setting_mages: "Mago: la Ascensión" #NT!
+ setting_mages_desc: "La mayoría de los poseedores de títulos territoriales son magos despertados." #NT!
+ setting_fae: "Changeling: el sueño" #NT!
+ setting_fae_desc: "La mayoría de los poseedores de títulos de propiedad son Fae." #NT!
+ setting_wraiths: "Wraith: el olvido" #NT!
+ setting_wraiths_desc: "El juego se desarrollará en [shadowlands|E], donde la mayoría de los poseedores de títulos son Espectros." #NT!
+ setting_demons: "Demonio: el caído" #NT!
+ setting_demons_desc: "La mayoría de los poseedores de títulos territoriales son demonios." #NT!
+ setting_vampires_vs_werewolves: "Colmillo y garra" #NT!
+ setting_vampires_vs_werewolves_desc: "La mayoría de los personajes principales son Kindred o Garou." #NT!
+ setting_vampires_vs_mages: "Guerra de Massasa" #NT!
+ setting_vampires_vs_mages_desc: "La mayoría de los personajes principales son Vástagos de Magos." #NT!
+ setting_mortals: "Mortal: el inocente" #NT!
+ setting_mortals_desc: "La mayoría de los títulos adquiridos son mortales que ignoran el Mundo de Tinieblas." #NT!
+ setting_all_splats: "Mundo de tinieblas" #NT!
+ setting_all_splats_desc: "Todas las criaturas sobrenaturales disponibles se incluirán en el mundo." #NT!
+  
+ #rule_wod_rule_set: "$POD_gamerule$ Conjunto de reglas de WoD" #NT!
+ #setting_wod_rule_set_dav20: "DAV20" #NT!
+ #setting_wod_rule_set_dav20_desc: "Edición del 20.º aniversario de Dark Ages Vampire. Esto puede afectar a las disciplinas, a los [Clan|E] banes, a los símbolos de rasgos, etc." #NT!
+ #setting_wod_rule_set_v5: "V5" #NT!
+ #setting_wod_rule_set_v5_desc: "Vampiro: La Mascarada, quinta edición. Esto puede afectar a [disciplines|E], [Clan|E] perdiciones, símbolos de rasgos, etc." #NT!
+  
+ rule_black_death: "$POD_gamerule$ La Peste Negra" #NT!
+ setting_black_death_default: "Muerte negra por defecto" #NT!
+ setting_black_death_default_desc: "La Peste Negra ocurrirá durante el siglo XIV, devastando y retrasando el desarrollo del mundo." #NT!
+ setting_black_death_disabled: "Muerte negra discapacitada" #NT!
+ setting_black_death_disabled_desc: "La Peste Negra no ocurrirá" #NT!
+  
+ rule_patreon_and_easter_egg_characters: "$POD_gamerule$ Personajes no canónicos" #NT!
+ setting_both_patron_and_easter_egg_on: "Déjalos ser, pueden existir." #NT!
+ setting_both_patron_and_easter_egg_on_desc: "Los personajes del Patrón y del Huevo de Pascua permanecerán." #NT!
+ setting_patron_only: "Solo quiero a los que pagaron" #NT!
+ setting_patron_only_desc: "A los personajes patrocinadores se les permitirá vivir." #NT!
+ setting_easter_egg_only: "¡Muéstrame los huevos!" #NT!
+ setting_easter_egg_only_desc: "Los personajes del Huevo de Pascua podrán vivir." #NT!
+ setting_canon_only: "¡Mátalos a todos!" #NT!
+ setting_canon_only_desc: "Tanto los personajes patrocinadores como los del huevo de Pascua desaparecerán del juego." #NT!
+  
+ rule_resonance_xp: "$POD_gamerule$ Experiencia de Resonancia" #NT!
+ setting_resonance_xp_default: "Experiencia de resonancia predeterminada" #NT!
+ setting_resonance_xp_default_desc: "La experiencia de Resonancia que ofrece beber a los mortales es normal, lo que da como resultado la velocidad predeterminada de mejora de los poderes vampíricos." #NT!
+ setting_resonance_xp_fast: "Experiencia de resonancia rápida" #NT!
+ setting_resonance_xp_fast_desc: "La experiencia de Resonancia que ofrece beber a los mortales es mayor de lo habitual, lo que resulta en una mayor velocidad de mejora de los poderes vampíricos." #NT!
+  
+ rule_hunt_journey_speed: "$POD_gamerule$ Velocidad de caza [journeys|E]" #NT!
+ setting_hunt_journey_speed_5: "5 meses" #NT!
+ setting_hunt_journey_speed_5_desc: "Hunt [journeys|E] tiene un [planning_speed|E] del 20% mensual." #NT!
+ setting_hunt_journey_speed_10: "10 meses" #NT!
+ setting_hunt_journey_speed_10_desc: "Hunt [journeys|E] tiene un [planning_speed|E] del 10% mensual." #NT!
+ setting_hunt_journey_speed_20: "20 meses" #NT!
+ setting_hunt_journey_speed_20_desc: "Hunt [journeys|E] tiene un [planning_speed|E] del 5% mensual." #NT!
+  
+ rule_journey_cost_mult: "$POD_gamerule$ [journey|E] Multiplicador de costo" #NT!
+ setting_journey_cost_mult_0: "0x" #NT!
+ setting_journey_cost_mult_0_desc: "[journeys|E] no cuesta nada." #NT!
+ setting_journey_cost_mult_05: "0,5x" #NT!
+ setting_journey_cost_mult_05_desc: "[journey|E] los costes se reducen a la mitad." #NT!
+ setting_journey_cost_mult_1: "1x" #NT!
+ setting_journey_cost_mult_1_desc: "[journeys|E] cuesta el importe normal." #NT!
+ setting_journey_cost_mult_2: "2x" #NT!
+ setting_journey_cost_mult_2_desc: "[journey|E] los costes se duplican." #NT!
+  
+ rule_journey_provoke_vatican_requirements: "$POD_gamerule$ [journey|E]: $provoke_vatican_name$" #NT!
+ setting_journey_provoke_vatican_default: "Restricciones predeterminadas" #NT!
+ setting_journey_provoke_vatican_default_desc: "Sólo los temerarios $POD_splat_vampire_plural$ que tienen una historia con el catolicismo pueden emprender este viaje." #NT!
+ setting_journey_provoke_vatican_allvamps: "Cualquier vampiro" #NT!
+ setting_journey_provoke_vatican_allvamps_desc: "Cualquier [GetTrait('vampire').GetName(GetNullCharacter)] puede antagonizar al Vaticano." #NT!
+ setting_journey_provoke_vatican_unrestricted: "Cualquier sobrenatural" #NT!
+ setting_journey_provoke_vatican_unrestricted_desc: "Cualquier sobrenatural puede antagonizar al Vaticano." #NT!
+  
+ rule_POD_roguelike_mode: "$POD_gamerule$ [roguelike_mode|E]" #NT!
+ setting_POD_roguelike_mode_disabled: "Desactivado" #NT!
+ setting_POD_roguelike_mode_disabled_desc: "[roguelike_mode|E] está deshabilitado." #NT!
+ setting_POD_roguelike_mode_enabled_randomized_vampire: "Vampiro generado" #NT!
+ setting_POD_roguelike_mode_enabled_randomized_vampire_desc: "[roguelike_mode|E] está habilitado. Se generará un $POD_splat_vampire$ con rasgos aleatorios. #N Muerte permanente. Destinado a jugadores experimentados. #!" #NT!
+ setting_POD_roguelike_mode_enabled: "Aleatorio" #NT!
+ setting_POD_roguelike_mode_enabled_desc: "[roguelike_mode|E] está habilitado. Cambiarás a un gobernante de una provincia existente en el mapa. #N Muerte permanente. Destinado a jugadores experimentados. #!" #NT!
+ setting_POD_roguelike_mode_enabled_no_permadeath: "Aleatorio (sin muerte permanente)" #NT!
+ setting_POD_roguelike_mode_enabled_no_permadeath_desc: "[roguelike_mode|E] está habilitado. Cambiarás a un gobernante de una provincia existente en el mapa. Cuando mueras, cambiarás a un personaje diferente." #NT!

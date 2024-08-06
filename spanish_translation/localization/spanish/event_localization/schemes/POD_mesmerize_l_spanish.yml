@@ -1,0 +1,68 @@
+﻿l_spanish:
+  
+ POD_mesmerize.100.t: "Estás siendo dominado" #NT!
+ POD_mesmerize.100.desc: "[schemer.GetTitledFirstName] te está dominando para exigirte un favor." #NT!
+ POD_mesmerize.100.option.a: "Ejercer mi fuerza de voluntad para resistir la dominación." #NT!
+ POD_mesmerize.100.option.b: "Rechazar la dominación." #NT!
+ POD_mesmerize.100.option.c: "Acepta la dominación." #NT!
+  
+ POD_mesmerize.200.t: "Dominando [target.GetFirstNameNoTooltip]" #NT!
+ POD_mesmerize.200.desc: "Mi voluntad manda a [target.GetTitledFirstName], pero [target.GetSheHe|U] se me resiste. Tendrás que superar su voluntad si quieres seguir adelante. Las personas de voluntad fuerte son más difíciles de doblegar y esta concentración intensa de tus poderes mentales también puede resultar en una experiencia estresante para ti." #NT!
+ POD_mesmerize.200.option.a: "Despierta la sangre para dominar [target.GetHerHim]." #NT!
+ POD_mesmerize.200.a.tt_fortitude: "[target.GetFirstNameNoTooltip] es hábil en el [discipline|E] de fortaleza y es resistente a tus poderes." #NT!
+ POD_mesmerize.200.a.tt_willpower: "[target.GetFirstNameNoTooltip] ha ejercido [target.GetHerHis] de voluntad para resistir tus poderes." #NT!
+ POD_mesmerize.200.a.success.desc: "[target.GetTitledFirstNameNoTooltip] te concederá un favor" #NT!
+ POD_mesmerize.200.a.failure.desc: "[target.GetTitledFirstNameNoTooltip] se resistirá a tu dominación y existe la posibilidad de que arruines el intento y no puedas hipnotizar a [target.GetHerHim] durante 10 años." #NT!
+ POD_mesmerize.200.option.b: "Despierta la sangre y ejerce mi voluntad. ¡Yo soy el amo!" #NT!
+ POD_mesmerize.200.option.b.tt.beast: "#R ¡Soy TU amo! #!" #NT!
+ POD_mesmerize.200.option.c: "Esto es una pérdida de tiempo, ya no deseo dominar [target.GetHerHim]." #NT!
+ POD_mesmerize.200.option.c.tt: "La dominación fracasará." #NT!
+  
+ POD_mesmerize.300.t: "[target.GetFirstNameNoTooltip] Hipnotizado" #NT!
+ POD_mesmerize.300.desc: "Mediante el uso de mi dominación [discipline|E], [target.GetTitledFirstName] seguirá mi orden. \n\n #X Para usar tu orden, usa el Comando Marioneta [character_interaction|E].\nAlgunos comandos requerirán que se marque un objetivo, lo que se puede hacer como Marcar Objetivo Secundario [character_interaction|E].#!" #NT!
+ POD_mesmerize.300.desc.short_term: "\n\nComo no tienes la ventaja de directiva sumergida, solo tienes unos pocos días para usar tu comando." #NT!
+ POD_mesmerize.300.option.a: "Ahora, ¿qué quiero que haga [target.GetHerHim]?" #NT!
+ POD_mesmerize.300.option.a.tt.beast: "#R ¡Sangre! ¡Queremos sangre! #!" #NT!
+  
+ POD_mesmerize.400.t: "Una deuda que no puedo rechazar" #NT!
+ POD_mesmerize.400.desc: "Le debo [schemer.GetTitledFirstName]." #NT!
+ POD_mesmerize.400.option.a: "¿Cómo podré compensarlo hasta [schemer.GetHerHim]?" #NT!
+  
+ POD_mesmerize.500.t: "Resistió la dominación" #NT!
+ POD_mesmerize.500.desc: "[target.GetTitledFirstName] se ha resistido a mi dominación." #NT!
+ POD_mesmerize.500.botched_mesmerize: "[target.GetSheHe|U] ahora es inmune a futuros intentos de hipnotizarlo." #NT!
+ POD_mesmerize.500.option.a: "¡Esto no puede ser!" #NT!
+ POD_mesmerize.500.option.a.tt.beast: "#R ¡Golpéalos hasta que obedezcan! #!" #NT!
+  
+ POD_mesmerize.600.t: "Dominación resistida" #NT!
+ POD_mesmerize.600.desc: "Me he liberado de las ataduras mentales de la dominación [schemer.GetTitledFirstNamePossessive]." #NT!
+ POD_mesmerize.600.option.a: "¡Tengo una voluntad de hierro!" #NT!
+  
+ POD_mesmerize.700_toast_title: "La dominación expiró" #NT!
+ POD_mesmerize.700_toast_ct: "Debes iniciar un nuevo esquema si deseas ordenar [target.GetName]." #NT!
+  
+ POD_mesmerize.tt.pc.dominateadvanced: "Tu dominio de [GetTrait('dominateadvanced').GetName(GetNullCharacter)] aumenta tus posibilidades de éxito" #NT!
+ POD_mesmerize.tt.pc.will_conquers_perk: "Tus poderes de dominio son tan poderosos que tu [GetPerk('will_conquers_perk').GetName(GetNullCharacter)], lo que aumenta significativamente tus probabilidades de éxito." #NT!
+ POD_mesmerize.tt.pc.rationalize_perk: "Tu capacidad para [GetPerk('rationalize_perk').GetName(GetNullCharacter)] aumenta ligeramente tus posibilidades de éxito." #NT!
+ POD_mesmerize_tt_defender_generation_adv: "[defender.GetFirstNameNoTooltip] menor que [generation|E] le da a [defender.GetHerHim] una ventaja" #NT!
+ POD_mesmerize_tt_attacker_generation_adv: "Tu [generation|E] más bajo te da ventaja" #NT!
+ POD_mesmerize.tt.dominateadvanced: "[defender.GetFirstNameNoTooltip] ha dominado el [discipline|E] de [GetTrait('dominateadvanced').GetName(GetNullCharacter)] reduciendo sus probabilidades de éxito" #NT!
+ POD_mesmerize.tt.presenceadvanced: "[defender.GetFirstNameNoTooltip] ha dominado el [discipline|E] de [GetTrait('presenceadvanced').GetName(GetNullCharacter)] reduciendo sus probabilidades de éxito" #NT!
+ POD_mesmerize.tt.auspexadvanced: "[defender.GetFirstNameNoTooltip] ha dominado el [discipline|E] de [GetTrait('auspexadvanced').GetName(GetNullCharacter)] reduciendo sus probabilidades de éxito" #NT!
+ POD_mesmerize.tt.fortitudeadvanced: "[defender.GetFirstNameNoTooltip] ha dominado el [discipline|E] de [GetTrait('fortitudeadvanced').GetName(GetNullCharacter)] reduciendo sus probabilidades de éxito" #NT!
+ POD_mesmerize.tt.steel_soul_perk: "[defender.GetFirstNameNoTooltip] tiene la capacidad de [GetPerk('steel_soul_perk').GetName(GetNullCharacter)], lo que reduce en gran medida sus probabilidades de éxito." #NT!
+ POD_mesmerize.tt.shield_of_the_soul_perk: "[defender.GetFirstNameNoTooltip] tiene la habilidad de [GetPerk('shield_of_the_soul_perk').GetName(GetNullCharacter)], lo que reduce en gran medida sus probabilidades de éxito." #NT!
+ POD_entrance.tt.wisdom_of_isis_perk: "[defender.GetFirstNameNoTooltip] tiene el [GetPerk('wisdom_of_isis_perk').GetName(GetNullCharacter)], lo que reduce en gran medida tus probabilidades de éxito" #NT!
+ POD_mesmerize.tt.mountain_meditation_perk: "[defender.GetFirstNameNoTooltip] tiene la habilidad de [GetPerk('mountain_meditation_perk').GetName(GetNullCharacter)], lo que reduce en gran medida sus probabilidades de éxito." #NT!
+ POD_mesmerize.tt.mind_shield_perk: "[defender.GetFirstNameNoTooltip] tiene la habilidad de [GetPerk('mind_shield_perk').GetName(GetNullCharacter)], lo que reduce en gran medida sus probabilidades de éxito." #NT!
+ POD_mesmerize.tt.shell_perk: "[defender.GetFirstNameNoTooltip] tiene la habilidad de [GetPerk('shell_perk').GetName(GetNullCharacter)], lo que reduce en gran medida sus probabilidades de éxito." #NT!
+ POD_mesmerize.tt.inviolate_soul_perk: "[defender.GetFirstNameNoTooltip] tiene la habilidad de [GetPerk('inviolate_soul_perk').GetName(GetNullCharacter)], lo que reduce en gran medida sus probabilidades de éxito." #NT!
+ POD_mesmerize.tt.release_from_bondage_perk: "[defender.GetFirstNameNoTooltip] tiene la capacidad de [GetPerk('release_from_bondage_perk').GetName(GetNullCharacter)], lo que reduce en gran medida sus probabilidades de éxito." #NT!
+ POD_mesmerize.tt.ancestor_talisman: "[defender.GetFirstNameNoTooltip] posee un Talismán Ancestral, lo que reduce en gran medida sus probabilidades de éxito" #NT!
+ POD_mesmerize.tt.fair_is_foul_foul_is_fair_perk: "[defender.GetFirstNameNoTooltip] tiene [GetPerk('fair_is_foul_foul_is_fair_perk').GetName(GetNullCharacter)], lo que reduce en gran medida sus probabilidades de éxito" #NT!
+ POD_mesmerize.tt.captive_heart_perk: "[defender.GetFirstNameNoTooltip] tiene la capacidad de [GetPerk('captive_heart_perk').GetName(GetNullCharacter)], lo que reduce en gran medida sus probabilidades de éxito." #NT!
+ POD_mesmerize.tt.geas_ban_perk: "[defender.GetFirstNameNoTooltip] tiene el poder de [GetPerk('geas_ban_perk').GetName(GetNullCharacter)], lo que reduce en gran medida tus probabilidades de éxito." #NT!
+ POD_mesmerize.tt.holy_bulwark_perk: "[defender.GetFirstNameNoTooltip] tiene el poder de [GetPerk('holy_bulwark_perk').GetName(GetNullCharacter)], lo que reduce en gran medida tus probabilidades de éxito." #NT!
+ POD_mesmerize.tt.dominate_personality: "[defender.GetFirstNameNoTooltip] tiene una personalidad dominante, lo que hace que tu intento sea más difícil." #NT!
+ POD_mesmerize.tt.submissive_personality: "[defender.GetFirstNameNoTooltip] La personalidad sumisa hace que tu intento sea más fácil." #NT!
+ POD_mesmerize.tt.mortal: "Los mortales no son rival para tu poder." #NT!

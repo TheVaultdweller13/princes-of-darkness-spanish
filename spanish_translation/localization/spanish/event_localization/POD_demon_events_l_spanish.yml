@@ -1,0 +1,145 @@
+﻿l_spanish:
+  
+ POD_demon_maintenance.10.t: "Buque" #NT!
+ POD_demon_maintenance.10.desc: "Para permanecer en la Creación, un demonio debe habitar un recipiente físico de algún tipo. Los demonios odian sus recipientes, las cáscaras en las que deben esconderse en el mundo sin valor de Dios; aunque es mejor que la ineludible nada del Abismo, un recipiente sigue siendo una especie de prisión y cada momento que pasan anclados en un cuerpo físico es otra razón para odiar a Dios. Esperan con ansias el momento en que puedan prender fuego a todo el mundo material, observando la gloriosa destrucción desde la comodidad de su aborrecible reino espiritual.\n#X En términos de juego, los Earthbound son verdaderamente inmortales, pero deben tener su alma contenida en una parte del mundo material. Puede ser su capital, lo que hace que no puedan comandar tropas, mover su capital y ser empujados de regreso a la Prisión Abisal si la pierden. O pueden estar atados a un relicario, un artefacto que les da más movilidad, pero también es mucho más frágil. Si el relicario es destruido, el Demonio deberá regresar a la Prisión Abisal, un proceso del que escapar será muy costoso.#!" #NT!
+ POD_demon_maintenance.10.option.a: "Sólo poseo huéspedes humanos." #NT!
+ POD_demon_maintenance.10.option.a.tt: "Solo poseer huéspedes humanos (sin poseer un recipiente inanimado) ayudará a reducir tu tormento. (-1 XP de tormento/año)" #NT!
+ POD_demon_maintenance.10.option.b: "Estoy en una prisión de piedra." #NT!
+ POD_demon_maintenance.10.option.b.tt: "No podrás convertirte en comandante ni viajar a menos que también poseas un cuerpo anfitrión." #NT!
+ POD_demon_maintenance.10.option.c: "Estoy atado a la tierra." #NT!
+ POD_demon_maintenance.10.option.c.tt: "No podrás mover tu capital y serás destituido si lo pierdes." #NT!
+ earthbound_artifact_choice_tt: "Se le presentará una selección de artefactos para elegir como relicarios, los contenedores de su alma." #NT!
+  
+ POD_demon_maintenance.11.t: "Prisiones de piedra" #NT!
+ POD_demon_maintenance.11.desc: "La mayoría de los demonios que andan sueltos por la Creación se encuentran dentro de relicarios, objetos inanimados creados por sus adoradores para que los habiten. Cuando se invoca a un demonio, el ritual se centra en el relicario; el demonio aparece en su interior y su espíritu se funde con la sustancia física del objeto." #NT!
+ POD_demon_maintenance.11.option.a: "Estoy contenido dentro de un arma." #NT!
+ POD_demon_maintenance.11.option.b: "Estoy contenido dentro de una armadura." #NT!
+ POD_demon_maintenance.11.option.c: "Estoy contenida dentro de un brillante adorno." #NT!
+ POD_demon_maintenance.11.option.d: "Estoy contenido dentro de un libro." #NT!
+ POD_demon_maintenance.11.option.e: "Estoy contenido dentro de un mueble." #NT!
+ POD_demon_maintenance.11.option.f: "Estoy contenido dentro de una baratija." #NT!
+ artifact_reliquarie_name: "Relicario" #NT!
+ artifact_reliquarie_description: "Al tener [owner.GetTitledFirstNamePossessive] alma en él, este [reliquarie|E] ha adquirido algunas propiedades de [GetTrait('demon').GetName( GetNullCharacter )]." #NT!
+ artifact_new_reliquarie_name: "Demoniaco [this_artifact.GetNameNoTooltip]" #NT!
+ artifact_new_reliquarie_desc: "[this_artifact.GetDesc]\n\n$artifact_reliquarie_description$" #NT!
+ artifact_old_reliquarie_desc: "[this_artifact.GetDesc]\n\n#X [owner.GetTitledFirstName] ha abandonado esto [reliquarie|E].#!" #NT!
+ reliquarie_destroyed_notification: "Relicario destruido" #NT!
+  
+ POD_demon_maintenance.20.t: "El próximo anfitrión" #NT!
+ POD_demon_maintenance.20.desc: "La única alternativa a habitar un relicario de un ángel caído es poseer un anfitrión humano; y hasta hace poco, ésta era una alternativa muy pobre. Los demonios pueden poseer a los humanos por un tiempo, pero no permanentemente, porque el acto de posesión condena al mortal a una muerte inevitable y espantosa en poco tiempo. El Ritual del alma dividida es una nueva posibilidad que hace que el proceso sea un poco más fácil.\n#X En términos de juego, eres verdaderamente inmortal, pero siempre debes tener un anfitrión o verte obligado a regresar a la Prisión Abisal. Puede elegir su próximo host usted mismo a través de Agregar host potencial [character_interaction|E], esto también le permitirá "extraer" algunos de los atributos del host. Si no tienes un anfitrión durante un tiempo después de que el actual muera, se te presentará un cultista aleatorio para usarlo como anfitrión de "emergencia" (sin pérdida de alma en ese caso). Como habrás adivinado, los personajes anfitriones son importantes para tu juego y puedes encontrarlos en la pestaña de relaciones de los Minions. ¡vigílalos! #!" #NT!
+ POD_demon_maintenance.20.option.a: "Poseeré a un cultista al azar." #NT!
+ POD_demon_maintenance.20.option.b: "Poseeré un artefacto al azar." #NT!
+ POD_demon_maintenance.20.option.c: "Poseeré mi capital." #NT!
+ #POD_demon_maintenance.20.option.a.tt: "Jugarás con tu recipiente designado que heredará tu nombre, edad, rasgos, ventajas..." #NT!
+ POD_demon_maintenance.20.option.d: "Permítame volver a la forma espiritual." #NT!
+  
+ demon_without_host_tt: "Es una elección peligrosa. Sin un anfitrión, podrías quedarte atrapado en la Umbra por un tiempo." #NT!
+  
+ POD_demon_maintenance.70.t: "Tú, esclavo insolente" #NT!
+ POD_demon_maintenance.70.desc: "¿Cómo te atreves a intentar encarcelar a tu legítimo amo? ¡¿El dueño de tu alma?! Tu ambición equivocada te costará caro y tendré tantos placeres haciéndote pagar..." #NT!
+ POD_demon_maintenance.70.option.a: "¡Fue un error honesto!" #NT!
+  
+ POD_demon_arcana.100.t: "Compra Arsenal de la Bestia" #NT!
+ POD_demon_arcana.100.desc: "Compra una nueva arma bestial." #NT!
+  
+ POD_demon_arcana.201.t: "Servidor inefable" #NT!
+ POD_demon_arcana.201.desc: "Con tu Saber de Contaminación, puedes intentar crear una estatua que luego pueda usarse como cuerpo anfitrión temporal." #NT!
+ POD_demon_arcana.201.option.a: "Un cuerpo artificial perfecto." #NT!
+ POD_demon_arcana.201.option.a.tt: "Intentarás crear un cuerpo host temporal" #NT!
+ POD_demon_arcana.201.option.a.desc: "Una lucha con tus energías" #NT!
+ POD_demon_arcana.201.option.a.tt.success: "Su cuerpo artificial se ha separado con éxito" #NT!
+ POD_demon_arcana.201.option.a.tt.failure: "No logras crear el cuerpo artificial" #NT!
+ POD_demon_arcana.201.option.b: "Ahora no es el momento adecuado" #NT!
+ POD_demon_arcana.201.option.b.tt: "Abandonarás tu idea de crear un cuerpo artificial." #NT!
+  
+ POD_demon_arcana.202.t: "Servidor inefable II" #NT!
+ POD_demon_arcana.202.desc: "Con tu Lore of Contamination lograste crear exitosamente un cuerpo artificial, ahora es momento de usarlo para moverte." #NT!
+ POD_demon_arcana.202.option.a: "Me siento libre." #NT!
+ POD_demon_arcana.202.option.a.tt: "Su servidor inefable se ha separado con éxito." #NT!
+  
+ POD_demon_arcana.203.t: "Servidor inefable II" #NT!
+ POD_demon_arcana.203.desc: "Tu cuerpo artificial no es suficiente para sustentar tus energías... Este experimento es un fracaso." #NT!
+ POD_demon_arcana.203.option.a: "no estoy lista todavia" #NT!
+ POD_demon_arcana.203.option.a.tt: "No lograste crear el cuerpo artificial" #NT!
+  
+ POD_demon_arcana.204.t: "De regreso a mi prisión" #NT!
+ POD_demon_arcana.204.desc: "Tu cuerpo artificial finalmente ha sido consumido por tus energías." #NT!
+ POD_demon_arcana.204.option.a: "¿Es hora del siguiente?" #NT!
+ POD_demon_arcana.204.option.a.tt: "Ya no podrás moverte más en esta construcción." #NT!
+  
+ POD_days_of_fire.1342.t: "Segunda Gran Vorágine" #NT!
+ POD_days_of_fire.1342.desc: "Para los seguidores del Hombre Condenado, tal oscuridad cae sobre la Tierra\nY sobre el alma humana\nQue los vivos envidian a los muertos, y más, envidian a aquellos que han olvidado morir.\nIncluso cuando los muertos sufren su segunda gran tormenta, los vivos,\nDespreciando el regalo supremo del Único Dador,\nEn cambio abrazan la maldición del Gran Rey de Sangre.\nEsto no sucederá una vez, sino dos veces." #NT!
+ POD_days_of_fire.1401.t: "Renacimiento" #NT!
+ POD_days_of_fire.1401.desc: "Con el tiempo, la oscuridad se disipa.\nEl hombre vuelve sus ojos hacia los cielos\nY encuentra algo más grande que él mismo.\nUn hombre con un ojo de cristal ve la verdad, y un hombre con una nariz de plata la huele.\nUn tonto sabio pregunta por qué la luna no cae.\nSon padres, sin saberlo, de una nueva tribu, que triunfa invisible.\nFundaron la tribu de la Mente." #NT!
+ POD_days_of_fire.1430.t: "Inquisición" #NT!
+ POD_days_of_fire.1430.desc: "Cuando los hijos del Condenado se conviertan en padres\nY aun así se nieguen a engendrar hijos\nAtacarán a los hijos del Gran Rey de Sangre\nY atacarán a los hijos del Libro.\nSu lluvia caerá sobre justos e injustos por igual\nY esa lluvia no es agua, sino fuego.\nBuscando hacer el mal en nombre del bien, aun así hacen el bien." #NT!
+ POD_days_of_fire.1450.t: "Rebelión anarquista" #NT!
+ POD_days_of_fire.1450.desc: "Con el tiempo, la maldición del Gran Rey dará plenos frutos.\nComo el primer hijo escupió al Único Dador,\ncomo su semilla bastarda escupió sobre él,\nasí se levantarán los gusanos de su desdichada prole\n para picar a las serpientes. ,\nEl número de sus debilidades es catorce: De sus fuerzas, uno menos." #NT!
+ POD_days_of_fire.1492.t: "La tierra rica" #NT!
+ POD_days_of_fire.1492.desc: "La Tierra Rica duerme\nHasta que la despiertan unos hombres de hierro sobre peces de madera.\nSu primer heraldo es la Peste.\nEl segundo heraldo es el Caballo.\nSu tercer heraldo es el Rayo invocado desde la tierra.\nSu último heraldo es una peste de alimañas que pican.\nVienen, iluminan y despojan." #NT!
+ POD_days_of_fire.1605.t: "Tercera Gran Vorágine" #NT!
+ POD_days_of_fire.1605.desc: "La caída de la tribu de la Tierra Rica es el primer gran pecado de esa nación. De ella nace una lluvia de tal tormento que, por tercera vez, hasta los muertos gimen. Su segundo y gran pecado es robar a los niños de la Tierra de la Calavera. Los esclavos que trabajan la tierra pierden todo don de libertad, familia y adoración para que los ladrones puedan tener ropas suaves y conocer la calma del dulce licor." #NT!
+ POD_days_of_fire.1759.t: "Revolución industrial" #NT!
+ POD_days_of_fire.1759.desc: "Al ver las maravillas, los prodigios y los prodigios, la gente acude a la tribu de la Mente. Sin abandonar el Libro, ni los Pilares, ni al Hombre Condenado, muchos siguen manteniendo esa primera lealtad en sus bocas y no en sus almas. Visten prendas hermosas, cosidas y tejidas por ninguna mano humana. Su voluntad hace girar motores con solo la bruma de la niebla. De la elección humana proviene todo lo que sigue." #NT!
+ POD_days_of_fire.1775.t: "revolución Americana" #NT!
+ POD_days_of_fire.1775.desc: "Una nueva fuerza llega a una tierra antigua\nDesafiando la vieja sabiduría con nuevo metal\nY a viejos gobernantes con nuevos dueños.\nPor una hoja y una bebida\nse hace esto\nY por caminos hacia el Imperio Medio\ny la Gente del Sueño.\nEl orgullo de un antiguo reino es así\nderribado\nY sus hijos forzados a tomar el veneno que sus invasores desprecian." #NT!
+ POD_days_of_fire.1837.t: "Era Victoriana" #NT!
+ POD_days_of_fire.1837.desc: "Se llama una época hermosa, por aquellos que no son de la Calavera o del Sueño. Incluso para sus pocos, dura menos de una generación. Las ideas de caridad y bondad y la humanidad perfeccionada se sacrifican a la avaricia, la envidia y la imperfección humana. Los llamados al gobierno de la razón conducen al gobierno de la razón por la pasión. En nombre de la virtud, marchan los impulsos oscuros." #NT!
+ POD_days_of_fire.1914.t: "Primera Guerra Mundial" #NT!
+ POD_days_of_fire.1914.desc: "Con miradas codiciosas, cada nación observa los platos de sus vecinos. La Tierra de la Calavera, maldita para siempre, ha caído sobre ella como si fuera una plaga de chacales. La guerra se ha desatado en el mundo, no solo se libra en el campo, sino también en el mar y en el cielo. Una vasta llanura de desolación, barro, venenos y bordes afilados para cortar marca la tierra durante kilómetros, mientras las mujeres, los hombres y los niños perecen por las banderas." #NT!
+ POD_days_of_fire.1916.t: "Cuarto Gran Maelstrom" #NT!
+ POD_days_of_fire.1916.desc: "Tal dolor surge de esta guerra\nQue los muertos son perturbados en sus tumbas una vez más.\nUna cuarta tormenta de sombras\nUna cuarta lluvia de recuerdos\nMás amarga que las anteriores, pero menos áspera y ruinosa\nQue las dos venideras." #NT!
+ POD_days_of_fire.1918.t: "Pandemia de gripe" #NT!
+ POD_days_of_fire.1918.desc: "Sólo cuando la Tierra Rica despierte por fin a los gritos de sus padres, las batallas podrán detenerse lamentablemente. Pero la miseria no termina entonces. Cuando la matanza del hombre por el hombre sea reemplazada por la matanza de todos por la plaga, entonces el tiempo del mundo estará contado en siglos." #NT!
+ POD_days_of_fire.1931.t: "Segunda Guerra Mundial" #NT!
+ POD_days_of_fire.1931.desc: "Una segunda guerra se genera a partir de las semillas de la primera, y una segunda tormenta entre los masacrados. Esta vez, los derrotados luchan para recuperar su orgullo. Su signo es la araña de la vida, retorcida, porque es la muerte la que traen al Pueblo del Libro. No matan en el calor de la batalla, sino que asesinan con la calma constante de una madre horneando pan." #NT!
+ POD_days_of_fire.1937.t: "Guerra chino-japonesa" #NT!
+ POD_days_of_fire.1937.desc: "Más que la nación de la araña negra, luchan. Se les une una isla de luz oriental. A punta de espada violan el Imperio Medio. Los descendientes de los Hijos del Lobo buscan repetir las conquistas de sus antepasados ​​y regresan una vez más a la Tierra de la Calavera." #NT!
+ POD_days_of_fire.1945.t: "Fin de la Segunda Guerra Mundial" #NT!
+ POD_days_of_fire.1945.desc: "Una vez más, es la Tierra Rica la que inclina una contienda muy equilibrada, gastando sus riquezas en comida, hierro y la sangre de sus hijos. Al final de esta guerra, la matanza de hombres por hombres será reemplazada por la matanza de ideas y creencias. Una guerra de fuego y relámpagos será reemplazada por una lucha de silencio y frío." #NT!
+ POD_days_of_fire.1950.t: "Cortina de Hierro" #NT!
+ POD_days_of_fire.1950.desc: "Un muro se levanta\nPero es derribado\nMientras el Águila y el Oso compiten.\nLas mentes superficiales engendran una profunda animosidad\nY el número de su miedo ciego es cincuenta y siete.\nLas marionetas luchan guerras con sangre real\nY todos viven a la sombra del fuego impío." #NT!
+ POD_days_of_fire.1999.t: "Sexto Gran Maelstrom" #NT!
+ POD_days_of_fire.1999.desc: "Una sexta tormenta llega, que no muere, y que el sol jamás calma. Una tormenta silenciosa e invisible, un muro de miedos y sombras. ¿Proviene de un don de un ángel que despierta el fuego que duerme en todo? ¿Proviene de las sombras recordadas que libran una guerra contra lo olvidado? Viene. Entonces viene ella. Las tumbas escupen, los recuerdos arruinan lo real, un gemido resuena en el salón de [oblivion|E]. Su temida progenie oscura teme a la Gran Fauce, que ama incluso mientras consume." #NT!
+  
+ POD_demon_flavor.1.t: "Recuerdos: Ojalá fuera un ángel" #NT!
+ POD_demon_flavor.1.desc: "Todos los demonios fueron ángeles, la creación hecha a mano de Dios para ayudarlo a administrar y vigilar a los humanos. Cada ángel tenía un propósito (a veces amplio, a veces muy específico) arraigado en su ser durante la creación. Este propósito divino es su esencia misma, y ​​aunque ha sido distorsionado y corrompido por milenios de rebelión y encarcelamiento, nunca podrá ser borrado por completo. Tu creciente eminencia ha sacado del olvido algunos de esos primeros recuerdos. Durante esos tiempos más simples antes de la Rebelión, ¿cuál era tu propósito?" #NT!
+ POD_demon_flavor.1.a: "Un ángel del destino" #NT!
+ POD_demon_flavor.1.b: "Un ángel de patrones" #NT!
+ POD_demon_flavor.1.c: "Un ángel de liderazgo" #NT!
+ POD_demon_flavor.1.d: "Un ángel de caminos" #NT!
+ POD_demon_flavor.1.e: "Un ángel de luz estelar" #NT!
+  
+ POD_demon_flavor.100.t: "Escalera al Infierno" #NT!
+ POD_demon_flavor.100.desc: "Los demonios se alimentan de la fe que les proporcionan directamente sus esclavos o incluso indirectamente las personas que caen en su pecado de pericia. Con fe, un demonio se vuelve verdaderamente poderoso y puede, al menos en teoría, alcanzar un poder igual al de Dios mismo. A medida que tu eminencia crece y tu dominio sobre la humanidad de Dios se expande, también lo hace tu poder. ¿Deseas usar la piedad de tu rebaño para empoderarte y ascender en las filas demoníacas?" #NT!
+ POD_demon_flavor.100.a: "Un pequeño empujón." #NT!
+ POD_demon_flavor.100.b: "Mi potencial es ilimitado." #NT!
+ POD_demon_flavor.100.c: "¡Alabadme!" #NT!
+ POD_demon_flavor.100.d: "¡Los cielos temblarán!" #NT!
+ POD_demon_flavor.100.e: "¡Poder ilimitado!" #NT!
+ POD_demon_flavor.100.f: "Soy lo suficientemente poderoso" #NT!
+  
+ POD_demon_flavor.2.t: "Recuerdos: Génesis" #NT!
+ POD_demon_flavor.2.desc: "La humanidad era la mejor creación de Dios, o eso creía él. Tu propósito, como ángel, era velar por ellos y guiarlos, pero nunca mostrarte. En verdad, fue un punto de inflexión en el que Dios claramente favorecía a su nueva creación... pero también te advertía de que no interfirieras en sus posibles errores. Incluso si esos errores podían conducir a catástrofes. Muchos ángeles estaban divididos en este asunto, y algunos pensaban que las órdenes contradictorias de Dios eran una prueba. O que había dejado de preocuparse por ellos ahora que la humanidad estaba empezando a ascender. Al final, algunos se pusieron celosos de la humanidad, algunos sobreprotectores, algunos se quedaron al margen. ¿Y tú?" #NT!
+ POD_demon_flavor.2.a: "Seguiste tu propósito: guiarlos." #NT!
+ POD_demon_flavor.2.b: "Estabas envidioso y resentido con ellos." #NT!
+ POD_demon_flavor.2.c: "Has demostrado ser un maestro." #NT!
+  
+ POD_demon_flavor.3.t: "Recuerdos: La Caída" #NT!
+ POD_demon_flavor.3.desc: "La Guerra en el Cielo comenzó cuando una profecía advirtió a los ángeles sobre un desastre inminente que caería sobre la humanidad. Algunos, liderados por Lucifer, querían revelarse a los mortales para salvarlos de esta perdición. Otros pensaron que la voluntad de Dios de no interferir con la humanidad era más importante que su papel como guardianes. El debate se convirtió en guerra después de que Caín asesinara a su hermano Abel, introduciendo el concepto de violencia en el mundo naciente. La rebelión de Lucifer perdió al final, y todos los rebeldes se convirtieron en los seres ahora conocidos como demonios, como tú. Pero, ¿por qué te uniste al lado de Lucifer en primer lugar?" #NT!
+ POD_demon_flavor.3.a: "El carisma de Lucifer te cautivó." #NT!
+ POD_demon_flavor.3.b: "Querías proteger a la humanidad." #NT!
+ POD_demon_flavor.3.c: "El nuevo concepto de guerra te fascinó." #NT!
+ POD_demon_flavor.3.d: "Hasta el día de hoy, todavía no estás seguro." #NT!
+  
+ POD_demon_flavor.4.t: "Recuerdos: Condenados al infierno" #NT!
+ POD_demon_flavor.4.desc: "Los ángeles rebeldes derrotados, incluido tú, fueron arrojados a la Prisión Abisal. Esta aterradora construcción convirtió a la mayoría de sus reclusos en una sombra patética de lo que eran antes. Algunos lograron encontrar algo parecido a una nueva normalidad y no permitieron que su tormento divino los venciera. Sin embargo, incluso esto tuvo un costo. Lejos de su propósito original, de su esencia misma, los seres que alguna vez fueron conocidos como ángeles se retorcieron hasta quedar irreconocibles con la esperanza de encontrar una manera de lidiar con el hecho de estar eternamente excluidos del Cielo. Al final, fuiste uno de los pocos afortunados que escaparon, pero aún puedes sentir la atracción de la Prisión llamándote. Y los recuerdos de este lugar también están regresando." #NT!
+ POD_demon_flavor.4.a: "Hiciste cosas allí que preferirías olvidar." #NT!
+ POD_demon_flavor.4.b: "Oraste por un perdón que nunca llegó." #NT!
+ POD_demon_flavor.4.c: "Aguantaste. Eso es todo lo que importa." #NT!
+  
+ POD_demon_flavor.5.t: "Recuerdos: El infierno en la Tierra" #NT!
+ POD_demon_flavor.5.desc: "Fuiste uno de los pocos afortunados que terminaron siendo convocados para salir de la Prisión Abisal, lo que te permitió escapar al mundo mortal después de milenios de tormento con tus compañeros rebeldes. El mundo había cambiado mucho desde tu encarcelamiento. La guerra y la desesperación están en todas partes, las enfermedades corren desenfrenadas y el paraíso que era el Edén parece un mito en este momento. La humanidad todavía adora a Dios, pero en múltiples formas y lucha por cuál forma es mejor.\nEs posible que realmente haya desviado su mirada de la Tierra, tal vez debido a la rebelión de Lucifer o los fracasos de la humanidad. En cualquier caso, ¿cuál fue tu primera reacción al ver este nuevo mundo por primera vez?" #NT!
+ POD_demon_flavor.5.a: "¡Hay que limpiarlo!" #NT!
+ POD_demon_flavor.5.b: "¡Tantos adoradores potenciales!" #NT!
+ POD_demon_flavor.5.c: "Tal vez, en algún lugar, una débil esperanza de redención." #NT!

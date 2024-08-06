@@ -1,0 +1,57 @@
+﻿l_spanish:
+  
+ POD_summon.10.desc: "Sientes que tu energía mística toca la mente de [target.GetTitledFirstName]. \n El uso de la invocación es un poder invasivo. A menos que ya tengas una relación amistosa con [target.GetFirstNameNoTooltip], te resentirá por usar el poder de la sangre en él. Si tienes éxito, tendrás que continuar con la invocación hasta que llegue [target.GetFirstNameNoTooltip]." #NT!
+ POD_summon.10.option.a: "¡Ven a mí!" #NT!
+ POD_summon.10.crit_success.desc: "[target.GetFirstNameNoTooltip] correrá hacia ti. Hará todo lo posible para llegar a ti." #NT!
+ POD_summon.10.success_desc: "[target.GetFirstNameNoTooltip] llegará a ti a una velocidad razonable" #NT!
+ POD_summon.10.failure_desc: "[target.GetFirstNameNoTooltip] resistirá tu invocación y no podrás intentar otra invocación en [target.GetHerHim] durante 10 años." #NT!
+ POD_summon.10.botch_desc: "Tu invocación fallará críticamente, lo que te impedirá intentar otra invocación en [target.GetHerHim] durante 50 años." #NT!
+ POD_summon.10.option.b: "Ya no deseo invocar [target.GetHerHim]" #NT!
+  
+ POD_summon.11.desc.crit_success: "Tu invocación fue todo un éxito. [target.GetFirstNameNoTooltip] está haciendo todo lo posible para llegar a ti lo antes posible." #NT!
+ POD_summon.11.desc.success: "[target.GetFirstNameNoTooltip] está llegando a ti a un ritmo razonable." #NT!
+ POD_summon.11.desc: "Necesitarás seguir gastando puntos de sangre para avanzar en la invocación hasta que llegue [target.GetSheHe]." #NT!
+ POD_summon.11.option.a: "DE ACUERDO" #NT!
+  
+ POD_summon.100.t: "Estás siendo convocado" #NT!
+ POD_summon.100.desc: "Sientes la necesidad de ponerte del lado de [schemer.GetTitledFirstName]. ¡Es claramente antinatural, un vampiro fuerte está usando los dones de Caín en tu contra!" #NT!
+ POD_summon.100.option.a: "Ejercer mi fuerza de voluntad para resistir la invocación." #NT!
+ POD_summon.100.option.b: "Rechazar la invocación." #NT!
+ POD_summon.100.option.c: "Acepta la invocación." #NT!
+  
+ POD_summon.200.t: "Invocando [target.GetFirstNameNoTooltip]" #NT!
+ POD_summon.200.desc: "Siento que mi energía mística toca la mente de [target.GetTitledFirstName]. [target.GetSheHe|U] se resiste a la invocación. Los dones de Caín no son perfectos y solo llegan hasta donde llega tu fuerza de voluntad. Sin embargo, el vínculo aún no se ha perdido y podría usar mi sangre y mi fortaleza mental para aumentar la invocación, volviéndola aún más irresistible." #NT!
+ POD_summon.200.option.a: "Despierta la sangre para traerme [target.GetHerHim]." #NT!
+ POD_summon.200.a.tt_fortitude: "[target.GetFirstNameNoTooltip] es hábil en el [discipline|E] de fortaleza y es resistente a mis poderes." #NT!
+ POD_summon.200.a.tt_willpower: "[target.GetFirstNameNoTooltip] ha ejercido su voluntad para resistir mis poderes." #NT!
+ POD_summon.200.a.success.desc: "Victoria" #NT!
+ POD_summon.200.a.tt_success: "[target.GetTitledFirstName] llegará a mi corte" #NT!
+ POD_summon.200.a.failure.desc: "Fracaso" #NT!
+ POD_summon.200.a.tt_failure: "[target.GetTitledFirstName] resistirá mi invocación" #NT!
+ POD_summon.200.option.b: "¡Despierta la sangre y ejerce mi voluntad! ¡No se me negará!" #NT!
+ POD_summon.200.option.b.tt.beast: "#R ¡Sí! ¡Traédnoslos!#!" #NT!
+ POD_summon.200.option.c: "Ríndete, ya no quiero [target.GetHerHim]." #NT!
+ POD_summon.200.option.c.tt: "La invocación fallará." #NT!
+ POD_summon.200.option.c.tt.beast: "#R ¡No! ¡Se están escapando!#!" #NT!
+  
+ POD_summon.300.t: "[target.GetFirstNameNoTooltip] Invocado" #NT!
+ POD_summon.300.desc: "Gracias a mi poder místico, [target.GetTitledFirstName] ha llegado a mi corte. Ahora es el momento de decidir qué haré con este nuevo invitado. ¿Un lugar de honor o de vergüenza? Sea cual sea el caso, no esperes que se lo tomen bien al principio. Invocar a alguien sin su consentimiento usando el poder puro de tu sangre no es muy amistoso." #NT!
+ POD_summon.300.option.a: "Bienvenida a mi casa, dijo la araña a la mosca." #NT!
+ POD_summon.300.option.a.tt.beast: "#R ¡Hora de cenar!#!" #NT!
+  
+ POD_summon.400.t: "Has llegado" #NT!
+ POD_summon.400.desc: "Te encuentras en la corte de [schemer.GetTitledFirstName]." #NT!
+ POD_summon.400.option.a: "Mi nuevo hogar." #NT!
+  
+ POD_summon.500.t: "Resistió la invocación" #NT!
+ POD_summon.500.desc: "[target.GetTitledFirstName] se ha resistido a mi invocación. Su voluntad era más fuerte y probablemente no olvidarán tu invasión en su mente por un tiempo. Después de todo, invocar a alguien con el poder puro de la sangre no es muy amigable." #NT!
+ POD_summon.500.option.a: "¡Frustrado!" #NT!
+ POD_summon.500.option.a.tt.beast: "#R ¡Vamos a cazarlos y a comerlos!#!" #NT!
+ POD_summon.500.desc.summon_failure: "\n\n#X No podrás intentar invocar a [target.GetFirstNameNoTooltip] durante 10 años.#!" #NT!
+ POD_summon.500.desc.summon_botch: "\n\n#X No puedes intentar invocar a [target.GetFirstNameNoTooltip] durante 50 años.#!" #NT!
+  
+ POD_summon.600.t: "Invocación resistida" #NT!
+ POD_summon.600.desc: "Ya no sientes más [schemer.GetTitledFirstNamePossessive] llamándote." #NT!
+ POD_summon.600.option.a: "¡Mantente fuera de mi mente!" #NT!
+  
+ temp_immune_summon: "Debido a un intento fallido anterior, [recipient.GetFirstNameNoTooltip] es inmune a tus intentos de Invocación hasta [GetCurrentDateWithDiff( GetVarTimeRemaining( recipient.MakeScope, 'immune_to_summon_from_actor') )]" #NT!

@@ -1,0 +1,74 @@
+﻿l_spanish:
+  
+ POD_imprison.002.title: "Encarcelamiento: [targetdefender.GetFirstName]" #NT!
+ POD_imprison.002.desc: "Estás intentando encarcelar a [targetdefender.GetFirstName], pero él se atreve a resistirse, ¿qué debes hacer?" #NT!
+ POD_imprison.002.desc.hunter: "Estás intentando encarcelar a un engendro del diablo, [targetdefender.GetFirstName], pero es poco probable que las sanguijuelas permitan que los sirvientes de Dios las atrapen. ¿Qué deberías hacer?" #NT!
+  
+  
+ POD_imprison.002.option.a: "[targetdefender.GetFirstName] me obedecerá!" #NT!
+ POD_imprison.002.option.b: "[targetdefender.GetFirstName] no puedes resistirte a mi encanto." #NT!
+ POD_imprison.002.option.c: "¡Voy a destrozar [targetdefender.GetHerHim]!" #NT!
+ POD_imprison.002.option.d: "¡[attacker_marshal.GetFirstName] pondrá a [targetdefender.GetHerHim] en el lugar de [targetdefender.GetHerHis]!" #NT!
+ POD_imprison.002.option.coterie: "Mi [GetPlayer.Custom('PODCoterieNoTooltip')] miembro [prowess_duelist.GetFirstName] someterá a [targetdefender.GetHerHim]." #NT!
+ POD_imprison.002.option.e: "¡_0 seguramente sabe cómo atrapar a esos demonios!" #NT!
+ POD_imprison.002.option.f: "Es hora de que [targetdefender.GetShortUIName] se enfrente a la gravedad de los pecados de [targetdefender.GetHerHis]." #NT!
+ POD_imprison.002.option.g: "No es el momento adecuado" #NT!
+ POD_imprison.002.option.success: "[attacker.GetFirstName] victorias" #NT!
+  
+  
+ POD_imprison.002.option.a.desc: "Un conflicto de dominio" #NT!
+ POD_imprison.002.option.b.desc: "Un conflicto de personalidad" #NT!
+ POD_imprison.002.option.c.desc: "Una batalla de destreza" #NT!
+ POD_imprison.002.option.d.desc: "Una batalla de destreza, tu mariscal te representa." #NT!
+ POD_imprison.002.option.d.success: "[attacker_marshal.GetFirstName] victorias" #NT!
+ POD_imprison.002.option.coterie.desc: "Una batalla de destreza, tu miembro [GetPlayer.Custom('PODCoterie')] te representa" #NT!
+ POD_imprison.002.option.coterie.success: "[prowess_duelist.GetFirstName] victorias" #NT!
+ POD_imprison.002.option.e.desc: "La habilidad de guerra de tu mariscal contra la destreza de la sanguijuela" #NT!
+ POD_imprison.002.option.e.success: "[attacker_marshal.GetFirstName] atrapa a un demonio vil" #NT!
+ POD_imprison.002.option.failure: "[targetdefender.GetFirstName] victorias" #NT!
+ POD_imprison.002.option.e.failure: "[targetdefender.GetFirstName] logra escapar" #NT!
+ OD_imprison.002.option.f.desc: "Lágrimas del Mártir uso del arte sagrado" #NT!
+  
+ POD_imprison.002.option.a.tt.attacker_wins: "Yo domino [targetdefender.GetFirstName]!" #NT!
+ POD_imprison.002.option.a.tt.attacker_lost: "[targetdefender.GetFirstNamePossessive] La voluntad es demasiado fuerte para dominar." #NT!
+ POD_imprison.002.option.b.tt.attacker_wins: "¡Me entra [targetdefender.GetFirstName]!" #NT!
+ POD_imprison.002.option.b.tt.attacker_lost: "[targetdefender.GetFirstName] es inmune a mis encantos." #NT!
+ POD_imprison.002.option.c.tt.attacker_wins: "¡Derroté a [targetdefender.GetFirstName] en combate personal!" #NT!
+ POD_imprison.002.option.c.tt.attacker_lost: "Fui derrotado por [targetdefender.GetFirstName] en combate personal." #NT!
+ POD_imprison.002.option.d.tt.attacker_wins: "¡[attacker_marshal.GetFirstName] derrota a [targetdefender.GetFirstName] en combate personal!" #NT!
+ POD_imprison.002.option.d.tt.attacker_lost: "[attacker_marshal.GetFirstName] es derrotado por [targetdefender.GetFirstName] en combate personal." #NT!
+ POD_imprison.002.option.coterie.tt.attacker_wins: "¡[prowess_duelist.GetFirstName] derrota a [targetdefender.GetFirstName] en combate personal!" #NT!
+ POD_imprison.002.option.coterie.tt.attacker_lost: "[prowess_duelist.GetFirstName] es derrotado por [targetdefender.GetFirstName] en combate personal." #NT!
+ POD_imprison.002.option.e.tt.attacker_wins: "[targetdefender.GetFirstName] ¡se pudrirá en tu prisión!" #NT!
+ POD_imprison.002.option.e.tt.attacker_lost: "[targetdefender.GetFirstName] escapes" #NT!
+ POD_imprison.002.option.f.tt: "[targetdefender.GetFirstName] verá en tus ojos la profundidad de la culpa de [targetdefender.GetHerHis] reflejada en [targetdefender.GetHerHim] con una claridad abrumadora." #NT!
+ POD_imprison.002.option.g.tt: "Dejarás de intentar encarcelar a [targetdefender.GetFirstName]." #NT!
+  
+ POD_imprison.102.title: "Nuevo prisionero" #NT!
+ POD_imprison.102.desc.dominate: "Lograste doblegar con éxito la mente de [targetdefender.GetFirstNamePossessive] a tu propia voluntad, ahora [targetdefender.GetSheHe] entrará en tu prisión sin objeciones." #NT!
+ POD_imprison.102.desc.presence: "Lograste que [targetdefender.GetFirstName] quisiera ingresar a [targetdefender.GetHerHis] nueva celda de prisión solo para complacerte." #NT!
+ POD_imprison.102.desc.prowess: "Has ganado. [targetdefender.GetFirstName] ya no puede resistirse a ti. Esto debería enseñarles a todos lo que les sucede a quienes se oponen a ti." #NT!
+ POD_imprison.102.desc.marshal: "[attacker_marshal.GetFirstName] ha derrotado a [targetdefender.GetFirstName]. Esto enseñará a todos a no oponerse a tu autoridad." #NT!
+ POD_imprison.102.desc.coterie: "[prowess_duelist.GetFirstName] ha derrotado a [targetdefender.GetFirstName]. Esto enseñará a todos a no oponerse a $POD_player_coterie$." #NT!
+ POD_imprison.102.desc.hunter: "[attacker_marshal.GetFirstName] ha logrado usar las debilidades del vampiro para atrapar a una bestia impía, [targetdefender.GetFirstName]. Esto le enseñará a todos los engendros del infierno a no oponerse a ti." #NT!
+ POD_imprison.102.desc.tears: "Mientras [targetdefender.GetFirstName] se queda paralizado frente a ti, obligado a recordar los muchos pecados de [targetdefender.GetHerHis], tus hombres se posicionan con cuidado para someter a [targetdefender.GetHerHim]. Antes de que [targetdefender.GetSheHe] recupere por completo la conciencia, el cuerpo de [targetdefender.GetHerHis] está fuertemente envuelto en cadenas y estacas de madera que apuntan al corazón están listas para atacar al menor movimiento." #NT!
+ POD_imprison.102.option.a: "¿Ahora qué haré contigo?" #NT!
+  
+ POD_imprison.103.desc: "Mientras [targetdefender.GetFirstName] se queda paralizado frente a ti, obligado a recordar los muchos pecados de [targetdefender.GetHerHis], tus hombres se posicionan con cuidado para someter a [targetdefender.GetHerHim]. Antes de que [targetdefender.GetSheHe] recupere por completo la conciencia, el cuerpo de [targetdefender.GetHerHis] está fuertemente envuelto en cadenas y estacas de madera que apuntan al corazón están listas para atacar al menor movimiento." #NT!
+ POD_imprison.103.option.a: "Ahora viene el juicio." #NT!
+  
+  
+ POD_imprison.202.title: "Perdiendo la pelea" #NT!
+ POD_imprison.202.desc: "La lucha está perdida, tu objetivo ha huido de ti. ¿Quizás deberías intentarlo de nuevo cuando llegue el momento adecuado?" #NT!
+ POD_imprison.202.desc.hunter: "[attacker_marshal.GetFirstName] ha fracasado. Su plan no funcionó y ahora este demonio encarnado, [targetdefender.GetFirstName], ha escapado. ¿Quizás deberías intentarlo de nuevo cuando llegue el momento adecuado?" #NT!
+ POD_imprison.202.option.a: "Esto es simplemente un revés" #NT!
+  
+ POD.imprison.302.title: "Por pura voluntad" #NT!
+ POD_imprison.302.desc.dominate: "Tu intento de dominar a [targetdefender.GetFirstName] y someterlo ha fracasado. Puedes intentar apoderarte de [targetdefender.GetHerHim] por la fuerza bruta." #NT!
+ POD_imprison.302.desc.presence: "[targetdefender.GetFirstName] se ha resistido a tu encanto. Puedes intentar apoderarte de [targetdefender.GetHerHim] por la fuerza bruta." #NT!
+ POD_imprison.302.option.a: "[targetdefender.GetFirstName] ¡no escapará!" #NT!
+ POD_imprison.302.option.b: "He fallado..." #NT!
+ POD_imprison.302.option.b.tt: "Fallarás en tu intento de encarcelamiento. [targetdefender.GetFirstName] te atrapará con un anzuelo débil." #NT!
+  
+ POD_imprison.002.option.labyrinth: "Laberinto de Kami" #NT!
+ POD_imprison.002.option.labyrinth.tt: "Al esconder a este kami en una habitación y pronunciar una palabra vinculante, puedes evitar que [targetdefender.GetFirstName] se vaya. Por ejemplo, si [targetdefender.GetFirstName] sale por la ventana, encontrarán a [targetdefender.GetHerselfHimself] regresando por la puerta, y así sucesivamente." #NT!

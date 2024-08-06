@@ -1,0 +1,24 @@
+﻿l_spanish:
+  
+ POD_journey_maintenance.1.t: "[Localize(Concatenate(PlayerJourneyID,'_planning_title'))]" #NT!
+ POD_journey_maintenance.1.desc: "[Localize(Concatenate(PlayerJourneyID,'_planning_desc'))]" #NT!
+ POD_journey_maintenance.1.option.a: "[Localize(Concatenate(PlayerJourneyID,'_planning_confirm'))]" #NT!
+ POD_journey_maintenance.1.option.a.tt: "[Select_CString( GetScriptedGui('POD_can_start_travel_phase_sgui').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End), Localize('POD_journey_maintenance.1.option.a.tt.default'), GetPlayer.Custom('PODCoterieTravelStatusGUI') )]" #NT!
+ POD_journey_maintenance.1.option.a.tt.default: "$EFFECT_LIST_BULLET$Inmediatamente comenzarás el [travel_phase|E] de este [journey|E].\n[GetPlayer.Custom('PODCoterieTravelStatus')]" #NT!
+ POD_journey_maintenance.1.option.b: "[Localize(Concatenate(PlayerJourneyID,'_planning_decline'))]" #NT!
+ POD_journey_maintenance.1.option.b.tt: "El [planning_phase|E] de este [journey|E] será concluido." #NT!
+ POD_journey_maintenance.1.option.b.tt.2: "Los pasos [journey|E] a $POD_current_journey$ se pausarán. Puedes reanudarlos más tarde y conservar todo tu progreso." #NT!
+  
+ POD_journey_maintenance.20.t: "Una muerte prematura" #NT!
+ POD_journey_maintenance.20.desc: "Acabo de recibir la noticia de que [journey_target.GetName] ha muerto.\n\nNaturalmente, esto significa que no podré continuar con ningún [journeys|E] que tuviera como objetivo a [journey_target.GetHerHim]." #NT!
+ POD_journey_maintenance.20.option.a: "Desgraciado." #NT!
+ POD_journey_maintenance.20.tt: "Todos tus [journeys|E] que tenían como objetivo [journey_target.GetName] han finalizado." #NT!
+  
+ POD_journey_maintenance.100.t: "[Localize(Concatenate(PlayerJourneyID,'_travel_title'))]" #NT!
+ POD_journey_maintenance.100.desc: "[GetPlayer.Custom('PODCoterieTravelStatusFlavor')]\n\n[Localize(Concatenate(PlayerJourneyID,'_travel_desc'))]" #NT!
+ POD_journey_maintenance.100.desc.companion: "\n\n[companion.Custom('PODCoterieIntroFlavor')]" #NT!
+ POD_journey_maintenance.100.option.a: "[Localize(Concatenate(PlayerJourneyID,'_travel_confirm'))]" #NT!
+  
+ POD_journey_maintenance.110.t: "¿Que sigue?" #NT!
+ POD_journey_maintenance.110.desc: "Ahora que he vuelto a casa, puedo centrar mi atención en otros asuntos pendientes.\n\nAlgunos de mis [journeys|E] están listos para ser reanudados." #NT!
+ POD_journey_maintenance.110.option.a: "No quiero reanudar ningún viaje en este momento." #NT!

@@ -1,0 +1,62 @@
+﻿l_spanish:
+ POD_singing_sword_of_madog_cynydd_interaction: "Espada cantante de Madog Cynydd" #NT!
+ POD_singing_sword_of_madog_cynydd_interaction_desc: "Inicia un [single_combat_duel|E] para darle un modificador [GetModifier('artifact_life_expectancy_40_modifier').GetNameWithTooltip] a la espada." #NT!
+ POD_fae_interactions.101.t: "Espada cantante de Madog Cynydd" #NT!
+ POD_fae_interactions.101.desc: "Cada enemigo derribado en batalla por la Espada de Madog Cynydd le da a su asesino lo que le queda de su vida natural." #NT!
+ POD_fae_interactions.101.option.a: "Puedo sentirlo." #NT!
+  
+ POD_caladbolg_interaction: "Invocar un rayo" #NT!
+ POD_caladbolg_interaction_desc: "Invoca rayos del cielo para atacar a los [recipient.GetFirstNamePossessive] caballeros." #NT!
+  
+ POD_red_apple_of_avalon_interaction: "Manzana Roja de Avalon" #NT!
+ POD_red_apple_of_avalon_interaction_desc: "Haz que [recipient.GetFirstName] adquiera un rasgo mental negativo." #NT!
+ POD_red_apple_of_avalon_murder_interaction: "Manzana roja de Avalon #Weak (Asesinato)#!" #NT!
+ POD_red_apple_of_avalon_murder_interaction_desc: "Haz [recipient.GetFirstName] asesinatos [recipient.GetHerHis] amigos o amantes." #NT!
+ recipient_secondary_POD_red_apple_of_avalon_murder_interaction: "Víctima" #NT!
+ POD_white_apple_of_avalon_interaction: "Manzana Blanca de Avalon" #NT!
+ POD_white_apple_of_avalon_interaction_desc: "Sana todos los rasgos mentales negativos de [recipient.GetFirstName]." #NT!
+  
+ POD_activate_arrow_of_midnight_sun_interaction: "Activar Flecha del Sol de Medianoche" #NT!
+ POD_activate_arrow_of_midnight_sun_interaction_desc: "Activa Flecha del Sol de Medianoche, costará 10 de durabilidad por cada uso." #NT!
+ POD_deactivate_arrow_of_midnight_sun_interaction: "Desactivar Flecha del Sol de Medianoche" #NT!
+ POD_deactivate_arrow_of_midnight_sun_interaction_desc: "Desactiva Arrow of Midnight Sun para ahorrar su durabilidad." #NT!
+  
+ POD_lesser_artifact_heal_interaction: "Artefacto de curación #Weak (menor)#!" #NT!
+ POD_artifact_heal_interaction: "Artefacto de curación" #NT!
+ POD_artifact_heal_interaction_desc: "Usar artefacto para curar [recipient.GetFirstName]." #NT!
+ POD_artifact_heal_interaction_options_heading: "¿A qué debo llamar artefacto para curar?" #NT!
+  
+ POD_logis_ashes_interaction: "Las cenizas de Logi" #NT!
+ POD_logis_ashes_interaction_desc: "Desatando el reino [GetModifier('POD_county_great_famine_modifier').GetNameWithTooltip] sobre el reino [recipient.GetFirstNamePossessive]." #NT!
+  
+ POD_artiact_teleportation_interaction: "Teletransporte de artefactos" #NT!
+ POD_artiact_teleportation_interaction_desc: "Usa un artefacto para teletransportarte a la ubicación [recipient.GetFirstNamePossessive], o a tu próximo destino cuando [traveling|E]." #NT!
+  
+ POD_create_artifact_warhorse_interaction: "Paseo a caballo" #NT!
+ POD_create_artifact_warhorse_interaction_desc: "Monta tu caballo de guerra." #NT!
+ POD_create_artifact_dragon_interaction: "Paseo del dragón" #NT!
+ POD_create_artifact_dragon_interaction_desc: "Monta tu dragón." #NT!
+ POD_create_artifact_unicorn_interaction: "Paseo en unicornio" #NT!
+ POD_create_artifact_unicorn_interaction_desc: "Monta tu unicornio." #NT!
+ POD_create_artifact_pegasus_interaction: "Paseo en pegaso" #NT!
+ POD_create_artifact_pegasus_interaction_desc: "Monta tu pegaso." #NT!
+ POD_create_artifact_dog_interaction: "Paseo de perros" #NT!
+ POD_create_artifact_dog_interaction_desc: "Monta a tu perro." #NT!
+ POD_create_artifact_cat_interaction: "Paseo en gato" #NT!
+ POD_create_artifact_cat_interaction_desc: "Monta a tu gato." #NT!
+ dragon_age_can_mount: "Tu dragón debe tener al menos #V 3#! años." #NT!
+ dragon_age_can_fight: "Tu dragón debe tener al menos #V 5#! años." #NT!
+  
+ POD_soulforge_interaction: "Utilice la Forja de Almas" #NT!
+ POD_soulforge_interaction_desc: "Usa Soulforge para matar a todos en el reino [recipient.GetFirstNamePossessive]." #NT!
+ recipient_secondary_POD_soulforge_interaction: "Sacrificio" #NT!
+ any_fallen_prisoner: "No tienes #bold ni #! ningún prisionero que sea [GetTrait('demon').GetName( GetPlayer )] y no [GetTrait('earthbound').GetName( GetPlayer )]." #NT!
+  
+ POD_artifact_shapeshift_interaction: "Cambio de forma" #NT!
+ POD_artifact_shapeshift_interaction_desc: "Usa tu artefacto para cambiar de forma." #NT!
+  
+ POD_call_pet_to_war_interaction: "Llamar a la mascota" #NT!
+ POD_call_pet_to_war_interaction_desc: "Llama a tu mascota y a su amigo a la guerra." #NT!
+ POD_call_pet_to_war_interaction_valid: "Ya has llamado a tus mascotas a [GetPlayer.MakeScope.GetVariable('pet_summon').War.GetName]." #NT!
+ dogs: "Perros" #NT!
+ cockroaches: "Cucarachas" #NT!

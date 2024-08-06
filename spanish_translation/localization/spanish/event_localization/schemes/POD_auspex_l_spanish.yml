@@ -1,0 +1,43 @@
+﻿l_spanish:
+  
+ POD_auspex.100.t: "Invasión psíquica" #NT!
+ POD_auspex.100.desc: "[actor.GetTitledFirstName] está intentando robarte los secretos de tu mente. Gracias a su dominio del Auspex, pueden abrir tu mente incluso a gran distancia. Por suerte, este intento no es nada sutil y puedes intentar resistirte a esta flagrante invasión de la privacidad mental." #NT!
+ POD_auspex.100.option.a: "Ejercer mi fuerza de voluntad para resistir el ataque telepático." #NT!
+ POD_auspex.100.option.b: "Lucha contra la intrusión psíquica." #NT!
+ POD_auspex.100.option.c: "Acepta la intrusión psíquica." #NT!
+  
+ POD_auspex.200.t: "Lectura de mentes [recipient.GetFirstNameNoTooltip]" #NT!
+ POD_auspex.200.desc: "Es el momento adecuado para invadir la psique de [recipient.GetTitledFirstName], pero [recipient.GetSheHe] se resiste." #NT!
+ POD_auspex.200.option.a: "Despierta la sangre para espiar a [recipient.GetHerHim]." #NT!
+ POD_auspex.200.a.tt_willpower: "[recipient.GetFirstNameNoTooltip] ha ejercido su voluntad para resistir tu telepatía." #NT!
+ POD_auspex.200.a.tt_fortitude: "[recipient.GetFirstNameNoTooltip] tiene habilidad en el [discipline|E] de fortaleza y se resiste a tu manipulación." #NT!
+ POD_auspex.200.a.success.desc: "Victoria" #NT!
+ POD_auspex.200.a.tt_success: "☻_¡No se me revelarán secretos!" #NT!
+ POD_auspex.200.a.failure.desc: "Fracaso" #NT!
+ POD_auspex.200.a.tt_failure: "[recipient.GetTitledFirstName] se resistió a mi intento de espionaje telepático." #NT!
+ POD_auspex.200.option.b: "¡Despierta la sangre y ejercita mi voluntad! ¡Mi mente lo verá todo!" #NT!
+ POD_auspex.200.option.b.tt.beast: "#R [recipient.GetSheHe|U] ¡debe desmoronarse bajo nuestro poder mental! #!" #NT!
+ POD_auspex.200.option.c: "Abandone este esfuerzo, ya no deseo espiar psíquicamente a [recipient.GetHerHim]." #NT!
+ POD_auspex.200.option.c.tt: "La telepatía fallará." #NT!
+ POD_auspex.200.option.c.tt.beast: "#R ¡Como la presa, somos ciegos!#!" #NT!
+  
+ POD_auspex.300.t: "La mente de [recipient.GetFirstNameNoTooltip] fue violada" #NT!
+ POD_auspex.300.desc: "He aprendido [recipient.GetTitledFirstNamePossessive] secreto de los susurros de [recipient.GetHersHis] mente." #NT!
+ POD_auspex.300.option.a: "Es como debería ser." #NT!
+ POD_auspex.300.option.a.tt.beast: "#R Ahora, ¿qué hacer con este dulce conocimiento?#!" #NT!
+  
+ POD_auspex.400.t: "Tu mente ha sido violada" #NT!
+ POD_auspex.400.desc: "Habiendo perdido la batalla de voluntades contra [actor.GetTitledFirstName], tus secretos ahora son conocidos por [actor.GetHerHim]." #NT!
+ POD_auspex.400.option.a: "Mi mente ya no es mi santuario" #NT!
+  
+ POD_auspex.500.t: "Resistí el espionaje telepático" #NT!
+ POD_auspex.500.desc: "[recipient.GetTitledFirstName] se ha resistido a mi intento de espiar a [recipient.GetHerHim]." #NT!
+ POD_auspex.500.option.a: "¡Frustrado!" #NT!
+ POD_auspex.500.option.a.tt.beast: "#R ¡Saquemos más sangre e intentemos de nuevo! #!" #NT!
+  
+ POD_auspex.600.t: "Se resistió al espionaje telepático" #NT!
+ POD_auspex.600.desc: "[actor.GetTitledFirstName] ha abandonado [actor.GetHerHis] intento de invadir tu mente." #NT!
+ POD_auspex.600.option.a: "¡Mi mente es mía!" #NT!
+  
+  
+  

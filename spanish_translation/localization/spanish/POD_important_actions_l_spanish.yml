@@ -1,0 +1,102 @@
+﻿l_spanish:
+ action_can_set_fetter_alert: "Has desconfigurado [Fetter|E]" #NT!
+ action_can_set_fetter_alert_label: "Has desconfigurado [Fetter|E]" #NT!
+ action_can_set_fetter_alert_desc: "Debes establecer un [Fetter|E] si no quieres ganar [stress|E] cada mes." #NT!
+ action_can_set_fetter_alert_click: "#I Haz clic para establecer un [Fetter|E] en un [title|E]#! de tu propiedad" #NT!
+  
+ action_can_demonic_possess_alert: "Deberías poseer un recipiente" #NT!
+ action_can_demonic_possess_alert_label: "Deberías poseer un recipiente" #NT!
+ action_can_demonic_possess_alert_desc: "Debes poseer una nave si no quieres quedar atrapado en el [abyss|E]." #NT!
+ action_can_demonic_possess_alert_click: "#I Haz clic para poseer tu capital#!" #NT!
+  
+ action_can_fallen_possess_alert: "Debes designar un anfitrión" #NT!
+ action_can_fallen_possess_alert_label: "Debes designar un anfitrión" #NT!
+ action_can_fallen_possess_alert_desc: "Debes designar un anfitrión si no quieres quedar atrapado en el [abyss|E]." #NT!
+ action_can_fallen_possess_alert_click: "#I Haz clic para designar a un cultista como anfitrión#!" #NT!
+  
+ action_can_add_herd_alert: "Deberías pastorear a un mortal" #NT!
+ action_can_add_herd_alert_label: "Deberías pastorear a un mortal" #NT!
+ action_can_add_herd_alert_desc: "Debes pastorear a un mortal para ganar más experiencia de resonancia." #NT!
+ action_can_add_herd_alert_click: "#I Haz clic para heredizar a un mortal como rebaño#!" #NT!
+  
+ action_can_add_dreamer_alert: "Deberías reflexionar sobre un mortal" #NT!
+ action_can_add_dreamer_alert_label: "Deberías reflexionar sobre un mortal" #NT!
+ action_can_add_dreamer_alert_desc: "Deberías usar un mortal para ganar más experiencia con trucos." #NT!
+ action_can_add_dreamer_alert_click: "#I Haz clic para elegir a un mortal como tu soñador#!" #NT!
+  
+ action_host_not_married: "Anfitrión soltero" #NT!
+ action_host_not_married_label: "Anfitrión soltero" #NT!
+ action_host_not_married_desc: "Tu anfitrión [recipient.GetUIName] no tiene [spouse|E].\n\n#help Estás jugando como el demonio incorpóreo y posees un anfitrión. Si el anfitrión tiene hijos, entonces se considerarán tuyos.#!" #NT!
+ action_host_not_married_click: "#I Haz clic para encontrar el adecuado [spouse|E]#!" #NT!
+  
+ action_can_buy_alchemy: "@mummy_icon! Puedes comprar productos alquímicos" #NT!
+ action_can_buy_alchemy_label: "@mummy_icon! Puedes comprar Productos Alquímicos desde [recipient.GetShortUIName]" #NT!
+ action_can_buy_alchemy_desc: "Algunos $POD_splat_mummy_plural$ tienen la capacidad de crear pociones, esencias y otros objetos mágicos. Cuando se ponen a la venta, tienes la oportunidad de disfrutar de sus efectos por ti mismo." #NT!
+ action_can_buy_alchemy_click: "#I Haz clic para ver una lista de los artículos que [recipient.GetShortUIName] tiene para ofrecer.#!" #NT!
+ action_can_buy_alchemy_combined_group_name: "$action_can_buy_alchemy$" #NT!
+ action_can_buy_alchemy_combined_group_label: "$action_can_buy_alchemy$" #NT!
+ action_can_buy_alchemy_combined_group_description: "$action_can_buy_alchemy_desc$" #NT!
+ action_can_buy_alchemy_combined_label: "@mummy_icon! Compra desde [recipient.GetShortUIName]" #NT!
+  
+ action_can_cover_up_masquerade: "@masquerade_icon! Puedes cubrirte [masquerade|E]" #NT!
+ action_can_cover_up_masquerade_label: "@masquerade_icon! Puedes encubrir la Mascarada" #NT!
+ action_can_cover_up_masquerade_desc: "Como $POD_splat_vampire$, debes mantener tu existencia oculta si no quieres caer presa de $POD_splat_hunter_plural$." #NT!
+ action_can_cover_up_masquerade_click: "#I Haz clic para abrir el Cover up Masquerade [character_interaction|E].#!" #NT!
+  
+ action_can_demand_mass_payment: "@gold_icon! Puedes exigir pagos por varios [hooks|E] a la vez" #NT!
+ action_can_demand_mass_payment_label: "@gold_icon! Puedes solicitar pagos por varios Hooks a la vez" #NT!
+ action_can_demand_mass_payment_desc: "Mantienes [hooks|E] en dos o más personajes que tienen [gold|E] para gastar." #NT!
+ action_can_demand_mass_payment_click: "#I Haga clic para abrir la Demanda de Pago para todos los Hooks [character_interaction|E].#!" #NT!
+  
+ reactive_advice_gain_sekhem: "Ganar Sekhem" #NT!
+ action_reactive_advice_gain_sekhem: "Consejo: Ganar Sekhem" #NT!
+ action_reactive_advice_gain_sekhem_desc: "Tienes varias formas de recuperar Sekhem. Abre este enlace para obtener más información sobre lo que eso significa para ti." #NT!
+ action_reactive_advice_gain_sekhem_click: "$click_to_open_lesson$" #NT!
+ lesson_gain_sekhem_basic: "Ganancia Sekhem" #NT!
+ lesson_gain_sekhem_basic_desc: "Usas Sekhem para alimentar tus técnicas Hekau, y cada tipo de Momia lo recupera de forma diferente: [GetTrait('shemsuheru').GetName( GetPlayer )] por tiempo (1 punto/1 mes si estás en el [GetGeographicalRegion('pod_lands_of_faith').GetName], de lo contrario será un 25% de posibilidades de obtenerlos dependiendo del nivel del edificio Refugio de Ma'at). [GetTrait('cabiri').GetName( GetPlayer )] restáuralo activando la opción personal 'Restauración Pneuma' [character_interaction|E]. [GetTrait('banemummy').GetName( GetPlayer )] recupéralo ejecutando [prisoners|E] usando la opción $EXECUTION_DEVOUR$." #NT!
+ lesson_gain_sekhem_advanced: "Ganancia Sekhem" #NT!
+ lesson_gain_sekhem_advanced_desc: "En etapas posteriores del juego, puedes usar el Draw Sekhem [character_interaction|E] (desbloqueado por [GetPerk( 'name_of_sekhem_perk' ).GetName( GetPlayer )]) o viajar a Amenti en el Panel Umbra para recuperar Sekhem también." #NT!
+  
+ reactive_advice_gain_resolve: "Ganancia de resolución" #NT!
+ action_reactive_advice_gain_resolve: "Consejo: gane resolución" #NT!
+ action_reactive_advice_gain_resolve_desc: "Tienes varias formas de recuperar Resolve. Abra esto para obtener más información sobre lo que eso significa para usted." #NT!
+ action_reactive_advice_gain_resolve_click: "$click_to_open_lesson$" #NT!
+ lesson_gain_resolve: "Ganancia de resolución" #NT!
+ lesson_gain_resolve_desc: "La resolución es el combustible de tu poder demoníaco, puedes obtenerla mediante: Revelación [character_interaction|E] (primero adopta una forma demoníaca cambiando de forma, luego puedes revelar tu verdadera forma a los demás), Devorar pecados [character_interaction|E] (desbloqueado por [GetPerk( 'arcana_sin_eating_perk' ).GetName( GetPlayer )]) o Ejecución $EXECUTION_DEVOUR_SOUL$." #NT!
+  
+ reactive_advice_gain_pathos: "Ganar Pathos" #NT!
+ action_reactive_advice_gain_pathos: "Consejo: Gana Pathos" #NT!
+ action_reactive_advice_gain_pathos_desc: "Tienes varias formas de recuperar Pathos. Abre este enlace para obtener más información sobre lo que eso significa para ti." #NT!
+ action_reactive_advice_gain_pathos_click: "$click_to_open_lesson$" #NT!
+ lesson_gain_pathos: "Ganar patetismo" #NT!
+ lesson_gain_pathos_desc: "Pathos es combustible para tu poder arcanoi, puedes obtenerlo al: finalizar Pasión [decision|E], Drenar Energía [character_interaction|E] (Desbloqueado por [GetPerk( 'incubus_perk' ).GetName( GetPlayer )]), Transferir Pathos [character_interaction|E] (Desbloqueado por [GetPerk( 'pathos_conduit_perk' ).GetName( GetPlayer )]) o Renderizar Reliquia [character_interaction|E] (Desbloqueado por [GetPerk( 'render_relic_perk' ).GetName( GetPlayer )])." #NT!
+  
+ reactive_advice_gain_glamour: "Ganar glamour" #NT!
+ action_reactive_advice_gain_glamour: "Consejo: Gana glamour" #NT!
+ action_reactive_advice_gain_glamour_desc: "Tienes varias formas de recuperar Glamour. Abra esto para obtener más información sobre lo que eso significa para usted." #NT!
+ action_reactive_advice_gain_glamour_click: "$click_to_open_lesson$" #NT!
+ lesson_gain_glamour_1: "Santuario" #NT!
+ lesson_gain_glamour_1_desc: "33% de posibilidades de ganar glamour mensual dependiendo del nivel del edificio Glade Freehold en tu capital." #NT!
+ lesson_gain_glamour_2: "Rapto" #NT!
+ lesson_gain_glamour_2_desc: "Puedes usar Rapture [decision|E] para obtener Glamour." #NT!
+ lesson_gain_glamour_3: "Ensueño" #NT!
+ lesson_gain_glamour_3_desc: "Puedes obtener Glamour al completar un plan diplomático." #NT!
+ lesson_gain_glamour_4: "Devastador" #NT!
+ lesson_gain_glamour_4_desc: "Puedes usar Devastador [character_interaction|E] en prisioneros con [inspiration|E] para ganar Glamour." #NT!
+ lesson_gain_glamour_5: "Rapsodia" #NT!
+ lesson_gain_glamour_5_desc: "Puedes usar Rhapsody [character_interaction|E] en objetivos con [stress_level|E] [stress_i]#V 3#! para obtener Glamour." #NT!
+ lesson_gain_glamour_6: "Desgarrando" #NT!
+ lesson_gain_glamour_6_desc: "Puedes usar Reaving [character_interaction|E] en tu ubicación actual para ganar Glamour." #NT!
+  
+  
+  ### Custom alerts 
+  
+ pod_alert_can_create_coterie: "#T Puedes crear una parte [GetPlayer.Custom('PODCoterieNoTooltip')]#!\nBeing de un [GetPlayer.Custom('PODCoterie')] para que te sea más fácil tener éxito en tu [journeys|E].\n\n#I Haz clic para crear un [GetPlayer.Custom('PODCoterieNoTooltip')] ahora.#!\n$RIGHT_CLICK_DISMISS$" #NT!
+  
+ pod_alert_can_hunt_in_capital: "#T Puedes emprender un viaje#!\nSince eres un $POD_splat_vampire$, puedes #bold $hunt_in_capital_name$#! para saciar tus [hunger_with_icon|E] y ganar [lifestyle_experience|E].\n\nCazar #bold campesinos#! es gratis.\n\n#!\nSince0 Haz clic para abrir la ventana #!\nSince1.#!\n$RIGHT_CLICK_DISMISS$" #NT!
+  
+ pod_alert_can_train_with_pack: "#T Puedes emprender un viaje#!\nSince eres un $POD_splat_werewolf$, puedes #bold $werewolf_training_name$#! para ganar [lifestyle_experience|E] y reducir el [development|E] de tu capital.\n\n#I Haz clic para abrir la ventana [journey|E].#!\n$RIGHT_CLICK_DISMISS$" #NT!
+  
+ pod_alert_can_go_on_umbra_expedition: "#T Puedes ir a un [umbra_expedition|E]#!\nExploring las profundidades del [umbra|E] pueden ser tanto peligrosas como gratificantes.\n\n#I Haz clic para abrir la ventana [umbra|E].#!\n$RIGHT_CLICK_DISMISS$" #NT!
+  
+ pod_alert_has_umbra_crisis: "#T Tienes una Crisis Umbra sin resolver. #!\nYou Tienes que resolver la Crisis Umbra si no quieres que pase nada malo al final.\n\n#I Haz clic para abrir la ventana [umbra|E].#!\n$RIGHT_CLICK_DISMISS$" #NT!

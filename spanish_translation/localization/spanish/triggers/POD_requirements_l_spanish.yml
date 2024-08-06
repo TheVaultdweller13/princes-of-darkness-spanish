@@ -1,0 +1,119 @@
+﻿l_spanish:
+ POD_requirements_control_25: "#help Este nivel requiere más de #bold;L 25#! [control|E] para construirse y permanecer habilitado.#!" #NT!
+ POD_requirements_control_50: "#help Este nivel requiere más de #bold;L 50#! [control|E] para construirse y permanecer habilitado.#!" #NT!
+ POD_requirements_control_75: "#help Este nivel requiere más de #bold;L 75#! [control|E] para construirse y permanecer habilitado.#!" #NT!
+  
+ POD_requirements_development_5: "#help Este nivel requiere más de #bold;L 5#! [development|E] para construirse y permanecer habilitado.#!" #NT!
+ POD_requirements_development_10: "#help Este nivel requiere más de #bold;L 10#! [development|E] para construirse y permanecer habilitado.#!" #NT!
+ POD_requirements_development_15: "#help Este nivel requiere más de #bold;L 15#! [development|E] para construirse y permanecer habilitado.#!" #NT!
+ POD_requirements_development_20: "#help Este nivel requiere más de #bold;L 20#! [development|E] para construirse y permanecer habilitado.#!" #NT!
+ POD_requirements_development_25: "#help Este nivel requiere más de #bold;L 25#! [development|E] para construirse y permanecer habilitado.#!" #NT!
+ POD_requirements_development_30: "#help Este nivel requiere más de #bold;L 30#! [development|E] para construirse y permanecer habilitado.#!" #NT!
+ POD_requirements_development_40: "#help Este nivel requiere más de #bold;L 40#! [development|E] para construirse y permanecer habilitado.#!" #NT!
+ POD_requirements_development_60: "#help Este nivel requiere más de #bold;L 60#! [development|E] para construirse y permanecer habilitado.#!" #NT!
+  
+ POD_requirements_development_below_5: "#help Este nivel requiere #bold;L 5 o menos#! [development|E] para construirse y permanecer habilitado.#!" #NT!
+ POD_requirements_development_below_10: "#help Este nivel requiere #bold;L 10 o menos#! [development|E] para construirse y permanecer habilitado.#!" #NT!
+ POD_requirements_development_below_15: "#help Este nivel requiere #bold;L 15 o menos#! [development|E] para construirse y permanecer habilitado.#!" #NT!
+  
+ POD_requirements_development_below_3_ducal: "#help Este nivel requiere #bold;L 3 o menos#! [development|E] para construirse.#!" #NT!
+ POD_requirements_development_below_6_ducal: "#help Este nivel requiere #bold;L 6 o menos#! [development|E] para construirse.#!" #NT!
+ POD_requirements_development_below_9_ducal: "#help Este nivel requiere #bold;L 9 o menos#! [development|E] para ser construido.#!" #NT!
+ POD_requirements_development_below_12_ducal: "#help Este nivel requiere #bold;L 12 o menos#! [development|E] para ser construido.#!" #NT!
+ POD_requirements_development_below_15_ducal: "#help Este nivel requiere #bold;L 15 o menos#! [development|E] para construirse.#!" #NT!
+  
+ POD_requirements_development_5_splendor_1: "#help Este nivel requiere más de #bold;L 5#! [development|E] y un [dynasty_prestige_level|E] de #bold [GetDynastyPrestigeLevelName('(int32)1')]#! para construirse y permanecer habilitado.#!" #NT!
+ POD_requirements_development_10_splendor_1: "#help Este nivel requiere más de #bold;L 10#! [development|E] y un [dynasty_prestige_level|E] de #bold [GetDynastyPrestigeLevelName('(int32)1')]#! para construirse y permanecer habilitado.#!" #NT!
+ POD_requirements_development_10_splendor_3: "#help Este nivel requiere más de #bold;L 10#! [development|E] y un [dynasty_prestige_level|E] de #bold [GetDynastyPrestigeLevelName('(int32)3')]#! para construirse y permanecer habilitado.#!" #NT!
+ POD_requirements_development_15_splendor_3: "#help Este nivel requiere más de #bold;L 15#! [development|E] y un [dynasty_prestige_level|E] de #bold [GetDynastyPrestigeLevelName('(int32)3')]#! para construirse y permanecer habilitado.#!" #NT!
+ POD_requirements_development_15_splendor_6: "#help Este nivel requiere más de #bold;L 15#! [development|E] y un [dynasty_prestige_level|E] de #bold [GetDynastyPrestigeLevelName('(int32)6')]#! para construirse y permanecer habilitado.#!" #NT!
+ POD_requirements_development_20_splendor_6: "#help Este nivel requiere más de #bold;L 20#! [development|E] y un [dynasty_prestige_level|E] de #bold [GetDynastyPrestigeLevelName('(int32)6')]#! para construirse y permanecer habilitado.#!" #NT!
+  
+ POD_requirements_carthage: "El [holder|E] debe ser [GetTrait('brujah').GetName( GetPlayer )], [GetTrait('truebrujah').GetName( GetPlayer )] o seguir [GetFaithByKey('viaprometheus').GetName]" #NT!
+ POD_requirements_ombos: "El [holder|E] debe ser [GetTrait('setite').GetName( GetPlayer )] o seguir a [GetReligionByKey('roadofset_religion').GetAdjective]" #NT!
+ POD_requirements_erciyes: "El [holder|E] debe ser [GetTrait('cappadocian').GetName( GetPlayer )], [GetTrait('giovanni').GetName( GetPlayer )] o [GetTrait('malkavian').GetName( GetPlayer )]" #NT!
+ POD_requirements_cathedral_of_flesh: "El [holder|E] debe ser [GetTrait('tzimisce').GetName( GetPlayer )] o [GetTrait('baali').GetName( GetPlayer )]" #NT!
+ POD_requirements_sherwood: "El [holder|E] debe seguir a [GetFaithByKey('viafurores').GetName], [GetFaithByKey('freeanarch').GetName] o [GetFaithByKey('camaanarchs').GetName] o ser un [GetTrait('werewolf').GetName( GetPlayer )]." #NT!
+ POD_requirements_telyavel: "El [holder|E] debe seguir a [GetReligionByKey('roadofbeast_religion').GetAdjective] o [GetFaithByKey('pathofthebeast').GetName]" #NT!
+ POD_requirements_giovanni_mausoleum: "El [holder|E] debe ser [GetTrait('cappadocian').GetName( GetPlayer )] o [GetTrait('giovanni').GetName( GetPlayer )]" #NT!
+ POD_requirements_well_of_sacrifice: "El [holder|E] debe seguir a [GetFaithByKey('viadiabolis').GetName], [GetFaithByKey('viatartaros').GetName] o ser un Infernalista" #NT!
+ POD_requirements_castle_hardestadt: "El [holder|E] debe seguir a [GetFaithByKey('viatyrannus').GetName] o [GetFaithByKey('camahumanity').GetName]" #NT!
+ POD_requirements_metamorphosis: "El [holder|E] debe seguir a [GetReligionByKey('roadofmetamorphosis_religion').GetAdjective] o [GetFaithByKey('pathofmetamorphosis').GetName]" #NT!
+ POD_requirements_uppsala: "El [holder|E] debe seguir a [GetFaithByKey('viaeinherjar').GetName] o [GetFaithByKey('viaaesigard').GetName]" #NT!
+ POD_requirements_rome: "El [holder|E] debe ser [GetTrait('vampire').GetName( GetPlayer )] o [GetTrait('demon').GetName( GetPlayer )]" #NT!
+ POD_requirements_tower_flies: "El [holder|E] debe ser [GetTrait('baali').GetName( GetPlayer )] o [GetTrait('demon').GetName( GetPlayer )]" #NT!
+ POD_requirements_fae: "El [holder|E] debe ser [GetTrait('fae').GetName( GetPlayer )], [GetTrait('changeling').GetName( GetPlayer )] o [GetTrait('kinain').GetName( GetPlayer )]" #NT!
+ POD_requirements_forsaken_or_gantenbein: "¿Es [GetDynastyByID( 'dynn_gantenbein' ).GetBaseName] o sigue a [GetReligionByKey('calomenasforsaken_religion').GetAdjective]?" #NT!
+  
+ POD_requirements_isis: "El [holder|E] debe ser [GetTrait('mummy').GetName( GetPlayer )] o [GetScriptedCharacterByHistoryID('790512').GetFirstName]" #NT!
+ POD_requirements_ceoris: "El [holder|E] debe ser [GetTrait('demon').GetName( GetPlayer )], [GetTrait('tremere').GetName( GetPlayer )] o [GetTrait('mage').GetName( GetPlayer )]" #NT!
+ POD_requirements_iglesia: "El [holder|E] debe ser [GetTrait('demon').GetName( GetPlayer )] o [GetTrait('lasombra').GetName( GetPlayer )]" #NT!
+ POD_requirements_influence_animals: "El [holder|E] debe tener [GetPerk( 'call_of_the_wild_perk' ).GetName( GetPlayer )], [GetPerk( 'master_of_snakes_perk' ).GetName( GetPlayer )] o [GetPerk( 'mother_of_monsters_perk' ).GetName( GetPlayer )] [perk|E] o los [holder|E] [dynasty|E] tienen [GetDynastyPerk('gangrel_legacy_1').GetName], [GetDynastyPerk('nosferatu_legacy_1').GetName] o [GetDynastyPerk('ravnos_legacy_1').GetName] [GetPerk( 'call_of_the_wild_perk' ).GetName( GetPlayer )]0." #NT!
+  
+ POD_requirements_has_POD_vamp_blood_trigger: "El [holder|E] debe ser [GetTrait('vampire').GetName( GetPlayer )], [GetTrait('ghoul').GetName( GetPlayer )] o [GetTrait('revenant').GetName( GetPlayer )]" #NT!
+ POD_requirements_vampire: "El [holder|E] debe ser [GetTrait('vampire').GetName( GetPlayer )]" #NT!
+ POD_requirements_ghoul: "El [holder|E] debe ser [GetTrait('ghoul').GetName( GetPlayer )] o [GetTrait('revenant').GetName( GetPlayer )]" #NT!
+ POD_requirements_ghoulbro: "El [holder|E] debe ser [GetDynastyByID( 'dynn_gantenbein' ).GetBaseName] o seguir a [GetReligionByKey('calomenasforsaken_religion').GetAdjective]" #NT!
+ POD_requirements_demon: "El [holder|E] debe ser [GetTrait('demon').GetName( GetPlayer )], [GetTrait('laham').GetName( GetPlayer )], [GetTrait('nephilim').GetName( GetPlayer )] o Cultista" #NT!
+ POD_requirements_mummy: "El [holder|E] debe ser [GetTrait('mummy').GetName( GetPlayer )] o [neteru|E]" #NT!
+ POD_requirements_shemsuheru: "El [holder|E] debe ser [GetTrait('shemsuheru').GetName( GetPlayer )] o [neteru|E]" #NT!
+ POD_requirements_cabiri: "El [holder|E] debe ser [GetTrait('cabiri').GetName( GetPlayer )] o [neteru|E]" #NT!
+ POD_requirements_banemummy: "El [holder|E] debe ser [GetTrait('banemummy').GetName( GetPlayer )] o [neteru|E]" #NT!
+ POD_requirements_inquisitor: "El [holder|E] debe ser [GetTrait('supehunter').GetName( GetPlayer )] o [GetTrait('mortal').GetName( GetPlayer )] hijo de [GetTrait('supehunter').GetName( GetPlayer )] y ser de la fe de la Inquisición de las Sombras." #NT!
+ POD_requirements_hunter: "El [holder|E] debe ser [GetTrait('supehunter').GetName( GetPlayer )] o [GetTrait('mortal').GetName( GetPlayer )] hijo de [GetTrait('supehunter').GetName( GetPlayer )] y no ser de la fe de la Inquisición de las Sombras." #NT!
+ POD_requirements_shih: "El [holder|E] debe ser [GetTrait('shih').GetName( GetPlayer )], hijo de [GetTrait('shih').GetName( GetPlayer )] o tiene modificador [GetModifier('life_bring_life_shih_modifier').GetNameWithTooltip]" #NT!
+ POD_requirements_kj: "El [holder|E] debe ser [GetTrait('kueijin').GetName( GetPlayer )], [GetTrait('dhampyr').GetName( GetPlayer )] o tiene el modificador [GetModifier('life_bring_life_kueijin_modifier').GetNameWithTooltip]" #NT!
+ POD_requirements_hengeyokai: "El [holder|E] debe ser [GetTraitGroup('shapeshifter').GetName()], [GetTrait('kinfolk').GetName( GetPlayer )] o tiene el modificador [GetModifier('life_bring_life_hengeyokai_modifier').GetNameWithTooltip]" #NT!
+ POD_requirements_ww: "El [holder|E] debe ser [GetTrait('werewolf').GetName( GetPlayer )] o raza de hombre lobo [GetTrait('kinfolk').GetName( GetPlayer )]" #NT!
+ POD_requirements_shifter: "El [holder|E] debe ser [GetTraitGroup('shapeshifter').GetName()] o [GetTrait('kinfolk').GetName( GetPlayer )]" #NT!
+  
+ POD_requirements_rome_ventrue_02: "El [holder|E] necesita emplear un [GetCourtPositionType('ventrue_primogen_court_position').GetName()]" #NT!
+ POD_requirements_rome_ventrue_03: "El [holder|E] debe emplear un [GetCourtPositionType('ventrue_primogen_court_position').GetName()] con [Concept('ventrue_primogen','Good Aptitude')|E] o superior" #NT!
+ POD_requirements_rome_ventrue_04: "El [holder|E] necesita emplear un [GetCourtPositionType('ventrue_primogen_court_position').GetName()] con [Concept('ventrue_primogen','Excellent Aptitude')|E]" #NT!
+ POD_requirements_rome_brujah_02: "El [holder|E] necesita emplear un [GetCourtPositionType('brujah_primogen_court_position').GetName()]" #NT!
+ POD_requirements_rome_brujah_03: "El [holder|E] debe emplear un [GetCourtPositionType('brujah_primogen_court_position').GetName()] con [Concept('brujah_primogen','Good Aptitude')|E] o superior" #NT!
+ POD_requirements_rome_brujah_04: "El [holder|E] necesita emplear un [GetCourtPositionType('brujah_primogen_court_position').GetName()] con [Concept('brujah_primogen','Excellent Aptitude')|E]" #NT!
+ POD_requirements_rome_setite_02: "El [holder|E] necesita emplear un [GetCourtPositionType('setite_primogen_court_position').GetName()]" #NT!
+ POD_requirements_rome_setite_03: "El [holder|E] debe emplear un [GetCourtPositionType('setite_primogen_court_position').GetName()] con [Concept('setite_primogen','Good Aptitude')|E] o superior" #NT!
+ POD_requirements_rome_setite_04: "El [holder|E] necesita emplear un [GetCourtPositionType('setite_primogen_court_position').GetName()] con [Concept('setite_primogen','Excellent Aptitude')|E]" #NT!
+ POD_requirements_rome_gangrel_02: "El [holder|E] necesita emplear un [GetCourtPositionType('gangrel_primogen_court_position').GetName()]" #NT!
+ POD_requirements_rome_gangrel_03: "El [holder|E] debe emplear un [GetCourtPositionType('gangrel_primogen_court_position').GetName()] con [Concept('gangrel_primogen','Good Aptitude')|E] o superior" #NT!
+ POD_requirements_rome_gangrel_04: "El [holder|E] necesita emplear un [GetCourtPositionType('gangrel_primogen_court_position').GetName()] con [Concept('gangrel_primogen','Excellent Aptitude')|E]" #NT!
+ POD_requirements_rome_lasombra_02: "El [holder|E] necesita emplear un [GetCourtPositionType('lasombra_primogen_court_position').GetName()]" #NT!
+ POD_requirements_rome_lasombra_03: "El [holder|E] debe emplear un [GetCourtPositionType('lasombra_primogen_court_position').GetName()] con [Concept('lasombra_primogen','Good Aptitude')|E] o superior" #NT!
+ POD_requirements_rome_lasombra_04: "El [holder|E] necesita emplear un [GetCourtPositionType('lasombra_primogen_court_position').GetName()] con [Concept('lasombra_primogen','Excellent Aptitude')|E]" #NT!
+ POD_requirements_rome_nosferatu_02: "El [holder|E] necesita emplear un [GetCourtPositionType('nosferatu_primogen_court_position').GetName()]" #NT!
+ POD_requirements_rome_nosferatu_03: "El [holder|E] necesita emplear un [GetCourtPositionType('nosferatu_primogen_court_position').GetName()] con [Concept('nosferatu_primogen','Good Aptitude')|E] o superior" #NT!
+ POD_requirements_rome_nosferatu_04: "El [holder|E] necesita emplear un [GetCourtPositionType('nosferatu_primogen_court_position').GetName()] con [Concept('nosferatu_primogen','Excellent Aptitude')|E]" #NT!
+ POD_requirements_rome_tzimisce_02: "El [holder|E] necesita emplear un [GetCourtPositionType('tzimisce_primogen_court_position').GetName()]" #NT!
+ POD_requirements_rome_tzimisce_03: "El [holder|E] debe emplear un [GetCourtPositionType('tzimisce_primogen_court_position').GetName()] con [Concept('tzimisce_primogen','Good Aptitude')|E] o superior" #NT!
+ POD_requirements_rome_tzimisce_04: "El [holder|E] necesita emplear un [GetCourtPositionType('tzimisce_primogen_court_position').GetName()] con [Concept('tzimisce_primogen','Excellent Aptitude')|E]" #NT!
+ POD_requirements_rome_toreador_02: "El [holder|E] necesita emplear un [GetCourtPositionType('toreador_primogen_court_position').GetName()]" #NT!
+ POD_requirements_rome_toreador_03: "El [holder|E] debe emplear un [GetCourtPositionType('toreador_primogen_court_position').GetName()] con [Concept('toreador_primogen','Good Aptitude')|E] o superior" #NT!
+ POD_requirements_rome_toreador_04: "El [holder|E] necesita emplear un [GetCourtPositionType('toreador_primogen_court_position').GetName()] con [Concept('toreador_primogen','Excellent Aptitude')|E]" #NT!
+ POD_requirements_rome_cappadocian_02: "El [holder|E] necesita emplear un [GetCourtPositionType('cappadocian_primogen_court_position').GetName()]" #NT!
+ POD_requirements_rome_cappadocian_03: "El [holder|E] debe emplear un [GetCourtPositionType('cappadocian_primogen_court_position').GetName()] con [Concept('cappadocian_primogen','Good Aptitude')|E] o superior" #NT!
+ POD_requirements_rome_cappadocian_04: "El [holder|E] necesita emplear un [GetCourtPositionType('cappadocian_primogen_court_position').GetName()] con [Concept('cappadocian_primogen','Excellent Aptitude')|E]" #NT!
+ POD_requirements_rome_ravnos_02: "El [holder|E] necesita emplear un [GetCourtPositionType('ravnos_primogen_court_position').GetName()]" #NT!
+ POD_requirements_rome_ravnos_03: "El [holder|E] debe emplear un [GetCourtPositionType('ravnos_primogen_court_position').GetName()] con [Concept('ravnos_primogen','Good Aptitude')|E] o superior" #NT!
+ POD_requirements_rome_ravnos_04: "El [holder|E] necesita emplear un [GetCourtPositionType('ravnos_primogen_court_position').GetName()] con [Concept('ravnos_primogen','Excellent Aptitude')|E]" #NT!
+ POD_requirements_rome_salubri_02: "El [holder|E] necesita emplear un [GetCourtPositionType('salubri_primogen_court_position').GetName()]" #NT!
+ POD_requirements_rome_salubri_03: "El [holder|E] debe emplear un [GetCourtPositionType('salubri_primogen_court_position').GetName()] con [Concept('salubri_primogen','Good Aptitude')|E] o superior" #NT!
+ POD_requirements_rome_salubri_04: "El [holder|E] necesita emplear un [GetCourtPositionType('salubri_primogen_court_position').GetName()] con [Concept('salubri_primogen','Excellent Aptitude')|E]" #NT!
+ POD_requirements_rome_malkavian_02: "El [holder|E] necesita emplear un [GetCourtPositionType('malkavian_primogen_court_position').GetName()]" #NT!
+ POD_requirements_rome_malkavian_03: "El [holder|E] debe emplear un [GetCourtPositionType('malkavian_primogen_court_position').GetName()] con [Concept('malkavian_primogen','Good Aptitude')|E] o superior" #NT!
+ POD_requirements_rome_malkavian_04: "El [holder|E] necesita emplear un [GetCourtPositionType('malkavian_primogen_court_position').GetName()] con [Concept('malkavian_primogen','Excellent Aptitude')|E]" #NT!
+ POD_requirements_rome_assamite_02: "El [holder|E] necesita emplear un [GetCourtPositionType('assamite_primogen_court_position').GetName()]" #NT!
+ POD_requirements_rome_assamite_03: "El [holder|E] debe emplear un [GetCourtPositionType('assamite_primogen_court_position').GetName()] con [Concept('assamite_primogen','Good Aptitude')|E] o superior" #NT!
+ POD_requirements_rome_assamite_04: "El [holder|E] necesita emplear un [GetCourtPositionType('assamite_primogen_court_position').GetName()] con [Concept('assamite_primogen','Excellent Aptitude')|E]" #NT!
+  
+ POD_requirements_rome_san_michele_library_03: "Los [holder|E] deben haber prestado su apoyo a la Orden Roja a través de [decision|E]" #NT!
+ POD_requirements_rome_san_michele_aedificium_03: "Los [holder|E] deben haber prestado su apoyo a la Casa Murnau a través de [decision|E]" #NT!
+ POD_requirements_rome_san_michele_reliquary_03: "Los [holder|E] deben haber prestado su apoyo a los Caballeros de Acre a través de [decision|E]" #NT!
+ POD_requirements_rome_san_michele_basilica_03: "Los [holder|E] deben haber prestado su apoyo a las Hermanas de San Juan a través de [decision|E]" #NT!
+ POD_requirements_rome_san_michele_cloisters_03: "Los [holder|E] deben haber prestado su apoyo a los Oculi Dei a través de [decision|E]" #NT!
+  
+ POD_requirements_rome_colosseum_02: "El [holder|E] debe ser un [GetTrait('august').GetName(GetNullCharacter)] o emplear un [GetCourtPositionType('seneschal_court_position').GetName()] con Excelente [aptitude|E]" #NT!
+ POD_requirements_rome_hadrianstomb_02: "El [holder|E] debe ser un [GetTrait('scholar').GetName(GetNullCharacter)] o emplear un [GetCourtPositionType('antiquarian_court_position').GetName()] con Excelente [aptitude|E]" #NT!
+ POD_requirements_rome_aqueduct_02: "El [holder|E] debe ser un [GetTrait('architect').GetName(GetNullCharacter)] o emplear un [GetCourtPositionType('royal_architect_court_position').GetName()] con Excelente [aptitude|E]" #NT!
+ POD_requirements_rome_pasquino_02: "El [holder|E] debe ser un [GetTrait('schemer').GetName(GetNullCharacter)] o tener un [spymaster|E] con al menos 20 [intrigue|E] sentados en el [council|E]" #NT!

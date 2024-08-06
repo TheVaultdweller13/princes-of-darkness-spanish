@@ -1,0 +1,47 @@
+﻿l_spanish:
+ POD_wraith_binding.100.t: "Ataduras de Magia y Voluntad." #NT!
+ POD_wraith_binding.100.desc: "Mientras te dedicas a tus actividades habituales como espectro, sientes una poderosa atracción hacia un lugar desconocido. ¡Alguien está alterando tu conexión con el mundo mortal! Al llegar a una cámara de invocación, conoces a tu invocador, un nigromante llamado [actor.GetFirstNameNoTooltip]. El ritual de unión ya está empezando a afectarte y a deformar tu ser." #NT!
+ POD_wraith_binding.100.option.a: "¡YO NO SERÉ CONTROLADO!" #NT!
+ POD_wraith_binding.100.option.b: "Resistir, por supuesto." #NT!
+ POD_wraith_binding.100.option.c: "La resistencia es inútil... La venganza, pero más tarde." #NT!
+  
+ POD_wraith_binding.200.t: "Ataduras de Magia y Voluntad." #NT!
+ POD_wraith_binding.200.desc: "Con el terreno ritual listo, invocas la magia oscura del abismo y atraes al espectro objetivo a tu círculo preparado. \n A través de un agujero en la realidad mortal llega [recipient.GetFirstNameNoTooltip], con el rostro contorsionado por el dolor y la rabia. Ahora que el fantasma está aquí, es hora de atarlo." #NT!
+ POD_wraith_binding.200.wp: "De todas maneras, continúe." #NT!
+ POD_wraith_binding.200.wp.tt_willpower: "[recipient.GetFirstNameNoTooltip] ha ejercido su voluntad para ocultar mejor los movimientos y conversaciones clandestinas de [recipient.GetHerHis]." #NT!
+ POD_wraith_binding.200.blood.tt_success: "Éxito" #NT!
+ POD_wraith_binding.200.wp.success.desc: "Victoria" #NT!
+ POD_wraith_binding.200.wp.tt_success: "[recipient.GetTitledFirstName] me obedecerá!" #NT!
+ POD_wraith_binding.200.wp.failure.desc: "Fracaso" #NT!
+ POD_wraith_binding.200.blood.tt_failure: "Falla" #NT!
+ POD_wraith_binding.200.wp.tt_failure: "[recipient.GetTitledFirstName] se resistió a mi intento de vinculación." #NT!
+ POD_wraith_binding.200.option.wp: "Ejerce mi voluntad. ¡Seré [recipient.GetHerHis] amo!" #NT!
+ POD_wraith_binding.200.blood: "Ejercita mi voluntad y mi sangre. El abismo me concederá poder sobre la muerte y los muertos." #NT!
+  
+ POD_wraith_binding.200.option.c: "Abandone este esfuerzo, ya no deseo atar a [recipient.GetHerHim]." #NT!
+ POD_wraith_binding.200.option.c.tt: "El intento fracasará." #NT!
+  
+  
+ POD_wraith_binding.300.t: "[recipient.GetFirstNameNoTooltip] Atado.." #NT!
+ POD_wraith_binding.300.desc: "He invocado con éxito los terribles poderes del olvido para obligar a [recipient.GetTitledFirstName] a prestar un servicio eterno. La pregunta es: ¿qué tan fuerte es el vínculo?" #NT!
+ POD_wraith_binding.300.option.a: "Es como debería ser." #NT!
+ POD_wraith_binding.300.twolevels: "¡La potencia del enlace aumentará en dos niveles!" #NT!
+ POD_wraith_binding.300.threelevels: "¡La potencia del enlace aumentará en tres niveles!" #NT!
+  
+ POD_wraith_binding.400.t: "¡Atado!" #NT!
+ POD_wraith_binding.400.desc: "A pesar de tus esfuerzos por luchar contra los poderes oscuros de [actor.GetTitledFirstName], la magia te ha obligado a convertirte en un esclavo involuntario de [actor.GetHerHim]." #NT!
+ POD_wraith_binding.400.option.a: "Mi independencia...perdida." #NT!
+  
+ POD_wraith_binding.500.t: "Enlace fallido" #NT!
+ POD_wraith_binding.500.desc: "[recipient.GetTitledFirstName] se ha resistido a mi intento de vincular a [recipient.GetHerHim]." #NT!
+ POD_wraith_binding.500.option.a: "¡Frustrado!" #NT!
+  
+  
+ POD_wraith_binding.600.t: "Encuadernación laminada" #NT!
+ POD_wraith_binding.600.desc: "[actor.GetTitledFirstName] ha abandonado [actor.GetHerHis] intento de forzarte a prestar servicio." #NT!
+ POD_wraith_binding.600.option.a: "¡Mi independencia está a salvo!" #NT!
+  
+ POD_wraith_binding.1000.t: "El Espectro Marcado ha llegado" #NT!
+ POD_wraith_binding.1000.desc: "[wraith.GetTitledFirstName] ha muerto y ha llegado como invitado a tu corte. Si no haces nada, [wraith.GetHerHim] irá a [underworld|E] después de siete días." #NT!
+ POD_wraith_binding.1000.option.a: "Debería vincular [wraith.GetHerHim] inmediatamente." #NT!
+ POD_wraith_binding.1000.option.b: "No haré nada" #NT!

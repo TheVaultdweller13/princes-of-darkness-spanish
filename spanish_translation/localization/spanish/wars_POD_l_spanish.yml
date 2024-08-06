@@ -1,0 +1,100 @@
+﻿l_spanish:
+  
+ hunter_war_victory_desc: "¡Perderás prestigio y autoridad de la corona, y serás presionado a abdicar!" #NT!
+ hunter_war_white_peace_desc: "La facción de cazadores se disuelve." #NT!
+ hunter_war_defeat_desc: "La facción de cazadores se disuelve y [attacker.GetShortUIName] queda encarcelado. A todos los rebeldes [counties|E] se les aumenta el control de forma forzada." #NT!
+ hunter_war: "Ataque de la inquisición" #NT!
+ HUNTER_WAR_NAME: "Ataque de la inquisición" #NT!
+ declared_major_religious_war_flag_POD_tt: "Sólo se puede intentar una guerra religiosa importante cada 50 años." #NT!
+ major_religious_war_warning_POD_desc: "\n\n#X Solo puedes intentar un [holy_war|E] contra un [kingdom|E] de nivel [title|E] cada 50 años#!" #NT!
+ invasion_war_warning_POD_desc: "\n\n#X Solo puedes intentar una invasión [war|E] contra un [kingdom|E] de nivel [title|E] cada 100 años#!" #NT!
+  
+ CB_ATTACKER_DYNASTY_SALUBRI: "[GetDynastyPerk( 'salubri_legacy_5' ).GetName]" #NT!
+ CB_ATTACKER_DYNASTY_BANUHAQIM: "[GetDynastyPerk( 'banuhaqim_legacy_5' ).GetName]" #NT!
+  
+ UNDER_THE_BLACK_CROSS_TRUCE_NAME: "La invasión de la Cruz Negra" #NT!
+  
+ TRUCE_SIGNED_SHIH: "\nSe firma una tregua como paz entre Shen y [GetTrait('shih').GetName( GetPlayer )]" #NT!
+  
+ POD_EMPIRE_GREAT_HOLY_WAR_WAR_CB_NAME: "[ATTACKER.GetFaith.Custom('GHWName')] por [empire|E]" #NT!
+ pod_empire_great_holy_war_directed_victory_desc: "El principal contribuyente obtiene el objetivo [empire|E]. [titles|E] del objetivo [empire|E] se entregan a los beneficiarios" #NT!
+ POD_EMPIRE_CRUSADER_STATE_CRUSADER_TITLE_NAME: "Cruzado [target_empire.GetNameNoTierNoTooltip]" #NT!
+ POD_EMPIRE_CRUSADER_STATE_FAITH_TITLE_NAME: "[title_recipient.GetFaith.GetAdjective|U] [target_empire.GetNameNoTierNoTooltip|U]" #NT!
+ POD_directed_great_holy_war: "Gran Guerra Santa" #NT!
+  
+ POD_event_war: "Guerra final" #NT!
+ POD_event_war_victory_desc_attacker: "Te apoderas de todos los títulos dentro del reino [defender.GetShortUINamePossessive]." #NT!
+ POD_event_war_victory_desc: "[attacker.GetShortUIName|U] se apodera de todos los títulos dentro del reino [defender.GetShortUINamePossessive]." #NT!
+  
+ POD_masquerade_war: "Guerra de Mascaradas" #NT!
+ POD_MASQUERADE_WAR_WAR_NAME: "Guerra contra la exposición de [DEFENDER.GetShortUINameNotMe]" #NT!
+ POD_MASQUERADE_WAR_CB_NAME: "Guerra de mascaradas contra [DEFENDER.GetShortUINameNotMe]" #NT!
+ msg_POD_masquerade_war_invalidated_message: "El [war.GetName] ha terminado: [defender.GetShortUIName] ya no es [Select_CString( defender.IsLocalPlayer, 'have', 'has' )] alto [masquerade_exposure|E]." #NT!
+ POD_masquerade_war_victory_desc_defender: "Eres [deposed|E], al igual que cualquiera de tus vasallos con alto [masquerade_exposure|E]." #NT!
+ POD_masquerade_war_victory_desc: "[defender.GetShortUIName|U] es [deposed|E], así como cualquiera de los [defender.GetHerHis] vasallos con alto [masquerade_exposure|E]." #NT!
+ POD_masquerade_war_defeat_desc_attacker: "[defender.GetShortUIName|U] conserva [defender.GetHerHis] títulos. Pierdes [piety|E]." #NT!
+ POD_masquerade_war_defeat_desc_defender: "Mantienes tus títulos y ganas [piety|E]." #NT!
+ POD_masquerade_war_defeat_desc: "[defender.GetShortUIName|U] conserva [defender.GetHerHis] títulos y gana [piety|E]." #NT!
+  
+ POD_oath_war: "Guerra de juramento" #NT!
+ POD_OATH_WAR_WAR_NAME: "Guerra contra el incumplimiento del juramento de [DEFENDER.GetShortUINameNotMe]" #NT!
+ POD_OATH_WAR_CB_NAME: "Juramento de guerra contra [DEFENDER.GetShortUINameNotMe]" #NT!
+ msg_POD_oath_war_invalidated_message: "El [war.GetName] ha terminado: [defender.GetShortUIName] ya no rompe el juramento [Select_CString( defender.IsLocalPlayer, 'have', 'has' )]." #NT!
+ POD_oath_war_victory_desc_defender: "[attacker.GetShortUIName|U] apoderarse de todos los títulos y vasallos dentro de su reino." #NT!
+ POD_oath_war_victory_desc: "[attacker.GetShortUIName|U] se apodera de todos los títulos y vasallos dentro del reino [defender.GetShortUINamePossessive]." #NT!
+ POD_oath_war_defeat_desc_attacker: "[defender.GetShortUIName|U] conserva [defender.GetHerHis] títulos. Pierdes [piety|E]." #NT!
+ POD_oath_war_defeat_desc_defender: "Mantienes tus títulos y ganas [piety|E]." #NT!
+ POD_oath_war_defeat_desc: "[defender.GetShortUIName|U] conserva [defender.GetHerHis] títulos y gana [piety|E]." #NT!
+  
+ POD_bridge_war: "Guerra de puentes" #NT!
+ POD_BRIDGE_WAR_WAR_NAME: "$ORDER$ [ATTACKER.GetPrimaryTitle.GetAdjective] Invasión de puente contra [DEFENDER.GetShortUINameNotMe]" #NT!
+ POD_BRIDGE_WAR_CB_NAME: "Guerra de puentes contra [DEFENDER.GetShortUINameNotMe]" #NT!
+ msg_POD_bridge_war_invalidated_message: "El [war.GetName] ha finalizado: [defender.GetShortUIName] ya no tiene condado ribereño." #NT!
+ POD_bridge_war_victory_desc_defender: "[attacker.GetShortUIName|U] apoderarse de todos los títulos del condado de Riverside dentro de su reino." #NT!
+ POD_bridge_war_victory_desc: "[attacker.GetShortUIName|U] confisca todos los títulos del condado de Riverside dentro del reino [defender.GetShortUINamePossessive]." #NT!
+ POD_bridge_war_defeat_desc_attacker: "[defender.GetShortUIName|U] mantiene [defender.GetHerHis] títulos." #NT!
+ POD_bridge_war_defeat_desc_defender: "Mantienes tus títulos." #NT!
+ POD_bridge_war_defeat_desc: "[defender.GetShortUIName|U] mantiene [defender.GetHerHis] títulos." #NT!
+  
+ POD_blood_hunt_war: "Caza de sangre" #NT!
+ POD_BLOOD_HUNT_WAR_WAR_NAME: "$ORDER$ [ATTACKER.GetPrimaryTitle.GetAdjective] Cacería de sangre contra [DEFENDER.GetShortUINameNotMe]" #NT!
+ POD_BLOOD_HUNT_WAR_CB_NAME: "Cacería de sangre contra [DEFENDER.GetShortUINameNotMe]" #NT!
+ msg_POD_blood_hunt_war_invalidated_hunted_unavailable_dead_message: "El [war.GetName] ha terminado: [defender.GetShortUIName] murió, y por lo tanto la caza de [defender.GetHerHis] ha terminado." #NT!
+ msg_POD_blood_hunt_war_invalidated_hunted_no_anathema_message: "El [war.GetName] ha finalizado: [defender.GetShortUIName] ya no es un [GetTrait('anathema').GetName( GetPlayer )] y por lo tanto la búsqueda de [defender.GetHerHis] ya no es válida." #NT!
+ POD_blood_hunt_war_victory_desc_defender: "[attacker.GetShortUIName|U] encarcela a todos los gobernantes dentro de tu reino." #NT!
+ POD_blood_hunt_war_victory_desc: "[attacker.GetShortUIName|U] encarcela a todos los gobernantes dentro del reino [defender.GetShortUINamePossessive]." #NT!
+ POD_blood_hunt_war_defeat_desc_attacker: "[defender.GetShortUIName|U] mantiene [defender.GetHerHis] libertad. Pierdes [piety|E]." #NT!
+ POD_blood_hunt_war_defeat_desc_defender: "Mantienes tu libertad y ganas [piety|E]." #NT!
+ POD_blood_hunt_war_defeat_desc: "[defender.GetShortUIName|U] conserva la libertad de [defender.GetHerHis] y gana [piety|E]." #NT!
+  
+ POD_wild_hunt_war: "Caza salvaje" #NT!
+ POD_WILD_HUNT_WAR_WAR_NAME: "$ORDER$ [ATTACKER.GetPrimaryTitle.GetAdjective] Cacería salvaje contra [DEFENDER.GetShortUINameNotMe]" #NT!
+ POD_WILD_HUNT_WAR_CB_NAME: "Caza salvaje contra [DEFENDER.GetShortUINameNotMe]" #NT!
+ msg_POD_wild_hunt_war_invalidated_hunted_unavailable_dead_message: "El [war.GetName] ha terminado: [defender.GetShortUIName] murió, y por lo tanto la caza de [defender.GetHerHis] ha terminado." #NT!
+ msg_POD_wild_hunt_war_invalidated_hunted_true_sabbat_message: "El [war.GetName] ha terminado: [defender.GetShortUIName] es ahora un verdadero sabbat y por lo tanto la caza de [defender.GetHerHis] ya no es válida." #NT!
+ POD_wild_hunt_war_victory_desc_defender: "[attacker.GetShortUIName|U] te confisca todos los títulos que posees y eres ejecutado." #NT!
+ POD_wild_hunt_war_victory_desc: "[attacker.GetShortUIName|U] se apodera de todos los títulos que poseía [defender.GetShortUINamePossessive] y [defender.GetShortUIName|U] es ​​ejecutado." #NT!
+ POD_wild_hunt_war_defeat_desc_attacker: "[defender.GetShortUIName|U] mantiene [defender.GetHerHis] vida. Pierdes [piety|E]." #NT!
+ POD_wild_hunt_war_defeat_desc_defender: "Mantienes tu vida y ganas [piety|E]." #NT!
+ POD_wild_hunt_war_defeat_desc: "[defender.GetShortUIName|U] conserva [defender.GetHerHis] vida y gana [piety|E]." #NT!
+  
+ #POD_warning_bordering_attackers_tt: "#warning Debido a las leyes de la Autoridad de la Corona, los siguientes vasallos se unirán a la guerra del lado de los atacantes.#!" #NT!
+ POD_warning_bordering_defenders_tt: "#warning Debido a las leyes de la Autoridad de la Corona, los siguientes vasallos se unirán a la guerra del lado de los defensores.#!" #NT!
+ #POD_numbers_bordering_attackers_tt: "[attackervassal.GetName]: [attackervassal.GetMilitaryStrengthText] tropas." #NT!
+ POD_numbers_bordering_defenders_tt: "[defendervassal.GetName]: [defendervassal.GetMilitaryStrengthText] tropas." #NT!
+  
+ POD_change_to_ca2: "Una de estas debe ser verdadera:\n$EFFECT_LIST_BULLET$Tienes Autoridad Absoluta de la Corona\n$EFFECT_LIST_BULLET$Tienes 15 o más puestos de mayordomía\n$EFFECT_LIST_BULLET$Tienes 15 o más puestos de diplomacia" #NT!
+ POD_change_to_ca1: "Una de estas debe ser verdadera:\n$EFFECT_LIST_BULLET$Tienes Alta Autoridad de la Corona\n$EFFECT_LIST_BULLET$Tienes 5 o más puestos de mayordomía\n$EFFECT_LIST_BULLET$Tienes 5 o más puestos de diplomacia" #NT!
+  
+ doctrine_parameter_roadofmetamorphosis_war_cb_active: "Otorga $roadofmetamorphosis_war_cb$ [casus_belli|E] contra reinos vecinos" #NT!
+ roadofmetamorphosis_war_cb: "Redada en busca de sujetos de experimentación" #NT!
+ ROADOFMETAMORPHOSIS_WAR_CB_NAME: "$roadofmetamorphosis_war_cb$ contra [DEFENDER.GetPrimaryTitle.GetNameNoTier]" #NT!
+ ROADOFMETAMORPHOSIS_WAR_CB_SPECIFIC_NAME: "$roadofmetamorphosis_war_cb$ contra [DEFENDER.GetPrimaryTitle.GetBaseNameNoTier]" #NT!
+ ROADOFMETAMORPHOSIS_WAR_WAR_NAME: "$ORDER$ [ATTACKER.GetPrimaryTitle.GetAdjective] $roadofmetamorphosis_war_cb$ contra [DEFENDER.GetPrimaryTitle.GetNameNoTier]" #NT!
+ ROADOFMETAMORPHOSIS_WAR_WAR_NAME_BASE: "[ATTACKER.GetPrimaryTitle.GetAdjective][DEFENDER.GetPrimaryTitle.GetName]" #NT!
+ roadofmetamorphosis_war_cb_prisoners.tt_attacker: "Entre tres y cinco de [defender.GetShortUINamePossessive] [courtiers|E] serán tomados prisioneros, dependiendo del nivel [defender.GetHerHis]." #NT!
+ roadofmetamorphosis_war_cb_prisoners.tt_defender: "Entre tres y cinco de [attacker.GetShortUINamePossessive] [courtiers|E] serán tomados prisioneros, dependiendo del nivel [attacker.GetHerHis]." #NT!
+ roadofmetamorphosis_war_cb_victory_desc: "Los personajes y habitantes del condado del reino [defender.GetShortUINamePossessive] son atacados por [attacker.GetShortUIName]." #NT!
+ roadofmetamorphosis_war_cb_white_peace_desc: "No se realiza ninguna incursión." #NT!
+ roadofmetamorphosis_war_cb_defeat_desc: "No se realiza ninguna incursión." #NT!
+ roadofmetamorphosis_war_cooldown: "Ya has pagado $roadofmetamorphosis_war_cb$ en los últimos 5 años" #NT!

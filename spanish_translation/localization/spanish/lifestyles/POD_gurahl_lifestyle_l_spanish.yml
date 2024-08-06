@@ -1,0 +1,112 @@
+﻿l_spanish:
+ gurahlgifts_visible: "Regalos de Gurahl" #NT!
+ gurahlhomidgifts_visible: "Regalos de Homidios" #NT!
+ ursinegifts_visible: "Regalos de osos" #NT!
+ arcasgifts_visible: "Regalos Arcas" #NT!
+ uzmatigifts_visible: "Regalos Uzmati" #NT!
+ kojubatgifts_visible: "Regalos de Kojubat" #NT!
+ kiehgifts_visible: "Regalos de Kieh" #NT!
+ rishigifts_visible: "Regalos rishi" #NT!
+  
+ natures_plenty_perk_name: "La abundancia de la naturaleza" #NT!
+ sentinels_warning_perk_name: "Advertencia del centinela" #NT!
+ grisly_aspect_perk_name: "Aspecto espeluznante" #NT!
+ treeshake_perk_name: "Sacudida de árboles" #NT!
+ dreams_of_the_buri_jaan_perk_name: "Sueños de Buri-Jaan" #NT!
+ ease_the_fevered_mind_perk_name: "Aliviar la mente febril" #NT!
+ masking_the_hunted_perk_name: "Enmascarando a los cazados" #NT!
+ gaias_breath_perk_name: "El aliento de Gaia" #NT!
+ great_grandfathers_summons_perk_name: "La citación del bisabuelo" #NT!
+  
+ EASE_THE_FEVERED_MIND_PERK_EFFECT: "Como [character_interaction|E]. te permite sanar rasgos de estrés y rasgos mentales negativos." #NT!
+ GAIAS_BREATH_PERK_EFFECT: "Como [character_interaction|E], permite evitar que un amigo, amante, consorte, familiar, consejero o caballero muera accidentalmente." #NT!
+ GREAT_GRANDFATHERS_SUMMONS_PERK_EFFECT: "#F En tiempos de gran necesidad o emergencia extrema, este poderoso y poco usado Don permite al Bisabuelo (o Anciano) enviar una invocación a todos los Gurahl, llamándolos a su lado para que pueda informarles el motivo de la llamada. La invocación es tan poderosa que incluso puede despertar a los Gurahl que están atrapados en el sueño de la hibernación. Los Gurahl no necesitan responder a la invocación y algunos, de hecho, rechazan o ignoran la llamada del Anciano. La mayoría de los Gurahl, sin embargo, reúnen elementos curativos, armas y comida, y luego viajan a donde el Bisabuelo los espera. Este es el Don que resultó en el despertar masivo de muchos Gurahl cuando se liberó el Devorador de Tormentas.#!" #NT!
+ GREAT_GRANDFATHERS_SUMMONS_REQUIREMENT: "@warning_icon!#X Debes completar una misión del Bisabuelo (coloca un explorador en cualquier reino de Umbra para encontrar una pista sobre la ubicación y comienza un [umbra_expedition|E] para llegar a ellos y luego recibir una misión) para desbloquear esta ventaja.#!" #NT!
+  
+ ursas_light_perk_name: "La luz de Ursa" #NT!
+ climate_control_perk_name: "Control climatico" #NT!
+ dolorous_countenance_perk_name: "Rostro doloroso" #NT!
+ shape_matter_perk_name: "Materia de forma" #NT!
+ sense_need_perk_name: "Sentir necesidad" #NT!
+ ursas_coat_perk_name: "El abrigo de Ursa" #NT!
+ spirit_shield_perk_name: "Escudo espiritual" #NT!
+ charismatic_presence_perk_name: "Presencia carismática" #NT!
+  
+ gurahl_heightened_senses_perk_name: "Sentidos agudizados" #NT!
+ voice_of_woe_perk_name: "Voz de aflicción" #NT!
+ weather_watch_perk_name: "Vigilancia meteorológica" #NT!
+ pull_of_the_chosen_land_perk_name: "La atracción de la tierra elegida" #NT!
+ shelter_of_the_earth_perk_name: "Refugio de la Tierra" #NT!
+ gnaw_perk_name: "Roer" #NT!
+ sweet_swarm_of_vengeance_perk_name: "Dulce enjambre de venganza" #NT!
+ bears_bounty_perk_name: "La recompensa del oso" #NT!
+  
+ SWEET_SWARM_OF_VENGEANCE_PERK_EFFECT: "Puede reclutar [GetMaA('insects').GetName] como [men_at_arms|E]." #NT!
+ BEARS_BOUNTY_PERK_EFFECT: "Como [character_interaction|E], puedes lanzar [GetModifier('weather_magic_plague_modifier').GetNameWithTooltip] sobre el reino enemigo." #NT!
+  
+ walk_like_a_man_perk_name: "Camina como un hombre" #NT!
+ cajole_perk_name: "Engatusar" #NT!
+ gurahl_safe_passage_perk_name: "Pasaje seguro" #NT!
+ trackless_waste_perk_name: "Residuos sin rastro" #NT!
+ favor_of_ursa_minor_perk_name: "Favor de la Osa Menor" #NT!
+ rejuvenate_perk_name: "Rejuvenecer" #NT!
+ humiliate_perk_name: "Humillar" #NT!
+ natural_state_perk_name: "Estado natural" #NT!
+  
+ CAJOLE_PERK_BONUS_VALUE: "[GetPerk('cajole_perk').GetName(GetPlayer)]" #NT!
+ TRACKLESS_WASTE_PERK_EFFECT: "Otorga el modificador [GetModifier('trackless_waste_perk_modifier').GetNameWithTooltip] a los comandantes enemigos en la guerra como comandante." #NT!
+ HUMILIATE_PERK_EFFECT: "Otorga un modificador [GetModifier('humiliate_perk_modifier').GetNameWithTooltip] al enemigo [knights|E] en la guerra como comandante o al enemigo en [single_combat_duel|E]." #NT!
+  
+ ultimatum_perk_name: "Ultimátum" #NT!
+ mangis_strong_arms_perk_name: "Los brazos fuertes de Mangi" #NT!
+ threaten_perk_name: "Amenazar" #NT!
+ gurahl_crush_perk_name: "Aplastar" #NT!
+ delay_the_death_bears_coming_perk_name: "Retrasar la llegada del oso de la muerte" #NT!
+ strength_of_the_earth_perk_name: "Fuerza de la Tierra" #NT!
+ engulf_the_prey_perk_name: "Engullir la presa" #NT!
+ rage_of_the_mother_bear_perk_name: "La furia de la madre osa" #NT!
+  
+ ULTIMATUM_PERK_EFFECT: "Otorga el modificador [GetModifier('ultimatum_perk_modifier').GetNameWithTooltip] a los comandantes enemigos en la guerra como comandante." #NT!
+  
+ stone_sight_perk_name: "Vista de piedra" #NT!
+ eyes_of_the_soul_perk_name: "Ojos del alma" #NT!
+ song_of_terra_perk_name: "Canción de Terra" #NT!
+ mind_sight_perk_name: "Visión mental" #NT!
+ mind_to_mind_perk_name: "Mente a mente" #NT!
+ probe_thoughts_perk_name: "Sondear pensamientos" #NT!
+ aversion_therapy_perk_name: "Terapia de aversión" #NT!
+ gurahl_prophetic_vision_perk_name: "Visión profética" #NT!
+  
+ MIND_SIGHT_PERK_BONUS_VALUE: "[GetPerk('mind_sight_perk').GetName(GetPlayer)]" #NT!
+ PROBE_THOUGHTS_PERK_BONUS_VALUE: "[GetPerk('probe_thoughts_perk').GetName(GetPlayer)]" #NT!
+  
+ diagnose_perk_name: "Diagnosticar" #NT!
+ refresh_perk_name: "Actualizar" #NT!
+ sense_the_unnatural_perk_name: "Siente lo antinatural" #NT!
+ gurahl_name_the_spirit_perk_name: "Nombrar el Espíritu" #NT!
+ spirit_healing_perk_name: "Curación espiritual" #NT!
+ spirit_shape_perk_name: "Forma de espíritu" #NT!
+ restore_sanity_perk_name: "Restaurar la cordura" #NT!
+ image_of_the_sky_bear_perk_name: "Imagen del oso del cielo" #NT!
+  
+ REFRESH_PERK_EFFECT: "Otorga un modificador [GetModifier('refresh_perk_modifier').GetNameWithTooltip] al aliado [knights|E] cuando estés en guerra como comandante o a ti mismo en [single_combat_duel|E]." #NT!
+ SPIRIT_SHAPE_PERK_EFFECT: "Posibilidad de quedar atrapado en la Umbra: #P -10%#!\nMonthly Progreso de la exploración de la Umbra: [grace_i]#P +10#!" #NT!
+ DIAGNOSE_PERK_EFFECT: "Como [character_interaction|E]. te permite curar enfermedades." #NT!
+ RESTORE_SANITY_PERK_EFFECT: "Como [character_interaction|E]. te permite sanar rasgos de estrés y rasgos mentales negativos." #NT!
+ IMAGE_OF_THE_SKY_BEAR_PERK_EFFECT: "Como un [character_interaction|E]. te permite curar heridas." #NT!
+  
+ gurahl_befriend_perk_name: "Ofrecer amistad" #NT!
+ compel_truth_perk_name: "Obligar a la verdad" #NT!
+ presence_of_the_great_bear_perk_name: "Presencia de la Osa Mayor" #NT!
+ ways_of_the_tapestry_perk_name: "Caminos del tapiz" #NT!
+ waken_perk_name: "Despertar" #NT!
+ bestow_ursas_blessing_perk_name: "Otorgar la bendición de Ursa" #NT!
+ quell_mob_rage_perk_name: "Apaciguar la furia de la turba" #NT!
+ oath_of_the_great_bear_perk_name: "Juramento de la Osa Mayor" #NT!
+ words_of_doom_perk_name: "Palabras de fatalidad" #NT!
+  
+ PRESENCE_OF_THE_GREAT_BEAR_PERK_EFFECT: "Puede reclutar [GetMaA('bears').GetName] como [men_at_arms|E]." #NT!
+ WAKEN_PERK_EFFECT: "La búsqueda de la guarida oculta [journey|E] ahora es gratuita e instantánea." #NT!
+ BESTOW_URSAS_BLESSING_PERK_EFFECT: "Como [character_interaction|E], te permite aumentar temporalmente un atributo del objetivo." #NT!
+ OATH_OF_THE_GREAT_BEAR_PERK_EFFECT: "Como [character_interaction|E], te permite obtener un gancho del objetivo." #NT!
+ WORDS_OF_DOOM_PERK_EFFECT: "Como [character_interaction|E], le permite disminuir temporalmente un atributo del objetivo." #NT!

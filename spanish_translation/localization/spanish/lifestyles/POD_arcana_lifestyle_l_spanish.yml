@@ -1,0 +1,220 @@
+﻿l_spanish:
+ game_concept_arcana_lifestyle: "Arcanos" #NT!
+ game_concept_arcana_lifestyle_desc: "Un Arcano es una hazaña de “magia espiritual” que se basa en la fe y la creencia de los seguidores mortales de un demonio." #NT!
+  
+ arcana_lifestyle_name: "Arcanos" #NT!
+ arcana_lifestyle_desc: "Concéntrate en los poderes que provienen de la fe de los mortales convertidos en milagros de tus propios designios pecaminosos." #NT!
+ arcana_lifestyle_highlight_desc: "Debido a que Resuelves, ganas #P [GetPlayer.Custom('GetDemonicLifestylePercentageBoost')]#! más [experience|E] en este Estilo de Vida." #NT!
+ monthly_arcana_lifestyle_xp_gain_mult: "Arcanos mensuales [lifestyle|E] [experience|E]" #NT!
+  
+ arcana_form_focus: "Enfoque de formulario" #NT!
+ arcana_form_focus_modifier: "[GetFocus('arcana_form_focus').GetName]" #NT!
+ arcana_form_focus_desc: "Crea y dobla carne y hueso a imagen de la voluntad del personaje." #NT!
+ arcana_form_focus_effect_desc: "Centrándose en las subvenciones de formularios:" #NT!
+  
+ arcana_glory_focus: "Enfoque de gloria" #NT!
+ arcana_glory_focus_modifier: "[GetFocus('arcana_glory_focus').GetName]" #NT!
+ arcana_glory_focus_desc: "Dotar a los personajes de capacidades superiores." #NT!
+ arcana_glory_focus_effect_desc: "Centrándose en las subvenciones de Glory:" #NT!
+  
+ arcana_mind_soul_focus: "Enfoque en la mente y el alma" #NT!
+ arcana_mind_soul_focus_modifier: "[GetFocus('arcana_mind_soul_focus').GetName]" #NT!
+ arcana_mind_soul_focus_desc: "Percibir, afectar y, en última instancia, controlar los corazones, las mentes y las almas de los demás." #NT!
+ arcana_mind_soul_focus_effect_desc: "Centrándose en la Mente y el Alma otorga:" #NT!
+  
+ arcana_fate_portals_focus: "Destino y portales" #NT!
+ arcana_fate_portals_focus_modifier: "[GetFocus('arcana_fate_portals_focus').GetName]" #NT!
+ arcana_fate_portals_focus_desc: "Altera el destino, el tiempo, el espacio y los patrones de conexión que unen los principios y la sustancia del universo." #NT!
+ arcana_fate_portals_focus_effect_desc: "Centrarse en el destino y los portales otorga:" #NT!
+  
+ arcana_force_element_focus: "Enfoque en la fuerza y ​​los elementos" #NT!
+ arcana_force_element_focus_modifier: "[GetFocus('arcana_force_element_focus').GetName]" #NT!
+ arcana_force_element_focus_desc: "Crear o redirigir las fuerzas fundamentales y los patrones elementales de energía que forman la base primordial del universo." #NT!
+ arcana_force_element_focus_effect_desc: "Centrándose en las subvenciones de Fuerza y ​​Elemento:" #NT!
+  
+ GAINS_ARCANA_LIFESTYLE_XP: "Ganancias $VALUE|V0$ [arcana_lifestyle|E] Experiencia" #NT!
+ GAINED_ARCANA_LIFESTYLE_XP: "Obtuvo $VALUE|V0$ [arcana_lifestyle|E] Experiencia" #NT!
+ I_GAIN_ARCANA_LIFESTYLE_XP: "Obtienes $VALUE|V0$ [arcana_lifestyle|E] de experiencia" #NT!
+ I_GAINED_ARCANA_LIFESTYLE_XP: "Ganaste $VALUE|V0$ [arcana_lifestyle|E] Experiencia" #NT!
+ TARGET_GAINS_ARCANA_LIFESTYLE_XP: "[CHARACTER.GetShortUIName] gana $VALUE|V0$ [arcana_lifestyle|E] experiencia" #NT!
+ TARGET_GAINED_ARCANA_LIFESTYLE_XP: "[CHARACTER.GetShortUIName] ganado $VALUE|V0$ [arcana_lifestyle|E] Experiencia" #NT!
+  
+ GAINS_A_ARCANA_LIFESTYLE_PERKPOINT: "Ganancias $VALUE|V0$ [arcana_lifestyle|E] [perk|E] Desbloquear" #NT!
+ GAINED_A_ARCANA_LIFESTYLE_PERKPOINT: "Obtenido $VALUE|V0$ [arcana_lifestyle|E] [perk|E] Desbloquear" #NT!
+ I_GAIN_A_ARCANA_LIFESTYLE_PERKPOINT: "Obtienes $VALUE|V0$ [arcana_lifestyle|E] [perk|E] Desbloquear" #NT!
+ I_GAINED_A_ARCANA_LIFESTYLE_PERKPOINT: "Ganaste $VALUE|V0$ [arcana_lifestyle|E] [perk|E] Desbloquear" #NT!
+ TARGET_GAINS_A_ARCANA_LIFESTYLE_PERKPOINT: "[CHARACTER.GetShortUIName] gana $VALUE|V0$ [arcana_lifestyle|E] [perk|E] Desbloquea" #NT!
+ TARGET_GAINED_A_ARCANA_LIFESTYLE_PERKPOINT: "[CHARACTER.GetShortUIName] ganado $VALUE|V0$ [arcana_lifestyle|E] [perk|E] Desbloquear" #NT!
+  
+ ARCANA_LIFESTYLE_PERK_POINTS_TRIGGER: "Puntos de ventaja del estilo de vida Arcana: $NUM|V0$" #NT!
+  
+ NOT_has_demon_trait: "@warning_icon!#X Tú sí #bold no#! tienes el [trait|E]: [GetTrait('demon').GetName( GetPlayer )]#!" #NT!
+  
+ form_visible: "Forma" #NT!
+ glory_visible: "Gloria" #NT!
+ mind_soul_visible: "Mente y alma" #NT!
+ fate_portals_visible: "El destino y los portales" #NT!
+ force_element_visible: "Fuerza y ​​Elemento" #NT!
+  
+ apocalyptic_form_perk_name: "Forma apocalíptica" #NT!
+ preternatural_reflexes_perk_name: "Reflejos preternaturales" #NT!
+ hardened_flesh_perk_name: "Carne endurecida" #NT!
+ perfect_immunity_perk_name: "Inmunidad perfecta" #NT!
+ arcana_regeneration_perk_name: "Regeneración" #NT!
+ arsenal_of_the_beast_perk_name: "Arsenal de la Bestia" #NT!
+ increased_health_perk_name: "Salud mejorada" #NT!
+ resilience_perk_name: "Resiliencia" #NT!
+ sense_vitality_perk_name: "Sentir vitalidad" #NT!
+ contagion_mastery_perk_name: "Maestría en contagio" #NT!
+ ultimate_horror_perk_name: "El horror definitivo" #NT!
+ wings_perk_name: "Alas" #NT!
+ inhuman_strength_perk_name: "Fuerza inhumana" #NT!
+ inured_to_agony_perk_name: "Acostumbrado a la agonía" #NT!
+ damage_immunity_perk_name: "Inmunidad al daño" #NT!
+ healing_touch_perk_name: "Toque sanador" #NT!
+ reshape_flesh_perk_name: "Remodelar la carne" #NT!
+ relentless_soul_perk_name: "Alma implacable" #NT!
+ unyielding_perk_name: "Inflexible" #NT!
+ speed_of_thought_perk_name: "Velocidad del pensamiento" #NT!
+ incorporeal_form_perk_name: "Forma incorpórea" #NT!
+ divine_potential_perk_name: "Potencial divino" #NT!
+ arcana_longevity_perk_name: "Longevidad" #NT!
+ trait_aptitude_perk_name: "Aptitud de rasgo" #NT!
+ trait_enhancement_perk_name: "Mejora de rasgos" #NT!
+ invocation_of_name_perk_name: "Invocación del nombre" #NT!
+ devour_soul_perk_name: "Devorar alma" #NT!
+ enthrall_perk_name: "Cautivar" #NT!
+ immortal_spirit_perk_name: "Espíritu inmortal" #NT!
+ arcana_possession_perk_name: "Posesión" #NT!
+ ravage_perk_name: "Estrago" #NT!
+ inviolate_soul_perk_name: "Alma Inviolada" #NT!
+ spirit_sight_perk_name: "Visión espiritual" #NT!
+ read_the_sin_perk_name: "Lee el pecado" #NT!
+ compel_sin_perk_name: "Obligar al pecado" #NT!
+ read_the_heart_perk_name: "Lee el corazón" #NT!
+ gift_of_faith_perk_name: "Don de fe" #NT!
+ greater_invocation_perk_name: "Invocación mayor" #NT!
+ perfect_lie_perk_name: "Mentira perfecta" #NT!
+ read_the_mind_perk_name: "Lee la mente" #NT!
+ conquering_will_perk_name: "Voluntad conquistadora" #NT!
+ command_the_eternal_soul_perk_name: "Comanda el alma eterna" #NT!
+ reapers_hunger_perk_name: "El hambre del segador" #NT!
+ implacable_vengeance_perk_name: "Venganza implacable" #NT!
+ shield_of_spite_perk_name: "Escudo del rencor" #NT!
+ lash_of_anguish_perk_name: "Látigo de angustia" #NT!
+ shrouded_soul_perk_name: "Alma envuelta" #NT!
+ arcana_sin_eating_perk_name: "Comer pecado" #NT!
+ ravage_sinner_perk_name: "Pecador devastador" #NT!
+ soul_burn_perk_name: "Alma quemada" #NT!
+ cerement_of_walking_dust_perk_name: "Ceremonia de polvo andante" #NT!
+ command_the_dead_perk_name: "Manda a los muertos" #NT!
+ raise_the_dead_perk_name: "Resucitar a los muertos" #NT!
+ spirit_strike_perk_name: "Golpe espiritual" #NT!
+ excise_soul_perk_name: "Alma especial" #NT!
+ abandon_vessel_perk_name: "Abandonar el buque" #NT!
+ theft_of_faith_perk_name: "Robo de la fe" #NT!
+ transfer_vessel_perk_name: "Buque de transferencia" #NT!
+ usurpation_of_flesh_perk_name: "Usurpación de la carne" #NT!
+ visage_of_glory_perk_name: "Rostro de gloria" #NT!
+ behold_the_metatron_perk_name: "Contemplad al Metatrón" #NT!
+ arcana_revelation_perk_name: "Revelación" #NT!
+ pattern_sense_perk_name: "Sentido de patrones" #NT!
+ fortunate_guess_perk_name: "Adivinación afortunada" #NT!
+ foretell_perk_name: "Predecir" #NT!
+ alter_fate_perk_name: "Alterar el destino" #NT!
+ beyond_now_perk_name: "Más allá del ahora" #NT!
+ certainties_of_chance_perk_name: "Certezas del azar" #NT!
+ portal_mastery_perk_name: "Maestría en el portal" #NT!
+ arcana_premonition_perk_name: "Premonición" #NT!
+ scry_perk_name: "Adivinar" #NT!
+ sharpened_senses_perk_name: "Sentidos agudizados" #NT!
+ shortened_path_perk_name: "Camino acortado" #NT!
+ step_between_perk_name: "Paso entre" #NT!
+ touch_from_afar_perk_name: "Tocar desde lejos" #NT!
+ twist_of_fate_perk_name: "Giro del destino" #NT!
+ open_gate_perk_name: "Puerta abierta" #NT!
+ celestial_radiance_perk_name: "Resplandor celestial" #NT!
+ arcana_invisibility_perk_name: "Invisibilidad" #NT!
+ shadow_mastery_perk_name: "Maestría en las sombras" #NT!
+  
+ APOCALYPTIC_FORM_PERK_EFFECT: "Permite cambiar de forma a [GetModifier( 'POD_shapeshift_form_apocalyptic_angelic_modifier' ).GetNameWithTooltip|L] o [GetModifier( 'POD_shapeshift_form_apocalyptic_damned_modifier' ).GetNameWithTooltip|L] como [GetTrait('demon').GetName( GetPlayer )].\nPermite cambiar de forma a [GetModifier( 'POD_shapeshift_form_apocalyptic_lesser_modifier' ).GetNameWithTooltip|L] como [thrall|E].\n#F Todos los demonios, como un remanente de su divinidad, tienen un estado de existencia al que pueden cambiar en batalla, su asombrosa forma apocalíptica. Dependiendo del tormento del demonio, pueden parecer angelicales, como si nunca hubieran caído, o verdaderamente malvados y violentos, mostrando el verdadero escape de su tormento interno. En todos los casos, esta forma terrible y poderosa es el recurso al que recurre un demonio para la guerra.#!" #NT!
+ PRETERNATURAL_REFLEXES_PERK_EFFECT: "#F En este estado de poder, un demonio adquiere una conciencia sobrenatural de su entorno, siempre listo para entrar en combate y siempre listo.#!" #NT!
+ HARDENED_FLESH_PERK_EFFECT: "#F El cuerpo anfitrión del demonio, en este estado, se vuelve verdaderamente resistente, capaz de resistir golpes normalmente letales en condiciones óptimas. El poder puro que fluye hacia el cuerpo lo mantiene siempre joven, hasta que el demonio decide que ya no quiere más con su cuerpo actual.#!" #NT!
+ PERFECT_IMMUNITY_PERK_EFFECT: "No contraerás enfermedades.\n#F Con un poco de comprensión de los Arcanos de la Forma, un demonio puede eliminar la preocupación por la dolencia o la enfermedad, manteniéndolos en perpetua buena salud.#!" #NT!
+ ARCANA_REGENERATION_PERK_EFFECT: "Como [character_interaction|E], te permite curar tus heridas.\n#F Con una comprensión de su poder interior, un demonio puede curar las heridas en su forma, para mantener su recipiente actual en óptimas condiciones.#!" #NT!
+ ARSENAL_OF_THE_BEAST_PERK_EFFECT: "Desbloquea la opción Arsenal de la Bestia Forma Cambiante.\n#F El demonio, en este estado, puede manifestar un arma en su Forma Apocalíptica, en forma de espadas sublimes o garras malvadas que ni siquiera las bestias más crueles usarían.#!" #NT!
+ INCREASED_HEALTH_PERK_EFFECT: "Riesgo de que el huésped poseído muera: #P -5%#!\n#F Con una comprensión de su físico, un demonio puede empujar su recipiente más allá de los límites mortales.#!" #NT!
+ ARCANA_RESILIENCE_PERK_EFFECT: "#F Habiendo dominado el daño que pueden resistir, un demonio con este arcano es mucho más difícil de herir, su cuerpo es sobrenaturalmente resistente al daño.#!" #NT!
+ SENSE_VITALITY_PERK_EFFECT: "#F La comprensión de la biología de un demonio asciende a tales alturas con este poder, que la salud de los demás queda al descubierto ante ellos.#!" #NT!
+ CONTAGION_MASTERY_PERK_EFFECT: "Como [character_interaction|E], te permite dar o curar enfermedades.\n#F El demonio, con este poder, obtiene comprensión incluso de las formas de vida de los dioses más pequeñas, capaz de purgar la enfermedad de un anfitrión o peor aún, afligirlo con una.#!" #NT!
+ ULTIMATE_HORROR_PERK_EFFECT: "#F La forma apocalíptica de este demonio se ha vuelto tan terrible que la locura y la aflicción lo siguen dondequiera que camina hacia la guerra.#!" #NT!
+ WINGS_PERK_EFFECT: "Desbloquea [GetModifier( 'arsenal_of_the_beast_wings_modifier' ).GetNameWithTooltip|L] para el Arsenal de la transformación de la bestia.\n#F Además de las armas de los monstruos, un demonio con este poder puede otorgarse el vuelo en su forma actual. Ya sea como un pájaro, un murciélago, un dragón o incluso como un granito deformado, estas poderosas alas permiten a los demonios elevarse una vez más por los cielos, como lo hicieron en el cielo, hace tanto tiempo.#!" #NT!
+ INHUMAN_STRENGTH_PERK_EFFECT: "#F Con este poder, el poder de un demonio se manifiesta en potencia bruta, como cordones de músculos ondulantes o como una reserva oculta de poder aterrador.#!" #NT!
+ INURED_TO_AGONY_PERK_EFFECT: "#F Un demonio con este poder triunfa sobre preocupaciones mortales como el "dolor" o la "edad" y, más bien, no importa cuán mutilados estén, mientras el demonio permanezca en pie, luchará como si no lo hubiera tocado la guerra o la enfermedad.#!" #NT!
+ DAMAGE_IMMUNITY_PERK_EFFECT: "Ya no sufrirás más. [GetTrait('inappetetic').GetName( GetPlayer )]\n#F Con este poder, un demonio se vuelve totalmente inmune a una forma de destrucción física, y su forma se vuelve verdaderamente, apocalípticamente, duradera.#!" #NT!
+ HEALING_TOUCH_PERK_EFFECT: "Como [character_interaction|E], te permite curar las heridas del objetivo.\n#F Con los poderes de la fe mortal, el demonio puede curar a los vivos, reparando sus heridas salvajes.#!" #NT!
+ RESHAPE_FLESH_PERK_EFFECT: "Bono a Cambio de Forma [character_interaction|E] para cambiar de apariencia.\n#F El demonio con este poder puede ordenar a la materia animal viviente que cambie e incluso fluya como cera bajo su toque, capaz de ser moldeada a su maldita voluntad.#!" #NT!
+ RELENTLESS_SOUL_PERK_EFFECT: "Te permite no morir nunca por heridas.\n#F Cuando un demonio quiere recibir un golpe mortal, su poder innato puede retener las puertas de la muerte para su caparazón, "simplemente" dejándolo inconsciente.#!" #NT!
+ UNYIELDING_PERK_EFFECT: "Te permite gastar fuerza de voluntad en lugar de recibir heridas.\n#F La fuerza de voluntad de un demonio es tan fuerte que, mientras tenga la fuerza de la convicción, los golpes se pueden bloquear solo con la voluntad.#!" #NT!
+ SPEED_OF_THOUGHT_PERK_EFFECT: "#F La velocidad de este demonio es tan cegadora que un demonio podría disparar una flecha y luego atraparla con su poder verdaderamente temible.#!" #NT!
+ ARCANA_INCORPOREAL_FORM_PERK_EFFECT: "Permitir cambio de forma a [GetModifier( 'POD_shapeshift_form_incorporeal_modifier' ).GetNameWithTooltip|L]\n#F Usando su forma física como ancla, un demonio ha encontrado una forma de engañar a las prisiones del infierno, lo que le permite proyectarse desde un recipiente y convertirse en un ser espiritual una vez más.#!" #NT!
+ DIVINE_POTENTIAL_PERK_EFFECT: "#F Bajo tal comprensión de los Arcanos y la forma Mortal, un demonio puede trascender los límites anteriormente mortales.#!" #NT!
+ ARCANA_LONGEVITY_PERK_EFFECT: "Como [decision|E], te permite gastar puntos de arcano para acumular [GetModifier( 'longevity_modifier' ).GetNameWithTooltip|L] como [thrall|E]\n#F Con este arcano, el esclavo deja de envejecer por un período de cinco años o reduce su edad física en una cantidad similar.#!" #NT!
+ TRAIT_APTITUDE_PERK_EFFECT: "#F La comprensión de un demonio sobre un campo se ha vuelto tan completa que no tienen rival en él, ya que todo lo que realizan con esta habilidad se ha convertido en una obra maestra.#!" #NT!
+ TRAIT_ENHANCEMENT_PERK_EFFECT: "#F En este nivel de maestría, un demonio verdaderamente ha superado los límites de la humanidad mortal.#!" #NT!
+ INVOCATION_OF_NAME_PERK_EFFECT: "#F Cada vez que se pronuncia, el verdadero nombre de un demonio resuena en sus oídos, lo que les permite encontrar potencialmente a la persona que se atrevió a pronunciarlo.#!" #NT!
+ DEVOUR_SOUL_PERK_EFFECT: "Puede usar la opción $EXECUTION_DEVOUR_SOUL$ [execution|E] en [GetTrait('demon').GetName( GetPlayer )].\n#F Cuando está fuera de los confines del infierno, un demonio puede atacar a otro, destruyendo su alma y drenándole su propia alma.#!" #NT!
+ ENTHRALL_PERK_EFFECT: "Desbloquea Enthrall [character_interaction|E], lo que te permite convertir al objetivo en tu [thrall|E].\n#F Con un simple toque, un suplicante mortal del demonio puede recibir un "obsequio" de su nuevo amo demoníaco.#!" #NT!
+ IMMORTAL_SPIRIT_PERK_EFFECT: "No se le puede hacer daño con movimientos físicos.\n#F Mientras tenga la determinación para hacerlo, con este poder, un demonio puede resistir las cadenas del mismísimo infierno.#!" #NT!
+ ARCANA_POSSESSION_PERK_EFFECT: "Como [character_interaction|E], te permite poseer un personaje o artefacto mientras estás en estado espiritual. Como [character_interaction|E], te permite designar tu próximo recipiente humano en caso de que el actual esté fuera de uso. #F Con una comprensión de las conchas en el mundo físico, un demonio puede unirse a un esclavo o relicario, lo que le permite vivir en la tierra sin ser arrastrado de regreso al infierno. #!" #NT!
+ RAVAGE_PERK_EFFECT: "Puede usar la opción $EXECUTION_DEVOUR_SOUL$ [execution|E] en [thrall|E].\n#F En tiempos de desesperación, un demonio puede devorar las almas de sus esclavos para obtener poder, dando sus vidas por sus amos caídos.#!" #NT!
+ INVIOLATE_SOUL_PERK_EFFECT: "Obtén fuertes defensas mentales, lo que te hace inmune a algunos poderes mentales.\nNo se puede convertir a [GetTrait('wraith').GetName( GetNullCharacter )].\n#F Como criaturas de posesión, nadie puede arrebatarles el control del cuerpo de un demonio.#!" #NT!
+ SPIRIT_SIGHT_PERK_EFFECT: "Desbloquea $seek_aid_of_the_spirits_decision$ [decision|E].\nNúmero máximo de espectros atados: #P +2#!.\n#F Como seres espirituales, ni siquiera los muertos inquietos eluden los ojos de un demonio vigilante.#!" #NT!
+ READ_THE_SIN_PERK_EFFECT: "#F Como criaturas de pecado, un demonio puede mirar a un mortal y encontrar el pecado que gobierna su corazón.#!" #NT!
+ COMPEL_SIN_PERK_EFFECT: "Desbloquea [GetScheme('PODsoul_bridge').GetTypeName] [scheme|E].\n#F Con este poder, un demonio puede alimentar su pecado en una víctima, sacando el pecado de dentro de su propia alma.#!" #NT!
+ READ_THE_HEART_PERK_EFFECT: "#F El sentido espiritual de un demonio se ha vuelto tan agudo que puede encontrar el pecado y las virtudes de todos, sin importar cuán profundamente enterrados estén.#!" #NT!
+ GIFT_OF_FAITH_PERK_EFFECT: "Como [character_interaction|E], te permite donar Resolución para reducir [stress|E].\n#F Cuando rebosa de energía divina, un Demonio puede regalar su poder a un esclavo, para aliviar el peso del estrés en su alma.#!" #NT!
+ GREATER_INVOCATION_PERK_EFFECT: "Desbloquea la invocación [character_interaction|E], lo que te permite obligar a personajes no desembarcados a unirse a tu corte..\n#F Con este poder, un demonio comienza a tener poderes sobre los nombres mismos, capaz de obligar a otros a someterse a su invocación.#!" #NT!
+ PERFECT_LIE_PERK_EFFECT: "#F Por absurdo que sea, los demonios con este poder pueden mentir tan fácilmente como respiran.#!" #NT!
+ READ_THE_MIND_PERK_EFFECT: "#F El libro de la mente al descubierto, un demonio puede usar este poder para escoger la mente de los pensamientos, como si fuera un libro abierto.#!" #NT!
+ CONQUERING_WILL_PERK_EFFECT: "#F Invocando el nombre del mismo Yahvé, un demonio puede dar poder a sus guerreros, con la palabra del dios que los derribó.#!" #NT!
+ COMMAND_THE_ETERNAL_SOUL_PERK_EFFECT: "Como [character_interaction|E], puedes descubrir el verdadero nombre de otros [GetTrait('demon').GetName( GetPlayer )].\n#F Con este poder, un demonio puede invocar el verdadero nombre de otro demonio, obligándolo a someterse.#!" #NT!
+ REAPERS_HUNGER_PERK_EFFECT: "Obtienes una Resolución por cada asesinato que realizas.\n#F Siempre que un demonio con este poder termina con la vida de un mortal, puede segar el alma moribunda de un poder precioso.#!" #NT!
+ IMPLACABLE_VENGEANCE_PERK_EFFECT: "Cada [nemesis|E] suma: [GetModifier( 'implacable_vengeance_perk_modifier' ).GetNameWithTooltip|L]. Esto es acumulativo.\n#F Monstruos implacables, un demonio puede invocar el nombre verdadero de un objetivo para convertirse en un heraldo imparable de la perdición de su víctima, convirtiéndose en un heraldo indomable de la desesperación.#!" #NT!
+ SHIELD_OF_SPITE_PERK_EFFECT: "#F La mente de un demonio está tan atormentada que el mero intento de fisgonear en su mente hace que el tonto atacante sufra un dolor horrible debido a la desesperación y el mal que hay en su interior.#!" #NT!
+ LASH_OF_ANGUISH_PERK_EFFECT: "#F Un demonio se ha vuelto tan sensible a su propio dolor que puede proyectar su angustia y dolor interior como un aluvión de energía telepática.#!" #NT!
+ SHROUDED_SOUL_PERK_EFFECT: "#F Con este poder, un demonio puede difuminar la percepción de quienes lo rodean, volviéndose sin rostro en una multitud, sin importar cuánto se destaque el demonio.#!" #NT!
+ ARCANA_SIN_EATING_PERK_EFFECT: "Como [character_interaction|E], te permite hacer que el mortal objetivo sufra una ruptura por estrés y te permite recuperar Resolución.\n#F El conocimiento del pecado por parte del demonio se vuelve tal que los mortales en medio de la desesperación dan sustento a su torturador infernal.#!" #NT!
+ RAVAGE_SINNER_PERK_EFFECT: "Bonificación por comer pecados [character_interaction|E], agrega posibilidades de devorar el alma del mortal objetivo.\n#F Maestros de la indulgencia, un demonio puede influir en un mortal para que caiga en su pecado, siempre y cuando lo haga voluntariamente.#!" #NT!
+ SOUL_BURN_PERK_EFFECT: "Te permite gastar [stress|E] en lugar de decidirte a usar tus poderes arcanos cuando tienes [GetModifier( 'resolve0_modifier' ).GetNameWithTooltip|L].\n#F En las verdaderas profundidades de la desesperación, un demonio puede destrozar su propio ser espiritual para obtener poder de emergencia.#!" #NT!
+ CEREMENT_OF_WALKING_DUST_PERK_EFFECT: "Permite el uso de un recipiente muerto como recipiente de respaldo en caso de una pérdida repentina de su anfitrión.\n#F Para los demonios con este poder, un cadáver no es más que un relicario apestoso, lo que les permite resucitar el cadáver como su nuevo recipiente de elección.#!" #NT!
+ COMMAND_THE_DEAD_PERK_EFFECT: "Desbloquea [bind_wraith_interaction|E].\nDesbloquea [command_wraith_interaction|E].\nNúmero máximo de espectros atados: #P +1#!.\n#F Ni siquiera los muertos pueden escapar de este poder, ya que un demonio puede obligarlos a servir.#!" #NT!
+ RAISE_THE_DEAD_PERK_EFFECT: "Como [character_interaction|E], te permite iniciar un [GetModifier( 'zombu_summon_modifier' ).GetNameWithTooltip|L].\nPuedes reclutar [GetMaA('hidden').GetName], [GetMaA('walker').GetName], [GetMaA('shambler').GetName] y [GetMaA('skeletons').GetName] como [men_at_arms|E].\n#F Incluso los muertos no pueden escapar de la servidumbre al demonio, como ocurre con este poder. , el demonio puede levantar legiones de muertos, para servir a sus deseos infernales.#!" #NT!
+ SPIRIT_STRIKE_PERK_EFFECT: "Puedes encarcelar, torturar, ejecutar o herir físicamente a un espíritu en [single_combat_duel|E].\n#F Con este poder, el demonio puede invocar su forma espiritual para mutilar incluso a los espíritus, nada libre de la ira del demonio.#!" #NT!
+ EXCISE_SOUL_PERK_EFFECT: "Desbloquea la opción $EXECUTION_CONVERT_TO_WRAITH$ [execution|E].\n#F Con este terrible poder, un demonio invoca un ritual, arrancando el alma de una víctima y obligándola a servir a los deseos del demonio.#!" #NT!
+ ABANDON_VESSEL_PERK_EFFECT: "Como [character_interaction|E], te permite abandonar tu recipiente actual.\n#F En circunstancias normales, un demonio no abandonará su recipiente por miedo al infierno. Con este poder, un demonio puede arriesgarse a abandonarlo, por cualquier motivo que desee.#!" #NT!
+ THEFT_OF_FAITH_PERK_EFFECT: "Puede usar la opción $EXECUTION_DEVOUR_SOUL$ [execution|E] en cada uno.\n#F La comprensión de las almas por parte de un demonio se ha vuelto tan completa que ninguna alma puede escapar de la posibilidad de ser devorada por su señor infernal.#!" #NT!
+ TRANSFER_VESSEL_PERK_EFFECT: "Ya no necesitas abandonar tu recipiente actual para poseer otro.\n#F Tan perfecto es el control de un demonio sobre la posesión, que ahora pueden mover su recipiente sin el riesgo de que el infierno los arrastre de regreso.#!" #NT!
+ USURPATION_OF_FLESH_PERK_EFFECT: "Obtén un fuerte gancho en cada [thrall|E].\n#F Con este poder, un demonio puede obligar al alma y la mente de un esclavo a permanecer inactivos, haciendo que su cuerpo sea suyo.#!" #NT!
+ VISAGE_OF_GLORY_PERK_EFFECT: "#F Canalizando los recuerdos de su condición perdida como Elohim, por un corto tiempo, un demonio puede volverse verdaderamente angelical.#!" #NT!
+ BEHOLD_THE_METATRON_PERK_EFFECT: "#F Al convertirse en un verdadero arquitecto de la creación, el demonio revela su forma más verdadera, su estado más primario, ya sea de perfección sublime o de maldad horrenda.#!" #NT!
+ ARCANA_REVELATION_PERK_EFFECT: "Como [character_interaction|E], te permite drenar la Resolución de los testigos.\n#F Cuando carece de una fuente confiable de resolución, un demonio puede minar la fe de un mortal a través de una crisis religiosa extrema.#!" #NT!
+ PATTERN_SENSE_PERK_EFFECT: "#F Los demonios alguna vez tuvieron una sensibilidad instintiva hacia los patrones del orden natural, habiendo establecido esos patrones al principio de los tiempos. Con este arcano, un demonio ha vuelto a aprender eso y cómo explotarlo.#!" #NT!
+ FORTUNATE_GUESS_PERK_EFFECT: "Recibirás una notificación si alguien intenta asesinar a tus amigos o familiares. Recibirás una notificación si alguien intenta seducir a tus amantes o consortes. #F El demonio se ha vuelto tan en sintonía con las conexiones mortales que a veces puede comprender y saber si alguien muestra mala voluntad hacia sus cultistas favoritos. #!" #NT!
+ FORETELL_PERK_EFFECT: "Desbloquea el [deceitful_progress_hostile_schemes_decision|E].\n#F Tal es la comprensión que tiene un demonio de la creación, que un demonio puede ser capaz de predecir aquello que aún está por ocurrir.#!" #NT!
+ ALTER_FATE_PERK_EFFECT: "Desbloquea el [impatient_rushing_all_schemes_decision|E]\n#F Habiendo adivinado una vez la creación misma, con este poder, un demonio puede invocar el nombre de una víctima para manipular y torcer su propio destino.#!" #NT!
+ BEYOND_NOW_PERK_EFFECT: "#F Con este poder, un demonio puede salir del tiempo mismo, y el tapiz del cosmos queda temporalmente a sus órdenes.#!" #NT!
+ CERTAINTIES_OF_CHANCE_PERK_EFFECT: "#F Con solo observar el flujo del azar y el destino, un demonio puede torcerlo para sus fines.#!" #NT!
+ PORTAL_MASTERY_PERK_EFFECT: "#F Así como la existencia alguna vez estuvo a su entera disposición, un demonio puede atravesar o bloquear barreras a su voluntad.#!" #NT!
+ ARCANA_PREMONITION_PERK_EFFECT: "#F Como una araña en su red, el personaje siente vibraciones en los hilos del destino cuando se acerca el peligro, lo que los prepara para cualquier resultado.#!" #NT!
+ SCRY_PERK_EFFECT: "[buy_claim_interaction|E] y [buy_artifact_claim_interaction|E] Costo: #P -50%#!\n#F Con concentración y un nombre, un demonio puede adivinar información sobre este lugar de enfoque.#!" #NT!
+ SHARPENED_SENSES_PERK_EFFECT: "[espionage|E] Velocidad de progreso: #P +[EmptyScope.ScriptValue('digging_for_dirt_perk_percentage')|0]%#!\n#F Habiendo sido una vez la mano de Yahweh en la creación, un demonio puede continuar guiando el universo como lo desee.#!" #NT!
+ SHARPENED_SENSES_PERK_BONUS_VALUE: "[GetPerk('sharpened_senses_perk').GetName(GetPlayer)]" #NT!
+ SHORTENED_PATH_PERK_EFFECT: "#F Con una comprensión de los antiguos caminos de la creación, un demonio puede reducir el tiempo de travesía a fracciones de lo que alguna vez fue.#!" #NT!
+ STEP_BETWEEN_PERK_EFFECT: "#F Con este poder, un demonio puede deformar suavemente el espacio, desapareciendo y reapareciendo en una mancha de luz o una sombra vacilante.#!" #NT!
+ TOUCH_FROM_AFAR_PERK_EFFECT: "#F A medida que crece la comprensión del demonio sobre la realidad espacial, también crece el alcance de sus arcanos.#!" #NT!
+ TWIST_OF_FATE_PERK_EFFECT: "Como [decision|E], te permite gastar puntos arcanos para ganar oro y prestigio.\n#F El destino parece favorecer al demonio, ya que obtiene beneficios mortales inusuales, aparentemente al azar.#!" #NT!
+ OPEN_GATE_PERK_EFFECT: "Como [character_interaction|E], te permite teletransportar a tu ejército a la ubicación de tu objetivo, o teletransportarte a tu próximo destino cuando viajas.\n#F Con esta comprensión de los arcanos, el demonio puede doblar o desgarrar el espacio en un breve portal que conecta su ubicación con otro lugar.#!" #NT!
+ CELESTIAL_RADIANCE_PERK_EFFECT: "Permite el cambio de forma a [GetModifier( 'POD_shapeshift_form_light_modifier' ).GetNameWithTooltip|L].\n#F El demonio canaliza su poder como luz cegadora, convirtiéndose en un faro de luz ardiente.#!" #NT!
+ ARCANA_INVISIBILITY_PERK_EFFECT: "Permiten el cambio de forma a [GetModifier( 'POD_shapeshift_form_invisible_modifier' ).GetNameWithTooltip|L].\n#F A medida que su forma se vuelve cada vez más maleable a la voluntad del demonio, obtienen la capacidad de alejarse de las visiones de los seres de la creación.#!" #NT!
+ SHADOW_MASTERY_PERK_EFFECT: "Permite el cambio de forma a [GetModifier( 'POD_shapeshift_form_shadow_modifier' ).GetNameWithTooltip|L].\n#F La voluntad del demonio sobre su propia alma se ha vuelto tan poderosa que un demonio puede usar su alma y convertirse en una imponente columna de oscuridad.#!" #NT!

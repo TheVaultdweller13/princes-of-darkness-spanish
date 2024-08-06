@@ -1,0 +1,83 @@
+﻿l_spanish:
+  
+ POD_mark_secondary_target_interaction: "Marcar objetivo secundario" #NT!
+ POD_mark_secondary_target_interaction_desc: "Marca como objetivo secundario a los títeres dominados, lo que te permitirá darles órdenes relacionadas con ellos." #NT!
+ POD_mark_secondary_target_interaction_ct: "[recipient.GetName] se convertirá en el tema de los comandos dominantes de los títeres, como iniciar el plan, liberar al prisionero, detener la guerra y otras interacciones con un objetivo secundario." #NT!
+  
+ POD_dominate_interaction: "Marioneta de mando" #NT!
+ POD_dominate_interaction_desc: "Usa tu gancho de dominación para dar un comando.\n #X Algunos comandos requerirán que se marque un objetivo, lo que se puede hacer como Marcar objetivo secundario [character_interaction|E].#!" #NT!
+ POD_dominate_interaction.failure.ct: "[recipient.GetFirstName] se resiste a tu orden." #NT!
+ recipient_secondary_POD_dominate_interaction: "Objetivo secundario" #NT!
+ dominate_toast_failure_title: "¡Error de comando!" #NT!
+ dominate_toast_success_title: "¡Comando exitoso!" #NT!
+ POD_dominate_interaction_gold_option: "¡Dame oro!" #NT!
+ POD_dominate_interaction_embarass_option: "¡Avergüénzate!" #NT!
+ POD_dominate_interaction_reveal_secret_option: "¡Dime un secreto!" #NT!
+ POD_dominate_interaction_reveal_secret_option_ct: "[recipient.GetFirstName] te ha revelado un secreto" #NT!
+ POD_dominate_interaction_recruit_option: "¡Servirme!" #NT!
+ POD_dominate_interaction_masq_option: "¡Romper la mascarada!" #NT!
+ POD_dominate_interaction_suicide_option: "Matarte" #NT!
+ POD_dominate_interaction_suicide_option_ct: "[recipient.GetFirstName] se lastiman lo mejor que pueden" #NT!
+ POD_dominate_interaction_stop_scheme_option: "¡Deja de maquinar!" #NT!
+ POD_dominate_interaction_release_prisoner_option: "¡Libre de prisión!" #NT!
+ POD_dominate_interaction_abduct_option: "¡Secuestra a mi objetivo!" #NT!
+ POD_dominate_interaction_murder_option: "¡Mata a mi enemigo!" #NT!
+ POD_dominate_interaction_stop_war_option: "¡Dejad de atacarme!" #NT!
+ POD_dominate_interaction_inquihunt_option: "Asalta la guarida de mi enemigo" #NT!
+ POD_dominate_interaction_cooldown: "Después de usar este poder, tendrás que esperar 10 años antes de volver a usarlo." #NT!
+ POD_dominate_interaction_condition_option: "¡Condición!" #NT!
+ POD_dominate_interaction_condition_reinforce_ct: "Refuerza tu condicionamiento, extendiéndolo más allá de los diez años originales hasta dentro de diez años." #NT!
+ POD_dominate_interaction_condition_create_ct: "Con el tiempo, rompe la voluntad de tu víctima y conviértela en una marioneta que podrás dominar con gran facilidad y frecuencia. Usa esta opción cinco veces en diez años y convertirás a [recipient.GetFirstName] en un sirviente roto." #NT!
+ POD_dominate_interaction_condition_current_ct: "Estado actual: [recipient.MakeScope.GetVariable('conditioning_level').GetValue|0]/5" #NT!
+ POD_dominate_interaction_condition_cooldown_ct: "No podrás dar otra orden durante un año." #NT!
+  
+ POD_dominate_self_interaction: "Marioneta de mando" #NT!
+ POD_dominate_self_interaction_desc: "Utilice su gancho dominante para emitir un comando." #NT!
+ POD_dominate_self_interaction.failure.ct: "[secondary_actor.GetFirstName] se resiste a tus órdenes." #NT!
+ POD_dominate_self_interaction_gold_option: "¡Dame oro!" #NT!
+ POD_dominate_self_interaction_embarass_option: "¡Avergüénzate!" #NT!
+ POD_dominate_self_interaction_reveal_secret_option: "¡Dime un secreto!" #NT!
+ POD_dominate_self_interaction_reveal_secret_option_ct: "[secondary_actor.GetFirstName] te ha revelado un secreto" #NT!
+ POD_dominate_self_interaction_recruit_option: "¡Servirme!" #NT!
+ POD_dominate_self_interaction_masq_option: "¡Romper la mascarada!" #NT!
+ POD_dominate_self_interaction_suicide_option: "Matarte" #NT!
+ POD_dominate_self_interaction_suicide_option_ct: "[secondary_actor.GetFirstName] se lastiman lo mejor que pueden" #NT!
+ POD_dominate_self_interaction_stop_scheme_option: "¡Dejen de conspirar!" #NT!
+ POD_dominate_self_interaction_release_prisoner_option: "¡Libre de prisión!" #NT!
+ POD_dominate_self_interaction_abduct_option: "¡Secuestra a mi objetivo!" #NT!
+ POD_dominate_self_interaction_murder_option: "¡Mata a mi enemigo!" #NT!
+ POD_dominate_self_interaction_inquihunt_option: "Asalta la guarida de mi enemigo" #NT!
+ POD_dominate_self_interaction_stop_war_option: "¡Dejad de atacarme!" #NT!
+ POD_dominate_self_interaction_cooldown: "Después de usar este poder, tendrás que esperar 10 años antes de volver a usarlo." #NT!
+ POD_dominate_self_interaction_condition_option: "¡Condición!" #NT!
+ POD_dominate_self_interaction_condition_reinforce_ct: "Refuerza tu condicionamiento, extendiéndolo más allá de los diez años originales hasta dentro de diez años." #NT!
+ POD_dominate_self_interaction_condition_create_ct: "Con el tiempo, rompe la voluntad de tu víctima y conviértela en una marioneta que podrás dominar con gran facilidad y frecuencia. Usa esta opción cinco veces en diez años y convertirás a [recipient.GetFirstName] en un sirviente roto." #NT!
+ POD_dominate_self_interaction_condition_current_ct: "Estado actual: [secondary_recipient.MakeScope.GetVariable('conditioning_level').GetValue|0]/5" #NT!
+ POD_dominate_self_interaction_condition_cooldown_ct: "No podrás dar otra orden durante un año." #NT!
+ actor_secondary_POD_dominate_self_interaction: "Marioneta" #NT!
+ recipient_secondary_POD_dominate_self_interaction: "Objetivo secundario" #NT!
+  
+ POD_dominate_speak_through_the_blood_interaction: "Habla a través de la sangre" #NT!
+ POD_dominate_speak_through_the_blood_interaction_desc: "Da una orden a todo tu linaje, obligando a tus hijos a seguir tu voluntad." #NT!
+ POD_dominate_speak_through_the_blood_interaction_suicide_option_loc: "Toda tu línea se suicidará." #NT!
+ POD_dominate_speak_through_the_blood_interaction_gold_option_loc: "Cada miembro terrateniente de tu linaje te pagará un diezmo." #NT!
+ POD_dominate_speak_through_the_blood_interaction_embarass_option_loc: "Tus hijos harán el ridículo" #NT!
+ POD_dominate_speak_through_the_blood_interaction_recruit_option_loc: "Cada cortesano de tu sangre se dirigirá a tu corte." #NT!
+ POD_dominate_speak_through_the_blood_interaction_masq_option_loc: "Tu línea romperá la mascarada." #NT!
+ POD_dominate_speak_through_the_blood_interaction_stop_scheme_option_loc: "Tu línea dejará de maquinar para obstaculizar a tu objetivo." #NT!
+ POD_dominate_speak_through_the_blood_interaction_murder_option_loc: "Tu linaje se esforzará por matar a tu objetivo." #NT!
+ POD_dominate_speak_through_the_blood_interaction_stop_war_option_loc: "Tu linaje detendrá cualquier guerra que te ataque con la paz blanca." #NT!
+ POD_dominate_speak_through_the_blood_interaction_reveal_secret_option_loc: "Tu linaje revelará uno de sus secretos." #NT!
+ recipient_secondary_POD_dominate_speak_through_the_blood_interaction: "Objetivo secundario" #NT!
+  
+  
+ POD_forgetful_mind_interaction: "Mente olvidadiza - Opiniones" #NT!
+ POD_forgetful_mind_interaction_desc: "Cambia los recuerdos de tu objetivo, haciéndole olvidar los agravios que tiene contra ti." #NT!
+ forgetful_mind_duel_ct: "Si ganas un duelo de administración contra [recipient.GetFirstName], sus quejas se reducirán." #NT!
+ forgetful_mind_duel_success_title: "¡Mente maestra!" #NT!
+ forgetful_mind_duel_failure_title: "[recipient.GetFirstName] ¡Resistido!" #NT!
+ POD_forgetful_mind_opinion: "Quejas olvidadas." #NT!
+  
+ temp_immune_mesmerize: "Debido a un intento fallido anterior, [recipient.GetFirstNameNoTooltip] es inmune a tus intentos de Dominación hasta [GetCurrentDateWithDiff( GetVarTimeRemaining( recipient.MakeScope, 'immune_to_mesmerize_from_actor') )]" #NT!
+ same_or_highier_gen: "[recipient.GetFirstNameNoTooltip] es el mismo [generation|E] que tú o mayor" #NT!
+ lower_gen_immune: "Los vampiros de un [generation|E] inferior son inmunes a tu [discipline|E]" #NT!

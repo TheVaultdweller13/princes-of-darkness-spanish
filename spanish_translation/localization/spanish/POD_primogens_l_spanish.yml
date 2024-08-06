@@ -1,0 +1,219 @@
+﻿l_spanish:
+ culture_era_dark_fantastic_salary_mod: "#V $culture_era_dark_fantastic$#! [era|E]" #NT!
+ culture_era_gothic_victorian_salary_mod: "#V $culture_era_gothic_victorian$#! [era|E]" #NT!
+ culture_era_final_nights_salary_mod: "#V $culture_era_final_nights$#! [era|E]" #NT!
+  
+ court_position_strategist_trait: "[GetTrait('strategist').GetName( ROOT.Char )]" #NT!
+ court_position_wrathful_trait: "[GetTrait('wrathful').GetName( ROOT.Char )]" #NT!
+ court_position_schemer_trait: "[GetTrait('schemer').GetName( ROOT.Char )]" #NT!
+ court_position_arrogant_trait: "[GetTrait('arrogant').GetName( ROOT.Char )]" #NT!
+ court_position_ambitious_trait: "[GetTrait('ambitious').GetName( ROOT.Char )]" #NT!
+ court_position_vengeful_trait: "[GetTrait('vengeful').GetName( ROOT.Char )]" #NT!
+ court_position_dull_trait: "[GetTrait('dull').GetName( ROOT.Char )]" #NT!
+ court_position_intellect_bad_3_trait: "[GetTrait('intellect_bad_3').GetName( ROOT.Char )]" #NT!
+ court_position_intellect_bad_2_trait: "[GetTrait('intellect_bad_2').GetName( ROOT.Char )]" #NT!
+ court_position_intellect_bad_1_trait: "[GetTrait('intellect_bad_1').GetName( ROOT.Char )]" #NT!
+ court_position_witch_trait: "[GetTrait('witch').GetName( ROOT.Char )]" #NT!
+ title_held_kingdom: "Sosteniendo un título de Reino" #NT!
+ title_held_duchy: "Poseer un título de ducado" #NT!
+ court_position_possessed_trait: "[GetTrait('possessed_1').GetName( ROOT.Char )]" #NT!
+ court_position_lunatic_trait: "[GetTrait('lunatic_1').GetName( ROOT.Char )]" #NT!
+ court_position_possessed_lunatic_trait: "[GetTrait('possessed_1').GetName( ROOT.Char )] [GetTrait('lunatic_1').GetName( ROOT.Char )]" #NT!
+ court_position_yin_imbalanced_trait: "[GetTrait('yin_imbalanced').GetName( ROOT.Char )]" #NT!
+ court_position_yang_imbalanced_trait: "[GetTrait('yang_imbalanced').GetName( ROOT.Char )]" #NT!
+ court_position_auspex_trait: "[GetTrait('auspex').GetName( ROOT.Char )]" #NT!
+ court_position_auspexadvanced_trait: "[GetTrait('auspexadvanced').GetName( ROOT.Char )]" #NT!
+ court_position_celerity_trait: "[GetTrait('celerity').GetName( ROOT.Char )]" #NT!
+ court_position_celerityadvanced_trait: "[GetTrait('celerityadvanced').GetName( ROOT.Char )]" #NT!
+ court_position_obfuscate_trait: "[GetTrait('obfuscate').GetName( ROOT.Char )]" #NT!
+ court_position_obfuscateadvanced_trait: "[GetTrait('obfuscateadvanced').GetName( ROOT.Char )]" #NT!
+ court_position_potence_trait: "[GetTrait('potence').GetName( ROOT.Char )]" #NT!
+ court_position_potenceadvanced_trait: "[GetTrait('potenceadvanced').GetName( ROOT.Char )]" #NT!
+ court_position_dominate_trait: "[GetTrait('dominate').GetName( ROOT.Char )]" #NT!
+ court_position_dominateadvanced_trait: "[GetTrait('dominateadvanced').GetName( ROOT.Char )]" #NT!
+ court_position_malkavian_trait: "[GetTrait('malkavian').GetName( ROOT.Char )]" #NT!
+ court_position_tremere_trait: "[GetTrait('tremere').GetName( ROOT.Char )]" #NT!
+ court_position_art_wayfare_trait: "[GetTrait('art_wayfare').GetName( ROOT.Char )]" #NT!
+ court_position_art_wayfare_advanced_trait: "[GetTrait('art_wayfare_advanced').GetName( ROOT.Char )]" #NT!
+ court_position_sorcerer_trait: "[GetTrait('sorcerer').GetName( ROOT.Char )]" #NT!
+ court_position_forge_affinity_perk: "[GetPerk( 'forge_affinity_perk' ).GetName( ROOT.Char )]" #NT!
+ court_position_callous_trait: "[GetTrait('callous').GetName( ROOT.Char )]" #NT!
+ court_position_opinion: "Tu opinión de [ROOT.Char.GetShortUIName]" #NT!
+ court_position_rival_relation: "[ROOT.Char.GetSheHe|U] es tu [rival|E]" #NT!
+ court_position_nemesis_relation: "[ROOT.Char.GetSheHe|U] es tu [nemesis|E]" #NT!
+ court_position_friend_relation: "[ROOT.Char.GetSheHe|U] es tu [friend|E]" #NT!
+ court_position_best_friend_relation: "[ROOT.Char.GetSheHe|U] es tu [best_friend|E]" #NT!
+ court_position_lover_relation: "[ROOT.Char.GetSheHe|U] es tu [lover|E]" #NT!
+ court_position_soulmate_relation: "[ROOT.Char.GetSheHe|U] es tu [soulmate|E]" #NT!
+  
+ brujah_primogen_court_position: "Primogénita Brujah" #NT!
+ brujah_primogen_court_position_desc: "El $brujah_primogen_court_position$ es tradicionalmente responsable de la guerra estratégica en un dominio, aunque también puede incursionar en la erudición en ocasiones, manteniéndose fiel a su apodo de Eruditos Guerreros.\n\n#help Para los requisitos de [aptitude|E], consulte [brujah_primogen|E].#!" #NT!
+ cappadocian_primogen_court_position: "Primogenitura de Capadocia" #NT!
+ cappadocian_primogen_court_position_desc: "Pocos saben tanto como los capadocios sobre la condición de no-muertos. Se puede aprender mucho de ellos, si están dispuestos a hablar.\n\n#help Para los requisitos [aptitude|E], consulte [cappadocian_primogen|E].#!" #NT!
+ lasombra_primogen_court_position: "Primogénito Lasombra" #NT!
+ lasombra_primogen_court_position_desc: "Los Maestros de las Sombras son un aliado útil para tener de tu lado, pero un enemigo mucho más letal si te cruzas con ellos.\n\n#help Para conocer los requisitos de [aptitude|E], consulta [lasombra_primogen|E].#!" #NT!
+ toreador_primogen_court_position: "Primogénito del Toreador" #NT!
+ toreador_primogen_court_position_desc: "Toda corte que se precie tiene un Toreador con talento para gestionar sus reuniones. Sin embargo, la definición de "talentoso" puede ser controvertida en ocasiones.\n\n#help Para conocer los requisitos de [aptitude|E], consulte [toreador_primogen|E].#!" #NT!
+ tzimisce_primogen_court_position: "Primogénito Tzimisce" #NT!
+ tzimisce_primogen_court_position_desc: "Cuando un invitado ya no es bienvenido pero aún necesitas que responda algunas preguntas... ya sabes a quién llamar.\n\n#help Para los requisitos [aptitude|E], consulta [tzimisce_primogen|E].#!" #NT!
+ ventrue_primogen_court_position: "Primogénito Ventrue" #NT!
+ ventrue_primogen_court_position_desc: "Los llamados gobernantes de la noche esperan que se les conceda una gran cantidad de poder y responsabilidades, incluso cuando no lo merecen.\n\n#help Para los requisitos de [aptitude|E], consulte [ventrue_primogen|E].#!" #NT!
+ assamite_primogen_court_position: "Primogénito de Banu Haqim" #NT!
+ assamite_primogen_court_position_desc: "Los hijos de Haqim son obedientes y un ejemplo de disciplina hacia una causa común. La mayor parte del tiempo.\n\n#help Para los requisitos [aptitude|E], consulte [assamite_primogen|E].#!" #NT!
+ gangrel_primogen_court_position: "Primogénito Gangrel" #NT!
+ gangrel_primogen_court_position_desc: "Un Gangrel nunca está lejos de su manada, listo para ayudar o entorpecer su camino.\n\n#help Para los requisitos de [aptitude|E], consulte [gangrel_primogen|E].#!" #NT!
+ malkavian_primogen_court_position: "Primogénito Malkavian" #NT!
+ malkavian_primogen_court_position_desc: "Los videntes no controlan los presagios, pero quizás sea mejor tenerlos de tu lado.\n\n#help Para los requisitos de [aptitude|E], consulta [malkavian_primogen|E].#!" #NT!
+ nosferatu_primogen_court_position: "Primogénito Nosferatu" #NT!
+ nosferatu_primogen_court_position_desc: "Tener el favor de los Nosferatu siempre es una buena idea. La dificultad radica en asegurarse de que estén de tu lado...\n\n#help Para los requisitos de [aptitude|E], consulta [nosferatu_primogen|E].#!" #NT!
+ ravnos_primogen_court_position: "Primogénito de Ravnos" #NT!
+ ravnos_primogen_court_position_desc: "Una familia dividida y enemistada sigue siendo una familia al fin y al cabo.\n\n#help Para los requisitos de [aptitude|E], consulte [ravnos_primogen|E].#!" #NT!
+ setite_primogen_court_position: "Primogénito Setita" #NT!
+ setite_primogen_court_position_desc: "El Clan de la Fe puede guiarte espiritualmente, pero quizás no hacia el final que deseabas.\n\n#help Para los requisitos de [aptitude|E], consulta [setite_primogen|E].#!" #NT!
+ tremere_primogen_court_position: "Primogénito de Tremere" #NT!
+ tremere_primogen_court_position_desc: "Los usurpadores traen regalos en abundancia, y maldiciones aún más.\n\n#help Para los requisitos [aptitude|E], consulte [tremere_primogen|E].#!" #NT!
+ salubri_primogen_court_position: "Salubri Primogenitura" #NT!
+ salubri_primogen_court_position_desc: "Los Pastores de la humanidad están muriendo, pero su deber permanece.\n\n#help Para conocer los requisitos de [aptitude|E], consulte [salubri_primogen|E].#!" #NT!
+ gargoyle_primogen_court_position: "Gárgola primogénita" #NT!
+ gargoyle_primogen_court_position_desc: "Cuando necesitas que se lleve a cabo un asalto violento y repentino, las gárgolas son lo que necesitas.\n\n#help Para los requisitos [aptitude|E], consulta [gargoyle_primogen|E].#!" #NT!
+  
+ #POD_primogens.0001.t: "Mecánica primogénica" #NT!
+ #POD_primogens.0001.desc: "Como eres un gobernante de nivel Reino (o superior), ahora tienes acceso a las [primogen|E] posiciones de la corte menor.\nEstas posiciones representan la expectativa de cada [Clan|E] en tu área de tener un representante cerca de ti. Cada [Clan|E] valora un [Concept('primogen_aptitude','set of skills')|E] diferente, como puede ver en sus puntuaciones de aptitud, pero todos esperan estar representados.\nSi decide no nombrar a alguien (porque no puede pagar su salario o porque lo necesitan en otro lugar, o simplemente porque aún no tienes a nadie adecuado), puedes esperar que este [Clan|E] específico proteste en los próximos años, dándote una opinión notable con cada miembro de ese [Clan|E] en tu reino." #NT!
+ #POD_primogens.0001.a: "Comprendido" #NT!
+ #primogen_explanation_tt: "Tienes un período de gracia de tres años hasta que tu reino espere que esos puestos se cubran." #NT!
+  # 
+ #lack_primogen_opinion: "Se siente marginado" #NT!
+  # 
+ #POD_primogens.0003.t: "Estado de ánimo de los clanes" #NT!
+ #POD_primogens.0003.desc: "Como poderoso gobernante de la noche, eres juzgado constantemente por los diversos [Clans|E] de la sociedad de los no muertos. Aquellos a quienes no has favorecido con un asiento [primogen|E] son considerados marginados en tu corte, tal vez debido a su insignificancia política en tu reino, o simplemente debido a tu actual capricho.\nEn cualquier caso, ahora puedes sentir que el estado de ánimo de los Clanes hacia tu gobierno está cambiando nuevamente." #NT!
+ #POD_primogens.0003.a: "¿Qué piensan realmente?" #NT!
+ #lack_brujah_primogen_tt: "Los Brujah se sienten marginados." #NT!
+ #lack_cappadocian_primogen_tt: "Los capadocios se sienten marginados." #NT!
+ #lack_lasombra_primogen_tt: "Los Lasombra se sienten marginados." #NT!
+ #lack_toreador_primogen_tt: "Los Toreador se sienten marginados." #NT!
+ #lack_tzimisce_primogen_tt: "Los Tzimisce se sienten marginados." #NT!
+ #lack_ventrue_primogen_tt: "Los Ventrue se sienten marginados." #NT!
+ #lack_assamite_primogen_tt: "Los Banu Haqim se sienten marginados." #NT!
+ #lack_malkavian_primogen_tt: "Los Malkavian se sienten marginados." #NT!
+ #lack_nosferatu_primogen_tt: "Los Nosferatu se sienten marginados." #NT!
+ #lack_ravnos_primogen_tt: "Los Ravnos se sienten marginados." #NT!
+ #lack_setite_primogen_tt: "Los Setitas se sienten marginados." #NT!
+ #lack_salubri_primogen_tt: "Los Salubri se sienten marginados." #NT!
+ #lack_tremere_primogen_tt: "Los Tremere se sienten marginados." #NT!
+ #lack_gangrel_primogen_tt: "Los Gangrel se sienten marginados." #NT!
+ #lack_gargoyle_primogen_tt: "La Gárgola se siente marginada." #NT!
+  
+ aphrodisiac_celebrant_court_position: "Celebrante Afrodisíaco" #NT!
+ aphrodisiac_celebrant_court_position_desc: "Un puesto muy disputado por la politiquería social, el Celebrante Afrodisíaco tiene el honor de presidir el Afrodisíaco, donde los pecadores celebran la llegada de la primavera con un festival muy vibrante y decadente." #NT!
+  
+ lord_of_misrule_court_position: "Señor del desorden" #NT!
+ lord_of_misrule_court_position_desc: "Elegido durante las Saturnales, el Señor del Desgobierno tiene inmunidad completa y la usa para burlarse y menospreciar a todas las autoridades Cainitas establecidas en el área." #NT!
+  
+ hidden_minister_of_jade_court_position: "Ministro Oculto de Jade" #NT!
+ hidden_minister_of_jade_court_position_desc: "El Ministro Oculto de Jade recauda y distribuye fondos para la corte, ya sea como moneda mortal tradicional o como jade." #NT!
+ hidden_minister_of_rites_court_position: "Ministro Oculto de Ritos" #NT!
+ hidden_minister_of_rites_court_position_desc: "El Ministro Oculto de Ritos supervisa una amplia gama de actividades, incluida la garantía de la ejecución justa de las guerras locales en la sombra. La posición también salvaguarda el feng shui de la región y la vitalidad general de los Nidos y líneas de Dragones." #NT!
+ hidden_minister_of_shen_court_position: "Ministro oculto de Shen" #NT!
+ hidden_minister_of_shen_court_position_desc: "El Ministro Oculto de Shen es un puesto diplomático con un doble propósito. El mandato público de este puesto es mantener las relaciones con los Shen regionales. Sin embargo, el mandato privado de este puesto es asesorar al Augusto Ancestro sobre las debilidades explotables de los Shen rivales." #NT!
+ hidden_minister_of_war_court_position: "Ministro de Guerra Oculto" #NT!
+ hidden_minister_of_war_court_position_desc: "Cuando todo lo demás falla y el conflicto abierto es inevitable, el Ministro de Guerra Oculto es a menudo el general que dirige las fuerzas regionales Wan-Kuei contra el enemigo." #NT!
+ hidden_minister_of_the_garden_court_position: "Ministro Oculto del Jardín" #NT!
+ hidden_minister_of_the_garden_court_position_desc: "El Ministro Oculto del Jardín se ocupa de los asuntos mortales regionales, salvaguardando “el bienestar apropiado y virtuoso de la población”." #NT!
+ hidden_minister_of_hushed_lanterns_court_position: "Ministro Oculto de Linternas Silenciosas" #NT!
+ hidden_minister_of_hushed_lanterns_court_position_desc: "El Ministro Oculto de Linternas Silenciosas es una especie de solucionador de problemas, que se ocupa de “problemas desagradables” y situaciones embarazosas que el Augusto Ancestro o los Ministros no quieren manejar directamente." #NT!
+ minister_of_jade_court_position: "Ministro de Jade" #NT!
+ minister_of_jade_court_position_desc: "El Ministro de Jade se ocupa del tesoro local y es responsable de recaudar impuestos y tributos regionales para el Ministro Oculto que está por encima de ella." #NT!
+ minister_of_rites_court_position: "Ministro de Ritos" #NT!
+ minister_of_rites_court_position_desc: "El Ministro de Ritos supervisa las guerras en las sombras locales y ayuda a determinar el vencedor del conflicto si no hay un antepasado de la ciudad que se encargue de las tareas." #NT!
+ minister_of_shen_court_position: "Ministro de Shen" #NT!
+ minister_of_shen_court_position_desc: "El Ministro de Shen es exactamente el mismo embajador que el Ministro Oculto cuando trata con Shen, aunque la Corte Augusta lo trata oficialmente como un ayudante del Ministro Oculto de la región." #NT!
+ minister_of_war_court_position: "Ministro de Guerra" #NT!
+ minister_of_war_court_position_desc: "Si el Ministro de Guerra Oculto es un general, entonces el Ministro de Guerra actúa como su adjunto. Este Ministro tiene poco que ver con la lucha propiamente dicha y, en cambio, es el ojo, el oído y el portavoz a través del cual se transmiten las órdenes del Ministro Oculto y a través del cual este recibe su información." #NT!
+ minister_of_the_garden_court_position: "Ministro del Jardín" #NT!
+ minister_of_the_garden_court_position_desc: "El Ministro del Jardín supervisa los asuntos mortales regionales en nombre del Ministro Oculto local, hasta que este considere que la situación es lo suficientemente grave como para justificar su atención personal." #NT!
+ yin_ambassador_court_position: "Embajador Yin" #NT!
+ yin_ambassador_court_position_desc: "El Embajador Yin sirve al ancestro local como su puente con el [yin_world|E] local y sus reinos aterradores." #NT!
+ yin_ambassador_employer_custom_effect_description: "Todos en la corte:\nProgreso mensual de exploración de Umbra: [grace_i]#P +10#!" #NT!
+ yang_ambassador_court_position: "Embajador Yang" #NT!
+ yang_ambassador_court_position_desc: "El Embajador Yang es el análogo del emisario Yin, proporcionando un puente hacia el [yang_world|E] dinámico y vibrante." #NT!
+ yang_ambassador_employer_custom_effect_description: "Todos en la corte:\nProgreso mensual de exploración de Umbra: [grace_i]#P +10#!" #NT!
+ first_oni_court_position: "Primer Oni" #NT!
+ first_oni_court_position_desc: "El primer Oni es similar a un señor de la guerra, supervisa la seguridad regional, la protege contra las influencias de los akuma y los Yomi y, por lo general, encabeza campañas autorizadas contra los enemigos." #NT!
+ infant_devil_civilizer_court_position: "Civilizador de demonios infantiles" #NT!
+ infant_devil_civilizer_court_position_desc: "Hay un momento y un lugar para la persuasión gentil de un padre, pero durante la domesticación de un chih-mei salvaje no es ese momento. En este papel entra en juego el Civilizador Infantil Demonio, el supervisor de los esfuerzos de varias Sociedades Civilizadoras Infantiles Demonio locales para recuperar a los chih-mei salvajes." #NT!
+  
+ master_rite_court_position: "Maestro del Rito" #NT!
+ master_rite_court_position_desc: "El $master_rite_court_position$ es responsable del bienestar espiritual del túmulo. Todos los rituales que se lleven a cabo deben obtener su aprobación primero." #NT!
+ gatekeeper_court_position: "Portero" #NT!
+ gatekeeper_court_position_desc: "Es probable que el $gatekeeper_court_position$ sea la primera persona con la que se encuentren los recién llegados. El Guardián de la Puerta suele estar bastante ocupado recolectando tributos e información de los visitantes, ya que el mantenimiento de los Puentes Lunares espirituales también es su responsabilidad." #NT!
+ wyrm_foe_court_position: "Enemigo del Wyrm" #NT!
+ wyrm_foe_court_position_desc: "El $wyrm_foe_court_position$ es el guerrero más feroz del clan, no necesariamente el más hábil, pero sí el más entusiasta. Actúa como líder del clan y segundo al mando durante las acciones ofensivas contra los esbirros del Wyrm." #NT!
+ talesinger_court_position: "Cantante de cuentos" #NT!
+ talesinger_court_position_desc: "El $talesinger_court_position$ se encarga de mantener la reputación del Túmulo creando e interpretando cuentos o canciones sobre las grandes hazañas de los héroes del clan. También transmite la historia de los Garou a los jóvenes." #NT!
+ master_challenges_court_position: "Maestro de los desafíos" #NT!
+ master_challenges_court_position_desc: "El $master_challenges_court_position$ actúa como juez en los desafíos que tienen lugar en el Túmulo. Es una figura intimidante y también se espera que mantenga a raya a los guerreros en tiempos de paz." #NT!
+  
+ court_seer_court_position: "[SelectLocalization(GetPlayer.IsValid, 'court_seer_court_position_from_player', 'custom_court_seer')]" #NT!
+ court_seer_court_position_from_player: "[GetPlayer.Custom('CourtSeer')]" #NT!
+ custom_court_seer: "Vidente de la corte" #NT!
+ custom_court_seer_oracle: "Oráculo de la corte" #NT!
+ custom_court_seer_augur: "Augur de la corte" #NT!
+ court_seer_court_position_desc: "El $court_seer_court_position$ predice el futuro y determina días auspiciosos o desfavorables para la celebración de ceremonias oficiales." #NT!
+  
+ minister_eagles_court_position: "Ministro de Águilas" #NT!
+ minister_eagles_court_position_desc: "El Ministro de las Águilas se especializa en información de cualquier tipo, ya sea información mundana sobre la infraestructura mortal y el panorama político, conocimientos perdidos de las épocas anteriores a su encarcelamiento o actividad sobrenatural que podría amenazar a la Corte." #NT!
+ minister_aurochs_court_position: "Ministro del Uro" #NT!
+ minister_aurochs_court_position_desc: "El Ministro de los Uros, también llamado el Guardián, tiene la tarea de defender la Corte y hacer cumplir sus leyes. También defiende a los Caídos de alto rango contra los intentos de asesinato de los demonios rivales." #NT!
+ minister_dragons_court_position: "Ministro de Dragones" #NT!
+ minister_dragons_court_position_desc: "El Ministro de los Dragones tiene la tarea de cuestionar y desafiar a la autoridad. Debe estar siempre atento a las señales de corrupción y traición. Se anima a los demonios a ser prudentes en sus tratos y el Censor se asegura de que la chispa rebelde que hay en cada demonio y que los lleva contra Dios se canalice hacia medios constructivos." #NT!
+ minister_dust_court_position: "Ministro del Polvo" #NT!
+ minister_dust_court_position_desc: "El Ministro del Polvo está encargado de salvaguardar el rebaño mortal así como del avance de la Corte. Gestionan instituciones mortales, manteniéndolas alejadas de la infraestructura de la Corte y aumentando la cantidad general de Fe dentro de la población, ya sea apoyando instituciones religiosas o derribando la ciudad para que la gente se aferre aún más a sus creencias." #NT!
+ minister_swords_court_position: "Ministro de los Leones" #NT!
+ minister_swords_court_position_desc: "El Ministro de los Leones, encargado de luchar contra las amenazas a la Corte, dirige a los soldados de élite de la Corte. Dado que el uso abierto de la violencia y las demostraciones de fuerza están restringidas en comparación con la Era de la Ira, los llamados "Espadas" tienen que actuar con cuidado para cumplir con sus deberes." #NT!
+  
+ brujah_warmaster_court_position: "Maestro de guerra Brujah" #NT!
+ brujah_warmaster_court_position_desc: "En la antigüedad, tradicionalmente, el $brujah_warmaster_court_position$ era el maestro en batalla de los recién creados Brujah. El clan ha caído en desgracia y esta tradición ha sido olvidada en su mayor parte, pero algunos todavía se aferran a ella, obligando a los neonatos a seguir un régimen de entrenamiento minucioso, casi espartano, después de su introducción en la corte." #NT!
+  
+ underworld_ambassador_court_position: "Embajador del inframundo" #NT!
+ underworld_ambassador_court_position_desc: "El Embajador [underworld|E] sirve al gobernante local como su puente con los reinos locales [underworld|E]." #NT!
+ underworld_ambassador_employer_custom_effect_description: "Todos en la corte:\nProgreso mensual de exploración de Umbra: [grace_i]#P +5#!" #NT!
+ umbra_ambassador_court_position: "Embajador de Umbra" #NT!
+ umbra_ambassador_court_position_desc: "La Embajadora de Umbra sirve al gobernante local como su puente con los reinos de umbra locales." #NT!
+ umbra_ambassador_employer_custom_effect_description: "Todos en la corte:\nProgreso mensual de exploración de Umbra: [grace_i]#P +5#!" #NT!
+ trod_wayfarer_court_position: "Caminante caminante" #NT!
+ trod_wayfarer_court_position_desc: "Los trods son la conexión más cercana de las hadas con los [dreaming|E] y [arcadia|E]. También son poder. Quienes controlan los trods ejercen un gran control sobre la sociedad feérica." #NT!
+ trod_wayfarer_employer_custom_effect_description: "Todos en la corte:\nProgreso mensual de exploración de Umbra: [grace_i]#P +5#!" #NT!
+  
+ touchstones_court_position: "Piedras de toque" #NT!
+ touchstones_court_position_desc: "Las piedras de toque son la conexión de un vampiro con el mundo de los mortales y representan una mentalidad en la que se valoran a sí mismos. Una Piedra de Toque debe ser un único ser humano vivo. La piedra de toque podría ser una pareja superviviente o un miembro de la familia, relacionado con alguien a quien el vampiro mató en su vida temprana o incluso simplemente algo con lo que se topan regularmente.\nAlgunos Vástagos, debido a su desconexión del mundo mortal, pueden incluso elegir una Piedra de toque que no No saben que existen, sino que eligen acechar y vigilar al humano para conservar sus conexiones con la humanidad." #NT!
+  
+ alastor_court_position: "Alastor" #NT!
+ alastor_court_position_desc: "Un Alastor es un agente de la Camarilla que ha sido encargado de cazar a los Anatema: vampiros peligrosos que han sido añadidos a la Lista Roja de la Camarilla y que toda la secta ha elegido para su destrucción." #NT!
+ alastor_court_employer_custom_effect_description: "Permitir enviar un Alastor a cazar Anathema para obtener una recompensa." #NT!
+ praetor_court_position: "Pretor" #NT!
+ praetor_court_position_desc: "Pretor o líder de proyecto son términos que se utilizan para describir a los arcontes notables a quienes se les ha otorgado autoridad sobre sus pares. El puesto normalmente dura lo que dura una asignación determinada, pero algunos continúan usando el título con orgullo." #NT!
+ dogcatcher_court_position: "Perrera" #NT!
+ dogcatcher_court_position_desc: "Perrero es un título informal para los arcontes que tienen el hábito de enfrentarse a hombres lobo y que poseen un conocimiento mucho mayor de las habilidades, hábitos y sociedades de los hombres lobo que otros vampiros." #NT!
+ doppelganger_court_position: "Doble" #NT!
+ doppelganger_court_position_desc: "Doppelganger es una designación informal para los arcontes que adoptan una identidad encubierta profunda para realizar un trabajo específico." #NT!
+ josian_court_position: "Josiano" #NT!
+ josian_court_position_desc: "Los josianos son arcontes que cazan a los infernalistas. También se dedican a erradicar los cultos de la Gehena, al tiempo que investigan en secreto la tradición nodista descubierta en busca de cualquier evidencia de que la Gehena pueda ser un peligro real." #NT!
+ quaesitor_court_position: "Cuesitor" #NT!
+ quaesitor_court_position_desc: "Los quaesitores son una rama de los arcontes que son casi en su totalidad vampiros Tremere. Se ocupan de todas las necesidades hechiceras de la Camarilla, ya sea combatir a los koldun y magos del Sabbat o cazar a los Tremere rebeldes." #NT!
+  
+ artificer_journeymen_court_position: "Oficiales" #NT!
+ artificer_journeymen_court_position_desc: "Los oficiales son todos aquellos artesanos que han superado el Rito de la Forja de Almas y tienen su propia forja. Forman la mayor parte de los artesanos profesionales y tienen derecho a aceptar sus propios aprendices." #NT!
+ artificer_journeymen_employer_custom_effect_description: "Mayor calidad de forja de almas dependiendo de [aptitude|e]." #NT!
+  
+ oathsworn_mount_court_position: "Monte Juramentado" #NT!
+ oathsworn_mount_court_position_desc: "Un [GetTrait('pooka').GetName( GetPlayer )] (con afinidad con un animal grande) o un [GetTraitGroup('shapeshifter').GetName()] [courtier|E] que haya hecho un juramento a un señor feérico puede servir como montura inteligente para ese señor." #NT!
+ oathsworn_mount_employer_custom_effect_description: "Se aumentó la velocidad de viaje y movimiento del ejército según [aptitude|e]." #NT!
+  
+ strategoi_court_position: "Estrategia" #NT!
+ strategoi_court_position_desc: "Los estrategas dirigen eficazmente las operaciones de los asuntos cotidianos del Eforado. Cada uno es responsable de una parte diferente del dominio del Eforado. De noche en noche, el estratega supervisa los asuntos políticos y comerciales de los Ventrue en su región, además de atender sus propias necesidades y dignidad." #NT!
+ lictor_court_position: "Lictor" #NT!
+ lictor_court_position_desc: "Los lictores son los solucionadores de problemas del Ephorate, estos Ventrue son enviados para lidiar con los problemas que amenazan al clan. Esta amplia misión también implica que necesitan una amplia gama de habilidades, pero la mayoría de los lictores terminan siendo combatientes de primera línea. Tienen la habilidad justa, pero no son lo suficientemente importantes como para preocuparse si mueren en el cumplimiento de su deber." #NT!
+ tribunes_court_position: "Tribunas" #NT!
+ tribunes_court_position_desc: "El Eforado mantiene una red flexible de contactos y “agentes de campo” en todo el mundo. Estos Vástagos son conocidos como tribunos y agentes generales, y sirven como los ojos y oídos de los éforos en todo el mundo." #NT!
+  
+  

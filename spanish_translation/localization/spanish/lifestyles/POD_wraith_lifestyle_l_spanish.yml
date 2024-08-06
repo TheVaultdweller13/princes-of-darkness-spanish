@@ -1,0 +1,1067 @@
+﻿l_spanish:
+  ######################### 
+  # Arcanoi 
+  ######################### 
+ arcanoi_lifestyle_name: "Arcanos" #NT!
+ arcanoi_lifestyle_desc: "Las artes de los muertos, Arcanoi, son habilidades espirituales secretas que pueden enseñarse o adquirirse a través de la experiencia." #NT!
+ arcanoi_lifestyle_highlight_desc: "Gracias a tu Gremio [religion|E], ganas #P 50%#! más [experience|E] en este Estilo de Vida." #NT!
+ monthly_arcanoi_lifestyle_xp_gain_mult: "Arcanos mensuales [lifestyle|E] [experience|E]" #NT!
+  
+ thorn_lifestyle_name: "Espina" #NT!
+ thorn_lifestyle_desc: "Las herramientas que usa la Sombra para obtener el control de Psyche o hacer que Psyche cometa un error y acelere su espiral descendente hacia [oblivion|E]." #NT!
+ thorn_lifestyle_highlight_desc: "Gracias a tu Catarsis ganas #P 50%#! más [experience|E] en este Estilo de Vida." #NT!
+ monthly_thorn_lifestyle_xp_gain_mult: "Espina del mes [lifestyle|E] [experience|E]" #NT!
+  
+ jade_arcanoi_lifestyle_name: "Arcanoi de Jade" #NT!
+ jade_arcanoi_lifestyle_desc: "Arcanoi de los espectros de los Manantiales Amarillos." #NT!
+ jade_arcanoi_lifestyle_highlight_desc: "Gracias a tus Yellow Springs [government|E], ganas #P 50%#! más [experience|E] en este estilo de vida." #NT!
+ monthly_jade_arcanoi_lifestyle_xp_gain_mult: "Arcanos de Jade Mensuales [lifestyle|E] [experience|E]" #NT!
+  
+ dark_arcanoi_lifestyle_name: "Arcanoi oscuro" #NT!
+ dark_arcanoi_lifestyle_desc: "Un Arcanos especializado alimentado por Angst y [oblivion|E]." #NT!
+ dark_arcanoi_lifestyle_highlight_desc: "Debido a tu casta, ganas #P [GetPlayer.Custom('GetCasteLifestylePercentageBoost')]#! más [experience|E] en este estilo de vida." #NT!
+ monthly_dark_arcanoi_lifestyle_xp_gain_mult: "Arcanoi oscuros del mes [lifestyle|E] [experience|E]" #NT!
+  
+ misc_arcanoi_lifestyle_name: "Varios. Arcanos" #NT!
+ misc_arcanoi_lifestyle_desc: "Habilidades utilizadas por los Resucitados, o espectros que han logrado regresar a sus antiguos cuerpos, y Arcanos de los espectros de otros [dark_kingdom|E]." #NT!
+ misc_arcanoi_lifestyle_highlight_desc: "Gracias a tu [dark_kingdom|E] [government|E], ganas #P 50%#! más [experience|E] en este estilo de vida." #NT!
+ monthly_misc_arcanoi_lifestyle_xp_gain_mult: "Arcanoi Misceláneos Mensuales [lifestyle|E] [experience|E]" #NT!
+  
+ arcanos_argos_focus: "Enfoque de Argos" #NT!
+ arcanos_argos_focus_modifier: "[GetFocus('arcanos_argos_focus').GetName]" #NT!
+ arcanos_argos_focus_desc: "Manipular, navegar y viajar a través del [tempest|E]." #NT!
+ arcanos_argos_focus_effect_desc: "Centrándose en las subvenciones de Argos:" #NT!
+  
+ arcanos_castigate_focus: "Castigar el foco" #NT!
+ arcanos_castigate_focus_modifier: "[GetFocus('arcanos_castigate_focus').GetName]" #NT!
+ arcanos_castigate_focus_desc: "Manipular y controlar la Sombra de un espectro." #NT!
+ arcanos_castigate_focus_effect_desc: "Centrándose en las subvenciones de Castigate:" #NT!
+  
+ arcanos_embody_focus: "Encarnar el enfoque" #NT!
+ arcanos_embody_focus_modifier: "[GetFocus('arcanos_embody_focus').GetName]" #NT!
+ arcanos_embody_focus_desc: "Manifestarse en el mundo físico y aparecer como una persona viva." #NT!
+ arcanos_embody_focus_effect_desc: "Centrándose en las subvenciones Embody:" #NT!
+  
+ arcanos_fatalism_focus: "Enfoque en el fatalismo" #NT!
+ arcanos_fatalism_focus_modifier: "[GetFocus('arcanos_fatalism_focus').GetName]" #NT!
+ arcanos_fatalism_focus_desc: "Vea el pasado o el futuro de otro y lea el destino final de un espectro." #NT!
+ arcanos_fatalism_focus_effect_desc: "Centrándose en el fatalismo, se otorgan:" #NT!
+  
+ arcanos_inhabit_focus: "[SelectLocalization(GetPlayer.IsValid, 'inhabit_visible', 'inhabit_modern_name')] Enfoque" #NT!
+ arcanos_inhabit_focus_modifier: "[GetFocus('arcanos_inhabit_focus').GetName]" #NT!
+ arcanos_inhabit_focus_desc: "Manipular y controlar objetos inanimados." #NT!
+ arcanos_inhabit_focus_effect_desc: "Centrándose en $inhabit_visible$ subvenciones:" #NT!
+  
+ arcanos_keening_focus: "Enfoque entusiasta" #NT!
+ arcanos_keening_focus_modifier: "[GetFocus('arcanos_keening_focus').GetName]" #NT!
+ arcanos_keening_focus_desc: "Manipular emociones a través del sonido." #NT!
+ arcanos_keening_focus_effect_desc: "Centrándose en las subvenciones Keening:" #NT!
+  
+ arcanos_lifeweb_focus: "Enfoque de Lifeweb" #NT!
+ arcanos_lifeweb_focus_modifier: "[GetFocus('arcanos_lifeweb_focus').GetName]" #NT!
+ arcanos_lifeweb_focus_desc: "Fortalecer, debilitar o vigilar [Fetters|E]." #NT!
+ arcanos_lifeweb_focus_effect_desc: "Centrándose en las subvenciones de Lifeweb:" #NT!
+  
+ arcanos_moliate_focus: "Enfoque moliado" #NT!
+ arcanos_moliate_focus_modifier: "[GetFocus('arcanos_moliate_focus').GetName]" #NT!
+ arcanos_moliate_focus_desc: "Reforma tu [Corpus|E], y el [Corpus|E] de los demás." #NT!
+ arcanos_moliate_focus_effect_desc: "Centrándose en las subvenciones Moliate:" #NT!
+  
+ arcanos_outrage_focus: "Foco de indignación" #NT!
+ arcanos_outrage_focus_modifier: "[GetFocus('arcanos_outrage_focus').GetName]" #NT!
+ arcanos_outrage_focus_desc: "Manifestar la voluntad de un espectro en forma de una fuerza poderosa." #NT!
+ arcanos_outrage_focus_effect_desc: "Centrándose en las subvenciones de Outrage:" #NT!
+  
+ arcanos_pandemonium_focus: "Enfoque en el pandemonio" #NT!
+ arcanos_pandemonium_focus_modifier: "[GetFocus('arcanos_pandemonium_focus').GetName]" #NT!
+ arcanos_pandemonium_focus_desc: "Uso de los poderes del caos." #NT!
+ arcanos_pandemonium_focus_effect_desc: "Centrándose en las subvenciones de Pandemonium:" #NT!
+  
+ arcanos_phantasm_focus: "Enfoque fantasmal" #NT!
+ arcanos_phantasm_focus_modifier: "[GetFocus('arcanos_phantasm_focus').GetName]" #NT!
+ arcanos_phantasm_focus_desc: "Manipular sueños y crear ilusiones." #NT!
+ arcanos_phantasm_focus_effect_desc: "Centrándose en las subvenciones Phantasm:" #NT!
+  
+ arcanos_puppetry_focus: "Enfoque en los títeres" #NT!
+ arcanos_puppetry_focus_modifier: "[GetFocus('arcanos_puppetry_focus').GetName]" #NT!
+ arcanos_puppetry_focus_desc: "Controla los cuerpos de los Rápidos." #NT!
+ arcanos_puppetry_focus_effect_desc: "Subvenciones centradas en la marioneta:" #NT!
+  
+ arcanos_usury_focus: "Enfoque en la usura" #NT!
+ arcanos_usury_focus_modifier: "[GetFocus('arcanos_usury_focus').GetName]" #NT!
+ arcanos_usury_focus_desc: "Intercambia las mismas fuerzas que hacen prosperar a los espectros." #NT!
+ arcanos_usury_focus_effect_desc: "Centrándose en las subvenciones de usura:" #NT!
+  
+ arcanos_flux_focus: "Enfoque de flujo" #NT!
+ arcanos_flux_focus_modifier: "[GetFocus('arcanos_flux_focus').GetName]" #NT!
+ arcanos_flux_focus_desc: "Afecta la estructura y la reacción de la materia en el [skinlands|E], también afecta el funcionamiento de las reliquias espectrales." #NT!
+ arcanos_flux_focus_effect_desc: "Centrándose en las subvenciones Flux:" #NT!
+  
+ arcanos_intimation_focus: "Enfoque de insinuación" #NT!
+ arcanos_intimation_focus_modifier: "[GetFocus('arcanos_intimation_focus').GetName]" #NT!
+ arcanos_intimation_focus_desc: "Modifica los deseos y anhelos de otros espectros." #NT!
+ arcanos_intimation_focus_effect_desc: "Centrándose en las subvenciones de intimación:" #NT!
+  
+ arcanos_mnemosynis_focus: "Enfoque de Mnemosynis" #NT!
+ arcanos_mnemosynis_focus_modifier: "[GetFocus('arcanos_mnemosynis_focus').GetName]" #NT!
+ arcanos_mnemosynis_focus_desc: "Rastrear y leer los recuerdos de otros." #NT!
+ arcanos_mnemosynis_focus_effect_desc: "Centrándose en las subvenciones de Mnemosynis:" #NT!
+  
+ thorn_focus: "Enfoque de espinas" #NT!
+ thorn_focus_modifier: "[GetFocus('thorn_focus').GetName]" #NT!
+ thorn_focus_desc: "Poderes de la Sombra." #NT!
+ thorn_focus_effect_desc: "Centrándose en las subvenciones Thorn:" #NT!
+  
+ chains_of_the_emperor_focus: "Cadenas del Emperador Enfoque" #NT!
+ chains_of_the_emperor_focus_modifier: "[GetFocus('chains_of_the_emperor_focus').GetName]" #NT!
+ chains_of_the_emperor_focus_desc: "Somete a cualquier espectro, [GetTrait('barghest').GetName( GetPlayer )], o menor [GetTrait('spectre').GetName( GetNullCharacter )]." #NT!
+ chains_of_the_emperor_focus_effect_desc: "Centrarse en Cadenas del Emperador otorga:" #NT!
+  
+ way_of_the_scholar_focus: "Camino del Erudito Enfoque" #NT!
+ way_of_the_scholar_focus_modifier: "[GetFocus('way_of_the_scholar_focus').GetName]" #NT!
+ way_of_the_scholar_focus_desc: "Manipular los hunos de otros espectros." #NT!
+ way_of_the_scholar_focus_effect_desc: "Centrándose en el Camino del Académico se otorgan:" #NT!
+  
+ way_of_the_farmer_focus: "El camino del agricultor" #NT!
+ way_of_the_farmer_focus_modifier: "[GetFocus('way_of_the_farmer_focus').GetName]" #NT!
+ way_of_the_farmer_focus_desc: "Controla [GetTrait('barghest').GetName( GetPlayer )], o espíritus salvajes sin hun." #NT!
+ way_of_the_farmer_focus_effect_desc: "Centrándose en las subvenciones de Way of the Farmer:" #NT!
+  
+ way_of_the_artisan_focus: "Camino del Artesano Enfoque" #NT!
+ way_of_the_artisan_focus_modifier: "[GetFocus('way_of_the_artisan_focus').GetName]" #NT!
+ way_of_the_artisan_focus_desc: "Dar forma y manipular objetos, reliquias y artefactos." #NT!
+ way_of_the_artisan_focus_effect_desc: "Centrándose en las subvenciones de Way of the Artisan:" #NT!
+  
+ way_of_the_merchant_focus: "Camino del Comerciante Enfoque" #NT!
+ way_of_the_merchant_focus_modifier: "[GetFocus('way_of_the_merchant_focus').GetName]" #NT!
+ way_of_the_merchant_focus_desc: "Para utilizar los sacrificios enviados por sus parientes vivos." #NT!
+ way_of_the_merchant_focus_effect_desc: "Centrándose en el Camino del Comerciante se otorgan:" #NT!
+  
+ way_of_the_soul_focus: "Camino del Enfoque del Alma" #NT!
+ way_of_the_soul_focus_modifier: "[GetFocus('way_of_the_soul_focus').GetName]" #NT!
+ way_of_the_soul_focus_desc: "Domina tu propio [GetTrait('shadow').GetName( GetPlayer )]." #NT!
+ way_of_the_soul_focus_effect_desc: "Centrarse en el Camino del Alma otorga:" #NT!
+  
+ arcanos_blighted_insight_focus: "Enfoque de visión arruinada" #NT!
+ arcanos_blighted_insight_focus_modifier: "[GetFocus('arcanos_blighted_insight_focus').GetName]" #NT!
+ arcanos_blighted_insight_focus_desc: "Siente y manipula los hilos del Destino." #NT!
+ arcanos_blighted_insight_focus_effect_desc: "Centrándose en las subvenciones de Blighted Insight:" #NT!
+  
+ arcanos_contaminate_focus: "Contaminar el foco" #NT!
+ arcanos_contaminate_focus_modifier: "[GetFocus('arcanos_contaminate_focus').GetName]" #NT!
+ arcanos_contaminate_focus_desc: "Manipula las sombras de los espectros, acercándolos a [oblivion|E]." #NT!
+ arcanos_contaminate_focus_effect_desc: "Centrándose en las subvenciones Contaminate:" #NT!
+  
+ arcanos_corruption_focus: "Foco en la corrupción" #NT!
+ arcanos_corruption_focus_modifier: "[GetFocus('arcanos_corruption_focus').GetName]" #NT!
+ arcanos_corruption_focus_desc: "Supera la voluntad de uno de los Rápidos, quien luego se acerca a [oblivion|E] a través de las acciones del controlador." #NT!
+ arcanos_corruption_focus_effect_desc: "Subvenciones centradas en la corrupción:" #NT!
+  
+ arcanos_false_life_focus: "Falso enfoque de vida" #NT!
+ arcanos_false_life_focus_modifier: "[GetFocus('arcanos_false_life_focus').GetName]" #NT!
+ arcanos_false_life_focus_desc: "Crea poderosas ilusiones del [skinlands|E]." #NT!
+ arcanos_false_life_focus_effect_desc: "Centrándose en las subvenciones de False Life:" #NT!
+  
+ arcanos_hive_mind_focus: "Enfoque de mente colmena" #NT!
+ arcanos_hive_mind_focus_modifier: "[GetFocus('arcanos_hive_mind_focus').GetName]" #NT!
+ arcanos_hive_mind_focus_desc: "Permanecer en comunicación con otros Espectros en todo momento, lo que les permitirá formar una especie de inteligencia colectiva." #NT!
+ arcanos_hive_mind_focus_effect_desc: "Centrándose en las subvenciones de Hive-Mind:" #NT!
+  
+ arcanos_larceny_focus: "Enfoque en el hurto" #NT!
+ arcanos_larceny_focus_modifier: "[GetFocus('arcanos_larceny_focus').GetName]" #NT!
+ arcanos_larceny_focus_desc: "Prolonga tu existencia en el [tempest|E] usando [oblivion|E] para fortalecer tu [Corpus|E]." #NT!
+ arcanos_larceny_focus_effect_desc: "Centrándose en las subvenciones por hurto:" #NT!
+  
+ arcanos_maleficence_focus: "Enfoque en la maleficencia" #NT!
+ arcanos_maleficence_focus_modifier: "[GetFocus('arcanos_maleficence_focus').GetName]" #NT!
+ arcanos_maleficence_focus_desc: "Infundir el poder de [oblivion|E] en los seres y permitirles servir a la mente colmena." #NT!
+ arcanos_maleficence_focus_effect_desc: "Centrándose en las subvenciones de Maleficencia:" #NT!
+  
+ arcanos_shroud_rending_focus: "Enfoque que desgarra el sudario" #NT!
+ arcanos_shroud_rending_focus_modifier: "[GetFocus('arcanos_shroud_rending_focus').GetName]" #NT!
+ arcanos_shroud_rending_focus_desc: "Vea el [skinlands|E] y el Rápido a través del Sudario." #NT!
+ arcanos_shroud_rending_focus_effect_desc: "Centrándose en las subvenciones de Shroud-Rending:" #NT!
+  
+ arcanos_tempest_weaving_focus: "Enfoque en el tejido de tempestades" #NT!
+ arcanos_tempest_weaving_focus_modifier: "[GetFocus('arcanos_tempest_weaving_focus').GetName]" #NT!
+ arcanos_tempest_weaving_focus_desc: "Manipular el [tempest|E], tanto física como metafísicamente." #NT!
+ arcanos_tempest_weaving_focus_effect_desc: "Centrándose en las subvenciones para tejer tempestades:" #NT!
+  
+ arcanos_tempestos_focus: "Enfoque de Tempestos" #NT!
+ arcanos_tempestos_focus_modifier: "[GetFocus('arcanos_tempestos_focus').GetName]" #NT!
+ arcanos_tempestos_focus_desc: "Te ayuda a navegar y sobrevivir a los vientos de un Maelstrom." #NT!
+ arcanos_tempestos_focus_effect_desc: "Centrándose en las subvenciones Tempestos:" #NT!
+  
+ arcanos_fascinate_focus: "Fascinar el enfoque" #NT!
+ arcanos_fascinate_focus_modifier: "[GetFocus('arcanos_fascinate_focus').GetName]" #NT!
+ arcanos_fascinate_focus_desc: "Afecta a los vivos instalando pensamientos o deseos en sus mentes." #NT!
+ arcanos_fascinate_focus_effect_desc: "Centrándose en las subvenciones Fascinate:" #NT!
+  
+ arcanos_serendipity_focus: "Enfoque en la serendipia" #NT!
+ arcanos_serendipity_focus_modifier: "[GetFocus('arcanos_serendipity_focus').GetName]" #NT!
+ arcanos_serendipity_focus_desc: "Haz que las coincidencias trabajen a tu favor." #NT!
+ arcanos_serendipity_focus_effect_desc: "Centrándose en las subvenciones Serendipity:" #NT!
+  
+ arcanos_behest_focus: "Enfoque por orden" #NT!
+ arcanos_behest_focus_modifier: "[GetFocus('arcanos_behest_focus').GetName]" #NT!
+ arcanos_behest_focus_desc: "Tira de los hilos de la "Red de los Muertos" y afecta a los espectros y a los vivos." #NT!
+ arcanos_behest_focus_effect_desc: "Centrándose en las subvenciones Behest:" #NT!
+  
+ arcanos_connaissance_focus: "Enfoque en el conocimiento" #NT!
+ arcanos_connaissance_focus_modifier: "[GetFocus('arcanos_connaissance_focus').GetName]" #NT!
+ arcanos_connaissance_focus_desc: "Connaissance es principalmente la respuesta de Los Invisibles a Castigate. Sin embargo, las habilidades de los Serviteurs les permiten manipular a los Baka en lugar del propio Mait' Tete." #NT!
+ arcanos_connaissance_focus_effect_desc: "Centrándose en las subvenciones de conocimiento:" #NT!
+  
+ arcanos_displace_focus: "Desplazar el foco" #NT!
+ arcanos_displace_focus_modifier: "[GetFocus('arcanos_displace_focus').GetName]" #NT!
+ arcanos_displace_focus_desc: "Remodelar las almas desde el interior." #NT!
+ arcanos_displace_focus_effect_desc: "Centrándose en las subvenciones de Displace:" #NT!
+  
+ game_concept_arcanoi: "arcanoi" #NT!
+ game_concept_arcanos: "arcanos" #NT!
+ game_concept_Arcanoi: "Arcanos" #NT!
+ game_concept_Arcanos: "Arcanos" #NT!
+ game_concept_arcanoi_lifestyle: "Arcanos" #NT!
+ game_concept_arcanoi_lifestyle_desc: "El $game_concept_arcanoi_lifestyle$ es adecuado para $POD_splat_wraith_plural$. Las artes de los muertos, los Arcanoi, son habilidades espirituales secretas que pueden enseñarse o adquirirse a través de la experiencia." #NT!
+  
+ game_concept_thorn_lifestyle: "Espina" #NT!
+ game_concept_thorn_lifestyle_desc: "El $game_concept_arcanoi_lifestyle$ es adecuado para $POD_splat_wraith_plural$. Ciertos poderes únicos que la Sombra tiene a su disposición." #NT!
+  
+ game_concept_jade_arcanoi: "Arcanoi de Jade" #NT!
+ game_concept_jade_arcanoi_lifestyle: "Arcanoi de Jade" #NT!
+ game_concept_jade_arcanoi_lifestyle_desc: "El $game_concept_jade_arcanoi_lifestyle$ es adecuado para $POD_splat_wraith_plural$. Arcanoi de los espectros de los Manantiales Amarillos." #NT!
+  
+ game_concept_true_jade: "Jade verdadero" #NT!
+ game_concept_true_jade_desc: "Se cree que True Jade es una porción del alma del Universo en forma sólida. Cuando True Jade llega a Yellow Springs, solo los artesanos saben cómo crear elementos nuevos y poderosos con él." #NT!
+  
+ game_concept_dark_arcanoi: "Arcanoi oscuro" #NT!
+ game_concept_dark_arcanoi_lifestyle: "Arcanoi oscuro" #NT!
+ game_concept_dark_arcanoi_lifestyle_desc: "El $game_concept_dark_arcanoi_lifestyle$ es adecuado para $POD_splat_wraith_plural$. Un Arcanos Oscuro es un Arcanos especializado alimentado por Angst y [oblivion|E]. Estas habilidades las usan principalmente los Espectros para servir a [oblivion|E] y atormentar tanto a los espectros como a los Rápidos." #NT!
+  
+ game_concept_misc_arcanoi: "Arcanoi varios" #NT!
+ game_concept_misc_arcanoi_lifestyle: "Arcanoi varios" #NT!
+ game_concept_misc_arcanoi_lifestyle_desc: "El $game_concept_misc_arcanoi_lifestyle$ es adecuado para $POD_splat_wraith_plural$. Habilidades utilizadas por los Resucitados, o espectros que han logrado regresar a sus antiguos cuerpos, y Arcanos de los espectros del otro [dark_kingdom|E]." #NT!
+  
+ GAINS_ARCANOI_LIFESTYLE_XP: "Ganancias $VALUE|V0$ [arcanoi_lifestyle|E] Experiencia" #NT!
+ GAINED_ARCANOI_LIFESTYLE_XP: "Obtuvo $VALUE|V0$ [arcanoi_lifestyle|E] Experiencia" #NT!
+ I_GAIN_ARCANOI_LIFESTYLE_XP: "Obtienes $VALUE|V0$ [arcanoi_lifestyle|E] de experiencia" #NT!
+ I_GAINED_ARCANOI_LIFESTYLE_XP: "Ganaste $VALUE|V0$ [arcanoi_lifestyle|E] Experiencia" #NT!
+ TARGET_GAINS_ARCANOI_LIFESTYLE_XP: "[CHARACTER.GetShortUIName] gana $VALUE|V0$ [arcanoi_lifestyle|E] experiencia" #NT!
+ TARGET_GAINED_ARCANOI_LIFESTYLE_XP: "[CHARACTER.GetShortUIName] ganado $VALUE|V0$ [arcanoi_lifestyle|E] Experiencia" #NT!
+  
+ GAINS_A_ARCANOI_LIFESTYLE_PERKPOINT: "Ganancias $VALUE|V0$ [arcanoi_lifestyle|E] [perk|E] Desbloquear" #NT!
+ GAINED_A_ARCANOI_LIFESTYLE_PERKPOINT: "Obtenido $VALUE|V0$ [arcanoi_lifestyle|E] [perk|E] Desbloquear" #NT!
+ I_GAIN_A_ARCANOI_LIFESTYLE_PERKPOINT: "Obtienes $VALUE|V0$ [arcanoi_lifestyle|E] [perk|E] Desbloquear" #NT!
+ I_GAINED_A_ARCANOI_LIFESTYLE_PERKPOINT: "Ganaste $VALUE|V0$ [arcanoi_lifestyle|E] [perk|E] Desbloquear" #NT!
+ TARGET_GAINS_A_ARCANOI_LIFESTYLE_PERKPOINT: "[CHARACTER.GetShortUIName] gana $VALUE|V0$ [arcanoi_lifestyle|E] [perk|E] Desbloquea" #NT!
+ TARGET_GAINED_A_ARCANOI_LIFESTYLE_PERKPOINT: "[CHARACTER.GetShortUIName] ganado $VALUE|V0$ [arcanoi_lifestyle|E] [perk|E] Desbloquear" #NT!
+  
+ GAINS_THORN_LIFESTYLE_XP: "Ganancias $VALUE|V0$ [thorn_lifestyle|E] Experiencia" #NT!
+ GAINED_THORN_LIFESTYLE_XP: "Obtuvo $VALUE|V0$ [thorn_lifestyle|E] Experiencia" #NT!
+ I_GAIN_THORN_LIFESTYLE_XP: "Obtienes $VALUE|V0$ [thorn_lifestyle|E] de experiencia" #NT!
+ I_GAINED_THORN_LIFESTYLE_XP: "Ganaste $VALUE|V0$ [thorn_lifestyle|E] Experiencia" #NT!
+ TARGET_GAINS_THORN_LIFESTYLE_XP: "[CHARACTER.GetShortUIName] gana $VALUE|V0$ [thorn_lifestyle|E] experiencia" #NT!
+ TARGET_GAINED_THORN_LIFESTYLE_XP: "[CHARACTER.GetShortUIName] ganado $VALUE|V0$ [thorn_lifestyle|E] Experiencia" #NT!
+  
+ GAINS_A_THORN_LIFESTYLE_PERKPOINT: "Ganancias $VALUE|V0$ [thorn_lifestyle|E] [perk|E] Desbloquear" #NT!
+ GAINED_A_THORN_LIFESTYLE_PERKPOINT: "Obtenido $VALUE|V0$ [thorn_lifestyle|E] [perk|E] Desbloquear" #NT!
+ I_GAIN_A_THORN_LIFESTYLE_PERKPOINT: "Obtienes $VALUE|V0$ [thorn_lifestyle|E] [perk|E] Desbloquear" #NT!
+ I_GAINED_A_THORN_LIFESTYLE_PERKPOINT: "Ganaste $VALUE|V0$ [thorn_lifestyle|E] [perk|E] Desbloquear" #NT!
+ TARGET_GAINS_A_THORN_LIFESTYLE_PERKPOINT: "[CHARACTER.GetShortUIName] gana $VALUE|V0$ [thorn_lifestyle|E] [perk|E] Desbloquea" #NT!
+ TARGET_GAINED_A_THORN_LIFESTYLE_PERKPOINT: "[CHARACTER.GetShortUIName] ganado $VALUE|V0$ [thorn_lifestyle|E] [perk|E] Desbloquear" #NT!
+  
+ GAINS_JADE_ARCANOI_LIFESTYLE_XP: "Ganancias $VALUE|V0$ [jade_arcanoi_lifestyle|E] Experiencia" #NT!
+ GAINED_JADE_ARCANOI_LIFESTYLE_XP: "Obtuvo $VALUE|V0$ [jade_arcanoi_lifestyle|E] Experiencia" #NT!
+ I_GAIN_JADE_ARCANOI_LIFESTYLE_XP: "Obtienes $VALUE|V0$ [jade_arcanoi_lifestyle|E] Experiencia" #NT!
+ I_GAINED_JADE_ARCANOI_LIFESTYLE_XP: "Ganaste $VALUE|V0$ [jade_arcanoi_lifestyle|E] Experiencia" #NT!
+ TARGET_GAINS_JADE_ARCANOI_LIFESTYLE_XP: "[CHARACTER.GetShortUIName] gana $VALUE|V0$ [jade_arcanoi_lifestyle|E] experiencia" #NT!
+ TARGET_GAINED_JADE_ARCANOI_LIFESTYLE_XP: "[CHARACTER.GetShortUIName] ganado $VALUE|V0$ [jade_arcanoi_lifestyle|E] Experiencia" #NT!
+  
+ GAINS_A_JADE_ARCANOI_LIFESTYLE_PERKPOINT: "Gana $VALUE|V0$ [jade_arcanoi_lifestyle|E] [perk|E] Desbloquear" #NT!
+ GAINED_A_JADE_ARCANOI_LIFESTYLE_PERKPOINT: "Obtenido $VALUE|V0$ [jade_arcanoi_lifestyle|E] [perk|E] Desbloquear" #NT!
+ I_GAIN_A_JADE_ARCANOI_LIFESTYLE_PERKPOINT: "Obtienes $VALUE|V0$ [jade_arcanoi_lifestyle|E] [perk|E] Desbloquear" #NT!
+ I_GAINED_A_JADE_ARCANOI_LIFESTYLE_PERKPOINT: "Ganaste $VALUE|V0$ [jade_arcanoi_lifestyle|E] [perk|E] Desbloquear" #NT!
+ TARGET_GAINS_A_JADE_ARCANOI_LIFESTYLE_PERKPOINT: "[CHARACTER.GetShortUIName] gana $VALUE|V0$ [jade_arcanoi_lifestyle|E] [perk|E] Desbloquea" #NT!
+ TARGET_GAINED_A_JADE_ARCANOI_LIFESTYLE_PERKPOINT: "[CHARACTER.GetShortUIName] ganado $VALUE|V0$ [jade_arcanoi_lifestyle|E] [perk|E] Desbloquear" #NT!
+  
+ GAINS_DARK_ARCANOI_LIFESTYLE_XP: "Ganancias $VALUE|V0$ [dark_arcanoi_lifestyle|E] Experiencia" #NT!
+ GAINED_DARK_ARCANOI_LIFESTYLE_XP: "Obtuvo $VALUE|V0$ [dark_arcanoi_lifestyle|E] Experiencia" #NT!
+ I_GAIN_DARK_ARCANOI_LIFESTYLE_XP: "Obtienes $VALUE|V0$ [dark_arcanoi_lifestyle|E] de experiencia" #NT!
+ I_GAINED_DARK_ARCANOI_LIFESTYLE_XP: "Ganaste $VALUE|V0$ [dark_arcanoi_lifestyle|E] Experiencia" #NT!
+ TARGET_GAINS_DARK_ARCANOI_LIFESTYLE_XP: "[CHARACTER.GetShortUIName] gana $VALUE|V0$ [dark_arcanoi_lifestyle|E] experiencia" #NT!
+ TARGET_GAINED_DARK_ARCANOI_LIFESTYLE_XP: "[CHARACTER.GetShortUIName] ganado $VALUE|V0$ [dark_arcanoi_lifestyle|E] Experiencia" #NT!
+  
+ GAINS_A_DARK_ARCANOI_LIFESTYLE_PERKPOINT: "Ganancias $VALUE|V0$ [dark_arcanoi_lifestyle|E] [perk|E] Desbloquear" #NT!
+ GAINED_A_DARK_ARCANOI_LIFESTYLE_PERKPOINT: "Obtenido $VALUE|V0$ [dark_arcanoi_lifestyle|E] [perk|E] Desbloquear" #NT!
+ I_GAIN_A_DARK_ARCANOI_LIFESTYLE_PERKPOINT: "Obtienes $VALUE|V0$ [dark_arcanoi_lifestyle|E] [perk|E] Desbloquear" #NT!
+ I_GAINED_A_DARK_ARCANOI_LIFESTYLE_PERKPOINT: "Ganaste $VALUE|V0$ [dark_arcanoi_lifestyle|E] [perk|E] Desbloquear" #NT!
+ TARGET_GAINS_A_DARK_ARCANOI_LIFESTYLE_PERKPOINT: "[CHARACTER.GetShortUIName] gana $VALUE|V0$ [dark_arcanoi_lifestyle|E] [perk|E] Desbloquea" #NT!
+ TARGET_GAINED_A_DARK_ARCANOI_LIFESTYLE_PERKPOINT: "[CHARACTER.GetShortUIName] ganado $VALUE|V0$ [dark_arcanoi_lifestyle|E] [perk|E] Desbloquear" #NT!
+  
+ GAINS_MISC_ARCANOI_LIFESTYLE_XP: "Ganancias $VALUE|V0$ [misc_arcanoi_lifestyle|E] Experiencia" #NT!
+ GAINED_MISC_ARCANOI_LIFESTYLE_XP: "Obtuvo $VALUE|V0$ [misc_arcanoi_lifestyle|E] Experiencia" #NT!
+ I_GAIN_MISC_ARCANOI_LIFESTYLE_XP: "Obtienes $VALUE|V0$ [misc_arcanoi_lifestyle|E] de experiencia" #NT!
+ I_GAINED_MISC_ARCANOI_LIFESTYLE_XP: "Obtuviste $VALUE|V0$ [misc_arcanoi_lifestyle|E] Experiencia" #NT!
+ TARGET_GAINS_MISC_ARCANOI_LIFESTYLE_XP: "[CHARACTER.GetShortUIName] gana $VALUE|V0$ [misc_arcanoi_lifestyle|E] experiencia" #NT!
+ TARGET_GAINED_MISC_ARCANOI_LIFESTYLE_XP: "[CHARACTER.GetShortUIName] ganado $VALUE|V0$ [misc_arcanoi_lifestyle|E] Experiencia" #NT!
+  
+ GAINS_A_MISC_ARCANOI_LIFESTYLE_PERKPOINT: "Ganancias $VALUE|V0$ [misc_arcanoi_lifestyle|E] [perk|E] Desbloquear" #NT!
+ GAINED_A_MISC_ARCANOI_LIFESTYLE_PERKPOINT: "Obtenido $VALUE|V0$ [misc_arcanoi_lifestyle|E] [perk|E] Desbloquear" #NT!
+ I_GAIN_A_MISC_ARCANOI_LIFESTYLE_PERKPOINT: "Obtienes $VALUE|V0$ [misc_arcanoi_lifestyle|E] [perk|E] Desbloquear" #NT!
+ I_GAINED_A_MISC_ARCANOI_LIFESTYLE_PERKPOINT: "Ganaste $VALUE|V0$ [misc_arcanoi_lifestyle|E] [perk|E] Desbloquear" #NT!
+ TARGET_GAINS_A_MISC_ARCANOI_LIFESTYLE_PERKPOINT: "[CHARACTER.GetShortUIName] gana $VALUE|V0$ [misc_arcanoi_lifestyle|E] [perk|E] Desbloquea" #NT!
+ TARGET_GAINED_A_MISC_ARCANOI_LIFESTYLE_PERKPOINT: "[CHARACTER.GetShortUIName] ganado $VALUE|V0$ [misc_arcanoi_lifestyle|E] [perk|E] Desbloquear" #NT!
+  
+ ARCANOI_LIFESTYLE_PERK_POINTS_TRIGGER: "Puntos de beneficio del estilo de vida Arcanoi: $NUM|V0$" #NT!
+ THORN_LIFESTYLE_PERK_POINTS_TRIGGER: "Puntos de beneficio del estilo de vida Thorn: $NUM|V0$" #NT!
+ JADE_ARCANOI_LIFESTYLE_PERK_POINTS_TRIGGER: "Puntos de beneficio del estilo de vida de Jade Arcanoi: $NUM|V0$" #NT!
+ DARK_ARCANOI_LIFESTYLE_PERK_POINTS_TRIGGER: "Puntos de ventaja del estilo de vida de Dark Arcanoi: $NUM|V0$" #NT!
+ MISC_ARCANOI_lifestyle_PERK_POINTS_TRIGGER: "Puntos de beneficio del estilo de vida Arcanoi misceláneo: $NUM|V0$" #NT!
+  
+ NOT_has_arcanos_argos_trait: "@warning_icon!#X Tú tienes #bold no#! tienes [trait|E]: [GetTrait('arcanos_argos').GetName( GetPlayer )]#!" #NT!
+ NOT_has_arcanos_castigate_trait: "@warning_icon!#X Tú tienes #bold no#! tienes [trait|E]: [GetTrait('arcanos_castigate').GetName( GetPlayer )]#!" #NT!
+ NOT_has_arcanos_embody_trait: "@warning_icon!#X Tú tienes #bold no#! tienes [trait|E]: [GetTrait('arcanos_embody').GetName( GetPlayer )]#!" #NT!
+ NOT_has_arcanos_fatalism_trait: "@warning_icon!#X Tú tienes #bold no#! tienes [trait|E]: [GetTrait('arcanos_fatalism').GetName( GetPlayer )]#!" #NT!
+ NOT_has_arcanos_inhabit_trait: "@warning_icon!#X Tú tienes #bold no#! tienes [trait|E]: [GetTrait('arcanos_inhabit').GetName( GetPlayer )]#!" #NT!
+ NOT_has_arcanos_keening_trait: "@warning_icon!#X Tú tienes #bold no#! tienes [trait|E]: [GetTrait('arcanos_keening').GetName( GetPlayer )]#!" #NT!
+ NOT_has_arcanos_lifeweb_trait: "@warning_icon!#X Tú tienes #bold no#! tienes [trait|E]: [GetTrait('arcanos_lifeweb').GetName( GetPlayer )]#!" #NT!
+ NOT_has_arcanos_moliate_trait: "@warning_icon!#X Tú tienes #bold no#! tienes [trait|E]: [GetTrait('arcanos_moliate').GetName( GetPlayer )]#!" #NT!
+ NOT_has_arcanos_outrage_trait: "@warning_icon!#X Tú tienes #bold no#! tienes [trait|E]: [GetTrait('arcanos_outrage').GetName( GetPlayer )]#!" #NT!
+ NOT_has_arcanos_pandemonium_trait: "@warning_icon!#X Tú tienes #bold no#! tienes [trait|E]: [GetTrait('arcanos_pandemonium').GetName( GetPlayer )]#!" #NT!
+ NOT_has_arcanos_phantasm_trait: "@warning_icon!#X Tú tienes #bold no#! tienes [trait|E]: [GetTrait('arcanos_phantasm').GetName( GetPlayer )]#!" #NT!
+ NOT_has_arcanos_puppetry_trait: "@warning_icon!#X Tú tienes #bold no#! tienes [trait|E]: [GetTrait('arcanos_puppetry').GetName( GetPlayer )]#!" #NT!
+ NOT_has_arcanos_usury_trait: "@warning_icon!#X Tú tienes #bold no#! tienes [trait|E]: [GetTrait('arcanos_usury').GetName( GetPlayer )]#!" #NT!
+ NOT_has_arcanos_flux_trait: "@warning_icon!#X Tú tienes #bold no#! tienes [trait|E]: [GetTrait('arcanos_flux').GetName( GetPlayer )]#!" #NT!
+ NOT_has_arcanos_intimation_trait: "@warning_icon!#X Tú tienes #bold no#! tienes [trait|E]: [GetTrait('arcanos_intimation').GetName( GetPlayer )]#!" #NT!
+ NOT_has_arcanos_mnemosynis_trait: "@warning_icon!#X Tú tienes #bold no#! tienes [trait|E]: [GetTrait('arcanos_mnemosynis').GetName( GetPlayer )]#!" #NT!
+  
+ full_argos_tooltip: "Obtendrás el árbol Argos [Arcanoi|E] completo." #NT!
+ full_castigate_tooltip: "Obtienes el árbol Castigar [Arcanoi|E] completo." #NT!
+ full_embody_tooltip: "Obtendrás el árbol Embody [Arcanoi|E] completo." #NT!
+ full_fatalism_tooltip: "Obtienes el árbol Fatalismo [Arcanoi|E] completo." #NT!
+ full_inhabit_tooltip: "Obtienes el árbol Habitar [Arcanoi|E] completo." #NT!
+ full_keening_tooltip: "Obtendrás el árbol Keening [Arcanoi|E] completo." #NT!
+ full_lifeweb_tooltip: "Obtendrás el árbol Lifeweb [Arcanoi|E] completo." #NT!
+ full_moliate_tooltip: "Obtendrás el árbol Moliate [Arcanoi|E] completo." #NT!
+ full_outrage_tooltip: "Obtendrás el árbol Indignación [Arcanoi|E] completo." #NT!
+ full_pandemonium_tooltip: "Obtendrás el árbol Pandemonium [Arcanoi|E] completo." #NT!
+ full_phantasm_tooltip: "Obtendrás el árbol Fantasma [Arcanoi|E] completo." #NT!
+ full_puppetry_tooltip: "Obtendrás el árbol de Títeres [Arcanoi|E] completo." #NT!
+ full_usury_tooltip: "Obtendrás el árbol Usura [Arcanoi|E] completo." #NT!
+ full_flux_tooltip: "Obtendrás el árbol Flux [Arcanoi|E] completo." #NT!
+ full_intimation_tooltip: "Obtendrás el árbol Intimación [Arcanoi|E] completo." #NT!
+ full_mnemosynis_tooltip: "Obtendrás el árbol Mnemosynis [Arcanoi|E] completo." #NT!
+ full_chains_of_the_emperor_tooltip: "Obtienes el árbol completo Cadenas del Emperador [Arcanoi|E]." #NT!
+ full_way_of_the_scholar_tooltip: "Obtendrás el árbol Camino del Erudito completo [Arcanoi|E]." #NT!
+ full_way_of_the_farmer_tooltip: "Obtendrás el árbol Camino del Granjero [Arcanoi|E] completo." #NT!
+ full_way_of_the_artisan_tooltip: "Obtendrás el árbol Camino del Artesano [Arcanoi|E] completo." #NT!
+ full_way_of_the_merchant_tooltip: "Obtendrás el árbol Camino del Comerciante [Arcanoi|E] completo." #NT!
+ full_way_of_the_soul_tooltip: "Obtendrás el árbol Camino del Alma [Arcanoi|E] completo." #NT!
+ full_fascinate_tooltip: "Obtendrás el árbol Fascinate [Arcanoi|E] completo." #NT!
+ full_serendipity_tooltip: "Obtendrás el árbol Serendipity [Arcanoi|E] completo." #NT!
+  
+  # Argos 
+ argos_visible: "argos" #NT!
+  
+ enshroud_perk_name: "Amortajar" #NT!
+ weather_eye_perk_name: "Ojo del tiempo" #NT!
+ phantom_wings_perk_name: "Alas fantasma" #NT!
+ return_perk_name: "Devolver" #NT!
+ flicker_perk_name: "Parpadeo" #NT!
+ stormreader_perk_name: "Lector de tormentas" #NT!
+ tempest_riders_canceleer_perk_name: "Cancelador de jinete de tempestad" #NT!
+ arcanoi_oubliette_perk_name: "Mazmorra secreta" #NT!
+  
+ ENSHROUD_PERK_EFFECT: "Ya no es necesario hacer un sacrificio para acceder al [tempest|E].\n#F Un Heraldo puede manipular la membrana entre el [shadowlands|E] y el [tempest|E], lo que le permite ingresar al [tempest|E] sin abrir un Nihil o usar el [tempest|E] para ocultarse.#!" #NT!
+ WEATHER_EYE_PERK_EFFECT: "Posibilidad de quedar atrapado en la Umbra: #P -5%#!\nMonthly Progreso de exploración de la Umbra: [grace_i]#P +5#!\n#F Un Heraldo siempre está al tanto de las condiciones actuales en las [tempest|E] ubicaciones cercanas y puede tomar atajos entre dos [shadowlands|E] ubicaciones.#!" #NT!
+ PHANTOM_WINGS_PERK_EFFECT: "Posibilidad de quedar atrapado en la Umbra: #P -5%#!\nMonthly Progreso de exploración de la Umbra: [grace_i]#P +5#!\n#F Un Heraldo puede desarrollar alas para planear a través de [tempest|E] y [shadowlands|E].#!" #NT!
+ RETURN_PERK_EFFECT: "Puede acceder al [dark_kingdom|E] correspondiente en el [tempest|E].\n#F Un Heraldo puede viajar desde cualquier lugar en el [tempest|E] hasta su hogar por la ruta más rápida posible.#!" #NT!
+ FLICKER_PERK_EFFECT: "Posibilidad de quedar atrapado en la Umbra: #P -10%#!\nMonthly Progreso de la exploración de la Umbra: [grace_i]#P +10#!\n#F Un Heraldo puede doblar el [tempest|E] para teletransportarse a otra ubicación.#!" #NT!
+ STORMREADER_PERK_EFFECT: "Ya no te perderás en [tempest|E].\n#F Un Heraldo obtiene un sentido intuitivo de [tempest|E], lo que le permite reducir los tiempos de viaje cuando viaja hacia o desde una ubicación en [tempest|E], y navegar para evita una vorágine o mitiga sus efectos.#!" #NT!
+ TEMPEST_RIDERS_CANCELEER_PERK_EFFECT: "#F Un Heraldo puede desarrollar alas negras metálicas, lo que le permite planear, atacar y proteger a otros.#!" #NT!
+ ARCANOI_OUBLIETTE_PERK_EFFECT: "Desbloquea la opción $EXECUTION_BANISH_TO_TEMPEST$ [execution|E] para el prisionero [GetTrait('wraith').GetName( GetNullCharacter )].\n#F Un Heraldo puede enviar otro espectro directamente al [tempest|E].#!" #NT!
+  
+  # Castigate 
+ castigate_visible: "Castigar" #NT!
+  
+ coax_perk_name: "Engatusar" #NT!
+ bulwark_perk_name: "Baluarte" #NT!
+ transfer_angst_perk_name: "Angustia de transferencia" #NT!
+ trimming_the_black_rose_perk_name: "Recortando la rosa negra" #NT!
+ cooling_the_blood_perk_name: "Enfriando la sangre" #NT!
+ defiance_perk_name: "Desafío" #NT!
+ shadow_wrack_perk_name: "Resto de sombras" #NT!
+  
+ COAX_PERK_EFFECT: "Ya no obtienes [stress|E] con Resistir Catarsis.\n#F Un Perdonador puede invocar su Sombra con menor riesgo.#!" #NT!
+ BULWARK_PERK_EFFECT: "Menos posibilidades de ganar [stress|E] en la acción de Umbral de Aventura en Maelstroms.\n#F Un Indultador puede protegerse temporalmente a sí mismo o a otros de un Maelstrom.#!" #NT!
+ TRANSFER_ANGST_PERK_EFFECT: "Como [character_interaction|E], te permite transferir rasgos de afrontamiento a [stress|E], o viceversa.\n#F Un Indultador puede guardar Angustia temporalmente en sí mismo hasta que pueda ser transferida a un lugar de almacenamiento apropiado.#!" #NT!
+ TRIMMING_THE_BLACK_ROSE_PERK_EFFECT: "Como [character_interaction|E], te permite eliminar el modificador negativo que proviene de [thorn_lifestyle|E].\n#F Un Perdonador puede evitar que una Sombra use sus Espinas.#!" #NT!
+ COOLING_THE_BLOOD_PERK_EFFECT: "Como [character_interaction|E], te permite eliminar una pasión oscura [decision|E].\n#F Un Perdonador puede debilitar las Pasiones Oscuras de una Sombra.#!" #NT!
+ DEFIANCE_PERK_EFFECT: "Desbloquea una opción en el evento de estrés [GetTrait('spectre').GetName( GetNullCharacter )], lo que te permite evitarlo.\n#F Un Perdonador puede derrotar a una Sombra poderosa que intenta apoderarse de un espectro.#!" #NT!
+ SHADOW_WRACK_PERK_EFFECT: "Como [character_interaction|E], te permite eliminar [GetTrait('spectre').GetName( GetNullCharacter )] rasgo del prisionero.\n#F Un Indultador puede usar esto para despojar a un [GetTrait('spectre').GetName( GetNullCharacter )] de Angustia y llevar su Psique al primer plano de su personalidad.#!" #NT!
+  
+  # Embody 
+ embody_visible: "Encarnar" #NT!
+  
+ whispers_perk_name: "Susurro" #NT!
+ cache_perk_name: "Cache" #NT!
+ phantom_perk_name: "Fantasma" #NT!
+ statue_perk_name: "Estatua" #NT!
+ life_in_death_perk_name: "Vida en la muerte" #NT!
+ shroudguide_perk_name: "Guía de la Sábana Santa" #NT!
+ materialize_perk_name: "Materializar" #NT!
+ harrow_the_mortal_flesh_perk_name: "Desgarrar la carne mortal" #NT!
+  
+ WHISPERS_PERK_EFFECT: "Permite interactuar con el [skinlands|E] mientras permaneces en [shadowlands|E].\n#F Un Proctor puede susurrar a través del Sudario.#!" #NT!
+ CACHE_PERK_EFFECT: "Permitir regalar [artifact|E] y oro al Rápido del [skinlands|E].\n#F Un supervisor puede mover temporalmente una reliquia al [skinlands|E].#!" #NT!
+ PHANTOM_PERK_EFFECT: "#F Un Proctor puede materializarse en una forma borrosa e intangible.#!" #NT!
+ STATUE_PERK_EFFECT: "Permite que el Quick interactúe con él mientras permanece en el [shadowlands|E].\n#F Un Proctor puede materializarse en una forma sólida, pero no puede moverse mientras está en ella.#!" #NT!
+ LIFE_IN_DEATH_PERK_EFFECT: "#F Un Proctor puede materializarse como una versión aceptable de una persona viva.#!" #NT!
+ SHROUDGUIDE_PERK_EFFECT: "Puede reclutar a [GetMaA('wraiths').GetName] como [men_at_arms|E].\n#F Un Proctor puede compartir los efectos de las artes de Encarnar que permiten la manifestación en [skinlands|E] con otros espectros.#!" #NT!
+ MATERIALIZE_PERK_EFFECT: "Desbloquea [GetActivityType('activity_feast').GetName] [activity|E].\n#F Un Proctor puede regresar temporalmente a un estado similar a la vida.#!" #NT!
+ HARROW_THE_MORTAL_FLESH_PERK_EFFECT: "Permite regalar títulos a otros sobrenaturales.\n#F Un Proctor puede traer a un mortal u otro sobrenatural al [shadowlands|E].#!" #NT!
+  
+  # Fatalism 
+ fatalism_visible: "Fatalismo" #NT!
+  
+ kismet_perk_name: "Destino" #NT!
+ distant_visions_perk_name: "Visiones lejanas" #NT!
+ foreshadow_perk_name: "Presagiar" #NT!
+ reading_the_bones_perk_name: "Leyendo los huesos" #NT!
+ fates_hand_apparent_perk_name: "La mano del destino es evidente" #NT!
+ sidestep_perk_name: "Esquivar" #NT!
+ breathing_the_mists_perk_name: "Respirando las nieblas" #NT!
+ ensnare_perk_name: "Entrampar" #NT!
+  
+ KISMET_PERK_EFFECT: "#F Un Oráculo puede leer las marcas de la muerte de un espectro o mortal, y también puede ver la importancia de esa persona en los planes del Destino.#!" #NT!
+ DISTANT_VISIONS_PERK_EFFECT: "#F Un Oráculo puede ver claramente qué eventos relevantes están sucediendo en otros lugares.#!" #NT!
+ FORESHADOW_PERK_EFFECT: "Recibirás una notificación si alguien intenta asesinar a tu amigo o familiar. Recibirás una notificación si alguien intenta seducir a tu amante o consorte. Tu prisionero tiene menos posibilidades de escapar de tu prisión. #F Un oráculo puede detectar un peligro inminente. #!" #NT!
+ READING_THE_BONES_PERK_EFFECT: "Desbloquear $deceitful_progress_hostile_schemes_decision$ [decision|E].\n#F Un Oráculo puede ver el futuro de una persona u objeto, excepto el suyo propio.#!" #NT!
+ FATES_HAND_APPARENT_PERK_EFFECT: "Desbloquear [marked_for_return_interaction|E].\nNúmero máximo de espectros atados: #P +3#!.\n#F Un Oráculo puede detectar la muerte de un mortal que el Destino ha elegido.#!" #NT!
+ SIDESTEP_PERK_EFFECT: "#F El Oráculo puede predecir ataques futuros, lo que le permite preparar una defensa o colocarse en el camino de un ataque dirigido a otra persona.#!" #NT!
+ BREATHING_THE_MISTS_PERK_EFFECT: "Desbloquea $impatient_rushing_all_schemes_decision$ [decision|E].\n#F La previsión de un Oráculo les permite prepararse para eventos futuros.#!" #NT!
+ ENSNARE_PERK_EFFECT: "Desbloquear [bind_wraith_interaction|E].\nDesbloquear [command_wraith_interaction|E].\nNúmero máximo de espectros atados: #P +3#!.\n#F Un Oráculo puede enredar los hilos de un espectro hasta el punto en que ya no controle su propio destino y, en cambio, sirva a los fines de otro.#!" #NT!
+  
+  # Inhabit 
+ inhabit_visible: "[CharacterLifestyleWindow.GetCharacter.Custom( 'inhabit_custom_name' )]" #NT!
+ inhabit_darkage_name: "Kinesis" #NT!
+ inhabit_modern_name: "Habitar" #NT!
+  
+ lightnings_bite_perk_name: "La mordedura del rayo" #NT!
+ forge_affinity_perk_name: "Afinidad de forja" #NT!
+ reliquary_perk_name: "Relicario" #NT!
+ sympathy_perk_name: "Compasión" #NT!
+ creepin_rot_perk_name: "Podredumbre rastrera" #NT!
+ impress_perk_name: "Impresionar" #NT!
+  
+ LIGHTNINGS_BITE_PERK_EFFECT: "#F Un Artificiero puede cargar un pequeño objeto de metal con electricidad que se descargará en la próxima persona que lo toque.#!" #NT!
+ FORGE_AFFINITY_PERK_EFFECT: "Forja de almas [character_interaction|E] tendrá un mejor resultado.\n#F La forja de almas de un Artífice se mejora permanentemente.#!" #NT!
+ RELIQUARY_PERK_EFFECT: "Desbloquear Fortalecer artefacto [character_interaction|E], permite forjar piezas de artefacto en un artefacto propio.\n#F Un artífice puede fortalecer una reliquia u objeto inanimado con Pathos.#!" #NT!
+ SYMPATHY_PERK_EFFECT: "#F Un Artificiero puede Gremlinizar varias máquinas simples similares a la vez.#!" #NT!
+ CREEPIN_ROT_PERK_EFFECT: "#F Un Artífice puede hacer que un dispositivo comience a desmoronarse lentamente.#!" #NT!
+ IMPRESS_PERK_EFFECT: "Permite forjar el alma de un espectro y convertirlo en un artefacto existente.\n#F Un artífice puede colocar los recuerdos y la personalidad de un espectro en un objeto no vivo.#!" #NT!
+  
+  # Keening 
+ keening_visible: "Lamento" #NT!
+  
+ hearing_voices_perk_name: "Escuchar voces" #NT!
+ mood_music_perk_name: "Música ambiental" #NT!
+ distraction_perk_name: "Distracción" #NT!
+ satire_perk_name: "Sátira" #NT!
+ siren_song_perk_name: "Canto de sirena" #NT!
+ crescendo_perk_name: "Crescendo" #NT!
+ spectre_song_perk_name: "Canción del espectro" #NT!
+ requiem_perk_name: "Réquiem" #NT!
+  
+ HEARING_VOICES_PERK_EFFECT: "#F Un cantante puede hacer que su voz parezca provenir de un objeto o persona cercana.#!" #NT!
+ MOOD_MUSIC_PERK_EFFECT: "Desbloquea [GetScheme('PODsoul_bridge').GetTypeName] [scheme|E].\n#F Un cantante puede inspirar emociones tanto positivas como negativas en sus oyentes.#!" #NT!
+ DISTRACTION_PERK_EFFECT: "Como [character_interaction|E], te permite ganar un gancho sobre un [GetTrait('barghest').GetName( GetNullCharacter )].\n#F Un Chanteur puede tararear o silbar una melodía que interfiere con #TOOLTIP:GAME_TRAIT,barghest,[GetNullCharacter] #L Barghests#!#!.#!" #NT!
+ SATIRE_PERK_EFFECT: "Como [character_interaction|E], te permite preparar un [secret|E] falso en el objetivo.\n#F Un Cantor puede arruinar la posición social de un espectro con una historia o canción.#!" #NT!
+ SIREN_SONG_PERK_EFFECT: "Como [character_interaction|E], te permite obtener un gancho sobre el objetivo.\n#F Un Chanteur puede cautivar a una víctima, lo que le facilita someterse a su influencia.#!" #NT!
+ CRESCENDO_PERK_EFFECT: "Desbloquea [single_combat_duel|E] movimientos.\n#F Un Chanteur puede dañar físicamente a los espectros con un grito. Si está encarnado, puede aterrorizar a los rápidos hasta el punto de hacerles daño.#!" #NT!
+ SPECTRE_SONG_PERK_EFFECT: "Desbloquea [single_combat_duel|E] movimientos.\n#F Un Cantor puede imitar los gemidos y gritos de un Espectro.#!" #NT!
+ REQUIEM_PERK_EFFECT: "Como [character_interaction|E], te permite mejorar una relación existente.\n#F Un Chanteur puede llenar a alguien de una emoción completamente abrumadora.#!" #NT!
+  
+  # Lifeweb 
+ lifeweb_visible: "Red de vida" #NT!
+  
+ sense_strand_perk_name: "Hilo de sentido" #NT!
+ lifeline_perk_name: "Línea de vida" #NT!
+ strand_channel_perk_name: "Canal de hebras" #NT!
+ splice_strand_perk_name: "Hilo de empalme" #NT!
+ early_warning_perk_name: "Advertencia temprana" #NT!
+ sever_strand_perk_name: "Playa Sever" #NT!
+ walk_the_web_perk_name: "Pasea por la red" #NT!
+ souls_interwoven_perk_name: "Almas entrelazadas" #NT!
+  
+ SENSE_STRAND_PERK_EFFECT: "Desbloquea el modo Mapa [Fetter|E].\n#F Un Monitor siempre está al tanto de la ubicación de su [Fetters|E] y puede extender sus sentidos a las inmediaciones de un [Fetters|E].#!" #NT!
+ LIFELINE_PERK_EFFECT: "Permitir el uso de $POD_set_fetter_character_interaction$ [character_interaction|E] en [GetTrait('wraith').GetName( GetNullCharacter )].\n#F Un Monitor puede crear un "pseudo-[Fetter|E]" entre dos espectros que les permite trabajar juntos.#!" #NT!
+ STRAND_CHANNEL_PERK_EFFECT: "Permite interactuar con tu [Fetters|E] desde cualquier lugar de la umbra.\n#F Un Monitor puede hablar a través de un [Fetter|E], o usar sus Arcanoi a través de un [Fetter|E].#!" #NT!
+ SPLICE_STRAND_PERK_EFFECT: "Desbloquear $POD_manipulate_fetter_interaction$ [character_interaction|E], permitir la creación de un [Fetter|E] temporal.\n#F Un monitor puede crear un [Fetter|E] temporal.#!" #NT!
+ EARLY_WARNING_PERK_EFFECT: "Recibirás una notificación cuando tu [Fetters|E] vaya a morir por causas naturales.\n#F Un Monitor puede colocar una etiqueta en un mortal que le alertará si el Quick está a punto de morir.#!" #NT!
+ SEVER_STRAND_PERK_EFFECT: "Bonificación a $POD_manipulate_fetter_interaction$ [character_interaction|E], permite destruir [Fetters|E].\n#F Un Monitor puede quitarle un [Fetter|E] a otro Espectro.#!" #NT!
+ WALK_THE_WEB_PERK_EFFECT: "Como [character_interaction|E], te permite teletransportarte a la ubicación de un [Fetter|E].\n#F Un Monitor puede viajar rápidamente a un [Fetter|E].#!" #NT!
+ SOULS_INTERWOVEN_PERK_EFFECT: "Permite el uso de $POD_set_fetter_character_interaction$ [character_interaction|E] en todos.\n#F Un Monitor puede tomar a un mortal voluntario (o a un sobrenatural viviente/no muerto) como [Fetter|E], y a cambio puede comunicarse con el Monitor a voluntad, sin importar dónde se encuentre cualquiera de ellos.#!" #NT!
+  
+  # Moliate 
+ moliate_visible: "Moliar" #NT!
+  
+ imitate_perk_name: "Imitar" #NT!
+ lizard_tail_perk_name: "Cola de lagarto" #NT!
+ sculpt_perk_name: "Esculpir" #NT!
+ calcify_perk_name: "Calcificarse" #NT!
+ armory_perk_name: "Arsenal" #NT!
+ volley_perk_name: "Voleo" #NT!
+ rend_perk_name: "Desgarrar" #NT!
+ bodyshape_perk_name: "Forma del cuerpo" #NT!
+  
+ IMITATE_PERK_EFFECT: "Desbloquea Shapeshift [character_interaction|E] para copiar la apariencia.\n#F Un Masquer puede imitar perfectamente el rostro de otro.#!" #NT!
+ LIZARD_TAIL_PERK_EFFECT: "Bonificación a la curación de Pathos [character_interaction|E] para curar mutilaciones.\n#F Un Enmascarado puede separar y volver a unir sus extremidades sin efectos nocivos.#!" #NT!
+ SCULPT_PERK_EFFECT: "Bonificación a Cambio de Forma [character_interaction|E] para cambiar la apariencia.\n#F Un Enmascarado puede alterar su forma o la de otros espectros, pero el sujeto mantiene la misma masa y estructura básica.#!" #NT!
+ CALCIFY_PERK_EFFECT: "#F Un Enmascarador puede usar esto para endurecer el plasma y convertirlo en una forma más duradera.#!" #NT!
+ ARMORY_PERK_EFFECT: "Desbloquea las opciones de cambio de forma [GetModifier('POD_shapeshift_form_limb_weapon_modifier').GetNameWithTooltip] y [GetModifier('POD_shapeshift_form_skin_armor_modifier').GetNameWithTooltip].\n#F Un Enmascarado puede transformar temporalmente sus extremidades en armas cuerpo a cuerpo o su piel en una armadura.#!" #NT!
+ VOLLEY_PERK_EFFECT: "#F Un Enmascarado puede moldear y lanzar proyectiles para defenderse.#!" #NT!
+ REND_PERK_EFFECT: "Hiere al enemigo [knights|E] en la guerra como comandante o enemigo en [single_combat_duel|E].\n#F Un Masquer puede destrozar el [Corpus|E] de otro espectro.#!" #NT!
+ BODYSHAPE_PERK_EFFECT: "Desbloquea varias opciones de Cambio de forma.\n#F Un Enmascarado puede alterar [Corpus|E] a lo que elija.#!" #NT!
+  
+  # Outrage 
+ outrage_visible: "Indignacion" #NT!
+  
+ wraithgrasp_perk_name: "Agarre espectral" #NT!
+ breath_of_the_grave_perk_name: "Aliento de la tumba" #NT!
+ stonehand_punch_perk_name: "Golpe de mano de piedra" #NT!
+ wings_of_rage_perk_name: "Alas de ira" #NT!
+ deaths_touch_perk_name: "El toque de la muerte" #NT!
+ shroudshield_perk_name: "Escudo protector" #NT!
+ obliviate_perk_name: "Olvidar" #NT!
+ anger_enough_for_two_worlds_perk_name: "La ira es suficiente para dos mundos" #NT!
+  
+ WRAITHGRASP_PERK_EFFECT: "Permite recibir oro de los Rápidos del [skinlands|E].\n#F Un Espectro puede levantar objetos en el [skinlands|E].#!" #NT!
+ BREATH_OF_THE_GRAVE_PERK_EFFECT: "#F El Espectro crea una pequeña brisa helada a través del Sudario.#!" #NT!
+ STONEHAND_PUNCH_PERK_EFFECT: "#F Un Espectro puede aplastar a un objetivo con fuerza emocional pura.#!" #NT!
+ WINGS_OF_RAGE_PERK_EFFECT: "#F Un Spook puede aumentar sus habilidades atléticas y su velocidad.#!" #NT!
+ DEATHS_TOUCH_PERK_EFFECT: "Puedes lastimar al Rápido con movimientos físicos en [single_combat_duel|E].\n#F Un Spook puede manipular libremente objetos en [skinlands|E] y proyectar telequinéticamente sus manos en [underworld|E].#!" #NT!
+ SHROUDSHIELD_PERK_EFFECT: "Permite viajar a [skinlands|E].\n#F Un Espectro puede lanzarse a través del Sudario a la misma velocidad que un proyectil.#!" #NT!
+ OBLIVIATE_PERK_EFFECT: "Desbloquea la opción $EXECUTION_UNMAKING$ [execution|E].\nPermite recibir [artifact|E] del Rápido del [skinlands|E].\n#F Un Espectro puede dañar a un mortal, espectro o cosa tan gravemente que cae directamente a [oblivion|E]. Cuando se usa en un objeto material habitado por un espectro, se convierte en una reliquia.#!" #NT!
+ ANGER_ENOUGH_FOR_TWO_WORLDS_PERK_EFFECT: "Desbloquea la opción Derribar el Sudario en la opción Manipular el Sudario del panel de Umbra local.\n#F Un Espectro puede derribar temporalmente el Sudario, con consecuencias potencialmente devastadoras.#!" #NT!
+  
+  # Pandemonium 
+ pandemonium_visible: "Pandemonio" #NT!
+  
+ weirdness_perk_name: "Rareza" #NT!
+ bite_me_perk_name: "Muérdeme" #NT!
+ dark_ether_perk_name: "Éter oscuro" #NT!
+ eschers_stair_perk_name: "La escalera de Escher" #NT!
+ foul_humour_perk_name: "Humor asqueroso" #NT!
+ stigmata_perk_name: "Estigmas" #NT!
+ form_of_chaos_perk_name: "Forma del Caos" #NT!
+ tempus_fugit_perk_name: "Tempus Fugit" #NT!
+ tesseract_bomb_perk_name: "Bomba teseracto" #NT!
+  
+ WEIRDNESS_PERK_EFFECT: "Desbloquea Haunt [character_interaction|E], que le otorga al objetivo un modificador negativo.\n#F Un Haunter puede causar un efecto pequeño y limitado en un objetivo solitario.#!" #NT!
+ BITE_ME_PERK_EFFECT: "Permitir crear y regalar [GetModifier('foul_food_moifier').GetNameWithTooltip].\n#F Un Haunter puede crear comida de aspecto realista (pero de sabor desagradable) con su [Corpus|E].#!" #NT!
+ DARK_ETHER_PERK_EFFECT: "Otorga un modificador de [GetModifier('dark_ether_modifier').GetNameWithTooltip] al enemigo [knights|E] en la guerra como comandante o al enemigo en [single_combat_duel|E].\n#F Un Haunter puede alterar la luz o las condiciones climáticas en un área.#!" #NT!
+ ESCHERS_STAIR_PERK_EFFECT: "Como [character_interaction|E], te permite teletransportar a tu ejército a la ubicación de tu objetivo, con el riesgo de perderte en el [labyrinth|E].\n#F Un Haunter puede conectar dos puertas u otros portales a través del [labyrinth|E].#!" #NT!
+ FOUL_HUMOUR_PERK_EFFECT: "Dale a un aliado [knights|E] en la guerra como comandante o a ti mismo [single_combat_duel|E] [GetModifier('foul_humour_modifier').GetNameWithTooltip] en la guerra como comandante.\n#F Un Haunter puede producir un efecto material fuerte a través del Sudario.#!" #NT!
+ STIGMATA_PERK_EFFECT: "#F Un Haunter puede crear la apariencia de heridas sangrantes en su objetivo.#!" #NT!
+ FORM_OF_CHAOS_PERK_EFFECT: "Permite fabricar un personaje [GetTrait('automaton').GetName( GetPlayer )].\n#F Un Haunter puede crear una forma humanoide tosca a partir de lo que parecen ser objetos repugnantes (como sangre, gusanos, insectos, etc.)#!" #NT!
+ TEMPUS_FUGIT_PERK_EFFECT: "Otorga a los comandantes aliados un modificador de [GetModifier('tempus_fugit_modifier').GetNameWithTooltip] cuando estás en guerra como comandante.\n#F Un Haunter puede manipular la distancia y el tiempo de forma limitada.#!" #NT!
+ TESSERACT_BOMB_PERK_EFFECT: "Otorga a los comandantes enemigos un modificador de [GetModifier('tesseract_bomb_modifier').GetNameWithTooltip] cuando estás en guerra como comandante.\n#F Un Haunter puede convertir una estructura en un laberinto de geometría de pesadilla, haciendo imposible entrar o salir.#!" #NT!
+  
+ sleepsense_perk_name: "Sentido del sueño" #NT!
+ lingua_perk_name: "Lengua" #NT!
+ dream_sequence_perk_name: "Secuencia de sueños" #NT!
+ inspire_perk_name: "Inspirar" #NT!
+ morphean_embrace_perk_name: "Abrazo morfeo" #NT!
+ incubus_perk_name: "Íncubo" #NT!
+ agon_perk_name: "Agón" #NT!
+ oneirataxia_perk_name: "onirataxia" #NT!
+  
+ SLEEPSENSE_PERK_EFFECT: "#F Un Sandman puede observar los sueños de un mortal o de un espectro dormido, y puede decir qué etapa del sueño ha alcanzado un mortal.#!" #NT!
+ LINGUA_PERK_EFFECT: "#F Un Sandman puede comunicarse a través de un sueño, independientemente del idioma.#!" #NT!
+ DREAM_SEQUENCE_PERK_EFFECT: "#F Un hombre de arena puede nublar la mente de un mortal que haya visto a través de la niebla, convenciéndolo de que fue un sueño. Los hombres de arena poderosos pueden usar este poder para convencer a un ser sobrenatural de que no vieron algo que vieron.#!" #NT!
+ INSPIRE_PERK_EFFECT: "Desbloquea Inspirar [character_interaction|E], que le otorga al objetivo un [SelectLocalization( HasDlcFeature( 'royal_court' ), 'inspiration_ROCO_DLC', 'inspiration_NO_ROCO_DLC' )].\n#F Un Hombre de Arena puede inspirar a un mortal a crear una obra de arte que refleje al Hombre de Arena.#!" #NT!
+ MORPHEAN_EMBRACE_PERK_EFFECT: "Desbloquea Enter Slumber [decision|E], permite la entrada [GetTrait('torpor').GetName( GetNullCharacter )], que te depondrá.\n#F Un hombre de arena puede otorgar sueño y sueños a un espectro.#!" #NT!
+ INCUBUS_PERK_EFFECT: "Desbloquea Drenaje de Energía [character_interaction|E], permite usar el recurso del objetivo para obtener Pathos.\n#F Un Hombre de Arena puede drenar energía de un mortal como Pathos.#!" #NT!
+ AGON_PERK_EFFECT: "Desbloquea la opción $EXECUTION_CONVERT_TO_WRAITH$ [execution|E].\n#F Un hombre de arena puede arrancar el alma de un mortal de su cuerpo.#!" #NT!
+ ONEIRATAXIA_PERK_EFFECT: "Como [character_interaction|E], te permite hacer que el objetivo entre o salga de [GetTrait('torpor').GetName( GetPlayer )].\n#F Permite que un hombre de arena impida que un mortal duerma, impida que un espectro duerma, impida que un durmiente se despierte o impida que un mortal sueñe.#!" #NT!
+  
+  # Puppetry 
+ puppetry_visible: "Títeres" #NT!
+  
+ skinride_perk_name: "Paseo en piel" #NT!
+ twitch_perk_name: "Contracción nerviosa" #NT!
+ control_creature_perk_name: "Controlar criatura" #NT!
+ masters_voice_perk_name: "La voz del maestro" #NT!
+ arcanoi_healing_perk_name: "Cicatrización" #NT!
+ rein_in_the_mind_perk_name: "Controlar la mente" #NT!
+ shadow_possess_perk_name: "Posesión de la sombra" #NT!
+ legion_perk_name: "Legión" #NT!
+  
+ SKINRIDE_PERK_EFFECT: "Desbloquea al Espía [character_interaction|E], lo que te permite descubrir el secreto de un objetivo.\n#F Un Titiritero puede deslizarse dentro del cuerpo de un mortal.#!" #NT!
+ TWITCH_PERK_EFFECT: "Desbloquea Poseer [character_interaction|E], permite obtener un gancho en el objetivo y hacer que obtenga una parte de tus atributos.\n#F Un titiritero puede tomar el control momentáneo de la extremidad de un anfitrión.#!" #NT!
+ CONTROL_CREATURE_PERK_EFFECT: "Como [character_interaction|E], te permite obtener una mascota. Como [character_interaction|E], te permite llamar a tu mascota a la guerra. Puede reclutar varios tipos de animales como [men_at_arms|E]. #F Esto es similar a Rein in the Mind, pero solo se puede usar en animales. #!" #NT!
+ MASTERS_VOICE_PERK_EFFECT: "Desbloquea un nivel superior de Posesión [character_interaction|E].\n#F Un titiritero puede hablar temporalmente en nombre de un anfitrión mortal.#!" #NT!
+ ARCANOI_HEALING_PERK_EFFECT: "Permite usar Pathos Heal [character_interaction|E] en un anfitrión.\n#F Un Titiritero puede curar los niveles de salud perdidos de un anfitrión.#!" #NT!
+ REIN_IN_THE_MIND_PERK_EFFECT: "Desbloquea el último nivel de Posesión [character_interaction|E].\n#F Un titiritero puede tomar control casi completo sobre un anfitrión.#!" #NT!
+ SHADOW_POSSESS_PERK_EFFECT: "Permite que el uso de una mascota se convierta en [GetTrait('risen').GetName( GetPlayer )].\n#F Un titiritero puede convertir a un animal en un conducto para los Resucitados.#!" #NT!
+ LEGION_PERK_EFFECT: "Permite la posesión de múltiples objetivos.\n#F Un titiritero puede controlar temporalmente varios anfitriones.#!" #NT!
+  
+  # Usury 
+ usury_visible: "Usura" #NT!
+  
+ appraisal_perk_name: "Evaluación" #NT!
+ pathos_conduit_perk_name: "Conducto Pathos" #NT!
+ charitable_trust_perk_name: "Fundación benéfica" #NT!
+ corpus_conduit_perk_name: "Conducto de corpus" #NT!
+ facilitate_perk_name: "Facilitar" #NT!
+ invest_perk_name: "Invertir" #NT!
+ arcanos_conduit_perk_name: "Conducto Arcanos" #NT!
+  
+ APPRAISAL_PERK_EFFECT: "#F Un usurero tiene su Visión de la vida y Visión de la muerte fortalecidas permanentemente.#!" #NT!
+ PATHOS_CONDUIT_PERK_EFFECT: "Como [character_interaction|E], te permite obtener pathos de un prisionero o vender pathos a otros espectros.\n#F Un usurero puede transferir pathos entre él y otro.#!" #NT!
+ CHARITABLE_TRUST_PERK_EFFECT: "Desbloquea [Corpus|E] Curar [character_interaction|E], permite usar [Corpus|E] para curar heridas.\n#F Un usurero puede aplicar su [Corpus|E] a otro para curar heridas.#!" #NT!
+ CORPUS_CONDUIT_PERK_EFFECT: "Como [character_interaction|E], te permite obtener [Corpus|E] de un prisionero o vender [Corpus|E] a otros espectros.\n#F Un usurero puede transferir [Corpus|E] entre él y otro.#!" #NT!
+ FACILITATE_PERK_EFFECT: "Ahora también puedes vender Pathos, [Corpus|E] o Arcanoi de tu prisionero espectral.\n#F Un usurero puede convertirse en intermediario entre Pathos Conduit, [Corpus|E] Conduit y Arcanos Conduit, transfiriendo Pathos, [Corpus|E] y Arcanoi entre dos objetivos.#!" #NT!
+ INVEST_PERK_EFFECT: "Te permite crear un recipiente de patetismo.\n#F Un usurero puede almacenar Patetismo o [Corpus|E] en una reliquia para su uso posterior.#!" #NT!
+ ARCANOS_CONDUIT_PERK_EFFECT: "Como [character_interaction|E], te permite obtener un arcanoi [perk|E] de un prisionero o vender un arcanoi [perk|E] a otros espectros.\n#F Un usurero puede transferir el uso de un Arcanos entre él mismo y otro.#!" #NT!
+  
+  # Thorn 
+ thorn_visible: "Espina" #NT!
+  
+ spectre_prestige_perk_name: "Prestigio del espectro" #NT!
+ dark_allies_perk_name: "Aliados oscuros" #NT!
+ tainted_relic_perk_name: "Reliquia contaminada" #NT!
+ infamy_perk_name: "Infamia" #NT!
+ deaths_sigil_perk_name: "Sigilo de la muerte" #NT!
+ shadow_traits_perk_name: "Rasgos de sombra" #NT!
+ nightmares_perk_name: "Pesadillas" #NT!
+ aura_of_corruption_perk_name: "Aura de corrupción" #NT!
+ mirror_mirror_perk_name: "Espejo Espejo" #NT!
+ shadow_call_perk_name: "Llamada de la sombra" #NT!
+ pact_of_doom_perk_name: "Pacto de perdición" #NT!
+ trick_of_the_light_perk_name: "Truco de la luz" #NT!
+ bad_luck_perk_name: "Mala suerte" #NT!
+ shadowed_face_perk_name: "Cara sombreada" #NT!
+ honeyed_tongue_perk_name: "Lengua con miel" #NT!
+ tainted_touch_perk_name: "Toque contaminado" #NT!
+ thorn_shadowplay_perk_name: "Juego de sombras" #NT!
+ shadow_familiar_perk_name: "Familiar de sombra" #NT!
+ freudian_slip_perk_name: "Lapsus freudiano" #NT!
+ shadow_life_perk_name: "Vida de sombra" #NT!
+ thorn_whispers_perk_name: "Susurros" #NT!
+ thorn_manifestation_perk_name: "Manifestación" #NT!
+ devils_dare_perk_name: "El desafío del diablo" #NT!
+ vampiric_nature_perk_name: "Naturaleza vampírica" #NT!
+  
+ SPECTRE_PRESTIGE_PERK_EFFECT: "Gana [GetModifier('spectre_prestige_modifier').GetNameWithTooltip] durante [GetModifier('catharsis_modifier').GetNameWithTooltip].\n#F La Sombra es respetada por los Espectros y acudirán en ayuda del espectro durante la Catarsis.#!" #NT!
+ DARK_ALLIES_PERK_EFFECT: "Gana [GetModifier('dark_allies_modifier').GetNameWithTooltip] durante [GetModifier('catharsis_modifier').GetNameWithTooltip].\n#F La Sombra del personaje se comunica regularmente con Espectros específicos y puede invocarlos para pedir ayuda.#!" #NT!
+ TAINTED_RELIC_PERK_EFFECT: "Como [character_interaction|E], te permite crear un artefacto personalizado durante el [GetModifier('catharsis_modifier').GetNameWithTooltip].\n#F La Sombra tiene una reliquia importante que se manifiesta cuando está en control: un arma o algún otro elemento útil.#!" #NT!
+ INFAMY_PERK_EFFECT: "Gana [GetModifier('infamy_modifier').GetNameWithTooltip] durante el [GetModifier('catharsis_modifier').GetNameWithTooltip].\n#F Memoria de la Sombra, la infamia es la medida de cuánto miedo y odio el espectro todavía inspira en los vivos.#!" #NT!
+ DEATHS_SIGIL_PERK_EFFECT: "Gana un modificador [GetModifier('deaths_sigil_modifier').GetNameWithTooltip] cuando no estás en [GetModifier('catharsis_modifier').GetNameWithTooltip].\n#F El Sello de la Muerte es un signo prominente del toque de [oblivion|E] en el personaje que se manifiesta sin importar a dónde vaya.#!" #NT!
+ SHADOW_TRAITS_PERK_EFFECT: "Gana [GetModifier('shadow_traits_modifier').GetNameWithTooltip] durante [GetModifier('catharsis_modifier').GetNameWithTooltip].\n#F La Sombra puede comprar Habilidad, pero estas Habilidades adicionales solo están disponibles durante la Catarsis.#!" #NT!
+ NIGHTMARES_PERK_EFFECT: "Gana #N 40#! [stress|E] cada año durante el [GetTrait('torpor').GetName( GetPlayer )].\n#F Cuando la Psique Duerme, una Sombra con esta Espina puede hacer que tenga intensas pesadillas.#!" #NT!
+ AURA_OF_CORRUPTION_PERK_EFFECT: "Obtienes un modificador de [GetModifier('aura_of_corruption_modifier').GetNameWithTooltip] cuando no estás en [GetModifier('catharsis_modifier').GetNameWithTooltip].\n#F A través de los efectos de esta Espina, la Sombra de alguna manera contamina la presentación que el espectro hace de sí mismo, haciendo que su presencia sea desagradable para otros espectros.#!" #NT!
+ MIRROR_MIRROR_PERK_EFFECT: "Obtienes un modificador de [GetModifier('mirror_mirror_modifier').GetNameWithTooltip] cuando no estás en [GetModifier('catharsis_modifier').GetNameWithTooltip].\n#F Siempre que el Espectro se vea a sí mismo en una superficie reflectante, la Sombra puede hacer que el reflejo lo vea horriblemente distorsionado, de cualquier manera que la Sombra desee.#!" #NT!
+ SHADOW_CALL_PERK_EFFECT: "Puede reclutar a [GetMaA('spectres').GetName] como [men_at_arms|E] durante [GetModifier('catharsis_modifier').GetNameWithTooltip].\n#F Llamado de las Sombras permite que la Sombra de un espectro invoque Espectros cercanos.#!" #NT!
+ PACT_OF_DOOM_PERK_EFFECT: "Como [character_interaction|E], te permite comprar puntos de beneficio del estilo de vida arcanoi.\n#F Si un espectro tiene esta Espina, ella y su Sombra pueden negociar un pacto mediante el cual la Sombra le enseñará una cantidad predeterminada de niveles en un Arcanos.#!" #NT!
+ TRICK_OF_THE_LIGHT_PERK_EFFECT: "Obtienes un modificador de [GetModifier('trick_of_the_light_modifier').GetNameWithTooltip] cuando no estás en [GetModifier('catharsis_modifier').GetNameWithTooltip].\n#F Al usar esta Espina, la Sombra altera sutilmente la percepción de la Psique.#!" #NT!
+ BAD_LUCK_PERK_EFFECT: "Obtienes un modificador de [GetModifier('bad_luck_modifier').GetNameWithTooltip] cuando no estás en [GetModifier('catharsis_modifier').GetNameWithTooltip].\n#F La Sombra puede gastar una Angustia para hacer que la Psique entre en una nueva prueba.#!" #NT!
+ SHADOWED_FACE_PERK_EFFECT: "Gana [GetModifier('shadowed_face_modifier').GetNameWithTooltip] durante el [GetModifier('catharsis_modifier').GetNameWithTooltip].\n#F Con esta Espina, la Sombra cambia por completo la apariencia de su Psique cuando toma el control.#!" #NT!
+ HONEYED_TONGUE_PERK_EFFECT: "Gana [GetModifier('honeyed_tongue_modifier').GetNameWithTooltip] durante el [GetModifier('catharsis_modifier').GetNameWithTooltip].\n#F La Sombra es casi sobrenaturalmente persuasiva y realmente puede activar el encanto cuando así lo decide.#!" #NT!
+ TAINTED_TOUCH_PERK_EFFECT: "Obtienes un modificador de [GetModifier('tainted_touch_modifier').GetNameWithTooltip] cuando no estás en [GetModifier('catharsis_modifier').GetNameWithTooltip].\n#F Esta espina convierte a un espectro en algo así como una María Tifoidea entre los Inquietos.#!" #NT!
+ THORN_SHADOWPLAY_PERK_EFFECT: "Como [character_interaction|E], te permite recibir una oferta de tu sombra.\n#F La Sombra puede ofrecer una acción adicional a la Psique después de que el Espectro la use toda.#!" #NT!
+ SHADOW_FAMILIAR_PERK_EFFECT: "Como [character_interaction|E], te permite convertir a tu mascota en un familiar de las sombras.\n#F Mientras la Sombra permanezca dentro de la conciencia de un espectro, un familiar de las sombras puede servir como sus ojos, oídos y pies.#!" #NT!
+ FREUDIAN_SLIP_PERK_EFFECT: "Obtienes un modificador de [GetModifier('freudian_slip_modifier').GetNameWithTooltip] cuando no estás en [GetModifier('catharsis_modifier').GetNameWithTooltip].\n#F A costa de un punto de Angustia, la Sombra puede obligar a un espectro a realizar una acción repentina e involuntaria o a hacer una declaración rápida y sin editar.#!" #NT!
+ SHADOW_LIFE_PERK_EFFECT: "[GetModifier('catharsis_modifier').GetNameWithTooltip] ahora dura para siempre.\n#F Siempre que un espectro con esta Espina Duerme, su Sombra toma el control de su [Corpus|E] compartido y se dispone a hacer lo peor.#!" #NT!
+ THORN_WHISPERS_PERK_EFFECT: "Obtienes un modificador de [GetModifier('shadows_whispers_modifier').GetNameWithTooltip] cuando no estás en [GetModifier('catharsis_modifier').GetNameWithTooltip].\n#F La Sombra con esta Espina puede hablar con las Sombras de otros espectros sin el conocimiento de sus Psiques.#!" #NT!
+ THORN_MANIFESTATION_PERK_EFFECT: "Desbloquea $POD_separate_shadow_interaction$ [character_interaction|E], lo que te permite crear un clon [GetTrait('wraith').GetName( GetNullCharacter )].\n#F Al gastar Angustia, la Sombra puede materializarse como una entidad separada del espectro.#!" #NT!
+ DEVILS_DARE_PERK_EFFECT: "Aparece un desafío del diablo [decision|E] cada 3 años.\n#F El desafío del diablo es el equivalente emocional del juego de la gallina. Para usar esta espina, la Sombra invierte una cantidad de Angst y escribe algo que desafía a la Psique a hacer.#!" #NT!
+ VAMPIRIC_NATURE_PERK_EFFECT: "Como [character_interaction|E], te permite extraer [stress|E] de otro personaje.\n#F Esta Espina permite que una Sombra extraiga Angustia de otros para sus propios fines.#!" #NT!
+  
+  # Flux 
+ flux_visible: "Flujo" #NT!
+  
+ rot_perk_name: "Putrefacción" #NT!
+ strengthen_perk_name: "Fortalecer" #NT!
+ non_euclidean_mechanics_perk_name: "Mecánica no euclidiana" #NT!
+ relic_dowsing_perk_name: "Radiestesia de reliquias" #NT!
+ puppet_theater_perk_name: "Teatro de títeres" #NT!
+ render_relic_perk_name: "Reliquia de renderizado" #NT!
+ automaton_perk_name: "Autómata" #NT!
+  
+ ROT_PERK_EFFECT: "#F Un alquimista puede hacer que un objeto pequeño e inerte envejezca rápidamente.#!" #NT!
+ STRENGTHEN_PERK_EFFECT: "#F Un alquimista puede mejorar la estructura misma de un objeto.#!" #NT!
+ NON_EUCLIDEAN_MECHANICS_PERK_EFFECT: "#F Un alquimista puede reparar o mejorar una reliquia tecnológica.#!" #NT!
+ RELIC_DOWSING_PERK_EFFECT: "Gana automáticamente una pieza de artefacto cada #V 5#! años.\n#F Un alquimista puede encontrar reliquias recién formadas en [shadowlands|E].#!" #NT!
+ PUPPET_THEATER_PERK_EFFECT: "#F Un alquimista puede animar varios objetos pequeños a la vez.#!" #NT!
+ RENDER_RELIC_PERK_EFFECT: "Como [character_interaction|E], te permite destruir un artefacto para obtener Pathos.\n#F Un alquimista puede convertir una reliquia en las emociones que la crearon para proporcionar Pathos, destruyéndola en el proceso.#!" #NT!
+ AUTOMATON_PERK_EFFECT: "Como [character_interaction|E], te permite obtener estadísticas temporales de tu artefacto equipado.\n#F Un alquimista puede juntar objetos para formar un cuerpo.#!" #NT!
+  
+  # Intimation 
+ intimation_visible: "Intimación" #NT!
+  
+ the_gleaming_perk_name: "El reluciente" #NT!
+ arcanoi_know_thyself_perk_name: "Conocete a ti mismo" #NT!
+ launch_a_thousand_ships_perk_name: "Lanzar mil barcos" #NT!
+ unfold_the_animal_heart_perk_name: "Despliega el corazón animal" #NT!
+ apple_of_discord_perk_name: "Manzana de la discordia" #NT!
+ ignite_perk_name: "Encender" #NT!
+ a_single_thread_perk_name: "Un solo hilo" #NT!
+ adrestias_communion_perk_name: "La comunión de Adrestia" #NT!
+  
+ THE_GLEAMING_PERK_EFFECT: "Como [character_interaction|E], permite que el gobernante vecino reclame el artefacto objetivo.\n#F Un abogado puede hacer que un objeto parezca más deseable de lo que realmente es.#!" #NT!
+ ARCANOI_KNOW_THYSELF_PERK_EFFECT: "#F Un solicitante puede resistir el intento de otro de usar Intimación, y también puede resistir Castigo y Contaminación hasta cierto punto.#!" #NT!
+ LAUNCH_A_THOUSAND_SHIPS_PERK_EFFECT: "#F Un Procurador puede convertirse en objeto de deseo.#!" #NT!
+ UNFOLD_THE_ANIMAL_HEART_PERK_EFFECT: "#F Un abogado puede leer todos los deseos y sueños más preciados de un espectro.#!" #NT!
+ APPLE_OF_DISCORD_PERK_EFFECT: "Bonificación a $POD_gleaming_interaction$ [character_interaction|E], ahora todos los gobernantes vecinos reclaman ese artefacto.\n#F Un procurador puede hacer que un objeto sea tan deseable que cualquiera que lo vea se obsesione con él.#!" #NT!
+ IGNITE_PERK_EFFECT: "Como [character_interaction|E], permite que el título objetivo sea reclamado por el gobernante vecino y comience una guerra por él.\n#F Un solicitante puede darle a un espectro un deseo fuerte que afecta la vida del espectro.#!" #NT!
+ A_SINGLE_THREAD_PERK_EFFECT: "Bonificación a $POD_ignite_interaction$ [character_interaction|E], ahora todos los gobernantes vecinos lucharán por ese título.\n#F Un procurador puede dirigir sutilmente a un espectro hacia líneas de acción que parezcan más naturales.#!" #NT!
+ ADRESTIAS_COMMUNION_PERK_EFFECT: "#F Un solicitante puede usar cualquier arte de insinuación tanto en su Sombra como en las Sombras de otros, incluso si las Sombras no tienen el control.#!" #NT!
+  
+  # Mnemosynis 
+ mnemosynis_visible: "Mnemosynis" #NT!
+  
+ erasure_perk_name: "Borradura" #NT!
+ mnemotechnics_perk_name: "Mnemotecnia" #NT!
+ further_reflection_perk_name: "Reflexión adicional" #NT!
+ tabula_rasa_perk_name: "Tabla rasa" #NT!
+ casting_the_scene_perk_name: "El casting de la escena" #NT!
+ phantom_pain_perk_name: "Dolor fantasma" #NT!
+ gray_man_perk_name: "Hombre gris" #NT!
+  
+ ERASURE_PERK_EFFECT: "Como [character_interaction|E], permite borrar la memoria para reducir el estrés.\n#F Un Mnemos puede borrar un recuerdo de su mente.#!" #NT!
+ MNEMOTECHNICS_PERK_EFFECT: "Como [character_interaction|E], te permite hacer que una relación potencial se convierta en una relación estable.\n#F Un Mnemos obliga a otro a revivir un incidente específico del pasado.#!" #NT!
+ FURTHER_REFLECTION_PERK_EFFECT: "Como [character_interaction|E], te permite establecer una relación potencial con otros.\n#F Un Mnemos puede proyectar sus recuerdos en la mente de otra persona.#!" #NT!
+ TABULA_RASA_PERK_EFFECT: "Bonificación a $POD_erasure_interaction$ [character_interaction|E], ahora también puede borrar la memoria del prisionero.\n#F Un Mnemos puede borrar permanentemente un recuerdo de la mente de otra persona.#!" #NT!
+ CASTING_THE_SCENE_PERK_EFFECT: "#F Un Mnemos puede permitir que otras personas en el área vean un destello del recuerdo de otra persona.#!" #NT!
+ PHANTOM_PAIN_PERK_EFFECT: "Otorga un modificador de [GetModifier('phantom_pain_modifier').GetNameWithTooltip] al enemigo [knights|E] en la guerra como comandante o al enemigo en [single_combat_duel|E].\n#F Un Mnemos puede proyectar sus recuerdos de heridas en la mente de otro espectro, lo que desencadena heridas psicosomáticas en la mente del otro espectro [Corpus|E].#!" #NT!
+ GRAY_MAN_PERK_EFFECT: "Como [character_interaction|E], te permite hacer que el objetivo pierda su relación, consorte y prestigio.\n#F Un Mnemos puede borrar a alguien de la memoria colectiva de todos los que lo conocen.#!" #NT!
+  
+  # Jade Arcanoi 
+  
+ emperor_visible: "Emperador" #NT!
+ scholar_visible: "Erudito" #NT!
+ farmer_visible: "Agricultor" #NT!
+ artisan_visible: "Artesano" #NT!
+ merchant_visible: "Comerciante" #NT!
+ soul_visible: "Alma" #NT!
+  
+ brilliance_perk_name: "Brillantez" #NT!
+ shackles_perk_name: "Grilletes" #NT!
+ snare_perk_name: "Trampa" #NT!
+ lariat_perk_name: "Lazo" #NT!
+ net_perk_name: "Neto" #NT!
+ discern_the_lie_perk_name: "Discernir la mentira" #NT!
+ inquiry_perk_name: "Consulta" #NT!
+ word_of_yu_huang_perk_name: "Palabra de Yu Huang" #NT!
+ filial_duty_perk_name: "Deber filial" #NT!
+ the_emperors_servant_perk_name: "El sirviente del emperador" #NT!
+ finding_the_hidden_ghost_perk_name: "Encontrar el fantasma escondido" #NT!
+ cowing_the_bestial_spirit_perk_name: "Intimidando al espíritu bestial" #NT!
+ purify_perk_name: "Purificar" #NT!
+ deaden_spirit_perk_name: "Espíritu muerto" #NT!
+ reap_the_hungry_ghost_perk_name: "Cosechar el fantasma hambriento" #NT!
+ shape_true_jade_perk_name: "Forma Jade Verdadero" #NT!
+ remembrance_perk_name: "Remembranza" #NT!
+ rework_relics_perk_name: "Reliquias de la reelaboración" #NT!
+ empower_jade_perk_name: "Empoderar a Jade" #NT!
+ create_white_jade_perk_name: "Crea Jade Blanco" #NT!
+ transfer_perk_name: "Transferir" #NT!
+ cash_money_perk_name: "Dinero en efectivo" #NT!
+ withdraw_essence_perk_name: "Retirar esencia" #NT!
+ returning_the_favor_perk_name: "Devolviendo el favor" #NT!
+ mint_money_perk_name: "Dinero de menta" #NT!
+ arcanoi_coax_perk_name: "Engatusar" #NT!
+ nullify_thorns_perk_name: "Anular espinas" #NT!
+ give_higher_passions_perk_name: "Dar pasiones más elevadas" #NT!
+ alter_demeanor_perk_name: "Alterar la conducta" #NT!
+ inner_peace_perk_name: "Paz interior" #NT!
+  
+ BRILLIANCE_PERK_EFFECT: "#F Un guardia puede hacer que su piel brille con un brillo interior espeluznante.#!" #NT!
+ SHACKLES_PERK_EFFECT: "Como [character_interaction|E], te permite unir el alma de un espectro.\n#F Un guardia puede crear grilletes a partir de su propio [Corpus|E] para unir a otro espectro.#!" #NT!
+ SNARE_PERK_EFFECT: "Como [character_interaction|E], te permite invocar al espectro objetivo a tu corte.\n#F Un guardia puede cancelar cualquier uso de [GetTrait('arcanos_argos').GetName( GetPlayer )].#!" #NT!
+ LARIAT_PERK_EFFECT: "Bonificación a Grilletes [character_interaction|E], ya no es necesario estar en el rango diplomático.\n#F Un guardia puede usar la habilidad Grilletes para un alcance mucho mayor.#!" #NT!
+ NET_PERK_EFFECT: "Como [character_interaction|E], te permite unir almas e invocar espectros de la corte del objetivo.\n#F Un guardia puede atrapar a un grupo de espectros con habilidades similares a Trampa y Grilletes.#!" #NT!
+ DISCERN_THE_LIE_PERK_EFFECT: "#F Un erudito puede saber si otro espectro le está mintiendo.#!" #NT!
+ INQUIRY_PERK_EFFECT: "#F Un erudito puede obligar a un objetivo a responder otra pregunta con sinceridad.#!" #NT!
+ WORD_OF_YU_HUANG_PERK_EFFECT: "#F Un erudito puede dar una orden básica que se puede seguir libremente.#!" #NT!
+ FILIAL_DUTY_PERK_EFFECT: "#F Un erudito puede hacer que un sujeto coopere voluntariamente con él.#!" #NT!
+ THE_EMPERORS_SERVANT_PERK_EFFECT: "#F Un erudito puede crear órdenes permanentes en las mentes de otros espectros.#!" #NT!
+ FINDING_THE_HIDDEN_GHOST_PERK_EFFECT: "#F Un granjero puede detectar la ubicación de cualquier [GetTrait('barghest').GetName( GetPlayer )].#! cercano" #NT!
+ COWING_THE_BESTIAL_SPIRIT_PERK_EFFECT: "#F Un granjero puede inducir terror puro en un [GetTrait('barghest').GetName( GetPlayer )].#!" #NT!
+ PURIFY_PERK_EFFECT: "Como [character_interaction|E], te permite convertir un espectro en [GetTrait('barghest').GetName( GetPlayer )].\n#F Un granjero puede atacar directamente a otro espectro [GetTrait('shadow').GetName( GetPlayer )].#!" #NT!
+ DEADEN_SPIRIT_PERK_EFFECT: "Como [character_interaction|E], te permite ganar un gancho sobre un [GetTrait('barghest').GetName( GetPlayer )].\n#F Un granjero puede domesticar un [GetTrait('barghest').GetName( GetPlayer )] fuera de control.#!" #NT!
+ REAP_THE_HUNGRY_GHOST_PERK_EFFECT: "Como [character_interaction|E], te permite recolectar el [Corpus|E] de un [GetTrait('barghest').GetName( GetPlayer )].\n#F Un granjero puede recolectar el [Corpus|E] de un [GetTrait('barghest').GetName( GetPlayer )] sometido sin dificultad.#!" #NT!
+ SHAPE_TRUE_JADE_PERK_EFFECT: "Gana un [true_jade|E] cada #V 5#! años.\n#F Con suficiente material y tiempo, un artesano puede crear cualquier objeto simple a partir de [true_jade|E].#!" #NT!
+ REMEMBRANCE_PERK_EFFECT: "Obtén un Jade Blanco cada #V 3#! años.\n#F Similar a Shape True Jade, excepto que un Artesano puede usar el Jade Blanco inferior.#!" #NT!
+ REWORK_RELICS_PERK_EFFECT: "Como [character_interaction|E], permite potenciar un artefacto usando True Jade o White Jade.\n#F Un artesano puede cambiar o reelaborar una reliquia.#!" #NT!
+ EMPOWER_JADE_PERK_EFFECT: "Como [character_interaction|E], permite potenciar un artefacto usando Pathos.\n#F Un artesano puede despertar el alma que compone un objeto e imbuirlo con un Arcanos o Pathos.#!" #NT!
+ CREATE_WHITE_JADE_PERK_EFFECT: "Permite la forja de almas [GetTrait('wraith').GetName( GetNullCharacter )] en jade blanco.\n#F Un artesano puede convertir almas en jade blanco.#!" #NT!
+ TRANSFER_PERK_EFFECT: "Como [character_interaction|E], te permite obtener pathos de un prisionero o vender pathos a otros espectros.\n#F Un comerciante puede transferir pathos a través del contacto físico.#!" #NT!
+ CASH_MONEY_PERK_EFFECT: "Como [character_interaction|E], te permite obtener pathos del oro.\n#F Un comerciante puede convertir sacrificios en pathos.#!" #NT!
+ WITHDRAW_ESSENCE_PERK_EFFECT: "Como [character_interaction|E], te permite obtener pathos del artefacto de jade blanco.\n#F Un comerciante puede obtener pathos de un [GetTrait('barghest').GetName( GetPlayer )] controlado por un granjero o de jade blanco en bruto.#!" #NT!
+ RETURNING_THE_FAVOR_PERK_EFFECT: "Como [character_interaction|E], te permite ganar renombre por patetismo.\n#F Un comerciante puede enviar patetismo a un pariente vivo.#!" #NT!
+ MINT_MONEY_PERK_EFFECT: "Como [character_interaction|E], te permite ganar oro con Pathos.\n#F Un comerciante puede convertir su Pathos en una forma física, como fichas, monedas o papel moneda.#!" #NT!
+ ARCANOI_COAX_PERK_EFFECT: "Ya no se obtiene [stress|E] de Resistir Catarsis.\n#F Un Doctor puede invocar su [GetTrait('shadow').GetName( GetPlayer )] con un riesgo reducido.#!" #NT!
+ NULLIFY_THORNS_PERK_EFFECT: "Hay pocas posibilidades de no obtener Pasión oscura y pocas posibilidades de no obtener Reto diabólico [decision|E].\n#F Un Doctor puede evitar que su [GetTrait('shadow').GetName( GetPlayer )] use una de sus Espinas.#!" #NT!
+ GIVE_HIGHER_PASSIONS_PERK_EFFECT: "Como [character_interaction|E], te permite eliminar una pasión oscura [decision|E].\n#F Un Doctor puede intentar reemplazar la Pasión Oscura de un [GetTrait('shadow').GetName( GetPlayer )] con una de sus Pasiones.#!" #NT!
+ ALTER_DEMEANOR_PERK_EFFECT: "Como [character_interaction|E], te permite recuperar tu personalidad de Hun durante la Catarsis.\n#F Un Doctor puede alterar el Arquetipo de su [GetTrait('shadow').GetName( GetPlayer )], incluyendo los regulares así como los basados ​​en las Sombras.#!" #NT!
+ INNER_PEACE_PERK_EFFECT: "Obtén acceso al modificador de espinas incluso sin Catarsis.\n#F Un Doctor puede unirse con su [GetTrait('shadow').GetName( GetPlayer )] y actuar como uno solo.#!" #NT!
+  
+  # Blighted Insight 
+ blighted_insight_visible: "Visión arruinada" #NT!
+  
+ ill_omen_perk_name: "Mal augurio" #NT!
+ small_hours_perk_name: "Pequeñas horas" #NT!
+ cimmerian_shade_perk_name: "Sombra cimeria" #NT!
+ hypnos_reclining_perk_name: "Hipnos reclinado" #NT!
+ gates_of_horn_perk_name: "Puertas de Horn" #NT!
+  
+ ILL_OMEN_PERK_EFFECT: "#F Pistas divinas sobre el destino de una persona, lugar u objeto.#!" #NT!
+ SMALL_HOURS_PERK_EFFECT: "#F Inducir visiones relacionadas con eventos pasados.#!" #NT!
+ CIMMERIAN_SHADE_PERK_EFFECT: "#F Accede a secretos del pasado del objetivo en forma de voz fantasma.#!" #NT!
+ HYPNOS_RECLINING_PERK_EFFECT: "#F Aprende información a través de sueños y profecías.#!" #NT!
+ GATES_OF_HORN_PERK_EFFECT: "#F Altera el destino del objetivo.#!" #NT!
+  
+  # Contaminate 
+ contaminate_visible: "Contaminar" #NT!
+  
+ shadowspeech_perk_name: "Lenguaje de sombras" #NT!
+ sense_nature_perk_name: "Sentir la naturaleza" #NT!
+ arcanoi_transfer_angst_perk_name: "Transferir angustia" #NT!
+ awaken_latent_thorns_perk_name: "Despertar espinas latentes" #NT!
+ call_the_shadow_perk_name: "Llama a la sombra" #NT!
+  
+ SHADOWSPEECH_PERK_EFFECT: "#F Un Espectro puede comunicarse con la Sombra de un espectro.#!" #NT!
+ SENSE_NATURE_PERK_EFFECT: "#F Un Espectro puede descubrir la Naturaleza de un espectro.#!" #NT!
+ ARCANOI_TRANSFER_ANGST_PERK_EFFECT: "#F Un Espectro puede transferir Angustia a la Sombra de un espectro.#!" #NT!
+ AWAKEN_LATENT_THORNS_PERK_EFFECT: "#F Esto permite que un Espectro cree nuevas Espinas en una Sombra.#!" #NT!
+ CALL_THE_SHADOW_PERK_EFFECT: "#F El Espectro puede ayudar a la Sombra de un espectro a superar su Psique.#!" #NT!
+  
+  # Corruption 
+ corruption_visible: "Corrupción" #NT!
+  
+ lurid_visions_perk_name: "Visiones espeluznantes" #NT!
+ unbidden_hands_perk_name: "Manos no invitadas" #NT!
+ urges_perk_name: "Insta" #NT!
+ fetter_rape_perk_name: "Violación con grilletes" #NT!
+ blissful_unity_perk_name: "Unidad dichosa" #NT!
+  
+ LURID_VISIONS_PERK_EFFECT: "#F Un espectro puede crear visiones breves y violentas en el objetivo al que está montando.#!" #NT!
+ UNBIDDEN_HANDS_PERK_EFFECT: "#F Un espectro puede obligar a un cuerpo a realizar una acción mientras el objetivo está distraído.#!" #NT!
+ URGES_PERK_EFFECT: "#F Esto permite que un Espectro supere la Fuerza de Voluntad de un objetivo y lo obligue a realizar una acción.#!" #NT!
+ FETTER_RAPE_PERK_EFFECT: "#F Un Espectro puede corromper los fragmentos de alma que quedan en un muerto [Fetter|E] para convertirlo brevemente en un Resucitado.#!" #NT!
+ BLISSFUL_UNITY_PERK_EFFECT: "#F El Espectro se convierte en la entidad dominante de un alma sin borrarla.#!" #NT!
+  
+  # False Life 
+ false_life_visible: "Vida falsa" #NT!
+  
+ scent_of_life_perk_name: "Aroma de vida" #NT!
+ sound_of_life_perk_name: "Sonido de la vida" #NT!
+ dangerous_distraction_perk_name: "Distracción peligrosa" #NT!
+ loves_caress_perk_name: "La caricia del amor" #NT!
+ homecoming_perk_name: "regreso a casa" #NT!
+  
+ SCENT_OF_LIFE_PERK_EFFECT: "#F El Espectro conjura un olor fantasmal para el objetivo.#!" #NT!
+ SOUND_OF_LIFE_PERK_EFFECT: "#F El Espectro evoca sonidos que solo el objetivo puede oír.#!" #NT!
+ DANGEROUS_DISTRACTION_PERK_EFFECT: "#F El Espectro crea una ilusión compleja de olor, vista y tacto.#!" #NT!
+ LOVES_CARESS_PERK_EFFECT: "#F La víctima cree que está en presencia de una persona u objeto que ama profundamente.#!" #NT!
+ HOMECOMING_PERK_EFFECT: "#F El objetivo experimenta una ilusión totalmente inmersiva de una ubicación[skinlands|E]kinlands que es preciada para él.#!" #NT!
+  
+  # Hive-Mind 
+ hive_mind_visible: "Mente de la colmena" #NT!
+  
+ silent_whispers_perk_name: "Susurros silenciosos" #NT!
+ arcanoi_distant_whispers_perk_name: "Susurros distantes" #NT!
+ tribal_commune_perk_name: "Comuna tribal" #NT!
+ recall_the_known_perk_name: "Recordar lo conocido" #NT!
+ broadcast_perk_name: "Transmisión" #NT!
+ hive_awareness_perk_name: "Conciencia de la colmena" #NT!
+ arcanoi_taming_the_beast_perk_name: "Domando a la bestia" #NT!
+ recall_the_unknown_perk_name: "Recordar lo desconocido" #NT!
+ bid_perk_name: "Licitación" #NT!
+ collective_oracle_perk_name: "Oráculo colectivo" #NT!
+ pack_wisdom_perk_name: "Paquete Sabiduría" #NT!
+ racial_memory_perk_name: "Memoria racial" #NT!
+ arcanoi_compel_perk_name: "Obligar" #NT!
+ unity_of_being_perk_name: "Unidad del Ser" #NT!
+  
+ SILENT_WHISPERS_PERK_EFFECT: "#F Un Espectro puede enviar telepáticamente un mensaje a otro Espectro que esté a la vista.#!" #NT!
+ DISTANT_WHISPERS_PERK_EFFECT: "#F Esto permite que dos Espectros se comuniquen libremente entre sí telepáticamente.#!" #NT!
+ TRIBAL_COMMUNE_PERK_EFFECT: "#F Un espectro puede acceder a información que conocía previamente de Hive-Mind.#!" #NT!
+ RECALL_THE_KNOWN_PERK_EFFECT: "#F Un espectro puede acceder a cualquier pensamiento o recuerdo disponible en Hive-Mind.#!" #NT!
+ BROADCAST_PERK_EFFECT: "#F El Espectro ahora puede extraer información de cualquier fuente dentro de la Mente Colmena, incluido el conocimiento Arcanoi.#!" #NT!
+ HIVE_AWARENESS_PERK_EFFECT: "#F Un Espectro puede comunicarse directamente con otros de su manada.#!" #NT!
+ ARCANOI_TAMING_THE_BEAST_PERK_EFFECT: "#F Un espectro puede proyectar sus ideas a corto plazo.#!" #NT!
+ RECALL_THE_UNKNOWN_PERK_EFFECT: "#F Un Espectro se vuelve especialmente sensible a los detalles que se transmiten a través de la Mente Colmena.#!" #NT!
+ BID_PERK_EFFECT: "#F Un Espectro puede domesticar Espectros de tipo animal como los kuei.#!" #NT!
+ COLLECTIVE_ORACLE_PERK_EFFECT: "#F Un Espectro puede dar una orden exacta a otro Espectro que debe ser seguida.#!" #NT!
+ PACK_WISDOM_PERK_EFFECT: "#F Un Espectro puede acceder y consultar a la Mente Colmena para pedirle consejo.#!" #NT!
+ RACIAL_MEMORY_PERK_EFFECT: "#F Un jovencito puede actuar a través de los cuerpos de sus compañeros de manada.#!" #NT!
+ ARCANOI_COMPEL_PERK_EFFECT: "#F Un Espectro poderoso puede proyectar su voluntad sobre los Espectros que lo rodean.#!" #NT!
+ UNITY_OF_BEING_PERK_EFFECT: "#F Un espectro puede separarse temporalmente de Hive-Mind.#!" #NT!
+  
+  # Larceny 
+ larceny_visible: "Hurto" #NT!
+  
+ steal_corpus_perk_name: "Robar Corpus" #NT!
+ emotional_infection_perk_name: "Infección emocional" #NT!
+ savor_agony_perk_name: "Saborear la agonía" #NT!
+ withstand_oblivion_perk_name: "Resistir el olvido" #NT!
+ defy_oblivion_perk_name: "Desafiar el olvido" #NT!
+  
+ STEAL_CORPUS_PERK_EFFECT: "#F Esto permite que un Espectro robe [Corpus|E] de otro espectro o espectro.#!" #NT!
+ EMOTIONAL_INFECTION_PERK_EFFECT: "#F Un Espectro puede implantar Pasiones Oscuras en las mentes de los demás.#!" #NT!
+ SAVOR_AGONY_PERK_EFFECT: "#F Un Espectro puede obtener Angustia al infligir daño agravado a otra criatura.#!" #NT!
+ WITHSTAND_OBLIVION_PERK_EFFECT: "#F Un Espectro puede curar el daño infligido por el propio [oblivion|E].#!" #NT!
+ DEFY_OBLIVION_PERK_EFFECT: "#F El Espectro puede transferir el [oblivion|E] dentro de sí mismo a otro ser.#!" #NT!
+  
+  # Maleficence 
+ maleficence_visible: "Maleficencia" #NT!
+  
+ arcanoi_black_whispers_perk_name: "Susurros negros" #NT!
+ benefice_perk_name: "Beneficio" #NT!
+ investiture_perk_name: "Ceremonia de investidura" #NT!
+ discipline_perk_name: "Disciplina" #NT!
+ arcanoi_conversion_perk_name: "Conversión" #NT!
+  
+ ARCANOI_BLACK_WHISPERS_PERK_EFFECT: "#F Un Espectro puede comunicarse directamente con la mente de uno de los vivos.#!" #NT!
+ BENEFICE_PERK_EFFECT: "#F Un Espectro puede invertirse en un Rápido para obtener poderes Espectrales.#!" #NT!
+ INVESTITURE_PERK_EFFECT: "#F Un Espectro hace que el espíritu de un mortal se descomponga, dándole temporalmente poderes sobrenaturales.#!" #NT!
+ DISCIPLINE_PERK_EFFECT: "#F Esto permite que un Espectro inflija un dolor severo a un objetivo en el que ha implantado su Ser.#!" #NT!
+ ARCANOI_CONVERSION_PERK_EFFECT: "#F El Espectro puede transmitir la sensación misma de [oblivion|E] a la audiencia.#!" #NT!
+  
+  # Shroud-Rending 
+ shroud_rending_visible: "Desgarro del sudario" #NT!
+  
+ threshold_perk_name: "Límite" #NT!
+ echoes_perk_name: "Ecos" #NT!
+ fleeting_glimpses_perk_name: "Vistazos fugaces" #NT!
+ nightmare_perk_name: "Pesadilla" #NT!
+ virtuality_perk_name: "Virtualidad" #NT!
+ lurking_presence_perk_name: "Presencia acechante" #NT!
+ transparent_memories_perk_name: "Recuerdos transparentes" #NT!
+  
+ THRESHOLD_PERK_EFFECT: "#F Un Espectro puede ver imágenes oscurecidas a través del Sudario.#!" #NT!
+ ECHOES_PERK_EFFECT: "#F Esto permite que un Espectro vea a través del Sudario.#!" #NT!
+ FLEETING_GLIMPSES_PERK_EFFECT: "#F Un Espectro puede ver claramente un área del [skinlands|E].#!" #NT!
+ NIGHTMARE_PERK_EFFECT: "#F Un Espectro rasga el Sudario que cubre a un mortal dormido, lo que le permite a [oblivion|E] influir en sus sueños.#!" #NT!
+ VIRTUALITY_PERK_EFFECT: "#F Los eventos que suceden en el [skinlands|E] ahora se pueden ver y escuchar con claridad.#!" #NT!
+ LURKING_PRESENCE_PERK_EFFECT: "#F Similar a Pesadilla, pero se puede usar en mortales que estén despiertos.#!" #NT!
+ TRANSPARENT_MEMORIES_PERK_EFFECT: "#F El Espectro puede usar todos sus sentidos a través del Sudario.#!" #NT!
+  
+  # Tempest-Weaving 
+ tempest_weaving_visible: "Tejido de tempestad" #NT!
+  
+ wormhole_perk_name: "Agujero de gusano" #NT!
+ ride_the_soul_storm_perk_name: "Cabalga la tormenta del alma" #NT!
+ grasp_the_passing_perk_name: "Comprender el paso" #NT!
+ favored_flotsom_perk_name: "Flotsom favorito" #NT!
+ carve_the_chaos_perk_name: "Talla el caos" #NT!
+  
+ WORMHOLE_PERK_EFFECT: "#F Esto permite que un Espectro use nihils para viajar entre [tempest|E] y [shadowlands|E].#!" #NT!
+ RIDE_THE_SOUL_STORM_PERK_EFFECT: "#F Un Espectro puede aprovechar los vientos de un Maelstrom para viajar.#!" #NT!
+ GRASP_THE_PASSING_PERK_EFFECT: "#F Un Espectro puede sacar un objeto aleatorio, incluidos recuerdos, del [tempest|E].#!" #NT!
+ FAVORED_FLOTSOM_PERK_EFFECT: "#F Similar a Grasp the Passing, excepto que un Espectro puede influenciar el objeto extraído para que le resulte útil.#!" #NT!
+ CARVE_THE_CHAOS_PERK_EFFECT: "#F El Espectro puede moldear al [tempest|E] en la forma que desee, como crear "conjuntos" para Harrowings.#!" #NT!
+  
+  # Tempestos 
+ tempestos_visible: "Tempestades" #NT!
+  
+ storm_seeker_perk_name: "Buscador de tormentas" #NT!
+ ride_the_nightwind_perk_name: "Cabalga el viento nocturno" #NT!
+ dust_devil_perk_name: "Diablo de polvo" #NT!
+ tempest_fury_perk_name: "Furia de tempestad" #NT!
+ maelstrom_cauldron_perk_name: "Caldero del Maelstrom" #NT!
+  
+ STORM_SEEKER_PERK_EFFECT: "#F Esto permite que un Espectro quede a la deriva en el [tempest|E] y lo atraiga a la tormenta más cercana.#!" #NT!
+ RIDE_THE_NIGHTWIND_PERK_EFFECT: "#F Un Espectro puede volar a la misma velocidad y dirección que los vientos del Maelstrom.#!" #NT!
+ DUST_DEVIL_PERK_EFFECT: "#F Un espectro puede provocar tormentas menores y Nihils para usarlos como propulsión.#!" #NT!
+ TEMPEST_FURY_PERK_EFFECT: "#F Los espectros pueden invocar el poder de [tempest|E] para provocar destrucción de forma limitada.#!" #NT!
+ MAELSTROM_CAULDRON_PERK_EFFECT: "#F El Espectro puede invocar un Maelstrom localizado con toda su potencia.#!" #NT!
+  
+  # Fascinate 
+ fascinate_visible: "Fascinar" #NT!
+  
+ arcanoi_distraction_perk_name: "Distracción" #NT!
+ arcanoi_remembrance_perk_name: "Remembranza" #NT!
+ charge_of_duty_perk_name: "Encargado del deber" #NT!
+ driving_urge_perk_name: "Impulso impulsor" #NT!
+ target_lock_perk_name: "Objetivo bloqueado" #NT!
+  
+ ARCANOI_DISTRACTION_PERK_EFFECT: "#F Un Resucitado puede obligar a un objetivo a recordar algo más que debe hacer.#!" #NT!
+ ARCANOI_REMEMBRANCE_PERK_EFFECT: "#F Un Resucitado puede implantar un pensamiento o idea simple en la mente de un objetivo.#!" #NT!
+ CHARGE_OF_DUTY_PERK_EFFECT: "#F Un Resucitado puede obligar a su objetivo a centrarse en un concepto único y simple.#!" #NT!
+ DRIVING_URGE_PERK_EFFECT: "#F Un Resucitado puede crear una obsesión leve en un objetivo.#!" #NT!
+ TARGET_LOCK_PERK_EFFECT: "#F Un Resucitado puede obligar a un objetivo a centrarse en una sola cosa o persona hasta el punto de la obsesión extrema.#!" #NT!
+  
+  # Serendipity 
+ serendipity_visible: "Casualidad" #NT!
+  
+ fortuitous_wandering_perk_name: "Vagabundeo fortuito" #NT!
+ flashback_perk_name: "Escena retrospectiva" #NT!
+ the_face_in_the_crowd_perk_name: "El rostro entre la multitud" #NT!
+ fortuitous_meeting_perk_name: "Encuentro fortuito" #NT!
+ the_coincidental_gathering_perk_name: "La reunión casual" #NT!
+  
+ FORTUITOUS_WANDERING_PERK_EFFECT: "#F Un Resucitado puede descubrir pistas que lo guíen hacia una de sus Pasiones.#!" #NT!
+ FLASHBACK_PERK_EFFECT: "#F Un Resucitado puede evocar una imagen de algo importante que sucedió cerca o con uno de sus [Fetters|E].#!" #NT!
+ THE_FACE_IN_THE_CROWD_PERK_EFFECT: "#F Un Resucitado puede saber si una persona está conectada con una de sus Pasiones o [Fetters|E].#!" #NT!
+ FORTUITOUS_MEETING_PERK_EFFECT: "#F Un Resucitado puede torcer el Destino para permitirle conocer a alguien con quien quiera hablar o visitar.#!" #NT!
+ THE_COINCIDENTAL_GATHERING_PERK_EFFECT: "#F Un Resucitado puede reunir a varias personas en un encuentro "casual".#!" #NT!
+  
+  # Behest 
+ behest_visible: "Petición" #NT!
+  
+ delve_perk_name: "Ahondar" #NT!
+ trance_perk_name: "Trance" #NT!
+ arcanoi_scry_perk_name: "Adivinar" #NT!
+ divine_perk_name: "Divino" #NT!
+ arcanoi_twitch_perk_name: "Contracción nerviosa" #NT!
+ murmur_perk_name: "Murmullo" #NT!
+ veer_perk_name: "Virar" #NT!
+  
+ DELVE_PERK_EFFECT: "#F Un Moriman puede entrar en trance y experimentar lo que un objetivo ha pasado recientemente.#!" #NT!
+ TRANCE_PERK_EFFECT: "#F Al usar una posesión del objetivo o ir a un lugar que haya desocupado recientemente, un Moriman puede encontrar su ubicación actual.#!" #NT!
+ ARCANOI_SCRY_PERK_EFFECT: "#F Un Moriman puede percibir lo que otro espectro ve actualmente.#!" #NT!
+ DIVINE_PERK_EFFECT: "#F Un Moriman puede ver el futuro de sí mismo o de otro espectro.#!" #NT!
+ ARCANOI_TWITCH_PERK_EFFECT: "#F Un Moriman puede forzar pequeños movimientos a un espectro.#!" #NT!
+ MURMUR_PERK_EFFECT: "#F Un Moriman puede hablar a través de otro espectro.#!" #NT!
+ VEER_PERK_EFFECT: "#F Un Moriman puede crear un control de tipo Títere sobre otro espectro.#!" #NT!
+  
+  # Connaissance 
+ connaissance_visible: "Conocimiento" #NT!
+  
+ reler_baka_perk_name: "Reler Baka" #NT!
+ renvoyer_baka_perk_name: "Reenviador Baka" #NT!
+ engagement_perk_name: "Compromiso" #NT!
+ renforcer_les_chaveaux_perk_name: "Reforzar las llaves" #NT!
+ reler_mystere_perk_name: "Relato misterioso" #NT!
+ retirer_den_bas_de_leau_perk_name: "Retirer d'en bas de l'eau" #NT!
+ marrer_baka_perk_name: "Marrer Baka" #NT!
+ bonte_abyssale_perk_name: "Bonté Abyssale" #NT!
+  
+ RELER_BAKA_PERK_EFFECT: "#F Un Baka puede ser invocado por un Sirviente.#!" #NT!
+ RENVOYER_BAKA_PERK_EFFECT: "#F Un sirviente usa este arte para asustar a los Baka y alejarlos de sí mismos.#!" #NT!
+ ENGAGEMENT_PERK_EFFECT: "#F La mente de un Baka puede ser manipulada a través de sugestiones sutiles.#!" #NT!
+ RENFORCER_LES_CHAVEAUX_PERK_EFFECT: "#F Un Sirviente puede otorgar temporalmente a un mortal cualquier Arcanoi que tenga que afecte al [skinlands|E], así como Potencia, Celeridad o Fortaleza.#!" #NT!
+ RELER_MYSTERE_PERK_EFFECT: "#F Un Loa puede acceder a la vasta red de información custodiada por Les Mysteres.#!" #NT!
+ RETIRER_DEN_BAS_DE_LEAU_PERK_EFFECT: "#F Un Sirviente puede crear un nuevo permanente [Fetter|E] en conjunción con un houngan mortal.#!" #NT!
+ MARRER_BAKA_PERK_EFFECT: "#F Un Sirviente puede capturar y controlar a un Baka solo a través de su voluntad.#!" #NT!
+ BONTE_ABYSSALE_PERK_EFFECT: "#F Un Sirviente forma un pacto con Les Mysteres que les permite invocar una Reliquia o Artefacto de la Isla Bajo el Mar.#!" #NT!
+  
+  # Displace 
+ displace_visible: "Desplazar" #NT!
+  
+ wraithride_perk_name: "Paseo espectral" #NT!
+ deflect_perk_name: "Cambiar" #NT!
+ transfuse_perk_name: "Transfundir" #NT!
+ reconfigure_perk_name: "Reconfigurar" #NT!
+ transmogrify_perk_name: "Transfigurar" #NT!
+  
+ WRAITHRIDE_PERK_EFFECT: "#F Un Tvashtriya puede deslizarse hacia el [Corpus|E] de un espectro.#!" #NT!
+ DEFLECT_PERK_EFFECT: "#F Con esta habilidad, un Tvashtriya puede esconderse aún más dentro de un espectro montado para evitar ser detectado.#!" #NT!
+ TRANSFUSE_PERK_EFFECT: "#F Un Tvashtriya puede tomar o dar Pathos a su anfitrión.#!" #NT!
+ RECONFIGURE_PERK_EFFECT: "#F Esto permite que un Tvashtriya realice pequeños cambios en el host [Corpus|E].#!" #NT!
+ TRANSMOGRIFY_PERK_EFFECT: "#F Un Tvashtriya puede transformar a un [Corpus|E] poseído en una sustancia espiritual amorfa, lista para ser moldeada desde adentro.#!" #NT!

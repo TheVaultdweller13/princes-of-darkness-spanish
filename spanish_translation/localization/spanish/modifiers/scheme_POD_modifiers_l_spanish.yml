@@ -1,0 +1,44 @@
+﻿l_spanish:
+ diablerize_scheme_resistance_mult: "[GetScheme('diablerize').GetTypeName] [scheme_resistance|E]" #NT!
+ diablerize_scheme_resistance_add: "$diablerize_scheme_resistance_mult$" #NT!
+ diablerize_scheme_power_mult: "[GetScheme('diablerize').GetTypeName] [scheme_power|E]" #NT!
+ diablerize_scheme_power_add: "$diablerize_scheme_power_mult$" #NT!
+ PODbloodbond_scheme_resistance_mult: "[GetScheme('PODbloodbond').GetTypeName] [scheme_resistance|E]" #NT!
+ PODbloodbond_scheme_resistance_add: "$PODbloodbond_scheme_resistance_mult$" #NT!
+ PODbloodbond_scheme_power_mult: "[GetScheme('PODbloodbond').GetTypeName] [scheme_power|E]" #NT!
+ PODbloodbond_scheme_power_add: "$PODbloodbond_scheme_power_mult$" #NT!
+ vamphunt_scheme_power_mult: "[GetScheme('vamphunt').GetTypeName] [scheme_power|E]" #NT!
+ vamphunt_scheme_power_add: "$vamphunt_scheme_power_mult$" #NT!
+ vamphunt_scheme_resistance_mult: "[GetScheme('vamphunt').GetTypeName] [scheme_resistance|E]" #NT!
+ vamphunt_scheme_resistance_add: "$vamphunt_scheme_resistance_mult$" #NT!
+ PODrationalize_scheme_resistance_mult: "[GetScheme('PODrationalize').GetTypeName] [scheme_resistance|E]" #NT!
+ PODentrance_scheme_power_mult: "[GetScheme('PODentrance').GetTypeName] [scheme_power|E]" #NT!
+ PODsummon_scheme_power_mult: "[GetScheme('PODsummon').GetTypeName] [scheme_power|E]" #NT!
+ max_PODsummon_schemes_add: "Máximo [GetScheme('PODsummon').GetTypeName] [schemes|E]" #NT!
+ max_befriend_schemes_add: "Máximo [GetScheme('befriend').GetTypeName] [schemes|E]" #NT!
+ max_seduce_schemes_add: "Máximo [GetScheme('seduce').GetTypeName] [schemes|E]" #NT!
+ max_abduct_schemes_add: "Máximo [GetScheme('abduct').GetTypeName] [schemes|E]" #NT!
+ max_steal_back_artifact_schemes_add: "Máximo [GetScheme('steal_back_artifact').GetTypeName] [schemes|E]" #NT!
+ steal_back_artifact_scheme_power_mult: "[GetScheme('steal_back_artifact').GetTypeName] [scheme_power|E]" #NT!
+ seduce_scheme_resistance_mult: "[GetScheme('seduce').GetTypeName] [scheme_resistance|E]" #NT!
+  
+ claim_throne_scheme_power_add: "$claim_throne_scheme_power_mult$" #NT!
+ fabricate_hook_scheme_power_mult: "[GetScheme('fabricate_hook').GetTypeName] [scheme_power|E]" #NT!
+ fabricate_hook_scheme_power_add: "$fabricate_hook_scheme_power_mult$" #NT!
+ sway_scheme_resistance_mult: "[GetScheme('sway').GetTypeName] [scheme_resistance|E]" #NT!
+ sway_scheme_resistance_add: "$sway_scheme_resistance_mult$" #NT!
+ sway_scheme_power_add: "$sway_scheme_power_mult$" #NT!
+ abduct_scheme_resistance_mult: "[GetScheme('abduct').GetTypeName] [scheme_resistance|E]" #NT!
+ abduct_scheme_resistance_add: "$abduct_scheme_resistance_mult$" #NT!
+ abduct_scheme_power_mult: "[GetScheme('abduct').GetTypeName] [scheme_power|E]" #NT!
+ murder_scheme_resistance_mult: "[GetScheme('murder').GetTypeName] [scheme_resistance|E]" #NT!
+ murder_scheme_resistance_add: "$murder_scheme_resistance_mult$" #NT!
+ POD_corrupt_scheme_scheme_power_add: "$POD_corrupt_scheme_scheme_power_mult$" #NT!
+ POD_corrupt_scheme_scheme_power_mult: "[GetScheme('POD_corrupt_scheme').GetTypeName] [scheme_power|E]" #NT!
+  
+ scheme_power_against_friend_mult: "[scheme_power|E] contra [friend|E]" #NT!
+ scheme_power_against_best_friend_mult: "[scheme_power|E] contra [best_friend|E]" #NT!
+ scheme_power_against_soulmate_mult: "[scheme_power|E] contra [soulmates|E]" #NT!
+ scheme_power_against_rival_mult: "[scheme_power|E] contra [rivals|E]" #NT!
+ scheme_power_against_nemesis_mult: "[scheme_power|E] contra [nemesis|E]" #NT!
+ scheme_power_against_lover_mult: "[scheme_power|E] contra [lovers|E]" #NT!

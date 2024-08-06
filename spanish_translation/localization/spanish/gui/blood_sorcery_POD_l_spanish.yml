@@ -1,0 +1,259 @@
+﻿l_spanish:
+  
+ open_bs_menu: "Abre el menú de hechicería de sangre, lo que te permite comprar y lanzar hechizos de magia de sangre." #NT!
+ blood_sorcery_interaction: "Hechicería de sangre" #NT!
+ blood_sorcery_interaction_desc: "Abre el menú de hechicería de sangre con tu objetivo como sujeto del hechizo." #NT!
+ blood_sorcery_open.ct: "El menú de brujería de sangre ya está abierto." #NT!
+  
+ nothingloc: "Elige un camino" #NT!
+ use_willpower: "Utilice la fuerza de voluntad" #NT!
+ title_bs: "[bloodsorcery|E]" #NT!
+ cost_loc: "Costo de aumento:" #NT!
+ purchase: "Compra" #NT!
+ execute_loc: "Ejecutar" #NT!
+ effects_loc: "Efectos" #NT!
+ caster_loc: "Castor" #NT!
+ target_loc: "Objetivo" #NT!
+ current_exp: "Actual [bloodsorcery_exp_short|E] puntos:" #NT!
+  
+ path_of_bloodloc: "Camino de sangre" #NT!
+ path_of_cursesloc: "Camino de maldiciones" #NT!
+ path_of_marsloc: "Camino de Marte" #NT!
+ path_of_fathersvengence_loc: "El camino de la venganza del padre" #NT!
+ path_of_neptunes_mightloc: "El camino del poder de Neptuno" #NT!
+ path_of_focused_mindloc: "El camino de la mente enfocada" #NT!
+ path_of_ritualsloc: "Rituales" #NT!
+ path_of_praaptiloc: "Camino de Praapti" #NT!
+ path_of_music_of_the_shperesloc: "Música de las Esferas" #NT!
+  
+ NOT_SAME_PLACE: "Usted y el objetivo deben estar en el mismo lugar, en la misma cancha o en el mismo campo de batalla." #NT!
+ NOT_I_need_rating: "¡Aún no tengo este poder!" #NT!
+ NOT_can_only_be_used_once_on_target: "Sólo se puede utilizar una vez por objetivo." #NT!
+ POWER_COOLDOWN: "Este poder está en enfriamiento." #NT!
+ path_maxed: "Ya aprendí todo lo que hay que aprender sobre este camino." #NT!
+ not_enough_points: "No tengo suficiente XP para comprar el siguiente poder." #NT!
+ not_adept_enough: "Necesito avanzar más en el árbol de estilo de vida de la hechicería de sangre antes de poder descubrir los secretos más profundos de la sangre." #NT!
+  
+ path_buy_toast: "¡Camino aumentado!" #NT!
+ spell_botch: "¡Hechizo fallido!" #NT!
+  
+  
+ path_of_blood_botch_ct: "#R Fallo; Tu sangre explota en una muestra de sangre y dolor que te revuelve las entrañas, hiriéndote y aumentando tu hambre.#!" #NT!
+ power_a_taste_of_blood: "Un sabor de sangre" #NT!
+ power_blood_of_potency: "Sangre de potencia" #NT!
+ power_theft_of_vitae: "Robo de vitae" #NT!
+ taste_of_blood_works: "Aprenderás los secretos de [target.GetTitledFirstNamePossessive] sangre, como la generación, [diablerie|E], tipo sobrenatural y más." #NT!
+ taste_of_blood_works.toast: "¡Hechizo exitoso!" #NT!
+ taste_of_blood_works.toast.ct: "Has extraído todo lo que has podido de la sangre." #NT!
+ taste_of_blood_fail: "Tu hechizo fallará." #NT!
+ taste_of_blood_fail.toast: "Hechizo fallido" #NT!
+ taste_of_blood_fail.toast.ct: "Los secretos de Vitae permanecen ocultos para ti." #NT!
+  
+ blood_of_potency.toast.3: "¡Hechizo exitoso!" #NT!
+ blood_of_potency.toast.3.ct: "¡Tu potencia de sangre aumentó en 3!" #NT!
+ BS_bp_increase_3: "Tu potencia sanguínea aumenta en 3" #NT!
+ path_of_blood.1000.toast: "La sangre diluye" #NT!
+ path_of_blood.1000.toast.blood_potency_reduced: "El hechizo que espesó tu sangre se desvanece..." #NT!
+ blood_of_potency.toast.2: "¡Hechizo exitoso!" #NT!
+ blood_of_potency.toast.2.ct: "¡Tu potencia de sangre aumentó en 2!" #NT!
+ BS_bp_increase_2: "Tu potencia sanguínea aumenta en 2" #NT!
+  
+ blood_of_potency.toast.1: "¡Hechizo exitoso!" #NT!
+ blood_of_potency.toast.1.ct: "¡Tu potencia de sangre aumentó en 1!" #NT!
+ BS_bp_increase_1: "Tu potencia sanguínea aumenta en 1" #NT!
+ blood_of_potency_fail.toast: "Hechizo fallido" #NT!
+ blood_of_potency_fail.toast.ct: "Los secretos de Vitae permanecen ocultos para ti." #NT!
+ BS_bp_fail: "No logras espesar tu sangre." #NT!
+  
+ theft_of_vitae_hunger_increase: "[target.GetTitledFirstNamePossessive] el hambre aumentará." #NT!
+ theft_of_vitae_fail: "No logras atraer sangre hacia ti." #NT!
+ theft_of_vitae_fail.toast.1: "¡El hechizo falló!" #NT!
+ theft_of_vitae_fail.toast.1.ct: "No logras sacarte sangre." #NT!
+ theft_of_vitae.toast.1: "¡Hechizo exitoso!" #NT!
+ theft_of_vitae.toast.1.ct: "La sangre es espesa y potente cuando llega a tus colmillos..." #NT!
+ theft_of_vitae_steal_blood: "Robarás un poco de sangre de [target.GetTitledFirstNamePossessive] y te alimentarás de ella, reponiendo tus propios suministros mientras drenas los de ellos." #NT!
+  
+ power_strike_true: "Golpea con fuerza" #NT!
+ power_wind_dance: "Danza del viento" #NT!
+ power_comrades_in_arms: "Camaradas de armas" #NT!
+ path_of_mars_botch_ct: "#R Fallo; El hechizo obstaculizará tus esfuerzos de guerra en lugar de ayudarlos.#!" #NT!
+ path_of_mars_botch_modifier: "Marchitamiento mágico" #NT!
+  
+ strike_true.toast.1: "¡Hechizo exitoso!" #NT!
+ strike_true.toast.1.ct: "[target.GetTitledFirstNamePossessive] espada siempre encontrará su marca." #NT!
+ strike_true_fail.toast.1: "¡El hechizo falló!" #NT!
+ strike_true_fail.toast.1.ct: "Tu bendición no logró afianzarse." #NT!
+ strike_true_fail: "La espada NO debe golpear con precisión." #NT!
+  
+ wind_dance.toast.1: "¡Hechizo exitoso!" #NT!
+ wind_dance.toast.1.ct: "El propio viento lucha por superar a [target.GetTitledFirstName]." #NT!
+ wind_dance_fail.toast.1: "¡El hechizo falló!" #NT!
+ wind_dance_fail.toast.1.ct: "Demasiado lento, demasiado torpe" #NT!
+ wind_dance_fail: "Tu hechizo fallará." #NT!
+  
+ comrades_in_arms_knight_ct: "[target.GetTitledFirstNamePossessive] Los caballeros se volverán más poderosos mientras dure el hechizo." #NT!
+ comrades_in_arms.toast.1: "¡Hechizo exitoso!" #NT!
+ comrades_in_arms.toast.1.ct: "La esencia del coraje fue entregada a tus guerreros." #NT!
+ comrades_in_arms_fail.toast.1: "¡El hechizo falló!" #NT!
+ comrades_in_arms_fail.toast.1.ct: "No lograste inspirar verdadero coraje en los corazones de tus seguidores." #NT!
+ comrades_in_arms_fail: "No se dará valor a tus seguidores, ni tendrás su lealtad." #NT!
+ path_of_mars_1_modifier: "Golpea con fuerza" #NT!
+ path_of_mars_2_modifier: "Danza del viento" #NT!
+ path_of_mars_3_modifier: "Camaradas de armas" #NT!
+ path_of_mars_3_knights_modifier: "Reforzado por la hechicería" #NT!
+  
+  
+  
+ power_eyes_of_the_sea: "Ojos del mar" #NT!
+ power_prison_of_water: "Prisión de agua" #NT!
+ power_dehydrate: "Deshidratar" #NT!
+ path_of_neptunes_might_botch_ct: "#R ¡Qué chapuza! Dibujas el mar demasiado y el resultado es... desagradable. Peor aún, ¡el agua podría volverse contra ti!#!" #NT!
+ path_of_neptunes_might_botch_modifier: "Sospechoso" #NT!
+  
+ eyes_of_the_sea_works: "El agua te susurra un secreto al azar de la corte, si es que existe." #NT!
+ eyes_of_the_sea_fail: "El mar está en silencio." #NT!
+ eyes_of_the_sea.toast.1: "¡Hechizo exitoso!" #NT!
+ eyes_of_the_sea_fail.toast.1: "¡El hechizo falló!" #NT!
+ eyes_of_the_sea_fail.toast.1.ct: "No aprendes ningún secreto" #NT!
+  
+ prison_of_water_works: "Encadenas a [target.GetTitledFirstName] en lazos irrompibles de agua, y ellos son llevados a tus mazmorras." #NT!
+ prison_of_water.toast.1: "¡Hechizo exitoso!" #NT!
+ prison_of_water_fail: "La fuerza del objetivo abrumará tu magia." #NT!
+ prison_of_water_fail.toast.1: "¡El hechizo falló!" #NT!
+ prison_of_water_fail.toast.1.ct: "¿Quizás las cadenas de agua no fueron la mejor idea?" #NT!
+  
+ dehydrate_3: "[target.GetTitledFirstNamePossessive] La sangre se secará casi por completo y los dejará débiles. Si son mortales, esto los herirá gravemente o incluso los matará. De lo contrario, podría dañar sus reservas de sangre." #NT!
+ dehydrate_2: "[target.GetTitledFirstName] perderá una cantidad considerable de sangre. Si es mortal, ¡esto lo herirá gravemente o incluso lo matará!" #NT!
+ dehydrate.toast.2: "¡Hechizo exitoso!" #NT!
+ dehydrate.toast.1: "¡Hechizo exitoso!" #NT!
+ dehydrate_fail: "Tu magia no podrá atacar con [target.GetTitledFirstNamePossessive] sangre." #NT!
+ dehydrate_fail.toast.1.ct: "Su ataque no fue suficiente para dañar significativamente al objetivo." #NT!
+ dehydrate_fail.toast.1: "¡El hechizo falló!" #NT!
+  
+ power_stigma: "Estigma" #NT!
+ power_malady: "Enfermedad" #NT!
+ power_acedia: "acedía" #NT!
+  
+ power_template.toast.1: ""
+ power_template_fail.toast.1: ""
+ power_template_fail.toast.1.: ""
+  
+ stigma_modifier: "La maldición del estigma" #NT!
+ malady_modifier: "Maldición de la enfermedad" #NT!
+ acedia_modifier: "La maldición de la acedia" #NT!
+ path_of_curses_botch_ct: "#R ¡Chapuza! ¡La maldición se vuelve contra ti!#!" #NT!
+  
+ stigma_works: "La víctima será odiada por todos los que [target.GetSheHe] conozca y verá a los más cercanos a [target.GetHerHim] convertirse en los mayores rivales de [target.GetHerHis]." #NT!
+ stigma_fail: "La víctima ignora tu maldición." #NT!
+ stigma.toast.1: "¡Hechizo exitoso!" #NT!
+ stigma_fail.toast.1: "¡El hechizo falló!" #NT!
+ stigma_fail.toast.1.ct: "[target.GetTitledFirstName] ha derrotado tu maldita maldición." #NT!
+  
+ malady_works: "[target.GetTitledFirstName] será afectado por una enfermedad que lo debilitará y lo perturbará." #NT!
+ malady_fail: "[target.GetTitledFirstName] demuestra ser demasiado poderoso para derribarlo con pequeñas maldiciones." #NT!
+ malady.toast.1: "¡Hechizo exitoso!" #NT!
+ malady_fail.toast.1: "¡El hechizo falló!" #NT!
+ malady_fail.toast.1.ct: "[target.GetTitledFirstName] ha derrotado tu maldita maldición." #NT!
+  
+ acedia_works: "La maldición definitiva: nada de lo que haga [target.GetTitledFirstName] se librará de tu oscura influencia. Todas sus estadísticas se verán reducidas." #NT!
+ acedia_fail: "[target.GetTitledFirstName] procede con pura fuerza de voluntad y fortaleza mental, rompiendo tu maldición." #NT!
+ acedia.toast.1: "¡Hechizo exitoso!" #NT!
+ acedia.toast.1.ct: "Durante los próximos dos años, la víctima no conocerá nada más que sufrimiento." #NT!
+ acedia_fail.toast.1: "¡Hechizo fallido!" #NT!
+ acedia_fail.toast.1.ct: "[target.GetTitledFirstName] ha derrotado tu maldita maldición." #NT!
+  
+  
+ murder_save.toast.1: "Salvado del asesinato" #NT!
+ murder_save.toast.1.ct: "¡El hechizo de preparación te salvó de la muerte!" #NT!
+  
+ power_readiness: "Preparación" #NT!
+ power_centering: "Centrado" #NT!
+ power_perfect_clarity: "Claridad perfecta" #NT!
+ path_of_focused_mind_botch_ct: "#R Pifia; Tu mente está devastada; O obtendrás un rasgo mental negativo o una enorme cantidad de estrés.#!" #NT!
+  
+ readiness_works: "Nunca te sorprenderás y siempre estarás preparado para una respuesta rápida. Tu constante alerta te salvará incluso de quienes conspiran contra ti para asesinarte, una vez." #NT!
+ readiness_fail: "Tu mente no puede hacer frente a una conciencia plena y constante." #NT!
+ readiness.toast.1: "¡Hechizo exitoso!" #NT!
+ readiness_fail.toast.1: "¡El hechizo falló!" #NT!
+ readiness_fail.toast.1.ct: "No lograste encantar tu mente." #NT!
+  
+  
+ centering_works_1: "Levantas una débil barrera entre tu mente y el mundo exterior, alejando algunas distracciones." #NT!
+ centering_works_2: "Te hundes más profundamente en tu psique, protegiendo tu ser interior y alejando el estrés significativo." #NT!
+ centering_works_3: "Estás tú y luego está todo lo demás. No hay estrés ni distracción que pueda atravesarte y tienes espacio para reflexionar sobre los misterios más profundos." #NT!
+ centering_fail: "No logras concentrarte en tu yo interior." #NT!
+ centering.toast.1: "¡Hechizo exitoso!" #NT!
+ centering_fail.toast.1: "¡El hechizo falló!" #NT!
+ centering_fail.toast.1.ct: "Había demasiadas distracciones..." #NT!
+  
+ perfect_clarity_works: "Tu comprensión del mundo rozará lo divino: te volverás más inteligente, mejor. Sobre todo, trascenderás a tu bestia por un tiempo y serás inmune al frenesí." #NT!
+ perfect_clarity_fail: "Tu tercer ojo (metafórico) permanece cerca e ignorante del hermoso potencial de la claridad absoluta." #NT!
+ perfect_clarity.toast.1: "¡Hechizo exitoso!" #NT!
+ perfect_clarity_fail.toast.1: "¡El hechizo falló!" #NT!
+ perfect_clarity_fail.toast.1.ct: "La comprensión completa se te escapa una vez más." #NT!
+  
+  
+ centering_1_modifier: "Centrado 1" #NT!
+ centering_2_modifier: "Centrado 2" #NT!
+ centering_3_modifier: "Centrado 3" #NT!
+  
+ perfect_clarity_modifier: "Claridad perfecta" #NT!
+ readiness_modifier: "Consciente" #NT!
+  
+ power_emergency_recall: "Retirada de emergencia" #NT!
+ emergency_recall.toast.1: "¡Hechizo exitoso!" #NT!
+ emergency_recall_fail.toast.1.ct: "Atascado en el lugar...." #NT!
+ emergency_recall_fail.toast.1: "Hechizo fallido" #NT!
+ emergency_recall_works: "Tú, junto con todo tu ejército, serás transportado a tu capital." #NT!
+ emergency_recall_fail: "Tus súplicas quedan sin respuesta y te quedas abandonado en tu lugar de peligro." #NT!
+ path_of_praapti_botch_ct: "#R Al deformar el espacio, las cosas pueden salirse de control... Ten cuidado de no teletransportarte al lugar equivocado.#!" #NT!
+ praapti_3_botch_modifier: "Atascado en el lugar" #NT!
+ emergency_recall_succ.ct: "Tu ejército llega a casa sano y salvo a través del vórtice." #NT!
+  
+ power_bind_in_vine_and_sand: "Atar en Vid y Arena" #NT!
+ bind_in_vine_and_sand_fail: "No logras hacer ninguna diferencia notable" #NT!
+ bind_in_vine_and_sand_fail.toast.1: "¡El hechizo falló!" #NT!
+ bind_in_vine_and_sand_fail.toast.1.ct: "Set no ha bendecido tus esfuerzos esta noche...." #NT!
+ bind_in_vine_and_sand_works: "Aumentas el espacio alrededor de tu objetivo, ralentizando considerablemente sus ejércitos." #NT!
+ praapti_2_modifier: "Espacio engrosado" #NT!
+  
+ power_travel_on_mythic_strings: "Viajando en cuerdas míticas" #NT!
+ travel_on_mythic_strings_works: "Tiras de los hilos que conectan todo en la realidad y viajas a la ubicación del objetivo, llevando contigo a tu ejército. Este poder tiene un tiempo de recuperación de 5 años." #NT!
+ travel_on_mythic_strings.toast.1: "¡Hechizo exitoso!" #NT!
+ travel_on_mythic_strings_fail: "Permaneces arraigado en el lugar como un insignificante mortal, incapaz de viajar a las dimensiones superiores." #NT!
+ travel_on_mythic_strings_fail.toast.1: "¡El hechizo falló!" #NT!
+ travel_on_mythic_strings_fail.toast.1.ct: "Los hilos de la realidad permanecen cerrados ante ti." #NT!
+ travel_on_mythic_strings_succ.ct: "Llegas a [target.GetCurrentLocation.GetName]" #NT!
+ emergency_recall_botch.ct: "Te agitas sin poder hacer nada a través del espacio deformable, cayendo en un condado al azar." #NT!
+  
+  
+ path_of_music_of_the_shperes_botch_ct: "#R Cuando un hechicero enfada a las esferas celestiales, los resultados suelen ser irónicos. El místico puede perder la voz, que le inviertan la canción o incluso que le revoquen sus derechos mágicos.#!" #NT!
+ power_song_of_venus: "Canción de Venus" #NT!
+ song_of_venus_works: "Con el suave canto celestial de Venus, un practicante puede inspirar sentimientos de afecto o reducir emociones de odio o malicia. Este hechizo lleva al objetivo un paso más hacia la amistad o busca disminuir una rivalidad. Solo se puede usar una vez por sujeto." #NT!
+ song_of_venus_fail: "Tu sujeto rechaza el canto celestial." #NT!
+ song_of_venus.toast.1: "¡Hechizo exitoso!" #NT!
+ song_of_venus_fail.toast.1: "¡El hechizo falló!" #NT!
+ song_of_venus_fail.toast.1.ct: "Los cielos han rechazado tu petición de afecto." #NT!
+ song_of_venus_botch_modifier: "Apagado" #NT!
+ song_of_venus_rival: "Tu objetivo ahora es un mero rival" #NT!
+ song_of_venus_potential_rival: "Tu objetivo ahora es solo un rival potencial" #NT!
+ song_of_venus_neutral: "Tu objetivo ahora es neutral hacia ti." #NT!
+  
+ power_song_of_saturn: "Canción de Saturno" #NT!
+ song_of_saturn_modifier: "Canción de Saturno" #NT!
+ song_of_saturn_works: "Lanzas una ráfaga profunda de viento helado y oscuridad total, invocando el miedo a lo desconocido. Cualquiera que presencie a tu objetivo se llena de ese miedo, lo que le otorga un aura palpable de terror y majestuosidad." #NT!
+ song_of_saturn_fail: "No logras generar la emoción profunda del alma requerida para el canto fúnebre." #NT!
+ song_of_saturn.toast.1: "¡Hechizo exitoso!" #NT!
+ song_of_saturn_fail.toast.1: "¡El hechizo falla!" #NT!
+ song_of_saturn_fail.toast.1.ct: "El chillido que sale de tu boca es más divertido que espantoso." #NT!
+ song_of_saturn_botch_modifier: "Burla de Saturno" #NT!
+  
+ power_song_of_jupiter: "Canción de Júpiter" #NT!
+ song_of_jupiter_works: "Los cantos místicos de los grandes héroes, de las personas que se enfrentaron a la tentación y conquistaron el impulso. Los sonidos forman una cacofonía que envuelve el aura del objetivo, protegiéndolo de los [disciplines|EL] que controlan la mente como presencia y la dominan." #NT!
+ song_of_jupiter_fail: "Vacilas ante la gran historia que intentas canalizar." #NT!
+ song_of_jupiter.toast.1: "¡Hechizo exitoso!" #NT!
+ song_of_jupiter_succ.ct: "Tu corona, tu protección sobre tu objetivo." #NT!
+ song_of_jupiter_fail.toast.1: "¡El hechizo falló!" #NT!
+ song_of_jupiter_fail.toast.1.ct: "Tu voz te abrumó y no rodeó a tu objetivo." #NT!
+ song_of_jupiter_botch.ct: "Los dioses están enojados. Durante cinco años no podrás realizar magia de sangre." #NT!
+  

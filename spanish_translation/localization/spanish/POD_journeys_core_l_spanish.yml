@@ -1,0 +1,165 @@
+﻿l_spanish:
+  
+  #################### 
+  ##### Tooltips ##### 
+  #################### 
+  
+  ##### Horrible Datafunctions (no need to translate) 
+  
+ POD_JOURNEY_DESC: "[SelectLocalization( EqualTo_string( PlayerJourneyPhase , 'travel_phase' ), 'POD_JOURNEY_TRAVEL_DESC', 'POD_JOURNEY_PLANNING_DESC' )]" #NT!
+ POD_JOURNEY_DESC_NOPROGRESS: "[SelectLocalization( EqualTo_string( PlayerJourneyPhase , 'travel_phase' ), 'POD_JOURNEY_TRAVEL_DESC', 'POD_JOURNEY_PLANNING_DESC_NOPROGRESS' )]" #NT!
+  
+ POD_JOURNEY_PLANNING_DESC: "#T;V $POD_JOURNEY_GETNAME$#!\n$POD_JOURNEY_SELECT_DESC$\n\n$POD_journey_progress_desc$\n$POD_journey_planning_speed_desc$\n\n#help $POD_JOURNEY_GET_TT$#!" #NT!
+ POD_JOURNEY_PLANNING_DESC_NOPROGRESS: "#T $POD_JOURNEY_GETNAME$#!\n$POD_JOURNEY_SELECT_DESC$\n\n$POD_journey_planning_speed_desc$\n\n#help $POD_JOURNEY_GET_TT$#!" #NT!
+ POD_JOURNEY_TRAVEL_DESC: "#T;V $POD_JOURNEY_GETNAME$#!\n$POD_JOURNEY_SELECT_DESC$\n\n#help $POD_JOURNEY_GET_TT$#!" #NT!
+  
+ POD_JOURNEY_SELECT_DESC: "[SelectLocalization( GetScriptedGui('POD_has_coterie_members_sgui').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End), 'POD_journey_coterie_desc', 'POD_journey_player_desc' )]" #NT!
+  
+ POD_JOURNEY_GETNAME: "[GetPlayer.MakeScope.Var('current_journey').Story.Custom('PODShowJourneyName')]" #NT!
+  
+ POD_JOURNEY_GETPROGRESS: "[SelectLocalization( EqualTo_float(FixedPointToFloat(PlayerJourneyProgress),IntToFloat(FixedPointToInt(PlayerJourneyProgress))), 'POD_JOURNEY_GETPROGRESS_NODECIMALS', 'POD_JOURNEY_GETPROGRESS_DECIMALS' )]%" #NT!
+ POD_JOURNEY_GETPROGRESS_NODECIMALS: "[PlayerJourneyProgress|0]" #NT!
+ POD_JOURNEY_GETPROGRESS_DECIMALS: "[PlayerJourneyProgress|1]" #NT!
+  
+ POD_JOURNEY_GET_TT: "[Localize(Concatenate(PlayerJourneyID,'_tt'))]" #NT!
+  
+ POD_journey_name: "[Localize(Concatenate(ROOT.Var('journey_type').GetFlagName,'_name'))]" #NT!
+ POD_journey_name_targeted: "$POD_journey_name$ [ROOT.Var('target').Char.GetFirstName]" #NT!
+ POD_journey_name_targeted_trait: "$POD_journey_name$ [ROOT.Var('target_trait').Trait.GetName(GetPlayer)]" #NT!
+ POD_journey_name_targeted_artifact: "$POD_journey_name$ [ROOT.Var('target_artifact').Artifact.GetName]" #NT!
+  
+ POD_current_journey: "#TOOLTIP:POD_JOURNEY_DESC #V $POD_JOURNEY_GETNAME$#!#!" #NT!
+  
+  ##### Actual text starts here 
+  
+ BOTTOMBAR_JOURNEY_TOOLTIP: "#T Viaje:#!\n$POD_JOURNEY_DESC$" #NT!
+  
+ POD_journey_coterie_desc: "Los miembros de $POD_player_coterie$ están en el [GetPlayer.Custom('PODShowJourneyPhase')] de su [journey|E]." #NT!
+ POD_journey_player_desc: "[GetPlayer.GetFirstNameNoTooltip] está en el [GetPlayer.Custom('PODShowJourneyPhase')] de [GetPlayer.GetHerHis|l] [journey|E]." #NT!
+  
+ POD_journey_progress_desc: "Progreso: #V;P;bold $POD_JOURNEY_GETPROGRESS$#!" #NT!
+ POD_journey_planning_speed_desc: "[planning_speed|E]: #V [Localize(Concatenate(GetPlayer.MakeScope.Var('current_journey').Var('progress_value').GetFlagName,'_monthly_num_current'))]#![AddTextIf(Not(PlayerGuiIsShown('POD_current_journey_is_instant')),' #help (ver información sobre herramientas para más detalles)#!')]" #NT!
+  
+ POD_journey_phase_planning: "[planning_phase|E]" #NT!
+ POD_journey_phase_travel: "[travel_phase|E]" #NT!
+ POD_journey_phase_error: "ERROR DE FASE" #NT!
+  
+  
+  ###################### 
+  ##### GUI Window ##### 
+  ###################### 
+  
+ JOURNEY_TAB_JOURNEYS: "Lista de viajes" #NT!
+ JOURNEY_TAB_COTERIE: "[Select_CString( PlayerGuiIsValid('POD_has_coterie_sgui'), GetPlayer.Custom('PODGetCoterieName'), Localize('POD_create_a_coterie') )]" #NT!
+  
+ POD_create_a_coterie: "Crea un [GetPlayer.Custom('PODCoterieNoTooltip')]" #NT!
+  
+  # This is necessary for some reason. Don't ask me why 
+ JANK_LINEBREAK: "\n\n" #NT!
+  
+ POD_journeys_hud: "Viajes y Coteries" #NT!
+ POD_journeys: "Viajes" #NT!
+ POD_great_journeys: "Grandes viajes" #NT!
+ POD_paused_journeys: "Viajes en pausa" #NT!
+ POD_travel_ready_journeys: "Viajes Disponibles en el [travel_phase|E]" #NT!
+  
+ POD_journey_refresh_prompt: "Tu partida guardada es de una versión anterior de [princes_of_darkness|E].\nHaz clic en el botón de abajo para actualizar tu [journeys|E]." #NT!
+  
+ POD_abandon_journey_tt: "#T Abandonar viaje#!" #NT!
+ POD_abandon_journey_confirm_title: "Abandonar el viaje" #NT!
+ POD_abandon_journey_confirm_text: "¿Estás seguro de que deseas abandonar tu [journey|E] a #bold [story.Custom('PODShowJourneyName')]#!?\n\nYou perderá todo el progreso y los costos no serán reembolsados." #NT!
+  
+ POD_resume_paused_journey: "\n\n#I Haz clic para reanudar este [journey|E][GetPlayer.Custom('PODHasPausableJourney')].#!" #NT!
+ POD_resume_travel_ready_journey: "\n\n#I Haga clic para iniciar el [travel_phase|E] de este [journey|E][GetPlayer.Custom('PODHasPausableJourney')].#!" #NT!
+  
+ POD_journey_pausable: "y pausa tu actual" #NT!
+  
+ POD_no_journey_selected: "No estás en un [journey|E] en este momento." #NT!
+  
+ JOURNEY_DETAIL_EFFECTS: "Cuando el [planning_phase|E] esté listo:" #NT!
+ JOURNEY_DETAIL_REQUIREMENTS: "Requisitos:" #NT!
+  
+ POD_journey_coterie_checkbox_tt: "Elige si quieres que los miembros de tu [GetPlayer.Custom('PODCoterie')] se unan a ti." #NT!
+  
+ POD_journey_instant: "Instante" #NT!
+  
+ POD_journey_progress_instant: "[planning_speed|E]: $POD_journey_instant$" #NT!
+ POD_journey_progress: "[planning_speed|E]: [Localize(Concatenate(GetPlayer.MakeScope.Var('journey_detail_window_subtype').Var('progress_value').GetFlagName,'_monthly_num'))] #help (ver información sobre herramientas para más detalles)#!" #NT!
+  
+ POD_journey_cost_goldprestigepiety: "Costo: $POD_journey_gold$, $POD_journey_prestige$, $POD_journey_piety$" #NT!
+ POD_journey_cost_goldprestige: "Costo: $POD_journey_gold$, $POD_journey_prestige$" #NT!
+ POD_journey_cost_goldpiety: "Costo: $POD_journey_gold$, $POD_journey_piety$" #NT!
+ POD_journey_cost_prestigepiety: "Costo: $POD_journey_prestige$, $POD_journey_piety$" #NT!
+ POD_journey_cost_gold: "Costo: $POD_journey_gold$" #NT!
+ POD_journey_cost_prestige: "Costo: $POD_journey_prestige$" #NT!
+ POD_journey_cost_piety: "Costo: $POD_journey_piety$" #NT!
+ POD_journey_cost_free: "Gratis" #NT!
+  
+ POD_journey_gold: "[gold_i|E] [GetPlayer.MakeScope.ScriptValue('journey_window_gold_cost')]" #NT!
+ POD_journey_prestige: "[prestige_i|E] [SelectLocalization( GetScriptedGui('POD_seek_knowledge_preview_sgui').IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End), 'POD_journey_prestige_seek_knowledge', 'POD_journey_prestige_simple' )]" #NT!
+ POD_journey_prestige_simple: "[GetPlayer.MakeScope.ScriptValue('journey_window_prestige_cost')]" #NT!
+ POD_journey_piety: "[piety_i|E] [GetPlayer.MakeScope.ScriptValue('journey_window_piety_cost')]" #NT!
+  
+ POD_journey_prestige_seek_knowledge: "#TOOLTIP:POD_seek_knowledge_cost_hint #L $POD_journey_prestige_simple$#!#!" #NT!
+ POD_seek_knowledge_cost_hint: "El coste de este [journey|E] aumenta en [prestige_i|E][GetPlayer.MakeScope.ScriptValue('seek_knowledge_price_per_journey')|V0] por cada habilidad que aprendas de esta manera." #NT!
+  
+ POD_journey_cost_hunt_scoundrels: "Coste: aleatorio ([gold_i|E] [Multiply_CFixedPoint( GetPlayer.MakeScope.ScriptValue('minor_gold_value'), EmptyScope.ScriptValue('journey_cost_mult') )], [prestige_i|E] [Abs_CFixedPoint(Multiply_CFixedPoint( GetPlayer.MakeScope.ScriptValue('minor_prestige_loss'), EmptyScope.ScriptValue('journey_cost_mult') ))] o [piety_i|E] [Abs_CFixedPoint(Multiply_CFixedPoint( GetPlayer.MakeScope.ScriptValue('minor_piety_loss'), EmptyScope.ScriptValue('journey_cost_mult') ))])" #NT!
+ POD_journey_cost_hunt_warriors: "Costo: [prestige_i|E] [Abs_CFixedPoint(Multiply_CFixedPoint( GetPlayer.MakeScope.ScriptValue('minor_prestige_loss'), EmptyScope.ScriptValue('journey_cost_mult') ))]" #NT!
+ POD_journey_cost_hunt_merchants: "Costo: [gold_i|E] [Multiply_CFixedPoint( GetPlayer.MakeScope.ScriptValue('minor_gold_value'), EmptyScope.ScriptValue('journey_cost_mult') )]" #NT!
+ POD_journey_cost_hunt_clergy: "Costo: [piety_i|E] [Abs_CFixedPoint(Multiply_CFixedPoint( GetPlayer.MakeScope.ScriptValue('minor_piety_loss'), EmptyScope.ScriptValue('journey_cost_mult') ))]" #NT!
+ POD_journey_cost_hunt_rouse_blood: "Costo: 50% de probabilidad de aumentar [hunger|E]" #NT!
+ POD_journey_cost_hunt_ashen_gold: "Costo: [gold_i|E] [Multiply_CFixedPoint( GetPlayer.MakeScope.ScriptValue('medium_gold_value'), EmptyScope.ScriptValue('journey_cost_mult') )]" #NT!
+ POD_journey_cost_hunt_ashen_prestige: "Costo: [prestige_i|E] [Abs_CFixedPoint(Multiply_CFixedPoint( GetPlayer.MakeScope.ScriptValue('medium_prestige_loss'), EmptyScope.ScriptValue('journey_cost_mult') ))]" #NT!
+ POD_journey_cost_hunt_ashen_piety: "Costo: [piety_i|E] [Abs_CFixedPoint(Multiply_CFixedPoint( GetPlayer.MakeScope.ScriptValue('medium_piety_loss'), EmptyScope.ScriptValue('journey_cost_mult') ))]" #NT!
+  
+ POD_journey_requirements_breakdown: "[GetScriptedGui(Concatenate(GetPlayer.MakeScope.Var('journey_detail_window_subtype').Var('journey_type').GetFlagName,'_requirements')).IsValidTooltip(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" #NT!
+  
+ POD_journey_GUI_tooltip: "#help [Localize( Concatenate(ScopedJourneyID,'_tt') )]#!$POD_journey_GUI_pause_hint$$POD_journey_GUI_requirements$$POD_journey_GUI_requirements_generic$" #NT!
+ POD_paused_journey_GUI_tooltip: "#help [Localize( Concatenate(ScopedJourneyID,'_tt') )]#!$POD_paused_journey_GUI_requirements$$POD_journey_GUI_requirements_generic$" #NT!
+ POD_travel_ready_journey_GUI_tooltip: "#help [Localize( Concatenate(ScopedJourneyID,'_tt') )]#!$POD_travel_ready_journey_GUI_requirements$$POD_journey_GUI_requirements_generic$" #NT!
+  
+ POD_journey_GUI_pause_hint: "[AddTextIf( And3( PlayerGuiIsShown('POD_has_current_journey'), PlayerGuiIsValid(Concatenate(ScopedJourneyID,'_requirements')), StoryGuiIsValid('POD_journey_requirements') ), Concatenate(DoubleLinebreak, Localize('POD_journey_pause_hint') ) )]" #NT!
+  
+ POD_journey_GUI_requirements: "[AddTextIf( Not( PlayerGuiIsValid(Concatenate(ScopedJourneyID,'_requirements')) ), Concatenate(DoubleLinebreak, PlayerGuiIsValidTooltip(Concatenate(ScopedJourneyID,'_requirements')) ) )]" #NT!
+ POD_paused_journey_GUI_requirements: "[AddTextIf( StoryGuiIsValid('POD_journey_requirements'), Localize('POD_resume_paused_journey') )]" #NT!
+ POD_travel_ready_journey_GUI_requirements: "[AddTextIf( StoryGuiIsValid('POD_journey_requirements'), Localize('POD_resume_travel_ready_journey') )]" #NT!
+  
+ POD_journey_GUI_requirements_generic: "[AddTextIf( Not( StoryGuiIsValid('POD_journey_requirements') ), Concatenate(DoubleLinebreak, StoryGuiIsValidTooltip('POD_journey_requirements') ) )]" #NT!
+  
+  ##### Tooltips 
+  
+ POD_journey_pause_hint: "#I Comenzar una nueva [journey|E] pausará la actual. Puedes reanudarla más tarde y conservar todo tu progreso.#!" #NT!
+  
+ POD_journey_interaction_pause_hint_tt: "#I Tus [journey|E] a $POD_current_journey$ se pausarán. Puedes reanudarlos más tarde y conservar todo tu progreso.#!" #NT!
+  
+ POD_journey_requirements_gold: "No tienes suficiente [gold|E]" #NT!
+ POD_journey_requirements_prestige: "No tienes suficiente [prestige|E]" #NT!
+ POD_journey_requirements_piety: "No tienes suficiente [piety|E]" #NT!
+  
+ POD_journey_requirements_notravel: "No puedes iniciar un [journey|E] mientras tu actual esté en el [travel_phase|E]" #NT!
+ POD_journey_requirements_noactivity: "No puedes iniciar un [journey|E] mientras estás ocupado con un [activity|E]" #NT!
+ POD_journey_requirements_notravel_generic: "No puedes empezar un [journey|E] mientras estás ocupado [traveling|E]" #NT!
+  
+ POD_journey_requirements_notravel_gui: "#X @icono_de_advertencia! $POD_journey_requirements_notravel$#!" #NT!
+ POD_journey_requirements_noactivity_gui: "#X @icono_de_advertencia! $POD_journey_requirements_noactivity$#!" #NT!
+ POD_journey_requirements_notravel_generic_gui: "#X @icono_de_advertencia! $POD_journey_requirements_notravel_generic$#!" #NT!
+ POD_journey_requirements_adult_gui: "#X @warning_icon! No puedes iniciar un [journey|E] si eres un niño#!" #NT!
+ POD_journey_requirements_noprison_gui: "#X @warning_icon! No puedes iniciar un [journey|E] si estás en [prison|E]#!" #NT!
+ POD_journey_requirements_umbra_gui: "#X @warning_icon! No puedes iniciar un [journey|E] si estás atrapado en el [umbra|E]#!" #NT!
+  
+ POD_not_already_on_journey_tt: "¡Ya tienes un [journey|E] del mismo tipo apuntando a [temp_journey_target.GetShortUIName]!" #NT!
+ POD_not_already_on_journey_for_trait_tt: "¡Ya tienes un [journey|E] del mismo tipo que involucra a [temp_journey_trait.GetName(GetPlayer)]!" #NT!
+ POD_not_already_on_journey_for_artifact_tt: "¡Ya tienes un [journey|E] del mismo tipo apuntando al [temp_journey_artifact.GetName]!" #NT!
+ POD_cant_target_coterie_tt: "¡No puedes apuntar a otros miembros de $POD_player_coterie$ con este [journey|E]!" #NT!
+  
+ POD_end_journey_tt: "Tu [journey|E] terminará." #NT!
+ POD_end_journey_can_retry_tt: "Podrás volver a intentar esto [journey|E] en el futuro." #NT!
+  
+ POD_journey_not_implemented_yet: "Este [journey|E] aún no está implementado" #NT!
+  
+ POD_journey_exsanguination_disabled: "¡No puedes drenar a tus prisioneros mientras estás fuera de casa!" #NT!
+  
+ POD_start_trait_study_journey_tt: "Has obtenido una idea del [journey_trait.GetName(GetPlayer)] [trait|E]. Para entenderlo completamente, debes estudiarlo a través del [journey|E] que acabas de desbloquear." #NT!
+ POD_start_anatomy_study_journey_tt: "Comenzarás con [journey|E] para comprender por completo la anatomía de [journey_trait.GetName(GetPlayer)]." #NT!
+ POD_start_true_name_study_journey_tt: "Comenzarás con un [journey|E] para el verdadero nombre del [journey_trait.GetName(GetPlayer)] [trait|E]." #NT!
+ POD_start_trait_study_journey_paused_tt: "Dado que tu [journey|E] actual está en el [travel_phase|E], no puedes comenzar a estudiar hasta que éste esté terminado." #NT!

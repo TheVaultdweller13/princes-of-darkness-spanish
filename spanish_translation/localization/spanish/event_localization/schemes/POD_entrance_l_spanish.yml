@@ -1,0 +1,47 @@
+﻿l_spanish:
+  
+ POD_entrance.100.t: "Estás siendo fascinado" #NT!
+ POD_entrance.100.desc: "Te gusta [schemer.GetTitledFirstName]. Te gusta mucho, mucho [schemer.GetHerHim]." #NT!
+ POD_entrance.100.option.a: "Ejercer mi fuerza de voluntad para resistir el trance." #NT!
+ POD_entrance.100.option.b: "Rechace el encantamiento." #NT!
+ POD_entrance.100.option.c: "Acepta el embelesamiento." #NT!
+  
+ POD_entrance.200.t: "Fascinante [target.GetFirstNameNoTooltip]" #NT!
+ POD_entrance.200.desc: "Sientes tu energía mística tocando la mente de [target.GetTitledFirstName]. [target.GetSheHe|U] se resiste al encantamiento." #NT!
+ POD_entrance.200.option.a: "Despierta la sangre hasta la entrada [target.GetHerHim]." #NT!
+ POD_entrance.200.a.tt_fortitude: "[target.GetFirstNameNoTooltip] es hábil en el [discipline|E] de fortaleza y es resistente a mis poderes." #NT!
+ POD_entrance.200.a.tt_willpower: "[target.GetFirstNameNoTooltip] ha ejercido [target.GetHerHis] de voluntad para resistir tus poderes." #NT!
+ POD_entrance.200.a.success.desc: "[target.GetTitledFirstNameNoTooltip] estará fascinado de gustarte" #NT!
+ POD_entrance.200.a.failure.desc: "[target.GetTitledFirstNameNoTooltip] se resistirá a tu embelesamiento" #NT!
+ POD_entrance.200.option.b: "¡Despierta la sangre y ejerce mi voluntad! ¡No se me negará!" #NT!
+ POD_entrance.200.option.b.tt.beast: "#R [target.GetSheHe|U] ¡debes amarnos!#!" #NT!
+ POD_entrance.200.option.c: "Abandonad este empeño, ya no deseo entrar en [target.GetHerHim]." #NT!
+ POD_entrance.200.option.c.tt: "El hechizo fracasará." #NT!
+  
+ POD_entrance.300.t: "[target.GetFirstNameNoTooltip] Encantado" #NT!
+ POD_entrance.300.desc: "Mediante el uso de mi poder místico, [target.GetTitledFirstName] ha quedado fascinado." #NT!
+ POD_entrance.300.option.a: "Por supuesto que [target.GetSheHe] me ama. Todos me amarán." #NT!
+ POD_entrance.300.option.a.tt.beast: "#R ¡Todos nos mirarán y se desesperarán! #!" #NT!
+  
+ POD_entrance.400.t: "Has llegado" #NT!
+ POD_entrance.400.desc: "Te encuentras en la corte de [schemer.GetTitledFirstName]." #NT!
+ POD_entrance.400.option.a: "Mi nuevo hogar." #NT!
+  
+ POD_entrance.500.t: "Resistió el embeleso" #NT!
+ POD_entrance.500.desc: "[target.GetTitledFirstName] se ha resistido a mi embelesamiento." #NT!
+ POD_entrance.500.option.a: "¡Frustrado!" #NT!
+ POD_entrance.500.option.a.tt.beast: "#R ¡Rechazarnos significa la muerte!#!" #NT!
+  
+ POD_entrance.600.t: "Travesura resistida" #NT!
+ POD_entrance.600.desc: "Ya no sientes más [schemer.GetTitledFirstNamePossessive] fascinación." #NT!
+ POD_entrance.600.option.a: "¡Mantente fuera de mi mente!" #NT!
+  
+ POD_entrance.tt.pc.majesty: "Tu [GetPerk('majesty_perk').GetName(GetPlayer)] aumenta ligeramente tus posibilidades de éxito" #NT!
+ POD_entrance.tt.pc.presenceadvanced: "Tu dominio de [GetTrait('presenceadvanced').GetName(GetPlayer)] aumenta tus posibilidades de éxito" #NT!
+ POD_entrance.tt.pc.ironclad_command_perk: "Tu [GetPerk('ironclad_command_perk').GetName(GetPlayer)] aumenta enormemente tus posibilidades de éxito" #NT!
+ POD_entrance.tt.pc.as_below_so_above_perk: "Tu [GetPerk('as_below_so_above_perk').GetName(GetPlayer)] agrega una parte de tu [diplomacy|E] a tus posibilidades de éxito" #NT!
+ POD_entrance.tt.willpower_spent: "[defender.GetFirstNameNoTooltip] ha gastado fuerza de voluntad para resistir tu ataque mental" #NT!
+ POD_entrance.tt.unswayable_mind_perk: "[defender.GetFirstNameNoTooltip] tiene un [GetPerk('unswayable_mind_perk').GetName(GetPlayer)], lo que reduce ligeramente sus probabilidades de éxito." #NT!
+ POD_entrance.tt.fortify_the_inner_facade_perk: "[defender.GetFirstNameNoTooltip] tiene [GetPerk('fortify_the_inner_facade_perk').GetName(GetPlayer)] disminuyendo tus probabilidades de éxito" #NT!
+ POD_entrance.tt.song_of_jupiter: "[defender.GetFirstNameNoTooltip] El aura está protegida por música cacofónica creada por Blood Sorcery, lo que reduce en gran medida tus probabilidades de éxito." #NT!
+  

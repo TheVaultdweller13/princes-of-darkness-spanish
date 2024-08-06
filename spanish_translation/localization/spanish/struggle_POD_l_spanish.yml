@@ -1,0 +1,489 @@
+﻿l_spanish:
+  
+ reconquista_struggle: "La Reconquista en la Sombra" #NT!
+ reconquista_struggle_desc: "Desde la caída del Imperio Romano, los Lasombra han reinado en Iberia. Pero esta era está llegando a un final sangriento, ya que la lucha religiosa mortal en la península finalmente ha cruzado al mundo nocturno.\nLa guerra civil Lasombra estalló oficialmente en 1172 con la caída de Murcia y, desde entonces, tizones de ambos bandos como Ambrosio Luis Moncada y Badr han adulado las llamas de la guerra para sus propios intereses.\nIberia ahora está sumida en el caos, y mientras mercenarios, forasteros y oportunistas acuden a un lado u otro, queda por ver quién (si es que hay alguien) Saldremos victoriosos de este crisol." #NT!
+ struggle_reconquista_phase_shadows: "Guerra de las sombras" #NT!
+ struggle_reconquista_phase_shadows_desc: "La Reconquista en la Sombra nunca ha sido tan respetada como ahora. Príncipes y sultanes están planeando su próximo movimiento y, aunque existe la guerra abierta, no está tan de moda como los cuchillos en la oscuridad." #NT!
+ struggle_reconquista_phase_hostility: "Caos" #NT!
+ struggle_reconquista_phase_hostility_desc: "Las tensiones y los resentimientos finalmente han dado lugar a ataques abiertos contra vecinos y hermanos. La Mascarada es más delgada que nunca mientras Iberia arde durante la noche." #NT!
+ struggle_reconquista_phase_reprieve: "Indulto" #NT!
+ struggle_reconquista_phase_reprieve_desc: "Incluso los vampiros necesitan recuperarse de vez en cuando. La consolidación del poder está ocurriendo ahora mismo, mientras los príncipes y los sultanes se aseguran de que su influencia y sus fuerzas estén preparadas para la siguiente fase." #NT!
+  
+ ##### Intro ##### 
+ pod_reconquista_struggle.0501.t: "La Reconquista en la Sombra" #NT!
+ pod_reconquista_struggle.0501.desc: "Desde la caída del Imperio Romano, los Lasombra han reinado en Iberia. Pero esta era está llegando a un final sangriento, ya que la lucha religiosa mortal en la península finalmente ha cruzado al mundo nocturno. La guerra civil de los Lasombra estalló oficialmente en 1172 con la caída de Murcia y, desde entonces, agitadores de ambos bandos como Ambrosio Luis Moncada y Badr han avivado las llamas de la guerra en beneficio de sus propios intereses. Iberia está ahora sumida en el caos, y mientras mercenarios, forasteros y oportunistas acuden en masa a uno u otro bando, aún está por ver quién (si es que hay alguien) emergerá victorioso de este crisol." #NT!
+ pod_reconquista_struggle.0501.desc.involved: "Iberia una vez estuvo gobernada por Gangrel, luego por los Brujah cartagineses y los Ventrue romanos, ahora... ¡ahora es mi momento de reclamar mi derecho sobre esta tierra!" #NT!
+ pod_reconquista_struggle.0501.desc.interloper: "Iberia alguna vez estuvo gobernada por Gangrel, luego por los Brujah cartagineses y los Ventrue romanos, ahora... ¡ahora es mi momento de reclamar esta tierra!\n\n" #NT!
+ pod_reconquista_struggle.0501.a: "¡Toma las riendas del destino!" #NT!
+  
+ secure_reconquista_foothold_decision_title: "Punto de apoyo ibérico" #NT!
+ secure_reconquista_foothold_decision_desc: "La guerra civil Lasombra en Iberia es un momento de oportunidades. No estarán preparados para una amenaza exterior." #NT!
+ secure_reconquista_foothold_decision_tooltip: "Integrar parte de Iberia" #NT!
+ secure_reconquista_foothold_decision_confirm: "Al más fuerte" #NT!
+  
+ reconquista_struggle_phase_hostility_or_opportunity_tt: "La Lucha de Reconquista debe estar en la fase de Guerra de las Sombras o Caos." #NT!
+ struggle_secure_reconquista_foothold_ends_the_struggle_tt: "La lucha termina." #NT!
+  
+ pod_reconquista_struggle.100.t: "Amanecer sobre Iberia" #NT!
+ pod_reconquista_struggle.100.desc: "El dividido clan Lasombra ha dado una gran oportunidad a los forasteros de la península. Con sus espadas vueltas unas contra otras, ignoraron la amenaza exterior hasta que fue demasiado tarde.\nCon su nuevo liderazgo, Iberia está olvidando lentamente la Reconquista en la Sombra, la Media Luna de Medianoche y todas sus disputas. Esta es una nueva era y después de los Gangrel ibéricos, los Brujah cartagineses, los Ventrue romanos y los Lasombra, Iberia tendrá que dar cabida a nuevos amos una vez más." #NT!
+ pod_reconquista_struggle.100.a: "En Iberia se necesitaba sangre nueva." #NT!
+  
+ pod_reconquista_struggle.101.desc: "El dividido clan Lasombra ha dado una gran oportunidad a los forasteros de la península. Con sus espadas vueltas unas contra otras, ignoraron la amenaza exterior hasta que fue demasiado tarde.\nCon su nuevo liderazgo, Iberia está olvidando lentamente la Reconquista en la Sombra, la Media Luna de Medianoche y todas sus disputas. Esta es una nueva era y después de los Gangrel ibéricos, los Brujah cartagineses, los Ventrue romanos y los Lasombra, Iberia tendrá que dar cabida a nuevos amos una vez más." #NT!
+ pod_reconquista_struggle.101.a: "Malditos intrusos." #NT!
+  
+ shadow_reconquista_tt: "Este final solo está disponible para Lasombra que no sean [ashirra|E]" #NT!
+ ashirra_reconquista_tt: "Este final solo está disponible para los personajes [ashirra|E] y Tariq el Haqim" #NT!
+  
+ noconquista_objective_decision: "La tercera vía" #NT!
+ noconquista_objective_decision_tooltip: "Es hora de disipar las sombras sobre Iberia." #NT!
+ noconquista_objective_decision_desc: "Las disputas entre los Lasombra cristianos y los [ashirra|E] sobre cuestiones de fe han dejado a Iberia sin la posibilidad de desarrollar su verdadero potencial. No podemos permitir que esto continúe." #NT!
+ noconquista_objective_decision_confirm: "¡Iberia despierta!" #NT!
+ noconquista_objective_decision_effect_tooltip: "Los reinos Lasombra quedarán paralizados. Obtendrás un modificador poderoso. Obtendrás acceso a la Invasión [casus_belli|E] si aún no la tenías, además obtendrás un descuento en su costo." #NT!
+ thirdway_reconquista_tt: "Este final solo está disponible para personajes que no sean Lasombra ni [ashirra|E]." #NT!
+ thirdway_effect_tt: "Los reinos Lasombra se verán afectados por el modificador Autoridad rota. Obtendrás acceso a la Invasión [casus_belli|E] si aún no la tenías, además obtendrás un descuento en su costo." #NT!
+  
+ heir_yzebel_modifier: "Heredero de Yzebel" #NT!
+ heir_yzebel_modifier_desc: "La primera vampiresa que unió Iberia, la cartaginesa Yzebel, ha encontrado en este personaje a su heredero." #NT!
+  
+ pod1230objectives.113.t: "La tercera vía" #NT!
+ pod1230objectives.113.desc: "Iberia tiene una larga historia. Al principio estuvo poblada por grupos errantes de señores de la guerra Gangrel, y luego fue unificada por los cartagineses Brujah Yzebel hasta su derrota contra los romanos Ventrue. Luego, aprovechando la debilidad de ambos bandos tras la guerra, los Lasombra se abrieron paso hasta la península y consolidaron rápidamente su dominio sobre la región. Sin embargo, su guerra civil debilitó tanto su posición que ha surgido un nuevo poder en Iberia. Muchos pensaron que los Lasombra habían llegado para quedarse, pero ahora se ha demostrado que estaban equivocados. Esta tierra tiene un nuevo amo, y el clan de las Sombras solo puede avergonzarse de una derrota tan completa en sus tierras natales." #NT!
+ pod1230objectives.113.a: "¡Duraré más que todos ellos!" #NT!
+ pod1230objectives.114.a: "Otra página que pasa la historia." #NT!
+  
+ struggle_parameter_unlocks_secure_reconquista_foothold_decision: "Desbloquea la decisión de Asegurar Punto de Apoyo Ibérico para personajes no involucrados en Iberia o sus alrededores." #NT!
+  
+ pod_reconquista_struggle.1000.t: "Tensiones y oportunidades" #NT!
+ pod_reconquista_struggle.1000.desc: "Iberia está al límite. Todos los vampiros intentan aprovechar la poca influencia que tienen sobre la población mortal para obtener una ventaja. Este tira y afloja constante ha vuelto frenéticos a los mortales de la zona, que se amotinan y protestan contra todo y todos. Esta tensión antinatural ofrece algunas oportunidades para los señores y las damas de la noche y tu consejero te está presionando para que avives el fuego, asegurándote de que no se detenga pronto. Después de todo, los mortales tensos son mortales fáciles de manipular." #NT!
+ pod_reconquista_struggle.1000.a: "Vamos a intensificar la situación discretamente." #NT!
+ pod_reconquista_struggle.1000.b: "Tú propusiste esta solución, hazla tú mismo." #NT!
+ pod_reconquista_struggle.1000.c: "No, los mortales son demasiado valiosos para desperdiciarlos." #NT!
+ pod_reconquista_struggle.1000.d: "¿Por qué debería importarme los mortales?" #NT!
+  
+ pod_reconquista_struggle.1001.t: "Baño de medianoche" #NT!
+ pod_reconquista_struggle.1001.desc: "Los lujosos baños, reliquias de la época romana, están por toda Iberia y son un pasatiempo favorito de los mortales influyentes. Este negocio ha estado regentado durante mucho tiempo por Cainitas nativos que se enorgullecen de su secretismo y solo tratan con los Príncipes y Sultanes de la Noche de forma muy irregular. Sin embargo, recientemente, un erudito musulmán ha demostrado que los baños son buenos para la salud de los mortales, lo que ha hecho que estos "maestros de los baños" secretos salgan de su escondite y pidan fondos para expandir sus operaciones. Argumentan que los mortales sanos son mortales útiles y que, por lo tanto, ambos podrían beneficiarse de esta expansión." #NT!
+ pod_reconquista_struggle.1001.a: "Tendrás mi apoyo." #NT!
+ pod_reconquista_struggle.1001.b: "¡Destruyan sus baños y traiganme cualquier cosa de valor!" #NT!
+ pod_reconquista_struggle.1001.c: "No invertiré por ahora." #NT!
+  
+ pod_reconquista_struggle.1020.t: "Leones y cuchillos" #NT!
+ pod_reconquista_struggle.1020.desc: "En el conflicto que se vive en Iberia, hay fanáticos en ambos bandos. Los Leones de Rodrigo luchan por los Lasombra cristianos, e incluso ellos se sienten a veces preocupados por su salvajismo en la batalla. Para los [ashirra|E], la reputación de la Red de Cuchillos ya no es tan buena, con asesinatos espantosos que se acumulan noche tras noche.\nUno de esos grupos ha aparecido recientemente en tu capital, afirmando que persigue a un "espía infiel" antes de dejar una pila de cuerpos y destrucción tras ellos.\nComo suele suceder, te toca lidiar con las consecuencias." #NT!
+ pod_reconquista_struggle.1020.a: "Restablecer el orden lo antes posible." #NT!
+ pod_reconquista_struggle.1020.b: "¿Un espía infiel? ¡Saquea y quema lo que quede para estar a salvo!" #NT!
+ pod_reconquista_struggle.1020.c: "Echa la culpa a alguien más y sigue adelante." #NT!
+  
+ pod_reconquista_struggle.3011.t: "La Vigilia" #NT!
+ pod_reconquista_struggle.3011.desc: "El Cid tuvo un profundo impacto en los Lasombra cristianos. Su tumba se ha convertido en un lugar de culto para los futuros caballeros con extensos rituales conocidos como "la Vigilia". Como el Cid también era respetado por los [ashirra|E], se acuerda una tregua informal cuando los peregrinos piadosos se desplazan por Iberia para cumplir con sus deberes.\nPero a veces, y con más frecuencia de la que ambos bandos admitirían, esta tregua no se respeta y los viajeros se convierten en otras víctimas de la Reconquista en la Sombra. Un grupo de Lasombra cristianos así se está moviendo por tu tierra, solicitando la paz del Cid para moverse libremente. ¿Qué harás?" #NT!
+ pod_reconquista_struggle.3011.a: "Una costumbre digna de ser respetada." #NT!
+ pod_reconquista_struggle.3011.b: "Un impuesto mínimo para pasar por mis tierras me parece razonable." #NT!
+ pod_reconquista_struggle.3011.c: "Hermanos piadosos, tened una escolta y mi bendición." #NT!
+ pod_reconquista_struggle.3011.d: "¡Ingenuos tontos esperando ser rescatados!" #NT!
+  
+ assamite_struggle: "Una casa dividida" #NT!
+ assamite_struggle_desc: "Los Banu Haqim han gobernado Persia desde que su legendario fundador, Haqim, fundó Alamut. Desde el exterior, no ha habido nada más que una perfecta unidad entre ellos desde entonces, pero la verdad es muy diferente.\nEl faccionalismo amenaza con romper la alardeada disciplina de los Hijos de Haqim desde adentro. La llegada de un nuevo Mayor, el controvertido Nakurtum, podría ser el punto de ebullición. Si bien una guerra civil todavía no es aparentemente posible, cada grupo está afilando sus dagas para asegurarse de que ellos, y sólo ellos, darán forma al futuro de los Banu Haqim." #NT!
+  
+ pod_assamite_struggle.0501.t: "Una casa dividida" #NT!
+ pod_assamite_struggle.0501.desc: "Los Banu Haqim han gobernado Persia desde que su legendario fundador, Haqim, fundó Alamut. Para el ojo externo, no ha habido más que una unidad perfecta entre ellos desde entonces, pero la verdad es muy diferente. El faccionalismo amenaza con quebrar la famosa disciplina de los Hijos de Haqim desde dentro. La llegada de un nuevo Mayor, el controvertido Nakurtum, podría ser el punto de ebullición. Aunque una guerra civil no parece posible -aún-, cada grupo está afilando sus dagas para asegurarse de que ellos, y solo ellos, darán forma al futuro de los Banu Haqim.\nLos principales contendientes para esta victoria son la Red de Cuchillos, un culto secreto de fanáticos letales, los [ashirra|E], que están a favor de acercar el clan al Islam, el Consejo de los Pergaminos, que representa a los moderados y conciliadores, los Silsila, un grupo elitista de viejos guardias zoroastrianos y, finalmente, la Tribu Perdida, un culto misterioso de adoración herética.\n #italic La lucha de la Casa Dividida se gana por influencia. Puedes comprobar el progreso de cada facción con una decisión menor especial.#!" #NT!
+ pod_assamite_struggle.0501.a: "Haqim está mirando." #NT!
+  
+ struggle_parameter_unlocks_no_wars: "No son posibles guerras directas contra otros personajes involucrados." #NT!
+ NO_WARS_STRUGGLE_PARAMETER_CD: "Estás en una fase de lucha en la que no puedes atacar a este personaje." #NT!
+  
+ secure_assamite_foothold_decision_title: "Punto de apoyo persa" #NT!
+ secure_assamite_foothold_decision_desc: "Las divisiones de Banu Haqim en Persia están abriendo oportunidades. No estarán preparadas para una amenaza externa." #NT!
+ secure_assamite_foothold_decision_tooltip: "Integrar parte de Persia" #NT!
+ secure_assamite_foothold_decision_confirm: "Al más fuerte" #NT!
+  
+ pod_assamite_struggle.100.t: "Amanecer sobre Persia" #NT!
+ pod_assamite_struggle.100.desc: "El clan dividido Banu Haqim ha dado una gran oportunidad a los extranjeros de Persia. Con sus espadas vueltas unas contra otras, ignoraron la amenaza exterior hasta que fue demasiado tarde. Con su nuevo liderazgo, Persia está olvidando lentamente la Red de Cuchillos, Alamut y todas sus disputas. Esta es una nueva era y el tiempo dirá si este nuevo conquistador será capaz de doblegar a Persia a sus caprichos, o si sus obstinados habitantes lo destrozarán como ya ha sucedido con muchos." #NT!
+ pod_assamite_struggle.100.a: "Se necesitaba sangre nueva en Persia." #NT!
+  
+ pod_assamite_struggle.101.desc: "El clan dividido Banu Haqim ha dado una gran oportunidad a los extranjeros de Persia. Con sus espadas vueltas unas contra otras, ignoraron la amenaza exterior hasta que fue demasiado tarde. Con su nuevo liderazgo, Persia está olvidando lentamente la Red de Cuchillos, Alamut y todas sus disputas. Esta es una nueva era y el tiempo dirá si este nuevo conquistador será capaz de doblegar a Persia a sus caprichos, o si sus obstinados habitantes lo destrozarán como ya ha sucedido con muchos." #NT!
+ pod_assamite_struggle.101.a: "Malditos intrusos." #NT!
+  
+ struggle_assamite_phase_shadows: "Familia disfuncional" #NT!
+ struggle_assamite_phase_shadows_desc: "Los Banu Haqim apenas mantienen su fachada de unidad. Hay resentimiento en el aire y cuchillos envainados por todas partes." #NT!
+ struggle_assamite_phase_hostility: "Familia rota" #NT!
+ struggle_assamite_phase_hostility_desc: "Haqim debe llorar al ver a sus hijos pelearse entre sí. Alamut se está desmoronando por dentro." #NT!
+ struggle_assamite_phase_reprieve: "Familia Sanadora" #NT!
+ struggle_assamite_phase_reprieve_desc: "Demostrando más sensatez que la mayoría de los vampiros, los Banu Haqim ahora están hablando abiertamente sobre sus diferencias, con la esperanza de encontrar una solución sensata a los problemas actuales." #NT!
+  
+ urshulgi_victory_objective_decision_tt: "La influencia de la Red de Cuchillos debe ser absoluta." #NT!
+ urshulgi_victory_objective_decision_tt2: "La influencia del Consejo de Pergaminos debe ser inexistente." #NT!
+ assamite_struggle_victory_effect_tooltip: "Obtendrás el Alamut [title|E] si aún no lo tienes. Además, todos los personajes Assamitas en rango diplomático ahora aceptarán la vasallaje sin cuestionamientos." #NT!
+ assamite_struggle_needed_tt: "Debes ser parte de la lucha de la Casa Dividida, lo que requiere que tu capital esté en la región de la lucha de la Casa Dividida (reinos de iure de Persia, Transoxiana, Makran, Kabulistan, Daylam, Khorasan/Web of Knives)." #NT!
+ assamite_victory_objective_decision_tt: "La influencia de la Red de Cuchillos debe ser inexistente." #NT!
+ assamite_victory_objective_decision_tt2: "La influencia del Consejo de los Pergaminos, o la influencia de Ashirra, debe ser absoluta." #NT!
+ losttribe_victory_objective_decision_tt: "La influencia de la Tribu Perdida debe ser absoluta." #NT!
+ losttribe_victory_objective_decision_tt2: "La influencia de Silsila debe ser inexistente." #NT!
+ losttribe_victory_objective_decision_tt3: "La influencia de Ashirra debe ser inexistente." #NT!
+ losttribe_victory_objective_decision_effect_tooltip: "Muchos Banu Haqim se convertirán al Culto de Zilah y Zilah misma te bendecirá, mejorando tu carácter." #NT!
+  
+ losttribe_victory_objective_decision: "Hijos de Zilah" #NT!
+ losttribe_victory_objective_decision_desc: "El Culto de Zilah ha sido desterrado hace mucho tiempo de la política de Alamut. Pero los fieles sirvientes de la Segunda Generación son muy resistentes. Todavía es tiempo de que los Banu Haqim vean los pecados de su padre." #NT!
+ losttribe_victory_objective_decision_tooltip: "¡Haqim es un mentiroso que debe ser expuesto!" #NT!
+ losttribe_victory_objective_decision_confirm: "La gloria de Zilah está asegurada" #NT!
+  
+ pod_assamite_struggle.102.t: "Hijos de Zila" #NT!
+ pod_assamite_struggle.102.desc: "El regreso lento y bien preparado de la Tribu Perdida a la política de Alamut ha tenido un profundo impacto en los Assamitas. Una vez devotos de su fundador Haqim, ahora están maldiciendo a la Tercera Generación por sus crímenes contra la Segunda, y especialmente contra Zilah. La Piedra de las Lloras, aparentemente el lugar de descanso de la propia Zilah, se ha convertido en un lugar de peregrinación y muchos son los que viajan allí para beber las lágrimas de sangre que fluyen de la piedra, experimentando el tormento que sintió Zilah hace mucho tiempo. Irónicamente, desde afuera, los Assamitas siguen siendo un culto extraño dedicado a un propósito extraño. Pero desde adentro, las cosas nunca serán lo mismo." #NT!
+ pod_assamite_struggle.102.a: "Vengaremos el crimen más antiguo de nuestra especie." #NT!
+ pod_assamite_struggle.103.a: "Es hora de seguir la verdad." #NT!
+ pod_assamite_struggle.103.b: "¡Nunca! ¡Alabado sea Haqim!" #NT!
+ pod_assamite_struggle.104.a: "Sucesos extraños para un clan extraño." #NT!
+ pod_assamite_struggle.102.custom: "Muchos Banu Haqim se convertirán al culto de Zilah." #NT!
+  
+ silsila_victory_objective_decision_tt: "La influencia de Silsila debe ser absoluta." #NT!
+ silsila_victory_objective_decision_tt2: "La influencia de la Tribu Perdida debe ser inexistente." #NT!
+ silsila_victory_objective_decision_effect_tooltip: "Obtendrás la posibilidad de comprar reclamaciones de artefactos a un precio reducido." #NT!
+  
+ silsila_victory_objective_decision: "El Centro Sostiene" #NT!
+ silsila_victory_objective_decision_desc: "Los Silsila son la élite espiritual de los Banu Haqim y están profundamente influidos por las enseñanzas zoroástricas. Su posición se ha debilitado desde el ascenso del Islam, pero aún tienen suficiente influencia como para albergar esperanzas en el futuro." #NT!
+ silsila_victory_objective_decision_tooltip: "Somos la verdadera élite de Haqim." #NT!
+ silsila_victory_objective_decision_confirm: "Como debería ser" #NT!
+  
+ pod_assamite_struggle.105.t: "El centro aguanta" #NT!
+ pod_assamite_struggle.105.desc: "El sacerdocio guerrero de élite de los Banu Haqim, los Silsila, ha ido perdiendo influencia en la política de Alamut desde hace un tiempo, debido a su pertenencia a la decadente religión zoroástrica. El brutal regreso de Nakurtum como la Mayor en 1214 no ayudó, ya que sus métodos despiadados para liderar el clan unieron aún más a las otras facciones contra la vieja guardia. Sin embargo, esto ha cambiado a medida que los Silsila lentamente lograron cambiar las cosas, utilizando las divisiones de sus rivales y demostrando su compromiso de acabar con la herejía para afirmar su posición. No todo está bien para esta pequeña casta pero, por el momento, el resto de los Banu Haqim reconocen su derecho a gobernar y se están uniendo detrás de los herederos de Haqim y de Zoroastro." #NT!
+ pod_assamite_struggle.105.a: "Somos los únicos aptos para gobernar." #NT!
+ pod_assamite_struggle.106.a: "La tradición vuelve a triunfar." #NT!
+  
+ assamite_factions_decision: "Estado de la lucha persa" #NT!
+ assamite_factions_decision_desc: "Descubra el poder relativo actual de cada facción en la lucha y cómo influir en ellos rápidamente." #NT!
+ assamite_factions_decision_tooltip: "Vea el estado actual de la lucha persa." #NT!
+ assamite_factions_decision_confirm: "¿En dónde nos paramos?" #NT!
+ assamite_factions_tt: "Recibirá información sobre el estado actual de la lucha y varias formas de influir en ella en caso de necesidad." #NT!
+  
+ pod_assamite_struggle.107.t: "Estado de la lucha" #NT!
+ pod_assamite_struggle.107.opening: "La lucha por la Casa Dividida se centra en las facciones dentro de Banu Haqim. Así es como se encuentran en este momento:" #NT!
+ pod_assamite_struggle.107.wokdominant: "La influencia de Web of Knives es absoluta en estos momentos." #NT!
+ pod_assamite_struggle.107.wokstrong: "La influencia de Web of Knives es fuerte en estos momentos." #NT!
+ pod_assamite_struggle.107.wokmedium: "La influencia de Web of Knives es media en estos momentos." #NT!
+ pod_assamite_struggle.107.wokmediocre: "La influencia de Web of Knives es mediana en estos momentos." #NT!
+ pod_assamite_struggle.107.wokweak: "La influencia de la Red de Cuchillos es débil en estos momentos." #NT!
+ pod_assamite_struggle.107.woknone: "La influencia de Web of Knives es inexistente en este momento." #NT!
+ pod_assamite_struggle.107.ashirradominant: "La influencia de Ashirra es absoluta en estos momentos." #NT!
+ pod_assamite_struggle.107.ashirrastrong: "La influencia de Ashirra es fuerte en estos momentos." #NT!
+ pod_assamite_struggle.107.ashirramedium: "La influencia de Ashirra es media en estos momentos." #NT!
+ pod_assamite_struggle.107.ashirramediocre: "La influencia de Ashirra es mediana en estos momentos." #NT!
+ pod_assamite_struggle.107.ashirraweak: "La influencia de Ashirra es débil en estos momentos." #NT!
+ pod_assamite_struggle.107.ashirranone: "\nLa influencia de Ashirra es inexistente en este momento." #NT!
+ pod_assamite_struggle.107.councildominant: "\nLa influencia del Consejo de Pergaminos es absoluta en estos momentos." #NT!
+ pod_assamite_struggle.107.councilstrong: "\nLa influencia del Consejo de los Pergaminos es fuerte en este momento." #NT!
+ pod_assamite_struggle.107.councilmedium: "\nLa influencia del Consejo de Pergaminos es media en estos momentos." #NT!
+ pod_assamite_struggle.107.councilmediocre: "\nLa influencia del Consejo de Pergaminos es media en estos momentos." #NT!
+ pod_assamite_struggle.107.councilweak: "La influencia del Consejo de Pergaminos es débil en estos momentos." #NT!
+ pod_assamite_struggle.107.councilnone: "\nLa influencia del Consejo de Pergaminos es inexistente en este momento." #NT!
+ pod_assamite_struggle.107.silsiladominant: "La influencia de Silsila es absoluta en estos momentos." #NT!
+ pod_assamite_struggle.107.silsilastrong: "La influencia de Silsila es fuerte en estos momentos." #NT!
+ pod_assamite_struggle.107.silsilamedium: "La influencia de Silsila es media en estos momentos." #NT!
+ pod_assamite_struggle.107.silsilamediocre: "La influencia de Silsila es mediana en estos momentos." #NT!
+ pod_assamite_struggle.107.silsilaweak: "La influencia de Silsila es débil en estos momentos." #NT!
+ pod_assamite_struggle.107.silsilanone: "La influencia de Silsila es inexistente en estos momentos." #NT!
+ pod_assamite_struggle.107.losttribedominant: "La influencia de La Tribu Perdida es absoluta en estos momentos." #NT!
+ pod_assamite_struggle.107.losttribestrong: "La influencia de La Tribu Perdida es fuerte en este momento." #NT!
+ pod_assamite_struggle.107.losttribemedium: "La influencia de La Tribu Perdida es media en estos momentos." #NT!
+ pod_assamite_struggle.107.losttribemediocre: "La influencia de La Tribu Perdida es mediana en estos momentos." #NT!
+ pod_assamite_struggle.107.losttribeweak: "\nLa influencia de la Tribu Perdida es débil en este momento." #NT!
+ pod_assamite_struggle.107.losttribenone: "La influencia de la Tribu Perdida es inexistente en este momento." #NT!
+ pod_assamite_struggle.107.a: "Influir en la red de cuchillos" #NT!
+ pod_assamite_struggle.107.b: "Influir en la Ashirra" #NT!
+ pod_assamite_struggle.107.c: "Influir en el Consejo de los Pergaminos" #NT!
+ pod_assamite_struggle.107.d: "Influir en Silsila" #NT!
+ pod_assamite_struggle.107.e: "Influir en la tribu perdida" #NT!
+ pod_assamite_struggle.107.f: "Nada más por ahora" #NT!
+  
+ pod_assamite_struggle.108.t: "La red de cuchillos" #NT!
+ pod_assamite_struggle.108.desc: "La Red de Cuchillos es una facción no oficial de los Banu Haqim, un culto secreto de asesinos dedicado a la adoración de un misterioso Matusalén llamado Ur-Shulgi. Son fanáticos que quieren destruir a cualquier vampiro que se niegue a servir a su amo. También se los conoce como asesinos sedientos de sangre y son responsables de la mala reputación de los [Clan|E] en su conjunto ante los forasteros. Con un gran esfuerzo y recursos, podrías embarcarte en una campaña para ayudar o desacreditar a esta facción en la escena política general de los Banu Haqim." #NT!
+ pod_assamite_struggle.108.a: "Ayuda a esta facción" #NT!
+ pod_assamite_struggle.108.b: "Enfrentar a esta facción" #NT!
+ pod_assamite_struggle.108.c: "Nada por el momento" #NT!
+ faction_gain_influence_tt: "La influencia de esta facción aumentará." #NT!
+ faction_lose_influence_tt: "La influencia de esta facción disminuirá." #NT!
+  
+ pod_assamite_struggle.109.t: "La Ashirra" #NT!
+ pod_assamite_struggle.109.desc: "Esta poderosa facción de los Banu Haqim aboga por una colaboración más estrecha con el movimiento [ashirra|E]. Está compuesta principalmente por vampiros jóvenes, que fueron seguidores del Islam en vida, pero algunos ancianos poderosos también se han convertido a esta causa. Con el Islam volviéndose cada vez más dominante en la región, la facción Ashirra tiene un gran impulso detrás. Tienden a aliarse con el Consejo de los Pergaminos con la esperanza de convertirse en una opción de compromiso aceptable para todos los demás. Con un gran esfuerzo y recursos, podrías embarcarte en una campaña para ayudar o desacreditar a esta facción en la escena política general de los Banu Haqim." #NT!
+  
+ pod_assamite_struggle.110.t: "El Consejo de los Pergaminos" #NT!
+ pod_assamite_struggle.110.desc: "El Consejo de los Pergaminos, creado inicialmente para la búsqueda y protección del conocimiento en Alamut, se ha convertido en una facción política de los hechiceros y visires que están a favor de una solución de compromiso para la crisis actual. A pesar de esta postura, se oponen ferozmente a la Red de Cuchillos, principalmente debido a la influencia de su fundador Al-Ashrad. El Consejo está trabajando actualmente con la facción [ashirra|E], viéndolos como una buena opción para mantener estables a los Banu Haqim en el futuro. Con un gran esfuerzo y recursos, podrías embarcarte en una campaña para ayudar o desacreditar a esta facción en la escena política general de los Banu Haqim." #NT!
+  
+ pod_assamite_struggle.111.t: "La Silsila" #NT!
+ pod_assamite_struggle.111.desc: "El sacerdocio guerrero de élite de los Banu Haqim eran los verdaderos líderes de Alamut durante la época del dominio zoroastriano. Como tal, se han asociado estrechamente con esta religión y han ido decayendo junto con su fe. El regreso de Nakurtum como Mayor en 1214 ayudó a salvaguardar la poca influencia que les quedaba, pero esto podría ser demasiado poco y demasiado tarde, especialmente porque la gran mayoría de los nuevos Banu Haqim provienen de una estirpe mortal musulmana. Con un gran esfuerzo y recursos, podrías embarcarte en una campaña para ayudar o desacreditar a esta facción en la escena política general de los Banu Haqim." #NT!
+  
+ pod_assamite_struggle.112.t: "La tribu perdida" #NT!
+ pod_assamite_struggle.112.desc: "La Tribu Perdida es un culto herético de (en su mayoría) Banu Haqim que adora a la difunta Zilah y trata de vengarla destruyendo a sus asesinos, la Tercera Generación y a quienes los siguen. Esto los pone en conflicto directo con el resto de los [Clan|E] que veneran a Haqim y, como tal, han sido purgados de la política de Alamut una y otra vez. Aun así, su influencia es insidiosa y tienden a reaparecer cuando menos se los espera. Con un gran esfuerzo y recursos, podrías embarcarte en una campaña para ayudar o desacreditar a esta facción en la escena política general de Banu Haqim." #NT!
+  
+ clashing_heretics_modifier: "Herejes en conflicto" #NT!
+ clashing_heretics_modifier_desc: "Este condado es el centro de una guerra en la sombra entre dos sectas en conflicto." #NT!
+  
+ pod_assamite_struggle.1000.t: "Herejes en conflicto" #NT!
+ pod_assamite_struggle.1000.desc: "Aunque ambos son cultos heréticos dentro de Banu Haqim, la Tribu Perdida y la Red de Cuchillos no se tienen ningún cariño. Consideran a su contraparte como la amenaza más apremiante en el [Clan|E] y su guerra en las sombras es probablemente la más letal de todas las facciones.\nUno de tus condados ha visto recientemente un aumento de esa actividad radical, y ambos cultos están perturbando a la población mortal y se están volviendo cada vez más complicados de manejar. Es poco probable que puedas razonar con ellos, pero aliarte con una facción podría asegurar que, al menos, el disturbio no dure demasiado." #NT!
+ pod_assamite_struggle.1000.a: "Envía ayuda a la Web de Cuchillos." #NT!
+ pod_assamite_struggle.1000.b: "Envía ayuda a la Tribu Perdida" #NT!
+ pod_assamite_struggle.1000.c: "Manipula cada facción para resolver el problema." #NT!
+ pod_assamite_struggle.1000.a.success: "Tratado." #NT!
+ pod_assamite_struggle.1000.a.failure: "Empeorando..." #NT!
+ pod_assamite_struggle.1000.d: "¡Aquí mando yo, no ellos!" #NT!
+ wok_gain_influence_tt: "La Red de Cuchillos gana influencia." #NT!
+ wok_lose_influence_tt: "La Red de Cuchillos pierde influencia." #NT!
+ losttribe_gain_influence_tt: "La Tribu Perdida gana influencia." #NT!
+ losttribe_lose_influence_tt: "La Tribu Perdida pierde influencia." #NT!
+  
+ pod_assamite_struggle.1001.t: "Deberes de los fieles" #NT!
+ pod_assamite_struggle.1001.desc: "La comunidad [ashirra|E] es muy fuerte en Persia. Uno de los principios de este movimiento es dejar que los mortales vivan como quieran, con la menor cantidad posible de interferencias por parte de los vampiros. Obviamente, esto no siempre es muy práctico para un gobernante de la noche.\nUno de esos representantes de Ashirra ha llegado recientemente a tu dominio, quejándose de que tus agentes están adoptando una postura demasiado dura en lo que respecta a los asuntos de los mortales en la zona." #NT!
+ pod_assamite_struggle.1001.a: "Negociar un compromiso." #NT!
+ pod_assamite_struggle.1001.a.success: "Un buen trato." #NT!
+ pod_assamite_struggle.1001.a.failure: "Gritos y discusiones." #NT!
+ pod_assamite_struggle.1001.b: "Está bien, no interferiremos." #NT!
+ ashirra_gain_influence_tt: "El Ashirra gana influencia." #NT!
+ ashirra_lose_influence_tt: "La Ashirra pierde influencia." #NT!
+ pod_assamite_struggle.1001.c: "¡Yo gobierno como mejor me parece!" #NT!
+  
+ pod_assamite_struggle.1002.t: "La verdad sobre Haqim" #NT!
+ pod_assamite_struggle.1002.desc: "Sin embargo, Haqim, una figura venerada entre sus hijos, sigue siendo un misterio para la mayoría de ellos. Hombre de pocas palabras mientras estuvo activo, su desaparición no hizo más que profundizar los rumores que lo rodeaban. Con la actual naturaleza rebelde del clan, es natural que el tema de la verdadera naturaleza de Haqim pase a primer plano.\nComo gobernante influyente de la noche, tu opinión importa más que la mayoría." #NT!
+ pod_assamite_struggle.1002.a: "Haqim, aunque grande, no era más que un siervo del Más Grande." #NT!
+ silsila_gain_influence_tt: "La Silsila gana influencia." #NT!
+ pod_assamite_struggle.1002.b: "Haqim es el juez final del valor de la humanidad." #NT!
+ council_gain_influence_tt: "El Consejo de Pergaminos gana influencia." #NT!
+ pod_assamite_struggle.1002.c: "Un gran hombre, aunque a veces defectuoso." #NT!
+ pod_assamite_struggle.1002.d: "No creo que Haqim sea tan importante..." #NT!
+  
+ pod_assamite_struggle.1003.t: "El pergamino perdido" #NT!
+ pod_assamite_struggle.1003.desc: "Tus agentes han capturado recientemente a un ladrón que Alamut investigaba desde hace tiempo. Tras una inspección más detallada, parece que este hombre no es realmente un ladrón, sino un erudito con, aparentemente, un importante escrito realizado durante la época de Zoroastro.\nLos líderes de Silsila, guardianes de la historia y en su mayoría zoroastrianos, te piden que les entregues los escritos, después de una compensación por tu ayuda, obviamente. Pero hay otras opciones disponibles para ti..." #NT!
+ pod_assamite_struggle.1003.a: "Es un placer servirle." #NT!
+ silsila_lose_influence_tt: "La Silsila pierde influencia." #NT!
+ pod_assamite_struggle.1003.b: "Quema el pergamino y al ladrón." #NT!
+ pod_assamite_struggle.1003.c: "Tengo otros amigos que podrían estar interesados..." #NT!
+ pod_assamite_struggle.1003.d: "Simplemente lo conservaré." #NT!
+  
+ pod_assamite_struggle.1004.t: "Cuchillos fuera" #NT!
+ pod_assamite_struggle.1004.desc: "Una de las aldeas periféricas de tu dominio ha sido recientemente "visitada" por los fanáticos de la Red de Cuchillos que, si lo que dijeron los supervivientes es cierto, buscaban a un espía infiel. Como siempre, los métodos de la Red de Cuchillos fueron brutales y especialmente traumáticos para tus súbditos mortales. Limpiar el desastre no debería ser demasiado difícil, pero es posible que quieras reaccionar ante este ataque encubierto a tu autoridad." #NT!
+ pod_assamite_struggle.1004.a: "¿Un espía? ¡Arrasad el pueblo!" #NT!
+ pod_assamite_struggle.1004.b: "Denunciar públicamente la Red de Cuchillos." #NT!
+ wok_lose_lot_influence_tt: "La Red de Cuchillos pierde mucha influencia." #NT!
+ pod_assamite_struggle.1004.c: "Localiza y trata con los agresores." #NT!
+ pod_assamite_struggle.1004.d: "No hay necesidad de enfadar a la Web por tan poco." #NT!
+  
+ pod_assamite_struggle.1005.t: "Tierra de espías" #NT!
+ pod_assamite_struggle.1005.desc: "Persia es un lugar muy grande, y eso hace que sea muy importante contar con un sistema de mensajería confiable hacia y desde Alamut. Si bien los mensajeros ghouls son buenos, estás bastante seguro de que la mayoría de sus viajes son monitoreados por las facciones menos escrupulosas de la lucha actual. Sospechas que es bastante probable que tus informes y otra correspondencia sean interceptados rutinariamente por tus enemigos. El Consejo de los Pergaminos ha presentado recientemente un nuevo sistema creado por el famoso Al-Ashrad, un orbe mágico potenciado por los poderes de los genios que permite una comunicación de mayor alcance. Sin embargo, se pueden escuchar algunas voces que se oponen a esto, ya que argumentan que esto simplemente significaría cambiar quién espía a quién..." #NT!
+ pod_assamite_struggle.1005.a: "Una iniciativa brillante, necesito una." #NT!
+ pod_assamite_struggle.1005.b: "Voy a descubrir mi propio sistema." #NT!
+ council_lose_influence_tt: "El Consejo de Pergaminos pierde influencia." #NT!
+ pod_assamite_struggle.1005.c: "¡El Consejo nos está manipulando!" #NT!
+  
+ pod_assamite_struggle.1006.t: "Hijas de Haqim" #NT!
+ pod_assamite_struggle.1006.desc: "Abrazar a las mujeres nunca fue un problema especial en la cultura de Banu Haqim, especialmente porque el propio Haqim lo hacía, pero el auge del movimiento [ashirra|E] ha cambiado esta situación. Entre la casta guerrera, la práctica de abrazar a las mujeres cayó en desgracia en el siglo VIII, ya que comenzó a verse como inmoral maldecir a las mujeres con la muerte. Este cisma todavía existe hasta el día de hoy, a pesar de que los guerreros han comenzado a relajar esta política desde hace varias décadas. Por lo tanto, aunque no es un problema tan urgente como antes, sigue siendo un tema de debate entre los hijos e hijas de Haqim." #NT!
+ pod_assamite_struggle.1006.a: "Todavía me parece mal." #NT!
+ pod_assamite_struggle.1006.b: "Haqim sabía lo que hacía." #NT!
+ pod_assamite_struggle.1006.c: "Honestamente, debería ser al revés." #NT!
+  
+ pod_assamite_struggle.1007.t: "Las tres castas" #NT!
+ pod_assamite_struggle.1007.desc: "Nadie sabe realmente cuándo se afianzó el sistema de castas en la sociedad Banu Haqim, pero ahora es una parte integral de la no vida en Persia. Tradicionalmente, los Visires eran los líderes y los más activos políticamente de los tres, pero el poder ha ido pasando lentamente a manos de los Guerreros en tiempos más recientes. Los Hechiceros, por su parte, han sido durante mucho tiempo un grupo solitario y su pequeño número los convierte en los más débiles de las Castas. El sistema de Castas funciona junto con las facciones políticas en la sociedad Banu Haqim y, aunque puedes encontrar cualquier casta en cualquier facción, algunas son más favorecidas que otras dependiendo de tu agenda política." #NT!
+ pod_assamite_struggle.1007.a: "Los guerreros nos llevan hacia adelante." #NT!
+ pod_assamite_struggle.1007.b: "Los Hechiceros saben la verdad." #NT!
+ pod_assamite_struggle.1007.c: "Los Visires son nuestros líderes naturales." #NT!
+ pod_assamite_struggle.1007.d: "Todos debemos trabajar como uno solo." #NT!
+  
+ council_gain_lot_influence_tt: "El Consejo de Pergaminos gana mucha influencia." #NT!
+  
+ pod_assamite_struggle.1008.t: "Los misterios de Al-Ashrad" #NT!
+ pod_assamite_struggle.1008.desc: "El líder de la Casta de los Hechiceros, los Amr, siempre ha sido el misterioso Al-Ashrad, un antiguo y ampliamente respetado (y temido) hijo del aún más misterioso Ur-Shulgi. Conocido por su reserva, el Amr es responsable de algunas de las creaciones más maravillosas de los Hijos de Haqim y de su magistral uso de la Magia de Sangre. Su comportamiento lento y cuidadoso delata la mente de un verdadero anciano, que planifica con siglos de antelación. Aun así, recientemente, Al-Ashrad ha estado inusualmente activo en Alamut, impulsando suavemente la agenda del Consejo de los Pergaminos, la facción que él y otras voces moderadas de los Banu Haqim han creado." #NT!
+ pod_assamite_struggle.1008.a: "Ayudemoslo con todo el corazón en sus esfuerzos." #NT!
+ pod_assamite_struggle.1008.b: "Obstaculizarlo a cada paso." #NT!
+ pod_assamite_struggle.1008.c: "¿Qué está planeando?" #NT!
+  
+ targetted_web_modifier: "En la mira de la Web" #NT!
+ targetted_web_modifier_desc: "La Red de Cuchillos se ha interesado por ti. Uno muy peligroso." #NT!
+  
+ wok_gain_lot_influence_tt: "La Red de Cuchillos gana mucha influencia." #NT!
+  
+ pod_assamite_struggle.1009.t: "La red de los temas" #NT!
+ pod_assamite_struggle.1009.desc: "El poderoso Thetmes, una figura divisiva entre los Hijos de Haqim, es conocido como un magistral manipulador de las sombras y uno de los asesinos más letales de Alamut. Su lealtad a la Red de Cuchillos se susurra en voz baja en los salones de Alamut, pero los verdaderos objetivos finales de Thetmes siguen siendo algo que solo él conoce. Bajo sus órdenes, la Red ha iniciado recientemente una campaña de intimidación cuidadosa en Persia, asegurándose de que los Príncipes y Sultanes estén más... "atentos" a las demandas del culto. Tu posición durante este evento sin duda será vigilada cuidadosamente por el despiadado egipcio." #NT!
+ pod_assamite_struggle.1009.a: "Ayudemoslo con todo el corazón en sus esfuerzos." #NT!
+ pod_assamite_struggle.1009.b: "Obstaculícelo a cada paso." #NT!
+ pod_assamite_struggle.1009.c: "¿Qué está planeando?" #NT!
+  
+ silsila_gain_lot_influence_tt: "El Silsila gana mucha influencia." #NT!
+  
+ pod_assamite_struggle.1010.t: "Órdenes de Nakurtum" #NT!
+ pod_assamite_struggle.1010.desc: "Nakurtum, una de las hijas mayores del propio Haqim, asumió el control de Alamut en 1214 en una demostración temeraria de fuerza. Su devoción a una religión en decadencia y su actitud altiva hacia las otras facciones la han dejado con pocos amigos y apenas controla Alamut.\nAun así, es la Mayor, y ese título es digno de mucho respeto en la sociedad de Banu Haqim. Como tal, espera ser obedecida cuando da sus órdenes. Ir en contra de su voluntad es fácil ya que no tiene los medios para hacer cumplir su autoridad, pero sigue siendo una violación de la etiqueta en cierto modo. Entonces, cuando una de esas órdenes llega a ti, tienes que decidir tu curso de acción." #NT!
+ pod_assamite_struggle.1010.a: "Obedece el deseo del Mayor." #NT!
+ pod_assamite_struggle.1010.b: "Ignora sus divagaciones." #NT!
+ pod_assamite_struggle.1010.c: "Haz lo mínimo indispensable." #NT!
+  
+ jamal_levies_modifier: "La experiencia de Jamal" #NT!
+ jamal_levies_modifier_desc: "Jamal ha entrenado personalmente a sus campeones. Los que todavía pueden caminar han mejorado mucho." #NT!
+  
+ ashirra_gain_lot_influence_tt: "La Ashirra gana mucha influencia." #NT!
+  
+ pod_assamite_struggle.1011.t: "La destreza de Jamal" #NT!
+ pod_assamite_struggle.1011.desc: "El guerrero más letal de los Banu Haqim es reconocido por todos como Jamal, uno de los hijos de Haqim. Este aterrador guerrero también es conocido por ser un fiel creyente de la causa [ashirra|E] y ha sido su líder informal durante varios siglos.\nAun así, también se cree que Jamal es una voz moderada y a menudo se lo ve ayudando a otros Banu Haqim, incluso a aquellos que no comparten su causa. Esta actitud amistosa le ha ganado a él y a la facción Ashirra mucho respeto a lo largo de los años.\nEsta noche eres el objeto de la atención del gran guerrero. Al notar algunos defectos en las habilidades de combate de tus campeones, se ofrece a ayudarlos en una pequeña sesión de entrenamiento." #NT!
+ pod_assamite_struggle.1011.a: "Me siento honrado, gracias." #NT!
+ pod_assamite_struggle.1011.b: "No creo que sea necesario." #NT!
+ pod_assamite_struggle.1011.c: "Por favor, tengan paciencia con ellos." #NT!
+  
+ losttribe_gain_lot_influence_tt: "La Tribu Perdida gana mucha influencia." #NT!
+  
+ pod_assamite_struggle.1012.t: "La verdad de Anosh" #NT!
+ pod_assamite_struggle.1012.desc: "El misterioso (y altamente herético) Culto de Zilah de Dastur Anosh se ha escondido desde la muerte de su maestro en manos de los asesinos de Alamut. Aun así, su influencia no ha desaparecido por completo de la política persa. Esta noche, has recibido una nota que dice que un antiguo pergamino que contiene información... interesante sobre la Tercera Generación está circulando en tu zona. Un plan tan pequeño pero potencialmente impactante es la marca registrada de Anosh y tienes que decidir qué hacer al respecto." #NT!
+ pod_assamite_struggle.1012.a: "Necesito leerlo yo mismo." #NT!
+ pod_assamite_struggle.1012.b: "¡Encuéntralo y destrúyelo!" #NT!
+ pod_assamite_struggle.1012.c: "Dejalo deslizar." #NT!
+  
+ catalyst_massive_influence_wok_desc: "La influencia de Web of Knives es absoluta." #NT!
+ catalyst_massive_influence_ashirra_desc: "La influencia de Ashirra es absoluta." #NT!
+ catalyst_massive_influence_council_desc: "La influencia del Consejo de Pergaminos es absoluta." #NT!
+ catalyst_massive_influence_silsila_desc: "La influencia de Silsila es absoluta." #NT!
+ catalyst_massive_influence_losttribe_desc: "La influencia de La Tribu Perdida es absoluta." #NT!
+ catalyst_no_influence_wok_desc: "La influencia de Web of Knives es inexistente." #NT!
+ catalyst_no_influence_ashirra_desc: "La influencia Ashirra es inexistente." #NT!
+ catalyst_no_influence_council_desc: "La influencia del Consejo de los Pergaminos es inexistente." #NT!
+ catalyst_no_influence_silsila_desc: "La influencia de Silsila es inexistente." #NT!
+ catalyst_no_influence_losttribe_desc: "La influencia de la Tribu Perdida es inexistente." #NT!
+  
+ secure_persia_outsider_tt: "Debes poseer más condados en la región de iure de la lucha de la Casa Dividida (reinos de iure de Persia, Transoxiana, Makran, Kabulistan, Daylam, Khorasan/Web of Knives)" #NT!
+ secure_persia_kingdom_tt: "Debes controlar completamente un reino de iure involucrado en la lucha de la Casa Dividida (reinos de Persia, Transoxiana, Makran, Kabulistan, Daylam, Khorasan/Web of Knives)" #NT!
+  
+ struggle_parameter_unlocks_secure_assamite_foothold_decision: "Desbloquea la decisión de Asegurar Punto de Apoyo Persa para personajes no involucrados en Persia o sus alrededores." #NT!
+ assamite_struggle_uninvolved_or_external_tt: "Su capital debe estar fuera de Persia/Alamut" #NT!
+ assamite_struggle_secure_assamite_foothold_empire_tt: "Controlas un imperio que no es Persia/Alamut." #NT!
+ fp2_struggle_secure_assamite_foothold_empire_dejure_effect_tt: "Trasladarás de iure los reinos persas que posees bajo tu propio Imperio." #NT!
+  
+  
+ NOT_NO_WARS_STRUGGLE_PARAMETER_CD: "Estás en una fase de lucha en la que no puedes atacar a este personaje." #NT!
+  
+ french_struggle: "Una Francia fracturada" #NT!
+ french_struggle_desc: "La Francia vampírica estuvo gobernada en su día por uno de los Ventrue más influyentes, Alexander, que contaba con el apoyo de las Cortes del Amor de los Toreador, un grupo de poderosas reinas que gobernaban desde las principales ciudades francesas y le brindaban consejos y apoyo. Pero la insensibilidad y el aislamiento del viejo Ventrue acabaron por acabar con él en 1222, cuando fue derrocado por un golpe de estado fomentado por la más poderosa Reina del Amor, Salianna, y su propio chiquillo, Geoffrey. Salianna asumió entonces el poder, pero un cambio tan brutal después de más de 600 años de statu quo ha sumido a Francia en el caos, un caos que se ha visto agravado por la Cruzada Albigense en curso, la división entre occitanos y franceses y la invasión del reino por parte de Inglaterra y Alemania. ¿Sobrevivirá la Francia vampírica a los tiempos difíciles que se avecinan?" #NT!
+ struggle_french_phase_chaos: "La tormenta" #NT!
+ struggle_french_phase_chaos_desc: "Con la Inquisición descontrolada, los reinos vampíricos van a la guerra en las sombras de Francia, con la esperanza de reclamar con la fuerza de las armas lo que no pudieron con palabras melosas." #NT!
+ struggle_french_phase_reprieve: "La calma" #NT!
+ struggle_french_phase_reprieve_desc: "Incluso los vampiros necesitan recuperarse de vez en cuando. La consolidación del poder está ocurriendo ahora mismo, mientras los reyes y reinas se aseguran de que su influencia y sus fuerzas estén preparadas para la siguiente fase." #NT!
+  
+ pod_french_struggle.0501.t: "Una Francia fracturada" #NT!
+ pod_french_struggle.0501.desc: "La Francia vampírica estuvo gobernada en su día por uno de los Ventrue más influyentes, Alexander, que contaba con el apoyo de las Cortes del Amor de los Toreador, un grupo de poderosas reinas que gobernaban desde las principales ciudades francesas y le brindaban consejos y apoyo. Pero la insensibilidad y el aislamiento del viejo Ventrue acabaron por acabar con él en 1222, cuando fue derrocado por un golpe de estado fomentado por la más poderosa Reina del Amor, Salianna, y su propio chiquillo, Geoffrey. Salianna asumió entonces el poder, pero un cambio tan brutal después de más de 600 años de statu quo ha sumido a Francia en el caos, un caos que se ha visto agravado por la Cruzada Albigense en curso, la división entre occitanos y franceses y la invasión del reino por parte de Inglaterra y Alemania. ¿Sobrevivirá la Francia vampírica a los tiempos difíciles que se avecinan?" #NT!
+ pod_french_struggle.0501.a: "El caos genera oportunidades." #NT!
+  
+ struggle_parameter_struggle_parameter_less_factions_by_involved: "Los personajes involucrados son menos propensos a unirse a facciones durante esta fase de lucha." #NT!
+ struggle_parameter_struggle_parameter_no_revoke_by_involved: "Los personajes involucrados no pueden revocar títulos durante esta fase de lucha." #NT!
+  
+ blois_french_struggle_tt: "[TARGET_TITLE.GetNameNoTier] debe ser mantenido por usted o por alguien que lo respalde (75 o más opiniones)." #NT!
+  
+ french_struggle_german_less_control_tt: "El [GetTitleByKey('e_fiefs_of_the_black_cross').GetNameNoTier] debe controlar menos del 20% de Francia." #NT!
+ french_struggle_english_less_control_tt: "El [GetTitleByKey('e_avalon').GetNameNoTier] debe controlar menos del 20% de Francia." #NT!
+ french_struggle_english_more_control_tt: "El [GetTitleByKey('e_avalon').GetNameNoTier] debe controlar más del 30% de Francia." #NT!
+ french_struggle_german_more_control_tt: "El [GetTitleByKey('e_fiefs_of_the_black_cross').GetNameNoTier] debe controlar más del 30% de Francia." #NT!
+  
+ french_victory_objective_decision: "Francia restaurada" #NT!
+ french_victory_objective_decision_tooltip: "Si Francia quiere sobrevivir a los invasores, deberá volver a estar unida." #NT!
+ french_victory_objective_decision_desc: "El debilitamiento de Francia ha dejado a los alemanes y a los ingleses con la mirada puesta en tierras que nos pertenecen por derecho. Es hora de dejar de lado nuestras diferencias y resurgir como una de las potencias más fuertes de la noche." #NT!
+ french_victory_objective_decision_confirm: "Francia eterna" #NT!
+ french_victory_objective_decision_effect_tooltip: "La lucha terminará. Las ciudades de [GetTitleByKey('b_rethel').GetNameNoTier], [GetTitleByKey('b_lyon').GetNameNoTier], [GetTitleByKey('b_bordeaux').GetNameNoTier], [GetTitleByKey('b_blois').GetNameNoTier] y [GetTitleByKey('b_poitiers').GetNameNoTier] obtendrán un nuevo edificio especial. Usurparás el Imperio de [GetTitleByKey('e_love').GetNameNoTier] si aún no lo tienes." #NT!
+  
+ pod_french_struggle.102.t: "Francia restaurada" #NT!
+ pod_french_struggle.102.desc: "La unidad de Francia, rota por el exilio forzado de Alejandro, ha sido cuestionada por los invasores Cainitas alemanes e ingleses, pero también por sus príncipes, díscolos y pendencieros, que luchan por el dominio en el vacío dejado por el golpe. Esta agitación también permitió que la Inquisición se enconara y creciera, amenazando con derribar lo poco que quedaba de las estructuras políticas vampíricas. Sin embargo, ya no es así, ya que los Cainitas franceses han encontrado un nuevo sentido de propósito y unidad. Una vez más, libres de sus invasores y lo suficientemente organizados como para mantener a raya a la Inquisición, las Cortes han vuelto a la escena política vampírica de Europa Occidental de una manera importante." #NT!
+ pod_french_struggle.102.a: "La historia de Francia apenas comienza." #NT!
+  
+ e_love_brujah: "Tribunales de Filosofía" #NT!
+ e_love_lasombra: "Tribunales de las Sombras" #NT!
+ e_love_gangrel: "Tribunales de la Galia" #NT!
+  
+ english_victory_objective_decision: "El yugo inglés" #NT!
+ english_victory_objective_decision_tooltip: "Francia está lo suficientemente debilitada como para abrir el camino a nuevos amos." #NT!
+ english_victory_objective_decision_desc: "Los mortales ingleses tienen razón: Francia e Inglaterra deben estar unidas, bajo el debido gobierno inglés, por supuesto." #NT!
+ english_victory_objective_decision_confirm: "¡Nace una unión eterna!" #NT!
+ english_victory_objective_decision_effect_tooltip: "La lucha terminará. Las ciudades de [GetTitleByKey('b_rethel').GetNameNoTier], [GetTitleByKey('b_lyon').GetNameNoTier], [GetTitleByKey('b_bordeaux').GetNameNoTier], [GetTitleByKey('b_blois').GetNameNoTier] y [GetTitleByKey('b_poitiers').GetNameNoTier] obtendrán un nuevo edificio especial. Usurparás el Imperio de [GetTitleByKey('e_love').GetNameNoTier] si aún no lo tienes. Muchos personajes de Francia se convertirán a tu religión." #NT!
+  
+ pod_french_struggle.105.t: "El yugo inglés" #NT!
+ pod_french_struggle.105.desc: "Los destinos de Francia e Inglaterra han estado entrelazados desde 1066. Para los vampiros, fue la época en que una camarilla de tres Cainitas normandos usurpó el gobierno del Culto de Mitra en Inglaterra. Pero su victoria duró poco, ya que Mitra, una vez que regresó del letargo, recuperó rápidamente el control de sus dominios.\nDesde entonces, Inglaterra ha extendido su influencia sobre Francia, utilizando el caos creado por el exilio de Alejandro para ganar primero algunos territorios y, lo que es más importante, , cierta influencia sobre los lugareños. De forma lenta pero segura, los Cainitas de las islas han ido consiguiendo cada vez más poder en la región y, siguiendo el ejemplo de sus mortales, ahora reclaman el dominio sobre un Imperio verdaderamente "angelino"." #NT!
+ pod_french_struggle.105.a: "De York a Marsella." #NT!
+ pod_french_struggle.105.custom: "Los gobernantes involucrados y no celosos se convertirán a vuestra fe." #NT!
+ e_love_mithras: "Tribunales de Avalon" #NT!
+ e_love_english: "Imperio angevino" #NT!
+  
+ german_victory_objective_decision: "El yugo alemán" #NT!
+ german_victory_objective_decision_desc: "Alemania y Francia tienen una larga historia en común que se remonta a Carlomagno, para los mortales, y a Eirik Eigermann, para los vampiros. Debemos utilizar este pasado para unir la región." #NT!
+ german_victory_objective_decision_confirm: "¡Una victoria de Karling!" #NT!
+  
+ pod_french_struggle.106.t: "El yugo alemán" #NT!
+ pod_french_struggle.106.desc: "En el mundo mortal, Alemania y Francia fueron una sola bajo el gobierno de Carlomagno. Muchos Cainitas han intentado recrear esta hazaña, desde el sajón Eirik Eigermann hasta el patrón no muerto del propio Carlomagno, Alejandro. Ninguno ha tenido éxito del todo, a pesar de los estrechos lazos que comparten los dos países. Sin embargo, el exilio forzado de Alejandro abrió nuevas oportunidades para los Cainitas alemanes, que en ese momento ya eran una fuerza fuerte y unida bajo Ventrue tan prestigiosos como Hardestadt o Julia Antasia. Desde entonces, la influencia de Alemania en la política vampírica francesa no ha hecho más que crecer hasta un punto en el que muchos predicen que el futuro ya está fijado para esas dos naciones. Los herederos de los francos y de los sajones volverán a trabajar juntos por un objetivo común." #NT!
+ pod_french_struggle.106.a: "De Magdeburgo a Brest." #NT!
+ e_love_eternal: "Galia" #NT!
+ e_love_fiefs: "Feudos de la Rosa" #NT!
+  
+ pod_french_struggle.1000.t: "Luchando con la Inquisición" #NT!
+ pod_french_struggle.1000.desc: "La temida Inquisición nació básicamente en Francia, a la sombra de la cruzada contra los albigenses. Sus agentes rondan las calles por la noche, utilizando sus talentos sagrados para hacer que la no vida de los vampiros sea mucho más difícil. Lamentablemente, están especialmente presentes en una de las regiones bajo tu control en los últimos tiempos, dejándote con pocas opciones más que capear el temporal o lidiar con ellos de alguna manera." #NT!
+ pod_french_struggle.1000.a: "Vamos a esperar." #NT!
+ pod_french_struggle.1000.b: "Contratar algunos agentes para desviarlos." #NT!
+ pod_french_struggle.1000.c: "¡Redirigirlos hacia tus rivales!" #NT!
+ pod_french_struggle.1000.d: "Estoy cansado de ellos, ¡mátenlos a todos!" #NT!
+  
+ pod_french_struggle.1001.t: "De Constantinopla a Lyon" #NT!
+ pod_french_struggle.1001.desc: "El otrora poderoso Príncipe de Lyon, Francois d'Alencourt, ha visto su fortuna menguar con la llegada de la Inquisición. Sin embargo, sigue siendo un jugador poderoso muy respetado en Francia y su comportamiento honorable no tiene comparación.\nEsta noche ha acudido a su corte con una propuesta. Una caravana de refugiados del desmoronado Imperio Bizantino ha llegado a sus dominios en busca de un nuevo lugar donde quedarse. Si bien d'Alencourt ayudó a quienes pudo, Lyon se ha vuelto demasiado peligroso con la Inquisición desenfrenada en el área. Como tal, ha acudido a usted con una solicitud formal para encontrarles a estos refugiados un lugar donde quedarse en su dominio, mientras los protege y los acoge lo mejor que pueda. Después de todo, el honor dicta nada menos que ayudar a los necesitados." #NT!
+ pod_french_struggle.1001.a: "Una causa justa. Y un favor interesante." #NT!
+ pod_french_struggle.1001.b: "¡No caeré en estos trucos políticos!" #NT!
+  
+ pod_french_struggle.1002.t: "Juegos mortales" #NT!
+ pod_french_struggle.1002.desc: "Isouda de Blaise es una de las reinas del amor más influyentes y, sin duda, la más temida. Bajo su fina capa de gracia y belleza se esconde una mente completamente desquiciada, que idea los juegos sociales más retorcidos para jugar en su corte. Recientemente has recibido una invitación a una de esas reuniones. Isouda se lo tomaría como algo personal si te negaras, pero ¿estás dispuesta a soportar lo peor que la "Rosa del Lobo" pueda arrojarte?" #NT!
+ pod_french_struggle.1002.a: "¿Qué es lo peor que podría pasar?" #NT!
+ pod_french_struggle.1002.b: "¡Tengo una cita importante en esta fecha!" #NT!
+ pod_french_struggle.1002.c: "¿Nuevos métodos de tortura? ¡Genial!" #NT!
+  
+ pod_french_struggle.1003.t: "Distracción costosa" #NT!
+ pod_french_struggle.1003.desc: "Helene, la más joven de las Reinas del Amor, gobierna la muy rica región de Champaña. Helene, una adolescente un tanto insulsa y excitable desde el exterior, ha demostrado con bastante frecuencia que su gregarismo es más que nada una fachada.\nEl champán pronto acogerá las grandes ferias francesas, quizás el evento mercantil más importante de Europa occidental. Muchos vampiros ahora están tratando de conseguir una porción del pastel y, probablemente no por coincidencia, Helene ha invitado a muchos de ellos (incluido a ti) a una lujosa fiesta durante el mismo período de tiempo, probablemente para asegurarse de que no interfieras con sus planes. Para el evento." #NT!
+ pod_french_struggle.1003.a: "El respeto vale más que el oro." #NT!
+ pod_french_struggle.1003.b: "Pensándolo bien..." #NT!
+ pod_french_struggle.1003.c: "¿Una fiesta? ¡Tengo muchísimas ideas para probar!" #NT!
+  
+ pod_french_struggle.1004.t: "El rey del amor" #NT!
+ pod_french_struggle.1004.desc: "El único Rey del Amor reconocido entre las Cortes es Etienne, el príncipe de la región de Poitou. Un hombre reservado, fue subestimado como un gobernante débil hasta hace poco, cuando su audaz movimiento contra Esclarmonde y su acercamiento con Mitra e Inglaterra de repente mostraron una mentalidad política mucho más letal de lo que se había previsto en un principio.\nHa recibido una solicitud para reunirse con él para un propósito no revelado. Es probable que esto sea un movimiento bastante político si se acepta, ya que Etienne ciertamente tiene algún plan bajo la manga contra otro competidor." #NT!
+ pod_french_struggle.1004.a: "¿Quién es el objetivo?" #NT!
+ pod_french_struggle.1004.b: "Es demasiado peligroso para confiar en él." #NT!
+ pod_french_struggle.1004.c: "Puedo mejorar sus planes..." #NT!
+  
+ pod_french_struggle.1005.t: "El rey mal preparado" #NT!
+ pod_french_struggle.1005.desc: "Geoffrey du Temple fue uno de los principales cerebros detrás del exilio de Alejandro (su propio [Sire|E]). Lamentablemente para él, desde entonces, ha sido cada vez más marginado por jugadores mucho más expertos en el juego político que él, como la propia Salianna.\nAl percibir su debilidad, Geoffrey busca cualquier aliado que esté dispuesto a ayudar en su causa. Alinearse con él sería costoso, pero sigue siendo el Príncipe de París, una posición que inspira respeto y será fundamental para unificar a Francia en un momento u otro." #NT!
+ pod_french_struggle.1005.a: "Préstale algo de ayuda." #NT!
+ pod_french_struggle.1005.b: "Préstale alguna ayuda simbólica e inútil." #NT!
+ pod_french_struggle.1005.c: "Préstale una ayuda bien preparada y completa." #NT!
+  
+ pod_french_struggle.1006.t: "Las riquezas de Aquitania" #NT!
+ pod_french_struggle.1006.desc: "Burdeos es una de las ciudades más prósperas de Francia. Irónicamente, esto se debe principalmente al hecho de que es la ciudad francesa más importante en manos de mortales ingleses (y a menudo también de vampiros) desde hace mucho tiempo. Esto la ha convertido en el centro de comercio para cualquier comerciante inglés que se precie. El Príncipe de Burdeos es Gerard, un leal vasallo de Mitra y un administrador capaz. Sin embargo, está completamente abrumado por los intereses en pugna en la ciudad y la creciente presencia de la Inquisición en la zona, mientras recibe poca o ninguna ayuda de Inglaterra. Semejante desorden podría ser una ocasión para "liberar" algunas de las riquezas de Burdeos para su propio uso..." #NT!
+ pod_french_struggle.1006.a: "Respetaré el principado de Gerard." #NT!
+ pod_french_struggle.1006.b: "Realmente hay oro gratis por ahí." #NT!
+ pod_french_struggle.1006.c: "¡Más oro!" #NT!
+  
+ pod_french_struggle.1007.t: "La reina de Occitania" #NT!
+ pod_french_struggle.1007.desc: "La poderosa Esclarmonde se ha convertido en el punto de encuentro de los Cainitas occitanos desde que comenzó la Cruzada Albigense. Su tenaz resistencia contra la Inquisición y los franceses del norte ha hecho que su corte sea de facto independiente del control de los parisinos. La "reina negra" es una figura misteriosa y se dice que muchos le han jurado lealtad eterna después de una simple mirada. Por eso te preocupa que esta inesperada invitación a Toulouse aparezca de repente en tu puerta..." #NT!
+ pod_french_struggle.1007.a: "¡Seguramente puedo resistir su hechizo!" #NT!
+ pod_french_struggle.1007.b: "Mejor no arriesgarse." #NT!
+ pod_french_struggle.1007.c: "También sé un par de cosas sobre el fascinación..." #NT!
+ french_struggle_taunt_tooltip: "No, no puedes." #NT!
+  
+ pod_french_struggle.1008.t: "El dios del sol trae regalos" #NT!
+ pod_french_struggle.1008.desc: "Mitra, el poderoso gobernante de las Baronías de Avalon, ha mostrado poco interés en Francia durante la época del gobierno de Alejandro. Pero ahora que el país está desestabilizado por su exilio y que los mortales ingleses también están haciendo incursiones en él, parece que el Dios Sol tiene nuevos planes.\nMitra ha comenzado una gran gira por Francia y ha estado haciendo escala en muchas ciudades, impresionando a sus habitantes Cainitas con su gran poder e influencia. Puedes hacer incursiones para que Mitra pase por tu ciudad durante su gira si así lo deseas. Sin duda, quedarías bien parado y él es un invitado generoso. Pero el riesgo de caer bajo su hechizo es algo que debes considerar..." #NT!
+ pod_french_struggle.1008.a: "¡Me siento honrado por su presencia!" #NT!
+ pod_french_struggle.1008.b: "Mejor no arriesgarse." #NT!
+ pod_french_struggle.1008.c: "¡Mitra ya es mi dios! ¿Seguramente me ayudará?" #NT!
+  
+ pod_french_struggle.1009.t: "La oferta del tirano" #NT!
+ pod_french_struggle.1009.desc: "El poderoso Hardestadt de Alemania es una rareza en el mundo Cainita. Proviene de un linaje oculto y ha logrado convertirse en el Ventrue más importante de Europa a pesar de su corta edad. Tiene fama de ser un político astuto y despiadado, pero tampoco se le conoce por andarse con rodeos. Su repentina visita a tu corte te sorprende, pero su oferta es aún más sorprendente. Con total sinceridad, Hardestadt te dice que tiene planes para Francia y que podrías ser un activo en esta tarea. Te ofrece oro, un ejército personal y el reconocimiento de tu valor en su corte si aceptas unirte a los Feudos de la Cruz Negra." #NT!
+ pod_french_struggle.1009.a: "Una oferta tentadora..." #NT!
+ pod_french_struggle.1009.b: "No confío en él." #NT!
+  
+ pod_french_struggle.1010.t: "Una conversación clásica" #NT!
+ pod_french_struggle.1010.desc: "Una de las Ventrue más influyentes de Europa occidental, Julia Antasia, ha venido a visitar algunas de las cortes de Francia. Tiene muchos seguidores devotos en la región, todos elogian su sensatez y su visión utópica de una sociedad democrática para los Cainitas. Ha estado en tu corte desde hace un par de noches y debes admitir que su reputación no es exagerada. Es tranquila, serena y todo lo que dice pinta una vívida visión de un futuro potencialmente grandioso para tu especie. Puedes sentirte cada vez más influenciado por esta conversación aparentemente benigna entre iguales." #NT!
+ pod_french_struggle.1010.a: "Una charla interesante, nada más." #NT!
+ pod_french_struggle.1010.b: "Ella tiene algunos puntos muy buenos..." #NT!
+ pod_french_struggle.1010.c: "Señora mía, no diga más, ¡déjeme servirla!" #NT!
+  
+ pod_french_struggle.1011.t: "Regalo envenenado" #NT!
+ pod_french_struggle.1011.desc: "Como matriarca de las Cortes del Amor, Salianna es, al menos nominalmente, la cainita más importante de Francia desde el exilio de Alejandro. Sin embargo, su gobierno es cuestionado y ella está tratando de asegurarlo lo mejor que puede desde entonces. Como uno de los gobernantes influyentes de la noche en Francia, estás sujeto a algunas de sus estratagemas para obtener reconocimiento. Durante la última sesión de la corte, ella está tratando de ofrecerte un mortal de elección para que lo uses como creas conveniente. Políticamente, aceptar el regalo significa darle crédito como un señor que recompensa a un vasallo, fortaleciendo su posición a tu costa. Por otro lado, este mortal parece ser realmente interesante..." #NT!
+ pod_french_struggle.1011.a: "Me siento honrada, Matriarca." #NT!
+ pod_french_struggle.1011.b: "Puedes conservar tus regalos." #NT!
+  
+ pod_french_struggle.1012.t: "Visitantes del sur" #NT!
+ pod_french_struggle.1012.desc: "Los Lasombra ibéricos se encontraban entre los muchos extranjeros que intentaban conseguir la mayor influencia posible en Francia tras el exilio de Alejandro. Sus propios problemas en la península con la guerra civil en curso pronto pusieron fin a sus esfuerzos. Aun así, algunos jóvenes Lasombra ven oportunidades en la situación de Francia, tal vez para hacer fortuna antes de un regreso triunfal a casa. Uno de esos grupos mercenarios ha venido a ofrecerle sus servicios recientemente. Obviamente, podría rechazar su propuesta, pero no hay duda de que entonces encontrarían otro empleador, tal vez incluso uno de sus competidores." #NT!
+ pod_french_struggle.1012.a: "Estás contratado." #NT!
+ pod_french_struggle.1012.b: "Usted no." #NT!
+  
+ french_struggle_house_modifier: "Maestros de Francia" #NT!
+ french_struggle_house_modifier_desc: "Los miembros de esta Cámara han asegurado la Francia vampírica, asegurándose una gran influencia sobre esta importante parte de Europa Occidental." #NT!
+  
+ norman_opinion: "Opinión de Norman" #NT!

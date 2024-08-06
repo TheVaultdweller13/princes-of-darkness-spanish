@@ -1,0 +1,201 @@
+﻿l_spanish:
+ ratkingifts_visible: "Regalos de Ratkin" #NT!
+ ratkinhomidgifts_visible: "Regalos de Homidios" #NT!
+ rodensgifts_visible: "Regalos de Rodens" #NT!
+ ratkinmetisgifts_visible: "Regalos métis" #NT!
+ tunnel_runnergifts_visible: "Regalos para corredores de túneles" #NT!
+ shadow_seergifts_visible: "Regalos de vidente de sombras" #NT!
+ knife_skulkergifts_visible: "Regalos de cuchillos merodeadores" #NT!
+ bardgifts_visible: "Regalos de Bardo" #NT!
+ warriorgifts_visible: "Regalos de guerrero" #NT!
+ engineergifts_visible: "Regalos ingeniero" #NT!
+ plague_lordgifts_visible: "Regalos del Señor de la Plaga" #NT!
+ munchmausengifts_visible: "Regalos de Munchmausen" #NT!
+ twitchergifts_visible: "Regalos de Twitcher" #NT!
+ nezumigifts_visible: "Nezumi Gifts" #NT!
+  
+ NEEDS_ENGINEERS_TEXT: "@warning_icon!#X Requiere [GetTrait('engineers').GetName( GetPlayer )] [traits|E] para comprar ventajas en este árbol.#!" #NT!
+ NEEDS_PLAGUE_LORDS_TEXT: "@warning_icon!#X Requiere [GetTrait('plague_lords').GetName( GetPlayer )] [traits|E] para comprar ventajas en este árbol.#!" #NT!
+ NEEDS_MUNCHMAUSEN_TEXT: "@warning_icon!#X Requiere [GetTrait('munchmausen').GetName( GetPlayer )] [traits|E] para comprar ventajas en este árbol.#!" #NT!
+ NEEDS_TWITCHERS_TEXT: "@warning_icon!#X Requiere [GetTrait('twitchers').GetName( GetPlayer )] [traits|E] para comprar ventajas en este árbol.#!" #NT!
+  
+ ratkin_cloak_of_shadows_perk_name: "Capa de sombras" #NT!
+ stash_cache_perk_name: "Caché de almacenamiento" #NT!
+ snitch_perk_name: "Soplón" #NT!
+ backbite_perk_name: "Murmurar" #NT!
+ bolt_perk_name: "¡Tornillo!" #NT!
+ mind_of_the_tunnels_perk_name: "Mente de los túneles" #NT!
+ perfect_poison_perk_name: "veneno perfecto" #NT!
+ plague_bite_perk_name: "Mordedura de peste" #NT!
+  
+ SNITCH_PERK_EFFECT: "[espionage|E] Velocidad de progreso: #P +[EmptyScope.ScriptValue('digging_for_dirt_perk_percentage')|0]%#!" #NT!
+ SNITCH_PERK_BONUS_VALUE: "[GetPerk('snitch_perk').GetName(GetPlayer)]" #NT!
+ BACKBITE_PERK_EFFECT: "Posibilidad de quedar atrapado en la Umbra: #P -5%#!" #NT!
+ BOLT_PERK_EFFECT: "Posibilidad de quedar atrapado en la Umbra: #P -5%#!" #NT!
+ PLAGUE_BITE_PERK_EFFECT: "Como [character_interaction|E], te permite dar enfermedades." #NT!
+  
+ cooking_perk_name: "Cocinando" #NT!
+ eau_de_rat_perk_name: "Agua de rata" #NT!
+ filch_perk_name: "Sisar" #NT!
+ instinct_perk_name: "Instinto" #NT!
+ ratman_perk_name: "hombre rata" #NT!
+ ratkin_blink_perk_name: "Parpadear" #NT!
+ body_wrack_perk_name: "Restos del cuerpo" #NT!
+ ugly_truth_perk_name: "Fea verdad" #NT!
+  
+ INSTINCT_PERK_EFFECT: "Otorga un modificador [GetModifier('instinct_perk_modifier').GetNameWithTooltip] al enemigo [knights|E] en la guerra como comandante o al enemigo en [single_combat_duel|E]." #NT!
+ RATMAN_PERK_EFFECT: "Permitir el cambio de forma a [GetModifier( 'POD_ratkin_form_ratman_modifier' ).GetNameWithTooltip|L]." #NT!
+ BODY_WRACK_PERK_EFFECT: "Otorga un modificador [GetModifier('body_wrack_perk_modifier').GetNameWithTooltip] al enemigo [knights|E] en la guerra como comandante o al enemigo en [single_combat_duel|E]." #NT!
+  
+ absolute_balance_perk_name: "Equilibrio absoluto" #NT!
+ leap_of_the_kangaroo_rat_perk_name: "El salto de la rata canguro" #NT!
+ devour_the_dead_perk_name: "devorar a los muertos" #NT!
+ scamper_perk_name: "Corretear" #NT!
+ sliver_tooth_perk_name: "Diente de astilla" #NT!
+ mind_of_the_swarm_perk_name: "Mente del enjambre" #NT!
+ rat_emperors_wisdom_perk_name: "La sabiduría del emperador rata" #NT!
+ furtive_gathering_perk_name: "Reunión furtiva" #NT!
+  
+ SLIVER_TOOTH_PERK_EFFECT: "Otorga un modificador [GetModifier('sliver_tooth_perk_modifier').GetNameWithTooltip] al enemigo [knights|E] en la guerra como comandante o al enemigo en [single_combat_duel|E]." #NT!
+ MIND_OF_THE_SWARM_PERK_EFFECT: "Puede reclutar [GetMaA('rats').GetName] como [men_at_arms|E]." #NT!
+  
+ danger_sense_perk_name: "Sentido del peligro" #NT!
+ silent_running_perk_name: "Funcionamiento silencioso" #NT!
+ sigil_perk_name: "Sigilo" #NT!
+ urban_camouflage_perk_name: "Camuflaje urbano" #NT!
+ evasion_perk_name: "Evasión" #NT!
+ second_sight_perk_name: "Segunda señal" #NT!
+ speak_in_tongues_perk_name: "Hablar en lenguas" #NT!
+ tunnel_echoes_perk_name: "Ecos de túnel" #NT!
+ cheese_it_perk_name: "¡Queso!" #NT!
+  
+ SECOND_SIGHT_PERK_VALUE: "[GetPerk('second_sight_perk').GetName(GetPlayer)]" #NT!
+  
+ rat_mothers_touch_perk_name: "El toque de la madre rata" #NT!
+ ratkin_sense_wyrm_perk_name: "Sentido Wyrm" #NT!
+ spirit_of_the_spiny_rat_perk_name: "Espíritu de la rata espinosa" #NT!
+ stink_perk_name: "Hedor" #NT!
+ rat_thing_perk_name: "Cosa de rata" #NT!
+ ratkin_lullaby_perk_name: "Canción de cuna de Ratkin" #NT!
+ whelp_body_perk_name: "Cuerpo de cachorro" #NT!
+ war_of_vengeance_perk_name: "Guerra de venganza" #NT!
+  
+ STINK_PERK_EFFECT: "Otorga un modificador [GetModifier('stink_perk_modifier').GetNameWithTooltip] al enemigo [knights|E] en la guerra como comandante o al enemigo en [single_combat_duel|E]." #NT!
+ RAT_THING_PERK_EFFECT: "Permitir el cambio de forma a [GetModifier( 'POD_ratkin_form_rat_thing_modifier' ).GetNameWithTooltip|L]." #NT!
+ RATKIN_LULLABY_PERK_EFFECT: "Otorga un modificador [GetModifier('ratkin_lullaby_perk_modifier').GetNameWithTooltip] al enemigo [knights|E] en la guerra como comandante o al enemigo en [single_combat_duel|E]." #NT!
+ WHELP_BODY_PERK_EFFECT: "Como [character_interaction|E], te permite otorgar un modificador [GetModifier('whelp_body_perk_modifier').GetNameWithTooltip] al objetivo." #NT!
+ WAR_OF_VENGEANCE_PERK_EFFECT: "Puede reclutar a [GetMaA('legendaries').GetName] como [men_at_arms|E]" #NT!
+  
+ sense_weaver_perk_name: "Tejedor de sentidos" #NT!
+ summon_engling_perk_name: "Invocar a Engling" #NT!
+ touch_the_spirits_perk_name: "Toca los espíritus" #NT!
+ protect_the_swarm_perk_name: "Proteger el enjambre" #NT!
+ command_spirit_perk_name: "Espíritu de mando" #NT!
+ discarded_dreams_perk_name: "Sueños descartados" #NT!
+ feast_of_the_dead_perk_name: "Fiesta de los muertos" #NT!
+ elegy_perk_name: "Elegía" #NT!
+  
+ SUMMON_ENGLING_PERK_EFFECT: "Como [character_interaction|E], te permite obtener Gnosis a costa de una opinión espiritual inferior." #NT!
+ TOUCH_THE_SPIRITS_PERK_EFFECT: "Desbloquear $seek_aid_of_the_spirits_decision$ [decision|E].\nDesbloquear [marked_for_return_interaction|E].\nNúmero máximo de espectros atados: #P +1#!." #NT!
+ DISCARDED_DREAMS_PERK_EFFECT: "Como [character_interaction|E], te permite dar [SelectLocalization( HasDlcFeature( 'royal_court' ), 'inspiration_ROCO_DLC', 'inspiration_NO_ROCO_DLC' )] al objetivo." #NT!
+ inspiration_ROCO_DLC: "[inspiration|E]" #NT!
+ inspiration_NO_ROCO_DLC: "[GetModifier('inspiration_modifier').GetNameWithTooltip]" #NT!
+ FEAST_OF_THE_DEAD_PERK_EFFECT: "Posibilidad de obtener un desbloqueo de beneficio al usar la opción caníbal [execution|E]" #NT!
+ ELEGY_PERK_EFFECT: "Desbloquea la opción $EXECUTION_CONVERT_TO_WRAITH$ [execution|E]." #NT!
+  
+ death_mark_perk_name: "Marca de muerte" #NT!
+ sticky_paws_perk_name: "Patas pegajosas" #NT!
+ mothers_truth_perk_name: "La verdad de la madre" #NT!
+ chitter_perk_name: "Parloteo" #NT!
+ ratkin_doppelganger_perk_name: "Doble" #NT!
+ open_wounds_perk_name: "Heridas abiertas" #NT!
+ ratkin_wither_limb_perk_name: "Miembro marchito" #NT!
+ geas_perk_name: "Geas" #NT!
+  
+ MOTHERS_TRUTH_PERK_BONUS_VALUE: "[GetPerk('mothers_truth_perk').GetName(GetPlayer)]" #NT!
+ CHITTER_PERK_EFFECT: "Otorga un modificador [GetModifier('chitter_perk_modifier').GetNameWithTooltip] al enemigo [knights|E] en la guerra como comandante o al enemigo en [single_combat_duel|E]." #NT!
+ OPEN_WOUNDS_PERK_EFFECT: "Al infligir una herida, inflige esa herida nuevamente con la misma severidad." #NT!
+ GEAS_PERK_EFFECT: "Como [character_interaction|E], te permite obtener un gancho en el objetivo." #NT!
+  
+ the_right_joke_perk_name: "El chiste correcto" #NT!
+ ratkin_persuasion_perk_name: "Persuasión" #NT!
+ ratkin_mindspeak_perk_name: "Hablar con la mente" #NT!
+ shaddup_perk_name: "¡Cállate!" #NT!
+ ratkin_speech_of_the_world_perk_name: "Discurso del mundo" #NT!
+ lucky_bastard_perk_name: "Bastardo Suertudo" #NT!
+ whispered_dreams_perk_name: "Sueños susurrados" #NT!
+ legendary_form_perk_name: "Forma legendaria" #NT!
+  
+ WHISPERED_DREAMS_PERK_EFFECT: "Otorga el modificador [GetModifier('whispered_dreams_perk_modifier').GetNameWithTooltip] a los comandantes enemigos en la guerra como comandante." #NT!
+ LEGENDARY_FORM_PERK_EFFECT: "Permite cambiar de forma a varias formas pasadas, como [GetModifier( 'POD_shapeshift_form_dragon_modifier' ).GetNameWithTooltip|L]." #NT!
+  
+ resist_pain_perk_name: "Resistir el dolor" #NT!
+ slicing_teeth_perk_name: "Cortar los dientes" #NT!
+ rats_teeth_perk_name: "Dientes de rata" #NT!
+ spirit_of_the_fray_perk_name: "Espíritu de la lucha" #NT!
+ improvisation_perk_name: "Improvisación" #NT!
+ persecution_complex_perk_name: "Complejo de persecución" #NT!
+ treppelganger_perk_name: "Treppelganger" #NT!
+ pack_attack_perk_name: "Ataque de manada" #NT!
+  
+ TREPPELGANGER_PERK_EFFECT: "Desbloquea la opción de cambio de forma [GetModifier( 'POD_shapeshift_form_treppelganger_modifier' ).GetNameWithTooltip|L]." #NT!
+  
+ ratkin_control_simple_machine_perk_name: "Controlar una máquina simple" #NT!
+ scrounge_perk_name: "Gorronear" #NT!
+ hotwire_perk_name: "Alambre caliente" #NT!
+ mousetrap_perk_name: "Ratonera" #NT!
+ summon_electricity_perk_name: "Invocar electricidad" #NT!
+ control_complex_machine_perk_name: "Máquina compleja de control" #NT!
+ battery_perk_name: "Batería" #NT!
+ death_ray_perk_name: "Rayo de la muerte" #NT!
+  
+ SUMMON_ELECTRICITY_PERK_EFFECT: "Puede reclutar [GetMaA('electricity_elemental').GetName] como [men_at_arms|E]." #NT!
+ BATTERY_PERK_EFFECT: "Otorga un modificador [GetModifier('battery_perk_modifier').GetNameWithTooltip] al aliado [knights|E] cuando estés en guerra como comandante o a ti mismo en [single_combat_duel|E]." #NT!
+ DEATH_RAY_PERK_EFFECT: "Como [character_interaction|E], te permite causarle una herida al objetivo con una gravedad que dependerá de tu aprendizaje." #NT!
+  
+ poison_food_perk_name: "Comida venenosa" #NT!
+ sniffle_perk_name: "resfriado" #NT!
+ blur_of_the_weeping_eyes_perk_name: "Desenfoque de los ojos llorosos" #NT!
+ dredge_the_spirit_world_perk_name: "Dragar el mundo espiritual" #NT!
+ catgut_perk_name: "Cuerda de tripa" #NT!
+ lesions_perk_name: "Lesiones" #NT!
+ inflict_pain_perk_name: "Infligir dolor" #NT!
+ epidemic_contagion_perk_name: "Contagio epidémico" #NT!
+  
+ POISON_FOOD_PERK_EFFECT: "Otorga el modificador [GetModifier('poison_food_perk_modifier').GetNameWithTooltip] a los comandantes enemigos en la guerra como comandante." #NT!
+ BLUR_OF_THE_WEEPING_EYES_PERK_EFFECT: "Otorga un modificador [GetModifier('blur_of_the_weeping_eyes_perk_modifier').GetNameWithTooltip] al enemigo [knights|E] en la guerra como comandante o al enemigo en [single_combat_duel|E]." #NT!
+ DREDGE_THE_SPIRIT_WORLD_PERK_EFFECT: "Puede reclutar [GetMaA('wraiths').GetName] como [men_at_arms|E]." #NT!
+ CATGUT_PERK_EFFECT: "Puedes convertir a un prisionero en una armadura." #NT!
+ LESIONS_PERK_EFFECT: "Otorga un modificador [GetModifier('lesions_perk_modifier').GetNameWithTooltip] al enemigo [knights|E] en la guerra como comandante o al enemigo en [single_combat_duel|E]." #NT!
+ INFLICT_PAIN_PERK_EFFECT: "Otorga un modificador [GetModifier('inflict_pain_perk_modifier').GetNameWithTooltip] al enemigo [knights|E] en la guerra como comandante o al enemigo en [single_combat_duel|E]." #NT!
+ EPIDEMIC_CONTAGION_PERK_EFFECT: "Como [character_interaction|E], te permite desatar una terrible plaga mágica sobre el mundo." #NT!
+  
+ ratkin_spirit_speech_perk_name: "Discurso espiritual" #NT!
+ tale_spinning_perk_name: "Cuentos que giran" #NT!
+ ratkin_name_the_spirit_perk_name: "Nombrar el Espíritu" #NT!
+ rapier_wit_perk_name: "ingenio estoque" #NT!
+ adversity_perk_name: "Adversidad" #NT!
+ taste_of_madness_perk_name: "El sabor de la locura" #NT!
+ ratkin_whispered_dreams_perk_name: "Sueños susurrados" #NT!
+ hyperattenuation_perk_name: "hiperatenuación" #NT!
+  
+ TASTE_OF_MADNESS_PERK_EFFECT: "Otorga un modificador [GetModifier('taste_of_madness_perk_modifier').GetNameWithTooltip] al enemigo [knights|E] en la guerra como comandante o al enemigo en [single_combat_duel|E]." #NT!
+  
+ firebug_perk_name: "Insecto incendiario" #NT!
+ sense_angst_perk_name: "Sentir angustia" #NT!
+ holdout_perk_name: "Resistencia" #NT!
+ self_destruct_perk_name: "Auto destrucción" #NT!
+ pyrotechnics_perk_name: "Pirotécnica" #NT!
+ sanctify_perk_name: "Santificar" #NT!
+ ratkin_keening_of_swarm_panic_perk_name: "Lamento del pánico del enjambre" #NT!
+ all_hell_perk_name: "Todo el infierno" #NT!
+  
+ SANCTIFY_PERK_EFFECT: "Como [character_interaction|E], te permite usar Furia para aumentar la destreza de un artefacto de arma." #NT!
+ ALL_HELL_PERK_EFFECT: "Como [character_interaction|E], te permite otorgar [GetModifier('POD_delirium_modifier').GetNameWithTooltip] modificador al objetivo y cada [knights|E] del objetivo." #NT!
+  
+ hunter_in_crowds_perk_name: "Cazador en multitudes" #NT!
+ raiding_the_umbral_hoard_perk_name: "Asaltando el tesoro de Umbral" #NT!
+ cloak_of_darkest_night_perk_name: "Capa de la noche más oscura" #NT!
+ keening_of_swarm_panic_perk_name: "Lamento del pánico del enjambre" #NT!
+ ratkin_gnaw_perk_name: "Roer" #NT!
+ snake_bites_itself_perk_name: "La serpiente se muerde a sí misma" #NT!

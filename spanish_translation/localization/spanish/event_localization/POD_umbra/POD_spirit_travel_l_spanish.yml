@@ -1,0 +1,490 @@
+﻿l_spanish:
+  ######### 
+  # Intro # 
+  ######### 
+  
+ POD_spirit_travel.1000.t: "Introducción a Umbra" #NT!
+ POD_spirit_travel.1000.desc: "¿Qué tema te gustaría explorar?" #NT!
+ POD_spirit_travel.1000.a: "Exploración" #NT!
+ POD_spirit_travel.1000.b: "Acción" #NT!
+ POD_spirit_travel.1000.c: "Interés" #NT!
+ POD_spirit_travel.1000.d: "Peligro" #NT!
+ POD_spirit_travel.1000.e: "Estoy bien, vamos." #NT!
+ POD_spirit_travel.1001.a: "Volvamos." #NT!
+  
+ POD_spirit_travel.1001.t: "Exploración" #NT!
+ POD_spirit_travel.1001.desc: "La opción en la parte inferior del panel representa los reinos umbral que puedes visitar. La opción en el lado izquierdo del panel es la ubicación del subreino/reino. Un reino umbral puede ser de uno de seis tipos diferentes según el color del fondo de la opción: [astral_reaches|E], [dreaming|E], [spirit_wilds|E], [underworld|E], [deep_umbra|E] y áreas que no pertenecen a esos cinco. Los primeros cinco necesitan el rasgo o la ventaja correspondiente para acceder. Como tal, un reino umbral está oculto si no cumples con el requisito, como estar en una región costera/marina, tener el rasgo/la fe adecuados o haber pasado una fecha determinada." #NT!
+  
+ POD_spirit_travel.1002.t: "Acción" #NT!
+ POD_spirit_travel.1002.desc: "El lado derecho del panel enumera las acciones que se pueden usar en el reino de la umbra, incluido un mapa que te permite viajar rápidamente al punto de partida. Algunos reinos de la umbra tienen gobernantes que te permiten intercambiar gracia (que representa el favor de estos gobernantes) por beneficios. Cuando encuentras un interés, puedes usar una acción para iniciar una expedición de umbra, que abre un mapa que contiene desafíos, eventos aleatorios y duelos. Cuanto más estresado estés, más duelos se generarán en el camino." #NT!
+  
+ POD_spirit_travel.1003.t: "Interés" #NT!
+ POD_spirit_travel.1003.desc: "Puedes colocar un explorador de umbra en la parte inferior derecha del panel si el reino umbral lo permite. El explorador debe tener la capacidad de viajar por la umbra.\nLos exploradores informarán sobre eventos interesantes que encuentren en la umbra y aumentarán el nivel de conocimiento sobre el reino umbral que están explorando. Esto brinda beneficios que puede ver si pasa el mouse sobre el ícono de nivel de conocimiento correspondiente." #NT!
+  
+ POD_spirit_travel.1004.t: "Peligro" #NT!
+ POD_spirit_travel.1004.desc: "Si el nombre del reino umbral está coloreado en rojo, esto significa que este reino umbral es un lugar peligroso. Al ingresar, no podrás usar interacciones con otros personajes o incluso quedarás atrapado en este lugar. Por lo general, tampoco obtendrás intereses beneficiosos de la umbra con un explorador estacionado en él.\nCuando ocurre una gran vorágine, todos los reinos [underworld|E] se convertirán en una ubicación peligrosa.\nOblivion tiene un ícono de calavera por una razón. No entres en el olvido." #NT!
+  
+  ######## 
+  # Pass # 
+  ######## 
+ POD_umbra_pass.101.t: "Abriendo un Nihil" #NT!
+ POD_umbra_pass.101.desc: "Existe una membrana entre el [shadowlands|E] y el [tempest|E], no puedes ingresar al [tempest|E] sin abrir un Nihil" #NT!
+ POD_umbra_pass.101.a: "Haré un sacrificio para abrirlo." #NT!
+ POD_umbra_pass.101.b: "Usaré mi Nihil Instantáneo." #NT!
+ POD_umbra_pass.101.c: "No importa." #NT!
+  
+ POD_umbra_pass.103.t: "Deja de perder el tiempo" #NT!
+ POD_umbra_pass.103.desc: "No estás atado al mundo de los vivos en absoluto y puedes hacer un viaje de ida al [underworld|E] cuando quieras. La única razón por la que sigues aquí es porque quieres estar aquí, no porque tengas que hacerlo como la mayoría de los fantasmas. ¿Estás seguro de que quieres hacer este viaje ahora?" #NT!
+ POD_umbra_pass.103.a: "Es hora de cruzar el [tempest|E]." #NT!
+ POD_umbra_pass.103.b: "Todavía tengo cosas que hacer." #NT!
+  
+ POD_umbra_pass.104.t: "Cruzar el Santo Sudario" #NT!
+ POD_umbra_pass.104.desc: "¿Estás seguro de que te lanzarás a través del Sudario a la misma velocidad que un proyectil? Esto te hará daño en [Corpus|E] (al mismo nivel que el Sudario local)." #NT!
+ POD_umbra_pass.104.a: "¡Sí!" #NT!
+ POD_umbra_pass.104.b: "No." #NT!
+  
+ POD_umbra_pass.202.t: "Pase el Templo Obscura" #NT!
+ POD_umbra_pass.202.desc: "El Templo Obscura se encuentra en [malfeas|E], a la entrada de [black_spiral_labyrinth|E]. Es una mezcla colosal de mezquita y catedral, de minaretes orientales y estrías occidentales." #NT!
+ POD_umbra_pass.202.a: "Pediré pasar." #NT!
+ POD_umbra_pass.202.a.tt: "Esta opción está disponible porque estás sirviendo al Wyrm." #NT!
+ POD_umbra_pass.202.b: "Quiero colarme" #NT!
+ POD_umbra_pass.202.b.duel.tt.success: "Eso fue sólido." #NT!
+ POD_umbra_pass.202.b.duel.tt.failure: "None" #NT!
+ POD_umbra_pass.202.c: "Mejor no entro aquí." #NT!
+  
+ POD_umbra_pass.205.t: "¡Detener!" #NT!
+ POD_umbra_pass.205.desc: "Los guardias te detienen, no te reconocen como parte del reino espectral de Estigia, ¿cómo procederás?" #NT!
+ POD_umbra_pass.205.a: "He venido aquí para unirme a la legión." #NT!
+ POD_umbra_pass.205.b: "Quiero ser parte del gremio." #NT!
+ POD_umbra_pass.205.c: "¡Ya soy uno de los tuyos!" #NT!
+ POD_umbra_pass.205.d: "Simplemente me daré la vuelta." #NT!
+  
+ POD_umbra_pass.206.t: "¡Detener!" #NT!
+ POD_umbra_pass.206.desc: "Te detienen los guardias, no te reconocen como parte del [far_shore|E], ¿cómo procederás?" #NT!
+ POD_umbra_pass.206.a: "He venido aquí para alabar a los Resplandecientes." #NT!
+ POD_umbra_pass.206.b: "¡Ya soy uno de los tuyos!" #NT!
+ POD_umbra_pass.206.c: "Simplemente me daré la vuelta." #NT!
+  
+ POD_umbra_pass.207.t: "¡Detener!" #NT!
+ POD_umbra_pass.207.desc: "Dis está protegida por un laberinto de barcos hundidos, habitados por grupos de Espectros esclavizados con el Abrazo de Nhudri para mantener a raya a los espectros curiosos y hostiles. Los caminos que atraviesan el laberinto cambian constantemente y es casi imposible entrar en Dis sin el consentimiento de la Sociedad de Barqueros. ¿Cómo procederás?" #NT!
+ POD_umbra_pass.207.a: "Quiero hacerte un juramento." #NT!
+ POD_umbra_pass.207.b: "Simplemente me daré la vuelta." #NT!
+ POD_umbra_pass.207.a.duel.desc: "Ritual de separación" #NT!
+  
+ POD_umbra_pass.208.t: "Caminar hacia el sol" #NT!
+ POD_umbra_pass.208.desc: "La zona del [deep_umbra|E] que alberga a Helios no es más que calor y una luz blanca brillante. Cualquier superficie dentro del reino de Helios es demasiado caliente para estar de pie o permanecer cerca de ella durante demasiado tiempo. Solo los espíritus voladores entran en esta zona de la Umbra Profunda, y los viajeros sin la capacidad de volar se queman en el fuego antes de tener la oportunidad de darse cuenta de su error.\n\n¿Estás seguro de que quieres tocar el sol?" #NT!
+ POD_umbra_pass.208.a: "Oh sí, tocaré el sol mismo. ¡Una gran idea!" #NT!
+ POD_umbra_pass.208.b: "Helios protegerá mi alma." #NT!
+ POD_umbra_pass.208.c: "¡Correr!" #NT!
+  
+  ######## 
+  # Lost # 
+  ######## 
+  
+ POD_umbra_lost.100.t: "#X Caer en el olvido#!" #NT!
+ POD_umbra_lost.100.desc: "#X Caes en el olvido...#!" #NT!
+ POD_umbra_lost.100.a: "#X ...#!" #NT!
+  
+ POD_umbra_lost.104.t: "Atrapado en el abismo" #NT!
+ POD_umbra_lost.104.desc_demon: "Caes una vez más en la prisión eterna creada para los de tu especie después de la rebelión de Lucifer. Dios, al parecer, todavía tiene la última palabra." #NT!
+ POD_umbra_lost.104.desc_infernalist: "Caes en el pozo y parece que no hay forma de salir a menos que prometas hacer un sacrificio a un señor demonio..." #NT!
+ POD_umbra_lost.104.a: "¡Me escaparé!" #NT!
+ POD_umbra_lost.104.b: "Sacrificaré a un prisionero." #NT!
+ POD_umbra_lost.104.c: "¡No hago tratos con demonios!" #NT!
+ trapped_in_abyss_modifier: "Atrapado en el abismo" #NT!
+  
+  ######### 
+  # Train # 
+  ######### 
+  
+ POD_umbra_diplomacy.success: "Desafío diplomático: éxito" #NT!
+ POD_umbra_diplomacy.fail: "Desafío de diplomacia: fracasar" #NT!
+ POD_umbra_diplomacy.desc: "Alguien que vive en esta zona te detiene. ¿Quizás puedas convencerlo para que te muestre cómo pasar más allá de ese punto? Los habitantes de Umbra son notoriamente difíciles de entender y aún más difíciles de convencer." #NT!
+ POD_umbra_martial.success: "Desafío marcial: éxito" #NT!
+ POD_umbra_martial.fail: "Desafío marcial: Fallar" #NT!
+ POD_umbra_martial.desc: "Te detiene un acertijo en forma de juego de guerra. Es hora de demostrar lo bueno que eres en eso. Sin embargo, jugar con piezas de "acción real" en forma de espíritus atados es bastante difícil de entender al principio, lo que hace que sea una experiencia perturbadora y surrealista." #NT!
+ POD_umbra_stewardship.success: "Desafío de administración: éxito" #NT!
+ POD_umbra_stewardship.fail: "Desafío de administración: fallar" #NT!
+ POD_umbra_stewardship.desc: "Te detiene un acertijo en forma de ecuación. ¿Eres bueno en matemáticas? Sin embargo, primero tendrás que descifrar los números que utilizan los espíritus tramposos, lo que hace que el problema sea aún más difícil de resolver." #NT!
+ POD_umbra_intrigue.success: "Desafío de intriga: éxito" #NT!
+ POD_umbra_intrigue.fail: "Desafío de intriga: falla" #NT!
+ POD_umbra_intrigue.desc: "Te encuentras con un guardián espiritual fuerte en tu camino. ¿Quizás puedas distraerlo con algún truco? Lo mejor es que seas convincente, ya que no parece muy amigable." #NT!
+ POD_umbra_learning.success: "Desafío de aprendizaje: éxito" #NT!
+ POD_umbra_learning.fail: "Desafío de aprendizaje: fallar" #NT!
+ POD_umbra_learning.desc: "Te detiene un rompecabezas, ¿lo puedes resolver? Como Umbra es una versión retorcida del mundo "real", puedes encontrar algunos patrones y pistas que tengan al menos un mínimo de sentido para ti." #NT!
+ POD_umbra_prowess.success: "Desafío de destreza: éxito" #NT!
+ POD_umbra_prowess.fail: "Desafío de destreza: Fallar" #NT!
+ POD_umbra_prowess.desc: "Un espíritu te detiene, tal vez puedas luchar contra él y saquearlo." #NT!
+  
+  ############## 
+  # Expedition # 
+  ############## 
+  
+  # Core 
+  
+ umbra_adv_challange_spirit: "Empiezas un [single_combat_duel|E] con un espíritu." #NT!
+ umbra_adv_challange_spirit.win: "Obtienes una bendición [modifier|E] o [prestige|E]." #NT!
+  
+ POD_umbra_adv.101.t: "Victoria espiritual" #NT!
+ POD_umbra_adv.101.desc: "Elige una bendición." #NT!
+ POD_umbra_adv.101.fallback: "Los rechazo." #NT!
+  
+ POD_umbra_adv.201.t: "Tesoro" #NT!
+ POD_umbra_adv.201.desc: "Encontraste un tesoro con varios artefactos, ¿cuál deberías adquirir?" #NT!
+ POD_umbra_adv.201.reroll: "¿Otras opciones?" #NT!
+ POD_umbra_adv.201.fallback: "Los venderé." #NT!
+ POD_umbra_adv.201.artifact_1: "[artifact_1.Custom('ColorizedArtifactNameNoTooltip')]" #NT!
+ POD_umbra_adv.201.artifact_2: "[artifact_2.Custom('ColorizedArtifactNameNoTooltip')]" #NT!
+ POD_umbra_adv.201.artifact_3: "[artifact_3.Custom('ColorizedArtifactNameNoTooltip')]" #NT!
+  
+  # Legendary Gift 
+  
+ POD_umbra_adv.300.t: "Encuentro con el guerrero encarnado" #NT!
+ POD_umbra_adv.300.desc: "Incarna es un término usado por los Fera para describir una cierta clase de espíritus; más débiles que los Celestinos, pero aún así espíritus más grandes en cualquier medida. Los Incarnae tienen un propósito definido y una esfera de influencia, pero son lo suficientemente poderosos como para existir en múltiples niveles de realidad.\nSiguiendo la pista, has encontrado con éxito al Guerrero Incarna, quien promete enseñarte el legendario e imparable don del guerrero si puedes completar una misión: matar al gobernante wyrmmish más poderoso del mundo." #NT!
+ POD_umbra_adv.300.a: "Desafío aceptado." #NT!
+ POD_umbra_adv.302.t: "Guerrero imparable" #NT!
+ POD_umbra_adv.302.desc: "Has llegado a la ubicación del enemigo destinado por tu misión, es hora de luchar a muerte." #NT!
+ POD_umbra_adv.302.a: "¡Estoy aquí!" #NT!
+ POD_umbra_adv.304.t: "La recompensa" #NT!
+ POD_umbra_adv.304.desc: "Has demostrado tu valía, la encarnación guerrera te enseña el don. Has alcanzado la cima de la destreza en batalla del hombre lobo." #NT!
+ POD_umbra_adv.304.a: "¡Un triunfo para la historia!" #NT!
+  
+ POD_umbra_adv.399.t: "Pensándolo bien" #NT!
+ POD_umbra_adv.399.desc: "¿Quizás no sea una buena idea que un adorador de wyrm se encuentre con un poderoso espíritu gaiano?" #NT!
+ POD_umbra_adv.399.a: "¡Correr!" #NT!
+ POD_umbra_adv.399.b: "No." #NT!
+  
+ POD_umbra_adv.400.t: "Encuentro con el Avatar de Gea" #NT!
+ POD_umbra_adv.400.desc: "Gaia es más grande que un Celestino y uno de los espíritus más poderosos que se sabe que existen, posiblemente el primero y el más poderoso. A ella se le atribuye la creación de los Garou y de la mayoría de los Fera para que sirvan como sus guerreros y agentes tanto en el mundo material como en el espiritual.\nSiguiendo la pista, has encontrado con éxito el Avatar de Gaia, ella promete enseñarte el legendario don del narrador. si puedes completar una misión: recolectar libros raros e importantes." #NT!
+ POD_umbra_adv.400.a: "Desafío aceptado." #NT!
+  
+ POD_umbra_adv.500.t: "Encuentro con un espíritu poderoso" #NT!
+ POD_umbra_adv.500.desc: "Los espíritus y el mundo espiritual son un aspecto importante de las vidas y culturas de los Garou y las otras Razas Cambiantes. En particular, los Theurges son especialistas en negociar con los espíritus a través de chiminage y atarlos mediante Dones y ritos.\nSiguiendo la pista, has encontrado con éxito un espíritu especialmente poderoso, que promete enseñarte el legendario don de liberación de la esclavitud si puedes completar una misión: destruir la Cortina de las Sombras infestada de wyrms." #NT!
+ POD_umbra_adv.500.a: "Desafío aceptado." #NT!
+  
+ POD_umbra_adv.600.t: "Encuentro con Coyote" #NT!
+ POD_umbra_adv.600.desc: "El embaucador por excelencia, más Ragabash que Ragabash, Coyote es un avatar del caos. Absolutamente impredecible, a menudo tonto, pero indudablemente brillante, Coyote es a la vez un maestro del engaño y un guerrero muy inteligente. Siguiendo la pista, has encontrado con éxito un avatar del embaucador Coyote, que promete enseñarte el legendario don del portador del fuego si puedes completar una misión: entregar un imperio a otra persona. Solo Coyote sabe por qué pediría algo así." #NT!
+ POD_umbra_adv.600.a: "Desafío aceptado." #NT!
+  
+ POD_umbra_adv.700.t: "Encuentro con Gaia" #NT!
+ POD_umbra_adv.700.desc: "Gaia es más grande que una Celestine y uno de los espíritus más poderosos que existen, posiblemente el primero y el más poderoso. Se le atribuye la creación de los Garou y la mayoría de los Fera para que sirvan como sus guerreros y agentes tanto en el mundo material como en el espiritual. Siguiendo la pista, has encontrado a la propia Gaia, quien promete enseñarte el legendario don del renacimiento si logras unir a la Nación Garou. Conociendo la naturaleza conflictiva de tus hermanos, esta podría ser la misión más difícil de todas." #NT!
+ POD_umbra_adv.700.a: "Volveré cuando esté terminado, madre." #NT!
+ POD_umbra_adv.700.b: "¡Lo hice!" #NT!
+  
+ POD_umbra_adv.800.t: "Encuentro con los espíritus ancestrales de Fianna" #NT!
+ POD_umbra_adv.800.desc: "Los fianna son conocidos entre los Garou por su pasión por el placer de la vida, sus habilidades y ferocidad en la batalla, y por ser los guardianes de la música, las historias y la tradición de los Garou. Sus espíritus ancestrales suelen ser algunos de los más sabios de todos. Si sigues la pista, habrás encontrado algunos espíritus ancestrales de los fianna, que prometen enseñarte el don legendario si puedes completar el objetivo de Héroes de Gaia." #NT!
+ POD_umbra_adv.800.a: "Volveré cuando esté hecho, antepasados." #NT!
+ POD_umbra_adv.800.b: "¡Lo hice!" #NT!
+  
+ POD_umbra_adv.900.t: "Encuentro con el Gran Fenris" #NT!
+ POD_umbra_adv.900.desc: "Las leyendas nórdicas hablan del voraz Dios-Lobo Fenris, la bestia que se comerá el sol al final de los días. Fenris es poderoso, sanguinario y nunca da ni espera cuartel. El espíritu protector de la Estirpe de Fenris es el tótem de un guerrero, interesado solo en grupos de Garou que derraman la sangre de sus enemigos con frecuencia. Siguiendo la pista, has encontrado al mismísimo Gran Fenris, quien promete enseñarte el don legendario si puedes completar el objetivo de los Berserkers de Gaia." #NT!
+ POD_umbra_adv.900.a: "Volveré cuando esté terminado, Gran Fenris." #NT!
+ POD_umbra_adv.900.b: "¡Lo hice!" #NT!
+  
+ POD_umbra_adv.1000.t: "Encuentro con el Progenitor Lobo" #NT!
+ POD_umbra_adv.1000.desc: "Los Talons cuentan que su tribu se formó directamente de Gea y que ellos siguieron siendo los Garou más puros que mantuvieron contacto con su forma original. Como tal, veneran a los primeros lobos de la historia más que las otras tribus.\nSiguiendo la pista, has encontrado con éxito al Progenitor Lobo, quien promete enseñarte el don legendario si puedes completar el objetivo de la Ira de Gea." #NT!
+ POD_umbra_adv.1000.a: "Volveré cuando esté terminado, Progenitor." #NT!
+ POD_umbra_adv.1000.b: "¡Lo hice!" #NT!
+  
+ POD_umbra_adv.1100.t: "Encuentro con el Avatar de Gea" #NT!
+ POD_umbra_adv.1100.desc: "Gaia es más poderosa que una Celestina y uno de los espíritus más poderosos que existen, posiblemente el primero y el más poderoso. Se le atribuye la creación de los Garou y la mayoría de los Fera para que sean sus guerreros y agentes tanto en el mundo material como en el espiritual.\nSiguiendo la pista, has encontrado con éxito al Avatar de Gaia, quien promete enseñarte el don legendario si puedes completar el objetivo del Retorno del Rey." #NT!
+ POD_umbra_adv.1100.a: "Volveré cuando esté terminado, madre." #NT!
+ POD_umbra_adv.1100.b: "¡Lo hice!" #NT!
+  
+ POD_umbra_adv.1200.t: "Encuentro con el Avatar de Quimera" #NT!
+ POD_umbra_adv.1200.desc: "La patrona de los Astrónomos, Quimera, es la personificación del Enigma. La de Muchos Rostros invita a sus manadas a encontrar la sabiduría que cada hombre lobo guarda en su interior, debajo de capas de acertijos y autoengaños. Si sigues la pista, habrás encontrado con éxito al Avatar de Quimera, quien promete enseñarte el don legendario si puedes completar el objetivo de la Sabiduría de Gea." #NT!
+ POD_umbra_adv.1200.a: "Volveré cuando esté terminado, Quimera." #NT!
+ POD_umbra_adv.1200.b: "¡Lo hice!" #NT!
+  
+ POD_umbra_adv.1300.t: "Encuentro con una encarnación de Maeljin" #NT!
+ POD_umbra_adv.1300.desc: "Los Maeljin alguna vez fueron mortales, pero se corrompieron tanto por un impulso particular que se transformaron en poderosos espíritus que encarnaban ese impulso. Cada uno sirve a su patrón hasta que falla de alguna manera, o hasta que un candidato más nuevo y poderoso llega a la cima. Los Maeljin actúan como los ojos, oídos, voces y, ocasionalmente, las manos de los impulsos cuando es necesaria una acción más directa. Si sigues la pista, habrás encontrado con éxito una encarnación de Maeljin, que promete enseñarte el don legendario si puedes completar una misión: matar al gobernante gaiano más poderoso del mundo." #NT!
+ POD_umbra_adv.1300.a: "Desafío aceptado." #NT!
+  
+ POD_umbra_adv.1400.t: "Encuentro con susurros" #NT!
+ POD_umbra_adv.1400.desc: "El espíritu de los secretos, Whispers, guía a sus aliados hacia descubrimientos. Con un poco de esfuerzo, su elegida puede descifrar mensajes que ninguna persona normal podría entender. Esta Jamak flota en el aire, invisible y apenas oída. Se dice que es el eco de los propios Jamaa, de voces celestiales que se filtran al mundo mortal como recuerdos medio oídos. Es una Jamak difícil de encontrar y tiende a revelarse solo a los Bastet más sabios.\nSiguiendo la pista, has encontrado a Whispers con éxito, ella promete enseñarte el don legendario si puedes completar una misión." #NT!
+ POD_umbra_adv.1400.a: "Desafío aceptado." #NT!
+  
+ POD_umbra_adv.1500.t: "Encuentro con el Deshacedor" #NT!
+ POD_umbra_adv.1500.desc: "Pocos de los esbirros del Wyrm son tan temibles o poderosos como el temible Nexus Crawler. Algunos Theurges creen que estas criaturas alienígenas provienen de lugares muy alejados de la realidad conocida.\nSiguiendo la pista, has encontrado con éxito un Destructor, un huevo de Nexus Crawler, que promete enseñarte el don legendario si puedes completar una misión." #NT!
+ POD_umbra_adv.1500.a: "Desafío aceptado." #NT!
+  
+ POD_umbra_adv.1600.t: "Encuentro con el bisabuelo" #NT!
+ POD_umbra_adv.1600.desc: "Según su tradición, los Gurahl son los protectores originales de Gaia, creados para protegerse del poder destructivo del "Rompedor de Patrones". Siguiendo la pista, has encontrado con éxito al Bisabuelo, uno de los espíritus patronos originales de los Gurahl, él promete enseñarte el don legendario si puedes completar una misión." #NT!
+ POD_umbra_adv.1600.a: "Desafío aceptado." #NT!
+  
+ POD_umbra_adv.1700.t: "Encuentro con Wani" #NT!
+ POD_umbra_adv.1700.desc: "Wani, también conocidos como Reyes Dragón o Lu Lung, son términos utilizados por los Nagah para describir a los grandes espíritus dragón que actúan como patrones para los de su especie, los únicos espíritus que conocen el Secreto Sagrado.\nSiguiendo la pista, has encontrado con éxito los Wani, prometen enseñarte el regalo legendario si puedes completar una misión." #NT!
+ POD_umbra_adv.1700.a: "Desafío aceptado." #NT!
+  
+ POD_umbra_adv.1800.t: "Encuentro con coyote" #NT!
+ POD_umbra_adv.1800.desc: "Coyote, el embaucador definitivo, más Ragabash que Ragabash, es un avatar del caos. Completamente impredecible, a menudo tonto, pero sin duda brillante, Coyote es a la vez un maestro del engaño y un guerrero muy inteligente.\nSiguiendo la pista, has encontrado con éxito a Coyote, él promete enseñarte el don legendario si puedes completar una misión." #NT!
+ POD_umbra_adv.1800.a: "Desafío aceptado." #NT!
+  
+  # crisis 
+  
+ POD_umbra_crisis.102.t: "Demasiado tarde" #NT!
+ POD_umbra_crisis.102.desc: "El ritual wrym ha terminado, un poderoso espíritu wrym ha sido convocado a [crisis_location.GetName] y ha devastado la región." #NT!
+ POD_umbra_crisis.102.a: "¡Condenación!" #NT!
+ POD_umbra_crisis.102.a.tt: "Se eliminan todos los edificios en [crisis_location.GetName]." #NT!
+  
+ POD_umbra_crisis.110.t: "El culpable" #NT!
+ POD_umbra_crisis.110.desc: "¡Has encontrado la ubicación del maestro ritual, es hora de acabar con ellos antes de que puedan invocar un Nexus Crawler o una abominación aún peor!" #NT!
+ POD_umbra_crisis.110.a: "¡Detente ahora mismo, escoria de wyrm!" #NT!
+  
+  # recruit 
+  
+ POD_umbra_gp.101.t: "Enfrentando al último aullador blanco" #NT!
+ POD_umbra_gp.101.desc: "Coruroc, miembro de la manada Sky-Shaker, fue el único miembro de la tribu de los Aulladores Blancos que logró escapar de la Espiral Negra y huir de regreso a la superficie. Sus parientes contaminados lo persiguieron y casi lo mataron, pero fue rescatado por Bone-Whittler, un Theurge, que estaba poseído por el antepasado de los Aulladores Blancos, Aidan Farwatcher. Se las arregló para advertir a la Nación Garou que los Aulladores Blancos estaban perdidos antes de morir. Después de su muerte, no pudo convertirse en un Espíritu Ancestral, porque la Patria Tribal de los Aulladores Blancos había sido transformada por la corrupción del Wyrm. En su lugar, descendió a la Umbra Oscura, donde vagó como un espectro. Torturado por sus recuerdos, apenas logró mantener a raya a [oblivion|E], hasta que un pequeño grupo de Danzantes de la Espiral Negra visitó la Umbra Oscura. Coruroc intentó razonar con ellos y, cuando sus preguntas fueron recibidas con burla, extrajo sus almas de sus cuerpos, convirtiéndolos en espectros. Pasó muchos años purgando a los Aulladores Blancos de su mancha Wyrm y los convirtió en una pequeña manada propia. Esta manada ahora viaja por las Tierras Sombrías, buscando destruir los espíritus de los Aulladores Blancos corruptos o convertir (y, si es necesario, destruir) a otros Espirales Negras. Después de encontrarlo, te ofrece un pacto de ayuda mutua si puedes completar una misión." #NT!
+ POD_umbra_gp.101.a: "¿Cuál es tu petición, último de tu tribu?" #NT!
+ POD_umbra_gp.101.b: "No tengo tiempo." #NT!
+  
+ POD_umbra_gp.102.t: "Enfrentando al único espíritu ancestral aullador blanco" #NT!
+ POD_umbra_gp.102.desc: "Aidan Farwatcher fue un Homid Galliard White Howler durante el 31 a.C. Bajo el Rito de la Búsqueda Eterna, el espíritu de Aidan persiguió al Rey Ahogado incluso después de su muerte. En 200, Aidan poseía un guía Aullador Blanco conocido como "Bone-Whittler", un Theurge del Septo del Lago Mile-Deep. Aidan estuvo presente para ver la perdición de su tribu, pereciendo noblemente luchando contra los primeros Danzantes de la Espiral Negra, pero no pudo hacer nada para detenerlo. Luego se convirtió en el único espíritu ancestral superviviente de la tribu perdida de los Aulladores Blancos.\nTe ofrece sus servicios si puedes completar su misión (y puede enseñar los Dones de los Aulladores Blancos si eres un hombre lobo)." #NT!
+ POD_umbra_gp.102.a: "Te escucharé, sabio Ancestro." #NT!
+ POD_umbra_gp.102.b: "No tengo tiempo." #NT!
+  
+ POD_umbra_gp.103.t: "Aristóteles" #NT!
+ POD_umbra_gp.103.desc: "Aristóteles fue un filósofo y erudito de la antigua Grecia. Sus escritos abarcan una amplia gama de temas que abarcan las ciencias naturales, la filosofía, la lingüística, la economía, la política, la psicología y las artes. Como fundador de la escuela de filosofía peripatética en el Liceo de Atenas, inició la tradición aristotélica más amplia que le siguió, que sentó las bases para el desarrollo de la ciencia moderna. La vida posterior de Aristóteles se vio empantanada por el empeoramiento de su relación con su antiguo alumno, Alejandro. Obligado a huir de su hogar en Atenas, su muerte fue ignominiosa para un monumento tan reverenciado del pensamiento filosófico, lo que podría haber sido la causa de su partida al reino de Caronte después de su muerte. Interesado por el mundo mortal como la mayoría de los espectros tienden a estar, lo has convencido fácilmente de visitar tu corte." #NT!
+ POD_umbra_gp.103.a: "¿Podrías convertirme en el próximo Alejandro?" #NT!
+ POD_umbra_gp.103.b: "No interesado." #NT!
+  
+ POD_umbra_gp.104.t: "Hipatia" #NT!
+ POD_umbra_gp.104.desc: "Hipatia fue una filósofa, astrónoma y matemática neoplatónica que vivió en Alejandría, Egipto, que entonces formaba parte del Imperio Romano de Oriente. Fue una destacada pensadora en Alejandría, donde enseñó filosofía y astronomía. Es la primera mujer matemática cuya vida está razonablemente bien documentada. Hipatia fue reconocida en vida como una gran maestra y una sabia consejera. Escribió un comentario sobre la Aritmética de Diofanto en trece volúmenes y otro comentario sobre el tratado de Apolonio de Perga sobre las secciones cónicas. Como inventora, Hipatia construyó astrolabios e hidrómetros. Era tolerante con los cristianos y enseñó a muchos estudiantes cristianos, incluido Sinesio, el futuro obispo de Ptolomeo. Hipatia era muy querida tanto por paganos como por cristianos y estableció una gran influencia en la élite política de Alejandría. Hacia el final de su vida, Hipatia asesoró a Orestes, el prefecto romano de Alejandría, que se encontraba en medio de una disputa política con Cirilo, el obispo de Alejandría. Se extendieron rumores que la acusaban de impedir que Orestes se reconciliara con Cirilo y, en marzo del 415 d. C., fue asesinada por una turba de cristianos liderada por un lector llamado Pedro.\nVagando por la Umbra, has encontrado un espíritu que dice ser ella y que trabaja a la cabeza del Mouseion de la Umbra. Podría ser una valiosa aliada." #NT!
+ POD_umbra_gp.104.a: "¡Por favor, aprenderías mucho en mi corte!" #NT!
+ POD_umbra_gp.104.b: "No interesado." #NT!
+  
+ POD_umbra_gp.105.t: "Mahfuz Alam" #NT!
+ POD_umbra_gp.105.desc: "Mahfuz Alam, un guerrero musulmán que murió gloriosamente defendiendo Jerusalén de los caballeros europeos cruzados, lidera un grupo de espectros renegados. Su lugar en el cielo quedó asegurado mediante su martirio, y la llamada Necrópolis de Jerusalén es una broma vil para él. Ha escuchado demasiadas historias falsas sobre los [far_shore|E], a lo largo del gran [sunless_sea|E], como para creer que se puede alcanzar el Paraíso con un simple esfuerzo físico.\nEn consecuencia, Alam y sus aliados (menos de una docena, pero en aumento) desean para desalojar a los miles de legionarios estigios que ocupan la Necrópolis de Jerusalén y establecer un reino musulmán en el más allá, para desafiar la supremacía de los pescadores (como se llama a los cristianos) y los obviamente indignos estigios.\nFrente al guerrero musulmán, has convencido Le dijo que enfrentarse a Estigia con su fuerza actual sería similar a [oblivion|E]. Trabajar con usted por ahora mientras reúne fuerzas se adaptará mejor a sus planes." #NT!
+ POD_umbra_gp.105.a: "Creceremos juntos." #NT!
+ POD_umbra_gp.105.b: "No interesado." #NT!
+  
+  ############ 
+  # Gauntlet # 
+  ############ 
+  
+ POD_gauntlet.101.t: "El guante" #NT!
+ POD_gauntlet.101.desc: "El Guantelete, también conocido como el Muro en el Reino Medio, es la barrera que rodea la realidad material, separándola de la Umbra. El Guantelete nunca puede reducirse por debajo de 1, y si se eleva a 10, los espíritus en las cercanías deben gastar Fuerza de Voluntad o huir del área." #NT!
+ POD_gauntlet.101.a: "Fortaleciendo el Guantelete." #NT!
+ POD_gauntlet.101.b: "Debilitando el Guantelete." #NT!
+ POD_gauntlet.101.c: "¡Derriba el guante!" #NT!
+ POD_gauntlet.101.d: "No importa." #NT!
+  
+ POD_gauntlet.102.t: "La pared" #NT!
+ POD_gauntlet.102.desc: "Los reinos espirituales están separados del Reino Medio por una barrera mística conocida como el Muro. Impide el contacto entre los mundos mortal y espiritual. Es más fuerte en algunas áreas, más débil en otras, pero nunca está completamente ausente. El Muro nunca puede reducirse por debajo de 1, y si se eleva a 10, ningún ser en el área puede usar poderes de Chi de ningún tipo. Los espíritus en las cercanías con un Muro de 10 deben gastar Fuerza de Voluntad o huir del área; en cualquier caso, se sentirán extremadamente incómodos y no podrán gastar Chi." #NT!
+ POD_gauntlet.102.a: "Fortaleciendo el Muro." #NT!
+ POD_gauntlet.102.b: "Debilitando el muro." #NT!
+ POD_gauntlet.102.c: "¡Derribar el muro!" #NT!
+ POD_gauntlet.102.d: "No importa." #NT!
+  
+ POD_shroud.101.t: "El Santo Sudario" #NT!
+ POD_shroud.101.desc: "El [underworld|E] está separado del [skinlands|E] por una barrera mística conocida como el Sudario. El Sudario hace que el [shadowlands|E] sea imperceptible para la mayoría de las criaturas vivas y oculta la actividad del [skinlands|E] a los muertos. Es más fuerte en algunas áreas y más débil en otras, pero nunca está completamente ausente.\n\nEl Sudario nunca puede reducirse por debajo de 1, y si se eleva a 10, los espíritus en las cercanías deben gastar Fuerza de Voluntad o huir del área." #NT!
+ POD_shroud.101.a: "Fortaleciendo el Santo Sudario." #NT!
+ POD_shroud.101.b: "Debilitando el Santo Sudario." #NT!
+ POD_shroud.101.c: "¡Derribad el Santo Sudario!" #NT!
+ POD_shroud.101.d: "No importa." #NT!
+  
+  ############### 
+  # Local Umbra # 
+  ############### 
+  
+  # Calm Spirit 
+  
+ POD_umbra_local.101.t: "Espíritu tranquilo" #NT!
+ POD_umbra_local.101.desc: "Intentas expresar tu opinión a los espíritus locales para que te escuchen.\nPodrías intentar el enfoque diplomático o ser más contundente. Los espíritus tienden a ser criaturas caprichosas y discutir con ellos puede llevar mucho tiempo." #NT!
+ POD_umbra_local.101.a: "Amigos, escúchenme." #NT!
+ POD_umbra_local.101.b: "De espíritu a espíritus..." #NT!
+ POD_umbra_local.101.c: "¡Obedece a tu superior!" #NT!
+ POD_umbra_local.101.d: "Quizás en otra ocasión." #NT!
+  
+ POD_umbra_local.102.t: "Espectro tranquilo" #NT!
+ POD_umbra_local.102.desc: "Intenta plantear tu opinión a los espectros locales para que te escuchen. Puedes intentar adoptar un enfoque diplomático o ser más contundente. Los espectros tienden a ser criaturas egocéntricas y discutir con ellos puede llevar mucho tiempo." #NT!
+ POD_umbra_local.102.a: "Amigos, escúchenme." #NT!
+ POD_umbra_local.102.b: "De espectro a espectros..." #NT!
+ POD_umbra_local.102.c: "¡Te ordeno que te arrodilles!" #NT!
+ POD_umbra_local.102.d: "Quizás en otra ocasión." #NT!
+  
+  # Usurp 
+  
+ POD_umbra_local.201.t: "Colonización" #NT!
+ POD_umbra_local.201.desc: "Intentarás reclamar esta parte del [spirit_wilds|E] que no tiene gobernante, solo tendrás que lidiar con algunos lugareños hostiles. La diplomacia o la fuerza podrían convencerlos de que te reconozcan como el nuevo dueño de este reino espiritual." #NT!
+ POD_umbra_local.201.a: "Sal de mi lugar." #NT!
+ POD_umbra_local.201.b: "Vamos a hacer un trato." #NT!
+ POD_umbra_local.201.c: "Quizás en otra ocasión." #NT!
+  
+ POD_umbra_local.202.t: "Colonización" #NT!
+ POD_umbra_local.202.desc: "Intentarás reclamar esta parte del [shadowlands|E] que no tiene gobernante, solo tendrás que lidiar con algunos lugareños hostiles. La diplomacia o la fuerza podrían convencerlos de que te reconozcan como el nuevo dueño de este reino espiritual." #NT!
+ POD_umbra_local.202.a: "Sal de mi lugar." #NT!
+ POD_umbra_local.202.b: "Vamos a hacer un trato." #NT!
+ POD_umbra_local.202.c: "Quizás en otra ocasión." #NT!
+  
+ POD_umbra_local.301.t: "Conquista" #NT!
+ POD_umbra_local.301.desc: "Intentarás arrebatarle esta parte del [spirit_wilds|E] a [victim.GetFirstName]. La diplomacia o la fuerza podrían convencerlos de que te reconozcan como el nuevo dueño de este reino espiritual." #NT!
+ POD_umbra_local.301.a: "Lindo lugar, lo tomaré." #NT!
+ POD_umbra_local.301.b: "Vamos a hacer un trato." #NT!
+ POD_umbra_local.301.c: "¡Te ordeno que me lo des!" #NT!
+ POD_umbra_local.301.d: "Quizás en otra ocasión." #NT!
+  
+ POD_umbra_local.302.t: "Conquista" #NT!
+ POD_umbra_local.302.desc: "Intentarás reclamar esta parte del [shadowlands|E] de [victim.GetFirstName]." #NT!
+ POD_umbra_local.302.a: "Lindo lugar, lo tomaré." #NT!
+ POD_umbra_local.302.b: "Vamos a hacer un trato." #NT!
+ POD_umbra_local.302.c: "¡Te ordeno que me lo des!" #NT!
+ POD_umbra_local.302.d: "Quizás en otra ocasión." #NT!
+  
+  ############### 
+  # Other Event # 
+  ############### 
+  
+  # KJ only event 
+  
+ POD_umbra_kj.1001.t: "Inspiración" #NT!
+ POD_umbra_kj.1001.desc: "Las áreas de los mundos espirituales cercanas al Muro se llaman Tierras del Espejo, llamadas así porque aparecen como reflejos fantasmales del cercano Reino Medio.\n\nMirar esta vista extraordinaria te hace sentir inspirado." #NT!
+ POD_umbra_kj.1001.a: "¡Es asombroso!" #NT!
+  
+ POD_umbra_kj.1002.t: "Enseñanza de los espíritus" #NT!
+ POD_umbra_kj.1002.desc_opening: "Entraste en el Mundo Espiritual, tan profundo como pudiste, luego recibiste instrucciones de" #NT!
+ POD_umbra_kj.1002.desc_high: "Un antiguo y legendario Wan Kuei, un Gran Ancestro" #NT!
+ POD_umbra_kj.1002.desc_yin: "Un rey Yama" #NT!
+ POD_umbra_kj.1002.desc_yang: "un espíritu poderoso" #NT!
+ POD_umbra_kj.1002.desc_low: "un espíritu normal" #NT!
+ POD_umbra_kj.1002.desc_ending: "quienes compartían cierta comprensión del dharma." #NT!
+ POD_umbra_kj.1002.a: "Mi mentor espiritual." #NT!
+  
+  # Action event 
+  
+ POD_umbra_action.1001.t: "Campo de batalla" #NT!
+ POD_umbra_action.1001.desc: "El campo de batalla es un reino dedicado a la violencia y la furia, y el caos lo gobierna a medida que los ejércitos se mezclan y los soldados Qin terminan luchando contra las legiones romanas y los cruzados se alían con los bárbaros vikingos contra las tropas mayas. Mientras uno no entre en uno de los conflictos, un visitante camina por una "pista" apropiada para la batalla que presencia (un barco para una batalla naval, una calzada romana para un conflicto durante las guerras púnicas, etc.). Mientras no se salga de la pista, no será atacado directamente.\nEsta es una excelente manera de aprender estrategias nuevas (o antiguas) que podrían ser relevantes para su era de alguna manera." #NT!
+  
+  # Reweave Artifact 
+ POD_artifact_pieces.100.t: "Retejiendo piezas de reliquias" #NT!
+ POD_artifact_pieces.100.desc: "Has encontrado un herrero espectral, [creator.GetFirstName], [creator.GetSheHe] puede ayudarte a rehacer las piezas de reliquia que tienes equipadas. ¿Qué estás buscando exactamente?" #NT!
+ POD_artifact_pieces.100.a: "Retejer las piezas en un solo artefacto." #NT!
+ POD_artifact_pieces.100.b: "Usa las piezas para fortalecer un artefacto equipado." #NT!
+ POD_artifact_pieces.100.c: "Empodera la pieza." #NT!
+ POD_artifact_pieces.100.c.tt: "Intentarás fusionar tus piezas equipadas para formar una más fuerte." #NT!
+ POD_artifact_pieces.100.c.success: "Tu pieza equipada ha sido potenciada y se ha convertido en una más fuerte." #NT!
+ POD_artifact_pieces.100.d: "Quizás otra noche." #NT!
+ POD_artifact_pieces.100.back: "Volver a la opción anterior." #NT!
+  
+ POD_artifact_pieces.200.t: "Retejer" #NT!
+ POD_artifact_pieces.200.desc: "¿Qué tipo de artefacto quieres volver a tejer?" #NT!
+  
+ POD_artifact_pieces.300.t: "Fortalecer reliquia" #NT!
+ POD_artifact_pieces.300.desc: "¿Qué artefacto quieres fortalecer?" #NT!
+ POD_artifact_pieces.300.a: "Arma" #NT!
+ POD_artifact_pieces.300.a.invalid: "No tienes #bold ni #! un arma equipada que no esté reforzada." #NT!
+ POD_artifact_pieces.300.b: "Armadura" #NT!
+ POD_artifact_pieces.300.b.invalid: "No tienes #bold#! una armadura equipada que no esté reforzada." #NT!
+ POD_artifact_pieces.300.c: "Insignias reales" #NT!
+ POD_artifact_pieces.300.c.invalid: "No tienes #bold ni #! una insignia equipada que no esté reforzada." #NT!
+ POD_artifact_pieces.300.d: "Casco" #NT!
+ POD_artifact_pieces.300.d.invalid: "No tienes #bold#! un casco equipado que no esté reforzado." #NT!
+  
+  # Great Maelstrom event 
+ POD_great_maelstrom.2.t: "Segunda Gran Vorágine" #NT!
+ POD_great_maelstrom.2.desc: "Recientemente se produjo una violenta supertormenta en el [tempest|E] provocada por la peste negra, que provocó muertes y sufrimiento incalculables en todo el mundo. Todas las ubicaciones del [underworld|E] son peligrosas para explorar durante #V 15#! años." #NT!
+ POD_great_maelstrom.3.t: "Tercera gran vorágine" #NT!
+ POD_great_maelstrom.3.desc: "Recientemente se produjo una violenta supertormenta en el [shadowlands|E], causada por las guerras y enfermedades que trajeron los invasores europeos a las civilizaciones americanas. Todas las ubicaciones del [underworld|E] son peligrosas para explorar durante #V 15#! años." #NT!
+ POD_great_maelstrom.4.t: "Cuarto Gran Maelstrom" #NT!
+ POD_great_maelstrom.4.desc: "Recientemente se produjo una violenta supertormenta en [shadowlands|E] a causa de los horrores desatados por la Primera Guerra Mundial y la gripe española. Todas las ubicaciones de [underworld|E] son peligrosas para explorar durante #V 15#! años." #NT!
+ POD_great_maelstrom.5.t: "El quinto gran remolino" #NT!
+ POD_great_maelstrom.5.desc: "Recientemente se produjo una violenta supertormenta en [shadowlands|E] a causa del dolor y el sufrimiento desatados por la Segunda Guerra Mundial. Todas las ubicaciones de [underworld|E] son peligrosas para explorar durante #V 15#! años." #NT!
+ POD_great_maelstrom.6.t: "Sexto Gran Maelstrom" #NT!
+ POD_great_maelstrom.6.desc: "Recientemente, se produjo una violenta supertormenta en el [shadowlands|E] cuando la Semana de las Pesadillas azotó el mundo entero. Todas las ubicaciones del [underworld|E] son peligrosas para explorar durante los #V 15#! años." #NT!
+  
+  ############# 
+  # Pet event # 
+  ############# 
+  
+  #Dragon 
+ POD_umbra_pet.101.t: "El dragón" #NT!
+ POD_umbra_pet.101.desc: "Mientras acaricio la cabeza del dragón, [ROOT.Char.Custom('DragonStorySheHe')] menea alegremente la cola de [ROOT.Char.Custom('DragonStoryHerHis')]. ¿Qué nombre le quedaría bien a [ROOT.Char.Custom('DragonStoryHerHim')]? ¿Algo histórico? Es una decisión importante y, mientras el dragón se da vuelta para dejarme acariciar el estómago de [ROOT.Char.Custom('DragonStoryHerHis')], me distraigo un rato.\n\nPero espera, ¡ya lo sé! Le pondré un nombre a [ROOT.Char.Custom('DragonStoryHerHim')]..." #NT!
+  
+ POD_umbra_pet.199.t: "[ROOT.Char.Custom('DragonStoryName')]: Lo pasado, pasado está" #NT!
+ POD_umbra_pet.199.desc: "[ROOT.Char.Custom('DragonStoryName')] camina a mi lado desde hace muchos años, y el paso de la banalidad/consenso no perdona a los dragones. A medida que la humanidad se aleja de las maravillas del pasado hacia el futuro mecánico, no queda lugar para la magia. La Tierra ya no es apta para estas criaturas mágicas y el único recurso para evitar un destino terrible es trasladarse a la umbra." #NT!
+ POD_umbra_pet.199.a: "¡Te extrañaré, [ROOT.Char.Custom('DragonStoryName')]!" #NT!
+  
+ POD_umbra_pet.121.t: "Acariciando [ROOT.Char.Custom('DragonStoryName')|U]" #NT!
+ POD_umbra_pet.121.desc: "Encuentro a [ROOT.Char.Custom('DragonStoryName')] durmiendo en mi habitación, y cuando me siento al lado de [ROOT.Char.Custom('DragonStoryHerHim')] soy recibido por un chirrido tranquilo y confuso.\n\nSin embargo, cuando comienzo a pasar mis dedos por la escala de [ROOT.Char.Custom('DragonStoryHerHis')], [ROOT.Char.Custom('DragonStorySheHe')] rápidamente comienza a ronronear de satisfacción, y el sonido parece relajar todo mi ser." #NT!
+  
+ POD_umbra_pet.122.desc: "Encuentro a [ROOT.Char.Custom('DragonStoryName')] afuera, pavoneándose por el patio. Tan pronto como [ROOT.Char.Custom('DragonStorySheHe')] me ve, [ROOT.Char.Custom('DragonStorySheHe')] maúlla y se acerca, frotándose contra mi pierna.\n\nPaso muchos minutos agachado al lado de [ROOT.Char.Custom('DragonStoryHerHis')], acariciando a [ROOT.Char.Custom('DragonStoryHerHim')] y rascándole la barbilla, y cuando me levanto de nuevo me siento más ligero que en mucho tiempo." #NT!
+  
+ POD_umbra_pet.111.t: "[ROOT.Char.Custom('DragonStoryName')]: Demostración de poder" #NT!
+ POD_umbra_pet.111.desc: "El simple hecho de tener un dragón es increíble, pero mostrarlos en tu corte, con todos tus súbditos presentes, es todo un movimiento de poder. [ROOT.Char.Custom('DragonStoryName')] ruge y se estira para el deleite de tus cortesanos. Cuando [ROOT.Char.Custom('DragonStorySheHe')] muestra signos de empezar a respirar profundamente, los demás cortesanos de repente tienen miedo del fuego mítico que se dice que estas criaturas son capaces de crear. Pero gracias al buen comportamiento de [ROOT.Char.Custom('DragonStoryHerHis')] hasta el momento, no ocurren incidentes." #NT!
+ POD_umbra_pet.111.a: "¡Hasta los dragones me responden!" #NT!
+  
+ POD_umbra_pet.112.t: "[ROOT.Char.Custom('DragonStoryName')]: Vasallo encantado" #NT!
+ POD_umbra_pet.112.desc: "Me topo con mi [ROOT.Char.Custom2('RelationToMe', SCOPE.sC('vassal'))] [vassal.GetTitledFirstName] admirando a mi dragón [ROOT.Char.Custom('DragonStoryName')].\n\n"¡Esta maravillosa bestia es incluso más impresionante que las historias contadas, mi [ROOT.Char.GetLadyLord]!" Parece que mi inusual mascota está causando una gran impresión, como se esperaba, en mis vasallos." #NT!
+ POD_umbra_pet.112.a: "¡Un símbolo de mi poder!" #NT!
+  
+ POD_umbra_pet.113.t: "[ROOT.Char.Custom('DragonStoryName')]: Aliento de dragón" #NT!
+ POD_umbra_pet.113.desc: ""[ROOT.Char.GetFirstNameNoTooltip], ¡esta bestia tiene que irse!"\n\nMi sirviente señala a [ROOT.Char.Custom('DragonStoryName')]. "[ROOT.Char.Custom('DragonStorySheHe')] ha estado esparciendo fuego mientras tú no mirabas, ¡es peligroso tener a [ROOT.Char.Custom('DragonStorySheHe')] cerca!"\n\n¿Podría ser que incluso estas majestuosas bestias sean engañosas por naturaleza? ¿O es simplemente que sus instintos naturales toman el control mientras tú no estás ahí para reprimirlos?" #NT!
+ POD_umbra_pet.113.a: "¡Eso... eso debe haber sido un error!" #NT!
+ POD_umbra_pet.113.b: "Eres una #EMP bestia#!!" #NT!
+  
+ POD_umbra_pet.201.t: "El unicornio" #NT!
+ POD_umbra_pet.201.desc: "Admirando al unicornio que ahora sigue todas mis órdenes, reflexiono sobre cómo llamarlo [ROOT.Char.Custom('PegasusStoryHerHim')]..." #NT!
+  
+ POD_umbra_pet.211.t: "[ROOT.Char.Custom('UnicornStoryName')|U]: Unicornio confiable" #NT!
+ POD_umbra_pet.211.desc: "Un entrenador de renombre se ha acercado a mí después de escuchar rumores sobre mi poderoso unicornio [ROOT.Char.Custom('UnicornStoryName')], y me ofrece [ROOT.Char.Custom('RandomHerHis')] servicios.\n\n"Todo lo que pido a cambio es una pequeña compensación"." #NT!
+ POD_umbra_pet.211.a: "[ROOT.Char.Custom('UnicornStorySheHe')|U] necesita ser más fuerte." #NT!
+ POD_umbra_pet.211.b: "Moverse más rápido es algo que [ROOT.Char.Custom('UnicornStorySheHe')] necesita aprender." #NT!
+ POD_umbra_pet.211.c: "[ROOT.Char.Custom('UnicornStorySheHe')|U] necesita trabajar en la resistencia de [ROOT.Char.Custom('UnicornStoryHerHis')]." #NT!
+ POD_umbra_pet.211.d: "¡Si hay algo que le falta a [ROOT.Char.Custom('UnicornStorySheHe')] es fiereza!" #NT!
+ POD_umbra_pet.211.e: "No estoy interesado." #NT!
+ POD_umbra_pet.211.e.tt: "#F "[THIS.Char.Custom('UnicornStoryName')] no necesita otro entrenador que yo!"#!" #NT!
+ POD_umbra_pet.211.f: "¡Para eso pago $master_of_horse_court_position$!" #NT!
+ POD_umbra_pet.211.f.tt: "Tu $master_of_horse_court_position$ empieza a entrenar [THIS.Char.Custom('UnicornStoryName')]" #NT!
+ POD_umbra_pet.211.f.failure: "Sobreestimaste tu $master_of_horse_court_position$" #NT!
+ POD_umbra_pet.211.f.failure.tt: "[m_horse.GetTitledFirstNameNoTooltip] falla en el entrenamiento [ROOT.Char.Custom('UnicornStoryName')]." #NT!
+  
+ POD_umbra_pet.212.t: "[ROOT.Char.Custom('UnicornStoryName')|U]: Tiempo agradable" #NT!
+ POD_umbra_pet.212.desc: "Mientras me dirijo al establo, soy recibido por los felices relinchos de [ROOT.Char.Custom('UnicornStoryName')]. [ROOT.Char.Custom('UnicornStorySheHe')|U] parece ansioso por estirar las piernas de [ROOT.Char.Custom('UnicornStoryHerHis')] en el hermoso clima, y ​​no puedo hacer nada más que estar de acuerdo." #NT!
+ POD_umbra_pet.212.a: "¡Debo aprovechar cada momento para practicar!" #NT!
+ POD_umbra_pet.212.b: "¡El tiempo es demasiado bueno para no apreciarlo como es debido!" #NT!
+  
+ POD_umbra_pet.213.t: "[ROOT.Char.Custom('UnicornStoryName')|U]: Entusiasta de los caballos" #NT!
+ POD_umbra_pet.213.desc: "[horse_vassal.Custom2('MyCharacterIntroduction', ROOT.Char)|U] mira a [ROOT.Char.Custom('UnicornStoryName')] de arriba abajo, asintiendo con aprobación.\n\n"¡Es un unicornio muy bonito el que tienes aquí, mi [ROOT.Char.GetTitleTierName]! Si me permitieras llevar a [ROOT.Char.Custom('UnicornStoryHerHim')] a dar un paseo, te lo agradecería mucho"." #NT!
+ POD_umbra_pet.213.a: "¡Diviértete!" #NT!
+ POD_umbra_pet.213.a.tt: "[THIS.Char.Custom('UnicornStoryName')] es un corcel feroz, y [horse_vassal.GetFirstNameNoTooltip] no es conocido por la destreza de [horse_vassal.GetHerHis]. ¿Estará bien [horse_vassal.GetSheHe]?" #NT!
+ POD_umbra_pet.213.b: "¡Nadie monta [ROOT.Char.Custom('UnicornStoryName')] excepto yo!" #NT!
+  
+ POD_umbra_pet.299.t: "[ROOT.Char.Custom('UnicornStoryName')]: Lo pasado, pasado está" #NT!
+ POD_umbra_pet.299.desc: "Mi confiable [ROOT.Char.Custom('UnicornStoryName')] se ve cada vez más afectado por la banalidad y el consenso. A medida que la humanidad se aleja de las maravillas del pasado hacia un futuro mecánico, ya no hay lugar para la magia. La Tierra ya no es adecuada para estas criaturas mágicas y el único recurso para evitar un destino terrible es mudarse a la umbra." #NT!
+ POD_umbra_pet.299.a: "¡Te extrañaré, [ROOT.Char.Custom('UnicornStoryName')]!" #NT!
+  
+ POD_umbra_pet.301.t: "El pegaso" #NT!
+ POD_umbra_pet.301.desc: "Admirando al pegaso que ahora sigue todas mis órdenes, reflexiono sobre cómo llamarlo [ROOT.Char.Custom('PegasusStoryHerHim')]..." #NT!
+  
+ POD_umbra_pet.311.t: "[ROOT.Char.Custom('PegasusStoryName')|U]: El fiel Pegaso" #NT!
+ POD_umbra_pet.311.desc: "Un entrenador de renombre se ha acercado a mí después de escuchar rumores sobre mi poderoso pegaso [ROOT.Char.Custom('PegasusStoryName')], y me ofrece [ROOT.Char.Custom('RandomHerHis')] servicios.\n\n"Todo lo que pido a cambio es una pequeña compensación"." #NT!
+ POD_umbra_pet.311.a: "[ROOT.Char.Custom('PegasusStorySheHe')|U] necesita ser más fuerte." #NT!
+ POD_umbra_pet.311.b: "Moverse más rápido es algo que [ROOT.Char.Custom('PegasusStorySheHe')] necesita aprender." #NT!
+ POD_umbra_pet.311.c: "[ROOT.Char.Custom('PegasusStorySheHe')|U] necesita trabajar en la resistencia de [ROOT.Char.Custom('PegasusStoryHerHis')]." #NT!
+ POD_umbra_pet.311.d: "¡Si hay algo que le falta a [ROOT.Char.Custom('PegasusStorySheHe')] es fiereza!" #NT!
+ POD_umbra_pet.311.e: "No estoy interesado." #NT!
+ POD_umbra_pet.311.e.tt: "#F "[THIS.Char.Custom('PegasusStoryName')] no necesita otro entrenador que yo!"#!" #NT!
+ POD_umbra_pet.311.f: "¡Para eso pago $master_of_horse_court_position$!" #NT!
+ POD_umbra_pet.311.f.tt: "Tu $master_of_horse_court_position$ empieza a entrenar [THIS.Char.Custom('PegasusStoryName')]" #NT!
+ POD_umbra_pet.311.f.failure: "Sobreestimaste tu $master_of_horse_court_position$" #NT!
+ POD_umbra_pet.311.f.failure.tt: "[m_horse.GetTitledFirstNameNoTooltip] falla en el entrenamiento [ROOT.Char.Custom('PegasusStoryName')]." #NT!
+  
+ POD_umbra_pet.312.t: "[ROOT.Char.Custom('PegasusStoryName')|U]: Tiempo agradable" #NT!
+ POD_umbra_pet.312.desc: "Mientras me dirijo al establo, soy recibido por los felices relinchos de [ROOT.Char.Custom('PegasusStoryName')]. [ROOT.Char.Custom('PegasusStorySheHe')|U] parece ansioso por estirar las piernas de [ROOT.Char.Custom('PegasusStoryHerHis')] en el hermoso clima, y ​​no puedo hacer nada más que estar de acuerdo." #NT!
+ POD_umbra_pet.312.a: "¡Debo aprovechar cada momento para practicar!" #NT!
+ POD_umbra_pet.312.b: "¡El tiempo es demasiado bueno para no apreciarlo como es debido!" #NT!
+  
+ POD_umbra_pet.313.t: "[ROOT.Char.Custom('PegasusStoryName')|U]: Entusiasta de los caballos" #NT!
+ POD_umbra_pet.313.desc: "[horse_vassal.Custom2('MyCharacterIntroduction', ROOT.Char)|U] mira a [ROOT.Char.Custom('PegasusStoryName')] de arriba a abajo, asintiendo con aprobación.\n\n"¡Es un pegaso muy hermoso el que tienes aquí, mi [ROOT.Char.GetTitleTierName]! Si me permitieras llevar a [ROOT.Char.Custom('PegasusStoryHerHim')] a dar un paseo, te lo agradecería mucho"." #NT!
+ POD_umbra_pet.313.a: "¡Diviértete!" #NT!
+ POD_umbra_pet.313.a.tt: "[THIS.Char.Custom('PegasusStoryName')] es un corcel feroz, y [horse_vassal.GetFirstNameNoTooltip] no es conocido por la destreza de [horse_vassal.GetHerHis]. ¿Estará bien [horse_vassal.GetSheHe]?" #NT!
+ POD_umbra_pet.313.b: "¡Nadie monta [ROOT.Char.Custom('PegasusStoryName')] excepto yo!" #NT!
+  
+ POD_umbra_pet.399.t: "[ROOT.Char.Custom('PegasusStoryName')]: Lo pasado, pasado está" #NT!
+ POD_umbra_pet.399.desc: "Mi confiable [ROOT.Char.Custom('PegasusStoryName')] se ve cada vez más afectado por la banalidad y el consenso. A medida que la humanidad se aleja de las maravillas del pasado hacia un futuro mecánico, ya no hay lugar para la magia. La Tierra ya no es adecuada para estas criaturas mágicas y el único recurso para evitar un destino terrible es mudarse a la umbra." #NT!
+ POD_umbra_pet.399.a: "¡Te extrañaré, [ROOT.Char.Custom('PegasusStoryName')]!" #NT!
+  
+ POD_umbra_pet.400.t: "[ROOT.Char.Custom('UnicornStoryName')|U] y [ROOT.Char.Custom('PegasusStoryName')]: Alicornio" #NT!
+ POD_umbra_pet.400.desc: "Un unicornio alado (alicornio, ceraptero, unicornio volador o unisus) es un ungulado mágico, que normalmente se representa como un caballo, con alas como las de Pegaso y un cuerno de unicornio. Pero ahora, con mi unicornio [ROOT.Char.Custom('UnicornStoryName')|U] y mi pegaso [ROOT.Char.Custom('PegasusStoryName')], podría tener los medios para darle vida a esta criatura mítica y llevarla a nuestro plano de existencia." #NT!
+ POD_umbra_pet.400.a: "Vale la pena intentarlo." #NT!
+ POD_umbra_pet.400.b: "Lamentablemente, [ROOT.Char.Custom('UnicornStorySheHe')|U] y [ROOT.Char.Custom('PegasusStorySheHe')|U] no son compatibles." #NT!

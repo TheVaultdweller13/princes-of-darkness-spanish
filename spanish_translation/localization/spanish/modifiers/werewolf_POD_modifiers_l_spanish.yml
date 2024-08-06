@@ -1,0 +1,283 @@
+﻿l_spanish:
+ POD_blood_of_a_werewolf_modifier: "Sangre de un hombre lobo" #NT!
+ POD_rage_0_modifier: "Rabia: 0" #NT!
+ POD_rage_1_modifier: "Rabia: 1" #NT!
+ POD_rage_2_modifier: "Furia: 2" #NT!
+ POD_rage_3_modifier: "Furia: 3" #NT!
+ POD_rage_4_modifier: "Furia: 4" #NT!
+ POD_rage_5_modifier: "Furia: 5" #NT!
+ POD_gnosis_0_modifier: "Gnosis: 0" #NT!
+ POD_gnosis_1_modifier: "Gnosis: 1" #NT!
+ POD_gnosis_2_modifier: "Gnosis: 2" #NT!
+ POD_gnosis_3_modifier: "Gnosis: 3" #NT!
+ POD_gnosis_4_modifier: "Gnosis: 4" #NT!
+ POD_gnosis_5_modifier: "Gnosis: 5" #NT!
+  
+ POD_delirium_modifier: "[battle_modifier|E] : Delirio" #NT!
+ POD_delirium_modifier_desc: "El delirio es el miedo instintivo abrumador que afecta a los seres humanos que ven hombres lobo y otros Fera en sus formas de guerra." #NT!
+ POD_reduced_delirium_modifier: "[battle_modifier|E] : Delirio reducido" #NT!
+ POD_reduced_delirium_modifier_desc: "El delirio es el miedo instintivo abrumador que afecta a los seres humanos que ven hombres lobo y otros Fera en sus formas de guerra." #NT!
+  
+  ################# 
+  # Forms 
+  ################# 
+  
+ POD_werewolf_form_crinos_modifier: "Formulario Crinos" #NT!
+ POD_werewolf_form_crinos_modifier_desc: "La "Forma de Guerra", un híbrido aterrador de humano y lobo con una fuerza superior.\n#weak Otorga un modificador de [GetModifier('POD_delirium_modifier').GetNameWithTooltip] al enemigo [knights|E] en la guerra como comandante o al enemigo en [single_combat_duel|E]#!" #NT!
+ POD_werewolf_form_glabro_modifier: "Forma glabra" #NT!
+ POD_werewolf_form_glabro_modifier_desc: "Se parece bastante a un humano, pero tiene demasiadas características bestiales para serlo." #NT!
+ POD_werewolf_form_hispo_modifier: "Formulario Hispo" #NT!
+ POD_werewolf_form_hispo_modifier_desc: "Un lobo terrible prehistórico." #NT!
+ POD_werewolf_form_lupus_modifier: "Forma de lupus" #NT!
+ POD_werewolf_form_lupus_modifier_desc: "Indistinguible de un lobo normal, pero con una velocidad superior." #NT!
+  
+ POD_ajaba_form_crinos_modifier: "Formulario Crinos" #NT!
+ POD_ajaba_form_crinos_modifier_desc: "La forma de guerra; ligeramente más pequeña y menos poderosa que la de Garou, pero también un poco más resistente.\n#weak Otorga un modificador de [GetModifier('POD_delirium_modifier').GetNameWithTooltip] al enemigo [knights|E] en la guerra como comandante o al enemigo en [single_combat_duel|E]#!" #NT!
+ POD_ajaba_form_anthros_modifier: "Forma de Anthros" #NT!
+ POD_ajaba_form_anthros_modifier_desc: "Forma casi humana." #NT!
+ POD_ajaba_form_crocas_modifier: "Forma de Crocas" #NT!
+ POD_ajaba_form_crocas_modifier_desc: "Forma casi de hiena. Una enorme hiena del tamaño de un oso pequeño." #NT!
+ POD_ajaba_form_hyaenid_modifier: "Forma hiénida" #NT!
+ POD_ajaba_form_hyaenid_modifier_desc: "Forma de hiena." #NT!
+  
+ POD_bastet_form_crinos_modifier: "Formulario Crinos" #NT!
+ POD_bastet_form_crinos_modifier_desc: "Híbrido humano-felino, incita una forma atenuada del Delirio.\n#weak Otorga [GetModifier('POD_delirium_modifier').GetNameWithTooltip] modificador al enemigo [knights|E] en la guerra como comandante o al enemigo en [single_combat_duel|E]#!" #NT!
+ POD_bastet_form_sokto_modifier: "Forma Sokto" #NT!
+ POD_bastet_form_sokto_modifier_desc: "Casi humano." #NT!
+ POD_bastet_form_chatro_modifier: "Formulario de Chatro" #NT!
+ POD_bastet_form_chatro_modifier_desc: "Forma de gato primordial, incita al delirio completo.\n#weak Otorga [GetModifier('POD_reduced_delirium_modifier').GetNameWithTooltip] modificador al enemigo [knights|E] en la guerra como comandante o al enemigo en [single_combat_duel|E]#!" #NT!
+ POD_bastet_form_feline_modifier: "Forma felina" #NT!
+ POD_bastet_form_feline_modifier_desc: "Gato normal." #NT!
+  
+ POD_corax_form_crinos_modifier: "Formulario Crinos" #NT!
+ POD_corax_form_crinos_modifier_desc: "La forma Crinos es una criatura mitad ave muy extraña. Los Corax generalmente solo usan esta forma para luchar contra enemigos el tiempo suficiente para escapar, y solo en momentos en que no tienen otra alternativa.\n#weak Otorga un modificador de [GetModifier('POD_reduced_delirium_modifier').GetNameWithTooltip] al enemigo [knights|E] en la guerra como comandante o al enemigo en [single_combat_duel|E]#!" #NT!
+ POD_corax_form_corvid_modifier: "Forma córvida" #NT!
+ POD_corax_form_corvid_modifier_desc: "La forma Corvid es esencialmente la de un cuervo común, aunque los Corax son aves particularmente grandes y su tamaño se acerca más al de las águilas." #NT!
+  
+ POD_gurahl_form_crinos_modifier: "Formulario Crinos" #NT!
+ POD_gurahl_form_crinos_modifier_desc: "La forma de guerra. Extraordinariamente fuerte y resistente, por no mencionar enorme: entre 10 y 16 pies de altura y un peso de hasta 1200 kg.\n#weak Otorga un modificador de [GetModifier('POD_reduced_delirium_modifier').GetNameWithTooltip] al enemigo [knights|E] en la guerra como comandante o al enemigo en [single_combat_duel|E]#!" #NT!
+ POD_gurahl_form_arthren_modifier: "Forma Arthren" #NT!
+ POD_gurahl_form_arthren_modifier_desc: "Forma casi humana. Considerablemente más fuerte y resistente que la forma glabra de los hombres lobo, se cree que los Gurahl en forma Arthren inspiraron leyendas sobre el Sasquatch y criaturas similares." #NT!
+ POD_gurahl_form_bjornen_modifier: "Formulario Bjornen" #NT!
+ POD_gurahl_form_bjornen_modifier_desc: "Forma similar a la de un oso. La forma Bjornen, que se parece a un oso cavernario antiguo, con garras y colmillos más largos, es casi tan grande y poderosa como Crinos, y su mordedura y su daño con las garras son aún más feroces." #NT!
+ POD_gurahl_form_urus_modifier: "Forma Urus" #NT!
+ POD_gurahl_form_urus_modifier_desc: "Forma de oso. Los homínidos Gurahl adoptan la forma de osos que corresponden a su tribu." #NT!
+  
+ POD_kitsune_form_koto_modifier: "Forma Koto" #NT!
+ POD_kitsune_form_koto_modifier_desc: "Híbrido entre zorro y humano." #NT!
+ POD_kitsune_form_sambu_henge_modifier: "Forma Sambu-henge" #NT!
+ POD_kitsune_form_sambu_henge_modifier_desc: "Casi humano." #NT!
+ POD_kitsune_form_juko_modifier: "Formulario Juko" #NT!
+ POD_kitsune_form_juko_modifier_desc: "Zorro del tamaño de un lobo." #NT!
+ POD_kitsune_form_kyubi_modifier: "Forma Kyubi" #NT!
+ POD_kitsune_form_kyubi_modifier_desc: "Zorro normal." #NT!
+  
+ POD_mokole_form_archid_modifier: "Forma archivada" #NT!
+ POD_mokole_form_archid_modifier_desc: "La forma de guerra se considera la "forma verdadera" de cualquier individuo Mokolé. A través de Mnesis, sueñan con los reptiles, pájaros y dinosaurios del pasado, lo que determina las características de la forma Archid.\n#weak Otorga un modificador de [GetModifier('POD_delirium_modifier').GetNameWithTooltip] al enemigo [knights|E] en la guerra como comandante o al enemigo en [single_combat_duel|E]#!" #NT!
+ POD_mokole_form_suchid_modifier: "Forma Suchid" #NT!
+ POD_mokole_form_suchid_modifier_desc: "La forma Suchid es típicamente la de un cocodrilo, caimán, monstruo de Gila o un reptil grande similar. La forma Suchid refleja la varna de los Mokolé." #NT!
+ POD_mokole_form_reptoid_modifier: "Forma reptoide" #NT!
+ POD_mokole_form_reptoid_modifier_desc: "Una forma "Reptoide" entre Homid y Archid (similar a la forma Garou Glabro)" #NT!
+ POD_mokole_form_drachid_modifier: "Forma draquídea" #NT!
+ POD_mokole_form_drachid_modifier_desc: "Su legendaria forma Drachid (una forma humanoide capaz de utilizar herramientas complejas) se perdió en la Obra Maravilla y ningún Mokolé desde entonces ha podido lograrla." #NT!
+  
+ POD_nagah_form_azhi_dahaka_modifier: "Formulario Azhi Dahaka" #NT!
+ POD_nagah_form_azhi_dahaka_modifier_desc: "La forma de combate difiere de un Nagah a otro, pero todos tienen una capucha enorme como una cobra, muchos se marcan cicatrices para ser más visibles en esta forma, pueden desencajar sus mandíbulas y tienen branquias (son completamente anfibios en esta forma). La masa del Nagah aumenta, pero se debe a una cola de 16 a 20 pies para la mitad inferior del cuerpo, sus brazos se vuelven como serpientes a medida que les crecen vértebras en lugar de huesos normales en sus brazos, lo que les permite agarrar más fácilmente. Las manos del hombre-serpiente brotan garras tan terribles como las de cualquier Garou, y sus escamas y escudos adquieren una resistencia sobrenatural. Cualquier escarificación que haya recibido el Nagah se destaca significativamente en esta forma, a menudo como patrones en las escamas del Azhi Dahaka. El Nagah causa el efecto Delirium completo en esta forma; Pocos humanos pueden soportar ver tal encarnación de su miedo primordial a las serpientes.\n#weak Otorga [GetModifier('POD_delirium_modifier').GetNameWithTooltip] modificador al enemigo [knights|E] en la guerra como comandante o al enemigo en [single_combat_duel|E]#!" #NT!
+ POD_nagah_form_silkaram_modifier: "Formulario Silkaram" #NT!
+ POD_nagah_form_silkaram_modifier_desc: "De apariencia casi humana, pero el cabello y la piel son reemplazados por pequeñas escamas, la cara se aplana y los ojos se vuelven más parecidos a los de una serpiente, los dientes se fusionan excepto por dos colmillos que se retraen como una cobra. De esta forma, obtienen un veneno peligroso para los mortales e incluso para los no-muertos." #NT!
+ POD_nagah_form_kali_dahaka_modifier: "Forma de Kali Dahaka" #NT!
+ POD_nagah_form_kali_dahaka_modifier_desc: "Se parece a una serpiente gigante con dos diferencias: es mucho más grande que cualquier cobra normal y tiene colmillos grandes y venenosos. Con un impulso primario, puede desarrollar un par de brazos delgados. Esta forma también tiene branquias y puede respirar bajo el agua." #NT!
+ POD_nagah_form_vasuki_modifier: "Forma Vasuki" #NT!
+ POD_nagah_form_vasuki_modifier_desc: "Indistinguible de una cobra normal, una serpiente de cascabel, una serpiente boca de algodón o cualquier otra forma de raza." #NT!
+  
+ POD_nuwisha_form_mana_bozho_modifier: "Forma Mana-bozho" #NT!
+ POD_nuwisha_form_mana_bozho_modifier_desc: "La forma de guerra, un híbrido de humano y coyote.\n#weak Otorga un modificador de [GetModifier('POD_reduced_delirium_modifier').GetNameWithTooltip] al enemigo [knights|E] en la guerra como comandante o al enemigo en [single_combat_duel|E]#!" #NT!
+ POD_nuwisha_form_tsitsu_modifier: "Forma Tsitsu" #NT!
+ POD_nuwisha_form_tsitsu_modifier_desc: "Forma casi humana." #NT!
+ POD_nuwisha_form_sendeh_modifier: "Formulario Sendeh" #NT!
+ POD_nuwisha_form_sendeh_modifier_desc: "Forma casi de coyote." #NT!
+ POD_nuwisha_form_latrani_modifier: "Formulario Latrani" #NT!
+ POD_nuwisha_form_latrani_modifier_desc: "Forma de coyote." #NT!
+  
+ POD_ratkin_form_ratman_modifier: "Forma de hombre rata" #NT!
+ POD_ratkin_form_ratman_modifier_desc: "Un humano con rasgos sutiles de rata, similar a la forma Glabro del Garou." #NT!
+ POD_ratkin_form_crinos_modifier: "Formulario Crinos" #NT!
+ POD_ratkin_form_crinos_modifier_desc: "La forma de guerra, un híbrido de humano y rata.\n#weak Otorga un modificador de [GetModifier('POD_reduced_delirium_modifier').GetNameWithTooltip] al enemigo [knights|E] en la guerra como comandante o al enemigo en [single_combat_duel|E]#!" #NT!
+ POD_ratkin_form_rat_thing_modifier: "Forma de cosa de rata" #NT!
+ POD_ratkin_form_rat_thing_modifier_desc: "Una rata monstruosa del tamaño de un perro grande, similar a la forma Hispo del Garou." #NT!
+ POD_ratkin_form_rodens_modifier: "Forma de Rodens" #NT!
+ POD_ratkin_form_rodens_modifier_desc: "Una rata de tamaño variable." #NT!
+ POD_ratkin_form_itchy_modifier: "Forma que pica" #NT!
+ POD_ratkin_form_itchy_modifier_desc: "El hombre rata incluso comienza a moverse como un ratón de dibujos animados, convirtiéndose en la forma del ratón de los dibujos animados clásicos." #NT!
+  
+ POD_rokea_form_gladius_modifier: "Forma Gladius" #NT!
+ POD_rokea_form_gladius_modifier_desc: "Los hombres-tiburón llaman al Gladius "Mandíbulas erguidas" y es una criatura bípeda de tres metros de largo. Al igual que Crinos, las Mandíbulas erguidas combinan el poder de un tiburón con la versatilidad de una forma humana. Esta forma provoca un delirio parcial en los humanos.\n#weak Otorga un modificador de [GetModifier('POD_delirium_modifier').GetNameWithTooltip] al enemigo [knights|E] en la guerra como comandante o al enemigo en [single_combat_duel|E]#!" #NT!
+ POD_rokea_form_grabrus_modifier: "Forma Grabrus" #NT!
+ POD_rokea_form_grabrus_modifier_desc: "También conocida como "espalda redondeada", esta forma solo la conocen los rokea que viven en tierra firme; los hombres tiburón que viven en el océano no la usan mucho. Los rokea pierden todo el vello corporal y se vuelven incluso más feos que su forma homínida. Duplican su masa muscular y la espalda se ensancha a medida que comienza a formarse la aleta dorsal.\n#weak Otorga un modificador de [GetModifier('POD_reduced_delirium_modifier').GetNameWithTooltip] al enemigo [knights|E] en la guerra como comandante o al enemigo en [single_combat_duel|E]#!" #NT!
+ POD_rokea_form_chasmus_modifier: "Forma de abismo" #NT!
+ POD_rokea_form_chasmus_modifier_desc: "La forma que los Rokea llaman "Mandíbulas Luchadoras" es una pesadilla prehistórica que provoca un delirio total en los humanos. Los Rokea se convierten en una versión gigante de su forma de raza, creciendo la mitad de su tamaño en forma de Squamus. Los Rokea luchan bajo el agua en esta forma.\n#weak Otorga un modificador de [GetModifier('POD_delirium_modifier').GetNameWithTooltip] al enemigo [knights|E] en la guerra como comandante o al enemigo en [single_combat_duel|E]#!" #NT!
+ POD_rokea_form_squamus_modifier: "Forma escamosa" #NT!
+ POD_rokea_form_squamus_modifier_desc: "También conocida como “mandíbulas nadadoras”, esta forma es indistinguible de un tiburón normal de la especie Rokea." #NT!
+  
+ POD_apis_form_crinos_modifier: "Formulario Crinos" #NT!
+ POD_apis_form_crinos_modifier_desc: "También llamado Minotauro, un enorme hombre toro con dientes afilados." #NT!
+ POD_apis_form_aurochs_modifier: "Forma del uro" #NT!
+ POD_apis_form_aurochs_modifier_desc: "La forma animal" #NT!
+  
+ POD_camazotz_form_crinos_modifier: "Formulario Crinos" #NT!
+ POD_camazotz_form_crinos_modifier_desc: "La forma de guerra de Camazotz, un híbrido de humano y murciélago.\n#weak Otorga un modificador de [GetModifier('POD_delirium_modifier').GetNameWithTooltip] al enemigo [knights|E] en la guerra como comandante o al enemigo en [single_combat_duel|E]#!" #NT!
+ POD_camazotz_form_apterous_modifier: "Forma áptera" #NT!
+ POD_camazotz_form_apterous_modifier_desc: "Casi humano, que no podía volar, pero trepar excepcionalmente bien." #NT!
+ POD_camazotz_form_megachiroptera_modifier: "Forma Megaquiróptera" #NT!
+ POD_camazotz_form_megachiroptera_modifier_desc: "Un murciélago gigante con una envergadura de 5 pies." #NT!
+ POD_camazotz_form_microchiroptera_modifier: "Forma de microquirópteros" #NT!
+ POD_camazotz_form_microchiroptera_modifier_desc: "Se formó un enjambre que dividió a los Camazotz en una docena de pequeños murciélagos." #NT!
+  
+ POD_grondr_form_crinos_modifier: "Formulario Crinos" #NT!
+ POD_grondr_form_crinos_modifier_desc: "Terrible humanoide con cabeza de jabalí." #NT!
+ POD_grondr_form_aperius_modifier: "Forma Aperius" #NT!
+ POD_grondr_form_aperius_modifier_desc: "Casi humano." #NT!
+ POD_grondr_form_daeodon_modifier: "Forma Daeodon" #NT!
+ POD_grondr_form_daeodon_modifier_desc: "Enorme jabalí prehistórico y carnívoro." #NT!
+ POD_grondr_form_scrofa_modifier: "Forma de escrofa" #NT!
+ POD_grondr_form_scrofa_modifier_desc: "Jabalí." #NT!
+  
+ POD_ananasi_form_lilian_modifier: "Forma Lilian" #NT!
+ POD_ananasi_form_lilian_modifier_desc: "Una forma híbrida de humano y araña, que no es necesariamente la misma para cada Ananasi. Algunos son humanoides con múltiples extremidades, mientras que otros tienen un torso parecido al humano que brota del abdomen de una araña gigante.\n#weak Otorga un modificador de [GetModifier('POD_delirium_modifier').GetNameWithTooltip] al enemigo [knights|E] en la guerra como comandante o al enemigo en [single_combat_duel|E]#!" #NT!
+ POD_ananasi_form_pithus_modifier: "Forma de pithus" #NT!
+ POD_ananasi_form_pithus_modifier_desc: "Una araña enorme, al menos la mitad de pesada que la forma humana de la araña hombre-araña.\n#weak Otorga [GetModifier('POD_delirium_modifier').GetNameWithTooltip] modificador al enemigo [knights|E] en la guerra como comandante o al enemigo en [single_combat_duel|E]#!" #NT!
+ POD_ananasi_form_crawlerling_modifier: "Forma de gateo" #NT!
+ POD_ananasi_form_crawlerling_modifier_desc: "Forma de araña. Única entre los Fera, las Ananasi no se transforman en un solo animal, sino en un enjambre de cientos de arañas. Esto hace que sea muy difícil matarlas, aunque si se mata a una cantidad significativa de arañas del enjambre, las Ananasi pueden perder recuerdos, habilidades y masa en sus otras formas." #NT!
+ POD_ananasi_form_araneid_modifier: "Forma aranéida" #NT!
+ POD_ananasi_form_araneid_modifier_desc: "El Damhàn desarrolla una forma parecida a la de Glabro, entre Homid y Lilian." #NT!
+ POD_ananasi_form_titaniform_modifier: "Forma de titán" #NT!
+ POD_ananasi_form_titaniform_modifier_desc: "El Ananasi asume la forma de una criatura enorme con cuatro patas parecidas a las de una araña, cuatro brazos parecidos a los humanos, ocho ojos rojos brillantes y colmillos enormes, cubiertos por una gruesa armadura quitinosa.\n#weak Otorga un modificador de [GetModifier('POD_delirium_modifier').GetNameWithTooltip] al enemigo [knights|E] en la guerra como comandante o al enemigo en [single_combat_duel|E]#!" #NT!
+  
+  ################# 
+  # Gifts 
+  ################# 
+  
+  # WW 
+ pack_mind_modifier: "[battle_modifier|E] : Mente de paquete" #NT!
+ pall_of_despair_modifier: "[battle_modifier|E] : Manto de desesperación" #NT!
+ erratic_behavior_modifier: "[battle_modifier|E] : Comportamiento errático" #NT!
+ murderous_frenzy_modifier: "Frenesí asesino" #NT!
+ change_for_better_modifier: "Cambiar para mejorar" #NT!
+ strength_of_the_ancestors_perk_modifier: "La fuerza de los antepasados" #NT!
+ shadowy_duplicate_modifier: "Duplicado sombrío" #NT!
+ POD_thought_form_of_the_twelve_ministers_modifier: "El verdadero equilibrio espiritual" #NT!
+ howl_of_hunger_perk_modifier: "[battle_modifier|E] : Aullido de hambre" #NT!
+ dark_of_night_perk_modifier: "[battle_modifier|E]: La oscuridad de la noche" #NT!
+ curse_of_hatred_perk_modifier: "[battle_modifier|E] : Maldición del odio" #NT!
+ protean_form_extra_clawed_limbs_modifier: "Extremidades con garras adicionales" #NT!
+ protean_form_tentacles_modifier: "Tentáculos" #NT!
+ protean_form_chest_mounted_squid_beak_modifier: "Pico de calamar montado en el pecho" #NT!
+ protean_form_arms_coated_in_shark_teeth_modifier: "Brazos cubiertos de dientes de tiburón" #NT!
+ protean_form_extra_legs_modifier: "Piernas extras" #NT!
+ protean_form_vestigial_wings_modifier: "Alas vestigiales" #NT!
+ haunting_howl_perk_modifier: "[battle_modifier|E] : Aullido inquietante" #NT!
+ pain_strength_perk_modifier: "Dolor-Fuerza" #NT!
+ maddening_howl_perk_modifier: "[battle_modifier|E] : Aullido enloquecedor" #NT!
+  
+  # Bastet 
+ the_paradox_of_time_perk_modifier: "[battle_modifier|E] : Confundido por la paradoja" #NT!
+ mousemaze_perk_modifier: "[battle_modifier|E] : Confundido por el laberinto del ratón" #NT!
+ call_to_battle_perk_modifier: "[battle_modifier|E] : Escuché el llamado a la batalla" #NT!
+ blinding_moonbeam_gaze_perk_modifier: "[battle_modifier|E] : Ciego por el rayo de luna" #NT!
+ shriek_perk_modifier: "[battle_modifier|E] : Ensordecido" #NT!
+  
+  # Corax 
+ targeted_heave_perk_modifier: "[battle_modifier|E] : Tironeo dirigido" #NT!
+ poisoned_flesh_perk_modifier: "[battle_modifier|E] : Carne envenenada" #NT!
+ theft_of_stars_perk_modifier: "[battle_modifier|E] : Sumergido en la oscuridad" #NT!
+  
+  # Gurahl 
+ trackless_waste_perk_modifier: "[battle_modifier|E] : Desperdicios sin rastro" #NT!
+ humiliate_perk_modifier: "[battle_modifier|E] : Humillado" #NT!
+ ultimatum_perk_modifier: "[battle_modifier|E] : Ultimátum" #NT!
+ refresh_perk_modifier: "[battle_modifier|E] : Actualizar" #NT!
+ ursas_blessing_diplomacy_modifier: "La bendición de Ursa #weak (Diplomacia)#!" #NT!
+ ursas_blessing_martial_modifier: "Bendición de Ursa #weak (Marcial)#!" #NT!
+ ursas_blessing_stewardship_modifier: "Bendición de Ursa #weak (Administración)#!" #NT!
+ ursas_blessing_intrigue_modifier: "La bendición de Ursa #weak (Intriga)#!" #NT!
+ ursas_blessing_learning_modifier: "La bendición de Ursa #weak (Aprendizaje)#!" #NT!
+ ursas_blessing_prowess_modifier: "Bendición de Ursa #weak (Destreza)#!" #NT!
+ words_of_doom_diplomacy_modifier: "Palabras de fatalidad #weak (Diplomacia)#!" #NT!
+ words_of_doom_martial_modifier: "Palabras de perdición #weak (Marcial)#!" #NT!
+ words_of_doom_stewardship_modifier: "Palabras de fatalidad #weak (Administración)#!" #NT!
+ words_of_doom_intrigue_modifier: "Palabras fatales #weak (Intriga) #!" #NT!
+ words_of_doom_learning_modifier: "Palabras de fatalidad #weak (Aprendizaje)#!" #NT!
+ words_of_doom_prowess_modifier: "Palabras de perdición #weak (Destreza)#!" #NT!
+  
+  # Kitsune 
+ blind_modifier: "[battle_modifier|E] : Ciego" #NT!
+ disquiet_perk_modifier: "[battle_modifier|E] : Inquietud" #NT!
+ shadow_fan_flowers_perk_modifier: "[battle_modifier|E] : Flores de abanico de sombras" #NT!
+ kitsune_shadow_fan_flowers_perk_modifier: "[battle_modifier|E] : Flores de abanico de sombras" #NT!
+ song_of_fear_perk_modifier: "[battle_modifier|E] : Canción del miedo" #NT!
+ violation_perk_modifier: "[battle_modifier|E]: Sentimientos de impureza" #NT!
+ uzume_sings_perk_modifier: "[battle_modifier|E]: Uzume canta" #NT!
+  
+  # Mokole 
+ tame_sunbeam_perk_modifier: "[battle_modifier|E] : Rayo de sol domesticado" #NT!
+ raptors_gaze_perk_modifier: "[battle_modifier|E] : La mirada del raptor" #NT!
+ serenity_perk_modifier: "[battle_modifier|E] : Serenidad" #NT!
+ lambent_flame_perk_modifier: "[battle_modifier|E]: Llama intermitente" #NT!
+  
+  # Nagah 
+ face_of_surya_perk_modifier: "[battle_modifier|E] : Rostro de Surya" #NT!
+ indras_cloak_perk_modifier: "[battle_modifier|E] : Capa de Indra" #NT!
+ kind_death_modifier: "Muerte amable" #NT!
+ kind_death_modifier_desc: "Omite la resurrección (excepto [GetTrait('mummy').GetName( GetPlayer )] y [GetTrait('demon').GetName( GetPlayer )]) al matar." #NT!
+ serpents_sting_perk_modifier: "[battle_modifier|E] : Picadura de serpiente" #NT!
+ prevent_adharma_perk_modifier: "[battle_modifier|E] : Prevenir el Adharma" #NT!
+ denial_of_wellbeing_perk_modifier: "Negación del bienestar" #NT!
+ denial_of_wellbeing_perk_modifier_desc: "Este personaje no puede curarse a sí mismo mientras este modificador esté presente." #NT!
+ shed_of_years_perk_modifier: "Cobertizo de los años" #NT!
+ brief_sensation_perk_modifier: "[battle_modifier|E] : Sensación breve" #NT!
+ jungle_snakes_hoodoo_perk_modifier: "[battle_modifier|E] : Serpientes de la jungla Hoodoo" #NT!
+ inattention_to_detail_perk_modifier: "[battle_modifier|E] : Falta de atención al detalle" #NT!
+  
+  # Nuwisha 
+ coyotes_howl_perk_modifier: "[battle_modifier|E] : Aullido del coyote" #NT!
+  
+  # Ratkin 
+ instinct_perk_modifier: "[battle_modifier|E] : Instinto" #NT!
+ body_wrack_perk_modifier: "[battle_modifier|E] : Desecho corporal" #NT!
+ sliver_tooth_perk_modifier: "[battle_modifier|E] : Diente de astilla" #NT!
+ stink_perk_modifier: "[battle_modifier|E] : Apesta" #NT!
+ ratkin_lullaby_perk_modifier: "[battle_modifier|E] : Canción de cuna de Ratkin" #NT!
+ whelp_body_perk_modifier: "Cuerpo de cachorro" #NT!
+ whispered_dreams_perk_modifier: "[battle_modifier|E] : Sueños susurrados" #NT!
+ chitter_perk_modifier: "[battle_modifier|E] : Parloteo" #NT!
+ battery_perk_modifier: "[battle_modifier|E] : Batería" #NT!
+ poison_food_perk_modifier: "[battle_modifier|E] : Comida venenosa" #NT!
+ blur_of_the_weeping_eyes_perk_modifier: "[battle_modifier|E] : Epidemia" #NT!
+ lesions_perk_modifier: "[battle_modifier|E] : Lesiones y llagas" #NT!
+ inflict_pain_perk_modifier: "[battle_modifier|E] : Dolor" #NT!
+ taste_of_madness_perk_modifier: "[battle_modifier|E] : El sabor de la locura" #NT!
+ ratkin_whispered_dreams_perk_modifier: "[battle_modifier|E] : Sueños susurrados" #NT!
+ mahanaga_perk_modifier: "Mahanaga" #NT!
+  
+  # Rokea 
+ mindless_fight_perk_modifier: "Rabia canalizada" #NT!
+ first_feeling_perk_modifier: "[battle_modifier|E] : Primer sentimiento" #NT!
+ bends_perk_modifier: "[battle_modifier|E] : Curvas" #NT!
+ schools_fear_perk_modifier: "[battle_modifier|E] : El miedo de la escuela" #NT!
+ crushing_depths_perk_modifier: "[battle_modifier|E] : Profundidades aplastantes" #NT!
+ rokea_drown_perk_modifier: "[battle_modifier|E] : Ahogarse" #NT!
+ lure_perk_modifier: "[battle_modifier|E] : Señuelo" #NT!
+ chill_perk_modifier: "[battle_modifier|E] : Tranquilo" #NT!
+ piercing_shriek_perk_modifier: "[battle_modifier|E] : Grito penetrante" #NT!
+ hunger_of_the_trench_perk_modifier: "[battle_modifier|E] : El hambre de la trinchera" #NT!
+ cets_shell_perk_modifier: "[battle_modifier|E] : Ningún arco puede herir" #NT!
+  
+  # Apis 
+ hathors_blessing_perk_modifier: "La bendición de Hathor" #NT!
+ hathors_blessing_perk_modifier_desc: "El siguiente hijo concebido por el individuo bendecido tiene un 25 % más de posibilidades de reproducirse de forma natural. Si ni el objetivo del Don ni su pareja son cambiaformas o parientes, todavía hay un 25 % de posibilidades de que su hijo se reproduzca de forma natural y se convierta en un cambiaformas del mismo tipo que el usuario del Don." #NT!
+ mercy_for_the_misbegotten_perk_modifier: "Misericordia para los desventurados" #NT!
+  
+  # Camazotz 
+ bats_shriek_perk_modifier: "[battle_modifier|E] : Aturde, desorienta y causa hematomas" #NT!
+ blinding_spittle_perk_modifier: "[battle_modifier|E] : Ciego por la saliva" #NT!
+  
