@@ -248,13 +248,13 @@
  podintroductions.3000.t: "Secretos de la noche" #NT!
  podintroductions.3000.desc: "¿Qué tema te gustaría explorar?" #NT!
  podintroductions.3000.a: "[disciplines|E]" #NT!
- podintroductions.3000.b: "[Embrace|E] y Childer" #NT!
- podintroductions.3000.c: "La mascarada" #NT!
- podintroductions.3000.d: "El hambre" #NT!
- podintroductions.3000.e: "Estoy bien, vamos." #NT!
+ podintroductions.3000.b: "[Embrace|E] y chiquillos" #NT!
+ podintroductions.3000.c: "La Mascarada" #NT!
+ podintroductions.3000.d: "El Hambre" #NT!
+ podintroductions.3000.e: "Estoy listo, ¡Vamos!." #NT!
  podintroductions.3001.a: "Volvamos." #NT!
  podintroductions.3001.t: "[disciplines|E]" #NT!
- podintroductions.3001.desc: "Los [disciplines|E], que son poderes vampíricos, están representados por estilos de vida únicos en el mod. Solo puedes gastar puntos en un árbol si tienes el rasgo correspondiente (p. ej.: el árbol Celeridad se desbloquea con el rasgo Celeridad).\nObtienes XP de estilo de vida para estos árboles principalmente cazando mortales o pastoreándolos (pastorearlos significa mantener a un mortal cerca como fuente de sangre durante un tiempo más largo), ambos son un [character_interaction|E] disponible con mortales en tu ubicación.\nAlgunos mortales dan más XP que otros dependiendo de sus rasgos." #NT!
+ podintroductions.3001.desc: "Las [disciplines|E], que son poderes vampíricos, están representados por estilos de vida únicos en el mod. Solo puedes gastar puntos en un árbol si tienes el rasgo correspondiente (p. ej.: el árbol Celeridad se desbloquea con el rasgo Celeridad).\nObtienes experiencia de estilo de vida para estos árboles principalmente cazando mortales o pastoreándolos (pastorearlos significa mantener a un mortal cerca como fuente de sangre durante un periodo de tiempo), ambos son una [character_interaction|E] disponible para los mortales de tu ubicación.\nAlgunos mortales dan más experiencia que otros, dependiendo de sus rasgos." #NT!
  podintroductions.3002.t: "Abrazo y Niño" #NT!
  podintroductions.3002.desc: "Como vampiro, no puedes tener hijos. La pestaña "hijos" de tu hoja de personaje representa a tus hijos, los mortales que tú mismo has convertido en vampiros. Para ello, puedes usar un [character_interaction|E] en cualquier mortal de tu ubicación.\nUna vez que la interacción y el plan consecutivo se hayan realizado, el mortal se convierte en un vampiro, tu hijo. Ten en cuenta que tendrás que educarlos después, lo que puede ser costoso o peligroso de diferentes maneras." #NT!
  podintroductions.3003.t: "La mascarada" #NT!
@@ -269,7 +269,7 @@
  podintroductions.4000.b: "Poderes de los inquisidores" #NT!
  podintroductions.4000.c: "Sucesión" #NT!
  podintroductions.4000.d: "Encuentra guarida" #NT!
- podintroductions.4000.e: "Estoy bien, vamos." #NT!
+ podintroductions.4000.e: "Estoy listo, ¡Vamos!." #NT!
  podintroductions.4001.a: "Volvamos." #NT!
  podintroductions.4001.t: "Verdadera fe" #NT!
  podintroductions.4001.desc: "Una de las herramientas más importantes a disposición del Cazador, la Fe Verdadera (y su versión mejorada Beatific) es un rasgo que desbloquea un poderoso estilo de vida. La mayoría de los Cazadores principiantes lo tienen al principio, pero asegurarse de que sus herederos también lo tengan es una tarea importante.\nPara hacerlo, puedes usar el poder de Fe Verdadera Intercesión en cualquier otro personaje para tener la oportunidad de darle el rasgo. Si eso falla y estás jugando con un personaje sin él y aún así quieres tenerlo, puedes pedirle a un amigo con Fe Verdadera que te ayude a adquirirlo. Sin embargo, es un proceso costoso y difícil.\nLa experiencia del estilo de vida Fe Verdadera se obtiene principalmente con Encontrar guarida [journey|E], que se analiza en su propio capítulo." #NT!
@@ -306,7 +306,7 @@
  podintroductions.2210.b: "Hekau y Sekhem" #NT!
  podintroductions.2210.b_wutian: "Tan y Chi" #NT!
  podintroductions.2210.c: "Neteru" #NT!
- podintroductions.2210.e: "Estoy bien, vamos." #NT!
+ podintroductions.2210.e: "Estoy listo, ¡Vamos!." #NT!
  podintroductions.2211.a: "Volvamos." #NT!
  podintroductions.2211.t: "Resurrección" #NT!
  podintroductions.2211.desc: "Eres inmortal, es más, ¡puedes resucitar cuando te matan!\n\nEsto tiene un costo de [piety_i][ROOT.ScriptValue('mummy_ressurection_piety_value')|V0] [piety|E] para ti.\n\n¡Puedes terminar en [oblivion|E] cuando no puedes pagar el costo, o decides suicidarte por tu propia voluntad o por estrés, o si tu alma es devorada!" #NT!
@@ -324,7 +324,7 @@
  podintroductions.2410.a: "Buque" #NT!
  podintroductions.2410.b: "Arcanos y resolución" #NT!
  podintroductions.2410.c: "Cultista y esclavo" #NT!
- podintroductions.2410.e: "Estoy bien, vamos." #NT!
+ podintroductions.2410.e: "Estoy listo, ¡Vamos!." #NT!
  podintroductions.2411.a: "Volvamos." #NT!
  podintroductions.2411.t: "Buque" #NT!
  podintroductions.2411.desc: "Para permanecer en la Creación, un demonio debe habitar un recipiente físico de algún tipo. [GetTrait('earthbound').GetName( GetPlayer )] posee un [artifact|E] o un [title|E], así que asegúrate de no perderlos, de lo contrario volverás a un estado espiritual mayormente impotente. Los demonios también pueden poseer un recipiente humano, pero no pueden sostenerlos por mucho tiempo. Le permite a un [GetTrait('earthbound').GetName( GetPlayer )] disfrutar de asuntos mortales, viajar o comandar ejércitos. Porque ningún [GetTrait('earthbound').GetName( GetPlayer )] puede usarlos como recipientes para reducir el tormento. Recibirás un evento cuando tu recipiente actual muera preguntándote si quieres cambiar de recipiente a un cultista aleatorio. \n\nSi permaneces en estado espiritual durante demasiado tiempo, quedarás atrapado en el abismo, incapaz de hacer la mayoría de [character_interaction|E], y necesitarás [piety_i] #N 10000#! para escapar y poseer otro recipiente." #NT!
@@ -339,9 +339,9 @@
  podintroductions.2510.b: "Glamour" #NT!
  podintroductions.2510.b_hsien: "chi" #NT!
  podintroductions.2510.c: "Aplastante" #NT!
- podintroductions.2510.e: "Estoy bien, vamos." #NT!
+ podintroductions.2510.e: "Estoy listo, ¡Vamos!." #NT!
  podintroductions.2511.a: "Volvamos." #NT!
- podintroductions.2511.t: "Cantrip y soñadores" #NT!
+ podintroductions.2511.t: "Truco y soñadores" #NT!
  podintroductions.2511.desc: "Como Kithain tienes acceso al Arte y a los Reinos, representados como estilos de vida.\n\nJuntos forman [interaction|E] conocido como Cantrip, donde el arte proporciona el efecto y los reinos definen el alcance y la condición.\n\nPuedes usar mortales (conocidos como Soñadores) para proporcionar XP de estilo de vida para esos poderes." #NT!
  podintroductions.2512.t: "Glamour" #NT!
  podintroductions.2512.desc: "Usas Glamour para alimentar tu Cantrip, y lo recuperas en el edificio Glade Freehold en tu capital, o usando Rapture [decision|E], o completando un plan diplomático, o usando Ravaging/Rhapsody/Reaving [character_interaction|E].\n\nHay otras formas de recuperarlo, como artefactos únicos o haciendo un artefacto de escoria." #NT!
@@ -356,7 +356,7 @@
  podintroductions.6001.b: "Quiero ser un sobrenatural" #NT!
  podintroductions.6001.c: "Quiero ser cazador" #NT!
   
- podintroductions.6002.t: "Fondo y primer plano" #NT!
+ podintroductions.6002.t: "Trasfondo y antecedentes" #NT!
  podintroductions.6002.desc: "¿Quieres elegir un vampiro en el mapa para tener un [Sire|E] conocido como parte del trasfondo de tu personaje, o prefieres comenzar sin un linaje claro?." #NT!
  podintroductions.6002.a: "Quiero elegir con quién me relaciono." #NT!
  podintroductions.6002.option.a.t: "Al utilizar un [character_interaction|E] en cualquier otro personaje vivo, podrás seleccionar un personaje con el que relacionarte." #NT!
@@ -365,13 +365,13 @@
  podintroductions.6002.option.b.t: "¿Quieres convertirte en un demonio? No, el demonio se convierte en ti." #NT!
  podintroductions.6002.c: "El linaje desconocido está bien." #NT!
   
- podintroductions.6003.t: "Fondo y primer plano" #NT!
+ podintroductions.6003.t: "Trasfondo y antecedentes" #NT!
  podintroductions.6003.desc: "¿Quieres elegir un Wan Kuei en el mapa para tener un Sifu inicial como parte del trasfondo de tu personaje o prefieres unirte a uno más adelante durante el juego?" #NT!
  podintroductions.6003.a: "Quiero elegir mi Sifu inicial." #NT!
  podintroductions.6003.b: "Me uniré a un Wu durante el juego." #NT!
  podintroductions.6003.c: "Quiero empezar como Heimin." #NT!
   
- podintroductions.6004.t: "Fondo y primer plano" #NT!
+ podintroductions.6004.t: "Trasfondo y antecedentes" #NT!
  podintroductions.6004.desc: "¿Quieres elegir un [ghoul|E]/[revenant|E] en el mapa para que sea tu padre o madre como parte de los antecedentes de tu personaje? ¿Quieres formar parte de una organización ahora, más adelante durante el juego o nunca?" #NT!
  podintroductions.6004.a: "Quiero elegir a mis padres." #NT!
  podintroductions.6004.b: "Quiero unirme a los Renegados." #NT!
@@ -380,7 +380,7 @@
  podintroductions.6004.option.c.t: "Puedes convertirte en un ghoul independiente o en el hijo de un vampiro." #NT!
  podintroductions.6004.d: "No necesito esos." #NT!
   
- podintroductions.6005.t: "Fondo y primer plano" #NT!
+ podintroductions.6005.t: "Trasfondo y antecedentes" #NT!
  podintroductions.6005.desc: "¿Quieres elegir un cazador en el mapa para que tenga un padre como parte del trasfondo de tu personaje? ¿Quieres ser parte de una organización ahora, más adelante durante el juego o nunca?" #NT!
  podintroductions.6005.a: "Quiero elegir a mis padres." #NT!
  podintroductions.6005.b: "Quiero unirme a una célula." #NT!
@@ -389,14 +389,14 @@
  podintroductions.6005.option.c.t: "Puedes convertirte en un [GetTrait('cabiri').GetName( GetPlayer )], un cambiante, un ghoul independiente o caer en la oscuridad (convertirte en un [GetTrait('vampire').GetName( GetPlayer )])." #NT!
  podintroductions.6005.d: "No necesito esos" #NT!
   
- podintroductions.6006.t: "Fondo y primer plano" #NT!
+ podintroductions.6006.t: "Trasfondo y antecedentes" #NT!
  podintroductions.6006.desc: "¿Quieres elegir un personaje del mapa para que forme parte de tu trasfondo de personaje? ¿Quieres formar parte de una organización ahora, más adelante en el juego o nunca?" #NT!
  podintroductions.6006.a: "Quiero elegir a mis padres." #NT!
  podintroductions.6006.b: "Quiero convertirme en otro tipo de sobrenatural." #NT!
  podintroductions.6006.option.b.t: "Puedes convertirte en un ghoul independiente o convertirte en el hijo de un vampiro." #NT!
  podintroductions.6006.c: "No necesito esos." #NT!
   
- podintroductions.6007.t: "Fondo" #NT!
+ podintroductions.6007.t: "Trasfondo" #NT!
  podintroductions.6007.desc: "¿Quieres comenzar con un linaje mortal como parte del trasfondo de tu personaje, o prefieres comenzar sin un linaje claro?" #NT!
  podintroductions.6007.a: "Tengo familia en [skinlands|E]." #NT!
  podintroductions.6007.c: "No necesito esos." #NT!
@@ -418,9 +418,9 @@
  podintroductions.7000.d: "Es hora de tirar los dados..." #NT!
   
  podintroductions.7001.t: "Maldito" #NT!
- podintroductions.7001.desc: "Ahora estás jugando como [GetPlayer.GetName].\n\n[GetPlayer.GetSheHe|U] está a punto de pasar un mal momento. ¿Qué maldición debería recibir [GetPlayer.GetSheHe]?" #NT!
+ podintroductions.7001.desc: "Ahora estás jugando como [GetPlayer.GetName].\n\n[GetPlayer.GetSheHe|U] estás a punto de pasar un mal rato. ¿Qué maldición deberías recibir [GetPlayer.GetSheHe]?" #NT!
  podintroductions.7001.a: "Una maldición aleatoria" #NT!
- podintroductions.7001.b: "Todos ellos" #NT!
+ podintroductions.7001.b: "¡Todas!" #NT!
  podintroductions.7001.c: "[GetModifier('POD_roguelike_no_wealth').GetNameWithTooltip]" #NT!
  podintroductions.7001.d: "[GetModifier('POD_roguelike_no_love').GetNameWithTooltip]" #NT!
  podintroductions.7001.e: "[GetModifier('POD_roguelike_no_rest').GetNameWithTooltip]" #NT!
@@ -429,5 +429,5 @@
  podintroductions.7001.h: "[GetModifier('POD_roguelike_no_guile').GetNameWithTooltip]" #NT!
  podintroductions.7001.i: "[GetModifier('POD_roguelike_no_demands').GetNameWithTooltip]" #NT!
  podintroductions.7001.tt: "Al completar cualquier objetivo importante se eliminarán todas las maldiciones." #NT!
- podintroductions.7001.nocurses: "Cambié de opinión. No maldiga, por favor." #NT!
+ podintroductions.7001.nocurses: "He cambiado de opinión. Sin maldiciones, por favor." #NT!
  podintroductions.7001.nocurses.tt: "Continuarás jugando como [GetPlayer.GetName], pero sin ninguna maldición ni otras mecánicas de [roguelike_mode|E]." #NT!
