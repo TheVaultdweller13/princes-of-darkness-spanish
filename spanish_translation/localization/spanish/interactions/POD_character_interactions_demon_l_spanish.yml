@@ -64,8 +64,8 @@
  POD_donate_resolve_interaction_desc: "Dona Resuelve a [recipient.GetFirstName] para reducir [stress|E]." #NT!
  POD_donate_resolve_interaction_options_heading: "¿Cuánto Resolve debo donar?" #NT!
   
- POD_arcana_discover_true_name_interaction: "Descubre el nombre celestial #weak (Esquema)#!" #NT!
- POD_infernalist_discover_true_name_interaction: "Descubre el nombre celestial #weak (Esquema)#!" #NT!
+ POD_arcana_discover_true_name_interaction: "Descubre el nombre celestial #weak (Conjura)#!" #NT!
+ POD_infernalist_discover_true_name_interaction: "Descubre el nombre celestial #weak (Conjura)#!" #NT!
   
  POD_arcana_summon_interaction: "Convocar" #NT!
  POD_arcana_summon_interaction_desc: "Invoca el nombre [recipient.GetFirstNamePossessive] y convoca a [recipient.GetHerHim] a tu corte." #NT!
@@ -86,7 +86,7 @@
  POD_summon_demon_interaction: "Invocar demonio" #NT!
  POD_summon_demon_interaction_desc: "Invoca un [GetTrait('demon').GetName( GetPlayer )] en [recipient.GetFirstName]." #NT!
   
- POD_tempt_interaction: "Tentación #weak (Esquema)#!" #NT!
+ POD_tempt_interaction: "Tentación #weak (Conjura)#!" #NT!
  POD_tempt_interaction_desc: "Tenta a [recipient.GetFirstName], lo que les permite obtener tu rasgo Pecado, lo que permite una corrupción más profunda después." #NT!
   
  POD_corrupt_interaction: "Corrupto #weak (Plan)#!" #NT!
@@ -140,7 +140,7 @@
  POD_cancel_truce_interaction_desc: "Cancelar una tregua que tiene [recipient.GetFirstName]." #NT!
  actor_secondary_POD_cancel_truce_interaction: "Tregua con" #NT!
   
- POD_end_scheme_interaction: "Esconderse del esquema" #NT!
+ POD_end_scheme_interaction: "Esconderse del complot" #NT!
  POD_end_scheme_interaction_desc: "Poner fin a todos los planes contra [recipient.GetFirstName]." #NT!
   
  POD_remove_title_claim_interaction: "Eliminar reclamo #Weak (Título)#!" #NT!
@@ -299,7 +299,7 @@
  POD_add_diabolist_xp_third_past: "[CHARACTER.GetShortUIName] ganado $VALUE|0V$ oculto [trait_level_track_xp|E] en $trait_track_diabolist$ $POD_secret_demonology_player$" #NT!
   
  POD_black_whispers_interaction: "Susurros negros" #NT!
- POD_black_whispers_interaction_desc: "Compra conocimiento de Yama Kings, te permitirá aprender todos los secretos y esquemas de [recipient.GetFirstName]." #NT!
+ POD_black_whispers_interaction_desc: "Compra conocimiento de Yama Kings, te permitirá aprender todos los secretos y conjuras de [recipient.GetFirstName]." #NT!
   
  POD_the_mark_of_the_celestials_perk_interaction: "La marca de los celestiales" #NT!
  POD_the_mark_of_the_celestials_perk_interaction_desc: "Haz que [recipient.GetFirstName] no sea del agrado de nadie, lo que dificultará todas sus interacciones sociales." #NT!
@@ -323,7 +323,7 @@
  POD_call_sin_dragon_to_war_interaction_tt: "Ya has llamado a tu Dragón del Pecado a [GetPlayer.MakeScope.GetVariable('sin_dragon_summon').War.GetName]." #NT!
   
  POD_scry_interaction: "Adivinar" #NT!
- POD_scry_interaction_desc: "Utiliza tu evocación para observar cada secreto y esquema de [recipient.GetFirstName]." #NT!
+ POD_scry_interaction_desc: "Utiliza tu evocación para observar cada secreto y conjura de [recipient.GetFirstName]." #NT!
  POD_scry_interaction_tt: "Tienes algún artefacto sobre el cual [recipient.GetFirstName] tiene derecho." #NT!
  POD_touch_from_afar_interaction: "Tocar desde lejos" #NT!
  POD_touch_from_afar_interaction_desc: "Usa tu evocación para acelerar tu plan en [recipient.GetFirstName]." #NT!

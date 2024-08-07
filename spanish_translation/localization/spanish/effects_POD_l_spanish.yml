@@ -747,7 +747,7 @@
  TELEPATHY_PERK_EFFECT: "Puedes usar la Telepatía [character_interaction|E] para encontrar secretos.\n\n#flavor En los niveles más altos de Auspex, el vampiro ahora puede literalmente leer las mentes, así como proyectar sus propios pensamientos en las mentes de los demás.#!" #NT!
  PSYCHIC_PROJECTION_EFFECT: "Obtén acceso a [astral_reaches|E] y [deep_umbra|E] durante los viajes espirituales.\n\n#flavor El Vástago con esta habilidad proyecta sus sentidos fuera de su caparazón físico, saliendo de su cuerpo como una entidad de pensamiento puro.#!" #NT!
  DISCERN_THE_AURA_PERK_EFFECT: "Como [character_interaction|E], te permite invocar a un mortal con [skills|E] de tu elección para tu corte.\n#F Escanea a un grupo de personas con un rasgo particular en su aura.#!" #NT!
- THE_MIND_REVEALED_PERK_EFFECT: "Como [character_interaction|E], te permite conocer todos los esquemas del objetivo.\n#F Lee continuamente los pensamientos de alguien para saber qué está pensando y qué está a punto de hacer.#!" #NT!
+ THE_MIND_REVEALED_PERK_EFFECT: "Como [character_interaction|E], te permite conocer todas las conjuras del objetivo.\n#F Lee continuamente los pensamientos de alguien para saber qué está pensando y qué está a punto de hacer.#!" #NT!
  PERSONALITY_METAMORPH_PERK_EFFECT: "Como [character_interaction|E], te permite cambiar todos los rasgos de tu personalidad. Como [character_interaction|E], te permite cambiar tu sexualidad. #F Adopta personalidades ficticias como propias. #!" #NT!
  SUPERNAL_AWARENESS_PERK_EFFECT: "Recibirás una notificación si alguien intenta asesinar a tus amigos o familiares. Recibirás una notificación si alguien intenta seducir a tus amantes o consortes. Tus prisioneros tienen menos posibilidades de escapar de tu prisión. #F Detecta eventos y hechos en cualquier parte del mundo. #!" #NT!
  OMNISCIENCE_PERK_EFFECT: "Como [character_interaction|E], te permite conocer todos los secretos del objetivo.\n#F Aprende las personalidades e identidades de todas las criaturas que te rodean.#!" #NT!
@@ -783,7 +783,7 @@
  COMPEL_PERK: "Invitación a [court|E] Aceptación: #P +10#!" #NT!
  RATIONALIZE_PERK_EFFECT: "Si convences a la víctima de que actuó por voluntad propia, desbloquearás un nuevo comando de dominación: iniciar un plan. También puedes obtener más oro usando comandos de dominación." #NT!
  CLOUD_MEMORY_PERK: "Mejora tu control sobre la Mascarada, dándote menos riesgos de exposición y más posibilidades de cubrirla en instancias específicas." #NT!
- MESMERIZE_PERK: "Desbloqueas el [GetScheme('abduct').GetTypeName] [scheme|E]. Además, obtienes la habilidad de dar órdenes a otros de varias maneras, abriendo el esquema [GetScheme('PODmesmerize').GetTypeName]." #NT!
+ MESMERIZE_PERK: "Desbloqueas el [GetScheme('abduct').GetTypeName] [scheme|E]. Además, obtienes la habilidad de dar órdenes a otros de varias maneras, abriendo el conjura [GetScheme('PODmesmerize').GetTypeName]." #NT!
  THE_FORGETFUL_MIND_PERK: "Desbloqueas una mejor opción para la mascarada de portada [character_interaction|E]. También permite un [character_interaction|E] que puede llevar a un aumento de la opinión del objetivo." #NT!
  SUBMERGED_DIRECTIVE_PERK: "Tienes más posibilidades de reclutar agentes para tus planes de asesinato. Tus ganchos de dominación también duran más, lo que te permite dar órdenes en una fecha posterior." #NT!
  MASS_MANIPULATION_PERK: "Puede reclutar [GetMaA('maniacs').GetName] como [men_at_arms|E]." #NT!
@@ -1071,8 +1071,8 @@
   # Visceratika # 
   
  SKINOFCHAMELEON_PERK_EFFECT: "Como opción [shapeshift|E], cambia de forma de piel para mimetizarte con tu entorno, lo que ofrece bonificaciones a los planes y a la resistencia a los planes." #NT!
- SCRYTHEHEARTHSTONE_PERK_EFFECT: "Conozca dónde se encuentran los individuos dentro de una estructura, lo que le otorga una ventaja para resistir esquemas hostiles." #NT!
- BONDWITHTHEMOUNTAIN_PERK_EFFECT: "Se fusionan parcialmente con piedra o cemento, lo que proporciona aún más resistencia a los esquemas hostiles." #NT!
+ SCRYTHEHEARTHSTONE_PERK_EFFECT: "Conozca dónde se encuentran los individuos dentro de una estructura, lo que le otorga una ventaja para resistir conjuras hostiles." #NT!
+ BONDWITHTHEMOUNTAIN_PERK_EFFECT: "Se fusionan parcialmente con piedra o cemento, lo que proporciona aún más resistencia a las conjuras hostiles." #NT!
  ARMOROFTERRA_PERK_EFFECT: "Endurece tu piel para absorber el daño con mayor facilidad. Además de mejorar la resistencia a los ataques hostiles, aumenta la destreza en combate." #NT!
  FLOWWITHTHEMOUNTAIN_PERK_EFFECT: "Pasa a través de piedra o cemento. Permite escapar fácilmente de la prisión." #NT!
  DARKSTATUE_PERK_EFFECT: "La luz solar no te afecta físicamente mientras no te muevas. Inmunidad a la luz solar y a los asesinatos por fuego" #NT!
@@ -1926,12 +1926,12 @@
  PTAHS_WORD_PERK_EFFECT: "Como [character_interaction|E], te permite usar Sekhem para ganar oro.\n#F El Amenti puede crear un objeto pequeño e inanimado al decir su Nombre Verdadero.#!" #NT!
  WHISPERS_TO_THE_BODY_PERK_EFFECT: "Bonificación a Cambio de Forma [character_interaction|E] para cambiar de apariencia.\n#F El Amenti puede cambiar su propia forma pronunciando su Nombre Verdadero y ordenándole que haga lo que desee.#!" #NT!
  WORDS_OF_AUTHORITY_PERK_EFFECT: "Bonificación al Comando [character_interaction|E].\nDesbloquea el [diligent_development_focus_decision|E].\n#F El Amenti pronuncia una frase que todos los que la escuchan están obligados a cumplir lo mejor que puedan.#!" #NT!
- ECHO_THE_LESSER_NAME_PERK_EFFECT: "También descubrirás nombres verdaderos parciales de algunos de los cortesanos del objetivo al usar el esquema Descubrir el Nombre Verdadero.\n#F El Amenti puede obtener una comprensión del Nombre Verdadero de cosas o conceptos básicos simplemente escuchando la resonancia transportada por Sekhem.#!" #NT!
+ ECHO_THE_LESSER_NAME_PERK_EFFECT: "También descubrirás nombres verdaderos parciales de algunos de los cortesanos del objetivo al usar el conjura Descubrir el Nombre Verdadero.\n#F El Amenti puede obtener una comprensión del Nombre Verdadero de cosas o conceptos básicos simplemente escuchando la resonancia transportada por Sekhem.#!" #NT!
  NAME_OF_SEKHEM_PERK_EFFECT: "Desbloquea la habilidad Robar Sekhem [character_interaction|E], permite drenar el recurso del objetivo para obtener Sekhem.\n#F El Amenti puede comandar Sekhem, atrayéndolo hacia sí para reponer sus propias reservas o dirigiéndolo hacia un aliado.#!" #NT!
  NAME_OF_SKILL_PERK_EFFECT: "#F Los Amenti pueden aprender o mejorar una habilidad a través del conocimiento de un Nombre Verdadero relevante.#!" #NT!
  RIDDLE_OF_THE_SPHINX_PERK_EFFECT: "Bonificación al Comando [character_interaction|E].\n#F El Amenti puede hacer una pregunta e inculcar en un objetivo la necesidad de responderla.#!" #NT!
  BECOMING_THE_PERSON_PERK_EFFECT: "Como [character_interaction|E], te permite copiar la apariencia y los rasgos físicos del objetivo.\n#F Al utilizar el Nombre Verdadero de una persona, Amenti se convierte en esa persona y realmente obtiene una comprensión de cómo es esta persona.#!" #NT!
- ECHO_THE_GREATER_NAME_PERK_EFFECT: "También descubrirás nombres verdaderos parciales de algunos de los vasallos del objetivo al usar el esquema Descubrir nombre verdadero.\n#F Los Amenti pueden obtener una comprensión del Nombre verdadero de cosas o conceptos más complejos.#!" #NT!
+ ECHO_THE_GREATER_NAME_PERK_EFFECT: "También descubrirás nombres verdaderos parciales de algunos de los vasallos del objetivo al usar la conjura Descubrir nombre verdadero.\n#F Los Amenti pueden obtener una comprensión del Nombre verdadero de cosas o conceptos más complejos.#!" #NT!
  NAME_OF_THE_ATTRIBUTE_PERK_EFFECT: "#F El Amenti puede aumentar sus atributos usando su Nombre Verdadero.#!" #NT!
  NAMES_OF_THE_FORGOTTEN_PERK_EFFECT: "Pueden reclutar a [GetMaA('the_lost_ancients').GetName] como [men_at_arms|E].\n#F A través de una investigación diligente, los Amenti pueden crear un Nombre Verdadero para un ser que ha perdido el suyo.#!" #NT!
  NAME_OF_THE_WILL_PERK_EFFECT: "#F Los Amenti pueden aumentar su fuerza de voluntad usando su Nombre Verdadero.#!" #NT!

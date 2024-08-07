@@ -607,9 +607,9 @@
  POD_demon_tainted_modifier_desc: "Este personaje huele a lo infernal y a lo profano. Los puros se retraen de su presencia, los impuros temen la competencia." #NT!
   
  POD_herdify_interaction_limit: "¡El tamaño de la manada está limitado! (3 más 1 por [diplomacy_i]#V 8#! [diplomacy|E] más cualquier bonificación de otras fuentes)" #NT!
- POD_herdify_mortal_interaction: "Añadir al Ganado #weak (Esquema)#!" #NT!
+ POD_herdify_mortal_interaction: "Añadir al Ganado #weak (Conjura)#!" #NT!
  POD_herdify_mortal_interaction_desc: "Conspira para conseguir a este mortal como recipiente del cual puedas alimentarte con seguridad a voluntad." #NT!
- POD_herdify_vampire_interaction: "Añadir al Ganado #weak (Esquema)#!" #NT!
+ POD_herdify_vampire_interaction: "Añadir al Ganado #weak (Conjura)#!" #NT!
  POD_herdify_vampire_interaction_desc: "Conspira para conseguir este Vástago como un recipiente del cual puedas alimentarte con seguridad a voluntad." #NT!
   
  POD_ghoul_choose: "Manipular [Ghoul|E]" #NT!
@@ -628,7 +628,7 @@
   
  POD_ghoulify_mortal_interaction_limit: "☻_¡La cantidad de esclavo está limitada! (3 más 1 por [stewardship_i]#V 8#! [stewardship|E] más cualquier bonificación de otras fuentes)" #NT!
  POD_ghoulify_mortal_interaction_bp_one: "Los vampiros deben tener una potencia de sangre de al menos uno para crear un [ghoul|E]." #NT!
- POD_ghoulify_mortal_interaction: "Crear Ghoul #weak (Esquema) #!" #NT!
+ POD_ghoulify_mortal_interaction: "Crear Ghoul #weak (Conjura) #!" #NT!
  POD_ghoulify_mortal_interaction_desc: "Conspira para transformar a este mortal en un esclavo [ghoul|E], un sirviente leal.\nTen en cuenta que los ghouls tienen una resonancia drásticamente reducida y son malos miembros de la manada." #NT!
  POD_ghoul_ghoulify_interaction: "Otorgar el don de la vida #weak (Plan)#!" #NT!
  POD_ghoul_ghoulify_interaction_desc: "Ofrezca a esta persona la vitae afín extraída de un prisionero de su elección." #NT!
@@ -640,13 +640,13 @@
  POD_ghoul_ghoulify_prisoner_interaction.tt: "[recipient.GetFirstName] se convierte en un ghoul." #NT!
  recipient_secondary_POD_ghoul_ghoulify_prisoner_interaction: "Prisionero" #NT!
   
- POD_awaketorpor_interaction: "Encuentra el escondite #weak (Esquema)#!" #NT!
+ POD_awaketorpor_interaction: "Encuentra el escondite #weak (Conjura)#!" #NT!
  POD_awaketorpor_interaction_desc: "Intentarás averiguar la ubicación exacta de este vampiro aletargado. Luego, podrás invitarlo a tu corte o atacarlo..." #NT!
  I_CAN_ONLY_PLOT_ONE_AWAKETORPOR_AT_A_TIME_TRIGGER: "Sólo se puede planificar una búsqueda de escondite a la vez" #NT!
  scheme_interaction_tt_awaketorpor_approved: "Intentarás averiguar la ubicación exacta de este vampiro aletargado. Luego comenzará la caza. Obviamente, existen serios riesgos involucrados..." #NT!
  awaketorpor: "Encuentra un escondite" #NT!
  awaketorpor_action: "Encuentra un escondite" #NT!
- awaketorpor_interaction: "Encuentra el escondite #weak (Esquema)#!" #NT!
+ awaketorpor_interaction: "Encuentra el escondite #weak (Conjura)#!" #NT!
  awaketorpor_desc: "Localizaré a [SCHEME.GetTarget.GetShortUINameNoTooltip] y luego me ocuparé de él como crea conveniente." #NT!
  awaketorpor_desc_general: "Intenta localizar el escondite de este vampiro torcido." #NT!
  AWAKETORPOR_SUCCESS_DESC: "Comenzarás la exploración final del escondite [TARGET_CHARACTER.GetShortUINamePossessive]" #NT!
@@ -1011,7 +1011,7 @@
  POD_wails_and_whispers_interaction_desc: "Reducir la resistencia de los objetivos a los planes de asesinato." #NT!
  POD_wails_and_whispers_interaction.tt: "Usando tus poderes de nigromancia puedes hacer que el objetivo sea más vulnerable a planes de asesinato durante 5 años." #NT!
  POD_wails_and_whispers_actor_toast: "¡Éxito!" #NT!
- POD_wails_and_whispers_actor_toast.desc: "[recipient.GetFirstName] es más vulnerable a esquemas hostiles" #NT!
+ POD_wails_and_whispers_actor_toast.desc: "[recipient.GetFirstName] es más vulnerable a conjuras hostiles" #NT!
  POD_wails_and_whispers_enemy_toast: "¡Desesperación!" #NT!
  POD_wails_and_whispers_enemy_toast.desc: "¡[actor.GetFirstName] te ha maldecido usando lamentos y susurros!" #NT!
  POD_wails_and_whispers_failure_toast: "¡Falla!" #NT!
@@ -1172,8 +1172,8 @@
  POD_discern_the_aura_interaction: "Discernir el aura" #NT!
  POD_discern_the_aura_interaction_desc: "Encuentra un mortal con atributos específicos." #NT!
  POD_discern_the_aura_interaction_effect: "Podrás elegir el [skills|E] del mortal que estás buscando." #NT!
- POD_the_mind_revealed_interaction: "Revelar esquema" #NT!
- POD_the_mind_revealed_interaction_desc: "Conozca cada esquema de [recipient.GetFirstName]." #NT!
+ POD_the_mind_revealed_interaction: "Revelar conjura" #NT!
+ POD_the_mind_revealed_interaction_desc: "Conozca cada conjura de [recipient.GetFirstName]." #NT!
  POD_personality_metamorph_interaction: "Metamorfosis de la personalidad" #NT!
  POD_personality_metamorph_interaction_desc: "Esto abrirá un menú que te permitirá modificar tu personalidad." #NT!
  POD_omniscience_interaction: "Revelar secreto" #NT!
@@ -1209,7 +1209,7 @@
   
  POD_quickness_decision_interaction: "Rapidez #Weak (Decisión)#!" #NT!
  POD_quickness_decision_interaction_desc: "Eliminar el tiempo de recuperación de decisiones." #NT!
- POD_quickness_scheme_interaction: "Rapidez #Weak (Esquema)#!" #NT!
+ POD_quickness_scheme_interaction: "Rapidez #Weak (Conjura)#!" #NT!
  POD_quickness_scheme_interaction_desc: "Eliminar el tiempo de recuperación del plan." #NT!
  POD_time_out_of_time_interaction: "Tiempo fuera del tiempo" #NT!
  POD_time_out_of_time_interaction_desc: "Acelerar el progreso del plan." #NT!
@@ -1391,7 +1391,7 @@
  POD_blood_of_a_demon_interaction_option_arbitrary: "Arnés Sin: arbitrario" #NT!
  POD_blood_of_a_demon_interaction_sin_ct: "Amplifica tu pecado para mejorarte a ti mismo. Sin las ventajas de los mayores, esto solo se puede hacer una vez. Elige tu vicio con cuidado..." #NT!
   
- POD_blood_of_a_demon_other_interaction: "Sangre de demonio #weak (Esquema)#!" #NT!
+ POD_blood_of_a_demon_other_interaction: "Sangre de demonio #weak (Conjura)#!" #NT!
  POD_blood_of_a_demon_other_interaction_desc: "Utiliza tu sangre contaminada por los demonios para manipular a otros: impone tu voluntad a los infernalistas, planea conducir a otros a la adoración de los demonios o incluso, en el nivel más alto, otorga terribles dones de oscuridad." #NT!
  POD_blood_of_a_demon_other_interaction_option_infernalist_service: "Servicio a la demanda" #NT!
  POD_blood_of_a_demon_other_interaction_option_infernalist_scheme: "Tentar al infernalismo" #NT!
@@ -1429,7 +1429,7 @@
  POD_steal_heart_desc_general: "Roba el corazón del objetivo." #NT!
  POD_steal_heart_SUCCESS_DESC: "Te enfrentas al objetivo e intentas robarle el corazón con un oscuro ritual." #NT!
  POD_steal_heart_my_intrigue: "Tu Intriga: $VALUE|=+0$" #NT!
- POD_steal_heart: "Esquema de robo de corazones" #NT!
+ POD_steal_heart: "Conjura de robo de corazones" #NT!
  POD_steal_heart_desc: "¡Es hora de agregar un nuevo corazón a mi colección!" #NT!
   
  set_relation_heart_of_darkenss_owner: "Conviértete en dueño de su corazón" #NT!

@@ -2,9 +2,9 @@
   
  GENERIC_DISCOVERY_DESC: "Estás descubierto y el plan terminará." #NT!
   
- # investigate: "Investigar el esquema" #NT!
+ # investigate: "Investigar la conjura" #NT!
  # investigate_action: "Investigar" #NT!
- # investigate_interaction: "Investigar #weak (Esquema)#!" #NT!
+ # investigate_interaction: "Investigar #weak (Conjura)#!" #NT!
  # investigate_desc: "¡A través de la investigación, se podrá revelar la historia de [SCHEME.GetTarget.GetShortUINameNoTooltip]! Recibirás bonificaciones relevantes en función de tu aprendizaje." #NT!
  # investigate_desc_general: "Investigar sobre un individuo." #NT!
  # scheme_interaction_tt_investigate_approved: "Investiga la historia sobre [recipient.GetFirstName]. Sabrás más y quizás descubras algo de información útil si tienes suficiente conocimiento." #NT!
@@ -15,7 +15,7 @@
   
  PODentrance: "Embelesamiento" #NT!
  PODentrance_action: "Embelesar" #NT!
- POD_entrance_interaction: "Embelesar #weak (Esquema)#!" #NT!
+ POD_entrance_interaction: "Embelesar #weak (Conjura)#!" #NT!
  POD_entrance_interaction_desc: "A través del [discipline|E] de presencia, invoca la sangre para hacer entrar en gracia a un ser que te quiere." #NT!
  PODentrance_desc: "¡A través del hechizo conseguiré que [SCHEME.GetTarget.GetShortUINameNoTooltip] me quiera!" #NT!
  PODentrance_desc_general: "$PODentrance$ es un [personal_scheme|E] que tiene como objetivo agradarle al objetivo. Se hace disponible por el [discipline|E] de [GetTrait('presence').GetName( GetNullCharacter )] [GetPerk('entrancement_perk').GetName(GetNullCharacter)] [perk|E]. \n\n #X A diferencia de un plan normal, la probabilidad de éxito del plan indicada no es relevante. Una vez que el plan se completa, un duelo diplomático determinará el éxito. #! \n\nLas probabilidades de éxito aumentan en [GetPerk('majesty_perk').GetName(GetNullCharacter)], [GetTrait('presenceadvanced').GetName(GetNullCharacter)], [personal_scheme|E]0 y [personal_scheme|E]1. \n\nSi el defensor tiene [personal_scheme|E]2, [personal_scheme|E]3 o el hechizo de Hechicería de sangre 'Canción de Júpiter' lanzado, las probabilidades disminuyen." #NT!
@@ -27,7 +27,7 @@
   
  PODmesmerize: "Hipnotizar" #NT!
  PODmesmerize_action: "Dominar" #NT!
- POD_mesmerize_interaction: "Hipnotizar #weak (Esquema)#!" #NT!
+ POD_mesmerize_interaction: "Hipnotizar #weak (Conjura)#!" #NT!
  POD_mesmerize_interaction_desc: "A través del [discipline|E] de dominar, invoca la sangre para obligar a un ser a seguir tu orden." #NT!
  PODmesmerize_desc: "¡A través de la dominación, conseguiré un gancho sobre [SCHEME.GetTarget.GetShortUINameNoTooltip] que me permitirá darles varias órdenes!" #NT!
  PODmesmerize_desc_general: "$PODmesmerize$ es un [personal_scheme|E] que tiene como objetivo obligar a un ser a seguir tus órdenes. Se pone a disposición por el [discipline|E] de [GetTrait('dominate').GetName( GetNullCharacter )] [GetPerk('mesmerize_perk').GetName(GetNullCharacter)] [perk|E]. \n\n #X A diferencia de un plan normal, la probabilidad de éxito del plan indicada no es relevante. Una vez que el plan se completa, un duelo de administración determinará el éxito. #! \n\nLos vampiros con un [generation|E] menor que el del atacante son inmunes. Al igual que los vampiros que han logrado [golconda|E]. \n\nLos personajes con personalidades sumisas son más fáciles de hipnotizar. Los vampiros con un [generation|E] menor que el de su oponente obtendrán una ventaja. La mayoría de los mortales tienen pocas defensas contra este poder. Las probabilidades de éxito también aumentan con [personal_scheme|E]1, [personal_scheme|E]2, [personal_scheme|E]3 y [personal_scheme|E]4. \n\n[personal_scheme|E]5" #NT!
@@ -54,7 +54,7 @@
   
  vamphunt: "Caza" #NT!
  vamphunt_action: "Caza" #NT!
- vamphunt_interaction: "Caza #weak (Esquema)#!" #NT!
+ vamphunt_interaction: "Caza #weak (Conjura)#!" #NT!
  vamphunt_desc: "Caza [SCHEME.GetTarget.GetShortUINameNoTooltip] por [SCHEME.GetTarget.GetHerHis] sangre." #NT!
  vamphunt_desc_general: "El $vamphunt$ es un [hostile_scheme|E] que tiene un [GetTrait('vampire').GetName( GetNullCharacter )] para cazar a un personaje [GetTrait('mortal').GetName( GetNullCharacter )] y obtener su sangre. Este plan se basa principalmente en tu [intrigue|E], es [secret_scheme_single|E] y no usa [agents|E]. Si tiene éxito, el [GetTrait('vampire').GetName( GetNullCharacter )] beberá la sangre del [GetTrait('mortal').GetName( GetNullCharacter )]. Si se descubre este plan, el personaje viola [masquerade|E], lo que conduce a posibles complicaciones, como ataques de [hostile_scheme|E]0. El poder no funcionará en personajes [hostile_scheme|E]1. Las posibles víctimas deben estar en tu ubicación." #NT!
  scheme_interaction_tt_vamphunt_approved: "Caza [recipient.GetFirstName]. Podrás drenar [recipient.GetHerHis] sangre para reponer tus reservas." #NT!
@@ -66,9 +66,9 @@
   
  chihunt: "Caza" #NT!
  chihunt_action: "Caza" #NT!
- chihunt_interaction: "Caza #weak (Esquema)#!" #NT!
+ chihunt_interaction: "Caza #weak (Conjura)#!" #NT!
  chihunt_desc: "Caza [SCHEME.GetTarget.GetShortUINameNoTooltip] por [SCHEME.GetTarget.GetHerHis] chi." #NT!
- chihunt_desc_general: "El $chihunt$ es un [hostile_scheme|E] que tiene un [GetTrait('kueijin').GetName( GetNullCharacter )] para cazar a un personaje [GetTrait('mortal').GetName( GetNullCharacter )] para obtener su Chi. Este esquema se basa principalmente en tu [intrigue|E], es [secret_scheme_single|E] y no usa [agents|E]. Si tiene éxito, el [GetTrait('kueijin').GetName( GetNullCharacter )] beberá el Chi del [GetTrait('mortal').GetName( GetNullCharacter )]. El poder no funcionará en personajes [landed|E]. Las víctimas potenciales deben estar en tu ubicación." #NT!
+ chihunt_desc_general: "El $chihunt$ es un [hostile_scheme|E] que tiene un [GetTrait('kueijin').GetName( GetNullCharacter )] para cazar a un personaje [GetTrait('mortal').GetName( GetNullCharacter )] para obtener su Chi. Este conjura se basa principalmente en tu [intrigue|E], es [secret_scheme_single|E] y no usa [agents|E]. Si tiene éxito, el [GetTrait('kueijin').GetName( GetNullCharacter )] beberá el Chi del [GetTrait('mortal').GetName( GetNullCharacter )]. El poder no funcionará en personajes [landed|E]. Las víctimas potenciales deben estar en tu ubicación." #NT!
  scheme_interaction_tt_chihunt_approved: "Caza [recipient.GetFirstName]. Podrás drenar [recipient.GetHerHis] Chi para reponer tus reservas." #NT!
  CHIHUNT_SUCCESS_DESC: "[TARGET_CHARACTER.GetShortUINamePossessive] Chi será tuyo." #NT!
  CHIHUNT_DISCOVERY_DESC: "@warning_icon! Tu cacería ha sido descubierta." #NT!
@@ -77,7 +77,7 @@
   
  banehunt: "Caza" #NT!
  banehunt_action: "Caza" #NT!
- banehunt_interaction: "Caza #weak (Esquema)#!" #NT!
+ banehunt_interaction: "Caza #weak (Conjura)#!" #NT!
  banehunt_desc: "Caza [SCHEME.GetTarget.GetShortUINameNoTooltip] por [SCHEME.GetTarget.GetHerHis] carne." #NT!
  banehunt_desc_general: "El $banehunt$ es un [hostile_scheme|E] que tiene un [GetTrait('banemummy').GetName( GetNullCharacter )] para cazar a un personaje [GetTrait('mortal').GetName( GetNullCharacter )] por su carne. Este plan se basa principalmente en tu [intrigue|E], es [secret_scheme_single|E] y no usa [agents|E]. Si tiene éxito, el [GetTrait('banemummy').GetName( GetNullCharacter )] beberá la carne del [GetTrait('mortal').GetName( GetNullCharacter )]. El poder no funcionará en personajes [landed|E]. Las víctimas potenciales deben estar en tu ubicación." #NT!
  scheme_interaction_tt_banehunt_approved: "Caza [recipient.GetFirstName]. Podrás comer [recipient.GetHerHis] carne para reponer tu Sekhem." #NT!
@@ -93,7 +93,7 @@
  herdify_mortal_desc_general: "Un plan vampírico dirigido a un mortal que lo convertirá en mi recipiente, lo que permitirá varios métodos para beber automáticamente su sangre." #NT!
  herdify_mortal_action: "Rebaño" #NT!
  herdify_vampire_action: "Rebaño" #NT!
- herdify_interaction: "Rebaño #weak (Esquema)#!" #NT!
+ herdify_interaction: "Rebaño #weak (Conjura)#!" #NT!
  herdify_desc: "Recluta a [SCHEME.GetTarget.GetShortUINameNoTooltip] en tu rebaño." #NT!
  herdify_mortal_desc: "Recluta a [SCHEME.GetTarget.GetShortUINameNoTooltip] en tu rebaño." #NT!
  herdify_vampire_desc: "Recluta a [SCHEME.GetTarget.GetShortUINameNoTooltip] en tu rebaño." #NT!
@@ -105,7 +105,7 @@
   
  embrace: "Abrazo" #NT!
  embrace_action: "Abrazar" #NT!
- embrace_interaction: "[Embrace|E] #weak (Esquema)#!" #NT!
+ embrace_interaction: "[Embrace|E] #weak (Conjura)#!" #NT!
  embrace_desc: "[Embrace|E] [SCHEME.GetTarget.GetShortUINameNoTooltip] para transformarlos en tu chiquillo." #NT!
  embrace_desc_general: "Un plan personal disponible para cualquier vampiro que desee Abrazar a un mortal, convirtiéndolo en vampiro en el proceso." #NT!
  embrace_childe_older_than_you_tt: "Debido a las limitaciones de CK3, si son mayores que tú, convertirlos en tus hijos podría no funcionar correctamente." #NT!
@@ -118,7 +118,7 @@
   
  diablerize: "Diabolizar" #NT!
  diablerize_action: "Diabolizar" #NT!
- diablerize_interaction: "[diablerize|E] #weak (Esquema)#!" #NT!
+ diablerize_interaction: "[diablerize|E] #weak (Conjura)#!" #NT!
  diablerize_desc: "¡Voy a [diablerize|E] a [SCHEME.GetTarget.GetShortUINameNoTooltip] y devoraré su alma!" #NT!
  diablerize_desc_general: "La $diablerie$ es un [hostile_scheme|E] para matar a un objetivo [GetTrait('vampire').GetName( GetNullCharacter )] y devorar toda su sangre y alma. Es un [secret_scheme|E] basado en [intrigue|E], que puede reclutar [agents|E].\n\nUna [diablerie|E] exitosa resultará en la [character_death_death|E] del [scheme_target|E]. \n\nUn asesinato que permanezca en secreto le dará al [scheme_owner|E] un [diablerie|E] [secret|E].\n\nSer descubierto intentando [diablerize|E], o diablerizando con éxito a un [GetTrait('vampire').GetName( GetNullCharacter )] es un grave [crime|E] para la mayoría de las [GetTrait('vampire').GetName( GetNullCharacter )] creencias. También llamado 'Amaranto' en honor a la primera víctima de la [diablerie|E], este es el proceso en el cual un [GetTrait('vampire').GetName( GetNullCharacter )] drena a otro [GetTrait('vampire').GetName( GetNullCharacter )] de toda su sangre, incluyendo su alma. Esto permite al [diablerist|E] ganar [bloodpotency|E] e incluso una menor [vampgeneration|E] de su víctima. A menudo tiene un alto precio al fortalecer a la [beast|E] de un [GetTrait('vampire').GetName( GetNullCharacter )]. Representamos esto perdiendo niveles de [piety|E]. La mayoría de los [GetTrait('vampire').GetName( GetNullCharacter )] tienen una mala opinión de #TOOLTIP:GAME_TRAIT,diablerist,[GetNullCharacter] #L Diableristas#!#!." #NT!
  DIABLERIZE_SUCCESS_DESC: "¡La sangre y el alma de [TARGET_CHARACTER.GetShortUIName] serán tuyas!" #NT!
@@ -134,7 +134,7 @@
  PODbloodbond: "Vínculo de sangre" #NT!
  POD_bloodbond: "Vínculo de sangre" #NT!
  PODbloodbond_action: "Vínculo de sangre" #NT!
- POD_bloodbond_interaction: "Vínculo de sangre #weak (Esquema)#!" #NT!
+ POD_bloodbond_interaction: "Vínculo de sangre #weak (Conjura)#!" #NT!
  POD_bloodbond_interaction_desc: "Usa tu sangre para atar a un vampiro a tu voluntad." #NT!
  PODbloodbond_desc: "¡Me uniré por sangre [SCHEME.GetTarget.GetShortUINameNoTooltip]!" #NT!
  PODbloodbond_desc_general: "$PODbloodbond$ es un [hostile_scheme|E] para obtener un anzuelo o reforzar un [bloodbond|E] débil para convertirlo en un anzuelo fuerte. Es un [secret_scheme|E] basado en [intrigue|E], que puede reclutar a [agents|E]. Tu objetivo puede aceptar el Vínculo de sangre sin desafío dependiendo de si eres su señor, su doctrina de fe sobre los Juramentos de sangre y si confía en ti.\n\n #X A diferencia de un plan normal, la probabilidad de éxito del plan indicada no es relevante. Sin embargo, el poder del plan afecta la rapidez con la que se puede completar el plan. Una vez que el plan se completa, un duelo combinado de intriga y destreza determinará el éxito. #!" #NT!
@@ -144,7 +144,7 @@
   
  knighting: "Nombramiento de caballero" #NT!
  knighting_action: "Nombramiento de caballero" #NT!
- knighting_interaction: "Caballero #weak (Esquema)#!" #NT!
+ knighting_interaction: "Caballero #weak (Conjura)#!" #NT!
  knighting_desc: "Reconoce a [SCHEME.GetTarget.GetShortUINameNoTooltip] como tu escudero y compañero cazador." #NT!
  knighting_desc_general: "Reconoce a un nuevo Caballero Cazador." #NT!
  scheme_interaction_tt_knighting_approved: "Reconoce a [recipient.GetFirstName] como tu cazador de alumnos." #NT!
@@ -157,49 +157,49 @@
   
  ordinationsisters: "Ordenación" #NT!
  ordinationsisters_action: "Ordenación" #NT!
- ordinationsisters_interaction: "Ordenación #weak (Esquema)#!" #NT!
+ ordinationsisters_interaction: "Ordenación #weak (Conjura)#!" #NT!
  ordinationsisters_desc: "Reconoce a [SCHEME.GetTarget.GetShortUINameNoTooltip] como tu alumno y compañero cazador." #NT!
  ordinationsisters_desc_general: "Ordenar una nueva Hermana de San Juan." #NT!
   
  ordinationred: "Ordenación" #NT!
  ordinationred_action: "Ordenación" #NT!
- ordinationred_interaction: "Ordenación #weak (Esquema)#!" #NT!
+ ordinationred_interaction: "Ordenación #weak (Conjura)#!" #NT!
  ordinationred_desc: "Reconoce a [SCHEME.GetTarget.GetShortUINameNoTooltip] como tu alumno y compañero cazador." #NT!
  ordinationred_desc_general: "Ordenar a un nuevo miembro de la Orden Roja" #NT!
   
  ordinationoculi: "Ordenación" #NT!
  ordinationoculi_action: "Ordenación" #NT!
- ordinationoculi_interaction: "Ordenación #weak (Esquema)#!" #NT!
+ ordinationoculi_interaction: "Ordenación #weak (Conjura)#!" #NT!
  ordinationoculi_desc: "Reconoce a [SCHEME.GetTarget.GetShortUINameNoTooltip] como tu alumno y compañero cazador." #NT!
  ordinationoculi_desc_general: "Ordenar a un nuevo miembro de los Oculi Dei" #NT!
   
  ordinationmurnau: "Ordenación" #NT!
  ordinationmurnau_action: "Ordenación" #NT!
- ordinationmurnau_interaction: "Ordenación #weak (Esquema)#!" #NT!
+ ordinationmurnau_interaction: "Ordenación #weak (Conjura)#!" #NT!
  ordinationmurnau_desc: "Reconoce a [SCHEME.GetTarget.GetShortUINameNoTooltip] como tu alumno y compañero cazador." #NT!
  ordinationmurnau_desc_general: "Ordenar un nuevo miembro de la familia Von Murnau" #NT!
   
  ordinationgantenbein: "Iniciación" #NT!
  ordinationgantenbein_action: "Iniciación" #NT!
- ordinationgantenbein_interaction: "Iniciación #weak (Esquema)#!" #NT!
+ ordinationgantenbein_interaction: "Iniciación #weak (Conjura)#!" #NT!
  ordinationgantenbein_desc: "Reconoce a [SCHEME.GetTarget.GetShortUINameNoTooltip] como tu alumno y compañero cazador." #NT!
  ordinationgantenbein_desc_general: "Iniciar un nuevo cazador de los Renegados de Calomena" #NT!
   
  ordinationshih: "Iniciación" #NT!
  ordinationshih_action: "Iniciación" #NT!
- ordinationshih_interaction: "Iniciación #weak (Esquema)#!" #NT!
+ ordinationshih_interaction: "Iniciación #weak (Conjura)#!" #NT!
  ordinationshih_desc: "Reconoce a [SCHEME.GetTarget.GetShortUINameNoTooltip] como tu estudiante y compañero cazador." #NT!
  ordinationshih_desc_general: "Iniciar un nuevo cazador del [GetTrait('shih').GetName( GetPlayer )]" #NT!
   
  ordinationindep: "Iniciación" #NT!
  ordinationindep_action: "Iniciación" #NT!
- ordinationindep_interaction: "Iniciación #weak (Esquema)#!" #NT!
+ ordinationindep_interaction: "Iniciación #weak (Conjura)#!" #NT!
  ordinationindep_desc: "Reconoce a [SCHEME.GetTarget.GetShortUINameNoTooltip] como tu alumno y compañero cazador." #NT!
  ordinationindep_desc_general: "Iniciar un nuevo cazador" #NT!
   
  ordinationsanbenito: "Iniciación" #NT!
  ordinationsanbenito_action: "Iniciación" #NT!
- ordinationsanbenito_interaction: "Iniciación #weak (Esquema)#!" #NT!
+ ordinationsanbenito_interaction: "Iniciación #weak (Conjura)#!" #NT!
  ordinationsanbenito_desc: "Reconoce a [SCHEME.GetTarget.GetShortUINameNoTooltip] como tu alumno y compañero cazador." #NT!
  ordinationsanbenito_desc_general: "Iniciar un nuevo cazador" #NT!
   
@@ -235,7 +235,7 @@
   
  PODinsanity: "Maldición de la locura" #NT!
  PODinsanity_action: "Hacerse el loco" #NT!
- POD_insanity_interaction: "Maldición de locura #weak (Esquema)#!" #NT!
+ POD_insanity_interaction: "Maldición de locura #weak (Conjura)#!" #NT!
  POD_insanity_interaction_desc: "Usando dementación [discipline|E], otorga la maldición de la locura a tu objetivo." #NT!
  PODinsanity_desc: "Usando tu dementación [discipline|E], intentarás volver loco a [SCHEME.GetTarget.GetShortUINameNoTooltip]" #NT!
  PODinsanity_desc_general: "Utilizar la demencia para volver loca a una persona" #NT!
@@ -246,7 +246,7 @@
   
  PODskuldfulfilled: "Skuld cumplió" #NT!
  PODskuldfulfilled_action: "¡Regreso a la mortalidad!" #NT!
- POD_skuldfulfilled_interaction: "Skuld cumplido #weak (Esquema)#!" #NT!
+ POD_skuldfulfilled_interaction: "Skuld cumplido #weak (Conjura)#!" #NT!
  POD_skuldfulfilled_interaction_desc: "Devuelve este [ghoul|E] o [revenant|E] a una simple vida mortal" #NT!
  PODskuldfulfilled_desc: "Usando tus poderes oscuros, intentarás convertir a [SCHEME.GetTarget.GetShortUINameNoTooltip] en un simple mortal." #NT!
  PODskuldfulfilled_desc_general: "Usa el olvido para despojar a tu objetivo de la bendición de Caín." #NT!
@@ -285,7 +285,7 @@
  scheme_interaction_tt_PODsoul_bridge_approved: "La emoción es lo suficientemente fuerte como para que [recipient.GetFirstName] se vea obligado a actuar en consecuencia." #NT!
  infernalize_scheme: "La tentación del infernalismo" #NT!
  infernalize_scheme_action: "Convertir" #NT!
- infernalize_scheme_interaction: "Convertir #weak (Esquema)#!" #NT!
+ infernalize_scheme_interaction: "Convertir #weak (Conjura)#!" #NT!
  infernalize_scheme_interaction_desc: "Mediante el uso de poderes otorgados por el diablo o una lengua de plata, corromper a un individuo para llevarle a causas impías." #NT!
  infernalize_scheme_desc: "Mintiendo e invocando poderes infernales, [SCHEME.GetTarget.GetShortUINameNoTooltip] se convertirá a la fe oscura." #NT!
  infernalize_scheme_desc_general: "Utilice técnicas solapadas para atraer a una persona al lado oscuro." #NT!
@@ -297,10 +297,10 @@
   
  PODrationalize: "Racionalizar la dominación" #NT!
  PODrationalize_action: "Dominar" #NT!
- POD_rationalize_interaction: "Racionalizar #weak (Esquema)#!" #NT!
+ POD_rationalize_interaction: "Racionalizar #weak (Conjura)#!" #NT!
  POD_rationalize_interaction_desc: "A través del [discipline|E] de dominar, invoca la sangre para obligar a un ser a racionalizar una decisión que tomas por él." #NT!
  PODrationalize_desc: "¡A través de la dominación, conseguiré engancharme a [SCHEME.GetTarget.GetShortUINameNoTooltip]!" #NT!
- PODrationalize_desc_general: "El esquema de racionalización es un [personal_scheme|E] que tiene como objetivo forzar la salida de un gancho de otro personaje." #NT!
+ PODrationalize_desc_general: "La conjura de racionalización es un [personal_scheme|E] que tiene como objetivo forzar la salida de un gancho de otro personaje." #NT!
  scheme_interaction_tt_POD_rationalize_approved: "Domina a [recipient.GetFirstName] para que racionalice un anzuelo para mí.\nEsto terminará con un duelo entre tu administración y [recipient.GetHerHis] Intriga." #NT!
  PODrationalize_SUCCESS_DESC: "¡Te engancharás en [TARGET_CHARACTER.GetShortUIName]!" #NT!
  PODrationalize_my_stewardship: "Su administración: $VALUE|=+0$" #NT!
@@ -309,7 +309,7 @@
  POD_discover_true_name: "Estudio del nombre verdadero" #NT!
  POD_discover_true_name_action: "Descubra el verdadero nombre de" #NT!
  POD_discover_true_name_desc: "Intentarás descubrir el verdadero nombre de tu objetivo." #NT!
- POD_discover_true_name_desc_general: "El estudio del nombre verdadero [scheme|E] es un [hostile_scheme|E] que intenta descifrar el nombre verdadero de tu objetivo. Aprender un nombre verdadero o Ren, es un proceso difícil que tiene tres etapas: nombre verdadero parcial, nombre verdadero a medias y, finalmente, nombre verdadero completo. Para avanzar a la etapa final, este esquema deberá usarse tres veces en personajes sobrenaturales o una vez en un humano normal. Este esquema se basa principalmente en tu habilidad [learning|E]. No es [secret_scheme_single|E] y no usa [agents|E]." #NT!
+ POD_discover_true_name_desc_general: "El estudio del nombre verdadero [scheme|E] es un [hostile_scheme|E] que intenta descifrar el nombre verdadero de tu objetivo. Aprender un nombre verdadero o Ren, es un proceso difícil que tiene tres etapas: nombre verdadero parcial, nombre verdadero a medias y, finalmente, nombre verdadero completo. Para avanzar a la etapa final, este complot deberá usarse tres veces en personajes sobrenaturales o una vez en un humano normal. Este esquema se basa principalmente en tu habilidad [learning|E]. No es [secret_scheme_single|E] y no usa [agents|E]." #NT!
  POD_discover_true_name_SUCCESS_DESC: "Investigar [TARGET_CHARACTER.GetShortUIName]." #NT!
  POD_discover_true_name_my_learning: "Tu aprendizaje: $VALUE|=+0$" #NT!
  POD_discover_true_name_my_rival: "Tu víctima: $VALUE|=+0$" #NT!
@@ -340,7 +340,7 @@
   
  PODenthrall: "Fascinación" #NT!
  PODenthrall_action: "Cautivar" #NT!
- PODenthrall_interaction: "Cautivar #weak (Esquema)#!" #NT!
+ PODenthrall_interaction: "Cautivar #weak (Conjura)#!" #NT!
  PODenthrall_interaction_desc: "Realiza el Canto de Sirena para cautivar a un ser y hacer que le gustes." #NT!
  PODenthrall_desc: "¡A través del encanto conseguiré que [SCHEME.GetTarget.GetShortUINameNoTooltip] me quiera!" #NT!
  PODenthrall_desc_general: "Utilice el canto de sirena para obtener una opinión positiva y un gancho débil de una persona." #NT!
@@ -397,7 +397,7 @@
  musing_mortal: "Meditando" #NT!
  musing_mortal_desc_general: "Un plan feérico dirigido a un mortal que lo convertirá en parte del recurso de glamour del hada, lo que le permitirá devastar su glamour." #NT!
  musing_mortal_action: "Meditando" #NT!
- musing_interaction: "Reflexionando #weak (Esquema)#!" #NT!
+ musing_interaction: "Reflexionando #weak (Conjura)#!" #NT!
  musing_desc: "Recluta a [SCHEME.GetTarget.GetShortUINameNoTooltip] como soñador." #NT!
  musing_mortal_desc: "Recluta a [SCHEME.GetTarget.GetShortUINameNoTooltip] como soñador." #NT!
  musing_vampire_desc: "Recluta a [SCHEME.GetTarget.GetShortUINameNoTooltip] como soñador." #NT!
