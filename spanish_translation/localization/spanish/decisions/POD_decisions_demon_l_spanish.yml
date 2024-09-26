@@ -1,0 +1,100 @@
+﻿l_spanish:
+ POD_demon_demand_kill_pure_decision: "Demanda: Destruir lo puro" #NT!
+ POD_demon_demand_kill_pure_decision_tooltip: "Tu amo exige algo. Debes responder." #NT!
+ POD_demon_demand_kill_pure_decision_desc: "La pureza es un anatema para los demonios. Tu amo exige que demuestres tu devoción librando al mundo de un portador de luz." #NT!
+ POD_demon_demand_kill_pure_decision_confirm: "Hágase tu voluntad, maestro." #NT!
+ POD_demon_demand_kill_pure_decision_condition: "Mata a un cazador, un vampiro con el rasgo Golconda o un [GetTrait('kueijin').GetName( GetNullCharacter )] con alto dharma." #NT!
+  
+ POD_demon_demand_banish_rival_decision: "Demanda: Desterrar al rival" #NT!
+ POD_demon_demand_banish_rival_decision_tooltip: "Tu amo exige algo. Debes responder." #NT!
+ POD_demon_demand_banish_rival_decision_desc: "Los peores enemigos de los demonios son los de su propia especie. Tu maestro exige que un ángel caído rival sea desterrado de este mundo." #NT!
+ POD_demon_demand_banish_rival_decision_confirm: "Hágase tu voluntad, maestro." #NT!
+ POD_demon_demand_banish_rival_decision_condition: "Destierra un demonio al [abyss|E]." #NT!
+  
+ POD_demon_demand_prepare_bodies_decision: "Demanda: Preparar cuerpos" #NT!
+ POD_demon_demand_prepare_bodies_decision_tooltip: "Tu amo exige algo. Debes responder." #NT!
+ POD_demon_demand_prepare_bodies_decision_desc: "El ritual del alma destrozada permite que un demonio se manifieste brevemente en este lugar robando el cuerpo de un anfitrión voluntario (o no). Tu maestro quiere que se encuentren algunos "voluntarios"." #NT!
+ POD_demon_demand_prepare_bodies_decision_confirm: "Hágase tu voluntad, maestro." #NT!
+ POD_demon_demand_prepare_bodies_decision_condition: "Encarcelar #V 10#! caracteres." #NT!
+  
+ POD_demon_demand_bring_infernalist_decision: "Demanda: Traer Infernalista" #NT!
+ POD_demon_demand_bring_infernalist_decision_tooltip: "Tu amo exige algo. Debes responder." #NT!
+ POD_demon_demand_bring_infernalist_decision_desc: "Tu maestro ha elegido a [GetPlayer.MakeScope.GetVariable('to_infernalize').GetCharacter.GetFirstName] como un infernalista prometedor. Lleva a [GetPlayer.MakeScope.GetVariable('to_infernalize').GetCharacter.GetHerHim] a tu culto o encárgate de [GetPlayer.MakeScope.GetVariable('to_infernalize').GetCharacter.GetHerHim] antes de que [GetPlayer.MakeScope.GetVariable('to_infernalize').GetCharacter.GetSheHe] se convierta en tu rival." #NT!
+ POD_demon_demand_bring_infernalist_decision_confirm: "Hágase tu voluntad, maestro." #NT!
+ POD_demon_demand_bring_infernalist_decision_condition: "[GetPlayer.MakeScope.GetVariable('to_infernalize').GetCharacter.GetFirstName] debe tener una opinión positiva de ti o estará muerto." #NT!
+  
+ POD_demon_demand_corrupt_place_decision: "Demanda: Lugar Santo Corrupto" #NT!
+ POD_demon_demand_corrupt_place_decision_tooltip: "Tu amo exige algo. Debes responder." #NT!
+ POD_demon_demand_corrupt_place_decision_desc: "Los lugares sagrados son tabú para los demonios. Para que tengan vía libre, debes contaminarlos antes de que tu amo pueda interactuar libremente con ellos." #NT!
+ POD_demon_demand_corrupt_place_decision_confirm: "Hágase tu voluntad, maestro." #NT!
+  
+ corrupt_the_world_objective_decision: "Corromper el mundo"
+ corrupt_the_world_objective_decision_tooltip: "Tu poder está ligado a tu pecado. Es hora de corromper a algunos mortales."
+ corrupt_the_world_objective_decision_desc: "A medida que la Guerra avanzaba y los demonios aprendieron del vasto y sin explotar potencial para el mal en la Creación, la atracción se convirtió en deseo y la capacidad de controlar esos deseos se debilitó. Pronto, los Demonios recién nacidos se alimentaron de esos pecados y se convirtieron en encarnaciones vivientes de ellos."
+ corrupt_the_world_objective_decision_confirm: "Sinfonía pecaminosa"
+ corrupt_the_world_objective_decision_custom: "Cada [de_jure|E] [county|E] de tus [capital|E] [empire|E] ([THIS.Char.GetCapitalLocation.GetCounty.GetTitle.GetDeJureLiege.GetDeJureLiege.GetDeJureLiege.GetNameNoTier]) debe ser [THIS.Char.GetFaith.GetAdjective]"
+ unlock_lores_tooltip: "Desbloquea los [Concept('lore_lifestyle','Lores')|E], los poderes originales de los Ángeles, como árboles de estilo de vida."
+ unlock_breakdown_the_abyss_objective_decision: "Desbloquear $breakdown_the_abyss_objective_decision$ [decision|E]"
+ unlock_sin_trait_vassalization: "Permite vasallar a los gobernantes con el pecado [trait|E] correspondiente a su fe."
+ breakdown_the_abyss_objective_decision: "Fuga de la prisión abisal"
+ breakdown_the_abyss_objective_decision_tooltip: "Abrirás la prisión más importante que existe."
+ breakdown_the_abyss_objective_decision_desc: "El [abyss|E], también conocido como el Infierno o el Pozo, es la oscura dimensión de la oscuridad creada por Dios como prisión eterna para los Caídos. Eres uno de los pocos que escaparon, pero ¿qué podría pasar si todos tus pobres hermanos encarcelados hicieran lo mismo?"
+ breakdown_the_abyss_objective_decision_confirm: "¡Libertad por fin!"
+ unlock_final_war_objective_decision: "Desbloquear $final_war_objective_decision$ [decision|E]"
+ no_more_abyss_prison: "Ya no quedarás atrapado en el [abyss|E] cuando estés en estado espiritual."
+ allow_create_demon: "Podrás fabricar vasijas para otros [GetTrait('demon').GetName( GetPlayer )] y reclutarlos como invitados en tu corte."
+  
+ final_war_objective_decision: "Guerra final"
+ final_war_objective_decision_tooltip: "Comenzarás una segunda Guerra de Ira."
+ final_war_objective_decision_desc: "Dios le ha dado la espalda a la Creación, abandonándoos en este mundo miserable. Es hora de escupir en el rostro del Gran Traidor reduciendo esta abominación a cenizas de una vez por todas."
+ final_war_objective_decision_confirm: "El fin"
+ final_war_objective_decision_custom: "Comenzarás una guerra sin fin hasta que no haya ningún gobernante independiente sin infernalismo en el mapa."
+ final_war_cb_modifier: "Guerra final"
+  
+ POD_nephilim_decision: "Nefilim"
+ POD_nephilim_decision_desc: "Los descendientes de demonios y mujeres mortales, resultado de la experimentación realizada por Abaddon y Asmodeus. Fueron perseguidos y asesinados por Lucifer y sus seguidores demoníacos.\n\nSe desconoce si aún sobrevive algún Nephilim. Pero si pudieras encontrar a Abaddon, ahora ubicado en el Norte, o a Asmodeus, en el Este, o mejor, preguntarle a esos Nephilim muertos [GetTrait('ferryman').GetName( GetPlayer )] en el [underworld|E] reuniendo suficientes médiums para iniciar un ritual, entonces tal vez podrías ser el progenitor de una nueva raza de Nephilim..."
+ POD_nephilim_decision_tooltip: "Encontrarás las pistas necesarias para crear Nephilim de nuevo."
+ POD_nephilim_decision_confirm: "Los perdidos regresan..."
+ nephilim_decision_modifier: "Progenitor de los Nefilim"
+ nephilim_decision_modifier_desc: "Ahora tu anfitrión reproducirá [GetTrait('nephilim').GetName( GetPlayer )] en lugar de [GetTrait('laham').GetName( GetPlayer )]."
+ POD_nephilim_decision_custom: "Tu anfitrión [TARGET_CHARACTER.GetFirstName] debe estar casado y poder tener hijos, ya que [TARGET_CHARACTER.GetHerHis] niños se convertirán en tus hijos."
+  
+ demon_redemption_objective_decision: "Perdón divino"
+ demon_redemption_objective_decision_tooltip: "Tal vez, en algún lugar a lo lejos, aún persiste la esperanza."
+ demon_redemption_objective_decision_desc: "Los recuerdos de tu pasado como ángel te recordaron todo lo que perdiste durante la rebelión. Si Dios realmente es perdonador, ¿quizás todavía haya un lugar para ti en Su Ciudad Plateada?"
+ demon_redemption_objective_decision_confirm: "Por fin, la luz"
+ demon_redemption_objective_custom: "Esto pondrá fin a tu viaje, con suerte, en redención."
+ demon_redemption_tt1: "Renuncia a todas tus posesiones temporales."
+ demon_redemption_tt2: "Libera a tus esclavos."
+ demon_redemption_tt3: "Perjurad vuestra fe pecaminosa."
+ demon_redemption_tt4: "El tamaño de tu reino debe ser solo de un condado."
+ demon_redemption_tt5: "Apacigua tu resentimiento infernal."
+ demon_redemption_tt6: "Tienes #V 0#! Tormento ([GetTrait('demon').GetName(GetPlayer)] [trait_level_track_xp|E])"
+  
+ restore_babylon_objective_decision: "Restaurar Babilonia"
+ restore_babylon_objective_decision_tooltip: "Colgando tus jardines."
+ restore_babylon_objective_decision_desc: "Fue una época de imperios salvajes y guerras santas, de héroes bendecidos (o maldecidos) por los dioses vivientes y de rituales inefables realizados ante ídolos de oro, basalto y jade. Cuando los Encadenados se enfrentaron, los ejércitos de los fieles marcharon. La tierra tembló y los cielos llovieron sangre, y ciudades enteras fueron pasadas a espada. Era Babilonia y era el Infierno en la Tierra."
+ restore_babylon_objective_decision_confirm: "Tiempos gloriosos"
+ restore_babylon_objective_decision_effect_tooltip: "Permite vasallar a los gobernantes [GetTrait('demon').GetName( GetPlayer )] y [GetTrait('infernalist').GetName( GetPlayer )]."
+  
+ sin_dragon_objective_decision: "Dragón del pecado primordial"
+ sin_dragon_objective_decision_tooltip: "Captura el pecado."
+ sin_dragon_objective_decision_desc: "Invocados por la esperanza menguante de mortales antaño piadosos, siete grandes dragones esperan a una encarnación digna de su pecado para que los reclame. ¿Serás tú ese modelo impío?"
+ sin_dragon_objective_decision_confirm: "Primordial despertado."
+ sin_dragon_objective_decision_effect_tooltip: "Como [character_interaction|E], te permite invocar un Dragón del Pecado correspondiente a tu [faith|E] como #bold no reclutable#! evento [men_at_arms|E] durante una guerra."
+ unlock_sin_conversion_decision: "Desbloquear $sin_conversion_decision$ [decision|E]"
+ sin_dragon_trainer_modifier: "Entrenador del Dragón del Pecado"
+  
+ overthrow_heaven_objective_decision: "Una nueva génesis" #NT!
+ overthrow_heaven_objective_decision_desc: "Dios creó a la humanidad con una chispa de su divinidad en ella. Si convirtieras a suficientes mortales a tu adoración en lugar de a la suya, ¿cuál sería la diferencia entre tú y Él? Y entonces, ¿quizá sería el momento de rehacer este mundo a tu imagen?" #NT!
+ overthrow_heaven_objective_decision_tooltip: "Orarán, vivirán y morirán en tu nombre." #NT!
+ overthrow_heaven_objective_decision_confirm: "Vamos a empezar..." #NT!
+ overthrow_heaven_objective_decision_custom: "Cada [county|E] de tus [realm|E] debe ser [THIS.Char.GetFaith.GetAdjective]" #NT!
+  
+ demonic_knowledge_objective_decsion: "Árbol demoníaco del conocimiento" #NT!
+ demonic_knowledge_objective_decsion_desc: "El tiempo que pasaste en la Prisión Abisal te hizo muy consciente de las limitaciones de tu conocimiento. Al parecer, el plan de Dios era mucho más complejo de lo que jamás imaginaste. Desde entonces te atormenta el ansia de saber más. Es hora de saciar ese anhelo." #NT!
+ demonic_knowledge_objective_decsion_tooltip: "¿Puedo realmente comprender lo Divino?" #NT!
+ demonic_knowledge_objective_decsion_confirm: "El fruto prohibido, comido." #NT!
+  
+  
+  

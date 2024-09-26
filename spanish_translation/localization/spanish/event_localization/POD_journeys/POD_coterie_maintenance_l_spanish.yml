@@ -1,35 +1,35 @@
 ﻿l_spanish:
   
- POD_coterie_maintenance.1.t: "Fundando un [ROOT.Char.Custom('PODCoterieNoTooltip')]" #NT!
- POD_coterie_maintenance.1.desc: "Últimamente, he estado contemplando los beneficios de trabajar con un equipo.\n\nLa confianza es difícil de conseguir en este [world_of_darkness|E], pero ¿eso significa que tengo que pasar el resto de mi existencia como un lobo solitario, sin nadie que luche a mi lado o apoye mis esfuerzos?\n\nSi tuviera que crear un [ROOT.Char.Custom('PODCoterie')] de individuos con ideas afines, podríamos unir nuestras habilidades y recursos para el futuro [journeys|E]." #NT!
- POD_coterie_maintenance.1.option.a: "Crearé un nuevo [ROOT.Char.Custom('PODCoterieNoTooltip')]." #NT!
- POD_coterie_maintenance.1.option.b: "No quiero crear un [ROOT.Char.Custom('PODCoterieNoTooltip')] en este momento." #NT!
+ POD_coterie_maintenance.1.t: "Fundando un [ROOT.Char.Custom('PODCoterieNoTooltip')]"
+ POD_coterie_maintenance.1.desc: "Últimamente, he estado contemplando los beneficios de trabajar con un equipo.\n\nLa confianza es difícil de conseguir en este [world_of_darkness|E], pero ¿eso significa que tengo que pasar el resto de mi existencia como un lobo solitario, sin nadie que luche a mi lado o apoye mis esfuerzos?\n\nSi tuviera que crear un [ROOT.Char.Custom('PODCoterie')] de individuos con ideas afines, podríamos unir nuestras habilidades y recursos para el futuro [journeys|E]."
+ POD_coterie_maintenance.1.option.a: "Crearé un nuevo [ROOT.Char.Custom('PODCoterieNoTooltip')]."
+ POD_coterie_maintenance.1.option.b: "No quiero crear un [ROOT.Char.Custom('PODCoterieNoTooltip')] en este momento."
   
- POD_coterie_maintenance.2.t: "Nombrando mi [ROOT.Char.Custom('PODCoterieNoTooltip')]" #NT!
- POD_coterie_maintenance.2.desc: "¿Cuál debería ser el nombre de tu [ROOT.Char.Custom('PODCoterie')]?\n\nPuedes cambiar esto en cualquier momento en el futuro." #NT!
- POD_coterie_maintenance.2.option.a: "Elige este nombre." #NT!
- POD_coterie_maintenance.2.option.b: "Quédate con el nombre predeterminado #italic ($POD_coteriename_canon$)#!." #NT!
+ POD_coterie_maintenance.2.t: "Nombrando mi [ROOT.Char.Custom('PODCoterieNoTooltip')]"
+ POD_coterie_maintenance.2.desc: "¿Cuál debería ser el nombre de tu [ROOT.Char.Custom('PODCoterie')]?\n\nPuedes cambiar esto en cualquier momento en el futuro."
+ POD_coterie_maintenance.2.option.a: "Elige este nombre."
+ POD_coterie_maintenance.2.option.b: "Quédate con el nombre predeterminado #italic ($POD_coteriename_canon$)#!."
   
- POD_coterie_maintenance.10.t: "Otro que muerde el polvo" #NT!
- POD_coterie_maintenance.10.desc: "$POD_player_coterie$ ha perdido un miembro.\n\n[dead_member.GetFirstNameNicknamed] [dead_member.GetDeathReason]." #NT!
- POD_coterie_maintenance.10.option.a: "Nuestro [ROOT.Char.Custom('PODCoterieNoTooltip')] se está encogiendo." #NT!
+ POD_coterie_maintenance.10.t: "Otro que muerde el polvo"
+ POD_coterie_maintenance.10.desc: "$POD_player_coterie$ ha perdido un miembro.\n\n[dead_member.GetFirstNameNicknamed] [dead_member.GetDeathReason]."
+ POD_coterie_maintenance.10.option.a: "Nuestro [ROOT.Char.Custom('PODCoterieNoTooltip')] se está encogiendo."
   
- POD_coterie_maintenance.20.t: "Un [ROOT.Char.Custom('PODCoterieNoTooltip')] a considerar" #NT!
- POD_coterie_maintenance.20.desc: "Como sucesor de [dead_member.GetFirstNameNicknamed], tengo la opción de unirme a [dead_member.GetHerHis] [dead_member.Custom('PODCoterie')], [coterie.Custom('PODGetCoterieNameFromStory')]." #NT!
- POD_coterie_maintenance.20.desc.2: "Como ya soy miembro de $POD_player_coterie$, también necesito decidir qué hacer con él." #NT!
- POD_coterie_maintenance.20.option.a: "Me uniré a #bold #! [coterie.Custom('PODGetCoterieNameFromStory')]." #NT!
- POD_coterie_maintenance.20.option.a.tt: "Te unirás a tu predecesor [dead_member.GetFirstNameNicknamedPossessive] [dead_member.Custom('PODCoterie')], [coterie.Custom('PODGetCoterieNameFromStory')]." #NT!
- POD_coterie_maintenance.20.option.b: "Voy a #bold disolver#! [coterie.Custom('PODGetCoterieNameFromStory')]." #NT!
- POD_coterie_maintenance.20.option.b.tt: "Disolverás a tu predecesor [dead_member.GetFirstNameNicknamedPossessive] [dead_member.Custom('PODCoterie')], [coterie.Custom('PODGetCoterieNameFromStory')]." #NT!
- POD_coterie_maintenance.20.option.c: "No haré nada." #NT!
- POD_coterie_maintenance.20.option.c.tt: "No te unirás a tu predecesor [dead_member.GetFirstNameNicknamedPossessive] [dead_member.Custom('PODCoterie')], [coterie.Custom('PODGetCoterieNameFromStory')], pero seguirá existiendo." #NT!
- POD_coterie_maintenance.20.option.d: "#bold Únete a#! [coterie.Custom('PODGetCoterieNameFromStory')] y sal [ROOT.Char.Custom('PODGetCoterieName')]." #NT!
- POD_coterie_maintenance.20.option.e: "#bold se unen#! [coterie.Custom('PODGetCoterieNameFromStory')] y #bold se disuelven#! [ROOT.Char.Custom('PODGetCoterieName')]." #NT!
- POD_coterie_maintenance.20.option.f: "#bold Disolver#! [coterie.Custom('PODGetCoterieNameFromStory')] y quedarse en [ROOT.Char.Custom('PODGetCoterieName')]." #NT!
- POD_coterie_maintenance.20.option.g: "Quédate en [ROOT.Char.Custom('PODGetCoterieName')]." #NT!
+ POD_coterie_maintenance.20.t: "Un [ROOT.Char.Custom('PODCoterieNoTooltip')] a considerar"
+ POD_coterie_maintenance.20.desc: "Como sucesor de [dead_member.GetFirstNameNicknamed], tengo la opción de unirme a [dead_member.GetHerHis] [dead_member.Custom('PODCoterie')], [coterie.Custom('PODGetCoterieNameFromStory')]."
+ POD_coterie_maintenance.20.desc.2: "Como ya soy miembro de $POD_player_coterie$, también necesito decidir qué hacer con él."
+ POD_coterie_maintenance.20.option.a: "Me uniré a #bold #! [coterie.Custom('PODGetCoterieNameFromStory')]."
+ POD_coterie_maintenance.20.option.a.tt: "Te unirás a tu predecesor [dead_member.GetFirstNameNicknamedPossessive] [dead_member.Custom('PODCoterie')], [coterie.Custom('PODGetCoterieNameFromStory')]."
+ POD_coterie_maintenance.20.option.b: "Voy a #bold disolver#! [coterie.Custom('PODGetCoterieNameFromStory')]."
+ POD_coterie_maintenance.20.option.b.tt: "Disolverás a tu predecesor [dead_member.GetFirstNameNicknamedPossessive] [dead_member.Custom('PODCoterie')], [coterie.Custom('PODGetCoterieNameFromStory')]."
+ POD_coterie_maintenance.20.option.c: "No haré nada."
+ POD_coterie_maintenance.20.option.c.tt: "No te unirás a tu predecesor [dead_member.GetFirstNameNicknamedPossessive] [dead_member.Custom('PODCoterie')], [coterie.Custom('PODGetCoterieNameFromStory')], pero seguirá existiendo."
+ POD_coterie_maintenance.20.option.d: "#bold Únete a#! [coterie.Custom('PODGetCoterieNameFromStory')] y sal [ROOT.Char.Custom('PODGetCoterieName')]."
+ POD_coterie_maintenance.20.option.e: "#bold se unen#! [coterie.Custom('PODGetCoterieNameFromStory')] y #bold se disuelven#! [ROOT.Char.Custom('PODGetCoterieName')]."
+ POD_coterie_maintenance.20.option.f: "#bold Disolver#! [coterie.Custom('PODGetCoterieNameFromStory')] y quedarse en [ROOT.Char.Custom('PODGetCoterieName')]."
+ POD_coterie_maintenance.20.option.g: "Quédate en [ROOT.Char.Custom('PODGetCoterieName')]."
   
- POD_coterie_maintenance.30.t: "Descontento creciente" #NT!
- POD_coterie_maintenance.30.desc: "Es cierto que [potential_rival.GetFirstNameNicknamed] y yo no hemos estado en los mejores términos últimamente.\n\nAnoche [potential_rival.GetSheHe] me confrontó, diciendo que si las cosas no mejoran, [potential_rival.GetSheHe] va a dejar $POD_player_coterie$." #NT!
- POD_coterie_maintenance.30.option.a: "No es demasiado tarde para resolver nuestras diferencias." #NT!
- POD_coterie_maintenance.30.option.a.tt: "Si [potential_rival.GetFirstName] sigue en #N [EmptyScope.ScriptValue('coterie_rivalry_opinion')]#! [opinion|E] o menos en #V 3 meses#!, [potential_rival.GetSheHe] dejará $POD_player_coterie$ y se convertirá en tu [rival|E]." #NT!
- POD_coterie_maintenance.30.option.b: "¿Quieres irte? Entonces vete." #NT!
+ POD_coterie_maintenance.30.t: "Descontento creciente"
+ POD_coterie_maintenance.30.desc: "Es cierto que [potential_rival.GetFirstNameNicknamed] y yo no hemos estado en los mejores términos últimamente.\n\nAnoche [potential_rival.GetSheHe] me confrontó, diciendo que si las cosas no mejoran, [potential_rival.GetSheHe] va a dejar $POD_player_coterie$."
+ POD_coterie_maintenance.30.option.a: "No es demasiado tarde para resolver nuestras diferencias."
+ POD_coterie_maintenance.30.option.a.tt: "Si [potential_rival.GetFirstName] sigue en #N [EmptyScope.ScriptValue('coterie_rivalry_opinion')]#! [opinion|E] o menos en #V 3 meses#!, [potential_rival.GetSheHe] dejará $POD_player_coterie$ y se convertirá en tu [rival|E]."
+ POD_coterie_maintenance.30.option.b: "¿Quieres irte? Entonces vete."

@@ -1,868 +1,868 @@
 ﻿l_spanish:
- game_concept_realm_lifestyle: "Reino" #NT!
- game_concept_realm_lifestyle_desc: "Los seis aspectos del mundo con los que los kithain tienen afinidades, que se aplican directamente a quién o a qué puedes afectar. Sin conocer los reinos adecuados, un kithain no puede afectar nada. Los reinos son una parte necesaria para lanzar un [cantrip|E]." #NT!
+ game_concept_realm_lifestyle: "Reino"
+ game_concept_realm_lifestyle_desc: "Los seis aspectos del mundo con los que los kithain tienen afinidades, que se aplican directamente a quién o a qué puedes afectar. Sin conocer los reinos adecuados, un kithain no puede afectar nada. Los reinos son una parte necesaria para lanzar un [cantrip|E]."
   
- realm_lifestyle_name: "Reino" #NT!
- realm_lifestyle_desc: "Centrarse en aspectos del mundo con los que los kithain tienen afinidades." #NT!
- realm_lifestyle_highlight_desc: "Gracias a tu Glamour, ganas #P [GetPlayer.Custom('GetGlamourLifestylePercentageBoost')]#! más [experience|E] en este Estilo de Vida." #NT!
- monthly_realm_lifestyle_xp_gain_mult: "Reino mensual [lifestyle|E] [experience|E]" #NT!
+ realm_lifestyle_name: "Reino"
+ realm_lifestyle_desc: "Centrarse en aspectos del mundo con los que los kithain tienen afinidades."
+ realm_lifestyle_highlight_desc: "Gracias a tu Glamour, ganas #P [GetPlayer.Custom('GetGlamourLifestylePercentageBoost')]#! más [experience|E] en este Estilo de Vida."
+ monthly_realm_lifestyle_xp_gain_mult: "Reino mensual [lifestyle|E] [experience|E]"
   
- realm_actor_focus: "Enfoque en el actor" #NT!
- realm_actor_focus_modifier: "[GetFocus('realm_actor_focus').GetName]" #NT!
- realm_actor_focus_desc: "El actor es el reino conectado a todos los seres del mundo, con una correlación directa con lo bien que los conoces." #NT!
- realm_actor_focus_effect_desc: "Centrándose en las subvenciones para actores:" #NT!
+ realm_actor_focus: "Enfoque en el actor"
+ realm_actor_focus_modifier: "[GetFocus('realm_actor_focus').GetName]"
+ realm_actor_focus_desc: "El actor es el reino conectado a todos los seres del mundo, con una correlación directa con lo bien que los conoces."
+ realm_actor_focus_effect_desc: "Centrándose en las subvenciones para actores:"
   
- realm_fae_focus: "Enfoque de hadas" #NT!
- realm_fae_focus_modifier: "[GetFocus('realm_fae_focus').GetName]" #NT!
- realm_fae_focus_desc: "Los Fae tratan con otros seres del [dreaming|E]. Afectar a otros Changelings, a los Nobles Sidhe, a los Adhene, a las Quimeras o incluso controlar la magia de los Changelings en sí, todo esto cae dentro del ámbito de los Fae." #NT!
- realm_fae_focus_effect_desc: "Centrándose en las subvenciones de Fae:" #NT!
+ realm_fae_focus: "Enfoque de hadas"
+ realm_fae_focus_modifier: "[GetFocus('realm_fae_focus').GetName]"
+ realm_fae_focus_desc: "Los Fae tratan con otros seres del [dreaming|E]. Afectar a otros Changelings, a los Nobles Sidhe, a los Adhene, a las Quimeras o incluso controlar la magia de los Changelings en sí, todo esto cae dentro del ámbito de los Fae."
+ realm_fae_focus_effect_desc: "Centrándose en las subvenciones de Fae:"
   
- realm_prop_focus: "Enfoque de apoyo" #NT!
- realm_prop_focus_modifier: "[GetFocus('realm_prop_focus').GetName]" #NT!
- realm_prop_focus_desc: "Los objetos son el control y la manipulación de todos los objetos creados. Cuanto más complicado sea el dispositivo, más dominio del ámbito de los objetos se requiere." #NT!
- realm_prop_focus_effect_desc: "Centrándose en las subvenciones Prop:" #NT!
+ realm_prop_focus: "Enfoque de apoyo"
+ realm_prop_focus_modifier: "[GetFocus('realm_prop_focus').GetName]"
+ realm_prop_focus_desc: "Los objetos son el control y la manipulación de todos los objetos creados. Cuanto más complicado sea el dispositivo, más dominio del ámbito de los objetos se requiere."
+ realm_prop_focus_effect_desc: "Centrándose en las subvenciones Prop:"
   
- realm_nature_focus: "Enfoque en la naturaleza" #NT!
- realm_nature_focus_modifier: "[GetFocus('realm_nature_focus').GetName]" #NT!
- realm_nature_focus_desc: "La naturaleza es el control de las plantas, la tierra y los animales. Todo lo que no ha sido tocado por la creación se presta a ser controlado por el reino de la naturaleza." #NT!
- realm_nature_focus_effect_desc: "Subvenciones Centrándose en la Naturaleza:" #NT!
+ realm_nature_focus: "Enfoque en la naturaleza"
+ realm_nature_focus_modifier: "[GetFocus('realm_nature_focus').GetName]"
+ realm_nature_focus_desc: "La naturaleza es el control de las plantas, la tierra y los animales. Todo lo que no ha sido tocado por la creación se presta a ser controlado por el reino de la naturaleza."
+ realm_nature_focus_effect_desc: "Subvenciones Centrándose en la Naturaleza:"
   
- realm_scene_focus: "Enfoque de la escena" #NT!
- realm_scene_focus_modifier: "[GetFocus('realm_scene_focus').GetName]" #NT!
- realm_scene_focus_desc: "La escena es el control del espacio. Cuanto más domines el reino de la escena, mayor será el área o más objetivos (junto con otros reinos) que podrás afectar." #NT!
- realm_scene_focus_effect_desc: "Centrándose en las subvenciones de Scene:" #NT!
+ realm_scene_focus: "Enfoque de la escena"
+ realm_scene_focus_modifier: "[GetFocus('realm_scene_focus').GetName]"
+ realm_scene_focus_desc: "La escena es el control del espacio. Cuanto más domines el reino de la escena, mayor será el área o más objetivos (junto con otros reinos) que podrás afectar."
+ realm_scene_focus_effect_desc: "Centrándose en las subvenciones de Scene:"
   
- realm_time_focus: "Enfoque temporal" #NT!
- realm_time_focus_modifier: "[GetFocus('realm_time_focus').GetName]" #NT!
- realm_time_focus_desc: "El tiempo es el control de cuándo se realizarán tus hechizos o cuánto durarán. El dominio del tiempo dicta la duración de tus hechizos o cuánto tiempo puedes activar un "disparador" sobre ellos." #NT!
- realm_time_focus_effect_desc: "Subvenciones Centrándose en el Tiempo:" #NT!
+ realm_time_focus: "Enfoque temporal"
+ realm_time_focus_modifier: "[GetFocus('realm_time_focus').GetName]"
+ realm_time_focus_desc: "El tiempo es el control de cuándo se realizarán tus hechizos o cuánto durarán. El dominio del tiempo dicta la duración de tus hechizos o cuánto tiempo puedes activar un "disparador" sobre ellos."
+ realm_time_focus_effect_desc: "Subvenciones Centrándose en el Tiempo:"
   
- GAINS_REALM_LIFESTYLE_XP: "Ganancias $VALUE|V0$ [realm_lifestyle|E] Experiencia" #NT!
- GAINED_REALM_LIFESTYLE_XP: "Obtuvo $VALUE|V0$ [realm_lifestyle|E] Experiencia" #NT!
- I_GAIN_REALM_LIFESTYLE_XP: "Obtienes $VALUE|V0$ [realm_lifestyle|E] de experiencia" #NT!
- I_GAINED_REALM_LIFESTYLE_XP: "Ganaste $VALUE|V0$ [realm_lifestyle|E] Experiencia" #NT!
- TARGET_GAINS_REALM_LIFESTYLE_XP: "[CHARACTER.GetShortUIName] gana $VALUE|V0$ [realm_lifestyle|E] experiencia" #NT!
- TARGET_GAINED_REALM_LIFESTYLE_XP: "[CHARACTER.GetShortUIName] ganado $VALUE|V0$ [realm_lifestyle|E] Experiencia" #NT!
+ GAINS_REALM_LIFESTYLE_XP: "Ganancias $VALUE|V0$ [realm_lifestyle|E] Experiencia"
+ GAINED_REALM_LIFESTYLE_XP: "Obtuvo $VALUE|V0$ [realm_lifestyle|E] Experiencia"
+ I_GAIN_REALM_LIFESTYLE_XP: "Obtienes $VALUE|V0$ [realm_lifestyle|E] de experiencia"
+ I_GAINED_REALM_LIFESTYLE_XP: "Ganaste $VALUE|V0$ [realm_lifestyle|E] Experiencia"
+ TARGET_GAINS_REALM_LIFESTYLE_XP: "[CHARACTER.GetShortUIName] gana $VALUE|V0$ [realm_lifestyle|E] experiencia"
+ TARGET_GAINED_REALM_LIFESTYLE_XP: "[CHARACTER.GetShortUIName] ganado $VALUE|V0$ [realm_lifestyle|E] Experiencia"
   
- GAINS_A_REALM_LIFESTYLE_PERKPOINT: "Ganancias $VALUE|V0$ [realm_lifestyle|E] [perk|E] Desbloquear" #NT!
- GAINED_A_REALM_LIFESTYLE_PERKPOINT: "Obtenido $VALUE|V0$ [realm_lifestyle|E] [perk|E] Desbloquear" #NT!
- I_GAIN_A_REALM_LIFESTYLE_PERKPOINT: "Obtienes $VALUE|V0$ [realm_lifestyle|E] [perk|E] Desbloquear" #NT!
- I_GAINED_A_REALM_LIFESTYLE_PERKPOINT: "Ganaste $VALUE|V0$ [realm_lifestyle|E] [perk|E] Desbloquear" #NT!
- TARGET_GAINS_A_REALM_LIFESTYLE_PERKPOINT: "[CHARACTER.GetShortUIName] gana $VALUE|V0$ [realm_lifestyle|E] [perk|E] Desbloquea" #NT!
- TARGET_GAINED_A_REALM_LIFESTYLE_PERKPOINT: "[CHARACTER.GetShortUIName] ganado $VALUE|V0$ [realm_lifestyle|E] [perk|E] Desbloquear" #NT!
+ GAINS_A_REALM_LIFESTYLE_PERKPOINT: "Ganancias $VALUE|V0$ [realm_lifestyle|E] [perk|E] Desbloquear"
+ GAINED_A_REALM_LIFESTYLE_PERKPOINT: "Obtenido $VALUE|V0$ [realm_lifestyle|E] [perk|E] Desbloquear"
+ I_GAIN_A_REALM_LIFESTYLE_PERKPOINT: "Obtienes $VALUE|V0$ [realm_lifestyle|E] [perk|E] Desbloquear"
+ I_GAINED_A_REALM_LIFESTYLE_PERKPOINT: "Ganaste $VALUE|V0$ [realm_lifestyle|E] [perk|E] Desbloquear"
+ TARGET_GAINS_A_REALM_LIFESTYLE_PERKPOINT: "[CHARACTER.GetShortUIName] gana $VALUE|V0$ [realm_lifestyle|E] [perk|E] Desbloquea"
+ TARGET_GAINED_A_REALM_LIFESTYLE_PERKPOINT: "[CHARACTER.GetShortUIName] ganado $VALUE|V0$ [realm_lifestyle|E] [perk|E] Desbloquear"
   
- REALM_LIFESTYLE_PERK_POINTS_TRIGGER: "Puntos de beneficio de estilo de vida de Realm: $NUM|V0$" #NT!
+ REALM_LIFESTYLE_PERK_POINTS_TRIGGER: "Puntos de beneficio de estilo de vida de Realm: $NUM|V0$"
   
- full_realm_actor_tooltip: "Obtendrás el árbol completo del Reino del Actor." #NT!
- full_realm_fae_tooltip: "Obtendrás el árbol completo del Reino de las Hadas." #NT!
- full_realm_prop_tooltip: "Obtendrás el árbol Prop Realm completo." #NT!
- full_realm_nature_tooltip: "Obtendrás el árbol completo del Reino de la Naturaleza." #NT!
- full_realm_scene_tooltip: "Obtendrás el árbol Scene Realm completo." #NT!
- full_realm_time_tooltip: "Obtendrás el árbol del Reino del Tiempo completo." #NT!
+ full_realm_actor_tooltip: "Obtendrás el árbol completo del Reino del Actor."
+ full_realm_fae_tooltip: "Obtendrás el árbol completo del Reino de las Hadas."
+ full_realm_prop_tooltip: "Obtendrás el árbol Prop Realm completo."
+ full_realm_nature_tooltip: "Obtendrás el árbol completo del Reino de la Naturaleza."
+ full_realm_scene_tooltip: "Obtendrás el árbol Scene Realm completo."
+ full_realm_time_tooltip: "Obtendrás el árbol del Reino del Tiempo completo."
   
- realm_actor_visible: "Actor" #NT!
- realm_fae_visible: "Hadas" #NT!
- realm_prop_visible: "Apuntalar" #NT!
- realm_nature_visible: "Naturaleza" #NT!
- realm_scene_visible: "Escena" #NT!
- realm_time_visible: "Tiempo" #NT!
+ realm_actor_visible: "Actor"
+ realm_fae_visible: "Hadas"
+ realm_prop_visible: "Apuntalar"
+ realm_nature_visible: "Naturaleza"
+ realm_scene_visible: "Escena"
+ realm_time_visible: "Tiempo"
   
- realm_actor_1_perk_name: "Verdadero amigo" #NT!
- realm_actor_2_perk_name: "Contacto personal" #NT!
- realm_actor_3_perk_name: "Cara conocida" #NT!
- realm_actor_4_perk_name: "Completo extraño" #NT!
- realm_actor_5_perk_name: "Enemigo terrible" #NT!
- realm_fae_1_perk_name: "Plebeyo cordial" #NT!
- realm_fae_2_perk_name: "Noble altivo" #NT!
- realm_fae_3_perk_name: "Quimera múltiple" #NT!
- realm_fae_4_perk_name: "El esquivo Gallain" #NT!
- realm_fae_5_perk_name: "Dweomer del glamour" #NT!
- realm_prop_1_perk_name: "Atuendo adornado" #NT!
- realm_prop_2_perk_name: "Herramienta elaborada" #NT!
- realm_prop_3_perk_name: "Dispositivo mecánico" #NT!
- realm_prop_4_perk_name: "Maquina compleja" #NT!
- realm_prop_5_perk_name: "Artefacto arcano" #NT!
- realm_nature_1_perk_name: "Materia prima" #NT!
- realm_nature_2_perk_name: "Bosque verde" #NT!
- realm_nature_3_perk_name: "Animal salvaje" #NT!
- realm_nature_4_perk_name: "Fenomenos naturales" #NT!
- realm_nature_5_perk_name: "Elemento base" #NT!
- realm_scene_1_perk_name: "Paseo del día" #NT!
- realm_scene_2_perk_name: "Viajero" #NT!
- realm_scene_3_perk_name: "Peregrinaje" #NT!
- realm_scene_4_perk_name: "Viaje" #NT!
- realm_scene_5_perk_name: "Mundano" #NT!
- realm_time_1_perk_name: "Triple" #NT!
- realm_time_2_perk_name: "Arenas suspendidas" #NT!
- realm_time_3_perk_name: "Desencadenante fatídico" #NT!
- realm_time_4_perk_name: "Ecos brillantes" #NT!
- realm_time_5_perk_name: "Renovación gloriosa" #NT!
+ realm_actor_1_perk_name: "Verdadero amigo"
+ realm_actor_2_perk_name: "Contacto personal"
+ realm_actor_3_perk_name: "Cara conocida"
+ realm_actor_4_perk_name: "Completo extraño"
+ realm_actor_5_perk_name: "Enemigo terrible"
+ realm_fae_1_perk_name: "Plebeyo cordial"
+ realm_fae_2_perk_name: "Noble altivo"
+ realm_fae_3_perk_name: "Quimera múltiple"
+ realm_fae_4_perk_name: "El esquivo Gallain"
+ realm_fae_5_perk_name: "Dweomer del glamour"
+ realm_prop_1_perk_name: "Atuendo adornado"
+ realm_prop_2_perk_name: "Herramienta elaborada"
+ realm_prop_3_perk_name: "Dispositivo mecánico"
+ realm_prop_4_perk_name: "Maquina compleja"
+ realm_prop_5_perk_name: "Artefacto arcano"
+ realm_nature_1_perk_name: "Materia prima"
+ realm_nature_2_perk_name: "Bosque verde"
+ realm_nature_3_perk_name: "Animal salvaje"
+ realm_nature_4_perk_name: "Fenomenos naturales"
+ realm_nature_5_perk_name: "Elemento base"
+ realm_scene_1_perk_name: "Paseo del día"
+ realm_scene_2_perk_name: "Viajero"
+ realm_scene_3_perk_name: "Peregrinaje"
+ realm_scene_4_perk_name: "Viaje"
+ realm_scene_5_perk_name: "Mundano"
+ realm_time_1_perk_name: "Triple"
+ realm_time_2_perk_name: "Arenas suspendidas"
+ realm_time_3_perk_name: "Desencadenante fatídico"
+ realm_time_4_perk_name: "Ecos brillantes"
+ realm_time_5_perk_name: "Renovación gloriosa"
   
- REALM_ACTOR_1_PERK_EFFECT: "Ahora puedes lanzar [cantrips|E] sobre un miembro de la casa [friend|E], [lover|E], [courtier|E], [direct_vassal|E], un personaje en el que tengas un fuerte [title_claim|E] o [strong_hook|E], o un personaje cuyo criminal [secret|E] conozcas.\nAdemás, el personaje no debe tener ninguna mala relación [war|E] o [truce|E] contigo ni estar encarcelado por ti." #NT!
- REALM_ACTOR_2_PERK_EFFECT: "Ahora puedes lanzar [cantrips|E] sobre un [friend|E], [lover|E], [courtier|E], [guest|E], [vassal|E], [liege|E], miembro de la dinastía, un personaje en el que tengas un [title_claim|E] o [hook|E], o un personaje cuyo [secret|E] conozcas.\nAdemás, el personaje no debe tener ninguna mala relación, [friend|E]0 o [friend|E]1 contigo o ser encarcelado por ti." #NT!
- REALM_ACTOR_3_PERK_EFFECT: "Ahora puedes lanzar [cantrips|E] sobre un personaje con cualquier buena relación, [courtier|E], [guest|E], [vassal|E], [liege|E], miembro de la dinastía, [ally|E], un personaje sobre el que tengas derecho o [hook|E], o un personaje cuyo [secret|E] conozcas.\nAdemás, el personaje no debe tener ninguna mala relación o [war|E] contigo." #NT!
- REALM_ACTOR_4_PERK_EFFECT: "Ahora puedes lanzar [cantrips|E] a cualquier personaje siempre y cuando no sea [rival|E] o [war|E]." #NT!
- REALM_ACTOR_5_PERK_EFFECT: "Ahora puedes lanzar [cantrips|E] a cualquier personaje, incluso un [rival|E] o durante un [war|E]." #NT!
- REALM_FAE_1_PERK_EFFECT: "Ahora puedes lanzar [cantrips|E] sobre seres sobrenaturales menores o mortales con poderes menores." #NT!
- REALM_FAE_2_PERK_EFFECT: "Ahora puedes lanzar [cantrips|E] sobre los Changelings." #NT!
- REALM_FAE_3_PERK_EFFECT: "Ahora puedes lanzar [cantrips|E] en Fae." #NT!
- REALM_FAE_4_PERK_EFFECT: "Ahora puedes lanzar [cantrips|E] a la mayoría de los seres sobrenaturales o mortales con poderes poderosos." #NT!
- REALM_FAE_5_PERK_EFFECT: "Ahora puedes lanzar [cantrips|E] incluso a los sobrenaturales más raros." #NT!
- REALM_PROP_1_PERK_EFFECT: "Ahora puedes lanzar [cantrips|E] sobre artefactos comunes/de obra maestra misceláneos/de la corte." #NT!
- REALM_PROP_2_PERK_EFFECT: "Ahora puedes lanzar [cantrips|E] en artefactos comunes y de obra maestra." #NT!
- REALM_PROP_3_PERK_EFFECT: "Ahora puedes lanzar [cantrips|E] sobre artefactos ilustres o famosos que no sean únicos." #NT!
- REALM_PROP_4_PERK_EFFECT: "Ahora puedes lanzar [cantrips|E] sobre artefactos famosos únicos." #NT!
- REALM_PROP_5_PERK_EFFECT: "Ahora puedes lanzar [cantrips|E] en artefactos ilustres únicos." #NT!
- REALM_NATURE_1_PERK_EFFECT: "Puede lanzar [cantrips|E] sobre materiales orgánicos no vivos." #NT!
- REALM_NATURE_2_PERK_EFFECT: "Puede lanzar [cantrips|E] sobre material vegetal vivo y orgánico." #NT!
- REALM_NATURE_3_PERK_EFFECT: "Puede lanzar [cantrips|E] sobre animales vivos, no sensibles." #NT!
- REALM_NATURE_4_PERK_EFFECT: "Puede lanzar [cantrips|E] sobre fenómenos naturales." #NT!
- REALM_NATURE_5_PERK_EFFECT: "Puede lanzar [cantrips|E] sobre elementos naturales en forma pura." #NT!
- REALM_SCENE_1_PERK_EFFECT: "Ahora puedes lanzar [cantrips|E] sobre un personaje que se encuentre aproximadamente a un reino pequeño de distancia (por ejemplo: Gales de arriba a abajo).\nPuedes lanzar un área [cantrips|E] a escala de condado." #NT!
- REALM_SCENE_2_PERK_EFFECT: "Ahora puedes lanzar [cantrips|E] sobre un personaje que se encuentre aproximadamente a un reino medio de distancia (ejemplo: Irlanda de arriba a abajo).\nPuedes lanzar un área [cantrips|E] en una escala de ducado." #NT!
- REALM_SCENE_3_PERK_EFFECT: "Ahora puedes lanzar [cantrips|E] sobre un personaje que se encuentre aproximadamente a un gran reino de distancia (ejemplo: Francia de arriba a abajo).\nPuedes lanzar un área [cantrips|E] a escala de reino." #NT!
- REALM_SCENE_4_PERK_EFFECT: "Ahora puedes lanzar [cantrips|E] sobre un personaje que se encuentre aproximadamente a un reino enorme de distancia (ejemplo: Sacro Imperio Romano Germánico de izquierda a derecha).\nPuedes lanzar un área [cantrips|E] en una escala de imperio." #NT!
- REALM_SCENE_5_PERK_EFFECT: "Ahora puedes lanzar [cantrips|E] a cualquier personaje en el mapa.\nPuedes lanzar el área [cantrips|E] a escala global." #NT!
- REALM_TIME_1_PERK_EFFECT: "Los modificadores [cantrip|E] ahora duran #V 1#! años en lugar de #V 4#! meses.\nReduce el tiempo de reutilización de [cantrip|E] a 3/4." #NT!
- REALM_TIME_2_PERK_EFFECT: "Los modificadores [cantrip|E] ahora duran #V 2#! años en lugar de #V 1#! años.\nReduce el tiempo de reutilización de [cantrip|E] a la mitad." #NT!
- REALM_TIME_3_PERK_EFFECT: "Los modificadores [cantrip|E] ahora duran #V 5#! años en lugar de #V 2#! años.\nReduce el tiempo de reutilización de [cantrip|E] a 1/4." #NT!
- REALM_TIME_4_PERK_EFFECT: "Los modificadores [cantrip|E] ahora duran #V 10#! años en lugar de #V 5#! años.\nReduce el tiempo de reutilización de [cantrip|E] a una unidad." #NT!
- REALM_TIME_5_PERK_EFFECT: "Los modificadores [cantrip|E] ahora duran para siempre.\nNo más tiempo de reutilización de [cantrip|E]." #NT!
+ REALM_ACTOR_1_PERK_EFFECT: "Ahora puedes lanzar [cantrips|E] sobre un miembro de la casa [friend|E], [lover|E], [courtier|E], [direct_vassal|E], un personaje en el que tengas un fuerte [title_claim|E] o [strong_hook|E], o un personaje cuyo criminal [secret|E] conozcas.\nAdemás, el personaje no debe tener ninguna mala relación [war|E] o [truce|E] contigo ni estar encarcelado por ti."
+ REALM_ACTOR_2_PERK_EFFECT: "Ahora puedes lanzar [cantrips|E] sobre un [friend|E], [lover|E], [courtier|E], [guest|E], [vassal|E], [liege|E], miembro de la dinastía, un personaje en el que tengas un [title_claim|E] o [hook|E], o un personaje cuyo [secret|E] conozcas.\nAdemás, el personaje no debe tener ninguna mala relación, [friend|E]0 o [friend|E]1 contigo o ser encarcelado por ti."
+ REALM_ACTOR_3_PERK_EFFECT: "Ahora puedes lanzar [cantrips|E] sobre un personaje con cualquier buena relación, [courtier|E], [guest|E], [vassal|E], [liege|E], miembro de la dinastía, [ally|E], un personaje sobre el que tengas derecho o [hook|E], o un personaje cuyo [secret|E] conozcas.\nAdemás, el personaje no debe tener ninguna mala relación o [war|E] contigo."
+ REALM_ACTOR_4_PERK_EFFECT: "Ahora puedes lanzar [cantrips|E] a cualquier personaje siempre y cuando no sea [rival|E] o [war|E]."
+ REALM_ACTOR_5_PERK_EFFECT: "Ahora puedes lanzar [cantrips|E] a cualquier personaje, incluso un [rival|E] o durante un [war|E]."
+ REALM_FAE_1_PERK_EFFECT: "Ahora puedes lanzar [cantrips|E] sobre seres sobrenaturales menores o mortales con poderes menores."
+ REALM_FAE_2_PERK_EFFECT: "Ahora puedes lanzar [cantrips|E] sobre los Changelings."
+ REALM_FAE_3_PERK_EFFECT: "Ahora puedes lanzar [cantrips|E] en Fae."
+ REALM_FAE_4_PERK_EFFECT: "Ahora puedes lanzar [cantrips|E] a la mayoría de los seres sobrenaturales o mortales con poderes poderosos."
+ REALM_FAE_5_PERK_EFFECT: "Ahora puedes lanzar [cantrips|E] incluso a los sobrenaturales más raros."
+ REALM_PROP_1_PERK_EFFECT: "Ahora puedes lanzar [cantrips|E] sobre artefactos comunes/de obra maestra misceláneos/de la corte."
+ REALM_PROP_2_PERK_EFFECT: "Ahora puedes lanzar [cantrips|E] en artefactos comunes y de obra maestra."
+ REALM_PROP_3_PERK_EFFECT: "Ahora puedes lanzar [cantrips|E] sobre artefactos ilustres o famosos que no sean únicos."
+ REALM_PROP_4_PERK_EFFECT: "Ahora puedes lanzar [cantrips|E] sobre artefactos famosos únicos."
+ REALM_PROP_5_PERK_EFFECT: "Ahora puedes lanzar [cantrips|E] en artefactos ilustres únicos."
+ REALM_NATURE_1_PERK_EFFECT: "Puede lanzar [cantrips|E] sobre materiales orgánicos no vivos."
+ REALM_NATURE_2_PERK_EFFECT: "Puede lanzar [cantrips|E] sobre material vegetal vivo y orgánico."
+ REALM_NATURE_3_PERK_EFFECT: "Puede lanzar [cantrips|E] sobre animales vivos, no sensibles."
+ REALM_NATURE_4_PERK_EFFECT: "Puede lanzar [cantrips|E] sobre fenómenos naturales."
+ REALM_NATURE_5_PERK_EFFECT: "Puede lanzar [cantrips|E] sobre elementos naturales en forma pura."
+ REALM_SCENE_1_PERK_EFFECT: "Ahora puedes lanzar [cantrips|E] sobre un personaje que se encuentre aproximadamente a un reino pequeño de distancia (por ejemplo: Gales de arriba a abajo).\nPuedes lanzar un área [cantrips|E] a escala de condado."
+ REALM_SCENE_2_PERK_EFFECT: "Ahora puedes lanzar [cantrips|E] sobre un personaje que se encuentre aproximadamente a un reino medio de distancia (ejemplo: Irlanda de arriba a abajo).\nPuedes lanzar un área [cantrips|E] en una escala de ducado."
+ REALM_SCENE_3_PERK_EFFECT: "Ahora puedes lanzar [cantrips|E] sobre un personaje que se encuentre aproximadamente a un gran reino de distancia (ejemplo: Francia de arriba a abajo).\nPuedes lanzar un área [cantrips|E] a escala de reino."
+ REALM_SCENE_4_PERK_EFFECT: "Ahora puedes lanzar [cantrips|E] sobre un personaje que se encuentre aproximadamente a un reino enorme de distancia (ejemplo: Sacro Imperio Romano Germánico de izquierda a derecha).\nPuedes lanzar un área [cantrips|E] en una escala de imperio."
+ REALM_SCENE_5_PERK_EFFECT: "Ahora puedes lanzar [cantrips|E] a cualquier personaje en el mapa.\nPuedes lanzar el área [cantrips|E] a escala global."
+ REALM_TIME_1_PERK_EFFECT: "Los modificadores [cantrip|E] ahora duran #V 1#! años en lugar de #V 4#! meses.\nReduce el tiempo de reutilización de [cantrip|E] a 3/4."
+ REALM_TIME_2_PERK_EFFECT: "Los modificadores [cantrip|E] ahora duran #V 2#! años en lugar de #V 1#! años.\nReduce el tiempo de reutilización de [cantrip|E] a la mitad."
+ REALM_TIME_3_PERK_EFFECT: "Los modificadores [cantrip|E] ahora duran #V 5#! años en lugar de #V 2#! años.\nReduce el tiempo de reutilización de [cantrip|E] a 1/4."
+ REALM_TIME_4_PERK_EFFECT: "Los modificadores [cantrip|E] ahora duran #V 10#! años en lugar de #V 5#! años.\nReduce el tiempo de reutilización de [cantrip|E] a una unidad."
+ REALM_TIME_5_PERK_EFFECT: "Los modificadores [cantrip|E] ahora duran para siempre.\nNo más tiempo de reutilización de [cantrip|E]."
   
- NOT_has_realm_actor_trait: "@warning_icon!#X Tienes #bold no#! completados los [journey|E] para lograr [GetTrait('realm_actor').GetName( GetPlayer )]#!" #NT!
- NOT_has_realm_fae_trait: "@warning_icon!#X Tienes #bold no#! completados los [journey|E] para lograr [GetTrait('realm_fae').GetName( GetPlayer )]#!" #NT!
- NOT_has_realm_prop_trait: "@warning_icon!#X Tienes #bold no#! completados los [journey|E] para lograr [GetTrait('realm_prop').GetName( GetPlayer )]#!" #NT!
- NOT_has_realm_nature_trait: "@warning_icon!#X Tienes #bold no#! completados los [journey|E] para lograr [GetTrait('realm_nature').GetName( GetPlayer )]#!" #NT!
- NOT_has_realm_scene_trait: "@warning_icon!#X Tienes #bold no#! completados los [journey|E] para lograr [GetTrait('realm_scene').GetName( GetPlayer )]#!" #NT!
- NOT_has_realm_time_trait: "@warning_icon!#X Tienes #bold no#! completados los [journey|E] para lograr [GetTrait('realm_time').GetName( GetPlayer )]#!" #NT!
+ NOT_has_realm_actor_trait: "@warning_icon!#X Tienes #bold no#! completados los [journey|E] para lograr [GetTrait('realm_actor').GetName( GetPlayer )]#!"
+ NOT_has_realm_fae_trait: "@warning_icon!#X Tienes #bold no#! completados los [journey|E] para lograr [GetTrait('realm_fae').GetName( GetPlayer )]#!"
+ NOT_has_realm_prop_trait: "@warning_icon!#X Tienes #bold no#! completados los [journey|E] para lograr [GetTrait('realm_prop').GetName( GetPlayer )]#!"
+ NOT_has_realm_nature_trait: "@warning_icon!#X Tienes #bold no#! completados los [journey|E] para lograr [GetTrait('realm_nature').GetName( GetPlayer )]#!"
+ NOT_has_realm_scene_trait: "@warning_icon!#X Tienes #bold no#! completados los [journey|E] para lograr [GetTrait('realm_scene').GetName( GetPlayer )]#!"
+ NOT_has_realm_time_trait: "@warning_icon!#X Tienes #bold no#! completados los [journey|E] para lograr [GetTrait('realm_time').GetName( GetPlayer )]#!"
   
   ### Common Art ### 
   
- game_concept_common_arts_lifestyle: "Artes comunes" #NT!
- game_concept_common_arts_lifestyle_desc: "Estas artes son conocidas por los plebeyos y son sencillas de aprender y requieren poca dificultad para aprenderlas o encontrar un tutor." #NT!
+ game_concept_common_arts_lifestyle: "Artes comunes"
+ game_concept_common_arts_lifestyle_desc: "Estas artes son conocidas por los plebeyos y son sencillas de aprender y requieren poca dificultad para aprenderlas o encontrar un tutor."
   
- common_arts_lifestyle_name: "Artes comunes" #NT!
- common_arts_lifestyle_desc: "Concéntrese en el efecto de cada truco individual." #NT!
- common_arts_lifestyle_highlight_desc: "Gracias a tu Glamour, ganas #P [GetPlayer.Custom('GetGlamourLifestylePercentageBoost')]#! más [experience|E] en este Estilo de Vida." #NT!
- monthly_common_arts_lifestyle_xp_gain_mult: "Artes comunes mensuales [lifestyle|E] [experience|E]" #NT!
+ common_arts_lifestyle_name: "Artes comunes"
+ common_arts_lifestyle_desc: "Concéntrese en el efecto de cada truco individual."
+ common_arts_lifestyle_highlight_desc: "Gracias a tu Glamour, ganas #P [GetPlayer.Custom('GetGlamourLifestylePercentageBoost')]#! más [experience|E] en este Estilo de Vida."
+ monthly_common_arts_lifestyle_xp_gain_mult: "Artes comunes mensuales [lifestyle|E] [experience|E]"
   
- common_arts_chicanery_focus: "Enfoque en la chicanería" #NT!
- common_arts_chicanery_focus_modifier: "[GetFocus('common_arts_chicanery_focus').GetName]" #NT!
- common_arts_chicanery_focus_desc: "Ilusión y engaño de los sentidos." #NT!
- common_arts_chicanery_focus_effect_desc: "Centrándose en las subvenciones de Chicanery:" #NT!
+ common_arts_chicanery_focus: "Enfoque en la chicanería"
+ common_arts_chicanery_focus_modifier: "[GetFocus('common_arts_chicanery_focus').GetName]"
+ common_arts_chicanery_focus_desc: "Ilusión y engaño de los sentidos."
+ common_arts_chicanery_focus_effect_desc: "Centrándose en las subvenciones de Chicanery:"
   
- common_arts_legerdemain_focus: "Enfoque en la prestidigitación" #NT!
- common_arts_legerdemain_focus_modifier: "[GetFocus('common_arts_legerdemain_focus').GetName]" #NT!
- common_arts_legerdemain_focus_desc: "Copiar y manipular objetos." #NT!
- common_arts_legerdemain_focus_effect_desc: "Centrándose en las subvenciones de Legerdemain:" #NT!
+ common_arts_legerdemain_focus: "Enfoque en la prestidigitación"
+ common_arts_legerdemain_focus_modifier: "[GetFocus('common_arts_legerdemain_focus').GetName]"
+ common_arts_legerdemain_focus_desc: "Copiar y manipular objetos."
+ common_arts_legerdemain_focus_effect_desc: "Centrándose en las subvenciones de Legerdemain:"
   
- common_arts_primal_focus: "Enfoque primordial" #NT!
- common_arts_primal_focus_modifier: "[GetFocus('common_arts_primal_focus').GetName]" #NT!
- common_arts_primal_focus_desc: "Control y comprensión elemental." #NT!
- common_arts_primal_focus_effect_desc: "Centrándose en las subvenciones Primal:" #NT!
+ common_arts_primal_focus: "Enfoque primordial"
+ common_arts_primal_focus_modifier: "[GetFocus('common_arts_primal_focus').GetName]"
+ common_arts_primal_focus_desc: "Control y comprensión elemental."
+ common_arts_primal_focus_effect_desc: "Centrándose en las subvenciones Primal:"
   
- common_arts_soothsay_focus: "Enfoque de adivinación" #NT!
- common_arts_soothsay_focus_modifier: "[GetFocus('common_arts_soothsay_focus').GetName]" #NT!
- common_arts_soothsay_focus_desc: "Predicción y adivinación." #NT!
- common_arts_soothsay_focus_effect_desc: "Centrándose en las subvenciones de Soothsay:" #NT!
+ common_arts_soothsay_focus: "Enfoque de adivinación"
+ common_arts_soothsay_focus_modifier: "[GetFocus('common_arts_soothsay_focus').GetName]"
+ common_arts_soothsay_focus_desc: "Predicción y adivinación."
+ common_arts_soothsay_focus_effect_desc: "Centrándose en las subvenciones de Soothsay:"
   
- common_arts_wayfare_focus: "Enfoque de Wayfare" #NT!
- common_arts_wayfare_focus_modifier: "[GetFocus('common_arts_wayfare_focus').GetName]" #NT!
- common_arts_wayfare_focus_desc: "Movimiento y acrobacias atléticas." #NT!
- common_arts_wayfare_focus_effect_desc: "Centrándose en las subvenciones Wayfare:" #NT!
+ common_arts_wayfare_focus: "Enfoque de Wayfare"
+ common_arts_wayfare_focus_modifier: "[GetFocus('common_arts_wayfare_focus').GetName]"
+ common_arts_wayfare_focus_desc: "Movimiento y acrobacias atléticas."
+ common_arts_wayfare_focus_effect_desc: "Centrándose en las subvenciones Wayfare:"
   
- GAINS_COMMON_ARTS_LIFESTYLE_XP: "Ganancias $VALUE|V0$ [common_arts_lifestyle|E] Experiencia" #NT!
- GAINED_COMMON_ARTS_LIFESTYLE_XP: "Obtuvo $VALUE|V0$ [common_arts_lifestyle|E] Experiencia" #NT!
- I_GAIN_COMMON_ARTS_LIFESTYLE_XP: "Obtienes $VALUE|V0$ [common_arts_lifestyle|E] de experiencia" #NT!
- I_GAINED_COMMON_ARTS_LIFESTYLE_XP: "Ganaste $VALUE|V0$ [common_arts_lifestyle|E] Experiencia" #NT!
- TARGET_GAINS_COMMON_ARTS_LIFESTYLE_XP: "[CHARACTER.GetShortUIName] gana $VALUE|V0$ [common_arts_lifestyle|E] experiencia" #NT!
- TARGET_GAINED_COMMON_ARTS_LIFESTYLE_XP: "[CHARACTER.GetShortUIName] ganado $VALUE|V0$ [common_arts_lifestyle|E] Experiencia" #NT!
+ GAINS_COMMON_ARTS_LIFESTYLE_XP: "Ganancias $VALUE|V0$ [common_arts_lifestyle|E] Experiencia"
+ GAINED_COMMON_ARTS_LIFESTYLE_XP: "Obtuvo $VALUE|V0$ [common_arts_lifestyle|E] Experiencia"
+ I_GAIN_COMMON_ARTS_LIFESTYLE_XP: "Obtienes $VALUE|V0$ [common_arts_lifestyle|E] de experiencia"
+ I_GAINED_COMMON_ARTS_LIFESTYLE_XP: "Ganaste $VALUE|V0$ [common_arts_lifestyle|E] Experiencia"
+ TARGET_GAINS_COMMON_ARTS_LIFESTYLE_XP: "[CHARACTER.GetShortUIName] gana $VALUE|V0$ [common_arts_lifestyle|E] experiencia"
+ TARGET_GAINED_COMMON_ARTS_LIFESTYLE_XP: "[CHARACTER.GetShortUIName] ganado $VALUE|V0$ [common_arts_lifestyle|E] Experiencia"
   
- GAINS_A_COMMON_ARTS_LIFESTYLE_PERKPOINT: "Ganancias $VALUE|V0$ [common_arts_lifestyle|E] [perk|E] Desbloquear" #NT!
- GAINED_A_COMMON_ARTS_LIFESTYLE_PERKPOINT: "Obtenido $VALUE|V0$ [common_arts_lifestyle|E] [perk|E] Desbloquear" #NT!
- I_GAIN_A_COMMON_ARTS_LIFESTYLE_PERKPOINT: "Obtienes $VALUE|V0$ [common_arts_lifestyle|E] [perk|E] Desbloquear" #NT!
- I_GAINED_A_COMMON_ARTS_LIFESTYLE_PERKPOINT: "Ganaste $VALUE|V0$ [common_arts_lifestyle|E] [perk|E] Desbloquear" #NT!
- TARGET_GAINS_A_COMMON_ARTS_LIFESTYLE_PERKPOINT: "[CHARACTER.GetShortUIName] gana $VALUE|V0$ [common_arts_lifestyle|E] [perk|E] Desbloquea" #NT!
- TARGET_GAINED_A_COMMON_ARTS_LIFESTYLE_PERKPOINT: "[CHARACTER.GetShortUIName] ganado $VALUE|V0$ [common_arts_lifestyle|E] [perk|E] Desbloquear" #NT!
+ GAINS_A_COMMON_ARTS_LIFESTYLE_PERKPOINT: "Ganancias $VALUE|V0$ [common_arts_lifestyle|E] [perk|E] Desbloquear"
+ GAINED_A_COMMON_ARTS_LIFESTYLE_PERKPOINT: "Obtenido $VALUE|V0$ [common_arts_lifestyle|E] [perk|E] Desbloquear"
+ I_GAIN_A_COMMON_ARTS_LIFESTYLE_PERKPOINT: "Obtienes $VALUE|V0$ [common_arts_lifestyle|E] [perk|E] Desbloquear"
+ I_GAINED_A_COMMON_ARTS_LIFESTYLE_PERKPOINT: "Ganaste $VALUE|V0$ [common_arts_lifestyle|E] [perk|E] Desbloquear"
+ TARGET_GAINS_A_COMMON_ARTS_LIFESTYLE_PERKPOINT: "[CHARACTER.GetShortUIName] gana $VALUE|V0$ [common_arts_lifestyle|E] [perk|E] Desbloquea"
+ TARGET_GAINED_A_COMMON_ARTS_LIFESTYLE_PERKPOINT: "[CHARACTER.GetShortUIName] ganado $VALUE|V0$ [common_arts_lifestyle|E] [perk|E] Desbloquear"
   
- COMMON_ARTS_LIFESTYLE_PERK_POINTS_TRIGGER: "Puntos de beneficio del estilo de vida de Common Arts: $NUM|V0$" #NT!
- COMMON_ARTS_LIFESTYLE_XP_TRIGGER: "Experiencias de estilo de vida de Common Arts: $NUM|V0$" #NT!
+ COMMON_ARTS_LIFESTYLE_PERK_POINTS_TRIGGER: "Puntos de beneficio del estilo de vida de Common Arts: $NUM|V0$"
+ COMMON_ARTS_LIFESTYLE_XP_TRIGGER: "Experiencias de estilo de vida de Common Arts: $NUM|V0$"
   
- full_chicanery_tooltip: "Obtendrás el árbol completo del Arte de la Chicanery." #NT!
- full_legerdemain_tooltip: "Obtendrás el árbol completo del Arte de la Prestidigitación." #NT!
- full_primal_tooltip: "Obtienes el árbol completo del Arte del Primordial." #NT!
- full_soothsay_tooltip: "Obtendrás el árbol completo del Arte de la Adivinación." #NT!
- full_wayfare_tooltip: "Obtienes el árbol completo de Art of Wayfare." #NT!
+ full_chicanery_tooltip: "Obtendrás el árbol completo del Arte de la Chicanery."
+ full_legerdemain_tooltip: "Obtendrás el árbol completo del Arte de la Prestidigitación."
+ full_primal_tooltip: "Obtienes el árbol completo del Arte del Primordial."
+ full_soothsay_tooltip: "Obtendrás el árbol completo del Arte de la Adivinación."
+ full_wayfare_tooltip: "Obtienes el árbol completo de Art of Wayfare."
   
- chicanery_visible: "Sofística" #NT!
- legerdemain_visible: "Prestidigitación" #NT!
- primal_visible: "Primitivo" #NT!
- soothsay_visible: "Adivinanza" #NT!
- wayfare_visible: "Camino" #NT!
+ chicanery_visible: "Sofística"
+ legerdemain_visible: "Prestidigitación"
+ primal_visible: "Primitivo"
+ soothsay_visible: "Adivinanza"
+ wayfare_visible: "Camino"
   
- fuddle_perk_name: "Emborracharse" #NT!
- veiled_eyes_perk_name: "Ojos velados" #NT!
- fugue_perk_name: "Fuga" #NT!
- haunted_heart_perk_name: "Corazón embrujado" #NT!
- captive_heart_perk_name: "Corazón cautivo" #NT!
- gimmix_perk_name: "Gimmix" #NT!
- art_ensnare_perk_name: "Entrampar" #NT!
- effigy_perk_name: "Efigie" #NT!
- mooch_perk_name: "Vagar a" #NT!
- phantom_shadows_perk_name: "Sombras fantasmales" #NT!
- willow_whisper_perk_name: "Susurro de sauce" #NT!
- eldritch_prime_perk_name: "Eldritch Prime" #NT!
- oakenshield_perk_name: "Escudo de Roble" #NT!
- heathe_balm_holly_strike_perk_name: "Bálsamo de brezo/acebo" #NT!
- elder_form_perk_name: "Forma de anciano" #NT!
- omen_perk_name: "Presagio" #NT!
- fair_is_foul_foul_is_fair_perk_name: "Lo justo es malo y lo malo es justo" #NT!
- tattletale_perk_name: "Chismoso" #NT!
- augury_perk_name: "Augurio" #NT!
- fate_fire_perk_name: "Fuego del destino" #NT!
- hopscotch_perk_name: "Rayuela" #NT!
- quicksilver_perk_name: "Azogue" #NT!
- portal_passage_perk_name: "Pasaje del portal" #NT!
- wind_runner_perk_name: "Corredor del viento" #NT!
- flicker_flash_perk_name: "Destello parpadeante" #NT!
+ fuddle_perk_name: "Emborracharse"
+ veiled_eyes_perk_name: "Ojos velados"
+ fugue_perk_name: "Fuga"
+ haunted_heart_perk_name: "Corazón embrujado"
+ captive_heart_perk_name: "Corazón cautivo"
+ gimmix_perk_name: "Gimmix"
+ art_ensnare_perk_name: "Entrampar"
+ effigy_perk_name: "Efigie"
+ mooch_perk_name: "Vagar a"
+ phantom_shadows_perk_name: "Sombras fantasmales"
+ willow_whisper_perk_name: "Susurro de sauce"
+ eldritch_prime_perk_name: "Eldritch Prime"
+ oakenshield_perk_name: "Escudo de Roble"
+ heathe_balm_holly_strike_perk_name: "Bálsamo de brezo/acebo"
+ elder_form_perk_name: "Forma de anciano"
+ omen_perk_name: "Presagio"
+ fair_is_foul_foul_is_fair_perk_name: "Lo justo es malo y lo malo es justo"
+ tattletale_perk_name: "Chismoso"
+ augury_perk_name: "Augurio"
+ fate_fire_perk_name: "Fuego del destino"
+ hopscotch_perk_name: "Rayuela"
+ quicksilver_perk_name: "Azogue"
+ portal_passage_perk_name: "Pasaje del portal"
+ wind_runner_perk_name: "Corredor del viento"
+ flicker_flash_perk_name: "Destello parpadeante"
   
- FUDDLE_PERK_EFFECT: "Como [character_interaction|E], te permite otorgar [GetModifier( 'fuddle_perk_positive_modifier' ).GetNameWithTooltip|L] o [GetModifier( 'fuddle_perk_negative_modifier' ).GetNameWithTooltip|L] al objetivo.\n#F Altera una percepción existente de una manera pequeña, como intercambiar un sonido fuerte por otro o fingir invisibilidad desde una cubierta de sombras.#!" #NT!
- VEILED_EYES_PERK_EFFECT: "Como [character_interaction|E], te permite obtener una tregua del objetivo o detener todos los planes que lo tengan como objetivo.\n#F Hace que se ignore un objeto; aunque no es verdaderamente invisible, los espectadores no pensarán en notar el objeto.#!" #NT!
- FUGUE_PERK_EFFECT: "Como [character_interaction|E], te permite hacer que un secreto conocido no pueda ser expuesto por el objetivo, eliminar un reclamo del objetivo sobre ti o gastar un gancho que posee el objetivo en ti.\nComo [character_interaction|E], te permite hacer que un rasgo criminal vuelva a ser secreto.\n#F Elimina un recuerdo de la mente de una persona o hace que un momento específico se destaque y ocluya a los demás.#!" #NT!
- HAUNTED_HEART_PERK_EFFECT: "Desbloquea [GetScheme('PODsoul_bridge').GetTypeName] [scheme|E].\n#F Evoca algún tipo de emoción fantasma dentro de un sujeto, al despertar una emoción sentida en el pasado.#!" #NT!
- CAPTIVE_HEART_PERK_EFFECT: "Otorga un modificador de [GetModifier('captive_heart_perk_commander_modifier').GetNameWithTooltip] a los comandantes aliados cuando estás en guerra como comandante.\n Otorga un modificador de [GetModifier('captive_heart_perk_knight_modifier').GetNameWithTooltip] al aliado [knights|E] cuando estás en guerra como comandante o a ti mismo en [single_combat_duel|E].\n#F Usa la emoción como una fuerza controladora, haciendo que una persona crea cosas sobre sí misma que tal vez nunca hubieran sido ciertas.#!" #NT!
- GIMMIX_PERK_EFFECT: "#F Produce un movimiento telequinético simple, lo que permite mover un objeto a distancia, pero no manipularlo con precisión.#!" #NT!
- ART_ENSNARE_PERK_EFFECT: "#F Mueve un objeto demasiado pesado para ser movido por Gimmix, o un objeto flexible para intentar atar a un individuo.#!" #NT!
- EFFIGY_PERK_EFFECT: "Como [character_interaction|E], te permite copiar el artefacto objetivo.\n#F Produce una copia al carbón de un elemento determinado, aunque los rasgos de ese elemento debajo de la superficie no se pueden copiar.#!" #NT!
- MOOCH_PERK_EFFECT: "Como [character_interaction|E], te permite robar el artefacto objetivo.\n#F Un objeto que es visible para el lanzador se transfiere inmediatamente a la posesión del usuario.#!" #NT!
- PHANTOM_SHADOWS_PERK_EFFECT: "Como [character_interaction|E], te permite hacer un clon del objetivo.\n#F Produce una quimera temporal que aparece en la forma que el usuario desea, con algunas limitaciones.#!" #NT!
- WILLOW_WHISPER_PERK_EFFECT: "Desbloquea $seek_aid_of_the_spirits_decision$ [decision|E].\n#F Habla con los objetos, ya sea que tengan boca para hablar o mente para pensar.#!" #NT!
- ELDRITCH_PRIME_PERK_EFFECT: "Como [character_interaction|E], te permite lanzar un truco meteorológico en el área objetivo.\n#F Crea una manifestación pura de uno de los elementos más básicos: fuego, agua, tierra, aire o madera.#!" #NT!
- OAKENSHIELD_PERK_EFFECT: "Como [character_interaction|E], te permite invocar [GetModifier('oakenshield_modifier').GetNameWithTooltip] sobre el área objetivo.\n#F Cubre un objeto con una corteza protectora, lo que lo ayuda a protegerse contra el daño.#!" #NT!
- HEATHE_BALM_HOLLY_STRIKE_PERK_EFFECT: "Como [character_interaction|E], te permite curar o herir a un objetivo, o romper el artefacto objetivo en pedazos.\n#F Repara un objeto o cura a una persona (Bálsamo de brezo); daña a un objeto o persona en el mismo grado en que podría ser curado (Golpe sagrado).#!" #NT!
- ELDER_FORM_PERK_EFFECT: "Permite cambiar de forma a los elementos.\n#F Toma la forma de un objeto elemental, adquiriendo sus propiedades si existe, o simplemente su apariencia si no existe.#!" #NT!
- OMEN_PERK_EFFECT: "Como [character_interaction|E], te permite conocer todos los secretos y planes del objetivo.\n#F La forma más básica de profecía, este truco otorga un destello momentáneo de conocimiento sobre el destino final de un objeto.#!" #NT!
- FAIR_IS_FOUL_FOUL_IS_FAIR_PERK_EFFECT: "Como [character_interaction|E], te permite gastar XP de arte común para hacer que el objetivo gane o pierda oro y prestigio.\n#F Se entromete ligeramente en los asuntos del destino, otorgando un poco de buena suerte a un aliado o un poco de mala suerte al enemigo.#!" #NT!
- TATTLETALE_PERK_EFFECT: "Como [character_interaction|E], te permite otorgar [GetModifier('artifact_tattletale_modifier').GetNameWithTooltip] al artefacto objetivo.\n#F Ver el mundo desde la perspectiva de un objeto que el usuario ha encontrado en el pasado o del que conoce el nombre verdadero.#!" #NT!
- AUGURY_PERK_EFFECT: "Como [character_interaction|E], te permite tener una posibilidad de que ocurra un evento aleatorio para el objetivo.\n#F Determina un evento que ocurrirá en el futuro; no importa lo que suceda, ese evento ocurrirá, aunque la verdad detrás de cómo sucede puede ser terriblemente inesperada.#!" #NT!
- FATE_FIRE_PERK_EFFECT: "Como [character_interaction|E], te permite aumentar el progreso del plan.\n#F Un truco extraño y complicado, que acelera los estragos del karma, haciendo que todo lo que le sucede a alguien, bueno o malo, lo alcance mucho más rápido de lo esperado.#!" #NT!
- HOPSCOTCH_PERK_EFFECT: "#F Realizar un salto imposible, ya sea hacia arriba o hacia abajo, y no sufrir daños por la colisión resultante.#!" #NT!
- QUICKSILVER_PERK_EFFECT: "#F Permite que un objeto se mueva a una velocidad increíblemente rápida.#!" #NT!
- PORTAL_PASSAGE_PERK_EFFECT: "#F Crea una apertura temporal a través de cualquier barrera, lo que permite que se mueva a través de ella.#!" #NT!
- WIND_RUNNER_PERK_EFFECT: "#F Permite que un objetivo vuele, elevándose al cielo como si tuviera alas.#!" #NT!
- FLICKER_FLASH_PERK_EFFECT: "Como [character_interaction|E], te permite teletransportar a tu ejército a la ubicación de tu objetivo, o teletransportarte a tu próximo destino cuando viajas.\n#F Desaparecer instantáneamente y reaparecer en otro lugar del mundo o en el [dreaming|E].#!" #NT!
+ FUDDLE_PERK_EFFECT: "Como [character_interaction|E], te permite otorgar [GetModifier( 'fuddle_perk_positive_modifier' ).GetNameWithTooltip|L] o [GetModifier( 'fuddle_perk_negative_modifier' ).GetNameWithTooltip|L] al objetivo.\n#F Altera una percepción existente de una manera pequeña, como intercambiar un sonido fuerte por otro o fingir invisibilidad desde una cubierta de sombras.#!"
+ VEILED_EYES_PERK_EFFECT: "Como [character_interaction|E], te permite obtener una tregua del objetivo o detener todos los planes que lo tengan como objetivo.\n#F Hace que se ignore un objeto; aunque no es verdaderamente invisible, los espectadores no pensarán en notar el objeto.#!"
+ FUGUE_PERK_EFFECT: "Como [character_interaction|E], te permite hacer que un secreto conocido no pueda ser expuesto por el objetivo, eliminar un reclamo del objetivo sobre ti o gastar un gancho que posee el objetivo en ti.\nComo [character_interaction|E], te permite hacer que un rasgo criminal vuelva a ser secreto.\n#F Elimina un recuerdo de la mente de una persona o hace que un momento específico se destaque y ocluya a los demás.#!"
+ HAUNTED_HEART_PERK_EFFECT: "Desbloquea [GetScheme('PODsoul_bridge').GetTypeName] [scheme|E].\n#F Evoca algún tipo de emoción fantasma dentro de un sujeto, al despertar una emoción sentida en el pasado.#!"
+ CAPTIVE_HEART_PERK_EFFECT: "Otorga un modificador de [GetModifier('captive_heart_perk_commander_modifier').GetNameWithTooltip] a los comandantes aliados cuando estás en guerra como comandante.\n Otorga un modificador de [GetModifier('captive_heart_perk_knight_modifier').GetNameWithTooltip] al aliado [knights|E] cuando estás en guerra como comandante o a ti mismo en [single_combat_duel|E].\n#F Usa la emoción como una fuerza controladora, haciendo que una persona crea cosas sobre sí misma que tal vez nunca hubieran sido ciertas.#!"
+ GIMMIX_PERK_EFFECT: "#F Produce un movimiento telequinético simple, lo que permite mover un objeto a distancia, pero no manipularlo con precisión.#!"
+ ART_ENSNARE_PERK_EFFECT: "#F Mueve un objeto demasiado pesado para ser movido por Gimmix, o un objeto flexible para intentar atar a un individuo.#!"
+ EFFIGY_PERK_EFFECT: "Como [character_interaction|E], te permite copiar el artefacto objetivo.\n#F Produce una copia al carbón de un elemento determinado, aunque los rasgos de ese elemento debajo de la superficie no se pueden copiar.#!"
+ MOOCH_PERK_EFFECT: "Como [character_interaction|E], te permite robar el artefacto objetivo.\n#F Un objeto que es visible para el lanzador se transfiere inmediatamente a la posesión del usuario.#!"
+ PHANTOM_SHADOWS_PERK_EFFECT: "Como [character_interaction|E], te permite hacer un clon del objetivo.\n#F Produce una quimera temporal que aparece en la forma que el usuario desea, con algunas limitaciones.#!"
+ WILLOW_WHISPER_PERK_EFFECT: "Desbloquea $seek_aid_of_the_spirits_decision$ [decision|E].\n#F Habla con los objetos, ya sea que tengan boca para hablar o mente para pensar.#!"
+ ELDRITCH_PRIME_PERK_EFFECT: "Como [character_interaction|E], te permite lanzar un truco meteorológico en el área objetivo.\n#F Crea una manifestación pura de uno de los elementos más básicos: fuego, agua, tierra, aire o madera.#!"
+ OAKENSHIELD_PERK_EFFECT: "Como [character_interaction|E], te permite invocar [GetModifier('oakenshield_modifier').GetNameWithTooltip] sobre el área objetivo.\n#F Cubre un objeto con una corteza protectora, lo que lo ayuda a protegerse contra el daño.#!"
+ HEATHE_BALM_HOLLY_STRIKE_PERK_EFFECT: "Como [character_interaction|E], te permite curar o herir a un objetivo, o romper el artefacto objetivo en pedazos.\n#F Repara un objeto o cura a una persona (Bálsamo de brezo); daña a un objeto o persona en el mismo grado en que podría ser curado (Golpe sagrado).#!"
+ ELDER_FORM_PERK_EFFECT: "Permite cambiar de forma a los elementos.\n#F Toma la forma de un objeto elemental, adquiriendo sus propiedades si existe, o simplemente su apariencia si no existe.#!"
+ OMEN_PERK_EFFECT: "Como [character_interaction|E], te permite conocer todos los secretos y planes del objetivo.\n#F La forma más básica de profecía, este truco otorga un destello momentáneo de conocimiento sobre el destino final de un objeto.#!"
+ FAIR_IS_FOUL_FOUL_IS_FAIR_PERK_EFFECT: "Como [character_interaction|E], te permite gastar XP de arte común para hacer que el objetivo gane o pierda oro y prestigio.\n#F Se entromete ligeramente en los asuntos del destino, otorgando un poco de buena suerte a un aliado o un poco de mala suerte al enemigo.#!"
+ TATTLETALE_PERK_EFFECT: "Como [character_interaction|E], te permite otorgar [GetModifier('artifact_tattletale_modifier').GetNameWithTooltip] al artefacto objetivo.\n#F Ver el mundo desde la perspectiva de un objeto que el usuario ha encontrado en el pasado o del que conoce el nombre verdadero.#!"
+ AUGURY_PERK_EFFECT: "Como [character_interaction|E], te permite tener una posibilidad de que ocurra un evento aleatorio para el objetivo.\n#F Determina un evento que ocurrirá en el futuro; no importa lo que suceda, ese evento ocurrirá, aunque la verdad detrás de cómo sucede puede ser terriblemente inesperada.#!"
+ FATE_FIRE_PERK_EFFECT: "Como [character_interaction|E], te permite aumentar el progreso del plan.\n#F Un truco extraño y complicado, que acelera los estragos del karma, haciendo que todo lo que le sucede a alguien, bueno o malo, lo alcance mucho más rápido de lo esperado.#!"
+ HOPSCOTCH_PERK_EFFECT: "#F Realizar un salto imposible, ya sea hacia arriba o hacia abajo, y no sufrir daños por la colisión resultante.#!"
+ QUICKSILVER_PERK_EFFECT: "#F Permite que un objeto se mueva a una velocidad increíblemente rápida.#!"
+ PORTAL_PASSAGE_PERK_EFFECT: "#F Crea una apertura temporal a través de cualquier barrera, lo que permite que se mueva a través de ella.#!"
+ WIND_RUNNER_PERK_EFFECT: "#F Permite que un objetivo vuele, elevándose al cielo como si tuviera alas.#!"
+ FLICKER_FLASH_PERK_EFFECT: "Como [character_interaction|E], te permite teletransportar a tu ejército a la ubicación de tu objetivo, o teletransportarte a tu próximo destino cuando viajas.\n#F Desaparecer instantáneamente y reaparecer en otro lugar del mundo o en el [dreaming|E].#!"
   
   ### Rare Art ### 
   
- game_concept_rare_arts_lifestyle: "Artes raras" #NT!
- game_concept_rare_arts_lifestyle_desc: "Estas artes son más oscuras que las artes comunes, pero si un changeling supiera dónde buscar, aún podrían aprenderse sin mucha dificultad." #NT!
+ game_concept_rare_arts_lifestyle: "Artes raras"
+ game_concept_rare_arts_lifestyle_desc: "Estas artes son más oscuras que las artes comunes, pero si un changeling supiera dónde buscar, aún podrían aprenderse sin mucha dificultad."
   
- rare_arts_lifestyle_name: "Artes raras" #NT!
- rare_arts_lifestyle_desc: "Concéntrese en el efecto de cada truco individual." #NT!
- rare_arts_lifestyle_highlight_desc: "Gracias a tu Glamour, ganas #P [GetPlayer.Custom('GetGlamourLifestylePercentageBoost')]#! más [experience|E] en este Estilo de Vida." #NT!
- monthly_rare_arts_lifestyle_xp_gain_mult: "Artes raras del mes [lifestyle|E] [experience|E]" #NT!
+ rare_arts_lifestyle_name: "Artes raras"
+ rare_arts_lifestyle_desc: "Concéntrese en el efecto de cada truco individual."
+ rare_arts_lifestyle_highlight_desc: "Gracias a tu Glamour, ganas #P [GetPlayer.Custom('GetGlamourLifestylePercentageBoost')]#! más [experience|E] en este Estilo de Vida."
+ monthly_rare_arts_lifestyle_xp_gain_mult: "Artes raras del mes [lifestyle|E] [experience|E]"
   
- rare_arts_aphrodesia_focus: "Enfoque de Afrodesia" #NT!
- rare_arts_aphrodesia_focus_modifier: "[GetFocus('rare_arts_aphrodesia_focus').GetName]" #NT!
- rare_arts_aphrodesia_focus_desc: "El arte de las falsas pasiones." #NT!
- rare_arts_aphrodesia_focus_effect_desc: "Centrándose en las subvenciones de Afrodesia:" #NT!
+ rare_arts_aphrodesia_focus: "Enfoque de Afrodesia"
+ rare_arts_aphrodesia_focus_modifier: "[GetFocus('rare_arts_aphrodesia_focus').GetName]"
+ rare_arts_aphrodesia_focus_desc: "El arte de las falsas pasiones."
+ rare_arts_aphrodesia_focus_effect_desc: "Centrándose en las subvenciones de Afrodesia:"
   
- rare_arts_kryos_focus: "Enfoque de Kryos" #NT!
- rare_arts_kryos_focus_modifier: "[GetFocus('rare_arts_kryos_focus').GetName]" #NT!
- rare_arts_kryos_focus_desc: "El arte del frío y el hielo." #NT!
- rare_arts_kryos_focus_effect_desc: "Centrándose en las subvenciones de Kryos:" #NT!
+ rare_arts_kryos_focus: "Enfoque de Kryos"
+ rare_arts_kryos_focus_modifier: "[GetFocus('rare_arts_kryos_focus').GetName]"
+ rare_arts_kryos_focus_desc: "El arte del frío y el hielo."
+ rare_arts_kryos_focus_effect_desc: "Centrándose en las subvenciones de Kryos:"
   
- rare_arts_metamorphosis_focus: "Enfoque en la metamorfosis" #NT!
- rare_arts_metamorphosis_focus_modifier: "[GetFocus('rare_arts_metamorphosis_focus').GetName]" #NT!
- rare_arts_metamorphosis_focus_desc: "El arte común de cambiar de forma, tamaño y apariencia." #NT!
- rare_arts_metamorphosis_focus_effect_desc: "Centrándose en las subvenciones Metamorfosis:" #NT!
+ rare_arts_metamorphosis_focus: "Enfoque en la metamorfosis"
+ rare_arts_metamorphosis_focus_modifier: "[GetFocus('rare_arts_metamorphosis_focus').GetName]"
+ rare_arts_metamorphosis_focus_desc: "El arte común de cambiar de forma, tamaño y apariencia."
+ rare_arts_metamorphosis_focus_effect_desc: "Centrándose en las subvenciones Metamorfosis:"
   
- rare_arts_pyretics_focus: "Enfoque en piréticos" #NT!
- rare_arts_pyretics_focus_modifier: "[GetFocus('rare_arts_pyretics_focus').GetName]" #NT!
- rare_arts_pyretics_focus_desc: "El peligroso arte de manipular el calor y las llamas." #NT!
- rare_arts_pyretics_focus_effect_desc: "Centrándose en las subvenciones de Pyretics:" #NT!
+ rare_arts_pyretics_focus: "Enfoque en piréticos"
+ rare_arts_pyretics_focus_modifier: "[GetFocus('rare_arts_pyretics_focus').GetName]"
+ rare_arts_pyretics_focus_desc: "El peligroso arte de manipular el calor y las llamas."
+ rare_arts_pyretics_focus_effect_desc: "Centrándose en las subvenciones de Pyretics:"
   
- GAINS_RARE_ARTS_LIFESTYLE_XP: "Ganancias $VALUE|V0$ [rare_arts_lifestyle|E] Experiencia" #NT!
- GAINED_RARE_ARTS_LIFESTYLE_XP: "Obtuvo $VALUE|V0$ [rare_arts_lifestyle|E] Experiencia" #NT!
- I_GAIN_RARE_ARTS_LIFESTYLE_XP: "Obtienes $VALUE|V0$ [rare_arts_lifestyle|E] de experiencia" #NT!
- I_GAINED_RARE_ARTS_LIFESTYLE_XP: "Ganaste $VALUE|V0$ [rare_arts_lifestyle|E] Experiencia" #NT!
- TARGET_GAINS_RARE_ARTS_LIFESTYLE_XP: "[CHARACTER.GetShortUIName] gana $VALUE|V0$ [rare_arts_lifestyle|E] experiencia" #NT!
- TARGET_GAINED_RARE_ARTS_LIFESTYLE_XP: "[CHARACTER.GetShortUIName] ganado $VALUE|V0$ [rare_arts_lifestyle|E] Experiencia" #NT!
+ GAINS_RARE_ARTS_LIFESTYLE_XP: "Ganancias $VALUE|V0$ [rare_arts_lifestyle|E] Experiencia"
+ GAINED_RARE_ARTS_LIFESTYLE_XP: "Obtuvo $VALUE|V0$ [rare_arts_lifestyle|E] Experiencia"
+ I_GAIN_RARE_ARTS_LIFESTYLE_XP: "Obtienes $VALUE|V0$ [rare_arts_lifestyle|E] de experiencia"
+ I_GAINED_RARE_ARTS_LIFESTYLE_XP: "Ganaste $VALUE|V0$ [rare_arts_lifestyle|E] Experiencia"
+ TARGET_GAINS_RARE_ARTS_LIFESTYLE_XP: "[CHARACTER.GetShortUIName] gana $VALUE|V0$ [rare_arts_lifestyle|E] experiencia"
+ TARGET_GAINED_RARE_ARTS_LIFESTYLE_XP: "[CHARACTER.GetShortUIName] ganado $VALUE|V0$ [rare_arts_lifestyle|E] Experiencia"
   
- GAINS_A_RARE_ARTS_LIFESTYLE_PERKPOINT: "Ganancias $VALUE|V0$ [rare_arts_lifestyle|E] [perk|E] Desbloquear" #NT!
- GAINED_A_RARE_ARTS_LIFESTYLE_PERKPOINT: "Obtenido $VALUE|V0$ [rare_arts_lifestyle|E] [perk|E] Desbloquear" #NT!
- I_GAIN_A_RARE_ARTS_LIFESTYLE_PERKPOINT: "Obtienes $VALUE|V0$ [rare_arts_lifestyle|E] [perk|E] Desbloquear" #NT!
- I_GAINED_A_RARE_ARTS_LIFESTYLE_PERKPOINT: "Ganaste $VALUE|V0$ [rare_arts_lifestyle|E] [perk|E] Desbloquear" #NT!
- TARGET_GAINS_A_RARE_ARTS_LIFESTYLE_PERKPOINT: "[CHARACTER.GetShortUIName] gana $VALUE|V0$ [rare_arts_lifestyle|E] [perk|E] Desbloquea" #NT!
- TARGET_GAINED_A_RARE_ARTS_LIFESTYLE_PERKPOINT: "[CHARACTER.GetShortUIName] ganado $VALUE|V0$ [rare_arts_lifestyle|E] [perk|E] Desbloquear" #NT!
+ GAINS_A_RARE_ARTS_LIFESTYLE_PERKPOINT: "Ganancias $VALUE|V0$ [rare_arts_lifestyle|E] [perk|E] Desbloquear"
+ GAINED_A_RARE_ARTS_LIFESTYLE_PERKPOINT: "Obtenido $VALUE|V0$ [rare_arts_lifestyle|E] [perk|E] Desbloquear"
+ I_GAIN_A_RARE_ARTS_LIFESTYLE_PERKPOINT: "Obtienes $VALUE|V0$ [rare_arts_lifestyle|E] [perk|E] Desbloquear"
+ I_GAINED_A_RARE_ARTS_LIFESTYLE_PERKPOINT: "Ganaste $VALUE|V0$ [rare_arts_lifestyle|E] [perk|E] Desbloquear"
+ TARGET_GAINS_A_RARE_ARTS_LIFESTYLE_PERKPOINT: "[CHARACTER.GetShortUIName] gana $VALUE|V0$ [rare_arts_lifestyle|E] [perk|E] Desbloquea"
+ TARGET_GAINED_A_RARE_ARTS_LIFESTYLE_PERKPOINT: "[CHARACTER.GetShortUIName] ganado $VALUE|V0$ [rare_arts_lifestyle|E] [perk|E] Desbloquear"
   
- RARE_ARTS_LIFESTYLE_PERK_POINTS_TRIGGER: "Puntos de beneficio del estilo de vida de Rare Arts: $NUM|V0$" #NT!
- RARE_ARTS_LIFESTYLE_XP_TRIGGER: "Experiencias de estilo de vida de artes raras: $NUM|V0$" #NT!
+ RARE_ARTS_LIFESTYLE_PERK_POINTS_TRIGGER: "Puntos de beneficio del estilo de vida de Rare Arts: $NUM|V0$"
+ RARE_ARTS_LIFESTYLE_XP_TRIGGER: "Experiencias de estilo de vida de artes raras: $NUM|V0$"
   
- full_aphrodesia_tooltip: "Obtendrás el árbol completo del Arte de Afrodesia." #NT!
- full_kryos_tooltip: "Obtendrás el árbol completo del Arte de Kryos." #NT!
- full_metamorphosis_tooltip: "Obtendrás el árbol completo del Arte de la Metamorfosis." #NT!
- full_pyretics_tooltip: "Obtendrás el árbol completo del Arte de Pirética." #NT!
+ full_aphrodesia_tooltip: "Obtendrás el árbol completo del Arte de Afrodesia."
+ full_kryos_tooltip: "Obtendrás el árbol completo del Arte de Kryos."
+ full_metamorphosis_tooltip: "Obtendrás el árbol completo del Arte de la Metamorfosis."
+ full_pyretics_tooltip: "Obtendrás el árbol completo del Arte de Pirética."
   
- aphrodesia_visible: "Afrodesia" #NT!
- kryos_visible: "Criós" #NT!
- metamorphosis_visible: "Metamorfosis" #NT!
- pyretics_visible: "Pireticos" #NT!
+ aphrodesia_visible: "Afrodesia"
+ kryos_visible: "Criós"
+ metamorphosis_visible: "Metamorfosis"
+ pyretics_visible: "Pireticos"
   
- fancy_perk_name: "Elegante" #NT!
- yearn_perk_name: "Añorar" #NT!
- covet_perk_name: "Codiciar" #NT!
- crave_perk_name: "Pedir" #NT!
- need_perk_name: "Necesidad" #NT!
- cold_shock_perk_name: "Choque de frío" #NT!
- gelid_rime_perk_name: "Escarcha gélida" #NT!
- frost_facsimile_perk_name: "Facsímil de escarcha" #NT!
- crysta_prison_perk_name: "Prisión de cristal" #NT!
- coldheart_perk_name: "Corazón frío" #NT!
- hidden_form_perk_name: "Forma oculta" #NT!
- impersonate_perk_name: "Personificar" #NT!
- go_ask_alice_perk_name: "Ve y pregúntale a Alice" #NT!
- merlins_lessons_perk_name: "Las lecciones de Merlín" #NT!
- mythic_transformation_perk_name: "Transformación mítica" #NT!
- wil_o_the_wisp_perk_name: "Fuego fatuo" #NT!
- willow_light_perk_name: "Luz de sauce" #NT!
- prometheus_fist_perk_name: "Puño de Prometeo" #NT!
- burn_and_boil_perk_name: "Quemar y hervir" #NT!
- star_body_perk_name: "Cuerpo de estrella" #NT!
+ fancy_perk_name: "Elegante"
+ yearn_perk_name: "Añorar"
+ covet_perk_name: "Codiciar"
+ crave_perk_name: "Pedir"
+ need_perk_name: "Necesidad"
+ cold_shock_perk_name: "Choque de frío"
+ gelid_rime_perk_name: "Escarcha gélida"
+ frost_facsimile_perk_name: "Facsímil de escarcha"
+ crysta_prison_perk_name: "Prisión de cristal"
+ coldheart_perk_name: "Corazón frío"
+ hidden_form_perk_name: "Forma oculta"
+ impersonate_perk_name: "Personificar"
+ go_ask_alice_perk_name: "Ve y pregúntale a Alice"
+ merlins_lessons_perk_name: "Las lecciones de Merlín"
+ mythic_transformation_perk_name: "Transformación mítica"
+ wil_o_the_wisp_perk_name: "Fuego fatuo"
+ willow_light_perk_name: "Luz de sauce"
+ prometheus_fist_perk_name: "Puño de Prometeo"
+ burn_and_boil_perk_name: "Quemar y hervir"
+ star_body_perk_name: "Cuerpo de estrella"
   
- FANCY_PERK_EFFECT: "Como [character_interaction|E], te permite hacer que el objetivo obtenga una opinión positiva de ti.\n#F Crea una buena primera impresión, dándole a alguien la idea de que le gusta un objeto específico que nunca antes ha visto.#!" #NT!
- YEARN_PERK_EFFECT: "Como [character_interaction|E], te permite hacer que los vecinos del objetivo intenten robar sus artefactos.\n#F Cambia el hilo de pensamiento de una persona, llevándola a la conclusión de que desea cierta persona, lugar o cosa en algún momento en el futuro.#!" #NT!
- COVET_PERK_EFFECT: "Como [character_interaction|E], te permite hacer que la persona anhele ser tu amigo o amante.\n#F Provoca obsesión, lo que lleva a una persona a añorar y necesitar a alguien o algo en lo que antes tal vez no hubiera tenido interés.#!" #NT!
- CRAVE_PERK_EFFECT: "Como [character_interaction|E], te permite hacer que los vecinos del objetivo intenten reclamar sus títulos.\n#F Crea un deseo irracional por el objeto de afecto, lo que lleva al sujeto a hacer casi cualquier cosa para obtenerlo, salvo ponerse en peligro.#!" #NT!
- NEED_PERK_EFFECT: "Como [character_interaction|E], te permite hacer que el objetivo inicie un [single_combat_duel|E] contra cualquier personaje que tenga su título o artefacto reclamado, o un personaje que comparta el mismo amigo, amante o consorte con ellos.\n#F La forma más aterradora y menos sutil de este Arte, en este nivel se crea una necesidad de corta duración, pero tan fuerte que cualquiera, incluso el sujeto o el objeto de sus deseos, puede ser sacrificado para satisfacerla.#!" #NT!
- COLD_SHOCK_PERK_EFFECT: "Como [character_interaction|E], te permite hacer que los cortesanos e invitados del objetivo tengan una opinión negativa de ellos.\n#F Enfría una habitación o una persona, rara vez causando daño real, pero haciendo que quienes lo sientan se sientan incómodos por la temperatura.#!" #NT!
- GELID_RIME_PERK_EFFECT: "Otorga un modificador de [GetModifier('gelid_rime_perk_commander_modifier').GetNameWithTooltip] a los comandantes enemigos en la guerra como comandante.\nOtorga un modificador de [GetModifier('gelid_rime_perk_knight_modifier').GetNameWithTooltip] al enemigo [knights|E] cuando está en guerra como comandante o al enemigo en [single_combat_duel|E].\n#F Cubre un área pequeña con una fina capa de hielo, evitando que cualquier persona sobre la que se coloque mueva esa parte de su cuerpo.#!" #NT!
- FROST_FACSIMILE_PERK_EFFECT: "Como [character_interaction|E], te permite crear un artefacto personalizado.\n#F Produce un objeto a partir de hielo sólido, que puede ser endeble como el hielo común o, si está bien elaborado, tan fuerte como el metal.#!" #NT!
- CRYSTA_PRISON_PERK_EFFECT: "Como [character_interaction|E], te permite [imprison|E] al objetivo.\n#F Encierra algo en un bloque sólido de hielo, enfriándolo rápidamente y posiblemente asfixiándolo si es un ser vivo.#!" #NT!
- COLDHEART_PERK_EFFECT: "Como [character_interaction|E], te permite hacer que el objetivo caiga en [GetTrait('torpor').GetName( GetPlayer )].\n#F Congela completamente a un sujeto, lo que hace que se enfríe, quede inconsciente y sea propenso a romperse; despertar de este estado es difícil, especialmente antes de que se acabe el tiempo del truco.#!" #NT!
- HIDDEN_FORM_PERK_EFFECT: "Desbloquea la opción de cambio de forma [GetModifier( 'POD_shapeshift_form_invisible_modifier' ).GetNameWithTooltip|L].\n#F Camufla a un sujeto, lo que hace que sea casi imposible detectarlo a simple vista.#!" #NT!
- IMPERSONATE_PERK_EFFECT: "Bonificación a Cambio de forma [character_interaction|E] para cambiar de apariencia.\n#F Cambia de forma a otra persona, incluso enmascarando a su pariente para otro.#!" #NT!
- GO_ASK_ALICE_PERK_EFFECT: "Desbloquea las opciones de cambio de forma [GetModifier( 'POD_shapeshift_form_giant_modifier' ).GetNameWithTooltip|L] y [GetModifier( 'POD_shapeshift_form_lilliputian_modifier' ).GetNameWithTooltip|L].\n#F Permite cambios de tamaño, haciendo que las personas y los objetos sean más grandes que la vida real o increíblemente pequeños.#!" #NT!
- MERLINS_LESSONS_PERK_EFFECT: "Permite cambiar de forma a varias formas animales.\n#F Un cambio de forma más dramático que el de Impersonate, que permite transformarse en un animal; cuando se combina con Go Ask Alice, ese animal puede ser de cualquier tamaño.#!" #NT!
- MYTHIC_TRANSFORMATION_PERK_EFFECT: "Permite cambiar de forma a varias formas pasadas, como [GetModifier( 'POD_shapeshift_form_celestial_dragon_modifier' ).GetNameWithTooltip|L].\n#F Transforma a las hadas en una criatura que no es de este mundo, con todos sus poderes, siempre que el usuario pueda evitar el aplastante agarre de la Banalidad que viene con ese poder.#!" #NT!
- WIL_O_THE_WISP_PERK_EFFECT: "#F Produce una bola de llama falsa, que guía a su creador por un camino indirecto hacia un objeto o persona deseado.#!" #NT!
- WILLOW_LIGHT_PERK_EFFECT: "#F Crea un brillo brillante durante varias horas, haciendo que un objeto sea luminoso y difícil de ignorar.#!" #NT!
- PROMETHEUS_FIST_PERK_EFFECT: "Otorga un modificador de [GetModifier('prometheus_fist_perk_commander_modifier').GetNameWithTooltip] a los comandantes aliados en la guerra como comandante.\nOtorga un modificador de [GetModifier('prometheus_fist_perk_knight_modifier').GetNameWithTooltip] a un aliado [knights|E] cuando estés en la guerra como comandante o a ti mismo en [single_combat_duel|E].\n#F Rodea un objeto con una llama que no quema al objeto en sí, pero cualquier cosa que toque el objeto se incendiará de manera normal.#!" #NT!
- BURN_AND_BOIL_PERK_EFFECT: "#F Enciende un objeto en llamas, de manera que daña al objeto en sí; este fuego consumirá el objeto y no se podrá controlar, al igual que el fuego estándar.#!" #NT!
- STAR_BODY_PERK_EFFECT: "#F Transforma un objeto en fuego puro, sin provocar cambios en sus propiedades intrínsecas, pero dándole el brillo y la posibilidad de encender objetos de fuego.#!" #NT!
+ FANCY_PERK_EFFECT: "Como [character_interaction|E], te permite hacer que el objetivo obtenga una opinión positiva de ti.\n#F Crea una buena primera impresión, dándole a alguien la idea de que le gusta un objeto específico que nunca antes ha visto.#!"
+ YEARN_PERK_EFFECT: "Como [character_interaction|E], te permite hacer que los vecinos del objetivo intenten robar sus artefactos.\n#F Cambia el hilo de pensamiento de una persona, llevándola a la conclusión de que desea cierta persona, lugar o cosa en algún momento en el futuro.#!"
+ COVET_PERK_EFFECT: "Como [character_interaction|E], te permite hacer que la persona anhele ser tu amigo o amante.\n#F Provoca obsesión, lo que lleva a una persona a añorar y necesitar a alguien o algo en lo que antes tal vez no hubiera tenido interés.#!"
+ CRAVE_PERK_EFFECT: "Como [character_interaction|E], te permite hacer que los vecinos del objetivo intenten reclamar sus títulos.\n#F Crea un deseo irracional por el objeto de afecto, lo que lleva al sujeto a hacer casi cualquier cosa para obtenerlo, salvo ponerse en peligro.#!"
+ NEED_PERK_EFFECT: "Como [character_interaction|E], te permite hacer que el objetivo inicie un [single_combat_duel|E] contra cualquier personaje que tenga su título o artefacto reclamado, o un personaje que comparta el mismo amigo, amante o consorte con ellos.\n#F La forma más aterradora y menos sutil de este Arte, en este nivel se crea una necesidad de corta duración, pero tan fuerte que cualquiera, incluso el sujeto o el objeto de sus deseos, puede ser sacrificado para satisfacerla.#!"
+ COLD_SHOCK_PERK_EFFECT: "Como [character_interaction|E], te permite hacer que los cortesanos e invitados del objetivo tengan una opinión negativa de ellos.\n#F Enfría una habitación o una persona, rara vez causando daño real, pero haciendo que quienes lo sientan se sientan incómodos por la temperatura.#!"
+ GELID_RIME_PERK_EFFECT: "Otorga un modificador de [GetModifier('gelid_rime_perk_commander_modifier').GetNameWithTooltip] a los comandantes enemigos en la guerra como comandante.\nOtorga un modificador de [GetModifier('gelid_rime_perk_knight_modifier').GetNameWithTooltip] al enemigo [knights|E] cuando está en guerra como comandante o al enemigo en [single_combat_duel|E].\n#F Cubre un área pequeña con una fina capa de hielo, evitando que cualquier persona sobre la que se coloque mueva esa parte de su cuerpo.#!"
+ FROST_FACSIMILE_PERK_EFFECT: "Como [character_interaction|E], te permite crear un artefacto personalizado.\n#F Produce un objeto a partir de hielo sólido, que puede ser endeble como el hielo común o, si está bien elaborado, tan fuerte como el metal.#!"
+ CRYSTA_PRISON_PERK_EFFECT: "Como [character_interaction|E], te permite [imprison|E] al objetivo.\n#F Encierra algo en un bloque sólido de hielo, enfriándolo rápidamente y posiblemente asfixiándolo si es un ser vivo.#!"
+ COLDHEART_PERK_EFFECT: "Como [character_interaction|E], te permite hacer que el objetivo caiga en [GetTrait('torpor').GetName( GetPlayer )].\n#F Congela completamente a un sujeto, lo que hace que se enfríe, quede inconsciente y sea propenso a romperse; despertar de este estado es difícil, especialmente antes de que se acabe el tiempo del truco.#!"
+ HIDDEN_FORM_PERK_EFFECT: "Desbloquea la opción de cambio de forma [GetModifier( 'POD_shapeshift_form_invisible_modifier' ).GetNameWithTooltip|L].\n#F Camufla a un sujeto, lo que hace que sea casi imposible detectarlo a simple vista.#!"
+ IMPERSONATE_PERK_EFFECT: "Bonificación a Cambio de forma [character_interaction|E] para cambiar de apariencia.\n#F Cambia de forma a otra persona, incluso enmascarando a su pariente para otro.#!"
+ GO_ASK_ALICE_PERK_EFFECT: "Desbloquea las opciones de cambio de forma [GetModifier( 'POD_shapeshift_form_giant_modifier' ).GetNameWithTooltip|L] y [GetModifier( 'POD_shapeshift_form_lilliputian_modifier' ).GetNameWithTooltip|L].\n#F Permite cambios de tamaño, haciendo que las personas y los objetos sean más grandes que la vida real o increíblemente pequeños.#!"
+ MERLINS_LESSONS_PERK_EFFECT: "Permite cambiar de forma a varias formas animales.\n#F Un cambio de forma más dramático que el de Impersonate, que permite transformarse en un animal; cuando se combina con Go Ask Alice, ese animal puede ser de cualquier tamaño.#!"
+ MYTHIC_TRANSFORMATION_PERK_EFFECT: "Permite cambiar de forma a varias formas pasadas, como [GetModifier( 'POD_shapeshift_form_celestial_dragon_modifier' ).GetNameWithTooltip|L].\n#F Transforma a las hadas en una criatura que no es de este mundo, con todos sus poderes, siempre que el usuario pueda evitar el aplastante agarre de la Banalidad que viene con ese poder.#!"
+ WIL_O_THE_WISP_PERK_EFFECT: "#F Produce una bola de llama falsa, que guía a su creador por un camino indirecto hacia un objeto o persona deseado.#!"
+ WILLOW_LIGHT_PERK_EFFECT: "#F Crea un brillo brillante durante varias horas, haciendo que un objeto sea luminoso y difícil de ignorar.#!"
+ PROMETHEUS_FIST_PERK_EFFECT: "Otorga un modificador de [GetModifier('prometheus_fist_perk_commander_modifier').GetNameWithTooltip] a los comandantes aliados en la guerra como comandante.\nOtorga un modificador de [GetModifier('prometheus_fist_perk_knight_modifier').GetNameWithTooltip] a un aliado [knights|E] cuando estés en la guerra como comandante o a ti mismo en [single_combat_duel|E].\n#F Rodea un objeto con una llama que no quema al objeto en sí, pero cualquier cosa que toque el objeto se incendiará de manera normal.#!"
+ BURN_AND_BOIL_PERK_EFFECT: "#F Enciende un objeto en llamas, de manera que daña al objeto en sí; este fuego consumirá el objeto y no se podrá controlar, al igual que el fuego estándar.#!"
+ STAR_BODY_PERK_EFFECT: "#F Transforma un objeto en fuego puro, sin provocar cambios en sus propiedades intrínsecas, pero dándole el brillo y la posibilidad de encender objetos de fuego.#!"
   
   ### Kith Art ### 
   
- game_concept_noble_arts: "Artes nobles" #NT!
- game_concept_noble_arts_lifestyle: "Artes nobles" #NT!
- game_concept_noble_arts_lifestyle_desc: "Estas artes son propias de las Casas nobles, lo que las vincula naturalmente con los Sidhe. Otros linajes suelen aprenderlas al obtener títulos dentro de una de las Casas." #NT!
+ game_concept_noble_arts: "Artes nobles"
+ game_concept_noble_arts_lifestyle: "Artes nobles"
+ game_concept_noble_arts_lifestyle_desc: "Estas artes son propias de las Casas nobles, lo que las vincula naturalmente con los Sidhe. Otros linajes suelen aprenderlas al obtener títulos dentro de una de las Casas."
   
- game_concept_kith_arts_lifestyle: "Artes Kith" #NT!
- game_concept_kith_arts_lifestyle_desc: "Aunque los Sidhe son el ejemplo más famoso, otros linaje también desarrollaron artes que no compartieron con otros, o mostraron poco interés en aprender estas artes." #NT!
+ game_concept_kith_arts_lifestyle: "Artes Kith"
+ game_concept_kith_arts_lifestyle_desc: "Aunque los Sidhe son el ejemplo más famoso, otros linaje también desarrollaron artes que no compartieron con otros, o mostraron poco interés en aprender estas artes."
   
- kith_arts_lifestyle_name: "Artes Kith" #NT!
- kith_arts_lifestyle_desc: "Centrarse en [noble_arts|E] y artes desarrolladas por otros kiths." #NT!
- kith_arts_lifestyle_highlight_desc: "Por ser [GetTrait('sidhe').GetName( GetPlayer )] ganas #P 50%#! más [experience|E] en este Estilo de Vida." #NT!
- monthly_kith_arts_lifestyle_xp_gain_mult: "Kith Arts mensual [lifestyle|E] [experience|E]" #NT!
+ kith_arts_lifestyle_name: "Artes Kith"
+ kith_arts_lifestyle_desc: "Centrarse en [noble_arts|E] y artes desarrolladas por otros kiths."
+ kith_arts_lifestyle_highlight_desc: "Por ser [GetTrait('sidhe').GetName( GetPlayer )] ganas #P 50%#! más [experience|E] en este Estilo de Vida."
+ monthly_kith_arts_lifestyle_xp_gain_mult: "Kith Arts mensual [lifestyle|E] [experience|E]"
   
- kith_arts_chronos_focus: "Enfoque de Chronos" #NT!
- kith_arts_chronos_focus_modifier: "[GetFocus('kith_arts_chronos_focus').GetName]" #NT!
- kith_arts_chronos_focus_desc: "Arte de manipulación temporal." #NT!
- kith_arts_chronos_focus_effect_desc: "Centrándose en las subvenciones de Chronos:" #NT!
+ kith_arts_chronos_focus: "Enfoque de Chronos"
+ kith_arts_chronos_focus_modifier: "[GetFocus('kith_arts_chronos_focus').GetName]"
+ kith_arts_chronos_focus_desc: "Arte de manipulación temporal."
+ kith_arts_chronos_focus_effect_desc: "Centrándose en las subvenciones de Chronos:"
   
- kith_arts_dream_craft_focus: "Enfoque en la elaboración de sueños" #NT!
- kith_arts_dream_craft_focus_modifier: "[GetFocus('kith_arts_dream_craft_focus').GetName]" #NT!
- kith_arts_dream_craft_focus_desc: "Arte de dar forma a las cosas dentro del [dreaming|E]." #NT!
- kith_arts_dream_craft_focus_effect_desc: "Centrándose en las subvenciones Dream-Craft:" #NT!
+ kith_arts_dream_craft_focus: "Enfoque en la elaboración de sueños"
+ kith_arts_dream_craft_focus_modifier: "[GetFocus('kith_arts_dream_craft_focus').GetName]"
+ kith_arts_dream_craft_focus_desc: "Arte de dar forma a las cosas dentro del [dreaming|E]."
+ kith_arts_dream_craft_focus_effect_desc: "Centrándose en las subvenciones Dream-Craft:"
   
- kith_arts_naming_focus: "Enfoque en la denominación" #NT!
- kith_arts_naming_focus_modifier: "[GetFocus('kith_arts_naming_focus').GetName]" #NT!
- kith_arts_naming_focus_desc: "El arte de las palabras y el poder de los Nombres Verdaderos." #NT!
- kith_arts_naming_focus_effect_desc: "Centrándose en las subvenciones de denominación:" #NT!
+ kith_arts_naming_focus: "Enfoque en la denominación"
+ kith_arts_naming_focus_modifier: "[GetFocus('kith_arts_naming_focus').GetName]"
+ kith_arts_naming_focus_desc: "El arte de las palabras y el poder de los Nombres Verdaderos."
+ kith_arts_naming_focus_effect_desc: "Centrándose en las subvenciones de denominación:"
   
- kith_arts_sovereign_focus: "Enfoque soberano" #NT!
- kith_arts_sovereign_focus_modifier: "[GetFocus('kith_arts_sovereign_focus').GetName]" #NT!
- kith_arts_sovereign_focus_desc: "Arte de controlar a los plebeyos y a los nobles menores." #NT!
- kith_arts_sovereign_focus_effect_desc: "Centrándose en las subvenciones soberanas:" #NT!
+ kith_arts_sovereign_focus: "Enfoque soberano"
+ kith_arts_sovereign_focus_modifier: "[GetFocus('kith_arts_sovereign_focus').GetName]"
+ kith_arts_sovereign_focus_desc: "Arte de controlar a los plebeyos y a los nobles menores."
+ kith_arts_sovereign_focus_effect_desc: "Centrándose en las subvenciones soberanas:"
   
- kith_arts_infusion_focus: "Enfoque de infusión" #NT!
- kith_arts_infusion_focus_modifier: "[GetFocus('kith_arts_infusion_focus').GetName]" #NT!
- kith_arts_infusion_focus_desc: "Arte de forjar y reconstruir quimeras." #NT!
- kith_arts_infusion_focus_effect_desc: "Centrándose en las subvenciones de infusión:" #NT!
+ kith_arts_infusion_focus: "Enfoque de infusión"
+ kith_arts_infusion_focus_modifier: "[GetFocus('kith_arts_infusion_focus').GetName]"
+ kith_arts_infusion_focus_desc: "Arte de forjar y reconstruir quimeras."
+ kith_arts_infusion_focus_effect_desc: "Centrándose en las subvenciones de infusión:"
   
- kith_arts_tale_craft_focus: "Enfoque en la artesanía de cuentos" #NT!
- kith_arts_tale_craft_focus_modifier: "[GetFocus('kith_arts_tale_craft_focus').GetName]" #NT!
- kith_arts_tale_craft_focus_desc: "Arte de historias bellas y encantadoras." #NT!
- kith_arts_tale_craft_focus_effect_desc: "Centrándose en las subvenciones de Tale Craft:" #NT!
+ kith_arts_tale_craft_focus: "Enfoque en la artesanía de cuentos"
+ kith_arts_tale_craft_focus_modifier: "[GetFocus('kith_arts_tale_craft_focus').GetName]"
+ kith_arts_tale_craft_focus_desc: "Arte de historias bellas y encantadoras."
+ kith_arts_tale_craft_focus_effect_desc: "Centrándose en las subvenciones de Tale Craft:"
   
- GAINS_KITH_ARTS_LIFESTYLE_XP: "Ganancias $VALUE|V0$ [kith_arts_lifestyle|E] Experiencia" #NT!
- GAINED_KITH_ARTS_LIFESTYLE_XP: "Obtuvo $VALUE|V0$ [kith_arts_lifestyle|E] Experiencia" #NT!
- I_GAIN_KITH_ARTS_LIFESTYLE_XP: "Obtienes $VALUE|V0$ [kith_arts_lifestyle|E] de experiencia" #NT!
- I_GAINED_KITH_ARTS_LIFESTYLE_XP: "Ganaste $VALUE|V0$ [kith_arts_lifestyle|E] Experiencia" #NT!
- TARGET_GAINS_KITH_ARTS_LIFESTYLE_XP: "[CHARACTER.GetShortUIName] gana $VALUE|V0$ [kith_arts_lifestyle|E] experiencia" #NT!
- TARGET_GAINED_KITH_ARTS_LIFESTYLE_XP: "[CHARACTER.GetShortUIName] ganado $VALUE|V0$ [kith_arts_lifestyle|E] Experiencia" #NT!
+ GAINS_KITH_ARTS_LIFESTYLE_XP: "Ganancias $VALUE|V0$ [kith_arts_lifestyle|E] Experiencia"
+ GAINED_KITH_ARTS_LIFESTYLE_XP: "Obtuvo $VALUE|V0$ [kith_arts_lifestyle|E] Experiencia"
+ I_GAIN_KITH_ARTS_LIFESTYLE_XP: "Obtienes $VALUE|V0$ [kith_arts_lifestyle|E] de experiencia"
+ I_GAINED_KITH_ARTS_LIFESTYLE_XP: "Ganaste $VALUE|V0$ [kith_arts_lifestyle|E] Experiencia"
+ TARGET_GAINS_KITH_ARTS_LIFESTYLE_XP: "[CHARACTER.GetShortUIName] gana $VALUE|V0$ [kith_arts_lifestyle|E] experiencia"
+ TARGET_GAINED_KITH_ARTS_LIFESTYLE_XP: "[CHARACTER.GetShortUIName] ganado $VALUE|V0$ [kith_arts_lifestyle|E] Experiencia"
   
- GAINS_A_KITH_ARTS_LIFESTYLE_PERKPOINT: "Ganancias $VALUE|V0$ [kith_arts_lifestyle|E] [perk|E] Desbloquear" #NT!
- GAINED_A_KITH_ARTS_LIFESTYLE_PERKPOINT: "Obtenido $VALUE|V0$ [kith_arts_lifestyle|E] [perk|E] Desbloquear" #NT!
- I_GAIN_A_KITH_ARTS_LIFESTYLE_PERKPOINT: "Obtienes $VALUE|V0$ [kith_arts_lifestyle|E] [perk|E] Desbloquear" #NT!
- I_GAINED_A_KITH_ARTS_LIFESTYLE_PERKPOINT: "Ganaste $VALUE|V0$ [kith_arts_lifestyle|E] [perk|E] Desbloquear" #NT!
- TARGET_GAINS_A_KITH_ARTS_LIFESTYLE_PERKPOINT: "[CHARACTER.GetShortUIName] gana $VALUE|V0$ [kith_arts_lifestyle|E] [perk|E] Desbloquear" #NT!
- TARGET_GAINED_A_KITH_ARTS_LIFESTYLE_PERKPOINT: "[CHARACTER.GetShortUIName] ganado $VALUE|V0$ [kith_arts_lifestyle|E] [perk|E] Desbloquear" #NT!
+ GAINS_A_KITH_ARTS_LIFESTYLE_PERKPOINT: "Ganancias $VALUE|V0$ [kith_arts_lifestyle|E] [perk|E] Desbloquear"
+ GAINED_A_KITH_ARTS_LIFESTYLE_PERKPOINT: "Obtenido $VALUE|V0$ [kith_arts_lifestyle|E] [perk|E] Desbloquear"
+ I_GAIN_A_KITH_ARTS_LIFESTYLE_PERKPOINT: "Obtienes $VALUE|V0$ [kith_arts_lifestyle|E] [perk|E] Desbloquear"
+ I_GAINED_A_KITH_ARTS_LIFESTYLE_PERKPOINT: "Ganaste $VALUE|V0$ [kith_arts_lifestyle|E] [perk|E] Desbloquear"
+ TARGET_GAINS_A_KITH_ARTS_LIFESTYLE_PERKPOINT: "[CHARACTER.GetShortUIName] gana $VALUE|V0$ [kith_arts_lifestyle|E] [perk|E] Desbloquear"
+ TARGET_GAINED_A_KITH_ARTS_LIFESTYLE_PERKPOINT: "[CHARACTER.GetShortUIName] ganado $VALUE|V0$ [kith_arts_lifestyle|E] [perk|E] Desbloquear"
   
- KITH_ARTS_LIFESTYLE_PERK_POINTS_TRIGGER: "Puntos de beneficio del estilo de vida de Kith Arts: $NUM|V0$" #NT!
+ KITH_ARTS_LIFESTYLE_PERK_POINTS_TRIGGER: "Puntos de beneficio del estilo de vida de Kith Arts: $NUM|V0$"
   
- full_chronos_tooltip: "Obtendrás el árbol completo del Arte de Chronos." #NT!
- full_dream_craft_tooltip: "Obtienes el árbol completo de Art of Dream-Craft." #NT!
- full_naming_tooltip: "Obtendrás el árbol completo del Arte de Nombrar." #NT!
- full_sovereign_tooltip: "Obtendrás el árbol completo del Arte del Soberano." #NT!
- full_infusion_tooltip: "Obtendrás el árbol completo del Arte de la Infusión." #NT!
- full_tale_craft_tooltip: "Obtendrás el árbol completo de creación del arte de los cuentos." #NT!
+ full_chronos_tooltip: "Obtendrás el árbol completo del Arte de Chronos."
+ full_dream_craft_tooltip: "Obtienes el árbol completo de Art of Dream-Craft."
+ full_naming_tooltip: "Obtendrás el árbol completo del Arte de Nombrar."
+ full_sovereign_tooltip: "Obtendrás el árbol completo del Arte del Soberano."
+ full_infusion_tooltip: "Obtendrás el árbol completo del Arte de la Infusión."
+ full_tale_craft_tooltip: "Obtendrás el árbol completo de creación del arte de los cuentos."
   
- chronos_visible: "Cronos" #NT!
- dream_craft_visible: "La artesanía de los sueños" #NT!
- naming_visible: "Nombramiento" #NT!
- sovereign_visible: "Soberano" #NT!
- infusion_visible: "Infusión" #NT!
- tale_craft_visible: "Manualidades de cuentos" #NT!
+ chronos_visible: "Cronos"
+ dream_craft_visible: "La artesanía de los sueños"
+ naming_visible: "Nombramiento"
+ sovereign_visible: "Soberano"
+ infusion_visible: "Infusión"
+ tale_craft_visible: "Manualidades de cuentos"
   
- wyrd_perk_name: "El wyrd" #NT!
- backward_glance_perk_name: "Mirada hacia atrás" #NT!
- dream_time_perk_name: "Hora de soñar" #NT!
- permanence_perk_name: "Permanencia" #NT!
- reversa_of_fortune_perk_name: "Cambio de suerte" #NT!
- find_silver_path_perk_name: "Encuentra el camino de la plata" #NT!
- determinism_perk_name: "Determinismo/La danza alegre" #NT!
- homestead_perk_name: "Finca/Ancla" #NT!
- attunement_perk_name: "Sintonización/Cabalgata de sueños" #NT!
- dream_weaving_perk_name: "Tejiendo sueños" #NT!
- seek_n_spell_perk_name: "Busca y deletrea" #NT!
- rune_perk_name: "Runa" #NT!
- runic_circle_perk_name: "Círculo Rúnico" #NT!
- saining_perk_name: "Sacudiendo" #NT!
- reweaving_perk_name: "Retejiendo" #NT!
- protocol_perk_name: "Protocolo" #NT!
- dictum_perk_name: "Dictamen" #NT!
- grandeur_perk_name: "Grandeza" #NT!
- weaver_ward_perk_name: "Barrio del tejedor" #NT!
- geas_ban_perk_name: "Geas/Prohibición" #NT!
- harden_perk_name: "Endurecer" #NT!
- toughen_perk_name: "Endurecer" #NT!
- fubar_generation_perk_name: "Generación FUBAR" #NT!
- animantis_perk_name: "Animantis" #NT!
- gilgul_perk_name: "Gilgul" #NT!
- agemos_blessing_perk_name: "La bendición de Agemo" #NT!
- flickering_firelight_perk_name: "Luz de fuego parpadeante" #NT!
- murmur_in_the_crowd_perk_name: "Murmullo en la multitud" #NT!
- sticks_and_stones_perk_name: "Palos y piedras" #NT!
- moment_of_truth_perk_name: "Momento de la verdad" #NT!
+ wyrd_perk_name: "El wyrd"
+ backward_glance_perk_name: "Mirada hacia atrás"
+ dream_time_perk_name: "Hora de soñar"
+ permanence_perk_name: "Permanencia"
+ reversa_of_fortune_perk_name: "Cambio de suerte"
+ find_silver_path_perk_name: "Encuentra el camino de la plata"
+ determinism_perk_name: "Determinismo/La danza alegre"
+ homestead_perk_name: "Finca/Ancla"
+ attunement_perk_name: "Sintonización/Cabalgata de sueños"
+ dream_weaving_perk_name: "Tejiendo sueños"
+ seek_n_spell_perk_name: "Busca y deletrea"
+ rune_perk_name: "Runa"
+ runic_circle_perk_name: "Círculo Rúnico"
+ saining_perk_name: "Sacudiendo"
+ reweaving_perk_name: "Retejiendo"
+ protocol_perk_name: "Protocolo"
+ dictum_perk_name: "Dictamen"
+ grandeur_perk_name: "Grandeza"
+ weaver_ward_perk_name: "Barrio del tejedor"
+ geas_ban_perk_name: "Geas/Prohibición"
+ harden_perk_name: "Endurecer"
+ toughen_perk_name: "Endurecer"
+ fubar_generation_perk_name: "Generación FUBAR"
+ animantis_perk_name: "Animantis"
+ gilgul_perk_name: "Gilgul"
+ agemos_blessing_perk_name: "La bendición de Agemo"
+ flickering_firelight_perk_name: "Luz de fuego parpadeante"
+ murmur_in_the_crowd_perk_name: "Murmullo en la multitud"
+ sticks_and_stones_perk_name: "Palos y piedras"
+ moment_of_truth_perk_name: "Momento de la verdad"
   
- WYRD_PERK_EFFECT: "Otorga un modificador de [GetModifier('wyrd_perk_commander_modifier').GetNameWithTooltip] a los comandantes enemigos en la guerra como comandante.\nOtorga un modificador de [GetModifier('wyrd_perk_knight_modifier').GetNameWithTooltip] a los enemigos [knights|E] cuando están en la guerra como comandante o a los enemigos en [single_combat_duel|E].\n#F Hace que otro pierda de vista el orden correcto del tiempo, siendo incapaz de decir qué eventos ocurrieron antes o después de otros.#!" #NT!
- BACKWARD_GLANCE_PERK_EFFECT: "#F Echar un vistazo a algo que sucedió en el pasado, ayudando a recordar imágenes vistas antes y proporcionando nuevas imágenes que no se vieron en ese momento.#!" #NT!
- DREAM_TIME_PERK_EFFECT: "Como [character_interaction|E], te permite otorgar un modificador de velocidad positivo o negativo al personaje o condado objetivo.\n#F Cambia la velocidad del tiempo en un área o para una persona, ya sea haciendo que vaya mucho más rápido de lo que normalmente debería o que se ralentice al mínimo.#!" #NT!
- PERMANENCE_PERK_EFFECT: "Como [character_interaction|E], te permite renovar el modificador de truco del objetivo.\n#F Extiende la duración de un Arte lanzado por otro, lo que le permite durar sustancialmente más de lo que el resultado originalmente exigía.#!" #NT!
- REVERSA_OF_FORTUNE_PERK_EFFECT: "Como [character_interaction|E], te permite darte [GetModifier( 'reversa_of_fortune_perk_modifier' ).GetNameWithTooltip|L] a ti mismo durante #V 1#! días.\n#F Un arte extremadamente complejo y costoso que permite al usuario revertir los últimos minutos y tomar nuevas decisiones.#!" #NT!
- FIND_SILVER_PATH_PERK_EFFECT: "Posibilidad de quedar atrapado en la Umbra: #P -5%#!\nMonthly Progreso de exploración de la Umbra: [grace_i]#P +10#!\n#F Muestra la ubicación del Camino Plateado, el camino que guía a las hadas a lo largo de la [dreaming|E], y otorga información sobre quién o qué se encuentra actualmente en él.#!" #NT!
- DETERMINISM_PERK_EFFECT: "Posibilidad de encontrar evento en la Umbra: [grace_i]#P +100%#!\nChance de quedar atrapado en la Umbra: #P -5%#!\nMonthly Progreso de exploración de la Umbra: [grace_i]#P +10#!\n#F Muestra lo que hay al otro lado de un camino, un misterioso sendero del [dreaming|E] en el que el espacio y el tiempo están muy distorsionados.#!" #NT!
- THE_MERRY_DANCE_PERK_EFFECT: "Probabilidad de encontrar un evento en la Umbra: [grace_i]#P +100%#!\nChance de quedar atrapado en la Umbra: #P -5%#!\nMonthly Progreso de exploración de la Umbra: [grace_i]#P +5#!\n#F El Firchlis es una fuerza poderosa dentro de los Reinos Míticos. El Sueño cambia constantemente, y el Firchlis es una fuente clave de ese cambio. Los duendes expertos pueden, con concentración y preparación, influir en los cambios que trae el Firchlis.#!" #NT!
- HOMESTEAD_PERK_EFFECT: "Desbloquea el edificio [GetBuilding('homestead_freehold_01').GetName].\n#F Fija un punto del [dreaming|E] para que, en lugar de cambiar constantemente según los caprichos del Wyld, permanezca como lo pretendía el lanzador.#!" #NT!
- ANCHOR_PERK_EFFECT: "[dreaming|E] [building|E] tiempo de desbloqueo: #P -50%#!\n#F Con este truco, un changeling puede "solidificar" el [dreaming|E] hasta cierto punto, lo que le permite establecer una fortaleza permanente dentro del Reino Mítico.#!" #NT!
- ATTUNEMENT_PERK_EFFECT: "Recibirás una notificación si alguien intenta asesinar a tus amigos o familiares. Recibirás una notificación si alguien intenta seducir a tus amantes o consortes. Tu prisionero tiene menos posibilidades de escapar de tu prisión. #F Vincula a un Kithain a una persona, lugar o cosa, haciendo que, pase lo que pase, el Kithain sea el primero en enterarse. #!" #NT!
- DREAM_RIDING_PERK_EFFECT: "Permite interactuar con el [earth|E] mientras se permanece en el [dreaming|E].\nComo [character_interaction|E], te permite obtener la forma de opinión del objetivo.\n#F Este truco permite a un changeling interactuar con un sueño mortal mientras la Estirpe está en el [dreaming|E]. No siempre es una buena idea hacerlo, ya que las interacciones de la Estirpe pueden causar alteraciones extrañas en el sueño en sí. Aunque la interacción es posible, el control real del sueño no lo es.#!" #NT!
- DREAM_WEAVING_PERK_EFFECT: "#F Produce una quimera, similar al truco Sombras fantasmales, pero, si bien esa quimera es temporal, esta quimera es permanente, siempre y cuando nunca abandone el [dreaming|E].#!" #NT!
- SEEK_N_SPELL_PERK_EFFECT: "#F Ya sea que entiendas el idioma o no, o incluso si el contenido está bloqueado mágicamente, es posible leer cualquier texto.#!" #NT!
- RUNE_PERK_EFFECT: "Como [character_interaction|E], te permite actualizar un modificador de artefacto o darle un nuevo modificador.\n#F Inscribe una palabra de poder en un objeto, lo que le permite ser mucho más efectivo para una tarea específica.#!" #NT!
- RUNIC_CIRCLE_PERK_EFFECT: "Otorga un modificador [GetModifier('runic_circle_perk_modifier').GetNameWithTooltip] a cada cortesano, consejero, amigo y amante.\n#F Produce un círculo de palabras protectoras, que proporciona resistencia contra fuerzas sobrenaturales que intentan romper el círculo.#!" #NT!
- SAINING_PERK_EFFECT: "Como [character_interaction|E], puedes descubrir el verdadero nombre de otro personaje.\n#F Recuerda el ritual del Nombre Verdadero que se utiliza cuando un Kithain pasa por primera vez por Chrysalis, mostrando al usuario el Nombre Verdadero de ese individuo.#!" #NT!
- REWEAVING_PERK_EFFECT: "Como [character_interaction|E], te permite editar los rasgos del objetivo.\n#F Una vez que se conoce el nombre verdadero, este truco permite al lanzador editar ese nombre y, al hacerlo, edita los rasgos centrales de esa persona u objeto.#!" #NT!
- PROTOCOL_PERK_EFFECT: "#F Convoca a una corte asegurada mágicamente a una sesión, impidiendo que los plebeyos interrumpan los procedimientos.#!" #NT!
- DICTUM_PERK_EFFECT: "Como [character_interaction|E], te permite obtener un gancho sobre el objetivo.\n#F Especifica una solicitud al sujeto del truco, que debe cumplir lo mejor que pueda, a menos que sea demasiado peligroso.#!" #NT!
- GRANDEUR_PERK_EFFECT: "Como [character_interaction|E], te permite reclutar o [imprison|E] apuntar a un personaje no desembarcado.\n#F Adopta un manto de pura belleza y gracia, haciendo que sea casi imposible para otros intentar contradecir tus deseos.#!" #NT!
- WEAVER_WARD_PERK_EFFECT: "Es más probable que [imprison|E] [characters|E] después de un [siege|E] o [raid|E] exitoso.\nDestierra el artefacto de concesión de personajes no desembarcados.\n#F Bloquea una puerta o un pasaje angosto, haciendo imposible que un grupo específico de objetos pase a través de ellos.#!" #NT!
- GEAS_BAN_PERK_EFFECT: "Desbloquea Juramento [character_interaction|E], haciendo que el objetivo sea [GetTrait('oathbreaker').GetName( GetPlayer )] si lo rompe.\n#F Produce un Juramento, que requiere que una persona cumpla una acción (Geas) o se abstenga de realizar cierta acción (Ban); los que rompan este Juramento sufrirán alguna maldición como resultado.#!" #NT!
- HARDEN_PERK_EFFECT: "#F Prepara una quimera salvaje convirtiéndola en una quimera elaborada, lo que permite que se le apliquen más aplicaciones de Infusión.#!" #NT!
- TOUGHEN_PERK_EFFECT: "#F Agrega durabilidad a los materiales quiméricos, incluidos otros cambiaformas, otorgando resistencia tanto al daño como a la destrucción de Banalidad.#!" #NT!
- FUBAR_GENERATION_PERK_EFFECT: "Te permite crear un recipiente de glamour.\n#F Crea y esclaviza a un FUBAR, una criatura quimérica que puede servir como una batería de glamour.#!" #NT!
- ANIMANTIS_PERK_EFFECT: "Permite fabricar un personaje [GetTrait('automaton').GetName( GetPlayer )].\nPuede reclutar a [GetMaA('golems').GetName] como [men_at_arms|E].\n#F Produce un gólem, un sirviente mecánico que servirá al Nocker y lo ayudará en su trabajo.#!" #NT!
- GILGUL_PERK_EFFECT: "Como [character_interaction|E], te permite editar libremente los rasgos mentales y físicos del objetivo [GetTrait('automaton').GetName( GetPlayer )].\n#F Un truco terriblemente peligroso que, si tiene éxito, añade pensamiento consciente a una quimera o animantis, y posiblemente incluso a un alma verdadera.#!" #NT!
- AGEMOS_BLESSING_PERK_EFFECT: "#F Lee las emociones de una multitud entera a la vez, para determinar cuál es la mejor manera de proceder para entretenerlos.#!" #NT!
- FLICKERING_FIRELIGHT_PERK_EFFECT: "#F Convierte una pequeña ilusión quimérica en algo de lo que se habla en la historia, proporcionando elementos escenográficos con los que contar la historia.#!" #NT!
- MURMUR_IN_THE_CROWD_PERK_EFFECT: "#F Infunde una emoción en la multitud, aumentando el atractivo de la historia de Eshu, además de proporcionar una razón para que la cuenten.#!" #NT!
- STICKS_AND_STONES_PERK_EFFECT: "#F Convierte las palabras en un refugio temporal, protegiendo al creador de cuentos de cualquier daño, siempre y cuando siga contando su historia sin pausa.#!" #NT!
- MOMENT_OF_TRUTH_PERK_EFFECT: "#F Produce una quimera temporal que aparece en la forma que el usuario desee, con algunas limitaciones.#!" #NT!
+ WYRD_PERK_EFFECT: "Otorga un modificador de [GetModifier('wyrd_perk_commander_modifier').GetNameWithTooltip] a los comandantes enemigos en la guerra como comandante.\nOtorga un modificador de [GetModifier('wyrd_perk_knight_modifier').GetNameWithTooltip] a los enemigos [knights|E] cuando están en la guerra como comandante o a los enemigos en [single_combat_duel|E].\n#F Hace que otro pierda de vista el orden correcto del tiempo, siendo incapaz de decir qué eventos ocurrieron antes o después de otros.#!"
+ BACKWARD_GLANCE_PERK_EFFECT: "#F Echar un vistazo a algo que sucedió en el pasado, ayudando a recordar imágenes vistas antes y proporcionando nuevas imágenes que no se vieron en ese momento.#!"
+ DREAM_TIME_PERK_EFFECT: "Como [character_interaction|E], te permite otorgar un modificador de velocidad positivo o negativo al personaje o condado objetivo.\n#F Cambia la velocidad del tiempo en un área o para una persona, ya sea haciendo que vaya mucho más rápido de lo que normalmente debería o que se ralentice al mínimo.#!"
+ PERMANENCE_PERK_EFFECT: "Como [character_interaction|E], te permite renovar el modificador de truco del objetivo.\n#F Extiende la duración de un Arte lanzado por otro, lo que le permite durar sustancialmente más de lo que el resultado originalmente exigía.#!"
+ REVERSA_OF_FORTUNE_PERK_EFFECT: "Como [character_interaction|E], te permite darte [GetModifier( 'reversa_of_fortune_perk_modifier' ).GetNameWithTooltip|L] a ti mismo durante #V 1#! días.\n#F Un arte extremadamente complejo y costoso que permite al usuario revertir los últimos minutos y tomar nuevas decisiones.#!"
+ FIND_SILVER_PATH_PERK_EFFECT: "Posibilidad de quedar atrapado en la Umbra: #P -5%#!\nMonthly Progreso de exploración de la Umbra: [grace_i]#P +10#!\n#F Muestra la ubicación del Camino Plateado, el camino que guía a las hadas a lo largo de la [dreaming|E], y otorga información sobre quién o qué se encuentra actualmente en él.#!"
+ DETERMINISM_PERK_EFFECT: "Posibilidad de encontrar evento en la Umbra: [grace_i]#P +100%#!\nChance de quedar atrapado en la Umbra: #P -5%#!\nMonthly Progreso de exploración de la Umbra: [grace_i]#P +10#!\n#F Muestra lo que hay al otro lado de un camino, un misterioso sendero del [dreaming|E] en el que el espacio y el tiempo están muy distorsionados.#!"
+ THE_MERRY_DANCE_PERK_EFFECT: "Probabilidad de encontrar un evento en la Umbra: [grace_i]#P +100%#!\nChance de quedar atrapado en la Umbra: #P -5%#!\nMonthly Progreso de exploración de la Umbra: [grace_i]#P +5#!\n#F El Firchlis es una fuerza poderosa dentro de los Reinos Míticos. El Sueño cambia constantemente, y el Firchlis es una fuente clave de ese cambio. Los duendes expertos pueden, con concentración y preparación, influir en los cambios que trae el Firchlis.#!"
+ HOMESTEAD_PERK_EFFECT: "Desbloquea el edificio [GetBuilding('homestead_freehold_01').GetName].\n#F Fija un punto del [dreaming|E] para que, en lugar de cambiar constantemente según los caprichos del Wyld, permanezca como lo pretendía el lanzador.#!"
+ ANCHOR_PERK_EFFECT: "[dreaming|E] [building|E] tiempo de desbloqueo: #P -50%#!\n#F Con este truco, un changeling puede "solidificar" el [dreaming|E] hasta cierto punto, lo que le permite establecer una fortaleza permanente dentro del Reino Mítico.#!"
+ ATTUNEMENT_PERK_EFFECT: "Recibirás una notificación si alguien intenta asesinar a tus amigos o familiares. Recibirás una notificación si alguien intenta seducir a tus amantes o consortes. Tu prisionero tiene menos posibilidades de escapar de tu prisión. #F Vincula a un Kithain a una persona, lugar o cosa, haciendo que, pase lo que pase, el Kithain sea el primero en enterarse. #!"
+ DREAM_RIDING_PERK_EFFECT: "Permite interactuar con el [earth|E] mientras se permanece en el [dreaming|E].\nComo [character_interaction|E], te permite obtener la forma de opinión del objetivo.\n#F Este truco permite a un changeling interactuar con un sueño mortal mientras la Estirpe está en el [dreaming|E]. No siempre es una buena idea hacerlo, ya que las interacciones de la Estirpe pueden causar alteraciones extrañas en el sueño en sí. Aunque la interacción es posible, el control real del sueño no lo es.#!"
+ DREAM_WEAVING_PERK_EFFECT: "#F Produce una quimera, similar al truco Sombras fantasmales, pero, si bien esa quimera es temporal, esta quimera es permanente, siempre y cuando nunca abandone el [dreaming|E].#!"
+ SEEK_N_SPELL_PERK_EFFECT: "#F Ya sea que entiendas el idioma o no, o incluso si el contenido está bloqueado mágicamente, es posible leer cualquier texto.#!"
+ RUNE_PERK_EFFECT: "Como [character_interaction|E], te permite actualizar un modificador de artefacto o darle un nuevo modificador.\n#F Inscribe una palabra de poder en un objeto, lo que le permite ser mucho más efectivo para una tarea específica.#!"
+ RUNIC_CIRCLE_PERK_EFFECT: "Otorga un modificador [GetModifier('runic_circle_perk_modifier').GetNameWithTooltip] a cada cortesano, consejero, amigo y amante.\n#F Produce un círculo de palabras protectoras, que proporciona resistencia contra fuerzas sobrenaturales que intentan romper el círculo.#!"
+ SAINING_PERK_EFFECT: "Como [character_interaction|E], puedes descubrir el verdadero nombre de otro personaje.\n#F Recuerda el ritual del Nombre Verdadero que se utiliza cuando un Kithain pasa por primera vez por Chrysalis, mostrando al usuario el Nombre Verdadero de ese individuo.#!"
+ REWEAVING_PERK_EFFECT: "Como [character_interaction|E], te permite editar los rasgos del objetivo.\n#F Una vez que se conoce el nombre verdadero, este truco permite al lanzador editar ese nombre y, al hacerlo, edita los rasgos centrales de esa persona u objeto.#!"
+ PROTOCOL_PERK_EFFECT: "#F Convoca a una corte asegurada mágicamente a una sesión, impidiendo que los plebeyos interrumpan los procedimientos.#!"
+ DICTUM_PERK_EFFECT: "Como [character_interaction|E], te permite obtener un gancho sobre el objetivo.\n#F Especifica una solicitud al sujeto del truco, que debe cumplir lo mejor que pueda, a menos que sea demasiado peligroso.#!"
+ GRANDEUR_PERK_EFFECT: "Como [character_interaction|E], te permite reclutar o [imprison|E] apuntar a un personaje no desembarcado.\n#F Adopta un manto de pura belleza y gracia, haciendo que sea casi imposible para otros intentar contradecir tus deseos.#!"
+ WEAVER_WARD_PERK_EFFECT: "Es más probable que [imprison|E] [characters|E] después de un [siege|E] o [raid|E] exitoso.\nDestierra el artefacto de concesión de personajes no desembarcados.\n#F Bloquea una puerta o un pasaje angosto, haciendo imposible que un grupo específico de objetos pase a través de ellos.#!"
+ GEAS_BAN_PERK_EFFECT: "Desbloquea Juramento [character_interaction|E], haciendo que el objetivo sea [GetTrait('oathbreaker').GetName( GetPlayer )] si lo rompe.\n#F Produce un Juramento, que requiere que una persona cumpla una acción (Geas) o se abstenga de realizar cierta acción (Ban); los que rompan este Juramento sufrirán alguna maldición como resultado.#!"
+ HARDEN_PERK_EFFECT: "#F Prepara una quimera salvaje convirtiéndola en una quimera elaborada, lo que permite que se le apliquen más aplicaciones de Infusión.#!"
+ TOUGHEN_PERK_EFFECT: "#F Agrega durabilidad a los materiales quiméricos, incluidos otros cambiaformas, otorgando resistencia tanto al daño como a la destrucción de Banalidad.#!"
+ FUBAR_GENERATION_PERK_EFFECT: "Te permite crear un recipiente de glamour.\n#F Crea y esclaviza a un FUBAR, una criatura quimérica que puede servir como una batería de glamour.#!"
+ ANIMANTIS_PERK_EFFECT: "Permite fabricar un personaje [GetTrait('automaton').GetName( GetPlayer )].\nPuede reclutar a [GetMaA('golems').GetName] como [men_at_arms|E].\n#F Produce un gólem, un sirviente mecánico que servirá al Nocker y lo ayudará en su trabajo.#!"
+ GILGUL_PERK_EFFECT: "Como [character_interaction|E], te permite editar libremente los rasgos mentales y físicos del objetivo [GetTrait('automaton').GetName( GetPlayer )].\n#F Un truco terriblemente peligroso que, si tiene éxito, añade pensamiento consciente a una quimera o animantis, y posiblemente incluso a un alma verdadera.#!"
+ AGEMOS_BLESSING_PERK_EFFECT: "#F Lee las emociones de una multitud entera a la vez, para determinar cuál es la mejor manera de proceder para entretenerlos.#!"
+ FLICKERING_FIRELIGHT_PERK_EFFECT: "#F Convierte una pequeña ilusión quimérica en algo de lo que se habla en la historia, proporcionando elementos escenográficos con los que contar la historia.#!"
+ MURMUR_IN_THE_CROWD_PERK_EFFECT: "#F Infunde una emoción en la multitud, aumentando el atractivo de la historia de Eshu, además de proporcionar una razón para que la cuenten.#!"
+ STICKS_AND_STONES_PERK_EFFECT: "#F Convierte las palabras en un refugio temporal, protegiendo al creador de cuentos de cualquier daño, siempre y cuando siga contando su historia sin pausa.#!"
+ MOMENT_OF_TRUTH_PERK_EFFECT: "#F Produce una quimera temporal que aparece en la forma que el usuario desee, con algunas limitaciones.#!"
   
   ### Slivers ### 
   
- game_concept_slivers_lifestyle: "Astillas" #NT!
- game_concept_slivers_lifestyle_desc: "Los Inanimae tienen un sistema de Artes completamente diferente, al que se refieren como Fragmentos. Estos Fragmentos se ocupan principalmente de controlar elementos, aunque algunos tienen efectos basados ​​en conceptos asociados con esos elementos. A diferencia de las Artes, cada Fragmento otorga un poder adicional, más menor que un Cantrip, a cada Inanimae con al menos un nivel de este." #NT!
+ game_concept_slivers_lifestyle: "Astillas"
+ game_concept_slivers_lifestyle_desc: "Los Inanimae tienen un sistema de Artes completamente diferente, al que se refieren como Fragmentos. Estos Fragmentos se ocupan principalmente de controlar elementos, aunque algunos tienen efectos basados ​​en conceptos asociados con esos elementos. A diferencia de las Artes, cada Fragmento otorga un poder adicional, más menor que un Cantrip, a cada Inanimae con al menos un nivel de este."
   
- slivers_lifestyle_name: "Astillas" #NT!
- slivers_lifestyle_desc: "Centrarse en controlar los elementos." #NT!
+ slivers_lifestyle_name: "Astillas"
+ slivers_lifestyle_desc: "Centrarse en controlar los elementos."
  slivers_lifestyle_highlight_desc: ""
- monthly_slivers_lifestyle_xp_gain_mult: "Fragmentos mensuales [lifestyle|E] [experience|E]" #NT!
+ monthly_slivers_lifestyle_xp_gain_mult: "Fragmentos mensuales [lifestyle|E] [experience|E]"
   
- slivers_petros_focus: "Enfoque de Petros" #NT!
- slivers_petros_focus_modifier: "[GetFocus('slivers_petros_focus').GetName]" #NT!
- slivers_petros_focus_desc: "El arte de la tierra y la destreza física." #NT!
- slivers_petros_focus_effect_desc: "Centrándose en las subvenciones de Petros:" #NT!
+ slivers_petros_focus: "Enfoque de Petros"
+ slivers_petros_focus_modifier: "[GetFocus('slivers_petros_focus').GetName]"
+ slivers_petros_focus_desc: "El arte de la tierra y la destreza física."
+ slivers_petros_focus_effect_desc: "Centrándose en las subvenciones de Petros:"
   
- slivers_aquis_focus: "Enfoque de Aquis" #NT!
- slivers_aquis_focus_modifier: "[GetFocus('slivers_aquis_focus').GetName]" #NT!
- slivers_aquis_focus_desc: "El arte del agua y sus propiedades recuperativas." #NT!
- slivers_aquis_focus_effect_desc: "Centrándose en las subvenciones Aquis:" #NT!
+ slivers_aquis_focus: "Enfoque de Aquis"
+ slivers_aquis_focus_modifier: "[GetFocus('slivers_aquis_focus').GetName]"
+ slivers_aquis_focus_desc: "El arte del agua y sus propiedades recuperativas."
+ slivers_aquis_focus_effect_desc: "Centrándose en las subvenciones Aquis:"
   
- slivers_pyros_focus: "Enfoque de Pyros" #NT!
- slivers_pyros_focus_modifier: "[GetFocus('slivers_pyros_focus').GetName]" #NT!
- slivers_pyros_focus_desc: "El arte del fuego y la pasión." #NT!
- slivers_pyros_focus_effect_desc: "Centrándose en las subvenciones de Pyros:" #NT!
+ slivers_pyros_focus: "Enfoque de Pyros"
+ slivers_pyros_focus_modifier: "[GetFocus('slivers_pyros_focus').GetName]"
+ slivers_pyros_focus_desc: "El arte del fuego y la pasión."
+ slivers_pyros_focus_effect_desc: "Centrándose en las subvenciones de Pyros:"
   
- slivers_stratus_focus: "Enfoque de Stratus" #NT!
- slivers_stratus_focus_modifier: "[GetFocus('slivers_stratus_focus').GetName]" #NT!
- slivers_stratus_focus_desc: "El arte del viento y la velocidad desinhibida." #NT!
- slivers_stratus_focus_effect_desc: "Centrándose en las subvenciones Stratus:" #NT!
+ slivers_stratus_focus: "Enfoque de Stratus"
+ slivers_stratus_focus_modifier: "[GetFocus('slivers_stratus_focus').GetName]"
+ slivers_stratus_focus_desc: "El arte del viento y la velocidad desinhibida."
+ slivers_stratus_focus_effect_desc: "Centrándose en las subvenciones Stratus:"
   
- slivers_verdage_focus: "Enfoque de Verdage" #NT!
- slivers_verdage_focus_modifier: "[GetFocus('slivers_verdage_focus').GetName]" #NT!
- slivers_verdage_focus_desc: "El arte de los árboles y la comunicación." #NT!
- slivers_verdage_focus_effect_desc: "Centrándose en las subvenciones de Verdage:" #NT!
+ slivers_verdage_focus: "Enfoque de Verdage"
+ slivers_verdage_focus_modifier: "[GetFocus('slivers_verdage_focus').GetName]"
+ slivers_verdage_focus_desc: "El arte de los árboles y la comunicación."
+ slivers_verdage_focus_effect_desc: "Centrándose en las subvenciones de Verdage:"
   
- GAINS_SLIVERS_LIFESTYLE_XP: "Gana $VALUE|V0$ [slivers_lifestyle|E] Experiencia" #NT!
- GAINED_SLIVERS_LIFESTYLE_XP: "Obtuvo $VALUE|V0$ [slivers_lifestyle|E] Experiencia" #NT!
- I_GAIN_SLIVERS_LIFESTYLE_XP: "Obtienes $VALUE|V0$ [slivers_lifestyle|E] de experiencia" #NT!
- I_GAINED_SLIVERS_LIFESTYLE_XP: "Ganaste $VALUE|V0$ [slivers_lifestyle|E] Experiencia" #NT!
- TARGET_GAINS_SLIVERS_LIFESTYLE_XP: "[CHARACTER.GetShortUIName] gana $VALUE|V0$ [slivers_lifestyle|E] experiencia" #NT!
- TARGET_GAINED_SLIVERS_LIFESTYLE_XP: "[CHARACTER.GetShortUIName] ganado $VALUE|V0$ [slivers_lifestyle|E] Experiencia" #NT!
+ GAINS_SLIVERS_LIFESTYLE_XP: "Gana $VALUE|V0$ [slivers_lifestyle|E] Experiencia"
+ GAINED_SLIVERS_LIFESTYLE_XP: "Obtuvo $VALUE|V0$ [slivers_lifestyle|E] Experiencia"
+ I_GAIN_SLIVERS_LIFESTYLE_XP: "Obtienes $VALUE|V0$ [slivers_lifestyle|E] de experiencia"
+ I_GAINED_SLIVERS_LIFESTYLE_XP: "Ganaste $VALUE|V0$ [slivers_lifestyle|E] Experiencia"
+ TARGET_GAINS_SLIVERS_LIFESTYLE_XP: "[CHARACTER.GetShortUIName] gana $VALUE|V0$ [slivers_lifestyle|E] experiencia"
+ TARGET_GAINED_SLIVERS_LIFESTYLE_XP: "[CHARACTER.GetShortUIName] ganado $VALUE|V0$ [slivers_lifestyle|E] Experiencia"
   
- GAINS_A_SLIVERS_LIFESTYLE_PERKPOINT: "Ganancias $VALUE|V0$ [slivers_lifestyle|E] [perk|E] Desbloquear" #NT!
- GAINED_A_SLIVERS_LIFESTYLE_PERKPOINT: "Obtenido $VALUE|V0$ [slivers_lifestyle|E] [perk|E] Desbloquear" #NT!
- I_GAIN_A_SLIVERS_LIFESTYLE_PERKPOINT: "Obtienes $VALUE|V0$ [slivers_lifestyle|E] [perk|E] Desbloquear" #NT!
- I_GAINED_A_SLIVERS_LIFESTYLE_PERKPOINT: "Ganaste $VALUE|V0$ [slivers_lifestyle|E] [perk|E] Desbloquear" #NT!
- TARGET_GAINS_A_SLIVERS_LIFESTYLE_PERKPOINT: "[CHARACTER.GetShortUIName] gana $VALUE|V0$ [slivers_lifestyle|E] [perk|E] Desbloquea" #NT!
- TARGET_GAINED_A_SLIVERS_LIFESTYLE_PERKPOINT: "[CHARACTER.GetShortUIName] ganado $VALUE|V0$ [slivers_lifestyle|E] [perk|E] Desbloquear" #NT!
+ GAINS_A_SLIVERS_LIFESTYLE_PERKPOINT: "Ganancias $VALUE|V0$ [slivers_lifestyle|E] [perk|E] Desbloquear"
+ GAINED_A_SLIVERS_LIFESTYLE_PERKPOINT: "Obtenido $VALUE|V0$ [slivers_lifestyle|E] [perk|E] Desbloquear"
+ I_GAIN_A_SLIVERS_LIFESTYLE_PERKPOINT: "Obtienes $VALUE|V0$ [slivers_lifestyle|E] [perk|E] Desbloquear"
+ I_GAINED_A_SLIVERS_LIFESTYLE_PERKPOINT: "Ganaste $VALUE|V0$ [slivers_lifestyle|E] [perk|E] Desbloquear"
+ TARGET_GAINS_A_SLIVERS_LIFESTYLE_PERKPOINT: "[CHARACTER.GetShortUIName] gana $VALUE|V0$ [slivers_lifestyle|E] [perk|E] Desbloquea"
+ TARGET_GAINED_A_SLIVERS_LIFESTYLE_PERKPOINT: "[CHARACTER.GetShortUIName] ganado $VALUE|V0$ [slivers_lifestyle|E] [perk|E] Desbloquear"
   
- SLIVERS_LIFESTYLE_PERK_POINTS_TRIGGER: "Puntos de beneficio del estilo de vida Slivers: $NUM|V0$" #NT!
- SLIVERS_LIFESTYLE_XP_TRIGGER: "Experiencias de estilo de vida de Slivers: $NUM|V0$" #NT!
+ SLIVERS_LIFESTYLE_PERK_POINTS_TRIGGER: "Puntos de beneficio del estilo de vida Slivers: $NUM|V0$"
+ SLIVERS_LIFESTYLE_XP_TRIGGER: "Experiencias de estilo de vida de Slivers: $NUM|V0$"
   
- full_petros_tooltip: "Obtendrás el árbol Petros completo." #NT!
- full_aquis_tooltip: "Obtienes el árbol Aquis completo." #NT!
- full_pyros_tooltip: "Obtendrás el árbol Pyros completo." #NT!
- full_stratus_tooltip: "Obtendrás el árbol Stratus completo." #NT!
- full_verdage_tooltip: "Obtendrás el árbol Verdage completo." #NT!
+ full_petros_tooltip: "Obtendrás el árbol Petros completo."
+ full_aquis_tooltip: "Obtienes el árbol Aquis completo."
+ full_pyros_tooltip: "Obtendrás el árbol Pyros completo."
+ full_stratus_tooltip: "Obtendrás el árbol Stratus completo."
+ full_verdage_tooltip: "Obtendrás el árbol Verdage completo."
   
- petros_visible: "Petros" #NT!
- aquis_visible: "Aquis" #NT!
- pyros_visible: "Piros" #NT!
- stratus_visible: "Estrato" #NT!
- verdage_visible: "Verdage" #NT!
+ petros_visible: "Petros"
+ aquis_visible: "Aquis"
+ pyros_visible: "Piros"
+ stratus_visible: "Estrato"
+ verdage_visible: "Verdage"
   
- living_rock_perk_name: "Roca viva" #NT!
- stoneskin_perk_name: "piel de piedra" #NT!
- ironarm_perk_name: "Brazo de hierro" #NT!
- art_stasis_perk_name: "Estasis" #NT!
- quake_perk_name: "Terremoto" #NT!
- aura_perception_perk_name: "Percepción del aura" #NT!
- hold_perk_name: "Sostener" #NT!
- art_tempus_fugit_perk_name: "Tempus Fugit" #NT!
- friction_perk_name: "Fricción" #NT!
- healing_waters_perk_name: "Aguas curativas" #NT!
- flame_perk_name: "Fuego" #NT!
- tortured_heart_perk_name: "Corazón torturado" #NT!
- ares_fist_perk_name: "Puño de Ares" #NT!
- strings_of_the_soul_perk_name: "Cuerdas del alma" #NT!
- inferno_perk_name: "Infierno" #NT!
- marathon_perk_name: "Maratón" #NT!
- conceal_confuse_perk_name: "Ocultar/Confundir" #NT!
- flight_perk_name: "Vuelo" #NT!
- illusion_perk_name: "Espejismo" #NT!
- art_phantasm_perk_name: "Fantasma" #NT!
- solarium_perk_name: "Solárium" #NT!
- babel_perk_name: "Babel" #NT!
- coalesce_perk_name: "Juntarse" #NT!
- web_of_life_perk_name: "Red de la vida" #NT!
- mold_perk_name: "Moho" #NT!
+ living_rock_perk_name: "Roca viva"
+ stoneskin_perk_name: "piel de piedra"
+ ironarm_perk_name: "Brazo de hierro"
+ art_stasis_perk_name: "Estasis"
+ quake_perk_name: "Terremoto"
+ aura_perception_perk_name: "Percepción del aura"
+ hold_perk_name: "Sostener"
+ art_tempus_fugit_perk_name: "Tempus Fugit"
+ friction_perk_name: "Fricción"
+ healing_waters_perk_name: "Aguas curativas"
+ flame_perk_name: "Fuego"
+ tortured_heart_perk_name: "Corazón torturado"
+ ares_fist_perk_name: "Puño de Ares"
+ strings_of_the_soul_perk_name: "Cuerdas del alma"
+ inferno_perk_name: "Infierno"
+ marathon_perk_name: "Maratón"
+ conceal_confuse_perk_name: "Ocultar/Confundir"
+ flight_perk_name: "Vuelo"
+ illusion_perk_name: "Espejismo"
+ art_phantasm_perk_name: "Fantasma"
+ solarium_perk_name: "Solárium"
+ babel_perk_name: "Babel"
+ coalesce_perk_name: "Juntarse"
+ web_of_life_perk_name: "Red de la vida"
+ mold_perk_name: "Moho"
   
- LIVING_ROCK_PERK_EFFECT: "#F Da forma a la tierra, cambiando su forma o composición.#!" #NT!
- STONESKIN_PERK_EFFECT: "#F Recubre un objeto con una piedra protectora, ayudándolo a protegerse contra daños.#!" #NT!
- IRONARM_PERK_EFFECT: "Otorga un modificador de [GetModifier('ironarm_perk_modifier').GetNameWithTooltip] al aliado [knights|E] en la guerra como comandante o a ti mismo en [single_combat_duel|E].\n#F Otorga fuerza adicional a un sujeto, otorgándole la capacidad de mover piedras pesadas.#!" #NT!
- ART_STASIS_PERK_EFFECT: "Otorga un modificador de [GetModifier('stasis_perk_modifier').GetNameWithTooltip] al enemigo [knights|E] cuando está en guerra como comandante o al enemigo en [single_combat_duel|E].\n#F Ralentiza a un objetivo, lo que hace que apenas se mueva.#!" #NT!
- QUAKE_PERK_EFFECT: "Otorga al participante de la guerra del lado enemigo un modificador de [GetModifier('quake_perk_modifier').GetNameWithTooltip] cuando está en la guerra como participante de la guerra.\n#F Divide la tierra, dañando a las personas y cosas en el área.#!" #NT!
- AURA_PERCEPTION_PERK_EFFECT: "#F Aprende varias cualidades de una persona, como el estado emocional y la honestidad, a partir de su aura.#!" #NT!
- HOLD_PERK_EFFECT: "#F Detiene el movimiento de un objeto en vuelo antes de que llegue al lanzador.#!" #NT!
- ART_TEMPUS_FUGIT_PERK_EFFECT: "#F Permite que un objeto se mueva a una velocidad increíblemente rápida.#!" #NT!
- FRICTION_PERK_EFFECT: "Otorga un modificador de [GetModifier('friction_perk_knight_positive_modifier').GetNameWithTooltip] al aliado [knights|E] en la guerra como comandante o a ti mismo en [single_combat_duel|E].\nOtorga un modificador de [GetModifier('friction_perk_knight_negative_modifier').GetNameWithTooltip] al enemigo [knights|E] cuando estés en la guerra como comandante o al enemigo en [single_combat_duel|E].\n#F Calienta o enfría el agua dentro de un objeto, hasta el punto de hervirlo o congelarlo en hielo.#!" #NT!
- HEALING_WATERS_PERK_EFFECT: "Como [character_interaction|E], te permite curar un objetivo o reparar un artefacto objetivo.\n#F Repara un objeto o cura a una persona vertiendo agua sobre la herida.#!" #NT!
- FLAME_PERK_EFFECT: "#F Produce una llama que varía en tamaño desde una pequeña vela hasta una gran hoguera.#!" #NT!
- TORTURED_HEART_PERK_EFFECT: "#F Tira del corazón para editar la intensidad de una emoción existente.#!" #NT!
- ARES_FIST_PERK_EFFECT: "Otorga un modificador de [GetModifier('ares_fist_perk_modifier').GetNameWithTooltip] al aliado [knights|E] en la guerra como comandante o a ti mismo en [single_combat_duel|E].\n#F Canaliza la fuerza divina para mejorar la destreza en el combate cuerpo a cuerpo.#!" #NT!
- STRINGS_OF_THE_SOUL_PERK_EFFECT: "Desbloquea [GetScheme('PODsoul_bridge').GetTypeName] [scheme|E].\n#F Crea una emoción de la nada y la implanta en el objetivo.#!" #NT!
- INFERNO_PERK_EFFECT: "Como [character_interaction|E], te permite otorgar [GetModifier('firebombs_modifier').GetNameWithTooltip] o [GetModifier('firespewer_modifier').GetNameWithTooltip] al objetivo.\n#F Permite el control total de un fuego, moldeándolo y doblándolo a voluntad del usuario.#!" #NT!
- MARATHON_PERK_EFFECT: "#F Reduce el tiempo de viaje, pero paradójicamente el usuario no parece ir más rápido.#!" #NT!
- CONCEAL_CONFUSE_PERK_EFFECT: "Otorga un modificador de [GetModifier('conceal_confuse_perk_knight_modifier').GetNameWithTooltip] al enemigo [knights|E] en la guerra como comandante o al enemigo en [single_combat_duel|E].\nOtorga a los comandantes enemigos un modificador de [GetModifier('conceal_confuse_perk_commander_modifier').GetNameWithTooltip] cuando están en la guerra como comandante.\nOtorga a los participantes de la guerra del bando enemigo un modificador de [GetModifier('conceal_confuse_perk_ruler_modifier').GetNameWithTooltip] cuando están en la guerra como participantes de la guerra.\n#F Produce una ilusión estática simple que engaña a uno o dos sentidos.#!" #NT!
- FLIGHT_PERK_EFFECT: "#F Permite que un objetivo vuele, elevándose al cielo como si tuviera alas.#!" #NT!
- ILLUSION_PERK_EFFECT: "Como [character_interaction|E], te permite hacer que la víctima gane [GetTrait('blind').GetName( GetPlayer )], [GetModifier('sensory_deprivation_deaf_modifier').GetNameWithTooltip]...\n#F Produce una ilusión más compleja capaz de engañar a muchos sentidos distintos.#!" #NT!
- ART_PHANTASM_PERK_EFFECT: "#F Produce ilusiones poderosas y vivientes que actúan como quimeras por derecho propio.#!" #NT!
- SOLARIUM_PERK_EFFECT: "Como [character_interaction|E], te permite otorgar un modificador de planta al condado objetivo.\n#F Produce un cambio en el tamaño, la salud o la forma de una planta viva.#!" #NT!
- BABEL_PERK_EFFECT: "[buy_claim_interaction|E] y [buy_artifact_claim_interaction|E] Costo: #P -50%#!\n#F Permite al usuario hablar con cualquier objeto como si poseyera inteligencia humana.#!" #NT!
- COALESCE_PERK_EFFECT: "Como [character_interaction|E], te permite ganar oro con glamour.\n#F Transforma la materia vegetal en cualquier objeto deseado.#!" #NT!
- WEB_OF_LIFE_PERK_EFFECT: "#F Al examinar un aspecto de un ecosistema interconectado, se pueden determinar aspectos de su futuro.#!" #NT!
- MOLD_PERK_EFFECT: "Como [character_interaction|E], te permite convertir a un prisionero en un artefacto viviente.\n#F Transforma un tipo de materia viva en otro, sin matarlo en el proceso.#!" #NT!
+ LIVING_ROCK_PERK_EFFECT: "#F Da forma a la tierra, cambiando su forma o composición.#!"
+ STONESKIN_PERK_EFFECT: "#F Recubre un objeto con una piedra protectora, ayudándolo a protegerse contra daños.#!"
+ IRONARM_PERK_EFFECT: "Otorga un modificador de [GetModifier('ironarm_perk_modifier').GetNameWithTooltip] al aliado [knights|E] en la guerra como comandante o a ti mismo en [single_combat_duel|E].\n#F Otorga fuerza adicional a un sujeto, otorgándole la capacidad de mover piedras pesadas.#!"
+ ART_STASIS_PERK_EFFECT: "Otorga un modificador de [GetModifier('stasis_perk_modifier').GetNameWithTooltip] al enemigo [knights|E] cuando está en guerra como comandante o al enemigo en [single_combat_duel|E].\n#F Ralentiza a un objetivo, lo que hace que apenas se mueva.#!"
+ QUAKE_PERK_EFFECT: "Otorga al participante de la guerra del lado enemigo un modificador de [GetModifier('quake_perk_modifier').GetNameWithTooltip] cuando está en la guerra como participante de la guerra.\n#F Divide la tierra, dañando a las personas y cosas en el área.#!"
+ AURA_PERCEPTION_PERK_EFFECT: "#F Aprende varias cualidades de una persona, como el estado emocional y la honestidad, a partir de su aura.#!"
+ HOLD_PERK_EFFECT: "#F Detiene el movimiento de un objeto en vuelo antes de que llegue al lanzador.#!"
+ ART_TEMPUS_FUGIT_PERK_EFFECT: "#F Permite que un objeto se mueva a una velocidad increíblemente rápida.#!"
+ FRICTION_PERK_EFFECT: "Otorga un modificador de [GetModifier('friction_perk_knight_positive_modifier').GetNameWithTooltip] al aliado [knights|E] en la guerra como comandante o a ti mismo en [single_combat_duel|E].\nOtorga un modificador de [GetModifier('friction_perk_knight_negative_modifier').GetNameWithTooltip] al enemigo [knights|E] cuando estés en la guerra como comandante o al enemigo en [single_combat_duel|E].\n#F Calienta o enfría el agua dentro de un objeto, hasta el punto de hervirlo o congelarlo en hielo.#!"
+ HEALING_WATERS_PERK_EFFECT: "Como [character_interaction|E], te permite curar un objetivo o reparar un artefacto objetivo.\n#F Repara un objeto o cura a una persona vertiendo agua sobre la herida.#!"
+ FLAME_PERK_EFFECT: "#F Produce una llama que varía en tamaño desde una pequeña vela hasta una gran hoguera.#!"
+ TORTURED_HEART_PERK_EFFECT: "#F Tira del corazón para editar la intensidad de una emoción existente.#!"
+ ARES_FIST_PERK_EFFECT: "Otorga un modificador de [GetModifier('ares_fist_perk_modifier').GetNameWithTooltip] al aliado [knights|E] en la guerra como comandante o a ti mismo en [single_combat_duel|E].\n#F Canaliza la fuerza divina para mejorar la destreza en el combate cuerpo a cuerpo.#!"
+ STRINGS_OF_THE_SOUL_PERK_EFFECT: "Desbloquea [GetScheme('PODsoul_bridge').GetTypeName] [scheme|E].\n#F Crea una emoción de la nada y la implanta en el objetivo.#!"
+ INFERNO_PERK_EFFECT: "Como [character_interaction|E], te permite otorgar [GetModifier('firebombs_modifier').GetNameWithTooltip] o [GetModifier('firespewer_modifier').GetNameWithTooltip] al objetivo.\n#F Permite el control total de un fuego, moldeándolo y doblándolo a voluntad del usuario.#!"
+ MARATHON_PERK_EFFECT: "#F Reduce el tiempo de viaje, pero paradójicamente el usuario no parece ir más rápido.#!"
+ CONCEAL_CONFUSE_PERK_EFFECT: "Otorga un modificador de [GetModifier('conceal_confuse_perk_knight_modifier').GetNameWithTooltip] al enemigo [knights|E] en la guerra como comandante o al enemigo en [single_combat_duel|E].\nOtorga a los comandantes enemigos un modificador de [GetModifier('conceal_confuse_perk_commander_modifier').GetNameWithTooltip] cuando están en la guerra como comandante.\nOtorga a los participantes de la guerra del bando enemigo un modificador de [GetModifier('conceal_confuse_perk_ruler_modifier').GetNameWithTooltip] cuando están en la guerra como participantes de la guerra.\n#F Produce una ilusión estática simple que engaña a uno o dos sentidos.#!"
+ FLIGHT_PERK_EFFECT: "#F Permite que un objetivo vuele, elevándose al cielo como si tuviera alas.#!"
+ ILLUSION_PERK_EFFECT: "Como [character_interaction|E], te permite hacer que la víctima gane [GetTrait('blind').GetName( GetPlayer )], [GetModifier('sensory_deprivation_deaf_modifier').GetNameWithTooltip]...\n#F Produce una ilusión más compleja capaz de engañar a muchos sentidos distintos.#!"
+ ART_PHANTASM_PERK_EFFECT: "#F Produce ilusiones poderosas y vivientes que actúan como quimeras por derecho propio.#!"
+ SOLARIUM_PERK_EFFECT: "Como [character_interaction|E], te permite otorgar un modificador de planta al condado objetivo.\n#F Produce un cambio en el tamaño, la salud o la forma de una planta viva.#!"
+ BABEL_PERK_EFFECT: "[buy_claim_interaction|E] y [buy_artifact_claim_interaction|E] Costo: #P -50%#!\n#F Permite al usuario hablar con cualquier objeto como si poseyera inteligencia humana.#!"
+ COALESCE_PERK_EFFECT: "Como [character_interaction|E], te permite ganar oro con glamour.\n#F Transforma la materia vegetal en cualquier objeto deseado.#!"
+ WEB_OF_LIFE_PERK_EFFECT: "#F Al examinar un aspecto de un ecosistema interconectado, se pueden determinar aspectos de su futuro.#!"
+ MOLD_PERK_EFFECT: "Como [character_interaction|E], te permite convertir a un prisionero en un artefacto viviente.\n#F Transforma un tipo de materia viva en otro, sin matarlo en el proceso.#!"
   
   ### Wu Tan ### 
   
- game_concept_wu_tan_lifestyle: "Wu Tan" #NT!
- game_concept_wu_tan_lifestyle_desc: "Wu Tan son las artes de los extraños duendes orientales: los Hsien. Cada una de ellas se basa en uno de los elementos clásicos de Oriente." #NT!
- game_concept_metal_soul: "Alma de metal" #NT!
- game_concept_metal_soul_desc: "El alma de metal contiene el sentido de justicia, honestidad y juego limpio de una persona. Los jueces, justicieros, activistas de derechos humanos y defensores de los derechos civiles tienen almas de metal fuertes." #NT!
- game_concept_wood_soul: "Alma de madera" #NT!
- game_concept_wood_soul_desc: "El Alma de Madera es responsable de la moralidad de una persona. Controla la lujuria y la empatía. Todas las criaturas vivientes poseen un alma de madera. Aunque la vida se alimenta de vida, también abarca la compasión. Las enfermeras, los atletas, los médicos y la mayoría de las madres poseen almas de madera fuertes." #NT!
- game_concept_water_soul: "Alma de agua" #NT!
- game_concept_water_soul_desc: "El Alma de Agua engloba la fe de una persona en los demás y en los poderes del universo. También corresponde a la fidelidad y la confianza. Los capitalistas, los señores del crimen y aquellos que aman ser objetos de lealtad y poder tienen grandes almas de agua, al igual que los verdaderamente fieles." #NT!
- game_concept_fire_soul: "Alma de fuego" #NT!
- game_concept_fire_soul_desc: "El Alma de Fuego regula el sentido de la propiedad y la comprensión de las costumbres y los códigos de conducta. Controla el sentido del deber y el afán de hacer cumplir las leyes de la sociedad. Los policías e incluso los funcionarios del gobierno pueden poseer almas de Fuego fuertes." #NT!
- game_concept_earth_soul: "Alma de la tierra" #NT!
- game_concept_earth_soul_desc: "El Alma Terrestre de una criatura sensible gobierna la sabiduría, la perspicacia, la comprensión y el sentido común. Gobierna la capacidad de tomar decisiones sabias. Los líderes, sacerdotes y consejeros suelen tener Almas Terrestres poderosas." #NT!
+ game_concept_wu_tan_lifestyle: "Wu Tan"
+ game_concept_wu_tan_lifestyle_desc: "Wu Tan son las artes de los extraños duendes orientales: los Hsien. Cada una de ellas se basa en uno de los elementos clásicos de Oriente."
+ game_concept_metal_soul: "Alma de metal"
+ game_concept_metal_soul_desc: "El alma de metal contiene el sentido de justicia, honestidad y juego limpio de una persona. Los jueces, justicieros, activistas de derechos humanos y defensores de los derechos civiles tienen almas de metal fuertes."
+ game_concept_wood_soul: "Alma de madera"
+ game_concept_wood_soul_desc: "El Alma de Madera es responsable de la moralidad de una persona. Controla la lujuria y la empatía. Todas las criaturas vivientes poseen un alma de madera. Aunque la vida se alimenta de vida, también abarca la compasión. Las enfermeras, los atletas, los médicos y la mayoría de las madres poseen almas de madera fuertes."
+ game_concept_water_soul: "Alma de agua"
+ game_concept_water_soul_desc: "El Alma de Agua engloba la fe de una persona en los demás y en los poderes del universo. También corresponde a la fidelidad y la confianza. Los capitalistas, los señores del crimen y aquellos que aman ser objetos de lealtad y poder tienen grandes almas de agua, al igual que los verdaderamente fieles."
+ game_concept_fire_soul: "Alma de fuego"
+ game_concept_fire_soul_desc: "El Alma de Fuego regula el sentido de la propiedad y la comprensión de las costumbres y los códigos de conducta. Controla el sentido del deber y el afán de hacer cumplir las leyes de la sociedad. Los policías e incluso los funcionarios del gobierno pueden poseer almas de Fuego fuertes."
+ game_concept_earth_soul: "Alma de la tierra"
+ game_concept_earth_soul_desc: "El Alma Terrestre de una criatura sensible gobierna la sabiduría, la perspicacia, la comprensión y el sentido común. Gobierna la capacidad de tomar decisiones sabias. Los líderes, sacerdotes y consejeros suelen tener Almas Terrestres poderosas."
   
- wu_tan_lifestyle_name: "Wu Tan" #NT!
- wu_tan_lifestyle_desc: "Centrarse en el control de elementos clásicos de Oriente." #NT!
+ wu_tan_lifestyle_name: "Wu Tan"
+ wu_tan_lifestyle_desc: "Centrarse en el control de elementos clásicos de Oriente."
  wu_tan_lifestyle_highlight_desc: ""
- monthly_wu_tan_lifestyle_xp_gain_mult: "Wu Tan mensual [lifestyle|E] [experience|E]" #NT!
+ monthly_wu_tan_lifestyle_xp_gain_mult: "Wu Tan mensual [lifestyle|E] [experience|E]"
   
- wu_tan_tieh_tan_focus: "Enfoque en Tieh Tan" #NT!
- wu_tan_tieh_tan_focus_modifier: "[GetFocus('wu_tan_tieh_tan_focus').GetName]" #NT!
- wu_tan_tieh_tan_focus_desc: "Trata sobre el Elemento Metal y sus correspondencias." #NT!
- wu_tan_tieh_tan_focus_effect_desc: "Centrándose en las subvenciones de Tieh Tan:" #NT!
+ wu_tan_tieh_tan_focus: "Enfoque en Tieh Tan"
+ wu_tan_tieh_tan_focus_modifier: "[GetFocus('wu_tan_tieh_tan_focus').GetName]"
+ wu_tan_tieh_tan_focus_desc: "Trata sobre el Elemento Metal y sus correspondencias."
+ wu_tan_tieh_tan_focus_effect_desc: "Centrándose en las subvenciones de Tieh Tan:"
   
- wu_tan_lin_tan_focus: "Enfoque de Lin Tan" #NT!
- wu_tan_lin_tan_focus_modifier: "[GetFocus('wu_tan_lin_tan_focus').GetName]" #NT!
- wu_tan_lin_tan_focus_desc: "Trata sobre el Elemento Madera y sus correspondencias." #NT!
- wu_tan_lin_tan_focus_effect_desc: "Centrándose en las subvenciones de Lin Tan:" #NT!
+ wu_tan_lin_tan_focus: "Enfoque de Lin Tan"
+ wu_tan_lin_tan_focus_modifier: "[GetFocus('wu_tan_lin_tan_focus').GetName]"
+ wu_tan_lin_tan_focus_desc: "Trata sobre el Elemento Madera y sus correspondencias."
+ wu_tan_lin_tan_focus_effect_desc: "Centrándose en las subvenciones de Lin Tan:"
   
- wu_tan_shui_tan_focus: "Enfoque en Shui Tan" #NT!
- wu_tan_shui_tan_focus_modifier: "[GetFocus('wu_tan_shui_tan_focus').GetName]" #NT!
- wu_tan_shui_tan_focus_desc: "Trata del Elemento Agua y sus correspondencias." #NT!
- wu_tan_shui_tan_focus_effect_desc: "Centrándose en las subvenciones Shui Tan:" #NT!
+ wu_tan_shui_tan_focus: "Enfoque en Shui Tan"
+ wu_tan_shui_tan_focus_modifier: "[GetFocus('wu_tan_shui_tan_focus').GetName]"
+ wu_tan_shui_tan_focus_desc: "Trata del Elemento Agua y sus correspondencias."
+ wu_tan_shui_tan_focus_effect_desc: "Centrándose en las subvenciones Shui Tan:"
   
- wu_tan_hou_tan_focus: "Enfoque Hou Tan" #NT!
- wu_tan_hou_tan_focus_modifier: "[GetFocus('wu_tan_hou_tan_focus').GetName]" #NT!
- wu_tan_hou_tan_focus_desc: "Trata sobre el Elemento Fuego y sus correspondencias." #NT!
- wu_tan_hou_tan_focus_effect_desc: "Centrándose en las subvenciones de Hou Tan:" #NT!
+ wu_tan_hou_tan_focus: "Enfoque Hou Tan"
+ wu_tan_hou_tan_focus_modifier: "[GetFocus('wu_tan_hou_tan_focus').GetName]"
+ wu_tan_hou_tan_focus_desc: "Trata sobre el Elemento Fuego y sus correspondencias."
+ wu_tan_hou_tan_focus_effect_desc: "Centrándose en las subvenciones de Hou Tan:"
   
- wu_tan_di_tan_focus: "Enfoque Di Tan" #NT!
- wu_tan_di_tan_focus_modifier: "[GetFocus('wu_tan_di_tan_focus').GetName]" #NT!
- wu_tan_di_tan_focus_desc: "Trata sobre el Elemento Tierra y sus correspondencias." #NT!
- wu_tan_di_tan_focus_effect_desc: "Centrándose en las subvenciones Di Tan:" #NT!
+ wu_tan_di_tan_focus: "Enfoque Di Tan"
+ wu_tan_di_tan_focus_modifier: "[GetFocus('wu_tan_di_tan_focus').GetName]"
+ wu_tan_di_tan_focus_desc: "Trata sobre el Elemento Tierra y sus correspondencias."
+ wu_tan_di_tan_focus_effect_desc: "Centrándose en las subvenciones Di Tan:"
   
- wu_tan_nei_tan_focus: "Enfoque en Nei Tan" #NT!
- wu_tan_nei_tan_focus_modifier: "[GetFocus('wu_tan_nei_tan_focus').GetName]" #NT!
- wu_tan_nei_tan_focus_desc: "Magia taoísta Wu Tan practicada por el shinma que persigue el [tao_te_hsien|E]." #NT!
- wu_tan_nei_tan_focus_effect_desc: "Centrándose en las subvenciones de Nei Tan:" #NT!
+ wu_tan_nei_tan_focus: "Enfoque en Nei Tan"
+ wu_tan_nei_tan_focus_modifier: "[GetFocus('wu_tan_nei_tan_focus').GetName]"
+ wu_tan_nei_tan_focus_desc: "Magia taoísta Wu Tan practicada por el shinma que persigue el [tao_te_hsien|E]."
+ wu_tan_nei_tan_focus_effect_desc: "Centrándose en las subvenciones de Nei Tan:"
   
- GAINS_WU_TAN_LIFESTYLE_XP: "Ganancias $VALUE|V0$ [wu_tan_lifestyle|E] Experiencia" #NT!
- GAINED_WU_TAN_LIFESTYLE_XP: "Obtuvo $VALUE|V0$ [wu_tan_lifestyle|E] Experiencia" #NT!
- I_GAIN_WU_TAN_LIFESTYLE_XP: "Obtienes $VALUE|V0$ [wu_tan_lifestyle|E] Experiencia" #NT!
- I_GAINED_WU_TAN_LIFESTYLE_XP: "Ganaste $VALUE|V0$ [wu_tan_lifestyle|E] Experiencia" #NT!
- TARGET_GAINS_WU_TAN_LIFESTYLE_XP: "[CHARACTER.GetShortUIName] gana $VALUE|V0$ [wu_tan_lifestyle|E] experiencia" #NT!
- TARGET_GAINED_WU_TAN_LIFESTYLE_XP: "[CHARACTER.GetShortUIName] ganado $VALUE|V0$ [wu_tan_lifestyle|E] Experiencia" #NT!
+ GAINS_WU_TAN_LIFESTYLE_XP: "Ganancias $VALUE|V0$ [wu_tan_lifestyle|E] Experiencia"
+ GAINED_WU_TAN_LIFESTYLE_XP: "Obtuvo $VALUE|V0$ [wu_tan_lifestyle|E] Experiencia"
+ I_GAIN_WU_TAN_LIFESTYLE_XP: "Obtienes $VALUE|V0$ [wu_tan_lifestyle|E] Experiencia"
+ I_GAINED_WU_TAN_LIFESTYLE_XP: "Ganaste $VALUE|V0$ [wu_tan_lifestyle|E] Experiencia"
+ TARGET_GAINS_WU_TAN_LIFESTYLE_XP: "[CHARACTER.GetShortUIName] gana $VALUE|V0$ [wu_tan_lifestyle|E] experiencia"
+ TARGET_GAINED_WU_TAN_LIFESTYLE_XP: "[CHARACTER.GetShortUIName] ganado $VALUE|V0$ [wu_tan_lifestyle|E] Experiencia"
   
- GAINS_A_WU_TAN_LIFESTYLE_PERKPOINT: "Ganancias $VALUE|V0$ [wu_tan_lifestyle|E] [perk|E] Desbloquear" #NT!
- GAINED_A_WU_TAN_LIFESTYLE_PERKPOINT: "Obtenido $VALUE|V0$ [wu_tan_lifestyle|E] [perk|E] Desbloquear" #NT!
- I_GAIN_A_WU_TAN_LIFESTYLE_PERKPOINT: "Obtienes $VALUE|V0$ [wu_tan_lifestyle|E] [perk|E] Desbloquear" #NT!
- I_GAINED_A_WU_TAN_LIFESTYLE_PERKPOINT: "Ganaste $VALUE|V0$ [wu_tan_lifestyle|E] [perk|E] Desbloquear" #NT!
- TARGET_GAINS_A_WU_TAN_LIFESTYLE_PERKPOINT: "[CHARACTER.GetShortUIName] gana $VALUE|V0$ [wu_tan_lifestyle|E] [perk|E] Desbloquea" #NT!
- TARGET_GAINED_A_WU_TAN_LIFESTYLE_PERKPOINT: "[CHARACTER.GetShortUIName] ganado $VALUE|V0$ [wu_tan_lifestyle|E] [perk|E] Desbloquear" #NT!
+ GAINS_A_WU_TAN_LIFESTYLE_PERKPOINT: "Ganancias $VALUE|V0$ [wu_tan_lifestyle|E] [perk|E] Desbloquear"
+ GAINED_A_WU_TAN_LIFESTYLE_PERKPOINT: "Obtenido $VALUE|V0$ [wu_tan_lifestyle|E] [perk|E] Desbloquear"
+ I_GAIN_A_WU_TAN_LIFESTYLE_PERKPOINT: "Obtienes $VALUE|V0$ [wu_tan_lifestyle|E] [perk|E] Desbloquear"
+ I_GAINED_A_WU_TAN_LIFESTYLE_PERKPOINT: "Ganaste $VALUE|V0$ [wu_tan_lifestyle|E] [perk|E] Desbloquear"
+ TARGET_GAINS_A_WU_TAN_LIFESTYLE_PERKPOINT: "[CHARACTER.GetShortUIName] gana $VALUE|V0$ [wu_tan_lifestyle|E] [perk|E] Desbloquea"
+ TARGET_GAINED_A_WU_TAN_LIFESTYLE_PERKPOINT: "[CHARACTER.GetShortUIName] ganado $VALUE|V0$ [wu_tan_lifestyle|E] [perk|E] Desbloquear"
   
- WU_TAN_LIFESTYLE_PERK_POINTS_TRIGGER: "Puntos de beneficio del estilo de vida Wu Tan: $NUM|V0$" #NT!
- WU_TAN_LIFESTYLE_XP_TRIGGER: "Experiencias de estilo de vida de Wu Tan: $NUM|V0$" #NT!
+ WU_TAN_LIFESTYLE_PERK_POINTS_TRIGGER: "Puntos de beneficio del estilo de vida Wu Tan: $NUM|V0$"
+ WU_TAN_LIFESTYLE_XP_TRIGGER: "Experiencias de estilo de vida de Wu Tan: $NUM|V0$"
   
- full_tieh_tan_tooltip: "Obtienes el árbol Tieh Tan completo." #NT!
- full_lin_tan_tooltip: "Obtendrás el árbol Lin Tan completo." #NT!
- full_shui_tan_tooltip: "Obtendrás el árbol Shui Tan completo." #NT!
- full_hou_tan_tooltip: "Obtendrás el árbol Hou Tan completo." #NT!
- full_di_tan_tooltip: "Obtendrás el árbol Di Tan completo." #NT!
- full_nei_tan_tooltip: "Obtienes el árbol Nei Tan completo." #NT!
+ full_tieh_tan_tooltip: "Obtienes el árbol Tieh Tan completo."
+ full_lin_tan_tooltip: "Obtendrás el árbol Lin Tan completo."
+ full_shui_tan_tooltip: "Obtendrás el árbol Shui Tan completo."
+ full_hou_tan_tooltip: "Obtendrás el árbol Hou Tan completo."
+ full_di_tan_tooltip: "Obtendrás el árbol Di Tan completo."
+ full_nei_tan_tooltip: "Obtienes el árbol Nei Tan completo."
   
- tieh_tan_visible: "Tieh Tan" #NT!
- lin_tan_visible: "Lin Tan" #NT!
- shui_tan_visible: "Shui Tan" #NT!
- hou_tan_visible: "Hou Tan" #NT!
- di_tan_visible: "De Tan" #NT!
- nei_tan_visible: "Nei Tan" #NT!
+ tieh_tan_visible: "Tieh Tan"
+ lin_tan_visible: "Lin Tan"
+ shui_tan_visible: "Shui Tan"
+ hou_tan_visible: "Hou Tan"
+ di_tan_visible: "De Tan"
+ nei_tan_visible: "Nei Tan"
   
- read_metal_soul_perk_name: "Leer Metal Soul" #NT!
- commune_with_metal_perk_name: "Comulgar con el metal" #NT!
- tieh_tan_speak_with_jimu_tenno_perk_name: "Habla con Jimu-Tenno" #NT!
- nurture_diminish_metal_soul_perk_name: "Nutrir/Disminuir el alma del metal" #NT!
- increase_decrease_metal_attributes_perk_name: "Aumentar/Disminuir atributos de metal" #NT!
- tieh_tan_summon_the_dragon_boat_perk_name: "Invocar el barco dragón" #NT!
- summon_dispel_tieh_shen_perk_name: "Invocar/Disipar a Tieh Shen" #NT!
- tieh_tan_the_enfolded_object_perk_name: "El objeto envuelto" #NT!
- metal_form_perk_name: "Forma de metal" #NT!
- paths_of_iron_perk_name: "Caminos de hierro" #NT!
- tieh_tan_awaken_true_jade_perk_name: "Despierta el verdadero jade" #NT!
- move_metal_perk_name: "Mover metal" #NT!
- shape_sunder_metal_perk_name: "Dar forma/romper metal" #NT!
- summon_dispel_metal_perk_name: "Invocar metal" #NT!
- tieh_tan_exchange_properties_perk_name: "Propiedades de intercambio" #NT!
- transmute_metal_perk_name: "Transmutar metal" #NT!
- read_wood_soul_perk_name: "Leer Alma de madera" #NT!
- commune_with_wood_perk_name: "Comulgar con la madera" #NT!
- lin_tan_speak_with_jimu_tenno_perk_name: "Habla con Jimu-Tenno" #NT!
- nurture_diminish_wood_soul_perk_name: "Nutrir/Disminuir el alma de la madera" #NT!
- increase_decrease_wood_attributes_perk_name: "Aumentar/Disminuir los atributos de la madera" #NT!
- lin_tan_summon_the_dragon_boat_perk_name: "Invocar el barco dragón" #NT!
- summon_dispel_lin_shen_perk_name: "Invocar/Disipar espíritu de madera" #NT!
- lin_tan_the_enfolded_object_perk_name: "El objeto envuelto" #NT!
- wood_form_perk_name: "Puño de madera" #NT!
- paths_of_wood_perk_name: "El camino de la madera" #NT!
- lin_tan_awaken_true_jade_perk_name: "Despierta el verdadero jade" #NT!
- move_wood_perk_name: "Mover madera" #NT!
- shape_sunder_wood_perk_name: "Dar forma/cortar madera" #NT!
- summon_dispel_wood_perk_name: "Invocar el Bosque de Lanzas" #NT!
- lin_tan_exchange_properties_perk_name: "Propiedades de intercambio" #NT!
- transmute_wood_perk_name: "Transmutar madera" #NT!
- read_water_soul_perk_name: "Leer alma de agua" #NT!
- commune_with_water_perk_name: "Comulgar con el agua" #NT!
- shui_tan_speak_with_jimu_tenno_perk_name: "Habla con Jimu-Tenno" #NT!
- nurture_diminish_water_soul_perk_name: "Ruega a los asistentes del dragón de agua" #NT!
- increase_decrease_water_attributes_perk_name: "Aumentar/Disminuir los atributos del agua" #NT!
- shui_tan_summon_the_dragon_boat_perk_name: "Invocar el barco dragón" #NT!
- summon_dispel_shui_shen_perk_name: "Invocar/Disipar espíritu de agua" #NT!
- shui_tan_the_enfolded_object_perk_name: "El objeto envuelto" #NT!
- water_form_perk_name: "Forma de agua" #NT!
- paths_of_water_perk_name: "El camino del agua" #NT!
- shui_tan_awaken_true_jade_perk_name: "Despierta a la tortuga negra" #NT!
- move_water_perk_name: "Mueva el agua" #NT!
- shape_sunder_water_perk_name: "Dar forma/romper el agua" #NT!
- summon_dispel_water_perk_name: "Invocar/Disipar agua" #NT!
- shui_tan_exchange_properties_perk_name: "Propiedades de intercambio" #NT!
- transmute_water_perk_name: "Transmutar el agua" #NT!
- read_fire_soul_perk_name: "La llama da testimonio" #NT!
- commune_with_fire_perk_name: "Comulgar con el fuego" #NT!
- hou_tan_speak_with_jimu_tenno_perk_name: "Habla con Jimu-Tenno" #NT!
- nurture_diminish_fire_soul_perk_name: "Nutrir/Disminuir el fuego del alma" #NT!
- increase_decrease_fire_attributes_perk_name: "Aumentar/Disminuir atributos de fuego" #NT!
- hou_tan_summon_the_dragon_boat_perk_name: "Invocar el barco dragón" #NT!
- summon_dispel_hou_shen_perk_name: "Invocar/Disipar a Hou Shen" #NT!
- hou_tan_the_enfolded_object_perk_name: "El objeto envuelto" #NT!
- fire_form_perk_name: "Las garras ardientes de Ch'ih Ching-tsu" #NT!
- paths_of_fire_perk_name: "El camino del fuego" #NT!
- hou_tan_awaken_true_jade_perk_name: "Despierta el verdadero jade" #NT!
- move_fire_perk_name: "Mover fuego" #NT!
- shape_sunder_fire_perk_name: "Cincel de Pan Ku" #NT!
- summon_dispel_fire_perk_name: "Invocar/Disipar fuego" #NT!
- hou_tan_exchange_properties_perk_name: "Propiedades de intercambio" #NT!
- transmute_fire_perk_name: "Transmutar fuego" #NT!
- read_earth_soul_perk_name: "Leer Alma de la Tierra" #NT!
- commune_with_earth_perk_name: "Comunión con la Tierra" #NT!
- di_tan_speak_with_jimu_tenno_perk_name: "Habla con Jimu-Tenno" #NT!
- nurture_diminish_earth_soul_perk_name: "Nutrir/Disminuir el Alma de la Tierra" #NT!
- increase_decrease_earth_attributes_perk_name: "Aumentar/Disminuir los atributos de la Tierra" #NT!
- di_tan_summon_the_dragon_boat_perk_name: "Invocar el barco dragón" #NT!
- summon_dispel_di_shen_perk_name: "Invocar/Disipar a Di Shen" #NT!
- di_tan_the_enfolded_object_perk_name: "La piedra envuelta" #NT!
- earth_form_perk_name: "Forma de la Tierra" #NT!
- paths_of_earth_perk_name: "El camino de la tierra" #NT!
- di_tan_awaken_true_jade_perk_name: "Despierta el verdadero jade" #NT!
- move_earth_perk_name: "mover la tierra" #NT!
- shape_sunder_earth_perk_name: "Forma/Romper la Tierra" #NT!
- summon_dispel_earth_perk_name: "Invocar/Disipar Tierra" #NT!
- di_tan_exchange_properties_perk_name: "Propiedades de intercambio" #NT!
- transmute_earth_perk_name: "Transmutar la Tierra" #NT!
- art_shapechange_perk_name: "Cambio de forma" #NT!
- visage_of_dead_perk_name: "El rostro de los muertos" #NT!
- axis_of_time_perk_name: "Eje del Tiempo" #NT!
- the_mutable_furies_perk_name: "Las furias mutables" #NT!
- the_typhoons_eye_perk_name: "El ojo del tifón" #NT!
- the_benevolent_hand_of_jade_perk_name: "La mano benévola de Jade" #NT!
- backside_of_the_monkey_king_perk_name: "Parte trasera del rey mono" #NT!
- fortify_the_wall_perk_name: "Fortalecer el muro" #NT!
- unlock_the_jade_portal_perk_name: "Desbloquea el portal de jade" #NT!
+ read_metal_soul_perk_name: "Leer Metal Soul"
+ commune_with_metal_perk_name: "Comulgar con el metal"
+ tieh_tan_speak_with_jimu_tenno_perk_name: "Habla con Jimu-Tenno"
+ nurture_diminish_metal_soul_perk_name: "Nutrir/Disminuir el alma del metal"
+ increase_decrease_metal_attributes_perk_name: "Aumentar/Disminuir atributos de metal"
+ tieh_tan_summon_the_dragon_boat_perk_name: "Invocar el barco dragón"
+ summon_dispel_tieh_shen_perk_name: "Invocar/Disipar a Tieh Shen"
+ tieh_tan_the_enfolded_object_perk_name: "El objeto envuelto"
+ metal_form_perk_name: "Forma de metal"
+ paths_of_iron_perk_name: "Caminos de hierro"
+ tieh_tan_awaken_true_jade_perk_name: "Despierta el verdadero jade"
+ move_metal_perk_name: "Mover metal"
+ shape_sunder_metal_perk_name: "Dar forma/romper metal"
+ summon_dispel_metal_perk_name: "Invocar metal"
+ tieh_tan_exchange_properties_perk_name: "Propiedades de intercambio"
+ transmute_metal_perk_name: "Transmutar metal"
+ read_wood_soul_perk_name: "Leer Alma de madera"
+ commune_with_wood_perk_name: "Comulgar con la madera"
+ lin_tan_speak_with_jimu_tenno_perk_name: "Habla con Jimu-Tenno"
+ nurture_diminish_wood_soul_perk_name: "Nutrir/Disminuir el alma de la madera"
+ increase_decrease_wood_attributes_perk_name: "Aumentar/Disminuir los atributos de la madera"
+ lin_tan_summon_the_dragon_boat_perk_name: "Invocar el barco dragón"
+ summon_dispel_lin_shen_perk_name: "Invocar/Disipar espíritu de madera"
+ lin_tan_the_enfolded_object_perk_name: "El objeto envuelto"
+ wood_form_perk_name: "Puño de madera"
+ paths_of_wood_perk_name: "El camino de la madera"
+ lin_tan_awaken_true_jade_perk_name: "Despierta el verdadero jade"
+ move_wood_perk_name: "Mover madera"
+ shape_sunder_wood_perk_name: "Dar forma/cortar madera"
+ summon_dispel_wood_perk_name: "Invocar el Bosque de Lanzas"
+ lin_tan_exchange_properties_perk_name: "Propiedades de intercambio"
+ transmute_wood_perk_name: "Transmutar madera"
+ read_water_soul_perk_name: "Leer alma de agua"
+ commune_with_water_perk_name: "Comulgar con el agua"
+ shui_tan_speak_with_jimu_tenno_perk_name: "Habla con Jimu-Tenno"
+ nurture_diminish_water_soul_perk_name: "Ruega a los asistentes del dragón de agua"
+ increase_decrease_water_attributes_perk_name: "Aumentar/Disminuir los atributos del agua"
+ shui_tan_summon_the_dragon_boat_perk_name: "Invocar el barco dragón"
+ summon_dispel_shui_shen_perk_name: "Invocar/Disipar espíritu de agua"
+ shui_tan_the_enfolded_object_perk_name: "El objeto envuelto"
+ water_form_perk_name: "Forma de agua"
+ paths_of_water_perk_name: "El camino del agua"
+ shui_tan_awaken_true_jade_perk_name: "Despierta a la tortuga negra"
+ move_water_perk_name: "Mueva el agua"
+ shape_sunder_water_perk_name: "Dar forma/romper el agua"
+ summon_dispel_water_perk_name: "Invocar/Disipar agua"
+ shui_tan_exchange_properties_perk_name: "Propiedades de intercambio"
+ transmute_water_perk_name: "Transmutar el agua"
+ read_fire_soul_perk_name: "La llama da testimonio"
+ commune_with_fire_perk_name: "Comulgar con el fuego"
+ hou_tan_speak_with_jimu_tenno_perk_name: "Habla con Jimu-Tenno"
+ nurture_diminish_fire_soul_perk_name: "Nutrir/Disminuir el fuego del alma"
+ increase_decrease_fire_attributes_perk_name: "Aumentar/Disminuir atributos de fuego"
+ hou_tan_summon_the_dragon_boat_perk_name: "Invocar el barco dragón"
+ summon_dispel_hou_shen_perk_name: "Invocar/Disipar a Hou Shen"
+ hou_tan_the_enfolded_object_perk_name: "El objeto envuelto"
+ fire_form_perk_name: "Las garras ardientes de Ch'ih Ching-tsu"
+ paths_of_fire_perk_name: "El camino del fuego"
+ hou_tan_awaken_true_jade_perk_name: "Despierta el verdadero jade"
+ move_fire_perk_name: "Mover fuego"
+ shape_sunder_fire_perk_name: "Cincel de Pan Ku"
+ summon_dispel_fire_perk_name: "Invocar/Disipar fuego"
+ hou_tan_exchange_properties_perk_name: "Propiedades de intercambio"
+ transmute_fire_perk_name: "Transmutar fuego"
+ read_earth_soul_perk_name: "Leer Alma de la Tierra"
+ commune_with_earth_perk_name: "Comunión con la Tierra"
+ di_tan_speak_with_jimu_tenno_perk_name: "Habla con Jimu-Tenno"
+ nurture_diminish_earth_soul_perk_name: "Nutrir/Disminuir el Alma de la Tierra"
+ increase_decrease_earth_attributes_perk_name: "Aumentar/Disminuir los atributos de la Tierra"
+ di_tan_summon_the_dragon_boat_perk_name: "Invocar el barco dragón"
+ summon_dispel_di_shen_perk_name: "Invocar/Disipar a Di Shen"
+ di_tan_the_enfolded_object_perk_name: "La piedra envuelta"
+ earth_form_perk_name: "Forma de la Tierra"
+ paths_of_earth_perk_name: "El camino de la tierra"
+ di_tan_awaken_true_jade_perk_name: "Despierta el verdadero jade"
+ move_earth_perk_name: "mover la tierra"
+ shape_sunder_earth_perk_name: "Forma/Romper la Tierra"
+ summon_dispel_earth_perk_name: "Invocar/Disipar Tierra"
+ di_tan_exchange_properties_perk_name: "Propiedades de intercambio"
+ transmute_earth_perk_name: "Transmutar la Tierra"
+ art_shapechange_perk_name: "Cambio de forma"
+ visage_of_dead_perk_name: "El rostro de los muertos"
+ axis_of_time_perk_name: "Eje del Tiempo"
+ the_mutable_furies_perk_name: "Las furias mutables"
+ the_typhoons_eye_perk_name: "El ojo del tifón"
+ the_benevolent_hand_of_jade_perk_name: "La mano benévola de Jade"
+ backside_of_the_monkey_king_perk_name: "Parte trasera del rey mono"
+ fortify_the_wall_perk_name: "Fortalecer el muro"
+ unlock_the_jade_portal_perk_name: "Desbloquea el portal de jade"
   
- READ_METAL_SOUL_PERK_EFFECT: "#F Comunicarse con el [metal_soul|E] de una persona te dirá si la persona ha hablado con la verdad o si ignora lo que es justo.#!" #NT!
- COMMUNE_WITH_METAL_PERK_EFFECT: "#F Al igual que otros objetos elementales, los de metal tienen sentidos limitados y formas limitadas de comunicarse.#!" #NT!
- TIEH_TAN_SPEAK_WITH_JIMU_TENNO_PERK_EFFECT: "#F El Alquimista puede hablar con los Espíritus del Metal, siempre que puedan ser encontrados.#!" #NT!
- NURTURE_DIMINISH_METAL_SOUL_PERK_EFFECT: "#F Aumentar el [metal_soul|E] puede hacer que una persona diga la verdad. Disminuirlo hace que sea más fácil mentir.#!" #NT!
- INCREASE_DECREASE_METAL_ATTRIBUTES_PERK_EFFECT: "#F El Alquimista puede afectar la Percepción o Destreza del objetivo.#!" #NT!
- TIEH_TAN_SUMMON_THE_DRAGON_BOAT_PERK_EFFECT: "Progreso de exploración mensual de Umbra: [grace_i]#P +5#!\n#F Invocar un Barco Dragón asociado con el Metal es útil cuando la Línea Dragón que sigue ha sido cubierta con un ferrocarril o si el Nido Dragón al que se viaja o del que se viaja está asociado con el Metal o la Justicia.#!" #NT!
- SUMMON_DISPEL_TIEH_SHEN_PERK_EFFECT: "Puede reclutar a [GetMaA('metal_elemental').GetName] como [men_at_arms|E].\n#F Un alquimista de metal puede invocar o disipar un espíritu de metal.#!" #NT!
- TIEH_TAN_THE_ENFOLDED_OBJECT_PERK_EFFECT: "#F El metal es quizás el segundo objeto más fácil de plegar y práctico también.#!" #NT!
- METAL_FORM_PERK_EFFECT: "Desbloquea la opción de cambio de forma [GetModifier( 'POD_shapeshift_form_metal_modifier' ).GetNameWithTooltip|L].\n#F Este es un I Chih común tanto para los Chu-ih-yu como para los Tanuki, quienes tienden a ser marciales y la defensa de una piel de metal o el poder destructivo de un puño de metal es útil.#!" #NT!
- PATHS_OF_IRON_PERK_EFFECT: "#F Cables de cobre, conductos metálicos o vigas de acero de los edificios... los Caminos del Metal son muchos, al menos en las ciudades.#!" #NT!
- TIEH_TAN_AWAKEN_TRUE_JADE_PERK_EFFECT: "Como [character_interaction|E], te permite despertar [true_jade|E] para almacenar Chi.\n#F El Alquimista puede despertar White Jade.#!" #NT!
- MOVE_METAL_PERK_EFFECT: "#F Un truco útil para el guerrero cuya arma ha sido arrojada de su mano.#!" #NT!
- SHAPE_SUNDER_METAL_PERK_EFFECT: "#F Los grandes trabajadores de la Alquimia de Metales son destacados artesanos y fabrican hermosas espadas y otras armas.#!" #NT!
- SUMMON_DISPEL_METAL_PERK_EFFECT: "#F Cuando necesitas un arma y no te importa lo que obtengas, esta habilidad puede ser útil.#!" #NT!
- TIEH_TAN_EXCHANGE_PROPERTIES_PERK_EFFECT: "#F En este nivel de poder, un Maestro puede hacer que el acero sea tan suave como el oro o que el oro sea tan resistente como el acero.#!" #NT!
- TRANSMUTE_METAL_PERK_EFFECT: "Como [character_interaction|E], te permite gastar Chi para ganar [gold|E].\n#F Con esta habilidad, el metal se puede convertir en otro metal por completo.#!" #NT!
- READ_WOOD_SOUL_PERK_EFFECT: "#F [Concept('wood_soul','Wood Souls')|E] comunicar el estado de salud de un ser, entre otras cosas.#!" #NT!
- COMMUNE_WITH_WOOD_PERK_EFFECT: "#F Como la mayoría de los elementos, la madera y sus correspondencias solo pueden brindar información limitada.#!" #NT!
- LIN_TAN_SPEAK_WITH_JIMU_TENNO_PERK_EFFECT: "#F El Alquimista puede hablar con Lin Shen, siempre que se manifiesten o los hsien como la habilidad de perforar el Muro.#!" #NT!
- NURTURE_DIMINISH_WOOD_SOUL_PERK_EFFECT: "#F Agrandar el alma puede crear lujuria mientras que disminuirla puede causar impotencia.#!" #NT!
- INCREASE_DECREASE_WOOD_ATTRIBUTES_PERK_EFFECT: "#F El Alquimista puede aumentar o disminuir los atributos de Apariencia o Fuerza.#!" #NT!
- LIN_TAN_SUMMON_THE_DRAGON_BOAT_PERK_EFFECT: "Progreso de exploración mensual de Umbra: [grace_i]#P +5#!\n#F El Alquimista puede invocar un barco dragón para que lo lleve a lo largo de una línea de dragones desde un nido de dragones al siguiente.#!" #NT!
- SUMMON_DISPEL_LIN_SHEN_PERK_EFFECT: "Puede reclutar a [GetMaA('wood_elemental').GetName] como [men_at_arms|E].\n#F El Alquimista puede invocar y disipar Espíritus del Bosque, lo que incluye espíritus de plantas, pero no de animales.#!" #NT!
- LIN_TAN_THE_ENFOLDED_OBJECT_PERK_EFFECT: "#F El Alquimista puede ocultar un objeto gobernado por la Madera dentro de su propio cuerpo.#!" #NT!
- WOOD_FORM_PERK_EFFECT: "Desbloquea la opción de cambio de forma [GetModifier( 'POD_shapeshift_form_wood_modifier' ).GetNameWithTooltip|L].\n#F El alquimista puede convertir todo o parte de su cuerpo en madera, lo que le permite recibir o distribuir más daño en el combate cuerpo a cuerpo.#!" #NT!
- PATHS_OF_WOOD_PERK_EFFECT: "#F Finas redes de raíces, hongos y musgo crean un gran camino por el que el alquimista puede transitar.#!" #NT!
- LIN_TAN_AWAKEN_TRUE_JADE_PERK_EFFECT: "Como [character_interaction|E], te permite despertar a [true_jade|E] para almacenar Chi.\n#F El alquimista puede despertar Jade Azul o Verde.#!" #NT!
- MOVE_WOOD_PERK_EFFECT: "#F Este I Chih permite mover objetos de madera de una manera similar a la psicoquinesis.#!" #NT!
- SHAPE_SUNDER_WOOD_PERK_EFFECT: "#F Los artesanos de la madera pueden usar esta habilidad para hacer hermosas artesanías o destruir objetos de madera.#!" #NT!
- SUMMON_DISPEL_WOOD_PERK_EFFECT: "#F El shinma puede invocar o disipar madera.#!" #NT!
- LIN_TAN_EXCHANGE_PROPERTIES_PERK_EFFECT: "#F En este nivel, el roble podría volverse tan suave como el pino o los pétalos de una flor o la hierba tan dura como el roble con la misma delgadez.#!" #NT!
- TRANSMUTE_WOOD_PERK_EFFECT: "#F Transmutar una madera en otra puede tener una utilidad limitada, pero si el cuerpo humano está gobernado por este Elemento, se podría transformar de manera factible un árbol en un humano.#!" #NT!
- READ_WATER_SOUL_PERK_EFFECT: "#F Comunicarse con el [water_soul|E] ayuda a medir la lealtad, la confianza, etc. de una persona...#!" #NT!
- COMMUNE_WITH_WATER_PERK_EFFECT: "#F Todos los elementos físicos tienen límites a la hora de comunicarse. El agua podría hablar del gusto de alguien que nada en ella o de su nivel de confianza en sí mismo o de si abandonó a la otra persona en el agua con ella para que se ahogara por ser desleal.#!" #NT!
- SHUI_TAN_SPEAK_WITH_JIMU_TENNO_PERK_EFFECT: "#F Con este I Chih el alquimista puede hablar con Shui Shen.#!" #NT!
- NURTURE_DIMINISH_WATER_SOUL_PERK_EFFECT: "#F Los líderes astutos usan este efecto para crear lealtad en sus seguidores o para robar los seguidores de otros para sí mismos.#!" #NT!
- INCREASE_DECREASE_WATER_ATTRIBUTES_PERK_EFFECT: "#F Con estas invocaciones el Alquimista puede bendecir o maldecir a un objetivo modificando su Atributo de Manipulación o Resistencia.#!" #NT!
- SHUI_TAN_SUMMON_THE_DRAGON_BOAT_PERK_EFFECT: "Progreso de exploración mensual de Umbra: [grace_i]#P +5#!\n#F Un alquimista usaría Shui Tan para invocar un barco dragón si la Línea del Dragón viaja a través del agua o el cielo.#!" #NT!
- SUMMON_DISPEL_SHUI_SHEN_PERK_EFFECT: "Puede reclutar a [GetMaA('water_elemental').GetName] como [men_at_arms|E].\n#F Con esta habilidad, un alquimista puede ejercer cierto control sobre Shui Shen.#!" #NT!
- SHUI_TAN_THE_ENFOLDED_OBJECT_PERK_EFFECT: "#F Esta parece una habilidad poco probable para usar con Agua, pero podría ser bastante útil en efectos de cohorte, tal vez envolviendo cantimploras.#!" #NT!
- WATER_FORM_PERK_EFFECT: "Desbloquea la opción de cambio de forma [GetModifier( 'POD_shapeshift_form_water_modifier' ).GetNameWithTooltip|L].\n#F En la discusión sobre Wu Tan se afirma que las formas elementales aún siguen las reglas de la física.#!" #NT!
- PATHS_OF_WATER_PERK_EFFECT: "#F Moverse a través del agua es obviamente algo práctico y para aquellos que pueden soportar lo desagradable que es, las alcantarillas están por todas partes en las ciudades.#!" #NT!
- SHUI_TAN_AWAKEN_TRUE_JADE_PERK_EFFECT: "Como [character_interaction|E], te permite despertar a [true_jade|E] para almacenar Chi.\n#F El Alquimista puede despertar a Jade Negro.#!" #NT!
- MOVE_WATER_PERK_EFFECT: "#F Con este I Chih el Alquimista podría causar una Avalancha, detener el flujo de sangre en un objetivo, o sacar el agua de una piscina para salvar a una víctima que se está ahogando y si eso fuera demasiado tarde podrían sacar el agua de los pulmones de una víctima.#!" #NT!
- SHAPE_SUNDER_WATER_PERK_EFFECT: "#F Me viene a la mente dividir un mar. También se podría sacar agua para alcanzar y agarrar a alguien y ahogarlo. Esculpir hielo es fácil con este I Chih.#!" #NT!
- SUMMON_DISPEL_WATER_PERK_EFFECT: "#F Disipar el aire de los pulmones de alguien puede ser devastador y sacarlo de la habitación detrás de alguien puede causar un efecto de vacío que puede ser bastante útil.#!" #NT!
- SHUI_TAN_EXCHANGE_PROPERTIES_PERK_EFFECT: "#F Con este efecto se podría dar al agua dulce el punto de congelación del agua salada o se podría hacer que un gas nocivo no fuera más dañino que el vapor de agua.#!" #NT!
- TRANSMUTE_WATER_PERK_EFFECT: "#F Poder transformar agua o solución salina en sangre es útil cuando no hay suministros de emergencia cerca.#!" #NT!
- READ_FIRE_SOUL_PERK_EFFECT: "#F Al comunicarse con un [fire_soul|E], el shinma puede determinar los significados ocultos de la etiqueta y sus infracciones.#!" #NT!
- COMMUNE_WITH_FIRE_PERK_EFFECT: "#F El fuego en sí es un elemento con el que es difícil comunicarse, ya que no permanece en un mismo lugar por mucho tiempo. Los rayos, los incendios forestales... son de corta duración.#!" #NT!
- HOU_TAN_SPEAK_WITH_JIMU_TENNO_PERK_EFFECT: "#F El alquimista puede hablar con cualquier Hou Shen que encuentre.#!" #NT!
- NURTURE_DIMINISH_FIRE_SOUL_PERK_EFFECT: "#F Al disminuir el [fire_soul|E], el Nyan puede hacer que una persona sea más susceptible a sus avances mientras que el Chu Jung puede agrandar el [Concept('fire_soul','Fire Souls')|E] de sus cortes para crear un efecto muy parecido al primer nivel de Soberano.#!" #NT!
- INCREASE_DECREASE_FIRE_ATTRIBUTES_PERK_EFFECT: "#F Al aumentar su Carisma y Astucia, el Alquimista puede hacerse tan popular y rápido como los grandes actores de artes marciales o, al disminuirlos, hacer que su objetivo sea tan socialmente inepto que nunca recupere su posición a los ojos de su corte.#!" #NT!
- HOU_TAN_SUMMON_THE_DRAGON_BOAT_PERK_EFFECT: "Progreso de exploración mensual de Umbra: [grace_i]#P +5#!\n#F Con este I Chih, el alquimista puede invocar un Barco Dragón para viajar por las Líneas Dragón de Luz o Magma.#!" #NT!
- SUMMON_DISPEL_HOU_SHEN_PERK_EFFECT: "Puede reclutar a [GetMaA('fire_elemental').GetName] como [men_at_arms|E].\n#F Como dice el nombre, el Alquimista puede disipar o invocar un elemental de Fuego.#!" #NT!
- HOU_TAN_THE_ENFOLDED_OBJECT_PERK_EFFECT: "#F Lamentablemente, es casi imposible para un alquimista de fuego usar esta habilidad sin un efecto mixto. Además de eso, ninguna de las cohortes de fuego es particularmente buena para almacenar fuego. La tecnología, como los teléfonos celulares, las computadoras o las linternas, tienden a requerir tanto la alquimia de fuego como la de metal para tener efecto y esto causa sus propias dificultades, ya que el fuego es adversario del metal. #!" #NT!
- FIRE_FORM_PERK_EFFECT: "Desbloquea la opción de cambio de forma [GetModifier( 'POD_shapeshift_form_fire_modifier' ).GetNameWithTooltip|L].\n#F Las reglas generales para esta habilidad dicen que el fuego debe obedecer las leyes de la física... que necesita combustible.#!" #NT!
- PATHS_OF_FIRE_PERK_EFFECT: "#F Si bien a primera vista esto parece relativamente inútil (¿quién necesita viajar a través del fuego excepto en medio del fuego?), a medida que la electricidad y la fibra óptica se extendieron por todo el Reino Medio, también lo hicieron los caminos del Fuego.#!" #NT!
- HOU_TAN_AWAKEN_TRUE_JADE_PERK_EFFECT: "Como [character_interaction|E], te permite despertar a [true_jade|E] para almacenar Chi.\n#F Con esta habilidad, el Alquimista de Fuego puede despertar a Jade Rojo.#!" #NT!
- MOVE_FIRE_PERK_EFFECT: "Ya no se obtienen heridas por fuego.\n#F Si bien esta habilidad al principio puede parecer limitada a la pirocinesis, la capacidad de doblar la luz está incluida en este nivel, lo que permite efectos como la invisibilidad o incluso la creación de hologramas e ilusiones que solo incluyen la vista.#!" #NT!
- SHAPE_SUNDER_FIRE_PERK_EFFECT: "#F Junto con Metal Alchemy, se pueden manipular objetos tecnológicos.#!" #NT!
- SUMMON_DISPEL_FIRE_PERK_EFFECT: "Hiere al enemigo [knights|E] y a los comandantes en la guerra como comandante o enemigo en [single_combat_duel|E], si son vampiros (u otros seres sobrenaturales que temen al sol).\nOtorga un modificador de [GetModifier('summon_dispel_fire_perk_modifier').GetNameWithTooltip] al enemigo [knights|E] en la guerra como comandante o al enemigo en [single_combat_duel|E].\n#F Si bien el Alquimista no puede controlar de dónde proviene el Fuego, poder invocar fuego del cielo o traer luz o incluso luz solar donde antes no estaba tiene sus ventajas.#!" #NT!
- HOU_TAN_EXCHANGE_PROPERTIES_PERK_EFFECT: "#F Una persona con inclinaciones científicas sabe que la electricidad está gobernada por el fuego y que el electromagnetismo es la fuerza real.#!" #NT!
- TRANSMUTE_FIRE_PERK_EFFECT: "#F Luz al Fuego. Electricidad a la Luz. Luz para calentar. Magma a la Luz. Todo esto es posible.#!" #NT!
- READ_EARTH_SOUL_PERK_EFFECT: "#F La gente suele decir más o menos de un tema de lo que sabe. Reflexionar sobre el [earth_soul|E] de una persona puede revelar esto.#!" #NT!
- COMMUNE_WITH_EARTH_PERK_EFFECT: "#F El alquimista puede hablar con los objetos de Tierra o Piedra, etc... pero los objetos inanimados no tienen todos los sentidos que tenemos los humanos.#!" #NT!
- DI_TAN_SPEAK_WITH_JIMU_TENNO_PERK_EFFECT: "#F El Alquimista puede hablar con Di Shen.#!" #NT!
- NURTURE_DIMINISH_EARTH_SOUL_PERK_EFFECT: "#F Aumentar el [earth_soul|E] de una persona le ayudará a tomar decisiones inteligentes, mientras que disminuirlo hará que tomar decisiones inteligentes sea más difícil.#!" #NT!
- INCREASE_DECREASE_EARTH_ATTRIBUTES_PERK_EFFECT: "#F El Alquimista puede aumentar o disminuir el Atributo de Inteligencia de su objetivo.#!" #NT!
- DI_TAN_SUMMON_THE_DRAGON_BOAT_PERK_EFFECT: "Progreso mensual de exploración de la Umbra: [grace_i]#P +5#!\n#F El Alquimista puede convocar transporte a lo largo de una Línea Dragón que pasa a través de la Tierra o las montañas.#!" #NT!
- SUMMON_DISPEL_DI_SHEN_PERK_EFFECT: "Puede reclutar a [GetMaA('earth_elemental').GetName] como [men_at_arms|E].\n#F El Alquimista puede invocar y ordenar a Di Shen.#!" #NT!
- DI_TAN_THE_ENFOLDED_OBJECT_PERK_EFFECT: "#F El Alquimista puede ocultar objetos gobernados por la tierra dentro de su propio cuerpo.#!" #NT!
- EARTH_FORM_PERK_EFFECT: "Desbloquea la opción de cambio de forma [GetModifier( 'POD_shapeshift_form_earth_modifier' ).GetNameWithTooltip|L].\n#F El Alquimista puede cambiar todo o parte de su cuerpo temporalmente a Tierra.#!" #NT!
- PATHS_OF_EARTH_PERK_EFFECT: "#F El Alquimista puede viajar a través de cualquiera de los elementos asociados con la Tierra.#!" #NT!
- DI_TAN_AWAKEN_TRUE_JADE_PERK_EFFECT: "Como [character_interaction|E], te permite despertar [true_jade|E] para almacenar Chi.\n#F El Alquimista puede despertar el Jade Amarillo.#!" #NT!
- MOVE_EARTH_PERK_EFFECT: "#F El Alquimista puede mover objetos ligados a la Tierra como con Psicoquinesis.#!" #NT!
- SHAPE_SUNDER_EARTH_PERK_EFFECT: "#F Si bien este poder puede tener muchas aplicaciones creativas, también puede ser utilizado por un Komuko enojado para crear terremotos, mientras que los benévolos pueden crear nuevos pasos a través de las montañas.#!" #NT!
- SUMMON_DISPEL_EARTH_PERK_EFFECT: "#F Para esos momentos en los que debes tener ese diamante brillante en la bóveda.#!" #NT!
- DI_TAN_EXCHANGE_PROPERTIES_PERK_EFFECT: "#F Con este I Chih se pueden hacer piedras tan maleables como la arcilla y diamantes tan frágiles como el talco.#!" #NT!
- TRANSMUTE_EARTH_PERK_EFFECT: "Como [character_interaction|E], te permite gastar Chi para ganar [prestige|E].\n#F Con este efecto, un Hanuman juguetón puede convertir un puñado de piedras en gemas... hasta que la magia desaparezca y el destinatario se dé cuenta de que ha sido engañado.#!" #NT!
- ART_SHAPECHANGE_PERK_EFFECT: "Permite cambiar de forma a varias formas animales.\n#F Alterar la cara, el sexo, la raza o la especie.#!" #NT!
- VISAGE_OF_DEAD_PERK_EFFECT: "#F Este efecto Yin permite a los hsien matar efectivamente sus cuerpos por un período de tiempo.#!" #NT!
- AXIS_OF_TIME_PERK_EFFECT: "#F Los Hsien pueden disminuir el control del tiempo sobre ellos, acelerando su propio movimiento a través del tiempo.#!" #NT!
- THE_MUTABLE_FURIES_PERK_EFFECT: "#F Los hsien pueden manipular sus valores Chi.#!" #NT!
- THE_TYPHOONS_EYE_PERK_EFFECT: "#F El T'ai Chi otorga al shinma el poder de atravesar las tormentas ileso.#!" #NT!
- THE_BENEVOLENT_HAND_OF_JADE_PERK_EFFECT: "#F Este I Chih hace probable lo improbable...#!" #NT!
- BACKSIDE_OF_THE_MONKEY_KING_PERK_EFFECT: "#F Este I Chih hace que lo probable sea improbable...#!" #NT!
- FORTIFY_THE_WALL_PERK_EFFECT: "Desbloquea la opción Manipular el muro en el panel de sombra.\n#F El portador de la llave puede fortalecer temporalmente el muro de un lugar.#!" #NT!
- UNLOCK_THE_JADE_PORTAL_PERK_EFFECT: "Obtén acceso a [astral_reaches|E], [dreaming|E], [spirit_wilds|E], [underworld|E] y [deep_umbra|E] durante los viajes espirituales.\n#F Para desbloquear el Muro y viajar más allá de él.#!" #NT!
+ READ_METAL_SOUL_PERK_EFFECT: "#F Comunicarse con el [metal_soul|E] de una persona te dirá si la persona ha hablado con la verdad o si ignora lo que es justo.#!"
+ COMMUNE_WITH_METAL_PERK_EFFECT: "#F Al igual que otros objetos elementales, los de metal tienen sentidos limitados y formas limitadas de comunicarse.#!"
+ TIEH_TAN_SPEAK_WITH_JIMU_TENNO_PERK_EFFECT: "#F El Alquimista puede hablar con los Espíritus del Metal, siempre que puedan ser encontrados.#!"
+ NURTURE_DIMINISH_METAL_SOUL_PERK_EFFECT: "#F Aumentar el [metal_soul|E] puede hacer que una persona diga la verdad. Disminuirlo hace que sea más fácil mentir.#!"
+ INCREASE_DECREASE_METAL_ATTRIBUTES_PERK_EFFECT: "#F El Alquimista puede afectar la Percepción o Destreza del objetivo.#!"
+ TIEH_TAN_SUMMON_THE_DRAGON_BOAT_PERK_EFFECT: "Progreso de exploración mensual de Umbra: [grace_i]#P +5#!\n#F Invocar un Barco Dragón asociado con el Metal es útil cuando la Línea Dragón que sigue ha sido cubierta con un ferrocarril o si el Nido Dragón al que se viaja o del que se viaja está asociado con el Metal o la Justicia.#!"
+ SUMMON_DISPEL_TIEH_SHEN_PERK_EFFECT: "Puede reclutar a [GetMaA('metal_elemental').GetName] como [men_at_arms|E].\n#F Un alquimista de metal puede invocar o disipar un espíritu de metal.#!"
+ TIEH_TAN_THE_ENFOLDED_OBJECT_PERK_EFFECT: "#F El metal es quizás el segundo objeto más fácil de plegar y práctico también.#!"
+ METAL_FORM_PERK_EFFECT: "Desbloquea la opción de cambio de forma [GetModifier( 'POD_shapeshift_form_metal_modifier' ).GetNameWithTooltip|L].\n#F Este es un I Chih común tanto para los Chu-ih-yu como para los Tanuki, quienes tienden a ser marciales y la defensa de una piel de metal o el poder destructivo de un puño de metal es útil.#!"
+ PATHS_OF_IRON_PERK_EFFECT: "#F Cables de cobre, conductos metálicos o vigas de acero de los edificios... los Caminos del Metal son muchos, al menos en las ciudades.#!"
+ TIEH_TAN_AWAKEN_TRUE_JADE_PERK_EFFECT: "Como [character_interaction|E], te permite despertar [true_jade|E] para almacenar Chi.\n#F El Alquimista puede despertar White Jade.#!"
+ MOVE_METAL_PERK_EFFECT: "#F Un truco útil para el guerrero cuya arma ha sido arrojada de su mano.#!"
+ SHAPE_SUNDER_METAL_PERK_EFFECT: "#F Los grandes trabajadores de la Alquimia de Metales son destacados artesanos y fabrican hermosas espadas y otras armas.#!"
+ SUMMON_DISPEL_METAL_PERK_EFFECT: "#F Cuando necesitas un arma y no te importa lo que obtengas, esta habilidad puede ser útil.#!"
+ TIEH_TAN_EXCHANGE_PROPERTIES_PERK_EFFECT: "#F En este nivel de poder, un Maestro puede hacer que el acero sea tan suave como el oro o que el oro sea tan resistente como el acero.#!"
+ TRANSMUTE_METAL_PERK_EFFECT: "Como [character_interaction|E], te permite gastar Chi para ganar [gold|E].\n#F Con esta habilidad, el metal se puede convertir en otro metal por completo.#!"
+ READ_WOOD_SOUL_PERK_EFFECT: "#F [Concept('wood_soul','Wood Souls')|E] comunicar el estado de salud de un ser, entre otras cosas.#!"
+ COMMUNE_WITH_WOOD_PERK_EFFECT: "#F Como la mayoría de los elementos, la madera y sus correspondencias solo pueden brindar información limitada.#!"
+ LIN_TAN_SPEAK_WITH_JIMU_TENNO_PERK_EFFECT: "#F El Alquimista puede hablar con Lin Shen, siempre que se manifiesten o los hsien como la habilidad de perforar el Muro.#!"
+ NURTURE_DIMINISH_WOOD_SOUL_PERK_EFFECT: "#F Agrandar el alma puede crear lujuria mientras que disminuirla puede causar impotencia.#!"
+ INCREASE_DECREASE_WOOD_ATTRIBUTES_PERK_EFFECT: "#F El Alquimista puede aumentar o disminuir los atributos de Apariencia o Fuerza.#!"
+ LIN_TAN_SUMMON_THE_DRAGON_BOAT_PERK_EFFECT: "Progreso de exploración mensual de Umbra: [grace_i]#P +5#!\n#F El Alquimista puede invocar un barco dragón para que lo lleve a lo largo de una línea de dragones desde un nido de dragones al siguiente.#!"
+ SUMMON_DISPEL_LIN_SHEN_PERK_EFFECT: "Puede reclutar a [GetMaA('wood_elemental').GetName] como [men_at_arms|E].\n#F El Alquimista puede invocar y disipar Espíritus del Bosque, lo que incluye espíritus de plantas, pero no de animales.#!"
+ LIN_TAN_THE_ENFOLDED_OBJECT_PERK_EFFECT: "#F El Alquimista puede ocultar un objeto gobernado por la Madera dentro de su propio cuerpo.#!"
+ WOOD_FORM_PERK_EFFECT: "Desbloquea la opción de cambio de forma [GetModifier( 'POD_shapeshift_form_wood_modifier' ).GetNameWithTooltip|L].\n#F El alquimista puede convertir todo o parte de su cuerpo en madera, lo que le permite recibir o distribuir más daño en el combate cuerpo a cuerpo.#!"
+ PATHS_OF_WOOD_PERK_EFFECT: "#F Finas redes de raíces, hongos y musgo crean un gran camino por el que el alquimista puede transitar.#!"
+ LIN_TAN_AWAKEN_TRUE_JADE_PERK_EFFECT: "Como [character_interaction|E], te permite despertar a [true_jade|E] para almacenar Chi.\n#F El alquimista puede despertar Jade Azul o Verde.#!"
+ MOVE_WOOD_PERK_EFFECT: "#F Este I Chih permite mover objetos de madera de una manera similar a la psicoquinesis.#!"
+ SHAPE_SUNDER_WOOD_PERK_EFFECT: "#F Los artesanos de la madera pueden usar esta habilidad para hacer hermosas artesanías o destruir objetos de madera.#!"
+ SUMMON_DISPEL_WOOD_PERK_EFFECT: "#F El shinma puede invocar o disipar madera.#!"
+ LIN_TAN_EXCHANGE_PROPERTIES_PERK_EFFECT: "#F En este nivel, el roble podría volverse tan suave como el pino o los pétalos de una flor o la hierba tan dura como el roble con la misma delgadez.#!"
+ TRANSMUTE_WOOD_PERK_EFFECT: "#F Transmutar una madera en otra puede tener una utilidad limitada, pero si el cuerpo humano está gobernado por este Elemento, se podría transformar de manera factible un árbol en un humano.#!"
+ READ_WATER_SOUL_PERK_EFFECT: "#F Comunicarse con el [water_soul|E] ayuda a medir la lealtad, la confianza, etc. de una persona...#!"
+ COMMUNE_WITH_WATER_PERK_EFFECT: "#F Todos los elementos físicos tienen límites a la hora de comunicarse. El agua podría hablar del gusto de alguien que nada en ella o de su nivel de confianza en sí mismo o de si abandonó a la otra persona en el agua con ella para que se ahogara por ser desleal.#!"
+ SHUI_TAN_SPEAK_WITH_JIMU_TENNO_PERK_EFFECT: "#F Con este I Chih el alquimista puede hablar con Shui Shen.#!"
+ NURTURE_DIMINISH_WATER_SOUL_PERK_EFFECT: "#F Los líderes astutos usan este efecto para crear lealtad en sus seguidores o para robar los seguidores de otros para sí mismos.#!"
+ INCREASE_DECREASE_WATER_ATTRIBUTES_PERK_EFFECT: "#F Con estas invocaciones el Alquimista puede bendecir o maldecir a un objetivo modificando su Atributo de Manipulación o Resistencia.#!"
+ SHUI_TAN_SUMMON_THE_DRAGON_BOAT_PERK_EFFECT: "Progreso de exploración mensual de Umbra: [grace_i]#P +5#!\n#F Un alquimista usaría Shui Tan para invocar un barco dragón si la Línea del Dragón viaja a través del agua o el cielo.#!"
+ SUMMON_DISPEL_SHUI_SHEN_PERK_EFFECT: "Puede reclutar a [GetMaA('water_elemental').GetName] como [men_at_arms|E].\n#F Con esta habilidad, un alquimista puede ejercer cierto control sobre Shui Shen.#!"
+ SHUI_TAN_THE_ENFOLDED_OBJECT_PERK_EFFECT: "#F Esta parece una habilidad poco probable para usar con Agua, pero podría ser bastante útil en efectos de cohorte, tal vez envolviendo cantimploras.#!"
+ WATER_FORM_PERK_EFFECT: "Desbloquea la opción de cambio de forma [GetModifier( 'POD_shapeshift_form_water_modifier' ).GetNameWithTooltip|L].\n#F En la discusión sobre Wu Tan se afirma que las formas elementales aún siguen las reglas de la física.#!"
+ PATHS_OF_WATER_PERK_EFFECT: "#F Moverse a través del agua es obviamente algo práctico y para aquellos que pueden soportar lo desagradable que es, las alcantarillas están por todas partes en las ciudades.#!"
+ SHUI_TAN_AWAKEN_TRUE_JADE_PERK_EFFECT: "Como [character_interaction|E], te permite despertar a [true_jade|E] para almacenar Chi.\n#F El Alquimista puede despertar a Jade Negro.#!"
+ MOVE_WATER_PERK_EFFECT: "#F Con este I Chih el Alquimista podría causar una Avalancha, detener el flujo de sangre en un objetivo, o sacar el agua de una piscina para salvar a una víctima que se está ahogando y si eso fuera demasiado tarde podrían sacar el agua de los pulmones de una víctima.#!"
+ SHAPE_SUNDER_WATER_PERK_EFFECT: "#F Me viene a la mente dividir un mar. También se podría sacar agua para alcanzar y agarrar a alguien y ahogarlo. Esculpir hielo es fácil con este I Chih.#!"
+ SUMMON_DISPEL_WATER_PERK_EFFECT: "#F Disipar el aire de los pulmones de alguien puede ser devastador y sacarlo de la habitación detrás de alguien puede causar un efecto de vacío que puede ser bastante útil.#!"
+ SHUI_TAN_EXCHANGE_PROPERTIES_PERK_EFFECT: "#F Con este efecto se podría dar al agua dulce el punto de congelación del agua salada o se podría hacer que un gas nocivo no fuera más dañino que el vapor de agua.#!"
+ TRANSMUTE_WATER_PERK_EFFECT: "#F Poder transformar agua o solución salina en sangre es útil cuando no hay suministros de emergencia cerca.#!"
+ READ_FIRE_SOUL_PERK_EFFECT: "#F Al comunicarse con un [fire_soul|E], el shinma puede determinar los significados ocultos de la etiqueta y sus infracciones.#!"
+ COMMUNE_WITH_FIRE_PERK_EFFECT: "#F El fuego en sí es un elemento con el que es difícil comunicarse, ya que no permanece en un mismo lugar por mucho tiempo. Los rayos, los incendios forestales... son de corta duración.#!"
+ HOU_TAN_SPEAK_WITH_JIMU_TENNO_PERK_EFFECT: "#F El alquimista puede hablar con cualquier Hou Shen que encuentre.#!"
+ NURTURE_DIMINISH_FIRE_SOUL_PERK_EFFECT: "#F Al disminuir el [fire_soul|E], el Nyan puede hacer que una persona sea más susceptible a sus avances mientras que el Chu Jung puede agrandar el [Concept('fire_soul','Fire Souls')|E] de sus cortes para crear un efecto muy parecido al primer nivel de Soberano.#!"
+ INCREASE_DECREASE_FIRE_ATTRIBUTES_PERK_EFFECT: "#F Al aumentar su Carisma y Astucia, el Alquimista puede hacerse tan popular y rápido como los grandes actores de artes marciales o, al disminuirlos, hacer que su objetivo sea tan socialmente inepto que nunca recupere su posición a los ojos de su corte.#!"
+ HOU_TAN_SUMMON_THE_DRAGON_BOAT_PERK_EFFECT: "Progreso de exploración mensual de Umbra: [grace_i]#P +5#!\n#F Con este I Chih, el alquimista puede invocar un Barco Dragón para viajar por las Líneas Dragón de Luz o Magma.#!"
+ SUMMON_DISPEL_HOU_SHEN_PERK_EFFECT: "Puede reclutar a [GetMaA('fire_elemental').GetName] como [men_at_arms|E].\n#F Como dice el nombre, el Alquimista puede disipar o invocar un elemental de Fuego.#!"
+ HOU_TAN_THE_ENFOLDED_OBJECT_PERK_EFFECT: "#F Lamentablemente, es casi imposible para un alquimista de fuego usar esta habilidad sin un efecto mixto. Además de eso, ninguna de las cohortes de fuego es particularmente buena para almacenar fuego. La tecnología, como los teléfonos celulares, las computadoras o las linternas, tienden a requerir tanto la alquimia de fuego como la de metal para tener efecto y esto causa sus propias dificultades, ya que el fuego es adversario del metal. #!"
+ FIRE_FORM_PERK_EFFECT: "Desbloquea la opción de cambio de forma [GetModifier( 'POD_shapeshift_form_fire_modifier' ).GetNameWithTooltip|L].\n#F Las reglas generales para esta habilidad dicen que el fuego debe obedecer las leyes de la física... que necesita combustible.#!"
+ PATHS_OF_FIRE_PERK_EFFECT: "#F Si bien a primera vista esto parece relativamente inútil (¿quién necesita viajar a través del fuego excepto en medio del fuego?), a medida que la electricidad y la fibra óptica se extendieron por todo el Reino Medio, también lo hicieron los caminos del Fuego.#!"
+ HOU_TAN_AWAKEN_TRUE_JADE_PERK_EFFECT: "Como [character_interaction|E], te permite despertar a [true_jade|E] para almacenar Chi.\n#F Con esta habilidad, el Alquimista de Fuego puede despertar a Jade Rojo.#!"
+ MOVE_FIRE_PERK_EFFECT: "Ya no se obtienen heridas por fuego.\n#F Si bien esta habilidad al principio puede parecer limitada a la pirocinesis, la capacidad de doblar la luz está incluida en este nivel, lo que permite efectos como la invisibilidad o incluso la creación de hologramas e ilusiones que solo incluyen la vista.#!"
+ SHAPE_SUNDER_FIRE_PERK_EFFECT: "#F Junto con Metal Alchemy, se pueden manipular objetos tecnológicos.#!"
+ SUMMON_DISPEL_FIRE_PERK_EFFECT: "Hiere al enemigo [knights|E] y a los comandantes en la guerra como comandante o enemigo en [single_combat_duel|E], si son vampiros (u otros seres sobrenaturales que temen al sol).\nOtorga un modificador de [GetModifier('summon_dispel_fire_perk_modifier').GetNameWithTooltip] al enemigo [knights|E] en la guerra como comandante o al enemigo en [single_combat_duel|E].\n#F Si bien el Alquimista no puede controlar de dónde proviene el Fuego, poder invocar fuego del cielo o traer luz o incluso luz solar donde antes no estaba tiene sus ventajas.#!"
+ HOU_TAN_EXCHANGE_PROPERTIES_PERK_EFFECT: "#F Una persona con inclinaciones científicas sabe que la electricidad está gobernada por el fuego y que el electromagnetismo es la fuerza real.#!"
+ TRANSMUTE_FIRE_PERK_EFFECT: "#F Luz al Fuego. Electricidad a la Luz. Luz para calentar. Magma a la Luz. Todo esto es posible.#!"
+ READ_EARTH_SOUL_PERK_EFFECT: "#F La gente suele decir más o menos de un tema de lo que sabe. Reflexionar sobre el [earth_soul|E] de una persona puede revelar esto.#!"
+ COMMUNE_WITH_EARTH_PERK_EFFECT: "#F El alquimista puede hablar con los objetos de Tierra o Piedra, etc... pero los objetos inanimados no tienen todos los sentidos que tenemos los humanos.#!"
+ DI_TAN_SPEAK_WITH_JIMU_TENNO_PERK_EFFECT: "#F El Alquimista puede hablar con Di Shen.#!"
+ NURTURE_DIMINISH_EARTH_SOUL_PERK_EFFECT: "#F Aumentar el [earth_soul|E] de una persona le ayudará a tomar decisiones inteligentes, mientras que disminuirlo hará que tomar decisiones inteligentes sea más difícil.#!"
+ INCREASE_DECREASE_EARTH_ATTRIBUTES_PERK_EFFECT: "#F El Alquimista puede aumentar o disminuir el Atributo de Inteligencia de su objetivo.#!"
+ DI_TAN_SUMMON_THE_DRAGON_BOAT_PERK_EFFECT: "Progreso mensual de exploración de la Umbra: [grace_i]#P +5#!\n#F El Alquimista puede convocar transporte a lo largo de una Línea Dragón que pasa a través de la Tierra o las montañas.#!"
+ SUMMON_DISPEL_DI_SHEN_PERK_EFFECT: "Puede reclutar a [GetMaA('earth_elemental').GetName] como [men_at_arms|E].\n#F El Alquimista puede invocar y ordenar a Di Shen.#!"
+ DI_TAN_THE_ENFOLDED_OBJECT_PERK_EFFECT: "#F El Alquimista puede ocultar objetos gobernados por la tierra dentro de su propio cuerpo.#!"
+ EARTH_FORM_PERK_EFFECT: "Desbloquea la opción de cambio de forma [GetModifier( 'POD_shapeshift_form_earth_modifier' ).GetNameWithTooltip|L].\n#F El Alquimista puede cambiar todo o parte de su cuerpo temporalmente a Tierra.#!"
+ PATHS_OF_EARTH_PERK_EFFECT: "#F El Alquimista puede viajar a través de cualquiera de los elementos asociados con la Tierra.#!"
+ DI_TAN_AWAKEN_TRUE_JADE_PERK_EFFECT: "Como [character_interaction|E], te permite despertar [true_jade|E] para almacenar Chi.\n#F El Alquimista puede despertar el Jade Amarillo.#!"
+ MOVE_EARTH_PERK_EFFECT: "#F El Alquimista puede mover objetos ligados a la Tierra como con Psicoquinesis.#!"
+ SHAPE_SUNDER_EARTH_PERK_EFFECT: "#F Si bien este poder puede tener muchas aplicaciones creativas, también puede ser utilizado por un Komuko enojado para crear terremotos, mientras que los benévolos pueden crear nuevos pasos a través de las montañas.#!"
+ SUMMON_DISPEL_EARTH_PERK_EFFECT: "#F Para esos momentos en los que debes tener ese diamante brillante en la bóveda.#!"
+ DI_TAN_EXCHANGE_PROPERTIES_PERK_EFFECT: "#F Con este I Chih se pueden hacer piedras tan maleables como la arcilla y diamantes tan frágiles como el talco.#!"
+ TRANSMUTE_EARTH_PERK_EFFECT: "Como [character_interaction|E], te permite gastar Chi para ganar [prestige|E].\n#F Con este efecto, un Hanuman juguetón puede convertir un puñado de piedras en gemas... hasta que la magia desaparezca y el destinatario se dé cuenta de que ha sido engañado.#!"
+ ART_SHAPECHANGE_PERK_EFFECT: "Permite cambiar de forma a varias formas animales.\n#F Alterar la cara, el sexo, la raza o la especie.#!"
+ VISAGE_OF_DEAD_PERK_EFFECT: "#F Este efecto Yin permite a los hsien matar efectivamente sus cuerpos por un período de tiempo.#!"
+ AXIS_OF_TIME_PERK_EFFECT: "#F Los Hsien pueden disminuir el control del tiempo sobre ellos, acelerando su propio movimiento a través del tiempo.#!"
+ THE_MUTABLE_FURIES_PERK_EFFECT: "#F Los hsien pueden manipular sus valores Chi.#!"
+ THE_TYPHOONS_EYE_PERK_EFFECT: "#F El T'ai Chi otorga al shinma el poder de atravesar las tormentas ileso.#!"
+ THE_BENEVOLENT_HAND_OF_JADE_PERK_EFFECT: "#F Este I Chih hace probable lo improbable...#!"
+ BACKSIDE_OF_THE_MONKEY_KING_PERK_EFFECT: "#F Este I Chih hace que lo probable sea improbable...#!"
+ FORTIFY_THE_WALL_PERK_EFFECT: "Desbloquea la opción Manipular el muro en el panel de sombra.\n#F El portador de la llave puede fortalecer temporalmente el muro de un lugar.#!"
+ UNLOCK_THE_JADE_PORTAL_PERK_EFFECT: "Obtén acceso a [astral_reaches|E], [dreaming|E], [spirit_wilds|E], [underworld|E] y [deep_umbra|E] durante los viajes espirituales.\n#F Para desbloquear el Muro y viajar más allá de él.#!"

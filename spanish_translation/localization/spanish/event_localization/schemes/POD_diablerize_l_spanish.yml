@@ -1,338 +1,338 @@
 ﻿l_spanish:
   
- POD_diablerize.100.t: "Diablería: [diablerie_location.GetNameNoTooltip]" #NT!
- POD_diablerize.100.desc: "He rastreado [defender.GetFirstName] hasta [defender.GetHerHis] refugio en [diablerie_location.GetNameNoTooltip]. ¡Todo está listo, y ahora finalmente puedo atacar [defender.GetHerHim] para drenar [defender.GetHerHim] de toda [defender.GetHerHis] sangre e incluso [defender.GetHerHis] alma! El riesgo personal es considerable, pero las recompensas mayores. ¿Debo seguir adelante con esto y lanzar mi ataque más letal contra [defender.GetFirstName]?" #NT!
- POD_diablerize.100.option.a: "¡Ataque [defender.GetTitledFirstName]!" #NT!
- POD_diablerize.100.option.a.tt: "Se desatará una lucha, si pierdo, también puedo ser destruido. Usaré toda mi fuerza de voluntad y los poderes de la sangre para triunfar." #NT!
- POD_diablerize.100.option.a.tt.beast: "#R ¡Ataque! ¡Tendremos sangre de [defender.GetHerHis] corazón!#!" #NT!
- POD_diablerize.100.option.b: "Abandone esta vil búsqueda." #NT!
- POD_diablerize.100.option.b.tt.beast: "#R Sabemos que [defender.GetSheHe] es débil. ¡Puedo olerlo! ¡No te des la vuelta ahora! #!" #NT!
+ POD_diablerize.100.t: "Diablería: [diablerie_location.GetNameNoTooltip]"
+ POD_diablerize.100.desc: "He rastreado [defender.GetFirstName] hasta [defender.GetHerHis] refugio en [diablerie_location.GetNameNoTooltip]. ¡Todo está listo, y ahora finalmente puedo atacar [defender.GetHerHim] para drenar [defender.GetHerHim] de toda [defender.GetHerHis] sangre e incluso [defender.GetHerHis] alma! El riesgo personal es considerable, pero las recompensas mayores. ¿Debo seguir adelante con esto y lanzar mi ataque más letal contra [defender.GetFirstName]?"
+ POD_diablerize.100.option.a: "¡Ataque [defender.GetTitledFirstName]!"
+ POD_diablerize.100.option.a.tt: "Se desatará una lucha, si pierdo, también puedo ser destruido. Usaré toda mi fuerza de voluntad y los poderes de la sangre para triunfar."
+ POD_diablerize.100.option.a.tt.beast: "#R ¡Ataque! ¡Tendremos sangre de [defender.GetHerHis] corazón!#!"
+ POD_diablerize.100.option.b: "Abandone esta vil búsqueda."
+ POD_diablerize.100.option.b.tt.beast: "#R Sabemos que [defender.GetSheHe] es débil. ¡Puedo olerlo! ¡No te des la vuelta ahora! #!"
   
- POD_diablerize.200.t: "¡Un ataque mortal!" #NT!
- POD_diablerize.200.desc: "[attacker.GetFirstName] me ha pillado solo en [diablerie_location.GetNameNoTooltip]. ¡Los ojos de [attacker.GetHerHis|U] brillan con el hambre de la Bestia! ¿Qué debo hacer?" #NT!
- POD_diablerize.200.option.a: "¡Huir!" #NT!
- POD_diablerize.200.option.a.tt.beast: "#R ¡Corre, tonto!#!" #NT!
- POD_diablerize.200.option.a.tt: "Un duelo marcial de maniobras determinará si puedes escapar del ataque [attacker.GetFirstNamePossessive]." #NT!
- POD_diablerize.200.option.a.desc: "Un concurso de maniobras" #NT!
- POD_diablerize.200.option.a.success: "[defender.GetFirstName] victorias" #NT!
- POD_diablerize.200.option.a.tt.defender_wins: "¡Yo escapo!" #NT!
- POD_diablerize.200.option.a.tt.celerityadvanced: "¡Tengo celeridad avanzada!" #NT!
- POD_diablerize.200.option.a.tt.potenceadvanced: "¡Tengo potencia avanzada!" #NT!
- POD_diablerize.200.option.a.tt.blink: "Puedo moverme en un abrir y cerrar de ojos." #NT!
- POD_diablerize.200.option.a.tt.traversal: "Puedo correr por las paredes y a través del agua." #NT!
- POD_diablerize.200.option.a.tt.soaring_leap: "Puedo dar saltos vertiginosos." #NT!
- POD_diablerize.200.option.a.tt.uncanny_grip: "Tengo un agarre asombroso." #NT!
- POD_diablerize.200.option.a.failure: "[attacker.GetFirstName] victorias" #NT!
- POD_diablerize.200.option.a.tt.attacker_wins: "[attacker.GetFirstName] me atrapa" #NT!
- POD_diablerize.200.option.b: "¡Esconder!" #NT!
- POD_diablerize.200.option.b.tt: "Un duelo de intriga de escondite y búsqueda determinará si puedes escapar del ataque [attacker.GetFirstNamePossessive]." #NT!
- POD_diablerize.200.option.b.desc: "Un concurso de escondite" #NT!
- POD_diablerize.200.option.b.tt.beast: "#R ¡La noche será nuestra armadura! #!" #NT!
- POD_diablerize.200.option.b.tt.obfuscateadvanced: "¡He avanzado en ofuscación!" #NT!
- POD_diablerize.200.option.b.tt.oblivionadvanced: "¡He adelantado el olvido!" #NT!
- POD_diablerize.200.option.b.tt.cloak_of_shadows: "Puedo ocultarme en las sombras." #NT!
- POD_diablerize.200.option.b.tt.silence_of_death: "Me muevo con el silencio de la muerte." #NT!
- POD_diablerize.200.option.b.tt.unseen_passage: "Mi paso es invisible" #NT!
- POD_diablerize.200.option.b.tt.vanish: "Puedo simplemente desaparecer." #NT!
- POD_diablerize.200.option.b.success: "[defender.GetFirstName] victorias" #NT!
- POD_diablerize.200.option.b.tt.defender_wins: "¡Me escondo!" #NT!
- POD_diablerize.200.option.b.failure: "[attacker.GetFirstName] victorias" #NT!
- POD_diablerize.200.option.b.tt.attacker_wins: "[attacker.GetFirstName] me atrapa." #NT!
- POD_diablerize.200.option.c: "¡Entrada!" #NT!
- POD_diablerize.200.option.c.tt.beast: "#R ¡¿Cómo pudo [attacker.GetSheHe] atacarnos?! ¡Somos tan maravillosos!#!" #NT!
- POD_diablerize.200.option.c.desc: "Un conflicto de personalidad" #NT!
- POD_diablerize.200.option.c.tt: "Un duelo diplomático determinará si puedes usar la presencia de [discipline|E] para conseguir que [attacker.GetFirstName] detenga el ataque de [attacker.GetHerHis]." #NT!
- POD_diablerize.200.option.c.tt.entrancement: "Soy fascinante" #NT!
- POD_diablerize.200.option.c.tt.majesty: "¡Soy majestuoso!" #NT!
- POD_diablerize.200.option.c.success: "[defender.GetFirstName] victorias" #NT!
- POD_diablerize.200.option.c.tt.defender_wins: "¡Me entra [attacker.GetFirstName]!" #NT!
- POD_diablerize.200.option.c.failure: "[attacker.GetFirstName] victorias" #NT!
- POD_diablerize.200.option.c.tt.attacker_wins: "[attacker.GetFirstName] es inmune a mis encantos." #NT!
- POD_diablerize.200.option.d: "¡Hipnotizar!" #NT!
- POD_diablerize.200.option.d.desc: "Un conflicto de dominio" #NT!
- POD_diablerize.200.option.d.tt.beast: "#R [attacker.GetSheHe|U] obedecerá!#!" #NT!
- POD_diablerize.200.option.d.tt: "Un duelo de administración determinará si puedes usar el [discipline|E] del orden de dominio [attacker.GetFirstName] para detener el ataque [attacker.GetHerHis]." #NT!
- POD_diablerize.200.option.d.tt.mesmerize: "Puedo hipnotizar mentes inferiores." #NT!
- POD_diablerize.200.option.d.tt.rationalize: "Puedo hacer que mis esclavos racionalicen mis órdenes como si fueran suyas." #NT!
- POD_diablerize.200.option.d.tt.submerged_directive: "Puedo sumergir directivas para convertir a los débiles en mis peones." #NT!
- POD_diablerize.200.option.d.tt.terminal_decree: "Puedo emitir un decreto terminal." #NT!
- POD_diablerize.200.option.d.success: "[defender.GetFirstName] victorias" #NT!
- POD_diablerize.200.option.d.tt.defender_wins: "Yo domino [attacker.GetFirstName]!" #NT!
- POD_diablerize.200.option.d.failure: "[attacker.GetFirstName] victorias" #NT!
- POD_diablerize.200.option.d.tt.attacker_wins: "[attacker.GetFirstNamePossessive] La voluntad es demasiado fuerte para dominar." #NT!
- POD_diablerize.200.option.e: "¡Cambio de forma!" #NT!
- POD_diablerize.200.option.e.tt.beast: "#R [attacker.GetSheHe] ¡No puedo comer lo que [attacker.GetSheHe] no puedo sostener!#!" #NT!
- POD_diablerize.200.option.e.tt: "Un duelo de aprendizaje determinará si puedes usar tu [discipline|E] para transformarte en una forma incorpórea y evadir la trampa [attacker.GetFirstNamePossessive]." #NT!
- POD_diablerize.200.option.f: "¡Ataque!" #NT!
- POD_diablerize.200.option.f.tt.beast: "#R ¡Tomaremos [attacker.GetHerHis] sangre!#!" #NT!
- POD_diablerize.200.option.f.tt: "Un duelo de destreza determinará si [attacker.GetFirstName] o tú ganáis en el combate." #NT!
+ POD_diablerize.200.t: "¡Un ataque mortal!"
+ POD_diablerize.200.desc: "[attacker.GetFirstName] me ha pillado solo en [diablerie_location.GetNameNoTooltip]. ¡Los ojos de [attacker.GetHerHis|U] brillan con el hambre de la Bestia! ¿Qué debo hacer?"
+ POD_diablerize.200.option.a: "¡Huir!"
+ POD_diablerize.200.option.a.tt.beast: "#R ¡Corre, tonto!#!"
+ POD_diablerize.200.option.a.tt: "Un duelo marcial de maniobras determinará si puedes escapar del ataque [attacker.GetFirstNamePossessive]."
+ POD_diablerize.200.option.a.desc: "Un concurso de maniobras"
+ POD_diablerize.200.option.a.success: "[defender.GetFirstName] victorias"
+ POD_diablerize.200.option.a.tt.defender_wins: "¡Yo escapo!"
+ POD_diablerize.200.option.a.tt.celerityadvanced: "¡Tengo celeridad avanzada!"
+ POD_diablerize.200.option.a.tt.potenceadvanced: "¡Tengo potencia avanzada!"
+ POD_diablerize.200.option.a.tt.blink: "Puedo moverme en un abrir y cerrar de ojos."
+ POD_diablerize.200.option.a.tt.traversal: "Puedo correr por las paredes y a través del agua."
+ POD_diablerize.200.option.a.tt.soaring_leap: "Puedo dar saltos vertiginosos."
+ POD_diablerize.200.option.a.tt.uncanny_grip: "Tengo un agarre asombroso."
+ POD_diablerize.200.option.a.failure: "[attacker.GetFirstName] victorias"
+ POD_diablerize.200.option.a.tt.attacker_wins: "[attacker.GetFirstName] me atrapa"
+ POD_diablerize.200.option.b: "¡Esconder!"
+ POD_diablerize.200.option.b.tt: "Un duelo de intriga de escondite y búsqueda determinará si puedes escapar del ataque [attacker.GetFirstNamePossessive]."
+ POD_diablerize.200.option.b.desc: "Un concurso de escondite"
+ POD_diablerize.200.option.b.tt.beast: "#R ¡La noche será nuestra armadura! #!"
+ POD_diablerize.200.option.b.tt.obfuscateadvanced: "¡He avanzado en ofuscación!"
+ POD_diablerize.200.option.b.tt.oblivionadvanced: "¡He adelantado el olvido!"
+ POD_diablerize.200.option.b.tt.cloak_of_shadows: "Puedo ocultarme en las sombras."
+ POD_diablerize.200.option.b.tt.silence_of_death: "Me muevo con el silencio de la muerte."
+ POD_diablerize.200.option.b.tt.unseen_passage: "Mi paso es invisible"
+ POD_diablerize.200.option.b.tt.vanish: "Puedo simplemente desaparecer."
+ POD_diablerize.200.option.b.success: "[defender.GetFirstName] victorias"
+ POD_diablerize.200.option.b.tt.defender_wins: "¡Me escondo!"
+ POD_diablerize.200.option.b.failure: "[attacker.GetFirstName] victorias"
+ POD_diablerize.200.option.b.tt.attacker_wins: "[attacker.GetFirstName] me atrapa."
+ POD_diablerize.200.option.c: "¡Entrada!"
+ POD_diablerize.200.option.c.tt.beast: "#R ¡¿Cómo pudo [attacker.GetSheHe] atacarnos?! ¡Somos tan maravillosos!#!"
+ POD_diablerize.200.option.c.desc: "Un conflicto de personalidad"
+ POD_diablerize.200.option.c.tt: "Un duelo diplomático determinará si puedes usar la presencia de [discipline|E] para conseguir que [attacker.GetFirstName] detenga el ataque de [attacker.GetHerHis]."
+ POD_diablerize.200.option.c.tt.entrancement: "Soy fascinante"
+ POD_diablerize.200.option.c.tt.majesty: "¡Soy majestuoso!"
+ POD_diablerize.200.option.c.success: "[defender.GetFirstName] victorias"
+ POD_diablerize.200.option.c.tt.defender_wins: "¡Me entra [attacker.GetFirstName]!"
+ POD_diablerize.200.option.c.failure: "[attacker.GetFirstName] victorias"
+ POD_diablerize.200.option.c.tt.attacker_wins: "[attacker.GetFirstName] es inmune a mis encantos."
+ POD_diablerize.200.option.d: "¡Hipnotizar!"
+ POD_diablerize.200.option.d.desc: "Un conflicto de dominio"
+ POD_diablerize.200.option.d.tt.beast: "#R [attacker.GetSheHe|U] obedecerá!#!"
+ POD_diablerize.200.option.d.tt: "Un duelo de administración determinará si puedes usar el [discipline|E] del orden de dominio [attacker.GetFirstName] para detener el ataque [attacker.GetHerHis]."
+ POD_diablerize.200.option.d.tt.mesmerize: "Puedo hipnotizar mentes inferiores."
+ POD_diablerize.200.option.d.tt.rationalize: "Puedo hacer que mis esclavos racionalicen mis órdenes como si fueran suyas."
+ POD_diablerize.200.option.d.tt.submerged_directive: "Puedo sumergir directivas para convertir a los débiles en mis peones."
+ POD_diablerize.200.option.d.tt.terminal_decree: "Puedo emitir un decreto terminal."
+ POD_diablerize.200.option.d.success: "[defender.GetFirstName] victorias"
+ POD_diablerize.200.option.d.tt.defender_wins: "Yo domino [attacker.GetFirstName]!"
+ POD_diablerize.200.option.d.failure: "[attacker.GetFirstName] victorias"
+ POD_diablerize.200.option.d.tt.attacker_wins: "[attacker.GetFirstNamePossessive] La voluntad es demasiado fuerte para dominar."
+ POD_diablerize.200.option.e: "¡Cambio de forma!"
+ POD_diablerize.200.option.e.tt.beast: "#R [attacker.GetSheHe] ¡No puedo comer lo que [attacker.GetSheHe] no puedo sostener!#!"
+ POD_diablerize.200.option.e.tt: "Un duelo de aprendizaje determinará si puedes usar tu [discipline|E] para transformarte en una forma incorpórea y evadir la trampa [attacker.GetFirstNamePossessive]."
+ POD_diablerize.200.option.f: "¡Ataque!"
+ POD_diablerize.200.option.f.tt.beast: "#R ¡Tomaremos [attacker.GetHerHis] sangre!#!"
+ POD_diablerize.200.option.f.tt: "Un duelo de destreza determinará si [attacker.GetFirstName] o tú ganáis en el combate."
   
  # Flight Martial Duel Result 
  #250 notify atacker 
- #POD_diablerize.250.t: "Diablerie: ¡Vuelo!" #NT!
- #POD_diablerize.250.desc.success: "[defender.GetFirstName] huye de mí. Por más que lo intento no puedo alcanzarlo." #NT!
- #POD_diablerize.250.desc.failure: "[defender.GetFirstName] intentó escapar, pero no fue lo suficientemente rápido. Ahora hay que cruzar la distancia restante y cazar a [defender.GetHerHim]." #NT!
- #POD_diablerize.250.option.a.success: "¡Frustrado!" #NT!
- #POD_diablerize.250.option.a.failure: "¡Ataque!" #NT!
+ #POD_diablerize.250.t: "Diablerie: ¡Vuelo!"
+ #POD_diablerize.250.desc.success: "[defender.GetFirstName] huye de mí. Por más que lo intento no puedo alcanzarlo."
+ #POD_diablerize.250.desc.failure: "[defender.GetFirstName] intentó escapar, pero no fue lo suficientemente rápido. Ahora hay que cruzar la distancia restante y cazar a [defender.GetHerHim]."
+ #POD_diablerize.250.option.a.success: "¡Frustrado!"
+ #POD_diablerize.250.option.a.failure: "¡Ataque!"
   
  #275 Martial Duel Result notify defender 
- POD_diablerize.275.t: "¡Huyendo de la lucha!" #NT!
- POD_diablerize.275.desc.success: "Pude escapar de [attacker.GetFirstName]. [attacker.GetSheHe|U] cayó muy atrás de mí, fuera de la vista." #NT!
- POD_diablerize.275.desc.failure: "Corrí pero no lo suficientemente rápido. [attacker.GetFirstName] me ha atrapado." #NT!
- POD_diablerize.275.option.a.success: "Debo mantenerme alejado de [attacker.GetHerHim]." #NT!
- POD_diablerize.275.option.a.failure: "¡Soy [attacker.GetHerHim] o yo!" #NT!
+ POD_diablerize.275.t: "¡Huyendo de la lucha!"
+ POD_diablerize.275.desc.success: "Pude escapar de [attacker.GetFirstName]. [attacker.GetSheHe|U] cayó muy atrás de mí, fuera de la vista."
+ POD_diablerize.275.desc.failure: "Corrí pero no lo suficientemente rápido. [attacker.GetFirstName] me ha atrapado."
+ POD_diablerize.275.option.a.success: "Debo mantenerme alejado de [attacker.GetHerHim]."
+ POD_diablerize.275.option.a.failure: "¡Soy [attacker.GetHerHim] o yo!"
   
  # Hide Duel 
  #300 hide duel notify atacker 
- POD_diablerize.300.t: "Diablerie: ¡Escóndete!" #NT!
- POD_diablerize.300.desc.success: "[defender.GetFirstName] logró esconderse de mí rápidamente. No puedo encontrar a [defender.GetHerHim] en ningún lado." #NT!
- POD_diablerize.300.desc.failure: "[defender.GetFirstName] estaba intentando esconderse de mí. Eso no va a funcionar. Puedo ver dónde está [defender.GetSheHe]." #NT!
- POD_diablerize.300.option.a.success: "¡Frustrado!" #NT!
- POD_diablerize.300.option.a.failure: "¡Ataque!" #NT!
+ POD_diablerize.300.t: "Diablerie: ¡Escóndete!"
+ POD_diablerize.300.desc.success: "[defender.GetFirstName] logró esconderse de mí rápidamente. No puedo encontrar a [defender.GetHerHim] en ningún lado."
+ POD_diablerize.300.desc.failure: "[defender.GetFirstName] estaba intentando esconderse de mí. Eso no va a funcionar. Puedo ver dónde está [defender.GetSheHe]."
+ POD_diablerize.300.option.a.success: "¡Frustrado!"
+ POD_diablerize.300.option.a.failure: "¡Ataque!"
   
  #325 hide duel notify defender 
- POD_diablerize.325.t: "¡Escondiéndose de la pelea!" #NT!
- POD_diablerize.325.desc.success: "Eso estuvo cerca. Pude esconderme de [attacker.GetFirstName]. Ahora, si puedo moverme lo suficientemente silenciosamente sin llamar la atención, me alejaré de [attacker.GetHerHim]." #NT!
- POD_diablerize.325.desc.failure: "Intenté esconderme, pero [attacker.GetFirstName] me encontró." #NT!
- POD_diablerize.325.option.a.success: "Necesito cubrir mis huellas." #NT!
- POD_diablerize.325.option.a.failure: "¡Soy [attacker.GetHerHim] o yo!" #NT!
+ POD_diablerize.325.t: "¡Escondiéndose de la pelea!"
+ POD_diablerize.325.desc.success: "Eso estuvo cerca. Pude esconderme de [attacker.GetFirstName]. Ahora, si puedo moverme lo suficientemente silenciosamente sin llamar la atención, me alejaré de [attacker.GetHerHim]."
+ POD_diablerize.325.desc.failure: "Intenté esconderme, pero [attacker.GetFirstName] me encontró."
+ POD_diablerize.325.option.a.success: "Necesito cubrir mis huellas."
+ POD_diablerize.325.option.a.failure: "¡Soy [attacker.GetHerHim] o yo!"
   
  # Negotiate Presence Duel 
  #350 entrance duel notify atacker 
- POD_diablerize.350.t: "Diablerie: ¡Encanto!" #NT!
- POD_diablerize.350.desc.success: "Al mirar a [defender.GetHerHis] a los ojos, me quedo asombrada de lo maravillosa que es [defender.GetFirstName]. Me gustan mucho. Nunca podría hacer nada que pudiera lastimar a [defender.GetHerHim]. ¿Por qué estoy aquí en primer lugar si no es para disfrutar de la gloria de [defender.GetHerHis]?" #NT!
- POD_diablerize.350.desc.failure: "[defender.GetFirstName] intentó engañarme, pero mi mente no es tan débil como para caer en una estratagema tan descarada. ¡Tomaré la sangre de [defender.GetHerHis]!" #NT!
- POD_diablerize.350.option.a.success: "Te amo mucho." #NT!
- POD_diablerize.350.option.a.success.tt: "Aunque estoy fascinado por [defender.GetFirstName], no podré intentar [diablerize|E] [defender.GetHerHim] nuevamente." #NT!
- POD_diablerize.350.option.a.failure: "Tus encantos no me impresionan." #NT!
+ POD_diablerize.350.t: "Diablerie: ¡Encanto!"
+ POD_diablerize.350.desc.success: "Al mirar a [defender.GetHerHis] a los ojos, me quedo asombrada de lo maravillosa que es [defender.GetFirstName]. Me gustan mucho. Nunca podría hacer nada que pudiera lastimar a [defender.GetHerHim]. ¿Por qué estoy aquí en primer lugar si no es para disfrutar de la gloria de [defender.GetHerHis]?"
+ POD_diablerize.350.desc.failure: "[defender.GetFirstName] intentó engañarme, pero mi mente no es tan débil como para caer en una estratagema tan descarada. ¡Tomaré la sangre de [defender.GetHerHis]!"
+ POD_diablerize.350.option.a.success: "Te amo mucho."
+ POD_diablerize.350.option.a.success.tt: "Aunque estoy fascinado por [defender.GetFirstName], no podré intentar [diablerize|E] [defender.GetHerHim] nuevamente."
+ POD_diablerize.350.option.a.failure: "Tus encantos no me impresionan."
   
  #375 entrance duel notify defender 
- POD_diablerize.375.t: "Fascinando al enemigo" #NT!
- POD_diablerize.375.desc.success: "Con mi [discipline|E] de presencia, he cautivado a [attacker.GetFirstName]. Aunque hechizado, [attacker.GetSheHe] no es una amenaza para mí." #NT!
- POD_diablerize.375.desc.failure: "Intento llamar la atención de [attacker.GetFirstName] e irradiar mi presencia hacia [attacker.GetHerHim] para volverlo pasivo. Con la velocidad y la ira con la que [attacker.GetSheHe] se acerca a mí, parece que he fracasado." #NT!
- POD_diablerize.375.option.a.success: "Sí, eso es. Yo soy a quien adoras." #NT!
- POD_diablerize.375.option.a.success.tt: "Mientras [attacker.GetFirstName] está fascinado por mí, [attacker.GetSheHe] no puede intentar [diablerize|E] volver a intentarlo." #NT!
- POD_diablerize.375.option.a.failure: "¿Por qué [attacker.GetSheHe] no me ama?" #NT!
+ POD_diablerize.375.t: "Fascinando al enemigo"
+ POD_diablerize.375.desc.success: "Con mi [discipline|E] de presencia, he cautivado a [attacker.GetFirstName]. Aunque hechizado, [attacker.GetSheHe] no es una amenaza para mí."
+ POD_diablerize.375.desc.failure: "Intento llamar la atención de [attacker.GetFirstName] e irradiar mi presencia hacia [attacker.GetHerHim] para volverlo pasivo. Con la velocidad y la ira con la que [attacker.GetSheHe] se acerca a mí, parece que he fracasado."
+ POD_diablerize.375.option.a.success: "Sí, eso es. Yo soy a quien adoras."
+ POD_diablerize.375.option.a.success.tt: "Mientras [attacker.GetFirstName] está fascinado por mí, [attacker.GetSheHe] no puede intentar [diablerize|E] volver a intentarlo."
+ POD_diablerize.375.option.a.failure: "¿Por qué [attacker.GetSheHe] no me ama?"
   
  # Dominate Duel 
   
  #425 dominate duel notify defender 
- POD_diablerize.425.t: "Hipnotizando al enemigo" #NT!
- POD_diablerize.425.desc.success: "Con mi [discipline|E] de dominio, doblego la voluntad de [attacker.GetHerHis] como un alfarero dobla la arcilla. Primero obligo a [attacker.GetHerHim] a que se detenga. Ahora, algunas órdenes más interesantes." #NT!
- POD_diablerize.425.desc.failure: "Me acerco a la mente de [attacker.GetHerHis]. Es como una fortaleza en la que no puedo penetrar. [attacker.GetSheHe|U] es sordo a mis repetidas órdenes." #NT!
- POD_diablerize.425.option.a: "Abandona este lugar. No regreses." #NT!
- POD_diablerize.425.option.a.tt: "[attacker.GetFirstNamePossessive] [diablerie|E] El plan en tu contra termina." #NT!
- POD_diablerize.425.option.b: "Me harás un favor importante." #NT!
- POD_diablerize.425.option.b.tt: "Voy a conseguir un gancho en [attacker.GetFirstName]" #NT!
- POD_diablerize.425.option.e: "Ahora eres mi prisionero." #NT!
- POD_diablerize.425.option.e.tt: "Voy a encarcelar a [attacker.GetFirstName]." #NT!
- POD_diablerize.425.option.c: "Ve a ver el amanecer." #NT!
- POD_diablerize.425.option.c.sunrise: "Ve y mira el amanecer." #NT!
- POD_diablerize.425.option.c.behead: "Al bloque, prisionero. Fácil y rápido." #NT!
- POD_diablerize.425.option.c.fire: "Arrojarse a la pira funeraria." #NT!
- POD_diablerize.425.option.c.tt: "[attacker.GetFirstName] se suicidará y sufrirá la muerte definitiva." #NT!
- POD_diablerize.425.option.d: "¿Por qué [attacker.GetSheHe] no me obedece?" #NT!
+ POD_diablerize.425.t: "Hipnotizando al enemigo"
+ POD_diablerize.425.desc.success: "Con mi [discipline|E] de dominio, doblego la voluntad de [attacker.GetHerHis] como un alfarero dobla la arcilla. Primero obligo a [attacker.GetHerHim] a que se detenga. Ahora, algunas órdenes más interesantes."
+ POD_diablerize.425.desc.failure: "Me acerco a la mente de [attacker.GetHerHis]. Es como una fortaleza en la que no puedo penetrar. [attacker.GetSheHe|U] es sordo a mis repetidas órdenes."
+ POD_diablerize.425.option.a: "Abandona este lugar. No regreses."
+ POD_diablerize.425.option.a.tt: "[attacker.GetFirstNamePossessive] [diablerie|E] El plan en tu contra termina."
+ POD_diablerize.425.option.b: "Me harás un favor importante."
+ POD_diablerize.425.option.b.tt: "Voy a conseguir un gancho en [attacker.GetFirstName]"
+ POD_diablerize.425.option.e: "Ahora eres mi prisionero."
+ POD_diablerize.425.option.e.tt: "Voy a encarcelar a [attacker.GetFirstName]."
+ POD_diablerize.425.option.c: "Ve a ver el amanecer."
+ POD_diablerize.425.option.c.sunrise: "Ve y mira el amanecer."
+ POD_diablerize.425.option.c.behead: "Al bloque, prisionero. Fácil y rápido."
+ POD_diablerize.425.option.c.fire: "Arrojarse a la pira funeraria."
+ POD_diablerize.425.option.c.tt: "[attacker.GetFirstName] se suicidará y sufrirá la muerte definitiva."
+ POD_diablerize.425.option.d: "¿Por qué [attacker.GetSheHe] no me obedece?"
   
  #400 dominate duel notify atacker 
- POD_diablerize.400.t: "Diablerie: ¡Dominar!" #NT!
- POD_diablerize.400.desc.success: "[defender.GetFirstName] entra en mi mente. No puedo resistirme. [defender.GetHerHis] lo hará. He sido completamente dominado. [defender.GetSheHe|U] me obliga a '¡Parar!'" #NT!
- POD_diablerize.400.desc.leave: "Entonces [defender.GetFirstName] ordena: “Sal de este lugar y no regreses”." #NT!
- POD_diablerize.400.desc.favor: "Entonces [defender.GetFirstName] ordena: 'Me harás un favor importante'." #NT!
- POD_diablerize.400.desc.favor.tt: "[defender.GetFirstName] se engancha a ti." #NT!
+ POD_diablerize.400.t: "Diablerie: ¡Dominar!"
+ POD_diablerize.400.desc.success: "[defender.GetFirstName] entra en mi mente. No puedo resistirme. [defender.GetHerHis] lo hará. He sido completamente dominado. [defender.GetSheHe|U] me obliga a '¡Parar!'"
+ POD_diablerize.400.desc.leave: "Entonces [defender.GetFirstName] ordena: “Sal de este lugar y no regreses”."
+ POD_diablerize.400.desc.favor: "Entonces [defender.GetFirstName] ordena: 'Me harás un favor importante'."
+ POD_diablerize.400.desc.favor.tt: "[defender.GetFirstName] se engancha a ti."
  POD_diablerize.400.desc.die: "Entonces [defender.GetFirstName] emite un decreto terminal: "Ve y mira el amanecer"." #NT!
- POD_diablerize.400.desc.sunrise: "Entonces [defender.GetFirstName] emite un decreto terminal: 'Ve y contempla el amanecer'." #NT!
+ POD_diablerize.400.desc.sunrise: "Entonces [defender.GetFirstName] emite un decreto terminal: 'Ve y contempla el amanecer'."
  POD_diablerize.400.desc.behead: "Entonces [defender.GetFirstName] emite un decreto final: "Al bloque, prisionero. Con calma"." #NT!
  POD_diablerize.400.desc.fire: "Entonces [defender.GetFirstName] emite un decreto terminal: "Arrojarse a la pira funeraria"." #NT!
  POD_diablerize.400.desc.prison: "Entonces [defender.GetFirstName] te ordena entrar en una celda: "Ahora eres mi prisionero"." #NT!
- POD_diablerize.400.desc.failure: "Mientras cargo contra [defender.GetFirstName], [defender.GetSheHe] me mira intensamente y con voz autoritaria me ordena '¡Para!' ¡[defender.GetSheHe|U] no tiene poder sobre mí!" #NT!
- POD_diablerize.400.option.a.success: "Tu deseo es mi comando." #NT!
- POD_diablerize.400.option.d.failure: "¡Mantente fuera de mi mente!" #NT!
+ POD_diablerize.400.desc.failure: "Mientras cargo contra [defender.GetFirstName], [defender.GetSheHe] me mira intensamente y con voz autoritaria me ordena '¡Para!' ¡[defender.GetSheHe|U] no tiene poder sobre mí!"
+ POD_diablerize.400.option.a.success: "Tu deseo es mi comando."
+ POD_diablerize.400.option.d.failure: "¡Mantente fuera de mi mente!"
   
  # Learning Shapeshift Duel 
  #450 shapeshift duel notify atacker 
- POD_diablerize.450.t: "Diablerie: ¡Cambio de forma!" #NT!
- POD_diablerize.450.desc.success: "Ante mis ojos, [defender.GetFirstName] se transforma místicamente en una forma intangible. No puedo atrapar a [defender.GetHerHim]. Ni siquiera puedo tocar a [defender.GetHerHim]. Y así, [defender.GetSheHe] se fue." #NT!
- POD_diablerize.450.desc.failure: "[defender.GetFirstName] comienza a transformarse. [defender.GetHerHis] cuerpo comienza a cambiar de forma. [defender.GetSheHe] ¡no es lo suficientemente rápido como para escapar de mí!" #NT!
- POD_diablerize.450.option.a.success: "¡Ataque!" #NT!
- POD_diablerize.450.option.a.failure: "¡Frustrado!" #NT!
+ POD_diablerize.450.t: "Diablerie: ¡Cambio de forma!"
+ POD_diablerize.450.desc.success: "Ante mis ojos, [defender.GetFirstName] se transforma místicamente en una forma intangible. No puedo atrapar a [defender.GetHerHim]. Ni siquiera puedo tocar a [defender.GetHerHim]. Y así, [defender.GetSheHe] se fue."
+ POD_diablerize.450.desc.failure: "[defender.GetFirstName] comienza a transformarse. [defender.GetHerHis] cuerpo comienza a cambiar de forma. [defender.GetSheHe] ¡no es lo suficientemente rápido como para escapar de mí!"
+ POD_diablerize.450.option.a.success: "¡Ataque!"
+ POD_diablerize.450.option.a.failure: "¡Frustrado!"
   
  #475 shapeshift duel notify defender 
- POD_diablerize.475.t: "Forma cambiante" #NT!
- POD_diablerize.475.desc.success: "Concentro mi [discipline|E] y me transformo en una forma intangible. Está completo antes de que [attacker.GetFirstName] pueda alcanzarme. Luego escapo fácilmente." #NT!
- POD_diablerize.475.desc.failure: "Comienzo el proceso para transformarme en una forma intangible. No puedo hacerlo lo suficientemente rápido antes de que [attacker.GetFirstName] esté encima de mí." #NT!
- POD_diablerize.475.option.a.success: "Esta no será la última vez que este truco me salve." #NT!
- POD_diablerize.475.option.a.failure: "¡Será carne contra carne!" #NT!
+ POD_diablerize.475.t: "Forma cambiante"
+ POD_diablerize.475.desc.success: "Concentro mi [discipline|E] y me transformo en una forma intangible. Está completo antes de que [attacker.GetFirstName] pueda alcanzarme. Luego escapo fácilmente."
+ POD_diablerize.475.desc.failure: "Comienzo el proceso para transformarme en una forma intangible. No puedo hacerlo lo suficientemente rápido antes de que [attacker.GetFirstName] esté encima de mí."
+ POD_diablerize.475.option.a.success: "Esta no será la última vez que este truco me salve."
+ POD_diablerize.475.option.a.failure: "¡Será carne contra carne!"
   
  # Prowess Duel, Last Chance to turn back 
- POD_diablerize.500.t: "Diablerie: La batalla final" #NT!
- POD_diablerize.500.desc: "Basta de correr, basta de esconderse, basta de juegos mentales. [defender.GetFirstName] no puede alejarse de mí. Es hora del conflicto final." #NT!
- POD_diablerize.500.option.a: "¡Ataque [defender.GetHerHim]!" #NT!
- POD_diablerize.500.option.a.tt.beast: "#R ¡Sí! ¡Toda la sangre de [defender.GetHerHis] será mía!... Quiero decir, nuestra. ¡Toda la sangre de [defender.GetHerHis] será nuestra!#!" #NT!
- POD_diablerize.500.option.a.tt.attacker_wins: "[attacker.GetFirstName] victorias!" #NT!
- POD_diablerize.500.option.a.tt.defender_wins: "[defender.GetFirstName] victorias!" #NT!
- POD_diablerize.500.option.a.desc: "Una batalla de destreza" #NT!
- POD_diablerize.500.option.a.success: "¡Victoria!" #NT!
- POD_diablerize.500.option.a.failure: "¡Fracaso!" #NT!
- POD_diablerize.500.option.b: "Es muy arriesgado, abandono este plan." #NT!
+ POD_diablerize.500.t: "Diablerie: La batalla final"
+ POD_diablerize.500.desc: "Basta de correr, basta de esconderse, basta de juegos mentales. [defender.GetFirstName] no puede alejarse de mí. Es hora del conflicto final."
+ POD_diablerize.500.option.a: "¡Ataque [defender.GetHerHim]!"
+ POD_diablerize.500.option.a.tt.beast: "#R ¡Sí! ¡Toda la sangre de [defender.GetHerHis] será mía!... Quiero decir, nuestra. ¡Toda la sangre de [defender.GetHerHis] será nuestra!#!"
+ POD_diablerize.500.option.a.tt.attacker_wins: "[attacker.GetFirstName] victorias!"
+ POD_diablerize.500.option.a.tt.defender_wins: "[defender.GetFirstName] victorias!"
+ POD_diablerize.500.option.a.desc: "Una batalla de destreza"
+ POD_diablerize.500.option.a.success: "¡Victoria!"
+ POD_diablerize.500.option.a.failure: "¡Fracaso!"
+ POD_diablerize.500.option.b: "Es muy arriesgado, abandono este plan."
   
  # Prowess Duel, Attacker Backs down 
- POD_diablerize.510.t: "Retiro" #NT!
- POD_diablerize.510.desc: "[attacker.GetFirstName] no se compromete con el ataque y se retira." #NT!
- POD_diablerize.510.option.a: "Buena suerte" #NT!
+ POD_diablerize.510.t: "Retiro"
+ POD_diablerize.510.desc: "[attacker.GetFirstName] no se compromete con el ataque y se retira."
+ POD_diablerize.510.option.a: "Buena suerte"
   
  #515 notify [diablerist|E] of prowess duel result 
- POD_diablerize.515.t: "Diablerie: ¡Al vencedor, el botín!" #NT!
- POD_diablerize.515.desc.success: "La batalla es brutal pero también rápida. Soy victorioso y [defender.GetFirstName] yace a mis pies." #NT!
- POD_diablerize.515.desc.failure: "Pensé que estaba listo, pero [defender.GetFirstNamePossessive] destreza en combate es demasiado para superar. He sido derrotado." #NT!
- POD_diablerize.515.option.a.success: "¿Y ahora qué hago con mi premio?" #NT!
- POD_diablerize.515.option.a.failure: "Empiezo a deslizarme hacia [torpor|E], preguntándome cuál será mi destino." #NT!
+ POD_diablerize.515.t: "Diablerie: ¡Al vencedor, el botín!"
+ POD_diablerize.515.desc.success: "La batalla es brutal pero también rápida. Soy victorioso y [defender.GetFirstName] yace a mis pies."
+ POD_diablerize.515.desc.failure: "Pensé que estaba listo, pero [defender.GetFirstNamePossessive] destreza en combate es demasiado para superar. He sido derrotado."
+ POD_diablerize.515.option.a.success: "¿Y ahora qué hago con mi premio?"
+ POD_diablerize.515.option.a.failure: "Empiezo a deslizarme hacia [torpor|E], preguntándome cuál será mi destino."
   
  #525 notify defender of prowess duel result, pick fate of defeated [diablerist|E] 
- POD_diablerize.525.t: "¡La pelea!" #NT!
- POD_diablerize.525.desc.success: "[attacker.GetFirstNamePossessive] La destreza en combate es demasiada para superar. He sido derrotado." #NT!
- POD_diablerize.525.desc.failure: "La batalla es brutal pero también rápida. Soy victorioso y [attacker.GetFirstName] yace a mis pies." #NT!
- POD_diablerize.525.option.a.failure: "Destruye a [attacker.GetFirstName]. Es la muerte definitiva para [attacker.GetHerHim]." #NT!
- POD_diablerize.525.option.b.failure: "[attacker.GetSheHe] ahora es mi prisionero." #NT!
- POD_diablerize.525.option.c.failure: "Simplemente me alejaré, la victoria es suficientemente dulce." #NT!
- POD_diablerize.525.option.d.failure: "¡Tendré la sangre del corazón [attacker.GetHerHis]!" #NT!
- POD_diablerize.525.option.e.success: "Empiezo a deslizarme hacia [torpor|E], preguntándome cuál será mi destino." #NT!
+ POD_diablerize.525.t: "¡La pelea!"
+ POD_diablerize.525.desc.success: "[attacker.GetFirstNamePossessive] La destreza en combate es demasiada para superar. He sido derrotado."
+ POD_diablerize.525.desc.failure: "La batalla es brutal pero también rápida. Soy victorioso y [attacker.GetFirstName] yace a mis pies."
+ POD_diablerize.525.option.a.failure: "Destruye a [attacker.GetFirstName]. Es la muerte definitiva para [attacker.GetHerHim]."
+ POD_diablerize.525.option.b.failure: "[attacker.GetSheHe] ahora es mi prisionero."
+ POD_diablerize.525.option.c.failure: "Simplemente me alejaré, la victoria es suficientemente dulce."
+ POD_diablerize.525.option.d.failure: "¡Tendré la sangre del corazón [attacker.GetHerHis]!"
+ POD_diablerize.525.option.e.success: "Empiezo a deslizarme hacia [torpor|E], preguntándome cuál será mi destino."
   
  #550 defeated attacker notified of victorious defender decision 
- POD_diablerize.550.t: "Diablerie: Derrota" #NT!
- POD_diablerize.550.desc.destruction: "He sido destruido por [defender.GetFirstName]." #NT!
- POD_diablerize.550.desc.imprisonment: "He sido encarcelado por [defender.GetFirstName]." #NT!
- POD_diablerize.550.desc.release: "[defender.GetFirstName] déjame ir. No entiendo..." #NT!
- POD_diablerize.550.desc.diablerie: "[defender.GetFirstName] colmillos se hunden en mi carne. [defender.GetSheHe] bebe toda mi sangre. Yo iba a ser el cazador, pero fui la presa." #NT!
- POD_diablerize.550.option.a: "Así es como termina." #NT!
+ POD_diablerize.550.t: "Diablerie: Derrota"
+ POD_diablerize.550.desc.destruction: "He sido destruido por [defender.GetFirstName]."
+ POD_diablerize.550.desc.imprisonment: "He sido encarcelado por [defender.GetFirstName]."
+ POD_diablerize.550.desc.release: "[defender.GetFirstName] déjame ir. No entiendo..."
+ POD_diablerize.550.desc.diablerie: "[defender.GetFirstName] colmillos se hunden en mi carne. [defender.GetSheHe] bebe toda mi sangre. Yo iba a ser el cazador, pero fui la presa."
+ POD_diablerize.550.option.a: "Así es como termina."
   
  # Getting to the Yum Yum! 
- POD_diablerize.600.t: "¡Diablerie!" #NT!
- POD_diablerize.600.desc: "No solo matar, sino devorar el alma de otro ser es una de las acciones más atroces posibles. La mayoría de los seres lo consideran el peor de los crímenes. Sin embargo, no hay nada que la bestia desee más.\n\nPor último, [victim.GetFirstName] está en mis garras. ¿Drenaje a [victim.GetHerHis] hasta el núcleo de [victim.GetHerHis] ser? ¿Bebo la sangre del corazón de [victim.GetHerHis]? ¿Tomo todo [victim.GetHerHim]?" #NT!
- POD_diablerize.600.option.a: "¡Devora [victim.GetTitledFirstNamePossessive] alma!" #NT!
- POD_diablerize.600.option.a.tt: "[victim.GetTitledFirstName] está destruido!" #NT!
- POD_diablerize.600.option.a.tt.beast: "#R ¡SÍ! ¡HAZLO!#!" #NT!
- POD_diablerize.600.option.b: "No [diablerize|E] [victim.GetFirstName]." #NT!
- POD_diablerize.600.option.b.tt.beast: "#R ¡No los dejes ir! [victim.GetSheHe] no merece la sangre! ¡Sí! #!" #NT!
- POD_diablerize.600.option.c: "Simplemente mátalos, la Diablerie es demasiado peligrosa." #NT!
- POD_diablerize.600.option.c.tt.beast: "El asesinato común y corriente, sin riesgo para el alma, pero sin aumento de poder." #NT!
+ POD_diablerize.600.t: "¡Diablerie!"
+ POD_diablerize.600.desc: "No solo matar, sino devorar el alma de otro ser es una de las acciones más atroces posibles. La mayoría de los seres lo consideran el peor de los crímenes. Sin embargo, no hay nada que la bestia desee más.\n\nPor último, [victim.GetFirstName] está en mis garras. ¿Drenaje a [victim.GetHerHis] hasta el núcleo de [victim.GetHerHis] ser? ¿Bebo la sangre del corazón de [victim.GetHerHis]? ¿Tomo todo [victim.GetHerHim]?"
+ POD_diablerize.600.option.a: "¡Devora [victim.GetTitledFirstNamePossessive] alma!"
+ POD_diablerize.600.option.a.tt: "[victim.GetTitledFirstName] está destruido!"
+ POD_diablerize.600.option.a.tt.beast: "#R ¡SÍ! ¡HAZLO!#!"
+ POD_diablerize.600.option.b: "No [diablerize|E] [victim.GetFirstName]."
+ POD_diablerize.600.option.b.tt.beast: "#R ¡No los dejes ir! [victim.GetSheHe] no merece la sangre! ¡Sí! #!"
+ POD_diablerize.600.option.c: "Simplemente mátalos, la Diablerie es demasiado peligrosa."
+ POD_diablerize.600.option.c.tt.beast: "El asesinato común y corriente, sin riesgo para el alma, pero sin aumento de poder."
   
   # Attacker decides not to [diablerize|E] 
- POD_diablerize.650.t: "¿Merced?" #NT!
- POD_diablerize.650.desc: "Fui derrotado. Estaba seguro de que [attacker.GetFirstName] me destruiría. Extrañamente, [attacker.GetSheHe] simplemente se alejó." #NT!
- POD_diablerize.650.option.a: "¿Será algún último vestigio de humanidad?" #NT!
+ POD_diablerize.650.t: "¿Merced?"
+ POD_diablerize.650.desc: "Fui derrotado. Estaba seguro de que [attacker.GetFirstName] me destruiría. Extrañamente, [attacker.GetSheHe] simplemente se alejó."
+ POD_diablerize.650.option.a: "¿Será algún último vestigio de humanidad?"
   
- POD_diablerize.700.t: "¡Amaranto!" #NT!
- POD_diablerize.700.option.a: "None" #NT!
- POD_diablerize.700.desc: "Devorar [victim.GetTitledFirstNamePossessive] alma" #NT!
+ POD_diablerize.700.t: "¡Amaranto!"
+ POD_diablerize.700.option.a: "None"
+ POD_diablerize.700.desc: "Devorar [victim.GetTitledFirstNamePossessive] alma"
   
- POD_diablerize.800.t: "El alma invicta" #NT!
- POD_diablerize.800.desc: "¡Me siento [unconquered_soul.GetFirstName] dentro de mi mente, luchando por tomar el control de mi cuerpo! ¿¡Qué he hecho!?" #NT!
- POD_diablerize.800.option.a: "¡Resistid! ¡No seré vencido!" #NT!
- POD_diablerize.800.option.b: "Ríndete y deja que [unconquered_soul.GetFirstName] tome el control." #NT!
+ POD_diablerize.800.t: "El alma invicta"
+ POD_diablerize.800.desc: "¡Me siento [unconquered_soul.GetFirstName] dentro de mi mente, luchando por tomar el control de mi cuerpo! ¿¡Qué he hecho!?"
+ POD_diablerize.800.option.a: "¡Resistid! ¡No seré vencido!"
+ POD_diablerize.800.option.b: "Ríndete y deja que [unconquered_soul.GetFirstName] tome el control."
   
- POD_diablerize.810.t: "Señales de un [unconquered_soul|E]" #NT!
- POD_diablerize.810.desc: "Uno de tus sirvientes señaló que cambiaste algunos de tus hábitos recientemente, algo que no sucede con frecuencia entre los de tu especie. Esto te recuerda los rumores sobre las terribles consecuencias de [diablerie|E] y su posible costo para tu alma. ¿Podría ser que tu última víctima esté tratando de contraatacar? Una perspectiva preocupante, en verdad..." #NT!
- POD_diablerize.810.option.a.tt: "Algo muy malo va a pasar pronto:" #NT!
- POD_diablerize.810.option.a: "Algo está muy muy mal..." #NT!
- unconquered_soul_warning_tooltip: "@alert_icon! #alert_trial #high $VALUE|0$%#! de probabilidad de [unconquered_soul|E]!#!" #NT!
+ POD_diablerize.810.t: "Señales de un [unconquered_soul|E]"
+ POD_diablerize.810.desc: "Uno de tus sirvientes señaló que cambiaste algunos de tus hábitos recientemente, algo que no sucede con frecuencia entre los de tu especie. Esto te recuerda los rumores sobre las terribles consecuencias de [diablerie|E] y su posible costo para tu alma. ¿Podría ser que tu última víctima esté tratando de contraatacar? Una perspectiva preocupante, en verdad..."
+ POD_diablerize.810.option.a.tt: "Algo muy malo va a pasar pronto:"
+ POD_diablerize.810.option.a: "Algo está muy muy mal..."
+ unconquered_soul_warning_tooltip: "@alert_icon! #alert_trial #high $VALUE|0$%#! de probabilidad de [unconquered_soul|E]!#!"
   
- POD_diablerize.4000.t: "¡Plan de Diablerie frustrado!" #NT!
- POD_diablerize.4000.desc: "Por algún giro del destino, mi plan para [diablerize|E] [defender.GetFirstName] ha fracasado." #NT!
- POD_diablerize.4000.option.a: "¡Maldición! ¡Una noche [defender.GetFirstName], tu sangre será mía!" #NT!
+ POD_diablerize.4000.t: "¡Plan de Diablerie frustrado!"
+ POD_diablerize.4000.desc: "Por algún giro del destino, mi plan para [diablerize|E] [defender.GetFirstName] ha fracasado."
+ POD_diablerize.4000.option.a: "¡Maldición! ¡Una noche [defender.GetFirstName], tu sangre será mía!"
   
- POD_diablerize.250.option.a.tt.defender_wins: "¡El defensor escapó!" #NT!
- POD_diablerize.250.option.a.failure: "¡Atrapé a esta rata que huía!" #NT!
- POD_diablerize.250.t: "Diablerie: ¡Vuelo!" #NT!
- POD_diablerize.250.desc: "[defender.GetFirstName] se me escapa! Tengo que hacer todo lo posible para alcanzarlo o todo este plan se desmorona. ¡Maldito cobarde!" #NT!
- POD_diablerize.250.option.a: "¡Comencemos la persecución!" #NT!
- POD_diablerize.250.option.b: "No vale la pena el esfuerzo en este momento." #NT!
- POD_diablerize.250.option.a.tt.attacker_wins: "No hay ningún lugar donde correr ahora..." #NT!
- POD_diablerize.250.option.a.success: "... ¡Demasiado rápido!" #NT!
- POD_diablerize.250.option.b.tt.beast: "#R ¡No dejes que huyan! ¡La sangre llama!#!" #NT!
- POD_diablerize.250.option.a.toast: "¡Escapado!" #NT!
+ POD_diablerize.250.option.a.tt.defender_wins: "¡El defensor escapó!"
+ POD_diablerize.250.option.a.failure: "¡Atrapé a esta rata que huía!"
+ POD_diablerize.250.t: "Diablerie: ¡Vuelo!"
+ POD_diablerize.250.desc: "[defender.GetFirstName] se me escapa! Tengo que hacer todo lo posible para alcanzarlo o todo este plan se desmorona. ¡Maldito cobarde!"
+ POD_diablerize.250.option.a: "¡Comencemos la persecución!"
+ POD_diablerize.250.option.b: "No vale la pena el esfuerzo en este momento."
+ POD_diablerize.250.option.a.tt.attacker_wins: "No hay ningún lugar donde correr ahora..."
+ POD_diablerize.250.option.a.success: "... ¡Demasiado rápido!"
+ POD_diablerize.250.option.b.tt.beast: "#R ¡No dejes que huyan! ¡La sangre llama!#!"
+ POD_diablerize.250.option.a.toast: "¡Escapado!"
   
- POD_diablerize.1000.t: "Diablerie: El Duelo" #NT!
- POD_diablerize.1000.desc: "No más juegos, es hora de acabar con esto de una vez por todas. Sólo uno de ustedes saldrá de esto.\nUno de ustedes busca poder mientras que el otro busca proteger su alma, pero no hay una causa digna en el mundo de la oscuridad. El más fuerte o el más astuto ganará." #NT!
- POD_diablerize.1000.option.a: "Ya no hay vuelta atrás." #NT!
+ POD_diablerize.1000.t: "Diablerie: El Duelo"
+ POD_diablerize.1000.desc: "No más juegos, es hora de acabar con esto de una vez por todas. Sólo uno de ustedes saldrá de esto.\nUno de ustedes busca poder mientras que el otro busca proteger su alma, pero no hay una causa digna en el mundo de la oscuridad. El más fuerte o el más astuto ganará."
+ POD_diablerize.1000.option.a: "Ya no hay vuelta atrás."
   
- POD_diablerize.601.t: "Diablerie: ¡Victoria!" #NT!
- POD_diablerize.601.desc: "Has derrotado al vampiro tonto que intentó devorar tu alma. El castigo debe estar a la altura de la gravedad de este intento de acción." #NT!
- POD_diablerize.601.option.a: "Seré misericordioso y te mataré rápidamente." #NT!
+ POD_diablerize.601.t: "Diablerie: ¡Victoria!"
+ POD_diablerize.601.desc: "Has derrotado al vampiro tonto que intentó devorar tu alma. El castigo debe estar a la altura de la gravedad de este intento de acción."
+ POD_diablerize.601.option.a: "Seré misericordioso y te mataré rápidamente."
   
- POD_diablerize.251.t: "Diablerie: ¡Escóndete!" #NT!
- POD_diablerize.251.desc: "[defender.GetFirstName] intenta escapar de mí! Probablemente se esté escondiendo en algún lugar cercano, o esté usando poderes para engañar mis sentidos... Necesito estar atenta a cada pequeño detalle para atrapar a este cobarde." #NT!
- POD_diablerize.251.option.a: "¡Empecemos la persecución!" #NT!
- POD_diablerize.251.option.b: "No vale la pena el esfuerzo en este momento." #NT!
- POD_diablerize.251.option.a.tt.attacker_wins: "¡Encontraste al cobarde!" #NT!
- POD_diablerize.251.option.a.success: "No hay ningún lugar donde correr ahora..." #NT!
- POD_diablerize.251.option.a.desc: "Gato y ratón" #NT!
- POD_diablerize.251.option.a.failure: "Desaparecido..." #NT!
- POD_diablerize.251.option.a.tt.defender_wins: "¡El defensor escapó!" #NT!
+ POD_diablerize.251.t: "Diablerie: ¡Escóndete!"
+ POD_diablerize.251.desc: "[defender.GetFirstName] intenta escapar de mí! Probablemente se esté escondiendo en algún lugar cercano, o esté usando poderes para engañar mis sentidos... Necesito estar atenta a cada pequeño detalle para atrapar a este cobarde."
+ POD_diablerize.251.option.a: "¡Empecemos la persecución!"
+ POD_diablerize.251.option.b: "No vale la pena el esfuerzo en este momento."
+ POD_diablerize.251.option.a.tt.attacker_wins: "¡Encontraste al cobarde!"
+ POD_diablerize.251.option.a.success: "No hay ningún lugar donde correr ahora..."
+ POD_diablerize.251.option.a.desc: "Gato y ratón"
+ POD_diablerize.251.option.a.failure: "Desaparecido..."
+ POD_diablerize.251.option.a.tt.defender_wins: "¡El defensor escapó!"
   
- POD_diablerize.252.t: "Diablerie: ¡Entrañamiento!" #NT!
- POD_diablerize.252.desc: "¡[defender.GetFirstName] intenta usar los poderosos poderes de Presencia de [defender.GetHerHis] para hechizarme! Debo resistirme, o seré incapaz de hacer nada. Debo racionalizar contra el atractivo mortal, sensual y perfecto... ¿o debería?[AddTextIf( PlayerHasBeast, '\n#R Think of the blood you fool, nothing else matters!#!' )]" #NT!
- POD_diablerize.252.option.a: "¡Mi voluntad es mía!" #NT!
- POD_diablerize.252.option.a.tt.attacker_wins: "¡Es hora de terminar con esto!" #NT!
- POD_diablerize.252.option.a.success: "¡Fallaste!" #NT!
- POD_diablerize.252.option.a.desc: "Resistiendo la perfección." #NT!
- POD_diablerize.252.option.a.failure: "Tan hermoso..." #NT!
- POD_diablerize.252.option.a.tt.defender_wins: "¿Por qué resistir?" #NT!
+ POD_diablerize.252.t: "Diablerie: ¡Entrañamiento!"
+ POD_diablerize.252.desc: "¡[defender.GetFirstName] intenta usar los poderosos poderes de Presencia de [defender.GetHerHis] para hechizarme! Debo resistirme, o seré incapaz de hacer nada. Debo racionalizar contra el atractivo mortal, sensual y perfecto... ¿o debería?[AddTextIf( PlayerHasBeast, '\n#R Think of the blood you fool, nothing else matters!#!' )]"
+ POD_diablerize.252.option.a: "¡Mi voluntad es mía!"
+ POD_diablerize.252.option.a.tt.attacker_wins: "¡Es hora de terminar con esto!"
+ POD_diablerize.252.option.a.success: "¡Fallaste!"
+ POD_diablerize.252.option.a.desc: "Resistiendo la perfección."
+ POD_diablerize.252.option.a.failure: "Tan hermoso..."
+ POD_diablerize.252.option.a.tt.defender_wins: "¿Por qué resistir?"
   
- POD_diablerize.253.t: "Diablerie: ¡Racionaliza!" #NT!
- POD_diablerize.253.desc: "[defender.GetFirstName] intenta usar los poderosos poderes de Dominación de [defender.GetHerHis] para controlarme. Debo resistirme o seré incapaz de hacer nada. Debo conjurar toda mi fuerza de voluntad para resistir esta intrusión en mi mente. No quiero imaginar qué pasará si pierdo... [AddTextIf( PlayerHasBeast, '\n#R Resist, you fool! Grow a mental spine!#!' )]" #NT!
- POD_diablerize.253.option.a: "¡Mi voluntad es mía!" #NT!
- POD_diablerize.253.option.a.tt.attacker_wins: "¡Es hora de terminar con esto!" #NT!
- POD_diablerize.253.option.a.success: "¡Fallaste!" #NT!
- POD_diablerize.253.option.a.desc: "Choque de voluntades" #NT!
- POD_diablerize.253.option.a.failure: "Vivo para servir." #NT!
- POD_diablerize.253.option.a.tt.defender_wins: "¿Cual es tu deseo?" #NT!
+ POD_diablerize.253.t: "Diablerie: ¡Racionaliza!"
+ POD_diablerize.253.desc: "[defender.GetFirstName] intenta usar los poderosos poderes de Dominación de [defender.GetHerHis] para controlarme. Debo resistirme o seré incapaz de hacer nada. Debo conjurar toda mi fuerza de voluntad para resistir esta intrusión en mi mente. No quiero imaginar qué pasará si pierdo... [AddTextIf( PlayerHasBeast, '\n#R Resist, you fool! Grow a mental spine!#!' )]"
+ POD_diablerize.253.option.a: "¡Mi voluntad es mía!"
+ POD_diablerize.253.option.a.tt.attacker_wins: "¡Es hora de terminar con esto!"
+ POD_diablerize.253.option.a.success: "¡Fallaste!"
+ POD_diablerize.253.option.a.desc: "Choque de voluntades"
+ POD_diablerize.253.option.a.failure: "Vivo para servir."
+ POD_diablerize.253.option.a.tt.defender_wins: "¿Cual es tu deseo?"
   
- POD_diablerize.254.t: "Diablerie: ¡Cambio de forma!" #NT!
- POD_diablerize.254.desc: "¡_0 intenta escapar de mí! Gracias a sus considerables poderes de cambio de forma, han logrado evitarme hasta ahora. Tendré que usar el entorno y ser astuto para encontrar una manera de acorralar a este cobarde." #NT!
- POD_diablerize.254.option.a: "¡Te atraparé!" #NT!
- POD_diablerize.254.option.b: "No vale la pena el esfuerzo en este momento." #NT!
- POD_diablerize.254.option.a.tt.attacker_wins: "¡Atrapaste tu presa!" #NT!
- POD_diablerize.254.option.a.success: "¡Te atrapé!" #NT!
- POD_diablerize.254.option.a.desc: "Comida resbaladiza" #NT!
- POD_diablerize.254.option.a.failure: "Desapareció..." #NT!
- POD_diablerize.254.option.a.tt.defender_wins: "¡El defensor escapó!" #NT!
- POD_diablerize.254.option.a.toast: "¡Escapado!" #NT!
+ POD_diablerize.254.t: "Diablerie: ¡Cambio de forma!"
+ POD_diablerize.254.desc: "¡_0 intenta escapar de mí! Gracias a sus considerables poderes de cambio de forma, han logrado evitarme hasta ahora. Tendré que usar el entorno y ser astuto para encontrar una manera de acorralar a este cobarde."
+ POD_diablerize.254.option.a: "¡Te atraparé!"
+ POD_diablerize.254.option.b: "No vale la pena el esfuerzo en este momento."
+ POD_diablerize.254.option.a.tt.attacker_wins: "¡Atrapaste tu presa!"
+ POD_diablerize.254.option.a.success: "¡Te atrapé!"
+ POD_diablerize.254.option.a.desc: "Comida resbaladiza"
+ POD_diablerize.254.option.a.failure: "Desapareció..."
+ POD_diablerize.254.option.a.tt.defender_wins: "¡El defensor escapó!"
+ POD_diablerize.254.option.a.toast: "¡Escapado!"
   
- POD_diablerize.200.option.g: "¡Libera a los perros!" #NT!
- POD_diablerize.200.option.g.tt.beast: "#R ¡Hora de la merienda, chicos!#!" #NT!
- POD_diablerize.200.option.g.tt: "Un duelo marcial determinará si [attacker.GetFirstName] o tú ganan en combate." #NT!
+ POD_diablerize.200.option.g: "¡Libera a los perros!"
+ POD_diablerize.200.option.g.tt.beast: "#R ¡Hora de la merienda, chicos!#!"
+ POD_diablerize.200.option.g.tt: "Un duelo marcial determinará si [attacker.GetFirstName] o tú ganan en combate."
   
- POD_diablerize.255.t: "Diablerie: ¡Animalismo!" #NT!
- POD_diablerize.255.desc: "[defender.GetFirstName] no está solo. Una horda de bestias feroces se acerca a mí, intentando proteger a su amo. Tendré que abrirme paso a cuchilladas si quiero llegar a mi presa." #NT!
- POD_diablerize.255.option.a: "¡Fuera de mi camino!" #NT!
- POD_diablerize.255.option.b: "...¡Huir!" #NT!
- POD_diablerize.255.option.a.tt.attacker_wins: "¡Atrapaste tu presa!" #NT!
- POD_diablerize.255.option.a.success: "¡No más amigos peludos para ti!" #NT!
- POD_diablerize.255.option.a.desc: "Comida resbaladiza" #NT!
- POD_diablerize.255.option.a.failure: "¡Alejarse de mí!" #NT!
- POD_diablerize.255.option.a.tt.defender_wins: "¡Deténganlos! ¡Deténganse!" #NT!
- POD_diablerize.255.option.b.tt.beast: "#R ¡Cobarde! ¡Quédate y lucha!#!" #NT!
+ POD_diablerize.255.t: "Diablerie: ¡Animalismo!"
+ POD_diablerize.255.desc: "[defender.GetFirstName] no está solo. Una horda de bestias feroces se acerca a mí, intentando proteger a su amo. Tendré que abrirme paso a cuchilladas si quiero llegar a mi presa."
+ POD_diablerize.255.option.a: "¡Fuera de mi camino!"
+ POD_diablerize.255.option.b: "...¡Huir!"
+ POD_diablerize.255.option.a.tt.attacker_wins: "¡Atrapaste tu presa!"
+ POD_diablerize.255.option.a.success: "¡No más amigos peludos para ti!"
+ POD_diablerize.255.option.a.desc: "Comida resbaladiza"
+ POD_diablerize.255.option.a.failure: "¡Alejarse de mí!"
+ POD_diablerize.255.option.a.tt.defender_wins: "¡Deténganlos! ¡Deténganse!"
+ POD_diablerize.255.option.b.tt.beast: "#R ¡Cobarde! ¡Quédate y lucha!#!"
   
- POD_diablerize.200.option.h: "¡Quémalos vivos!" #NT!
- POD_diablerize.200.option.h.tt.beast: "#R ¡Fuego! ¡Para ellos, no para nosotros!#!" #NT!
- POD_diablerize.200.option.h.tt: "Un duelo de aprendizaje determinará si [attacker.GetFirstName] o tú ganáis en el combate." #NT!
+ POD_diablerize.200.option.h: "¡Quémalos vivos!"
+ POD_diablerize.200.option.h.tt.beast: "#R ¡Fuego! ¡Para ellos, no para nosotros!#!"
+ POD_diablerize.200.option.h.tt: "Un duelo de aprendizaje determinará si [attacker.GetFirstName] o tú ganáis en el combate."
   
- POD_diablerize.256.t: "Diablerie: ¡Hechicería de sangre!" #NT!
- POD_diablerize.256.desc: "[defender.GetFirstName] no estaba desprevenido. Una serie de rituales y hechizos poderosos protegían el refugio y tendré que tener mucho cuidado de no pisar algunas trampas... Esto podría ponerse feo muy rápido." #NT!
- POD_diablerize.256.option.a: "¡Lo haré!" #NT!
- POD_diablerize.256.option.b: "...¡Huir!" #NT!
- POD_diablerize.256.option.a.tt.attacker_wins: "¡Atrapaste tu presa!" #NT!
- POD_diablerize.256.option.a.success: "¡Somos tú y yo ahora!" #NT!
- POD_diablerize.256.option.a.desc: "Trampas en abundancia" #NT!
- POD_diablerize.256.option.a.failure: "Qué es esto...?" #NT!
- POD_diablerize.256.option.a.tt.defender_wins: "#R ¡ARDE!#!" #NT!
- POD_diablerize.256.option.b.tt.beast: "#R ¡Cobarde! ¡Entra ahí!#!" #NT!
+ POD_diablerize.256.t: "Diablerie: ¡Hechicería de sangre!"
+ POD_diablerize.256.desc: "[defender.GetFirstName] no estaba desprevenido. Una serie de rituales y hechizos poderosos protegían el refugio y tendré que tener mucho cuidado de no pisar algunas trampas... Esto podría ponerse feo muy rápido."
+ POD_diablerize.256.option.a: "¡Lo haré!"
+ POD_diablerize.256.option.b: "...¡Huir!"
+ POD_diablerize.256.option.a.tt.attacker_wins: "¡Atrapaste tu presa!"
+ POD_diablerize.256.option.a.success: "¡Somos tú y yo ahora!"
+ POD_diablerize.256.option.a.desc: "Trampas en abundancia"
+ POD_diablerize.256.option.a.failure: "Qué es esto...?"
+ POD_diablerize.256.option.a.tt.defender_wins: "#R ¡ARDE!#!"
+ POD_diablerize.256.option.b.tt.beast: "#R ¡Cobarde! ¡Entra ahí!#!"
   
- POD_diablerize.602.t: "Diablerie: El prisionero desaparecido" #NT!
- POD_diablerize.602.desc: "Han pasado varios días desde que hiciste desaparecer a un prisionero (comiéndote su alma) y tu corte ha estado llena de rumores sobre este "prisionero desaparecido". Si bien has hecho todo lo posible por apaciguar (o desviar) sus preocupaciones hasta ahora, los rumores no se han calmado y cada vez más de ellos te lanzan miradas furtivas, tal vez tratando de captar una de las señales reveladoras que probarían sus sospechas..." #NT!
- POD_diablerize.602.option.a: "¡Bien! ¡Lo hice!" #NT!
- POD_diablerize.602.option.b: "¡Es hora de desviar más fuertemente la atención!" #NT!
- POD_diablerize.602.option.c: "El próximo que hable sobre estos rumores visitará la mazmorra." #NT!
+ POD_diablerize.602.t: "Diablerie: El prisionero desaparecido"
+ POD_diablerize.602.desc: "Han pasado varios días desde que hiciste desaparecer a un prisionero (comiéndote su alma) y tu corte ha estado llena de rumores sobre este "prisionero desaparecido". Si bien has hecho todo lo posible por apaciguar (o desviar) sus preocupaciones hasta ahora, los rumores no se han calmado y cada vez más de ellos te lanzan miradas furtivas, tal vez tratando de captar una de las señales reveladoras que probarían sus sospechas..."
+ POD_diablerize.602.option.a: "¡Bien! ¡Lo hice!"
+ POD_diablerize.602.option.b: "¡Es hora de desviar más fuertemente la atención!"
+ POD_diablerize.602.option.c: "El próximo que hable sobre estos rumores visitará la mazmorra."
   
   
   

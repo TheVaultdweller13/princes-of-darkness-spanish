@@ -1,104 +1,104 @@
 ﻿l_spanish:
- rokeagifts_visible: "Regalos de Rokea" #NT!
- brightwatergifts_visible: "Regalos de Brightwater" #NT!
- dimwatergifts_visible: "Regalos de Dimwater" #NT!
- darkwatergifts_visible: "Regalos de Darkwater" #NT!
- same_bitogifts_visible: "Regalos del mismo bit" #NT!
+ rokeagifts_visible: "Regalos de Rokea"
+ brightwatergifts_visible: "Regalos de Brightwater"
+ dimwatergifts_visible: "Regalos de Dimwater"
+ darkwatergifts_visible: "Regalos de Darkwater"
+ same_bitogifts_visible: "Regalos del mismo bit"
   
- NEEDS_BRIGHTWATER_TEXT: "@warning_icon!#X Requiere [GetTrait('brightwater').GetName( GetPlayer )] [traits|E] para comprar ventajas en este árbol.#!" #NT!
- NEEDS_DIMWATER_TEXT: "@warning_icon!#X Requiere [GetTrait('dimwater').GetName( GetPlayer )] [traits|E] para comprar ventajas en este árbol.#!" #NT!
- NEEDS_DARKWATER_TEXT: "@warning_icon!#X Requiere [GetTrait('darkwater').GetName( GetPlayer )] [traits|E] para comprar ventajas en este árbol.#!" #NT!
+ NEEDS_BRIGHTWATER_TEXT: "@warning_icon!#X Requiere [GetTrait('brightwater').GetName( GetPlayer )] [traits|E] para comprar ventajas en este árbol.#!"
+ NEEDS_DIMWATER_TEXT: "@warning_icon!#X Requiere [GetTrait('dimwater').GetName( GetPlayer )] [traits|E] para comprar ventajas en este árbol.#!"
+ NEEDS_DARKWATER_TEXT: "@warning_icon!#X Requiere [GetTrait('darkwater').GetName( GetPlayer )] [traits|E] para comprar ventajas en este árbol.#!"
   
- fast_perk_name: "Rápido" #NT!
- sense_threat_perk_name: "Sentir amenaza" #NT!
- unseas_blessing_perk_name: "La bendición de Unsea" #NT!
- fathom_sight_perk_name: "Vista de Fathom" #NT!
- kuns_warning_perk_name: "La advertencia de Kun" #NT!
- salmons_return_perk_name: "El regreso del salmón" #NT!
- mindless_fight_perk_name: "Lucha sin sentido" #NT!
- oceans_peace_perk_name: "La paz del océano" #NT!
+ fast_perk_name: "Rápido"
+ sense_threat_perk_name: "Sentir amenaza"
+ unseas_blessing_perk_name: "La bendición de Unsea"
+ fathom_sight_perk_name: "Vista de Fathom"
+ kuns_warning_perk_name: "La advertencia de Kun"
+ salmons_return_perk_name: "El regreso del salmón"
+ mindless_fight_perk_name: "Lucha sin sentido"
+ oceans_peace_perk_name: "La paz del océano"
   
- UNSEAS_BLESSING_PERK_EFFECT: "Como [character_interaction|E], te permite curar tus heridas." #NT!
- MINDLESS_FIGHT_PERK_EFFECT: "Como [character_interaction|E], te permite canalizar tu ira para ganar [GetModifier( 'mindless_fight_perk_modifier' ).GetNameWithTooltip|L]." #NT!
+ UNSEAS_BLESSING_PERK_EFFECT: "Como [character_interaction|E], te permite curar tus heridas."
+ MINDLESS_FIGHT_PERK_EFFECT: "Como [character_interaction|E], te permite canalizar tu ira para ganar [GetModifier( 'mindless_fight_perk_modifier' ).GetNameWithTooltip|L]."
   
- eyes_of_the_wound_perk_name: "Ojos de la herida" #NT!
- rokea_restraint_perk_name: "Restricción" #NT!
- unseen_attack_perk_name: "Ataque invisible" #NT!
- first_feeling_perk_name: "Primer sentimiento" #NT!
- narkes_gift_perk_name: "El regalo de Narke" #NT!
- undertow_perk_name: "Resaca" #NT!
- bends_perk_name: "Enfermedad de buzo" #NT!
- schools_fear_perk_name: "El miedo de la escuela" #NT!
- wriggling_teeth_perk_name: "Dientes que se mueven" #NT!
- best_policy_perk_name: "La mejor política" #NT!
- no_walls_perk_name: "Sin paredes" #NT!
- overseas_cycle_perk_name: "El ciclo de ultramar" #NT!
- pain_of_the_wound_perk_name: "Dolor de la herida" #NT!
- scuttle_perk_name: "Escotilla" #NT!
- seas_winds_perk_name: "Vientos del mar" #NT!
+ eyes_of_the_wound_perk_name: "Ojos de la herida"
+ rokea_restraint_perk_name: "Restricción"
+ unseen_attack_perk_name: "Ataque invisible"
+ first_feeling_perk_name: "Primer sentimiento"
+ narkes_gift_perk_name: "El regalo de Narke"
+ undertow_perk_name: "Resaca"
+ bends_perk_name: "Enfermedad de buzo"
+ schools_fear_perk_name: "El miedo de la escuela"
+ wriggling_teeth_perk_name: "Dientes que se mueven"
+ best_policy_perk_name: "La mejor política"
+ no_walls_perk_name: "Sin paredes"
+ overseas_cycle_perk_name: "El ciclo de ultramar"
+ pain_of_the_wound_perk_name: "Dolor de la herida"
+ scuttle_perk_name: "Escotilla"
+ seas_winds_perk_name: "Vientos del mar"
   
- FIRST_FEELING_PERK_EFFECT: "Otorga el modificador [GetModifier('first_feeling_perk_modifier').GetNameWithTooltip] a los comandantes enemigos en la guerra como comandante." #NT!
- BENDS_PERK_EFFECT: "Otorga un modificador [GetModifier('bends_perk_modifier').GetNameWithTooltip] al enemigo [knights|E] en la guerra como comandante o al enemigo en [single_combat_duel|E]." #NT!
- SCHOOLS_FEAR_PERK_EFFECT: "Otorga el modificador [GetModifier('schools_fear_perk_modifier').GetNameWithTooltip] a los comandantes enemigos en la guerra como comandante." #NT!
- PAIN_OF_THE_WOUND_PERK_EFFECT: "Hiere al enemigo [knights|E] en la guerra como comandante o enemigo en [single_combat_duel|E]." #NT!
- SEAS_WINDS_PERK_EFFECT: "Hiere al enemigo [knights|E] y a los comandantes en la guerra como comandante o enemigo en [single_combat_duel|E], si son vampiros (u otros seres sobrenaturales que temen al sol)." #NT!
- SCUTTLE_PERK_EFFECT: "Como [character_interaction|E], te permite hacer que un objetivo que viaja en el mar sufra un accidente marítimo, hiriéndolo o ahogándolo." #NT!
+ FIRST_FEELING_PERK_EFFECT: "Otorga el modificador [GetModifier('first_feeling_perk_modifier').GetNameWithTooltip] a los comandantes enemigos en la guerra como comandante."
+ BENDS_PERK_EFFECT: "Otorga un modificador [GetModifier('bends_perk_modifier').GetNameWithTooltip] al enemigo [knights|E] en la guerra como comandante o al enemigo en [single_combat_duel|E]."
+ SCHOOLS_FEAR_PERK_EFFECT: "Otorga el modificador [GetModifier('schools_fear_perk_modifier').GetNameWithTooltip] a los comandantes enemigos en la guerra como comandante."
+ PAIN_OF_THE_WOUND_PERK_EFFECT: "Hiere al enemigo [knights|E] en la guerra como comandante o enemigo en [single_combat_duel|E]."
+ SEAS_WINDS_PERK_EFFECT: "Hiere al enemigo [knights|E] y a los comandantes en la guerra como comandante o enemigo en [single_combat_duel|E], si son vampiros (u otros seres sobrenaturales que temen al sol)."
+ SCUTTLE_PERK_EFFECT: "Como [character_interaction|E], te permite hacer que un objetivo que viaja en el mar sufra un accidente marítimo, hiriéndolo o ahogándolo."
   
- king_fish_perk_name: "Pez rey" #NT!
- strange_blood_perk_name: "Sangre extraña" #NT!
- true_intentions_perk_name: "Intenciones verdaderas" #NT!
- crushing_depths_perk_name: "Profundidades aplastantes" #NT!
- know_overseas_mind_perk_name: "Conozca la mente de Oversea" #NT!
- spit_teeth_perk_name: "Escupir dientes" #NT!
- rokea_drown_perk_name: "Ahogar" #NT!
- lure_perk_name: "Señuelo" #NT!
- seas_wisdom_perk_name: "La sabiduría del mar" #NT!
- living_sea_perk_name: "Mar viviente" #NT!
- overseas_wrath_perk_name: "La ira de ultramar" #NT!
- swim_underseas_bloodstream_perk_name: "Nadar bajo el torrente sanguíneo submarino" #NT!
- common_foe_perk_name: "Enemigo común" #NT!
- leviathan_perk_name: "Leviatán" #NT!
- wound_undersea_perk_name: "Herida submarina" #NT!
+ king_fish_perk_name: "Pez rey"
+ strange_blood_perk_name: "Sangre extraña"
+ true_intentions_perk_name: "Intenciones verdaderas"
+ crushing_depths_perk_name: "Profundidades aplastantes"
+ know_overseas_mind_perk_name: "Conozca la mente de Oversea"
+ spit_teeth_perk_name: "Escupir dientes"
+ rokea_drown_perk_name: "Ahogar"
+ lure_perk_name: "Señuelo"
+ seas_wisdom_perk_name: "La sabiduría del mar"
+ living_sea_perk_name: "Mar viviente"
+ overseas_wrath_perk_name: "La ira de ultramar"
+ swim_underseas_bloodstream_perk_name: "Nadar bajo el torrente sanguíneo submarino"
+ common_foe_perk_name: "Enemigo común"
+ leviathan_perk_name: "Leviatán"
+ wound_undersea_perk_name: "Herida submarina"
   
- CRUSHING_DEPTHS_PERK_EFFECT: "Otorga un modificador [GetModifier('crushing_depths_perk_modifier').GetNameWithTooltip] al enemigo [knights|E] en la guerra como comandante o al enemigo en [single_combat_duel|E]." #NT!
- ROKEA_DROWN_PERK_EFFECT: "Otorga el modificador [GetModifier('rokea_drown_perk_modifier').GetNameWithTooltip] a los comandantes enemigos en la guerra como comandante." #NT!
- LURE_PERK_EFFECT: "Otorga el modificador [GetModifier('lure_perk_modifier').GetNameWithTooltip] a los comandantes enemigos en la guerra como comandante." #NT!
- OVERSEAS_WRATH_PERK_EFFECT: "Como [character_interaction|E], te permite hacer que un objetivo que viaja en el mar sufra un accidente marítimo, hiriéndolo o ahogándolo." #NT!
- SWIM_UNDERSEAS_BLOODSTREAM_PERK_EFFECT: "Como [character_interaction|E], te permite teletransportar a tu ejército a la ubicación de tu objetivo, o teletransportarte a tu próximo destino cuando viajas, siempre que tu objetivo esté al lado de un cuerpo de agua." #NT!
- COMMON_FOE_PERK_EFFECT: "Como [character_interaction|E], te permite llamar a un objetivo no controlado por el Wyrm para que se una a una guerra contra un enemigo controlado por el Wyrm." #NT!
- LEVIATHAN_PERK_EFFECT: "Desbloquea la opción de cambio de forma [GetModifier( 'POD_shapeshift_form_leviathan_modifier' ).GetNameWithTooltip|L]." #NT!
- WOUND_UNDERSEA_PERK_EFFECT: "Como [character_interaction|E], te permite desatar un [GetModifier( 'wound_undersea_modifier' ).GetNameWithTooltip|L] sobre las costas de un reino enemigo." #NT!
+ CRUSHING_DEPTHS_PERK_EFFECT: "Otorga un modificador [GetModifier('crushing_depths_perk_modifier').GetNameWithTooltip] al enemigo [knights|E] en la guerra como comandante o al enemigo en [single_combat_duel|E]."
+ ROKEA_DROWN_PERK_EFFECT: "Otorga el modificador [GetModifier('rokea_drown_perk_modifier').GetNameWithTooltip] a los comandantes enemigos en la guerra como comandante."
+ LURE_PERK_EFFECT: "Otorga el modificador [GetModifier('lure_perk_modifier').GetNameWithTooltip] a los comandantes enemigos en la guerra como comandante."
+ OVERSEAS_WRATH_PERK_EFFECT: "Como [character_interaction|E], te permite hacer que un objetivo que viaja en el mar sufra un accidente marítimo, hiriéndolo o ahogándolo."
+ SWIM_UNDERSEAS_BLOODSTREAM_PERK_EFFECT: "Como [character_interaction|E], te permite teletransportar a tu ejército a la ubicación de tu objetivo, o teletransportarte a tu próximo destino cuando viajas, siempre que tu objetivo esté al lado de un cuerpo de agua."
+ COMMON_FOE_PERK_EFFECT: "Como [character_interaction|E], te permite llamar a un objetivo no controlado por el Wyrm para que se una a una guerra contra un enemigo controlado por el Wyrm."
+ LEVIATHAN_PERK_EFFECT: "Desbloquea la opción de cambio de forma [GetModifier( 'POD_shapeshift_form_leviathan_modifier' ).GetNameWithTooltip|L]."
+ WOUND_UNDERSEA_PERK_EFFECT: "Como [character_interaction|E], te permite desatar un [GetModifier( 'wound_undersea_modifier' ).GetNameWithTooltip|L] sobre las costas de un reino enemigo."
   
- blood_of_the_deeps_perk_name: "Sangre de las profundidades" #NT!
- silent_sending_perk_name: "Envío silencioso" #NT!
- chill_perk_name: "Enfriar" #NT!
- enter_seas_soul_perk_name: "Entra en el alma del mar" #NT!
- piercing_shriek_perk_name: "Grito penetrante" #NT!
- voice_of_the_depths_perk_name: "La voz de las profundidades" #NT!
- no_blood_perk_name: "Sin sangre" #NT!
- summon_scuttlers_perk_name: "Invocar fugitivos" #NT!
- swim_through_the_school_perk_name: "Nadar a través de la escuela" #NT!
- seas_breath_perk_name: "Aliento del mar" #NT!
- shock_wave_perk_name: "Onda de choque" #NT!
- waves_passage_perk_name: "El paso de las olas" #NT!
- hunger_of_the_trench_perk_name: "Hambre de la trinchera" #NT!
- overseas_gift_perk_name: "El regalo del extranjero" #NT!
- pall_perk_name: "Féretro" #NT!
- cets_shell_perk_name: "La concha de C'et" #NT!
+ blood_of_the_deeps_perk_name: "Sangre de las profundidades"
+ silent_sending_perk_name: "Envío silencioso"
+ chill_perk_name: "Enfriar"
+ enter_seas_soul_perk_name: "Entra en el alma del mar"
+ piercing_shriek_perk_name: "Grito penetrante"
+ voice_of_the_depths_perk_name: "La voz de las profundidades"
+ no_blood_perk_name: "Sin sangre"
+ summon_scuttlers_perk_name: "Invocar fugitivos"
+ swim_through_the_school_perk_name: "Nadar a través de la escuela"
+ seas_breath_perk_name: "Aliento del mar"
+ shock_wave_perk_name: "Onda de choque"
+ waves_passage_perk_name: "El paso de las olas"
+ hunger_of_the_trench_perk_name: "Hambre de la trinchera"
+ overseas_gift_perk_name: "El regalo del extranjero"
+ pall_perk_name: "Féretro"
+ cets_shell_perk_name: "La concha de C'et"
   
- CHILL_PERK_EFFECT: "Otorga un modificador [GetModifier('chill_perk_modifier').GetNameWithTooltip] al enemigo [knights|E] en la guerra como comandante o al enemigo en [single_combat_duel|E]." #NT!
- ENTER_SEAS_SOUL_PERK_EFFECT: "Progreso mensual de exploración de Umbra: [grace_i]#P +10#!" #NT!
- PIERCING_SHRIEK_PERK_EFFECT: "Otorga un modificador [GetModifier('piercing_shriek_perk_modifier').GetNameWithTooltip] al enemigo [knights|E] en la guerra como comandante o al enemigo en [single_combat_duel|E]." #NT!
- SUMMON_SCUTTLERS_PERK_EFFECT: "Puede reclutar [GetMaA('scuttlers').GetName] como [men_at_arms|E]." #NT!
- HUNGER_OF_THE_TRENCH_PERK_EFFECT: "Otorga un modificador [GetModifier('hunger_of_the_trench_perk_modifier').GetNameWithTooltip] al enemigo [knights|E] en la guerra como comandante o al enemigo en [single_combat_duel|E]." #NT!
- PALL_PERK_EFFECT: "Es más probable que [imprison|E] [characters|E] después de un [siege|E] o [raid|E] exitoso.\nTus prisioneros tienen menos posibilidades de escapar de tu prisión." #NT!
- CETS_SHELL_PERK_EFFECT: "Otorga un modificador de [GetModifier('technology_immunity_bow_modifier').GetNameWithTooltip] al enemigo [commanders|E] en la guerra como comandante.\nComo un espíritu, no puede ser encarcelado sin algunos poderes específicos." #NT!
+ CHILL_PERK_EFFECT: "Otorga un modificador [GetModifier('chill_perk_modifier').GetNameWithTooltip] al enemigo [knights|E] en la guerra como comandante o al enemigo en [single_combat_duel|E]."
+ ENTER_SEAS_SOUL_PERK_EFFECT: "Progreso mensual de exploración de Umbra: [grace_i]#P +10#!"
+ PIERCING_SHRIEK_PERK_EFFECT: "Otorga un modificador [GetModifier('piercing_shriek_perk_modifier').GetNameWithTooltip] al enemigo [knights|E] en la guerra como comandante o al enemigo en [single_combat_duel|E]."
+ SUMMON_SCUTTLERS_PERK_EFFECT: "Puede reclutar [GetMaA('scuttlers').GetName] como [men_at_arms|E]."
+ HUNGER_OF_THE_TRENCH_PERK_EFFECT: "Otorga un modificador [GetModifier('hunger_of_the_trench_perk_modifier').GetNameWithTooltip] al enemigo [knights|E] en la guerra como comandante o al enemigo en [single_combat_duel|E]."
+ PALL_PERK_EFFECT: "Es más probable que [imprison|E] [characters|E] después de un [siege|E] o [raid|E] exitoso.\nTus prisioneros tienen menos posibilidades de escapar de tu prisión."
+ CETS_SHELL_PERK_EFFECT: "Otorga un modificador de [GetModifier('technology_immunity_bow_modifier').GetNameWithTooltip] al enemigo [commanders|E] en la guerra como comandante.\nComo un espíritu, no puede ser encarcelado sin algunos poderes específicos."
   
- shou_of_zhong_lung_perk_name: "Shou de Zhong Lung" #NT!
- blood_scent_perk_name: "Olor a sangre" #NT!
- sight_without_sight_perk_name: "Vista sin vista" #NT!
- iron_jaws_perk_name: "Mandíbulas de hierro" #NT!
- voracious_hunger_perk_name: "Hambre voraz" #NT!
- tsunami_form_perk_name: "Forma de tsunami" #NT!
- teanois_rage_perk_name: "La furia de Teanoi" #NT!
+ shou_of_zhong_lung_perk_name: "Shou de Zhong Lung"
+ blood_scent_perk_name: "Olor a sangre"
+ sight_without_sight_perk_name: "Vista sin vista"
+ iron_jaws_perk_name: "Mandíbulas de hierro"
+ voracious_hunger_perk_name: "Hambre voraz"
+ tsunami_form_perk_name: "Forma de tsunami"
+ teanois_rage_perk_name: "La furia de Teanoi"
   

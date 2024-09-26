@@ -1,0 +1,200 @@
+﻿l_spanish:
+ tab_achievement: "#T logros de mods#!" #NT!
+ ACHIEVEMENT: "Logros: [Select_CString( EqualTo_CFixedPoint( EmptyScope.ScriptValue('POD_total_achievements_unlocked'), EmptyScope.ScriptValue('POD_total_achievements') ), '#P', '#medium' )] [EmptyScope.ScriptValue('POD_total_achievements_unlocked')]/[EmptyScope.ScriptValue('POD_total_achievements')]#!" #NT!
+ cross_save_tt: "#I ¡Debes habilitar los tutoriales en la configuración para que los logros sean compatibles con el guardado cruzado!#!" #NT!
+ POD_achievement_gained: "Logro obtenido" #NT!
+ POD_hidden_achievement_gained: "Logro oculto obtenido" #NT!
+  
+ POD_very_easy_achievements_title: "Muy fácil: [Select_CString( EqualTo_CFixedPoint( EmptyScope.ScriptValue('POD_very_easy_achievements_unlocked'), EmptyScope.ScriptValue('POD_very_easy_achievements_total') ), '#P', '#low' )] ([EmptyScope.ScriptValue('POD_very_easy_achievements_unlocked')]/[EmptyScope.ScriptValue('POD_very_easy_achievements_total')])#!" #NT!
+ POD_easy_achievements_title: "Fácil: [Select_CString( EqualTo_CFixedPoint( EmptyScope.ScriptValue('POD_easy_achievements_unlocked'), EmptyScope.ScriptValue('POD_easy_achievements_total') ), '#P', '#low' )] ([EmptyScope.ScriptValue('POD_easy_achievements_unlocked')]/[EmptyScope.ScriptValue('POD_easy_achievements_total')])#!" #NT!
+ POD_medium_achievements_title: "Medio: [Select_CString( EqualTo_CFixedPoint( EmptyScope.ScriptValue('POD_medium_achievements_unlocked'), EmptyScope.ScriptValue('POD_medium_achievements_total') ), '#P', '#low' )] ([EmptyScope.ScriptValue('POD_medium_achievements_unlocked')]/[EmptyScope.ScriptValue('POD_medium_achievements_total')])#!" #NT!
+ POD_hard_achievements_title: "Difícil: [Select_CString( EqualTo_CFixedPoint( EmptyScope.ScriptValue('POD_hard_achievements_unlocked'), EmptyScope.ScriptValue('POD_hard_achievements_total') ), '#P', '#low' )] ([EmptyScope.ScriptValue('POD_hard_achievements_unlocked')]/[EmptyScope.ScriptValue('POD_hard_achievements_total')])#!" #NT!
+ POD_very_hard_achievements_title: "Muy difícil: [Select_CString( EqualTo_CFixedPoint( EmptyScope.ScriptValue('POD_very_hard_achievements_unlocked'), EmptyScope.ScriptValue('POD_very_hard_achievements_total') ), '#P', '#low' )] ([EmptyScope.ScriptValue('POD_very_hard_achievements_unlocked')]/[EmptyScope.ScriptValue('POD_very_hard_achievements_total')])#!" #NT!
+ POD_hidden_achievements_title: "Oculto:" #NT!
+  
+  
+ ##### Very Easy Achievements 
+  
+ lesson_achiev_vamptutorial: "$POD_achievement_gained$" #NT!
+ lesson_achiev_vamptutorial_desc: "Obtuviste el logro: $achiev_vamptutorial$" #NT!
+ achiev_vamptutorial: "Sangre verdadera" #NT!
+ achiev_vamptutorial_tt: "Como $POD_splat_vampire$, agrega a alguien con [resonance|E] agudo a tu rebaño." #NT!
+  
+ lesson_achiev_feratutorial: "$POD_achievement_gained$" #NT!
+ lesson_achiev_feratutorial_desc: "Obtuviste el logro: $achiev_feratutorial$" #NT!
+ achiev_feratutorial: "Respeta mi autoridad" #NT!
+ achiev_feratutorial_tt: "Como cualquier cambiaformas, aumenta tu rango." #NT!
+  
+ lesson_achiev_mummytutorial: "$POD_achievement_gained$" #NT!
+ lesson_achiev_mummytutorial_desc: "Obtuviste el logro: $achiev_mummytutorial$" #NT!
+ achiev_mummytutorial: "Hazlo tú mismo" #NT!
+ achiev_mummytutorial_tt: "Como $POD_splat_mummy$, crea algo con éxito a través del menú de creación." #NT!
+  
+ lesson_achiev_demontutorial: "$POD_achievement_gained$" #NT!
+ lesson_achiev_demontutorial_desc: "Obtuviste el logro: $achiev_demontutorial$" #NT!
+ achiev_demontutorial: "Maestro de marionetas" #NT!
+ achiev_demontutorial_tt: "Como $POD_splat_demon$, corrompe a un gobernante de al menos rango [kingdom|E]." #NT!
+  
+ lesson_achiev_coterietutorial: "$POD_achievement_gained$" #NT!
+ lesson_achiev_coterietutorial_desc: "Obtuviste el logro: $achiev_coterietutorial$" #NT!
+ achiev_coterietutorial: "Por nuestros poderes combinados..." #NT!
+ achiev_coterietutorial_tt: "Encontré un nuevo [coterie|E] e invité a otros 4 miembros." #NT!
+  
+ lesson_achiev_heisttutorial: "$POD_achievement_gained$" #NT!
+ lesson_achiev_heisttutorial_desc: "Obtuviste el logro: $achiev_heisttutorial$" #NT!
+ achiev_heisttutorial: "Lo que es tuyo es mío" #NT!
+ achiev_heisttutorial_tt: "Roba al menos 200 de oro durante un solo [infiltration_mission|E]." #NT!
+  
+  
+ ##### Easy Achievements 
+  
+ lesson_achiev_lucita: "$POD_achievement_gained$" #NT!
+ lesson_achiev_lucita_desc: "Obtuviste el logro: $achiev_lucita$" #NT!
+ achiev_lucita: "Un asesino y un santo" #NT!
+ achiev_lucita_tt: "Como Lucita de Aragón, cumple tus ambiciones completando la decisión "El destino de Lucita"." #NT!
+  
+ lesson_achiev_mithras: "$POD_achievement_gained$" #NT!
+ lesson_achiev_mithras_desc: "Obtuviste el logro: $achiev_mithras$" #NT!
+ achiev_mithras: "Encantador de serpientes" #NT!
+ achiev_mithras_tt: "Como Mitra, completa la decisión "Asumir el control" después de regresar con Kemintiri." #NT!
+  
+ lesson_achiev_helena1: "$POD_achievement_gained$" #NT!
+ lesson_achiev_helena1_desc: "Obtuviste el logro: $achiev_helena1$" #NT!
+ achiev_helena1: "Un final apropiado para esta historia" #NT!
+ achiev_helena1_tt: "Como Helena o Menele, mata a tu Némesis." #NT!
+  
+ lesson_achiev_helena2: "$POD_achievement_gained$" #NT!
+ lesson_achiev_helena2_desc: "Obtuviste el logro: $achiev_helena2$" #NT!
+ achiev_helena2: "Un comienzo apropiado para este fanfiction" #NT!
+ achiev_helena2_tt: "Como Helena o Menele, conviértete en amante de tu Némesis." #NT!
+  
+ lesson_achiev_camilla: "$POD_achievement_gained$" #NT!
+ lesson_achiev_camilla_desc: "Obtuviste el logro: $achiev_camilla$" #NT!
+ achiev_camilla: "Todos los caminos conducen a mí" #NT!
+ achiev_camilla_tt: "Como Camilla, mejora cualquiera de los distritos de Roma al máximo." #NT!
+  
+  
+ ##### Medium Achievements 
+  
+ lesson_achiev_4thgenhunt: "$POD_achievement_gained$" #NT!
+ lesson_achiev_4thgenhunt_desc: "Obtuviste el logro: $achiev_4thgenhunt$" #NT!
+ achiev_4thgenhunt: "Héroe legendario" #NT!
+ achiev_4thgenhunt_tt: "Como $POD_splat_hunter$, mata a un cuarto [generation|E] $POD_splat_vampire$ de al menos rango [kingdom|E] con una interacción Encontrar guarida." #NT!
+  
+ lesson_achiev_visceratika: "$POD_achievement_gained$" #NT!
+ lesson_achiev_visceratika_desc: "Obtuviste el logro: $achiev_visceratika$" #NT!
+ achiev_visceratika: "Impresionante piedra fría" #NT!
+ achiev_visceratika_tt: "Como Virstania o Rock Lord, crea un nuevo [discipline|E]." #NT!
+  
+ lesson_achiev_rusenko: "$POD_achievement_gained$" #NT!
+ lesson_achiev_rusenko_desc: "Obtuviste el logro: $achiev_rusenko$" #NT!
+ achiev_rusenko: "¡Espera, demonio equivocado!" #NT!
+ achiev_rusenko_tt: "Como Bela Rusenko, sé poseído por Drakonskyr al final de la cadena de eventos Espada de Nul." #NT!
+  
+ lesson_achiev_schrekt: "$POD_achievement_gained$" #NT!
+ lesson_achiev_schrekt_desc: "Obtuviste el logro: $achiev_schrekt$" #NT!
+ achiev_schrekt: "No hay final canon para mí" #NT!
+ achiev_schrekt_tt: "Como el cazador Karl Schrekt, mata a Lotharius con una interacción Buscar guarida." #NT!
+  
+ lesson_achiev_javaniel: "$POD_achievement_gained$" #NT!
+ lesson_achiev_javaniel_desc: "Obtuviste el logro: $achiev_javaniel$" #NT!
+ achiev_javaniel: "¿La verdad sobre Saulot?" #NT!
+ achiev_javaniel_tt: "Usando las Tablas de Marfil, el diario y la llave de Javaniel, descubre la verdad sobre Saulot... o al menos una parte de ella." #NT!
+  
+ lesson_achiev_myprecious: "$POD_achievement_gained$" #NT!
+ lesson_achiev_myprecious_desc: "Obtuviste el logro: $achiev_myprecious$" #NT!
+ achiev_myprecious: "Mi preciosa" #NT!
+ achiev_myprecious_tt: "Jugando como una persona que no es momia, sé alma gemela de un $POD_splat_mummy$ y haz que te fabrique una piedra filosofal." #NT!
+  
+ lesson_achiev_aristotle: "$POD_achievement_gained$" #NT!
+ lesson_achiev_aristotle_desc: "Obtuviste el logro: $achiev_aristotle$" #NT!
+ achiev_aristotle: "Ambición Erudición" #NT!
+ achiev_aristotle_tt: "Emplee a Aristóteles como su tutor de la corte." #NT!
+  
+  
+ ##### Hard Achievements 
+  
+ #  lesson_achiev_grail: "$POD_achievement_gained$" #NT!
+ #  lesson_achiev_grail_desc: "Obtuviste el logro: $achiev_grail$" #NT!
+ #  achiev_grail: "La última cruzada" #NT!
+ #  achiev_grail_tt: "Como Montrovant, bebe con éxito del Grial." #NT!
+  
+ lesson_achiev_alexander: "$POD_achievement_gained$" #NT!
+ lesson_achiev_alexander_desc: "Obtuviste el logro: $achiev_alexander$" #NT!
+ achiev_alexander: "De alguna manera, ha regresado." #NT!
+ achiev_alexander_tt: "En la Edad Oscura: Marcapáginas vampiro, como Alejandro, pone fin a la lucha francesa utilizando la decisión Francia Restaurada." #NT!
+  
+ lesson_achiev_nomnom: "$POD_achievement_gained$" #NT!
+ lesson_achiev_nomnom_desc: "Obtuviste el logro: $achiev_nomnom$" #NT!
+ achiev_nomnom: "Comí mi camino hacia la cima" #NT!
+ achiev_nomnom_tt: "Comenzando como un 13.º [generation|E] $POD_splat_vampire$, [diablerize|E] hasta llegar a la cuarta generación." #NT!
+  
+ lesson_achiev_noddist: "$POD_achievement_gained$" #NT!
+ lesson_achiev_noddist_desc: "Obtuviste el logro: $achiev_noddist$" #NT!
+ achiev_noddist: "Sueño con las primeras veces" #NT!
+ achiev_noddist_tt: "Como $POD_splat_vampire$, adopta Enochian [culture|E] ensamblando el Libro de Nod." #NT!
+  
+ lesson_achiev_elohim: "$POD_achievement_gained$" #NT!
+ lesson_achiev_elohim_desc: "Obtuviste el logro: $achiev_elohim$" #NT!
+ achiev_elohim: "Escalera al cielo" #NT!
+ achiev_elohim_tt: "Termina las $POD_splat_demon$ decisiones logrando el final secreto de Redención." #NT!
+  
+ lesson_achiev_lamb: "$POD_achievement_gained$" #NT!
+ lesson_achiev_lamb_desc: "Obtuviste el logro: $achiev_lamb$" #NT!
+ achiev_lamb: "No, yo ganaría" #NT!
+ achiev_lamb_tt: "Ser asesinado por el Cordero durante el Vaticano [journey|E]." #NT!
+  
+ lesson_achiev_qawiyya: "$POD_achievement_gained$" #NT!
+ lesson_achiev_qawiyya_desc: "Obtuviste el logro: $achiev_qawiyya$" #NT!
+ achiev_qawiyya: "Hagamos la paz, no la guerra" #NT!
+ achiev_qawiyya_tt: "Como Qawiyya el-Ghaduba, alcanza la Golconda." #NT!
+  
+ lesson_achiev_horus: "$POD_achievement_gained$" #NT!
+ lesson_achiev_horus_desc: "Obtuviste el logro: $achiev_horus$" #NT!
+ achiev_horus: "Dioses de Egipto II" #NT!
+ achiev_horus_tt: "Como Horus, logra tu venganza completando la decisión "El Vengador"." #NT!
+  
+ lesson_achiev_simba: "$POD_achievement_gained$" #NT!
+ lesson_achiev_simba_desc: "Obtuviste el logro: $achiev_simba$" #NT!
+ achiev_simba: "El verdadero rey león" #NT!
+ achiev_simba_tt: "Como Simba, une a la Nación Bastet." #NT!
+  
+  
+ ##### Very Hard Achievements 
+  
+ lesson_achiev_kemintiri: "$POD_achievement_gained$" #NT!
+ lesson_achiev_kemintiri_desc: "Obtuviste el logro: $achiev_kemintiri$" #NT!
+ achiev_kemintiri: "La venganza de Isis" #NT!
+ achiev_kemintiri_tt: "Como Kemintiri, logra su contenido de personaje único eligiendo el camino de la redención y luego diaboliza con éxito a Set durante la Cacería Antediluviana." #NT!
+  
+ lesson_achiev_baybars: "$POD_achievement_gained$" #NT!
+ lesson_achiev_baybars_desc: "Obtuviste el logro: $achiev_baybars$" #NT!
+ achiev_baybars: "Historia muy alternativa" #NT!
+ achiev_baybars_tt: "Derrota y encarcela a Baybars durante su purga de lo sobrenatural en Egipto." #NT!
+  
+ lesson_achiev_santa: "$POD_achievement_gained$" #NT!
+ lesson_achiev_santa_desc: "Obtuviste el logro: $achiev_santa$" #NT!
+ achiev_santa: "Motor Clausewitz" #NT!
+ achiev_santa_tt: "Como Ilmarinen, conviértete en Papá Noel." #NT!
+  
+  
+  
+ # Congratulations! You found the hidden achievements. 
+ # Consider this a reward for reading the code. It'll be our little secret. 
+ # Since these are insanely difficult, they won't count against your number of completed achievements. 
+  
+ lesson_achiev_wolfmas: "$POD_hidden_achievement_gained$" #NT!
+ lesson_achiev_wolfmas_desc: "Obtuviste el logro: $achiev_wolfmas$" #NT!
+ achiev_wolfmas: "El plan secreto de Gaia" #NT!
+ achiev_wolfmas_tt: "Conviértete en Papá Noel como hombre lobo. (No se puede desbloquear si usaste el Diseñador de reglas)" #NT!
+  
+ lesson_achiev_absalon: "$POD_hidden_achievement_gained$" #NT!
+ lesson_achiev_absalon_desc: "Obtuviste el logro: $achiev_absalon$" #NT!
+ achiev_absalon: "Hay mucha gente aquí" #NT!
+ achiev_absalon_tt: "Como Absalón, sé poseído por Svantevit, Shemaziel, Drakonskyr, un Bane y un Antediluviano al mismo tiempo." #NT!
+ achiev_absalon_button: "Nosotros entendemos" #NT!
+  
+ lesson_achiev_redlist: "$POD_hidden_achievement_gained$" #NT!
+ lesson_achiev_redlist_desc: "Obtuviste el logro: $achiev_redlist$" #NT!
+ achiev_redlist: "Derechos de fanfarronear" #NT!
+ achiev_redlist_tt: "Con la Inquisición configurada como "Apocalíptica", sobrevive al Viaje al Vaticano, completa el objetivo Destruir la Mascarada antes del Concilio de Espinas y conviértete en uno de los fundadores de la Camarilla." #NT!

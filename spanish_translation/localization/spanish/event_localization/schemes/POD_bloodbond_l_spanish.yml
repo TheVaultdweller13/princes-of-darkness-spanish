@@ -1,42 +1,42 @@
 ﻿l_spanish:
   
- POD_bloodbond.100.t: "Ataduras de sangre" #NT!
- POD_bloodbond.100.desc: "[schemer.GetTitledFirstName] está intentando crear un vínculo de sangre entre usted." #NT!
- POD_bloodbond.100.option.a: "Ejercer mi fuerza de voluntad para resistir el vínculo de sangre." #NT!
- POD_bloodbond.100.option.b: "Rechazar el vínculo de sangre." #NT!
- POD_bloodbond.100.option.c: "Acepta el vínculo de sangre." #NT!
+ POD_bloodbond.100.t: "Ataduras de sangre"
+ POD_bloodbond.100.desc: "[schemer.GetTitledFirstName] está intentando crear un vínculo de sangre entre usted."
+ POD_bloodbond.100.option.a: "Ejercer mi fuerza de voluntad para resistir el vínculo de sangre."
+ POD_bloodbond.100.option.b: "Rechazar el vínculo de sangre."
+ POD_bloodbond.100.option.c: "Acepta el vínculo de sangre."
   
- POD_bloodbond.200.t: "Vínculos de sangre [target.GetFirstNameNoTooltip]" #NT!
- POD_bloodbond.200.desc: "El plan está en marcha para unir con sangre a [target.GetTitledFirstName], pero [target.GetSheHe] se resiste." #NT!
- POD_bloodbond.200.tt_unswayable_mind_perk: "[TARGET_CHARACTER.GetShortUINameNoTooltip] tiene un [GetPerk('unswayable_mind_perk').GetName(GetNullCharacter)] lo que disminuye tus probabilidades de éxito" #NT!
- POD_bloodbond.200.option.a: "Abrumaré a [target.GetHerHim], forzando a [target.GetHerHim] a beber mi sangre" #NT!
- POD_bloodbond.200.a.tt_willpower: "[target.GetFirstNameNoTooltip] ha ejercido su voluntad para resistirse a estar ligado a la sangre." #NT!
- POD_bloodbond.200.a.tt_fortitude: "[target.GetFirstNameNoTooltip] es hábil en el [discipline|E] de fortaleza y es resistente a tu manipulación." #NT!
- POD_bloodbond.200.a.success.desc: "[target.GetTitledFirstNameNoTooltip] estará vinculado a ti por sangre" #NT!
- POD_bloodbond.200.a.failure.desc: "[target.GetTitledFirstNameNoTooltip] resistió tu intento de crear un vínculo de sangre [target.GetHerHim]" #NT!
- POD_bloodbond.200.option.b: "¡Despierta la sangre y ejerce mi voluntad! ¡No se me negará!" #NT!
- POD_bloodbond.200.option.b.tt.beast: "#R [target.GetSheHe|U] ¡debes amarnos!#!" #NT!
- POD_bloodbond.200.option.c: "Abandonad este esfuerzo, ya no deseo unir sangre a [target.GetHerHim]." #NT!
- POD_bloodbond.200.option.c.tt: "El vínculo de sangre fallará." #NT!
- POD_bloodbond.200.option.c.tt.beast: "#R ¡Deberíamos estar extrayendo sangre, no donándola!#!" #NT!
+ POD_bloodbond.200.t: "Vínculos de sangre [target.GetFirstNameNoTooltip]"
+ POD_bloodbond.200.desc: "El plan está en marcha para unir con sangre a [target.GetTitledFirstName], pero [target.GetSheHe] se resiste."
+ POD_bloodbond.200.tt_unswayable_mind_perk: "[TARGET_CHARACTER.GetShortUINameNoTooltip] tiene un [GetPerk('unswayable_mind_perk').GetName(GetNullCharacter)] lo que disminuye tus probabilidades de éxito"
+ POD_bloodbond.200.option.a: "Abrumaré a [target.GetHerHim], forzando a [target.GetHerHim] a beber mi sangre"
+ POD_bloodbond.200.a.tt_willpower: "[target.GetFirstNameNoTooltip] ha ejercido su voluntad para resistirse a estar ligado a la sangre."
+ POD_bloodbond.200.a.tt_fortitude: "[target.GetFirstNameNoTooltip] es hábil en el [discipline|E] de fortaleza y es resistente a tu manipulación."
+ POD_bloodbond.200.a.success.desc: "[target.GetTitledFirstNameNoTooltip] estará vinculado a ti por sangre"
+ POD_bloodbond.200.a.failure.desc: "[target.GetTitledFirstNameNoTooltip] resistió tu intento de crear un vínculo de sangre [target.GetHerHim]"
+ POD_bloodbond.200.option.b: "¡Despierta la sangre y ejerce mi voluntad! ¡No se me negará!"
+ POD_bloodbond.200.option.b.tt.beast: "#R [target.GetSheHe|U] ¡debes amarnos!#!"
+ POD_bloodbond.200.option.c: "Abandonad este esfuerzo, ya no deseo unir sangre a [target.GetHerHim]."
+ POD_bloodbond.200.option.c.tt: "El vínculo de sangre fallará."
+ POD_bloodbond.200.option.c.tt.beast: "#R ¡Deberíamos estar extrayendo sangre, no donándola!#!"
   
- POD_bloodbond.300.t: "[target.GetFirstNameNoTooltip] sangre unida" #NT!
- POD_bloodbond.300.desc: "[target.GetTitledFirstName] está unido a mí por sangre." #NT!
- POD_bloodbond.300.option.a: "Es como debería ser." #NT!
- POD_bloodbond.300.option.a.tt.beast: "#R Y ahora, ¿qué hacemos con ellos?#!" #NT!
+ POD_bloodbond.300.t: "[target.GetFirstNameNoTooltip] sangre unida"
+ POD_bloodbond.300.desc: "[target.GetTitledFirstName] está unido a mí por sangre."
+ POD_bloodbond.300.option.a: "Es como debería ser."
+ POD_bloodbond.300.option.a.tt.beast: "#R Y ahora, ¿qué hacemos con ellos?#!"
   
- POD_bloodbond.400.t: "Has sido vinculado por la sangre" #NT!
- POD_bloodbond.400.desc: "Habiendo bebido la sangre de [schemer.GetTitledFirstName], estás ligado a [schemer.GetHerHim]." #NT!
- POD_bloodbond.400.option.a: "Lo haré [schemer.GetHerHis] lo haré." #NT!
+ POD_bloodbond.400.t: "Has sido vinculado por la sangre"
+ POD_bloodbond.400.desc: "Habiendo bebido la sangre de [schemer.GetTitledFirstName], estás ligado a [schemer.GetHerHim]."
+ POD_bloodbond.400.option.a: "Lo haré [schemer.GetHerHis] lo haré."
   
- POD_bloodbond.500.t: "Resistió la unión sanguínea" #NT!
- POD_bloodbond.500.desc: "[target.GetTitledFirstName] se ha resistido a mi intento de vincular sangre a [target.GetHerHim]." #NT!
- POD_bloodbond.500.option.a: "¡Frustrado!" #NT!
- POD_bloodbond.500.option.a.tt.beast: "#R ¡Consigamos más sangre y volvamos a intentarlo!#!" #NT!
+ POD_bloodbond.500.t: "Resistió la unión sanguínea"
+ POD_bloodbond.500.desc: "[target.GetTitledFirstName] se ha resistido a mi intento de vincular sangre a [target.GetHerHim]."
+ POD_bloodbond.500.option.a: "¡Frustrado!"
+ POD_bloodbond.500.option.a.tt.beast: "#R ¡Consigamos más sangre y volvamos a intentarlo!#!"
   
- POD_bloodbond.600.t: "Resistió la unión sanguínea" #NT!
- POD_bloodbond.600.desc: "[schemer.GetTitledFirstName] ha abandonado el plan de [schemer.GetHerHis] para unirte con sangre." #NT!
- POD_bloodbond.600.option.a: "¡No seré [schemer.GetHerHis] esclavo de sangre!" #NT!
+ POD_bloodbond.600.t: "Resistió la unión sanguínea"
+ POD_bloodbond.600.desc: "[schemer.GetTitledFirstName] ha abandonado el plan de [schemer.GetHerHis] para unirte con sangre."
+ POD_bloodbond.600.option.a: "¡No seré [schemer.GetHerHis] esclavo de sangre!"
   
   
   

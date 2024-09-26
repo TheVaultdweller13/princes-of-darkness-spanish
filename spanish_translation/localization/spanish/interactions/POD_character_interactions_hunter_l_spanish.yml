@@ -1,361 +1,361 @@
 ﻿l_spanish:
- POD_inquihunt_interaction: "Encuentra guarida" #NT!
- POD_inquihunt_interaction_desc: "Intentarás averiguar la ubicación exacta de este demonio. Luego comenzará la cacería. Obviamente, esto conlleva serios riesgos..." #NT!
- I_CAN_ONLY_PLOT_ONE_INQUIHUNT_AT_A_TIME_TRIGGER: "Sólo se puede planificar una cacería a la vez" #NT!
- scheme_interaction_tt_inquihunt_approved: "Intentarás averiguar la ubicación exacta de este demonio. Luego comenzará la cacería. Obviamente, esto conlleva serios riesgos..." #NT!
- inquihunt: "Conjura de búsqueda de guarida" #NT!
- inquihunt_action: "Encuentra guarida" #NT!
- inquihunt_interaction: "Encuentra la guarida #weak (Conjura)#!" #NT!
- inquihunt_desc: "Destruiré a [SCHEME.GetTarget.GetShortUINameNoTooltip] y purgaré su inmunda mancha de esta tierra." #NT!
- inquihunt_desc_general: "Intenta localizar al demonio antes de lanzar un asalto." #NT!
- INQUIHUNT_SUCCESS_DESC: "Comenzarás el ataque final en [TARGET_CHARACTER.GetShortUIName]" #NT!
- INQUIHUNT_DISCOVERY_DESC: "@warning_icon! Estás expuesto a la [crime|E] de la cacería de brujas" #NT!
- inquihunt_my_intrigue: "Tu Intriga: $VALUE|=+0$" #NT!
- inquihunt_my_rival: "Tu víctima: $VALUE|=+0$" #NT!
- POD_inquihunt_effect_message: "Si tienes el estilo de vida de Fe Verdadera, obtendrás algo de experiencia en el estilo de vida de fe dependiendo de la edad del vampiro asesinado." #NT!
- POD_inquihunt.667.t: "Perdí el rastro" #NT!
- POD_inquihunt.667.desc: "Tu presa ha logrado escapar de tus persistentes intentos por localizarla. Probablemente con la ayuda de otros agentes del Diablo, ha logrado salir del agujero del que salió y esconderse de ti. Pero Dios es paciente, y tú también. No podrán evitar la hoguera para siempre." #NT!
- POD_inquihunt.667.option.a: "Parece que me esperaban" #NT!
- POD_inquihunt.1.t: "En la búsqueda" #NT!
- POD_inquihunt.1.desc: "Finalmente has encontrado al demonio en su guarida. No puede haber errores, ya que la pobre gente de los alrededores claramente ha perdido el amor de [ROOT.Char.GetFaith.HighGodName]. Son cáscaras paranoicas y sin alma que tienen miedo de salir por la noche e incluso la Iglesia se encuentra desolada.\nTú y tu pequeño séquito son claramente la única esperanza de este lugar. Mientras montas tu campamento, es hora de reflexionar sobre tu próximo movimiento. El Señor ciertamente te ha guiado a esta guarida del mal, pero cómo destruirla queda a tu criterio..." #NT!
- POD_inquihunt.1.desc.shifter: "Finalmente has encontrado al demonio en su guarida. No puede haber errores, ya que los simios de los alrededores son paranoicos, cáscaras contaminadas por dragones que temen salir por la noche. Mientras exploras el área, es hora de pensar en tu próximo movimiento. Has encontrado la guarida de la corrupción, pero la forma de destruirla depende de tu apreciación..." #NT!
- POD_inquihunt.1.option.a: "La gente corriente aún no se ha perdido en la oscuridad. Prediquemos." #NT!
- POD_inquihunt.1.option.a.shifter: "Con un poco de persuasión, es posible inducir a los simios a enfurecerse contra la sanguijuela." #NT!
- POD_inquihunt.1.option.a.generic: "¡Debo convencerlos!" #NT!
- POD_inquihunt.1.option.aa.effect.success.desc: "Un éxito crítico garantizará una victoria rápida para su causa." #NT!
- POD_inquihunt.1.option.ab.effect.success.desc: "Un empate... el demonio seguirá causando problemas." #NT!
- POD_inquihunt.1.option.ac.effect.success.desc: "No cometas errores, o el enemigo seguramente acabará contigo rápidamente." #NT!
- POD_inquihunt.1.option.f: "Tengo un mal presentimiento sobre esto" #NT!
- POD_inquihunt.1.option.f.custom: "Este no es el lugar ni el momento, volverás en otra ocasión" #NT!
- POD_inquihunt.1.option.b: "¡Soldados de [ROOT.Char.GetFaith.HighGodName]! ¡Hoy asaltaremos este castillo!" #NT!
- POD_inquihunt.1.option.b.shifter: "¡Elegidos de Gea! ¡Hoy asaltaremos este castillo!" #NT!
- POD_inquihunt.1.option.c: "Destruyamos sus activos y aislemos primero al demonio." #NT!
- POD_inquihunt.1.option.d: "Temen la luz de [ROOT.Char.GetFaith.HighGodName]. Actuemos durante el día." #NT!
- POD_inquihunt.1.option.d.shifter: "Helios nos ayudará. Actuemos durante el día." #NT!
- POD_inquihunt.1.option.e: "Puede que tenga algo sobre este demonio en particular en mis libros..." #NT!
- POD_inquihunt.1.option.g: "¡Te mataré yo mismo, demonio!" #NT!
- POD_inquihunt.2.t: "Una hoguera satisfactoria" #NT!
- POD_inquihunt.2.desc: "Fue más fácil de lo que pensabas traer de vuelta a estas pobres almas a la luz de [ROOT.Char.GetFaith.HighGodNamePossessive]. Estaban ansiosos por escuchar y aprender, después de tantos años perdidos en la oscuridad.\nUna vez hecho eso, fue aún más fácil aliarse con ellos y usar todo lo que sabían sobre el demonio que acechaba por la noche. Y así, con todo el pueblo a cuestas, asaltaste su guarida, conteniéndola fácilmente gracias a la gran cantidad de enemigos y a la ayuda de [ROOT.Char.GetFaith.HighGodNamePossessive], que les había dado luz.\nY con todo eso dicho y hecho, ahora disfrutas viendo al demonio arder en la hoguera mientras todo el pueblo aplaude a [ROOT.Char.GetFaith.HighGodNamePossessive] y a tu nombre." #NT!
- POD_inquihunt.2.desc.shifter: "Fue más fácil de lo que pensabas reunir una turba de humanos. Estaban ansiosos por derrocar a los engendros de dragones que se estaban dando un festín con sus parientes.\nUna vez hecho eso, fue aún más fácil aliarse con ellos y usar todo lo que sabían sobre el demonio que acechaba por la noche. Y así, con todo el pueblo a cuestas asaltaste su guarida, conteniéndola fácilmente gracias a la gran cantidad de enemigos.\nY con todo eso dicho y hecho, ¡ahora disfrutas viendo al demonio arder en la hoguera con todo el pueblo aplaudiendo!" #NT!
- POD_inquihunt.2.option.a: "Una vista así me calienta el corazón." #NT!
- POD_inquihunt.3.t: "Hijos contra padres" #NT!
- POD_inquihunt.3.t.shifter: "La turba rebelde" #NT!
- POD_inquihunt.3.desc: "Parece que el demonio tiene sus garras muy adentro de esta aldea. Tu prédica ha reunido a un gran número de seguidores, pero también a un número menor de rebeldes, que ahora se oponen a tu santa procesión en la entrada de la guarida del demonio. Está claro que el diablo los ha corrompido, pero no tienes tiempo para salvar sus almas, ya que el vampiro seguramente escapará en cuanto se entere de la conmoción que hay afuera. Sin embargo, hay otra opción, más rápida, sin duda, pero también moralmente dudosa..." #NT!
- POD_inquihunt.3.desc.shifter: "Parece que el demonio tiene sus garras bien clavadas en esta aldea. Tu agitación popular ha reunido a un gran número de seguidores, pero también a un número menor de leales a la sanguijuela, que ahora se opone a tu turba en la entrada de la guarida del cadáver. Está claro que el Wyrm los ha corrompido, pero no debes demorarte, ya que el vampiro seguramente escapará una vez que se entere de la conmoción que hay afuera. Sin embargo, hay otra opción, más rápida, sin duda, pero también moralmente dudosa..." #NT!
- POD_inquihunt.3.option.a: "Mátalos a todos y deja que Dios los resuelva." #NT!
- POD_inquihunt.3.option.b: "Ningún inocente será herido, ni siquiera los inocentes descarriados." #NT!
- POD_inquihunt.4.t: "Ironía ardiente" #NT!
- POD_inquihunt.4.desc: "Subestimaste gravemente la influencia que este demonio tenía sobre esta aldea. Tu prédica fue recibida con escepticismo, o incluso con ira absoluta. Era demasiado tarde cuando descubriste la verdad: todos habían estado bajo el yugo del vampiro todo el tiempo. Tu séquito fue asesinado mientras dormía, y a ti te llevaron sin contemplaciones a la hoguera que querías para el demonio. Mientras las llamas comienzan a envolverte, recuerdas que Dios es misericordia. Y que Él tenga misericordia de tu fracaso y de las almas de estos inocentes descarriados." #NT!
- POD_inquihunt.4.desc.generic: "Subestimaste gravemente la influencia que este demonio tenía sobre esta aldea. Tu retórica fue recibida con escepticismo, o incluso con ira absoluta. Fue demasiado tarde cuando descubriste la verdad: todos estuvieron bajo el yugo del vampiro todo el tiempo. Tu séquito fue asesinado mientras dormía, y a ti te llevaron sin contemplaciones a la hoguera que querías para el demonio. Mientras las llamas comienzan a envolverte, recuerdas que, en verdad, siempre estuvo destinado a terminar así. Hiciste lo que pudiste." #NT!
- POD_inquihunt.4.desc.shifter: "Subestimaste gravemente la influencia que este demonio tenía sobre esta aldea. Tu agitación fue recibida con escepticismo, o incluso con ira absoluta. Fue demasiado tarde cuando descubriste la verdad: todos estuvieron bajo el yugo del vampiro todo el tiempo. Tus partidarios fueron asesinados mientras dormían, y a ti te llevaron sin contemplaciones a la hoguera que querías para el demonio. Mientras las llamas comienzan a envolverte, esperas ser un mejor guerrero para Gea en la próxima vida." #NT!
- POD_inquihunt.4.option.a: "Termina como empezó, en fuego." #NT!
- POD_inquihunt.5.t: "El plan perfecto" #NT!
- POD_inquihunt.5.desc: "El orgullo es un pecado, pero debes admitirlo: fue un asalto impecable y ejecutado con maestría por los valientes Caballeros de Dios bajo tu mando. A pesar de los numerosos esclavos que defendían el área y de las trampas aún más numerosas, lograste asaltar el lugar con pocas pérdidas al final. Obviamente, atacaste a plena luz del día y debes darle crédito a la luz de Dios por haber mantenido al demonio dormido durante la batalla. Después de tomar el castillo, fue un momento anticlimático, pero igualmente satisfactorio, cuando decapitaste al vampiro dormido. La victoria es tuya una vez más." #NT!
- POD_inquihunt.5.desc.generic: "El exceso de confianza es un asesino lento e insidioso, pero debes admitirlo: fue un asalto impecable y ejecutado con destreza por los valientes cazadores bajo tu mando. A pesar de los numerosos esclavos que defendían el área y de las trampas aún más numerosas, lograste asaltar el lugar con pocas pérdidas al final. Obviamente, atacaste a plena luz del día y debes reconocerle el mérito a esa estratagema por haber mantenido al demonio dormido durante la batalla. Después de tomar el castillo, fue un momento anticlimático, pero igualmente satisfactorio, cuando decapitaste al vampiro dormido. La victoria es tuya una vez más." #NT!
- POD_inquihunt.5.desc.shifter: "Fue un asalto impecable, ejecutado con maestría por las fuerzas bajo tu mando. A pesar de los numerosos esclavos que defendían la zona, y de las trampas aún más numerosas, lograste asaltar el lugar con pocas pérdidas al final. Obviamente, atacaste a plena luz del día, y debes darle crédito a la luz de Helios por haber mantenido al demonio dormido durante la batalla. Después de tomar el castillo, fue un momento anticlimático, pero igualmente satisfactorio, cuando decapitaste al vampiro dormido. La victoria es tuya una vez más." #NT!
- POD_inquihunt.5.option.a: "Me encanta cuando un plan viene junto." #NT!
- POD_inquihunt.6.t: "¿Victoria pírrica?" #NT!
- POD_inquihunt.6.desc: "Mientras la batalla continúa en el interior del castillo, sabes que la victoria está a tu alcance. Pero, ¿vale la pena el costo? Sus defensores estaban preparados y numerosas trampas ya se han cobrado las vidas de buenos soldados de Dios. ¿Será suficiente la muerte de un demonio como venganza por estas pobres almas? No es demasiado tarde y aún puedes cancelar el ataque por hoy, pero el vampiro obviamente usará la cobertura de la noche para escapar. O sigues adelante y siempre llevas la carga de los buenos hombres perdidos por una causa digna." #NT!
- POD_inquihunt.6.desc.generic: "Mientras la batalla continúa en el interior del castillo, sabes que la victoria está a tu alcance. Pero, ¿vale la pena el costo? Sus defensores estaban preparados y numerosas trampas ya se han cobrado las vidas de hombres y mujeres buenos bajo tu mando. ¿Será suficiente la muerte de un demonio como venganza por estas pobres almas? No es demasiado tarde y aún puedes cancelar el ataque por hoy, pero el vampiro obviamente usará la cobertura de la noche para escapar. O sigues adelante y siempre llevas la carga de los compañeros perdidos por una causa digna." #NT!
- POD_inquihunt.6.desc.shifter: "Mientras la batalla continúa en el interior del castillo, sabes que la victoria está a tu alcance. Pero, ¿vale la pena el costo? Sus defensores estaban preparados y numerosas trampas ya se han cobrado las vidas de guerreros de Gea. ¿Será suficiente la muerte de un demonio como venganza para esta raza? No es demasiado tarde y aún puedes cancelar el ataque por hoy, pero el vampiro obviamente usará la cobertura de la noche para escapar. O sigues adelante y siempre llevas la carga de los buenos seguidores perdidos por una causa digna." #NT!
- POD_inquihunt.6.option.a: "¡La victoria vale el sacrificio!" #NT!
- POD_inquihunt.6.option.b: "Ese camino fácil conduce a la condenación." #NT!
- POD_inquihunt.7.t: "La última batalla" #NT!
- POD_inquihunt.7.desc: "Todo ha ido terriblemente mal. El castillo estaba preparado y ni siquiera podías atravesar los muros. Peor aún, llegaron refuerzos de un pueblo cercano, aparentemente también esclavizado por el Señor Oscuro del castillo. El demonio está muy cerca, pero a la vez muy lejos. No hay escapatoria para ti y tus valientes caballeros y parece que Dios te llamará a su reino hoy. Esperas ser digno de su misericordia, pero antes de eso... acabarás con tantos demonios como puedas." #NT!
- POD_inquihunt.7.desc.generic: "Todo ha ido terriblemente mal. El castillo estaba preparado y ni siquiera podías atravesar los muros. Peor aún, llegaron refuerzos de un pueblo cercano, aparentemente también esclavizado por el Señor Oscuro del castillo. El demonio está muy cerca, pero a la vez muy lejos. No hay escapatoria para ti y tus valientes cazadores y tu perdición ahora es inevitable. Pero antes de eso... deberás acabar con tantos demonios como puedas." #NT!
- POD_inquihunt.7.desc.shifter: "Todo ha ido terriblemente mal. El castillo estaba preparado y ni siquiera podías atravesar los muros. Peor aún, llegaron refuerzos de un pueblo cercano, aparentemente también esclavizado por el Señor Oscuro del castillo. El demonio está muy cerca, pero a la vez muy lejos. No te queda escapatoria y tus valientes guerreros perecerán. Acabarás con tantos de estos engendros de wyrm como puedas." #NT!
- POD_inquihunt.7.option.a: "Es un buen día para morir." #NT!
- POD_inquihunt.8.t: "Activos en llamas" #NT!
- POD_inquihunt.8.desc: "Tu ataque fue metódico. Apuntaste a cada gremio, milicia o grupo de sectarios en el que el demonio tenía sus garras. Usaste dos armas poderosas: el atractivo del oro para los codiciosos y el miedo a la Iglesia para los corruptos. Y así fue como tu campaña aisló al vampiro, alejó a sus aliados y dispersó a sus esclavos. Ahora ves el último refugio del demonio arder ante tus ojos, los gritos de la criatura en su interior son como música para tus oídos." #NT!
- POD_inquihunt.8.desc.generic: "Tu ataque fue metódico. Apuntaste a cada gremio, milicia o grupo de cultistas en el que el demonio tenía sus garras. Usaste dos armas poderosas: el atractivo del oro para los codiciosos y el miedo a tu ira para los corruptos. Y así fue como tu campaña aisló al vampiro, alejó a sus aliados y dispersó a sus esclavos. Ahora ves el último refugio del demonio arder ante tus ojos, los gritos de la criatura en su interior son como música para tus oídos." #NT!
- POD_inquihunt.8.desc.shifter: "Tu ataque fue metódico. Apuntaste a cada gremio, milicia o grupo de sectarios en el que el demonio tenía sus garras. Usaste dos armas poderosas: el atractivo del oro para los codiciosos y el miedo a las represalias para los corruptos. Y así fue como tu campaña aisló al vampiro, alejó a sus aliados y dispersó a sus esclavos. Ahora ves el último refugio del demonio arder ante tus ojos, los gritos de la criatura en su interior son como música para tus oídos." #NT!
- POD_inquihunt.8.option.a: "Estas despedido" #NT!
- POD_inquihunt.9.t: "Una vida de mercenario para mí" #NT!
- POD_inquihunt.9.desc: "Esta malvada criatura tenía más influencia en la región de lo que pensabas al principio. Sin embargo, te has mostrado estoico y ahora estás bastante seguro de que la mayoría de sus activos han sido destruidos por tus acciones. Pero parece que el vampiro no se rendirá fácilmente, ya que una poderosa banda de mercenarios está marchando hacia tu posición, aparentemente contratados por tu enemigo para eliminarte. Tienes una opción: a los mercenarios les encanta el oro y puedes ponerlos en contra de su empleador antes de que puedan huir. O puedes reducir tus pérdidas y aceptar un empate por esta vez." #NT!
- POD_inquihunt.9.option.a: "Ofrezco oro y salvación a hombres piadosos como tú." #NT!
- POD_inquihunt.9.option.a.shifter: "Algunos hombres lucharán contra monstruos, siempre y cuando el precio sea justo." #NT!
- POD_inquihunt.9.option.b: "Atraparé a este diablo la próxima vez." #NT!
- POD_inquihunt.10.t: "Cambio de Dirección" #NT!
- POD_inquihunt.10.desc: "Has calculado mal. Tus acciones han sido contrarrestadas a cada paso. Este vampiro tenía más oro, más agentes y más influencia sobre esta comunidad de lo que jamás podrías haber anticipado. Y ahora, todo se derrumba, literalmente, después de que tu último error revelara tu posición al demonio. Un grupo de "mercenarios" endurecidos apareció rápidamente y, con solo tus fieles caballeros de Dios para protegerte, no pasó mucho tiempo antes de que te asediaran en tu propia base. Mientras los últimos sonidos de la batalla se apagan afuera, ahora escuchas el sonido de las antorchas que se lanzan por la ventana. Afortunadamente, tienes tiempo para un último Padrenuestro." #NT!
- POD_inquihunt.10.desc.generic: "Calculaste mal. Tus acciones fueron contrarrestadas a cada paso. Este vampiro tenía más oro, más agentes y más influencia sobre esta comunidad de lo que jamás podrías haber anticipado.\nY ahora, todo se derrumba, literalmente, después de que tu último error revelara tu posición al demonio. Un grupo de "mercenarios" endurecidos apareció rápidamente y, con solo tus leales cazadores para protegerte, no pasó mucho tiempo antes de que te asediaran en tu propia base. Mientras los últimos sonidos de la batalla se apagan afuera, ahora escuchas el sonido de las antorchas que se arrojan por la ventana. El final está cerca." #NT!
- POD_inquihunt.10.desc.shifter: "Calculaste mal. Tus acciones fueron contrarrestadas a cada paso. Este vampiro tenía más oro, más agentes y más influencia sobre esta comunidad de lo que jamás podrías haber anticipado. Y ahora, todo se derrumba, literalmente, después de que tu último error revelara tu posición al demonio. Un grupo de "mercenarios" endurecidos apareció rápidamente y, con solo tus fieles parientes para protegerte, no pasó mucho tiempo antes de que te asediaran en tu propio campamento. Mientras los últimos sonidos de la batalla se apagan afuera, ahora escuchas el sonido de las antorchas que se arrojan al campamento. Parece que este es el final." #NT!
- POD_inquihunt.10.option.a: "Pater noster qui es in caelis..." #NT!
- POD_inquihunt.10.option.a.shifter: "Vorus se ríe de mi derrota." #NT!
- POD_inquihunt.10.option.a.generic: "El final del camino." #NT!
- POD_inquihunt.11.t: "El enemigo de mi enemigo..." #NT!
- POD_inquihunt.11.desc: "Una cosa que sabes sobre los vampiros es que, en su mayoría, son hostiles entre sí. Y te has convertido en un experto en usar este hecho a tu favor. Dejaste algunas pistas sobre esta guarida en particular a un nido de demonios vecino conocido, te sentaste y observaste cómo tu objetivo era asaltado durante la noche por unos matones contratados por su rival. Ganaron, pero se debilitaron lo suficiente como para que tus caballeros lo sometieran fácilmente. Rápidamente le encontraste un nuevo hogar en tu cámara de tortura personal. Luego pasaste unos días muy esclarecedores con él hasta que lo dejaste desangrarse hasta la muerte. Se hizo la voluntad de Dios." #NT!
- POD_inquihunt.11.desc.shifter: "Una cosa que sabes sobre los vampiros es que, en su mayoría, son hostiles entre sí. Y te has convertido en un experto en usar este hecho a tu favor. Dejaste algunas pistas sobre esta guarida en particular a un nido de demonios vecino conocido, te sentaste y observaste cómo tu objetivo era asaltado durante la noche por unos matones contratados por su rival. Ganaron, pero se debilitaron lo suficiente para que tus guerreros pudieran dominarlo fácilmente. Solo tenías que lanzarte para matarlo." #NT!
- POD_inquihunt.11.option.a: "Los gritos que hacían en presencia de una Reliquia Sagrada eran bastante interesantes..." #NT!
- POD_inquihunt.11.option.a.generic: "Casi demasiado fácil." #NT!
- POD_inquihunt.11.option.a.shifter: "Hay mucha gloria en destruir las sanguijuelas." #NT!
- POD_inquihunt.12.t: "Cruz y daga" #NT!
- POD_inquihunt.12.t.shifter: "Depredador y presa" #NT!
- POD_inquihunt.12.desc: "Estás impresionado por la astucia de este demonio. La mayoría de tus objetivos anteriores cayeron con bastante facilidad una vez que tejiste tu red de intrigas a su alrededor, pero este... este contraatacó. Con fuerza. Tu propia red está siendo atacada, con rumores maliciosos que te apuntan en particular. Sabes que puedes con esta guerra de sombras, pero te costará mucho reparar el daño causado por tu enemigo. Sin embargo, presionar un poco más te permitiría la alegría de llevar a este vampiro a tu mejor cámara de tortura... Decisiones, decisiones." #NT!
- POD_inquihunt.12.desc.shifter: "Estás impresionado por la astucia de este demonio. La mayoría de tus objetivos anteriores cayeron con bastante facilidad una vez que tejiste tu red de intrigas a su alrededor, pero este... este contraatacó. Con fuerza. Tu propia red está siendo atacada, con rumores maliciosos que te apuntan en particular. Sabes que puedes con esta guerra de sombras, pero te costará mucho reparar el daño causado por tu enemigo. Presionar un poco más te permitiría vencer a este vampiro. Decisiones, decisiones." #NT!
- POD_inquihunt.12.option.a: "La reputación no lo es todo" #NT!
- POD_inquihunt.12.option.b: "Este diablo no vale la pena el esfuerzo." #NT!
- POD_inquihunt.13.t: "Encontrar tu Mejor" #NT!
- POD_inquihunt.13.desc: "No tuviste ninguna oportunidad. Cada una de tus acciones fue anticipada, cada movimiento que hiciste fue fácilmente contrarrestado. No eras más que un niño que jugaba una partida de ajedrez sin conocer las reglas. Este vampiro probablemente inventó el juego.\nIncluso cuando comprendiste el peligro en el que te encontrabas, ya era demasiado tarde. Y por eso, ahora estás siendo torturado todas las noches por aquel a quien tontamente querías destruir. E incluso en este campo en particular, ellos saben mucho más que tú..." #NT!
- POD_inquihunt.13.option.a: "La noche es oscura y llena de terrores." #NT!
- POD_inquihunt.14.t: "Conocer a tu enemigo" #NT!
- POD_inquihunt.14.desc: "Te alegraste mucho de ver que tenías algunas menciones antiguas del demonio en particular que buscaste en tus libros. Te alegraste aún más de saber de su peculiar apego a una familia mortal aún viva. ¡Como si estas criaturas aún pudieran sentir emociones mortales! Bueno, no importa, esta era una información bastante fácil de explotar. Al usar a estos mortales como cebo, lograste atraer al vampiro a una trampa cuidadosamente planeada en terreno sagrado. Este demonio en particular se convirtió instantáneamente en cenizas al ingresar al área, una observación que rápidamente consignaste en tu diario." #NT!
- POD_inquihunt.14.option.a: "Esto podría ser útil para el próximo." #NT!
- POD_inquihunt.15.t: "Un libro demasiado lejos" #NT!
- POD_inquihunt.15.desc: "Este demonio es escurridizo. Ya ha evitado dos de tus trampas cuidadosamente planeadas y estás empezando a perder algo de terreno, ya que varios de tus agentes han desaparecido. Sin embargo, queda una posibilidad, una que has decidido no utilizar hasta ahora dada su naturaleza... "mística". La Santa Iglesia ciertamente no aprobaría tal elección, pero ¿quizás la muerte de este vampiro en particular valga más que tu reputación?" #NT!
- POD_inquihunt.15.desc.generic: "Este demonio es escurridizo. Ya ha evitado dos de tus trampas cuidadosamente planeadas y estás empezando a perder algo de terreno, ya que varios de tus agentes han desaparecido. Sin embargo, queda una posibilidad, que has decidido no utilizar hasta ahora dada su naturaleza... "mística". Un contacto tuyo dudoso en la zona se ha ofrecido a ayudar, pero confiar en esta fuente probablemente contaminada podría dañar tu reputación." #NT!
- POD_inquihunt.15.desc.shifter: "Este demonio es escurridizo. Ya ha evitado dos de tus trampas cuidadosamente planeadas y estás empezando a perder algo de terreno, ya que varios de tus agentes han desaparecido. Sin embargo, queda una posibilidad, que has decidido no utilizar hasta ahora dada su naturaleza... "mística". Un espíritu peligroso se ha puesto en contacto conmigo para ofrecerme "ayuda"." #NT!
- POD_inquihunt.15.option.a: "[ROOT.Char.GetFaith.HighGodName] es indulgente después de todo..." #NT!
- POD_inquihunt.15.option.a.desc: "Cualquiera que sea el costo lo pagaré." #NT!
- POD_inquihunt.15.option.b: "Es una línea que no cruzaré." #NT!
- POD_inquihunt.16.t: "Si miras al abismo..." #NT!
- POD_inquihunt.16.desc: "No sabes muy bien cuándo empezó todo. Encontraste una referencia al vampiro en un libro antiguo, luego en otro... y empezaste a leer. Y más aún cuando te trajeron libros nuevos unos agentes que no recuerdas haber contratado. Has estado perdido durante bastante tiempo en tu trabajo y has cavado muy hondo, probablemente demasiado hondo. Al menos, eso es lo que piensa la Iglesia, ya que uno de tus caballeros te denunció por tus lecturas "heréticas". Y así, aquí estás, una vez más en la hoguera, pero esta vez no en público..." #NT!
- POD_inquihunt.16.desc.generic: "No sabes muy bien cuándo empezó todo. Encontraste una referencia al vampiro en un libro viejo, luego en otro... y empezaste a leer. Y más aún cuando te trajeron libros nuevos unos agentes que no recuerdas haber contratado. Has estado perdido durante bastante tiempo en tu trabajo y has cavado hondo, probablemente demasiado hondo. Al menos, eso es lo que piensa el clero local, ya que uno de tus compañeros te denunció por tus lecturas "heréticas". Y así, aquí estás, una vez más en la hoguera, pero esta vez no en público..." #NT!
- POD_inquihunt.16.desc.shifter: "No sabes muy bien cuándo empezó. Encontraste una referencia al vampiro en un libro viejo, luego en otra... y empezaste a leer. Y más aún cuando te trajeron libros nuevos unos agentes que no recuerdas haber contratado.\nHas estado perdido durante bastante tiempo en tu trabajo y has cavado profundo, probablemente demasiado profundo. Entonces el espíritu vino a ti con una oferta peligrosa. Demasiado peligrosa, que te llevó a una trampa y, en última instancia, a tu muerte." #NT!
- POD_inquihunt.16.option.a: "¡Estuve tan cerca de la verdad! ¡Tan cerca!" #NT!
- POD_inquihunt.17.t: "Furia santa" #NT!
- POD_inquihunt.17.t.shifter: "La furia de Gaia" #NT!
- POD_inquihunt.17.desc: "No esperaban un ataque frontal. Eso es lo que concluyes después de haberte abierto paso a través de un número significativo de esclavos desprevenidos del vampiro antes de encontrar su lugar de descanso. Aunque has atacado durante el día, el alboroto de la batalla ha despertado al demonio que te estaba esperando. Debes admitir que dieron un buen espectáculo, a pesar de lo lentos que son durante el día, pero en general, les cortaste la cabeza con bastante facilidad antes de que pudieran orientarse realmente en esta batalla. Un chupasangre menos en la hermosa Tierra de Dios." #NT!
- POD_inquihunt.17.desc.generic: "No esperaban un asalto frontal. Esto es lo que concluyes después de haberte abierto camino a través de un número significativo de esclavos del vampiro desprevenidos antes de encontrar su lugar de descanso. Aunque has atacado durante el día, el alboroto de la batalla ha despertado al demonio que te estaba esperando.\nDebes admitir que hicieron un buen espectáculo, aunque son lentos durante el día, pero en general, aún así puedes fácilmente. les cortaron la cabeza antes de que realmente pudieran orientarse en esta batalla. Un golpe más añadido a tu ballesta." #NT!
- POD_inquihunt.17.desc.shifter: "No esperaban un ataque frontal. Eso es lo que concluyes después de haberte abierto paso a través de un número significativo de esclavos desprevenidos del vampiro antes de encontrar su lugar de descanso. Aunque has atacado durante el día, el alboroto de la batalla ha despertado al demonio que te estaba esperando. Debes admitir que dieron un buen espectáculo, a pesar de lo lentos que son durante el día, pero en general, les cortaste la cabeza con bastante facilidad antes de que pudieran orientarse realmente en esta batalla. Un sirviente menos del Wyrm que se aprovecha de Gea." #NT!
- POD_inquihunt.17.option.a: "Entonces ¿dónde está el siguiente?" #NT!
- POD_inquihunt.18.t: "Un oponente digno" #NT!
- POD_inquihunt.18.desc: "Esta es difícil. A pesar de haber eliminado fácilmente a la mayoría de sus guardias y haber atacado durante el día, este demonio sigue siendo un enemigo formidable. Estás seguro de que ganarás, gracias a la luz del día, pero es un proceso lento y arduo. Peor aún, esta larga batalla ha dado tiempo a otros esclavos del vampiro para intervenir. Probablemente puedas vencerlos también, pero no saldrás ileso de una pelea así..." #NT!
- POD_inquihunt.18.option.a: "Ganaré, no importa el costo." #NT!
- POD_inquihunt.18.option.b: "Debo preservarme para futuras batallas." #NT!
- POD_inquihunt.19.t: "Superado" #NT!
- POD_inquihunt.19.desc: "Así es como termina. El demonio, a pesar de ser atacado durante el día, es mucho más fuerte, rápido y resistente que tú. Llegaste a esta conclusión bastante temprano en tu enfrentamiento y has hecho las paces con él. Ahora, es solo una cuestión de retenerlo el tiempo suficiente para que tus tropas se retiren y vivan otro día, lo cual estás bastante seguro de que finalmente ha terminado. Con un golpe final, el vampiro se prepara para acabar contigo. Pero estás más en paz de lo que ellos estarán nunca, ya que Dios te está esperando al otro lado." #NT!
- POD_inquihunt.19.desc.generic: "Así es como termina. El demonio, a pesar de ser atacado durante el día, es mucho más fuerte, rápido y resistente que tú. Llegaste a esta conclusión bastante temprano en tu enfrentamiento y has hecho las paces con ella. Ahora, es solo una cuestión de retenerlo el tiempo suficiente para que tus tropas se retiren y vivan otro día, lo cual estás bastante seguro de que finalmente ha terminado. Con un golpe final, el vampiro se prepara para acabar contigo. Estás en paz porque siempre supiste que así sería como terminaría tu vida." #NT!
- POD_inquihunt.19.desc.shifter: "Así es como termina. El demonio, a pesar de ser atacado durante el día, es mucho más fuerte, más rápido y más duro que tú. Llegaste a esta conclusión bastante temprano en tu confrontación y has hecho las paces con ella.\nAhora, es simplemente una cuestión de retenerlo el tiempo suficiente para que tus tropas retrocedan y vivan un día más, lo cual estás bastante seguro de que finalmente se hizo. . Con un golpe final, el vampiro se prepara para acabar contigo. Mejor suerte en la próxima vida." #NT!
- POD_inquihunt.19.option.a: "La luz nunca se apagará del todo" #NT!
+ POD_inquihunt_interaction: "Encuentra guarida"
+ POD_inquihunt_interaction_desc: "Intentarás averiguar la ubicación exacta de este demonio. Luego comenzará la cacería. Obviamente, esto conlleva serios riesgos..."
+ I_CAN_ONLY_PLOT_ONE_INQUIHUNT_AT_A_TIME_TRIGGER: "Sólo se puede planificar una cacería a la vez"
+ scheme_interaction_tt_inquihunt_approved: "Intentarás averiguar la ubicación exacta de este demonio. Luego comenzará la cacería. Obviamente, esto conlleva serios riesgos..."
+ inquihunt: "Conjura de búsqueda de guarida"
+ inquihunt_action: "Encuentra guarida"
+ inquihunt_interaction: "Encuentra la guarida #weak (Conjura)#!"
+ inquihunt_desc: "Destruiré a [SCHEME.GetTarget.GetShortUINameNoTooltip] y purgaré su inmunda mancha de esta tierra."
+ inquihunt_desc_general: "Intenta localizar al demonio antes de lanzar un asalto."
+ INQUIHUNT_SUCCESS_DESC: "Comenzarás el ataque final en [TARGET_CHARACTER.GetShortUIName]"
+ INQUIHUNT_DISCOVERY_DESC: "@warning_icon! Estás expuesto a la [crime|E] de la cacería de brujas"
+ inquihunt_my_intrigue: "Tu Intriga: $VALUE|=+0$"
+ inquihunt_my_rival: "Tu víctima: $VALUE|=+0$"
+ POD_inquihunt_effect_message: "Si tienes el estilo de vida de Fe Verdadera, obtendrás algo de experiencia en el estilo de vida de fe dependiendo de la edad del vampiro asesinado."
+ POD_inquihunt.667.t: "Perdí el rastro"
+ POD_inquihunt.667.desc: "Tu presa ha logrado escapar de tus persistentes intentos por localizarla. Probablemente con la ayuda de otros agentes del Diablo, ha logrado salir del agujero del que salió y esconderse de ti. Pero Dios es paciente, y tú también. No podrán evitar la hoguera para siempre."
+ POD_inquihunt.667.option.a: "Parece que me esperaban"
+ POD_inquihunt.1.t: "En la búsqueda"
+ POD_inquihunt.1.desc: "Finalmente has encontrado al demonio en su guarida. No puede haber errores, ya que la pobre gente de los alrededores claramente ha perdido el amor de [ROOT.Char.GetFaith.HighGodName]. Son cáscaras paranoicas y sin alma que tienen miedo de salir por la noche e incluso la Iglesia se encuentra desolada.\nTú y tu pequeño séquito son claramente la única esperanza de este lugar. Mientras montas tu campamento, es hora de reflexionar sobre tu próximo movimiento. El Señor ciertamente te ha guiado a esta guarida del mal, pero cómo destruirla queda a tu criterio..."
+ POD_inquihunt.1.desc.shifter: "Finalmente has encontrado al demonio en su guarida. No puede haber errores, ya que los simios de los alrededores son paranoicos, cáscaras contaminadas por dragones que temen salir por la noche. Mientras exploras el área, es hora de pensar en tu próximo movimiento. Has encontrado la guarida de la corrupción, pero la forma de destruirla depende de tu apreciación..."
+ POD_inquihunt.1.option.a: "La gente corriente aún no se ha perdido en la oscuridad. Prediquemos."
+ POD_inquihunt.1.option.a.shifter: "Con un poco de persuasión, es posible inducir a los simios a enfurecerse contra la sanguijuela."
+ POD_inquihunt.1.option.a.generic: "¡Debo convencerlos!"
+ POD_inquihunt.1.option.aa.effect.success.desc: "Un éxito crítico garantizará una victoria rápida para su causa."
+ POD_inquihunt.1.option.ab.effect.success.desc: "Un empate... el demonio seguirá causando problemas."
+ POD_inquihunt.1.option.ac.effect.success.desc: "No cometas errores, o el enemigo seguramente acabará contigo rápidamente."
+ POD_inquihunt.1.option.f: "Tengo un mal presentimiento sobre esto"
+ POD_inquihunt.1.option.f.custom: "Este no es el lugar ni el momento, volverás en otra ocasión"
+ POD_inquihunt.1.option.b: "¡Soldados de [ROOT.Char.GetFaith.HighGodName]! ¡Hoy asaltaremos este castillo!"
+ POD_inquihunt.1.option.b.shifter: "¡Elegidos de Gea! ¡Hoy asaltaremos este castillo!"
+ POD_inquihunt.1.option.c: "Destruyamos sus activos y aislemos primero al demonio."
+ POD_inquihunt.1.option.d: "Temen la luz de [ROOT.Char.GetFaith.HighGodName]. Actuemos durante el día."
+ POD_inquihunt.1.option.d.shifter: "Helios nos ayudará. Actuemos durante el día."
+ POD_inquihunt.1.option.e: "Puede que tenga algo sobre este demonio en particular en mis libros..."
+ POD_inquihunt.1.option.g: "¡Te mataré yo mismo, demonio!"
+ POD_inquihunt.2.t: "Una hoguera satisfactoria"
+ POD_inquihunt.2.desc: "Fue más fácil de lo que pensabas traer de vuelta a estas pobres almas a la luz de [ROOT.Char.GetFaith.HighGodNamePossessive]. Estaban ansiosos por escuchar y aprender, después de tantos años perdidos en la oscuridad.\nUna vez hecho eso, fue aún más fácil aliarse con ellos y usar todo lo que sabían sobre el demonio que acechaba por la noche. Y así, con todo el pueblo a cuestas, asaltaste su guarida, conteniéndola fácilmente gracias a la gran cantidad de enemigos y a la ayuda de [ROOT.Char.GetFaith.HighGodNamePossessive], que les había dado luz.\nY con todo eso dicho y hecho, ahora disfrutas viendo al demonio arder en la hoguera mientras todo el pueblo aplaude a [ROOT.Char.GetFaith.HighGodNamePossessive] y a tu nombre."
+ POD_inquihunt.2.desc.shifter: "Fue más fácil de lo que pensabas reunir una turba de humanos. Estaban ansiosos por derrocar a los engendros de dragones que se estaban dando un festín con sus parientes.\nUna vez hecho eso, fue aún más fácil aliarse con ellos y usar todo lo que sabían sobre el demonio que acechaba por la noche. Y así, con todo el pueblo a cuestas asaltaste su guarida, conteniéndola fácilmente gracias a la gran cantidad de enemigos.\nY con todo eso dicho y hecho, ¡ahora disfrutas viendo al demonio arder en la hoguera con todo el pueblo aplaudiendo!"
+ POD_inquihunt.2.option.a: "Una vista así me calienta el corazón."
+ POD_inquihunt.3.t: "Hijos contra padres"
+ POD_inquihunt.3.t.shifter: "La turba rebelde"
+ POD_inquihunt.3.desc: "Parece que el demonio tiene sus garras muy adentro de esta aldea. Tu prédica ha reunido a un gran número de seguidores, pero también a un número menor de rebeldes, que ahora se oponen a tu santa procesión en la entrada de la guarida del demonio. Está claro que el diablo los ha corrompido, pero no tienes tiempo para salvar sus almas, ya que el vampiro seguramente escapará en cuanto se entere de la conmoción que hay afuera. Sin embargo, hay otra opción, más rápida, sin duda, pero también moralmente dudosa..."
+ POD_inquihunt.3.desc.shifter: "Parece que el demonio tiene sus garras bien clavadas en esta aldea. Tu agitación popular ha reunido a un gran número de seguidores, pero también a un número menor de leales a la sanguijuela, que ahora se opone a tu turba en la entrada de la guarida del cadáver. Está claro que el Wyrm los ha corrompido, pero no debes demorarte, ya que el vampiro seguramente escapará una vez que se entere de la conmoción que hay afuera. Sin embargo, hay otra opción, más rápida, sin duda, pero también moralmente dudosa..."
+ POD_inquihunt.3.option.a: "Mátalos a todos y deja que Dios los resuelva."
+ POD_inquihunt.3.option.b: "Ningún inocente será herido, ni siquiera los inocentes descarriados."
+ POD_inquihunt.4.t: "Ironía ardiente"
+ POD_inquihunt.4.desc: "Subestimaste gravemente la influencia que este demonio tenía sobre esta aldea. Tu prédica fue recibida con escepticismo, o incluso con ira absoluta. Era demasiado tarde cuando descubriste la verdad: todos habían estado bajo el yugo del vampiro todo el tiempo. Tu séquito fue asesinado mientras dormía, y a ti te llevaron sin contemplaciones a la hoguera que querías para el demonio. Mientras las llamas comienzan a envolverte, recuerdas que Dios es misericordia. Y que Él tenga misericordia de tu fracaso y de las almas de estos inocentes descarriados."
+ POD_inquihunt.4.desc.generic: "Subestimaste gravemente la influencia que este demonio tenía sobre esta aldea. Tu retórica fue recibida con escepticismo, o incluso con ira absoluta. Fue demasiado tarde cuando descubriste la verdad: todos estuvieron bajo el yugo del vampiro todo el tiempo. Tu séquito fue asesinado mientras dormía, y a ti te llevaron sin contemplaciones a la hoguera que querías para el demonio. Mientras las llamas comienzan a envolverte, recuerdas que, en verdad, siempre estuvo destinado a terminar así. Hiciste lo que pudiste."
+ POD_inquihunt.4.desc.shifter: "Subestimaste gravemente la influencia que este demonio tenía sobre esta aldea. Tu agitación fue recibida con escepticismo, o incluso con ira absoluta. Fue demasiado tarde cuando descubriste la verdad: todos estuvieron bajo el yugo del vampiro todo el tiempo. Tus partidarios fueron asesinados mientras dormían, y a ti te llevaron sin contemplaciones a la hoguera que querías para el demonio. Mientras las llamas comienzan a envolverte, esperas ser un mejor guerrero para Gea en la próxima vida."
+ POD_inquihunt.4.option.a: "Termina como empezó, en fuego."
+ POD_inquihunt.5.t: "El plan perfecto"
+ POD_inquihunt.5.desc: "El orgullo es un pecado, pero debes admitirlo: fue un asalto impecable y ejecutado con maestría por los valientes Caballeros de Dios bajo tu mando. A pesar de los numerosos esclavos que defendían el área y de las trampas aún más numerosas, lograste asaltar el lugar con pocas pérdidas al final. Obviamente, atacaste a plena luz del día y debes darle crédito a la luz de Dios por haber mantenido al demonio dormido durante la batalla. Después de tomar el castillo, fue un momento anticlimático, pero igualmente satisfactorio, cuando decapitaste al vampiro dormido. La victoria es tuya una vez más."
+ POD_inquihunt.5.desc.generic: "El exceso de confianza es un asesino lento e insidioso, pero debes admitirlo: fue un asalto impecable y ejecutado con destreza por los valientes cazadores bajo tu mando. A pesar de los numerosos esclavos que defendían el área y de las trampas aún más numerosas, lograste asaltar el lugar con pocas pérdidas al final. Obviamente, atacaste a plena luz del día y debes reconocerle el mérito a esa estratagema por haber mantenido al demonio dormido durante la batalla. Después de tomar el castillo, fue un momento anticlimático, pero igualmente satisfactorio, cuando decapitaste al vampiro dormido. La victoria es tuya una vez más."
+ POD_inquihunt.5.desc.shifter: "Fue un asalto impecable, ejecutado con maestría por las fuerzas bajo tu mando. A pesar de los numerosos esclavos que defendían la zona, y de las trampas aún más numerosas, lograste asaltar el lugar con pocas pérdidas al final. Obviamente, atacaste a plena luz del día, y debes darle crédito a la luz de Helios por haber mantenido al demonio dormido durante la batalla. Después de tomar el castillo, fue un momento anticlimático, pero igualmente satisfactorio, cuando decapitaste al vampiro dormido. La victoria es tuya una vez más."
+ POD_inquihunt.5.option.a: "Me encanta cuando un plan viene junto."
+ POD_inquihunt.6.t: "¿Victoria pírrica?"
+ POD_inquihunt.6.desc: "Mientras la batalla continúa en el interior del castillo, sabes que la victoria está a tu alcance. Pero, ¿vale la pena el costo? Sus defensores estaban preparados y numerosas trampas ya se han cobrado las vidas de buenos soldados de Dios. ¿Será suficiente la muerte de un demonio como venganza por estas pobres almas? No es demasiado tarde y aún puedes cancelar el ataque por hoy, pero el vampiro obviamente usará la cobertura de la noche para escapar. O sigues adelante y siempre llevas la carga de los buenos hombres perdidos por una causa digna."
+ POD_inquihunt.6.desc.generic: "Mientras la batalla continúa en el interior del castillo, sabes que la victoria está a tu alcance. Pero, ¿vale la pena el costo? Sus defensores estaban preparados y numerosas trampas ya se han cobrado las vidas de hombres y mujeres buenos bajo tu mando. ¿Será suficiente la muerte de un demonio como venganza por estas pobres almas? No es demasiado tarde y aún puedes cancelar el ataque por hoy, pero el vampiro obviamente usará la cobertura de la noche para escapar. O sigues adelante y siempre llevas la carga de los compañeros perdidos por una causa digna."
+ POD_inquihunt.6.desc.shifter: "Mientras la batalla continúa en el interior del castillo, sabes que la victoria está a tu alcance. Pero, ¿vale la pena el costo? Sus defensores estaban preparados y numerosas trampas ya se han cobrado las vidas de guerreros de Gea. ¿Será suficiente la muerte de un demonio como venganza para esta raza? No es demasiado tarde y aún puedes cancelar el ataque por hoy, pero el vampiro obviamente usará la cobertura de la noche para escapar. O sigues adelante y siempre llevas la carga de los buenos seguidores perdidos por una causa digna."
+ POD_inquihunt.6.option.a: "¡La victoria vale el sacrificio!"
+ POD_inquihunt.6.option.b: "Ese camino fácil conduce a la condenación."
+ POD_inquihunt.7.t: "La última batalla"
+ POD_inquihunt.7.desc: "Todo ha ido terriblemente mal. El castillo estaba preparado y ni siquiera podías atravesar los muros. Peor aún, llegaron refuerzos de un pueblo cercano, aparentemente también esclavizado por el Señor Oscuro del castillo. El demonio está muy cerca, pero a la vez muy lejos. No hay escapatoria para ti y tus valientes caballeros y parece que Dios te llamará a su reino hoy. Esperas ser digno de su misericordia, pero antes de eso... acabarás con tantos demonios como puedas."
+ POD_inquihunt.7.desc.generic: "Todo ha ido terriblemente mal. El castillo estaba preparado y ni siquiera podías atravesar los muros. Peor aún, llegaron refuerzos de un pueblo cercano, aparentemente también esclavizado por el Señor Oscuro del castillo. El demonio está muy cerca, pero a la vez muy lejos. No hay escapatoria para ti y tus valientes cazadores y tu perdición ahora es inevitable. Pero antes de eso... deberás acabar con tantos demonios como puedas."
+ POD_inquihunt.7.desc.shifter: "Todo ha ido terriblemente mal. El castillo estaba preparado y ni siquiera podías atravesar los muros. Peor aún, llegaron refuerzos de un pueblo cercano, aparentemente también esclavizado por el Señor Oscuro del castillo. El demonio está muy cerca, pero a la vez muy lejos. No te queda escapatoria y tus valientes guerreros perecerán. Acabarás con tantos de estos engendros de wyrm como puedas."
+ POD_inquihunt.7.option.a: "Es un buen día para morir."
+ POD_inquihunt.8.t: "Activos en llamas"
+ POD_inquihunt.8.desc: "Tu ataque fue metódico. Apuntaste a cada gremio, milicia o grupo de sectarios en el que el demonio tenía sus garras. Usaste dos armas poderosas: el atractivo del oro para los codiciosos y el miedo a la Iglesia para los corruptos. Y así fue como tu campaña aisló al vampiro, alejó a sus aliados y dispersó a sus esclavos. Ahora ves el último refugio del demonio arder ante tus ojos, los gritos de la criatura en su interior son como música para tus oídos."
+ POD_inquihunt.8.desc.generic: "Tu ataque fue metódico. Apuntaste a cada gremio, milicia o grupo de cultistas en el que el demonio tenía sus garras. Usaste dos armas poderosas: el atractivo del oro para los codiciosos y el miedo a tu ira para los corruptos. Y así fue como tu campaña aisló al vampiro, alejó a sus aliados y dispersó a sus esclavos. Ahora ves el último refugio del demonio arder ante tus ojos, los gritos de la criatura en su interior son como música para tus oídos."
+ POD_inquihunt.8.desc.shifter: "Tu ataque fue metódico. Apuntaste a cada gremio, milicia o grupo de sectarios en el que el demonio tenía sus garras. Usaste dos armas poderosas: el atractivo del oro para los codiciosos y el miedo a las represalias para los corruptos. Y así fue como tu campaña aisló al vampiro, alejó a sus aliados y dispersó a sus esclavos. Ahora ves el último refugio del demonio arder ante tus ojos, los gritos de la criatura en su interior son como música para tus oídos."
+ POD_inquihunt.8.option.a: "Estas despedido"
+ POD_inquihunt.9.t: "Una vida de mercenario para mí"
+ POD_inquihunt.9.desc: "Esta malvada criatura tenía más influencia en la región de lo que pensabas al principio. Sin embargo, te has mostrado estoico y ahora estás bastante seguro de que la mayoría de sus activos han sido destruidos por tus acciones. Pero parece que el vampiro no se rendirá fácilmente, ya que una poderosa banda de mercenarios está marchando hacia tu posición, aparentemente contratados por tu enemigo para eliminarte. Tienes una opción: a los mercenarios les encanta el oro y puedes ponerlos en contra de su empleador antes de que puedan huir. O puedes reducir tus pérdidas y aceptar un empate por esta vez."
+ POD_inquihunt.9.option.a: "Ofrezco oro y salvación a hombres piadosos como tú."
+ POD_inquihunt.9.option.a.shifter: "Algunos hombres lucharán contra monstruos, siempre y cuando el precio sea justo."
+ POD_inquihunt.9.option.b: "Atraparé a este diablo la próxima vez."
+ POD_inquihunt.10.t: "Cambio de Dirección"
+ POD_inquihunt.10.desc: "Has calculado mal. Tus acciones han sido contrarrestadas a cada paso. Este vampiro tenía más oro, más agentes y más influencia sobre esta comunidad de lo que jamás podrías haber anticipado. Y ahora, todo se derrumba, literalmente, después de que tu último error revelara tu posición al demonio. Un grupo de "mercenarios" endurecidos apareció rápidamente y, con solo tus fieles caballeros de Dios para protegerte, no pasó mucho tiempo antes de que te asediaran en tu propia base. Mientras los últimos sonidos de la batalla se apagan afuera, ahora escuchas el sonido de las antorchas que se lanzan por la ventana. Afortunadamente, tienes tiempo para un último Padrenuestro."
+ POD_inquihunt.10.desc.generic: "Calculaste mal. Tus acciones fueron contrarrestadas a cada paso. Este vampiro tenía más oro, más agentes y más influencia sobre esta comunidad de lo que jamás podrías haber anticipado.\nY ahora, todo se derrumba, literalmente, después de que tu último error revelara tu posición al demonio. Un grupo de "mercenarios" endurecidos apareció rápidamente y, con solo tus leales cazadores para protegerte, no pasó mucho tiempo antes de que te asediaran en tu propia base. Mientras los últimos sonidos de la batalla se apagan afuera, ahora escuchas el sonido de las antorchas que se arrojan por la ventana. El final está cerca."
+ POD_inquihunt.10.desc.shifter: "Calculaste mal. Tus acciones fueron contrarrestadas a cada paso. Este vampiro tenía más oro, más agentes y más influencia sobre esta comunidad de lo que jamás podrías haber anticipado. Y ahora, todo se derrumba, literalmente, después de que tu último error revelara tu posición al demonio. Un grupo de "mercenarios" endurecidos apareció rápidamente y, con solo tus fieles parientes para protegerte, no pasó mucho tiempo antes de que te asediaran en tu propio campamento. Mientras los últimos sonidos de la batalla se apagan afuera, ahora escuchas el sonido de las antorchas que se arrojan al campamento. Parece que este es el final."
+ POD_inquihunt.10.option.a: "Pater noster qui es in caelis..."
+ POD_inquihunt.10.option.a.shifter: "Vorus se ríe de mi derrota."
+ POD_inquihunt.10.option.a.generic: "El final del camino."
+ POD_inquihunt.11.t: "El enemigo de mi enemigo..."
+ POD_inquihunt.11.desc: "Una cosa que sabes sobre los vampiros es que, en su mayoría, son hostiles entre sí. Y te has convertido en un experto en usar este hecho a tu favor. Dejaste algunas pistas sobre esta guarida en particular a un nido de demonios vecino conocido, te sentaste y observaste cómo tu objetivo era asaltado durante la noche por unos matones contratados por su rival. Ganaron, pero se debilitaron lo suficiente como para que tus caballeros lo sometieran fácilmente. Rápidamente le encontraste un nuevo hogar en tu cámara de tortura personal. Luego pasaste unos días muy esclarecedores con él hasta que lo dejaste desangrarse hasta la muerte. Se hizo la voluntad de Dios."
+ POD_inquihunt.11.desc.shifter: "Una cosa que sabes sobre los vampiros es que, en su mayoría, son hostiles entre sí. Y te has convertido en un experto en usar este hecho a tu favor. Dejaste algunas pistas sobre esta guarida en particular a un nido de demonios vecino conocido, te sentaste y observaste cómo tu objetivo era asaltado durante la noche por unos matones contratados por su rival. Ganaron, pero se debilitaron lo suficiente para que tus guerreros pudieran dominarlo fácilmente. Solo tenías que lanzarte para matarlo."
+ POD_inquihunt.11.option.a: "Los gritos que hacían en presencia de una Reliquia Sagrada eran bastante interesantes..."
+ POD_inquihunt.11.option.a.generic: "Casi demasiado fácil."
+ POD_inquihunt.11.option.a.shifter: "Hay mucha gloria en destruir las sanguijuelas."
+ POD_inquihunt.12.t: "Cruz y daga"
+ POD_inquihunt.12.t.shifter: "Depredador y presa"
+ POD_inquihunt.12.desc: "Estás impresionado por la astucia de este demonio. La mayoría de tus objetivos anteriores cayeron con bastante facilidad una vez que tejiste tu red de intrigas a su alrededor, pero este... este contraatacó. Con fuerza. Tu propia red está siendo atacada, con rumores maliciosos que te apuntan en particular. Sabes que puedes con esta guerra de sombras, pero te costará mucho reparar el daño causado por tu enemigo. Sin embargo, presionar un poco más te permitiría la alegría de llevar a este vampiro a tu mejor cámara de tortura... Decisiones, decisiones."
+ POD_inquihunt.12.desc.shifter: "Estás impresionado por la astucia de este demonio. La mayoría de tus objetivos anteriores cayeron con bastante facilidad una vez que tejiste tu red de intrigas a su alrededor, pero este... este contraatacó. Con fuerza. Tu propia red está siendo atacada, con rumores maliciosos que te apuntan en particular. Sabes que puedes con esta guerra de sombras, pero te costará mucho reparar el daño causado por tu enemigo. Presionar un poco más te permitiría vencer a este vampiro. Decisiones, decisiones."
+ POD_inquihunt.12.option.a: "La reputación no lo es todo"
+ POD_inquihunt.12.option.b: "Este diablo no vale la pena el esfuerzo."
+ POD_inquihunt.13.t: "Encontrar tu Mejor"
+ POD_inquihunt.13.desc: "No tuviste ninguna oportunidad. Cada una de tus acciones fue anticipada, cada movimiento que hiciste fue fácilmente contrarrestado. No eras más que un niño que jugaba una partida de ajedrez sin conocer las reglas. Este vampiro probablemente inventó el juego.\nIncluso cuando comprendiste el peligro en el que te encontrabas, ya era demasiado tarde. Y por eso, ahora estás siendo torturado todas las noches por aquel a quien tontamente querías destruir. E incluso en este campo en particular, ellos saben mucho más que tú..."
+ POD_inquihunt.13.option.a: "La noche es oscura y llena de terrores."
+ POD_inquihunt.14.t: "Conocer a tu enemigo"
+ POD_inquihunt.14.desc: "Te alegraste mucho de ver que tenías algunas menciones antiguas del demonio en particular que buscaste en tus libros. Te alegraste aún más de saber de su peculiar apego a una familia mortal aún viva. ¡Como si estas criaturas aún pudieran sentir emociones mortales! Bueno, no importa, esta era una información bastante fácil de explotar. Al usar a estos mortales como cebo, lograste atraer al vampiro a una trampa cuidadosamente planeada en terreno sagrado. Este demonio en particular se convirtió instantáneamente en cenizas al ingresar al área, una observación que rápidamente consignaste en tu diario."
+ POD_inquihunt.14.option.a: "Esto podría ser útil para el próximo."
+ POD_inquihunt.15.t: "Un libro demasiado lejos"
+ POD_inquihunt.15.desc: "Este demonio es escurridizo. Ya ha evitado dos de tus trampas cuidadosamente planeadas y estás empezando a perder algo de terreno, ya que varios de tus agentes han desaparecido. Sin embargo, queda una posibilidad, una que has decidido no utilizar hasta ahora dada su naturaleza... "mística". La Santa Iglesia ciertamente no aprobaría tal elección, pero ¿quizás la muerte de este vampiro en particular valga más que tu reputación?"
+ POD_inquihunt.15.desc.generic: "Este demonio es escurridizo. Ya ha evitado dos de tus trampas cuidadosamente planeadas y estás empezando a perder algo de terreno, ya que varios de tus agentes han desaparecido. Sin embargo, queda una posibilidad, que has decidido no utilizar hasta ahora dada su naturaleza... "mística". Un contacto tuyo dudoso en la zona se ha ofrecido a ayudar, pero confiar en esta fuente probablemente contaminada podría dañar tu reputación."
+ POD_inquihunt.15.desc.shifter: "Este demonio es escurridizo. Ya ha evitado dos de tus trampas cuidadosamente planeadas y estás empezando a perder algo de terreno, ya que varios de tus agentes han desaparecido. Sin embargo, queda una posibilidad, que has decidido no utilizar hasta ahora dada su naturaleza... "mística". Un espíritu peligroso se ha puesto en contacto conmigo para ofrecerme "ayuda"."
+ POD_inquihunt.15.option.a: "[ROOT.Char.GetFaith.HighGodName] es indulgente después de todo..."
+ POD_inquihunt.15.option.a.desc: "Cualquiera que sea el costo lo pagaré."
+ POD_inquihunt.15.option.b: "Es una línea que no cruzaré."
+ POD_inquihunt.16.t: "Si miras al abismo..."
+ POD_inquihunt.16.desc: "No sabes muy bien cuándo empezó todo. Encontraste una referencia al vampiro en un libro antiguo, luego en otro... y empezaste a leer. Y más aún cuando te trajeron libros nuevos unos agentes que no recuerdas haber contratado. Has estado perdido durante bastante tiempo en tu trabajo y has cavado muy hondo, probablemente demasiado hondo. Al menos, eso es lo que piensa la Iglesia, ya que uno de tus caballeros te denunció por tus lecturas "heréticas". Y así, aquí estás, una vez más en la hoguera, pero esta vez no en público..."
+ POD_inquihunt.16.desc.generic: "No sabes muy bien cuándo empezó todo. Encontraste una referencia al vampiro en un libro viejo, luego en otro... y empezaste a leer. Y más aún cuando te trajeron libros nuevos unos agentes que no recuerdas haber contratado. Has estado perdido durante bastante tiempo en tu trabajo y has cavado hondo, probablemente demasiado hondo. Al menos, eso es lo que piensa el clero local, ya que uno de tus compañeros te denunció por tus lecturas "heréticas". Y así, aquí estás, una vez más en la hoguera, pero esta vez no en público..."
+ POD_inquihunt.16.desc.shifter: "No sabes muy bien cuándo empezó. Encontraste una referencia al vampiro en un libro viejo, luego en otra... y empezaste a leer. Y más aún cuando te trajeron libros nuevos unos agentes que no recuerdas haber contratado.\nHas estado perdido durante bastante tiempo en tu trabajo y has cavado profundo, probablemente demasiado profundo. Entonces el espíritu vino a ti con una oferta peligrosa. Demasiado peligrosa, que te llevó a una trampa y, en última instancia, a tu muerte."
+ POD_inquihunt.16.option.a: "¡Estuve tan cerca de la verdad! ¡Tan cerca!"
+ POD_inquihunt.17.t: "Furia santa"
+ POD_inquihunt.17.t.shifter: "La furia de Gaia"
+ POD_inquihunt.17.desc: "No esperaban un ataque frontal. Eso es lo que concluyes después de haberte abierto paso a través de un número significativo de esclavos desprevenidos del vampiro antes de encontrar su lugar de descanso. Aunque has atacado durante el día, el alboroto de la batalla ha despertado al demonio que te estaba esperando. Debes admitir que dieron un buen espectáculo, a pesar de lo lentos que son durante el día, pero en general, les cortaste la cabeza con bastante facilidad antes de que pudieran orientarse realmente en esta batalla. Un chupasangre menos en la hermosa Tierra de Dios."
+ POD_inquihunt.17.desc.generic: "No esperaban un asalto frontal. Esto es lo que concluyes después de haberte abierto camino a través de un número significativo de esclavos del vampiro desprevenidos antes de encontrar su lugar de descanso. Aunque has atacado durante el día, el alboroto de la batalla ha despertado al demonio que te estaba esperando.\nDebes admitir que hicieron un buen espectáculo, aunque son lentos durante el día, pero en general, aún así puedes fácilmente. les cortaron la cabeza antes de que realmente pudieran orientarse en esta batalla. Un golpe más añadido a tu ballesta."
+ POD_inquihunt.17.desc.shifter: "No esperaban un ataque frontal. Eso es lo que concluyes después de haberte abierto paso a través de un número significativo de esclavos desprevenidos del vampiro antes de encontrar su lugar de descanso. Aunque has atacado durante el día, el alboroto de la batalla ha despertado al demonio que te estaba esperando. Debes admitir que dieron un buen espectáculo, a pesar de lo lentos que son durante el día, pero en general, les cortaste la cabeza con bastante facilidad antes de que pudieran orientarse realmente en esta batalla. Un sirviente menos del Wyrm que se aprovecha de Gea."
+ POD_inquihunt.17.option.a: "Entonces ¿dónde está el siguiente?"
+ POD_inquihunt.18.t: "Un oponente digno"
+ POD_inquihunt.18.desc: "Esta es difícil. A pesar de haber eliminado fácilmente a la mayoría de sus guardias y haber atacado durante el día, este demonio sigue siendo un enemigo formidable. Estás seguro de que ganarás, gracias a la luz del día, pero es un proceso lento y arduo. Peor aún, esta larga batalla ha dado tiempo a otros esclavos del vampiro para intervenir. Probablemente puedas vencerlos también, pero no saldrás ileso de una pelea así..."
+ POD_inquihunt.18.option.a: "Ganaré, no importa el costo."
+ POD_inquihunt.18.option.b: "Debo preservarme para futuras batallas."
+ POD_inquihunt.19.t: "Superado"
+ POD_inquihunt.19.desc: "Así es como termina. El demonio, a pesar de ser atacado durante el día, es mucho más fuerte, rápido y resistente que tú. Llegaste a esta conclusión bastante temprano en tu enfrentamiento y has hecho las paces con él. Ahora, es solo una cuestión de retenerlo el tiempo suficiente para que tus tropas se retiren y vivan otro día, lo cual estás bastante seguro de que finalmente ha terminado. Con un golpe final, el vampiro se prepara para acabar contigo. Pero estás más en paz de lo que ellos estarán nunca, ya que Dios te está esperando al otro lado."
+ POD_inquihunt.19.desc.generic: "Así es como termina. El demonio, a pesar de ser atacado durante el día, es mucho más fuerte, rápido y resistente que tú. Llegaste a esta conclusión bastante temprano en tu enfrentamiento y has hecho las paces con ella. Ahora, es solo una cuestión de retenerlo el tiempo suficiente para que tus tropas se retiren y vivan otro día, lo cual estás bastante seguro de que finalmente ha terminado. Con un golpe final, el vampiro se prepara para acabar contigo. Estás en paz porque siempre supiste que así sería como terminaría tu vida."
+ POD_inquihunt.19.desc.shifter: "Así es como termina. El demonio, a pesar de ser atacado durante el día, es mucho más fuerte, más rápido y más duro que tú. Llegaste a esta conclusión bastante temprano en tu confrontación y has hecho las paces con ella.\nAhora, es simplemente una cuestión de retenerlo el tiempo suficiente para que tus tropas retrocedan y vivan un día más, lo cual estás bastante seguro de que finalmente se hizo. . Con un golpe final, el vampiro se prepara para acabar contigo. Mejor suerte en la próxima vida."
+ POD_inquihunt.19.option.a: "La luz nunca se apagará del todo"
   
- POD_inquihunt.50.t: "Caza de lobos" #NT!
- POD_inquihunt.50.desc: "Cazar hombres lobo es una tarea muy arriesgada incluso para los cazadores más experimentados. Estas criaturas son enormes masas de músculos, trabajan en manadas y rara vez abandonan sus túmulos bien fortificados, donde los intrusos son asesinados al verlos. Sus familias unidas, los "parientes", también los protegen de la necesidad de interactuar con el mundo exterior. En comparación, cazar vampiros parece fácil. El enfoque más obvio sería un asalto frontal utilizando números abrumadores y armas de plata, ya que estas criaturas son débiles a este material. Sin embargo, a pesar de todas las ventajas que puedas reunir, es probable que no se derrumben fácilmente. ¿Estás seguro de que quieres intentarlo?" #NT!
- POD_inquihunt.50.option.a: "Ya no hay vuelta atrás." #NT!
- POD_inquihunt.50.option.b: "¡Equipa a todos con plata!" #NT!
- POD_inquihunt.50.option.c: "Lancemos un ataque cauteloso." #NT!
- POD_inquihunt.50.option.z: "No me gustan mis probabilidades." #NT!
- hunt_give_up_tt: "Te das la vuelta y abandonas esta cacería." #NT!
+ POD_inquihunt.50.t: "Caza de lobos"
+ POD_inquihunt.50.desc: "Cazar hombres lobo es una tarea muy arriesgada incluso para los cazadores más experimentados. Estas criaturas son enormes masas de músculos, trabajan en manadas y rara vez abandonan sus túmulos bien fortificados, donde los intrusos son asesinados al verlos. Sus familias unidas, los "parientes", también los protegen de la necesidad de interactuar con el mundo exterior. En comparación, cazar vampiros parece fácil. El enfoque más obvio sería un asalto frontal utilizando números abrumadores y armas de plata, ya que estas criaturas son débiles a este material. Sin embargo, a pesar de todas las ventajas que puedas reunir, es probable que no se derrumben fácilmente. ¿Estás seguro de que quieres intentarlo?"
+ POD_inquihunt.50.option.a: "Ya no hay vuelta atrás."
+ POD_inquihunt.50.option.b: "¡Equipa a todos con plata!"
+ POD_inquihunt.50.option.c: "Lancemos un ataque cauteloso."
+ POD_inquihunt.50.option.z: "No me gustan mis probabilidades."
+ hunt_give_up_tt: "Te das la vuelta y abandonas esta cacería."
   
- POD_inquihunt.51.t: "Un buen lío sangriento" #NT!
- POD_inquihunt.51.desc: "Fue una batalla tan caótica como pensabas que sería. Esos monstruos dieron tanto (si no mucho más) como necesitaban para derrotarlos. Afortunadamente, tu superioridad numérica, equipamiento y liderazgo fueron suficientes para ganar el día.\nMientras tus compañeros entierran respetuosamente a tus caídos y queman sin contemplaciones esta quinta morada de cambiaformas, te tomas un momento para lavar la sangre y las vísceras de la batalla en un río cercano.\nLos incendios comienzan a extenderse y, hoy, la victoria olerá a cenizas en el viento y árboles en llamas." #NT!
- POD_inquihunt.51.option.a: "¿Escuché llorar al bosque?" #NT!
+ POD_inquihunt.51.t: "Un buen lío sangriento"
+ POD_inquihunt.51.desc: "Fue una batalla tan caótica como pensabas que sería. Esos monstruos dieron tanto (si no mucho más) como necesitaban para derrotarlos. Afortunadamente, tu superioridad numérica, equipamiento y liderazgo fueron suficientes para ganar el día.\nMientras tus compañeros entierran respetuosamente a tus caídos y queman sin contemplaciones esta quinta morada de cambiaformas, te tomas un momento para lavar la sangre y las vísceras de la batalla en un río cercano.\nLos incendios comienzan a extenderse y, hoy, la victoria olerá a cenizas en el viento y árboles en llamas."
+ POD_inquihunt.51.option.a: "¿Escuché llorar al bosque?"
   
- POD_inquihunt.52.t: "Un desastre sangriento" #NT!
- POD_inquihunt.52.desc: "¿Se puede matar a estos monstruos?\nA pesar de que todo tu conocimiento sobre ellos demuestra que es posible, esta batalla parece intentar demostrar que estás equivocado. Magullados, cortados, llenos de flechas por todo el cuerpo de sus gigantes... todavía atraviesan tus fuerzas con una facilidad aterradora. Su frenesí inducido por la ira sólo parece hacerlos más fuertes y, aunque tienes demasiada experiencia para tener miedo, puedes ver la escritura en la pared.\nAl ordenar una retirada completa, defiendes tu retaguardia el tiempo suficiente para huir de sus territorios tribales y eres aliviado al ver que deciden no perseguirlos. Esto no es una victoria pero vives para luchar otro día. Considerando la oposición, al menos eso es algo." #NT!
- POD_inquihunt.52.option.a: "Estaré detrás." #NT!
+ POD_inquihunt.52.t: "Un desastre sangriento"
+ POD_inquihunt.52.desc: "¿Se puede matar a estos monstruos?\nA pesar de que todo tu conocimiento sobre ellos demuestra que es posible, esta batalla parece intentar demostrar que estás equivocado. Magullados, cortados, llenos de flechas por todo el cuerpo de sus gigantes... todavía atraviesan tus fuerzas con una facilidad aterradora. Su frenesí inducido por la ira sólo parece hacerlos más fuertes y, aunque tienes demasiada experiencia para tener miedo, puedes ver la escritura en la pared.\nAl ordenar una retirada completa, defiendes tu retaguardia el tiempo suficiente para huir de sus territorios tribales y eres aliviado al ver que deciden no perseguirlos. Esto no es una victoria pero vives para luchar otro día. Considerando la oposición, al menos eso es algo."
+ POD_inquihunt.52.option.a: "Estaré detrás."
   
- POD_inquihunt.53.t: "Tu maldito desastre" #NT!
- POD_inquihunt.53.desc: "Al parecer, el equipo superior, los números y la preparación no estaban a la altura de la fuerza salvaje.\nDondequiera que mires, ves a uno de tus compañeros siendo brutalmente mutilado por las garras gigantes de estos monstruos. Tus propios ataques parecen apenas perforar su piel sobrenaturalmente fuerte e incluso las heridas más profundas solo los enojan más y, por lo tanto, se vuelven más fuertes.\nSe acabó demasiado rápido para que puedas ordenar una retirada, ya que algunos de tus hombres ya han huido por su cuenta. Si bien los cambiaformas no siempre te persiguen, rápidamente te das cuenta de que algunos de ellos, incluido tu antiguo objetivo, te han rodeado, entendiendo claramente que tú eres el líder aquí.\nParece que es hora de la batalla final. Como cazador, siempre supiste que todo terminaría así." #NT!
- POD_inquihunt.53.option.a: "Hice lo que pude." #NT!
+ POD_inquihunt.53.t: "Tu maldito desastre"
+ POD_inquihunt.53.desc: "Al parecer, el equipo superior, los números y la preparación no estaban a la altura de la fuerza salvaje.\nDondequiera que mires, ves a uno de tus compañeros siendo brutalmente mutilado por las garras gigantes de estos monstruos. Tus propios ataques parecen apenas perforar su piel sobrenaturalmente fuerte e incluso las heridas más profundas solo los enojan más y, por lo tanto, se vuelven más fuertes.\nSe acabó demasiado rápido para que puedas ordenar una retirada, ya que algunos de tus hombres ya han huido por su cuenta. Si bien los cambiaformas no siempre te persiguen, rápidamente te das cuenta de que algunos de ellos, incluido tu antiguo objetivo, te han rodeado, entendiendo claramente que tú eres el líder aquí.\nParece que es hora de la batalla final. Como cazador, siempre supiste que todo terminaría así."
+ POD_inquihunt.53.option.a: "Hice lo que pude."
   
- POD_inquihunt.80.t: "De vuelta al infierno" #NT!
- POD_inquihunt.80.desc: "Cazar demonios plantea un dilema difícil debido al hecho de que son verdaderamente inmortales. Todo lo que sabes sobre ellos apunta al hecho de que matar su forma corpórea es simplemente un revés para ellos, ya que parecen ser criaturas de esencia espiritual ante todo.\nAun así, no se pierde la esperanza, ya que hay formas de al menos asegurarse de que sean arrojados de regreso al Infierno al que pertenecen. Estás bastante seguro de que es difícil para un demonio escapar de los Infiernos, probablemente necesite la ayuda de los infernalistas para hacerlo.\nPor lo tanto, para cazar a un demonio necesitas un buen conocimiento de su debilidad específica, los medios para aislarlos de sus probablemente numerosos esclavos listos para invocarlos de regreso y una gran dosis de coraje. Tienes esto último, tiempo para trabajar en los dos primeros." #NT!
- POD_inquihunt.80.option.a: "Estoy más que listo." #NT!
- POD_inquihunt.80.option.b: "Quiero saber todo lo que hay sobre este demonio." #NT!
- hunt_demon_abyss_tt: "Este demonio perderá sus títulos y será enviado de regreso a la Prisión Abisal." #NT!
+ POD_inquihunt.80.t: "De vuelta al infierno"
+ POD_inquihunt.80.desc: "Cazar demonios plantea un dilema difícil debido al hecho de que son verdaderamente inmortales. Todo lo que sabes sobre ellos apunta al hecho de que matar su forma corpórea es simplemente un revés para ellos, ya que parecen ser criaturas de esencia espiritual ante todo.\nAun así, no se pierde la esperanza, ya que hay formas de al menos asegurarse de que sean arrojados de regreso al Infierno al que pertenecen. Estás bastante seguro de que es difícil para un demonio escapar de los Infiernos, probablemente necesite la ayuda de los infernalistas para hacerlo.\nPor lo tanto, para cazar a un demonio necesitas un buen conocimiento de su debilidad específica, los medios para aislarlos de sus probablemente numerosos esclavos listos para invocarlos de regreso y una gran dosis de coraje. Tienes esto último, tiempo para trabajar en los dos primeros."
+ POD_inquihunt.80.option.a: "Estoy más que listo."
+ POD_inquihunt.80.option.b: "Quiero saber todo lo que hay sobre este demonio."
+ hunt_demon_abyss_tt: "Este demonio perderá sus títulos y será enviado de regreso a la Prisión Abisal."
   
- POD_inquihunt.81.t: "Exorcismo 101" #NT!
- POD_inquihunt.81.desc: "Todo salió como estaba previsto. Reuniste información importante sobre este demonio, incluida parte de su Nombre verdadero, antes de trabajar en su culto. Afortunadamente, los cultistas no suelen ser muy inteligentes (de lo contrario, no serían cultistas en lo que a ti respecta), así que lograste burlarlos y enviarlos a una misión inútil y condenada al fracaso.\nLo bueno de esto es que nunca tuviste que enfrentarte al demonio en sí. Solo encuentra su ancla espiritual en este mundo, usa el fragmento de su Nombre verdadero y realiza un exorcismo (posiblemente complejo) en él para obligar a su espíritu a salir de su anfitrión. Una vez "liberado", la atracción de la Prisión Abisal hizo el resto del trabajo por ti.\nUna cacería perfectamente ejecutada." #NT!
- POD_inquihunt.81.option.a: "Viaje gratis de regreso a tu cárcel." #NT!
+ POD_inquihunt.81.t: "Exorcismo 101"
+ POD_inquihunt.81.desc: "Todo salió como estaba previsto. Reuniste información importante sobre este demonio, incluida parte de su Nombre verdadero, antes de trabajar en su culto. Afortunadamente, los cultistas no suelen ser muy inteligentes (de lo contrario, no serían cultistas en lo que a ti respecta), así que lograste burlarlos y enviarlos a una misión inútil y condenada al fracaso.\nLo bueno de esto es que nunca tuviste que enfrentarte al demonio en sí. Solo encuentra su ancla espiritual en este mundo, usa el fragmento de su Nombre verdadero y realiza un exorcismo (posiblemente complejo) en él para obligar a su espíritu a salir de su anfitrión. Una vez "liberado", la atracción de la Prisión Abisal hizo el resto del trabajo por ti.\nUna cacería perfectamente ejecutada."
+ POD_inquihunt.81.option.a: "Viaje gratis de regreso a tu cárcel."
   
- POD_inquihunt.82.t: "Cazador contra demonio" #NT!
- POD_inquihunt.82.desc: "Lidiar con los cultistas del demonio fue bastante fácil, un poco de distracción usando su celo impío funcionó. El demonio en sí es un asunto completamente distinto. Han ocultado todo lo relacionado con su Nombre Verdadero o su ancla espiritual en este mundo bajo tantas capas de engaño que tú mismo has sido desviado muchas veces a lo largo del camino. "Crees" que tienes una pista, pero ahora estás siendo cauteloso, seguirla podría ser una de las muchas trampas que deja tu objetivo para lidiar con amenazas como tú mismo. Si la activaras y te revelaras al demonio, las cosas se volverían bastante... desagradables. Sabiamente decides abandonar la persecución por ahora. Siempre puedes reanudarla más tarde una vez que, con suerte, el rastro que potencialmente conduce a ti se haya enfriado." #NT!
+ POD_inquihunt.82.t: "Cazador contra demonio"
+ POD_inquihunt.82.desc: "Lidiar con los cultistas del demonio fue bastante fácil, un poco de distracción usando su celo impío funcionó. El demonio en sí es un asunto completamente distinto. Han ocultado todo lo relacionado con su Nombre Verdadero o su ancla espiritual en este mundo bajo tantas capas de engaño que tú mismo has sido desviado muchas veces a lo largo del camino. "Crees" que tienes una pista, pero ahora estás siendo cauteloso, seguirla podría ser una de las muchas trampas que deja tu objetivo para lidiar con amenazas como tú mismo. Si la activaras y te revelaras al demonio, las cosas se volverían bastante... desagradables. Sabiamente decides abandonar la persecución por ahora. Siempre puedes reanudarla más tarde una vez que, con suerte, el rastro que potencialmente conduce a ti se haya enfriado."
   
- POD_inquihunt.83.t: "Al diablo con usted" #NT!
- POD_inquihunt.83.desc: "Estabas tan seguro de que esta vez tenías la pista correcta. Después de innumerables datos falsos e información engañosa, finalmente habías reunido lo que creías que era parte del Nombre Verdadero del demonio y la ubicación de su ancla espiritual. Finalmente, teniendo algo concreto que mostrar por tus esfuerzos, te lanzaste a usar esa pista para comenzar tu exorcismo... y caíste en una trampa. Mientras los cultistas cantan en un círculo alrededor del altar al que estás encadenado y el propio demonio te promete una dulce tortura, extrañamente te preguntas principalmente si el Infierno realmente existe. Tienes la desagradable sensación de que lo descubrirás muy pronto." #NT!
- POD_inquihunt.83.option.a: "El último viaje de ida." #NT!
+ POD_inquihunt.83.t: "Al diablo con usted"
+ POD_inquihunt.83.desc: "Estabas tan seguro de que esta vez tenías la pista correcta. Después de innumerables datos falsos e información engañosa, finalmente habías reunido lo que creías que era parte del Nombre Verdadero del demonio y la ubicación de su ancla espiritual. Finalmente, teniendo algo concreto que mostrar por tus esfuerzos, te lanzaste a usar esa pista para comenzar tu exorcismo... y caíste en una trampa. Mientras los cultistas cantan en un círculo alrededor del altar al que estás encadenado y el propio demonio te promete una dulce tortura, extrañamente te preguntas principalmente si el Infierno realmente existe. Tienes la desagradable sensación de que lo descubrirás muy pronto."
+ POD_inquihunt.83.option.a: "El último viaje de ida."
   
- POD_inquihunt.110.t: "Cazador de sueños" #NT!
- POD_inquihunt.110.desc: "Hay muchas historias que rodean a los misteriosos duendes... que en realidad no ayudan en nada a cazarlos, ya que la mayoría de ellas son contradictorias. Perforar la capa de engaño intencional que rodea a estos seres no es fácil, pero lograste desentrañar un hecho importante: el hierro frío puede matarlos. Ahora, simplemente entrar en una de sus "cortes" sería similar a una sentencia de muerte. Los duendes son conocidos por ser maestros del engaño que se esconden tras capas y capas de ilusiones. Pero tienen una debilidad: su interés por la humanidad. Si te haces lo suficientemente interesante, tal vez puedas conseguir que te inviten y acercarte lo suficiente a tu objetivo para atacar..." #NT!
- POD_inquihunt.110.option.a: "Tengo que soñar en grande." #NT!
- POD_inquihunt.110.option.b: "Quiero la mejor daga de hierro frío que el oro pueda comprar." #NT!
+ POD_inquihunt.110.t: "Cazador de sueños"
+ POD_inquihunt.110.desc: "Hay muchas historias que rodean a los misteriosos duendes... que en realidad no ayudan en nada a cazarlos, ya que la mayoría de ellas son contradictorias. Perforar la capa de engaño intencional que rodea a estos seres no es fácil, pero lograste desentrañar un hecho importante: el hierro frío puede matarlos. Ahora, simplemente entrar en una de sus "cortes" sería similar a una sentencia de muerte. Los duendes son conocidos por ser maestros del engaño que se esconden tras capas y capas de ilusiones. Pero tienen una debilidad: su interés por la humanidad. Si te haces lo suficientemente interesante, tal vez puedas conseguir que te inviten y acercarte lo suficiente a tu objetivo para atacar..."
+ POD_inquihunt.110.option.a: "Tengo que soñar en grande."
+ POD_inquihunt.110.option.b: "Quiero la mejor daga de hierro frío que el oro pueda comprar."
   
- POD_inquihunt.111.t: "El fin de un sueño" #NT!
- POD_inquihunt.111.desc: "Te costó algo de preparación, pero lograste parecer lo suficientemente interesante como para llamar la atención de las hadas locales. Jugando tu papel como el mortal despistado que estaba fascinado por las criaturas extravagantes, las seguiste hasta su extraño mundo de maravillas. Lograste mantener la calma a pesar del caos ambiental y llamaste la atención de tu objetivo, que murmuró algo sobre extraerte el "glamour". Una vez aislado, y antes de que pudiera hacer lo que planeaba, tu fría daga de hierro le cortó la garganta. Te fuiste de la corte de las hadas minutos después sin que nadie se diera cuenta." #NT!
- POD_inquihunt.111.option.a: "De vuelta a la realidad." #NT!
+ POD_inquihunt.111.t: "El fin de un sueño"
+ POD_inquihunt.111.desc: "Te costó algo de preparación, pero lograste parecer lo suficientemente interesante como para llamar la atención de las hadas locales. Jugando tu papel como el mortal despistado que estaba fascinado por las criaturas extravagantes, las seguiste hasta su extraño mundo de maravillas. Lograste mantener la calma a pesar del caos ambiental y llamaste la atención de tu objetivo, que murmuró algo sobre extraerte el "glamour". Una vez aislado, y antes de que pudiera hacer lo que planeaba, tu fría daga de hierro le cortó la garganta. Te fuiste de la corte de las hadas minutos después sin que nadie se diera cuenta."
+ POD_inquihunt.111.option.a: "De vuelta a la realidad."
   
- POD_inquihunt.112.t: "Noches sin sueños" #NT!
- POD_inquihunt.112.desc: "A pesar de tus mejores esfuerzos por hacerte parecer atractivo a los extraños Fae, has llegado a un callejón sin salida. Quizás no entendías del todo qué es lo que buscaban en un mortal o quizás simplemente entendían tu verdadera intención. Sea cual sea el caso, la corte Fae y tu objetivo se mantienen obstinadamente cerrados a ti. Como probablemente ya conocen tus intenciones, irrumpir en ellas sería una muy mala idea. Tendrás que esperar otra oportunidad." #NT!
+ POD_inquihunt.112.t: "Noches sin sueños"
+ POD_inquihunt.112.desc: "A pesar de tus mejores esfuerzos por hacerte parecer atractivo a los extraños Fae, has llegado a un callejón sin salida. Quizás no entendías del todo qué es lo que buscaban en un mortal o quizás simplemente entendían tu verdadera intención. Sea cual sea el caso, la corte Fae y tu objetivo se mantienen obstinadamente cerrados a ti. Como probablemente ya conocen tus intenciones, irrumpir en ellas sería una muy mala idea. Tendrás que esperar otra oportunidad."
   
- POD_inquihunt.113.t: "De sueño a pesadilla" #NT!
- POD_inquihunt.113.desc: "Primero notaste que algo salió mal en la propia corte de los Fae. Antes de eso, creías que tu actuación para parecer lo suficientemente interesante como para atraer la atención de tu objetivo estaba funcionando perfectamente. Fue cuando todos comenzaron a apiñarse a tu alrededor y el entorno adquirió un tono mucho más oscuro que comprendiste el gran error que habías cometido. No sabes cómo ni cuándo, pero es bastante seguro que notaron que trajiste hierro frío, un anatema grave, a su hogar. También es bastante seguro que tu última pesadilla solo está comenzando." #NT!
- POD_inquihunt.113.option.a: "...y nunca terminará." #NT!
+ POD_inquihunt.113.t: "De sueño a pesadilla"
+ POD_inquihunt.113.desc: "Primero notaste que algo salió mal en la propia corte de los Fae. Antes de eso, creías que tu actuación para parecer lo suficientemente interesante como para atraer la atención de tu objetivo estaba funcionando perfectamente. Fue cuando todos comenzaron a apiñarse a tu alrededor y el entorno adquirió un tono mucho más oscuro que comprendiste el gran error que habías cometido. No sabes cómo ni cuándo, pero es bastante seguro que notaron que trajiste hierro frío, un anatema grave, a su hogar. También es bastante seguro que tu última pesadilla solo está comenzando."
+ POD_inquihunt.113.option.a: "...y nunca terminará."
   
- POD_ha_bless_interaction: "Bendecir" #NT!
- POD_ha_bless_interaction_desc: "Puedes bendecir a [recipient.GetTitledFirstNameNoTooltip], lo que le otorga un aumento moderado de estadísticas y salud por un tiempo." #NT!
- POD_ha_bless_interaction_toast: "El Señor te protege" #NT!
- POD_ha_bless_interaction_toast.tt: "Ahora bendecido por cinco años." #NT!
- blessed_by_truefaith_modifier: "Bendecir" #NT!
- blessed_by_truefaith_modifier_desc: "Has sido bendecido por un verdadero creyente." #NT!
+ POD_ha_bless_interaction: "Bendecir"
+ POD_ha_bless_interaction_desc: "Puedes bendecir a [recipient.GetTitledFirstNameNoTooltip], lo que le otorga un aumento moderado de estadísticas y salud por un tiempo."
+ POD_ha_bless_interaction_toast: "El Señor te protege"
+ POD_ha_bless_interaction_toast.tt: "Ahora bendecido por cinco años."
+ blessed_by_truefaith_modifier: "Bendecir"
+ blessed_by_truefaith_modifier_desc: "Has sido bendecido por un verdadero creyente."
   
- POD_ha_intercession_interaction: "Intercesión" #NT!
- POD_ha_intercession_interaction_desc: "Puedes interceder por [recipient.GetTitledFirstNameNoTooltip], dándole algo de piedad y una pequeña posibilidad de obtener el rasgo Fe Verdadera si aún no lo tiene." #NT!
- POD_ha_intercession_interaction_toast: "El Señor te protege" #NT!
+ POD_ha_intercession_interaction: "Intercesión"
+ POD_ha_intercession_interaction_desc: "Puedes interceder por [recipient.GetTitledFirstNameNoTooltip], dándole algo de piedad y una pequeña posibilidad de obtener el rasgo Fe Verdadera si aún no lo tiene."
+ POD_ha_intercession_interaction_toast: "El Señor te protege"
   
- POD_ha_holy_heal_other_interaction: "Imposición de manos" #NT!
- POD_ha_holy_heal_cheaper_interaction: "Imposición de manos" #NT!
- POD_ha_holy_heal_action: "Imposición de manos" #NT!
- POD_ha_holy_heal_interaction: "Imposición de manos" #NT!
- POD_ha_holy_heal_other_cheaper_interaction: "Imposición de manos" #NT!
- POD_ha_holy_heal_interaction_desc: "Utiliza el poder de lo divino para sanar tus heridas." #NT!
- POD_ha_holy_heal_interaction_toast: "Tu cuerpo fue curado." #NT!
- POD_ha_holy_heal_other_interaction_desc: "Usa el poder de lo divino para curar [recipient.GetTitledFirstNamePossessiveNoTooltip] heridas." #NT!
- POD_ha_holy_heal_interaction_options_heading: "¿A qué debo invocar lo divino para sanar?" #NT!
- POD_ha_holy_heal_other_interaction_options_heading: "¿A qué debo invocar lo divino para sanar?" #NT!
- POD_ha_endoo_heal_interaction: "Transformar la carne enferma" #NT!
- POD_ha_endoo_heal_other_interaction: "Transformar la carne enferma" #NT!
- POD_ha_endoa_heal_interaction: "Transformar la carne enferma" #NT!
- POD_ha_endoa_heal_other_interaction: "Transformar la carne enferma" #NT!
- POD_ha_holy_heal_wounded: "Heridas" #NT!
- POD_ha_holy_heal_maimed: "Mutilación" #NT!
- POD_ha_holy_heal_blind: "Ceguera" #NT!
- POD_ha_holy_heal_disfigured: "Desfiguración" #NT!
- POD_ha_holy_heal_depressed: "Depresión" #NT!
- POD_ha_holy_heal_lunatic: "Locura" #NT!
- POD_ha_holy_heal_ill: "Enfermedad" #NT!
- POD_ha_holy_heal_pneumonic: "Neumonía" #NT!
- POD_ha_holy_heal_leper: "Lepra" #NT!
- POD_ha_holy_heal_pox: "Viruela" #NT!
- POD_ha_holy_heal_one_legged: "Herida" #NT!
- POD_ha_holy_heal_one_eyed: "Ceguera parcial" #NT!
- POD_ha_holy_heal_scarred: "Cicatrización" #NT!
- POD_ha_holy_heal_infirm: "Enfermedad" #NT!
- POD_ha_holy_heal_incapable: "Discapacidad" #NT!
- POD_ha_holy_heal_gout_ridden: "Gota" #NT!
- POD_ha_holy_heal_consumption: "Consumo" #NT!
- POD_ha_holy_heal_cancer: "Cáncer" #NT!
- POD_ha_holy_heal_typhus: "Tifus" #NT!
- POD_ha_holy_heal_plague: "Plaga" #NT!
- POD_ha_holy_heal_sickly: "Enfermedad" #NT!
- POD_ha_holy_heal_eunuch: "Castración" #NT!
- POD_ha_holy_heal_possessed: "Posesión" #NT!
- POD_ha_holy_heal_no_traits_to_heal_other: "Este cuerpo está intacto." #NT!
- POD_ha_holy_heal_no_traits_to_heal: "[CHARACTER.GetFirstNamePossessive] el cuerpo no está afectado." #NT!
+ POD_ha_holy_heal_other_interaction: "Imposición de manos"
+ POD_ha_holy_heal_cheaper_interaction: "Imposición de manos"
+ POD_ha_holy_heal_action: "Imposición de manos"
+ POD_ha_holy_heal_interaction: "Imposición de manos"
+ POD_ha_holy_heal_other_cheaper_interaction: "Imposición de manos"
+ POD_ha_holy_heal_interaction_desc: "Utiliza el poder de lo divino para sanar tus heridas."
+ POD_ha_holy_heal_interaction_toast: "Tu cuerpo fue curado."
+ POD_ha_holy_heal_other_interaction_desc: "Usa el poder de lo divino para curar [recipient.GetTitledFirstNamePossessiveNoTooltip] heridas."
+ POD_ha_holy_heal_interaction_options_heading: "¿A qué debo invocar lo divino para sanar?"
+ POD_ha_holy_heal_other_interaction_options_heading: "¿A qué debo invocar lo divino para sanar?"
+ POD_ha_endoo_heal_interaction: "Transformar la carne enferma"
+ POD_ha_endoo_heal_other_interaction: "Transformar la carne enferma"
+ POD_ha_endoa_heal_interaction: "Transformar la carne enferma"
+ POD_ha_endoa_heal_other_interaction: "Transformar la carne enferma"
+ POD_ha_holy_heal_wounded: "Heridas"
+ POD_ha_holy_heal_maimed: "Mutilación"
+ POD_ha_holy_heal_blind: "Ceguera"
+ POD_ha_holy_heal_disfigured: "Desfiguración"
+ POD_ha_holy_heal_depressed: "Depresión"
+ POD_ha_holy_heal_lunatic: "Locura"
+ POD_ha_holy_heal_ill: "Enfermedad"
+ POD_ha_holy_heal_pneumonic: "Neumonía"
+ POD_ha_holy_heal_leper: "Lepra"
+ POD_ha_holy_heal_pox: "Viruela"
+ POD_ha_holy_heal_one_legged: "Herida"
+ POD_ha_holy_heal_one_eyed: "Ceguera parcial"
+ POD_ha_holy_heal_scarred: "Cicatrización"
+ POD_ha_holy_heal_infirm: "Enfermedad"
+ POD_ha_holy_heal_incapable: "Discapacidad"
+ POD_ha_holy_heal_gout_ridden: "Gota"
+ POD_ha_holy_heal_consumption: "Consumo"
+ POD_ha_holy_heal_cancer: "Cáncer"
+ POD_ha_holy_heal_typhus: "Tifus"
+ POD_ha_holy_heal_plague: "Plaga"
+ POD_ha_holy_heal_sickly: "Enfermedad"
+ POD_ha_holy_heal_eunuch: "Castración"
+ POD_ha_holy_heal_possessed: "Posesión"
+ POD_ha_holy_heal_no_traits_to_heal_other: "Este cuerpo está intacto."
+ POD_ha_holy_heal_no_traits_to_heal: "[CHARACTER.GetFirstNamePossessive] el cuerpo no está afectado."
   
- POD_ha_penance_interaction: "Penitencia" #NT!
- POD_ha_penance_interaction_desc: "Puedes condenar a este sirviente del Infierno, otorgándole una penalización moderada de estadísticas por un tiempo." #NT!
- POD_ha_penance_interaction_toast: "¡El Señor te hiere!" #NT!
- POD_ha_penance_interaction_toast.tt: "Ahora maldito por cinco años." #NT!
- POD_ha_penance_modifier: "Penitencia" #NT!
- POD_ha_penance_modifier_desc: "Has sido maldecido por un verdadero creyente." #NT!
+ POD_ha_penance_interaction: "Penitencia"
+ POD_ha_penance_interaction_desc: "Puedes condenar a este sirviente del Infierno, otorgándole una penalización moderada de estadísticas por un tiempo."
+ POD_ha_penance_interaction_toast: "¡El Señor te hiere!"
+ POD_ha_penance_interaction_toast.tt: "Ahora maldito por cinco años."
+ POD_ha_penance_modifier: "Penitencia"
+ POD_ha_penance_modifier_desc: "Has sido maldecido por un verdadero creyente."
   
- POD_ha_unwavering_vision_interaction: "Visión inquebrantable" #NT!
- POD_ha_unwavering_vision_interaction_desc: "Inspeccione los recuerdos del demonio sobre su trato con sus delegados para atacarlos y perturbar la usurpación de la tierra." #NT!
- POD_ha_unwavering_vision_interaction_toast: "[recipient.GetShortUINamePossessiveNoTooltip] asociados han sido disuadidos de fomentar su influencia." #NT!
- POD_ha_unwavering_vision_no_county: "La autoridad limitada del demonio no implica delegación." #NT!
- POD_ha_disrupted_contacts_modifier: "Contactos interrumpidos" #NT!
- POD_ha_disrupted_contacts_modifier_desc: "Los cómplices de este demonio han sido disuadidos de fomentar su influencia." #NT!
+ POD_ha_unwavering_vision_interaction: "Visión inquebrantable"
+ POD_ha_unwavering_vision_interaction_desc: "Inspeccione los recuerdos del demonio sobre su trato con sus delegados para atacarlos y perturbar la usurpación de la tierra."
+ POD_ha_unwavering_vision_interaction_toast: "[recipient.GetShortUINamePossessiveNoTooltip] asociados han sido disuadidos de fomentar su influencia."
+ POD_ha_unwavering_vision_no_county: "La autoridad limitada del demonio no implica delegación."
+ POD_ha_disrupted_contacts_modifier: "Contactos interrumpidos"
+ POD_ha_disrupted_contacts_modifier_desc: "Los cómplices de este demonio han sido disuadidos de fomentar su influencia."
   
- POD_ha_lifting_the_veil_interaction: "Levantando el velo" #NT!
- POD_ha_lifting_the_veil_interaction_desc: "Penetra el velo del engaño que el demonio erigió para proteger a sus aliados más cercanos." #NT!
- POD_ha_lifting_the_veil_interaction_toast: "Has localizado a [recipient.GetTitledFirstNamePossessiveNoTooltip] asociados." #NT!
+ POD_ha_lifting_the_veil_interaction: "Levantando el velo"
+ POD_ha_lifting_the_veil_interaction_desc: "Penetra el velo del engaño que el demonio erigió para proteger a sus aliados más cercanos."
+ POD_ha_lifting_the_veil_interaction_toast: "Has localizado a [recipient.GetTitledFirstNamePossessiveNoTooltip] asociados."
   
- POD_ha_revelation_interaction: "Revelación" #NT!
- POD_ha_revelation_interaction_desc: "Expondrás públicamente la identidad impía de [recipient.GetShortUIName], lo que hará que las almas justas que permanecen en el dominio de [recipient.GetHerHis] se levanten contra [recipient.GetHerHim]." #NT!
- POD_ha_revelation_interaction_toast: "Revelaste [recipient.GetTitledFirstNamePossessiveNoTooltip] naturaleza repugnante para que todos la vieran." #NT!
- POD_ha_revelation_interaction_receptive_toast: "Tu verdadera naturaleza ha sido revelada por la visión divina de [actor.GetShortUIName]." #NT!
+ POD_ha_revelation_interaction: "Revelación"
+ POD_ha_revelation_interaction_desc: "Expondrás públicamente la identidad impía de [recipient.GetShortUIName], lo que hará que las almas justas que permanecen en el dominio de [recipient.GetHerHis] se levanten contra [recipient.GetHerHim]."
+ POD_ha_revelation_interaction_toast: "Revelaste [recipient.GetTitledFirstNamePossessiveNoTooltip] naturaleza repugnante para que todos la vieran."
+ POD_ha_revelation_interaction_receptive_toast: "Tu verdadera naturaleza ha sido revelada por la visión divina de [actor.GetShortUIName]."
   
- POD_ha_sunder_interaction: "Romper" #NT!
- POD_ha_sunder_interaction_desc: "Imbuye tu arma con poder divino." #NT!
+ POD_ha_sunder_interaction: "Romper"
+ POD_ha_sunder_interaction_desc: "Imbuye tu arma con poder divino."
   
- POD_ha_rod_and_staff_interaction: "Vara y bastón" #NT!
- POD_ha_rod_and_staff_interaction_desc: "Usa el poder de la vara y el bastón para proteger a tus hombres de resultar heridos en la batalla mientras permanezcas en pie." #NT!
- has_POD_ha_rod_and_staff: "Ya estás usando el poder de la Vara y el Bastón." #NT!
- POD_ha_rod_and_staff_interaction_toast: "El Señor te dio poder para proteger a tus hombres." #NT!
- POD_ha_rod_and_staff_modifier: "Vara y bastón" #NT!
- POD_ha_rod_and_staff_modifier_desc: "Este personaje está facultado por lo Divino para ser un baluarte para quienes lo siguen." #NT!
+ POD_ha_rod_and_staff_interaction: "Vara y bastón"
+ POD_ha_rod_and_staff_interaction_desc: "Usa el poder de la vara y el bastón para proteger a tus hombres de resultar heridos en la batalla mientras permanezcas en pie."
+ has_POD_ha_rod_and_staff: "Ya estás usando el poder de la Vara y el Bastón."
+ POD_ha_rod_and_staff_interaction_toast: "El Señor te dio poder para proteger a tus hombres."
+ POD_ha_rod_and_staff_modifier: "Vara y bastón"
+ POD_ha_rod_and_staff_modifier_desc: "Este personaje está facultado por lo Divino para ser un baluarte para quienes lo siguen."
   
- POD_ha_wrath_of_god_interaction: "Ira de Dios" #NT!
- POD_ha_wrath_of_god_interaction_desc: "Pedirás al Señor que hiera a [recipient.GetShortUIName] con justa furia." #NT!
- POD_ha_wrath_of_god_interaction_options_heading: "¿Qué tan apasionada es tu invocación?" #NT!
- POD_ha_wrath_of_god_min: "Mi oración será tan diligente como siempre." #NT!
- POD_ha_wrath_of_god_med: "Invoco al Todopoderoso con mayor resolución." #NT!
- POD_ha_wrath_of_god_max: "Ejerzo mi voluntad al máximo." #NT!
- POD_ha_wrath_of_god_interaction_toast: "[recipient.GetShortUIName] como herido por el Señor Todopoderoso." #NT!
+ POD_ha_wrath_of_god_interaction: "Ira de Dios"
+ POD_ha_wrath_of_god_interaction_desc: "Pedirás al Señor que hiera a [recipient.GetShortUIName] con justa furia."
+ POD_ha_wrath_of_god_interaction_options_heading: "¿Qué tan apasionada es tu invocación?"
+ POD_ha_wrath_of_god_min: "Mi oración será tan diligente como siempre."
+ POD_ha_wrath_of_god_med: "Invoco al Todopoderoso con mayor resolución."
+ POD_ha_wrath_of_god_max: "Ejerzo mi voluntad al máximo."
+ POD_ha_wrath_of_god_interaction_toast: "[recipient.GetShortUIName] como herido por el Señor Todopoderoso."
   
- POD_ha_touch_of_peace: "Un toque de paz" #NT!
- POD_holy_heal_action: "Un toque de paz" #NT!
- POD_ha_touch_of_peace_interaction: "Un toque de paz" #NT!
- POD_ha_touch_of_peace_interaction_desc: "Calma el alma dolorida de este personaje." #NT!
- POD_ha_touch_of_peace_interaction_options_heading: "¿De qué enfermedad liberar su corazón?" #NT!
- POD_ha_touch_of_peace_drunkard: "Exceso de bebida." #NT!
- POD_ha_touch_of_peace_hashishiyah: "Disfrute del hachís." #NT!
- POD_ha_touch_of_peace_rakish: "Lujuria." #NT!
- POD_ha_touch_of_peace_reclusive: "Reclusión." #NT!
- POD_ha_touch_of_peace_irritable: "Irritabilidad." #NT!
- POD_ha_touch_of_peace_profligate: "Despilfarro." #NT!
- POD_ha_touch_of_peace_contrite: "Culpa." #NT!
- POD_ha_touch_of_peace_comfort_eater: "Glotonería." #NT!
- POD_ha_touch_of_peace_flagellant: "Autoflagelación." #NT!
- POD_ha_touch_of_peace_inappetetic: "Falta de apetito." #NT!
- POD_ha_touch_of_peace_improvident: "Imprevisión." #NT!
- POD_ha_touch_of_peace_no_stress: "Su alma está en paz, no hay nada que curar." #NT!
- POD_ha_touch_of_peace_interaction_toast: "Calmaste [recipient.GetShortUINamePossessive] angustia." #NT!
- POD_ha_touch_of_peace_interaction_receptive_toast: "Tu angustia fue calmada por [actor.GetShortUINameNoTooltip]." #NT!
+ POD_ha_touch_of_peace: "Un toque de paz"
+ POD_holy_heal_action: "Un toque de paz"
+ POD_ha_touch_of_peace_interaction: "Un toque de paz"
+ POD_ha_touch_of_peace_interaction_desc: "Calma el alma dolorida de este personaje."
+ POD_ha_touch_of_peace_interaction_options_heading: "¿De qué enfermedad liberar su corazón?"
+ POD_ha_touch_of_peace_drunkard: "Exceso de bebida."
+ POD_ha_touch_of_peace_hashishiyah: "Disfrute del hachís."
+ POD_ha_touch_of_peace_rakish: "Lujuria."
+ POD_ha_touch_of_peace_reclusive: "Reclusión."
+ POD_ha_touch_of_peace_irritable: "Irritabilidad."
+ POD_ha_touch_of_peace_profligate: "Despilfarro."
+ POD_ha_touch_of_peace_contrite: "Culpa."
+ POD_ha_touch_of_peace_comfort_eater: "Glotonería."
+ POD_ha_touch_of_peace_flagellant: "Autoflagelación."
+ POD_ha_touch_of_peace_inappetetic: "Falta de apetito."
+ POD_ha_touch_of_peace_improvident: "Imprevisión."
+ POD_ha_touch_of_peace_no_stress: "Su alma está en paz, no hay nada que curar."
+ POD_ha_touch_of_peace_interaction_toast: "Calmaste [recipient.GetShortUINamePossessive] angustia."
+ POD_ha_touch_of_peace_interaction_receptive_toast: "Tu angustia fue calmada por [actor.GetShortUINameNoTooltip]."
   
- POD_ha_judgement_of_heaven_interaction: "El juicio del cielo" #NT!
- POD_ha_judgement_of_heaven_interaction_desc: "Corta la conexión del demonio con fuentes impías de poder y déjalo sin medios para escapar de su prisión." #NT!
- POD_ha_judgement_of_heaven_interaction_toast: "Has encarcelado a [recipient.GetShortUIName]." #NT!
- POD_ha_judgement_of_heaven_interaction_receptive_toast: "Fuiste encarcelado por el poder divino [actor.GetTitledFirstNamePossessiveNoTooltip]." #NT!
+ POD_ha_judgement_of_heaven_interaction: "El juicio del cielo"
+ POD_ha_judgement_of_heaven_interaction_desc: "Corta la conexión del demonio con fuentes impías de poder y déjalo sin medios para escapar de su prisión."
+ POD_ha_judgement_of_heaven_interaction_toast: "Has encarcelado a [recipient.GetShortUIName]."
+ POD_ha_judgement_of_heaven_interaction_receptive_toast: "Fuiste encarcelado por el poder divino [actor.GetTitledFirstNamePossessiveNoTooltip]."
   
- POD_spiritual_guidance_interaction: "Guía espiritual" #NT!
- POD_spiritual_guidance_interaction_desc: "Puedes enseñarle a [recipient.GetHerHim] una forma de vivir más piadosa." #NT!
- I_HAVE_VIRTUES_I_CAN_TEACH_TRIGGER: "Tengo virtudes que puedo enseñar." #NT!
- I_DONT_HAVE_THE_SAME_SINS: "No tengo los mismos pecados." #NT!
- inquisitors_vassal_tt: "Es mi superior:$VALUE|=+0$" #NT!
+ POD_spiritual_guidance_interaction: "Guía espiritual"
+ POD_spiritual_guidance_interaction_desc: "Puedes enseñarle a [recipient.GetHerHim] una forma de vivir más piadosa."
+ I_HAVE_VIRTUES_I_CAN_TEACH_TRIGGER: "Tengo virtudes que puedo enseñar."
+ I_DONT_HAVE_THE_SAME_SINS: "No tengo los mismos pecados."
+ inquisitors_vassal_tt: "Es mi superior:$VALUE|=+0$"
   
- POD_hunter_dynasty_prestige_miniscule_gain.tt: "[hunter_dynasty.GetName] Ganancias [dynasty_prestige_i] #P 25 #! [dynasty_prestige|E]." #NT!
- POD_hunter_dynasty_prestige_minor_gain.tt: "[hunter_dynasty.GetName] Ganancias [dynasty_prestige_i] #P 50 #! [dynasty_prestige|E]." #NT!
- POD_hunter_dynasty_prestige_medium_gain.tt: "[hunter_dynasty.GetName] Ganancias [dynasty_prestige_i] #P 75 #! [dynasty_prestige|E]." #NT!
- POD_hunter_dynasty_prestige_major_gain.tt: "[hunter_dynasty.GetName] Ganancias [dynasty_prestige_i] #P 150 #! [dynasty_prestige|E]." #NT!
- POD_hunter_dynasty_prestige_massive_gain.tt: "[hunter_dynasty.GetName] Ganancias [dynasty_prestige_i] #P 250 #! [dynasty_prestige|E]." #NT!
- POD_hunter_dynasty_prestige_monumental_gain.tt: "[hunter_dynasty.GetName] Ganancias [dynasty_prestige_i] #P 1000 #! [dynasty_prestige|E]." #NT!
+ POD_hunter_dynasty_prestige_miniscule_gain.tt: "[hunter_dynasty.GetName] Ganancias [dynasty_prestige_i] #P 25 #! [dynasty_prestige|E]."
+ POD_hunter_dynasty_prestige_minor_gain.tt: "[hunter_dynasty.GetName] Ganancias [dynasty_prestige_i] #P 50 #! [dynasty_prestige|E]."
+ POD_hunter_dynasty_prestige_medium_gain.tt: "[hunter_dynasty.GetName] Ganancias [dynasty_prestige_i] #P 75 #! [dynasty_prestige|E]."
+ POD_hunter_dynasty_prestige_major_gain.tt: "[hunter_dynasty.GetName] Ganancias [dynasty_prestige_i] #P 150 #! [dynasty_prestige|E]."
+ POD_hunter_dynasty_prestige_massive_gain.tt: "[hunter_dynasty.GetName] Ganancias [dynasty_prestige_i] #P 250 #! [dynasty_prestige|E]."
+ POD_hunter_dynasty_prestige_monumental_gain.tt: "[hunter_dynasty.GetName] Ganancias [dynasty_prestige_i] #P 1000 #! [dynasty_prestige|E]."
   
- POD_learn_truefaith_interaction: "Pide orientación espiritual" #NT!
- POD_learn_truefaith_interaction_desc: "Le pedirás a [recipient.GetFirstName] que te enseñe la verdadera fe. Puede que te falle." #NT!
+ POD_learn_truefaith_interaction: "Pide orientación espiritual"
+ POD_learn_truefaith_interaction_desc: "Le pedirás a [recipient.GetFirstName] que te enseñe la verdadera fe. Puede que te falle."
   
- i_can_only_hunterize_one_at_a_time: "Solo puedes usar esta conjura en un personaje a la vez." #NT!
+ i_can_only_hunterize_one_at_a_time: "Solo puedes usar esta conjura en un personaje a la vez."
   
- POD_train_truefaith_interaction: "Entrenamiento de la verdadera fe" #NT!
- POD_train_truefaith_interaction_desc: "Enséñale a [recipient.GetFirstName] uno de tus verdaderos poderes de fe." #NT!
+ POD_train_truefaith_interaction: "Entrenamiento de la verdadera fe"
+ POD_train_truefaith_interaction_desc: "Enséñale a [recipient.GetFirstName] uno de tus verdaderos poderes de fe."
   
- POD_train_qiao_interaction: "Entrenar Qiao" #NT!
- POD_train_qiao_interaction_desc: "Enséñale a [recipient.GetFirstName] uno de tus Qiao" #NT!
- POD_mass_train_qiao_interaction: "Entrenar Qiao en masa" #NT!
- POD_mass_train_qiao_interaction_desc: "Enseñe a sus súbditos uno de sus Qiao" #NT!
- POD_train_i_shen: "Un estudiante elegido al azar obtendrá un árbol $i_shen_visible$ completo si aún no lo tiene." #NT!
- POD_train_mo_kung: "Un estudiante elegido al azar obtendrá un árbol $mo_kung_visible$ completo si aún no lo tiene." #NT!
- POD_train_yu_an: "Un estudiante elegido al azar obtendrá un árbol $yu_an_visible$ completo si aún no lo tiene." #NT!
- POD_train_feng: "Un estudiante elegido al azar obtendrá un árbol $feng_visible$ completo si aún no lo tiene." #NT!
- POD_train_shi: "Un estudiante elegido al azar obtendrá el árbol $shi_visible$ completo si aún no lo tiene." #NT!
- POD_train_chien: "Un estudiante elegido al azar obtendrá un árbol $chien_visible$ completo si aún no lo tiene." #NT!
- POD_train_long_ling: "Un estudiante elegido al azar obtendrá un árbol $long_ling_visible$ completo si aún no lo tiene." #NT!
- POD_train_meng: "Un estudiante elegido al azar obtendrá un árbol $meng_visible$ completo si aún no lo tiene." #NT!
- POD_train_zhu_mao: "Un estudiante elegido al azar obtendrá un árbol $zhu_mao_visible$ completo si aún no lo tiene." #NT!
+ POD_train_qiao_interaction: "Entrenar Qiao"
+ POD_train_qiao_interaction_desc: "Enséñale a [recipient.GetFirstName] uno de tus Qiao"
+ POD_mass_train_qiao_interaction: "Entrenar Qiao en masa"
+ POD_mass_train_qiao_interaction_desc: "Enseñe a sus súbditos uno de sus Qiao"
+ POD_train_i_shen: "Un estudiante elegido al azar obtendrá un árbol $i_shen_visible$ completo si aún no lo tiene."
+ POD_train_mo_kung: "Un estudiante elegido al azar obtendrá un árbol $mo_kung_visible$ completo si aún no lo tiene."
+ POD_train_yu_an: "Un estudiante elegido al azar obtendrá un árbol $yu_an_visible$ completo si aún no lo tiene."
+ POD_train_feng: "Un estudiante elegido al azar obtendrá un árbol $feng_visible$ completo si aún no lo tiene."
+ POD_train_shi: "Un estudiante elegido al azar obtendrá el árbol $shi_visible$ completo si aún no lo tiene."
+ POD_train_chien: "Un estudiante elegido al azar obtendrá un árbol $chien_visible$ completo si aún no lo tiene."
+ POD_train_long_ling: "Un estudiante elegido al azar obtendrá un árbol $long_ling_visible$ completo si aún no lo tiene."
+ POD_train_meng: "Un estudiante elegido al azar obtendrá un árbol $meng_visible$ completo si aún no lo tiene."
+ POD_train_zhu_mao: "Un estudiante elegido al azar obtendrá un árbol $zhu_mao_visible$ completo si aún no lo tiene."
   
- POD_exorcism: "Exorcismo Chi" #NT!
- POD_exorcism_action: "Exorcismo Chi" #NT!
- POD_exorcism_interaction: "Exorcismo Chi" #NT!
- POD_exorcism_interaction_desc: "Utilice el poder del Chi para restaurar su mente." #NT!
- POD_exorcism_interaction_options_heading: "¿A qué debo recurrir a Chi para que me sane?" #NT!
- POD_exorcism_imbalance: "Desequilibrio" #NT!
- POD_exorcism_drunkard: "Ebrio" #NT!
- POD_exorcism_flagellant: "Auto tortura" #NT!
- POD_exorcism_comfort_eater: "Comiendo" #NT!
- POD_exorcism_contrite: "Contrito" #NT!
- POD_exorcism_improvident: "Imprevisor" #NT!
- POD_exorcism_inappetetic: "Inapetente" #NT!
- POD_exorcism_reclusive: "solitario" #NT!
- POD_exorcism_irritable: "Irritable" #NT!
- POD_exorcism_rakish: "Libertino" #NT!
- POD_exorcism_hashishiyah: "Hashishiyah" #NT!
- POD_exorcism_profligate: "Libertino" #NT!
- POD_exorcism_depressed: "Deprimido" #NT!
- POD_exorcism_lunatic: "Lunático" #NT!
- POD_exorcism_possessed: "Poseído" #NT!
- POD_exorcism_stress: "Estrés" #NT!
- POD_exorcism_all_stress: "Todo estrés" #NT!
- POD_exorcism_lunatic_genetic: "Lunático" #NT!
- POD_exorcism_depressed_genetic: "Melancólico" #NT!
+ POD_exorcism: "Exorcismo Chi"
+ POD_exorcism_action: "Exorcismo Chi"
+ POD_exorcism_interaction: "Exorcismo Chi"
+ POD_exorcism_interaction_desc: "Utilice el poder del Chi para restaurar su mente."
+ POD_exorcism_interaction_options_heading: "¿A qué debo recurrir a Chi para que me sane?"
+ POD_exorcism_imbalance: "Desequilibrio"
+ POD_exorcism_drunkard: "Ebrio"
+ POD_exorcism_flagellant: "Auto tortura"
+ POD_exorcism_comfort_eater: "Comiendo"
+ POD_exorcism_contrite: "Contrito"
+ POD_exorcism_improvident: "Imprevisor"
+ POD_exorcism_inappetetic: "Inapetente"
+ POD_exorcism_reclusive: "solitario"
+ POD_exorcism_irritable: "Irritable"
+ POD_exorcism_rakish: "Libertino"
+ POD_exorcism_hashishiyah: "Hashishiyah"
+ POD_exorcism_profligate: "Libertino"
+ POD_exorcism_depressed: "Deprimido"
+ POD_exorcism_lunatic: "Lunático"
+ POD_exorcism_possessed: "Poseído"
+ POD_exorcism_stress: "Estrés"
+ POD_exorcism_all_stress: "Todo estrés"
+ POD_exorcism_lunatic_genetic: "Lunático"
+ POD_exorcism_depressed_genetic: "Melancólico"
   
- gotchiweapon_notification: "Conseguí un arma mejorada con Chi" #NT!
+ gotchiweapon_notification: "Conseguí un arma mejorada con Chi"

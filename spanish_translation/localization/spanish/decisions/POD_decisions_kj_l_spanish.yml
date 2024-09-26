@@ -1,0 +1,81 @@
+﻿l_spanish:
+ groom_successor_decision: "Busque un sucesor"
+ groom_successor_decision_tooltip: "Sus servidores le sugerirán una serie de candidatos adecuados."
+ groom_successor_decision_desc: "Los Wan Kuei no pueden tener hijos de forma natural, o la mayoría de las veces no pueden hacerlo. Por lo tanto, si no quieres que tu arduo trabajo se desperdicie en caso de un accidente desafortunado, debes estar preparado. Pedirás a tus sirvientes que te presenten una cantidad de candidatos adecuados."
+ groom_successor_decision_effect_tooltip: "Se le presentará un grupo de candidatos y podrá aceptar a uno como su propio hijo por un honorario de prestigio."
+ groom_successor_decision_confirm: "Iniciar la búsqueda"
+  
+ advance_dharma_decision: "Avanzar en el Dharma"
+ advance_dharma_decision_tooltip: "Avanza en tu Dharma a medida que alcanzas la iluminación."
+ advance_dharma_decision_desc: "Los Wan Kuei avanzan en su Dharma al alcanzar momentos de iluminación, llamados dah. Estos momentos llegan raramente y pueden ser provocados por una gran comprensión del propio dharma o, ocasionalmente, por una gran desviación del mismo. Cada paso del camino es progresivamente más difícil, y el tiempo entre los momentos de iluminación dura años, luego siglos, y milenios en los niveles más altos. Los Wan Kuei más iluminados pasan gran parte de su tiempo en contemplación, buscando esos momentos de claridad."
+ advance_dharma_decision_desc.boneflowers: "Atando espectros, o pasivamente mientras tienes espectros atados y/o te estacionas en el [yin_world|E]" #NT!
+ advance_dharma_decision_desc.deviltigers: "Cometer asesinato" #NT!
+ advance_dharma_decision_desc.resplendentcranes: "Ganar títulos, convertir la cultura de un condado con tu mayordomo o de forma pasiva mientras tu capital tenga tu cultura." #NT!
+ advance_dharma_decision_desc.thousandwhispers: "Ganar o perder relaciones (amante, alma gemela, amigo, mejor amigo, rival, némesis)" #NT!
+ advance_dharma_decision_desc.thrashingdragons: "Completar planes de balanceo/seducción/romance, tener relaciones sexuales o pasivamente mientras se está estacionado en el [yang_world|E]" #NT!
+ advance_dharma_decision_desc.flameoftherisingphoenix: "Construyendo un edificio [GetTrait('kueijin').GetName( GetNullCharacter )]" #NT!
+ advance_dharma_decision_desc.faceofthegods: "Convertir la fe de un condado con su Capellán de la Corte, a través de la conversión masiva de Fe Verdadera, o pasivamente mientras su capital tiene su fe." #NT!
+ advance_dharma_decision_desc.inwardway: "Meditando, pasando a la siguiente ubicación [umbra|E] o al obtener beneficios en uno de los árboles de estilo de vida [GetTrait('kueijin').GetName( GetNullCharacter )]" #NT!
+ advance_dharma_decision_desc.wayofthetenthousandscreams: "Construir un Nido de Dragón corrupto, torturar prisioneros, sacrificar prisioneros/posesiones/regiones a patrones demoníacos o pasivamente mientras se es un esclavo o diabolista." #NT!
+ advance_dharma_decision_confirm: "Mi viaje continúa"
+ become_enlightened_decision: "Lograr la iluminación"
+ become_enlightened_decision_tooltip: "El paso final del viaje Dhármico."
+ become_enlightened_decision_desc: "Finalmente te iluminas; este proceso suele llevar milenios, pero cuando llega ese momento de claridad, las preocupaciones del Mundo Mortal desaparecen y puedes entrar en las Cien Nubes. Tu deuda kármica está pagada y finalmente estás libre del Gran Ciclo."
+ become_enlightened_decision_confirm: "Soy libre"
+ become_enlightened_decision_thrashingdragon_tt: "Tiene modificador: [GetModifier( 'knowledge_of_thousand_cranes_mother_modifier' ).GetNameWithTooltip|L]"
+ become_enlightened_decision_songoftheshadow_tt: "Tiene modificador: [GetModifier( 'wisdom_of_black_pearl_mistress_modifier' ).GetNameWithTooltip|L]"
+ become_enlightened_decision_resplendentcrane_tt: "Cada [de_jure|E] [county|E] de tus [capital|E] [empire|E] ([THIS.Char.GetCapitalLocation.GetCounty.GetTitle.GetDeJureLiege.GetDeJureLiege.GetDeJureLiege.GetNameNoTier]) debe ser [THIS.Char.GetFaith.GetAdjective]"
+ deviltiger_become_enlightened_decision_trigger: "Has matado a #V 500#! persona #weak ([SCOPE.ScriptValue('POD_killed_character_count')|0])#!"
+ thousandwhispers_become_enlightened_decision_trigger: "Has dado a luz a #V 23#! [GetTrait('dhampyr').GetName( GetPlayer )] niños, los has criado hasta la edad adulta y los has matado #weak ([SCOPE.ScriptValue('POD_killed_dhampyrchildren_count')|0])#!"
+ become_enlightened_decision_resplendentcrane_tt2: "Tienes #V Corte de Agosto#! gobierno"
+  
+ hundreds_years_birthday_decision: "Celebramos los cien años del Segundo Día del Aliento"
+ hundreds_years_birthday_decision_desc: "Es el 'segundo día del aliento' de cien años, momento de celebración."
+ hundreds_years_birthday_decision_tooltip: "Celebrarás tus cien años el segundo día de aliento"
+ hundreds_years_birthday_decision_confirm: "Envía las invitaciones"
+ dragon_boat_festival_decision: "Celebración del Festival del Barco Dragón"
+ dragon_boat_festival_decision_desc: "Un Wu podría reunirse para honrar a los espíritus durante el Festival del Bote del Dragón."
+ dragon_boat_festival_decision_tooltip: "Celebrarás el festival del barco dragón"
+ dragon_boat_festival_decision_confirm: "Envía las invitaciones"
+ practicing_arts_decision: "Practica tus artes"
+ practicing_arts_decision_desc: "La iluminación no llega sin disciplina. Como enseñan todas las filosofías orientales, debes refinarte en cuerpo, mente y espíritu antes de que las nieblas puedan disiparse. El entrenamiento intenso quema los engaños mortales; en este estado elevado, aparece (con suerte) el den."
+ practicing_arts_decision_tooltip: "Concentrarás tu tiempo en la práctica de las artes."
+ practicing_arts_decision_confirm: "Quiero practicar mis artes"
+ practicing_arts_decision_custom: "¿#bold no#! tiene el arte correspondiente [focus|E]?"
+ treking_wilds_decision: "Caminando por la naturaleza"
+ treking_wilds_decision_desc: "Muchos Wu practican rituales transmitidos desde las primeras noches del siglo [fourth_age|E]. Un Wu puede adentrarse en las tierras salvajes embrujadas de Hengeyokai para meditar sobre los Sutras de la Sangre."
+ treking_wilds_decision_tooltip: "Concentras tu tiempo en buscar aventuras."
+ treking_wilds_decision_confirm: "Quiero hacer un viaje a la naturaleza"
+ mortal_living_decision: "Vivir entre mortales"
+ mortal_living_decision_desc: "Muchos Wu practican rituales transmitidos desde las primeras noches del [fourth_age|E]. Un Wu puede vivir como mortal durante un mes de cada año."
+ mortal_living_decision_tooltip: "Visitarás el mundo mortal."
+ mortal_living_decision_confirm: "Quiero vivir con mortales"
+  
+ broken_mask_decision: "Máscara rota"
+ broken_mask_decision_desc: "Para contrarrestar su naturaleza destructiva, los Susurros cultivan la técnica de la Máscara Rota, un camino de personalidad múltiple hacia la iluminación. Mientras que la mayoría de las personas se aferran a sus identidades, los Árboles sin Raíces adoptan diferentes personalidades y luego las matan cuando parecen haber aprendido todas las lecciones. Dado que la mayoría de las vidas tienden a ser aventuras de tiempo completo, muchos vampiros adoptan una o dos personalidades a la vez, luego simulan muertes trágicas y asumen nuevos roles. Inmortales como son, los Susurros pueden experimentar la gama completa de la perspectiva humana y, por lo tanto, elevarse por encima de cualquier punto de vista único."
+ broken_mask_decision_tooltip: "Intentarás matar a todos tus amigos y amantes y comenzar una nueva vida."
+ broken_mask_decision_confirm: "Morir por mí"
+  
+ POD_nushi_duty_punish_impious_decision: "Deber: Castigar a los impíos" #NT!
+ POD_nushi_duty_punish_impious_decision_tooltip: "Termina la demanda de tu nushi" #NT!
+ POD_nushi_duty_punish_impious_decision_desc: "Castiga al estudiante impío que talló grafitis lascivos en tu imagen sagrada nushi." #NT!
+ POD_nushi_duty_punish_impious_decision_confirm: "Hecho" #NT!
+ POD_nushi_duty_punish_impious_decision_condition: "Has torturado, revocado el título, ganado un duelo o juego de mesa, o asesinado a [GetPlayer.MakeScope.GetVariable('impious').GetCharacter.GetFirstName]" #NT!
+  
+ POD_nushi_duty_prevent_vampire_decision: "Deber: Prevenir el Kin-Jin" #NT!
+ POD_nushi_duty_prevent_vampire_decision_tooltip: "Termina la demanda de tu nushi" #NT!
+ POD_nushi_duty_prevent_vampire_decision_desc: "Impedir que los bebedores de sangre occidentales profanen el santuario sagrado." #NT!
+ POD_nushi_duty_prevent_vampire_decision_confirm: "Hecho" #NT!
+ POD_nushi_duty_prevent_vampire_decision_condition: "Debes ganar una guerra contra cualquier vampiro." #NT!
+  
+ POD_nushi_duty_steal_necklace_decision: "Deber: robar collar" #NT!
+ POD_nushi_duty_steal_necklace_decision_tooltip: "Termina la demanda de tu nushi" #NT!
+ POD_nushi_duty_steal_necklace_decision_desc: "Ve al [yomi|E] [hell_of_being_skinned_alive|E] y lleva a tu nushi el collar de la Reina Yama Tou Mu." #NT!
+ POD_nushi_duty_steal_necklace_decision_confirm: "Hecho" #NT!
+ POD_nushi_duty_steal_necklace_decision_condition: "Eres dueño del collar del artefacto Tou Mu." #NT!
+  
+ POD_nushi_duty_steal_necklace_pre_decision: "Robar collar" #NT!
+ POD_nushi_duty_steal_necklace_pre_decision_tooltip: "Termina la demanda de tu nushi" #NT!
+ POD_nushi_duty_steal_necklace_pre_decision_desc: "Ve al [yomi|E] [hell_of_being_skinned_alive|E]. Como su nombre lo indica, este viaje puede ser muy mortal." #NT!
+ POD_nushi_duty_steal_necklace_pre_decision_confirm: "Hecho" #NT!
+ POD_nushi_duty_steal_necklace_pre_decision_effect_tooltip: "Descenderás a [yomi|E] y tendrás éxito o morirás." #NT!

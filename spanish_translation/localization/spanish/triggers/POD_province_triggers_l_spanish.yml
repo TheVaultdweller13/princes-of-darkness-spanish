@@ -1,19 +1,19 @@
 ﻿l_spanish:
   
- CONTROL_LEVEL_TRIGGER: "El nivel [control|E] en el [TITLE.GetName] es $COMPARATOR$ $NUM|V$" #NT!
- NOT_CONTROL_LEVEL_TRIGGER: "El nivel [control|E] en el [TITLE.GetName] es #bold no #! $COMPARATOR$ $NUM|V$" #NT!
- ITS_CONTROL_LEVEL_TRIGGER: "El nivel [control|E] en el [TITLE.GetName] es $COMPARATOR$ $NUM|V$" #NT!
- NOT_ITS_CONTROL_LEVEL_TRIGGER: "El nivel [control|E] en el [TITLE.GetName] es #bold no #! $COMPARATOR$ $NUM|V$" #NT!
+ CONTROL_LEVEL_TRIGGER: "El nivel [control|E] en el [TITLE.GetName] es $COMPARATOR$ $NUM|V$"
+ NOT_CONTROL_LEVEL_TRIGGER: "El nivel [control|E] en el [TITLE.GetName] es #bold no #! $COMPARATOR$ $NUM|V$"
+ ITS_CONTROL_LEVEL_TRIGGER: "El nivel [control|E] en el [TITLE.GetName] es $COMPARATOR$ $NUM|V$"
+ NOT_ITS_CONTROL_LEVEL_TRIGGER: "El nivel [control|E] en el [TITLE.GetName] es #bold no #! $COMPARATOR$ $NUM|V$"
   
- NOT_wall_weak_enough_trigger_tooltip: "Requiere el modificador de condado [GetModifier( 'gauntlet5_modifier' ).GetNameWithTooltip|L] o inferior para permanecer habilitado." #NT!
- wall_lower_than_3_trigger_tooltip: "$has_gauntlet3_modifier_tooltip$" #NT!
- wall_lower_than_2_trigger_tooltip: "$has_gauntlet2_modifier_tooltip$" #NT!
- wall_lower_than_1_trigger_tooltip: "$has_gauntlet1_modifier_tooltip$" #NT!
- NOT_wall_weak_trigger: "#X $TRIGGER_OR$#!\n$has_gauntlet1_modifier_tooltip$\n$has_gauntlet2_modifier_tooltip$\n$has_gauntlet3_modifier_tooltip$\n$has_gauntlet4_modifier_tooltip$\n$has_gauntlet5_modifier_tooltip$" #NT!
+ NOT_wall_weak_enough_trigger_tooltip: "Requiere el modificador de condado [GetModifier( 'gauntlet5_modifier' ).GetNameWithTooltip|L] o inferior para permanecer habilitado."
+ wall_lower_than_3_trigger_tooltip: "$has_gauntlet3_modifier_tooltip$"
+ wall_lower_than_2_trigger_tooltip: "$has_gauntlet2_modifier_tooltip$"
+ wall_lower_than_1_trigger_tooltip: "$has_gauntlet1_modifier_tooltip$"
+ NOT_wall_weak_trigger: "#X $TRIGGER_OR$#!\n$has_gauntlet1_modifier_tooltip$\n$has_gauntlet2_modifier_tooltip$\n$has_gauntlet3_modifier_tooltip$\n$has_gauntlet4_modifier_tooltip$\n$has_gauntlet5_modifier_tooltip$"
   
- IS_RIVERSIDE_TRIGGER: "Es ribereña" #NT!
- IS_SEA_TRIGGER: "[PROVINCE.GetName] es mar" #NT!
+ IS_RIVERSIDE_TRIGGER: "Es ribereña"
+ IS_SEA_TRIGGER: "[PROVINCE.GetName] es mar"
   
- oasis_development_growth: "$MOD_MONTHLY_DEVELOPMENT_GROWTH_FACTOR$ en Oasis ([terrain|E])" #NT!
+ oasis_development_growth: "$MOD_MONTHLY_DEVELOPMENT_GROWTH_FACTOR$ en Oasis ([terrain|E])"
   
- NOT_jewish_trigger: "El titular debe #bold No#! ser judío" #NT!
+ NOT_jewish_trigger: "El titular debe #bold No#! ser judío"

@@ -1,18 +1,18 @@
 ﻿l_spanish:
- POD_sorcery_become_immortal_decision: "Conviértete en inmortal" #NT!
- POD_sorcery_become_immortal_decision_desc: "Tu habilidad de alquimia ha alcanzado la cima, ahora puedes volverte verdaderamente inmortal." #NT!
- POD_sorcery_become_immortal_decision_custom: "Has encarcelado a $VALUE|0V$ [GetTrait('mummy').GetName( GetPlayer )]" #NT!
- POD_sorcery_become_immortal_decision_tooltip: "Te volverás inmortal." #NT!
- POD_sorcery_become_immortal_decision_confirm: "¿Perfección?" #NT!
+ POD_sorcery_become_immortal_decision: "Conviértete en inmortal"
+ POD_sorcery_become_immortal_decision_desc: "Tu habilidad de alquimia ha alcanzado la cima, ahora puedes volverte verdaderamente inmortal."
+ POD_sorcery_become_immortal_decision_custom: "Has encarcelado a $VALUE|0V$ [GetTrait('mummy').GetName( GetPlayer )]"
+ POD_sorcery_become_immortal_decision_tooltip: "Te volverás inmortal."
+ POD_sorcery_become_immortal_decision_confirm: "¿Perfección?"
   
- POD_sorcery_create_vampire_interaction: "Conviértete en vampiro" #NT!
- POD_sorcery_create_vampire_interaction_desc: "Tu habilidad de alquimia ha llegado al punto máximo, ahora puedes crear un brebaje capaz de convertir a alguien en vampiro." #NT!
- POD_sorcery_create_vampire_interaction_custom: "Has encarcelado $VALUE|0V$ [GetTrait('vampire').GetName( GetPlayer )]" #NT!
- VAMPIRE_IS_SHUNNED: "[GetTrait('vampire').GetName( GetPlayer )] es rechazado: $VALUE|+0$" #NT!
- VAMPIRE_IS_CRIME: "[GetTrait('vampire').GetName( GetPlayer )] es Crimen: $VALUE|+0$" #NT!
+ POD_sorcery_create_vampire_interaction: "Conviértete en vampiro"
+ POD_sorcery_create_vampire_interaction_desc: "Tu habilidad de alquimia ha llegado al punto máximo, ahora puedes crear un brebaje capaz de convertir a alguien en vampiro."
+ POD_sorcery_create_vampire_interaction_custom: "Has encarcelado $VALUE|0V$ [GetTrait('vampire').GetName( GetPlayer )]"
+ VAMPIRE_IS_SHUNNED: "[GetTrait('vampire').GetName( GetPlayer )] es rechazado: $VALUE|+0$"
+ VAMPIRE_IS_CRIME: "[GetTrait('vampire').GetName( GetPlayer )] es Crimen: $VALUE|+0$"
   
- POD_sorcery_create_shapeshifter_interaction: "Conviértete en un cambiaformas" #NT!
- POD_sorcery_create_shapeshifter_interaction_desc: "Tu habilidad de alquimia ha llegado al punto máximo, ahora puedes crear un brebaje capaz de convertir a alguien en un cambiaformas." #NT!
- POD_sorcery_create_shapeshifter_interaction_custom: "Has encarcelado $VALUE|0V$ [GetTraitGroup('shapeshifter').GetName()]" #NT!
- SHIFTER_IS_SHUNNED: "[GetTraitGroup('shapeshifter').GetName()] es rechazado: $VALUE|+0$" #NT!
- SHIFTER_IS_CRIME: "[GetTraitGroup('shapeshifter').GetName()] es Crimen: $VALUE|+0$" #NT!
+ POD_sorcery_create_shapeshifter_interaction: "Conviértete en un cambiaformas"
+ POD_sorcery_create_shapeshifter_interaction_desc: "Tu habilidad de alquimia ha llegado al punto máximo, ahora puedes crear un brebaje capaz de convertir a alguien en un cambiaformas."
+ POD_sorcery_create_shapeshifter_interaction_custom: "Has encarcelado $VALUE|0V$ [GetTraitGroup('shapeshifter').GetName()]"
+ SHIFTER_IS_SHUNNED: "[GetTraitGroup('shapeshifter').GetName()] es rechazado: $VALUE|+0$"
+ SHIFTER_IS_CRIME: "[GetTraitGroup('shapeshifter').GetName()] es Crimen: $VALUE|+0$"

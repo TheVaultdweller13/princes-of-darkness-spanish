@@ -1,68 +1,68 @@
 ﻿l_spanish:
   
- IS_A_COURTIER_OR_VASSAL_OF_CHARACTER: "¿Es [TARGET_CHARACTER.GetShortUINamePossessive] [courtier|E] o [direct_vassal|E]?" #NT!
- CHARACTER_IS_A_COURTIER_OR_VASSAL_OF_CHARACTER: "[CHARACTER.GetShortUIName|U] es [TARGET_CHARACTER.GetShortUINamePossessive] [courtier|E] o [direct_vassal|E]" #NT!
- I_AM_A_COURTIER_OR_VASSAL_OF_CHARACTER: "Eres [TARGET_CHARACTER.GetShortUINamePossessive] [courtier|E] o [direct_vassal|E]" #NT!
- IS_NOT_A_COURTIER_OR_VASSAL_OF_CHARACTER: "¿#bold no es #! [TARGET_CHARACTER.GetShortUINamePossessive] [courtier|E] o [direct_vassal|E]?" #NT!
- CHARACTER_IS_NOT_A_COURTIER_OR_VASSAL_OF_CHARACTER: "[CHARACTER.GetShortUIName|U] es #bold no#! [TARGET_CHARACTER.GetShortUINamePossessive] [courtier|E] o [direct_vassal|E]" #NT!
- I_AM_NOT_A_COURTIER_OR_VASSAL_OF_CHARACTER: "Eres #bold no #! [TARGET_CHARACTER.GetShortUINamePossessive] [courtier|E] o [direct_vassal|E]" #NT!
+ IS_A_COURTIER_OR_VASSAL_OF_CHARACTER: "¿Es [TARGET_CHARACTER.GetShortUINamePossessive] [courtier|E] o [direct_vassal|E]?"
+ CHARACTER_IS_A_COURTIER_OR_VASSAL_OF_CHARACTER: "[CHARACTER.GetShortUIName|U] es [TARGET_CHARACTER.GetShortUINamePossessive] [courtier|E] o [direct_vassal|E]"
+ I_AM_A_COURTIER_OR_VASSAL_OF_CHARACTER: "Eres [TARGET_CHARACTER.GetShortUINamePossessive] [courtier|E] o [direct_vassal|E]"
+ IS_NOT_A_COURTIER_OR_VASSAL_OF_CHARACTER: "¿#bold no es #! [TARGET_CHARACTER.GetShortUINamePossessive] [courtier|E] o [direct_vassal|E]?"
+ CHARACTER_IS_NOT_A_COURTIER_OR_VASSAL_OF_CHARACTER: "[CHARACTER.GetShortUIName|U] es #bold no#! [TARGET_CHARACTER.GetShortUINamePossessive] [courtier|E] o [direct_vassal|E]"
+ I_AM_NOT_A_COURTIER_OR_VASSAL_OF_CHARACTER: "Eres #bold no #! [TARGET_CHARACTER.GetShortUINamePossessive] [courtier|E] o [direct_vassal|E]"
   
- has_full_true_name_hook: "Tiene [strong_hook|E] #weak ($true_name_hook$)#! en [TARGET_CHARACTER.GetName]" #NT!
- not_has_full_true_name_hook: "No tiene un [strong_hook|E] #weak ($true_name_hook$)#! en [TARGET_CHARACTER.GetName]" #NT!
+ has_full_true_name_hook: "Tiene [strong_hook|E] #weak ($true_name_hook$)#! en [TARGET_CHARACTER.GetName]"
+ not_has_full_true_name_hook: "No tiene un [strong_hook|E] #weak ($true_name_hook$)#! en [TARGET_CHARACTER.GetName]"
   
- POD_has_main_trait: "[TARGET_CHARACTER.GetShortUIName] ¿tiene alguna cicatriz, herida o principal? [trait|E]" #NT!
- POD_has_injury_trait: "[TARGET_CHARACTER.GetShortUIName] tiene alguna cicatriz o herida [trait|E]" #NT!
- POD_has_disease_trait: "[TARGET_CHARACTER.GetShortUIName] tiene alguna enfermedad [trait|E]" #NT!
- NOT_POD_has_main_trait: "[TARGET_CHARACTER.GetShortUIName] ¿Tiene #bold no#! alguna cicatriz, herida o lesión principal? [trait|E]" #NT!
- NOT_POD_has_injury_trait: "[TARGET_CHARACTER.GetShortUIName] tiene #bold no#! alguna cicatriz o herida [trait|E]" #NT!
- NOT_POD_has_disease_trait: "[TARGET_CHARACTER.GetShortUIName] #bold no#! tiene alguna enfermedad [trait|E]" #NT!
+ POD_has_main_trait: "[TARGET_CHARACTER.GetShortUIName] ¿tiene alguna cicatriz, herida o principal? [trait|E]"
+ POD_has_injury_trait: "[TARGET_CHARACTER.GetShortUIName] tiene alguna cicatriz o herida [trait|E]"
+ POD_has_disease_trait: "[TARGET_CHARACTER.GetShortUIName] tiene alguna enfermedad [trait|E]"
+ NOT_POD_has_main_trait: "[TARGET_CHARACTER.GetShortUIName] ¿Tiene #bold no#! alguna cicatriz, herida o lesión principal? [trait|E]"
+ NOT_POD_has_injury_trait: "[TARGET_CHARACTER.GetShortUIName] tiene #bold no#! alguna cicatriz o herida [trait|E]"
+ NOT_POD_has_disease_trait: "[TARGET_CHARACTER.GetShortUIName] #bold no#! tiene alguna enfermedad [trait|E]"
   
- NOT_POD_permanent_scarred: "[TARGET_CHARACTER.GetShortUINamePossessive] [GetTrait('scarred').GetName( GetPlayer )] [trait|E] no se puede curar" #NT!
- NOT_POD_permanent_disfigured: "[TARGET_CHARACTER.GetShortUINamePossessive] [GetTrait('disfigured').GetName( GetPlayer )] [trait|E] no se puede curar" #NT!
- NOT_POD_permanent_blind: "[TARGET_CHARACTER.GetShortUINamePossessive] [GetTrait('blind').GetName( GetPlayer )] [trait|E] no se puede curar" #NT!
- NOT_POD_permanent_one_eyed: "[TARGET_CHARACTER.GetShortUINamePossessive] [GetTrait('one_eyed').GetName( GetPlayer )] [trait|E] no se puede curar" #NT!
- NOT_POD_permanent_maimed: "[TARGET_CHARACTER.GetShortUINamePossessive] [GetTrait('maimed').GetName( GetPlayer )] [trait|E] no se puede curar" #NT!
- NOT_POD_permanent_one_legged: "[TARGET_CHARACTER.GetShortUINamePossessive] [GetTrait('one_legged').GetName( GetPlayer )] [trait|E] no se puede curar" #NT!
- NOT_POD_permanent_eunuch: "[TARGET_CHARACTER.GetShortUINamePossessive] [GetTrait('eunuch').GetName( GetPlayer )] [trait|E] no se puede curar" #NT!
+ NOT_POD_permanent_scarred: "[TARGET_CHARACTER.GetShortUINamePossessive] [GetTrait('scarred').GetName( GetPlayer )] [trait|E] no se puede curar"
+ NOT_POD_permanent_disfigured: "[TARGET_CHARACTER.GetShortUINamePossessive] [GetTrait('disfigured').GetName( GetPlayer )] [trait|E] no se puede curar"
+ NOT_POD_permanent_blind: "[TARGET_CHARACTER.GetShortUINamePossessive] [GetTrait('blind').GetName( GetPlayer )] [trait|E] no se puede curar"
+ NOT_POD_permanent_one_eyed: "[TARGET_CHARACTER.GetShortUINamePossessive] [GetTrait('one_eyed').GetName( GetPlayer )] [trait|E] no se puede curar"
+ NOT_POD_permanent_maimed: "[TARGET_CHARACTER.GetShortUINamePossessive] [GetTrait('maimed').GetName( GetPlayer )] [trait|E] no se puede curar"
+ NOT_POD_permanent_one_legged: "[TARGET_CHARACTER.GetShortUINamePossessive] [GetTrait('one_legged').GetName( GetPlayer )] [trait|E] no se puede curar"
+ NOT_POD_permanent_eunuch: "[TARGET_CHARACTER.GetShortUINamePossessive] [GetTrait('eunuch').GetName( GetPlayer )] [trait|E] no se puede curar"
   
- NUM_OF_RELATION_DEMONIC_THRALL_TARGET_TRIGGER: "El número de esclavos demoníacos es $COMPARATOR$ $NUM|V0$" #NT!
- NUM_OF_RELATION_SHADOW_TWIN_SERVANT_TRIGGER: "El número de Shadow Twin es $COMPARATOR$ $NUM|V0$" #NT!
- NUM_OF_RELATION_MIRROR_DUPLICATE_SERVANT_TRIGGER: "El número de duplicados de espejo es $COMPARATOR$ $NUM|V0$" #NT!
- NUM_OF_RELATION_DARKLING_MIRROR_SERVANT_TRIGGER: "El número de Darkling Mirror es $COMPARATOR$ $NUM|V0$" #NT!
- NUM_OF_RELATION_SHADOWY_DUPLICATE_SERVANT_TRIGGER: "El número de duplicados de Shadowy es $COMPARATOR$ $NUM|V0$" #NT!
- NUM_OF_RELATION_PHANTOM_SHADOW_SERVANT_TRIGGER: "El número de Phantom Shadow es $COMPARATOR$ $NUM|V0$" #NT!
- NUM_OF_RELATION_SEPARATED_KHAIBIT_SERVANT_TRIGGER: "El número de Khaibit separados es $COMPARATOR$ $NUM|V0$" #NT!
- NUM_OF_RELATION_SEPARATED_SHADOW_SERVANT_TRIGGER: "El número de sombras separadas es $COMPARATOR$ $NUM|V0$" #NT!
- NUM_OF_RELATION_UNSPEAKABLE_SERVITOR_SERVANT_TRIGGER: "El número de servidores inefables es $COMPARATOR$ $NUM|V0$" #NT!
- NUM_OF_RELATION_POSSESSED_TARGET_TRIGGER: "El número de marionetas es $COMPARATOR$ $NUM|V0$" #NT!
- NUM_OF_RELATION_EFFIGY_CHARACTER_TARGET_TRIGGER: "El número de efigie es $COMPARATOR$ $NUM|V0$" #NT!
- NUM_OF_RELATION_DREAMER_MEMBER_TARGET_TRIGGER: "El número de Dreamer es $COMPARATOR$ $NUM|V0$" #NT!
- NUM_OF_RELATION_WORSHIPPING_CULTIST_TARGET_TRIGGER: "El número de cultistas es $COMPARATOR$ $NUM|V0$" #NT!
+ NUM_OF_RELATION_DEMONIC_THRALL_TARGET_TRIGGER: "El número de esclavos demoníacos es $COMPARATOR$ $NUM|V0$"
+ NUM_OF_RELATION_SHADOW_TWIN_SERVANT_TRIGGER: "El número de Shadow Twin es $COMPARATOR$ $NUM|V0$"
+ NUM_OF_RELATION_MIRROR_DUPLICATE_SERVANT_TRIGGER: "El número de duplicados de espejo es $COMPARATOR$ $NUM|V0$"
+ NUM_OF_RELATION_DARKLING_MIRROR_SERVANT_TRIGGER: "El número de Darkling Mirror es $COMPARATOR$ $NUM|V0$"
+ NUM_OF_RELATION_SHADOWY_DUPLICATE_SERVANT_TRIGGER: "El número de duplicados de Shadowy es $COMPARATOR$ $NUM|V0$"
+ NUM_OF_RELATION_PHANTOM_SHADOW_SERVANT_TRIGGER: "El número de Phantom Shadow es $COMPARATOR$ $NUM|V0$"
+ NUM_OF_RELATION_SEPARATED_KHAIBIT_SERVANT_TRIGGER: "El número de Khaibit separados es $COMPARATOR$ $NUM|V0$"
+ NUM_OF_RELATION_SEPARATED_SHADOW_SERVANT_TRIGGER: "El número de sombras separadas es $COMPARATOR$ $NUM|V0$"
+ NUM_OF_RELATION_UNSPEAKABLE_SERVITOR_SERVANT_TRIGGER: "El número de servidores inefables es $COMPARATOR$ $NUM|V0$"
+ NUM_OF_RELATION_POSSESSED_TARGET_TRIGGER: "El número de marionetas es $COMPARATOR$ $NUM|V0$"
+ NUM_OF_RELATION_EFFIGY_CHARACTER_TARGET_TRIGGER: "El número de efigie es $COMPARATOR$ $NUM|V0$"
+ NUM_OF_RELATION_DREAMER_MEMBER_TARGET_TRIGGER: "El número de Dreamer es $COMPARATOR$ $NUM|V0$"
+ NUM_OF_RELATION_WORSHIPPING_CULTIST_TARGET_TRIGGER: "El número de cultistas es $COMPARATOR$ $NUM|V0$"
   
- effigy_on_task: "Ya tienes una efigie en tarea." #NT!
- can_hurt_wraith: "Tú no tienes #bold#! poder para dañar a un espíritu." #NT!
- can_imprison_wraith: "Tú no tienes #bold#! poder para encarcelar un espíritu." #NT!
- lost_in_umbra: "[CHARACTER.GetShortUIName|U] es #bold no #! perdido en la sombra" #NT!
- NOT_lost_in_umbra: "[CHARACTER.GetShortUIName|U] se pierde en la umbra" #NT!
+ effigy_on_task: "Ya tienes una efigie en tarea."
+ can_hurt_wraith: "Tú no tienes #bold#! poder para dañar a un espíritu."
+ can_imprison_wraith: "Tú no tienes #bold#! poder para encarcelar un espíritu."
+ lost_in_umbra: "[CHARACTER.GetShortUIName|U] es #bold no #! perdido en la sombra"
+ NOT_lost_in_umbra: "[CHARACTER.GetShortUIName|U] se pierde en la umbra"
   
- kueijin_cant_follow_you_faith_tooltip: "[GetTrait('kueijin').GetName( GetNullCharacter )] ¡no puede seguir a [GetPlayer.GetFaith.GetAdjective]!" #NT!
- vamp_cant_follow_you_faith_tooltip: "[GetTrait('vampire').GetName( GetNullCharacter )] ¡no puede seguir a [GetPlayer.GetFaith.GetAdjective]!" #NT!
- ghoul_cant_follow_you_faith_tooltip: "[GetTrait('ghoul').GetName( GetNullCharacter )]/[GetTrait('revenant').GetName( GetNullCharacter )] ¡no puede seguir a [GetPlayer.GetFaith.GetAdjective]!" #NT!
- shapeshifter_cant_follow_you_faith_tooltip: "[GetTraitGroup('shapeshifter').GetName()] ¡no puede seguir a [GetPlayer.GetFaith.GetAdjective]!" #NT!
- hunter_cant_follow_you_faith_tooltip: "[GetTrait('supehunter').GetName( GetNullCharacter )] ¡no puede seguir a [GetPlayer.GetFaith.GetAdjective]!" #NT!
- mortal_cant_follow_you_faith_tooltip: "[GetTrait('mortal').GetName( GetNullCharacter )] ¡no puede seguir a [GetPlayer.GetFaith.GetAdjective]!" #NT!
- mummy_cant_follow_you_faith_tooltip: "[GetTrait('mummy').GetName( GetNullCharacter )] ¡no puede seguir a [GetPlayer.GetFaith.GetAdjective]!" #NT!
- wraith_cant_follow_you_faith_tooltip: "[GetTrait('wraith').GetName( GetNullCharacter )] ¡no puede seguir a [GetPlayer.GetFaith.GetAdjective]!" #NT!
- mage_cant_follow_you_faith_tooltip: "[GetTrait('mage').GetName( GetNullCharacter )] ¡no puede seguir a [GetPlayer.GetFaith.GetAdjective]!" #NT!
- fae_cant_follow_you_faith_tooltip: "[GetTrait('fae').GetName( GetNullCharacter )] ¡no puede seguir a [GetPlayer.GetFaith.GetAdjective]!" #NT!
- demon_cant_follow_you_faith_tooltip: "[GetTrait('demon').GetName( GetNullCharacter )] ¡no puede seguir a [GetPlayer.GetFaith.GetAdjective]!" #NT!
- changeling_cant_follow_you_faith_tooltip: "[GetTrait('changeling').GetName( GetNullCharacter )]/[GetTrait('kinain').GetName( GetNullCharacter )] ¡no puede seguir a [GetPlayer.GetFaith.GetAdjective]!" #NT!
- kinfolk_cant_follow_you_faith_tooltip: "[GetTrait('kinfolk').GetName( GetNullCharacter )] ¡no puede seguir a [GetPlayer.GetFaith.GetAdjective]!" #NT!
- african_kiths_cant_follow_you_faith_tooltip: "[GetTraitGroup('african_kiths').GetName()] ¡no puede seguir a [GetPlayer.GetFaith.GetAdjective]!" #NT!
- hsien_cant_follow_you_faith_tooltip: "[GetTraitGroup('hsien').GetName()] ¡no puede seguir a [GetPlayer.GetFaith.GetAdjective]!" #NT!
- jinn_cant_follow_you_faith_tooltip: "[GetTraitGroup('jinn').GetName()] ¡no puede seguir a [GetPlayer.GetFaith.GetAdjective]!" #NT!
- kithain_cant_follow_you_faith_tooltip: "[GetTraitGroup('kithain').GetName()] ¡no puede seguir a [GetPlayer.GetFaith.GetAdjective]!" #NT!
- werewolf_cant_follow_you_faith_tooltip: "[GetTrait('werewolf').GetName( GetNullCharacter )] no puede seguir a [GetPlayer.GetFaith.GetAdjective]!" #NT!
- bastet_cant_follow_you_faith_tooltip: "[GetTrait('bastet').GetName( GetNullCharacter )] ¡no puede seguir a [GetPlayer.GetFaith.GetAdjective]!" #NT!
+ kueijin_cant_follow_you_faith_tooltip: "[GetTrait('kueijin').GetName( GetNullCharacter )] ¡no puede seguir a [GetPlayer.GetFaith.GetAdjective]!"
+ vamp_cant_follow_you_faith_tooltip: "[GetTrait('vampire').GetName( GetNullCharacter )] ¡no puede seguir a [GetPlayer.GetFaith.GetAdjective]!"
+ ghoul_cant_follow_you_faith_tooltip: "[GetTrait('ghoul').GetName( GetNullCharacter )]/[GetTrait('revenant').GetName( GetNullCharacter )] ¡no puede seguir a [GetPlayer.GetFaith.GetAdjective]!"
+ shapeshifter_cant_follow_you_faith_tooltip: "[GetTraitGroup('shapeshifter').GetName()] ¡no puede seguir a [GetPlayer.GetFaith.GetAdjective]!"
+ hunter_cant_follow_you_faith_tooltip: "[GetTrait('supehunter').GetName( GetNullCharacter )] ¡no puede seguir a [GetPlayer.GetFaith.GetAdjective]!"
+ mortal_cant_follow_you_faith_tooltip: "[GetTrait('mortal').GetName( GetNullCharacter )] ¡no puede seguir a [GetPlayer.GetFaith.GetAdjective]!"
+ mummy_cant_follow_you_faith_tooltip: "[GetTrait('mummy').GetName( GetNullCharacter )] ¡no puede seguir a [GetPlayer.GetFaith.GetAdjective]!"
+ wraith_cant_follow_you_faith_tooltip: "[GetTrait('wraith').GetName( GetNullCharacter )] ¡no puede seguir a [GetPlayer.GetFaith.GetAdjective]!"
+ mage_cant_follow_you_faith_tooltip: "[GetTrait('mage').GetName( GetNullCharacter )] ¡no puede seguir a [GetPlayer.GetFaith.GetAdjective]!"
+ fae_cant_follow_you_faith_tooltip: "[GetTrait('fae').GetName( GetNullCharacter )] ¡no puede seguir a [GetPlayer.GetFaith.GetAdjective]!"
+ demon_cant_follow_you_faith_tooltip: "[GetTrait('demon').GetName( GetNullCharacter )] ¡no puede seguir a [GetPlayer.GetFaith.GetAdjective]!"
+ changeling_cant_follow_you_faith_tooltip: "[GetTrait('changeling').GetName( GetNullCharacter )]/[GetTrait('kinain').GetName( GetNullCharacter )] ¡no puede seguir a [GetPlayer.GetFaith.GetAdjective]!"
+ kinfolk_cant_follow_you_faith_tooltip: "[GetTrait('kinfolk').GetName( GetNullCharacter )] ¡no puede seguir a [GetPlayer.GetFaith.GetAdjective]!"
+ african_kiths_cant_follow_you_faith_tooltip: "[GetTraitGroup('african_kiths').GetName()] ¡no puede seguir a [GetPlayer.GetFaith.GetAdjective]!"
+ hsien_cant_follow_you_faith_tooltip: "[GetTraitGroup('hsien').GetName()] ¡no puede seguir a [GetPlayer.GetFaith.GetAdjective]!"
+ jinn_cant_follow_you_faith_tooltip: "[GetTraitGroup('jinn').GetName()] ¡no puede seguir a [GetPlayer.GetFaith.GetAdjective]!"
+ kithain_cant_follow_you_faith_tooltip: "[GetTraitGroup('kithain').GetName()] ¡no puede seguir a [GetPlayer.GetFaith.GetAdjective]!"
+ werewolf_cant_follow_you_faith_tooltip: "[GetTrait('werewolf').GetName( GetNullCharacter )] no puede seguir a [GetPlayer.GetFaith.GetAdjective]!"
+ bastet_cant_follow_you_faith_tooltip: "[GetTrait('bastet').GetName( GetNullCharacter )] ¡no puede seguir a [GetPlayer.GetFaith.GetAdjective]!"
   
- can_add_stress_trait_tooltip: "Debe tener un rasgo, relación o fe adecuada." #NT!
+ can_add_stress_trait_tooltip: "Debe tener un rasgo, relación o fe adecuada."
