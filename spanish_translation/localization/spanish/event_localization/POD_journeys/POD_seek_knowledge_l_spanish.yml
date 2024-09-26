@@ -1,6 +1,7 @@
 ﻿l_spanish:
   
  POD_seek_knowledge.2.t: "Conociendo al Mentor"
+ POD_seek_knowledge.2.desc.coterie_member: "Resulta que no tuve que buscar mucho. [recipient.GetFirstNameNicknamed] ya tiene el conocimiento que busco, y como miembro de $POD_player_coterie$, [recipient.GetSheHe] está feliz de compartirlo conmigo. Pasamos un tiempo recordando nuestras aventuras compartidas, luego la conversación gira en torno a asuntos más prácticos." #NT!
  POD_seek_knowledge.2.desc: "Después de llegar a [ROOT.Var('current_journey').Var('destination').Province.GetCounty.GetTitle.GetNameNoTier], empiezo a hacer averiguaciones sobre el paradero de mi futuro profesor.\n\n"
  POD_seek_knowledge.2.desc.local_ruler: "Resulta que no es otro que el gobernante del dominio local, [recipient.GetNameNicknamed]."
  POD_seek_knowledge.2.desc.wanderer: "En una posada sórdida, finalmente me encuentro con la persona que estaba buscando: un vagabundo llamado [recipient.GetFirstName]."
@@ -18,3 +19,32 @@
  POD_seek_knowledge.100.desc: "Después de un largo período de estudio y práctica, mi comprensión finalmente está completa."
  POD_seek_knowledge.100.desc.tutor: "No podría haberlo hecho sin mi [GetCourtPositionType('court_tutor_court_position').GetName()], [court_tutor.GetNameNicknamed]."
  POD_seek_knowledge.100.option.a: "Mi duro trabajo ha dado sus frutos."
+  
+  
+  #############DEMONS LORE 
+  
+ POD_demon_lore_learning_events.1.t: "Aprendiendo la tradición de la nueva casa" #NT!
+ POD_demon_lore_learning_events.1.desc: "Los Lores son los restos de las habilidades divinas que poseían los demonios como Elohim. El Lore de una Casa Celestial no es nada menos que los secretos recopilados del universo, evocaciones que abarcan los fundamentos de la realidad y gobiernan las fuerzas que la mantienen en movimiento. Antes de la Caída, cada Casa tenía sus propios conjuntos específicos de Lore que reflejaban sus deberes dentro de la jerarquía angelical. Estas evocaciones se consideraban el corazón de cada Casa, y se guardaban celosamente como una cuestión de pragmatismo, y muchos entre los Caídos intercambiaban fragmentos de su Lore entre sí para obtener cualquier ventaja que pudieran contra sus enemigos más recalcitrantes." #NT!
+ POD_demon_lore_learning_events.1.a: "Mucho más cerca de mi poder original." #NT!
+  
+ learnt_celestials_lore: "Aprende la tradición de los celestiales" #NT!
+ learnt_flame_lore: "Aprende la tradición de la llama" #NT!
+ learnt_radiance_lore: "Aprende la tradición de Radiance" #NT!
+ learnt_awakening_lore: "Aprende la tradición del despertar" #NT!
+ learnt_firmament_lore: "Aprende la tradición del firmamento" #NT!
+ learnt_winds_lore: "Aprende la tradición de los vientos" #NT!
+ learnt_earth_lore: "Conozca la tradición de la Tierra" #NT!
+ learnt_paths_lore: "Aprende el saber de los caminos" #NT!
+ learnt_forge_lore: "Aprende el saber de Forge" #NT!
+ learnt_light_lore: "Aprende el saber de la luz" #NT!
+ learnt_patterns_lore: "Aprenda la tradición de los patrones" #NT!
+ learnt_portals_lore: "Conozca la tradición de los portales" #NT!
+ learnt_longing_lore: "Aprende la tradición del anhelo" #NT!
+ learnt_storms_lore: "Aprende la tradición de las tormentas" #NT!
+ learnt_transfiguration_lore: "Aprende la tradición de la transfiguración" #NT!
+ learnt_beast_lore: "Aprende la tradición de las bestias" #NT!
+ learnt_flesh_lore: "Aprende el saber de la carne" #NT!
+ learnt_wild_lore: "Conozca la tradición de Wild" #NT!
+ learnt_death_lore: "Aprende la tradición de la muerte" #NT!
+ learnt_spirit_lore: "Aprende la tradición del espíritu" #NT!
+ learnt_realms_lore: "Aprende la tradición de los reinos" #NT!

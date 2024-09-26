@@ -1,28 +1,4 @@
 ﻿l_spanish:
-  ######### 
-  # Intro # 
-  ######### 
-  
- POD_spirit_travel.1000.t: "Introducción a Umbra"
- POD_spirit_travel.1000.desc: "¿Qué tema te gustaría explorar?"
- POD_spirit_travel.1000.a: "Exploración"
- POD_spirit_travel.1000.b: "Acción"
- POD_spirit_travel.1000.c: "Interés"
- POD_spirit_travel.1000.d: "Peligro"
- POD_spirit_travel.1000.e: "Estoy listo, ¡Vamos!"
- POD_spirit_travel.1001.a: "Volvamos."
-  
- POD_spirit_travel.1001.t: "Exploración"
- POD_spirit_travel.1001.desc: "La opción en la parte inferior del panel representa los reinos umbral que puedes visitar. La opción en el lado izquierdo del panel es la ubicación del subreino/reino. Un reino umbral puede ser de uno de seis tipos diferentes según el color del fondo de la opción: [astral_reaches|E], [dreaming|E], [spirit_wilds|E], [underworld|E], [deep_umbra|E] y áreas que no pertenecen a esos cinco. Los primeros cinco necesitan el rasgo o la ventaja correspondiente para acceder. Como tal, un reino umbral está oculto si no cumples con el requisito, como estar en una región costera/marina, tener el rasgo/la fe adecuados o haber pasado una fecha determinada."
-  
- POD_spirit_travel.1002.t: "Acción"
- POD_spirit_travel.1002.desc: "El lado derecho del panel enumera las acciones que se pueden usar en el reino de la umbra, incluido un mapa que te permite viajar rápidamente al punto de partida. Algunos reinos de la umbra tienen gobernantes que te permiten intercambiar gracia (que representa el favor de estos gobernantes) por beneficios. Cuando encuentras un interés, puedes usar una acción para iniciar una expedición de umbra, que abre un mapa que contiene desafíos, eventos aleatorios y duelos. Cuanto más estresado estés, más duelos se generarán en el camino."
-  
- POD_spirit_travel.1003.t: "Interés"
- POD_spirit_travel.1003.desc: "Puedes colocar un explorador de umbra en la parte inferior derecha del panel si el reino umbral lo permite. El explorador debe tener la capacidad de viajar por la umbra.\nLos exploradores informarán sobre eventos interesantes que encuentren en la umbra y aumentarán el nivel de conocimiento sobre el reino umbral que están explorando. Esto brinda beneficios que puede ver si pasa el mouse sobre el ícono de nivel de conocimiento correspondiente."
-  
- POD_spirit_travel.1004.t: "Peligro"
- POD_spirit_travel.1004.desc: "Si el nombre del reino umbral está coloreado en rojo, esto significa que este reino umbral es un lugar peligroso. Al ingresar, no podrás usar interacciones con otros personajes o incluso quedarás atrapado en este lugar. Por lo general, tampoco obtendrás intereses beneficiosos de la umbra con un explorador estacionado en él.\nCuando ocurre una gran vorágine, todos los reinos [underworld|E] se convertirán en una ubicación peligrosa.\nOblivion tiene un ícono de calavera por una razón. No entres en el olvido."
   
   ######## 
   # Pass # 
@@ -85,13 +61,28 @@
  POD_umbra_lost.100.desc: "#X Caes en el olvido...#!"
  POD_umbra_lost.100.a: "#X ...#!"
   
+ POD_umbra_lost.101.t: "Perdido en la tempestad" #NT!
+ POD_umbra_lost.101.desc: "No pudiste orientarte en la cambiante tempestad y terminaste en el mismo lugar donde comenzaste." #NT!
+ POD_umbra_lost.101.a: "Bien." #NT!
+  
+ POD_umbra_lost.102.t: "Atrapado en el laberinto" #NT!
+ POD_umbra_lost.102.desc: "No pudiste orientarte en el laberinto sin sentido, terminaste en el mismo lugar donde comenzaste." #NT!
+ POD_umbra_lost.102.a: "Estoy perdido." #NT!
+  
+ POD_umbra_lost.103.t: "Atrapado en el Yomi" #NT!
+ POD_umbra_lost.103.desc: "No pudiste orientarte en el infernal [yomi|E], terminaste en el mismo lugar donde empezaste." #NT!
+ POD_umbra_lost.103.a: "Estoy perdido." #NT!
+  
  POD_umbra_lost.104.t: "Atrapado en el abismo"
  POD_umbra_lost.104.desc_demon: "Caes una vez más en la prisión eterna creada para los de tu especie después de la rebelión de Lucifer. Dios, al parecer, todavía tiene la última palabra."
  POD_umbra_lost.104.desc_infernalist: "Caes en el pozo y parece que no hay forma de salir a menos que prometas hacer un sacrificio a un señor demonio..."
  POD_umbra_lost.104.a: "¡Me escaparé!"
  POD_umbra_lost.104.b: "Sacrificaré a un prisionero."
  POD_umbra_lost.104.c: "¡No hago tratos con demonios!"
- trapped_in_abyss_modifier: "Atrapado en el abismo"
+  
+ POD_umbra_lost.105.t: "Atrapado en Malfeas" #NT!
+ POD_umbra_lost.105.desc: "No pudiste orientarte en el horrible Malfeas, terminaste en el mismo lugar donde comenzaste." #NT!
+ POD_umbra_lost.105.a: "Estoy perdido." #NT!
   
   ######### 
   # Train # 
@@ -122,116 +113,164 @@
   
   # Core 
   
- umbra_adv_challange_spirit: "Empiezas un [single_combat_duel|E] con un espíritu."
- umbra_adv_challange_spirit.win: "Obtienes una bendición [modifier|E] o [prestige|E]."
+ umbra_expedition_challange_spirit: "Empiezas un [single_combat_duel|E] con un espíritu." #NT!
+ umbra_expedition_challange_spirit.win: "Obtienes una bendición [modifier|E] o [prestige|E]." #NT!
   
- POD_umbra_adv.101.t: "Victoria espiritual"
- POD_umbra_adv.101.desc: "Elige una bendición."
- POD_umbra_adv.101.fallback: "Los rechazo."
+ POD_umbra_expedition.101.t: "Victoria espiritual" #NT!
+ POD_umbra_expedition.101.desc: "Elige una bendición." #NT!
+ POD_umbra_expedition.101.fallback: "Los rechazo." #NT!
   
- POD_umbra_adv.201.t: "Tesoro"
- POD_umbra_adv.201.desc: "Encontraste un tesoro con varios artefactos, ¿cuál deberías adquirir?"
- POD_umbra_adv.201.reroll: "¿Otras opciones?"
- POD_umbra_adv.201.fallback: "Los venderé."
- POD_umbra_adv.201.artifact_1: "[artifact_1.Custom('ColorizedArtifactNameNoTooltip')]"
- POD_umbra_adv.201.artifact_2: "[artifact_2.Custom('ColorizedArtifactNameNoTooltip')]"
- POD_umbra_adv.201.artifact_3: "[artifact_3.Custom('ColorizedArtifactNameNoTooltip')]"
+ POD_umbra_expedition.201.t: "Buhonero espiritual" #NT!
+ POD_umbra_expedition.201.desc: "Encontraste un espíritu que vende artefactos, ¿cuál quieres comprar?" #NT!
+ POD_umbra_expedition.201.reroll: "¿Otras opciones?" #NT!
+ POD_umbra_expedition.201.fallback: "No necesito esos." #NT!
+ POD_umbra_expedition.201.artifact_1: "[artifact_1.Custom('ColorizedArtifactNameNoTooltip')]" #NT!
+ POD_umbra_expedition.201.artifact_2: "[artifact_2.Custom('ColorizedArtifactNameNoTooltip')]" #NT!
+ POD_umbra_expedition.201.artifact_3: "[artifact_3.Custom('ColorizedArtifactNameNoTooltip')]" #NT!
   
   # Legendary Gift 
   
- POD_umbra_adv.300.t: "Encuentro con el guerrero encarnado"
- POD_umbra_adv.300.desc: "Incarna es un término usado por los Fera para describir una cierta clase de espíritus; más débiles que los Celestinos, pero aún así espíritus más grandes en cualquier medida. Los Incarnae tienen un propósito definido y una esfera de influencia, pero son lo suficientemente poderosos como para existir en múltiples niveles de realidad.\nSiguiendo la pista, has encontrado con éxito al Guerrero Incarna, quien promete enseñarte el legendario e imparable don del guerrero si puedes completar una misión: matar al gobernante wyrmmish más poderoso del mundo."
- POD_umbra_adv.300.a: "Desafío aceptado."
- POD_umbra_adv.302.t: "Guerrero imparable"
- POD_umbra_adv.302.desc: "Has llegado a la ubicación del enemigo destinado por tu misión, es hora de luchar a muerte."
- POD_umbra_adv.302.a: "¡Estoy aquí!"
- POD_umbra_adv.304.t: "La recompensa"
- POD_umbra_adv.304.desc: "Has demostrado tu valía, la encarnación guerrera te enseña el don. Has alcanzado la cima de la destreza en batalla del hombre lobo."
- POD_umbra_adv.304.a: "¡Un triunfo para la historia!"
+ POD_umbra_expedition.300.t: "Encuentro con el guerrero encarnado" #NT!
+ POD_umbra_expedition.300.desc: "Incarna es un término usado por los Fera para describir una cierta clase de espíritus; más débiles que los Celestinos, pero aún así espíritus más grandes en cualquier medida. Los Incarnae tienen un propósito definido y una esfera de influencia, pero son lo suficientemente poderosos como para existir en múltiples niveles de realidad.\nSiguiendo la pista, has encontrado con éxito al Guerrero Incarna, quien promete enseñarte el legendario e imparable don del guerrero si puedes completar una misión: matar al gobernante wyrmmish más poderoso del mundo." #NT!
+ POD_umbra_expedition.300.a: "Desafío aceptado." #NT!
+ POD_umbra_expedition.302.t: "Guerrero imparable" #NT!
+ POD_umbra_expedition.302.desc: "Has llegado a la ubicación del enemigo destinado por tu misión, es hora de luchar a muerte." #NT!
+ POD_umbra_expedition.302.a: "¡Estoy aquí!" #NT!
+ POD_umbra_expedition.304.t: "La recompensa" #NT!
+ POD_umbra_expedition.304.desc: "Has demostrado tu valía, la encarnación guerrera te enseña el don. Has alcanzado la cima de la destreza en batalla del hombre lobo." #NT!
+ POD_umbra_expedition.304.a: "¡Un triunfo para la historia!" #NT!
   
- POD_umbra_adv.399.t: "Pensándolo bien"
- POD_umbra_adv.399.desc: "¿Quizás no sea una buena idea que un adorador de wyrm se encuentre con un poderoso espíritu gaiano?"
- POD_umbra_adv.399.a: "¡Correr!"
- POD_umbra_adv.399.b: "No."
+ POD_umbra_expedition.399.t: "Después de madura reflexión" #NT!
+ POD_umbra_expedition.399.desc: "¿Tal vez no sea una buena idea para un adorador de wyrm encontrarse con un poderoso espíritu gaiano?" #NT!
+ POD_umbra_expedition.399.a: "¡Correr!" #NT!
+ POD_umbra_expedition.399.b: "No." #NT!
   
- POD_umbra_adv.400.t: "Encuentro con el Avatar de Gea"
- POD_umbra_adv.400.desc: "Gaia es más grande que un Celestino y uno de los espíritus más poderosos que se sabe que existen, posiblemente el primero y el más poderoso. A ella se le atribuye la creación de los Garou y de la mayoría de los Fera para que sirvan como sus guerreros y agentes tanto en el mundo material como en el espiritual.\nSiguiendo la pista, has encontrado con éxito el Avatar de Gaia, ella promete enseñarte el legendario don del narrador. si puedes completar una misión: recolectar libros raros e importantes."
- POD_umbra_adv.400.a: "Desafío aceptado."
+ POD_umbra_expedition.400.t: "Encuentro con el Avatar de Gea" #NT!
+ POD_umbra_expedition.400.desc: "Gaia es más grande que una Celestina y uno de los espíritus más poderosos que existen, posiblemente el primero y el más poderoso. Se le atribuye la creación de los Garou y la mayoría de los Fera para que sirvan como sus guerreros y agentes tanto en lo material como en lo espiritual. [spirit_worlds|E].\nSiguiendo la pista, has encontrado con éxito al Avatar de Gaia, ella promete enseñarte el legendario don de narrador de historias si puedes completar una misión: recolectar libros raros e importantes." #NT!
+ POD_umbra_expedition.400.a: "Desafío aceptado." #NT!
   
- POD_umbra_adv.500.t: "Encuentro con un espíritu poderoso"
- POD_umbra_adv.500.desc: "Los espíritus y el mundo espiritual son un aspecto importante de las vidas y culturas de los Garou y las otras Razas Cambiantes. En particular, los Theurges son especialistas en negociar con los espíritus a través de chiminage y atarlos mediante Dones y ritos.\nSiguiendo la pista, has encontrado con éxito un espíritu especialmente poderoso, que promete enseñarte el legendario don de liberación de la esclavitud si puedes completar una misión: destruir la Cortina de las Sombras infestada de wyrms."
- POD_umbra_adv.500.a: "Desafío aceptado."
+ POD_umbra_expedition.500.t: "Encuentro con un espíritu poderoso" #NT!
+ POD_umbra_expedition.500.desc: "Los espíritus y los [spirit_world|E] son un aspecto importante de las vidas y culturas de los Garou y las otras Razas Cambiantes. En particular, los Theurges son especialistas en negociar con los espíritus a través de chiminage y atarlos mediante Dones y ritos.\nSiguiendo la pista, has encontrado con éxito un espíritu especialmente poderoso, que promete enseñarte el legendario don de liberación de la esclavitud si puedes completar una misión: destruir la Cortina de las Sombras infestada de wyrms." #NT!
+ POD_umbra_expedition.500.a: "Desafío aceptado." #NT!
   
- POD_umbra_adv.600.t: "Encuentro con Coyote"
- POD_umbra_adv.600.desc: "El embaucador por excelencia, más Ragabash que Ragabash, Coyote es un avatar del caos. Absolutamente impredecible, a menudo tonto, pero indudablemente brillante, Coyote es a la vez un maestro del engaño y un guerrero muy inteligente. Siguiendo la pista, has encontrado con éxito un avatar del embaucador Coyote, que promete enseñarte el legendario don del portador del fuego si puedes completar una misión: entregar un imperio a otra persona. Solo Coyote sabe por qué pediría algo así."
- POD_umbra_adv.600.a: "Desafío aceptado."
+ POD_umbra_expedition.600.t: "Encuentro con Coyote" #NT!
+ POD_umbra_expedition.600.desc: "El embaucador por excelencia, más Ragabash que Ragabash, Coyote es un avatar del caos. Absolutamente impredecible, a menudo tonto, pero indudablemente brillante, Coyote es a la vez un maestro del engaño y un guerrero muy inteligente. Siguiendo la pista, has encontrado con éxito un avatar del embaucador Coyote, que promete enseñarte el legendario don del portador del fuego si puedes completar una misión: entregar un imperio a otra persona. Solo Coyote sabe por qué pediría algo así." #NT!
+ POD_umbra_expedition.600.a: "Desafío aceptado." #NT!
   
- POD_umbra_adv.700.t: "Encuentro con Gaia"
- POD_umbra_adv.700.desc: "Gaia es más grande que una Celestine y uno de los espíritus más poderosos que existen, posiblemente el primero y el más poderoso. Se le atribuye la creación de los Garou y la mayoría de los Fera para que sirvan como sus guerreros y agentes tanto en el mundo material como en el espiritual. Siguiendo la pista, has encontrado a la propia Gaia, quien promete enseñarte el legendario don del renacimiento si logras unir a la Nación Garou. Conociendo la naturaleza conflictiva de tus hermanos, esta podría ser la misión más difícil de todas."
- POD_umbra_adv.700.a: "Volveré cuando esté terminado, madre."
- POD_umbra_adv.700.b: "¡Lo hice!"
+ POD_umbra_expedition.700.t: "Encuentro con Gaia" #NT!
+ POD_umbra_expedition.700.desc: "Gaia es más grande que una Celestine y uno de los espíritus más poderosos que existen, posiblemente el primero y el más poderoso. Se le atribuye la creación de los Garou y la mayoría de los Fera para que sirvan como sus guerreros y agentes tanto en lo material como en lo espiritual. [spirit_worlds|E].\nSiguiendo la pista, has encontrado a la propia Gaia, quien promete enseñarte el legendario don del renacimiento si logras unir a la Nación Garou. Conociendo la naturaleza conflictiva de tus hermanos, esta podría ser la misión más difícil de todas." #NT!
+ POD_umbra_expedition.700.a: "Volveré cuando esté terminado, madre." #NT!
+ POD_umbra_expedition.700.b: "¡Lo hice!" #NT!
   
- POD_umbra_adv.800.t: "Encuentro con los espíritus ancestrales de Fianna"
- POD_umbra_adv.800.desc: "Los fianna son conocidos entre los Garou por su pasión por el placer de la vida, sus habilidades y ferocidad en la batalla, y por ser los guardianes de la música, las historias y la tradición de los Garou. Sus espíritus ancestrales suelen ser algunos de los más sabios de todos. Si sigues la pista, habrás encontrado algunos espíritus ancestrales de los fianna, que prometen enseñarte el don legendario si puedes completar el objetivo de Héroes de Gaia."
- POD_umbra_adv.800.a: "Volveré cuando esté hecho, antepasados."
- POD_umbra_adv.800.b: "¡Lo hice!"
+ POD_umbra_expedition.800.t: "Encuentro con los espíritus ancestrales de Fianna" #NT!
+ POD_umbra_expedition.800.desc: "Los fianna son conocidos entre los Garou por su pasión por el placer de la vida, sus habilidades y ferocidad en la batalla, y por ser los guardianes de la música, las historias y la tradición de los Garou. Sus espíritus ancestrales suelen ser algunos de los más sabios de todos. Si sigues la pista, habrás encontrado algunos espíritus ancestrales de los fianna, que prometen enseñarte el legendario don si puedes completar el objetivo de Héroes de Gaia." #NT!
+ POD_umbra_expedition.800.a: "Volveré cuando esté hecho, antepasados." #NT!
+ POD_umbra_expedition.800.b: "¡Lo hice!" #NT!
   
- POD_umbra_adv.900.t: "Encuentro con el Gran Fenris"
- POD_umbra_adv.900.desc: "Las leyendas nórdicas hablan del voraz Dios-Lobo Fenris, la bestia que se comerá el sol al final de los días. Fenris es poderoso, sanguinario y nunca da ni espera cuartel. El espíritu protector de la Estirpe de Fenris es el tótem de un guerrero, interesado solo en grupos de Garou que derraman la sangre de sus enemigos con frecuencia. Siguiendo la pista, has encontrado al mismísimo Gran Fenris, quien promete enseñarte el don legendario si puedes completar el objetivo de los Berserkers de Gaia."
- POD_umbra_adv.900.a: "Volveré cuando esté terminado, Gran Fenris."
- POD_umbra_adv.900.b: "¡Lo hice!"
+ POD_umbra_expedition.900.t: "Encuentro con el Gran Fenris" #NT!
+ POD_umbra_expedition.900.desc: "Las leyendas nórdicas hablan del voraz Dios-Lobo Fenris, la bestia que se comerá el sol al final de los días. Fenris es poderoso, sanguinario y nunca da ni espera cuartel. El espíritu protector de la Estirpe de Fenris es el tótem de un guerrero, interesado solo en grupos de Garou que derraman la sangre de sus enemigos con frecuencia. Siguiendo la pista, has encontrado al mismísimo Gran Fenris, quien promete enseñarte el don legendario si puedes completar el objetivo de los Berserkers de Gaia." #NT!
+ POD_umbra_expedition.900.a: "Volveré cuando esté terminado, Gran Fenris." #NT!
+ POD_umbra_expedition.900.b: "¡Lo hice!" #NT!
   
- POD_umbra_adv.1000.t: "Encuentro con el Progenitor Lobo"
- POD_umbra_adv.1000.desc: "Los Talons cuentan que su tribu se formó directamente de Gea y que ellos siguieron siendo los Garou más puros que mantuvieron contacto con su forma original. Como tal, veneran a los primeros lobos de la historia más que las otras tribus.\nSiguiendo la pista, has encontrado con éxito al Progenitor Lobo, quien promete enseñarte el don legendario si puedes completar el objetivo de la Ira de Gea."
- POD_umbra_adv.1000.a: "Volveré cuando esté terminado, Progenitor."
- POD_umbra_adv.1000.b: "¡Lo hice!"
+ POD_umbra_expedition.1000.t: "Encuentro con el Progenitor Lobo" #NT!
+ POD_umbra_expedition.1000.desc: "Los Talons cuentan que su tribu se formó directamente de Gea y que ellos siguieron siendo los Garou más puros que mantuvieron contacto con su forma original. Como tal, veneran a los primeros lobos de la historia más que las otras tribus.\nSiguiendo la pista, has encontrado con éxito al Progenitor Lobo, quien prometió enseñarte el don legendario si puedes completar el objetivo de la Ira de Gea." #NT!
+ POD_umbra_expedition.1000.a: "Volveré cuando esté terminado, Progenitor." #NT!
+ POD_umbra_expedition.1000.b: "¡Lo hice!" #NT!
   
- POD_umbra_adv.1100.t: "Encuentro con el Avatar de Gea"
- POD_umbra_adv.1100.desc: "Gaia es más poderosa que una Celestina y uno de los espíritus más poderosos que existen, posiblemente el primero y el más poderoso. Se le atribuye la creación de los Garou y la mayoría de los Fera para que sean sus guerreros y agentes tanto en el mundo material como en el espiritual.\nSiguiendo la pista, has encontrado con éxito al Avatar de Gaia, quien promete enseñarte el don legendario si puedes completar el objetivo del Retorno del Rey."
- POD_umbra_adv.1100.a: "Volveré cuando esté terminado, madre."
- POD_umbra_adv.1100.b: "¡Lo hice!"
+ POD_umbra_expedition.1100.t: "Encuentro con el Avatar de Gea" #NT!
+ POD_umbra_expedition.1100.desc: "Gaia es más grande que una Celestina y uno de los espíritus más poderosos que existen, posiblemente el primero y el más poderoso. Se le atribuye la creación de los Garou y la mayoría de los Fera para que sirvan como sus guerreros y agentes tanto en lo material como en lo espiritual. [spirit_worlds|E].\nSiguiendo la pista, has encontrado con éxito al Avatar de Gaia, quien promete enseñarte el don legendario si puedes completar el objetivo del Retorno del Rey." #NT!
+ POD_umbra_expedition.1100.a: "Volveré cuando esté terminado, madre." #NT!
+ POD_umbra_expedition.1100.b: "¡Lo hice!" #NT!
   
- POD_umbra_adv.1200.t: "Encuentro con el Avatar de Quimera"
- POD_umbra_adv.1200.desc: "La patrona de los Astrónomos, Quimera, es la personificación del Enigma. La de Muchos Rostros invita a sus manadas a encontrar la sabiduría que cada hombre lobo guarda en su interior, debajo de capas de acertijos y autoengaños. Si sigues la pista, habrás encontrado con éxito al Avatar de Quimera, quien promete enseñarte el don legendario si puedes completar el objetivo de la Sabiduría de Gea."
- POD_umbra_adv.1200.a: "Volveré cuando esté terminado, Quimera."
- POD_umbra_adv.1200.b: "¡Lo hice!"
+ POD_umbra_expedition.1200.t: "Encuentro con el Avatar de Quimera" #NT!
+ POD_umbra_expedition.1200.desc: "La patrona de los Astrónomos, Quimera, es la personificación del Enigma. La de Muchos Rostros invita a sus manadas a encontrar la sabiduría que cada hombre lobo guarda en su interior, debajo de capas de acertijos y autoengaños. Si sigues la pista, habrás encontrado con éxito al Avatar de Quimera, quien promete enseñarte el don legendario si puedes completar el objetivo de la Sabiduría de Gea." #NT!
+ POD_umbra_expedition.1200.a: "Volveré cuando esté terminado, Quimera." #NT!
+ POD_umbra_expedition.1200.b: "¡Lo hice!" #NT!
   
- POD_umbra_adv.1300.t: "Encuentro con una encarnación de Maeljin"
- POD_umbra_adv.1300.desc: "Los Maeljin alguna vez fueron mortales, pero se corrompieron tanto por un impulso particular que se transformaron en poderosos espíritus que encarnaban ese impulso. Cada uno sirve a su patrón hasta que falla de alguna manera, o hasta que un candidato más nuevo y poderoso llega a la cima. Los Maeljin actúan como los ojos, oídos, voces y, ocasionalmente, las manos de los impulsos cuando es necesaria una acción más directa. Si sigues la pista, habrás encontrado con éxito una encarnación de Maeljin, que promete enseñarte el don legendario si puedes completar una misión: matar al gobernante gaiano más poderoso del mundo."
- POD_umbra_adv.1300.a: "Desafío aceptado."
+ POD_umbra_expedition.1300.t: "Encuentro con una encarnación de Maeljin" #NT!
+ POD_umbra_expedition.1300.desc: "Los Maeljin alguna vez fueron mortales, pero se corrompieron tanto por un impulso particular que se transformaron en poderosos espíritus que encarnaban ese impulso. Cada uno sirve a su patrón hasta que falla de alguna manera, o hasta que un candidato más nuevo y poderoso llega a la cima. Los Maeljin actúan como los ojos, oídos, voces y, ocasionalmente, las manos de los impulsos cuando es necesaria una acción más directa. Si sigues la pista, habrás encontrado con éxito una encarnación de Maeljin, que promete enseñarte el don legendario si puedes completar una misión: matar al gobernante gaiano más poderoso del mundo." #NT!
+ POD_umbra_expedition.1300.a: "Desafío aceptado." #NT!
   
- POD_umbra_adv.1400.t: "Encuentro con susurros"
- POD_umbra_adv.1400.desc: "El espíritu de los secretos, Whispers, guía a sus aliados hacia descubrimientos. Con un poco de esfuerzo, su elegida puede descifrar mensajes que ninguna persona normal podría entender. Esta Jamak flota en el aire, invisible y apenas oída. Se dice que es el eco de los propios Jamaa, de voces celestiales que se filtran al mundo mortal como recuerdos medio oídos. Es una Jamak difícil de encontrar y tiende a revelarse solo a los Bastet más sabios.\nSiguiendo la pista, has encontrado a Whispers con éxito, ella promete enseñarte el don legendario si puedes completar una misión."
- POD_umbra_adv.1400.a: "Desafío aceptado."
+ POD_umbra_expedition.1400.t: "Encuentro con susurros" #NT!
+ POD_umbra_expedition.1400.desc: "El espíritu de los secretos, Susurros, guía a sus aliados hacia descubrimientos. Con un poco de esfuerzo, su elegida puede descifrar mensajes que ninguna persona normal podría entender. Esta Jamak flota en el aire, invisible y apenas oída. Se dice que es el eco de los propios Jamaa, de voces celestiales que se filtran hasta el mundo mortal como recuerdos medio oídos. Es una Jamak difícil de encontrar y tiende a revelarse solo a las Bastet más sabias. Siguiendo la pista, has encontrado a Susurros con éxito y el misterioso Espíritu te pone en el camino hacia el secreto definitivo, el Escarabajo que huye. Este ritual es aparentemente la clave para lograr la inmortalidad para un Bubasti, un derivado del Hechizo de Vida de Isis con una reputación más siniestra. Si tan solo pudieras hacer que las Momias hablaran..." #NT!
+ POD_umbra_expedition.1400.a: "Nueve vidas nunca fueron suficientes." #NT!
   
- POD_umbra_adv.1500.t: "Encuentro con el Deshacedor"
- POD_umbra_adv.1500.desc: "Pocos de los esbirros del Wyrm son tan temibles o poderosos como el temible Nexus Crawler. Algunos Theurges creen que estas criaturas alienígenas provienen de lugares muy alejados de la realidad conocida.\nSiguiendo la pista, has encontrado con éxito un Destructor, un huevo de Nexus Crawler, que promete enseñarte el don legendario si puedes completar una misión."
- POD_umbra_adv.1500.a: "Desafío aceptado."
+ POD_umbra_expedition.1500.t: "Encuentro con el Deshacedor" #NT!
+ POD_umbra_expedition.1500.desc: "El Destructor es el nombre que los Bastet daban al Wyrm del Equilibrio antes de su encarcelamiento y corrupción. Los Bastet dicen que Cahlash, el nombre original del Purificador equilibrado de la Tríada, todavía existe y cumple fielmente su propósito original. Esto choca con la mayoría de las creencias populares de los cambiaformas, según las cuales el Wyrm en su totalidad es ahora una fuerza maligna. Sea cual sea la verdad, se sabe que Cahlash siente aprecio por el poderoso Simba. Al notar tu poder, el espíritu te ofrece un desafío. ¿Tu recompensa? Un poder lo suficientemente fuerte como para que el resto de la Nación Bastet lo tenga prohibido..." #NT!
+ POD_umbra_expedition.1500.a: "Desafío aceptado." #NT!
   
- POD_umbra_adv.1600.t: "Encuentro con el bisabuelo"
- POD_umbra_adv.1600.desc: "Según su tradición, los Gurahl son los protectores originales de Gaia, creados para protegerse del poder destructivo del "Rompedor de Patrones". Siguiendo la pista, has encontrado con éxito al Bisabuelo, uno de los espíritus patronos originales de los Gurahl, él promete enseñarte el don legendario si puedes completar una misión."
- POD_umbra_adv.1600.a: "Desafío aceptado."
+ POD_umbra_expedition.1600.t: "Encuentro con el bisabuelo" #NT!
+ POD_umbra_expedition.1600.desc: "Según su tradición, los Gurahl son los protectores originales de Gaia, creados para protegerse del poder destructivo del "Rompedor de Patrones". Siguiendo la pista, has encontrado con éxito al Bisabuelo, uno de los espíritus patronos originales de los Gurahl, él promete enseñarte el don legendario si puedes completar una misión." #NT!
+ POD_umbra_expedition.1600.a: "Desafío aceptado." #NT!
   
- POD_umbra_adv.1700.t: "Encuentro con Wani"
- POD_umbra_adv.1700.desc: "Wani, también conocidos como Reyes Dragón o Lu Lung, son términos utilizados por los Nagah para describir a los grandes espíritus dragón que actúan como patrones para los de su especie, los únicos espíritus que conocen el Secreto Sagrado.\nSiguiendo la pista, has encontrado con éxito los Wani, prometen enseñarte el regalo legendario si puedes completar una misión."
- POD_umbra_adv.1700.a: "Desafío aceptado."
+ POD_umbra_expedition.1700.t: "Encuentro con Wani" #NT!
+ POD_umbra_expedition.1700.desc: "Wani, también conocidos como Reyes Dragón o Lu Lung, son términos utilizados por los Nagah para describir a los grandes espíritus dragón que actúan como patrones de su especie, los únicos espíritus que conocen el Secreto Sagrado. Siguiendo la pista, has encontrado con éxito a los Wani, ellos prometen enseñarte el don legendario si puedes completar una misión." #NT!
+ POD_umbra_expedition.1700.a: "Desafío aceptado." #NT!
   
- POD_umbra_adv.1800.t: "Encuentro con coyote"
- POD_umbra_adv.1800.desc: "Coyote, el embaucador definitivo, más Ragabash que Ragabash, es un avatar del caos. Completamente impredecible, a menudo tonto, pero sin duda brillante, Coyote es a la vez un maestro del engaño y un guerrero muy inteligente.\nSiguiendo la pista, has encontrado con éxito a Coyote, él promete enseñarte el don legendario si puedes completar una misión."
- POD_umbra_adv.1800.a: "Desafío aceptado."
+ POD_umbra_expedition.1800.t: "Encuentro con Coyote" #NT!
+ POD_umbra_expedition.1800.desc: "El estafador por excelencia, más Ragabash que Ragabash, Coyote es un avatar del caos. Absolutamente impredecible, a menudo tonto, pero indudablemente brillante, Coyote es a la vez un maestro del engaño y un guerrero muy astuto. Si sigues la pista, habrás encontrado a Coyote, quien promete enseñarte el don legendario si logras completar una misión." #NT!
+ POD_umbra_expedition.1800.a: "Desafío aceptado." #NT!
   
   # crisis 
   
- POD_umbra_crisis.102.t: "Demasiado tarde"
- POD_umbra_crisis.102.desc: "El ritual wrym ha terminado, un poderoso espíritu wrym ha sido convocado a [crisis_location.GetName] y ha devastado la región."
- POD_umbra_crisis.102.a: "¡Condenación!"
- POD_umbra_crisis.102.a.tt: "Se eliminan todos los edificios en [crisis_location.GetName]."
+ POD_umbra_crisis.101.t: "Demasiado tarde" #NT!
+ POD_umbra_crisis.101.desc: "El ritual wrym ha terminado, un poderoso espíritu wrym ha sido convocado a [crisis_location.GetName] y ha devastado la región." #NT!
+ POD_umbra_crisis.101.a: "¡Condenación!" #NT!
+ POD_umbra_crisis.101.a.tt: "Se eliminan todos los edificios en [crisis_location.GetName]." #NT!
   
  POD_umbra_crisis.110.t: "El culpable"
  POD_umbra_crisis.110.desc: "¡Has encontrado la ubicación del maestro ritual, es hora de acabar con ellos antes de que puedan invocar un Nexus Crawler o una abominación aún peor!"
  POD_umbra_crisis.110.a: "¡Detente ahora mismo, escoria de wyrm!"
   
+ POD_umbra_crisis.201.t: "Demasiado tarde" #NT!
+ POD_umbra_crisis.201.desc: "[this_character.GetName] ha sido liberado de [tempest|E], pero [this_character.GetSheHe] ya no quiere explorar [umbra|E] por ti." #NT!
+ POD_umbra_crisis.201.a: "¡Condenación!" #NT!
+  
+ POD_umbra_crisis.210.t: "Rescate" #NT!
+ POD_umbra_crisis.210.desc: "[this_character.GetName] ya no se pierde en [tempest|E]." #NT!
+ POD_umbra_crisis.210.a: "Bien." #NT!
+  
+ POD_umbra_crisis.301.t: "Demasiado tarde" #NT!
+ POD_umbra_crisis.301.desc: "[this_character.GetName] quedará atrapado en [labyrinth|E] para siempre." #NT!
+ POD_umbra_crisis.301.a: "¡Condenación!" #NT!
+  
+ POD_umbra_crisis.302.t: "Demasiado tarde" #NT!
+ POD_umbra_crisis.302.desc: "[this_character.GetName] ahora será borrado de la existencia por [oblivion|E]." #NT!
+ POD_umbra_crisis.302.a: "¡Condenación!" #NT!
+  
+ POD_umbra_crisis.310.t: "Rescate" #NT!
+ POD_umbra_crisis.310.desc: "[this_character.GetName] ya no se pierde en [labyrinth|E]." #NT!
+ POD_umbra_crisis.310.a: "Bien." #NT!
+  
+ POD_umbra_crisis.401.t: "Demasiado tarde" #NT!
+ POD_umbra_crisis.401.desc: "[this_character.GetName] quedará atrapado en [yomi_wan|E] para siempre." #NT!
+ POD_umbra_crisis.401.a: "¡Condenación!" #NT!
+  
+ POD_umbra_crisis.410.t: "Rescate" #NT!
+ POD_umbra_crisis.410.desc: "[this_character.GetName] ya no se pierde en [yomi_wan|E]." #NT!
+ POD_umbra_crisis.410.a: "Bien." #NT!
+  
+ POD_umbra_crisis.501.t: "Demasiado tarde" #NT!
+ POD_umbra_crisis.501.desc: "[this_character.GetName] quedará atrapado en [abyss|E] para siempre." #NT!
+ POD_umbra_crisis.501.a: "¡Condenación!" #NT!
+  
+ POD_umbra_crisis.510.t: "Rescate" #NT!
+ POD_umbra_crisis.510.desc: "[this_character.GetName] ya no se pierde en [abyss|E]." #NT!
+ POD_umbra_crisis.510.a: "Bien." #NT!
+  
+ POD_umbra_crisis.601.t: "Demasiado tarde" #NT!
+ POD_umbra_crisis.601.desc: "[this_character.GetName] quedará atrapado en [malfeas|E] para siempre." #NT!
+ POD_umbra_crisis.601.a: "¡Condenación!" #NT!
+  
+ POD_umbra_crisis.610.t: "Rescate" #NT!
+ POD_umbra_crisis.610.desc: "[this_character.GetName] ya no se pierde en [malfeas|E]." #NT!
+ POD_umbra_crisis.610.a: "Bien." #NT!
+  
   # recruit 
+  
+ POD_umbra_gp.100.t: "Abel" #NT!
+ POD_umbra_gp.100.desc: "En realidad, la abuela esconde algo en una lejana pero muy vigilada Torre de la Memoria. Tras distraer a sus fuerzas con un asalto a gran escala en otro lugar, te abres paso a través de la torre y encuentras un espectro, envuelto en un sudario blanco y encadenado a un puntal de la memoria que lo obliga a desaparecer y reaparecer constantemente. Cuando llegas hasta él y lo liberas, te da las gracias y se presenta como Abel. No se puede determinar qué tan cercano es este espectro al Abel bíblico, pero sabe lo suficiente como para decir que es la primera víctima de asesinato. Explica que, debido al concepto y la carga de ser el primero de muchos cuyas vidas terminaron prematuramente, en realidad sirve como una válvula unidireccional desde cualquier parte del mundo viviente a cualquier parte del [shadowlands|E], incluida directamente a la propia abuela, si así lo desea. Si lo hace de tal manera que puedas dirigir un gran canal de la fuerza de la vida a través de este retorcido [GetModifier('nihil_modifier').GetNameWithTooltip], podrías calmar, o posiblemente incluso vencer, a la abuela de una vez por todas." #NT!
+ POD_umbra_gp.100.a: "Te liberaré" #NT!
   
  POD_umbra_gp.101.t: "Enfrentando al último aullador blanco"
  POD_umbra_gp.101.desc: "Coruroc, miembro de la manada Sky-Shaker, fue el único miembro de la tribu de los Aulladores Blancos que logró escapar de la Espiral Negra y huir de regreso a la superficie. Sus parientes contaminados lo persiguieron y casi lo mataron, pero fue rescatado por Bone-Whittler, un Theurge, que estaba poseído por el antepasado de los Aulladores Blancos, Aidan Farwatcher. Se las arregló para advertir a la Nación Garou que los Aulladores Blancos estaban perdidos antes de morir. Después de su muerte, no pudo convertirse en un Espíritu Ancestral, porque la Patria Tribal de los Aulladores Blancos había sido transformada por la corrupción del Wyrm. En su lugar, descendió a la Umbra Oscura, donde vagó como un espectro. Torturado por sus recuerdos, apenas logró mantener a raya a [oblivion|E], hasta que un pequeño grupo de Danzantes de la Espiral Negra visitó la Umbra Oscura. Coruroc intentó razonar con ellos y, cuando sus preguntas fueron recibidas con burla, extrajo sus almas de sus cuerpos, convirtiéndolos en espectros. Pasó muchos años purgando a los Aulladores Blancos de su mancha Wyrm y los convirtió en una pequeña manada propia. Esta manada ahora viaja por las Tierras Sombrías, buscando destruir los espíritus de los Aulladores Blancos corruptos o convertir (y, si es necesario, destruir) a otros Espirales Negras. Después de encontrarlo, te ofrece un pacto de ayuda mutua si puedes completar una misión."
@@ -258,6 +297,66 @@
  POD_umbra_gp.105.a: "Creceremos juntos."
  POD_umbra_gp.105.b: "No interesado."
   
+ POD_umbra_gp.107.t: "La corte de las musas" #NT!
+ POD_umbra_gp.107.desc: "Con el renovado interés por los antiguos mitos griegos, una antigua Corte ha resurgido del inconsciente colectivo con nuevos miembros y un vigor y un propósito renovados en el reino moderno de las altas ideas. Se trata de las Musas, que también eran conocidas como apsaras en la India o las Valquirias en el mito nórdico, pero cuyos nombres y competencias individuales fueron mejor adivinados por los antiguos griegos. Las Musas tienen una Corte propia sobre una Aguja cuya base se encuentra cerca del Mouseion en la Vulgata; esta Aguja se asemeja al Monte Helicón en Grecia, que se cree que fue el hogar de las Musas en la antigüedad. Originalmente había nueve Musas, además de las Musas Mayores y su Líder; este número se ha duplicado, pero las nueve originales todavía existen, aunque sus especialidades y áreas de influencia han cambiado ligeramente. A medida que crecieron los modos y medios de expresión humana, también lo hizo la variedad de Musas. Las hijas originales de Zeus y Mnemosyne han modernizado un poco su apariencia y sus competencias. Tu tiempo en esta corte no será infinito, ya que las Musas Mayores solo toleran invitados para la diversión de sus hermanas menores. ¿Con qué grupo de Musas jóvenes deseas relacionarte?" #NT!
+ POD_umbra_gp.107.a: "Las Musas de los Medios, las portadoras de cultura." #NT!
+ POD_umbra_gp.107.b: "Las Musas de la Moda, analíticas y filosóficas." #NT!
+  
+ POD_umbra_gp.108.t: "Las musas de los medios" #NT!
+ POD_umbra_gp.108.desc: "Calíope, musa de la voz. Originalmente musa de la canción épica, su ámbito de acción se ha ampliado para incluir todos los usos de la voz: canto, locución, conferencias, narración de historias y cualquier tipo de actuación en la que solo se escuche la voz.\nClío, musa de la palabra escrita. Originalmente musa de la historia, Clío ahora inspira todas las formas de escritura, sea cual sea el estilo, el tema o la intención.\nEuterpe, musa de la música. Originalmente musa de la canción lírica, Euterpe ha cambiado su ámbito de acción para incluir toda la música excepto la producida por la voz humana, que es el dominio de Calíope.\nTerpsícore, musa de la danza. Terpsícore es, como siempre lo ha sido, la musa de la danza, pero ha ampliado su dominio para incluir a todos aquellos para quienes el movimiento del cuerpo es el hecho central de su oficio.\nArquíope, musa de la arquitectura. Una nueva musa, el ámbito de competencia de Archiope es el del cercamiento y la demarcación espacial (normalmente refugios permanentes, aunque las tiendas de campaña y los cobertizos también entran dentro de su jurisdicción).\nTamaraponme, musa del vestido. Otra nueva musa es Tamaraponme, cuyo dominio incluye todos los aspectos externos de la apariencia individual y la presentación personal.\nEudore, musa del drama. El ámbito de competencia de Eudore es la proyección física de un personaje previsto, ya sea el propio, el de otra persona o el de una persona totalmente ficticia.\nPhidia, musa de la escultura. En su día mortal, la habilidad de Fidias para dar forma a la piedra impresionó tanto a los dioses que fue invitado a convertirse en la musa de la escultura.\nXerops, musa de la pintura. Xerops es la nueva musa de las imágenes bidimensionales, tanto figurativas como abstractas, y gobierna la pintura y el dibujo en el sentido clásico." #NT!
+ POD_umbra_gp.108.a: "Pasa tiempo con Calliope." #NT!
+ POD_umbra_gp.108.b: "Pasa tiempo con Clio." #NT!
+ POD_umbra_gp.108.c: "Pasa tiempo con Euterpe." #NT!
+ POD_umbra_gp.108.d: "Pasa tiempo con Terpsícore." #NT!
+ POD_umbra_gp.108.e: "Pasa tiempo con Archiope." #NT!
+ POD_umbra_gp.108.f: "Pasa tiempo con Tamaraponme." #NT!
+ POD_umbra_gp.108.g: "Pasa tiempo con Eudore." #NT!
+ POD_umbra_gp.108.h: "Pasa tiempo con Phidia." #NT!
+ POD_umbra_gp.108.i: "Pase tiempo con Xerops." #NT!
+  
+ POD_umbra_gp.109.t: "Las musas de la moda" #NT!
+ POD_umbra_gp.109.desc: "Erato, musa del romance. Erato, musa de la poesía erótica, se preocupa por las pasiones abrumadoras de la vida, especialmente aquellas que unen a las personas, como el amor y el deseo. Prefiere los finales felices, pero puede obligar a sus hijos a atravesar tribulaciones interminables para lograrlo.\nMelpómene, musa de la tragedia. Melpómene sigue siendo la musa de la tragedia, ya que el dolor que los mortales se infligen entre sí ha cambiado muy poco en los últimos miles de años. No se deleita con este dolor, pero intenta guiar a las personas a través de él para que comprendan por qué se ha producido y qué se puede hacer para evitarlo en el futuro.\nPolimnia, musa de la religión. Polimnia fue la musa de las canciones sagradas y ahora brinda su guía a quienes siguen un camino espiritual y buscan comprender los misterios del alma.\nThalia, musa de la comedia. Thalia fue y sigue siendo la musa de la comedia, siempre sensible a los absurdos inherentes a la vida, señalando el humor de cualquier situación.\nUrania, musa de la ciencia. Urania fue la musa de la astronomía, y ahora extiende su dominio a toda la ciencia, siempre a mano para aquellos que buscan descubrir y comprender.\nArquíloco, musa de la acción. Acreditado como uno de los primeros poetas satíricos en la tierra, el ingenio de Arquíloco se ejercía con una beligerancia tan inquebrantable que a menudo tuvo que defender sus versos con un combate real. Por lo tanto, se ha convertido en la musa de la acción.\nSolón, musa de la justicia. Solón de Atenas se identificaba con la conciencia moral de la raza humana, enfatizando la igualdad y el juego limpio en la ejecución de la ley, y por eso ahora es la musa de la justicia.\nPseudolos, musa de la intriga. En realidad, Pseudolos es un personaje ficticio de las obras de Plauto. Todas las intrigas, conspiraciones y tratos sucios que ocurren en el mundo le dieron vida a Umbral como la musa de la intriga.\nLenore, musa del horror. Algunos creen que la musa del horror ha estado con la humanidad desde los primeros movimientos de conciencia, aunque pocos se atreven a mencionar su nombre." #NT!
+ POD_umbra_gp.109.a: "Pasa tiempo con Erato." #NT!
+ POD_umbra_gp.109.b: "Pasa tiempo con Melpomene." #NT!
+ POD_umbra_gp.109.c: "Pasa tiempo con Polymnia." #NT!
+ POD_umbra_gp.109.d: "Pasa tiempo con Thalia." #NT!
+ POD_umbra_gp.109.e: "Pasa tiempo con Urania." #NT!
+ POD_umbra_gp.109.f: "Pasa tiempo con Archilochos." #NT!
+ POD_umbra_gp.109.g: "Pasa tiempo con Solon." #NT!
+ POD_umbra_gp.109.h: "Pasa tiempo con Pseudolos." #NT!
+ POD_umbra_gp.109.i: "Pasa tiempo con Lenore." #NT!
+  
+ artifact_elemental_armor_name: "Armadura elemental" #NT!
+ artifact_elemental_armor_description: "Una misteriosa armadura que se encuentra en la Corte Elemental de la Tierra. Parece resonar con el poder de las cuatro Cortes Elementales y lo usa para fortalecerse si se le da la oportunidad." #NT!
+ POD_umbra_gp.110.t: "La armadura elemental" #NT!
+ POD_umbra_gp.110.desc: "Las Cortes de los Elementos se encuentran a mitad de camino de una Aguja, antes de que un viajero llegue a las Cinco Puertas, y cada Elemento está representado por un reino que expresa su naturaleza intrínseca. Los reinos de la Tierra, que se encuentran principalmente en la cara norte de una Aguja, no siempre se distinguen inmediatamente de la sustancia de la propia Aguja hasta que se presentan o se examinan con sentidos mágicos, y aparecen como cuevas o extrañas formaciones rocosas. La tangibilidad efímera de estos reinos y sus residentes corresponde a la materia en su estado sólido, que mantiene una forma y un volumen distintivos a menos que actúen sobre ella fuerzas externas. El viaje es algo arduo, pero gracias al reconocimiento previo y exhaustivo de la zona, logras localizar el objetivo de tu expedición, una extraña armadura (obviamente mágica). Un examen rápido revela que no es una armadura muy impresionante, a pesar de que aparentemente absorbe la energía de la Corte Elemental. No hay ningún problema en llevártela contigo, así que hazlo. Puede que haya formas de mejorar su potencial en el futuro." #NT!
+ POD_umbra_gp.110.a: "Continuará, supongo." #NT!
+ POD_umbra_gp.111.desc: "Las Cortes de los Elementos se encuentran a mitad de camino de una Aguja, antes de que un viajero llegue a las Cinco Puertas, y cada Elemento está representado por un reino que expresa su naturaleza intrínseca. Al ascender por la ladera sur de una Aguja, el viajero astral puede encontrarse con los reinos del Fuego, las llamas abiertas y las zonas ardientes que pueden parecer claramente fuera de lugar, excepto cuando aparecen como respiraderos geotermales o aberturas volcánicas. Tu Armadura Elemental está reaccionando a estas poderosas energías, aparentemente queriendo que te acerques lo más posible a este infierno para disfrutarlo de verdad. Una perspectiva un tanto estresante." #NT!
+ POD_umbra_gp.111.a: "¡Caliente, caliente, caliente!" #NT!
+ POD_umbra_gp.111.b: "No vale la pena." #NT!
+ POD_umbra_gp.112.desc: "Las Cortes de los Elementos se encuentran a mitad de camino de una Aguja, antes de que un viajero llegue a las Cinco Puertas, y cada Elemento está representado por un reino que expresa su naturaleza intrínseca. Los reinos del Aire, que generalmente se encuentran en la cara oriental de una Aguja, pueden ser confundidos por los no iniciados con nubes epifámicas, excepto que su naturaleza se hace evidente al estudiar las formas y actividades de los espíritus que se mueven en ellas y a su alrededor. Su tangibilidad efímera corresponde al estado gaseoso de la materia, expandiéndose y permeando para llenar el espacio que ocupan. Tu Armadura Elemental está reaccionando a estas poderosas energías, aparentemente queriendo que te acerques lo más posible al huracán para disfrutarlo de verdad. Una perspectiva un tanto estresante." #NT!
+ POD_umbra_gp.112.a: "El viento en mi cabello..." #NT!
+ POD_umbra_gp.113.desc: "Las Cortes de los Elementos se encuentran a mitad de camino de una Aguja, antes de que un viajero llegue a las Cinco Puertas, y cada Elemento está representado por un reino que expresa su naturaleza intrínseca. Los reinos del Agua, que suelen encontrarse en las laderas occidentales de una Aguja, pueden aparecer como manantiales de montaña, cascadas o incluso un lago en una amplia cornisa. La tangibilidad efímera de estos reinos y sus habitantes corresponde al estado líquido de la materia, que fluye en la forma del espacio que ocupa pero permanece constante en volumen. Tu Armadura Elemental está reaccionando a estas poderosas energías, aparentemente queriendo que te acerques lo más posible a las olas furiosas para disfrutarlas de verdad. Una perspectiva un tanto estresante." #NT!
+ POD_umbra_gp.113.a: "¡Cuidado de no ser arrastrado!" #NT!
+ artifact_men_at_arms_toughness_2_modifier: "[men_at_arms|E] [toughness|E]: #P +20%#!" #NT!
+ Theotime: "Teotiempo" #NT!
+ skilled_umbra_explorer_modifier: "Explorador experto [umbra|E]" #NT!
+ skilled_umbra_explorer_modifier_desc: "[umbra_aptitude|E]: [grace_i]#P +75%#!" #NT!
+ POD_umbra_gp.114.t: "El explorador del umbral" #NT!
+ POD_umbra_gp.114.desc: "Aparte de los bancos, la fuente y las puertas, el Gran Salón está vacío. En raras ocasiones, un viajero puede encontrarse con otro; sin embargo, el tráfico es lo suficientemente ligero como para que puedas pasear por el Salón durante días sin cruzarte con otro ser. Los pasillos conducen en todas direcciones, y ocasionalmente se ramifican en escaleras, pozos y nichos. La loca disposición de los pasillos infinitos dificulta cualquier intento de "hacer trampa" y usar alguna forma de magia para encontrar el camino correcto. Como tal, no es de extrañar que el Gran Salón atraiga al tipo más curioso de entidades umbrales, aquellas que se dedican al espíritu de aventura y exploración. El que quería ponerse en contacto contigo te dice que se está aburriendo de viajar por el Gran Salón y que le gustaría convertirse en tu Explorador Umbral oficial. Parece bastante hábil en su oficio y podría ser un activo para seguir cartografiando el [umbra|E], lo que hace que esta sea una perspectiva tentadora." #NT!
+ POD_umbra_gp.114.a: "Estás contratado." #NT!
+ POD_umbra_gp.114.b: "No lo eres." #NT!
+ POD_umbra_gp.115.t: "Fe perfeccionada" #NT!
+ POD_umbra_gp.115.desc: "En este reino existen todos los cielos: paraísos sacados de la tradición africana, la doctrina islámica, el espíritu cristiano y las esperanzas de los nativos americanos. Los guerreros nórdicos victoriosos se dan un festín en el Valhalla mientras las almas de la Antigua Grecia compiten en los Campos Elíseos. Se dice que todas las religiones tienen su mejor reflejo en el Paraíso y cada una se contenta con dejar a las demás en paz. Solo los muertos dignos, los no nacidos o los verdaderamente fieles pueden entrar y, si alguien se atreve a amenazar el reino, encontrará a los ángeles y héroes más poderosos desplegados contra ellos. Tu guía es una mujer (aparentemente) joven llamada Kalina y, con ella a la cabeza, pasas por la Ciudad del Crepúsculo. Edificios de todas las religiones, desde mezquitas hasta templos, catedrales y simples albergues, bordean las grandes avenidas por las que caminas, y los signos terrenales de la vida de la ciudad (la miseria, el comercio, el vicio y la decadencia) no se ven por ninguna parte. La ciudad parece existir solo con dos propósitos: impresionar la vista y elevar el corazón. Luego te guía a través de la Gran Montaña, el Océano Infinito, el Santuario de los Animales... y te maravillas ante la belleza de todo ello. Este reino podría ser solo una sombra de una gloria demasiado expansiva para que la mente humana la comprenda, una sombra que ha sido creada a partir de lo que las mentes mortales imaginan que es el Paraíso, pero cuando llega el momento de partir, te encuentras vigorizado y más convencido de tu fe que nunca." #NT!
+ POD_umbra_gp.115.a: "Perfección." #NT!
+ POD_umbra_gp.116.t: "La fortaleza del gobierno" #NT!
+ POD_umbra_gp.116.desc: "Sobre una extensión de roca estéril y árboles atrofiados se alza la Fortaleza de las locuras de la humanidad. Un castillo monumental de madera y piedra, el bastión de la sabiduría, la fuerza y ​​la codicia, rodea una montaña de mierda. Encima de la pila apestosa, a cientos de metros a la redonda, se alza un perfecto arbusto de rosas blancas. ¿Vale la pena el esfuerzo de conseguir las flores? ¿Es necesaria la Fortaleza? ¿Quién recogería las rosas si pudiera, y qué sucedería si lo hiciera? Los hombres han debatido estas cuestiones durante milenios. Y, sospechas, siempre lo harán." #NT!
+ POD_umbra_gp.116.a: "La fortaleza y las rosas están unidas." #NT!
+ POD_umbra_gp.116.b: "La Fortaleza protege las rosas de nosotros." #NT!
+ POD_umbra_gp.116.c: "La Fortaleza nos protege de las rosas." #NT!
+ POD_umbra_gp.116.d: "¡Debo tener las rosas!" #NT!
+ POD_umbra_gp.116.e: "Este lugar es un espejo de nuestra locura, nada más." #NT!
+  
   ############ 
   # Gauntlet # 
   ############ 
@@ -283,53 +382,21 @@
  POD_shroud.101.c: "¡Derribad el Santo Sudario!"
  POD_shroud.101.d: "No importa."
   
-  ############### 
-  # Local Umbra # 
-  ############### 
-  
   # Calm Spirit 
   
- POD_umbra_local.101.t: "Espíritu tranquilo"
- POD_umbra_local.101.desc: "Intentas expresar tu opinión a los espíritus locales para que te escuchen.\nPodrías intentar el enfoque diplomático o ser más contundente. Los espíritus tienden a ser criaturas caprichosas y discutir con ellos puede llevar mucho tiempo."
- POD_umbra_local.101.a: "Amigos, escúchenme."
- POD_umbra_local.101.b: "De espíritu a espíritus..."
- POD_umbra_local.101.c: "¡Obedece a tu superior!"
- POD_umbra_local.101.d: "Quizás en otra ocasión."
+ POD_gauntlet.201.t: "Espíritus de contacto" #NT!
+ POD_gauntlet.201.desc: "Los espíritus suelen ser criaturas caprichosas y discutir con ellos puede llevar mucho tiempo. Esto significa que solo tienes un breve período de tiempo para convencerlos de que ayudarlos es beneficioso para ellos antes de que se aburran de ti. Obviamente, si tienes los medios para amenazar a estas criaturas, la coerción también es un método posible." #NT!
+ POD_gauntlet.201.a: "Amigos, escúchenme." #NT!
+ POD_gauntlet.201.b: "De espíritu a espíritus..." #NT!
+ POD_gauntlet.201.c: "¡Obedece a tu superior!" #NT!
+ POD_gauntlet.201.d: "Quizás en otro momento." #NT!
   
- POD_umbra_local.102.t: "Espectro tranquilo"
- POD_umbra_local.102.desc: "Intenta plantear tu opinión a los espectros locales para que te escuchen. Puedes intentar adoptar un enfoque diplomático o ser más contundente. Los espectros tienden a ser criaturas egocéntricas y discutir con ellos puede llevar mucho tiempo."
- POD_umbra_local.102.a: "Amigos, escúchenme."
- POD_umbra_local.102.b: "De espectro a espectros..."
- POD_umbra_local.102.c: "¡Te ordeno que te arrodilles!"
- POD_umbra_local.102.d: "Quizás en otra ocasión."
-  
-  # Usurp 
-  
- POD_umbra_local.201.t: "Colonización"
- POD_umbra_local.201.desc: "Intentarás reclamar esta parte del [spirit_wilds|E] que no tiene gobernante, solo tendrás que lidiar con algunos lugareños hostiles. La diplomacia o la fuerza podrían convencerlos de que te reconozcan como el nuevo dueño de este reino espiritual."
- POD_umbra_local.201.a: "Sal de mi lugar."
- POD_umbra_local.201.b: "Vamos a hacer un trato."
- POD_umbra_local.201.c: "Quizás en otra ocasión."
-  
- POD_umbra_local.202.t: "Colonización"
- POD_umbra_local.202.desc: "Intentarás reclamar esta parte del [shadowlands|E] que no tiene gobernante, solo tendrás que lidiar con algunos lugareños hostiles. La diplomacia o la fuerza podrían convencerlos de que te reconozcan como el nuevo dueño de este reino espiritual."
- POD_umbra_local.202.a: "Sal de mi lugar."
- POD_umbra_local.202.b: "Vamos a hacer un trato."
- POD_umbra_local.202.c: "Quizás en otra ocasión."
-  
- POD_umbra_local.301.t: "Conquista"
- POD_umbra_local.301.desc: "Intentarás arrebatarle esta parte del [spirit_wilds|E] a [victim.GetFirstName]. La diplomacia o la fuerza podrían convencerlos de que te reconozcan como el nuevo dueño de este reino espiritual."
- POD_umbra_local.301.a: "Lindo lugar, lo tomaré."
- POD_umbra_local.301.b: "Vamos a hacer un trato."
- POD_umbra_local.301.c: "¡Te ordeno que me lo des!"
- POD_umbra_local.301.d: "Quizás en otra ocasión."
-  
- POD_umbra_local.302.t: "Conquista"
- POD_umbra_local.302.desc: "Intentarás reclamar esta parte del [shadowlands|E] de [victim.GetFirstName]."
- POD_umbra_local.302.a: "Lindo lugar, lo tomaré."
- POD_umbra_local.302.b: "Vamos a hacer un trato."
- POD_umbra_local.302.c: "¡Te ordeno que me lo des!"
- POD_umbra_local.302.d: "Quizás en otra ocasión."
+ POD_gauntlet.202.t: "Contacto con los Espectros" #NT!
+ POD_gauntlet.202.desc: "Los espectros tienden a ser criaturas egocéntricas y discutir con ellos puede llevar mucho tiempo. Ven a los extraños con sospecha, especialmente porque son muy conscientes del destino que la mayoría de los nigromantes les tienen reservado. Convencerlos no es una tarea fácil. Obviamente, si tienes los medios para amenazar a estas entidades incorpóreas, la coerción también es un enfoque potencial." #NT!
+ POD_gauntlet.202.a: "Amigos, escúchenme." #NT!
+ POD_gauntlet.202.b: "De espectro a espectros..." #NT!
+ POD_gauntlet.202.c: "¡Te ordeno que te arrodilles!" #NT!
+ POD_gauntlet.202.d: "Quizás en otro momento." #NT!
   
   ############### 
   # Other Event # 
@@ -355,19 +422,25 @@
  POD_umbra_action.1001.t: "Campo de batalla"
  POD_umbra_action.1001.desc: "El campo de batalla es un reino dedicado a la violencia y la furia, y el caos lo gobierna a medida que los ejércitos se mezclan y los soldados Qin terminan luchando contra las legiones romanas y los cruzados se alían con los bárbaros vikingos contra las tropas mayas. Mientras uno no entre en uno de los conflictos, un visitante camina por una "pista" apropiada para la batalla que presencia (un barco para una batalla naval, una calzada romana para un conflicto durante las guerras púnicas, etc.). Mientras no se salga de la pista, no será atacado directamente.\nEsta es una excelente manera de aprender estrategias nuevas (o antiguas) que podrían ser relevantes para su era de alguna manera."
   
+ POD_umbra_action.1101.t: "Asiento" #NT!
+ POD_umbra_action.1101.desc: "Los asientos son el palacio del señor de la muerte y el cuartel general de la legión, ¿cuál te gustaría visitar?" #NT!
+ POD_umbra_action.1101.a: "Asiento de Aguas Ardientes" #NT!
+ POD_umbra_action.1101.b: "Asiento de polvo" #NT!
+ POD_umbra_action.1101.c: "Asiento de las Lágrimas Doradas" #NT!
+ POD_umbra_action.1101.d: "Asiento de las sombras" #NT!
+ POD_umbra_action.1101.e: "Asiento del Silencio" #NT!
+ POD_umbra_action.1101.f: "Asiento del Socorro" #NT!
+ POD_umbra_action.1101.g: "Asiento de espinas" #NT!
+  
   # Reweave Artifact 
  POD_artifact_pieces.100.t: "Retejiendo piezas de reliquias"
  POD_artifact_pieces.100.desc: "Has encontrado un herrero espectral, [creator.GetFirstName], [creator.GetSheHe] puede ayudarte a rehacer las piezas de reliquia que tienes equipadas. ¿Qué estás buscando exactamente?"
- POD_artifact_pieces.100.a: "Retejer las piezas en un solo artefacto."
  POD_artifact_pieces.100.b: "Usa las piezas para fortalecer un artefacto equipado."
  POD_artifact_pieces.100.c: "Empodera la pieza."
  POD_artifact_pieces.100.c.tt: "Intentarás fusionar tus piezas equipadas para formar una más fuerte."
  POD_artifact_pieces.100.c.success: "Tu pieza equipada ha sido potenciada y se ha convertido en una más fuerte."
  POD_artifact_pieces.100.d: "Quizás otra noche."
  POD_artifact_pieces.100.back: "Volver a la opción anterior."
-  
- POD_artifact_pieces.200.t: "Retejer"
- POD_artifact_pieces.200.desc: "¿Qué tipo de artefacto quieres volver a tejer?"
   
  POD_artifact_pieces.300.t: "Fortalecer reliquia"
  POD_artifact_pieces.300.desc: "¿Qué artefacto quieres fortalecer?"

@@ -195,3 +195,178 @@
  aidan_farwatcher_quest_decision_desc: "Impulsado por la venganza por su tribu traicionada, Aidan Farwatcher le pidió que matara a los Bailarines de la Espiral Negra."
  aidan_farwatcher_quest_decision_tooltip: "¿La espiral deshecha?"
  aidan_farwatcher_quest_decision_confirm: "Una venganza sangrienta"
+  
+ stop_flaying_plague_decision: "Detener la plaga de desollamiento" #NT!
+ stop_flaying_plague_decision_tooltip: "¡Debe haber una solución!" #NT!
+ stop_flaying_plague_decision_desc: "La plaga desolladora se está cobrando innumerables vidas de Garou y parientes a su paso. Si no se hace nada al respecto, este podría ser el fin de los otrora orgullosos guerreros de Gaia." #NT!
+ stop_flaying_plague_decision_effect_tooltip: "La plaga del desollamiento detendrá su propagación." #NT!
+ stop_flaying_plague_decision_confirm: "¡Es ahora o nunca!" #NT!
+ stop_flaying_plague_decision_custom: "Necesitas 10 o más en cada atributo, excepto en destreza, donde se necesitan 40 o más. Los atributos de los miembros de tu grupo también pueden funcionar." #NT!
+  
+ pod1230objectives_werewolves.27.t: "Escindiendo una enfermedad" #NT!
+ pod1230objectives_werewolves.27.desc: "Gracias a las habilidades de tu grupo y de tu séquito, has conseguido descubrir pistas sobre la verdad que rodea a la Plaga Desolladora. Esta terrible enfermedad tenía un origen sobrenatural, aparentemente creada por un grupo de magos devotos del Wyrm que se hacían llamar el Círculo Rojo. Estos idiotas ya estaban detrás de varios ataques descarados contra los Túmulos del este, sobre todo en Sofía, y aunque intentaron cubrir sus huellas, no lo han hecho bien ni con la suficiente rapidez. Tras asaltar su guarida, has disfrutado enormemente abriéndote paso a cuchilladas entre estos cultistas invadidos por el Wyrm hasta que sus círculos rituales se tiñeron de rojo con su propia sangre. Aunque la amenaza de la Plaga Desolladora ya ha quedado atrás, todavía quedan algunas dudas sobre los detalles relacionados con su creación; algunas pistas conducen a un misterioso vampiro y otras a un demonio. Puede que valga la pena investigar esto en el futuro, pero, al menos por ahora, has cumplido con tu deber hacia Gaia." #NT!
+ pod1230objectives_werewolves.27.a: "¡Un triunfo legendario!" #NT!
+ pod1230objectives_werewolves.28.a: "Bueno para los lobos, supongo." #NT!
+ pod1230objectives_werewolves.28.b: "¡Finalmente!" #NT!
+  
+ weaponize_flaying_plague_decision: "Convierte la plaga desolladora en un arma" #NT!
+ weaponize_flaying_plague_decision_tooltip: "¿El arma definitiva contra los hombres lobo?" #NT!
+ weaponize_flaying_plague_decision_desc: "Los hombres lobo y sus familias, los parientes, se han visto afectados recientemente por una enfermedad muy letal, la plaga desolladora. Es evidente que están trabajando arduamente para encontrar una solución, pero hasta entonces, este extraño método de romper las defensas de un cambiaformas presenta una oportunidad." #NT!
+ weaponize_flaying_plague_decision_effect_tooltip: "Podrás propagar la plaga desolladora como interacción." #NT!
+ weaponize_flaying_plague_decision_effect_tooltip_2: "Al usar la Plaga Desolladora en un prisionero, puedes tener cierto éxito al abrazarlo y convertirlo en una abominación (excepto los cambiaformas que no pueden convertirse en una abominación en absoluto)." #NT!
+ weaponize_flaying_plague_decision_confirm: "¡Mi arma secreta perfeccionada!" #NT!
+ weaponize_flaying_plague_decision_custom: "Necesitarás 3 o más prisioneros hombres lobo para experimentar." #NT!
+ weaponize_flaying_plague_decision_customb: "Los hombres lobo están trabajando arduamente para encontrar el origen de la plaga desolladora. Una vez que lo hagan (alrededor de 1240), esta decisión desaparecerá." #NT!
+  
+ pod1230objectives_werewolves.29.t: "Peste desolladora armada" #NT!
+ pod1230objectives_werewolves.29.desc: "Los verdaderos orígenes de la Plaga Desolladora son misteriosos. El infernalista Círculo Rojo parece ser el culpable más probable, pero también te has encontrado con menciones de la interferencia de un demonio mayor e incluso de algunos vampiros. En cualquier caso, es una hazaña impresionante de magia ritualizada con una clara mancha infernal.\nTus propios experimentos con los hombres lobo a tu disposición lograron descubrir lo suficiente del proceso como para entender ahora cómo replicarlo si es necesario.\nIncluso si los hombres lobo terminan destruyendo la fuente de la Plaga Desolladora actual, podrás usarla en el futuro." #NT!
+ pod1230objectives_werewolves.29.a: "Una herramienta útil realmente..." #NT!
+ #pod1230objectives_werewolves.30.a: "No me importa" #NT!
+ #pod1230objectives_werewolves.30.b: "¿Que significa?" #NT!
+  
+ POD_spawn_flaying_plague_interaction: "Desata la plaga desolladora" #NT!
+ POD_spawn_flaying_plague_interaction_desc: "Tienes a tu disposición la terrible plaga desolladora. Con algunos ingredientes específicos para el ritual, podrás desatarla una vez más contra los desprevenidos cambiaformas." #NT!
+ POD_spawn_flaying_plague_interaction.tt: "Inflige la plaga desolladora en la ubicación [recipient.GetFirstNamePossessive]." #NT!
+ POD_spawn_flaying_plague_actor_toast: "La plaga de desollamiento está causando estragos en la ubicación [recipient.GetFirstNamePossessive]." #NT!
+ POD_spawn_flaying_plague_actor_toast.desc: "Ojalá no te arrepientas de esto." #NT!
+ POD_spawn_flaying_plague_failure_toast: "No lograste propagar la plaga desolladora en la ubicación [recipient.GetFirstNamePossessive]" #NT!
+ POD_spawn_flaying_plague_failure_toast.desc: "Pero habrá más oportunidades en el futuro..." #NT!
+ POD_spawn_flaying_plague_interaction_success: "La plaga de desolladores estallará en la ubicación [recipient.GetFirstNamePossessive] y se propagará desde allí con el tiempo." #NT!
+ POD_spawn_flaying_plague_interaction_failure: "La plaga del desollamiento no logra afianzarse." #NT!
+ POD_inflict_flaying_plague_interaction: "Infligir la plaga desolladora" #NT!
+ POD_inflict_flaying_plague_interaction_desc: "Infesta a [recipient.GetFirstName] con la plaga desolladora, lo que debilita sus defensas de cambiaformas. Si logra convertirse en una abominación, esto garantizará el éxito del Abrazo." #NT!
+  
+ bagheera_objective_decision: "Akari, Pourra, Doyala" #NT!
+ bagheera_objective_decision_tooltip: "Búsqueda, fundación, transmisión" #NT!
+ bagheera_objective_decision_desc: "Los bagheera se consideran la tribu felina más completa. Sus numerosos talentos y su gran carisma hacen que las panteras sean la única tribu que es aceptada como amiga por todas las demás. ¿Tal vez podrían aprovechar este hecho para impulsar la unidad en la Nación Bastet?" #NT!
+ bagheera_objective_decision_effect_tooltip: "Desbloquearás una cadena de eventos que te llevarán a unir a la Nación Bastet. Como Bagheera, este proceso será un poco más fácil." #NT!
+ bagheera_objective_decision_confirm: "Firme como un gato." #NT!
+ bagheera_objective_decision_custom: "Necesitas 10 o más en cada atributo, excepto en destreza, donde se necesitan 40 o más. Los atributos de los miembros de tu grupo también pueden funcionar." #NT!
+  
+ pod1230objectives_werewolves.31.desc: "Según sus leyendas, los Bagheera fueron creados como jueces de la raza felina. Si bien este papel fue abandonado hace mucho tiempo, han conservado la curiosidad natural y el carisma amistoso que lo acompañaba. Como suelen decir, son la encarnación más verdadera del espíritu felino, la sabiduría, el amor y la ira, todo fusionado. De manera única entre las fracturadas tribus Bastet, los Bagheera lograron mantener una relación cordial con todos sus primos y, con su reciente ascenso en la fama, esto ha dado origen a la idea de que tal vez sea el momento de que los hombres pantera aprovechen esta fuerza y ​​presionen por la unificación de la dividida Nación Bastet. Si bien las otras tribus son escépticas en el mejor de los casos, el talentoso liderazgo actual de los Bagheera ha logrado al menos llevarlos a la mesa de negociaciones. Ahora queda por ver si las carismáticas panteras verán este esfuerzo hasta una conclusión satisfactoria." #NT!
+ pod1230objectives_werewolves.31.a: "¡Todos somos hijos de Seline!" #NT!
+  
+ bubasti_objective_decision: "Gato contra serpiente" #NT!
+ bubasti_objective_decision_tooltip: "Somos pacientes. Esperaremos nuestra venganza triunfante." #NT!
+ bubasti_objective_decision_desc: "Los Bubasti, antaño venerados como dioses por los egipcios, lo han perdido todo debido a su guerra contra los Setitas. Pero, como la propia Bast, son pacientes y los seguidores de la serpiente no han visto lo último de los gatos negros de medianoche de Khem." #NT!
+ bubasti_objective_decision_effect_tooltip: "Liberarás a tus felinos capturados, lo que te permitirá obtener ayuda de ellos en el futuro. También desbloquearás una cadena de eventos que te colocarán en el camino para unir a la Nación Bastet." #NT!
+ bubasti_objective_decision_confirm: "Al acecho." #NT!
+  
+ pod1230objectives_werewolves.32.desc: "Los Bubasti, que en su día fueron venerados como dioses por el pueblo egipcio, lo perdieron todo en su guerra contra los seguidores de Set. Sin embargo, han sido pacientes y sus milenios de conocimiento de las artes mágicas les permitieron observar y esperar el momento adecuado para contraatacar. Y lo encontraron. Liderando una audaz fuerza combinada de la Liga de Osiris en el templo Setita de Ombos, los Bubasti lograron rescatar a sus parientes perdidos, los gatos Kyphur, y asestar un poderoso golpe a sus enemigos eternos. Con su orgullo restaurado y a sus parientes felinos finalmente se les permitió prosperar nuevamente, los gatos de medianoche de Khem han causado una gran impresión en el resto de la Nación Bastet. Si bien muchos aún desconfían de su extraña hechicería, la mayoría al menos está dispuesta a considerar la idea de permitir que los Bubasti asuman un papel más destacado en el futuro." #NT!
+ pod1230objectives_werewolves.32.a: "Inclínate ante el gato de las sombras." #NT!
+  
+ ceilican_objective_decision: "Bailando loco" #NT!
+ ceilican_objective_decision_tooltip: "Se acabó el tiempo de ocio y despreocupación. Los traidores de las hadas pagarán." #NT!
+ ceilican_objective_decision_desc: "Los Ceilican, que en el pasado vivían despreocupados y llenos de hedonismo, fueron traicionados por el señor de las hadas Samhach, que los cazó con tanta eficacia que casi los llevó a la extinción. Para liberar a estos cautivos se necesitaría un plan sólido y un grupo de héroes aún más sólido, pero podría ser la única esperanza de supervivencia para la tribu Ceilican." #NT!
+ ceilican_objective_decision_effect_tooltip: "Liberarás a tus hermanos y hermanas capturados, quienes luego se unirán a tu corte. También desbloquearás una cadena de eventos que te colocarán en el camino para unir a la Nación Bastet." #NT!
+ ceilican_objective_decision_confirm: "Otro tipo de baile..." #NT!
+  
+ pod1230objectives_werewolves.33.desc: "Los Ceilican, que en el pasado eran despreocupados y vivían una vida de hedonismo, fueron traicionados por el señor de las hadas Samhach, que los cazó con tanta eficacia que casi los llevó a la extinción. Sin embargo, los "gatos volubles" no estaban dispuestos a rendirse y, bajo tu diligente liderazgo, lograron protagonizar una sorprendente reaparición, asaltando la corte de las hadas del señor Samhach y liberando a sus hermanos cautivos. Mientras los victoriosos Ceilican bailan y festejan en las ruinas de la corte del odiado traidor, el resto de la Nación Bastet toma nota de este desconcertante acontecimiento. Aunque se creía que estaban extintos, parece que ahora será el momento de darles la bienvenida de nuevo a los Ceilican entre sus hermanos felinos, ¿quizás una señal de la voluntad de la Madre Seline de que sus hijos finalmente superen sus rencores personales y se unan bajo una misma bandera?" #NT!
+ pod1230objectives_werewolves.33.a: "¡La fiesta no ha terminado!" #NT!
+  
+ khan_objective_decision_judgment_hammer: "Debes recuperar el [ARTIFACT.GetName], el arma más preciada del Khan y posiblemente la más poderosa de los Bastet en su conjunto." #NT!
+ khan_objective_decision: "Tigres sabios y feroces" #NT!
+ khan_objective_decision_tooltip: "Al lograr el equilibrio perfecto, mostraremos el camino a la Nación Bastet." #NT!
+ khan_objective_decision_desc: "Cazadores, guerreros y mentores majestuosos, los Khan son la verdadera nobleza de Bastet, a pesar de lo que pueda afirmar el tiránico Simba. Al perfeccionarse, pueden demostrar a la raza felina que fueron verdaderamente elegidos por la Madre Seline para guiarlos hacia un futuro glorioso." #NT!
+ khan_objective_decision_effect_tooltip: "Esto mejorará el Martillo del Juicio.\nTambién desbloquearás una cadena de eventos que te colocarán en el camino para unir a la Nación Bastet." #NT!
+ khan_objective_decision_confirm: "Pasión, vigor y sabiduría." #NT!
+  
+ pod1230objectives_werewolves.34.desc: "Los iracundos Simba creen que Bastet debería estar liderado por un león, una criatura perezosa que depende de sus esposas para cazar y de su fuerza para intimidar a los demás hasta que se sometan. En cambio, el Khan muestra el ejemplo del tigre, un depredador sabio y elegante que lucha por sí mismo cuando es necesario, pero que, por lo demás, busca mejorar su condición y la de su manada. Durante mucho tiempo, los otros Bastet han esperado en secreto que el Khan asumiera un papel más destacado en la Nación Bastet para contrarrestar a Simba. Gracias a su firme liderazgo y a la recuperación del legendario Martillo del Juicio, ha llegado el momento. Los Simba pueden adoptar posturas y gruñir como quieran, pero las otras tribus ahora se están uniendo al llamado de los tigres a la unidad." #NT!
+ pod1230objectives_werewolves.34.a: "¡Comienza una era brillante para la especie felina!" #NT!
+  
+ simba_objective_decision: "Los tiranos leones" #NT!
+ simba_objective_decision_tooltip: "El león es el rey de la naturaleza. Es hora de recordárselo." #NT!
+ simba_objective_decision_desc: "Los Simba son los legítimos gobernantes de la raza felina. Sin embargo, los momentos de debilidad y las acusaciones de "gobierno tiránico" han erosionado esta afirmación. Es hora de recordarles a las otras tribus quién está al mando." #NT!
+ simba_objective_decision_effect_tooltip: "También desbloquearás una cadena de eventos que te colocarán en el camino para unir a la Nación Bastet." #NT!
+ simba_objective_decision_confirm: "Larga vida a los reyes." #NT!
+  
+ ruler_catkind_dynasty_modifier: "Leones reales y temibles" #NT!
+ ruler_catkind_dynasty_modifier_desc: "Los Simba han reafirmado su derecho a gobernar a las demás tribus Bastet. Los leones están preparados para defenderlo ante cualquiera que sea lo suficientemente tonto como para cuestionar esta verdad." #NT!
+ pod1230objectives_werewolves.35.desc: "Las leyendas de Simba afirman que cada tribu Bastet fue creada por la Madre Seline con un propósito en mente. El suyo era ser el señor. Obviamente, las otras Bastet tienden a estar en total desacuerdo con esa interpretación. Sin embargo, sus mezquinos lloriqueos no son de interés para los poderosos leones. Mientras las otras tribus se pierden en inútiles preocupaciones de mente estrecha, los Simba hacen lo único que vale la pena hacer: conquistan y afirman su derecho a gobernar África y más allá como los verdaderos reyes de esta tierra. Y con sus recientes éxitos en respaldar esa afirmación, las otras tribus guardan silencio por una vez." #NT!
+ pod1230objectives_werewolves.35.a: "Un verdadero rey busca lo que puede tomar." #NT!
+  
+ swara_spiritual_guardians_modifier: "Espíritu de Damaa" #NT!
+ swara_spiritual_guardians_modifier_desc: "Gracias a sus estrechos vínculos con el mundo espiritual, los Swara pueden confiar en la ayuda de otro mundo mucho más fácilmente que otras tribus Bastet." #NT!
+ swara_objective_decision: "Guardianes de los Lugares Puros" #NT!
+ swara_objective_decision_tooltip: "Mientras los demás discuten, nosotros hacemos el trabajo que Madre Seline nos confió." #NT!
+ swara_objective_decision_desc: "Los Swara son los guardianes de los lugares cargados de espiritualidad. Mientras que otras tribus Bastet los tachan de cobardes y solitarios, ellos defienden en secreto la pureza de África con un celo que hasta un Khan envidiaría." #NT!
+ swara_objective_decision_effect_tooltip: "También desbloquearás una cadena de eventos que te colocarán en el camino para unir a la Nación Bastet." #NT!
+ swara_objective_decision_confirm: "Hacemos lo que hay que hacer." #NT!
+ swara_objective_decision_caern_tooltip: "Necesitas tener un Túmulo maximizado de cada tipo (edificios ducales de nivel 5, Túmulo de Voluntad, Furia, Liderazgo, Sabiduría y Enigmas)." #NT!
+  
+ pod1230objectives_werewolves.36.desc: "Los hombres guepardo son un misterio para las demás tribus. Muchos los descartan como cobardes, siempre corriendo aparentemente sin rumbo de un lugar a otro y evitando el conflicto. Esto no podría estar más lejos de la verdad. Los Swara son defensores diligentes de la pureza de la tierra y luchan tan duro como un león cuando su deber sagrado se ve amenazado. Si bien no lo han estado clamando, su trabajo ha comenzado a ganar reconocimiento entre la Nación Bastet últimamente. Las otras tribus permanecen en silencio, contemplando que estaban discutiendo u obsesionándose por asuntos menores mientras que los Swara cumplían las órdenes de la Madre Seline. Esto ha llevado a un impulso sorprendente que los ha colocado a la vanguardia del renovado llamado a la unidad de Bastet. Queda por ver si el "Pueblo Plateado", generalmente aislacionista, atenderá ese llamado en el futuro." #NT!
+ pod1230objectives_werewolves.36.a: "¿Están empezando a entender?" #NT!
+  
+ pod1230objectives_werewolves.37.t: "Unificación de la Nación Bastet" #NT!
+ pod1230objectives_werewolves.37.desc: "Con su reciente éxito, que ha situado a su tribu a la cabeza de los Bastet, la idea de consolidar las tribus dispersas en un todo cohesivo ha resurgido una vez más. La mayoría de las leyendas sobre los felinos coinciden en que, en su día, la Madre Seline quiso que trabajarais juntos y que la división que se produjo en los primeros días fue la principal causa de vuestra derrota contra los hombres lobo durante la Guerra de la Furia.\nAun así, a pesar de este hecho aceptado, será una tarea muy difícil volver a unir a los felinos. Será necesario convencer a cada tribu y los gatos son criaturas testarudas y caprichosas al mismo tiempo." #NT!
+ pod1230objectives_werewolves.37.a: "Escuchemos su punto de vista." #NT!
+  
+ pod1230objectives_werewolves.38.desc: "Los Bagheera están totalmente de acuerdo con tu plan de restaurar la Nación Bastet. Después de todo, han abogado por ello durante siglos. Sin embargo, los jueces de la raza felina no quieren que se repitan los errores del pasado y quieren estar seguros de que eres apto para liderar a tus hermanos hacia un futuro próspero. Tienen la intención de observar cómo trabajas y cómo te rodeas como gobernante antes de comprometerte por completo con la causa. Para ayudar en este asunto, han ofrecido las enseñanzas de uno de sus mentores más sabios para trabajar en tus debilidades mientras mejoras tus fortalezas." #NT!
+ pod1230objectives_werewolves.38.a: "Lo haremos bien por nuestra cuenta." #NT!
+ pod1230objectives_werewolves.38.b: "Se agradece su disposición a ayudar." #NT!
+ new_objective_effect_tooltip: "Una nueva decisión importante está a la vista." #NT!
+  
+ bagheera_nation_decision_custom: "Necesitas 15 o más en cada atributo, excepto en destreza, donde se necesitan 50 o más. Los atributos de tus miembros [coterie_bastet|E] también pueden funcionar." #NT!
+ bastet_nation_progress_objective_decision_effect_tooltip: "Estarás un paso más cerca de restaurar la Nación Bastet." #NT!
+ bagheera_nation_objective_decision: "La nación Bastet: los Bagheera" #NT!
+ bagheera_nation_objective_decision_tooltip: "Debemos ser juzgados dignos." #NT!
+ bagheera_nation_objective_decision_desc: "Los Bagheera se consideran la tribu felina más completa. Sus numerosos talentos y su gran carisma hacen que las panteras sean la única tribu que todos los demás aceptan como amigos. Están ansiosos por participar en tu esfuerzo por unificar a los Bastet, pero primero quieren asegurarse de que seas un gobernante sabio y competente." #NT!
+ bagheera_nation_objective_decision_confirm: "Una bella demostración de poder." #NT!
+  
+ pod1230objectives_werewolves.39.desc: "Francamente, a los bubasti no parece importarles en absoluto tu deseo de unificar la Nación Bastet. Los sigilosos gatos de las sombras de Egipto tienen sus propios problemas con los que lidiar, en particular el secuestro de sus parientes, los gatos Kyphur, por parte de los seguidores de Set. Están ansiosos por aceptarte como gobernante de la raza felina... si les ofreces tus considerables recursos. Sin embargo, no vienen con las manos vacías, ya que se ofrecen a enseñarte los secretos de su magia ancestral, heredada de los días en que la gran Isis misma crió a su tribu." #NT!
+ pod1230objectives_werewolves.39.a: "Tu causa es la nuestra." #NT!
+ pod1230objectives_werewolves.39.b: "¿Magia, dijiste?" #NT!
+ pod1230objectives_werewolves.39.c: "Estoy seguro de que podemos convencerles de que lo reconsideren." #NT!
+ used_bagheera_joker_tooltip: "Utilizarás tu "comodín", una oportunidad única para unir directamente a esta tribu a tu causa en lugar de tener que cumplir con su solicitud." #NT!
+  
+ bubasti_knight_help_modifier: "Ayudando a los Bubasti" #NT!
+ bubasti_knight_help_modifier_desc: "Muchos de tus mejores campeones están actualmente fuera, ayudando a los Bubasti a planificar la liberación de sus parientes de los Seguidores de Set." #NT!
+ bubasti_nation_objective_decision: "La Nación Bastet: los Bubasti" #NT!
+ bubasti_nation_objective_decision_tooltip: "Es hora de que salgan de las sombras." #NT!
+ bubasti_nation_objective_decision_desc: "Los bubasti, antaño venerados como dioses por los egipcios, lo han perdido todo debido a su guerra contra los setitas. Se comprometerán con tu causa si les proporcionas el apoyo suficiente para recuperar su gloria perdida, empezando por sus parientes capturados." #NT!
+ bubasti_nation_objective_decision_confirm: "Eso debería ser suficiente." #NT!
+  
+ ceilican_nation_objective_decision: "La Nación Bastet: los Ceilican" #NT!
+ pod1230objectives_werewolves.40.desc: "Un invitado inesperado sorprendió a los representantes de los Bastet reunidos al afirmar ser miembro de los Ceilican. Los "gatos volubles" del folclore celta fueron considerados muertos durante mucho tiempo por el resto de la raza felina. Este individuo explica que los Ceilican han sido perseguidos hasta casi extinguirse por un señor Fae, pero algunos de ellos lograron esconderse y sobrevivir. Al enterarse del renovado esfuerzo por unificar a los Bastet, han venido a solicitar humildemente su ayuda para liberar a los supervivientes restantes de las garras de su némesis. Como futuro gobernante de todos los Hijos de Seline, le resultaría difícil rechazar semejante petición de ayuda." #NT!
+ pod1230objectives_werewolves.40.b: "¿Te has escondido durante tanto tiempo? Seguro que conoces uno o dos trucos." #NT!
+ ceilican_nation_objective_decision_tooltip: "Primos olvidados que regresan a la familia." #NT!
+ ceilican_nation_objective_decision_confirm: "¡Una victoria digna del nuevo gobernante de Bastet!" #NT!
+ any_knight_ceilican_tooltip: "Debes tener 5 o más caballeros con al menos 45 de destreza." #NT!
+  
+ khan_nation_objective_decision: "La Nación Bastet: el Khan" #NT!
+ pod1230objectives_werewolves.41.desc: "Los poderosos hombres tigre siempre fueron considerados un fuerte candidato para el liderazgo de la nación Bastet, su fuerza incomparable y su conducta honorable los hicieron respetados por los demás. Aun así, aceptaron gentilmente ceder ante tus propias ambiciones, reconociendo tu impresionante éxito hasta ahora. Sin embargo, el Khan te ha lanzado un desafío para que demuestres que eres, en efecto, el elegido de Seline que afirmas ser. Incluso se ofrecieron a hacerte pasar por su tradicional prueba para la nobleza Khan, un ejercicio conocido por ser despiadado y difícil. Si bien no sería suficiente para ganar su lealtad, esto sin duda mejoraría tu legitimidad ante los Bastet en su conjunto." #NT!
+ pod1230objectives_werewolves.41.a: "Déjame escuchar tu petición." #NT!
+ pod1230objectives_werewolves.41.b: "Sobre ese juicio..." #NT!
+ khan_nation_objective_decision_desc: "Cazadores, guerreros y mentores reales, los Khan son la verdadera nobleza de Bastet, a pesar de lo que pueda afirmar el tiránico Simba. No aceptarán a un gobernante que no demuestre la misma perfección tanto en cuerpo como en mente." #NT!
+ khan_nation_objective_decision_tooltip: "Haciendo amistad con los tigres." #NT!
+ khan_nation_objective_decision_confirm: "Yo soy Khan de los Khans." #NT!
+  
+ simba_nation_objective_decision: "La Nación Bastet: los Simba" #NT!
+ pod1230objectives_werewolves.42.desc: "Como los reyes autoproclamados de la nación Bastet, los orgullosos y arrogantes hombres león siempre se han jactado de que deberían gobernar, a menudo yendo a golpes con otros Bastet para reclamar su lugar si es necesario. Esperabas que tu propuesta de unir a la raza felina bajo tu liderazgo les fuera bastante mal. \nDe alguna manera, les fue aún peor. \nTe costó mucho esfuerzo someter a los delegados de Simba y evitar que se lanzaran a por ti para "castigarte por tu insolencia". Todavía están gritando a todo pulmón mientras los sacan a rastras de la habitación y te quedas pensando en tu próximo movimiento. Está quedando claro que los leones solo serán sometidos si demuestras tu poder en su propio territorio: África." #NT!
+ pod1230objectives_werewolves.42.a: "Es hora de domesticarlos." #NT!
+ pod1230objectives_werewolves.42.b: "Necesitamos una cabeza de playa para iniciar nuestra invasión." #NT!
+ simba_nation_objective_decision_desc: "Los Simba son los legítimos gobernantes de la raza felina... al menos según ellos mismos. No renunciarán a este derecho hasta que sus territorios sean conquistados por alguien dispuesto a desafiarlos en su propio territorio." #NT!
+ simba_nation_objective_decision_tooltip: "Cazando leones." #NT!
+ simba_nation_objective_decision_confirm: "Es hora de arrojarlos por un acantilado." #NT!
+ POD_simba_heartlands: "Corazón de Simba: Hausaland, Igbo-Benue, Yorubaland y Borgu" #NT!
+  
+ swara_nation_objective_decision: "La Nación Bastet: los Swara" #NT!
+ pod1230objectives_werewolves.43.desc: "Como prueba de su respeto, los aislacionistas Swara te han invitado a una de sus guaridas para discutir tu propuesta de reunificar la Nación Bastet. Los hombres guepardo no tienen intención de interponerse en tu camino ni de cuestionar tu afirmación, pero te recuerdan el deber sagrado de los Hijos de Seline, proteger las tierras puras. Si puedes demostrar tu compromiso con este deber ancestral, se unirán plenamente al grupo. De lo contrario, seguirán haciendo lo suyo, lejos de las intrigas del resto de la raza felina, como siempre han hecho hasta ahora.\nA juzgar por algunas debilidades estructurales que has notado en esta guarida en particular, crees que podrías hacer una donación para ayudarlos a mejorar sus defensas aquí, demostrando que realmente te estás tomando su solicitud muy en serio." #NT!
+ pod1230objectives_werewolves.43.a: "Consideraré su solicitud." #NT!
+ pod1230objectives_werewolves.43.b: "Una tarea importante. Déjame ayudarte ahora mismo." #NT!
+ swara_nation_objective_decision_desc: "Los Swara son los guardianes de los lugares cargados de espiritualidad. Quieren ver su compromiso con su causa antes de sumarse plenamente a su proyecto de reconstrucción de la Nación Bastet." #NT!
+ swara_nation_objective_decision_tooltip: "Los protectores necesitan nuestra protección." #NT!
+ swara_nation_objective_decision_confirm: "Una gran hazaña para un gran gobernante." #NT!
+  
+ pod1230objectives_werewolves.44.t: "La Nación Bastet" #NT!
+ pod1230objectives_werewolves.44.desc: "Con astuta diplomacia, fuerza de voluntad y una dosis no menor de persuasión "directa", finalmente has reunido a todas las tribus bajo tu estandarte. Una por una, vienen a reconocer tu triunfo y al nuevo gobernante de la Nación Bastet unida. Todos los felinos finalmente están trabajando como uno solo, algo nunca visto desde la época de las leyendas, mucho antes de la guerra perdida contra los tiránicos Garou. Algunos de tus nuevos "súbditos" esperan que caigas rápidamente, mientras que otros creen sinceramente en ti y en el futuro que prometiste. Al final, realmente no importa. Te has ganado esta victoria. Ahora guiarás a tus compañeros felinos hacia un futuro brillante. La era del gato finalmente está cerca." #NT!
+ pod1230objectives_werewolves.44.a: "Desde la luna, Madre Seline sonríe." #NT!
+ blessed_seline_modifier: "Bendecido por Seline" #NT!
+ blessed_seline_modifier_desc: "La Madre de los Gatos sonríe a su campeón elegido." #NT!
+ bastet_nation_unifier_tooltip: "Mientras tengas el título de Nación Bastet, tendrás acceso a todos los Hombres de Armas Bastet." #NT!
+  
+ artifact_attacker_advantage_5_modifier: "[command_modifier_i|E]Atacante [advantage|E]: #P +5#!" #NT!
+ artifact_monthly_prestige_10_modifier: "Mensual [prestige|E]: #P +40%#!" #NT!
+  
+  
+  

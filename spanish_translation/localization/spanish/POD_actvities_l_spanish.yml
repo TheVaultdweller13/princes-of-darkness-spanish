@@ -1,4 +1,7 @@
 ﻿l_spanish:
+ activity_invite_rule_coterie_members: "Invitar a [GetPlayer.Custom('PODCoterieNoTooltip')] miembros" #NT!
+  
+ ACTIVITY_GUEST_COTERIE_REASON: "[ROOT.Char.GetSheHe|U] también es miembro de $POD_player_coterie$: $VALUE|=+0$" #NT!
   
  activity_brujah_panegyra: "Panegyra de Brujah"
  activity_brujah_panegyra_desc: "Una tradición creada por los Brujah helénicos, la Panegyra es una versión vampírica de los Juegos Olímpicos adaptada a las fortalezas y debilidades únicas de los hijos de Caín."
@@ -102,6 +105,7 @@
  brujah_panegyra_events.1002.c: "Simplemente dales algunos consejos básicos y sigue adelante."
   
  panegyra_disqualified_tt: "Quedas descalificado para este concurso."
+ panegyra_disqualified_other_contestant: "[other_contestant.GetShortUIName] queda descalificado para este concurso." #NT!
   
  brujah_panegyra_events.1003.t: "Un poco de ayuda"
  brujah_panegyra_events.1003.desc: "Incluso el vampiro más joven tiene el potencial para realizar grandes hazañas físicas si usa su sangre para ello. Por lo tanto, sería ridículamente fácil hacer trampas durante cualquier competición que favorezca a esos vampiros. Sin embargo, las reglas de Panegyra son claras: no se permite el uso de ningún tipo de poderes de sangre durante el torneo. Se sabe que los jueces de Brujah son sorprendentemente entusiastas a la hora de detectar cualquier intento de trampa de este tipo. Sin embargo, estás bastante seguro de que algunos (si no la mayoría) no son atrapados, así que podrías intentarlo. Podría darte una gran ventaja durante la competición o hacer que te descalifiquen si te atrapan."
@@ -196,4 +200,5 @@
   
  TRAVEL_NAME_FOR_activity_brujah_panegyra: "[Character.GetFirstNamePossessiveNoTooltip] viaje a la Panegyra"
   
-  
+ brujah_panegyra_log_entry_earnings_title: "Ganancias del concurso" #NT!
+ brujah_panegyra_log_entry_earnings: "[CHARACTER.GetShortUIName|U] ganó premios por [CHARACTER.GetHerHis] actuación." #NT!

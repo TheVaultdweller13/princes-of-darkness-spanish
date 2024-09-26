@@ -515,7 +515,7 @@
  conversion_decision_tooltip: "Convierte tu reino usando tu Fe Verdadera"
  conversion_decision_desc: "Como verdadero creyente, usted podría organizar una campaña de proselitismo que rivalizara con las de los santos de antaño."
  conversion_decision_effect_tooltip: "Los condados de tu reino se convertirán a tu fe."
- conversion_decision_effect_tooltip2: "Obtienes menos XP beatífica con esto. #weak (1 XP por cada 10 condados, con un límite de 20)#!" #NT!
+ conversion_decision_effect_tooltip2: "Obtienes menos XP beatífica con esto. #weak (1 XP por cada 10 condados, con un límite de 20)#!"
  conversion_decision_confirm: "¡Les mostraremos la Luz!"
  reclusion_decision: "Concéntrese en su fe"
  reclusion_decision_tooltip: "Dedica tiempo a la contemplación para obtener una idea de tu verdadera fe."
@@ -535,10 +535,10 @@
  PODinquisition.9999.c.success: "¡Todo un éxito!"
  PODinquisition.9999.cb.success: "Un éxito justo"
  PODinquisition.9999.cc.success: "Un fracaso total..."
- advance_beatific_decision: "Mejora tu calificación de verdadera fe" #NT!
- advance_beatific_decision_desc: "En teoría, un mortal podría tener una puntuación de Fe superior a 5, pero estas personas son una entre mil millones: el tipo de personas que son veneradas como santos.\n\nPuedes ganar experiencia beatífica sanando, enseñando la verdadera fe o pidiendo la conversión en niveles inferiores. Convirtiendo provincias usando la tarea de capellán de la corte en niveles intermedios. Desterrando demonios, completando ventajas de teurgia/arte sagrado o completando un objetivo de inquisición en cualquier nivel.\n\nTorturar te hará perder experiencia beatífica." #NT!
- advance_beatific_decision_tooltip: "El largo camino por delante." #NT!
- advance_beatific_decision_confirm: "El viaje de tu vida." #NT!
+ advance_beatific_decision: "Mejora tu calificación de verdadera fe"
+ advance_beatific_decision_desc: "En teoría, un mortal podría tener una puntuación de Fe superior a 5, pero estas personas son una entre mil millones: el tipo de personas que son veneradas como santos.\n\nPuedes ganar experiencia beatífica sanando, enseñando la verdadera fe o pidiendo la conversión en niveles inferiores. Convirtiendo provincias usando la tarea de capellán de la corte en niveles intermedios. Desterrando demonios, completando ventajas de teurgia/arte sagrado o completando un objetivo de inquisición en cualquier nivel.\n\nTorturar te hará perder experiencia beatífica."
+ advance_beatific_decision_tooltip: "El largo camino por delante."
+ advance_beatific_decision_confirm: "El viaje de tu vida."
  talmahera_victory_objective_decision: "Comenzando el fin"
  talmahera_victory_objective_decision_tooltip: "Debes preparar el final de la carrera [cainite|E]"
  talmahera_victory_objective_decision_desc: "Tal'mahe'Ra se encuentra dividida entre Oriente y Occidente, cortada en dos por los Assamitas de Persia y los Ravnos de la India. Si quieres preparar el regreso de los [antediluvians|E], este cisma debe ser curado."
@@ -706,7 +706,7 @@
  become_asekh_sen_decision_desc: "¿Tal vez sea hora de visitar a un amigo que conoces y pedirle su bendición impía?"
  become_asekh_sen_decision_tooltip: "Pide el rito para convertirte en un Asekh-sen."
  become_asekh_sen_decision_confirm: "Mi vida continua vale cualquier precio."
- become_asekh_sen_decision_custom: "Tiene algún [GetTrait('banemummy').GetName( GetPlayer )] [friend|E] o [lover|E]" #NT!
+ become_asekh_sen_decision_custom: "Tiene algún [GetTrait('banemummy').GetName( GetPlayer )] [friend|E] o [lover|E]"
  join_order_decision: "Únete a la Inquisición de las Sombras"
  join_order_decision_desc: "Como verdadero creyente, quieres ser parte de la buena lucha; tal vez sea hora de visitar a algún amigo que conozcas y rogarle que te dé entrenamiento."
  join_order_decision_tooltip: "Al usar un [character_interaction|E] en cualquier otro miembro de la orden viva (excepto los von Murnau) que sea tu amigo, podrás seleccionar un personaje con el que relacionarte."
@@ -963,12 +963,12 @@
  POD_demon_earthbound_empire_decision_desc: "Controlas una vasta extensión de tierra. Extender tus tentáculos demoníacos por esta zona requeriría algo de esfuerzo, pero consolidaría tu posición en la región."
  POD_demon_earthbound_empire_decision_confirm: "¡Estaré en todas partes!"
   
- POD_demon_earthbound_kupala_decision: "Crónica de Transilvania" #NT!
- POD_demon_earthbound_kupala_decision_tooltip: "Es hora de tomar Transilvania de su actual amo, Kupala." #NT!
- POD_demon_earthbound_kupala_decision_desc: "Kupala, que fue quizás el primer demonio que escapó de la Prisión Abisal, se ha unido firmemente a Transilvania. Mientras no haya oposición, será un rival peligroso para tu ascenso." #NT!
- kupala_victory_objective_decision_custom: "Necesitas un arma creada específicamente para matar a Kupala, ya sea el [GetGlobalVariable('sword_of_dracula_link').Artifact.GetName] o su prototipo, el [GetGlobalVariable('ainkurn_link').Artifact.GetName]." #NT!
- kupala_victory_objective_decision_custom2: "La única forma de vincular (o desvincular) a Kupala de esta tierra se puede encontrar en el Incunable Kupalam, creado al tener cinco artefactos del Tratado de Kupala." #NT!
- POD_demon_earthbound_kupala_decision_confirm: "¡Transilvania es mía!" #NT!
+ POD_demon_earthbound_kupala_decision: "Crónica de Transilvania"
+ POD_demon_earthbound_kupala_decision_tooltip: "Es hora de tomar Transilvania de su actual amo, Kupala."
+ POD_demon_earthbound_kupala_decision_desc: "Kupala, que fue quizás el primer demonio que escapó de la Prisión Abisal, se ha unido firmemente a Transilvania. Mientras no haya oposición, será un rival peligroso para tu ascenso."
+ kupala_victory_objective_decision_custom: "Necesitas un arma creada específicamente para matar a Kupala, ya sea el [GetGlobalVariable('sword_of_dracula_link').Artifact.GetName] o su prototipo, el [GetGlobalVariable('ainkurn_link').Artifact.GetName]."
+ kupala_victory_objective_decision_custom2: "La única forma de vincular (o desvincular) a Kupala de esta tierra se puede encontrar en el Incunable Kupalam, creado al tener cinco artefactos del Tratado de Kupala."
+ POD_demon_earthbound_kupala_decision_confirm: "¡Transilvania es mía!"
   
  sin_conversion_decision: "Conversión masiva"
  sin_conversion_decision_tooltip: "Convierte tu reino usando tu Dragón del Pecado"
@@ -1515,230 +1515,230 @@
  pet_dragon_decision_tooltip: "¡Escamoso!"
  pet_dragon_decision_confirm: "¿Quién es un buen dragón? ¡Eres!"
   
- POD_sabbat_victory_objective_decision: "El triunfo del Sabbat" #NT!
- POD_sabbat_victory_objective_decision_tooltip: "Unidos como uno solo, allanando el camino para el regreso de Caine." #NT!
- POD_sabbat_victory_objective_decision_desc: "El Sabbat y la Camarilla están enzarzados en una guerra total por el alma del mundo vampírico. Solo cuando los clanes se alineen bajo una misma visión, uno de ellos será verdaderamente el vencedor." #NT!
- POD_sabbat_victory_objective_decision_confirm: "El mundo está listo para Caín." #NT!
- POD_sabbat_victory_objective_decision_custom: "Cada región del mapa debe tener un Cardenal Sabbat" #NT!
- sabbat_victory_modifier: "Heraldo de Caín" #NT!
+ POD_sabbat_victory_objective_decision: "El triunfo del Sabbat"
+ POD_sabbat_victory_objective_decision_tooltip: "Unidos como uno solo, allanando el camino para el regreso de Caine."
+ POD_sabbat_victory_objective_decision_desc: "El Sabbat y la Camarilla están enzarzados en una guerra total por el alma del mundo vampírico. Solo cuando los clanes se alineen bajo una misma visión, uno de ellos será verdaderamente el vencedor."
+ POD_sabbat_victory_objective_decision_confirm: "El mundo está listo para Caín."
+ POD_sabbat_victory_objective_decision_custom: "Cada región del mapa debe tener un Cardenal Sabbat"
+ sabbat_victory_modifier: "Heraldo de Caín"
   
- POD_camarilla_victory_objective_decision: "Triunfo de la Camarilla" #NT!
- POD_camarilla_victory_objective_decision_tooltip: "Una raza, una sociedad." #NT!
- POD_camarilla_victory_objective_decision_desc: "El Sabbat y la Camarilla están enzarzados en una guerra total por el alma del mundo vampírico. Solo cuando los clanes se alineen bajo una misma visión, uno de ellos será verdaderamente el vencedor." #NT!
- POD_camarilla_victory_objective_decision_confirm: "La indomable Torre de Marfil." #NT!
- POD_camarilla_victory_objective_decision_custom: "Cada [Clan|E] es un miembro de la Camarilla" #NT!
- camarilla_victory_modifier: "Guardián de marfil" #NT!
+ POD_camarilla_victory_objective_decision: "Triunfo de la Camarilla"
+ POD_camarilla_victory_objective_decision_tooltip: "Una raza, una sociedad."
+ POD_camarilla_victory_objective_decision_desc: "El Sabbat y la Camarilla están enzarzados en una guerra total por el alma del mundo vampírico. Solo cuando los clanes se alineen bajo una misma visión, uno de ellos será verdaderamente el vencedor."
+ POD_camarilla_victory_objective_decision_confirm: "La indomable Torre de Marfil."
+ POD_camarilla_victory_objective_decision_custom: "Cada [Clan|E] es un miembro de la Camarilla"
+ camarilla_victory_modifier: "Guardián de marfil"
   
- new_demon_warrior_empire_objective_decision: "El diablo dentro" #NT!
- new_demon_warrior_empire_objective_decision_tooltip: "Crearás un nuevo Imperio Guerrero Demonio." #NT!
- new_demon_warrior_empire_objective_decision_desc: "El Imperio de los Guerreros Demonios era una sociedad pre-dhármica entre los recientemente caídos [wan_kuei|E] que se oponía a los Cinco Emperadores. Se deleitaban en su nueva forma corrupta y eligieron aceptarla en lugar de luchar contra ella." #NT!
- new_demon_warrior_empire_objective_decision_confirm: "Un nuevo levantamiento del Diablo Celestial" #NT!
+ new_demon_warrior_empire_objective_decision: "El diablo dentro"
+ new_demon_warrior_empire_objective_decision_tooltip: "Crearás un nuevo Imperio Guerrero Demonio."
+ new_demon_warrior_empire_objective_decision_desc: "El Imperio de los Guerreros Demonios era una sociedad pre-dhármica entre los recientemente caídos [wan_kuei|E] que se oponía a los Cinco Emperadores. Se deleitaban en su nueva forma corrupta y eligieron aceptarla en lugar de luchar contra ella."
+ new_demon_warrior_empire_objective_decision_confirm: "Un nuevo levantamiento del Diablo Celestial"
   
- sustain_fourth_age_objective_decision: "Detener la rueda de los tiempos" #NT!
- sustain_fourth_age_objective_decision_tooltip: "El [fourth_age|E] continuará por un tiempo más." #NT!
- sustain_fourth_age_objective_decision_desc: "El llamado del [fifth_age|E] está cerca, casi todos los shen coinciden en que el detonante del [fifth_age|E] fue la intrusión de los occidentales en el Reino Medio. Por lo tanto, lo que se debe hacer está claro." #NT!
- sustain_fourth_age_objective_decision_confirm: "¿Funcionaría esto?" #NT!
- fifth_age_delayed: "El [fifth_age|E] se retrasará #V 100#! años" #NT!
- sustain_fourth_age_objective_before_last_date: "La fecha es 1250.1.1 o anterior." #NT!
+ sustain_fourth_age_objective_decision: "Detener la rueda de los tiempos"
+ sustain_fourth_age_objective_decision_tooltip: "El [fourth_age|E] continuará por un tiempo más."
+ sustain_fourth_age_objective_decision_desc: "El llamado del [fifth_age|E] está cerca, casi todos los shen coinciden en que el detonante del [fifth_age|E] fue la intrusión de los occidentales en el Reino Medio. Por lo tanto, lo que se debe hacer está claro."
+ sustain_fourth_age_objective_decision_confirm: "¿Funcionaría esto?"
+ fifth_age_delayed: "El [fifth_age|E] se retrasará #V 100#! años"
+ sustain_fourth_age_objective_before_last_date: "La fecha es 1250.1.1 o anterior."
   
- prevent_fifth_age_objective_decision: "Detener la rueda de los tiempos" #NT!
- prevent_fifth_age_objective_decision_tooltip: "El [fourth_age|E] continuará por un tiempo más." #NT!
- prevent_fifth_age_objective_decision_desc: "Los Kin-jin "Cainitas", los seguidores de los Dharmas del Horizonte No Examinado, deben pagar. Acabaremos con los Payasos de las Cien Máscaras, acabaremos con el Camino Vergonzoso del Matón Fantasma, acabaremos con la Hermandad del Tigre Silencioso, acabaremos con la Ruta de las Geishas Pretenciosas, acabaremos con el Camino de los Insufribles Jardineros de Carne, acabaremos con la Orden Inauspiciosa de los Diablos de Sangre, acabaremos con los Hombres de la Compañía de los Mil Encantadores." #NT!
- prevent_fifth_age_objective_decision_confirm: "La rueda no gira." #NT!
- fifth_age_prevented: "El [fifth_age|E] no sucederá en el futuro" #NT!
- prevent_fifth_age_objective_before_last_date: "La fecha es 1350.1.1 o anterior" #NT!
- prevent_fifth_age_objective_decision_custom1: "No debe haber ningún [GetTrait('ravnos').GetName( GetPlayer )] [independent|E] [king|E] o [emperor|E] en el mapa." #NT!
- prevent_fifth_age_objective_decision_custom1_ex: "$prevent_fifth_age_objective_decision_custom1$ #weak ([example.GetFirstName])#! #help Puedes usar el modo de mapa del Clan para una comprobación más sencilla.#!" #NT!
- prevent_fifth_age_objective_decision_custom2: "No debe haber ningún [GetTrait('giovanni').GetName( GetPlayer )] [independent|E] [king|E] o [emperor|E] en el mapa." #NT!
- prevent_fifth_age_objective_decision_custom2_ex: "$prevent_fifth_age_objective_decision_custom2$ #weak ([example.GetFirstName])#! #help Puedes usar el modo de mapa del Clan para una comprobación más sencilla.#!" #NT!
- prevent_fifth_age_objective_decision_custom3: "No debe haber ningún [GetTrait('assamite').GetName( GetPlayer )] [independent|E] [king|E] o [emperor|E] en el mapa." #NT!
- prevent_fifth_age_objective_decision_custom3_ex: "$prevent_fifth_age_objective_decision_custom3$ #weak ([example.GetFirstName])#! #help Puedes usar el modo de mapa del Clan para una comprobación más sencilla.#!" #NT!
- prevent_fifth_age_objective_decision_custom4: "No debe haber ningún [GetTrait('toreador').GetName( GetPlayer )] [independent|E] [king|E] o [emperor|E] en el mapa." #NT!
- prevent_fifth_age_objective_decision_custom4_ex: "$prevent_fifth_age_objective_decision_custom4$ #weak ([example.GetFirstName])#! #help Puedes usar el modo de mapa del Clan para una comprobación más sencilla.#!" #NT!
- prevent_fifth_age_objective_decision_custom5: "No debe haber ningún [GetTrait('tzimisce').GetName( GetPlayer )] [independent|E] [king|E] o [emperor|E] en el mapa." #NT!
- prevent_fifth_age_objective_decision_custom5_ex: "$prevent_fifth_age_objective_decision_custom5$ #weak ([example.GetFirstName])#! #help Puedes usar el modo de mapa del Clan para una comprobación más sencilla.#!" #NT!
- prevent_fifth_age_objective_decision_custom6: "No debe haber ningún [GetTrait('tremere').GetName( GetPlayer )] [independent|E] [king|E] o [emperor|E] en el mapa." #NT!
- prevent_fifth_age_objective_decision_custom6_ex: "$prevent_fifth_age_objective_decision_custom6$ #weak ([example.GetFirstName])#! #help Puedes usar el modo de mapa del Clan para una comprobación más sencilla.#!" #NT!
- prevent_fifth_age_objective_decision_custom7: "No debe haber ningún [GetTrait('ventrue').GetName( GetPlayer )] [independent|E] [king|E] o [emperor|E] en el mapa." #NT!
- prevent_fifth_age_objective_decision_custom7_ex: "$prevent_fifth_age_objective_decision_custom7$ #weak ([example.GetFirstName])#! #help Puedes usar el modo de mapa del Clan para una comprobación más sencilla.#!" #NT!
- mantis_of_wheel_modifier: "Rueda atascada" #NT!
+ prevent_fifth_age_objective_decision: "Detener la rueda de los tiempos"
+ prevent_fifth_age_objective_decision_tooltip: "El [fourth_age|E] continuará por un tiempo más."
+ prevent_fifth_age_objective_decision_desc: "Los Kin-jin "Cainitas", los seguidores de los Dharmas del Horizonte No Examinado, deben pagar. Acabaremos con los Payasos de las Cien Máscaras, acabaremos con el Camino Vergonzoso del Matón Fantasma, acabaremos con la Hermandad del Tigre Silencioso, acabaremos con la Ruta de las Geishas Pretenciosas, acabaremos con el Camino de los Insufribles Jardineros de Carne, acabaremos con la Orden Inauspiciosa de los Diablos de Sangre, acabaremos con los Hombres de la Compañía de los Mil Encantadores."
+ prevent_fifth_age_objective_decision_confirm: "La rueda no gira."
+ fifth_age_prevented: "El [fifth_age|E] no sucederá en el futuro"
+ prevent_fifth_age_objective_before_last_date: "La fecha es 1350.1.1 o anterior"
+ prevent_fifth_age_objective_decision_custom1: "No debe haber ningún [GetTrait('ravnos').GetName( GetPlayer )] [independent|E] [king|E] o [emperor|E] en el mapa."
+ prevent_fifth_age_objective_decision_custom1_ex: "$prevent_fifth_age_objective_decision_custom1$ #weak ([example.GetFirstName])#! #help Puedes usar el modo de mapa del Clan para una comprobación más sencilla.#!"
+ prevent_fifth_age_objective_decision_custom2: "No debe haber ningún [GetTrait('giovanni').GetName( GetPlayer )] [independent|E] [king|E] o [emperor|E] en el mapa."
+ prevent_fifth_age_objective_decision_custom2_ex: "$prevent_fifth_age_objective_decision_custom2$ #weak ([example.GetFirstName])#! #help Puedes usar el modo de mapa del Clan para una comprobación más sencilla.#!"
+ prevent_fifth_age_objective_decision_custom3: "No debe haber ningún [GetTrait('assamite').GetName( GetPlayer )] [independent|E] [king|E] o [emperor|E] en el mapa."
+ prevent_fifth_age_objective_decision_custom3_ex: "$prevent_fifth_age_objective_decision_custom3$ #weak ([example.GetFirstName])#! #help Puedes usar el modo de mapa del Clan para una comprobación más sencilla.#!"
+ prevent_fifth_age_objective_decision_custom4: "No debe haber ningún [GetTrait('toreador').GetName( GetPlayer )] [independent|E] [king|E] o [emperor|E] en el mapa."
+ prevent_fifth_age_objective_decision_custom4_ex: "$prevent_fifth_age_objective_decision_custom4$ #weak ([example.GetFirstName])#! #help Puedes usar el modo de mapa del Clan para una comprobación más sencilla.#!"
+ prevent_fifth_age_objective_decision_custom5: "No debe haber ningún [GetTrait('tzimisce').GetName( GetPlayer )] [independent|E] [king|E] o [emperor|E] en el mapa."
+ prevent_fifth_age_objective_decision_custom5_ex: "$prevent_fifth_age_objective_decision_custom5$ #weak ([example.GetFirstName])#! #help Puedes usar el modo de mapa del Clan para una comprobación más sencilla.#!"
+ prevent_fifth_age_objective_decision_custom6: "No debe haber ningún [GetTrait('tremere').GetName( GetPlayer )] [independent|E] [king|E] o [emperor|E] en el mapa."
+ prevent_fifth_age_objective_decision_custom6_ex: "$prevent_fifth_age_objective_decision_custom6$ #weak ([example.GetFirstName])#! #help Puedes usar el modo de mapa del Clan para una comprobación más sencilla.#!"
+ prevent_fifth_age_objective_decision_custom7: "No debe haber ningún [GetTrait('ventrue').GetName( GetPlayer )] [independent|E] [king|E] o [emperor|E] en el mapa."
+ prevent_fifth_age_objective_decision_custom7_ex: "$prevent_fifth_age_objective_decision_custom7$ #weak ([example.GetFirstName])#! #help Puedes usar el modo de mapa del Clan para una comprobación más sencilla.#!"
+ mantis_of_wheel_modifier: "Rueda atascada"
   
- back_to_fourth_age_objective_decision: "Regreso a la Cuarta Era" #NT!
- back_to_fourth_age_objective_decision_tooltip: "Empujarás la rueda de nuevo hasta [fourth_age|E]." #NT!
- back_to_fourth_age_objective_decision_desc: "Los Kin-jin "Cainitas", los seguidores de los Dharmas del Horizonte No Examinado, deben pagar." #NT!
- back_to_fourth_age_objective_decision_confirm: "De vuelta al pasado." #NT!
- back_to_fourth_age: "El Reino Medio regresará al [fourth_age|E]" #NT!
- back_to_fourth_age_objective_before_last_date: "La fecha es 1992.1.1 o anterior" #NT!
- back_to_fourth_age_objective_decision_custom: "No debe haber ningún [GetTrait('vampire').GetName( GetPlayer )] [independent|E] [king|E] o [emperor|E] en el mapa." #NT!
- back_to_fourth_age_objective_decision_custom_ex: "$back_to_fourth_age_objective_decision_custom$ #weak ([example.GetFirstName])#! #help Puedes usar el modo de mapa [splat|E] para una comprobación más sencilla.#!" #NT!
+ back_to_fourth_age_objective_decision: "Regreso a la Cuarta Era"
+ back_to_fourth_age_objective_decision_tooltip: "Empujarás la rueda de nuevo hasta [fourth_age|E]."
+ back_to_fourth_age_objective_decision_desc: "Los Kin-jin "Cainitas", los seguidores de los Dharmas del Horizonte No Examinado, deben pagar."
+ back_to_fourth_age_objective_decision_confirm: "De vuelta al pasado."
+ back_to_fourth_age: "El Reino Medio regresará al [fourth_age|E]"
+ back_to_fourth_age_objective_before_last_date: "La fecha es 1992.1.1 o anterior"
+ back_to_fourth_age_objective_decision_custom: "No debe haber ningún [GetTrait('vampire').GetName( GetPlayer )] [independent|E] [king|E] o [emperor|E] en el mapa."
+ back_to_fourth_age_objective_decision_custom_ex: "$back_to_fourth_age_objective_decision_custom$ #weak ([example.GetFirstName])#! #help Puedes usar el modo de mapa [splat|E] para una comprobación más sencilla.#!"
   
- reckoning_war_of_shame_objective_decision: "Ajuste de cuentas por la Guerra de la Vergüenza" #NT!
- reckoning_war_of_shame_objective_decision_tooltip: "Vengarás al corrupto [wan_xian|E] y traerás de vuelta a Okuma." #NT!
- reckoning_war_of_shame_objective_decision_desc: "Mientras los hermanos luchaban entre sí, los traidores [wan_xian|E] se atiborraron de los nidos de dragones que las criaturas-hombre habían protegido originalmente. Deben pagar, al menos a los corruptos, el nido debe regresar a los Xiong Ren y debemos tratar de encontrar a los Okuma restantes." #NT!
- reckoning_war_of_shame_objective_decision_confirm: "La venganza es nuestra" #NT!
- reckoning_war_of_shame_objective_decision_effect_tooltip: "Un Okuma se uniría a tu corte." #NT!
- unshameer_modifier: "Vengador de la vergüenza" #NT!
+ reckoning_war_of_shame_objective_decision: "Ajuste de cuentas por la Guerra de la Vergüenza"
+ reckoning_war_of_shame_objective_decision_tooltip: "Vengarás al corrupto [wan_xian|E] y traerás de vuelta a Okuma."
+ reckoning_war_of_shame_objective_decision_desc: "Mientras los hermanos luchaban entre sí, los traidores [wan_xian|E] se atiborraron de los nidos de dragones que las criaturas-hombre habían protegido originalmente. Deben pagar, al menos a los corruptos, el nido debe regresar a los Xiong Ren y debemos tratar de encontrar a los Okuma restantes."
+ reckoning_war_of_shame_objective_decision_confirm: "La venganza es nuestra"
+ reckoning_war_of_shame_objective_decision_effect_tooltip: "Un Okuma se uniría a tu corte."
+ unshameer_modifier: "Vengador de la vergüenza"
   
- reckoning_dragon_river_war_objective_decision: "Los Nueve Soles de la Guerra del Río Dragón" #NT!
- reckoning_dragon_river_war_objective_decision_tooltip: "Levantarás la maldición del sol sobre el [wan_kuei|E]." #NT!
- reckoning_dragon_river_war_objective_decision_desc: "Se crearon nueve soles adicionales para quemar el Reino Medio durante la Guerra del Río Dragón. A través de Yi, el Cielo lanzó maldiciones contra los Reyes [wan_kuei|E] y Yama. Como habían ayudado en la creación de los soles falsos, la luz del sol verdadero ahora los quemaría para siempre. Para revertir la rueda de la edad, debes pedir perdón al cielo." #NT!
- reckoning_dragon_river_war_objective_decision_confirm: "Una maldición levantada." #NT!
- sunny_wankuei: "[GetTrait('kueijin').GetName( GetPlayer )] ya no recibirá heridas de poderes que provoquen luz solar." #NT!
- reckoning_dragon_river_war_objective_decision_custom1: "No debe haber ningún [ruler|E] adorando a [GetFaithByKey('wayofthetenthousandscreams').GetName] o [GetFaithByKey('searing_wind').GetName], o akuma en el mapa." #NT!
- reckoning_dragon_river_war_objective_decision_custom1_ex: "$reckoning_dragon_river_war_objective_decision_custom1$ #weak ([example.GetFirstName])#!" #NT!
- reckoning_dragon_river_war_objective_decision_custom2: "Yi Han, el Wu Lung que algunos consideran responsable de la maldición, debe estar muerto." #NT!
- reckoning_dragon_river_war_objective_decision_custom3: "El título [GetTitleByKey('e_scarlet_dragon').GetNameNoTier] debe ser tuyo o no existir en absoluto. Muchos creen que participaron en la creación de los Nueve Soles." #NT!
- reckoning_dragon_river_war_objective_decision_effect_tooltip: "[GetTrait('kueijin').GetName( GetPlayer )] gobernantes siempre aceptarán tu oferta de vasallaje." #NT!
- sun_curse_lifter_modifier: "Levantador de la maldición del sol" #NT!
+ reckoning_dragon_river_war_objective_decision: "Los Nueve Soles de la Guerra del Río Dragón"
+ reckoning_dragon_river_war_objective_decision_tooltip: "Levantarás la maldición del sol sobre el [wan_kuei|E]."
+ reckoning_dragon_river_war_objective_decision_desc: "Se crearon nueve soles adicionales para quemar el Reino Medio durante la Guerra del Río Dragón. A través de Yi, el Cielo lanzó maldiciones contra los Reyes [wan_kuei|E] y Yama. Como habían ayudado en la creación de los soles falsos, la luz del sol verdadero ahora los quemaría para siempre. Para revertir la rueda de la edad, debes pedir perdón al cielo."
+ reckoning_dragon_river_war_objective_decision_confirm: "Una maldición levantada."
+ sunny_wankuei: "[GetTrait('kueijin').GetName( GetPlayer )] ya no recibirá heridas de poderes que provoquen luz solar."
+ reckoning_dragon_river_war_objective_decision_custom1: "No debe haber ningún [ruler|E] adorando a [GetFaithByKey('wayofthetenthousandscreams').GetName] o [GetFaithByKey('searing_wind').GetName], o akuma en el mapa."
+ reckoning_dragon_river_war_objective_decision_custom1_ex: "$reckoning_dragon_river_war_objective_decision_custom1$ #weak ([example.GetFirstName])#!"
+ reckoning_dragon_river_war_objective_decision_custom2: "Yi Han, el Wu Lung que algunos consideran responsable de la maldición, debe estar muerto."
+ reckoning_dragon_river_war_objective_decision_custom3: "El título [GetTitleByKey('e_scarlet_dragon').GetNameNoTier] debe ser tuyo o no existir en absoluto. Muchos creen que participaron en la creación de los Nueve Soles."
+ reckoning_dragon_river_war_objective_decision_effect_tooltip: "[GetTrait('kueijin').GetName( GetPlayer )] gobernantes siempre aceptarán tu oferta de vasallaje."
+ sun_curse_lifter_modifier: "Levantador de la maldición del sol"
   
- little_god_reinstatement_objective_decision: "Restablecer a los Pequeños Dioses" #NT!
- little_god_reinstatement_objective_decision_tooltip: "Pondrás fin al exilio de los Hsien." #NT!
- little_god_reinstatement_objective_decision_desc: "Para los Pequeños Dioses, [fourth_age|E] fue el comienzo de su exilio del Cielo después de que el Augusto Personaje los desterrara por su participación en la insurrección de [wan_xian|E]. Para revertir la rueda de la era, debes pedir perdón a los cielos." #NT!
- little_god_reinstatement_objective_decision_confirm: "Una nueva (pequeña) era piadosa." #NT!
- little_god_reinstatement_objective_decision_custom: "No debe haber ningún [ruler|E] adorando a [GetReligionByKey('mu_religion').GetName] en el mapa." #NT!
- little_god_reinstatement_objective_decision_custom_ex: "$little_god_reinstatement_objective_decision_custom$ #weak ([example.GetFirstName])#!" #NT!
- hsien_fae: "Cada hsien perderá el rasgo [GetTrait('changeling').GetName( GetPlayer )] y ganará el rasgo [GetTrait('fae').GetName( GetPlayer )]." #NT!
- little_god_reinstatement_objective_decision_effect_tooltip: "Los gobernantes Hsien siempre aceptarán su oferta de vasallaje." #NT!
- best_mediator_modifier: "El mejor mediador" #NT!
+ little_god_reinstatement_objective_decision: "Restablecer a los Pequeños Dioses"
+ little_god_reinstatement_objective_decision_tooltip: "Pondrás fin al exilio de los Hsien."
+ little_god_reinstatement_objective_decision_desc: "Para los Pequeños Dioses, [fourth_age|E] fue el comienzo de su exilio del Cielo después de que el Augusto Personaje los desterrara por su participación en la insurrección de [wan_xian|E]. Para revertir la rueda de la era, debes pedir perdón a los cielos."
+ little_god_reinstatement_objective_decision_confirm: "Una nueva (pequeña) era piadosa."
+ little_god_reinstatement_objective_decision_custom: "No debe haber ningún [ruler|E] adorando a [GetReligionByKey('mu_religion').GetName] en el mapa."
+ little_god_reinstatement_objective_decision_custom_ex: "$little_god_reinstatement_objective_decision_custom$ #weak ([example.GetFirstName])#!"
+ hsien_fae: "Cada hsien perderá el rasgo [GetTrait('changeling').GetName( GetPlayer )] y ganará el rasgo [GetTrait('fae').GetName( GetPlayer )]."
+ little_god_reinstatement_objective_decision_effect_tooltip: "Los gobernantes Hsien siempre aceptarán su oferta de vasallaje."
+ best_mediator_modifier: "El mejor mediador"
   
- back_to_third_age_objective_decision: "Regreso a la Tercera Edad" #NT!
- back_to_third_age_objective_decision_tooltip: "Empujarás la rueda de nuevo hasta [third_age|E]." #NT!
- back_to_third_age_objective_decision_desc: "Con el [fourth_age|E] asegurado, es hora de traer de vuelta el [third_age|E]." #NT!
- back_to_third_age_objective_decision_confirm: "Aún más atrás." #NT!
- back_to_third_age: "El Reino Medio regresará al [third_age|E]" #NT!
- back_to_third_age_objective_decision_custom1: "La guerra de la vergüenza debe ser vengada." #NT!
- back_to_third_age_objective_decision_custom2: "La guerra del río dragón debe ser curada." #NT!
- back_to_third_age_objective_decision_custom3: "Los pequeños dioses deben ser reinstalados." #NT!
- back_to_third_age_objective_decision_custom4: "Los trabajadores de la voluntad del Reino Medio, los Chi'n Ta, deben hacer la paz." #NT!
- reverser_of_wheel_modifier: "El trabajador de la rueda" #NT!
+ back_to_third_age_objective_decision: "Regreso a la Tercera Edad"
+ back_to_third_age_objective_decision_tooltip: "Empujarás la rueda de nuevo hasta [third_age|E]."
+ back_to_third_age_objective_decision_desc: "Con el [fourth_age|E] asegurado, es hora de traer de vuelta el [third_age|E]."
+ back_to_third_age_objective_decision_confirm: "Aún más atrás."
+ back_to_third_age: "El Reino Medio regresará al [third_age|E]"
+ back_to_third_age_objective_decision_custom1: "La guerra de la vergüenza debe ser vengada."
+ back_to_third_age_objective_decision_custom2: "La guerra del río dragón debe ser curada."
+ back_to_third_age_objective_decision_custom3: "Los pequeños dioses deben ser reinstalados."
+ back_to_third_age_objective_decision_custom4: "Los trabajadores de la voluntad del Reino Medio, los Chi'n Ta, deben hacer la paz."
+ reverser_of_wheel_modifier: "El trabajador de la rueda"
   
- unsevering_objective_decision: "Reparar la ruptura" #NT!
- unsevering_objective_decision_tooltip: "Intentarás debilitar la red que contiene al Wyrm." #NT!
- unsevering_objective_decision_desc: "San Yuan, la Tríada, nació y se formó la vida tal como la conocemos hoy. Pero se produjo la Separación, la Gran Araña encarceló al Ciempiés, llevándolo a la locura. Liberaremos y curaremos (o destruiremos todas las partes corruptas) del Ciempiés... pero primero debemos debilitarlo para hacerlo más controlable." #NT!
- unsevering_objective_decision_confirm: "Reequilibrio de las balanzas cósmicas." #NT!
- unsevering_objective_decision_custom: "No debe haber ningún dragón [independent_ruler|E] en el mapa." #NT!
- unsevering_objective_decision_custom_ex: "$unsevering_objective_decision_custom$ #weak ([example.GetFirstName])#!" #NT!
- unsevering_objective_decision_effect_tooltip: "Todos los guanteletes y sudarios se debilitarán al nivel #V 1#!." #NT!
- wall_beaker_modifier: "Destructor de muros" #NT!
+ unsevering_objective_decision: "Reparar la ruptura"
+ unsevering_objective_decision_tooltip: "Intentarás debilitar la red que contiene al Wyrm."
+ unsevering_objective_decision_desc: "San Yuan, la Tríada, nació y se formó la vida tal como la conocemos hoy. Pero se produjo la Separación, la Gran Araña encarceló al Ciempiés, llevándolo a la locura. Liberaremos y curaremos (o destruiremos todas las partes corruptas) del Ciempiés... pero primero debemos debilitarlo para hacerlo más controlable."
+ unsevering_objective_decision_confirm: "Reequilibrio de las balanzas cósmicas."
+ unsevering_objective_decision_custom: "No debe haber ningún dragón [independent_ruler|E] en el mapa."
+ unsevering_objective_decision_custom_ex: "$unsevering_objective_decision_custom$ #weak ([example.GetFirstName])#!"
+ unsevering_objective_decision_effect_tooltip: "Todos los guanteletes y sudarios se debilitarán al nivel #V 1#!."
+ wall_beaker_modifier: "Destructor de muros"
   
- unhell_objective_decision: "Sella el Yomi" #NT!
- unhell_objective_decision_tooltip: "Limpiarás todas las entidades demoníacas de este mundo." #NT!
- unhell_objective_decision_desc: "Todos los seres infernales y su corrupción deberían terminar, no más mancha de [yomi|E] bajo tu vigilancia." #NT!
- unhell_objective_decision_confirm: "Sellado para siempre." #NT!
- unhell_objective_decision_custom1: "No debe haber ningún demonio [independent_ruler|E] en el mapa." #NT!
- unhell_objective_decision_custom1_ex: "$unhell_objective_decision_custom1$ #weak ([example.GetFirstName])#!" #NT!
- unhell_objective_decision_custom2: "No debe haber ningún [GetTrait('infernalist').GetName( GetNullCharacter )] [independent_ruler|E] en el mapa." #NT!
- unhell_objective_decision_custom2_ex: "$unhell_objective_decision_custom2$ #weak ([example.GetFirstName])#!" #NT!
- unhell_objective_decision_effect_tooltip: "Se eliminará el acceso a [yomi|E] en [umbra|E]." #NT!
- unhellish_modifier: "Sellador de Yomi" #NT!
+ unhell_objective_decision: "Sella el Yomi"
+ unhell_objective_decision_tooltip: "Limpiarás todas las entidades demoníacas de este mundo."
+ unhell_objective_decision_desc: "Todos los seres infernales y su corrupción deberían terminar, no más mancha de [yomi|E] bajo tu vigilancia."
+ unhell_objective_decision_confirm: "Sellado para siempre."
+ unhell_objective_decision_custom1: "No debe haber ningún demonio [independent_ruler|E] en el mapa."
+ unhell_objective_decision_custom1_ex: "$unhell_objective_decision_custom1$ #weak ([example.GetFirstName])#!"
+ unhell_objective_decision_custom2: "No debe haber ningún [GetTrait('infernalist').GetName( GetNullCharacter )] [independent_ruler|E] en el mapa."
+ unhell_objective_decision_custom2_ex: "$unhell_objective_decision_custom2$ #weak ([example.GetFirstName])#!"
+ unhell_objective_decision_effect_tooltip: "Se eliminará el acceso a [yomi|E] en [umbra|E]."
+ unhellish_modifier: "Sellador de Yomi"
   
- unkuei_objective_decision: "En busca de una segunda era" #NT!
- unkuei_objective_decision_tooltip: "El poder divino vuelve a envolver al mundo." #NT!
- unkuei_objective_decision_desc: "El fuego que duerme en todos despierta de nuevo. La Segunda Era original fue desechada porque el mal se arraigó en nuestros corazones. Nos prepararemos para el despertar del poder divino en los mortales y para que se imbuyan de él... y lo haremos mejor que en la primera Segunda Era." #NT!
- unkuei_objective_decision_confirm: "Imbuido de divinidad." #NT!
- unkuei_objective_decision_effect_tooltip: "[wan_kuei|E] no volverá a devorar chi de carne y sangre, solo obtendrá chi infinito. Además, ya no tendrá la necesidad de avanzar en el dharma." #NT!
- imbued_teacher_modifier: "Portador imbuido" #NT!
+ unkuei_objective_decision: "En busca de una segunda era"
+ unkuei_objective_decision_tooltip: "El poder divino vuelve a envolver al mundo."
+ unkuei_objective_decision_desc: "El fuego que duerme en todos despierta de nuevo. La Segunda Era original fue desechada porque el mal se arraigó en nuestros corazones. Nos prepararemos para el despertar del poder divino en los mortales y para que se imbuyan de él... y lo haremos mejor que en la primera Segunda Era."
+ unkuei_objective_decision_confirm: "Imbuido de divinidad."
+ unkuei_objective_decision_effect_tooltip: "[wan_kuei|E] no volverá a devorar chi de carne y sangre, solo obtendrá chi infinito. Además, ya no tendrá la necesidad de avanzar en el dharma."
+ imbued_teacher_modifier: "Portador imbuido"
   
- back_to_second_age_objective_decision: "Regreso a la Segunda Edad" #NT!
- back_to_second_age_objective_decision_tooltip: "Empujarás la rueda de nuevo hasta [second_age|E]." #NT!
- back_to_second_age_objective_decision_desc: "Por fin ha llegado el momento de limpiar el mundo de todo mal y corrupción. Es nuestra última batalla, nuestro último viaje, nuestra última guerra. Desharemos la Separación y purificaremos al Ciempiés. Mataremos a los Reyes Yama y destruiremos a los [yomi|E]. Encontraremos un camino al cielo para todos." #NT!
- back_to_second_age_objective_decision_confirm: "El final perfecto." #NT!
- back_to_second_age: "El Reino Medio regresará al [second_age|E]" #NT!
- back_to_second_age_objective_decision_custom1: "Las redes que atrapan al Ciempiés deben ser debilitadas y sus secuaces suprimidos." #NT!
- back_to_second_age_objective_decision_custom2: "Los Reyes Yama deben ser derrotados y su corrupción alejada de la tierra." #NT!
- back_to_second_age_objective_decision_custom3: "El [wan_kuei|E] debe ser redimido, y deben realizarse los preparativos para el regreso de la chispa de la divinidad dentro de la humanidad mortal." #NT!
- middle_kingdom_ending_tooltip: "Con el regreso de [second_age|E], tu juego terminará y el mundo que alguna vez conociste cambiará para siempre." #NT!
+ back_to_second_age_objective_decision: "Regreso a la Segunda Edad"
+ back_to_second_age_objective_decision_tooltip: "Empujarás la rueda de nuevo hasta [second_age|E]."
+ back_to_second_age_objective_decision_desc: "Por fin ha llegado el momento de limpiar el mundo de todo mal y corrupción. Es nuestra última batalla, nuestro último viaje, nuestra última guerra. Desharemos la Separación y purificaremos al Ciempiés. Mataremos a los Reyes Yama y destruiremos a los [yomi|E]. Encontraremos un camino al cielo para todos."
+ back_to_second_age_objective_decision_confirm: "El final perfecto."
+ back_to_second_age: "El Reino Medio regresará al [second_age|E]"
+ back_to_second_age_objective_decision_custom1: "Las redes que atrapan al Ciempiés deben ser debilitadas y sus secuaces suprimidos."
+ back_to_second_age_objective_decision_custom2: "Los Reyes Yama deben ser derrotados y su corrupción alejada de la tierra."
+ back_to_second_age_objective_decision_custom3: "El [wan_kuei|E] debe ser redimido, y deben realizarse los preparativos para el regreso de la chispa de la divinidad dentro de la humanidad mortal."
+ middle_kingdom_ending_tooltip: "Con el regreso de [second_age|E], tu juego terminará y el mundo que alguna vez conociste cambiará para siempre."
   
- free_abel_objective_decision: "Liberen al primer asesinado" #NT!
- free_abel_objective_decision_tooltip: "La abuela tiene un prisionero intrigante en su Torre de la Memoria. ¿Quién podría ser?" #NT!
- free_abel_objective_decision_desc: "Abuela es el nombre de... algo. Algunos creen que "ella" es la gemela malvada de Dios, otros piensan que "ella" es el remanente de un universo muerto y otros señalan a "ella" como el mismísimo [oblivion|E]. Se rumorea que un prisionero que mantiene en su Torre de la Memoria podría ser la clave para derrotarla." #NT!
- free_abel_objective_decision_confirm: "El final órfico." #NT!
- orpheus_good_ending_tooltip: "Una vez que hayas derrotado a [oblivion|E], tu juego habrá terminado y el mundo que alguna vez conociste habrá cambiado para siempre. Ojalá que para mejor." #NT!
+ free_abel_objective_decision: "Liberen al primer asesinado"
+ free_abel_objective_decision_tooltip: "La abuela tiene un prisionero intrigante en su Torre de la Memoria. ¿Quién podría ser?"
+ free_abel_objective_decision_desc: "Abuela es el nombre de... algo. Algunos creen que "ella" es la gemela malvada de Dios, otros piensan que "ella" es el remanente de un universo muerto y otros señalan a "ella" como el mismísimo [oblivion|E]. Se rumorea que un prisionero que mantiene en su Torre de la Memoria podría ser la clave para derrotarla."
+ free_abel_objective_decision_confirm: "El final órfico."
+ orpheus_good_ending_tooltip: "Una vez que hayas derrotado a [oblivion|E], tu juego habrá terminado y el mundo que alguna vez conociste habrá cambiado para siempre. Ojalá que para mejor."
   
- question_of_horus_objective_decision: "La pregunta de Horus" #NT!
- question_of_horus_objective_decision_tooltip: "Debemos volvernos lo suficientemente fuertes para que Horus ceda." #NT!
- question_of_horus_objective_decision_desc: "A Horus no le gusta tu mera existencia como momia que no esté vinculada a su lucha contra Set. Es un enemigo poderoso y, si quieres tener un futuro, debes obligarlo a sentarse a la mesa de negociaciones." #NT!
- question_of_horus_objective_decision_confirm: "Horus, vine a hablar." #NT!
- question_of_horus_objective_decision_tt_1: "Horus no está de acuerdo con nuestras demandas." #NT!
- question_of_horus_objective_decision_tt_2: "Horus está de acuerdo con nuestras demandas." #NT!
- question_of_horus_objective_knights: "Tengo #v 5#! [knights|E] con 40+ [prowess|E]" #NT!
- question_of_horus_objective_hekau: "Se han desbloqueado todos los [perks|E] en cualquiera de los Hekau [lifestyles|E]" #NT!
- unlock_separation_from_maat_objective_decision: "Desbloquear la separación de Maat [decision|E]" #NT!
- unlock_balance_of_maaat_objective_decision: "Desbloquea el saldo de Ma'at [decision|E]" #NT!
+ question_of_horus_objective_decision: "La pregunta de Horus"
+ question_of_horus_objective_decision_tooltip: "Debemos volvernos lo suficientemente fuertes para que Horus ceda."
+ question_of_horus_objective_decision_desc: "A Horus no le gusta tu mera existencia como momia que no esté vinculada a su lucha contra Set. Es un enemigo poderoso y, si quieres tener un futuro, debes obligarlo a sentarse a la mesa de negociaciones."
+ question_of_horus_objective_decision_confirm: "Horus, vine a hablar."
+ question_of_horus_objective_decision_tt_1: "Horus no está de acuerdo con nuestras demandas."
+ question_of_horus_objective_decision_tt_2: "Horus está de acuerdo con nuestras demandas."
+ question_of_horus_objective_knights: "Tengo #v 5#! [knights|E] con 40+ [prowess|E]"
+ question_of_horus_objective_hekau: "Se han desbloqueado todos los [perks|E] en cualquiera de los Hekau [lifestyles|E]"
+ unlock_separation_from_maat_objective_decision: "Desbloquear la separación de Maat [decision|E]"
+ unlock_balance_of_maaat_objective_decision: "Desbloquea el saldo de Ma'at [decision|E]"
   
- balance_of_maat_objective_decision: "Balance de Maat" #NT!
- balance_of_maat_objective_decision_tooltip: "Mi nombre piadoso es conocido por todas las momias." #NT!
- balance_of_maat_objective_decision_desc: "Mi devoción por Amenti no es un secreto para nadie, y con mi comprensión de Hekau podría convertirme en un [GetTrait('judge_of_maat').GetName( GetNullCharacter )], una de las entidades elegidas para velar por las almas de las momias." #NT!
- balance_of_maat_objective_decision_confirm: "Conviértete en tu propio juez" #NT!
- balance_of_maat_objective_decision_nomenclature: "He desbloqueado todos los [perks|E] en [hekau_nomenclature_lifestyle|E]" #NT!
- balance_of_maat_objective_decision_celestial: "He desbloqueado todos los [perks|E] en [hekau_celestial_lifestyle|E]" #NT!
- balance_of_maat_objective_decision_custom: "No debe haber ningún [GetTrait('mummy').GetName( GetNullCharacter )] que no sea tu [rival|E] o [GetTrait('banemummy').GetName( GetNullCharacter )] sin 90+ [opinion|E] de ustedes" #NT!
- balance_of_maat_objective_decision_ex: "$balance_of_maat_objective_decision_custom$ #weak ([example.GetFirstName])#!" #NT!
- judge_of_maat_explanation: "Los jueces de Ma'at son entidades misteriosas que juzgan a todos los [GetTrait('mummy').GetName( GetNullCharacter )] cuando mueren. Ser un [GetTrait('judge_of_maat').GetName( GetNullCharacter )] en [princes_of_darkness|E] te otorga algunas interacciones poderosas que te permiten tener un control casi completo sobre todas las momias (excepto las momias Bane, Wu'Tian o el propio Horus)." #NT!
+ balance_of_maat_objective_decision: "Balance de Maat"
+ balance_of_maat_objective_decision_tooltip: "Mi nombre piadoso es conocido por todas las momias."
+ balance_of_maat_objective_decision_desc: "Mi devoción por Amenti no es un secreto para nadie, y con mi comprensión de Hekau podría convertirme en un [GetTrait('judge_of_maat').GetName( GetNullCharacter )], una de las entidades elegidas para velar por las almas de las momias."
+ balance_of_maat_objective_decision_confirm: "Conviértete en tu propio juez"
+ balance_of_maat_objective_decision_nomenclature: "He desbloqueado todos los [perks|E] en [hekau_nomenclature_lifestyle|E]"
+ balance_of_maat_objective_decision_celestial: "He desbloqueado todos los [perks|E] en [hekau_celestial_lifestyle|E]"
+ balance_of_maat_objective_decision_custom: "No debe haber ningún [GetTrait('mummy').GetName( GetNullCharacter )] que no sea tu [rival|E] o [GetTrait('banemummy').GetName( GetNullCharacter )] sin 90+ [opinion|E] de ustedes"
+ balance_of_maat_objective_decision_ex: "$balance_of_maat_objective_decision_custom$ #weak ([example.GetFirstName])#!"
+ judge_of_maat_explanation: "Los jueces de Ma'at son entidades misteriosas que juzgan a todos los [GetTrait('mummy').GetName( GetNullCharacter )] cuando mueren. Ser un [GetTrait('judge_of_maat').GetName( GetNullCharacter )] en [princes_of_darkness|E] te otorga algunas interacciones poderosas que te permiten tener un control casi completo sobre todas las momias (excepto las momias Bane, Wu'Tian o el propio Horus)."
   
- separation_from_maat_objective_decision_2_more_hekau: "Ha desbloqueado todos los [perks|E] en 2 o más de cualquier Hekau [lifestyles|E]" #NT!
+ separation_from_maat_objective_decision_2_more_hekau: "Ha desbloqueado todos los [perks|E] en 2 o más de cualquier Hekau [lifestyles|E]"
   
- separation_from_maat_objective_decision: "Separación de Maat" #NT!
- separation_from_maat_objective_decision_tooltip: "Es hora de liberarse de Maat." #NT!
- separation_from_maat_objective_decision_desc: "A través de mi comprensión de [hekau_necromancy_lifestyle|E] y otros Hekau, ¡puedo crear mi propio [dark_kingdom|E] y finalmente liberarme de Ma'at! Nos apartaremos del bien del dominio de Osiris sobre nuestras almas." #NT!
- separation_from_maat_objective_decision_confirm: "None" #NT!
+ separation_from_maat_objective_decision: "Separación de Maat"
+ separation_from_maat_objective_decision_tooltip: "Es hora de liberarse de Maat."
+ separation_from_maat_objective_decision_desc: "A través de mi comprensión de [hekau_necromancy_lifestyle|E] y otros Hekau, ¡puedo crear mi propio [dark_kingdom|E] y finalmente liberarme de Ma'at! Nos apartaremos del bien del dominio de Osiris sobre nuestras almas."
+ separation_from_maat_objective_decision_confirm: "None"
   
- azhi_dahaka_objective_decision: "Búsqueda de Azhi Dahaka" #NT!
- azhi_dahaka_objective_decision_tooltip: "Uno con cambio." #NT!
- azhi_dahaka_objective_decision_desc: "Azhi Dahaka es un estado mítico que persiguen los metamorfosistas. Es el presagio de la transformación, un estado en el que las normas y estructuras físicas y mentales pierden su dominio sobre el alma misma del vampiro. Para lograrlo, cada aspirante debe encontrar su propio camino, ya que el estancamiento es, después de todo, la extinción." #NT!
- azhi_dahaka_objective_decision_confirm: "Empecemos a experimentar..." #NT!
- azhi_dahaka_objective_decision_prisoner: "Tener al menos #color_white 10#! [prisoners|E] con [GetTrait('vampgeneration5').GetName(GetNullCharacter)] o menos." #NT!
+ azhi_dahaka_objective_decision: "Búsqueda de Azhi Dahaka"
+ azhi_dahaka_objective_decision_tooltip: "Uno con cambio."
+ azhi_dahaka_objective_decision_desc: "Azhi Dahaka es un estado mítico que persiguen los metamorfosistas. Es el presagio de la transformación, un estado en el que las normas y estructuras físicas y mentales pierden su dominio sobre el alma misma del vampiro. Para lograrlo, cada aspirante debe encontrar su propio camino, ya que el estancamiento es, después de todo, la extinción."
+ azhi_dahaka_objective_decision_confirm: "Empecemos a experimentar..."
+ azhi_dahaka_objective_decision_prisoner: "Tener al menos #color_white 10#! [prisoners|E] con [GetTrait('vampgeneration5').GetName(GetNullCharacter)] o menos."
   
- sacrifice_perk_from_obtenebration_decision: "Obtenebración de sacrificios para el misticismo del abismo" #NT!
- sacrifice_perk_from_obtenebration_decision_tooltip: "Avanzar en este camino requiere sacrificios." #NT!
- sacrifice_perk_from_obtenebration_decision_desc: "Sacrifica un nivel de Obtenebración para aumentar tu dominio de Misticismo Abisal y desbloquear el nuevo [bs_rituals|E]." #NT!
- sacrifice_perk_from_obtenebration_decision_confirm: "Un sacrificio digno." #NT!
+ sacrifice_perk_from_obtenebration_decision: "Obtenebración de sacrificios para el misticismo del abismo"
+ sacrifice_perk_from_obtenebration_decision_tooltip: "Avanzar en este camino requiere sacrificios."
+ sacrifice_perk_from_obtenebration_decision_desc: "Sacrifica un nivel de Obtenebración para aumentar tu dominio de Misticismo Abisal y desbloquear el nuevo [bs_rituals|E]."
+ sacrifice_perk_from_obtenebration_decision_confirm: "Un sacrificio digno."
   
- one_with_shadows_objective_decision: "Uno con las sombras" #NT!
- one_with_shadows_objective_decision_tooltip: "Hacia la oscuridad..." #NT!
- one_with_shadows_objective_decision_desc: "Para comprender verdaderamente el Abismo, debes interactuar con él. Una perspectiva arriesgada que pretendes hacer más segura utilizando primero algunos sujetos de prueba desechables como "exploradores". Incluso sus probables muertes espantosas te ilustrarán sobre los peligros del Abismo." #NT!
- one_with_shadows_objective_decision_confirm: "...Y de vuelta" #NT!
- one_with_shadows_objective_decision_prisoner: "Tiene #color_white 5#! [prisoners|E] con [GetTrait('shadow').GetName(GetNullCharacter)] o [GetTrait('spectre').GetName(GetNullCharacter)]" #NT!
+ one_with_shadows_objective_decision: "Uno con las sombras"
+ one_with_shadows_objective_decision_tooltip: "Hacia la oscuridad..."
+ one_with_shadows_objective_decision_desc: "Para comprender verdaderamente el Abismo, debes interactuar con él. Una perspectiva arriesgada que pretendes hacer más segura utilizando primero algunos sujetos de prueba desechables como "exploradores". Incluso sus probables muertes espantosas te ilustrarán sobre los peligros del Abismo."
+ one_with_shadows_objective_decision_confirm: "...Y de vuelta"
+ one_with_shadows_objective_decision_prisoner: "Tiene #color_white 5#! [prisoners|E] con [GetTrait('shadow').GetName(GetNullCharacter)] o [GetTrait('spectre').GetName(GetNullCharacter)]"
   
- demonization_objective_decision: "Ascenso impío: la caza de Decani" #NT!
- demonization_objective_decision_tooltip: "¡Poder impío a mi alcance!" #NT!
- demonization_objective_decision_desc: "Los decanios son descritos como los 36 demonios de la plaga que, de hecho, son facetas de la criatura dormida Namtaru, el ser demoníaco que Shaitan había intentado resucitar. Sin embargo, Namtaru fomenta la competencia y la ambición y se sabe que algunos infernalistas expertos han sido capaces de usurpar su posición y convertirse en verdaderos demonios." #NT!
- demonization_objective_decision_confirm: "Yo soy digno." #NT!
- demonization_objective_decision_effect: "Recibirás eventos para iniciar tu búsqueda." #NT!
+ demonization_objective_decision: "Ascenso impío: la caza de Decani"
+ demonization_objective_decision_tooltip: "¡Poder impío a mi alcance!"
+ demonization_objective_decision_desc: "Los decanios son descritos como los 36 demonios de la plaga que, de hecho, son facetas de la criatura dormida Namtaru, el ser demoníaco que Shaitan había intentado resucitar. Sin embargo, Namtaru fomenta la competencia y la ambición y se sabe que algunos infernalistas expertos han sido capaces de usurpar su posición y convertirse en verdaderos demonios."
+ demonization_objective_decision_confirm: "Yo soy digno."
+ demonization_objective_decision_effect: "Recibirás eventos para iniciar tu búsqueda."
   
- quest_for_sargon_codex_objective_decision: "La búsqueda del Códice Sargón" #NT!
- quest_for_sargon_codex_objective_decision_tooltip: "El conocimiento definitivo te espera" #NT!
- quest_for_sargon_codex_objective_decision_desc: "El Códice Sargón es una tablilla de arcilla escrita por Cappadocius durante sus años mortales. Después de su muerte, la pérdida de su Avatar provocó caos y destrucción en sus recuerdos. No podía recordar lo que había escrito ni dónde lo había dejado. Después de milenios, el Códice Sargón fue destruido y sus partes se esparcieron por todo el mundo. Si alguien lo restaurara, les aguardaría un inmenso poder." #NT!
- quest_for_sargon_codex_objective_decision_confirm: "La sabiduría de los antiguos está a nuestro alcance…" #NT!
- quest_for_sargon_codex_objective_decision_at_least_1_shard: "Debes tener al menos 1 fragmento del Códice de Sargón" #NT!
- quest_for_sargon_codex_objective_decision_at_effect1: "Desbloquea un [journey|E] para buscar los demás fragmentos del Códice en todo el mundo." #NT!
- quest_for_sargon_codex_objective_decision_at_effect2: "Desbloquea un [character_interaction|E], para comenzar a estudiar los Fragmentos del Códice de Sargón que has adquirido." #NT!
- quest_for_sargon_codex_objective_decision_at_effect3: "Desbloquea un [decision|E], para regalarle los Fragmentos del Códice de Sargón que adquiriste a Capadocio." #NT!
+ quest_for_sargon_codex_objective_decision: "La búsqueda del Códice Sargón"
+ quest_for_sargon_codex_objective_decision_tooltip: "El conocimiento definitivo te espera"
+ quest_for_sargon_codex_objective_decision_desc: "El Códice Sargón es una tablilla de arcilla escrita por Cappadocius durante sus años mortales. Después de su muerte, la pérdida de su Avatar provocó caos y destrucción en sus recuerdos. No podía recordar lo que había escrito ni dónde lo había dejado. Después de milenios, el Códice Sargón fue destruido y sus partes se esparcieron por todo el mundo. Si alguien lo restaurara, les aguardaría un inmenso poder."
+ quest_for_sargon_codex_objective_decision_confirm: "La sabiduría de los antiguos está a nuestro alcance…"
+ quest_for_sargon_codex_objective_decision_at_least_1_shard: "Debes tener al menos 1 fragmento del Códice de Sargón"
+ quest_for_sargon_codex_objective_decision_at_effect1: "Desbloquea un [journey|E] para buscar los demás fragmentos del Códice en todo el mundo."
+ quest_for_sargon_codex_objective_decision_at_effect2: "Desbloquea un [character_interaction|E], para comenzar a estudiar los Fragmentos del Códice de Sargón que has adquirido."
+ quest_for_sargon_codex_objective_decision_at_effect3: "Desbloquea un [decision|E], para regalarle los Fragmentos del Códice de Sargón que adquiriste a Capadocio."
   
- deliver_shards_to_cappadocius_objective_decision: "Devolver los fragmentos a Capadocia" #NT!
- deliver_shards_to_cappadocius_objective_decision_tooltip: "Devuélvanlos a donde pertenecen" #NT!
- deliver_shards_to_cappadocius_objective_decision_desc: "El Códice Sargón es una tablilla de arcilla escrita por Cappadocius durante sus años mortales. Después de su muerte, la pérdida de su Avatar provocó caos y destrucción en sus recuerdos. No podía recordar lo que había escrito ni dónde lo había dejado. Después de milenios, el Códice Sargón fue destruido y sus partes se esparcieron por todo el mundo. Si alguien lo restaurara, le aguardaría un poder inmenso.\n\nPero tú no eres codicioso de tal poder, así que en lugar de eso se lo darás a su dueño." #NT!
- deliver_shards_to_cappadocius_objective_decision_confirm: "Les presento..." #NT!
- deliver_shards_to_cappadocius_objective_decision_effect: "Entregue a Cappadocius los fragmentos recolectados. Cada fragmento le otorga [GetModifier('cappadocius_boon_modifier').GetNameWithTooltip]" #NT!
- deliver_shards_to_cappadocius_objective_decision_effect2: "Pierdes el [character_interaction|E] para estudiar los fragmentos propios" #NT!
+ deliver_shards_to_cappadocius_objective_decision: "Devolver los fragmentos a Capadocia"
+ deliver_shards_to_cappadocius_objective_decision_tooltip: "Devuélvanlos a donde pertenecen"
+ deliver_shards_to_cappadocius_objective_decision_desc: "El Códice Sargón es una tablilla de arcilla escrita por Cappadocius durante sus años mortales. Después de su muerte, la pérdida de su Avatar provocó caos y destrucción en sus recuerdos. No podía recordar lo que había escrito ni dónde lo había dejado. Después de milenios, el Códice Sargón fue destruido y sus partes se esparcieron por todo el mundo. Si alguien lo restaurara, le aguardaría un poder inmenso.\n\nPero tú no eres codicioso de tal poder, así que en lugar de eso se lo darás a su dueño."
+ deliver_shards_to_cappadocius_objective_decision_confirm: "Les presento..."
+ deliver_shards_to_cappadocius_objective_decision_effect: "Entregue a Cappadocius los fragmentos recolectados. Cada fragmento le otorga [GetModifier('cappadocius_boon_modifier').GetNameWithTooltip]"
+ deliver_shards_to_cappadocius_objective_decision_effect2: "Pierdes el [character_interaction|E] para estudiar los fragmentos propios"
   
- deliver_shards_to_cappadocius_objective_decision_shard_custom: "Debes tener al menos 1 Fragmento del Códice Sargón $POD_understand_sargon_codex_shard_interaction_custom$" #NT!
+ deliver_shards_to_cappadocius_objective_decision_shard_custom: "Debes tener al menos 1 Fragmento del Códice Sargón $POD_understand_sargon_codex_shard_interaction_custom$"
   
- malkavian_aenigmatis_objective_decision: "Aenigmatis: Acertijos y enigmas mundanos" #NT!
- malkavian_aenigmatis_objective_decision_tooltip: "Descubriendo el mayor secreto." #NT!
- malkavian_aenigmatis_objective_decision_desc: "Ordo Aenigmatis busca acabar con la locura Malkavian enfrentándose a lo inimaginable y magnífico, ya sea Dios, el tiempo, la totalidad del cosmos o el propio Caín. Vale la pena buscar una solución para cada misterio." #NT!
- malkavian_aenigmatis_objective_decision_confirm: "¡Los resolveré todos!" #NT!
- malkavian_aenigmatis_objective_decision_effect: "Como [character_interaction|E], puedes "resolver" libros (lo que los destruirá) para obtener un modificador. Después de alcanzar ciertos umbrales, obtendrás bonificaciones adicionales." #NT!
- malkavian_aenigmatis_objective_decision_has_5_book_artifact: "Tiene al menos #color_white 5#! libro [artifact|E]" #NT!
+ malkavian_aenigmatis_objective_decision: "Aenigmatis: Acertijos y enigmas mundanos"
+ malkavian_aenigmatis_objective_decision_tooltip: "Descubriendo el mayor secreto."
+ malkavian_aenigmatis_objective_decision_desc: "Ordo Aenigmatis busca acabar con la locura Malkavian enfrentándose a lo inimaginable y magnífico, ya sea Dios, el tiempo, la totalidad del cosmos o el propio Caín. Vale la pena buscar una solución para cada misterio."
+ malkavian_aenigmatis_objective_decision_confirm: "¡Los resolveré todos!"
+ malkavian_aenigmatis_objective_decision_effect: "Como [character_interaction|E], puedes "resolver" libros (lo que los destruirá) para obtener un modificador. Después de alcanzar ciertos umbrales, obtendrás bonificaciones adicionales."
+ malkavian_aenigmatis_objective_decision_has_5_book_artifact: "Tiene al menos #color_white 5#! libro [artifact|E]"
   
- malkavian_ecstasis_objective_decision: "Éxtasis: Dolor y placer" #NT!
- malkavian_ecstasis_objective_decision_tooltip: "Ascensión a través de las emociones." #NT!
- malkavian_ecstasis_objective_decision_desc: "Ordo Ecstasis sostiene que la verdadera locura está en la forma mortal. En su punto de vista, la Bestia es la verdadera creación divina y, por lo tanto, debe ser escuchada y apaciguada. Comprenderla es la clave para comprender tanto a Dios como a uno mismo." #NT!
- malkavian_ecstasis_objective_decision_confirm: "Sensaciones divinas." #NT!
- malkavian_ecstasis_objective_decision_effect: "Como [character_interaction|E], puedes forzar un frenesí para obtener un modificador basado en la cantidad de Elysium que organizaste (después de tomar este [decision|E]).\nDespués de una cantidad específica de Elysium, obtendrás recompensas adicionales." #NT!
+ malkavian_ecstasis_objective_decision: "Éxtasis: Dolor y placer"
+ malkavian_ecstasis_objective_decision_tooltip: "Ascensión a través de las emociones."
+ malkavian_ecstasis_objective_decision_desc: "Ordo Ecstasis sostiene que la verdadera locura está en la forma mortal. En su punto de vista, la Bestia es la verdadera creación divina y, por lo tanto, debe ser escuchada y apaciguada. Comprenderla es la clave para comprender tanto a Dios como a uno mismo."
+ malkavian_ecstasis_objective_decision_confirm: "Sensaciones divinas."
+ malkavian_ecstasis_objective_decision_effect: "Como [character_interaction|E], puedes forzar un frenesí para obtener un modificador basado en la cantidad de Elysium que organizaste (después de tomar este [decision|E]).\nDespués de una cantidad específica de Elysium, obtendrás recompensas adicionales."
   
- malkavian_maleficus_objective_decision: "Maleficus: Oscuridad interior" #NT!
- malkavian_maleficus_objective_decision_tooltip: "Encuentre las respuestas a continuación." #NT!
- malkavian_maleficus_objective_decision_desc: "El más herético y reservado de los Ordos, Maleficus cree en la oscuridad inherente a la condición Cainita. Como tal, no hay límites a los extremos a los que están dispuestos a recurrir para curar su locura. ¿Qué es el infernalismo para el verdaderamente condenado?" #NT!
- malkavian_maleficus_objective_decision_confirm: "Dios nos ignora, el infierno escucha." #NT!
- malkavian_maleficus_objective_decision_effect: "Como [character_interaction|E], puedes sacrificar prisioneros para obtener un modificador que se escalará con la cantidad total de sacrificios realizados usando esta interacción." #NT!
+ malkavian_maleficus_objective_decision: "Maleficus: Oscuridad interior"
+ malkavian_maleficus_objective_decision_tooltip: "Encuentre las respuestas a continuación."
+ malkavian_maleficus_objective_decision_desc: "El más herético y reservado de los Ordos, Maleficus cree en la oscuridad inherente a la condición Cainita. Como tal, no hay límites a los extremos a los que están dispuestos a recurrir para curar su locura. ¿Qué es el infernalismo para el verdaderamente condenado?"
+ malkavian_maleficus_objective_decision_confirm: "Dios nos ignora, el infierno escucha."
+ malkavian_maleficus_objective_decision_effect: "Como [character_interaction|E], puedes sacrificar prisioneros para obtener un modificador que se escalará con la cantidad total de sacrificios realizados usando esta interacción."

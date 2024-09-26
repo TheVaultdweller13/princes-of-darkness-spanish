@@ -20,6 +20,8 @@
  EXECUTION_EXSANGUINATION: "Exsanguinación"
  EXECUTION_SPIRIT_EATING: "Devorando espíritus"
  EXECUTION_CONVERT_TO_WRAITH: "Convertirse en Espectro"
+ EXECUTION_CALL_KHAIBIT: "Llama al Khaibit" #NT!
+ execution_call_khaibit_tooltip: "Las momias pueden separar las pasiones básicas de un alma, permitiéndole seguir adelante mientras lo que queda se convierte en un [GetTrait('spectre').GetName( GetNullCharacter )]" #NT!
  EXECUTION_BANISH_TO_TEMPEST: "Desterrar a [GetPlayer.Custom( 'tempest_custom_name' )]"
  EXECUTION_UNMAKING: "Borrando de la existencia"
  EXECUTION_FILL_JARS: "Rellena los vasos canopos"
@@ -118,12 +120,17 @@
  POD_need_non_servant_hook: "No puedes perdonar los ganchos a tus sirvientes dispuestos."
   
  COMPEL_INVITE: "Obligar: $VALUE|=+0$"
+ FORTUITOUS_MEETING_INVITE: "[GetPerk('fortuitous_meeting_perk').GetName(GetPlayer)]: $VALUE|=+0$" #NT!
+ THE_COINCIDENTAL_GATHERING_INVITE: "[GetPerk('the_coincidental_gathering_perk').GetName(GetPlayer)]: $VALUE|=+0$" #NT!
   
  POD_mass_demand_payment_interaction: "Exigir el pago de todos los ganchos"
  POD_mass_demand_payment_interaction_desc: "Extrae el pago de todos aquellos que tengan un [hook|E]."
  POD_mass_demand_payment_interaction_exclude_partial_payments: "Excluir personajes que no puedan pagar el importe total"
  POD_mass_demand_payment_interaction_strong_hooks_only: "Utilice sólo [strong_hooks|E]"
+ POD_mass_demand_payment_interaction_exclude_house_members: "Excluir miembros de tu [house|E]" #NT!
  POD_mass_demand_payment_interaction_exclude_weak_true_name_hooks: "Excluir #italic $partial_true_name_hook$#! ganchos"
+ POD_mass_demand_payment_interaction_exclude_necromancy_bind_hooks: "Excluir #italic $necromancy_bind_hook$#! ganchos" #NT!
+ POD_mass_demand_payment_interaction_exclude_mesmerize_hooks: "Excluir #italic $mesmerize_hook$#! ganchos" #NT!
  POD_mass_demand_payment_gold: "Ganarás [gold_i|E]$VALUE|0V$."
  POD_mass_demand_payment_num: "Se utilizarán [hooks|E] en $VALUE|0V$ caracteres."
   
@@ -143,9 +150,81 @@
  POD_cooldown_message.desc: "[Localize(SCOPE.GetFlagName('cooldown_loc'))]"
  POD_cooldown_message_psi_leech: "Puedes volver a utilizar Psi Leech"
  POD_cooldown_message_devour_mind: "Puedes devorar la mente de un prisionero una vez más."
+ POD_cooldown_message_shift_balance: "Puedes cambiar tu equilibrio nuevamente" #NT!
   
  POD_interface_cathedral_hungry.t: "La Catedral de la Carne se vuelve Hambrienta"
  POD_interface_cathedral_hungry.desc: "El trabajo de un artista nunca termina y la Catedral tiene voluntad y hambre propias. Tal vez se deban añadir nuevas bocas al coro de lamentaciones o un lienzo de piel recién estirado para realzar el mosaico de la ventana. Tantas posibilidades, pero nunca suficiente carne."
   
  any_secret_is_known_by_actor: "Cualquiera de los [recipient.GetFirstNamePossessive] secretos es conocido por [actor.GetFirstName]"
  NOT_any_secret_is_known_by_actor: "Cualquiera de los [recipient.GetFirstNamePossessive] secretos es #bold no#! conocido por [actor.GetFirstName]"
+  
+ feudalize_city_holding_interaction: "Feudalizar la ciudad" #NT!
+ feudalize_city_holding_interaction_desc: "Destruye todos los [buildings|E] en este [holding|E] y conviértelo en [feudal|E]" #NT!
+ feudalize_city_holding_interaction_notification: "Ciudad feudalizada" #NT!
+ feudalize_church_holding_interaction: "Feudalizar la Iglesia" #NT!
+ feudalize_church_holding_interaction_desc: "Destruye todos los [buildings|E] en este [holding|E] y conviértelo en [feudal|E]" #NT!
+ feudalize_church_holding_interaction_notification: "Iglesia feudalizada" #NT!
+ republicanise_castle_holding_interaction: "Republicanizar el castillo" #NT!
+ republicanise_castle_holding_interaction_desc: "Destruye todos los [buildings|E] en este [holding|E] y conviértelo en [republic|E]" #NT!
+ republicanise_castle_holding_interaction_notification: "Castillo republicanizado" #NT!
+ republicanise_church_holding_interaction: "Republicanizar la Iglesia" #NT!
+ republicanise_church_holding_interaction_desc: "Destruye todos los [buildings|E] en este [holding|E] y conviértelo en [republic|E]" #NT!
+ republicanise_church_holding_interaction_notification: "Iglesia republicana" #NT!
+ theocratize_castle_holding_interaction: "Castillo de la teocratización" #NT!
+ theocratize_castle_holding_interaction_desc: "Destruye todos los [buildings|E] en este [holding|E] y conviértelo en [theocracy|E]" #NT!
+ theocratize_castle_holding_interaction_notification: "Castillo Teocratizado" #NT!
+ theocratize_city_holding_interaction: "Teocratizar la ciudad" #NT!
+ theocratize_city_holding_interaction_desc: "Destruye todos los [buildings|E] en este [holding|E] y conviértelo en [theocracy|E]" #NT!
+ theocratize_city_holding_interaction_notification: "Ciudad Teocratizada" #NT!
+  
+ RECIPIENT_CRIMINAL_REASON: "[secondary_recipient.GetShortUIName] es criminal: $VALUE|+0$"
+ RECIPIENT_SHUNNED_REASON: "[recipient.GetShortUINamePossessive] [splat|E] es rechazado por [actor.GetShortUIName]: $VALUE|+0$" #NT!
+ RECIPIENT_VIRTUOUS_REASON: "[recipient.GetShortUINamePossessive] [splat|E] es virtuoso para [actor.GetShortUIName]: $VALUE|+0$" #NT!
+ ACTOR_CRIMINAL_REASON: "[secondary_actor.GetShortUIName] es criminal: $VALUE|+0$"
+ ACTOR_SHUNNED_REASON: "[actor.GetShortUINamePossessive] [splat|E] es rechazado por [recipient.GetShortUIName]: $VALUE|+0$" #NT!
+ ACTOR_VIRTUOUS_REASON: "[actor.GetShortUINamePossessive] [splat|E] es virtuoso para [recipient.GetShortUIName]: $VALUE|+0$" #NT!
+  
+ RECIPIENT_CLAN_CRIMINAL_REASON: "[recipient.GetShortUINamePossessive] [Clan|E] es criminal para [actor.GetShortUIName]: $VALUE|+0$" #NT!
+ RECIPIENT_CLAN_SHUNNED_REASON: "[recipient.GetShortUINamePossessive] [Clan|E] es rechazado por [actor.GetShortUIName]: $VALUE|+0$" #NT!
+ RECIPIENT_CLAN_VIRTUOUS_REASON: "[recipient.GetShortUINamePossessive] [Clan|E] es virtuoso para [actor.GetShortUIName]: $VALUE|+0$" #NT!
+ ACTOR_CLAN_CRIMINAL_REASON: "[actor.GetShortUINamePossessive] [Clan|E] es criminal para [recipient.GetShortUIName]: $VALUE|+0$" #NT!
+ ACTOR_CLAN_SHUNNED_REASON: "[actor.GetShortUINamePossessive] [Clan|E] es rechazado por [recipient.GetShortUIName]: $VALUE|+0$" #NT!
+ ACTOR_CLAN_VIRTUOUS_REASON: "[actor.GetShortUINamePossessive] [Clan|E] es virtuoso para [recipient.GetShortUIName]: $VALUE|+0$" #NT!
+  
+ RECIPIENT_SHIFTER_CRIMINAL_REASON: "[recipient.GetShortUINamePossessive] La raza de cambiaformas es criminal para [actor.GetShortUIName]: $VALUE|+0$" #NT!
+ RECIPIENT_SHIFTER_SHUNNED_REASON: "[recipient.GetShortUINamePossessive] La raza cambiaformas es rechazada por [actor.GetShortUIName]: $VALUE|+0$" #NT!
+ RECIPIENT_SHIFTER_VIRTUOUS_REASON: "[recipient.GetShortUINamePossessive] La raza cambiaformas es virtuosa para [actor.GetShortUIName]: $VALUE|+0$" #NT!
+ ACTOR_SHIFTER_CRIMINAL_REASON: "[actor.GetShortUINamePossessive] La raza de cambiaformas es criminal para [recipient.GetShortUIName]: $VALUE|+0$" #NT!
+ ACTOR_SHIFTER_SHUNNED_REASON: "[actor.GetShortUINamePossessive] La raza cambiaformas es rechazada por [recipient.GetShortUIName]: $VALUE|+0$" #NT!
+ ACTOR_SHIFTER_VIRTUOUS_REASON: "[actor.GetShortUINamePossessive] La raza cambiaformas es virtuosa para [recipient.GetShortUIName]: $VALUE|+0$" #NT!
+  
+ RECIPIENT_MUMMY_CRIMINAL_REASON: "[recipient.GetShortUINamePossessive] La dinastía de las momias es criminal para [actor.GetShortUIName]: $VALUE|+0$" #NT!
+ RECIPIENT_MUMMY_SHUNNED_REASON: "[recipient.GetShortUINamePossessive] La dinastía de las momias es rechazada por [actor.GetShortUIName]: $VALUE|+0$" #NT!
+ RECIPIENT_MUMMY_VIRTUOUS_REASON: "[recipient.GetShortUINamePossessive] La dinastía de las momias es virtuosa para [actor.GetShortUIName]: $VALUE|+0$" #NT!
+ ACTOR_MUMMY_CRIMINAL_REASON: "[actor.GetShortUINamePossessive] La dinastía de las momias es criminal para [recipient.GetShortUIName]: $VALUE|+0$" #NT!
+ ACTOR_MUMMY_SHUNNED_REASON: "[actor.GetShortUINamePossessive] La dinastía de las momias es rechazada por [recipient.GetShortUIName]: $VALUE|+0$" #NT!
+ ACTOR_MUMMY_VIRTUOUS_REASON: "[actor.GetShortUINamePossessive] La dinastía de las momias es virtuosa para [recipient.GetShortUIName]: $VALUE|+0$" #NT!
+  
+ SECONDARY_RECIPIENT_CRIMINAL_REASON: "[secondary_recipient.GetShortUINamePossessive] [splat|E] es criminal para [secondary_actor.GetShortUIName]: $VALUE|+0$" #NT!
+ SECONDARY_ACTOR_CRIMINAL_REASON: "[secondary_actor.GetShortUINamePossessive] [splat|E] es criminal para [secondary_recipient.GetShortUIName]: $VALUE|+0$" #NT!
+  
+ ACTOR_KINFOLK_REASON: "[actor.GetShortUIName] es [GetTrait('kinfolk').GetName( actor )]: $VALUE|+0$" #NT!
+ ACTOR_SHIFTER_REASON: "[actor.GetShortUIName] es [GetTraitGroup('shapeshifter').GetName()]: $VALUE|+0$" #NT!
+ ACTOR_POSSESSED_REASON: "[actor.GetShortUIName] es [GetTraitGroup('possessed').GetName()]: $VALUE|+0$" #NT!
+ ACTOR_TRUEPOSSESSED_REASON: "[actor.GetShortUIName] es [GetTraitGroup('truepossessed').GetName()]: $VALUE|+0$" #NT!
+ ACTOR_WRAITH_REASON: "[actor.GetShortUIName] es [GetTrait('wraith').GetName( GetNullCharacter )]: $VALUE|+0$" #NT!
+ ACTOR_VAMPIRE_REASON: "[actor.GetShortUIName] es [GetTrait('vampire').GetName( GetNullCharacter )]: $VALUE|+0$" #NT!
+ SPIRIT_OPINION_REASON: "Nivel de modificador de opinión espiritual: $VALUE|+0$" #NT!
+ PLASMIC_OPINION_REASON: "Nivel de modificador de opinión de Wraith: $VALUE|+0$" #NT!
+  
+ FACTION_REASON_INCOMPATIBLE: "Incompatible [splat|E]: $VALUE|0+=$" #NT!
+ FACTION_REASON_NETERU: "No es un [neteru|E]: $VALUE|0+=$" #NT!
+ FACTION_REASON_CULTIST: "No soy un sectario: $VALUE|0+=$" #NT!
+ FACTION_REASON_CRIMINAL: "[liege|E] es criminal [splat|E]: $VALUE|0+=$" #NT!
+ FACTION_REASON_REPULSION: "[GetPerk('repulsion_perk').GetName(GetPlayer)]: $VALUE|0+=$" #NT!
+ FACTION_REASON_STRUGGLE: "[struggle|E]: $VALUE|0+=$" #NT!
+  
+ VAMPIRE_IS_SHUNNED: "[GetTrait('vampire').GetName( GetPlayer )] es rechazado: $VALUE|+0$"
+ VAMPIRE_IS_CRIME: "[GetTrait('vampire').GetName( GetPlayer )] es Crimen: $VALUE|+0$"
+ SHIFTER_IS_SHUNNED: "[GetTraitGroup('shapeshifter').GetName()] es rechazado: $VALUE|+0$"
+ SHIFTER_IS_CRIME: "[GetTraitGroup('shapeshifter').GetName()] es Crimen: $VALUE|+0$"

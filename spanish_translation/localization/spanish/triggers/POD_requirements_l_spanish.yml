@@ -11,6 +11,8 @@
  POD_requirements_development_30: "#help Este nivel requiere más de #bold;L 30#! [development|E] para construirse y permanecer habilitado.#!"
  POD_requirements_development_40: "#help Este nivel requiere más de #bold;L 40#! [development|E] para construirse y permanecer habilitado.#!"
  POD_requirements_development_60: "#help Este nivel requiere más de #bold;L 60#! [development|E] para construirse y permanecer habilitado.#!"
+ POD_requirements_development_70: "#help Este nivel requiere más de #bold;L 70#! [development|E] para construirse.#!" #NT!
+ POD_requirements_development_80: "#help Este nivel requiere más de #bold;L 80#! [development|E] para construirse.#!" #NT!
   
  POD_requirements_development_below_5: "#help Este nivel requiere #bold;L 5 o menos#! [development|E] para construirse y permanecer habilitado.#!"
  POD_requirements_development_below_10: "#help Este nivel requiere #bold;L 10 o menos#! [development|E] para construirse y permanecer habilitado.#!"
@@ -117,3 +119,5 @@
  POD_requirements_rome_hadrianstomb_02: "El [holder|E] debe ser un [GetTrait('scholar').GetName(GetNullCharacter)] o emplear un [GetCourtPositionType('antiquarian_court_position').GetName()] con Excelente [aptitude|E]"
  POD_requirements_rome_aqueduct_02: "El [holder|E] debe ser un [GetTrait('architect').GetName(GetNullCharacter)] o emplear un [GetCourtPositionType('royal_architect_court_position').GetName()] con Excelente [aptitude|E]"
  POD_requirements_rome_pasquino_02: "El [holder|E] debe ser un [GetTrait('schemer').GetName(GetNullCharacter)] o tener un [spymaster|E] con al menos 20 [intrigue|E] sentados en el [council|E]"
+  
+ POD_requirements_bookshop: "El [holder|E] debe ser parte de la Inquisición de las Sombras y el primer líder de Oculi Dei Aignen le libraire debe estar muerto." #NT!

@@ -16,9 +16,17 @@
   
  POD_plasmic_maa: "[POD_plasmic_maa|E]"
   
+ POD_wraith_maa: "[POD_wraith_maa|E]" #NT!
+  
+ POD_vampire_maa: "[POD_vampire_maa|E]" #NT!
+  
+ POD_construct_maa: "[POD_construct_maa|E]" #NT!
+  
  POD_faerie_maa: "[POD_faerie_maa|E]"
   
  POD_chimera_maa: "[POD_chimera_maa|E]"
+  
+ POD_bygones_maa: "[POD_bygones_maa|E]" #NT!
   
  ZMEI_LEGACY_PERK_UNLOCK_DESC: "Puede reclutar a [GetMaA('zmei').GetName] como [men_at_arms|E]"
  DEMONS_LEGACY_PERK_UNLOCK_DESC: "Puede reclutar a [GetMaA('demons').GetName] como [men_at_arms|E]"
@@ -55,9 +63,6 @@
  massvampires: "Vampiros abrazados en masa"
  massvampires_flavor: "#F Un grupo de crías de vampiros producidas por una masa [Embrace|E]. La sangre los ha hecho más fuertes que los mortales, pero son nuevos en sus poderes.#!"
   
- kinfolk: "Parientes"
- kinfolk_flavor: "#F Escaramuzadores tribales de sangre de lobo.#!"
-  
  werewolfpack: "Manada de hombres lobo"
  werewolf_pack_flavor: "#F Lupinos, licántropos, ¡puro terror! #!"
  werewolf_pack: "Manada de hombres lobo"
@@ -65,7 +70,6 @@
  witchhunters: "Cazadores de brujas"
  witchhunters_flavor: "#F Mortales que se especializan en cazar monstruos.#!"
   
- wolves: "Lobos"
  wolves_flavor: "#F Hay pocos sonidos en la naturaleza que sean más escalofriantes que el aullido de un lobo. De alguna manera, engloba todo lo que la humanidad teme de la naturaleza salvaje, así como todo lo que añoramos.#!"
   
  bats: "Murciélagos"
@@ -101,8 +105,8 @@
  demonic_thralls: "Esclavos demoníacos"
  demonic_thralls_flavor: "#F Esclavos demoníacos, sirviendo a sus horribles amos Baali #!"
   
- elite_swordsmen: "Espadachines de élite"
- elite_swordsmen_flavor: "#F Los espadachines más hábiles, tomados de los nobles locales y a quienes se les enseñó a luchar junto a ellos [cainites|E] #!"
+ #elite_swordsmen: "Espadachines de élite" #NT!
+ #elite_swordsmen_flavor: "#F Los espadachines más hábiles, tomados de los nobles locales y a quienes se les enseñó a luchar junto a ellos [cainites|E] #!" #NT!
   
  ghouled_cavalry: "Caballería Ghouled"
  ghouled_cavalry_flavor: "#F Caballeros ghouls que están listos para luchar contra todos los que sus amos quieren muertos #!"
@@ -131,7 +135,6 @@
  amazons: "Amazonas"
  amazons_flavor: "#F Estas mujeres, liberadas del yugo patriarcal, lucharán por sus benefactores Furias Negras como las leyendas de antaño.#!"
   
- defenders: "Defensores"
  defenders_flavor: "#F La humanidad necesita ser defendida, y estos parientes fuertes y bien preparados están listos para hacer su parte.#!"
   
  herne: "Hermanos de Herne"
@@ -210,7 +213,6 @@
  drake_flavor: "#F El dragón tiene un cuerpo serpenteante y fuertemente blindado que es prácticamente inmune a los esfuerzos del arco y la espada.#!"
  orm: "Orquídea"
  orm_flavor: "#F El wyrm (alternativamente orm) habita en climas fríos y se parece mucho a una serpiente gigante o una anguila.#!"
- wyverns: "Wyverns"
  wyverns_flavor: "#F El wyvern es una serpiente enroscada y alada cuyos territorios de caza se extienden desde los confines más septentrionales de Europa hasta Grecia y Etiopía.#!"
  lindworm: "Gusano de Lind"
  lindworm_flavor: "#F El esquivo gusano de arena, acechador de los páramos estériles.#!"
@@ -316,33 +318,24 @@
  skin_eaters: "Devoradores de piel"
  skin_eaters_flavor: "#F Pequeños insectos parecidos a pulgas con un apetito voraz, los Devoradores de Piel fueron diseñados para seguir órdenes simples y tener hambre de piel en lugar de sangre.#!"
   
- crocodiles: "Cocodrilos"
  crocodiles_flavor: "#F Con sus cuerpos largos y su piel áspera, parecida a la corteza, los caimanes y los cocodrilos se confunden fácilmente con troncos podridos, un error fatal.#!"
- bears: "Osos"
  bears_flavor: "#F El oso se levanta como un hombre sobre sus robustas patas y habita en lugares fríos y solitarios: reinos densamente arbolados con agua (y peces) cerca.#!"
- lions: "Leones"
  lions_flavor: "#F Con sus pelajes dorados y las melenas largas y espesas de los machos, los leones son criaturas magníficas.#!"
  tigers: "tigres"
  tigers_flavor: "#F Enormes, elegantes y ágiles, estos hermosos animales se mueven rápidamente a través de las sombras de la jungla, camuflados por sus pelajes rayados.#!"
- bulls: "Toros"
  bulls_flavor: "#F El ganado ha jugado un papel crucial en la historia de la civilización humana y, en consecuencia, en su mitología.#!"
  horses: "Caballos"
  horses_flavor: "#F Altas y musculosas, con cuellos largos y arqueados, ojos inteligentes y melenas y colas sueltas, estas bestias realmente parecen los elementos en forma viviente.#!"
- camels: "Camellos"
  camels_flavor: "#F El camello, el caballo de batalla de Arabia, es una bestia de mal carácter y normalmente ignora cualquier voz de autoridad que no sea la más fuerte.#!"
- stags: "Ciervos"
  stags_flavor: "#F Con sus extremidades delgadas, sus pezuñas increíblemente pequeñas y sus ojos grandes y líquidos, es fácil ver cómo los ciervos obtuvieron su reputación de hadas.#!"
  goats: "Cabras"
  goats_flavor: "#F Más delgadas y peludas que las ovejas salvajes, las cabras son increíblemente ágiles.#!"
  rams: "Carneros"
  rams_flavor: "#F Las ovejas son criaturas de cara blanda y pelaje rizado que viven donde pueden pastar.#!"
- boars: "Jabalíes"
  boars_flavor: "#F Más grande (de tres a cuatro pies hasta los hombros), más tosco y mucho, mucho más cruel que los cerdos domésticos, el jabalí es un animal de mal carácter hecho carne.#!"
  monkeys: "Monos"
  monkeys_flavor: "#F Desde las selvas de África y Sudamérica hasta las montañas asiáticas, los simios proyectan una sombra desconcertantemente similar a la de la humanidad.#!"
- cats: "Gatos"
  cats_flavor: "#F El felino es un enigma andante, un trocito de lo salvaje que ha aceptado un lugar junto al hogar humano.#!"
- foxes: "Zorros"
  foxes_flavor: "#F Los zorros son criaturas astutas. Se salen con la suya no mediante amenazas o violencia física, sino con astucia y rapidez de pensamiento.#!"
  raptors: "Rapaces"
  raptors_flavor: "#F Las aves rapaces —halcones, halcones, águilas— son a las aves lo que los leones y los tigres son a las bestias.#!"
@@ -350,17 +343,18 @@
  gooses_flavor: "#F En el aire o deslizándose sobre el agua, el cisne es el epítome de la belleza y la gracia.#!"
  owls: "Búhos"
  owls_flavor: "#F Con sus suaves plumas, que les permiten volar silenciosamente, y sus enormes y sensibles ojos, que les permiten ver en una oscuridad casi perfecta, los búhos son los dueños del cielo nocturno.#!"
- ravens: "Cuervos"
  ravens_flavor: "#F El pájaro más grande, el cuervo, extiende sus alas como un manto elegante pero siniestro.#!"
  toads: "Sapos"
  toads_flavor: "#F Se creía que las ranas y los sapos crecían espontáneamente a partir del barro.#!"
   
  golems: "Gólems"
  golems_flavor: "#F Cuentos de monstruos hechos de palos, piedras, arcilla, tierra e incluso trigo ensucian leyendas locales en toda Europa.#!"
- guardians: "Guardianes"
  guardians_flavor: "#F Se sabe que sacerdotes de órdenes poderosas, magos secretos de gran fuerza e incluso alguna que otra bruja colocan poder sobre objetos normalmente inanimados para proteger sus santuarios.#!"
  homunculus: "Homúnculo"
  homunculus_flavor: "#F Cada homúnculo es una obra característica de su creador, que posee una conciencia real de los objetivos y deseos de su creador, y de las teorías mágicas que lo han producido.#!"
+  
+ sebau: "Sebau" #NT!
+ sebau_flavor: "#F Sebau, sirvientes de arcilla dispuestos a morir por su creador#!" #NT!
   
  hidden: "Oculto"
  hidden_flavor: "#F Un cadáver viviente oculto es un cadáver muy independiente y motivado que, por lo general, puede pasar por humano, a diferencia de otros muertos vivientes.#!"
@@ -422,7 +416,6 @@
   
  shades: "Sombras"
  shades_flavor: "#F Entre los Espectros más poderosos, las Sombras son antiguos espectros que fueron arrojados al [tempest|E], quedaron atrapados en una Vorágine o Gran Vorágine, o se perdieron durante un Desgarrador.#!"
- wraiths: "Espectros"
  wraiths_flavor: "#F Espectros materializados invocados desde el [underworld|E].#!"
  spectres: "Espectros"
  spectres_flavor: "#F Espectros materializados llamados desde el [labyrinth|E].#!"
@@ -462,12 +455,15 @@
  mourners_flavor: "#F Los dolientes, a primera vista, se parecían a las figuras encapuchadas de los barqueros. Sin embargo, en lugar de llevar sus linternas y guadañas, los dolientes llevan montones de cadenas pesadas. Sus rostros son invisibles, envueltos en la oscuridad de sus capas. Siempre viajarán en manadas, con todos los dolientes de un grupo particular encadenados al más poderoso entre ellos. A diferencia de muchas de las criaturas del [tempest|E], los dolientes siempre parecen tener un objetivo específico cuando aparecen, marchando desde el [tempest|E] hasta el [shadowlands|E].#!"
  shroudrippers: "Destripadores"
  shroudrippers_flavor: "#F Los Shroudrippers se encuentran entre los más esquivos de Whistimmu, son difíciles de detectar y casi imposibles de capturar y examinar. Si bien aún no se los ha examinado en detalle, en general se acepta que tienen un cuerpo pequeño y compacto y una membrana delgada que se extiende entre diez "dedos" que les permite volar. La membrana también contiene pequeños chorros desde los que se puede rociar ácido, y los dedos terminan en una garra muy afilada. Sin embargo, los Shroudrippers son extremadamente frágiles; los destruidos cuyos [Corpus|E] se recuperan se derriten en una pila informe de plasma en segundos.#!"
- tindelhound: "Perros de caza"
- tindelhound_flavor: "#F Como su nombre indica, los Tindelhounds superficialmente se parecen a los perros. Sin embargo, debido a la mancha de [oblivion|E], estos perros tienen muchas más cabezas, bocas y ojos que el canino promedio; los más vistos fueron diez bocas y quince ojos. También son mucho más grandes que el perro promedio, alrededor de 15 pies hasta los hombros. Además de sus fauces y tamaño, tienen ganchos con púas en lugar de pelaje, emiten fuego verde de sus bocas y dejan un rastro de hollín detrás. Como si eso no fuera suficiente, los Tindelhounds también son bastante inteligentes, capaces de adaptarse a situaciones inusuales con bastante rapidez. Afortunadamente para los espectros, la mayoría de ellos evitan a [shadowlands|E], viviendo en las profundidades de [tempest|E].#!"
+ tindelhounds: "Perros de caza" #NT!
+ tindelhounds_flavor: "#F Como su nombre indica, los Tindelhounds superficialmente se parecen a los perros. Sin embargo, debido a la mancha de [oblivion|E], estos perros tienen muchas más cabezas, bocas y ojos que el canino promedio; los más vistos fueron diez bocas y quince ojos. También son mucho más grandes que el perro promedio, alrededor de 15 pies hasta los hombros. Además de sus fauces y tamaño, tienen ganchos con púas en lugar de pelaje, emiten fuego verde de sus bocas y dejan un rastro de hollín detrás. Como si eso no fuera suficiente, los Tindelhounds también son bastante inteligentes, capaces de adaptarse a situaciones inusuales con bastante rapidez. Afortunadamente para los espectros, la mayoría de ellos evitan a [shadowlands|E], viviendo en las profundidades de [tempest|E].#!" #NT!
+ shadow_beasts: "Bestias de las sombras" #NT!
+ shadow_beasts_flavor: "#F Bestias de sombra materializadas invocadas desde el Abismo mediante magia de sangre.#!" #NT!
+ hungry_shade: "Sombras hambrientas" #NT!
+ hungry_shade_flavor: "#F Sombras materializadas invocadas desde el Abismo mediante magia de sangre.#!" #NT!
   
  mist_dragons: "Dragones de niebla"
  mist_dragons_flavor: "#F En lo profundo de estas nieblas mágicas hay dragones diminutos, no más grandes que gatos.#!"
- giants: "Gigantes"
  giants_flavor: "#F Sus cuerpos enormes, a menudo de más de 20 pies de altura, son similares a los humanos muy musculosos con piel áspera y pétrea, lo que da lugar a teorías de que pueden ser parientes lejanos de los inanimae de piedra.#!"
  tarrkel: "T'arrkel"
  tarrkel_flavor: "#F El abismo de Underbridge genera criaturas retorcidas y de pesadilla que van más allá de la capacidad de comprensión humana, criaturas que prosperan gracias al dolor y sobreviven gracias a la carne de los vivos.#!"
@@ -513,7 +509,6 @@
  dazbog_hunters: "Guerreros de Dazbog"
  dazbog_hunters_flavor: "#F Herederos del gran dios guerrero del sol, estos héroes matan monstruos poderosos dondequiera que van.#!"
   
- dragons: "Dragones"
  dragons_flavor: "#F ¡Oh, ser un dragón, símbolo del poder del Cielo!#!"
   
  minion_of_the_divine: "Guerreros benditos"
@@ -538,3 +533,216 @@
  sloth_dragon_flavor: "#F Sloth es un gran dragón de color marrón sucio, completamente indiferente a su apariencia. A diferencia de sus parientes, no tiene alas ni extremidades. Es una serpiente enorme y gorda con cabeza de dragón. Como sugiere su nombre, su cuerpo es una sólida bobina de cuerda de reptil, cuya superficie lisa solo se rompe ocasionalmente por algún trozo de comida que aún se está digiriendo.#!"
  wrath_dragon: "Ira"
  wrath_dragon_flavor: "#F Cuando la Serpiente de la Ira irrumpió en el mundo, su hostilidad hizo temblar el suelo. Sus pensamientos de agresión y venganza se extendieron hasta que encontró un anfitrión dispuesto a acoger su ira. La Serpiente Huns recorrió Europa, saciando el temperamento de la bestia. Ella mora en el sueño bajo las heladas de Rusia occidental. Cuando vuelva a despertar, seguramente será por el olor de la matanza.#!"
+  
+ children_saraam: "Hijos de Saraam" #NT!
+ children_saraam_flavor: "#F La madre de Bagheera se enorgullece de ver a sus hijos bien disciplinados proteger su legado.#!" #NT!
+ warriors_ubastet: "Guerreros de Ubastet" #NT!
+ warriors_ubastet_flavor: "#F Los bubasti gobernaron Egipto como dioses. Aunque esa época ya pasó, todavía saben luchar en su tierra natal como ningún otro.#!" #NT!
+ samhach_bane: "La perdición de Samhach" #NT!
+ samhach_bane_flavor: "#F Los Ceilican nunca olvidarán a aquel que casi los mató a todos. Su especie de tontos pagará.#!" #NT!
+ durga_chosen: "La elegida de Durga" #NT!
+ durga_chosen_flavor: "#F Seline, en su aspecto de Durga, sonríe a su élite elegida, los honorables y más grandes guerreros del Khan.#!" #NT!
+ seline_pride: "El orgullo de Seline" #NT!
+ seline_pride_flavor: "#F Los autoproclamados Elegidos de la Luna, los Simba, son luchadores orgullosos y despiadados. Su historia también les ha otorgado el dudoso honor de saber luchar contra otros cambiaformas.#!" #NT!
+ danaa_runners: "Los corredores de Danaa" #NT!
+ danaa_runners_flavor: "#F Muchos descartan a los fibrosos Swara, pero su increíble velocidad ha demostrado ser la perdición de muchos posibles depredadores.#!" #NT!
+  
+ mob_maa: "Multitud" #NT!
+ mob_maa_flavor: "#F Una banda de mortales apenas armados engañados o persuadidos para morir por su señor inmortal.#!" #NT!
+ poachers_maa: "Cazadores furtivos" #NT!
+ poachers_maa_flavor: "#F Personajes desagradables de la naturaleza que fueron pagados para luchar por clientes aún más desagradables.#!" #NT!
+ outriders_maa: "Jinetes de avanzada" #NT!
+ outriders_mas_flavor: "#F Los jinetes competentes con pocos escrúpulos morales tienen una gran demanda para ser los gobernantes de la noche.#!" #NT!
+ rabble_maa: "Chusma" #NT!
+ rabble_maa_flavor: "#F La horca es una especie de pica, ¿no? Los mendigos no saben elegir.#!" #NT!
+ retainers_maa: "Retenedores" #NT!
+ retainers_maa_flavor: "#F La guardia mortal de cualquier señor inmortal que se precie. A menudo muy bien pagada (o dominada) para asegurar su lealtad.#!" #NT!
+ disgraced_nobles_maa: "Nobles caídos en desgracia" #NT!
+ disgraced_nobles_maa_flavor: "#F Hijos menores de la nobleza que han perdido su honor por su carácter dudoso y sus socios turbios.#!" #NT!
+  
+ kinfolk_militia: "Milicia de Kinfolk" #NT!
+ kinfolk_militia_flavor: "#F Los humildes parientes suelen ser la columna vertebral de cualquier banda de guerra de cambiaformas. Aunque suelen estar mal equipados, lo compensan con su absoluta determinación.#!" #NT!
+ kinfolk_leeches_hunters: "Sanguijuelas de parientes cazadores" #NT!
+ kinfolk_leeches_hunters_flavor: "#F Todos los parientes conocen los peligros que representan los chupasangres. Los arcos y las ballestas son las armas preferidas de quienes tienen la misión de cazar estas amenazas.#!" #NT!
+ kinfolk_outriders: "Jinetes de avanzada de Kinfolk" #NT!
+ kinfolk_outriders_flavor: "#F Al vivir cerca de sus parientes cambiaformas, los Kinfolk suelen estar más acostumbrados a la naturaleza que otros mortales, lo que puede aprovecharse para convertirlos en una fuerza de combate potente y rápida.#!" #NT!
+  
+ neteru_medjay: "Neteru Medjay" #NT!
+ neteru_medjay_flavor: "#F Los "auxiliares" de las bandas de guerra Renacidas son en su mayoría reclutados entre conocidos de los extensos árboles dinásticos que las Momias inmortales fomentaron a lo largo de los siglos.#!" #NT!
+ neteru_slingers: "Honderos Neteru" #NT!
+ neteru_slingers_flavor: "#F La humilde honda ha derribado a muchos guerreros poderosos a lo largo de los siglos. Con la habilidad de estos Neteru entrenados por las Momias, volverán a hacerlo.#!" #NT!
+ neteru_khopesh: "Guardia Neteru Khopesh" #NT!
+ neteru_khopesh_flavor: "#F La guardia de élite del faraón muerto hace mucho tiempo renace a través de estos guerreros Neteru entrenados por las propias momias.#!" #NT!
+ neteru_tomb_guard: "Guardia de la tumba de Neteru" #NT!
+ neteru_tomb_guard_flavor: "#F Los Neteru elegidos para vigilar a sus señores inmortales mientras duermen son defensores de élite, cuyas habilidades se perfeccionaron durante años repeliendo a saqueadores de tumbas sin escrúpulos.#!" #NT!
+  
+ flagellants_maa: "Flagelantes" #NT!
+ flagellants_maa_flavor: "#F Sangrar y morir por la gloria de los Ángeles de Dios... ¿qué podría ser una causa más digna?#!" #NT!
+ chanters_cultists: "Coristas impíos" #NT!
+ chanters_cultists_flavor: "#F Cantan sobre la salvación que vendrá de manos de su amo... y sobre la inevitable perdición de sus enemigos.#!" #NT!
+  
+ silver_hunters: "Cazadores de plata" #NT!
+ silver_hunters_flavor: "#F Apariciones de las Nieblas hechas de Plata, estos Campeones del Sueño avanzan a través de los bosques como exploradores de plata brillante. Creados a partir de los cuentos de los cazadores de terribles bestias en la noche, cazan las presas más peligrosas e infunden miedo en los corazones de los hijos de Gea.#!" #NT!
+ coffin_makers: "Fabricantes de ataúdes" #NT!
+ coffin_makers_flavor: "#F Se dice que estas espinas de campeones, que significan la extinción de las sombras que beben sangre, recorren y queman la sangre del linaje inmundo del primer asesino loco. Como rosales criados para matar, ansían sangre al igual que sus presas.#!" #NT!
+ guardian_angels: "Ángeles guardianes" #NT!
+ guardian_angels_flavor: "#F Inspirados en los cuentos de hadas que los padres cuentan a sus hijos sobre protectores especiales que velan por ellos, por curiosos giros del destino, los extraños seres del Abismo encuentran a estos Guerreros Soñadores de la luz especialmente aborrecibles.#!" #NT!
+ unfettered_phantoms: "Fantasmas sin restricciones" #NT!
+ unfettered_phantoms_flavor: "#F Tomando la forma de lo que la pobre alma que lo ve considere como un "asunto pendiente", los Fae han encontrado a estos guerreros particularmente perturbadores para los muertos, ya que toman formas horribles que envían a los espectros gritando a otro lado.#!" #NT!
+  
+ vigiles_francia_maa: "Vigiles Francia" #NT!
+ vigiles_francia_maa_flavor: "#F Creadas por Salianna después de su toma de Francia, las "gardes de nuit" son una orden de élite de caballeros Toreador franceses temidos por su dominio de la celeridad. #!" #NT!
+ faydits_maa: "Faydits" #NT!
+ faydits_maa_flavor: "#F Creada por Esclarmonde para defender Occitania, esta orden de caballería compuesta por varios clanes está diseñada para responder rápidamente a cualquier incursión de los franceses.#!" #NT!
+ centuries_epines_maa: "Centuria de Epines" #NT!
+ centuries_epines_maa_flavor: "#F Creado originalmente para repeler una invasión de los Cainitas ibéricos en el siglo X en Occitania, este grupo ha evolucionado hasta convertirse en una despiadada banda mercenaria que opera tanto en Francia como en Iberia.#!" #NT!
+ white_company_maa: "Compañía Blanca" #NT!
+ white_company_maa_flavor: "#F Estos caballeros Cainitas caballeros de España son famosos por su integridad intachable y su estricta adhesión a las pautas morales establecidas por su líder, Doña Lupa Manrique.#!" #NT!
+ fellowship_lady_maa: "Hermandad de Nuestra Señora" #NT!
+ fellowship_lady_maa_flavor: "#F Creada por un torero inglés que recibió una visión de la Virgen María durante la Primera Cruzada, la Comunidad se dedica a proteger y ayudar a las mujeres. Creen que esta sagrada tarea las liberará de la maldición de Caín. #!" #NT!
+ order_chanticleer_maa: "Orden del Chanticleer" #NT!
+ order_chanticleer_maa_flavor: "#F Esta franca orden de cazadores de demonios Cainitas tiene un historial impresionante. Sin embargo, su naturaleza temeraria les ha granjeado muchos enemigos y cada vez más gobernantes los están exiliando de sus tierras.#!" #NT!
+ dispossessed_maa: "Los desposeídos" #NT!
+ dispossessed_maa_flavor: "#F Formada por necrófagos que quedaron abandonados cuando sus maestros cruzados Cainitas terminaron muertos en Tierra Santa, los Desposeídos pronto se convirtieron en una red de necrófagos libres que se ayudaban entre sí, a veces incluso oponiéndose directamente a los vampiros opresores.#!" #NT!
+ order_star_morning_maa: "Orden de la Estrella de la Mañana" #NT!
+ order_star_morning_maa_flavor: "#F Los seguidores de Via Adversarius han asumido como su deber sagrado cazar a los infernales, y se sabe que la Orden está abierta a alianzas con grupos de ideas afines, como sus compañeros de la Orden de Chanticleer o el escurridizo Tal'mahe'Ra.#!" #NT!
+ order_crooked_cross_maa: "Orden de la Cruz Torcida" #NT!
+ order_crooked_cross_maa_flavor: "#F Una orden de caballeros Malkavian que sigue su propia interpretación extraña de la voluntad de Malkav. Intentar interpretar su locura los lleva a terminar en los lugares y situaciones más improbables. #!" #NT!
+ order_bitter_ashes_maa: "Orden de las Cenizas Amargas" #NT!
+ order_bitter_ashes_maa_flavor: "#F Los legendarios Caballeros del Grial son más un mito que una realidad, a excepción de los pocos elegidos que sobrevivieron a las misiones del Grial. Sus poderes los convierten en mucho más que simples vampiros y combatientes incomparables.#!" #NT!
+ order_of_vengeance_maa: "Su Santísima Orden de Venganza" #NT!
+ order_of_vengeance_maa_flavor: "#F Nombre colectivo de los seguidores de Via Vindicta que se comportan y organizan como una orden de caballería.#!" #NT!
+ leper_knights_maa: "Caballeros leprosos" #NT!
+ leper_knights_maa_flavor: "#F La orden Nosferatu de los Caballeros Leprosos son los patrones y guardianes de los mortales enfermos y asolados por la plaga. Cuando su deber sagrado se ve amenazado, forman una temible fuerza de combate utilizando la destreza física de su clan, que a menudo se pasa por alto.#!" #NT!
+ the_unblooded_maa: "El incruento" #NT!
+ the_unblooded_maa_flavor: "#F A partir de dos Salubri que intentaban salvar las tradiciones y ritos de su clan moribundo, los Unblooded han crecido hasta convertirse en una orden de caballería mixta dedicada a proteger los restos de los antaño orgullosos hijos de Saulot.#!" #NT!
+ the_maghrib_maa: "El Mahgrib" #NT!
+ the_maghrib_maa_flavor: "#F Los Mahgrib son una subsecta secreta de los Ashirra y están dedicados a luchar contra las fuerzas de la corrupción, sin importar las formas que adopten. Sus miembros son tan respetados como temidos por su severa diligencia.#!" #NT!
+ the_wardens_maa: "Los guardianes" #NT!
+ the_wardens_maa_flavor: "#F Los guardianes de los lugares sagrados del Camino de la Bestia, los Guardianes, tienen mucha experiencia en el trato con magos codiciosos, hadas y otros cambiaformas que intentan usar los poderes místicos de estos sitios para sus propios objetivos.#!" #NT!
+ order_twilight_maa: "La Orden del Crepúsculo" #NT!
+ order_twilight_maa_flavor: "#F También conocida como la Orden de los Verdaderos Caballeros del Sol Poniente, esta orden de caballería se ha ganado su reputación cazando espectros, aquellos vampiros que se convirtieron en monstruos después de caer ante su Bestia.#!" #NT!
+ knights_black_cross_maa: "Caballeros de la Cruz Negra" #NT!
+ knights_black_cross_maa_flavor: "#F La Cruz Negra, la Orden de Caballería Cainita que subvierte la Orden Teutónica mortal, es el brazo militar principal de los Ventrue alemanes. Formada y entrenada por Lord Jurgen von Verden, es la fuerza de combate más respetada del clan.#!" #NT!
+ knights_avalon_maa: "Caballeros de Avalon" #NT!
+ knights_avalon_maa_flavor: "#F Siguiendo el modelo de los Caballeros de la Mesa Redonda, estos honorables guerreros se han unido a Mitra. El Dios Rey de Inglaterra les ha encomendado la tarea de acabar con los diversos enemigos que amenazan su dominio, ya sean espectros, lupinos, cazadores de brujas o de naturaleza aún más esquiva.#!" #NT!
+ woodwose_savages_maa: "Salvajes de Woodwose" #NT!
+ woodwose_savages_maa_flavor: "#F Los Salvajes son un grupo de caballeros no muertos que ya no se adhieren a las reglas de la caballería ni a los códigos de conducta caballeresca. En cambio, forman bandas nómadas que viajan de aldea en aldea, tomando lo que les llame la atención y castigando a cualquiera que se atreva a sugerir que un determinado caldero/cruz de oro ornamentada/mujer joven no es suyo.#!" #NT!
+ knights_shroud_maa: "Caballeros del Santo Sudario" #NT!
+ knights_shroud_maa_flavor: "#F Patrocinados por el propio Al-Ashrad, estos "Caballeros Hechiceros" actúan como su vanguardia para luchar contra las amenazas infernales y otras menos obvias para los Banu Haqim.#!" #NT!
+ knights_blood_maa: "Caballeros de la sangre" #NT!
+ knights_blood_maa_flavor: "#F Formados durante los días oscuros de las invasiones bárbaras, los Caballeros de la Sangre son aquellos Ventrue que rechazaron las tradiciones de su clan para centrarse en su lugar en el poderío militar a toda costa. Entrenan sin cesar para la guerra, son ferozmente leales al clan en su conjunto, aunque a menudo son demasiado entusiastas para los gustos de los demás Ventrue.#!" #NT!
+ valkyries_maa: "Valquirias" #NT!
+ valkyries_maa_flavor: "#F Un grupo de mujeres guerreras, son literalmente las que eligen a los muertos, y su título y posición se remontan a cuando los vampiros aún podían institucionalizarse como una religión. El papel de las valquirias era el de las que marcaban el destino de la batalla: podían aparecer en una batalla importante para inclinar la balanza a favor de un bando. Hoy en día, siguen siendo la principal fuerza de élite de los vampiros Einherjar contra la invasión cristiana.#!" #NT!
+ order_rose_sable_maa: "Orden de la Rosa de Sable" #NT!
+ order_rose_sable_maa_flavor: "#F Estos caballeros necrófagos altamente capacitados son una suborden secreta dentro de los Caballeros Hospitalarios y son respetados y buscados por su destreza militar. Su patrón Toreador ha logrado hasta ahora evitar verse obligado a doblegarse ante las muchas fuerzas externas que intentan controlar la Orden. #!" #NT!
+ knights_rose_sable_maa: "Hermandad de la Rosa Sable" #NT!
+ knights_rose_sable_maa_flavor: "#F Formados en 1125 d. C. a partir de un grupo de nobles caballeros itinerantes que se dirigían a unirse a la Cruzada, los Caballeros son conocidos por sus armaduras y armas elaboradas artísticamente. Sus creencias heréticas no se muestran abiertamente y pueden operar en la sociedad mortal para su amo, el Toreador Andrew.#!" #NT!
+ disciples_anubis_maa: "Discípulos de Anubis" #NT!
+ disciples_anubis_maa_flavor: "#F Los Discípulos de Anubis son un antiguo grupo de Cainitas en Egipto. Sus orígenes se remontan a un Matusalén Gangrel llamado Anpu, que era amigo y aliado de Osiris en su lucha contra Set. Su progenie apoya a la Liga Osiriana de Horus y tiene fuertes vínculos tanto con los Caminantes Silenciosos Lupinos como con el Culto de Isis. #!" #NT!
+ warrior_setites_maa: "Setitas guerreros" #NT!
+ warrior_setites_maa_flavor: "#F No todos los seguidores de Set son seductores sutiles y de lengua bífida. Algunos de ellos prefieren seguir un camino más marcial y convertirse en guerreros sagrados para su dios. Los guerreros Setitas evitan la disciplina de Ofuscación por potencia; estas serpientes no se escabullen en la oscuridad. Son soldados orgullosos y brutales para Set, y están perfectamente dispuestos a ir a la batalla para respaldar a sus hermanos más sutiles. #!" #NT!
+ lions_rodrigo_maa: "Leones de Rodrigo" #NT!
+ lions_rodrigo_maa_flavor: "#F Dedicados a la causa de la Reconquista de las Sombras, estos "caballeros" quieren la aniquilación total de todo [ashirra|E] dentro de la Península Ibérica. Su crueldad les ha valido muchas victorias pero también muchos enemigos inmortales, y no solo entre los Ashirra.#!" #NT!
+ amazons_diana_maa: "Amazonas de Diana" #NT!
+ amazons_diana_maa_flavor: "#F Las Amazonas de Diana son un grupo de Furias que se preocupan más por ser mujeres guerreras imparables y descaradas que por ser vengadoras sagradas. Este grupo rara vez se considera un grupo formal, y es más bien un grupo de reunión para aquellas más dedicadas a demostrar que están a la altura de cualquier hombre en combate contra el Wyrm.#!" #NT!
+ imminent_strike_maa: "Huelga inminente" #NT!
+ imminent_strike_maa_flavor: "#F El Ataque Inminente es el campamento de guerra de los Hijos de Gaia, que busca unir a todos los Garou para la batalla final.#!" #NT!
+ luperci_maa: "Lupercio" #NT!
+ luperci_maa_flavor: "#F Los prósperos y poderosos Guardianes de los Hombres italianos son expertos en lidiar con los numerosos vampiros que acechan a su floreciente imperio mercantil. Han dado su nombre a aquellos Guardianes que se especializan en luchar contra la maldita prole de Caín.#!" #NT!
+ woad_raider_maa: "Los asaltantes de pastel" #NT!
+ woad_raider_maa_flavor: "#F El pastel es una planta que se encuentra en las Islas Británicas y de la que se puede extraer un pigmento azul. Los antiguos guerreros celtas se pintaban con este pigmento antes de la batalla para parecer más temibles y poner nerviosos a sus enemigos. Los parientes Fianna todavía honran esta tradición en la batalla.#!" #NT!
+ berserkers_maa: "Enloquecido" #NT!
+ berserkers_maa_flavor: "#F Los parientes de Fenris a menudo usan poca o ninguna armadura o ropa, y van a la batalla vestidos solo con pieles de oso o lobo.#!" #NT!
+ ratha_maa: "Rata" #NT!
+ ratha_maa_flavor: "#F Aunque los carros de guerra decayeron en la India a partir del año 300 a. C., su gran importancia cultural y religiosa impidió que se abandonaran a pesar de ser menos eficaces en la batalla que la caballería montada y los elefantes, y se los utilizaba junto a ellos. Los parientes de los astrónomos todavía los utilizan a menudo en la batalla para hostigar a los enemigos de su tribu.#!" #NT!
+ bringers_light_maa: "Portadores de luz" #NT!
+ bringers_light_maa_flavor: "#F Si hay un grupo de Señores de las Sombras que recibe algo parecido al respeto general, son los Portadores de la Luz. Estos Señores de las Sombras son los que manejan los poderes malignos, como los Danzantes de la Espiral Negra o los vampiros.#!" #NT!
+ swarm_maa: "El enjambre" #NT!
+ swarm_maa_flavor: "#F Este campamento de Roehuesos se centra en el aspecto bélico de las ratas, concentrándose en la lucha sucia y aprovechando cada ventaja que consiguen sobre el enemigo. Se especializan en tácticas de guerrilla, atacando al Wyrm y desapareciendo al instante.#!" #NT!
+ royal_guard_sf_maa: "Guardia Real" #NT!
+ royal_guard_sf_maa_flavor: "#F Como la realeza de la Nación Garou, los verdaderos gobernantes Colmillos Plateados siempre están escoltados por los luchadores más elitistas de su casa.#!" #NT!
+ daggers_nut_maa: "Dagas de nuez" #NT!
+ daggers_nut_maa_flavor: "#F Las Dagas de Nut están dedicadas a romper el control de los descendientes de Sutekh sobre Egipto y, por extensión, el de los vampiros sobre su territorio en general.#!" #NT!
+ predator_kings_maa: "Reyes depredadores" #NT!
+ predator_kings_maa_flavor: "#F Los Reyes Depredadores creen que ya pasó el momento de los compromisos y que hay que masacrar a los humanos hasta que no quede nadie. Son los más agresivos de los Garras Rojas.#!" #NT!
+ knights_templar_maa: "Caballeros Templarios" #NT!
+ knights_templar_maa_flavor: "#F A pesar de estar abrumados por la influencia sobrenatural que compite, los Templarios siguen siendo una fuerza de combate temible.#!" #NT!
+ knights_hospitaler_maa: "Caballeros Hospitalarios" #NT!
+ knights_hospitaler_maa_flavor: "#F El ideal del "virtuoso caballero cruzado" está bien arraigado en la Orden del Hospital de San Juan de Jerusalén. Admirados o vilipendiados, son combatientes respetados.#!" #NT!
+ teutonic_knights_maa: "Caballeros Teutónicos" #NT!
+ teutonic_knights_maa_flavor: "#F Los Cruzados del Norte tienen fama de avariciosos y despiadados. Sin embargo, su dureza es casi inigualable entre los guerreros de Dios.#!" #NT!
+ knights_calatrava_maa: "Caballeros de Calatrava" #NT!
+ knights_calatrava_maa_flavor: "#F La orden militante española es un aliado fiel de la Reconquista cristiana, aunque a veces se deja llevar por el mal camino por aquellos que conspiran a la sombra de los reyes y reinas de Iberia.#!" #NT!
+ knights_livonia_maa: "Caballeros de Livonia" #NT!
+ knights_livonia_maa_flavor: "#F Los Portadores de Espadas de Livonia están abiertos a personas de cualquier rango. Esto ha ayudado a que aumente su número, pero la calidad (y el carácter moral) de la orden ha sufrido bastante debido a esta elección.#!" #NT!
+ knights_st_thomas_maa: "Caballeros de Santo Tomás de Acre" #NT!
+ knights_st_thomas_maa_flavor: "#F Esta pequeña orden militar inglesa se enfrenta a la presión de la Iglesia para fusionarse con los Templarios o los Hospitalarios. Ha encontrado protección en la Inquisición de la Sombra gracias a sus propias investigaciones sobre lo sobrenatural en Tierra Santa.#!" #NT!
+ knights_st_catherine_maa: "Caballeros de Santa Catalina del Sinaí" #NT!
+ knights_st_catherine_maa_flavor: "#F Esta orden en decadencia ha sido casi aniquilada por ataques extraños pero letales en las últimas décadas. Al ver la marca de la participación sobrenatural, la Inquisición de las Sombras ha protegido a sus maltrechos remanentes.#!" #NT!
+ knights_st_helena_maa: "Damas Caballeros de Santa Elena" #NT!
+ knights_st_helena_maa_flavor: "#F Esta orden autoproclamada no tiene la bendición de la Iglesia. Despreciada y ridiculizada por el orden establecido, su reputación virtuosa les ha ayudado a escapar de la resistencia, pero el descontento sobre su propia existencia crece día a día, y ahora se envían recompensas a cualquier caballero que retire (a veces por la fuerza) a algunas de estas testarudas mujeres a conventos.#!" #NT!
+ twilight_light_footmen_maa: "Escaramuzadores del crepúsculo" #NT!
+ twilight_light_footmen_maa_flavor: "#F La unidad guerrillera de élite de un posible gobernante que quiere demostrar que es un maestro de las Guerras del Crepúsculo.#!" #NT!
+ midnight_light_footmen_maa: "Escaramuzadores de medianoche" #NT!
+ midnight_light_footmen_maa_flavor: "#F Una turba de infantería apenas entrenada que se lanza contra el enemigo sin guantes. Se utiliza principalmente como distracción o para abrumarlo con una superioridad numérica.#!" #NT!
+ twilight_archers_maa: "Arqueros del crepúsculo" #NT!
+ twilight_archers_maa_flavor: "#F Los tiradores de élite de un maestro de las Guerras Crepusculares, listos para defender a su señor en desafíos formales o en el campo de batalla.#!" #NT!
+ midnight_archers_maa: "Arqueros de medianoche" #NT!
+ midnight_archers_maa_flavor: "#F En el caos de las Guerras de Medianoche, a veces basta con hacerle una reverencia a alguien y señalarle la dirección general del enemigo.#!" #NT!
+ twilight_light_horsemen_maa: "Caballería ligera del crepúsculo" #NT!
+ twilight_light_horsemen_maa_flavor: "#F Los maestros de las Guerras del Crepúsculo emplean unidades de caballería ligera con excelentes resultados, usando velocidad y tácticas de golpe y fuga como ningún otro.#!" #NT!
+ midnight_light_horsemen_maa: "Caballería ligera de medianoche" #NT!
+ midnight_light_horsemen_maa_flavor: "#F Flanquear con una unidad considerable de caballería ligera siempre puede ser efectivo incluso cuando dicha caballería ligera se reunió con prisa.#!" #NT!
+ twilight_pikemen_maa: "Piqueros del crepúsculo" #NT!
+ twilight_pikemen_maa_flavor: "#F La guardia de élite de los participantes experimentados en las Guerras del Crepúsculo, estos soldados han perfeccionado sus habilidades a niveles casi sobrenaturales.#!" #NT!
+ midnight_pikemen_maa: "Piqueros de medianoche" #NT!
+ midnight_pikemen_maa_flavor: "#F Una turba de campesinos armados con tenedores lanzados contra los enemigos con la esperanza de que algo bueno (para su amo secreto, no para ellos mismos) suceda.#!" #NT!
+ twilight_armored_footmen_maa: "Infantería del Crepúsculo" #NT!
+ twilight_armored_footmen_maa_flavor: "#F Los peones en un tablero de ajedrez de Twilight Warmaster. Peones muy acorazados y muy hábiles, pero peones al fin y al cabo.#!" #NT!
+ midnight_armored_footmen_maa: "Infantería de medianoche" #NT!
+ midnight_armored_footmen_maa_flavor: "#F Una abundancia de armaduras de buena calidad combinada con una falta de habilidad y entrenamiento conduce a... resultados mixtos.#!" #NT!
+ twilight_armored_horsemen_maa: "Catafractas del crepúsculo" #NT!
+ twilight_armored_horsemen_maa_flavor: "#F El golpe de gracia en cualquier Guerra Crepuscular a menudo lo dan aquellos guerreros de élite equipados con lo mejor que su señor podía ofrecer.#!" #NT!
+ midnight_armored_horsemen_maa: "Catafractas de medianoche" #NT!
+ midnight_armored_horsemen_maa_flavor: "#F Una carga impresionante puede cambiar el curso de muchas Guerras de Medianoche. Lamentablemente, estos jinetes están más bien equipados que entrenados.#!" #NT!
+ massghouls_maa: "Mafia macabra" #NT!
+ massghouls_maa_flavor: "#F Una turba de mortales se alimentó apresuradamente con sangre vampírica y apuntó al enemigo más cercano. Los resultados pueden variar.#!" #NT!
+  
+ lesser_ushabti_maa: "Ushabti menor" #NT!
+ lesser_ushabti_maa_flavor: "#F Figuras de pequeñas criaturas como ratas o gorriones. Su limitada inteligencia y capacidad de lucha se ven contrarrestadas por la facilidad para crearlas.#!" #NT!
+ medium_ushabti_maa: "Ushabti mediano" #NT!
+ medium_ushabti_maa_flavor: "#F Figuras de criaturas de tamaño mediano como gatos, perros o cobras. Son más leales y tenaces que las criaturas menores pero más difíciles de hacer.#!" #NT!
+ overseer_ushabti_maa: "Supervisor Ushabti" #NT!
+ overseer_ushabti_maa_flavor: "#F Una forma más inteligente de servidor, el Ushabti Supervisor es capaz de comandar a sus contrapartes menores, lo que los convierte en un componente crítico en la formación de batalla de una Momia.#!" #NT!
+ great_ushabti_maa: "Gran Ushabti" #NT!
+ great_ushabti_maa_flavor: "#F Ushabti de un tamaño imponente, tan grande como el de un elefante, estas raras y preciosas construcciones son capaces de destruir formaciones enemigas con facilidad.#!" #NT!
+ guard_ushabti_maa: "Guardia Ushabti" #NT!
+ guard_ushabti_maa_flavor: "#F Guardianes de las tumbas de las momias más poderosas, este tipo de construcción es ampliamente temido por su tenacidad y asombrosa resistencia.#!" #NT!
+ ravnos_kshatriya_maa: "Ravnos Kshatriya" #NT!
+ ravnos_kshatriya_maa_flavor: "#F La casta guerrera de los Ravnos ha estado enzarzada en una guerra total contra los [asuratizayya|E] desde que se tiene memoria. Esto los ha convertido en luchadores fuertes y disciplinados.#!" #NT!
+ lamia_warmaidens_maa: "Gorgonas Lamia" #NT!
+ lamia_warmaidens_maa_flavor: "#F Las mujeres guerreras de Lilith luchan furiosamente, ya sea en defensa de sus pupilos capadocios o por la gloria de la Madre Oscura.#!" #NT!
+ agitators_maa: "Agitadores Brujah" #NT!
+ agitators_maa_flavor: "#F Los Agitadores, que en un principio recibieron su nombre del contingente de rebeldes (y bandidos) de Robin Leeland, se han convertido en un término general para aquellos Brujah que buscan poner de rodillas el orden actual.#!" #NT!
+ corsairs_lasombra_maa: "Corsarios Lasombra" #NT!
+ corsairs_lasombra_maa_flavor: "#F Todos los Lasombra sienten la llamada del mar en algún momento de su no-vida. La mayoría responde con bravuconería, espada en mano, mientras abordan otros barcos al amparo de la noche.#!" #NT!
+ salubri_warriors_maa: "Guerrero Salubri" #NT!
+ salubri_warriors_maa_flavor: "#F La estirpe de Samiel luchó contra el mal desde la noche en que fue creada. Su líder puede haberse ido, pero su deber continúa.#!" #NT!
+ web_assassins_maa: "Red de cuchillos asesinos" #NT!
+ web_assassins_maa_flavor: "#F La secreta Red de Cuchillos rara vez entra al campo de batalla. Sin embargo, cuando es absolutamente necesario, se convierten en guerreros especializados de una eficacia preocupante.#!" #NT!
+ tmr_column_maa: "Columna vampírica" #NT!
+ tmr_column_maa_flavor: "#F Las columnas son la unidad básica de las operaciones de la Mano Negra. Formadas y dirigidas por los dominios, las columnas son permanentes pero varían en tamaño. Los dominios reúnen asociaciones de varios equipos de ataque (conocidos como kamut) que constan de una docena de agentes, según los parámetros de la misión.#!" #NT!
+ ravnos_purified_maa: "El Purificado" #NT!
+ ravnos_purified_maa_flavor: "#F Una secta radical de Ravnos dedicada a luchar contra amenazas sobrenaturales, los Purificados son maestros de la guerra de guerrillas.#!" #NT!
+ ghouled_cultists: "Fanáticos necrófagos" #NT!
+ ghouled_cultists_flavor: "#F Mortales fanáticamente devotos de su Dios Cainita, a quienes se les dio la sangre como recompensa máxima por su completa devoción.#!" #NT!
+ anda_jagun_maa: "Yagun, ¿quién es?" #NT!
+ anda_jagun_maa_flavor: "#F Una unidad del ejército mongol de 100 hombres, este Jagun está reforzado por miembros del linaje Anda, lo que les da a esos arqueros a caballo una reputación aún más temible de lo habitual.#!" #NT!
+  
+ the_leviathan: "El Leviatán" #NT!
+ the_leviathan_flavor: "#F El Leviatán es descrito como una marea de oscuridad, una legión de tentáculos con un agarre de piedra. La oscuridad es su fuerza, y cuando atrapa a sus víctimas, la oscuridad es total. Aquellos que tienen la mala suerte de ser atrapados por el abrazo de la criatura pueden escuchar los gritos y los ecos atrapados de la desesperación expresados ​​hace mucho tiempo por penitentes torturados.#!" #NT!
+ army_of_leviathans: "El Leviatán" #NT!
+  
+  
+  

@@ -1,15 +1,26 @@
 ﻿l_spanish:
+ councillor_chancellor_vampire: "Chambelán" #NT!
+ councillor_chancellor_vampire_possessive: "De Chamberlain" #NT!
+ councillor_steward_vampire: "Guardián" #NT!
+ councillor_steward_vampire_possessive: "Del guardián" #NT!
+ councillor_marshal_vampire: "Alguacil" #NT!
+ councillor_marshal_vampire_possessive: "Del sheriff" #NT!
+ councillor_spymaster_vampire: "Azotar" #NT!
+ councillor_spymaster_vampire_possessive: "Azote" #NT!
+ councillor_court_chaplain_vampire: "Luminaria" #NT!
+ councillor_court_chaplain_vampire_possessive: "Luminaria" #NT!
+  
  culture_era_dark_fantastic_salary_mod: "#V $culture_era_dark_fantastic$#! [era|E]"
  culture_era_gothic_victorian_salary_mod: "#V $culture_era_gothic_victorian$#! [era|E]"
  culture_era_final_nights_salary_mod: "#V $culture_era_final_nights$#! [era|E]"
   
- court_position_strategist_trait: "[GetTrait('strategist').GetName( ROOT.Char )]"
  court_position_wrathful_trait: "[GetTrait('wrathful').GetName( ROOT.Char )]"
- court_position_schemer_trait: "[GetTrait('schemer').GetName( ROOT.Char )]"
  court_position_arrogant_trait: "[GetTrait('arrogant').GetName( ROOT.Char )]"
  court_position_ambitious_trait: "[GetTrait('ambitious').GetName( ROOT.Char )]"
  court_position_vengeful_trait: "[GetTrait('vengeful').GetName( ROOT.Char )]"
+ court_position_humble_trait: "[GetTrait('humble').GetName( ROOT.Char )]" #NT!
  court_position_dull_trait: "[GetTrait('dull').GetName( ROOT.Char )]"
+ court_position_hunter_trait: "[GetTrait('lifestyle_hunter').GetName( ROOT.Char )]" #NT!
  court_position_intellect_bad_3_trait: "[GetTrait('intellect_bad_3').GetName( ROOT.Char )]"
  court_position_intellect_bad_2_trait: "[GetTrait('intellect_bad_2').GetName( ROOT.Char )]"
  court_position_intellect_bad_1_trait: "[GetTrait('intellect_bad_1').GetName( ROOT.Char )]"
@@ -21,6 +32,8 @@
  court_position_possessed_lunatic_trait: "[GetTrait('possessed_1').GetName( ROOT.Char )] [GetTrait('lunatic_1').GetName( ROOT.Char )]"
  court_position_yin_imbalanced_trait: "[GetTrait('yin_imbalanced').GetName( ROOT.Char )]"
  court_position_yang_imbalanced_trait: "[GetTrait('yang_imbalanced').GetName( ROOT.Char )]"
+ court_position_animalism_trait: "[GetTrait('animalism').GetName( ROOT.Char )]" #NT!
+ court_position_animalismadvanced_trait: "[GetTrait('animalismadvanced').GetName( ROOT.Char )]" #NT!
  court_position_auspex_trait: "[GetTrait('auspex').GetName( ROOT.Char )]"
  court_position_auspexadvanced_trait: "[GetTrait('auspexadvanced').GetName( ROOT.Char )]"
  court_position_celerity_trait: "[GetTrait('celerity').GetName( ROOT.Char )]"
@@ -37,7 +50,6 @@
  court_position_art_wayfare_advanced_trait: "[GetTrait('art_wayfare_advanced').GetName( ROOT.Char )]"
  court_position_sorcerer_trait: "[GetTrait('sorcerer').GetName( ROOT.Char )]"
  court_position_forge_affinity_perk: "[GetPerk( 'forge_affinity_perk' ).GetName( ROOT.Char )]"
- court_position_callous_trait: "[GetTrait('callous').GetName( ROOT.Char )]"
  court_position_opinion: "Tu opinión de [ROOT.Char.GetShortUIName]"
  court_position_rival_relation: "[ROOT.Char.GetSheHe|U] es tu [rival|E]"
  court_position_nemesis_relation: "[ROOT.Char.GetSheHe|U] es tu [nemesis|E]"
@@ -45,6 +57,7 @@
  court_position_best_friend_relation: "[ROOT.Char.GetSheHe|U] es tu [best_friend|E]"
  court_position_lover_relation: "[ROOT.Char.GetSheHe|U] es tu [lover|E]"
  court_position_soulmate_relation: "[ROOT.Char.GetSheHe|U] es tu [soulmate|E]"
+ court_position_lifestyle_traveler_trait: "[GetTrait('lifestyle_traveler').GetName( ROOT.Char )]" #NT!
   
  brujah_primogen_court_position: "Primogénita Brujah"
  brujah_primogen_court_position_desc: "El $brujah_primogen_court_position$ es tradicionalmente responsable de la guerra estratégica en un dominio, aunque también puede incursionar en la erudición en ocasiones, manteniéndose fiel a su apodo de Eruditos Guerreros.\n\n#help Para los requisitos de [aptitude|E], consulte [brujah_primogen|E].#!"
@@ -201,10 +214,6 @@
  quaesitor_court_position: "Cuesitor"
  quaesitor_court_position_desc: "Los quaesitores son una rama de los arcontes que son casi en su totalidad vampiros Tremere. Se ocupan de todas las necesidades hechiceras de la Camarilla, ya sea combatir a los koldun y magos del Sabbat o cazar a los Tremere rebeldes."
   
- artificer_journeymen_court_position: "Oficiales"
- artificer_journeymen_court_position_desc: "Los oficiales son todos aquellos artesanos que han superado el Rito de la Forja de Almas y tienen su propia forja. Forman la mayor parte de los artesanos profesionales y tienen derecho a aceptar sus propios aprendices."
- artificer_journeymen_employer_custom_effect_description: "Mayor calidad de forja de almas dependiendo de [aptitude|e]."
-  
  oathsworn_mount_court_position: "Monte Juramentado"
  oathsworn_mount_court_position_desc: "Un [GetTrait('pooka').GetName( GetPlayer )] (con afinidad con un animal grande) o un [GetTraitGroup('shapeshifter').GetName()] [courtier|E] que haya hecho un juramento a un señor feérico puede servir como montura inteligente para ese señor."
  oathsworn_mount_employer_custom_effect_description: "Se aumentó la velocidad de viaje y movimiento del ejército según [aptitude|e]."
@@ -216,4 +225,74 @@
  tribunes_court_position: "Tribunas"
  tribunes_court_position_desc: "El Eforado mantiene una red flexible de contactos y “agentes de campo” en todo el mundo. Estos Vástagos son conocidos como tribunos y agentes generales, y sirven como los ojos y oídos de los éforos en todo el mundo."
   
+ POD_spread_legitimacy: "Difundir legitimidad" #NT!
+ POD_spread_legitimacy_desc: "Este personaje tiene la tarea de representar su [liege|E] para un área específica, abordar una preocupación específica o ser el portavoz de una parte del reino." #NT!
+ POD_tribute_collecting: "Recolección de tributos" #NT!
+ POD_tribute_collecting_desc: "Este personaje tiene la tarea de asegurarse de que todos en el reino rindan el debido respeto y tributo al gobernante, ya sea mediante el encanto, la fuerza o simplemente un buen sentido administrativo." #NT!
+ POD_war_preparations: "Preparaciones de guerra" #NT!
+ POD_war_preparations_desc: "Este personaje tiene la tarea de asegurarse de que todos en el reino estén listos para la guerra en cualquier momento, ya sea por encanto, fuerza o simplemente buen sentido administrativo." #NT!
+ POD_vassal_handler: "Delegación de poder" #NT!
+ POD_vassal_handler_desc: "Este personaje tiene la tarea de representar a su [liege|E] en dominios lejanos, asegurándose de que incluso las regiones fronterizas todavía se sientan conectadas con el centro." #NT!
+ POD_home_seneschal: "Consolidar dominio" #NT!
+ POD_home_seneschal_desc: "Este personaje tiene la tarea de asegurarse de que todo funcione sin problemas en el centro del reino mientras su señor podría centrarse en asuntos más globales." #NT!
+ POD_home_builder: "Mejorar el dominio" #NT!
+ POD_home_builder_desc: "Este personaje tiene la tarea de asegurarse de que la influencia de su señor se sienta adecuadamente incluso cuando está ausente." #NT!
+ POD_home_defender: "Defender el dominio" #NT!
+ POD_home_defender_desc: "Este personaje tiene la tarea de defender el dominio de su señor sin importar el costo." #NT!
+ POD_stress_relief: "Maestro del entretenimiento" #NT!
+ POD_stress_relief_desc: "Este personaje es el encargado de asegurarse de que las actividades proporcionadas a la corte y su gobernante estén siempre bien preparadas." #NT!
+ POD_spread_prestige: "Difundir historias épicas" #NT!
+ POD_spread_prestige_desc: "Este personaje tiene la misión de difundir historias impresionantes sobre su señor. Algunas incluso son ciertas." #NT!
+ POD_spread_piety: "Difundir cuentos piadosos" #NT!
+ POD_spread_piety_desc: "Este personaje tiene la misión de difundir impresionantes hazañas piadosas realizadas por su señor. Algunas incluso son verdaderas." #NT!
+ POD_help_schemes: "Ayuda a evitar tratos turbios" #NT!
+ POD_help_schemes_desc: "Este personaje ofrece ayuda no oficial para tus asuntos más desagradables." #NT!
+ POD_organize_champions: "Organizar campeones" #NT!
+ POD_organize_champions_desc: "Este personaje ayuda a reclutar y administrar su guardia de honor." #NT!
+ POD_organize_retinue: "Organizar comitiva" #NT!
+ POD_organize_retinue_desc: "Este personaje ayuda a reclutar y gestionar sus tropas de élite." #NT!
+ POD_organize_plasmic: "Organizar el Plasmático" #NT!
+ POD_organize_plasmic_desc: "Este personaje ayuda a reclutar y gestionar sus tropas plasmáticas señoriales." #NT!
+ POD_organize_wraith: "Organizar espectro" #NT!
+ POD_organize_wraith_desc: "Este personaje ayuda a reclutar y gestionar sus tropas espectrales señoriales." #NT!
+ POD_organize_demonic: "Organizar lo demoníaco" #NT!
+ POD_organize_demonic_desc: "Este personaje ayuda a reclutar y administrar sus tropas demoníacas señoriales." #NT!
+ POD_organize_spirit: "Organizar el espíritu" #NT!
+ POD_organize_spirit_desc: "Este personaje ayuda a reclutar y administrar sus tropas espirituales señoriales." #NT!
+ POD_organize_bygone: "Organizar el pasado" #NT!
+ POD_organize_bygone_desc: "Este personaje ayuda a reclutar y gestionar las tropas de su antiguo señor." #NT!
+ POD_organize_chimera: "Organizar Quimera" #NT!
+ POD_organize_chimera_desc: "Este personaje ayuda a reclutar y gestionar sus tropas de quimeras señoriales." #NT!
+ POD_organize_faerie: "Organizar hadas" #NT!
+ POD_organize_faerie_desc: "Este personaje ayuda a reclutar y administrar sus tropas de hadas señores." #NT!
   
+ imperial_envoy_court_position: "Enviado imperial" #NT!
+ imperial_envoy_court_position_desc: "El $imperial_envoy_court_position$ representa a su señor en las lejanas fronteras de su reino, recordándoles que deben pagar tributo incluso si están lejos." #NT!
+ imperial_chancellor_court_position: "Canciller imperial" #NT!
+ imperial_chancellor_court_position_desc: "El $imperial_chancellor_court_position$ se asegura de que la voz de su señor se escuche correctamente. Incluso los regaños furiosos pueden adquirir un barniz de legitimidad si es necesario." #NT!
+ imperial_minister_court_position: "Ministro Imperial" #NT!
+ imperial_minister_court_position_desc: "El $imperial_minister_court_position$ ayuda a gestionar los asuntos cotidianos (o nocturnos) del reino. A medida que aumenta la influencia de su señor, su tarea se vuelve cada vez más crítica." #NT!
+  
+ hanshii_arbiter_court_position: "Árbitro Hanshii" #NT!
+ hanshii_arbiter_court_position_desc: "Los hanshii, un elemento básico de la cultura bastet, son combates rituales que se utilizan para entretener o para decidir derechos territoriales. Estas contiendas pueden ser juegos de adivinanzas, duelos formales o guerras de colmillos y garras." #NT!
+ seline_oracle_court_position: "Oráculo de Seline" #NT!
+ seline_oracle_court_position_desc: "La hermana compasiva de Gea, la Luna, obviamente favorece a los hombres gato y los considera sus mejores creaciones. Ella dio a luz a las Razas Cambiantes como un regalo a la Tierra y se dice que su cuerpo es el santuario final para todas las Bastet." #NT!
+ master_taghairm_court_position: "Maestro del Taghairm" #NT!
+ master_taghairm_court_position_desc: "El Taghairm es una reunión de gatos que suele celebrarse para intercambiar información o bromas. Suele celebrarse durante el apogeo de la luna llena." #NT!
+ warleader_taklah_court_position: "Líder de guerra de Taklah" #NT!
+ warleader_taklah_court_position_desc: "Un Taklah es un séquito de élite compuesto exclusivamente por hombres gato reunidos con un propósito común." #NT!
+ guardian_yava_court_position: "Guardián del Yava" #NT!
+ guardian_yava_court_position_desc: "Un Yava es un secreto tribal, oculto a todos los forasteros, que supuestamente otorga a otro ser poder sobre ti si lo descubres. Es el secreto más celosamente guardado de toda la tradición de Bastet y solo se revela en las circunstancias más extremas, si es que se llega a revelarlo." #NT!
+  
+ imam_court_position: "Imán" #NT!
+ imam_court_position_desc: "Un líder religioso islámico que dirige a la congregación en la oración; en la secta Ashirra, el imán es el vampiro que proporciona liderazgo religioso a la comunidad Cainita local." #NT!
+ ulama_court_position: "'Ulama" #NT!
+ ulama_court_position_desc: "Sabios y otros eruditos religiosos de la comunidad Ashirra." #NT!
+ mullah_court_position: "Mulá" #NT!
+ mullah_court_position_desc: "Los eruditos religiosos más respetados de la Ashirra." #NT!
+ qadi_court_position: "Cadí" #NT!
+ qadi_court_position_desc: "Los jueces y guardianes de la ley de la comunidad de Ashirra." #NT!
+  
+ ratcatcher_court_position: "Cazador de ratas" #NT!
+ ratcatcher_court_position_desc: "El deber de un $ratcatcher_court_position$ es pastorear ratas, asegurarse de que sean comestibles y acorralarlas como fuente de vitae para los vampiros menos afortunados de la corte." #NT!
+ ratcatcher_employer_custom_effect_description: "$BULLET$Mejora el drenaje animal [character_interaction|E]" #NT!

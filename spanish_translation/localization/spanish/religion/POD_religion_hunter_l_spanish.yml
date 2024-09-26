@@ -1,7 +1,5 @@
 ﻿l_spanish:
   
- rf_hunters: "Cazadores"
-  
   #Common Hunters Localization 
  hunters_religion: "Cazadores de brujas"
  hunters_religion_adj: "Caza de brujas"
@@ -37,7 +35,6 @@
  ikhwan_al_safa_adherent_plural: "Sayyad al-Ghulan"
  ikhwan_al_safa_desc: "Creado durante el siglo XII, el Ikhwan al-Safa mantiene su vigilancia sobre los fieles y lucha contra los horrores no muertos de la noche. A diferencia de la Inquisición, los Sayyadin eran muy cuidadosos a la hora de evitar al público y trataban de minimizar el daño de su caza de inocentes."
   
- akritai: "Aquitai"
  akritai_adj: "Aquitai"
  akritai_adherent: "Cazador"
  akritai_adherent_plural: "Cazadores"
@@ -81,5 +78,11 @@
  warriors_dazbog_adherent_plural: "Campeones"
  warriors_dazbog_desc: "En la antigüedad, cuando Caín todavía vagaba solo por las tierras de Nod, una gran serpiente de oscuridad hirviente cayó de los cielos. La odiosa criatura se escondió bajo la tierra mientras el sol cortaba y quemaba su carne, pero escapar no fue tan fácil. El sol otorgó un solo rayo de luz divina a Svarog, dios de la herrería y el fuego celestial. Svarog luego creó a Dazbog: dios guerrero del sol y enemigo de todo lo que es profano. El legado de su guerra contra el Mal aún continúa hasta el día de hoy, alentando a los jóvenes guerreros eslavos a proteger su patria contra las criaturas de la noche."
   
-  
+ corrupted_hunters_faith: "Cazadores corruptos" #NT!
+ corrupted_hunters_faith_adj: "Cazadores corruptos" #NT!
+ corrupted_hunters_faith_adherent: "Perro Shih-tzu" #NT!
+ corrupted_hunters_faith_adherent_plural: "Perro Shih-tzu" #NT!
+ corrupted_hunters_faith_desc: "Esta religión no canónica ha sido comisionada por un Patrón. Aunque [GetTrait('shih').GetName( GetPlayer )] la adaptó para que tuviera sentido en las áreas donde habitan, algunos de ellos fueron demasiado lejos. \nAunque esos [GetTrait('shih').GetName( GetPlayer )] todavía cazan de alguna manera, buscan un disfrute más mundano, incluso un disfrute físico pervertido entre varias personas.\n[GetTrait('mortal').GetName( GetPlayer )], [GetTrait('ghoul').GetName( GetPlayer )], [GetTrait('werewolf').GetName( GetPlayer )], incluso [GetTrait('vampire').GetName( GetPlayer )] o [GetTrait('kueijin').GetName( GetPlayer )], a sus ojos, son solo objetos de deseo. Debido a la falta de conocimiento y los rigores de la supervivencia, la ética de la nueva generación se ha distorsionado y la etiqueta y la justicia de los [GetTrait('shih').GetName( GetPlayer )] se han corrompido." #NT!
+ corrupted_hunters_faith_religious_head_title: "Gran Maestro" #NT!
+ corrupted_hunters_faith_religious_head_title_name: "Gran Santuario" #NT!
   

@@ -3,6 +3,7 @@
  game_concept_princesofdarkness: "$game_concept_princes_of_darkness$"
  game_concept_princes_of_darkness_desc: "Un mod para Crusader Kings 3 centrado en las criaturas sobrenaturales de '[world_of_darkness|E]' de White Wolf. ¡Estás jugando ahora mismo! Un [prince|E] es un título de propiedad para un [GetTrait('vampire').GetName( GetNullCharacter )] que gobierna un dominio, equivalente a un [duchy|E] en CK3. ¿Qué es la oscuridad? Mira dentro de ti mismo."
  game_concept_POD: "PoD"
+ game_concept_pod_i: "¡@pod_icon!" #NT!
   
  game_concept_world_of_darkness: "Mundo de tinieblas"
  game_concept_WoD: "MDT"
@@ -31,6 +32,7 @@
  game_concept_beast: "Bestia"
  game_concept_the_beast: "$game_concept_thebeast$"
  game_concept_thebeast: "La Bestia"
+ game_concept_beasts: "Ganado" #NT!
  game_concept_beast_desc: "[the_beast|E] es un término usado por $POD_splat_vampire_plural$ para describir al depredador interno que lucha por controlar su mente. Se opone directamente a su Humanidad y es responsable de muchos de los impulsos degradados que [cainites|E] siente cada noche.\n\nEn momentos de extrema angustia, la Bestia puede abrumar a un [GetTrait('vampire').GetName( GetNullCharacter )] obligándolo a entrar en Frenesí, un estado de lucha o huida puramente animal.\n\nEn [princes_of_darkness|E], la Bestia a veces te hablará a ti #R de esta manera#!. Si un [GetTrait('vampire').GetName( GetNullCharacter )] se vuelve negativo en [piety|E], corre el riesgo de caer en un frenesí permanente y convertirse en un [GetTrait('wight').GetName( GetNullCharacter )]. Esto es una abdicación de facto a su $POD_splat_vampire_plural$0."
   
  game_concept_the_masquerade: "La Mascarada"
@@ -136,10 +138,6 @@
  game_concept_thaumaturgy: "Taumaturgia"
  game_concept_durnaki: "Dur Na Ki"
  game_concept_bloodsorcery_desc: "La hechicería de sangre, también llamada Taumaturgia, Heku, Durnaki y Valeran, es el arte de usar la Vitae vampírica para evocar poderosos efectos mágicos. Poseída por unos pocos clanes y guardada celosamente, la hechicería de sangre es una herramienta poderosa pero peligrosa y costosa. Cada facción tiene su propia forma de invocar el poder de la sangre: los Tremere usan magia y simbolismo hermético, los hechiceros de los Banu Haqim hacen pactos con espíritus y dioses. Al mismo tiempo, los Lasombra se sumergen en el abismo para realizar evocaciones arcanas. Se dice que la magia de sangre tiene el poder de hacer casi cualquier cosa, y aunque estas afirmaciones generalmente provienen de practicantes que desean crear una imagen aterradora o de víctimas de maldiciones y bolas de fuego, es cierto que la hechicería de sangre otorga acceso a una miríada de hechizos y habilidades que uno puede considerar... antinaturales. \n Cualquiera con la disciplina de hechicería de sangre puede abrir el menú de hechicería de sangre a través de [character_interaction|E]. Dentro, los magos pueden comprar hechizos si tienen suficiente [bloodsorcery_exp|E] y lanzar hechizos y maldiciones."
-  
- game_concept_bloodsorcery_exp: "Exp. de hechicería de sangre"
- game_concept_bloodsorcery_exp_short: "Exp"
- game_concept_bloodsorcery_exp_desc: "Una medida de cuánto aprendió tu personaje en las artes de [bloodsorcery|E]. Se requiere XP de Hechicería de sangre para aprender nuevos poderes y avanzar en los caminos y se otorga de dos maneras: \n 1. Un personaje recibirá una asignación anual de exp en función de su aprendizaje \n 2. Cada vez que un hechicero lanza un hechizo con éxito, obtendrá algo de XP."
   
  game_concept_necromancy: "Nigromancia"
  game_concept_mortis: "Mortis"
@@ -361,6 +359,10 @@
  game_concept_thralls: "Esclavos"
  game_concept_thrall_desc: "$game_concept_thralls$ son los sirvientes mortales de los demonios. Los demonios eligen esclavos entre los ambiciosos, vengativos, lisiados y desamparados; hombres y mujeres que se sienten engañados por el mundo, privados de las vidas que merecen."
   
+ game_concept_cultist: "Cultista" #NT!
+ game_concept_cultists: "Cultistas" #NT!
+ game_concept_cultist_desc: "$game_concept_cultists$ son los adoradores de un demonio. A través de su adoración le proporcionan Arcanos [experience|E]. Los vasallos y miembros de la corte son elegibles para convertirse en cultistas con $POD_set_cultist_interaction$ [character_interaction|E]." #NT!
+  
  game_concept_abombwe: "Abombwe"
  game_concept_abombwe_desc: "Abombwe es una disciplina practicada por el legado Akunanse de los Laibon y el misterioso linaje Bonsam de la Edad Oscura. Abombwe utiliza la estrecha conexión del vampiro con sus propias Bestias (y las de los demás) y su control sobre ellas, así como también canaliza el poder de las Bestias para diversos propósitos."
   
@@ -368,6 +370,8 @@
  game_concept_penumbra_desc: "Penumbra, también conocida como la Sombra de la Tierra, es el mundo espiritual que rodea directamente al mundo físico. Muchos elementos del terreno, aunque no todos, tienen reflejos allí."
   
  game_concept_astral_reaches: "Alcances Astrales"
+ game_concept_high_umbra: "Alta Umbra" #NT!
+ game_concept_astral_umbra: "Umbra astral" #NT!
  game_concept_astral_reaches_desc: "Los Alcances Astrales, también llamados Umbra Astral, Umbra Alta o Umbra Superior, son los reinos del pensamiento, de la idea y del concepto."
   
  game_concept_dark_kingdom: "Reino oscuro"
@@ -409,6 +413,7 @@
   
  game_concept_underworld: "Inframundo"
  game_concept_yin_world: "Mundo Yin"
+ game_concept_dark_umbra: "Umbra oscura" #NT!
  game_concept_underworld_desc: "El Inframundo, también conocido como la Umbra Oscura o el Contrarium, es el dominio de los muertos y los recuerdos."
   
  game_concept_yang_world: "Mundo Yang"
@@ -457,6 +462,12 @@
  game_concept_POD_animals_maa: "Animales"
  game_concept_POD_animals_maa_desc: "Los animales son [men_at_arms|E] que pueden ser reclutados por varios medios como el Animalismo.\n\nSon contrarrestados por [archers|E]."
   
+ game_concept_POD_construct_maa: "Construcciones" #NT!
+ game_concept_POD_construct_maa_desc: "Los constructos son [men_at_arms|E] que representan una variedad de criaturas mágicas o tecnológicas que pueden variar mucho en forma y poder dependiendo de cómo y por qué fueron creadas." #NT!
+  
+ game_concept_POD_bygones_maa: "Pasado" #NT!
+ game_concept_POD_bygones_maa_desc: "Un Bygone es una criatura de mitos y leyendas que ya no puede existir abiertamente en la Tierra por mucho tiempo debido a su incompatibilidad con el Consenso. Si bien es poderoso, esta inestabilidad hace que su uso en batalla sea una perspectiva difícil." #NT!
+  
  game_concept_POD_legendary_maa: "Leyendas"
  game_concept_POD_legendary_maa_desc: "Los legendarios [men_at_arms|E] desafían toda definición, cada uno es algo único en sí mismo.\n\nSu naturaleza única significa que nada puede contrarrestarlos de manera confiable y sus estadísticas suelen ser lo suficientemente fuertes como para que contrarrestar a otros [men_at_arms|E] sea innecesario.\n\nDebido a su naturaleza única, no existe un solo terreno en el que sean universalmente más fuertes o más débiles."
   
@@ -478,6 +489,12 @@
  game_concept_POD_plasmic_maa: "Plásmico"
  game_concept_POD_plasmic_maa_desc: "La 'forma de vida' del [underworld|E]; específicamente, cualquier criatura independiente que esté compuesta de Plasma."
   
+ game_concept_POD_wraith_maa: "Fantasma" #NT!
+ game_concept_POD_wraith_maa_desc: "Un espectro es un fantasma, el alma de una persona que murió sin sentirse realizada y ahora ronda el [shadowlands|E]." #NT!
+  
+ game_concept_POD_vampire_maa: "Vampiro" #NT!
+ game_concept_POD_vampire_maa_desc: "Los engendros malditos de Caín son temibles combatientes cuando cae la noche en el campo de batalla. Son naturalmente más fuertes y rápidos que los mortales y la mayoría de ellos también utilizan poderosos poderes mentales y físicos que pueden cambiar el curso de cualquier batalla." #NT!
+  
  game_concept_POD_faerie_maa: "Hada"
  game_concept_POD_faerie_maa_desc: "Los términos hada, fae y Gente Justa suelen usarse indistintamente por los no cambiantes para referirse tanto a los cambiantes como a los verdaderos fae."
   
@@ -498,13 +515,14 @@
  game_concept_command_wraith_interaction: "Comando Espectro"
  game_concept_command_wraith_interaction_desc: "Una interacción que permite a un personaje ordenar a un [GetTrait('wraith').GetName(GetNullCharacter)] vinculado que actúe contra otros personajes."
   
- game_concept_marked_for_return_interaction: "Marcar para la interacción de devolución"
- game_concept_marked_for_return_interaction_desc: "Una interacción que permite a un personaje hacer que otro personaje se convierta en un [GetTrait('wraith').GetName( GetNullCharacter )] cuando muere."
+ game_concept_summon_wraith_on_death_interaction: "Interacción con invocación de espectro al morir" #NT!
+ game_concept_summon_wraith_on_death_interaction_desc: "Una interacción que permite a un personaje hacer que otro personaje se convierta en un [GetTrait('wraith').GetName( GetNullCharacter )] cuando muere." #NT!
   
  game_concept_reliquarie: "Relicario"
  game_concept_reliquarie_desc: "Si se destruye este artefacto, [GetTrait('demon').GetName( GetNullCharacter )] perderá [GetTrait('earthbound').GetName( GetNullCharacter )] [trait|E]."
   
  game_concept_dreamer: "Soñador"
+ game_concept_dreamers: "Soñadores" #NT!
  game_concept_dreamer_desc: "Entre los Kithain, el término "soñador" puede ser genérico para cualquier mortal, pero se le atribuye más apropiadamente a aquellos mortales que exhiben la chispa de la creatividad o que no han sido embotados por la Banalidad hasta el punto de quedar emocionalmente atrofiados. Los soñadores son la fuente principal de glamour para los Kithain y, como tal, son un recurso protegido."
   
  game_concept_dan: "Y ahora"
@@ -590,6 +608,8 @@
  game_concept_coterie_mummy: "Pacto"
  game_concept_coterie_generic: "Grupo"
  game_concept_coterie_harem: "Harén"
+ game_concept_coterie_entomos: "Grupo" #NT!
+ game_concept_coterie_bastet: "Orgullo" #NT!
  game_concept_coterie_desc: "Una camarilla #bold#! es un grupo de individuos que participan en [journeys|E] juntos. "Camarilla" es un término utilizado por $POD_splat_vampire_plural$; otras [characters|E] pueden tener nombres diferentes para ella.\n\nMientras estás en una camarilla [journey|E], los [skills|E] se comparten entre los miembros de la camarilla. Por ejemplo, si una situación durante una camarilla [journey|E] exige [diplomacy|E], solo se considerará el [diplomacy_skill|E] de tu miembro de camarilla más diplomático.\n\n#!0 Para revisar tu camarilla, haz clic en el botón #bold #!2#! en el lado derecho de tu pantalla y selecciona la segunda pestaña.#!"
   
  game_concept_inner_circle: "Círculo interno"
@@ -622,6 +642,8 @@
  game_concept_hungerless_desc: "Un $POD_splat_vampire$ Saciado ha superado por completo la necesidad de sangre. Puede usar libremente [disciplines|E] y otras habilidades que de otro modo costarían sangre.\n\nSin embargo, esto también significa que ya no puede ganar [resonance|E] de experiencia cazando."
   
  game_concept_umbra: "Umbra"
+ game_concept_spirit_world: "Mundo espiritual" #NT!
+ game_concept_spirit_worlds: "Mundos espirituales" #NT!
  game_concept_umbra_desc: "La Umbra, también llamada el Mundo Espiritual, la Sombra o la Sombra de Terciopelo, es un reino que existe junto al mundo material y, sin embargo, separado de él."
   
  game_concept_skinlands: "Tierras de piel"
@@ -646,6 +668,12 @@
   
  game_concept_umbra_expedition: "Expedición de la Umbra"
  game_concept_umbra_expedition_desc: "Explorar una ubicación de la Umbra con interés requiere superar una serie de desafíos, puede implicar duelos contra espíritus, pruebas de habilidad o una oportunidad de obtener un tesoro."
+  
+ game_concept_umbra_aptitude: "Aptitud Umbra" #NT!
+ game_concept_umbra_aptitude_desc: "Medida de la rapidez con la que este personaje puede explorar la umbra." #NT!
+  
+ game_concept_umbra_sense: "Sentido Umbra" #NT!
+ game_concept_umbra_sense_desc: "Medida de la probabilidad de que este personaje evite quedar atrapado en la umbra o complete con éxito una misión asignada [umbra_expedition|E]." #NT!
   
  game_concept_roguelike_mode: "Modo Roguelike"
  game_concept_roguelike_mode_desc: "Un modo difícil #N#! para [princes_of_darkness|E].\n\nAl comienzo del juego, cambiarás a un gobernante aleatorio de una provincia. Ese gobernante también estará maldito. Puedes seleccionar una de las siguientes maldiciones:\n$EFFECT_LIST_BULLET$[GetModifier('POD_roguelike_no_wealth').GetNameWithTooltip]\n$EFFECT_LIST_BULLET$[GetModifier('POD_roguelike_no_love').GetNameWithTooltip]\n$EFFECT_LIST_BULLET$[GetModifier('POD_roguelike_no_rest').GetNameWithTooltip]\n$EFFECT_LIST_BULLET$#!0\n$EFFECT_LIST_BULLET$#!2\n$EFFECT_LIST_BULLET$#!4\n$EFFECT_LIST_BULLET$#!6\n\nAlternativamente, puedes dejar que el juego seleccione una maldición aleatoria para ti, o recibir todas las maldiciones a la vez.\n\nSolo tienes una vida. Si tu gobernante inicial muere mientras aún está maldito, se acaba el juego.\n\nAl completar uno de los objetivos principales, se eliminarán tus maldiciones.\n\nBuena suerte."
@@ -680,3 +708,44 @@
  game_concept_loyalty: "Lealtad"
  game_concept_loyalty_with_icon: "@knight_icon!Lealtad"
  game_concept_loyalty_desc: "Unlanded [knights|E] querrá abandonar la corte de un jugador si su [opinion|E] cae por debajo de #V 0#!. Tienes un período de gracia de 1 año para volver a plantear su opinión.\n\nLos personajes no están sujetos a Lealtad si:\n$EFFECT_LIST_BULLET$Tienes un [strong_hook|E] en ellos\n$EFFECT_LIST_BULLET$Son tu Manada, Soñador, Esclavo, Anfitrión o Espectro Atado\n$EFFECT_LIST_BULLET$Están bajo un Geas de Protección\n$EFFECT_LIST_BULLET$Están en tu [council|E]\n$EFFECT_LIST_BULLET$Son tus miembros [opinion|E]1, [opinion|E]2, [opinion|E]3 o [opinion|E]4\n\nLa Lealtad tiene requisitos más estrictos en [opinion|E]5. Está deshabilitada en [opinion|E]6."
+  
+ game_concept_static_stress: "Tensión mental" #NT!
+ game_concept_static_stress_desc: "La tensión mental es un tipo especial de [stress|E] que no se ve afectado por ningún modificador que afecte a un personaje." #NT!
+  
+ game_concept_kuei_jin: "Kuei-jin" #NT!
+ game_concept_kuei_jin_desc: "Los "vampiros orientales", más conocidos como los Kuei-jin, también reciben el nombre de Wan Kuei, Gui Ren, asuratizayya (en la India) o simplemente los "muertos hambrientos". Se dice que los Kuei-jin son los descendientes corruptos de los Wan Xian, los "diez mil héroes" elegidos por el augusto personaje de Jade para guiar y proteger el universo en la historia antigua. Los Wan Xian fueron elegidos originalmente mediante pruebas de habilidad y coraje, y se alimentaban del chi ambiental del universo. Sin embargo, cayeron en desgracia, aprendiendo a alimentarse del chi de los seres vivos y corrompiendo las pruebas de valía." #NT!
+ game_concept_wan_xian: "Wan Xian" #NT!
+ game_concept_wan_kuei: "Wan Kuei" #NT!
+ game_concept_gui_ren: "Gui Ren" #NT!
+ game_concept_hungry_dead: "Muertos hambrientos" #NT!
+ game_concept_asuratizayya: "Asuratizaya" #NT!
+  
+ game_concept_torment: "Tormento" #NT!
+ game_concept_torment_desc: "El tormento aumenta al:\n$EFFECT_LIST_BULLET$Asesinato\n$EFFECT_LIST_BULLET$Tortura\n$EFFECT_LIST_BULLET$Obtener un [rival|E] o [nemesis|E]\n$EFFECT_LIST_BULLET$Sacrificar prisioneros o posesiones a grandes demonios\n\nEl tormento se reduce al:\n$EFFECT_LIST_BULLET$Regalar oro, artefactos o títulos\n$EFFECT_LIST_BULLET$Usar habilidades curativas\n$EFFECT_LIST_BULLET$Obtener un [friend|E], $EFFECT_LIST_BULLET$0 o $EFFECT_LIST_BULLET$1\n$EFFECT_LIST_BULLET$Pasivamente mientras tienes un anfitrión humano (solo para los que no son $EFFECT_LIST_BULLET$3)" #NT!
+  
+ game_concept_grand_city_of_constantinople: "Constantinopla, el sueño que se desvanece" #NT!
+ game_concept_grand_city_of_constantinople_desc: "La Gran Ciudad de Constantinopla tiene tres rutas diferentes dependiendo de la cultura de su poseedor.\n\nLa ruta del saqueo (para latinos, íberos, franceses, ingleses y alemanes) tiene edificios con un largo tiempo de creación pero una gran carga frontal al final, que representa el largo proceso de saqueo de la ciudad para obtener todas sus riquezas.\nLa ruta de la reconstrucción (para bizantinos, romanos, rusos y antiguos griegos) ofrece edificios costosos que tardan mucho tiempo en ser rentables, pero son los más poderosos al final para una Constantinopla completamente construida.\nLa ruta de la reforma (para todos los demás) es un punto intermedio, que ofrece una multitud de edificios con buena rentabilidad y costos asequibles." #NT!
+  
+ game_concept_plunder_route: "Ruta del saqueo" #NT!
+ game_concept_rebuild_route: "Reconstruyendo Ruta" #NT!
+ game_concept_reform_route: "Ruta de la Reforma" #NT!
+  
+ game_concept_bloodmagic_spell: "Hechizo de magia de sangre" #NT!
+ game_concept_bs_spell: "Deletrear" #NT!
+ game_concept_bs_spells: "Hechizos" #NT!
+ game_concept_bloodmagic_spell_desc: "#bold Los hechizos#! permiten que un [Concept('bloodsorcery','Blood Sorcerer')] haga cosas que no son naturales ni siquiera para los estándares vampíricos. Cada hechizo está asociado con un [bs_path|E].\n\nLos hechizos pueden tener costos adicionales además de [hunger_with_icon|E], como [static_stress|E] o [piety|E].\n\nEn [princes_of_darkness|E], los hechizos se lanzan a través de #V $blood_sorcery_interaction$#! #!1. Su probabilidad de éxito se basa en la distancia al objetivo, la diferencia en #!2 y, si ambos son #!3, su diferencia en #!4." #NT!
+  
+ game_concept_bloodmagic_tradition: "Tradición de magia de sangre" #NT!
+ game_concept_bs_tradition: "Tradición" #NT!
+ game_concept_bs_traditions: "Tradiciones" #NT!
+ game_concept_bloodmagic_tradition_desc: "Cada [Clan|E] que practica [bloodsorcery|E] ha creado su propio sistema de creencias y tradición en torno a su práctica.\n\nEn [princes_of_darkness|E], las siguientes Tradiciones se pueden aprender a través de [journey|E]:\n$EFFECT_LIST_BULLET$#bold Taumaturgia#!, del [GetTrait('tremere').GetName(GetNullCharacter)]\n$EFFECT_LIST_BULLET$#bold Dur-An-Ki#!, del [bloodsorcery|E]1\n$EFFECT_LIST_BULLET$#bold Akhu#!, del [bloodsorcery|E]5 [bloodsorcery|E]6 Setitas#!#!\n$EFFECT_LIST_BULLET$#bold Hechicería Koldúnica#!, del [bloodsorcery|E]9\n$EFFECT_LIST_BULLET$#bold Misticismo Abisal#!, del [princes_of_darkness|E]3\n\nAprender una Tradición dará acceso a su Tradición asociada. [princes_of_darkness|E]4. Algunos Caminos también son compartidos entre Tradiciones." #NT!
+  
+ game_concept_bloodmagic_path: "Camino de la magia de la sangre" #NT!
+ game_concept_bs_path: "Camino" #NT!
+ game_concept_bs_paths: "Caminos" #NT!
+ game_concept_bloodmagic_path_desc: "Un Camino #bold#! es una colección de procedimientos para lograr un tipo de efecto con [bloodsorcery|E], como controlar el clima, manipular enfermedades o invocar demonios.\n\nEn [princes_of_darkness|E], los Caminos son líneas de [perks|E] en la Magia de Sangre [lifestyle|E]. Estas ventajas pueden desbloquear nuevos [bs_spells|E] o mejorar los existentes.\n\nAprender un [bs_tradition|E] dará acceso a sus Caminos asociados. Algunos Caminos también se comparten entre Tradiciones." #NT!
+  
+ game_concept_bloodmagic_ritual: "Ritual de magia de sangre" #NT!
+ game_concept_bs_ritual: "Ritual" #NT!
+ game_concept_bs_rituals: "Rituales" #NT!
+ game_concept_bloodmagic_ritual_desc: "Los rituales #bold#! son poderosos [bs_spells|E]. Suelen tener menos posibilidades de fallar, pero requieren más tiempo y recursos adicionales, como [gold|E] o [piety|E].\n\nLos rituales están vinculados a [bs_traditions|E]. Se desbloquean rituales más poderosos al obtener [perks|E] en cualquier [bs_path|E] de esa tradición.\n\nEn [princes_of_darkness|E], los rituales son [journeys|E]. No puedes obtener #!0 ni participar en #!1 mientras planificas un ritual." #NT!

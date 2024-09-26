@@ -11,6 +11,8 @@
  POD_chargen.2.option.a: "Vampiro"
  POD_chargen.2.option.j: "Renacido"
  POD_chargen.2.option.b: "Hombre-lobo"
+ POD_chargen.2.option.b1: "Fera" #NT!
+ POD_chargen.2.option.b2: "Entomos" #NT!
  POD_chargen.2.option.c: "Mago"
  POD_chargen.2.option.d: "Hadas"
  POD_chargen.2.option.k: "Cambiante"
@@ -805,6 +807,8 @@
   
  POD_chargen.1100.t: "Exclusión de presas"
  POD_chargen.1100.desc: "Debido a tu [ventrue_clan_curse|E], tienes gustos exigentes y refinados, incluso cuando se trata de sangre. ¿Qué tipo de sangre buscas?\n#X Esta elección afectará el tipo de personaje del que puedes alimentarte de manera segura sin incurrir en penalizaciones. Elige con cuidado.#!"
+ POD_chargen.1100.option.flavor.easy: "#P Recomendado para nuevos jugadores.#!" #NT!
+ POD_chargen.1100.option.flavor.hard: "@warning_icon! #N Esta es una restricción de alimentación difícil.#!" #NT!
  POD_chargen.1100.option.a: "Edad/Sexo/Ubicación"
  POD_chargen.1100.option.a.tt: "Eliges presas de cierta edad y género."
  POD_chargen.1100.option.b: "¿Así que, qué haces para ganarte la vida?"
@@ -813,6 +817,10 @@
  POD_chargen.1100.option.c.tt: "Eliges una presa con un determinado rasgo de personalidad que la mayoría de los mortales consideran un pecado."
  POD_chargen.1100.option.d: "¿Eres una buena persona?"
  POD_chargen.1100.option.d.tt: "Eliges una presa con una personalidad determinada que la mayoría de los mortales consideran una virtud."
+ POD_chargen.1100.option.e: "¿Cómo te sientes hoy?" #NT!
+ POD_chargen.1100.option.e.tt: "Eliges presas que estén mentalmente perturbadas." #NT!
+ POD_chargen.1100.option.f: "Cuéntame más sobre ti y tu familia." #NT!
+ POD_chargen.1100.option.f.tt: "Eliges presas con rasgos congénitos específicos." #NT!
   
  POD_chargen.1110.t: "Edad/Sexo/Ubicación"
  POD_chargen.1110.desc: "Sólo la sangre de un género determinado y de una cosecha añeja servirá."
@@ -854,6 +862,25 @@
  POD_chargen.1140.option.e: "El amable/compasivo"
  POD_chargen.1140.option.f: "El humilde"
  POD_chargen.1140.option.g: "El templado"
+  
+ POD_chargen.1150.t: "Los mentalmente perturbados" #NT!
+ POD_chargen.1150.desc: "¿A quién cazas?" #NT!
+ POD_chargen.1150.option.a: "El melancólico" #NT!
+ POD_chargen.1150.option.b: "El lunático" #NT!
+ POD_chargen.1150.option.c: "Los poseídos" #NT!
+  
+ POD_chargen.1160.t: "Rasgos familiares" #NT!
+ POD_chargen.1160.desc: "¿A quién cazas?" #NT!
+ POD_chargen.1160.option.a: "El fuerte" #NT!
+ POD_chargen.1160.option.b: "Los débiles" #NT!
+ POD_chargen.1160.option.c: "El inteligente" #NT!
+ POD_chargen.1160.option.d: "El estupido" #NT!
+ POD_chargen.1160.option.e: "El atractivo" #NT!
+ POD_chargen.1160.option.f: "El feo" #NT!
+ POD_chargen.1160.option.g: "El Fecundo" #NT!
+ POD_chargen.1160.option.h: "El enano" #NT!
+ POD_chargen.1160.option.i: "El gigante" #NT!
+ POD_chargen.1160.option.j: "El albino" #NT!
   
  POD_chargen.1300.t: "Revenants"
  POD_chargen.1300.desc: "Los esclavos de sangre consumieron la sangre de sus dominadores vampiros, estos ghouls asumieron una parte del poder de la estirpe. En raras ocasiones, algunos de sus hijos nacieron con sangre de vampiro en las venas. Con un mayor dominio de la sangre, son más poderosos que sus padres. Comúnmente llamados "[Revenants|E]", los vástagos [ghoul|E] de los Tzimisce [Clan|E] se llaman 'Zadruga'. ¿De qué linaje de [Revenants|E] desciendes?"
@@ -1165,11 +1192,31 @@
  POD_chargen.2613.option.c: "Métis"
  POD_chargen.2613.option.d: "Quizás no soy un grondr"
   
- POD_chargen.2614.t: "Criar"
- POD_chargen.2614.desc: "Los ananasi tienen solo dos razas: Homínidos (nacidos de un padre humano) y Arácnidos (nacidos de un padre araña). Los ananasi no tienen mestizos "verdaderos", sino que una criatura nacida de dos padres ananasi es una raza separada llamada Atahsaia, que se mantiene en las profundidades de la umbra. Los Atahsaia solo se comunican con la propia reina Ananasa y están involucrados en el Apocalipsis. Los mestizos existen entre los Kumo: seres raros y horribles que se abren camino para salir del cuerpo de su madre."
- POD_chargen.2614.option.a: "Homínido"
- POD_chargen.2614.option.b: "Arácnido"
- POD_chargen.2614.option.d: "Quizás no soy un ananasi"
+ # POD_chargen.2614.t: "Criar" #NT!
+ # POD_chargen.2614.desc: "Los ananasi tienen solo dos razas: Homínido (nacido de un padre humano) y Arácnido (nacido de un padre araña). Los ananasi no tienen mestizos "verdaderos", en cambio, una criatura nacida de dos padres ananasi es una raza separada llamada Atahsaia, que se mantiene en las profundidades del [umbra|E]. Los Atahsaia solo se comunican con la propia Reina Ananasa y están involucrados en el Apocalipsis. Los mestizos existen entre los Kumo: seres raros y horribles que se abren camino para salir del cuerpo de su madre." #NT!
+ # POD_chargen.2614.option.a: "Homínido" #NT!
+ # POD_chargen.2614.option.b: "Arácnido" #NT!
+ # POD_chargen.2614.option.d: "Quizás no soy un ananasi" #NT!
+  
+ POD_chargen.2620.t: "Fera" #NT!
+ POD_chargen.2620.desc: "Fera, un término que utilizan con más frecuencia los Garou, representa a los numerosos cambiaformas que no son hombres lobo del mundo. También conocidos como las Razas Cambiantes, la mayoría de los Fera tienen al menos una fuerte desconfianza hacia los Garou, debido a sus acciones durante la Guerra de la Furia, donde libraron una guerra de extinción contra ellos. ¿A qué Raza Cambiante perteneces?" #NT!
+ POD_chargen.2620.option.n: "Tal vez no soy un fera" #NT!
+  
+ POD_chargen.2650.t: "Entomos" #NT!
+ POD_chargen.2650.desc: "$trait_entomos_desc$" #NT!
+ POD_chargen.2650.option.n: "Quizás no soy un Éntomos..." #NT!
+  
+ POD_chargen.2651.t: "Criar" #NT!
+ POD_chargen.2651.desc: "Los Ananasi, los más numerosos y antiguos de los Éntomos, son Éntomos araña divididos en lealtades. La gran mayoría de los Ananasi están divididos entre Ananasa y el Tejedor, atrapados en una guerra civil entre ellos por el destino de la realidad. Concebidos como los Historiadores y la Policía Secreta del Tejedor, desde entonces han pasado a ser la especie más cosmopolita de Éntomos mientras luchan cada vez más por dominarse entre sí." #NT!
+ POD_chargen.2651.option.f: "Quizás no soy un Ananasi..." #NT!
+  
+ POD_chargen.2652.t: "Criar" #NT!
+ POD_chargen.2652.desc: "Las razas de insectos son la clasificación más grande de Éntomos e incluyen Éntomos que toman sus formas de abejas, hormigas, avispas, polillas, termitas, langostas, mántis y escarabajos. En su mayor parte, las razas de insectos están unidas, salvo el exiliado Éntomos escarabajo Kstyw. Son diversas y se encuentran entre las que más se centran en la cooperación entre sí de cara al Armagedón." #NT!
+ POD_chargen.2652.option.f: "Quizás no soy miembro de las razas de insectos..." #NT!
+  
+ POD_chargen.2653.t: "Criar" #NT!
+ POD_chargen.2653.desc: "Los C'etites son un grupo misterioso y poco comprendido de Éntomos, que adoran a la manifestación oceánica de la Tejedora, C'et. Adoptan la forma de cangrejos de río, cangrejos y langostas, y son capaces de viajar por tierra, pero prefieren permanecer bajo el agua. En general, luchan principalmente por la civilización en lo que respecta al mar y los ríos, pero las circunstancias han llevado a un gran número de ellos a la tierra en los últimos años de las Guerras de los Insectos." #NT!
+ POD_chargen.2653.option.f: "Quizás no soy uno de los C'etites..." #NT!
   
  POD_chargen.2700.t: "Auspicio"
  POD_chargen.2700.desc: "Auspicio es el término que designa la fase de la Luna en la que nació un Garou. Cada uno de ellos desempeña un papel específico en la sociedad de los hombres lobo. Los Ragabash son los embaucadores y los abogados del diablo, los Galliard son los narradores de historias, los Ahround son los guerreros, los Theurge son los místicos y, por último, los Philodox son los jueces."
@@ -1247,6 +1294,19 @@
  POD_chargen.2711.option.a: "Lunar"
  POD_chargen.2711.option.b: "Crepúsculo"
  POD_chargen.2711.option.c: "Solar"
+  
+ POD_chargen.2714.t: "Aspectos" #NT!
+ POD_chargen.2714.desc: "Los aspectos son la alineación triática de los Ananasi, una bendición única de su sanción que les dio el Tejedor. El aspecto define las inclinaciones generales y la personalidad de los Ananasi, así como los espíritus con los que encuentran afinidad. Los Tenere son coleccionados y calculadores como corresponde a su conexión con el Tejedor, los Kumoti son vibrantes y coloridos ya que reflejan la energía del Wyld, y los Hatar son seductores y destructivos de acuerdo con su vínculo con el Wyrm del Equilibrio." #NT!
+ POD_chargen.2714.option.a: "Tenere" #NT!
+ POD_chargen.2714.option.b: "Kumoti" #NT!
+ POD_chargen.2714.option.c: "Odio" #NT!
+  
+ POD_chargen.2715.t: "Facciones" #NT!
+ POD_chargen.2715.desc: "Similares en muchos aspectos a los Auspicios de los Fera, las Facciones de los Éntomos reflejan su propósito y papel dentro de su sociedad. Nacidas de sus personalidades y de sus inclinaciones más profundas de autorrealización, sus Facciones dan forma a los dones que dominan con mayor facilidad. Los mirmidones son soldados, exploradores, espías y generales incomparables; los Viskr son excelentes jueces, ocultistas, líderes y sabios; los Wyrsta son magníficos embaucadores, filósofos, zapadores y controlan el caos; y, por último, los Socorristas son sanadores, terapeutas, consejeros y asesores incomparables." #NT!
+ #POD_chargen.2715.option.a: "Esbirro" #NT!
+ #POD_chargen.2715.option.b: "Visor" #NT!
+ #POD_chargen.2715.option.c: "Wyrsta" #NT!
+ #POD_chargen.2715.option.d: "Socorro" #NT!
   
  POD_chargen.2800.t: "Tribu"
  POD_chargen.2800.desc: "Las tribus son la unidad social más grande de los Garou. Los miembros de las tribus suelen estar unidos por linajes, tótems similares y estilos de vida."

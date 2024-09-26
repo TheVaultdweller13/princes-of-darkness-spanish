@@ -35,6 +35,13 @@
  two_years_monthly_tt_current: "$POD_journey_time_remaining$ #V [GetPlayer.MakeScope.ScriptValue('two_years_progress_years_current')|0] $POD_journey_years$, [GetPlayer.MakeScope.ScriptValue('two_years_progress_months_current')|0] $POD_journey_months$#!\n\n[GetPlayer.MakeScope.GetScriptValueDesc('two_years_progress')]"
   
   
+ three_years_monthly_num: "#TOOLTIP:three_years_monthly_tt #V;L [GetPlayer.MakeScope.ScriptValue('three_years_progress')|1]%#!#!" #NT!
+ three_years_monthly_tt: "$POD_journey_time_until_completion$ #V [GetPlayer.MakeScope.ScriptValue('three_years_progress_years')|0] $POD_journey_years$, [GetPlayer.MakeScope.ScriptValue('three_years_progress_months')|0] $POD_journey_months$#!\n\n[GetPlayer.MakeScope.GetScriptValueDesc('three_years_progress')]" #NT!
+  
+ three_years_monthly_num_current: "#TOOLTIP:three_years_monthly_tt_current #V;L [GetPlayer.MakeScope.ScriptValue('three_years_progress')|1]%#!#!" #NT!
+ three_years_monthly_tt_current: "$POD_journey_time_remaining$ #V [GetPlayer.MakeScope.ScriptValue('three_years_progress_years_current')|0] $POD_journey_years$, [GetPlayer.MakeScope.ScriptValue('three_years_progress_months_current')|0] $POD_journey_months$#!\n\n[GetPlayer.MakeScope.GetScriptValueDesc('three_years_progress')]" #NT!
+  
+  
  five_years_monthly_num: "#TOOLTIP:five_years_monthly_tt #V;L [GetPlayer.MakeScope.ScriptValue('five_years_progress')|1]%#!#!"
  five_years_monthly_tt: "$POD_journey_time_until_completion$ #V [GetPlayer.MakeScope.ScriptValue('five_years_progress_years')|0] $POD_journey_years$, [GetPlayer.MakeScope.ScriptValue('five_years_progress_months')|0] $POD_journey_months$#!\n\n[GetPlayer.MakeScope.GetScriptValueDesc('five_years_progress')]"
   
@@ -113,6 +120,48 @@
  golconda_2_monthly_tt_current: "$POD_journey_time_remaining$ #V [GetPlayer.MakeScope.ScriptValue('golconda_2_progress_years_current')|0] $POD_journey_years$, [GetPlayer.MakeScope.ScriptValue('golconda_2_progress_months_current')|0] $POD_journey_months$#!\n\n[GetPlayer.MakeScope.GetScriptValueDesc('golconda_2_progress')]\n\n$POD_journey_progress_golconda_2_gui$"
   
  POD_journey_progress_golconda_2_gui: "#help Para obtener sugerencias sobre cómo aumentar aún más la velocidad de planificación, consulte [golconda_planning_speed|E].#!"
+  
+  
+ siochain_1_monthly_num: "#TOOLTIP:siochain_1_monthly_tt #V;L [GetPlayer.MakeScope.ScriptValue('siochain_1_progress')|1]%#!#!" #NT!
+ siochain_1_monthly_tt: "$POD_journey_time_until_completion$ #V [GetPlayer.MakeScope.ScriptValue('siochain_1_progress_years')|0] $POD_journey_years$, [GetPlayer.MakeScope.ScriptValue('siochain_1_progress_months')|0] $POD_journey_months$#!\n\n[GetPlayer.MakeScope.GetScriptValueDesc('siochain_1_progress')]" #NT!
+  
+ siochain_1_monthly_num_current: "#TOOLTIP:siochain_1_monthly_tt_current #V;L [GetPlayer.MakeScope.ScriptValue('siochain_1_progress')|1]%#!#!" #NT!
+ siochain_1_monthly_tt_current: "$POD_journey_time_remaining$ #V [GetPlayer.MakeScope.ScriptValue('siochain_1_progress_years_current')|0] $POD_journey_years$, [GetPlayer.MakeScope.ScriptValue('siochain_1_progress_months_current')|0] $POD_journey_months$#!\n\n[GetPlayer.MakeScope.GetScriptValueDesc('siochain_1_progress')]" #NT!
+  
+  
+ siochain_2_monthly_num: "#TOOLTIP:siochain_2_monthly_tt #V;L [GetPlayer.MakeScope.ScriptValue('siochain_2_progress')|1]%#!#!" #NT!
+ siochain_2_monthly_tt: "$POD_journey_time_until_completion$ #V [GetPlayer.MakeScope.ScriptValue('siochain_2_progress_years')|0] $POD_journey_years$, [GetPlayer.MakeScope.ScriptValue('siochain_2_progress_months')|0] $POD_journey_months$#!\n\n[GetPlayer.MakeScope.GetScriptValueDesc('siochain_2_progress')]" #NT!
+  
+ siochain_2_monthly_num_current: "#TOOLTIP:siochain_2_monthly_tt_current #V;L [GetPlayer.MakeScope.ScriptValue('siochain_1_progress')|1]%#!#!" #NT!
+ siochain_2_monthly_tt_current: "$POD_journey_time_remaining$ #V [GetPlayer.MakeScope.ScriptValue('siochain_2_progress_years_current')|0] $POD_journey_years$, [GetPlayer.MakeScope.ScriptValue('siochain_2_progress_months_current')|0] $POD_journey_months$#!\n\n[GetPlayer.MakeScope.GetScriptValueDesc('siochain_2_progress')]" #NT!
+  
+  
+ siochain_3_monthly_num: "#TOOLTIP:siochain_3_monthly_tt #V;L [GetPlayer.MakeScope.ScriptValue('siochain_3_progress')|1]%#!#!" #NT!
+ siochain_3_monthly_tt: "$POD_journey_time_until_completion$ #V [GetPlayer.MakeScope.ScriptValue('siochain_3_progress_years')|0] $POD_journey_years$, [GetPlayer.MakeScope.ScriptValue('siochain_3_progress_months')|0] $POD_journey_months$#!\n\n[GetPlayer.MakeScope.GetScriptValueDesc('siochain_3_progress')]" #NT!
+  
+ siochain_3_monthly_num_current: "#TOOLTIP:siochain_3_monthly_tt_current #V;L [GetPlayer.MakeScope.ScriptValue('siochain_3_progress')|1]%#!#!" #NT!
+ siochain_3_monthly_tt_current: "$POD_journey_time_remaining$ #V [GetPlayer.MakeScope.ScriptValue('siochain_3_progress_years_current')|0] $POD_journey_years$, [GetPlayer.MakeScope.ScriptValue('siochain_3_progress_months_current')|0] $POD_journey_months$#!\n\n[GetPlayer.MakeScope.GetScriptValueDesc('siochain_3_progress')]" #NT!
+  
+  
+ ritual_casting_monthly_num: "#TOOLTIP:ritual_casting_monthly_tt #V;L [GetPlayer.MakeScope.ScriptValue('ritual_casting_progress')|1]%#!#!" #NT!
+ ritual_casting_monthly_tt: "$POD_journey_time_until_completion$ #V [GetPlayer.MakeScope.ScriptValue('ritual_casting_progress_years')|0] $POD_journey_years$, [GetPlayer.MakeScope.ScriptValue('ritual_casting_progress_months')|0] $POD_journey_months$#!\n\n[GetPlayer.MakeScope.GetScriptValueDesc('ritual_casting_progress')]" #NT!
+  
+ ritual_casting_monthly_num_current: "#TOOLTIP:ritual_casting_monthly_tt_current #V;L [GetPlayer.MakeScope.ScriptValue('ritual_casting_progress')|1]%#!#!" #NT!
+ ritual_casting_monthly_tt_current: "$POD_journey_time_remaining$ #V [GetPlayer.MakeScope.ScriptValue('ritual_casting_progress_years_current')|0] $POD_journey_years$, [GetPlayer.MakeScope.ScriptValue('ritual_casting_progress_months_current')|0] $POD_journey_months$#!\n\n[GetPlayer.MakeScope.GetScriptValueDesc('ritual_casting_progress')]" #NT!
+  
+  
+ azhi_dahaka_monthly_num: "#TOOLTIP:azhi_dahaka_monthly_tt #V;L [GetPlayer.MakeScope.ScriptValue('azhi_dahaka_progress')|1]%#!#!" #NT!
+ azhi_dahaka_monthly_tt: "$POD_journey_time_until_completion$ #V [GetPlayer.MakeScope.ScriptValue('azhi_dahaka_progress_years')|0] $POD_journey_years$, [GetPlayer.MakeScope.ScriptValue('azhi_dahaka_progress_months')|0] $POD_journey_months$#!\n\n[GetPlayer.MakeScope.GetScriptValueDesc('azhi_dahaka_progress')]" #NT!
+  
+ azhi_dahaka_monthly_num_current: "#TOOLTIP:azhi_dahaka_monthly_tt_current #V;L [GetPlayer.MakeScope.ScriptValue('azhi_dahaka_progress')|1]%#!#!" #NT!
+ azhi_dahaka_monthly_tt_current: "$POD_journey_time_remaining$ #V [GetPlayer.MakeScope.ScriptValue('azhi_dahaka_progress_years_current')|0] $POD_journey_years$, [GetPlayer.MakeScope.ScriptValue('azhi_dahaka_progress_months_current')|0] $POD_journey_months$#!\n\n[GetPlayer.MakeScope.GetScriptValueDesc('azhi_dahaka_progress')]" #NT!
+  
+  
+ hunt_for_sargon_codex_shard_monthly_num: "#TOOLTIP:hunt_for_sargon_codex_shard_monthly_tt #V;L [GetPlayer.MakeScope.ScriptValue('hunt_for_sargon_codex_shard_progress')|1]%#!#!" #NT!
+ hunt_for_sargon_codex_shard_monthly_tt: "$POD_journey_time_until_completion$ #V [GetPlayer.MakeScope.ScriptValue('hunt_for_sargon_codex_shard_progress_years')|0] $POD_journey_years$, [GetPlayer.MakeScope.ScriptValue('hunt_for_sargon_codex_shard_progress_months')|0] $POD_journey_months$#!\n\n[GetPlayer.MakeScope.GetScriptValueDesc('hunt_for_sargon_codex_shard_progress')]" #NT!
+  
+ hunt_for_sargon_codex_shard_monthly_num_current: "#TOOLTIP:hunt_for_sargon_codex_shard_monthly_tt_current #V;L [GetPlayer.MakeScope.ScriptValue('hunt_for_sargon_codex_shard_progress')|1]%#!#!" #NT!
+ hunt_for_sargon_codex_shard_monthly_tt_current: "$POD_journey_time_remaining$ #V [GetPlayer.MakeScope.ScriptValue('hunt_for_sargon_codex_shard_progress_years_current')|0] $POD_journey_years$, [GetPlayer.MakeScope.ScriptValue('hunt_for_sargon_codex_shard_progress_months_current')|0] $POD_journey_months$#!\n\n[GetPlayer.MakeScope.GetScriptValueDesc('hunt_for_sargon_codex_shard_progress')]" #NT!
   
   
   # Text starts here 
@@ -201,6 +250,7 @@
  POD_journey_progress_target_rank_empire: "[PlayerJourneyTarget.GetFirstName] gobierna sobre [empire|E]"
  POD_journey_progress_target_rank_kingdom: "[PlayerJourneyTarget.GetFirstName] gobierna sobre [kingdom|E]"
  POD_journey_progress_target_rank_duchy: "[PlayerJourneyTarget.GetFirstName] gobierna sobre [duchy|E]"
+ POD_journey_progress_target_rank_county: "[PlayerJourneyTarget.GetFirstName] gobierna sobre [county|E]" #NT!
  POD_journey_progress_target_rank_barony: "[PlayerJourneyTarget.GetFirstName] solo gobierna sobre [barony|E]"
  POD_journey_progress_target_rank_unlanded: "[PlayerJourneyTarget.GetFirstName] es [unlanded|E]"
   
@@ -222,10 +272,15 @@
  POD_journey_progress_unity_2: "[GetPlayer.GetDynasty.GetName] tiene #TOOLTIP:DYNASTY_PERK,unity_legacy_2 #L $unity_legacy_2_name$#!#!"
  POD_journey_progress_san_michele_cloisters: "Eres dueño del #TOOLTIP:BUILDING,rome_san_michele_cloisters_03 #L $building_rome_san_michele_cloisters_03$#!#!"
   
+ POD_journey_progress_after_shattering: "Pasó el [shattering|E]" #NT!
+ POD_journey_progress_before_shattering: "El [shattering|E] no ha sucedido" #NT!
+  
+ POD_journey_progress_ambrogino: "Eres [GetPlayer.GetFirstName]" #NT!
   
   ##### Value breakdown formats 
   
  POD_PROGRESS_FORMAT_POSITIVE: "$KEY$: #P +$VALUE|2$#!"
  POD_PROGRESS_FORMAT_NEGATIVE: "$KEY$: #N $VALUE|2$#!"
   
- POD_PROGRESS_FORMAT_PERCENTAGE_POSITIVE: "$KEY$: #P $VALUE|=0%$#!"
+  # only works if the value as a whole is a decimal fraction (e.g. 0.5 shows up as 50%) 
+ #POD_PROGRESS_FORMAT_PERCENTAGE_POSITIVE: "$KEY$: $VALUE|=+0%$" #NT!

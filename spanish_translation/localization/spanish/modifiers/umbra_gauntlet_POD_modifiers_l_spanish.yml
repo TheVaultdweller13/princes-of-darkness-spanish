@@ -46,25 +46,40 @@
  shroud10_modifier_desc: "El sudario es la barrera mística que separa el [underworld|E] del [skinlands|E]. Aquí es inquebrantable.\nCosto para entrar al inframundo: [gold_i]#N +100%#!"
   
  spirit_opinion0_modifier: "Opinión espiritual 0: Furioso"
+ spirit_opinion0_modifier_desc: "Posibilidad de enviar $POD_splat_spirit_plural$ aprendiendo nuevo [charms|E]: #N -20%#!" #NT!
  spirit_opinion1_modifier: "Opinión Espiritual 1: Enojado"
+ spirit_opinion1_modifier_desc: "Posibilidad de enviar $POD_splat_spirit_plural$ aprendiendo nuevo [charms|E]: #N -10%#!" #NT!
  spirit_opinion2_modifier: "Opinión del espíritu 2: molesto"
+ spirit_opinion2_modifier_desc: "Posibilidad de enviar $POD_splat_spirit_plural$ aprendiendo nuevo [charms|E]: #N -5%#!" #NT!
  spirit_opinion3_modifier: "Opinión espiritual 3: calmado"
  spirit_opinion4_modifier: "Opinión Espiritual 4: Feliz"
+ spirit_opinion4_modifier_desc: "Posibilidad de enviar $POD_splat_spirit_plural$ aprendiendo nuevo [charms|E]: #P +30%#!" #NT!
  spirit_opinion5_modifier: "Opinión Espiritual 5: Agradecido"
+ spirit_opinion5_modifier_desc: "Posibilidad de enviar $POD_splat_spirit_plural$ aprendiendo nuevo [charms|E]: #P +80%#!" #NT!
   
  plasmic_opinion0_modifier: "Opinión de Wraith 0: Furioso"
+ plasmic_opinion0_modifier_desc: "Posibilidad de enviar $POD_splat_wraith_plural$ aprendiendo nuevo [Arcanoi|E]: #N -20%#!" #NT!
  plasmic_opinion1_modifier: "Opinión de Wraith 1: Enojado"
+ plasmic_opinion1_modifier_desc: "Posibilidad de enviar $POD_splat_wraith_plural$ aprendiendo nuevo [Arcanoi|E]: #N -10%#!" #NT!
  plasmic_opinion2_modifier: "Opinión Wraith 2: Molesto"
+ plasmic_opinion2_modifier_desc: "Posibilidad de enviar $POD_splat_wraith_plural$ aprendiendo nuevo [Arcanoi|E]: #N -5%#!" #NT!
  plasmic_opinion3_modifier: "Opinión de Wraith 3: Calmada"
  plasmic_opinion4_modifier: "Opinión de Wraith 4: Feliz"
+ plasmic_opinion4_modifier_desc: "Posibilidad de enviar $POD_splat_wraith_plural$ aprendiendo nuevo [Arcanoi|E]: #P +30%#!" #NT!
  plasmic_opinion5_modifier: "Opinión de Wraith 5: Agradecido"
+ plasmic_opinion5_modifier_desc: "Posibilidad de enviar $POD_splat_wraith_plural$ aprendiendo nuevo [Arcanoi|E]: #P +80%#!" #NT!
   
  temporary_dragon_nest_modifier: "Nido de dragón temporal"
   
- NOT_has_wall_trigger_tooltip: "[PROVINCE.GetName] tiene #Bold no#! el modificador de provincia Muro (Guantelete)."
- NOT_has_gauntlet_trigger_tooltip: "[PROVINCE.GetName] tiene #Bold no#! el modificador de provincia Guantelete."
- NOT_has_shroud_trigger_tooltip: "[PROVINCE.GetName] tiene #Bold no#! tiene el modificador de provincia Sudario."
  NOT_wall_too_strong_trigger_tooltip: "Esta ubicación debe tener #Bold no#! el modificador de provincia Muro(Guantelete) en el nivel 10."
+ NOT_wall_too_weak_trigger_tooltip: "Esta ubicación debe #Bold no#! tener el modificador de provincia Muro(Guantelete) en el nivel 0." #NT!
+ NOT_wall_1_trigger_tooltip: "Esta ubicación debe #Bold no#! tener el modificador de provincia Muro(Guantelete) en el nivel 1." #NT!
+ NOT_gauntlet_too_strong_trigger_tooltip: "Esta ubicación debe #Bold no#! tener el modificador de provincia Guantelete en el nivel 10." #NT!
+ NOT_gauntlet_too_weak_trigger_tooltip: "Esta ubicación debe #Bold no #! tener el modificador de provincia Guantelete en el nivel 0." #NT!
+ NOT_gauntlet_1_trigger_tooltip: "Esta ubicación debe #Bold no#! tener el modificador de provincia Guantelete en el nivel 1." #NT!
+ NOT_shroud_too_strong_trigger_tooltip: "Esta ubicación debe #Bold no#! tener el modificador de provincia Shroud en el nivel 10." #NT!
+ NOT_shroud_too_weak_trigger_tooltip: "Esta ubicación debe #Bold no#! tener el modificador de provincia Shroud en el nivel 0." #NT!
+ NOT_shroud_1_trigger_tooltip: "Esta ubicación debe #Bold no#! tener el modificador de provincia Shroud en el nivel 1." #NT!
  NOT_has_spirit_opinion_trigger_tooltip: "Debes tener #Bold no#! el modificador 'Opinión espiritual'."
  NOT_has_plasmic_opinion_trigger_tooltip: "Debes tener #Bold no#! el modificador 'Opinión Espectral'."
  NOT_has_temporary_dragon_nest_modifier: "Esta ubicación debe tener #Bold no#! el modificador de provincia 'Nido de dragón temporal'."

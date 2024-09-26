@@ -12,7 +12,7 @@
  dominate_name: "dominate_visible"
  bloodsorcery_name: "bloodsorcery_visible"
  presence_name: "presence_visible"
- thinblood_alchemy_name: "thinbloodalchemy_visible"
+ thinbloodalchemy_name: "thinbloodalchemy_visible" #NT!
  animalism_name: "animalism_visible"
  protean_name: "protean_visible"
  daimonion_name: "daimonion_visible"
@@ -46,6 +46,27 @@
  obligation_name: "obligation_visible"
  mibasham_name: "mibasham_visible"
  tzuwei_name: "tzuwei_visible"
+ combination_techniques_name: "Técnicas de combinación"
+ yin_techniques_name: "Técnicas Yin"
+ yang_techniques_name: "Técnicas Yang"
+ prayer_eating_name: "Comer mientras se ora"
+ inward_way_name: "Camino interior"
+ tempest_of_inward_focus_name: "Tempestad de enfoque interior"
+ metalgodbody_name: "Metal"
+ woodgodbody_name: "Madera"
+ watergodbody_name: "Agua"
+ firegodbody_name: "Fuego"
+ earthgodbody_name: "Tierra"
+ yinprana_name: "Yin Prana"
+ yangprana_name: "Prana Yang"
+ equilibrium_name: "Equilibrio"
+ tapestry_name: "Tapiz"
+ fengshui_name: "Feng Shui"
+ blackwind_name: "Viento negro"
+ demonshintai_name: "Demon Shintai"
+ ironmountain_name: "Montaña de hierro"
+ kiai_name: "Kiai"
+ hellweaving_name: "Tejido del infierno"
   # Shih 
  i_shen_name: "i_shen_visible"
  mo_kung_name: "mo_kung_visible"
@@ -106,9 +127,34 @@
  displace_name: "displace_visible"
   # Numina 
  truefaith_name: "truefaith_visible"
- psi_name: "psi_visible"
+ animal_psi_name: "animal_psi_visible" #NT!
+ anti_psi_name: "anti_psi_visible" #NT!
+ astral_projection_name: "astral_projection_visible" #NT!
+ biocontrol_name: "biocontrol_visible" #NT!
+ necro_psi_name: "necro_psi_visible" #NT!
+ clairvoyance_name: "clairvoyance_visible" #NT!
+ cyberkinesis_name: "cyberkinesis_visible" #NT!
+ cyberpathy_name: "cyberpathy_visible" #NT!
+ ectoplasmic_generation_name: "ectoplasmic_generation_visible" #NT!
+ empathic_healing_name: "empathic_healing_visible" #NT!
+ psychic_healing_name: "psychic_healing_visible" #NT!
+ precognition_name: "precognition_visible" #NT!
+ psychic_hypnosis_name: "psychic_hypnosis_visible" #NT!
+ psychic_invisibility_name: "psychic_invisibility_visible" #NT!
+ psychic_vampirism_name: "psychic_vampirism_visible" #NT!
+ psychokinesis_name: "psychokinesis_visible" #NT!
+ psychometry_name: "psychometry_visible" #NT!
+ psychoportation_name: "psychoportation_visible" #NT!
+ pyrokinesis_name: "pyrokinesis_visible" #NT!
+ soulstealing_name: "soulstealing_visible" #NT!
+ synergy_name: "synergy_visible" #NT!
+ telepathy_name: "telepathy_visible" #NT!
  sorcery_name: "sorcery_visible"
- theurgy_name: "theurgy_visible"
+ via_geniorum_name: "via_geniorum_visible" #NT!
+ via_ignis_name: "via_ignis_visible" #NT!
+ via_medicamenti_name: "via_medicamenti_visible" #NT!
+ via_necromantiae_name: "via_necromantiae_visible" #NT!
+ via_oraculi_name: "via_oraculi_visible" #NT!
  banshee_name: "banshee_visible"
  haunter_name: "haunter_visible"
  poltergeist_name: "poltergeist_visible"
@@ -155,15 +201,6 @@
  realms_name: "realms_visible"
  demonic_investment_name: "demonic_investment_visible"
  investments_of_soul_name: "investments_of_soul_visible"
-  # Mage 
- forces_name: "forces_visible"
- life_name: "life_visible"
- matter_name: "matter_visible"
- mind_name: "mind_visible"
- entropy_name: "entropy_visible"
- prime_name: "prime_visible"
- time_name: "time_visible"
- correspondence_name: "correspondence_visible"
   # Planet Gift 
  eshtarragifts_name: "eshtarragifts_visible"
  sokhtagifts_name: "sokhtagifts_visible"
@@ -313,3 +350,31 @@
  hou_tan_name: "hou_tan_visible"
  di_tan_name: "di_tan_visible"
  nei_tan_name: "nei_tan_visible"
+  # Charms 
+ charms_name: "charms_visible" #NT!
+  # Blood Magic 
+ blood_magic_alchemy_name: "blood_magic_alchemy_visible" #NT!
+ blood_magic_conjuring_name: "blood_magic_conjuring_visible" #NT!
+ blood_magic_corruption_name: "blood_magic_corruption_visible" #NT!
+ blood_magic_focused_mind_name: "blood_magic_focused_mind_visible" #NT!
+ blood_magic_path_of_mars_name: "blood_magic_path_of_mars_visible" #NT!
+ blood_magic_spirit_manipulation_name: "blood_magic_spirit_manipulation_visible" #NT!
+ blood_magic_mastery_of_the_mortal_shell_name: "blood_magic_mastery_of_the_mortal_shell_visible" #NT!
+ blood_magic_weather_control_name: "blood_magic_weather_control_visible" #NT!
+ blood_magic_rego_elementum_name: "blood_magic_rego_elementum_visible" #NT!
+ blood_magic_path_of_blood_name: "blood_magic_path_of_blood_visible" #NT!
+ blood_magic_neptunes_might_name: "blood_magic_neptunes_might_visible" #NT!
+ blood_magic_blood_nectar_name: "blood_magic_blood_nectar_visible" #NT!
+ blood_magic_path_of_duat_name: "blood_magic_path_of_duat_visible" #NT!
+ blood_magic_immanence_of_set_name: "blood_magic_immanence_of_set_visible" #NT!
+ blood_magic_dry_nile_name: "blood_magic_dry_nile_visible" #NT!
+ blood_magic_snake_inside_name: "blood_magic_snake_inside_visible" #NT!
+ blood_magic_transylvanian_kraina_name: "blood_magic_transylvanian_kraina_visible" #NT!
+ blood_magic_black_sea_kraina_name: "blood_magic_black_sea_kraina_visible" #NT!
+ blood_magic_bialowieza_kraina_name: "blood_magic_bialowieza_kraina_visible" #NT!
+ blood_magic_kraina_of_the_well_name: "blood_magic_kraina_of_the_well_visible" #NT!
+ blood_magic_kraina_of_enoch_name: "blood_magic_kraina_of_enoch_visible" #NT!
+ blood_magic_genius_loci_name: "blood_magic_genius_loci_visible" #NT!
+ blood_magic_awakening_of_the_steel_name: "blood_magic_awakening_of_the_steel_visible" #NT!
+ blood_magic_covenant_of_nergal_name: "blood_magic_covenant_of_nergal_visible" #NT!
+ blood_magic_abyssal_mysticism_name: "blood_magic_abyssal_mysticism_visible" #NT!

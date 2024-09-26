@@ -25,7 +25,7 @@
  POD_demonic_possess_host_leech.tt: "Tu anfitrión te "proporcionará" algunas de sus fortalezas después de la posesión. (Dependiendo de la suma de [recipient.GetHerHis] [skills|E])"
  POD_demonic_possess_maintenance.tt: "El acto de posesión condenará a [recipient.GetFirstName] a una muerte inevitable y espantosa. ([actor.MakeScope.ScriptValue('host_kill_chance')|V0]% de probabilidad al inicio del año, dependiendo de tu Tormento)"
  POD_demonic_possess_servitor.tt: "Poseer a tus sirvientes no provocará su muerte, pero tampoco obtendrás ninguna bonificación estadística de ellos."
- become_earhbound: "Te convertirás en un ser terrenal y nunca más podrás volver a caer."
+ become_earthbound: "El personaje quedará ligado a la tierra y nunca más podrá caer." #NT!
   
  POD_abandon_vessel_interaction: "Abandonar el buque"
  POD_abandon_vessel_interaction_desc: "Abandona tu recipiente actual para entrar en un estado espiritual, con el riesgo de terminar en el [abyss|E] en cualquier momento."
@@ -123,8 +123,8 @@
   
  EMINENCE_LEVEL_DESC: "Tu nivel de Eminencia te otorga la siguiente bonificación: $VALUE|+0=-+$"
   
- POD_add_potential_vessel_interaction: "Agregar un anfitrión potencial"
- POD_add_potential_vessel_interaction_desc: "Agrega [recipient.GetFirstName] a tu lista de posibles anfitriones. Si tu anfitrión actual muere, [recipient.GetSheHe] ocupará su lugar."
+ POD_excluded_from_possession_interaction: "Excluir de la posesión" #NT!
+ POD_excluded_from_possession_interaction_desc: "Excluye a [recipient.GetFirstName] de tus anfitriones potenciales." #NT!
   
  POD_demonic_influence_inversion_interaction: "Invertir la influencia demoníaca"
  POD_demonic_influence_inversion_interaction_desc: "Invierte tu efecto de influencia en el condado seleccionado."
@@ -317,6 +317,7 @@
  POD_lore_heal_interaction_desc: "Usa el poder de Lore para curar [recipient.GetFirstNamePossessive] herida."
  POD_lore_auto_resurrection_interaction: "Protéjase contra la muerte"
  POD_lore_auto_resurrection_interaction_desc: "Recuperar automáticamente a una persona que ha sido asesinada recientemente, con un costo enorme de piedad."
+ POD_lore_auto_resurrection_interaction_options_heading: "¿A qué personas debo evitar que mueran de muerte accidental?" #NT!
   
  POD_call_sin_dragon_to_war_interaction: "Llama al dragón del pecado"
  POD_call_sin_dragon_to_war_interaction_desc: "Llama a tu Dragón del Pecado a la guerra."
@@ -328,3 +329,119 @@
  POD_touch_from_afar_interaction: "Tocar desde lejos"
  POD_touch_from_afar_interaction_desc: "Usa tu evocación para acelerar tu plan en [recipient.GetFirstName]."
  POD_touch_from_afar_interaction_tt: "Estás conspirando contra [recipient.GetFirstName]."
+  
+ POD_need_0_or_10_torment_text: "Tienes #bold no#! #V 0#! o #V 10#! Nivel de pista de tormento" #NT!
+  
+ POD_unleash_cyclone_interaction: "Desata el ciclón" #NT!
+ POD_unleash_cyclone_interaction_desc: "Desatar un ciclón que causará estragos en un área." #NT!
+ POD_unleash_cyclone_interaction.tt: "Desatarás un ciclón sobre el reino [recipient.GetFirstNamePossessive]" #NT!
+ POD_unleash_cyclone_interaction.duel.success: "Has provocado el ciclón con éxito." #NT!
+ POD_unleash_cyclone_interaction.duel.tt.attacker_wins: "El reino [recipient.GetFirstNamePossessive] se sumerge en un ciclón que causa estragos dondequiera que pasa." #NT!
+ POD_unleash_cyclone_interaction.duel.failure: "No logras provocar la tormenta" #NT!
+ POD_unleash_cyclone_interaction.duel.tt.attacker_lost: "Tu fallas" #NT!
+ POD_unleash_cyclone_interaction_actor_toast: "Has lanzado con éxito un ciclón sobre el reino [recipient.GetFirstNamePossessive]" #NT!
+ POD_unleash_cyclone_interaction_recipient_toast: "Un ciclón fue liberado en tu capital por [actor.GetFirstName]" #NT!
+ POD_unleash_cyclone_interaction_failed_toast: "No podrías lanzar un Ciclón sobre el reino [recipient.GetFirstNamePossessive]" #NT!
+ cyclone_modifier: "Dañado por un ciclón" #NT!
+ cyclone_modifier_desc: "Esta zona está dañada por una fuerte tormenta de viento." #NT!
+  
+ POD_unleash_earthquake_interaction: "Desatar terremoto" #NT!
+ POD_unleash_earthquake_interaction_desc: "Desatar un terremoto que causará estragos en un área." #NT!
+ POD_unleash_earthquake_interaction.tt: "Desatarás un terremoto en el reino [recipient.GetFirstNamePossessive]" #NT!
+ POD_unleash_earthquake_interaction.duel.success: "Provocaste el terremoto con éxito" #NT!
+ POD_unleash_earthquake_interaction.duel.tt.attacker_wins: "El reino [recipient.GetFirstNamePossessive] se sumerge en un terremoto que causa estragos dondequiera que pasa." #NT!
+ POD_unleash_earthquake_interaction.duel.failure: "No logras provocar el terremoto" #NT!
+ POD_unleash_earthquake_interaction.duel.tt.attacker_lost: "Tu fallas" #NT!
+ POD_unleash_earthquake_interaction_actor_toast: "Has lanzado con éxito un terremoto en el reino [recipient.GetFirstNamePossessive]" #NT!
+ POD_unleash_earthquake_interaction_recipient_toast: "Un terremoto fue desatado en tu capital por [actor.GetFirstName]" #NT!
+ POD_unleash_earthquake_interaction_failed_toast: "No podrías lanzar un terremoto sobre el reino [recipient.GetFirstNamePossessive]" #NT!
+  
+ demon_demand_tt: "Puede que recibas una demanda de tu maestro demonio a principios de año. Una demanda inacabada te causará estrés cada #V 3#! meses." #NT!
+ POD_demon_demand_unfinished: "Demanda inacabada" #NT!
+ POD_demon_demand_unfinished.tt: "Ganas estrés debido a una demanda inacabada de tu maestro demonio." #NT!
+  
+ POD_alter_path_interaction: "Alterar camino" #NT!
+ POD_alter_path_interaction_desc: "Altera el destino del reino objetivo." #NT!
+ POD_alter_path_interaction_options_heading: "¿Qué parámetro debo modificar?" #NT!
+ POD_alter_path_interaction.tt.danger: "Desatarás [GetModifier('alter_path_danger_modifier').GetNameWithTooltip] [modifier|E] sobre el reino objetivo" #NT!
+ POD_alter_path_interaction.tt.safe: "Desatarás [GetModifier('alter_path_safe_modifier').GetNameWithTooltip] [modifier|E] sobre el reino objetivo" #NT!
+ POD_alter_path_interaction.tt.attacker: "Desatarás [GetModifier('alter_path_attacker_modifier').GetNameWithTooltip] [modifier|E] sobre el reino objetivo" #NT!
+ POD_alter_path_interaction.tt.defender: "Desatarás [GetModifier('alter_path_defender_modifier').GetNameWithTooltip] [modifier|E] sobre el reino objetivo" #NT!
+ POD_alter_path_interaction.tt.supply: "Desatarás [GetModifier('alter_path_supply_modifier').GetNameWithTooltip] [modifier|E] sobre el reino objetivo" #NT!
+ POD_alter_path_interaction.tt.no_supply: "Desatarás [GetModifier('alter_path_no_supply_modifier').GetNameWithTooltip] [modifier|E] sobre el reino objetivo" #NT!
+  
+ POD_call_the_unnamable_to_war_interaction: "Llamar al forastero" #NT!
+ POD_call_the_unnamable_to_war_interaction_desc: "Llamado al forastero a la guerra." #NT!
+ POD_call_the_unnamable_to_war_interaction_tt: "Ya has llamado a Outsider a [GetPlayer.MakeScope.GetVariable('outsider_summon').War.GetName]." #NT!
+  
+ POD_twist_time_decision_interaction: "Tiempo de giro #Weak (Enfriamiento de decisión)#!" #NT!
+ POD_twist_time_decision_interaction_desc: "Eliminar el tiempo de recuperación de decisiones." #NT!
+ POD_twist_time_scheme_cooldown_interaction: "Tiempo de giro #Weak (Enfriamiento del plan)#!" #NT!
+ POD_twist_time_scheme_cooldown_interaction_desc: "Eliminar el tiempo de recuperación del plan." #NT!
+ POD_twist_time_scheme_progress_interaction: "Twist Time #Weak (Progreso del esquema)#!" #NT!
+ POD_twist_time_scheme_progress_interaction_desc: "Acelerar el progreso del plan." #NT!
+  
+ POD_teleport_interaction: "Teletransportarse" #NT!
+ POD_teleport_interaction_desc: "Teletransportate entre dos portales similares a la ubicación [recipient.GetFirstNamePossessive], o a tu próximo destino cuando [traveling|E]." #NT!
+ POD_co_locate_interaction: "Co-ubicación" #NT!
+ POD_co_locate_interaction_desc: "Conecta dos portales similares para hacer que un ejército elegido viaje a la ubicación [recipient.GetFirstNamePossessive]." #NT!
+ actor_secondary_POD_co_locate_interaction: "Comandante" #NT!
+ POD_doorway_into_darkness_interaction: "Puerta a la oscuridad" #NT!
+ POD_doorway_into_darkness_interaction_desc: "Abre un portal al vacío entre dimensiones para desterrar a todos los enemigos de guerra a la ubicación [recipient.GetFirstNamePossessive]." #NT!
+  
+ POD_obsession_artifact_interaction: "Obsesión #Weak (Artefacto)#!" #NT!
+ POD_obsession_artifact_interaction_desc: "Hacer que el artefacto objetivo sea reclamado por el gobernante vecino." #NT!
+ POD_obsession_title_interaction: "Obsesión #Weak (Título)#!" #NT!
+ POD_obsession_title_interaction_desc: "Hacer que el título objetivo sea reclamado por un gobernante vecino y lanzar una guerra por él." #NT!
+ POD_lore_inspire_interaction: "Inspirar" #NT!
+ POD_lore_inspire_no_dlc_interaction: "Inspirar" #NT!
+ POD_lore_inspire_intellect_interaction: "Inspirar #Weak (Intelecto)#!" #NT!
+ POD_lore_inspire_intellect_interaction_desc: "Haz una cuchilla [recipient.GetFirstName]." #NT!
+  
+ POD_lore_command_the_storm_interaction: "Comanda la tormenta" #NT!
+ POD_lore_invoke_the_storm_interaction: "Invocar la tormenta" #NT!
+  
+ POD_summon_animals_interaction: "Invocar animales" #NT!
+ POD_summon_animals_interaction_desc: "Haz de un animal tu mascota." #NT!
+ POD_summon_animals_interaction_options_heading: "¿Qué animal debo acariciar?" #NT!
+  
+ POD_restore_flesh_interaction: "Restaurar la carne" #NT!
+ POD_restore_flesh_interaction_desc: "Usa el poder del Lore para curar [recipient.GetFirstNamePossessive] heridas." #NT!
+ POD_restore_flesh_interaction_options_heading: "¿Qué debo invocar para que Lore me sane?" #NT!
+  
+ POD_extinguish_life_interaction: "Extinguir la vida" #NT!
+ POD_extinguish_life_interaction_desc: "Usa Lore para matar a todos los mortales en el reino [recipient.GetFirstNamePossessive]." #NT!
+ POD_unlife_interaction: "Sin vida" #NT!
+ POD_unlife_interaction_desc: "Levanta cadáveres como zombis sin mente para hacer la oferta [recipient.GetFirstName]." #NT!
+  
+ POD_restore_the_dead_interaction: "Restaurar a los muertos" #NT!
+ POD_restore_the_dead_interaction_desc: "Convierte [recipient.GetFirstName] en [GetTrait('mortal').GetName( GetPlayer )]." #NT!
+  
+ POD_demand_lore_teaching_interaction: "Aprende la tradición de la casa de un demonio atado" #NT!
+ POD_demand_lore_teaching_interaction_desc: "Usa tu conocimiento del Nombre Verdadero de un demonio para forzar a [recipient.GetHerHim] a compartir con [recipient.GetHerHis] el conocimiento de las evocaciones." #NT!
+ already_knows_this_lore: "¡Ya conoces esta historia!" #NT!
+ go_on_a_journey_to_learn_this_lore: "¡Comenzarás un [journey|E] para aprender este conocimiento!" #NT!
+ POD_demand_lore_teaching_celestial_lore: "Saberes de lo Celestial" #NT!
+ POD_demand_lore_teaching_flame_lore: "Saber de la llama" #NT!
+ POD_demand_lore_teaching_radiance_lore: "Saber de la Radiancia" #NT!
+ POD_demand_lore_teaching_awakening_lore: "La tradición del despertar" #NT!
+ POD_demand_lore_teaching_firmament_lore: "Saber del Firmamento" #NT!
+ POD_demand_lore_teaching_wild_lore: "Saberes de lo salvaje" #NT!
+ POD_demand_lore_teaching_earth_lore: "Saber de la Tierra" #NT!
+ POD_demand_lore_teaching_paths_lore: "Saber de los caminos" #NT!
+ POD_demand_lore_teaching_forge_lore: "Saber de la forja" #NT!
+ POD_demand_lore_teaching_light_lore: "Saber de la luz" #NT!
+ POD_demand_lore_teaching_patterns_lore: "La tradición de Petterns" #NT!
+ POD_demand_lore_teaching_portals_lore: "Saberes de los portales" #NT!
+ POD_demand_lore_teaching_longing_lore: "Sabiduría del anhelo" #NT!
+ POD_demand_lore_teaching_storms_lore: "Sabiduría de las tormentas" #NT!
+ POD_demand_lore_teaching_transfiguration_lore: "Saber de la Transfiguración" #NT!
+ POD_demand_lore_teaching_beast_lore: "Saber de la Bestia" #NT!
+ POD_demand_lore_teaching_flesh_lore: "Saber de la carne" #NT!
+ POD_demand_lore_teaching_winds_lore: "Sabiduría del viento" #NT!
+ POD_demand_lore_teaching_death_lore: "La tradición de la muerte" #NT!
+ POD_demand_lore_teaching_spirit_lore: "Saber del espíritu" #NT!
+ POD_demand_lore_teaching_realms_lore: "Saber de los reinos" #NT!
+  
+ POD_family_reunion: "Reunión familiar celestial" #NT!
+ POD_family_reunion_desc: "Es hora de finalmente tener esta 'Reunión Familiar'." #NT!

@@ -1,8 +1,13 @@
 ﻿l_spanish:
   
  POD_mummy_resurrection.100.t: "Juicio"
+ POD_mummy_resurrection.100.t2: "Resurrección" #NT!
  POD_mummy_resurrection.100.desc: "Te han asesinado, ahora te encuentras en el [underworld|E], y deberás emitir un juicio para demostrar que vale la pena resucitar."
+ POD_mummy_resurrection.100.desc2: "Te han asesinado, ahora te encuentras en el [underworld|E], pero gracias a la creación de tu propio [dark_kingdom|E], tu resurrección es mucho más fácil y rápida." #NT!
  POD_mummy_resurrection.100.a: "Pesa mis pecados."
+ POD_mummy_resurrection.100.b: "Vamos a casa." #NT!
+ POD_mummy_resurrection.100.c: "Yo soy el juez." #NT!
+ empower_ba_perk_resurrection: "Gracias a [GetPerk('empower_ba_perk').GetName(GetPlayer)], puedes regresar instantáneamente a [earth|E]" #NT!
   
  POD_mummy_resurrection.101.t: "Resucitando"
  POD_mummy_resurrection.101.desc: "Incluso después de dictar sentencia, todavía necesitas algo de tiempo para recuperar tu cuerpo y estar preparado para renacer. Aun así, puedes usar algunos artefactos para acortar el tiempo necesario para resucitar."
@@ -52,68 +57,16 @@
   
  podmummy.1.t: "Artes inmortales"
  podmummy.1.desc: "En un lugar apartado, tranquilo y con los instrumentos necesarios a mano, estás listo para practicar los senderos artesanales de Hekau. ¿Qué es lo que quieres hacer?"
- podmummy.1.a: "Prepara una poción."
- podmummy.1.a.tt: "La alquimia se originó en Egipto y los Renacidos tienen acceso a un rico fondo de experiencias de primera mano gracias a su tem-akh. Los Khri-Habi han demostrado ser los más adeptos en estas artes de Hekau y las enseñan voluntariamente a sus hermanos."
  podmummy.1.b: "Fabrica un amuleto."
  podmummy.1.b.tt: "Fabricación de diversos objetos mágicos pequeños que protegen o mejoran a los vivos y a los muertos. Los amuletos pueden adoptar cualquier forma, desde joyas hasta fichas finamente elaboradas o trozos de papiro con inscripciones de hechizos de protección. Incluso los símbolos pintados cuidadosamente sobre el cuerpo pueden proporcionar poder."
  podmummy.1.c: "Moldear una efigie."
  podmummy.1.c.tt: "Los hechizos y rituales con efigies se basan en ideales de magia simpática y en la fabricación de objetos espirituales. Dichos objetos pueden servir como reliquias para el alma en el más allá o como artefactos poderosos en el mundo material. Se puede otorgar poderes a una imagen o modelo para que su destino afecte a lo que representa."
   
- alchemy_preparaion_head: "Preparaciones alquímicas:"
- podmummy.1000.t: "$alchemy_preparaion_head$ Recopilar material"
- podmummy.1000.desc: "¿Qué materiales has reunido para utilizar?"
  podmummy.1000.a: "Materiales comunes"
  podmummy.1000.b: "Materiales poco comunes"
  podmummy.1000.c: "Materiales raros"
  podmummy.1000.d: "Materiales exóticos"
  podmummy.1000.e: "Materiales únicos"
-  
- podmummy.1010.t: "$alchemy_preparaion_head$ Identificación"
- podmummy.1010.desc: "El conocimiento es poder. Comprender específicamente lo que compone cualquier objeto, criatura o sustancia le otorga al alquimista un poder potencial sobre él. Los alquimistas toman conciencia de las propiedades inherentes de las sustancias que los simples químicos nunca descubren."
- podmummy.1010.a: "Utilice un poder para identificar"
- podmummy.1010.b: "Utilice únicamente el conocimiento"
- podmummy.1010.critical_success: "Éxito crítico"
- podmummy.1010.critical_success_result: "Tu preparación gana doble efectividad."
- podmummy.1010.success: "Éxito"
- podmummy.1010.success_result: "Su preparación mantiene la eficacia."
- podmummy.1010.fail: "Fallar"
- podmummy.1010.fail_result: "Tu preparación pierde algo de efectividad."
- podmummy.1010.critical_fail: "Fallo crítico: los materiales pierden todo efecto."
- podmummy.1010.critical_fail_result: "Tu preparación pierde toda efectividad."
-  
- podmummy.1110.t: "$alchemy_preparaion_head$ Transmutación"
- podmummy.1110.desc: "Muchos procesos alquímicos buscan simplemente transformar una sustancia en otra, como la conocida búsqueda de crear oro a partir de materiales inferiores. El resultado puede ser una forma purificada de la sustancia original, una sustancia completamente nueva o una extraña mezcla de los componentes de la mezcla."
- podmummy.1110.a: "Utilice el poder para transmutar"
- podmummy.1110.b: "Utilice el poder de la estasis"
- podmummy.1110.success: "Éxito"
- podmummy.1110.success_result: "Tu preparación gana efectividad aleatoria dependiendo de tu nivel de Quiddity."
- podmummy.1110.fail: "Fallar"
- podmummy.1110.fail_result: "Tu preparación pierde efectividad aleatoriamente dependiendo de tu nivel de Quiddity."
-  
- podmummy.1210.t: "$alchemy_preparaion_head$ Catalizador"
- podmummy.1210.desc: "Muchas preparaciones alquímicas tienen como objetivo principal la capacidad de provocar cambios en otras sustancias o formas. En el punto más alto de su maestría, el alquimista puede incluso transformar su propio cuerpo en un catalizador capaz de provocar cambios en el mundo que lo rodea."
- podmummy.1210.a: "¡Lo logré! #weak (Efectividad [ROOT.Var('alchemy_craft_outcome').GetValue|0])#!"
-  
- podmummy.1999.t: "$alchemy_preparaion_head$ Resultado"
- podmummy.1999.desc_super_fail: "¡Explosión! Estás herido."
- podmummy.1999.desc_fail: "Creaste un lote incorrecto."
- podmummy.1999.desc_success_opening: "Después de meses de planificación, tu preparación ha tenido éxito, ahora tienes:"
- podmummy.1999.desc_trash: "Ranura vacía"
- podmummy.1999.desc_comma: "None"
- podmummy.1999.desc_slot_1: "[ROOT.Char.Custom( 'GetAlchemyProductType1' )]"
- podmummy.1999.desc_slot_2: "[ROOT.Char.Custom( 'GetAlchemyProductType2' )]"
- podmummy.1999.desc_slot_3: "[ROOT.Char.Custom( 'GetAlchemyProductType3' )]"
- podmummy.1999.desc_slot_4: "[ROOT.Char.Custom( 'GetAlchemyProductType4' )]"
- podmummy.1999.desc_slot_5: "[ROOT.Char.Custom( 'GetAlchemyProductType5' )]"
- podmummy.1999.desc_slot_6: "[ROOT.Char.Custom( 'GetAlchemyProductType6' )]"
- podmummy.1999.desc_slot_7: "[ROOT.Char.Custom( 'GetAlchemyProductType7' )]"
- podmummy.1999.desc_slot_8: "[ROOT.Char.Custom( 'GetAlchemyProductType8' )]"
- podmummy.1999.desc_slot_9: "[ROOT.Char.Custom( 'GetAlchemyProductType9' )]"
- podmummy.1999.desc_slot_10: "[ROOT.Char.Custom( 'GetAlchemyProductType10' )]"
- podmummy.1999.desc_success_ending: "en sus ranuras de productos alquímicos."
- podmummy.1999.a: "¡Ahhh!"
- podmummy.1999.b: "No necesito esto..."
- podmummy.1999.c: "Que así sea."
   
  amulet_creation_head: "Creación de amuletos:"
  podmummy.2000.t: "$amulet_creation_head$ Recopilar material"

@@ -26,6 +26,8 @@
  thrall_row_header: "Esclavo #weak ([GetDataModelSize(CharacterWindow.GetRelationsOfType( GetRelation( 'demonic_thrall' ) ))]/[CharacterWindow.GetCharacter.MakeScope.ScriptValue('max_thrall_cap')|0])#!"
  bound_demons_row_header: "Demonios atados #weak ([GetDataModelSize(CharacterWindow.GetRelationsOfType( GetRelation( 'bound_demon' ) ))])#!"
  possessed_targets_row_header: "Cuerpo poseído #weak ([GetDataModelSize(CharacterWindow.GetRelationsOfType( GetRelation( 'possessed_target' ) ))])#!"
+ dominate_targets_row_header: "Domina las marionetas #weak ([GetDataModelSize(CharacterWindow.GetRelationsOfType( GetRelation( 'dominate_target' ) ))])#!" #NT!
+ fascinate_targets_row_header: "Marionetas Fascinadoras #weak ([GetDataModelSize(CharacterWindow.GetRelationsOfType( GetRelation( 'fascinate_target' ) ))])#!" #NT!
  stolen_hearts_row_header: "Corazones robados #weak ([GetDataModelSize(CharacterWindow.GetRelationsOfType( GetRelation( 'heart_of_darkness_heartless' ) ))])#!"
  effigies_row_header: "Efigies #weak ([GetDataModelSize(CharacterWindow.GetRelationsOfType( GetRelation( 'effigy_character' ) ))])#!"
  animantis_row_header: "Animantis #weak ([GetDataModelSize(CharacterWindow.GetRelationsOfType( GetRelation( 'animantis_character' ) ))])#!"
@@ -38,6 +40,8 @@
  separated_khaibit_row_header: "Khaibit separado"
  separated_shadow_row_header: "Sombra"
  unspeakable_servitor_row_header: "Servidor inefable"
+ divided_version_row_header: "Versión dividida" #NT!
+ spirit_companions_row_header: "Compañero espiritual #weak ([GetDataModelSize(CharacterWindow.GetRelationsOfType( GetRelation( 'spirit_companion' ) ))])#!" #NT!
   
  ghouls_row_header_expanded: "Ghouls #weak ([GetDataModelSize(CharacterWindow.GetRelationsOfType( GetRelation( 'ghoul_thrall' ) ))])#!"
  herd_row_header_expanded: "Ganado #weak ([GetDataModelSize(CharacterWindow.GetRelationsOfType( GetRelation( 'herd_member' ) ))])#!"

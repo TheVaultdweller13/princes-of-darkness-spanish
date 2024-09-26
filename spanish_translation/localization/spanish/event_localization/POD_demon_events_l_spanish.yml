@@ -18,12 +18,11 @@
  POD_demon_maintenance.11.option.d: "Estoy contenido dentro de un libro."
  POD_demon_maintenance.11.option.e: "Estoy contenido dentro de un mueble."
  POD_demon_maintenance.11.option.f: "Estoy contenido dentro de una baratija."
- artifact_reliquarie_name: "Relicario"
- artifact_reliquarie_description: "Al tener [owner.GetTitledFirstNamePossessive] alma en él, este [reliquarie|E] ha adquirido algunas propiedades de [GetTrait('demon').GetName( GetNullCharacter )]."
- artifact_new_reliquarie_name: "Demoniaco [this_artifact.GetNameNoTooltip]"
- artifact_new_reliquarie_desc: "[this_artifact.GetDesc]\n\n$artifact_reliquarie_description$"
- artifact_old_reliquarie_desc: "[this_artifact.GetDesc]\n\n#X [owner.GetTitledFirstName] ha abandonado esto [reliquarie|E].#!"
- reliquarie_destroyed_notification: "Relicario destruido"
+  
+ POD_demon_maintenance.15.t: "¿Continuar buscando nuevos anfitriones?" #NT!
+ POD_demon_maintenance.15.desc: "El uso de huéspedes humanos te permite viajar y disfrutar de actividades, pero tiene el inconveniente de que los huéspedes mueren rápidamente, como te está pasando ahora. ¿Deberías seguir buscando huéspedes humanos en el futuro? Si te vincularas a un objeto, eliminarías tanto las debilidades como las fortalezas del método de huésped humano que utilizas actualmente." #NT!
+ POD_demon_maintenance.15.option.a: "Seguiré cambiando." #NT!
+ POD_demon_maintenance.15.option.b: "Estoy cansado de la vida humana." #NT!
   
  POD_demon_maintenance.20.t: "El próximo anfitrión"
  POD_demon_maintenance.20.desc: "La única alternativa a habitar un relicario de un ángel caído es poseer un anfitrión humano; y hasta hace poco, ésta era una alternativa muy pobre. Los demonios pueden poseer a los humanos por un tiempo, pero no permanentemente, porque el acto de posesión condena al mortal a una muerte inevitable y espantosa en poco tiempo. El Ritual del alma dividida es una nueva posibilidad que hace que el proceso sea un poco más fácil.\n#X En términos de juego, eres verdaderamente inmortal, pero siempre debes tener un anfitrión o verte obligado a regresar a la Prisión Abisal. Puede elegir su próximo host usted mismo a través de Agregar host potencial [character_interaction|E], esto también le permitirá "extraer" algunos de los atributos del host. Si no tienes un anfitrión durante un tiempo después de que el actual muera, se te presentará un cultista aleatorio para usarlo como anfitrión de "emergencia" (sin pérdida de alma en ese caso). Como habrás adivinado, los personajes anfitriones son importantes para tu juego y puedes encontrarlos en la pestaña de relaciones de los Minions. ¡vigílalos! #!"
@@ -141,5 +140,41 @@
  POD_demon_flavor.5.t: "Recuerdos: El infierno en la Tierra"
  POD_demon_flavor.5.desc: "Fuiste uno de los pocos afortunados que terminaron siendo convocados para salir de la Prisión Abisal, lo que te permitió escapar al mundo mortal después de milenios de tormento con tus compañeros rebeldes. El mundo había cambiado mucho desde tu encarcelamiento. La guerra y la desesperación están en todas partes, las enfermedades corren desenfrenadas y el paraíso que era el Edén parece un mito en este momento. La humanidad todavía adora a Dios, pero en múltiples formas y lucha por cuál forma es mejor.\nEs posible que realmente haya desviado su mirada de la Tierra, tal vez debido a la rebelión de Lucifer o los fracasos de la humanidad. En cualquier caso, ¿cuál fue tu primera reacción al ver este nuevo mundo por primera vez?"
  POD_demon_flavor.5.a: "¡Hay que limpiarlo!"
+ demonic_objective_final_war_unlock: "Desbloquear #s $final_war_objective_decision$ Objetivo#!" #NT!
  POD_demon_flavor.5.b: "¡Tantos adoradores potenciales!"
+ demonic_objective_overthrow_unlock: "Desbloquear #s $overthrow_heaven_objective_decision$ Objetivo#!" #NT!
  POD_demon_flavor.5.c: "Tal vez, en algún lugar, una débil esperanza de redención."
+ chance_of_redemption_unlock: "Desbloquear #s $demon_redemption_objective_decision$ Objetivo#!" #NT!
+ POD_demon_flavor.5.d: "Debo encontrar respuestas a la pregunta divina." #NT!
+ demonic_objective_knowledge_unlock: "Desbloquear #s $demonic_knowledge_objective_decsion$ Objetivo#!" #NT!
+  
+  # demon demand 
+  
+ POD_demon_demand.101.t: "Demanda de [demon.GetFirstName]" #NT!
+ POD_demon_demand.101.desc: "El infernalismo es un arma de doble filo. Si bien tu amo te otorga poderes incalculables, también te pide mucho. Para que vuestra relación siga siendo mutuamente beneficiosa y no enfade a tu poderoso patrón, tendrás que acceder más pronto que tarde. Esta vez, tu impío socio te pidió que le ofrecieras control directo sobre parte de tu territorio." #NT!
+ POD_demon_demand.100.a: "Sí, mi señor." #NT!
+ POD_demon_demand.100.a.tt: "Una nueva decisión ya está disponible." #NT!
+ POD_demon_demand.100.b: "¿Puedo ofrecerte oro en su lugar?" #NT!
+ POD_demon_demand.100.c: "¡Esto es pedir demasiado!" #NT!
+  
+ POD_demon_demand.102.t: "Demanda de [demon.GetFirstName]" #NT!
+ POD_demon_demand.102.desc: "El infernalismo es un arma de doble filo. Si bien tu amo te otorga poderes incalculables, también te pide mucho. Para que vuestra relación siga siendo mutuamente beneficiosa y no enfade a tu poderoso patrón, tendrás que obedecer más pronto que tarde. Esta vez, tu compañero impío quiere que se haga un sacrificio directo en su nombre para empoderarlo. [councillor.GetFirstName] es la pobre alma marcada." #NT!
+ POD_demon_demand.102.a: "¿Qué tal si en lugar de eso sacrificamos algunos mortales?" #NT!
+  
+ POD_demon_demand.103.t: "Demanda de [demon.GetFirstName]" #NT!
+ POD_demon_demand.103.desc: "El infernalismo es un arma de doble filo. Si bien tu amo te otorga poderes incalculables, también te exige mucho. Para que vuestra relación siga siendo mutuamente beneficiosa y no enfade a tu poderoso patrón, tendrás que obedecer más pronto que tarde.\nLos individuos puros de corazón son anatema para los demonios, una de las pocas debilidades que realmente tienen. Tu compañero impío te ordenó que te deshicieras de uno de ellos." #NT!
+  
+ POD_demon_demand.104.t: "Demanda de [demon.GetFirstName]" #NT!
+ POD_demon_demand.104.desc: "El infernalismo es un arma de doble filo. Si bien tu maestro te otorga poderes incalculables, también te exige mucho. Para que vuestra relación siga siendo mutuamente beneficiosa y no enfade a tu poderoso patrón, tendrás que cumplir lo antes posible. Los demonios pueden manifestarse principalmente en este lugar al poseer un poderoso artefacto mágico. Se te ha encomendado que le des [this_artifact.GetNameNoTooltip] a [demon.GetFirstName] para que lo uses en el futuro." #NT!
+  
+ POD_demon_demand.105.t: "Demanda de [demon.GetFirstName]" #NT!
+ POD_demon_demand.105.desc: "El infernalismo es un arma de doble filo. Si bien tu maestro te otorga poderes incalculables, también te exige mucho. Para que vuestra relación siga siendo mutuamente beneficiosa y no enfade a tu poderoso patrón, tendrás que obedecer más pronto que tarde. Los demonios son criaturas celosas. Como prosperan gracias a la fe de los mortales, otros ángeles caídos son vistos como competidores a los que hay que frustrar a cada paso. Se te ha encomendado la tarea de desterrar a uno de esos demonios rivales." #NT!
+  
+ POD_demon_demand.106.t: "Demanda de [demon.GetFirstName]" #NT!
+ POD_demon_demand.106.desc: "El infernalismo es un arma de doble filo. Si bien tu maestro te otorga poderes incalculables, también te exige mucho. Para que vuestra relación siga siendo mutuamente beneficiosa y no enfade a tu poderoso patrón, tendrás que cumplir más pronto que tarde. Los demonios pueden manifestarse en este mundo mediante el Ritual del Alma Hendida, que consiste en apoderarse del cuerpo de un anfitrión voluntario (o no). Sin embargo, esta no es una solución perfecta y queman rápidamente estos cuerpos débiles. Se te ha encomendado la tarea de encarcelar a diez mortales para preparar los cuerpos para este ritual." #NT!
+  
+ POD_demon_demand.107.t: "Demanda de [demon.GetFirstName]" #NT!
+ POD_demon_demand.107.desc: "El infernalismo es un arma de doble filo. Si bien tu amo te otorga poderes incalculables, también te exige mucho. Para que vuestra relación siga siendo mutuamente beneficiosa y no enfade a tu poderoso patrón, tendrás que obedecer más pronto que tarde. No eres el único infernalista que existe. Tu compañero impío ha notado el potencial de uno de tus hermanos y te ha "pedido" que lo traigas a tu culto... o al menos que te asegures de que no se quede al servicio de un demonio rival. [to_infernalize.GetFirstName] es tu objetivo." #NT!
+  
+ POD_demon_demand.108.t: "Demanda de [demon.GetFirstName]" #NT!
+ POD_demon_demand.108.desc: "El infernalismo es un arma de doble filo. Si bien tu amo te otorga poderes incalculables, también te exige mucho. Para que vuestra relación siga siendo mutuamente beneficiosa y no enfade a tu poderoso patrón, tendrás que obedecer más pronto que tarde. Los lugares sagrados son anatema para los demonios. La fe pura que emana de estos lugares los quema hasta su núcleo profano. Se te ha encomendado la tarea de tomar [to_corrupt.GetNameNoTier] y corromperlo." #NT!

@@ -24,6 +24,54 @@
  action_can_add_dreamer_alert_desc: "Deberías usar un mortal para ganar más experiencia con trucos."
  action_can_add_dreamer_alert_click: "#I Haz clic para elegir a un mortal como tu soñador#!"
   
+ action_can_enchant_alert: "Deberías obtener [GetTrait('enchanted').GetName( GetPlayer )]" #NT!
+ action_can_enchant_alert_label: "Deberías obtener [GetTrait('enchanted').GetName( GetPlayer )]" #NT!
+ action_can_enchant_alert_desc: "Debes obtener [GetTrait('enchanted').GetName( GetPlayer )] para evitar que el tesoro que tienes equipado se deshabilite." #NT!
+ action_can_enchant_alert_click: "#I Haz clic para obtener [GetTrait('enchanted').GetName( GetPlayer )]#!" #NT!
+  
+ action_can_call_pet_to_war_alert: "Deberías llamar a tu mascota a la guerra" #NT!
+ action_can_call_pet_to_war_alert_label: "Deberías llamar a tu mascota a la guerra" #NT!
+ action_can_call_pet_to_war_alert_desc: "Puedes llamar a tu mascota a la guerra para obtener una ventaja." #NT!
+ action_can_call_pet_to_war_alert_click: "#I Haz clic para llamar a tu mascota a la guerra#!" #NT!
+  
+ action_can_call_sin_dragon_to_war_alert: "Deberías llamar a tu dragón del pecado a la guerra." #NT!
+ action_can_call_sin_dragon_to_war_alert_label: "Deberías llamar a tu dragón del pecado a la guerra." #NT!
+ action_can_call_sin_dragon_to_war_alert_desc: "Puedes invocar a tu dragón del pecado a la guerra para obtener una ventaja." #NT!
+ action_can_call_sin_dragon_to_war_alert_click: "#I Haz clic para llamar a tu dragón del pecado a la guerra#!" #NT!
+  
+  #TODO needed for maa rework 
+ action_can_call_the_unnamable_to_war_alert: "Deberías llamar a lo innombrable a la guerra." #NT!
+ action_can_call_the_unnamable_to_war_alert_label: "Deberías llamar a lo innombrable a la guerra." #NT!
+ action_can_call_the_unnamable_to_war_alert_desc: "Puedes llamar a lo innombrable a la guerra para obtener una ventaja." #NT!
+ action_can_call_the_unnamable_to_war_alert_click: "#I Haz clic para llamar a los innombrables a la guerra#!" #NT!
+  
+ action_can_call_forgotten_to_war_alert: "Deberías llamar a los antiguos perdidos a la guerra." #NT!
+ action_can_call_forgotten_to_war_alert_label: "Deberías llamar a los antiguos perdidos a la guerra." #NT!
+ action_can_call_forgotten_to_war_alert_desc: "Puedes llamar a los antiguos perdidos a la guerra para obtener una ventaja." #NT!
+ action_can_call_forgotten_to_war_alert_click: "#I Haz clic para llamar a los antiguos perdidos a la guerra#!" #NT!
+  
+ action_can_call_fenris_to_war_alert: "Deberías llamar al gran fenris a la guerra." #NT!
+ action_can_call_fenris_to_war_alert_label: "Deberías llamar al gran fenris a la guerra." #NT!
+ action_can_call_fenris_to_war_alert_desc: "Puedes llamar a grandes fenris a la guerra para obtener una ventaja." #NT!
+ action_can_call_fenris_to_war_alert_click: "#I Haz clic para llamar al gran fenris a la guerra#!" #NT!
+  
+ action_can_call_zmei_to_war_alert: "Deberías llamar a Zmei a la guerra." #NT!
+ action_can_call_zmei_to_war_alert_label: "Deberías llamar a Zmei a la guerra." #NT!
+ action_can_call_zmei_to_war_alert_desc: "Puedes llamar a Zmei a la guerra para obtener una ventaja." #NT!
+ action_can_call_zmei_to_war_alert_click: "#I Haz clic para llamar a zmei a la guerra#!" #NT!
+  
+ action_can_call_leviathan_to_war_alert: "Deberías llamar al Leviatán a la guerra." #NT!
+ action_can_call_leviathan_to_war_alert_label: "Deberías llamar al Leviatán a la guerra." #NT!
+ action_can_call_leviathan_to_war_alert_desc: "Puedes invocar al Leviatán a la guerra para obtener ventaja." #NT!
+ action_can_call_leviathan_to_war_alert_click: "#I Haz clic para llamar al Leviatán a la guerra#!" #NT!
+  
+ action_can_return_to_earth: "Deberías regresar a la Tierra" #NT!
+ action_can_return_to_earth_label: "Deberías regresar a la Tierra" #NT!
+ action_can_return_to_earth_desc: "Deberías regresar a la Tierra para no quedarte en el [umbra|E]." #NT!
+ action_can_return_to_earth_click: "#I Haz clic para volver a la Tierra#!" #NT!
+ POD_return_to_earth_interaction: "Regreso a la Tierra" #NT!
+ POD_return_to_earth_interaction_desc: "Regreso a la Tierra" #NT!
+  
  action_host_not_married: "Anfitrión soltero"
  action_host_not_married_label: "Anfitrión soltero"
  action_host_not_married_desc: "Tu anfitrión [recipient.GetUIName] no tiene [spouse|E].\n\n#help Estás jugando como el demonio incorpóreo y posees un anfitrión. Si el anfitrión tiene hijos, entonces se considerarán tuyos.#!"
@@ -88,6 +136,18 @@
  lesson_gain_glamour_6: "Desgarrando"
  lesson_gain_glamour_6_desc: "Puedes usar Reaving [character_interaction|E] en tu ubicación actual para ganar Glamour."
   
+ reactive_advice_umbra: "Umbría" #NT!
+ action_reactive_advice_umbra: "Consejo: Umbra" #NT!
+ action_reactive_advice_umbra_desc: "Abre esto para aprender más sobre Umbra." #NT!
+ action_reactive_advice_umbra_click: "$click_to_open_lesson$" #NT!
+ lesson_umbra_1: "La Umbra" #NT!
+ lesson_umbra_1_desc: "La Umbra, también llamada [spirit_world|E], es el reflejo espiritual del mundo material. Está dividida en muchos subreinos, cada uno de los cuales contiene sus propias maravillas y peligros.\nSolo unas pocas entidades selectas pueden atravesar esta dimensión y algunos reinos solo están abiertos a un tipo específico de individuo (o con el poder adecuado)." #NT!
+ lesson_umbra_2: "Exploración" #NT!
+ lesson_umbra_2_desc: "Los reinos de Umbra que tú y tu corte podéis explorar se muestran en el panel de Umbra. Si haces clic en el personaje en blanco que se encuentra debajo de un reino, podrás asignar un explorador. Cuanto mayor sea su aptitud, más rápido explorará. Una exploración completada puede llevar al descubrimiento de un nuevo reino de Umbra, el inicio de un descubrimiento o algún otro efecto, según el reino." #NT!
+ lesson_umbra_3: "Descubrimiento" #NT!
+ lesson_umbra_3_desc: "Si un explorador encuentra un evento particularmente interesante en la umbra, te avisará con un descubrimiento. Puedes ver todos tus descubrimientos actuales en el segundo panel de la umbra. Los descubrimientos pueden dar lugar a expediciones (donde vas a investigar algo interesante por tu cuenta) u otras oportunidades de aventuras." #NT!
+ lesson_umbra_4: "Efectos pasivos y acciones" #NT!
+ lesson_umbra_4_desc: "Algunos reinos de Umbra pueden tener efectos pasivos o acciones asociadas a ellos. Los efectos pasivos se describen bajo el nombre del reino, mientras que las acciones son botones en la parte inferior derecha del reino." #NT!
   
   ### Custom alerts 
   
@@ -100,3 +160,50 @@
  pod_alert_can_go_on_umbra_expedition: "#T Puedes ir a un [umbra_expedition|E]#!\nExploring las profundidades del [umbra|E] pueden ser tanto peligrosas como gratificantes.\n\n#I Haz clic para abrir la ventana [umbra|E].#!\n$RIGHT_CLICK_DISMISS$"
   
  pod_alert_has_umbra_crisis: "#T Tienes una Crisis Umbra sin resolver. #!\nYou Tienes que resolver la Crisis Umbra si no quieres que pase nada malo al final.\n\n#I Haz clic para abrir la ventana [umbra|E].#!\n$RIGHT_CLICK_DISMISS$"
+  
+  ### Advanced fancy tutorial 
+  
+ reactive_advice_craft: "Artesanía" #NT!
+ action_reactive_advice_craft: "Consejo: Manualidades" #NT!
+ action_reactive_advice_craft_desc: "Abre esto para aprender más sobre cómo crear." #NT!
+ action_reactive_advice_craft_click: "$click_to_open_lesson$" #NT!
+ POD_spawn_craft_tutor_interaction: "Generar un tutor de artesanía" #NT!
+ POD_spawn_craft_tutor_interaction_desc: "Yay, un espectro apareció de la nada para enseñarte cómo fabricar objetos." #NT!
+ craft_intro: "Artesanía" #NT!
+ craft_intro_desc: "¡Ahora tienes acceso a la artesanía!\n\nEl panel de artesanía te permite crear pociones, artefactos o incluso personajes." #NT!
+ craft_open: "$craft_intro$" #NT!
+ craft_open_desc: "Por ahora, hagamos un recorrido rápido por todas las nuevas acciones que están disponibles para usted." #NT!
+ craft_open_prompt: "Abrir la Manualidad (resaltada)" #NT!
+ craft_panel: "$craft_intro$" #NT!
+ craft_panel_desc: "Éste es tu panel de manualidades." #NT!
+ craft_creator_open: "Creador" #NT!
+ craft_creator_open_desc: "¡A continuación, echemos un vistazo a la pestaña Creador!" #NT!
+ craft_creator_open_prompt: "Abra la pestaña Creador (resaltada)" #NT!
+ craft_creator_panel: "$craft_creator_open$" #NT!
+ craft_creator_panel_desc: "Éste es un panel de creadores potencialmente capacitados en su corte." #NT!
+ craft_creator_assign: "$craft_creator_open$" #NT!
+ craft_creator_assign_desc: "¡A continuación, asignemos el nuevo creador!" #NT!
+ craft_creator_assign_prompt: "Asigna el nuevo creador generado a partir de la interacción usando el botón de intercambio (resaltado)" #NT!
+ craft_material_open: "Material" #NT!
+ craft_material_open_desc: "¡A continuación, echemos un vistazo a la pestaña Material!" #NT!
+ craft_material_open_prompt: "Abra la pestaña Material (resaltada)" #NT!
+ craft_material: "$craft_material_open$" #NT!
+ craft_material_desc: "Este es un ingrediente utilizado para manualidades." #NT!
+ craft_craft_open: "Artesanía" #NT!
+ craft_craft_open_desc: "¡A continuación, echemos un vistazo a la pestaña Manualidades!" #NT!
+ craft_craft_open_prompt: "Abra la pestaña de manualidades (resaltada)" #NT!
+ craft_craft: "$craft_craft_open$" #NT!
+ craft_craft_desc: "Esta es una manualidad que puedes utilizar." #NT!
+ craft_alchemy_open: "Alquimia" #NT!
+ craft_alchemy_open_desc: "¡A continuación, probemos la alquimia!" #NT!
+ craft_alchemy_open_prompt: "Haga clic en el botón Alquimia (resaltado)" #NT!
+ craft_alchemy_panel: "$craft_alchemy_open$" #NT!
+ craft_alchemy_panel_desc: "Éste es tu panel de alquimia." #NT!
+ craft_alchemy_recipe: "$craft_alchemy_open$" #NT!
+ craft_alchemy_recipe_desc: "¡A continuación, escojamos una receta de alquimia!" #NT!
+ craft_alchemy_recipe_prompt: "Elige una receta de Alquimia (resaltada)" #NT!
+ craft_alchemy_confirm: "$craft_alchemy_open$" #NT!
+ craft_alchemy_confirm_desc: "¡Ahora, confirma para crearlo!" #NT!
+ craft_alchemy_confirm_prompt: "Haga clic en el botón Crear (resaltado)" #NT!
+ craft_conclusion: "$craft_intro$" #NT!
+ craft_conclusion_desc: "Este es el final de nuestro recorrido artesanal.\n\nSiéntete libre de probar cualquier cosa que te guste." #NT!

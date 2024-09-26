@@ -13,13 +13,12 @@
  gaia_high_god_name_possessive: "De gaia"
  gaia_high_god_name_alternate: "Salvaje"
  gaia_high_god_name_alternate_possessive: "De Wyld"
- gaia_good_god_jesus: "$gaia_health_god_name$"
- gaia_good_god_christ: "Tierra"
+ gaia_good_god_earth: "Tierra" #NT!
  gaia_devil_name: "Wyrm"
  gaia_devil_name_possessive: "El wyrm"
- gaia_evil_god_lucifer: "Devorador de almas"
- gaia_evil_god_beelzebub: "Bestia de guerra"
- gaia_evil_god_mephistopheles: "Profanador"
+ gaia_evil_god_eater_of_souls: "Devorador de almas" #NT!
+ gaia_evil_god_beast_of_war: "Bestia de guerra" #NT!
+ gaia_evil_god_defiler: "Profanador" #NT!
  gaia_death_deity_name: "Wyrm"
  gaia_death_deity_name_possessive: "El wyrm"
  gaia_house_of_worship: "caer"
@@ -458,13 +457,11 @@
  silentstrider_adherent_plural: "Caminantes silenciosos"
  silentstrider_desc: "Originarios de Egipto, los Caminantes Silenciosos fueron condenados al exilio por el poderoso vampiro Set, y desde entonces han estado huyendo. Nómadas, introspectivos y muy espirituales, los Caminantes Silenciosos han sondeado las profundidades de la Umbra, quizás más profundamente que cualquier otra tribu de Garou."
   
- harbingers: "Presagios"
  harbingers_adj: "Heraldos"
  harbingers_adherent: "Heraldo"
  harbingers_adherent_plural: "Presagios"
  harbingers_desc: "Estos fueron los primeros Garou que se tomaron en serio la Profecía del Fénix, o eso dicen algunos. Se separaron y vagaron por el mundo en busca de la Señal del Wyrm y trajeron la noticia de vuelta. Todavía no han terminado de contarles a los Garou todas las Señales del Wyrm que encontraron. Lo más importante es que traen esperanza. Son de los Garou más sabios, así que es mejor que saltes cuando te lo digan."
   
- seekers: "Buscadores"
  seekers_adj: "Buscadores"
  seekers_adherent: "Buscadores"
  seekers_adherent_plural: "Buscadores"
@@ -632,17 +629,25 @@
  ronin_adherent_plural: "Ronin"
  ronin_desc: "Los ronin son hombres lobo que, por una razón u otra, son parias de la Nación Garou. La mayoría de los ronin incumplieron con demasiada frecuencia un principio de la Letanía, se opusieron a un anciano o a su manada y algunos incluso eligieron esta vida para escapar de la dura y jerárquica sociedad de los Garou o porque estaban abrumados por Harano. Los Garou no son criaturas solitarias. Todos los instintos de los humanos, lobos y Garou exigen la compañía de otros miembros de su especie. Como tal, el destierro de otros de su especie es uno de los juicios más terribles que un Garou puede enfrentar."
   
- karoush_religion: "Karush"
- karoush_religion_adj: "Karush"
- karoush_religion_adherent: "Karush"
- karoush_religion_adherent_plural: "Karush"
- karoush_religion_desc: "El Karoush es el código de leyes de los hombres gato, similar a la Letanía de los Garou. Estas leyes, transmitidas por sus antepasados, son más importantes que cualquier Bastet y superiores a cualquier rango o título. Son sus códigos de honor, y los Bastet creen que los separan de la humanidad, protegiéndolos de los errores humanos. El Karoush es el código que crearon sus antepasados, la Ley de la Luna y el Sol, la Ley de la Modelación de los Secretos y la Ley del Cambio."
+ #karoush_religion: "Karush" #NT!
+ #karoush_religion_adj: "Karush" #NT!
+ #karoush_religion_adherent: "Karush" #NT!
+ #karoush_religion_adherent_plural: "Karush" #NT!
+ #karoush_religion_desc: "El Karoush es el código de leyes de los hombres gato, similar a la Letanía de los Garou. Estas leyes, transmitidas por sus antepasados, son más importantes que cualquier Bastet y superiores a cualquier rango o título. Son sus códigos de honor, y los Bastet creen que los separan de la humanidad, protegiéndolos de los errores humanos. El Karoush es el código que crearon sus antepasados, la Ley de la Luna y el Sol, la Ley de la Modelación de los Secretos y la Ley del Cambio." #NT!
   
- karoush: "Karush"
- karoush_adj: "Karush"
- karoush_adherent: "Karush"
- karoush_adherent_plural: "Karush"
- karoush_desc: "El Karoush es el código de leyes de los hombres gato, similar a la Letanía de los Garou. Estas leyes, transmitidas por sus antepasados, son más importantes que cualquier Bastet y más importantes que cualquier rango o título. Son sus códigos de honor, y los Bastet creen que los separan de la humanidad, protegiéndolos de los errores humanos. El Karoush es el código que crearon sus antepasados, la Ley de la Luna y el Sol, la Ley de la Modelación de los Secretos y la Ley del Cambio: Hónrate a ti mismo, honra tu palabra, honra a tu parentela y especie, honra a tu Tierra y honra tu silencio."
+ #karoush: "Karush" #NT!
+ #karoush_adj: "Karush" #NT!
+ #karoush_adherent: "Karush" #NT!
+ #karoush_adherent_plural: "Karush" #NT!
+ #karoush_desc: "El Karoush es el código de leyes de los hombres gato, similar a la Letanía de los Garou. Estas leyes, transmitidas por sus antepasados, son más importantes que cualquier Bastet y más importantes que cualquier rango o título. Son sus códigos de honor, y los Bastet creen que los separan de la humanidad, protegiéndolos de los errores humanos. El Karoush es el código que crearon sus antepasados, la Ley de la Luna y el Sol, la Ley de la Modelación de los Secretos y la Ley del Cambio: Hónrate a ti mismo, honra tu palabra, honra a tu parentela y especie, honra a tu Tierra y honra tu silencio." #NT!
+  
+  #Common Road of Beast Localization 
+ karoush_high_god_name_alternate: "Nala" #NT!
+ karoush_high_god_name_alternate_possessive: "De nala" #NT!
+ karoush_devil_name: "Cahlash" #NT!
+ karoush_devil_name_possessive: "De Cahlash" #NT!
+ karoush_death_deity_name: "Cahlash" #NT!
+ karoush_death_deity_name_possessive: "De Cahlash" #NT!
   
  bagheera: "Bagheera"
  bagheera_adj: "Bagheera"

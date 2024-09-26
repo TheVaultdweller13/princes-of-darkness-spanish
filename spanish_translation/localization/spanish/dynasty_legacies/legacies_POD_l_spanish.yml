@@ -394,17 +394,17 @@
  neutral_totems_legacy_1_name: "El halcón"
  neutral_totems_legacy_1_perk: "@warning_icon!#X Para desbloquear esta ventaja de dinastía, debes convertirte en un cazador maestro.#!"
   
- neutral_totems_legacy_2_name: "La tortuga negra"
- neutral_totems_legacy_2_perk: "@warning_icon!#X Para desbloquear esta ventaja de dinastía, debes encontrarte con la Tortuga Negra (coloca un explorador en la Umbra para encontrar una pista sobre la ubicación y comienza un [umbra_expedition|E] para llegar a ellos) y pasar un desafío en la [spirit_wilds|E] parte de la Umbra.#!"
-  
- neutral_totems_legacy_3_name: "la hiena"
- neutral_totems_legacy_3_perk: "@warning_icon!#X Para desbloquear esta ventaja de dinastía, debes adquirir el rasgo [GetTrait('viking').GetName( GetPlayer )]. Comenzar con él no cuenta.#!"
-  
  neutral_totems_legacy_4_name: "La Esfinge"
  neutral_totems_legacy_4_perk: "@warning_icon!#X Para desbloquear esta ventaja de dinastía y comprarla, debes tener el rasgo [GetTrait('scholar').GetName( GetPlayer )] y 20 de aprendizaje o más. También debes poder pagar el costo de renombre y haber desbloqueado el legado de la hiena.#!"
   
  neutral_totems_legacy_5_name: "El zorro"
  neutral_totems_legacy_5_perk: "@warning_icon!#X Para desbloquear esta ventaja de dinastía y comprarla, debes haber completado los tres árboles de estilo de vida Intriga. También debes poder pagar el costo de renombre y haber desbloqueado el legado de la Esfinge.#!"
+  
+ neutral_totems_legacy_2_name: "La tortuga negra"
+ neutral_totems_legacy_2_perk: "@warning_icon!#X Para desbloquear esta ventaja de dinastía, debes encontrarte con la Tortuga Negra (coloca un explorador en la Umbra para encontrar una pista sobre la ubicación y comienza un [umbra_expedition|E] para llegar a ellos) y pasar un desafío en la [spirit_wilds|E] parte de la Umbra.#!"
+  
+ neutral_totems_legacy_3_name: "la hiena"
+ neutral_totems_legacy_3_perk: "@warning_icon!#X Para desbloquear esta ventaja de dinastía, debes adquirir el rasgo [GetTrait('viking').GetName( GetPlayer )]. Comenzar con él no cuenta.#!"
   
  eminence_legacy_track_name: "Eminencia Infernal"
  eminence_legacy_track_desc: "Los demonios han perdido gran parte de su memoria y experiencia durante su desagradable estancia en la Prisión Abisal. ¿Quiénes eran realmente?"
@@ -627,3 +627,85 @@
  wraith_legacy_4_perk: "Ganancia automática de Pathos cada mes.\n#flavor Los recuerdos que las personas guardan de los fallecidos. Se pueden aprovechar como fuente de Pathos... aunque los recuerdos se desvanezcan.#!"
  wraith_legacy_5_name: "Reliquia"
  wraith_legacy_5_perk: "Obtén acceso a un eco aleatorio de un artefacto histórico.\n#flavor Un objeto que atravesó el Sudario con un espectro debido a la resonancia emocional.#!"
+  
+ bagheera_legacy_track_name: "Hijos de Saraam" #NT!
+ bagheera_legacy_track_desc: "Curiosos y eruditos, los Bagheera honran el sacrificio de su madre manteniendo la paz entre los humanos y Bastet." #NT!
+ bagheera_legacy_1_name: "El orgullo de Saraam" #NT!
+ bagheera_legacy_1_perk: "Puede reclutar a [GetMaA('children_saraam').GetName] como [men_at_arms|E] \n#flavor Elegante y letal, la élite de la prole de Saraam protege la justicia y el honor dondequiera que viajan. #!" #NT!
+ bagheera_legacy_2_name: "Gyani, la Sabiduría" #NT!
+ bagheera_legacy_2_perk: "#flavor "Soy la sabiduría", dijo el gato negro. "El guardián secreto que retumba en la noche. Llámame Gyani, el vigilante del bosque". #!" #NT!
+ bagheera_legacy_3_name: "Guerreros del viento" #NT!
+ bagheera_legacy_3_perk: "#flavor Una Bagheera en batalla es una criatura hermosa de contemplar, cada movimiento calculado está perfectamente sincronizado con la danza de la muerte. #!" #NT!
+ bagheera_legacy_4_name: "Agun, la Ira" #NT!
+ bagheera_legacy_4_perk: "#flavor "Soy la ira", dijo el gato moteado. "Las garras furiosas con mil ojos. Llámame Agun, el vigilante de las llanuras". #!" #NT!
+ bagheera_legacy_5_name: "Panteras y tigres" #NT!
+ bagheera_legacy_5_perk: "Pueden reclutar a [GetMaA('durga_chosen').GetName] como [men_at_arms|E] \n#flavor Los Hijos de Tigre, el Khan, siempre han sido amigos de los Bagheera. Ambas tribus trabajan en conjunto para curar a la nación herida de Bastet. #!" #NT!
+  
+ bubasti_legacy_track_name: "Niños de Cymaa" #NT!
+ bubasti_legacy_track_desc: "Misteriosos y distantes, los Bubasti anhelan la noche en que regresarán como los legítimos dioses de Egipto." #NT!
+ bubasti_legacy_1_name: "El elegido de Ubastet" #NT!
+ bubasti_legacy_1_perk: "Puede reclutar [GetMaA('warriors_ubastet').GetName] como [men_at_arms|E] \n#flavor Nadie conoce las tierras de Egipto tanto como estos guerreros de los Bubasti. No escuches a las serpientes. #!" #NT!
+ bubasti_legacy_2_name: "Nobleza de Khem" #NT!
+ bubasti_legacy_2_perk: "#flavor Los Bubasti antiguamente elegían sólo a los nobles más selectos de Egipto para que tuvieran el privilegio de unirse a sus filas. Si bien este período ha terminado, su arrogancia no ha terminado. #!" #NT!
+ bubasti_legacy_3_name: "Hechiceros secretos" #NT!
+ bubasti_legacy_3_perk: "#flavor Bubasti castigaba a los mortales insolentes con poderosas proezas mágicas capaces de arrasar ciudades enteras. Desde entonces, su poder ha disminuido, pero los secretos no se han perdido por completo. #!" #NT!
+ bubasti_legacy_4_name: "Maestro de las artes oscuras" #NT!
+ bubasti_legacy_4_perk: "#flavor Aunque han perdido mucho desde sus días de gloria, los Bubasti vigilaron de cerca su activo más poderoso: su conocimiento de muchos rituales inusuales y poderosos. #!" #NT!
+ bubasti_legacy_5_name: "Isis, la amada" #NT!
+ bubasti_legacy_5_perk: "Puede reclutar a [GetMaA('cultists').GetName] como [men_at_arms|E] \n#flavor Isis alguna vez compartió secretos y amor con los Bubasti, consolidando sus lazos con la Liga de Osiris. Sus cultistas todavía veneran debidamente a los gatos de Khem hasta esta noche. #!" #NT!
+  
+ ceilican_legacy_track_name: "Niños del sueño" #NT!
+ ceilican_legacy_track_desc: "Traicionados por sus parientes hadas, los sueños de los Ceilican se convirtieron en pesadillas." #NT!
+ ceilican_legacy_1_name: "El azote del traidor" #NT!
+ ceilican_legacy_1_perk: "Puede reclutar a [GetMaA('samhach_bane').GetName] como [men_at_arms|E] \n#flavor El gran traidor casi exterminó a los Ceilican. Algún día se arrepentirá de no haber terminado el trabajo. #!" #NT!
+ ceilican_legacy_2_name: "El camino silencioso" #NT!
+ ceilican_legacy_2_perk: "#flavor Para el mundo exterior, los Ceilican están todos muertos o esclavizados por Samhach. Su intención es que el mundo siga pensando así durante tanto tiempo como sea posible. #!" #NT!
+ ceilican_legacy_3_name: "Gatos camaleones" #NT!
+ ceilican_legacy_3_perk: "#flavor Los ceilicanos son expertos en hacerse pasar por otras tribus bastet o incluso por otros tipos de seres sobrenaturales. Esto les permite infiltrarse en otras sociedades secretas para protegerse. #!" #NT!
+ ceilican_legacy_4_name: "La broma amarga" #NT!
+ ceilican_legacy_4_perk: "#flavor Los Ceilican perdieron todo excepto su pasión ardiente. Bailarán y festejarán hasta que el mundo se acabe... y tal vez incluso después. #!" #NT!
+ ceilican_legacy_5_name: "Gatos de hadas" #NT!
+ ceilican_legacy_5_perk: "Pueden reclutar a [GetMaA('ovinniks').GetName] como [men_at_arms|E] \n#flavor Aunque fueron traicionados y perseguidos por un señor de las hadas, los Ceilican aún pueden contar con algunos aliados entre sus antiguos parientes de las hadas. #!" #NT!
+  
+ khan_legacy_track_name: "Hijos de Durga" #NT!
+ khan_legacy_track_desc: "El Khan, que está obligado por su deber, está preparado para defender a la raza felina de sus numerosos enemigos. Su honor no exige nada menos." #NT!
+ khan_legacy_1_name: "Guardia del Khan" #NT!
+ khan_legacy_1_perk: "Puede reclutar a [GetMaA('durga_chosen').GetName] como [men_at_arms|E] \n#flavor Los más fuertes y firmes de los hijos del Tigre son un espectáculo para contemplar y un enemigo al que temer. #!" #NT!
+ khan_legacy_2_name: "Salvadores imprudentes" #NT!
+ khan_legacy_2_perk: "#flavor Las leyendas de los Khan cuentan la gran batalla que libraron para salvar a Durga, la Luna, que los vio triunfar sobre Asura. Sin embargo, en su triunfo, no pudieron ver el verdadero objetivo del demonio. #!" #NT!
+ khan_legacy_3_name: "Ojo del tigre" #NT!
+ khan_legacy_3_perk: "#flavor El entrenamiento de un Khan nunca termina. Al esperar lo mejor de sí mismo, impulsa a sus aliados a alcanzar mayores alturas. #!" #NT!
+ khan_legacy_4_name: "Merodeando juntos" #NT!
+ khan_legacy_4_perk: "#flavor Cada Khan es un guerrero nato. Un grupo entero de ellos lanzándose a la guerra es un espectáculo glorioso para la nación Bastet. #!" #NT!
+ khan_legacy_5_name: "Tigres y panteras" #NT!
+ khan_legacy_5_perk: "Pueden reclutar a [GetMaA('children_saraam').GetName] como [men_at_arms|E] \n#flavor Los hijos de Panther, los Baghera, siempre han sido amigos del Khan. Ambas tribus trabajan en conjunto para curar a la herida nación Bastet. #!" #NT!
+  
+ simba_legacy_track_name: "Niños de Seline" #NT!
+ simba_legacy_track_desc: "La propia Luna encargó a los Simba que gobernaran la conflictiva e ineficaz nación de Bastet. ¿Puede haber arrogancia cuando existe el destino?" #NT!
+ simba_legacy_1_name: "Luchadores reales" #NT!
+ simba_legacy_1_perk: "Pueden reclutar a [GetMaA('seline_pride').GetName] como [men_at_arms|E] \n#flavor Los leones son gobernantes y, como tales, rara vez tienen que ir a la guerra ellos mismos, pero cuando lo hacen, todos recuerdan su estatus. #!" #NT!
+ simba_legacy_2_name: "Los reyes leones" #NT!
+ simba_legacy_2_perk: "#flavor El gobierno de Simba es de legitimidad y justicia... o más a menudo, de terror y tiranía. Los Reyes Leones exigen obediencia absoluta. #!" #NT!
+ simba_legacy_3_name: "Maestros de la sabana" #NT!
+ simba_legacy_3_perk: "#flavor Un Simba no es tan rápido como un Swara ni tan fuerte como un Khan, pero ningún Bastet puede igualar la dureza de sus preciadas pieles. #!" #NT!
+ simba_legacy_4_name: "Gobernar por el miedo" #NT!
+ simba_legacy_4_perk: "#flavor Los Simba valoran la fuerza y ​​la obediencia. Salvarán a la nación Bastet y esperan que los demás felinos se mantengan a raya mientras lo hacen. #!" #NT!
+ simba_legacy_5_name: "Compostura ardiente" #NT!
+ simba_legacy_5_perk: "Pueden reclutar a [GetMaA('fire_elemental').GetName] como [men_at_arms|E] \n#flavor Como la raza de cambiaformas más poderosa del África subsahariana, los Simba han hecho pactos desde hace mucho tiempo con los espíritus nativos de esta tierra. #!" #NT!
+  
+ swara_legacy_track_name: "Niños de Danaa" #NT!
+ swara_legacy_track_desc: "Los Swara son los guardianes de los lugares puros, siempre corriendo de uno a otro, limpiándolos a medida que pasan." #NT!
+ swara_legacy_1_name: "Carrera del guepardo" #NT!
+ swara_legacy_1_perk: "Pueden reclutar a [GetMaA('danaa_runners').GetName] como [men_at_arms|E] \n#flavor Los Swara no son tan duros ni tienen un aspecto tan impresionante como sus compañeros Bastet, pero su velocidad inigualable les ha permitido ganar muchas peleas. #!" #NT!
+ swara_legacy_2_name: "Guerra veloz" #NT!
+ swara_legacy_2_perk: "#flavor Siempre en movimiento, la manada de Swara es casi imposible de atrapar. Probablemente solo los verás cuando realmente quieran que los veas. #!" #NT!
+ swara_legacy_3_name: "Vengadores implacables" #NT!
+ swara_legacy_3_perk: "#flavor Aunque no son tan agresivos como sus compañeros Bastet, los Swara mantienen rencores desde hace mucho tiempo. Es casi imposible escapar de un intento de venganza contra ti. #!" #NT!
+ swara_legacy_4_name: "Evitando a los simios" #NT!
+ swara_legacy_4_perk: "#flavor A los Swara no les molesta la interferencia humana siempre y cuando no traspasen los lugares puros. Es raro que uno de ellos entre en conflicto con ellos, lo que es un marcado contraste con el resto de Bastet. #!" #NT!
+ swara_legacy_5_name: "Contactos espirituales" #NT!
+ swara_legacy_5_perk: "Puede reclutar a [GetMaA('air_elemental').GetName] como [men_at_arms|E] \n#flavor Swara entiende a [umbra|E] mucho más que cualquier otro Bastet. Sus contactos entre los [spirit_world|E] no tienen rival, un hecho que están dispuestos a mantener en secreto. #!" #NT!
+  
+  
+  
+  

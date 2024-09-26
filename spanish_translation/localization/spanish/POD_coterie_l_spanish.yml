@@ -10,6 +10,8 @@
  POD_rename_your_coterie: "Renombra tu [GetPlayer.Custom('PODCoterieNoTooltip')]"
  POD_disband_your_coterie: "Disolver [GetPlayer.Custom('PODGetCoterieName')]"
   
+ POD_edit_coterie_coa_tt: "Haga clic para editar el escudo de armas de $POD_player_coterie$" #NT!
+  
  POD_coterie_gui_members: "Miembros #weak ([GuiScope.SetRoot(GetPlayer.MakeScope).ScriptValue('coterie_size')]/[EmptyScope.ScriptValue('coterie_max_size')])#!"
   
   
@@ -44,6 +46,7 @@
   ##### Effects 
   
  POD_leave_coterie_tt: "Ya no será miembro de $POD_player_coterie$"
+ POD_leave_coterie_recipient_tt: "Ya no será miembro de [recipient.Custom('PODGetCoterieName')]" #NT!
   
   
   ##### showing_failures_only triggers 
@@ -75,7 +78,9 @@
  POD_coterieloc_kueijin: "[coterie_kueijin|E]"
  POD_coterieloc_mummy: "[coterie_mummy|E]"
  POD_coterieloc_baali: "[coterie_baali|E]"
+ POD_coterieloc_bastet: "[coterie_bastet|E]" #NT!
  POD_coterieloc_vampire: "[coterie|E]"
+ POD_coterieloc_entomos: "[coterie_entomos|E]" #NT!
  POD_coterieloc_generic: "[coterie_generic|E]"
   
  POD_coterieloc_harem_notooltip: "$game_concept_coterie_harem$"
@@ -98,20 +103,22 @@
  POD_coterieloc_kueijin_notooltip: "$game_concept_coterie_kueijin$"
  POD_coterieloc_mummy_notooltip: "$game_concept_coterie_mummy$"
  POD_coterieloc_baali_notooltip: "$game_concept_coterie_baali$"
+ POD_coterieloc_bastet_notooltip: "$game_concept_coterie_bastet$" #NT!
  POD_coterieloc_vampire_notooltip: "$game_concept_coterie$"
+ POD_coterieloc_entomos_notooltip: "$game_concept_coterie_entomos$" #NT!
  POD_coterieloc_generic_notooltip: "$game_concept_coterie_generic$"
   
  POD_coteriename_error: "ERROR EN EL NOMBRE DE LA COTERIE"
  POD_coteriename_custom: "[ROOT.Var('coterie').Var('root_char').Char.GetLocalizedText('POD_coterie_name_text')]"
  POD_coteriename_canon: "[ROOT.Var('coterie').Story.Custom('PODGetCanonCoterieName')]"
+ POD_coteriename_default: "[ROOT.Var('root_char').Char.GetFirstNamePossessiveNoTooltip] [ROOT.Var('root_char').Char.Custom('PODCoterieNoTooltip')]"
   
  POD_coteriename_custom_story: "[ROOT.Var('root_char').Char.GetLocalizedText('POD_coterie_name_text')]"
  POD_coteriename_canon_story: "[ROOT.Story.Custom('PODGetCanonCoterieName')]"
+ POD_coteriename_default_story: "[ROOT.Var('root_char').Char.GetFirstNamePossessiveNoTooltip] [ROOT.Var('root_char').Char.Custom('PODCoterieNoTooltip')]" #NT!
   
   ##### Karde: this is where canon coterie names are defined in the loc 
  #POD_coteriename_camilla: "Los chicos de la fiesta de Camilla"
-  
- POD_coteriename_default: "[ROOT.Var('root_char').Char.GetFirstNamePossessiveNoTooltip] [ROOT.Var('root_char').Char.Custom('PODCoterieNoTooltip')]"
   
  POD_coteriename_camilla: "#TOOLTIP:POD_coteriename_camilla_tt #L Los primeros pecadores#!#!"
  POD_coteriename_mithras: "#TOOLTIP:POD_coteriename_mithras_tt #L Pretorianos de Mitra#!#!"
@@ -179,12 +186,18 @@
  POD_coteriename_rosae_crucis_tt: "Los "Príncipes Piadosos" son mentores buscados y enemigos temidos, valorando tanto su independencia como su fe."
  POD_coteriename_daughters_sun: "#TOOLTIP:POD_coteriename_daughters_sun_tt #L Hijas del Sol#!#!"
  POD_coteriename_daughters_sun_tt: "Unidos en la locura de su madre, esperan y se preparan para su inevitable y glorioso regreso."
+ POD_coteriename_leper_knights: "#TOOLTIP:POD_coteriename_leper_knights_tt #L Los caballeros leprosos#!#!" #NT!
+ POD_coteriename_leper_knights_tt: "Los fieles seguidores de Malachite han perdido mucho desde 1204. Aun así, su líder sigue ahí para guiarlos y los Nosferatu son muy resistentes." #NT!
+ POD_coteriename_ashirra_trader: "#TOOLTIP:POD_coteriename_ashirra_trader_tt #L Velo de la Noche#!#!" #NT!
+ POD_coteriename_ashirra_trader_tt: "Abu Fahim Kateb viaja a través del territorio Ashirra para comerciar con artefactos e información que envía a Alamut y sus numerosos patrocinadores." #NT!
   
  POD_coterietravel_none: "$EFFECT_LIST_BULLET$$POD_coterietravel_gui_none$"
  POD_coterietravel_empty: "$EFFECT_LIST_BULLET$$POD_coterietravel_gui_empty$"
  POD_coterietravel_yes: "$EFFECT_LIST_BULLET$Los miembros de $POD_player_coterie$ se unirán a ti."
  POD_coterietravel_no: "$EFFECT_LIST_BULLET$Los miembros de $POD_player_coterie$ #bold no#! se unirán a ti."
   
+ POD_coterietravel_gui_nodestination: "#X @warning_icon! No se ha establecido ningún destino. Esto es un error. Por favor, repórtalo (en Steam o en el Discord de PoD).#!" #NT!
+ #POD_coterietravel_gui_earthbound: "#X @warning_icon! Para iniciar el [travel_phase|E] como [GetTrait('earthbound').GetName(GetPlayer)], necesitas habitar un [artifact|E] y tener al menos otro 1 miembro [GetPlayer.Custom('PODCoterie')].#!" #NT!
  POD_coterietravel_gui_earthbound: "#X @warning_icon! Para iniciar el [travel_phase|E] como [GetTrait('earthbound').GetName(GetPlayer)], necesitas habitar un [artifact|E] y tener al menos otro 1 miembro [GetPlayer.Custom('PODCoterie')].#!"
  POD_coterietravel_gui_none: "Como no tienes un [GetPlayer.Custom('PODCoterie')], viajarás solo."
  POD_coterietravel_gui_empty: "Como eres el único miembro de $POD_player_coterie$, viajarás solo."

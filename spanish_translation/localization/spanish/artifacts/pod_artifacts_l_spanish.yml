@@ -334,6 +334,10 @@
   
  artifact_soulforged_artifact_name: "[killed.GetFirstNameNoTooltip]"
  artifact_soulforged_artifact_description: "Un artefacto forjado con alma que era [killed.GetTitledFirstNameNoTooltip] y fue asesinado por [owner.GetTitledFirstNameNoTooltip]. Murmura y gime, pero todos esperan que esto simplemente signifique que puede vocalizar y nada más."
+ artifact_fleshcrafted_artifact_name: "[killed.GetFirstNameNoTooltip]"
+ artifact_fleshcrafted_artifact_description: "Un artefacto elaborado con carne que era [killed.GetTitledFirstNameNoTooltip], asesinado por [owner.GetTitledFirstNameNoTooltip]."
+ artifact_forced_fetish_artifact_name: "[killed.GetFirstNameNoTooltip]" #NT!
+ artifact_forced_fetish_artifact_description: "Un fetiche donde [killed.GetTitledFirstNameNoTooltip] está atado a la fuerza, creado por [owner.GetTitledFirstNameNoTooltip]." #NT!
  artifact_artifact_pieces_name: "Pieza de artefacto"
  artifact_artifact_pieces_description: "Un trozo de reliquias o artefactos del Maelstrom. Tal vez algún [GetTrait('wraith').GetName( GetNullCharacter )] podría rehacerlo y convertirlo en un solo artefacto."
  artifact_restored_artifact_pieces_name: "Pieza de artefacto +[newly_created_artifact.MakeScope.GetVariable('restored_artifact_piece_level').GetValue|0]"
@@ -783,6 +787,8 @@
  artifact_wayang_sash_description: "Esta faja está tejida al estilo de las prendas indonesias. Al revestir la faja con dos puntos de Yin Chi, el vampiro puede hacer que la prenda cobre vida, asemejándose a una criatura sombría parecida a un dragón del teatro de marionetas wayang. Esta criatura es sensible, puede comunicarse con su dueño (en un susurro sibilante) y es un excelente espía. Es absolutamente silenciosa y puede mimetizarse, como un camaleón, con cualquier sombra."
  artifact_star_shower_blade_name: "Hoja de ducha de estrella"
  artifact_star_shower_blade_description: "Esta maravillosa arma aparece en muchos cuentos de los Kuei-jin de Japón. Sin embargo, solo se sabe que unos pocos héroes entre los Bishamon poseen una. La Espada Lluvia de Estrellas aparece como un arma de triple filo; un usuario la agarra por el medio y la hace girar hacia sus víctimas. Al gastar un punto de Chi, el arma puede "cargarse". Cuando está cargada, el arma puede ser lanzada a una distancia de 25 yardas por punto de Fuerza de su portador. Cuando se lanza, el arma se dirige automáticamente a su objetivo. Alternativamente, mientras el arma está en vuelo, el portador puede pronunciar una palabra de comando para dividir el arma en tres fragmentos afilados. Cada uno de estos fragmentos puede golpear por separado al mismo objetivo o a diferentes objetivos. Lo mejor de todo es que, una vez lanzada (ya sea que acierte o no), el arma (o sus piezas) regresa como un bumerán a la mano del portador, y al instante se transforma en la Espada Lluvia de Estrellas."
+ artifact_the_righteous_fire_name: "El fuego justo" #NT!
+ artifact_the_righteous_fire_description: ""El fuego justo", obra predhármica, se considera una escritura sagrada para quienes buscan las Cien Nubes. Algunos creen que fue escrita por el propio [GetScriptedCharacterByHistoryID('791111').GetFirstName], el famoso filósofo [GetTrait('kueijin').GetName( GetNullCharacter )] que descubrió los cinco Dharmas." #NT!
   
  artifact_soultaker_name: "Soultaker"
  artifact_soultaker_description: "#bold Desbloquear $EXECUTION_SOULTAKER$ [executions|E].\nPermite, cuando se necesita gastar Resolución, gastar primero la Resolución almacenada en este Recipiente de Resolución.#!\nForged En el sangriento apogeo de la guerra, Soultaker es un arma obscena y terrible. El alma voluntaria de un demonio (su nombre hace mucho tiempo olvidado) fue atada al metal negro, donde podía usar este poder sobre cualquiera que tocara la espada. El toque de la espada drenaba la energía y la vida de cualquiera que hiriera, y si mataba a una víctima, su alma sería extraída de su cadáver y encarcelada dentro de la espada, para ser torturada y devorada allí por el demonio original. Tanto los mortales como los ángeles cayeron ante Soultaker, su Fe destrozada por su sustento.\nEntonces el portador de la espada la usó para matar a otro demonio, y la espada cambió. Las dos almas demoníacas lucharon por el dominio dentro de la espada, ninguna capaz de obtener una ventaja. Con el tiempo, sus almas comenzaron a desangrarse entre sí, creando una única personalidad fracturada. A medida que las luchas internas demoníacas se volvieron más serias en la guerra, más demonios cayeron ante Soultaker y sus almas fueron absorbidas por una única entidad demente: un ser que se hacía llamar Legion. Soultaker se perdió durante los últimos días de la guerra, escondido en lo profundo de un escondite de armas olvidado, y sin nuevas víctimas que devorar para Faith, Legion se debilitó y adelgazó. Ahora no puede pensar en nada más que en comida (Fe) y hará cualquier cosa para devorar nuevas almas una vez más."
@@ -810,6 +816,8 @@
  artifact_ancestor_talisman_description: "#bold Otorga inmunidad a la mayoría de los poderes mentales.#!\nA colgante de oro fundido con la forma del nombre de Haqim en árabe. Solo existen cuatro de estos y se dice que animan a su portador a hacer honor al nombre de Haqim mientras lo protegen contra la magia maligna que podría desviarlo de su camino."
  artifact_arrows_vengeance_name: "Flechas de venganza"
  artifact_arrows_vengeance_description: "Hechas de madera de espino con puntas endurecidas al fuego, estas cinco flechas están encantadas para buscar siempre el corazón de su enemigo."
+ artifact_amala_doll_name: "La muñeca de Amala" #NT!
+ artifact_amala_doll_description: "#bold Esta muñeca tiene un valor sentimental y no le sirve a nadie más que a Fátima al-Faqadi.#!\nHer Su primera amiga, su primer amor, su primer asesinato. Fátima se perdonó a sí misma, pero no olvidó." #NT!
  artifact_book_grave_war_name: "Libro de la Guerra de las Tumbas"
  artifact_book_grave_war_description: "Este extraño libro, que alterna entre alemán, griego antiguo y minoico, no tiene nada de especial y parece un manuscrito iluminado de mala calidad. El libro está dividido en siete cantos. Cada uno de ellos varía enormemente en longitud y estructura, y algunos están completamente en verso. Otros cantos son en parte poema y en parte prosa, mientras que otros son completamente en prosa. Cada canto cubre una época de la historia del mundo y describe la yihad durante ese período."
  artifact_khazar_diary_name: "Diario de Khazar"
@@ -846,6 +854,13 @@
  historical_unique_artifact_tt: "¡Éste es un artefacto histórico único!"
  summoned_artifact_tt: "¡Este es un artefacto invocado!"
  possessed_artifact_tt: "¡Este artefacto está actualmente poseído!"
+ enchanted_artifact_tt: "¡Este artefacto está siendo encantado actualmente!" #NT!
+ blessed_artifact_tt: "¡Este artefacto está siendo bendecido actualmente!" #NT!
+ reforged_artifact_tt: "¡Este artefacto está siendo reforjado actualmente!" #NT!
+ channelled_artifact_tt: "¡Este artefacto está siendo canalizado actualmente!" #NT!
+ strengthened_artifact_tt: "¡Este artefacto está siendo fortalecido actualmente!" #NT!
+ reworked_artifact_tt: "¡Este artefacto está siendo reelaborado actualmente!" #NT!
+ enhanced_artifact_tt: "¡Este artefacto está siendo mejorado actualmente!" #NT!
  artifact_pieces_tt: "¡Esta es una pieza de artefacto!"
   
  artifact_ananata_name: "Ananata"
@@ -970,6 +985,10 @@
  need_dream_religion_tt: "Debes tener [GetFaithByKey('viaarchangeli').GetName] o [GetFaithByKey('codexoflegacies').GetName] de fe."
  need_ashirra_haqim_religion_tt: "Debes tener fe en la religión [GetReligionByKey('ashirra_religion').GetName] o [GetFaithByKey('tariqelhaqim').GetName]"
  need_shapeshifter_large_tt: "Debes ser un [GetTrait('kinfolk').GetName( GetPlayer )], [GetTraitGroup('shapeshifter').GetName()] o un [GetTrait('abomination').GetName( GetPlayer )]."
+ need_bastet_mage_tt: "Debes ser [GetTrait('mage').GetName( GetPlayer )] o [GetTrait('bastet').GetName( GetPlayer )]." #NT!
+ need_middle_kingdom_splat_tt: "Debes ser [GetTrait('shih').GetName( GetPlayer )], [GetTrait('wutian').GetName( GetPlayer )], [GetTrait('wukuei').GetName( GetPlayer )], [GetTrait('kueijin').GetName( GetPlayer )], [GetTrait('dhampyr').GetName( GetPlayer )], [GetTrait('hsien').GetName( GetPlayer )] o [GetTrait('hun_and_po').GetName( GetPlayer )]." #NT!
+  
+ chimerical_item_tt: "Debes ser un [GetTrait('enchanted').GetName( GetPlayer )], [GetTrait('fae').GetName( GetPlayer )], [GetTrait('changeling').GetName( GetPlayer )], [GetTrait('kinain').GetName( GetPlayer )], [GetTrait('kiasyd').GetName( GetPlayer )], [GetTrait('maeghar').GetName( GetPlayer )] o [GetTrait('bastet').GetName( GetPlayer )] de la fe [GetFaithByKey('ceilican').GetName]." #NT!
   
  artifact_isis_fragments_name: "Fragmentos de Isis"
  artifact_isis_fragments_description: "Una historia completa de los orígenes de las momias egipcias. Si bien es posible que la autora sea la propia Isis, la mayoría de la gente piensa que se trata de una reconstrucción realizada por los fieles de su culto."
@@ -984,3 +1003,111 @@
  artifact_flying_dutchman_description: "#bold Posibilidad de quedar atrapado en la Umbra: #P -10%#!\nMonthly Progreso de exploración de la Umbra: [grace_i]#P +10#!#!\nThe El legendario Holandés Errante, un barco fantasma que se cree que se aparece a los barcos condenados."
  artifact_siklos_name: "Siclos"
  artifact_siklos_description: "Siklos era la espada de Caronte. Formado a partir de una combinación de los diezmos adquiridos por Caronte y las almas de los peores traidores de Estigia, Siklos era una gran guadaña que poseía un mínimo de sensibilidad, e incluso podía soñar."
+  
+ artifact_reliquarie_name: "Relicario"
+ artifact_reliquarie_description: "Al tener [owner.GetTitledFirstNamePossessive] alma en él, este [reliquarie|E] ha adquirido algunas propiedades de [GetTrait('demon').GetName( GetNullCharacter )]."
+ artifact_new_reliquarie_name: "Demoniaco [this_artifact.GetNameNoTooltip]"
+ artifact_new_reliquarie_desc: "[this_artifact.GetDesc]\n\n$artifact_reliquarie_description$"
+ artifact_old_reliquarie_desc: "[this_artifact.GetDesc]\n\n#X [owner.GetTitledFirstName] ha abandonado esto [reliquarie|E].#!"
+ reliquarie_destroyed_notification: "Relicario destruido"
+  
+ artifact_fetish_name: "Fetiche [newly_created_artifact.GetNameNoTooltip]" #NT!
+ artifact_fetish_description: "Al tener [killed.GetTitledFirstNamePossessive] ligado a él, este fetiche ha adquirido algunas propiedades de [GetTrait('spirit').GetName( GetNullCharacter )]." #NT!
+ artifact_new_fetish_name: "Fetiche [this_artifact.GetNameNoTooltip]" #NT!
+ artifact_new_fetish_desc: "[this_artifact.GetDesc]\n\n$artifact_fetish_description$" #NT!
+ artifact_old_fetish_desc: "[this_artifact.GetDesc]\n\n#X [killed.GetTitledFirstName] ha abandonado este fetiche.#!" #NT!
+ fetish_destroyed_notification: "Fetiche destruido" #NT!
+  
+ artifact_necklace_of_tou_mu_name: "Collar de Tou Mu" #NT!
+ artifact_necklace_of_tou_mu_description: "Collar de Tou Mu" #NT!
+  
+ artifact_catgut_name: "Tripa de gato [newly_created_artifact.GetNameNoTooltip]" #NT!
+  
+ artifact_rhinegold_name: "Oro del Rin" #NT!
+ artifact_rhinegold_description: "Descubierto cuando la luz del sol lo iluminó en el fondo de un río en el que habitaban tres sílfides conocidas como las Doncellas del Rin, el Oro del Rin es un anillo #N seductor#! forjado con el oro #N más puro#!. Aquellos que usan el anillo pueden abandonar el amor por el tremendo #N poder#! que el anillo les ofrece para cambiar de forma en todo tipo de animales y monstruos, y #N gobernar#! el mundo. Robado a las sílfides por el Nocker Alberich y luego perdido a lo largo de los siglos, el Oro del Rin ha pasado de mano en mano, siempre a la sombra de las maldiciones de las doncellas que lo perdieron y la #N codicia#! devoradora de aquellos que #N lo codician#!." #NT!
+  
+ artifact_devil_deck_name: "Baraja del diablo" #NT!
+ artifact_devil_deck_description: "Una colección de cartas "normales" utilizadas por los Bastet. Este fetiche siempre reparte la carta más útil a su dueño. Los Bastet llevan mucho tiempo preguntándose el origen de estos extraños artefactos, pero hasta el momento no han encontrado ninguna pista." #NT!
+ artifact_lotus_petals_name: "Pétalos de loto" #NT!
+ artifact_lotus_petals_description: "#bold Una Bastet que posea este artefacto siempre hará que sus hijos se conviertan en cambiaformas una vez que alcancen la mayoría de edad.#!\nIn En la Corte de la Luna, crece un jardín de flores de loto de 1000 años. Cada Bastet que viaja a la Luna puede traer de vuelta una de ellas. Sus propiedades místicas incluyen la semilla para asegurar el nacimiento de la próxima generación de Bastet." #NT!
+ artifact_grandmothers_stones_name: "Las piedras de la abuela" #NT!
+ artifact_grandmothers_stones_description: "#bold Una Bastet femenina que posea este artefacto tendrá una probabilidad de regeneración de Gnosis mucho mayor.#!\nAfter Durante el Gran Diluvio, quedaron piedras brillantes que atrajeron a las mujeres, quienes las recolectaron y las convirtieron en joyas. Bendecidos por la luz de la luna, estos artefactos resuenan con la sangre de Seline en la Bastet femenina que los encuentra, lo que aumenta su conexión con Luna." #NT!
+ artifact_truthspeaker_stick_name: "El palo que dice la verdad" #NT!
+ artifact_truthspeaker_stick_description: "Este fetiche temperamental parece un bastón tallado y decorado, pero en realidad volará hacia cualquier mentiroso que se encuentre en su área para sacarle la verdad a golpes. Si está rodeado de falsedades, brillará como una brasa e intentará aplastar a todos los mentirosos que se encuentren a su alrededor hasta que se sometan sin piedad." #NT!
+ artifact_silver_hakarr_name: "Hakarr plateado" #NT!
+ artifact_silver_hakarr_description: "Al igual que los klaives de los Garou, estos hunga-mungas de plata son peligrosos de fabricar y letales de usar. Estas monstruosas armas rituales utilizadas en las batallas más letales, están hechas de plata en bruto y están investidas con espíritus de guerra." #NT!
+ artifact_frog_skin_name: "Piel de rana" #NT!
+ artifact_frog_skin_description: "Esta piel, normalmente envuelta alrededor de la mano a modo de guante, permite al usuario neutralizar todo tipo de venenos con solo un toque." #NT!
+ artifact_ice_knife_name: "Cuchillo de hielo" #NT!
+ artifact_ice_knife_description: "Esta poderosa arma fetiche está prohibida debido a su relación con los espíritus del hielo: se derrite si se expone a temperaturas positivas. Por lo tanto, los propietarios deben tener cuidado de usarla solo en condiciones climáticas apropiadamente frías." #NT!
+ artifact_judgment_hammer_name: "Martillo del juicio" #NT!
+ artifact_judgment_hammer_description: "Esta preciada reliquia del Khan, quizás la más poderosa de la nación Bastet, duplica la fuerza de su portador y crea un poderoso trueno con cada uno de sus golpes. Sin embargo, esta arma es absurdamente pesada y solo los más poderosos entre los Khan han sido capaces de usarla correctamente." #NT!
+ artifact_foe_heart_name: "El corazón del enemigo" #NT!
+ artifact_foe_heart_description: "Si una Bastet logra matar a un enemigo poderoso sin abandonar su forma de raza, se le extrae el corazón y se le coloca un espíritu del Caos. La Bastet puede entonces usar la Gnosis para activar este fetiche y recuperar su fuerza de voluntad." #NT!
+ artifact_jade_arrows_name: "Flechas de jade" #NT!
+ artifact_jade_arrows_description: "Estas flechas, utilizadas principalmente por el Khan, se crean infundiéndoles un espíritu de muerte. Infligen daño agravado a criaturas sobrenaturales y explotan al impactar. Mientras un fragmento siga incrustado en la víctima, las heridas causadas por estas flechas no se pueden curar." #NT!
+ artifact_quicksilver_name: "Azogue" #NT!
+ artifact_quicksilver_description: "Un pequeño frasco de mercurio ligado a un espíritu del agua, este artefacto permite a su usuario traer una persona adicional consigo en el [umbra|E]." #NT!
+ artifact_false_protection_name: "Falsa protección" #NT!
+ artifact_false_protection_description: "Las mayores debilidades de los Bastet son sus Yava, o secretos tribales, y este fetiche es una forma (un tanto blasfema) de protegerlos. Una vez activado, este artefacto intercambia el Yava de su dueño por uno de otra tribu, lo que garantiza que su secreto más importante nunca se conozca... a costa del secreto de otra tribu." #NT!
+  
+ artifact_incunabulum_fragment_name: "Tratado de Kupala" #NT!
+ artifact_incunabulum_fragment_description: "#bold Si se reunieran suficientes de estos tratados, se podrían compilar en un libro definitivo(?) sobre Kupala.#!\nFragments de conocimiento sobre Kupala cifrado en metáforas, cifras, diagramas, cuartetos, revelaciones enoquianas y, por supuesto, profecía." #NT!
+ artifact_incunabulum_kupalam_name: "Incunables Kupalam" #NT!
+ artifact_incunabulum_kupalam_description: "Un voluminoso manuscrito que recopila fuentes fragmentadas anteriores. Aunque la mayor parte está en latín académico, algunas partes están codificadas en metáforas, cifras, diagramas, cuartetos, revelaciones enoquianas y, por supuesto, profecías. Un equipo de eruditos podría pasar un siglo desentrañando las capas de significado dentro de su texto, y cada uno llegaría a una versión diferente de la verdad detrás del mito de Kupala. Algunos ocultistas afirman que los rituales dentro de sus páginas tenían como objetivo atar a Kupala. Otros insisten en que el tomo puede usarse para invocarlo y controlarlo." #NT!
+ artifact_broken_blade_michael_name: "Hoja rota de Michael" #NT!
+ artifact_broken_blade_michael_description: "#bold Puede ser reparada por vampiros con una decisión menor.#!\nThis La espada antigua era propiedad de Michael mucho antes de que se convirtiera en Michael. Fue utilizada por una niña de Ebla para suicidarse cuando su amor eterno nunca llegó a salvarlos. Fue recuperada siglos después por esta misma niña, ahora inmortal, y empoderada con su odio demoníaco por quien la abandonó.\nFinalmente, en 1204, la espada regresó a su dueño original y su destrucción fue el penúltimo acto de venganza de quien una vez fue una niña de Ebla." #NT!
+ artifact_bow_sun_name: "Arco del sol" #NT!
+ artifact_bow_sun_description: "Un poderoso arco mágico creado por el propio Al Ashrad. Se dice que brilla con el poder del sol cuando una amenaza oculta se acerca a su dueño." #NT!
+ artifact_fang_kali_name: "Colmillo de Kali" #NT!
+ artifact_fang_kali_description: "Una poderosa daga mágica que pertenecía a Al Ashrad, aparentemente un remanente de sus días mortales como mago. Si bien el hechicero no hace comentarios al respecto, el origen de esta daga podría ser una pista sobre la fe mortal y el trasfondo cultural del misterioso vampiro." #NT!
+ artifact_cup_laezar_name: "Copa de Laezar el Durmiente" #NT!
+ artifact_cup_laezar_description: "Una copa de plata bellamente elaborada que se dice que pertenece a la cripta perdida de Laezar el Durmiente, una criatura legendaria venerada por algunos Baali como uno de los Hijos de la Oscuridad Exterior." #NT!
+ artifact_ubar_chronicles_name: "Las crónicas de Ubar" #NT!
+ artifact_ubar_chronicles_description: "Un texto antiguo apreciado por algunos estudiosos de los vampiros, este tomo intenta combinar los mitos de Enoc y Ubar en un todo cohesivo." #NT!
+ artifact_gospels_irad_name: "Evangelios de Irad y Adah" #NT!
+ artifact_gospels_irad_description: "Un texto antiguo que resume varias batallas libradas por el guerrero vampiro de segunda generación Irad. También es una de las pocas fuentes que afirman la existencia de un misterioso hijo "perdido" de Caín llamado Adah." #NT!
+ artifact_codex_damned_name: "Códice de los condenados" #NT!
+ artifact_codex_damned_description: "Un texto antiguo que trata sobre el gobierno y las jerarquías en la Primera y Segunda Ciudad. Es una escritura oscura, pero de todos modos muy valorada por la mayoría de los eruditos nodistas." #NT!
+ artifact_wounds_sword_name: "Heridas de la espada de la noche" #NT!
+ artifact_wounds_sword_description: "Un poema védico popular entre los vampiros indios. Ensalza la valentía y el liderazgo con el ejemplo." #NT!
+ artifact_canticle_japhet_name: "Cántico de Jafet" #NT!
+ artifact_canticle_japhet_description: "Un texto ampliamente considerado herético (y aparentemente no escrito por el respetado capadocio Japhet), este volumen afirma que Caín está muerto, ofreciendo así una visión muy diferente de la historia más antigua de los Cainitas." #NT!
+ artifact_gospel_consoler_name: "Evangelio del Consolador" #NT!
+ artifact_gospel_consoler_description: "El texto demonológico más infame, también llamado Evangelio de Menahem. Este documento presenta a Lucifer y a los demonios del infierno como ángeles iluminados que se han sacrificado para educar y elevar a la humanidad. Contiene varios de los nombres demoníacos más antiguos y poderosos, así como rituales generales de invocación." #NT!
+ artifact_book_thoth_name: "Libro de Thoth" #NT!
+ artifact_book_thoth_description: "El antiguo mito egipcio describe los hechizos de este libro como una forma de ofrecer el máximo control sobre la vida y la muerte. Algunos creen que este libro describe ciclos de existencia, una letanía de eones que surgieron y cayeron antes de que existiera la historia registrada. Los Setitas añaden que estos mundos muertos todavía existen, al igual que sus gobernantes, pero que solo un tonto o un loco invocaría poderes tan malignos y primordiales. Las momias tienen una visión más matizada, ya que piensan que Thoth fue el tutor de la propia Isis en cuestiones de hechicería, lo que lo convirtió en un mentor de quien les ofreció la verdadera inmortalidad." #NT!
+ artifact_dreams_angra_name: "Sueños de Angra Mainyu" #NT!
+ artifact_dreams_angra_description: "Este diario proviene del primer Sumo Sacerdote de Baal y, como tal, es muy reverenciado por los Baali. Este códice detalla sus rituales más salvajes y termina con una profecía oscura y reveladora sobre el alzamiento infernal para devorar el mundo." #NT!
+ artifact_book_tobit_name: "Libro de Tobit" #NT!
+ artifact_book_tobit_description: "Una versión herética del Libro deuterocanónico de Tobías que data de la antigua Cartago. Esta versión, apreciada por los diabolistas, es una copia del texto bíblico original, muy comentado por escrito tanto por Troile como por su amante, Moloch. Esta versión contiene una antigua tradición infernal sobre los clanes y muchos secretos celosamente guardados sobre la vida en su antigua ciudad." #NT!
+  
+ artifact_shard_copy_name: "[target.GetNameNoTooltip]" #NT!
+ artifact_shard_copy_desc: "[target.GetDesc]" #NT!
+  
+ artifact_lilith_shard_name: "Fragmento del códice de la Madre Oscura" #NT!
+ artifact_lilith_shard_description: "Un fragmento que indaga en los orígenes y motivos de la Madre Oscura que educó al Padre Oscuro en las artes de la Sangre. El fragmento rezuma el veneno de su rabia apenas contenida. La agonía y el dolor recorren cada personaje, mientras el propio fragmento parece temblar, pero se desconoce si es por pena o rabia." #NT!
+ artifact_enoch_shard_name: "Fragmento del Códice Enoquiano" #NT!
+ artifact_enoch_shard_description: "Un fragmento que se asemeja a la piedra angular de un palacio, el fragmento parece ser el dictado del lenguaje de la Primera Ciudad, la lengua de la utopía del Padre Oscuro. Esta antigua civilización está tan arraigada en este fragmento que puedes sentir cómo te invade la vida nocturna de la ciudad a través del simple ambiente." #NT!
+ artifact_sphere_shard_name: "Fragmento del códice de gotitas" #NT!
+ artifact_sphere_shard_description: "Un fragmento cubierto de manchas oxidadas de sangre y vitae, cuyo interior, si se toca, parece chapotear como si en su interior hubiera un líquido. El fragmento susurra acerca de las artes de la sangre y lo arcano. Casi te susurra a ti, mientras tu sangre retumba cada vez que extiendes la mano para tocarlo." #NT!
+ artifact_diplomacy_shard_name: "Fragmento del códice diplomático" #NT!
+ artifact_diplomacy_shard_description: "Este fragmento de vidrio, que huele a perfumes augustos y vinos finos, tiene una escritura mucho más elegante que las demás. Es refinado incluso en su decadencia, ya que envejece con gracia a pesar de los milenios de abandono que sufre. Con solo mirarlo, se puede sentir que el espíritu se despierta ante su tranquila dignidad." #NT!
+ artifact_martial_shard_name: "Fragmento del códice militante" #NT!
+ artifact_martial_shard_description: "Este fragmento contiene un análisis exhaustivo de la guerra y el entrenamiento. Tiene un aire de disciplina y ferocidad, y en él se refleja la sabiduría de mil batallas. A pesar de que el fragmento habla de la guerra con carros y del refinamiento del bronce, gran parte de la información que contiene sigue siendo relevante hoy en día por su sabiduría eterna." #NT!
+ artifact_stewardship_shard_name: "Fragmento del códice del guardián" #NT!
+ artifact_stewardship_shard_description: "Un fragmento de lo que parece haber sido un informe exhaustivo del senescal sobre los registros de "ganado" y los proyectos de desarrollo de la Segunda Ciudad; todo, desde la construcción hasta el flujo del comercio, está detallado en esta arcilla antigua." #NT!
+ artifact_intrigue_shard_name: "Fragmento del códice enigmático" #NT!
+ artifact_intrigue_shard_description: "Un fragmento que parece estar ocultándose de forma activa. Contiene los detalles de un romance prohibido entre dos Cainitas de la Segunda Ciudad y las diversas formas en que mantuvieron su unión oculta al resto de la ciudad, incluso bajo la mirada de los Antediluvianos. Es impresionante, incluso cuando las últimas piezas del fragmento detallan lo que sus progenitores les hicieron una vez que fueron descubiertos." #NT!
+ artifact_learning_shard_name: "Fragmento del códice de Sagely" #NT!
+ artifact_learning_shard_description: "Un fragmento que contiene una tesis notablemente completa sobre los Caminos más antiguos de la Moralidad, los matices de la Humanidad, la Realeza y otros asuntos Teológicos Cainitas. Más que los otros fragmentos, este parece estar escrito con mucha más pasión y amor. Parece que Cappadocius tenía sus inclinaciones desde el principio." #NT!
+ artifact_genesis_shard_name: "Fragmento del códice primordial" #NT!
+ artifact_genesis_shard_description: "Un fragmento que parece imposiblemente antiguo y que tiene los restos de una raíz de duraznero pegados en él. Los eventos que detalla este fragmento son contradictorios y antiguos, ya que se mueve entre un pantano de atemporalidad y la creación del universo. Y lo más extraño de todo es que el fragmento parece latir con vida y, lo más extraño de todo, con una sabiduría maravillosa y profana." #NT!
+ artifact_caine_shard_name: "Fragmento del códice del Padre Oscuro" #NT!
+ artifact_caine_shard_description: "Un fragmento que detalla las observaciones del Señor de la Primera Ciudad y el Padre Oscuro, el fragmento fluye y refluye entre intentar comprender la mente interior del Primer Asesino y sus peculiaridades e inclinaciones mientras gobernaba a sus hijos. Las Tradiciones están extrañamente ausentes y, sin embargo, mientras lees el fragmento, sientes que en algún lugar, un par de ojos antiguos te están observando." #NT!
+ artifact_soul_shard_name: "Fragmento del códice con alma" #NT!
+ artifact_soul_shard_description: "Un fragmento que de alguna manera tiene un aura propia; el fragmento parece tener destellos tanto del mundo de los muertos como de los lugares salvajes entre los valles. Da la sensación de que contempla cosas, ya que los personajes del fragmento parecen casi introspectivos." #NT!
+ artifact_body_shard_name: "Fragmento del códice visceral" #NT!
+ artifact_body_shard_description: "Un fragmento hecho de la arcilla más extraña, el fragmento es poroso y suave, con una consistencia similar a la de la carne. En él se detallan tratados complejos sobre anatomía y fisiología Cainita, así como observaciones horrorosas sobre las artes de los Antiguos. Incluso para un vampiro Antiguo, el fragmento y lo que detalla resulta particularmente… repugnante." #NT!
+ artifact_seth_shard_name: "Fragmento del códice de La primera presa" #NT!
+ artifact_seth_shard_description: "Un fragmento que se lee de la misma manera que se lee el menú de un banquete; el fragmento detalla los diversos linajes más antiguos del hermano menor del Primer Asesino y todas las sutilezas de los gustos y matices. Pero advierte de los peligros de cada uno, mostrando cómo incluso en esas lejanas noches de los Dioses de la Sangre, el Cazador también estaba allí." #NT!

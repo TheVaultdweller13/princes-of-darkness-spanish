@@ -79,7 +79,6 @@
  kingly_elixir_prowess_modifier: "Elixir real (destreza)"
  kingly_tonic_modifier: "Tónico real"
  philtre_of_the_blackened_sands_modifier: "Filtro de arenas ennegrecidas"
- philtre_of_the_blackened_sands_modifier_desc: "Un incienso que transportará a cualquiera que lo inhale a los Mundos Espirituales."
  divine_elixir_modifier: "Elixir divino"
  divine_elixir_diplomacy_modifier: "Elixir divino (Diplomacia)"
  divine_elixir_martial_modifier: "Elixir divino (marcial)"
@@ -89,6 +88,85 @@
  divine_elixir_prowess_modifier: "Elixir divino (destreza)"
  divine_tonic_modifier: "Tónico divino"
  draught_of_the_stalwart_ab_modifier: "Borrador del Stalwart Ab"
+  
+ cloud_of_smoke_modifier_desc: "La Momia provoca un incendio que emite una espesa nube de humo negro arrojando en él un polvo preparado." #NT!
+ drink_of_seven_days_rest_modifier_desc: "Esta poción alivia a quien la bebe de cualquier fatiga, curándola de daños menores." #NT!
+ mild_poison_modifier_desc: "Un veneno menor que puede ser bastante letal." #NT!
+ potion_of_resilience_modifier_desc: "Esta poción actúa como un anestésico sobrenatural." #NT!
+ simple_philtre_modifier_desc: "Un filtro, una sustancia menor que induce una emoción específica en su objetivo." #NT!
+ simple_tonic_modifier_desc: "Un ungüento o poción curativa." #NT!
+ blood_of_the_snake_modifier_desc: "Un antídoto que protege contra cualquier veneno natural o cura el daño causado por el veneno." #NT!
+ cobra_spit_modifier_desc: "Un líquido ácido que es devastador para el tejido vivo." #NT!
+ essence_longing_modifier_desc: "Un perfume que actúa como un afrodisíaco menor." #NT!
+ eyes_of_the_ka_modifier_desc: "Un ungüento que, cuando se aplica en los ojos y los oídos, permite presenciar el [shadowlands|E].\n#weak Obtenga acceso al [underworld|E] durante los viajes espirituales.#!" #NT!
+ complex_philtre_modifier_desc: "Un filtro mayor, que induce una emoción más duradera." #NT!
+ complex_tonic_modifier_desc: "Un tónico más avanzado con mayores capacidades curativas." #NT!
+ dangerous_poison_modifier_desc: "Un veneno más eficaz." #NT!
+ one_hundred_thousand_tongues_modifier_desc: "Al crear un ungüento especial para labios y oídos, la momia puede entender cualquier idioma que se hable a su alrededor." #NT!
+ potion_of_valor_modifier_desc: "Una poción que permite a su receptor ignorar las penalizaciones por heridas durante un corto período de tiempo." #NT!
+ salts_of_the_dead_modifier_desc: "La Momia puede absorber sales especiales que la hacen inmune a ciertos tipos de daños que afectan sólo a los vivos (como la falta de oxígeno)." #NT!
+ panacea_modifier_desc: "Una poción que puede curar cualquier enfermedad (desde el resfriado común hasta la viruela), pero no puede curar heridas." #NT!
+ philosophers_stone_modifier_desc: "Un polvo que se aglomera rápidamente en forma de guijarros y que permite transformar cualquier metal en oro o plata." #NT!
+ potion_of_separable_ka_modifier_desc: "Una poción que le permite separar un alma de su cuerpo.\n#weak Obtén acceso al [astral_reaches|E] durante los viajes espirituales.#!" #NT!
+ deadly_poison_modifier_desc: "Un veneno verdaderamente peligroso." #NT!
+ flesh_of_the_gods_modifier_desc: "Al rociar su cuerpo con polvo de oro, la Momia puede obtener protección mágica temporal." #NT!
+ potent_philtre_modifier_desc: "Un filtro mayor, que induce una emoción más duradera." #NT!
+ potent_tonic_modifier_desc: "Un tónico más avanzado con mayores capacidades curativas." #NT!
+ potion_of_the_divine_modifier_desc: "Una poción que puede evitar temporalmente la muerte." #NT!
+ potion_of_the_vile_body_modifier_desc: "Una poción que vuelve venenosos todos sus fluidos corporales." #NT!
+ distill_the_wisdom_of_maat_modifier_desc: "La Momia puede destilar su propio nivel de Equilibrio, para que la gente vuelva a estar en sintonía con el Principio Cósmico." #NT!
+ draught_of_perfect_memory_modifier_desc: "Una sustancia que repara instantáneamente la memoria de su consumidor, sorteando incluso bloqueos sobrenaturales." #NT!
+ personal_poison_modifier_desc: "Un veneno que solo funcionará en un objetivo específico." #NT!
+ princely_tonic_modifier_desc: "Un tónico más avanzado con mayores capacidades curativas." #NT!
+ water_of_life_modifier_desc: "La Momia puede usar su Sekhem para imbuir cualquier agua pura con habilidades curativas menores." #NT!
+ elixir_of_thoths_aptitude_modifier_desc: "Un elixir especializado que otorga destreza en una sola habilidad." #NT!
+ kingly_tonic_modifier_desc: "Un tónico altamente enrarecido con mayores capacidades curativas." #NT!
+ philtre_of_the_blackened_sands_modifier_desc: "Un incienso que transportará a cualquiera que lo inhale a los Mundos Espirituales."
+ divine_tonic_modifier_desc: "Un tónico altamente enrarecido con mayores capacidades curativas." #NT!
+ draught_of_the_stalwart_ab_modifier_desc: "La Momia puede fortalecer la resistencia mental de cualquier persona que ingiera esta sustancia." #NT!
+  
+ simple_elixir_modifier_desc: "La Momia crea un elixir, una poción menor que potencia un solo atributo durante su duración." #NT!
+ simple_elixir_diplomacy_modifier_desc: "$simple_elixir_modifier_desc$" #NT!
+ simple_elixir_martial_modifier_desc: "$simple_elixir_modifier_desc$" #NT!
+ simple_elixir_stewardship_modifier_desc: "$simple_elixir_modifier_desc$" #NT!
+ simple_elixir_intrigue_modifier_desc: "$simple_elixir_modifier_desc$" #NT!
+ simple_elixir_learning_modifier_desc: "$simple_elixir_modifier_desc$" #NT!
+ simple_elixir_prowess_modifier_desc: "$simple_elixir_modifier_desc$" #NT!
+ complex_elixir_modifier_desc: "La Momia crea un elixir mayor, que mejora el aumento de un solo atributo." #NT!
+ complex_elixir_diplomacy_modifier_desc: "$complex_elixir_modifier_desc$" #NT!
+ complex_elixir_martial_modifier_desc: "$complex_elixir_modifier_desc$" #NT!
+ complex_elixir_stewardship_modifier_desc: "$complex_elixir_modifier_desc$" #NT!
+ complex_elixir_intrigue_modifier_desc: "$complex_elixir_modifier_desc$" #NT!
+ complex_elixir_learning_modifier_desc: "$complex_elixir_modifier_desc$" #NT!
+ complex_elixir_prowess_modifier_desc: "$complex_elixir_modifier_desc$" #NT!
+ potent_elixir_modifier_desc: "La Momia crea un elixir mayor, que mejora el aumento de un solo atributo." #NT!
+ potent_elixir_diplomacy_modifier_desc: "$potent_elixir_modifier_desc$" #NT!
+ potent_elixir_martial_modifier_desc: "$potent_elixir_modifier_desc$" #NT!
+ potent_elixir_stewardship_modifier_desc: "$potent_elixir_modifier_desc$" #NT!
+ potent_elixir_intrigue_modifier_desc: "$potent_elixir_modifier_desc$" #NT!
+ potent_elixir_learning_modifier_desc: "$potent_elixir_modifier_desc$" #NT!
+ potent_elixir_prowess_modifier_desc: "$potent_elixir_modifier_desc$" #NT!
+ princely_elixir_modifier_desc: "La Momia crea un elixir mayor, que mejora el aumento de un solo atributo." #NT!
+ princely_elixir_diplomacy_modifier_desc: "$princely_elixir_modifier_desc$" #NT!
+ princely_elixir_martial_modifier_desc: "$princely_elixir_modifier_desc$" #NT!
+ princely_elixir_stewardship_modifier_desc: "$princely_elixir_modifier_desc$" #NT!
+ princely_elixir_intrigue_modifier_desc: "$princely_elixir_modifier_desc$" #NT!
+ princely_elixir_learning_modifier_desc: "$princely_elixir_modifier_desc$" #NT!
+ princely_elixir_prowess_modifier_desc: "$princely_elixir_modifier_desc$" #NT!
+ kingly_elixir_modifier_desc: "La Momia crea un elixir mucho más poderoso, que mejora el aumento de un solo atributo." #NT!
+ kingly_elixir_diplomacy_modifier_desc: "$kingly_elixir_modifier_desc$" #NT!
+ kingly_elixir_martial_modifier_desc: "$kingly_elixir_modifier_desc$" #NT!
+ kingly_elixir_stewardship_modifier_desc: "$kingly_elixir_modifier_desc$" #NT!
+ kingly_elixir_intrigue_modifier_desc: "$kingly_elixir_modifier_desc$" #NT!
+ kingly_elixir_learning_modifier_desc: "$kingly_elixir_modifier_desc$" #NT!
+ kingly_elixir_prowess_modifier_desc: "$kingly_elixir_modifier_desc$" #NT!
+ divine_elixir_modifier_desc: "La Momia crea un elixir mayor, que mejora el aumento de uno o más atributos." #NT!
+ divine_elixir_diplomacy_modifier_desc: "$divine_elixir_modifier_desc$" #NT!
+ divine_elixir_martial_modifier_desc: "$divine_elixir_modifier_desc$" #NT!
+ divine_elixir_stewardship_modifier_desc: "$divine_elixir_modifier_desc$" #NT!
+ divine_elixir_intrigue_modifier_desc: "$divine_elixir_modifier_desc$" #NT!
+ divine_elixir_learning_modifier_desc: "$divine_elixir_modifier_desc$" #NT!
+ divine_elixir_prowess_modifier_desc: "$divine_elixir_modifier_desc$" #NT!
   
  simple_ward_tattoo_modifier: "Barrio Sencillo"
  wood_ward_tattoo_modifier: "Barrio de madera"
@@ -152,6 +230,8 @@
  weather_magic_flood_modifier_desc: "Esta zona está dañada por las inundaciones."
  weather_magic_drought_modifier: "Sequía"
  weather_magic_drought_modifier_desc: "Esta zona está dañada por las sequías."
+ weather_magic_cold_wave_modifier: "Ola de frío" #NT!
+ weather_magic_cold_wave_modifier_desc: "Esta zona está dañada por una ola de frío." #NT!
   
  loyal_companion_tt: "Después de momificar a tu fiel animal, lo resucitas como tu sirviente espectral."
  mummy_cat_modifier: "Gato mascota resucitado"
@@ -205,3 +285,19 @@
  lifeblood_addiction_modifier_desc: "Los vampiros ansían la potente vitae que fluye por las venas de las momias, pero los vampiros particularmente inhumanos desprecian la “debilidad moral” que les inspira beber sangre de momia. Un vampiro que se ha vuelto psicológicamente adicto a la sangre de momia degenera rápidamente en un monstruo."
   
  goto_the_disaster_modifier: "Viajando al desastre"
+  
+ umbra_easier_wraith_binding_modifier: "Línea roja de la jerarquía" #NT!
+ umbra_easier_wraith_binding_modifier_desc: "Aumenta la probabilidad de éxito de la vinculación $POD_splat_wraith_plural$" #NT!
+ umbra_cheaper_wraith_maintenance_modifier: "Compartimento de Skinlands" #NT!
+ umbra_cheaper_wraith_maintenance_modifier_desc: "Reduce el coste de mantenimiento del límite $POD_splat_wraith_plural$ en las Tierras de la Piel en un 50 %" #NT!
+ umbra_double_wraith_limit_modifier: "Corazón de los Espectros" #NT!
+ umbra_double_wraith_limit_modifier_desc: "Límite de dobles $POD_splat_wraith$" #NT!
+  
+ umbra_cheaper_army_modifier: "Valhalla" #NT!
+ umbra_better_army_modifier: "Valquiria" #NT!
+  
+ umbra_demonic_army_modifier: "Ejército demoníaco" #NT!
+ umbra_demonic_army_modifier_desc: "Obtén acceso a lo más demoníaco [men_at_arms|E]" #NT!
+ umbra_demon_binding_modifier: "Técnicas de atadura demoníaca" #NT!
+ umbra_demon_binding_modifier_desc: "Aumenta la probabilidad de éxito de vincular y aprender los nombres verdaderos de $POD_splat_demon_plural$\nDisminuye el tiempo de vinculación y aprendizaje de los nombres verdaderos de $POD_splat_demon_plural$" #NT!
+ umbra_demon_binding_modifier_scheme: "Tienes [GetModifier('umbra_demon_binding_modifier').GetNameWithTooltip]: #P +50#!" #NT!

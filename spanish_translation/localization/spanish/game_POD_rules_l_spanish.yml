@@ -1,6 +1,9 @@
 ﻿l_spanish:
- POD_gamerule: "#color:{0.7,0,0};glow_color:{1,0,0,0.5} [Concept('princes_of_darkness','PoD:')]#!"
+ game_rule_category_pod: "Príncipes de las tinieblas" #NT!
+ game_rule_category_pod_graphics: "Gráficos" #NT!
+  
  #POD_gamerule: "[Concept('princes_of_darkness','@POD_icon! ')]"
+ POD_gamerule: "#color:{0.7,0,0};glow_color:{1,0,0,0.5} [Concept('princes_of_darkness','PoD:')]#!"
   
  rule_NPC_vampire_ruler_lifestyle_learning: "$POD_gamerule$ Aprendizaje antiguo"
  setting_NPC_vampire_rulers_do_not_learn_lifestyle_perks: "Los ancianos no aprenden trucos nuevos."
@@ -107,6 +110,18 @@
  setting_resonance_xp_fast: "Experiencia de resonancia rápida"
  setting_resonance_xp_fast_desc: "La experiencia de Resonancia que ofrece beber a los mortales es mayor de lo habitual, lo que resulta en una mayor velocidad de mejora de los poderes vampíricos."
   
+ rule_pod_overextension: "$POD_gamerule$ Sobreextensión" #NT!
+ setting_pod_overextension_default: "Sobreextensión predeterminada" #NT!
+ setting_pod_overextension_default_desc: "Está vigente una nueva ley que otorga modificadores negativos según el tamaño de tu reino. También abre nuevas posiciones en la corte para facilitar estos modificadores." #NT!
+ setting_pod_overextension_off: "Sin sobreextensión" #NT!
+ setting_pod_overextension_off_desc: "La ley del reino de sobreextensión no aparecerá. Esto hará que el juego sea más fácil." #NT!
+  
+ rule_pod_grand_city_limit: "$POD_gamerule$ [grand_city|E] Límite" #NT!
+ setting_pod_grand_city_limit_enabled: "Uno" #NT!
+ setting_pod_grand_city_limit_enabled_desc: "Solo puedes tener un [grand_city|E] en tu dominio personal." #NT!
+ setting_pod_grand_city_limit_disabled: "Ilimitado" #NT!
+ setting_pod_grand_city_limit_disabled_desc: "Puedes tener una cantidad ilimitada de [grand_cities|E]. Esto hará que el juego sea #N más fácil#!." #NT!
+  
  rule_hunt_journey_speed: "$POD_gamerule$ Velocidad de caza [journeys|E]"
  setting_hunt_journey_speed_5: "5 meses"
  setting_hunt_journey_speed_5_desc: "Hunt [journeys|E] tiene un [planning_speed|E] del 20% mensual."
@@ -142,3 +157,17 @@
  setting_POD_roguelike_mode_enabled_desc: "[roguelike_mode|E] está habilitado. Cambiarás a un gobernante de una provincia existente en el mapa. #N Muerte permanente. Destinado a jugadores experimentados. #!"
  setting_POD_roguelike_mode_enabled_no_permadeath: "Aleatorio (sin muerte permanente)"
  setting_POD_roguelike_mode_enabled_no_permadeath_desc: "[roguelike_mode|E] está habilitado. Cambiarás a un gobernante de una provincia existente en el mapa. Cuando mueras, cambiarás a un personaje diferente."
+  
+ rule_pod_shattered_world: "$POD_gamerule$ Mundo destrozado" #NT!
+ setting_pod_shattered_world_disabled: "Desactivado" #NT!
+ setting_pod_shattered_world_disabled_desc: "Shattered World está deshabilitado." #NT!
+ setting_pod_shattered_world_counties: "Activado" #NT!
+ setting_pod_shattered_world_counties_desc: "Todo título de propiedad será destruido." #NT!
+  
+ rule_POD_hud_portrait_size: "$POD_gamerule$ Tamaño de retrato del HUD" #NT!
+ setting_POD_hud_portrait_size_default: "Por defecto" #NT!
+ setting_POD_hud_portrait_size_default_desc: "El retrato en la parte inferior izquierda de la pantalla es #V un poco más grande#! que en Vanilla CK3." #NT!
+ setting_POD_hud_portrait_size_vanilla: "Vainilla" #NT!
+ setting_POD_hud_portrait_size_vanilla_desc: "El retrato en la parte inferior izquierda de la pantalla es #V del mismo tamaño #! que en Vanilla CK3." #NT!
+ setting_POD_hud_portrait_size_larger: "Más grande" #NT!
+ setting_POD_hud_portrait_size_larger_desc: "El retrato en la parte inferior izquierda de la pantalla es #V notablemente más grande#! que en Vanilla CK3." #NT!

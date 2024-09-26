@@ -36,5 +36,7 @@
  pod_knights.100.t: "Desleal $knight_culture_player_plural_no_tooltip$"
  pod_knights.100.desc: "$knight_culture_player_plural$ solo están dispuestos a luchar por un líder en el que realmente creen. Después de todo, están arriesgando sus vidas.\n\nÚltimamente, ha habido rumores en la corte de que algunos de sus campeones están considerando irse y buscar fortuna en otro lado."
  pod_knights.100.tt: "Estos $knight_culture_player_plural$ abandonarán tu cancha por falta de [loyalty_with_icon|E] si su opinión sigue estando por debajo de [GetPlayer.MakeScope.ScriptValue('POD_loyalty_opinion')|0V] el próximo año:"
+ pod_knights.100.tt2: "Alternativamente, puedes #P;bold darles tierra#!, o asegurar su [loyalty_with_icon|E] de varias otras maneras." #NT!
  pod_knights.100.a: "Sobre."
+ pod_knights.100.b: "Te relevaré de tus deberes de combate." #NT!
  pod_knights.100.message: "$knight_culture_player$ se va por falta de [loyalty_with_icon|E]"

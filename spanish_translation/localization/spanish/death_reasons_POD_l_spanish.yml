@@ -33,10 +33,14 @@
  death_hunt_backfired_lea_killer: "Pensé que [CHARACTER.GetSheHe] podría enfrentarse a [TARGET_CHARACTER.GetUIName] armado con un libro"
  death_hunt_backfired_pro: "Pagué el precio por enfrentar a un vampiro"
  death_hunt_backfired_pro_killer: "pagué el precio por enfrentar [TARGET_CHARACTER.GetUIName]"
+ death_werewolf: "Pagué el precio por enfrentarme a un hombre lobo" #NT!
+ death_werewolf_killer: "pagué el precio por enfrentar [TARGET_CHARACTER.GetUIName]" #NT!
  death_wrath_of_god: "fue herido por el Dios Todopoderoso"
  death_wrath_of_god_killer: "Fue herido por el Dios Todopoderoso por orden de [TARGET_CHARACTER.GetUIName]"
  death_soulforging: "Fue forjado con alma en un artefacto"
  death_soulforging_killer: "Fue forjado por [TARGET_CHARACTER.GetUIName]"
+ death_forced_fetish: "Fue obligado a convertirse en un fetiche" #NT!
+ death_forced_fetish_killer: "Fue obligado a convertirse en un fetiche por [TARGET_CHARACTER.GetUIName]" #NT!
  death_existence_erased: "Fue borrado de la existencia"
  death_existence_erased_killer: "fue borrado por [TARGET_CHARACTER.GetUIName]"
  death_failed_embrace: "Fue asesinado durante un abrazo fallido"
@@ -70,3 +74,12 @@
  death_annihilated: "Fue aniquilado por un Incarna o un espíritu igualmente (o incluso mayor) poderoso."
  death_great_fenris: "Fue aniquilado por el Gran Fenris"
  death_redemption: "ha regresado al cielo"
+ death_crimson_fever: "murió de [GetTrait('crimson_fever').GetName( CHARACTER.Self )]" #NT!
+ death_chulorviosis: "se ha convertido en un [GetTrait('alien').GetName( CHARACTER.Self )]" #NT!
+ death_demonic_plague: "murió de [GetTrait('demonic_plague').GetName( CHARACTER.Self )]" #NT!
+ death_gift_of_melancholia: "murió de [GetTrait('gift_of_melancholia').GetName( CHARACTER.Self )]" #NT!
+ death_flaying_plague: "murió de [GetTrait('flaying_plague').GetName( CHARACTER.Self )]" #NT!
+ death_scourge: "murió de [GetTrait('scourge').GetName( CHARACTER.Self )]" #NT!
+ death_experiment: "Fue asesinado durante un experimento" #NT!
+ death_experiment_killer: "Fue asesinado durante un experimento por [TARGET_CHARACTER.GetUIName]" #NT!
+ death_sargon_cappadocious: "alcanzó un estado insondable del ser" #NT!

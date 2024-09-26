@@ -166,6 +166,7 @@
  steal_the_mind_stewardship_loss_modifier: "Robar la mente: pérdida de la administración"
  steal_the_mind_intrigue_loss_modifier: "Roba la mente: pérdida de intriga"
  steal_the_mind_learning_loss_modifier: "Robar la mente: pérdida de aprendizaje"
+ MODIFIER_DEFINITION_VALUE_PER_SKILL: "#weak Aumento por cada lanzador [skill|E]#!" #NT!
   
  horrid_reality_perk_modifier: "[battle_modifier|E] : Horrible realidad"
  horrid_reality_perk_modifier_desc: "Al utilizar quimerismo, la mente de la víctima se coloca en un mundo ilusorio creado por el vampiro."
@@ -201,39 +202,6 @@
  achen_modifier: "[battle_modifier|E] : Sin armadura"
  cauldron_of_fear_modifier: "[battle_modifier|E] : Miedo"
  cold_light_modifier: "Cegado"
-  
- artifact_prowess_5_modifier: "[prowess|E]: #P +5#!"
- artifact_prowess_4_modifier: "[prowess|E]: #P +4#!"
- artifact_prowess_3_modifier: "[prowess|E]: #P +3#!"
- artifact_prowess_2_modifier: "[prowess|E]: #P +2#!"
- artifact_prowess_1_modifier: "[prowess|E]: #P +1#!"
- artifact_diplomacy_4_modifier: "[diplomacy|E]: #P +4#!"
- artifact_martial_4_modifier: "[martial|E]: #P +4#!"
- artifact_stewardship_4_modifier: "[stewardship|E]: #P +4#!"
- artifact_intrigue_4_modifier: "[intrigue|E]: #P +4#!"
- artifact_learning_4_modifier: "[learning|E]: #P +4#!"
- artifact_diplomacy_3_modifier: "[diplomacy|E]: #P +3#!"
- artifact_martial_3_modifier: "[martial|E]: #P +3#!"
- artifact_stewardship_3_modifier: "[stewardship|E]: #P +3#!"
- artifact_intrigue_3_modifier: "[intrigue|E]: #P +3#!"
- artifact_learning_3_modifier: "[learning|E]: #P +3#!"
- artifact_diplomacy_2_modifier: "[diplomacy|E]: #P +2#!"
- artifact_martial_2_modifier: "[martial|E]: #P +2#!"
- artifact_stewardship_2_modifier: "[stewardship|E]: #P +2#!"
- artifact_intrigue_2_modifier: "[intrigue|E]: #P +2#!"
- artifact_learning_2_modifier: "[learning|E]: #P +2#!"
- artifact_diplomacy_1_modifier: "[diplomacy|E]: #P +1#!"
- artifact_martial_1_modifier: "[martial|E]: #P +1#!"
- artifact_stewardship_1_modifier: "[stewardship|E]: #P +1#!"
- artifact_intrigue_1_modifier: "[intrigue|E]: #P +1#!"
- artifact_learning_1_modifier: "[learning|E]: #P +1#!"
- artifact_negate_prowess_penalty_add_6_modifier: "Resistencia a las lesiones ([prowess|E]): #P +6#!"
- artifact_negate_prowess_penalty_add_4_modifier: "Resistencia a las lesiones ([prowess|E]): #P +4#!"
- artifact_enemy_hard_casualty_modifier_4_modifier: "[command_modifier_i|E]enemigo [dead_soldiers|E]: #P +5%#!"
- artifact_hard_casualty_modifier_2_modifier: "[command_modifier_i|E]amistoso [dead_soldiers|E]: #P -3%#!"
- artifact_monthly_lifestyle_xp_1_modifier: "Experiencia mensual [lifestyle|E]: #P +10%#!"
- artifact_stress_loss_1_penalty_modifier: "[stress|E] pérdida: #N -10%#!"
- artifact_stress_gain_1_penalty_modifier: "[stress|E] ganancia: #N +10%#!"
   
  life_warden_modifier: "Guardián de la vida"
  life_warden_modifier_desc: "Permitir la resurrección si este personaje muere por causa no natural."
@@ -288,3 +256,35 @@
  save_real_intrigue_negate_modifier: ""
  save_real_learning_modifier: ""
  save_real_learning_negate_modifier: ""
+  
+ flandre_scarlet_modifier: "Flandre Escarlata" #NT!
+  
+ sabbat_hand_wazir_3_modifier: "Manipulación del Sabbat: Alta" #NT!
+ sabbat_hand_wazir_2_modifier: "Manipulación del Sabbat: media" #NT!
+ sabbat_hand_wazir_1_modifier: "Manipulación del Sabbat: Baja" #NT!
+ camarilla_hand_wazir_3_modifier: "Manipulación de la Camarilla: Alta" #NT!
+ camarilla_hand_wazir_2_modifier: "Manipulación de la Camarilla: media" #NT!
+ camarilla_hand_wazir_1_modifier: "Manipulación de la Camarilla: Baja" #NT!
+ ashirra_hand_wazir_3_modifier: "Manipulación de Ashirra: Alta" #NT!
+ ashirra_hand_wazir_2_modifier: "Manipulación de Ashirra: Media" #NT!
+ ashirra_hand_wazir_1_modifier: "Manipulación de Ashirra: Baja" #NT!
+ setite_hand_wazir_3_modifier: "Manipulación de Setitas: Alta" #NT!
+ setite_hand_wazir_2_modifier: "Manipulación de Setitas: Media" #NT!
+ setite_hand_wazir_1_modifier: "Manipulación de Setitas: Baja" #NT!
+ kueijin_hand_wazir_3_modifier: "Manipulación de Cathayan: Alta" #NT!
+ kueijin_hand_wazir_2_modifier: "Manipulación de Catay: Medio" #NT!
+ kueijin_hand_wazir_1_modifier: "Manipulación de Cathayan: Baja" #NT!
+  
+ needed_longevity_modifier: "Pasaron eras inmortales" #NT!
+  
+ POD_constantinople_plundered_modifier: "Constantinopla saqueada" #NT!
+ POD_constantinople_plundered_modifier_desc: "Constantinopla ha sido saqueada hasta los cimientos. De la ciudad del deseo del mundo sólo quedan cenizas y lágrimas." #NT!
+  
+ POD_recently_swung_scales_modifier: "Recientemente cambió la balanza" #NT!
+ POD_recently_swung_scales_modifier_desc: "Hacer pivotar el [scales_of_power|E] es #V 5#! veces más caro." #NT!
+  
+ POD_free_faith_change_modifier: "Cambio de fe gratuito" #NT!
+ POD_free_faith_change_modifier_desc: "¿No te sientes feliz con la fe que has adquirido al azar? No hay problema. ¡Aquí tienes un día de descuento para todas las conversiones de fe!" #NT!
+  
+ uncursed_nosferatu_modifier: "No afectado por la maldición del clan Nosferatu" #NT!
+ uncursed_tzimisce_modifier: "No afectado por la maldición del clan Tzimisce" #NT!

@@ -15,10 +15,12 @@
   
  POD_assault_lair_interaction: "Encuentra guarida"
  POD_assault_lair_interaction_desc: "Sigue un [journey|E] para conocer la ubicación exacta de este demonio. Luego comienza la caza. Obviamente, hay serios riesgos involucrados..."
+ POD_assault_lair_interaction_infiltration: "@death_icon!#N;bold Dado que [recipient.GetShortUIName] está en el rango [kingdom|E] o superior, solo puedes cazar [recipient.GetHerHim] en la guarida [Concept('infiltration','infiltrating')] [recipient.GetHerHis] directamente.#!" #NT!
  POD_assault_lair_interaction_effect: "Tendrás que emprender un viaje de [journey|E] para averiguar la ubicación exacta de este demonio. Luego, la caza comenzará. Obviamente, existen serios riesgos involucrados..."
  POD_assault_lair_interaction_monthly: "#help El [planning_speed|E] de este [journey|E] se basa en muchos factores, como la edad de tu objetivo, su rango, [intrigue|E], [masquerade_exposure|E] y otros.#!"
  POD_assault_lair_interaction_instant: "#help Como tienes [GetModifier('tracked_down_modifier').GetNameWithTooltip|L] como objetivo, el [journey|E] se completará instantáneamente.#!"
   
+ POD_heist_interaction_hostile_warning: "@death_icon!#N;bold [recipient.GetFirstNamePossessiveNoTooltip] [splat|E] te es hostil. Este [infiltration|E] será mucho más letal de lo normal y, si fallas, terminarás con tu #R ejecución#! en lugar de encarcelamiento.#!" #NT!
  POD_heist_interaction_wary: "@warning_icon! #X [recipient.GetShortUINameNoTooltip] es [GetModifier('wary_of_infiltrators_modifier').GetNameWithTooltip]#!"
  POD_heist_interaction_dont_scout: "El mapa no será revelado de antemano."
  POD_heist_interaction_scout: "El mapa #P;bold será revelado#!, pero el [planning_phase|E] tardará el doble."
@@ -29,6 +31,7 @@
  POD_gold_heist_interaction_desc: "Ve a [infiltration_mission|E] para robar [gold|E] de [recipient.GetShortUINameNoTooltip]"
  POD_gold_heist_dont_scout: "Prepárate rápidamente"
  POD_gold_heist_scout: "Explorar a fondo"
+ POD_cant_scout_hostile_heist: "No puedes reunir suficiente información sobre tus enemigos mortales." #NT!
  POD_gold_heist_interaction_effect: "Irás a un [infiltration_mission|E] para robarle [gold|E] a [recipient.GetShortUIName]."
  POD_gold_heist_interaction_monthly: "El [journey|E] tendrá un [planning_speed|E] de $twelve_months_monthly_num$ por mes."
  POD_gold_heist_interaction_monthly_scouted: "El [journey|E] tendrá un [planning_speed|E] de $two_years_monthly_num$ por mes."

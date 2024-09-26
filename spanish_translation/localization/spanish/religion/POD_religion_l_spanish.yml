@@ -1,12 +1,23 @@
 ﻿l_spanish:
   
  rf_kindred: "Vástagos"
+ rf_kindred_desc: ""
+ rf_kindred_adherent: "Parientes" #NT!
  rf_ignorance: "Ignorancia"
+ rf_ignorance_desc: ""
+ rf_hunters: "Cazadores"
+ rf_hunters_desc: ""
  rf_mummies: "Momias"
+ rf_mummies_desc: ""
  rf_wraiths: "Wraith"
+ rf_wraiths_desc: ""
+ rf_wraiths_adherent: "Fantasma" #NT!
  rf_kueijin: "Dharma"
+ rf_kueijin_desc: "Un Dharma es un camino hacia la iluminación que permite a los Wan Xian trascender sus naturalezas bestiales y ofrece la esperanza de alcanzar la iluminación y reincorporarse al ciclo kármico."
  rf_kueijin_adherent: "Dharmico"
  rf_demons: "Demonios"
+ rf_demons_desc: ""
+ rf_triat: "Triat"
  holy_site_paris_name: "París"
  holy_site_paris_effect_name: "Desde [holy_site|E] #weak ($holy_site_paris_name$)#!"
  holy_site_burgos_name: "Burgos"
@@ -260,7 +271,8 @@
  holy_site_qus_effect_name: "Desde [holy_site|E] #weak ($holy_site_qus_name$)#!"
  faith_conversion_cost_traditional_religion: "Esta fe es tradicional para tu Clan."
  faith_conversion_cost_patron_religion: "Esta fe es una fe patronal"
- rf_triat: "Triat"
+ faith_conversion_cost_wrong_splat_religion: "Esta fe es completamente ajena al personaje."
+ faith_conversion_cost_free_by_cc: "[GetModifier('POD_free_faith_change_modifier').GetNameWithTooltip]" #NT!
  holy_site_kherson_name: "Jersón"
  holy_site_kherson_effect_name: "Desde [holy_site|E] #weak ($holy_site_kherson_name$)#!"
  holy_site_chandax_name: "Chandax"
@@ -269,7 +281,6 @@
  holy_site_vannes_effect_name: "Desde [holy_site|E] #weak ($holy_site_vannes_name$)#!"
  holy_site_kunlun_name: "Kun Lun"
  holy_site_kunlun_effect_name: "Desde [holy_site|E] #weak ($holy_site_kunlun_name$)#!"
- faith_conversion_cost_wrong_splat_religion: "Esta fe es completamente ajena al personaje."
  holy_site_milangrey_name: "Milán"
  holy_site_milangrey_effect_name: "Desde [holy_site|E] #weak ($holy_site_milangrey_name$)#!"
  holy_site_moskva_name: "Moscú"

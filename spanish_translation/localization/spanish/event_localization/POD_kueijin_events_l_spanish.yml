@@ -77,6 +77,11 @@
   
   # Misc event 
   
+ podkueijin.240.t: "Shintai" #NT!
+ podkueijin.240.desc: "Se ha desarrollado un nuevo arte, el shintai, un descendiente del arte del cuerpo divino." #NT!
+ podkueijin.240.a: "Un desarrollo interesante." #NT!
+ podkueijin.240.a.tt: "Todos los [GetTrait('kueijin').GetName( GetPlayer )] obtienen acceso a [shintai_lifestyle|E]." #NT!
+  
  podkueijin.250.t: "La quinta edad"
  podkueijin.250.desc: "La rueda de las eras ha llegado a la siguiente era, a medida que las eras avanzan, la alimentación se vuelve más difícil, el chi se vuelve más raro y la iluminación toma más tiempo.\n\n$godbody_valid$"
  podkueijin.250.a: "La era de la oscuridad."
@@ -507,6 +512,11 @@
  kueijin_scheme.130.desc: "Puedes comer el alma, fusionándola con la tuya. Este acto cuesta automáticamente un nivel de Dharma, a menos que sigas el Aullido del Dharma del Tigre Demonio o estés al servicio de un Rey Yama. Un vampiro que se come el alma de un ser obtiene acceso a los recuerdos y habilidades de conocimiento de ese ser. La víctima muere inmediatamente."
  kueijin_scheme.130.a: "Accedí a sus habilidades de conocimiento."
  kueijin_scheme.130.b: "Accedí a sus recuerdos."
+ intrigue_greater_than_recipient: "Mi intriga es mayor que [recipient.GetFirstNamePossessive]" #NT!
+ diplomacy_greater_than_recipient: "Mi diplomacia es mayor que [recipient.GetFirstNamePossessive]" #NT!
+ stewardship_greater_than_recipient: "Mi mayordomía es mayor que [recipient.GetFirstNamePossessive]" #NT!
+ martial_greater_than_recipient: "Mi marcial es mayor que [recipient.GetFirstNamePossessive]" #NT!
+ learning_greater_than_recipient: "Mi aprendizaje es mayor que [recipient.GetFirstNamePossessive]" #NT!
   
  kueijin_scheme.200.t: "Inyectar emoción"
  kueijin_scheme.200.desc: "Transmites silenciosamente simples impulsos empáticos al objetivo. Por lo tanto, puedes llenar a [recipient.GetName] de miedo, alegría, tristeza o emociones similares. La emoción es lo suficientemente fuerte como para que [recipient.GetName] se vea obligado a actuar en consecuencia."
@@ -634,4 +644,43 @@
  PODquincunx.240.desc: "Mientras los ejércitos Ming atacan Karakorum, docenas de Wu de todas las Cortes Augustas descienden sobre la ciudad en busca de venganza, y la batalla nocturna dura semanas. Al final, la Corte de la Tortuga Negra, infestada de Akuma, ya no existe: los que aún no han sido corrompidos se han unido al Quincunx, los demás han sido quemados o pasados ​​por la espada."
  PODquincunx.240.option.a: "La rueda de los tiempos está girando."
   
+ PODquincunx.260.t: "Noticias de Yomi: El fin del infierno de las cadenas con púas" #NT!
+ PODquincunx.260.desc: "Después de la creación del Quincunx, los [GetTrait('kueijin').GetName( GetNullCharacter )] atacaron las posesiones de Dokhor-Khan en los antiguos territorios de la Corte de la Tortuga Negra, privándolo de su aporte de Chi Manchado, lo que permitió a sus rivales, entre ellos Rangda y Tou Mu, destruirlo y agregar partes del antiguo Infierno a sus propios territorios." #NT!
+ PODquincunx.260.option.a: "La rueda de los tiempos está girando." #NT!
   
+  # nushi duty 
+  
+ POD_nushi_duties.100.t: "Una pequeña tarea de tu Nushi" #NT!
+ POD_nushi_duties.101.desc: "Castigad al estudiante impío que talló grafitis lascivos en mi imagen sagrada." #NT!
+ POD_nushi_duties.100.a: "Fácil." #NT!
+ POD_nushi_duties.100.a.tt: "Tienes una nueva decisión en el panel de decisión." #NT!
+ POD_nushi_duties.100.b: "Pídele a otra persona que haga esta tarea." #NT!
+  
+ POD_nushi_duties.110.t: "Una tarea seria de tu Nushi" #NT!
+ POD_nushi_duties.111.desc: "Impedir que los bebedores de sangre occidentales profanen el santuario sagrado." #NT!
+ POD_nushi_duties.110.a: "Por supuesto." #NT!
+ POD_nushi_duties.110.b: "Lo siento, no hay tiempo." #NT!
+  
+ POD_nushi_duties.120.t: "Una tarea crítica de tu Nushi" #NT!
+ POD_nushi_duties.121.desc: "Ve al [yomi|E] [hell_of_being_skinned_alive|E] y tráeme el collar de la Reina Yama Tou Mu" #NT!
+ POD_nushi_duties.121.a: "¿Yo contra Tou Mu? Bien." #NT!
+ POD_nushi_duties.121.b: "¿Yo contra Tou Mu? ¡De ninguna manera!" #NT!
+  
+ POD_nushi_duties.1000.t: "El infierno de ser desollado vivo" #NT!
+ POD_nushi_duties.1000.desc: "Si hay un lugar peor bajo el cielo que el [hell_of_being_skinned_alive|E], nadie lo ha encontrado todavía. A simple vista, este infierno se parece a la superficie de un mundo desértico. Los visitantes con conocimientos de astronomía comparan el terreno con los informes sobre la superficie de Marte. Otros dicen que combina lo peor del desierto del Reino Medio. El punto es discutible: el retorcido reino de Tou Mu es infinitamente peor que cualquiera de estos, o todos ellos juntos." #NT!
+ POD_nushi_duties.1000.a: "Aterrador." #NT!
+ POD_nushi_duties.1000.b: "Quiero ir a casa." #NT!
+  
+ POD_nushi_duties.1001.t: "Los niños de Tou Mou" #NT!
+ POD_nushi_duties.1001.desc: "Este no es tu lugar, vete.\nUna figura cuadrada, encorvada, de hierro negro con ojos rojos brillantes, mitad autómata con forma de hombre y mitad criatura insecto, te detiene." #NT!
+ POD_nushi_duties.1001.a: "Voy a pasar." #NT!
+ POD_nushi_duties.1001.b: "Saludos, solo tengo un informe para Tou Mu." #NT!
+  
+ POD_nushi_duties.1002.t: "Tou Mu: La Emperatriz de Hierro" #NT!
+ POD_nushi_duties.1002.desc: "Los Wan-kuei tienen un enemigo en [yomi|E] más terrible que cualquier otro, y su nombre es Tou Mu.\nTou Mu es una de las más maliciosas de los Reyes Yama, y ​​es este odio lo que la ha llevado tan cerca del trono del Emperador Demonio. La Emperatriz de Hierro es, con mucho, la Reina Yama más conocida, tal vez porque a diferencia de otros Reyes Yama que difunden el mal en una miríada de disfraces, Tou Mu siempre aparece de la misma manera: como una mujer con una elaborada armadura de hierro completa con máscara con cuernos y guanteletes en forma de garras en cada uno de sus 18 brazos. Su largo cabello negro fluye desde detrás de la máscara de acero, el único toque humano que se permite." #NT!
+ POD_nushi_duties.1002.a: "El sigilo es la clave." #NT!
+ POD_nushi_duties.1002.b: "¡Una distracción!" #NT!
+  
+ POD_nushi_duties.1003.t: "Éxito" #NT!
+ POD_nushi_duties.1003.desc: "Obtuviste el collar sin previo aviso, es hora de regresar al mundo mortal. Te permites maldecir a los nushi que te hacen una demanda tan peligrosa." #NT!
+ POD_nushi_duties.1003.a: "Todavía tengo mi piel." #NT!

@@ -1,19 +1,31 @@
 ﻿l_spanish:
  tab_patron_council: "#T Consejo de Patronos#!"
   
+ PATRON_COUNCIL_WINDOW_TOTAL_INFLUENCE: "Celo actual: #V [GetGlobalVariable('patron_council_influence').GetValue|0]#!" #NT!
+ PATRON_COUNCIL_WINDOW_INFLUENCE_GAIN: "Celo anual: #TOOLTIP:patron_council_influence_gain_tt #P;L +[EmptyScope.ScriptValue('patron_council_influence_value')|0]#!#!" #NT!
+ PATRON_COUNCIL_WINDOW_INFLUENCE_LOSE: "Celo anual: #TOOLTIP:patron_council_influence_gain_tt #N;L [EmptyScope.ScriptValue('patron_council_influence_value')|0]#!#!" #NT!
+ patron_council_influence_gain_tt: "[EmptyScope.GetScriptValueDesc('patron_council_influence_value')]" #NT!
+ patron_council_county_mod: "Condados con Patrón #weak (cada uno suma un Celo)#!" #NT!
+  
+ HAVE_AT_LEAST_COUNT_PATRON_COUNCIL_INFLUENCE: "El Consejo Patrono tiene al menos $VALUE|0V$ Celo #weak (#V $VALUE|0$0#! Celo por alguien que no es el [SelectLocalization( GetPlayer.IsFemale, 'philospher_queen_modifier', 'philospher_king_modifier' )] en su lugar)#!" #NT!
+ NOT_HAVE_AT_LEAST_COUNT_PATRON_COUNCIL_INFLUENCE: "El Consejo de Patronos tiene #bold no#! al menos $VALUE|0V$ Celo #weak (#V $VALUE|0$0#! Celo por alguien que no es el [SelectLocalization( GetPlayer.IsFemale, 'philospher_queen_modifier', 'philospher_king_modifier' )] en su lugar)#!" #NT!
+ GAINS_PATRON_COUNCIL_INFLUENCE: "Ganancias $VALUE|+0$ Celo" #NT!
+ GAIN_PATRON_COUNCIL_INFLUENCE: "Obtienes $VALUE|+0$ Celo" #NT!
+ GAINED_PATRON_COUNCIL_INFLUENCE: "Ganó $VALUE|+0$ Celo" #NT!
+ LOSES_PATRON_COUNCIL_INFLUENCE: "Gasta $VALUE|-0$ Celo" #NT!
+ LOSE_PATRON_COUNCIL_INFLUENCE: "Gastas $VALUE|-0$ Celo" #NT!
+ LOST_PATRON_COUNCIL_INFLUENCE: "Gastado $VALUE|-0$ Celo" #NT!
+  
+ PATRON_COUNCIL_WINDOW_TAB_MEMBERS: "Miembros" #NT!
+ PATRON_COUNCIL_WINDOW_TAB_EDICTS: "Edictos" #NT!
  PATRON_COUNCIL_WINDOW_TAB_SEEKERS: "Buscadores"
  PATRON_COUNCIL_WINDOW_TAB_VANGUARD: "Vanguardia"
  PATRON_COUNCIL_WINDOW_TAB_AUSTERE_CONCLAVE: "Cónclave austero"
   
  PATRON_COUNCIL_WINDOW_MY_STATUS: "Mi facción: #V [GetPlayer.Custom('PatronStatus')]#!"
- PATRON_COUNCIL_WINDOW_SEASON_STATUS: "Situación de la temporada: #V [GetPlayer.Custom('SeasonStatus')]#!"
  PATRON_COUNCIL_WINDOW_ERA: "[GetPlayer.Custom('FaeEra')]"
   
  patron_council_disabled: "El Consejo Patronal será destituido."
-  
- seeker_membership_modifier: "Buscador"
- vanguard_membership_modifier: "Vanguardia"
- austere_conclave_membership_modifier: "Miembro del Cónclave Austero"
  philospher_king_modifier: "Rey filósofo"
  philospher_queen_modifier: "Reina Filósofa"
   
@@ -40,3 +52,13 @@
  set_philospher_queen_notification_tooltip: "Has sido elegida como la próxima Reina Filósofa."
  set_philospher_king_notification: "Nuevo rey filósofo"
  set_philospher_king_notification_tooltip: "Usted ha sido elegido como el próximo Rey Filósofo."
+  
+ patron_council_edict_dreaming_progress: "Exploración soñando" #NT!
+ patron_council_edict_dreaming_progress_effect_tooltip: "Obtienes #V 100#! de progreso de exploración en todos los [umbra|E] reinos de ensueño estacionados." #NT!
+ patron_council_edict_tax: "Promover a los buscadores" #NT!
+ patron_council_edict_tax_effect_tooltip: "Todos los gobernantes patrones obtienen [GetModifier('patron_council_edict_tax_modifier').GetNameWithTooltip] [modifier|E] durante #V 5#! años." #NT!
+ patron_council_edict_army: "Promover las vanguardias" #NT!
+ patron_council_edict_army_effect_tooltip: "Todos los gobernantes patrones obtienen [GetModifier('patron_council_edict_army_modifier').GetNameWithTooltip] [modifier|E] durante #V 5#! años." #NT!
+  
+ patron_council_edict_tax_modifier: "Buscadores Promovidos" #NT!
+ patron_council_edict_army_modifier: "Vanguardias Promovidas" #NT!

@@ -65,8 +65,6 @@
  SUCCESSION_EVENT_WINDOW_DEAD_INTRO_EASTERN_1: "[ROOT.Char.GetFullNameNoTooltip] ha trascendido la forma material [ROOT.Char.GetHerHis] a los [ROOT.Char.MakeScope.ScriptValue('true_age')] años de edad."
  SUCCESSION_EVENT_WINDOW_DEAD_INTRO_TRIBAL_1: "[ROOT.Char.GetFullNameNoTooltip] ha cruzado la puerta al mundo de los espíritus a los [ROOT.Char.MakeScope.ScriptValue('true_age')] años de edad."
   # Replace struggle loca 
- ENDING_DECISION_AREA_HEADER: "#high Poniendo fin a la lucha#!"
- catalyst_usurp_title_desc: "Usurpar un nuevo [title|E] que sea parte del [de_jure|E] del área de lucha"
   
  DYNASTY_VIEW_LEGACY_EXPLANATION: "Todos los miembros de la Dinastía #high [Dynasty.GetBaseNameNoTooltip]#! obtienen los beneficios de estos [dynasty_perks|E]. Adquirir nuevos [dynasty_perks|E] se vuelve cada vez más difícil a medida que el costo aumenta en [dynasty_prestige_i]#V 1000#! cada vez"
  culture_parameter_archer_era_improvement: "Los [GetMaA('longbowmen').GetName] [men_at_arms|E] mejoran cada vez más cada [era|E] hasta (e incluyendo) la era medieval tardía."
@@ -90,6 +88,9 @@
   
   #Vanilla inefficiency 
  has_province_modifier_trigger: "Tiene modificador de provincia: $MODIFIER$"
+  
+  #Missing custom_description 
+ NOT_THEY_HAVE_OPINION: "[CHARACTER.GetShortUIName|U] tiene menos de $NUM|V$ [opinion|E] de [TARGET_CHARACTER.GetShortUIName]" #NT!
   
   #Sunny day is too sunny 
  warhorse.1101.t: "[ROOT.Char.Custom('WarhorseStoryName')|U]: Hermosa noche"
@@ -177,6 +178,11 @@
  macedonian_prefix: "Helenístico"
  macedonian_collective_noun: "Helenos"
   
+  # Changed vanilla mechanics 
+ doctrine_parameter_invasion_cb_enabled: "Prestigioso [rulers|E] puede usar una Invasión [casus_belli|E] una vez cada #V 100#! años" #NT!
+ BEFRIEND_SUCCESS_DESC: "[TARGET_CHARACTER.GetShortUIName|U] podría convertirse en tu [friend|E]\n#weak Solo puedes usar esta interacción mientras tengas menos de $POD_player_befriend_limit$ amigos#!" #NT!
+ CREATE_FAITH_WINDOW_TITLE_TOOLTIP: "#T $CREATE_FAITH_WINDOW_TITLE$#!\n#X En PoD, casi no se admite la creación de una nueva fe. Podrías perder el acceso a partes importantes del contenido o romper algunos scripts. Has sido advertido.#!\nCreate Crea una nueva [faith|E] eligiendo [core_tenets|E] y [doctrines|E]" #NT!
+  
   #Epidemics are named after rulers, so those are needed to not have "Mithras' flu" or "Horus passing stomach ache" as names of diseases "La gripe de Mitra o el dolor de estómago que pasa Horus" #NT!
   #... or "Courts of Love's ergotism" or "Shadow Curtain's dysentery" or "Helena's lover pox" "El ergotismo de las Cortes del Amor o la disentería de la Cortina de Sombras o la viruela de los amantes de Helena" #NT!
   #You wouldn't believe the horrors I saw 
@@ -242,3 +248,59 @@
   #We use saint for more broad stuff than just christianity 
   
  trait_saint_desc: "Una figura imponente que inspira adoración y celo."
+  
+  #Modern heresy 
+  
+ fp3_yearly.8002.desc: "Mi [ROOT.Char.Custom2('RelationToMe', SCOPE.sC('concerned_person'))] [concerned_person.GetFirstName] ha recibido noticias preocupantes sobre los soldados que están en los fuertes de [frontier_fort_county.GetName].\n\n"¡Se han convertido subrepticiamente a una vil herejía!", me dice [concerned_person.GetSheHe] con voz temblorosa. "Aunque no sé quién es su líder, temo que si no se hace algo, pronto podrían tomar las armas #italic por las que has pagado #! y tratar de derrocarte"." #NT!
+  
+  #New MaA system 
+  
+ onager: "Ingenieros" #NT!
+ mangonel: "Saboteadores" #NT!
+ trebuchet: "Zapadores" #NT!
+ bombard: "Petardos" #NT!
+ onager_flavor: "#F Una tripulación especializada de soldados capaces de llevar a cabo misiones de demolición. #!" #NT!
+ mangonel_flavor: "#F Entrenados para operar detrás de las líneas enemigas, estos expertos pueden abrir puertas y bajar puentes en el momento justo.#!" #NT!
+ trebuchet_flavor: "#F Los zapadores son esos pocos de élite que saben exactamente dónde radica la debilidad del sistema de defensa enemigo y cómo explotarla.#!" #NT!
+ bombard_flavor: "#F Utilizando el terrible poder de la pólvora, estos hombres llevan a cabo misiones (a menudo suicidas) para romper las defensas más fortificadas.#!" #NT!
+  
+  #Replace only the strong for Enochian 
+ tradition_only_the_strong_name: "La primera ciudad" #NT!
+ tradition_only_the_strong_desc: "El lugar donde todo comenzó, un legado de los más grandes guerreros, estadistas y filósofos que guiaron los primeros pasos tentativos de la humanidad bajo la atenta mirada de Caín." #NT!
+  
+  # House Customization (for Coteries) 
+ CUSTOMIZE_HOUSE_HEADER: "Personalizar [AddTextIf(Not(DynastyHouse.GetHeadOfHouse.MakeScope.Var('is_coa_dummy').IsSet), 'House ')][Select_CString( Not(DynastyHouse.GetHeadOfHouse.MakeScope.Var('is_coa_dummy').IsSet), DynastyHouse.GetBaseNameNoTooltip, GetPlayer.Custom('PODGetCoterieName') )]" #NT!
+  
+  #Adventurers DLC 
+ wolves: "Lobos"
+ defenders: "Defensores"
+ wyverns: "Wyverns"
+ crocodiles: "Cocodrilos"
+ bears: "Osos"
+ lions: "Leones"
+ bulls: "Toros"
+ camels: "Camellos"
+ stags: "Ciervos"
+ boars: "Jabalíes"
+ cats: "Gatos"
+ foxes: "Zorros"
+ ravens: "Cuervos"
+ guardians: "Guardianes"
+ wraiths: "Espectros"
+ giants: "Gigantes"
+ dragons: "Dragones"
+ dogs: "Perros"
+ harbingers: "Presagios"
+ seekers: "Buscadores"
+ akritai: "Aquitai"
+ oracles: "Oráculos"
+ outlaws: "Forajidos"
+ trait_immortal: "Inmortal"
+ trait_immortal_desc: "Por algún medio mágico, este personaje ya no puede morir por causas naturales."
+ seasoned_visitor_decision: "Los viajes de [ROOT.Char.GetFirstNameNoTooltip]" #NT!
+ zealous_missionary_prep_decision_desc: "La existencia continua de viles herejes y paganos descarriados es una ofensa para cualquier buena [ROOT.Char.GetFaith.GetAdherentNameNoTooltip]!" #NT!
+ camp_cook_camp_officer: "Oficial de suministros" #NT!
+ camp_cook_camp_officer_desc: "El $camp_cook_camp_officer$ se asegura de que cada uno reciba su parte justa en el camino que tiene por delante. O al menos, lo que él considera que es su parte justa." #NT!
+  
+  
+  

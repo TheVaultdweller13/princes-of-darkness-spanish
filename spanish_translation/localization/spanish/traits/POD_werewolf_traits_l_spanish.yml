@@ -45,8 +45,6 @@
  trait_chiroptera_born_desc: "Los quirópteros son una raza de Camazotz que nacieron y crecieron como murciélagos, que es su forma natural."
  trait_scrofa_born: "Escrofa"
  trait_scrofa_born_desc: "Los Scrofa son una raza de Grondr que nació y se crió como un jabalí, que es su forma natural."
- trait_arachnid_born: "Arácnido"
- trait_arachnid_born_desc: "Los arácnidos son una raza de Ananasi que nacieron y fueron criados como arañas, que es su forma natural."
   
  trait_auspice: "Auspicio"
  trait_ahroun: "Ahroun"
@@ -168,3 +166,83 @@
  trait_werewolf_abomination: "Abominación Garou"
  trait_gurahl_abomination: "Falla"
  trait_mokole_abomination: "Abominación de Mokolé"
+ trait_ajaba_abomination: "Abominación de Ajaba" #NT!
+ trait_bastet_abomination: "Abominación de Bastet" #NT!
+ trait_rokea_abomination: "Abominación de Rokea" #NT!
+ trait_corax_abomination: "Abominación de Corax" #NT!
+ trait_kitsune_abomination: "Abominación Kitsune" #NT!
+ trait_ratkin_abomination: "Abominación de Ratkin" #NT!
+ trait_nagah_abomination: "Abominación Nagah" #NT!
+ trait_nuwisha_abomination: "Abominación de Nuwisha" #NT!
+ trait_apis_abomination: "Abominación de Apis" #NT!
+ trait_camazotz_abomination: "Abominación de Camazotz" #NT!
+ trait_grondr_abomination: "Abominación de Grondr" #NT!
+ trait_ananasi_abomination: "Abominación de Ananasi" #NT!
+ trait_eshieho_abomination: "Abominación de Eshieho" #NT!
+ trait_mishaho_abomination: "Abominación de Mishaho" #NT!
+ trait_bahaesh_abomination: "Abominación de Bahaesh" #NT!
+ trait_ishihambi_abomination: "Abominación de Ishihambi" #NT!
+ trait_iqhawe_abomination: "Abominación de Iqhawe" #NT!
+ trait_umakhi_abomination: "Abominación Umakhi" #NT!
+ trait_umlimi_abomination: "Abominación de Umlimi" #NT!
+ trait_umbulali_abomination: "Abominación de Umbulali" #NT!
+ trait_umhloli_abomination: "Abominación de Umhloli" #NT!
+ trait_injiki_abomination: "Abominación Injiki" #NT!
+ trait_kstyw_abomination: "Abominación de Kstyw" #NT!
+  
+ trait_entomos: "Entomos" #NT!
+ trait_entomos_desc: "Los Éntomos son un gran grupo de cambiaformas creados indirectamente por la Tejedora y comprenden a los ananasi, las razas de los insectos y los c'etites. Todos ellos son nietos de la Tejedora y tienen un anhelo innato por sus principios de fe, ciencia y dogma." #NT!
+ trait_track_entomos: "Rango" #NT!
+ trait_track_entomos_desc: "#bold Nivel 2:#! [umbra_aptitude|E]: [grace_i]#P +25%#!\n#bold Nivel 3:#! [umbra_aptitude|E]: [grace_i]#P +25%#!\n#bold Nivel 4:#! [umbra_aptitude|E]: [grace_i]#P +50%#!\n#bold Nivel 5:#! [umbra_aptitude|E]: [grace_i]#P +50%#!\n#bold Nivel 6:#! [umbra_aptitude|E]: [grace_i]#P +75%#!\n#italic El rango es una forma central en la que los Éntomos se organizan, estructurándose dentro de estructuras de experiencia y habilidad para dirigir su sociedad.#!" #NT!
+ trait_faction: "Facción" #NT!
+ trait_aspect: "Aspecto" #NT!
+ trait_entomos_breed: "Criar" #NT!
+ trait_clade: "Clado" #NT!
+ trait_myrmidon: "Esbirro" #NT!
+ trait_myrmidon_desc: "Los soldados, exploradores, generales y espías de Éntomos, los mirmidones, son la facción de Éntomos orientada al combate." #NT!
+ trait_viskr: "Visor" #NT!
+ trait_viskr_desc: "Los Sabios, Jueces, Ocultistas y Psíquicos de Éntomos, Viskr son los gobernantes y la Facción especializada de Éntomos." #NT!
+ trait_wyrsta: "Wyrsta" #NT!
+ trait_wyrsta_desc: "Los Tramposos, Filósofos, Disidentes y Modeladores del Éntomos, los Wyrsta son los catalizadores del cambio dentro del Éntomos." #NT!
+ trait_succor: "Socorro" #NT!
+ trait_succor_desc: "Los Sanadores, Terapeutas, Consejeros y Asesores de Éntomos, el Socorro son una Facción preciosa definida por la empatía y la comprensión." #NT!
+ trait_tenere: "Tenere" #NT!
+ trait_tenere_desc: "Los Tejedores Alineados Ananasi, Tenere tienen poderes y habilidades centrados en la memoria, el tiempo y el Guantelete." #NT!
+ trait_kumoti: "Kumoti" #NT!
+ trait_kumoti_desc: "Los Ananasi y Kumoti alineados con el Wyld tienen dones regenerativos y centrados en los elementos, capaces de manejar el flujo como Dones." #NT!
+ trait_hatar: "Odio" #NT!
+ trait_hatar_desc: "Los Ananasi y Hatar, alineados con el Wyrm, son infames seductores y portadores de la entropía, que transforman su sangre en veneno y atacan al Wyrm desde adentro." #NT!
+ trait_human_born: "Homínido" #NT!
+ trait_human_born_desc: "Los Éntomos homínidos, nacidos de humanos, desorientan a los espíritus y son los cambiaformas más competentes entre ellos. Los Éntomos homínidos son el tipo menos común de Éntomos, debido al tiempo comparativamente largo que les lleva experimentar el Primer Cambio." #NT!
+ trait_macro_born: "Nacido en macro" #NT!
+ trait_macro_born_desc: "Éntomos, nacidos de organismos más grandes dentro de sus clados, los Macroborn son poderosos titanes de su especie, enfatizando sus formas más grandes en una gloria destructiva cruda." #NT!
+ trait_micro_born: "Micronacido" #NT!
+ trait_micro_born_desc: "Éntomos, nacidos de organismos más pequeños dentro de sus clados, los Microborn son infiltrados evasivos y ágiles, que dominan sus formas más pequeñas para estar en cualquier lugar y escapar de cualquier situación." #NT!
+ trait_shifter_born: "Manipulador" #NT!
+ trait_shifter_born_desc: "Los Éntomos nacidos entre Éntomos en huevos incubados en una criatura inteligente, los Manipuladores son maestros naturales de la Forma de Guerra, siendo también los mejores mediadores entre sus Colonias." #NT!
+ trait_titan_born: "Nacido del titán" #NT!
+ trait_titan_born_desc: "La Raza más temida, los horrorosos Titanborn son los Monstruos de Ananasa, aterradores motores de extinción que invocan el Delirio en todos los que no son Éntomos." #NT!
+ trait_ananasi: "ananasi"
+ trait_ananasi_desc: "Los hombres araña no son hijos de Gea, sino de la reina Ananasa, una poderosa hija espiritual de la Tejedora. Otros Fera los consideran extraños y perturbadores, y no sin razón: su forma animal es una horda de arañas rastreras, no poseen Furia y alimentan sus poderes con sangre robada a los humanos. Su nombre proviene del embaucador/dios de África occidental Anansi."
+ trait_eshieho: "Eshieho" #NT!
+ trait_eshieho_desc: "Los hijos mayores de C'et, los Eshieho, son sus Maestros de la Construcción e Intermediarios, el cómodo punto medio entre los C'etites en la forma de los Cangrejos de Río." #NT!
+ trait_mishaho: "Mishaho" #NT!
+ trait_mishaho_desc: "Los hijos del medio de C'et, los Mishaho, son sus embajadores y trabajadores y adoptan la forma versátil del Cangrejo para velar por la prosperidad de C'et." #NT!
+ trait_bahaesh: "Bahaesh" #NT!
+ trait_bahaesh_desc: "Los niños más jóvenes de C'et, los Langostas Bahaesh, son sus campeones duraderos y defensores implacables, que dominan sus enormes garras para aplastar a los enemigos de C'et." #NT!
+ trait_ishihambi: "Ishihambi" #NT!
+ trait_ishihambi_desc: "Los Ishihambi, los Señores Elegidos de las Razas Insecto, son un Clado muy raro que fingió su muerte ante el resto del mundo para centrarse en su interminable guerra contra los Ka Luon y los Zigg'raugglur. Para facilitar su interminable exploración del [umbra|E], toman la forma de la noble Polilla." #NT!
+ trait_iqhawe: "Iqhawe" #NT!
+ trait_iqhawe_desc: "Los campeones elegidos de las razas de insectos, los Iqhawe, son sus caballeros de brillante armadura y dominan una serie de dones para enfrentarse a cualquier cosa que amenace a la Tejedora. Como corresponde a sus Maestros de la Espada, los campeones de la Tejedora adoptan la Mantis como su Forma de Clado." #NT!
+ trait_umakhi: "Umaji" #NT!
+ trait_umakhi_desc: "Los Constructores Elegidos de las Razas Insecto, los Umakhi, son los arquitectos de las mayores obras del Imperio de las Sombras del pasado antiguo, y han erigido monumentos perdurables en honor a la gloria de la Tejedora. Para ayudar en esta tarea, adoptan la forma de la Termita para construir sus legados." #NT!
+ trait_umlimi: "ummi" #NT!
+ trait_umlimi_desc: "Los Umlimi, los invasores elegidos de las razas de insectos, son azotes para quienes se les oponen, atacando en su forma de enjambre dominada y devorando todo lo que encuentran a su paso. Naturalmente, como heraldos de la hambruna, toman a las langostas y a otros saltamontes como parientes." #NT!
+ trait_umbulali: "Umbálicos" #NT!
+ trait_umbulali_desc: "Los cazadores elegidos de las razas de insectos, los Umbulali son los temibles y furiosos asesinos de las razas de insectos, que toman la forma de la Avispa para igualar mejor su fría furia al destruir a los enemigos del Tejedor." #NT!
+ trait_umhloli: "Umhloli" #NT!
+ trait_umhloli_desc: "Los soldados elegidos de las razas de insectos, los Umhloli, son innumerables y adaptables, tan diversos como sus parientes las hormigas, para apoyar a sus primos en el enriquecimiento y protección del Tejedor." #NT!
+ trait_injiki: "Injiki" #NT!
+ trait_injiki_desc: "Los agricultores elegidos de las razas de insectos, los Injiki, son famosos entre los Éntomos por su rica y preciosa miel, y dominan a sus parientes abejas para formar una miel nutritiva para sustentar y alimentar a los imperios Éntomos." #NT!
+ trait_kstyw: "Kstyw" #NT!
+ trait_kstyw_desc: "La raza de insectos más joven y los que fueron exiliados hace mucho tiempo y borrados de los registros, los Kstyw son los Éntomos Escarabajo ferozmente introvertidos y duraderos, que prosperan a través de la camaradería y la resistencia contra las amenazas que los asaltan." #NT!

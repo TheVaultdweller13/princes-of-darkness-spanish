@@ -124,3 +124,36 @@
  kabbalah_modifier_desc: "Gracias a tu completa comprensión del Talmud secreto, eres un maestro del misticismo judío."
  antediluvian_dominor_modifier: "Ritual incompleto"
  antediluvian_dominor_modifier_desc: "No completaste a la perfección el ritual de Robo de Sangre, pero aún así lograste que parte del poder de la sangre se transmitiera hacia ti."
+  
+ indep_mummy_against_horus_modifier: "Enemigo de Horus" #NT!
+ indep_mummy_with_horus_modifier: "Aliado de Horus" #NT!
+  
+ support_from_knight_of_acre_modifier: "Apoyo de los Caballeros de Acre" #NT!
+ support_from_sister_of_stjohn_modifier: "Apoyo de las Hermanas de San Juan" #NT!
+ support_from_oculi_dei_modifier: "Apoyo de los Oculi Dei" #NT!
+ support_from_red_order_modifier: "Apoyo de la Orden Roja" #NT!
+ support_from_von_murnau_modifier: "Apoyo de la Casa Murnau" #NT!
+  
+ decani_boon_modifier: "La bendición de Decani" #NT!
+ decani_boon_modifier_desc: "Da acceso a [arcana_lifestyle|E] [lifestyle|E]\n#weak A este personaje le ha sido otorgado un fragmento del poder de un [GetTrait('demon').GetName(GetNullCharacter)] por un Decani.#!" #NT!
+ decani_modifier: "Decani" #NT!
+ decani_modifier_desc: "Da acceso a [arcana_lifestyle|E] y [lore_lifestyle|E] [lifestyle|E]\n#weak Este personaje ha usurpado los poderes de un [GetTrait('demon').GetName(GetNullCharacter)], después de comerse el alma de un Decani.#!" #NT!
+  
+ cappadocius_boon_modifier: "Bendición de Capadocia" #NT!
+  
+ malkavian_book_eating_modifier: "Conocimiento consumido" #NT!
+ MODIFIER_DEFINITION_VALUE_PER_MALKAVIAN_BOOK_EATING_SCALE: "#weak Escala con número de libros comidos#!" #NT!
+ malkavian_book_eating_modifier_powerup_tt: "¡El poder de [GetModifier('malkavian_book_eating_modifier').GetNameWithTooltip] aumenta!" #NT!
+  
+ malkavian_pain_and_pleasure_modifier: "Frenesí de locura" #NT!
+ MODIFIER_DEFINITION_VALUE_PER_MALKAVIAN_PAIN_AND_PLEASURE_SCALE: "#weak Escala con número de elysiums alojados#!" #NT!
+ malkavian_pain_and_pleasure_modifier_powerup_tt: "¡El poder de [GetModifier('malkavian_pain_and_pleasure_modifier').GetNameWithTooltip] aumenta!" #NT!
+  
+ malkavian_demon_friend_diplomacy_modifier: "☻_El aliado de 0" #NT!
+ malkavian_demon_friend_martial_modifier: "☻_El aliado de 0" #NT!
+ malkavian_demon_friend_stewardship_modifier: "☻_El aliado de 0" #NT!
+ malkavian_demon_friend_intrigue_modifier: "☻_El aliado de 0" #NT!
+ malkavian_demon_friend_learning_modifier: "☻_El aliado de 0" #NT!
+  
+ MODIFIER_DEFINITION_VALUE_PER_MALKAVIAN_DEMON_FRIEND_SCALE: "#weak Escala con número de prisioneros sacrificados#!" #NT!
+ malkavian_demon_friend_modifier_powerup_tt: "¡La potencia del aliado demoníaco [modifier|E] aumenta!" #NT!

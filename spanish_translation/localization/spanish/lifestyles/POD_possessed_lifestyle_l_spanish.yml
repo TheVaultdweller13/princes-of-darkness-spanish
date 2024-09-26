@@ -48,6 +48,9 @@
  NOT_has_gorgon_trait: "@warning_icon!#X Tú #bold no#! tienes [trait|E]: [GetTrait('gorgon').GetName( GetPlayer )]#!"
  NOT_has_kami_trait: "@warning_icon!#X Tú tienes #bold no#! tienes [trait|E]: [GetTrait('kami').GetName( GetPlayer )]#!"
  NOT_has_spirit_ties_perk: "@warning_icon!#X Tú tienes #bold no#! tienes [perk|E]: [GetPerk('fomori_spirit_ties_perk').GetName( GetPlayer )]#!"
+ NOT_has_step_sideways_perk: "@warning_icon!#X Tú tienes #bold no#! tienes [perk|E]: [GetPerk('fomori_step_sideways_perk').GetName( GetPlayer )]#!" #NT!
+ NOT_has_berseker_perk: "@warning_icon!#X Tú tienes #bold no#! tienes [perk|E]: [GetPerk('fomori_berseker_perk').GetName( GetPlayer )]#!" #NT!
+ NOT_has_spirit_sense_perk: "@warning_icon!#X Tú tienes #bold no#! tienes [perk|E]: [GetPerk('fomori_spirit_sense_perk').GetName( GetPlayer )]#!" #NT!
   
  fomori_visible: "Fomori"
  gorgon_visible: "Gorgona"
@@ -109,7 +112,7 @@
  fomori_spirit_sense_perk_name: "Sentido espiritual"
  fomori_spirit_ties_perk_name: "Lazos espirituales"
  fomori_stasis_cocoon_perk_name: "Capullo de estasis"
- fomori_spirit_sideways_perk_name: "Espíritu de lado"
+ fomori_step_sideways_perk_name: "Pasaje Umbral" #NT!
  fomori_succubus_veil_perk_name: "Velo del súcubo"
  fomori_taint_suppression_perk_name: "Supresión de la contaminación"
  fomori_tar_baby_perk_name: "Bebé de alquitrán"
@@ -121,6 +124,28 @@
  fomori_voice_of_the_wyrm_perk_name: "La voz del Wyrm"
  fomori_wall_walking_perk_name: "Caminar por la pared"
  fomori_webbing_perk_name: "Cincha"
+ fomori_balefire_flux_perk_name: "Flujo de Balefire" #NT!
+ fomori_corrupted_visions_perk_name: "Visiones corruptas" #NT!
+ fomori_deception_perk_name: "Engaño" #NT!
+ fomori_enhancement_perk_name: "Realce" #NT!
+ fomori_exoskeleton_perk_name: "Exoesqueleto" #NT!
+ fomori_extra_speed_perk_name: "Velocidad extra" #NT!
+ fomori_hand_from_beyond_perk_name: "Mano del más allá" #NT!
+ fomori_immunity_perk_name: "Inmunidad" #NT!
+ fomori_nimbleness_perk_name: "Agilidad" #NT!
+ fomori_noxious_breath_perk_name: "Agilidad" #NT!
+ fomori_numbing_perk_name: "Entumecimiento" #NT!
+ fomori_procreation_perk_name: "Procreación" #NT!
+ fomori_prolonged_life_perk_name: "Vida prolongada" #NT!
+ fomori_roar_of_the_wyrm_perk_name: "El rugido del Wyrm" #NT!
+ fomori_savage_genitalia_perk_name: "Genitales salvajes" #NT!
+ fomori_sense_the_unnatural_perk_name: "Siente lo antinatural" #NT!
+ fomori_skittersight_perk_name: "Mirada fugaz" #NT!
+ fomori_slither_skin_perk_name: "Piel deslizándose" #NT!
+ fomori_slobber_snot_perk_name: "Mocos babosos" #NT!
+ fomori_stomach_pumper_perk_name: "Bomba de estómago" #NT!
+ fomori_toxic_secretions_perk_name: "Secreciones tóxicas" #NT!
+ fomori_water_breathing_perk_name: "Respiración acuática" #NT!
   
  gorgon_animal_control_perk_name: "Control Animal"
  gorgon_animate_self_perk_name: "Animarse a sí mismo"
@@ -150,7 +175,6 @@
  gorgon_hazardous_breath_perk_name: "Aliento peligroso"
  gorgon_homogeneity_perk_name: "Homogeneidad"
  gorgon_horror_perk_name: "Horror"
- gorgon_immunity_to_the_delirium_perk_name: "Inmunidad al delirio"
  gorgon_infectious_bite_touch_perk_name: "Mordedura o contacto infeccioso"
  gorgon_invisibility_perk_name: "Invisibilidad"
  gorgon_liquid_form_perk_name: "Forma liquida"
@@ -172,7 +196,7 @@
  gorgon_spirit_sense_perk_name: "Sentido espiritual"
  gorgon_spirit_ties_perk_name: "Lazos espirituales"
  gorgon_stasis_cocoon_perk_name: "Capullo de estasis"
- gorgon_spirit_sideways_perk_name: "Espíritu de lado"
+ gorgon_step_sideways_perk_name: "Paso lateral" #NT!
  gorgon_succubus_veil_perk_name: "Velo del súcubo"
  gorgon_taint_suppression_perk_name: "Supresión de la contaminación"
  gorgon_thick_skinned_perk_name: "Insensible"
@@ -187,7 +211,11 @@
  drone_blending_perk_name: "Mezcla"
  drone_stasis_engine_perk_name: "Motor de estasis"
  drone_computer_link_perk_name: "Conexión del mecanismo"
+ computer_link_darkage_name: "Conexión del mecanismo" #NT!
+ computer_link_modern_name: "Enlace de computadora" #NT!
  drone_cybersenses_perk_name: "Sentidos del tejedor"
+ cybersenses_darkage_name: "Sentidos del tejedor" #NT!
+ cybersenses_modern_name: "Cibersentidos" #NT!
  drone_darksight_perk_name: "Visión oscura"
  drone_dispersion_perk_name: "Dispersión"
  drone_ectoplasmic_extrusion_perk_name: "Extrusión ectoplasmática"
@@ -196,7 +224,6 @@
  drone_enchanting_voice_perk_name: "Voz encantadora"
  drone_enhanced_attribute_perk_name: "Atributo mejorado"
  drone_homogeneity_perk_name: "Homogeneidad"
- drone_immunity_to_the_delirium_perk_name: "Inmunidad al delirio"
  drone_invisibility_perk_name: "Invisibilidad"
  drone_invulnerability_perk_name: "Invulnerabilidad"
  drone_lord_of_the_land_perk_name: "Señor de la tierra"
@@ -207,7 +234,6 @@
  drone_mind_blast_perk_name: "Explosión mental"
  drone_peaceful_fighting_perk_name: "Lucha pacífica"
  drone_reassuring_presence_perk_name: "Presencia tranquilizadora"
- drone_regeneration_perk_name: "Regeneración"
  drone_silent_speech_perk_name: "Discurso silencioso"
  drone_spirit_gift_perk_name: "Don espiritual"
  drone_spirit_kinship_perk_name: "Parentesco espiritual"
@@ -215,8 +241,8 @@
  drone_spirit_static_perk_name: "Espíritu estático"
  drone_spirit_ties_perk_name: "Lazos espirituales"
  drone_stasis_cocoon_perk_name: "Capullo de estasis"
- drone_spirit_touch_perk_name: "Toque espiritual"
- drone_spirit_sideways_perk_name: "Espíritu de lado"
+ drone_stasis_touch_perk_name: "Toque de estasis" #NT!
+ drone_step_sideways_perk_name: "Paso lateral" #NT!
  drone_thick_skinned_perk_name: "Insensible"
  drone_triatic_scent_perk_name: "Aroma Triático"
  drone_triatic_sense_perk_name: "Sentido Triático"
@@ -278,7 +304,7 @@
  kami_spirit_sense_perk_name: "Sentido espiritual"
  kami_spirit_ties_perk_name: "Lazos espirituales"
  kami_stasis_cocoon_perk_name: "Capullo de estasis"
- kami_spirit_sideways_perk_name: "Espíritu de lado"
+ kami_step_sideways_perk_name: "Paso lateral" #NT!
  kami_taint_suppression_perk_name: "Supresión de contaminación"
  kami_thick_skinned_perk_name: "Insensible"
  kami_transformation_perk_name: "Transformación"
@@ -300,44 +326,327 @@
  COMMAND_THE_EARTH_PERK_EFFECT: "Como [character_interaction|E], te permite desatar efectos climáticos hostiles sobre los reinos enemigos."
  CURSE_OF_GAIA_PERK_EFFECT: "Como [character_interaction|E], te permite darle al enemigo [GetModifier( 'mild_curse_of_gaia_modifier' ).GetNameWithTooltip|L], [GetModifier( 'moderate_curse_of_gaia_modifier' ).GetNameWithTooltip|L], [GetModifier( 'severe_curse_of_gaia_modifier' ).GetNameWithTooltip|L] o [GetModifier( 'very_severe_curse_of_gaia_modifier' ).GetNameWithTooltip|L]."
  CYBERSENSES_PERK_EFFECT: "[espionage|E] Velocidad de progreso: #P +[EmptyScope.ScriptValue('digging_for_dirt_perk_percentage')|0]%#!"
- CYBERSENSES_PERK_BONUS_VALUE: "[GetPerk('drone_cybersenses_perk').GetName(GetPlayer)]"
  DEVOUR_PERK_EFFECT: "Bonificación para causar un golpe brutal al enemigo [knights|E] en guerra como [knight|E]."
  DISPERSION_PERK_EFFECT: "Desbloquea la opción de cambio de forma [GetModifier( 'POD_shapeshift_form_swarm_modifier' ).GetNameWithTooltip|L]."
  ELECTRICAL_FIELD_PERK_EFFECT: "Bonificación por causar un golpe brutal al enemigo [knights|E] en guerra como [knight|E]."
  ENCHANTING_VOICE_PERK_EFFECT: "Otorga a los comandantes enemigos el modificador [GetModifier('enchanting_voice_perk_modifier').GetNameWithTooltip] cuando estés en guerra como comandante."
+ ENTROPIC_TOUCH_PERK_EFFECT: "#F Con un toque, el personaje puede debilitar temporalmente la estructura física de un objeto, o incluso de un ser vivo.#!" #NT!
+ EXTENSIBLE_LIMB_PERK_EFFECT: "#F Una o más de las extremidades del personaje (brazos, piernas, colas, incluso lenguas) pueden extenderse para manipular objetos o golpear a un oponente a distancia. Este poder se manifiesta comúnmente en los fomori como una poderosa lengua parecida a la de una rana, que le da a su dueño un habla extrañamente arrastrada (y a veces un gusto por los insectos).#!" #NT!
+ EXTRA_LIMB_PERK_EFFECT: "#F Al personaje le crecen permanentemente una serie de extremidades adicionales, ya sean brazos adicionales, tentáculos o incluso lenguas o intestinos prensiles extendidos. Las extremidades pueden estar adheridas en lugares extraños o incluso ocultas en bolsillos carnosos hasta que se necesiten.#!" #NT!
+ EYES_OF_THE_WYRM_PERK_EFFECT: "#F Los ojos del fomor son algo inusual. Pueden ser ojos compuestos como los de un insecto, o tener pupilas e iris que cambian de forma extraña, o incluso estar llenos de ondas de un color iridiscente e impuro. Quienes se encuentran con la mirada del fomor ven un patrón aún más terrible oculto en su interior: atisbos de la enloquecedora condenación del Wyrm.#!" #NT!
+ FLIGHT_PERK_STATS_EFFECT: "#F El personaje puede volar, ya sea mediante alas (de cualquier tipo) o alguna otra forma de propulsión (como cabalgar sobre el viento para un Kami con aspecto de tormenta). Puede flotar, planear, elevarse o sumergirse, según elija el jugador.#!" #NT!
+ FOOT_PADS_PERK_EFFECT: "#F Los pies del personaje están acolchados como los de un animal, lo que le otorga una medida extra de sigilo.#!" #NT!
  FUNGAL_TOUCH_PERK_EFFECT: "Otorga un modificador [GetModifier('fungal_touch_perk_modifier').GetNameWithTooltip] al enemigo [knights|E] en la guerra como comandante o al enemigo en [single_combat_duel|E]."
  GASEOUS_FORM_PERK_EFFECT: "Desbloquea la opción de cambio de forma [GetModifier( 'POD_shapeshift_form_mist_modifier' ).GetNameWithTooltip|L]."
  HAZARDOUS_BREATH_PERK_EFFECT: "Bonificación para causar un golpe brutal al enemigo [knights|E] en guerra como [knight|E]."
+ HEART_SENSE_PERK_EFFECT: "#F Los Kami pueden ver dentro del corazón de un individuo, determinando su lealtad espiritual general (Wyrm, Wyld, Weaver, Gaia u otra), su inocencia o culpa, su verdadera forma (si está usando otra forma), incluso sus sueños y deseos más secretos o sus conexiones con el pasado.#!" #NT!
+ HOMOGENEITY_PERK_EFFECT: "Como [character_interaction|E], te permite eliminar el [battle_modifier|E] de un objetivo.\n#F El personaje puede contrarrestar todos los poderes sobrenaturales a cinco metros de él, o centrarse en un oponente y evitar que use dichos poderes durante un tiempo considerablemente mayor. La homogeneidad no funciona con poderes "innatos"; por lo tanto, si bien contrarrestará los dones de un Garou, no evitará que cambie de forma.#!" #NT!
+ HORROR_PERK_EFFECT: "Otorga [GetModifier('POD_delirium_modifier').GetNameWithTooltip] [modifier|E] al enemigo [knights|E] cuando actúa como [commander|E] durante [combat_phase|E], o a tu enemigo durante [single_combat_duel_plural|E].\nPuedes anular la inmunidad al delirio.\n#F La presencia del personaje es tan perturbadora que evoca el mismo pánico sobrenatural en los mortales que presenciar a un Garou en forma de Crinos. Los personajes más poderosos pueden incluso infligir terror e incredulidad a lo sobrenatural. Este poder casi siempre se manifiesta en personajes con formas verdaderamente bestiales, animalescas o completamente monstruosas.#!" #NT!
  IMMUNITY_TO_THE_DELIRIUM_PERK_EFFECT: "Ya no obtendrás el modificador [GetModifier('POD_delirium_modifier').GetNameWithTooltip] ni el modificador [single_combat_duel|E] cuando luches con cambiaformas en la guerra."
  INFECTIOUS_BITE_TOUCH_PERK_EFFECT: "Como [character_interaction|E], te permite dar enfermedades."
- INVISIBILITY_PERK_EFFECT: "Desbloquea la opción de cambio de forma [GetModifier( 'POD_shapeshift_form_invisible_modifier' ).GetNameWithTooltip|L]."
- INVULNERABILITY_PERK_EFFECT: "Te permite gastar fuerza de voluntad en lugar de recibir heridas.\nTe permite no morir por heridas."
+ INVISIBILITY_PERK_STATS_EFFECT: "Desbloquea la opción de cambio de forma [GetModifier( 'POD_shapeshift_form_invisible_modifier' ).GetNameWithTooltip|L].\n#F El personaje desaparece de la vista. No deja huellas, pero sigue haciendo ruido y despidiendo olor, y seguirá registrándose en dones como Sentir Wyrm (si corresponde).#!" #NT!
+ INVULNERABILITY_PERK_STATS_EFFECT: "Te permite gastar fuerza de voluntad en lugar de recibir heridas.\nTe permite no morir por heridas.\n#F El cuerpo del personaje se fortalece sobrenaturalmente sin ningún efecto externo obvio.#!" #NT!
  LIQUID_FORM_PERK_EFFECT: "Desbloquea la opción de cambio de forma [GetModifier( 'POD_shapeshift_form_blood_modifier' ).GetNameWithTooltip|L]."
+ LONGEVITY_PERK_EFFECT: "#F La esperanza de vida de los Kami se extiende diez veces; un Kami que viva en un entorno humano podría vivir alrededor de 700 años con la ayuda de este poder. Si el Kami compra este poder cinco veces, no envejecerá.#!" #NT!
+ LORD_OF_THE_LAND_PERK_EFFECT: "#F El personaje está increíblemente en sintonía con su territorio, permaneciendo constantemente consciente de todo lo que sucede dentro de los límites que ha reclamado como suyos.#!" #NT!
+ MAGNETOKINESIS_PERK_EFFECT: "#F El Drone puede generar y controlar campos magnéticos localizados, lo que le permite mover o manipular objetos ferrosos.#!" #NT!
  MALLEATE_PERK_EFFECT: "Oportunidad adicional de mutilar a un enemigo [knights|E] en una guerra como [knight|E]."
  MASK_PRESENCE_PERK_EFFECT: "Como [character_interaction|E], te permite detener todas las conjuras que tienen como objetivo tu ataque."
+ MATTER_WEAVE_PERK_EFFECT: "#F El personaje es capaz de remodelar la materia para darle nuevas formas y funciones. Los zánganos suelen usar este poder para reparar daños en las estructuras o parchar imperfecciones; las gorgonas lo usan casi a su antojo, remodelando objetos en extrañas configuraciones nuevas para debilitar el control de la Tejedora sobre una zona.#!" #NT!
+ MEMORY_CARESS_PERK_EFFECT: "#F La mitad espiritual del personaje interfiere en las mentes de la gente común para mantener en secreto las actividades del personaje. Los espectadores reaccionan ante el personaje de la forma en que lo harían normalmente, pero sus recuerdos del personaje se desvanecen una vez que el personaje se ha ido. Este poder ciertamente tiene sus desventajas (es difícil mantener un trabajo diario si tu jefe se olvida de que existes cada vez que sales de la habitación), pero para muchos poseídos, el anonimato es la defensa definitiva.#!" #NT!
  MIND_BLAST_PERK_EFFECT: "Es posible capturar [imprison|E] [characters|E] que de otra manera habría sido imposible de capturar en [siege|E].\nEs mucho más probable que [imprison|E] [characters|E] después de un [siege|E] o [raid|E] exitoso."
  FOMORI_MIND_RAPE_PERK_EFFECT: "Como [character_interaction|E], te permite conocer todos los secretos y planes del objetivo."
  NATURAL_WEAPONRY_PERK_EFFECT: "Desbloquea la opción Cambio de forma de armamento natural."
  NIGHTMARE_COMMAND_PERK_EFFECT: "Desbloquea [GetScheme('PODsoul_bridge').GetTypeName] [scheme|E]."
  PEACEFUL_FIGHTING_PERK_EFFECT: "Es más probable que [imprison|E] [characters|E] después de un [siege|E] o [raid|E] exitoso."
+ PIERCING_GAZE_PERK_EFFECT: "#F El Kami es capaz de hacer que cualquiera que mire se sienta incómodo y mal, como si el Kami estuviera mirando directamente a su alma. Este poder se suele utilizar para ahuyentar a los intrusos, aunque puede servir como una excelente ayuda para los interrogatorios.#!" #NT!
  PLANT_ANIMATION_PERK_EFFECT: "Puede reclutar a [GetMaA('animated_tree').GetName] como [men_at_arms|E]"
  PLANT_KINSHIP_PERK_EFFECT: "[espionage|E] Velocidad de progreso: #P +[EmptyScope.ScriptValue('digging_for_dirt_perk_percentage')|0]%#!"
  PLANT_KINSHIP_PERK_BONUS_VALUE: "[GetPerk('kami_plant_kinship_perk').GetName(GetPlayer)]"
+ PLIANT_BONES_PERK_EFFECT: "Aumenta la probabilidad de éxito de la Fuga de la prisión [decision|E].\n#F Los huesos del personaje pueden volverse blandos y maleables, lo que le permite pasar por pequeñas aberturas como una rata. El personaje también puede liberarse de ataduras y restricciones, si se le da tiempo.#!" #NT!
  POISON_PERK_EFFECT: "Oportunidad adicional de causar heridas graves al enemigo [knights|E] en la guerra como [knight|E]."
  POISON_TUMORS_PERK_EFFECT: "Desbloquea la opción de cambio de forma [GetModifier( 'POD_shapeshift_form_poison_tumors_modifier' ).GetNameWithTooltip|L]."
- REGENERATION_PERK_EFFECT: "Eliminar todas las heridas y mutilaciones cada tres meses."
+ REASSURING_PRESENCE_PERK_EFFECT: "#F El personaje puede cambiar su apariencia para que coincida con la de la persona que la mayor cantidad de espectadores en un momento dado respetarían y escucharían. Aunque este poder puede parecer débil, un fomor o un zángano astuto pueden usarlo para ir a casi cualquier lugar y obtener una cooperación limitada de casi cualquier persona.#!" #NT!
+ REGENERATION_PERK_STATS_EFFECT: "Elimina todas las heridas y mutilaciones cada tres meses.\n#F El personaje regenera el daño casi inmediatamente, de la misma manera que un hombre lobo.#!" #NT!
  SANITY_RENDING_PERK_EFFECT: "Como [character_interaction|E], te permite darle al objetivo un rasgo de estrés."
+ SEASONS_BLESSINGS_PERK_EFFECT: "#F Los Kami pueden traer los efectos de una estación particular a un área: las hojas pueden caer de los árboles si se invocan las Bendiciones del Otoño, mientras que un Kami en sintonía con el invierno puede invocar una nevada.#!" #NT!
  SELF_IMMOLATION_PERK_EFFECT: "Desbloquea la opción de cambio de forma [GetModifier( 'POD_shapeshift_form_fire_modifier' ).GetNameWithTooltip|L]."
+ SENSE_GAIA_PERK_EFFECT: "#F El personaje puede sentir manifestaciones de Gaia en el área cercana: cambiaformas Gaianos, espíritus y similares.#!" #NT!
  SHADOWPLAY_PERK_EFFECT: "Desbloquea la opción de cambio de forma [GetModifier( 'POD_shapeshift_form_shadow_modifier' ).GetNameWithTooltip|L]."
+ SILENT_SPEECH_PERK_EFFECT: "#F El personaje puede comunicarse sin hablar, hablando con las personas de mente a mente. Este poder supera todas las barreras del lenguaje, aunque el personaje no puede comunicarse de esta manera con criaturas sin lenguaje a menos que use otro poder para hacerlo.#!" #NT!
  SIZE_PERK_EFFECT: "Como [character_interaction|E], te permite convertirte en [GetTrait('giant').GetName( GetPlayer )] o [GetTrait('dwarf').GetName( GetPlayer )]."
+ SKINCHANGER_KINSHIP_PERK_EFFECT: "#F Este poder representa una gran conexión espiritual y amistad con una de las Razas Cambiantes. La versión más común de este poder es el Parentesco Garou (ya que las otras Razas han caído en declive), pero un Kami puede poseer Parentesco con cualquier raza de cambiaformas, incluso Ratkin o Ananasi.#!" #NT!
  SKINSHIFT_PERK_EFFECT: "Bonificación a Cambio de Forma [character_interaction|E] para cambiar de apariencia."
+ SPIRIT_AWAKENING_PERK_EFFECT: "#F El Kami es capaz de despertar los espíritus de los animales, plantas u objetos inanimados cantándoles o tocándoles música.#!" #NT!
+ SPIRIT_GIFT_PERK_EFFECT: "Desbloquear [charms_lifestyle|E].\n#F El personaje puede aprender cualquier Don apropiado y desarrollarlo como su propio poder.#!" #NT!
  SPIRIT_KINSHIP_PERK_EFFECT: "Puede reclutar [GetMaA('materialized_spirits').GetName] como [men_at_arms|E].\nDesbloquea [bind_wraith_interaction|E].\nDesbloquea [command_wraith_interaction|E].\nNúmero máximo de espectros atados: #P +1#!."
  SPIRIT_RENDING_PERK_EFFECT: "Puedes encarcelar, torturar, ejecutar o herir físicamente a un espíritu en [single_combat_duel|E]."
  SPIRIT_SENSE_PERK_EFFECT: "Desbloquear [marked_for_return_interaction|E].\nNúmero máximo de espectros atados: #P +1#!."
- SPIRIT_STATIC_PERK_EFFECT: "Desbloquea la opción Manipular el guantelete en el panel Umbra."
+ SPIRIT_STATIC_PERK_STATS_EFFECT: "Desbloquea la opción Manipular el Guantelete en el panel [umbra|E].\n#F El Dron puede aumentar temporalmente el Guantelete en su vecindad inmediata, limitando los poderes de los enemigos del Tejedor.#!" #NT!
+ SPIRIT_TIES_PERK_EFFECT: "Puede usar fetiches [artifact|E].\nPosibilidad de recuperación de gnosis: #P +100%#!\n#F El personaje tiene una conexión innata con los [spirit_world|E] y puede usar fetiches y talentos.#!" #NT!
  STASIS_COCOON_PERK_EFFECT: "Desbloquea Enter Cocoon [decision|E], lo que te permitirá ingresar a [GetTrait('torpor').GetName( GetNullCharacter )], que te destituirá."
- SPIRIT_SIDEWAYS_PERK_EFFECT: "Obtén acceso a [spirit_wilds|E].\nPosibilidad de quedar atrapado en la Umbra: #P -5%#!\nMonthly Progreso de exploración de la Umbra: [grace_i]#P +5#!"
+ STASIS_TOUCH_PERK_EFFECT: "Como [character_interaction|E], te permite eliminar el cambio de forma del objetivo.\n#F Con un solo toque, el personaje puede robarle a sus oponentes la capacidad de cambiar de forma.#!" #NT!
+ STEP_SIDEWAYS_PERK_EFFECT: "Obtén acceso al [spirit_wilds|E].\n[umbra_sense|E]: [grace_i]#P +5%#!\n[umbra_aptitude|E]: [grace_i]#P +25%#!\n#F El personaje obtiene la habilidad de entrar en el [umbra|E], como lo hacen los Garou.#!" #NT!
  SUCCUBUS_VEIL_PERK_EFFECT: "Desbloquear [GetScheme('PODenthrall').GetTypeName] [scheme|E]."
+ TAINT_SUPPRESSION_PERK_EFFECT: "#F El fomor puede anular brevemente los efectos de cualquiera de sus Corrupciones. Las deformidades físicas suprimidas se curan y la piel queda intacta en segundos; los trastornos desaparecen en un estallido de perfecta claridad, etc.#!" #NT!
  TAR_BABY_PERK_EFFECT: "Oportunidad adicional de mutilar a un enemigo [knights|E] en una guerra como [knight|E]."
  THICK_SKINNED_PERK_EFFECT: "Oportunidad adicional de mutilar a un enemigo [knights|E] en una guerra como [knight|E]."
  TRANSFORMATION_PERK_EFFECT: "Permite cambiar de forma a varias formas animales."
+ TRIATIC_SCENT_PERK_EFFECT: "Permite interacciones amistosas con entidades triáticas opuestas. [splat|E].\n#F El personaje es capaz de enmascarar su "verdadero aroma" aprovechando el poder de una entidad triática rival.#!" #NT!
+ TRIATIC_SENSE_PERK_EFFECT: "#F El personaje tiene la habilidad de sentir la fuerza relativa de cualquiera de los Triat en su vecindad inmediata.#!" #NT!
+ UNIVERSAL_TONGUE_PERK_EFFECT: "#F El personaje puede hablar y comprender a cualquier criatura viviente.#!" #NT!
+ UNNATURAL_STRENGTH_PERK_EFFECT: "#F Los músculos del personaje se ondulan con un desarrollo antinatural, haciendo que el personaje parezca casi el producto del uso intensivo de esteroides.#!" #NT!
+ VEIL_BREACH_PERK_EFFECT: "#F Los personajes con este poder pueden llegar a la mente de un humano y arrancarle los fragmentos de conciencia susceptibles al delirio. Esta "cirugía psíquica" invasiva predispone a sus víctimas a la locura, pero hace que los humanos normales sean capaces de interactuar con Garou (o incluso luchar contra ellos) sin sucumbir al pánico inmediato.#!" #NT!
+ VOICE_OF_REASON_PERK_EFFECT: "#F La voz del personaje se vuelve extraña, seductora y monótona, adormeciendo a los oyentes en un estado de calma hipnótica.#!" #NT!
+ VOICE_OF_THE_WYRMCH_PERK_EFFECT: "#F La lengua del fomor ha sido alterada y le ha dado una forma extraña: posiblemente gruesa y parecida a una babosa, posiblemente larga y bifurcada, posiblemente incluso transmutada en una masa de zarcillos. El fomor puede hablar con normalidad y también puede hablar en el propio idioma del Wyrm.#!" #NT!
+ WALL_WALKING_PERK_EFFECT: "#F El personaje puede correr por superficies escarpadas como una araña, tan fácilmente como si estuviera en terreno llano.#!" #NT!
+ WEBBING_PERK_EFFECT: "Tu prisionero tiene menos posibilidades de escapar de tu prisión.\n#F Permite la creación de redes para atar a los enemigos caídos, sellar aberturas o incluso descender desde una gran altura. El poder puede adoptar muchas formas según el personaje. Los fomori pueden tejer gotas de adhesivo maloliente a partir de glándulas sucias, mientras que los kami y las gorgonas pueden producir redes de seda más "naturales", y los zánganos tejen hebras de apariencia artificial y similar al plástico para atar a sus enemigos.#!" #NT!
+ ANIMATE_SELF_PERK_EFFECT: "#F Las gorgonas y los kami ligados a objetos inanimados como árboles o estatuas pueden adquirir este poder, que les permite animar el cuerpo que los acoge. Sin este poder, un personaje con un cuerpo vegetal o mineral como anfitrión queda inmóvil.#!" #NT!
+ ARMORED_HIDE_PERK_EFFECT: "#F La piel del anfitrión ha cambiado, obviamente, lo que le otorga una mayor resistencia contra los ataques. Puede ser obviamente escamosa o pesada, como la piel de un rinoceronte, o tal vez incluso esté reluciente por una baba que hace que los ataques se deslicen sin hacer un contacto fuerte.#!" #NT!
+ BALEFIRE_FLUX_PERK_EFFECT: "#F Siempre que el fomor se exponga a Balefire, las excreciones radiactivas del Wyrm, puede sufrir una transformación y obtener un nuevo Poder.#!" #NT!
+ BLENDING_PERK_EFFECT: "#F El personaje puede cambiar su coloración para fines de sigilo; aunque no puede duplicar patrones o texturas específicas, puede crear patrones generales suficientes para romper su contorno.#!" #NT!
+ COMPUTER_LINK_PERK_EFFECT: "#F [Select_CString( GetScriptedGui('is_modern').IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End), 'The Drone becomes capable of controlling computers by touch alone.', '')]#!" #NT!
+ CORRUPTED_VISIONS_PERK_EFFECT: "#F "¡Tenía que hacerlo! ¡Dios me lo dijo!" Al utilizar este don de corrupción, un fomor induce alucinaciones en alguna víctima indefensa. Voces de Dios, visiones fugaces de algo que está fuera de la vista, regaños, burlas y otras paranoias favoritas son solo algunas de las posibilidades. Aunque este poder funciona mejor cuando el fomor parece lo suficientemente normal como para pasar por humano, uno especialmente deforme puede usarlo mientras se esconde. Conocer a tu víctima ayuda cuando se usan Visiones corruptas; una persona racional sospecharía si Jesús de repente le dijera que se lanzara a una matanza, mientras que alguien que ya estuviera perturbado podría pensar que es una idea perfectamente buena. Por supuesto, una persona aparentemente racional podría volverse loca por visiones sutiles y bien elegidas. Después de eso, todo vale... #!" #NT!
+ DARKSIGHT_PERK_STATS_EFFECT: "#F El personaje es capaz de ver en la oscuridad tan bien como lo haría a la luz del día.#!" #NT!
+ DECEPTION_PERK_EFFECT: "[GetTrait('diablerist').GetName( GetPlayer )] El rasgo se ocultará automáticamente al ser expuesto.\nPermitir interacciones amistosas con hombres lobo gaianos como contaminados por el Wyrm.\n#F El fomor puede ocultar la evidencia espiritual de su contaminación por el Wyrm a los demás. El Don: Sentir el Wyrm no detectará al fomor como contaminado por el Wyrm. El fomor también puede usar este Poder en otros para cubrir su mancha. Por ejemplo, el fomor puede ocultar la evidencia de la diablerie de un vampiro o incluso cambiar el aura de un Garou normal para que parezca contaminado por el Wyrm cuando en realidad no lo está. Los fomoris bajo la influencia de este Poder también son inmunes a los hechizos Hekau (Nombre Verdadero) de las momias.#!" #NT!
+ ECTOPLASMIC_EXTRUSION_PERK_EFFECT: "#F El personaje es capaz de generar hasta cuatro tentáculos o brazos semisólidos que pueden extenderse hasta cinco metros, manipulando objetos o incluso asestar golpes. Las extremidades pueden ser ectoplasma verdadero, sombras cuasi sólidas, niebla preternaturalmente espesa o cualquier cosa que parezca adecuada para el tipo de personaje en cuestión.#!" #NT!
+ ELEMENTAL_RESISTANCE_PERK_EFFECT: "#F La resistencia del anfitrión a un determinado tipo de forma de energía aumenta hasta niveles sobrenaturales. La fuente elegida puede ser mundana, como el fuego o el rayo, o incluso puede provenir de fuentes más místicas, como el fuego maligno.#!" #NT!
+ ENHANCED_ATTRIBUTE_PERK_EFFECT: "#F Las capacidades naturales del anfitrión se magnifican a niveles sobrehumanos. Este poder no se limita a los atributos físicos: un ser poseído por el Wyld puede alardear de un ingenio mejorado, mientras que un fomor puede desarrollar una apariencia sobrenatural para atraer mejor a sus víctimas.#!" #NT!
+ ENHANCEMENT_PERK_EFFECT: "#F El fomor puede convertirse en la pareja ideal de cualquier criatura viviente, escaneando la mente de su objetivo.#!" #NT!
+ EXOSKELETON_PERK_EFFECT: "#F El fomor tiene un crecimiento duro parecido a un caparazón por todo el cuerpo. Por lo general, es muy parecido a un hueso, con muchos nudos, tubos parecidos a venas y formas extrañas. Su coloración varía desde un rojo oxidado y marrón oscuro hasta un negro aceitoso.#!" #NT!
+ EXTRA_SPEED_PERK_EFFECT: "#F El fomor puede superar en maniobras a un humano normal.#!" #NT!
+ HAND_FROM_BEYOND_PERK_EFFECT: "[umbra_sense|E]: [grace_i]#P +5%#!\n[umbra_aptitude|E]: [grace_i]#P +25%#!\n#F El fomor puede entrar en el [umbra|E] y luego regresar al mundo material para atraer a otros hacia el [spirit_world|E] con él. Puede atraer a más de una persona siempre que todos los objetivos se tomen de la mano.#!" #NT!
+ IMMUNITY_PERK_EFFECT: "#F El fomor puede ignorar los efectos de algunos tipos de cosas potencialmente peligrosas.#!" #NT!
+ NIMBLENESS_PERK_EFFECT: "#F El fomor es especialmente ágil y puede mantener fácilmente el equilibrio mientras realiza hazañas que harían caer a otra persona.#!" #NT!
+ NOXIOUS_BREATH_PERK_EFFECT: "Otorga [GetModifier('noxious_breath_perk_modifier').GetNameWithTooltip] [modifier|E] al enemigo [knights|E] cuando actúe como [commander|E] durante [combat_phase|E], o a tu enemigo durante [single_combat_duel_plural|E].\n#F El fomor puede liberar gases venenosos en el aire que hacen que quienes se encuentren a veinte metros o menos anhelen fumar cigarrillos. Los gases tienen el aspecto y el olor del humo del cigarrillo. Además, el gas debilita el tejido pulmonar de quienes lo respiran. La exposición repetida al aliento nocivo durante varias semanas o meses provoca el desarrollo de cáncer de pulmón en las víctimas.#!" #NT!
+ NUMBING_PERK_EFFECT: "#F El cuerpo del fomor puede quedar completamente entumecido. No siente dolor, pero no siente ninguna sensación. No puede hablar correctamente (siente la lengua anestesiada permanentemente) y puede cortarse sin sentir nada, lo que puede provocar heridas infectadas o gangrenosas de las que el fomor no es consciente.#!" #NT!
+ PROCREATION_PERK_EFFECT: "#F El fomor puede transmitir una Perdición a través de la sangre y el semen; cualquier encuentro que involucre fluidos corporales puede propagar la Perdición. La Perdición luego intentará poseer al receptor de los fluidos. El fomor solo puede transmitir una Perdición similar a la que lo poseyó.#!" #NT!
+ PROLONGED_LIFE_PERK_EFFECT: "#F La esperanza de vida natural de los fomor se prolonga considerablemente. Esto no es una verdadera inmortalidad, ya que los fomor morirán por causas naturales en algún momento (la muerte natural entre los fomori es prácticamente desconocida).#!" #NT!
+ ROAR_OF_THE_WYRM_PERK_EFFECT: "#F El fomor es capaz de infundir terror en los corazones de todos los que están cerca de ella emitiendo este grito gutural.#!" #NT!
+ SAVAGE_GENITALIA_PERK_EFFECT: "#F La pesadilla de John Bobbit; el fomor (sin importar el género) tiene genitales con alguna característica amenazante. Las variaciones masculinas incluyen longitud excesiva (14''+) o dureza, espinas, textura de papel de lija o púas curvas; las versiones femeninas son famosas por sus dientes, succión desgarradora y picadoras de carne internas. Obviamente, esto no es bueno en combate, pero es devastador en la cama. #!" #NT!
+ SENSE_THE_UNNATURAL_PERK_EFFECT: "#F Similar al Don Garou del mismo nombre, este Poder permite al fomor oler a cualquier ser sobrenatural presente, como vampiros, hombres lobo, magos, espectros y otros espíritus.#!" #NT!
+ SKITTERSIGHT_PERK_EFFECT: "#F Este extraño poder le permite a la fomor sacarse los ojos, torcer los nervios ópticos para convertirlos en pies y hacer que los ojos corran por los pasillos y las esquinas para poder ver cosas que normalmente no verían. Tendrá que tener cuidado: si le aplastan los ojos, quedará ciega para siempre. #!" #NT!
+ SLITHER_SKIN_PERK_EFFECT: "#F La piel del fomor es un arma y un útil ayudante. El fomor puede mudar su piel, dándole ciertas instrucciones simples (no más de cinco palabras). La piel se desprende en el recto y se despega sobre la cabeza del fomor. Puede caminar, agarrar cosas o atacar.#!" #NT!
+ SLOBBER_SNOT_PERK_EFFECT: "#F La piel del fomor está cubierta de pequeñas verrugas que secretan una baba extremadamente resbaladiza y líquida. Esta baba hace que el cuerpo del fomor prácticamente no tenga fricción, lo que hace que sea casi imposible para los oponentes agarrarlo. El gel viscoso también ayuda al fomor a pasar por espacios reducidos. Slobber Snot se disuelve casi instantáneamente con la luz solar directa.#!" #NT!
+ STOMACH_PUMPER_PERK_EFFECT: "#F El fomor es capaz de vomitar todo lo que ha comido recientemente cubierto de jugos gástricos viscosos y ácidos.#!" #NT!
+ TOXIC_SECRETIONS_PERK_EFFECT: "#F Este poder convierte los fluidos corporales del fomor en desechos tóxicos.#!" #NT!
+ WATER_BREATHING_PERK_EFFECT: "#F Con este sencillo Poder, el fomor puede respirar bajo el agua o no necesita hacerlo en absoluto. Este Poder también le confiere un cierto grado de resistencia a las presiones subacuáticas y a los problemas de descompresión.#!" #NT!
+  
+ game_concept_charm: "Encanto" #NT!
+ game_concept_charms: "Amuletos" #NT!
+ game_concept_charms_lifestyle: "Amuletos" #NT!
+ game_concept_charms_lifestyle_desc: "El $game_concept_charms_lifestyle$ es adecuado para [GetTrait('spirit').GetName( GetNullCharacter )]. Cada espíritu posee una cierta cantidad de poderes metafísicos llamados amuletos. Extensiones innatas del yo de un espíritu." #NT!
+  
+ charms_lifestyle_name: "Amuletos" #NT!
+ charms_lifestyle_desc: "Concéntrese en las habilidades de los espíritus impulsadas por la gnosis." #NT!
+ charms_lifestyle_highlight_desc: "Por tu [GetTrait('spirit').GetName( GetPlayer )] [trait|E], ganas #P 50%#! más [experience|E] en este Estilo de Vida." #NT!
+ monthly_charms_lifestyle_xp_gain_mult: "Amuletos mensuales [lifestyle|E] [experience|E]" #NT!
+  
+ charms_focus: "Enfoque de encantos" #NT!
+ charms_focus_modifier: "[GetFocus('charms_focus').GetName]" #NT!
+ charms_focus_desc: "Extensiones innatas del yo de un espíritu." #NT!
+ charms_focus_effect_desc: "None" #NT!
+  
+ GAINS_CHARMS_LIFESTYLE_XP: "Ganancias $VALUE|V0$ [charms_lifestyle|E] Experiencia" #NT!
+ GAINED_CHARMS_LIFESTYLE_XP: "Obtuvo $VALUE|V0$ [charms_lifestyle|E] Experiencia" #NT!
+ I_GAIN_CHARMS_LIFESTYLE_XP: "Obtienes $VALUE|V0$ [charms_lifestyle|E] de experiencia" #NT!
+ I_GAINED_CHARMS_LIFESTYLE_XP: "Ganaste $VALUE|V0$ [charms_lifestyle|E] Experiencia" #NT!
+ TARGET_GAINS_CHARMS_LIFESTYLE_XP: "[CHARACTER.GetShortUIName] gana $VALUE|V0$ [charms_lifestyle|E] experiencia" #NT!
+ TARGET_GAINED_CHARMS_LIFESTYLE_XP: "[CHARACTER.GetShortUIName] ganado $VALUE|V0$ [charms_lifestyle|E] Experiencia" #NT!
+  
+ GAINS_A_CHARMS_LIFESTYLE_PERKPOINT: "Ganancias $VALUE|V0$ [charms_lifestyle|E] [perk|E] Desbloquear" #NT!
+ GAINED_A_CHARMS_LIFESTYLE_PERKPOINT: "Obtenido $VALUE|V0$ [charms_lifestyle|E] [perk|E] Desbloquear" #NT!
+ I_GAIN_A_CHARMS_LIFESTYLE_PERKPOINT: "Obtienes $VALUE|V0$ [charms_lifestyle|E] [perk|E] Desbloquear" #NT!
+ I_GAINED_A_CHARMS_LIFESTYLE_PERKPOINT: "Ganaste $VALUE|V0$ [charms_lifestyle|E] [perk|E] Desbloquear" #NT!
+ TARGET_GAINS_A_CHARMS_LIFESTYLE_PERKPOINT: "[CHARACTER.GetShortUIName] gana $VALUE|V0$ [charms_lifestyle|E] [perk|E] Desbloquea" #NT!
+ TARGET_GAINED_A_CHARMS_LIFESTYLE_PERKPOINT: "[CHARACTER.GetShortUIName] ganado $VALUE|V0$ [charms_lifestyle|E] [perk|E] Desbloquear" #NT!
+  
+ CHARMS_LIFESTYLE_PERK_POINTS_TRIGGER: "Puntos de beneficio de estilo de vida Charms: $NUM|V0$" #NT!
+  
+ charms_visible: "Amuletos" #NT!
+  
+ absorb_fetish_perk_name: "Fetiche de absorción" #NT!
+ access_caern_perk_name: "Acceso a Caern" #NT!
+ acquisition_perk_name: "Adquisición" #NT!
+ agony_perk_name: "Agonía" #NT!
+ airt_sense_perk_name: "Sentido del aire" #NT!
+ appear_perk_name: "Aparecer" #NT!
+ armor_perk_name: "Armadura" #NT!
+ assess_character_perk_name: "Evaluar el carácter" #NT!
+ blast_perk_name: "Explosión" #NT!
+ blighted_touch_perk_name: "Toque arruinado" #NT!
+ blood_sucking_perk_name: "Chupando sangre" #NT!
+ break_reality_perk_name: "Romper la realidad" #NT!
+ break_wind_perk_name: "Romper el viento" #NT!
+ charms_calcify_perk_name: "Calcificarse" #NT!
+ call_for_aid_perk_name: "Llamado de ayuda" #NT!
+ choke_perk_name: "Ahogo" #NT!
+ cleanse_the_blight_perk_name: "Limpiar la plaga" #NT!
+ cling_perk_name: "Adherirse" #NT!
+ control_electrical_systems_perk_name: "[SelectLocalization( GetScriptedGui('is_modern').IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End), 'control_electrical_systems_modern_name', 'control_electrical_systems_darkage_name')]" #NT!
+ control_electrical_systems_modern_name: "Sistemas eléctricos de control" #NT!
+ control_electrical_systems_darkage_name: "Mecanismo de control" #NT!
+ control_forest_perk_name: "Control forestal" #NT!
+ corruption_perk_name: "Corrupción" #NT!
+ craft_technology_perk_name: "Tecnología artesanal" #NT!
+ create_fires_perk_name: "Crear fuegos" #NT!
+ create_shadows_perk_name: "Crear sombras" #NT!
+ create_wind_perk_name: "Crear viento" #NT!
+ crystallize_perk_name: "Cristalizar" #NT!
+ disable_perk_name: "Desactivar" #NT!
+ disorient_perk_name: "Desorientar" #NT!
+ divide_and_conquer_perk_name: "Divide y vencerás" #NT!
+ dragon_sight_perk_name: "Vista del dragón" #NT!
+ drain_gnosis_perk_name: "Gnosis del drenaje" #NT!
+ dream_journey_perk_name: "Viaje de ensueño" #NT!
+ ease_pain_perk_name: "Aliviar el dolor" #NT!
+ field_sense_perk_name: "Sentido de campo" #NT!
+ flee_perk_name: "Huir" #NT!
+ flood_perk_name: "Inundación" #NT!
+ freeze_perk_name: "Congelar" #NT!
+ frozen_breath_perk_name: "Aliento congelado" #NT!
+ group_fusion_perk_name: "Fusión grupal" #NT!
+ healing_perk_name: "Cicatrización"
+ hide_perk_name: "Esconder" #NT!
+ ice_shards_perk_name: "Fragmentos de hielo" #NT!
+ incite_frenzy_perk_name: "Incitar al frenesí" #NT!
+ influence_perk_name: "Influencia" #NT!
+ information_flow_tap_perk_name: "[SelectLocalization( GetScriptedGui('is_modern').IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End), 'information_flow_tap_modern_name', 'information_flow_tap_darkage_name')]" #NT!
+ information_flow_tap_modern_name: "Flujo de información Tap" #NT!
+ information_flow_tap_darkage_name: "Flujo de información Tap" #NT!
+ informational_link_perk_name: "Enlace informativo" #NT!
+ inner_pain_perk_name: "Dolor interior" #NT!
+ charms_insight_perk_name: "Conocimiento" #NT!
+ intangibility_perk_name: "Intangibilidad" #NT!
+ invisibility_perk_name: "Invisibilidad" #NT!
+ iron_will_perk_name: "Voluntad de hierro" #NT!
+ kindle_perk_name: "Encender" #NT!
+ life_drain_perk_name: "Drenaje de vida" #NT!
+ liquefy_perk_name: "Licuar" #NT!
+ charms_materialize_perk_name: "Materializar" #NT!
+ neutral_scent_perk_name: "Aroma neutro" #NT!
+ noxious_gas_perk_name: "Gas nocivo" #NT!
+ nullify_dream_perk_name: "Anular sueño" #NT!
+ open_moon_bridge_perk_name: "Puente de la Luna Abierta" #NT!
+ open_sky_bridge_perk_name: "Puente de cielo abierto" #NT!
+ paralyze_perk_name: "Paralizar" #NT!
+ charms_paralyzing_stare_perk_name: "Mirada paralizante" #NT!
+ peek_perk_name: "Ojeada" #NT!
+ charms_possession_perk_name: "Posesión" #NT!
+ prophesy_perk_name: "Profetizar" #NT!
+ charms_purify_perk_name: "Purificar" #NT!
+ charms_quake_perk_name: "Terremoto" #NT!
+ quit_reality_perk_name: "Abandona la realidad" #NT!
+ re_form_perk_name: "Reforma" #NT!
+ realm_sense_perk_name: "Sentido del reino" #NT!
+ sap_will_perk_name: "Savia Voluntad" #NT!
+ scale_perk_name: "Escala" #NT!
+ scent_of_safety_perk_name: "Aroma de seguridad" #NT!
+ shapeshift_perk_name: "Cambio de forma" #NT!
+ shatter_glass_perk_name: "Vidrio roto" #NT!
+ short_out_perk_name: "[SelectLocalization( GetScriptedGui('is_modern').IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End), 'short_out_modern_name', 'short_out_darkage_name')]" #NT!
+ short_out_modern_name: "Cortocircuito" #NT!
+ short_out_darkage_name: "Cortocircuito" #NT!
+ charms_siren_song_perk_name: "Canto de sirena" #NT!
+ snatch_wireless_packet_perk_name: "[SelectLocalization( GetScriptedGui('is_modern').IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End), 'snatch_wireless_packet_modern_name', 'snatch_wireless_packet_darkage_name')]" #NT!
+ snatch_wireless_packet_modern_name: "Captura de paquetes inalámbricos" #NT!
+ snatch_wireless_packet_darkage_name: "Mensaje de arrebato" #NT!
+ solidify_reality_perk_name: "Solidificar la realidad" #NT!
+ spirit_away_perk_name: "Desaparecer misteriosamente" #NT!
+ spirit_static_perk_name: "Espíritu estático" #NT!
+ suggestion_perk_name: "Sugerencia" #NT!
+ swift_flight_perk_name: "Vuelo veloz" #NT!
+ throw_crystal_perk_name: "Lanzar cristal" #NT!
+ tracking_perk_name: "Seguimiento" #NT!
+ umbraquake_perk_name: "Terremoto umbra" #NT!
+ umbrastorm_perk_name: "Tormenta de sombras" #NT!
+ updraft_perk_name: "Corriente ascendente" #NT!
+  
+ ABSORB_FETISH_PERK_EFFECT: "Como [character_interaction|E], te permite destruir un [artifact|E] poseído para obtener un atributo aleatorio.\n#F Este amuleto permite que un espíritu absorba un fetiche en su propia masa, aumentando su volumen y poder.#!" #NT!
+ ACCESS_CAERN_PERK_EFFECT: "Puede contener caern [building|E].\n#F Este talismán permite al espíritu acceder a la naturaleza fundamental del caern para facilitar otros talismán.#!" #NT!
+ ACQUISITION_PERK_EFFECT: "Como [character_interaction|E], te permite acelerar el [GetScheme('steal_back_artifact').GetTypeName] [scheme|E].\n#F Este amuleto permite que un espíritu "tome prestado" un objeto pequeño del mundo físico.#!" #NT!
+ AGONY_PERK_EFFECT: "Otorga [GetModifier('agony_perk_modifier').GetNameWithTooltip] [modifier|E] al enemigo [knights|E] cuando actúa como [commander|E] durante [combat_phase|E], o a tu enemigo durante [single_combat_duel_plural|E].\n#F El espíritu puede intentar incapacitar a una criatura magnificando su dolor.#!" #NT!
+ AIRT_SENSE_PERK_EFFECT: "[umbra_sense|E]: [grace_i]#P +5#!\n[umbra_aptitude|E]: [grace_i]#P +50%#!\n#F La mayoría de los espíritus tienen un sentido natural de las direcciones del [spirit_world|E], y pueden viajar sin mucha dificultad.#!" #NT!
+ APPEAR_PERK_EFFECT: "Permite interactuar con el [earth|E] mientras permaneces en el [umbra|E].\n#F Un espíritu con este encanto puede manifestarse frente a un observador sin asumir forma material.#!" #NT!
+ ARMOR_PERK_EFFECT: "#F Este amuleto otorga a un espíritu una medida de protección.#!" #NT!
+ ASSESS_CHARACTER_PERK_EFFECT: "#F Este encanto permite al espíritu evaluar la fuerza general del carácter de un individuo.#!" #NT!
+ BLAST_PERK_EFFECT: "Oportunidad adicional de causar heridas al enemigo [knights|E] cuando está en [combat_phase|E] como [knight|E].\n#F Este talismán permite al espíritu dirigir su furia hacia los oponentes a distancia. Dependiendo del espíritu, este efecto puede adoptar diferentes formas.#!" #NT!
+ BLIGHTED_TOUCH_PERK_EFFECT: "Como [character_interaction|E], te permite invertir la personalidad de un objetivo.\n#F El espíritu puede enviar una plaga a un objetivo.#!" #NT!
+ BLOOD_SUCKING_PERK_EFFECT: "Como [character_interaction|E], te permite chupar la sangre de un objetivo para obtener gnosis.\n#F Este amuleto le permite al espíritu chupar la sangre de un objetivo y obtener poder de ella.#!" #NT!
+ BREAK_REALITY_PERK_EFFECT: "Otorga [GetModifier('break_reality_perk_modifier').GetNameWithTooltip] [modifier|E] al enemigo [commanders|E] cuando actúa como [commander|E] durante [combat_phase|E].\n#F El espíritu puede alterar la realidad de una sustancia y, por lo tanto, modificar su forma Umbral.#!" #NT!
+ BREAK_WIND_PERK_EFFECT: "Otorga [GetModifier('break_wind_perk_modifier').GetNameWithTooltip] [modifier|E] al enemigo [knights|E] cuando actúa como [commander|E] durante [combat_phase|E], o a tu enemigo durante [single_combat_duel_plural|E].\n#F Este encantamiento permite a un espíritu liberar un gas rico y picante de un orificio (normalmente el trasero). Todos los que lo huelen (es lo suficientemente espeso como para ser visible como una nube flotante de gas verdoso y turbulento) se ahogan con él, cayendo al suelo o huyendo, desesperados por aire fresco.#!" #NT!
+ CHARMS_CALCIFY_PERK_EFFECT: "Como [character_interaction|E], te permite hacer que un objetivo sufra [GetModifier('trapped_in_pattern_web_modifier').GetNameWithTooltip].\n#F Este amuleto permite que el espíritu ate a un objetivo a la Red de patrones.#!" #NT!
+ CALL_FOR_AID_PERK_EFFECT: "Desbloquea $seek_aid_of_the_spirits_decision$ [decision|E].\nPuede reclutar a [GetMaA('materialized_spirits').GetName] como [men_at_arms|E].\n#F Este amuleto le otorga al espíritu la capacidad de pedir la ayuda de espíritus similares.#!" #NT!
+ CHOKE_PERK_EFFECT: "Otorga [GetModifier('choke_perk_modifier').GetNameWithTooltip] [modifier|E] al enemigo [knights|E] cuando actúa como [commander|E] durante [combat_phase|E], o a tu enemigo durante [single_combat_duel_plural|E].\n#F El espíritu es capaz de generar nubes de cenizas sofocantes, humo o gases nocivos.#!" #NT!
+ CLEANSE_THE_BLIGHT_PERK_EFFECT: "#F Este encantamiento es similar al Rito de Purificación, ya que purga la corrupción espiritual en sus alrededores.#!" #NT!
+ CLING_PERK_EFFECT: "Otorga [GetModifier('cling_perk_modifier').GetNameWithTooltip] [modifier|E] al enemigo [knights|E] cuando actúa como [commander|E] durante [combat_phase|E], o a tu enemigo durante [single_combat_duel_plural|E].\n#F El espíritu puede adherirse a cualquier objetivo.#!" #NT!
+ CONTROL_ELECTRICAL_SYSTEMS_PERK_EFFECT: "#F [Select_CString( GetScriptedGui('is_modern').IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End), 'The spirit can exert control over an electrical system.', '')]#!" #NT!
+ CONTROL_FOREST_PERK_EFFECT: "Puede reclutar a [GetMaA('animated_tree').GetName] como [men_at_arms|E]\n#F El espíritu invoca a los espíritus del bosque para que acudan en su ayuda.#!" #NT!
+ CORRUPTION_PERK_EFFECT: "#F El espíritu puede susurrar una sugerencia maligna en el oído de un objetivo, y este se inclina a actuar según ese pensamiento.#!" #NT!
+ CRAFT_TECHNOLOGY_PERK_EFFECT: "Ahora, financiar las inspiraciones para los artefactos o encargar uno es menos costoso.\n#F El espíritu puede dar forma a material que alguna vez estuvo vivo (¡pero no no muerto!) en una variedad de objetos al instante.#!" #NT!
+ CREATE_FIRES_PERK_EFFECT: "#F El espíritu puede crear pequeños incendios.#!" #NT!
+ CREATE_SHADOWS_PERK_EFFECT: "Puede reclutar [GetMaA('shades').GetName] como [men_at_arms|E]\n#F El espíritu puede crear, dar forma y manipular sombras en el mundo físico.#!" #NT!
+ CREATE_WIND_PERK_EFFECT: "#F El espíritu puede crear efectos de viento.#!" #NT!
+ CRYSTALLIZE_PERK_EFFECT: "Otorga [GetModifier('crystallize_perk_modifier').GetNameWithTooltip] [modifier|E] al enemigo [knights|E] cuando actúa como [commander|E] durante [combat_phase|E], o a tu enemigo durante [single_combat_duel_plural|E].\n#F El espíritu puede transformar parte de la sustancia de una criatura en materia cristalizada.#!" #NT!
+ DISABLE_PERK_EFFECT: "#F Con este encanto, un espíritu puede paralizar temporalmente a su objetivo.#!" #NT!
+ DISORIENT_PERK_EFFECT: "#F El espíritu puede alterar puntos de referencia y direcciones por completo.#!" #NT!
+ DIVIDE_AND_CONQUER_PERK_EFFECT: "Como [character_interaction|E], te permite crear un clon de ti mismo.\n#F Este amuleto permite que el espíritu se divida en múltiples versiones de sí mismo, dividiendo su Rabia, Gnosis, Fuerza de Voluntad y Poder entre cada nuevo "niño".#!" #NT!
+ DRAGON_SIGHT_PERK_EFFECT: "#F La mayoría de los espíritus tienen un sentido natural de las huellas del dragón en el mundo espiritual y pueden viajar sin mucha dificultad.#!" #NT!
+ DRAIN_GNOSIS_PERK_EFFECT: "Como [character_interaction|E], te permite obtener combustible de poder de los prisioneros.\n#F El espíritu es capaz de drenar la Gnosis de su objetivo.#!" #NT!
+ DREAM_JOURNEY_PERK_EFFECT: "Obtén acceso a [dreaming|E]\n#F Mientras el objetivo está dormido, el espíritu puede inmiscuirse en sus sueños.#!" #NT!
+ EASE_PAIN_PERK_EFFECT: "#F Este amuleto permite que un espíritu alivie el dolor de una criatura material.#!" #NT!
+ FIELD_SENSE_PERK_EFFECT: "#F El espíritu puede sentir todo lo que ocurre en el campo o campos terrenales que conforman su dominio.#!" #NT!
+ FLEE_PERK_EFFECT: "#F Este amuleto le otorga al espíritu una fuerza de voluntad efectiva para escapar de un enemigo.#!" #NT!
+ FLOOD_PERK_EFFECT: "Como [character_interaction|E], puedes lanzar [GetModifier('weather_magic_flow_modifier').GetNameWithTooltip] y [GetModifier('weather_magic_flood_modifier').GetNameWithTooltip] sobre el reino de un enemigo.\n#F El espíritu puede hacer que todas las aguas en un área determinada suban rápidamente, provocando inundaciones.#!" #NT!
+ FREEZE_PERK_EFFECT: "Como [character_interaction|E], puedes lanzar [GetModifier('weather_magic_cold_wave_modifier').GetNameWithTooltip] sobre el reino de un enemigo.\n#F El espíritu puede reducir drásticamente la temperatura en el área inmediata.#!" #NT!
+ FROZEN_BREATH_PERK_EFFECT: "Otorga [GetModifier('frozen_breath_perk_modifier').GetNameWithTooltip] [modifier|E] al enemigo [knights|E] cuando actúa como [commander|E] durante [combat_phase|E], o a tu enemigo durante [single_combat_duel_plural|E].\n#F El espíritu exhala un soplo de aire gélido.#!" #NT!
+ GROUP_FUSION_PERK_EFFECT: "Como [character_interaction|E], te permite compartir destreza entre los miembros de tu [GetPlayer.Custom('PODCoterie')].\n#F Un grupo de tres o más espíritus con este encantamiento pueden rodear a un objetivo y fusionarse a su alrededor.#!" #NT!
+ HEALING_PERK_EFFECT: "Desbloquea la curación [character_interaction|E].\nComo [character_interaction|E], permite evitar que un amigo, amante, consorte, familiar, consejero o caballero muera accidentalmente.\n#F El usuario puede curar heridas, enfermedades y dolencias similares. Si bien rara vez es un tratamiento permanente, la curación a menudo al menos logra aliviar el dolor. El usuario necesita al menos un mínimo de conocimientos médicos para aplicar sus tratamientos correctamente.#!"
+ HIDE_PERK_EFFECT: "#F El espíritu tiene la capacidad de ocultarse.#!" #NT!
+ ICE_SHARDS_PERK_EFFECT: "#F El espíritu puede arrojar fragmentos afilados de hielo a un objetivo.#!" #NT!
+ INCITE_FRENZY_PERK_EFFECT: "Otorga un descanso de estrés aleatorio a los enemigos [knights|E] y [commanders|E] cuando actúan como [commander|E] durante [combat_phase|E], o a tu enemigo durante [single_combat_duel_plural|E].\n#F El espíritu puede hacer que un Garou entre en frenesí.#!" #NT!
+ INFLUENCE_PERK_EFFECT: "Desbloquea [GetScheme('PODsoul_bridge').GetTypeName] [scheme|E].\n#F Un espíritu puede cambiar el estado de ánimo del objetivo. El espíritu no necesita hablar con su objetivo para usar este encantamiento, y los efectos son más graduales que repentinos.#!" #NT!
+ INFORMATION_FLOW_TAP_PERK_EFFECT: "#F [Select_CString( GetScriptedGui('is_modern').IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End), 'The spirit can tap into the flow of electronic data flowing between two computers without interrupting that flow - the spirit dips a finger into the digital stream between the machines, as it were, and then tastes the data.', '')]#!" #NT!
+ INFORMATIONAL_LINK_PERK_EFFECT: "#F Este amuleto permite al espíritu acceder a todo el conocimiento incorporado en la Red de Patrones (que es prácticamente todo).#!" #NT!
+ INNER_PAIN_PERK_EFFECT: "Otorga [GetModifier('inner_pain_perk_modifier').GetNameWithTooltip] [modifier|E] al enemigo [knights|E] cuando actúa como [commander|E] durante [combat_phase|E], o a tu enemigo durante [single_combat_duel_plural|E].\n#F El espíritu puede causarle un dolor intenso a un ser vivo.#!" #NT!
+ CHARMS_INSIGHT_PERK_EFFECT: "#F A través de este encantamiento, un espíritu puede obtener información sobre cualquier aspecto oculto del yo del objetivo.#!" #NT!
+ INTANGIBILITY_PERK_EFFECT: "#F El espíritu puede trasladarse a una Zona, volviéndose intangible.#!" #NT!
+ INVISIBILITY_PERK_EFFECT: "Desbloquea la opción de cambio de forma [GetModifier( 'POD_shapeshift_form_invisible_modifier' ).GetNameWithTooltip|L]."
+ IRON_WILL_PERK_EFFECT: "Inmune a las actitudes mentales hostiles [character_interaction|E].\n#F El espíritu puede fijar su mente en ciertos objetivos de los que no puede desviarse (es decir, proteger una ubicación, cazar un objetivo, permanecer sin ser poseído).#!" #NT!
+ KINDLE_PERK_EFFECT: "#F Este espíritu con este amuleto puede encender la chispa de la vida o la emoción hasta que brille por completo. Un espíritu puede usar este amuleto para hacer que las semillas germinen, que se produzca la fertilización o que crezcan frutos en los árboles. El espíritu también puede optar por usar el amuleto para encender emociones poderosas en seres del mundo material o del [umbra|E].#!" #NT!
+ LIFE_DRAIN_PERK_EFFECT: "Como [character_interaction|E], te permite absorber la salud de un objetivo para obtener gnosis.\n#F El espíritu puede drenar la salud de un objetivo.#!" #NT!
+ LIQUEFY_PERK_EFFECT: "Desbloquea la opción de cambio de forma [GetModifier( 'POD_shapeshift_form_blood_modifier' ).GetNameWithTooltip|L].\n#F El espíritu, incluso cuando está materializado, puede fusionar su forma con agua, sangre, aceite o cualquier otra sustancia líquida.#!" #NT!
+ CHARMS_MATERIALIZE_PERK_EFFECT: "Permite viajar a [earth|E].\n#F Este amuleto permite que un espíritu tome una forma física en la Tierra.#!" #NT!
+ NEUTRAL_SCENT_PERK_EFFECT: "Permitir interacciones amistosas con el triat opuesto [splat|E].\n#F El espíritu puede ocultar su afiliación triática.#!" #NT!
+ NOXIOUS_GAS_PERK_EFFECT: "Otorga [GetModifier('noxious_gas_perk_modifier').GetNameWithTooltip] [modifier|E] al enemigo [knights|E] cuando actúa como [commander|E] durante [combat_phase|E], o a tu enemigo durante [single_combat_duel_plural|E].\n#F El espíritu puede producir una nube maloliente que permanecerá.#!" #NT!
+ NULLIFY_DREAM_PERK_EFFECT: "Inmune a los trucos.\n#F El espíritu puede anular cualquiera de los poderes de su objetivo para afectar un sueño, ya sean Dones, magia o incluso los espectrales Arcanos del Fantasma.#!" #NT!
+ OPEN_MOON_BRIDGE_PERK_EFFECT: "Como [character_interaction|E], te permite teletransportar a tu ejército a la ubicación de tu objetivo o teletransportarte a tu próximo destino cuando viajas.\n#F Crea un puente lunar a una ubicación deseada.#!" #NT!
+ OPEN_SKY_BRIDGE_PERK_EFFECT: "Ya no es necesario que la ubicación de destino tenga un edificio caern para usar el puente lunar abierto [character_interaction|E].\n#F Me gusta el encanto: Puente lunar abierto, excepto que abre portales en el cielo.#!" #NT!
+ PARALYZE_PERK_EFFECT: "#F El espíritu se concentra, congela al objetivo en su lugar.#!" #NT!
+ CHARMS_PARALYZING_STARE_PERK_EFFECT: "#F El espíritu se concentra, congela al objetivo en su lugar.#!" #NT!
+ PEEK_PERK_EFFECT: "Te permite interactuar con seres del [umbra|E] cuando estás en el mundo material.\n[umbra_sense|E]: [grace_i]#P +5%#!\n#F Los espíritus con este amuleto pueden espiar a voluntad desde el [penumbra|E] al mundo físico, sin importar dónde se encuentren.#!" #NT!
+ CHARMS_POSSESSION_PERK_EFFECT: "Desbloquea Poseer [character_interaction|E], permite obtener un gancho en el objetivo y hacer que obtenga algunos de tus atributos.\n#F El espíritu puede poseer un ser vivo o un objeto inanimado.#!" #NT!
+ PROPHESY_PERK_EFFECT: "Recibirás una notificación si alguien tiene la intención de asesinar a tus amigos o familiares. Recibirás una notificación si alguien tiene la intención de seducir a tu amante o consorte. #F El espíritu puede escudriñar el futuro y decirle al interrogador un hecho sobre su futuro cercano. #!" #NT!
+ CHARMS_PURIFY_PERK_EFFECT: "#F El espíritu puede eliminar toxinas de seres físicos (como los Garou).#!" #NT!
+ CHARMS_QUAKE_PERK_EFFECT: "Como [character_interaction|E], puedes lanzar [GetModifier('weather_magic_earthquake_modifier').GetNameWithTooltip] sobre el reino de un enemigo.\n#F El espíritu puede hacer que el suelo en el mundo físico que corresponde a su ubicación actual en Penumbral retumbe y tiemble.#!" #NT!
+ QUIT_REALITY_PERK_EFFECT: "Como [decision|E], puedes ingresar [GetTrait('torpor').GetName( GetNullCharacter )] que te destituirá.\n#F Este extraño encanto permite al espíritu "dar un paso lateral" desde los planos físico y espiritual hacia un tercer lugar desconocido, presumiblemente un Reino de bolsillo.#!" #NT!
+ RE_FORM_PERK_EFFECT: "#F Los espíritus pueden disolver sus formas y transportarse a través de [umbra|E] a sus Dominios de origen.#!" #NT!
+ REALM_SENSE_PERK_EFFECT: "[umbra_sense|E]: [grace_i]#P +20#!\n[umbra_aptitude|E]: [grace_i]#P +10%#!\n#F El espíritu puede sentir todo lo que ocurre en su Dominio tanto en la [umbra|E] como en la Tierra.#!" #NT!
+ SAP_WILL_PERK_EFFECT: "Como [character_interaction|E], te permite perder estrés usando prisioneros.\n#F El espíritu puede minar la voluntad de una persona en el plano físico.#!" #NT!
+ SCALE_PERK_EFFECT: "Coste de entrada al [umbra|E]: [gold_i]#P -100%\n#F Este amuleto permite que un espíritu que no esté directamente al servicio del Tejedor suba a la Red de Patrones sin quedarse atascado, calcificado o alertar a las Arañas de la Red o de Patrones de su presencia.#!" #NT!
+ SCENT_OF_SAFETY_PERK_EFFECT: "#F Este amuleto permite que el espíritu se dirija instintivamente al mejor camino hacia el refugio seguro más cercano.#!" #NT!
+ SHAPESHIFT_PERK_EFFECT: "Bonificación a Cambio de Forma [character_interaction|E] para cambiar de apariencia.\n#F El espíritu puede tomar la forma de cualquier cosa que desee.#!" #NT!
+ SHATTER_GLASS_PERK_EFFECT: "#F El espíritu puede hacer que todos los vidrios cercanos se rompan.#!" #NT!
+ SHORT_OUT_PERK_EFFECT: "#F [Select_CString( GetScriptedGui('is_modern').IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End), 'The spirit can cause electrical systems to short out.', '')]#!" #NT!
+ CHARMS_SIREN_SONG_PERK_EFFECT: "#F Esto es similar al Encantamiento: Sugestión, pero el espíritu solo puede atraer a un objetivo hacia él a través de una canción, sin sugerir ningún otro comando.#!" #NT!
+ SNATCH_WIRELESS_PACKET_PERK_EFFECT: "#F [Select_CString( GetScriptedGui('is_modern').IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End), 'The spirit with this Charm can grab cellular and digital packets coming from or going to phones and pagers.', '')]#!" #NT!
+ SOLIDIFY_REALITY_PERK_EFFECT: "#F Este amuleto permite al espíritu del Tejedor tejer la Red de Patrones, reforzando así las leyes y reglas del Tejedor sobre los aspectos del [umbra|E].#!" #NT!
+ SPIRIT_AWAY_PERK_EFFECT: "Como [character_interaction|E], te permite hacer que un objetivo sufra [GetModifier('trapped_in_yomi_modifier').GetNameWithTooltip], puede regresar como [GetTrait('kueijin').GetName( GetPlayer )].\n#F El temible poder de los peores demonios. Con este encantamiento, un humano puede ser arrebatado del mundo material y llevado directamente al mundo [yomi|E].#!" #NT!
+ SPIRIT_STATIC_PERK_EFFECT: "Desbloquea la opción Manipular el guantelete en el panel Umbra."
+ SUGGESTION_PERK_EFFECT: "#F Esta es una forma menor del encantamiento Corrupción. El espíritu puede transmitir una imagen sensorial y sugerir que el objetivo la persiga.#!" #NT!
+ SWIFT_FLIGHT_PERK_EFFECT: "#F El espíritu con este amuleto puede superar fácilmente a la mayoría de los perseguidores, volando a través del [umbra|E] al triple de velocidad.#!" #NT!
+ THROW_CRYSTAL_PERK_EFFECT: "#F Este amuleto es similar a Lanzar vidrio, excepto que los fragmentos son dirigidos por el espíritu.#!" #NT!
+ TRACKING_PERK_EFFECT: "#F El espíritu puede rastrear a su presa sin fallar.#!" #NT!
+ UMBRAQUAKE_PERK_EFFECT: "Desbloquea Derribar el guante en la acción Manipular el guante [umbra|E].\n#F El espíritu puede hacer que el [umbra|E] tiemble con tanta fuerza que todos los que estén de pie sean arrojados al suelo.#!" #NT!
+ UMBRASTORM_PERK_EFFECT: "[umbra_sense|E]: [grace_i]#P +10#!\n[umbra_aptitude|E]: [grace_i]#P +20%#!\n#F El espíritu puede provocar un gran aguacero en los alrededores [umbra|E].#!" #NT!
+ UPDRAFT_PERK_EFFECT: "[umbra_sense|E]: [grace_i]#P +10#!\n[umbra_aptitude|E]: [grace_i]#P +20%#!\n#F El espíritu puede provocar un gran aguacero en los alrededores [umbra|E].#!" #NT!

@@ -22,8 +22,6 @@
  doctrine_werewolf_veil_should_does_not_matter_name: "No importa"
  doctrine_vampirethemasquerade_none_desc: "Los vampiros actúan sin tener en cuenta el secreto del ganado. Es más difícil reducir su exposición con este principio, pero un mayor temor reducirá los riesgos de una revuelta provincial en la Célula del Inquisidor."
  doctrine_werewolf_veil_should_does_not_matter_desc: "El Velo es un término poético que designa la falsa suposición de que lo sobrenatural no existe, que el Delirium refuerza. El Velo se instituyó formalmente a través de la Concordia de hace nueve mil años, que puso fin al Impergium. La Letanía establece claramente que "El Velo no se levantará". El Delirium ayuda a mantener el Velo en su lugar. Dañar o rasgar el Velo significa una gran pérdida de honor entre los Garou, mientras que repararlo significa lo contrario. Algunos hombres lobo consideran que el Velo es una idea obsoleta que ya no importa. Algunos incluso trabajan activamente para derribarlo para que los hombres lobo puedan restablecer una vez más el Impergium y aterrorizar abiertamente a toda la humanidad."
- doctrine_vampirethemasquerade_ignorant_name: "Ignorante"
- doctrine_vampirethemasquerade_ignorant_desc: "Los vampiros no existen."
  doctrine_vampirethemasquerade_consent_name: "Alimente sólo a quienes están dispuestos"
  doctrine_vampirethemasquerade_consent_desc: "Los vampiros, aunque permanecen ocultos a la sociedad en general, deben buscar el consentimiento de sus "donantes"."
  doctrine_vampirethemasquerade_cult_name: "Culto a la sangre"
@@ -46,12 +44,9 @@
  doctrine_oathbreaking_shunned_desc: "No se debe confiar en quienes rompen sus juramentos. Desconfíe de ellos."
  doctrine_oathbreaking_accepted_name: "Aceptado"
  doctrine_oathbreaking_accepted_desc: "Se acepta la ruptura de juramentos. ¿Quién cree en las palabras de los no muertos?"
- doctrine_oathbreaking_ignorant_name: "Ignorante"
- doctrine_oathbreaking_ignorant_desc: "La ruptura de juramento no se reconoce como falta penal."
  doctrine_parameter_oathbreaking_illegal: "Los personajes con [GetTrait('oathbreaker').GetName( GetPlayer )] [trait|E] son [criminals|E]"
  doctrine_parameter_oathbreaking_shunned: "Los personajes con [GetTrait('oathbreaker').GetName( GetPlayer )] [trait|E] son [shunned|E]"
  doctrine_parameter_oathbreaking_accepted: "Los caracteres con [GetTrait('oathbreaker').GetName( GetPlayer )] [trait|E] son totalmente aceptados"
- doctrine_parameter_oathbreaking_ignorant: "Los caracteres con [GetTrait('oathbreaker').GetName( GetPlayer )] [trait|E] se ignoran."
   
  doctrine_vampirebloodoath_name: "Juramentos de sangre"
  doctrine_vampirebloodoath_crime_name: "Delincuente"
@@ -60,13 +55,13 @@
  doctrine_vampirebloodoath_shunned_desc: "Los juramentos de sangre pueden ser una carga tan pesada para el gobernante como para el esclavo, elígelos con cuidado si es que los eliges. Recuerda los proverbios: Un sorbo de sangre, tomo. Dos sorbos, acepto. Tres sorbos, me niego."
  doctrine_vampirebloodoath_accepted_name: "Aceptado"
  doctrine_vampirebloodoath_accepted_desc: "El Juramento de Sangre es la base de nuestra sociedad. Los juramentos de fidelidad deberían hacerse cumplir mediante cierto grado de vasallaje de sangre."
- doctrine_vampirebloodoath_ignorant_name: "Ignorante"
- doctrine_vampirebloodoath_ignorant_desc: "Los vampiros no existen."
  doctrine_parameter_vampirebloodoath_illegal: "Los personajes con [GetTrait('unbondable').GetName( GetPlayer )] [trait|E] son totalmente aceptados. Pierde la piedad por [bloodbond|E]."
  doctrine_parameter_vampirebloodoath_shunned: "Los caracteres con [GetTrait('unbondable').GetName( GetPlayer )] [trait|E] son totalmente aceptados. Pierde piedad para [bloodbond|E]."
  doctrine_parameter_vampirebloodoath_accepted: "Los caracteres con [GetTrait('unbondable').GetName( GetPlayer )] [trait|E] son [criminals|E]."
   
  doctrine_vampireghouling_name: "[Ghoul|E] Vasallaje"
+ doctrine_vampireghouling_evil_name: "Demonio" #NT!
+ doctrine_vampireghouling_evil_desc: "No puede haber paz ni negociaciones con los esbirros. Los destruiremos a todos o moriremos en el intento." #NT!
  doctrine_vampireghouling_crime_name: "Delincuente"
  doctrine_vampireghouling_crime_desc: "Los ghouls amenazan con el Silencio de la Sangre, no compartas la Sangre con los indignos. No te convertirás en un Dios para los Hijos de Seth, porque el Uno de Arriba, cada vez más celoso en su cielo, derribará el linaje de Caín para siempre. Recuerda a Astareth de rostro gentil, recuerda a Baal de grasa dorada, recuerda al fuerte Tammauz, debes saber que los Hijos de Seth se levantarán con armas del Uno de Arriba y nos conquistarán, si somos como dioses para ellos. Guiarás a los Hijos de Seth como un pastor guía a su rebaño, y los seleccionarás cuando sea necesario. Limpiarás su sangre y los mantendrás a todos libres de enfermedades."
  doctrine_vampireghouling_shunned_name: "Rechazado"
@@ -75,8 +70,6 @@
  doctrine_vampireghouling_accepted_desc: "El lugar de Kine es servirnos, y son mejores vasallos cuando están unidos por Juramento de Sangre.\n\nDe Aquellos Que Sirven\n\nAquellos que elijas bendecir con la Potencia de Caín, pueden venir a vivir dentro de tu casa, para protegerte, que nadie [Embrace|E] estos guardianes, que se les dé sangre en el momento apropiado: que su Fuerza sea tu Fuerza, Fuerza que no disminuye con el sol. Que sus Ojos sean tus Ojos, Ojos que puedan ver durante el día. Que sus Oídos sean tus Oídos, Oídos que puedan oír mientras duermes. Que aquellos que sirven sean nombrados los más grandes de los Hijos de Seth, y los más privilegiados. Que disfruten de la fina tela de los Vástagos, que disfruten de la suave música de los Vástagos, que conozcan la dulzura de nuestro vino. Protejámoslos de quienes los obstaculizan y los lastiman, y levantémonos todos indignados si uno de aquellos que sirven es asesinado por otro Vástago, porque ningún Vástago tiene derecho a matar al Siervo de otro sin provocación."
  doctrine_vampireghouling_mass_name: "Se acepta el Ghouling masivo"
  doctrine_vampireghouling_mass_desc: "La sangre de los parientes puede construir legiones.\n\nDe los que sirven\n\nAquellos que elijas bendecir con la Potencia de Caín, pueden venir a vivir dentro de tu casa, para protegerte, que nadie [Embrace|E] estos guardianes, que se les dé sangre en el momento apropiado: que su Fuerza sea tu Fuerza, Fuerza que no disminuye con el sol. Que sus Ojos sean tus Ojos, Ojos que puedan ver durante el día. Que sus Oídos sean tus Oídos, Oídos que puedan oír mientras duermes. Que aquellos que sirven sean nombrados los más grandes de los Hijos de Seth, y los más privilegiados. Que disfruten de la fina tela de los Vástagos, que disfruten de la suave música de los Vástagos, que conozcan la dulzura de nuestro vino. Protejámoslos de aquellos que los obstaculizarían y lastimarían, y levantémonos todos indignados si uno de los que sirven es asesinado por otro Vástago, porque ningún Vástago tiene derecho a matar al Sirviente de otro sin provocación."
- doctrine_vampireghouling_ignorant_name: "Ignorante"
- doctrine_vampireghouling_ignorant_desc: "Los vampiros no existen."
  doctrine_parameter_vampireghouling_illegal: "Los personajes con [traits|E] [GetTrait('ghoul').GetName( GetPlayer )], [GetTrait('regnant').GetName( GetPlayer )] o [GetTrait('massregnant').GetName( GetPlayer )] son [criminals|E]."
  doctrine_parameter_vampireghouling_shunned: "Los caracteres con [traits|E] [GetTrait('ghoul').GetName( GetPlayer )] o [GetTrait('regnant').GetName( GetPlayer )] son [shunned|E]. Los caracteres con [GetTrait('massregnant').GetName( GetPlayer )] son [criminals|E]."
  doctrine_parameter_vampireghouling_accepted: "Los personajes con [traits|E] [GetTrait('ghoul').GetName( GetPlayer )] o [GetTrait('regnant').GetName( GetPlayer )] son totalmente aceptados. Los personajes con [GetTrait('massregnant').GetName( GetPlayer )] son [criminals|E]."
@@ -87,8 +80,6 @@
  doctrine_bloodsorcery_crime_desc: "La hechicería de sangre es una amenaza para todos los Vástagos y, por lo tanto, debe prohibirse. \n\nDe los Iluminados\n\nLa Madre del Poder, la oscura Lilith, es una de las más grandes de ellas, pero hay otras y aún quedan más por venir. No bebas de su sangre, porque te tenderán una trampa. Ten cuidado con ellas, son astutas. Conocen el conocimiento de Adán y la sabiduría de Eva, son los portadores del fuego, los cultivadores de la tierra, los cuidadores de los animales, los portadores de la escritura, son los hijos del Sol, las Estrellas Nacientes. Buscarán involucrarte en su viaje. ¡Resiste! ¡Resiste! Su camino ignora el hambre, la sangre y el cuerpo. No confíes en aquellos con ojos brillantes hacia el amanecer. Recuerda siempre, es el amanecer lo que trae tu muerte."
  doctrine_bloodsorcery_shunned_name: "Rechazado"
  doctrine_bloodsorcery_shunned_desc: "Los hechiceros de sangre son un grupo sospechoso, en el mejor de los casos un mal necesario a veces.\n\nDe los Iluminados\n\nLa Madre del Poder, la oscura Lilith, es una de las más grandes de ellas, pero hay otras, y aún hay más por venir. No bebas de su sangre, porque te tenderán una trampa, ten cuidado con ellas, son astutas. Conocen el conocimiento de Adán y la sabiduría de Eva, son los portadores del fuego, los labradores de la tierra, los cuidadores de los animales, los portadores de la escritura, son los hijos del Sol, las Estrellas Nacientes. Buscarán involucrarte en su viaje, ¡Resiste! ¡Resiste! Su camino ignora el hambre, la sangre y el cuerpo. No confíes en aquellos con ojos brillantes hacia el amanecer. Recuerda siempre, es el Amanecer el que trae tu muerte."
- doctrine_bloodsorcery_ignorant_name: "Ignorante"
- doctrine_bloodsorcery_ignorant_desc: "La magia no existe."
  doctrine_bloodsorcery_accepted_name: "Aceptado"
  doctrine_bloodsorcery_accepted_desc: "La magia llena el mundo que nos rodea, y es nuestro derecho y nuestro privilegio interactuar con ella como lo hicieron nuestros antepasados."
  doctrine_parameter_bloodsorcery_illegal: "Los personajes con [GetTrait('bloodsorcery').GetName( GetPlayer )] [trait|E] son [criminals|E]"
@@ -102,17 +93,25 @@
  doctrine_infernalism_shunned_desc: "Aquellos que hacen pactos con los demonios siembran su propia perdición. No negociéis con la Oscuridad: con el tiempo nos llevará a todos. Observad bien a los Hijos del Infernal, los Parientes de la Serpiente, pues su contacto os quemará también, y sus lenguas os engañarán. Cazad y destruid a los infernalistas dondequiera que los encontréis."
  doctrine_infernalism_accepted_name: "Aceptado"
  doctrine_infernalism_accepted_desc: "¡Las inversiones infernales son el camino al verdadero poder!"
- doctrine_infernalism_ignorant_name: "Ignorante"
- doctrine_infernalism_ignorant_desc: "El diablo es como una metáfora ¿verdad?"
  doctrine_parameter_infernalism_illegal: "Los caracteres con [GetTrait('demon').GetName( GetPlayer )], [GetTrait('infernalist').GetName( GetPlayer )] o [GetTrait('baali').GetName( GetPlayer )] [traits|E] son [criminals|E]"
  doctrine_parameter_infernalism_shunned: "Los caracteres con [GetTrait('demon').GetName( GetPlayer )], [GetTrait('infernalist').GetName( GetPlayer )] o [GetTrait('baali').GetName( GetPlayer )] [traits|E] son [shunned|E]"
  doctrine_parameter_infernalism_accepted: "Los caracteres con [GetTrait('demon').GetName( GetPlayer )], [GetTrait('infernalist').GetName( GetPlayer )] o [GetTrait('baali').GetName( GetPlayer )] [traits|E] son totalmente aceptados"
-  
- doctrine_infernalism_demonology_name: "La demonología sancionada"
- doctrine_infernalism_demonology_desc: "Los infernales quieren traer el infierno a la tierra. No negociéis con la Oscuridad: con el tiempo nos acabará con todos. Prestad atención a los Hijos del Infernal, los Parientes de la Serpiente, pues su contacto os quemará también, y sus lenguas os engañarán. Cazad y destruid a los infernalistas dondequiera que los encontréis."
  doctrine_parameter_demonology_illegal: "Los personajes con [GetTrait('demonology').GetName( GetNullCharacter )] [trait|E] son [criminals|E]"
  doctrine_parameter_demonology_shunned: "Los personajes con [GetTrait('demonology').GetName( GetNullCharacter )] [trait|E] son [shunned|E]"
  doctrine_parameter_demonology_accepted: "Los caracteres con [GetTrait('demonology').GetName( GetNullCharacter )] [trait|E] son totalmente aceptados"
+  
+ doctrine_demonic_name: "Demoníaco" #NT!
+ doctrine_demonic_evil_name: "Demonio" #NT!
+ doctrine_demonic_evil_desc: "No puede haber paz ni negociaciones con los engendros del infierno. Los destruiremos a todos o moriremos en el intento." #NT!
+ doctrine_demonic_crime_name: "Criminal" #NT!
+ doctrine_demonic_crime_desc: "Los infernales quieren traer el infierno a la tierra. No negociéis con la Oscuridad: con el tiempo nos acabará con todos. Prestad atención a los Hijos del Infernal, los Parientes de la Serpiente, pues su contacto os quemará también, y sus lenguas os engañarán. Cazad y destruid a los infernalistas dondequiera que los encontréis." #NT!
+ doctrine_demonic_shunned_name: "Rechazado" #NT!
+ doctrine_demonic_shunned_desc: "Aquellos que hacen pactos con los demonios siembran su propia perdición. No negociéis con la Oscuridad: con el tiempo nos acabará a todos. Prestad atención a los Hijos del Infernal, los Parientes de la Serpiente, pues su contacto os quemará también, y sus lenguas os engañarán. Cazad y destruid a los infernalistas dondequiera que los encontréis." #NT!
+ doctrine_demonic_accepted_name: "Aceptado" #NT!
+ doctrine_demonic_accepted_desc: "¡Las inversiones infernales son el camino al verdadero poder!" #NT!
+ doctrine_parameter_demonic_illegal: "Los caracteres con [GetTrait('demon').GetName( GetPlayer )], [GetTrait('baali').GetName( GetPlayer )] o [GetTrait('cultist').GetName( GetPlayer )] [traits|E] son [criminals|E]" #NT!
+ doctrine_parameter_demonic_shunned: "Los caracteres con [GetTrait('demon').GetName( GetPlayer )], [GetTrait('baali').GetName( GetPlayer )] o [GetTrait('cultist').GetName( GetPlayer )] [traits|E] son [shunned|E]" #NT!
+ doctrine_parameter_demonic_accepted: "Los caracteres con [GetTrait('demon').GetName( GetPlayer )], [GetTrait('baali').GetName( GetPlayer )] o [GetTrait('cultist').GetName( GetPlayer )] [traits|E] son totalmente aceptados" #NT!
   
  doctrine_vampirediablerie_name: "[diablerie|E]"
  doctrine_vampirediablerie_crime_name: "Delincuente"
@@ -121,12 +120,9 @@
  doctrine_vampirediablerie_shunned_desc: "Una vez que los vampiros hayan adquirido el gusto por la sangre de otros vampiros, ¿dónde se detendrán?"
  doctrine_vampirediablerie_accepted_name: "Aceptado"
  doctrine_vampirediablerie_accepted_desc: "La sangre pertenece a aquellos lo suficientemente fuertes para contenerla."
- doctrine_vampirediablerie_ignorant_name: "Ignorante"
- doctrine_vampirediablerie_ignorant_desc: "Los vampiros no existen."
  doctrine_parameter_vampirediablerie_illegal: "Los caracteres con [traits|E] [GetTrait('diablerist').GetName( GetPlayer )] o [GetTrait('predatortype_bloodleech').GetName( GetPlayer )] son [criminals|E]"
  doctrine_parameter_vampirediablerie_shunned: "Los caracteres con [traits|E] [GetTrait('diablerist').GetName( GetPlayer )] o [GetTrait('predatortype_bloodleech').GetName( GetPlayer )] son [shunned|E]"
  doctrine_parameter_vampirediablerie_accepted: "Los caracteres con [traits|E] [GetTrait('diablerist').GetName( GetPlayer )] o [GetTrait('predatortype_bloodleech').GetName( GetPlayer )] son totalmente aceptados"
- doctrine_parameter_vampirediablerie_ignorant: "Somos ignorantes del [GetTrait('diablerist').GetName( GetPlayer )] o o [GetTrait('predatortype_bloodleech').GetName( GetPlayer )] [traits|E]"
   
  doctrine_vampirefrenzy_name: "Frenesí"
  doctrine_vampirefrenzy_crime_name: "Delincuente"
@@ -135,12 +131,9 @@
  doctrine_vampirefrenzy_shunned_desc: "Todos los Vástagos luchan contra las exigencias de la Bestia, no se rindan ante ella fácilmente. Recuerden los proverbios. Cabalguen a la Bestia, no dejen que ella los cabalgue a ustedes."
  doctrine_vampirefrenzy_accepted_name: "Aceptado"
  doctrine_vampirefrenzy_accepted_desc: "¡Súbete a la ola! ¡La Bestia es poder cuando más lo necesitamos!"
- doctrine_vampirefrenzy_ignorant_name: "Ignorante"
- doctrine_vampirefrenzy_ignorant_desc: "¿Qué podría hacer que alguien perdiera tanto el control?"
  doctrine_parameter_vampirefrenzy_illegal: "Los personajes con [GetTrait('wight').GetName( GetPlayer )] [trait|E] son [criminals|E]"
  doctrine_parameter_vampirefrenzy_shunned: "Los personajes con [GetTrait('wight').GetName( GetPlayer )] [trait|E] son [shunned|E]"
  doctrine_parameter_vampirefrenzy_accepted: "Los caracteres con [GetTrait('wight').GetName( GetPlayer )] [trait|E] son totalmente aceptados"
- doctrine_parameter_vampirefrenzy_ignorant: "Los personajes con [GetTrait('wight').GetName( GetPlayer )] [trait|E] padecen una enfermedad desconocida."
   
  doctrine_vampirethinblood_name: "Sangre delgada"
  doctrine_vampirethinblood_crime_name: "Delincuente"
@@ -149,50 +142,47 @@
  doctrine_vampirethinblood_shunned_desc: "Los de sangre débil son un presagio de Gehena. Se los evita y se los rechaza."
  doctrine_vampirethinblood_accepted_name: "Aceptado"
  doctrine_vampirethinblood_accepted_desc: "Los nacidos del crepúsculo son como cualquier otro vampiro, aunque más débiles."
- doctrine_vampirethinblood_ignorant_name: "Ignorante"
- doctrine_vampirethinblood_ignorant_desc: "No conocemos los caminos de la sangre de vampiro."
  doctrine_vampirethinblood_justicar_name: "$custom_camarilla_clan_status_justicar$"
  doctrine_vampirethinblood_justicar_desc: "[GetTrait('caitiff').GetName( GetPlayer )] puede designar a [justicar|E]."
  doctrine_parameter_vampirethinblood_illegal: "Los caracteres con [GetTrait('caitiff').GetName( GetPlayer )], [GetTrait('vampgeneration14').GetName( GetPlayer )], [GetTrait('vampgeneration15').GetName( GetPlayer )] y [GetTrait('vampgeneration16').GetName( GetPlayer )] [traits|E] son [criminals|E]"
  doctrine_parameter_vampirethinblood_shunned: "Los caracteres con [GetTrait('caitiff').GetName( GetPlayer )], [GetTrait('vampgeneration14').GetName( GetPlayer )],[GetTrait('vampgeneration15').GetName( GetPlayer )] y [GetTrait('vampgeneration16').GetName( GetPlayer )] [traits|E] son [shunned|E]"
  doctrine_parameter_vampirethinblood_accepted: "Los personajes con [GetTrait('caitiff').GetName( GetPlayer )], [GetTrait('vampgeneration14').GetName( GetPlayer )],[GetTrait('vampgeneration15').GetName( GetPlayer )] y [GetTrait('vampgeneration16').GetName( GetPlayer )] [traits|E] son totalmente aceptados"
- doctrine_parameter_vampirethinblood_ignorant: "Somos ignorantes de los [GetTrait('caitiff').GetName( GetPlayer )], [GetTrait('vampgeneration14').GetName( GetPlayer )], [GetTrait('vampgeneration15').GetName( GetPlayer )] y [GetTrait('vampgeneration16').GetName( GetPlayer )] [traits|E]"
   
   # Hunter doctrines 
   
  doctrine_vampirism_name: "Vampirismo"
+ doctrine_vampirism_evil_name: "Demonio" #NT!
+ doctrine_vampirism_evil_desc: "No puede haber paz ni negociaciones con las abominaciones chupasangre. Las destruiremos a todas o moriremos en el intento." #NT!
  doctrine_vampirism_crime_name: "Delincuente"
  doctrine_vampirism_crime_desc: "Las abominaciones chupadoras de sangre deben ser destruidas."
  doctrine_vampirism_shunned_name: "Rechazado"
  doctrine_vampirism_shunned_desc: "Lástima de estos pobres desgraciados que ya no pueden contemplar el amanecer."
  doctrine_vampirism_accepted_name: "Aceptado"
  doctrine_vampirism_accepted_desc: "Los Vástagos son aceptados."
- doctrine_vampirism_ignorant_name: "Ignorante"
- doctrine_vampirism_ignorant_desc: "Los vampiros no existen."
  doctrine_parameter_vampirism_illegal: "Los personajes con [GetTrait('vampire').GetName( GetPlayer )] [trait|E] son [criminals|E]"
  doctrine_parameter_vampirism_shunned: "Los personajes con [GetTrait('vampire').GetName( GetPlayer )] [trait|E] son [shunned|E]"
  doctrine_parameter_vampirism_accepted: "Los caracteres con [GetTrait('vampire').GetName( GetPlayer )] [trait|E] son totalmente aceptados"
   
  doctrine_shifter_name: "Cambiaformas"
+ doctrine_shifter_evil_name: "Demonio" #NT!
+ doctrine_shifter_evil_desc: "No puede haber paz ni negociaciones con la bestia. Los destruiremos a todos o moriremos en el intento." #NT!
  doctrine_shifter_crime_name: "Delincuente"
  doctrine_shifter_crime_desc: "Los cambiaformas deben ser destruidos."
  doctrine_shifter_shunned_name: "Rechazado"
  doctrine_shifter_shunned_desc: "Los cambiaformas son rechazados."
  doctrine_shifter_accepted_name: "Aceptado"
  doctrine_shifter_accepted_desc: "Se aceptan cambiaformas."
- doctrine_shifter_ignorant_name: "Ignorante"
- doctrine_shifter_ignorant_desc: "¿Qué es un cambiaformas?"
  doctrine_parameter_shifter_illegal: "Los personajes con [GetTraitGroup('shapeshifter').GetName()] [trait|E] son [criminals|E]"
  doctrine_parameter_shifter_shunned: "Los personajes con [GetTraitGroup('shapeshifter').GetName()] [trait|E] son [shunned|E]"
  doctrine_parameter_shifter_accepted: "Los caracteres con [GetTraitGroup('shapeshifter').GetName()] [trait|E] son totalmente aceptados"
   
  doctrine_magicraft_name: "Magia"
+ doctrine_magicraft_evil_name: "Demonio" #NT!
+ doctrine_magicraft_evil_desc: "No puede haber paz ni negociaciones con las brujas. Las destruiremos a todas o moriremos en el intento." #NT!
  doctrine_magicraft_crime_name: "Delincuente"
  doctrine_magicraft_crime_desc: "Los Magos deben ser destruidos.\n\nDe los Iluminados\n\nLa Madre del Poder, la oscura Lilith, es una de las más grandes, pero hay otras, y más aún están por venir. No bebáis de su sangre, porque os tenderán una trampa; tened cuidado con ellos, son astutos. Conocen el conocimiento de Adán y la sabiduría de Eva, son los portadores del fuego, los labradores de la tierra, los criadores de animales, los portadores de la escritura, son los hijos del Sol, las estrellas nacientes. Buscarán involucrarte en su viaje, ¡Resiste! ¡Resistir! Su camino ignora el hambre, la sangre y el cuerpo. No confíes en los que tienen ojos brillantes hacia el amanecer. Recuerda siempre que es la Aurora la que trae tu muerte."
  doctrine_magicraft_shunned_name: "Rechazado"
  doctrine_magicraft_shunned_desc: "Aunque son sobrenaturales como nosotros, los magos no son como nosotros. No son como nosotros en absoluto.\n\nDe los Iluminados\n\nLa Polilla del Poder, la oscura Lilith, es una de las más grandes de ellas, pero hay otras, y aún hay más por venir. No bebas de su sangre, porque te tenderán una trampa. Ten cuidado con ellas, son astutas. Conocen el conocimiento de Adán y la sabiduría de Eva, son los portadores del fuego, los labradores de la tierra, los cuidadores de los animales, los portadores de la escritura, son los hijos del Sol, las Estrellas Nacientes. Buscarán involucrarte en su viaje. ¡Resiste! ¡Resiste! Su camino ignora el hambre, la sangre y el cuerpo. No confíes en los que tienen ojos brillantes hacia el amanecer. Recuerda siempre, es el Amanecer el que trae tu muerte."
- doctrine_magicraft_ignorant_name: "Ignorante"
- doctrine_magicraft_ignorant_desc: "La magia no existe."
  doctrine_magicraft_accepted_name: "Aceptado"
  doctrine_magicraft_accepted_desc: "Los magos son aceptados."
  doctrine_parameter_magicraft_illegal: "Los caracteres con [GetTrait('mage').GetName( GetPlayer )] o [GetTrait('sorcerer').GetName( GetPlayer )] [trait|E] son [criminals|E]"
@@ -200,27 +190,27 @@
  doctrine_parameter_magicraft_accepted: "Los caracteres con [GetTrait('mage').GetName( GetPlayer )] o [GetTrait('sorcerer').GetName( GetPlayer )] [trait|E] son totalmente aceptados"
   
  doctrine_haunting_name: "Obsesionante"
+ doctrine_haunting_evil_name: "Demonio" #NT!
+ doctrine_haunting_evil_desc: "No puede haber paz ni negociaciones con los muertos. Los destruiremos a todos o moriremos en el intento." #NT!
  doctrine_haunting_crime_name: "Delincuente"
  doctrine_haunting_crime_desc: "Los fantasmas deben mantenerse al otro lado del velo.\n\nDe esos espíritus de los muertos\n\nPresten atención: hay un lugar más allá del espíritu, más allá de la vida que es Oscuridad, Sombra, y allí moran las Sombras. Una isla, una fortaleza, una tierra de los Muertos, he viajado allí a través de un camino de perdición y he sido testigo del terrible rey de la Ciudad Estigia mientras se sentaba en la corte. He visto a los encapuchados sin rostro atravesar el río Estigia. Pululan a nuestro alrededor como moscas sobre un cadáver putrefacto y, como nosotros, se alimentan de miedo, éxtasis e ira. Están muertos, pero no muertos, y están más cerca de nosotros de lo que nunca sabremos."
  doctrine_haunting_shunned_name: "Rechazado"
  doctrine_haunting_shunned_desc: "Los fantasmas son almas que se desprenden de sus cadáveres. Pueden intentar poseer nuestros cuerpos.\n\nDe los espíritus de los muertos\n\nPresta atención: hay un lugar más allá del espíritu, más allá de la vida, que es la Oscuridad, la Sombra, y allí moran las Sombras. Una isla, una fortaleza, una tierra de los Muertos. He viajado hasta allí a través de un camino de perdición y he sido testigo del terrible rey de la Ciudad Estigia mientras se sentaba en la corte. He visto a los encapuchados sin rostro atravesar el río Estigia. Pululan a nuestro alrededor como moscas sobre un cadáver putrefacto y, como nosotros, se alimentan de miedo, éxtasis e ira. Están muertos, pero no muertos, y están más cerca de nosotros de lo que nunca sabremos."
  doctrine_haunting_accepted_name: "Aceptado"
  doctrine_haunting_accepted_desc: "Los espectros pueden ser útiles. Quienes conocen las artes de invocar y atar espectros pueden usarlos para todo tipo de propósitos.\n\nDe esos espíritus de los muertos\n\nRecuerden bien: hay un lugar más allá del espíritu, más allá de la vida que es Oscuridad, Sombra, y allí moran las Sombras. Una isla, una fortaleza, una tierra de los Muertos, he viajado allí a través de un camino de perdición y he sido testigo del terrible rey de la Ciudad Estigia mientras se sentaba en la corte. He visto a los encapuchados sin rostro atravesar el río Estigia. Pululan a nuestro alrededor como moscas sobre un cadáver putrefacto y, como nosotros, se alimentan de miedo, éxtasis e ira. Están muertos, pero no muertos, y están más cerca de nosotros de lo que nunca sabremos."
- doctrine_haunting_ignorant_name: "Ignorante"
- doctrine_haunting_ignorant_desc: "Cuando mueres, ese es el final."
  doctrine_parameter_haunting_illegal: "Los caracteres con [GetTrait('wraith').GetName( GetNullCharacter )] [trait|E] son [criminals|E]. Los caracteres con [GetTrait('necromancy').GetName( GetPlayer )] o [GetTrait('oblivion').GetName( GetPlayer )] [traits|E] son [shunned|E]."
  doctrine_parameter_haunting_shunned: "Los caracteres con [GetTrait('wraith').GetName( GetNullCharacter )], [GetTrait('necromancy').GetName( GetPlayer )] o [GetTrait('oblivion').GetName( GetPlayer )] [traits|E] son [shunned|E]"
  doctrine_parameter_haunting_accepted: "Los caracteres con [GetTrait('wraith').GetName( GetNullCharacter )], [GetTrait('necromancy').GetName( GetPlayer )] o [GetTrait('oblivion').GetName( GetPlayer )] [traits|E] son totalmente aceptados"
   
  doctrine_glamour_name: "Glamour"
+ doctrine_glamour_evil_name: "Demonio" #NT!
+ doctrine_glamour_evil_desc: "No puede haber paz ni negociaciones con los viejos supersticiosos. Los destruiremos a todos o moriremos en el intento." #NT!
  doctrine_glamour_crime_name: "Delincuente"
  doctrine_glamour_crime_desc: "Los Fae deben ser destruidos."
  doctrine_glamour_shunned_name: "Rechazado"
  doctrine_glamour_shunned_desc: "Aunque son sobrenaturales como nosotros, los Fae no son como nosotros. No son como nosotros en absoluto.\n\nDe los salvajes\n\nDe los locos, los salvajes, digo, primero, ¡no beban de su sangre! Pero obsérvenlos, porque son hermosos en su naturaleza salvaje, son encantadores en su misterio, son mortales en sus habilidades bélicas. Solo entre las criaturas de la noche, me hicieron compañía en la tierra y me trajeron agua cuando tenía sed y aún podía respirar. Como Yo, fueron expulsados, Como Mis Hijos, no tienen hogar, Como los Hijos de Mis Hijos, vagan, Como mi Madre y mi Padre, saben demasiado, pero se guardan sus propios consejos, y, de ellos, digo, ¡observen bien, guarden silencio! No digan nada. Observen y aprendan."
  doctrine_glamour_accepted_name: "Aceptado"
  doctrine_glamour_accepted_desc: "Los Fae son aceptados.\n\nDe los Salvajes\n\nDe los locos, los salvajes, digo, primero, ¡no beban de su sangre! Pero obsérvenlos, porque son hermosos en su naturaleza salvaje, son encantadores en su misterio, son mortales en sus habilidades bélicas. Solo entre las criaturas de la noche, me hicieron compañía en la tierra y me trajeron agua cuando tenía sed y aún podía respirar. Como Yo, fueron expulsados, Como Mis Hijos, no tienen hogar, Como los Hijos de Mis Hijos, vagan, Como mi Madre y mi Padre, saben demasiado, pero se guardan sus propios consejos, y, de ellos, digo, ¡observen bien, guarden silencio! No digan nada. Observen y aprendan."
- doctrine_glamour_ignorant_name: "Ignorante"
- doctrine_glamour_ignorant_desc: "¿No eres un poco mayor para creer en Santa Claus?"
  doctrine_parameter_glamour_illegal: "Los caracteres con [GetTrait('fae').GetName( GetPlayer )] o [GetTrait('changeling').GetName( GetPlayer )] [trait|E] son [criminals|E]"
  doctrine_parameter_glamour_shunned: "Los caracteres con [GetTrait('fae').GetName( GetPlayer )] o [GetTrait('changeling').GetName( GetPlayer )] [trait|E] son [shunned|E]"
  doctrine_parameter_glamour_accepted: "Los personajes con [GetTrait('fae').GetName( GetPlayer )] o [GetTrait('changeling').GetName( GetPlayer )] [trait|E] son totalmente aceptados"
@@ -235,9 +225,6 @@
  doctrine_parameter_supehunting_illegal: "Los personajes con [GetTrait('supehunter').GetName( GetPlayer )] [trait|E] son [criminals|E]"
  doctrine_parameter_supehunting_shunned: "Los personajes con [GetTrait('supehunter').GetName( GetPlayer )] [trait|E] son [shunned|E]"
  doctrine_parameter_supehunting_accepted: "Los caracteres con [GetTrait('supehunter').GetName( GetPlayer )] [trait|E] son totalmente aceptados"
- doctrine_supehunting_ignorant_name: "Ignorante"
- doctrine_supehunting_ignorant_desc: "La Iglesia sin duda es demasiado celosa contra los herejes."
- doctrine_parameter_supehunting_ignorant: "Los caracteres con [GetTrait('supehunter').GetName( GetPlayer )] [trait|E] son prácticas desconocidas para esta fe."
   
  doctrine_undying_name: "Eterno"
  doctrine_undying_crime_name: "Delincuente"
@@ -259,8 +246,6 @@
  doctrine_kueijin_shunned_desc: "[GetTrait('kueijin').GetName( GetPlayer )] son rechazados."
  doctrine_kueijin_accepted_name: "Aceptado"
  doctrine_kueijin_accepted_desc: "Se aceptan [GetTrait('kueijin').GetName( GetPlayer )]."
- doctrine_kueijin_ignorant_name: "Ignorante"
- doctrine_kueijin_ignorant_desc: "¿Qué es un [GetTrait('kueijin').GetName( GetPlayer )]?"
  doctrine_parameter_kueijin_illegal: "Los personajes con [GetTrait('kueijin').GetName( GetPlayer )] [trait|E] son [criminals|E]"
  doctrine_parameter_kueijin_shunned: "Los personajes con [GetTrait('kueijin').GetName( GetPlayer )] [trait|E] son [shunned|E]"
  doctrine_parameter_kueijin_accepted: "Los caracteres con [GetTrait('kueijin').GetName( GetPlayer )] [trait|E] son totalmente aceptados"
@@ -280,8 +265,6 @@
  doctrine_lycanthropy_shunned_desc: "Aunque son sobrenaturales como nosotros, los hombres lobo no son como nosotros. No son como nosotros en absoluto.\n\nDe las Bestias Lunares\n\nLas Bestias Lunares, las que cambian, son las más antiguas de todas, antes de mi padre vagaban por las tierras. No te detengas en su camino, evítalos, se lanzan sobre nosotros como lobos en el redil. Porque somos de una especie y ellos de otra. Ten cuidado con su suelo sagrado, camina con cuidado por su desierto. Su mordedura es como nuestra mordedura, sus garras son como nuestras garras, no te detengas en su camino, son de una especie y nosotros somos de otra."
  doctrine_lycanthropy_accepted_name: "Aceptado"
  doctrine_lycanthropy_accepted_desc: "Los Garou son aceptados."
- doctrine_lycanthropy_ignorant_name: "Ignorante"
- doctrine_lycanthropy_ignorant_desc: "Los hombres lobo no existen."
  doctrine_parameter_lycanthropy_illegal: "Los personajes con [GetTrait('werewolf').GetName( GetPlayer )] [trait|E] son [criminals|E]"
  doctrine_parameter_lycanthropy_shunned: "Los personajes con [GetTrait('werewolf').GetName( GetPlayer )] [trait|E] son [shunned|E]"
  doctrine_parameter_lycanthropy_accepted: "Los caracteres con [GetTrait('werewolf').GetName( GetPlayer )] [trait|E] son totalmente aceptados"
@@ -293,24 +276,20 @@
  doctrine_ajaba_shunned_desc: "Las hienas-hombres son rechazadas."
  doctrine_ajaba_accepted_name: "Aceptado"
  doctrine_ajaba_accepted_desc: "Las hienas-hombre son aceptadas."
- doctrine_ajaba_ignorant_name: "Ignorante"
- doctrine_ajaba_ignorant_desc: "¿Qué es una Ajaba?"
  doctrine_parameter_ajaba_illegal: "Los personajes con [GetTrait('ajaba').GetName( GetPlayer )] [trait|E] son [criminals|E]"
  doctrine_parameter_ajaba_shunned: "Los personajes con [GetTrait('ajaba').GetName( GetPlayer )] [trait|E] son [shunned|E]"
  doctrine_parameter_ajaba_accepted: "Los caracteres con [GetTrait('ajaba').GetName( GetPlayer )] [trait|E] son totalmente aceptados"
   
- doctrine_ananasi_name: "Ananási"
- doctrine_ananasi_crime_name: "Delincuente"
- doctrine_ananasi_crime_desc: "Las arañas-hombre deben ser destruidas."
- doctrine_ananasi_shunned_name: "Rechazado"
- doctrine_ananasi_shunned_desc: "Las arañas-hombre son rechazadas."
- doctrine_ananasi_accepted_name: "Aceptado"
- doctrine_ananasi_accepted_desc: "Las arañas-hombre son aceptadas."
- doctrine_ananasi_ignorant_name: "Ignorante"
- doctrine_ananasi_ignorant_desc: "¿Qué es un Ananasi?"
- doctrine_parameter_ananasi_illegal: "Los personajes con [GetTrait('ananasi').GetName( GetPlayer )] [trait|E] son [criminals|E]"
- doctrine_parameter_ananasi_shunned: "Los personajes con [GetTrait('ananasi').GetName( GetPlayer )] [trait|E] son [shunned|E]"
- doctrine_parameter_ananasi_accepted: "Los caracteres con [GetTrait('ananasi').GetName( GetPlayer )] [trait|E] son totalmente aceptados"
+ doctrine_entomos_name: "Entomos" #NT!
+ doctrine_entomos_crime_name: "Criminal" #NT!
+ doctrine_entomos_crime_desc: "Los insectos cambiaformas deben ser destruidos." #NT!
+ doctrine_entomos_shunned_name: "Rechazado" #NT!
+ doctrine_entomos_shunned_desc: "Los cambiaformas insectos son rechazados." #NT!
+ doctrine_entomos_accepted_name: "Aceptado" #NT!
+ doctrine_entomos_accepted_desc: "Los cambiaformas insectos son aceptados." #NT!
+ doctrine_parameter_entomos_illegal: "Los personajes con [GetTrait('entomos').GetName( GetPlayer )] [trait|E] son [criminals|E]" #NT!
+ doctrine_parameter_entomos_shunned: "Los personajes con [GetTrait('entomos').GetName( GetPlayer )] [trait|E] son [shunned|E]" #NT!
+ doctrine_parameter_entomos_accepted: "Los caracteres con [GetTrait('entomos').GetName( GetPlayer )] [trait|E] son totalmente aceptados" #NT!
   
  doctrine_bastet_name: "Bastet"
  doctrine_bastet_crime_name: "Delincuente"
@@ -319,8 +298,6 @@
  doctrine_bastet_shunned_desc: "Los hombres gato son rechazados."
  doctrine_bastet_accepted_name: "Aceptado"
  doctrine_bastet_accepted_desc: "Se aceptan los hombres gato."
- doctrine_bastet_ignorant_name: "Ignorante"
- doctrine_bastet_ignorant_desc: "¿Qué es una Bastet?"
  doctrine_parameter_bastet_illegal: "Los personajes con [GetTrait('bastet').GetName( GetPlayer )] [trait|E] son [criminals|E]"
  doctrine_parameter_bastet_shunned: "Los personajes con [GetTrait('bastet').GetName( GetPlayer )] [trait|E] son [shunned|E]"
  doctrine_parameter_bastet_accepted: "Los caracteres con [GetTrait('bastet').GetName( GetPlayer )] [trait|E] son totalmente aceptados"
@@ -332,8 +309,6 @@
  doctrine_corax_shunned_desc: "Los hombres cuervo son rechazados."
  doctrine_corax_accepted_name: "Aceptado"
  doctrine_corax_accepted_desc: "Los hombres-cuervo son aceptados."
- doctrine_corax_ignorant_name: "Ignorante"
- doctrine_corax_ignorant_desc: "¿Qué es un Corax?"
  doctrine_parameter_corax_illegal: "Los personajes con [GetTrait('corax').GetName( GetPlayer )] [trait|E] son [criminals|E]"
  doctrine_parameter_corax_shunned: "Los personajes con [GetTrait('corax').GetName( GetPlayer )] [trait|E] son [shunned|E]"
  doctrine_parameter_corax_accepted: "Los caracteres con [GetTrait('corax').GetName( GetPlayer )] [trait|E] son totalmente aceptados"
@@ -345,8 +320,6 @@
  doctrine_gurahl_shunned_desc: "Los hombres oso son rechazados."
  doctrine_gurahl_accepted_name: "Aceptado"
  doctrine_gurahl_accepted_desc: "Los hombres oso son aceptados."
- doctrine_gurahl_ignorant_name: "Ignorante"
- doctrine_gurahl_ignorant_desc: "¿Qué es un Gurahl?"
  doctrine_parameter_gurahl_illegal: "Los personajes con [GetTrait('gurahl').GetName( GetPlayer )] [trait|E] son [criminals|E]"
  doctrine_parameter_gurahl_shunned: "Los personajes con [GetTrait('gurahl').GetName( GetPlayer )] [trait|E] son [shunned|E]"
  doctrine_parameter_gurahl_accepted: "Los caracteres con [GetTrait('gurahl').GetName( GetPlayer )] [trait|E] son totalmente aceptados"
@@ -358,8 +331,6 @@
  doctrine_kitsune_shunned_desc: "Los hombres zorro son rechazados."
  doctrine_kitsune_accepted_name: "Aceptado"
  doctrine_kitsune_accepted_desc: "Los hombres zorro son aceptados."
- doctrine_kitsune_ignorant_name: "Ignorante"
- doctrine_kitsune_ignorant_desc: "¿Qué es un Kitsune?"
  doctrine_parameter_kitsune_illegal: "Los personajes con [GetTrait('kitsune').GetName( GetPlayer )] [trait|E] son [criminals|E]"
  doctrine_parameter_kitsune_shunned: "Los personajes con [GetTrait('kitsune').GetName( GetPlayer )] [trait|E] son [shunned|E]"
  doctrine_parameter_kitsune_accepted: "Los caracteres con [GetTrait('kitsune').GetName( GetPlayer )] [trait|E] son totalmente aceptados"
@@ -371,8 +342,6 @@
  doctrine_mokole_shunned_desc: "Los hombres-cocodrilos son rechazados."
  doctrine_mokole_accepted_name: "Aceptado"
  doctrine_mokole_accepted_desc: "Los hombres-dragones son aceptados."
- doctrine_mokole_ignorant_name: "Ignorante"
- doctrine_mokole_ignorant_desc: "¿Qué es un Mokolé?"
  doctrine_parameter_mokole_illegal: "Los personajes con [GetTrait('mokole').GetName( GetPlayer )] [trait|E] son [criminals|E]"
  doctrine_parameter_mokole_shunned: "Los personajes con [GetTrait('mokole').GetName( GetPlayer )] [trait|E] son [shunned|E]"
  doctrine_parameter_mokole_accepted: "Los caracteres con [GetTrait('mokole').GetName( GetPlayer )] [trait|E] son totalmente aceptados"
@@ -384,8 +353,6 @@
  doctrine_nagah_shunned_desc: "Las serpientes-hombre son rechazadas."
  doctrine_nagah_accepted_name: "Aceptado"
  doctrine_nagah_accepted_desc: "Las mujeres serpiente son aceptadas."
- doctrine_nagah_ignorant_name: "Ignorante"
- doctrine_nagah_ignorant_desc: "¿Qué es un Nagah?"
  doctrine_parameter_nagah_illegal: "Los personajes con [GetTrait('nagah').GetName( GetPlayer )] [trait|E] son [criminals|E]"
  doctrine_parameter_nagah_shunned: "Los personajes con [GetTrait('nagah').GetName( GetPlayer )] [trait|E] son [shunned|E]"
  doctrine_parameter_nagah_accepted: "Los caracteres con [GetTrait('nagah').GetName( GetPlayer )] [trait|E] son totalmente aceptados"
@@ -397,8 +364,6 @@
  doctrine_nuwisha_shunned_desc: "Los hombres coyotes son rechazados."
  doctrine_nuwisha_accepted_name: "Aceptado"
  doctrine_nuwisha_accepted_desc: "Los hombres coyotes son aceptados."
- doctrine_nuwisha_ignorant_name: "Ignorante"
- doctrine_nuwisha_ignorant_desc: "¿Qué es una Nuwisha?"
  doctrine_parameter_nuwisha_illegal: "Los personajes con [GetTrait('nuwisha').GetName( GetPlayer )] [trait|E] son [criminals|E]"
  doctrine_parameter_nuwisha_shunned: "Los personajes con [GetTrait('nuwisha').GetName( GetPlayer )] [trait|E] son [shunned|E]"
  doctrine_parameter_nuwisha_accepted: "Los caracteres con [GetTrait('nuwisha').GetName( GetPlayer )] [trait|E] son totalmente aceptados"
@@ -410,8 +375,6 @@
  doctrine_ratkin_shunned_desc: "Los hombres rata son rechazados."
  doctrine_ratkin_accepted_name: "Aceptado"
  doctrine_ratkin_accepted_desc: "Se aceptan los hombres rata."
- doctrine_ratkin_ignorant_name: "Ignorante"
- doctrine_ratkin_ignorant_desc: "¿Qué es un Ratkin?"
  doctrine_parameter_ratkin_illegal: "Los personajes con [GetTrait('ratkin').GetName( GetPlayer )] [trait|E] son [criminals|E]"
  doctrine_parameter_ratkin_shunned: "Los personajes con [GetTrait('ratkin').GetName( GetPlayer )] [trait|E] son [shunned|E]"
  doctrine_parameter_ratkin_accepted: "Los caracteres con [GetTrait('ratkin').GetName( GetPlayer )] [trait|E] son totalmente aceptados"
@@ -423,8 +386,6 @@
  doctrine_rokea_shunned_desc: "Los hombres-tiburones son rechazados."
  doctrine_rokea_accepted_name: "Aceptado"
  doctrine_rokea_accepted_desc: "Los hombres-tiburones son aceptados."
- doctrine_rokea_ignorant_name: "Ignorante"
- doctrine_rokea_ignorant_desc: "¿Qué es una Rokea?"
  doctrine_parameter_rokea_illegal: "Los personajes con [GetTrait('rokea').GetName( GetPlayer )] [trait|E] son [criminals|E]"
  doctrine_parameter_rokea_shunned: "Los personajes con [GetTrait('rokea').GetName( GetPlayer )] [trait|E] son [shunned|E]"
  doctrine_parameter_rokea_accepted: "Los personajes con [GetTrait('rokea').GetName( GetPlayer )] [trait|E] son totalmente aceptados"
@@ -436,8 +397,6 @@
  doctrine_apis_shunned_desc: "Los hombresuros son rechazados."
  doctrine_apis_accepted_name: "Aceptado"
  doctrine_apis_accepted_desc: "Los toros-luna son aceptados."
- doctrine_apis_ignorant_name: "Ignorante"
- doctrine_apis_ignorant_desc: "¿Qué es una Apis?"
  doctrine_parameter_apis_illegal: "Los personajes con [GetTrait('apis').GetName( GetPlayer )] [trait|E] son [criminals|E]"
  doctrine_parameter_apis_shunned: "Los personajes con [GetTrait('apis').GetName( GetPlayer )] [trait|E] son [shunned|E]"
  doctrine_parameter_apis_accepted: "Los caracteres con [GetTrait('apis').GetName( GetPlayer )] [trait|E] son totalmente aceptados"
@@ -449,8 +408,6 @@
  doctrine_camazotz_shunned_desc: "Los hombres murciélago son rechazados."
  doctrine_camazotz_accepted_name: "Aceptado"
  doctrine_camazotz_accepted_desc: "Los hombres murciélago son aceptados."
- doctrine_camazotz_ignorant_name: "Ignorante"
- doctrine_camazotz_ignorant_desc: "¿Qué es un Camazotz?"
  doctrine_parameter_camazotz_illegal: "Los personajes con [GetTrait('camazotz').GetName( GetPlayer )] [trait|E] son [criminals|E]"
  doctrine_parameter_camazotz_shunned: "Los personajes con [GetTrait('camazotz').GetName( GetPlayer )] [trait|E] son [shunned|E]"
  doctrine_parameter_camazotz_accepted: "Los caracteres con [GetTrait('camazotz').GetName( GetPlayer )] [trait|E] son totalmente aceptados"
@@ -462,8 +419,6 @@
  doctrine_grondr_shunned_desc: "Los hombres-jabalí son rechazados."
  doctrine_grondr_accepted_name: "Aceptado"
  doctrine_grondr_accepted_desc: "Los hombres-verracos son aceptados."
- doctrine_grondr_ignorant_name: "Ignorante"
- doctrine_grondr_ignorant_desc: "¿Qué es un Grondr?"
  doctrine_parameter_grondr_illegal: "Los personajes con [GetTrait('grondr').GetName( GetPlayer )] [trait|E] son [criminals|E]"
  doctrine_parameter_grondr_shunned: "Los personajes con [GetTrait('grondr').GetName( GetPlayer )] [trait|E] son [shunned|E]"
  doctrine_parameter_grondr_accepted: "Los caracteres con [GetTrait('grondr').GetName( GetPlayer )] [trait|E] son totalmente aceptados"
@@ -476,8 +431,6 @@
  doctrine_ventrue_shunned_desc: "[GetTrait('ventrue').GetName( GetPlayer )] son rechazados."
  doctrine_ventrue_accepted_name: "Aceptado"
  doctrine_ventrue_accepted_desc: "Se aceptan [GetTrait('ventrue').GetName( GetPlayer )]."
- doctrine_ventrue_ignorant_name: "Ignorante"
- doctrine_ventrue_ignorant_desc: "¿Qué es un [GetTrait('ventrue').GetName( GetPlayer )]?"
  doctrine_ventrue_justicar_name: "$custom_camarilla_clan_status_justicar$"
  doctrine_ventrue_justicar_desc: "[GetTrait('ventrue').GetName( GetPlayer )] puede designar a [justicar|E]."
  doctrine_parameter_ventrue_illegal: "Los personajes con [GetTrait('ventrue').GetName( GetPlayer )] [trait|E] son [criminals|E]"
@@ -491,8 +444,6 @@
  doctrine_toreador_shunned_desc: "[GetTrait('toreador').GetName( GetPlayer )] son rechazados."
  doctrine_toreador_accepted_name: "Aceptado"
  doctrine_toreador_accepted_desc: "Se aceptan [GetTrait('toreador').GetName( GetPlayer )]."
- doctrine_toreador_ignorant_name: "Ignorante"
- doctrine_toreador_ignorant_desc: "¿Qué es un [GetTrait('toreador').GetName( GetPlayer )]?"
  doctrine_toreador_justicar_name: "$custom_camarilla_clan_status_justicar$"
  doctrine_toreador_justicar_desc: "[GetTrait('toreador').GetName( GetPlayer )] puede designar a [justicar|E]."
  doctrine_parameter_toreador_illegal: "Los personajes con [GetTrait('toreador').GetName( GetPlayer )] [trait|E] son [criminals|E]"
@@ -506,8 +457,6 @@
  doctrine_tremere_shunned_desc: "[GetTrait('tremere').GetName( GetPlayer )] son rechazados."
  doctrine_tremere_accepted_name: "Aceptado"
  doctrine_tremere_accepted_desc: "Se aceptan [GetTrait('tremere').GetName( GetPlayer )]."
- doctrine_tremere_ignorant_name: "Ignorante"
- doctrine_tremere_ignorant_desc: "¿Qué es un [GetTrait('tremere').GetName( GetPlayer )]?"
  doctrine_tremere_justicar_name: "$custom_camarilla_clan_status_justicar$"
  doctrine_tremere_justicar_desc: "[GetTrait('tremere').GetName( GetPlayer )] puede designar a [justicar|E]."
  doctrine_parameter_tremere_illegal: "Los personajes con [GetTrait('tremere').GetName( GetPlayer )] [trait|E] son [criminals|E]"
@@ -521,8 +470,6 @@
  doctrine_brujah_shunned_desc: "[GetTrait('brujah').GetName( GetPlayer )] son rechazados."
  doctrine_brujah_accepted_name: "Aceptado"
  doctrine_brujah_accepted_desc: "Se aceptan [GetTrait('brujah').GetName( GetPlayer )]."
- doctrine_brujah_ignorant_name: "Ignorante"
- doctrine_brujah_ignorant_desc: "¿Qué es un [GetTrait('brujah').GetName( GetPlayer )]?"
  doctrine_brujah_justicar_name: "$custom_camarilla_clan_status_justicar$"
  doctrine_brujah_justicar_desc: "[GetTrait('brujah').GetName( GetPlayer )] puede designar a [justicar|E]."
  doctrine_parameter_brujah_illegal: "Los caracteres con [GetTrait('brujah').GetName( GetPlayer )] y [GetTrait('truebrujah').GetName( GetPlayer )] [trait|E] son [criminals|E]"
@@ -536,8 +483,6 @@
  doctrine_nosferatu_shunned_desc: "[GetTrait('nosferatu').GetName( GetPlayer )] son rechazados."
  doctrine_nosferatu_accepted_name: "Aceptado"
  doctrine_nosferatu_accepted_desc: "Se aceptan [GetTrait('nosferatu').GetName( GetPlayer )]."
- doctrine_nosferatu_ignorant_name: "Ignorante"
- doctrine_nosferatu_ignorant_desc: "¿Qué es un [GetTrait('nosferatu').GetName( GetPlayer )]?"
  doctrine_nosferatu_justicar_name: "$custom_camarilla_clan_status_justicar$"
  doctrine_nosferatu_justicar_desc: "[GetTrait('nosferatu').GetName( GetPlayer )] puede designar a [justicar|E]."
  doctrine_parameter_nosferatu_illegal: "Los personajes con [GetTrait('nosferatu').GetName( GetPlayer )] [trait|E] son [criminals|E]"
@@ -551,8 +496,6 @@
  doctrine_gangrel_shunned_desc: "[GetTrait('gangrel').GetName( GetPlayer )] son rechazados."
  doctrine_gangrel_accepted_name: "Aceptado"
  doctrine_gangrel_accepted_desc: "Se aceptan [GetTrait('gangrel').GetName( GetPlayer )]."
- doctrine_gangrel_ignorant_name: "Ignorante"
- doctrine_gangrel_ignorant_desc: "¿Qué es un [GetTrait('gangrel').GetName( GetPlayer )]?"
  doctrine_gangrel_justicar_name: "$custom_camarilla_clan_status_justicar$"
  doctrine_gangrel_justicar_desc: "[GetTrait('gangrel').GetName( GetPlayer )] puede designar a [justicar|E]."
  doctrine_parameter_gangrel_illegal: "Los personajes con [GetTrait('gangrel').GetName( GetPlayer )] [trait|E] son [criminals|E]"
@@ -566,8 +509,6 @@
  doctrine_malkavian_shunned_desc: "[GetTrait('malkavian').GetName( GetPlayer )] son rechazados."
  doctrine_malkavian_accepted_name: "Aceptado"
  doctrine_malkavian_accepted_desc: "Se aceptan [GetTrait('malkavian').GetName( GetPlayer )]."
- doctrine_malkavian_ignorant_name: "Ignorante"
- doctrine_malkavian_ignorant_desc: "¿Qué es un [GetTrait('malkavian').GetName( GetPlayer )]?"
  doctrine_malkavian_justicar_name: "$custom_camarilla_clan_status_justicar$"
  doctrine_malkavian_justicar_desc: "[GetTrait('malkavian').GetName( GetPlayer )] puede designar a [justicar|E]."
  doctrine_parameter_malkavian_illegal: "Los personajes con [GetTrait('malkavian').GetName( GetPlayer )] [trait|E] son [criminals|E]"
@@ -581,8 +522,6 @@
  doctrine_lasombra_shunned_desc: "[GetTrait('lasombra').GetName( GetPlayer )] son rechazados."
  doctrine_lasombra_accepted_name: "Aceptado"
  doctrine_lasombra_accepted_desc: "Se aceptan [GetTrait('lasombra').GetName( GetPlayer )]."
- doctrine_lasombra_ignorant_name: "Ignorante"
- doctrine_lasombra_ignorant_desc: "¿Qué es un [GetTrait('lasombra').GetName( GetPlayer )]?"
  doctrine_lasombra_justicar_name: "$custom_camarilla_clan_status_justicar$"
  doctrine_lasombra_justicar_desc: "[GetTrait('lasombra').GetName( GetPlayer )] puede designar a [justicar|E]."
  doctrine_parameter_lasombra_illegal: "Los personajes con [GetTrait('lasombra').GetName( GetPlayer )] [trait|E] son [criminals|E]"
@@ -596,8 +535,6 @@
  doctrine_tzimisce_shunned_desc: "[GetTrait('tzimisce').GetName( GetPlayer )] son rechazados."
  doctrine_tzimisce_accepted_name: "Aceptado"
  doctrine_tzimisce_accepted_desc: "Se aceptan [GetTrait('tzimisce').GetName( GetPlayer )]."
- doctrine_tzimisce_ignorant_name: "Ignorante"
- doctrine_tzimisce_ignorant_desc: "¿Qué es un [GetTrait('tzimisce').GetName( GetPlayer )]?"
  doctrine_tzimisce_justicar_name: "$custom_camarilla_clan_status_justicar$"
  doctrine_tzimisce_justicar_desc: "[GetTrait('tzimisce').GetName( GetPlayer )] puede designar a [justicar|E]."
  doctrine_parameter_tzimisce_illegal: "Los personajes con [GetTrait('tzimisce').GetName( GetPlayer )] [trait|E] son [criminals|E]"
@@ -611,8 +548,6 @@
  doctrine_ravnos_shunned_desc: "[GetTrait('ravnos').GetName( GetPlayer )] son rechazados."
  doctrine_ravnos_accepted_name: "Aceptado"
  doctrine_ravnos_accepted_desc: "Se aceptan [GetTrait('ravnos').GetName( GetPlayer )]."
- doctrine_ravnos_ignorant_name: "Ignorante"
- doctrine_ravnos_ignorant_desc: "¿Qué es un [GetTrait('ravnos').GetName( GetPlayer )]?"
  doctrine_ravnos_justicar_name: "$custom_camarilla_clan_status_justicar$"
  doctrine_ravnos_justicar_desc: "[GetTrait('ravnos').GetName( GetPlayer )] puede designar a [justicar|E]."
  doctrine_parameter_ravnos_illegal: "Los personajes con [GetTrait('ravnos').GetName( GetPlayer )] [trait|E] son [criminals|E]"
@@ -633,8 +568,6 @@
  doctrine_hecata_shunned_desc: "[GetTrait('cappadocian').GetName( GetPlayer )] son rechazados."
  doctrine_hecata_accepted_name: "Aceptado"
  doctrine_hecata_accepted_desc: "Se aceptan [GetTrait('cappadocian').GetName( GetPlayer )]."
- doctrine_hecata_ignorant_name: "Ignorante"
- doctrine_hecata_ignorant_desc: "¿Qué es un [GetTrait('cappadocian').GetName( GetPlayer )]?"
  doctrine_hecata_justicar_name: "$custom_camarilla_clan_status_justicar$"
  doctrine_hecata_justicar_desc: "[GetTrait('cappadocian').GetName( GetPlayer )] puede designar a [justicar|E]."
  doctrine_parameter_hecata_illegal: "Los caracteres con [GetTrait('cappadocian').GetName( GetPlayer )] y [GetTrait('giovanni').GetName( GetPlayer )] [trait|E] son [criminals|E]"
@@ -648,8 +581,6 @@
  doctrine_setite_shunned_desc: "[GetTrait('setite').GetName( GetPlayer )] son rechazados."
  doctrine_setite_accepted_name: "Aceptado"
  doctrine_setite_accepted_desc: "Se aceptan [GetTrait('setite').GetName( GetPlayer )]."
- doctrine_setite_ignorant_name: "Ignorante"
- doctrine_setite_ignorant_desc: "¿Qué es un [GetTrait('setite').GetName( GetPlayer )]?"
  doctrine_setite_justicar_name: "$custom_camarilla_clan_status_justicar$"
  doctrine_setite_justicar_desc: "[GetTrait('setite').GetName( GetPlayer )] puede designar a [justicar|E]."
  doctrine_parameter_setite_illegal: "Los personajes con [GetTrait('setite').GetName( GetPlayer )] [trait|E] son [criminals|E]"
@@ -669,8 +600,6 @@
  doctrine_assamite_shunned_desc: "[GetTrait('assamite').GetName( GetPlayer )] son rechazados."
  doctrine_assamite_accepted_name: "Aceptado"
  doctrine_assamite_accepted_desc: "[GetTrait('assamite').GetName( GetPlayer )] son aceptados."
- doctrine_assamite_ignorant_name: "Ignorante"
- doctrine_assamite_ignorant_desc: "¿Qué es un [GetTrait('assamite').GetName( GetPlayer )]?"
  doctrine_assamite_justicar_name: "$custom_camarilla_clan_status_justicar$"
  doctrine_assamite_justicar_desc: "[GetTrait('assamite').GetName( GetPlayer )] puede designar a [justicar|E]."
  doctrine_parameter_assamite_illegal: "Los personajes con [GetTrait('assamite').GetName( GetPlayer )] [trait|E] son [criminals|E]"
@@ -684,8 +613,6 @@
  doctrine_salubri_shunned_desc: "[GetTrait('salubri').GetName( GetPlayer )] son rechazados."
  doctrine_salubri_accepted_name: "Aceptado"
  doctrine_salubri_accepted_desc: "Se aceptan [GetTrait('salubri').GetName( GetPlayer )]."
- doctrine_salubri_ignorant_name: "Ignorante"
- doctrine_salubri_ignorant_desc: "¿Qué es un [GetTrait('salubri').GetName( GetPlayer )]?"
  doctrine_salubri_justicar_name: "$custom_camarilla_clan_status_justicar$"
  doctrine_salubri_justicar_desc: "[GetTrait('salubri').GetName( GetPlayer )] puede designar a [justicar|E]."
  doctrine_parameter_salubri_illegal: "Los personajes con [GetTrait('salubri').GetName( GetPlayer )] [trait|E] son [criminals|E]"
@@ -736,6 +663,7 @@
   
  tenet_pleasure_name: "Placer"
  tenet_pleasure_desc: "La búsqueda hedonista del éxtasis"
+ doctrine_parameter_reveler_from_elysium: "Obtendrás [GetTrait('lifestyle_reveler').GetName(GetNullCharacter)] y [GetTrait('lifestyle_reveler').GetName(GetNullCharacter)] XP de Elysium." #NT!
   
  tenet_cruelty_name: "Crueldad"
  tenet_cruelty_desc: "El placer obtenido al infligir dolor."
@@ -866,6 +794,18 @@
  special_doctrine_lilith_pillars_kindred_desc: "Lilith busca venganza contra los hijos de Caín, pero aceptará conversos entusiastas o peones útiles cuando sea necesario."
  doctrine_parameter_hostility_override_special_doctrine_lilith_pillars_kindred: "Otros Vástagos [faiths|E] que tienen la doctrina de los Pilares Lilim se consideran [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V] en lugar de $hostility_evil_tooltippable$"
   
+ special_doctrine_heretical_paradox_name: "Ciclo roto" #NT!
+ special_doctrine_heretical_paradox_desc: "Los Ravnos orientales (y muchos otros Vástagos) consideran que esta rama es herética y una mera excusa para el robo, la diablerie y otros crímenes contra la sociedad. Se han iniciado muchos intentos de purgar esta Senda, aunque hasta ahora ninguno ha tenido éxito." #NT!
+ doctrine_parameter_hostility_override_tenet_svadharma: "Otros Vástagos [faiths|E] que tienen la doctrina Svadharma consideran esta fe [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]." #NT!
+  
+ special_doctrine_main_paradox_name: "Entendiendo el ciclo" #NT!
+ special_doctrine_main_paradox_desc: "El camino de la paradoja guarda una gran relación con ciertos principios del hinduismo y es ampliamente aceptado como un principio respetable entre los vampiros indios. Su versión occidental, por otro lado, no lo es." #NT!
+ doctrine_parameter_hostility_override_special_doctrine_heretical_paradox: "Otros Vástagos [faiths|E] que tienen la doctrina del Ciclo Roto son considerados [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]." #NT!
+  
+ special_doctrine_bastet_nation_name: "Nación Bastet" #NT!
+ special_doctrine_bastet_nation_desc: "Madre Seline observa con orgullo cómo sus amados hijos gatos finalmente se unen como uno solo." #NT!
+ doctrine_parameter_hostility_override_special_doctrine_bastet_nation: "Otros [faiths|E] que tienen la doctrina de la Nación Bastet se consideran [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V] en lugar de [faith_astray|V]" #NT!
+  
   
  special_doctrine_ecumenical_hunters_name: "Cazadores ecuménicos"
  special_doctrine_ecumenical_hunters_desc: "Si bien los cazadores provienen de una variedad de orígenes y creencias, reconocen un vínculo común en la lucha contra los horrores sobrenaturales del Mundo de Tinieblas."
@@ -913,46 +853,94 @@
  special_doctrine_against_to_yomi_wan_hostility_name: "Contra el Yomi Wan"
  special_doctrine_against_to_yomi_wan_hostility_desc: "Cuidado con los aliados del [yomi_wan|E]. Hay que destruirlos."
  doctrine_parameter_hostility_override_special_doctrine_against_to_yomi_wan_hostility: "[faiths|E] que contra [yomi_wan|E] se consideran [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
+ doctrine_parameter_hostility_override_wutian_hostility_doctrine: "$trait_wutian$ [faiths|E] se consideran [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]" #NT!
  doctrine_parameter_wutian_illegal: "Los personajes con [GetTrait('wutian').GetName( GetPlayer )] [trait|E] son [criminals|E]"
  doctrine_parameter_wukuei_illegal: "Los personajes con [GetTrait('wukuei').GetName( GetPlayer )] [trait|E] son [criminals|E]"
+ wutian_hostility_doctrine_name: "Wu Tian" #NT!
+ wutian_hostility_doctrine_desc: ""
+ wukuei_hostility_doctrine_name: "Wu Kuei" #NT!
+ wukuei_hostility_doctrine_desc: ""
+  
+ spectre_hostility_doctrine_name: "Espectro" #NT!
+ spectre_hostility_doctrine_desc: ""
+ oblivion_hostility_name: "Olvido Hostilidad" #NT!
+ special_doctrine_allied_to_oblivion_hostility_name: "Sirviente del olvido" #NT!
+ special_doctrine_allied_to_oblivion_hostility_desc: "El olvido es nuestro señor supremo. Quien no lo obedezca pronto comprenderá o será destruido." #NT!
+ doctrine_parameter_hostility_override_special_doctrine_allied_to_oblivion_hostility: "[faiths|E] que siguen a [oblivion|E] se consideran [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]" #NT!
+ special_doctrine_against_to_oblivion_hostility_name: "Contra el olvido" #NT!
+ special_doctrine_against_to_oblivion_hostility_desc: "Cuidado con los aliados del [oblivion|E]. Hay que destruirlos." #NT!
+ doctrine_parameter_hostility_override_special_doctrine_against_to_oblivion_hostility: "[faiths|E] que contra [oblivion|E] se consideran [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]" #NT!
   
  apophis_hostility_name: "Hostilidad de Apofis"
  special_doctrine_allied_to_apophis_hostility_name: "Siervo de Apofis"
  special_doctrine_allied_to_apophis_hostility_desc: "Apofis es nuestro señor supremo. Quienes no le obedezcan comprenderán pronto o serán destruidos."
  doctrine_parameter_hostility_override_special_doctrine_allied_to_apophis_hostility: "[faiths|E] que siguen a Apophis se consideran [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
- special_doctrine_osiris_league_name: "Liga Osiriana"
- special_doctrine_osiris_league_desc: "Aunque derrotados, el espíritu de desafío de la Liga Osiriana contra Set permanece."
- doctrine_parameter_hostility_override_special_doctrine_osiris_league: "[faiths|E] de la antigua Liga Osiriana son considerados [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
  special_doctrine_against_to_apophis_hostility_name: "Opuesto a Apofis"
  special_doctrine_against_to_apophis_hostility_desc: "Opuesto a Apofis. La Serpiente y sus múltiples máscaras deben ser destruidas."
  doctrine_parameter_hostility_override_special_doctrine_against_to_apophis_hostility: "[faiths|E] que se oponen a Apofis se consideran [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
- doctrine_parameter_shemsuheru_illegal: "Los personajes con [GetTrait('shemsuheru').GetName( GetPlayer )] [trait|E] son [criminals|E]"
- doctrine_parameter_banemummy_illegal: "Los personajes con [GetTrait('banemummy').GetName( GetPlayer )] [trait|E] son [criminals|E]"
+ special_doctrine_osiris_league_name: "Liga Osiriana"
+ special_doctrine_osiris_league_desc: "Aunque derrotados, el espíritu de desafío de la Liga Osiriana contra Set permanece."
+ doctrine_parameter_hostility_override_special_doctrine_osiris_league: "[faiths|E] de la antigua Liga Osiriana son considerados [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
   
- cabiri_hostility_name: "Hostilidad de Cabiri"
- special_doctrine_against_to_cabiri_hostility_name: "Anti-Cabiri"
- special_doctrine_against_to_cabiri_hostility_desc: "Los Cabiri luchan contra los secuaces de Apophis, pero también son muy del agrado de los Shemsu-Heru."
- doctrine_parameter_hostility_override_special_doctrine_against_to_cabiri_hostility: "[faiths|E] que contra Cabiri se consideran [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
- special_doctrine_allied_to_cabiri_hostility_name: "El círculo oculto de Cabiri"
- special_doctrine_allied_to_cabiri_hostility_desc: "Las momias Cabiri son verdaderamente neutrales en cierto modo e intercambian favores con casi todo el mundo."
- doctrine_parameter_hostility_override_special_doctrine_allied_to_cabiri_hostility: "[faiths|E] que apoyan a Cabiri se consideran [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
  cabiri_hostility_doctrine_name: "Cabiri"
  cabiri_hostility_doctrine_desc: "Practicaban los mismos ritos y Hekau que sus hermanos egipcios, luchando contra los secuaces de Apofis, pero también contra la opresión de los Shemsu-Heru."
+ doctrine_cabiri_name: "[GetTrait('cabiri').GetName( GetNullCharacter )]" #NT!
+ doctrine_cabiri_evil_name: "Demonio" #NT!
+ doctrine_cabiri_evil_desc: "No puede haber paz ni negociaciones con los Engendros de Cabirus. Los destruiremos a todos o moriremos en el intento." #NT!
+ doctrine_cabiri_crime_name: "Criminal" #NT!
+ doctrine_cabiri_crime_desc: "[GetTrait('cabiri').GetName( GetPlayer )] debe ser destruido." #NT!
+ doctrine_cabiri_shunned_name: "Rechazado" #NT!
+ doctrine_cabiri_shunned_desc: "[GetTrait('cabiri').GetName( GetPlayer )] son rechazados." #NT!
+ doctrine_cabiri_accepted_name: "Aceptado" #NT!
+ doctrine_cabiri_accepted_desc: "Se aceptan [GetTrait('cabiri').GetName( GetPlayer )]." #NT!
+ doctrine_parameter_hostility_override_doctrine_cabiri_accepted: "[faiths|E] que apoyan a Cabiri se consideran [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]" #NT!
+ doctrine_parameter_hostility_override_doctrine_cabiri_crime: "[faiths|E] que contra Cabiri se consideran [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]" #NT!
  doctrine_parameter_hostility_override_cabiri_hostility_doctrine: "Los cabiri [faiths|E] se consideran [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
  doctrine_parameter_cabiri_illegal: "Los personajes con [GetTrait('cabiri').GetName( GetPlayer )] [trait|E] son [criminals|E]"
+ doctrine_parameter_cabiri_shunned: "Los personajes con [GetTrait('cabiri').GetName( GetPlayer )] [trait|E] son [shunned|E]" #NT!
+ doctrine_parameter_cabiri_accepted: "Los caracteres con [GetTrait('cabiri').GetName( GetPlayer )] [trait|E] son totalmente aceptados" #NT!
   
- shemsuheru_hostility_name: "Shemsu-heru Hostilidad"
- special_doctrine_allied_to_shemsuheru_hostility_name: "Asociación de la Liga Osiriana"
- special_doctrine_allied_to_shemsuheru_hostility_desc: "Los Shemsu-heru y su lucha contra Apofis son considerados aliados nuestros."
- doctrine_parameter_hostility_override_special_doctrine_allied_to_shemsuheru_hostility: "[faiths|E] que apoyan a Shemsu-heru se consideran [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
- doctrine_parameter_hostility_override_shemsuheru_hostility_doctrine: "Shemsu-heru [faiths|E] se considera [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
- doctrine_parameter_hostility_override_ishmaelite_hostility_doctrine: "Los ismaelitas [faiths|E] se consideran [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
  shemsuheru_hostility_doctrine_name: "Shemsu-heru"
  shemsuheru_hostility_doctrine_desc: ""
+ doctrine_shemsuheru_name: "[GetTrait('shemsuheru').GetName( GetNullCharacter )]" #NT!
+ doctrine_shemsuheru_crime_name: "Criminal" #NT!
+ doctrine_shemsuheru_crime_desc: "[GetTrait('shemsuheru').GetName( GetNullCharacter )] debe ser destruido." #NT!
+ doctrine_shemsuheru_shunned_name: "Rechazado" #NT!
+ doctrine_shemsuheru_shunned_desc: "[GetTrait('shemsuheru').GetName( GetNullCharacter )] son rechazados." #NT!
+ doctrine_shemsuheru_accepted_name: "Aceptado" #NT!
+ doctrine_shemsuheru_accepted_desc: "Se aceptan [GetTrait('shemsuheru').GetName( GetNullCharacter )]." #NT!
+ doctrine_parameter_hostility_override_doctrine_shemsuheru_accepted: "[faiths|E] que apoyan a Shemsu-heru se consideran [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]" #NT!
+ doctrine_parameter_hostility_override_shemsuheru_hostility_doctrine: "Shemsu-heru [faiths|E] se considera [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
+ doctrine_parameter_shemsuheru_illegal: "Los personajes con [GetTrait('shemsuheru').GetName( GetPlayer )] [trait|E] son [criminals|E]"
+ doctrine_parameter_shemsuheru_shunned: "Los personajes con [GetTrait('shemsuheru').GetName( GetNullCharacter )] [trait|E] son [shunned|E]" #NT!
+ doctrine_parameter_shemsuheru_accepted: "Los caracteres con [GetTrait('shemsuheru').GetName( GetNullCharacter )] [trait|E] son totalmente aceptados" #NT!
+  
  ishmaelite_hostility_doctrine_name: "Ismaelita"
  ishmaelite_hostility_doctrine_desc: ""
+ doctrine_ishmaelite_name: "Ismaelita" #NT!
+ doctrine_ishmaelite_crime_name: "Criminal" #NT!
+ doctrine_ishmaelite_crime_desc: "El ismaelita debe ser destruido." #NT!
+ doctrine_ishmaelite_shunned_name: "Rechazado" #NT!
+ doctrine_ishmaelite_shunned_desc: "Los ismaelitas son rechazados." #NT!
+ doctrine_ishmaelite_accepted_name: "Aceptado" #NT!
+ doctrine_ishmaelite_accepted_desc: "Los ismaelitas son aceptados." #NT!
+ doctrine_parameter_hostility_override_ishmaelite_hostility_doctrine: "Los ismaelitas [faiths|E] se consideran [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
+  
  banemummy_hostility_doctrine_name: "Embomilla de banano"
  banemummy_hostility_doctrine_desc: ""
+ doctrine_banemummy_name: "[GetTrait('banemummy').GetName( GetNullCharacter )]" #NT!
+ doctrine_banemummy_evil_name: "Demonio" #NT!
+ doctrine_banemummy_evil_desc: "No puede haber paz ni negociaciones con los rostros de Apofis. Los destruiremos a todos o moriremos en el intento." #NT!
+ doctrine_banemummy_crime_name: "Criminal" #NT!
+ doctrine_banemummy_crime_desc: "[GetTrait('banemummy').GetName( GetPlayer )] debe ser destruido." #NT!
+ doctrine_banemummy_shunned_name: "Rechazado" #NT!
+ doctrine_banemummy_shunned_desc: "[GetTrait('banemummy').GetName( GetPlayer )] son rechazados." #NT!
+ doctrine_banemummy_accepted_name: "Aceptado" #NT!
+ doctrine_banemummy_accepted_desc: "Se aceptan [GetTrait('banemummy').GetName( GetPlayer )]." #NT!
+ doctrine_parameter_hostility_override_banemummy_hostility_doctrine: "Banemummy [faiths|E] se consideran [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]" #NT!
+ doctrine_parameter_banemummy_illegal: "Los personajes con [GetTrait('banemummy').GetName( GetPlayer )] [trait|E] son [criminals|E]"
+ doctrine_parameter_banemummy_shunned: "Los personajes con [GetTrait('banemummy').GetName( GetPlayer )] [trait|E] son [shunned|E]" #NT!
+ doctrine_parameter_banemummy_accepted: "Los caracteres con [GetTrait('banemummy').GetName( GetPlayer )] [trait|E] son totalmente aceptados" #NT!
   
  tenet_fellow_selfcontrol_opinion: "Compañero de autocontrol"
  doctrine_parameter_selfcontrol_opinion_active: ""
@@ -1179,18 +1167,18 @@
  tenet_wolves_of_sable_name: "Lobos de sable"
  tenet_wolves_of_sable_desc: "Sable es la cazadora invisible en la nieve; reflexiona en silencio, espera pacientemente, ataca sin previo aviso y luego se adentra de nuevo en el hielo, la nieve y el viento, dejando solo una gota o dos de sangre como evidencia de que alguna vez estuvo allí. Es la pequeña superviviente, fortalecida por su entorno y templada por su soledad. Representa a la cazadora inesperada y la supervivencia del más apto contra las peores probabilidades. Los espíritus del viento consideran a los hijos de Sable como aliados y pueden invocarlos y hablar con ellos libremente. Sable confía en sus hijos para proteger sus tierras siberianas. Falcon ve a todos los hijos de Sable como salvajes mestizos y deshonrados y bajo ninguna circunstancia tolerará que un siberakh sea miembro de una manada que ha elegido como suya."
   
- special_doctrine_hunter_hunting_name: "Cazadores cazando"
- special_doctrine_hunter_hunting_desc: "No puede haber paz ni negociaciones con el Gran Enemigo. Los destruiremos a todos o moriremos en el intento."
- special_doctrine_ghoul_hunting_name: "[Ghoul|E] Caza"
- special_doctrine_ghoul_hunting_desc: "No puede haber paz ni negociaciones con el Gran Enemigo. Los destruiremos a todos o moriremos en el intento."
- special_doctrine_hunter_hunting_no_fae_name: "Cazadores cazando"
- special_doctrine_hunter_hunting_no_fae_desc: "No puede haber paz ni negociaciones con el Gran Enemigo. Los destruiremos a todos o moriremos en el intento."
- special_doctrine_sanbenito_hunting_name: "Credo de San Benito"
- special_doctrine_sanbenito_hunting_desc: "Nuestra misión debe ser la de la misericordia, no la del odio."
- special_doctrine_hunter_hunting_no_shapeshifters_name: "Los cazadores de Qorjin"
- special_doctrine_hunter_hunting_no_shapeshifters_desc: "El pueblo mongol será protegido de los horrores en la oscuridad, como lo decretó el propio Gran Khan."
- special_doctrine_hunter_hunting_no_mage_name: "Caza selectiva"
- special_doctrine_hunter_hunting_no_mage_desc: "Los fieles tienen demasiados enemigos como para que no busquemos algunos aliados, aunque sean improbables."
+ # special_doctrine_hunter_hunting_name: "Cazadores cazando" #NT!
+ # special_doctrine_hunter_hunting_desc: "No puede haber paz ni negociaciones con el Gran Enemigo. Los destruiremos a todos o moriremos en el intento." #NT!
+ # special_doctrine_ghoul_hunting_name: "[Ghoul|E] Caza" #NT!
+ # special_doctrine_ghoul_hunting_desc: "No puede haber paz ni negociaciones con el Gran Enemigo. Los destruiremos a todos o moriremos en el intento." #NT!
+ # special_doctrine_hunter_hunting_no_fae_name: "Cazadores cazando" #NT!
+ # special_doctrine_hunter_hunting_no_fae_desc: "No puede haber paz ni negociaciones con el Gran Enemigo. Los destruiremos a todos o moriremos en el intento." #NT!
+ # special_doctrine_sanbenito_hunting_name: "Credo de San Benito" #NT!
+ # special_doctrine_sanbenito_hunting_desc: "Nuestra misión debe ser la de la misericordia, no la del odio." #NT!
+ # special_doctrine_hunter_hunting_no_shapeshifters_name: "Los cazadores de Qorjin" #NT!
+ # special_doctrine_hunter_hunting_no_shapeshifters_desc: "El pueblo mongol será protegido de los horrores en la oscuridad, como lo decretó el propio Gran Khan." #NT!
+ # special_doctrine_hunter_hunting_no_mage_name: "Caza selectiva" #NT!
+ # special_doctrine_hunter_hunting_no_mage_desc: "Los fieles tienen demasiados enemigos como para que no busquemos algunos aliados, aunque sean improbables." #NT!
   
  doctrine_parameter_hunter_hunting_vampire: "#N -100#! [opinion|E] malus con caracteres con [GetTrait('vampire').GetName( GetPlayer )] [trait|E]"
  doctrine_parameter_hunter_hunting_shapeshifter: "#N -100#! [opinion|E] malus con caracteres con [GetTraitGroup('shapeshifter').GetName()] [trait|E]"
@@ -1198,6 +1186,7 @@
  doctrine_parameter_hunter_hunting_demon: "#N -100#! [opinion|E] malus con caracteres con [GetTrait('demon').GetName( GetPlayer )] [trait|E]"
  doctrine_parameter_hunter_hunting_wraith: "#N -100#! [opinion|E] malus con caracteres con [GetTrait('wraith').GetName( GetPlayer )] [trait|E]"
  doctrine_parameter_hunter_hunting_bane: "#N -100#! [opinion|E] malus con personajes con el [GetTrait('banemummy').GetName( GetPlayer )] [trait|E]"
+ doctrine_parameter_hunter_hunting_cabiri: "#N -100#! [opinion|E] penalización para personajes con [GetTrait('cabiri').GetName( GetPlayer )] [trait|E]" #NT!
  doctrine_parameter_hunter_hunting_ghoul: "#N -100#! [opinion|E] malus con caracteres con [ghoul|E] [trait|E]"
  doctrine_parameter_hunter_hunting_fae: "#N -100#! [opinion|E] malus con personajes con [GetTrait('fae').GetName( GetPlayer )] o [GetTrait('changeling').GetName( GetPlayer )] [trait|E]"
  hunter_hunting_name: "Cazadores cazando"
@@ -1205,7 +1194,7 @@
   
  doctrine_parameter_hostility_override_wraiths_hostility_doctrine: "[GetTrait('wraith').GetName( GetNullCharacter )] [faiths|E] se consideran [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
  doctrine_parameter_hostility_override_demons_hostility_doctrine: "[GetTrait('demon').GetName( GetPlayer )] [faiths|E] se consideran [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
- doctrine_parameter_hostility_override_doctrine_infernalism_accepted: "Infernalismo [faiths|E] se consideran [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
+ doctrine_parameter_hostility_override_doctrine_demonic_accepted: "Los demoníacos [faiths|E] se consideran [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]" #NT!
   
  doctrine_parameter_access_to_underworld: "Obtén acceso al [underworld|E] cuando viajes por la Umbra."
   
@@ -1251,6 +1240,9 @@
  doctrine_parameter_opinion_of_fae_agenda_humanist_opinion_active: "$VALUE|+=0$ [opinion|E] con Humanista [faiths|E]"
  doctrine_parameter_opinion_of_fae_agenda_constantinian_opinion_active: "$VALUE|+=0$ [opinion|E] con Constantino [faiths|E]"
  doctrine_parameter_opinion_of_fae_agenda_trucebearer_opinion_active: "$VALUE|+=0$ [opinion|E] con Portador de la Tregua [faiths|E]"
+ doctrine_parameter_patron_council_illegal: "Los caracteres con [GetTrait('patron_council_seeker').GetName( GetPlayer )], [GetTrait('patron_council_vanguard').GetName( GetPlayer )] o [GetTrait('patron_council_austere_conclave').GetName( GetPlayer )] [traits|E] son [criminals|E]" #NT!
+ doctrine_parameter_patron_council_shunned: "Los caracteres con [GetTrait('patron_council_seeker').GetName( GetPlayer )], [GetTrait('patron_council_vanguard').GetName( GetPlayer )] o [GetTrait('patron_council_austere_conclave').GetName( GetPlayer )] [traits|E] son [shunned|E]" #NT!
+ doctrine_parameter_patron_council_accepted: "Los caracteres con [GetTrait('patron_council_seeker').GetName( GetPlayer )], [GetTrait('patron_council_vanguard').GetName( GetPlayer )] o [GetTrait('patron_council_austere_conclave').GetName( GetPlayer )] [traits|E] son totalmente aceptados" #NT!
   
  doctrine_fae_morality_name: "Moralidad de los Fae"
  doctrine_fae_morality_seelie_name: "Seelie"
@@ -1261,6 +1253,8 @@
  doctrine_parameter_fae_morality_unseelie_opinion_active: ""
  doctrine_parameter_opinion_of_fae_morality_seelie_opinion_active: "$VALUE|+=0$ [opinion|E] con Seelie [faiths|E]"
  doctrine_parameter_opinion_of_fae_morality_unseelie_opinion_active: "$VALUE|+=0$ [opinion|E] con Unseelie [faiths|E]"
+ doctrine_fae_morality_neutral_name: "Neutral" #NT!
+ doctrine_fae_morality_neutral_desc: ""
   
  fae_morality_seelie_opinion_active_opinion_name: "Seelie"
  fae_morality_seelie_opinion_active_county_opinion_name: "Seelie"
@@ -1378,11 +1372,13 @@
  doctrine_parameter_hostility_override_bloodgnosticism_hostility_doctrine: "Gnosticismo de sangre [faiths|E] se consideran [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
  doctrine_parameter_hostility_override_special_doctrine_blood_divinity: "Aquellos que están de acuerdo con los fundamentos de la divinidad de la sangre se consideran [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
   
+ other_tolerance_name: ""
  pillar_tolerance_name: "Tolerancia especial"
  hunter_tolerance_name: "Tolerancia especial"
  dharma_tolerance_name: "Tolerancia especial"
  tribe_alliance_tolerance_name: "Tolerancia especial"
  osiris_league_tolerance_name: "Liga de Osiris"
+ bastet_nation_tolerance_name: ""
   
  tenet_oath_truce_name: "Tregua de juramento"
  tenet_oath_truce_desc: ""Portador de la Tregua" es un término que se aplica a aquellos duendes que buscan poner fin a la Guerra de las Estaciones, ya sea extendiendo el Juramento de Tregua indefinidamente o forjando un tratado nuevo y duradero que cese las hostilidades entre las cortes."
@@ -1417,3 +1413,7 @@
  special_doctrine_is_forbidden_guild_faith_name: "Gremios prohibidos"
  special_doctrine_is_forbidden_guild_faith_desc: "También llamados Gremios Menores ya que no fueron invitados a firmar el Pacto de los Gremios, estos grupos son perseguidos por la Jerarquía y temidos por la sociedad espectral."
  doctrine_parameter_hostility_override_special_doctrine_is_forbidden_guild_faith: "Los gremios prohibidos [faiths|E] se consideran [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
+  
+ tenet_eyes_of_gaia_name: "Ojos de Gea" #NT!
+ tenet_eyes_of_gaia_desc: "En lugar de asignarles un propósito específico, cada tribu Bastet intenta llenar un vacío que otras no lograron captar. Los Garou (y algunos otros) se refieren a ellos como los Ojos de Gea por su amor por el conocimiento secreto." #NT!
+ doctrine_parameter_access_rush_schemes: "Obtendrás acceso a la decisión menor de Rush Schemes." #NT!

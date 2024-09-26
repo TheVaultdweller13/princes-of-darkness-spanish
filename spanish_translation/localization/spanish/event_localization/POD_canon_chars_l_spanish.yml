@@ -789,6 +789,7 @@
  podintroductions.167.desc: "Lady Brunhilde, los [einherjar|E] están muriendo. Tu fe está siendo reemplazada por el Dios Blanco y sus seguidores y tus hermanos han perdido la esperanza. El propio Werter, el elegido por Odín para guiarte en estos tiempos difíciles, parece estar cerca del punto de quiebre. Debes actuar. Tienes un gran respeto por Werter y fue un amigo digno durante siglos, pero ahora debes obligarlo a abdicar de su posición como Todopoderoso de Midgard antes de que los lleve a todos a la ruina. ¡Es hora de que las Valquirias salven Escandinavia contigo al mando!"
  podintroductions.167.a: "El Valhalla puede esperar un poco más."
  brunhilde_intro_tooltip: "Como Brunhilde, tendrás varios eventos en los próximos meses que te permitirán usurpar el Midgard [title|E]."
+ podintroductions.167.b: "¡Invoca a las Valquirias, cabalgaremos para salvar Midgard!" #NT!
   
  PODcanon_chars.34.t: "Fe y poder"
  PODcanon_chars.34.desc: "Ahora has dejado clara tu ambición a los demás habitantes de Midgard: debes reemplazar a Werter como líder pronto. Esto ha provocado cierto debate entre tus hermanos, pero el apoyo inicial es alto, especialmente entre aquellos que aún quieren luchar contra el cristianismo. El propio Werter no está realmente sorprendido por tu decisión, pero te ha instado a que reconsideres tu posición. Después de todo, él es el elegido por el propio Odín, e ir en contra de la voluntad del Padre de Todo podría ser incluso peor que caer ante el Dios Blanco."
@@ -1746,7 +1747,6 @@
  podintroductions.242.a: "¡Ven a mí, bruja!"
  podintroductions.242.b: "¡Mi preciosa debe regresar!"
  vassago_intro_tt: "Como Vassago, ten en cuenta que tu alma está ligada al artefacto llamado "Reliquia de Vassago". ¡No dejes que lo destruyan o lo roben!"
- artifact_monthly_lifestyle_xp_2_modifier: "Multiplicador de experiencias de estilo de vida mensual"
   
  podintroductions.243.t: "Tu historia hasta ahora"
  podintroductions.243.desc: "Orobas grotesco, no podrías haber despertado en una era mejor. Los mortales están hambrientos y una Iglesia que los restringe les niega sus legítimos deseos. Será tu deber, ¡o mejor dicho, tu placer!, liberarlos de sus cadenas y dejar que se entreguen a todos y cada uno de los oscuros deseos que tan arrepentidos reprimen. Sin embargo, por ahora sigues siendo débil y es posible que necesites la ayuda de tus mascotas favoritas para consolidar tu posición. Siempre te han gustado las alimañas que se arrastran por ahí después de los espectaculares festines por los que eres famoso. Puede que estos pequeños adoradores de la glotonería no te den un poder real, pero la unión hace la fuerza..."
@@ -2248,6 +2248,7 @@
   
  artifact_monthly_piety_gain_mult_5_modifier: "Mensual [piety|E]: #P +10%#!"
  qorjin_intro_tt: "Tres talentosos reclutas mongoles se unirán a tu corte."
+ qorjin_intro_tt2: "Ten en cuenta que solo la tribu de hombres lobo Stargazers y Silent Striders ha aceptado plenamente tu alianza. Las demás tribus seguirán considerándote con sospecha, en el mejor de los casos." #NT!
   
  podintroductions.285.desc: "Si bien aparentemente persiguen el mismo objetivo, que es librar al mundo de los vampiros en nombre de la fe bogomil, los hermanos Gantenbein son personas muy diferentes. Basil es un verdadero creyente, un hombre tranquilo y paciente con un amor genuino por su rebaño. A menudo le asustan los ataques de ira de su hermano Bayezid, cuya dura filosofía le parece una excusa apenas disimulada para la violencia.\nLa verdad es que Bayezid ha perdido hace tiempo su idealismo juvenil y ahora mantiene la fachada de fe sólo para poder acceder. ahora anhela como un adicto su próximo trago de sangre vampírica.\nBayezid es un individuo mucho más carismático y ha sido el líder informal de los Renegados desde sus inicios, pero claramente los está guiando hacia un camino oscuro. Si Basil dejara de lado silenciosamente a su hermano, los Renegados de Calomena podrían cambiar para mejor... o ser aplastados más fácilmente como tantos idealistas antes que ellos."
  podintroductions.285.a: "Viviremos y moriremos por nuestros ideales."
@@ -2263,3 +2264,53 @@
  persephone_decision_confirm: "El invierno ha llegado"
   
  living_in_hades_modifier: "Viviendo en el Hades"
+  
+ podintroductions.287.desc: "Sabio Tola, tu tribu, los Bagheera, fueron en el pasado fuertes rivales en la lucha por el control de la India. Sin embargo, la civilización se expandió cada vez más y, aunque a tu tribu no le molesta la compañía de los humanos, eso significó que los vampiros ganaron la partida gracias a su fuerte influencia sobre ellos. Tu especie se ha contentado con viajar y aprender junto con el pueblo indio desde entonces, pero no es el caso de tu tribu hermana, la Telugu Khan, con más inclinaciones marciales. Su nuevo líder ha venido recientemente a ti con una propuesta de alianza, en la que describe su plan para luchar contra los chupasangres y recuperar lo que una vez fue tuyo. Como Bagheera, a menudo considerados los jueces de la raza felina, tu aprobación significaría mucho para este futuro señor de la guerra." #NT!
+ podintroductions.287.a: "Muestra tus colmillos, orgulloso tigre." #NT!
+ podintroductions.287.b: "¡Déjame con mi investigación!" #NT!
+  
+ podintroductions.288.desc: "Astuto Ananka, tu tribu, los Bubasti, fueron venerados como dioses por la gente del Antiguo Egipto. Lamentablemente, la desastrosa guerra contra Set casi acabó con todo tu linaje y muchos de tus parientes supervivientes fueron encarcelados por los victoriosos Setitas como trofeo. Obviamente, esto te colocó firmemente en la esfera de la Liga Osiris de Horus, los guerreros más devotos contra Set.\nAun así, toda esta historia ya pasó hace mucho tiempo y, aunque estás agradecido por la protección de Horus, aún quieres explorar otras posibilidades para tu futuro en lugar de la guerra eterna contra los Seguidores de Set. Como el Bubasti activo más conocido en la actualidad, tienes mucha influencia en cómo dirigir los esfuerzos de tu tribu. Obviamente, Horus espera que comprometas tus recursos en su lucha, pero ¿puede realmente obligarte a hacerlo?\nDespués de todo, los gatos son criaturas caprichosas." #NT!
+ podintroductions.288.a: "El enemigo de mi enemigo sigue siendo mi amigo." #NT!
+ podintroductions.288.b: "Sólo dile que estoy ocupado." #NT!
+ POD_alliance_formed_tt: "Formarás una alianza con este gobernante." #NT!
+  
+ podintroductions.289.desc: "Bold Soft-Walker, tus primos tibetanos te han dado la bienvenida gracias a tu impresionante fama entre la tribu Khan. Si bien estas tierras tienen mucha sabiduría que ofrecer, también están plagadas de peligros. Tus nuevos amigos te han pedido que los orientes sobre cómo proteger mejor sus hogares de las muchas amenazas que los rodean. Has sabido de la existencia de un túmulo de hombres lobo, el Septo del Leopardo de las Nieves, cerca. Su líder parece ser una mujer servicial y culta con la que podrías encontrar puntos en común. Lamentablemente, los Khan tibetanos no parecen estar de acuerdo, debido a algunas antiguas disputas entre ellos y los lobos. Estás bastante convencido de que una alianza con el Leopardo de las Nieves resultaría muy beneficiosa para tu defensa, pero ¿valdría la pena hacer olas tan pronto después de tu llegada?" #NT!
+ podintroductions.289.a: "Hacer nuevos amigos es lo que mejor hago." #NT!
+ podintroductions.289.b: "Esta vez es mejor caminar con suavidad." #NT!
+  
+ podintroductions.290.desc: "Poderoso Taa Mlimba, gracias a tus recientes victorias contra los vampiros de Hausaland, ahora eres el gobernante indiscutible del poderoso Simba. Este es solo un primer paso para reafirmar el dominio de los leones sobre África, pero aún así debes tomarte un tiempo para disfrutar de los frutos de tus esfuerzos. En la sociedad patriarcal de los Simba, convertirse en la Primera Esposa de un conquistador exitoso como tú es el mayor honor que una leona puede alcanzar. Por lo tanto, no es de extrañar que tus diversos amantes te estén presionando suavemente para que elijas a una de ellas para este puesto. Después de todo, un poderoso Rey de las Bestias necesita una Reina igualmente poderosa a su lado." #NT!
+ podintroductions.290.a: "La astuta Nafissa." #NT!
+ podintroductions.290.b: "El fuerte Youma." #NT!
+ podintroductions.290.c: "El inteligente Djenly." #NT!
+ podintroductions.290.d: "La bella Lorane." #NT!
+ podintroductions.290.e: "¡Puedo tomar mi propia decisión!" #NT!
+  
+ podintroductions.291.desc: "Sabio Nyolo, tu reciente excursión al [umbra|E] ha atraído la atención equivocada. Un poderoso espíritu, Shi'a, el Fantasma del Agua, se ha encariñado contigo de una manera muy poco saludable. Tuviste que usar todo tu ingenio y encanto para convencerla de que te diera algo de tiempo antes de "unirte a su abrazo", sea lo que sea que eso pueda significar (pero probablemente nada bueno). Sabes que es solo un respiro y que volverá, lo más probable es que no sea tan fácil de disuadir esta vez. Necesitas prepararte para su regreso. Afortunadamente, tu mente inteligente ya está trabajando arduamente para planificar diferentes soluciones potenciales para este enigma." #NT!
+ podintroductions.291.a: "¿Qué hacer, qué hacer...?" #NT!
+ nyolo_intro_tt: "En 15 años, el chiismo volverá. Te enfrentarás a consecuencias nefastas a menos que tengas la ventaja de Caricia Espectral del árbol de estilo de vida Swara, tengas más de 15 puntos en diplomacia o 15 en intriga o más de 750 puntos en piedad." #NT!
+  
+ ghost_water_spirit_curse_modifier: "La maldición del agua fantasma" #NT!
+ ghost_water_spirit_curse_modifier_desc: "En 1245, los chiítas volverán. Te enfrentarás a consecuencias nefastas a menos que tengas la ventaja Caricia Espectral del árbol de estilo de vida Swara, tengas más de 15 puntos de diplomacia o 15 de intriga o más de 750 de piedad." #NT!
+ ghost_water_spirit_blessing_modifier: "La bendición del agua fantasma" #NT!
+ ghost_water_spirit_blessing_modifier_desc: "Con la ayuda de tu amante espiritual, tu conexión con el [umbra|E] nunca ha sido tan fuerte." #NT!
+  
+ podintroductions.292.desc: "Como era de esperar, el espíritu del Agua Fantasma Shi'a ha vuelto y está esperando que te unas a ella en su reino espiritual. Parece mucho más decidida que la última vez, pero espero que hayas tenido tiempo para prepararte..." #NT!
+ podintroductions.292.a: "Nuestro amor es más fuerte desde la distancia." #NT!
+ podintroductions.292.b: "¡Puedo obligarte espíritu!" #NT!
+ podintroductions.292.c: "No soy tan perfecto como crees." #NT!
+ podintroductions.292.d: "¡Te protegeré desde lejos!" #NT!
+ podintroductions.292.e: "¡Huir!" #NT!
+ podintroductions.292.f: "Es hora de irnos. Preparé a mi heredero para este día." #NT!
+  
+ Eleanor_of_Aragon: "Leonor de Aragón" #NT!
+  
+ PODcanon_chars.91.desc: "Lady Lucita, hace cuatro años estabas en una misión en el sur de Francia para tu despreciable [Sire|E]. Como siempre, intentaste lo mejor que pudiste para frustrar sus órdenes sin dejar de ser técnicamente leal. Pero, a decir verdad, tenías otro objetivo. Tu pariente lejana Eleanor d'Aragon estaba en esta zona y las vicisitudes de la guerra hicieron de esta ex condesa un objetivo tentador. Sentiste una afinidad con esta mujer de tu familia que luchaba por sobrevivir en el caos de la Cruzada Albigense mientras mantenía la cabeza en alto. Se sabe y está registrado que tuviste muchas conversaciones con ella, sondeando su potencial para un [Embrace|E]. Lo que no se sabe, sin embargo, es tu elección final: ¿trajiste a Eleanor a tu lado como compañera para las largas noches que te esperaban o dejaste que se enfrentara a la muerte como terminan haciendo todos los mortales?" #NT!
+ PODcanon_chars.91.a: "La maldije para que no muriera, tal como era." #NT!
+ PODcanon_chars.91.b: "Al final no interferí." #NT!
+  
+ pod_experimental_landless_tooltip: "#warning Landless es un juego muy experimental en Princes of Darkness. Considérelo una prueba y espere problemas y rarezas. Infórmelos si puede.#!" #NT!
+ PODcanon_chars.92.desc: "Mientras terminas de reunir a la tripulación mortal y a varios necrófagos que se encargarán de tu campamento en las próximas noches, te alivias al saber que las Valquirias restantes han respondido a tu llamado. Si bien cada una de ellas ha seguido su propio camino en los últimos años, su compromiso con la causa (y contigo) sigue siendo fuerte. Han traído todos los recursos que han podido reunir para ayudar al inicio de esta nueva aventura. Ahora están esperando tu liderazgo, listas para recorrer los campos de batalla en busca de la gloria de Odín, como todos ustedes lo hicieron hace mucho tiempo." #NT!
+ PODcanon_chars.92.a: "¡Al Valhalla, hermanas!" #NT!
+ brunhilde_landless_cb_tt: "Mientras permanezca sin tierras y Via Einherjar, Brunhilde tiene acceso a un Casus Belli especial donde puede invadir ducados y colocar una Valquiria a cargo de ellos si gana." #NT!
+  
+  

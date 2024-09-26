@@ -1,37 +1,37 @@
 ﻿l_spanish:
- tab_quincunx: "#T Quincuncio#!" #NT!
+ tab_quincunx: "#T Quincuncio#!"
   
- QUINCUNX_WINDOW_TOTAL_INFLUENCE: "Celo actual: #V [GetGlobalVariable('quincunx_influence').GetValue|0]#!" #NT!
- QUINCUNX_WINDOW_INFLUENCE_GAIN: "Celo anual: #TOOLTIP:quincunx_influence_gain_tt #P;L +[GetPlayer.MakeScope.ScriptValue('quincunx_influence_value')|0]#!#!" #NT!
- quincunx_influence_gain_tt: "[GetPlayer.MakeScope.GetScriptValueDesc('quincunx_influence_value')]" #NT!
- quincunx_county_mod: "Condados con Gobierno de Corte Augusta #weak (cada uno suma un Zeal)#!" #NT!
+ QUINCUNX_WINDOW_TOTAL_INFLUENCE: "Celo actual: #V [GetGlobalVariable('quincunx_influence').GetValue|0]#!"
+ QUINCUNX_WINDOW_INFLUENCE_GAIN: "Celo anual: #TOOLTIP:quincunx_influence_gain_tt #P;L +[GetPlayer.MakeScope.ScriptValue('quincunx_influence_value')|0]#!#!"
+ quincunx_influence_gain_tt: "[GetPlayer.MakeScope.GetScriptValueDesc('quincunx_influence_value')]"
+ quincunx_county_mod: "Condados con Gobierno de Corte Augusta #weak (cada uno suma un Zeal)#!"
   
- HAVE_AT_LEAST_COUNT_QUINCUNX_INFLUENCE: "Quincunx tiene al menos $VALUE|0V$ Celo #weak (#V $VALUE|0$0#! Celo para alguien que no es un Ancestro Augusto)#!" #NT!
- NOT_HAVE_AT_LEAST_COUNT_QUINCUNX_INFLUENCE: "Quincunx tiene #bold no#! al menos $VALUE|0V$ Celo #weak (#V $VALUE|0$0#! Celo para alguien que no es un Ancestro Augusto en su lugar)#!" #NT!
- GAINS_QUINCUNX_INFLUENCE: "Ganancias $VALUE|+0$ Celo" #NT!
- GAIN_QUINCUNX_INFLUENCE: "Obtienes $VALUE|+0$ Celo" #NT!
- GAINED_QUINCUNX_INFLUENCE: "Ganó $VALUE|+0$ Celo" #NT!
- LOSES_QUINCUNX_INFLUENCE: "Gasta $VALUE|-0$ Celo" #NT!
- LOSE_QUINCUNX_INFLUENCE: "Gastas $VALUE|-0$ Celo" #NT!
- LOST_QUINCUNX_INFLUENCE: "Gastado $VALUE|-0$ Celo" #NT!
+ HAVE_AT_LEAST_COUNT_QUINCUNX_INFLUENCE: "Quincunx tiene al menos $VALUE|0V$ Celo #weak (#V $VALUE|0$0#! Celo para alguien que no es un Ancestro Augusto)#!"
+ NOT_HAVE_AT_LEAST_COUNT_QUINCUNX_INFLUENCE: "Quincunx tiene #bold no#! al menos $VALUE|0V$ Celo #weak (#V $VALUE|0$0#! Celo para alguien que no es un Ancestro Augusto en su lugar)#!"
+ GAINS_QUINCUNX_INFLUENCE: "Ganancias $VALUE|+0$ Celo"
+ GAIN_QUINCUNX_INFLUENCE: "Obtienes $VALUE|+0$ Celo"
+ GAINED_QUINCUNX_INFLUENCE: "Ganó $VALUE|+0$ Celo"
+ LOSES_QUINCUNX_INFLUENCE: "Gasta $VALUE|-0$ Celo"
+ LOSE_QUINCUNX_INFLUENCE: "Gastas $VALUE|-0$ Celo"
+ LOST_QUINCUNX_INFLUENCE: "Gastado $VALUE|-0$ Celo"
   
- QUINCUNX_WINDOW_MY_STATUS: "Mi estado: #V [GetPlayer.Custom('QuincunxStatus')]#!" #NT!
- QUINCUNX_WINDOW_ANCESTOR_STATUS: "[Character.Custom('QuincunxStatus')]" #NT!
- ancestor_kueijin: "Antepasado" #NT!
+ QUINCUNX_WINDOW_MY_STATUS: "Mi estado: #V [GetPlayer.Custom('QuincunxStatus')]#!"
+ QUINCUNX_WINDOW_ANCESTOR_STATUS: "[Character.Custom('QuincunxStatus')]"
+ ancestor_kueijin: "Antepasado"
   
- QUINCUNX_WINDOW_TAB_MEMBERS: "Ancestro de agosto" #NT!
- QUINCUNX_WINDOW_TAB_EDICTS: "Edictos" #NT!
+ QUINCUNX_WINDOW_TAB_MEMBERS: "Ancestro de agosto"
+ QUINCUNX_WINDOW_TAB_EDICTS: "Edictos"
   
- quincunx_edict_yin_world_progress: "Exploración del mundo Yin" #NT!
- quincunx_edict_yin_world_progress_effect_tooltip: "Obtienes #V 100#! de progreso de exploración en todos los [yin_world|E] reinos estacionados." #NT!
- quincunx_edict_yang_world_progress: "Exploración del mundo Yang" #NT!
- quincunx_edict_yang_world_progress_effect_tooltip: "Obtienes #V 100#! de progreso de exploración en todos los [yang_world|E] reinos estacionados." #NT!
- quincunx_edict_tax: "Promociona Twilight War" #NT!
- quincunx_edict_tax_effect_tooltip: "Todos los gobernantes de la Corte Augusta obtienen [GetModifier('quincunx_edict_tax_modifier').GetNameWithTooltip] [modifier|E] durante #V 5#! años." #NT!
- quincunx_edict_army: "Promociona la Guerra de Medianoche" #NT!
- quincunx_edict_army_effect_tooltip: "Todos los gobernantes de la Corte Augusta obtienen [GetModifier('quincunx_edict_army_modifier').GetNameWithTooltip] [modifier|E] durante #V 5#! años." #NT!
+ quincunx_edict_yin_world_progress: "Exploración del mundo Yin"
+ quincunx_edict_yin_world_progress_effect_tooltip: "Obtienes #V 100#! de progreso de exploración en todos los [yin_world|E] reinos estacionados."
+ quincunx_edict_yang_world_progress: "Exploración del mundo Yang"
+ quincunx_edict_yang_world_progress_effect_tooltip: "Obtienes #V 100#! de progreso de exploración en todos los [yang_world|E] reinos estacionados."
+ quincunx_edict_tax: "Promociona Twilight War"
+ quincunx_edict_tax_effect_tooltip: "Todos los gobernantes de la Corte Augusta obtienen [GetModifier('quincunx_edict_tax_modifier').GetNameWithTooltip] [modifier|E] durante #V 5#! años."
+ quincunx_edict_army: "Promociona la Guerra de Medianoche"
+ quincunx_edict_army_effect_tooltip: "Todos los gobernantes de la Corte Augusta obtienen [GetModifier('quincunx_edict_army_modifier').GetNameWithTooltip] [modifier|E] durante #V 5#! años."
   
- quincunx_edict_tax_modifier: "Se promociona Twilight War" #NT!
- quincunx_edict_tax_modifier_desc: "La Guerra del Crepúsculo es el método más refinado de librar una guerra en la sombra entre los [GetTrait('kueijin').GetName( GetNullCharacter )], y quizás el más interesante. En muchos sentidos, se parece más a un duelo que a una guerra. Los combatientes luchan según reglas de conducta prescritas, y se recurre a una parte neutral para arbitrar la disputa. El objetivo no es diezmar las posesiones del oponente, sino lograr un objetivo designado (el asesinato de un señor de la guerra valioso o la abdicación de un líder político popular, por ejemplo) con tanta estrategia y delicadeza como sea posible." #NT!
- quincunx_edict_army_modifier: "Se promociona la Guerra de Medianoche" #NT!
- quincunx_edict_army_modifier_desc: "La Guerra de Medianoche es la más brutal de las guerras en las sombras que se libran entre los [GetTrait('kueijin').GetName( GetNullCharacter )]: una vendetta en la que cada bando utiliza todas las tácticas posibles para eliminar al otro, y no se da cuartel. La Guerra de Medianoche debe declararse abiertamente, delante de un antepasado de alto rango; sin embargo, una vez declarada, no hay una forma honorable de terminarla, salvo algunos ritos." #NT!
+ quincunx_edict_tax_modifier: "Se promociona Twilight War"
+ quincunx_edict_tax_modifier_desc: "La Guerra del Crepúsculo es el método más refinado de librar una guerra en la sombra entre los [GetTrait('kueijin').GetName( GetNullCharacter )], y quizás el más interesante. En muchos sentidos, se parece más a un duelo que a una guerra. Los combatientes luchan según reglas de conducta prescritas, y se recurre a una parte neutral para arbitrar la disputa. El objetivo no es diezmar las posesiones del oponente, sino lograr un objetivo designado (el asesinato de un señor de la guerra valioso o la abdicación de un líder político popular, por ejemplo) con tanta estrategia y delicadeza como sea posible."
+ quincunx_edict_army_modifier: "Se promociona la Guerra de Medianoche"
+ quincunx_edict_army_modifier_desc: "La Guerra de Medianoche es la más brutal de las guerras en las sombras que se libran entre los [GetTrait('kueijin').GetName( GetNullCharacter )]: una vendetta en la que cada bando utiliza todas las tácticas posibles para eliminar al otro, y no se da cuartel. La Guerra de Medianoche debe declararse abiertamente, delante de un antepasado de alto rango; sin embargo, una vez declarada, no hay una forma honorable de terminarla, salvo algunos ritos."

@@ -206,17 +206,17 @@
  seek_knowledge_bardo_travel_desc: "Estoy emocionada por tener la oportunidad de aprender [GetTrait('bardo').GetName(GetNullCharacter)]. [the_beast|E] es implacable. Dale un dedo y te arrancará todo el brazo. Un respiro, aunque sea temporal, es algo que todos los [cainite|E] anhelan."
  seek_knowledge_bardo_travel_confirm: "$POD_journey_travel_confirm_seek_knowledge$"
   
- seek_knowledge_bloodsorcery_name: "Aprende una disciplina poco común ([GetTrait('bloodsorcery').GetName(GetNullCharacter)])"
- seek_knowledge_bloodsorcery_desc: "[GetTrait('bloodsorcery').GetName(GetNullCharacter)] es un misterioso [discipline|E] que se asocia más comúnmente con el [GetTrait('tremere').GetName(GetNullCharacter)], pero que es practicado por varios [Clans|E] diferentes. Permite al practicante usar su sangre para una amplia gama de rituales mágicos: concentrar la mente, mejorar los ejércitos, maldecir a los enemigos... y muchos más."
- seek_knowledge_bloodsorcery_effects: "Aprenderás la ubicación de un maestro que conoce [GetTrait('bloodsorcery').GetName(GetNullCharacter)]. Después de viajar allí, podrás adquirir [discipline|E] [trait|E]. No solo te permite desbloquear [perks|E] en [GetTrait('bloodsorcery').GetName(GetNullCharacter)] [lifestyle|E], sino que también desbloquea [blood_sorcery|E] [character_interaction|E], que te permite lanzar varios hechizos beneficiosos y dañinos."
- seek_knowledge_bloodsorcery_tt: "Desbloquearé los secretos más profundos de la vida."
- seek_knowledge_bloodsorcery_planning_title: "La búsqueda de la hechicería de sangre"
- seek_knowledge_bloodsorcery_planning_desc: "He despertado mi sangre y me he preparado lo mejor que he podido, pero los puntos más finos de [GetTrait('bloodsorcery').GetName(GetNullCharacter)] todavía se me escapan.\n\nSi quiero dominar este [discipline|E] por completo, necesitaré un maestro.\n\nPor suerte, mis exploradores me han dicho dónde se puede encontrar a esa persona."
- seek_knowledge_bloodsorcery_planning_confirm: "$POD_journey_planning_confirm_default$"
- seek_knowledge_bloodsorcery_planning_decline: "$POD_journey_planning_decline_default$"
- seek_knowledge_bloodsorcery_travel_title: "$POD_journey_travel_title_seek_knowledge$"
- seek_knowledge_bloodsorcery_travel_desc: "Estoy entusiasmado por tener la oportunidad de aprender [GetTrait('bloodsorcery').GetName(GetNullCharacter)]. Sus secretos se guardan celosamente por una razón. Una vez que los desbloquee, nadie sabe de qué seré capaz."
- seek_knowledge_bloodsorcery_travel_confirm: "$POD_journey_travel_confirm_seek_knowledge$"
+ #  seek_knowledge_bloodsorcery_name: "Aprende una disciplina poco común ([GetTrait('bloodsorcery').GetName(GetNullCharacter)])" #NT!
+ #  seek_knowledge_bloodsorcery_desc: "[GetTrait('bloodsorcery').GetName(GetNullCharacter)] es un misterioso [discipline|E] que se asocia más comúnmente con el [GetTrait('tremere').GetName(GetNullCharacter)], pero que es practicado por varios [Clans|E] diferentes. Permite al practicante usar su sangre para una amplia gama de rituales mágicos: concentrar la mente, mejorar los ejércitos, maldecir a los enemigos... y muchos más." #NT!
+ #  seek_knowledge_bloodsorcery_effects: "Aprenderás la ubicación de un maestro que conoce [GetTrait('bloodsorcery').GetName(GetNullCharacter)]. Después de viajar allí, puedes adquirir [discipline|E] [trait|E]. No solo te permite desbloquear [perks|E] en [GetTrait('bloodsorcery').GetName(GetNullCharacter)] [lifestyle|E], sino que también desbloquea [blood_sorcery|E] [character_interaction|E], que te permite lanzar varios hechizos beneficiosos y dañinos." #NT!
+ #  seek_knowledge_bloodsorcery_tt: "Desbloquearé los secretos más profundos de la vida." #NT!
+ #  seek_knowledge_bloodsorcery_planning_title: "La búsqueda de la hechicería de sangre" #NT!
+ #  seek_knowledge_bloodsorcery_planning_desc: "He despertado mi sangre y me he preparado lo mejor que he podido, pero los puntos más finos de [GetTrait('bloodsorcery').GetName(GetNullCharacter)] todavía se me escapan.\n\nSi quiero dominar este [discipline|E] por completo, necesitaré un maestro.\n\nPor suerte, mis exploradores me han dicho dónde se puede encontrar a esa persona." #NT!
+ #  seek_knowledge_bloodsorcery_planning_confirm: "$POD_journey_planning_confirm_default$" #NT!
+ #  seek_knowledge_bloodsorcery_planning_decline: "$POD_journey_planning_decline_default$" #NT!
+ #  seek_knowledge_bloodsorcery_travel_title: "$POD_journey_travel_title_seek_knowledge$" #NT!
+ #  seek_knowledge_bloodsorcery_travel_desc: "Estoy entusiasmado por tener la oportunidad de aprender [GetTrait('bloodsorcery').GetName(GetNullCharacter)]. Sus secretos se guardan celosamente por una razón. Una vez que los desbloquee, nadie sabe de qué seré capaz." #NT!
+ #  seek_knowledge_bloodsorcery_travel_confirm: "$POD_journey_travel_confirm_seek_knowledge$" #NT!
   
  seek_knowledge_chimerstry_name: "Aprende una disciplina poco común ([GetTrait('chimerstry').GetName(GetNullCharacter)])"
  seek_knowledge_chimerstry_desc: "[GetTrait('chimerstry').GetName(GetNullCharacter)] es el [discipline|E] de la Ilusión, practicado por [GetTrait('ravnos').GetName(GetNullCharacter)] [Clan|E]. Aporta diversos beneficios relacionados con [schemes|E] y permite infligir [GetPerk('horrid_reality_perk').GetName(GetPlayer)] a sus oponentes en la guerra."
@@ -996,7 +996,7 @@
  provoke_vatican_caelestius_name: "$provoke_vatican_name$"
  provoke_vatican_caelestius_desc: "Nuestra especie ha estado agazapada en las sombras durante demasiado tiempo, ¿y para qué? La Iglesia nos está tildando de pecadores, pero su concepto mismo del pecado se ha basado en premisas falsas. Sé cómo revelar sus inconsistencias lógicas. Sé cómo corregir este error. Debatiré con el Papa."
  provoke_vatican_caelestius_effects: "Viajarás a Roma e intentarás presentarle al Santo Padre tu marca personal de nodismo, lo que te permitirá ganarte su bendición... o provocar una represalia de la Inquisición.\n\n$provoke_vatican_warning$"
- provoke_vatican_caelestius_isvalid: ""
+ #provoke_vatican_caelestius_isvalid: ""
  provoke_vatican_caelestius_tt: "Seguramente el Santo Padre me bendecirá."
  provoke_vatican_caelestius_planning_title: "Preparando una revelación"
  provoke_vatican_caelestius_planning_desc: "La decisión está tomada. Los preparativos están hechos. Estoy más preparado que nunca. Ahora lo único que me queda por hacer es un viaje rápido a la Ciudad Santa. No todo el mundo compartirá mi visión. De hecho, espero que haya muchos que intenten disuadirme de esta misión, pensando que es una misión inútil. Simplemente no entienden la profundidad de mi fe. Pero pronto lo harán."
@@ -1006,6 +1006,35 @@
  provoke_vatican_caelestius_travel_desc: "$provoke_vatican_travel_desc$"
  provoke_vatican_caelestius_travel_confirm: "$provoke_vatican_travel_confirm$"
   
+ siochain_1_name: "La leyenda del equilibrio: Mundo gris" #NT!
+ siochain_1_desc: "Ya sea por medio de un estudio deliberado o por el horror inminente de la muerte, has llegado a una conclusión: es posible lograr un equilibrio perfecto entre tu yo mortal y tu yo feérico. Sin embargo, para lograrlo es necesario adquirir una comprensión completa tanto del glamour como de la banalidad. Una batalla cuesta arriba, si alguna vez hubo alguna." #NT!
+ siochain_1_effects: "Meditarás sobre la Banalidad y estarás un paso más cerca de la perfección." #NT!
+ siochain_1_isvalid: "$EFFECT_LIST_BULLET$Tienes el [GetPerk('realm_fae_5_perk').GetName(GetPlayer)] [perk|E]" #NT!
+ siochain_1_tt: "El mundo de otoño contiene las respuestas." #NT!
+ siochain_1_planning_title: "Buscando el equilibrio" #NT!
+ siochain_1_planning_desc: "Me he sumergido en el mundo de los mortales, estrangulado por sus agobiantes reglas y sus rígidos rituales.\n\nAunque la Banalidad amenazara con asfixiarme, lo tomé como una lección. Y ha habido muchas de estas lecciones, últimamente.\n\n¿Ha sido suficiente?" #NT!
+ siochain_1_planning_confirm: "Es hora de pensar en lo que he aprendido." #NT!
+ siochain_1_planning_decline: "Aún no es el momento" #NT!
+  
+ siochain_2_name: "La leyenda del equilibrio: un mundo colorido" #NT!
+ siochain_2_desc: "Me he sumergido en la Banalidad y he salido ilesa, pero ese fue solo el primer paso. A continuación, tendré que ponerme en contacto con mi yo hada." #NT!
+ siochain_2_effects: "Meditarás sobre el Glamour y estarás un paso más cerca de la perfección." #NT!
+ #siochain_2_isvalid: ""
+ siochain_2_tt: "Preguntas que sólo el Sueño puede responder." #NT!
+ siochain_2_planning_title: "Buscando el equilibrio" #NT!
+ siochain_2_planning_desc: "He meditado mientras estaba sumergido en tormentas de Glamour. He dejado que la materia cruda del Sueño me empapara hasta que no quedó nada de mí, ninguna separación, ningún interior ni exterior. ¿Puede este caos cristalizar en una verdadera comprensión?" #NT!
+ siochain_2_planning_confirm: "Es hora de pensar en lo que he aprendido." #NT!
+ siochain_2_planning_decline: "Aún no es el momento" #NT!
+  
+ siochain_3_name: "La leyenda del equilibrio: la confluencia de los mundos" #NT!
+ siochain_3_desc: "Parece que no hay forma de conciliar mi comprensión del glamour y la banalidad. Son opuestos, obviamente. Eso es solo sentido común. Pero ¿cuándo ha detenido el sentido común a un cambiante?" #NT!
+ siochain_3_effects: "Intentarás el arriesgado esfuerzo de fusionar la Banalidad y el Glamour dentro de ti." #NT!
+ siochain_3_isvalid: "$EFFECT_LIST_BULLET$No eres [GetModifier('POD_disconected_from_dreaming').GetNameWithTooltip]" #NT!
+ siochain_3_tt: "Encontrar el equilibrio entre las contradicciones." #NT!
+ siochain_3_planning_title: "Lograr el equilibrio" #NT!
+ siochain_3_planning_desc: "La banalidad y el glamour van juntos como el agua y el aceite. Nadie ha logrado mezclarlos con éxito.\n\nTodavía.\n\nMe he preparado para esto durante mucho tiempo. La práctica solo me llevará hasta cierto punto. Necesito dar el paso." #NT!
+ siochain_3_planning_confirm: "Es ahora o nunca." #NT!
+ siochain_3_planning_decline: "Esto suena estresante, lo haré en otro momento." #NT!
   
   ############################# 
   ##### Targeted Journeys ##### 
@@ -1076,6 +1105,19 @@
  unstoppable_warrior_travel_confirm: "Sería un guerrero imparable"
   
   
+ ritual_casting_name: ""
+ #ritual_casting_desc: ""
+ #ritual_casting_effects: ""
+ ritual_casting_tt: "Preparándose para aprovechar lo oculto." #NT!
+ ritual_casting_planning_title: "Lanzando el [bs_ritual|E]" #NT!
+ ritual_casting_planning_desc: "Los preparativos requirieron de una gran disciplina y fortaleza mental. Ahora estoy más preparado que nunca.\n\nCon este [bs_ritual|E], mi voluntad se imprimirá en la realidad, utilizando la sangre como medio.\n\nSerá mejor que me asegure de tener todos los reactivos que necesito." #NT!
+ ritual_casting_planning_confirm: "$POD_journey_planning_confirm_default$" #NT!
+ ritual_casting_planning_decline: "$POD_journey_planning_decline_default$" #NT!
+ ritual_casting_travel_title: "Viaje al [bs_ritual|E]" #NT!
+ ritual_casting_travel_desc: "No importa cuántas veces realice estos ritos, siempre me provocan una sensación distante de terror. Nuestros mayores eruditos están lejos de comprender el gran [beast|E] que duerme en nuestra sangre y que se despierta cada vez que necesitamos sus poderes. Debajo de todo el artificio, todos los procedimientos, ceremonias y teatralidades, no somos más que niños que intentan controlar una fuerza de la naturaleza." #NT!
+ #ritual_casting_travel_desc: "A lo largo de siglos de experimentación, los hechiceros de la Estirpe han expandido sus artes de mil maneras diferentes. Con cada paso que dan, se abre ante ellos otro camino tentadoramente, que les indica el camino hacia hazañas mágicas aún mayores. La taumaturgia fue desarrollada por los Vástagos a partir de rituales herméticos para controlar y concentrar estas poderosas fuerzas.\nOtros Vástagos crearon una amplia gama de hechicerías que han extraído de las creencias de los mortales de todo el mundo. Algunos han difuminado la línea entre religión y poder para crear un número cada vez mayor de ritae. Otros incluso han usado su sangre para comandar a los espíritus de los muertos, para hacer contacto con entidades en reinos más allá de la comprensión y para vender sus almas a seres que habitan en los confines más oscuros de toda la creación. Al final, sin embargo, todos los rituales requieren disciplina y fortaleza mental para prepararse. Cualquier error podría ser el último que cometa un hechicero descuidado.\nDespués de una cuidadosa preparación, [bs_ritual|E] finalmente está listo. Ahora solo necesito el momento y lugar adecuado para lanzarlo." #NT!
+ ritual_casting_travel_confirm: "Adelante, a la ubicación de [bs_ritual|E]." #NT!
+  
   ################################ 
   ##### Trait-based Journeys ##### 
   ################################ 
@@ -1132,3 +1174,349 @@
  artifact_heist_travel_title: "$POD_journey_travel_title_heist$"
  artifact_heist_travel_desc: "Si todo va según lo previsto, podré integrarme, encontrar la habitación que contiene el [PlayerJourneyArtifact.GetName] y robarlo sin excitar a [PlayerJourneyArtifact.GetOwner.GetShortUINamePossessive] [suspicion|E]."
  artifact_heist_travel_confirm: "$POD_journey_travel_confirm_heist$"
+  
+  # ############################# 
+  # ####### Lore Journeys ####### 
+  # ############################# 
+  
+ seek_knowledge_lore_celestials_name: "Aprende la tradición de las casas (celestiales) de" #NT!
+ seek_knowledge_lore_celestials_desc: "Aprende el conocimiento de la Casa de los Celestiales, lo que te permitirá controlar el poder de la fe de forma más directa." #NT!
+ seek_knowledge_lore_celestials_effects: "Comenzarás el largo proceso de aprendizaje de una nueva Casa Lore." #NT!
+ seek_knowledge_lore_celestials_tt: "Controlar la fe misma" #NT!
+ seek_knowledge_lore_celestials_planning_title: "La búsqueda de una nueva tradición de la Casa" #NT!
+ seek_knowledge_lore_celestials_planning_desc: "Me he preparado lo mejor que he podido, pero los puntos más finos de este Conocimiento aún se me escapan.\n\nSi quiero dominar este Conocimiento por completo, realmente debo convencer a mi "maestro" de que me revele sus preciosos secretos." #NT!
+ seek_knowledge_lore_celestials_planning_confirm: "$POD_journey_planning_confirm_default$" #NT!
+ seek_knowledge_lore_celestials_planning_decline: "$POD_journey_planning_decline_default$" #NT!
+ seek_knowledge_lore_celestials_travel_title: "$POD_journey_travel_title_seek_knowledge$" #NT!
+ seek_knowledge_lore_celestials_travel_desc: "Este viaje me acercará a mi antiguo poder celestial, injustamente robado." #NT!
+ seek_knowledge_lore_celestials_travel_confirm: "$POD_journey_travel_confirm_seek_knowledge$" #NT!
+ seek_knowledge_lore_flame_name: "Aprende la tradición de la casa (Llama) de" #NT!
+ seek_knowledge_lore_flame_desc: "Aprende el conocimiento de la Casa de la Llama, controlando el poder del fuego." #NT!
+ seek_knowledge_lore_flame_effects: "Comenzarás el largo proceso de aprendizaje de una nueva Casa Lore." #NT!
+ seek_knowledge_lore_flame_tt: "Controlar el fuego en sí" #NT!
+ seek_knowledge_lore_flame_planning_title: "La búsqueda de una nueva tradición de la Casa" #NT!
+ seek_knowledge_lore_flame_planning_desc: "Me he preparado lo mejor que he podido, pero los puntos más finos de este Conocimiento aún se me escapan.\n\nSi quiero dominar este Conocimiento por completo, realmente debo convencer a mi "maestro" de que me revele sus preciosos secretos." #NT!
+ seek_knowledge_lore_flame_planning_confirm: "$POD_journey_planning_confirm_default$" #NT!
+ seek_knowledge_lore_flame_planning_decline: "$POD_journey_planning_decline_default$" #NT!
+ seek_knowledge_lore_flame_travel_title: "$POD_journey_travel_title_seek_knowledge$" #NT!
+ seek_knowledge_lore_flame_travel_desc: "Este viaje me acercará a mi antiguo poder celestial, injustamente robado." #NT!
+ seek_knowledge_lore_flame_travel_confirm: "$POD_journey_travel_confirm_seek_knowledge$" #NT!
+ seek_knowledge_lore_radiance_name: "Aprende la tradición de la casa (resplandor) de" #NT!
+ seek_knowledge_lore_radiance_desc: "Aprende la tradición de la Casa Radiancia y dirige los Cielos." #NT!
+ seek_knowledge_lore_radiance_effects: "Comenzarás el largo proceso de aprendizaje de una nueva Casa Lore." #NT!
+ seek_knowledge_lore_radiance_tt: "Liderazgo verdadero." #NT!
+ seek_knowledge_lore_radiance_planning_title: "La búsqueda de una nueva tradición de la Casa" #NT!
+ seek_knowledge_lore_radiance_planning_desc: "Me he preparado lo mejor que he podido, pero los puntos más finos de este Conocimiento aún se me escapan.\n\nSi quiero dominar este Conocimiento por completo, realmente debo convencer a mi "maestro" de que me revele sus preciosos secretos." #NT!
+ seek_knowledge_lore_radiance_planning_confirm: "$POD_journey_planning_confirm_default$" #NT!
+ seek_knowledge_lore_radiance_planning_decline: "$POD_journey_planning_decline_default$" #NT!
+ seek_knowledge_lore_radiance_travel_title: "$POD_journey_travel_title_seek_knowledge$" #NT!
+ seek_knowledge_lore_radiance_travel_desc: "Este viaje me acercará a mi antiguo poder celestial, injustamente robado." #NT!
+ seek_knowledge_lore_radiance_travel_confirm: "$POD_journey_travel_confirm_seek_knowledge$" #NT!
+ seek_knowledge_lore_awakening_name: "Aprende la tradición de la casa (Despertar) de" #NT!
+ seek_knowledge_lore_awakening_desc: "Aprenda la tradición de la Casa del Despertar, creando y protegiendo la vida." #NT!
+ seek_knowledge_lore_awakening_effects: "Comenzarás el largo proceso de aprendizaje de una nueva Casa Lore." #NT!
+ seek_knowledge_lore_awakening_tt: "El verdadero poder de la Creación." #NT!
+ seek_knowledge_lore_awakening_planning_title: "La búsqueda de una nueva tradición de la Casa" #NT!
+ seek_knowledge_lore_awakening_planning_desc: "Me he preparado lo mejor que he podido, pero los puntos más finos de este Conocimiento aún se me escapan.\n\nSi quiero dominar este Conocimiento por completo, realmente debo convencer a mi "maestro" de que me revele sus preciosos secretos." #NT!
+ seek_knowledge_lore_awakening_planning_confirm: "$POD_journey_planning_confirm_default$" #NT!
+ seek_knowledge_lore_awakening_planning_decline: "$POD_journey_planning_decline_default$" #NT!
+ seek_knowledge_lore_awakening_travel_title: "$POD_journey_travel_title_seek_knowledge$" #NT!
+ seek_knowledge_lore_awakening_travel_desc: "Este viaje me acercará a mi antiguo poder celestial, injustamente robado." #NT!
+ seek_knowledge_lore_awakening_travel_confirm: "$POD_journey_travel_confirm_seek_knowledge$" #NT!
+ seek_knowledge_lore_firmament_name: "Aprende la tradición de la casa (firmamento) desde" #NT!
+ seek_knowledge_lore_firmament_desc: "Aprende la tradición de la Casa del Firmamento y cautiva a la gente desde la distancia." #NT!
+ seek_knowledge_lore_firmament_effects: "Comenzarás el largo proceso de aprendizaje de una nueva Casa Lore." #NT!
+ seek_knowledge_lore_firmament_tt: "Marioneando el mundo." #NT!
+ seek_knowledge_lore_firmament_planning_title: "La búsqueda de una nueva tradición de la Casa" #NT!
+ seek_knowledge_lore_firmament_planning_desc: "Me he preparado lo mejor que he podido, pero los puntos más finos de este Conocimiento aún se me escapan.\n\nSi quiero dominar este Conocimiento por completo, realmente debo convencer a mi "maestro" de que me revele sus preciosos secretos." #NT!
+ seek_knowledge_lore_firmament_planning_confirm: "$POD_journey_planning_confirm_default$" #NT!
+ seek_knowledge_lore_firmament_planning_decline: "$POD_journey_planning_decline_default$" #NT!
+ seek_knowledge_lore_firmament_travel_title: "$POD_journey_travel_title_seek_knowledge$" #NT!
+ seek_knowledge_lore_firmament_travel_desc: "Este viaje me acercará a mi antiguo poder celestial, injustamente robado." #NT!
+ seek_knowledge_lore_firmament_travel_confirm: "$POD_journey_travel_confirm_seek_knowledge$" #NT!
+ seek_knowledge_lore_winds_name: "Aprende la tradición de la casa (vientos) de" #NT!
+ seek_knowledge_lore_winds_desc: "Aprende la tradición de los vientos, invocando los poderes del viento y del aire por medios tan diversos como manipular la presión del aire local o crear un tornado." #NT!
+ seek_knowledge_lore_winds_effects: "Comenzarás el largo proceso de aprendizaje de una nueva Casa Lore." #NT!
+ seek_knowledge_lore_winds_tt: "¡Maestro de los cuatro vientos!" #NT!
+ seek_knowledge_lore_winds_planning_title: "La búsqueda de una nueva tradición de la Casa" #NT!
+ seek_knowledge_lore_winds_planning_desc: "Me he preparado lo mejor que he podido, pero los puntos más finos de este Conocimiento aún se me escapan.\n\nSi quiero dominar este Conocimiento por completo, realmente debo convencer a mi "maestro" de que me revele sus preciosos secretos." #NT!
+ seek_knowledge_lore_winds_planning_confirm: "$POD_journey_planning_confirm_default$" #NT!
+ seek_knowledge_lore_winds_planning_decline: "$POD_journey_planning_decline_default$" #NT!
+ seek_knowledge_lore_winds_travel_title: "$POD_journey_travel_title_seek_knowledge$" #NT!
+ seek_knowledge_lore_winds_travel_desc: "Este viaje me acercará a mi antiguo poder celestial, injustamente robado." #NT!
+ seek_knowledge_lore_winds_travel_confirm: "$POD_journey_travel_confirm_seek_knowledge$" #NT!
+ seek_knowledge_lore_earth_name: "Aprende la tradición de la casa (Tierra) desde" #NT!
+ seek_knowledge_lore_earth_desc: "Aprenda la tradición de la Tierra, moldeándola de muchas maneras diferentes, incluidos el metal, el hormigón y el vidrio, pero excluyendo materiales artificiales o vivos." #NT!
+ seek_knowledge_lore_earth_effects: "Comenzarás el largo proceso de aprendizaje de una nueva Casa Lore." #NT!
+ seek_knowledge_lore_earth_tt: "¡La propia Tierra responde a mi llamado!" #NT!
+ seek_knowledge_lore_earth_planning_title: "La búsqueda de una nueva tradición de la Casa" #NT!
+ seek_knowledge_lore_earth_planning_desc: "Me he preparado lo mejor que he podido, pero los puntos más finos de este Conocimiento aún se me escapan.\n\nSi quiero dominar este Conocimiento por completo, realmente debo convencer a mi "maestro" de que me revele sus preciosos secretos." #NT!
+ seek_knowledge_lore_earth_planning_confirm: "$POD_journey_planning_confirm_default$" #NT!
+ seek_knowledge_lore_earth_planning_decline: "$POD_journey_planning_decline_default$" #NT!
+ seek_knowledge_lore_earth_travel_title: "$POD_journey_travel_title_seek_knowledge$" #NT!
+ seek_knowledge_lore_earth_travel_desc: "Este viaje me acercará a mi antiguo poder celestial, injustamente robado." #NT!
+ seek_knowledge_lore_earth_travel_confirm: "$POD_journey_travel_confirm_seek_knowledge$" #NT!
+ seek_knowledge_lore_paths_name: "Aprende la tradición de las casas (caminos) desde" #NT!
+ seek_knowledge_lore_paths_desc: "Aprende la tradición de los caminos de la casa, manipulando las relaciones espaciales" #NT!
+ seek_knowledge_lore_paths_effects: "Comenzarás el largo proceso de aprendizaje de una nueva Casa Lore." #NT!
+ seek_knowledge_lore_paths_tt: "Las piezas vinculantes de la realidad a mi alcance." #NT!
+ seek_knowledge_lore_paths_planning_title: "La búsqueda de una nueva tradición de la Casa" #NT!
+ seek_knowledge_lore_paths_planning_desc: "Me he preparado lo mejor que he podido, pero los puntos más finos de este Conocimiento aún se me escapan.\n\nSi quiero dominar este Conocimiento por completo, realmente debo convencer a mi "maestro" de que me revele sus preciosos secretos." #NT!
+ seek_knowledge_lore_paths_planning_confirm: "$POD_journey_planning_confirm_default$" #NT!
+ seek_knowledge_lore_paths_planning_decline: "$POD_journey_planning_decline_default$" #NT!
+ seek_knowledge_lore_paths_travel_title: "$POD_journey_travel_title_seek_knowledge$" #NT!
+ seek_knowledge_lore_paths_travel_desc: "Este viaje me acercará a mi antiguo poder celestial, injustamente robado." #NT!
+ seek_knowledge_lore_paths_travel_confirm: "$POD_journey_travel_confirm_seek_knowledge$" #NT!
+ seek_knowledge_lore_forge_name: "Aprende la tradición de la casa (Forja) desde" #NT!
+ seek_knowledge_lore_forge_desc: "Aprende el conocimiento de la Casa Forge, el dominio supremo del mundo inanimado." #NT!
+ seek_knowledge_lore_forge_effects: "Comenzarás el largo proceso de aprendizaje de una nueva Casa Lore." #NT!
+ seek_knowledge_lore_forge_tt: "Hefesto no tiene nada que ver conmigo." #NT!
+ seek_knowledge_lore_forge_planning_title: "La búsqueda de una nueva tradición de la Casa" #NT!
+ seek_knowledge_lore_forge_planning_desc: "Me he preparado lo mejor que he podido, pero los puntos más finos de este Conocimiento aún se me escapan.\n\nSi quiero dominar este Conocimiento por completo, realmente debo convencer a mi "maestro" de que me revele sus preciosos secretos." #NT!
+ seek_knowledge_lore_forge_planning_confirm: "$POD_journey_planning_confirm_default$" #NT!
+ seek_knowledge_lore_forge_planning_decline: "$POD_journey_planning_decline_default$" #NT!
+ seek_knowledge_lore_forge_travel_title: "$POD_journey_travel_title_seek_knowledge$" #NT!
+ seek_knowledge_lore_forge_travel_desc: "Este viaje me acercará a mi antiguo poder celestial, injustamente robado." #NT!
+ seek_knowledge_lore_forge_travel_confirm: "$POD_journey_travel_confirm_seek_knowledge$" #NT!
+ seek_knowledge_lore_light_name: "Aprende la tradición de la casa (luz) de" #NT!
+ seek_knowledge_lore_light_desc: "Aprende la tradición de la Casa de la Luz, controlando las propiedades de la luz mediante la creación de rayos cegadores o ilusiones elaboradas." #NT!
+ seek_knowledge_lore_light_effects: "Comenzarás el largo proceso de aprendizaje de una nueva Casa Lore." #NT!
+ seek_knowledge_lore_light_tt: "Una luz para cegar los Cielos." #NT!
+ seek_knowledge_lore_light_planning_title: "La búsqueda de una nueva tradición de la Casa" #NT!
+ seek_knowledge_lore_light_planning_desc: "Me he preparado lo mejor que he podido, pero los puntos más finos de este Conocimiento aún se me escapan.\n\nSi quiero dominar este Conocimiento por completo, realmente debo convencer a mi "maestro" de que me revele sus preciosos secretos." #NT!
+ seek_knowledge_lore_light_planning_confirm: "$POD_journey_planning_confirm_default$" #NT!
+ seek_knowledge_lore_light_planning_decline: "$POD_journey_planning_decline_default$" #NT!
+ seek_knowledge_lore_light_travel_title: "$POD_journey_travel_title_seek_knowledge$" #NT!
+ seek_knowledge_lore_light_travel_desc: "Este viaje me acercará a mi antiguo poder celestial, injustamente robado." #NT!
+ seek_knowledge_lore_light_travel_confirm: "$POD_journey_travel_confirm_seek_knowledge$" #NT!
+ seek_knowledge_lore_patterns_name: "Aprenda la tradición de la casa (patrones) de" #NT!
+ seek_knowledge_lore_patterns_desc: "Aprenda la tradición de los patrones de la Casa, manipulando el tiempo de maneras tanto sutiles, como causando una aparente serendipia, como ralentizando o deteniendo por completo el flujo del tiempo." #NT!
+ seek_knowledge_lore_patterns_effects: "Comenzarás el largo proceso de aprendizaje de una nueva Casa Lore." #NT!
+ seek_knowledge_lore_patterns_tt: "¡Un verdadero maestro del tiempo!" #NT!
+ seek_knowledge_lore_patterns_planning_title: "La búsqueda de una nueva tradición de la Casa" #NT!
+ seek_knowledge_lore_patterns_planning_desc: "Me he preparado lo mejor que he podido, pero los puntos más finos de este Conocimiento aún se me escapan.\n\nSi quiero dominar este Conocimiento por completo, realmente debo convencer a mi "maestro" de que me revele sus preciosos secretos." #NT!
+ seek_knowledge_lore_patterns_planning_confirm: "$POD_journey_planning_confirm_default$" #NT!
+ seek_knowledge_lore_patterns_planning_decline: "$POD_journey_planning_decline_default$" #NT!
+ seek_knowledge_lore_patterns_travel_title: "$POD_journey_travel_title_seek_knowledge$" #NT!
+ seek_knowledge_lore_patterns_travel_desc: "Este viaje me acercará a mi antiguo poder celestial, injustamente robado." #NT!
+ seek_knowledge_lore_patterns_travel_confirm: "$POD_journey_travel_confirm_seek_knowledge$" #NT!
+ seek_knowledge_lore_portals_name: "Aprende la tradición de las casas (portales) desde" #NT!
+ seek_knowledge_lore_portals_desc: "Aprende la tradición de la Casa de los Portales, viajando rápidamente entre lugares facilitando el acceso y alterando dimensiones." #NT!
+ seek_knowledge_lore_portals_effects: "Comenzarás el largo proceso de aprendizaje de una nueva Casa Lore." #NT!
+ seek_knowledge_lore_portals_tt: "Estoy en todas partes a la vez." #NT!
+ seek_knowledge_lore_portals_planning_title: "La búsqueda de una nueva tradición de la Casa" #NT!
+ seek_knowledge_lore_portals_planning_desc: "Me he preparado lo mejor que he podido, pero los puntos más finos de este Conocimiento aún se me escapan.\n\nSi quiero dominar este Conocimiento por completo, realmente debo convencer a mi "maestro" de que me revele sus preciosos secretos." #NT!
+ seek_knowledge_lore_portals_planning_confirm: "$POD_journey_planning_confirm_default$" #NT!
+ seek_knowledge_lore_portals_planning_decline: "$POD_journey_planning_decline_default$" #NT!
+ seek_knowledge_lore_portals_travel_title: "$POD_journey_travel_title_seek_knowledge$" #NT!
+ seek_knowledge_lore_portals_travel_desc: "Este viaje me acercará a mi antiguo poder celestial, injustamente robado." #NT!
+ seek_knowledge_lore_portals_travel_confirm: "$POD_journey_travel_confirm_seek_knowledge$" #NT!
+ seek_knowledge_lore_longing_name: "Aprende la tradición de la casa (anhelo) de" #NT!
+ seek_knowledge_lore_longing_desc: "Aprenda la tradición de la Casa del Anhelo, comprendiendo y manipulando los matices emocionales (o neurosis) de los humanos, ya sean preferencias sexuales o pasiones artísticas." #NT!
+ seek_knowledge_lore_longing_effects: "Comenzarás el largo proceso de aprendizaje de una nueva Casa Lore." #NT!
+ seek_knowledge_lore_longing_tt: "Sus emociones son mías para jugar con ellas." #NT!
+ seek_knowledge_lore_longing_planning_title: "La búsqueda de una nueva tradición de la Casa" #NT!
+ seek_knowledge_lore_longing_planning_desc: "Me he preparado lo mejor que he podido, pero los puntos más finos de este Conocimiento aún se me escapan.\n\nSi quiero dominar este Conocimiento por completo, realmente debo convencer a mi "maestro" de que me revele sus preciosos secretos." #NT!
+ seek_knowledge_lore_longing_planning_confirm: "$POD_journey_planning_confirm_default$" #NT!
+ seek_knowledge_lore_longing_planning_decline: "$POD_journey_planning_decline_default$" #NT!
+ seek_knowledge_lore_longing_travel_title: "$POD_journey_travel_title_seek_knowledge$" #NT!
+ seek_knowledge_lore_longing_travel_desc: "Este viaje me acercará a mi antiguo poder celestial, injustamente robado." #NT!
+ seek_knowledge_lore_longing_travel_confirm: "$POD_journey_travel_confirm_seek_knowledge$" #NT!
+ seek_knowledge_lore_storms_name: "Aprende la tradición de la casa (Tormentas) de" #NT!
+ seek_knowledge_lore_storms_desc: "Aprende la tradición de las Casas de las Tormentas, el control del clima y el poder sobre el elemento agua." #NT!
+ seek_knowledge_lore_storms_effects: "Comenzarás el largo proceso de aprendizaje de una nueva Casa Lore." #NT!
+ seek_knowledge_lore_storms_tt: "¡Estoy cabalgando esta tormenta!" #NT!
+ seek_knowledge_lore_storms_planning_title: "La búsqueda de una nueva tradición de la Casa" #NT!
+ seek_knowledge_lore_storms_planning_desc: "Me he preparado lo mejor que he podido, pero los puntos más finos de este Conocimiento aún se me escapan.\n\nSi quiero dominar este Conocimiento por completo, realmente debo convencer a mi "maestro" de que me revele sus preciosos secretos." #NT!
+ seek_knowledge_lore_storms_planning_confirm: "$POD_journey_planning_confirm_default$" #NT!
+ seek_knowledge_lore_storms_planning_decline: "$POD_journey_planning_decline_default$" #NT!
+ seek_knowledge_lore_storms_travel_title: "$POD_journey_travel_title_seek_knowledge$" #NT!
+ seek_knowledge_lore_storms_travel_desc: "Este viaje me acercará a mi antiguo poder celestial, injustamente robado." #NT!
+ seek_knowledge_lore_storms_travel_confirm: "$POD_journey_travel_confirm_seek_knowledge$" #NT!
+ seek_knowledge_lore_transfiguration_name: "Aprende la tradición de las casas (transfiguración) desde" #NT!
+ seek_knowledge_lore_transfiguration_desc: "Aprende la tradición de la Casa de la Transfiguración, cambiando tus rasgos físicos o los de otra persona." #NT!
+ seek_knowledge_lore_transfiguration_effects: "Comenzarás el largo proceso de aprendizaje de una nueva Casa Lore." #NT!
+ seek_knowledge_lore_transfiguration_tt: "Dominio sobre la forma corpórea." #NT!
+ seek_knowledge_lore_transfiguration_planning_title: "La búsqueda de una nueva tradición de la Casa" #NT!
+ seek_knowledge_lore_transfiguration_planning_desc: "Me he preparado lo mejor que he podido, pero los puntos más finos de este Conocimiento aún se me escapan.\n\nSi quiero dominar este Conocimiento por completo, realmente debo convencer a mi "maestro" de que me revele sus preciosos secretos." #NT!
+ seek_knowledge_lore_transfiguration_planning_confirm: "$POD_journey_planning_confirm_default$" #NT!
+ seek_knowledge_lore_transfiguration_planning_decline: "$POD_journey_planning_decline_default$" #NT!
+ seek_knowledge_lore_transfiguration_travel_title: "$POD_journey_travel_title_seek_knowledge$" #NT!
+ seek_knowledge_lore_transfiguration_travel_desc: "Este viaje me acercará a mi antiguo poder celestial, injustamente robado." #NT!
+ seek_knowledge_lore_transfiguration_travel_confirm: "$POD_journey_travel_confirm_seek_knowledge$" #NT!
+ seek_knowledge_lore_beast_name: "Aprende la tradición de la casa (bestia) de" #NT!
+ seek_knowledge_lore_beast_desc: "Aprende la tradición de la Casa Bestia, controlando y manipulando animales mediante posesión, conexiones mentales y remodelación literal." #NT!
+ seek_knowledge_lore_beast_effects: "Comenzarás el largo proceso de aprendizaje de una nueva Casa Lore." #NT!
+ seek_knowledge_lore_beast_tt: "Llámame Señor de las Bestias." #NT!
+ seek_knowledge_lore_beast_planning_title: "La búsqueda de una nueva tradición de la Casa" #NT!
+ seek_knowledge_lore_beast_planning_desc: "Me he preparado lo mejor que he podido, pero los puntos más finos de este Conocimiento aún se me escapan.\n\nSi quiero dominar este Conocimiento por completo, realmente debo convencer a mi "maestro" de que me revele sus preciosos secretos." #NT!
+ seek_knowledge_lore_beast_planning_confirm: "$POD_journey_planning_confirm_default$" #NT!
+ seek_knowledge_lore_beast_planning_decline: "$POD_journey_planning_decline_default$" #NT!
+ seek_knowledge_lore_beast_travel_title: "$POD_journey_travel_title_seek_knowledge$" #NT!
+ seek_knowledge_lore_beast_travel_desc: "Este viaje me acercará a mi antiguo poder celestial, injustamente robado." #NT!
+ seek_knowledge_lore_beast_travel_confirm: "$POD_journey_travel_confirm_seek_knowledge$" #NT!
+ seek_knowledge_lore_flesh_name: "Aprende la tradición de la casa (carne) de" #NT!
+ seek_knowledge_lore_flesh_desc: "Aprende el Conocimiento de la Casa de la Carne, remodelando tus propios cuerpos carnales, o haciéndolo con otros." #NT!
+ seek_knowledge_lore_flesh_effects: "Comenzarás el largo proceso de aprendizaje de una nueva Casa Lore." #NT!
+ seek_knowledge_lore_flesh_tt: "Arcilla para moldear." #NT!
+ seek_knowledge_lore_flesh_planning_title: "La búsqueda de una nueva tradición de la Casa" #NT!
+ seek_knowledge_lore_flesh_planning_desc: "Me he preparado lo mejor que he podido, pero los puntos más finos de este Conocimiento aún se me escapan.\n\nSi quiero dominar este Conocimiento por completo, realmente debo convencer a mi "maestro" de que me revele sus preciosos secretos." #NT!
+ seek_knowledge_lore_flesh_planning_confirm: "$POD_journey_planning_confirm_default$" #NT!
+ seek_knowledge_lore_flesh_planning_decline: "$POD_journey_planning_decline_default$" #NT!
+ seek_knowledge_lore_flesh_travel_title: "$POD_journey_travel_title_seek_knowledge$" #NT!
+ seek_knowledge_lore_flesh_travel_desc: "Este viaje me acercará a mi antiguo poder celestial, injustamente robado." #NT!
+ seek_knowledge_lore_flesh_travel_confirm: "$POD_journey_travel_confirm_seek_knowledge$" #NT!
+ seek_knowledge_lore_wild_name: "Aprende la tradición de la casa (salvaje) desde" #NT!
+ seek_knowledge_lore_wild_desc: "Aprende el conocimiento de la Casa Salvaje, domina la flora y otorga a las plantas habilidades que normalmente no tienen." #NT!
+ seek_knowledge_lore_wild_effects: "Comenzarás el largo proceso de aprendizaje de una nueva Casa Lore." #NT!
+ seek_knowledge_lore_wild_tt: "Una jungla mortal de mi propia creación." #NT!
+ seek_knowledge_lore_wild_planning_title: "La búsqueda de una nueva tradición de la Casa" #NT!
+ seek_knowledge_lore_wild_planning_desc: "Me he preparado lo mejor que he podido, pero los puntos más finos de este Conocimiento aún se me escapan.\n\nSi quiero dominar este Conocimiento por completo, realmente debo convencer a mi "maestro" de que me revele sus preciosos secretos." #NT!
+ seek_knowledge_lore_wild_planning_confirm: "$POD_journey_planning_confirm_default$" #NT!
+ seek_knowledge_lore_wild_planning_decline: "$POD_journey_planning_decline_default$" #NT!
+ seek_knowledge_lore_wild_travel_title: "$POD_journey_travel_title_seek_knowledge$" #NT!
+ seek_knowledge_lore_wild_travel_desc: "Este viaje me acercará a mi antiguo poder celestial, injustamente robado." #NT!
+ seek_knowledge_lore_wild_travel_confirm: "$POD_journey_travel_confirm_seek_knowledge$" #NT!
+ seek_knowledge_lore_death_name: "Aprende la tradición de la casa (Muerte) de" #NT!
+ seek_knowledge_lore_death_desc: "Aprende el Conocimiento de la Casa de la Muerte, que inflige decadencia tanto física como espiritual, para conocer la muerte y gobernar los cuerpos de los muertos." #NT!
+ seek_knowledge_lore_death_effects: "Comenzarás el largo proceso de aprendizaje de una nueva Casa Lore." #NT!
+ seek_knowledge_lore_death_tt: "Hécate y Hades me miran con envidia." #NT!
+ seek_knowledge_lore_death_planning_title: "La búsqueda de una nueva tradición de la Casa" #NT!
+ seek_knowledge_lore_death_planning_desc: "Me he preparado lo mejor que he podido, pero los puntos más finos de este Conocimiento aún se me escapan.\n\nSi quiero dominar este Conocimiento por completo, realmente debo convencer a mi "maestro" de que me revele sus preciosos secretos." #NT!
+ seek_knowledge_lore_death_planning_confirm: "$POD_journey_planning_confirm_default$" #NT!
+ seek_knowledge_lore_death_planning_decline: "$POD_journey_planning_decline_default$" #NT!
+ seek_knowledge_lore_death_travel_title: "$POD_journey_travel_title_seek_knowledge$" #NT!
+ seek_knowledge_lore_death_travel_desc: "Este viaje me acercará a mi antiguo poder celestial, injustamente robado." #NT!
+ seek_knowledge_lore_death_travel_confirm: "$POD_journey_travel_confirm_seek_knowledge$" #NT!
+ seek_knowledge_lore_spirit_name: "Aprende la tradición de la casa (espíritu) de" #NT!
+ seek_knowledge_lore_spirit_desc: "Aprende la tradición de la Casa del Espíritu, controlando y guiando las almas." #NT!
+ seek_knowledge_lore_spirit_effects: "Comenzarás el largo proceso de aprendizaje de una nueva Casa Lore." #NT!
+ seek_knowledge_lore_spirit_tt: "Un Caronte ascendido en formación." #NT!
+ seek_knowledge_lore_spirit_planning_title: "La búsqueda de una nueva tradición de la Casa" #NT!
+ seek_knowledge_lore_spirit_planning_desc: "Me he preparado lo mejor que he podido, pero los puntos más finos de este Conocimiento aún se me escapan.\n\nSi quiero dominar este Conocimiento por completo, realmente debo convencer a mi "maestro" de que me revele sus preciosos secretos." #NT!
+ seek_knowledge_lore_spirit_planning_confirm: "$POD_journey_planning_confirm_default$" #NT!
+ seek_knowledge_lore_spirit_planning_decline: "$POD_journey_planning_decline_default$" #NT!
+ seek_knowledge_lore_spirit_travel_title: "$POD_journey_travel_title_seek_knowledge$" #NT!
+ seek_knowledge_lore_spirit_travel_desc: "Este viaje me acercará a mi antiguo poder celestial, injustamente robado." #NT!
+ seek_knowledge_lore_spirit_travel_confirm: "$POD_journey_travel_confirm_seek_knowledge$" #NT!
+ seek_knowledge_lore_realms_name: "Aprende la tradición de las casas (reinos) desde" #NT!
+ seek_knowledge_lore_realms_desc: "Aprende el conocimiento de las Casas de los Reinos, entrando y saliendo de las Tierras Sombrías, el reino de los muertos." #NT!
+ seek_knowledge_lore_realms_effects: "Comenzarás el largo proceso de aprendizaje de una nueva Casa Lore." #NT!
+ seek_knowledge_lore_realms_tt: "Mi clave para superar a Cerberus." #NT!
+ seek_knowledge_lore_realms_planning_title: "La búsqueda de una nueva tradición de la Casa" #NT!
+ seek_knowledge_lore_realms_planning_desc: "Me he preparado lo mejor que he podido, pero los puntos más finos de este Conocimiento aún se me escapan.\n\nSi quiero dominar este Conocimiento por completo, realmente debo convencer a mi "maestro" de que me revele sus preciosos secretos." #NT!
+ seek_knowledge_lore_realms_planning_confirm: "$POD_journey_planning_confirm_default$" #NT!
+ seek_knowledge_lore_realms_planning_decline: "$POD_journey_planning_decline_default$" #NT!
+ seek_knowledge_lore_realms_travel_title: "$POD_journey_travel_title_seek_knowledge$" #NT!
+ seek_knowledge_lore_realms_travel_desc: "Este viaje me acercará a mi antiguo poder celestial, injustamente robado." #NT!
+ seek_knowledge_lore_realms_travel_confirm: "$POD_journey_travel_confirm_seek_knowledge$" #NT!
+  
+ seek_knowledge_thaumaturgy_name: "Aprende [GetTrait('bloodsorcery').GetName(GetNullCharacter)] (Taumaturgia)" #NT!
+ seek_knowledge_thaumaturgy_desc: "[GetTrait('bloodsorcery').GetName(GetNullCharacter)] es un misterioso [discipline|E] que se asocia más comúnmente con el [GetTrait('tremere').GetName(GetNullCharacter)], pero que practican varios [Clans|E] diferentes. Permite al practicante usar su sangre para una amplia gama de rituales mágicos: concentrar la mente, mejorar los ejércitos, maldecir a los enemigos... y muchos más.\nLos taumaturgos suelen tener una reputación aterradora que utilizan a su favor. A sus enemigos les resulta difícil calcular correctamente qué esperar de un conflicto directo. Los no iniciados tienen poca idea del alcance y la magnitud del poder que puede poseer un taumaturgo y, a veces, su imaginación les gana." #NT!
+ seek_knowledge_thaumaturgy_effects: "Aprenderás la ubicación de un maestro que conoce [GetTrait('bloodsorcery').GetName(GetNullCharacter)]. Después de viajar allí, puedes adquirir [discipline|E] [trait|E]. No solo te permite desbloquear [perks|E] en [GetTrait('bloodsorcery').GetName(GetNullCharacter)] [lifestyle|E], sino que también desbloquea [blood_sorcery|E] [character_interaction|E], que te permite lanzar varios hechizos beneficiosos y dañinos." #NT!
+ seek_knowledge_thaumaturgy_tt: "Desbloquearé los secretos más profundos de la vida." #NT!
+ seek_knowledge_thaumaturgy_planning_title: "La búsqueda de la taumaturgia" #NT!
+ seek_knowledge_thaumaturgy_planning_desc: "He despertado mi sangre y me he preparado lo mejor que he podido, pero los puntos más finos de [GetTrait('bloodsorcery').GetName(GetNullCharacter)] todavía se me escapan.\n\nSi quiero dominar este [discipline|E] por completo, necesitaré un maestro.\n\nPor suerte, mis exploradores me han dicho dónde se puede encontrar a esa persona." #NT!
+ seek_knowledge_thaumaturgy_planning_confirm: "$POD_journey_planning_confirm_default$" #NT!
+ seek_knowledge_thaumaturgy_planning_decline: "$POD_journey_planning_decline_default$" #NT!
+ seek_knowledge_thaumaturgy_travel_title: "$POD_journey_travel_title_seek_knowledge$" #NT!
+ seek_knowledge_thaumaturgy_travel_desc: "Estoy emocionado por tener la oportunidad de aprender [GetTrait('bloodsorcery').GetName(GetNullCharacter)]. Sus secretos se guardan celosamente por una razón. Una vez que los desbloquee, no hay forma de saber de qué seré capaz.\nSe dice que la verdadera fuerza de un taumaturgo es la disciplina para prepararse para posibilidades peligrosas y usar rituales que a primera vista podrían no parecer poderosos. Un buen taumaturgo viene listo para todo tipo de situaciones y puede desatar las fuerzas que ha reunido en caso de una emergencia. Los taumaturgos de mentalidad marcial comparan sus preparativos con asegurarse de tener munición adicional en caso de que la batalla salga mal." #NT!
+ seek_knowledge_thaumaturgy_travel_confirm: "$POD_journey_travel_confirm_seek_knowledge$" #NT!
+ seek_knowledge_dur_an_ki_name: "Aprende [GetTrait('bloodsorcery').GetName(GetNullCharacter)] (Dur-An-Ki)" #NT!
+ seek_knowledge_dur_an_ki_desc: "La hechicería Assamita comenzó en la Segunda Ciudad cuando los magos mortales fueron Abrazados en el Clan con la promesa de poder y vida eterna. Estos Hechiceros no muertos actuaron como interrogadores y cazadores de demonios durante las guerras contra los Baali. Después de la caída de la Segunda Ciudad, los Hechiceros fueron utilizados para facilitar la comunicación mágica a grandes distancias, manteniendo al Clan unificado y organizado. Además, utilizaron sus artes para proteger el rebaño que cultivaba el Clan. Nutrieron los cultivos que sustentaban al rebaño y continuaron atacando a las fuerzas que amenazaban al Clan. Posteriormente, estos Hechiceros han volcado sus talentos en las artes de Dur-An-Ki (que en sumerio significa "Maestro del Cielo y la Tierra") para ayudarlos en su causa. Una forma de magia que se originó en la antigua Mesopotamia, ha crecido a lo largo de los milenios para incorporar los elementos de numerosos mitos y religiones de todo el Medio Oriente. Fundamentalmente, Dur-An-Ki permite que se establezcan pactos entre espíritus y hechiceros (conocidos como ashipu)." #NT!
+ seek_knowledge_dur_an_ki_effects: "Aprenderás la ubicación de un maestro que conoce [GetTrait('bloodsorcery').GetName(GetNullCharacter)]. Después de viajar allí, puedes adquirir [discipline|E] [trait|E]. No solo te permite desbloquear [perks|E] en [GetTrait('bloodsorcery').GetName(GetNullCharacter)] [lifestyle|E], sino que también desbloquea [blood_sorcery|E] [character_interaction|E], que te permite lanzar varios hechizos beneficiosos y dañinos." #NT!
+ seek_knowledge_dur_an_ki_tt: "Desbloquearé los secretos más profundos de la vida." #NT!
+ seek_knowledge_dur_an_ki_planning_title: "La búsqueda de Dur-An-Ki" #NT!
+ seek_knowledge_dur_an_ki_planning_desc: "He despertado mi sangre y me he preparado lo mejor que he podido, pero los puntos más finos de [GetTrait('bloodsorcery').GetName(GetNullCharacter)] todavía se me escapan.\n\nSi quiero dominar este [discipline|E] por completo, necesitaré un maestro.\n\nPor suerte, mis exploradores me han dicho dónde se puede encontrar a esa persona." #NT!
+ seek_knowledge_dur_an_ki_planning_confirm: "$POD_journey_planning_confirm_default$" #NT!
+ seek_knowledge_dur_an_ki_planning_decline: "$POD_journey_planning_decline_default$" #NT!
+ seek_knowledge_dur_an_ki_travel_title: "$POD_journey_travel_title_seek_knowledge$" #NT!
+ seek_knowledge_dur_an_ki_travel_desc: "Mientras que las características distintivas de la taumaturgia son su orden y precisión científica, la hechicería assamita es mucho menos rígida. Extrae su inspiración y forma de numerosas fuentes culturales y experimentos realizados a lo largo de muchos siglos: el hinduismo, las epopeyas heroicas, el feng shui, la alquimia y la astronomía islámicas, la magia superior e inferior de Mesopotamia y los ritos persas de Mitra, por nombrar solo algunos. En el caso de cada rito que lanza un hechicero, la ruta que sigue para completarlo se compone de una serie de hitos. Sin embargo, el orden y la manera en que se cumplen es diferente de un hechicero a otro, dependiendo de la fuente cultural a la que recurra para caracterizar sus prácticas." #NT!
+ seek_knowledge_dur_an_ki_travel_confirm: "$POD_journey_travel_confirm_seek_knowledge$" #NT!
+  
+ seek_knowledge_akhu_name: "Aprende [GetTrait('bloodsorcery').GetName(GetNullCharacter)] (Akhu)" #NT!
+ seek_knowledge_akhu_desc: "La hechicería setita es un fenómeno mágico curioso. Tiene elementos de todo el espectro mágico, aunque su implementación tiene un formato principalmente ritualista y religioso. Dicho esto, "hechicería setita" es un nombre un tanto inapropiado. El término implica una práctica singular, pero sería más apropiado decir hechicerías setitas, ya que en realidad es una colección de diferentes prácticas de los seguidores de Set en todo el mundo. En el apogeo de Egipto, antes de su conversión al cristianismo a manos del Imperio romano, la magia era algo común, practicada por mortales y vampiros por igual. Los egipcios tenían varias palabras para la magia; los setitas usaban Heka (literalmente "magia") para referirse a la magia mortal, y Ahku ("hechizos"") para su magia de sangre. Esta sigue siendo la variante más conocida de la "hechicería setita" hasta la fecha." #NT!
+  
+ seek_knowledge_akhu_effects: "Aprenderás la ubicación de un maestro que conoce [GetTrait('bloodsorcery').GetName(GetNullCharacter)]. Después de viajar allí, puedes adquirir [discipline|E] [trait|E]. No solo te permite desbloquear [perks|E] en [GetTrait('bloodsorcery').GetName(GetNullCharacter)] [lifestyle|E], sino que también desbloquea [blood_sorcery|E] [character_interaction|E], que te permite lanzar varios hechizos beneficiosos y dañinos." #NT!
+ seek_knowledge_akhu_tt: "Desbloquearé los secretos más profundos de la vida." #NT!
+ seek_knowledge_akhu_planning_title: "La búsqueda de Akhu" #NT!
+ seek_knowledge_akhu_planning_desc: "He despertado mi sangre y me he preparado lo mejor que he podido, pero los puntos más finos de [GetTrait('bloodsorcery').GetName(GetNullCharacter)] todavía se me escapan.\n\nSi quiero dominar este [discipline|E] por completo, necesitaré un maestro.\n\nPor suerte, mis exploradores me han dicho dónde se puede encontrar a esa persona." #NT!
+ seek_knowledge_akhu_planning_confirm: "$POD_journey_planning_confirm_default$" #NT!
+ seek_knowledge_akhu_planning_decline: "$POD_journey_planning_decline_default$" #NT!
+ seek_knowledge_akhu_travel_title: "$POD_journey_travel_title_seek_knowledge$" #NT!
+ seek_knowledge_akhu_travel_desc: "Akhu, la escuela de hechicería setita más practicada, se parece a la antigua religión egipcia. El dios Set para los antiguos egipcios era, entre otras cosas, el dios de las tormentas. Por lo tanto, un practicante de Akhu erige un pararrayos simbólico a través del cual puede atraer un rayo de Set para impulsar sus ritos posteriores. Sin embargo, para atraer el favor de Set, debe hacer una ofrenda al Dios Oscuro que lo complacerá enormemente. La forma aceptada de lograr esto entre los practicantes de Akhu (conocidos como Sacerdotes Lectores) es seguir las instrucciones establecidas por el propio Set en El libro de la salida nocturna." #NT!
+ seek_knowledge_akhu_travel_confirm: "$POD_journey_travel_confirm_seek_knowledge$" #NT!
+  
+ seek_knowledge_sadhana_name: "Aprende [GetTrait('bloodsorcery').GetName(GetNullCharacter)] (Sadhana) #R (W.I.P)#!" #NT!
+ seek_knowledge_sadhana_desc: "Al llegar a la India, los seguidores de Set encontraron elementos de la religión hindú que podían aprovechar para convertir a los Vástagos a su causa. Los practicantes de la Sadhana provienen predominantemente de las filas del linaje Setita conocido como Daitya. Estos Setitas siguen a Shiva, que se deriva del dios Rudra, una deidad de la tormenta, y por lo tanto se lo identifica como una máscara de Set. Creyéndose demonios encarnados, los Setitas indios consideran que su misión es derrocar a los dioses y tomar su poder para sí mismos." #NT!
+ seek_knowledge_sadhana_effects: "Aprenderás la ubicación de un maestro que conoce [GetTrait('bloodsorcery').GetName(GetNullCharacter)]. Después de viajar allí, puedes adquirir [discipline|E] [trait|E]. No solo te permite desbloquear [perks|E] en [GetTrait('bloodsorcery').GetName(GetNullCharacter)] [lifestyle|E], sino que también desbloquea [blood_sorcery|E] [character_interaction|E], que te permite lanzar varios hechizos beneficiosos y dañinos." #NT!
+ seek_knowledge_sadhana_tt: "Desbloquearé los secretos más profundos de la vida." #NT!
+ seek_knowledge_sadhana_planning_title: "La búsqueda de la sadhana" #NT!
+ seek_knowledge_sadhana_planning_desc: "He despertado mi sangre y me he preparado lo mejor que he podido, pero los puntos más finos de [GetTrait('bloodsorcery').GetName(GetNullCharacter)] todavía se me escapan.\n\nSi quiero dominar este [discipline|E] por completo, necesitaré un maestro.\n\nPor suerte, mis exploradores me han dicho dónde se puede encontrar a esa persona." #NT!
+ seek_knowledge_sadhana_planning_confirm: "$POD_journey_planning_confirm_default$" #NT!
+ seek_knowledge_sadhana_planning_decline: "$POD_journey_planning_decline_default$" #NT!
+ seek_knowledge_sadhana_travel_title: "$POD_journey_travel_title_seek_knowledge$" #NT!
+ seek_knowledge_sadhana_travel_desc: "Sadhana es el ejercicio de la mente sobre la materia. Si bien se podría argumentar que su poder proviene de adentro y no de ser canalizado por el Dios Oscuro, es su fe y devoción a Shiva lo que les otorga el enfoque que les permite dirigir este poder. Sin esto, se argumenta, simplemente se perderían en la meditación. Sin Shiva, no tendrían poder y, por lo tanto, todo es atribuible al Dios Oscuro al final." #NT!
+ seek_knowledge_sadhana_travel_confirm: "$POD_journey_travel_confirm_seek_knowledge$" #NT!
+  
+ seek_knowledge_koldunic_name: "Aprende [GetTrait('bloodsorcery').GetName(GetNullCharacter)] (Koldunic)" #NT!
+ seek_knowledge_koldunic_desc: "Los koldun Tzimisce afirman haber practicado la magia antes que los demás. La hechicería koldúnica se basa en el elementalismo primigenio, esclavizando a los espíritus débiles o haciendo tratos con los más fuertes. El más importante de estos espíritus elementales es la entidad de los Cárpatos Kupala, llamada “la raíz de todo” por los koldun más antiguos. Las relaciones continuas con esta criatura han causado dificultades significativas, ya que el tráfico con espíritus está a un pelo del infernalismo." #NT!
+ seek_knowledge_koldunic_effects: "Aprenderás la ubicación de un maestro que conoce [GetTrait('bloodsorcery').GetName(GetNullCharacter)]. Después de viajar allí, puedes adquirir [discipline|E] [trait|E]. No solo te permite desbloquear [perks|E] en [GetTrait('bloodsorcery').GetName(GetNullCharacter)] [lifestyle|E], sino que también desbloquea [blood_sorcery|E] [character_interaction|E], que te permite lanzar varios hechizos beneficiosos y dañinos." #NT!
+ seek_knowledge_koldunic_tt: "Desbloquearé los secretos más profundos de la vida." #NT!
+ seek_knowledge_koldunic_planning_title: "La búsqueda de la hechicería koldúnica" #NT!
+ seek_knowledge_koldunic_planning_desc: "He despertado mi sangre y me he preparado lo mejor que he podido, pero los puntos más finos de [GetTrait('bloodsorcery').GetName(GetNullCharacter)] todavía se me escapan.\n\nSi quiero dominar este [discipline|E] por completo, necesitaré un maestro.\n\nPor suerte, mis exploradores me han dicho dónde se puede encontrar a esa persona." #NT!
+ seek_knowledge_koldunic_planning_confirm: "$POD_journey_planning_confirm_default$" #NT!
+ seek_knowledge_koldunic_planning_decline: "$POD_journey_planning_decline_default$" #NT!
+ seek_knowledge_koldunic_travel_title: "$POD_journey_travel_title_seek_knowledge$" #NT!
+ seek_knowledge_koldunic_travel_desc: "La hechicería koldúnica es similar a la taumaturgia en su idea, pero muy diferente en la práctica. Las principales diferencias incluyen que la hechicería koldúnica requiere el servicio de los espíritus de la naturaleza en lugar de ritos y rituales memorizados, el koldunismo tiende a ser mucho más sutil que la taumaturgia en niveles inferiores, y el koldunismo no requiere tanto una extensión de la voluntad como ser un maestro del mismo material que un Demonio desea manipular." #NT!
+ seek_knowledge_koldunic_travel_confirm: "$POD_journey_travel_confirm_seek_knowledge$" #NT!
+  
+ seek_knowledge_abyssal_mysticism_name: "Aprende [GetTrait('obtenebration').GetName(GetNullCharacter)] (Misticismo abisal)" #NT!
+ seek_knowledge_abyssal_mysticism_desc: "Inmersos en el estudio eterno de una fuerza que trasciende y, en última instancia, se opone a toda luz y vida, los Místicos del Abismo tienen poco uso para la humanidad o los preceptos mortales del bien y el mal. Los místicos del Clan Lasombra hurgan en los lugares oscuros en busca de secretos, respuestas y tal vez más preguntas. Para estas almas impulsadas, la Obtenebración convencional es solo el comienzo. Al aplicar principios taumatúrgicos a la Obtenebración, los místicos Lasombra de la Edad Oscura desarrollaron rituales para desbloquear los poderes ocultos de la sombra e invocar los horrores primordiales sin nombre del Abismo, ampliando así de manera efectiva la Obtenebración a una forma de hechicería de sangre." #NT!
+ seek_knowledge_abyssal_mysticism_effects: "Aprenderás la ubicación de un maestro que conoce el misticismo abisal. Después de viajar allí, podrás adquirir el [discipline|E] [trait|E]. No solo te permite desbloquear el [perks|E] en el [GetTrait('bloodsorcery').GetName(GetNullCharacter)] [lifestyle|E], sino que también desbloquea el [blood_sorcery|E] [character_interaction|E], que te permite lanzar varios hechizos beneficiosos y dañinos." #NT!
+ seek_knowledge_abyssal_mysticism_tt: "Desbloquearé los secretos más profundos de la vida." #NT!
+ seek_knowledge_abyssal_mysticism_planning_title: "La búsqueda del misticismo abisal" #NT!
+ seek_knowledge_abyssal_mysticism_planning_desc: "He despertado mi sangre y me he preparado lo mejor que he podido, pero los puntos más finos del Misticismo Abisal todavía se me escapan.\n\nSi quiero dominar este [discipline|E] por completo, necesitaré un maestro.\n\nAfortunadamente, mis exploradores me han dicho dónde se puede encontrar a esa persona." #NT!
+ seek_knowledge_abyssal_mysticism_planning_confirm: "$POD_journey_planning_confirm_default$" #NT!
+ seek_knowledge_abyssal_mysticism_planning_decline: "$POD_journey_planning_decline_default$" #NT!
+ seek_knowledge_abyssal_mysticism_travel_title: "$POD_journey_travel_title_seek_knowledge$" #NT!
+ seek_knowledge_abyssal_mysticism_travel_desc: "La magia abisal invoca espíritus de otra dimensión, que se asemeja a una forma de purgatorio oscuro. Estos practicantes esclavizan y controlan a los espíritus, pero esos espíritus no se parecen a nada de la creación y parecen no tener memoria ni asociación con entidades demoníacas verdaderas." #NT!
+ seek_knowledge_abyssal_mysticism_travel_confirm: "$POD_journey_travel_confirm_seek_knowledge$" #NT!
+  
+ azhi_dahaka_1_name: "Beca de Azhi Dahaka" #NT!
+ azhi_dahaka_1_desc: "Llegar a ser Azhi Dahaka (o incluso comprenderlo) no es una tarea fácil. Primero debes aprender de los logros y errores de tus predecesores para reducir los riesgos de fracasar." #NT!
+ azhi_dahaka_1_effects: "Te esconderás en busca de menciones de Azhi Dahaka con la esperanza de encontrar un camino hacia la Verdadera Metamorfosis." #NT!
+ azhi_dahaka_1_tt: "Cambio eterno." #NT!
+ azhi_dahaka_1_planning_title: "Beca de Azhi Dahaka" #NT!
+ azhi_dahaka_1_planning_desc: "Solo puedo dedicarle un tiempo limitado a la búsqueda de Azhi Dahaka; el estancamiento nunca será el camino a seguir. Necesito evaluar mi progreso actual desde otra perspectiva." #NT!
+ azhi_dahaka_1_planning_confirm: "$POD_journey_planning_confirm_default$" #NT!
+ azhi_dahaka_1_planning_decline: "$POD_journey_planning_decline_default$" #NT!
+ azhi_dahaka_1_travel_title: "Beca de Azhi Dahaka" #NT!
+ azhi_dahaka_1_travel_desc: "¿Qué aprendí esta vez?" #NT!
+ azhi_dahaka_1_travel_confirm: "Vamos a averiguarlo" #NT!
+  
+ azhi_dahaka_2_name: "Ritual de Azhi Dahaka" #NT!
+ azhi_dahaka_2_desc: "Para convertirse en el dragón del cambio eterno, uno debe reinventarse en cuerpo y mente. Has preparado el más grandioso de los rituales para despojarte de tu forma actual y renacer como un verdadero modelo de Metamorfosis." #NT!
+ azhi_dahaka_2_effects: "Comenzarás a reunir materiales y a preparar un ritual para lograr (tu versión de) Azhi Dahaka." #NT!
+ azhi_dahaka_2_tt: "El dragón primordial ruge." #NT!
+ azhi_dahaka_2_planning_title: "Ritual de Azhi Dahaka" #NT!
+ azhi_dahaka_2_planning_desc: "El ritual está listo. Es hora de avanzar y encontrar el corazón palpitante del dragón, donde el caos y la eternidad se encuentran... y luego beber de él." #NT!
+ azhi_dahaka_2_planning_confirm: "$POD_journey_planning_confirm_default$" #NT!
+ azhi_dahaka_2_planning_decline: "$POD_journey_planning_decline_default$" #NT!
+ azhi_dahaka_2_travel_title: "Ritual de Azhi Dahaka" #NT!
+ azhi_dahaka_2_travel_desc: "Estoy en el epicentro de esta vorágine." #NT!
+ azhi_dahaka_2_travel_confirm: "El dragón me espera." #NT!
+  
+ hunt_for_sargon_codex_shard_name: "Búsqueda de fragmentos del Códice Sargón" #NT!
+ hunt_for_sargon_codex_shard_desc: "El Códice Sargón es una tablilla de arcilla escrita por Cappadocius durante sus años mortales. Después de su muerte, la pérdida de su Avatar provocó caos y destrucción en sus recuerdos. No podía recordar lo que había escrito ni dónde lo había dejado. Después de milenios, el Códice Sargón fue destruido y sus partes se esparcieron por todo el mundo. Si alguien lo restaurara, les aguardaría un inmenso poder." #NT!
+ hunt_for_sargon_codex_shard_effects: "Comenzarás a recopilar información sobre las posibles ubicaciones de los fragmentos del Códice Sargón." #NT!
+ hunt_for_sargon_codex_shard_tt: "La obra magna de un erudito sin igual." #NT!
+ hunt_for_sargon_codex_shard_isvalid: "$EFFECT_LIST_BULLET$Aún quedan fragmentos por descubrir." #NT!
+ hunt_for_sargon_codex_shard_planning_title: "Se descubrió un fragmento" #NT!
+ hunt_for_sargon_codex_shard_planning_desc: "Mis exploradores finalmente han regresado a mí con buenas noticias: la ubicación general de una de las piezas del Códice de Sargón.\n\nAhora que sé a dónde ir, puedo liberarlo.\n\nCon la fuerza, si es necesario." #NT!
+ hunt_for_sargon_codex_shard_planning_confirm: "$POD_journey_planning_confirm_default$" #NT!
+ hunt_for_sargon_codex_shard_planning_decline: "$POD_journey_planning_decline_default$" #NT!
+ hunt_for_sargon_codex_shard_travel_title: "En busca del conocimiento" #NT!
+ hunt_for_sargon_codex_shard_travel_desc: "El Códice Sargón se dispersó por los cuatro vientos hace mucho tiempo. Reunir todas las piezas será una tarea inmensa. Sin embargo, para un buscador de conocimiento, el premio final hace que todos los esfuerzos valgan la pena." #NT!
+ hunt_for_sargon_codex_shard_travel_confirm: "Capadocia seguramente bendecirá este esfuerzo." #NT!
+  

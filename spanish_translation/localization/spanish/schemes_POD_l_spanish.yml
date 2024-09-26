@@ -121,12 +121,14 @@
  diablerize_interaction: "[diablerize|E] #weak (Conjura)#!"
  diablerize_desc: "¡Voy a [diablerize|E] a [SCHEME.GetTarget.GetShortUINameNoTooltip] y devoraré su alma!"
  diablerize_desc_general: "La $diablerie$ es un [hostile_scheme|E] para matar a un objetivo [GetTrait('vampire').GetName( GetNullCharacter )] y devorar toda su sangre y alma. Es un [secret_scheme|E] basado en [intrigue|E], que puede reclutar [agents|E].\n\nUna [diablerie|E] exitosa resultará en la [character_death_death|E] del [scheme_target|E]. \n\nUn asesinato que permanezca en secreto le dará al [scheme_owner|E] un [diablerie|E] [secret|E].\n\nSer descubierto intentando [diablerize|E], o diablerizando con éxito a un [GetTrait('vampire').GetName( GetNullCharacter )] es un grave [crime|E] para la mayoría de las [GetTrait('vampire').GetName( GetNullCharacter )] creencias. También llamado 'Amaranto' en honor a la primera víctima de la [diablerie|E], este es el proceso en el cual un [GetTrait('vampire').GetName( GetNullCharacter )] drena a otro [GetTrait('vampire').GetName( GetNullCharacter )] de toda su sangre, incluyendo su alma. Esto permite al [diablerist|E] ganar [bloodpotency|E] e incluso una menor [vampgeneration|E] de su víctima. A menudo tiene un alto precio al fortalecer a la [beast|E] de un [GetTrait('vampire').GetName( GetNullCharacter )]. Representamos esto perdiendo niveles de [piety|E]. La mayoría de los [GetTrait('vampire').GetName( GetNullCharacter )] tienen una mala opinión de #TOOLTIP:GAME_TRAIT,diablerist,[GetNullCharacter] #L Diableristas#!#!."
- scheme_interaction_tt_diablerize_approved: "[diablerize|E] [recipient.GetFirstName]." #NT!
+ scheme_interaction_tt_diablerize_approved: "[diablerize|E] [recipient.GetFirstName]."
  DIABLERIZE_SUCCESS_DESC: "¡La sangre y el alma de [TARGET_CHARACTER.GetShortUIName] serán tuyas!"
  DIABLERIZE_DISCOVERY_DESC: "@warning_icon! Estás expuesto al [crime|E] de la [diablerie|E]"
  diablerize_my_intrigue: "Tu Intriga: $VALUE|=+0$"
  diablerize_my_rival: "Tu víctima: $VALUE|=+0$"
  I_CAN_ONLY_PLOT_ONE_DIABLERIE_AT_A_TIME_TRIGGER: "[TARGET_CHARACTER.GetShortUIName|U] solo puede intentar una [diablerie|E] a la vez."
+ SCHEME_DIABLERIZE_COUPLE: "Socio de Diablerize" #NT!
+ diablerize_partner_opinion: "Socio de Diablerize" #NT!
   
  blood_surge: "Oleada de sangre"
  blood_surge_action: "Oleada de sangre"
@@ -264,7 +266,6 @@
  PODsoulbond_my_intrigue: "Tu Intriga: $VALUE|=+0$"
  PODsoulbond_my_rival: "Tu víctima: $VALUE|=+0$"
  scheme_interaction_tt_PODsoulbond_approved: "[recipient.GetFirstName] recibirá un grillete de alma."
- PODsoulbond_success_toast: "¡Éxito!"
   
  PODspirit_eating: "Devorando espíritus"
  PODspirit_eating_action: "Comer con espíritu"
@@ -296,17 +297,6 @@
  infernalize_scheme_my_intrigue: "Tu diplomacia: $VALUE|=+0$"
  infernalize_scheme_my_rival: "Tu víctima: $VALUE|=+0$"
   
- PODrationalize: "Racionalizar la dominación"
- PODrationalize_action: "Dominar"
- POD_rationalize_interaction: "Racionalizar #weak (Conjura)#!"
- POD_rationalize_interaction_desc: "A través del [discipline|E] de dominar, invoca la sangre para obligar a un ser a racionalizar una decisión que tomas por él."
- PODrationalize_desc: "¡A través de la dominación, conseguiré engancharme a [SCHEME.GetTarget.GetShortUINameNoTooltip]!"
- PODrationalize_desc_general: "La conjura de racionalización es un [personal_scheme|E] que tiene como objetivo forzar la salida de un gancho de otro personaje."
- scheme_interaction_tt_POD_rationalize_approved: "Domina a [recipient.GetFirstName] para que racionalice un anzuelo para mí.\nEsto terminará con un duelo entre tu administración y [recipient.GetHerHis] Intriga."
- PODrationalize_SUCCESS_DESC: "¡Te engancharás en [TARGET_CHARACTER.GetShortUIName]!"
- PODrationalize_my_stewardship: "Su administración: $VALUE|=+0$"
- PODrationalize_my_rival: "Tu víctima: $VALUE|=+0$"
-  
  POD_discover_true_name: "Estudio del nombre verdadero"
  POD_discover_true_name_action: "Descubra el verdadero nombre de"
  POD_discover_true_name_desc: "Intentarás descubrir el verdadero nombre de tu objetivo."
@@ -315,7 +305,6 @@
  POD_discover_true_name_my_learning: "Tu aprendizaje: $VALUE|=+0$"
  POD_discover_true_name_my_rival: "Tu víctima: $VALUE|=+0$"
  scheme_interaction_tt_POD_discover_true_name_approved: "[recipient.GetFirstNamePossessive] se revelará el nombre verdadero."
- POD_discover_true_name_success_toast: "¡Éxito!"
  POD_discover_true_name_growing: "Tu conocimiento sobre el verdadero nombre del objetivo está mejorando."
  POD_discover_true_name_scheme_resistance_mult: "[GetScheme('POD_discover_true_name').GetTypeName] [scheme_resistance|E]"
  POD_discover_true_name_scheme_power_mult: "[GetScheme('POD_discover_true_name').GetTypeName] [scheme_power|E]"
@@ -349,31 +338,26 @@
  PODenthrall_SUCCESS_DESC: "[TARGET_CHARACTER.GetShortUINamePossessive] [opinion|E] de ustedes aumentarán!"
  PODenthrall_my_diplomacy: "Tu diplomacia: $VALUE|=+0$"
  PODenthrall_my_rival: "Tu víctima: $VALUE|=+0$"
- PODenthrall_success_toast: "¡Éxito!"
   
  POD_command_effigy_gold_scheme: "Ganar dinero"
  POD_command_effigy_gold_scheme_action: "Busca el tesoro para"
  POD_command_effigy_gold_scheme_desc: "Tus efigies de criaturas intentarán encontrar oro para ti."
  POD_command_effigy_gold_scheme_desc_general: "El Earn Cash [scheme|E] es un [personal_scheme|E] que envía a tus efigies de criaturas a intentar encontrar tesoros para ti por varios medios. Este plan puede poner en peligro tu efigie de criatura y se acelera con tu habilidad [stewardship|E]. Como no es un [hostile_scheme|E], no es [secret_scheme_single|E] y no usa [agents|E]."
- POD_command_effigy_gold_scheme_SUCCESS_DESC: "Éxito"
   
  POD_command_effigy_prestige_scheme: "Difunde mi nombre"
  POD_command_effigy_prestige_scheme_action: "Difundir el nombre de"
  POD_command_effigy_prestige_scheme_desc: "Tus efigies de criaturas intentarán difundir la gloria de tu nombre."
  POD_command_effigy_prestige_scheme_desc_general: "Spread my Name [scheme|E] es un [personal_scheme|E] que envía tus efigies de criaturas para intentar ganar [prestige|E] para ti a través de varios medios. Este plan puede poner en peligro tu efigie de criatura y se acelera con tu habilidad [diplomacy|E]. Como no es un [hostile_scheme|E], no es [secret_scheme_single|E] y no usa [agents|E]."
- POD_command_effigy_prestige_scheme_SUCCESS_DESC: "Éxito"
   
  POD_command_effigy_piety_scheme: "Únete a mi causa"
  POD_command_effigy_piety_scheme_action: "Apoya la causa de"
  POD_command_effigy_piety_scheme_desc: "Tus efigies intentarán apoyar tu causa."
  POD_command_effigy_piety_scheme_desc_general: "Únete a mi causa [scheme|E] es un [personal_scheme|E] que envía tus efigies de criaturas para intentar ganar [piety|E] para ti por varios medios. Este plan puede poner en peligro tu efigie de criatura y se acelera con tu habilidad [learning|E]. Como no es un [hostile_scheme|E], no es [secret_scheme_single|E] y no usa [agents|E]."
- POD_command_effigy_piety_scheme_SUCCESS_DESC: "Éxito"
   
  POD_command_effigy_renown_scheme: "Ayuda a mi familia"
  POD_command_effigy_renown_scheme_action: "Fortalecer la familia de"
  POD_command_effigy_renown_scheme_desc: "Tus efigies intentarán fortalecer el nombre de tu familia."
  POD_command_effigy_renown_scheme_desc_general: "Ayuda a mi familia [scheme|E] es un [personal_scheme|E] que envía tus efigies de criaturas para intentar ganar [dynasty_prestige|E] para tu apellido por varios medios. Este plan puede poner en peligro tu efigie de criatura y se acelera con tu habilidad [diplomacy|E]. Como no es un [hostile_scheme|E], no es [secret_scheme_single|E] y no usa [agents|E]."
- POD_command_effigy_renown_scheme_SUCCESS_DESC: "Éxito"
   
  POD_command_effigy_lifestyle_scheme: "Aprende habilidades para mí"
  POD_command_effigy_lifestyle_scheme_action: "Aprenda habilidades para"
@@ -392,7 +376,6 @@
  PODenslave_SUCCESS_DESC: "[TARGET_CHARACTER.GetShortUINamePossessive] te dará un anzuelo!"
  PODenslave_my_learning: "Tu aprendizaje: $VALUE|=+0$"
  PODenslave_my_rival: "Tu víctima: $VALUE|=+0$"
- PODenslave_success_toast: "¡Éxito!"
   
  musing: "Reflexionando"
  musing_mortal: "Meditando"

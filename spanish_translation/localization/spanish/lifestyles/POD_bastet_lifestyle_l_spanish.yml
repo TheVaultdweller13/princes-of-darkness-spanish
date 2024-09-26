@@ -23,6 +23,10 @@
  jump_to_the_moon_perk_name: "saltar a la luna"
  withering_stare_perk_name: "Mirada fulminante"
   
+ PATHFINDERS_PRIDE_PERK_EFFECT: "#flavor Los gatos tienen un sentido de la orientación notablemente bueno. Con este don, un Bastet puede mejorar esa habilidad para encontrar la salida de la mayoría de los laberintos, desiertos o bosques. La gente digna puede aprender este don de los espíritus de las aves, pero ningún hombre gato lo admitirá voluntariamente en público#!" #NT!
+ SILENT_STALKING_PERK_EFFECT: "Comienza con [EmptyScope.ScriptValue('infiltration_small_perk_suspicion_offset')|V0] [suspicion_with_icon|E] durante [infiltration_missions|E].\n #flavor Este truco común permite que un Bastet se mueva sin hacer ruido. Incluso puede pasar sobre superficies que crujen o se mueven, como pisos de madera o ramas apiladas, sin hacer ruido. #!" #NT!
+ CHESHIRE_PRANK_PERK_EFFECT: "#flavor La emprendedora Bastet descubrió el secreto para desaparecer de la vista de todos. Pronto se convirtió en un truco valioso y popular. #!" #NT!
+ FORTUNA_PERK_EFFECT: "#flavor Los gatos aman a sus amigos y son famosos por su suerte. Este don les permite compartir parte de esa buena fortuna con los demás o incluso utilizar un poco de ella ellos mismos.#!" #NT!
  SHRIEK_PERK_EFFECT: "Otorga un modificador [GetModifier('shriek_perk_modifier').GetNameWithTooltip] al enemigo [knights|E] en la guerra como comandante o al enemigo en [single_combat_duel|E]."
  FREYJAS_BLESSING_PERK_EFFECT: "Como [character_interaction|E], te permite embarazar al objetivo."
  JUMP_TO_THE_MOON_PERK_EFFECT: "Progreso mensual de exploración de Umbra: [grace_i]#P +15#!"
@@ -37,8 +41,14 @@
  deny_the_hungry_perk_name: "Negar al hambriento"
  madness_perk_name: "Locura"
   
+ SWEET_HUNTERS_SMILE_PERK_EFFECT: "#flavor Este don infunde credibilidad y convicción intrínsecas en las palabras de un homínido, haciendo que suenen auténticas al oído y pesen en el corazón.#!" #NT!
+ CAT_CLAWS_PERK_EFFECT: "#flavor Al invocar su herencia, una Bastet en forma Homid o Sokto puede desenvainar sus garras y atacar como si estuviera en Crinos. #!" #NT!
+ EAVESDROPPERS_EAR_PERK_EFFECT: "Te permite usar el esquema de revelación [character_interaction|E].\n #flavor Los secretos son un bien importante, y quienes se esfuerzan por guardarlos pueden estar escondiendo algo peligroso. Este don fue desarrollado para erradicar a posibles traidores o conspiradores.#!" #NT!
+ BABELS_CURE_PERK_EFFECT: "#flavor Al ejercitar los poderes de Rahjah, una Bastet puede traducir cualquier idioma humano cercano.#!" #NT!
+ MONKEYS_UNCLE_PERK_EFFECT: "Opción adicional para cambiar de forma [character_interaction|E] que te permite cambiar de apariencia.\n #flavor El Bastet puede adoptar la apariencia exacta de cualquier otro humano, gran felino o Bastet.#!" #NT!
  DENY_THE_HUNGRY_PERK_EFFECT: "Como [character_interaction|E], te permite hacer que el condado objetivo gane [GetModifier( 'deny_the_hungry_perk_modifier' ).GetNameWithTooltip|L]."
  MADNESS_PERK_EFFECT: "Como [character_interaction|E], te permite hacer que el objetivo obtenga un rasgo mental negativo."
+ CRAFT_OF_THE_MAKER_PERK_EFFECT: "Ahora, financiar las inspiraciones para los artefactos o encargar uno es menos costoso.\n #flavor El lanzador puede dar forma a material que alguna vez estuvo vivo (¡pero no no muerto!) en una variedad de objetos al instante.#!" #NT!
   
  kittens_cry_perk_name: "El llanto del gatito"
  mark_as_mine_perk_name: "Marcar como mío"
@@ -49,6 +59,13 @@
  judgement_of_pestilence_perk_name: "Juicio de peste"
  revolt_of_the_land_perk_name: "Rebelión de la tierra"
   
+ KITTENS_CRY_PERK_EFFECT: "#flavor Este Don le otorga a la usuaria un tono tan patético que todo aquel que lo escucha hace todo lo posible por consolarla. La mayoría de las Bastet lo consideran un truco sucio pero útil. #!" #NT!
+ MARK_AS_MINE_PERK_EFFECT: "Desbloquea el [buy_artifact_claim_interaction|E].\n #flavor Al rociar un área o un objeto con su almizcle, una Bastet puede reclamarlo. Cualquier ser con inclinaciones mágicas lo reconocerá como una señal de "¡Prohibido el paso!".#!" #NT!
+ KILLERS_LEAP_PERK_EFFECT: "#flavor Las antiguas leyendas cuentan que Bastet saltaba sobre enemigos y cruzaba ríos sin mojarse los pies; este Don es una de las formas en que lo hacían.#!" #NT!
+ PERFECT_COVER_PERK_EFFECT: "#flavor Al rascar el lugar, rastro u objeto a ocultar, Bastet lo oculta a la vista normal y mágica.#!" #NT!
+ UNDERBELLY_PERK_EFFECT: "#flavor Al evaluar a un enemigo o un obstáculo, un Bastet puede hacerse una idea de su punto más débil.#!" #NT!
+ HAND_OF_WILL_PERK_EFFECT: "#flavor Al desear que las cosas se muevan, los Bastet pueden levantar objetos y abrir barreras con solo mirarlos. #!" #NT!
+ REVOLT_OF_THE_LAND_PERK_EFFECT: "#flavor Bastet llama a los espíritus del área circundante para que ataquen a los intrusos. El terreno responde lo mejor que puede: las rocas ruedan y se hacen añicos, las lianas se tropiezan y el agua succiona a las víctimas. Un avatar de la propia Gea enseña este Don.#!" #NT!
  JUDGEMENT_OF_PESTILENCE_PERK_EFFECT: "Como dos [character_interaction|E], te permite absorber una enfermedad y luego liberarla en la corte de un enemigo."
   
  sense_primal_nature_perk_name: "Sentir la naturaleza primordial"
@@ -60,6 +77,10 @@
  moon_sense_perk_name: "Sentido de la luna"
  wrath_of_nala_perk_name: "La ira de Nala"
   
+ SENSE_PRIMAL_NATURE_PERK_EFFECT: "#flavor Los Bastet pueden percibir las manifestaciones cercanas de la Tejedora, el Wyrm y lo Salvaje. Este Don implica un sentido místico, no una imagen visual u olfativa, aunque los Garou suelen describir las emanaciones espirituales de la Tejedora como una sensación de respirar aire estático, las emanaciones espirituales del Wyrm como un hedor y las emanaciones espirituales del Wyld como una vibración casi tangible.#!" #NT!
+ WHISKER_SIGHT_PERK_EFFECT: "#flavor Al estar en sintonía con su entorno, una mestiza Bastet puede percibir su entorno. Todo lo que esté a su alcance, incluso si está detrás de ella o es invisible, es evidente para todos sus sentidos. #!" #NT!
+ FIST_OF_CAHLASH_PERK_EFFECT: "#flavor La Bastet puede destruir cualquier cosa material con un gruñido. #!" #NT!
+ REDEEM_THE_WASTE_PERK_EFFECT: "#flavor Parte del papel de un métis es la salvación de la naturaleza despojada. Para ello, suele husmear, escarbar en la tierra, frotar su olor y orinar en varios lugares, básicamente reclamando el lugar como suyo. #!" #NT!
  BLINDING_MOONBEAM_GAZE_PERK_EFFECT: "Otorga un modificador [GetModifier('blinding_moonbeam_gaze_perk_modifier').GetNameWithTooltip] al enemigo [knights|E] en la guerra como comandante o al enemigo en [single_combat_duel|E]."
  MOONS_GATEWAY_PERK_EFFECT: "Como [character_interaction|E], te permite teletransportar a tu ejército a la ubicación de tu objetivo o teletransportarte a tu próximo destino cuando viajas."
  MOON_SENSE_PERK_EFFECT: "Recibirás una notificación si alguien intenta asesinar a tu amigo o familiar. Recibirás una notificación si alguien intenta seducir a tu amante o consorte. Tu prisionero tendrá menos posibilidades de escapar de tu prisión."
@@ -84,6 +105,9 @@
  shivas_might_perk_name: "El poder de Shiva"
  part_the_curtain_perk_name: "Abre el telón"
   
+ TREECLIMBER_PERK_EFFECT: "#flavor Al extender y afilar sus garras, y luego invocar este Don, un Bastet puede subir o bajar por cualquier superficie vertical, desde la corteza de un árbol hasta el hormigón. Los leopardos son excelentes trepando, y la mayoría de los kuasha enseñan este secreto primero. #!" #NT!
+ TRAVELERS_TONGUES_PERK_EFFECT: "#flavor Al hacer uso de los poderes de Rahjah, una Bastet puede traducir cualquier idioma humano que se encuentre cerca de ella. Invocar al Destructor convertirá todo en un galimatías.#!" #NT!
+ PART_THE_CURTAIN_PERK_EFFECT: "[umbra_aptitude|E]: [grace_i]#P +50%#! \n #flavor Al igual que el Don común de nivel cuatro: Caminar entre mundos, este hechizo le permite a un leopardo cruzar hacia la Umbra cercana. Sin embargo, esta variación también le permite traer a otros a través de ella.#!" #NT!
  HUMBABAS_ESCAPE_PERK_EFFECT: "Ya no podéis ser encarcelados por asedios."
  OJAS_SURGE_PERK_EFFECT: "Como [character_interaction|E], te permite aumentar temporalmente un atributo."
  COBRAS_DANCE_PERK_EFFECT: "Es más probable que [imprison|E] [characters|E] después de un [siege|E] o [raid|E] exitoso."
@@ -100,6 +124,13 @@
  spirit_wall_perk_name: "Muro espiritual"
  the_fleeing_scarab_perk_name: "El escarabajo que huye"
   
+ ALMS_TO_THE_POOR_PERK_EFFECT: "#flavor El hombre gato puede reunir una pequeña cantidad de dinero o comida, generalmente para dársela a un mendigo. Si el gato usa la "limosna" para sí mismo, le queda un sabor amargo en la boca y las palmas de las manos grasientas.#!" #NT!
+ SCHOLARS_FRIEND_PERK_EFFECT: "#flavor El Bubasti puede leer cualquier pergamino, tablilla o libro que se le coloque frente a él, sin importar en qué idioma esté escrito. Los mensajes codificados permanecen escritos en código. #!" #NT!
+ BANISH_CAHLASHS_BROOD_PERK_EFFECT: "#flavor Al invocar al Padre de los Espíritus Oscuros, un Bubasti puede ordenar a los espíritus Wyrm que se vayan. Cada vez que el Bubasti lo hace, su pelaje se vuelve de un tono más oscuro y sus acciones se vuelven más... erráticas. Sense Wyrm detecta un leve rastro de la contaminación del Wyrm en el Bastet durante una semana después. #!" #NT!
+ THE_MANY_TONGUES_OF_PTAH_PERK_EFFECT: "#flavor Este don permite a los guerreros de Gaia leer y manejar el espíritu del habla, evitando la necesidad de aprender diferentes idiomas y dialectos.#!" #NT!
+ THE_SCARABS_FLIGHT_PERK_EFFECT: "#flavor Al reunir los elementos de su alma, un Bubasti puede expulsarlos de su cuerpo por un tiempo. El cuerpo mismo entra en un trance parecido a la muerte hasta que el escarabajo regresa; aunque no se descompone, todos los demás signos (mágicos y de otro tipo) declaran que el gato ha muerto. El escarabajo volador se parece a un insecto común a menos que se lo inspeccione con sentidos mágicos, en cuyo caso brilla intensamente.#!" #NT!
+ SHADOW_BRETHREN_PERK_EFFECT: "Como [character_interaction|E], te permite crear un clon de ti mismo.\n #flavor El Bubasti invoca duplicados sombríos de sí mismo para que lo apoyen en la batalla. Estos gatos de sombra se parecen a los Bubasti y tienen algunas de las mismas capacidades. Un espíritu nocturno enseña este don.#!" #NT!
+ SPIRIT_WALL_PERK_EFFECT: "#flavor Uno de los mejores trucos que aprende un Bubasti es el arte de convocar a espíritus menores de los alrededores y formar con ellos un muro Umbral de los lamentos. Este tipo de magia no hace que un gato se sienta atraído por los espíritus en general, pero cuando alcance este rango, un Bubasti debería tener suficiente sentido común para usar ese poder sabiamente, y suficiente poder para protegerse cuando lo use.#!" #NT!
  MOUSEMAZE_PERK_EFFECT: "Otorga un modificador [GetModifier('mousemaze_perk_modifier').GetNameWithTooltip] al enemigo [knights|E] en la guerra como comandante o al enemigo en [single_combat_duel|E]."
  THE_FLEEING_SCARAB_PERK_EFFECT: "Permite la resurrección si mueres por una causa no natural.\n#F Este don, uno de los secretos tribales más oscuros de los bubasti, permite a un gato extraer su alma, encarnarla y enviarla fuera de peligro mientras su cuerpo muere. El alma, que a menudo toma la forma de un escarabajo volador, busca un nuevo cuerpo anfitrión apropiado, se mete en su boca mientras duerme y "deja" la antigua alma en el nuevo anfitrión. El bubasti que conoce este secreto prohibido (y existen menos de ocho gatos así) es teóricamente inmortal, aunque dicha longevidad se compra en vidas de otros seres.#!"
  THE_FLEEING_SCARAB_REQUIREMENT: "@warning_icon!#X Debes completar una misión de Susurros (coloca un explorador en cualquier reino de Umbra para encontrar una pista sobre la ubicación y comienza un [umbra_expedition|E] para llegar a ellos y luego recibir una misión) para desbloquear esta ventaja.#!"
@@ -113,6 +144,12 @@
  call_to_battle_perk_name: "Llamado a la batalla"
  thousand_thunder_strike_perk_name: "Golpe de mil truenos"
   
+ RHINOS_FAVOR_PERK_EFFECT: "#flavor Al invocar al espíritu del rinoceronte, el Khan puede hacer crecer un cuerno en su cráneo. Aunque es antiestético, esta protuberancia es una buena arma. #!" #NT!
+ SKIN_OF_JADE_PERK_EFFECT: "#flavor Al quererse sólido, la piel del Khan obtiene la dureza del jade.#!" #NT!
+ RICEPAPER_WALK_PERK_EFFECT: "Comienza con [EmptyScope.ScriptValue('infiltration_small_perk_suspicion_offset')|V0] [suspicion_with_icon|E] durante [infiltration_missions|E].\n #flavor Al sintonizar sus energías internas, el Khan puede caminar sobre una superficie ligera o frágil sin perturbarla, sin importar la forma que use. #!" #NT!
+ MAKERS_CHARM_PERK_EFFECT: "Ahora, financiar la inspiración para los artefactos o encargarlos es menos costoso.\n #flavor Los Bastet pueden transformar materiales que alguna vez estuvieron vivos (¡pero no muertos vivientes!) en una variedad de objetos al instante. Los árboles pueden convertirse en refugios, las astas de los ciervos en lanzas, las pieles de los animales en armaduras y las flores en perfumes.#!" #NT!
+ DRAGONROAR_PERK_EFFECT: "#flavor Rugiendo como un trueno, el Khan lanza una bola de fuego sobre sus enemigos. #!" #NT!
+ THOUSAND_THUNDER_STRIKE_PERK_EFFECT: "#flavor Al juntar sus patas e invocar a Rahjah o una de sus manifestaciones (Shiva, Pan Gu, etc.), un tigre furioso provoca una onda expansiva que puede derribar edificios o perturbar a los espíritus impuros. El Rey de los Gatos, en sus formas más regias, enseña este Don al digno Khan. #!" #NT!
  PAWS_OF_THE_RAGING_SPIRIT_TIGER_PERK_EFFECT: "Ya no es necesario pagar Gnosis para dañar a un espíritu en [single_combat_duel|E]."
  CALL_TO_BATTLE_PERK_EFFECT: "Dale a un aliado [knights|E] en la guerra como comandante o a ti mismo [single_combat_duel|E] [GetModifier('mousemaze_perk_modifier').GetNameWithTooltip]."
   
@@ -126,6 +163,13 @@
  rising_sun_perk_name: "Sol naciente"
  royal_privilege_perk_name: "Privilegio real"
   
+ BASTET_MAJESTY_PERK_EFFECT: "#flavor Este don le permite a Simba exigir el respeto de los demás. Un espíritu de tiburón se lo enseña. #!" #NT!
+ SUBMIT_PERK_EFFECT: "#flavor Al apuntar con el dedo o la garra a un objetivo, un Simba puede obligarlo a ponerse de rodillas. Solo los más decididos pueden hacer algo más que esforzarse y maldecir en respuesta. Este don lo enseña uno de los descendientes de Pegaso. #!" #NT!
+ RALLYING_CHALLENGE_PERK_EFFECT: "Como [character_interaction|E], te permite aumentar temporalmente un atributo.\n #flavor Al enviar su poder interior hacia afuera, un Simba puede recuperarse para lograr cosas que normalmente están fuera de su alcance. Con un grito desgarrador, eleva su fuerza física o la fuerza de su personalidad a niveles inusuales. #!" #NT!
+ FIREROAR_PERK_EFFECT: "#flavor Con un rugido similar al de un trueno, Simba vomita una bola de fuego sobre sus enemigos. Esta exhalación ardiente continúa ardiendo hasta que él o su objetivo son consumidos. #!" #NT!
+ SHADOW_THE_MOONS_LIGHT_PERK_EFFECT: "#flavor Hay un momento para todo, incluso para el sigilo. Como cazadores nocturnos, los reyes felinos han perfeccionado un secreto que les permite atenuar la luz a medida que se acercan. Si bien no puede extinguir la luna, este don sofoca igualmente bien las luces naturales, mágicas y artificiales. #!" #NT!
+ COMMAND_THE_MULTITUDE_PERK_EFFECT: "#flavor Como el don de nivel uno: Sometimiento, excepto que afecta a todos en un radio de 200 pies y requiere Gnosis. #!" #NT!
+ KING_OF_BEASTS_PERK_EFFECT: "#flavor La autoridad de Simba se extiende incluso al reino de las bestias, de modo que puede exigir la lealtad de todos los animales en un radio de 300 pies. Si tiene éxito, los animales obedecen sus órdenes de buena gana e incondicionalmente. A#!" #NT!
  RISING_SUN_PERK_EFFECT: "Hiere al enemigo [knights|E] y a los comandantes en la guerra como comandante o enemigo en [single_combat_duel|E], si son vampiros (u otros seres sobrenaturales que temen al sol)."
  ROYAL_PRIVILEGE_PERK_EFFECT: "Permite elegir otro estilo de vida de dones de raza y tribu sin la raza correspondiente [trait|E] o [faith|E].\n#F Este truco profundamente despreciado permite a un león antiguo y poderoso robar los dones de otro hombre gato, incluso aquellos que tradicionalmente pertenecen solo a esa tribu o raza. Diente Negro ha reunido gran parte de su poder a través de este secreto mortal. Aquellos que lo han conocido afirman que invoca su "privilegio" matando a otros Bastet y luego tomando sus secretos de sus espíritus cuando mueren. Si bien puede haber otros Bastet que conozcan el Don, no tienen muchos amigos.#!"
  ROYAL_PRIVILEGE_REQUIREMENT: "@warning_icon!#X Debes completar una misión del Destructor (coloca un explorador en cualquier reino de Umbra para encontrar una pista sobre la ubicación y comienza un [umbra_expedition|E] para llegar a ellos y luego recibir una misión) para desbloquear esta ventaja.#!"
@@ -139,6 +183,9 @@
  river_of_blood_perk_name: "Río de sangre"
  all_beasts_under_the_sun_perk_name: "Todas las bestias bajo el sol"
   
+ DIAMOND_CLAWS_PERK_EFFECT: "#flavor Al clavar sus garras sobre piedra, acero o alguna otra superficie dura, Bastet las afila hasta dejarlas muy afiladas. Un espíritu de gato o de oso le enseña este don. #!" #NT!
+ IMPALAS_FLIGHT_PERK_EFFECT: "#flavor Bastet duplica su velocidad al correr. Un espíritu de correcaminos o de guepardo le enseña este don. #!" #NT!
+ RIVER_OF_BLOOD_PERK_EFFECT: "#flavor El suelo de África ha estado bañado en sangre durante decenas de miles de años. Con este Don, un Swara convoca esa sangre derramada a través del suelo y le da forma, creando un estanque, un río, una masa de tentáculos o una variedad de otras cosas. #!" #NT!
  WALKING_BETWEEN_WORLDS_PERK_EFFECT: "Progreso mensual de exploración de Umbra: [grace_i]#P +10#!"
  DANCE_OF_THE_CHAYA_PERK_EFFECT: "Desbloquear $seek_aid_of_the_spirits_decision$ [decision|E]."
  CLEARWATER_PASSAGE_PERK_EFFECT: "Desbloquea la opción de cambio de forma [GetModifier( 'POD_shapeshift_form_water_modifier' ).GetNameWithTooltip|L]."
@@ -154,6 +201,10 @@
  chariot_of_lions_perk_name: "Carro de leones"
  the_madness_of_crowds_perk_name: "La locura de las multitudes"
   
+ SATYRS_WISDOM_PERK_EFFECT: "#flavor El Ceilicano puede tocar cualquier instrumento musical como si hubiera sido criado con él en sus manos. #!" #NT!
+ BANISH_BURNING_PERK_EFFECT: "#flavor En el pasado, los humanos domesticaron el fuego para calentarse y ahuyentar a las bestias salvajes. Este antiguo pacto de la humanidad con los espíritus del fuego les permitió contener el hambre cuando Bastet los tocaba.#!" #NT!
+ PHANTASM_PERK_EFFECT: "#flavor El Bastet crea una ilusión inmóvil que contiene elementos visuales, auditivos, olfativos e incluso táctiles. Un espíritu de los cereales, el llamado “espíritu de los espíritus”, enseña este don.#!" #NT!
+ CHARIOT_OF_LIONS_PERK_EFFECT: "#flavor Este Don poco sutil permite a un Ceilican conjurar un carro tirado por enormes gatos. Como el arte de la diosa Freyja, este carro está hecho de madera tosca y cubierto con diseños nórdicos. Los dos enormes gatos que lo tiran corren tan rápido como un automóvil promedio y pueden, en caso de necesidad, llevar al Ceilican y a un pasajero por el aire durante unos momentos. Solo la Señora de los Gatos enseña este Don; aprenderlo sin su bendición es un grave insulto.#!" #NT!
  MOTHERS_BLESSING_CURSE_PERK_EFFECT: "Como [character_interaction|E], te permite dar [GetModifier( 'mothers_blessing_perk_modifier' ).GetNameWithTooltip|L] o [GetModifier( 'mothers_curse_perk_modifier' ).GetNameWithTooltip|L] a un objetivo embarazada."
  SORCERERS_BLADE_PERK_EFFECT: "Como [character_interaction|E], te permite usar gnosis para aumentar la destreza de un artefacto de arma."
  SMALL_COUSIN_PERK_EFFECT: "Desbloquea la opción de cambio de forma [GetModifier( 'POD_shapeshift_form_cat_modifier' ).GetNameWithTooltip|L]."

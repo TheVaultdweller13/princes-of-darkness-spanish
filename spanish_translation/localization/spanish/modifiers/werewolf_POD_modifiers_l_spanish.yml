@@ -142,16 +142,146 @@
  POD_grondr_form_scrofa_modifier: "Forma de escrofa"
  POD_grondr_form_scrofa_modifier_desc: "Jabalí."
   
- POD_ananasi_form_lilian_modifier: "Forma Lilian"
- POD_ananasi_form_lilian_modifier_desc: "Una forma híbrida de humano y araña, que no es necesariamente la misma para cada Ananasi. Algunos son humanoides con múltiples extremidades, mientras que otros tienen un torso parecido al humano que brota del abdomen de una araña gigante.\n#weak Otorga un modificador de [GetModifier('POD_delirium_modifier').GetNameWithTooltip] al enemigo [knights|E] en la guerra como comandante o al enemigo en [single_combat_duel|E]#!"
- POD_ananasi_form_pithus_modifier: "Forma de pithus"
- POD_ananasi_form_pithus_modifier_desc: "Una araña enorme, al menos la mitad de pesada que la forma humana de la araña hombre-araña.\n#weak Otorga [GetModifier('POD_delirium_modifier').GetNameWithTooltip] modificador al enemigo [knights|E] en la guerra como comandante o al enemigo en [single_combat_duel|E]#!"
- POD_ananasi_form_crawlerling_modifier: "Forma de gateo"
- POD_ananasi_form_crawlerling_modifier_desc: "Forma de araña. Única entre los Fera, las Ananasi no se transforman en un solo animal, sino en un enjambre de cientos de arañas. Esto hace que sea muy difícil matarlas, aunque si se mata a una cantidad significativa de arañas del enjambre, las Ananasi pueden perder recuerdos, habilidades y masa en sus otras formas."
- POD_ananasi_form_araneid_modifier: "Forma aranéida"
- POD_ananasi_form_araneid_modifier_desc: "El Damhàn desarrolla una forma parecida a la de Glabro, entre Homid y Lilian."
+ # POD_ananasi_form_lilian_modifier: "Forma Lilian" #NT!
+ # POD_ananasi_form_lilian_modifier_desc: "Una forma híbrida entre humano y araña, que no es necesariamente la misma para cada Ananasi. Algunos son humanoides con múltiples extremidades, mientras que otros tienen un torso parecido al humano que brota del abdomen de una araña gigante.\n#weak Otorga [GetModifier('POD_delirium_modifier').GetNameWithTooltip] [modifier|E] al enemigo [knights|E] cuando actúa como [commander|E] durante [combat_phase|E], o a tu enemigo durante [single_combat_duel_plural|E]#!" #NT!
+ # POD_ananasi_form_pithus_modifier: "Forma de pithus" #NT!
+ # POD_ananasi_form_pithus_modifier_desc: "Una araña enorme, al menos la mitad de pesada que la forma humana de la araña hombre-araña.\n#weak Otorga [GetModifier('POD_delirium_modifier').GetNameWithTooltip] [modifier|E] al enemigo [knights|E] cuando actúa como [commander|E] durante [combat_phase|E], o a tu enemigo durante [single_combat_duel_plural|E]#!" #NT!
+ # POD_ananasi_form_crawlerling_modifier: "Forma de gateo" #NT!
+ # POD_ananasi_form_crawlerling_modifier_desc: "Forma de araña. Única entre los Fera, las Ananasi no se transforman en un solo animal, sino en un enjambre de cientos de arañas. Esto hace que sea muy difícil matarlas, aunque si se mata a una cantidad significativa de arañas del enjambre, las Ananasi pueden perder recuerdos, habilidades y masa en sus otras formas." #NT!
+ # POD_ananasi_form_araneid_modifier: "Forma aranéida" #NT!
+ # POD_ananasi_form_araneid_modifier_desc: "El Damhàn desarrolla una forma parecida a la de Glabro, entre Homid y Lilian." #NT!
+  
+ POD_ananasi_form_swarmform_modifier: "Forma de enjambre" #NT!
+ POD_ananasi_form_swarmform_modifier_desc: "Una horda turbulenta de arañas con la misma masa que un ser humano, que se elevan por los rincones y se extienden con una capacidad soberbia para cubrir terreno y evadir la muerte." #NT!
+ POD_ananasi_form_microform_modifier: "Microforma" #NT!
+ POD_ananasi_form_microform_modifier_desc: "Una araña natural solitaria, discreta aunque espeluznante, pero en gran medida olvidable y con una capacidad de sigilo sin igual." #NT!
+ POD_ananasi_form_macroform_modifier: "Forma macro" #NT!
+ POD_ananasi_form_macroform_modifier_desc: "Una araña colosal del tamaño de un rinoceronte, la Macroform es un terrible coloso de muerte y destrucción.\n#weak Otorga [GetModifier('POD_delirium_modifier').GetNameWithTooltip] [modifier|E] al enemigo [knights|E] cuando actúa como [commander|E] durante [combat_phase|E], o a tu enemigo durante [single_combat_duel_plural|E]#!." #NT!
+ POD_ananasi_form_warform_modifier: "Forma de guerra" #NT!
+ POD_ananasi_form_warform_modifier_desc: "Diferente para cada Ananasi, la Forma de Guerra es su analogía con Crinos, representando una forma de araña aproximadamente del tamaño de un gorila con elementos humanos como manos, planos corporales de centauroide y una mezcla de anatomía de araña y humana.\n#weak Otorga [GetModifier('POD_delirium_modifier').GetNameWithTooltip] [modifier|E] al enemigo [knights|E] cuando actúa como [commander|E] durante [combat_phase|E], o a tu enemigo durante [single_combat_duel_plural|E]#!" #NT!
  POD_ananasi_form_titaniform_modifier: "Forma de titán"
  POD_ananasi_form_titaniform_modifier_desc: "El Ananasi asume la forma de una criatura enorme con cuatro patas parecidas a las de una araña, cuatro brazos parecidos a los humanos, ocho ojos rojos brillantes y colmillos enormes, cubiertos por una gruesa armadura quitinosa.\n#weak Otorga un modificador de [GetModifier('POD_delirium_modifier').GetNameWithTooltip] al enemigo [knights|E] en la guerra como comandante o al enemigo en [single_combat_duel|E]#!"
+  
+ POD_eshieho_form_swarmform_modifier: "Forma de enjambre" #NT!
+ POD_eshieho_form_swarmform_modifier_desc: "Una masa escurridiza de cangrejos de río de una variedad de colores, la forma de enjambre Eshieho es la de una gran colección de varias formas para una variedad de tareas más pequeñas que el Eshieho podría necesitar que se realicen." #NT!
+ POD_eshieho_form_microform_modifier: "Microforma" #NT!
+ POD_eshieho_form_microform_modifier_desc: "Un cangrejo de río más pequeño que una mano humana, el Eshieho en forma micro, es muy fácil de pasar por alto para cualquiera que pase por un río." #NT!
+ POD_eshieho_form_macroform_modifier: "Forma macro" #NT!
+ POD_eshieho_form_macroform_modifier_desc: "Un crustáceo del tamaño de un rinoceronte con garras delgadas y antenas móviles, la Forma Macro de Eshieho es una terrible mezcla de elegancia y poder.\n#weak Otorga [GetModifier('POD_delirium_modifier').GetNameWithTooltip] [modifier|E] al enemigo [knights|E] cuando actúa como [commander|E] durante [combat_phase|E], o a tu enemigo durante [single_combat_duel_plural|E]#!" #NT!
+ POD_eshieho_form_warform_modifier: "Forma de guerra" #NT!
+ POD_eshieho_form_warform_modifier_desc: "Un crustáceo centauroide con manos y garras manipuladoras, la Forma de Guerra del Eshieho es una forma diestra y fuerte que pueden adoptar cuando el deber los llama.\n#weak Otorga [GetModifier('POD_delirium_modifier').GetNameWithTooltip] [modifier|E] al enemigo [knights|E] cuando actúa como [commander|E] durante [combat_phase|E], o a tu enemigo durante [single_combat_duel_plural|E]#!" #NT!
+ POD_eshieho_form_titaniform_modifier: "Titaniform" #NT!
+ POD_eshieho_form_titaniform_modifier_desc: "Parecido a su creador, el Eshieho Titaniforme es un coloso de diez patas del tamaño de un elefante con brazos revestidos de caparazón y dos garras penetrantes, con ojos bulbosos que vigilan y vigilan a todos los que desafíen a C'et.\n#weak Otorga [GetModifier('POD_delirium_modifier').GetNameWithTooltip] [modifier|E] al enemigo [knights|E] cuando actúa como [commander|E] durante [combat_phase|E], o a tu enemigo durante [single_combat_duel_plural|E]\nPuede eludir la inmunidad al delirio.#!" #NT!
+  
+ POD_mishaho_form_swarmform_modifier: "Forma de enjambre" #NT!
+ POD_mishaho_form_swarmform_modifier_desc: "Una colección de cientos de cangrejos más pequeños, la escurridiza y evasiva masa de cangrejos que forma la Forma de Enjambre Mishaho es un delirio de escurridizos y pinzas." #NT!
+ POD_mishaho_form_microform_modifier: "Microforma" #NT!
+ POD_mishaho_form_microform_modifier_desc: "Un cangrejo singular, la Forma Micro es una forma segura que un Mishaho puede adoptar cuando quiere estar solo y desapercibido, especialmente cuando permanece cerca de la orilla." #NT!
+ POD_mishaho_form_macroform_modifier: "Forma macro" #NT!
+ POD_mishaho_form_macroform_modifier_desc: "Un cangrejo casi del tamaño de un hipopótamo, la Forma Macro de Mishaho es una gran bestia de poder y durabilidad, con su forma única es difícil de golpear efectivamente más allá de sus patas bien blindadas.\n#weak Otorga [GetModifier('POD_delirium_modifier').GetNameWithTooltip] [modifier|E] al enemigo [knights|E] cuando actúa como [commander|E] durante [combat_phase|E], o a tu enemigo durante [single_combat_duel_plural|E]#!" #NT!
+ POD_mishaho_form_warform_modifier: "Forma de guerra" #NT!
+ POD_mishaho_form_warform_modifier_desc: "Una mezcla de humano y cangrejo, la Forma de Guerra Mishaho está compuesta por los mejores elementos del cuerpo de cangrejo y humano, tomando una variedad de formas que varían de Mishaho a Mishaho.\n#weak Otorga [GetModifier('POD_delirium_modifier').GetNameWithTooltip] [modifier|E] al enemigo [knights|E] cuando actúa como [commander|E] durante [combat_phase|E], o a tu enemigo durante [single_combat_duel_plural|E]#!" #NT!
+ POD_mishaho_form_titaniform_modifier: "Titaniform" #NT!
+ POD_mishaho_form_titaniform_modifier_desc: "El Titaniforme de Mishaho, que tiene la forma de la propia Cangrejo, es simple pero adopta la forma final de la vida. Un cangrejo colosal lo suficientemente grande como para albergar una isla en él, con pinzas que pueden aplastar rocas y patas que se elevan sobre los árboles.\n#weak Otorga [GetModifier('POD_delirium_modifier').GetNameWithTooltip] [modifier|E] al enemigo [knights|E] cuando actúa como [commander|E] durante [combat_phase|E], o a tu enemigo durante [single_combat_duel_plural|E]\nPuede eludir la inmunidad al delirio.#!" #NT!
+  
+ POD_bahaesh_form_swarmform_modifier: "Forma de enjambre" #NT!
+ POD_bahaesh_form_swarmform_modifier_desc: "Uno de los enjambres menos densos entre los Éntomos, la Forma de Enjambre Bahaesh es un centenar de langostas bajo una sola mente." #NT!
+ POD_bahaesh_form_microform_modifier: "Microforma" #NT!
+ POD_bahaesh_form_microform_modifier_desc: "Modesta y deliciosa, la forma micro del Bahaesh es la de una langosta simple y singular, lo que le permite esconderse entre otras y en el mar sin que sus enemigos se den cuenta de su secreto." #NT!
+ POD_bahaesh_form_macroform_modifier: "Forma macro" #NT!
+ POD_bahaesh_form_macroform_modifier_desc: "Una langosta tremendamente grande del tamaño de un caballo de tiro con dos garras del mismo tamaño, la Forma Macro de los Bahaesh son las que tienen las garras naturales más grandes, capaces de partir acero con una prensa.\n#weak Otorga [GetModifier('POD_delirium_modifier').GetNameWithTooltip] [modifier|E] al enemigo [knights|E] cuando actúa como [commander|E] durante [combat_phase|E], o a tu enemigo durante [single_combat_duel_plural|E]#!" #NT!
+ POD_bahaesh_form_warform_modifier: "Forma de guerra" #NT!
+ POD_bahaesh_form_warform_modifier_desc: "Una bestia de poder erguida y escurridiza, la Forma de Guerra Bahaesh es una forma que enfatiza la fuerza de sus garras mezclada con la versatilidad de la forma humana.\n#weak Otorga [GetModifier('POD_delirium_modifier').GetNameWithTooltip] [modifier|E] al enemigo [knights|E] cuando actúa como [commander|E] durante [combat_phase|E], o a tu enemigo durante [single_combat_duel_plural|E]#!" #NT!
+ POD_bahaesh_form_titaniform_modifier: "Titaniform" #NT!
+ POD_bahaesh_form_titaniform_modifier_desc: "Un gigante de caparazón y carne, el Bahaesh Titaniform se define por sus garras del tamaño de trabuquetes, en el cuerpo de una langosta masiva para soportar su terrible poder.\n#weak Otorga [GetModifier('POD_delirium_modifier').GetNameWithTooltip] [modifier|E] al enemigo [knights|E] cuando actúa como [commander|E] durante [combat_phase|E], o a tu enemigo durante [single_combat_duel_plural|E]\nPuede eludir la inmunidad al delirio.#!" #NT!
+  
+ POD_ishihambi_form_swarmform_modifier: "Forma de enjambre" #NT!
+ POD_ishihambi_form_swarmform_modifier_desc: "Una nube de polillas de diferentes colores, variedades y tipos, la forma de enjambre de Ishihambi es etéreamente hermosa en sus giros de color." #NT!
+ POD_ishihambi_form_microform_modifier: "Microforma" #NT!
+ POD_ishihambi_form_microform_modifier_desc: "Aunque no se diferencia de una polilla común y corriente de la especie nativa de Ishihambi, la forma micro de Ishihambi es, sin embargo, una de profunda libertad y liberación." #NT!
+ POD_ishihambi_form_macroform_modifier: "Forma macro" #NT!
+ POD_ishihambi_form_macroform_modifier_desc: "Una polilla del tamaño de un cóndor con alas más grandes que un paracaídas, la Forma Macro de los Soberanos del Tejedor es digna de su majestad.\n#weak Otorga [GetModifier('POD_delirium_modifier').GetNameWithTooltip] [modifier|E] al enemigo [knights|E] cuando actúa como [commander|E] durante [combat_phase|E], o a tu enemigo durante [single_combat_duel_plural|E]#!" #NT!
+ POD_ishihambi_form_warform_modifier: "Forma de guerra" #NT!
+ POD_ishihambi_form_warform_modifier_desc: "Única entre los Éntomos por su constitución completamente bípeda, la Forma de Guerra Ishihambi es la de un humanoide con características de polilla, de tamaño relativamente humano pero con alas lo suficientemente grandes como para impulsarlos al vuelo.\n#weak Otorga [GetModifier('POD_delirium_modifier').GetNameWithTooltip] [modifier|E] al enemigo [knights|E] cuando actúa como [commander|E] durante [combat_phase|E], o a tu enemigo durante [single_combat_duel_plural|E]#!" #NT!
+ POD_ishihambi_form_titaniform_modifier: "Titaniform" #NT!
+ POD_ishihambi_form_titaniform_modifier_desc: "Un gigante de pelaje radiante y alas de colores brillantes, el Titaniforme de Ishihambi es una polilla normal mejorada para poder levantar una orca del agua, con toda su belleza traducida en poder puro.\n#weak Otorga [GetModifier('POD_delirium_modifier').GetNameWithTooltip] [modifier|E] al enemigo [knights|E] cuando actúa como [commander|E] durante [combat_phase|E], o a tu enemigo durante [single_combat_duel_plural|E]\nPuede eludir la inmunidad al delirio.#!" #NT!
+  
+ POD_iqhawe_form_swarmform_modifier: "Forma de enjambre" #NT!
+ POD_iqhawe_form_swarmform_modifier_desc: "Una ráfaga de mantis en un grupo de piernas y brazos, la Forma de Enjambre Iqhawe no es muy sutil, pero logra el valioso objetivo de ser difícil de matar y capaz de expandir su conciencia a lo lejos." #NT!
+ POD_iqhawe_form_microform_modifier: "Microforma" #NT!
+ POD_iqhawe_form_microform_modifier_desc: "Una sola Mantis, la Forma Micro Iqhawe es indudablemente el enemigo más letal en la escala Micro, ágiles depredadores de emboscada para matar a otros Micro Éntomos mientras conservan los beneficios del sigilo." #NT!
+ POD_iqhawe_form_macroform_modifier: "Forma macro" #NT!
+ POD_iqhawe_form_macroform_modifier_desc: "Una mantis torpe del tamaño de un caballo de tiro con extremidades desgarradoras del largo de cuchillas de guerra, el Macro Iqhawe es una brutal máquina de matar, experta en destrozar personas.\n#weak Otorga [GetModifier('POD_delirium_modifier').GetNameWithTooltip] [modifier|E] al enemigo [knights|E] cuando actúa como [commander|E] durante [combat_phase|E], o a tu enemigo durante [single_combat_duel_plural|E]#!" #NT!
+ POD_iqhawe_form_warform_modifier: "Forma de guerra" #NT!
+ POD_iqhawe_form_warform_modifier_desc: "Única entre los Éntomos por tener una forma compartida en su Forma de Guerra, la Forma de Guerra Iqhawe tiene sus brazos delanteros convertidos en espadas letales, expertas en duelos y cortando a sus enemigos en pedazos.\n#weak Otorga [GetModifier('POD_delirium_modifier').GetNameWithTooltip] [modifier|E] al enemigo [knights|E] cuando actúa como [commander|E] durante [combat_phase|E], o a tu enemigo durante [single_combat_duel_plural|E]#!" #NT!
+ POD_iqhawe_form_titaniform_modifier: "Titaniform" #NT!
+ POD_iqhawe_form_titaniform_modifier_desc: "Un mamut de mantis religiosa con la forma de su creador, el Iqhawe titaniforme es un oscilador de extremidades que despeja bosques de un solo tajo, capaz de aplastar a todos los enemigos que se interponen en el camino de los Campeones del Tejedor.\n#weak Otorga [GetModifier('POD_delirium_modifier').GetNameWithTooltip] [modifier|E] al enemigo [knights|E] cuando actúa como [commander|E] durante [combat_phase|E], o a tu enemigo durante [single_combat_duel_plural|E]\nPuede eludir la inmunidad al delirio.#!" #NT!
+  
+ POD_umakhi_form_swarmform_modifier: "Forma de enjambre" #NT!
+ POD_umakhi_form_swarmform_modifier_desc: "Una colonia entera de termitas, la forma de enjambre Umakhi es la pesadilla de todas las estructuras de madera y el enjambre más eficaz para construir cosas." #NT!
+ POD_umakhi_form_microform_modifier: "Microforma" #NT!
+ POD_umakhi_form_microform_modifier_desc: "Ya sea una sola termita rey o reina, la Micro Umakhi es majestuosa para las termitas, pero extremadamente pequeña e increíblemente fácil de pasar por alto ya que se esconde bajo tierra." #NT!
+ POD_umakhi_form_macroform_modifier: "Forma macro" #NT!
+ POD_umakhi_form_macroform_modifier_desc: "Una termita colosal del plan corporal del Guerrero, la Forma Macro Umakhi ha convertido en armas los chorros de ácido en sus cabezas para desatar un torrente de dolor.\n#weak Otorga [GetModifier('POD_delirium_modifier').GetNameWithTooltip] [modifier|E] al enemigo [knights|E] cuando actúa como [commander|E] durante [combat_phase|E], o a tu enemigo durante [single_combat_duel_plural|E]#!" #NT!
+ POD_umakhi_form_warform_modifier: "Forma de guerra" #NT!
+ POD_umakhi_form_warform_modifier_desc: "Una mezcla de formas de castas de Termitas en un plan corporal centauroide, la Forma de Guerra Umahki es un derviche de ácido y mandíbulas para destruir a todos los enemigos de su civilización.\n#weak Otorga [GetModifier('POD_delirium_modifier').GetNameWithTooltip] [modifier|E] al enemigo [knights|E] cuando actúa como [commander|E] durante [combat_phase|E], o a tu enemigo durante [single_combat_duel_plural|E]#!" #NT!
+ POD_umakhi_form_titaniform_modifier: "Titaniform" #NT!
+ POD_umakhi_form_titaniform_modifier_desc: "Un guerrero termita del tamaño de los mamuts lanudos extintos hace mucho tiempo, con un brote ácido del tamaño de un lanzafuegos griego, el Umakhi Titaniform es una manguera mortal de ácido y dolor.\n#weak Otorga [GetModifier('POD_delirium_modifier').GetNameWithTooltip] [modifier|E] al enemigo [knights|E] cuando actúa como [commander|E] durante [combat_phase|E], o a tu enemigo durante [single_combat_duel_plural|E]\nPuede eludir la inmunidad al delirio.#!" #NT!
+  
+ POD_umlimi_form_swarmform_modifier: "Forma de enjambre" #NT!
+ POD_umlimi_form_swarmform_modifier_desc: "Tomando la forma de la pesadilla de la civilización humana primitiva, los Umlimi se convierten en un enjambre de langostas, destrozando toda la agricultura a su paso para ser cosechada para los propios fines de los Umlimi." #NT!
+ POD_umlimi_form_microform_modifier: "Microforma" #NT!
+ POD_umlimi_form_microform_modifier_desc: "Discreta y fácilmente olvidable, la Micro Forma Umlimi es una langosta o saltamontes solitario que desaparece fácilmente entre los zorzales y la hierba." #NT!
+ POD_umlimi_form_macroform_modifier: "Forma macro" #NT!
+ POD_umlimi_form_macroform_modifier_desc: "Al igual que su Forma Micro escalada al tamaño de una mula con patas más fuertes que un canguro, una sola patada con cuchillas de un Macro Umlimi podría despellejar a alguien hasta convertirlo en vísceras.\n#weak Otorga [GetModifier('POD_delirium_modifier').GetNameWithTooltip] [modifier|E] al enemigo [knights|E] cuando actúa como [commander|E] durante [combat_phase|E], o a tu enemigo durante [single_combat_duel_plural|E]#!" #NT!
+ POD_umlimi_form_warform_modifier: "Forma de guerra" #NT!
+ POD_umlimi_form_warform_modifier_desc: "Parecidas a una multitud de diferentes formaciones de humanos y langostas, las formas demacradas que suelen adoptar revelan su hambre interminable y voraz.\n#weak Otorga [GetModifier('POD_delirium_modifier').GetNameWithTooltip] [modifier|E] al enemigo [knights|E] cuando actúa como [commander|E] durante [combat_phase|E], o a tu enemigo durante [single_combat_duel_plural|E]#!." #NT!
+ POD_umlimi_form_titaniform_modifier: "Titaniform" #NT!
+ POD_umlimi_form_titaniform_modifier_desc: "Una amalgama horrorosa de bocas y piernas con cuchillas que giran en un huracán de muerte con millones de langostas pululando a su alrededor, el Titaniforme Umlimi es la encarnación del hambre.\n#weak Otorga [GetModifier('POD_delirium_modifier').GetNameWithTooltip] [modifier|E] al enemigo [knights|E] cuando actúa como [commander|E] durante [combat_phase|E], o a tu enemigo durante [single_combat_duel_plural|E]\nPuede eludir la inmunidad al delirio.#!" #NT!
+  
+ POD_umbulali_form_swarmform_modifier: "Forma de enjambre" #NT!
+ POD_umbulali_form_swarmform_modifier_desc: "La forma de enjambre Umbulali, la pesadilla encarnada, es la de una colmena entera de avispas en una nube de muerte y odio, moviéndose por el aire con la dirección de una sola mente." #NT!
+ POD_umbulali_form_microform_modifier: "Microforma" #NT!
+ POD_umbulali_form_microform_modifier_desc: "Aparte del impacto natural general que supone estar cerca de una avispa, la Forma Micro es la forma más sigilosa del Umbulali, siendo la de una única avispa hosca." #NT!
+ POD_umbulali_form_macroform_modifier: "Forma macro" #NT!
+ POD_umbulali_form_macroform_modifier_desc: "El terror hecho manifiesto, la Forma Macro de Umbulali es una avispa del tamaño de un búfalo, con un aguijón más grande que una gran lanza y mandíbulas como una tenaza dentada, evocando terror en todos los mortales afligidos que la ven.\n#weak Otorga [GetModifier('POD_delirium_modifier').GetNameWithTooltip] [modifier|E] al enemigo [knights|E] cuando actúa como [commander|E] durante [combat_phase|E], o a tu enemigo durante [single_combat_duel_plural|E]#!" #NT!
+ POD_umbulali_form_warform_modifier: "Forma de guerra" #NT!
+ POD_umbulali_form_warform_modifier_desc: "Una mezcla de humano y avispa, la pura determinación de una avispa con las terribles inclinaciones de la humanidad crea una forma aterradora.\n#weak Otorga [GetModifier('POD_delirium_modifier').GetNameWithTooltip] [modifier|E] al enemigo [knights|E] cuando actúa como [commander|E] durante [combat_phase|E], o a tu enemigo durante [single_combat_duel_plural|E]#!" #NT!
+ POD_umbulali_form_titaniform_modifier: "Titaniform" #NT!
+ POD_umbulali_form_titaniform_modifier_desc: "La encarnación más cruel de la Furia del Tejedor, el Titaniforme Umbulali es una avispa del tamaño de un dinosaurio, con un aguijón tan grande que podría atravesar un elefante, con la misma furia que tendría un avispón.\n#weak Otorga [GetModifier('POD_delirium_modifier').GetNameWithTooltip] [modifier|E] al enemigo [knights|E] cuando actúa como [commander|E] durante [combat_phase|E], o a tu enemigo durante [single_combat_duel_plural|E]\nPuede eludir la inmunidad al delirio.#!" #NT!
+  
+ POD_umhloli_form_swarmform_modifier: "Forma de enjambre" #NT!
+ POD_umhloli_form_swarmform_modifier_desc: "Una colonia de hormigas entera manifestada, la forma de enjambre Umhloli es la de una colmena colectiva trabajando junta bajo una mente." #NT!
+ POD_umhloli_form_microform_modifier: "Microforma" #NT!
+ POD_umhloli_form_microform_modifier_desc: "Casi siempre una Reina Hormiga y bendecida con sus alas, la Forma Micro Umhloli es la forma más regia junto con el vuelo y la fecundidad." #NT!
+ POD_umhloli_form_macroform_modifier: "Forma macro" #NT!
+ POD_umhloli_form_macroform_modifier_desc: "Una hormiga soldado enorme con tremenda fuerza y ​​determinación, la Forma Macro Umhloli es implacable y decidida, incluso si es la más pequeña de las Formas Macro Éntomos.\n#weak Otorga [GetModifier('POD_delirium_modifier').GetNameWithTooltip] [modifier|E] al enemigo [knights|E] cuando actúa como [commander|E] durante [combat_phase|E], o a tu enemigo durante [single_combat_duel_plural|E]#!" #NT!
+ POD_umhloli_form_warform_modifier: "Forma de guerra" #NT!
+ POD_umhloli_form_warform_modifier_desc: "La forma de guerra Umhloli, la más insectívora de las formas de guerra de Éntomos, siempre está cambiando y aprovecha la diversidad siempre cambiante de las hormigas para superar cualquier desafío que se les presente.\n#weak Otorga [GetModifier('POD_delirium_modifier').GetNameWithTooltip] [modifier|E] al enemigo [knights|E] cuando actúa como [commander|E] durante [combat_phase|E], o a tu enemigo durante [single_combat_duel_plural|E]#!" #NT!
+ POD_umhloli_form_titaniform_modifier: "Titaniform" #NT!
+ POD_umhloli_form_titaniform_modifier_desc: "Un titán pesado de quitina y poder, el Titaniforme Umhloli es un tipo de poder que los Umhloli rara vez conocen, ya que la hormiga del tamaño de una orca con alas del tamaño de campos se lanza a la batalla.\n#weak Otorga [GetModifier('POD_delirium_modifier').GetNameWithTooltip] [modifier|E] al enemigo [knights|E] cuando actúa como [commander|E] durante [combat_phase|E], o a tu enemigo durante [single_combat_duel_plural|E]\nPuede eludir la inmunidad al delirio.#!" #NT!
+  
+ POD_injiki_form_swarmform_modifier: "Forma de enjambre" #NT!
+ POD_injiki_form_swarmform_modifier_desc: "Con un tamaño equivalente a una colmena entera de abejas, la forma de enjambre Injiki es una nube de polen y alas, perfecta para muchos usos en los que ser una nube es lo ideal." #NT!
+ POD_injiki_form_microform_modifier: "Microforma" #NT!
+ POD_injiki_form_microform_modifier_desc: "Generalmente la de una sola Abeja Reina o un Zángano Abeja, la Forma Micro del Injiki es trabajadora y austera incluso a pesar de su lado." #NT!
+ POD_injiki_form_macroform_modifier: "Forma macro" #NT!
+ POD_injiki_form_macroform_modifier_desc: "Una columna de polen y néctar que cae de una abeja enorme con la capacidad de producir suficiente miel para ahogar a un Gurahl, el Macro Injiki es un espectáculo digno de contemplar.\n#weak Otorga [GetModifier('POD_delirium_modifier').GetNameWithTooltip] [modifier|E] al enemigo [knights|E] cuando actúa como [commander|E] durante [combat_phase|E], o a tu enemigo durante [single_combat_duel_plural|E]#!" #NT!
+ POD_injiki_form_warform_modifier: "Forma de guerra" #NT!
+ POD_injiki_form_warform_modifier_desc: "Diferente para cada Injiki, la Forma de Guerra Injiki es su idea de la mezcla ideal de industria y batalla entre los beneficios tanto de la forma humana como de la de abeja.\n#weak Otorga [GetModifier('POD_delirium_modifier').GetNameWithTooltip] [modifier|E] al enemigo [knights|E] cuando actúa como [commander|E] durante [combat_phase|E], o a tu enemigo durante [single_combat_duel_plural|E]#!" #NT!
+ POD_injiki_form_titaniform_modifier: "Titaniform" #NT!
+ POD_injiki_form_titaniform_modifier_desc: "Cuando el Titaniforme Injiki está cerca, el olor a miel se percibe a kilómetros de distancia, mientras los Granjeros del Tejedor se lanzan a la guerra.\n#weak Otorga [GetModifier('POD_delirium_modifier').GetNameWithTooltip] [modifier|E] al enemigo [knights|E] cuando actúa como [commander|E] durante [combat_phase|E], o a tu enemigo durante [single_combat_duel_plural|E]\nPuede eludir la inmunidad al delirio.#!" #NT!
+  
+ POD_kstyw_form_swarmform_modifier: "Forma de enjambre" #NT!
+ POD_kstyw_form_swarmform_modifier_desc: "Un tornado de escarabajos, escarabajos y mariquitas, el enjambre Kstyw abarca toda la utilidad versátil que los escarabajos pueden tener." #NT!
+ POD_kstyw_form_microform_modifier: "Microforma" #NT!
+ POD_kstyw_form_microform_modifier_desc: "Un solo escarabajo de la especie nativa de Kstyw, el Kstyw sigue siendo una fuerza duradera e inexorable cuando se propone algo." #NT!
+ POD_kstyw_form_macroform_modifier: "Forma macro" #NT!
+ POD_kstyw_form_macroform_modifier_desc: "Un escarabajo del tamaño de un hipopótamo con los terribles aspectos de su especie nativa llevados a nuevas alturas, la Forma Macro Kstyw es el pináculo de la durabilidad en las eras humanas entre los Éntomos.\n#weak Otorga [GetModifier('POD_delirium_modifier').GetNameWithTooltip] [modifier|E] al enemigo [knights|E] cuando actúa como [commander|E] durante [combat_phase|E], o a tu enemigo durante [single_combat_duel_plural|E]#!" #NT!
+ POD_kstyw_form_warform_modifier: "Forma de guerra" #NT!
+ POD_kstyw_form_warform_modifier_desc: "Una de las formas de guerra más humanoides de Éntomos, la forma de guerra Kstyw se asemeja a un humano remodelado con partes corporales de escarabajo, convirtiéndose en un ariete atronador de quitina y determinación.\n#weak Otorga [GetModifier('POD_delirium_modifier').GetNameWithTooltip] [modifier|E] al enemigo [knights|E] cuando actúa como [commander|E] durante [combat_phase|E], o a tu enemigo durante [single_combat_duel_plural|E]#!" #NT!
+ POD_kstyw_form_titaniform_modifier: "Titaniform" #NT!
+ POD_kstyw_form_titaniform_modifier_desc: "El Titaniforme Kstyw, que irradia la terrible furia del antiguo pacto entre Helios y la Tejedora, es un traficante de muerte y fuego con alas de tormenta de arena que canaliza el poder de los cielos y la Tejedora en un cuerpo colosal.\n#weak Otorga [GetModifier('POD_delirium_modifier').GetNameWithTooltip] [modifier|E] al enemigo [knights|E] cuando actúa como [commander|E] durante [combat_phase|E], o a tu enemigo durante [single_combat_duel_plural|E]\nPuede eludir la inmunidad al delirio.#!" #NT!
   
   ################# 
   # Gifts 
@@ -237,6 +367,8 @@
  brief_sensation_perk_modifier: "[battle_modifier|E] : Sensación breve"
  jungle_snakes_hoodoo_perk_modifier: "[battle_modifier|E] : Serpientes de la jungla Hoodoo"
  inattention_to_detail_perk_modifier: "[battle_modifier|E] : Falta de atención al detalle"
+ hydra_warrior_modifier: "Guerrero hidra" #NT!
+ MODIFIER_DEFINITION_VALUE_PER_HYDRA_PROWESS_DIFF: "#weak Aumento por diferencias con el miembro más fuerte [prowess|E]#!" #NT!
   
   # Nuwisha 
  coyotes_howl_perk_modifier: "[battle_modifier|E] : Aullido del coyote"

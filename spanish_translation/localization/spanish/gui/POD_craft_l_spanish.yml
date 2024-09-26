@@ -1,815 +1,815 @@
 ﻿l_spanish:
- tab_craft: "#T Manualidades#!" #NT!
- CRAFT: "Artesanía" #NT!
-  
- CRAFT_WINDOW_TAB_CRAFT: "Artesanía" #NT!
- CRAFT_WINDOW_TAB_CREATOR: "Creador" #NT!
- CRAFT_WINDOW_TAB_MATERIAL: "Material" #NT!
-  
- craft_alchemy: "Alquimia" #NT!
- craft_smith: "Herrero" #NT!
- craft_forge: "Fragua" #NT!
- craft_enhance: "Mejorar" #NT!
- craft_automaton: "Crear autómata" #NT!
-  
- craft_creator_window: "Creador" #NT!
- CRAFT_CREATOR: "Creador" #NT!
- CRAFT_CREATOR_WINDOW_CURRENTLY_APPOINTED: "Creador actualmente elegido" #NT!
- CRAFT_WINDOW_NOT_CREATOR: "#weak No hay [courtiers|E] que conozca un oficio#!" #NT!
-  
- CRAFT_RECIPE_TOGGLE: "¿Ocultar desconocido?" #NT!
-  
- CRAFT_CREATOR_KNOWN_RECIPE: "#weak [SelectLocalization( GetScriptedGui('has_alchemy_recipe').IsShown(GuiScope.SetRoot(Character.MakeScope).End), 'alchemy_yes', 'alchemy_no' )]#! / #weak [SelectLocalization( GetScriptedGui('has_smith_recipe').IsShown(GuiScope.SetRoot(Character.MakeScope).End), 'smith_yes', 'smith_no' )]#! / #weak [SelectLocalization( GetScriptedGui('has_forge_recipe').IsShown(GuiScope.SetRoot(Character.MakeScope).End), 'forge_yes', 'forge_no' )]#! / #weak [SelectLocalization( GetScriptedGui('has_alchemy_recipe').IsShown(GuiScope.SetRoot(Character.MakeScope).End), 'alchemy_yes', 'alchemy_no' )]0#! / #weak [SelectLocalization( GetScriptedGui('has_alchemy_recipe').IsShown(GuiScope.SetRoot(Character.MakeScope).End), 'alchemy_yes', 'alchemy_no' )]3#!" #NT!
- alchemy_yes: "#P Alquimia#!" #NT!
- alchemy_no: "#N Alquimia#!" #NT!
- smith_yes: "#P Herrero#!" #NT!
- smith_no: "#N Herrero#!" #NT!
- forge_yes: "#P Fragua#!" #NT!
- forge_no: "#N Fragua#!" #NT!
- enhance_yes: "#P Mejorar#!" #NT!
- enhance_no: "#N Mejorar#!" #NT!
- automaton_yes: "#P C...#!" #NT!
- automaton_no: "#N C...#!" #NT!
-  
- has_alchemy_recipe_tt: "[GetPlayer.MakeScope.GetVariable('craft_creator').GetCharacter.GetFirstName] no tiene conocimientos de alquimia" #NT!
- has_smith_recipe_tt: "[GetPlayer.MakeScope.GetVariable('craft_creator').GetCharacter.GetFirstName] no sabe herrar" #NT!
- has_forge_recipe_tt: "[GetPlayer.MakeScope.GetVariable('craft_creator').GetCharacter.GetFirstName] no sabe forjar" #NT!
- has_enhance_recipe_tt: "[GetPlayer.MakeScope.GetVariable('craft_creator').GetCharacter.GetFirstName] no sabe cómo mejorar los objetos" #NT!
- has_automaton_recipe_tt: "[GetPlayer.MakeScope.GetVariable('craft_creator').GetCharacter.GetFirstName] no sabe cómo crear autómatas" #NT!
-  
- character_material_window: "Recursos humanos" #NT!
- CHARACTER_MATERIAL: "Recursos humanos" #NT!
- CHARACTER_MATERIAL_WINDOW_CURRENTLY_APPOINTED: "Recursos humanos actualmente elegidos" #NT!
-  
- CHARACTER_MATERIAL_BLOOD_LEVEL: "$CHARACTER_MATERIAL_VAMPIRE_BLOOD_LEVEL$ / $CHARACTER_MATERIAL_COMMON_BLOOD_LEVEL$" #NT!
- CHARACTER_MATERIAL_VAMPIRE_BLOOD_LEVEL: "Sangre vampírica [Character.MakeScope.ScriptValue('blood_level')]" #NT!
- CHARACTER_MATERIAL_COMMON_BLOOD_LEVEL: "[SelectLocalization( GetScriptedGui('is_wraith').IsShown(GuiScope.SetRoot(Character.MakeScope).End), 'CHARACTER_MATERIAL_CORPUS_LEVEL', 'CHARACTER_MATERIAL_LIFE_FORCE_LEVEL' )]" #NT!
- CHARACTER_MATERIAL_CORPUS_LEVEL: "[Corpus|E] [Character.MakeScope.ScriptValue('corpus_level')]" #NT!
- CHARACTER_MATERIAL_LIFE_FORCE_LEVEL: "Sangre [Character.MakeScope.ScriptValue('lifeforce_points_value')]" #NT!
-  
- artifact_material_window: "Material del artefacto" #NT!
- ARTIFACT_MATERIAL: "Material del artefacto" #NT!
- ARTIFACT_MATERIAL_WINDOW_CURRENTLY_APPOINTED: "Artefacto actualmente elegido" #NT!
-  
- target_artifact_window: "Artefacto Elegido" #NT!
- TARGET_ARTIFACT: "Artefacto Elegido" #NT!
- TARGET_ARTIFACT_WINDOW_CURRENTLY_APPOINTED: "Artefacto actualmente elegido" #NT!
-  
- material_common: "Común" #NT!
-  
- material_water: "#TOOLTIP:material_water_tt #L Agua#!#!" #NT!
- material_water_tt: "Agua común, más barata en riberas de ríos, costas, mares, humedales o oasis; cara en el desierto." #NT!
- material_cost_water: "[gold_i][GetPlayer.MakeScope.ScriptValue('water_cost')]" #NT!
- material_total_cost_water: "[gold_i][GetPlayer.MakeScope.ScriptValue('water_total_cost')]" #NT!
- material_amount_water: "[GetPlayer.MakeScope.ScriptValue('water_amount')]/∞" #NT!
-  
- material_fuel: "#TOOLTIP:material_fuel_tt #L Combustible#!#!" #NT!
- material_fuel_tt: "Madera o carbón, más barato en minas, selvas, bosques o terrenos de taiga; más caro en el mar." #NT!
- material_cost_fuel: "[gold_i][GetPlayer.MakeScope.ScriptValue('fuel_cost')]" #NT!
- material_total_cost_fuel: "[gold_i][GetPlayer.MakeScope.ScriptValue('fuel_total_cost')]" #NT!
- material_amount_fuel: "[GetPlayer.MakeScope.ScriptValue('fuel_amount')]/∞" #NT!
-  
- material_herb: "#TOOLTIP:material_herb_tt #L Hierba#!#!" #NT!
- material_herb_tt: "Hierba, más barata en estepas, humedales, llanuras o terrenos inundables; cara en el mar o en el desierto. Al ser [GetTrait('lifestyle_herbalist').GetName( GetNullCharacter )] también se reduce el coste." #NT!
- material_cost_herb: "[gold_i][GetPlayer.MakeScope.ScriptValue('herb_cost')]" #NT!
- material_total_cost_herb: "[gold_i][GetPlayer.MakeScope.ScriptValue('herb_total_cost')]" #NT!
- material_amount_herb: "[GetPlayer.MakeScope.ScriptValue('herb_amount')]/∞" #NT!
-  
- material_venom: "#TOOLTIP:material_venom_tt #L Veneno#!#!" #NT!
- material_venom_tt: "El veneno es más barato en los humedales o la jungla, pero caro en el mar o en el desierto. Al ser [GetTrait('lifestyle_hunter').GetName( GetNullCharacter )] también se reduce el coste." #NT!
- material_cost_venom: "[gold_i][GetPlayer.MakeScope.ScriptValue('venom_cost')]" #NT!
- material_total_cost_venom: "[gold_i][GetPlayer.MakeScope.ScriptValue('venom_total_cost')]" #NT!
- material_amount_venom: "[GetPlayer.MakeScope.ScriptValue('venom_amount')]/∞" #NT!
-  
- material_mineral: "#TOOLTIP:material_mineral_tt #L Minerales#!#!" #NT!
- material_mineral_tt: "Rocas, minerales y gemas, más baratas en minas, montañas o terrenos desérticos; caras en el mar." #NT!
- material_cost_mineral: "[gold_i][GetPlayer.MakeScope.ScriptValue('mineral_cost')]" #NT!
- material_total_cost_mineral: "[gold_i][GetPlayer.MakeScope.ScriptValue('mineral_total_cost')]" #NT!
- material_amount_mineral: "[GetPlayer.MakeScope.ScriptValue('mineral_amount')]/∞" #NT!
-  
- material_uncommon: "Poco común" #NT!
-  
- material_exotic_water: "#TOOLTIP:material_exotic_water_tt #L Agua exótica#!#!" #NT!
- material_exotic_water_tt: "Aguas Especiales, pueden estar ubicadas en costas o riberas de ríos." #NT!
- material_cost_exotic_water: "[gold_i][GetPlayer.MakeScope.ScriptValue('exotic_water_cost')]" #NT!
- material_reserve_exotic_water: "([GetPlayer.MakeScope.ScriptValue('exotic_water_reserve')|0]/[GetPlayer.MakeScope.ScriptValue('exotic_water_max_reserve')|+0]/#TOOLTIP:material_exotic_water_max_reserve_tt #L [GetPlayer.MakeScope.ScriptValue('exotic_water_max_reserve')|V0]#!#!)" #NT!
- material_total_cost_exotic_water: "[gold_i][GetPlayer.MakeScope.ScriptValue('exotic_water_total_cost')]" #NT!
- material_amount_exotic_water: "[GetPlayer.MakeScope.ScriptValue('exotic_water_amount')]/[GetPlayer.MakeScope.ScriptValue('exotic_water_reserve')]" #NT!
- lose_exotic_water: "Perder [GetPlayer.MakeScope.ScriptValue('exotic_water_amount')|N0] $material_exotic_water$" #NT!
- gain_exotic_water: "Ganancia $VALUE|+0$ $material_exotic_water$" #NT!
- material_exotic_water_max_reserve_tt: "[GetPlayer.MakeScope.GetScriptValueDesc('exotic_water_max_reserve')]" #NT!
-  
- material_exotic_fuel: "#TOOLTIP:material_exotic_fuel_tt #L Combustible exótico#!#!" #NT!
- material_exotic_fuel_tt: "Madera Exótica, puede ubicarse en terrenos de jungla, bosque o taiga." #NT!
- material_cost_exotic_fuel: "[gold_i][GetPlayer.MakeScope.ScriptValue('exotic_fuel_cost')]" #NT!
- material_reserve_exotic_fuel: "([GetPlayer.MakeScope.ScriptValue('exotic_fuel_reserve')|0]/[GetPlayer.MakeScope.ScriptValue('exotic_fuel_max_reserve')|+0]/#TOOLTIP:material_exotic_fuel_max_reserve_tt #L [GetPlayer.MakeScope.ScriptValue('exotic_fuel_max_reserve')|V0]#!#!)" #NT!
- material_total_cost_exotic_fuel: "[gold_i][GetPlayer.MakeScope.ScriptValue('exotic_fuel_total_cost')]" #NT!
- material_amount_exotic_fuel: "[GetPlayer.MakeScope.ScriptValue('exotic_fuel_amount')]/[GetPlayer.MakeScope.ScriptValue('exotic_fuel_reserve')]" #NT!
- lose_exotic_fuel: "Perder [GetPlayer.MakeScope.ScriptValue('exotic_fuel_amount')|N0] $material_exotic_fuel$" #NT!
- gain_exotic_fuel: "Ganancia $VALUE|+0$ $material_exotic_fuel$" #NT!
- material_exotic_fuel_max_reserve_tt: "[GetPlayer.MakeScope.GetScriptValueDesc('exotic_fuel_max_reserve')]" #NT!
-  
- material_exotic_herb: "#TOOLTIP:material_exotic_herb_tt #L Hierba exótica#!#!" #NT!
- material_exotic_herb_tt: "Hierba exótica, la puedes localizar si eres un [GetTrait('lifestyle_herbalist').GetName( GetNullCharacter )]." #NT!
- material_cost_exotic_herb: "[gold_i][GetPlayer.MakeScope.ScriptValue('exotic_herb_cost')]" #NT!
- material_reserve_exotic_herb: "([GetPlayer.MakeScope.ScriptValue('exotic_herb_reserve')|0]/[GetPlayer.MakeScope.ScriptValue('exotic_herb_max_reserve')|+0]/#TOOLTIP:material_exotic_herb_max_reserve_tt #L [GetPlayer.MakeScope.ScriptValue('exotic_herb_max_reserve')|V0]#!#!)" #NT!
- material_total_cost_exotic_herb: "[gold_i][GetPlayer.MakeScope.ScriptValue('exotic_herb_total_cost')]" #NT!
- material_amount_exotic_herb: "[GetPlayer.MakeScope.ScriptValue('exotic_herb_amount')]/[GetPlayer.MakeScope.ScriptValue('exotic_herb_reserve')]" #NT!
- lose_exotic_herb: "Perder [GetPlayer.MakeScope.ScriptValue('exotic_herb_amount')|N0] $material_exotic_herb$" #NT!
- gain_exotic_herb: "Ganancia $VALUE|+0$ $material_exotic_herb$" #NT!
- material_exotic_herb_max_reserve_tt: "[GetPlayer.MakeScope.GetScriptValueDesc('exotic_herb_max_reserve')]" #NT!
-  
- material_exotic_mineral: "#TOOLTIP:material_exotic_mineral_tt #L Mineral exótico#!#!" #NT!
- material_exotic_mineral_tt: "Metal exótico, se puede localizar en las minas." #NT!
- material_cost_exotic_mineral: "[gold_i][GetPlayer.MakeScope.ScriptValue('exotic_mineral_cost')]" #NT!
- material_reserve_exotic_mineral: "([GetPlayer.MakeScope.ScriptValue('exotic_mineral_reserve')|0]/[GetPlayer.MakeScope.ScriptValue('exotic_mineral_max_reserve')|+0]/#TOOLTIP:material_exotic_mineral_max_reserve_tt #L [GetPlayer.MakeScope.ScriptValue('exotic_mineral_max_reserve')|V0]#!#!)" #NT!
- material_total_cost_exotic_mineral: "[gold_i][GetPlayer.MakeScope.ScriptValue('exotic_mineral_total_cost')]" #NT!
- material_amount_exotic_mineral: "[GetPlayer.MakeScope.ScriptValue('exotic_mineral_amount')]/[GetPlayer.MakeScope.ScriptValue('exotic_mineral_reserve')]" #NT!
- lose_exotic_mineral: "Perder [GetPlayer.MakeScope.ScriptValue('exotic_mineral_amount')|N0] $material_exotic_mineral$" #NT!
- gain_exotic_mineral: "Ganancia $VALUE|+0$ $material_exotic_mineral$" #NT!
- material_exotic_mineral_max_reserve_tt: "[GetPlayer.MakeScope.GetScriptValueDesc('exotic_mineral_max_reserve')]" #NT!
-  
- material_rare: "Extraño" #NT!
-  
- material_magic_water: "#TOOLTIP:material_magic_water_tt #L Agua Mágica#!#!" #NT!
- material_magic_water_tt: "Agua Mágica, solo se puede encontrar en el [umbra|E]" #NT!
- material_cost_magic_water: "[gold_i][GetPlayer.MakeScope.ScriptValue('magic_water_cost')]" #NT!
- material_reserve_magic_water: "([GetPlayer.MakeScope.ScriptValue('magic_water_reserve')|0]/#TOOLTIP:material_magic_water_income_tt #L [GetPlayer.MakeScope.ScriptValue('magic_water_income')|+0]#!#!/#TOOLTIP:material_magic_water_max_reserve_tt #L [GetPlayer.MakeScope.ScriptValue('magic_water_max_reserve')|V0]#!#!)" #NT!
- material_total_cost_magic_water: "[gold_i][GetPlayer.MakeScope.ScriptValue('magic_water_total_cost')]" #NT!
- material_amount_magic_water: "[GetPlayer.MakeScope.ScriptValue('magic_water_amount')]/[GetPlayer.MakeScope.ScriptValue('magic_water_reserve')]" #NT!
- lose_magic_water: "Perder [GetPlayer.MakeScope.ScriptValue('magic_water_amount')|N0] $material_magic_water$" #NT!
- gain_magic_water: "Ganancia $VALUE|+0$ $material_magic_water$" #NT!
- material_magic_water_income_tt: "[GetPlayer.MakeScope.GetScriptValueDesc('magic_water_income')]" #NT!
- material_magic_water_max_reserve_tt: "[GetPlayer.MakeScope.GetScriptValueDesc('magic_water_max_reserve')]" #NT!
-  
- material_magic_fuel: "#TOOLTIP:material_magic_fuel_tt #L Combustible mágico#!#!" #NT!
- material_magic_fuel_tt: "Madera Mágica, solo se puede encontrar en el [umbra|E]" #NT!
- material_cost_magic_fuel: "[gold_i][GetPlayer.MakeScope.ScriptValue('magic_fuel_cost')]" #NT!
- material_reserve_magic_fuel: "([GetPlayer.MakeScope.ScriptValue('magic_fuel_reserve')|0]/#TOOLTIP:material_magic_fuel_income_tt #L [GetPlayer.MakeScope.ScriptValue('magic_fuel_income')|+0]#!#!/#TOOLTIP:material_magic_fuel_max_reserve_tt #L [GetPlayer.MakeScope.ScriptValue('magic_fuel_max_reserve')|V0]#!#!)" #NT!
- material_total_cost_magic_fuel: "[gold_i][GetPlayer.MakeScope.ScriptValue('magic_fuel_total_cost')]" #NT!
- material_amount_magic_fuel: "[GetPlayer.MakeScope.ScriptValue('magic_fuel_amount')]/[GetPlayer.MakeScope.ScriptValue('magic_fuel_reserve')]" #NT!
- lose_magic_fuel: "Perder [GetPlayer.MakeScope.ScriptValue('magic_fuel_amount')|N0] $material_magic_fuel$" #NT!
- gain_magic_fuel: "Ganancia $VALUE|+0$ $material_magic_fuel$" #NT!
- material_magic_fuel_income_tt: "[GetPlayer.MakeScope.GetScriptValueDesc('magic_fuel_income')]" #NT!
- material_magic_fuel_max_reserve_tt: "[GetPlayer.MakeScope.GetScriptValueDesc('magic_fuel_max_reserve')]" #NT!
-  
- material_magic_herb: "#TOOLTIP:material_magic_herb_tt #L Hierba mágica#!#!" #NT!
- material_magic_herb_tt: "Hierba mágica, solo se puede encontrar en el [umbra|E]" #NT!
- material_cost_magic_herb: "[gold_i][GetPlayer.MakeScope.ScriptValue('magic_herb_cost')]" #NT!
- material_reserve_magic_herb: "([GetPlayer.MakeScope.ScriptValue('magic_herb_reserve')|0]/#TOOLTIP:material_magic_herb_income_tt #L [GetPlayer.MakeScope.ScriptValue('magic_herb_income')|+0]#!#!/#TOOLTIP:material_magic_herb_max_reserve_tt #L [GetPlayer.MakeScope.ScriptValue('magic_herb_max_reserve')|V0]#!#!)" #NT!
- material_total_cost_magic_herb: "[gold_i][GetPlayer.MakeScope.ScriptValue('magic_herb_total_cost')]" #NT!
- material_amount_magic_herb: "[GetPlayer.MakeScope.ScriptValue('magic_herb_amount')]/[GetPlayer.MakeScope.ScriptValue('magic_herb_reserve')]" #NT!
- lose_magic_herb: "Perder [GetPlayer.MakeScope.ScriptValue('magic_herb_amount')|N0] $material_magic_herb$" #NT!
- gain_magic_herb: "Ganancia $VALUE|+0$ $material_magic_herb$" #NT!
- material_magic_herb_income_tt: "[GetPlayer.MakeScope.GetScriptValueDesc('magic_herb_income')]" #NT!
- material_magic_herb_max_reserve_tt: "[GetPlayer.MakeScope.GetScriptValueDesc('magic_herb_max_reserve')]" #NT!
-  
- material_magic_mineral: "#TOOLTIP:material_magic_mineral_tt #L Mineral mágico#!#!" #NT!
- material_magic_mineral_tt: "Metal mágico, solo se puede encontrar en el [umbra|E]" #NT!
- material_cost_magic_mineral: "[gold_i][GetPlayer.MakeScope.ScriptValue('magic_mineral_cost')]" #NT!
- material_reserve_magic_mineral: "([GetPlayer.MakeScope.ScriptValue('magic_mineral_reserve')|0]/#TOOLTIP:material_magic_mineral_income_tt #L [GetPlayer.MakeScope.ScriptValue('magic_mineral_income')|+0]#!#!/#TOOLTIP:material_magic_mineral_max_reserve_tt #L [GetPlayer.MakeScope.ScriptValue('magic_mineral_max_reserve')|V0]#!#!)" #NT!
- material_total_cost_magic_mineral: "[gold_i][GetPlayer.MakeScope.ScriptValue('magic_mineral_total_cost')]" #NT!
- material_amount_magic_mineral: "[GetPlayer.MakeScope.ScriptValue('magic_mineral_amount')]/[GetPlayer.MakeScope.ScriptValue('magic_mineral_reserve')]" #NT!
- lose_magic_mineral: "Perder [GetPlayer.MakeScope.ScriptValue('magic_mineral_amount')|N0] $material_magic_mineral$" #NT!
- gain_magic_mineral: "Ganancia $VALUE|+0$ $material_magic_mineral$" #NT!
- material_magic_mineral_income_tt: "[GetPlayer.MakeScope.GetScriptValueDesc('magic_mineral_income')]" #NT!
- material_magic_mineral_max_reserve_tt: "[GetPlayer.MakeScope.GetScriptValueDesc('magic_mineral_max_reserve')]" #NT!
-  
- material_special: "Especial" #NT!
-  
- material_common_artifact_piece: "#TOOLTIP:material_common_artifact_piece_tt #L Pieza de artefacto (común)#!#!" #NT!
- material_common_artifact_piece_tt: "Pieza de artefacto, solo se puede encontrar en el [underworld|E] o rompiéndola/restaurándola con un [perk|E] específico" #NT!
- material_reserve_common_artifact_piece: "([GetPlayer.MakeScope.ScriptValue('common_artifact_piece_reserve')|0])" #NT!
- material_total_cost_common_artifact_piece: "[gold_i]0" #NT!
- material_amount_common_artifact_piece: "[GetPlayer.MakeScope.ScriptValue('common_artifact_piece_amount')]/[GetPlayer.MakeScope.ScriptValue('common_artifact_piece_reserve')]" #NT!
-  
- material_masterwork_artifact_piece: "#TOOLTIP:material_masterwork_artifact_piece_tt #L Pieza de artefacto (obra maestra)#!#!" #NT!
- material_masterwork_artifact_piece_tt: "Pieza de artefacto, solo se puede encontrar en el [underworld|E] o rompiéndola/restaurándola con un [perk|E] específico" #NT!
- material_reserve_masterwork_artifact_piece: "([GetPlayer.MakeScope.ScriptValue('masterwork_artifact_piece_reserve')|0])" #NT!
- material_total_cost_masterwork_artifact_piece: "[gold_i]0" #NT!
- material_amount_masterwork_artifact_piece: "[GetPlayer.MakeScope.ScriptValue('masterwork_artifact_piece_amount')]/[GetPlayer.MakeScope.ScriptValue('masterwork_artifact_piece_reserve')]" #NT!
-  
- material_famed_artifact_piece: "#TOOLTIP:material_famed_artifact_piece_tt #L Pieza de artefacto (famosa)#!#!" #NT!
- material_famed_artifact_piece_tt: "Pieza de artefacto, solo se puede encontrar en el [underworld|E] o rompiéndola/restaurándola con un [perk|E] específico" #NT!
- material_reserve_famed_artifact_piece: "([GetPlayer.MakeScope.ScriptValue('famed_artifact_piece_reserve')|0])" #NT!
- material_total_cost_famed_artifact_piece: "[gold_i]0" #NT!
- material_amount_famed_artifact_piece: "[GetPlayer.MakeScope.ScriptValue('famed_artifact_piece_amount')]/[GetPlayer.MakeScope.ScriptValue('famed_artifact_piece_reserve')]" #NT!
-  
- material_illustrious_artifact_piece: "#TOOLTIP:material_illustrious_artifact_piece_tt #L Pieza de artefacto (ilustre)#!#!" #NT!
- material_illustrious_artifact_piece_tt: "Pieza de artefacto, solo se puede encontrar en el [underworld|E] o rompiéndola/restaurándola con un [perk|E] específico" #NT!
- material_reserve_illustrious_artifact_piece: "([GetPlayer.MakeScope.ScriptValue('illustrious_artifact_piece_reserve')|0])" #NT!
- material_total_cost_illustrious_artifact_piece: "[gold_i]0" #NT!
- material_amount_illustrious_artifact_piece: "[GetPlayer.MakeScope.ScriptValue('illustrious_artifact_piece_amount')]/[GetPlayer.MakeScope.ScriptValue('illustrious_artifact_piece_reserve')]" #NT!
-  
- material_sekhem: "Sejem" #NT!
- material_total_cost_sekhem: "[gold_i]0" #NT!
- material_amount_sekhem: "[GetPlayer.MakeScope.ScriptValue('sekhem_amount')]/[GetPlayer.MakeScope.ScriptValue('sekhem_reserve')]" #NT!
-  
- material_no_sekhem: "Sin Sekhem" #NT!
- material_no_inertion: "Sin inercia" #NT!
-  
- material_simple_elixir: "$simple_elixir_modifier$" #NT!
- material_total_cost_simple_elixir: "[gold_i]0" #NT!
- material_amount_simple_elixir: "[GetPlayer.MakeScope.ScriptValue('simple_elixir_amount')]/[GetPlayer.MakeScope.ScriptValue('simple_elixir_reserve')]" #NT!
-  
- material_complex_elixir: "$complex_elixir_modifier$" #NT!
- material_total_cost_complex_elixir: "[gold_i]0" #NT!
- material_amount_complex_elixir: "[GetPlayer.MakeScope.ScriptValue('complex_elixir_amount')]/[GetPlayer.MakeScope.ScriptValue('complex_elixir_reserve')]" #NT!
-  
- material_potent_elixir: "$potent_elixir_modifier$" #NT!
- material_total_cost_potent_elixir: "[gold_i]0" #NT!
- material_amount_potent_elixir: "[GetPlayer.MakeScope.ScriptValue('potent_elixir_amount')]/[GetPlayer.MakeScope.ScriptValue('potent_elixir_reserve')]" #NT!
-  
- material_princely_elixir: "$princely_elixir_modifier$" #NT!
- material_total_cost_princely_elixir: "[gold_i]0" #NT!
- material_amount_princely_elixir: "[GetPlayer.MakeScope.ScriptValue('princely_elixir_amount')]/[GetPlayer.MakeScope.ScriptValue('princely_elixir_reserve')]" #NT!
-  
- material_kingly_elixir: "$kingly_elixir_modifier$" #NT!
- material_total_cost_kingly_elixir: "[gold_i]0" #NT!
- material_amount_kingly_elixir: "[GetPlayer.MakeScope.ScriptValue('kingly_elixir_amount')]/[GetPlayer.MakeScope.ScriptValue('kingly_elixir_reserve')]" #NT!
-  
- material_simple_tonic: "$simple_tonic_modifier$" #NT!
- material_total_cost_simple_tonic: "[gold_i]0" #NT!
- material_amount_simple_tonic: "[GetPlayer.MakeScope.ScriptValue('simple_tonic_amount')]/[GetPlayer.MakeScope.ScriptValue('simple_tonic_reserve')]" #NT!
-  
- material_complex_tonic: "$complex_tonic_modifier$" #NT!
- material_total_cost_complex_tonic: "[gold_i]0" #NT!
- material_amount_complex_tonic: "[GetPlayer.MakeScope.ScriptValue('complex_tonic_amount')]/[GetPlayer.MakeScope.ScriptValue('complex_tonic_reserve')]" #NT!
-  
- material_potent_tonic: "$potent_tonic_modifier$" #NT!
- material_total_cost_potent_tonic: "[gold_i]0" #NT!
- material_amount_potent_tonic: "[GetPlayer.MakeScope.ScriptValue('potent_tonic_amount')]/[GetPlayer.MakeScope.ScriptValue('potent_tonic_reserve')]" #NT!
-  
- material_princely_tonic: "$princely_tonic_modifier$" #NT!
- material_total_cost_princely_tonic: "[gold_i]0" #NT!
- material_amount_princely_tonic: "[GetPlayer.MakeScope.ScriptValue('princely_tonic_amount')]/[GetPlayer.MakeScope.ScriptValue('princely_tonic_reserve')]" #NT!
-  
- material_kingly_tonic: "$kingly_tonic_modifier$" #NT!
- material_total_cost_kingly_tonic: "[gold_i]0" #NT!
- material_amount_kingly_tonic: "[GetPlayer.MakeScope.ScriptValue('kingly_tonic_amount')]/[GetPlayer.MakeScope.ScriptValue('kingly_tonic_reserve')]" #NT!
-  
- material_mild_poison: "$mild_poison_modifier$" #NT!
- material_total_cost_mild_poison: "[gold_i]0" #NT!
- material_amount_mild_poison: "[GetPlayer.MakeScope.ScriptValue('mild_poison_amount')]/[GetPlayer.MakeScope.ScriptValue('mild_poison_reserve')]" #NT!
-  
- material_dangerous_poison: "$dangerous_poison_modifier$" #NT!
- material_total_cost_dangerous_poison: "[gold_i]0" #NT!
- material_amount_dangerous_poison: "[GetPlayer.MakeScope.ScriptValue('dangerous_poison_amount')]/[GetPlayer.MakeScope.ScriptValue('dangerous_poison_reserve')]" #NT!
-  
- material_deadly_poison: "$deadly_poison_modifier$" #NT!
- material_total_cost_deadly_poison: "[gold_i]0" #NT!
- material_amount_deadly_poison: "[GetPlayer.MakeScope.ScriptValue('deadly_poison_amount')]/[GetPlayer.MakeScope.ScriptValue('deadly_poison_reserve')]" #NT!
-  
- material_simple_philtre: "$simple_philtre_modifier$" #NT!
- material_total_cost_simple_philtre: "[gold_i]0" #NT!
- material_amount_simple_philtre: "[GetPlayer.MakeScope.ScriptValue('simple_philtre_amount')]/[GetPlayer.MakeScope.ScriptValue('simple_philtre_reserve')]" #NT!
-  
- material_complex_philtre: "$complex_philtre_modifier$" #NT!
- material_total_cost_complex_philtre: "[gold_i]0" #NT!
- material_amount_complex_philtre: "[GetPlayer.MakeScope.ScriptValue('complex_philtre_amount')]/[GetPlayer.MakeScope.ScriptValue('complex_philtre_reserve')]" #NT!
-  
- material_essence_longing: "$essence_longing_modifier$" #NT!
- material_total_cost_essence_longing: "[gold_i]0" #NT!
- material_amount_essence_longing: "[GetPlayer.MakeScope.ScriptValue('essence_longing_amount')]/[GetPlayer.MakeScope.ScriptValue('essence_longing_reserve')]" #NT!
-  
- material_eyes_of_the_ka: "$eyes_of_the_ka_modifier$" #NT!
- material_total_cost_eyes_of_the_ka: "[gold_i]0" #NT!
- material_amount_eyes_of_the_ka: "[GetPlayer.MakeScope.ScriptValue('eyes_of_the_ka_amount')]/[GetPlayer.MakeScope.ScriptValue('eyes_of_the_ka_reserve')]" #NT!
-  
- material_potion_of_separable_ka: "$potion_of_separable_ka_modifier$" #NT!
- material_total_cost_potion_of_separable_ka: "[gold_i]0" #NT!
- material_amount_potion_of_separable_ka: "[GetPlayer.MakeScope.ScriptValue('potion_of_separable_ka_amount')]/[GetPlayer.MakeScope.ScriptValue('potion_of_separable_ka_reserve')]" #NT!
-  
- material_counterfeit_1: "Falsificación 1" #NT!
- material_total_cost_counterfeit_1: "[gold_i]0" #NT!
- material_amount_counterfeit_1: "[GetPlayer.MakeScope.ScriptValue('counterfeit_1_amount')]/[GetPlayer.MakeScope.ScriptValue('counterfeit_1_reserve')]" #NT!
-  
- material_counterfeit_2: "Falsificación 2" #NT!
- material_total_cost_counterfeit_2: "[gold_i]0" #NT!
- material_amount_counterfeit_2: "[GetPlayer.MakeScope.ScriptValue('counterfeit_2_amount')]/[GetPlayer.MakeScope.ScriptValue('counterfeit_2_reserve')]" #NT!
-  
- material_counterfeit_3: "Falsificación 3" #NT!
- material_total_cost_counterfeit_3: "[gold_i]0" #NT!
- material_amount_counterfeit_3: "[GetPlayer.MakeScope.ScriptValue('counterfeit_3_amount')]/[GetPlayer.MakeScope.ScriptValue('counterfeit_3_reserve')]" #NT!
-  
- material_vampire_blood: "Sangre de vampiro" #NT!
- material_total_cost_vampire_blood: "[gold_i]0" #NT!
- material_amount_vampire_blood: "[GetPlayer.MakeScope.ScriptValue('vampire_blood_amount')]/[GetPlayer.MakeScope.ScriptValue('vampire_blood_reserve')]" #NT!
-  
- material_animalism_blood: "Animalismo Sangre" #NT!
- material_total_cost_animalism_blood: "[gold_i]0" #NT!
- material_amount_animalism_blood: "[GetPlayer.MakeScope.ScriptValue('animalism_blood_amount')]/[GetPlayer.MakeScope.ScriptValue('animalism_blood_reserve')]" #NT!
-  
- material_auspex_blood: "Sangre de Auspex" #NT!
- material_total_cost_auspex_blood: "[gold_i]0" #NT!
- material_amount_auspex_blood: "[GetPlayer.MakeScope.ScriptValue('auspex_blood_amount')]/[GetPlayer.MakeScope.ScriptValue('auspex_blood_reserve')]" #NT!
-  
- material_celerity_blood: "Celeridad Sangre" #NT!
- material_total_cost_celerity_blood: "[gold_i]0" #NT!
- material_amount_celerity_blood: "[GetPlayer.MakeScope.ScriptValue('celerity_blood_amount')]/[GetPlayer.MakeScope.ScriptValue('celerity_blood_reserve')]" #NT!
-  
- material_dominate_blood: "Dominar la sangre" #NT!
- material_total_cost_dominate_blood: "[gold_i]0" #NT!
- material_amount_dominate_blood: "[GetPlayer.MakeScope.ScriptValue('dominate_blood_amount')]/[GetPlayer.MakeScope.ScriptValue('dominate_blood_reserve')]" #NT!
-  
- material_fortitude_blood: "Sangre de fortaleza" #NT!
- material_total_cost_fortitude_blood: "[gold_i]0" #NT!
- material_amount_fortitude_blood: "[GetPlayer.MakeScope.ScriptValue('fortitude_blood_amount')]/[GetPlayer.MakeScope.ScriptValue('fortitude_blood_reserve')]" #NT!
-  
- material_obfuscate_blood: "Ofuscar la sangre" #NT!
- material_total_cost_obfuscate_blood: "[gold_i]0" #NT!
- material_amount_obfuscate_blood: "[GetPlayer.MakeScope.ScriptValue('obfuscate_blood_amount')]/[GetPlayer.MakeScope.ScriptValue('obfuscate_blood_reserve')]" #NT!
-  
- material_potence_blood: "Potencia Sangre" #NT!
- material_total_cost_potence_blood: "[gold_i]0" #NT!
- material_amount_potence_blood: "[GetPlayer.MakeScope.ScriptValue('potence_blood_amount')]/[GetPlayer.MakeScope.ScriptValue('potence_blood_reserve')]" #NT!
-  
- material_presence_blood: "Presencia Sangre" #NT!
- material_total_cost_presence_blood: "[gold_i]0" #NT!
- material_amount_presence_blood: "[GetPlayer.MakeScope.ScriptValue('presence_blood_amount')]/[GetPlayer.MakeScope.ScriptValue('presence_blood_reserve')]" #NT!
-  
- material_protean_blood: "Sangre proteica" #NT!
- material_total_cost_protean_blood: "[gold_i]0" #NT!
- material_amount_protean_blood: "[GetPlayer.MakeScope.ScriptValue('protean_blood_amount')]/[GetPlayer.MakeScope.ScriptValue('protean_blood_reserve')]" #NT!
-  
- material_artifact_sekhem_vessel: "$artifact_sekhem_vessel_name$" #NT!
- material_total_cost_artifact_sekhem_vessel: "[gold_i]0" #NT!
- material_amount_artifact_sekhem_vessel: "[GetPlayer.MakeScope.ScriptValue('artifact_sekhem_vessel_amount')]/[GetPlayer.MakeScope.ScriptValue('artifact_sekhem_vessel_reserve')]" #NT!
-  
- material_artifact_lesser_chattel: "$artifact_lesser_chattel_name$" #NT!
- material_total_cost_artifact_lesser_chattel: "[gold_i]0" #NT!
- material_amount_artifact_lesser_chattel: "[GetPlayer.MakeScope.ScriptValue('artifact_lesser_chattel_amount')]/[GetPlayer.MakeScope.ScriptValue('artifact_lesser_chattel_reserve')]" #NT!
-  
- material_artifact_complex_chattel: "$artifact_complex_chattel_name$" #NT!
- material_total_cost_artifact_complex_chattel: "[gold_i]0" #NT!
- material_amount_artifact_complex_chattel: "[GetPlayer.MakeScope.ScriptValue('artifact_complex_chattel_amount')]/[GetPlayer.MakeScope.ScriptValue('artifact_complex_chattel_reserve')]" #NT!
-  
- material_artifact_superior_chattel: "$artifact_superior_chattel_name$" #NT!
- material_total_cost_artifact_superior_chattel: "[gold_i]0" #NT!
- material_amount_artifact_superior_chattel: "[GetPlayer.MakeScope.ScriptValue('artifact_superior_chattel_amount')]/[GetPlayer.MakeScope.ScriptValue('artifact_superior_chattel_reserve')]" #NT!
-  
- material_artifact_simple_creature: "$artifact_simple_creature_name$" #NT!
- material_total_cost_artifact_simple_creature: "[gold_i]0" #NT!
- material_amount_artifact_simple_creature: "[GetPlayer.MakeScope.ScriptValue('artifact_simple_creature_amount')]/[GetPlayer.MakeScope.ScriptValue('artifact_simple_creature_reserve')]" #NT!
-  
- material_artifact_lesser_creature: "$artifact_lesser_creature_name$" #NT!
- material_total_cost_artifact_lesser_creature: "[gold_i]0" #NT!
- material_amount_artifact_lesser_creature: "[GetPlayer.MakeScope.ScriptValue('artifact_lesser_creature_amount')]/[GetPlayer.MakeScope.ScriptValue('artifact_lesser_creature_reserve')]" #NT!
-  
- material_artifact_major_creature: "$artifact_major_creature_name$" #NT!
- material_total_cost_artifact_major_creature: "[gold_i]0" #NT!
- material_amount_artifact_major_creature: "[GetPlayer.MakeScope.ScriptValue('artifact_major_creature_amount')]/[GetPlayer.MakeScope.ScriptValue('artifact_major_creature_reserve')]" #NT!
-  
- material_artifact_superior_creature: "$artifact_superior_creature_name$" #NT!
- material_total_cost_artifact_superior_creature: "[gold_i]0" #NT!
- material_amount_artifact_superior_creature: "[GetPlayer.MakeScope.ScriptValue('artifact_superior_creature_amount')]/[GetPlayer.MakeScope.ScriptValue('artifact_superior_creature_reserve')]" #NT!
-  
- material_artifact_princely_creature: "$artifact_princely_creature_name$" #NT!
- material_total_cost_artifact_princely_creature: "[gold_i]0" #NT!
- material_amount_artifact_princely_creature: "[GetPlayer.MakeScope.ScriptValue('artifact_princely_creature_amount')]/[GetPlayer.MakeScope.ScriptValue('artifact_princely_creature_reserve')]" #NT!
-  
- material_artifact_viziers_beast: "$artifact_viziers_beast_name$" #NT!
- material_total_cost_artifact_viziers_beast: "[gold_i]0" #NT!
- material_amount_artifact_viziers_beast: "[GetPlayer.MakeScope.ScriptValue('artifact_viziers_beast_amount')]/[GetPlayer.MakeScope.ScriptValue('artifact_viziers_beast_reserve')]" #NT!
-  
- material_artifact_kingly_beast: "$artifact_kingly_beast_name$" #NT!
- material_total_cost_artifact_kingly_beast: "[gold_i]0" #NT!
- material_amount_artifact_kingly_beast: "[GetPlayer.MakeScope.ScriptValue('artifact_kingly_beast_amount')]/[GetPlayer.MakeScope.ScriptValue('artifact_kingly_beast_reserve')]" #NT!
-  
- enough_material: "¿No tiene suficiente material? #bold" #NT!
- no_character_material: "¿#bold no#! ha elegido algún recurso humano?" #NT!
- no_artifact_material: "¿#bold no#! ha elegido algún material de artefacto?" #NT!
- enough_common_artifact_piece: "¿Tienen #bold o no#! #V 3#! piezas de artefactos comunes?" #NT!
- enough_masterwork_artifact_piece: "¿Tiene #bold no#! #V 3#! piezas de artefactos de obra maestra?" #NT!
- enough_famed_artifact_piece: "¿Tiene #bold no#! #V 3#! piezas de artefactos famosos?" #NT!
- enough_illustrious_artifact_piece: "¿Tiene #bold no#! #V 3#! piezas de artefactos ilustres?" #NT!
-  
- POD_craft_mummy_origin: "#TOOLTIP:POD_craft_mummy_origin_tt @mummy_icon!#!" #NT!
- POD_craft_mummy_origin_tt: "Esta receta proviene de un [GetTrait('mummy').GetName( GetNullCharacter )] hekau." #NT!
- POD_craft_vampire_origin: "#TOOLTIP:POD_craft_vampire_origin_tt @icono_vampiro!#!" #NT!
- POD_craft_vampire_origin_tt: "Esta receta proviene de una disciplina [GetTrait('vampire').GetName( GetNullCharacter )]." #NT!
- POD_craft_thin_blood_origin: "#TOOLTIP:POD_craft_thin_blood_origin_tt @icono_de_sangre_delgada!#!" #NT!
- POD_craft_thin_blood_origin_tt: "Esta receta proviene de la alquimia de sangre fina, una disciplina [GetTrait('vampire').GetName( GetNullCharacter )]." #NT!
- POD_craft_sorcerer_origin: "#TOOLTIP:POD_craft_sorcerer_origin_tt @sorcerer_icon!#!" #NT!
- POD_craft_sorcerer_origin_tt: "Esta receta proviene de un camino mágico disponible para [GetTrait('sorcerer').GetName( GetNullCharacter )]" #NT!
- POD_craft_wraith_origin: "#TOOLTIP:POD_craft_wraith_origin_tt @wraith_icon!#!" #NT!
- POD_craft_wraith_origin_tt: "Esta receta proviene de un arcanoi [GetTrait('wraith').GetName( GetNullCharacter )]." #NT!
- POD_craft_fae_origin: "#TOOLTIP:POD_craft_fae_origin_tt @fae_icon!#!" #NT!
- POD_craft_fae_origin_tt: "Esta receta proviene de un truco [GetTrait('fae').GetName( GetNullCharacter )]." #NT!
- POD_craft_kueijin_origin: "#TOOLTIP:POD_craft_kueijin_origin_tt @kueijin_icon!#!" #NT!
- POD_craft_kueijin_origin_tt: "Esta receta proviene de una potencia [GetTrait('kueijin').GetName( GetNullCharacter )]." #NT!
- POD_craft_demon_origin: "#TOOLTIP:POD_craft_demon_origin_tt @icono_demonio!#!" #NT!
- POD_craft_demon_origin_tt: "Esta receta proviene de un poder de tradición [GetTrait('demon').GetName( GetNullCharacter )]." #NT!
- POD_craft_fera_origin: "#TOOLTIP:POD_craft_fera_origin_tt @fera_icon!#!" #NT!
- POD_craft_fera_origin_tt: "Esta receta proviene de un poder de [GetTrait('werewolf').GetName( GetNullCharacter )] y otros cambiaformas." #NT!
- POD_craft_psychic_origin: "#TOOLTIP:POD_craft_psychic_origin_tt @psychic_icon!#!" #NT!
- POD_craft_psychic_origin_tt: "Esta receta proviene de una potencia [GetTrait('psychic').GetName( GetNullCharacter )]." #NT!
- POD_craft_truefaith_origin: "#TOOLTIP:POD_craft_truefaith_origin_tt @truefaith_icon!#!" #NT!
- POD_craft_truefaith_origin_tt: "Esta receta proviene de una potencia [GetTrait('truefaith').GetName( GetNullCharacter )]." #NT!
- POD_craft_horror_origin: "#TOOLTIP:POD_craft_horror_origin_tt @icono_de_horror!#!" #NT!
- POD_craft_horror_origin_tt: "Esta receta proviene de una potencia [GetTrait('lament').GetName( GetNullCharacter )]." #NT!
+ tab_craft: "#T Manualidades#!"
+ CRAFT: "Artesanía"
+  
+ CRAFT_WINDOW_TAB_CRAFT: "Artesanía"
+ CRAFT_WINDOW_TAB_CREATOR: "Creador"
+ CRAFT_WINDOW_TAB_MATERIAL: "Material"
+  
+ craft_alchemy: "Alquimia"
+ craft_smith: "Herrero"
+ craft_forge: "Fragua"
+ craft_enhance: "Mejorar"
+ craft_automaton: "Crear autómata"
+  
+ craft_creator_window: "Creador"
+ CRAFT_CREATOR: "Creador"
+ CRAFT_CREATOR_WINDOW_CURRENTLY_APPOINTED: "Creador actualmente elegido"
+ CRAFT_WINDOW_NOT_CREATOR: "#weak No hay [courtiers|E] que conozca un oficio#!"
+  
+ CRAFT_RECIPE_TOGGLE: "¿Ocultar desconocido?"
+  
+ CRAFT_CREATOR_KNOWN_RECIPE: "#weak [SelectLocalization( GetScriptedGui('has_alchemy_recipe').IsShown(GuiScope.SetRoot(Character.MakeScope).End), 'alchemy_yes', 'alchemy_no' )]#! / #weak [SelectLocalization( GetScriptedGui('has_smith_recipe').IsShown(GuiScope.SetRoot(Character.MakeScope).End), 'smith_yes', 'smith_no' )]#! / #weak [SelectLocalization( GetScriptedGui('has_forge_recipe').IsShown(GuiScope.SetRoot(Character.MakeScope).End), 'forge_yes', 'forge_no' )]#! / #weak [SelectLocalization( GetScriptedGui('has_alchemy_recipe').IsShown(GuiScope.SetRoot(Character.MakeScope).End), 'alchemy_yes', 'alchemy_no' )]0#! / #weak [SelectLocalization( GetScriptedGui('has_alchemy_recipe').IsShown(GuiScope.SetRoot(Character.MakeScope).End), 'alchemy_yes', 'alchemy_no' )]3#!"
+ alchemy_yes: "#P Alquimia#!"
+ alchemy_no: "#N Alquimia#!"
+ smith_yes: "#P Herrero#!"
+ smith_no: "#N Herrero#!"
+ forge_yes: "#P Fragua#!"
+ forge_no: "#N Fragua#!"
+ enhance_yes: "#P Mejorar#!"
+ enhance_no: "#N Mejorar#!"
+ automaton_yes: "#P C...#!"
+ automaton_no: "#N C...#!"
+  
+ has_alchemy_recipe_tt: "[GetPlayer.MakeScope.GetVariable('craft_creator').GetCharacter.GetFirstName] no tiene conocimientos de alquimia"
+ has_smith_recipe_tt: "[GetPlayer.MakeScope.GetVariable('craft_creator').GetCharacter.GetFirstName] no sabe herrar"
+ has_forge_recipe_tt: "[GetPlayer.MakeScope.GetVariable('craft_creator').GetCharacter.GetFirstName] no sabe forjar"
+ has_enhance_recipe_tt: "[GetPlayer.MakeScope.GetVariable('craft_creator').GetCharacter.GetFirstName] no sabe cómo mejorar los objetos"
+ has_automaton_recipe_tt: "[GetPlayer.MakeScope.GetVariable('craft_creator').GetCharacter.GetFirstName] no sabe cómo crear autómatas"
+  
+ character_material_window: "Recursos humanos"
+ CHARACTER_MATERIAL: "Recursos humanos"
+ CHARACTER_MATERIAL_WINDOW_CURRENTLY_APPOINTED: "Recursos humanos actualmente elegidos"
+  
+ CHARACTER_MATERIAL_BLOOD_LEVEL: "$CHARACTER_MATERIAL_VAMPIRE_BLOOD_LEVEL$ / $CHARACTER_MATERIAL_COMMON_BLOOD_LEVEL$"
+ CHARACTER_MATERIAL_VAMPIRE_BLOOD_LEVEL: "Sangre vampírica [Character.MakeScope.ScriptValue('blood_level')]"
+ CHARACTER_MATERIAL_COMMON_BLOOD_LEVEL: "[SelectLocalization( GetScriptedGui('is_wraith').IsShown(GuiScope.SetRoot(Character.MakeScope).End), 'CHARACTER_MATERIAL_CORPUS_LEVEL', 'CHARACTER_MATERIAL_LIFE_FORCE_LEVEL' )]"
+ CHARACTER_MATERIAL_CORPUS_LEVEL: "[Corpus|E] [Character.MakeScope.ScriptValue('corpus_level')]"
+ CHARACTER_MATERIAL_LIFE_FORCE_LEVEL: "Sangre [Character.MakeScope.ScriptValue('lifeforce_points_value')]"
+  
+ artifact_material_window: "Material del artefacto"
+ ARTIFACT_MATERIAL: "Material del artefacto"
+ ARTIFACT_MATERIAL_WINDOW_CURRENTLY_APPOINTED: "Artefacto actualmente elegido"
+  
+ target_artifact_window: "Artefacto Elegido"
+ TARGET_ARTIFACT: "Artefacto Elegido"
+ TARGET_ARTIFACT_WINDOW_CURRENTLY_APPOINTED: "Artefacto actualmente elegido"
+  
+ material_common: "Común"
+  
+ material_water: "#TOOLTIP:material_water_tt #L Agua#!#!"
+ material_water_tt: "Agua común, más barata en riberas de ríos, costas, mares, humedales o oasis; cara en el desierto."
+ material_cost_water: "[gold_i][GetPlayer.MakeScope.ScriptValue('water_cost')]"
+ material_total_cost_water: "[gold_i][GetPlayer.MakeScope.ScriptValue('water_total_cost')]"
+ material_amount_water: "[GetPlayer.MakeScope.ScriptValue('water_amount')]/∞"
+  
+ material_fuel: "#TOOLTIP:material_fuel_tt #L Combustible#!#!"
+ material_fuel_tt: "Madera o carbón, más barato en minas, selvas, bosques o terrenos de taiga; más caro en el mar."
+ material_cost_fuel: "[gold_i][GetPlayer.MakeScope.ScriptValue('fuel_cost')]"
+ material_total_cost_fuel: "[gold_i][GetPlayer.MakeScope.ScriptValue('fuel_total_cost')]"
+ material_amount_fuel: "[GetPlayer.MakeScope.ScriptValue('fuel_amount')]/∞"
+  
+ material_herb: "#TOOLTIP:material_herb_tt #L Hierba#!#!"
+ material_herb_tt: "Hierba, más barata en estepas, humedales, llanuras o terrenos inundables; cara en el mar o en el desierto. Al ser [GetTrait('lifestyle_herbalist').GetName( GetNullCharacter )] también se reduce el coste."
+ material_cost_herb: "[gold_i][GetPlayer.MakeScope.ScriptValue('herb_cost')]"
+ material_total_cost_herb: "[gold_i][GetPlayer.MakeScope.ScriptValue('herb_total_cost')]"
+ material_amount_herb: "[GetPlayer.MakeScope.ScriptValue('herb_amount')]/∞"
+  
+ material_venom: "#TOOLTIP:material_venom_tt #L Veneno#!#!"
+ material_venom_tt: "El veneno es más barato en los humedales o la jungla, pero caro en el mar o en el desierto. Al ser [GetTrait('lifestyle_hunter').GetName( GetNullCharacter )] también se reduce el coste."
+ material_cost_venom: "[gold_i][GetPlayer.MakeScope.ScriptValue('venom_cost')]"
+ material_total_cost_venom: "[gold_i][GetPlayer.MakeScope.ScriptValue('venom_total_cost')]"
+ material_amount_venom: "[GetPlayer.MakeScope.ScriptValue('venom_amount')]/∞"
+  
+ material_mineral: "#TOOLTIP:material_mineral_tt #L Minerales#!#!"
+ material_mineral_tt: "Rocas, minerales y gemas, más baratas en minas, montañas o terrenos desérticos; caras en el mar."
+ material_cost_mineral: "[gold_i][GetPlayer.MakeScope.ScriptValue('mineral_cost')]"
+ material_total_cost_mineral: "[gold_i][GetPlayer.MakeScope.ScriptValue('mineral_total_cost')]"
+ material_amount_mineral: "[GetPlayer.MakeScope.ScriptValue('mineral_amount')]/∞"
+  
+ material_uncommon: "Poco común"
+  
+ material_exotic_water: "#TOOLTIP:material_exotic_water_tt #L Agua exótica#!#!"
+ material_exotic_water_tt: "Aguas Especiales, pueden estar ubicadas en costas o riberas de ríos."
+ material_cost_exotic_water: "[gold_i][GetPlayer.MakeScope.ScriptValue('exotic_water_cost')]"
+ material_reserve_exotic_water: "([GetPlayer.MakeScope.ScriptValue('exotic_water_reserve')|0]/[GetPlayer.MakeScope.ScriptValue('exotic_water_max_reserve')|+0]/#TOOLTIP:material_exotic_water_max_reserve_tt #L [GetPlayer.MakeScope.ScriptValue('exotic_water_max_reserve')|V0]#!#!)"
+ material_total_cost_exotic_water: "[gold_i][GetPlayer.MakeScope.ScriptValue('exotic_water_total_cost')]"
+ material_amount_exotic_water: "[GetPlayer.MakeScope.ScriptValue('exotic_water_amount')]/[GetPlayer.MakeScope.ScriptValue('exotic_water_reserve')]"
+ lose_exotic_water: "Perder [GetPlayer.MakeScope.ScriptValue('exotic_water_amount')|N0] $material_exotic_water$"
+ gain_exotic_water: "Ganancia $VALUE|+0$ $material_exotic_water$"
+ material_exotic_water_max_reserve_tt: "[GetPlayer.MakeScope.GetScriptValueDesc('exotic_water_max_reserve')]"
+  
+ material_exotic_fuel: "#TOOLTIP:material_exotic_fuel_tt #L Combustible exótico#!#!"
+ material_exotic_fuel_tt: "Madera Exótica, puede ubicarse en terrenos de jungla, bosque o taiga."
+ material_cost_exotic_fuel: "[gold_i][GetPlayer.MakeScope.ScriptValue('exotic_fuel_cost')]"
+ material_reserve_exotic_fuel: "([GetPlayer.MakeScope.ScriptValue('exotic_fuel_reserve')|0]/[GetPlayer.MakeScope.ScriptValue('exotic_fuel_max_reserve')|+0]/#TOOLTIP:material_exotic_fuel_max_reserve_tt #L [GetPlayer.MakeScope.ScriptValue('exotic_fuel_max_reserve')|V0]#!#!)"
+ material_total_cost_exotic_fuel: "[gold_i][GetPlayer.MakeScope.ScriptValue('exotic_fuel_total_cost')]"
+ material_amount_exotic_fuel: "[GetPlayer.MakeScope.ScriptValue('exotic_fuel_amount')]/[GetPlayer.MakeScope.ScriptValue('exotic_fuel_reserve')]"
+ lose_exotic_fuel: "Perder [GetPlayer.MakeScope.ScriptValue('exotic_fuel_amount')|N0] $material_exotic_fuel$"
+ gain_exotic_fuel: "Ganancia $VALUE|+0$ $material_exotic_fuel$"
+ material_exotic_fuel_max_reserve_tt: "[GetPlayer.MakeScope.GetScriptValueDesc('exotic_fuel_max_reserve')]"
+  
+ material_exotic_herb: "#TOOLTIP:material_exotic_herb_tt #L Hierba exótica#!#!"
+ material_exotic_herb_tt: "Hierba exótica, la puedes localizar si eres un [GetTrait('lifestyle_herbalist').GetName( GetNullCharacter )]."
+ material_cost_exotic_herb: "[gold_i][GetPlayer.MakeScope.ScriptValue('exotic_herb_cost')]"
+ material_reserve_exotic_herb: "([GetPlayer.MakeScope.ScriptValue('exotic_herb_reserve')|0]/[GetPlayer.MakeScope.ScriptValue('exotic_herb_max_reserve')|+0]/#TOOLTIP:material_exotic_herb_max_reserve_tt #L [GetPlayer.MakeScope.ScriptValue('exotic_herb_max_reserve')|V0]#!#!)"
+ material_total_cost_exotic_herb: "[gold_i][GetPlayer.MakeScope.ScriptValue('exotic_herb_total_cost')]"
+ material_amount_exotic_herb: "[GetPlayer.MakeScope.ScriptValue('exotic_herb_amount')]/[GetPlayer.MakeScope.ScriptValue('exotic_herb_reserve')]"
+ lose_exotic_herb: "Perder [GetPlayer.MakeScope.ScriptValue('exotic_herb_amount')|N0] $material_exotic_herb$"
+ gain_exotic_herb: "Ganancia $VALUE|+0$ $material_exotic_herb$"
+ material_exotic_herb_max_reserve_tt: "[GetPlayer.MakeScope.GetScriptValueDesc('exotic_herb_max_reserve')]"
+  
+ material_exotic_mineral: "#TOOLTIP:material_exotic_mineral_tt #L Mineral exótico#!#!"
+ material_exotic_mineral_tt: "Metal exótico, se puede localizar en las minas."
+ material_cost_exotic_mineral: "[gold_i][GetPlayer.MakeScope.ScriptValue('exotic_mineral_cost')]"
+ material_reserve_exotic_mineral: "([GetPlayer.MakeScope.ScriptValue('exotic_mineral_reserve')|0]/[GetPlayer.MakeScope.ScriptValue('exotic_mineral_max_reserve')|+0]/#TOOLTIP:material_exotic_mineral_max_reserve_tt #L [GetPlayer.MakeScope.ScriptValue('exotic_mineral_max_reserve')|V0]#!#!)"
+ material_total_cost_exotic_mineral: "[gold_i][GetPlayer.MakeScope.ScriptValue('exotic_mineral_total_cost')]"
+ material_amount_exotic_mineral: "[GetPlayer.MakeScope.ScriptValue('exotic_mineral_amount')]/[GetPlayer.MakeScope.ScriptValue('exotic_mineral_reserve')]"
+ lose_exotic_mineral: "Perder [GetPlayer.MakeScope.ScriptValue('exotic_mineral_amount')|N0] $material_exotic_mineral$"
+ gain_exotic_mineral: "Ganancia $VALUE|+0$ $material_exotic_mineral$"
+ material_exotic_mineral_max_reserve_tt: "[GetPlayer.MakeScope.GetScriptValueDesc('exotic_mineral_max_reserve')]"
+  
+ material_rare: "Extraño"
+  
+ material_magic_water: "#TOOLTIP:material_magic_water_tt #L Agua Mágica#!#!"
+ material_magic_water_tt: "Agua Mágica, solo se puede encontrar en el [umbra|E]"
+ material_cost_magic_water: "[gold_i][GetPlayer.MakeScope.ScriptValue('magic_water_cost')]"
+ material_reserve_magic_water: "([GetPlayer.MakeScope.ScriptValue('magic_water_reserve')|0]/#TOOLTIP:material_magic_water_income_tt #L [GetPlayer.MakeScope.ScriptValue('magic_water_income')|+0]#!#!/#TOOLTIP:material_magic_water_max_reserve_tt #L [GetPlayer.MakeScope.ScriptValue('magic_water_max_reserve')|V0]#!#!)"
+ material_total_cost_magic_water: "[gold_i][GetPlayer.MakeScope.ScriptValue('magic_water_total_cost')]"
+ material_amount_magic_water: "[GetPlayer.MakeScope.ScriptValue('magic_water_amount')]/[GetPlayer.MakeScope.ScriptValue('magic_water_reserve')]"
+ lose_magic_water: "Perder [GetPlayer.MakeScope.ScriptValue('magic_water_amount')|N0] $material_magic_water$"
+ gain_magic_water: "Ganancia $VALUE|+0$ $material_magic_water$"
+ material_magic_water_income_tt: "[GetPlayer.MakeScope.GetScriptValueDesc('magic_water_income')]"
+ material_magic_water_max_reserve_tt: "[GetPlayer.MakeScope.GetScriptValueDesc('magic_water_max_reserve')]"
+  
+ material_magic_fuel: "#TOOLTIP:material_magic_fuel_tt #L Combustible mágico#!#!"
+ material_magic_fuel_tt: "Madera Mágica, solo se puede encontrar en el [umbra|E]"
+ material_cost_magic_fuel: "[gold_i][GetPlayer.MakeScope.ScriptValue('magic_fuel_cost')]"
+ material_reserve_magic_fuel: "([GetPlayer.MakeScope.ScriptValue('magic_fuel_reserve')|0]/#TOOLTIP:material_magic_fuel_income_tt #L [GetPlayer.MakeScope.ScriptValue('magic_fuel_income')|+0]#!#!/#TOOLTIP:material_magic_fuel_max_reserve_tt #L [GetPlayer.MakeScope.ScriptValue('magic_fuel_max_reserve')|V0]#!#!)"
+ material_total_cost_magic_fuel: "[gold_i][GetPlayer.MakeScope.ScriptValue('magic_fuel_total_cost')]"
+ material_amount_magic_fuel: "[GetPlayer.MakeScope.ScriptValue('magic_fuel_amount')]/[GetPlayer.MakeScope.ScriptValue('magic_fuel_reserve')]"
+ lose_magic_fuel: "Perder [GetPlayer.MakeScope.ScriptValue('magic_fuel_amount')|N0] $material_magic_fuel$"
+ gain_magic_fuel: "Ganancia $VALUE|+0$ $material_magic_fuel$"
+ material_magic_fuel_income_tt: "[GetPlayer.MakeScope.GetScriptValueDesc('magic_fuel_income')]"
+ material_magic_fuel_max_reserve_tt: "[GetPlayer.MakeScope.GetScriptValueDesc('magic_fuel_max_reserve')]"
+  
+ material_magic_herb: "#TOOLTIP:material_magic_herb_tt #L Hierba mágica#!#!"
+ material_magic_herb_tt: "Hierba mágica, solo se puede encontrar en el [umbra|E]"
+ material_cost_magic_herb: "[gold_i][GetPlayer.MakeScope.ScriptValue('magic_herb_cost')]"
+ material_reserve_magic_herb: "([GetPlayer.MakeScope.ScriptValue('magic_herb_reserve')|0]/#TOOLTIP:material_magic_herb_income_tt #L [GetPlayer.MakeScope.ScriptValue('magic_herb_income')|+0]#!#!/#TOOLTIP:material_magic_herb_max_reserve_tt #L [GetPlayer.MakeScope.ScriptValue('magic_herb_max_reserve')|V0]#!#!)"
+ material_total_cost_magic_herb: "[gold_i][GetPlayer.MakeScope.ScriptValue('magic_herb_total_cost')]"
+ material_amount_magic_herb: "[GetPlayer.MakeScope.ScriptValue('magic_herb_amount')]/[GetPlayer.MakeScope.ScriptValue('magic_herb_reserve')]"
+ lose_magic_herb: "Perder [GetPlayer.MakeScope.ScriptValue('magic_herb_amount')|N0] $material_magic_herb$"
+ gain_magic_herb: "Ganancia $VALUE|+0$ $material_magic_herb$"
+ material_magic_herb_income_tt: "[GetPlayer.MakeScope.GetScriptValueDesc('magic_herb_income')]"
+ material_magic_herb_max_reserve_tt: "[GetPlayer.MakeScope.GetScriptValueDesc('magic_herb_max_reserve')]"
+  
+ material_magic_mineral: "#TOOLTIP:material_magic_mineral_tt #L Mineral mágico#!#!"
+ material_magic_mineral_tt: "Metal mágico, solo se puede encontrar en el [umbra|E]"
+ material_cost_magic_mineral: "[gold_i][GetPlayer.MakeScope.ScriptValue('magic_mineral_cost')]"
+ material_reserve_magic_mineral: "([GetPlayer.MakeScope.ScriptValue('magic_mineral_reserve')|0]/#TOOLTIP:material_magic_mineral_income_tt #L [GetPlayer.MakeScope.ScriptValue('magic_mineral_income')|+0]#!#!/#TOOLTIP:material_magic_mineral_max_reserve_tt #L [GetPlayer.MakeScope.ScriptValue('magic_mineral_max_reserve')|V0]#!#!)"
+ material_total_cost_magic_mineral: "[gold_i][GetPlayer.MakeScope.ScriptValue('magic_mineral_total_cost')]"
+ material_amount_magic_mineral: "[GetPlayer.MakeScope.ScriptValue('magic_mineral_amount')]/[GetPlayer.MakeScope.ScriptValue('magic_mineral_reserve')]"
+ lose_magic_mineral: "Perder [GetPlayer.MakeScope.ScriptValue('magic_mineral_amount')|N0] $material_magic_mineral$"
+ gain_magic_mineral: "Ganancia $VALUE|+0$ $material_magic_mineral$"
+ material_magic_mineral_income_tt: "[GetPlayer.MakeScope.GetScriptValueDesc('magic_mineral_income')]"
+ material_magic_mineral_max_reserve_tt: "[GetPlayer.MakeScope.GetScriptValueDesc('magic_mineral_max_reserve')]"
+  
+ material_special: "Especial"
+  
+ material_common_artifact_piece: "#TOOLTIP:material_common_artifact_piece_tt #L Pieza de artefacto (común)#!#!"
+ material_common_artifact_piece_tt: "Pieza de artefacto, solo se puede encontrar en el [underworld|E] o rompiéndola/restaurándola con un [perk|E] específico"
+ material_reserve_common_artifact_piece: "([GetPlayer.MakeScope.ScriptValue('common_artifact_piece_reserve')|0])"
+ material_total_cost_common_artifact_piece: "[gold_i]0"
+ material_amount_common_artifact_piece: "[GetPlayer.MakeScope.ScriptValue('common_artifact_piece_amount')]/[GetPlayer.MakeScope.ScriptValue('common_artifact_piece_reserve')]"
+  
+ material_masterwork_artifact_piece: "#TOOLTIP:material_masterwork_artifact_piece_tt #L Pieza de artefacto (obra maestra)#!#!"
+ material_masterwork_artifact_piece_tt: "Pieza de artefacto, solo se puede encontrar en el [underworld|E] o rompiéndola/restaurándola con un [perk|E] específico"
+ material_reserve_masterwork_artifact_piece: "([GetPlayer.MakeScope.ScriptValue('masterwork_artifact_piece_reserve')|0])"
+ material_total_cost_masterwork_artifact_piece: "[gold_i]0"
+ material_amount_masterwork_artifact_piece: "[GetPlayer.MakeScope.ScriptValue('masterwork_artifact_piece_amount')]/[GetPlayer.MakeScope.ScriptValue('masterwork_artifact_piece_reserve')]"
+  
+ material_famed_artifact_piece: "#TOOLTIP:material_famed_artifact_piece_tt #L Pieza de artefacto (famosa)#!#!"
+ material_famed_artifact_piece_tt: "Pieza de artefacto, solo se puede encontrar en el [underworld|E] o rompiéndola/restaurándola con un [perk|E] específico"
+ material_reserve_famed_artifact_piece: "([GetPlayer.MakeScope.ScriptValue('famed_artifact_piece_reserve')|0])"
+ material_total_cost_famed_artifact_piece: "[gold_i]0"
+ material_amount_famed_artifact_piece: "[GetPlayer.MakeScope.ScriptValue('famed_artifact_piece_amount')]/[GetPlayer.MakeScope.ScriptValue('famed_artifact_piece_reserve')]"
+  
+ material_illustrious_artifact_piece: "#TOOLTIP:material_illustrious_artifact_piece_tt #L Pieza de artefacto (ilustre)#!#!"
+ material_illustrious_artifact_piece_tt: "Pieza de artefacto, solo se puede encontrar en el [underworld|E] o rompiéndola/restaurándola con un [perk|E] específico"
+ material_reserve_illustrious_artifact_piece: "([GetPlayer.MakeScope.ScriptValue('illustrious_artifact_piece_reserve')|0])"
+ material_total_cost_illustrious_artifact_piece: "[gold_i]0"
+ material_amount_illustrious_artifact_piece: "[GetPlayer.MakeScope.ScriptValue('illustrious_artifact_piece_amount')]/[GetPlayer.MakeScope.ScriptValue('illustrious_artifact_piece_reserve')]"
+  
+ material_sekhem: "Sejem"
+ material_total_cost_sekhem: "[gold_i]0"
+ material_amount_sekhem: "[GetPlayer.MakeScope.ScriptValue('sekhem_amount')]/[GetPlayer.MakeScope.ScriptValue('sekhem_reserve')]"
+  
+ material_no_sekhem: "Sin Sekhem"
+ material_no_inertion: "Sin inercia"
+  
+ material_simple_elixir: "$simple_elixir_modifier$"
+ material_total_cost_simple_elixir: "[gold_i]0"
+ material_amount_simple_elixir: "[GetPlayer.MakeScope.ScriptValue('simple_elixir_amount')]/[GetPlayer.MakeScope.ScriptValue('simple_elixir_reserve')]"
+  
+ material_complex_elixir: "$complex_elixir_modifier$"
+ material_total_cost_complex_elixir: "[gold_i]0"
+ material_amount_complex_elixir: "[GetPlayer.MakeScope.ScriptValue('complex_elixir_amount')]/[GetPlayer.MakeScope.ScriptValue('complex_elixir_reserve')]"
+  
+ material_potent_elixir: "$potent_elixir_modifier$"
+ material_total_cost_potent_elixir: "[gold_i]0"
+ material_amount_potent_elixir: "[GetPlayer.MakeScope.ScriptValue('potent_elixir_amount')]/[GetPlayer.MakeScope.ScriptValue('potent_elixir_reserve')]"
+  
+ material_princely_elixir: "$princely_elixir_modifier$"
+ material_total_cost_princely_elixir: "[gold_i]0"
+ material_amount_princely_elixir: "[GetPlayer.MakeScope.ScriptValue('princely_elixir_amount')]/[GetPlayer.MakeScope.ScriptValue('princely_elixir_reserve')]"
+  
+ material_kingly_elixir: "$kingly_elixir_modifier$"
+ material_total_cost_kingly_elixir: "[gold_i]0"
+ material_amount_kingly_elixir: "[GetPlayer.MakeScope.ScriptValue('kingly_elixir_amount')]/[GetPlayer.MakeScope.ScriptValue('kingly_elixir_reserve')]"
+  
+ material_simple_tonic: "$simple_tonic_modifier$"
+ material_total_cost_simple_tonic: "[gold_i]0"
+ material_amount_simple_tonic: "[GetPlayer.MakeScope.ScriptValue('simple_tonic_amount')]/[GetPlayer.MakeScope.ScriptValue('simple_tonic_reserve')]"
+  
+ material_complex_tonic: "$complex_tonic_modifier$"
+ material_total_cost_complex_tonic: "[gold_i]0"
+ material_amount_complex_tonic: "[GetPlayer.MakeScope.ScriptValue('complex_tonic_amount')]/[GetPlayer.MakeScope.ScriptValue('complex_tonic_reserve')]"
+  
+ material_potent_tonic: "$potent_tonic_modifier$"
+ material_total_cost_potent_tonic: "[gold_i]0"
+ material_amount_potent_tonic: "[GetPlayer.MakeScope.ScriptValue('potent_tonic_amount')]/[GetPlayer.MakeScope.ScriptValue('potent_tonic_reserve')]"
+  
+ material_princely_tonic: "$princely_tonic_modifier$"
+ material_total_cost_princely_tonic: "[gold_i]0"
+ material_amount_princely_tonic: "[GetPlayer.MakeScope.ScriptValue('princely_tonic_amount')]/[GetPlayer.MakeScope.ScriptValue('princely_tonic_reserve')]"
+  
+ material_kingly_tonic: "$kingly_tonic_modifier$"
+ material_total_cost_kingly_tonic: "[gold_i]0"
+ material_amount_kingly_tonic: "[GetPlayer.MakeScope.ScriptValue('kingly_tonic_amount')]/[GetPlayer.MakeScope.ScriptValue('kingly_tonic_reserve')]"
+  
+ material_mild_poison: "$mild_poison_modifier$"
+ material_total_cost_mild_poison: "[gold_i]0"
+ material_amount_mild_poison: "[GetPlayer.MakeScope.ScriptValue('mild_poison_amount')]/[GetPlayer.MakeScope.ScriptValue('mild_poison_reserve')]"
+  
+ material_dangerous_poison: "$dangerous_poison_modifier$"
+ material_total_cost_dangerous_poison: "[gold_i]0"
+ material_amount_dangerous_poison: "[GetPlayer.MakeScope.ScriptValue('dangerous_poison_amount')]/[GetPlayer.MakeScope.ScriptValue('dangerous_poison_reserve')]"
+  
+ material_deadly_poison: "$deadly_poison_modifier$"
+ material_total_cost_deadly_poison: "[gold_i]0"
+ material_amount_deadly_poison: "[GetPlayer.MakeScope.ScriptValue('deadly_poison_amount')]/[GetPlayer.MakeScope.ScriptValue('deadly_poison_reserve')]"
+  
+ material_simple_philtre: "$simple_philtre_modifier$"
+ material_total_cost_simple_philtre: "[gold_i]0"
+ material_amount_simple_philtre: "[GetPlayer.MakeScope.ScriptValue('simple_philtre_amount')]/[GetPlayer.MakeScope.ScriptValue('simple_philtre_reserve')]"
+  
+ material_complex_philtre: "$complex_philtre_modifier$"
+ material_total_cost_complex_philtre: "[gold_i]0"
+ material_amount_complex_philtre: "[GetPlayer.MakeScope.ScriptValue('complex_philtre_amount')]/[GetPlayer.MakeScope.ScriptValue('complex_philtre_reserve')]"
+  
+ material_essence_longing: "$essence_longing_modifier$"
+ material_total_cost_essence_longing: "[gold_i]0"
+ material_amount_essence_longing: "[GetPlayer.MakeScope.ScriptValue('essence_longing_amount')]/[GetPlayer.MakeScope.ScriptValue('essence_longing_reserve')]"
+  
+ material_eyes_of_the_ka: "$eyes_of_the_ka_modifier$"
+ material_total_cost_eyes_of_the_ka: "[gold_i]0"
+ material_amount_eyes_of_the_ka: "[GetPlayer.MakeScope.ScriptValue('eyes_of_the_ka_amount')]/[GetPlayer.MakeScope.ScriptValue('eyes_of_the_ka_reserve')]"
+  
+ material_potion_of_separable_ka: "$potion_of_separable_ka_modifier$"
+ material_total_cost_potion_of_separable_ka: "[gold_i]0"
+ material_amount_potion_of_separable_ka: "[GetPlayer.MakeScope.ScriptValue('potion_of_separable_ka_amount')]/[GetPlayer.MakeScope.ScriptValue('potion_of_separable_ka_reserve')]"
+  
+ material_counterfeit_1: "Falsificación 1"
+ material_total_cost_counterfeit_1: "[gold_i]0"
+ material_amount_counterfeit_1: "[GetPlayer.MakeScope.ScriptValue('counterfeit_1_amount')]/[GetPlayer.MakeScope.ScriptValue('counterfeit_1_reserve')]"
+  
+ material_counterfeit_2: "Falsificación 2"
+ material_total_cost_counterfeit_2: "[gold_i]0"
+ material_amount_counterfeit_2: "[GetPlayer.MakeScope.ScriptValue('counterfeit_2_amount')]/[GetPlayer.MakeScope.ScriptValue('counterfeit_2_reserve')]"
+  
+ material_counterfeit_3: "Falsificación 3"
+ material_total_cost_counterfeit_3: "[gold_i]0"
+ material_amount_counterfeit_3: "[GetPlayer.MakeScope.ScriptValue('counterfeit_3_amount')]/[GetPlayer.MakeScope.ScriptValue('counterfeit_3_reserve')]"
+  
+ material_vampire_blood: "Sangre de vampiro"
+ material_total_cost_vampire_blood: "[gold_i]0"
+ material_amount_vampire_blood: "[GetPlayer.MakeScope.ScriptValue('vampire_blood_amount')]/[GetPlayer.MakeScope.ScriptValue('vampire_blood_reserve')]"
+  
+ material_animalism_blood: "Animalismo Sangre"
+ material_total_cost_animalism_blood: "[gold_i]0"
+ material_amount_animalism_blood: "[GetPlayer.MakeScope.ScriptValue('animalism_blood_amount')]/[GetPlayer.MakeScope.ScriptValue('animalism_blood_reserve')]"
+  
+ material_auspex_blood: "Sangre de Auspex"
+ material_total_cost_auspex_blood: "[gold_i]0"
+ material_amount_auspex_blood: "[GetPlayer.MakeScope.ScriptValue('auspex_blood_amount')]/[GetPlayer.MakeScope.ScriptValue('auspex_blood_reserve')]"
+  
+ material_celerity_blood: "Celeridad Sangre"
+ material_total_cost_celerity_blood: "[gold_i]0"
+ material_amount_celerity_blood: "[GetPlayer.MakeScope.ScriptValue('celerity_blood_amount')]/[GetPlayer.MakeScope.ScriptValue('celerity_blood_reserve')]"
+  
+ material_dominate_blood: "Dominar la sangre"
+ material_total_cost_dominate_blood: "[gold_i]0"
+ material_amount_dominate_blood: "[GetPlayer.MakeScope.ScriptValue('dominate_blood_amount')]/[GetPlayer.MakeScope.ScriptValue('dominate_blood_reserve')]"
+  
+ material_fortitude_blood: "Sangre de fortaleza"
+ material_total_cost_fortitude_blood: "[gold_i]0"
+ material_amount_fortitude_blood: "[GetPlayer.MakeScope.ScriptValue('fortitude_blood_amount')]/[GetPlayer.MakeScope.ScriptValue('fortitude_blood_reserve')]"
+  
+ material_obfuscate_blood: "Ofuscar la sangre"
+ material_total_cost_obfuscate_blood: "[gold_i]0"
+ material_amount_obfuscate_blood: "[GetPlayer.MakeScope.ScriptValue('obfuscate_blood_amount')]/[GetPlayer.MakeScope.ScriptValue('obfuscate_blood_reserve')]"
+  
+ material_potence_blood: "Potencia Sangre"
+ material_total_cost_potence_blood: "[gold_i]0"
+ material_amount_potence_blood: "[GetPlayer.MakeScope.ScriptValue('potence_blood_amount')]/[GetPlayer.MakeScope.ScriptValue('potence_blood_reserve')]"
+  
+ material_presence_blood: "Presencia Sangre"
+ material_total_cost_presence_blood: "[gold_i]0"
+ material_amount_presence_blood: "[GetPlayer.MakeScope.ScriptValue('presence_blood_amount')]/[GetPlayer.MakeScope.ScriptValue('presence_blood_reserve')]"
+  
+ material_protean_blood: "Sangre proteica"
+ material_total_cost_protean_blood: "[gold_i]0"
+ material_amount_protean_blood: "[GetPlayer.MakeScope.ScriptValue('protean_blood_amount')]/[GetPlayer.MakeScope.ScriptValue('protean_blood_reserve')]"
+  
+ material_artifact_sekhem_vessel: "$artifact_sekhem_vessel_name$"
+ material_total_cost_artifact_sekhem_vessel: "[gold_i]0"
+ material_amount_artifact_sekhem_vessel: "[GetPlayer.MakeScope.ScriptValue('artifact_sekhem_vessel_amount')]/[GetPlayer.MakeScope.ScriptValue('artifact_sekhem_vessel_reserve')]"
+  
+ material_artifact_lesser_chattel: "$artifact_lesser_chattel_name$"
+ material_total_cost_artifact_lesser_chattel: "[gold_i]0"
+ material_amount_artifact_lesser_chattel: "[GetPlayer.MakeScope.ScriptValue('artifact_lesser_chattel_amount')]/[GetPlayer.MakeScope.ScriptValue('artifact_lesser_chattel_reserve')]"
+  
+ material_artifact_complex_chattel: "$artifact_complex_chattel_name$"
+ material_total_cost_artifact_complex_chattel: "[gold_i]0"
+ material_amount_artifact_complex_chattel: "[GetPlayer.MakeScope.ScriptValue('artifact_complex_chattel_amount')]/[GetPlayer.MakeScope.ScriptValue('artifact_complex_chattel_reserve')]"
+  
+ material_artifact_superior_chattel: "$artifact_superior_chattel_name$"
+ material_total_cost_artifact_superior_chattel: "[gold_i]0"
+ material_amount_artifact_superior_chattel: "[GetPlayer.MakeScope.ScriptValue('artifact_superior_chattel_amount')]/[GetPlayer.MakeScope.ScriptValue('artifact_superior_chattel_reserve')]"
+  
+ material_artifact_simple_creature: "$artifact_simple_creature_name$"
+ material_total_cost_artifact_simple_creature: "[gold_i]0"
+ material_amount_artifact_simple_creature: "[GetPlayer.MakeScope.ScriptValue('artifact_simple_creature_amount')]/[GetPlayer.MakeScope.ScriptValue('artifact_simple_creature_reserve')]"
+  
+ material_artifact_lesser_creature: "$artifact_lesser_creature_name$"
+ material_total_cost_artifact_lesser_creature: "[gold_i]0"
+ material_amount_artifact_lesser_creature: "[GetPlayer.MakeScope.ScriptValue('artifact_lesser_creature_amount')]/[GetPlayer.MakeScope.ScriptValue('artifact_lesser_creature_reserve')]"
+  
+ material_artifact_major_creature: "$artifact_major_creature_name$"
+ material_total_cost_artifact_major_creature: "[gold_i]0"
+ material_amount_artifact_major_creature: "[GetPlayer.MakeScope.ScriptValue('artifact_major_creature_amount')]/[GetPlayer.MakeScope.ScriptValue('artifact_major_creature_reserve')]"
+  
+ material_artifact_superior_creature: "$artifact_superior_creature_name$"
+ material_total_cost_artifact_superior_creature: "[gold_i]0"
+ material_amount_artifact_superior_creature: "[GetPlayer.MakeScope.ScriptValue('artifact_superior_creature_amount')]/[GetPlayer.MakeScope.ScriptValue('artifact_superior_creature_reserve')]"
+  
+ material_artifact_princely_creature: "$artifact_princely_creature_name$"
+ material_total_cost_artifact_princely_creature: "[gold_i]0"
+ material_amount_artifact_princely_creature: "[GetPlayer.MakeScope.ScriptValue('artifact_princely_creature_amount')]/[GetPlayer.MakeScope.ScriptValue('artifact_princely_creature_reserve')]"
+  
+ material_artifact_viziers_beast: "$artifact_viziers_beast_name$"
+ material_total_cost_artifact_viziers_beast: "[gold_i]0"
+ material_amount_artifact_viziers_beast: "[GetPlayer.MakeScope.ScriptValue('artifact_viziers_beast_amount')]/[GetPlayer.MakeScope.ScriptValue('artifact_viziers_beast_reserve')]"
+  
+ material_artifact_kingly_beast: "$artifact_kingly_beast_name$"
+ material_total_cost_artifact_kingly_beast: "[gold_i]0"
+ material_amount_artifact_kingly_beast: "[GetPlayer.MakeScope.ScriptValue('artifact_kingly_beast_amount')]/[GetPlayer.MakeScope.ScriptValue('artifact_kingly_beast_reserve')]"
+  
+ enough_material: "¿No tiene suficiente material? #bold"
+ no_character_material: "¿#bold no#! ha elegido algún recurso humano?"
+ no_artifact_material: "¿#bold no#! ha elegido algún material de artefacto?"
+ enough_common_artifact_piece: "¿Tienen #bold o no#! #V 3#! piezas de artefactos comunes?"
+ enough_masterwork_artifact_piece: "¿Tiene #bold no#! #V 3#! piezas de artefactos de obra maestra?"
+ enough_famed_artifact_piece: "¿Tiene #bold no#! #V 3#! piezas de artefactos famosos?"
+ enough_illustrious_artifact_piece: "¿Tiene #bold no#! #V 3#! piezas de artefactos ilustres?"
+  
+ POD_craft_mummy_origin: "#TOOLTIP:POD_craft_mummy_origin_tt @mummy_icon!#!"
+ POD_craft_mummy_origin_tt: "Esta receta proviene de un [GetTrait('mummy').GetName( GetNullCharacter )] hekau."
+ POD_craft_vampire_origin: "#TOOLTIP:POD_craft_vampire_origin_tt @icono_vampiro!#!"
+ POD_craft_vampire_origin_tt: "Esta receta proviene de una disciplina [GetTrait('vampire').GetName( GetNullCharacter )]."
+ POD_craft_thin_blood_origin: "#TOOLTIP:POD_craft_thin_blood_origin_tt @icono_de_sangre_delgada!#!"
+ POD_craft_thin_blood_origin_tt: "Esta receta proviene de la alquimia de sangre fina, una disciplina [GetTrait('vampire').GetName( GetNullCharacter )]."
+ POD_craft_sorcerer_origin: "#TOOLTIP:POD_craft_sorcerer_origin_tt @sorcerer_icon!#!"
+ POD_craft_sorcerer_origin_tt: "Esta receta proviene de un camino mágico disponible para [GetTrait('sorcerer').GetName( GetNullCharacter )]"
+ POD_craft_wraith_origin: "#TOOLTIP:POD_craft_wraith_origin_tt @wraith_icon!#!"
+ POD_craft_wraith_origin_tt: "Esta receta proviene de un arcanoi [GetTrait('wraith').GetName( GetNullCharacter )]."
+ POD_craft_fae_origin: "#TOOLTIP:POD_craft_fae_origin_tt @fae_icon!#!"
+ POD_craft_fae_origin_tt: "Esta receta proviene de un truco [GetTrait('fae').GetName( GetNullCharacter )]."
+ POD_craft_kueijin_origin: "#TOOLTIP:POD_craft_kueijin_origin_tt @kueijin_icon!#!"
+ POD_craft_kueijin_origin_tt: "Esta receta proviene de una potencia [GetTrait('kueijin').GetName( GetNullCharacter )]."
+ POD_craft_demon_origin: "#TOOLTIP:POD_craft_demon_origin_tt @icono_demonio!#!"
+ POD_craft_demon_origin_tt: "Esta receta proviene de un poder de tradición [GetTrait('demon').GetName( GetNullCharacter )]."
+ POD_craft_fera_origin: "#TOOLTIP:POD_craft_fera_origin_tt @fera_icon!#!"
+ POD_craft_fera_origin_tt: "Esta receta proviene de un poder de [GetTrait('werewolf').GetName( GetNullCharacter )] y otros cambiaformas."
+ POD_craft_psychic_origin: "#TOOLTIP:POD_craft_psychic_origin_tt @psychic_icon!#!"
+ POD_craft_psychic_origin_tt: "Esta receta proviene de una potencia [GetTrait('psychic').GetName( GetNullCharacter )]."
+ POD_craft_truefaith_origin: "#TOOLTIP:POD_craft_truefaith_origin_tt @truefaith_icon!#!"
+ POD_craft_truefaith_origin_tt: "Esta receta proviene de una potencia [GetTrait('truefaith').GetName( GetNullCharacter )]."
+ POD_craft_horror_origin: "#TOOLTIP:POD_craft_horror_origin_tt @icono_de_horror!#!"
+ POD_craft_horror_origin_tt: "Esta receta proviene de una potencia [GetTrait('lament').GetName( GetNullCharacter )]."
   
   # Alchemy # 
   
- ALCHEMY_TAB_RECIPE: "Receta" #NT!
- ALCHEMY_TAB_INGREDIENT: "Ingrediente" #NT!
- ALCHEMY_TAB_ALT_INGREDIENT: "Ingrediente alternativo" #NT!
+ ALCHEMY_TAB_RECIPE: "Receta"
+ ALCHEMY_TAB_INGREDIENT: "Ingrediente"
+ ALCHEMY_TAB_ALT_INGREDIENT: "Ingrediente alternativo"
   
- light_painstopper_button_name: "$POD_craft_sorcerer_origin$ Analgésico simple" #NT!
- small_fertility_booster_button_name: "$POD_craft_sorcerer_origin$ Pequeño potenciador de la fertilidad" #NT!
- small_fertility_downer_button_name: "$POD_craft_sorcerer_origin$ Pequeño decaimiento de la fertilidad" #NT!
- simple_antibiotics_button_name: "$POD_craft_sorcerer_origin$ Antibióticos simples" #NT!
- painstopper_button_name: "$POD_craft_sorcerer_origin$ Anti-dolor" #NT!
- fertility_booster_button_name: "$POD_craft_sorcerer_origin$ Potenciador de la fertilidad" #NT!
- fertility_downer_button_name: "$POD_craft_sorcerer_origin$ Depresión de la fertilidad" #NT!
- antibiotics_button_name: "$POD_craft_sorcerer_origin$ Antibióticos" #NT!
- potion_of_diplomacy_button_name: "$POD_craft_sorcerer_origin$ Poción de diplomacia" #NT!
- potion_of_martial_button_name: "$POD_craft_sorcerer_origin$ Poción de Marcial" #NT!
- potion_of_stewardship_button_name: "$POD_craft_sorcerer_origin$ Poción de administración" #NT!
- potion_of_intrigue_button_name: "$POD_craft_sorcerer_origin$ Poción de intriga" #NT!
- potion_of_learning_button_name: "$POD_craft_sorcerer_origin$ Poción de aprendizaje" #NT!
- potion_of_strength_button_name: "$POD_craft_sorcerer_origin$ Poción de fuerza" #NT!
- potent_potion_of_diplomacy_button_name: "$POD_craft_sorcerer_origin$ Potente poción de diplomacia" #NT!
- potent_potion_of_martial_button_name: "$POD_craft_sorcerer_origin$ Potente poción marcial" #NT!
- potent_potion_of_stewardship_button_name: "$POD_craft_sorcerer_origin$ Potente poción de administración" #NT!
- potent_potion_of_intrigue_button_name: "$POD_craft_sorcerer_origin$ Potente poción de intriga" #NT!
- potent_potion_of_learning_button_name: "$POD_craft_sorcerer_origin$ Potente poción de aprendizaje" #NT!
- potent_potion_of_strength_button_name: "$POD_craft_sorcerer_origin$ Potente poción de fuerza" #NT!
- elixir_of_diplomacy_button_name: "$POD_craft_sorcerer_origin$ Elixir de la diplomacia" #NT!
- elixir_of_martial_button_name: "$POD_craft_sorcerer_origin$ Elixir de Marcial" #NT!
- elixir_of_stewardship_button_name: "$POD_craft_sorcerer_origin$ Elixir de administración" #NT!
- elixir_of_intrigue_button_name: "$POD_craft_sorcerer_origin$ Elixir de intriga" #NT!
- elixir_of_learning_button_name: "$POD_craft_sorcerer_origin$ Elixir del aprendizaje" #NT!
- elixir_of_strength_button_name: "$POD_craft_sorcerer_origin$ Elixir de fuerza" #NT!
- elixir_of_death_button_name: "$POD_craft_sorcerer_origin$ Elixir de la muerte" #NT!
- elixir_of_potence_button_name: "$POD_craft_sorcerer_origin$ Elixir de potencia" #NT!
- elixir_of_celebrity_button_name: "$POD_craft_sorcerer_origin$ Elixir de la celebridad" #NT!
- elixir_of_fortitude_button_name: "$POD_craft_sorcerer_origin$ Elixir de fortaleza" #NT!
- elixir_of_auspex_button_name: "$POD_craft_sorcerer_origin$ Elixir de Auspex" #NT!
- potion_of_health_button_name: "$POD_craft_sorcerer_origin$ Poción de salud" #NT!
- potent_potion_of_health_button_name: "$POD_craft_sorcerer_origin$ Potente poción de salud" #NT!
- elixir_of_health_button_name: "$POD_craft_sorcerer_origin$ Elixir de salud" #NT!
- potent_elixir_of_health_button_name: "$POD_craft_sorcerer_origin$ Potente elixir de salud" #NT!
- elixir_of_life_button_name: "$POD_craft_sorcerer_origin$ Elixir de vida" #NT!
- kinain_elixir_button_name: "$POD_craft_sorcerer_origin$ Elixir del sueño" #NT!
- kinfolk_elixir_button_name: "$POD_craft_sorcerer_origin$ Elixir de la licantropía" #NT!
- vampire_concoction_button_name: "$POD_craft_sorcerer_origin$ Brebaje vampírico" #NT!
- elixir_immortality_button_name: "$POD_craft_sorcerer_origin$ $feature_elixir_immortality$" #NT!
- foul_food_button_name: "$POD_craft_wraith_origin$ Comida asquerosa" #NT!
- cloud_of_smoke_button_name: "$POD_craft_mummy_origin$ Nube de humo" #NT!
- drink_of_seven_days_rest_button_name: "$POD_craft_mummy_origin$ Bebida de siete días de descanso" #NT!
- mild_poison_button_name: "$POD_craft_mummy_origin$$POD_craft_sorcerer_origin$ Veneno leve" #NT!
- potion_of_resilience_button_name: "$POD_craft_mummy_origin$ Poción de resiliencia" #NT!
- simple_elixir_button_name: "$POD_craft_mummy_origin$ Elixir sencillo" #NT!
- simple_elixir_diplomacy_button_name: "$POD_craft_mummy_origin$ Elixir simple (Diplomacia)" #NT!
- simple_elixir_martial_button_name: "$POD_craft_mummy_origin$ Elixir simple (marcial)" #NT!
- simple_elixir_stewardship_button_name: "$POD_craft_mummy_origin$ Elixir simple (administración)" #NT!
- simple_elixir_intrigue_button_name: "$POD_craft_mummy_origin$ Elixir simple (Intriga)" #NT!
- simple_elixir_learning_button_name: "$POD_craft_mummy_origin$ Elixir simple (Aprendizaje)" #NT!
- simple_elixir_prowess_button_name: "$POD_craft_mummy_origin$ Elixir simple (destreza)" #NT!
- simple_philtre_button_name: "$POD_craft_mummy_origin$ Filtro simple" #NT!
- simple_tonic_button_name: "$POD_craft_mummy_origin$ Tónico simple" #NT!
- blood_of_the_snake_button_name: "$POD_craft_mummy_origin$ Sangre de la Serpiente" #NT!
- cobra_spit_button_name: "$POD_craft_mummy_origin$ Escupitajo de cobra" #NT!
- essence_longing_button_name: "$POD_craft_mummy_origin$ Esencia Anhelo" #NT!
- eyes_of_the_ka_button_name: "$POD_craft_mummy_origin$ Ojos del Ka" #NT!
- complex_elixir_button_name: "$POD_craft_mummy_origin$ Elixir complejo" #NT!
- complex_elixir_diplomacy_button_name: "$POD_craft_mummy_origin$ Elixir complejo (Diplomacia)" #NT!
- complex_elixir_martial_button_name: "$POD_craft_mummy_origin$ Elixir complejo (marcial)" #NT!
- complex_elixir_stewardship_button_name: "$POD_craft_mummy_origin$ Elixir complejo (administración)" #NT!
- complex_elixir_intrigue_button_name: "$POD_craft_mummy_origin$ Elixir complejo (Intriga)" #NT!
- complex_elixir_learning_button_name: "$POD_craft_mummy_origin$ Elixir complejo (Aprendizaje)" #NT!
- complex_elixir_prowess_button_name: "$POD_craft_mummy_origin$ Elixir complejo (destreza)" #NT!
- complex_philtre_button_name: "$POD_craft_mummy_origin$ Filtro complejo" #NT!
- complex_tonic_button_name: "$POD_craft_mummy_origin$ Tónico complejo" #NT!
- dangerous_poison_button_name: "$POD_craft_mummy_origin$$POD_craft_sorcerer_origin$ Veneno peligroso" #NT!
- one_hundred_thousand_tongues_button_name: "$POD_craft_mummy_origin$ Cien mil lenguas" #NT!
- potion_of_valor_button_name: "$POD_craft_mummy_origin$ Poción de valor" #NT!
- salts_of_the_dead_button_name: "$POD_craft_mummy_origin$ Sales de los muertos" #NT!
- panacea_button_name: "$POD_craft_mummy_origin$ Panacea" #NT!
- philosophers_stone_button_name: "$POD_craft_mummy_origin$$POD_craft_sorcerer_origin$ Piedra filosofal" #NT!
- potion_of_separable_ka_button_name: "$POD_craft_mummy_origin$ Poción de Ka separable" #NT!
- deadly_poison_button_name: "$POD_craft_mummy_origin$$POD_craft_sorcerer_origin$ Veneno mortal" #NT!
- flesh_of_the_gods_button_name: "$POD_craft_mummy_origin$ Carne de los Dioses" #NT!
- potent_elixir_button_name: "$POD_craft_mummy_origin$ Elixir potente" #NT!
- potent_elixir_diplomacy_button_name: "$POD_craft_mummy_origin$ Elixir potente (Diplomacia)" #NT!
- potent_elixir_martial_button_name: "$POD_craft_mummy_origin$ Elixir potente (marcial)" #NT!
- potent_elixir_stewardship_button_name: "$POD_craft_mummy_origin$ Elixir potente (administración)" #NT!
- potent_elixir_intrigue_button_name: "$POD_craft_mummy_origin$ Elixir potente (Intriga)" #NT!
- potent_elixir_learning_button_name: "$POD_craft_mummy_origin$ Elixir potente (Aprendizaje)" #NT!
- potent_elixir_prowess_button_name: "$POD_craft_mummy_origin$ Elixir potente (destreza)" #NT!
- potent_philtre_button_name: "$POD_craft_mummy_origin$ Filtro potente" #NT!
- potent_tonic_button_name: "$POD_craft_mummy_origin$ Tónico potente" #NT!
- potion_of_the_divine_button_name: "$POD_craft_mummy_origin$ Poción de lo Divino" #NT!
- potion_of_the_vile_body_button_name: "$POD_craft_mummy_origin$ Poción del cuerpo vil" #NT!
- distill_the_wisdom_of_maat_button_name: "$POD_craft_mummy_origin$ Destilar la sabiduría de Ma'at" #NT!
- draught_of_perfect_memory_button_name: "$POD_craft_mummy_origin$ Borrador de la memoria perfecta" #NT!
- personal_poison_button_name: "$POD_craft_mummy_origin$$POD_craft_sorcerer_origin$ Veneno personal" #NT!
- princely_elixir_button_name: "$POD_craft_mummy_origin$ Elixir principesco" #NT!
- princely_elixir_diplomacy_button_name: "$POD_craft_mummy_origin$ Elixir principesco (Diplomacia)" #NT!
- princely_elixir_martial_button_name: "$POD_craft_mummy_origin$ Elixir principesco (marcial)" #NT!
- princely_elixir_stewardship_button_name: "$POD_craft_mummy_origin$ Elixir principesco (administración)" #NT!
- princely_elixir_intrigue_button_name: "$POD_craft_mummy_origin$ Elixir principesco (Intriga)" #NT!
- princely_elixir_learning_button_name: "$POD_craft_mummy_origin$ Elixir principesco (Aprendizaje)" #NT!
- princely_elixir_prowess_button_name: "$POD_craft_mummy_origin$ Elixir principesco (destreza)" #NT!
- princely_tonic_button_name: "$POD_craft_mummy_origin$ Tónico principesco" #NT!
- water_of_life_button_name: "$POD_craft_mummy_origin$ Agua de Vida" #NT!
- elixir_of_thoths_aptitude_button_name: "$POD_craft_mummy_origin$ Elixir de la Aptitud de Thoth" #NT!
- kingly_elixir_button_name: "$POD_craft_mummy_origin$ Elixir real" #NT!
- kingly_elixir_diplomacy_button_name: "$POD_craft_mummy_origin$ Elixir Real (Diplomacia)" #NT!
- kingly_elixir_martial_button_name: "$POD_craft_mummy_origin$ Elixir Real (Marcial)" #NT!
- kingly_elixir_stewardship_button_name: "$POD_craft_mummy_origin$ Elixir real (mayordomía)" #NT!
- kingly_elixir_intrigue_button_name: "$POD_craft_mummy_origin$ Elixir Real (Intriga)" #NT!
- kingly_elixir_learning_button_name: "$POD_craft_mummy_origin$ Elixir Real (Aprendizaje)" #NT!
- kingly_elixir_prowess_button_name: "$POD_craft_mummy_origin$ Elixir real (destreza)" #NT!
- kingly_tonic_button_name: "$POD_craft_mummy_origin$ Tónico Real" #NT!
- philtre_of_the_blackened_sands_button_name: "$POD_craft_mummy_origin$ Filtro de las arenas ennegrecidas" #NT!
- divine_elixir_button_name: "$POD_craft_mummy_origin$ Elixir divino" #NT!
- divine_elixir_diplomacy_button_name: "$POD_craft_mummy_origin$ Elixir Divino (Diplomacia)" #NT!
- divine_elixir_martial_button_name: "$POD_craft_mummy_origin$ Elixir Divino (Marcial)" #NT!
- divine_elixir_stewardship_button_name: "$POD_craft_mummy_origin$ Elixir divino (administración)" #NT!
- divine_elixir_intrigue_button_name: "$POD_craft_mummy_origin$ Elixir Divino (Intriga)" #NT!
- divine_elixir_learning_button_name: "$POD_craft_mummy_origin$ Elixir Divino (Aprendizaje)" #NT!
- divine_elixir_prowess_button_name: "$POD_craft_mummy_origin$ Elixir divino (destreza)" #NT!
- divine_tonic_button_name: "$POD_craft_mummy_origin$ Tónico Divino" #NT!
- draught_of_the_stalwart_ab_button_name: "$POD_craft_mummy_origin$ Borrador del valiente Ab" #NT!
+ light_painstopper_button_name: "$POD_craft_sorcerer_origin$ Analgésico simple"
+ small_fertility_booster_button_name: "$POD_craft_sorcerer_origin$ Pequeño potenciador de la fertilidad"
+ small_fertility_downer_button_name: "$POD_craft_sorcerer_origin$ Pequeño decaimiento de la fertilidad"
+ simple_antibiotics_button_name: "$POD_craft_sorcerer_origin$ Antibióticos simples"
+ painstopper_button_name: "$POD_craft_sorcerer_origin$ Anti-dolor"
+ fertility_booster_button_name: "$POD_craft_sorcerer_origin$ Potenciador de la fertilidad"
+ fertility_downer_button_name: "$POD_craft_sorcerer_origin$ Depresión de la fertilidad"
+ antibiotics_button_name: "$POD_craft_sorcerer_origin$ Antibióticos"
+ potion_of_diplomacy_button_name: "$POD_craft_sorcerer_origin$ Poción de diplomacia"
+ potion_of_martial_button_name: "$POD_craft_sorcerer_origin$ Poción de Marcial"
+ potion_of_stewardship_button_name: "$POD_craft_sorcerer_origin$ Poción de administración"
+ potion_of_intrigue_button_name: "$POD_craft_sorcerer_origin$ Poción de intriga"
+ potion_of_learning_button_name: "$POD_craft_sorcerer_origin$ Poción de aprendizaje"
+ potion_of_strength_button_name: "$POD_craft_sorcerer_origin$ Poción de fuerza"
+ potent_potion_of_diplomacy_button_name: "$POD_craft_sorcerer_origin$ Potente poción de diplomacia"
+ potent_potion_of_martial_button_name: "$POD_craft_sorcerer_origin$ Potente poción marcial"
+ potent_potion_of_stewardship_button_name: "$POD_craft_sorcerer_origin$ Potente poción de administración"
+ potent_potion_of_intrigue_button_name: "$POD_craft_sorcerer_origin$ Potente poción de intriga"
+ potent_potion_of_learning_button_name: "$POD_craft_sorcerer_origin$ Potente poción de aprendizaje"
+ potent_potion_of_strength_button_name: "$POD_craft_sorcerer_origin$ Potente poción de fuerza"
+ elixir_of_diplomacy_button_name: "$POD_craft_sorcerer_origin$ Elixir de la diplomacia"
+ elixir_of_martial_button_name: "$POD_craft_sorcerer_origin$ Elixir de Marcial"
+ elixir_of_stewardship_button_name: "$POD_craft_sorcerer_origin$ Elixir de administración"
+ elixir_of_intrigue_button_name: "$POD_craft_sorcerer_origin$ Elixir de intriga"
+ elixir_of_learning_button_name: "$POD_craft_sorcerer_origin$ Elixir del aprendizaje"
+ elixir_of_strength_button_name: "$POD_craft_sorcerer_origin$ Elixir de fuerza"
+ elixir_of_death_button_name: "$POD_craft_sorcerer_origin$ Elixir de la muerte"
+ elixir_of_potence_button_name: "$POD_craft_sorcerer_origin$ Elixir de potencia"
+ elixir_of_celebrity_button_name: "$POD_craft_sorcerer_origin$ Elixir de la celebridad"
+ elixir_of_fortitude_button_name: "$POD_craft_sorcerer_origin$ Elixir de fortaleza"
+ elixir_of_auspex_button_name: "$POD_craft_sorcerer_origin$ Elixir de Auspex"
+ potion_of_health_button_name: "$POD_craft_sorcerer_origin$ Poción de salud"
+ potent_potion_of_health_button_name: "$POD_craft_sorcerer_origin$ Potente poción de salud"
+ elixir_of_health_button_name: "$POD_craft_sorcerer_origin$ Elixir de salud"
+ potent_elixir_of_health_button_name: "$POD_craft_sorcerer_origin$ Potente elixir de salud"
+ elixir_of_life_button_name: "$POD_craft_sorcerer_origin$ Elixir de vida"
+ kinain_elixir_button_name: "$POD_craft_sorcerer_origin$ Elixir del sueño"
+ kinfolk_elixir_button_name: "$POD_craft_sorcerer_origin$ Elixir de la licantropía"
+ vampire_concoction_button_name: "$POD_craft_sorcerer_origin$ Brebaje vampírico"
+ elixir_immortality_button_name: "$POD_craft_sorcerer_origin$ $feature_elixir_immortality$"
+ foul_food_button_name: "$POD_craft_wraith_origin$ Comida asquerosa"
+ cloud_of_smoke_button_name: "$POD_craft_mummy_origin$ Nube de humo"
+ drink_of_seven_days_rest_button_name: "$POD_craft_mummy_origin$ Bebida de siete días de descanso"
+ mild_poison_button_name: "$POD_craft_mummy_origin$$POD_craft_sorcerer_origin$ Veneno leve"
+ potion_of_resilience_button_name: "$POD_craft_mummy_origin$ Poción de resiliencia"
+ simple_elixir_button_name: "$POD_craft_mummy_origin$ Elixir sencillo"
+ simple_elixir_diplomacy_button_name: "$POD_craft_mummy_origin$ Elixir simple (Diplomacia)"
+ simple_elixir_martial_button_name: "$POD_craft_mummy_origin$ Elixir simple (marcial)"
+ simple_elixir_stewardship_button_name: "$POD_craft_mummy_origin$ Elixir simple (administración)"
+ simple_elixir_intrigue_button_name: "$POD_craft_mummy_origin$ Elixir simple (Intriga)"
+ simple_elixir_learning_button_name: "$POD_craft_mummy_origin$ Elixir simple (Aprendizaje)"
+ simple_elixir_prowess_button_name: "$POD_craft_mummy_origin$ Elixir simple (destreza)"
+ simple_philtre_button_name: "$POD_craft_mummy_origin$ Filtro simple"
+ simple_tonic_button_name: "$POD_craft_mummy_origin$ Tónico simple"
+ blood_of_the_snake_button_name: "$POD_craft_mummy_origin$ Sangre de la Serpiente"
+ cobra_spit_button_name: "$POD_craft_mummy_origin$ Escupitajo de cobra"
+ essence_longing_button_name: "$POD_craft_mummy_origin$ Esencia Anhelo"
+ eyes_of_the_ka_button_name: "$POD_craft_mummy_origin$ Ojos del Ka"
+ complex_elixir_button_name: "$POD_craft_mummy_origin$ Elixir complejo"
+ complex_elixir_diplomacy_button_name: "$POD_craft_mummy_origin$ Elixir complejo (Diplomacia)"
+ complex_elixir_martial_button_name: "$POD_craft_mummy_origin$ Elixir complejo (marcial)"
+ complex_elixir_stewardship_button_name: "$POD_craft_mummy_origin$ Elixir complejo (administración)"
+ complex_elixir_intrigue_button_name: "$POD_craft_mummy_origin$ Elixir complejo (Intriga)"
+ complex_elixir_learning_button_name: "$POD_craft_mummy_origin$ Elixir complejo (Aprendizaje)"
+ complex_elixir_prowess_button_name: "$POD_craft_mummy_origin$ Elixir complejo (destreza)"
+ complex_philtre_button_name: "$POD_craft_mummy_origin$ Filtro complejo"
+ complex_tonic_button_name: "$POD_craft_mummy_origin$ Tónico complejo"
+ dangerous_poison_button_name: "$POD_craft_mummy_origin$$POD_craft_sorcerer_origin$ Veneno peligroso"
+ one_hundred_thousand_tongues_button_name: "$POD_craft_mummy_origin$ Cien mil lenguas"
+ potion_of_valor_button_name: "$POD_craft_mummy_origin$ Poción de valor"
+ salts_of_the_dead_button_name: "$POD_craft_mummy_origin$ Sales de los muertos"
+ panacea_button_name: "$POD_craft_mummy_origin$ Panacea"
+ philosophers_stone_button_name: "$POD_craft_mummy_origin$$POD_craft_sorcerer_origin$ Piedra filosofal"
+ potion_of_separable_ka_button_name: "$POD_craft_mummy_origin$ Poción de Ka separable"
+ deadly_poison_button_name: "$POD_craft_mummy_origin$$POD_craft_sorcerer_origin$ Veneno mortal"
+ flesh_of_the_gods_button_name: "$POD_craft_mummy_origin$ Carne de los Dioses"
+ potent_elixir_button_name: "$POD_craft_mummy_origin$ Elixir potente"
+ potent_elixir_diplomacy_button_name: "$POD_craft_mummy_origin$ Elixir potente (Diplomacia)"
+ potent_elixir_martial_button_name: "$POD_craft_mummy_origin$ Elixir potente (marcial)"
+ potent_elixir_stewardship_button_name: "$POD_craft_mummy_origin$ Elixir potente (administración)"
+ potent_elixir_intrigue_button_name: "$POD_craft_mummy_origin$ Elixir potente (Intriga)"
+ potent_elixir_learning_button_name: "$POD_craft_mummy_origin$ Elixir potente (Aprendizaje)"
+ potent_elixir_prowess_button_name: "$POD_craft_mummy_origin$ Elixir potente (destreza)"
+ potent_philtre_button_name: "$POD_craft_mummy_origin$ Filtro potente"
+ potent_tonic_button_name: "$POD_craft_mummy_origin$ Tónico potente"
+ potion_of_the_divine_button_name: "$POD_craft_mummy_origin$ Poción de lo Divino"
+ potion_of_the_vile_body_button_name: "$POD_craft_mummy_origin$ Poción del cuerpo vil"
+ distill_the_wisdom_of_maat_button_name: "$POD_craft_mummy_origin$ Destilar la sabiduría de Ma'at"
+ draught_of_perfect_memory_button_name: "$POD_craft_mummy_origin$ Borrador de la memoria perfecta"
+ personal_poison_button_name: "$POD_craft_mummy_origin$$POD_craft_sorcerer_origin$ Veneno personal"
+ princely_elixir_button_name: "$POD_craft_mummy_origin$ Elixir principesco"
+ princely_elixir_diplomacy_button_name: "$POD_craft_mummy_origin$ Elixir principesco (Diplomacia)"
+ princely_elixir_martial_button_name: "$POD_craft_mummy_origin$ Elixir principesco (marcial)"
+ princely_elixir_stewardship_button_name: "$POD_craft_mummy_origin$ Elixir principesco (administración)"
+ princely_elixir_intrigue_button_name: "$POD_craft_mummy_origin$ Elixir principesco (Intriga)"
+ princely_elixir_learning_button_name: "$POD_craft_mummy_origin$ Elixir principesco (Aprendizaje)"
+ princely_elixir_prowess_button_name: "$POD_craft_mummy_origin$ Elixir principesco (destreza)"
+ princely_tonic_button_name: "$POD_craft_mummy_origin$ Tónico principesco"
+ water_of_life_button_name: "$POD_craft_mummy_origin$ Agua de Vida"
+ elixir_of_thoths_aptitude_button_name: "$POD_craft_mummy_origin$ Elixir de la Aptitud de Thoth"
+ kingly_elixir_button_name: "$POD_craft_mummy_origin$ Elixir real"
+ kingly_elixir_diplomacy_button_name: "$POD_craft_mummy_origin$ Elixir Real (Diplomacia)"
+ kingly_elixir_martial_button_name: "$POD_craft_mummy_origin$ Elixir Real (Marcial)"
+ kingly_elixir_stewardship_button_name: "$POD_craft_mummy_origin$ Elixir real (mayordomía)"
+ kingly_elixir_intrigue_button_name: "$POD_craft_mummy_origin$ Elixir Real (Intriga)"
+ kingly_elixir_learning_button_name: "$POD_craft_mummy_origin$ Elixir Real (Aprendizaje)"
+ kingly_elixir_prowess_button_name: "$POD_craft_mummy_origin$ Elixir real (destreza)"
+ kingly_tonic_button_name: "$POD_craft_mummy_origin$ Tónico Real"
+ philtre_of_the_blackened_sands_button_name: "$POD_craft_mummy_origin$ Filtro de las arenas ennegrecidas"
+ divine_elixir_button_name: "$POD_craft_mummy_origin$ Elixir divino"
+ divine_elixir_diplomacy_button_name: "$POD_craft_mummy_origin$ Elixir Divino (Diplomacia)"
+ divine_elixir_martial_button_name: "$POD_craft_mummy_origin$ Elixir Divino (Marcial)"
+ divine_elixir_stewardship_button_name: "$POD_craft_mummy_origin$ Elixir divino (administración)"
+ divine_elixir_intrigue_button_name: "$POD_craft_mummy_origin$ Elixir Divino (Intriga)"
+ divine_elixir_learning_button_name: "$POD_craft_mummy_origin$ Elixir Divino (Aprendizaje)"
+ divine_elixir_prowess_button_name: "$POD_craft_mummy_origin$ Elixir divino (destreza)"
+ divine_tonic_button_name: "$POD_craft_mummy_origin$ Tónico Divino"
+ draught_of_the_stalwart_ab_button_name: "$POD_craft_mummy_origin$ Borrador del valiente Ab"
   
- animalism_counterfeit_1_button_name: "$POD_craft_thin_blood_origin$ Falsificación (Animalismo 1)" #NT!
- auspex_counterfeit_1_button_name: "$POD_craft_thin_blood_origin$ Falsificación (Auspex 1)" #NT!
- celerity_counterfeit_1_button_name: "$POD_craft_thin_blood_origin$ Falsificación (Celeridad 1)" #NT!
- dominate_counterfeit_1_button_name: "$POD_craft_thin_blood_origin$ Falsificación (Dominación 1)" #NT!
- fortitude_counterfeit_1_button_name: "$POD_craft_thin_blood_origin$ Falsificación (Fortaleza 1)" #NT!
- obfuscate_counterfeit_1_button_name: "$POD_craft_thin_blood_origin$ Falsificación (Ofuscar 1)" #NT!
- potence_counterfeit_1_button_name: "$POD_craft_thin_blood_origin$ Falsificación (Potencia 1)" #NT!
- presence_counterfeit_1_button_name: "$POD_craft_thin_blood_origin$ Falsificación (Presencia 1)" #NT!
- protean_counterfeit_1_button_name: "$POD_craft_thin_blood_origin$ Falsificación (Protean 1)" #NT!
+ animalism_counterfeit_1_button_name: "$POD_craft_thin_blood_origin$ Falsificación (Animalismo 1)"
+ auspex_counterfeit_1_button_name: "$POD_craft_thin_blood_origin$ Falsificación (Auspex 1)"
+ celerity_counterfeit_1_button_name: "$POD_craft_thin_blood_origin$ Falsificación (Celeridad 1)"
+ dominate_counterfeit_1_button_name: "$POD_craft_thin_blood_origin$ Falsificación (Dominación 1)"
+ fortitude_counterfeit_1_button_name: "$POD_craft_thin_blood_origin$ Falsificación (Fortaleza 1)"
+ obfuscate_counterfeit_1_button_name: "$POD_craft_thin_blood_origin$ Falsificación (Ofuscar 1)"
+ potence_counterfeit_1_button_name: "$POD_craft_thin_blood_origin$ Falsificación (Potencia 1)"
+ presence_counterfeit_1_button_name: "$POD_craft_thin_blood_origin$ Falsificación (Presencia 1)"
+ protean_counterfeit_1_button_name: "$POD_craft_thin_blood_origin$ Falsificación (Protean 1)"
   
- animalism_counterfeit_2_button_name: "$POD_craft_thin_blood_origin$ Falsificación (Animalismo 2)" #NT!
- auspex_counterfeit_2_button_name: "$POD_craft_thin_blood_origin$ Falsificación (Auspex 2)" #NT!
- celerity_counterfeit_2_button_name: "$POD_craft_thin_blood_origin$ Falsificación (Celerity 2)" #NT!
- dominate_counterfeit_2_button_name: "$POD_craft_thin_blood_origin$ Falsificación (Dominación 2)" #NT!
- fortitude_counterfeit_2_button_name: "$POD_craft_thin_blood_origin$ Falsificación (Fortitude 2)" #NT!
- obfuscate_counterfeit_2_button_name: "$POD_craft_thin_blood_origin$ Falsificación (Ofuscar 2)" #NT!
- potence_counterfeit_2_button_name: "$POD_craft_thin_blood_origin$ Falsificación (Potencia 2)" #NT!
- presence_counterfeit_2_button_name: "$POD_craft_thin_blood_origin$ Falsificación (Presencia 2)" #NT!
- protean_counterfeit_2_button_name: "$POD_craft_thin_blood_origin$ Falsificación (Protean 2)" #NT!
+ animalism_counterfeit_2_button_name: "$POD_craft_thin_blood_origin$ Falsificación (Animalismo 2)"
+ auspex_counterfeit_2_button_name: "$POD_craft_thin_blood_origin$ Falsificación (Auspex 2)"
+ celerity_counterfeit_2_button_name: "$POD_craft_thin_blood_origin$ Falsificación (Celerity 2)"
+ dominate_counterfeit_2_button_name: "$POD_craft_thin_blood_origin$ Falsificación (Dominación 2)"
+ fortitude_counterfeit_2_button_name: "$POD_craft_thin_blood_origin$ Falsificación (Fortitude 2)"
+ obfuscate_counterfeit_2_button_name: "$POD_craft_thin_blood_origin$ Falsificación (Ofuscar 2)"
+ potence_counterfeit_2_button_name: "$POD_craft_thin_blood_origin$ Falsificación (Potencia 2)"
+ presence_counterfeit_2_button_name: "$POD_craft_thin_blood_origin$ Falsificación (Presencia 2)"
+ protean_counterfeit_2_button_name: "$POD_craft_thin_blood_origin$ Falsificación (Protean 2)"
   
- animalism_counterfeit_3_button_name: "$POD_craft_thin_blood_origin$ Falsificación (Animalismo 3)" #NT!
- auspex_counterfeit_3_button_name: "$POD_craft_thin_blood_origin$ Falsificación (Auspex 3)" #NT!
- celerity_counterfeit_3_button_name: "$POD_craft_thin_blood_origin$ Falsificación (Celeridad 3)" #NT!
- dominate_counterfeit_3_button_name: "$POD_craft_thin_blood_origin$ Falsificación (Dominación 3)" #NT!
- fortitude_counterfeit_3_button_name: "$POD_craft_thin_blood_origin$ Falsificación (Fortaleza 3)" #NT!
- obfuscate_counterfeit_3_button_name: "$POD_craft_thin_blood_origin$ Falsificación (Ofuscar 3)" #NT!
- potence_counterfeit_3_button_name: "$POD_craft_thin_blood_origin$ Falsificación (Potencia 3)" #NT!
- presence_counterfeit_3_button_name: "$POD_craft_thin_blood_origin$ Falsificación (Presencia 3)" #NT!
- protean_counterfeit_3_button_name: "$POD_craft_thin_blood_origin$ Falsificación (Protean 3)" #NT!
+ animalism_counterfeit_3_button_name: "$POD_craft_thin_blood_origin$ Falsificación (Animalismo 3)"
+ auspex_counterfeit_3_button_name: "$POD_craft_thin_blood_origin$ Falsificación (Auspex 3)"
+ celerity_counterfeit_3_button_name: "$POD_craft_thin_blood_origin$ Falsificación (Celeridad 3)"
+ dominate_counterfeit_3_button_name: "$POD_craft_thin_blood_origin$ Falsificación (Dominación 3)"
+ fortitude_counterfeit_3_button_name: "$POD_craft_thin_blood_origin$ Falsificación (Fortaleza 3)"
+ obfuscate_counterfeit_3_button_name: "$POD_craft_thin_blood_origin$ Falsificación (Ofuscar 3)"
+ potence_counterfeit_3_button_name: "$POD_craft_thin_blood_origin$ Falsificación (Potencia 3)"
+ presence_counterfeit_3_button_name: "$POD_craft_thin_blood_origin$ Falsificación (Presencia 3)"
+ protean_counterfeit_3_button_name: "$POD_craft_thin_blood_origin$ Falsificación (Protean 3)"
   
- animalism_counterfeit_4_button_name: "$POD_craft_thin_blood_origin$ Falsificación (Animalismo 4)" #NT!
- auspex_counterfeit_4_button_name: "$POD_craft_thin_blood_origin$ Falsificación (Auspex 4)" #NT!
- celerity_counterfeit_4_button_name: "$POD_craft_thin_blood_origin$ Falsificación (Celeridad 4)" #NT!
- dominate_counterfeit_4_button_name: "$POD_craft_thin_blood_origin$ Falsificación (Dominación 4)" #NT!
- fortitude_counterfeit_4_button_name: "$POD_craft_thin_blood_origin$ Falsificación (Fortaleza 4)" #NT!
- obfuscate_counterfeit_4_button_name: "$POD_craft_thin_blood_origin$ Falsificación (Ofuscar 4)" #NT!
- potence_counterfeit_4_button_name: "$POD_craft_thin_blood_origin$ Falsificación (Potencia 4)" #NT!
- presence_counterfeit_4_button_name: "$POD_craft_thin_blood_origin$ Falsificación (Presencia 4)" #NT!
- protean_counterfeit_4_button_name: "$POD_craft_thin_blood_origin$ Falsificación (Protean 4)" #NT!
+ animalism_counterfeit_4_button_name: "$POD_craft_thin_blood_origin$ Falsificación (Animalismo 4)"
+ auspex_counterfeit_4_button_name: "$POD_craft_thin_blood_origin$ Falsificación (Auspex 4)"
+ celerity_counterfeit_4_button_name: "$POD_craft_thin_blood_origin$ Falsificación (Celeridad 4)"
+ dominate_counterfeit_4_button_name: "$POD_craft_thin_blood_origin$ Falsificación (Dominación 4)"
+ fortitude_counterfeit_4_button_name: "$POD_craft_thin_blood_origin$ Falsificación (Fortaleza 4)"
+ obfuscate_counterfeit_4_button_name: "$POD_craft_thin_blood_origin$ Falsificación (Ofuscar 4)"
+ potence_counterfeit_4_button_name: "$POD_craft_thin_blood_origin$ Falsificación (Potencia 4)"
+ presence_counterfeit_4_button_name: "$POD_craft_thin_blood_origin$ Falsificación (Presencia 4)"
+ protean_counterfeit_4_button_name: "$POD_craft_thin_blood_origin$ Falsificación (Protean 4)"
   
- alchemy_product_amount: "[GetPlayer.MakeScope.ScriptValue('product_amount')]" #NT!
- alchemy_product_success_chance: "[GetPlayer.MakeScope.ScriptValue('alchemy_success_chance')]%" #NT!
- alchemy_product_success_chance_tt: "[GetPlayer.MakeScope.GetScriptValueDesc('alchemy_success_chance')]" #NT!
- alchemy_equip_tt: "Utilice un [interaction|E] para usar o vender este producto alquímico" #NT!
+ alchemy_product_amount: "[GetPlayer.MakeScope.ScriptValue('product_amount')]"
+ alchemy_product_success_chance: "[GetPlayer.MakeScope.ScriptValue('alchemy_success_chance')]%"
+ alchemy_product_success_chance_tt: "[GetPlayer.MakeScope.GetScriptValueDesc('alchemy_success_chance')]"
+ alchemy_equip_tt: "Utilice un [interaction|E] para usar o vender este producto alquímico"
   
   # Smith # 
   
- smith_time: "[GetPlayer.MakeScope.ScriptValue('smith_time')] días" #NT!
- smith_time_tt: "Smith no estará disponible durante [GetPlayer.MakeScope.ScriptValue('smith_time')|V0] días durante [GetPlayer.MakeScope.GetVariable('craft_creator').GetCharacter.GetFirstName]" #NT!
- smith_cooldown_tt: "Smith no estará disponible hasta el [GetCurrentDateWithDiff( GetVarTimeRemaining( GetPlayer.MakeScope.GetVariable('craft_creator').GetCharacter.MakeScope, 'smith_cooldown') )] por [GetPlayer.MakeScope.GetVariable('craft_creator').GetCharacter.GetFirstName]" #NT!
- smith_unavailable_tt: "Smith no estará disponible hasta el [GetCurrentDateWithDiff( GetVarTimeRemaining( GetPlayer.MakeScope.GetVariable('craft_creator').GetCharacter.MakeScope, 'smith_cooldown') )]" #NT!
- smith_available_tt: "Smith no está en enfriamiento" #NT!
+ smith_time: "[GetPlayer.MakeScope.ScriptValue('smith_time')] días"
+ smith_time_tt: "Smith no estará disponible durante [GetPlayer.MakeScope.ScriptValue('smith_time')|V0] días durante [GetPlayer.MakeScope.GetVariable('craft_creator').GetCharacter.GetFirstName]"
+ smith_cooldown_tt: "Smith no estará disponible hasta el [GetCurrentDateWithDiff( GetVarTimeRemaining( GetPlayer.MakeScope.GetVariable('craft_creator').GetCharacter.MakeScope, 'smith_cooldown') )] por [GetPlayer.MakeScope.GetVariable('craft_creator').GetCharacter.GetFirstName]"
+ smith_unavailable_tt: "Smith no estará disponible hasta el [GetCurrentDateWithDiff( GetVarTimeRemaining( GetPlayer.MakeScope.GetVariable('craft_creator').GetCharacter.MakeScope, 'smith_cooldown') )]"
+ smith_available_tt: "Smith no está en enfriamiento"
   
- artifact_empower_button_name: "$POD_craft_mummy_origin$ Pieza de artefacto de empoderamiento" #NT!
- artifact_shatter_button_name: "$POD_craft_mummy_origin$ Fragmento de artefacto destrozado" #NT!
- artifact_empower_name: "Pieza de artefacto de empoderamiento" #NT!
- artifact_shatter_name: "Fragmento de artefacto destrozado" #NT!
- artifact_simple_ward_button_name: "$POD_craft_mummy_origin$ [GetPerk('simple_ward_perk').GetName( GetPlayer )]" #NT!
- artifact_lesser_ward_button_name: "$POD_craft_mummy_origin$ [GetPerk('lesser_ward_perk').GetName( GetPlayer )]" #NT!
- artifact_major_ward_button_name: "$POD_craft_mummy_origin$ [GetPerk('major_ward_perk').GetName( GetPlayer )]" #NT!
- artifact_greater_ward_button_name: "$POD_craft_mummy_origin$ [GetPerk('greater_ward_perk').GetName( GetPlayer )]" #NT!
- artifact_princely_ward_button_name: "$POD_craft_mummy_origin$ [GetPerk('princely_ward_perk').GetName( GetPlayer )]" #NT!
- artifact_kingly_ward_button_name: "$POD_craft_mummy_origin$ [GetPerk('kingly_ward_perk').GetName( GetPlayer )]" #NT!
- artifact_ramoses_armor_button_name: "$POD_craft_mummy_origin$ [GetPerk('ramoses_armor_perk').GetName( GetPlayer )]" #NT!
- artifact_shield_of_the_pharaohs_button_name: "$POD_craft_mummy_origin$ [GetPerk('shield_of_the_pharaohs_perk').GetName( GetPlayer )]" #NT!
- artifact_wood_ward_button_name: "$POD_craft_mummy_origin$ [GetPerk('wood_ward_perk').GetName( GetPlayer )]" #NT!
- artifact_metal_ward_button_name: "$POD_craft_mummy_origin$ [GetPerk('metal_ward_perk').GetName( GetPlayer )]" #NT!
- artifact_lesser_talisman_button_name: "$POD_craft_mummy_origin$ [GetPerk('lesser_talisman_perk').GetName( GetPlayer )]" #NT!
- artifact_greater_talisman_button_name: "$POD_craft_mummy_origin$ [GetPerk('greater_talisman_perk').GetName( GetPlayer )]" #NT!
- artifact_princely_talisman_button_name: "$POD_craft_mummy_origin$ [GetPerk('princely_talisman_perk').GetName( GetPlayer )]" #NT!
- artifact_viziers_talisman_button_name: "$POD_craft_mummy_origin$ [GetPerk('viziers_talisman_perk').GetName( GetPlayer )]" #NT!
- artifact_talisman_of_the_vulture_button_name: "$POD_craft_mummy_origin$ [GetPerk('talisman_of_the_vulture_perk').GetName( GetPlayer )]" #NT!
- artifact_kingly_talisman_button_name: "$POD_craft_mummy_origin$ [GetPerk('kingly_talisman_perk').GetName( GetPlayer )]" #NT!
- artifact_vault_of_inner_strength_button_name: "$POD_craft_mummy_origin$ [GetPerk('vault_of_inner_strength_perk').GetName( GetPlayer )]" #NT!
- artifact_divine_talisman_button_name: "$POD_craft_mummy_origin$ [GetPerk('divine_talisman_perk').GetName( GetPlayer )]" #NT!
- artifact_talisman_of_the_asp_button_name: "$POD_craft_mummy_origin$ [GetPerk('talisman_of_the_asp_perk').GetName( GetPlayer )]" #NT!
- artifact_heart_of_maat_button_name: "$POD_craft_mummy_origin$ [GetPerk('heart_of_maat_perk').GetName( GetPlayer )]" #NT!
- artifact_amulet_of_cloud_walking_button_name: "$POD_craft_mummy_origin$ [GetPerk('amulet_of_cloud_walking_perk').GetName( GetPlayer )]" #NT!
- artifact_veil_of_amaunet_button_name: "$POD_craft_mummy_origin$ [GetPerk('veil_of_amaunet_perk').GetName( GetPlayer )]" #NT!
- artifact_greater_veil_of_amaunet_button_name: "$POD_craft_mummy_origin$ [GetPerk('greater_veil_of_amaunet_perk').GetName( GetPlayer )]" #NT!
- artifact_whisper_between_two_hearts_button_name: "$POD_craft_mummy_origin$ [GetPerk('whisper_between_two_hearts_perk').GetName( GetPlayer )]" #NT!
- artifact_piercing_eye_of_thoth_button_name: "$POD_craft_mummy_origin$ [GetPerk('piercing_eye_of_thoth_perk').GetName( GetPlayer )]" #NT!
- artifact_gebs_blessing_button_name: "$POD_craft_mummy_origin$ [GetPerk('gebs_blessing_perk').GetName( GetPlayer )]" #NT!
- artifact_buckle_of_isis_button_name: "$POD_craft_mummy_origin$ [GetPerk('buckle_of_isis_perk').GetName( GetPlayer )]" #NT!
- artifact_nyarashahims_screaming_scarab_button_name: "$POD_craft_mummy_origin$ [GetPerk('nyarashahims_screaming_scarab_perk').GetName( GetPlayer )]" #NT!
- artifact_scarab_of_life_button_name: "$POD_craft_mummy_origin$ [GetPerk('scarab_of_life_perk').GetName( GetPlayer )]" #NT!
- artifact_scarab_of_death_button_name: "$POD_craft_mummy_origin$ [GetPerk('scarab_of_death_perk').GetName( GetPlayer )]" #NT!
- artifact_simple_creature_button_name: "$POD_craft_mummy_origin$ [GetPerk('simple_creature_perk').GetName( GetPlayer )]" #NT!
- artifact_lesser_creature_button_name: "$POD_craft_mummy_origin$ [GetPerk('lesser_creature_perk').GetName( GetPlayer )]" #NT!
- artifact_major_creature_button_name: "$POD_craft_mummy_origin$ [GetPerk('major_creature_perk').GetName( GetPlayer )]" #NT!
- artifact_superior_creature_button_name: "$POD_craft_mummy_origin$ [GetPerk('superior_creature_perk').GetName( GetPlayer )]" #NT!
- artifact_princely_creature_button_name: "$POD_craft_mummy_origin$ [GetPerk('princely_creature_perk').GetName( GetPlayer )]" #NT!
- artifact_the_crawling_eye_button_name: "$POD_craft_mummy_origin$ [GetPerk('the_crawling_eye_perk').GetName( GetPlayer )]" #NT!
- artifact_viziers_beast_button_name: "$POD_craft_mummy_origin$ [GetPerk('viziers_beast_perk').GetName( GetPlayer )]" #NT!
- artifact_stalking_hound_of_typhon_button_name: "$POD_craft_mummy_origin$ [GetPerk('stalking_hound_of_typhon_perk').GetName( GetPlayer )]" #NT!
- artifact_kingly_beast_button_name: "$POD_craft_mummy_origin$ [GetPerk('kingly_beast_perk').GetName( GetPlayer )]" #NT!
- artifact_divine_beast_button_name: "$POD_craft_mummy_origin$ [GetPerk('divine_beast_perk').GetName( GetPlayer )]" #NT!
- artifact_lesser_chattel_button_name: "$POD_craft_mummy_origin$ [GetPerk('lesser_chattel_perk').GetName( GetPlayer )]" #NT!
- artifact_complex_chattel_button_name: "$POD_craft_mummy_origin$ [GetPerk('complex_chattel_perk').GetName( GetPlayer )]" #NT!
- artifact_superior_chattel_button_name: "$POD_craft_mummy_origin$ [GetPerk('superior_chattel_perk').GetName( GetPlayer )]" #NT!
- artifact_princely_chattel_button_name: "$POD_craft_mummy_origin$ [GetPerk('princely_chattel_perk').GetName( GetPlayer )]" #NT!
- artifact_sekhem_vessel_button_name: "$POD_craft_mummy_origin$ [GetPerk('sekhem_vessel_perk').GetName( GetPlayer )]" #NT!
- artifact_greater_sekhem_vessel_button_name: "$POD_craft_mummy_origin$ [GetPerk('greater_sekhem_vessel_perk').GetName( GetPlayer )]" #NT!
+ artifact_empower_button_name: "$POD_craft_mummy_origin$ Pieza de artefacto de empoderamiento"
+ artifact_shatter_button_name: "$POD_craft_mummy_origin$ Fragmento de artefacto destrozado"
+ artifact_empower_name: "Pieza de artefacto de empoderamiento"
+ artifact_shatter_name: "Fragmento de artefacto destrozado"
+ artifact_simple_ward_button_name: "$POD_craft_mummy_origin$ [GetPerk('simple_ward_perk').GetName( GetPlayer )]"
+ artifact_lesser_ward_button_name: "$POD_craft_mummy_origin$ [GetPerk('lesser_ward_perk').GetName( GetPlayer )]"
+ artifact_major_ward_button_name: "$POD_craft_mummy_origin$ [GetPerk('major_ward_perk').GetName( GetPlayer )]"
+ artifact_greater_ward_button_name: "$POD_craft_mummy_origin$ [GetPerk('greater_ward_perk').GetName( GetPlayer )]"
+ artifact_princely_ward_button_name: "$POD_craft_mummy_origin$ [GetPerk('princely_ward_perk').GetName( GetPlayer )]"
+ artifact_kingly_ward_button_name: "$POD_craft_mummy_origin$ [GetPerk('kingly_ward_perk').GetName( GetPlayer )]"
+ artifact_ramoses_armor_button_name: "$POD_craft_mummy_origin$ [GetPerk('ramoses_armor_perk').GetName( GetPlayer )]"
+ artifact_shield_of_the_pharaohs_button_name: "$POD_craft_mummy_origin$ [GetPerk('shield_of_the_pharaohs_perk').GetName( GetPlayer )]"
+ artifact_wood_ward_button_name: "$POD_craft_mummy_origin$ [GetPerk('wood_ward_perk').GetName( GetPlayer )]"
+ artifact_metal_ward_button_name: "$POD_craft_mummy_origin$ [GetPerk('metal_ward_perk').GetName( GetPlayer )]"
+ artifact_lesser_talisman_button_name: "$POD_craft_mummy_origin$ [GetPerk('lesser_talisman_perk').GetName( GetPlayer )]"
+ artifact_greater_talisman_button_name: "$POD_craft_mummy_origin$ [GetPerk('greater_talisman_perk').GetName( GetPlayer )]"
+ artifact_princely_talisman_button_name: "$POD_craft_mummy_origin$ [GetPerk('princely_talisman_perk').GetName( GetPlayer )]"
+ artifact_viziers_talisman_button_name: "$POD_craft_mummy_origin$ [GetPerk('viziers_talisman_perk').GetName( GetPlayer )]"
+ artifact_talisman_of_the_vulture_button_name: "$POD_craft_mummy_origin$ [GetPerk('talisman_of_the_vulture_perk').GetName( GetPlayer )]"
+ artifact_kingly_talisman_button_name: "$POD_craft_mummy_origin$ [GetPerk('kingly_talisman_perk').GetName( GetPlayer )]"
+ artifact_vault_of_inner_strength_button_name: "$POD_craft_mummy_origin$ [GetPerk('vault_of_inner_strength_perk').GetName( GetPlayer )]"
+ artifact_divine_talisman_button_name: "$POD_craft_mummy_origin$ [GetPerk('divine_talisman_perk').GetName( GetPlayer )]"
+ artifact_talisman_of_the_asp_button_name: "$POD_craft_mummy_origin$ [GetPerk('talisman_of_the_asp_perk').GetName( GetPlayer )]"
+ artifact_heart_of_maat_button_name: "$POD_craft_mummy_origin$ [GetPerk('heart_of_maat_perk').GetName( GetPlayer )]"
+ artifact_amulet_of_cloud_walking_button_name: "$POD_craft_mummy_origin$ [GetPerk('amulet_of_cloud_walking_perk').GetName( GetPlayer )]"
+ artifact_veil_of_amaunet_button_name: "$POD_craft_mummy_origin$ [GetPerk('veil_of_amaunet_perk').GetName( GetPlayer )]"
+ artifact_greater_veil_of_amaunet_button_name: "$POD_craft_mummy_origin$ [GetPerk('greater_veil_of_amaunet_perk').GetName( GetPlayer )]"
+ artifact_whisper_between_two_hearts_button_name: "$POD_craft_mummy_origin$ [GetPerk('whisper_between_two_hearts_perk').GetName( GetPlayer )]"
+ artifact_piercing_eye_of_thoth_button_name: "$POD_craft_mummy_origin$ [GetPerk('piercing_eye_of_thoth_perk').GetName( GetPlayer )]"
+ artifact_gebs_blessing_button_name: "$POD_craft_mummy_origin$ [GetPerk('gebs_blessing_perk').GetName( GetPlayer )]"
+ artifact_buckle_of_isis_button_name: "$POD_craft_mummy_origin$ [GetPerk('buckle_of_isis_perk').GetName( GetPlayer )]"
+ artifact_nyarashahims_screaming_scarab_button_name: "$POD_craft_mummy_origin$ [GetPerk('nyarashahims_screaming_scarab_perk').GetName( GetPlayer )]"
+ artifact_scarab_of_life_button_name: "$POD_craft_mummy_origin$ [GetPerk('scarab_of_life_perk').GetName( GetPlayer )]"
+ artifact_scarab_of_death_button_name: "$POD_craft_mummy_origin$ [GetPerk('scarab_of_death_perk').GetName( GetPlayer )]"
+ artifact_simple_creature_button_name: "$POD_craft_mummy_origin$ [GetPerk('simple_creature_perk').GetName( GetPlayer )]"
+ artifact_lesser_creature_button_name: "$POD_craft_mummy_origin$ [GetPerk('lesser_creature_perk').GetName( GetPlayer )]"
+ artifact_major_creature_button_name: "$POD_craft_mummy_origin$ [GetPerk('major_creature_perk').GetName( GetPlayer )]"
+ artifact_superior_creature_button_name: "$POD_craft_mummy_origin$ [GetPerk('superior_creature_perk').GetName( GetPlayer )]"
+ artifact_princely_creature_button_name: "$POD_craft_mummy_origin$ [GetPerk('princely_creature_perk').GetName( GetPlayer )]"
+ artifact_the_crawling_eye_button_name: "$POD_craft_mummy_origin$ [GetPerk('the_crawling_eye_perk').GetName( GetPlayer )]"
+ artifact_viziers_beast_button_name: "$POD_craft_mummy_origin$ [GetPerk('viziers_beast_perk').GetName( GetPlayer )]"
+ artifact_stalking_hound_of_typhon_button_name: "$POD_craft_mummy_origin$ [GetPerk('stalking_hound_of_typhon_perk').GetName( GetPlayer )]"
+ artifact_kingly_beast_button_name: "$POD_craft_mummy_origin$ [GetPerk('kingly_beast_perk').GetName( GetPlayer )]"
+ artifact_divine_beast_button_name: "$POD_craft_mummy_origin$ [GetPerk('divine_beast_perk').GetName( GetPlayer )]"
+ artifact_lesser_chattel_button_name: "$POD_craft_mummy_origin$ [GetPerk('lesser_chattel_perk').GetName( GetPlayer )]"
+ artifact_complex_chattel_button_name: "$POD_craft_mummy_origin$ [GetPerk('complex_chattel_perk').GetName( GetPlayer )]"
+ artifact_superior_chattel_button_name: "$POD_craft_mummy_origin$ [GetPerk('superior_chattel_perk').GetName( GetPlayer )]"
+ artifact_princely_chattel_button_name: "$POD_craft_mummy_origin$ [GetPerk('princely_chattel_perk').GetName( GetPlayer )]"
+ artifact_sekhem_vessel_button_name: "$POD_craft_mummy_origin$ [GetPerk('sekhem_vessel_perk').GetName( GetPlayer )]"
+ artifact_greater_sekhem_vessel_button_name: "$POD_craft_mummy_origin$ [GetPerk('greater_sekhem_vessel_perk').GetName( GetPlayer )]"
   
- smith_quality_tooltip: "Los resultados de calidad de Smith se basan en [stewardship|E] y el nivel de material" #NT!
- inertion_quality_tooltip: "Los resultados de la calidad de la inercia se basan en la rareza de la efigie utilizada." #NT!
+ smith_quality_tooltip: "Los resultados de calidad de Smith se basan en [stewardship|E] y el nivel de material"
+ inertion_quality_tooltip: "Los resultados de la calidad de la inercia se basan en la rareza de la efigie utilizada."
   
   # Forge # 
   
- FORGE_TAB_DESIGN: "Diseño" #NT!
- FORGE_TAB_MODIFIER: "Modificador" #NT!
- FORGE_TAB_METHOD: "Método" #NT!
+ FORGE_TAB_DESIGN: "Diseño"
+ FORGE_TAB_MODIFIER: "Modificador"
+ FORGE_TAB_METHOD: "Método"
   
- forge_time: "[GetPlayer.MakeScope.ScriptValue('forge_time')] días" #NT!
- forge_time_tt: "Forge no estará disponible durante [GetPlayer.MakeScope.ScriptValue('forge_time')|V0] días durante [GetPlayer.MakeScope.GetVariable('craft_creator').GetCharacter.GetFirstName]" #NT!
- forge_cooldown_tt: "Forja no disponible hasta el [GetCurrentDateWithDiff( GetVarTimeRemaining( GetPlayer.MakeScope.GetVariable('craft_creator').GetCharacter.MakeScope, 'forge_cooldown') )] por [GetPlayer.MakeScope.GetVariable('craft_creator').GetCharacter.GetFirstName]" #NT!
- forge_unavailable_tt: "Forja no disponible hasta el [GetCurrentDateWithDiff( GetVarTimeRemaining( GetPlayer.MakeScope.GetVariable('craft_creator').GetCharacter.MakeScope, 'forge_cooldown') )]" #NT!
- forge_available_tt: "La forja no está en enfriamiento" #NT!
+ forge_time: "[GetPlayer.MakeScope.ScriptValue('forge_time')] días"
+ forge_time_tt: "Forge no estará disponible durante [GetPlayer.MakeScope.ScriptValue('forge_time')|V0] días durante [GetPlayer.MakeScope.GetVariable('craft_creator').GetCharacter.GetFirstName]"
+ forge_cooldown_tt: "Forja no disponible hasta el [GetCurrentDateWithDiff( GetVarTimeRemaining( GetPlayer.MakeScope.GetVariable('craft_creator').GetCharacter.MakeScope, 'forge_cooldown') )] por [GetPlayer.MakeScope.GetVariable('craft_creator').GetCharacter.GetFirstName]"
+ forge_unavailable_tt: "Forja no disponible hasta el [GetCurrentDateWithDiff( GetVarTimeRemaining( GetPlayer.MakeScope.GetVariable('craft_creator').GetCharacter.MakeScope, 'forge_cooldown') )]"
+ forge_available_tt: "La forja no está en enfriamiento"
   
- current_forge_name: "[Localize(Concatenate(GetPlayer.MakeScope.GetVariable('current_recipe').GetFlagName, '_name'))]" #NT!
- axe_forge_name: "Hacha de batalla" #NT!
- hammer_forge_name: "Martillo de guerra" #NT!
- spear_forge_name: "Lanza" #NT!
- mace_forge_name: "Maza" #NT!
- dagger_forge_name: "Daga" #NT!
- sword_forge_name: "Espada" #NT!
- armor_plate_forge_name: "Armadura de placas" #NT!
- armor_scale_forge_name: "Armadura de escamas" #NT!
- armor_lamellar_forge_name: "Armadura laminar" #NT!
- armor_laminar_forge_name: "Armadura laminar" #NT!
- armor_brigandine_forge_name: "Armadura segmentada" #NT!
- armor_mail_forge_name: "Correo" #NT!
- regalia_forge_name: "Insignias reales" #NT!
- crown_forge_name: "Corona" #NT!
- brooch_forge_name: "Broche" #NT!
- book_forge_name: "Libro" #NT!
- goblet_forge_name: "Copa" #NT!
- statue_forge_name: "Estatua" #NT!
- tapestry_forge_name: "Tapiz" #NT!
- throne_forge_name: "Trono" #NT!
- bowl_forge_name: "Bol" #NT!
- urn_forge_name: "Urna" #NT!
- ring_forge_name: "Anillo" #NT!
- necklace_forge_name: "Collar" #NT!
+ current_forge_name: "[Localize(Concatenate(GetPlayer.MakeScope.GetVariable('current_recipe').GetFlagName, '_name'))]"
+ axe_forge_name: "Hacha de batalla"
+ hammer_forge_name: "Martillo de guerra"
+ spear_forge_name: "Lanza"
+ mace_forge_name: "Maza"
+ dagger_forge_name: "Daga"
+ sword_forge_name: "Espada"
+ armor_plate_forge_name: "Armadura de placas"
+ armor_scale_forge_name: "Armadura de escamas"
+ armor_lamellar_forge_name: "Armadura laminar"
+ armor_laminar_forge_name: "Armadura laminar"
+ armor_brigandine_forge_name: "Armadura segmentada"
+ armor_mail_forge_name: "Correo"
+ regalia_forge_name: "Insignias reales"
+ crown_forge_name: "Corona"
+ brooch_forge_name: "Broche"
+ book_forge_name: "Libro"
+ goblet_forge_name: "Copa"
+ statue_forge_name: "Estatua"
+ tapestry_forge_name: "Tapiz"
+ throne_forge_name: "Trono"
+ bowl_forge_name: "Bol"
+ urn_forge_name: "Urna"
+ ring_forge_name: "Anillo"
+ necklace_forge_name: "Collar"
   
- white_jade_forge_name: "Jade blanco" #NT!
- mount_forge_name: "Montar" #NT!
- blood_vessel_forge_name: "El cáliz odioso" #NT!
+ white_jade_forge_name: "Jade blanco"
+ mount_forge_name: "Montar"
+ blood_vessel_forge_name: "El cáliz odioso"
   
- fleshcraft_method: "$POD_craft_vampire_origin$ Artesanía con carne" #NT!
- shape_flesh_method: "$POD_craft_demon_origin$ Forma Carne" #NT!
- catgut_method: "$POD_craft_fera_origin$ Tripa de gato" #NT!
- mold_method: "$POD_craft_fae_origin$ Molde" #NT!
- soulforge_method: "$POD_craft_wraith_origin$ Forja de almas" #NT!
- fetishsmith_forced_method: "$POD_craft_fera_origin$ Forja de fetiches #weak (Forzada)#!" #NT!
- fetishsmith_method: "$POD_craft_fera_origin$ Forja fetiche" #NT!
- shape_true_jade_method: "$POD_craft_wraith_origin$ Forma Jade Verdadero" #NT!
- frost_facsimile_method: "$POD_craft_fae_origin$ Facsímil de escarcha" #NT!
- eightfold_yin_mantle_method: "$POD_craft_kueijin_origin$ Solidificar objetos Yin" #NT!
- corrupt_relic_method: "$POD_craft_demon_origin$ Forja Reliquia Corrupta" #NT!
- tainted_relic_method: "$POD_craft_wraith_origin$ Reliquia Manifiesta Manchada" #NT!
- horrid_blade_method: "$POD_craft_vampire_origin$ Horrible espada de los demonios" #NT!
- demon_weapon_method: "$POD_craft_kueijin_origin$ Arma demoníaca manifiesta" #NT!
- blood_blade_method: "$POD_craft_kueijin_origin$ Crear Espada de Sangre" #NT!
- goblin_sword_method: "$POD_craft_kueijin_origin$ Espada de duende manifiesta" #NT!
- blade_of_stone_method: "$POD_craft_kueijin_origin$ Crea Espada de Piedra" #NT!
- reweave_common_method: "$POD_craft_mummy_origin$$POD_craft_demon_origin$$POD_craft_wraith_origin$$POD_craft_horror_origin$ Retejer #weak (Común)#!" #NT!
- reweave_masterwork_method: "$POD_craft_mummy_origin$$POD_craft_demon_origin$$POD_craft_wraith_origin$$POD_craft_horror_origin$ Retejer #weak (Obra maestra)#!" #NT!
- reweave_famed_method: "$POD_craft_mummy_origin$ Retejer #weak (Famoso)#!" #NT!
- reweave_illustrious_method: "$POD_craft_mummy_origin$ Retejer #weak (Ilustre)#!" #NT!
- enchant_object_method: "$POD_craft_demon_origin$ Encantar" #NT!
- enchantment_method: "$POD_craft_sorcerer_origin$ Encantamiento" #NT!
- ectoplasmic_artifact_method: "$POD_craft_psychic_origin$ Ectoplasmático" #NT!
+ fleshcraft_method: "$POD_craft_vampire_origin$ Artesanía con carne"
+ shape_flesh_method: "$POD_craft_demon_origin$ Forma Carne"
+ catgut_method: "$POD_craft_fera_origin$ Tripa de gato"
+ mold_method: "$POD_craft_fae_origin$ Molde"
+ soulforge_method: "$POD_craft_wraith_origin$ Forja de almas"
+ fetishsmith_forced_method: "$POD_craft_fera_origin$ Forja de fetiches #weak (Forzada)#!"
+ fetishsmith_method: "$POD_craft_fera_origin$ Forja fetiche"
+ shape_true_jade_method: "$POD_craft_wraith_origin$ Forma Jade Verdadero"
+ frost_facsimile_method: "$POD_craft_fae_origin$ Facsímil de escarcha"
+ eightfold_yin_mantle_method: "$POD_craft_kueijin_origin$ Solidificar objetos Yin"
+ corrupt_relic_method: "$POD_craft_demon_origin$ Forja Reliquia Corrupta"
+ tainted_relic_method: "$POD_craft_wraith_origin$ Reliquia Manifiesta Manchada"
+ horrid_blade_method: "$POD_craft_vampire_origin$ Horrible espada de los demonios"
+ demon_weapon_method: "$POD_craft_kueijin_origin$ Arma demoníaca manifiesta"
+ blood_blade_method: "$POD_craft_kueijin_origin$ Crear Espada de Sangre"
+ goblin_sword_method: "$POD_craft_kueijin_origin$ Espada de duende manifiesta"
+ blade_of_stone_method: "$POD_craft_kueijin_origin$ Crea Espada de Piedra"
+ reweave_common_method: "$POD_craft_mummy_origin$$POD_craft_demon_origin$$POD_craft_wraith_origin$$POD_craft_horror_origin$ Retejer #weak (Común)#!"
+ reweave_masterwork_method: "$POD_craft_mummy_origin$$POD_craft_demon_origin$$POD_craft_wraith_origin$$POD_craft_horror_origin$ Retejer #weak (Obra maestra)#!"
+ reweave_famed_method: "$POD_craft_mummy_origin$ Retejer #weak (Famoso)#!"
+ reweave_illustrious_method: "$POD_craft_mummy_origin$ Retejer #weak (Ilustre)#!"
+ enchant_object_method: "$POD_craft_demon_origin$ Encantar"
+ enchantment_method: "$POD_craft_sorcerer_origin$ Encantamiento"
+ ectoplasmic_artifact_method: "$POD_craft_psychic_origin$ Ectoplasmático"
   
- artifact_to_create_name: "Artefacto para crear" #NT!
- creator_need_shapeshifter_large_tt: "[GetPlayer.MakeScope.GetVariable('craft_creator').GetCharacter.GetFirstName] debe ser [GetTrait('kinfolk').GetName( GetPlayer )], [GetTraitGroup('shapeshifter').GetName()], [GetTrait('abomination').GetName( GetPlayer )], [GetTrait('spirit').GetName( GetPlayer )] o tener [GetPerk('fomori_spirit_ties_perk').GetName( GetPlayer )] [perk|E]." #NT!
- is_wraith_jade: "[GetPlayer.MakeScope.GetVariable('artifact_material').Artifact.GetName] es #bold no #! un jade blanco" #NT!
- one_tainted_relic: "¡Sólo puedes tener una reliquia contaminada!" #NT!
- one_demon_weapon: "¡Sólo puedes tener un arma demoníaca!" #NT!
- can_reweave_tt: "[GetPlayer.MakeScope.GetVariable('craft_creator').GetCharacter.GetFirstName] necesita tener [GetPerk('major_restoration_perk').GetName( GetPlayer )] [perk|E], [GetPerk('beckon_relic_perk').GetName( GetPlayer )] [perk|E], [GetPerk('create_object_perk').GetName( GetPlayer )] [perk|E] o [GetTrait('arcanos_inhabit').GetName( GetPlayer )] [trait|E]." #NT!
- can_empower_tt: "[GetPlayer.MakeScope.GetVariable('craft_creator').GetCharacter.GetFirstName] necesita tener [GetPerk('major_restoration_perk').GetName( GetPlayer )] [perk|E] o [GetPerk('create_object_perk').GetName( GetPlayer )] [perk|E]." #NT!
- can_create_mount_tt: "[GetPlayer.MakeScope.GetVariable('craft_creator').GetCharacter.GetFirstName] necesita tener [GetPerk('living_testudo_perk').GetName( GetPlayer )] [perk|E] o [GetPerk('mold_perk').GetName( GetPlayer )] [perk|E]" #NT!
+ artifact_to_create_name: "Artefacto para crear"
+ creator_need_shapeshifter_large_tt: "[GetPlayer.MakeScope.GetVariable('craft_creator').GetCharacter.GetFirstName] debe ser [GetTrait('kinfolk').GetName( GetPlayer )], [GetTraitGroup('shapeshifter').GetName()], [GetTrait('abomination').GetName( GetPlayer )], [GetTrait('spirit').GetName( GetPlayer )] o tener [GetPerk('fomori_spirit_ties_perk').GetName( GetPlayer )] [perk|E]."
+ is_wraith_jade: "[GetPlayer.MakeScope.GetVariable('artifact_material').Artifact.GetName] es #bold no #! un jade blanco"
+ one_tainted_relic: "¡Sólo puedes tener una reliquia contaminada!"
+ one_demon_weapon: "¡Sólo puedes tener un arma demoníaca!"
+ can_reweave_tt: "[GetPlayer.MakeScope.GetVariable('craft_creator').GetCharacter.GetFirstName] necesita tener [GetPerk('major_restoration_perk').GetName( GetPlayer )] [perk|E], [GetPerk('beckon_relic_perk').GetName( GetPlayer )] [perk|E], [GetPerk('create_object_perk').GetName( GetPlayer )] [perk|E] o [GetTrait('arcanos_inhabit').GetName( GetPlayer )] [trait|E]."
+ can_empower_tt: "[GetPlayer.MakeScope.GetVariable('craft_creator').GetCharacter.GetFirstName] necesita tener [GetPerk('major_restoration_perk').GetName( GetPlayer )] [perk|E] o [GetPerk('create_object_perk').GetName( GetPlayer )] [perk|E]."
+ can_create_mount_tt: "[GetPlayer.MakeScope.GetVariable('craft_creator').GetCharacter.GetFirstName] necesita tener [GetPerk('living_testudo_perk').GetName( GetPlayer )] [perk|E] o [GetPerk('mold_perk').GetName( GetPlayer )] [perk|E]"
   
- POD_forging_armor_tooltip: "Los resultados de la calidad de la armadura se basan en [martial|E] y [prowess|E] de [GetPlayer.MakeScope.GetVariable('character_material').GetCharacter.GetFirstName]" #NT!
- POD_forging_weapon_tooltip: "Los resultados de la calidad de las armas se basan en [martial|E] y [prowess|E] de [GetPlayer.MakeScope.GetVariable('character_material').GetCharacter.GetFirstName]" #NT!
- POD_forging_smith_tooltip: "Los resultados de calidad de Shinies se basan en [stewardship|E], [diplomacy|E] y [prowess|E] de [GetPlayer.MakeScope.GetVariable('character_material').GetCharacter.GetFirstName]" #NT!
- POD_forging_book_tooltip: "Los resultados de la calidad del libro se basan en [learning|E] de [GetPlayer.MakeScope.GetVariable('character_material').GetCharacter.GetFirstName]" #NT!
- POD_forging_weaver_tooltip: "Los resultados de calidad de los muebles se basan en [diplomacy|E] de [GetPlayer.MakeScope.GetVariable('character_material').GetCharacter.GetFirstName]" #NT!
- POD_forging_artisan_tooltip: "Los resultados de calidad de las baratijas se basan en [stewardship|E] de [GetPlayer.MakeScope.GetVariable('character_material').GetCharacter.GetFirstName]" #NT!
- POD_forging_mount_tooltip: "Los resultados de calidad de la montura se basan en [prowess|E], [diplomacy|E] y [learning|E] de [GetPlayer.MakeScope.GetVariable('character_material').GetCharacter.GetFirstName]" #NT!
+ POD_forging_armor_tooltip: "Los resultados de la calidad de la armadura se basan en [martial|E] y [prowess|E] de [GetPlayer.MakeScope.GetVariable('character_material').GetCharacter.GetFirstName]"
+ POD_forging_weapon_tooltip: "Los resultados de la calidad de las armas se basan en [martial|E] y [prowess|E] de [GetPlayer.MakeScope.GetVariable('character_material').GetCharacter.GetFirstName]"
+ POD_forging_smith_tooltip: "Los resultados de calidad de Shinies se basan en [stewardship|E], [diplomacy|E] y [prowess|E] de [GetPlayer.MakeScope.GetVariable('character_material').GetCharacter.GetFirstName]"
+ POD_forging_book_tooltip: "Los resultados de la calidad del libro se basan en [learning|E] de [GetPlayer.MakeScope.GetVariable('character_material').GetCharacter.GetFirstName]"
+ POD_forging_weaver_tooltip: "Los resultados de calidad de los muebles se basan en [diplomacy|E] de [GetPlayer.MakeScope.GetVariable('character_material').GetCharacter.GetFirstName]"
+ POD_forging_artisan_tooltip: "Los resultados de calidad de las baratijas se basan en [stewardship|E] de [GetPlayer.MakeScope.GetVariable('character_material').GetCharacter.GetFirstName]"
+ POD_forging_mount_tooltip: "Los resultados de calidad de la montura se basan en [prowess|E], [diplomacy|E] y [learning|E] de [GetPlayer.MakeScope.GetVariable('character_material').GetCharacter.GetFirstName]"
   
- POD_summoning_armor_tooltip: "Los resultados de la calidad de la armadura se basan en [martial|E] y [prowess|E] de [GetPlayer.MakeScope.GetVariable('craft_creator').GetCharacter.GetFirstName]" #NT!
- POD_summoning_weapon_tooltip: "Los resultados de la calidad de las armas se basan en [martial|E] y [prowess|E] de [GetPlayer.MakeScope.GetVariable('craft_creator').GetCharacter.GetFirstName]" #NT!
- POD_summoning_smith_tooltip: "Los resultados de calidad de Shinies se basan en [stewardship|E], [diplomacy|E] y [prowess|E] de [GetPlayer.MakeScope.GetVariable('craft_creator').GetCharacter.GetFirstName]" #NT!
- POD_summoning_book_tooltip: "Los resultados de la calidad del libro se basan en [learning|E] de [GetPlayer.MakeScope.GetVariable('craft_creator').GetCharacter.GetFirstName]" #NT!
- POD_summoning_weaver_tooltip: "Los resultados de calidad de los muebles se basan en [diplomacy|E] de [GetPlayer.MakeScope.GetVariable('craft_creator').GetCharacter.GetFirstName]" #NT!
- POD_summoning_artisan_tooltip: "Los resultados de calidad de las baratijas se basan en [stewardship|E] de [GetPlayer.MakeScope.GetVariable('craft_creator').GetCharacter.GetFirstName]" #NT!
- POD_summoning_mount_tooltip: "Los resultados de calidad de la montura se basan en [prowess|E], [diplomacy|E] y [learning|E] de [GetPlayer.MakeScope.GetVariable('craft_creator').GetCharacter.GetFirstName]" #NT!
+ POD_summoning_armor_tooltip: "Los resultados de la calidad de la armadura se basan en [martial|E] y [prowess|E] de [GetPlayer.MakeScope.GetVariable('craft_creator').GetCharacter.GetFirstName]"
+ POD_summoning_weapon_tooltip: "Los resultados de la calidad de las armas se basan en [martial|E] y [prowess|E] de [GetPlayer.MakeScope.GetVariable('craft_creator').GetCharacter.GetFirstName]"
+ POD_summoning_smith_tooltip: "Los resultados de calidad de Shinies se basan en [stewardship|E], [diplomacy|E] y [prowess|E] de [GetPlayer.MakeScope.GetVariable('craft_creator').GetCharacter.GetFirstName]"
+ POD_summoning_book_tooltip: "Los resultados de la calidad del libro se basan en [learning|E] de [GetPlayer.MakeScope.GetVariable('craft_creator').GetCharacter.GetFirstName]"
+ POD_summoning_weaver_tooltip: "Los resultados de calidad de los muebles se basan en [diplomacy|E] de [GetPlayer.MakeScope.GetVariable('craft_creator').GetCharacter.GetFirstName]"
+ POD_summoning_artisan_tooltip: "Los resultados de calidad de las baratijas se basan en [stewardship|E] de [GetPlayer.MakeScope.GetVariable('craft_creator').GetCharacter.GetFirstName]"
+ POD_summoning_mount_tooltip: "Los resultados de calidad de la montura se basan en [prowess|E], [diplomacy|E] y [learning|E] de [GetPlayer.MakeScope.GetVariable('craft_creator').GetCharacter.GetFirstName]"
   
- GAINS_COMMON_ARTIFACT_PIECES: "Ganancias $VALUE|+0$ Pieza de artefacto #weak (Común)#!" #NT!
- GAINED_COMMON_ARTIFACT_PIECES: "Obtenido $VALUE|+0$ Pieza de artefacto #weak (Común)#!" #NT!
- I_GAIN_COMMON_ARTIFACT_PIECES: "Obtienes $VALUE|+0$ Pieza de Artefacto #weak (Común)#!" #NT!
- I_GAINED_COMMON_ARTIFACT_PIECES: "Obtuviste $VALUE|+0$ Pieza de artefacto #weak (Común)#!" #NT!
- LOSES_COMMON_ARTIFACT_PIECES: "Gasta $VALUE|-0$ Pieza de artefacto #weak (Común)#!" #NT!
- LOST_COMMON_ARTIFACT_PIECES: "Gastado $VALUE|-0$ Pieza de artefacto #weak (Común)#!" #NT!
- I_LOSE_COMMON_ARTIFACT_PIECES: "Gastas $VALUE|-0$ Pieza de artefacto #weak (Común)#!" #NT!
- I_LOST_COMMON_ARTIFACT_PIECES: "Gastaste $VALUE|-0$ Pieza de artefacto #weak (Común)#!" #NT!
+ GAINS_COMMON_ARTIFACT_PIECES: "Ganancias $VALUE|+0$ Pieza de artefacto #weak (Común)#!"
+ GAINED_COMMON_ARTIFACT_PIECES: "Obtenido $VALUE|+0$ Pieza de artefacto #weak (Común)#!"
+ I_GAIN_COMMON_ARTIFACT_PIECES: "Obtienes $VALUE|+0$ Pieza de Artefacto #weak (Común)#!"
+ I_GAINED_COMMON_ARTIFACT_PIECES: "Obtuviste $VALUE|+0$ Pieza de artefacto #weak (Común)#!"
+ LOSES_COMMON_ARTIFACT_PIECES: "Gasta $VALUE|-0$ Pieza de artefacto #weak (Común)#!"
+ LOST_COMMON_ARTIFACT_PIECES: "Gastado $VALUE|-0$ Pieza de artefacto #weak (Común)#!"
+ I_LOSE_COMMON_ARTIFACT_PIECES: "Gastas $VALUE|-0$ Pieza de artefacto #weak (Común)#!"
+ I_LOST_COMMON_ARTIFACT_PIECES: "Gastaste $VALUE|-0$ Pieza de artefacto #weak (Común)#!"
   
- GAINS_MASTERWORK_ARTIFACT_PIECES: "Ganancias $VALUE|+0$ Pieza de artefacto #weak (Obra maestra)#!" #NT!
- GAINED_MASTERWORK_ARTIFACT_PIECES: "Obtuvo $VALUE|+0$ Pieza de artefacto #weak (Obra maestra)#!" #NT!
- I_GAIN_MASTERWORK_ARTIFACT_PIECES: "Obtienes $VALUE|+0$ Pieza de artefacto #weak (Obra maestra)#!" #NT!
- I_GAINED_MASTERWORK_ARTIFACT_PIECES: "Obtuviste $VALUE|+0$ Pieza de artefacto #weak (Obra maestra)#!" #NT!
- LOSES_MASTERWORK_ARTIFACT_PIECES: "Gasta $VALUE|-0$ Pieza de artefacto #weak (Obra maestra)#!" #NT!
- LOST_MASTERWORK_ARTIFACT_PIECES: "Gastado $VALUE|-0$ Pieza de artefacto #weak (Obra maestra)#!" #NT!
- I_LOSE_MASTERWORK_ARTIFACT_PIECES: "Gastas $VALUE|-0$ Pieza de Artefacto #weak (Obra Maestra)#!" #NT!
- I_LOST_MASTERWORK_ARTIFACT_PIECES: "Gastaste $VALUE|-0$ Pieza de artefacto #weak (Obra maestra)#!" #NT!
+ GAINS_MASTERWORK_ARTIFACT_PIECES: "Ganancias $VALUE|+0$ Pieza de artefacto #weak (Obra maestra)#!"
+ GAINED_MASTERWORK_ARTIFACT_PIECES: "Obtuvo $VALUE|+0$ Pieza de artefacto #weak (Obra maestra)#!"
+ I_GAIN_MASTERWORK_ARTIFACT_PIECES: "Obtienes $VALUE|+0$ Pieza de artefacto #weak (Obra maestra)#!"
+ I_GAINED_MASTERWORK_ARTIFACT_PIECES: "Obtuviste $VALUE|+0$ Pieza de artefacto #weak (Obra maestra)#!"
+ LOSES_MASTERWORK_ARTIFACT_PIECES: "Gasta $VALUE|-0$ Pieza de artefacto #weak (Obra maestra)#!"
+ LOST_MASTERWORK_ARTIFACT_PIECES: "Gastado $VALUE|-0$ Pieza de artefacto #weak (Obra maestra)#!"
+ I_LOSE_MASTERWORK_ARTIFACT_PIECES: "Gastas $VALUE|-0$ Pieza de Artefacto #weak (Obra Maestra)#!"
+ I_LOST_MASTERWORK_ARTIFACT_PIECES: "Gastaste $VALUE|-0$ Pieza de artefacto #weak (Obra maestra)#!"
   
- GAINS_FAMED_ARTIFACT_PIECES: "Ganancias $VALUE|+0$ Pieza de artefacto #weak (Famosa)#!" #NT!
- GAINED_FAMED_ARTIFACT_PIECES: "Obtuvo $VALUE|+0$ pieza de artefacto #weak (famoso)#!" #NT!
- I_GAIN_FAMED_ARTIFACT_PIECES: "Obtienes $VALUE|+0$ Pieza de Artefacto #weak (Famoso)#!" #NT!
- I_GAINED_FAMED_ARTIFACT_PIECES: "Obtuviste $VALUE|+0$ Pieza de Artefacto #weak (Famoso)#!" #NT!
- LOSES_FAMED_ARTIFACT_PIECES: "Gasta $VALUE|-0$ Pieza de artefacto #weak (Famoso)#!" #NT!
- LOST_FAMED_ARTIFACT_PIECES: "Gastado $VALUE|-0$ Pieza de artefacto #weak (Famoso)#!" #NT!
- I_LOSE_FAMED_ARTIFACT_PIECES: "Gastas $VALUE|-0$ Pieza de Artefacto #weak (Famoso)#!" #NT!
- I_LOST_FAMED_ARTIFACT_PIECES: "Gastaste $VALUE|-0$ Pieza de Artefacto #weak (Famoso)#!" #NT!
+ GAINS_FAMED_ARTIFACT_PIECES: "Ganancias $VALUE|+0$ Pieza de artefacto #weak (Famosa)#!"
+ GAINED_FAMED_ARTIFACT_PIECES: "Obtuvo $VALUE|+0$ pieza de artefacto #weak (famoso)#!"
+ I_GAIN_FAMED_ARTIFACT_PIECES: "Obtienes $VALUE|+0$ Pieza de Artefacto #weak (Famoso)#!"
+ I_GAINED_FAMED_ARTIFACT_PIECES: "Obtuviste $VALUE|+0$ Pieza de Artefacto #weak (Famoso)#!"
+ LOSES_FAMED_ARTIFACT_PIECES: "Gasta $VALUE|-0$ Pieza de artefacto #weak (Famoso)#!"
+ LOST_FAMED_ARTIFACT_PIECES: "Gastado $VALUE|-0$ Pieza de artefacto #weak (Famoso)#!"
+ I_LOSE_FAMED_ARTIFACT_PIECES: "Gastas $VALUE|-0$ Pieza de Artefacto #weak (Famoso)#!"
+ I_LOST_FAMED_ARTIFACT_PIECES: "Gastaste $VALUE|-0$ Pieza de Artefacto #weak (Famoso)#!"
   
- GAINS_ILLUSTRIOUS_ARTIFACT_PIECES: "Ganancias $VALUE|+0$ Pieza de artefacto #weak (Ilustre)#!" #NT!
- GAINED_ILLUSTRIOUS_ARTIFACT_PIECES: "Obtuvo $VALUE|+0$ pieza de artefacto #weak (ilustre)#!" #NT!
- I_GAIN_ILLUSTRIOUS_ARTIFACT_PIECES: "Obtienes $VALUE|+0$ Pieza de Artefacto #weak (Ilustre)#!" #NT!
- I_GAINED_ILLUSTRIOUS_ARTIFACT_PIECES: "Obtuviste $VALUE|+0$ Pieza de Artefacto #weak (Ilustre)#!" #NT!
- LOSES_ILLUSTRIOUS_ARTIFACT_PIECES: "Gasta $VALUE|-0$ Pieza de artefacto #weak (Ilustre)#!" #NT!
- LOST_ILLUSTRIOUS_ARTIFACT_PIECES: "Gastado $VALUE|-0$ Pieza de artefacto #weak (Ilustre)#!" #NT!
- I_LOSE_ILLUSTRIOUS_ARTIFACT_PIECES: "Gastas $VALUE|-0$ Pieza de Artefacto #weak (Ilustre)#!" #NT!
- I_LOST_ILLUSTRIOUS_ARTIFACT_PIECES: "Gastaste $VALUE|-0$ Pieza de Artefacto #weak (Ilustre)#!" #NT!
+ GAINS_ILLUSTRIOUS_ARTIFACT_PIECES: "Ganancias $VALUE|+0$ Pieza de artefacto #weak (Ilustre)#!"
+ GAINED_ILLUSTRIOUS_ARTIFACT_PIECES: "Obtuvo $VALUE|+0$ pieza de artefacto #weak (ilustre)#!"
+ I_GAIN_ILLUSTRIOUS_ARTIFACT_PIECES: "Obtienes $VALUE|+0$ Pieza de Artefacto #weak (Ilustre)#!"
+ I_GAINED_ILLUSTRIOUS_ARTIFACT_PIECES: "Obtuviste $VALUE|+0$ Pieza de Artefacto #weak (Ilustre)#!"
+ LOSES_ILLUSTRIOUS_ARTIFACT_PIECES: "Gasta $VALUE|-0$ Pieza de artefacto #weak (Ilustre)#!"
+ LOST_ILLUSTRIOUS_ARTIFACT_PIECES: "Gastado $VALUE|-0$ Pieza de artefacto #weak (Ilustre)#!"
+ I_LOSE_ILLUSTRIOUS_ARTIFACT_PIECES: "Gastas $VALUE|-0$ Pieza de Artefacto #weak (Ilustre)#!"
+ I_LOST_ILLUSTRIOUS_ARTIFACT_PIECES: "Gastaste $VALUE|-0$ Pieza de Artefacto #weak (Ilustre)#!"
   
   # Enhance 
- enhance_success_chance: "[GetPlayer.MakeScope.ScriptValue('enhance_success_chance')]%" #NT!
- enhance_success_chance_tt: "[GetPlayer.MakeScope.GetScriptValueDesc('enhance_success_chance')]" #NT!
+ enhance_success_chance: "[GetPlayer.MakeScope.ScriptValue('enhance_success_chance')]%"
+ enhance_success_chance_tt: "[GetPlayer.MakeScope.GetScriptValueDesc('enhance_success_chance')]"
   
- no_artifact_chosen: "Actualmente no hay ningún artefacto elegido" #NT!
- no_weapon_chosen: "El artefacto elegido debe ser un arma." #NT!
- possessing_artifact_tt: "[GetPlayer.MakeScope.GetVariable('character_material').GetCharacter.GetFirstName] ya posee un artefacto" #NT!
+ no_artifact_chosen: "Actualmente no hay ningún artefacto elegido"
+ no_weapon_chosen: "El artefacto elegido debe ser un arma."
+ possessing_artifact_tt: "[GetPlayer.MakeScope.GetVariable('character_material').GetCharacter.GetFirstName] ya posee un artefacto"
   
- enhance_object_name: "$POD_craft_demon_origin$ Mejorar objeto" #NT!
- the_forgers_hammer_name: "$POD_craft_vampire_origin$ El martillo del forjador" #NT!
- aid_from_spirits_name: "$POD_craft_vampire_origin$ Ayuda de los espíritus" #NT!
- sword_of_the_righteous_name: "$POD_craft_vampire_origin$ Espada de los Justos" #NT!
- rune_name: "$POD_craft_fae_origin$ Runa" #NT!
- channel_yin_name: "$POD_craft_kueijin_origin$ Canal de Energía Yin" #NT!
- inspire_life_name: "$POD_craft_kueijin_origin$ Inspirar la vida" #NT!
- bless_name: "$POD_craft_truefaith_origin$ Bendiciones" #NT!
- blessing_the_blade_name: "$POD_craft_fae_origin$ Bendiciendo la espada" #NT!
- sorcerers_blade_name: "$POD_craft_fera_origin$ Espada del hechicero" #NT!
- sanctify_name: "$POD_craft_fera_origin$ Santificar" #NT!
- bound_spirit_name: "$POD_craft_fera_origin$ Transformarse en un fetiche" #NT!
- impress_name: "$POD_craft_wraith_origin$ Impresionante" #NT!
- strengthen_name: "$POD_craft_wraith_origin$ Fortalecer" #NT!
- empower_jade_name: "$POD_craft_wraith_origin$ Empoderar a Jade" #NT!
- rework_name: "$POD_craft_wraith_origin$ Reelaboración" #NT!
- imbue_object_name: "$POD_craft_demon_origin$ Imbuir" #NT!
- enchantment_name: "$POD_craft_sorcerer_origin$ Encantamiento" #NT!
- conforma_name: "$POD_craft_vampire_origin$ Conforme" #NT!
+ enhance_object_name: "$POD_craft_demon_origin$ Mejorar objeto"
+ the_forgers_hammer_name: "$POD_craft_vampire_origin$ El martillo del forjador"
+ aid_from_spirits_name: "$POD_craft_vampire_origin$ Ayuda de los espíritus"
+ sword_of_the_righteous_name: "$POD_craft_vampire_origin$ Espada de los Justos"
+ rune_name: "$POD_craft_fae_origin$ Runa"
+ channel_yin_name: "$POD_craft_kueijin_origin$ Canal de Energía Yin"
+ inspire_life_name: "$POD_craft_kueijin_origin$ Inspirar la vida"
+ bless_name: "$POD_craft_truefaith_origin$ Bendiciones"
+ blessing_the_blade_name: "$POD_craft_fae_origin$ Bendiciendo la espada"
+ sorcerers_blade_name: "$POD_craft_fera_origin$ Espada del hechicero"
+ sanctify_name: "$POD_craft_fera_origin$ Santificar"
+ bound_spirit_name: "$POD_craft_fera_origin$ Transformarse en un fetiche"
+ impress_name: "$POD_craft_wraith_origin$ Impresionante"
+ strengthen_name: "$POD_craft_wraith_origin$ Fortalecer"
+ empower_jade_name: "$POD_craft_wraith_origin$ Empoderar a Jade"
+ rework_name: "$POD_craft_wraith_origin$ Reelaboración"
+ imbue_object_name: "$POD_craft_demon_origin$ Imbuir"
+ enchantment_name: "$POD_craft_sorcerer_origin$ Encantamiento"
+ conforma_name: "$POD_craft_vampire_origin$ Conforme"
   
   # Automaton 
- AUTOMATON_TAB_SKILL: "Habilidad" #NT!
+ AUTOMATON_TAB_SKILL: "Habilidad"
   
- automaton_quality: "[GetPlayer.MakeScope.ScriptValue('automaton_quality')]" #NT!
- automaton_quality_tt: "[GetPlayer.MakeScope.GetScriptValueDesc('automaton_quality')]" #NT!
+ automaton_quality: "[GetPlayer.MakeScope.ScriptValue('automaton_quality')]"
+ automaton_quality_tt: "[GetPlayer.MakeScope.GetScriptValueDesc('automaton_quality')]"
   
- no_creating_animantis: "Actualmente en proceso de creación de animantis." #NT!
+ no_creating_animantis: "Actualmente en proceso de creación de animantis."
   
- simple_servitor_name: "$POD_craft_mummy_origin$ Servidor Simple" #NT!
- overseer_name: "$POD_craft_mummy_origin$ Supervisor" #NT!
- guard_name: "$POD_craft_mummy_origin$ Guardia" #NT!
- animantis_name: "$POD_craft_fae_origin$ Animantis" #NT!
- perfect_servant_name: "$POD_craft_vampire_origin$ Sirviente perfecto" #NT!
+ simple_servitor_name: "$POD_craft_mummy_origin$ Servidor Simple"
+ overseer_name: "$POD_craft_mummy_origin$ Supervisor"
+ guard_name: "$POD_craft_mummy_origin$ Guardia"
+ animantis_name: "$POD_craft_fae_origin$ Animantis"
+ perfect_servant_name: "$POD_craft_vampire_origin$ Sirviente perfecto"
   
- animantis_points: "[skill|E] Puntos: [GetPlayer.MakeScope.ScriptValue('animantis_points')]" #NT!
- perfect_servant_points: "[skill|E] Puntos: [GetPlayer.MakeScope.ScriptValue('perfect_servant_points')]" #NT!
+ animantis_points: "[skill|E] Puntos: [GetPlayer.MakeScope.ScriptValue('animantis_points')]"
+ perfect_servant_points: "[skill|E] Puntos: [GetPlayer.MakeScope.ScriptValue('perfect_servant_points')]"

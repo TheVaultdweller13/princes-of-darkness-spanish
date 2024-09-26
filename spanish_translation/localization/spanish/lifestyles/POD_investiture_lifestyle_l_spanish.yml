@@ -107,16 +107,63 @@
   
  BACKGROUNDS_PERK_EFFECT: "Como [decision|E], te permite gastar puntos de investidura para ganar oro y prestigio."
  INVESTITURE_LONGEVITY_PERK_EFFECT: "Como [decision|E], te permite gastar puntos de investidura para acumular [GetModifier( 'longevity_modifier' ).GetNameWithTooltip|L]."
+ AQUATIC_PERK_EFFECT: "#F El [GetTrait('infernalist').GetName( GetNullCharacter )] puede nadar bajo el agua tan rápido como puede correr. Tiene un aspecto ligeramente acuático. Si es mortal, obtendrá branquias.#!" #NT!
+ BAT_EARS_PERK_EFFECT: "#F El [GetTrait('infernalist').GetName( GetNullCharacter )] obtendrá las mismas habilidades que el sonar de un murciélago.#!" #NT!
+ GRIM_JAWS_PERK_EFFECT: "#F el [GetTrait('infernalist').GetName( GetNullCharacter )] recibe la habilidad de masticar cualquier cosa. Y puede tragar objetos hasta del tamaño de un niño pequeño. Los rasgos faciales son normales a menos que use este poder.#!" #NT!
+ KISS_OF_HADES_PERK_EFFECT: "#F El [GetTrait('infernalist').GetName( GetNullCharacter )] puede causar daño agravado con el toque de sus labios.#!" #NT!
+ LASHING_TAIL_PERK_EFFECT: "#F Al [GetTrait('infernalist').GetName( GetNullCharacter )] le crece una pequeña cola que puede usarse para causar daños agravados como un látigo.#!" #NT!
+ MAGIC_SENSE_PERK_EFFECT: "#F Permite que [GetTrait('infernalist').GetName( GetNullCharacter )] detecte cualquier uso de magia dentro de los 500 años de ella misma.#!" #NT!
+ RAZOR_FANGS_PERK_EFFECT: "#F Aumenta la agudeza y el tamaño de los colmillos del infernalista, lo que permite causar daño agravado cuando se usa.#!" #NT!
+ RAZOR_FINGERS_PERK_EFFECT: "#F Idéntico a Razor Fangs solo que con uñas.#!" #NT!
+ SMELL_FEAR_PERK_EFFECT: "#F El [GetTrait('infernalist').GetName( GetNullCharacter )] detectará por el olor si alguien tiene miedo a menos de 100 pies.#!" #NT!
+ DEVILS_EYES_PERK_EFFECT: "#F Con una mirada, un [GetTrait('infernalist').GetName( GetNullCharacter )] puede echar a perder la leche, pudrir el grano y enfermar a los niños.#!" #NT!
+ GOAT_FEET_PERK_EFFECT: "#F Después de besar a su Patrón, un [GetTrait('infernalist').GetName( GetNullCharacter )] asume los pies hendidos del Diablo. Cada noche, entre el atardecer y el amanecer, sus piernas se vuelven delgadas, largas y peludas, sus dedos se curvan en pezuñas endurecidas y cola desde su parte trasera. Doloroso, toma varios minutos de transformación. El [GetTrait('infernalist').GetName( GetNullCharacter )] puede correr más rápido que cualquier hombre y patear o pisotear a sus enemigos hasta matarlos con las pezuñas.#!" #NT!
+ INVISIBILITY_TO_ANIMALS_PERK_EFFECT: "#F Los animales no podrán ver a [GetTrait('infernalist').GetName( GetNullCharacter )], aunque algunos podrán olerla. Se encogerán de miedo ante [GetTrait('infernalist').GetName( GetNullCharacter )].#!" #NT!
+ PHEROMONE_POWERS_PERK_EFFECT: "#F Otorga feromonas a los infernalistas que hacen que sea más fácil dominar a todos los mortales en un radio de 30 pies.#!" #NT!
+ PSYCHIC_TRACKER_PERK_EFFECT: "#F [GetTrait('infernalist').GetName( GetNullCharacter )] puede rastrear a alguien y saber cuándo está cerca de su objetivo.#!" #NT!
+ INVESTITURE_HORNS_PERK_EFFECT: "#F Cuernos brotan del cuerpo.#!" #NT!
+ INVESTITURE_CLAWS_PERK_EFFECT: "#F Garras brotan del cuerpo.#!" #NT!
+ INVESTITURE_HELLFIRE_PERK_EFFECT: "#F Puede exhalar chorros de fuego sobre sus enemigos, así como bilis ácida, sangre caliente, entrañas en llamas u otras sustancias viles.#!" #NT!
+ INVULNERABILITY_PERK_EFFECT: "Te permite gastar fuerza de voluntad en lugar de recibir heridas.\nTe permite no morir por heridas."
+ PANPIPE_VOICE_PERK_EFFECT: "#F Palabras o canciones sencillas pueden cautivar a su audiencia y hacer que las peores pasiones de sus oyentes lleguen a su punto álgido. Contra una criatura de voluntad fuerte (mago, vampiro), la dificultad aumenta. Una vez atada, la víctima pierde su buena naturaleza, se vuelve lujuriosa, casi borracha en su temperamento y debe gastar Fuerza de Voluntad para recuperar sus sentidos.#!" #NT!
+ SERPENT_SKIN_PERK_EFFECT: "#F El [GetTrait('infernalist').GetName( GetNullCharacter )] puede desprenderse de su piel y escapar de sus ataduras. Esto requiere tiempo, dolor y esfuerzo; debe cortar una hendidura en su propia piel, luego deslizarse o arrancarse de la piel. Sus nervios y músculos quedan expuestos. La regeneración de la piel lleva aproximadamente una semana. Hasta entonces, el diabolista es increíblemente sensible a su entorno y realmente desagradable a la vista. #!" #NT!
+ SERVICE_PERK_EFFECT: "#F Puede "comprar" esclavos del Abismo. Ciertas huestes demoníacas y demonios menores servirán al infernalista, siempre que sus propósitos se adapten a los del Infierno. Una vez que el Foedus está sellado, estas criaturas atadas aparecen al lado del Brujo y le preguntan: "Amo, ¿cuál es tu voluntad?" En todos los casos, el "sirviente" es leal hasta la destrucción. Los demonios, por supuesto, no pueden morir en el plano mortal, y si son maltratados pueden hacer que su "amo" sea muy infeliz mañana.#!" #NT!
+ INVESTITURE_WINGS_PERK_EFFECT: "#F Al pronunciar una orden blasfema, la suplicante hace crecer unas horribles alas demoníacas entre sus omoplatos.#!" #NT!
+ CAUSE_VERTIGO_PERK_EFFECT: "#F Las víctimas tendrán problemas para mantenerse en pie, los mortales sufrirán náuseas.#!" #NT!
+ MAGIC_PORTAL_PERK_EFFECT: "#F Permite que [GetTrait('infernalist').GetName( GetNullCharacter )] se mueva a través de objetos sólidos.#!" #NT!
+ WALK_THE_WALLS_PERK_EFFECT: "#F El [GetTrait('infernalist').GetName( GetNullCharacter )] puede caminar por paredes o techos a paso lento o gateando.#!" #NT!
+ DEMON_HIDE_PERK_EFFECT: "#F Altera la piel de [GetTrait('infernalist').GetName( GetNullCharacter )], lo que permite absorber el daño y causar daño por fuego a cualquier objeto perforante. Por cierto, esto también permite daño por fuego a las garras o mordeduras. #!" #NT!
  APPORTATION_PERK_EFFECT: "[buy_claim_interaction|E] y [buy_artifact_claim_interaction|E] Costo: #P -50%#!"
+ AWARENESS_PERK_EFFECT: "#F Con un impacto que destroza su mente, el demonio abre las puertas de la percepción oculta.#!" #NT!
+ LUCIFERIAN_CHARM_PERK_EFFECT: "#F Un [GetTrait('infernalist').GetName( GetNullCharacter )] con esta inversión puede salirse con la suya en casi todo. No importa lo que diga o haga, asombra a todos los que conoce.#!" #NT!
+ GUARDIAN_PERK_EFFECT: "#F El [GetTrait('infernalist').GetName( GetNullCharacter )] recibirá un diablillo como protector. El diablillo le servirá y tendrá un vínculo empático para que sepan la ubicación y el estado emocional del otro.#!" #NT!
+ TOXIC_BLAST_PERK_EFFECT: "#F El [GetTrait('infernalist').GetName( GetNullCharacter )] puede arrojar un líquido de energía demoníaca por la nariz, los ojos, la boca o las yemas de los dedos. Es una sustancia viscosa, ácida y de color verde negruzco que huele horrible.#!" #NT!
+ TWO_DIMENSIONAL_PERK_EFFECT: "#F El [GetTrait('infernalist').GetName( GetNullCharacter )] se volverá bidimensional, lo que le permitirá deslizarse a través de grietas y volverse casi inexistente cuando se lo mire de lado.#!" #NT!
+ INVESTITURE_EYES_OF_THE_ABYSS_PERK_EFFECT: "#F El diabolista puede mirar fijamente a los ojos de una víctima y hacer que se sienta vacío y sin emociones. El sujeto se volverá incapaz de realizar ninguna acción excepto mirarla fijamente a los ojos.#!" #NT!
  IMP_FAMILIAR_PERK_EFFECT: "Permitir reclutar a [GetMaA('imps').GetName] como [men_at_arms|E]"
+ SIGN_OF_THE_INFERNO_PERK_EFFECT: "Ya no recibe heridas por fuego.\n#F Besado por el infierno, este diabolista no necesita temer a las llamas. Ningún calor mortal ni fuego puede dañarlo. Puede consumir su ropa y sus posesiones, pero no deja cicatrices en su carne.#!" #NT!
+ BODY_ARMOR_PERK_EFFECT: "#F Recibe menos daño.#!" #NT!
  LIFE_LEECH_PERK_EFFECT: "Como [character_interaction|E], permite consumir el poder del objetivo para ganar fuerza vital."
+ MASTER_OF_THE_DOMAIN_PERK_EFFECT: "#F Los [GetTrait('infernalist').GetName( GetNullCharacter )] siempre sabrán lo que está sucediendo a 500 pies dentro de su dominio como si estuvieran observando desde arriba.#!" #NT!
  BESTIAL_FORM_PERK_EFFECT: "Permite cambiar de forma a varias formas animales."
+ LIGHTNING_SPEED_PERK_EFFECT: "#F El diabolista puede realizar acciones adicionales por turno#!" #NT!
+ BOND_BREAKING_PERK_EFFECT: "#F La mano de Surgat guía esto [GetTrait('infernalist').GetName( GetNullCharacter )]; cerraduras, nudos y ataduras normales se abren cuando ella los acaricia.#!" #NT!
+ DEMONIC_STRENGTH_PERK_EFFECT: "#F La vitalidad maligna fluye hacia los miembros del suplicante. Tienen la fuerza de un demonio menor.#!" #NT!
+ SHAMEFUL_SIGHT_PERK_EFFECT: "#F Al mirar a una persona a los ojos, un [GetTrait('infernalist').GetName( GetNullCharacter )] puede discernir el pecado que se encuentra más cerca de la superficie. Lo más vergonzoso que una persona ha hecho. En los "ojos interiores" del infernalista, surge una imagen del hecho, clara como el día. Puede decidir guardársela para su uso posterior, burlarse abiertamente de ello o atormentar a la víctima con una visión del mismo. Al cantarle a su patrona, el [GetTrait('infernalist').GetName( GetNullCharacter )] puede mostrar su visión en una superficie reflectante. Cualquiera en el área puede verla. El [GetTrait('infernalist').GetName( GetNullCharacter )] parece inocente, incluso para los trazos mágicos. #!" #NT!
+ ATROPHIC_TOUCH_PERK_EFFECT: "#F Provocará que uno de los brazos o piernas de la víctima se debilite hasta desaparecer. No habrá dolor, pero la extremidad desaparecerá.#!" #NT!
  TELEPORTATION_PERK_EFFECT: "Como [character_interaction|E], te permite teletransportar a tu ejército a la ubicación de tu objetivo o teletransportarte a tu próximo destino cuando viajas."
  TURN_TO_TOAD_PERK_EFFECT: "Como [character_interaction|E], permite convertir el objetivo en [GetModifier( 'POD_shapeshift_form_toad_modifier' ).GetNameWithTooltip|L]."
+ HAND_OF_THE_DEFILER_PERK_EFFECT: "#F La mano derecha de [GetTrait('infernalist').GetName( GetNullCharacter )] obtiene el poder de matar plantas, retorcer madera, oxidar metal y pudrir cualquier carne que toque.#!" #NT!
  EMOTION_PROJECTION_PERK_EFFECT: "Desbloquea [GetScheme('PODsoul_bridge').GetTypeName] [scheme|E]."
+ INFERNAL_PASSAGE_PERK_EFFECT: "#F Otorga un paso seguro a través del infierno.#!" #NT!
  JOURNEY_TO_THE_SPIRIT_REALM_PERK_EFFECT: "Obtén acceso a [astral_reaches|E], [spirit_wilds|E] y [deep_umbra|E] durante los viajes de umbra."
+ SUMMON_HELLIONS_PERK_EFFECT: "#F Los demonios menores pueden ser invocados por [GetTrait('infernalist').GetName( GetNullCharacter )] para protegerla del peligro. Los demonios no se pondrán en peligro, pero intentarán proteger a [GetTrait('infernalist').GetName( GetNullCharacter )].#!" #NT!
  MAMMONS_GIFT_PERK_EFFECT: "Como [character_interaction|E], te permite usar la piedad para ganar oro."
  TALONS_OF_THE_PLAGUE_CROW_PERK_EFFECT: "Otorga enfermedades aleatorias a los comandantes enemigos y [knights|E] en la guerra como comandante o al enemigo en [single_combat_duel|E]."
+ UNCANNY_BEAUTY_PERK_EFFECT: "#F A cambio de un pecado o dos, el suplicante asume una belleza sobrenatural e irresistible.#!" #NT!
+ ARMY_OF_THE_DAMNED_PERK_EFFECT: "#F Los demonios menores pueden ser invocados por [GetTrait('infernalist').GetName( GetNullCharacter )] para protegerla del peligro. Lucharán hasta que sus formas sean destruidas.#!" #NT!
+ INFERNAL_RANKING_PERK_EFFECT: "#F Otorga al [GetTrait('infernalist').GetName( GetNullCharacter )] un estatus menor entre los condenados. El [GetTrait('infernalist').GetName( GetNullCharacter )] es superior a los demonios menores y puede ordenarles. No se los puede obligar, pero la mayoría obedecerá, ya que castigar la desobediencia es aceptable y esperado. #!" #NT!
+ REGENERATION_PERK_EFFECT: "Eliminar todas las heridas y mutilaciones cada tres meses."
   
  mask_of_yomi_perk_name: "La máscara de Yomi"
  black_whispers_perk_name: "Susurros negros"

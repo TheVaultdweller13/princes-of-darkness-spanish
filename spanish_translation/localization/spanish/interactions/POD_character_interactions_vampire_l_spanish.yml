@@ -241,7 +241,8 @@
   
  POD_drink_herd_summary: "Resumen de la alimentación del rebaño"
  POD_drink_herd_summary.tt: "Obtuviste [ROOT.Var('resonance_earned').GetValue|0] XP de resonancia gracias a la alimentación automática este año."
- POD_drink_herd_over_capacity: "Demasiados miembros de la manada"
+ #POD_drink_herd_over_capacity: "Demasiados miembros de la manada" #NT!
+ #POD_drink_herd_over_capacity.tt: "Has superado el límite de tu rebaño y has recibido #V $VALUE|0$%#! XP menos de cada miembro individual del rebaño para compensar." #NT!
  POD_drink_herd_over_capacity.tt: "Estás por encima del límite de tu manada y has recibido menos XP de cada miembro individual de la manada para compensar."
   
  POD_resonance_tt: "[TARGET_CHARACTER.Custom('PODResonanceDisplay')]"
@@ -249,6 +250,9 @@
  POD_resonance_display_missing: "Aún no conoces la sangre [resonance|E] de [ROOT.Char.GetFirstNamePossessive]. Se revelará cuando te alimentes."
  POD_resonance_hungerless.tt: "Porque eres [hungerless|E], la sangre [TARGET_CHARACTER.GetFirstNamePossessive] no te nutrirá en absoluto."
  POD_resonance_hungerless_victim.tt: "[TARGET_CHARACTER.GetFirstNamePossessive] Un suministro de sangre ilimitado no te dará ninguna información sobre [resonance|E]."
+ POD_resonance_mummy.tt: "La sangre de $POD_splat_mummy_plural$ no contiene ningún alimento." #NT!
+  
+ POD_resonance_gain_multiplier_tt: "#weak Experiencia reducida en #V $VALUE|0$%#! debido a [storyteller_mode|E]#!" #NT!
   
  POD_disciplines_interaction: "Solicitar Mentoría"
  POD_disciplines_interaction_desc: "Puedes pedirle a un amigo, amante o alma gemela que te enseñe un [discipline|E] que aún no conoces."
@@ -813,10 +817,9 @@
   
  TOOMANYFRIENDS: "Ya no podrás hacerte amigo de otros si ya tienes 5 amigos, o 7 si eres Setita con la ventaja Legado de Maatkare."
  FIFTHY_GHOULS: "¡Los depredadores no se casan con el ganado!:$VALUE|+0$"
+ WRONG_SHAPESHIFTERS: "¡No es el mismo tipo de cambiaformas!:$VALUE|+0$" #NT!
  BOTH_REVENANTS_REASON: "Ambos somos renacidos: $VALUE|+0$"
  SAME_PATH_REASON: "Estamos en el mismo camino:$VALUE|+0$"
- RECIPIENT_CRIMINAL_REASON: "[secondary_recipient.GetShortUIName] es criminal: $VALUE|+0$"
- ACTOR_CRIMINAL_REASON: "[secondary_actor.GetShortUIName] es criminal: $VALUE|+0$"
   
  POD_charjoin_choose_mentor_interaction: "Elige un mentor"
  POD_charjoin_choose_mentor_interaction_desc: "Quieres que [recipient.GetFirstName] se convierta en tu mentor."
@@ -964,8 +967,6 @@
   
  POD_cleansed_in_blood_perk_interaction: "Limpiado en sangre"
  POD_cleansed_in_blood_perk_interaction_desc: "Limpiar [recipient.GetFirstNamePossessive] cambio de forma."
- POD_cleansed_in_blood_perk_interaction_sucess: "Éxito"
- POD_cleansed_in_blood_perk_interaction_fail: "Fallar"
   
  POD_purification_perk_interaction: "Purificación"
  POD_purification_perk_interaction_desc: "Purificar [recipient.GetFirstNamePossessive] [battle_modifier|E]."
@@ -1010,11 +1011,9 @@
  POD_wails_and_whispers_interaction: "Lamentos y susurros"
  POD_wails_and_whispers_interaction_desc: "Reducir la resistencia de los objetivos a los planes de asesinato."
  POD_wails_and_whispers_interaction.tt: "Usando tus poderes de nigromancia puedes hacer que el objetivo sea más vulnerable a planes de asesinato durante 5 años."
- POD_wails_and_whispers_actor_toast: "¡Éxito!"
  POD_wails_and_whispers_actor_toast.desc: "[recipient.GetFirstName] es más vulnerable a conjuras hostiles"
  POD_wails_and_whispers_enemy_toast: "¡Desesperación!"
  POD_wails_and_whispers_enemy_toast.desc: "¡[actor.GetFirstName] te ha maldecido usando lamentos y susurros!"
- POD_wails_and_whispers_failure_toast: "¡Falla!"
  POD_wails_and_whispers_failure_toast.desc: "¡No puedes usar lamentos y susurros en [recipient.GetFirstName]!"
   
  POD_cthonic_womb_perk_effect.tt: "[victim.GetFirstName] regresará de la muerte como [GetTrait('wraith').GetName( GetNullCharacter )]"
@@ -1022,11 +1021,9 @@
  POD_intimations_of_mortality_perk_interaction: "Indicios de mortalidad"
  POD_intimations_of_mortality_interaction_desc: "Maldice al vampiro objetivo con los aspectos más desagradables e irritantes de la mortalidad."
  POD_intimations_of_mortality_interaction.tt: "Usando tus poderes de nigromancia puedes hacer que el objetivo sea menos capaz de lidiar con el estrés y no pueda usar Oleada de sangre durante 1 año."
- POD_intimations_of_mortality_actor_toast: "¡Éxito!"
  POD_intimations_of_mortality_actor_toast.desc: "[recipient.GetFirstName] es más vulnerable al estrés"
  POD_intimations_of_mortality_enemy_toast: "¡Debilidad!"
  POD_intimations_of_mortality_enemy_toast.desc: "¡[actor.GetFirstName] te ha maldecido usando Indicios de Mortalidad!"
- POD_intimations_of_mortality_failure_toast: "¡Falla!"
  POD_intimations_of_mortality_failure_toast.desc: "¡No puedes usar Indicios de mortalidad en [recipient.GetFirstName]!"
   
  POD_gift_of_melancholia_perk_interaction: "Don de melancolía"
@@ -1044,11 +1041,9 @@
  POD_witchs_fruit_interaction: "Fruta de la bruja"
  POD_witchs_fruit_interaction_desc: "Usa la intriga para engañar a un mortal para que consuma materia vegetal comestible expuesta a energías necróticas."
  POD_witchs_fruit_interaction.tt: "Usa la intriga para engañar a un mortal para que consuma materia vegetal comestible expuesta a energías necróticas."
- POD_witchs_fruit_actor_toast: "¡Éxito!"
  POD_witchs_fruit_actor_toast.desc: "¿Qué te parecen esas manzanas [recipient.GetFirstName]?"
  POD_witchs_fruit_enemy_toast: "¡Confusión!"
  POD_witchs_fruit_enemy_toast.desc: "Algo que comiste realmente no te sienta bien"
- POD_witchs_fruit_failure_toast: "¡Falla!"
  POD_witchs_fruit_failure_toast.desc: "[recipient.GetFirstName] no consumió la Fruta de la Bruja"
   
  POD_raise_the_green_one_interaction: "Levanta el verde"
@@ -1061,11 +1056,9 @@
  POD_song_of_the_dead_disable_interaction: "Deja de cantar"
  POD_song_of_the_dead_disable_interaction_desc: "Dejas de cantar la canción de los muertos."
  POD_song_of_the_dead_disable_interaction.tt: "Dejas de cantar la Canción de los Muertos dejando que el objetivo finalmente se relaje."
- POD_song_of_the_dead_actor_toast: "¡Éxito!"
  POD_song_of_the_dead_actor_toast.desc: "[target.GetFirstName] se ve afectado por tu Canción de los Muertos"
  POD_song_of_the_dead_enemy_toast: "¡Desesperación!"
  POD_song_of_the_dead_enemy_toast.desc: "[attacker.GetFirstName] te ha infligido su Canción de los Muertos"
- POD_song_of_the_dead_failure_toast: "¡Falla!"
  POD_song_of_the_dead_failure_toast.desc: "[target.GetFirstName] no se ve afectado por tu Canción de los muertos"
  POD_song_of_the_dead_disaster_toast: "¡Desastre!"
  POD_song_of_the_dead_disaster_toast.desc: "Estás afectado por el mismo destino que buscabas traer sobre [recipient.GetFirstName]."
@@ -1102,9 +1095,7 @@
  POD_predators_mastery_interaction: "La maestría del depredador"
  POD_predators_mastery_interaction_desc: "Utiliza tu Bestia para dominar a uno de tus invitados o cortesanos y conseguir un fuerte gancho sobre ellos."
  POD_predators_mastery_interaction_accept: "Usarás tu síntesis mística con tu propia Bestia para obtener un fuerte gancho en [recipient.GetFirstNameNoTooltip]"
- POD_predators_mastery_interaction_success_toast: "¡Éxito!"
  POD_predators_mastery_interaction_success_toast_tt: "Has conseguido un fuerte gancho en [recipient.GetFirstNameNoTooltip]"
- POD_predators_mastery_interaction_failure_toast: "¡Falla!"
  POD_predators_mastery_interaction_failure_toast_tt: "No logras engancharte bien en [recipient.GetFirstNameNoTooltip]"
   
  POD_vampshapeshift_interaction_incarnate_darkness: "Oscuridad encarnada"
@@ -1184,12 +1175,9 @@
  POD_fleshcrafting_character_interaction: "Elaboración de carne"
  POD_fleshcrafting_character_interaction_desc: "Convierte a [recipient.GetFirstName] en un artefacto viviente."
  POD_fleshcrafting_character_interaction_mount: "Montar"
- artifact_fleshcrafted_artifact_name: "[killed.GetFirstNameNoTooltip]"
- artifact_fleshcrafted_artifact_description: "Un artefacto elaborado con carne que era [killed.GetTitledFirstNameNoTooltip], asesinado por [owner.GetTitledFirstNameNoTooltip]."
   
  POD_liquefy_the_mortal_coil_interaction: "Licuar la bobina mortal"
  POD_liquefy_the_mortal_coil_interaction_desc: "Convierte [recipient.GetFirstName] partes del cuerpo en sangre."
- blood_hunger_0_tt: "Tu hambre de sangre debe ser 0"
   
  POD_will_over_form_interaction: "La voluntad por encima de la forma"
  POD_will_over_form_interaction_desc: "Usa Vicisitud en [recipient.GetFirstName] a distancia."
@@ -1231,12 +1219,15 @@
  POD_thorns_caucus_interaction: "Negociar Voto #weak (Caucus)#!"
  POD_thorns_caucus_interaction_desc: "Haz que [recipient.GetFirstName] elija la misma opción de voto que tú."
  POD_thorns_caucus_interaction.tt: "[recipient.GetFirstName] elegirá la misma opción de voto que tú."
+ POD_thorns_caucus_interaction_extra_icon: "$hook_extra_icon$" #NT!
  POD_thorns_abstention_interaction: "Negociar Voto #weak (Abstención)#!"
  POD_thorns_abstention_interaction_desc: "Haz que [recipient.GetFirstName] renuncie a cada voto."
  POD_thorns_abstention_interaction.tt: "[recipient.GetFirstName] renunciará a todo voto."
+ POD_thorns_abstention_interaction_extra_icon: "$hook_extra_icon$" #NT!
  POD_thorns_negotiate_doctrine_vote_interaction: "Negociar Voto"
  POD_thorns_negotiate_doctrine_vote_interaction_desc: "Haz que [recipient.GetFirstName] elija la misma opción de voto que tú."
  POD_thorns_negotiate_doctrine_vote_interaction.tt: "[recipient.GetFirstName] elige la misma opción de voto que tú."
+ POD_thorns_negotiate_doctrine_vote_interaction_extra_icon: "$hook_extra_icon$" #NT!
   
  blood_hunt_call_interaction: "Convocatoria de una cacería de sangre"
  blood_hunt_call_interaction_desc: "Invoca a [recipient.GetShortUINameNoTooltip] para servir a la Camarilla en una guerra de Cacería de Sangre."
@@ -1358,6 +1349,13 @@
  POD_shadow_twin_interaction.tt: "Intentarás usar un gemelo de sombra"
  already_has_shadow_twin: "Ya tengo una Sombra Gemela"
   
+ POD_feed_the_darkness_interaction: "Alimenta la oscuridad" #NT!
+ POD_feed_the_darkness_interaction_desc: "Aliméntate del objetivo usando un zarcillo de oscuridad." #NT!
+  
+ POD_call_leviathan_to_war_interaction: "Llama al Leviatán" #NT!
+ POD_call_leviathan_to_war_interaction_desc: "Llama al Leviatán a la guerra." #NT!
+ POD_call_leviathan_to_war_interaction_tt: "Ya has llamado [GetMaA('the_leviathan').GetName] a [GetPlayer.MakeScope.GetVariable('leviathan_summon').War.GetName]." #NT!
+  
  POD_sense_the_sin_interaction: "Sentir el pecado"
  sense_the_sin_interaction_desc: "Adéntrate en la mente de [recipient.GetFirstNamePossessive], extrayendo las peores partes de la personalidad de [recipient.GetHerHis] y volviéndolas mucho, mucho peores que antes."
  sense_the_sin.ct: "#R ¡Que comience la diversión! #!"
@@ -1425,12 +1423,12 @@
   
  POD_heart_of_darkness_steal_interaction: "Robar corazón #weak (Plan)#!"
  POD_heart_of_darkness_interaction_steal_heart_desc: "Roba el corazón del objetivo, lo que te permite matarlo cuando quieras."
- POD_steal_heart_action: "Robar el corazón de"
- POD_steal_heart_desc_general: "Roba el corazón del objetivo."
- POD_steal_heart_SUCCESS_DESC: "Te enfrentas al objetivo e intentas robarle el corazón con un oscuro ritual."
- POD_steal_heart_my_intrigue: "Tu Intriga: $VALUE|=+0$"
- POD_steal_heart: "Conjura de robo de corazones"
- POD_steal_heart_desc: "¡Es hora de agregar un nuevo corazón a mi colección!"
+ #POD_steal_heart_action: "Robar el corazón de" #NT!
+ #POD_steal_heart_desc_general: "Roba el corazón del objetivo." #NT!
+ #POD_steal_heart_SUCCESS_DESC: "Te enfrentas al objetivo e intentas robarle el corazón con un oscuro ritual." #NT!
+ #POD_steal_heart_my_intrigue: "Tu Intriga: $VALUE|=+0$" #NT!
+ #POD_steal_heart: "Esquema de robo de corazones" #NT!
+ #POD_steal_heart_desc: "¡Es hora de agregar un nuevo corazón a mi colección!" #NT!
   
  set_relation_heart_of_darkenss_owner: "Conviértete en dueño de su corazón"
  remove_relation_heart_of_darkenss_owner: "Ya no soy dueño de mi corazón"
@@ -1504,3 +1502,43 @@
  POD_choose_justicar_interaction: "Elige [justicar|E]"
  POD_choose_justicar_interaction_desc: "Quieres que [recipient.GetFirstName] se convierta en tu [justicar|E]."
  POD_choose_justicar_interaction.tt: "[recipient.GetFirstName] será nominado como [justicar|E]"
+  
+ POD_thinbloodalchemy_use_alchemical_product_interaction: "Utilizar producto alquímico" #NT!
+ POD_thinbloodalchemy_use_alchemical_product_interaction_desc: "Utilice un producto alquímico." #NT!
+ POD_thinbloodalchemy_use_alchemical_product_interaction_options_heading: "¿Qué producto debo utilizar?" #NT!
+ POD_thinbloodalchemy_offer_alchemical_product_interaction: "Oferta de producto alquímico" #NT!
+ POD_thinbloodalchemy_offer_alchemical_product_interaction_desc: "Ofrezca [recipient.GetFirstName] un producto alquímico." #NT!
+ POD_thinbloodalchemy_offer_alchemical_product_interaction_options_heading: "¿Qué producto debo ofrecer?" #NT!
+ POD_thinbloodalchemy_sell_alchemical_product_interaction: "Vender producto alquímico" #NT!
+ POD_thinbloodalchemy_sell_alchemical_product_interaction_desc: "Vendo [recipient.GetFirstName] un producto alquímico." #NT!
+ POD_thinbloodalchemy_sell_alchemical_product_interaction_options_heading: "¿Qué producto debo vender?" #NT!
+ POD_thinbloodalchemy_buy_alchemical_product_interaction: "Comprar producto alquímico" #NT!
+ POD_thinbloodalchemy_buy_alchemical_product_interaction_desc: "Compra [recipient.GetFirstName] un producto alquímico que tiene [recipient.GetSheHe]." #NT!
+ POD_thinbloodalchemy_buy_alchemical_product_interaction_options_heading: "¿Qué producto debo comprar?" #NT!
+ POD_thinbloodalchemy_poison_alchemical_product_interaction: "Usar veneno alquímico" #NT!
+ POD_thinbloodalchemy_poison_alchemical_product_interaction_desc: "Intenta envenenar a [recipient.GetFirstName] usando un producto alquímico." #NT!
+ POD_thinbloodalchemy_poison_alchemical_product_interaction_options_heading: "¿Qué producto debo utilizar?" #NT!
+  
+ POD_call_zmei_to_war_interaction: "Llama a Zmei" #NT!
+ POD_call_zmei_to_war_interaction_desc: "Llama a Zmei a la guerra." #NT!
+ POD_call_zmei_to_war_interaction_tt: "Ya has llamado [GetMaA('zmei').GetName] a [GetPlayer.MakeScope.GetVariable('zmei_summon').War.GetName]." #NT!
+  
+ POD_understand_sargon_codex_shard_interaction: "Estudia el fragmento del Códice de Sargón" #NT!
+ POD_understand_sargon_codex_shard_interaction_desc: "Estudia uno de los fragmentos del Códice Sargón" #NT!
+ POD_understand_sargon_codex_shard_interaction_ignore: "Ignorar recompensa" #NT!
+ POD_understand_sargon_codex_shard_interaction_tt: "#X Te vuelves completamente loco. No hay vuelta atrás.#!" #NT!
+ POD_understand_sargon_codex_shard_interaction_invalid_custom: "¡No tienes ningún fragmento en tu posesión que no haya sido ya estudiado! $POD_understand_sargon_codex_shard_interaction_custom$" #NT!
+ POD_understand_sargon_codex_shard_interaction_custom: "#weak (El personaje más cercano con algún fragmento es: [example.GetFirstName])#!" #NT!
+ POD_understand_sargon_codex_shard_interaction_not_giving_cappadocius_shards: "Pierdes [decision|E] para darle fragmentos a Cappadocius" #NT!
+  
+ POD_malkavian_book_eating_interaction: "Comer libros" #NT!
+ POD_malkavian_book_eating_interaction_desc: "Consumir el conocimiento almacenado en el libro" #NT!
+ POD_malkavian_book_eating_interaction_has_book_artifact: "Debe tener al menos #color_white 1#! libro artefacto" #NT!
+ POD_malkavian_book_eating_interaction_sucess: "El conocimiento del libro está en tu mente." #NT!
+ POD_malkavian_book_eating_interaction_fail: "Todo conocimiento escapa de tu mente tan pronto como entra en ella." #NT!
+  
+ POD_malkavian_force_frenzy_interaction: "Frenesí de fuerza" #NT!
+ POD_malkavian_force_frenzy_interaction_desc: "Fuerza Frenesí para obtener beneficios" #NT!
+  
+ POD_malkavian_sacrifice_interaction: "Sacrificio de locura" #NT!
+ POD_malkavian_sacrifice_interaction_desc: "Sacrificio [prisoner|E] a los demonios, ¿o tal vez fue tu locura?" #NT!

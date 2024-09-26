@@ -9,13 +9,9 @@
  hierarchy_high_god_name_possessive: "Caronte"
  hierarchy_high_god_name_alternate: "Emperador"
  hierarchy_high_god_name_alternate_possessive: "Del emperador"
- hierarchy_good_god_jesus: "Dama del destino"
- hierarchy_good_god_christ: "Dama del destino"
+ hierarchy_good_god_lady_of_fate: "Dama del destino" #NT!
  hierarchy_devil_name: "Sombra"
  hierarchy_devil_name_possessive: "Oscuridad"
- hierarchy_evil_god_lucifer: "Sombra"
- hierarchy_evil_god_beelzebub: "Sombra"
- hierarchy_evil_god_mephistopheles: "Sombra"
  hierarchy_death_deity_name: "Muerte"
  hierarchy_death_deity_name_possessive: "Fallecidos"
  hierarchy_house_of_worship: "Asiento"
@@ -275,7 +271,6 @@
  holy_order_emissaries: "Emisarios"
  holy_order_privateers: "Corsarios"
   
- oracles: "Oráculos"
  oracles_adj: "Oráculos"
  oracles_desc: "El gremio del fatalismo es el Arcanoi de la visión del pasado y el futuro, envuelto en cartas del tarot y la astrología, se los mira con sospecha y miedo como los que siempre saben demasiado. Tienen patrones poderosos y una reputación de hacer de Casandra para Caronte."
  oracles_adherent: "Oráculo"
@@ -400,13 +395,9 @@
  renegade_high_god_name_possessive: "Señor renegado"
  renegade_high_god_name_alternate: "Caballero"
  renegade_high_god_name_alternate_possessive: "Del señor"
- renegade_good_god_jesus: "Libertad"
- renegade_good_god_christ: "Libertad"
+ renegade_good_god_liberty: "Libertad" #NT!
  renegade_devil_name: "Sombra"
  renegade_devil_name_possessive: "Oscuridad"
- renegade_evil_god_lucifer: "Sombra"
- renegade_evil_god_beelzebub: "Sombra"
- renegade_evil_god_mephistopheles: "Sombra"
  renegade_death_deity_name: "Muerte"
  renegade_death_deity_name_possessive: "Fallecidos"
  renegade_house_of_worship: "Pandillas"
@@ -491,7 +482,6 @@
  idealists_adherent: "Renegado"
  idealists_adherent_plural: "Renegados"
   
- outlaws: "Forajidos"
  outlaws_adj: "Contras"
  outlaws_desc: "Los renegados que se dedican a negocios estrictamente ilegales."
  outlaws_adherent: "Renegado"
@@ -512,13 +502,9 @@
  ferrymen_high_god_name_possessive: "Juramento"
  ferrymen_high_god_name_alternate: "Remo"
  ferrymen_high_god_name_alternate_possessive: "Remo"
- ferrymen_good_god_jesus: "Dama del destino"
- ferrymen_good_god_christ: "Dama del destino"
+ ferrymen_good_god_lady_of_fate: "Dama del destino" #NT!
  ferrymen_devil_name: "Sombra"
  ferrymen_devil_name_possessive: "Oscuridad"
- ferrymen_evil_god_lucifer: "Sombra"
- ferrymen_evil_god_beelzebub: "Sombra"
- ferrymen_evil_god_mephistopheles: "Sombra"
  ferrymen_death_deity_name: "Muerte"
  ferrymen_death_deity_name_possessive: "Fallecidos"
  ferrymen_house_of_worship: "círculo"
@@ -607,3 +593,159 @@
  fishers_desc: "Los pescadores eran adoradores de una forma de cristianismo exclusiva del [underworld|E] que floreció aproximadamente entre los siglos I y XVI."
  fishers_adherent: "Pescador"
  fishers_adherent_plural: "Pescadores"
+  
+  ##################### 
+  # Yellow Springs 
+  ##################### 
+  
+  #Yellow Springs Wraiths Localization 
+ yellow_springs_high_god_name: "Yu Huang" #NT!
+ yellow_springs_high_god_name_possessive: "Yu Huang's" #NT!
+ yellow_springs_high_god_name_alternate: "Emperador" #NT!
+ yellow_springs_high_god_name_alternate_possessive: "Del emperador" #NT!
+ yellow_springs_good_god_lady_of_fate: "Destino" #NT!
+ yellow_springs_devil_name: "Kuei" #NT!
+ yellow_springs_devil_name_possessive: "Kuei's" #NT!
+ yellow_springs_death_deity_name: "Muerte" #NT!
+ yellow_springs_death_deity_name_possessive: "Fallecidos" #NT!
+ yellow_springs_house_of_worship: "Palacio" #NT!
+ yellow_springs_house_of_worship_plural: "Palacio" #NT!
+ yellow_springs_religious_symbol: "jade" #NT!
+ yellow_springs_religious_text: "código" #NT!
+ yellow_springs_religious_head_title: "Emperador" #NT!
+ yellow_springs_religious_head_title_name: "Manantiales amarillos" #NT!
+ yellow_springs_devotee_male: "Espectro de jade" #NT!
+ yellow_springs_devotee_male_plural: "Espectros de jade" #NT!
+ yellow_springs_devotee_female: "Espectro de jade" #NT!
+ yellow_springs_devotee_female_plural: "Espectros de jade" #NT!
+ yellow_springs_devotee_neuter: "Espectro de jade" #NT!
+ yellow_springs_devotee_neuter_plural: "Espectros de jade" #NT!
+ yellow_springs_priest_male: "Protector" #NT!
+ yellow_springs_priest_male_plural: "Protector" #NT!
+ yellow_springs_priest_alternate_plural: "Protectores" #NT!
+ yellow_springs_bishop: "Protector general" #NT!
+ yellow_springs_bishop_plural: "Protectores generales" #NT!
+ yellow_springs_bishop_male: "Protector general" #NT!
+ yellow_springs_bishop_male_plural: "Protectores generales" #NT!
+ yellow_springs_divine_realm: "Inframundo" #NT!
+ yellow_springs_positive_afterlife: "Peng Lai" #NT!
+ yellow_springs_negative_afterlife: "Ti Yu" #NT!
+ yellow_springs_witchgodname_the_horned_god: "Kuei" #NT!
+ yellow_springs_witchgodname_the_horned_god_possessive: "Kuei's" #NT!
+  
+ yellow_springs_creator_god_name: "$yellow_springs_high_god_name$" #NT!
+ yellow_springs_creator_god_name_possessive: "$yellow_springs_high_god_name_possessive$" #NT!
+ yellow_springs_health_god_name: "$yellow_springs_high_god_name$" #NT!
+ yellow_springs_health_god_name_possessive: "$yellow_springs_high_god_name_possessive$" #NT!
+ yellow_springs_fertility_god_name: "$yellow_springs_health_god_name$" #NT!
+ yellow_springs_fertility_god_name_possessive: "$yellow_springs_health_god_name_possessive$" #NT!
+ yellow_springs_wealth_god_name: "$yellow_springs_health_god_name$" #NT!
+ yellow_springs_wealth_god_name_possessive: "$yellow_springs_health_god_name_possessive$" #NT!
+ yellow_springs_household_god_name: "$yellow_springs_health_god_name$" #NT!
+ yellow_springs_household_god_name_possessive: "$yellow_springs_health_god_name_possessive$" #NT!
+ yellow_springs_fate_god_name: "Destino" #NT!
+ yellow_springs_fate_god_name_possessive: "El destino" #NT!
+ yellow_springs_knowledge_god_name: "$yellow_springs_high_god_name$" #NT!
+ yellow_springs_knowledge_god_name_possessive: "$yellow_springs_high_god_name_possessive$" #NT!
+ yellow_springs_war_god_name: "Jefe militar" #NT!
+ yellow_springs_war_god_name_possessive: "Señor de la guerra" #NT!
+ yellow_springs_trickster_god_name: "Destino" #NT!
+ yellow_springs_trickster_god_name_possessive: "El destino" #NT!
+ yellow_springs_night_god_name: "$yellow_springs_high_god_name$" #NT!
+ yellow_springs_night_god_name_possessive: "$yellow_springs_high_god_name_possessive$" #NT!
+ yellow_springs_water_god_name: "Tempestad" #NT!
+ yellow_springs_water_god_name_possessive: "La tempestad" #NT!
+  
+ yellow_springs_religion: "Manantiales amarillos" #NT!
+ yellow_springs_religion_adj: "Manantiales amarillos" #NT!
+ yellow_springs_religion_adherent: "Espectro de jade" #NT!
+ yellow_springs_religion_adherent_plural: "Espectros de jade" #NT!
+ yellow_springs_religion_desc: "Los Manantiales Amarillos, también llamados el [dark_kingdom|E] de Jade, son una parte del [underworld|E] dedicado y controlado por los muertos de Asia." #NT!
+  
+  #Yellow Springs-Group Faiths 
+  
+ yellow_springs: "Manantiales amarillos" #NT!
+ yellow_springs_adj: "Manantiales amarillos" #NT!
+ yellow_springs_desc: "Los Manantiales Amarillos, también llamados el [dark_kingdom|E] de Jade, son una parte del [underworld|E] dedicado y controlado por los muertos de Asia." #NT!
+ yellow_springs_adherent: "Espectro de jade" #NT!
+ yellow_springs_adherent_plural: "Espectros de jade" #NT!
+  
+  ##################### 
+  # Spectre 
+  ##################### 
+  
+  #Spectre Localization 
+ spectre_high_god_name: "Olvido" #NT!
+ spectre_high_god_name_possessive: "El olvido" #NT!
+ spectre_high_god_name_alternate: "Entropía" #NT!
+ spectre_high_god_name_alternate_possessive: "La entropía" #NT!
+ spectre_devil_name: "Psique" #NT!
+ spectre_devil_name_possessive: "La psique" #NT!
+ spectre_death_deity_name: "Muerte" #NT!
+ spectre_death_deity_name_possessive: "Fallecidos" #NT!
+ spectre_house_of_worship: "Colmena" #NT!
+ spectre_house_of_worship_plural: "Colmena" #NT!
+ spectre_religious_symbol: "espectro" #NT!
+ spectre_religious_text: "código" #NT!
+ spectre_religious_head_title: "Mente colmena" #NT!
+ spectre_religious_head_title_name: "Colmena" #NT!
+ spectre_devotee_male: "Espectro" #NT!
+ spectre_devotee_male_plural: "Espectros" #NT!
+ spectre_devotee_female: "Espectro" #NT!
+ spectre_devotee_female_plural: "Espectros" #NT!
+ spectre_devotee_neuter: "Espectro" #NT!
+ spectre_devotee_neuter_plural: "Espectros" #NT!
+ spectre_priest_male: "Espectro" #NT!
+ spectre_priest_male_plural: "Espectros" #NT!
+ spectre_priest_alternate_plural: "Espectros" #NT!
+ spectre_bishop: "Espectro" #NT!
+ spectre_bishop_plural: "Espectros" #NT!
+ spectre_bishop_male: "Espectro" #NT!
+ spectre_bishop_male_plural: "Espectros" #NT!
+ spectre_divine_realm: "Laberinto" #NT!
+ spectre_positive_afterlife: "Olvido" #NT!
+ spectre_negative_afterlife: "Vitalidad" #NT!
+ spectre_witchgodname_the_horned_god: "Psique" #NT!
+ spectre_witchgodname_the_horned_god_possessive: "La psique" #NT!
+  
+ spectre_creator_god_name: "$spectre_high_god_name$" #NT!
+ spectre_creator_god_name_possessive: "$spectre_high_god_name_possessive$" #NT!
+ spectre_health_god_name: "Abuela" #NT!
+ spectre_health_god_name_possessive: "De la abuela" #NT!
+ spectre_fertility_god_name: "Abuela" #NT!
+ spectre_fertility_god_name_possessive: "De la abuela" #NT!
+ spectre_wealth_god_name: "$spectre_high_god_name$" #NT!
+ spectre_wealth_god_name_possessive: "$spectre_high_god_name_possessive$" #NT!
+ spectre_household_god_name: "Abuela" #NT!
+ spectre_household_god_name_possessive: "De la abuela" #NT!
+ spectre_fate_god_name: "Destino" #NT!
+ spectre_fate_god_name_possessive: "El destino" #NT!
+ spectre_knowledge_god_name: "Mente colmena" #NT!
+ spectre_knowledge_god_name_possessive: "Mente colmena" #NT!
+ spectre_war_god_name: "$spectre_high_god_name$" #NT!
+ spectre_war_god_name_possessive: "$spectre_high_god_name_possessive$" #NT!
+ spectre_trickster_god_name: "Destino" #NT!
+ spectre_trickster_god_name_possessive: "El destino" #NT!
+ spectre_night_god_name: "$spectre_high_god_name$" #NT!
+ spectre_night_god_name_possessive: "$spectre_high_god_name_possessive$" #NT!
+ spectre_water_god_name: "Tempestad" #NT!
+ spectre_water_god_name_possessive: "La tempestad" #NT!
+  
+ spectre_religion: "Espectro" #NT!
+ spectre_religion_adj: "Espectro" #NT!
+ spectre_religion_adherent: "Espectro" #NT!
+ spectre_religion_adherent_plural: "Espectros" #NT!
+ spectre_religion_desc: ""
+  
+  #Spectre-Group Faiths 
+ malfean: "Malfeano" #NT!
+ malfean_adj: "Malfeano" #NT!
+ malfean_desc: "Los malfeanos son grandes fuerzas de oscuridad y destrucción que traen sufrimiento, maldad y terror allí donde su influencia los toca. Sin embargo, en su mayor parte son una fuerza invisible que solo se siente a través de sus secuaces y sirvientes. La humanidad debería estar agradecida." #NT!
+ malfean_adherent: "Espectro" #NT!
+ malfean_adherent_plural: "Espectros" #NT!
+  
+ grand_maw: "Gran Fauce" #NT!
+ grand_maw_adj: "Abuela" #NT!
+ grand_maw_desc: "Abuela es el nombre de... algo. Algunos creen que "ella" es la gemela malvada de Dios, otros piensan que "ella" es el remanente de un universo muerto, y otros señalan a "ella" como el mismísimo [oblivion|E]. Nunca se sabe exactamente qué es "ella", pero lo que sí se sabe es que es antigua y quiere consumir a todas las almas vivientes de la Tierra. Su nombre común se deriva del apodo "Grand Maw", que suena parecido al término "Abuela". Por lo tanto, se la conoció como Abuela." #NT!
+ grand_maw_adherent: "Espectro" #NT!
+ grand_maw_adherent_plural: "Espectros" #NT!

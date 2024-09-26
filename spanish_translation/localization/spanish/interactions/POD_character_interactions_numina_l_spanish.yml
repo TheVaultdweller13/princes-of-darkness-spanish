@@ -1,8 +1,4 @@
 ﻿l_spanish:
-  
- POD_contact_animals_interaction: "Contacto Animales"
- POD_contact_animals_interaction_desc: "Haz de un animal tu mascota."
- POD_contact_animals_interaction_options_heading: "¿Qué animal debo acariciar?"
  POD_train_psi_interaction: "Entrenamiento Psi"
  POD_train_psi_interaction_desc: "Enséñale a [recipient.GetFirstName] uno de tus poderes psíquicos."
  POD_determine_psi_interaction: "Determinar los talentos psi"
@@ -14,44 +10,169 @@
  POD_test_psi_interaction_tooltip: "Azar basado en [recipient.GetFirstNamePossessive] aprendizaje."
  POD_test_psi_interaction_sucess: "Parece que [actor.GetFirstName] tiene talentos psíquicos."
  POD_test_psi_interaction_fail: "Parece que [actor.GetFirstName] no tiene ningún talento psíquico, por lo que [actor.GetFirstName] no podrá probarlo nuevamente."
- POD_psychoportation_interaction: "Psicotransportación"
- POD_psychoportation_interaction_desc: "Teletransportarse a la ubicación [recipient.GetFirstNamePossessive], o a su próximo destino cuando [traveling|E]."
- POD_psi_heal_interaction: "Curación psi"
- POD_psi_heal_interaction_desc: "Usa poderes psíquicos para curar [recipient.GetFirstNamePossessive] heridas."
- POD_psi_heal_interaction_options_heading: "¿Qué debo curar?"
- POD_psi_leech_interaction: "Sanguijuela psi"
- POD_psi_leech_interaction_desc: "Libera emoción o incluso fuerza vital de [recipient.GetFirstName] para tu propio uso."
- POD_psi_leech_interaction_options_heading: "¿Qué debo drenar?"
- POD_psi_leech_interaction_willpower: "Fuerza de voluntad"
- POD_psi_leech_interaction_lifeforce: "Fuerza de vida"
- POD_psi_leech_interaction_gnosis: "Gnosis"
- POD_psi_mind_control_interaction: "Control mental psi"
- POD_psi_mind_control_interaction_desc: "Usa poderes psíquicos para dominar la mente de [recipient.GetFirstName]."
- POD_psi_mind_control_interaction_options_heading: "¿Qué potencia debo utilizar?"
- POD_psi_mind_control_interaction_hypnosis: "Hipnosis"
- POD_psi_mind_control_interaction_telepathy: "Telepatía"
+ POD_psychic_animal_psi_interaction: "Psi animal" #NT!
+ POD_psychic_animal_psi_interaction_desc: "Usa tu fuerza de voluntad para controlar a los animales" #NT!
+ POD_psi_contact_animals: "Contacto Animales" #NT!
+ POD_psi_summon_animals: "Invocar mascota" #NT!
+ POD_psi_summon_rat_plague: "Invocar plaga de ratas" #NT!
+ POD_psychic_animal_psi_interaction_horse: "Caballo" #NT!
+ POD_psychic_animal_psi_interaction_dog: "Perro" #NT!
+ POD_psychic_animal_psi_interaction_cat: "Gato" #NT!
+ POD_psychic_animal_psi_interaction_wolf: "Lobo" #NT!
+ POD_psychic_animal_psi_interaction_bear: "Oso" #NT!
+ POD_psychic_animal_psi_interaction_lion: "León" #NT!
+ POD_psychic_animal_psi_interaction_tiger: "Tigre" #NT!
+ POD_psychic_animal_psi_interaction_rat: "Rata" #NT!
+ POD_psychic_animal_psi_interaction_cockroach: "Cucaracha" #NT!
+ POD_psychic_biocontrol_interaction: "Control biológico" #NT!
+ POD_psychic_biocontrol_interaction_desc: "Controla tu cuerpo como si fuera arcilla" #NT!
+ POD_psychic_necro_psi_interaction: "Psi necrófago" #NT!
+ POD_psychic_necro_psi_interaction_desc: "Hablar con los muertos y controlarlos" #NT!
+ psi_can_be_channelled: "Has alcanzado el límite máximo de espectros que se pueden canalizar al mismo tiempo." #NT!
+ psi_can_be_possessed: "Has alcanzado el límite máximo de espectros que pueden poseerse al mismo tiempo." #NT!
+ POD_necro_psi_summon: "Invocar fantasma" #NT!
+ POD_necro_psi_channel: "Canal de demanda" #NT!
+ POD_necro_psi_unchannel: "Descanalizar" #NT!
+ POD_necro_psi_better_channel: "Canal parcial" #NT!
+ POD_psychic_psychic_healing_interaction: "Curación psíquica" #NT!
+ POD_psychic_psychic_healing_interaction_desc: "Realizar cirugía con la mente" #NT!
+ POD_treatment: "Tratamiento psíquico" #NT!
+ POD_psychic_precognition_interaction: "Precognición" #NT!
+ POD_psychic_precognition_interaction_desc: "Ver el futuro" #NT!
+ POD_psychic_precognition_interaction_tt: "Todo plan que tenga como objetivo a usted, ya sea hostil o personal, será expuesto, y aquellos que ya hayan sido expuestos serán detenidos." #NT!
   
- POD_sorcery_summon_interaction: "Convocar"
- POD_sorcery_summon_interaction_desc: "Por la fuerza de la magia, invoca a [recipient.GetFirstName] a tu corte."
- POD_sorcery_summon_interaction_sucess: "[recipient.GetFirstName] ha sido citado a su tribunal."
- POD_sorcery_summon_interaction_fail: "[recipient.GetFirstName] se ha resistido."
- POD_sorcery_transport_interaction: "Teletransportarse"
- POD_sorcery_transport_interaction_desc: "Teletransportarse a la ubicación [recipient.GetFirstNamePossessive], o a su próximo destino cuando [traveling|E]."
- POD_sorcery_bless_interaction: "Bendecir"
- POD_sorcery_bless_interaction_desc: "Bendice a [recipient.GetFirstName] así como a [recipient.GetHerHis] familiares."
- blessed_by_sorcery_modifier: "Bendecir"
- POD_sorcery_curse_interaction: "Maldición"
- POD_sorcery_curse_interaction_desc: "Maldice a [recipient.GetFirstName] y también a sus familiares [recipient.GetHerHis]."
- cursed_by_sorcery_modifier: "Maldición"
- POD_sorcery_weather_control_interaction: "Meteorología"
+ POD_psychic_psychic_invisibility_interaction: "Invisibilidad psíquica" #NT!
+ POD_psychic_psychic_invisibility_interaction_desc: "Hazte invisible" #NT!
+ POD_psychic_psychic_invisibility_interaction_tt: "Todo plan hostil dirigido contra usted es detenido." #NT!
+  
+ POD_psychic_psychometry_interaction: "Psicometría" #NT!
+ POD_psychic_psychometry_interaction_desc: "Leer objetos como libros" #NT!
+  
+ POD_psychic_psychoportation_interaction: "Psicotransportación" #NT!
+ POD_psychic_psychoportation_interaction_desc: "Manipula la distancia con tu mente" #NT!
+  
+ POD_psychic_telepathy_interaction: "Telepatía" #NT!
+ POD_psychic_telepathy_interaction_desc: "Invadir [recipient.GetFirstNamePossessive] mente" #NT!
+ POD_suggestion: "Sugerencia" #NT!
+ POD_conditioning: "Acondicionamiento" #NT!
+ POD_mind_control: "Control mental" #NT!
+  
+ POD_psychic_psychic_hypnosis_interaction: "Hipnosis psíquica" #NT!
+ POD_psychic_psychic_hypnosis_interaction_desc: "Usa trucos para controlar la mente [recipient.GetFirstNamePossessive]" #NT!
+ POD_psi_higher_opinion_boost: "Mejorar la opinión inconsciente" #NT!
+ POD_psi_get_hook: "Conseguir gancho" #NT!
+ POD_psi_remove_stress_trait: "Eliminar el rasgo de estrés" #NT!
+ hypnosis_requirements: "El objetivo debe tener una opinión positiva de ti o tú debes tener [GetPerk('psychic_hypnosis_5_perk').GetName( GetNullCharacter )]" #NT!
+  
+ POD_psychic_psychic_vampirism_interaction: "Vampirismo psíquico" #NT!
+ POD_psychic_psychic_vampirism_interaction_desc: "Lixiviación de las emociones" #NT!
+ POD_psi_leach_life: "Filtrar la fuerza vital" #NT!
+ same_location_or_modifier_psi_weaken_vampiric_defences: "$I_MUST_BE_AT_THE_SAME_LOCATION_TRIGGER$ O el objetivo debe tener [GetModifier('psi_weaken_vampiric_defences').GetNameWithTooltip]" #NT!
+ has_0_stress_or_level_3_stress: "La víctima debe tener 0 niveles de estrés o un nivel 3 de crisis mental." #NT!
+ has_0_stress_or_level_2_stress: "La víctima debe tener 0 niveles de estrés o un nivel 2 de crisis mental." #NT!
+  
+ POD_psychic_shapeshift_interaction: "Cambio de forma psíquico" #NT!
+ POD_psychic_shapeshift_interaction_desc: "Cambia la forma de tu carne" #NT!
+  
+ POD_psychic_empathic_healing_interaction: "Sanación empática" #NT!
+ POD_psychic_empathic_healing_interaction_desc: "Utilice el poder de la empatía para sanar un rasgo mental negativo o absorber un rasgo de herida." #NT!
+  
+ POD_psychic_soulstealing_interaction: "Robo de almas" #NT!
+ POD_psychic_soulstealing_interaction_desc: "Absorbe la fuerza de voluntad o incluso la fuerza vital de [recipient.GetFirstName] para tu propio uso." #NT!
+ POD_psychic_soulstealing_interaction_options_heading: "¿Qué debo drenar?" #NT!
+ POD_soulstealing_interaction_willpower: "Fuerza de voluntad" #NT!
+ POD_soulstealing_interaction_lifeforce: "Fuerza vital" #NT!
+ POD_soulstealing_interaction_wound: "Salud" #NT!
+ POD_soulstealing_interaction_gnosis: "Gnosis" #NT!
+  
+ POD_sorcery_steal_artifact_interaction: "Robo de artefactos hechiceros" #NT!
+ POD_sorcery_steal_artifact_interaction_desc: "Roba un artefacto con la fuerza de tu hechicería." #NT!
+ POD_sorcery_mark_artifact_interaction: "Artefacto de marca" #NT!
+ POD_sorcery_mark_artifact_interaction_desc: "Marca un artefacto. Los objetos marcados se pueden mover con la fuerza de tu hechicería." #NT!
+ POD_sorcery_remove_mark: "Quitar marca" #NT!
+ NOT_SORCERY_ALREADY_DONT_HAS_MARK: "#X Este [artifact|E] no está marcado.#!" #NT!
+ NOT_SORCERY_TOO_MANY_MARKS: "#X Has alcanzado tu límite de puntos. Aumenta tu nivel de conjuración para obtener más.#!" #NT!
+ NOT_SORCERY_ALREADY_HAS_MARK: "#X Este [artifact|E] ya está marcado.#!" #NT!
+ POD_sorcery_conveyance_interaction: "Transporte" #NT!
+ POD_sorcery_conveyance_interaction_desc: "Permite al usuario viajar con la ayuda de un vehículo preparado ritualmente." #NT!
+ POD_sorcery_cursing_interaction: "Maldiciendo" #NT!
+ POD_sorcery_cursing_interaction_desc: "Arte de aplicar maleficios, maldiciones y bendiciones." #NT!
+  
+ POD_sorcery_cursing_type: "Bendición" #NT!
+ POD_sorcery_power_1: "Poder 1" #NT!
+ POD_sorcery_power_2: "Poder 2" #NT!
+ POD_sorcery_power_3: "Poder 3" #NT!
+ POD_sorcery_power_4: "Poder 4" #NT!
+ POD_sorcery_power_5: "Poder 5" #NT!
+ POD_sorcery_power_6: "Poder 6" #NT!
+  
+ POD_sorcery_cursing_close_family: "Objetivo Familia cercana" #NT!
+ POD_sorcery_cursing_extended_family: "Familia objetivo" #NT!
+ POD_sorcery_cursing_house: "Casa objetivo" #NT!
+ POD_sorcery_cursing_dynasty: "Dinastía objetivo" #NT!
+  
+ POD_sorcery_dowsing_interaction: "Radiestesia" #NT!
+ POD_sorcery_dowsing_interaction_desc: "Práctica de localizar objetos perdidos con medios mágicos." #NT!
+  
+ POD_sorcery_fascination_interaction: "Fascinación" #NT!
+ POD_sorcery_fascination_interaction_desc: "Haz que [recipient.GetFirstName] te sea fiel" #NT!
+  
+ POD_sorcery_oneiromancy_interaction: "Oniromancia" #NT!
+ POD_sorcery_oneiromancy_interaction_desc: "Toca y controla [recipient.GetFirstNamePossessive] sueños" #NT!
+ POD_sorcery_dreamless: "Sin sueños" #NT!
+ POD_sorcery_touch_dreams: "Toca Sueño" #NT!
+ POD_sorcery_bad_dreams: "Malos sueños" #NT!
+ POD_sorcery_good_dreams: "Buenos sueños" #NT!
+ POD_sorcery_monsters: "Crea monstruos" #NT!
+  
+ POD_sorcery_saturnal_manes_interaction: "Saturnal - Melenas" #NT!
+ POD_sorcery_saturnal_manes_interaction_desc: "Control muerto" #NT!
+ POD_sorcery_consume: "Consumir" #NT!
+ POD_sorcery_hurt: "Fantasmas de la ira" #NT!
+  
+ POD_sorcery_shapeshift_partial_interaction: "Cambio de forma parcial" #NT!
+ POD_sorcery_shapeshift_partial_interaction_desc: "Crecen partes de animales en ti" #NT!
+ SORCERY_INCOMPATIBLE_SHAPESHIFT: "Cambio de forma incompatible" #NT!
+  
  POD_sorcery_shapeshift_interaction: "Cambio de forma"
  POD_sorcery_shapeshift_interaction_desc: "Usa tu poder para cambiar de forma."
- POD_sorcery_heal_interaction: "Sanar"
- POD_sorcery_heal_interaction_desc: "Usa poderes de hechicería para curar [recipient.GetFirstNamePossessive] heridas."
+  
+ POD_sorcery_spirit_chasing_sensory_interaction: "Espíritu sensorial" #NT!
+ POD_sorcery_spirit_chasing_sensory_interaction_desc: "Ver e interactuar con los espíritus." #NT!
+  
+ POD_sorcery_spirit_chasing_ability_interaction: "Habilidad espiritual" #NT!
+ POD_sorcery_spirit_chasing_ability_interaction_desc: "Adquirir habilidades espirituales" #NT!
+ POD_sorcery_cat: "Habilidades del gato" #NT!
+ POD_sorcery_dog: "Habilidades del perro" #NT!
+ POD_sorcery_owl: "Habilidades del búho" #NT!
+ POD_sorcery_wolf: "Habilidades del lobo" #NT!
+  
+ POD_sorcery_animal_summon_interaction: "Invocación de animales" #NT!
+ POD_sorcery_animal_summon_interaction_desc: "Invocar animal de la naturaleza" #NT!
+  
+ enchantment_diplomacy_name: "[diplomacy|E] Encantamiento" #NT!
+ enchantment_diplomacy_artifact_tt: "Este [artifact|E] ya ha sido encantado con otro tipo." #NT!
+ enchantment_martial_name: "[martial|E] Encantamiento" #NT!
+ enchantment_martial_artifact_tt: "Este [artifact|E] ya ha sido encantado con otro tipo." #NT!
+ enchantment_stewardship_name: "[stewardship|E] Encantamiento" #NT!
+ enchantment_stewardship_artifact_tt: "Este [artifact|E] ya ha sido encantado con otro tipo." #NT!
+ enchantment_intrigue_name: "[intrigue|E] Encantamiento" #NT!
+ enchantment_intrigue_artifact_tt: "Este [artifact|E] ya ha sido encantado con otro tipo." #NT!
+ enchantment_learning_name: "[learning|E] Encantamiento" #NT!
+ enchantment_learning_artifact_tt: "Este [artifact|E] ya ha sido encantado con otro tipo." #NT!
+ enchantment_prowess_name: "[prowess|E] Encantamiento" #NT!
+ enchantment_prowess_artifact_tt: "Este [artifact|E] ya ha sido encantado con otro tipo." #NT!
+  
+ POD_sorcery_healing_interaction: "Cicatrización" #NT!
+ POD_sorcery_healing_interaction_desc: "Usa poderes de hechicería para curar [recipient.GetFirstNamePossessive] heridas." #NT!
  POD_sorcery_heal_interaction_options_heading: "¿Qué debo curar?"
+  
+ POD_sorcery_weather_control_interaction: "Meteorología"
+  
  POD_sorcery_auto_resurrection_interaction: "Protéjase contra la muerte"
  POD_sorcery_auto_resurrection_interaction_desc: "Devuelve automáticamente a una persona que ha sido asesinada recientemente, a un costo de piedad masivo."
  POD_sorcery_auto_resurrection_interaction_options_heading: "¿A qué personas debo evitar que mueran de muerte accidental?"
+ POD_sorcery_auto_resurrection_interaction_coterie: "Los miembros de $POD_player_coterie$" #NT!
  POD_sorcery_auto_resurrection_interaction_knight: "mi caballero actual"
  POD_sorcery_auto_resurrection_interaction_councillor: "mi actual concejal"
  POD_sorcery_auto_resurrection_interaction_family: "Mi miembro actual de la casa"
@@ -59,29 +180,21 @@
  POD_sorcery_auto_resurrection_interaction_friend: "Mi amigo actual"
  POD_sorcery_auto_resurrection_interaction_lover: "Mi amante actual"
  resurrection_cost_notification: "Costo de resurrección"
- POD_sorcery_create_potion_interaction: "Crear poción"
- POD_sorcery_create_potion_interaction_desc: "Crea brebajes para mejorar la habilidad [recipient.GetFirstNamePossessive]."
- POD_sorcery_create_potion_interaction_options_heading: "¿Qué poción debo crear?"
- POD_sorcery_create_potion_interaction_social: "Poción de encanto"
- POD_sorcery_create_potion_interaction_mental: "Poción de inteligencia"
- POD_sorcery_create_potion_interaction_physical: "Poción de resistencia"
- social_potion_by_sorcery_modifier: "Poción de encanto"
- mental_potion_by_sorcery_modifier: "Poción de inteligencia"
- physical_potion_by_sorcery_modifier: "Poción de resistencia"
- POD_sorcery_create_talisman_interaction: "Crear talismán"
- POD_sorcery_create_talisman_interaction_desc: "Crea un talismán mágico menor."
- POD_sorcery_create_talisman_interaction_tooltip: "El talismán obtiene un modificador aleatorio dependiendo de tu administración."
- talisman_by_sorcery_artifact: "Talismán mágico"
  POD_train_sorcery_interaction: "Entrenamiento de brujería"
  POD_train_sorcery_interaction_desc: "Enséñale a [recipient.GetFirstName] uno de tus caminos de hechicería."
  POD_initiate_sorcery_interaction: "Iniciar la hechicería"
  POD_initiate_sorcery_interaction_desc: "Enseñar [recipient.GetFirstName] brujería."
  POD_learn_sorcery_interaction: "Solicite tutoría"
  POD_learn_sorcery_interaction_desc: "Puedes pedirle a un amigo, amante o alma gemela que te enseñe brujería."
+ POD_sorcery_summon_interaction: "Convocar"
+ POD_sorcery_summon_interaction_desc: "Por la fuerza de la magia, invoca a [recipient.GetFirstName] a tu corte."
   
  POD_theurgy_heal_interaction: "Sanar"
  POD_theurgy_heal_interaction_desc: "Usa poderes de hechicería para curar [recipient.GetFirstNamePossessive] heridas."
  POD_theurgy_heal_interaction_options_heading: "¿Qué debo curar?"
+ POD_theurgy_discover_true_name_interaction: "Descubre el nombre verdadero" #NT!
+ POD_theurgy_summon_wraith_from_shadowlands_interaction: "Invoca un espectro desde el [shadowlands|E]" #NT!
+ summon_random_wraith: "Invoca un espectro aleatorio desde el [shadowlands|E]" #NT!
  POD_train_theurgy_interaction: "Formación en teurgia"
  POD_train_theurgy_interaction_desc: "Enséñale a [recipient.GetFirstName] uno de tus caminos de teurgia."
  POD_initiate_theurgy_interaction: "Iniciar la teurgia"
@@ -123,6 +236,10 @@
  POD_create_drone_interaction_desc: "Invoca a un espíritu tejedor para que posea [recipient.GetFirstName]."
  POD_create_kami_interaction: "Posesión espiritual gaiana"
  POD_create_kami_interaction_desc: "Invocar a un espíritu gaiano para poseer [recipient.GetFirstName]."
+ POD_homogeneity_interaction: "Homogeneidad" #NT!
+ POD_homogeneity_interaction_desc: "Contrarrestar [recipient.GetFirstNamePossessive] [battle_modifier|E]." #NT!
+ POD_stasis_touch_interaction: "Toque de estasis" #NT!
+ POD_stasis_touch_interaction_desc: "Rob [recipient.GetFirstNamePossessive] cambio de forma." #NT!
   
  POD_bless_artifact_interaction: "Artefacto bendecido"
  POD_bless_artifact_interaction_desc: "Bendice un ícono religioso para dañar a seres sobrenaturales (incluidos magos)."
@@ -134,3 +251,19 @@
  POD_ha_turn_vampire_interaction_desc: "¡Limpia a [recipient.GetFirstName] del Abrazo! El vampiro se convierte en mortal o, alternativamente, alcanza la Golconda."
   
  has_artifact_flagrum_passion: "Tienes el Flagrum de la Pasión [artifact|E]"
+  
+ POD_sorcery_use_alchemical_product_interaction: "Utilizar producto alquímico" #NT!
+ POD_sorcery_use_alchemical_product_interaction_desc: "Utilice un producto alquímico." #NT!
+ POD_sorcery_use_alchemical_product_interaction_options_heading: "¿Qué producto debo utilizar?" #NT!
+ POD_sorcery_offer_alchemical_product_interaction: "Oferta de producto alquímico" #NT!
+ POD_sorcery_offer_alchemical_product_interaction_desc: "Ofrezca [recipient.GetFirstName] un producto alquímico." #NT!
+ POD_sorcery_offer_alchemical_product_interaction_options_heading: "¿Qué producto debo ofrecer?" #NT!
+ POD_sorcery_sell_alchemical_product_interaction: "Vender producto alquímico" #NT!
+ POD_sorcery_sell_alchemical_product_interaction_desc: "Vendo [recipient.GetFirstName] un producto alquímico." #NT!
+ POD_sorcery_sell_alchemical_product_interaction_options_heading: "¿Qué producto debo vender?" #NT!
+ POD_sorcery_buy_alchemical_product_interaction: "Comprar producto alquímico" #NT!
+ POD_sorcery_buy_alchemical_product_interaction_desc: "Compra [recipient.GetFirstName] un producto alquímico que tiene [recipient.GetSheHe]." #NT!
+ POD_sorcery_buy_alchemical_product_interaction_options_heading: "¿Qué producto debo comprar?" #NT!
+ POD_sorcery_poison_alchemical_product_interaction: "Usar veneno alquímico" #NT!
+ POD_sorcery_poison_alchemical_product_interaction_desc: "Intenta envenenar a [recipient.GetFirstName] usando un producto alquímico." #NT!
+ POD_sorcery_poison_alchemical_product_interaction_options_heading: "¿Qué producto debo utilizar?" #NT!

@@ -316,7 +316,7 @@
  THORN_LIFESTYLE_PERK_POINTS_TRIGGER: "Puntos de beneficio del estilo de vida Thorn: $NUM|V0$"
  JADE_ARCANOI_LIFESTYLE_PERK_POINTS_TRIGGER: "Puntos de beneficio del estilo de vida de Jade Arcanoi: $NUM|V0$"
  DARK_ARCANOI_LIFESTYLE_PERK_POINTS_TRIGGER: "Puntos de ventaja del estilo de vida de Dark Arcanoi: $NUM|V0$"
- MISC_ARCANOI_lifestyle_PERK_POINTS_TRIGGER: "Puntos de beneficio del estilo de vida Arcanoi misceláneo: $NUM|V0$"
+ MISC_ARCANOI_LIFESTYLE_PERK_POINTS_TRIGGER: "Puntos de beneficio del estilo de vida Arcanoi misceláneo: $NUM|V0$" #NT!
   
  NOT_has_arcanos_argos_trait: "@warning_icon!#X Tú tienes #bold no#! tienes [trait|E]: [GetTrait('arcanos_argos').GetName( GetPlayer )]#!"
  NOT_has_arcanos_castigate_trait: "@warning_icon!#X Tú tienes #bold no#! tienes [trait|E]: [GetTrait('arcanos_castigate').GetName( GetPlayer )]#!"
@@ -821,6 +821,7 @@
  ILL_OMEN_PERK_EFFECT: "#F Pistas divinas sobre el destino de una persona, lugar u objeto.#!"
  SMALL_HOURS_PERK_EFFECT: "#F Inducir visiones relacionadas con eventos pasados.#!"
  CIMMERIAN_SHADE_PERK_EFFECT: "#F Accede a secretos del pasado del objetivo en forma de voz fantasma.#!"
+ CIMMERIAN_SHADE_PERK_BONUS_VALUE: "[GetPerk('cimmerian_shade_perk').GetName(GetPlayer)]" #NT!
  HYPNOS_RECLINING_PERK_EFFECT: "#F Aprende información a través de sueños y profecías.#!"
  GATES_OF_HORN_PERK_EFFECT: "#F Altera el destino del objetivo.#!"
   
@@ -888,7 +889,7 @@
  unity_of_being_perk_name: "Unidad del Ser"
   
  SILENT_WHISPERS_PERK_EFFECT: "#F Un Espectro puede enviar telepáticamente un mensaje a otro Espectro que esté a la vista.#!"
- DISTANT_WHISPERS_PERK_EFFECT: "#F Esto permite que dos Espectros se comuniquen libremente entre sí telepáticamente.#!"
+ ARCANOI_DISTANT_WHISPERS_PERK_EFFECT: "#F Esto permite que dos Espectros se comuniquen libremente entre sí telepáticamente.#!" #NT!
  TRIBAL_COMMUNE_PERK_EFFECT: "#F Un espectro puede acceder a información que conocía previamente de Hive-Mind.#!"
  RECALL_THE_KNOWN_PERK_EFFECT: "#F Un espectro puede acceder a cualquier pensamiento o recuerdo disponible en Hive-Mind.#!"
  BROADCAST_PERK_EFFECT: "#F El Espectro ahora puede extraer información de cualquier fuente dentro de la Mente Colmena, incluido el conocimiento Arcanoi.#!"
@@ -1023,6 +1024,7 @@
  veer_perk_name: "Virar"
   
  DELVE_PERK_EFFECT: "#F Un Moriman puede entrar en trance y experimentar lo que un objetivo ha pasado recientemente.#!"
+ DELVE_PERK_BONUS_VALUE: "[GetPerk('delve_perk').GetName(GetPlayer)]" #NT!
  TRANCE_PERK_EFFECT: "#F Al usar una posesión del objetivo o ir a un lugar que haya desocupado recientemente, un Moriman puede encontrar su ubicación actual.#!"
  ARCANOI_SCRY_PERK_EFFECT: "#F Un Moriman puede percibir lo que otro espectro ve actualmente.#!"
  DIVINE_PERK_EFFECT: "#F Un Moriman puede ver el futuro de sí mismo o de otro espectro.#!"

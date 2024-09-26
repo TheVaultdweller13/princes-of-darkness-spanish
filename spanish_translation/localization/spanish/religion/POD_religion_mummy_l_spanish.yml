@@ -15,13 +15,9 @@
  mummies_high_god_name_possessive: "De Amón-Re"
  mummies_high_god_name_alternate: "Re-Horakhty"
  mummies_high_god_name_alternate_possessive: "Re-Horakhty's"
- mummies_good_god_jesus: "Horus"
- mummies_good_god_christ: "Horus"
+ mummies_good_god_horus: "Horus" #NT!
  mummies_devil_name: "apep"
  mummies_devil_name_possessive: "De Apepi"
- mummies_evil_god_lucifer: "apep"
- mummies_evil_god_beelzebub: "Apestar"
- mummies_evil_god_mephistopheles: "Apestar"
  mummies_death_deity_name: "Osiris"
  mummies_death_deity_name_possessive: "De Osiris"
  mummies_house_of_worship: "Templo"
@@ -122,4 +118,33 @@
  holy_order_white_lotus_society: "Sociedad del Loto Blanco"
  holy_order_twilight_scholars: "Eruditos del crepúsculo"
  holy_order_jade_sentinels: "Centinelas de jade"
+  
+  
+ mummy_special_kingdom_name: "Momia Reino Oscuro" #NT!
+ mummy_special_kingdom_hades_doctrine_name: "infierno" #NT!
+ mummy_special_kingdom_hades_doctrine_desc: "Hades, el inframundo de la mitología griega, es ahora también el hogar de las momias" #NT!
+ mummy_special_kingdom_hellheim_doctrine_name: "infierno" #NT!
+ mummy_special_kingdom_hellheim_doctrine_desc: "Hellheim, el inframundo de la mitología nórdica, ahora también es el hogar de las momias" #NT!
+ mummy_special_kingdom_yomi_doctrine_name: "Yomi" #NT!
+ mummy_special_kingdom_yomi_doctrine_desc: "Yomi, el inframundo en algunas mitologías orientales, es ahora también un hogar para momias" #NT!
+ mummy_special_kingdom_hell_doctrine_name: "Infierno" #NT!
+ mummy_special_kingdom_hell_doctrine_desc: "El infierno, el inframundo de la mitología cristiana, es ahora también el hogar de las momias" #NT!
+  
+ doctrine_parameter_mummy_special_kingdom_basic: "Obtén acceso a este [dark_kingdom|E] en el [umbra|E] y desbloquea acciones especiales en él." #NT!
+  
+ doctrine_parameter_mummy_special_kingdom_easier_wraith_binding: "Como acción en tu [dark_kingdom|E] único, obtén un modificador que aumenta las probabilidades de vincular con éxito un [GetTrait('wraith').GetName( GetNullCharacter )]" #NT!
+ doctrine_parameter_mummy_special_kingdom_cheaper_wraith_maintenance: "Como acción en tu [dark_kingdom|E] único, obtén un modificador que reduce el costo de mantener $POD_splat_wraith_plural$ en las Tierras de la Piel." #NT!
+ doctrine_parameter_mummy_special_kingdom_double_wraith_limit: "Como acción en tu límite único [dark_kingdom|E], obtén un modificador que duplica tu límite [GetTrait('wraith').GetName( GetNullCharacter )]" #NT!
+  
+ doctrine_parameter_mummy_special_kingdom_cheaper_army: "Como acción en tu [dark_kingdom|E] único, obtén un modificador que reduce el mantenimiento del ejército en #p -25%#!" #NT!
+ doctrine_parameter_mummy_special_kingdom_better_army: "Como acción en tu [dark_kingdom|E] único, obtén un modificador que aumenta todas las estadísticas del ejército en #p +50%#!" #NT!
+  
+ doctrine_parameter_mummy_special_kingdom_middle_kingdom: "Se considera un reino medio [splat|E]" #NT!
+ doctrine_parameter_mummy_special_kingdom_control_wu_kuei: "Como acción en tu [dark_kingdom|E] único, genera un [GetTrait('wukuei').GetName( GetNullCharacter )]" #NT!
+ doctrine_parameter_mummy_special_kingdom_control_akuma_kueijin: "Todos los personajes de esta fe obtienen interacciones poderosas para comandar [GetTrait('wukuei').GetName( GetNullCharacter )] y [GetTrait('kueijin').GetName( GetNullCharacter )] [GetTrait('cultist').GetName( GetNullCharacter )]" #NT!
+ #doctrine_parameter_mummy_special_kingdom_can_corrupt_kueijin: "Como [character_interaction|E] puede corromper a [GetTrait('kueijin').GetName( GetNullCharacter )] para convertirse en [GetTrait('cultist').GetName( GetNullCharacter )]" #NT!
+  
+ doctrine_parameter_mummy_special_kingdom_demon_spawn: "Como acción en tu [dark_kingdom|E] único, genera un [GetTrait('demon').GetName( GetNullCharacter )] en tu corte" #NT!
+ doctrine_parameter_mummy_special_kingdom_demonic_army: "Como acción en tu [dark_kingdom|E] único, obtén un modificador que otorga acceso a [men_at_arms|E] demoníaco" #NT!
+ doctrine_parameter_mummy_special_kingdom_demon_binding: "Como acción en tu [dark_kingdom|E] único, obtén un modificador que aumenta la velocidad y la probabilidad de éxito del vínculo demoníaco." #NT!
   

@@ -86,6 +86,10 @@
  POD_wereshapeshift_interaction_crawlerling: "Cambio de forma a forma de Crawlerling"
  POD_wereshapeshift_interaction_araneid: "Cambio de forma a la forma aranéida"
  POD_wereshapeshift_interaction_titaniform: "Cambio de forma a forma de Titán"
+ POD_wereshapeshift_interaction_warform: "Cambio de forma a forma de guerra" #NT!
+ POD_wereshapeshift_interaction_macroform: "Cambio de forma a macroforma" #NT!
+ POD_wereshapeshift_interaction_microform: "Cambio de forma a microforma" #NT!
+ POD_wereshapeshift_interaction_swarmform: "Cambio de forma a forma de enjambre" #NT!
   
  POD_ajabashapeshift_interaction: "Cambio de forma"
  POD_bastetshapeshift_interaction: "Cambio de forma"
@@ -101,6 +105,17 @@
  POD_camazotzshapeshift_interaction: "Cambio de forma"
  POD_grondrshapeshift_interaction: "Cambio de forma"
  POD_ananasishapeshift_interaction: "Cambio de forma"
+ POD_eshiehoshapeshift_interaction: "Cambio de forma" #NT!
+ POD_mishahoshapeshift_interaction: "Cambio de forma" #NT!
+ POD_bahaeshshapeshift_interaction: "Cambio de forma" #NT!
+ POD_ishihambishapeshift_interaction: "Cambio de forma" #NT!
+ POD_iqhaweshapeshift_interaction: "Cambio de forma" #NT!
+ POD_umakhishapeshift_interaction: "Cambio de forma" #NT!
+ POD_umlimishapeshift_interaction: "Cambio de forma" #NT!
+ POD_umbulalishapeshift_interaction: "Cambio de forma" #NT!
+ POD_umhlolishapeshift_interaction: "Cambio de forma" #NT!
+ POD_injikishapeshift_interaction: "Cambio de forma" #NT!
+ POD_kstywshapeshift_interaction: "Cambio de forma" #NT!
   
  POD_wereshapeshift_diseae_heal.0001.desc: "Me he recuperado de mi enfermedad"
   
@@ -509,3 +524,92 @@
   
  POD_blooding_fury_interaction: "Furia sangrienta"
  POD_blooding_fury_interaction_desc: "Hazte daño para aumentar tu ira."
+  
+ POD_personal_pact_interaction: "Pacto personal" #NT!
+ POD_personal_pact_interaction_desc: "Pacto con [recipient.GetFirstName]." #NT!
+  
+ POD_summon_spirit_on_death_interaction: "Invocación espiritual al morir" #NT!
+ POD_summon_spirit_on_death_interaction_desc: "Si [recipient.GetFirstNamePossessive] muere dentro de 10 años, convoca a [recipient.GetHerHim] a tu corte cuando [recipient.GetSheHe] muera, convirtiéndose en [GetTrait('spirit').GetName( GetNullCharacter )] en el proceso." #NT!
+ marked_spirit_has_arrive: "Un espíritu marcado ha llegado" #NT!
+  
+  
+ POD_ask_spirit_send_to_spirit_wilds_interaction: "Enviar a Spirit Wilds" #NT!
+ POD_ask_spirit_send_to_spirit_wilds_interaction_desc: "Pídele a [recipient.GetFirstName] que vaya al [spirit_wilds|E] para aprender nuevo [charm|E]." #NT!
+  
+ actor_secondary_POD_ask_spirit_absorb_fetish_interaction: "Espíritu" #NT!
+ actor_secondary_POD_ask_spirit_acquisition_interaction: "Espíritu" #NT!
+ actor_secondary_POD_ask_spirit_blighted_touch_interaction: "Espíritu" #NT!
+ actor_secondary_POD_ask_spirit_blood_sucking_interaction: "Espíritu" #NT!
+ actor_secondary_POD_ask_spirit_calcify_interaction: "Espíritu" #NT!
+ actor_secondary_POD_ask_spirit_drain_gnosis_interaction: "Espíritu" #NT!
+ actor_secondary_POD_ask_spirit_charm_heal_interaction: "Espíritu" #NT!
+ actor_secondary_POD_ask_spirit_life_drain_interaction: "Espíritu" #NT!
+ actor_secondary_POD_ask_spirit_weather_charm_interaction: "Espíritu" #NT!
+ actor_secondary_POD_ask_spirit_influence_interaction: "Espíritu" #NT!
+ actor_secondary_POD_ask_spirit_open_moon_bridge_interaction: "Espíritu" #NT!
+ actor_secondary_POD_ask_spirit_sap_will_interaction: "Espíritu" #NT!
+ actor_secondary_POD_ask_spirit_spirit_away_interaction: "Espíritu" #NT!
+  
+ POD_absorb_fetish_interaction: "Fetiche de absorción" #NT!
+ POD_absorb_fetish_interaction_desc: "Absorber un fetiche para aumentar un atributo." #NT!
+ POD_ask_spirit_absorb_fetish_interaction: "Absorber Fetiche #weak (Pregúntale al espíritu)#!" #NT!
+ POD_ask_spirit_absorb_fetish_interaction_desc: "Pídele a [recipient.GetFirstName] que absorba un fetiche para aumentar un atributo." #NT!
+ POD_acquisition_interaction: "Adquisición" #NT!
+ POD_acquisition_interaction_desc: "Robo más rápido de artefactos." #NT!
+ POD_ask_spirit_acquisition_interaction: "Adquisición #weak (Ask Spirit)#!" #NT!
+ POD_ask_spirit_acquisition_interaction_desc: "Pídele a [recipient.GetFirstName] que te ayude a robar artefactos." #NT!
+ POD_blighted_touch_interaction: "Toque arruinado" #NT!
+ POD_blighted_touch_interaction_desc: "Invertir personalidad [recipient.GetFirstNamePossessive]." #NT!
+ POD_ask_spirit_blighted_touch_interaction: "Toque Maldito #weak (Pregunta al Espíritu)#!" #NT!
+ POD_ask_spirit_blighted_touch_interaction_desc: "Pídele a un compañero espiritual que invierta la personalidad [recipient.GetFirstNamePossessive]." #NT!
+ POD_blood_sucking_interaction: "Chupando sangre" #NT!
+ POD_blood_sucking_interaction_desc: "Chupa [recipient.GetFirstNamePossessive] sangre para recuperar energía." #NT!
+ POD_ask_spirit_blood_sucking_interaction: "Chupando sangre #weak (Pregunta al espíritu)#!" #NT!
+ POD_ask_spirit_blood_sucking_interaction_desc: "Pídele a un compañero espiritual que chupe [recipient.GetFirstNamePossessive] sangre para recuperar poder." #NT!
+ POD_calcify_interaction: "Calcificarse" #NT!
+ POD_calcify_interaction_desc: "Enlaza [recipient.GetFirstNamePossessive] al patrón web." #NT!
+ POD_ask_spirit_calcify_interaction: "Calcificar #weak (Preguntar al espíritu)#!" #NT!
+ POD_ask_spirit_calcify_interaction_desc: "Pídele a un compañero espiritual que vincule a [recipient.GetFirstNamePossessive] con la Red de patrones." #NT!
+ POD_divide_and_conquer_interaction: "Dividir" #NT!
+ POD_divide_and_conquer_interaction_desc: "Divídete." #NT!
+ POD_drain_gnosis_interaction: "Gnosis del drenaje" #NT!
+ POD_drain_gnosis_interaction_desc: "Drena [recipient.GetFirstNamePossessive] energía para recuperar energía." #NT!
+ POD_ask_spirit_drain_gnosis_interaction: "Drenaje Gnosis #weak (Preguntar al espíritu)#!" #NT!
+ POD_ask_spirit_drain_gnosis_interaction_desc: "Pídele a un compañero espiritual que drene [recipient.GetFirstNamePossessive] de energía para recuperar poder." #NT!
+ POD_group_fusion_interaction: "Fusión grupal" #NT!
+ POD_group_fusion_interaction_desc: "Combina el poder de $POD_player_coterie$." #NT!
+ POD_charm_heal_interaction: "Sanar" #NT!
+ POD_charm_heal_interaction_desc: "Curar [recipient.GetFirstName]." #NT!
+ POD_charm_heal_interaction_options_heading: "¿Qué tipo de curación se debe realizar?" #NT!
+ POD_ask_spirit_charm_heal_interaction: "Curar #weak (Preguntar al espíritu)#!" #NT!
+ POD_ask_spirit_charm_heal_interaction_desc: "Pídele a un compañero espiritual que sane [recipient.GetFirstName]." #NT!
+ POD_life_drain_interaction: "Drenaje de vida" #NT!
+ POD_life_drain_interaction_desc: "Chupa [recipient.GetFirstNamePossessive] de salud para recuperar energía." #NT!
+ POD_ask_spirit_life_drain_interaction: "Drenaje de vida #weak (Pregunta al espíritu)#!" #NT!
+ POD_ask_spirit_life_drain_interaction_desc: "Pídele a un compañero espiritual que absorba [recipient.GetFirstNamePossessive] de salud para recuperar poder." #NT!
+ POD_weather_charm_interaction: "Encanto del clima" #NT!
+ POD_ask_spirit_weather_charm_interaction: "Amuleto del clima #weak (Pregunta al espíritu)#!" #NT!
+ POD_influence_interaction: "Influencia" #NT!
+ POD_ask_spirit_influence_interaction: "Influencia #weak (Preguntar al espíritu)#!" #NT!
+ POD_open_moon_bridge_interaction: "Puente de la Luna Abierta" #NT!
+ POD_ask_spirit_open_moon_bridge_interaction: "Puente de la Luna Abierta #weak (Pregunta al Espíritu)#!" #NT!
+ POD_charms_possession_interaction: "Posesión" #NT!
+ POD_charms_end_possession_interaction: "Poner fin a la posesión" #NT!
+ POD_sap_will_interaction: "Savia Voluntad" #NT!
+ POD_sap_will_interaction_desc: "Sap [recipient.GetFirstNamePossessive] será para la reducción del estrés." #NT!
+ POD_ask_spirit_sap_will_interaction: "Savia Voluntad #weak (Pregunta al Espíritu)#!" #NT!
+ POD_ask_spirit_sap_will_interaction_desc: "Pídele a un compañero espiritual que te ayude a reducir el estrés." #NT!
+ POD_charm_shapeshift_interaction: "Cambio de forma" #NT!
+ POD_charm_shapeshift_interaction_desc: "Usa tu poder para cambiar de forma." #NT!
+ POD_spirit_away_interaction: "Desaparecer misteriosamente" #NT!
+ POD_spirit_away_interaction_desc: "Lleva [recipient.GetFirstNamePossessive] al [yomi|E]." #NT!
+ POD_ask_spirit_spirit_away_interaction: "Espíritu ausente #weak (Pregúntale al Espíritu)#!" #NT!
+ POD_ask_spirit_spirit_away_interaction_desc: "Pídele a un compañero espiritual que lleve a [recipient.GetFirstNamePossessive] al [yomi|E]." #NT!
+  
+ POD_call_fenris_to_war_interaction: "Llama al Gran Fenris" #NT!
+ POD_call_fenris_to_war_interaction_desc: "Llama al Gran Fenris a la guerra." #NT!
+ POD_call_fenris_to_war_interaction_tt: "Ya has llamado [GetMaA('war_avatar_of_great_fenris').GetName] a [GetPlayer.MakeScope.GetVariable('fenris_summon').War.GetName]." #NT!
+ POD_call_fenris_to_war_interaction_tooltip: "El gran Fenris exige un sacrificio por su intervención, generalmente la mano izquierda del invocador." #NT!
+  
+ POD_reveal_scheme_interaction: "Revelar esquema" #NT!
+ POD_reveal_scheme_interaction_desc: "Conozca cada esquema de [recipient.GetFirstName]." #NT!

@@ -392,15 +392,6 @@
   
  POD_convert_to_catlover_interaction: "Conviértete en un amante de los gatos"
  POD_convert_to_catlover_interaction_desc: "Convierte [recipient.GetFirstName] en amante de los gatos."
- convert_to_catlover: "Conviértete en un amante de los gatos"
- convert_to_catlover_action: "Conviértete en un amante de los gatos"
- convert_to_catlover_desc: "Convierto a [SCHEME.GetTarget.GetShortUINameNoTooltip] en amante de los gatos."
- convert_to_catlover_desc_general: "Intenta convertir al objetivo en un amante de los gatos"
- convert_to_catlover_SUCCESS_DESC: "Harás que [TARGET_CHARACTER.GetShortUIName] adopte un gato"
- convert_to_catlover_my_diplomacy: "Tu diplomacia: $VALUE|=+0$"
- convert_to_catlover_my_rival: "Tu víctima: $VALUE|=+0$"
- convert_to_catlover_scheme_invalidated_title: "@scheme_icon: ¡Finaliza el plan de conversión a amantes de los gatos!"
- SCHEME_I_AM_CATLOVER: "Tienes un gato:$VALUE|0=-+$"
   
  POD_fancy_perk_interaction: "Elegante"
  POD_fancy_perk_interaction_desc: "Haz que [recipient.GetFirstName] tenga una buena impresión de ti."
@@ -522,8 +513,8 @@
   
  POD_changeling_interaction: "Secuestrar a un niño"
  POD_changeling_interaction_desc: "Secuestra al hijo de [recipient.GetFirstName] y reemplázalo por tu hijo, dando como resultado dos cambiantes."
- actor_secondary_POD_changeling_interaction_desc: "Sustituto"
- recipient_secondary_POD_changeling_interaction_desc: "Secuestrado"
+ actor_secondary_POD_changeling_interaction: "Sustituto" #NT!
+ recipient_secondary_POD_changeling_interaction: "Secuestrado" #NT!
   
  POD_create_changeling_interaction: "Conviértete en un Changeling"
  POD_create_changeling_interaction_desc: "Encantar y dominar a [recipient.GetFirstName], hacer que [recipient.GetFirstName] se distancie de su humanidad y eventualmente se convierta en un cambiante."
@@ -535,3 +526,8 @@
   
  POD_call_patron_interaction: "Llamar al patrón"
  POD_call_patron_interaction_desc: "Llamar a [recipient.GetFirstName] al conflicto contra un extraño."
+  
+ #POD_become_enchanted_interaction: "Encantamiento glamuroso" #NT!
+ #POD_become_enchanted_interaction_desc: "Usa un tesoro que tengas que encantar #TOOLTIP:GAME_TRAIT,enchanted,[GetNullCharacter] #L #!#! a ti mismo. Esto te infundirá glamour, lo que te permitirá usar más tesoros de hadas que requieran esa energía." #NT!
+ #POD_ask_enchantment_interaction: "Pide encanto glamuroso" #NT!
+ #POD_ask_enchantment_interaction_desc: "Pídele a [recipient.GetFirstName] que #TOOLTIP:GAME_TRAIT,enchanted,[GetNullCharacter] #L te encante#!#!. Esto te infundirá Glamour, lo que te permitirá usar más tesoros de hadas que requieran esa energía." #NT!

@@ -27,6 +27,7 @@
  POD_journey_name_targeted: "$POD_journey_name$ [ROOT.Var('target').Char.GetFirstName]"
  POD_journey_name_targeted_trait: "$POD_journey_name$ [ROOT.Var('target_trait').Trait.GetName(GetPlayer)]"
  POD_journey_name_targeted_artifact: "$POD_journey_name$ [ROOT.Var('target_artifact').Artifact.GetName]"
+ POD_journey_name_ritual: "[Localize(Concatenate3('ritual_',ROOT.Var('ritual').GetFlagName,'_name'))] en [ROOT.Var('target').Char.GetFirstName]" #NT!
   
  POD_current_journey: "#TOOLTIP:POD_JOURNEY_DESC #V $POD_JOURNEY_GETNAME$#!#!"
   
@@ -53,9 +54,6 @@
  JOURNEY_TAB_COTERIE: "[Select_CString( PlayerGuiIsValid('POD_has_coterie_sgui'), GetPlayer.Custom('PODGetCoterieName'), Localize('POD_create_a_coterie') )]"
   
  POD_create_a_coterie: "Crea un [GetPlayer.Custom('PODCoterieNoTooltip')]"
-  
-  # This is necessary for some reason. Don't ask me why 
- JANK_LINEBREAK: "\n\n"
   
  POD_journeys_hud: "Viajes y Coteries"
  POD_journeys: "Viajes"
@@ -140,11 +138,15 @@
  POD_journey_requirements_noactivity: "No puedes iniciar un [journey|E] mientras estás ocupado con un [activity|E]"
  POD_journey_requirements_notravel_generic: "No puedes empezar un [journey|E] mientras estás ocupado [traveling|E]"
   
+ POD_journey_requirements_target_dead: "El objetivo de este [journey|E] ha muerto" #NT!
+ POD_journey_requirements_target_artifact_destroyed: "El objetivo de este [journey|E] ha sido destruido" #NT!
+  
  POD_journey_requirements_notravel_gui: "#X @icono_de_advertencia! $POD_journey_requirements_notravel$#!"
  POD_journey_requirements_noactivity_gui: "#X @icono_de_advertencia! $POD_journey_requirements_noactivity$#!"
  POD_journey_requirements_notravel_generic_gui: "#X @icono_de_advertencia! $POD_journey_requirements_notravel_generic$#!"
  POD_journey_requirements_adult_gui: "#X @warning_icon! No puedes iniciar un [journey|E] si eres un niño#!"
  POD_journey_requirements_noprison_gui: "#X @warning_icon! No puedes iniciar un [journey|E] si estás en [prison|E]#!"
+ POD_journey_requirements_noarmy_gui: "#X @warning_icon! No puedes iniciar un [journey|E] si estás liderando un ejército#!" #NT!
  POD_journey_requirements_umbra_gui: "#X @warning_icon! No puedes iniciar un [journey|E] si estás atrapado en el [umbra|E]#!"
   
  POD_not_already_on_journey_tt: "¡Ya tienes un [journey|E] del mismo tipo apuntando a [temp_journey_target.GetShortUIName]!"
@@ -157,9 +159,10 @@
   
  POD_journey_not_implemented_yet: "Este [journey|E] aún no está implementado"
   
+ POD_new_journey_starts_paused_tt: "Dado que tu [journey|E] actual está en el [travel_phase|E], el nuevo [journey|E] se pausará." #NT!
+  
  POD_journey_exsanguination_disabled: "¡No puedes drenar a tus prisioneros mientras estás fuera de casa!"
   
  POD_start_trait_study_journey_tt: "Has obtenido una idea del [journey_trait.GetName(GetPlayer)] [trait|E]. Para entenderlo completamente, debes estudiarlo a través del [journey|E] que acabas de desbloquear."
  POD_start_anatomy_study_journey_tt: "Comenzarás con [journey|E] para comprender por completo la anatomía de [journey_trait.GetName(GetPlayer)]."
  POD_start_true_name_study_journey_tt: "Comenzarás con un [journey|E] para el verdadero nombre del [journey_trait.GetName(GetPlayer)] [trait|E]."
- POD_start_trait_study_journey_paused_tt: "Dado que tu [journey|E] actual está en el [travel_phase|E], no puedes comenzar a estudiar hasta que éste esté terminado."

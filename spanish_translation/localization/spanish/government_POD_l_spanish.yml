@@ -1,40 +1,48 @@
 ﻿l_spanish:
  traditions_government: "Tradiciones"
+ traditions_government_with_icon: "$traditions_government$" #NT!
  traditions_government_adjective: "Tradicional"
  traditions_government_realm: "[cainite|E] Reino"
  traditions_government_vassals_label: "[cainite|E] [obligations|E] se basan en cada [vassal|E] [feudal_contract|E]"
  traditions_government_desc: "La gran mayoría de los reinos vampíricos siguen las Tradiciones de Caín, un código de conducta algo aproximado sobre cómo comportarse con los mortales y otros parientes."
  #free_state_government: "Estado libre"
+ #free_state_government_with_icon: "$free_state_government$" #NT!
  #free_state_government_adjective: "Gratis"
  #free_state_government_realm: "Estado libre"
  #free_state_government_vassals_label: "Estado Libre [obligations|E] se basan en cada [vassal|E] [opinion|E] del líder del reino."
  #free_state_government_desc: "Al no aceptar las leyes de Caín, los Estados Libres son una alianza flexible de [cainites|E] con ideas similares que se reúnen alrededor de un gobernante carismático."
  inquisition_government: "Orden de la Inquisición"
+ inquisition_government_with_icon: "$inquisition_government$" #NT!
  inquisition_government_adjective: "Inquisición"
  inquisition_government_realm: "Orden de la Inquisición"
  inquisition_government_vassals_label: "Los inquisidores [obligations|E] se basan en [opinion|E]"
  inquisition_government_desc: "Una célula de Inquisidores que destruyen la influencia sobrenatural dondequiera que la encuentren."
  august_court_government: "Corte de agosto"
+ august_court_government_with_icon: "$august_court_government$" #NT!
  august_court_government_adjective: "Agosto"
  august_court_government_realm: "Corte de agosto"
  august_court_government_vassals_label: "Corte de agosto [obligations|E] se basan en cada [vassal|E] [feudal_contract|E]"
  august_court_government_desc: "Las primeras estructuras sociales organizadas de los Wan-Kuei en el Reino Medio."
  heretical_court_government: "Tribunal herético"
+ heretical_court_government_with_icon: "$heretical_court_government$" #NT!
  heretical_court_government_adjective: "Herético"
  heretical_court_government_realm: "Tribunal herético"
  heretical_court_government_vassals_label: "La Corte Hereje [obligations|E] se basa en cada [vassal|E]'s [feudal_contract|E]"
  heretical_court_government_desc: "La Corte gobernaba por un Ancestro Imperial por su cuenta, sin tener reconocimiento de las cortes augustas."
  cell_government: "Celúla"
+ cell_government_with_icon: "$cell_government$" #NT!
  cell_government_adjective: "Celúla"
  cell_government_realm: "Celúla"
  cell_government_vassals_label: "La celda [obligations|E] se basa en [opinion|E]"
  cell_government_desc: "Un grupo de cazadores unidos por los intereses de la protección, el trabajo en equipo y la causa común."
  celestial_army_government: "Ejército celestial"
+ celestial_army_government_with_icon: "$celestial_army_government$" #NT!
  celestial_army_government_adjective: "Ejército celestial"
  celestial_army_government_realm: "Ejército celestial"
  celestial_army_government_vassals_label: "Ejército Celestial [obligations|E] se basa en [piety_level|E] de [liege|E]"
  celestial_army_government_desc: "La gran organización de cazadores orientales, que se creía desaparecida hace mucho tiempo, está regresando."
  cult_government: "Culto a la momia"
+ cult_government_with_icon: "$cult_government$" #NT!
  cult_government_adjective: "Culto"
  cult_government_realm: "Culto a la momia"
  cult_government_vassals_label: "Culto a la momia [obligations|E] se basa en [piety_level|E] de [liege|E]"
@@ -131,67 +139,49 @@
  type_of_courts_social_short: "Social"
   
  litany_government: "Letanía"
+ litany_government_with_icon: "$litany_government$" #NT!
  litany_government_adjective: "Letanía"
  litany_government_realm: "Tribu de hombres lobo"
  litany_government_vassals_label: "Letanía [obligations|E] se basa en [opinion|E]"
  litany_government_desc: "La Letanía, o Letanía Oscura de los Danzantes de la Espiral Negra, es el código de leyes que conservan los Garou. Fue codificado al final del Imperio."
   
- hierarchy_government: "Jerarquía"
- hierarchy_government_adjective: "Jerarquía"
- hierarchy_government_realm: "Reino oscuro del hierro"
- hierarchy_government_vassals_label: "La jerarquía [obligations|E] se basa en cada [vassal|E] [feudal_contract|E]"
- hierarchy_government_desc: "Fundada por Caronte como un medio para unificar y ordenar el caótico más allá, se ha convertido en una burocracia estratificada y calcificada "dirigida" por Señores de la Muerte combatientes y basada en la esclavitud de miles de almas para su uso como esclavos o materias primas."
- guild_government: "Gremios estigios"
- guild_government_adjective: "Gremio"
- guild_government_realm: "Gremios estigios"
- guild_government_vassals_label: "El gremio [obligations|E] se basa en [prestige_level|E] de [liege|E]"
- guild_government_desc: "En la sociedad estigia, el dominio de los Arcanoi está tradicionalmente controlado por los gremios estigios. Estas organizaciones promovían el uso, el estudio y la regulación de cada Arcano."
- heretic_government: "Herejes"
- heretic_government_adjective: "Hereje"
- heretic_government_realm: "Herejes"
- heretic_government_vassals_label: "Hereje [obligations|E] se basa en [piety_level|E] de [liege|E]"
- heretic_government_desc: "Los herejes, espectros que defienden una perspectiva religiosa particular sobre el [underworld|E], se oponen a la Jerarquía. Muchos herejes enfatizan la Trascendencia como algo por lo que todos los espectros deberían esforzarse y usan sus recursos para ayudar a otros en sus esfuerzos."
- ferryman_government: "Sociedad de barqueros"
- ferryman_government_adjective: "Barquero"
- ferryman_government_realm: "Sociedad de barqueros"
- ferryman_government_vassals_label: "Los barqueros [obligations|E] se basan en [piety_level|E] de [liege|E]"
- ferryman_government_desc: "La Sociedad de los Barqueros, o el Círculo de Juramento del Remo, comúnmente llamados los Barqueros por aquellos que no están familiarizados con sus secretos (una lista que abarca a casi todo el mundo), es una de las sociedades más antiguas y poderosas del [underworld|E]."
- far_shore_government: "Orillas lejanas"
- far_shore_government_adjective: "Costa lejana"
- far_shore_government_realm: "Orillas lejanas"
- far_shore_government_vassals_label: "Far Shore [obligations|E] se basa en [piety_level|E] de [liege|E]"
- far_shore_government_desc: "Las Costas Lejanas son un territorio misterioso en el [underworld|E] controlado por entidades pitónicas llamadas Brillantes."
+ dark_kingdom_government: "Reino oscuro" #NT!
+ dark_kingdom_government_with_icon: "$dark_kingdom_government$" #NT!
+ dark_kingdom_government_adjective: "Reino oscuro" #NT!
+ dark_kingdom_government_realm: "Reino oscuro" #NT!
+ dark_kingdom_government_vassals_label: "[dark_kingdom|E] [obligations|E] se basan en cada [vassal|E] [feudal_contract|E]" #NT!
+ dark_kingdom_government_desc: "Los Reinos Oscuros son nichos de realidad estable dentro del [tempest|E] del [underworld|E]. Cada uno de estos reinos reclama el dominio sobre los Espectros de una región geográfica particular." #NT!
  renegade_government: "Renegados"
+ renegade_government_with_icon: "$renegade_government$" #NT!
  renegade_government_adjective: "Renegado"
  renegade_government_realm: "Renegados"
  renegade_government_vassals_label: "Los renegados [obligations|E] se basan en [opinion|E]"
  renegade_government_desc: "Los renegados son los espectros de Estigia, cuya agenda no consiste en seguir al gobierno de los muertos ni en buscar la Trascendencia. En cambio, los renegados marchan a su propio ritmo y se ocupan de una amplia gama de intereses, desde luchar activamente contra la Jerarquía hasta simplemente querer que los dejen a su suerte."
  hive_mind_government: "Mente de la colmena"
+ hive_mind_government_with_icon: "$hive_mind_government$" #NT!
  hive_mind_government_adjective: "Colmena"
  hive_mind_government_realm: "Mente de la colmena"
  hive_mind_government_vassals_label: "Hive-Mind [obligations|E] son iguales para todos los Hive [vassals|E]"
  hive_mind_government_desc: "Todos los Espectros son parte de la Mente Colmena, lo que les permite comunicarse entre sí telepáticamente."
  hive_mind_government_obligations: "[GetGovernment( 'hive_mind_government' ).GetName] [obligations|E]"
  infernal_court_government: "Corte infernal"
+ infernal_court_government_with_icon: "$infernal_court_government$" #NT!
  infernal_court_government_adjective: "Corte"
  infernal_court_government_realm: "Corte infernal"
  infernal_court_government_vassals_label: "Corte Infernal [obligations|E] se basan en cada [vassal|E]'s [feudal_contract|E]"
  infernal_court_government_desc: "Los demonios que han regresado del Abismo generalmente se organizan en Cortes, que son restos de la Era de la Ira, cuando los Caídos gobernaban sus propios Bastiones en su guerra contra el Cielo."
- yellow_springs_government: "Manantiales amarillos"
- yellow_springs_government_adjective: "Manantiales amarillos"
- yellow_springs_government_realm: "Manantiales amarillos"
- yellow_springs_government_vassals_label: "Yellow Springs [obligations|E] se basa en [vassal|E]'s [feudal_contract|E]"
- yellow_springs_government_desc: "El gobierno de las Fuentes Amarillas es una monarquía absoluta bajo el control de Yu Huang, la sombra de Qin Shihuang, primer emperador de China."
  household_government: "Hogares"
+ household_government_with_icon: "$household_government$" #NT!
  household_government_adjective: "Familiar"
  household_government_realm: "Hogares"
  household_government_vassals_label: "Los hogares [obligations|E] se basan en [vassal|E]'s [feudal_contract|E]"
  household_government_desc: "Una Casa es un grupo de Changelings vinculados a un feudo que sirven al gobernante local como vasallos o como sirvientes."
   
  celestial_army_government_modifier: "El gobierno del Ejército Celestial otorga una reducción del costo de creación de [title|E], una reducción de mantenimiento de oro de [army|E], una bonificación de probabilidad de guerra de IA y una bonificación mensual de [prestige|E]."
- hierarchy_government_modifier: "La religión de la Legión otorga una bonificación de pérdida de [stress|E]."
- guild_government_modifier: "La religión del gremio otorga a los Arcanoi una bonificación de [lifestyle|E] [experience|E]."
- yellow_springs_government_modifier: "El gobierno de Yellow Springs otorga acceso a [jade_arcanoi|E] [lifestyle|E]."
+  
+ legion_religion_modifier: "Legión [religion|E] otorga [stress|E] bonificación por pérdida." #NT!
+ guild_religion_modifier: "El gremio [religion|E] otorga a Arcanoi [lifestyle|E] una bonificación de [experience|E]." #NT!
+ yellow_springs_religion_modifier: "Yellow Springs [religion|E] otorga acceso a [jade_arcanoi|E] [lifestyle|E]." #NT!
   
  vampire_antagonistic: "Antagonista"
  vampire_antagonistic_desc: "Pocas cosas pueden estimular tanto a las personas como las rivalidades o los celos. Es mejor que vigiles tu espalda en esta casa o podrías encontrarte con alguien que intente clavarle un cuchillo."
@@ -493,18 +483,21 @@
  imperial_tax_slot: "Influencia vasalla"
   
  imperial_unity_government: "Administración Imperial"
+ imperial_unity_government_with_icon: "$imperial_unity_government$" #NT!
  imperial_unity_government_adjective: "Imperial"
  imperial_unity_government_realm: "Reino imperial"
  imperial_unity_government_vassals_label: "Imperial [obligations|E] se basan en jurisdicciones fiscales."
  imperial_unity_government_desc: "Parte de un reino enorme, que gobierna con la ayuda de un número creciente de intermediarios."
   
  imperial_no_unity_government: "Administración Imperial"
+ imperial_no_unity_government_with_icon: "$imperial_no_unity_government$" #NT!
  imperial_no_unity_government_adjective: "Imperial"
  imperial_no_unity_government_realm: "Reino imperial"
  imperial_no_unity_government_vassals_label: "Imperial [obligations|E] se basan en jurisdicciones fiscales."
  imperial_no_unity_government_desc: "Parte de un reino enorme, que gobierna con la ayuda de un número creciente de intermediarios."
   
  imperial_tribal_government: "Administración Imperial"
+ imperial_tribal_government_with_icon: "$imperial_tribal_government$" #NT!
  imperial_tribal_government_adjective: "Imperial"
  imperial_tribal_government_realm: "Reino imperial"
  imperial_tribal_government_vassals_label: "Imperial [obligations|E] se basan en jurisdicciones fiscales."

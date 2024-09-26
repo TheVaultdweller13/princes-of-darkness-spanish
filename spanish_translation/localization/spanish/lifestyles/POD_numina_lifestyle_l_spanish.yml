@@ -8,6 +8,9 @@
  game_concept_sorcery_lifestyle: "Brujería"
  game_concept_sorcery_lifestyle_desc: "La hechicería, conocida por los magos como magia lineal o de manera más despectiva como magia de setos o hechicería de setos, es la forma de magia utilizada por los mortales no magos."
   
+ game_concept_theurgy_lifestyle: "Teurgia" #NT!
+ game_concept_theurgy_lifestyle_desc: "La teurgia es similar a la magia de setos, pero las supersticiones y sacrificios que impulsan esta [numina|E] seguirán los modismos de la Iglesia cristiana." #NT!
+  
  psi_lifestyle_name: "Psi"
  psi_lifestyle_desc: "Concéntrese en los poderes que provienen de los fenómenos psíquicos."
  psi_lifestyle_highlight_desc: "Gracias a tu inteligencia [trait|E], ganas #P [GetPlayer.Custom('GetEducationLifestylePercentageBoost')]#! más [experience|E] en este Estilo de Vida."
@@ -17,6 +20,11 @@
  sorcery_lifestyle_desc: "Concéntrese en los poderes que provienen de la magia lineal."
  sorcery_lifestyle_highlight_desc: "Por tu místico o brujo [trait|E], ganas #P [GetPlayer.Custom('GetEducationLifestylePercentageBoost')]#! más [experience|E] en este Estilo de Vida."
  monthly_sorcery_lifestyle_xp_gain_mult: "Brujería mensual [lifestyle|E] [experience|E]"
+  
+ theurgy_lifestyle_name: "Teurgia" #NT!
+ theurgy_lifestyle_desc: "Concéntrese en los poderes que provienen de la magia de la iglesia." #NT!
+ theurgy_lifestyle_highlight_desc: "Gracias a tu [true_faith|E], ganas #P 50%#! más [experience|E] en este Estilo de Vida." #NT!
+ monthly_theurgy_lifestyle_xp_gain_mult: "Teurgia mensual [lifestyle|E] [experience|E]" #NT!
   
  psi_focus: "Enfoque psi"
  psi_focus_modifier: "[GetFocus('psi_focus').GetName]"
@@ -61,116 +69,638 @@
  TARGET_GAINS_A_SORCERY_LIFESTYLE_PERKPOINT: "[CHARACTER.GetShortUIName] gana $VALUE|V0$ [sorcery_lifestyle|E] [perk|E] Desbloquea"
  TARGET_GAINED_A_SORCERY_LIFESTYLE_PERKPOINT: "[CHARACTER.GetShortUIName] ganado $VALUE|V0$ [sorcery_lifestyle|E] [perk|E] Desbloquear"
   
+ GAINS_THEURGY_LIFESTYLE_XP: "Ganancias $VALUE|V0$ [theurgy_lifestyle|E] Experiencia" #NT!
+ GAINED_THEURGY_LIFESTYLE_XP: "Obtuvo $VALUE|V0$ [theurgy_lifestyle|E] Experiencia" #NT!
+ I_GAIN_THEURGY_LIFESTYLE_XP: "Obtienes $VALUE|V0$ [theurgy_lifestyle|E] de experiencia" #NT!
+ I_GAINED_THEURGY_LIFESTYLE_XP: "Ganaste $VALUE|V0$ [theurgy_lifestyle|E] Experiencia" #NT!
+ TARGET_GAINS_THEURGY_LIFESTYLE_XP: "[CHARACTER.GetShortUIName] gana $VALUE|V0$ [theurgy_lifestyle|E] experiencia" #NT!
+ TARGET_GAINED_THEURGY_LIFESTYLE_XP: "[CHARACTER.GetShortUIName] ganado $VALUE|V0$ [theurgy_lifestyle|E] Experiencia" #NT!
+  
+ GAINS_A_THEURGY_LIFESTYLE_PERKPOINT: "Ganancias $VALUE|V0$ [theurgy_lifestyle|E] [perk|E] Desbloquear" #NT!
+ GAINED_A_THEURGY_LIFESTYLE_PERKPOINT: "Obtenido $VALUE|V0$ [theurgy_lifestyle|E] [perk|E] Desbloquear" #NT!
+ I_GAIN_A_THEURGY_LIFESTYLE_PERKPOINT: "Obtienes $VALUE|V0$ [theurgy_lifestyle|E] [perk|E] Desbloquear" #NT!
+ I_GAINED_A_THEURGY_LIFESTYLE_PERKPOINT: "Ganaste $VALUE|V0$ [theurgy_lifestyle|E] [perk|E] Desbloquear" #NT!
+ TARGET_GAINS_A_THEURGY_LIFESTYLE_PERKPOINT: "[CHARACTER.GetShortUIName] gana $VALUE|V0$ [theurgy_lifestyle|E] [perk|E] Desbloquea" #NT!
+ TARGET_GAINED_A_THEURGY_LIFESTYLE_PERKPOINT: "[CHARACTER.GetShortUIName] ganado $VALUE|V0$ [theurgy_lifestyle|E] [perk|E] Desbloquear" #NT!
+  
  PSI_LIFESTYLE_PERK_POINTS_TRIGGER: "Puntos de beneficio del estilo de vida Psi: $NUM|V0$"
  SORCERY_LIFESTYLE_PERK_POINTS_TRIGGER: "Puntos de beneficio del estilo de vida de brujería: $NUM|V0$"
+ THEURGY_LIFESTYLE_PERK_POINTS_TRIGGER: "Puntos de beneficio del estilo de vida Theurgia: $NUM|V0$" #NT!
   
- NOT_has_sorcerer_trait: "@warning_icon!#X Eres #bold no#! un [GetTrait('sorcerer').GetName( GetPlayer )]#!"
- NOT_has_theurgist_trait: "@warning_icon!#X Tú tienes #bold no#! tienes [trait|E]: [GetTrait('theurgist').GetName( GetPlayer )]#!"
+ animal_psi_visible: "Psi animal" #NT!
+ anti_psi_visible: "Escudos antipsicóticos/mentales" #NT!
+ astral_projection_visible: "Proyección astral" #NT!
+ biocontrol_visible: "Control biológico" #NT!
+ necro_psi_visible: "Psi necrófago" #NT!
+ clairvoyance_visible: "Clarividencia" #NT!
+ cyberkinesis_visible: "Ciberquinesis" #NT!
+ cyberpathy_visible: "Ciberpatía" #NT!
+ ectoplasmic_generation_visible: "Generación ectoplasmática" #NT!
+ empathic_healing_visible: "Sanación empática" #NT!
+ psychic_healing_visible: "Curación psíquica" #NT!
+ precognition_visible: "Precognición" #NT!
+ psychic_hypnosis_visible: "Hipnosis psíquica" #NT!
+ psychic_invisibility_visible: "Invisibilidad psíquica" #NT!
+ psychic_vampirism_visible: "Vampirismo psíquico" #NT!
+ psychokinesis_visible: "Psicoquinesis" #NT!
+ psychometry_visible: "Psicometría" #NT!
+ psychoportation_visible: "Psicotransportación" #NT!
+ pyrokinesis_visible: "Piroquinesis" #NT!
+ soulstealing_visible: "Robo de almas" #NT!
+ synergy_visible: "Sinergia" #NT!
+ telepathy_visible: "Telepatía" #NT!
   
- psi_visible: "Poderes psíquicos"
+ animal_psi_1_perk_name: "Comunicación" #NT!
+ animal_psi_2_perk_name: "Dominio" #NT!
+ animal_psi_3_perk_name: "Comunicación de masas" #NT!
+ animal_psi_4_perk_name: "Enlace mental" #NT!
+ animal_psi_5_perk_name: "Dominación" #NT!
   
- animal_psi_perk_name: "Psi animal"
- anti_psi_perk_name: "Antipsicópata"
- astral_projection_perk_name: "Proyección astral"
- biocontrol_perk_name: "Control biológico"
- psychic_clairvoyance_perk_name: "Clarividencia"
- cyberkinesis_perk_name: "Tejeduría quinesis"
- cyberpathy_perk_name: "Tejepatía"
- ectoplasmic_generation_perk_name: "Generación ectoplasmática"
- empathic_healing_perk_name: "Sanación empática"
- mind_shield_perk_name: "Escudo mental"
- necro_psi_perk_name: "Necropsia"
- precognition_perk_name: "Precognición"
- psychic_healing_perk_name: "Curación psíquica"
- psychic_hypnosis_perk_name: "Hipnosis psíquica"
- psychic_invisibility_perk_name: "Invisibilidad psíquica"
- psychic_vampirism_perk_name: "Vampirismo psíquico"
- psychokinesis_perk_name: "Psicoquinesis"
- psychometry_perk_name: "Psicometría"
- psychoportation_perk_name: "Psicotransportación"
- pyrokinesis_perk_name: "Piroquinesis"
- soulstealing_perk_name: "Robo de almas"
- synergy_perk_name: "Sinergia"
- psychic_telepathy_perk_name: "Telepatía"
+ ANIMAL_PSI_1_PERK_EFFECT: "Como [character_interaction|E], acelera los planes (25 % de probabilidad).\n#weak El psíquico puede leer las intenciones y deseos básicos del animal que tiene delante. Los poderes afectan a los mamíferos superiores.\nLa psi animal es la capacidad de comunicarse con los animales. Cuanto más inteligente o entrenado sea el animal, más fácil será darle órdenes. #!" #NT!
+ ANIMAL_PSI_2_PERK_EFFECT: "[GetPerk('animal_psi_1_perk').GetName( GetNullCharacter )]'s [character_interaction|E], aumento del 25% al ​​50%\n#weak El psíquico puede darle al animal una orden fácil de cumplir. El animal no tiene obligación de hacerlo.#!" #NT!
+ ANIMAL_PSI_3_PERK_EFFECT: "Como [character_interaction|E], te permite obtener una mascota.\nComo [character_interaction|E], te permite llamar a tu mascota a la guerra.\n[character_interaction|E] de [GetPerk('animal_psi_1_perk').GetName( GetNullCharacter )], mejora del 50 % al 75 %\nDesbloquea muchos [POD_animals_maa|E] [men_at_arms|E]\n#weak El psíquico obtiene una comprensión instintiva de lo que quiere el animal. Puede comunicarse con varios animales a la vez o dar a un solo animal una orden más compleja.#!" #NT!
+ ANIMAL_PSI_4_PERK_EFFECT: "Desbloquea Cambio de forma [character_interaction|E].\nDesbloquea opciones de cambio de forma de animales.\n[GetPerk('animal_psi_1_perk').GetName( GetNullCharacter )]'s [character_interaction|E], mejora del 75% al ​​100%\n#weak El psíquico puede conectar su mente con un animal, viendo a través de sus ojos y usando sus sentidos como propios.#!" #NT!
+ ANIMAL_PSI_5_PERK_EFFECT: "Como [character_interaction|E], invoca una plaga de ratas sobre la capital del objetivo con una pequeña posibilidad de generar una epidemia.\n#weak El psíquico puede obtener control total sobre un animal, permitiendo que su mente lo siga mientras realiza la tarea que se le asignó.#!" #NT!
   
- ANIMAL_PSI_PERK_EFFECT: "Como [character_interaction|E], te permite obtener una mascota. Como [character_interaction|E], te permite llamar a tu mascota a la guerra. Puede reclutar varios tipos de animales como [men_at_arms|E]. #F Animal Psi es la habilidad de contactar animales. Cuanto más inteligente o entrenado sea el animal, más fácil será darle órdenes. El psíquico necesita una línea de visión clara hacia el animal en cuestión y debe hacer ruidos correspondientes al animal. #!"
- ANTI_PSI_PERK_EFFECT: "Inmune a los poderes psíquicos.\n#F Anti Psi es la rara habilidad de apagar a otros psíquicos [numina|E]. Si bien es inútil contra los dones Garou o las disciplinas vampíricas, por alguna razón proporciona una protección limitada contra la Esfera Mental. Anti Psi está constantemente activo y rodea activamente al psíquico en todo momento.#!"
- ASTRAL_PROJECTION_PERK_EFFECT: "Obtén acceso a [astral_reaches|E] y [deep_umbra|E].\n#F El psíquico puede separar su espíritu de su cuerpo y vagar por el reino astral. Si bien no puede afectar el mundo real en este estado, aún puede usar fenómenos psíquicos. Algunos han informado que escuchan las voces de otras entidades y varios psíquicos que usaban esta habilidad se han perdido, sus espíritus vagando por dimensiones extrañas lejos del Reino de Gaia.#!"
- BIOCONTROL_PERK_EFFECT: "Permite usar Psi Heal [character_interaction|E] en ti mismo.\n#F El psíquico puede controlar su propio cuerpo.#!"
- PSYCHIC_CLAIRVOYANCE_PERK_EFFECT: "#F El psíquico puede expulsar sus sentidos mientras mantiene su conciencia dentro de su cuerpo. Cuanto más familiarizado esté el psíquico con el lugar o la persona que observa, más fácil le resultará.#!"
- CYBERKINESIS_PERK_EFFECT: "#F Weaverkinesis permite a su usuario tomar el control de varios dispositivos y objetos, doblándolos a su voluntad a distancia.#!"
- CYBERPATHY_PERK_EFFECT: "#F Weaverpathy permite a su usuario leer la estructura interna de varios dispositivos u objetos similares.#!"
- ECTOPLASMIC_GENERATION_PERK_EFFECT: "Permite forjar el alma de un [GetTrait('wraith').GetName( GetNullCharacter )] encarcelado sin necesidad de atar o [GetCourtPositionType('artificer_journeymen_court_position').GetName()].\n#F El psíquico puede crear plasma como una sustancia pegajosa que se evapora después de varios minutos y vuelve al [underworld|E]. El plasma es sólido para los espectros en el [shadowlands|E].#!"
- EMPATHIC_HEALING_PERK_EFFECT: "Bonificación a Curación Psíquica [character_interaction|E], permite curar daño mental.\n#F El psíquico puede establecer un vínculo empático que le permite influir en el proceso de curación de otra persona. Esto se extiende también a las dolencias psíquicas. El psíquico asume estas heridas y tiene que curarlas a un ritmo normal.#!"
- MIND_SHIELD_PERK_EFFECT: "Inmune a las intrusiones mentales hostiles. [character_interaction|E].\n#F El psíquico puede erigir defensas mentales contra intrusiones sobrenaturales. Esto incluye hechizos de mago, disciplinas vampíricas, trucos de los cambiantes y otras habilidades basadas en la mente. Este poder no tiene habilidades individuales. En cambio, sus niveles solo aumentan la dificultad para que un intruso penetre en la mente del psíquico.#!"
- NECRO_PSI_PERK_EFFECT: "Permite interactuar con un ser de la Umbra cuando estás en el Mundo Material.\nDesbloquea [marked_for_return_interaction|E].\nDesbloquea [bind_wraith_interaction|E].\nDesbloquea [command_wraith_interaction|E].\nNúmero máximo de espectros atados: #P +1#!.\n#F Necro-Psi, también llamada Canalización, es una habilidad que permite a un psíquico contactar con los fantasmas de los muertos. Los muertos no tienen ninguna obligación de reaccionar a estos intentos de comunicación y, de hecho, pueden ser hostiles. El psíquico también puede recurrir a sus habilidades por sí mismo.#!"
- PRECOGNITION_PERK_EFFECT: "Recibirás una notificación si alguien intenta asesinar a tu amigo o familiar. Recibirás una notificación si alguien intenta seducir a tu amante o consorte. Tu prisionero tiene menos posibilidades de escapar de tu prisión. #F El psíquico puede obtener vislumbres del giro más probable de los acontecimientos y, a veces, incluso ver el futuro. #!"
- PSYCHIC_HEALING_PERK_EFFECT: "Permite usar Psi Heal [character_interaction|E] en otros personajes.\n#F El psíquico puede curar heridas y otras lesiones con el poder de su mente.#!"
- PSYCHIC_HYPNOSIS_PERK_EFFECT: "Como [character_interaction|E], te permite obtener una bonificación de opinión del objetivo.\n#F El psíquico puede implantar órdenes y sugerencias en su objetivo enviándolos a un estado de trance y luego hipnotizándolos.#!"
- PSYCHIC_INVISIBILITY_PERK_EFFECT: "#F Similar a la Disciplina vampírica de Ofuscar, el psíquico puede enmascarar su presencia, sin registrarse ante los ojos de los espectadores. Algunos lo comparan con una especie de hipnosis colectiva. Las cámaras de vídeo siguen registrando su presencia con normalidad.#!"
- PSYCHIC_VAMPIRISM_PERK_EFFECT: "Como [character_interaction|E], te permite reducir el estrés o la pérdida de salud que provoca el drenar prisionero.\n#F El psíquico puede extraer emociones y, en algunos casos, incluso fuerza vital de un objetivo para su propio uso. La experiencia resultante es una euforia estimulante que puede hacer que el psíquico se vuelva dependiente rápidamente.#!"
- PSYCHOKINESIS_PERK_EFFECT: "#F La psicoquinesis, también llamada telequinesis, permite a un psíquico mover objetos sin tocarlos. Mientras mantenga el control sobre el objeto que levita, el psíquico puede interactuar con él de cualquier forma en que lo haría normalmente.#!"
- PSYCHOMETRY_PERK_EFFECT: "Desbloquea el [buy_artifact_claim_interaction|E].\n[buy_claim_interaction|E] y [buy_artifact_claim_interaction|E] Coste: #P -50%#!\n#F A través del tacto, el psíquico puede aprender algo sobre un objeto y las personas que interactuaron con él en el pasado. Cuanto más fuerte sea la resonancia emocional, más fácil será leerla.#!"
- PSYCHOPORTATION_PERK_EFFECT: "Como [character_interaction|E], te permite teletransportar a tu ejército a la ubicación de tu objetivo, o teletransportarte a tu próximo destino cuando viajas.\n#F Usando su mente, el psíquico puede teletransportarse por una corta distancia.#!"
- PYROKINESIS_PERK_EFFECT: "#F El psíquico puede invocar fuego. No tiene control ni inmunidad contra el fuego invocado y, por lo tanto, debe tener mucho cuidado de no quemarse.#!"
- SOULSTEALING_PERK_EFFECT: "Como [character_interaction|E], te permite obtener [lifestyle|E] [experience|E] de drenar prisionero.\n#F De manera similar al vampirismo psíquico, el robo de almas absorbe la esencia de su objetivo para fortalecer al psíquico. Este poder funciona contra seres sobrenaturales cuya alma tiene un aspecto más oscuro, como una Sombra o una Bestia, pero esa parte contraatacará y a menudo dañará la psique del psíquico ofensor.#!"
- SYNERGY_PERK_EFFECT: "Aumenta la probabilidad de éxito de Psi [character_interaction|E] por cada [GetTrait('psychic').GetName( GetNullCharacter )] [courtier|E] #Weak (máximo 10)#!.\n#F Un talento increíblemente raro, Sinergia permite a un psíquico vincularse con otros psíquicos para formar una entidad gestalt que combina varios de sus poderes. El tacto es necesario para formar ese vínculo.#!"
- PSYCHIC_TELEPATHY_PERK_EFFECT: "Como [character_interaction|E], te permite obtener un gancho débil del objetivo.\n#F La telepatía es el talento de dominar la mente de otro con la del psíquico.#!"
+ anti_psi_1_perk_name: "Escudos antipsicóticos/mentales 1" #NT!
+ anti_psi_2_perk_name: "Escudos antipsicóticos/mentales 2" #NT!
+ anti_psi_3_perk_name: "Escudos antipsicóticos/mentales 3" #NT!
+ anti_psi_4_perk_name: "Escudos antipsicóticos/mentales 4" #NT!
+ anti_psi_5_perk_name: "Escudos antipsicóticos/mentales 5" #NT!
+  
+ ANTI_PSI_1_PERK_EFFECT: "Posibilidad de defenderse contra efectos que alteran la mente +10\nAumenta el costo de usar en tu contra cualquier [GetTrait('psychic').GetName( GetPlayer )] [character_interaction|E] en un 25%\n#weak Anti Psi es la rara habilidad de apagar otros numina psíquicos.\nEl psíquico puede erigir defensas mentales contra intrusiones sobrenaturales.\nEl psíquico suprime otras habilidades psíquicas en un radio de cinco metros alrededor del usuario#!" #NT!
+ ANTI_PSI_2_PERK_EFFECT: "Posibilidad de defenderse contra efectos que alteran la mente +10\nAumenta el costo de usar en tu contra cualquier [GetTrait('psychic').GetName( GetPlayer )] [character_interaction|E] en un 25%\n#weak El psíquico suprime otras habilidades psíquicas en un radio de diez metros alrededor del usuario#!" #NT!
+ ANTI_PSI_3_PERK_EFFECT: "Posibilidad de defenderse contra efectos que alteran la mente +10\nAumenta el costo de usar en tu contra cualquier [GetTrait('psychic').GetName( GetPlayer )] [character_interaction|E] en un 25%\n#weak El psíquico suprime otras habilidades psíquicas en un radio de quince metros alrededor del usuario#!" #NT!
+ ANTI_PSI_4_PERK_EFFECT: "Posibilidad de defenderse contra efectos que alteran la mente +10\nInmunidad contra cualquier [GetTrait('psychic').GetName( GetPlayer )] [character_interaction|E]\n#weak El psíquico suprime otras habilidades psíquicas en un radio de veinte metros alrededor del usuario#!" #NT!
+ ANTI_PSI_5_PERK_EFFECT: "Posibilidad de defenderse contra efectos que alteran la mente +10\nFuertes defensas mentales\n#weak El psíquico suprime otras habilidades psíquicas en un radio de veinticinco metros alrededor del usuario#!" #NT!
+  
+ astral_projection_1_perk_name: "Proyección astral 1" #NT!
+ astral_projection_2_perk_name: "Proyección astral 2" #NT!
+ astral_projection_3_perk_name: "Proyección astral 3" #NT!
+ astral_projection_4_perk_name: "Proyección astral 4" #NT!
+ astral_projection_5_perk_name: "Proyección astral 5" #NT!
+  
+ ASTRAL_PROJECTION_1_PERK_EFFECT: "Obtén acceso a [astral_reaches|E] y [deep_umbra|E]\n#weak El psíquico puede separar su espíritu de su cuerpo y vagar por el reino astral.\nEl psíquico puede trasladar sus sentidos al espacio astral, percibiendo el reino como superpuesto al mundo mortal.#!" #NT!
+ ASTRAL_PROJECTION_2_PERK_EFFECT: "Obtén acceso a [spirit_wilds|E] y [dreaming|E]\n#weak El psíquico puede abandonar su cuerpo durante unos minutos. Dentro del reino astral, está limitado a la vista.#!" #NT!
+ ASTRAL_PROJECTION_3_PERK_EFFECT: "Obtén acceso al [underworld|E]\n#weak El psíquico puede abandonar su cuerpo durante varios minutos. Dentro del reino astral, puede oír y ver y viajar rápidamente lejos de su cuerpo.#!" #NT!
+ ASTRAL_PROJECTION_4_PERK_EFFECT: "[umbra_aptitude|E]: [grace_i]#P +25%#!\n#weak El psíquico puede abandonar su cuerpo durante horas, viajando a gran velocidad lejos de él. También puede manifestarse en forma física en forma translúcida, aunque no puede comunicarse verbalmente.#!" #NT!
+ ASTRAL_PROJECTION_5_PERK_EFFECT: "[umbra_aptitude|E]: [grace_i]#P +50%#!\n#weak El psíquico puede viajar a cualquier parte del mundo mientras está en el espacio astral, usar toda su gama de sentidos y puede hablar mientras está manifestado.#!" #NT!
+  
+ biocontrol_1_perk_name: "Autocontrol" #NT!
+ biocontrol_2_perk_name: "Autosanación" #NT!
+ biocontrol_3_perk_name: "Fuerza histérica" #NT!
+ biocontrol_4_perk_name: "Ignorar la respuesta al dolor" #NT!
+ biocontrol_5_perk_name: "La mente sobre la materia" #NT!
+  
+ BIOCONTROL_1_PERK_EFFECT: "Desbloquea Cambio de forma [character_interaction|E].\nDesbloquea opciones cosméticas de cambio de forma.\nCada mes tiene una probabilidad de #P 33%#! de reducir el nivel de heridas en 1\n#weak El psíquico puede controlar su propio cuerpo.\nEl psíquico puede controlar funciones menores de su cuerpo, como contener la respiración, entrando en trance.#!" #NT!
+ BIOCONTROL_2_PERK_EFFECT: "Como [character_interaction|E], puede curar instantáneamente a [GetTrait('ill').GetName( GetNullCharacter )].\nAumenta la probabilidad de curación de [GetPerk('biocontrol_1_perk').GetName( GetNullCharacter )] de #N 33%#! a #P 66%#!\n#weak El psíquico puede acelerar su propio proceso de curación a través de la meditación.#!" #NT!
+ BIOCONTROL_3_PERK_EFFECT: "Como [character_interaction|E], puede curar heridas instantáneamente.\nAumenta la probabilidad de curación de [GetPerk('biocontrol_1_perk').GetName( GetNullCharacter )] de #N 66%#! a #P 100%#!\n#weak Al tomar el control de sus glándulas suprarrenales, el psíquico puede entrar en un período de mayor fuerza y ​​velocidad.#!" #NT!
+ BIOCONTROL_4_PERK_EFFECT: "Como [character_interaction|E], puede curar instantáneamente enfermedades mortales.\n#weak El psíquico puede borrar el dolor de su conciencia.#!" #NT!
+ BIOCONTROL_5_PERK_EFFECT: "Como [character_interaction|E], puede curar instantáneamente cualquier enfermedad.\n#weak El psíquico puede ordenar a sus propios latidos cardíacos que se detengan si es necesario, regular directamente su sistema inmunológico y contorsionar su cuerpo en posiciones antinaturales.#!" #NT!
+  
+ necro_psi_1_perk_name: "Psi-necrófago 1" #NT!
+ necro_psi_2_perk_name: "Psi-necrófago 2" #NT!
+ necro_psi_3_perk_name: "Psi-necrófago 3" #NT!
+ necro_psi_4_perk_name: "Psi necrófago 4" #NT!
+ necro_psi_5_perk_name: "Psi-necrófago 5" #NT!
+  
+ NECRO_PSI_1_PERK_EFFECT: "Como [character_interaction|E], puede invocar a un [GetTrait('wraith').GetName( GetNullCharacter )] con el [GetTrait('lament').GetName( GetNullCharacter )] para cortejarlo.\n#weak Necro-Psi, también llamada Canalización, es una habilidad que le permite a un psíquico contactar a los fantasmas de los muertos.\nEl psíquico puede escuchar a cualquier fantasma cercano.#!" #NT!
+ NECRO_PSI_2_PERK_EFFECT: "Permite interactuar con un ser del [umbra|E] cuando estás en el Mundo Material.\nDesbloquea [summon_wraith_on_death_interaction|E].\nDesbloquea [bind_wraith_interaction|E].\n#weak El psíquico puede comunicarse con fantasmas de la zona.#!" #NT!
+ NECRO_PSI_3_PERK_EFFECT: "Desbloquea [command_wraith_interaction|E].\nComo [character_interaction|E], puedes permitir que un espectro limitado te canalice, lo que aumenta todos los atributos en 2 mientras obtienes [GetTrait('possessed_1').GetName( GetNullCharacter )]\n#weak El psíquico puede ver dentro de [shadowlands|E].#!" #NT!
+ NECRO_PSI_4_PERK_EFFECT: "Como [character_interaction|E], puede permitir que un espectro limitado lo canalice aumentando un atributo en 2 sin ganar [GetTrait('possessed_1').GetName( GetNullCharacter )]\n#weak El psíquico se convierte en un faro para los espíritus, quienes se sienten atraídos por él. Cuando un fantasma lo posee, pueden disputarle el control.#!" #NT!
+ NECRO_PSI_5_PERK_EFFECT: "Número máximo de espectros atados: #P +2#!\nCan ser canalizado por dos espectros en lugar de uno por [GetPerk('necro_psi_3_perk').GetName( GetNullCharacter )] y [GetPerk('necro_psi_4_perk').GetName( GetNullCharacter )] [character_interaction|E]\n#weak El psíquico puede comunicarse libremente con fantasmas y canalizar dos a la vez.#!" #NT!
+  
+ clairvoyance_1_perk_name: "Clarividencia 1" #NT!
+ clairvoyance_2_perk_name: "Clarividencia 2" #NT!
+ clairvoyance_3_perk_name: "Clarividencia 3" #NT!
+ clairvoyance_4_perk_name: "Clarividencia 4" #NT!
+ clairvoyance_5_perk_name: "Clarividencia 5" #NT!
+  
+ CLAIRVOYANCE_1_PERK_EFFECT: "#weak El psíquico puede expulsar sus sentidos mientras aún mantiene su conciencia dentro de su cuerpo.\nEl psíquico ve cosas en el edificio en el que se encuentra a través de una neblina similar a un sueño.#!" #NT!
+ CLAIRVOYANCE_2_PERK_EFFECT: "#weak El psíquico puede ver eventos en un radio de cincuenta millas a su alrededor, con sonidos amortiguados y distorsionados.#!" #NT!
+ CLAIRVOYANCE_3_PERK_EFFECT: "#weak El psíquico puede ver y oír claramente a distancia, adquiriendo la capacidad de experimentar el tacto. El radio se expande a 250 millas.#!" #NT!
+ CLAIRVOYANCE_4_PERK_EFFECT: "#weak El psíquico puede experimentar el tacto, la vista y el oído, además de un vago sentido del olfato. El radio se expande hasta 2000 millas.#!" #NT!
+ CLAIRVOYANCE_5_PERK_EFFECT: "#weak El psíquico puede utilizar los cinco sentidos mientras teóricamente se proyecta por todo el mundo.#!" #NT!
+  
+ cyberkinesis_1_perk_name: "Ciberquinesis 1" #NT!
+ cyberkinesis_2_perk_name: "Ciberquinesis 2" #NT!
+ cyberkinesis_3_perk_name: "Ciberquinesis 3" #NT!
+ cyberkinesis_4_perk_name: "Ciberquinesis 4" #NT!
+ cyberkinesis_5_perk_name: "Ciberquinesis 5" #NT!
+  
+ CYBERKINESIS_1_PERK_EFFECT: "#weak Permite que un psíquico tome el control de dispositivos electrónicos.\nEl psíquico puede encender y apagar un dispositivo electrónico.#!" #NT!
+ CYBERKINESIS_2_PERK_EFFECT: "#weak El psíquico puede activar un programa en una computadora, siempre y cuando sepa que el programa está instalado. También puede operar una computadora sin tocar un teclado.#!" #NT!
+ CYBERKINESIS_3_PERK_EFFECT: "#weak El psíquico puede leer, cifrar y descifrar telepáticamente las comunicaciones electrónicas, al tiempo que les provoca el equivalente a un ataque epiléptico.#!" #NT!
+ CYBERKINESIS_4_PERK_EFFECT: "#weak El psíquico puede anular los programas de seguridad internos y operar cualquier dispositivo electrónico que se encuentre en su línea de visión.#!" #NT!
+ CYBERKINESIS_5_PERK_EFFECT: "#weak El psíquico puede reprogramar una computadora para que haga algo que ésta sea físicamente capaz de manejar.#!" #NT!
+  
+ cyberpathy_1_perk_name: "Ciberpatía 1" #NT!
+ cyberpathy_2_perk_name: "Ciberpatía 2" #NT!
+ cyberpathy_3_perk_name: "Ciberpatía 3" #NT!
+ cyberpathy_4_perk_name: "Ciberpatía 4" #NT!
+ cyberpathy_5_perk_name: "Ciberpatía 5" #NT!
+  
+ CYBERPATHY_1_PERK_EFFECT: "#weak El psíquico puede leer los datos almacenados en un dispositivo electrónico.\nEl psíquico puede aprender qué tipo de datos están almacenados en un dispositivo.#!" #NT!
+ CYBERPATHY_2_PERK_EFFECT: "#weak El psíquico puede leer archivos simples almacenados en un dispositivo.#!" #NT!
+ CYBERPATHY_3_PERK_EFFECT: "#weak El psíquico puede “copiar” un archivo en su mente y luego reproducirlo.#!" #NT!
+ CYBERPATHY_4_PERK_EFFECT: "#weak El psíquico puede acceder a dispositivos electrónicos adicionales además del que ya está conectado.#!" #NT!
+ CYBERPATHY_5_PERK_EFFECT: "#weak El psíquico puede descifrar materiales encriptados.#!" #NT!
+  
+ ectoplasmic_generation_1_perk_name: "El gran estornudo" #NT!
+ ectoplasmic_generation_2_perk_name: "Las nieblas" #NT!
+ ectoplasmic_generation_3_perk_name: "“Una niebla así piensa...”" #NT!
+ ectoplasmic_generation_4_perk_name: "Modelador de sueños" #NT!
+ ectoplasmic_generation_5_perk_name: "Tulpa" #NT!
+  
+ ECTOPLASMIC_GENERATION_1_PERK_EFFECT: "#weak El psíquico puede crear plasma como una sustancia pegajosa que se evapora después de varios minutos y regresa al inframundo.\nEl psíquico crea algunas hebras de plasma a partir de sus orificios que puede aplicar manualmente.#!" #NT!
+ ECTOPLASMIC_GENERATION_2_PERK_EFFECT: "#weak El psíquico puede atraer el plasma hacia una forma similar a la niebla.#!" #NT!
+ ECTOPLASMIC_GENERATION_3_PERK_EFFECT: "Puede crear niebla ectoplasmática [artifact|E] que es capaz de dañar a los espíritus, siendo inútil en otras circunstancias.\n#weak El psíquico puede endurecer la niebla ectoplasmática a voluntad y darle forma manualmente.#!" #NT!
+ ECTOPLASMIC_GENERATION_4_PERK_EFFECT: "Otorga a [artifact|E] creado por [GetPerk('ectoplasmic_generation_3_perk').GetName( GetNullCharacter )] un modificador adicional basado en su administración.\n#weak El psíquico puede dar forma a sus construcciones ectoplasmáticas con su mente en el momento de su creación.#!" #NT!
+ ECTOPLASMIC_GENERATION_5_PERK_EFFECT: "Otorga a [artifact|E] creado por [GetPerk('ectoplasmic_generation_3_perk').GetName( GetNullCharacter )] un modificador adicional basado en la administración.\nPuede forjar almas de espectros limitados\nObtiene acceso a la mayoría de [POD_plasmic_maa|E] [men_at_arms|E]\n#weak El psíquico puede crear una construcción inteligente rudimentaria a partir de ectoplasma que obedece su voluntad.#!" #NT!
+  
+ empathic_healing_1_perk_name: "Calmar el espíritu" #NT!
+ empathic_healing_2_perk_name: "Carne de punto" #NT!
+ empathic_healing_3_perk_name: "Reparar huesos" #NT!
+ empathic_healing_4_perk_name: "Reparación de órganos" #NT!
+ empathic_healing_5_perk_name: "Pacificar la locura" #NT!
+  
+ EMPATHIC_HEALING_1_PERK_EFFECT: "Como [character_interaction|E], permite eliminar rasgos de estrés negativos.\n#weak El psíquico puede establecer un vínculo empático que le permite influir en el proceso de curación de otra persona.\nEl psíquico puede aliviar el dolor y dolencias menores similares.#!" #NT!
+ EMPATHIC_HEALING_2_PERK_EFFECT: "Como [character_interaction|E], permite absorber rasgos de cicatriz.\n#weak El psíquico puede curar heridas superficiales.#!" #NT!
+ EMPATHIC_HEALING_3_PERK_EFFECT: "Como [character_interaction|E], permite absorber rasgos de enfermedad.\n#weak El psíquico puede curar enfermedades agudas o reparar huesos rotos.#!" #NT!
+ EMPATHIC_HEALING_4_PERK_EFFECT: "Como [character_interaction|E], permite absorber rasgos de herida.\n#weak El psíquico puede curar heridas internas.#!" #NT!
+ EMPATHIC_HEALING_5_PERK_EFFECT: "Como [character_interaction|E], permite eliminar rasgos mentales negativos.\n#weak El psíquico puede curar daños psíquicos graves, incluidos trastornos y harano.#!" #NT!
+  
+ psychic_healing_1_perk_name: "None" #NT!
+ psychic_healing_2_perk_name: "Una buena noche de sueño" #NT!
+ psychic_healing_3_perk_name: "Curación básica" #NT!
+ psychic_healing_4_perk_name: "Triaje" #NT!
+ psychic_healing_5_perk_name: "Cirugía Psíquica" #NT!
+  
+ PSYCHIC_HEALING_1_PERK_EFFECT: "#weak El psíquico puede curar heridas y otras lesiones con el poder de su mente.\nEl psíquico puede sentir lo que le falta al paciente.#!" #NT!
+ PSYCHIC_HEALING_2_PERK_EFFECT: "Como [character_interaction|E], puede otorgar a un objetivo [GetModifier('psi_treatment').GetNameWithTooltip]\n#weak El psíquico puede acelerar el proceso de curación natural de su paciente, enviándolo a un sueño después del cual se curan la mayoría de las enfermedades menores.#!" #NT!
+ PSYCHIC_HEALING_3_PERK_EFFECT: "Como [character_interaction|E], puede curar cicatrices y desfiguraciones.\nComo [character_interaction|E], puede otorgar al objetivo [GetModifier('psi_good_treatment').GetNameWithTooltip]\n#weak El psíquico puede curar heridas y desterrar enfermedades más obstinadas.#!" #NT!
+ PSYCHIC_HEALING_4_PERK_EFFECT: "Como [character_interaction|E], puede curar heridas y enfermedades.\n#weak El psíquico puede reparar huesos rotos y desterrar enfermedades más graves.#!" #NT!
+ PSYCHIC_HEALING_5_PERK_EFFECT: "Como [character_interaction|E], puede curar enfermedades y rasgos físicos negativos.#weak El psíquico puede eliminar el cáncer o las infecciones.#!" #NT!
+  
+ precognition_1_perk_name: "Intuición" #NT!
+ precognition_2_perk_name: "Conocimiento" #NT!
+ precognition_3_perk_name: "Sentido del peligro" #NT!
+ precognition_4_perk_name: "Muéstrame las cartas" #NT!
+ precognition_5_perk_name: "Visión clara" #NT!
+  
+ PRECOGNITION_1_PERK_EFFECT: "#weak El psíquico puede obtener vislumbres del giro más probable de los acontecimientos y, a veces, incluso ver el futuro.\nLa predicción del psíquico de eventos aleatorios, como una tirada de dados, se vuelve más precisa.#!" #NT!
+ PRECOGNITION_2_PERK_EFFECT: "Tus prisioneros tienen menos posibilidades de escapar de tu prisión.\n#weak El psíquico puede meditar para recibir visiones de un futuro posible. Estas visiones son vagas y metafóricas y dependen de mucha interpretación para ser útiles.#!" #NT!
+ PRECOGNITION_3_PERK_EFFECT: "Recibirás una notificación si alguien intenta asesinar a tu amigo o familiar. Recibirás una notificación si alguien intenta seducir a tu amante o consorte. #weak El psíquico puede sentir cuando está en peligro. #!" #NT!
+ PRECOGNITION_4_PERK_EFFECT: "#weak El psíquico puede ver qué reacción inmediata tendría una acción.#!" #NT!
+ PRECOGNITION_5_PERK_EFFECT: "Como [character_interaction|E], puede descubrir todos los planes hostiles que tienen como objetivo a usted y frustrar aquellos ya descubiertos.\n#weak El psíquico puede ver el futuro más probable en el momento.#!" #NT!
+  
+ psychic_hypnosis_1_perk_name: "Estado de trance" #NT!
+ psychic_hypnosis_2_perk_name: "Sugerencia de espectáculo secundario" #NT!
+ psychic_hypnosis_3_perk_name: "Acción retardada" #NT!
+ psychic_hypnosis_4_perk_name: "Trance rápido" #NT!
+ psychic_hypnosis_5_perk_name: "El mensajero del miedo" #NT!
+  
+ PSYCHIC_HYPNOSIS_1_PERK_EFFECT: "Como [character_interaction|E], puede otorgar [GetModifier('psi_hypnosis_stress_buff').GetNameWithTooltip] durante 5 años. Disponible solo si el objetivo tiene una opinión 0+ del psíquico y se encuentra en el mismo lugar.\n#weak El psíquico puede implantar órdenes y sugerencias en su objetivo enviándolo a un estado de trance y luego hipnotizándolo.\nEl psíquico puede enviar a un objetivo a un estado de trance hipnótico.#!" #NT!
+ PSYCHIC_HYPNOSIS_2_PERK_EFFECT: "En [GetPerk('psychic_hypnosis_1_perk').GetName( GetNullCharacter )] [character_interaction|E], puedes aumentar la opinión que el objetivo tiene de ti con un duelo diplomático.\n#weak El psíquico puede hacer una pequeña sugerencia mientras el objetivo está en trance.#!" #NT!
+ PSYCHIC_HYPNOSIS_3_PERK_EFFECT: "En [GetPerk('psychic_hypnosis_1_perk').GetName( GetNullCharacter )] [character_interaction|E], puede curar malos hábitos de estrés o ganar un anzuelo débil después de ganar un duelo diplomático.\n#weak El psíquico puede hacer sugerencias que permanecen incluso después de que el trance haya terminado.#!" #NT!
+ PSYCHIC_HYPNOSIS_4_PERK_EFFECT: "En [GetPerk('psychic_hypnosis_1_perk').GetName( GetNullCharacter )] [character_interaction|E], puede curar la mayoría de los problemas mentales.\nAumenta las posibilidades de ganar [GetPerk('psychic_hypnosis_1_perk').GetName( GetNullCharacter )] [character_interaction|E].\n#weak El psíquico puede enviar a un objetivo a un estado de trance con una simple mirada.#!" #NT!
+ PSYCHIC_HYPNOSIS_5_PERK_EFFECT: "Puede usar [GetPerk('psychic_hypnosis_1_perk').GetName( GetNullCharacter )] [character_interaction|E] sin que el objetivo tenga 0+ de opinión sobre usted, aumenta la posibilidad de ganar el duelo diplomático y puede mejorar la obtención de gancho por hipnosis a un gancho fuerte.\n#weak El psíquico puede programar profundamente a un objetivo mientras está en trance, incluso afectando su memoria.#!" #NT!
+  
+ psychic_invisibility_1_perk_name: "Esconder" #NT!
+ psychic_invisibility_2_perk_name: "Movimiento lento" #NT!
+ psychic_invisibility_3_perk_name: "Invisibilidad" #NT!
+ psychic_invisibility_4_perk_name: "Invisibilidad selectiva" #NT!
+ psychic_invisibility_5_perk_name: "Olvida que alguna vez me viste" #NT!
+  
+ PSYCHIC_INVISIBILITY_1_PERK_EFFECT: "#weak Similar a la Disciplina vampírica de Ofuscación, el psíquico puede enmascarar su presencia, sin registrarse a los ojos de los espectadores.\nEl psíquico no es notado mientras permanezca completamente quieto.#!" #NT!
+ PSYCHIC_INVISIBILITY_2_PERK_EFFECT: "#weak El psíquico no se nota mientras se mueva lo suficientemente lento.#!" #NT!
+ PSYCHIC_INVISIBILITY_3_PERK_EFFECT: "#weak El psíquico puede volverse invisible y moverse siempre y cuando no lo miren cuando activa ese poder.#!" #NT!
+ PSYCHIC_INVISIBILITY_4_PERK_EFFECT: "#weak El psíquico puede hacer que ciertas personas lo vean mientras está encapuchado.#!" #NT!
+ PSYCHIC_INVISIBILITY_5_PERK_EFFECT: "Como [character_interaction|E], puede ralentizar en 2 etapas cualquier plan hostil que tenga como objetivo a alguien.\n#weak El psíquico puede volverse invisible justo en frente de alguien.#!" #NT!
+  
+ psychic_vampirism_1_perk_name: "Correr" #NT!
+ psychic_vampirism_2_perk_name: "Socavando la voluntad" #NT!
+ psychic_vampirism_3_perk_name: "Transferencia de energía" #NT!
+ psychic_vampirism_4_perk_name: "Sanguijuela de vida" #NT!
+ psychic_vampirism_5_perk_name: "Vórtice emocional" #NT!
+  
+ PSYCHIC_VAMPIRISM_1_PERK_EFFECT: "Como [character_interaction|E], puedes 'comer' las emociones de alguien, disminuyendo el estrés (esto significa que puedes apuntar a alguien con 0 estrés o un colapso mental de nivel 3) siempre que esté en el mismo lugar que tú.\n#weak El psíquico puede drenar de más de una persona.\nEl psíquico puede drenar emociones fuertes para experimentarlas él mismo.#!" #NT!
+ PSYCHIC_VAMPIRISM_2_PERK_EFFECT: "Aumenta la cantidad de estrés perdido y cambia los requisitos para tener 0 estrés o una ruptura de nivel 2 en [GetPerk('psychic_vampirism_1_perk').GetName( GetNullCharacter )] [character_interaction|E].\n#weak El psíquico puede drenar la Fuerza de Voluntad de un objetivo para reponer la suya.#!" #NT!
+ PSYCHIC_VAMPIRISM_3_PERK_EFFECT: "En [GetPerk('psychic_vampirism_1_perk').GetName( GetNullCharacter )] [character_interaction|E], además de perder estrés, se acumula [GetModifier('psi_vampirism_health').GetNameWithTooltip] durante 20 años.\n#weak El psíquico puede drenar la fuerza vital para curar heridas menores.#!" #NT!
+ PSYCHIC_VAMPIRISM_4_PERK_EFFECT: "Reduce el tiempo de recuperación de [GetPerk('psychic_vampirism_1_perk').GetName( GetNullCharacter )] [character_interaction|E] de 5 a 2 años.#weak El psíquico puede drenar aún más fuerza vital para curar heridas importantes.#!" #NT!
+ PSYCHIC_VAMPIRISM_5_PERK_EFFECT: "Elimina el requisito de estar en el mismo lugar, funciona solo si el objetivo ya fue absorbido con [GetPerk('psychic_vampirism_1_perk').GetName( GetNullCharacter )] [character_interaction|E].\n#weak El psíquico puede drenar de más de una persona.#!" #NT!
+  
+ psychokinesis_1_perk_name: "Psicoquinesis 1" #NT!
+ psychokinesis_2_perk_name: "Psicoquinesis 2" #NT!
+ psychokinesis_3_perk_name: "Psicoquinesis 3" #NT!
+ psychokinesis_4_perk_name: "Psicoquinesis 4" #NT!
+ psychokinesis_5_perk_name: "Psicoquinesis 5" #NT!
+  
+ PSYCHOKINESIS_1_PERK_EFFECT: "#weak La psicoquinesis, también llamada telequinesis, permite a un psíquico mover objetos sin tocarlos.\nEl psíquico puede levantar medio kilogramo.#!" #NT!
+ PSYCHOKINESIS_2_PERK_EFFECT: "#weak El psíquico puede levantar 10 kilogramos.#!" #NT!
+ PSYCHOKINESIS_3_PERK_EFFECT: "#weak El psíquico puede levantar 100 kilogramos.#!" #NT!
+ PSYCHOKINESIS_4_PERK_EFFECT: "#weak El psíquico puede levantar 250 kilogramos.#!" #NT!
+ PSYCHOKINESIS_5_PERK_EFFECT: "#weak El psíquico puede levantar 500 kilogramos.#!" #NT!
+  
+ psychometry_1_perk_name: "Psicometría 1" #NT!
+ psychometry_2_perk_name: "Psicometría 2" #NT!
+ psychometry_3_perk_name: "Psicometría 3" #NT!
+ psychometry_4_perk_name: "Psicometría 4" #NT!
+ psychometry_5_perk_name: "Psicometría 5" #NT!
+  
+ PSYCHOMETRY_1_PERK_EFFECT: "Desbloquea el [buy_artifact_claim_interaction|E].\n[buy_claim_interaction|E] y [buy_artifact_claim_interaction|E] Costo: #P -10%#!\n#weak A través del tacto, el psíquico puede aprender algo sobre un objeto y las personas que interactuaron con él en el pasado.\nEl psíquico puede leer la resonancia psíquica general de un objeto para obtener una imagen aproximada.#!" #NT!
+ PSYCHOMETRY_2_PERK_EFFECT: "[buy_claim_interaction|E] y [buy_artifact_claim_interaction|E] Costo: #P -10%#!\n#weak El psíquico puede ver eventos que ocurrieron cerca del objeto en las últimas 24 horas.#!" #NT!
+ PSYCHOMETRY_3_PERK_EFFECT: "[buy_claim_interaction|E] y [buy_artifact_claim_interaction|E] Coste: #P -10%#!\n#weak El psíquico puede descubrir y comprender la historia completa del objeto o lugar.#!" #NT!
+ PSYCHOMETRY_4_PERK_EFFECT: "[buy_claim_interaction|E] y [buy_artifact_claim_interaction|E] Coste: #P -10%#!\n#weak El psíquico puede sintonizarse con un objeto, lo que le permite alinear su visión con la ubicación del dueño del objeto.#!" #NT!
+ PSYCHOMETRY_5_PERK_EFFECT: "[buy_claim_interaction|E] y [buy_artifact_claim_interaction|E] Costo: #P -10%#!\nAs a [character_interaction|E], puede invocar/robar [artifact|E] reclamado en un duelo de mayordomía.\n#weak El psíquico obtiene una imagen clara de cualquier evento resonante que tuvo lugar cerca del objeto y puede seguir su rastro psíquico.#!" #NT!
+  
+ psychoportation_1_perk_name: "Salto corto" #NT!
+ psychoportation_2_perk_name: "Salto simple" #NT!
+ psychoportation_3_perk_name: "Salto de longitud" #NT!
+ psychoportation_4_perk_name: "Salto de gran longitud" #NT!
+ psychoportation_5_perk_name: "Salto a ciegas" #NT!
+  
+ PSYCHOPORTATION_1_PERK_EFFECT: "#weak Usando su mente, el psíquico puede teletransportarse a una distancia corta.\nEl psíquico puede teletransportarse a una distancia corta a la vista de los ojos.#!" #NT!
+ PSYCHOPORTATION_2_PERK_EFFECT: "Como [character_interaction|E], te permite teletransportar a tu ejército a la ubicación de tu objetivo o teletransportarte a tu próximo destino cuando viajas. Con un límite de distancia de un reino pequeño (por ejemplo: Gales de arriba a abajo).\n#weak El psíquico puede teletransportarse a distancias mayores.#!" #NT!
+ PSYCHOPORTATION_3_PERK_EFFECT: "Aumenta el límite de distancia a un reino grande (ejemplo: Francia de arriba a abajo) de Psicotransportación [character_interaction|E]\n#weak El psíquico puede teletransportarse a grandes distancias.#!" #NT!
+ PSYCHOPORTATION_4_PERK_EFFECT: "Aumenta el límite de distancia a un reino masivo (ejemplo: Sacro Imperio Romano de izquierda a derecha) de Psicotransportación [character_interaction|E]\n#weak El psíquico puede teletransportarse a distancias aún mayores.#!" #NT!
+ PSYCHOPORTATION_5_PERK_EFFECT: "Eliminar el límite de distancia de la psicotransportación [character_interaction|E]\n#weak El psíquico ya no necesita ver el destino para su teletransportación.#!" #NT!
+  
+ pyrokinesis_1_perk_name: "Partidos" #NT!
+ pyrokinesis_2_perk_name: "Encender" #NT!
+ pyrokinesis_3_perk_name: "Fuegos artificiales" #NT!
+ pyrokinesis_4_perk_name: "Pirotécnica" #NT!
+ pyrokinesis_5_perk_name: "Infierno" #NT!
+  
+ PYROKINESIS_1_PERK_EFFECT: "#weak El psíquico puede invocar fuego.\nEl psíquico puede producir una pequeña llama que es suficiente para encender una vela o un cigarrillo.#!" #NT!
+ PYROKINESIS_2_PERK_EFFECT: "#weak El psíquico puede provocar que los objetos inflamables se quemen.#!" #NT!
+ PYROKINESIS_3_PERK_EFFECT: "#weak El psíquico puede producir pequeñas llamaradas de la nada.#!" #NT!
+ PYROKINESIS_4_PERK_EFFECT: "#weak El psíquico puede dar una dirección general a las llamas invocadas.#!" #NT!
+ PYROKINESIS_5_PERK_EFFECT: "#weak El psíquico puede provocar brotes de llama más grandes y dirigirlos a voluntad.#!" #NT!
+  
+ soulstealing_1_perk_name: "Invasión de sueños" #NT!
+ soulstealing_2_perk_name: "Voluntad de socavar" #NT!
+ soulstealing_3_perk_name: "Esencia vital de drenaje" #NT!
+ soulstealing_4_perk_name: "Cambiar la vida" #NT!
+ soulstealing_5_perk_name: "Robo de Gnosis" #NT!
+  
+ SOULSTEALING_1_PERK_EFFECT: "#weak El robo de almas absorbe la esencia de su objetivo para fortalecer al psíquico.\nEl psíquico puede ingresar al paisaje onírico de un objetivo.#!" #NT!
+ SOULSTEALING_2_PERK_EFFECT: "Como [character_interaction|E], te permite perder estrés usando al prisionero.\n#weak El psíquico puede robar Fuerza de Voluntad temporal del objetivo.#!" #NT!
+ SOULSTEALING_3_PERK_EFFECT: "Como [character_interaction|E], te permite obtener sangre del prisionero.\n#weak El psíquico puede robar fuerza vital del objetivo.#!" #NT!
+ SOULSTEALING_4_PERK_EFFECT: "Como [character_interaction|E], te permite curar heridas usando prisioneros.\n#weak El psíquico puede transferir la fuerza vital robada a otro objetivo.#!" #NT!
+ SOULSTEALING_5_PERK_EFFECT: "Como [character_interaction|E], te permite obtener combustible de poder del prisionero.\n#weak El psíquico puede robar Gnosis de un objetivo.#!" #NT!
+  
+ synergy_1_perk_name: "Sentido psíquico" #NT!
+ synergy_2_perk_name: "Compartir voluntad" #NT!
+ synergy_3_perk_name: "Efecto de grupo" #NT!
+ synergy_4_perk_name: "Compartir poderes" #NT!
+ synergy_5_perk_name: "Gestalt de poder" #NT!
+  
+ SYNERGY_1_PERK_EFFECT: "Aumenta la probabilidad de éxito de [GetTrait('psychic').GetName( GetPlayer )] [character_interaction|E] contra [GetTrait('psychic').GetName( GetPlayer )] en 10.\n#weak Un talento increíblemente raro, Sinergia permite a un psíquico vincularse con otros psíquicos para formar una entidad gestalt que combina varios de sus poderes.\nEl psíquico puede sentir a otros psíquicos.#!" #NT!
+ SYNERGY_2_PERK_EFFECT: "Por cada [GetTrait('psychic').GetName( GetPlayer )] en tu [coterie|E] obtén [GetModifier('psi_synergy_coterie_stress_buff').GetNameWithTooltip].\n#weak El psíquico puede establecer un vínculo psíquico básico para compartir la fuerza de voluntad con otro psíquico.#!" #NT!
+ SYNERGY_3_PERK_EFFECT: "Por cada [GetTrait('psychic').GetName( GetPlayer )] en tu [coterie|E] y en el mismo lugar Aumenta la probabilidad de éxito de [GetTrait('psychic').GetName( GetPlayer )] [character_interaction|E] en 10 con un límite de 1 [GetTrait('psychic').GetName( GetPlayer )] en [coterie|E].\n#weak Los psíquicos dentro de un vínculo sinérgico pueden combinar sus mentes al intentar una acción.#!" #NT!
+ SYNERGY_4_PERK_EFFECT: "Aumenta el límite de [GetTrait('psychic').GetName( GetPlayer )] en [coterie|E] de [GetPerk('synergy_3_perk').GetName( GetNullCharacter )] en 2.\n#weak Los psíquicos dentro de un vínculo sinérgico pueden usar múltiples habilidades psíquicas a la vez.#!" #NT!
+ SYNERGY_5_PERK_EFFECT: "Eliminar el límite de [GetTrait('psychic').GetName( GetPlayer )] en [coterie|E] de [GetPerk('synergy_3_perk').GetName( GetNullCharacter )]\n#weak Los psíquicos dentro de un vínculo sinérgico pueden combinar sus poderes psíquicos en un solo poder compartido.#!" #NT!
+  
+ telepathy_1_perk_name: "Telepatía 1" #NT!
+ telepathy_2_perk_name: "Telepatía 2" #NT!
+ telepathy_3_perk_name: "Telepatía 3" #NT!
+ telepathy_4_perk_name: "Telepatía 4" #NT!
+ telepathy_5_perk_name: "Telepatía 5" #NT!
+  
+ TELEPATHY_1_PERK_EFFECT: "#weak La telepatía es el talento de dominar la mente de otra persona con la del psíquico.\nEl psíquico puede percibir las emociones básicas de un objetivo, enviarle un impulso menor o hacer que se estremezca.#!" #NT!
+ TELEPATHY_2_PERK_EFFECT: "#weak El psíquico puede leer pensamientos superficiales, transmitir una sola idea o provocar una noción breve.#!" #NT!
+ TELEPATHY_3_PERK_EFFECT: "Como [character_interaction|E], inicia un duelo diplomático contra el objetivo para obtener un gancho débil sobre ellos.\n#weak El psíquico puede leer recuerdos recientes o planes futuros, transmitir emociones o ideas complejas o provocar una acción inusual.#!" #NT!
+ TELEPATHY_4_PERK_EFFECT: "Nueva opción para Telepatía [character_interaction|E] para obtener un gancho fuerte en lugar de uno débil.\n#weak El psíquico puede leer pensamientos profundos, enviar varias oraciones o tomar temporalmente el control sobre el cuerpo del objetivo.#!" #NT!
+ TELEPATHY_5_PERK_EFFECT: "Nueva opción para Telepatía [character_interaction|E] para obtener un gancho fuerte perpetuo.\n#weak El psíquico puede leer los secretos más profundos y subconscientes de un objetivo, mantener una conversación con él o tomar el control total de su cuerpo, incluida la reescritura de recuerdos.#!" #NT!
   
  sorcery_visible: "Caminos"
   
- alchemy_perk_name: "Alquimia"
- conjuration_perk_name: "Conjuración"
- conveyance_perk_name: "Transporte"
- cursing_perk_name: "Maldiciendo"
- divination_perk_name: "Adivinación"
- dowsing_perk_name: "Radiestesia"
- enchantment_perk_name: "Encantamiento"
- ephemera_perk_name: "Efímera"
- fascination_perk_name: "Fascinación"
- healing_perk_name: "Cicatrización"
- hellfire_perk_name: "Fuego del infierno"
- herbalism_perk_name: "Herbolario"
- mana_manipulation_perk_name: "Manipulación de maná"
- oneiromancy_perk_name: "Oniromancia"
- saturnal_manes_perk_name: "Saturnal - Melenas"
- shadowcasting_perk_name: "Proyección de sombras"
- shapeshifting_perk_name: "Cambio de forma"
- spirit_chasing_perk_name: "Persiguiendo espíritus"
- summoning_warding_binding_perk_name: "Invocación, protección y vinculación"
- weather_control_perk_name: "Control del clima"
+ SORCERY_LEVEL_6_REQUIREMENT: "@warning_icon!#X ¡Para desbloquear el nivel 6 de Hechicería debes completar su misión correspondiente mediante decisión!#!" #NT!
+ SORCERY_LEVEL_6_DISABLED: "@warning_icon!#X El nivel 6 de Hechicería está deshabilitado en las reglas del juego#!" #NT!
+ unlock_tier_6_coresponding_path: "Desbloquea el nivel 6 de la ruta correspondiente" #NT!
   
- ALCHEMY_PERK_EFFECT: "Desbloquea el nivel menor [decision|E] para convertirte en un mortal inmortal.\nComo nivel [character_interaction|E], te permite convertir a un mortal en un ser sobrenatural.\n#F El usuario utiliza ritos alquímicos para perfeccionar y combinar objetos materiales para finalmente purificar su propia alma. Las personas pueden practicarlo como una especie de química avanzada, herbolario tradicional o como una ciencia mística.#!"
- CONJURATION_PERK_EFFECT: "[buy_claim_interaction|E] y [buy_artifact_claim_interaction|E] Coste: #P -50%#!.\n#F También llamada telequinesis o aportación, Conjuración permite al usuario mover objetos previamente preparados con la fuerza de su magia.#!"
- CONVEYANCE_PERK_EFFECT: "Como [character_interaction|E], te permite teletransportar a tu ejército a la ubicación de tu objetivo o teletransportarte a tu próximo destino cuando viajas.\n#F El medio de transporte, también llamado el Camino del transporte sutil, permite al usuario viajar con la ayuda de un vehículo preparado ritualmente. En niveles más altos, el usuario evita el vehículo y se teletransporta a sí mismo en su lugar.#!"
- CURSING_PERK_EFFECT: "Como [character_interaction|E], te permite bendecir o maldecir la casa objetivo.\n#F La maldición, también llamada el Camino de la Fortuna, es el arte de aplicar maleficios y maldiciones a una persona. Este camino también puede otorgar bendiciones.#!"
- DIVINATION_PERK_EFFECT: "Recibirás una notificación si alguien intenta asesinar a tu amigo o familiar. Recibirás una notificación si alguien intenta seducir a tu amante o consorte. Tu prisionero tiene menos posibilidades de escapar de tu prisión. #F Al usar un cierto estilo de adivinación, el usuario puede ver eventos en el pasado o el futuro. #!"
- DOWSING_PERK_EFFECT: "#F La radiestesia es la práctica de localizar objetos perdidos con medios mágicos. Para ello, el usuario necesita un instrumento mágico armonizado para utilizar. Además, el radiestesista se vuelve más entusiasta para la investigación y tiene un sentido general de deducción.#!"
- ENCHANTMENT_PERK_EFFECT: "Como [character_interaction|E], te permite crear talismanes.\n#F El encantamiento, también llamado fetichismo, permite la creación de talismanes mágicos menores.#!"
- EPHEMERA_PERK_EFFECT: "Obtén acceso a [spirit_wilds|E].\n#F El Camino de lo Efímero permite al usuario interactuar con los mundos espirituales. Al convertirse en un conducto para las entidades de los Otros Mundos, quienes practican este camino a menudo se ven superados por las criaturas que viven allí.#!"
- FASCINATION_PERK_EFFECT: "#F El usuario puede hacer que un objetivo se enamore de otra persona. La magia puede lanzarse sobre el propio usuario o sobre un amuleto o algo similar para permitir que sus efectos se produzcan en otros.#!"
- HEALING_PERK_EFFECT: "Desbloquea la curación [character_interaction|E].\nComo [character_interaction|E], permite evitar que un amigo, amante, consorte, familiar, consejero o caballero muera accidentalmente.\n#F El usuario puede curar heridas, enfermedades y dolencias similares. Si bien rara vez es un tratamiento permanente, la curación a menudo al menos logra aliviar el dolor. El usuario necesita al menos un mínimo de conocimientos médicos para aplicar sus tratamientos correctamente.#!"
- HELLFIRE_PERK_EFFECT: "#F Se rumorea que el fuego del infierno es el resultado de tratos infernales y otorga a quien lo lanza poderes destructivos masivos. Aunque generalmente invoca fuego, se han observado variantes que invocan relámpagos, aguanieve, tormentas de arena, terremotos o humo. En las sociedades occidentales, el fuego del infierno suele considerarse magia negra.#!"
- HERBALISM_PERK_EFFECT: "Como [character_interaction|E], te permite elaborar pociones.\n#F De manera similar al encantamiento y la alquimia, la herboristería se ocupa de la preparación de brebajes poderosos a partir de elementos naturales. Si bien no es tan poderosa como el camino de la curación, la herboristería tiene la ventaja de estar disponible una vez creada. Sus efectos son más lentos, pero se perciben como más naturales y es menos probable que fallen una vez elaborada.#!"
- MANA_MANIPULATION_PERK_EFFECT: "#F La manipulación del maná se ocupa de lo que el usuario percibe como la materia prima de la magia: chi, maná, energía de las líneas ley y similares. A través de prácticas como el feng shui y la geomancia, el usuario aprende a aprovechar estas energías para sus propios fines.#!"
- ONEIROMANCY_PERK_EFFECT: "Obtén acceso a [dreaming|E].\n#F Con el uso de la oniromancia, el usuario puede visitar los sueños de otras personas. Con sus poderes, puede remodelarlos, desterrar pesadillas o abordar disturbios subconscientes.#!"
- SATURNAL_MANES_PERK_EFFECT: "Desbloquea [bind_wraith_interaction|E].\nDesbloquea [command_wraith_interaction|E].\nNúmero máximo de espectros atados: #P +1#!.\n#F Manes era una práctica de las Lunas Cornudas de la Sociedad Iluminada de la Luna Llorosa. Mediante el uso de ritos orgiásticos bajo la luna, el practicante invoca a los espíritus para que atiendan sus necesidades.#!"
- SHADOWCASTING_PERK_EFFECT: "#F El Camino de las Sombras, también llamado el Camino de las Sombras, se ocupa del control sobre la oscuridad. En el mundo occidental, se cree que tiene alguna relación con lo Infernal, pero no se ha proporcionado ninguna prueba definitiva.#!"
- SHAPESHIFTING_PERK_EFFECT: "Desbloquea Shapeshift [character_interaction|E].\n#F El usuario puede manipular su propia forma física. Para cambiar de forma es necesario estudiar intensamente tanto el cuerpo de los animales como el propio.#!"
- SPIRIT_CHASING_PERK_EFFECT: "Desbloquea $seek_aid_of_the_spirits_decision$ [decision|E].\n#F El usuario crea un vínculo entre él y el espíritu de un tipo de planta o animal. Al fortalecer su conexión con el espíritu, el Cazador de espíritus obtiene habilidades que reflejan el tipo elegido.#!"
- SUMMONING_WARDING_BINDING_PERK_EFFECT: "Desbloquea la invocación [character_interaction|E] para hacer que un personaje no desembarcado venga a tu corte.\n#F El complejo camino que consiste tanto en invocar, proteger y atar criaturas es uno de los más peligrosos de practicar. Con la invocación, el usuario llama a la criatura. Con la protección, se defiende de ella. Con la atadura, le exhorta a obedecer a cambio de un precio y, en niveles superiores, incluso puede ordenarle. Con el despido, hace que la criatura se vaya.#!"
- WEATHER_CONTROL_PERK_EFFECT: "Desbloquear Weathercraft [character_interaction|E].\n#F También conocido como Weathercraft, con esta ruta, el usuario manipula los patrones climáticos para su propio beneficio.#!"
+ alchemy_1_perk_name: "Alquimia 1" #NT!
+ ALCHEMY_1_PERK_EFFECT: "Descubre recetas para: [GetModifier('light_painstopper_modifier').GetNameWithTooltip], [GetModifier('small_fertility_booster_modifier').GetNameWithTooltip], [GetModifier('small_fertility_downer_modifier').GetNameWithTooltip], [GetModifier('simple_antibiotics_modifier').GetNameWithTooltip], [GetModifier('mild_poison_modifier').GetNameWithTooltip]\n#flavor El usuario utiliza ritos alquímicos para perfeccionar y combinar objetos materiales para finalmente purificar su propia alma.\nEl alquimista puede crear compuestos y sustancias que son simplemente versiones más avanzadas y potentes de sustancias químicas que ya existen. Estos compuestos no parecen mágicos de ninguna manera.#!" #NT!
+ alchemy_2_perk_name: "Alquimia 2" #NT!
+ ALCHEMY_2_PERK_EFFECT: "Descubre recetas para: [GetModifier('painstopper_modifier').GetNameWithTooltip], [GetModifier('fertility_booster_modifier').GetNameWithTooltip], [GetModifier('fertility_downer_modifier').GetNameWithTooltip], [GetModifier('antibiotics_modifier').GetNameWithTooltip], [GetModifier('dangerous_poison_modifier').GetNameWithTooltip]\n#flavor Versiones más avanzadas de lo que ya está disponible con un punto. Algunas de estas sustancias podrían permitir al bebedor superar sus límites físicos normales o acceder a sentidos más místicos, en sueños o alucinaciones.#!" #NT!
+ alchemy_3_perk_name: "Alquimia 3" #NT!
+ ALCHEMY_3_PERK_EFFECT: "Descubre recetas para: [GetModifier('potion_of_diplomacy_modifier').GetNameWithTooltip] (etc.), [GetModifier('potion_of_strength_modifier').GetNameWithTooltip], [GetModifier('deadly_poison_modifier').GetNameWithTooltip]\n#flavor El alquimista puede crear sustancias que mejoren su objetivo a niveles sobrehumanos o crear materiales que excedan las limitaciones normales (aleaciones sobrenaturalmente fuertes, etc.). Algunas de estas sustancias pueden investir temporalmente a su bebedor con alguna habilidad psíquica de bajo nivel por un período de tiempo limitado (no más de una hora aproximadamente), por ejemplo.#!" #NT!
+ alchemy_4_perk_name: "Alquimia 4" #NT!
+ ALCHEMY_4_PERK_EFFECT: "Descubre recetas para: [GetModifier('potent_potion_of_diplomacy_modifier').GetNameWithTooltip] (etc.), [GetModifier('potent_potion_of_strength_modifier').GetNameWithTooltip], [GetModifier('personal_poison_modifier').GetNameWithTooltip]\n#flavor El alquimista puede crear sustancias que mejorarán sus atributos incluso más allá de los máximos humanos normales o elementos menores con algún efecto potente.#!" #NT!
+ alchemy_5_perk_name: "Alquimia 5" #NT!
+ ALCHEMY_5_PERK_EFFECT: "Descubre recetas para: [GetModifier('philosophers_stone_modifier').GetNameWithTooltip], [GetModifier('elixir_of_diplomacy_modifier').GetNameWithTooltip] (etc.), [GetModifier('elixir_of_strength_modifier').GetNameWithTooltip], [GetModifier('elixir_of_death_modifier').GetNameWithTooltip], [GetModifier('elixir_of_potence_modifier').GetNameWithTooltip], [GetModifier('elixir_of_celebrity_modifier').GetNameWithTooltip], [GetModifier('elixir_of_fortitude_modifier').GetNameWithTooltip], [GetModifier('elixir_of_auspex_modifier').GetNameWithTooltip]\n#flavor Con este nivel de conocimiento, el alquimista puede duplicar los poderes de criaturas sobrenaturales, incluyendo Dones, Disciplinas y otras habilidades de hasta el tercer nivel. También puede duplicar los poderes innatos de estas criaturas (los poderes de los Fae, los espectros y los imbuidos no se pueden duplicar).#!" #NT!
+ alchemy_6_perk_name: "Alquimia 6" #NT!
+ ALCHEMY_6_PERK_EFFECT_SAMUEL: "Descubre recetas para: [GetModifier('elixir_immortality_modifier').GetNameWithTooltip], [GetModifier('vampire_concoction_modifier').GetNameWithTooltip], [GetModifier('kinfolk_elixir_modifier').GetNameWithTooltip], [GetModifier('kinain_elixir_modifier').GetNameWithTooltip]" #NT!
+ ALCHEMY_6_PERK_EFFECT_NOT_SAMUEL: "Descubre recetas para: [GetModifier('elixir_immortality_modifier').GetNameWithTooltip], [GetModifier('vampire_concoction_modifier').GetNameWithTooltip]" #NT!
+ ALCHEMY_6_PERK_EFFECT: "#flavor El Alquimista ha alcanzado la cima, pudiendo crear una Piedra Filosofal, volverse inmortal o transmutar un elemento en otro. En teoría, uno podría incluso crear un brebaje capaz de convertirlo en vampiro, hombre lobo u otro ser. Este nivel también es capaz de otorgarle el despertar al Alquimista.#!" #NT!
   
- theurgy_visible: "Teurgia"
+ conjuration_1_perk_name: "Conjuración 1" #NT!
+ CONJURATION_1_PERK_EFFECT: "Como [character_interaction|E] el usuario puede marcar un [artifact|E] dándole el ([GetModifier('sorcery_conjuration_mark_1_modifier').GetNameWithTooltip]) con un límite de #V 1#!\n#flavor La conjuración permite al usuario mover objetos previamente preparados con la fuerza de su magia.\nEl Conjurador puede mover un objeto pequeño dentro del rango de 10 pies por unos pocos pies.#!" #NT!
+ conjuration_2_perk_name: "Conjuración 2" #NT!
+ CONJURATION_2_PERK_EFFECT: "Mejora la marca [artifact|E] [character_interaction|E] ([GetModifier('sorcery_conjuration_mark_2_modifier').GetNameWithTooltip]) con un límite de #V 1#!\n#flavor El Conjurador puede mover objetos simples o conjurarlos desde otra ubicación dentro de un rango de hasta 15 pies.#!" #NT!
+ conjuration_3_perk_name: "Conjuración 3" #NT!
+ CONJURATION_3_PERK_EFFECT: "Mejora la nota [artifact|E] [character_interaction|E] ([GetModifier('sorcery_conjuration_mark_3_modifier').GetNameWithTooltip]) con un límite de #V 1#!\n#flavor El Conjurador puede mover objetos más grandes y complejos. Además de conjurarlos, también puede hacerlos levitar en el aire. Los objetos no pueden pesar más de 200 libras y deben estar a una distancia máxima de 25 pies.#!" #NT!
+ conjuration_4_perk_name: "Conjuración 4" #NT!
+ CONJURATION_4_PERK_EFFECT: "Mejora la nota [artifact|E] [character_interaction|E] ([GetModifier('sorcery_conjuration_mark_4_modifier').GetNameWithTooltip]) con un límite de #V 2#!\n#flavor El Conjurador puede mover objetos grandes como un piano, incluso formas de vida complejas con al menos la mitad de la masa de un ser humano. El alcance máximo es de 50 pies.#!" #NT!
+ conjuration_5_perk_name: "Conjuración 5" #NT!
+ CONJURATION_5_PERK_EFFECT: "Mejora la marca [artifact|E] [character_interaction|E] ([GetModifier('sorcery_conjuration_mark_5_modifier').GetNameWithTooltip]) con un límite de #V 3#!\nAs a [character_interaction|E], el usuario puede robar [artifact|E]s\n#flavor El Conjurador puede mover o conjurar a un humano, siempre que el sujeto esté dispuesto o inconsciente. Los objetos pueden ser invocados desde 60 pies.#!" #NT!
+ conjuration_6_perk_name: "Conjuración 6" #NT!
+ CONJURATION_6_PERK_EFFECT: "Mejora la marca [artifact|E] [character_interaction|E] ([GetModifier('sorcery_conjuration_mark_6_modifier').GetNameWithTooltip]) con un límite de #V 4#!\nRecruit Costo de interacción del invitado: #P -100%#!\nImproves posibilidades de éxito y distancia para robar [artifact|E]s [character_interaction|E].\n#flavor El Conjurador puede conjurar y mover objetos del tamaño de un camión, así como hasta tres formas de vida de tamaño humano dentro de un rango de 100 millas.[character_interaction|E]0" #NT!
   
- via_geniorum_perk_name: "Vía geniorum"
- via_ignis_perk_name: "Vía Ignis"
- via_medicamenti_perk_name: "Vía Medicamentos"
- via_necromantiae_perk_name: "Vía Necromantiae"
- via_oraculi_perk_name: "Vía Oraculi"
+ conveyance_1_perk_name: "Transporte 1" #NT!
+ CONVEYANCE_1_PERK_EFFECT: "#flavor Permite al usuario viajar con la ayuda de un vehículo preparado ritualmente. El usuario puede transportarse a través de aproximadamente 10 pies.#!" #NT!
+ conveyance_2_perk_name: "Transporte 2" #NT!
+ CONVEYANCE_2_PERK_EFFECT: "#flavor El usuario puede transportarse, junto con 20 libras, a lo largo de aproximadamente 100 pies.#!" #NT!
+ conveyance_3_perk_name: "Transporte 3" #NT!
+ CONVEYANCE_3_PERK_EFFECT: "#flavor El usuario puede transportarse a sí mismo y a otra persona a lo largo de aproximadamente una milla.#!" #NT!
+ conveyance_4_perk_name: "Transporte 4" #NT!
+ CONVEYANCE_4_PERK_EFFECT: "Puede teletransportarse como un [character_interaction|E] a través de la distancia de un reino mediano (por ejemplo: de arriba a abajo de Irlanda).\n#flavor El usuario puede transportarse a sí mismo y a otros dos pasajeros a una distancia de aproximadamente cinco millas.#!" #NT!
+ conveyance_5_perk_name: "Transporte 5" #NT!
+ CONVEYANCE_5_PERK_EFFECT: "Puede teletransportarse como [character_interaction|E] a través del rango diplomático.\n#flavor El usuario puede transportarse a sí mismo y a otros tres pasajeros a una distancia de aproximadamente diez millas.#!" #NT!
+ conveyance_6_perk_name: "Transporte 6" #NT!
+ CONVEYANCE_6_PERK_EFFECT: "Puede teletransportarse como [character_interaction|E] a través del mapa.\n#flavor El usuario puede transportarse a sí mismo y a otros cinco pasajeros a lo largo de aproximadamente 100 millas.#!" #NT!
   
- VIA_GENIORUM_PERK_EFFECT: "Desbloquea [bind_wraith_interaction|E].\nDesbloquea [command_wraith_interaction|E].\nNúmero máximo de espectros atados: #P +1#!.\n#F Esta Vía se ocupa del reino de los espíritus y lo demoníaco. El conocimiento del verdadero nombre de un espíritu otorga poder sobre él.#!"
- VIA_IGNIS_PERK_EFFECT: "#F Esta Vía permite a los Condenados experimentar las llamas del Infierno antes de su Muerte final. Esta Vía invoca lo que parece ser fuego normal, pero quema incluso a aquellos que están protegidos de las llamas normales.#!"
- VIA_MEDICAMENTI_PERK_EFFECT: "Desbloquea Curación [character_interaction|E].\n#F Quienes practican esta Vía, también llamada Vía del Remedio, son sanadores. La Vía Medicamenti unirá los huesos, detendrá el sangrado y, de hecho, revertirá el daño infligido.#!"
- VIA_NECROMANTIAE_PERK_EFFECT: "Desbloquea [marked_for_return_interaction|E].\nComo [character_interaction|E], te permite desterrar un personaje espectral a [dark_kingdom|E].\nNúmero máximo de espectrales atados: #P +1#!.\n#F La Vía Necromantiae es una teurgia diseñada para contactar o desterrar a los muertos.#!"
- VIA_ORACULI_PERK_EFFECT: "Recibirás una notificación si alguien intenta asesinar a tu amigo o familiar. Recibirás una notificación si alguien intenta seducir a tu amante o consorte. Tu prisionero tiene menos posibilidades de escapar de tu prisión. #F A través de Via Oraculi, los Teúrgos pueden vislumbrar el futuro desconocido o ver el pasado invisible. #!"
+ cursing_1_perk_name: "Maldiciendo 1" #NT!
+ CURSING_1_PERK_EFFECT: "Como un [character_interaction|E] puede dar [GetModifier('sorcery_small_blesing_modifier').GetNameWithTooltip] o [GetModifier('sorcery_small_curse_modifier').GetNameWithTooltip] a un objetivo.\n#flavor Arte de aplicar maleficios, maldiciones y bendiciones\nUn breve inconveniente o una bendición menor tiene como objetivo a una persona.#!" #NT!
+ cursing_2_perk_name: "Maldiciendo 2" #NT!
+ CURSING_2_PERK_EFFECT: "Como un [character_interaction|E] puede dar [GetModifier('sorcery_small_blesing_modifier').GetNameWithTooltip] o [GetModifier('sorcery_small_curse_modifier').GetNameWithTooltip] a un objetivo o a un familiar cercano del objetivo.\n#flavor Una herida, vergüenza o bendición duradera tiene como objetivo a una persona y a una persona o amigo cercano.#!" #NT!
+ cursing_3_perk_name: "Maldiciendo 3" #NT!
+ CURSING_3_PERK_EFFECT: "Como un [character_interaction|E] puede dar [GetModifier('sorcery_blesing_modifier').GetNameWithTooltip] o [GetModifier('sorcery_curse_modifier').GetNameWithTooltip] a un objetivo o a la familia del objetivo.\n#flavor Una lesión, enfermedad o bendición grave tiene como objetivo a una persona y dos parientes similares.#!" #NT!
+ cursing_4_perk_name: "Maldiciendo 4" #NT!
+ CURSING_4_PERK_EFFECT: "Como un [character_interaction|E] puede dar [GetModifier('sorcery_blesing_modifier').GetNameWithTooltip] o [GetModifier('sorcery_curse_modifier').GetNameWithTooltip] a un objetivo o a la casa del objetivo.\n#flavor Una enfermedad, lesión o bendición duradera afecta a una persona, así como a sus familiares o amigos.#!" #NT!
+ cursing_5_perk_name: "Maldiciendo 5" #NT!
+ CURSING_5_PERK_EFFECT: "Como un [character_interaction|E] puede dar [GetModifier('sorcery_huge_blesing_modifier').GetNameWithTooltip] o [GetModifier('sorcery_serious_curse_modifier').GetNameWithTooltip] a un objetivo o a la casa del objetivo.\n#flavor La muerte le sucede a una persona, así como a todos sus familiares y amigos, o una bendición poderosa que puede detener la muerte o conceder una gran fortuna que puede durar años.#!" #NT!
+ cursing_6_perk_name: "Maldiciendo 6" #NT!
+ CURSING_6_PERK_EFFECT: "Como un [character_interaction|E] puede dar [GetModifier('sorcery_huge_blesing_modifier').GetNameWithTooltip] o [GetModifier('sorcery_serious_curse_modifier').GetNameWithTooltip] a un objetivo o a la dinastía del objetivo.\n#flavor Una maldición o bendición tan poderosa que puede durar generaciones. Si existe un destino peor que la muerte o una forma de engañar a la muerte para siempre, sería una maldición o bendición de esta magnitud.#!" #NT!
+  
+ divination_1_perk_name: "Adivinación 1" #NT!
+ DIVINATION_1_PERK_EFFECT: "#flavor Al utilizar un cierto estilo de adivinación, el usuario puede ver eventos en el pasado o en el futuro. Ver una semana en el pasado o en el futuro con una sensación general de precisión.#!" #NT!
+ divination_2_perk_name: "Adivinación 2" #NT!
+ DIVINATION_2_PERK_EFFECT: "#flavor Ver un mes en el pasado o en el futuro con notable precisión.#!" #NT!
+ divination_3_perk_name: "Adivinación 3" #NT!
+ DIVINATION_3_PERK_EFFECT: "Recibirás una notificación si alguien intenta asesinar a tu amigo o familiar. Recibirás una notificación si alguien intenta seducir a tus amantes o consortes. #flavor Ve un año en el pasado o en el futuro con mayor precisión. #!" #NT!
+ divination_4_perk_name: "Adivinación 4" #NT!
+ DIVINATION_4_PERK_EFFECT: "#flavor Ver diez años en el pasado o en el futuro con una precisión notable.#!" #NT!
+ divination_5_perk_name: "Adivinación 5" #NT!
+ DIVINATION_5_PERK_EFFECT: "#flavor Vea el lapso de una vida hacia el pasado o el futuro con enorme precisión.#!" #NT!
+ divination_6_perk_name: "Adivinación 6" #NT!
+ DIVINATION_6_PERK_EFFECT: "#flavor Ver lo más lejos posible en el pasado o el futuro. Incluso cuando la adivinación es errónea, contiene elementos de verdad.#!" #NT!
+  
+ dowsing_1_perk_name: "Radiestesia 1" #NT!
+ DOWSING_1_PERK_EFFECT: "Como [character_interaction|E] se obtiene una pequeña cantidad de oro.\n#flavor La radiestesia es la práctica de localizar objetos perdidos con medios mágicos.\nEl zahorí puede encontrar un pequeño objeto de ellos en un radio de quince metros. El zahorí también adquiere un sentido general de las preguntas de sí o no que se refieren a sí mismo.#!" #NT!
+ dowsing_2_perk_name: "Radiestesia 2" #NT!
+ DOWSING_2_PERK_EFFECT: "Como [character_interaction|E], obtienes una pequeña cantidad de oro.\n#flavor El zahorí puede encontrar cualquier objeto personal dentro de un radio de una milla. El zahorí también obtiene una idea general de las preguntas de sí o no relacionadas con los demás.#!" #NT!
+ dowsing_3_perk_name: "Radiestesia 3" #NT!
+ DOWSING_3_PERK_EFFECT: "Como [character_interaction|E], obtiene una cantidad media de oro.\n#flavor El zahorí puede encontrar cualquier objeto personal en cualquier lugar, a la vez que puede localizar otros objetos y acumulaciones de elementos (como el aire detrás de una pared falsa) en un radio de una milla. El zahorí también adquiere un sentido definido para las preguntas simples de sí o no que se refieren a sí mismo.#!" #NT!
+ dowsing_4_perk_name: "Radiestesia 4" #NT!
+ DOWSING_4_PERK_EFFECT: "Como [character_interaction|E], obtendrás una gran cantidad de oro.\n#flavor El zahorí puede localizar instantáneamente objetos personales, así como objetos que pertenecen a otra persona. El zahorí también puede sentir magia, emociones ocultas y enfermedades.#!" #NT!
+ dowsing_5_perk_name: "Radiestesia 5" #NT!
+ DOWSING_5_PERK_EFFECT: "Como [character_interaction|E] gana una enorme cantidad de oro.\n#flavor El zahorí puede localizar instantáneamente cualquier objeto, así como también sustancias específicas como el oro.#!" #NT!
+  
+ enchantment_1_perk_name: "Encantamiento 1" #NT!
+ ENCHANTMENT_1_PERK_EFFECT: "Puede mejorar [artifact|E] agregando un modificador basado en el artefacto, con un costo de #N -20%#! $MOD_STRESS_LOSS_MULT$.\n#flavor El encantamiento, también llamado fetichismo, permite la creación de talismanes mágicos menores.\nEl encantador crea un objeto menor con un uso limitado y un área de influencia limitada.#!" #NT!
+ enchantment_2_perk_name: "Encantamiento 2" #NT!
+ ENCHANTMENT_2_PERK_EFFECT: "Puede mejorar [artifact|E] agregando modificador basado en el artefacto y aumentando el atributo #V 1#! en uno, con un costo de #N -20%#! $MOD_STRESS_LOSS_MULT$.\n#flavor El encantador crea un talismán más poderoso que se nota como mágico.#!" #NT!
+ enchantment_3_perk_name: "Encantamiento 3" #NT!
+ ENCHANTMENT_3_PERK_EFFECT: "Puede mejorar [artifact|E] agregando modificador basado en artefacto y aumentando el atributo #V 1#! en uno, con un costo de #N -20%#! $MOD_STRESS_LOSS_MULT$.\n#flavor El Encantador crea un talismán cuya función es obviamente mágica.#!" #NT!
+ enchantment_4_perk_name: "Encantamiento 4" #NT!
+ ENCHANTMENT_4_PERK_EFFECT: "Puede mejorar [artifact|E] agregando un modificador basado en el artefacto y aumentando el atributo #V 2#! en uno, con un costo de #N -20%#! $MOD_STRESS_LOSS_MULT$.\n#flavor El Encantador crea un talismán que puede desafiar varias de las limitaciones del Consenso.#!" #NT!
+ enchantment_5_perk_name: "Encantamiento 5" #NT!
+ ENCHANTMENT_5_PERK_EFFECT: "Puede mejorar [artifact|E] agregando un modificador basado en el artefacto y aumentando el atributo #V 2#! en uno, con un costo de #N -20%#! $MOD_STRESS_LOSS_MULT$.\n#flavor El Encantador crea talismán con poderes casi milagrosos.#!" #NT!
+ enchantment_6_perk_name: "Encantamiento 6" #NT!
+ ENCHANTMENT_6_PERK_EFFECT: "Puede mejorar [artifact|E] agregando un modificador basado en el artefacto y aumentando el atributo #V 3#! en uno, con un costo de #N -20%#! $MOD_STRESS_LOSS_MULT$.\n#flavor El encantador crea un artefacto legendario.#!" #NT!
+  
+ ephemera_1_perk_name: "Efímera 1" #NT!
+ EPHEMERA_1_PERK_EFFECT: "Desbloquea $seek_aid_of_the_spirits_decision$ [decision|E].\n#flavor El Camino de lo Efímero permite al usuario interactuar con los [spirit_wilds|E].\nSiente la actividad de los espíritus detrás de sus Guanteletes.#!" #NT!
+ ephemera_2_perk_name: "Efímera 2" #NT!
+ EPHEMERA_2_PERK_EFFECT: "Desbloquea $POD_summon_spirit_on_death_interaction$.\n#flavor Aprende a distinguir entre los diferentes tipos de espíritus detrás del Guantelete e intenta traerlos al mundo material.#!" #NT!
+ ephemera_3_perk_name: "Efímera 3" #NT!
+ EPHEMERA_3_PERK_EFFECT: "Puedes encarcelar, torturar, ejecutar o herir físicamente a los espíritus durante [single_combat_duel_plural|E].\n#flavor Aprende a contactar con un espíritu específico para abordarlo.#!" #NT!
+ ephemera_4_perk_name: "Efímera 4" #NT!
+ EPHEMERA_4_PERK_EFFECT: "#flavor Aprende a percibir lo efímero que te rodea y a ver los espíritus más allá del Guantelete.#!" #NT!
+ ephemera_5_perk_name: "Efímera 5" #NT!
+ EPHEMERA_5_PERK_EFFECT: "#flavor Aprende a ordenar a los espíritus que cumplan tus órdenes.#!" #NT!
+ ephemera_6_perk_name: "Efímera 6" #NT!
+ EPHEMERA_6_PERK_EFFECT: "Obtén acceso al [spirit_wilds|E].\n#flavor Camina más allá del Guantelete en forma astral.#!" #NT!
+  
+ fascination_1_perk_name: "Fascinación 1" #NT!
+ FASCINATION_1_PERK_EFFECT: "#flavor La fascinación permite al usuario hacer que un objetivo se enamore de otra persona.\nParece favorable para un objetivo.#!" #NT!
+ fascination_2_perk_name: "Fascinación 2" #NT!
+ FASCINATION_2_PERK_EFFECT: "#flavor Parece generalmente agradable.#!" #NT!
+ fascination_3_perk_name: "Fascinación 3" #NT!
+ FASCINATION_3_PERK_EFFECT: "#flavor Haz que la gente haga todo lo posible por ti.#!" #NT!
+ fascination_4_perk_name: "Fascinación 4" #NT!
+ FASCINATION_4_PERK_EFFECT: "#flavor Haz que las personas busquen activamente tu aprobación.#!" #NT!
+ fascination_5_perk_name: "Fascinación 5" #NT!
+ FASCINATION_5_PERK_EFFECT: "Como [character_interaction|E] obtienes un gancho débil en un objetivo si ganas un duelo usando aprendizaje.\n#flavor Haces que la gente sea muy devota a ti.#!" #NT!
+ fascination_6_perk_name: "Fascinación 6" #NT!
+ FASCINATION_6_PERK_EFFECT: "Como [character_interaction|E], obtienes un fuerte gancho sobre un objetivo si ganas un duelo usando aprendizaje.\n#flavor Haces que las personas se conviertan en tus sirvientes literales.#!" #NT!
+  
+ healing_1_perk_name: "Curación 1" #NT!
+ HEALING_1_PERK_EFFECT: "Como [character_interaction|E] puedes curar cicatrices.\n#flavor El usuario puede curar heridas, enfermedades y dolencias similares.\nAliviar heridas menores y debilitaciones por un período de tiempo limitado.#!" #NT!
+ healing_2_perk_name: "Curación 2" #NT!
+ HEALING_2_PERK_EFFECT: "Como [character_interaction|E] puedes curar enfermedades simples.\n#flavor Cura heridas y enfermedades como la gripe.#!" #NT!
+ healing_3_perk_name: "Curación 3" #NT!
+ HEALING_3_PERK_EFFECT: "Como [character_interaction|E] puedes curar heridas.\n#flavor Repara huesos rotos y hace que una persona incapacitada vuelva a funcionar.#!" #NT!
+ healing_4_perk_name: "Curación 4" #NT!
+ HEALING_4_PERK_EFFECT: "Como [character_interaction|E] puedes curar enfermedades.\n#flavor Consigue reparar fracturas expuestas y traumatismos graves, acelerando el proceso de curación y previniendo infecciones, además de curar enfermedades crónicas como el asma.#!" #NT!
+ healing_5_perk_name: "Curación 5" #NT!
+ HEALING_5_PERK_EFFECT: "Como [character_interaction|E] puedes curar discapacidades.\n#flavor Cura heridas casi mortales y cura enfermedades como el SIDA o el cáncer de forma permanente.#!" #NT!
+ healing_6_perk_name: "Curación 6" #NT!
+ HEALING_6_PERK_EFFECT: "Como [character_interaction|E], permite evitar que un amigo, amante, consorte, familiar, consejero o caballero muera de muerte accidental.\n#flavor Devuelve la vida a una persona que ha muerto recientemente. Sin embargo, si la persona no recibe atención médica inmediata, es probable que muera de nuevo.#!" #NT!
+  
+ hellfire_1_perk_name: "Fuego del infierno 1" #NT!
+ HELLFIRE_1_PERK_EFFECT: "#flavor El fuego infernal otorga a quien lo lanza poderes destructivos masivos.\nEl hechicero debe realizar un ataque de combate cuerpo a cuerpo exitoso para poder causar daño.#!" #NT!
+ hellfire_2_perk_name: "Fuego del infierno 2" #NT!
+ HELLFIRE_2_PERK_EFFECT: "#flavor Hellfire se puede usar en un área pequeña; 3 pies cuadrados aproximadamente, o a menos de 10 pies de distancia.#!" #NT!
+ hellfire_3_perk_name: "Fuego del infierno 3" #NT!
+ HELLFIRE_3_PERK_EFFECT: "#flavor El Fuego Infernal se puede usar en no más de un par de metros cuadrados aproximadamente, o a una distancia de menos de 25 pies.#!" #NT!
+ hellfire_4_perk_name: "Fuego del infierno 4" #NT!
+ HELLFIRE_4_PERK_EFFECT: "#flavor Hellfire se puede utilizar en 10 pies cuadrados (que se pueden organizar como una pared, un círculo o lo que sea), o a una distancia de aproximadamente 50 pies.#!" #NT!
+ hellfire_5_perk_name: "Fuego del infierno 5" #NT!
+ HELLFIRE_5_PERK_EFFECT: "#flavor Hellfire se puede usar en 20 pies cuadrados o en cualquier objetivo dentro de un radio de 150 pies.#!" #NT!
+ hellfire_6_perk_name: "Fuego del infierno 6" #NT!
+ HELLFIRE_6_PERK_EFFECT: "#flavor Hellfire se puede usar en 40 pies cuadrados o en cualquier objetivo dentro de un radio de 300 pies.#!" #NT!
+  
+ herbalism_1_perk_name: "Herbolario 1" #NT!
+ HERBALISM_1_PERK_EFFECT: "Descubre recetas para: [GetModifier('potion_of_health_modifier').GetNameWithTooltip]\n#flavor Similar al encantamiento y la alquimia, la herboristería se ocupa de la preparación de brebajes poderosos a partir de elementos naturales.\nCura dolores menores y efectos similares que no se considerarían mágicos.#!" #NT!
+ herbalism_2_perk_name: "Herbolario 2" #NT!
+ HERBALISM_2_PERK_EFFECT: "Descubre recetas para: [GetModifier('potent_potion_of_health_modifier').GetNameWithTooltip]\n#flavor Crea pociones cuyos efectos se consideran milagrosos, pero no completamente mágicos en sí mismos.#!" #NT!
+ herbalism_3_perk_name: "Herbolario 3" #NT!
+ HERBALISM_3_PERK_EFFECT: "Descubre recetas para: [GetModifier('elixir_of_health_modifier').GetNameWithTooltip]\n#flavor Crea brebajes cuyo efecto sea obviamente inusual.#!" #NT!
+ herbalism_4_perk_name: "Herbolario 4" #NT!
+ HERBALISM_4_PERK_EFFECT: "Descubre recetas para: [GetModifier('potent_elixir_of_health_modifier').GetNameWithTooltip]\n#flavor Crea brebajes que logran ser milagrosos y al mismo tiempo funcionan según el Consenso.#!" #NT!
+ herbalism_5_perk_name: "Herbolario 5" #NT!
+ HERBALISM_5_PERK_EFFECT: "Descubre recetas para: [GetModifier('elixir_of_life_modifier').GetNameWithTooltip]\n#flavor Crea pociones obviamente mágicas, cuyo efecto puede no ser instantáneo, sino que funciona de forma lenta y sutil.#!" #NT!
+  
+ mana_manipulation_1_perk_name: "Manipulación de maná 1" #NT!
+ MANA_MANIPULATION_1_PERK_EFFECT: "Reduce el costo de los poderes de hechicería.\n#flavor La manipulación de maná se ocupa de lo que el usuario percibe como la materia prima de la magia.\nAprende a sentir la energía que te rodea.#!" #NT!
+ mana_manipulation_2_perk_name: "Manipulación de maná 2" #NT!
+ MANA_MANIPULATION_2_PERK_EFFECT: "Reduce el coste de los poderes de hechicería.\n#flavor Aprende a sentir energías en objetos y criaturas.#!" #NT!
+ mana_manipulation_3_perk_name: "Manipulación de maná 3" #NT!
+ MANA_MANIPULATION_3_PERK_EFFECT: "Reduce el coste de los poderes de hechicería.\n#flavor Aprende a alterar o desplazar el flujo de energía que te rodea.#!" #NT!
+ mana_manipulation_4_perk_name: "Manipulación de maná 4" #NT!
+ MANA_MANIPULATION_4_PERK_EFFECT: "Reduce el coste de los poderes de hechicería.\n#flavor Aprende a manipular tus reservas de energía personales y repónlas con energía del exterior.#!" #NT!
+ mana_manipulation_5_perk_name: "Manipulación de maná 5" #NT!
+ MANA_MANIPULATION_5_PERK_EFFECT: "Reduce el coste de los poderes de hechicería.\n#flavor Aprende a usar maná directamente para tus hechizos o manipula su resonancia.#!" #NT!
+ mana_manipulation_6_perk_name: "Manipulación de maná 6" #NT!
+ MANA_MANIPULATION_6_PERK_EFFECT: "Reduce el coste de los poderes de hechicería.\n#flavor Crea un nexo temporal.#!" #NT!
+  
+ oneiromancy_1_perk_name: "Oniromancia 1" #NT!
+ ONEIROMANCY_1_PERK_EFFECT: "Como [character_interaction|E] da objetivo [GetModifier('sorcery_dreamless_modifier').GetNameWithTooltip]\n#flavor Con el uso de Oniromancia, el usuario puede visitar los sueños de otras personas y [dreaming|E]\nTocar el sueño de otro.#!" #NT!
+ oneiromancy_2_perk_name: "Oniromancia 2" #NT!
+ ONEIROMANCY_2_PERK_EFFECT: "A medida que [character_interaction|E] aumenta la opinión que el objetivo tiene de ti, #flavor aprende a convertirte temporalmente en parte del sueño de otro. #!" #NT!
+ oneiromancy_3_perk_name: "Oniromancia 3" #NT!
+ ONEIROMANCY_3_PERK_EFFECT: "Como [character_interaction|E] da como objetivo [GetModifier('sorcery_bad_dreams_modifier').GetNameWithTooltip] o [GetModifier('sorcery_good_dreams_modifier').GetNameWithTooltip]\n#flavor Aprende a observar el sueño de otro sin convertirte en parte de él, pero aún así siendo capaz de manipularlo.#!" #NT!
+ oneiromancy_4_perk_name: "Oniromancia 4" #NT!
+ ONEIROMANCY_4_PERK_EFFECT: "Mejora [GetModifier('sorcery_bad_dreams_modifier').GetNameWithTooltip], [GetModifier('sorcery_good_dreams_modifier').GetNameWithTooltip] [modifier|E] a [GetModifier('sorcery_bad_dreams_enchanced_modifier').GetNameWithTooltip], [GetModifier('sorcery_good_dreams_enchanced_modifier').GetNameWithTooltip]\n#flavor Aprende a tomar el control del sueño de otro.#!" #NT!
+ oneiromancy_5_perk_name: "Oniromancia 5" #NT!
+ ONEIROMANCY_5_PERK_EFFECT: "Obtén acceso a [dreaming|E]\n#flavor Aprende a fusionar varios sueños en uno solo.#!" #NT!
+ oneiromancy_6_perk_name: "Oniromancia 6" #NT!
+ ONEIROMANCY_6_PERK_EFFECT: "Como [character_interaction|E] engendro #V 2000#! [GetMaA('monsters').GetName]\n#flavor Haz que una criatura de un sueño sea real por un período de tiempo limitado.#!" #NT!
+  
+ saturnal_manes_1_perk_name: "Saturnal - Manes 1" #NT!
+ SATURNAL_MANES_1_PERK_EFFECT: "Desbloquea [bind_wraith_interaction|E].\n#flavor Al usar ritos orgiásticos bajo la luna, el practicante invoca espíritus para atender sus necesidades.\nInvoca un espíritu.#!" #NT!
+ saturnal_manes_2_perk_name: "Saturnal - Manes 2" #NT!
+ SATURNAL_MANES_2_PERK_EFFECT: "Desbloquea [command_wraith_interaction|E].\n#flavor Ordena un espíritu.#!" #NT!
+ saturnal_manes_3_perk_name: "Saturnal - Manes 3" #NT!
+ SATURNAL_MANES_3_PERK_EFFECT: "Desbloquea [summon_wraith_on_death_interaction|E].\nDesbloquea la opción $EXECUTION_CONVERT_TO_WRAITH$ [execution|E].\nNúmero máximo de espectros atados: #P +2#!\n#flavor Invoca u ordena a un fantasma en lugar de un espíritu.#!" #NT!
+ saturnal_manes_4_perk_name: "Saturnal - Manes 4" #NT!
+ SATURNAL_MANES_4_PERK_EFFECT: "Número máximo de espectros atados: #P +2#!\nAs a [character_interaction|E] te permite usar espectros atados para aumentar tu educación o un atributo.\n#flavor Usa la influencia de los espíritus para mejorar tus talentos naturales.#!" #NT!
+ saturnal_manes_5_perk_name: "Saturnal - Manes 5" #NT!
+ SATURNAL_MANES_5_PERK_EFFECT: "Como [character_interaction|E] empeora la opinión de los espectros locales del dominio del objetivo y los hiere.\n#flavor Hace que los espíritus enojados ataquen a un objetivo.#!" #NT!
+  
+ shadowcasting_1_perk_name: "Proyección de sombras 1" #NT!
+ SHADOWCASTING_1_PERK_EFFECT: "#flavor La técnica de proyección de sombras, también llamada Senda de las Sombras, se ocupa del control sobre la oscuridad.\nManipula la luz para oscurecer y profundizar las sombras.#!" #NT!
+ shadowcasting_2_perk_name: "Proyección de sombras 2" #NT!
+ SHADOWCASTING_2_PERK_EFFECT: "#flavor Manipula sombras para doblar las ondas sonoras, lo que te permite ocultarte más fácilmente. Cuando se proyecta sobre otra persona, su mente comienza a jugarle una mala pasada.#!" #NT!
+ shadowcasting_3_perk_name: "Proyección de sombras 3" #NT!
+ SHADOWCASTING_3_PERK_EFFECT: "#flavor Manipulas las sombras para ocultar los colores. Cuando se proyectan sobre otra persona, su mente entra en pánico.#!" #NT!
+ shadowcasting_4_perk_name: "Proyección de sombras 4" #NT!
+ SHADOWCASTING_4_PERK_EFFECT: "#flavor Manipular sombras para provocar que los dispositivos electrónicos fallen. Otros que ven las sombras caen en el terror.#!" #NT!
+ shadowcasting_5_perk_name: "Proyección de sombras 5" #NT!
+ SHADOWCASTING_5_PERK_EFFECT: "Desbloquea la opción de cambio de forma [GetModifier( 'POD_shapeshift_form_shadow_modifier' ).GetNameWithTooltip|L].\n#flavor Manipula las sombras para ocultarte por completo de la vista de los mortales. Otros que ven las sombras pueden volverse locos por la experiencia.#!" #NT!
+ shadowcasting_6_perk_name: "Proyección de sombras 6" #NT!
+ SHADOWCASTING_6_PERK_EFFECT: "Puede reclutar a [GetMaA('shades').GetName] como [men_at_arms|E]\n#flavor Manipular sombras para darles una forma física o apagar cualquier luz en un radio de 50 pies.#!" #NT!
+  
+ shapeshifting_1_perk_name: "Cambio de forma 1" #NT!
+ SHAPESHIFTING_1_PERK_EFFECT: "Desbloquear Cambio de forma [character_interaction|E].\n#flavor El usuario puede manipular su propia forma física.\nUn cambio cosmético menor, como el color del cabello.#!" #NT!
+ shapeshifting_2_perk_name: "Cambio de forma 2" #NT!
+ SHAPESHIFTING_2_PERK_EFFECT: "Desbloquea formas de cambio de forma relacionadas con la era inmortal.\n#flavor Un cambio cosmético importante, como la altura.#!" #NT!
+ shapeshifting_3_perk_name: "Cambio de forma 3" #NT!
+ SHAPESHIFTING_3_PERK_EFFECT: "Desbloquea partes de animales como formas de cambio de forma.\n#flavor Un reemplazo de una parte del cuerpo con la de un animal.#!" #NT!
+ shapeshifting_4_perk_name: "Cambio de forma 4" #NT!
+ SHAPESHIFTING_4_PERK_EFFECT: "Ahora puede tener hasta 4 formas diferentes de partes de animales.\n#flavor Un reemplazo de varias partes del cuerpo con las de un animal.#!" #NT!
+ shapeshifting_5_perk_name: "Cambio de forma 5" #NT!
+ SHAPESHIFTING_5_PERK_EFFECT: "Desbloquea la forma animal como opción de cambio de forma.\n#flavor Una transformación completa en un animal.#!" #NT!
+ shapeshifting_6_perk_name: "Cambio de forma 6" #NT!
+ SHAPESHIFTING_6_PERK_EFFECT: "Desbloquea la forma mítica como opción de cambio de forma.\n#flavor Una transformación completa en un animal mítico.#!" #NT!
+  
+ spirit_chasing_1_perk_name: "Persiguiendo espíritus 1" #NT!
+ SPIRIT_CHASING_1_PERK_EFFECT: "#flavor El usuario crea un vínculo entre él y el espíritu de un tipo de planta o animal.\nObtiene nutrición completa de la comida elegida por el tipo.#!" #NT!
+ spirit_chasing_2_perk_name: "Persiguiendo espíritus 2" #NT!
+ SPIRIT_CHASING_2_PERK_EFFECT: "Como [character_interaction|E] elige qué atributo potenciar con #V 2#!.\n#flavor Haz coincidir tus niveles sensoriales con los de tu tipo.#!" #NT!
+ spirit_chasing_3_perk_name: "Persiguiendo espíritus 3" #NT!
+ SPIRIT_CHASING_3_PERK_EFFECT: "Como [decision|E], permitiendo la entrada a [GetTrait('torpor').GetName( GetNullCharacter )] que te depondrá.\n#flavor Consigue caer en un sueño regenerativo para curar tus heridas.#!" #NT!
+ spirit_chasing_4_perk_name: "Persiguiendo espíritus 4" #NT!
+ SPIRIT_CHASING_4_PERK_EFFECT: "#flavor Obtenga información de otros ejemplares de su tipo (es decir, aprenda de un árbol lo que sucedió en su entorno).#!" #NT!
+ spirit_chasing_5_perk_name: "Persiguiendo el espíritu 5" #NT!
+ SPIRIT_CHASING_5_PERK_EFFECT: "Como [character_interaction|E] elige varias habilidades animales para mejorarte.\n#flavor Obtén algunas de las habilidades del tipo elegido.#!" #NT!
+  
+ summoning_warding_and_binding_1_perk_name: "Invocación, protección y vinculación 1" #NT!
+ SUMMONING_WARDING_AND_BINDING_1_PERK_EFFECT: "Como [character_interaction|E] invoca un animal de tu elección.\n#flavor El complejo camino que consiste tanto en invocar, protegerse y atarse a criaturas es uno de los más peligrosos de practicar.\nSe pueden invocar y comandar criaturas simples, como los pájaros.#!" #NT!
+ summoning_warding_and_binding_2_perk_name: "Invocación, protección y vinculación 2" #NT!
+ SUMMONING_WARDING_AND_BINDING_2_PERK_EFFECT: "Como [character_interaction|E] invoca una montura de tu elección.\n#flavor Se pueden invocar y comandar criaturas más grandes, como los lobos.#!" #NT!
+ summoning_warding_and_binding_3_perk_name: "Invocación, protección y vinculación 3" #NT!
+ SUMMONING_WARDING_AND_BINDING_3_PERK_EFFECT: "Desbloquea la invocación [character_interaction|E] para hacer que un mortal no terrestre venga a tu corte.\n#flavor Se puede invocar y ordenar a los humanos.#!" #NT!
+ summoning_warding_and_binding_4_perk_name: "Invocación, protección y vinculación 4" #NT!
+ SUMMONING_WARDING_AND_BINDING_4_PERK_EFFECT: "Desbloquea la invocación [character_interaction|E] para hacer que un ser sobrenatural menor no desembarcado venga a tu corte.\n#flavor Los seres sobrenaturales menores, como los necrófagos y los kinain, pueden ser invocados y comandados.#!" #NT!
+ summoning_warding_and_binding_5_perk_name: "Invocación, protección y vinculación 5" #NT!
+ SUMMONING_WARDING_AND_BINDING_5_PERK_EFFECT: "Desbloquea la invocación [character_interaction|E] para hacer que un personaje no terrestre venga a tu corte (excepto demonios).\n#flavor Se pueden invocar y comandar seres sobrenaturales importantes, como magos o hombres lobo.#!" #NT!
+ summoning_warding_and_binding_6_perk_name: "Invocación, protección y vinculación 6" #NT!
+ SUMMONING_WARDING_AND_BINDING_6_PERK_EFFECT: "Desbloquea la invocación [character_interaction|E] para hacer que un personaje no terrestre venga a tu corte.\n#flavor Se pueden invocar y comandar entidades celestiales, como ángeles, dioses o demonios.#!" #NT!
+  
+ weather_control_1_perk_name: "Control del clima 1" #NT!
+ WEATHER_CONTROL_1_PERK_EFFECT: "Permite predecir peligros naturales.\n#flavor También conocido como Weathercraft, con esta ruta, el usuario manipula los patrones climáticos para su propio beneficio. \nCrea una pequeña perturbación repentina en los patrones climáticos en un área limitada.#!" #NT!
+ weather_control_2_perk_name: "Control del clima 2" #NT!
+ WEATHER_CONTROL_2_PERK_EFFECT: "#flavor Crea una pequeña perturbación repentina en los patrones climáticos en un área más grande.#!" #NT!
+ weather_control_3_perk_name: "Control del clima 3" #NT!
+ WEATHER_CONTROL_3_PERK_EFFECT: "#flavor Provocar cambios drásticos en el clima de una zona.#!" #NT!
+ weather_control_4_perk_name: "Control del clima 4" #NT!
+ WEATHER_CONTROL_4_PERK_EFFECT: "#flavor Modificar el clima en un área limitada.#!" #NT!
+ weather_control_5_perk_name: "Control del clima 5" #NT!
+ WEATHER_CONTROL_5_PERK_EFFECT: "#flavor Modificar el clima en un área más grande.#!" #NT!
+ weather_control_6_perk_name: "Control del clima 6" #NT!
+ WEATHER_CONTROL_6_PERK_EFFECT: "Desbloquea Weathercraft [character_interaction|E]\n#flavor Invoca fuerzas destructivas de la naturaleza como los huracanes.#!" #NT!
+  
+ via_geniorum_visible: "Vía geniorum" #NT!
+ via_ignis_visible: "Vía Ignis" #NT!
+ via_medicamenti_visible: "Vía Medicamentos" #NT!
+ via_necromantiae_visible: "Vía Necromantiae" #NT!
+ via_oraculi_visible: "Vía Oraculi" #NT!
+  
+ via_geniorum_1_perk_name: "Ritual de revelación" #NT!
+ via_geniorum_2_perk_name: "Ritual de protección" #NT!
+ via_geniorum_3_perk_name: "Ritual de Despido" #NT!
+ via_geniorum_4_perk_name: "Ritual de invocación" #NT!
+ via_geniorum_5_perk_name: "Ritual de unión" #NT!
+  
+  
+ via_ignis_1_perk_name: "Vía Ignis 1" #NT!
+ via_ignis_2_perk_name: "Vía Ignis 2" #NT!
+ via_ignis_3_perk_name: "Vía Ignis 3" #NT!
+ via_ignis_4_perk_name: "Vía Ignis 4" #NT!
+ via_ignis_5_perk_name: "Vía Ignis 5" #NT!
+  
+  
+ via_medicamenti_1_perk_name: "Vía Medicamentos 1" #NT!
+ via_medicamenti_2_perk_name: "Vía Medicamento 2" #NT!
+ via_medicamenti_3_perk_name: "Vía Medicamento 3" #NT!
+ via_medicamenti_4_perk_name: "Vía Medicamento 4" #NT!
+ via_medicamenti_5_perk_name: "Vía Medicamento 5" #NT!
+  
+  
+ via_necromantiae_1_perk_name: "Ritual del despertar" #NT!
+ via_necromantiae_2_perk_name: "Ritual de protección" #NT!
+ via_necromantiae_3_perk_name: "Ritual de comunicación" #NT!
+ via_necromantiae_4_perk_name: "Ritual de expulsión" #NT!
+ via_necromantiae_5_perk_name: "Ritual de Vivificación" #NT!
+  
+  
+ via_oraculi_1_perk_name: "Vía Oráculo 1" #NT!
+ via_oraculi_2_perk_name: "Vía Oráculo 2" #NT!
+ via_oraculi_3_perk_name: "Vía Oráculo 3" #NT!
+ via_oraculi_4_perk_name: "Vía Oráculo 4" #NT!
+ via_oraculi_5_perk_name: "Vía Oráculo 5" #NT!
+  
+  
+ VIA_GENIORUM_1_PERK_EFFECT: "Desbloquea $seek_aid_of_the_spirits_decision$ [decision|E].\nPuedes interactuar con seres de [umbra|E] cuando estás en el Mundo Material.\n#F Esta Vía se ocupa del reino de los espíritus y lo demoníaco. El conocimiento del verdadero nombre de un espíritu otorga poder sobre él. La Vía Geniorum es una recopilación de rituales específicos de niveles de poder graduados.\nEl Teúrgo no mira dentro de [spirit_world|E], sino que ordena a los seres supernos cercanos que se revelen.#!" #NT!
+ VIA_GENIORUM_2_PERK_EFFECT: "Ya no estarás poseído por [GetTrait('wraith').GetName( GetNullCharacter )].\nComo [character_interaction|E], puedes aprender el verdadero nombre de un personaje\n#F El Teúrgo puede dibujar sigilos protectores en objetos portátiles o en un pequeño círculo a su alrededor.#!" #NT!
+ VIA_GENIORUM_3_PERK_EFFECT: "Haz que $POD_demon_unearthbound_decision$ [decision|E] sea gratis.\nComo [character_interaction|E], te permite desterrar un personaje demonio a [abyss|E].\nComo [character_interaction|E], te permite desterrar un personaje hada a [arcadia|E].\n#F El Teúrgo puede enviar un espíritu de regreso a su reino nativo.#!" #NT!
+ VIA_GENIORUM_4_PERK_EFFECT: "Puede reclutar a [GetMaA('materialized_spirits').GetName] y [GetMaA('imps').GetName] como [men_at_arms|E]\n#F El Teúrgo ahora puede invocar entidades espirituales.#!" #NT!
+ VIA_GENIORUM_5_PERK_EFFECT: "Puede reclutar a [GetMaA('jagglings').GetName] y [GetMaA('lucifergia').GetName] como [men_at_arms|E]\n#F El Teúrgo ahora puede obligar a un espíritu a ser servil.#!" #NT!
+  
+ VIA_IGNIS_1_PERK_EFFECT: "#F Esta Vía permite a los Condenados experimentar las llamas del Infierno antes de su Muerte final. Esta Vía invoca lo que parece ser fuego normal, pero quema incluso a aquellos que están protegidos de las llamas normales.\nEl Teúrgo puede invocar la llama de una vela de Fuego Sagrado.#!" #NT!
+ VIA_IGNIS_2_PERK_EFFECT: "#F El Teúrgo puede invocar un pequeño Fuego Sagrado.#!" #NT!
+ VIA_IGNIS_3_PERK_EFFECT: "#F Los teúrgos pueden invocar una fogata de Fuego Sagrado.#!" #NT!
+ VIA_IGNIS_4_PERK_EFFECT: "#F Los teúrgos pueden invocar una hoguera de fuego sagrado.#!" #NT!
+ VIA_IGNIS_5_PERK_EFFECT: "#F Los teúrgos pueden invocar una conflagración de Fuego Sagrado.#!" #NT!
+  
+ VIA_MEDICAMENTI_1_PERK_EFFECT: "Como [character_interaction|E], puedes [GetModifier('theurgy_soothe_pain_modifier').GetNameWithTooltip].\n#F Quienes practican esta Vía, también llamada la Vía del Remedio, son sanadores. La Vía Medicamenti unirá los huesos, detendrá el sangrado y, de hecho, revertirá el daño infligido.\nPuedes aliviar dolores menores.#!" #NT!
+ VIA_MEDICAMENTI_2_PERK_EFFECT: "Como [character_interaction|E], puedes curar cicatrices.\n#F Los esguinces y las infecciones menores se curan más rápidamente bajo tu cuidado.#!" #NT!
+ VIA_MEDICAMENTI_3_PERK_EFFECT: "Como [character_interaction|E], puede curar heridas.\n#F Todas las heridas hasta Lisiado se curan el doble de rápido que su ritmo normal, sin riesgo de infección.#!" #NT!
+ VIA_MEDICAMENTI_4_PERK_EFFECT: "Como [character_interaction|E], puedes curar enfermedades básicas.\n#F Puedes curar enfermedades crónicas como el asma o la artritis, pero requiere tiempo y esfuerzo.#!" #NT!
+ VIA_MEDICAMENTI_5_PERK_EFFECT: "Como [character_interaction|E], puedes realizar curaciones milagrosas.\n#F Puedes curar incluso enfermedades mortales, pero te exige mucho y requiere semanas de tratamiento.#!" #NT!
+  
+ VIA_NECROMANTIAE_1_PERK_EFFECT: "Desbloquear [summon_wraith_on_death_interaction|E].\n#F La Vía Necromantiae es una teurgia diseñada para contactar o desterrar a los muertos.\nEl teúrgo puede ordenar a un cadáver recientemente fallecido que despierte.#!" #NT!
+ VIA_NECROMANTIAE_2_PERK_EFFECT: "Puedes encarcelar, torturar, ejecutar o herir físicamente a espíritus durante [single_combat_duel_plural|E].\nYa no es necesario pagar [gold|E] para encarcelar, torturar, ejecutar o herir físicamente a un espectro/demonio durante [single_combat_duel_plural|E].\n#F Los teúrgos pueden proteger un área de la intrusión fantasmal.#!" #NT!
+ VIA_NECROMANTIAE_3_PERK_EFFECT: "Desbloquea [bind_wraith_interaction|E].\n#F Los teúrgos pueden contactar con los muertos.#!" #NT!
+ VIA_NECROMANTIAE_4_PERK_EFFECT: "Desbloquea [command_wraith_interaction|E].\nComo [character_interaction|E], puedes desterrar espectros al [shadowlands|E], desvinculándolos en el proceso.\n#F Los teúrgos pueden expulsar a un fantasma que los acecha.#!" #NT!
+ VIA_NECROMANTIAE_5_PERK_EFFECT: "Como [character_interaction|E], puede invocar un espectro aleatorio de [shadowlands|E].\nPuede reclutar a [GetMaA('hidden').GetName], [GetMaA('walker').GetName], [GetMaA('shambler').GetName] y [GetMaA('skeletons').GetName] como [men_at_arms|E].\nNúmero máximo de espectros atados: #P +1#!.\n#F El Teúrgo ahora puede instar a un cadáver a levantarse.#!" #NT!
+  
+ VIA_ORACULI_1_PERK_EFFECT: "#F A través de la Vía Oraculi, los Teúrgos pueden vislumbrar el futuro desconocido o ver el pasado invisible.\nEl Teúrgo interpreta señales o advertencias sobre el estado de sus circunstancias inmediatas.#!" #NT!
+ VIA_ORACULI_2_PERK_EFFECT: "Si alguno de tus familiares o amigos es asesinado en circunstancias misteriosas, conocerás la identidad de sus asesinos.\n#F El Teúrgo elimina posibles resultados negativos comparándolos de antemano.#!" #NT!
+ VIA_ORACULI_3_PERK_EFFECT: "Desbloquea el [impatient_rushing_all_schemes_decision|E]\n#F El Teúrgo puede detectar patrones de azar que le permiten obtener información a corto plazo que sigue decisiones específicas.#!" #NT!
+ VIA_ORACULI_4_PERK_EFFECT: "Recibirás una notificación si alguien intenta asesinar a tus amigos o familiares. Recibirás una notificación si alguien intenta seducir a tu amante o consorte. Tus prisioneros tienen menos posibilidades de escapar de tu prisión. #F El Teúrgo puede adivinar eventos específicos en el futuro. #!" #NT!
+ VIA_ORACULI_5_PERK_EFFECT: "Desbloquea el [deceitful_progress_hostile_schemes_decision|E].\n#F El Teúrgo obtiene la habilidad de percibir detalles claros y concretos sobre el futuro y la capacidad de predecir eventos específicos con certeza confiable#!" #NT!

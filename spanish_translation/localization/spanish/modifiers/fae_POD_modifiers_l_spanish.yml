@@ -48,7 +48,7 @@
  conceal_confuse_perk_ruler_modifier: "[battle_modifier|E]: Ocultar"
  conceal_confuse_perk_commander_modifier: "[battle_modifier|E] : Confundir"
  conceal_confuse_perk_knight_modifier: "[battle_modifier|E] : Confundir"
- summon_dispel_fire_perk_modifierr: "[battle_modifier|E] : Destello impresionante"
+ summon_dispel_fire_perk_modifier: "[battle_modifier|E]: Destello impresionante" #NT!
  dream_time_perk_character_positive_modifier: "Bono de tiempo de ensueño"
  dream_time_perk_character_negative_modifier: "Malus de la hora de los sueños"
  dream_time_perk_county_positive_modifier: "Bono de tiempo de ensueño"
@@ -77,8 +77,6 @@
  dynamic_physic_modifier: "Física dinámica"
  philosophers_society_modifier: "Gran Lorica"
  arcadian_restoration_modifier: "Soñando en la Tierra"
-  
- trapped_in_arcadia_modifier: "Movido a [arcadia|E]"
   
  green_man_modifier: "Hombre verde"
  green_man_modifier_desc: "Él no muere y renace como el resto de los ghille dhu, sino que es su señor, la tierra de la que surgen.\n#weak Permite la resurrección si este personaje muere por una causa no natural.#!"
@@ -212,3 +210,12 @@
   
  POD_prodigal_summoner_modifier: "Invocador pródigo"
  POD_prodigal_summoner_modifier_desc: "Recordó a los pródigos seres sobrenaturales su origen entre los Fae."
+  
+ POD_desprete_for_immortality: "Desesperado por la inmortalidad" #NT!
+ POD_desprete_for_immortality_desc: "Solías ser inmortal, y ahora el reloj avanza..." #NT!
+ POD_useless_dreamers: "Soñadores inútiles" #NT!
+ POD_useless_dreamers_desc: "Gracias a tu estudio de la Banalidad, perdiste temporalmente la capacidad de drenar eficazmente a los soñadores.\nNo puedes perder estrés ni ganar Glamour con tu [dreamers|E]" #NT!
+ POD_weird_dreaming_contection: "Conexión de sueños extraños" #NT!
+ POD_weird_dreaming_contection_desc: "Gracias a tu estudio de Glamour, perturbaste temporalmente tu conexión con [dreaming|E], lo que hace que los trucos sean más costosos.\nCosto de [cantrips|E] multiplicado por #N 2#!" #NT!
+ POD_disconected_from_dreaming: "Desconectado del sueño" #NT!
+ POD_disconected_from_dreaming_desc: "En tu intento por lograr el equilibrio entre Glamour y Banalidad, hiciste algo mal...\nCosto de [cantrips|E] multiplicado por #N 4#!\nYou no puedes volver a intentarlo mientras dure este modificador" #NT!

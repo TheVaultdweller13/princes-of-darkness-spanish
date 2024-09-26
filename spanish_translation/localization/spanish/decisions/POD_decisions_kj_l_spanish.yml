@@ -8,15 +8,15 @@
  advance_dharma_decision: "Avanzar en el Dharma"
  advance_dharma_decision_tooltip: "Avanza en tu Dharma a medida que alcanzas la iluminación."
  advance_dharma_decision_desc: "Los Wan Kuei avanzan en su Dharma al alcanzar momentos de iluminación, llamados dah. Estos momentos llegan raramente y pueden ser provocados por una gran comprensión del propio dharma o, ocasionalmente, por una gran desviación del mismo. Cada paso del camino es progresivamente más difícil, y el tiempo entre los momentos de iluminación dura años, luego siglos, y milenios en los niveles más altos. Los Wan Kuei más iluminados pasan gran parte de su tiempo en contemplación, buscando esos momentos de claridad."
- advance_dharma_decision_desc.boneflowers: "Atando espectros, o pasivamente mientras tienes espectros atados y/o te estacionas en el [yin_world|E]" #NT!
- advance_dharma_decision_desc.deviltigers: "Cometer asesinato" #NT!
- advance_dharma_decision_desc.resplendentcranes: "Ganar títulos, convertir la cultura de un condado con tu mayordomo o de forma pasiva mientras tu capital tenga tu cultura." #NT!
- advance_dharma_decision_desc.thousandwhispers: "Ganar o perder relaciones (amante, alma gemela, amigo, mejor amigo, rival, némesis)" #NT!
- advance_dharma_decision_desc.thrashingdragons: "Completar planes de balanceo/seducción/romance, tener relaciones sexuales o pasivamente mientras se está estacionado en el [yang_world|E]" #NT!
- advance_dharma_decision_desc.flameoftherisingphoenix: "Construyendo un edificio [GetTrait('kueijin').GetName( GetNullCharacter )]" #NT!
- advance_dharma_decision_desc.faceofthegods: "Convertir la fe de un condado con su Capellán de la Corte, a través de la conversión masiva de Fe Verdadera, o pasivamente mientras su capital tiene su fe." #NT!
- advance_dharma_decision_desc.inwardway: "Meditando, pasando a la siguiente ubicación [umbra|E] o al obtener beneficios en uno de los árboles de estilo de vida [GetTrait('kueijin').GetName( GetNullCharacter )]" #NT!
- advance_dharma_decision_desc.wayofthetenthousandscreams: "Construir un Nido de Dragón corrupto, torturar prisioneros, sacrificar prisioneros/posesiones/regiones a patrones demoníacos o pasivamente mientras se es un esclavo o diabolista." #NT!
+ advance_dharma_decision_desc.boneflowers: "Atando espectros, o pasivamente mientras tienes espectros atados y/o te estacionas en el [yin_world|E]"
+ advance_dharma_decision_desc.deviltigers: "Cometer asesinato"
+ advance_dharma_decision_desc.resplendentcranes: "Ganar títulos, convertir la cultura de un condado con tu mayordomo o de forma pasiva mientras tu capital tenga tu cultura."
+ advance_dharma_decision_desc.thousandwhispers: "Ganar o perder relaciones (amante, alma gemela, amigo, mejor amigo, rival, némesis)"
+ advance_dharma_decision_desc.thrashingdragons: "Completar planes de balanceo/seducción/romance, tener relaciones sexuales o pasivamente mientras se está estacionado en el [yang_world|E]"
+ advance_dharma_decision_desc.flameoftherisingphoenix: "Construyendo un edificio [GetTrait('kueijin').GetName( GetNullCharacter )]"
+ advance_dharma_decision_desc.faceofthegods: "Convertir la fe de un condado con su Capellán de la Corte, a través de la conversión masiva de Fe Verdadera, o pasivamente mientras su capital tiene su fe."
+ advance_dharma_decision_desc.inwardway: "Meditando, pasando a la siguiente ubicación [umbra|E] o al obtener beneficios en uno de los árboles de estilo de vida [GetTrait('kueijin').GetName( GetNullCharacter )]"
+ advance_dharma_decision_desc.wayofthetenthousandscreams: "Construir un Nido de Dragón corrupto, torturar prisioneros, sacrificar prisioneros/posesiones/regiones a patrones demoníacos o pasivamente mientras se es un esclavo o diabolista."
  advance_dharma_decision_confirm: "Mi viaje continúa"
  become_enlightened_decision: "Lograr la iluminación"
  become_enlightened_decision_tooltip: "El paso final del viaje Dhármico."
@@ -56,26 +56,26 @@
  broken_mask_decision_tooltip: "Intentarás matar a todos tus amigos y amantes y comenzar una nueva vida."
  broken_mask_decision_confirm: "Morir por mí"
   
- POD_nushi_duty_punish_impious_decision: "Deber: Castigar a los impíos" #NT!
- POD_nushi_duty_punish_impious_decision_tooltip: "Termina la demanda de tu nushi" #NT!
- POD_nushi_duty_punish_impious_decision_desc: "Castiga al estudiante impío que talló grafitis lascivos en tu imagen sagrada nushi." #NT!
- POD_nushi_duty_punish_impious_decision_confirm: "Hecho" #NT!
- POD_nushi_duty_punish_impious_decision_condition: "Has torturado, revocado el título, ganado un duelo o juego de mesa, o asesinado a [GetPlayer.MakeScope.GetVariable('impious').GetCharacter.GetFirstName]" #NT!
+ POD_nushi_duty_punish_impious_decision: "Deber: Castigar a los impíos"
+ POD_nushi_duty_punish_impious_decision_tooltip: "Termina la demanda de tu nushi"
+ POD_nushi_duty_punish_impious_decision_desc: "Castiga al estudiante impío que talló grafitis lascivos en tu imagen sagrada nushi."
+ POD_nushi_duty_punish_impious_decision_confirm: "Hecho"
+ POD_nushi_duty_punish_impious_decision_condition: "Has torturado, revocado el título, ganado un duelo o juego de mesa, o asesinado a [GetPlayer.MakeScope.GetVariable('impious').GetCharacter.GetFirstName]"
   
- POD_nushi_duty_prevent_vampire_decision: "Deber: Prevenir el Kin-Jin" #NT!
- POD_nushi_duty_prevent_vampire_decision_tooltip: "Termina la demanda de tu nushi" #NT!
- POD_nushi_duty_prevent_vampire_decision_desc: "Impedir que los bebedores de sangre occidentales profanen el santuario sagrado." #NT!
- POD_nushi_duty_prevent_vampire_decision_confirm: "Hecho" #NT!
- POD_nushi_duty_prevent_vampire_decision_condition: "Debes ganar una guerra contra cualquier vampiro." #NT!
+ POD_nushi_duty_prevent_vampire_decision: "Deber: Prevenir el Kin-Jin"
+ POD_nushi_duty_prevent_vampire_decision_tooltip: "Termina la demanda de tu nushi"
+ POD_nushi_duty_prevent_vampire_decision_desc: "Impedir que los bebedores de sangre occidentales profanen el santuario sagrado."
+ POD_nushi_duty_prevent_vampire_decision_confirm: "Hecho"
+ POD_nushi_duty_prevent_vampire_decision_condition: "Debes ganar una guerra contra cualquier vampiro."
   
- POD_nushi_duty_steal_necklace_decision: "Deber: robar collar" #NT!
- POD_nushi_duty_steal_necklace_decision_tooltip: "Termina la demanda de tu nushi" #NT!
- POD_nushi_duty_steal_necklace_decision_desc: "Ve al [yomi|E] [hell_of_being_skinned_alive|E] y lleva a tu nushi el collar de la Reina Yama Tou Mu." #NT!
- POD_nushi_duty_steal_necklace_decision_confirm: "Hecho" #NT!
- POD_nushi_duty_steal_necklace_decision_condition: "Eres dueño del collar del artefacto Tou Mu." #NT!
+ POD_nushi_duty_steal_necklace_decision: "Deber: robar collar"
+ POD_nushi_duty_steal_necklace_decision_tooltip: "Termina la demanda de tu nushi"
+ POD_nushi_duty_steal_necklace_decision_desc: "Ve al [yomi|E] [hell_of_being_skinned_alive|E] y lleva a tu nushi el collar de la Reina Yama Tou Mu."
+ POD_nushi_duty_steal_necklace_decision_confirm: "Hecho"
+ POD_nushi_duty_steal_necklace_decision_condition: "Eres dueño del collar del artefacto Tou Mu."
   
- POD_nushi_duty_steal_necklace_pre_decision: "Robar collar" #NT!
- POD_nushi_duty_steal_necklace_pre_decision_tooltip: "Termina la demanda de tu nushi" #NT!
- POD_nushi_duty_steal_necklace_pre_decision_desc: "Ve al [yomi|E] [hell_of_being_skinned_alive|E]. Como su nombre lo indica, este viaje puede ser muy mortal." #NT!
- POD_nushi_duty_steal_necklace_pre_decision_confirm: "Hecho" #NT!
- POD_nushi_duty_steal_necklace_pre_decision_effect_tooltip: "Descenderás a [yomi|E] y tendrás éxito o morirás." #NT!
+ POD_nushi_duty_steal_necklace_pre_decision: "Robar collar"
+ POD_nushi_duty_steal_necklace_pre_decision_tooltip: "Termina la demanda de tu nushi"
+ POD_nushi_duty_steal_necklace_pre_decision_desc: "Ve al [yomi|E] [hell_of_being_skinned_alive|E]. Como su nombre lo indica, este viaje puede ser muy mortal."
+ POD_nushi_duty_steal_necklace_pre_decision_confirm: "Hecho"
+ POD_nushi_duty_steal_necklace_pre_decision_effect_tooltip: "Descenderás a [yomi|E] y tendrás éxito o morirás."

@@ -14,6 +14,7 @@
  POD_rage_growth_wyld: "Tu [faith|E] es #TOOLTIP:GAME_FAITH_DOCTRINE,doctrine_triat_alignment_wyld #L alineado con Wyld#!#!"
  POD_rage_growth_weaver: "Tu [faith|E] es #TOOLTIP:GAME_FAITH_DOCTRINE,doctrine_triat_alignment_weaver #L Alineado con Weaver#!#!"
  POD_rage_growth_blood_running_hot: "Tienes el [GetPerk('blood_running_hot_perk').GetName(GetPlayer)] [perk|E]"
+ POD_rage_growth_berseker: "Tienes el [GetPerk('fomori_berseker_perk').GetName(GetPlayer)] [perk|E]" #NT!
  POD_rage_growth_stress: "Estás extremadamente estresado"
   
  POD_player_gnosis_regen_chance: "#TOOLTIP:POD_player_gnosis_regen_chance_tt #V;L [GetPlayer.MakeScope.ScriptValue('gnosis_regen_chance')|0]%#!#!"
@@ -29,10 +30,21 @@
  POD_gnosis_regen_piety_level_4: "Tu [piety_level|E] es [GetModifier('piety_level_4').GetNameWithTooltip|L]"
  POD_gnosis_regen_piety_level_5: "Tu [piety_level|E] es [GetModifier('piety_level_5').GetNameWithTooltip|L]"
  POD_gnosis_regen_kinfolk_gnosis: "Tienes [GetTrait('gnosis').GetName(GetPlayer)]"
+ POD_gnosis_regen_spirit_ties: "Tienes el [GetPerk('fomori_spirit_ties_perk').GetName(GetPlayer)] [perk|E]" #NT!
+ POD_artifact_helping_gnosis_chance: "Tienes un [artifact|E] mejorando tu probabilidad de regeneración de Gnosis" #NT!
  POD_gnosis_regen_stress: "Estás extremadamente estresado"
  POD_gnosis_regen_kinfolk_cap: "[GetTrait('kinfolk').GetName(GetPlayer)] no puede tener más de #V 3#! Gnosis"
   
+ POD_player_befriend_limit: "#TOOLTIP:POD_player_befriend_limit_tt #V;L [GetPlayer.MakeScope.ScriptValue('POD_befriend_limit')|0]#!#!" #NT!
+ POD_player_befriend_limit_tt: "[GetPlayer.MakeScope.GetScriptValueDesc('POD_befriend_limit')]" #NT!
+ POD_befriend_limit_setite: "[GetPlayer.GetDynasty.GetName] tiene #TOOLTIP:DYNASTY_PERK,setite_legacy_2 #L $setite_legacy_2_name$#!#!" #NT!
+ POD_befriend_limit_seelie: "[GetPlayer.GetDynasty.GetName] tiene #TOOLTIP:DYNASTY_PERK,seelie_romantic_legacy_2 #L $seelie_romantic_legacy_2_name$#!#!" #NT!
+  
+  
+ POD_FORMAT_BASE_POSITIVE: "$KEY$: #P $VALUE|0$#!" #NT!
+ POD_FORMAT_POSITIVE: "$KEY$: #P +$VALUE|0$#!" #NT!
  POD_FORMAT_PERCENTAGE_BASE: "$KEY$: #P $VALUE|0$%#!"
  POD_FORMAT_PERCENTAGE_MODIFIER: "$KEY$: #P +$VALUE|0$%#!"
  POD_FORMAT_PERCENTAGE_MODIFIER_NEGATIVE: "$KEY$: #N $VALUE|0$%#!"
+ POD_FORMAT_PERCENTAGE_DOUBLED: "$KEY$: #P +100%#!" #NT!
  POD_FORMAT_PERCENTAGE_NULLIFIED: "$KEY$: #N -100%#!"

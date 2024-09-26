@@ -276,14 +276,22 @@
  calling_song_perk_name: "Canción de llamada"
   
   #Sanguine: Blood Sorcery 
- corrosive_vitae_perk_name: "Vitae corrosiva"
- a_taste_of_blood_perk_name: "Un sabor de sangre"
- extinguish_vitae_perk_name: "Extinguir la vida"
- blood_of_potency_perk_name: "Sangre de potencia"
- scorpions_touch_perk_name: "El toque del escorpión"
- theft_of_vitae_perk_name: "Robo de vitae"
- baals_curse_perk_name: "La maldición de Baal"
- cauldron_of_blood_perk_name: "Caldero de sangre"
+ #  corrosive_vitae_perk_name: "Vitae corrosiva" #NT!
+ #  a_taste_of_blood_perk_name: "Un sabor a sangre" #NT!
+ #  extinguish_vitae_perk_name: "Extinguir la vitae" #NT!
+ #  blood_of_potency_perk_name: "Sangre de potencia" #NT!
+ #  scorpions_touch_perk_name: "El toque del escorpión" #NT!
+ #  theft_of_vitae_perk_name: "Robo de vitae" #NT!
+ #  baals_curse_perk_name: "La maldición de Baal" #NT!
+ #  cauldron_of_blood_perk_name: "Caldero de sangre" #NT!
+ arcane_knowledge_1_perk_name: "Conocimiento arcano básico" #NT!
+ arcane_knowledge_2_perk_name: "Conocimiento arcano mejorado" #NT!
+ arcane_knowledge_3_perk_name: "Conocimiento arcano avanzado" #NT!
+ arcane_knowledge_4_perk_name: "Conocimiento arcano dominado" #NT!
+ arcane_mastery_1_perk_name: "Maestría arcana básica" #NT!
+ arcane_mastery_2_perk_name: "Maestría arcana mejorada" #NT!
+ arcane_mastery_3_perk_name: "Maestría arcana avanzada" #NT!
+ arcane_mastery_4_perk_name: "Maestría arcana dominada" #NT!
  bloodsorceryadvanced_perk_name: "Hechicería de sangre avanzada"
   
   #Sanguine: Presence 
@@ -451,7 +459,7 @@
  condemn_the_sins_of_the_father_perk_name: "Condenar los pecados del padre"
  erosion_perk_name: "Erosión"
   
-  #Sanguine: Mytherceria 
+  #Phlegmatic: Mytherceria 
   
  fey_sight_perk_name: "Visión feérica"
  folderol_perk_name: "Carpeta de anillas"
@@ -467,6 +475,14 @@
  earth_sword_perk_name: "Espada de tierra"
  absorb_the_mind_perk_name: "Absorber la mente"
  basilisks_touch_perk_name: "El toque del basilisco"
+  
+  #Sanguine: Thin-Blood Alchemy 
+ far_reach_perk_name: "Largo alcance" #NT!
+ counterfeit_1_perk_name: "Falsificación" #NT!
+ counterfeit_2_perk_name: "Falsificación" #NT!
+ counterfeit_3_perk_name: "Falsificación" #NT!
+ counterfeit_4_perk_name: "Falsificación" #NT!
+ thinbloodalchemyadvanced_perk_name: "Alquimia avanzada de sangre fina" #NT!
   
   #Faith: True Faith 
  dominus_vobiscum_perk_name: "Dominus vobiscum"
@@ -1256,16 +1272,6 @@
   
   # Tan 
   
- feng_tan_1_perk_name: "Nivel Uno Feng Tan"
- feng_tan_2_perk_name: "Feng Tan de nivel dos"
- feng_tan_3_perk_name: "Feng Tan de nivel tres"
- feng_tan_4_perk_name: "Feng Tan de nivel cuatro"
- feng_tan_5_perk_name: "Feng Tan de nivel cinco"
- lung_tan_1_perk_name: "Bronceado pulmonar de nivel uno"
- lung_tan_2_perk_name: "Bronceado pulmonar de nivel dos"
- lung_tan_3_perk_name: "Bronceado pulmonar de nivel tres"
- lung_tan_4_perk_name: "Bronceado pulmonar de nivel cuatro"
- lung_tan_5_perk_name: "Bronceado pulmonar de nivel cinco"
  body_mending_technique_perk_name: "Técnica de reparación corporal"
  lingering_aid_of_the_caregiver_perk_name: "Ayuda prolongada del cuidador"
  see_the_lands_of_the_spirit_perk_name: "Ver las Tierras de los Espíritus"
@@ -1310,10 +1316,10 @@
  death_touch_perk_name: "Toque de muerte"
  eye_of_the_tempest_perk_name: "Ojo de la tempestad"
  tread_the_dragon_tracks_perk_name: "Sigue las huellas del dragón"
- advanced_lung_tan_perk_name: "Cuerpo divino del Emperador Celestial"
- advanced_feng_tan_perk_name: "Cuerpo Divino del Emperador Celestial"
+ lungtan_godbody_of_the_celestial_emperor_perk_name: "Cuerpo divino del Emperador Celestial" #NT!
+ fengtan_godbody_of_the_celestial_emperor_perk_name: "Cuerpo divino del Emperador Celestial" #NT!
   
-  #Gifts : Homid 
+  #Gifts: Homid 
  persuasion_perk_name: "Persuasión"
  apecraftsblessings_perk_name: "Las bendiciones de Apecraft"
  divide_perk_name: "Dividir"
@@ -1323,7 +1329,7 @@
  assimilation_perk_name: "Asimilación"
  beyond_human_perk_name: "Más allá de lo humano"
   
-  #Gifts : Lupus 
+  #Gifts: Lupus 
  predators_arsenal_perk_name: "El arsenal del depredador"
  axis_mundi_perk_name: "Eje mundial"
  wyld_ferocity_perk_name: "Ferocidad salvaje"
@@ -1333,7 +1339,7 @@
  boon_fathers_perk_name: "Bendición de los padres animales"
  elemental_gift_perk_name: "Don elemental"
   
-  #Gifts : Metis 
+  #Gifts: Metis 
  primal_anger_perk_name: "Ira primaria"
  shed_perk_name: "Cobertizo"
  curse_of_hatred_perk_name: "Maldición del odio"
@@ -1343,7 +1349,7 @@
  protean_form_perk_name: "Forma proteica"
  umbral_body_perk_name: "Cuerpo Umbral"
   
-  #Gifts : Ahroun 
+  #Gifts: Ahroun 
  battlesense_perk_name: "Sentido de batalla"
  inspiration_perk_name: "Inspiración"
  pack_tactics_perk_name: "Tácticas de manada"
@@ -1354,7 +1360,7 @@
  shared_strength_perk_name: "Fuerza compartida"
  unstoppable_warrior_perk_name: "Guerrero imparable"
   
-  #Gifts : Galliard 
+  #Gifts: Galliard 
  primal_song_perk_name: "Canción primigenia"
  howls_night_perk_name: "Aullidos en la noche"
  mimic_perk_name: "Imitar"
@@ -1365,7 +1371,7 @@
  song_siren_perk_name: "Canción de la sirena"
  storyteller_perk_name: "Cuentista"
   
-  #Gifts : Philodox 
+  #Gifts: Philodox 
  truth_gaia_perk_name: "La verdad de Gea"
  aura_leadership_perk_name: "Aura de liderazgo"
  fangs_judgment_perk_name: "Colmillos del juicio"
@@ -1376,7 +1382,7 @@
  roll_over_perk_name: "Dese la vuelta"
  release_from_bondage_perk_name: "Liberación de la esclavitud"
   
-  #Gifts : Ragabash 
+  #Gifts: Ragabash 
  liar_face_perk_name: "Cara de mentiroso"
  snow_running_perk_name: "Correr en la nieve"
  obscure_truth_perk_name: "Ocultar la verdad"
@@ -1387,7 +1393,7 @@
  fool_luck_perk_name: "La suerte del tonto"
  firebringer_perk_name: "Portador de fuego"
   
-  #Gifts : Theurge 
+  #Gifts: Theurge 
  spirit_speech_perk_name: "Discurso espiritual"
  sense_wyrm_perk_name: "Sentido Wyrm"
  hear_silence_perk_name: "Escucha el silencio"
@@ -1398,7 +1404,7 @@
  spirit_vessel_perk_name: "Vaso espiritual"
  rebirthing_perk_name: "Renacimiento"
   
-  #Gifts : Hengeyokai 
+  #Gifts: Hengeyokai 
  create_element_perk_name: "Crear elemento"
  mindspeak_perk_name: "Hablar con la mente"
  sense_imbalance_perk_name: "Desequilibrio sensorial"
@@ -1408,7 +1414,7 @@
  exorcism_perk_name: "Exorcismo"
  part_the_wall_perk_name: "Parte el muro"
   
-  #Gifts : Hakken 
+  #Gifts: Hakken 
  dream_of_a_thousand_cranes_perk_name: "Sueño de mil grullas"
  fair_path_perk_name: "Camino Justo"
  storm_winds_slash_perk_name: "Corte de vientos tormentosos"
@@ -1416,7 +1422,7 @@
  living_treasure_perk_name: "Tesoro viviente"
  divine_wind_perk_name: "Viento divino"
   
-  #Gifts : Kumo 
+  #Gifts: Kumo 
  nimbleness_perk_name: "Agilidad"
  shadow_step_perk_name: "Paso sombra"
  spittle_of_corruption_perk_name: "Saliva de corrupción"
@@ -1424,7 +1430,7 @@
  web_tremors_perk_name: "Temblores en la red"
  elder_wisdom_perk_name: "Sabiduría mayor"
   
-  #Gifts : Ajaba 
+  #Gifts: Ajaba 
  feral_grin_perk_name: "Sonrisa salvaje"
  gift_of_terror_perk_name: "Regalo de terror"
  crushing_jaws_perk_name: "Mandíbulas aplastantes"
@@ -1434,7 +1440,7 @@
  gorge_perk_name: "Garganta"
  ajaba_survivor_perk_name: "Sobreviviente"
   
-  #Gifts : Nuwisha 
+  #Gifts: Nuwisha 
  song_of_kokopelli_perk_name: "Canción de Kokopelli"
  xochipillis_touch_perk_name: "El toque de Xochipilli"
  umbral_map_perk_name: "Mapa Umbral"
@@ -1445,7 +1451,7 @@
  umbral_target_perk_name: "Objetivo Umbral"
  coyotes_howl_perk_name: "El aullido del coyote"
   
-  #Gifts : Apis 
+  #Gifts: Apis 
  gift_of_flesh_perk_name: "Don de carne"
  scent_of_changing_blood_perk_name: "Aroma de sangre cambiante"
  sun_and_moon_signs_perk_name: "Signos del Sol y la Luna"
@@ -1456,7 +1462,7 @@
  form_of_the_land_titan_perk_name: "Forma del Titán Terrestre"
  mercy_for_the_misbegotten_perk_name: "Misericordia para los desventurados"
   
-  #Gifts : Camazotz 
+  #Gifts: Camazotz 
  private_whispers_perk_name: "Susurros privados"
  shadow_skin_perk_name: "Piel de sombra"
  bloodletting_bite_perk_name: "Mordedura sangrienta"
@@ -1469,7 +1475,7 @@
  reading_the_dark_heart_perk_name: "Leyendo el corazón oscuro"
  shadows_of_mictlan_perk_name: "Sombras del Mictlán"
   
-  #Gifts : Grondr 
+  #Gifts: Grondr 
  root_perk_name: "Raíz"
  taint_eating_perk_name: "Comer corrupto"
  furrow_perk_name: "Surco"

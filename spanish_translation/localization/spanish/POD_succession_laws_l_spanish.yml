@@ -8,3 +8,16 @@
  tooltip_vampire_vote_strength_diplomacy: "Alta diplomacia"
  tooltip_vampire_vote_strength_intrigue: "Alta intriga"
  tooltip_vampire_elector_vote_decrepit: "Este tipo es viejo. Muy viejo. Será mejor que te pongas de su lado."
+  
+ overextension_law: "Sobreextensión" #NT!
+ overextension_0: "Sin sobreextensión" #NT!
+ overextension_0_effects_not_in_prev: "#R Este es el estado predeterminado y se mantendrá así siempre que el tamaño de tu reino no exceda los 50.#!" #NT!
+ overextension_1: "Sobreextensión creciente" #NT!
+ overextension_1_effects: "#R Este nivel sucederá si tu reino tiene un tamaño de reino superior a 50 pero inferior a 100.#!\n$EFFECT_LIST_BULLET$You desbloquea una posición de corte [GetCourtPositionType('imperial_envoy_court_position').GetName()] que puede ayudarte a aliviar la tensión." #NT!
+ overextension_2: "Sobreextensión grave" #NT!
+ overextension_2_effects: "#R Este nivel sucederá si tu reino tiene un tamaño de reino superior a 100 pero inferior a 150.#!\n$EFFECT_LIST_BULLET$You desbloquea una posición de corte [GetCourtPositionType('imperial_chancellor_court_position').GetName()] que puede ayudarte a aliviar la tensión." #NT!
+ overextension_3: "Sobreextensión paralizante" #NT!
+ overextension_3_effects: "#R Este nivel sucederá si tu reino tiene un tamaño de reino superior a 150.#!\n$EFFECT_LIST_BULLET$You desbloquea una posición de corte [GetCourtPositionType('imperial_minister_court_position').GetName()] que puede ayudarte a aliviar la tensión." #NT!
+ always_no_tt: "Esto no se puede cambiar manualmente." #NT!
+  
+  

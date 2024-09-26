@@ -1,4 +1,6 @@
 ﻿l_spanish:
+ trait_use_ingame_chargen: "Utilice el creador de personajes del juego" #NT!
+ trait_use_ingame_chargen_desc: "Recomendado para nuevos jugadores.\n\nAl ingresar al juego, pasarás por una serie de eventos en los que podrás elegir un [splat|E] y todos los rasgos y modificadores sobrenaturales necesarios se configurarán automáticamente." #NT!
   
  trait_unusual: "Inusual"
  trait_unusual_desc: "Hay algo extraño en esta persona."
@@ -8,6 +10,9 @@
   
  trait_diablerist: "Diabolista"
  trait_diablerist_desc: "Este personaje ha cometido [diablerie|E] al consumir la sangre del corazón de otro vampiro, devorando el alma."
+  
+ trait_cultist: "Cultista demoníaco" #NT!
+ trait_cultist_desc: "Este personaje ha hecho un pacto con un poder demoníaco para realizar inversiones infernales." #NT!
   
  trait_infernalist: "Infernalista"
  trait_infernalist_desc: "Este personaje ha hecho un pacto con un poder demoníaco para realizar inversiones infernales."
@@ -23,6 +28,8 @@
   
  trait_werewolf: "Hombre-lobo"
  trait_werewolf_desc: "Una criatura sobrenatural que cambia de forma. Se hacen llamar "Garou"."
+ trait_track_werewolf: "Rango" #NT!
+ trait_track_werewolf_desc: "#bold Nivel 2:#! [umbra_aptitude|E]: [grace_i]#P +25%#!\n#bold Nivel 3:#! [umbra_aptitude|E]: [grace_i]#P +25%#!\n#bold Nivel 4:#! [umbra_aptitude|E]: [grace_i]#P +50%#!\n#bold Nivel 5:#! [umbra_aptitude|E]: [grace_i]#P +50%#!\n#bold Nivel 6:#! [umbra_aptitude|E]: [grace_i]#P +75%#!\n#italic El rango es una parte fundamental de la sociedad Garou, y la manifestación más completa de la naturaleza jerárquica de hombres lobo.#!" #NT!
   
  trait_mage: "Mago"
  trait_mage_desc: "Humanos con avatares despertados que les permiten ejercer verdadera magia y alterar el tejido de la realidad."
@@ -263,9 +270,11 @@
   
  trait_necromancy: "Nigromancia"
  trait_necromancy_desc: "[necromancy|E] es una forma de [bloodsorcery|E] que trata exclusivamente con el mundo de los muertos: los espectros y los [shadowlands|E]. Así como hay diferentes estilos de [bloodsorcery|E] convencional, hay una variedad de prácticas de [necromancy|E]. Es practicado principalmente por los Giovanni."
+ trait_necromancy_character_desc: "$necromancy_paths_display$\n\n$trait_necromancy_desc$" #NT!
   
  trait_necromancyadvanced: "Nigromancia avanzada"
- trait_necromancyadvanced_desc: "[necromancy|E] es una forma de [bloodsorcery|E] que trata exclusivamente con el mundo de los muertos: los espectros y los [shadowlands|E]. Así como hay diferentes estilos de [bloodsorcery|E] convencional, hay una variedad de prácticas de [necromancy|E]. Es practicado principalmente por los Giovanni."
+  
+ necromancy_paths_display: "#medium [ROOT.Char.GetFirstNameNoTooltip] tiene conocimiento de estos caminos de Nigromancia:[AddTextIf(GetScriptedGui('has_cappadocian_necromancy_sgui').IsShown(GuiScope.SetRoot(ROOT.Char.MakeScope).End),'\n$TAB|q$@cappadocian_icon! Cappadocian')][AddTextIf(GetScriptedGui('has_giovanni_necromancy_sgui').IsShown(GuiScope.SetRoot(ROOT.Char.MakeScope).End),'\n$TAB|q$@giovanni_icon! Giovanni')][AddTextIf(GetScriptedGui('has_harbinger_necromancy_sgui').IsShown(GuiScope.SetRoot(ROOT.Char.MakeScope).End),'\n$TAB|q$@harbinger_icon! Harbinger')][AddTextIf(GetScriptedGui('has_impundulu_necromancy_sgui').IsShown(GuiScope.SetRoot(ROOT.Char.MakeScope).End),'\n$TAB|q$@impundulu_icon! Impundulu')][AddTextIf(GetScriptedGui('has_lamia_necromancy_sgui').IsShown(GuiScope.SetRoot(ROOT.Char.MakeScope).End),'\n$TAB|q$@lamia_icon! Lamia')][AddTextIf(GetScriptedGui('has_nagaraja_necromancy_sgui').IsShown(GuiScope.SetRoot(ROOT.Char.MakeScope).End),'\n$TAB|q$@nagaraja_icon! Nagaraja')]#!" #NT!
   
  trait_obeah: "Obeah"
  trait_obeah_desc: "Obeah es el único [discipline|E] de los Salubri, también conocido como el Camino Valeren del Sanador.\n\nObeah se originó con Saulot en sus viajes por el Este, donde aprendió de los Kuei-jin el uso de la Perla del Dragón. Aprender Obeah hace que se desarrolle un tercer ojo en el medio de la frente."
@@ -296,6 +305,8 @@
   
  trait_presenceadvanced: "Presencia Avanzada"
  trait_presenceadvanced_desc: "La presencia es el [discipline|E] de la fascinación sobrenatural y la manipulación emocional que permite a los Vástagos atraer, influir y controlar a las multitudes.\n\nLa presencia suavizó la maldición de Dios sobre [cainites|E], ya que hace que el vampiro se convierta en el centro de atención. Puede ser fascinante, seductor o intimidante para quienes se encuentran cerca."
+  
+ TRAIT_FLAG_DESC_can_intensify_herd_resonance: "Puede cambiar la intensidad de los miembros de su manada [resonance|E]" #NT!
   
  trait_protean: "Protean"
  trait_protean_desc: "Protean es un [discipline|E] que otorga a los vampiros la capacidad de cambiar de forma, desde desarrollar garras salvajes hasta evaporarse en una nube de niebla.\n\nProtean es parte de la maldición de Dios sobre Caín en el aspecto de que pela la fachada de humanidad que todo vampiro debe mantener, revelando a la Bestia dentro de su alma."
@@ -352,10 +363,53 @@
  trait_visceratikaadvanced_desc: "El [discipline|E] de Visceratika es posesión exclusiva del linaje Gárgola y es una extensión de su afinidad natural por la piedra, la tierra y las cosas hechas de ellas.\n\nVisceratika presenta habilidades de cambio de forma similares a las de Protean, aunque con un mayor énfasis en la defensa."
   
  trait_bloodsorcery: "Hechicería de sangre"
- trait_bloodsorcery_desc: "[bloodsorcery|E] se refiere a la magia realizada por vampiros, impulsada por prácticas religiosas u ocultas y el poder de la vitae [cainite|E].\n\nA través de la práctica de [bloodsorcery|E], un [cainite|E] puede invocar fuego, controlar el clima y hacer muchas otras cosas que son antinaturales incluso para los estándares vampíricos."
-  
  trait_bloodsorceryadvanced: "Hechicería de sangre avanzada"
- trait_bloodsorceryadvanced_desc: "[bloodsorcery|E] se refiere a la magia realizada por vampiros, impulsada por prácticas religiosas u ocultas y el poder de la vitae [cainite|E].\n\nA través de la práctica de [bloodsorcery|E], un [cainite|E] puede invocar fuego, controlar el clima y hacer muchas otras cosas que son antinaturales incluso para los estándares vampíricos."
+ trait_bloodsorcery_desc: "[bloodsorcery|E] se refiere a la magia realizada por vampiros, impulsada por prácticas religiosas u ocultas y el poder de la vitae [cainite|E].\n\nA través de la práctica de [bloodsorcery|E], un [cainite|E] puede invocar fuego, controlar el clima y hacer muchas otras cosas que son antinaturales incluso para los estándares vampíricos."
+ trait_bloodsorcery_character_desc: "$bloodmagic_paths_display$\n\n$trait_bloodsorcery_desc$" #NT!
+  
+ bloodmagic_paths_display: "#medium [ROOT.Char.GetFirstNameNoTooltip] tiene conocimiento de estos [bs_traditions|E]:[AddTextIf(GetScriptedGui('has_thaumaturgy_bloodmagic_sgui').IsShown(GuiScope.SetRoot(ROOT.Char.MakeScope).End),'\n$TAB|q$@tremere_icon! Thaumaturgy')][AddTextIf(GetScriptedGui('has_dur_an_ki_bloodmagic_sgui').IsShown(GuiScope.SetRoot(ROOT.Char.MakeScope).End),'\n$TAB|q$@assamite_icon! Dur-An-Ki')][AddTextIf(GetScriptedGui('has_akhu_bloodmagic_sgui').IsShown(GuiScope.SetRoot(ROOT.Char.MakeScope).End),'\n$TAB|q$@setite_icon! Akhu')][AddTextIf(GetScriptedGui('has_sadhana_bloodmagic_sgui').IsShown(GuiScope.SetRoot(ROOT.Char.MakeScope).End),'\n$TAB|q$@ravnos_icon! Sadhana')][AddTextIf(GetScriptedGui('has_koldunic_bloodmagic_sgui').IsShown(GuiScope.SetRoot(ROOT.Char.MakeScope).End),'\n$TAB|q$@tzimisce_icon! Koldunic')]#!" #NT!
+  
+ TRAIT_FLAG_DESC_unlock_incorporeal_form: "Puede transformarse en un [GetModifier( 'POD_shapeshift_form_incorporeal_modifier' ).GetNameWithTooltip|L]" #NT!
+  
+ trait_darkthaumaturgy: "Taumaturgia oscura"
+ trait_darkthaumaturgyadvanced: "Taumaturgia oscura avanzada"
+ trait_darkthaumaturgy_desc: "Taumaturgia Oscura es el nombre que se le da a [thaumaturgy|E] aprendido de los demonios.\n\nLos vampiros pueden hacer pactos con demonios para aprender los secretos de [bloodsorcery|E], tal como lo hacen los magos mortales para aprender otras magias infernales; lo hacen a costa de cualquier alma que les quede, sellando un trato que es una ruta rápida al poder mágico."
+  
+ trait_sielanicthaumaturgy: "Taumaturgia sielánica"
+ trait_sielanicthaumaturgyadvanced: "Taumaturgia Sielánica Avanzada"
+ trait_sielanicthaumaturgy_desc: "La taumaturgia sielánica es una forma de taumaturgia inspirada en el dios pagano Telyavel y practicada por los Tremere telyavelic, un linaje de los Tremere nativos de Lituania. Los Telvays aprendieron a utilizar el poder de siela, el espíritu animista latente en la tierra, la piedra, las plantas y los animales de su patria adoptiva."
+  
+ trait_ogham: "Ogham"
+ trait_oghamadvanced: "Ogham avanzado"
+ trait_ogham_desc: "Ogham es una forma muy limitada de [bloodsorcery|E] basada en runas celtas practicadas por los Lhiannan que aprovecha el fragmento espiritual del linaje, concediendo poder dentro de su territorio."
+  
+ trait_sihr: "Sihr"
+ trait_sihradvanced: "Sihr Avanzado"
+ trait_sihr_desc: "Sihr (que significa "hechizo" en árabe) es un [discipline|E] de [bloodsorcery|E] que se practica ampliamente en el mundo islámico. En la Edad Oscura, su diferencia con otras formas de [bloodsorcery|E] era que su usuario necesitaba tener una calificación alta en el Camino de la Comunidad o el Camino del Cielo para realizar la magia."
+  
+ trait_abyssmysticism: "Misticismo del abismo"
+ trait_abyssmysticismadvanced: "Misticismo del Abismo Avanzado"
+ trait_abyssmysticism_desc: "El Misticismo del Abismo es una forma de [bloodsorcery|E], derivada de la Obtenebración [discipline|E]. Obviamente, este arte arcano es practicado casi exclusivamente por miembros de las Lasombra [Clan|E]. Aquellos que practican estas artes místicas son llamados Los Sombríos."
+  
+ trait_sadhana: "Sadhana"
+ trait_sadhanaadvanced: "Sadhana avanzada"
+ trait_sadhana_desc: "Sadhana es una forma de hinduismo [bloodsorcery|E] que precede a la destacada taumaturgia hermética de los Tremere [Clan|E] en miles de años. La practican los brahmanes hindúes [cainites|E] de la India, conocidos como rakta-sadhus o incluso brahmanes de sangre."
+  
+ trait_akhu: "Akhu"
+ trait_akhuadvanced: "Akhu avanzado"
+ trait_akhu_desc: "Akhu, a menudo llamado Hechicería Setita por los forasteros, es la antigua tradición [bloodsorcery|E] de los Seguidores de Set.\n\nEn el apogeo de Egipto, antes de su conversión al cristianismo a manos del Imperio Romano, la magia era algo común, practicada por mortales y vampiros. similar."
+  
+ trait_koldunicsorcery: "Hechicería koldúnica"
+ trait_koldunicsorceryadvanced: "Hechicería koldúnica avanzada"
+ trait_koldunicsorcery_desc: "La hechicería koldúnica o koldunismo es una forma de [cainite|E] [bloodsorcery|E] practicada por los Tzimisce.\n\nLa brujería koldúnica es similar a la taumaturgia en idea, pero muy diferente en la práctica."
+  
+ trait_duranki: "Dur-An-Ki"
+ trait_durankiadvanced: "Dur-An-Ki Avanzado"
+ trait_duranki_desc: "[durnaki|E] (Maestro del Cielo y la Tierra) es una forma de [bloodsorcery|E] practicada por Vástagos de Oriente Medio y África. Es una forma de magia muy antigua, que se nutre de una gran variedad de tradiciones religiosas mortales y es anterior a la Taumaturgia, a la que se parece en muchos aspectos."
+  
+ trait_thaumaturgy: "Taumaturgia"
+ trait_thaumaturgyadvanced: "Taumaturgia avanzada"
+ trait_thaumaturgy_desc: "La taumaturgia es la forma celosamente guardada de [bloodsorcery|E] practicada por los vampíricos [Clan|E] Tremere.\n\nCreada a través de una investigación exhaustiva y una amplia experimentación, la taumaturgia utiliza los principios de la magia hermética utilizada por la Casa Tremere cuando todavía era una camarilla de magos, adaptada para ser alimentada por el poder mágico inherente de Vitae en lugar de la Quintaesencia."
   
  trait_fortitudeadvanced: "Fortaleza avanzada"
  trait_fortitudeadvanced_desc: "La fortaleza es un [discipline|E] que otorga a los Vástagos una dureza sobrenatural, hasta el punto de resistir el fuego y la luz del sol.\n\nLa fortaleza otorga al [cainite|E] la capacidad de resistir todo tipo de daño, sin embargo cumple su parte de la maldición de Dios al generar arrogancia y exceso de confianza."
@@ -402,66 +456,6 @@
  trait_abombweadvanced: "Abombwe Avanzado"
  trait_abombweadvanced_desc: "Abombwe es un [discipline|E] practicado por el Legado Akunanse de los Laibon y el misterioso linaje Bonsam de la Edad Media. Abombwe utiliza la estrecha conexión y el control del vampiro sobre sus propias Bestias (y las de los demás), además de canalizar el poder de la Bestia para diversos fines."
   
- trait_sielanicthaumaturgy: "Taumaturgia sielánica"
- trait_sielanicthaumaturgy_desc: "La taumaturgia sielánica es una forma de taumaturgia inspirada en el dios pagano Telyavel y practicada por los Tremere telyavelic, un linaje de los Tremere nativos de Lituania. Los Telvays aprendieron a utilizar el poder de siela, el espíritu animista latente en la tierra, la piedra, las plantas y los animales de su patria adoptiva."
-  
- trait_sielanicthaumaturgyadvanced: "Taumaturgia Sielánica Avanzada"
- trait_sielanicthaumaturgyadvanced_desc: "La taumaturgia sielánica es una forma de taumaturgia inspirada en el dios pagano Telyavel y practicada por los Tremere telyavelic, un linaje de los Tremere nativos de Lituania. Los Telvays aprendieron a utilizar el poder de siela, el espíritu animista latente en la tierra, la piedra, las plantas y los animales de su patria adoptiva."
-  
- trait_duranki: "Dur-An-Ki"
- trait_duranki_desc: "[durnaki|E] (Maestro del Cielo y la Tierra) es una forma de [bloodsorcery|E] practicada por Vástagos de Oriente Medio y África. Es una forma de magia muy antigua, que se nutre de una gran variedad de tradiciones religiosas mortales y es anterior a la Taumaturgia, a la que se parece en muchos aspectos."
-  
- trait_durankiadvanced: "Dur-An-Ki Avanzado"
- trait_durankiadvanced_desc: "[durnaki|E] (Maestro del Cielo y la Tierra) es una forma de [bloodsorcery|E] practicada por Vástagos de Oriente Medio y África. Es una forma de magia muy antigua, que se nutre de una gran variedad de tradiciones religiosas mortales y es anterior a la Taumaturgia, a la que se parece en muchos aspectos."
-  
- trait_ogham: "Ogham"
- trait_ogham_desc: "Ogham es una forma muy limitada de [bloodsorcery|E] basada en runas celtas practicadas por los Lhiannan que aprovecha el fragmento espiritual del linaje, concediendo poder dentro de su territorio."
-  
- trait_oghamadvanced: "Ogham avanzado"
- trait_oghamadvanced_desc: "Ogham es una forma muy limitada de [bloodsorcery|E] basada en runas celtas practicadas por los Lhiannan que aprovecha el fragmento espiritual del linaje, concediendo poder dentro de su territorio."
-  
- trait_koldunicsorcery: "Hechicería koldúnica"
- trait_koldunicsorcery_desc: "La hechicería koldúnica o koldunismo es una forma de [cainite|E] [bloodsorcery|E] practicada por los Tzimisce.\n\nLa brujería koldúnica es similar a la taumaturgia en idea, pero muy diferente en la práctica."
-  
- trait_koldunicsorceryadvanced: "Hechicería koldúnica avanzada"
- trait_koldunicsorceryadvanced_desc: "La hechicería koldúnica o koldunismo es una forma de [cainite|E] [bloodsorcery|E] practicada por los Tzimisce.\n\nLa brujería koldúnica es similar a la taumaturgia en idea, pero muy diferente en la práctica."
-  
- trait_abyssmysticism: "Misticismo del abismo"
- trait_abyssmysticism_desc: "El Misticismo del Abismo es una forma de [bloodsorcery|E], derivada de la Obtenebración [discipline|E]. Obviamente, este arte arcano es practicado casi exclusivamente por miembros de las Lasombra [Clan|E]. Aquellos que practican estas artes místicas son llamados Los Sombríos."
-  
- trait_abyssmysticismadvanced: "Misticismo del Abismo Avanzado"
- trait_abyssmysticismadvanced_desc: "El Misticismo del Abismo es una forma de [bloodsorcery|E], derivada de la Obtenebración [discipline|E]. Evidentemente, este arte arcano es practicado casi exclusivamente por miembros de [Clan|E] Lasombra. Quienes practican estas artes místicas se llaman Los Sombríos."
-  
- trait_sadhana: "Sadhana"
- trait_sadhana_desc: "Sadhana es una forma de hinduismo [bloodsorcery|E] que precede a la destacada taumaturgia hermética de los Tremere [Clan|E] en miles de años. La practican los brahmanes hindúes [cainites|E] de la India, conocidos como rakta-sadhus o incluso brahmanes de sangre."
-  
- trait_sadhanaadvanced: "Sadhana avanzada"
- trait_sadhanaadvanced_desc: "Sadhana es una forma de hinduismo [bloodsorcery|E] que precede a la destacada taumaturgia hermética de los Tremere [Clan|E] en miles de años. La practican los brahmanes hindúes [cainites|E] de la India, conocidos como rakta-sadhus o incluso brahmanes de sangre."
-  
- trait_sihr: "Sihr"
- trait_sihr_desc: "Sihr (que significa "hechizo" en árabe) es un [discipline|E] de [bloodsorcery|E] que se practica ampliamente en el mundo islámico. En la Edad Oscura, su diferencia con otras formas de [bloodsorcery|E] era que su usuario necesitaba tener una calificación alta en el Camino de la Comunidad o el Camino del Cielo para realizar la magia."
-  
- trait_sihradvanced: "Sihr Avanzado"
- trait_sihradvanced_desc: "Sihr (que significa "hechizo" en árabe) es un [discipline|E] de [bloodsorcery|E] que se practica ampliamente en el mundo islámico. En la Edad Oscura, su diferencia con otras formas de [bloodsorcery|E] era que su usuario necesitaba tener una calificación alta en el Camino de la Comunidad o el Camino del Cielo para realizar la magia."
-  
- trait_akhu: "Akhu"
- trait_akhu_desc: "Akhu, a menudo llamado Hechicería Setita por los forasteros, es la antigua tradición [bloodsorcery|E] de los Seguidores de Set.\n\nEn el apogeo de Egipto, antes de su conversión al cristianismo a manos del Imperio Romano, la magia era algo común, practicada por mortales y vampiros. similar."
-  
- trait_akhuadvanced: "Akhu avanzado"
- trait_akhuadvanced_desc: "Akhu, a menudo llamada hechicería Setita por los forasteros, es la antigua tradición [bloodsorcery|E] de los seguidores de Set.\n\nEn el apogeo de Egipto, antes de su conversión al cristianismo a manos del Imperio Romano, la magia era algo común, practicada por mortales y vampiros por igual."
-  
- trait_darkthaumaturgy: "Taumaturgia oscura"
- trait_darkthaumaturgy_desc: "Taumaturgia Oscura es el nombre que se le da a [thaumaturgy|E] aprendido de los demonios.\n\nLos vampiros pueden hacer pactos con demonios para aprender los secretos de [bloodsorcery|E], tal como lo hacen los magos mortales para aprender otras magias infernales; lo hacen a costa de cualquier alma que les quede, sellando un trato que es una ruta rápida al poder mágico."
-  
- trait_darkthaumaturgyadvanced: "Taumaturgia oscura avanzada"
- trait_darkthaumaturgyadvanced_desc: "Taumaturgia Oscura es el nombre que se le da a la Taumaturgia aprendida de los demonios.\n\nLos vampiros pueden hacer pactos con demonios para aprender los secretos de [bloodsorcery|E], tal como lo hacen los magos mortales para aprender otras magias infernales; lo hacen a costa de cualquier alma que les quede, sellando un trato que es una ruta rápida al poder mágico."
-  
- trait_thaumaturgy: "Taumaturgia"
- trait_thaumaturgy_desc: "La taumaturgia es la forma celosamente guardada de [bloodsorcery|E] practicada por los vampíricos [Clan|E] Tremere.\n\nCreada a través de una investigación exhaustiva y una amplia experimentación, la taumaturgia utiliza los principios de la magia hermética utilizada por la Casa Tremere cuando todavía era una camarilla de magos, adaptada para ser alimentada por el poder mágico inherente de Vitae en lugar de la Quintaesencia."
-  
- trait_thaumaturgyadvanced: "Taumaturgia avanzada"
- trait_thaumaturgyadvanced_desc: "La taumaturgia es la forma celosamente guardada de [bloodsorcery|E] practicada por los vampíricos [Clan|E] Tremere.\n\nCreada a través de una investigación exhaustiva y una amplia experimentación, la taumaturgia utiliza los principios de la magia hermética utilizada por la Casa Tremere cuando todavía era una camarilla de magos, adaptada para ser alimentada por el poder mágico inherente de Vitae en lugar de la Quintaesencia."
-  
  trait_bardo: "Bardo"
  trait_bardo_desc: "Bardo es la firma [discipline|E] practicada por los hijos de Osiris, transmitida a ellos por la deidad egipcia Osiris."
   
@@ -502,16 +496,6 @@
  trait_deimosdiscipline: "Deimos"
  trait_abombodiscipline: "abombo"
  trait_abombwediscipline: "Abombwe"
- trait_sielanicthaumaturgydiscipline: "Taumaturgia sielánica"
- trait_durankidiscipline: "Dur-An-Ki"
- trait_oghamdiscipline: "Ogham"
- trait_koldunicsorcerydiscipline: "Hechicería koldúnica"
- trait_abyssmysticismdiscipline: "Misticismo del abismo"
- trait_sadhanadiscipline: "Sadhana"
- trait_sihrdiscipline: "Sihr"
- trait_akhudiscipline: "Akhu"
- trait_darkthaumaturgydiscipline: "Taumaturgia oscura"
- trait_thaumaturgydiscipline: "Taumaturgia"
  trait_bardodiscipline: "Bardo"
   
  trait_supehunter: "Cazador"
@@ -657,13 +641,30 @@
   
  trait_kinfolk: "Parientes"
  trait_kinfolk_desc: "De sangre de lobo, descendiente de los Garou."
+ trait_werewolf_kinfolk: "Familia Garou" #NT!
+ trait_werewolf_kinfolk_desc: "De sangre de lobo, descendiente de los Garou." #NT!
+ trait_gurahl_kinfolk: "Familiares de los Gurahl" #NT!
+ trait_mokole_kinfolk: "Familiares de Mokolé" #NT!
+ trait_ajaba_kinfolk: "Familiares de Ajaba" #NT!
+ trait_bastet_kinfolk: "Parientes de Bastet" #NT!
+ trait_rokea_kinfolk: "Familiares de Rokea" #NT!
+ trait_corax_kinfolk: "Parientes de Corax" #NT!
+ trait_kitsune_kinfolk: "Familia Kitsune" #NT!
+ trait_ratkin_kinfolk: "Familia Ratkin" #NT!
+ trait_nagah_kinfolk: "Familiares de Nagah" #NT!
+ trait_nuwisha_kinfolk: "Familiares de Nuwisha" #NT!
+ trait_apis_kinfolk: "Familia de Apis" #NT!
+ trait_camazotz_kinfolk: "Parientes de Camazotz" #NT!
+ trait_grondr_kinfolk: "Familiares de Grondr" #NT!
   
  trait_true_faith: "Verdadera fe"
  trait_truefaith: "Verdadera fe"
  trait_truefaith_desc: "Este personaje cree verdaderamente en la presencia de lo Divino. [true_faith|E] es una parte fundamental de su alma y le da acceso a habilidades que algunos podrían considerar antinaturales. Pero cuidado, los individuos pecadores pueden acabar siendo despojados de sus dones divinos.\nEste rasgo desbloquea un nuevo árbol de estilo de vida."
+ trait_truefaith_character_desc: "[ROOT.Char.GetFirstNameNoTooltip] cree verdaderamente en la presencia de lo Divino. [true_faith|E] es una parte fundamental del alma de [ROOT.Char.GetHerHis] y le otorga a [ROOT.Char.GetHerHim] acceso a habilidades que algunos podrían considerar antinaturales. Pero cuidado, los individuos pecadores pueden eventualmente ser despojados de sus dones divinos.\nEste rasgo desbloquea un nuevo árbol de estilo de vida." #NT!
   
  trait_beatific: "Beatificado"
  trait_beatific_desc: "Este personaje, una encarnación ambulante de su Dios elegido, es un hacedor de milagros, un modelo de [true_faith|E] en un mundo de oscuridad. Esto le da acceso a habilidades que algunos podrían considerar antinaturales. Pero cuidado, los individuos pecadores pueden acabar siendo despojados de sus dones divinos."
+ trait_beatific_character_desc: "[ROOT.Char.GetFirstNameNoTooltip] es una encarnación ambulante del Dios elegido por [ROOT.Char.GetHerHis] y un hacedor de milagros, un modelo de [true_faith|E] en un mundo de oscuridad. Le otorga a [ROOT.Char.GetHerHim] acceso a habilidades que algunos podrían considerar antinaturales. Pero cuidado, los individuos pecadores pueden acabar siendo despojados de sus dones divinos." #NT!
  trait_track_beatific: "Milagros"
  trait_track_beatific_desc: "#bold Nivel 1:#! Libera $POD_demon_unearthbound_decision$ [decision|E]. Como [character_interaction|E], te permite desterrar un personaje espectro/demonio al [dark_kingdom|E]/[abyss|E]. Desbloquea un edificio especial [GetBuilding('sanctified_area_01').GetName]. \n#bold Nivel 2:#! Como [character_interaction|E], te permite bendecir un artefacto. Obtenga inmunidad contra el asesinato. Obtenga inmunidad al delirio. Ya no puedes ser poseído por #!1.\n#bold Nivel 3:#! Los objetivos siempre aceptarán demandas de conversión de fe.\n#bold Nivel 4:#! Como [character_interaction|E], te permite resolver cada #!7 de un fantasma. Como [character_interaction|E], te permite matar a un sobrenatural con poca piedad. Ya no necesitas un gancho para desterrar un espíritu.\n#bold Nivel 5:#! Como [character_interaction|E], te permite volver a convertir a un vampiro en mortal o alcanzar la Golconda. Puede reclutar a $POD_demon_unearthbound_decision$2 como $POD_demon_unearthbound_decision$3. Te permite gastar fuerza de voluntad en lugar de sufrir heridas. Te permite no morir por las heridas.\n$POD_demon_unearthbound_decision$4 La herramienta más poderosa en manos de los Fieles es el poder de los verdaderos Milagros. Religiones enteras nacen de tales demostraciones de Fe Verdadera.#!"
   
@@ -740,32 +741,32 @@
  trait_orison_talespinner: "Cuentos"
  trait_orison_talespinner_desc: "Este individuo posee un celo natural y un entusiasmo contagioso por difundir la palabra de Dios."
   
- trait_oculi_shepherd: "Pastor celestial"
- trait_oculi_shepherd_desc: "Permite que el Ojo de Dios se oculte a plena vista mientras realiza el trabajo del Cielo."
+ #trait_oculi_shepherd: "Pastor celestial" #NT!
+ #trait_oculi_shepherd_desc: "Permite que el Ojo de Dios se oculte a plena vista mientras realiza el trabajo del Cielo y nuble las mentes de aquellos que quisieran obstaculizar su santa misión." #NT!
   
- trait_oculi_sight: "Segunda señal"
- trait_oculi_sight_desc: "La Vista permite al inquisidor buscar criaturas sobrenaturales independientemente de sus esfuerzos por evitar ser observado."
+ #trait_oculi_sight: "Clarividencia" #NT!
+ #trait_oculi_sight_desc: "La Vista permite al Inquisidor buscar criaturas sobrenaturales independientemente de sus esfuerzos por evitar ser observado." #NT!
   
- trait_oculi_liturgy: "Divina Liturgia"
- trait_oculi_liturgy_desc: "Mediante la recitación de las escrituras, el Ojo de Dios puede imponer su dedicación a la causa a otro individuo."
+ #trait_oculi_liturgy: "Divina Liturgia" #NT!
+ #trait_oculi_liturgy_desc: "Mediante la recitación de las escrituras, el Ojo de Dios puede imponer su dedicación a la causa a otro individuo." #NT!
   
- trait_oculi_trust: "Yo confío en ti"
- trait_oculi_trust_desc: "Al alabarlo, el agente puede infundir en otros el amor por Él y por Sus leyes."
+ #trait_oculi_trust: "Yo confío en ti" #NT!
+ #trait_oculi_trust_desc: "Al alabarlo, el agente puede infundir en otros el amor por Él y por Sus leyes." #NT!
   
  trait_oculi_wine: "Del agua al vino"
  trait_oculi_wine_desc: "El inquisidor puede tomar un objeto ordinario y transformarlo en otra cosa o devolver tejido muerto o moribundo a su estado saludable."
   
- trait_acre_catechumen: "Catecúmeno"
- trait_acre_catechumen_desc: "Permite al inquisidor ejemplificar sus primeras lecciones de valor, humildad y constancia."
+ #trait_acre_catechumen: "Catecúmeno" #NT!
+ #trait_acre_catechumen_desc: "Permite al inquisidor ejemplificar sus primeras lecciones de valor, humildad y constancia." #NT!
   
- trait_acre_flesh: "Transfiguración de la carne"
- trait_acre_flesh_desc: "Al caballero se le ha concedido el poder de alterar sus capacidades físicas invocando su virtud inquebrantable."
+ #trait_acre_flesh: "Transfiguración de la carne" #NT!
+ #trait_acre_flesh_desc: "Al caballero se le ha concedido el poder de alterar sus capacidades físicas invocando su virtud inquebrantable." #NT!
   
- trait_acre_flight: "Vuelo de ángeles"
- trait_acre_flight_desc: "Permite al inquisidor cosechar el torbellino divino cuando está en combate con los esbirros del Adversario."
+ #trait_acre_flight: "Vuelo de ángeles" #NT!
+ #trait_acre_flight_desc: "Permite al inquisidor cosechar el torbellino divino cuando está en combate con los esbirros del Adversario." #NT!
   
- trait_acre_resurrection: "Espíritu de la Resurrección"
- trait_acre_resurrection_desc: "Algunos caballeros están divinamente investidos con el poder de controlar el flujo y reflujo de la fuerza vital dentro de ellos mismos y de los demás."
+ #trait_acre_resurrection: "Espíritu de la Resurrección" #NT!
+ #trait_acre_resurrection_desc: "Algunos caballeros están divinamente investidos con el poder de controlar el flujo y reflujo de la fuerza vital dentro de ellos mismos y de los demás." #NT!
   
  trait_acre_auto: "Auto de fe"
  trait_acre_auto_desc: "Enfocar la virtud y la fuerza de uno en un solo golpe poderoso."
@@ -773,44 +774,44 @@
  trait_murnau_knowledge: "Conocimiento prohibido"
  trait_murnau_knowledge_desc: "Familiaridad innata y capacidad para detectar todo tipo de corrupción."
   
- trait_murnau_oblige: "Nobleza Obliga"
- trait_murnau_oblige_desc: "Nobleza que inspira a otros."
+ #trait_murnau_oblige: "Nobleza Obliga" #NT!
+ #trait_murnau_oblige_desc: "Nobleza que inspira a otros." #NT!
   
- trait_murnau_wreathed: "Envuelto en sombras"
- trait_murnau_wreathed_desc: "Dominio del lado oscuro de la propia naturaleza de los Murnau que les permite afectarla en otros."
+ #trait_murnau_wreathed: "Envuelto en sombras" #NT!
+ #trait_murnau_wreathed_desc: "Dominio del lado oscuro de la propia naturaleza de los Murnau que les permite afectarla en otros." #NT!
   
- trait_murnau_mirror: "Espejo del mal"
- trait_murnau_mirror_desc: "Capacidad de enfrentar la oposición sobrenatural en igualdad de condiciones, armado con fuerza y ​​conocimiento."
+ #trait_murnau_mirror: "Espejo del mal" #NT!
+ #trait_murnau_mirror_desc: "Capacidad de enfrentar la oposición sobrenatural en igualdad de condiciones, armado con fuerza y ​​conocimiento." #NT!
   
  trait_murnau_arcana: "Arcanos"
  trait_murnau_arcana_desc: "La capacidad de obstaculizar, desviar o evitar las acciones de los engendros del infierno."
   
- trait_sisters_gospel: "Evangelio"
- trait_sisters_gospel_desc: "Otorga a las Hermanas una gran habilidad para el debate, la oración y, si es necesario, el interrogatorio."
+ #trait_sisters_gospel: "Evangelio" #NT!
+ #trait_sisters_gospel_desc: "Otorga a las Hermanas gran habilidad en el debate, la oración y, si es necesario, el interrogatorio." #NT!
   
- trait_sisters_lux: "Fiat lux"
- trait_sisters_lux_desc: "Haciendo eco de las palabras del Padre, el inquisidor declama: «¡Hágase la luz!»."
+ #trait_sisters_lux: "Fiat Lujo" #NT!
+ #trait_sisters_lux_desc: "Haciendo eco de las palabras del Padre, el inquisidor declama: «¡Hágase la luz!» y un suave nimbo de luz blanca aparece a su alrededor, iluminando a las criaturas sobrenaturales por lo que son." #NT!
   
- trait_sisters_chorale: "Coral"
- trait_sisters_chorale_desc: "Obtener fuerza, conocimiento o protección de un canto comunitario."
+ #trait_sisters_chorale: "Coral" #NT!
+ #trait_sisters_chorale_desc: "Obtener fuerza, conocimiento o protección de un canto comunitario." #NT!
   
- trait_sisters_hosanna: "Hosana"
- trait_sisters_hosanna_desc: "Sintonizarse con la Canción del Cielo para afectar la materia muerta con la propia voz espiritual."
+ #trait_sisters_hosanna: "Hosana" #NT!
+ #trait_sisters_hosanna_desc: "Los inquisidores usan este poder para capturar la "longitud de onda" espiritual de la Canción del Cielo, usando su poder para promover la Gloria de Dios." #NT!
   
  trait_sisters_oratorio: "Oratorio"
  trait_sisters_oratorio_desc: "Permite a la Hermana alzar su voz en un canto y llenar a los oyentes con el resplandor brillante de su fe, lo cual es una experiencia devastadora para los esclavos del pecado."
   
- trait_red_vigil: "Bendita vigilancia"
- trait_red_vigil_desc: "Este rito proporciona al sujeto energía aliviándolo de la necesidad de dormir o descansar."
+ #trait_red_vigil: "Bendita vigilancia" #NT!
+ #trait_red_vigil_desc: "Este rito proporciona al sujeto energía aliviándolo de la necesidad de dormir o descansar." #NT!
   
- trait_red_sunstone: "Piedra solar"
- trait_red_sunstone_desc: "Infundir una roca ordinaria con la bendición de la primera creación del Señor, el Sol."
+ #trait_red_sunstone: "Piedra solar" #NT!
+ #trait_red_sunstone_desc: "Infundamos en una roca ordinaria la bendición de la primera creación del Señor, el Sol. El brillo de la piedra queda entonces gobernado por la virtud de su portador." #NT!
   
- trait_red_march: "Marcha forzada"
- trait_red_march_desc: "Este rito permite viajar rápidamente a pesar de la fatiga y las condiciones difíciles."
+ #trait_red_march: "Marcha forzada" #NT!
+ #trait_red_march_desc: "Este rito permite viajar rápidamente a pesar de la fatiga y las condiciones difíciles después de una suficiente súplica ante Dios." #NT!
   
- trait_red_fortunes: "Fortunas de guerra"
- trait_red_fortunes_desc: "A través de este rito sagrado, un practicante puede bendecir a un grupo de combatientes armados que se dirigen a luchar contra el enemigo."
+ #trait_red_fortunes: "Fortunas de guerra" #NT!
+ #trait_red_fortunes_desc: "A través de este rito sagrado, un practicante puede bendecir a un grupo de combatientes armados que se dirigen a luchar contra el enemigo." #NT!
   
  trait_red_forge: "Fragua de Dios"
  trait_red_forge_desc: "Santifica el proceso de forjar un arma para producir armamentos benditos."
@@ -959,9 +960,6 @@
  trait_golem: "Gólem"
  trait_golem_desc: "Los gólems son grandes autómatas humanoides creados mediante hechicería, conocidos por su inestabilidad y su tendencia a volverse locos."
   
- trait_immortal: "Inmortal"
- trait_immortal_desc: "Por algún medio mágico, este personaje ya no puede morir por causas naturales."
-  
  trait_risen: "Resucitado"
  trait_risen_desc: "Resucitado es un término usado para describir a un espectro que ha logrado regresar a su cuerpo para caminar entre los vivos en el [skinlands|E]."
   
@@ -1070,34 +1068,60 @@
   
  trait_ajaba: "Ajaba"
  trait_ajaba_desc: "Los hombres-hiena son los guerreros de Gea en África, un continente sin población de lobos. Aunque la Guerra de la Furia no llegó a África, los Ajaba fueron prácticamente destruidos por las luchas internas y su rivalidad con los Bastet."
+ trait_track_ajaba: "Rango" #NT!
+ trait_track_ajaba_desc: "#bold Nivel 2:#! [umbra_aptitude|E]: [grace_i]#P +25%#!\n#bold Nivel 3:#! [umbra_aptitude|E]: [grace_i]#P +25%#!\n#bold Nivel 4:#! [umbra_aptitude|E]: [grace_i]#P +50%#!\n#bold Nivel 5:#! [umbra_aptitude|E]: [grace_i]#P +50%#!\n#bold Nivel 6:#! [umbra_aptitude|E]: [grace_i]#P +75%#!\n#italic Los Ajaba siempre han reconocido la Astucia y la Ferocidad como formas de renombre, pero también Valor Infamia, algo que a muchos de sus miembros les preocupa por el impacto a largo plazo.#!" #NT!
  trait_bastet: "Bastet"
  trait_bastet_desc: "Los hombres gato tienen muchas tribus diferentes, como los Garou, aunque cada una de ellas afirma poseer una especie diferente de felino salvaje. Están obsesionados con el conocimiento secreto y siempre lo buscan y lo atesoran. Muchos son grandes magos, otros son grandes guerreros, pero rara vez son animales de manada y generalmente trabajan solos. Algunas de sus tribus sufrieron mucho durante la Guerra de la Furia."
+ trait_track_bastet: "Rango" #NT!
+ trait_track_bastet_desc: "#bold Nivel 2:#! Obtén acceso al [spirit_wilds|E] para no Swara.\n#bold Nivel 4:#! [umbra_aptitude|E]: [grace_i]#P +25%#!\n#bold Nivel 5:#! [umbra_aptitude|E]: [grace_i]#P +25%#!\n#bold Nivel 6:#! [umbra_aptitude|E]: [grace_i]#P +35%#!\n#italic Los Bastet reconocen una jerarquía. No denota autoridad absoluta como lo haría entre los Garou, sino más bien una cortesía y un reconocimiento de la experiencia. Los títulos de Bastet siempre tienen un significado social más allá de su rango.#!" #NT!
  trait_corax: "Corazon"
  trait_corax_desc: "Los hombres cuervo son mensajeros, espías y exploradores de Gaia que patrullan los cielos, siempre atentos al peligro. Son unos terribles charlatanes y contarán lo que han visto a cualquiera que quiera escucharlos. Escaparon de la persecución en la Guerra de la Furia ayudando a los Garou y mantienen las relaciones más cordiales con los hombres lobo de todo Fera."
+ trait_track_corax: "Rango" #NT!
+ trait_track_corax_desc: "#bold Nivel 1:#! [umbra_aptitude|E]: [grace_i]#P +25%#!\n#bold Nivel 2:#! [umbra_aptitude|E]: [grace_i]#P +25%#!\n#bold Nivel 3:#! [umbra_aptitude|E]: [grace_i]#P +50%#!\n#bold Nivel 4:#! [umbra_aptitude|E]: [grace_i]#P +50%#!\n#bold Nivel 5:#! [umbra_aptitude|E]: [grace_i]#P +75%#!\n#bold Nivel 6:#! [umbra_aptitude|E]: [grace_i]#P +100%#!\n#italic Los Corax ganan renombre como Garou Ragabash, aunque tienden a favorecer su particular tipo de Sabiduría. La gloria suele ser descuidada por los frágiles Corax.#!" #NT!
  trait_gurahl: "Gurahl"
  trait_gurahl_desc: "Los hombres oso son los sanadores de Gaia, unidos a la Tierra con un vínculo más fuerte que cualquier otro Fera. Muchos Garou creen que los Gurahl están extintos, asesinados durante la Guerra de la Furia cuando no quisieron revelar el secreto de devolver la vida a los muertos."
+ trait_track_gurahl: "Rango" #NT!
+ trait_track_gurahl_desc: "#bold Nivel 4:#! [umbra_aptitude|E]: [grace_i]#P +25%#!\n#bold Nivel 5:#! [umbra_aptitude|E]: [grace_i]#P +25%#!\n#bold Nivel 6:#! [umbra_aptitude|E]: [grace_i]#P +35%#!\n#italic Los Gurahl reconocen tres tipos de renombre: Honor, por devoción y respeto; Socorro, por actos de sanación, purificación o ayuda a otros; y Sabiduría, por restaurar, preservar o descubrir conocimiento o ganar una comprensión más profunda de uno mismo.#!" #NT!
  trait_kitsune: "Kitsune"
  trait_kitsune_desc: "Los hombres zorro son magos y políticos que mantienen unida a la sociedad de cambiaformas asiáticos. Únicos entre los Fera, los Kitsune se encuentran solo en las Cortes de las Bestias del Reino Medio, y viven principalmente en China y Japón. Con la bendición de Luna, los Kitsune también actuaron como asesinos de las autoridades corruptas en la sociedad mortal, como magos de la corte y ladrones para proteger el Mandato Celestial."
  trait_track_kitsune: "Cruz"
  trait_track_kitsune_desc: "Todos los kitsune comienzan con una cola. Gaia les otorga una adicional cada vez que ganan rango. Los kitsune con nueve colas han alcanzado la inmortalidad y son respetados por su poder y virtud."
  trait_mokole: "Mokolé"
  trait_mokole_desc: "Los hombres cocodrilo recuerdan la era de los Reyes Dragón, cuando terribles reptiles gobernaban la tierra. Recuerdan todo lo que ha sucedido y se guardan ese conocimiento para sí mismos, hablando solo con quienes son debidamente respetuosos. Sus formas de Crinos se parecen más a dinosaurios o dragones que a cocodrilos, lo que a veces los lleva a ser llamados hombres dragón."
+ trait_track_mokole: "Rango" #NT!
+ trait_track_mokole_desc: "#bold Nivel 2:#! Obtén acceso al [spirit_wilds|E].\n#bold Nivel 4:#! [umbra_aptitude|E]: [grace_i]#P +25%#!\n#bold Nivel 5:#! [umbra_aptitude|E]: [grace_i]#P +25%#!\n#bold Nivel 6:#! [umbra_aptitude|E]: [grace_i]#P +35%#!\n#italic Los mokolé usan el mismo sistema de renombre que los Garou, venerando los principios de honor, sabiduría y gloria. El grado en el que un mokolé individual sigue cada principio está determinado completamente por su aspecto (auspicio).#!" #NT!
  trait_nagah: "Naga"
  trait_nagah_desc: "Serpientes-hombre que se originaron en la India. La mayoría (si no todas) de las otras razas cambiantes creen que están muertas, pero todavía están muy presentes. Los Nagah, que actúan como los "Jueces de Gea", cumplen el papel de jueces silenciosos y verdugos ocultos de las razas cambiantes."
+ trait_track_nagah: "Rango" #NT!
+ trait_track_nagah_desc: "#bold Nivel 4:#! [umbra_aptitude|E]: [grace_i]#P +25%#!\n#bold Nivel 5:#! [umbra_aptitude|E]: [grace_i]#P +25%#!\n#bold Nivel 6:#! [umbra_aptitude|E]: [grace_i]#P +35%#!\n#italic Debido a que los nidos son nómadas, los Nagah tienen que buscar a los Seshas para ganar renombre gracias a ellos. Los Seshas, ​​después de enterarse de las hazañas del nido, deciden qué puntos de renombre se les otorgan. Esto decide el rango y, a su vez, los dones que aprenderá un Nagah. El sistema de renombre utiliza Gloria, Honor y Sabiduría.#!" #NT!
  trait_nuwisha: "Nuwisha"
  trait_nuwisha_desc: "Los hombres coyote son los maestros de Gea, aunque al igual que su tótem, el Viejo Coyote, prefieren enseñar exclusivamente a través de bromas. Gracias a una broma que le hicieron a Luna, ya no tienen Furia, aunque tienen una afinidad más estrecha con Umbra que con cualquier otro Fera."
+ trait_track_nuwisha: "Rango" #NT!
+ trait_track_nuwisha_desc: "#bold Nivel 1:#! [umbra_aptitude|E]: [grace_i]#P +25%#!\n#bold Nivel 2:#! [umbra_aptitude|E]: [grace_i]#P +25%#!\n#bold Nivel 3:#! [umbra_aptitude|E]: [grace_i]#P +50%#!\n#bold Nivel 4:#! [umbra_aptitude|E]: [grace_i]#P +50%#!\n#bold Nivel 5:#! [umbra_aptitude|E]: [grace_i]#P +75%#!\n#bold Nivel 6:#! [umbra_aptitude|E]: [grace_i]#P +100%#!\n#italic A diferencia de la mayoría de los Fera, que alcanzan el rango a través del honor y el favor de su tribu, los Nuwisha obtienen renombre a través de la enseñanza. En lugar de honor, tienen humor, y cuanto más humorísticos se muestren ante su deidad, una forma de Coyote encarnado, más renombre obtendrán.#!" #NT!
  trait_ratkin: "Rata"
  trait_ratkin_desc: "Los hombres rata vigilaban a la humanidad y evitaban que su número se hiciera demasiado grande. Sin embargo, los Garou usurparon ese papel y los Ratkin los odian desde entonces. Luchan firmemente por el Kaos y aprovechan cualquier oportunidad para socavar la tecnología."
+ trait_track_ratkin: "Rango" #NT!
+ trait_track_ratkin_desc: "#bold Nivel 4:#! [umbra_aptitude|E]: [grace_i]#P +25%#!\n#bold Nivel 5:#! [umbra_aptitude|E]: [grace_i]#P +25%#!\n#bold Nivel 6:#! [umbra_aptitude|E]: [grace_i]#P +35%#!\n#italic Las colonias de Ratkin tienen una estricta jerarquía interna. Un Rey Rata gobierna la colonia, asistido por grupos de cortesanos, generalmente todos rodens Ratkin. Por debajo de los cortesanos, los rodens hombres rata tienen prioridad. Los metis ocupan el terreno intermedio, actuando como guardias y guardianes y con la esperanza de convertirse algún día en cortesanos.#!" #NT!
  trait_rokea: "Rokea"
  trait_rokea_desc: "Incluso el mar tiene sus protectores. Los hombres-tiburón patrullan las profundidades del mar y rara vez son vistos por los habitantes de la tierra."
+ trait_track_rokea: "Rango" #NT!
+ trait_track_rokea_desc: "#bold Nivel 2:#! Obtén acceso al [spirit_wilds|E].\n#bold Nivel 4:#! [umbra_aptitude|E]: [grace_i]#P +25%#!\n#bold Nivel 5:#! [umbra_aptitude|E]: [grace_i]#P +25%#!\n#bold Nivel 6:#! [umbra_aptitude|E]: [grace_i]#P +35%#!\n#italic Los rokea aceptan tres formas de renombre: Valor, que hace referencia a la destreza y el coraje de un hombre tiburón en defensa de una gruta; Armonía, es decir, la capacidad de un hombre tiburón de aceptar su lugar en el mundo y actuar de acuerdo con él, e Innovación, que se otorga a los hombres tiburón que, a través de nuevas ideas, ayudan a la raza a defender el Mar y luchar contra la prole de Qyrl.#!" #NT!
  trait_apis: "Apis"
  trait_apis_desc: "Los Apis, hombres lobo o "toros lunares", estaban a cargo del cultivo y la agricultura y eran conocidos como los "casamenteros de Gea". Los Garou los llevaron a la extinción en la Guerra de la Furia."
+ trait_track_apis: "Rango" #NT!
+ trait_track_apis_desc: "#bold Nivel 4:#! [umbra_aptitude|E]: [grace_i]#P +25%#!\n#bold Nivel 5:#! [umbra_aptitude|E]: [grace_i]#P +25%#!\n#bold Nivel 6:#! [umbra_aptitude|E]: [grace_i]#P +35%#!\n#italic Los Apis eran criaturas relativamente sociales que vivían en manadas de entre seis y veinticuatro individuos. Un poderoso toro gobernaba cada manada y defendía su título contra todos los retadores. Este toro estaba a cargo de proteger a la manada y liderarla en la batalla.#!" #NT!
  trait_camazotz: "Camazotz"
  trait_camazotz_desc: "Los Camazotz eran hombres murciélago, mensajeros nocturnos del hemisferio sur de Gaia, contrapartes de los Corax."
+ trait_track_camazotz: "Rango" #NT!
+ trait_track_camazotz_desc: "#bold Nivel 4:#! [umbra_aptitude|E]: [grace_i]#P +25%#!\n#bold Nivel 5:#! [umbra_aptitude|E]: [grace_i]#P +25%#!\n#bold Nivel 6:#! [umbra_aptitude|E]: [grace_i]#P +35%#!\n#italic Los Camazotz eran una raza muy social que vivía en enjambres igualitarios de entre una docena y un centenar de miembros. A menudo vivían en cavernas junto con sus parientes murciélagos. Aunque eran propensos al secreto, intentaban mantener relaciones amistosas y abiertas con otros cambiaformas.#!" #NT!
  trait_grondr: "Tierra"
  trait_grondr_desc: "Los hombres jabalí se encontraban en el norte de Europa. Su tarea era limpiar la tierra; se los llamaba los cuidadores de Gea. Los Garou los expulsaron durante la Guerra de la Furia; sus espíritus ancestrales cayeron ante el Wyrm y se convirtieron en los monstruosos Cerdos Calavera."
- trait_ananasi: "ananasi"
- trait_ananasi_desc: "Los hombres araña no son hijos de Gea, sino de la reina Ananasa, una poderosa hija espiritual de la Tejedora. Otros Fera los consideran extraños y perturbadores, y no sin razón: su forma animal es una horda de arañas rastreras, no poseen Furia y alimentan sus poderes con sangre robada a los humanos. Su nombre proviene del embaucador/dios de África occidental Anansi."
+ trait_track_grondr: "Rango" #NT!
+ trait_track_grondr_desc: "#bold Nivel 4:#! [umbra_aptitude|E]: [grace_i]#P +25%#!\n#bold Nivel 5:#! [umbra_aptitude|E]: [grace_i]#P +25%#!\n#bold Nivel 6:#! [umbra_aptitude|E]: [grace_i]#P +35%#!\n#italic Los Grondr eran una raza activa y agresiva. Vivían en grupos similares a manadas llamados Sounders, cada uno liderado por un rey o reina que mantenía su título al derrotar a todos los que los desafiaban en combates rituales. Cada gobernante Sounder era igual a todos los demás; no tenían jerarquía más allá de los Sounders individuales.#!" #NT!
+ #  trait_ananasi: "Ananási" #NT!
+ #  trait_ananasi_desc: "Los hombres araña no son hijos de Gea, sino de la reina Ananasa, una poderosa hija espiritual de la Tejedora. Otros Fera los consideran extraños y perturbadores, y no sin razón: su forma animal es una horda de arañas rastreras, no poseen Furia y alimentan sus poderes con sangre robada a los humanos. Su nombre proviene del embaucador/dios de África occidental Anansi." #NT!
+ #  trait_track_ananasi: "Rango" #NT!
+ #  trait_track_ananasi_desc: "#bold Nivel 4:#! [umbra_aptitude|E]: [grace_i]#P +25%#!\n#bold Nivel 5:#! [umbra_aptitude|E]: [grace_i]#P +25%#!\n#bold Nivel 6:#! [umbra_aptitude|E]: [grace_i]#P +35%#!\n#italic Los ananasi pueden ganar renombre en tres categorías, que corresponden a los tres miembros de la Tríada; intentan seguir a los tres, sin importar su facción, para obtener una comprensión más profunda de la "Gran Red" de la existencia. Las categorías son Astucia (para el Wyrm), Obediencia (para el Tejedor) y Sabiduría (para el Wyld).#!" #NT!
   
  trait_hakken: "Hákken"
  trait_hakken_desc: "Los hombres lobo de Japón, que defienden las filosofías del bushido."
@@ -1137,6 +1161,8 @@
   
  trait_psychic: "Psíquico"
  trait_psychic_desc: "Este personaje posee uno o más poderes psíquicos (también conocidos como fenómenos psíquicos o simplemente habilidades psíquicas)."
+ trait_track_psychic: "Competencia psíquica" #NT!
+ trait_track_psychic_desc: "#bold Cada nivel aumenta la probabilidad de éxito de los poderes psíquicos en #P 10#!#!\nUsing Los poderes psíquicos son difíciles, especialmente contra seres sobrenaturales. Pero como todo en la vida, la competencia en poderes psíquicos también se puede obtener dominando los conceptos básicos y la experiencia." #NT!
  trait_sorcerer: "Hechicero"
  trait_sorceress: "Hechicera"
  trait_rune_wise: "Mago de runas"
@@ -1148,6 +1174,7 @@
  trait_fallen_desc: "Son ángeles caídos que eligieron aliarse con Lucifer y la humanidad en lugar de con Dios en los primeros días de la Creación. Como castigo por su rebelión y deslealtad, el Arcángel Miguel expulsó a estos ángeles del Cielo al Abismo. Las paredes del Abismo se agrietaron y los Caídos comenzaron a escapar de regreso al mundo material."
  trait_earthbound: "Terrestre"
  trait_earthbound_desc: "Los demonios son las huestes caídas de los cielos, los ángeles rebeldes que siguieron a Lucifer en su rebelión condenada. Su verdadera forma ya no es sostenible; los demonios atados a la Tierra se encuentran en su mayoría contenidos en relicarios, mientras que algunos de ellos logran poseer una ubicación."
+ TRAIT_FLAG_DESC_host_for_travel: "No pueden viajar ni liderar ejércitos a menos que también posean un huésped humano con el [GetPerk('abandon_vessel_perk').GetName(GetNullCharacter)]" #NT!
  trait_laham: "Laham"
  trait_laham_desc: "Descendencia de un demonio. De una longevidad asombrosa, inmune al dolor y a menudo dotado de poderes inhumanos. Se dice que un engendro de demonio (o laham) es un sirviente especial del infierno."
  trait_nephilim: "Nefilim"
@@ -1168,31 +1195,6 @@
  trait_methuselahs_thirst_desc: "El personaje ya no es capaz de beber sangre mortal para mantenerse, independientemente de su potencia de sangre. Debe alimentarse de la vitae de otros Vástagos."
  trait_methuselahs_thirst_character_desc: "[ROOT.GetCharacter.GetFirstNameNoTooltip] ya no es capaz de beber sangre mortal para sustentar a [ROOT.GetCharacter.GetHerselfHimself] independientemente de la Potencia de Sangre. [ROOT.GetCharacter.GetSheHe|U] debe alimentarse de la vitae de otros Vástagos."
   
- trait_mind_master: "Mente maestra"
- trait_mind_master_desc: "Este personaje ha dominado la Esfera Mental."
- trait_mind_master_character_desc: "[ROOT.GetCharacter.GetFirstNameNoTooltip] ha dominado la Esfera Mental."
- trait_entropy_master: "Maestro de la entropía"
- trait_entropy_master_desc: "Este personaje ha dominado la Esfera de Entropía."
- trait_entropy_master_character_desc: "[ROOT.GetCharacter.GetFirstNameNoTooltip] ha dominado la Esfera de Entropía."
- trait_life_master: "Maestro de la vida"
- trait_life_master_desc: "Este personaje ha dominado la Esfera de la Vida."
- trait_life_master_character_desc: "[ROOT.GetCharacter.GetFirstNameNoTooltip] ha dominado la Esfera de la Vida."
- trait_forces_master: "Maestro de las fuerzas"
- trait_forces_master_desc: "Este personaje ha dominado la Esfera de Fuerzas."
- trait_forces_master_character_desc: "[ROOT.GetCharacter.GetFirstNameNoTooltip] ha dominado la Esfera de Fuerzas."
- trait_matter_master: "Maestro de la materia"
- trait_matter_master_desc: "Este personaje ha dominado la Esfera de Materia."
- trait_matter_master_character_desc: "[ROOT.GetCharacter.GetFirstNameNoTooltip] ha dominado la Esfera de Materia."
- trait_prime_master: "Primer Maestro"
- trait_prime_master_desc: "Este personaje ha dominado la Esfera Primaria."
- trait_prime_master_character_desc: "[ROOT.GetCharacter.GetFirstNameNoTooltip] ha dominado la Esfera Primaria."
- trait_time_master: "Maestro del tiempo"
- trait_time_master_desc: "Este personaje ha dominado la Esfera del Tiempo."
- trait_time_master_character_desc: "[ROOT.GetCharacter.GetFirstNameNoTooltip] ha dominado la Esfera del Tiempo."
- trait_correspondence_master: "Máster de correspondencia"
- trait_correspondence_master_desc: "Este personaje ha dominado la Esfera de Correspondencia."
- trait_correspondence_master_character_desc: "[ROOT.GetCharacter.GetFirstNameNoTooltip] ha dominado la Esfera de Correspondencia."
-  
  trait_demonology: "Demonología"
  trait_demonology_1: "Estudiante de demonología"
  trait_demonology_1_desc: "Este personaje conoce los principios básicos del comportamiento demoníaco y algunos de sus poderes más inusuales. Este personaje probablemente podría llevar a cabo una invocación y puede haber observado o incluso ayudado con una, pero las ataduras reales son otra historia..."
@@ -1211,6 +1213,7 @@
  trait_track_diabolist_desc: "#bold Nivel 2:#! Permite sacrificar prisioneros para ganar [investiture_lifestyle|E] de experiencia.\n#bold Nivel 4:#! Permite hacer sacrificios a demonios mayores para ganar bendiciones.\n#italic Aquel que invoca demonios y busca controlarlos. Este término también puede aplicarse a aquel que adora a los demonios. El diabolista idealmente tiene una sólida formación en demonología, pero no necesariamente, aunque intentar invocar a un demonio poderoso sin el conocimiento adecuado de cómo atarlo podría tener resultados fatales.#!"
  trait_track_thrall: "Esclavo"
  trait_track_thrall_desc: "#bold Nivel 2:#! Permite sacrificar prisionero para ganar [arcana_lifestyle|E] experiencia.\n#bold Nivel 4:#! Permite invocar un demonio del [abyss|E] a un recipiente.\n#italic Uno que sirve a los demonios a través de un pacto hecho directamente con un demonio específico. Un esclavo no necesita ser un diabolista y rara vez tiene conocimientos previos de demonología, aunque pronto puede tener un conocimiento íntimo y de primera mano de la naturaleza de los demonios.#!"
+ trait_demonology_kueijin_desc: "La demonología es la invocación y el dominio de las Perdiciones, Espectros y otros espíritus malignos. Muchos [GetTrait('kueijin').GetName( GetNullCharacter )] practican esto en un grado u otro. Dicha práctica es incluso una de las especialidades del Dharma del Tigre Demonio. Quienes lo consideran una parte natural de su práctica religiosa, y quienes han producido una literatura sobre los aspectos prácticos de este tema tan extensa en su propia forma especializada como las bibliotecas mágicas de Wu Lung y la Orden de Hermes. La demonología es perfectamente legal, aunque a menudo se considera de muy mal gusto fuera de los círculos del Tigre Demonio." #NT!
   
  trait_hun_and_po: "Hun y P'o"
  trait_hun_and_po_desc: "Se rumorea que uno o más Salubri en realidad despertaron a su Hun y Po para convertirse en Wan Kuei de pleno derecho..."
@@ -1218,7 +1221,7 @@
  TRAIT_FLAG_DESC_immortality: "#P @goodhealth_icon! Inmortal #!"
   
  TRAIT_FLAG_DESC_can_hurt_spirit: "¿Puede torturar, ejecutar o herir físicamente a un espíritu en [single_combat_duel|E]?"
- TRAIT_FLAG_DESC_can_imprison_spirit: "¿Puede encarcelar, torturar, ejecutar o dañar físicamente a un espíritu en [single_combat_duel|E]?"
+ TRAIT_FLAG_DESC_may_hurt_spirit: "Puede encarcelar, torturar, ejecutar o herir físicamente a los espíritus durante [single_combat_duel_plural|E] #weak (con un coste de viaje de [umbra|E])#!" #NT!
  TRAIT_FLAG_DESC_is_spirit: "Como espíritu, no puede ser encarcelado, torturado, ejecutado o herido físicamente sin algunos poderes específicos."
  HAS_TRAIT_WITH_IS_SPIRIT_FLAG_TRIGGER: "Es un espíritu, no puede ser encarcelado, torturado, ejecutado o herido físicamente sin algunos poderes específicos."
  NOT_HAS_TRAIT_WITH_IS_SPIRIT_FLAG_TRIGGER: "¿#bold no es#! un espíritu? Puede ser encarcelado, torturado, ejecutado o herido físicamente."
@@ -1229,6 +1232,7 @@
   
  TRAIT_FLAG_DESC_yin_imbalanced: "Le permite devorar más Chi Yin que el límite de Virtud Yin sin efectos negativos"
  TRAIT_FLAG_DESC_yang_imbalanced: "Le permite devorar más Chi Yang que el límite de la Virtud Yang sin efectos negativos"
+ TRAIT_FLAG_DESC_umbra_aptitude_15: "[umbra_aptitude|E]: [grace_i]#P +75%#!" #NT!
  TRAIT_FLAG_DESC_umbra_aptitude_10: "Progreso mensual de exploración de Umbra: [grace_i]#P +10#!"
  TRAIT_FLAG_DESC_umbra_aptitude_9: "Progreso mensual de exploración de Umbra: [grace_i]#P +9#!"
  TRAIT_FLAG_DESC_umbra_aptitude_8: "Progreso mensual de exploración de la Umbra: [grace_i]#P +8#!"
@@ -1239,6 +1243,9 @@
  TRAIT_FLAG_DESC_umbra_aptitude_3: "Progreso mensual de exploración de Umbra: [grace_i]#P +3#!"
  TRAIT_FLAG_DESC_umbra_aptitude_2: "Progreso mensual de exploración de Umbra: [grace_i]#P +2#!"
  TRAIT_FLAG_DESC_umbra_aptitude_1: "Progreso mensual de exploración de Umbra: [grace_i]#P +1#!"
+ TRAIT_FLAG_DESC_umbra_sense_10: "[umbra_sense|E]: [grace_i]#P +10#!" #NT!
+ TRAIT_FLAG_DESC_umbra_sense_7: "[umbra_sense|E]: [grace_i]#P +7#!" #NT!
+ TRAIT_FLAG_DESC_umbra_sense_5: "[umbra_sense|E]: [grace_i]#P +5#!" #NT!
   
  trait_permanent_maimed: "Mutilado permanente"
  trait_permanent_one_eyed: "Tuerto permanente"
@@ -1290,3 +1297,41 @@
  trait_alien_desc: "Vida extraterrestre."
  trait_chulorviah: "Chulorvia"
  trait_chulorviah_desc: "Chulorviah, también conocido como la Cepa Abisal o los Nacidos del Kraken, es una extraña criatura umbral que actúa de manera similar a una enfermedad."
+  
+ trait_crimson_fever: "Fiebre carmesí" #NT!
+ trait_crimson_fever_desc: "Una enfermedad sobrenatural que se manifiesta en los habitantes de Catay cuyos aspectos Yang se han desequilibrado. Si bien es una enfermedad bastante rara, se rumorea que es extremadamente contagiosa. Su rareza también significa que nunca se han explorado realmente sus posibles curas, lo que la convierte en una perspectiva aterradora." #NT!
+ trait_chulorviosis: "Chulorviosis" #NT!
+ trait_chulorviosis_desc: "Una extraña enfermedad que afecta tanto a los cefalópodos como a los humanos. La enfermedad es puramente espiritual; las autopsias de los cadáveres de Chulorviah que han llegado a la costa no han aportado información sobre ellos. El virus cambia a los humanos y a los cefalópodos para que se parezcan más entre sí: a un humano puede crecerle un pico, piel moteada y ventosas, mientras que a un pulpo le pueden crecer uñas vestigiales o cambiar el color de los ojos. El intelecto humano da paso al instinto, mientras que los cefalópodos se vuelven más sensibles y maliciosos. Puede llevar meses que la transformación se afiance, pero es casi inevitable una vez que ha comenzado. Después de aproximadamente seis meses, los humanos huyen de la superficie para unirse a sus compañeros de especie bajo el mar. Antes de llegar a ese estado, la mayoría de los Chulorviah intentan infectar a la mayor cantidad posible." #NT!
+ trait_gift_of_melancholia: "Don de melancolía" #NT!
+ trait_gift_of_melancholia_desc: "Una terrible enfermedad debilitante que afecta tanto a mortales como a Cainitas y que causa mareos, debilidad, malestar y náuseas." #NT!
+ trait_flaying_plague: "Peste desolladora" #NT!
+ trait_flaying_plague_desc: "Una terrible plaga que afecta a parientes y Garou por igual. Al principio parece una extraña consecuencia de la tuberculosis, luego aparecen los furúnculos y luego la piel se desprende dolorosamente de los huesos." #NT!
+ trait_scourge: "Azotar" #NT!
+ trait_scourge_desc: "La Plaga es una plaga específica de los vampiros que infecta la sangre. Esta enfermedad es una cepa mutada de lepra cruzada con la peste bubónica que ataca directamente la vitae del vampiro. Una vez infectada, la víctima debe gastar más sangre cada vez que gasta vitae. Esto empeora cada noche que la víctima sufre la Plaga. En algunos casos, la víctima también sufre una enfermedad desfigurante que afecta su apariencia pero no amenaza su vida." #NT!
+ trait_track_scourge: "Gravedad" #NT!
+ trait_track_scourge_desc: "Gravedad del azote" #NT!
+ TRAIT_FLAG_DESC_bypass_mental_defenses: "Puede eludir las defensas mentales fuertes." #NT!
+  
+ TRAIT_FLAG_DESC_immunity_to_the_delirium: "Inmunidad al delirio" #NT!
+ TRAIT_FLAG_DESC_regeneration: "Eliminar todas las heridas y mutilaciones cada tres meses." #NT!
+ TRAIT_FLAG_DESC_resurrection: "Permite la resurrección si el personaje muere por causas no naturales." #NT!
+  
+ TRAIT_FLAG_DESC_capture_immunity: "Ya no puedes ser encarcelado durante [siege|E] o [raid|E]" #NT!
+ TRAIT_FLAG_DESC_avoid_combat_wound: "Menos posibilidades de sufrir heridas o morir en combate." #NT!
+ TRAIT_FLAG_DESC_strong_mental_defenses: "Inmune a estados mentales hostiles [character_interaction|E]." #NT!
+  
+ trait_judge_of_maat: "Juez de Maat" #NT!
+ trait_judge_of_maat_desc: "Los Jueces de Ma'at son un grupo de seres que hacen cumplir el principio cósmico de Ma'at y juzgan el avance del Equilibrio de una Momia cuando muere y regresa a Anubis, quien luego guía a la momia hacia los Jueces." #NT!
+ TRAIT_FLAG_DESC_access_to_charms: "Obtiene acceso a [charms_lifestyle|E]" #NT!
+ TRAIT_FLAG_DESC_access_to_planetarygifts: "Obtiene acceso a [planetarygifts_lifestyle|E]" #NT!
+  
+ trait_azhi_dahaka_scholar: "Académico Azhi Dahaka" #NT!
+ trait_azhi_dahaka_scholar_desc: "Este personaje busca comprender Azhi Dahaka, un estado iluminado y último del ser posiblemente alcanzado por el uso extensivo de la disciplina Vicisitud." #NT!
+ trait_azhi_dahaka_scholar_character_desc: "[ROOT.Char.GetFirstNameNoTooltip] busca comprender Azhi Dahaka, un estado iluminado y último del ser posiblemente logrado mediante el uso extensivo de la disciplina Vicisitud." #NT!
+ trait_track_azhi_dahaka_scholar: "Metamorfosis" #NT!
+ trait_track_azhi_dahaka_scholar_desc: "\nTu [trait_level_track_xp|E] representa el porcentaje de éxito durante las etapas finales del [GetTrait('azhi_dahaka').GetName(GetNullCharacter)] [journey|E]." #NT!
+  
+ trait_azhi_dahaka: "Azhi Dahaka" #NT!
+ trait_azhi_dahaka_desc: "Azhi Dahaka es un término utilizado por los vampiros del clan Tzimisce para describir un estado de ser iluminado y último, posiblemente logrado por el uso extensivo de la disciplina Vicisitud." #NT!
+ trait_azhi_dahaka_character_desc: "$trait_azhi_dahaka_desc$\n\nDespués de deshacerse de los últimos vestigios de la humanidad de [ROOT.Char.GetHerHis], [ROOT.Char.GetFirstNameNoTooltip] se ha vuelto verdaderamente aterrador de contemplar: un Dragón entre Dragones." #NT!
+ TRAIT_FLAG_DESC_infinite_blood_flag: "Sangre infinita" #NT!

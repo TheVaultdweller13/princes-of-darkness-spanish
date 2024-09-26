@@ -13,13 +13,11 @@
  wyrm_high_god_name_possessive: "El Wyrm"
  wyrm_high_god_name_alternate: "El devorador de almas"
  wyrm_high_god_name_alternate_possessive: "El devorador de almas"
- wyrm_good_god_jesus: "$wyrm_health_god_name$"
- wyrm_good_god_christ: "El profanador"
  wyrm_devil_name: "Gea"
  wyrm_devil_name_possessive: "Gaia"
- wyrm_evil_god_lucifer: "el salvaje"
- wyrm_evil_god_beelzebub: "El tejedor"
- wyrm_evil_god_mephistopheles: "Gea"
+ wyrm_evil_god_wyld: "El Salvaje" #NT!
+ wyrm_evil_god_weaver: "El tejedor" #NT!
+ wyrm_evil_god_gaia: "Gea" #NT!
  wyrm_death_deity_name: "El Wyrm"
  wyrm_death_deity_name_possessive: "El Wyrm"
  wyrm_house_of_worship: "caer"
@@ -221,6 +219,24 @@
  seekersoftheancient_adherent: "Buscador"
  seekersoftheancient_adherent_plural: "Buscador"
  seekersoftheancient_desc: "Los druidas oscuros de la tierra buscan dialogar con la atmósfera y la geomancia que rodean a los Antiguos. No ensalzan al espíritu en sí, sino que invocan las virtudes de sus elementos, invocándolo indirectamente para que actúe a través de la naturaleza. Esto les otorga conocimiento y poder indirectamente, lo que les permite desarrollar y dirigir un Pozo que se ha vinculado al paisaje circundante. Actúan como chamanes, arriesgándose a la esclavitud y la locura para comunicarse con espíritus impensables y obtener conocimiento directamente."
+  
+ hellcats_high_god_name: "El Cahlash" #NT!
+ hellcats_high_god_name_possessive: "Los Cahlash" #NT!
+ hellcats_high_god_name_alternate: "El Deshacedor" #NT!
+ hellcats_high_god_name_alternate_possessive: "El Deshacedor" #NT!
+ hellcats_evil_god_nala: "La nala" #NT!
+ hellcats_evil_god_rahjah: "El Rahjah" #NT!
+ hellcats_death_deity_name: "El Cahlash" #NT!
+ hellcats_death_deity_name_possessive: "Los Cahlash" #NT!
+  
+ hellcats_creator_god_name: "$hellcats_high_god_name$" #NT!
+ hellcats_creator_god_name_possessive: "$hellcats_high_god_name_possessive$" #NT!
+ hellcats_household_god_name: "$wyrm_health_god_name$" #NT!
+ hellcats_household_god_name_possessive: "$wyrm_health_god_name_possessive$" #NT!
+ hellcats_fate_god_name: "$hellcats_high_god_name$" #NT!
+ hellcats_fate_god_name_possessive: "$hellcats_high_god_name_possessive$" #NT!
+ hellcats_knowledge_god_name: "$hellcats_high_god_name$" #NT!
+ hellcats_knowledge_god_name_possessive: "$hellcats_high_god_name_possessive$" #NT!
   
  hellcats: "gatos infernales"
  hellcats_adj: "Gatos del infierno"

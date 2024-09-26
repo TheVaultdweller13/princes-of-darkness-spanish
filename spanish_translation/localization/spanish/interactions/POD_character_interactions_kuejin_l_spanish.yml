@@ -247,17 +247,8 @@
  POD_goblin_portal_interaction_desc: "Teletransportarse a la ubicación [recipient.GetFirstNamePossessive]."
  POD_goblin_portal_interaction_tt: "Tú y [recipient.GetFirstName] deben estar en el desierto [terrain|E] o en las montañas del desierto [terrain|E]."
   
- POD_manifest_blood_blade_interaction: "Espada de sangre"
- POD_manifest_blood_blade_interaction_desc: "Crea un arma hecha de sangre que causa daño agravado."
-  
- POD_manifest_goblin_sword_interaction: "Espada de duende"
- POD_manifest_goblin_sword_interaction_desc: "Manifiesta una espada de fuego dentro de tu mano que puede dañar tanto objetos físicos como espirituales."
-  
  POD_taste_of_jade_interaction: "Sabor de jade"
  POD_taste_of_jade_interaction_desc: "Sintoniza un trozo de jade ordinario con las energías Chi, convirtiéndolo en un trozo de jade verdadero."
-  
- POD_manifest_blade_of_stone_interaction: "Hoja de piedra"
- POD_manifest_blade_of_stone_interaction_desc: "Crea armas de piedra."
   
  POD_channel_yin_energy_weapon_interaction: "Canalizar la energía Yin #Weak (Arma)#!"
  POD_channel_yin_energy_armor_interaction: "Canalizar la energía Yin #Weak (Armadura)#!"
@@ -387,3 +378,12 @@
  POD_soulbond_prisoner_interaction_growing: "El bono existente será reemplazado por uno más poderoso."
   
  has_dragon_nest: "Tiene algún nido de dragón [building|EL]"
+  
+ POD_set_spirit_nushi_interaction: "Nushi para Wu" #NT!
+ POD_set_spirit_nushi_interaction_desc: "Rinde homenaje a [recipient.GetFirstName] para que [recipient.GetSheHe] actúe como una especie de "patrón" de tu Wu." #NT!
+ POD_remove_spirit_nushi_interaction: "Quitar Nushi para Wu" #NT!
+ POD_remove_spirit_nushi_interaction_desc: "Rechaza [recipient.GetFirstName] haciendo que dejen de ser un "patrón" para tu Wu." #NT!
+ nushi_duty_tt: "Puede que recibas una tarea de tu nushi a principios de año. Una tarea inconclusa te causará estrés cada #V 3#! meses." #NT!
+ has_unfinished_nushi_duty: "Tienes una tarea sin terminar" #NT!
+ POD_nushi_duty_unfinished: "Tarea inacabada" #NT!
+ POD_nushi_duty_unfinished.tt: "Ganas estrés debido a una tarea inacabada de tu nushi." #NT!

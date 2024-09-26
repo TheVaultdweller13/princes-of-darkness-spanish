@@ -14,6 +14,15 @@
  POD_journey_maintenance.20.option.a: "Desgraciado."
  POD_journey_maintenance.20.tt: "Todos tus [journeys|E] que tenían como objetivo [journey_target.GetName] han finalizado."
   
+ POD_journey_maintenance.21.t: "Un tesoro perdido" #NT!
+ POD_journey_maintenance.21.desc: "Ya sea deliberadamente o por accidente, uno de los [artifacts|E] que he estado buscando fue destruido.\n\nNaturalmente, esto significa que no podré continuar con ningún [journeys|E] que lo haya buscado." #NT!
+ POD_journey_maintenance.21.tt: "Todos tus [journeys|E] que apuntaron a este [artifact|E] perdido han finalizado." #NT!
+  
+ POD_journey_maintenance.22.t: "El conocimiento llegó prematuramente" #NT!
+ POD_journey_maintenance.22.desc: "Recientemente aprendí una nueva habilidad.\n\nNaturalmente, esto significa que ya no necesito continuar con ningún [journeys|E] para aprenderla." #NT!
+ POD_journey_maintenance.22.option.a: "Ahora puedo centrarme en otras actividades." #NT!
+ POD_journey_maintenance.22.tt: "Todas tus [journeys|E] por las habilidades de aprendizaje que ya poseías han terminado." #NT!
+  
  POD_journey_maintenance.100.t: "[Localize(Concatenate(PlayerJourneyID,'_travel_title'))]"
  POD_journey_maintenance.100.desc: "[GetPlayer.Custom('PODCoterieTravelStatusFlavor')]\n\n[Localize(Concatenate(PlayerJourneyID,'_travel_desc'))]"
  POD_journey_maintenance.100.desc.companion: "\n\n[companion.Custom('PODCoterieIntroFlavor')]"

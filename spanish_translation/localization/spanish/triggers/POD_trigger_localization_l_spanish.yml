@@ -15,7 +15,15 @@
  NOT_is_a_demonologist: "¿#Bold no es#! un demonólogo?"
  is_a_infernalist: "es un infernalista"
  NOT_is_a_infernalist: "¿#Bold no es#! un infernalista?"
+ is_a_cultist: "es un cultista" #NT!
+ NOT_is_a_cultist: "¿#Bold no es#! un cultista?" #NT!
+ is_a_demonic: "es demoníaco" #NT!
+ NOT_is_a_demonic: "es #Bold no #! demoníaco" #NT!
+ is_a_akuma: "es un akuma" #NT!
+ NOT_is_a_akuma: "¿#Bold no es#! un akuma?" #NT!
  is_a_diablerist: "es un diabolista"
+ is_a_thinblood: "es un sangre delgada" #NT!
+ NOT_is_a_thinblood: "¿Es #Bold y no #! un sangre delgada?" #NT!
  is_a_sorcerer: "es un hechicero"
  wall_weak_enough_trigger_tooltip: "El muro debe ser lo suficientemente débil."
  i_am_full_of_chi: "Ya estás lleno de Chi"
@@ -55,8 +63,9 @@
  is_a_vampgeneration16: "Es de 16a generación"
  STRONG_MENTAL_DEFENSES_TRIGGER: "Las defensas mentales de este personaje son demasiado fuertes."
  VICTIM_CANNOT_BE_KILLED_PHYSICALLY: "Este personaje no puede ser asesinado físicamente."
- NOT_alchemy_craft_slots_are_full: "Todas tus ranuras ya están llenas de productos alquímicos, úsalos o véndelos."
- NOT_alchemy_craft_slots_are_empty: "No tienes productos alquímicos."
+ alchemy_craft_slots_are_not_initiated: "Las ranuras de alquimia no se inician" #NT!
+ alchemy_craft_slots_are_full: "Todas tus ranuras ya están llenas de productos alquímicos, usa [character_interaction|E] para usarlos o venderlos." #NT!
+ alchemy_craft_slots_are_empty: "No tienes productos alquímicos" #NT!
  TRAIT_FLAG_DESC_can_not_cure: "@warning_icon!#X Puede que no se recupere de las lesiones#!"
  HAS_TRAIT_WITH_CAN_NOT_CURE_FLAG_TRIGGER: "¿No se le permite a #bold#! recuperarse de lesiones?"
  NOT_HAS_TRAIT_WITH_CAN_NOT_CURE_FLAG_TRIGGER: "Se permite recuperarse de lesiones."
@@ -88,6 +97,8 @@
  NOT_HAS_RELATION_UNSPEAKABLE_SERVITOR_MASTER_WITH_TARGET: "¿#Bold no es #! [TARGET_CHARACTER.GetShortUINamePossessive] [GetPerk('unspeakable_servitor_perk').GetName(GetPlayer)]?"
  HAS_RELATION_POSSESSED_TARGET_WITH_TARGET: "Es [TARGET_CHARACTER.GetShortUINamePossessive] Titiritero"
  NOT_HAS_RELATION_POSSESSED_TARGET_WITH_TARGET: "¿Es #Bold y no #! [TARGET_CHARACTER.GetShortUINamePossessive] Titiritero?"
+ HAS_RELATION_SPIRIT_COMPANION_WITH_TARGET: "¿Es [TARGET_CHARACTER.GetShortUINamePossessive] compañero humano?" #NT!
+ NOT_HAS_RELATION_SPIRIT_COMPANION_WITH_TARGET: "¿Es #Bold y no #! [TARGET_CHARACTER.GetShortUINamePossessive] Compañero humano?" #NT!
   
  POD_IS_IN_SAME_PLANE_TOOLTIP: "[TARGET_CHARACTER.GetFirstName] es #bold, no #! en [umbra|E]."
  NOT_POD_IS_IN_SAME_PLANE_TOOLTIP: "[TARGET_CHARACTER.GetFirstName] está en [umbra|E], y [CHARACTER.GetFirstName] son #bold no#! en [umbra|E]."
@@ -95,6 +106,7 @@
  DOMAIN_LIMIT_AVAILABLE_TRIGGER: "Tiene un límite de dominio que es $COMPARATOR$ $NUM|V0$"
  NOT_HAS_DYNASTY_PERK_NONE: "[dynasty|E] tiene #bold no #! tiene [DYNASTY_PERK.GetName] Legado"
  ANY_KILLED_CHARACTER_COUNT: "$PARAMETERS$ de personajes asesinados:"
+ NOT_MY_STRESS_LEVEL_IS_AT_LEAST: "Tu [stress_level|E] es #bold no #! [stress_i]$NUM|V0$ o superior" #NT!
   
  worshipped_reborn_dynasty_prestige_level_1_trigger: "Los ídolos de [holder|E] [GetTrait('mummy').GetName( GetNullCharacter )] [dynasty|E] tienen un [dynasty_prestige_level|E] mayor o igual a [GetDynastyPrestigeLevelName( '(int32)1' )] (#V 1#!)"
  worshipped_reborn_dynasty_prestige_level_2_trigger: "Los ídolos de [holder|E] [GetTrait('mummy').GetName( GetNullCharacter )] [dynasty|E] tienen un [dynasty_prestige_level|E] mayor o igual a [GetDynastyPrestigeLevelName( '(int32)2' )] (#V 2#!)"
@@ -154,3 +166,30 @@
   
  num_character_followers: "Número de seguidores del personaje: $NUM|V0$"
  NOT_current_year_trigger: "El año actual es #bold no #! $COMPARATOR$ $NUM|V$"
+ days_of_continuous_peace: "Días de Paz Continua es $COMPARATOR$ $NUM|V$" #NT!
+  
+ NOT_send_option_selected: "Se debe seleccionar una opción." #NT!
+  
+  
+ HAS_TOTAL_BLOOD_RESERVES_GLOBAL: "Tiene al menos #bold $VALUE|V0$#![hunger_i|E]Blood" #NT!
+ HAS_TOTAL_BLOOD_RESERVES_FIRST: "Tienes al menos #bold $VALUE|V0$#![hunger_i|E]Blood" #NT!
+ HAS_TOTAL_BLOOD_RESERVES_THIRD: "[CHARACTER.GetShortUIName] tiene al menos #bold $VALUE|V0$#![hunger_i|E]Blood" #NT!
+ HAS_TOTAL_BLOOD_RESERVES_GLOBAL_NOT: "Tiene menos de #bold $VALUE|V0$#![hunger_i|E]Blood" #NT!
+ HAS_TOTAL_BLOOD_RESERVES_FIRST_NOT: "Tienes menos de #bold $VALUE|V0$#![hunger_i|E]Blood" #NT!
+ HAS_TOTAL_BLOOD_RESERVES_THIRD_NOT: "[CHARACTER.GetShortUIName] tiene menos que #bold $VALUE|V0$#![hunger_i|E]Blood" #NT!
+  
+ HAS_TOTAL_PATHOS_RESERVES_GLOBAL: "Tiene al menos #bold $VALUE|V0$#! Pathos" #NT!
+ HAS_TOTAL_PATHOS_RESERVES_FIRST: "Tienes al menos #bold $VALUE|V0$#! Pathos" #NT!
+ HAS_TOTAL_PATHOS_RESERVES_THIRD: "[CHARACTER.GetShortUIName] tiene al menos #bold $VALUE|V0$#! Pathos" #NT!
+ HAS_TOTAL_PATHOS_RESERVES_GLOBAL_NOT: "Tiene menos de #bold $VALUE|V0$#! Pathos" #NT!
+ HAS_TOTAL_PATHOS_RESERVES_FIRST_NOT: "Tienes menos de #bold $VALUE|V0$#! Pathos" #NT!
+ HAS_TOTAL_PATHOS_RESERVES_THIRD_NOT: "[CHARACTER.GetShortUIName] tiene menos que #bold $VALUE|V0$#! Pathos" #NT!
+  
+ HAS_VAMPGENERATION_LESS_OR_EQUAL_TO_GLOBAL: "¿Tiene al menos [generation|E] #bold $VALUE|V0$#!?" #NT!
+ HAS_VAMPGENERATION_LESS_OR_EQUAL_TO_FIRST: "Tienes al menos [generation|E] #bold $VALUE|V0$#!" #NT!
+ HAS_VAMPGENERATION_LESS_OR_EQUAL_TO_THIRD: "[CHARACTER.GetShortUIName] es al menos [generation|E] #bold $VALUE|V0$#!" #NT!
+ HAS_VAMPGENERATION_LESS_OR_EQUAL_TO_GLOBAL_NOT: "Tiene es #R NO#! al menos [generation|E] #bold $VALUE|V0$#!" #NT!
+ HAS_VAMPGENERATION_LESS_OR_EQUAL_TO_FIRST_NOT: "Eres #R NO#! al menos [generation|E] #bold $VALUE|V0$#!" #NT!
+ HAS_VAMPGENERATION_LESS_OR_EQUAL_TO_THIRD_NOT: "[CHARACTER.GetShortUIName] es #R NO#! al menos [generation|E] #bold $VALUE|V0$#!" #NT!
+  
+ has_abyssal_mysticism_bloodmagic_trigger_flag: "Debes completar [journey|E] para desbloquear Misticismo Abisal" #NT!

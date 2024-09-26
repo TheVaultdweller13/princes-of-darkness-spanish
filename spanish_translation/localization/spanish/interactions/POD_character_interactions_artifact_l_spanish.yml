@@ -58,5 +58,19 @@
  POD_call_pet_to_war_interaction: "Llamar a la mascota"
  POD_call_pet_to_war_interaction_desc: "Llama a tu mascota y a su amigo a la guerra."
  POD_call_pet_to_war_interaction_valid: "Ya has llamado a tus mascotas a [GetPlayer.MakeScope.GetVariable('pet_summon').War.GetName]."
- dogs: "Perros"
  cockroaches: "Cucarachas"
+  
+ POD_create_forced_fetish_interaction: "Atar en un fetiche" #NT!
+ POD_create_forced_fetish_interaction_desc: "Crea un fetiche uniendo a [recipient.GetFirstName] con fuerza." #NT!
+ POD_spirit_possess_artifact_interaction: "Poseer artefacto" #NT!
+ POD_spirit_possess_artifact_interaction_desc: "Poseer un artefacto para crear un fetiche." #NT!
+ POD_spirit_bound_artifact_interaction: "Artefacto de enlace" #NT!
+ POD_spirit_bound_artifact_interaction_desc: "Pídele a [recipient.GetFirstName] que se vincule a un artefacto para crear un fetiche." #NT!
+ POD_spirit_depossess_artifact_interaction: "Desvincular artefacto" #NT!
+ POD_spirit_depossess_artifact_interaction_desc: "Abandone su actual prisión fetichista." #NT!
+  
+ POD_create_fetish_interaction: "Crear fetiche" #NT!
+ POD_create_fetish_interaction_desc: "Pídele a [recipient.GetFirstName] que se vincule con algún material para crear un fetiche personalizado." #NT!
+  
+ POD_gods_arrow_interaction: "La flecha de Dios" #NT!
+ POD_gods_arrow_interaction_desc: "Usarás la Flecha de Dios para herir a [recipient.GetShortUIName]." #NT!

@@ -61,12 +61,6 @@
  melancholy_obfuscate_focus_effect_desc: "Centrándose en las subvenciones de Obfuscate:"
  obfuscate_visible: "Ofuscación"
   
- melancholy_oblivion_focus: "Enfoque en Olvido"
- melancholy_oblivion_focus_modifier: "[GetFocus('melancholy_oblivion_focus').GetName]"
- melancholy_oblivion_focus_desc: "Los vivos y los muertos."
- melancholy_oblivion_focus_effect_desc: "Centrándose en las subvenciones Olvido:"
- oblivion_visible: "Olvido"
-  
  melancholy_chimerstry_focus: "Enfoque en Quimerismo"
  melancholy_chimerstry_focus_modifier: "[GetFocus('melancholy_chimerstry_focus').GetName]"
  melancholy_chimerstry_focus_desc: "Maestros de la ilusión."
@@ -155,10 +149,10 @@
  sanguine_presence_focus_effect_desc: "Centrándose en la Presencia otorga:"
  presence_visible: "Presencia"
   
- sanguine_thinblood_alchemy_focus: "Enfoque de Alquimia de Sangre"
- sanguine_thinblood_alchemy_focus_modifier: "[GetFocus('sanguine_thinblood_alchemy_focus').GetName]"
- sanguine_thinblood_alchemy_focus_desc: "El poder de los lazos débiles."
- sanguine_thinblood_alchemy_focus_effect_desc: "Centrarse en la Alquimia de Sangre otorga:"
+ sanguine_thinbloodalchemy_focus: "Enfoque de alquimia de sangre delgada" #NT!
+ sanguine_thinbloodalchemy_focus_modifier: "[GetFocus('sanguine_thinbloodalchemy_focus').GetName]" #NT!
+ sanguine_thinbloodalchemy_focus_desc: "El poder de los lazos débiles." #NT!
+ sanguine_thinbloodalchemy_focus_effect_desc: "Centrarse en la alquimia de sangre delgada otorga:" #NT!
  thinbloodalchemy_visible: "Alquimia de sangre"
   
  daimonion_visible: "Daimonion"
@@ -272,11 +266,11 @@
  godbodies_earth_focus_desc: "La naturaleza equilibrada de la tierra, cuyo objetivo es llevar las diversas atracciones y corrientes dentro del alma de un Wan Kuei a un equilibrio centrado y armonioso."
  godbodies_earth_focus_effect_desc: "Centrándose en el Cuerpo Dios de la Tierra se otorgan:"
   
- metalgodbody_name: "Metal"
- woodgodbody_name: "Madera"
- watergodbody_name: "Agua"
- firegodbody_name: "Fuego"
- earthgodbody_name: "Tierra"
+ metalgodbody_visible: "Metal" #NT!
+ woodgodbody_visible: "Madera" #NT!
+ watergodbody_visible: "Agua" #NT!
+ firegodbody_visible: "Fuego" #NT!
+ earthgodbody_visible: "Tierra" #NT!
   
   #shintai 
  shintai_lifestyle_name: "Shintai"
@@ -346,11 +340,11 @@
  chi_arts_fengshui_focus_desc: "Perspectivas especiales sobre el flujo del chi."
  chi_arts_fengshui_focus_effect_desc: "Centrándose en el Feng Shui se obtienen:"
   
- yinprana_name: "Yin Prana"
- yangprana_name: "Prana Yang"
- equilibrium_name: "Equilibrio"
- tapestry_name: "Tapiz"
- fengshui_name: "Feng Shui"
+ yinprana_visible: "Yin Prana" #NT!
+ yangprana_visible: "Prana Yang" #NT!
+ equilibrium_visible: "Equilibrio" #NT!
+ tapestry_visible: "Tapiz" #NT!
+ fengshui_visible: "Feng Shui" #NT!
   
   #soul arts 
  soul_arts_lifestyle_name: "Artes del alma"
@@ -426,11 +420,11 @@
  demon_arts_hellweaving_focus_desc: "Dones de poder para seleccionar Kuei-jin de los Reyes Yama y otras entidades demoníacas."
  demon_arts_hellweaving_focus_effect_desc: "Centrándonos en las subvenciones Hellweaving:"
   
- blackwind_name: "Viento negro"
- demonshintai_name: "Demon Shintai"
- ironmountain_name: "Montaña de hierro"
- kiai_name: "Kiai"
- hellweaving_name: "Tejido del infierno"
+ blackwind_visible: "Viento negro" #NT!
+ demonshintai_visible: "Demon Shintai" #NT!
+ ironmountain_visible: "Montaña de hierro" #NT!
+ kiai_visible: "Kiai" #NT!
+ hellweaving_visible: "Tejido del infierno" #NT!
   
   #alternate techniques 
  alternate_techniques_lifestyle_name: "Técnicas"
@@ -469,12 +463,12 @@
  alternate_techniques_tempest_of_inward_focus_focus_desc: "Forma de arte marcial desarrollada por el Dharma herético de los Buscadores del Camino Interno."
  alternate_techniques_tempest_of_inward_focus_focus_effect_desc: "Centrarse en la tempestad de Inward Focus otorga:"
   
- combination_techniques_name: "Técnicas de combinación"
- yin_techniques_name: "Técnicas Yin"
- yang_techniques_name: "Técnicas Yang"
- prayer_eating_name: "Comer mientras se ora"
- inward_way_name: "Camino interior"
- tempest_of_inward_focus_name: "Tempestad de enfoque interior"
+ combination_techniques_visible: "Técnicas de combinación" #NT!
+ yin_techniques_visible: "Técnicas Yin" #NT!
+ yang_techniques_visible: "Técnicas Yang" #NT!
+ prayer_eating_visible: "Comer mientras se ora" #NT!
+ inward_way_visible: "Camino interior" #NT!
+ tempest_of_inward_focus_visible: "La tempestad del enfoque interior" #NT!
   
   #Qiao 
  qiao_lifestyle_name: "Quia"
@@ -720,54 +714,3 @@
  generalhengeyokaigifts_visible: "Regalos generales"
  hakkengifts_visible: "Regalos Hakken"
  kumogifts_visible: "Regalos kumo"
-  
-  #Spheres 
- NEEDS_SPHERE_TEXT: "#N Debes tener el rasgo de esfera#!"
- pattern_spheres_lifestyle_name: "Esferas de patrones"
- pattern_spheres_lifestyle_desc: "Centrémonos en las Esferas que componen el mundo físico: Fuerzas, Vida y Materia."
- pattern_spheres_lifestyle_highlight_desc: "Gracias a tu Areté ganas #P [GetPlayer.Custom('GetMagickLifestylePercentageBoost')]#! más [experience|E] en este Estilo de Vida."
- monthly_pattern_spheres_lifestyle_xp_gain_mult: "Esferas con patrones mensuales [lifestyle|E] [experience|E]"
-  
- forces_visible: "Fuerzas"
- pattern_spheres_forces_focus: "Enfoque en Fuerzas"
- pattern_spheres_forces_focus_modifier: "[GetFocus('forces_focus').GetName]"
- pattern_spheres_forces_focus_desc: "Fuego, fuerza y ​​tormentas"
- pattern_spheres_forces_focus_effect_desc: "Centrándose en las subvenciones de las Fuerzas:"
-  
- life_visible: "Vida"
- pattern_spheres_life_focus: "Enfoque en Vida"
- pattern_spheres_life_focus_modifier: "[GetFocus('life_focus').GetName]"
- pattern_spheres_life_focus_desc: "Todo lo que está vivo"
- pattern_spheres_life_focus_effect_desc: "Becas Centrándonos en la Vida:"
-  
- foundational_spheres_lifestyle_name: "Esferas fundacionales"
- foundational_spheres_lifestyle_desc: "Concéntrese en las Esferas que forman la base de la existencia: Correspondencia, Tiempo y Primordial."
- foundational_spheres_lifestyle_highlight_desc: "Gracias a tu Areté ganas #P [GetPlayer.Custom('GetMagickLifestylePercentageBoost')]#! más [experience|E] en este Estilo de Vida."
- monthly_foundational_spheres_lifestyle_xp_gain_mult: "Esferas Fundacionales Mensuales [lifestyle|E] [experience|E]"
-  
- spiritual_spheres_lifestyle_name: "Esferas espirituales"
- spiritual_spheres_lifestyle_desc: "Concéntrese en las esferas que forman los reinos del destino, la mente y el alma: Espíritu, Entropía y Mente."
- spiritual_spheres_lifestyle_highlight_desc: "Gracias a tu Areté ganas #P [GetPlayer.Custom('GetMagickLifestylePercentageBoost')]#! más [experience|E] en este Estilo de Vida."
- monthly_spiritual_spheres_lifestyle_xp_gain_mult: "Esferas espirituales mensuales [lifestyle|E] [experience|E]"
-  
- matter_visible: "Materia"
- mind_visible: "Mente"
- entropy_visible: "Entropía"
- prime_visible: "Primordial"
- time_visible: "Tiempo"
- correspondence_visible: "Correspondencia"
-  
- pattern_spheres_focus: "Esferas de patrones de enfoque"
- pattern_spheres_focus_modifier: "[GetFocus('pattern_spheres_focus').GetName]"
- pattern_spheres_focus_desc: "Vida, fuerzas y materia"
- pattern_spheres_focus_effect_desc: "Centrándose en las subvenciones Pattern:"
-  
- foundational_spheres_focus: "Enfoque en las esferas fundacionales"
- foundational_spheres_focus_modifier: "[GetFocus('foundational_spheres_focus').GetName]"
- foundational_spheres_focus_desc: "Primordiales, Tiempo y Correspondencia"
- foundational_spheres_focus_effect_desc: "Centrándose en las subvenciones fundacionales:"
-  
- spiritual_spheres_focus: "Enfoque en las esferas espirituales"
- spiritual_spheres_focus_modifier: "[GetFocus('spiritual_spheres_focus').GetName]"
- spiritual_spheres_focus_desc: "Entropía, Mente y Espíritu"
- spiritual_spheres_focus_effect_desc: "Centrándose en las subvenciones espirituales:"

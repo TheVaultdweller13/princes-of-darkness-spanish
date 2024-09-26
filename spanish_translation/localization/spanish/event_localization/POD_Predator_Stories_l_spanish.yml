@@ -555,7 +555,7 @@
   
   #Victim is actually a Redcap 
  POD_predatorstories.1390.t: "Víctima adecuada"
-  POD_predatorstories_auspexadvanced.1390.t: 0 "Victim is a redcap" "La víctima es un capo rojo" #NT!
+ POD_predatorstories_auspexadvanced.1390.t: "La víctima es un capo rojo" #NT!
  POD_predatorstories.1390.desc: "Mientras buscas sangre, localizas un candidato adecuado para alimentarte."
  POD_predatorstories_auspexadvanced.1390.desc: "En busca de sangre, debido a tu gran habilidad para ver lo que otros no pueden; tus agudas habilidades de observación te permiten determinar que tu presa seleccionada es de hecho un hada [GetTrait('redcap').GetName( GetNullCharacter )], no un vampiro.\n\nSabes que es probable que los Redcaps entren en combate y detecten lo invisible; también sabes que alimentarse de un hada probablemente tendrá algunos efectos adversos."
  POD_predatorstories.1390.a: "Avanzas hacia tu víctima"
@@ -611,7 +611,7 @@
  POD_predatorstories.1401.f.failure.toast: "Debería haber sido tu imaginación... ¿o no?"
   
  POD_predatorstories.1402.t: "Víctima adecuada"
-  POD_predatorstories_auspexadvanced.1402.t: 0 "Victim is a sluagh" "La víctima es una sluagh" #NT!
+ POD_predatorstories_auspexadvanced.1402.t: "La víctima es una sluagh" #NT!
  POD_predatorstories.1402.desc: "Has encontrado un candidato adecuado para alimentarte."
  POD_predatorstories_auspexadvanced.1402.desc: "Debido a tu gran habilidad para ver lo que otros no pueden, tus agudas habilidades de observación te permiten determinar que tu presa seleccionada es, de hecho, un hada [GetTrait('sluagh').GetName( GetNullCharacter )], no un [GetTrait('vampire').GetName( GetNullCharacter )].\n\nEs probable que los [GetTrait('sluagh').GetName( GetNullCharacter )] intenten evitar el conflicto y detectar lo invisible.\n\nSabes que alimentarse de un hada probablemente tendrá algunos efectos adversos."
  POD_predatorstories.1402.a: "Avanzas hacia tu víctima"

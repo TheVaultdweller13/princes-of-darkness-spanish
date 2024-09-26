@@ -226,15 +226,51 @@
  POD_diablerize.700.desc: "Devorar [victim.GetTitledFirstNamePossessive] alma"
   
  POD_diablerize.800.t: "El alma invicta"
- POD_diablerize.800.desc: "¡Me siento [unconquered_soul.GetFirstName] dentro de mi mente, luchando por tomar el control de mi cuerpo! ¿¡Qué he hecho!?"
- POD_diablerize.800.option.a: "¡Resistid! ¡No seré vencido!"
- POD_diablerize.800.option.b: "Ríndete y deja que [unconquered_soul.GetFirstName] tome el control."
-  
- POD_diablerize.810.t: "Señales de un [unconquered_soul|E]"
- POD_diablerize.810.desc: "Uno de tus sirvientes señaló que cambiaste algunos de tus hábitos recientemente, algo que no sucede con frecuencia entre los de tu especie. Esto te recuerda los rumores sobre las terribles consecuencias de [diablerie|E] y su posible costo para tu alma. ¿Podría ser que tu última víctima esté tratando de contraatacar? Una perspectiva preocupante, en verdad..."
- POD_diablerize.810.option.a.tt: "Algo muy malo va a pasar pronto:"
- POD_diablerize.810.option.a: "Algo está muy muy mal..."
+ #POD_diablerize.800.desc: "¡Me siento [unconquered_soul.GetFirstName] dentro de mi mente, luchando por tomar el control de mi cuerpo! ¿¡Qué he hecho!?" #NT!
+ #POD_diablerize.800.option.a: "¡Resistid! ¡No seré vencido!" #NT!
+ #POD_diablerize.800.option.b: "Ríndete y deja que [unconquered_soul.GetFirstName] tome el control." #NT!
+  # 
+ #POD_diablerize.810.t: "Señales de un [unconquered_soul|E]" #NT!
+ #POD_diablerize.810.desc: "Uno de tus sirvientes señaló que cambiaste algunos de tus hábitos recientemente, algo que no sucede con frecuencia entre los de tu especie. Esto te recuerda los rumores sobre las terribles consecuencias de [diablerie|E] y su posible costo para tu alma. ¿Podría ser que tu última víctima esté tratando de contraatacar? Una perspectiva preocupante, en verdad..." #NT!
+ #POD_diablerize.810.option.a.tt: "Algo muy malo va a pasar pronto:" #NT!
+ #POD_diablerize.810.option.a: "Algo está muy muy mal..." #NT!
  unconquered_soul_warning_tooltip: "@alert_icon! #alert_trial #high $VALUE|0$%#! de probabilidad de [unconquered_soul|E]!#!"
+  
+ POD_diablerize.808.tt: "Se eliminan todos los edificios en [targetprovince.GetName]." #NT!
+ POD_diablerize.801.desc: "Otra noche desastrosa en la corte. Esto ha sido un hecho recurrente durante los últimos meses, con tus vasallos alegando que has cambiado para peor, tomando decisiones precipitadas en un momento y gritando furiosamente que no lo hiciste al siguiente. Es como si hubiera dos personalidades en conflicto gobernando en tu lugar y compitiendo por el poder. ¿Has sido maldecido? ¿Afligido por un poder extraño? Cualquiera que sea el caso, está muy claro que tu corte apenas está dispuesta a visitarte, ya que parece que no estás en condiciones de gobernar o, y quizás más importante, no estás en condiciones de recordar cuando te ignoraron." #NT!
+ POD_diablerize.801.option.a: "¡Pagarán por su insolencia!" #NT!
+ POD_diablerize.801.option.b: "¿Simplemente estoy... cambiando?" #NT!
+  
+ generic_legitimacy_debuff_modifier: "Legitimidad en cuestión" #NT!
+ generic_legitimacy_debuff_modifier_desc: "Su derecho a gobernar es objeto de un serio debate." #NT!
+ POD_diablerize.802.desc: "¿Se rieron de ti? Lamentablemente, este tipo de cuestionamientos han estado muy presentes en tu mente últimamente. Desde hace un tiempo, pareces haber perdido tu ventaja o, más precisamente, una parte de ti la ha perdido. Cada decisión decisiva que tomas se ve socavada por una segunda indecisión y un cambio de actitud poco después. Francamente, ya no estás gobernando tanto como confiando en tu autoridad pasada y tu corte parece haberlo comprendido lentamente. Esa debilidad puede ser bastante mortal en el mundo de los condenados, pero no estás seguro de cuál es la causa raíz de esto. Es como si alguien más estuviera dentro de tu cabeza, contradiciendo constantemente todo lo que haces..." #NT!
+ POD_diablerize.802.option.a: "¡Sigo siendo su señor!" #NT!
+  
+ POD_diablerize.803.desc: "¿Por qué hay un cadáver que muere lentamente a tus pies? No recuerdas lo que pasó, pero a juzgar por la sangre en tus manos, es probable que seas el culpable. Sobre todo porque parece que a tu corte no le sorprende tu comportamiento. Últimamente, este tipo de sucesos erráticos han estado sucediendo con mucha frecuencia, como si alguien más estuviera tomando repentinamente el control de tu cuerpo y poniendo en práctica sus oscuros deseos cada vez que puede. ¿Podría ser...? No. En cualquier caso, tienes un desastre que limpiar, literal y figurativamente." #NT!
+ POD_diablerize.803.option.a: "¡Todos vivís y morís a mi antojo!" #NT!
+ unconquered_soul_in_progress_tt: "#N Tu crimen de [diablerie|E] está volviendo para atormentarte...#!" #NT!
+  
+ POD_diablerize.804.desc: "Algo anda muy mal contigo. Lo sospechas desde hace tiempo, pero ya no tienes ninguna duda. Tu comportamiento ha sido errático, por decir lo menos, pasando de insultar a tus vasallos a hacerles favores (¡a veces las dos cosas a la vez!) aparentemente sin ningún orden ni concierto.\nEs como si otra persona estuviera tomando el control de tus pensamientos y siguiendo sus propios planes, muy diferentes a los tuyos, lo que da como resultado estos lapsus de juicio.\nTienes una sensación de pavor creciente de que tal vez hayas subestimado la fuerza de voluntad de [unconquered_soul.GetFirstName]..." #NT!
+ POD_diablerize.804.option.a: "¡Ganaré ahora como gané entonces!" #NT!
+  
+ POD_diablerize.805.desc: "La situación está empeorando. Te has sorprendido a ti mismo rompiendo tu propio código moral una y otra vez, aparentemente sin siquiera pensarlo. Quizás aún peor, has estado actuando de manera diferente en general, como si estuvieras siguiendo un nuevo conjunto de reglas. Ha quedado muy claro que tu ser mismo está siendo atacado por el alma vengativa de [unconquered_soul.GetFirstName] que está tratando de asegurarse de que sigas el camino "adecuado"." #NT!
+ POD_diablerize.805.option.a: "¡No me dejaré llevar tan fácilmente por el mal camino!" #NT!
+  
+ complete_same_faith_generic_debuff_modifier: "Blasfemo creativo" #NT!
+ complete_same_faith_generic_debuff_modifier_desc: "De alguna manera, siempre estás encontrando nuevas formas de molestar o insultar a tus hermanos." #NT!
+ POD_diablerize.806.desc: "Todo está mal.\nA pesar de tus mejores esfuerzos, parece que, sin darte cuenta, estás haciendo todo lo que está a tu alcance para romper los principios más sagrados de tu fe en las exhibiciones más públicas posibles.\nTe tomó un tiempo darte cuenta, pero ahora está claro que la influencia maliciosa de [unconquered_soul.GetFirstName] está detrás de esto, tomando el control de tus pensamientos y acciones en los momentos más inoportunos, tratando (y con mucho éxito) de hacerte parecer un blasfemo impenitente. Parece que la batalla por tu alma aún no ha terminado." #NT!
+ POD_diablerize.806.option.a: "Debo hacer las paces." #NT!
+  
+ POD_diablerize.807.desc: "Durante un tiempo, has pensado que la influencia de [unconquered_soul.GetFirstName] sobre tu mente se había disipado ya que aparentemente tenías el control de tus acciones en la corte. La verdad es, lamentablemente, más perniciosa. Mientras concentrabas tus esfuerzos en tus intereses más cercanos, parece que tu enemigo estaba distorsionando tus órdenes y erosionando tu influencia en tu dominio más amplio. Las estructuras de poder cuidadosamente diseñadas siguiendo tu código moral se han erosionado en esta región, aparentemente debido a tus propias órdenes, pero lo más probable es que se debieran a las que diste mientras tu indeseable pasajera del alma tenía el control." #NT!
+ POD_diablerize.807.option.a: "Se puede solucionar." #NT!
+  
+ POD_diablerize.808.t: "El alma invicta: final" #NT!
+ POD_diablerize.808.desc: "[unconquered_soul.GetFirstName] está luchando por el control de tu cuerpo más que nunca. Su interferencia ha desorganizado por completo tu ejército, las órdenes contradictorias que vienen de "ambos" han dejado a tus campeones confundidos y tu influencia sobre las milicias mortales locales en ruinas.\nTiene que parar... de una forma u otra. Todavía hay una gran posibilidad de que puedas resistir los cambios más... permanentes y salir con tu sentido de identidad prácticamente intacto. O tal vez la batalla ya ha desgastado tu fuerza de voluntad lo suficiente como para que estés listo para renacer de nuevo en el cuerpo del único lo suficientemente tonto como para pensar que te mató.\nLa única pregunta verdadera sigue siendo la misma, ¿quién eres tú?" #NT!
+ POD_diablerize.808.option.a: "¡Vete! ¡Ya te derroté!" #NT!
+ POD_diablerize.808.option.b: "#italic ¡He renacido! #!" #NT!
+  
+ POD_diablerize.809.desc: "[unconquered_soul.GetFirstName]'s está luchando por el control de tu cuerpo más que nunca. Su interferencia te ha hecho cometer algunos errores críticos en tu gestión noche a noche, haciéndote parecer un tonto mientras alertas a las autoridades mortales de tu presencia.\nTiene que parar... de una forma u otra. Todavía hay una gran posibilidad de que puedas resistir los cambios más... permanentes y salir con tu sentido de identidad prácticamente intacto. O tal vez la batalla ya ha desgastado tu fuerza de voluntad lo suficiente como para que estés listo para renacer de nuevo en el cuerpo del único tonto que pensó que te mató.\nLa única pregunta verdadera sigue siendo la misma, ¿quién eres tú?" #NT!
+ POD_diablerize.810.desc: "Uno de tus sirvientes señaló que cambiaste algunos de tus hábitos recientemente, algo que no sucede con frecuencia entre los de tu especie. Esto te recuerda los rumores sobre las terribles consecuencias de [diablerie|E] y su posible costo para tu alma. ¿Podría ser que tu última víctima esté tratando de contraatacar? Una perspectiva preocupante, en verdad..."
   
  POD_diablerize.4000.t: "¡Plan de Diablerie frustrado!"
  POD_diablerize.4000.desc: "Por algún giro del destino, mi plan para [diablerize|E] [defender.GetFirstName] ha fracasado."

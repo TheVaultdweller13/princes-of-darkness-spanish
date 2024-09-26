@@ -1,18 +1,18 @@
 ﻿l_spanish:
- POD_debug_squared_distance_interaction: "#P;bold Mostrar distancia al cuadrado#!" #NT!
- POD_debug_squared_distance_interaction_desc: "La #P;bold distancia al cuadrado#! entre [actor.GetShortUIName] y [recipient.GetShortUIName] es #V;bold [SCOPE.ScriptValue('POD_debug_squared_distance')]#!" #NT!
+ POD_debug_squared_distance_interaction: "#P;bold Mostrar distancia al cuadrado#!"
+ POD_debug_squared_distance_interaction_desc: "La #P;bold distancia al cuadrado#! entre [actor.GetShortUIName] y [recipient.GetShortUIName] es #V;bold [SCOPE.ScriptValue('POD_debug_squared_distance')]#!"
   
- POD_debug_teleport_interaction: "Teletransportarse" #NT!
- POD_debug_teleport_interaction_desc: "¡Yujuuu!" #NT!
+ POD_debug_teleport_interaction: "Teletransportarse"
+ POD_debug_teleport_interaction_desc: "¡Yujuuu!"
   
- POD_debug_instacomplete_journey_interaction: "Completar instantáneamente el viaje actual" #NT!
- POD_debug_instacomplete_journey_interaction_desc: "Completa instantáneamente tu [journey|E] a #bold $POD_JOURNEY_GETNAME$#!" #NT!
+ POD_debug_instacomplete_journey_interaction: "Completar instantáneamente el viaje actual"
+ POD_debug_instacomplete_journey_interaction_desc: "Completa instantáneamente tu [journey|E] a #bold $POD_JOURNEY_GETNAME$#!"
   
- POD_debug_umbra_discovery_interaction: "Ganancia [umbra|E] Descubrimiento" #NT!
- POD_debug_umbra_discovery_interaction_desc: "Podrás iniciar un [umbra_expedition|E] en el #bold [Localize(Concatenate('game_concept_', recipient.MakeScope.GetVariable('umbra_stationed_realm').Var('name').GetFlagName))]#!" #NT!
+ POD_debug_umbra_discovery_interaction: "Ganancia [umbra|E] Descubrimiento"
+ POD_debug_umbra_discovery_interaction_desc: "Podrás iniciar un [umbra_expedition|E] en el #bold [Localize(Concatenate('game_concept_', recipient.MakeScope.GetVariable('umbra_stationed_realm').Var('name').GetFlagName))]#!"
   
- POD_debug_show_real_prowess_interaction: "Muestra destreza sin límites" #NT!
- POD_debug_show_real_prowess_interaction_desc: "Muestra tu habilidad real [prowess|E], que se usa durante ciertos eventos en [princes_of_darkness|E]." #NT!
+ POD_debug_show_real_prowess_interaction: "Muestra destreza sin límites"
+ POD_debug_show_real_prowess_interaction_desc: "Muestra tu habilidad real [prowess|E], que se usa durante ciertos eventos en [princes_of_darkness|E]."
   
- POD_debug_portrait_shaders_interaction: "Zona de juegos de sombreado de retratos" #NT!
- POD_debug_portrait_shaders_interaction_desc: "Métete con los gráficos de [recipient.GetShortUIName]." #NT!
+ POD_debug_portrait_shaders_interaction: "Zona de juegos de sombreado de retratos"
+ POD_debug_portrait_shaders_interaction_desc: "Métete con los gráficos de [recipient.GetShortUIName]."

@@ -1,19 +1,19 @@
 ﻿l_spanish:
  ## adopt_personal_coa Decision Loc ## 
- adopt_personal_coa: "Adopte un conjunto de armas personales" #NT!
- adopt_personal_coa_desc: "Un conjunto de [POD_personal_coa|e] puede distinguirme aún más de mi casa y mi familia." #NT!
- adopt_personal_coa_confirm: "Hazlo" #NT!
- adopt_personal_coa_tooltip: "Adopte un conjunto de armas personales" #NT!
- adopt_personal_coa_effect_tt: "Obtendrás un escudo de armas personal que se mostrará junto al sigilo de tu casa." #NT!
- personal_coa_name_gui: "Armas personales" #NT!
- CUSTOMIZE_PERSONAL_ARMS: "#T Personaliza [POD_personal_coa|e]#!\nOpen el menú de personalización para editar tus brazos personales." #NT!
- game_concept_POD_personal_coa: "Armas personales" #NT!
- game_concept_POD_personal_coa_desc: "$game_concept_POD_personal_coa$ es un conjunto de escudos heráldicos propiedad del individuo en lugar de [house|e].\n\nUn jugador puede personalizar sus propios escudos personales a su gusto." #NT!
- PERSONAL_ARMS_COOLTIP: "Armas personales" #NT!
- coa_new_name: "[GetGlobalVariable('coa_new_name').Char.GetFirstNamePossessive] Armas personales" #NT!
- pod_personal_coa_slave: "Porta armas personal" #NT!
- agot_dylan_house_name_key: "[GetGlobalVariable('coa_new_name').Char.GetDynastyNameNoTooltip]" #NT!
- #COA_TOOLTIP_HOLDER: "[GetPlayer.Custom2_Title( 'TitleRelationToMe', TITLE.Self )][TITLE.GetLeaseInfo][holder|E]: [TITLE.GetHolder.GetFullNameNicknamed]\n[SelectLocalization(DataModelHasItems(TITLE.GetLineOfSuccession), 'COA_LINE_OF_SUCCESSION', '')][TITLE.GetLineOfSuccessionDesc]\n" #NT!
- #COA_TOOLTIP_NO_HOLDER: "No creado" #NT!
- #COA_TOOLTIP_CLICK_INFO: "#I [SelectLocalization(TITLE.IsShownInTitleView, 'GO_TO_CLICK', 'VIEW_CLICK')]\n$GO_TO_RIGHT_CLICK$#!" #NT!
- #COA_TOOLTIP_CLICK_INFO_GUI: "#I [SelectLocalization(Title.IsShownInTitleView, 'GO_TO_CLICK', 'VIEW_CLICK')]\n$GO_TO_RIGHT_CLICK$#!" #NT!
+ adopt_personal_coa: "Adopte un conjunto de armas personales"
+ adopt_personal_coa_desc: "Un conjunto de [POD_personal_coa|e] puede distinguirme aún más de mi casa y mi familia."
+ adopt_personal_coa_confirm: "Hazlo"
+ adopt_personal_coa_tooltip: "Adopte un conjunto de armas personales"
+ adopt_personal_coa_effect_tt: "Obtendrás un escudo de armas personal que se mostrará junto al sigilo de tu casa."
+ personal_coa_name_gui: "Armas personales"
+ CUSTOMIZE_PERSONAL_ARMS: "#T Personaliza [POD_personal_coa|e]#!\nOpen el menú de personalización para editar tus brazos personales."
+ game_concept_POD_personal_coa: "Armas personales"
+ game_concept_POD_personal_coa_desc: "$game_concept_POD_personal_coa$ es un conjunto de escudos heráldicos propiedad del individuo en lugar de [house|e].\n\nUn jugador puede personalizar sus propios escudos personales a su gusto."
+ PERSONAL_ARMS_COOLTIP: "Armas personales"
+ coa_new_name: "[GetGlobalVariable('coa_new_name').Char.GetFirstNamePossessive] Armas personales"
+ pod_personal_coa_slave: "Porta armas personal"
+ agot_dylan_house_name_key: "[GetGlobalVariable('coa_new_name').Char.GetDynastyNameNoTooltip]"
+ #COA_TOOLTIP_HOLDER: "[GetPlayer.Custom2_Title( 'TitleRelationToMe', TITLE.Self )][TITLE.GetLeaseInfo][holder|E]: [TITLE.GetHolder.GetFullNameNicknamed]\n[SelectLocalization(DataModelHasItems(TITLE.GetLineOfSuccession), 'COA_LINE_OF_SUCCESSION', '')][TITLE.GetLineOfSuccessionDesc]\n"
+ #COA_TOOLTIP_NO_HOLDER: "No creado"
+ #COA_TOOLTIP_CLICK_INFO: "#I [SelectLocalization(TITLE.IsShownInTitleView, 'GO_TO_CLICK', 'VIEW_CLICK')]\n$GO_TO_RIGHT_CLICK$#!"
+ #COA_TOOLTIP_CLICK_INFO_GUI: "#I [SelectLocalization(Title.IsShownInTitleView, 'GO_TO_CLICK', 'VIEW_CLICK')]\n$GO_TO_RIGHT_CLICK$#!"
