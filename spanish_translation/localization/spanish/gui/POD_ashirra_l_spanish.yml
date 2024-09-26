@@ -1,0 +1,45 @@
+﻿l_spanish:
+ tab_ashirra: "#T Ashirra#!" #NT!
+  
+ ASHIRRA_WINDOW_TOTAL_INFLUENCE: "Celo actual: #V [Religion.MakeScope.GetVariable('ashirra_influence').GetValue|0]#!" #NT!
+ ASHIRRA_WINDOW_INFLUENCE_GAIN: "Celo anual: #TOOLTIP:ashirra_influence_gain_tt #P;L +[GetPlayer.MakeScope.ScriptValue('ashirra_influence_value')|0]#!#!" #NT!
+ ashirra_influence_gain_tt: "[GetPlayer.MakeScope.GetScriptValueDesc('ashirra_influence_value')]" #NT!
+ ashirra_county_mod: "Condados con religión Ashirra #weak (cada uno suma un celo)#!" #NT!
+  
+ HAVE_AT_LEAST_COUNT_ASHIRRA_INFLUENCE: "Ashirra tiene al menos $VALUE|0V$ Celo #weak (#V $VALUE|0$0#! Celo por alguien que no sea el Califa)#!" #NT!
+ NOT_HAVE_AT_LEAST_COUNT_ASHIRRA_INFLUENCE: "Ashirra tiene #bold no#! al menos $VALUE|0V$ Celo #weak (#V $VALUE|0$0#! Celo por alguien que no es el Califa en su lugar)#!" #NT!
+ GAINS_ASHIRRA_INFLUENCE: "Ganancias $VALUE|+0$ Celo" #NT!
+ GAIN_ASHIRRA_INFLUENCE: "Obtienes $VALUE|+0$ Celo" #NT!
+ GAINED_ASHIRRA_INFLUENCE: "Ganó $VALUE|+0$ Celo" #NT!
+ LOSES_ASHIRRA_INFLUENCE: "Gasta $VALUE|-0$ Celo" #NT!
+ LOSE_ASHIRRA_INFLUENCE: "Gastas $VALUE|-0$ Celo" #NT!
+ LOST_ASHIRRA_INFLUENCE: "Gastado $VALUE|-0$ Celo" #NT!
+  
+ ASHIRRA_WINDOW_MY_STATUS: "Mi estado: #V [GetPlayer.Custom('AshirraStatus')]#!" #NT!
+  
+ ASHIRRA_WINDOW_TAB_EDICTS: "Edictos" #NT!
+ temporary_doctrine_tt: "Esta doctrina será eliminada después de #V 10#! años." #NT!
+  
+ ashirra_idealism_doctrine_name: "Idealismo de Ashirra" #NT!
+ ashirra_edict_adopt_mysticism: "Abrazar el reformismo" #NT!
+ ashirra_mysticism_doctrine_name: "Reformismo Ashirra" #NT!
+ ashirra_mysticism_doctrine_desc: "Encabezado por Harún el-Lail, este enfoque desafía a los tradicionalistas en muchos aspectos (como el argumento de que los Ashirra ya cumplen con sus deberes hacia los Sawn mediante su existencia nocturna). En términos más generales, es un llamado al debate y al cambio que los Ancianos consideran una pendiente resbaladiza." #NT!
+ ashirra_edict_adopt_legalism: "Imponer el tradicionalismo" #NT!
+ ashirra_legalism_doctrine_name: "Tradicionalismo Ashirra" #NT!
+ ashirra_legalism_doctrine_desc: "El punto de vista tradicional de la mayoría de los Ashirra es la estricta adhesión a las enseñanzas, interpretadas para su propio estado de no-muertos por los primeros Ashirra. Para sus detractores, este enfoque no deja lugar al debate y hace cumplir la regla de los Ancianos." #NT!
+  
+ ashirra_edict_army: "Influir en la Zawiya" #NT!
+ ashirra_army_doctrine_name: "Influenciado por Zawiya" #NT!
+ ashirra_army_doctrine_desc: "Aunque no son tan numerosas como las cristianas, el Islam aún alberga algunas órdenes militares. Los Ashirra tienen una sólida influencia en ellas y no dudan en utilizarla en momentos de necesidad." #NT!
+ ashirra_edict_tax: "Asegurar la Medina" #NT!
+ ashirra_tax_doctrine_name: "Medina asegurada" #NT!
+ ashirra_tax_doctrine_desc: "Medina, el centro social de una ciudad o pueblo musulmán, es el lugar donde los Ashirra influyen más en los asuntos mortales." #NT!
+ ashirra_edict_opinion: "Hacer cumplir la fidelidad" #NT!
+ ashirra_opinion_doctrine_name: "Reagrupar al Mahgrib" #NT!
+ ashirra_opinion_doctrine_desc: "Un grupo de Ashirra, los Maghrib, severos y devotos, se dedican a erradicar cualquier amenaza a la fe, ya sea interna o externa." #NT!
+ doctrine_parameter_ashirra_opinion_active: ""
+ doctrine_parameter_opinion_of_ashirra_opinion_active: "$VALUE|+=0$ [opinion|E] bono con [ashirra|E]" #NT!
+ ashirra_opinion_active_opinion_name: "Compañero Ashirra" #NT!
+  
+ ashirra_edict_gain_fervor: "Reúne a los fieles" #NT!
+ fervor_gain_ashirra_edict: "Edictos de Ashirra" #NT!

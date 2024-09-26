@@ -1,38 +1,38 @@
 ﻿l_spanish:
- POD_player_rage_growth_chance: "#TOOLTIP:POD_player_rage_growth_chance_tt #V;L [GetPlayer.MakeScope.ScriptValue('rage_growth_chance')|0]%#!#!" #NT!
- POD_player_rage_growth_chance_tt: "[GetPlayer.MakeScope.GetScriptValueDesc('rage_growth_chance')]" #NT!
+ POD_player_rage_growth_chance: "#TOOLTIP:POD_player_rage_growth_chance_tt #V;L [GetPlayer.MakeScope.ScriptValue('rage_growth_chance')|0]%#!#!"
+ POD_player_rage_growth_chance_tt: "[GetPlayer.MakeScope.GetScriptValueDesc('rage_growth_chance')]"
   
- POD_rage_growth_base: "Base" #NT!
- POD_rage_growth_ragabash: "Tu auspicio es [GetTrait('ragabash').GetName(GetPlayer)]" #NT!
- POD_rage_growth_theurge: "Tu auspicio es [GetTrait('theurge').GetName(GetPlayer)]" #NT!
- POD_rage_growth_philodox: "Tu auspicio es [GetTrait('philodox').GetName(GetPlayer)]" #NT!
- POD_rage_growth_galliard: "Tu auspicio es [GetTrait('galliard').GetName(GetPlayer)]" #NT!
- POD_rage_growth_ahroun: "Tu auspicio es [GetTrait('ahroun').GetName(GetPlayer)]" #NT!
- POD_rage_growth_wrathful: "Eres [GetTrait('wrathful').GetName(GetPlayer)]" #NT!
- POD_rage_growth_irritable: "Eres [GetTrait('irritable').GetName(GetPlayer)]" #NT!
- POD_rage_growth_calm: "Eres [GetTrait('calm').GetName(GetPlayer)]" #NT!
- POD_rage_growth_wyld: "Tu [faith|E] es #TOOLTIP:GAME_FAITH_DOCTRINE,doctrine_triat_alignment_wyld #L alineado con Wyld#!#!" #NT!
- POD_rage_growth_weaver: "Tu [faith|E] es #TOOLTIP:GAME_FAITH_DOCTRINE,doctrine_triat_alignment_weaver #L Alineado con Weaver#!#!" #NT!
- POD_rage_growth_blood_running_hot: "Tienes el [GetPerk('blood_running_hot_perk').GetName(GetPlayer)] [perk|E]" #NT!
- POD_rage_growth_stress: "Estás extremadamente estresado" #NT!
+ POD_rage_growth_base: "Base"
+ POD_rage_growth_ragabash: "Tu auspicio es [GetTrait('ragabash').GetName(GetPlayer)]"
+ POD_rage_growth_theurge: "Tu auspicio es [GetTrait('theurge').GetName(GetPlayer)]"
+ POD_rage_growth_philodox: "Tu auspicio es [GetTrait('philodox').GetName(GetPlayer)]"
+ POD_rage_growth_galliard: "Tu auspicio es [GetTrait('galliard').GetName(GetPlayer)]"
+ POD_rage_growth_ahroun: "Tu auspicio es [GetTrait('ahroun').GetName(GetPlayer)]"
+ POD_rage_growth_wrathful: "Eres [GetTrait('wrathful').GetName(GetPlayer)]"
+ POD_rage_growth_irritable: "Eres [GetTrait('irritable').GetName(GetPlayer)]"
+ POD_rage_growth_calm: "Eres [GetTrait('calm').GetName(GetPlayer)]"
+ POD_rage_growth_wyld: "Tu [faith|E] es #TOOLTIP:GAME_FAITH_DOCTRINE,doctrine_triat_alignment_wyld #L alineado con Wyld#!#!"
+ POD_rage_growth_weaver: "Tu [faith|E] es #TOOLTIP:GAME_FAITH_DOCTRINE,doctrine_triat_alignment_weaver #L Alineado con Weaver#!#!"
+ POD_rage_growth_blood_running_hot: "Tienes el [GetPerk('blood_running_hot_perk').GetName(GetPlayer)] [perk|E]"
+ POD_rage_growth_stress: "Estás extremadamente estresado"
   
- POD_player_gnosis_regen_chance: "#TOOLTIP:POD_player_gnosis_regen_chance_tt #V;L [GetPlayer.MakeScope.ScriptValue('gnosis_regen_chance')|0]%#!#!" #NT!
- POD_player_gnosis_regen_chance_tt: "[GetPlayer.MakeScope.GetScriptValueDesc('gnosis_regen_chance')]" #NT!
+ POD_player_gnosis_regen_chance: "#TOOLTIP:POD_player_gnosis_regen_chance_tt #V;L [GetPlayer.MakeScope.ScriptValue('gnosis_regen_chance')|0]%#!#!"
+ POD_player_gnosis_regen_chance_tt: "[GetPlayer.MakeScope.GetScriptValueDesc('gnosis_regen_chance')]"
   
- POD_gnosis_regen_base: "Base" #NT!
- POD_gnosis_regen_homid_born: "Tu raza es [GetTrait('homid_born').GetName(GetPlayer)]" #NT!
- POD_gnosis_regen_metis: "Tu raza es [GetTrait('metis').GetName(GetPlayer)]" #NT!
- POD_gnosis_regen_beast_born: "Tu raza es [GetTrait('beast_born').GetName(GetPlayer)]" #NT!
- POD_gnosis_regen_piety_level_1: "Tu [piety_level|E] es [GetModifier('piety_level_1').GetNameWithTooltip|L]" #NT!
- POD_gnosis_regen_piety_level_2: "Tu [piety_level|E] es [GetModifier('piety_level_2').GetNameWithTooltip|L]" #NT!
- POD_gnosis_regen_piety_level_3: "Tu [piety_level|E] es [GetModifier('piety_level_3').GetNameWithTooltip|L]" #NT!
- POD_gnosis_regen_piety_level_4: "Tu [piety_level|E] es [GetModifier('piety_level_4').GetNameWithTooltip|L]" #NT!
- POD_gnosis_regen_piety_level_5: "Tu [piety_level|E] es [GetModifier('piety_level_5').GetNameWithTooltip|L]" #NT!
- POD_gnosis_regen_kinfolk_gnosis: "Tienes [GetTrait('gnosis').GetName(GetPlayer)]" #NT!
- POD_gnosis_regen_stress: "Estás extremadamente estresado" #NT!
- POD_gnosis_regen_kinfolk_cap: "[GetTrait('kinfolk').GetName(GetPlayer)] no puede tener más de #V 3#! Gnosis" #NT!
+ POD_gnosis_regen_base: "Base"
+ POD_gnosis_regen_homid_born: "Tu raza es [GetTrait('homid_born').GetName(GetPlayer)]"
+ POD_gnosis_regen_metis: "Tu raza es [GetTrait('metis').GetName(GetPlayer)]"
+ POD_gnosis_regen_beast_born: "Tu raza es [GetTrait('beast_born').GetName(GetPlayer)]"
+ POD_gnosis_regen_piety_level_1: "Tu [piety_level|E] es [GetModifier('piety_level_1').GetNameWithTooltip|L]"
+ POD_gnosis_regen_piety_level_2: "Tu [piety_level|E] es [GetModifier('piety_level_2').GetNameWithTooltip|L]"
+ POD_gnosis_regen_piety_level_3: "Tu [piety_level|E] es [GetModifier('piety_level_3').GetNameWithTooltip|L]"
+ POD_gnosis_regen_piety_level_4: "Tu [piety_level|E] es [GetModifier('piety_level_4').GetNameWithTooltip|L]"
+ POD_gnosis_regen_piety_level_5: "Tu [piety_level|E] es [GetModifier('piety_level_5').GetNameWithTooltip|L]"
+ POD_gnosis_regen_kinfolk_gnosis: "Tienes [GetTrait('gnosis').GetName(GetPlayer)]"
+ POD_gnosis_regen_stress: "Estás extremadamente estresado"
+ POD_gnosis_regen_kinfolk_cap: "[GetTrait('kinfolk').GetName(GetPlayer)] no puede tener más de #V 3#! Gnosis"
   
- POD_FORMAT_PERCENTAGE_BASE: "$KEY$: #P $VALUE|0$%#!" #NT!
- POD_FORMAT_PERCENTAGE_MODIFIER: "$KEY$: #P +$VALUE|0$%#!" #NT!
- POD_FORMAT_PERCENTAGE_MODIFIER_NEGATIVE: "$KEY$: #N $VALUE|0$%#!" #NT!
- POD_FORMAT_PERCENTAGE_NULLIFIED: "$KEY$: #N -100%#!" #NT!
+ POD_FORMAT_PERCENTAGE_BASE: "$KEY$: #P $VALUE|0$%#!"
+ POD_FORMAT_PERCENTAGE_MODIFIER: "$KEY$: #P +$VALUE|0$%#!"
+ POD_FORMAT_PERCENTAGE_MODIFIER_NEGATIVE: "$KEY$: #N $VALUE|0$%#!"
+ POD_FORMAT_PERCENTAGE_NULLIFIED: "$KEY$: #N -100%#!"

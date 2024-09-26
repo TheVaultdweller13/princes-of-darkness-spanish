@@ -1,15 +1,15 @@
 ﻿l_spanish:
- POD_custom_nickname.10.t: "Apodo personalizado" #NT!
- POD_custom_nickname.10.desc: "Muchos de los habitantes del Mundo de Tinieblas son conocidos por algo más que su nombre; ¿Eres uno de ellos o aún no te has ganado tal honor?" #NT!
- POD_custom_nickname.10.a: "Sí, déjame elegir cómo me llamarán." #NT!
- POD_custom_nickname.10.b: "No, todavía no tengo un apodo." #NT!
+ POD_custom_nickname.10.t: "Apodo personalizado"
+ POD_custom_nickname.10.desc: "Muchos de los habitantes del Mundo de Tinieblas son conocidos por algo más que su nombre; ¿Eres uno de ellos o aún no te has ganado tal honor?"
+ POD_custom_nickname.10.a: "Sí, déjame elegir cómo me llamarán."
+ POD_custom_nickname.10.b: "No, todavía no tengo un apodo."
   
- POD_custom_nickname.100.t: "Apodo personalizado" #NT!
- POD_custom_nickname.100.desc: "Hay que tomar una decisión importante, ¿cómo quieres que te llamen? \n\nSi tomas una mala decisión tendrás que vivir con ella durante mucho tiempo." #NT!
- POD_custom_nickname.100.a: "De ahora en adelante seré conocido como..." #NT!
+ POD_custom_nickname.100.t: "Apodo personalizado"
+ POD_custom_nickname.100.desc: "Hay que tomar una decisión importante, ¿cómo quieres que te llamen? \n\nSi tomas una mala decisión tendrás que vivir con ella durante mucho tiempo."
+ POD_custom_nickname.100.a: "De ahora en adelante seré conocido como..."
   
     #Both of these are needed for the custom nickname to work properly. 
- nick_POD_custom_nickname1: "[ROOT.Char.GetLocalizedText('POD_custom_nickname_text')]" #NT!
- nick_POD_custom_nickname2: "[CHARACTER.Custom('PODCustomNickname')]" #NT!
+ nick_POD_custom_nickname1: "[ROOT.Char.GetLocalizedText('POD_custom_nickname_text')]"
+ nick_POD_custom_nickname2: "[CHARACTER.Custom('PODCustomNickname')]"
   
- nick_POD_custom_nickname_default: "los difuntos" #NT!
+ nick_POD_custom_nickname_default: "los difuntos"

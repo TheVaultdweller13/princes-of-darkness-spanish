@@ -1,403 +1,403 @@
 ﻿l_spanish:
- game_concept_lore_lifestyle: "Ciencia" #NT!
- game_concept_lore_lifestyle_desc: "Los lores son los restos de las habilidades divinas que poseían los demonios como Elohim." #NT!
-  
- lore_lifestyle_name: "Ciencia" #NT!
- lore_lifestyle_desc: "Concéntrese en los poderes que provienen de los restos de las habilidades divinas." #NT!
- lore_lifestyle_highlight_desc: "Debido a que Resuelves, ganas #P [GetPlayer.Custom('GetDemonicLifestylePercentageBoost')]#! más [experience|E] en este Estilo de Vida." #NT!
- monthly_lore_lifestyle_xp_gain_mult: "Historia del mes [lifestyle|E] [experience|E]" #NT!
-  
- lore_common_focus: "Enfoque en el conocimiento común" #NT!
- lore_common_focus_modifier: "[GetFocus('lore_common_focus').GetName]" #NT!
- lore_common_focus_desc: "Secretos recopilados del universo, evocaciones que abarcan los fundamentos de la realidad y gobiernan las fuerzas que la mantienen en movimiento." #NT!
- lore_common_focus_effect_desc: "Centrándose en las subvenciones de Common Lore:" #NT!
-  
- lore_house_focus: "Enfoque en la tradición de la casa" #NT!
- lore_house_focus_modifier: "[GetFocus('lore_house_focus').GetName]" #NT!
- lore_house_focus_desc: "Antes de la Caída, cada Casa tenía sus propios conjuntos específicos de Saberes que reflejaban sus deberes dentro de la jerarquía angelical. Estas evocaciones se consideraban el corazón de cada Casa y se guardaban celosamente como una cuestión de pragmatismo." #NT!
- lore_house_focus_effect_desc: "Centrándose en las subvenciones de House Lore:" #NT!
-  
- lore_earthbound_focus: "Enfoque en la tradición de Earthbound" #NT!
- lore_earthbound_focus_modifier: "[GetFocus('lore_earthbound_focus').GetName]" #NT!
- lore_earthbound_focus_desc: "A lo largo de milenios, los Terrestres han desarrollado nuevos cuerpos de Lores, poderes blasfemos que les permiten controlar la Creación de maneras que Dios nunca pretendió." #NT!
- lore_earthbound_focus_effect_desc: "Centrarse en la tradición de Earthbound otorga:" #NT!
-  
- GAINS_LORE_LIFESTYLE_XP: "Ganancias $VALUE|V0$ [lore_lifestyle|E] Experiencia" #NT!
- GAINED_LORE_LIFESTYLE_XP: "Obtuvo $VALUE|V0$ [lore_lifestyle|E] Experiencia" #NT!
- I_GAIN_LORE_LIFESTYLE_XP: "Obtienes $VALUE|V0$ [lore_lifestyle|E] de experiencia" #NT!
- I_GAINED_LORE_LIFESTYLE_XP: "Ganaste $VALUE|V0$ [lore_lifestyle|E] Experiencia" #NT!
- TARGET_GAINS_LORE_LIFESTYLE_XP: "[CHARACTER.GetShortUIName] gana $VALUE|V0$ [lore_lifestyle|E] experiencia" #NT!
- TARGET_GAINED_LORE_LIFESTYLE_XP: "[CHARACTER.GetShortUIName] ganado $VALUE|V0$ [lore_lifestyle|E] Experiencia" #NT!
-  
- GAINS_A_LORE_LIFESTYLE_PERKPOINT: "Ganancias $VALUE|V0$ [lore_lifestyle|E] [perk|E] Desbloquear" #NT!
- GAINED_A_LORE_LIFESTYLE_PERKPOINT: "Obtenido $VALUE|V0$ [lore_lifestyle|E] [perk|E] Desbloquear" #NT!
- I_GAIN_A_LORE_LIFESTYLE_PERKPOINT: "Obtienes $VALUE|V0$ [lore_lifestyle|E] [perk|E] Desbloquear" #NT!
- I_GAINED_A_LORE_LIFESTYLE_PERKPOINT: "Ganaste $VALUE|V0$ [lore_lifestyle|E] [perk|E] Desbloquear" #NT!
- TARGET_GAINS_A_LORE_LIFESTYLE_PERKPOINT: "[CHARACTER.GetShortUIName] gana $VALUE|V0$ [lore_lifestyle|E] [perk|E] Desbloquea" #NT!
- TARGET_GAINED_A_LORE_LIFESTYLE_PERKPOINT: "[CHARACTER.GetShortUIName] ganado $VALUE|V0$ [lore_lifestyle|E] [perk|E] Desbloquear" #NT!
-  
- LORE_LIFESTYLE_PERK_POINTS_TRIGGER: "Puntos de beneficio del estilo de vida de Lore: $NUM|V0$" #NT!
-  
- NOT_has_earthbound_trait: "@warning_icon!#X Tú sí #bold no#! tienes el [trait|E]: [GetTrait('earthbound').GetName( GetPlayer )]#!" #NT!
-  
- LACKS_LOW_PIETY_LEVEL: "@warning_icon!#X Tu [piety_level|E] es #bold, no #! [GetModifier( 'piety_level_1' ).GetNameWithTooltip|L] o superior#!" #NT!
- LACKS_MEDIUM_PIETY_LEVEL: "@warning_icon!#X Tu [piety_level|E] es #bold, no #! [GetModifier( 'piety_level_2' ).GetNameWithTooltip|L] o superior#!" #NT!
- LACKS_HIGH_PIETY_LEVEL: "@warning_icon!#X Tu [piety_level|E] es #bold, no #! [GetModifier( 'piety_level_3' ).GetNameWithTooltip|L] o superior#!" #NT!
- LACKS_VERY_HIGH_PIETY_LEVEL: "@warning_icon!#X Tu [piety_level|E] es #bold no#! [GetModifier( 'piety_level_4' ).GetNameWithTooltip|L] o superior#!" #NT!
- LACKS_MAX_PIETY_LEVEL: "@warning_icon!#X Tu [piety_level|E] es #bold no #! [GetModifier( 'piety_level_5' ).GetNameWithTooltip|L]#!" #NT!
-  
- NOT_has_asharu_dynasty: "@warning_icon!#X Tú sí #bold no#! tienes el [dynasty|E]: [GetDynastyByID( '14000001' ).GetBaseName]#!" #NT!
- NOT_has_rabisu_dynasty: "@warning_icon!#X Tú sí #bold no#! tienes el [dynasty|E]: [GetDynastyByID( '14000002' ).GetBaseName]#!" #NT!
- NOT_has_halaku_dynasty: "@warning_icon!#X Tú sí #bold no#! tienes el [dynasty|E]: [GetDynastyByID( '14000003' ).GetBaseName]#!" #NT!
- NOT_has_namaru_dynasty: "@warning_icon!#X Tú sí #bold no#! tienes el [dynasty|E]: [GetDynastyByID( '14000004' ).GetBaseName]#!" #NT!
- NOT_has_lammasu_dynasty: "@warning_icon!#X Tú sí #bold no#! tienes el [dynasty|E]: [GetDynastyByID( '14000005' ).GetBaseName]#!" #NT!
- NOT_has_annunaki_dynasty: "@warning_icon!#X Tú sí #bold no#! tienes el [dynasty|E]: [GetDynastyByID( '14000006' ).GetBaseName]#!" #NT!
- NOT_has_neberu_dynasty: "@warning_icon!#X Tú #bold no#! tienes el [dynasty|E]: [GetDynastyByID( '14000007' ).GetBaseName]#!" #NT!
-  
- full_fundament_tooltip: "Obtendrás el Conocimiento completo del árbol Fundamento." #NT!
- full_humanity_tooltip: "Obtendrás el árbol completo del Conocimiento de la Humanidad." #NT!
- full_chaos_tooltip: "Obtendrás el árbol completo del Conocimiento del Caos." #NT!
- full_contamination_tooltip: "Obtendrás el árbol completo de Conocimiento de la Contaminación." #NT!
- full_violation_tooltip: "Obtendrás el árbol completo del Conocimiento de la Violación." #NT!
-  
- fundament_visible: "Fundamento" #NT!
- humanity_visible: "Humanidad" #NT!
- chaos_visible: "Caos" #NT!
- contamination_visible: "Contaminación" #NT!
- violation_visible: "Violación" #NT!
-  
- manipulate_gravity_perk_name: "Manipular la gravedad" #NT!
- manipulate_adhesion_perk_name: "Manipular la adhesión" #NT!
- manipulate_inertia_perk_name: "Manipular la inercia" #NT!
- manipulate_acceleration_perk_name: "Manipular la aceleración" #NT!
- manipulate_cohesion_perk_name: "Manipular la cohesión" #NT!
-  
- MANIPULATE_GRAVITY_PERK_EFFECT: "Otorga a los comandantes enemigos [GetModifier('high_gravity_modifier').GetNameWithTooltip] y a los comandantes aliados [GetModifier('low_gravity_modifier').GetNameWithTooltip] modificador cuando estén en guerra como comandante.\n#F Los caídos pueden saltar distancias enormes, flotar o caer sin sufrir daño.#!" #NT!
- MANIPULATE_ADHESION_PERK_EFFECT: "Otorga a los comandantes enemigos un modificador de [GetModifier('low_adhesion_modifier').GetNameWithTooltip] y a los comandantes aliados un modificador de [GetModifier('high_adhesion_modifier').GetNameWithTooltip] cuando estás en guerra como comandante.\n#F Los caídos pueden caminar por las paredes o por los techos, o aferrarse a objetos.#!" #NT!
- MANIPULATE_INERTIA_PERK_EFFECT: "Otorga un modificador de [GetModifier('protection_from_projectile_modifier').GetNameWithTooltip] al aliado [knights|E] en la guerra como comandante o a ti mismo en [single_combat_duel|E].\nOportunidad adicional de golpear o herir a un enemigo [knights|E] en la guerra como [knight|E].\nDesbloquea movimientos [single_combat_duel|E].\n#F Los Caídos pueden lanzar objetos a distancias tremendas o simplemente detener ataques en seco.#!" #NT!
- MANIPULATE_ACCELERATION_PERK_EFFECT: "Otorga un modificador de [GetModifier('momentum_boost_modifier').GetNameWithTooltip] al aliado [knights|E] en la guerra como comandante o a ti mismo en [single_combat_duel|E].\nOportunidad adicional de mutilar o destrozar a un enemigo [knights|E] en la guerra como [knight|E].\nDesbloquea movimientos [single_combat_duel|E].\n#F Los caídos pueden moverse con una velocidad cegadora y utilizar su impulso en devastadores ataques de combate cuerpo a cuerpo.#!" #NT!
- MANIPULATE_COHESION_PERK_EFFECT: "Desbloquea la opción $EXECUTION_EVAPORATION$ [execution|E].\nOportunidad adicional de matar o mutilar a un enemigo [knights|E] en la guerra como [knight|E].\nDesbloquea movimientos [single_combat_duel|E].\n#F Los Caídos pueden alterar la densidad de la materia, lo que les permite caminar sobre el agua o evaporar piedra o incluso carne.#!" #NT!
-  
- translate_perk_name: "Traducir" #NT!
- insinuate_perk_name: "Insinuar" #NT!
- fade_perk_name: "Desteñir" #NT!
- confession_perk_name: "Confesión" #NT!
- alter_memory_perk_name: "Alterar la memoria" #NT!
-  
- TRANSLATE_PERK_EFFECT: "#F Esta evocación establece una conexión lingüística entre el demonio y un receptor humano.#!" #NT!
- INSINUATE_PERK_EFFECT: "[white_peace|E] Aceptación: #P +10#!\n[alliance|E] Negociación Aceptación: #P +25#!\n$PERK_CAN_SIGN_ALLIANCE$\nUnlocks el $purchase_truce_interaction$ [interaction|E].\n#F Esta evocación le permite al demonio romper sutil y rápidamente los límites personales de un humano.#!" #NT!
- FADE_PERK_EFFECT: "Como [character_interaction|E], te permite romper una alianza entre dos objetivos. Como [character_interaction|E], te permite cancelar una tregua contra un objetivo. Como [character_interaction|E], te permite terminar todo plan contra un objetivo. #F Esta evocación le permite al demonio engañar a las mentes de un gran número de personas para que se vuelvan sobrenaturalmente oscuras u olvidables. #!" #NT!
- CONFESSION_PERK_EFFECT: "[espionage|E] Velocidad de progreso: #P +[EmptyScope.ScriptValue('digging_for_dirt_perk_percentage')|0]%#!\n#F Los Caídos pueden hacer que los mortales revelen sus secretos más íntimos y los mortales ni siquiera recordarán haberle abierto sus corazones al demonio.#!" #NT!
- CONFESSION_PERK_BONUS_VALUE: "[GetPerk('confession_perk').GetName(GetPlayer)]" #NT!
- ALTER_MEMORY_PERK_EFFECT: "Como dos [character_interaction|E], te permite eliminar un reclamo que el objetivo tiene sobre tu título o artefacto.\nDesbloquea el [buy_artifact_claim_interaction|E].\n[buy_claim_interaction|E] y [buy_artifact_claim_interaction|E] Costo: #P -50%#!\n#F El Caído puede alterar los recuerdos de un mortal de cualquier manera deseada.#!" #NT!
-  
- reality_tremors_perk_name: "Temblores de realidad" #NT!
- sphere_of_chaos_perk_name: "Esfera del Caos" #NT!
- wave_of_mutilation_perk_name: "Ola de mutilación" #NT!
- summon_outsider_perk_name: "Invocar a un forastero" #NT!
- hell_on_earth_perk_name: "El infierno en la tierra" #NT!
-  
- REALITY_TREMORS_PERK_EFFECT: "Permite la liberación de [GetModifier('reality_tremors_modifier').GetNameWithTooltip] en el reino objetivo.\n#F El Encadenado crea un efecto perturbador pero principalmente cosmético en un área.#!" #NT!
- SPHERE_OF_CHAOS_PERK_EFFECT: "Permitir la liberación [GetModifier('sphere_of_chaos_modifier').GetNameWithTooltip] en el reino objetivo.\n#F El Encadenado suspende temporalmente las leyes de causa y efecto en un área.#!" #NT!
- WAVE_OF_MUTILATION_PERK_EFFECT: "Permite la liberación de [GetModifier('wave_of_mutilation_modifier').GetNameWithTooltip] en el reino objetivo.\n#F El Encadenado infunde energías caóticas a toda la carne viviente cercana, activando neuronas al azar y desencadenando emociones aleatorias a través de una química cerebral desequilibrada.#!" #NT!
- SUMMON_OUTSIDER_PERK_EFFECT: "Permite destruir la baronía del condado objetivo.\nPuede reclutar a [GetMaA('the_unnamable').GetName] como [men_at_arms|E].\n#F El Encadenado invoca algo desde fuera de la Creación.#!" #NT!
- HELL_ON_EARTH_PERK_EFFECT: "Permite la liberación [GetModifier('hell_on_earth_modifier').GetNameWithTooltip] en el reino objetivo.\n#F Esta evocación invoca un apocalipsis en miniatura.#!" #NT!
-  
- create_proxy_perk_name: "Crear Proxy" #NT!
- lash_of_corruption_perk_name: "El látigo de la corrupción" #NT!
- taint_the_land_perk_name: "Manchar la tierra" #NT!
- corrupt_relic_perk_name: "Reliquia corrupta" #NT!
- unspeakable_servitor_perk_name: "Servidor inefable" #NT!
-  
- CREATE_PROXY_PERK_EFFECT: "Como [character_interaction|E], te permite causar una herida al objetivo cuya gravedad depende de la rareza del artefacto reclamado por el destinatario.\n#F El Earthbound convierte un objeto en un nodo a través del cual puede usar su percepción y poderes.#!" #NT!
- LASH_OF_CORRUPTION_PERK_EFFECT: "Oportunidad adicional de matar a un enemigo [knights|E] en la guerra como [knight|E].\n#F El Encadenado infunde sus energías en una criatura, dañándola y posiblemente matándola.#!" #NT!
- TAINT_THE_LAND_PERK_EFFECT: "Otorga al condado objetivo [GetModifier('earthbound_negative_modifier').GetNameWithTooltip] si su poseedor está en guerra contigo cuando mueves tu ejército hacia él como comandante.\n#F El Encadenado infunde su esencia en un área, haciéndola cobrar vida y atacar a los intrusos.#!" #NT!
- CORRUPT_RELIC_PERK_EFFECT: "Como [character_interaction|E], te permite crear un artefacto personalizado.\n#F Esta evocación le permite al Encadenado crear artefactos mágicos.#!" #NT!
- UNSPEAKABLE_SERVITOR_PERK_EFFECT: "Como [character_interaction|E], te permite crear un [GetTrait('automaton').GetName( GetPlayer )] de ti mismo como cuerpo anfitrión permanente.\n#F El Earthbound hace que sus secuaces creen una estatua que pueden usar como cuerpo anfitrión temporal en lugar de un cuerpo vivo.#!" #NT!
-  
- nightmare_sending_perk_name: "Envío de pesadillas" #NT!
- mind_rape_perk_name: "Violación mental" #NT!
- visions_of_terror_perk_name: "Visiones del terror" #NT!
- enslave_perk_name: "Esclavizar" #NT!
- devour_the_soul_perk_name: "Devorar el alma" #NT!
-  
- NIGHTMARE_SENDING_PERK_EFFECT: "#F Esta evocación permite al Encadenado enviar mensajes a los sueños de los mortales dormidos.#!" #NT!
- MIND_RAPE_PERK_EFFECT: "Como [character_interaction|E], te permite conocer todos los secretos y planes del objetivo.\n#F Esta evocación permite al Encadenado sondear la mente de un mortal que pueda ver, escaneando sus pensamientos y recuerdos en busca de información.#!" #NT!
- VISIONS_OF_TERROR_PERK_EFFECT: "#F Esta evocación proyecta visiones aterradoras en la mente de uno o más mortales.#!" #NT!
- ENSLAVE_PERK_EFFECT: "Como [character_interaction|E], te permite obtener gancho del objetivo.\n#F Con esta evocación, un Encadenado puede controlar completamente la mente y el cuerpo de un mortal, haciéndole hacer y decir lo que el Encadenado desee.#!" #NT!
- DEVOUR_THE_SOUL_PERK_EFFECT: "Bonificación a la opción $EXECUTION_DEVOUR_SOUL$ [execution|E], te permite devorar la mente del objetivo para aumentar tu educación o un atributo.\n#F Con esta evocación, un Encadenado puede arrancar el alma de un mortal vivo y devorarla, drenando su energía, recuerdos e incluso su preciosa Fe.#!" #NT!
-  
- celestials_visible: "Celestiales" #NT!
- flame_visible: "Fuego" #NT!
- radiance_visible: "Resplandor" #NT!
- awakening_visible: "Despertar" #NT!
- firmament_visible: "Firmamento" #NT!
- winds_visible: "Vientos" #NT!
- earth_visible: "Tierra" #NT!
- paths_visible: "Caminos" #NT!
- forge_visible: "Fragua" #NT!
- light_visible: "Luz" #NT!
- patterns_visible: "Patrones" #NT!
- portals_visible: "Portales" #NT!
- longing_visible: "Anhelo" #NT!
- storms_visible: "Tormentas" #NT!
- transfiguration_visible: "Transfiguración" #NT!
- beast_visible: "Bestia" #NT!
- flesh_visible: "Carne" #NT!
- wild_visible: "Salvaje" #NT!
- death_visible: "Muerte" #NT!
- spirit_visible: "Espíritu" #NT!
- realms_visible: "Reinos" #NT!
-  
- lamp_of_faith_perk_name: "Lámpara de la fe" #NT!
- send_vision_perk_name: "Enviar visión" #NT!
- pillar_of_faith_perk_name: "Pilar de la fe" #NT!
- the_fire_of_heaven_perk_name: "El fuego del cielo" #NT!
- hand_of_faith_perk_name: "Mano de fe" #NT!
-  
- LAMP_OF_FAITH_PERK_EFFECT: "#F Esta evocación permite a un Diablo detectar la presencia de mortales u otros demonios en su vecindad al hacer que su reserva de Fe brille como un faro que solo él puede ver. Los individuos brillan con una luz azul pálida, que varía en intensidad según la fuerza de su Fe, mientras que los objetos inanimados pierden color y se desvanecen en siluetas oscuras.#!" #NT!
- SEND_VISION_PERK_EFFECT: "Otorga un modificador de [GetModifier('send_vision_perk_commander_negative_modifier').GetNameWithTooltip] a los comandantes enemigos en la guerra como comandante.\nOtorga un modificador de [GetModifier('send_vision_perk_knight_negative_modifier').GetNameWithTooltip] a los enemigos [knights|E] en la guerra como comandante o a un enemigo en [single_combat_duel|E].\nOtorga un modificador de [GetModifier('send_vision_perk_commander_positive_modifier').GetNameWithTooltip] a los comandantes aliados cuando estás en la guerra como comandante.\nOtorga un modificador de [GetModifier('send_vision_perk_knight_positive_modifier').GetNameWithTooltip] a los aliados [knights|E] cuando estás en la guerra como comandante o a ti mismo en [single_combat_duel|E].\n#F En su antiguo papel como heraldos divinos del Creador, los namaru eran convocados a menudo para transmitir los mensajes de Dios a lo largo y ancho del cosmos, entregando las órdenes del Cielo como visiones potentes que llenaban la mente de los Celestiales con imágenes de majestuosidad y asombro. Después de la Caída, los Demonios todavía hicieron un uso extensivo de este Conocimiento, comunicando órdenes detalladas a sus subordinados en la hueste rebelde o golpeando a sus enemigos con visiones aterradoras de ira infernal.#!" #NT!
- PILLAR_OF_FAITH_PERK_EFFECT: "Otorga un modificador de [GetModifier('pillar_of_faith_perk_commander_modifier').GetNameWithTooltip] a los comandantes aliados cuando estás en guerra como comandante.\n Otorga un modificador de [GetModifier('pillar_of_faith_perk_knight_modifier').GetNameWithTooltip] a un aliado [knights|E] cuando estás en guerra como comandante o a ti mismo en [single_combat_duel|E].\n#F A lo largo del nacimiento del cosmos y los primeros días del Paraíso, los Heraldos estuvieron a la vanguardia de cada esfuerzo importante ordenado por el Cielo, reforzando las energías de otros Celestiales donde sea necesario.#!" #NT!
- THE_FIRE_OF_HEAVEN_PERK_EFFECT: "Hiere al enemigo [knights|E] y a los comandantes en la guerra como comandante o enemigo en [single_combat_duel|E].\n#F Esta evocación le permite al Diablo canalizar su Fe como una ráfaga fulminante de fuego blanco puro, golpeando a su objetivo con la ira de un ángel caído.#!" #NT!
- HAND_OF_FAITH_PERK_EFFECT: "#F El mandato de la primera Casa Celestial era actuar como la voz del Creador y asegurar que Su Gran Diseño se cumpliera dentro de los límites del libre albedrío angelical. Si uno de los Celestiales se desviaba demasiado del diseño del Creador en el proceso de Creación, los Heraldos podían manipular la evocación mientras sucedía, modificando el resultado dentro de límites aceptables. Aunque este mandato se hizo cumplir en raras ocasiones, esta evocación, más que cualquier otra, generó la tendencia de las otras Casas a proteger celosamente sus prerrogativas y a considerar a los Heraldos con no poca cantidad de resentimiento.#!" #NT!
-  
- fuel_perk_name: "Combustible" #NT!
- lore_ignite_perk_name: "Encender" #NT!
- command_the_flame_perk_name: "Comanda la llama" #NT!
- holocaust_perk_name: "Holocausto" #NT!
- ride_the_flame_perk_name: "Cabalga la llama" #NT!
-  
- FUEL_PERK_EFFECT: "#F Los Namaru pueden avivar las llamas existentes, haciéndolas crecer.#!" #NT!
- LORE_IGNITE_PERK_EFFECT: "Hiere al enemigo [knights|E] en la guerra como comandante o enemigo en [single_combat_duel|E].\n#F El Namaru crea fuego de la nada, encendiendo un objeto inflamable.#!" #NT!
- COMMAND_THE_FLAME_PERK_EFFECT: "Hiere al enemigo [knights|E] en la guerra como comandante o enemigo en [single_combat_duel|E].\n#F Los namaru pueden manipular las llamas por sí mismos. El fuego se puede mover, apagar o avivar.#!" #NT!
- HOLOCAUST_PERK_EFFECT: "Hiere al enemigo [knights|E] en la guerra como comandante o enemigo en [single_combat_duel|E].\n#F El Namaru quema la Fe inherente que hace que un objeto sea real, convirtiendo incluso una puerta de acero en cenizas en cuestión de segundos o robando a otros Caídos su poder mientras los hiere gravemente.#!" #NT!
- RIDE_THE_FLAME_PERK_EFFECT: "Desbloquea la opción de cambio de forma [GetModifier( 'POD_shapeshift_form_fire_modifier' ).GetNameWithTooltip|L].\n#F El Namaru se transforma en llamas o se vuelve parte de un fuego existente, ganando control sobre él en el proceso.#!" #NT!
-  
- voice_of_heaven_perk_name: "Voz del cielo" #NT!
- exalt_perk_name: "Exaltar" #NT!
- aura_of_legend_perk_name: "Aura de leyenda" #NT!
- the_mark_of_the_celestials_perk_name: "La marca de los celestiales" #NT!
- lore_revelation_perk_name: "Revelación" #NT!
-  
- VOICE_OF_HEAVEN_PERK_EFFECT: "#F Esta evocación potencia y amplifica la voz del Diablo, permitiéndole hablar con tal autoridad divina que ahoga todo el ruido ambiental. Su voz obliga a todos los que la escuchan a escuchar lo que el demonio tiene que decir y a ser instintivamente receptivos a sus órdenes.#!" #NT!
- EXALT_PERK_EFFECT: "#F El poder de la voz imponente de Namaru es suficiente para infundir esperanza en los corazones más débiles, incitando a los mortales a dejar de lado sus miedos y robar el triunfo de las fauces de la derrota.#!" #NT!
- AURA_OF_LEGEND_PERK_EFFECT: "#F Esta evocación despierta recuerdos atávicos enterrados en lo profundo del subconsciente humano, renovando los antiguos lazos de lealtad que una vez unieron a la humanidad y a los Caídos frente a la tiranía del Cielo. Los lazos son tan profundos que, cuando surgen, a veces pueden expulsar todos los demás pensamientos de la mente de un mortal, dejando solo el impulso de cumplir con el antiguo deber una vez más.#!" #NT!
- THE_MARK_OF_THE_CELESTIALS_PERK_EFFECT: "Como [character_interaction|E], te permite dar un modificador de [GetModifier('the_mark_of_the_celestials_perk_modifier').GetNameWithTooltip] al objetivo.\n#F Durante la Guerra de la Ira, tanto los ángeles como los demonios encontraron formas de significar a sus amigos y enemigos, alterando sutilmente sus auras para hacer que los sujetos fueran más fáciles de encontrar o como marcas de ira y vergüenza para que cualquiera que se encontrara con los sujetos conociera sus crímenes y los tratara en consecuencia.#!" #NT!
- LORE_REVELATION_PERK_EFFECT: "Como [character_interaction|E], te permite cambiar los rasgos de personalidad del objetivo.\nComo [character_interaction|E], te permite cambiar la sexualidad del objetivo.\n#F Aunque tanto los mortales como los demonios usan artificios para ocultar su verdadera naturaleza, esta evocación le permite a un Diablo despojar a un mortal de las capas de engaño y revelarlo como realmente es. Es un momento de verdad que muchos no tienen el corazón para soportar.#!" #NT!
-  
- find_the_faithful_perk_name: "Encuentra a los fieles" #NT!
- cleanse_perk_name: "Limpiar" #NT!
- heal_perk_name: "Sanar" #NT!
- animate_perk_name: "Animar" #NT!
- restore_life_perk_name: "Restaurar la vida" #NT!
-  
- FIND_THE_FAITHFUL_PERK_EFFECT: "Como [character_interaction|E], te permite invocar a un mortal con [skills|E] de tu elección para tu corte.\n#F Los Caídos pueden localizar a un individuo por su Fe única si conocen su nombre y están a unas pocas millas de su objetivo. #!" #NT!
- CLEANSE_PERK_EFFECT: "Como [character_interaction|E], te permite curar enfermedades.\n#F Los Asharu purifican su objetivo de todas las toxinas y enfermedades.#!" #NT!
- HEAL_PERK_EFFECT: "Como [character_interaction|E], te permite curar heridas.\n#F Los Asharu restauran la salud completa de un cuerpo e incluso pueden curar daños agravados con un toque.#!" #NT!
- ANIMATE_PERK_EFFECT: "Puede reclutar [GetMaA('golems').GetName] como [men_at_arms|E].\n[buy_claim_interaction|E] y [buy_artifact_claim_interaction|E] Coste: #P -50%#!\n#F Los Asharu otorgan vida temporalmente a un objeto inanimado y pueden dirigir las acciones del objeto mientras puedan verlo.#!" #NT!
- RESTORE_LIFE_PERK_EFFECT: "Como [character_interaction|E], permite evitar que un amigo, amante, consorte, familiar, consejero o caballero muera accidentalmente.\n#F Los Asharu pueden devolverle la vida a un cuerpo recientemente fallecido, e incluso pueden devolverle un alma a ese cuerpo.#!" #NT!
-  
- remote_viewing_perk_name: "Vista remota" #NT!
- lore_scry_perk_name: "Adivinar" #NT!
- mouth_of_the_damned_perk_name: "Boca de los Malditos" #NT!
- lore_touch_from_afar_perk_name: "Tocar desde lejos" #NT!
- many_places_at_once_perk_name: "Muchos lugares a la vez" #NT!
-  
- REMOTE_VIEWING_PERK_EFFECT: "Cada [thrall|E] suma: [GetModifier( 'remote_viewing_perk_modifier' ).GetNameWithTooltip|L]. Esto es acumulativo.\n#F Los Caídos pueden ver a través de los ojos de un esclavo.#!" #NT!
- LORE_SCRY_PERK_EFFECT: "Como [character_interaction|E], te permite conocer todos los secretos y planes del objetivo que tiene derecho a tu artefacto.\n#F Al usar un objeto que pertenece al objetivo, un Asharu siempre puede observarlo.#!" #NT!
- MOUTH_OF_THE_DAMNED_PERK_EFFECT: "Cada [thrall|E] suma: [GetModifier( 'mouth_of_the_damned_perk_modifier' ).GetNameWithTooltip|L]. Esto es acumulativo.\n#F Los Asharu pueden hablar a través de la boca de un esclavo.#!" #NT!
- LORE_TOUCH_FROM_AFAR_PERK_EFFECT: "Como [character_interaction|E], te permite acelerar el plan contra un objetivo que tenga derecho a tu artefacto.\n#F Los Caídos pueden dirigir sus poderes a un objetivo que no esté dentro de su vista si tienen un objeto de esa persona.#!" #NT!
- MANY_PLACES_AT_ONCE_PERK_EFFECT: "Cada [thrall|E] suma: [GetModifier( 'many_places_at_once_perk_modifier' ).GetNameWithTooltip|L]. Esto es acumulativo.\n#F El Asharu puede usar Boca de los Condenados en varias personas al mismo tiempo.#!" #NT!
-  
- summon_wind_perk_name: "Invocar viento" #NT!
- fist_of_air_perk_name: "Puño de aire" #NT!
- command_the_wind_perk_name: "Comanda el viento" #NT!
- wall_of_air_perk_name: "Muro de aire" #NT!
- cyclone_perk_name: "Ciclón" #NT!
-  
- SUMMON_WIND_PERK_EFFECT: "#F Los Caídos pueden invocar un viento de la nada.#!" #NT!
- FIST_OF_AIR_PERK_EFFECT: "#F Los Asharu pueden manipular la presión del aire dentro o alrededor de un objetivo.#!" #NT!
- COMMAND_THE_WIND_PERK_EFFECT: "#F Los Caídos pueden usar los vientos circundantes para manipular objetos como deseen.#!" #NT!
- WALL_OF_AIR_PERK_EFFECT: "#F Los Asharu pueden convertir el aire en una barrera sólida.#!" #NT!
- CYCLONE_PERK_EFFECT: "#F Los Asharu pueden crear una enorme tormenta de viento.#!" #NT!
-  
- lore_earth_meld_perk_name: "Fusión de la Tierra" #NT!
- roil_the_earth_perk_name: "Agitar la tierra" #NT!
- mold_earth_perk_name: "Tierra de moho" #NT!
- earth_storm_perk_name: "Tormenta de tierra" #NT!
- earthquake_perk_name: "Terremoto" #NT!
-  
- LORE_EARTH_MELD_PERK_EFFECT: "#F Los Caídos se fusionan parcialmente con la tierra sobre la que se encuentran y se convierten en un objeto inamovible.#!" #NT!
- ROIL_THE_EARTH_PERK_EFFECT: "#F Los Caídos pueden hacer que la Tierra revele cualquier cosa que esté oculta en ella siempre que puedan nombrarla.#!" #NT!
- MOLD_EARTH_PERK_EFFECT: "#F Los Caídos pueden dar forma a la Tierra solo con fuerza de voluntad.#!" #NT!
- EARTH_STORM_PERK_EFFECT: "#F Trozos de roca y tierra son arrancados del suelo y orbitan alrededor de los Caídos. Estos trozos pueden usarse como misiles o como una especie de armadura.#!" #NT!
- EARTHQUAKE_PERK_EFFECT: "#F Los Caídos pueden causar terremotos lo suficientemente fuertes como para arrasar ciudades.#!" #NT!
-  
- find_path_perk_name: "Encuentra la ruta" #NT!
- lay_path_perk_name: "Camino de laicos" #NT!
- conceal_path_perk_name: "Ocultar camino" #NT!
- seal_path_perk_name: "Camino del sello" #NT!
- alter_path_perk_name: "Alterar camino" #NT!
-  
- FIND_PATH_PERK_EFFECT: "#F Los Annunaki detectan un posible camino hacia su destino.#!" #NT!
- LAY_PATH_PERK_EFFECT: "#F Los Annunaki crean un nuevo camino hacia su destino que puede sortear cualquier obstáculo que se interponga.#!" #NT!
- CONCEAL_PATH_PERK_EFFECT: "#F Los Annunaki pueden ocultar los caminos creados por Lay Path para que otros no los detecten.#!" #NT!
- SEAL_PATH_PERK_EFFECT: "#F Los Annunaki sellan un camino, atrapando a cualquiera que esté dentro, y pueden establecer una contraseña para que cualquiera que la conozca pueda abrir el camino.#!" #NT!
- ALTER_PATH_PERK_EFFECT: "#F Los Annunaki alteran los parámetros de un camino existente, como el destino, la gravedad, el tamaño o incluso el flujo del tiempo dentro del camino.#!" #NT!
-  
- enhance_object_perk_name: "Mejorar objeto" #NT!
- activate_object_perk_name: "Activar objeto" #NT!
- create_object_perk_name: "Crear objeto" #NT!
- enchant_object_perk_name: "Encantar objeto" #NT!
- imbue_object_perk_name: "Imbuir objeto" #NT!
-  
- ENHANCE_OBJECT_PERK_EFFECT: "#F Los Caídos pueden reparar cualquier objeto en cualquier momento o aumentar enormemente la eficiencia de un objeto mundano.#!" #NT!
- ACTIVATE_OBJECT_PERK_EFFECT: "#F Los Caídos pueden hacer que cualquier objeto mecánico se mueva, por ejemplo, disparar armas, abrir cerraduras o hacer que las armaduras caminen.#!" #NT!
- CREATE_OBJECT_PERK_EFFECT: "#F Los Caídos pueden moldear libremente cualquier tipo de material como si fuera arcilla o masilla, o como si fuera un cristal que crece naturalmente.#!" #NT!
- ENCHANT_OBJECT_PERK_EFFECT: "#F Los Caídos combinan varios efectos del Lore para crear un objeto mágico único llamado reliquia. Hay muy pocas cosas que no se puedan lograr siempre que los Annunaki conozcan el Lore requerido y siempre que el material esté lo suficientemente bien sintonizado para contener las energías. Con el uso de Anclar el Alma como parte del proceso de encantamiento, incluso se puede dar conciencia a los objetos al incorporar un alma mortal o demoníaca.#!" #NT!
- IMBUE_OBJECT_PERK_EFFECT: "#F Los Caídos atrapan un alma incorpórea en un objeto. Este poder es permanente y funciona en las almas de los mortales y en las almas de los Caídos, pero solo los Caídos pueden hacer uso completo de sus habilidades en su nuevo santuario, volviéndose efectivamente Condenados a la Tierra instantáneamente. Las almas mortales vagan en la oscuridad, e incluso los espectros ya no pueden usar sus habilidades.#!" #NT!
-  
- light_perk_name: "Luz" #NT!
- bend_light_perk_name: "Luz de curva" #NT!
- lore_phantasm_perk_name: "Fantasma" #NT!
- lore_illusion_perk_name: "Espejismo" #NT!
- coherent_light_perk_name: "Luz coherente" #NT!
-  
- LIGHT_PERK_EFFECT: "#F El Neberu puede crear una luz suave y plateada, o un destello breve y brillante que ciega y aturde a los espectadores.#!" #NT!
- BEND_LIGHT_PERK_EFFECT: "#F Al doblar la luz a su alrededor, los Neberu pueden crear un camuflaje similar al de un camaleón.#!" #NT!
- LORE_PHANTASM_PERK_EFFECT: "#F Los Neberu pueden crear imágenes tenues y transparentes que pueden durar días.#!" #NT!
- LORE_ILLUSION_PERK_EFFECT: "#F Los Neberu pueden crear ilusiones sólidas y de apariencia realista que duran poco tiempo.#!" #NT!
- COHERENT_LIGHT_PERK_EFFECT: "#F Los Neberu pueden dar sustancia a sus ilusiones, permitiendo que sean tocadas.#!" #NT!
-  
- sense_congruence_perk_name: "Congruencia de sentido" #NT!
- trace_pattern_perk_name: "Patrón de seguimiento" #NT!
- foresee_perk_name: "Prever" #NT!
- causal_influence_perk_name: "Influencia causal" #NT!
- twist_time_perk_name: "Tiempo de giro" #NT!
-  
- SENSE_CONGRUENCE_PERK_EFFECT: "#F Los caídos siempre pueden ponerse en el lugar correcto en el momento correcto.#!" #NT!
- TRACE_PATTERN_PERK_EFFECT: "#F Un Neberu puede rastrear las causas de un evento con gran precisión.#!" #NT!
- FORESEE_PERK_EFFECT: "#F Los Neberu pueden leer el destino y predecir el resultado de un evento que está a punto de ocurrir.#!" #NT!
- CAUSAL_INFLUENCE_PERK_EFFECT: "#F Los Caídos leen los acontecimientos con varios días de antelación y saben qué partes afectar para cambiar el futuro como lo desean.#!" #NT!
- TWIST_TIME_PERK_EFFECT: "#F Los Neberu pueden alterar el flujo del tiempo en su entorno inmediato.#!" #NT!
-  
- open_close_portals_perk_name: "Abrir/cerrar portales" #NT!
- create_ward_perk_name: "Crear barrio" #NT!
- teleport_perk_name: "Teletransportarse" #NT!
- co_locate_perk_name: "Co-ubicación" #NT!
- doorway_into_darkness_perk_name: "Puerta a la oscuridad" #NT!
-  
- OPEN_CLOSE_PORTALS_PERK_EFFECT: "#F Los Caídos pueden abrir o cerrar cualquier portal físico, sin importar cómo esté sellado.#!" #NT!
- CREATE_WARD_PERK_EFFECT: "#F Los Caídos pueden sellar un área contra intrusiones protegiendo todas sus paredes, ventanas y puertas.#!" #NT!
- TELEPORT_PERK_EFFECT: "#F Los Caídos pueden teletransportarse entre dos portales similares, por ejemplo, de una ventana a otra que hayan visto al menos una vez, o de la puerta de un automóvil a la puerta de otro automóvil familiar.#!" #NT!
- CO_LOCATE_PERK_EFFECT: "#F Los Caídos pueden vincular dos portales similares para que otros puedan teletransportarse usándolos.#!" #NT!
- DOORWAY_INTO_DARKNESS_PERK_EFFECT: "#F El Caído abre un portal al vacío entre dimensiones.#!" #NT!
-  
- read_emotion_perk_name: "Leer Emoción" #NT!
- empathetic_response_perk_name: "Respuesta empática" #NT!
- manipulate_senses_perk_name: "Manipular los sentidos" #NT!
- obsession_perk_name: "Obsesión" #NT!
- lore_inspire_perk_name: "Inspirar" #NT!
-  
- READ_EMOTION_PERK_EFFECT: "#F El Lammasu puede leer el estado emocional de una persona a través de señales sutiles y actuar en consecuencia.#!" #NT!
- EMPATHETIC_RESPONSE_PERK_EFFECT: "#F El Lammasu puede reaccionar perfectamente ante un objetivo, volviéndose perfectamente empático.#!" #NT!
- MANIPULATE_SENSES_PERK_EFFECT: "#F El Lammasu puede aumentar las sensaciones que siente un objetivo.#!" #NT!
- OBSESSION_PERK_EFFECT: "#F Con esta habilidad, un Lammasu hace que el objetivo se fije en una persona, cosa o idea.#!" #NT!
- LORE_INSPIRE_PERK_EFFECT: "#F El Lammasu puede causar una percepción sobrehumana en un objetivo.#!" #NT!
-  
- summon_water_perk_name: "Invocar agua" #NT!
- lore_water_form_perk_name: "Forma de agua" #NT!
- manipulate_weather_perk_name: "Manipular el clima" #NT!
- command_the_storm_perk_name: "Comanda la tormenta" #NT!
- invoke_the_storm_perk_name: "Invocar la tormenta" #NT!
-  
- SUMMON_WATER_PERK_EFFECT: "#F El demonio puede invocar agua de cualquier fuente cercana, provocando desde una niebla repentina que lo oculta hasta una inundación torrencial.#!" #NT!
- LORE_WATER_FORM_PERK_EFFECT: "#F El Lammasu se transforma en agua y puede fluir o flotar como niebla.#!" #NT!
- MANIPULATE_WEATHER_PERK_EFFECT: "#F Esta evocación permite al Desecrador empujar los patrones climáticos existentes, alejando los frentes de tormenta o atrayéndolos hacia el Desecrador con una velocidad sorprendente y alternando las temperaturas locales.#!" #NT!
- COMMAND_THE_STORM_PERK_EFFECT: "#F El Lammasu puede crear o eliminar cualquier tipo de clima.#!" #NT!
- INVOKE_THE_STORM_PERK_EFFECT: "#F El Desecrador puede rodearse de una furiosa tormenta a voluntad, creando viento, agua y relámpagos en un área tan pequeña como una habitación o tan grande como una manzana de una ciudad. El corazón de la tormenta está centrado en el demonio y se mueve con él. Sin embargo, no le causa daño.#!" #NT!
-  
- lore_mimic_perk_name: "Imitar" #NT!
- alter_appearance_perk_name: "Alterar la apariencia" #NT!
- alter_shape_perk_name: "Alterar la forma" #NT!
- lore_doppelganger_perk_name: "Doble" #NT!
- lore_shapechange_perk_name: "Cambio de forma" #NT!
-  
- LORE_MIMIC_PERK_EFFECT: "#F Los Lammasu pueden cambiar su voz y gestos por los de otro.#!" #NT!
- ALTER_APPEARANCE_PERK_EFFECT: "#F Los Caídos pueden alterar características básicas de sí mismos o de otros, como el color de su piel, ojos y cabello.#!" #NT!
- ALTER_SHAPE_PERK_EFFECT: "#F Esto permite al Lammasu alterar la forma y las dimensiones de su figura.#!" #NT!
- LORE_DOPPELGANGER_PERK_EFFECT: "#F El Caído se convierte en la persona perfecta para un objetivo, exhibiendo los gestos y la forma que quieren ver.#!" #NT!
- LORE_SHAPECHANGE_PERK_EFFECT: "#F Los Lammasu pueden alterar libremente cualquier aspecto de su apariencia o la de otro.#!" #NT!
-  
- summon_animals_perk_name: "Invocar animales" #NT!
- command_animals_perk_name: "Animales de mando" #NT!
- possess_animals_perk_name: "Poseer animales" #NT!
- animal_form_perk_name: "Forma animal" #NT!
- create_chimera_perk_name: "Crear quimera" #NT!
-  
- SUMMON_ANIMALS_PERK_EFFECT: "#F El Rabisu puede detectar y convocar animales cercanos.#!" #NT!
- COMMAND_ANIMALS_PERK_EFFECT: "#F Esto permite al Rabisu controlar a los animales cercanos para que hagan lo que ellos piden.#!" #NT!
- POSSESS_ANIMALS_PERK_EFFECT: "#F El Rabisu puede apoderarse del cuerpo de un animal, viendo las cosas a través de sus ojos.#!" #NT!
- ANIMAL_FORM_PERK_EFFECT: "#F Los Rabisu se transforman en una forma animal, siempre que hayan comido algo de sangre o carne de esa raza.#!" #NT!
- CREATE_CHIMERA_PERK_EFFECT: "#F El Rabisu puede remodelar el cuerpo de un animal.#!" #NT!
-  
- manipulate_metabolism_perk_name: "Manipular el metabolismo" #NT!
- manipulate_nerves_perk_name: "Manipular los nervios" #NT!
- manipulate_flesh_perk_name: "Manipular la carne" #NT!
- restore_flesh_perk_name: "Restaurar la carne" #NT!
- shape_flesh_perk_name: "Dar forma a la carne" #NT!
-  
- MANIPULATE_METABOLISM_PERK_EFFECT: "#F El Caído puede hacer que el cuerpo produzca cualquier sustancia que pueda producir naturalmente, o puede enviarlo a un coma.#!" #NT!
- MANIPULATE_NERVES_PERK_EFFECT: "#F Los Caídos pueden embotar o agudizar los sentidos y acelerar o ralentizar los reflejos.#!" #NT!
- MANIPULATE_FLESH_PERK_EFFECT: "#F Los Caídos pueden alterar temporalmente los atributos físicos y mentales de la forma que deseen, pero corren el riesgo de sobrecargar la carne.#!" #NT!
- RESTORE_FLESH_PERK_EFFECT: "#F Los Caídos pueden restaurar la salud completa de un cuerpo, regenerando órganos faltantes en cuestión de momentos y curando todas las enfermedades o toxinas.#!" #NT!
- SHAPE_FLESH_PERK_EFFECT: "#F Los Caídos pueden alterar una criatura carnal de cualquier forma que deseen, transformándola en una criatura fantástica con el tiempo.#!" #NT!
-  
- wilderness_sense_perk_name: "Sentido de lo salvaje" #NT!
- quicken_growth_perk_name: "Acelerar el crecimiento" #NT!
- command_the_wild_perk_name: "Domina lo salvaje" #NT!
- possess_plant_perk_name: "Poseer planta" #NT!
- mutate_plant_perk_name: "Planta mutada" #NT!
-  
- WILDERNESS_SENSE_PERK_EFFECT: "#F El Caído sabe exactamente qué tipo de plantas y animales se encuentran en el área.#!" #NT!
- QUICKEN_GROWTH_PERK_EFFECT: "#F El Rabisu hace que las plantas crezcan de forma antinaturalmente rápida.#!" #NT!
- COMMAND_THE_WILD_PERK_EFFECT: "#F El Rabisu puede afectar al medio ambiente en su conjunto.#!" #NT!
- POSSESS_PLANT_PERK_EFFECT: "#F The Fallen permite que las plantas ganen movilidad.#!" #NT!
- MUTATE_PLANT_PERK_EFFECT: "#F El Rabisu puede crear nuevas plantas y razas.#!" #NT!
-  
- read_fate_perk_name: "Leer el destino" #NT!
- decay_perk_name: "Decadencia" #NT!
- vision_of_mortality_perk_name: "Visión de la mortalidad" #NT!
- extinguish_life_perk_name: "Extinguir la vida" #NT!
- unlife_perk_name: "Sin vida" #NT!
-  
- READ_FATE_PERK_EFFECT: "#F El Caído descubre qué causó la muerte de un objetivo, e incluso puede ser testigo de los últimos días antes de que ocurriera la muerte.#!" #NT!
- DECAY_PERK_EFFECT: "#F El Caído hace que un objeto se descomponga al tocarlo.#!" #NT!
- VISION_OF_MORTALITY_PERK_EFFECT: "#F El Caído inflige una visión de muerte al objetivo para asustarlo. Esta es una de las pocas evocaciones que también funciona contra los Caídos.#!" #NT!
- EXTINGUISH_LIFE_PERK_EFFECT: "#F El Caído separa el cuerpo del espíritu, provocando que el objetivo muera en paz y sin dolor. Cuando el objetivo es un Caído, simplemente recibe daño.#!" #NT!
- UNLIFE_PERK_EFFECT: "#F Los Caídos resucitan un cadáver para que cumpla sus órdenes, aunque estos muertos vivientes necesitan una supervisión estricta.#!" #NT!
-  
- speak_with_the_dead_perk_name: "Hablar con los muertos" #NT!
- lore_summon_the_dead_perk_name: "Invocar a los muertos" #NT!
- lore_command_the_dead_perk_name: "Manda a los muertos" #NT!
- anchor_the_soul_perk_name: "Anclar el alma" #NT!
- restore_the_dead_perk_name: "Restaurar a los muertos" #NT!
-  
- SPEAK_WITH_THE_DEAD_PERK_EFFECT: "#F Los Caídos pueden hablar con un espectro, y el espectro debe responder las preguntas del Caído con sinceridad.#!" #NT!
- LORE_SUMMON_THE_DEAD_PERK_EFFECT: "#F Los Caídos pueden convocar espectros a su lado. Los espectros así convocados no pueden irse por sí solos.#!" #NT!
- LORE_COMMAND_THE_DEAD_PERK_EFFECT: "#F Los Caídos pueden ordenar a un espectro que realice cualquier acción.#!" #NT!
- ANCHOR_THE_SOUL_PERK_EFFECT: "#F El Caído ata un alma a un objeto. Esto puede ser permanente o temporal, y puede servir como prisión o crear una marioneta animada que le permite al alma servir a su amo demoníaco o atender asuntos pendientes en el mundo material. Este efecto funciona tanto en almas mortales como en almas demoníacas incorpóreas, pero las almas demoníacas no pueden alcanzar su máximo potencial mientras están ancladas de esta manera.#!" #NT!
- RESTORE_THE_DEAD_PERK_EFFECT: "#F El Caído trasplanta un espectro a un cuerpo recientemente muerto, lo que le otorga al fallecido una segunda oportunidad de vivir. Este efecto supone un enorme desgaste para el Caído si se supone que durará más de unos pocos días.#!" #NT!
-  
- sense_the_barrier_perk_name: "Siente la barrera" #NT!
- step_beyond_the_veil_perk_name: "Un paso más allá del velo" #NT!
- ghostwalk_perk_name: "Paseo fantasmal" #NT!
- reach_across_the_barrier_perk_name: "Superar la barrera" #NT!
- pierce_the_barrier_perk_name: "Perforar la barrera" #NT!
-  
- SENSE_THE_BARRIER_PERK_EFFECT: "#F El Halaku puede determinar la fuerza de la barrera entre el reino físico y las Tierras de las Sombras.#!" #NT!
- STEP_BEYOND_THE_VEIL_PERK_EFFECT: "#F Esta evocación permite al cazador cruzar físicamente la barrera hacia el mundo de las sombras, una imagen inerte del mundo mortal. Al hacerlo, el demonio puede viajar grandes distancias en el reino de las sombras a la velocidad del pensamiento y regresar al mundo físico en una ubicación correspondiente.#!" #NT!
- GHOSTWALK_PERK_EFFECT: "#F Los Halaku pueden moverse entre el reino físico y las Tierras Sombrías, volviéndose visibles pero intangibles en ambos lados a menos que deseen volverse sustanciales.#!" #NT!
- REACH_ACROSS_THE_BARRIER_PERK_EFFECT: "#F Los Halaku pueden llegar a las Tierras de las Sombras desde el reino físico sin entrar realmente en ellas, o pueden llegar al reino físico sin salir de las Tierras de las Sombras.#!" #NT!
- PIERCE_THE_BARRIER_PERK_EFFECT: "#F Esta evocación permite al Halaku crear una puerta temporal entre los reinos de los vivos y los muertos, permitiendo que otros demonios crucen a las Tierras Sombrías si el creador del portal lo desea.#!" #NT!
+ game_concept_lore_lifestyle: "Ciencia"
+ game_concept_lore_lifestyle_desc: "Los lores son los restos de las habilidades divinas que poseían los demonios como Elohim."
+  
+ lore_lifestyle_name: "Ciencia"
+ lore_lifestyle_desc: "Concéntrese en los poderes que provienen de los restos de las habilidades divinas."
+ lore_lifestyle_highlight_desc: "Debido a que Resuelves, ganas #P [GetPlayer.Custom('GetDemonicLifestylePercentageBoost')]#! más [experience|E] en este Estilo de Vida."
+ monthly_lore_lifestyle_xp_gain_mult: "Historia del mes [lifestyle|E] [experience|E]"
+  
+ lore_common_focus: "Enfoque en el conocimiento común"
+ lore_common_focus_modifier: "[GetFocus('lore_common_focus').GetName]"
+ lore_common_focus_desc: "Secretos recopilados del universo, evocaciones que abarcan los fundamentos de la realidad y gobiernan las fuerzas que la mantienen en movimiento."
+ lore_common_focus_effect_desc: "Centrándose en las subvenciones de Common Lore:"
+  
+ lore_house_focus: "Enfoque en la tradición de la casa"
+ lore_house_focus_modifier: "[GetFocus('lore_house_focus').GetName]"
+ lore_house_focus_desc: "Antes de la Caída, cada Casa tenía sus propios conjuntos específicos de Saberes que reflejaban sus deberes dentro de la jerarquía angelical. Estas evocaciones se consideraban el corazón de cada Casa y se guardaban celosamente como una cuestión de pragmatismo."
+ lore_house_focus_effect_desc: "Centrándose en las subvenciones de House Lore:"
+  
+ lore_earthbound_focus: "Enfoque en la tradición de Earthbound"
+ lore_earthbound_focus_modifier: "[GetFocus('lore_earthbound_focus').GetName]"
+ lore_earthbound_focus_desc: "A lo largo de milenios, los Terrestres han desarrollado nuevos cuerpos de Lores, poderes blasfemos que les permiten controlar la Creación de maneras que Dios nunca pretendió."
+ lore_earthbound_focus_effect_desc: "Centrarse en la tradición de Earthbound otorga:"
+  
+ GAINS_LORE_LIFESTYLE_XP: "Ganancias $VALUE|V0$ [lore_lifestyle|E] Experiencia"
+ GAINED_LORE_LIFESTYLE_XP: "Obtuvo $VALUE|V0$ [lore_lifestyle|E] Experiencia"
+ I_GAIN_LORE_LIFESTYLE_XP: "Obtienes $VALUE|V0$ [lore_lifestyle|E] de experiencia"
+ I_GAINED_LORE_LIFESTYLE_XP: "Ganaste $VALUE|V0$ [lore_lifestyle|E] Experiencia"
+ TARGET_GAINS_LORE_LIFESTYLE_XP: "[CHARACTER.GetShortUIName] gana $VALUE|V0$ [lore_lifestyle|E] experiencia"
+ TARGET_GAINED_LORE_LIFESTYLE_XP: "[CHARACTER.GetShortUIName] ganado $VALUE|V0$ [lore_lifestyle|E] Experiencia"
+  
+ GAINS_A_LORE_LIFESTYLE_PERKPOINT: "Ganancias $VALUE|V0$ [lore_lifestyle|E] [perk|E] Desbloquear"
+ GAINED_A_LORE_LIFESTYLE_PERKPOINT: "Obtenido $VALUE|V0$ [lore_lifestyle|E] [perk|E] Desbloquear"
+ I_GAIN_A_LORE_LIFESTYLE_PERKPOINT: "Obtienes $VALUE|V0$ [lore_lifestyle|E] [perk|E] Desbloquear"
+ I_GAINED_A_LORE_LIFESTYLE_PERKPOINT: "Ganaste $VALUE|V0$ [lore_lifestyle|E] [perk|E] Desbloquear"
+ TARGET_GAINS_A_LORE_LIFESTYLE_PERKPOINT: "[CHARACTER.GetShortUIName] gana $VALUE|V0$ [lore_lifestyle|E] [perk|E] Desbloquea"
+ TARGET_GAINED_A_LORE_LIFESTYLE_PERKPOINT: "[CHARACTER.GetShortUIName] ganado $VALUE|V0$ [lore_lifestyle|E] [perk|E] Desbloquear"
+  
+ LORE_LIFESTYLE_PERK_POINTS_TRIGGER: "Puntos de beneficio del estilo de vida de Lore: $NUM|V0$"
+  
+ NOT_has_earthbound_trait: "@warning_icon!#X Tú sí #bold no#! tienes el [trait|E]: [GetTrait('earthbound').GetName( GetPlayer )]#!"
+  
+ LACKS_LOW_PIETY_LEVEL: "@warning_icon!#X Tu [piety_level|E] es #bold, no #! [GetModifier( 'piety_level_1' ).GetNameWithTooltip|L] o superior#!"
+ LACKS_MEDIUM_PIETY_LEVEL: "@warning_icon!#X Tu [piety_level|E] es #bold, no #! [GetModifier( 'piety_level_2' ).GetNameWithTooltip|L] o superior#!"
+ LACKS_HIGH_PIETY_LEVEL: "@warning_icon!#X Tu [piety_level|E] es #bold, no #! [GetModifier( 'piety_level_3' ).GetNameWithTooltip|L] o superior#!"
+ LACKS_VERY_HIGH_PIETY_LEVEL: "@warning_icon!#X Tu [piety_level|E] es #bold no#! [GetModifier( 'piety_level_4' ).GetNameWithTooltip|L] o superior#!"
+ LACKS_MAX_PIETY_LEVEL: "@warning_icon!#X Tu [piety_level|E] es #bold no #! [GetModifier( 'piety_level_5' ).GetNameWithTooltip|L]#!"
+  
+ NOT_has_asharu_dynasty: "@warning_icon!#X Tú sí #bold no#! tienes el [dynasty|E]: [GetDynastyByID( '14000001' ).GetBaseName]#!"
+ NOT_has_rabisu_dynasty: "@warning_icon!#X Tú sí #bold no#! tienes el [dynasty|E]: [GetDynastyByID( '14000002' ).GetBaseName]#!"
+ NOT_has_halaku_dynasty: "@warning_icon!#X Tú sí #bold no#! tienes el [dynasty|E]: [GetDynastyByID( '14000003' ).GetBaseName]#!"
+ NOT_has_namaru_dynasty: "@warning_icon!#X Tú sí #bold no#! tienes el [dynasty|E]: [GetDynastyByID( '14000004' ).GetBaseName]#!"
+ NOT_has_lammasu_dynasty: "@warning_icon!#X Tú sí #bold no#! tienes el [dynasty|E]: [GetDynastyByID( '14000005' ).GetBaseName]#!"
+ NOT_has_annunaki_dynasty: "@warning_icon!#X Tú sí #bold no#! tienes el [dynasty|E]: [GetDynastyByID( '14000006' ).GetBaseName]#!"
+ NOT_has_neberu_dynasty: "@warning_icon!#X Tú #bold no#! tienes el [dynasty|E]: [GetDynastyByID( '14000007' ).GetBaseName]#!"
+  
+ full_fundament_tooltip: "Obtendrás el Conocimiento completo del árbol Fundamento."
+ full_humanity_tooltip: "Obtendrás el árbol completo del Conocimiento de la Humanidad."
+ full_chaos_tooltip: "Obtendrás el árbol completo del Conocimiento del Caos."
+ full_contamination_tooltip: "Obtendrás el árbol completo de Conocimiento de la Contaminación."
+ full_violation_tooltip: "Obtendrás el árbol completo del Conocimiento de la Violación."
+  
+ fundament_visible: "Fundamento"
+ humanity_visible: "Humanidad"
+ chaos_visible: "Caos"
+ contamination_visible: "Contaminación"
+ violation_visible: "Violación"
+  
+ manipulate_gravity_perk_name: "Manipular la gravedad"
+ manipulate_adhesion_perk_name: "Manipular la adhesión"
+ manipulate_inertia_perk_name: "Manipular la inercia"
+ manipulate_acceleration_perk_name: "Manipular la aceleración"
+ manipulate_cohesion_perk_name: "Manipular la cohesión"
+  
+ MANIPULATE_GRAVITY_PERK_EFFECT: "Otorga a los comandantes enemigos [GetModifier('high_gravity_modifier').GetNameWithTooltip] y a los comandantes aliados [GetModifier('low_gravity_modifier').GetNameWithTooltip] modificador cuando estén en guerra como comandante.\n#F Los caídos pueden saltar distancias enormes, flotar o caer sin sufrir daño.#!"
+ MANIPULATE_ADHESION_PERK_EFFECT: "Otorga a los comandantes enemigos un modificador de [GetModifier('low_adhesion_modifier').GetNameWithTooltip] y a los comandantes aliados un modificador de [GetModifier('high_adhesion_modifier').GetNameWithTooltip] cuando estás en guerra como comandante.\n#F Los caídos pueden caminar por las paredes o por los techos, o aferrarse a objetos.#!"
+ MANIPULATE_INERTIA_PERK_EFFECT: "Otorga un modificador de [GetModifier('protection_from_projectile_modifier').GetNameWithTooltip] al aliado [knights|E] en la guerra como comandante o a ti mismo en [single_combat_duel|E].\nOportunidad adicional de golpear o herir a un enemigo [knights|E] en la guerra como [knight|E].\nDesbloquea movimientos [single_combat_duel|E].\n#F Los Caídos pueden lanzar objetos a distancias tremendas o simplemente detener ataques en seco.#!"
+ MANIPULATE_ACCELERATION_PERK_EFFECT: "Otorga un modificador de [GetModifier('momentum_boost_modifier').GetNameWithTooltip] al aliado [knights|E] en la guerra como comandante o a ti mismo en [single_combat_duel|E].\nOportunidad adicional de mutilar o destrozar a un enemigo [knights|E] en la guerra como [knight|E].\nDesbloquea movimientos [single_combat_duel|E].\n#F Los caídos pueden moverse con una velocidad cegadora y utilizar su impulso en devastadores ataques de combate cuerpo a cuerpo.#!"
+ MANIPULATE_COHESION_PERK_EFFECT: "Desbloquea la opción $EXECUTION_EVAPORATION$ [execution|E].\nOportunidad adicional de matar o mutilar a un enemigo [knights|E] en la guerra como [knight|E].\nDesbloquea movimientos [single_combat_duel|E].\n#F Los Caídos pueden alterar la densidad de la materia, lo que les permite caminar sobre el agua o evaporar piedra o incluso carne.#!"
+  
+ translate_perk_name: "Traducir"
+ insinuate_perk_name: "Insinuar"
+ fade_perk_name: "Desteñir"
+ confession_perk_name: "Confesión"
+ alter_memory_perk_name: "Alterar la memoria"
+  
+ TRANSLATE_PERK_EFFECT: "#F Esta evocación establece una conexión lingüística entre el demonio y un receptor humano.#!"
+ INSINUATE_PERK_EFFECT: "[white_peace|E] Aceptación: #P +10#!\n[alliance|E] Negociación Aceptación: #P +25#!\n$PERK_CAN_SIGN_ALLIANCE$\nUnlocks el $purchase_truce_interaction$ [interaction|E].\n#F Esta evocación le permite al demonio romper sutil y rápidamente los límites personales de un humano.#!"
+ FADE_PERK_EFFECT: "Como [character_interaction|E], te permite romper una alianza entre dos objetivos. Como [character_interaction|E], te permite cancelar una tregua contra un objetivo. Como [character_interaction|E], te permite terminar todo plan contra un objetivo. #F Esta evocación le permite al demonio engañar a las mentes de un gran número de personas para que se vuelvan sobrenaturalmente oscuras u olvidables. #!"
+ CONFESSION_PERK_EFFECT: "[espionage|E] Velocidad de progreso: #P +[EmptyScope.ScriptValue('digging_for_dirt_perk_percentage')|0]%#!\n#F Los Caídos pueden hacer que los mortales revelen sus secretos más íntimos y los mortales ni siquiera recordarán haberle abierto sus corazones al demonio.#!"
+ CONFESSION_PERK_BONUS_VALUE: "[GetPerk('confession_perk').GetName(GetPlayer)]"
+ ALTER_MEMORY_PERK_EFFECT: "Como dos [character_interaction|E], te permite eliminar un reclamo que el objetivo tiene sobre tu título o artefacto.\nDesbloquea el [buy_artifact_claim_interaction|E].\n[buy_claim_interaction|E] y [buy_artifact_claim_interaction|E] Costo: #P -50%#!\n#F El Caído puede alterar los recuerdos de un mortal de cualquier manera deseada.#!"
+  
+ reality_tremors_perk_name: "Temblores de realidad"
+ sphere_of_chaos_perk_name: "Esfera del Caos"
+ wave_of_mutilation_perk_name: "Ola de mutilación"
+ summon_outsider_perk_name: "Invocar a un forastero"
+ hell_on_earth_perk_name: "El infierno en la tierra"
+  
+ REALITY_TREMORS_PERK_EFFECT: "Permite la liberación de [GetModifier('reality_tremors_modifier').GetNameWithTooltip] en el reino objetivo.\n#F El Encadenado crea un efecto perturbador pero principalmente cosmético en un área.#!"
+ SPHERE_OF_CHAOS_PERK_EFFECT: "Permitir la liberación [GetModifier('sphere_of_chaos_modifier').GetNameWithTooltip] en el reino objetivo.\n#F El Encadenado suspende temporalmente las leyes de causa y efecto en un área.#!"
+ WAVE_OF_MUTILATION_PERK_EFFECT: "Permite la liberación de [GetModifier('wave_of_mutilation_modifier').GetNameWithTooltip] en el reino objetivo.\n#F El Encadenado infunde energías caóticas a toda la carne viviente cercana, activando neuronas al azar y desencadenando emociones aleatorias a través de una química cerebral desequilibrada.#!"
+ SUMMON_OUTSIDER_PERK_EFFECT: "Permite destruir la baronía del condado objetivo.\nPuede reclutar a [GetMaA('the_unnamable').GetName] como [men_at_arms|E].\n#F El Encadenado invoca algo desde fuera de la Creación.#!"
+ HELL_ON_EARTH_PERK_EFFECT: "Permite la liberación [GetModifier('hell_on_earth_modifier').GetNameWithTooltip] en el reino objetivo.\n#F Esta evocación invoca un apocalipsis en miniatura.#!"
+  
+ create_proxy_perk_name: "Crear Proxy"
+ lash_of_corruption_perk_name: "El látigo de la corrupción"
+ taint_the_land_perk_name: "Manchar la tierra"
+ corrupt_relic_perk_name: "Reliquia corrupta"
+ unspeakable_servitor_perk_name: "Servidor inefable"
+  
+ CREATE_PROXY_PERK_EFFECT: "Como [character_interaction|E], te permite causar una herida al objetivo cuya gravedad depende de la rareza del artefacto reclamado por el destinatario.\n#F El Earthbound convierte un objeto en un nodo a través del cual puede usar su percepción y poderes.#!"
+ LASH_OF_CORRUPTION_PERK_EFFECT: "Oportunidad adicional de matar a un enemigo [knights|E] en la guerra como [knight|E].\n#F El Encadenado infunde sus energías en una criatura, dañándola y posiblemente matándola.#!"
+ TAINT_THE_LAND_PERK_EFFECT: "Otorga al condado objetivo [GetModifier('earthbound_negative_modifier').GetNameWithTooltip] si su poseedor está en guerra contigo cuando mueves tu ejército hacia él como comandante.\n#F El Encadenado infunde su esencia en un área, haciéndola cobrar vida y atacar a los intrusos.#!"
+ CORRUPT_RELIC_PERK_EFFECT: "Como [character_interaction|E], te permite crear un artefacto personalizado.\n#F Esta evocación le permite al Encadenado crear artefactos mágicos.#!"
+ UNSPEAKABLE_SERVITOR_PERK_EFFECT: "Como [character_interaction|E], te permite crear un [GetTrait('automaton').GetName( GetPlayer )] de ti mismo como cuerpo anfitrión permanente.\n#F El Earthbound hace que sus secuaces creen una estatua que pueden usar como cuerpo anfitrión temporal en lugar de un cuerpo vivo.#!"
+  
+ nightmare_sending_perk_name: "Envío de pesadillas"
+ mind_rape_perk_name: "Violación mental"
+ visions_of_terror_perk_name: "Visiones del terror"
+ enslave_perk_name: "Esclavizar"
+ devour_the_soul_perk_name: "Devorar el alma"
+  
+ NIGHTMARE_SENDING_PERK_EFFECT: "#F Esta evocación permite al Encadenado enviar mensajes a los sueños de los mortales dormidos.#!"
+ MIND_RAPE_PERK_EFFECT: "Como [character_interaction|E], te permite conocer todos los secretos y planes del objetivo.\n#F Esta evocación permite al Encadenado sondear la mente de un mortal que pueda ver, escaneando sus pensamientos y recuerdos en busca de información.#!"
+ VISIONS_OF_TERROR_PERK_EFFECT: "#F Esta evocación proyecta visiones aterradoras en la mente de uno o más mortales.#!"
+ ENSLAVE_PERK_EFFECT: "Como [character_interaction|E], te permite obtener gancho del objetivo.\n#F Con esta evocación, un Encadenado puede controlar completamente la mente y el cuerpo de un mortal, haciéndole hacer y decir lo que el Encadenado desee.#!"
+ DEVOUR_THE_SOUL_PERK_EFFECT: "Bonificación a la opción $EXECUTION_DEVOUR_SOUL$ [execution|E], te permite devorar la mente del objetivo para aumentar tu educación o un atributo.\n#F Con esta evocación, un Encadenado puede arrancar el alma de un mortal vivo y devorarla, drenando su energía, recuerdos e incluso su preciosa Fe.#!"
+  
+ celestials_visible: "Celestiales"
+ flame_visible: "Fuego"
+ radiance_visible: "Resplandor"
+ awakening_visible: "Despertar"
+ firmament_visible: "Firmamento"
+ winds_visible: "Vientos"
+ earth_visible: "Tierra"
+ paths_visible: "Caminos"
+ forge_visible: "Fragua"
+ light_visible: "Luz"
+ patterns_visible: "Patrones"
+ portals_visible: "Portales"
+ longing_visible: "Anhelo"
+ storms_visible: "Tormentas"
+ transfiguration_visible: "Transfiguración"
+ beast_visible: "Bestia"
+ flesh_visible: "Carne"
+ wild_visible: "Salvaje"
+ death_visible: "Muerte"
+ spirit_visible: "Espíritu"
+ realms_visible: "Reinos"
+  
+ lamp_of_faith_perk_name: "Lámpara de la fe"
+ send_vision_perk_name: "Enviar visión"
+ pillar_of_faith_perk_name: "Pilar de la fe"
+ the_fire_of_heaven_perk_name: "El fuego del cielo"
+ hand_of_faith_perk_name: "Mano de fe"
+  
+ LAMP_OF_FAITH_PERK_EFFECT: "#F Esta evocación permite a un Diablo detectar la presencia de mortales u otros demonios en su vecindad al hacer que su reserva de Fe brille como un faro que solo él puede ver. Los individuos brillan con una luz azul pálida, que varía en intensidad según la fuerza de su Fe, mientras que los objetos inanimados pierden color y se desvanecen en siluetas oscuras.#!"
+ SEND_VISION_PERK_EFFECT: "Otorga un modificador de [GetModifier('send_vision_perk_commander_negative_modifier').GetNameWithTooltip] a los comandantes enemigos en la guerra como comandante.\nOtorga un modificador de [GetModifier('send_vision_perk_knight_negative_modifier').GetNameWithTooltip] a los enemigos [knights|E] en la guerra como comandante o a un enemigo en [single_combat_duel|E].\nOtorga un modificador de [GetModifier('send_vision_perk_commander_positive_modifier').GetNameWithTooltip] a los comandantes aliados cuando estás en la guerra como comandante.\nOtorga un modificador de [GetModifier('send_vision_perk_knight_positive_modifier').GetNameWithTooltip] a los aliados [knights|E] cuando estás en la guerra como comandante o a ti mismo en [single_combat_duel|E].\n#F En su antiguo papel como heraldos divinos del Creador, los namaru eran convocados a menudo para transmitir los mensajes de Dios a lo largo y ancho del cosmos, entregando las órdenes del Cielo como visiones potentes que llenaban la mente de los Celestiales con imágenes de majestuosidad y asombro. Después de la Caída, los Demonios todavía hicieron un uso extensivo de este Conocimiento, comunicando órdenes detalladas a sus subordinados en la hueste rebelde o golpeando a sus enemigos con visiones aterradoras de ira infernal.#!"
+ PILLAR_OF_FAITH_PERK_EFFECT: "Otorga un modificador de [GetModifier('pillar_of_faith_perk_commander_modifier').GetNameWithTooltip] a los comandantes aliados cuando estás en guerra como comandante.\n Otorga un modificador de [GetModifier('pillar_of_faith_perk_knight_modifier').GetNameWithTooltip] a un aliado [knights|E] cuando estás en guerra como comandante o a ti mismo en [single_combat_duel|E].\n#F A lo largo del nacimiento del cosmos y los primeros días del Paraíso, los Heraldos estuvieron a la vanguardia de cada esfuerzo importante ordenado por el Cielo, reforzando las energías de otros Celestiales donde sea necesario.#!"
+ THE_FIRE_OF_HEAVEN_PERK_EFFECT: "Hiere al enemigo [knights|E] y a los comandantes en la guerra como comandante o enemigo en [single_combat_duel|E].\n#F Esta evocación le permite al Diablo canalizar su Fe como una ráfaga fulminante de fuego blanco puro, golpeando a su objetivo con la ira de un ángel caído.#!"
+ HAND_OF_FAITH_PERK_EFFECT: "#F El mandato de la primera Casa Celestial era actuar como la voz del Creador y asegurar que Su Gran Diseño se cumpliera dentro de los límites del libre albedrío angelical. Si uno de los Celestiales se desviaba demasiado del diseño del Creador en el proceso de Creación, los Heraldos podían manipular la evocación mientras sucedía, modificando el resultado dentro de límites aceptables. Aunque este mandato se hizo cumplir en raras ocasiones, esta evocación, más que cualquier otra, generó la tendencia de las otras Casas a proteger celosamente sus prerrogativas y a considerar a los Heraldos con no poca cantidad de resentimiento.#!"
+  
+ fuel_perk_name: "Combustible"
+ lore_ignite_perk_name: "Encender"
+ command_the_flame_perk_name: "Comanda la llama"
+ holocaust_perk_name: "Holocausto"
+ ride_the_flame_perk_name: "Cabalga la llama"
+  
+ FUEL_PERK_EFFECT: "#F Los Namaru pueden avivar las llamas existentes, haciéndolas crecer.#!"
+ LORE_IGNITE_PERK_EFFECT: "Hiere al enemigo [knights|E] en la guerra como comandante o enemigo en [single_combat_duel|E].\n#F El Namaru crea fuego de la nada, encendiendo un objeto inflamable.#!"
+ COMMAND_THE_FLAME_PERK_EFFECT: "Hiere al enemigo [knights|E] en la guerra como comandante o enemigo en [single_combat_duel|E].\n#F Los namaru pueden manipular las llamas por sí mismos. El fuego se puede mover, apagar o avivar.#!"
+ HOLOCAUST_PERK_EFFECT: "Hiere al enemigo [knights|E] en la guerra como comandante o enemigo en [single_combat_duel|E].\n#F El Namaru quema la Fe inherente que hace que un objeto sea real, convirtiendo incluso una puerta de acero en cenizas en cuestión de segundos o robando a otros Caídos su poder mientras los hiere gravemente.#!"
+ RIDE_THE_FLAME_PERK_EFFECT: "Desbloquea la opción de cambio de forma [GetModifier( 'POD_shapeshift_form_fire_modifier' ).GetNameWithTooltip|L].\n#F El Namaru se transforma en llamas o se vuelve parte de un fuego existente, ganando control sobre él en el proceso.#!"
+  
+ voice_of_heaven_perk_name: "Voz del cielo"
+ exalt_perk_name: "Exaltar"
+ aura_of_legend_perk_name: "Aura de leyenda"
+ the_mark_of_the_celestials_perk_name: "La marca de los celestiales"
+ lore_revelation_perk_name: "Revelación"
+  
+ VOICE_OF_HEAVEN_PERK_EFFECT: "#F Esta evocación potencia y amplifica la voz del Diablo, permitiéndole hablar con tal autoridad divina que ahoga todo el ruido ambiental. Su voz obliga a todos los que la escuchan a escuchar lo que el demonio tiene que decir y a ser instintivamente receptivos a sus órdenes.#!"
+ EXALT_PERK_EFFECT: "#F El poder de la voz imponente de Namaru es suficiente para infundir esperanza en los corazones más débiles, incitando a los mortales a dejar de lado sus miedos y robar el triunfo de las fauces de la derrota.#!"
+ AURA_OF_LEGEND_PERK_EFFECT: "#F Esta evocación despierta recuerdos atávicos enterrados en lo profundo del subconsciente humano, renovando los antiguos lazos de lealtad que una vez unieron a la humanidad y a los Caídos frente a la tiranía del Cielo. Los lazos son tan profundos que, cuando surgen, a veces pueden expulsar todos los demás pensamientos de la mente de un mortal, dejando solo el impulso de cumplir con el antiguo deber una vez más.#!"
+ THE_MARK_OF_THE_CELESTIALS_PERK_EFFECT: "Como [character_interaction|E], te permite dar un modificador de [GetModifier('the_mark_of_the_celestials_perk_modifier').GetNameWithTooltip] al objetivo.\n#F Durante la Guerra de la Ira, tanto los ángeles como los demonios encontraron formas de significar a sus amigos y enemigos, alterando sutilmente sus auras para hacer que los sujetos fueran más fáciles de encontrar o como marcas de ira y vergüenza para que cualquiera que se encontrara con los sujetos conociera sus crímenes y los tratara en consecuencia.#!"
+ LORE_REVELATION_PERK_EFFECT: "Como [character_interaction|E], te permite cambiar los rasgos de personalidad del objetivo.\nComo [character_interaction|E], te permite cambiar la sexualidad del objetivo.\n#F Aunque tanto los mortales como los demonios usan artificios para ocultar su verdadera naturaleza, esta evocación le permite a un Diablo despojar a un mortal de las capas de engaño y revelarlo como realmente es. Es un momento de verdad que muchos no tienen el corazón para soportar.#!"
+  
+ find_the_faithful_perk_name: "Encuentra a los fieles"
+ cleanse_perk_name: "Limpiar"
+ heal_perk_name: "Sanar"
+ animate_perk_name: "Animar"
+ restore_life_perk_name: "Restaurar la vida"
+  
+ FIND_THE_FAITHFUL_PERK_EFFECT: "Como [character_interaction|E], te permite invocar a un mortal con [skills|E] de tu elección para tu corte.\n#F Los Caídos pueden localizar a un individuo por su Fe única si conocen su nombre y están a unas pocas millas de su objetivo. #!"
+ CLEANSE_PERK_EFFECT: "Como [character_interaction|E], te permite curar enfermedades.\n#F Los Asharu purifican su objetivo de todas las toxinas y enfermedades.#!"
+ HEAL_PERK_EFFECT: "Como [character_interaction|E], te permite curar heridas.\n#F Los Asharu restauran la salud completa de un cuerpo e incluso pueden curar daños agravados con un toque.#!"
+ ANIMATE_PERK_EFFECT: "Puede reclutar [GetMaA('golems').GetName] como [men_at_arms|E].\n[buy_claim_interaction|E] y [buy_artifact_claim_interaction|E] Coste: #P -50%#!\n#F Los Asharu otorgan vida temporalmente a un objeto inanimado y pueden dirigir las acciones del objeto mientras puedan verlo.#!"
+ RESTORE_LIFE_PERK_EFFECT: "Como [character_interaction|E], permite evitar que un amigo, amante, consorte, familiar, consejero o caballero muera accidentalmente.\n#F Los Asharu pueden devolverle la vida a un cuerpo recientemente fallecido, e incluso pueden devolverle un alma a ese cuerpo.#!"
+  
+ remote_viewing_perk_name: "Vista remota"
+ lore_scry_perk_name: "Adivinar"
+ mouth_of_the_damned_perk_name: "Boca de los Malditos"
+ lore_touch_from_afar_perk_name: "Tocar desde lejos"
+ many_places_at_once_perk_name: "Muchos lugares a la vez"
+  
+ REMOTE_VIEWING_PERK_EFFECT: "Cada [thrall|E] suma: [GetModifier( 'remote_viewing_perk_modifier' ).GetNameWithTooltip|L]. Esto es acumulativo.\n#F Los Caídos pueden ver a través de los ojos de un esclavo.#!"
+ LORE_SCRY_PERK_EFFECT: "Como [character_interaction|E], te permite conocer todos los secretos y planes del objetivo que tiene derecho a tu artefacto.\n#F Al usar un objeto que pertenece al objetivo, un Asharu siempre puede observarlo.#!"
+ MOUTH_OF_THE_DAMNED_PERK_EFFECT: "Cada [thrall|E] suma: [GetModifier( 'mouth_of_the_damned_perk_modifier' ).GetNameWithTooltip|L]. Esto es acumulativo.\n#F Los Asharu pueden hablar a través de la boca de un esclavo.#!"
+ LORE_TOUCH_FROM_AFAR_PERK_EFFECT: "Como [character_interaction|E], te permite acelerar el plan contra un objetivo que tenga derecho a tu artefacto.\n#F Los Caídos pueden dirigir sus poderes a un objetivo que no esté dentro de su vista si tienen un objeto de esa persona.#!"
+ MANY_PLACES_AT_ONCE_PERK_EFFECT: "Cada [thrall|E] suma: [GetModifier( 'many_places_at_once_perk_modifier' ).GetNameWithTooltip|L]. Esto es acumulativo.\n#F El Asharu puede usar Boca de los Condenados en varias personas al mismo tiempo.#!"
+  
+ summon_wind_perk_name: "Invocar viento"
+ fist_of_air_perk_name: "Puño de aire"
+ command_the_wind_perk_name: "Comanda el viento"
+ wall_of_air_perk_name: "Muro de aire"
+ cyclone_perk_name: "Ciclón"
+  
+ SUMMON_WIND_PERK_EFFECT: "#F Los Caídos pueden invocar un viento de la nada.#!"
+ FIST_OF_AIR_PERK_EFFECT: "#F Los Asharu pueden manipular la presión del aire dentro o alrededor de un objetivo.#!"
+ COMMAND_THE_WIND_PERK_EFFECT: "#F Los Caídos pueden usar los vientos circundantes para manipular objetos como deseen.#!"
+ WALL_OF_AIR_PERK_EFFECT: "#F Los Asharu pueden convertir el aire en una barrera sólida.#!"
+ CYCLONE_PERK_EFFECT: "#F Los Asharu pueden crear una enorme tormenta de viento.#!"
+  
+ lore_earth_meld_perk_name: "Fusión de la Tierra"
+ roil_the_earth_perk_name: "Agitar la tierra"
+ mold_earth_perk_name: "Tierra de moho"
+ earth_storm_perk_name: "Tormenta de tierra"
+ earthquake_perk_name: "Terremoto"
+  
+ LORE_EARTH_MELD_PERK_EFFECT: "#F Los Caídos se fusionan parcialmente con la tierra sobre la que se encuentran y se convierten en un objeto inamovible.#!"
+ ROIL_THE_EARTH_PERK_EFFECT: "#F Los Caídos pueden hacer que la Tierra revele cualquier cosa que esté oculta en ella siempre que puedan nombrarla.#!"
+ MOLD_EARTH_PERK_EFFECT: "#F Los Caídos pueden dar forma a la Tierra solo con fuerza de voluntad.#!"
+ EARTH_STORM_PERK_EFFECT: "#F Trozos de roca y tierra son arrancados del suelo y orbitan alrededor de los Caídos. Estos trozos pueden usarse como misiles o como una especie de armadura.#!"
+ EARTHQUAKE_PERK_EFFECT: "#F Los Caídos pueden causar terremotos lo suficientemente fuertes como para arrasar ciudades.#!"
+  
+ find_path_perk_name: "Encuentra la ruta"
+ lay_path_perk_name: "Camino de laicos"
+ conceal_path_perk_name: "Ocultar camino"
+ seal_path_perk_name: "Camino del sello"
+ alter_path_perk_name: "Alterar camino"
+  
+ FIND_PATH_PERK_EFFECT: "#F Los Annunaki detectan un posible camino hacia su destino.#!"
+ LAY_PATH_PERK_EFFECT: "#F Los Annunaki crean un nuevo camino hacia su destino que puede sortear cualquier obstáculo que se interponga.#!"
+ CONCEAL_PATH_PERK_EFFECT: "#F Los Annunaki pueden ocultar los caminos creados por Lay Path para que otros no los detecten.#!"
+ SEAL_PATH_PERK_EFFECT: "#F Los Annunaki sellan un camino, atrapando a cualquiera que esté dentro, y pueden establecer una contraseña para que cualquiera que la conozca pueda abrir el camino.#!"
+ ALTER_PATH_PERK_EFFECT: "#F Los Annunaki alteran los parámetros de un camino existente, como el destino, la gravedad, el tamaño o incluso el flujo del tiempo dentro del camino.#!"
+  
+ enhance_object_perk_name: "Mejorar objeto"
+ activate_object_perk_name: "Activar objeto"
+ create_object_perk_name: "Crear objeto"
+ enchant_object_perk_name: "Encantar objeto"
+ imbue_object_perk_name: "Imbuir objeto"
+  
+ ENHANCE_OBJECT_PERK_EFFECT: "#F Los Caídos pueden reparar cualquier objeto en cualquier momento o aumentar enormemente la eficiencia de un objeto mundano.#!"
+ ACTIVATE_OBJECT_PERK_EFFECT: "#F Los Caídos pueden hacer que cualquier objeto mecánico se mueva, por ejemplo, disparar armas, abrir cerraduras o hacer que las armaduras caminen.#!"
+ CREATE_OBJECT_PERK_EFFECT: "#F Los Caídos pueden moldear libremente cualquier tipo de material como si fuera arcilla o masilla, o como si fuera un cristal que crece naturalmente.#!"
+ ENCHANT_OBJECT_PERK_EFFECT: "#F Los Caídos combinan varios efectos del Lore para crear un objeto mágico único llamado reliquia. Hay muy pocas cosas que no se puedan lograr siempre que los Annunaki conozcan el Lore requerido y siempre que el material esté lo suficientemente bien sintonizado para contener las energías. Con el uso de Anclar el Alma como parte del proceso de encantamiento, incluso se puede dar conciencia a los objetos al incorporar un alma mortal o demoníaca.#!"
+ IMBUE_OBJECT_PERK_EFFECT: "#F Los Caídos atrapan un alma incorpórea en un objeto. Este poder es permanente y funciona en las almas de los mortales y en las almas de los Caídos, pero solo los Caídos pueden hacer uso completo de sus habilidades en su nuevo santuario, volviéndose efectivamente Condenados a la Tierra instantáneamente. Las almas mortales vagan en la oscuridad, e incluso los espectros ya no pueden usar sus habilidades.#!"
+  
+ light_perk_name: "Luz"
+ bend_light_perk_name: "Luz de curva"
+ lore_phantasm_perk_name: "Fantasma"
+ lore_illusion_perk_name: "Espejismo"
+ coherent_light_perk_name: "Luz coherente"
+  
+ LIGHT_PERK_EFFECT: "#F El Neberu puede crear una luz suave y plateada, o un destello breve y brillante que ciega y aturde a los espectadores.#!"
+ BEND_LIGHT_PERK_EFFECT: "#F Al doblar la luz a su alrededor, los Neberu pueden crear un camuflaje similar al de un camaleón.#!"
+ LORE_PHANTASM_PERK_EFFECT: "#F Los Neberu pueden crear imágenes tenues y transparentes que pueden durar días.#!"
+ LORE_ILLUSION_PERK_EFFECT: "#F Los Neberu pueden crear ilusiones sólidas y de apariencia realista que duran poco tiempo.#!"
+ COHERENT_LIGHT_PERK_EFFECT: "#F Los Neberu pueden dar sustancia a sus ilusiones, permitiendo que sean tocadas.#!"
+  
+ sense_congruence_perk_name: "Congruencia de sentido"
+ trace_pattern_perk_name: "Patrón de seguimiento"
+ foresee_perk_name: "Prever"
+ causal_influence_perk_name: "Influencia causal"
+ twist_time_perk_name: "Tiempo de giro"
+  
+ SENSE_CONGRUENCE_PERK_EFFECT: "#F Los caídos siempre pueden ponerse en el lugar correcto en el momento correcto.#!"
+ TRACE_PATTERN_PERK_EFFECT: "#F Un Neberu puede rastrear las causas de un evento con gran precisión.#!"
+ FORESEE_PERK_EFFECT: "#F Los Neberu pueden leer el destino y predecir el resultado de un evento que está a punto de ocurrir.#!"
+ CAUSAL_INFLUENCE_PERK_EFFECT: "#F Los Caídos leen los acontecimientos con varios días de antelación y saben qué partes afectar para cambiar el futuro como lo desean.#!"
+ TWIST_TIME_PERK_EFFECT: "#F Los Neberu pueden alterar el flujo del tiempo en su entorno inmediato.#!"
+  
+ open_close_portals_perk_name: "Abrir/cerrar portales"
+ create_ward_perk_name: "Crear barrio"
+ teleport_perk_name: "Teletransportarse"
+ co_locate_perk_name: "Co-ubicación"
+ doorway_into_darkness_perk_name: "Puerta a la oscuridad"
+  
+ OPEN_CLOSE_PORTALS_PERK_EFFECT: "#F Los Caídos pueden abrir o cerrar cualquier portal físico, sin importar cómo esté sellado.#!"
+ CREATE_WARD_PERK_EFFECT: "#F Los Caídos pueden sellar un área contra intrusiones protegiendo todas sus paredes, ventanas y puertas.#!"
+ TELEPORT_PERK_EFFECT: "#F Los Caídos pueden teletransportarse entre dos portales similares, por ejemplo, de una ventana a otra que hayan visto al menos una vez, o de la puerta de un automóvil a la puerta de otro automóvil familiar.#!"
+ CO_LOCATE_PERK_EFFECT: "#F Los Caídos pueden vincular dos portales similares para que otros puedan teletransportarse usándolos.#!"
+ DOORWAY_INTO_DARKNESS_PERK_EFFECT: "#F El Caído abre un portal al vacío entre dimensiones.#!"
+  
+ read_emotion_perk_name: "Leer Emoción"
+ empathetic_response_perk_name: "Respuesta empática"
+ manipulate_senses_perk_name: "Manipular los sentidos"
+ obsession_perk_name: "Obsesión"
+ lore_inspire_perk_name: "Inspirar"
+  
+ READ_EMOTION_PERK_EFFECT: "#F El Lammasu puede leer el estado emocional de una persona a través de señales sutiles y actuar en consecuencia.#!"
+ EMPATHETIC_RESPONSE_PERK_EFFECT: "#F El Lammasu puede reaccionar perfectamente ante un objetivo, volviéndose perfectamente empático.#!"
+ MANIPULATE_SENSES_PERK_EFFECT: "#F El Lammasu puede aumentar las sensaciones que siente un objetivo.#!"
+ OBSESSION_PERK_EFFECT: "#F Con esta habilidad, un Lammasu hace que el objetivo se fije en una persona, cosa o idea.#!"
+ LORE_INSPIRE_PERK_EFFECT: "#F El Lammasu puede causar una percepción sobrehumana en un objetivo.#!"
+  
+ summon_water_perk_name: "Invocar agua"
+ lore_water_form_perk_name: "Forma de agua"
+ manipulate_weather_perk_name: "Manipular el clima"
+ command_the_storm_perk_name: "Comanda la tormenta"
+ invoke_the_storm_perk_name: "Invocar la tormenta"
+  
+ SUMMON_WATER_PERK_EFFECT: "#F El demonio puede invocar agua de cualquier fuente cercana, provocando desde una niebla repentina que lo oculta hasta una inundación torrencial.#!"
+ LORE_WATER_FORM_PERK_EFFECT: "#F El Lammasu se transforma en agua y puede fluir o flotar como niebla.#!"
+ MANIPULATE_WEATHER_PERK_EFFECT: "#F Esta evocación permite al Desecrador empujar los patrones climáticos existentes, alejando los frentes de tormenta o atrayéndolos hacia el Desecrador con una velocidad sorprendente y alternando las temperaturas locales.#!"
+ COMMAND_THE_STORM_PERK_EFFECT: "#F El Lammasu puede crear o eliminar cualquier tipo de clima.#!"
+ INVOKE_THE_STORM_PERK_EFFECT: "#F El Desecrador puede rodearse de una furiosa tormenta a voluntad, creando viento, agua y relámpagos en un área tan pequeña como una habitación o tan grande como una manzana de una ciudad. El corazón de la tormenta está centrado en el demonio y se mueve con él. Sin embargo, no le causa daño.#!"
+  
+ lore_mimic_perk_name: "Imitar"
+ alter_appearance_perk_name: "Alterar la apariencia"
+ alter_shape_perk_name: "Alterar la forma"
+ lore_doppelganger_perk_name: "Doble"
+ lore_shapechange_perk_name: "Cambio de forma"
+  
+ LORE_MIMIC_PERK_EFFECT: "#F Los Lammasu pueden cambiar su voz y gestos por los de otro.#!"
+ ALTER_APPEARANCE_PERK_EFFECT: "#F Los Caídos pueden alterar características básicas de sí mismos o de otros, como el color de su piel, ojos y cabello.#!"
+ ALTER_SHAPE_PERK_EFFECT: "#F Esto permite al Lammasu alterar la forma y las dimensiones de su figura.#!"
+ LORE_DOPPELGANGER_PERK_EFFECT: "#F El Caído se convierte en la persona perfecta para un objetivo, exhibiendo los gestos y la forma que quieren ver.#!"
+ LORE_SHAPECHANGE_PERK_EFFECT: "#F Los Lammasu pueden alterar libremente cualquier aspecto de su apariencia o la de otro.#!"
+  
+ summon_animals_perk_name: "Invocar animales"
+ command_animals_perk_name: "Animales de mando"
+ possess_animals_perk_name: "Poseer animales"
+ animal_form_perk_name: "Forma animal"
+ create_chimera_perk_name: "Crear quimera"
+  
+ SUMMON_ANIMALS_PERK_EFFECT: "#F El Rabisu puede detectar y convocar animales cercanos.#!"
+ COMMAND_ANIMALS_PERK_EFFECT: "#F Esto permite al Rabisu controlar a los animales cercanos para que hagan lo que ellos piden.#!"
+ POSSESS_ANIMALS_PERK_EFFECT: "#F El Rabisu puede apoderarse del cuerpo de un animal, viendo las cosas a través de sus ojos.#!"
+ ANIMAL_FORM_PERK_EFFECT: "#F Los Rabisu se transforman en una forma animal, siempre que hayan comido algo de sangre o carne de esa raza.#!"
+ CREATE_CHIMERA_PERK_EFFECT: "#F El Rabisu puede remodelar el cuerpo de un animal.#!"
+  
+ manipulate_metabolism_perk_name: "Manipular el metabolismo"
+ manipulate_nerves_perk_name: "Manipular los nervios"
+ manipulate_flesh_perk_name: "Manipular la carne"
+ restore_flesh_perk_name: "Restaurar la carne"
+ shape_flesh_perk_name: "Dar forma a la carne"
+  
+ MANIPULATE_METABOLISM_PERK_EFFECT: "#F El Caído puede hacer que el cuerpo produzca cualquier sustancia que pueda producir naturalmente, o puede enviarlo a un coma.#!"
+ MANIPULATE_NERVES_PERK_EFFECT: "#F Los Caídos pueden embotar o agudizar los sentidos y acelerar o ralentizar los reflejos.#!"
+ MANIPULATE_FLESH_PERK_EFFECT: "#F Los Caídos pueden alterar temporalmente los atributos físicos y mentales de la forma que deseen, pero corren el riesgo de sobrecargar la carne.#!"
+ RESTORE_FLESH_PERK_EFFECT: "#F Los Caídos pueden restaurar la salud completa de un cuerpo, regenerando órganos faltantes en cuestión de momentos y curando todas las enfermedades o toxinas.#!"
+ SHAPE_FLESH_PERK_EFFECT: "#F Los Caídos pueden alterar una criatura carnal de cualquier forma que deseen, transformándola en una criatura fantástica con el tiempo.#!"
+  
+ wilderness_sense_perk_name: "Sentido de lo salvaje"
+ quicken_growth_perk_name: "Acelerar el crecimiento"
+ command_the_wild_perk_name: "Domina lo salvaje"
+ possess_plant_perk_name: "Poseer planta"
+ mutate_plant_perk_name: "Planta mutada"
+  
+ WILDERNESS_SENSE_PERK_EFFECT: "#F El Caído sabe exactamente qué tipo de plantas y animales se encuentran en el área.#!"
+ QUICKEN_GROWTH_PERK_EFFECT: "#F El Rabisu hace que las plantas crezcan de forma antinaturalmente rápida.#!"
+ COMMAND_THE_WILD_PERK_EFFECT: "#F El Rabisu puede afectar al medio ambiente en su conjunto.#!"
+ POSSESS_PLANT_PERK_EFFECT: "#F The Fallen permite que las plantas ganen movilidad.#!"
+ MUTATE_PLANT_PERK_EFFECT: "#F El Rabisu puede crear nuevas plantas y razas.#!"
+  
+ read_fate_perk_name: "Leer el destino"
+ decay_perk_name: "Decadencia"
+ vision_of_mortality_perk_name: "Visión de la mortalidad"
+ extinguish_life_perk_name: "Extinguir la vida"
+ unlife_perk_name: "Sin vida"
+  
+ READ_FATE_PERK_EFFECT: "#F El Caído descubre qué causó la muerte de un objetivo, e incluso puede ser testigo de los últimos días antes de que ocurriera la muerte.#!"
+ DECAY_PERK_EFFECT: "#F El Caído hace que un objeto se descomponga al tocarlo.#!"
+ VISION_OF_MORTALITY_PERK_EFFECT: "#F El Caído inflige una visión de muerte al objetivo para asustarlo. Esta es una de las pocas evocaciones que también funciona contra los Caídos.#!"
+ EXTINGUISH_LIFE_PERK_EFFECT: "#F El Caído separa el cuerpo del espíritu, provocando que el objetivo muera en paz y sin dolor. Cuando el objetivo es un Caído, simplemente recibe daño.#!"
+ UNLIFE_PERK_EFFECT: "#F Los Caídos resucitan un cadáver para que cumpla sus órdenes, aunque estos muertos vivientes necesitan una supervisión estricta.#!"
+  
+ speak_with_the_dead_perk_name: "Hablar con los muertos"
+ lore_summon_the_dead_perk_name: "Invocar a los muertos"
+ lore_command_the_dead_perk_name: "Manda a los muertos"
+ anchor_the_soul_perk_name: "Anclar el alma"
+ restore_the_dead_perk_name: "Restaurar a los muertos"
+  
+ SPEAK_WITH_THE_DEAD_PERK_EFFECT: "#F Los Caídos pueden hablar con un espectro, y el espectro debe responder las preguntas del Caído con sinceridad.#!"
+ LORE_SUMMON_THE_DEAD_PERK_EFFECT: "#F Los Caídos pueden convocar espectros a su lado. Los espectros así convocados no pueden irse por sí solos.#!"
+ LORE_COMMAND_THE_DEAD_PERK_EFFECT: "#F Los Caídos pueden ordenar a un espectro que realice cualquier acción.#!"
+ ANCHOR_THE_SOUL_PERK_EFFECT: "#F El Caído ata un alma a un objeto. Esto puede ser permanente o temporal, y puede servir como prisión o crear una marioneta animada que le permite al alma servir a su amo demoníaco o atender asuntos pendientes en el mundo material. Este efecto funciona tanto en almas mortales como en almas demoníacas incorpóreas, pero las almas demoníacas no pueden alcanzar su máximo potencial mientras están ancladas de esta manera.#!"
+ RESTORE_THE_DEAD_PERK_EFFECT: "#F El Caído trasplanta un espectro a un cuerpo recientemente muerto, lo que le otorga al fallecido una segunda oportunidad de vivir. Este efecto supone un enorme desgaste para el Caído si se supone que durará más de unos pocos días.#!"
+  
+ sense_the_barrier_perk_name: "Siente la barrera"
+ step_beyond_the_veil_perk_name: "Un paso más allá del velo"
+ ghostwalk_perk_name: "Paseo fantasmal"
+ reach_across_the_barrier_perk_name: "Superar la barrera"
+ pierce_the_barrier_perk_name: "Perforar la barrera"
+  
+ SENSE_THE_BARRIER_PERK_EFFECT: "#F El Halaku puede determinar la fuerza de la barrera entre el reino físico y las Tierras de las Sombras.#!"
+ STEP_BEYOND_THE_VEIL_PERK_EFFECT: "#F Esta evocación permite al cazador cruzar físicamente la barrera hacia el mundo de las sombras, una imagen inerte del mundo mortal. Al hacerlo, el demonio puede viajar grandes distancias en el reino de las sombras a la velocidad del pensamiento y regresar al mundo físico en una ubicación correspondiente.#!"
+ GHOSTWALK_PERK_EFFECT: "#F Los Halaku pueden moverse entre el reino físico y las Tierras Sombrías, volviéndose visibles pero intangibles en ambos lados a menos que deseen volverse sustanciales.#!"
+ REACH_ACROSS_THE_BARRIER_PERK_EFFECT: "#F Los Halaku pueden llegar a las Tierras de las Sombras desde el reino físico sin entrar realmente en ellas, o pueden llegar al reino físico sin salir de las Tierras de las Sombras.#!"
+ PIERCE_THE_BARRIER_PERK_EFFECT: "#F Esta evocación permite al Halaku crear una puerta temporal entre los reinos de los vivos y los muertos, permitiendo que otros demonios crucen a las Tierras Sombrías si el creador del portal lo desea.#!"
   

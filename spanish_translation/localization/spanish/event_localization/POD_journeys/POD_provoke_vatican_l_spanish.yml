@@ -1,247 +1,247 @@
 ﻿l_spanish:
   
- POD_provoke_inquisition_effect_tt: "#N;bold El mundo ha cambiado irreversiblemente gracias a ti.#!" #NT!
- POD_provoke_inquisition_effect_tt_2: "La Santa Sede ha tomado nota de sus acciones y la Inquisición ha comenzado a movilizarse. En aproximadamente #V [EmptyScope.ScriptValue('premature_inquisition_delay')]#! años, desatarán sus ejércitos en el [world_of_darkness|E], y no se sabe cuáles serán los efectos dominó de este evento..." #NT!
+ POD_provoke_inquisition_effect_tt: "#N;bold El mundo ha cambiado irreversiblemente gracias a ti.#!"
+ POD_provoke_inquisition_effect_tt_2: "La Santa Sede ha tomado nota de sus acciones y la Inquisición ha comenzado a movilizarse. En aproximadamente #V [EmptyScope.ScriptValue('premature_inquisition_delay')]#! años, desatarán sus ejércitos en el [world_of_darkness|E], y no se sabe cuáles serán los efectos dominó de este evento..."
   
- POD_vatican_coterie_duel_success_tt: "[prowess_duelist.GetFirstNameNicknamed] latidos [adversary.GetFirstName]" #NT!
- POD_vatican_coterie_duel_failure_tt: "[prowess_duelist.GetFirstNameNicknamed] y [adversary.GetFirstName] sucumben a sus heridas." #NT!
- POD_vatican_coterie_duel_critfail_tt: "[prowess_duelist.GetFirstNameNicknamed] queda completamente destruido" #NT!
+ POD_vatican_coterie_duel_success_tt: "[prowess_duelist.GetFirstNameNicknamed] latidos [adversary.GetFirstName]"
+ POD_vatican_coterie_duel_failure_tt: "[prowess_duelist.GetFirstNameNicknamed] y [adversary.GetFirstName] sucumben a sus heridas."
+ POD_vatican_coterie_duel_critfail_tt: "[prowess_duelist.GetFirstNameNicknamed] queda completamente destruido"
   
   
- POD_psalm23_translated: "#TOOLTIP:POD_psalm23_translation #V;L $POD_psalm23_latin$#!#!" #NT!
- POD_psalm23_untranslated: "#TOOLTIP:POD_verses_notranslation #V;L $POD_psalm23_latin$#!#!" #NT!
- POD_psalm94_translated: "#TOOLTIP:POD_psalm94_translation #V;L $POD_psalm94_latin$#!#!" #NT!
- POD_psalm94_untranslated: "#TOOLTIP:POD_verses_notranslation #V;L $POD_psalm94_latin$#!#!" #NT!
- POD_lordsprayer_translated: "#TOOLTIP:POD_lordsprayer_translation #V;L $POD_lordsprayer_latin$#!#!" #NT!
- POD_lordsprayer_untranslated: "#TOOLTIP:POD_verses_notranslation #V;L $POD_lordsprayer_latin$#!#!" #NT!
+ POD_psalm23_translated: "#TOOLTIP:POD_psalm23_translation #V;L $POD_psalm23_latin$#!#!"
+ POD_psalm23_untranslated: "#TOOLTIP:POD_verses_notranslation #V;L $POD_psalm23_latin$#!#!"
+ POD_psalm94_translated: "#TOOLTIP:POD_psalm94_translation #V;L $POD_psalm94_latin$#!#!"
+ POD_psalm94_untranslated: "#TOOLTIP:POD_verses_notranslation #V;L $POD_psalm94_latin$#!#!"
+ POD_lordsprayer_translated: "#TOOLTIP:POD_lordsprayer_translation #V;L $POD_lordsprayer_latin$#!#!"
+ POD_lordsprayer_untranslated: "#TOOLTIP:POD_verses_notranslation #V;L $POD_lordsprayer_latin$#!#!"
   
- POD_verses_notranslation: "[GetPlayer.GetFirstNameNoTooltip] habla #bold no#! latín" #NT!
+ POD_verses_notranslation: "[GetPlayer.GetFirstNameNoTooltip] habla #bold no#! latín"
   
- POD_psalm23_latin: "\"Nam et si ambulavero in medio umbrae mortis, non timebo mala, quoniam tu mecum es. Virga tua, et baculus tuus, ipsa me consolata sunt.\"" #NT!
+ POD_psalm23_latin: "\"Nam et si ambulavero in medio umbrae mortis, non timebo mala, quoniam tu mecum es. Virga tua, et baculus tuus, ipsa me consolata sunt.\""
   # Psalm 23:4 KJV 
- POD_psalm23_translation: "#italic Aunque ande en valle de sombra de muerte, no temeré mal alguno, porque tú estarás conmigo. Tu vara y tu cayado me infundirán aliento.#!" #NT!
+ POD_psalm23_translation: "#italic Aunque ande en valle de sombra de muerte, no temeré mal alguno, porque tú estarás conmigo. Tu vara y tu cayado me infundirán aliento.#!"
   
- POD_psalm94_latin: "\"Et factus est mihi Dominus in refugium, et Deus meus in adjutorium spei meae. Et reddet illis iniquitatem ipsorum, et in malitia eorum disperdet eos: disperdet illos Dominus Deus noster.\"" #NT!
+ POD_psalm94_latin: "\"Et factus est mihi Dominus in refugium, et Deus meus in adjutorium spei meae. Et reddet illis iniquitatem ipsorum, et in malitia eorum disperdet eos: disperdet illos Dominus Deus noster.\""
   # Psalm 94:22-23 KJV 
- POD_psalm94_translation: "#italic Mas Jehová es mi amparo, y mi Dios la roca de mi refugio. El hará volver sobre ellos su iniquidad, y los destruirá en su propia maldad; Jehová nuestro Dios los destruirá.#!" #NT!
+ POD_psalm94_translation: "#italic Mas Jehová es mi amparo, y mi Dios la roca de mi refugio. El hará volver sobre ellos su iniquidad, y los destruirá en su propia maldad; Jehová nuestro Dios los destruirá.#!"
   
- POD_lordsprayer_latin: "\"Pater noster, qui es in caelis, sanctificetur nomen tuum. Adveniat regnum tuum. Fiat voluntas tua, sicut in caelo et in terra.\"" #NT!
+ POD_lordsprayer_latin: "\"Pater noster, qui es in caelis, sanctificetur nomen tuum. Adveniat regnum tuum. Fiat voluntas tua, sicut in caelo et in terra.\""
   # Matthew 6:10-13 KJV 
- POD_lordsprayer_translation: "#italic Padre nuestro que estás en los cielos, santificado sea tu nombre. Venga tu reino. Hágase tu voluntad, como en el cielo, así también en la tierra.#!" #NT!
+ POD_lordsprayer_translation: "#italic Padre nuestro que estás en los cielos, santificado sea tu nombre. Venga tu reino. Hágase tu voluntad, como en el cielo, así también en la tierra.#!"
   
   
- POD_faith_vulnerability_demon_tt: "Aquellos que se asocian con demonios son especialmente vulnerables a [true_faith|E]..." #NT!
- POD_faith_vulnerability_wraith_tt: "Los espectros son especialmente vulnerables a [true_faith|E]..." #NT!
+ POD_faith_vulnerability_demon_tt: "Aquellos que se asocian con demonios son especialmente vulnerables a [true_faith|E]..."
+ POD_faith_vulnerability_wraith_tt: "Los espectros son especialmente vulnerables a [true_faith|E]..."
   
- POD_provoke_vatican_escape_tt: "Continúas tu huida de la ciudad..." #NT!
- POD_provoke_vatican_escape_complete_tt: "Finalmente lograste escapar de los Inquisidores que te perseguían." #NT!
-  
-  
- POD_progenitor_caine: "[GetScriptedCharacterByHistoryID('505001').GetFirstNameNicknamed]" #NT!
- POD_progenitor_lilith: "[GetScriptedCharacterByHistoryID('505002').GetFirstNameNicknamed]" #NT!
- POD_progenitor_set: "[GetScriptedCharacterByHistoryID('505012').GetFirstName]" #NT!
- POD_progenitor_odin: "[GetScriptedCharacterByHistoryID('505055').GetFirstName]" #NT!
- POD_progenitor_zapathasura: "[GetScriptedCharacterByHistoryID('505020').GetFirstNameNicknamed]" #NT!
+ POD_provoke_vatican_escape_tt: "Continúas tu huida de la ciudad..."
+ POD_provoke_vatican_escape_complete_tt: "Finalmente lograste escapar de los Inquisidores que te perseguían."
   
   
- POD_provoke_vatican.1.t: "Una gran entrada" #NT!
- POD_provoke_vatican.1.desc: "Ahora estoy en el umbral de la Ciudad Eterna. El escenario está preparado. Los actores están reunidos. Las cortinas están corridas y la gran obra está a punto de desarrollarse. ¿Qué queda? Ah, sí. El público cautivo. No hay nadie alrededor para saludarme. Lo cual es extraño, ya que los rumores sobre mi esfuerzo ya se han extendido entre los de mi especie. No aprecian lo que estoy a punto de hacer. Un público difícil, en verdad. ¿Estoy realmente tan fuera de onda?" #NT!
- POD_provoke_vatican.1.option.a: "No, son todos los demás los que están equivocados." #NT!
- POD_provoke_vatican.1.option.a.tt: "Continuarás adentrándote en la ciudad..." #NT!
-  
- POD_provoke_vatican.2.t: "Una entrada denegada" #NT!
- POD_provoke_vatican.2.desc: "Mientras intento entrar a la ciudad, [adversary.GetFirstName] me cierra el paso.\n\n" #NT!
- POD_provoke_vatican.2.desc.vampire: ""Abandonarás esta estúpida aventura de inmediato, [ROOT.Char.GetFirstNameNoTooltip]. ¿No comprendes las consecuencias de lo que estás a punto de hacer? El bienestar de todos los hijos de Caín exige que te detengan"." #NT!
- POD_provoke_vatican.2.desc.nonvampire: ""Abandonarás esta estúpida aventura de inmediato, [ROOT.Char.GetFirstNameNoTooltip]. ¿No comprendes las consecuencias de lo que estás a punto de hacer? Si los mortales saben de tu existencia, no se detendrán ante nada para verte destruido"." #NT!
- POD_provoke_vatican.2.desc.ruler: "\n\nEl gobernante de [GetTitleByKey('c_roma').GetNameNoTier] me mira con frialdad. Parece que no hay forma de convencer a [adversary.GetHerHim] de la rectitud de mi causa." #NT!
- POD_provoke_vatican.2.desc.neighbor: "\n\nSi [adversary.GetSheHe] viajó hasta [GetTitleByKey('c_roma').GetNameNoTier] solo para impedirme entrar, [adversary.GetSheHe] debe hablar en serio. Parece que no hay forma de convencer a [adversary.GetHerHim] de la rectitud de mi causa." #NT!
- POD_provoke_vatican.2.desc.repeat: "[coterie_loser.GetFirstNameNicknamed] se apresura a entrar, y de inmediato queda claro que [coterie_loser.GetSheHe] está irremediablemente superado. [adversary.GetFirstName] da un paso al costado, hace una finta baja, corta alto, y antes de que alguien pueda reaccionar, la cabeza decapitada de [coterie_loser.GetFirstNamePossessiveNoTooltip] vuela por el aire.\n\nEstamos de nuevo donde comenzamos, con un miembro menos en nuestro [GetPlayer.Custom('PODCoterie')].\n\n[adversary.GetFirstNameNoTooltip] todavía no muestra ningún rastro de emoción mientras se gira para dirigirse a mí: \"Tengo toda la noche, [ROOT.Char.GetFirstNameNoTooltip].\"" #NT!
- POD_provoke_vatican.2.option.a: "Hazte a un lado o te obligaré." #NT!
- POD_provoke_vatican.2.option.a.2: "Muy bien, ahora es mi turno." #NT!
- POD_provoke_vatican.2.option.a.tt: "Parece que a [adversary.GetSheHe] no le interesa negociar... tendrás que pelear con [adversary.GetHerHim]." #NT!
- POD_provoke_vatican.2.option.b: "[prowess_duelist.GetFirstName], dale una lección a este [adversary.Custom('WomanManGirlBoy')]." #NT!
- POD_provoke_vatican.2.option.c: "Tienes razón. Debería darme la vuelta antes de que sea demasiado tarde." #NT!
- POD_provoke_vatican.2.option.c.2: "Has dejado claro tu punto de vista. Abandonarás esta búsqueda." #NT!
- POD_provoke_vatican.2.option.c.tt: "Abandonarás tu [journey|E]. Pero el daño a tu reputación nunca se recuperará..." #NT!
-  
- POD_provoke_vatican.3.t: "Eliminando el primer obstáculo" #NT!
- POD_provoke_vatican.3.desc: "[adversary.GetFirstName] yace a mis pies, roto y magullado. ¿Dónde está ahora esa confianza en sí mismo de [adversary.GetHersHis]?" #NT!
- POD_provoke_vatican.3.desc.root: "Debe haberse desvanecido en el aire cuando golpeé a [adversary.GetHerHim] hasta convertirlo en pulpa." #NT!
- POD_provoke_vatican.3.desc.coterie: "Debe haberse desvanecido en el aire cuando [coterie_victor.GetFirstNameNicknamed] venció a [adversary.GetHerHim] hasta convertirlo en pulpa." #NT!
- POD_provoke_vatican.3.desc.end: "\n\nAntes de continuar, tendré que decidir qué hacer con [adversary.GetHerHim]." #NT!
- POD_provoke_vatican.3.option.a: "Eres demasiado peligroso para dejarte con vida." #NT!
- POD_provoke_vatican.3.option.b: "Estás completamente debajo de mi vista." #NT!
-  
- POD_provoke_vatican.4.t: "Acortar" #NT!
- POD_provoke_vatican.4.desc: "Mi visión es nadar. ¿Dónde salió todo mal? Todo lo que quería era liberarnos de la esclavitud." #NT!
- POD_provoke_vatican.4.desc.caelestius: "Mi visión es nadar. ¿Dónde salió todo mal? Todo lo que quería era una bendición." #NT!
- POD_provoke_vatican.4.desc.end: "¿Por qué [adversary.GetFirstName] no puede entender? ¿Por qué nadie puede entender...?\n\nMi adversario sacude la cabeza [adversary.GetHerHis]. \"Esta noche, le estoy haciendo un favor al mundo. Este es el mejor resultado posible para tu misión, [ROOT.Char.GetFirstNameNoTooltip]: contigo muerto y tu nombre borrado de todos los registros, para que nadie se sienta inspirado a intentar un plan tan desacertado de nuevo.\n\nEl destello del arma de [adversary.GetHerHis] es lo último que veo antes de que todo termine." #NT!
- POD_provoke_vatican.4.option.a: "Pero yo quería hacer historia..." #NT!
- POD_provoke_vatican.4.option.a.caelestius: "Pero aún no he hablado con el Papa..." #NT!
-  
- POD_provoke_vatican.5.t: "Una victoria pírrica" #NT!
- POD_provoke_vatican.5.desc: "La pelea se vuelve muy caótica muy rápidamente. [coterie_loser.GetFirstNameNicknamed] salta hacia [adversary.GetFirstName] y en cuestión de segundos, la sangre se esparce por todas partes. Tratamos de ayudar a nuestro miembro [ROOT.Char.Custom('PODCoterie')], pero en este caos, es imposible encontrar una abertura.\n\n[adversary.GetFirstNameNoTooltip] grita de rabia y redobla el ataque de [adversary.GetHerHis]. [coterie_loser.GetFirstNameNoTooltip] devuelve lo mismo que [coterie_loser.GetSheHe].\n\nCuando el polvo se ha asentado, queda claro que ambos han sufrido un gran daño agravado. Nuestro adversario perece poco después, pero también lo hace [coterie_loser.GetFirstNameNoTooltip]." #NT!
- POD_provoke_vatican.5.option.a: "Tu sacrificio no será en vano, [coterie_loser.GetFirstNameNoTooltip]." #NT!
-  
- POD_provoke_vatican.10.t: "Corderos al matadero" #NT!
- POD_provoke_vatican.10.desc: "Los mortales abarrotan las calles de [GetTitleByKey('c_roma').GetNameNoTier], y verlos me llena de desdén.\n\n¿Por qué un [Select_CString(ROOT.Char.IsFemale,'lioness','lion')] como yo debería verse obligado a esconderse en la oscuridad, mientras estas ovejas pueden ir a donde les plazca?\n\nNo puedo entrar al Vaticano propiamente dicho: el suelo sagrado seguramente me destruiría. Pero esta es la Ciudad Eterna. Los hombres santos están en todas partes." #NT!
- POD_provoke_vatican.10.desc.caelestius: "No quería que esto llegara a esto, pero los hombres santos de [GetTitleByKey('c_roma').GetNameNoTier] no me dejan otra opción.\n\n¡No he sido más que civilizada y me pagan con el despido! Apuesto a que se están riendo de mí a mis espaldas. ¿Qué hice para merecer esto?" #NT!
- POD_provoke_vatican.10.desc.end: "\n\nSería muy fácil darles un espectáculo que nunca olvidarían." #NT!
- POD_provoke_vatican.10.option.a: "Mátenlos. Mátenlos a todos." #NT!
- POD_provoke_vatican.10.option.a.tt.beast: "#R Sí... HAZLO.#!" #NT!
- POD_provoke_vatican.10.option.a.tt: "Mostrarás tus colmillos y te pondrás a trabajar." #NT!
- POD_provoke_vatican.10.option.b: "Espera, no. Lo estoy pensando mejor." #NT!
- POD_provoke_vatican.10.option.b.tt.beast: "#R Aguafiestas.#!" #NT!
- POD_provoke_vatican.10.option.b.tt: "Abandonarás tu [journey|E]. Pero el daño a tu reputación nunca se recuperará..." #NT!
- POD_provoke_vatican.10.option.b.tt.caelestius: "Considerarás las otras opciones que tienes disponibles." #NT!
-  
- POD_provoke_vatican.11.t: "La masacre" #NT!
- POD_provoke_vatican.11.desc: "Soy un artista y [GetTitleByKey('c_roma').GetNameNoTier] es mi lienzo. Sus calles se tiñen de rojo esta noche.\n\n¿Por qué corren los mortales? Convertirse en el pigmento de mi obra maestra es el mayor propósito al que servirán.\n\nMis colmillos están al descubierto, para que todo el mundo los vea. Y me verán. ¡Miren con atención, todos! Miren a su nuevo señor supremo, que ya no se esconde en las sombras.\n\nMe siento mejor que nunca. Esto es algo que debería haber hecho hace mucho tiempo." #NT!
- POD_provoke_vatican.11.desc.caelestius: "Oh, si Pelagio pudiera verme ahora. Esta es una manera mucho más fácil de exponer la hipocresía del clero. Todo lo que necesito hacer es rasgar y rasgar. Desgarrar y desgarrar...\n\nA pesar de todas sus grandes palabras, su sangre sabe igual que la de todos los demás. Sus vísceras tienen el mismo aspecto que las de los demás. Si los apilara lo suficiente, ¿podría alcanzar el cielo?\n\nMe siento mejor que nunca. Esto es algo que debería haber hecho hace mucho tiempo. Dejar que mis acciones hablen, en lugar de mis palabras..." #NT!
- POD_provoke_vatican.11.tt.caelestius: "Te has atiborrado de la sangre del clero de Roma." #NT!
- POD_provoke_vatican.11.tt: "Te has atiborrado de la sangre de los plebeyos de Roma." #NT!
- POD_provoke_vatican.11.tt.notvampire: "Habéis cometido una masacre entre los plebeyos de Roma." #NT!
- POD_provoke_vatican.11.option.a: "Un baño de sangre para la historia." #NT!
-  
- POD_provoke_vatican.12.t: "¿Dónde está el Papa?" #NT!
- POD_provoke_vatican.12.desc: "Hasta ahora, mi visita a [GetTitleByKey('c_roma').GetNameNoTier] ha sido un gigantesco ejercicio de frustración.\n\nEl Vaticano me tiene prohibido. Ninguno de los santos parece tener tiempo para hablar conmigo. ¡Ni siquiera están dispuestos a escucharme! ¡Yo, un maestro en teología!\n\n¿Qué puedo hacer para convencerlos de que les estoy trayendo asuntos de la más grave importancia?" #NT!
- POD_provoke_vatican.12.desc.repeat: "Sin éxito hasta ahora." #NT!
- POD_provoke_vatican.12.desc.repeat.coterie: "Hemos estado buscando por todas partes y ninguno de los clérigos con los que nos reunimos ha mostrado interés alguno." #NT!
- POD_provoke_vatican.12.desc.repeat.1: "[commenter.GetFirstNameNicknamed] asiente sabiamente. "Sólo tenemos que seguir intentándolo", dice [commenter.GetSheHe]." #NT!
- POD_provoke_vatican.12.desc.repeat.2: "[commenter.GetFirstNameNicknamedPossessive] frunce el ceño. “Nuestra paciencia será recompensada con el tiempo”, dice [commenter.GetSheHe], cada vez menos convencido." #NT!
- POD_provoke_vatican.12.desc.repeat.3: "[commenter.GetFirstNameNicknamed] gruñe algo en voz baja [commenter.GetHerHis] aliento que suena sospechosamente como #italic \"Hasta aquí por amar a tu prójimo...\"#!" #NT!
- POD_provoke_vatican.12.desc.repeat.4: "[commenter.GetFirstNameNicknamed] entrecierra los ojos [commenter.GetHerHis] hacia el horizonte, como si [commenter.GetSheHe] pudiera invocar a un obispo mirándolo fijamente." #NT!
- POD_provoke_vatican.12.desc.repeat.5: "[commenter.GetFirstNameNicknamed] sacudidas [commenter.GetHerHis] cabeza. \"Uno pensaría que leer la Biblia les habría enseñado más palabras que simplemente 'no'.\"" #NT!
- POD_provoke_vatican.12.desc.repeat.6: "[commenter.GetFirstNameNicknamed] suelta un grito de frustración ensordecedor, haciendo que algunos pájaros cercanos salgan volando. "No me mires así", dice [commenter.GetSheHe]. "Eso estuvo completamente justificado"." #NT!
- POD_provoke_vatican.12.desc.repeat.7: "[commenter.GetFirstNameNicknamed] estira [commenter.GetHerHis] piernas. \"¿Sabes qué me haría sentir mejor? Golpear a uno de estos obispos hasta dejarlo hecho papilla.\"" #NT!
- POD_provoke_vatican.12.desc.repeat.8: "[commenter.GetFirstNameNicknamed] suspira. \"Ya hemos intentado el enfoque diplomático. ¿No deberíamos considerar algunas alternativas?"" #NT!
- POD_provoke_vatican.12.desc.repeat.9: "[commenter.GetFirstNameNicknamed] sisea. \"Tal vez deberíamos tomar ejemplo de Nerón y quemar todo este lugar.\"" #NT!
- POD_provoke_vatican.12.desc.repeat.10: "[commenter.GetFirstNameNicknamed] simplemente me lanza una mirada resentida, sin decir nada." #NT!
- POD_provoke_vatican.12.desc.repeat.nocoterie: "He estado buscando por todas partes y ninguno de los clérigos con los que me he reunido ha mostrado interés.\n\nSólo tengo que seguir intentándolo. O tal vez haya alternativas más drásticas que considerar..." #NT!
- POD_provoke_vatican.12.option.a: "Entraré en el Vaticano y hablaré personalmente con el Papa." #NT!
- POD_provoke_vatican.12.option.a.tt: "No existe una mayor concentración de tierra santa en ningún lugar del mundo. Sólo hay una manera de que esto termine." #NT!
- POD_provoke_vatican.12.option.b: "Seguramente un obispo de alto rango puede concedernos una audiencia." #NT!
- POD_provoke_vatican.12.option.b.tt: "Seguramente..." #NT!
- POD_provoke_vatican.12.option.b.success.root: "Encuentra un obispo que esté dispuesto a escucharte." #NT!
- POD_provoke_vatican.12.option.b.success.coterie: "[learning_duelist.GetFirstNameNicknamed] encuentra a alguien que esté dispuesto a escucharte." #NT!
- POD_provoke_vatican.12.option.b.failure.root: "No encuentras a nadie" #NT!
- POD_provoke_vatican.12.option.b.failure.coterie: "[learning_duelist.GetFirstNameNicknamed] no encuentra a nadie." #NT!
- POD_provoke_vatican.12.option.b.pope.root: "Contra todo pronóstico, consigues una audiencia con el Papa, lejos de cualquier suelo sagrado." #NT!
- POD_provoke_vatican.12.option.b.pope.coterie: "Contra todo pronóstico, [learning_duelist.GetFirstNameNicknamed] consigue concertar una audiencia con el propio Papa, lejos de cualquier suelo sagrado." #NT!
- POD_provoke_vatican.12.option.c: "¡Esto es indignante! Debería enseñarles a respetarme..." #NT!
- POD_provoke_vatican.12.option.c.tt: "Te volverás loco." #NT!
- POD_provoke_vatican.12.option.d: "Esto es imposible. Me doy por vencido." #NT!
-  
- POD_provoke_vatican.13.t: "Humillado por la fe" #NT!
- POD_provoke_vatican.13.desc: "No me arrepiento de mi decisión.\n\nAl principio, el dolor comienza lentamente. Aprieto los dientes y sigo adelante. Seguramente esto es solo una prueba, una forma de que los fieles demuestren su devoción. Pero empeora, y empeora, y empeora...\n\nTodavía no he llegado a la Basílica y la sensación de ardor se ha vuelto insoportable. Sin embargo, no es solo una sensación. Estoy literalmente bañado en fuego divino.\n\n" #NT!
- POD_provoke_vatican.13.desc.coterie: "¿Dónde está el resto de mis [ROOT.Char.Custom('PODCoterie')]? No están a la vista. ¿Ya se fueron?" #NT!
- POD_provoke_vatican.13.desc.nocoterie: "¿Por qué me pasa esto? ¿No debería mi fe protegerme?" #NT!
- POD_provoke_vatican.13.desc.end: "Sólo tengo unos momentos para reflexionar sobre esta pregunta mientras el fuego me consume por completo." #NT!
- POD_provoke_vatican.13.option.a: "¡Qué forma tan irónica de actuar para un teólogo!" #NT!
-  
- POD_provoke_vatican.14.t: "Encontrado con escepticismo" #NT!
- POD_provoke_vatican.14.desc.coterie: "¡Por fin llegamos a alguna parte! [learning_duelist.GetFirstNameNicknamedPossessive] El conocimiento teológico puede abrir muchas puertas." #NT!
- POD_provoke_vatican.14.desc.nocoterie: "¡Por fin estamos llegando a alguna parte! Mi experiencia teológica puede abrir muchas puertas." #NT!
- POD_provoke_vatican.14.desc.end: "En este caso, se trata de una reunión con el obispo sufragáneo [bishop.GetFirstName].\n\nEstá impresionado por mis argumentos eruditos, pero no es suficiente. Con una sonrisa beatífica, me dice que no, no cualquiera que lo pida amablemente puede ir a ver al Papa.\n\n¿Está tratando de decepcionarme con delicadeza? ¿Acaso sabe quién soy? Esto no puede seguir así." #NT!
- POD_provoke_vatican.14.option.a: "Debo convencerlo, cueste lo que cueste." #NT!
- POD_provoke_vatican.14.option.a.tt: "¡Una oportunidad para un debate teológico! Esto es para lo que naciste. Cuéntale todo." #NT!
- POD_provoke_vatican.14.option.b: "Esto no tiene sentido. Seguiré buscando al Papa en otro lugar." #NT!
- POD_provoke_vatican.14.option.b.tt: "Continúas tu búsqueda..." #NT!
-  
- POD_provoke_vatican_revelation: "Le cuento #italic TODO#!.\n\nI. Le cuento sobre $POD_progenitor_caine$. Le cuento sobre $POD_progenitor_lilith$. Le cuento todo sobre los eventos que sucedieron en la Tierra de Nod, hace mucho tiempo. Y le cuento sobre los muchos [cainites|E] que vagan por las ciudades de Europa esta noche.\n\nCuanto más hablo, más animado me pongo. [bishop.GetFirstName] me escucha con gran atención. Sus ojos se abren cada minuto. Esto va bien, puedo sentirlo." #NT!
-  
- POD_provoke_vatican.15.t: "La revelación" #NT!
- POD_provoke_vatican.15.desc: "$POD_provoke_vatican_revelation$\n\nEn algún momento, me interrumpe, me agradece por las ideas y se disculpa. Se marcha a toda prisa." #NT!
- POD_provoke_vatican.15.option.a: "¡Oye! ¡Tienes que hablarle bien al Papa de mi parte!" #NT!
- POD_provoke_vatican.15.option.a.tt: "Pero ya se fue..." #NT!
-  
- POD_provoke_vatican.16.t: "El Santo Padre" #NT!
- POD_provoke_vatican.16.desc: "¡Aleluya! Dios me sonríe verdaderamente esta noche, porque he conseguido una audiencia con el Santo Padre en persona. He fantaseado tantas veces con este acontecimiento, y ahora se ha hecho realidad.\n\nParece... un poco menos piadoso de lo que me lo imaginaba. Pero no importa.\n\nEsto es lo que he estado esperando. El momento de la verdad. Una oportunidad de recibir una bendición del mismísimo [bishop.GetFirstName]." #NT!
-  
- POD_provoke_vatican.17.t: "La revelación" #NT!
- POD_provoke_vatican.17.desc: "$POD_provoke_vatican_revelation$\n\nDe repente, me interrumpe. \"Ya he oído suficiente, [ROOT.Char.GetFirstNameNoTooltip]. Gracias por llamar mi atención sobre esto.\" Sonríe." #NT!
- POD_provoke_vatican.17.option.a: "...Eso es bueno, ¿verdad?" #NT!
- POD_provoke_vatican.17.option.a.tt: "¿Pero qué es ese ruido que oyes detrás de ti?" #NT!
- POD_provoke_vatican.17.option.a.tt.success: "Algo malo pasa" #NT!
- POD_provoke_vatican.17.option.a.tt.failure: "Sucede algo MUY malo" #NT!
-  
- POD_provoke_vatican.18.t: "¡Traición!" #NT!
- POD_provoke_vatican.18.desc.coterie: "Por suerte, [prowess_duelist.GetFirstNameNicknamed] reacciona lo suficientemente rápido para desviar la estaca dirigida a mi corazón.\n\n" #NT!
- POD_provoke_vatican.18.desc.nocoterie: "Por suerte, reacciono lo suficientemente rápido para desviar la estaca dirigida a mi corazón." #NT!
- POD_provoke_vatican.18.desc: "Un [GetTrait('supehunter').GetName(GetNullCharacter)] se había acercado sigilosamente detrás de mí y trató de eliminarme. De repente, hay muchos de ellos por ahí. ¿Siempre estuvieron ahí?\n\n" #NT!
- POD_provoke_vatican.18.desc.end.coterie: "[bishop.GetFirstNamePossessive] Los ojos arden de celo mientras grita: \"¡TRAS ELLOS!\"\n\nIntento reprimir mi decepción por cómo fue esta reunión mientras $POD_player_coterie$ escapa." #NT!
- POD_provoke_vatican.18.desc.end.nocoterie: "[bishop.GetFirstNamePossessive] Los ojos arden de entusiasmo mientras grita: \"¡DESPUÉS DE [Select_CString(ROOT.Char.IsFemale,'HER','HIM')]!\"\n\nIntento reprimir mi decepción por cómo fue esta reunión mientras escapo." #NT!
- POD_provoke_vatican.18.option.a: "¡Hora de correr!" #NT!
- POD_provoke_vatican.18.option.a.tt: "Intentarás escapar de la ciudad... con una horda de Inquisidores persiguiéndote." #NT!
-  
- POD_provoke_vatican.19.t: "Traición..." #NT!
- POD_provoke_vatican.19.desc: "No reacciono con la suficiente rapidez ante el [GetTrait('supehunter').GetName(GetNullCharacter)] que se acerca sigilosamente por detrás de mí.\n\nUna estaca me atraviesa el corazón y me deja inmóvil. Mi cuerpo aletargado solo puede observar impotente cómo los inquisidores se acercan a mí. Algunos de ellos llevan antorchas...\n\n[bishop.GetFirstName] me lanza una mirada significativa. \"Debería estar agradeciéndote, [ROOT.Char.GetFirstNameNoTooltip]\", dice. \"Si no hubieras venido, nunca habría sabido la verdadera magnitud de lo que enfrenta la Iglesia. Necesitamos poner todos nuestros recursos a su servicio. La Inquisición de las Sombras ya no estará en las sombras.\"" #NT!
- POD_provoke_vatican.19.option.a: "Esto no es como imaginé que iría esto..." #NT!
+ POD_progenitor_caine: "[GetScriptedCharacterByHistoryID('505001').GetFirstNameNicknamed]"
+ POD_progenitor_lilith: "[GetScriptedCharacterByHistoryID('505002').GetFirstNameNicknamed]"
+ POD_progenitor_set: "[GetScriptedCharacterByHistoryID('505012').GetFirstName]"
+ POD_progenitor_odin: "[GetScriptedCharacterByHistoryID('505055').GetFirstName]"
+ POD_progenitor_zapathasura: "[GetScriptedCharacterByHistoryID('505020').GetFirstNameNicknamed]"
   
   
- POD_provoke_vatican.20.t: "[adversary.GetFirstNameNicknamedNoTooltip]" #NT!
- POD_provoke_vatican.20.desc.coterie: "Mientras comenzamos a salir de la ciudad, un [GetTrait('supehunter').GetName(adversary)] se cruza en nuestro camino. ¡Por fin! Qué emocionante.\n\nNuestra emoción se convierte en horror cuando [adversary.GetSheHe] recita un verso. [GetPlayer.Custom('PODPsalm23')]\n\nUna repentina sensación de fragilidad me invade. A los otros miembros de $POD_player_coterie$ no les va mucho mejor. Claramente, este es un enemigo con el que no se puede jugar." #NT!
- POD_provoke_vatican.20.desc.nocoterie: "Mientras empiezo a salir de la ciudad, un [GetTrait('supehunter').GetName(adversary)] se cruza en mi camino. ¡Por fin! Qué emocionante.\n\nMi emoción se convierte en horror cuando [adversary.GetSheHe] recita un verso. [GetPlayer.Custom('PODPsalm23')]\n\nUna repentina sensación de fragilidad me invade. Claramente, no se trata de un enemigo con el que se pueda jugar." #NT!
- POD_provoke_vatican.20.desc.coterie.bishop: "Con sentimientos encontrados, caminamos por las calles de [GetTitleByKey('c_roma').GetNameNoTier], pensando cuál debería ser nuestro siguiente paso. De repente, un caballero sagrado se cruza en nuestro camino. ¡Qué emocionante! ¿Quizás [adversary.GetSheHe] pueda llevarnos hasta el Papa?\n\nNuestra emoción se convierte en horror cuando [adversary.GetSheHe] recita un verso. [GetPlayer.Custom('PODPsalm23')]\n\nUna repentina sensación de fragilidad me invade. A los otros miembros de $POD_player_coterie$ no les está yendo mucho mejor. Entonces, el caballero roba [adversary.GetHerHis] [adversary.Custom('signature_weapon')]. Esto no está yendo como esperaba..." #NT!
- POD_provoke_vatican.20.desc.nocoterie.bishop: "Con sentimientos encontrados, camino por las calles de [GetTitleByKey('c_roma').GetNameNoTier], pensando cuál debería ser mi próximo paso. De repente, un caballero sagrado se cruza en mi camino. ¡Qué emocionante! ¿Quizás [adversary.GetSheHe] pueda llevarme hasta el Papa?\n\nMi emoción se convierte en horror cuando [adversary.GetSheHe] recita un verso. [GetPlayer.Custom('PODPsalm23')]\n\nUna repentina sensación de fragilidad me invade. Entonces, el caballero saca [adversary.GetHerHis] [adversary.Custom('signature_weapon')]. Esto no va como esperaba..." #NT!
- POD_provoke_vatican.20.desc.coterie.pope: "Cuando empezamos a salir de la ciudad, un [GetTrait('supehunter').GetName(adversary)] se cruza en nuestro camino. La noticia de nuestro encuentro con el Papa debe haber viajado rápido.\n\nPara empeorar las cosas, [adversary.GetSheHe] comienza a recitar un verso. [GetPlayer.Custom('PODPsalm23')]\n\nUna repentina sensación de fragilidad me invade. A los otros miembros de $POD_player_coterie$ no les está yendo mucho mejor. Claramente, este es un enemigo con el que no se puede jugar." #NT!
- POD_provoke_vatican.20.desc.nocoterie.pope: "Mientras empiezo a salir de la ciudad, un [GetTrait('supehunter').GetName(adversary)] se cruza en mi camino. La noticia de mi encuentro con el Papa debe haber corrido rápido.\n\nPara empeorar las cosas, [adversary.GetSheHe] comienza a recitar un verso. [GetPlayer.Custom('PODPsalm23')]\n\nUna repentina sensación de fragilidad me invade. Claramente, este es un enemigo con el que no se puede jugar." #NT!
- POD_provoke_vatican.20.desc.hunter2.coterie: "Nos apresuramos por las calles secundarias y los callejones, haciendo todo lo posible por mantenernos alejados de todas las patrullas [GetTrait('supehunter').GetName(adversary)]. Y casi lo logramos, hasta que nos topamos con un operador lobo solitario.\n\n[adversary.GetSheHe|U] blande la lanza [adversary.GetHerHis] hacia nosotros y proclama: [GetPlayer.Custom('PODPsalm94')]\n\nLa fe de este es aún más fuerte. Esto está empezando a volverse molesto..." #NT!
- POD_provoke_vatican.20.desc.hunter2.nocoterie: "Me apresuro por las calles y callejones, haciendo todo lo posible por mantenerme alejado de todas las patrullas [GetTrait('supehunter').GetName(adversary)]. Y casi lo logro, hasta que me topo con un operador lobo solitario.\n\n[adversary.GetSheHe|U] blande la lanza [adversary.GetHerHis] hacia mí y proclama: [GetPlayer.Custom('PODPsalm94')]\n\nLa fe de este es aún más fuerte. Esto está empezando a volverse molesto..." #NT!
- POD_provoke_vatican.20.desc.hunter3.coterie: "Ya casi hemos salido de la ciudad. La libertad está tan cerca que prácticamente puedo saborearla. Tampoco parece haber patrullas [GetTrait('supehunter').GetName(adversary)] tan lejos.\n\nEntonces, un verdadero gigante [adversary.Custom('WomanManGirlBoy')] sale de una puerta.\n\n[adversary.GetSheHe|U] levanta el hacha [adversary.GetHerHis] en alto y grita: [GetPlayer.Custom('PODLordsPrayer')]\n\nCon la fe [adversary.GetHerHis] amenazando con aplastarnos, nos preparamos para una confrontación final." #NT!
- POD_provoke_vatican.20.desc.hunter3.nocoterie: "Ya casi he logrado salir de la ciudad. La libertad está tan cerca que prácticamente puedo saborearla. Tampoco parece haber patrullas de [GetTrait('supehunter').GetName(adversary)] tan lejos.\n\nEntonces, un verdadero gigante de [adversary.Custom('WomanManGirlBoy')] sale de una puerta.\n\n[adversary.GetSheHe|U] levanta el hacha de [adversary.GetHerHis] en alto y grita: [GetPlayer.Custom('PODLordsPrayer')]\n\nCon la fe de [adversary.GetHerHis] amenazando con aplastarme, me preparo para una confrontación final." #NT!
- POD_provoke_vatican.20.option.a: "Si quieres pelear conmigo entonces peleemos." #NT!
- POD_provoke_vatican.20.option.a.tt: "Tú mismo te batirás en duelo con este siervo de Dios." #NT!
- POD_provoke_vatican.20.option.b: "[prowess_duelist.GetFirstName], este es tu momento de brillar." #NT!
+ POD_provoke_vatican.1.t: "Una gran entrada"
+ POD_provoke_vatican.1.desc: "Ahora estoy en el umbral de la Ciudad Eterna. El escenario está preparado. Los actores están reunidos. Las cortinas están corridas y la gran obra está a punto de desarrollarse. ¿Qué queda? Ah, sí. El público cautivo. No hay nadie alrededor para saludarme. Lo cual es extraño, ya que los rumores sobre mi esfuerzo ya se han extendido entre los de mi especie. No aprecian lo que estoy a punto de hacer. Un público difícil, en verdad. ¿Estoy realmente tan fuera de onda?"
+ POD_provoke_vatican.1.option.a: "No, son todos los demás los que están equivocados."
+ POD_provoke_vatican.1.option.a.tt: "Continuarás adentrándote en la ciudad..."
   
- POD_provoke_vatican.21.t: "Superando la adversidad" #NT!
- POD_provoke_vatican.21.desc: "[adversary.GetFirstNameNicknamed] ha sido completamente derrotado. [adversary.GetHerHis|U] la fe está rota, [adversary.GetHerHis] los salmos están silenciados.\n\n¿Debería terminar [adversary.GetHerHim] ahora, o es mejor seguir adelante rápidamente?" #NT!
- POD_provoke_vatican.21.desc.drain: "\n\nPor supuesto, podría reponer mi vitae y ocuparme de este problema, todo de una vez..." #NT!
- POD_provoke_vatican.21.desc.sanguine: "\n\nLa sangre de este [GetTrait('supehunter').GetName(adversary)] está completamente impregnada de fe. Beberla sería una muy mala idea." #NT!
- POD_provoke_vatican.21.option.b: "Drenaré toda tu sangre." #NT!
+ POD_provoke_vatican.2.t: "Una entrada denegada"
+ POD_provoke_vatican.2.desc: "Mientras intento entrar a la ciudad, [adversary.GetFirstName] me cierra el paso.\n\n"
+ POD_provoke_vatican.2.desc.vampire: ""Abandonarás esta estúpida aventura de inmediato, [ROOT.Char.GetFirstNameNoTooltip]. ¿No comprendes las consecuencias de lo que estás a punto de hacer? El bienestar de todos los hijos de Caín exige que te detengan"."
+ POD_provoke_vatican.2.desc.nonvampire: ""Abandonarás esta estúpida aventura de inmediato, [ROOT.Char.GetFirstNameNoTooltip]. ¿No comprendes las consecuencias de lo que estás a punto de hacer? Si los mortales saben de tu existencia, no se detendrán ante nada para verte destruido"."
+ POD_provoke_vatican.2.desc.ruler: "\n\nEl gobernante de [GetTitleByKey('c_roma').GetNameNoTier] me mira con frialdad. Parece que no hay forma de convencer a [adversary.GetHerHim] de la rectitud de mi causa."
+ POD_provoke_vatican.2.desc.neighbor: "\n\nSi [adversary.GetSheHe] viajó hasta [GetTitleByKey('c_roma').GetNameNoTier] solo para impedirme entrar, [adversary.GetSheHe] debe hablar en serio. Parece que no hay forma de convencer a [adversary.GetHerHim] de la rectitud de mi causa."
+ POD_provoke_vatican.2.desc.repeat: "[coterie_loser.GetFirstNameNicknamed] se apresura a entrar, y de inmediato queda claro que [coterie_loser.GetSheHe] está irremediablemente superado. [adversary.GetFirstName] da un paso al costado, hace una finta baja, corta alto, y antes de que alguien pueda reaccionar, la cabeza decapitada de [coterie_loser.GetFirstNamePossessiveNoTooltip] vuela por el aire.\n\nEstamos de nuevo donde comenzamos, con un miembro menos en nuestro [GetPlayer.Custom('PODCoterie')].\n\n[adversary.GetFirstNameNoTooltip] todavía no muestra ningún rastro de emoción mientras se gira para dirigirse a mí: \"Tengo toda la noche, [ROOT.Char.GetFirstNameNoTooltip].\""
+ POD_provoke_vatican.2.option.a: "Hazte a un lado o te obligaré."
+ POD_provoke_vatican.2.option.a.2: "Muy bien, ahora es mi turno."
+ POD_provoke_vatican.2.option.a.tt: "Parece que a [adversary.GetSheHe] no le interesa negociar... tendrás que pelear con [adversary.GetHerHim]."
+ POD_provoke_vatican.2.option.b: "[prowess_duelist.GetFirstName], dale una lección a este [adversary.Custom('WomanManGirlBoy')]."
+ POD_provoke_vatican.2.option.c: "Tienes razón. Debería darme la vuelta antes de que sea demasiado tarde."
+ POD_provoke_vatican.2.option.c.2: "Has dejado claro tu punto de vista. Abandonarás esta búsqueda."
+ POD_provoke_vatican.2.option.c.tt: "Abandonarás tu [journey|E]. Pero el daño a tu reputación nunca se recuperará..."
   
- POD_provoke_vatican.22.t: "Fe inquebrantable" #NT!
- POD_provoke_vatican.22.desc: "[adversary.GetFirstNameNicknamed] me desarma y, con la velocidad de un consumado profesional, se dispone a darme el golpe de gracia.\n\nEl tiempo parece ralentizarse mientras los acontecimientos de esta noche pasan ante mis ojos. ¿Se animarán otros $POD_splat_hunter_plural$ con mi muerte? ¿Se unirán ahora los mortales en torno a una causa común? ¿Ha sido todo este esfuerzo un gran error?\n\nMis cavilaciones se interrumpen cuando el [adversary.Custom('signature_weapon')] de [GetTrait('supehunter').GetName(adversary)] me golpea el cuello." #NT!
- POD_provoke_vatican.22.option.a: "Me pregunto qué será de mis sucesores..." #NT!
+ POD_provoke_vatican.3.t: "Eliminando el primer obstáculo"
+ POD_provoke_vatican.3.desc: "[adversary.GetFirstName] yace a mis pies, roto y magullado. ¿Dónde está ahora esa confianza en sí mismo de [adversary.GetHersHis]?"
+ POD_provoke_vatican.3.desc.root: "Debe haberse desvanecido en el aire cuando golpeé a [adversary.GetHerHim] hasta convertirlo en pulpa."
+ POD_provoke_vatican.3.desc.coterie: "Debe haberse desvanecido en el aire cuando [coterie_victor.GetFirstNameNicknamed] venció a [adversary.GetHerHim] hasta convertirlo en pulpa."
+ POD_provoke_vatican.3.desc.end: "\n\nAntes de continuar, tendré que decidir qué hacer con [adversary.GetHerHim]."
+ POD_provoke_vatican.3.option.a: "Eres demasiado peligroso para dejarte con vida."
+ POD_provoke_vatican.3.option.b: "Estás completamente debajo de mi vista."
   
- POD_provoke_vatican.23.t: "A un gran costo" #NT!
- POD_provoke_vatican.23.desc: "La fe de [adversary.GetFirstNameNicknamed] nos toma por sorpresa. [adversary.GetSheHe|U] blande el crucifijo de [adversary.GetHerHis] y santifica el suelo alrededor de [adversary.GetHerselfHimself], lo que termina dándole a [adversary.GetHerHim] una gran ventaja táctica.\n\nAhora estamos bloqueados, y [coterie_loser.GetFirstNameNicknamed] se está quemando donde está [coterie_loser.GetSheHe].\n\nSin embargo, nuestro miembro [ROOT.Char.Custom('PODCoterie')] no está dispuesto a irse sin luchar, e incluso cuando la piel de [coterie_loser.GetHerHis] se ennegrece y humea, [coterie_loser.GetSheHe] logra derribar a [adversary.GetSheHe|U]0 con [adversary.GetSheHe|U]1." #NT!
+ POD_provoke_vatican.4.t: "Acortar"
+ POD_provoke_vatican.4.desc: "Mi visión es nadar. ¿Dónde salió todo mal? Todo lo que quería era liberarnos de la esclavitud."
+ POD_provoke_vatican.4.desc.caelestius: "Mi visión es nadar. ¿Dónde salió todo mal? Todo lo que quería era una bendición."
+ POD_provoke_vatican.4.desc.end: "¿Por qué [adversary.GetFirstName] no puede entender? ¿Por qué nadie puede entender...?\n\nMi adversario sacude la cabeza [adversary.GetHerHis]. \"Esta noche, le estoy haciendo un favor al mundo. Este es el mejor resultado posible para tu misión, [ROOT.Char.GetFirstNameNoTooltip]: contigo muerto y tu nombre borrado de todos los registros, para que nadie se sienta inspirado a intentar un plan tan desacertado de nuevo.\n\nEl destello del arma de [adversary.GetHerHis] es lo último que veo antes de que todo termine."
+ POD_provoke_vatican.4.option.a: "Pero yo quería hacer historia..."
+ POD_provoke_vatican.4.option.a.caelestius: "Pero aún no he hablado con el Papa..."
+  
+ POD_provoke_vatican.5.t: "Una victoria pírrica"
+ POD_provoke_vatican.5.desc: "La pelea se vuelve muy caótica muy rápidamente. [coterie_loser.GetFirstNameNicknamed] salta hacia [adversary.GetFirstName] y en cuestión de segundos, la sangre se esparce por todas partes. Tratamos de ayudar a nuestro miembro [ROOT.Char.Custom('PODCoterie')], pero en este caos, es imposible encontrar una abertura.\n\n[adversary.GetFirstNameNoTooltip] grita de rabia y redobla el ataque de [adversary.GetHerHis]. [coterie_loser.GetFirstNameNoTooltip] devuelve lo mismo que [coterie_loser.GetSheHe].\n\nCuando el polvo se ha asentado, queda claro que ambos han sufrido un gran daño agravado. Nuestro adversario perece poco después, pero también lo hace [coterie_loser.GetFirstNameNoTooltip]."
+ POD_provoke_vatican.5.option.a: "Tu sacrificio no será en vano, [coterie_loser.GetFirstNameNoTooltip]."
+  
+ POD_provoke_vatican.10.t: "Corderos al matadero"
+ POD_provoke_vatican.10.desc: "Los mortales abarrotan las calles de [GetTitleByKey('c_roma').GetNameNoTier], y verlos me llena de desdén.\n\n¿Por qué un [Select_CString(ROOT.Char.IsFemale,'lioness','lion')] como yo debería verse obligado a esconderse en la oscuridad, mientras estas ovejas pueden ir a donde les plazca?\n\nNo puedo entrar al Vaticano propiamente dicho: el suelo sagrado seguramente me destruiría. Pero esta es la Ciudad Eterna. Los hombres santos están en todas partes."
+ POD_provoke_vatican.10.desc.caelestius: "No quería que esto llegara a esto, pero los hombres santos de [GetTitleByKey('c_roma').GetNameNoTier] no me dejan otra opción.\n\n¡No he sido más que civilizada y me pagan con el despido! Apuesto a que se están riendo de mí a mis espaldas. ¿Qué hice para merecer esto?"
+ POD_provoke_vatican.10.desc.end: "\n\nSería muy fácil darles un espectáculo que nunca olvidarían."
+ POD_provoke_vatican.10.option.a: "Mátenlos. Mátenlos a todos."
+ POD_provoke_vatican.10.option.a.tt.beast: "#R Sí... HAZLO.#!"
+ POD_provoke_vatican.10.option.a.tt: "Mostrarás tus colmillos y te pondrás a trabajar."
+ POD_provoke_vatican.10.option.b: "Espera, no. Lo estoy pensando mejor."
+ POD_provoke_vatican.10.option.b.tt.beast: "#R Aguafiestas.#!"
+ POD_provoke_vatican.10.option.b.tt: "Abandonarás tu [journey|E]. Pero el daño a tu reputación nunca se recuperará..."
+ POD_provoke_vatican.10.option.b.tt.caelestius: "Considerarás las otras opciones que tienes disponibles."
+  
+ POD_provoke_vatican.11.t: "La masacre"
+ POD_provoke_vatican.11.desc: "Soy un artista y [GetTitleByKey('c_roma').GetNameNoTier] es mi lienzo. Sus calles se tiñen de rojo esta noche.\n\n¿Por qué corren los mortales? Convertirse en el pigmento de mi obra maestra es el mayor propósito al que servirán.\n\nMis colmillos están al descubierto, para que todo el mundo los vea. Y me verán. ¡Miren con atención, todos! Miren a su nuevo señor supremo, que ya no se esconde en las sombras.\n\nMe siento mejor que nunca. Esto es algo que debería haber hecho hace mucho tiempo."
+ POD_provoke_vatican.11.desc.caelestius: "Oh, si Pelagio pudiera verme ahora. Esta es una manera mucho más fácil de exponer la hipocresía del clero. Todo lo que necesito hacer es rasgar y rasgar. Desgarrar y desgarrar...\n\nA pesar de todas sus grandes palabras, su sangre sabe igual que la de todos los demás. Sus vísceras tienen el mismo aspecto que las de los demás. Si los apilara lo suficiente, ¿podría alcanzar el cielo?\n\nMe siento mejor que nunca. Esto es algo que debería haber hecho hace mucho tiempo. Dejar que mis acciones hablen, en lugar de mis palabras..."
+ POD_provoke_vatican.11.tt.caelestius: "Te has atiborrado de la sangre del clero de Roma."
+ POD_provoke_vatican.11.tt: "Te has atiborrado de la sangre de los plebeyos de Roma."
+ POD_provoke_vatican.11.tt.notvampire: "Habéis cometido una masacre entre los plebeyos de Roma."
+ POD_provoke_vatican.11.option.a: "Un baño de sangre para la historia."
+  
+ POD_provoke_vatican.12.t: "¿Dónde está el Papa?"
+ POD_provoke_vatican.12.desc: "Hasta ahora, mi visita a [GetTitleByKey('c_roma').GetNameNoTier] ha sido un gigantesco ejercicio de frustración.\n\nEl Vaticano me tiene prohibido. Ninguno de los santos parece tener tiempo para hablar conmigo. ¡Ni siquiera están dispuestos a escucharme! ¡Yo, un maestro en teología!\n\n¿Qué puedo hacer para convencerlos de que les estoy trayendo asuntos de la más grave importancia?"
+ POD_provoke_vatican.12.desc.repeat: "Sin éxito hasta ahora."
+ POD_provoke_vatican.12.desc.repeat.coterie: "Hemos estado buscando por todas partes y ninguno de los clérigos con los que nos reunimos ha mostrado interés alguno."
+ POD_provoke_vatican.12.desc.repeat.1: "[commenter.GetFirstNameNicknamed] asiente sabiamente. "Sólo tenemos que seguir intentándolo", dice [commenter.GetSheHe]."
+ POD_provoke_vatican.12.desc.repeat.2: "[commenter.GetFirstNameNicknamedPossessive] frunce el ceño. “Nuestra paciencia será recompensada con el tiempo”, dice [commenter.GetSheHe], cada vez menos convencido."
+ POD_provoke_vatican.12.desc.repeat.3: "[commenter.GetFirstNameNicknamed] gruñe algo en voz baja [commenter.GetHerHis] aliento que suena sospechosamente como #italic \"Hasta aquí por amar a tu prójimo...\"#!"
+ POD_provoke_vatican.12.desc.repeat.4: "[commenter.GetFirstNameNicknamed] entrecierra los ojos [commenter.GetHerHis] hacia el horizonte, como si [commenter.GetSheHe] pudiera invocar a un obispo mirándolo fijamente."
+ POD_provoke_vatican.12.desc.repeat.5: "[commenter.GetFirstNameNicknamed] sacudidas [commenter.GetHerHis] cabeza. \"Uno pensaría que leer la Biblia les habría enseñado más palabras que simplemente 'no'.\""
+ POD_provoke_vatican.12.desc.repeat.6: "[commenter.GetFirstNameNicknamed] suelta un grito de frustración ensordecedor, haciendo que algunos pájaros cercanos salgan volando. "No me mires así", dice [commenter.GetSheHe]. "Eso estuvo completamente justificado"."
+ POD_provoke_vatican.12.desc.repeat.7: "[commenter.GetFirstNameNicknamed] estira [commenter.GetHerHis] piernas. \"¿Sabes qué me haría sentir mejor? Golpear a uno de estos obispos hasta dejarlo hecho papilla.\""
+ POD_provoke_vatican.12.desc.repeat.8: "[commenter.GetFirstNameNicknamed] suspira. \"Ya hemos intentado el enfoque diplomático. ¿No deberíamos considerar algunas alternativas?""
+ POD_provoke_vatican.12.desc.repeat.9: "[commenter.GetFirstNameNicknamed] sisea. \"Tal vez deberíamos tomar ejemplo de Nerón y quemar todo este lugar.\""
+ POD_provoke_vatican.12.desc.repeat.10: "[commenter.GetFirstNameNicknamed] simplemente me lanza una mirada resentida, sin decir nada."
+ POD_provoke_vatican.12.desc.repeat.nocoterie: "He estado buscando por todas partes y ninguno de los clérigos con los que me he reunido ha mostrado interés.\n\nSólo tengo que seguir intentándolo. O tal vez haya alternativas más drásticas que considerar..."
+ POD_provoke_vatican.12.option.a: "Entraré en el Vaticano y hablaré personalmente con el Papa."
+ POD_provoke_vatican.12.option.a.tt: "No existe una mayor concentración de tierra santa en ningún lugar del mundo. Sólo hay una manera de que esto termine."
+ POD_provoke_vatican.12.option.b: "Seguramente un obispo de alto rango puede concedernos una audiencia."
+ POD_provoke_vatican.12.option.b.tt: "Seguramente..."
+ POD_provoke_vatican.12.option.b.success.root: "Encuentra un obispo que esté dispuesto a escucharte."
+ POD_provoke_vatican.12.option.b.success.coterie: "[learning_duelist.GetFirstNameNicknamed] encuentra a alguien que esté dispuesto a escucharte."
+ POD_provoke_vatican.12.option.b.failure.root: "No encuentras a nadie"
+ POD_provoke_vatican.12.option.b.failure.coterie: "[learning_duelist.GetFirstNameNicknamed] no encuentra a nadie."
+ POD_provoke_vatican.12.option.b.pope.root: "Contra todo pronóstico, consigues una audiencia con el Papa, lejos de cualquier suelo sagrado."
+ POD_provoke_vatican.12.option.b.pope.coterie: "Contra todo pronóstico, [learning_duelist.GetFirstNameNicknamed] consigue concertar una audiencia con el propio Papa, lejos de cualquier suelo sagrado."
+ POD_provoke_vatican.12.option.c: "¡Esto es indignante! Debería enseñarles a respetarme..."
+ POD_provoke_vatican.12.option.c.tt: "Te volverás loco."
+ POD_provoke_vatican.12.option.d: "Esto es imposible. Me doy por vencido."
+  
+ POD_provoke_vatican.13.t: "Humillado por la fe"
+ POD_provoke_vatican.13.desc: "No me arrepiento de mi decisión.\n\nAl principio, el dolor comienza lentamente. Aprieto los dientes y sigo adelante. Seguramente esto es solo una prueba, una forma de que los fieles demuestren su devoción. Pero empeora, y empeora, y empeora...\n\nTodavía no he llegado a la Basílica y la sensación de ardor se ha vuelto insoportable. Sin embargo, no es solo una sensación. Estoy literalmente bañado en fuego divino.\n\n"
+ POD_provoke_vatican.13.desc.coterie: "¿Dónde está el resto de mis [ROOT.Char.Custom('PODCoterie')]? No están a la vista. ¿Ya se fueron?"
+ POD_provoke_vatican.13.desc.nocoterie: "¿Por qué me pasa esto? ¿No debería mi fe protegerme?"
+ POD_provoke_vatican.13.desc.end: "Sólo tengo unos momentos para reflexionar sobre esta pregunta mientras el fuego me consume por completo."
+ POD_provoke_vatican.13.option.a: "¡Qué forma tan irónica de actuar para un teólogo!"
+  
+ POD_provoke_vatican.14.t: "Encontrado con escepticismo"
+ POD_provoke_vatican.14.desc.coterie: "¡Por fin llegamos a alguna parte! [learning_duelist.GetFirstNameNicknamedPossessive] El conocimiento teológico puede abrir muchas puertas."
+ POD_provoke_vatican.14.desc.nocoterie: "¡Por fin estamos llegando a alguna parte! Mi experiencia teológica puede abrir muchas puertas."
+ POD_provoke_vatican.14.desc.end: "En este caso, se trata de una reunión con el obispo sufragáneo [bishop.GetFirstName].\n\nEstá impresionado por mis argumentos eruditos, pero no es suficiente. Con una sonrisa beatífica, me dice que no, no cualquiera que lo pida amablemente puede ir a ver al Papa.\n\n¿Está tratando de decepcionarme con delicadeza? ¿Acaso sabe quién soy? Esto no puede seguir así."
+ POD_provoke_vatican.14.option.a: "Debo convencerlo, cueste lo que cueste."
+ POD_provoke_vatican.14.option.a.tt: "¡Una oportunidad para un debate teológico! Esto es para lo que naciste. Cuéntale todo."
+ POD_provoke_vatican.14.option.b: "Esto no tiene sentido. Seguiré buscando al Papa en otro lugar."
+ POD_provoke_vatican.14.option.b.tt: "Continúas tu búsqueda..."
+  
+ POD_provoke_vatican_revelation: "Le cuento #italic TODO#!.\n\nI. Le cuento sobre $POD_progenitor_caine$. Le cuento sobre $POD_progenitor_lilith$. Le cuento todo sobre los eventos que sucedieron en la Tierra de Nod, hace mucho tiempo. Y le cuento sobre los muchos [cainites|E] que vagan por las ciudades de Europa esta noche.\n\nCuanto más hablo, más animado me pongo. [bishop.GetFirstName] me escucha con gran atención. Sus ojos se abren cada minuto. Esto va bien, puedo sentirlo."
+  
+ POD_provoke_vatican.15.t: "La revelación"
+ POD_provoke_vatican.15.desc: "$POD_provoke_vatican_revelation$\n\nEn algún momento, me interrumpe, me agradece por las ideas y se disculpa. Se marcha a toda prisa."
+ POD_provoke_vatican.15.option.a: "¡Oye! ¡Tienes que hablarle bien al Papa de mi parte!"
+ POD_provoke_vatican.15.option.a.tt: "Pero ya se fue..."
+  
+ POD_provoke_vatican.16.t: "El Santo Padre"
+ POD_provoke_vatican.16.desc: "¡Aleluya! Dios me sonríe verdaderamente esta noche, porque he conseguido una audiencia con el Santo Padre en persona. He fantaseado tantas veces con este acontecimiento, y ahora se ha hecho realidad.\n\nParece... un poco menos piadoso de lo que me lo imaginaba. Pero no importa.\n\nEsto es lo que he estado esperando. El momento de la verdad. Una oportunidad de recibir una bendición del mismísimo [bishop.GetFirstName]."
+  
+ POD_provoke_vatican.17.t: "La revelación"
+ POD_provoke_vatican.17.desc: "$POD_provoke_vatican_revelation$\n\nDe repente, me interrumpe. \"Ya he oído suficiente, [ROOT.Char.GetFirstNameNoTooltip]. Gracias por llamar mi atención sobre esto.\" Sonríe."
+ POD_provoke_vatican.17.option.a: "...Eso es bueno, ¿verdad?"
+ POD_provoke_vatican.17.option.a.tt: "¿Pero qué es ese ruido que oyes detrás de ti?"
+ POD_provoke_vatican.17.option.a.tt.success: "Algo malo pasa"
+ POD_provoke_vatican.17.option.a.tt.failure: "Sucede algo MUY malo"
+  
+ POD_provoke_vatican.18.t: "¡Traición!"
+ POD_provoke_vatican.18.desc.coterie: "Por suerte, [prowess_duelist.GetFirstNameNicknamed] reacciona lo suficientemente rápido para desviar la estaca dirigida a mi corazón.\n\n"
+ POD_provoke_vatican.18.desc.nocoterie: "Por suerte, reacciono lo suficientemente rápido para desviar la estaca dirigida a mi corazón."
+ POD_provoke_vatican.18.desc: "Un [GetTrait('supehunter').GetName(GetNullCharacter)] se había acercado sigilosamente detrás de mí y trató de eliminarme. De repente, hay muchos de ellos por ahí. ¿Siempre estuvieron ahí?\n\n"
+ POD_provoke_vatican.18.desc.end.coterie: "[bishop.GetFirstNamePossessive] Los ojos arden de celo mientras grita: \"¡TRAS ELLOS!\"\n\nIntento reprimir mi decepción por cómo fue esta reunión mientras $POD_player_coterie$ escapa."
+ POD_provoke_vatican.18.desc.end.nocoterie: "[bishop.GetFirstNamePossessive] Los ojos arden de entusiasmo mientras grita: \"¡DESPUÉS DE [Select_CString(ROOT.Char.IsFemale,'HER','HIM')]!\"\n\nIntento reprimir mi decepción por cómo fue esta reunión mientras escapo."
+ POD_provoke_vatican.18.option.a: "¡Hora de correr!"
+ POD_provoke_vatican.18.option.a.tt: "Intentarás escapar de la ciudad... con una horda de Inquisidores persiguiéndote."
+  
+ POD_provoke_vatican.19.t: "Traición..."
+ POD_provoke_vatican.19.desc: "No reacciono con la suficiente rapidez ante el [GetTrait('supehunter').GetName(GetNullCharacter)] que se acerca sigilosamente por detrás de mí.\n\nUna estaca me atraviesa el corazón y me deja inmóvil. Mi cuerpo aletargado solo puede observar impotente cómo los inquisidores se acercan a mí. Algunos de ellos llevan antorchas...\n\n[bishop.GetFirstName] me lanza una mirada significativa. \"Debería estar agradeciéndote, [ROOT.Char.GetFirstNameNoTooltip]\", dice. \"Si no hubieras venido, nunca habría sabido la verdadera magnitud de lo que enfrenta la Iglesia. Necesitamos poner todos nuestros recursos a su servicio. La Inquisición de las Sombras ya no estará en las sombras.\""
+ POD_provoke_vatican.19.option.a: "Esto no es como imaginé que iría esto..."
   
   
- POD_provoke_vatican.30.t: "El fin...?" #NT!
- POD_provoke_vatican.30.desc: "Ya está hecho. El Vaticano ha recibido una lección de respeto y yo he sobrevivido para contarlo. Las batallas fueron duras y salí victorioso. Ahora me toca a mí ser quien escriba la historia." #NT!
- POD_provoke_vatican.30.desc.caelestius: "Se acabó.\n\nPuede que no haya obtenido la bendición que esperaba, pero, sin embargo, este viaje resultó ser una gran prueba de fe. Y salí victorioso. Ninguno de los $POD_splat_hunter_plural$ pudo derrotarme." #NT!
- POD_provoke_vatican.30.desc.coterie: "\n\nSin embargo, mientras me despido del resto de $POD_player_coterie$ y seguimos caminos separados, la tensión no abandona mi cuerpo." #NT!
- POD_provoke_vatican.30.desc.nocoterie: "\n\nY aún así... la tensión no abandona mi cuerpo." #NT!
- POD_provoke_vatican.30.desc.end: "Gané, ¿no? Entonces, ¿por qué no puedo deshacerme de esta sensación de miedo? Mi aprensión no disminuye cuando me acerco a las puertas de mi refugio y veo que están abiertas de par en par. Alguien ha estado aquí. Y, desde luego, no he invitado a nadie." #NT!
- POD_provoke_vatican.30.option.a: "Saco mi arma y me preparo para lo peor..." #NT!
+ POD_provoke_vatican.20.t: "[adversary.GetFirstNameNicknamedNoTooltip]"
+ POD_provoke_vatican.20.desc.coterie: "Mientras comenzamos a salir de la ciudad, un [GetTrait('supehunter').GetName(adversary)] se cruza en nuestro camino. ¡Por fin! Qué emocionante.\n\nNuestra emoción se convierte en horror cuando [adversary.GetSheHe] recita un verso. [GetPlayer.Custom('PODPsalm23')]\n\nUna repentina sensación de fragilidad me invade. A los otros miembros de $POD_player_coterie$ no les va mucho mejor. Claramente, este es un enemigo con el que no se puede jugar."
+ POD_provoke_vatican.20.desc.nocoterie: "Mientras empiezo a salir de la ciudad, un [GetTrait('supehunter').GetName(adversary)] se cruza en mi camino. ¡Por fin! Qué emocionante.\n\nMi emoción se convierte en horror cuando [adversary.GetSheHe] recita un verso. [GetPlayer.Custom('PODPsalm23')]\n\nUna repentina sensación de fragilidad me invade. Claramente, no se trata de un enemigo con el que se pueda jugar."
+ POD_provoke_vatican.20.desc.coterie.bishop: "Con sentimientos encontrados, caminamos por las calles de [GetTitleByKey('c_roma').GetNameNoTier], pensando cuál debería ser nuestro siguiente paso. De repente, un caballero sagrado se cruza en nuestro camino. ¡Qué emocionante! ¿Quizás [adversary.GetSheHe] pueda llevarnos hasta el Papa?\n\nNuestra emoción se convierte en horror cuando [adversary.GetSheHe] recita un verso. [GetPlayer.Custom('PODPsalm23')]\n\nUna repentina sensación de fragilidad me invade. A los otros miembros de $POD_player_coterie$ no les está yendo mucho mejor. Entonces, el caballero roba [adversary.GetHerHis] [adversary.Custom('signature_weapon')]. Esto no está yendo como esperaba..."
+ POD_provoke_vatican.20.desc.nocoterie.bishop: "Con sentimientos encontrados, camino por las calles de [GetTitleByKey('c_roma').GetNameNoTier], pensando cuál debería ser mi próximo paso. De repente, un caballero sagrado se cruza en mi camino. ¡Qué emocionante! ¿Quizás [adversary.GetSheHe] pueda llevarme hasta el Papa?\n\nMi emoción se convierte en horror cuando [adversary.GetSheHe] recita un verso. [GetPlayer.Custom('PODPsalm23')]\n\nUna repentina sensación de fragilidad me invade. Entonces, el caballero saca [adversary.GetHerHis] [adversary.Custom('signature_weapon')]. Esto no va como esperaba..."
+ POD_provoke_vatican.20.desc.coterie.pope: "Cuando empezamos a salir de la ciudad, un [GetTrait('supehunter').GetName(adversary)] se cruza en nuestro camino. La noticia de nuestro encuentro con el Papa debe haber viajado rápido.\n\nPara empeorar las cosas, [adversary.GetSheHe] comienza a recitar un verso. [GetPlayer.Custom('PODPsalm23')]\n\nUna repentina sensación de fragilidad me invade. A los otros miembros de $POD_player_coterie$ no les está yendo mucho mejor. Claramente, este es un enemigo con el que no se puede jugar."
+ POD_provoke_vatican.20.desc.nocoterie.pope: "Mientras empiezo a salir de la ciudad, un [GetTrait('supehunter').GetName(adversary)] se cruza en mi camino. La noticia de mi encuentro con el Papa debe haber corrido rápido.\n\nPara empeorar las cosas, [adversary.GetSheHe] comienza a recitar un verso. [GetPlayer.Custom('PODPsalm23')]\n\nUna repentina sensación de fragilidad me invade. Claramente, este es un enemigo con el que no se puede jugar."
+ POD_provoke_vatican.20.desc.hunter2.coterie: "Nos apresuramos por las calles secundarias y los callejones, haciendo todo lo posible por mantenernos alejados de todas las patrullas [GetTrait('supehunter').GetName(adversary)]. Y casi lo logramos, hasta que nos topamos con un operador lobo solitario.\n\n[adversary.GetSheHe|U] blande la lanza [adversary.GetHerHis] hacia nosotros y proclama: [GetPlayer.Custom('PODPsalm94')]\n\nLa fe de este es aún más fuerte. Esto está empezando a volverse molesto..."
+ POD_provoke_vatican.20.desc.hunter2.nocoterie: "Me apresuro por las calles y callejones, haciendo todo lo posible por mantenerme alejado de todas las patrullas [GetTrait('supehunter').GetName(adversary)]. Y casi lo logro, hasta que me topo con un operador lobo solitario.\n\n[adversary.GetSheHe|U] blande la lanza [adversary.GetHerHis] hacia mí y proclama: [GetPlayer.Custom('PODPsalm94')]\n\nLa fe de este es aún más fuerte. Esto está empezando a volverse molesto..."
+ POD_provoke_vatican.20.desc.hunter3.coterie: "Ya casi hemos salido de la ciudad. La libertad está tan cerca que prácticamente puedo saborearla. Tampoco parece haber patrullas [GetTrait('supehunter').GetName(adversary)] tan lejos.\n\nEntonces, un verdadero gigante [adversary.Custom('WomanManGirlBoy')] sale de una puerta.\n\n[adversary.GetSheHe|U] levanta el hacha [adversary.GetHerHis] en alto y grita: [GetPlayer.Custom('PODLordsPrayer')]\n\nCon la fe [adversary.GetHerHis] amenazando con aplastarnos, nos preparamos para una confrontación final."
+ POD_provoke_vatican.20.desc.hunter3.nocoterie: "Ya casi he logrado salir de la ciudad. La libertad está tan cerca que prácticamente puedo saborearla. Tampoco parece haber patrullas de [GetTrait('supehunter').GetName(adversary)] tan lejos.\n\nEntonces, un verdadero gigante de [adversary.Custom('WomanManGirlBoy')] sale de una puerta.\n\n[adversary.GetSheHe|U] levanta el hacha de [adversary.GetHerHis] en alto y grita: [GetPlayer.Custom('PODLordsPrayer')]\n\nCon la fe de [adversary.GetHerHis] amenazando con aplastarme, me preparo para una confrontación final."
+ POD_provoke_vatican.20.option.a: "Si quieres pelear conmigo entonces peleemos."
+ POD_provoke_vatican.20.option.a.tt: "Tú mismo te batirás en duelo con este siervo de Dios."
+ POD_provoke_vatican.20.option.b: "[prowess_duelist.GetFirstName], este es tu momento de brillar."
   
- POD_provoke_vatican.31.t: "#TOOLTIP:NICKNAME,nick_vatican_hunter4,[hunter4.GetID] #L El Cordero#!#!" #NT!
- POD_provoke_vatican.31.desc.coterie: "Los demás miembros de $POD_player_coterie$ yacen muertos en un montón. En medio de ellos se encuentra un [Select_CString(hunter4.IsFemale,'Inquisitrix','Inquisitor')], enmarcado por un halo de luz diurna insoportable, que se asemeja a una visión del apocalipsis." #NT!
- POD_provoke_vatican.31.desc.nocoterie: "El interior de mi refugio es una ruina humeante. En medio de ella se yergue un [Select_CString(hunter4.IsFemale,'Inquisitrix','Inquisitor')], enmarcado por un halo de luz diurna insoportable, que recuerda a una visión del apocalipsis." #NT!
- POD_provoke_vatican.31.desc.vampire: "[hunter4.GetSheHe|U] no reza.\n[hunter4.GetSheHe|U] no habla.\n[hunter4.GetSheHe|U] avanza y mi sangre aúlla en agonía.\n\nRevelaciones de culpa me invaden. El peso de todos los pecados de mis antepasados, que se remontan a [ROOT.Char.Custom('PODProgenitor')], me asaltan como fantasmas hambrientos, cortando mi mente como cuchillos.\n\nArde.\n\n" #NT!
- POD_provoke_vatican.31.desc.notvampire: "[hunter4.GetSheHe|U] no reza.\n[hunter4.GetSheHe|U] no habla.\n[hunter4.GetSheHe|U] avanza y la fe de [hunter4.GetHerHis] resuena como un trueno.\n\nRevelaciones de culpa me invaden. El peso de todos los pecados de mis antepasados, amenazando con aniquilarme, asaltándome como fantasmas hambrientos, cortando mi mente como cuchillos.\n\nArde.\n\n" #NT!
- POD_provoke_vatican.31.desc.end: "Quiero gritar, pero ningún sonido escapa de mis labios." #NT!
- POD_provoke_vatican.31.option.a: "¿Me quieres? Entonces ven a buscarme." #NT!
- POD_provoke_vatican.31.option.a.tt: "Una sensación de finalidad te invade mientras preparas tu espada una última vez..." #NT!
+ POD_provoke_vatican.21.t: "Superando la adversidad"
+ POD_provoke_vatican.21.desc: "[adversary.GetFirstNameNicknamed] ha sido completamente derrotado. [adversary.GetHerHis|U] la fe está rota, [adversary.GetHerHis] los salmos están silenciados.\n\n¿Debería terminar [adversary.GetHerHim] ahora, o es mejor seguir adelante rápidamente?"
+ POD_provoke_vatican.21.desc.drain: "\n\nPor supuesto, podría reponer mi vitae y ocuparme de este problema, todo de una vez..."
+ POD_provoke_vatican.21.desc.sanguine: "\n\nLa sangre de este [GetTrait('supehunter').GetName(adversary)] está completamente impregnada de fe. Beberla sería una muy mala idea."
+ POD_provoke_vatican.21.option.b: "Drenaré toda tu sangre."
   
- POD_provoke_vatican.32.t: "Cenizas a las cenizas" #NT!
- POD_provoke_vatican.32.desc: "Cuando mi arma golpea el corazón de [GetTrait('supehunter').GetName(hunter4)], las visiones apocalípticas se desvanecen. La luz del día también se aleja. ¿Eso también fue solo una alucinación?\n\nMe siento entre los escombros de lo que solía ser mi refugio y reflexiono sobre los eventos de este viaje.\n\n" #NT!
- POD_provoke_vatican.32.desc.coterie: "Salí de allí sano y salvo. No se puede decir lo mismo de los demás miembros de $POD_player_coterie$. ¿Fueron mis decisiones las que los condenaron? ¿O la Inquisición habría venido a buscarlos de todos modos?" #NT!
- POD_provoke_vatican.32.desc.nocoterie: "Salí de allí en una sola pieza. Eso es lo que cuenta, ¿no?" #NT!
- POD_provoke_vatican.32.desc.caelestius.nopope: "Salí de allí sano y salvo. Eso es lo que cuenta, ¿no? Es una pena que nunca haya podido conocer al Papa. Me pregunto si me habría bendecido." #NT!
- POD_provoke_vatican.32.desc.caelestius.pope: "Lo logré de una sola pieza. Eso es lo que cuenta, ¿verdad? Es una pena que la reunión con el Papa haya ido como salió. ¿Nunca hubo una posibilidad de que pudiera haberme bendecido?\n\n" #NT!
- POD_provoke_vatican.32.desc.end: "Sea como sea... tengo la sensación de que las dificultades apenas han comenzado." #NT!
- POD_provoke_vatican.32.option.a: ""Que vivas tiempos interesantes", como dicen." #NT!
- POD_provoke_vatican.32.option.a.tt: "Los $POD_splat_hunter_plural$ han dejado de perseguirte. Por ahora." #NT!
- POD_provoke_vatican.32.option.a.tt2: "Tus acciones han hecho que el resto de la gente te denoste. Haría falta un verdadero milagro para cambiar tu reputación..." #NT!
+ POD_provoke_vatican.22.t: "Fe inquebrantable"
+ POD_provoke_vatican.22.desc: "[adversary.GetFirstNameNicknamed] me desarma y, con la velocidad de un consumado profesional, se dispone a darme el golpe de gracia.\n\nEl tiempo parece ralentizarse mientras los acontecimientos de esta noche pasan ante mis ojos. ¿Se animarán otros $POD_splat_hunter_plural$ con mi muerte? ¿Se unirán ahora los mortales en torno a una causa común? ¿Ha sido todo este esfuerzo un gran error?\n\nMis cavilaciones se interrumpen cuando el [adversary.Custom('signature_weapon')] de [GetTrait('supehunter').GetName(adversary)] me golpea el cuello."
+ POD_provoke_vatican.22.option.a: "Me pregunto qué será de mis sucesores..."
   
- POD_provoke_vatican.33.t: "El cuarto sello" #NT!
+ POD_provoke_vatican.23.t: "A un gran costo"
+ POD_provoke_vatican.23.desc: "La fe de [adversary.GetFirstNameNicknamed] nos toma por sorpresa. [adversary.GetSheHe|U] blande el crucifijo de [adversary.GetHerHis] y santifica el suelo alrededor de [adversary.GetHerselfHimself], lo que termina dándole a [adversary.GetHerHim] una gran ventaja táctica.\n\nAhora estamos bloqueados, y [coterie_loser.GetFirstNameNicknamed] se está quemando donde está [coterie_loser.GetSheHe].\n\nSin embargo, nuestro miembro [ROOT.Char.Custom('PODCoterie')] no está dispuesto a irse sin luchar, e incluso cuando la piel de [coterie_loser.GetHerHis] se ennegrece y humea, [coterie_loser.GetSheHe] logra derribar a [adversary.GetSheHe|U]0 con [adversary.GetSheHe|U]1."
+  
+  
+ POD_provoke_vatican.30.t: "El fin...?"
+ POD_provoke_vatican.30.desc: "Ya está hecho. El Vaticano ha recibido una lección de respeto y yo he sobrevivido para contarlo. Las batallas fueron duras y salí victorioso. Ahora me toca a mí ser quien escriba la historia."
+ POD_provoke_vatican.30.desc.caelestius: "Se acabó.\n\nPuede que no haya obtenido la bendición que esperaba, pero, sin embargo, este viaje resultó ser una gran prueba de fe. Y salí victorioso. Ninguno de los $POD_splat_hunter_plural$ pudo derrotarme."
+ POD_provoke_vatican.30.desc.coterie: "\n\nSin embargo, mientras me despido del resto de $POD_player_coterie$ y seguimos caminos separados, la tensión no abandona mi cuerpo."
+ POD_provoke_vatican.30.desc.nocoterie: "\n\nY aún así... la tensión no abandona mi cuerpo."
+ POD_provoke_vatican.30.desc.end: "Gané, ¿no? Entonces, ¿por qué no puedo deshacerme de esta sensación de miedo? Mi aprensión no disminuye cuando me acerco a las puertas de mi refugio y veo que están abiertas de par en par. Alguien ha estado aquí. Y, desde luego, no he invitado a nadie."
+ POD_provoke_vatican.30.option.a: "Saco mi arma y me preparo para lo peor..."
+  
+ POD_provoke_vatican.31.t: "#TOOLTIP:NICKNAME,nick_vatican_hunter4,[hunter4.GetID] #L El Cordero#!#!"
+ POD_provoke_vatican.31.desc.coterie: "Los demás miembros de $POD_player_coterie$ yacen muertos en un montón. En medio de ellos se encuentra un [Select_CString(hunter4.IsFemale,'Inquisitrix','Inquisitor')], enmarcado por un halo de luz diurna insoportable, que se asemeja a una visión del apocalipsis."
+ POD_provoke_vatican.31.desc.nocoterie: "El interior de mi refugio es una ruina humeante. En medio de ella se yergue un [Select_CString(hunter4.IsFemale,'Inquisitrix','Inquisitor')], enmarcado por un halo de luz diurna insoportable, que recuerda a una visión del apocalipsis."
+ POD_provoke_vatican.31.desc.vampire: "[hunter4.GetSheHe|U] no reza.\n[hunter4.GetSheHe|U] no habla.\n[hunter4.GetSheHe|U] avanza y mi sangre aúlla en agonía.\n\nRevelaciones de culpa me invaden. El peso de todos los pecados de mis antepasados, que se remontan a [ROOT.Char.Custom('PODProgenitor')], me asaltan como fantasmas hambrientos, cortando mi mente como cuchillos.\n\nArde.\n\n"
+ POD_provoke_vatican.31.desc.notvampire: "[hunter4.GetSheHe|U] no reza.\n[hunter4.GetSheHe|U] no habla.\n[hunter4.GetSheHe|U] avanza y la fe de [hunter4.GetHerHis] resuena como un trueno.\n\nRevelaciones de culpa me invaden. El peso de todos los pecados de mis antepasados, amenazando con aniquilarme, asaltándome como fantasmas hambrientos, cortando mi mente como cuchillos.\n\nArde.\n\n"
+ POD_provoke_vatican.31.desc.end: "Quiero gritar, pero ningún sonido escapa de mis labios."
+ POD_provoke_vatican.31.option.a: "¿Me quieres? Entonces ven a buscarme."
+ POD_provoke_vatican.31.option.a.tt: "Una sensación de finalidad te invade mientras preparas tu espada una última vez..."
+  
+ POD_provoke_vatican.32.t: "Cenizas a las cenizas"
+ POD_provoke_vatican.32.desc: "Cuando mi arma golpea el corazón de [GetTrait('supehunter').GetName(hunter4)], las visiones apocalípticas se desvanecen. La luz del día también se aleja. ¿Eso también fue solo una alucinación?\n\nMe siento entre los escombros de lo que solía ser mi refugio y reflexiono sobre los eventos de este viaje.\n\n"
+ POD_provoke_vatican.32.desc.coterie: "Salí de allí sano y salvo. No se puede decir lo mismo de los demás miembros de $POD_player_coterie$. ¿Fueron mis decisiones las que los condenaron? ¿O la Inquisición habría venido a buscarlos de todos modos?"
+ POD_provoke_vatican.32.desc.nocoterie: "Salí de allí en una sola pieza. Eso es lo que cuenta, ¿no?"
+ POD_provoke_vatican.32.desc.caelestius.nopope: "Salí de allí sano y salvo. Eso es lo que cuenta, ¿no? Es una pena que nunca haya podido conocer al Papa. Me pregunto si me habría bendecido."
+ POD_provoke_vatican.32.desc.caelestius.pope: "Lo logré de una sola pieza. Eso es lo que cuenta, ¿verdad? Es una pena que la reunión con el Papa haya ido como salió. ¿Nunca hubo una posibilidad de que pudiera haberme bendecido?\n\n"
+ POD_provoke_vatican.32.desc.end: "Sea como sea... tengo la sensación de que las dificultades apenas han comenzado."
+ POD_provoke_vatican.32.option.a: ""Que vivas tiempos interesantes", como dicen."
+ POD_provoke_vatican.32.option.a.tt: "Los $POD_splat_hunter_plural$ han dejado de perseguirte. Por ahora."
+ POD_provoke_vatican.32.option.a.tt2: "Tus acciones han hecho que el resto de la gente te denoste. Haría falta un verdadero milagro para cambiar tu reputación..."
+  
+ POD_provoke_vatican.33.t: "El cuarto sello"
   # Revelation 5:11-12 KJV 
- POD_provoke_vatican.33.desc: "Me siento tan lento en esta lucha. Como si me estuviera moviendo a través de una espesa miel. ¿Cuánto de esto es real? Ya no lo puedo decir...\n\n\nY miré, y oí la voz de muchos ángeles alrededor del trono y de los seres vivientes y de los ancianos; y su número era millones de millones, y millares de millares;\n\nQue decían a gran voz: El Cordero que fue inmolado es digno de tomar el poder, las riquezas, la sabiduría, la fortaleza, la honra, la gloria y la alabanza." #NT!
- POD_provoke_vatican.33.option.a: "None" #NT!
+ POD_provoke_vatican.33.desc: "Me siento tan lento en esta lucha. Como si me estuviera moviendo a través de una espesa miel. ¿Cuánto de esto es real? Ya no lo puedo decir...\n\n\nY miré, y oí la voz de muchos ángeles alrededor del trono y de los seres vivientes y de los ancianos; y su número era millones de millones, y millares de millares;\n\nQue decían a gran voz: El Cordero que fue inmolado es digno de tomar el poder, las riquezas, la sabiduría, la fortaleza, la honra, la gloria y la alabanza."
+ POD_provoke_vatican.33.option.a: "None"
   
   
- POD_provoke_vatican.200.t: "Por siempre indomable" #NT!
- POD_provoke_vatican.200.desc: "Tenía razón desde el principio.\n\n¿Necesito decir algo más?\n\nNo, no necesito decir nada más." #NT!
- POD_provoke_vatican.200.option.a: "Ahora puedo decir "te lo dije"." #NT!
+ POD_provoke_vatican.200.t: "Por siempre indomable"
+ POD_provoke_vatican.200.desc: "Tenía razón desde el principio.\n\n¿Necesito decir algo más?\n\nNo, no necesito decir nada más."
+ POD_provoke_vatican.200.option.a: "Ahora puedo decir "te lo dije"."

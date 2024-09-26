@@ -1,204 +1,204 @@
 ﻿l_spanish:
- POD_hint_hunger: "\n\n#I Haz clic en esta barra para ver las distintas formas en las que puedes saciar tu [hunger_with_icon|E].#!" #NT!
- POD_hint_bloodpotency: "\n\nTu [blood_potency|E] es [GetPlayer.Custom('PODBloodPotency')]." #NT!
+ POD_hint_hunger: "\n\n#I Haz clic en esta barra para ver las distintas formas en las que puedes saciar tu [hunger_with_icon|E].#!"
+ POD_hint_bloodpotency: "\n\nTu [blood_potency|E] es [GetPlayer.Custom('PODBloodPotency')]."
   
- POD_hint_masquerade_maximum: "#I Una vez que tu [masquerade_exposure_with_icon|E] aumente, puedes hacer clic en esta barra para reducirlo.#!" #NT!
- POD_hint_masquerade_valid: "#I Haz clic en esta barra para reducir tu [masquerade_exposure_with_icon|E].#!" #NT!
- POD_hint_masquerade_invalid_no_masquerade: "#X $no_masquerade$#!" #NT!
- POD_hint_masquerade_invalid_cap: "#X $POD_cover_masquerade_interaction_cap$.#!" #NT!
- POD_hint_masquerade_invalid_cooldown: "#X La interacción para cubrir [masquerade|E] está actualmente en espera.#!" #NT!
+ POD_hint_masquerade_maximum: "#I Una vez que tu [masquerade_exposure_with_icon|E] aumente, puedes hacer clic en esta barra para reducirlo.#!"
+ POD_hint_masquerade_valid: "#I Haz clic en esta barra para reducir tu [masquerade_exposure_with_icon|E].#!"
+ POD_hint_masquerade_invalid_no_masquerade: "#X $no_masquerade$#!"
+ POD_hint_masquerade_invalid_cap: "#X $POD_cover_masquerade_interaction_cap$.#!"
+ POD_hint_masquerade_invalid_cooldown: "#X La interacción para cubrir [masquerade|E] está actualmente en espera.#!"
   
- POD_hint_chi: "\n\n#I Haz clic en esta barra para mostrar las distintas formas en que puedes regenerar Chi.#!" #NT!
- POD_hint_yangvirtue: "\n\nComo tienes [GetPlayer.Custom('PODYangVirtue')], tu Yang Chi no puede superar [GetPlayer.MakeScope.ScriptValue('yang_cap')|V0]." #NT!
- POD_hint_yinvirtue: "\n\nComo tienes [GetPlayer.Custom('PODYinVirtue')], tu Yin Chi no puede superar [GetPlayer.MakeScope.ScriptValue('yin_cap')|V0]." #NT!
+ POD_hint_chi: "\n\n#I Haz clic en esta barra para mostrar las distintas formas en que puedes regenerar Chi.#!"
+ POD_hint_yangvirtue: "\n\nComo tienes [GetPlayer.Custom('PODYangVirtue')], tu Yang Chi no puede superar [GetPlayer.MakeScope.ScriptValue('yang_cap')|V0]."
+ POD_hint_yinvirtue: "\n\nComo tienes [GetPlayer.Custom('PODYinVirtue')], tu Yin Chi no puede superar [GetPlayer.MakeScope.ScriptValue('yin_cap')|V0]."
   
- POD_hint_rage: "\n\nTienes una probabilidad de $POD_player_rage_growth_chance$ de ganar Furia cada mes." #NT!
- POD_hint_gnosis: "\n\nTienes una probabilidad de $POD_player_gnosis_regen_chance$ de regenerar Gnosis cada mes." #NT!
+ POD_hint_rage: "\n\nTienes una probabilidad de $POD_player_rage_growth_chance$ de ganar Furia cada mes."
+ POD_hint_gnosis: "\n\nTienes una probabilidad de $POD_player_gnosis_regen_chance$ de regenerar Gnosis cada mes."
   
- POD_hint_glamour: "\n\n#I Haz clic en esta barra para mostrar las distintas formas en que puedes regenerar Glamour.#!" #NT!
- POD_hint_sekhem: "\n\n#I Haz clic en esta barra para mostrar las distintas formas en que puedes regenerar Sekhem.#!" #NT!
- POD_hint_resolve: "\n\n#I Haz clic en esta barra para ver las distintas formas en las que puedes obtener Resolución.#!" #NT!
+ POD_hint_glamour: "\n\n#I Haz clic en esta barra para mostrar las distintas formas en que puedes regenerar Glamour.#!"
+ POD_hint_sekhem: "\n\n#I Haz clic en esta barra para mostrar las distintas formas en que puedes regenerar Sekhem.#!"
+ POD_hint_resolve: "\n\n#I Haz clic en esta barra para ver las distintas formas en las que puedes obtener Resolución.#!"
   
- POD_hint_window_hunger: "Hambre" #NT!
- POD_hint_window_fae: "[GetPlayer.Custom('PODFaeResource')]" #NT!
- POD_hint_window_glamour: "Glamour" #NT!
- POD_hint_window_chi: "Chi" #NT!
- POD_hint_window_sekhem: "Sejem" #NT!
- POD_hint_window_resolve: "Resolver" #NT!
- POD_hint_window_error: "ERROR DE RECURSOS" #NT!
+ POD_hint_window_hunger: "Hambre"
+ POD_hint_window_fae: "[GetPlayer.Custom('PODFaeResource')]"
+ POD_hint_window_glamour: "Glamour"
+ POD_hint_window_chi: "Chi"
+ POD_hint_window_sekhem: "Sejem"
+ POD_hint_window_resolve: "Resolver"
+ POD_hint_window_error: "ERROR DE RECURSOS"
   
- POD_hint_window_prison: "Mostrar prisión" #NT!
+ POD_hint_window_prison: "Mostrar prisión"
   
- POD_hunger_window_hunt_in_capital: "Como $POD_splat_vampire$, puedes ir con un [journey|E] a cazar mortales en tu capital." #NT!
- POD_hunger_window_hunt_in_capital_inprogress: "#help Ya estás cazando mortales en tu capital.#!" #NT!
- POD_hunger_window_regen: "[GetPlayer.Custom('PODBloodRegenHint')]" #NT!
- POD_hunger_window_regen_revenant: "Como eres un [GetTrait('revenant').GetName(GetPlayer)], pierdes automáticamente #V 1#! [hunger_with_icon|E] por mes." #NT!
- POD_hunger_window_regen_dhampir: "Como eres un [GetTrait('dhampir').GetName(GetPlayer)], pierdes automáticamente #V 1#! [hunger_with_icon|E] por mes." #NT!
- POD_hunger_window_herd_drink: "Puedes beber de tu rebaño, [GetPlayer.MakeScope.Var('suggested_herdmember').Char.GetShortUINameNoTooltip]." #NT!
- POD_hunger_window_herd_drink_noblood: "#help Ninguno de los miembros de tu manada tiene sangre. Espera a que repongan un poco.#!" #NT!
- POD_hunger_window_herdify: "Puedes agregar uno de tus [courtiers|E] a tu manada." #NT!
- POD_hunger_window_herdify_invalid: "[GetPlayer.Custom('PODHerdifyHint')]" #NT!
+ POD_hunger_window_hunt_in_capital: "Como $POD_splat_vampire$, puedes ir con un [journey|E] a cazar mortales en tu capital."
+ POD_hunger_window_hunt_in_capital_inprogress: "#help Ya estás cazando mortales en tu capital.#!"
+ POD_hunger_window_regen: "[GetPlayer.Custom('PODBloodRegenHint')]"
+ POD_hunger_window_regen_revenant: "Como eres un [GetTrait('revenant').GetName(GetPlayer)], pierdes automáticamente #V 1#! [hunger_with_icon|E] por mes."
+ POD_hunger_window_regen_dhampir: "Como eres un [GetTrait('dhampir').GetName(GetPlayer)], pierdes automáticamente #V 1#! [hunger_with_icon|E] por mes."
+ POD_hunger_window_herd_drink: "Puedes beber de tu rebaño, [GetPlayer.MakeScope.Var('suggested_herdmember').Char.GetShortUINameNoTooltip]."
+ POD_hunger_window_herd_drink_noblood: "#help Ninguno de los miembros de tu manada tiene sangre. Espera a que repongan un poco.#!"
+ POD_hunger_window_herdify: "Puedes agregar uno de tus [courtiers|E] a tu manada."
+ POD_hunger_window_herdify_invalid: "[GetPlayer.Custom('PODHerdifyHint')]"
   
- POD_hunger_window_herdify_revenant: "#help Como $POD_splat_revenant$, puedes agregar $POD_splat_vampire_plural$ a tu manada.\n\n$POD_hunger_window_herdify_suffix$#!" #NT!
- POD_hunger_window_herdify_ghoul: "#help Como $POD_splat_ghoul$, puedes agregar $POD_splat_vampire_plural$ a tu manada.\n\n$POD_hunger_window_herdify_suffix$#!" #NT!
- POD_hunger_window_herdify_dhampir: "#help Como [GetTrait('dhampir').GetName(GetPlayer)], puedes agregar $POD_splat_vampire_plural$ a tu manada.\n\n$POD_hunger_window_herdify_suffix$#!" #NT!
- POD_hunger_window_herdify_suffix: "Selecciona cualquier $POD_splat_vampire$ no aterrizado e inicia Añadir al Ganado [scheme|E] a través de [character_interaction|E]." #NT!
- POD_hunger_window_herdify_vampire: "#help No hay miembros potenciales de la manada en tu corte. Intenta cazar mortales en tu capital.#!" #NT!
+ POD_hunger_window_herdify_revenant: "#help Como $POD_splat_revenant$, puedes agregar $POD_splat_vampire_plural$ a tu manada.\n\n$POD_hunger_window_herdify_suffix$#!"
+ POD_hunger_window_herdify_ghoul: "#help Como $POD_splat_ghoul$, puedes agregar $POD_splat_vampire_plural$ a tu manada.\n\n$POD_hunger_window_herdify_suffix$#!"
+ POD_hunger_window_herdify_dhampir: "#help Como [GetTrait('dhampir').GetName(GetPlayer)], puedes agregar $POD_splat_vampire_plural$ a tu manada.\n\n$POD_hunger_window_herdify_suffix$#!"
+ POD_hunger_window_herdify_suffix: "Selecciona cualquier $POD_splat_vampire$ no aterrizado e inicia Añadir al Ganado [scheme|E] a través de [character_interaction|E]."
+ POD_hunger_window_herdify_vampire: "#help No hay miembros potenciales de la manada en tu corte. Intenta cazar mortales en tu capital.#!"
   
- POD_hunger_window_prisoners_invalid: "#help Actualmente no tienes prisioneros que puedas desangrar o convertir en manada.#!" #NT!
- POD_hunger_window_prisoners: "Tienes prisioneros.\n#help Es posible que puedas drenar su sangre o agregarlos a tu manada.#!" #NT!
+ POD_hunger_window_prisoners_invalid: "#help Actualmente no tienes prisioneros que puedas desangrar o convertir en manada.#!"
+ POD_hunger_window_prisoners: "Tienes prisioneros.\n#help Es posible que puedas drenar su sangre o agregarlos a tu manada.#!"
   
- POD_hunger_window_artifacts: "Tienes [artifacts|E] que puede almacenar sangre." #NT!
+ POD_hunger_window_artifacts: "Tienes [artifacts|E] que puede almacenar sangre."
   
- POD_glamour_window_regen: "[GetPlayer.Custom('PODGlamourRegenHint')]" #NT!
- POD_glamour_window_regen_fae: "Como eres un [GetTrait('fae').GetName(GetPlayer)], regeneras #V 1#! [GetPlayer.Custom('PODFaeResource')] por mes." #NT!
- POD_glamour_window_regen_changeling: "Como eres un [GetTrait('changeling').GetName(GetPlayer)], regeneras #V 1#! [GetPlayer.Custom('PODFaeResource')] por mes." #NT!
- POD_glamour_window_regen_building: "#help Tienes una probabilidad del #V [GetPlayer.MakeScope.ScriptValue('chance_for_extra_glamour_regen')]%#! de regenerar [GetPlayer.Custom('PODFaeResource')] adicionales de #TOOLTIP:BUILDING,glade_freehold_01 #L edificios de Claro#!#! en tu capital.#!" #NT!
- POD_glamour_window_dreamer: "Puedes agregar uno de tus [courtiers|E] como Dreamer." #NT!
- POD_glamour_window_dreamer_help: "#help Los soñadores te otorgarán [lifestyle_experience|E] y tendrán una pequeña posibilidad de regenerar tus [GetPlayer.Custom('PODFaeResource')].#!" #NT!
- POD_glamour_window_reverie: "Obtienes #V 2#! [GetPlayer.Custom('PODFaeResource')] a través de Ensoñación cada vez que completas un [GetScheme('sway').GetTypeName()], [GetScheme('befriend').GetTypeName()] o [GetScheme('courting').GetTypeName()] [scheme|E]." #NT!
- POD_glamour_window_artifacts: "Tienes [artifacts|E] que pueden almacenar Glamour." #NT!
+ POD_glamour_window_regen: "[GetPlayer.Custom('PODGlamourRegenHint')]"
+ POD_glamour_window_regen_fae: "Como eres un [GetTrait('fae').GetName(GetPlayer)], regeneras #V 1#! [GetPlayer.Custom('PODFaeResource')] por mes."
+ POD_glamour_window_regen_changeling: "Como eres un [GetTrait('changeling').GetName(GetPlayer)], regeneras #V 1#! [GetPlayer.Custom('PODFaeResource')] por mes."
+ POD_glamour_window_regen_building: "#help Tienes una probabilidad del #V [GetPlayer.MakeScope.ScriptValue('chance_for_extra_glamour_regen')]%#! de regenerar [GetPlayer.Custom('PODFaeResource')] adicionales de #TOOLTIP:BUILDING,glade_freehold_01 #L edificios de Claro#!#! en tu capital.#!"
+ POD_glamour_window_dreamer: "Puedes agregar uno de tus [courtiers|E] como Dreamer."
+ POD_glamour_window_dreamer_help: "#help Los soñadores te otorgarán [lifestyle_experience|E] y tendrán una pequeña posibilidad de regenerar tus [GetPlayer.Custom('PODFaeResource')].#!"
+ POD_glamour_window_reverie: "Obtienes #V 2#! [GetPlayer.Custom('PODFaeResource')] a través de Ensoñación cada vez que completas un [GetScheme('sway').GetTypeName()], [GetScheme('befriend').GetTypeName()] o [GetScheme('courting').GetTypeName()] [scheme|E]."
+ POD_glamour_window_artifacts: "Tienes [artifacts|E] que pueden almacenar Glamour."
   
- POD_chi_window_hunt: "Como [GetTrait('kueijin').GetName(GetPlayer)], puedes reponer Chi bebiendo sangre.\n#help Haz clic derecho en un personaje que no haya aterrizado para comenzar la Cacería [journey|E].#!" #NT!
- POD_chi_window_prisoners_invalid: "#help Actualmente no tienes prisioneros cuyo Chi puedas devorar.#!" #NT!
- POD_chi_window_prisoners: "Tienes prisioneros.\n#help Podrías devorar su Chi.#!" #NT!
- POD_chi_window_regen: "[GetPlayer.Custom('PODChiRegenHint')]" #NT!
- POD_chi_window_regen_augment: "Regeneras #V 1#! Chi por mes porque tienes [GetPerk('augment_perk').GetName(GetPlayer)] [perk|E]." #NT!
- POD_chi_window_regen_kueijin: "#help Como [GetTrait('kueijin').GetName(GetPlayer)], no repones Chi automáticamente a menos que tengas [GetPerk('augment_perk').GetName(GetPlayer)] [perk|E].#!" #NT!
- POD_chi_window_regen_hunandpo: "#help Con tu [GetTrait('hun_and_po').GetName(GetPlayer)] despertado, no repones Chi automáticamente a menos que tengas el [GetPerk('augment_perk').GetName(GetPlayer)] [perk|E].#!" #NT!
- POD_chi_window_regen_shih: "Como eres un [GetTrait('shih').GetName(GetPlayer)], regeneras #V 1#! Chi por mes." #NT!
- POD_chi_window_regen_dhampyr: "Como eres un [GetTrait('dhampyr').GetName(GetPlayer)], regeneras #V 1#! Chi por mes." #NT!
- POD_chi_window_regen_wutian: "Como eres un [GetTrait('wutian').GetName(GetPlayer)], regeneras #V 1#! Chi por mes.\nPuedes regenerar #V 1#! Chi adicionales por mes con [GetDynastyPerk('wutian_mummy_legacy_5').GetName]." #NT!
- POD_chi_window_regen_wukuei: "Como eres un [GetTrait('wukuei').GetName(GetPlayer)], regeneras #V 1#! Chi por mes." #NT!
- POD_chi_window_artifacts: "Tienes [artifacts|E] que puede almacenar Chi." #NT!
+ POD_chi_window_hunt: "Como [GetTrait('kueijin').GetName(GetPlayer)], puedes reponer Chi bebiendo sangre.\n#help Haz clic derecho en un personaje que no haya aterrizado para comenzar la Cacería [journey|E].#!"
+ POD_chi_window_prisoners_invalid: "#help Actualmente no tienes prisioneros cuyo Chi puedas devorar.#!"
+ POD_chi_window_prisoners: "Tienes prisioneros.\n#help Podrías devorar su Chi.#!"
+ POD_chi_window_regen: "[GetPlayer.Custom('PODChiRegenHint')]"
+ POD_chi_window_regen_augment: "Regeneras #V 1#! Chi por mes porque tienes [GetPerk('augment_perk').GetName(GetPlayer)] [perk|E]."
+ POD_chi_window_regen_kueijin: "#help Como [GetTrait('kueijin').GetName(GetPlayer)], no repones Chi automáticamente a menos que tengas [GetPerk('augment_perk').GetName(GetPlayer)] [perk|E].#!"
+ POD_chi_window_regen_hunandpo: "#help Con tu [GetTrait('hun_and_po').GetName(GetPlayer)] despertado, no repones Chi automáticamente a menos que tengas el [GetPerk('augment_perk').GetName(GetPlayer)] [perk|E].#!"
+ POD_chi_window_regen_shih: "Como eres un [GetTrait('shih').GetName(GetPlayer)], regeneras #V 1#! Chi por mes."
+ POD_chi_window_regen_dhampyr: "Como eres un [GetTrait('dhampyr').GetName(GetPlayer)], regeneras #V 1#! Chi por mes."
+ POD_chi_window_regen_wutian: "Como eres un [GetTrait('wutian').GetName(GetPlayer)], regeneras #V 1#! Chi por mes.\nPuedes regenerar #V 1#! Chi adicionales por mes con [GetDynastyPerk('wutian_mummy_legacy_5').GetName]."
+ POD_chi_window_regen_wukuei: "Como eres un [GetTrait('wukuei').GetName(GetPlayer)], regeneras #V 1#! Chi por mes."
+ POD_chi_window_artifacts: "Tienes [artifacts|E] que puede almacenar Chi."
   
- POD_sekhem_window_regen: "[GetPlayer.Custom('PODSekhemRegenHint')]" #NT!
- POD_sekhem_window_regen_shemsuheru: "Regeneras #V 1#! Sekhem por mes porque eres un [GetTrait('shemsuheru').GetName(GetPlayer)] en el [GetGeographicalRegion('pod_lands_of_faith').GetName]." #NT!
- POD_sekhem_window_regen_shemsuheru_buildings: "Eres un [GetTrait('shemsuheru').GetName(GetPlayer)] fuera del [GetGeographicalRegion('pod_lands_of_faith').GetName].\n#help Según el edificio del ducado en tu capital, tienes una probabilidad #V [GetPlayer.MakeScope.ScriptValue('shemsuheru_sekhem_regen_chance')]%#! de regenerar Sekhem cada mes.#!" #NT!
- POD_sekhem_window_regen_cabiri_disabled: "Como [GetTrait('cabiri').GetName(GetPlayer)], puedes gastar [gold_i|E][GetPlayer.MakeScope.ScriptValue('pneuma_restoration_monthly_cost')|V0] para regenerar #V 1#! Sekhem por mes." #NT!
- POD_sekhem_window_regen_cabiri_enabled: "Actualmente estás gastando [gold_i|E][GetPlayer.MakeScope.ScriptValue('pneuma_restoration_monthly_cost')|V0] para regenerar #V 1#! Sekhem por mes." #NT!
- POD_sekhem_window_regen_cabiri_hint: "#help #TOOLTIP:BUILDING,occult_affiliation_01 #L Afiliación oculta#!#! Los edificios del ducado en tu capital reducirán el costo.#!" #NT!
- POD_sekhem_window_regen_banemummy: "Como [GetTrait('banemummy').GetName(GetPlayer)], regeneras a Sekhem comiendo carne.\n#help Haz clic derecho en un personaje que no haya aterrizado para comenzar la caza [journey|E].#!" #NT!
- POD_sekhem_window_prisoners_invalid: "#help Actualmente no tienes prisioneros que puedas devorar.#!" #NT!
- POD_sekhem_window_prisoners: "Tienes prisioneros.\n#help Quizás puedas devorarlos para recuperar Sekhem.#!" #NT!
- POD_sekhem_window_umbra: "[GetPlayer.Custom('PODSekhemHintUmbra')]" #NT!
- POD_sekhem_window_umbra_needperk: "Necesitas [underworld_access|E] para llegar al [dark_kingdom_of_sand|E]." #NT!
- POD_sekhem_window_umbra_hint: "Puedes regenerar más Sekhem si exploras el [dark_kingdom_of_sand|E] en el [shadowlands|E]." #NT!
- POD_sekhem_window_umbra_regen: "Estás regenerando [GetPlayer.MakeScope.ScriptValue('dark_kingdom_of_sand_sekhem_regen')|V0] Sekhem cada 3 meses mientras estés destinado en [dark_kingdom_of_sand|E]." #NT!
- POD_sekhem_window_artifacts: "Tienes [artifacts|E] que puede almacenar Sekhem." #NT!
+ POD_sekhem_window_regen: "[GetPlayer.Custom('PODSekhemRegenHint')]"
+ POD_sekhem_window_regen_shemsuheru: "Regeneras #V 1#! Sekhem por mes porque eres un [GetTrait('shemsuheru').GetName(GetPlayer)] en el [GetGeographicalRegion('pod_lands_of_faith').GetName]."
+ POD_sekhem_window_regen_shemsuheru_buildings: "Eres un [GetTrait('shemsuheru').GetName(GetPlayer)] fuera del [GetGeographicalRegion('pod_lands_of_faith').GetName].\n#help Según el edificio del ducado en tu capital, tienes una probabilidad #V [GetPlayer.MakeScope.ScriptValue('shemsuheru_sekhem_regen_chance')]%#! de regenerar Sekhem cada mes.#!"
+ POD_sekhem_window_regen_cabiri_disabled: "Como [GetTrait('cabiri').GetName(GetPlayer)], puedes gastar [gold_i|E][GetPlayer.MakeScope.ScriptValue('pneuma_restoration_monthly_cost')|V0] para regenerar #V 1#! Sekhem por mes."
+ POD_sekhem_window_regen_cabiri_enabled: "Actualmente estás gastando [gold_i|E][GetPlayer.MakeScope.ScriptValue('pneuma_restoration_monthly_cost')|V0] para regenerar #V 1#! Sekhem por mes."
+ POD_sekhem_window_regen_cabiri_hint: "#help #TOOLTIP:BUILDING,occult_affiliation_01 #L Afiliación oculta#!#! Los edificios del ducado en tu capital reducirán el costo.#!"
+ POD_sekhem_window_regen_banemummy: "Como [GetTrait('banemummy').GetName(GetPlayer)], regeneras a Sekhem comiendo carne.\n#help Haz clic derecho en un personaje que no haya aterrizado para comenzar la caza [journey|E].#!"
+ POD_sekhem_window_prisoners_invalid: "#help Actualmente no tienes prisioneros que puedas devorar.#!"
+ POD_sekhem_window_prisoners: "Tienes prisioneros.\n#help Quizás puedas devorarlos para recuperar Sekhem.#!"
+ POD_sekhem_window_umbra: "[GetPlayer.Custom('PODSekhemHintUmbra')]"
+ POD_sekhem_window_umbra_needperk: "Necesitas [underworld_access|E] para llegar al [dark_kingdom_of_sand|E]."
+ POD_sekhem_window_umbra_hint: "Puedes regenerar más Sekhem si exploras el [dark_kingdom_of_sand|E] en el [shadowlands|E]."
+ POD_sekhem_window_umbra_regen: "Estás regenerando [GetPlayer.MakeScope.ScriptValue('dark_kingdom_of_sand_sekhem_regen')|V0] Sekhem cada 3 meses mientras estés destinado en [dark_kingdom_of_sand|E]."
+ POD_sekhem_window_artifacts: "Tienes [artifacts|E] que puede almacenar Sekhem."
   
- POD_resolve_window: "[GetPlayer.Custom('PODResolveHint')]" #NT!
- POD_resolve_window_revelation: "Puedes revelarte a [GetPlayer.MakeScope.Var('suggested_revelation_target').Char.GetShortUINameNoTooltip]." #NT!
- POD_resolve_window_demon: "Como [GetTrait('demon').GetName(GetPlayer)], obtienes Resolución al revelarte a los mortales." #NT!
- POD_resolve_window_demon_invalid: "$POD_resolve_window_demon$\n\n#help Primero debes transformarte en [GetModifier('POD_shapeshift_form_apocalyptic_angelic_modifier').GetNameWithTooltip] o [GetModifier('POD_shapeshift_form_apocalyptic_damned_modifier').GetNameWithTooltip].#!" #NT!
- POD_resolve_window_demon_interaction: "$POD_resolve_window_demon$\n\n#help Actualmente no tienes objetivos válidos para $POD_revelation_interaction$ en tu [court|E].\n\nHaz clic derecho en un mortal y realiza $POD_revelation_interaction$ a través de [character_interaction|E].\nEsto es más efectivo en personalidades cobardes.#!" #NT!
- POD_resolve_window_laham: "Como [GetTrait('laham').GetName(GetPlayer)], obtienes #V 1#! de resolución por mes." #NT!
- POD_resolve_window_nephilim: "Como [GetTrait('nephilim').GetName(GetPlayer)], obtienes #V 1#! de resolución por mes." #NT!
- POD_resolve_window_thrall: "Como [thrall|E], obtienes #V 1#! de resolución por mes." #NT!
- POD_resolve_window_artifacts: "Tienes [artifacts|E] que puede almacenar Resolve." #NT!
+ POD_resolve_window: "[GetPlayer.Custom('PODResolveHint')]"
+ POD_resolve_window_revelation: "Puedes revelarte a [GetPlayer.MakeScope.Var('suggested_revelation_target').Char.GetShortUINameNoTooltip]."
+ POD_resolve_window_demon: "Como [GetTrait('demon').GetName(GetPlayer)], obtienes Resolución al revelarte a los mortales."
+ POD_resolve_window_demon_invalid: "$POD_resolve_window_demon$\n\n#help Primero debes transformarte en [GetModifier('POD_shapeshift_form_apocalyptic_angelic_modifier').GetNameWithTooltip] o [GetModifier('POD_shapeshift_form_apocalyptic_damned_modifier').GetNameWithTooltip].#!"
+ POD_resolve_window_demon_interaction: "$POD_resolve_window_demon$\n\n#help Actualmente no tienes objetivos válidos para $POD_revelation_interaction$ en tu [court|E].\n\nHaz clic derecho en un mortal y realiza $POD_revelation_interaction$ a través de [character_interaction|E].\nEsto es más efectivo en personalidades cobardes.#!"
+ POD_resolve_window_laham: "Como [GetTrait('laham').GetName(GetPlayer)], obtienes #V 1#! de resolución por mes."
+ POD_resolve_window_nephilim: "Como [GetTrait('nephilim').GetName(GetPlayer)], obtienes #V 1#! de resolución por mes."
+ POD_resolve_window_thrall: "Como [thrall|E], obtienes #V 1#! de resolución por mes."
+ POD_resolve_window_artifacts: "Tienes [artifacts|E] que puede almacenar Resolve."
   
- hunger0desc: "#T Hambre de sangre 0:#!\n[GetModifier('bloodhunger0_modifier').GetDescWithEffects][GetPlayer.Custom('PODBloodPotencyHint')]$POD_hint_hunger$" #NT!
- hunger1desc: "#T Hambre de sangre 1:#!\n[GetModifier('bloodhunger1_modifier').GetDescWithEffects][GetPlayer.Custom('PODBloodPotencyHint')]$POD_hint_hunger$" #NT!
- hunger2desc: "#T Hambre de sangre 2:#!\n[GetModifier('bloodhunger2_modifier').GetDescWithEffects][GetPlayer.Custom('PODBloodPotencyHint')]$POD_hint_hunger$" #NT!
- hunger3desc: "#T Hambre de sangre 3:#!\n[GetModifier('bloodhunger3_modifier').GetDescWithEffects][GetPlayer.Custom('PODBloodPotencyHint')]$POD_hint_hunger$" #NT!
- hunger4desc: "#T Hambre de sangre 4:#!\n[GetModifier('bloodhunger4_modifier').GetDescWithEffects][GetPlayer.Custom('PODBloodPotencyHint')]$POD_hint_hunger$" #NT!
- hunger5desc: "#T Hambre de sangre 5:#!\n[GetModifier('bloodhunger5_modifier').GetDescWithEffects][GetPlayer.Custom('PODBloodPotencyHint')]$POD_hint_hunger$" #NT!
- masq0desc: "#T Exposición de mascarada 0:#!\n[GetModifier('masquerade0_modifier').GetDescWithEffects]\n\n[GetPlayer.Custom('PODMasqueradeHint')]" #NT!
- masq1desc: "#T Exposición de mascaradas 1:#!\n[GetModifier('masquerade1_modifier').GetDescWithEffects]\n\n[GetPlayer.Custom('PODMasqueradeHint')]" #NT!
- masq2desc: "#T Exposición de mascarada 2:#!\n[GetModifier('masquerade2_modifier').GetDescWithEffects]\n\n[GetPlayer.Custom('PODMasqueradeHint')]" #NT!
- masq3desc: "#T Exposición de mascaradas 3:#!\n[GetModifier('masquerade3_modifier').GetDescWithEffects]\n\n[GetPlayer.Custom('PODMasqueradeHint')]" #NT!
- masq4desc: "#T Exposición de mascaradas 4:#!\n[GetModifier('masquerade4_modifier').GetDescWithEffects]\n\n[GetPlayer.Custom('PODMasqueradeHint')]" #NT!
- masq5desc: "#T Exposición de mascaradas 5:#!\n[GetModifier('masquerade5_modifier').GetDescWithEffects]\n\n[GetPlayer.Custom('PODMasqueradeHint')]" #NT!
- yinchidesc0: "#T [GetModifier('yinchi0_modifier').GetName]#!\n[GetModifier('yinchi0_modifier').GetDescWithEffects][GetPlayer.Custom('PODYinVirtueHint')]$POD_hint_chi$" #NT!
- yinchidesc1: "#T [GetModifier('yinchi1_modifier').GetName]#!\n[GetModifier('yinchi1_modifier').GetDescWithEffects][GetPlayer.Custom('PODYinVirtueHint')]$POD_hint_chi$" #NT!
- yinchidesc2: "#T [GetModifier('yinchi2_modifier').GetName]#!\n[GetModifier('yinchi2_modifier').GetDescWithEffects][GetPlayer.Custom('PODYinVirtueHint')]$POD_hint_chi$" #NT!
- yinchidesc3: "#T [GetModifier('yinchi3_modifier').GetName]#!\n[GetModifier('yinchi3_modifier').GetDescWithEffects][GetPlayer.Custom('PODYinVirtueHint')]$POD_hint_chi$" #NT!
- yinchidesc4: "#T [GetModifier('yinchi4_modifier').GetName]#!\n[GetModifier('yinchi4_modifier').GetDescWithEffects][GetPlayer.Custom('PODYinVirtueHint')]$POD_hint_chi$" #NT!
- yinchidesc5: "#T [GetModifier('yinchi5_modifier').GetName]#!\n[GetModifier('yinchi5_modifier').GetDescWithEffects][GetPlayer.Custom('PODYinVirtueHint')]$POD_hint_chi$" #NT!
- yinchidesc6: "#T [GetModifier('yinchi6_modifier').GetName]#!\n[GetModifier('yinchi6_modifier').GetDescWithEffects][GetPlayer.Custom('PODYinVirtueHint')]$POD_hint_chi$" #NT!
- yinchidesc7: "#T [GetModifier('yinchi7_modifier').GetName]#!\n[GetModifier('yinchi7_modifier').GetDescWithEffects][GetPlayer.Custom('PODYinVirtueHint')]$POD_hint_chi$" #NT!
- yinchidesc8: "#T [GetModifier('yinchi8_modifier').GetName]#!\n[GetModifier('yinchi8_modifier').GetDescWithEffects][GetPlayer.Custom('PODYinVirtueHint')]$POD_hint_chi$" #NT!
- yinchidesc9: "#T [GetModifier('yinchi9_modifier').GetName]#!\n[GetModifier('yinchi9_modifier').GetDescWithEffects][GetPlayer.Custom('PODYinVirtueHint')]$POD_hint_chi$" #NT!
- yinchidesc10: "#T [GetModifier('yinchi10_modifier').GetName]#!\n[GetModifier('yinchi10_modifier').GetDescWithEffects][GetPlayer.Custom('PODYinVirtueHint')]$POD_hint_chi$" #NT!
- yangchidesc0: "#T [GetModifier('yangchi0_modifier').GetName]#!\n[GetModifier('yangchi0_modifier').GetDescWithEffects][GetPlayer.Custom('PODYangVirtueHint')]$POD_hint_chi$" #NT!
- yangchidesc1: "#T [GetModifier('yangchi1_modifier').GetName]#!\n[GetModifier('yangchi1_modifier').GetDescWithEffects][GetPlayer.Custom('PODYangVirtueHint')]$POD_hint_chi$" #NT!
- yangchidesc2: "#T [GetModifier('yangchi2_modifier').GetName]#!\n[GetModifier('yangchi2_modifier').GetDescWithEffects][GetPlayer.Custom('PODYangVirtueHint')]$POD_hint_chi$" #NT!
- yangchidesc3: "#T [GetModifier('yangchi3_modifier').GetName]#!\n[GetModifier('yangchi3_modifier').GetDescWithEffects][GetPlayer.Custom('PODYangVirtueHint')]$POD_hint_chi$" #NT!
- yangchidesc4: "#T [GetModifier('yangchi4_modifier').GetName]#!\n[GetModifier('yangchi4_modifier').GetDescWithEffects][GetPlayer.Custom('PODYangVirtueHint')]$POD_hint_chi$" #NT!
- yangchidesc5: "#T [GetModifier('yangchi5_modifier').GetName]#!\n[GetModifier('yangchi5_modifier').GetDescWithEffects][GetPlayer.Custom('PODYangVirtueHint')]$POD_hint_chi$" #NT!
- yangchidesc6: "#T [GetModifier('yangchi6_modifier').GetName]#!\n[GetModifier('yangchi6_modifier').GetDescWithEffects][GetPlayer.Custom('PODYangVirtueHint')]$POD_hint_chi$" #NT!
- yangchidesc7: "#T [GetModifier('yangchi7_modifier').GetName]#!\n[GetModifier('yangchi7_modifier').GetDescWithEffects][GetPlayer.Custom('PODYangVirtueHint')]$POD_hint_chi$" #NT!
- yangchidesc8: "#T [GetModifier('yangchi8_modifier').GetName]#!\n[GetModifier('yangchi8_modifier').GetDescWithEffects][GetPlayer.Custom('PODYangVirtueHint')]$POD_hint_chi$" #NT!
- yangchidesc9: "#T [GetModifier('yangchi9_modifier').GetName]#!\n[GetModifier('yangchi9_modifier').GetDescWithEffects][GetPlayer.Custom('PODYangVirtueHint')]$POD_hint_chi$" #NT!
- yangchidesc10: "#T [GetModifier('yangchi10_modifier').GetName]#!\n[GetModifier('yangchi10_modifier').GetDescWithEffects][GetPlayer.Custom('PODYangVirtueHint')]$POD_hint_chi$" #NT!
- sekhemdesc0: "#T [GetModifier('sekhem0_modifier').GetName]#!\n[GetModifier('sekhem0_modifier').GetDescWithEffects]$POD_hint_sekhem$" #NT!
- sekhemdesc1: "#T [GetModifier('sekhem1_modifier').GetName]#!\n[GetModifier('sekhem1_modifier').GetDescWithEffects]$POD_hint_sekhem$" #NT!
- sekhemdesc2: "#T [GetModifier('sekhem2_modifier').GetName]#!\n[GetModifier('sekhem2_modifier').GetDescWithEffects]$POD_hint_sekhem$" #NT!
- sekhemdesc3: "#T [GetModifier('sekhem3_modifier').GetName]#!\n[GetModifier('sekhem3_modifier').GetDescWithEffects]$POD_hint_sekhem$" #NT!
- sekhemdesc4: "#T [GetModifier('sekhem4_modifier').GetName]#!\n[GetModifier('sekhem4_modifier').GetDescWithEffects]$POD_hint_sekhem$" #NT!
- sekhemdesc5: "#T [GetModifier('sekhem5_modifier').GetName]#!\n[GetModifier('sekhem5_modifier').GetDescWithEffects]$POD_hint_sekhem$" #NT!
- sekhemdesc6: "#T [GetModifier('sekhem6_modifier').GetName]#!\n[GetModifier('sekhem6_modifier').GetDescWithEffects]$POD_hint_sekhem$" #NT!
- sekhemdesc7: "#T [GetModifier('sekhem7_modifier').GetName]#!\n[GetModifier('sekhem7_modifier').GetDescWithEffects]$POD_hint_sekhem$" #NT!
- sekhemdesc8: "#T [GetModifier('sekhem8_modifier').GetName]#!\n[GetModifier('sekhem8_modifier').GetDescWithEffects]$POD_hint_sekhem$" #NT!
- sekhemdesc9: "#T [GetModifier('sekhem9_modifier').GetName]#!\n[GetModifier('sekhem9_modifier').GetDescWithEffects]$POD_hint_sekhem$" #NT!
- sekhemdesc10: "#T [GetModifier('sekhem10_modifier').GetName]#!\n[GetModifier('sekhem10_modifier').GetDescWithEffects]$POD_hint_sekhem$" #NT!
- pathosdesc0: "#T [GetModifier('pathos0_modifier').GetName]#!\n[GetModifier('pathos0_modifier').GetDescWithEffects]" #NT!
- pathosdesc1: "#T [GetModifier('pathos1_modifier').GetName]#!\n[GetModifier('pathos1_modifier').GetDescWithEffects]" #NT!
- pathosdesc2: "#T [GetModifier('pathos2_modifier').GetName]#!\n[GetModifier('pathos2_modifier').GetDescWithEffects]" #NT!
- pathosdesc3: "#T [GetModifier('pathos3_modifier').GetName]#!\n[GetModifier('pathos3_modifier').GetDescWithEffects]" #NT!
- pathosdesc4: "#T [GetModifier('pathos4_modifier').GetName]#!\n[GetModifier('pathos4_modifier').GetDescWithEffects]" #NT!
- pathosdesc5: "#T [GetModifier('pathos5_modifier').GetName]#!\n[GetModifier('pathos5_modifier').GetDescWithEffects]" #NT!
- angstdesc0: "#T [GetModifier('angst0_modifier').GetName]#!\n[GetModifier('angst0_modifier').GetDescWithEffects]" #NT!
- angstdesc1: "#T [GetModifier('angst1_modifier').GetName]#!\n[GetModifier('angst1_modifier').GetDescWithEffects]" #NT!
- angstdesc2: "#T [GetModifier('angst2_modifier').GetName]#!\n[GetModifier('angst2_modifier').GetDescWithEffects]" #NT!
- angstdesc3: "#T [GetModifier('angst3_modifier').GetName]#!\n[GetModifier('angst3_modifier').GetDescWithEffects]" #NT!
- angstdesc4: "#T [GetModifier('angst4_modifier').GetName]#!\n[GetModifier('angst4_modifier').GetDescWithEffects]" #NT!
- angstdesc5: "#T [GetModifier('angst5_modifier').GetName]#!\n[GetModifier('angst5_modifier').GetDescWithEffects]" #NT!
- resolvedesc0: "#T [GetModifier('resolve0_modifier').GetName]#!\n[GetModifier('resolve0_modifier').GetDescWithEffects]$POD_hint_resolve$" #NT!
- resolvedesc1: "#T [GetModifier('resolve1_modifier').GetName]#!\n[GetModifier('resolve1_modifier').GetDescWithEffects]$POD_hint_resolve$" #NT!
- resolvedesc2: "#T [GetModifier('resolve2_modifier').GetName]#!\n[GetModifier('resolve2_modifier').GetDescWithEffects]$POD_hint_resolve$" #NT!
- resolvedesc3: "#T [GetModifier('resolve3_modifier').GetName]#!\n[GetModifier('resolve3_modifier').GetDescWithEffects]$POD_hint_resolve$" #NT!
- resolvedesc4: "#T [GetModifier('resolve4_modifier').GetName]#!\n[GetModifier('resolve4_modifier').GetDescWithEffects]$POD_hint_resolve$" #NT!
- resolvedesc5: "#T [GetModifier('resolve5_modifier').GetName]#!\n[GetModifier('resolve5_modifier').GetDescWithEffects]$POD_hint_resolve$" #NT!
- glamour0desc: "#T [GetModifier('glamour0_modifier').GetName]#!\n[GetModifier('glamour0_modifier').GetDescWithEffects]$POD_hint_glamour$" #NT!
- glamour1desc: "#T [GetModifier('glamour1_modifier').GetName]#!\n[GetModifier('glamour1_modifier').GetDescWithEffects]$POD_hint_glamour$" #NT!
- glamour2desc: "#T [GetModifier('glamour2_modifier').GetName]#!\n[GetModifier('glamour2_modifier').GetDescWithEffects]$POD_hint_glamour$" #NT!
- glamour3desc: "#T [GetModifier('glamour3_modifier').GetName]#!\n[GetModifier('glamour3_modifier').GetDescWithEffects]$POD_hint_glamour$" #NT!
- glamour4desc: "#T [GetModifier('glamour4_modifier').GetName]#!\n[GetModifier('glamour4_modifier').GetDescWithEffects]$POD_hint_glamour$" #NT!
- glamour5desc: "#T [GetModifier('glamour5_modifier').GetName]#!\n[GetModifier('glamour5_modifier').GetDescWithEffects]$POD_hint_glamour$" #NT!
- rage0desc: "#T [GetModifier('POD_rage_0_modifier').GetName]#!\n[GetModifier('POD_rage_0_modifier').GetDescWithEffects]$POD_hint_rage$" #NT!
- rage1desc: "#T [GetModifier('POD_rage_1_modifier').GetName]#!\n[GetModifier('POD_rage_1_modifier').GetDescWithEffects]$POD_hint_rage$" #NT!
- rage2desc: "#T [GetModifier('POD_rage_2_modifier').GetName]#!\n[GetModifier('POD_rage_2_modifier').GetDescWithEffects]$POD_hint_rage$" #NT!
- rage3desc: "#T [GetModifier('POD_rage_3_modifier').GetName]#!\n[GetModifier('POD_rage_3_modifier').GetDescWithEffects]$POD_hint_rage$" #NT!
- rage4desc: "#T [GetModifier('POD_rage_4_modifier').GetName]#!\n[GetModifier('POD_rage_4_modifier').GetDescWithEffects]$POD_hint_rage$" #NT!
- rage5desc: "#T [GetModifier('POD_rage_5_modifier').GetName]#!\n[GetModifier('POD_rage_5_modifier').GetDescWithEffects]$POD_hint_rage$" #NT!
- gnosis0desc: "#T [GetModifier('POD_gnosis_0_modifier').GetName]#!\n[GetModifier('POD_gnosis_0_modifier').GetDescWithEffects]$POD_hint_gnosis$" #NT!
- gnosis1desc: "#T [GetModifier('POD_gnosis_1_modifier').GetName]#!\n[GetModifier('POD_gnosis_1_modifier').GetDescWithEffects]$POD_hint_gnosis$" #NT!
- gnosis2desc: "#T [GetModifier('POD_gnosis_2_modifier').GetName]#!\n[GetModifier('POD_gnosis_2_modifier').GetDescWithEffects]$POD_hint_gnosis$" #NT!
- gnosis3desc: "#T [GetModifier('POD_gnosis_3_modifier').GetName]#!\n[GetModifier('POD_gnosis_3_modifier').GetDescWithEffects]$POD_hint_gnosis$" #NT!
- gnosis4desc: "#T [GetModifier('POD_gnosis_4_modifier').GetName]#!\n[GetModifier('POD_gnosis_4_modifier').GetDescWithEffects]$POD_hint_gnosis$" #NT!
- gnosis5desc: "#T [GetModifier('POD_gnosis_5_modifier').GetName]#!\n[GetModifier('POD_gnosis_5_modifier').GetDescWithEffects]$POD_hint_gnosis$" #NT!
- gauntletdesc0: "#T [GetModifier('gauntlet0_modifier').GetName]#!\n[GetModifier('gauntlet0_modifier').GetDescWithEffects]" #NT!
- gauntletdesc1: "#T [GetModifier('gauntlet1_modifier').GetName]#!\n[GetModifier('gauntlet1_modifier').GetDescWithEffects]" #NT!
- gauntletdesc2: "#T [GetModifier('gauntlet2_modifier').GetName]#!\n[GetModifier('gauntlet2_modifier').GetDescWithEffects]" #NT!
- gauntletdesc3: "#T [GetModifier('gauntlet3_modifier').GetName]#!\n[GetModifier('gauntlet3_modifier').GetDescWithEffects]" #NT!
- gauntletdesc4: "#T [GetModifier('gauntlet4_modifier').GetName]#!\n[GetModifier('gauntlet4_modifier').GetDescWithEffects]" #NT!
- gauntletdesc5: "#T [GetModifier('gauntlet5_modifier').GetName]#!\n[GetModifier('gauntlet5_modifier').GetDescWithEffects]" #NT!
- gauntletdesc6: "#T [GetModifier('gauntlet6_modifier').GetName]#!\n[GetModifier('gauntlet6_modifier').GetDescWithEffects]" #NT!
- gauntletdesc7: "#T [GetModifier('gauntlet7_modifier').GetName]#!\n[GetModifier('gauntlet7_modifier').GetDescWithEffects]" #NT!
- gauntletdesc8: "#T [GetModifier('gauntlet8_modifier').GetName]#!\n[GetModifier('gauntlet8_modifier').GetDescWithEffects]" #NT!
- gauntletdesc9: "#T [GetModifier('gauntlet9_modifier').GetName]#!\n[GetModifier('gauntlet9_modifier').GetDescWithEffects]" #NT!
- gauntletdesc10: "#T [GetModifier('gauntlet10_modifier').GetName]#!\n[GetModifier('gauntlet10_modifier').GetDescWithEffects]" #NT!
- shrouddesc0: "#T [GetModifier('shroud0_modifier').GetName]#!\n[GetModifier('shroud0_modifier').GetDescWithEffects]" #NT!
- shrouddesc1: "#T [GetModifier('shroud1_modifier').GetName]#!\n[GetModifier('shroud1_modifier').GetDescWithEffects]" #NT!
- shrouddesc2: "#T [GetModifier('shroud2_modifier').GetName]#!\n[GetModifier('shroud2_modifier').GetDescWithEffects]" #NT!
- shrouddesc3: "#T [GetModifier('shroud3_modifier').GetName]#!\n[GetModifier('shroud3_modifier').GetDescWithEffects]" #NT!
- shrouddesc4: "#T [GetModifier('shroud4_modifier').GetName]#!\n[GetModifier('shroud4_modifier').GetDescWithEffects]" #NT!
- shrouddesc5: "#T [GetModifier('shroud5_modifier').GetName]#!\n[GetModifier('shroud5_modifier').GetDescWithEffects]" #NT!
- shrouddesc6: "#T [GetModifier('shroud6_modifier').GetName]#!\n[GetModifier('shroud6_modifier').GetDescWithEffects]" #NT!
- shrouddesc7: "#T [GetModifier('shroud7_modifier').GetName]#!\n[GetModifier('shroud7_modifier').GetDescWithEffects]" #NT!
- shrouddesc8: "#T [GetModifier('shroud8_modifier').GetName]#!\n[GetModifier('shroud8_modifier').GetDescWithEffects]" #NT!
- shrouddesc9: "#T [GetModifier('shroud9_modifier').GetName]#!\n[GetModifier('shroud9_modifier').GetDescWithEffects]" #NT!
- shrouddesc10: "#T [GetModifier('shroud10_modifier').GetName]#!\n[GetModifier('shroud10_modifier').GetDescWithEffects]" #NT!
+ hunger0desc: "#T Hambre de sangre 0:#!\n[GetModifier('bloodhunger0_modifier').GetDescWithEffects][GetPlayer.Custom('PODBloodPotencyHint')]$POD_hint_hunger$"
+ hunger1desc: "#T Hambre de sangre 1:#!\n[GetModifier('bloodhunger1_modifier').GetDescWithEffects][GetPlayer.Custom('PODBloodPotencyHint')]$POD_hint_hunger$"
+ hunger2desc: "#T Hambre de sangre 2:#!\n[GetModifier('bloodhunger2_modifier').GetDescWithEffects][GetPlayer.Custom('PODBloodPotencyHint')]$POD_hint_hunger$"
+ hunger3desc: "#T Hambre de sangre 3:#!\n[GetModifier('bloodhunger3_modifier').GetDescWithEffects][GetPlayer.Custom('PODBloodPotencyHint')]$POD_hint_hunger$"
+ hunger4desc: "#T Hambre de sangre 4:#!\n[GetModifier('bloodhunger4_modifier').GetDescWithEffects][GetPlayer.Custom('PODBloodPotencyHint')]$POD_hint_hunger$"
+ hunger5desc: "#T Hambre de sangre 5:#!\n[GetModifier('bloodhunger5_modifier').GetDescWithEffects][GetPlayer.Custom('PODBloodPotencyHint')]$POD_hint_hunger$"
+ masq0desc: "#T Exposición de mascarada 0:#!\n[GetModifier('masquerade0_modifier').GetDescWithEffects]\n\n[GetPlayer.Custom('PODMasqueradeHint')]"
+ masq1desc: "#T Exposición de mascaradas 1:#!\n[GetModifier('masquerade1_modifier').GetDescWithEffects]\n\n[GetPlayer.Custom('PODMasqueradeHint')]"
+ masq2desc: "#T Exposición de mascarada 2:#!\n[GetModifier('masquerade2_modifier').GetDescWithEffects]\n\n[GetPlayer.Custom('PODMasqueradeHint')]"
+ masq3desc: "#T Exposición de mascaradas 3:#!\n[GetModifier('masquerade3_modifier').GetDescWithEffects]\n\n[GetPlayer.Custom('PODMasqueradeHint')]"
+ masq4desc: "#T Exposición de mascaradas 4:#!\n[GetModifier('masquerade4_modifier').GetDescWithEffects]\n\n[GetPlayer.Custom('PODMasqueradeHint')]"
+ masq5desc: "#T Exposición de mascaradas 5:#!\n[GetModifier('masquerade5_modifier').GetDescWithEffects]\n\n[GetPlayer.Custom('PODMasqueradeHint')]"
+ yinchidesc0: "#T [GetModifier('yinchi0_modifier').GetName]#!\n[GetModifier('yinchi0_modifier').GetDescWithEffects][GetPlayer.Custom('PODYinVirtueHint')]$POD_hint_chi$"
+ yinchidesc1: "#T [GetModifier('yinchi1_modifier').GetName]#!\n[GetModifier('yinchi1_modifier').GetDescWithEffects][GetPlayer.Custom('PODYinVirtueHint')]$POD_hint_chi$"
+ yinchidesc2: "#T [GetModifier('yinchi2_modifier').GetName]#!\n[GetModifier('yinchi2_modifier').GetDescWithEffects][GetPlayer.Custom('PODYinVirtueHint')]$POD_hint_chi$"
+ yinchidesc3: "#T [GetModifier('yinchi3_modifier').GetName]#!\n[GetModifier('yinchi3_modifier').GetDescWithEffects][GetPlayer.Custom('PODYinVirtueHint')]$POD_hint_chi$"
+ yinchidesc4: "#T [GetModifier('yinchi4_modifier').GetName]#!\n[GetModifier('yinchi4_modifier').GetDescWithEffects][GetPlayer.Custom('PODYinVirtueHint')]$POD_hint_chi$"
+ yinchidesc5: "#T [GetModifier('yinchi5_modifier').GetName]#!\n[GetModifier('yinchi5_modifier').GetDescWithEffects][GetPlayer.Custom('PODYinVirtueHint')]$POD_hint_chi$"
+ yinchidesc6: "#T [GetModifier('yinchi6_modifier').GetName]#!\n[GetModifier('yinchi6_modifier').GetDescWithEffects][GetPlayer.Custom('PODYinVirtueHint')]$POD_hint_chi$"
+ yinchidesc7: "#T [GetModifier('yinchi7_modifier').GetName]#!\n[GetModifier('yinchi7_modifier').GetDescWithEffects][GetPlayer.Custom('PODYinVirtueHint')]$POD_hint_chi$"
+ yinchidesc8: "#T [GetModifier('yinchi8_modifier').GetName]#!\n[GetModifier('yinchi8_modifier').GetDescWithEffects][GetPlayer.Custom('PODYinVirtueHint')]$POD_hint_chi$"
+ yinchidesc9: "#T [GetModifier('yinchi9_modifier').GetName]#!\n[GetModifier('yinchi9_modifier').GetDescWithEffects][GetPlayer.Custom('PODYinVirtueHint')]$POD_hint_chi$"
+ yinchidesc10: "#T [GetModifier('yinchi10_modifier').GetName]#!\n[GetModifier('yinchi10_modifier').GetDescWithEffects][GetPlayer.Custom('PODYinVirtueHint')]$POD_hint_chi$"
+ yangchidesc0: "#T [GetModifier('yangchi0_modifier').GetName]#!\n[GetModifier('yangchi0_modifier').GetDescWithEffects][GetPlayer.Custom('PODYangVirtueHint')]$POD_hint_chi$"
+ yangchidesc1: "#T [GetModifier('yangchi1_modifier').GetName]#!\n[GetModifier('yangchi1_modifier').GetDescWithEffects][GetPlayer.Custom('PODYangVirtueHint')]$POD_hint_chi$"
+ yangchidesc2: "#T [GetModifier('yangchi2_modifier').GetName]#!\n[GetModifier('yangchi2_modifier').GetDescWithEffects][GetPlayer.Custom('PODYangVirtueHint')]$POD_hint_chi$"
+ yangchidesc3: "#T [GetModifier('yangchi3_modifier').GetName]#!\n[GetModifier('yangchi3_modifier').GetDescWithEffects][GetPlayer.Custom('PODYangVirtueHint')]$POD_hint_chi$"
+ yangchidesc4: "#T [GetModifier('yangchi4_modifier').GetName]#!\n[GetModifier('yangchi4_modifier').GetDescWithEffects][GetPlayer.Custom('PODYangVirtueHint')]$POD_hint_chi$"
+ yangchidesc5: "#T [GetModifier('yangchi5_modifier').GetName]#!\n[GetModifier('yangchi5_modifier').GetDescWithEffects][GetPlayer.Custom('PODYangVirtueHint')]$POD_hint_chi$"
+ yangchidesc6: "#T [GetModifier('yangchi6_modifier').GetName]#!\n[GetModifier('yangchi6_modifier').GetDescWithEffects][GetPlayer.Custom('PODYangVirtueHint')]$POD_hint_chi$"
+ yangchidesc7: "#T [GetModifier('yangchi7_modifier').GetName]#!\n[GetModifier('yangchi7_modifier').GetDescWithEffects][GetPlayer.Custom('PODYangVirtueHint')]$POD_hint_chi$"
+ yangchidesc8: "#T [GetModifier('yangchi8_modifier').GetName]#!\n[GetModifier('yangchi8_modifier').GetDescWithEffects][GetPlayer.Custom('PODYangVirtueHint')]$POD_hint_chi$"
+ yangchidesc9: "#T [GetModifier('yangchi9_modifier').GetName]#!\n[GetModifier('yangchi9_modifier').GetDescWithEffects][GetPlayer.Custom('PODYangVirtueHint')]$POD_hint_chi$"
+ yangchidesc10: "#T [GetModifier('yangchi10_modifier').GetName]#!\n[GetModifier('yangchi10_modifier').GetDescWithEffects][GetPlayer.Custom('PODYangVirtueHint')]$POD_hint_chi$"
+ sekhemdesc0: "#T [GetModifier('sekhem0_modifier').GetName]#!\n[GetModifier('sekhem0_modifier').GetDescWithEffects]$POD_hint_sekhem$"
+ sekhemdesc1: "#T [GetModifier('sekhem1_modifier').GetName]#!\n[GetModifier('sekhem1_modifier').GetDescWithEffects]$POD_hint_sekhem$"
+ sekhemdesc2: "#T [GetModifier('sekhem2_modifier').GetName]#!\n[GetModifier('sekhem2_modifier').GetDescWithEffects]$POD_hint_sekhem$"
+ sekhemdesc3: "#T [GetModifier('sekhem3_modifier').GetName]#!\n[GetModifier('sekhem3_modifier').GetDescWithEffects]$POD_hint_sekhem$"
+ sekhemdesc4: "#T [GetModifier('sekhem4_modifier').GetName]#!\n[GetModifier('sekhem4_modifier').GetDescWithEffects]$POD_hint_sekhem$"
+ sekhemdesc5: "#T [GetModifier('sekhem5_modifier').GetName]#!\n[GetModifier('sekhem5_modifier').GetDescWithEffects]$POD_hint_sekhem$"
+ sekhemdesc6: "#T [GetModifier('sekhem6_modifier').GetName]#!\n[GetModifier('sekhem6_modifier').GetDescWithEffects]$POD_hint_sekhem$"
+ sekhemdesc7: "#T [GetModifier('sekhem7_modifier').GetName]#!\n[GetModifier('sekhem7_modifier').GetDescWithEffects]$POD_hint_sekhem$"
+ sekhemdesc8: "#T [GetModifier('sekhem8_modifier').GetName]#!\n[GetModifier('sekhem8_modifier').GetDescWithEffects]$POD_hint_sekhem$"
+ sekhemdesc9: "#T [GetModifier('sekhem9_modifier').GetName]#!\n[GetModifier('sekhem9_modifier').GetDescWithEffects]$POD_hint_sekhem$"
+ sekhemdesc10: "#T [GetModifier('sekhem10_modifier').GetName]#!\n[GetModifier('sekhem10_modifier').GetDescWithEffects]$POD_hint_sekhem$"
+ pathosdesc0: "#T [GetModifier('pathos0_modifier').GetName]#!\n[GetModifier('pathos0_modifier').GetDescWithEffects]"
+ pathosdesc1: "#T [GetModifier('pathos1_modifier').GetName]#!\n[GetModifier('pathos1_modifier').GetDescWithEffects]"
+ pathosdesc2: "#T [GetModifier('pathos2_modifier').GetName]#!\n[GetModifier('pathos2_modifier').GetDescWithEffects]"
+ pathosdesc3: "#T [GetModifier('pathos3_modifier').GetName]#!\n[GetModifier('pathos3_modifier').GetDescWithEffects]"
+ pathosdesc4: "#T [GetModifier('pathos4_modifier').GetName]#!\n[GetModifier('pathos4_modifier').GetDescWithEffects]"
+ pathosdesc5: "#T [GetModifier('pathos5_modifier').GetName]#!\n[GetModifier('pathos5_modifier').GetDescWithEffects]"
+ angstdesc0: "#T [GetModifier('angst0_modifier').GetName]#!\n[GetModifier('angst0_modifier').GetDescWithEffects]"
+ angstdesc1: "#T [GetModifier('angst1_modifier').GetName]#!\n[GetModifier('angst1_modifier').GetDescWithEffects]"
+ angstdesc2: "#T [GetModifier('angst2_modifier').GetName]#!\n[GetModifier('angst2_modifier').GetDescWithEffects]"
+ angstdesc3: "#T [GetModifier('angst3_modifier').GetName]#!\n[GetModifier('angst3_modifier').GetDescWithEffects]"
+ angstdesc4: "#T [GetModifier('angst4_modifier').GetName]#!\n[GetModifier('angst4_modifier').GetDescWithEffects]"
+ angstdesc5: "#T [GetModifier('angst5_modifier').GetName]#!\n[GetModifier('angst5_modifier').GetDescWithEffects]"
+ resolvedesc0: "#T [GetModifier('resolve0_modifier').GetName]#!\n[GetModifier('resolve0_modifier').GetDescWithEffects]$POD_hint_resolve$"
+ resolvedesc1: "#T [GetModifier('resolve1_modifier').GetName]#!\n[GetModifier('resolve1_modifier').GetDescWithEffects]$POD_hint_resolve$"
+ resolvedesc2: "#T [GetModifier('resolve2_modifier').GetName]#!\n[GetModifier('resolve2_modifier').GetDescWithEffects]$POD_hint_resolve$"
+ resolvedesc3: "#T [GetModifier('resolve3_modifier').GetName]#!\n[GetModifier('resolve3_modifier').GetDescWithEffects]$POD_hint_resolve$"
+ resolvedesc4: "#T [GetModifier('resolve4_modifier').GetName]#!\n[GetModifier('resolve4_modifier').GetDescWithEffects]$POD_hint_resolve$"
+ resolvedesc5: "#T [GetModifier('resolve5_modifier').GetName]#!\n[GetModifier('resolve5_modifier').GetDescWithEffects]$POD_hint_resolve$"
+ glamour0desc: "#T [GetModifier('glamour0_modifier').GetName]#!\n[GetModifier('glamour0_modifier').GetDescWithEffects]$POD_hint_glamour$"
+ glamour1desc: "#T [GetModifier('glamour1_modifier').GetName]#!\n[GetModifier('glamour1_modifier').GetDescWithEffects]$POD_hint_glamour$"
+ glamour2desc: "#T [GetModifier('glamour2_modifier').GetName]#!\n[GetModifier('glamour2_modifier').GetDescWithEffects]$POD_hint_glamour$"
+ glamour3desc: "#T [GetModifier('glamour3_modifier').GetName]#!\n[GetModifier('glamour3_modifier').GetDescWithEffects]$POD_hint_glamour$"
+ glamour4desc: "#T [GetModifier('glamour4_modifier').GetName]#!\n[GetModifier('glamour4_modifier').GetDescWithEffects]$POD_hint_glamour$"
+ glamour5desc: "#T [GetModifier('glamour5_modifier').GetName]#!\n[GetModifier('glamour5_modifier').GetDescWithEffects]$POD_hint_glamour$"
+ rage0desc: "#T [GetModifier('POD_rage_0_modifier').GetName]#!\n[GetModifier('POD_rage_0_modifier').GetDescWithEffects]$POD_hint_rage$"
+ rage1desc: "#T [GetModifier('POD_rage_1_modifier').GetName]#!\n[GetModifier('POD_rage_1_modifier').GetDescWithEffects]$POD_hint_rage$"
+ rage2desc: "#T [GetModifier('POD_rage_2_modifier').GetName]#!\n[GetModifier('POD_rage_2_modifier').GetDescWithEffects]$POD_hint_rage$"
+ rage3desc: "#T [GetModifier('POD_rage_3_modifier').GetName]#!\n[GetModifier('POD_rage_3_modifier').GetDescWithEffects]$POD_hint_rage$"
+ rage4desc: "#T [GetModifier('POD_rage_4_modifier').GetName]#!\n[GetModifier('POD_rage_4_modifier').GetDescWithEffects]$POD_hint_rage$"
+ rage5desc: "#T [GetModifier('POD_rage_5_modifier').GetName]#!\n[GetModifier('POD_rage_5_modifier').GetDescWithEffects]$POD_hint_rage$"
+ gnosis0desc: "#T [GetModifier('POD_gnosis_0_modifier').GetName]#!\n[GetModifier('POD_gnosis_0_modifier').GetDescWithEffects]$POD_hint_gnosis$"
+ gnosis1desc: "#T [GetModifier('POD_gnosis_1_modifier').GetName]#!\n[GetModifier('POD_gnosis_1_modifier').GetDescWithEffects]$POD_hint_gnosis$"
+ gnosis2desc: "#T [GetModifier('POD_gnosis_2_modifier').GetName]#!\n[GetModifier('POD_gnosis_2_modifier').GetDescWithEffects]$POD_hint_gnosis$"
+ gnosis3desc: "#T [GetModifier('POD_gnosis_3_modifier').GetName]#!\n[GetModifier('POD_gnosis_3_modifier').GetDescWithEffects]$POD_hint_gnosis$"
+ gnosis4desc: "#T [GetModifier('POD_gnosis_4_modifier').GetName]#!\n[GetModifier('POD_gnosis_4_modifier').GetDescWithEffects]$POD_hint_gnosis$"
+ gnosis5desc: "#T [GetModifier('POD_gnosis_5_modifier').GetName]#!\n[GetModifier('POD_gnosis_5_modifier').GetDescWithEffects]$POD_hint_gnosis$"
+ gauntletdesc0: "#T [GetModifier('gauntlet0_modifier').GetName]#!\n[GetModifier('gauntlet0_modifier').GetDescWithEffects]"
+ gauntletdesc1: "#T [GetModifier('gauntlet1_modifier').GetName]#!\n[GetModifier('gauntlet1_modifier').GetDescWithEffects]"
+ gauntletdesc2: "#T [GetModifier('gauntlet2_modifier').GetName]#!\n[GetModifier('gauntlet2_modifier').GetDescWithEffects]"
+ gauntletdesc3: "#T [GetModifier('gauntlet3_modifier').GetName]#!\n[GetModifier('gauntlet3_modifier').GetDescWithEffects]"
+ gauntletdesc4: "#T [GetModifier('gauntlet4_modifier').GetName]#!\n[GetModifier('gauntlet4_modifier').GetDescWithEffects]"
+ gauntletdesc5: "#T [GetModifier('gauntlet5_modifier').GetName]#!\n[GetModifier('gauntlet5_modifier').GetDescWithEffects]"
+ gauntletdesc6: "#T [GetModifier('gauntlet6_modifier').GetName]#!\n[GetModifier('gauntlet6_modifier').GetDescWithEffects]"
+ gauntletdesc7: "#T [GetModifier('gauntlet7_modifier').GetName]#!\n[GetModifier('gauntlet7_modifier').GetDescWithEffects]"
+ gauntletdesc8: "#T [GetModifier('gauntlet8_modifier').GetName]#!\n[GetModifier('gauntlet8_modifier').GetDescWithEffects]"
+ gauntletdesc9: "#T [GetModifier('gauntlet9_modifier').GetName]#!\n[GetModifier('gauntlet9_modifier').GetDescWithEffects]"
+ gauntletdesc10: "#T [GetModifier('gauntlet10_modifier').GetName]#!\n[GetModifier('gauntlet10_modifier').GetDescWithEffects]"
+ shrouddesc0: "#T [GetModifier('shroud0_modifier').GetName]#!\n[GetModifier('shroud0_modifier').GetDescWithEffects]"
+ shrouddesc1: "#T [GetModifier('shroud1_modifier').GetName]#!\n[GetModifier('shroud1_modifier').GetDescWithEffects]"
+ shrouddesc2: "#T [GetModifier('shroud2_modifier').GetName]#!\n[GetModifier('shroud2_modifier').GetDescWithEffects]"
+ shrouddesc3: "#T [GetModifier('shroud3_modifier').GetName]#!\n[GetModifier('shroud3_modifier').GetDescWithEffects]"
+ shrouddesc4: "#T [GetModifier('shroud4_modifier').GetName]#!\n[GetModifier('shroud4_modifier').GetDescWithEffects]"
+ shrouddesc5: "#T [GetModifier('shroud5_modifier').GetName]#!\n[GetModifier('shroud5_modifier').GetDescWithEffects]"
+ shrouddesc6: "#T [GetModifier('shroud6_modifier').GetName]#!\n[GetModifier('shroud6_modifier').GetDescWithEffects]"
+ shrouddesc7: "#T [GetModifier('shroud7_modifier').GetName]#!\n[GetModifier('shroud7_modifier').GetDescWithEffects]"
+ shrouddesc8: "#T [GetModifier('shroud8_modifier').GetName]#!\n[GetModifier('shroud8_modifier').GetDescWithEffects]"
+ shrouddesc9: "#T [GetModifier('shroud9_modifier').GetName]#!\n[GetModifier('shroud9_modifier').GetDescWithEffects]"
+ shrouddesc10: "#T [GetModifier('shroud10_modifier').GetName]#!\n[GetModifier('shroud10_modifier').GetDescWithEffects]"
   
- original_music_by_serial_symphony: "Música original de Serial Symphony" #NT!
+ original_music_by_serial_symphony: "Música original de Serial Symphony"
