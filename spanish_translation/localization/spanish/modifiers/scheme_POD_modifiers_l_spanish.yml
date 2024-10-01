@@ -13,11 +13,11 @@
  vamphunt_scheme_resistance_add: "$vamphunt_scheme_resistance_mult$"
  PODentrance_scheme_power_mult: "[GetScheme('PODentrance').GetTypeName] [scheme_power|E]"
  PODsummon_scheme_power_mult: "[GetScheme('PODsummon').GetTypeName] [scheme_power|E]"
- max_PODsummon_schemes_add: "Máximo [GetScheme('PODsummon').GetTypeName] [schemes|E]"
- max_befriend_schemes_add: "Máximo [GetScheme('befriend').GetTypeName] [schemes|E]"
- max_seduce_schemes_add: "Máximo [GetScheme('seduce').GetTypeName] [schemes|E]"
- max_abduct_schemes_add: "Máximo [GetScheme('abduct').GetTypeName] [schemes|E]"
- max_steal_back_artifact_schemes_add: "Máximo [GetScheme('steal_back_artifact').GetTypeName] [schemes|E]"
+ max_PODsummon_schemes_add: "Max [GetScheme('PODsummon').GetTypeName] [schemes|E]"
+ max_befriend_schemes_add: "Max [GetScheme('befriend').GetTypeName] [schemes|E]"
+ max_seduce_schemes_add: "Max [GetScheme('seduce').GetTypeName] [schemes|E]"
+ max_abduct_schemes_add: "Max [GetScheme('abduct').GetTypeName] [schemes|E]"
+ max_steal_back_artifact_schemes_add: "Max [GetScheme('steal_back_artifact').GetTypeName] [schemes|E]"
  steal_back_artifact_scheme_power_mult: "[GetScheme('steal_back_artifact').GetTypeName] [scheme_power|E]"
  seduce_scheme_resistance_mult: "[GetScheme('seduce').GetTypeName] [scheme_resistance|E]"
  steal_back_artifact_scheme_resistance_mult: "[GetScheme('steal_back_artifact').GetTypeName] [scheme_resistance|E]" #NT!
@@ -44,4 +44,4 @@
  scheme_power_against_nemesis_mult: "[scheme_power|E] contra [nemesis|E]"
  scheme_power_against_lover_mult: "[scheme_power|E] contra [lovers|E]"
   
- beatific_xp_gain_mult: "[GetTrait('beatific').GetName( GetNullCharacter )] [trait_level_track_xp|E] Ganancia" #NT!
+ beatific_xp_gain_mult: "[GetTrait('beatific').GetName( GetNullCharacter )] [trait_level_track_xp|E] Gain" #NT!

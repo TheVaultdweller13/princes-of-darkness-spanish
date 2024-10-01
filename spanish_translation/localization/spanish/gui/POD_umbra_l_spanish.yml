@@ -20,7 +20,7 @@
  UMBRA_WINDOW_DEMON_TRAP: "@warning_icon! #X El explorador tiene una probabilidad de quedar atrapado y ganar trimestralmente [stress|E] en este reino. #Weak (A menos que estén sirviendo a demonios)#!#!"
  UMBRA_WINDOW_YAMA_TRAP: "@warning_icon! #X El explorador tiene una probabilidad de quedar atrapado y ganar trimestralmente [stress|E] en este reino. #Weak (A menos que estén sirviendo a los Reyes Yama)#!#!"
   
- umbra_action_tooltip: "#T [Localize(Concatenate(Scope.GetFlagName,'_confirm'))]#![Localize('line_break')][ScriptedGui.BuildTooltip(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('explorer', Carácter.MakeScope).Fin)]"
+ umbra_action_tooltip: "#T [Localize(Concatenate(Scope.GetFlagName,'_confirm'))]#![Localize('line_break')][ScriptedGui.BuildTooltip(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('explorer', Character.MakeScope).Fin)]"
  umbra_action_cooldown_tooltip: "Ya utilizaste esta acción este mes."
  umbra_action_no_explorer_tooltip: "Necesita un explorador estacionado para habilitar esta acción."
  umbra_action_locked_tooltip: "Debes completar el [umbra_expedition|E] correspondiente para desbloquear esta acción."
