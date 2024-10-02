@@ -194,9 +194,9 @@
  game_concept_gargoyle_primogen: "$gargoyle_primogen_court_position$"
  game_concept_gargoyle_primogen_desc: "Un [GetTrait('gargoyle').GetName(GetNullCharacter)] [primogen|E] necesita un buen [prowess|E].\n\nSer [GetTrait('wrathful').GetName(GetNullCharacter)], [GetTrait('callous').GetName(GetNullCharacter)] y/o [GetTrait('brave').GetName(GetNullCharacter)] ayuda.\n\nSer un #TOOLTIP:GAME_TRAIT,lifestyle_hunter,[GetNullCharacter] #L Cazador#!#! ayuda un poco.\n\n#help Solo puedes emplear esta posición de la corte si eres un [GetTrait('gargoyle').GetName(GetNullCharacter)], o si eres un [primogen|E]1 después de que se haya descubierto a [primogen|E]2.[primogen|E]3"
   
- game_concept_splat: "Salpicadura"
- game_concept_splats: "Salpicaduras"
- game_concept_splat_desc: "El término "Splat" se refiere al tipo de criatura sobrenatural que eres. En [princes_of_darkness|E], tu splat se denota con un [trait|E].\n\nEn el marcador #bold Dark Ages: Vampire#!, se pueden jugar los siguientes splats:\n$EFFECT_LIST_BULLET$$POD_splat_vampire$\n$EFFECT_LIST_BULLET$$POD_splat_ghoul$\n$EFFECT_LIST_BULLET$$POD_splat_revenant$\n$EFFECT_LIST_BULLET$[trait|E]1\n[trait|E]2 ¡Ten en cuenta que no existen otros splats en el primer marcador! Esto significa que no hay forma de interactuar con ellos (por ejemplo, los Infernalistas no pueden interactuar con los Demonios ya que no hay ninguno en el mapa)#!\n\nEn el marcador #bold Hunters & Hunted#!, se pueden jugar los siguientes splats:\n$EFFECT_LIST_BULLET$[trait|E]7 Todos los anteriores, más:#!\n$EFFECT_LIST_BULLET$$POD_splat_hunter$\n$EFFECT_LIST_BULLET$$POD_splat_mummy$\n$EFFECT_LIST_BULLET$$POD_splat_werewolf$\n$EFFECT_LIST_BULLET$$POD_splat_demon$\n\nEn el marcador #bold Dark Ages: Fae ...demon$ más:#!\n$EFFECT_LIST_BULLET$$POD_splat_fae$\n$EFFECT_LIST_BULLET$$POD_splat_changeling$"
+ game_concept_splat: "Tipo"
+ game_concept_splats: "Tipos"
+ game_concept_splat_desc: "El término "Tipo" se refiere a la clase de criatura sobrenatural que eres. En [princes_of_darkness|E], tu tipo está representado con un [trait|E].\n\nEn el marcador #bold Dark Ages: Vampire#!, se pueden jugar los siguientes tipos:\n$EFFECT_LIST_BULLET$$POD_splat_vampire$\n$EFFECT_LIST_BULLET$$POD_splat_ghoul$\n$EFFECT_LIST_BULLET$$POD_splat_revenant$\n$EFFECT_LIST_BULLET$[trait|E]1\n[trait|E]2 ¡Ten en cuenta que no existen otros tipos en el primer marcador! Esto significa que no hay forma de interactuar con ellos (por ejemplo, los Infernalistas no pueden interactuar con los Demonios ya que no hay ninguno en el mapa)#!\n\nEn el marcador #bold Hunters & Hunted#!, se pueden jugar los siguientes tipos:\n$EFFECT_LIST_BULLET$[trait|E]7 Todos los anteriores, más:#!\n$EFFECT_LIST_BULLET$$POD_splat_hunter$\n$EFFECT_LIST_BULLET$$POD_splat_mummy$\n$EFFECT_LIST_BULLET$$POD_splat_werewolf$\n$EFFECT_LIST_BULLET$$POD_splat_demon$\n\nEn el marcador #bold Dark Ages: Fae ...demon$ más:#!\n$EFFECT_LIST_BULLET$$POD_splat_fae$\n$EFFECT_LIST_BULLET$$POD_splat_changeling$"
   
  game_concept_battle_modifier: "Modificador de batalla"
  game_concept_battle_modifier_desc: "El modificador de batalla se elimina cuando termina la batalla contra su lanzador."
@@ -731,7 +731,7 @@
  game_concept_reform_route: "Ruta de la Reforma" #NT!
   
  game_concept_bloodmagic_spell: "Hechizo de magia de sangre" #NT!
- game_concept_bs_spell: "Deletrear" #NT!
+ game_concept_bs_spell: "Hechizo" #NT!
  game_concept_bs_spells: "Hechizos" #NT!
  game_concept_bloodmagic_spell_desc: "#bold Los hechizos#! permiten que un [Concept('bloodsorcery','Blood Sorcerer')] haga cosas que no son naturales ni siquiera para los estándares vampíricos. Cada hechizo está asociado con un [bs_path|E].\n\nLos hechizos pueden tener costos adicionales además de [hunger_with_icon|E], como [static_stress|E] o [piety|E].\n\nEn [princes_of_darkness|E], los hechizos se lanzan a través de #V $blood_sorcery_interaction$#! #!1. Su probabilidad de éxito se basa en la distancia al objetivo, la diferencia en #!2 y, si ambos son #!3, su diferencia en #!4." #NT!
   
