@@ -630,8 +630,8 @@
  POD_ghoulthrall_divorce_option: "Exigir el divorcio"
  POD_ghoulthrall_release_option: "Liberar esclavo"
   
- POD_ghoulify_mortal_interaction_limit: "☻_¡La cantidad de esclavo está limitada! (3 más 1 por [stewardship_i]#V 8#! [stewardship|E] más cualquier bonificación de otras fuentes)"
- POD_ghoulify_mortal_interaction_bp_one: "Los vampiros deben tener una potencia de sangre de al menos uno para crear un [ghoul|E]."
+POD_ghoulify_mortal_interaction_limit: "¡La cantidad de siervos [Ghoul|E] está al límite! (3 más 1 por cada [stewardship_i]#V 8#! de [stewardship|E], más cualquier bonificación de otras fuentes)" 
+POD_ghoulify_mortal_interaction_bp_one: "Los vampiros deben tener una potencia de sangre de al menos uno para crear un [ghoul|E]."
  POD_ghoulify_mortal_interaction: "Crear Ghoul #weak (Conjura) #!"
  POD_ghoulify_mortal_interaction_desc: "Conspira para transformar a este mortal en un esclavo [ghoul|E], un sirviente leal.\nTen en cuenta que los ghouls tienen una resonancia drásticamente reducida y son malos miembros de la manada."
  POD_ghoul_ghoulify_interaction: "Otorgar el don de la vida #weak (Plan)#!"
@@ -845,10 +845,10 @@
  POD_ghoulify_prisoner_interaction: "Prisionero ghoul"
  POD_ghoulify_prisoner_interaction_desc: "Haz de [recipient.GetFirstName] tu esclavo eterno por la fuerza."
  POD_ghoulify_prisoner_interaction.tt: "[recipient.GetFirstName] se convierte en tu [ghoul|E]."
-  
- POD_herdify_prisoner_interaction: "Prisionero de la manada"
- POD_herdify_prisoner_interaction_desc: "Haz que [recipient.GetFirstName] sea tu rebaño por la fuerza."
- POD_herdify_prisoner_interaction.tt: "[recipient.GetFirstName] se convierte en tu rebaño."
+
+ POD_herdify_prisoner_interaction: "Añadir prisionero al ganado"
+ POD_herdify_prisoner_interaction_desc: "Forzar a [recipient.GetFirstName] a convertirse en parte de tu ganado."
+ POD_herdify_prisoner_interaction.tt: "[recipient.GetFirstName] se convierte en parte de tu ganado."
   
  POD_blink_modifier: "Destello"
  POD_blink_modifier_desc: "Moviéndote a una velocidad tremenda, encontrarás las rutas más rápidas a seguir para tu ejército."
@@ -863,10 +863,10 @@
  POD_vanish_interaction_desc: "Usando tus poderes de Ofuscación, puedes desaparecer del ojo público por un tiempo, deteniendo cualquier complot que tenga como objetivo tu objetivo."
  POD_vanish_tt: "Cualquier plan dirigido contra usted, ya sea personal u hostil, es detenido."
   
- POD_silence_death_modifier: "Silencio de muerte"
+ POD_silence_death_modifier: "Silencio mortal"
  POD_silence_death_modifier_desc: "Es difícil comunicarse cuando un silencio inquietante te sigue a todas partes."
   
- POD_silence_of_death_interaction: "Silencio de muerte"
+ POD_silence_of_death_interaction: "Silencio mortal"
  POD_silence_of_death_interaction_desc: "Usando tus poderes de Ofuscación, puedes obstaculizar severamente los intentos de tu víctima de comunicarse."
   
  POD_send_the_eighth_plague_interaction: "Envía la octava plaga"
@@ -1176,8 +1176,8 @@
  POD_fleshcrafting_character_interaction_desc: "Convierte a [recipient.GetFirstName] en un artefacto viviente."
  POD_fleshcrafting_character_interaction_mount: "Montar"
   
- POD_liquefy_the_mortal_coil_interaction: "Licuar la bobina mortal"
- POD_liquefy_the_mortal_coil_interaction_desc: "Convierte [recipient.GetFirstName] partes del cuerpo en sangre."
+ POD_liquefy_the_mortal_coil_interaction: "Licuar la Espiral Mortal"
+ POD_liquefy_the_mortal_coil_interaction_desc: "Convierte las partes del cuerpo de [recipient.GetFirstName] en sangre"
   
  POD_will_over_form_interaction: "La voluntad por encima de la forma"
  POD_will_over_form_interaction_desc: "Usa Vicisitud en [recipient.GetFirstName] a distancia."

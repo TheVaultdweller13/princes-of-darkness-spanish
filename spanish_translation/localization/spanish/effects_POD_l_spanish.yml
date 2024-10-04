@@ -1019,20 +1019,20 @@
  DRAUGHT_OF_PHOENIX_BLOOD_PERK_EFFECT: "Permite la resurrección si mueres por una causa no natural.\n#F Un número de días igual a la generación del vampiro después de la Muerte Definitiva, reencarnará en un nuevo cuerpo, una generación superior, conservando este poder pero con una imagen incompleta de quién era.#!"
   
   # Vicissitude # 
-  
- AWAKEN_THE_ZULO_SHAPE_PERK_EFFECT: "Como opción [shapeshift|E], ahora puedes cambiar de forma a la temible forma Zulo, una pesadilla de ocho pies de alto con escamas y pelaje grasiento, brazos simiescos rematados con uñas negras irregulares y una hilera de espinas erizadas que recorren la longitud de su columna vertebral."
- BLOODFORM_PERK_EFFECT: "Con técnicas avanzadas de Vicisitud, te transformas instantáneamente en un depósito de Vitae consciente. Como opción [shapeshift|E], ahora puedes transformarte en el escurridizo [GetModifier('POD_shapeshift_form_blood_modifier').GetNameWithTooltip]."
- MALLEABLE_VISAGE_PERK_EFFECT: "El usuario puede alterar su propio cuerpo de forma cosmética y sencilla. Puede ser más alto o más corpulento. Puede cambiar su voz remodelando su laringe o puede adoptar un nuevo tono de piel, un nuevo color de ojos, un nuevo cabello, etc. Como [character_interaction|E], ahora puedes modificar tu rostro o el de tus ghouls."
- REND_THE_OSSEOUS_FRAME_PERK_EFFECT: "En esta etapa de maestría, has progresado en la manipulación de huesos. Si se usa por sí solo, Desgarrar el esqueleto óseo puede infligir un daño terrible a un objetivo. Si se usa junto con Transfigurar la arcilla mortal, las pesadillas se vuelven posibles."
- THE_BODY_IMPOLITIC_PERK_EFFECT: "El cuerpo impolítico, posiblemente el más macabro de los dones de Vicissitude, permite al usuario invertir una parte de su sensibilidad en la carne de su cuerpo. Luego puede separarla del tronco para que cumpla sus órdenes. [espionage|E] Velocidad de progreso: #P +[EmptyScope.ScriptValue('digging_for_dirt_perk_percentage')|0]%#!"
+ 
+ AWAKEN_THE_ZULO_SHAPE_PERK_EFFECT: "Como una opción de [shapeshift|E], ahora puedes transformarte en la temible forma Zulo, una pesadilla de dos metros y medio de altura, con escamas y pelaje grasiento, brazos simiescos con uñas negras afiladas y una fila de espinas que recorren la longitud de su columna vertebral."
+ BLOODFORM_PERK_EFFECT: "Usando técnicas avanzadas de Vicisitud, te transformas instantáneamente en un charco de Vitae consciente. Como una opción de [shapeshift|E], ahora puedes cambiar de forma en el esquivo [GetModifier('POD_shapeshift_form_blood_modifier').GetNameWithTooltip]."
+ MALLEABLE_VISAGE_PERK_EFFECT: "El usuario puede alterar su propio cuerpo de formas simples y cosméticas. Puede ser más alto o más robusto. Puede cambiar su voz remodelando la laringe o adoptar un nuevo tono de piel, color de ojos, cabello, etc. Como una [character_interaction|E], ahora puedes ajustar tu rostro o el de tus ghouls."
+ REND_THE_OSSEOUS_FRAME_PERK_EFFECT: "En esta etapa de maestría, has avanzado a manipular el hueso. Usado por sí solo, Desgarrar el Marco Óseo puede infligir un daño terrible a un sujeto. Cuando se usa en conjunto con Transmutar la Arcilla Mortal, las pesadillas se vuelven posibles."
+ THE_BODY_IMPOLITIC_PERK_EFFECT: "Posiblemente el más macabro de los dones de Vicisitud, El Cuerpo Impolítico permite al usuario invertir una porción de su consciencia en la carne de su cuerpo. Luego, pueden separarlo del tronco para que obedezca sus órdenes. [espionage|E] Velocidad de Progreso: #P +[EmptyScope.ScriptValue('digging_for_dirt_perk_percentage')|0]%#!"
  THE_BODY_IMPOLITIC_PERK_BONUS_VALUE: "[GetPerk('the_body_impolitic_perk').GetName(GetPlayer)]"
- TRANSMOGRIFY_THE_MORTAL_CLAY_PERK_EFFECT: "Puedes realizar alteraciones dramáticas, y no solo en ti mismo, sino en cualquier sujeto al que puedas someter el tiempo suficiente para transmitir tu visión. Puedes reclutar a [GetMaA('szlachta').GetName] como [men_at_arms|E]."
- CHIROPTERAN_FORM_PERK_EFFECT: "Ahora tienes acceso a una nueva opción de cambio de forma, el [GetModifier('POD_shapeshift_form_chiropteran_modifier').GetNameWithTooltip]."
- LIVING_TESTUDO_PERK_EFFECT: "Puedes transformar a un prisionero en un artefacto."
- LIQUEFY_THE_MORTAL_COIL_PERK_EFFECT: "Como [character_interaction|E], te permite cortar una parte del cuerpo de tu objetivo."
- WILL_OVER_FORM_PERK_EFFECT: "Puedes usar vicisitud en otros personajes y modificar su [physical_trait|E]."
- OATHBREAKER_PERK_EFFECT: "#F Transforma tu sangre en una sustancia que puede suplantar vínculos de sangre extraños por un período de tiempo limitado#!" #NT!
- DRACUL_FORM_PERK_EFFECT: "Ahora tienes acceso a una nueva opción de cambio de forma, el [GetModifier('POD_shapeshift_form_dracul_modifier').GetNameWithTooltip]."
+ TRANSMOGRIFY_THE_MORTAL_CLAY_PERK_EFFECT: "Puedes realizar alteraciones dramáticas, y no solo en ti mismo, sino en cualquier sujeto que puedas someter el tiempo suficiente para impartir tu visión. Puedes reclutar [GetMaA('szlachta').GetName] como [men_at_arms|E]."
+ CHIROPTERAN_FORM_PERK_EFFECT: "Ahora tienes acceso a una nueva opción de transformación, el [GetModifier('POD_shapeshift_form_chiropteran_modifier').GetNameWithTooltip].\n#F Transfórmate en un enorme murciélago volador#!"
+ LIVING_TESTUDO_PERK_EFFECT: "Puedes moldear la carne de un prisionero en un artefacto.\n#F Usa a una víctima como arma y escudo viviente#!"
+ LIQUEFY_THE_MORTAL_COIL_PERK_EFFECT: "Como una [character_interaction|E], te permite separar una parte del cuerpo de tu objetivo.\n#F Transforma partes del cuerpo de la víctima en sangre#!"
+ WILL_OVER_FORM_PERK_EFFECT: "Puedes usar Vicisitud en otros personajes y modificar su [physical_trait|E].\n#F Usa Vicisitud sin manos a distancia#!"
+ OATHBREAKER_PERK_EFFECT: "#F Transforma tu sangre en una sustancia que puede subyugar los Vínculos de Sangre extranjeros por un período limitado de tiempo#!"
+ DRACUL_FORM_PERK_EFFECT: "Ahora tienes acceso a una nueva opción de transformación, el [GetModifier('POD_shapeshift_form_dracul_modifier').GetNameWithTooltip].\n#F Asume una forma dracónica cuya sangre se incinera al entrar en contacto con el aire#!" 
   
   # Obtenebration # 
   

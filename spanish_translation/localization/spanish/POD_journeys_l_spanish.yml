@@ -1050,7 +1050,7 @@
  hunt_target_planning_decline: "$POD_journey_planning_decline_default$"
  hunt_target_travel_title: "La caza comienza"
  hunt_target_travel_desc: "No suelo viajar fuera de [GetPlayer.GetCapitalLocation.GetCounty.GetTitle.GetBaseNameNoTier] para cazar, pero he decidido que esta vez merece la pena. [PlayerJourneyTarget.GetFirstNameNicknamed] no podrá escapar de mí durante mucho más tiempo."
- hunt_target_travel_confirm: "¿A qué sabrá la sangre de [PlayerJourneyTarget.GetHerHis|l]?"
+ hunt_target_travel_confirm: "¿A qué sabrá [PlayerJourneyTarget.GetHerHis|l] sangre?"
   
   
  wake_from_torpor_name: "Despertar"
@@ -1063,7 +1063,7 @@
  wake_from_torpor_planning_decline: "$POD_journey_planning_decline_default$"
  wake_from_torpor_travel_title: "Viaje para un durmiente"
  wake_from_torpor_travel_desc: "Una vez que encontremos a [PlayerJourneyTarget.GetFirstNameNicknamed], [PlayerJourneyTarget.GetSheHe|l] quedará completamente a mi merced, aunque seguirá siendo consciente de lo que le rodea a [PlayerJourneyTarget.GetHerHis|l]. Es algo aterrador de contemplar. Me pregunto qué haría [PlayerJourneyTarget.GetSheHe|l] si nuestras posiciones se invirtieran."
- wake_from_torpor_travel_confirm: "Solo tenemos que encontrar la guarida de [PlayerJourneyTarget.GetHerHis|l] primero."
+ wake_from_torpor_travel_confirm: "Solo tenemos que encontrar [PlayerJourneyTarget.GetHerHis|l] guarida."
   
   
  assault_lair_name: "Asaltar la guarida de"

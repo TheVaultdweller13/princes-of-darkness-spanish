@@ -20,7 +20,7 @@
  PODentrance_desc: "¡A través del hechizo conseguiré que [SCHEME.GetTarget.GetShortUINameNoTooltip] me quiera!"
  PODentrance_desc_general: "$PODentrance$ es un [personal_scheme|E] que tiene como objetivo agradarle al objetivo. Se hace disponible por el [discipline|E] de [GetTrait('presence').GetName( GetNullCharacter )] [GetPerk('entrancement_perk').GetName(GetNullCharacter)] [perk|E]. \n\n #X A diferencia de un plan normal, la probabilidad de éxito del plan indicada no es relevante. Una vez que el plan se completa, un duelo diplomático determinará el éxito. #! \n\nLas probabilidades de éxito aumentan en [GetPerk('majesty_perk').GetName(GetNullCharacter)], [GetTrait('presenceadvanced').GetName(GetNullCharacter)], [personal_scheme|E]0 y [personal_scheme|E]1. \n\nSi el defensor tiene [personal_scheme|E]2, [personal_scheme|E]3 o el hechizo de Hechicería de sangre 'Canción de Júpiter' lanzado, las probabilidades disminuyen."
  scheme_interaction_tt_PODentrance_approved: "[GetScheme('PODentrance').GetTypeName] [recipient.GetFirstName]. \nEsto terminará con un duelo diplomático.\nSi tiene éxito, la víctima aumentará su opinión sobre usted."
- PODENTRANCE_SUCCESS_DESC: "[TARGET_CHARACTER.GetShortUINamePossessive] [opinion|E] de ustedes aumentará!"
+ PODENTRANCE_SUCCESS_DESC: "[TARGET_CHARACTER.GetShortUINamePossessive] [opinion|E] de vosotros aumentará!"
  PODentrance_my_learning: "Tu aprendizaje: $VALUE|=+0$"
  PODentrance_my_diplomacy: "Tu diplomacia: $VALUE|=+0$"
  PODentrance_my_rival: "Tu víctima: $VALUE|=+0$"
@@ -335,7 +335,7 @@
  PODenthrall_desc: "¡A través del encanto conseguiré que [SCHEME.GetTarget.GetShortUINameNoTooltip] me quiera!"
  PODenthrall_desc_general: "Utilice el canto de sirena para obtener una opinión positiva y un gancho débil de una persona."
  scheme_interaction_tt_PODenthrall_approved: "Cautivar [recipient.GetFirstName]."
- PODenthrall_SUCCESS_DESC: "[TARGET_CHARACTER.GetShortUINamePossessive] [opinion|E] de ustedes aumentarán!"
+ PODenthrall_SUCCESS_DESC: "[TARGET_CHARACTER.GetShortUINamePossessive] [opinion|E] de vosotros aumentarán!"
  PODenthrall_my_diplomacy: "Tu diplomacia: $VALUE|=+0$"
  PODenthrall_my_rival: "Tu víctima: $VALUE|=+0$"
   
