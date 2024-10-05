@@ -1,4 +1,4 @@
-﻿l_english:
+l_spanish:
 # This localization replaces aliases from common\game_concepts\00_POD_game_concepts.txt
 # After Roads to Power, they started leading to CTDs.
 # So far, it is unclear why. Probably some obscure reason like hash collisions or race conditions.
@@ -13,7 +13,7 @@
 # To revert: Search&replace $pod_masquerade_exposure_with_icon$ -> [masquerade_exposure_with_icon|E]
  pod_masquerade_exposure_with_icon: "[Concept('the_masquerade','@masquerade_icon! Masquerade Exposure')|E]"
 
-# To revert: Search&replace $pod_cainites$ -> $pod_cainites$
+# To revert: Search&replace $pod_masquerade_exposure_with_icon$ -> $pod_cainites$
  pod_cainites: "[Concept('cainite','Cainites')|E]"
 
 # To revert: Search&replace $pod_diablerize$ -> $pod_diablerize$

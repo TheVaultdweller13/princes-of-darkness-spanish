@@ -6,17 +6,17 @@
   
  POD_heist_setup_suspicion_tt: "Comenzarás una misión [infiltration|E] en [GetPlayer.GetCurrentLocation.GetCounty.GetTitle.GetNameNoTier]"
   
- POD_heist_suspicion: "[suspicion_with_icon|E]: [CurrentHeist.Var('suspicion').GetValue]"
+ POD_heist_suspicion: "$pod_suspicion_with_icon$: [CurrentHeist.Var('suspicion').GetValue]"
  POD_heist_coterie: "Tu [GetPlayer.Custom('PODCoterie')]: $POD_player_coterie$"
  POD_heist_coterie_member_absent: "@warning_icon!#X [Scope.Char.GetFirstNameNicknamed] es #bold no#! presente en este [infiltration|E]#!"
   
- POD_heist_raise_suspicion_desc: "[suspicion_with_icon|E] aumentará #N#! en $VALUE|V0$"
- POD_heist_raise_suspicion_desc_past: "[suspicion_with_icon|E] #N rosa#! por $VALUE|V0$"
+ POD_heist_raise_suspicion_desc: "$pod_suspicion_with_icon$ aumentará #N#! en $VALUE|V0$"
+ POD_heist_raise_suspicion_desc_past: "$pod_suspicion_with_icon$ #N rosa#! por $VALUE|V0$"
  POD_heist_trigger_suspicion_event_desc: "@warning_icon!#X Ocurrirá una complicación en #bold $VALUE|V0$#! Sospecha#!"
- POD_heist_trigger_suspicion_event_desc_past: "#N Debido a que [suspicion_with_icon|E] ha llegado a #bold $VALUE|V0$#!, se ha producido una complicación.#!"
+ POD_heist_trigger_suspicion_event_desc_past: "#N Debido a que $pod_suspicion_with_icon$ ha llegado a #bold $VALUE|V0$#!, se ha producido una complicación.#!"
  POD_heist_trigger_suspicion_event_hint: "#N Las futuras comprobaciones [skill|E] durante este [infiltration|E] serán más difíciles.#!"
  POD_heist_maximum_suspicion_desc: "@warning_icon!#X Fallarás en esta infiltración en #bold [EmptyScope.ScriptValue('suspicion_max')|V0]#! Sospecha#!"
- POD_heist_maximum_suspicion_desc_past: "#N Porque [suspicion_with_icon|E] ha llegado a #bold [EmptyScope.ScriptValue('suspicion_max')|V0]#!, has fallado esto [infiltration|E].#!"
+ POD_heist_maximum_suspicion_desc_past: "#N Porque $pod_suspicion_with_icon$ ha llegado a #bold [EmptyScope.ScriptValue('suspicion_max')|V0]#!, has fallado esto [infiltration|E].#!"
   
  POD_heist_resource_deltas_tt: "Gastos netos durante este [infiltration|E]:"
   
@@ -757,9 +757,9 @@
   
   
  POD_heists.6001.t: "Un final temprano" #NT!
- POD_heists.6001.desc: "La muerte es solo un pequeño revés para mí.\n\nDesafortunadamente, debido a la naturaleza de mi habilidad de resurrección, mi nuevo cuerpo apareció en algún lugar muy lejos de la ubicación de mi [infiltration_mission|E].\n\nSi quiero intentarlo de nuevo, tendré que empezar desde el principio." #NT!
+ POD_heists.6001.desc: "La muerte es solo un pequeño revés para mí.\n\nDesafortunadamente, debido a la naturaleza de mi habilidad de resurrección, mi nuevo cuerpo apareció en algún lugar muy lejos de la ubicación de mi $pod_infiltration_mission$.\n\nSi quiero intentarlo de nuevo, tendré que empezar desde el principio." #NT!
  POD_heists.6001.a: "Aún es mejor que ser mortal." #NT!
- POD_heists.6001.a.tt: "Tu [infiltration_mission|E] ha terminado prematuramente debido a tu muerte." #NT!
+ POD_heists.6001.a.tt: "Tu $pod_infiltration_mission$ ha terminado prematuramente debido a tu muerte." #NT!
   
   
  POD_heists.7777.t: "La venganza del narrador"

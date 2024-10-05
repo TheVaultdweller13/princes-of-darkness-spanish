@@ -103,7 +103,7 @@
  POD_diablerize.350.desc.success: "Al mirar a [defender.GetHerHis] a los ojos, me quedo asombrada de lo maravillosa que es [defender.GetFirstName]. Me gustan mucho. Nunca podría hacer nada que pudiera lastimar a [defender.GetHerHim]. ¿Por qué estoy aquí en primer lugar si no es para disfrutar de la gloria de [defender.GetHerHis]?"
  POD_diablerize.350.desc.failure: "[defender.GetFirstName] intentó engañarme, pero mi mente no es tan débil como para caer en una estratagema tan descarada. ¡Tomaré la sangre de [defender.GetHerHis]!"
  POD_diablerize.350.option.a.success: "Te amo mucho."
- POD_diablerize.350.option.a.success.tt: "Aunque estoy fascinado por [defender.GetFirstName], no podré intentar [diablerize|E] [defender.GetHerHim] nuevamente."
+ POD_diablerize.350.option.a.success.tt: "Aunque estoy fascinado por [defender.GetFirstName], no podré intentar $pod_diablerize$ [defender.GetHerHim] nuevamente."
  POD_diablerize.350.option.a.failure: "Tus encantos no me impresionan."
   
  #375 entrance duel notify defender 
@@ -111,7 +111,7 @@
  POD_diablerize.375.desc.success: "Con mi [discipline|E] de presencia, he cautivado a [attacker.GetFirstName]. Aunque hechizado, [attacker.GetSheHe] no es una amenaza para mí."
  POD_diablerize.375.desc.failure: "Intento llamar la atención de [attacker.GetFirstName] e irradiar mi presencia hacia [attacker.GetHerHim] para volverlo pasivo. Con la velocidad y la ira con la que [attacker.GetSheHe] se acerca a mí, parece que he fracasado."
  POD_diablerize.375.option.a.success: "Sí, eso es. Yo soy a quien adoras."
- POD_diablerize.375.option.a.success.tt: "Mientras [attacker.GetFirstName] está fascinado por mí, [attacker.GetSheHe] no puede intentar [diablerize|E] volver a intentarlo."
+ POD_diablerize.375.option.a.success.tt: "Mientras [attacker.GetFirstName] está fascinado por mí, [attacker.GetSheHe] no puede intentar $pod_diablerize$ volver a intentarlo."
  POD_diablerize.375.option.a.failure: "¿Por qué [attacker.GetSheHe] no me ama?"
   
  # Dominate Duel 
@@ -180,14 +180,14 @@
  POD_diablerize.510.desc: "[attacker.GetFirstName] no se compromete con el ataque y se retira."
  POD_diablerize.510.option.a: "Buena suerte"
   
- #515 notify [diablerist|E] of prowess duel result 
+ #515 notify $pod_diablerist$ of prowess duel result 
  POD_diablerize.515.t: "Diablerie: ¡Al vencedor, el botín!"
  POD_diablerize.515.desc.success: "La batalla es brutal pero también rápida. Soy victorioso y [defender.GetFirstName] yace a mis pies."
  POD_diablerize.515.desc.failure: "Pensé que estaba listo, pero [defender.GetFirstNamePossessive] destreza en combate es demasiado para superar. He sido derrotado."
  POD_diablerize.515.option.a.success: "¿Y ahora qué hago con mi premio?"
  POD_diablerize.515.option.a.failure: "Empiezo a deslizarme hacia [torpor|E], preguntándome cuál será mi destino."
   
- #525 notify defender of prowess duel result, pick fate of defeated [diablerist|E] 
+ #525 notify defender of prowess duel result, pick fate of defeated $pod_diablerist$ 
  POD_diablerize.525.t: "¡La pelea!"
  POD_diablerize.525.desc.success: "[attacker.GetFirstNamePossessive] La destreza en combate es demasiada para superar. He sido derrotado."
  POD_diablerize.525.desc.failure: "La batalla es brutal pero también rápida. Soy victorioso y [attacker.GetFirstName] yace a mis pies."
@@ -211,12 +211,12 @@
  POD_diablerize.600.option.a: "¡Devora [victim.GetTitledFirstNamePossessive] alma!"
  POD_diablerize.600.option.a.tt: "[victim.GetTitledFirstName] está destruido!"
  POD_diablerize.600.option.a.tt.beast: "#R ¡SÍ! ¡HAZLO!#!"
- POD_diablerize.600.option.b: "No [diablerize|E] [victim.GetFirstName]."
+ POD_diablerize.600.option.b: "No $pod_diablerize$ [victim.GetFirstName]."
  POD_diablerize.600.option.b.tt.beast: "#R ¡No los dejes ir! [victim.GetSheHe] no merece la sangre! ¡Sí! #!"
  POD_diablerize.600.option.c: "Simplemente mátalos, la Diablerie es demasiado peligrosa."
  POD_diablerize.600.option.c.tt.beast: "El asesinato común y corriente, sin riesgo para el alma, pero sin aumento de poder."
   
-  # Attacker decides not to [diablerize|E] 
+  # Attacker decides not to $pod_diablerize$ 
  POD_diablerize.650.t: "¿Merced?"
  POD_diablerize.650.desc: "Fui derrotado. Estaba seguro de que [attacker.GetFirstName] me destruiría. Extrañamente, [attacker.GetSheHe] simplemente se alejó."
  POD_diablerize.650.option.a: "¿Será algún último vestigio de humanidad?"
@@ -273,7 +273,7 @@
  POD_diablerize.810.desc: "Uno de tus sirvientes señaló que cambiaste algunos de tus hábitos recientemente, algo que no sucede con frecuencia entre los de tu especie. Esto te recuerda los rumores sobre las terribles consecuencias de [diablerie|E] y su posible costo para tu alma. ¿Podría ser que tu última víctima esté tratando de contraatacar? Una perspectiva preocupante, en verdad..."
   
  POD_diablerize.4000.t: "¡Plan de Diablerie frustrado!"
- POD_diablerize.4000.desc: "Por algún giro del destino, mi plan para [diablerize|E] [defender.GetFirstName] ha fracasado."
+ POD_diablerize.4000.desc: "Por algún giro del destino, mi plan para $pod_diablerize$ [defender.GetFirstName] ha fracasado."
  POD_diablerize.4000.option.a: "¡Maldición! ¡Una noche [defender.GetFirstName], tu sangre será mía!"
   
  POD_diablerize.250.option.a.tt.defender_wins: "¡El defensor escapó!"

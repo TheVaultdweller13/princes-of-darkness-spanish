@@ -181,8 +181,8 @@
  POD_telepathy_interaction_desc: "Explora la mente de tu objetivo para descubrir uno de los [recipient.GetHerHis] secretos mejor guardados."
   
  POD_cover_masquerade_interaction: "Encubrir Mascarada"
- POD_cover_masquerade_interaction_desc: "Oculta cualquier error o prueba de tu naturaleza vampírica utilizando tus [disciplines|E], recursos o habilidades."
- POD_cover_masquerade_interaction_cap: "No puedes reducir más tu [masquerade_exposure_with_icon|E]"
+ POD_cover_masquerade_interaction_desc: "Oculta cualquier error o prueba de tu naturaleza vampírica utilizando tus $pod_disciplines$, recursos o habilidades."
+ POD_cover_masquerade_interaction_cap: "No puedes reducir más tu $pod_masquerade_exposure_with_icon$"
  POD_cover_masquerade_interaction_options_heading: "¿Cómo debo tratar con los mortales conocedores?"
  POD_cover_masquerade_dominate: "Haré que lo olviden."
  POD_cover_masquerade_presence: "¡Yo seré su dios, no expondrán mis secretos!"
@@ -191,17 +191,17 @@
  POD_cover_masquerade_bloodsorcery: "Con el poder de mi magia, sellaré sus mentes."
  POD_cover_masquerade_layinglow: "Debería mantener un perfil bajo por un tiempo."
   
- masquerade_increased_1: "[masquerade_exposure_with_icon|E] aumentará #N #!."
- masquerade_increased_2: "[masquerade_exposure_with_icon|E] aumentará #N #! en #V;bold 2#!."
- masquerade_increased_3: "[masquerade_exposure_with_icon|E] aumentará #N #! en #V;bold 3#!."
- masquerade_increased_4: "[masquerade_exposure_with_icon|E] aumentará #N#! en #V;bold 4#!."
- masquerade_increased_5: "[masquerade_exposure_with_icon|E] aumentará #N #! en #V;bold 5#!."
+ masquerade_increased_1: "$pod_masquerade_exposure_with_icon$ aumentará #N #!."
+ masquerade_increased_2: "$pod_masquerade_exposure_with_icon$ aumentará #N #! en #V;bold 2#!."
+ masquerade_increased_3: "$pod_masquerade_exposure_with_icon$ aumentará #N #! en #V;bold 3#!."
+ masquerade_increased_4: "$pod_masquerade_exposure_with_icon$ aumentará #N#! en #V;bold 4#!."
+ masquerade_increased_5: "$pod_masquerade_exposure_with_icon$ aumentará #N #! en #V;bold 5#!."
   
- masquerade_reduced_1: "[masquerade_exposure_with_icon|E] será #P reducido#!."
- masquerade_reduced_2: "[masquerade_exposure_with_icon|E] será #P reducido#! por #V;bold 2#!."
- masquerade_reduced_3: "[masquerade_exposure_with_icon|E] será #P reducido#! por #V;bold 3#!."
- masquerade_reduced_4: "[masquerade_exposure_with_icon|E] será #P reducido#! por #V;bold 4#!."
- masquerade_reduced_5: "[masquerade_exposure_with_icon|E] será #P reducido#! por #V;bold 5#!."
+ masquerade_reduced_1: "$pod_masquerade_exposure_with_icon$ será #P reducido#!."
+ masquerade_reduced_2: "$pod_masquerade_exposure_with_icon$ será #P reducido#! por #V;bold 2#!."
+ masquerade_reduced_3: "$pod_masquerade_exposure_with_icon$ será #P reducido#! por #V;bold 3#!."
+ masquerade_reduced_4: "$pod_masquerade_exposure_with_icon$ será #P reducido#! por #V;bold 4#!."
+ masquerade_reduced_5: "$pod_masquerade_exposure_with_icon$ será #P reducido#! por #V;bold 5#!."
   
  POD_cover_masquerade_interaction_bribe_beast: "#R Pero matar a un hombre sella su boca para siempre.....#!"
  POD_cover_masquerade_interaction_murderspree_beast: "#R Débiles, ¿cómo se atreven a amenazarnos?#!"
@@ -256,7 +256,7 @@
   
  POD_disciplines_interaction: "Solicitar Mentoría"
  POD_disciplines_interaction_desc: "Puedes pedirle a un amigo, amante o alma gemela que te enseñe un [discipline|E] que aún no conoces."
- POD_disciplines_interaction_accept: "Si tu mentor tiene algo que enseñarte, tendrás la opción de [disciplines|E] para aprender."
+ POD_disciplines_interaction_accept: "Si tu mentor tiene algo que enseñarte, tendrás la opción de $pod_disciplines$ para aprender."
  POD_mentoring_disciplines_custom: "Si tu amigo no tiene [discipline|E] que puedas aprender, no puedes hacer nada ahora mismo"
  POD_mentoring_disciplines.0001.t: "Mentoría"
  POD_mentoring_disciplines.0001.desc: "Si tu posible mentor conoce a [discipline|E] personas que tú no conoces, puedes pedirle que comparta [recipient.GetHerHis] de sus conocimientos contigo. Sin embargo, no es un proceso gratuito, ya que tendrá que compartir [recipient.GetHerHis] sangre contigo, lo que dará como resultado un vínculo de sangre débil. También es algo degradante pedir ayuda en la política vampírica. Por lo tanto, tu prestigio se verá afectado."
@@ -996,8 +996,8 @@ POD_ghoulify_mortal_interaction_bp_one: "Los vampiros deben tener una potencia d
  POD_transmogrify_interaction: "Transfigurar"
  POD_transmogrify_interaction_desc: "Con el uso del [discipline|E] de vicisitud, puedes transfigurar a [recipient.GetFirstName] en una bella o una bestia."
   
- POD_masquerade_risk_decrease_necromancy_ashes_to_ashes_tt: "Mi Nigromancia [discipline|E] de Cenizas a Cenizas disminuye mi riesgo de [masquerade_exposure|E]."
- POD_masquerade_risk_decrease_necromancy_tend_the_body_garden_tt: "Mi Nigromancia [discipline|E] de Cuidar el Jardín del Cuerpo disminuye mi riesgo de [masquerade_exposure|E]."
+ POD_masquerade_risk_decrease_necromancy_ashes_to_ashes_tt: "Mi Nigromancia [discipline|E] de Cenizas a Cenizas disminuye mi riesgo de $pod_masquerade_exposure$."
+ POD_masquerade_risk_decrease_necromancy_tend_the_body_garden_tt: "Mi Nigromancia [discipline|E] de Cuidar el Jardín del Cuerpo disminuye mi riesgo de $pod_masquerade_exposure$."
   
  POD_find_wraith_interaction: "Encuentra a Wraith"
  POD_find_wraith_interaction_desc: "Busca en tu territorio un [GetTrait('wraith').GetName( GetNullCharacter )] vulnerable a tus acciones."
@@ -1102,9 +1102,9 @@ POD_ghoulify_mortal_interaction_bp_one: "Los vampiros deben tener una potencia d
  POD_shapeshift_form_incarnate_darkness_modifier: "Forma de oscuridad encarnada"
   
  POD_train_disciplines_interaction: "Entrenar [discipline|E]"
- POD_train_disciplines_interaction_desc: "Enséñale a [recipient.GetFirstName] una de tus [disciplines|E]"
+ POD_train_disciplines_interaction_desc: "Enséñale a [recipient.GetFirstName] una de tus $pod_disciplines$"
  POD_mass_train_disciplines_interaction: "Entrenar [discipline|E] en masa"
- POD_mass_train_disciplines_interaction_desc: "Enseña a tus súbditos una de tus [disciplines|E]"
+ POD_mass_train_disciplines_interaction_desc: "Enseña a tus súbditos una de tus $pod_disciplines$"
  POD_train_celerity: "Un estudiante elegido al azar obtendrá [GetTrait('celerity').GetName(GetNullCharacter)] si aún no lo tiene."
  POD_train_potence: "Un estudiante elegido al azar obtendrá [GetTrait('potence').GetName(GetNullCharacter)] si aún no lo tiene."
  POD_train_vicissitude: "Un estudiante elegido al azar obtendrá [GetTrait('vicissitude').GetName(GetNullCharacter)] si aún no lo tiene."
@@ -1204,9 +1204,9 @@ POD_ghoulify_mortal_interaction_bp_one: "Los vampiros deben tener una potencia d
  POD_between_the_ticks_interaction: "Entre las garrapatas"
  POD_between_the_ticks_interaction_desc: "Gana el modificador [GetModifier('POD_between_the_ticks_modifier').GetNameWithTooltip]."
   
- ventrue_bane_warning: "¡Este personaje no cumple con tu Ventrue [feeding_restrictions|E]!"
+ ventrue_bane_warning: "¡Este personaje no cumple con tu Ventrue $pod_feeding_restrictions$!"
  POD_drink_herd_ventrue_weakness.t: "Debilidad de los Ventrue"
- POD_drink_herd_ventrue_weakness_desc: "Este miembro de la manada ahora es incompatible con tu Ventrue [feeding_restrictions|E] y ha sido eliminado automáticamente de tu manada."
+ POD_drink_herd_ventrue_weakness_desc: "Este miembro de la manada ahora es incompatible con tu Ventrue $pod_feeding_restrictions$ y ha sido eliminado automáticamente de tu manada."
  ghoul_herd_warning: "Convertir a un mortal en tu ghoul reducirá drásticamente la cantidad de resonancia que su sangre puede proporcionar."
   
  POD_paradox_perk_interaction: "Paradoja"
@@ -1329,7 +1329,7 @@ POD_ghoulify_mortal_interaction_bp_one: "Los vampiros deben tener una potencia d
  POD_golconda_mentoring_interaction_toast: "Compartiendo conocimientos"
   
  POD_guide_through_suspire_interaction: "Guía a través de Suspire"
- POD_guide_through_suspire_interaction_desc: "Intentarás ayudar a [recipient.GetShortUIName] a alcanzar [enlightenment|E]."
+ POD_guide_through_suspire_interaction_desc: "Intentarás ayudar a [recipient.GetShortUIName] a alcanzar $pod_enlightenment$."
  POD_guide_through_suspire_interaction_toast: "[recipient.GetShortUINamePossessive] Suspira"
   
  POD_nocturne_on_personal_interaction: "Nocturno"
