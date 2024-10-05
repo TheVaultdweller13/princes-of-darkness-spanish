@@ -74,7 +74,7 @@
  umbra_discovery_memory_desc_third_perspective: "[ROOT.GetName] encontró un descubrimiento de [umbra|E]" #NT!
   
  umbra_discovery_finder: "[Select_CString( this_character.IsLocalPlayer, 'You', this_character.GetFirstName )]" #NT!
- umbra_discovery_region: "[Concept(this_character.MakeScope.GetVariable('umbra_stationed_realm').Var('name').GetFlagName, Localize(Concatenate('game_concept_', this_character.MakeScope.GetVariable('umbra_stationed_realm').Var('name').GetFlagName)))|E]" #NT!
+ umbra_discovery_region: "[UmbraGlossary( this_character.MakeScope.GetVariable('umbra_stationed_realm').Var('name').GetFlagName )]"
  umbra_discovery.title: "[umbra|E] Descubrimiento: [Localize(Concatenate('umbra_discovery_', this_realm.MakeScope.GetVariable('umbra_discovery_type').GetFlagName))]" #NT!
  umbra_discovery_treasure: "Tesoro" #NT!
  umbra_discovery.treasure.desc: "$umbra_discovery_finder$ encontró un tesoro en el $umbra_discovery_region$ digno de un [umbra_expedition|E]" #NT!
