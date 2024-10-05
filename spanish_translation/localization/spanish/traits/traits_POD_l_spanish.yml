@@ -29,7 +29,7 @@
  trait_werewolf: "Hombre-lobo"
  trait_werewolf_desc: "Una criatura sobrenatural que cambia de forma. Se hacen llamar "Garou"."
  trait_track_werewolf: "Rango" #NT!
- trait_track_werewolf_desc: "#bold Nivel 2:#! [umbra_aptitude|E]: $pod_grace_i$#P +25%#!\n#bold Nivel 3:#! [umbra_aptitude|E]: $pod_grace_i$#P +25%#!\n#bold Nivel 4:#! [umbra_aptitude|E]: $pod_grace_i$#P +50%#!\n#bold Nivel 5:#! [umbra_aptitude|E]: $pod_grace_i$#P +50%#!\n#bold Nivel 6:#! [umbra_aptitude|E]: $pod_grace_i$#P +75%#!\n#italic El rango es una parte fundamental de la sociedad Garou, y la manifestación más completa de la naturaleza jerárquica de hombres lobo.#!" #NT!
+ trait_track_werewolf_desc: "#bold Nivel 2:#! [umbra_aptitude|E]: [grace_i]#P +25%#!\n#bold Nivel 3:#! [umbra_aptitude|E]: [grace_i]#P +25%#!\n#bold Nivel 4:#! [umbra_aptitude|E]: [grace_i]#P +50%#!\n#bold Nivel 5:#! [umbra_aptitude|E]: [grace_i]#P +50%#!\n#bold Nivel 6:#! [umbra_aptitude|E]: [grace_i]#P +75%#!\n#italic El rango es una parte fundamental de la sociedad Garou, y la manifestación más completa de la naturaleza jerárquica de hombres lobo.#!" #NT!
   
  trait_mage: "Mago"
  trait_mage_desc: "Humanos con avatares despertados que les permiten ejercer verdadera magia y alterar el tejido de la realidad."
@@ -37,15 +37,15 @@
  trait_wraith: "Fantasma"
  trait_wraith_desc: "Un alma muerta arrastrada de regreso al mundo mortal por magia oscura o por un apego a algo que dejó atrás."
  trait_gaunt: "Demacrado"
- trait_gaunt_desc: "Un Gaunt es un espectro más viejo que ha resuelto uno o más de sus $pod_Fetters$ y aún los mantiene."
+ trait_gaunt_desc: "Un Gaunt es un espectro más viejo que ha resuelto uno o más de sus [Fetters|E] y aún los mantiene."
  trait_domem: "Cúpula"
- trait_domem_desc: "Un Domem es un espectro cuyos $pod_Fetters$ están todos destruidos, lo que les impide permanecer en el [shadowlands|E] durante cualquier período de tiempo; si bien la condición de Domem generalmente implica edad, un espectro puede convertirse en un Domem mientras aún es muy joven, todo lo que requiere es que su $pod_Fetters$ sea destruido."
+ trait_domem_desc: "Un Domem es un espectro cuyos [Fetters|E] están todos destruidos, lo que les impide permanecer en el [shadowlands|E] durante cualquier período de tiempo; si bien la condición de Domem generalmente implica edad, un espectro puede convertirse en un Domem mientras aún es muy joven, todo lo que requiere es que su [Fetters|E] sea destruido."
  trait_enfant: "Niños"
  trait_enfant_desc: "Los espectros conscientes de sí mismos comienzan como Enfants; cuando una persona muere, su alma renace en el [underworld|E] cubierta por una capa de plasma llamada membrana."
  trait_track_fetter: "Grillete"
  trait_track_fetter_desc: "$game_concept_Fetter_desc$"
  trait_track_fetter_resolved: "Grillete resuelto"
- trait_track_fetter_resolved_desc: "$pod_Fetters$ también se puede resolver, lo que significa que un espectro obtiene la fuerza para decir adiós a las cosas y personas que amaba en vida. Un espectro que logra resolver todos sus $pod_Fetters$ puede permanecer en el [shadowlands|E] indefinidamente, pero si tal éxito otorga este beneficio, es raro hasta el punto de convertirse en un mito."
+ trait_track_fetter_resolved_desc: "[Fetters|E] también se puede resolver, lo que significa que un espectro obtiene la fuerza para decir adiós a las cosas y personas que amaba en vida. Un espectro que logra resolver todos sus [Fetters|E] puede permanecer en el [shadowlands|E] indefinidamente, pero si tal éxito otorga este beneficio, es raro hasta el punto de convertirse en un mito."
   
  trait_spirit: "Espíritu"
  trait_spirit_desc: "Los espíritus son entidades incorpóreas que se originan y generalmente habitan en la Umbra; por esa razón, algunos magos los llaman "Umbrood"."
@@ -77,7 +77,7 @@
  trait_cacophony_desc: "Actualmente compuestas en su mayoría por mujeres (debido a la dificultad asociada a educar a alguien con el rango vocal de la mayoría de los hombres), las Hijas practican Melpominee, un [discipline|E] que les permite invocar efectos extraños a través del canto. Son las coristas por excelencia de los no muertos, y organizar una reunión de ellas es un gran prestigio."
   
  trait_caitiff: "Caitiff"
- trait_caitiff_desc: "Conocidos como los sin clan, son los $pod_cainites$ que no pertenecen a ningún [Clan|E]."
+ trait_caitiff_desc: "Conocidos como los sin clan, son los [cainites|E] que no pertenecen a ningún [Clan|E]."
   
  trait_cappadocian: "Capadocio"
  trait_cappadocian_desc: "Eruditos distantes obsesionados con los misterios de la muerte y el alma."
@@ -104,7 +104,7 @@
  trait_giovanni_desc: "Tras su ascenso a la sangre, Augustus Giovanni comenzó inmediatamente a abrazar a su propia familia. En el proceso, los Giovanni se convirtieron en algo entre un linaje y un culto dentro los Capadocios [Clan|E]. Reconocidos como los expertos en [necromancy|E], los Giovanni se mantuvieron ligeramente separados de la madre [Clan|E]."
   
  trait_harbingersofskulls: "Presagios de calaveras"
- trait_harbingersofskulls_desc: "Un linaje de vampiros con una palidez mortal. Además, la piel de los Heraldos se encoge para que estos $pod_cainites$ parezcan esqueléticos, con miembros huesudos y rostros congelados en una sonrisa de muerte inmortal."
+ trait_harbingersofskulls_desc: "Un linaje de vampiros con una palidez mortal. Además, la piel de los Heraldos se encoge para que estos [cainites|E] parezcan esqueléticos, con miembros huesudos y rostros congelados en una sonrisa de muerte inmortal."
   
  trait_kiasyd: "Kiasyd"
  trait_kiasyd_desc: "Un linaje de vampiros con sangre de hada que desciende del Lasombra Marconius de Estrasburgo."
@@ -183,7 +183,7 @@
  trait_tremere_desc: "[Clan|E] de los eruditos, centrados en [bloodsorcery|E]. Son vilipendiados por su supuesto ataque a [antediluvian|E] Saulot, y temidos por la fuerte [Clan|E] disciplina y cohesión inauditas en otras partes de [cainite|E] la sociedad"
   
  trait_truebrujah: "Verdaderos Brujah"
- trait_truebrujah_desc: "Un linaje de Brujah [Clan|E] que afirman ser descendientes del fundador original [antediluvian|E] del linaje y no de su hijo $pod_diablerist$, Troile. Los verdaderos Brujah se destacan por su comportamiento tranquilo y desapegado."
+ trait_truebrujah_desc: "Un linaje de Brujah [Clan|E] que afirman ser descendientes del fundador original [antediluvian|E] del linaje y no de su hijo [diablerist|E], Troile. Los verdaderos Brujah se destacan por su comportamiento tranquilo y desapegado."
   
  trait_tzimisce: "Tzimisce"
  trait_tzimisce_desc: "[Clan|E] de etiqueta feudal y modelado sádico de la carne."
@@ -206,22 +206,22 @@
  trait_kueijin_desc: "Se dice que los Kuei-jin son los descendientes corruptos de los Wan Xian, los "Diez Mil Héroes" elegidos por el Augusto Personaje de Jade para guiar y proteger el universo en la historia antigua. Los Wan Xian fueron elegidos originalmente mediante pruebas de habilidad y coraje, y se alimentaron del chi ambiental del universo. Sin embargo, cayeron en desgracia, aprendiendo a alimentarse del chi de los seres vivos y corrompiendo las pruebas de valía."
   
  trait_animalism: "Animalismo"
- trait_animalism_desc: "Un [discipline|E] que acerca al vampiro a su naturaleza animal. Esto no solo le permite comunicarse con las criaturas de la naturaleza y obtener dominio sobre ellas, sino que le otorga influencia sobre la propia Bestia.\n\nEl animalismo es particularmente común entre los clanes más alejados de la humanidad, aunque muchos de sus poderes apuntan específicamente a las Bestias de los mortales y $pod_cainites$."
+ trait_animalism_desc: "Un [discipline|E] que acerca al vampiro a su naturaleza animal. Esto no solo le permite comunicarse con las criaturas de la naturaleza y obtener dominio sobre ellas, sino que le otorga influencia sobre la propia Bestia.\n\nEl animalismo es particularmente común entre los clanes más alejados de la humanidad, aunque muchos de sus poderes apuntan específicamente a las Bestias de los mortales y [cainites|E]."
   
  trait_animalismadvanced: "Animalismo avanzado"
- trait_animalismadvanced_desc: "Un [discipline|E] que acerca al vampiro a su naturaleza animal. Esto no solo le permite comunicarse con las criaturas de la naturaleza y obtener dominio sobre ellas, sino que le otorga influencia sobre la propia Bestia.\n\nEl animalismo es particularmente común entre los clanes más alejados de la humanidad, aunque muchos de sus poderes apuntan específicamente a las Bestias de los mortales y $pod_cainites$."
+ trait_animalismadvanced_desc: "Un [discipline|E] que acerca al vampiro a su naturaleza animal. Esto no solo le permite comunicarse con las criaturas de la naturaleza y obtener dominio sobre ellas, sino que le otorga influencia sobre la propia Bestia.\n\nEl animalismo es particularmente común entre los clanes más alejados de la humanidad, aunque muchos de sus poderes apuntan específicamente a las Bestias de los mortales y [cainites|E]."
   
  trait_auspex: "Auspex"
- trait_auspex_desc: "Auspex es un [discipline|E] que otorga a los vampiros sentidos sobrenaturales.\nEs uno de los $pod_disciplines$ más comunes y favorecidos entre los $pod_cainites$ debido a su versatilidad y utilidad general en casi todas las facetas de la existencia vampírica. Además, se sabe que otorga cierto grado de habilidad oracular, particularmente cuando alerta a un [cainite|E] sobre el peligro, incluso si está en [torpor|E]."
+ trait_auspex_desc: "Auspex es un [discipline|E] que otorga a los vampiros sentidos sobrenaturales.\nEs uno de los [disciplines|E] más comunes y favorecidos entre los [cainites|E] debido a su versatilidad y utilidad general en casi todas las facetas de la existencia vampírica. Además, se sabe que otorga cierto grado de habilidad oracular, particularmente cuando alerta a un [cainite|E] sobre el peligro, incluso si está en [torpor|E]."
   
  trait_auspexadvanced: "Auspex Avanzado"
- trait_auspexadvanced_desc: "Auspex es un [discipline|E] que otorga a los vampiros sentidos sobrenaturales.\nEs uno de los $pod_disciplines$ más comunes y favorecidos entre los $pod_cainites$ debido a su versatilidad y utilidad general en casi todas las facetas de la existencia vampírica. Además, se sabe que otorga cierto grado de habilidad oracular, particularmente cuando alerta a un [cainite|E] sobre el peligro, incluso si está en [torpor|E]."
+ trait_auspexadvanced_desc: "Auspex es un [discipline|E] que otorga a los vampiros sentidos sobrenaturales.\nEs uno de los [disciplines|E] más comunes y favorecidos entre los [cainites|E] debido a su versatilidad y utilidad general en casi todas las facetas de la existencia vampírica. Además, se sabe que otorga cierto grado de habilidad oracular, particularmente cuando alerta a un [cainite|E] sobre el peligro, incluso si está en [torpor|E]."
   
  trait_celerity: "Celeridad"
- trait_celerity_desc: "Celeridad es un [discipline|E] que otorga a los vampiros rapidez y reflejos sobrenaturales.\n\nPara algunos $pod_cainites$, el mundo mortal se mueve en cámara lenta. En momentos de estrés, los vampiros con Celeridad pueden moverse a una velocidad asombrosa, convirtiéndose en manchas de movimiento para cualquiera, mortal o inmortal, que no posea el [discipline|E]."
+ trait_celerity_desc: "Celeridad es un [discipline|E] que otorga a los vampiros rapidez y reflejos sobrenaturales.\n\nPara algunos [cainites|E], el mundo mortal se mueve en cámara lenta. En momentos de estrés, los vampiros con Celeridad pueden moverse a una velocidad asombrosa, convirtiéndose en manchas de movimiento para cualquiera, mortal o inmortal, que no posea el [discipline|E]."
   
  trait_celerityadvanced: "Celeridad avanzada"
- trait_celerityadvanced_desc: "Celeridad es un [discipline|E] que otorga a los vampiros rapidez y reflejos sobrenaturales.\n\nPara algunos $pod_cainites$, el mundo mortal se mueve en cámara lenta. En momentos de estrés, los vampiros con Celeridad pueden moverse a una velocidad asombrosa, convirtiéndose en manchas de movimiento para cualquiera, mortal o inmortal, que no posea el [discipline|E]."
+ trait_celerityadvanced_desc: "Celeridad es un [discipline|E] que otorga a los vampiros rapidez y reflejos sobrenaturales.\n\nPara algunos [cainites|E], el mundo mortal se mueve en cámara lenta. En momentos de estrés, los vampiros con Celeridad pueden moverse a una velocidad asombrosa, convirtiéndose en manchas de movimiento para cualquiera, mortal o inmortal, que no posea el [discipline|E]."
   
  trait_chimerstry: "Quimerismo"
  trait_chimerstry_desc: "Quimerstry es la marca registrada [discipline|E] de los Ravnos que evoca ilusiones. Estas imágenes fantasmas son tan reales como lo permite la habilidad de [cainite|E]."
@@ -248,13 +248,13 @@
  trait_dominateadvanced_desc: "Dominar es un [discipline|E] que abruma la mente de otra persona con la voluntad del vampiro, obligando a las víctimas a pensar o actuar de acuerdo con el decreto del vampiro.\n\nEl aspecto de Dominar de la maldición del vampirismo es que devalúa los principios básicos de la verdadera amistad o intimidad. Dominar también embota la empatía del usuario, y uno debe tener cuidado de no acostumbrarse a estar rodeado de aduladores en todo momento."
   
  trait_fortitude: "Fortaleza"
- trait_fortitude_desc: "La fortaleza es un [discipline|E] que otorga a los Vástagos una dureza sobrenatural, hasta el punto de resistir el fuego y la luz del sol.\n\nLa fortaleza también puede otorgar protección contra la manipulación y el control, como el $pod_disciplines$ de Dominación y Presencia."
+ trait_fortitude_desc: "La fortaleza es un [discipline|E] que otorga a los Vástagos una dureza sobrenatural, hasta el punto de resistir el fuego y la luz del sol.\n\nLa fortaleza también puede otorgar protección contra la manipulación y el control, como el [disciplines|E] de Dominación y Presencia."
   
  trait_flight: "Vuelo"
  trait_flight_desc: "Alas: característica anatómica innata, evolucionada, injertada o adquirida de otro modo y amplia experiencia en su uso. Da el poder de volar."
   
  trait_flightadvanced: "Vuelo avanzado"
- trait_flightadvanced_desc: "El vuelo es un [discipline|E] sobrenatural, exclusivo del linaje de las Gárgolas, que permite a estos vampiros volar.\n\nDemasiado pesados ​​para volar por medios naturales, las Gárgolas de piedra deben usar este [discipline|E]; otros $pod_cainites$ capaces de volar (transformándose en un murciélago o niebla usando Protean, por ejemplo) no lo necesitan y no pueden aprenderlo."
+ trait_flightadvanced_desc: "El vuelo es un [discipline|E] sobrenatural, exclusivo del linaje de las Gárgolas, que permite a estos vampiros volar.\n\nDemasiado pesados ​​para volar por medios naturales, las Gárgolas de piedra deben usar este [discipline|E]; otros [cainites|E] capaces de volar (transformándose en un murciélago o niebla usando Protean, por ejemplo) no lo necesitan y no pueden aprenderlo."
   
  trait_melpominee: "Melpominee"
  trait_melpominee_desc: "El Melpominee [discipline|E] apareció simultáneamente con las Hijas de la Cacofonía y está intrínsecamente vinculado a ese linaje. Permite a sus poseedores usar el habla y el canto para lograr una variedad de efectos sobrenaturales."
@@ -283,16 +283,16 @@
  trait_obeahadvanced_desc: "Obeah es el único [discipline|E] de los Salubri, también conocido como el Camino Valeren del Sanador.\n\nObeah se originó con Saulot en sus viajes por el Este, donde aprendió de los Kuei-jin el uso de la Perla del Dragón. Aprender Obeah hace que se desarrolle un tercer ojo en el medio de la frente."
   
  trait_obfuscate: "Ofuscación"
- trait_obfuscate_desc: "Ofuscación es un [discipline|E] que permite a los vampiros ocultarse, engañar la mente de otros o hacer que ignoren lo que el usuario no quiere que se vea.\n\nOfuscar es parte de la maldición de Caín sobre los $pod_antediluvians$ al borrarlos de la creación."
+ trait_obfuscate_desc: "Ofuscación es un [discipline|E] que permite a los vampiros ocultarse, engañar la mente de otros o hacer que ignoren lo que el usuario no quiere que se vea.\n\nOfuscar es parte de la maldición de Caín sobre los [antediluvians|E] al borrarlos de la creación."
   
  trait_obfuscateadvanced: "Ofuscación avanzado"
- trait_obfuscateadvanced_desc: "Ofuscación es un [discipline|E] que permite a los vampiros ocultarse, engañar a la mente de los demás o hacer que ignoren lo que el usuario no quiere que se vea.\n\nOfuscar es parte de la maldición de Caín sobre el $pod_antediluvians$ al borrarlos de la creación. Los usuarios frecuentes del [discipline|E] se encuentran divorciados de la sociedad, nunca participan en interacciones sociales, solo observan."
+ trait_obfuscateadvanced_desc: "Ofuscación es un [discipline|E] que permite a los vampiros ocultarse, engañar a la mente de los demás o hacer que ignoren lo que el usuario no quiere que se vea.\n\nOfuscar es parte de la maldición de Caín sobre el [antediluvians|E] al borrarlos de la creación. Los usuarios frecuentes del [discipline|E] se encuentran divorciados de la sociedad, nunca participan en interacciones sociales, solo observan."
   
  trait_obtenebration: "Obtenebración"
- trait_obtenebration_desc: "Se dice que [obtenebration|E] condena aún más al vampiro que lo usa, que se aleja aún más de la gracia de Dios y se adentra en la oscura atracción del Abismo. Por esta razón, tanto los animales como los humanos evitan al usuario. La oscuridad antinatural invocada por Obtenebración es extremadamente aterradora para los mortales, los animales e incluso otros $pod_cainites$ que no están acostumbrados a su uso."
+ trait_obtenebration_desc: "Se dice que [obtenebration|E] condena aún más al vampiro que lo usa, que se aleja aún más de la gracia de Dios y se adentra en la oscura atracción del Abismo. Por esta razón, tanto los animales como los humanos evitan al usuario. La oscuridad antinatural invocada por Obtenebración es extremadamente aterradora para los mortales, los animales e incluso otros [cainites|E] que no están acostumbrados a su uso."
   
  trait_obtenebrationadvanced: "Obtenebración avanzada"
- trait_obtenebrationadvanced_desc: "Se dice que la Obtenebración condena aún más al vampiro que la usa, que se aleja aún más de la gracia de Dios y se adentra en la oscura atracción del Abismo. Por esta razón, tanto los animales como los humanos evitan al usuario. La oscuridad antinatural invocada por la Obtenebración es extremadamente aterradora para los mortales, los animales e incluso otros $pod_cainites$ que no están acostumbrados a su uso."
+ trait_obtenebrationadvanced_desc: "Se dice que la Obtenebración condena aún más al vampiro que la usa, que se aleja aún más de la gracia de Dios y se adentra en la oscura atracción del Abismo. Por esta razón, tanto los animales como los humanos evitan al usuario. La oscuridad antinatural invocada por la Obtenebración es extremadamente aterradora para los mortales, los animales e incluso otros [cainites|E] que no están acostumbrados a su uso."
   
  trait_potence: "Potencia"
  trait_potence_desc: "La potencia es el [discipline|E] que otorga a los vampiros vigor físico y fuerza sobrenatural. Los vampiros con la potencia [discipline|E] poseen una destreza física que va más allá de los límites mortales."
@@ -301,10 +301,10 @@
  trait_potenceadvanced_desc: "La potencia es el [discipline|E] que otorga a los vampiros vigor físico y fuerza sobrenatural. Los vampiros con la potencia [discipline|E] poseen una destreza física que va más allá de los límites mortales."
   
  trait_presence: "Presencia"
- trait_presence_desc: "La presencia es el [discipline|E] de la fascinación sobrenatural y la manipulación emocional que permite a los Vástagos atraer, influir y controlar a las multitudes.\n\nLa presencia suavizó la maldición de Dios sobre $pod_cainites$, ya que hace que el vampiro se convierta en el centro de atención, ya sea fascinando, seduciendo o intimidando a quienes se encuentran cerca."
+ trait_presence_desc: "La presencia es el [discipline|E] de la fascinación sobrenatural y la manipulación emocional que permite a los Vástagos atraer, influir y controlar a las multitudes.\n\nLa presencia suavizó la maldición de Dios sobre [cainites|E], ya que hace que el vampiro se convierta en el centro de atención, ya sea fascinando, seduciendo o intimidando a quienes se encuentran cerca."
   
  trait_presenceadvanced: "Presencia Avanzada"
- trait_presenceadvanced_desc: "La presencia es el [discipline|E] de la fascinación sobrenatural y la manipulación emocional que permite a los Vástagos atraer, influir y controlar a las multitudes.\n\nLa presencia suavizó la maldición de Dios sobre $pod_cainites$, ya que hace que el vampiro se convierta en el centro de atención. Puede ser fascinante, seductor o intimidante para quienes se encuentran cerca."
+ trait_presenceadvanced_desc: "La presencia es el [discipline|E] de la fascinación sobrenatural y la manipulación emocional que permite a los Vástagos atraer, influir y controlar a las multitudes.\n\nLa presencia suavizó la maldición de Dios sobre [cainites|E], ya que hace que el vampiro se convierta en el centro de atención. Puede ser fascinante, seductor o intimidante para quienes se encuentran cerca."
   
  TRAIT_FLAG_DESC_can_intensify_herd_resonance: "Puede cambiar la intensidad de los miembros de su manada [resonance|E]" #NT!
   
@@ -339,10 +339,10 @@
  trait_temporisadvanced_desc: "Temporis es un [discipline|E] exclusivo de los Brujah Verdaderos. Supuestamente un refinamiento de Celeridad, Temporis le otorga al [cainite|E] la habilidad de manipular el flujo del tiempo.\n\nSi bien es poderoso, este [discipline|E] también puede ser difícil de usar."
   
  trait_thinbloodalchemy: "Alquimia de Sangre"
- trait_thinbloodalchemy_desc: "Exclusivo [discipline|E] para los Sangre Débil, les permite imitar los poderes del vampiro de sangre pura $pod_disciplines$.\n\nLa alquimia de sangre delgada es una práctica de dos pasos: destilación de un brebaje de sangre usando la fórmula adecuada, luego activación de dicho brebaje bebiéndolo y canalizando su poder."
+ trait_thinbloodalchemy_desc: "Exclusivo [discipline|E] para los Sangre Débil, les permite imitar los poderes del vampiro de sangre pura [disciplines|E].\n\nLa alquimia de sangre delgada es una práctica de dos pasos: destilación de un brebaje de sangre usando la fórmula adecuada, luego activación de dicho brebaje bebiéndolo y canalizando su poder."
   
  trait_thinbloodalchemyadvanced: "Alquimia de Sangre avanzada"
- trait_thinbloodalchemyadvanced_desc: "Exclusivo [discipline|E] para los Sangre Débil, les permite imitar los poderes del vampiro de sangre pura $pod_disciplines$.\n\nLa alquimia de sangre delgada es una práctica de dos pasos: destilación de un brebaje de sangre usando la fórmula adecuada, luego activación de dicho brebaje bebiéndolo y canalizando su poder."
+ trait_thinbloodalchemyadvanced_desc: "Exclusivo [discipline|E] para los Sangre Débil, les permite imitar los poderes del vampiro de sangre pura [disciplines|E].\n\nLa alquimia de sangre delgada es una práctica de dos pasos: destilación de un brebaje de sangre usando la fórmula adecuada, luego activación de dicho brebaje bebiéndolo y canalizando su poder."
   
  trait_valeren: "Valeren"
  trait_valeren_desc: "Valeren es el [discipline|E] místico de los Salubri. En su forma más básica, Valeren proporciona control sobre el dolor y aumenta la habilidad marcial, aparentemente permitiendo a los guerreros recurrir al poder del cielo para vencer a sus enemigos."
@@ -351,10 +351,10 @@
  trait_valerenadvanced_desc: "Valeren es el [discipline|E] místico de los Salubri. En su forma más básica, Valeren proporciona control sobre el dolor y aumenta la habilidad marcial, aparentemente permitiendo a los guerreros recurrir al poder del cielo para vencer a sus enemigos."
   
  trait_vicissitude: "Vicisitud"
- trait_vicissitude_desc: "Uno de los poderes más terroríficos disponibles para $pod_cainites$, Vicisitud es el poder característico de los Tzimisce y es casi desconocido fuera de [Clan|E]. Con él, un artesano experimentado puede esculpir la carne y los huesos de un sujeto, convirtiéndolo en una criatura de belleza alienígena o transformándolo en una monstruosidad deformada."
+ trait_vicissitude_desc: "Uno de los poderes más terroríficos disponibles para [cainites|E], Vicisitud es el poder característico de los Tzimisce y es casi desconocido fuera de [Clan|E]. Con él, un artesano experimentado puede esculpir la carne y los huesos de un sujeto, convirtiéndolo en una criatura de belleza alienígena o transformándolo en una monstruosidad deformada."
   
  trait_vicissitudeadvanced: "Vicisitud Avanzada"
- trait_vicissitudeadvanced_desc: "Uno de los poderes más terroríficos disponibles para $pod_cainites$, Vicisitud es el poder característico de los Tzimisce y es casi desconocido fuera de [Clan|E]. Con él, un artesano experimentado puede esculpir la carne y los huesos de un sujeto, convirtiéndolo en una criatura de belleza alienígena o transformándolo en una monstruosidad deformada."
+ trait_vicissitudeadvanced_desc: "Uno de los poderes más terroríficos disponibles para [cainites|E], Vicisitud es el poder característico de los Tzimisce y es casi desconocido fuera de [Clan|E]. Con él, un artesano experimentado puede esculpir la carne y los huesos de un sujeto, convirtiéndolo en una criatura de belleza alienígena o transformándolo en una monstruosidad deformada."
   
  trait_visceratika: "Visceratika"
  trait_visceratika_desc: "El [discipline|E] de Visceratika es posesión exclusiva del linaje Gárgola y es una extensión de su afinidad natural por la piedra, la tierra y las cosas hechas de ellas.\n\nVisceratika presenta habilidades de cambio de forma similares a las de Protean, aunque con un mayor énfasis en la defensa."
@@ -367,7 +367,7 @@
  trait_bloodsorcery_desc: "[bloodsorcery|E] se refiere a la magia realizada por vampiros, impulsada por prácticas religiosas u ocultas y el poder de la vitae [cainite|E].\n\nA través de la práctica de [bloodsorcery|E], un [cainite|E] puede invocar fuego, controlar el clima y hacer muchas otras cosas que son antinaturales incluso para los estándares vampíricos."
  trait_bloodsorcery_character_desc: "$bloodmagic_paths_display$\n\n$trait_bloodsorcery_desc$" #NT!
   
- bloodmagic_paths_display: "#medium [ROOT.Char.GetFirstNameNoTooltip] tiene conocimiento de estos $pod_bs_traditions$:[AddTextIf(GetScriptedGui('has_thaumaturgy_bloodmagic_sgui').IsShown(GuiScope.SetRoot(ROOT.Char.MakeScope).End),'\n$TAB|q$@tremere_icon! Thaumaturgy')][AddTextIf(GetScriptedGui('has_dur_an_ki_bloodmagic_sgui').IsShown(GuiScope.SetRoot(ROOT.Char.MakeScope).End),'\n$TAB|q$@assamite_icon! Dur-An-Ki')][AddTextIf(GetScriptedGui('has_akhu_bloodmagic_sgui').IsShown(GuiScope.SetRoot(ROOT.Char.MakeScope).End),'\n$TAB|q$@setite_icon! Akhu')][AddTextIf(GetScriptedGui('has_sadhana_bloodmagic_sgui').IsShown(GuiScope.SetRoot(ROOT.Char.MakeScope).End),'\n$TAB|q$@ravnos_icon! Sadhana')][AddTextIf(GetScriptedGui('has_koldunic_bloodmagic_sgui').IsShown(GuiScope.SetRoot(ROOT.Char.MakeScope).End),'\n$TAB|q$@tzimisce_icon! Koldunic')]#!" #NT!
+ bloodmagic_paths_display: "#medium [ROOT.Char.GetFirstNameNoTooltip] tiene conocimiento de estos [bs_traditions|E]:[AddTextIf(GetScriptedGui('has_thaumaturgy_bloodmagic_sgui').IsShown(GuiScope.SetRoot(ROOT.Char.MakeScope).End),'\n$TAB|q$@tremere_icon! Thaumaturgy')][AddTextIf(GetScriptedGui('has_dur_an_ki_bloodmagic_sgui').IsShown(GuiScope.SetRoot(ROOT.Char.MakeScope).End),'\n$TAB|q$@assamite_icon! Dur-An-Ki')][AddTextIf(GetScriptedGui('has_akhu_bloodmagic_sgui').IsShown(GuiScope.SetRoot(ROOT.Char.MakeScope).End),'\n$TAB|q$@setite_icon! Akhu')][AddTextIf(GetScriptedGui('has_sadhana_bloodmagic_sgui').IsShown(GuiScope.SetRoot(ROOT.Char.MakeScope).End),'\n$TAB|q$@ravnos_icon! Sadhana')][AddTextIf(GetScriptedGui('has_koldunic_bloodmagic_sgui').IsShown(GuiScope.SetRoot(ROOT.Char.MakeScope).End),'\n$TAB|q$@tzimisce_icon! Koldunic')]#!" #NT!
   
  TRAIT_FLAG_DESC_unlock_incorporeal_form: "Puede transformarse en un [GetModifier( 'POD_shapeshift_form_incorporeal_modifier' ).GetNameWithTooltip|L]" #NT!
   
@@ -393,7 +393,7 @@
   
  trait_sadhana: "Sadhana"
  trait_sadhanaadvanced: "Sadhana avanzada"
- trait_sadhana_desc: "Sadhana es una forma de hinduismo [bloodsorcery|E] que precede a la destacada taumaturgia hermética de los Tremere [Clan|E] en miles de años. La practican los brahmanes hindúes $pod_cainites$ de la India, conocidos como rakta-sadhus o incluso brahmanes de sangre."
+ trait_sadhana_desc: "Sadhana es una forma de hinduismo [bloodsorcery|E] que precede a la destacada taumaturgia hermética de los Tremere [Clan|E] en miles de años. La practican los brahmanes hindúes [cainites|E] de la India, conocidos como rakta-sadhus o incluso brahmanes de sangre."
   
  trait_akhu: "Akhu"
  trait_akhuadvanced: "Akhu avanzado"
@@ -586,7 +586,7 @@
  trait_something_unusual_desc: "Hay algo extraño en esto."
   
  trait_revenant: "Aparecido"
- trait_revenant_desc: "Un [ghoul|E] independiente nacido con sangre de vampiro en las venas. A menudo considerados híbridos impíos entre vampiros y mortales, $pod_revenants$ está atrapado entre ambos mundos."
+ trait_revenant_desc: "Un [ghoul|E] independiente nacido con sangre de vampiro en las venas. A menudo considerados híbridos impíos entre vampiros y mortales, [revenants|E] está atrapado entre ambos mundos."
   
  trait_zadruga: "Zadruga"
  trait_zadruga_desc: "Término Tzimisce para referirse a los ghouls hereditarios. De todos los clanes, los Tzimisce han creado la mayor cantidad de [ghoul|E] familias."
@@ -622,7 +622,7 @@
  trait_masssire_desc: "Este vampiro ha creado una gran cantidad de vampiros. La mayoría de los caminos consideran que esto es una violación de [masquerade|E]."
   
  trait_lamia: "Lamia"
- trait_lamia_desc: "Las Lamia eran un linaje de $pod_cainites$ dedicadas a defender al [Clan|E] Capadocio, aunque originalmente eran un grupo de cultistas que afirmaban descender de Lilith, la primera esposa de Adán."
+ trait_lamia_desc: "Las Lamia eran un linaje de [cainites|E] dedicadas a defender al [Clan|E] Capadocio, aunque originalmente eran un grupo de cultistas que afirmaban descender de Lilith, la primera esposa de Adán."
   
  trait_gangrel_greek: "Gangrel griego"
  trait_gangrel_greek_desc: "Los Gangrel griegos fueron una rama que comenzó en la Edad Oscura. Los Gangrel se han estado escondiendo en las ciudades de los hombres incluso antes de Babilonia. A medida que han pasado los siglos, estos Gangrel se han centrado en sobrevivir en un entorno diferente, uno plagado de peligros únicos."
@@ -673,8 +673,8 @@ trait_grondr_kinfolk: "Pariente Grondr"
   
  trait_custom_bloodline: "Línea de sangre personalizada"
  trait_custom_bloodline_character: "[ROOT.Char.GetDynasty.GetBaseNameNoTooltip]"
- trait_custom_bloodline_desc: "Linaje joven de $pod_cainites$. Aunque la mayoría de sus parientes no los reconocen como iguales, este linaje está listo para demostrarles a los demás que son los verdaderos gobernantes de la noche."
- trait_custom_bloodline_character_desc: "Linaje joven de $pod_cainites$. Aunque la mayoría de sus parientes no los reconocen como iguales, los [ROOT.Char.GetDynasty.GetBaseNameNoTooltip] están listos para demostrarles a los demás que son los verdaderos gobernantes de la noche."
+ trait_custom_bloodline_desc: "Linaje joven de [cainites|E]. Aunque la mayoría de sus parientes no los reconocen como iguales, este linaje está listo para demostrarles a los demás que son los verdaderos gobernantes de la noche."
+ trait_custom_bloodline_character_desc: "Linaje joven de [cainites|E]. Aunque la mayoría de sus parientes no los reconocen como iguales, los [ROOT.Char.GetDynasty.GetBaseNameNoTooltip] están listos para demostrarles a los demás que son los verdaderos gobernantes de la noche."
   
  trait_leading_front: "Lidera desde el frente"
  trait_leading_front_desc: "Artemis Orthia dio un ejemplo a todos los Ventrue: a veces, precipitarse hacia tu enemigo puede resolver los problemas mejor que los planes y la diplomacia."
@@ -1016,7 +1016,7 @@ trait_grondr_kinfolk: "Pariente Grondr"
  trait_arcanos_keening_desc: "Aquellos que pueden utilizar las artes del Keening pueden manipular las emociones a través del sonido."
   
  trait_arcanos_lifeweb: "Red de vida"
- trait_arcanos_lifeweb_desc: "Los espectros que conocen Lifeweb pueden usarlo para fortalecer, debilitar o vigilar a $pod_Fetters$."
+ trait_arcanos_lifeweb_desc: "Los espectros que conocen Lifeweb pueden usarlo para fortalecer, debilitar o vigilar a [Fetters|E]."
   
  trait_arcanos_mnemosynis: "Mnemosynis"
  trait_arcanos_mnemosynis_desc: "Los usuarios de Mnemosynis pueden rastrear y leer los recuerdos de otros."
@@ -1069,19 +1069,19 @@ trait_grondr_kinfolk: "Pariente Grondr"
  trait_ajaba: "Ajaba"
  trait_ajaba_desc: "Los hombres-hiena son los guerreros de Gea en África, un continente sin población de lobos. Aunque la Guerra de la Furia no llegó a África, los Ajaba fueron prácticamente destruidos por las luchas internas y su rivalidad con los Bastet."
  trait_track_ajaba: "Rango" #NT!
- trait_track_ajaba_desc: "#bold Nivel 2:#! [umbra_aptitude|E]: $pod_grace_i$#P +25%#!\n#bold Nivel 3:#! [umbra_aptitude|E]: $pod_grace_i$#P +25%#!\n#bold Nivel 4:#! [umbra_aptitude|E]: $pod_grace_i$#P +50%#!\n#bold Nivel 5:#! [umbra_aptitude|E]: $pod_grace_i$#P +50%#!\n#bold Nivel 6:#! [umbra_aptitude|E]: $pod_grace_i$#P +75%#!\n#italic Los Ajaba siempre han reconocido la Astucia y la Ferocidad como formas de renombre, pero también Valor Infamia, algo que a muchos de sus miembros les preocupa por el impacto a largo plazo.#!" #NT!
+ trait_track_ajaba_desc: "#bold Nivel 2:#! [umbra_aptitude|E]: [grace_i]#P +25%#!\n#bold Nivel 3:#! [umbra_aptitude|E]: [grace_i]#P +25%#!\n#bold Nivel 4:#! [umbra_aptitude|E]: [grace_i]#P +50%#!\n#bold Nivel 5:#! [umbra_aptitude|E]: [grace_i]#P +50%#!\n#bold Nivel 6:#! [umbra_aptitude|E]: [grace_i]#P +75%#!\n#italic Los Ajaba siempre han reconocido la Astucia y la Ferocidad como formas de renombre, pero también Valor Infamia, algo que a muchos de sus miembros les preocupa por el impacto a largo plazo.#!" #NT!
  trait_bastet: "Bastet"
  trait_bastet_desc: "Los hombres gato tienen muchas tribus diferentes, como los Garou, aunque cada una de ellas afirma poseer una especie diferente de felino salvaje. Están obsesionados con el conocimiento secreto y siempre lo buscan y lo atesoran. Muchos son grandes magos, otros son grandes guerreros, pero rara vez son animales de manada y generalmente trabajan solos. Algunas de sus tribus sufrieron mucho durante la Guerra de la Furia."
  trait_track_bastet: "Rango" #NT!
- trait_track_bastet_desc: "#bold Nivel 2:#! Obtén acceso al [spirit_wilds|E] para no Swara.\n#bold Nivel 4:#! [umbra_aptitude|E]: $pod_grace_i$#P +25%#!\n#bold Nivel 5:#! [umbra_aptitude|E]: $pod_grace_i$#P +25%#!\n#bold Nivel 6:#! [umbra_aptitude|E]: $pod_grace_i$#P +35%#!\n#italic Los Bastet reconocen una jerarquía. No denota autoridad absoluta como lo haría entre los Garou, sino más bien una cortesía y un reconocimiento de la experiencia. Los títulos de Bastet siempre tienen un significado social más allá de su rango.#!" #NT!
+ trait_track_bastet_desc: "#bold Nivel 2:#! Obtén acceso al [spirit_wilds|E] para no Swara.\n#bold Nivel 4:#! [umbra_aptitude|E]: [grace_i]#P +25%#!\n#bold Nivel 5:#! [umbra_aptitude|E]: [grace_i]#P +25%#!\n#bold Nivel 6:#! [umbra_aptitude|E]: [grace_i]#P +35%#!\n#italic Los Bastet reconocen una jerarquía. No denota autoridad absoluta como lo haría entre los Garou, sino más bien una cortesía y un reconocimiento de la experiencia. Los títulos de Bastet siempre tienen un significado social más allá de su rango.#!" #NT!
  trait_corax: "Corazon"
  trait_corax_desc: "Los hombres cuervo son mensajeros, espías y exploradores de Gaia que patrullan los cielos, siempre atentos al peligro. Son unos terribles charlatanes y contarán lo que han visto a cualquiera que quiera escucharlos. Escaparon de la persecución en la Guerra de la Furia ayudando a los Garou y mantienen las relaciones más cordiales con los hombres lobo de todo Fera."
  trait_track_corax: "Rango" #NT!
- trait_track_corax_desc: "#bold Nivel 1:#! [umbra_aptitude|E]: $pod_grace_i$#P +25%#!\n#bold Nivel 2:#! [umbra_aptitude|E]: $pod_grace_i$#P +25%#!\n#bold Nivel 3:#! [umbra_aptitude|E]: $pod_grace_i$#P +50%#!\n#bold Nivel 4:#! [umbra_aptitude|E]: $pod_grace_i$#P +50%#!\n#bold Nivel 5:#! [umbra_aptitude|E]: $pod_grace_i$#P +75%#!\n#bold Nivel 6:#! [umbra_aptitude|E]: $pod_grace_i$#P +100%#!\n#italic Los Corax ganan renombre como Garou Ragabash, aunque tienden a favorecer su particular tipo de Sabiduría. La gloria suele ser descuidada por los frágiles Corax.#!" #NT!
+ trait_track_corax_desc: "#bold Nivel 1:#! [umbra_aptitude|E]: [grace_i]#P +25%#!\n#bold Nivel 2:#! [umbra_aptitude|E]: [grace_i]#P +25%#!\n#bold Nivel 3:#! [umbra_aptitude|E]: [grace_i]#P +50%#!\n#bold Nivel 4:#! [umbra_aptitude|E]: [grace_i]#P +50%#!\n#bold Nivel 5:#! [umbra_aptitude|E]: [grace_i]#P +75%#!\n#bold Nivel 6:#! [umbra_aptitude|E]: [grace_i]#P +100%#!\n#italic Los Corax ganan renombre como Garou Ragabash, aunque tienden a favorecer su particular tipo de Sabiduría. La gloria suele ser descuidada por los frágiles Corax.#!" #NT!
  trait_gurahl: "Gurahl"
  trait_gurahl_desc: "Los hombres oso son los sanadores de Gaia, unidos a la Tierra con un vínculo más fuerte que cualquier otro Fera. Muchos Garou creen que los Gurahl están extintos, asesinados durante la Guerra de la Furia cuando no quisieron revelar el secreto de devolver la vida a los muertos."
  trait_track_gurahl: "Rango" #NT!
- trait_track_gurahl_desc: "#bold Nivel 4:#! [umbra_aptitude|E]: $pod_grace_i$#P +25%#!\n#bold Nivel 5:#! [umbra_aptitude|E]: $pod_grace_i$#P +25%#!\n#bold Nivel 6:#! [umbra_aptitude|E]: $pod_grace_i$#P +35%#!\n#italic Los Gurahl reconocen tres tipos de renombre: Honor, por devoción y respeto; Socorro, por actos de sanación, purificación o ayuda a otros; y Sabiduría, por restaurar, preservar o descubrir conocimiento o ganar una comprensión más profunda de uno mismo.#!" #NT!
+ trait_track_gurahl_desc: "#bold Nivel 4:#! [umbra_aptitude|E]: [grace_i]#P +25%#!\n#bold Nivel 5:#! [umbra_aptitude|E]: [grace_i]#P +25%#!\n#bold Nivel 6:#! [umbra_aptitude|E]: [grace_i]#P +35%#!\n#italic Los Gurahl reconocen tres tipos de renombre: Honor, por devoción y respeto; Socorro, por actos de sanación, purificación o ayuda a otros; y Sabiduría, por restaurar, preservar o descubrir conocimiento o ganar una comprensión más profunda de uno mismo.#!" #NT!
  trait_kitsune: "Kitsune"
  trait_kitsune_desc: "Los hombres zorro son magos y políticos que mantienen unida a la sociedad de cambiaformas asiáticos. Únicos entre los Fera, los Kitsune se encuentran solo en las Cortes de las Bestias del Reino Medio, y viven principalmente en China y Japón. Con la bendición de Luna, los Kitsune también actuaron como asesinos de las autoridades corruptas en la sociedad mortal, como magos de la corte y ladrones para proteger el Mandato Celestial."
  trait_track_kitsune: "Cruz"
@@ -1089,39 +1089,39 @@ trait_grondr_kinfolk: "Pariente Grondr"
  trait_mokole: "Mokolé"
  trait_mokole_desc: "Los hombres cocodrilo recuerdan la era de los Reyes Dragón, cuando terribles reptiles gobernaban la tierra. Recuerdan todo lo que ha sucedido y se guardan ese conocimiento para sí mismos, hablando solo con quienes son debidamente respetuosos. Sus formas de Crinos se parecen más a dinosaurios o dragones que a cocodrilos, lo que a veces los lleva a ser llamados hombres dragón."
  trait_track_mokole: "Rango" #NT!
- trait_track_mokole_desc: "#bold Nivel 2:#! Obtén acceso al [spirit_wilds|E].\n#bold Nivel 4:#! [umbra_aptitude|E]: $pod_grace_i$#P +25%#!\n#bold Nivel 5:#! [umbra_aptitude|E]: $pod_grace_i$#P +25%#!\n#bold Nivel 6:#! [umbra_aptitude|E]: $pod_grace_i$#P +35%#!\n#italic Los mokolé usan el mismo sistema de renombre que los Garou, venerando los principios de honor, sabiduría y gloria. El grado en el que un mokolé individual sigue cada principio está determinado completamente por su aspecto (auspicio).#!" #NT!
+ trait_track_mokole_desc: "#bold Nivel 2:#! Obtén acceso al [spirit_wilds|E].\n#bold Nivel 4:#! [umbra_aptitude|E]: [grace_i]#P +25%#!\n#bold Nivel 5:#! [umbra_aptitude|E]: [grace_i]#P +25%#!\n#bold Nivel 6:#! [umbra_aptitude|E]: [grace_i]#P +35%#!\n#italic Los mokolé usan el mismo sistema de renombre que los Garou, venerando los principios de honor, sabiduría y gloria. El grado en el que un mokolé individual sigue cada principio está determinado completamente por su aspecto (auspicio).#!" #NT!
  trait_nagah: "Naga"
  trait_nagah_desc: "Serpientes-hombre que se originaron en la India. La mayoría (si no todas) de las otras razas cambiantes creen que están muertas, pero todavía están muy presentes. Los Nagah, que actúan como los "Jueces de Gea", cumplen el papel de jueces silenciosos y verdugos ocultos de las razas cambiantes."
  trait_track_nagah: "Rango" #NT!
- trait_track_nagah_desc: "#bold Nivel 4:#! [umbra_aptitude|E]: $pod_grace_i$#P +25%#!\n#bold Nivel 5:#! [umbra_aptitude|E]: $pod_grace_i$#P +25%#!\n#bold Nivel 6:#! [umbra_aptitude|E]: $pod_grace_i$#P +35%#!\n#italic Debido a que los nidos son nómadas, los Nagah tienen que buscar a los Seshas para ganar renombre gracias a ellos. Los Seshas, ​​después de enterarse de las hazañas del nido, deciden qué puntos de renombre se les otorgan. Esto decide el rango y, a su vez, los dones que aprenderá un Nagah. El sistema de renombre utiliza Gloria, Honor y Sabiduría.#!" #NT!
+ trait_track_nagah_desc: "#bold Nivel 4:#! [umbra_aptitude|E]: [grace_i]#P +25%#!\n#bold Nivel 5:#! [umbra_aptitude|E]: [grace_i]#P +25%#!\n#bold Nivel 6:#! [umbra_aptitude|E]: [grace_i]#P +35%#!\n#italic Debido a que los nidos son nómadas, los Nagah tienen que buscar a los Seshas para ganar renombre gracias a ellos. Los Seshas, ​​después de enterarse de las hazañas del nido, deciden qué puntos de renombre se les otorgan. Esto decide el rango y, a su vez, los dones que aprenderá un Nagah. El sistema de renombre utiliza Gloria, Honor y Sabiduría.#!" #NT!
  trait_nuwisha: "Nuwisha"
  trait_nuwisha_desc: "Los hombres coyote son los maestros de Gea, aunque al igual que su tótem, el Viejo Coyote, prefieren enseñar exclusivamente a través de bromas. Gracias a una broma que le hicieron a Luna, ya no tienen Furia, aunque tienen una afinidad más estrecha con Umbra que con cualquier otro Fera."
  trait_track_nuwisha: "Rango" #NT!
- trait_track_nuwisha_desc: "#bold Nivel 1:#! [umbra_aptitude|E]: $pod_grace_i$#P +25%#!\n#bold Nivel 2:#! [umbra_aptitude|E]: $pod_grace_i$#P +25%#!\n#bold Nivel 3:#! [umbra_aptitude|E]: $pod_grace_i$#P +50%#!\n#bold Nivel 4:#! [umbra_aptitude|E]: $pod_grace_i$#P +50%#!\n#bold Nivel 5:#! [umbra_aptitude|E]: $pod_grace_i$#P +75%#!\n#bold Nivel 6:#! [umbra_aptitude|E]: $pod_grace_i$#P +100%#!\n#italic A diferencia de la mayoría de los Fera, que alcanzan el rango a través del honor y el favor de su tribu, los Nuwisha obtienen renombre a través de la enseñanza. En lugar de honor, tienen humor, y cuanto más humorísticos se muestren ante su deidad, una forma de Coyote encarnado, más renombre obtendrán.#!" #NT!
+ trait_track_nuwisha_desc: "#bold Nivel 1:#! [umbra_aptitude|E]: [grace_i]#P +25%#!\n#bold Nivel 2:#! [umbra_aptitude|E]: [grace_i]#P +25%#!\n#bold Nivel 3:#! [umbra_aptitude|E]: [grace_i]#P +50%#!\n#bold Nivel 4:#! [umbra_aptitude|E]: [grace_i]#P +50%#!\n#bold Nivel 5:#! [umbra_aptitude|E]: [grace_i]#P +75%#!\n#bold Nivel 6:#! [umbra_aptitude|E]: [grace_i]#P +100%#!\n#italic A diferencia de la mayoría de los Fera, que alcanzan el rango a través del honor y el favor de su tribu, los Nuwisha obtienen renombre a través de la enseñanza. En lugar de honor, tienen humor, y cuanto más humorísticos se muestren ante su deidad, una forma de Coyote encarnado, más renombre obtendrán.#!" #NT!
  trait_ratkin: "Rata"
  trait_ratkin_desc: "Los hombres rata vigilaban a la humanidad y evitaban que su número se hiciera demasiado grande. Sin embargo, los Garou usurparon ese papel y los Ratkin los odian desde entonces. Luchan firmemente por el Kaos y aprovechan cualquier oportunidad para socavar la tecnología."
  trait_track_ratkin: "Rango" #NT!
- trait_track_ratkin_desc: "#bold Nivel 4:#! [umbra_aptitude|E]: $pod_grace_i$#P +25%#!\n#bold Nivel 5:#! [umbra_aptitude|E]: $pod_grace_i$#P +25%#!\n#bold Nivel 6:#! [umbra_aptitude|E]: $pod_grace_i$#P +35%#!\n#italic Las colonias de Ratkin tienen una estricta jerarquía interna. Un Rey Rata gobierna la colonia, asistido por grupos de cortesanos, generalmente todos rodens Ratkin. Por debajo de los cortesanos, los rodens hombres rata tienen prioridad. Los metis ocupan el terreno intermedio, actuando como guardias y guardianes y con la esperanza de convertirse algún día en cortesanos.#!" #NT!
+ trait_track_ratkin_desc: "#bold Nivel 4:#! [umbra_aptitude|E]: [grace_i]#P +25%#!\n#bold Nivel 5:#! [umbra_aptitude|E]: [grace_i]#P +25%#!\n#bold Nivel 6:#! [umbra_aptitude|E]: [grace_i]#P +35%#!\n#italic Las colonias de Ratkin tienen una estricta jerarquía interna. Un Rey Rata gobierna la colonia, asistido por grupos de cortesanos, generalmente todos rodens Ratkin. Por debajo de los cortesanos, los rodens hombres rata tienen prioridad. Los metis ocupan el terreno intermedio, actuando como guardias y guardianes y con la esperanza de convertirse algún día en cortesanos.#!" #NT!
  trait_rokea: "Rokea"
  trait_rokea_desc: "Incluso el mar tiene sus protectores. Los hombres-tiburón patrullan las profundidades del mar y rara vez son vistos por los habitantes de la tierra."
  trait_track_rokea: "Rango" #NT!
- trait_track_rokea_desc: "#bold Nivel 2:#! Obtén acceso al [spirit_wilds|E].\n#bold Nivel 4:#! [umbra_aptitude|E]: $pod_grace_i$#P +25%#!\n#bold Nivel 5:#! [umbra_aptitude|E]: $pod_grace_i$#P +25%#!\n#bold Nivel 6:#! [umbra_aptitude|E]: $pod_grace_i$#P +35%#!\n#italic Los rokea aceptan tres formas de renombre: Valor, que hace referencia a la destreza y el coraje de un hombre tiburón en defensa de una gruta; Armonía, es decir, la capacidad de un hombre tiburón de aceptar su lugar en el mundo y actuar de acuerdo con él, e Innovación, que se otorga a los hombres tiburón que, a través de nuevas ideas, ayudan a la raza a defender el Mar y luchar contra la prole de Qyrl.#!" #NT!
+ trait_track_rokea_desc: "#bold Nivel 2:#! Obtén acceso al [spirit_wilds|E].\n#bold Nivel 4:#! [umbra_aptitude|E]: [grace_i]#P +25%#!\n#bold Nivel 5:#! [umbra_aptitude|E]: [grace_i]#P +25%#!\n#bold Nivel 6:#! [umbra_aptitude|E]: [grace_i]#P +35%#!\n#italic Los rokea aceptan tres formas de renombre: Valor, que hace referencia a la destreza y el coraje de un hombre tiburón en defensa de una gruta; Armonía, es decir, la capacidad de un hombre tiburón de aceptar su lugar en el mundo y actuar de acuerdo con él, e Innovación, que se otorga a los hombres tiburón que, a través de nuevas ideas, ayudan a la raza a defender el Mar y luchar contra la prole de Qyrl.#!" #NT!
  trait_apis: "Apis"
  trait_apis_desc: "Los Apis, hombres lobo o "toros lunares", estaban a cargo del cultivo y la agricultura y eran conocidos como los "casamenteros de Gea". Los Garou los llevaron a la extinción en la Guerra de la Furia."
  trait_track_apis: "Rango" #NT!
- trait_track_apis_desc: "#bold Nivel 4:#! [umbra_aptitude|E]: $pod_grace_i$#P +25%#!\n#bold Nivel 5:#! [umbra_aptitude|E]: $pod_grace_i$#P +25%#!\n#bold Nivel 6:#! [umbra_aptitude|E]: $pod_grace_i$#P +35%#!\n#italic Los Apis eran criaturas relativamente sociales que vivían en manadas de entre seis y veinticuatro individuos. Un poderoso toro gobernaba cada manada y defendía su título contra todos los retadores. Este toro estaba a cargo de proteger a la manada y liderarla en la batalla.#!" #NT!
+ trait_track_apis_desc: "#bold Nivel 4:#! [umbra_aptitude|E]: [grace_i]#P +25%#!\n#bold Nivel 5:#! [umbra_aptitude|E]: [grace_i]#P +25%#!\n#bold Nivel 6:#! [umbra_aptitude|E]: [grace_i]#P +35%#!\n#italic Los Apis eran criaturas relativamente sociales que vivían en manadas de entre seis y veinticuatro individuos. Un poderoso toro gobernaba cada manada y defendía su título contra todos los retadores. Este toro estaba a cargo de proteger a la manada y liderarla en la batalla.#!" #NT!
  trait_camazotz: "Camazotz"
  trait_camazotz_desc: "Los Camazotz eran hombres murciélago, mensajeros nocturnos del hemisferio sur de Gaia, contrapartes de los Corax."
  trait_track_camazotz: "Rango" #NT!
- trait_track_camazotz_desc: "#bold Nivel 4:#! [umbra_aptitude|E]: $pod_grace_i$#P +25%#!\n#bold Nivel 5:#! [umbra_aptitude|E]: $pod_grace_i$#P +25%#!\n#bold Nivel 6:#! [umbra_aptitude|E]: $pod_grace_i$#P +35%#!\n#italic Los Camazotz eran una raza muy social que vivía en enjambres igualitarios de entre una docena y un centenar de miembros. A menudo vivían en cavernas junto con sus parientes murciélagos. Aunque eran propensos al secreto, intentaban mantener relaciones amistosas y abiertas con otros cambiaformas.#!" #NT!
+ trait_track_camazotz_desc: "#bold Nivel 4:#! [umbra_aptitude|E]: [grace_i]#P +25%#!\n#bold Nivel 5:#! [umbra_aptitude|E]: [grace_i]#P +25%#!\n#bold Nivel 6:#! [umbra_aptitude|E]: [grace_i]#P +35%#!\n#italic Los Camazotz eran una raza muy social que vivía en enjambres igualitarios de entre una docena y un centenar de miembros. A menudo vivían en cavernas junto con sus parientes murciélagos. Aunque eran propensos al secreto, intentaban mantener relaciones amistosas y abiertas con otros cambiaformas.#!" #NT!
  trait_grondr: "Tierra"
  trait_grondr_desc: "Los hombres jabalí se encontraban en el norte de Europa. Su tarea era limpiar la tierra; se los llamaba los cuidadores de Gea. Los Garou los expulsaron durante la Guerra de la Furia; sus espíritus ancestrales cayeron ante el Wyrm y se convirtieron en los monstruosos Cerdos Calavera."
  trait_track_grondr: "Rango" #NT!
- trait_track_grondr_desc: "#bold Nivel 4:#! [umbra_aptitude|E]: $pod_grace_i$#P +25%#!\n#bold Nivel 5:#! [umbra_aptitude|E]: $pod_grace_i$#P +25%#!\n#bold Nivel 6:#! [umbra_aptitude|E]: $pod_grace_i$#P +35%#!\n#italic Los Grondr eran una raza activa y agresiva. Vivían en grupos similares a manadas llamados Sounders, cada uno liderado por un rey o reina que mantenía su título al derrotar a todos los que los desafiaban en combates rituales. Cada gobernante Sounder era igual a todos los demás; no tenían jerarquía más allá de los Sounders individuales.#!" #NT!
+ trait_track_grondr_desc: "#bold Nivel 4:#! [umbra_aptitude|E]: [grace_i]#P +25%#!\n#bold Nivel 5:#! [umbra_aptitude|E]: [grace_i]#P +25%#!\n#bold Nivel 6:#! [umbra_aptitude|E]: [grace_i]#P +35%#!\n#italic Los Grondr eran una raza activa y agresiva. Vivían en grupos similares a manadas llamados Sounders, cada uno liderado por un rey o reina que mantenía su título al derrotar a todos los que los desafiaban en combates rituales. Cada gobernante Sounder era igual a todos los demás; no tenían jerarquía más allá de los Sounders individuales.#!" #NT!
  #  trait_ananasi: "Ananási" #NT!
  #  trait_ananasi_desc: "Los hombres araña no son hijos de Gea, sino de la reina Ananasa, una poderosa hija espiritual de la Tejedora. Otros Fera los consideran extraños y perturbadores, y no sin razón: su forma animal es una horda de arañas rastreras, no poseen Furia y alimentan sus poderes con sangre robada a los humanos. Su nombre proviene del embaucador/dios de África occidental Anansi." #NT!
  #  trait_track_ananasi: "Rango" #NT!
- #  trait_track_ananasi_desc: "#bold Nivel 4:#! [umbra_aptitude|E]: $pod_grace_i$#P +25%#!\n#bold Nivel 5:#! [umbra_aptitude|E]: $pod_grace_i$#P +25%#!\n#bold Nivel 6:#! [umbra_aptitude|E]: $pod_grace_i$#P +35%#!\n#italic Los ananasi pueden ganar renombre en tres categorías, que corresponden a los tres miembros de la Tríada; intentan seguir a los tres, sin importar su facción, para obtener una comprensión más profunda de la "Gran Red" de la existencia. Las categorías son Astucia (para el Wyrm), Obediencia (para el Tejedor) y Sabiduría (para el Wyld).#!" #NT!
+ #  trait_track_ananasi_desc: "#bold Nivel 4:#! [umbra_aptitude|E]: [grace_i]#P +25%#!\n#bold Nivel 5:#! [umbra_aptitude|E]: [grace_i]#P +25%#!\n#bold Nivel 6:#! [umbra_aptitude|E]: [grace_i]#P +35%#!\n#italic Los ananasi pueden ganar renombre en tres categorías, que corresponden a los tres miembros de la Tríada; intentan seguir a los tres, sin importar su facción, para obtener una comprensión más profunda de la "Gran Red" de la existencia. Las categorías son Astucia (para el Wyrm), Obediencia (para el Tejedor) y Sabiduría (para el Wyld).#!" #NT!
   
  trait_hakken: "Hákken"
  trait_hakken_desc: "Los hombres lobo de Japón, que defienden las filosofías del bushido."
@@ -1232,20 +1232,20 @@ trait_grondr_kinfolk: "Pariente Grondr"
   
  TRAIT_FLAG_DESC_yin_imbalanced: "Le permite devorar más Chi Yin que el límite de Virtud Yin sin efectos negativos"
  TRAIT_FLAG_DESC_yang_imbalanced: "Le permite devorar más Chi Yang que el límite de la Virtud Yang sin efectos negativos"
- TRAIT_FLAG_DESC_umbra_aptitude_15: "[umbra_aptitude|E]: $pod_grace_i$#P +75%#!" #NT!
- TRAIT_FLAG_DESC_umbra_aptitude_10: "Progreso mensual de exploración de Umbra: $pod_grace_i$#P +10#!"
- TRAIT_FLAG_DESC_umbra_aptitude_9: "Progreso mensual de exploración de Umbra: $pod_grace_i$#P +9#!"
- TRAIT_FLAG_DESC_umbra_aptitude_8: "Progreso mensual de exploración de la Umbra: $pod_grace_i$#P +8#!"
- TRAIT_FLAG_DESC_umbra_aptitude_7: "Progreso mensual de exploración de Umbra: $pod_grace_i$#P +7#!"
- TRAIT_FLAG_DESC_umbra_aptitude_6: "Progreso mensual de exploración de Umbra: $pod_grace_i$#P +6#!"
- TRAIT_FLAG_DESC_umbra_aptitude_5: "Progreso mensual de exploración de Umbra: $pod_grace_i$#P +5#!"
- TRAIT_FLAG_DESC_umbra_aptitude_4: "Progreso mensual de exploración de Umbra: $pod_grace_i$#P +4#!"
- TRAIT_FLAG_DESC_umbra_aptitude_3: "Progreso mensual de exploración de Umbra: $pod_grace_i$#P +3#!"
- TRAIT_FLAG_DESC_umbra_aptitude_2: "Progreso mensual de exploración de Umbra: $pod_grace_i$#P +2#!"
- TRAIT_FLAG_DESC_umbra_aptitude_1: "Progreso mensual de exploración de Umbra: $pod_grace_i$#P +1#!"
- TRAIT_FLAG_DESC_umbra_sense_10: "[umbra_sense|E]: $pod_grace_i$#P +10#!" #NT!
- TRAIT_FLAG_DESC_umbra_sense_7: "[umbra_sense|E]: $pod_grace_i$#P +7#!" #NT!
- TRAIT_FLAG_DESC_umbra_sense_5: "[umbra_sense|E]: $pod_grace_i$#P +5#!" #NT!
+ TRAIT_FLAG_DESC_umbra_aptitude_15: "[umbra_aptitude|E]: [grace_i]#P +75%#!" #NT!
+ TRAIT_FLAG_DESC_umbra_aptitude_10: "Progreso mensual de exploración de Umbra: [grace_i]#P +10#!"
+ TRAIT_FLAG_DESC_umbra_aptitude_9: "Progreso mensual de exploración de Umbra: [grace_i]#P +9#!"
+ TRAIT_FLAG_DESC_umbra_aptitude_8: "Progreso mensual de exploración de la Umbra: [grace_i]#P +8#!"
+ TRAIT_FLAG_DESC_umbra_aptitude_7: "Progreso mensual de exploración de Umbra: [grace_i]#P +7#!"
+ TRAIT_FLAG_DESC_umbra_aptitude_6: "Progreso mensual de exploración de Umbra: [grace_i]#P +6#!"
+ TRAIT_FLAG_DESC_umbra_aptitude_5: "Progreso mensual de exploración de Umbra: [grace_i]#P +5#!"
+ TRAIT_FLAG_DESC_umbra_aptitude_4: "Progreso mensual de exploración de Umbra: [grace_i]#P +4#!"
+ TRAIT_FLAG_DESC_umbra_aptitude_3: "Progreso mensual de exploración de Umbra: [grace_i]#P +3#!"
+ TRAIT_FLAG_DESC_umbra_aptitude_2: "Progreso mensual de exploración de Umbra: [grace_i]#P +2#!"
+ TRAIT_FLAG_DESC_umbra_aptitude_1: "Progreso mensual de exploración de Umbra: [grace_i]#P +1#!"
+ TRAIT_FLAG_DESC_umbra_sense_10: "[umbra_sense|E]: [grace_i]#P +10#!" #NT!
+ TRAIT_FLAG_DESC_umbra_sense_7: "[umbra_sense|E]: [grace_i]#P +7#!" #NT!
+ TRAIT_FLAG_DESC_umbra_sense_5: "[umbra_sense|E]: [grace_i]#P +5#!" #NT!
   
  trait_permanent_maimed: "Mutilado permanente"
  trait_permanent_one_eyed: "Tuerto permanente"
@@ -1275,12 +1275,12 @@ trait_grondr_kinfolk: "Pariente Grondr"
  trait_forever_indomitable_character_desc: "[ROOT.GetCharacter.GetFirstNameNoTooltip] ha redimido a [ROOT.GetCharacter.GetHerselfHimself] ante los ojos del mundo sobrenatural al destruir la Inquisición... después de causarla."
   
  trait_golconda: "Golconda"
- trait_golconda_desc: "Este personaje ha alcanzado la paz interior tras convertirse en [enlightened|El] sobre la verdadera naturaleza de $pod_the_beast$."
- trait_golconda_character_desc: "[ROOT.GetCharacter.GetFirstNameNoTooltip] ha alcanzado la paz interior después de convertirse en [enlightened|El] sobre la verdadera naturaleza de $pod_the_beast$."
+ trait_golconda_desc: "Este personaje ha alcanzado la paz interior tras convertirse en [enlightened|El] sobre la verdadera naturaleza de [the_beast|E]."
+ trait_golconda_character_desc: "[ROOT.GetCharacter.GetFirstNameNoTooltip] ha alcanzado la paz interior después de convertirse en [enlightened|El] sobre la verdadera naturaleza de [the_beast|E]."
   
  trait_golconda_seeker: "Buscador de Golconda"
- trait_golconda_seeker_desc: "Este personaje está en el largo camino hacia $pod_enlightenment$."
- trait_golconda_seeker_character_desc: "[ROOT.GetCharacter.GetFirstNameNoTooltip] está en el largo camino hacia $pod_enlightenment$."
+ trait_golconda_seeker_desc: "Este personaje está en el largo camino hacia [enlightenment|E]."
+ trait_golconda_seeker_character_desc: "[ROOT.GetCharacter.GetFirstNameNoTooltip] está en el largo camino hacia [enlightenment|E]."
  trait_track_golconda_seeker: "Conocimiento"
  trait_track_golconda_seeker_desc: "\nTu [trait_level_track_xp|E] representa el porcentaje de éxito durante las etapas finales del [GetTrait('golconda').GetName(GetNullCharacter)] [journey|E].\n\n#X Todo el progreso se pierde al entrar en frenesí, o al cometer asesinato o robo.#!"
   

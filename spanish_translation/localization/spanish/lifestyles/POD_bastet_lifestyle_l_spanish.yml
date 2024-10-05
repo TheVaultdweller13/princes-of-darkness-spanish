@@ -24,12 +24,12 @@
  withering_stare_perk_name: "Mirada fulminante"
   
  PATHFINDERS_PRIDE_PERK_EFFECT: "#flavor Los gatos tienen un sentido de la orientación notablemente bueno. Con este don, un Bastet puede mejorar esa habilidad para encontrar la salida de la mayoría de los laberintos, desiertos o bosques. La gente digna puede aprender este don de los espíritus de las aves, pero ningún hombre gato lo admitirá voluntariamente en público#!" #NT!
- SILENT_STALKING_PERK_EFFECT: "Comienza con [EmptyScope.ScriptValue('infiltration_small_perk_suspicion_offset')|V0] $pod_suspicion_with_icon$ durante $pod_infiltration_missions$.\n #flavor Este truco común permite que un Bastet se mueva sin hacer ruido. Incluso puede pasar sobre superficies que crujen o se mueven, como pisos de madera o ramas apiladas, sin hacer ruido. #!" #NT!
+ SILENT_STALKING_PERK_EFFECT: "Comienza con [EmptyScope.ScriptValue('infiltration_small_perk_suspicion_offset')|V0] [suspicion_with_icon|E] durante [infiltration_mission|E].\n #flavor Este truco común permite que un Bastet se mueva sin hacer ruido. Incluso puede pasar sobre superficies que crujen o se mueven, como pisos de madera o ramas apiladas, sin hacer ruido. #!" #NT!
  CHESHIRE_PRANK_PERK_EFFECT: "#flavor La emprendedora Bastet descubrió el secreto para desaparecer de la vista de todos. Pronto se convirtió en un truco valioso y popular. #!" #NT!
  FORTUNA_PERK_EFFECT: "#flavor Los gatos aman a sus amigos y son famosos por su suerte. Este don les permite compartir parte de esa buena fortuna con los demás o incluso utilizar un poco de ella ellos mismos.#!" #NT!
  SHRIEK_PERK_EFFECT: "Otorga un modificador [GetModifier('shriek_perk_modifier').GetNameWithTooltip] al enemigo [knights|E] en la guerra como comandante o al enemigo en [single_combat_duel|E]."
  FREYJAS_BLESSING_PERK_EFFECT: "Como [character_interaction|E], te permite embarazar al objetivo."
- JUMP_TO_THE_MOON_PERK_EFFECT: "Progreso mensual de exploración de Umbra: $pod_grace_i$#P +15#!"
+ JUMP_TO_THE_MOON_PERK_EFFECT: "Progreso mensual de exploración de Umbra: [grace_i]#P +15#!"
  WITHERING_STARE_PERK_EFFECT: "Como [character_interaction|E], te permite infligir una herida al objetivo, cuya gravedad depende de tu destreza."
   
  sweet_hunters_smile_perk_name: "La dulce sonrisa del cazador"
@@ -107,7 +107,7 @@
   
  TREECLIMBER_PERK_EFFECT: "#flavor Al extender y afilar sus garras, y luego invocar este Don, un Bastet puede subir o bajar por cualquier superficie vertical, desde la corteza de un árbol hasta el hormigón. Los leopardos son excelentes trepando, y la mayoría de los kuasha enseñan este secreto primero. #!" #NT!
  TRAVELERS_TONGUES_PERK_EFFECT: "#flavor Al hacer uso de los poderes de Rahjah, una Bastet puede traducir cualquier idioma humano que se encuentre cerca de ella. Invocar al Destructor convertirá todo en un galimatías.#!" #NT!
- PART_THE_CURTAIN_PERK_EFFECT: "[umbra_aptitude|E]: $pod_grace_i$#P +50%#! \n #flavor Al igual que el Don común de nivel cuatro: Caminar entre mundos, este hechizo le permite a un leopardo cruzar hacia la Umbra cercana. Sin embargo, esta variación también le permite traer a otros a través de ella.#!" #NT!
+ PART_THE_CURTAIN_PERK_EFFECT: "[umbra_aptitude|E]: [grace_i]#P +50%#! \n #flavor Al igual que el Don común de nivel cuatro: Caminar entre mundos, este hechizo le permite a un leopardo cruzar hacia la Umbra cercana. Sin embargo, esta variación también le permite traer a otros a través de ella.#!" #NT!
  HUMBABAS_ESCAPE_PERK_EFFECT: "Ya no podéis ser encarcelados por asedios."
  OJAS_SURGE_PERK_EFFECT: "Como [character_interaction|E], te permite aumentar temporalmente un atributo."
  COBRAS_DANCE_PERK_EFFECT: "Es más probable que [imprison|E] [characters|E] después de un [siege|E] o [raid|E] exitoso."
@@ -146,7 +146,7 @@
   
  RHINOS_FAVOR_PERK_EFFECT: "#flavor Al invocar al espíritu del rinoceronte, el Khan puede hacer crecer un cuerno en su cráneo. Aunque es antiestético, esta protuberancia es una buena arma. #!" #NT!
  SKIN_OF_JADE_PERK_EFFECT: "#flavor Al quererse sólido, la piel del Khan obtiene la dureza del jade.#!" #NT!
- RICEPAPER_WALK_PERK_EFFECT: "Comienza con [EmptyScope.ScriptValue('infiltration_small_perk_suspicion_offset')|V0] $pod_suspicion_with_icon$ durante $pod_infiltration_missions$.\n #flavor Al sintonizar sus energías internas, el Khan puede caminar sobre una superficie ligera o frágil sin perturbarla, sin importar la forma que use. #!" #NT!
+ RICEPAPER_WALK_PERK_EFFECT: "Comienza con [EmptyScope.ScriptValue('infiltration_small_perk_suspicion_offset')|V0] [suspicion_with_icon|E] durante [infiltration_mission|E].\n #flavor Al sintonizar sus energías internas, el Khan puede caminar sobre una superficie ligera o frágil sin perturbarla, sin importar la forma que use. #!" #NT!
  MAKERS_CHARM_PERK_EFFECT: "Ahora, financiar la inspiración para los artefactos o encargarlos es menos costoso.\n #flavor Los Bastet pueden transformar materiales que alguna vez estuvieron vivos (¡pero no muertos vivientes!) en una variedad de objetos al instante. Los árboles pueden convertirse en refugios, las astas de los ciervos en lanzas, las pieles de los animales en armaduras y las flores en perfumes.#!" #NT!
  DRAGONROAR_PERK_EFFECT: "#flavor Rugiendo como un trueno, el Khan lanza una bola de fuego sobre sus enemigos. #!" #NT!
  THOUSAND_THUNDER_STRIKE_PERK_EFFECT: "#flavor Al juntar sus patas e invocar a Rahjah o una de sus manifestaciones (Shiva, Pan Gu, etc.), un tigre furioso provoca una onda expansiva que puede derribar edificios o perturbar a los espíritus impuros. El Rey de los Gatos, en sus formas más regias, enseña este Don al digno Khan. #!" #NT!
@@ -186,7 +186,7 @@
  DIAMOND_CLAWS_PERK_EFFECT: "#flavor Al clavar sus garras sobre piedra, acero o alguna otra superficie dura, Bastet las afila hasta dejarlas muy afiladas. Un espíritu de gato o de oso le enseña este don. #!" #NT!
  IMPALAS_FLIGHT_PERK_EFFECT: "#flavor Bastet duplica su velocidad al correr. Un espíritu de correcaminos o de guepardo le enseña este don. #!" #NT!
  RIVER_OF_BLOOD_PERK_EFFECT: "#flavor El suelo de África ha estado bañado en sangre durante decenas de miles de años. Con este Don, un Swara convoca esa sangre derramada a través del suelo y le da forma, creando un estanque, un río, una masa de tentáculos o una variedad de otras cosas. #!" #NT!
- WALKING_BETWEEN_WORLDS_PERK_EFFECT: "Progreso mensual de exploración de Umbra: $pod_grace_i$#P +10#!"
+ WALKING_BETWEEN_WORLDS_PERK_EFFECT: "Progreso mensual de exploración de Umbra: [grace_i]#P +10#!"
  DANCE_OF_THE_CHAYA_PERK_EFFECT: "Desbloquear $seek_aid_of_the_spirits_decision$ [decision|E]."
  CLEARWATER_PASSAGE_PERK_EFFECT: "Desbloquea la opción de cambio de forma [GetModifier( 'POD_shapeshift_form_water_modifier' ).GetNameWithTooltip|L]."
  GHOST_CARESS_PERK_EFFECT: "Como [character_interaction|E], te permite causar una herida al objetivo cuya gravedad depende de la rareza del artefacto reclamado por el destinatario."

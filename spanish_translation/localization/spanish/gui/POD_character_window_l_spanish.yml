@@ -10,8 +10,8 @@
  GHOULS_LABEL: "Ghouls"
  DOMITOR_LABEL: "Domitor"
   
- POD_feeding_restriction_valid: "[Character.GetFirstNameNoTooltip] #P encaja #! tu $pod_feeding_restrictions$"
- POD_feeding_restriction_invalid: "[Character.GetFirstNameNoTooltip] #N no encaja #! tu $pod_feeding_restrictions$"
+ POD_feeding_restriction_valid: "[Character.GetFirstNameNoTooltip] #P encaja #! tu [feeding_restrictions|E]"
+ POD_feeding_restriction_invalid: "[Character.GetFirstNameNoTooltip] #N no encaja #! tu [feeding_restrictions|E]"
   
  minions_button_name: "Esbirros"
  minions_button_name_werewolf: "Familiares"

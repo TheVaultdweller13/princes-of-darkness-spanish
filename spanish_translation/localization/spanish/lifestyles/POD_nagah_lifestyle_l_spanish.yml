@@ -23,7 +23,7 @@
  destroyers_blessing_perk_name: "Bendición del destructor"
  nagah_dance_of_shiva_perk_name: "Danza de Shiva"
   
- SWIMMING_THE_SPIRIT_RIVER_PERK_EFFECT: "Progreso mensual de exploración de la Umbra: $pod_grace_i$#P +10#!"
+ SWIMMING_THE_SPIRIT_RIVER_PERK_EFFECT: "Progreso mensual de exploración de la Umbra: [grace_i]#P +10#!"
  BREATH_OF_THE_DRAGON_LORDS_PERK_EFFECT: "Hiere al enemigo [knights|E] en la guerra como comandante o enemigo en [single_combat_duel|E]."
  NAGAH_DANCE_OF_SHIVA_PERK_EFFECT: "Como [character_interaction|E], te permite quemar una región entera y a toda su población, lo que reduce el desarrollo a 0 y te otorga prestigio.\n#F El Señor Shiva, el Destructor, es frecuentemente llamado Shiva Nataraja: Shiva, el Señor de la Danza. Cuando llegue el momento del fin del mundo, Shiva bailará y las llamas consumirán todo, preparando al mundo para el próximo ciclo. Este Don le otorga al mundo una pequeña muestra de esa destrucción.#!"
  NAGAH_DANCE_OF_SHIVA_REQUIREMENT: "@warning_icon!#X Debes completar una misión de Wani (colocar un explorador en cualquier reino de Umbra para encontrar una pista sobre la ubicación y comenzar un [umbra_expedition|E] para llegar a ellos y luego recibir una misión) para desbloquear esta ventaja.#!"
@@ -117,6 +117,6 @@
  magistrates_icy_judgment_perk_name: "El gélido juicio del magistrado"
  mahanaga_perk_name: "Mahanaga"
   
- ASSASSINS_STRIKE_PERK_EFFECT: "Progreso mensual de exploración de Umbra: $pod_grace_i$#P +5#!"
+ ASSASSINS_STRIKE_PERK_EFFECT: "Progreso mensual de exploración de Umbra: [grace_i]#P +5#!"
  MAGISTRATES_ICY_JUDGMENT_PERK_EFFECT: "Hiere al enemigo [knights|E] en la guerra como comandante o al enemigo en [single_combat_duel|E], a menos que sea un espíritu."
  MAHANAGA_PERK_EFFECT: "Obtienes un modificador [GetModifier('mahanaga_perk_modifier').GetNameWithTooltip] cuando cambias de forma a [GetModifier('POD_nagah_form_azhi_dahaka_modifier').GetNameWithTooltip]."

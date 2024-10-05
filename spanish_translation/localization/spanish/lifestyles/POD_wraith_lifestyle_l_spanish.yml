@@ -59,7 +59,7 @@
   
  arcanos_lifeweb_focus: "Enfoque de Lifeweb"
  arcanos_lifeweb_focus_modifier: "[GetFocus('arcanos_lifeweb_focus').GetName]"
- arcanos_lifeweb_focus_desc: "Fortalecer, debilitar o vigilar $pod_Fetters$."
+ arcanos_lifeweb_focus_desc: "Fortalecer, debilitar o vigilar [Fetters|E]."
  arcanos_lifeweb_focus_effect_desc: "Centrándose en las subvenciones de Lifeweb:"
   
  arcanos_moliate_focus: "Enfoque moliado"
@@ -373,10 +373,10 @@
  arcanoi_oubliette_perk_name: "Mazmorra secreta"
   
  ENSHROUD_PERK_EFFECT: "Ya no es necesario hacer un sacrificio para acceder al [tempest|E].\n#F Un Heraldo puede manipular la membrana entre el [shadowlands|E] y el [tempest|E], lo que le permite ingresar al [tempest|E] sin abrir un Nihil o usar el [tempest|E] para ocultarse.#!"
- WEATHER_EYE_PERK_EFFECT: "Posibilidad de quedar atrapado en la Umbra: #P -5%#!\nMonthly Progreso de exploración de la Umbra: $pod_grace_i$#P +5#!\n#F Un Heraldo siempre está al tanto de las condiciones actuales en las [tempest|E] ubicaciones cercanas y puede tomar atajos entre dos [shadowlands|E] ubicaciones.#!"
- PHANTOM_WINGS_PERK_EFFECT: "Posibilidad de quedar atrapado en la Umbra: #P -5%#!\nMonthly Progreso de exploración de la Umbra: $pod_grace_i$#P +5#!\n#F Un Heraldo puede desarrollar alas para planear a través de [tempest|E] y [shadowlands|E].#!"
+ WEATHER_EYE_PERK_EFFECT: "Posibilidad de quedar atrapado en la Umbra: #P -5%#!\nMonthly Progreso de exploración de la Umbra: [grace_i]#P +5#!\n#F Un Heraldo siempre está al tanto de las condiciones actuales en las [tempest|E] ubicaciones cercanas y puede tomar atajos entre dos [shadowlands|E] ubicaciones.#!"
+ PHANTOM_WINGS_PERK_EFFECT: "Posibilidad de quedar atrapado en la Umbra: #P -5%#!\nMonthly Progreso de exploración de la Umbra: [grace_i]#P +5#!\n#F Un Heraldo puede desarrollar alas para planear a través de [tempest|E] y [shadowlands|E].#!"
  RETURN_PERK_EFFECT: "Puede acceder al [dark_kingdom|E] correspondiente en el [tempest|E].\n#F Un Heraldo puede viajar desde cualquier lugar en el [tempest|E] hasta su hogar por la ruta más rápida posible.#!"
- FLICKER_PERK_EFFECT: "Posibilidad de quedar atrapado en la Umbra: #P -10%#!\nMonthly Progreso de la exploración de la Umbra: $pod_grace_i$#P +10#!\n#F Un Heraldo puede doblar el [tempest|E] para teletransportarse a otra ubicación.#!"
+ FLICKER_PERK_EFFECT: "Posibilidad de quedar atrapado en la Umbra: #P -10%#!\nMonthly Progreso de la exploración de la Umbra: [grace_i]#P +10#!\n#F Un Heraldo puede doblar el [tempest|E] para teletransportarse a otra ubicación.#!"
  STORMREADER_PERK_EFFECT: "Ya no te perderás en [tempest|E].\n#F Un Heraldo obtiene un sentido intuitivo de [tempest|E], lo que le permite reducir los tiempos de viaje cuando viaja hacia o desde una ubicación en [tempest|E], y navegar para evita una vorágine o mitiga sus efectos.#!"
  TEMPEST_RIDERS_CANCELEER_PERK_EFFECT: "#F Un Heraldo puede desarrollar alas negras metálicas, lo que le permite planear, atacar y proteger a otros.#!"
  ARCANOI_OUBLIETTE_PERK_EFFECT: "Desbloquea la opción $EXECUTION_BANISH_TO_TEMPEST$ [execution|E] para el prisionero [GetTrait('wraith').GetName( GetNullCharacter )].\n#F Un Heraldo puede enviar otro espectro directamente al [tempest|E].#!"
@@ -494,12 +494,12 @@
  walk_the_web_perk_name: "Pasea por la red"
  souls_interwoven_perk_name: "Almas entrelazadas"
   
- SENSE_STRAND_PERK_EFFECT: "Desbloquea el modo Mapa [Fetter|E].\n#F Un Monitor siempre está al tanto de la ubicación de su $pod_Fetters$ y puede extender sus sentidos a las inmediaciones de un $pod_Fetters$.#!"
+ SENSE_STRAND_PERK_EFFECT: "Desbloquea el modo Mapa [Fetter|E].\n#F Un Monitor siempre está al tanto de la ubicación de su [Fetters|E] y puede extender sus sentidos a las inmediaciones de un [Fetters|E].#!"
  LIFELINE_PERK_EFFECT: "Permitir el uso de $POD_set_fetter_character_interaction$ [character_interaction|E] en [GetTrait('wraith').GetName( GetNullCharacter )].\n#F Un Monitor puede crear un "pseudo-[Fetter|E]" entre dos espectros que les permite trabajar juntos.#!"
- STRAND_CHANNEL_PERK_EFFECT: "Permite interactuar con tu $pod_Fetters$ desde cualquier lugar de la umbra.\n#F Un Monitor puede hablar a través de un [Fetter|E], o usar sus Arcanoi a través de un [Fetter|E].#!"
+ STRAND_CHANNEL_PERK_EFFECT: "Permite interactuar con tu [Fetters|E] desde cualquier lugar de la umbra.\n#F Un Monitor puede hablar a través de un [Fetter|E], o usar sus Arcanoi a través de un [Fetter|E].#!"
  SPLICE_STRAND_PERK_EFFECT: "Desbloquear $POD_manipulate_fetter_interaction$ [character_interaction|E], permitir la creación de un [Fetter|E] temporal.\n#F Un monitor puede crear un [Fetter|E] temporal.#!"
- EARLY_WARNING_PERK_EFFECT: "Recibirás una notificación cuando tu $pod_Fetters$ vaya a morir por causas naturales.\n#F Un Monitor puede colocar una etiqueta en un mortal que le alertará si el Quick está a punto de morir.#!"
- SEVER_STRAND_PERK_EFFECT: "Bonificación a $POD_manipulate_fetter_interaction$ [character_interaction|E], permite destruir $pod_Fetters$.\n#F Un Monitor puede quitarle un [Fetter|E] a otro Espectro.#!"
+ EARLY_WARNING_PERK_EFFECT: "Recibirás una notificación cuando tu [Fetters|E] vaya a morir por causas naturales.\n#F Un Monitor puede colocar una etiqueta en un mortal que le alertará si el Quick está a punto de morir.#!"
+ SEVER_STRAND_PERK_EFFECT: "Bonificación a $POD_manipulate_fetter_interaction$ [character_interaction|E], permite destruir [Fetters|E].\n#F Un Monitor puede quitarle un [Fetter|E] a otro Espectro.#!"
  WALK_THE_WEB_PERK_EFFECT: "Como [character_interaction|E], te permite teletransportarte a la ubicación de un [Fetter|E].\n#F Un Monitor puede viajar rápidamente a un [Fetter|E].#!"
  SOULS_INTERWOVEN_PERK_EFFECT: "Permite el uso de $POD_set_fetter_character_interaction$ [character_interaction|E] en todos.\n#F Un Monitor puede tomar a un mortal voluntario (o a un sobrenatural viviente/no muerto) como [Fetter|E], y a cambio puede comunicarse con el Monitor a voluntad, sin importar dónde se encuentre cualquiera de ellos.#!"
   
@@ -1007,8 +1007,8 @@
  the_coincidental_gathering_perk_name: "La reunión casual"
   
  FORTUITOUS_WANDERING_PERK_EFFECT: "#F Un Resucitado puede descubrir pistas que lo guíen hacia una de sus Pasiones.#!"
- FLASHBACK_PERK_EFFECT: "#F Un Resucitado puede evocar una imagen de algo importante que sucedió cerca o con uno de sus $pod_Fetters$.#!"
- THE_FACE_IN_THE_CROWD_PERK_EFFECT: "#F Un Resucitado puede saber si una persona está conectada con una de sus Pasiones o $pod_Fetters$.#!"
+ FLASHBACK_PERK_EFFECT: "#F Un Resucitado puede evocar una imagen de algo importante que sucedió cerca o con uno de sus [Fetters|E].#!"
+ THE_FACE_IN_THE_CROWD_PERK_EFFECT: "#F Un Resucitado puede saber si una persona está conectada con una de sus Pasiones o [Fetters|E].#!"
  FORTUITOUS_MEETING_PERK_EFFECT: "#F Un Resucitado puede torcer el Destino para permitirle conocer a alguien con quien quiera hablar o visitar.#!"
  THE_COINCIDENTAL_GATHERING_PERK_EFFECT: "#F Un Resucitado puede reunir a varias personas en un encuentro "casual".#!"
   

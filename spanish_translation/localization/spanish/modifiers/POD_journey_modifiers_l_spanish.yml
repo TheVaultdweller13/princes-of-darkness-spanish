@@ -12,16 +12,16 @@
  golconda_rage_modifier: "Contemplando la rabia"
   
  master_infiltrator_modifier: "Maestro infiltrado"
- master_infiltrator_modifier_desc: "Comienza con [EmptyScope.ScriptValue('master_infiltrator_suspicion_offset')|V0] $pod_suspicion_with_icon$ durante $pod_infiltration_missions$."
+ master_infiltrator_modifier_desc: "Comienza con [EmptyScope.ScriptValue('master_infiltrator_suspicion_offset')|V0] [suspicion_with_icon|E] durante [infiltration_mission|E]."
   
  skilled_infiltrator_modifier: "Infiltrador experto"
- skilled_infiltrator_modifier_desc: "Comienza con [EmptyScope.ScriptValue('skilled_infiltrator_suspicion_offset')|V0] $pod_suspicion_with_icon$ durante $pod_infiltration_missions$."
+ skilled_infiltrator_modifier_desc: "Comienza con [EmptyScope.ScriptValue('skilled_infiltrator_suspicion_offset')|V0] [suspicion_with_icon|E] durante [infiltration_mission|E]."
   
  infiltration_experience_modifier: "Experiencia de infiltración"
- infiltration_experience_modifier_desc: "Comienza con [EmptyScope.ScriptValue('infiltration_experience_suspicion_offset')|V0] $pod_suspicion_with_icon$ durante $pod_infiltration_missions$.\n#weak (Se acumula hasta 5 veces)#!"
+ infiltration_experience_modifier_desc: "Comienza con [EmptyScope.ScriptValue('infiltration_experience_suspicion_offset')|V0] [suspicion_with_icon|E] durante [infiltration_mission|E].\n#weak (Se acumula hasta 5 veces)#!"
   
  wary_of_infiltrators_modifier: "Desconfianza ante los infiltrados"
- wary_of_infiltrators_modifier_desc: "$pod_infiltration_missions$ apuntando a este personaje comienza con un [EmptyScope.ScriptValue('wary_of_infiltrators_suspicion_offset')|V0] $pod_suspicion_with_icon$ adicional."
+ wary_of_infiltrators_modifier_desc: "[infiltration_mission|E] apuntando a este personaje comienza con un [EmptyScope.ScriptValue('wary_of_infiltrators_suspicion_offset')|V0] [suspicion_with_icon|E] adicional."
   
  heist_caught_modifier: "Indigno de confianza"
  heist_caught_modifier_desc: "Este personaje ha sido descubierto infiltrándose en otro tribunal por motivos nefastos."

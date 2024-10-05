@@ -31,7 +31,7 @@
  pod_knights.6.b: "¡Traidores! ¡Están por todas partes!"
  
  pod_knights.7.t: "El Campeón Cínico"
- pod_knights.7.desc: "Siempre el abogado del diablo, uno de tus campeones molesta constantemente a la corte, y a ti, acerca de la hipocresía de las Sendas y la inevitable victoria de la Bestia sobre todos los $pod_cainites$ al final. Algunos de tus cortesanos te han pedido que elimines a este personaje cínico de tu entorno antes de que sus discursos comiencen a erosionar la voluntad de todos tus seguidores."
+ pod_knights.7.desc: "Siempre el abogado del diablo, uno de tus campeones molesta constantemente a la corte, y a ti, acerca de la hipocresía de las Sendas y la inevitable victoria de la Bestia sobre todos los [cainites|E] al final. Algunos de tus cortesanos te han pedido que elimines a este personaje cínico de tu entorno antes de que sus discursos comiencen a erosionar la voluntad de todos tus seguidores."
  pod_knights.7.a: "La salvación del alma no tiene precio"
  pod_knights.7.b: "...pero puede esperar un poco más"
  
@@ -42,9 +42,9 @@
  
  pod_knights.100.t: "$knight_culture_player_plural_no_tooltip$ Desleales"
  pod_knights.100.desc: "$knight_culture_player_plural$ solo están dispuestos a luchar por un líder en quien realmente creen. Después de todo, están poniendo sus vidas en juego.\n\nÚltimamente, ha habido susurros en la corte de que algunos de tus campeones consideran marcharse y buscar su fortuna en otro lugar."
- pod_knights.100.tt: "Estos $knight_culture_player_plural$ abandonarán tu corte debido a la falta de $pod_loyalty_with_icon$ si su opinión sigue por debajo de [GetPlayer.MakeScope.ScriptValue('POD_loyalty_opinion')|0V] el próximo año:"
- pod_knights.100.tt2: "Alternativamente, puedes #P;bold darles tierras#!, o asegurar su $pod_loyalty_with_icon$ de varias otras formas."
+ pod_knights.100.tt: "Estos $knight_culture_player_plural$ abandonarán tu corte debido a la falta de [loyalty_with_icon|E] si su opinión sigue por debajo de [GetPlayer.MakeScope.ScriptValue('POD_loyalty_opinion')|0V] el próximo año:"
+ pod_knights.100.tt2: "Alternativamente, puedes #P;bold darles tierras#!, o asegurar su [loyalty_with_icon|E] de varias otras formas."
  pod_knights.100.a: "Preocupante."
  pod_knights.100.b: "Te relevaré de tus deberes de combate."
- pod_knights.100.message: "$knight_culture_player$ se marcha debido a la falta de $pod_loyalty_with_icon$"
+ pod_knights.100.message: "$knight_culture_player$ se marcha debido a la falta de [loyalty_with_icon|E]"
  

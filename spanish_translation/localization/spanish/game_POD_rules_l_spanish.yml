@@ -15,9 +15,9 @@
  setting_pod_lore_restrictions_default: "Restricciones predeterminadas"
  setting_pod_lore_restrictions_default_desc: "Una experiencia equilibrada, adecuada para la mayoría de los jugadores."
  setting_pod_lore_restrictions_more: "Más restricciones"
- setting_pod_lore_restrictions_more_desc: "$pod_storyteller_mode_with_icon$ está activo. Adecuado para jugadores experimentados. #N Esto hará que la experiencia de juego sea más difícil. #!"
+ setting_pod_lore_restrictions_more_desc: "[storyteller_mode_with_icon|E] está activo. Adecuado para jugadores experimentados. #N Esto hará que la experiencia de juego sea más difícil. #!"
  setting_pod_lore_restrictions_less: "Menos restricciones"
- setting_pod_lore_restrictions_less_desc: "$pod_samuel_haight_mode_with_icon$ está activo. Adecuado para jugadores que disfrutan de personajes con superpoderes. #N Esto dará lugar a una experiencia de juego más sencilla y a resultados ridículos.#!"
+ setting_pod_lore_restrictions_less_desc: "[samuel_haight_mode_with_icon|E] está activo. Adecuado para jugadores que disfrutan de personajes con superpoderes. #N Esto dará lugar a una experiencia de juego más sencilla y a resultados ridículos.#!"
   
  rule_age_of_inquisition_difficulty: "$POD_gamerule$ Dificultad de la Inquisición"
  setting_age_of_inquisition_difficulty_easy: "Inquisición fácil"
@@ -86,7 +86,7 @@
  #setting_wod_rule_set_dav20: "DAV20"
  #setting_wod_rule_set_dav20_desc: "Edición del 20.º aniversario de Dark Ages Vampire. Esto puede afectar a las disciplinas, a los [Clan|E] banes, a los símbolos de rasgos, etc."
  #setting_wod_rule_set_v5: "V5"
- #setting_wod_rule_set_v5_desc: "Vampiro: La Mascarada, quinta edición. Esto puede afectar a $pod_disciplines$, [Clan|E] perdiciones, símbolos de rasgos, etc."
+ #setting_wod_rule_set_v5_desc: "Vampiro: La Mascarada, quinta edición. Esto puede afectar a [disciplines|E], [Clan|E] perdiciones, símbolos de rasgos, etc."
   
  rule_black_death: "$POD_gamerule$ La Peste Negra"
  setting_black_death_default: "Muerte negra por defecto"
@@ -122,21 +122,21 @@
  setting_pod_grand_city_limit_disabled: "Ilimitado" #NT!
  setting_pod_grand_city_limit_disabled_desc: "Puedes tener una cantidad ilimitada de [grand_cities|E]. Esto hará que el juego sea #N más fácil#!." #NT!
   
- rule_hunt_journey_speed: "$POD_gamerule$ Velocidad de caza $pod_journeys$"
+ rule_hunt_journey_speed: "$POD_gamerule$ Velocidad de caza [journeys|E]"
  setting_hunt_journey_speed_5: "5 meses"
- setting_hunt_journey_speed_5_desc: "Hunt $pod_journeys$ tiene un [planning_speed|E] del 20% mensual."
+ setting_hunt_journey_speed_5_desc: "Hunt [journeys|E] tiene un [planning_speed|E] del 20% mensual."
  setting_hunt_journey_speed_10: "10 meses"
- setting_hunt_journey_speed_10_desc: "Hunt $pod_journeys$ tiene un [planning_speed|E] del 10% mensual."
+ setting_hunt_journey_speed_10_desc: "Hunt [journeys|E] tiene un [planning_speed|E] del 10% mensual."
  setting_hunt_journey_speed_20: "20 meses"
- setting_hunt_journey_speed_20_desc: "Hunt $pod_journeys$ tiene un [planning_speed|E] del 5% mensual."
+ setting_hunt_journey_speed_20_desc: "Hunt [journeys|E] tiene un [planning_speed|E] del 5% mensual."
   
  rule_journey_cost_mult: "$POD_gamerule$ [journey|E] Multiplicador de costo"
  setting_journey_cost_mult_0: "0x"
- setting_journey_cost_mult_0_desc: "$pod_journeys$ no cuesta nada."
+ setting_journey_cost_mult_0_desc: "[journeys|E] no cuesta nada."
  setting_journey_cost_mult_05: "0,5x"
  setting_journey_cost_mult_05_desc: "[journey|E] los costes se reducen a la mitad."
  setting_journey_cost_mult_1: "1x"
- setting_journey_cost_mult_1_desc: "$pod_journeys$ cuesta el importe normal."
+ setting_journey_cost_mult_1_desc: "[journeys|E] cuesta el importe normal."
  setting_journey_cost_mult_2: "2x"
  setting_journey_cost_mult_2_desc: "[journey|E] los costes se duplican."
   

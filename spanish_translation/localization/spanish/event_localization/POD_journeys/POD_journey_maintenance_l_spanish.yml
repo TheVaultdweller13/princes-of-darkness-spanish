@@ -10,18 +10,18 @@
  POD_journey_maintenance.1.option.b.tt.2: "Los pasos [journey|E] a $POD_current_journey$ se pausarán. Puedes reanudarlos más tarde y conservar todo tu progreso."
   
  POD_journey_maintenance.20.t: "Una muerte prematura"
- POD_journey_maintenance.20.desc: "Acabo de recibir la noticia de que [journey_target.GetName] ha muerto.\n\nNaturalmente, esto significa que no podré continuar con ningún $pod_journeys$ que tuviera como objetivo a [journey_target.GetHerHim]."
+ POD_journey_maintenance.20.desc: "Acabo de recibir la noticia de que [journey_target.GetName] ha muerto.\n\nNaturalmente, esto significa que no podré continuar con ningún [journeys|E] que tuviera como objetivo a [journey_target.GetHerHim]."
  POD_journey_maintenance.20.option.a: "Desgraciado."
- POD_journey_maintenance.20.tt: "Todos tus $pod_journeys$ que tenían como objetivo [journey_target.GetName] han finalizado."
+ POD_journey_maintenance.20.tt: "Todos tus [journeys|E] que tenían como objetivo [journey_target.GetName] han finalizado."
   
  POD_journey_maintenance.21.t: "Un tesoro perdido" #NT!
- POD_journey_maintenance.21.desc: "Ya sea deliberadamente o por accidente, uno de los [artifacts|E] que he estado buscando fue destruido.\n\nNaturalmente, esto significa que no podré continuar con ningún $pod_journeys$ que lo haya buscado." #NT!
- POD_journey_maintenance.21.tt: "Todos tus $pod_journeys$ que apuntaron a este [artifact|E] perdido han finalizado." #NT!
+ POD_journey_maintenance.21.desc: "Ya sea deliberadamente o por accidente, uno de los [artifacts|E] que he estado buscando fue destruido.\n\nNaturalmente, esto significa que no podré continuar con ningún [journeys|E] que lo haya buscado." #NT!
+ POD_journey_maintenance.21.tt: "Todos tus [journeys|E] que apuntaron a este [artifact|E] perdido han finalizado." #NT!
   
  POD_journey_maintenance.22.t: "El conocimiento llegó prematuramente" #NT!
- POD_journey_maintenance.22.desc: "Recientemente aprendí una nueva habilidad.\n\nNaturalmente, esto significa que ya no necesito continuar con ningún $pod_journeys$ para aprenderla." #NT!
+ POD_journey_maintenance.22.desc: "Recientemente aprendí una nueva habilidad.\n\nNaturalmente, esto significa que ya no necesito continuar con ningún [journeys|E] para aprenderla." #NT!
  POD_journey_maintenance.22.option.a: "Ahora puedo centrarme en otras actividades." #NT!
- POD_journey_maintenance.22.tt: "Todas tus $pod_journeys$ por las habilidades de aprendizaje que ya poseías han terminado." #NT!
+ POD_journey_maintenance.22.tt: "Todas tus [journeys|E] por las habilidades de aprendizaje que ya poseías han terminado." #NT!
   
  POD_journey_maintenance.100.t: "[Localize(Concatenate(PlayerJourneyID,'_travel_title'))]"
  POD_journey_maintenance.100.desc: "[GetPlayer.Custom('PODCoterieTravelStatusFlavor')]\n\n[Localize(Concatenate(PlayerJourneyID,'_travel_desc'))]"
@@ -29,5 +29,5 @@
  POD_journey_maintenance.100.option.a: "[Localize(Concatenate(PlayerJourneyID,'_travel_confirm'))]"
   
  POD_journey_maintenance.110.t: "¿Que sigue?"
- POD_journey_maintenance.110.desc: "Ahora que he vuelto a casa, puedo centrar mi atención en otros asuntos pendientes.\n\nAlgunos de mis $pod_journeys$ están listos para ser reanudados."
+ POD_journey_maintenance.110.desc: "Ahora que he vuelto a casa, puedo centrar mi atención en otros asuntos pendientes.\n\nAlgunos de mis [journeys|E] están listos para ser reanudados."
  POD_journey_maintenance.110.option.a: "No quiero reanudar ningún viaje en este momento."

@@ -16,7 +16,7 @@
  command_wraith_interaction.recall: "Recordar"
  command_wraith_interaction.release: "Desatar"
  POD_command_wraith_interaction.movecourt: "[secondary_actor.GetTitledFirstName] se moverá a la cancha [recipient.GetTitledFirstNamePossessive]."
- POD_command_wraith_possess_desc: "Envía tu Espectro a $pod_possess$ tu objetivo."
+ POD_command_wraith_possess_desc: "Envía tu Espectro a [possess|E] tu objetivo."
  POD_command_wraith_spy_desc: "Envía a tu fantasma para revelar un secreto que la víctima te está ocultando."
  POD_command_wraith_haunt_desc: "Envía a tu Espectro para acosar a una víctima, debilitándola de una de varias maneras."
  POD_not_in_possession: "¿#bold no es #! y no posee algún carácter?"
@@ -137,11 +137,11 @@
  actor_secondary_POD_command_wraith_pathos_heal_interaction: "Fantasma"
  POD_command_wraith_pathos_heal_interaction_extra_icon: "$hook_extra_icon$" #NT!
   
- POD_set_fetter_character_interaction: "Asignar $pod_Fetters$ #weak (Persona)#!"
- POD_set_fetter_artifact_interaction: "Asignar $pod_Fetters$ #weak (Objeto)#!"
- POD_set_fetter_title_interaction: "Asignar $pod_Fetters$ #weak (Lugar)#!"
- POD_set_fetter_conduit_interaction: "Asignar $pod_Fetters$ #weak (Conducto)#!"
- POD_set_fetter_interaction_desc: "Tienes [actor.MakeScope.ScriptValue('unset_fetter_point')|0] puntos para asignar a tu $pod_Fetters$, con calificaciones que van del uno al cinco."
+ POD_set_fetter_character_interaction: "Asignar [Fetters|E] #weak (Persona)#!"
+ POD_set_fetter_artifact_interaction: "Asignar [Fetters|E] #weak (Objeto)#!"
+ POD_set_fetter_title_interaction: "Asignar [Fetters|E] #weak (Lugar)#!"
+ POD_set_fetter_conduit_interaction: "Asignar [Fetters|E] #weak (Conducto)#!"
+ POD_set_fetter_interaction_desc: "Tienes [actor.MakeScope.ScriptValue('unset_fetter_point')|0] puntos para asignar a tu [Fetters|E], con calificaciones que van del uno al cinco."
  POD_set_fetter_interaction_options_heading: "¿Qué calificación le doy a este [Fetter|E]?"
  POD_set_fetter_character_interaction_tooltip: "Este [Fetter|E] será destruido cuando el personaje objetivo muera."
  POD_set_fetter_artifact_interaction_tooltip: "Este [Fetter|E] se degradará cuando el artefacto pase a la mano de otra persona y se destruirá cuando el artefacto sea destruido."
@@ -154,10 +154,10 @@
  end_of_a_fetter_tooltip: "Tu [Fetter|E] estará muerto dentro de un año."
  is_fetter: "Ya es [Fetter|E]"
   
- POD_resolve_fetter_character_interaction: "Resolviendo $pod_Fetters$ #weak (Persona)#!"
- POD_resolve_fetter_artifact_interaction: "Resolviendo $pod_Fetters$ #weak (Objeto)#!"
- POD_resolve_fetter_title_interaction: "Resolviendo $pod_Fetters$ #weak (Lugar)#!"
- POD_resolve_fetter_conduit_interaction: "Resolviendo $pod_Fetters$ #weak (Conducto)#!"
+ POD_resolve_fetter_character_interaction: "Resolviendo [Fetters|E] #weak (Persona)#!"
+ POD_resolve_fetter_artifact_interaction: "Resolviendo [Fetters|E] #weak (Objeto)#!"
+ POD_resolve_fetter_title_interaction: "Resolviendo [Fetters|E] #weak (Lugar)#!"
+ POD_resolve_fetter_conduit_interaction: "Resolviendo [Fetters|E] #weak (Conducto)#!"
  POD_resolve_fetter_interaction_desc: "Aunque los detalles exactos de este proceso varían ampliamente, en última instancia, la resolución proviene de poder dejar atrás el [Fetter|E] sin arrepentimiento."
  POD_resolve_fetter_interaction_tooltip: "La calificación de este [Fetter|E] disminuye en uno."
   
@@ -174,7 +174,7 @@
  actor_secondary_POD_ask_learn_arcanos_interaction: "Fantasma"
   
  POD_manipulate_fetter_interaction: "Manipular [Fetter|E]"
- POD_manipulate_fetter_interaction_desc: "Manipular [recipient.GetFirstNamePossessive] $pod_Fetters$"
+ POD_manipulate_fetter_interaction_desc: "Manipular [recipient.GetFirstNamePossessive] [Fetters|E]"
  create_temporary_fetter_option: "Crear un [Fetter|E] temporal"
  strip_fetter_option: "Desnudarse un [Fetter|E]"
   

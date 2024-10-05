@@ -28,16 +28,16 @@
  UMBRA_INVESTMENTS_OF_SOUL: "Obtenga una inversión de beneficio para el alma."
   
   # Grace 
- HAVE_AT_LEAST_COUNT_GRACE: "Tienes al menos $pod_grace_i$ $VALUE|0V$"
- NOT_HAVE_AT_LEAST_COUNT_GRACE: "Tú tienes #bold no#! tienes al menos $pod_grace_i$ $VALUE|0V$"
- GAINS_GRACE: "Ganancias $pod_grace_i$ $VALUE|+0$"
- GAINED_GRACE: "Ganado $pod_grace_i$ $VALUE|+0$"
- I_GAIN_GRACE: "Ganas $pod_grace_i$ $VALUE|+0$"
- I_GAINED_GRACE: "Ganaste $pod_grace_i$ $VALUE|+0$"
- LOSES_GRACE: "Gasta $pod_grace_i$ $VALUE|-0$"
- LOST_GRACE: "Gastado $pod_grace_i$ $VALUE|-0$"
- I_LOSE_GRACE: "Gastas $pod_grace_i$ $VALUE|-0$"
- I_LOST_GRACE: "Gastaste $pod_grace_i$ $VALUE|-0$"
+ HAVE_AT_LEAST_COUNT_GRACE: "Tienes al menos [grace_i] $VALUE|0V$"
+ NOT_HAVE_AT_LEAST_COUNT_GRACE: "Tú tienes #bold no#! tienes al menos [grace_i] $VALUE|0V$"
+ GAINS_GRACE: "Ganancias [grace_i] $VALUE|+0$"
+ GAINED_GRACE: "Ganado [grace_i] $VALUE|+0$"
+ I_GAIN_GRACE: "Ganas [grace_i] $VALUE|+0$"
+ I_GAINED_GRACE: "Ganaste [grace_i] $VALUE|+0$"
+ LOSES_GRACE: "Gasta [grace_i] $VALUE|-0$"
+ LOST_GRACE: "Gastado [grace_i] $VALUE|-0$"
+ I_LOSE_GRACE: "Gastas [grace_i] $VALUE|-0$"
+ I_LOST_GRACE: "Gastaste [grace_i] $VALUE|-0$"
  umbra_offer: "Oferta"
  umbra_offer_piety: "Piedad"
  umbra_offer_prestige: "Prestigio"
@@ -541,7 +541,7 @@
  spirit_travel_arrived_title: "Umbra alcanzada"
  spirit_travel_arrived_desc: "Has llegado a la umbra."
   
- shadowlands_fetter_maintenance_tooltip: "Pagas el costo de permanecer en el [shadowlands|E] sin $pod_Fetters$."
+ shadowlands_fetter_maintenance_tooltip: "Pagas el costo de permanecer en el [shadowlands|E] sin [Fetters|E]."
   
  is_in_umbra_tooltip: "Estás en la Umbra."
  is_in_dreaming_tooltip: "Estás en el [dreaming|E]."
@@ -568,8 +568,8 @@
  umbra_place_memory_tower_confirm: "Visita la Torre de la Memoria" #NT!
   
  umbra_place_earth_tooltip: "Los [GetTrait('wraith').GetName( GetNullCharacter )] que no están ligados a [GetTrait('risen').GetName( GetPlayer )] ganan #N 40#! [stress|E] cada año para mantenerse en [skinlands|E]." #NT!
- umbra_place_shadowlands_tooltip: "[GetTrait('wraith').GetName( GetNullCharacter )] sin $pod_Fetters$ gana un [stress|E] medio cada año para mantenerse en el [shadowlands|E]. (10% de probabilidad por cada [Fetter|E] no asignado o perdido)" #NT!
- umbra_place_dark_kingdom_tooltip: "Mantente en el [dark_kingdom|E] para que no ganes [stress|E] por falta de $pod_Fetters$" #NT!
+ umbra_place_shadowlands_tooltip: "[GetTrait('wraith').GetName( GetNullCharacter )] sin [Fetters|E] gana un [stress|E] medio cada año para mantenerse en el [shadowlands|E]. (10% de probabilidad por cada [Fetter|E] no asignado o perdido)" #NT!
+ umbra_place_dark_kingdom_tooltip: "Mantente en el [dark_kingdom|E] para que no ganes [stress|E] por falta de [Fetters|E]" #NT!
   
  broken_mirror_valid_tooltip: "#bold no#! tiene [GetPerk('the_red_bridge_perk').GetName(GetPlayer)] ventaja, o [GetPlayer.GetCurrentLocation.GetName] tiene #bold no#! [GetBuilding('nest_corrupt_01').GetName], [GetBuilding('wyrm_taint_01').GetName] o [faith|E] que aceptan el infernalismo."
  labyrinth_progress_effect_tooltip: "Obtienes #V 100#! de progreso de exploración en [labyrinth|E] (si estás estacionado)." #NT!
@@ -1488,11 +1488,11 @@
   
  game_concept_mirror_zone: "Zona de espejo"
  game_concept_mirror_zone_desc: "A la misteriosa Zona del Espejo le encanta mostrar a sus "invitados" lo que podría haber sido."
- mirror_zone_effect_desc: "[umbra_aptitude|E]: $pod_grace_i$#P +25%#!" #NT!
+ mirror_zone_effect_desc: "[umbra_aptitude|E]: [grace_i]#P +25%#!" #NT!
   
  game_concept_null_zone: "Caminos del Wyck"
  game_concept_null_zone_desc: "Los Senderos del Wyck son un laberinto de caminos pequeños que conducen a la mayoría de los reinos de Umbra. La orientación aquí es difícil, ya que los caminos cambian constantemente y todos parecen iguales."
- null_zone_effect_desc: "[umbra_aptitude|E]: $pod_grace_i$#P +25%#!" #NT!
+ null_zone_effect_desc: "[umbra_aptitude|E]: [grace_i]#P +25%#!" #NT!
   
  game_concept_neter_khertet: "Neter-khertet"
  game_concept_neter_khertet_desc: "Antes de la fundación del [dark_kingdom_of_sand|E], los muertos egipcios habitaban en Neter-Khertet, el "lugar subterráneo divino"."
