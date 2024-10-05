@@ -1,9 +1,9 @@
 ﻿l_spanish:
- POD_hint_hunger: "\n\n#I Haz clic en esta barra para ver las distintas formas en las que puedes saciar tu [hunger_with_icon|E].#!"
+ POD_hint_hunger: "\n\n#I Haz clic en esta barra para ver las distintas formas en las que puedes saciar tu $pod_hunger_with_icon$.#!"
  POD_hint_bloodpotency: "\n\nTu [blood_potency|E] es [GetPlayer.Custom('PODBloodPotency')]."
   
- POD_hint_masquerade_maximum: "#I Una vez que tu [masquerade_exposure_with_icon|E] aumente, puedes hacer clic en esta barra para reducirlo.#!"
- POD_hint_masquerade_valid: "#I Haz clic en esta barra para reducir tu [masquerade_exposure_with_icon|E].#!"
+ POD_hint_masquerade_maximum: "#I Una vez que tu $pod_masquerade_exposure_with_icon$ aumente, puedes hacer clic en esta barra para reducirlo.#!"
+ POD_hint_masquerade_valid: "#I Haz clic en esta barra para reducir tu $pod_masquerade_exposure_with_icon$.#!"
  POD_hint_masquerade_invalid_no_masquerade: "#X $no_masquerade$#!"
  POD_hint_masquerade_invalid_cap: "#X $POD_cover_masquerade_interaction_cap$.#!"
  POD_hint_masquerade_invalid_cooldown: "#X La interacción para cubrir [masquerade|E] está actualmente en espera.#!"
@@ -32,8 +32,8 @@
  POD_hunger_window_hunt_in_capital: "Como $POD_splat_vampire$, puedes ir con un [journey|E] a cazar mortales en tu capital."
  POD_hunger_window_hunt_in_capital_inprogress: "#help Ya estás cazando mortales en tu capital.#!"
  POD_hunger_window_regen: "[GetPlayer.Custom('PODBloodRegenHint')]"
- POD_hunger_window_regen_revenant: "Como eres un [GetTrait('revenant').GetName(GetPlayer)], pierdes automáticamente #V 1#! [hunger_with_icon|E] por mes."
- POD_hunger_window_regen_dhampir: "Como eres un [GetTrait('dhampir').GetName(GetPlayer)], pierdes automáticamente #V 1#! [hunger_with_icon|E] por mes."
+ POD_hunger_window_regen_revenant: "Como eres un [GetTrait('revenant').GetName(GetPlayer)], pierdes automáticamente #V 1#! $pod_hunger_with_icon$ por mes."
+ POD_hunger_window_regen_dhampir: "Como eres un [GetTrait('dhampir').GetName(GetPlayer)], pierdes automáticamente #V 1#! $pod_hunger_with_icon$ por mes."
  POD_hunger_window_herd_drink: "Puedes beber de tu rebaño, [GetPlayer.MakeScope.Var('suggested_herdmember').Char.GetShortUINameNoTooltip]."
  POD_hunger_window_herd_drink_noblood: "#help Ninguno de los miembros de tu manada tiene sangre. Espera a que repongan un poco.#!"
  POD_hunger_window_herdify: "Puedes agregar uno de tus [courtiers|E] a tu manada."

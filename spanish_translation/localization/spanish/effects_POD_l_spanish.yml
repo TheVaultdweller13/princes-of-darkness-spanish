@@ -720,7 +720,7 @@
  ANIMAL_DOMINION_PERK_FLAVOR: "Como [character_interaction|E], te permite llamar a tu mascota a la guerra.\nPuedes reclutar varios tipos de animales como [men_at_arms|E].\n#flavor El poder que el vampiro tiene sobre las bestias es ahora lo suficientemente grande como para comandar manadas y rebaños como si fueran extensiones de su propio cuerpo. Con un gesto, los animales dan sus vidas por docenas, incluso por cientos, para apaciguar a su amo#!"
  TONGUE_OF_BEASTS_PERK_FLAVOR: "#flavor Este poder expande los dones de Susurros a la naturaleza. En lugar de poder hablar con un solo animal, el vampiro puede hablar con todos y cada uno de los animales sin establecer contacto visual.#!"
  SEND_THE_EIGHTH_PLAGUE_PERK_EFFECT: "Como [character_interaction|E], puedes lanzar [GetModifier('weather_magic_plague_modifier').GetNameWithTooltip] sobre el reino enemigo."
- SEND_THE_EIGHTH_PLAGUE_PERK_FLAVOR: "#flavor Este es uno de los poderes más destructivos entre todos los [disciplines|E]. Un antiguo Gangrel llamado Valentiniano demostró su inmenso potencial de ruina poco después de la Cuarta Cruzada. Enojado con los Cainitas italianos que invadieron sus tierras, invocó su maestría en Animalismo y provocó el hambre en toda una ciudad comercial.#!"
+ SEND_THE_EIGHTH_PLAGUE_PERK_FLAVOR: "#flavor Este es uno de los poderes más destructivos entre todos los $pod_disciplines$. Un antiguo Gangrel llamado Valentiniano demostró su inmenso potencial de ruina poco después de la Cuarta Cruzada. Enojado con los Cainitas italianos que invadieron sus tierras, invocó su maestría en Animalismo y provocó el hambre en toda una ciudad comercial.#!"
  CRIMSON_FURY_PERK_EFFECT: "Hace que el evento [unconquered_soul|E] sea más probable para los diabolistas que intentan consumir tu alma."
  CRIMSON_FURY_PERK_FLAVOR: "#flavor Este poder es objeto de muchos rumores y conjeturas, ya que tiene muy pocos efectos visibles. Al alcanzar este nivel de maestría, el vampiro puede optar por permitir que su [beast|E] deambule libremente por sus venas. Su sangre provoca frenesí en los mortales y vampiros que la prueban. Si un diabolista consigue consumir el alma del vampiro, es posible que tenga un final espantoso cuando la Bestia del vampiro la devore desde dentro. #!"
  EYES_OF_THE_FOREST_PERK_FLAVOR: "#flavor Este poder imponente es la base de muchos cuentos populares sobre bosques amenazantes y montañas amenazantes. Los animales e incluso los insectos de la zona son los ojos y oídos del vampiro, y le proporcionan un conocimiento íntimo de los acontecimientos nocturnos de su dominio.#!"
@@ -755,18 +755,18 @@
  #  CAULDRON_OF_BLOOD_PERK: "Desbloquea un movimiento [single_combat_duel|E]." #NT!
  #  BLOOD_OF_POTENCY_PERK_STATS_EFFECT: "Desbloquea un poder de taumaturgia que te permitirá aumentar potencialmente tu Potencia de Sangre." #NT!
   
- ARCANE_KNOWLEDGE_1_PERK_EFFECT: "Aumenta la probabilidad de éxito de [bs_spell|E] en 15\nReduce la probabilidad de éxito de [bs_spell|E] hostil en 10" #NT!
- ARCANE_KNOWLEDGE_2_PERK_EFFECT: "Aumenta la probabilidad de éxito de [bs_spell|E] en 15\nReduce la probabilidad de éxito de [bs_spell|E] hostil en 10" #NT!
- ARCANE_KNOWLEDGE_3_PERK_EFFECT: "Aumenta la probabilidad de éxito de [bs_spell|E] en 15\nReduce la probabilidad de éxito de [bs_spell|E] hostil en 10" #NT!
- ARCANE_KNOWLEDGE_4_PERK_EFFECT: "Aumenta la probabilidad de éxito de [bs_spell|E] en 15\nReduce la probabilidad de éxito de [bs_spell|E] hostil en 10" #NT!
+ ARCANE_KNOWLEDGE_1_PERK_EFFECT: "Aumenta la probabilidad de éxito de $pod_bs_spell$ en 15\nReduce la probabilidad de éxito de $pod_bs_spell$ hostil en 10" #NT!
+ ARCANE_KNOWLEDGE_2_PERK_EFFECT: "Aumenta la probabilidad de éxito de $pod_bs_spell$ en 15\nReduce la probabilidad de éxito de $pod_bs_spell$ hostil en 10" #NT!
+ ARCANE_KNOWLEDGE_3_PERK_EFFECT: "Aumenta la probabilidad de éxito de $pod_bs_spell$ en 15\nReduce la probabilidad de éxito de $pod_bs_spell$ hostil en 10" #NT!
+ ARCANE_KNOWLEDGE_4_PERK_EFFECT: "Aumenta la probabilidad de éxito de $pod_bs_spell$ en 15\nReduce la probabilidad de éxito de $pod_bs_spell$ hostil en 10" #NT!
   
- ARCANE_MASTERY_1_PERK_EFFECT: "Aumenta la velocidad de [bs_ritual|E] en un 10 %" #NT!
+ ARCANE_MASTERY_1_PERK_EFFECT: "Aumenta la velocidad de $pod_bs_ritual$ en un 10 %" #NT!
  ARCANE_MASTERY_1_PERK_BONUS_VALUE: "[GetPerk('arcane_mastery_1_perk').GetName(GetPlayer)]" #NT!
- ARCANE_MASTERY_2_PERK_EFFECT: "Aumenta la velocidad de [bs_ritual|E] en un 10 %" #NT!
+ ARCANE_MASTERY_2_PERK_EFFECT: "Aumenta la velocidad de $pod_bs_ritual$ en un 10 %" #NT!
  ARCANE_MASTERY_2_PERK_BONUS_VALUE: "[GetPerk('arcane_mastery_2_perk').GetName(GetPlayer)]" #NT!
- ARCANE_MASTERY_3_PERK_EFFECT: "Aumenta la velocidad de [bs_ritual|E] en un 10 %" #NT!
+ ARCANE_MASTERY_3_PERK_EFFECT: "Aumenta la velocidad de $pod_bs_ritual$ en un 10 %" #NT!
  ARCANE_MASTERY_3_PERK_BONUS_VALUE: "[GetPerk('arcane_mastery_3_perk').GetName(GetPlayer)]" #NT!
- ARCANE_MASTERY_4_PERK_EFFECT: "Aumenta la velocidad de [bs_ritual|E] en un 10 %" #NT!
+ ARCANE_MASTERY_4_PERK_EFFECT: "Aumenta la velocidad de $pod_bs_ritual$ en un 10 %" #NT!
  ARCANE_MASTERY_4_PERK_BONUS_VALUE: "[GetPerk('arcane_mastery_4_perk').GetName(GetPlayer)]" #NT!
   
   # Celerity # 
@@ -834,7 +834,7 @@
  VANISH_PERK_EFFECT: "Desbloquea un [character_interaction|E] para detener todos los planes que tienen como objetivo tu objetivo.\n\n#flavor El vampiro parece desaparecer en un abrir y cerrar de ojos; incluso el recuerdo de ellos se vuelve borroso e indistinto.#!"
  MASK_OF_JANUS_PERK_EFFECT: "Bono a Máscara [character_interaction|E], permite intercambiar apariencias.\n#F Intercambia tu apariencia como con Máscara de las Mil Caras con la de otra persona.#!"
  VEIL_THE_LEGIONS_PERK_EFFECT: "#F Oculta un pequeño ejército a distancia.#!"
- VISIT_FAERIELAND_PERK_EFFECT: "Obtén acceso al [dreaming|E].\nProgreso mensual de exploración de Umbra: [grace_i]#P +10#!\n#F Entra en el sueño.#!"
+ VISIT_FAERIELAND_PERK_EFFECT: "Obtén acceso al [dreaming|E].\nProgreso mensual de exploración de Umbra: $pod_grace_i$#P +10#!\n#F Entra en el sueño.#!"
  HORRID_COUNTENANCE_PERK_EFFECT: "Desbloquea la opción de cambio de forma [GetModifier( 'POD_shapeshift_form_horrid_countenance_modifier' ).GetNameWithTooltip|L].\n#F Adopta la apariencia de una entidad monstruosa que cada persona ve como su pesadilla personal.#!"
  OLD_FRIEND_PERK_EFFECT: "Desbloquea un [character_interaction|E] para hacerte amigo del objetivo.\n#F Haz que alguien te vea como un amigo y confidente de confianza.#!"
  CREATE_NAME_PERK_EFFECT: "Desbloquea un [character_interaction|E] para eliminar todos los [hook|E], reclamos, treguas, conocimientos secretos y relaciones del objetivo.\n#F Crea una identidad completamente nueva para ti que supere cualquier sospecha.#!"
@@ -879,7 +879,7 @@
   
   #Grave's Decay Path 
   
- NECROMANCY_ASHES_TO_ASHES_PERK_EFFECT: "Reduce el riesgo de [masquerade_exposure_with_icon|E] y mejora la Mascarada de portada [character_interaction|E]."
+ NECROMANCY_ASHES_TO_ASHES_PERK_EFFECT: "Reduce el riesgo de $pod_masquerade_exposure_with_icon$ y mejora la Mascarada de portada [character_interaction|E]."
  NECROMANCY_ASHES_TO_ASHES_PERK_FLAVOR: "#flavor Mientras que algunos Cainitas matan indiscriminadamente y no temen las consecuencias de sus acciones, otros sienten la necesidad de ser un poco más discretos. El uso de este poder convierte un cadáver humano en una pila de cenizas sin importancia de aproximadamente una quinta parte del peso del cuerpo original.#!"
  RIGOR_MORTIS_PERK_FLAVOR: "#flavor Con este poder, el nigromante puede dejar a cualquier objetivo rígido e inmóvil como un cadáver.#!"
  ASHEN_LADYS_EMBRACE_PERK_EFFECT: "Desbloquea el movimiento Abrazo de la Dama de Ceniza [single_combat_duel|E]"
@@ -923,7 +923,7 @@
   
   #Nightshade Path 
   
- TEND_THE_BODY_GARDEN_PERK_EFFECT: "Reduce el riesgo de [masquerade_exposure_with_icon|E] y mejora la Mascarada de portada [character_interaction|E]"
+ TEND_THE_BODY_GARDEN_PERK_EFFECT: "Reduce el riesgo de $pod_masquerade_exposure_with_icon$ y mejora la Mascarada de portada [character_interaction|E]"
  TEND_THE_BODY_GARDEN_PERK_FLAVOR: "#flavor Un nigromante con este poder puede acelerar o ralentizar el proceso de descomposición, convirtiendo a un mortal muerto en un huésped hinchado para las moscas en segundos o anulando la descomposición de la Muerte Definitiva.#!"
  WITCHS_FRUIT_PERK_EFFECT: "Desbloquea un [character_interaction|E] que te permite envenenar a los mortales con frutas infundidas nigrománticamente."
  WITCHS_FRUIT_PERK_FLAVOR: "#flavor Cada planta depende de la muerte para crecer. Las cosas en descomposición enriquecen el suelo y los árboles, las enredaderas y la hierba absorben ecos necróticos junto con nutrientes vitales. Un nigromante puede despertar esta aura de muerte exponiendo sus frutos a su sangre.#!"
@@ -960,13 +960,13 @@
  TOUCH_OF_DEATH_PERK_EFFECT: "HACER"
  TOUCH_OF_DEATH_PERK_FLAVOR: "#flavor El nigromante está en sintonía con la energía residual que deja el paso o el toque de un fantasma, lo que le permite determinar si un objeto, una persona o un área han sido tocados o influenciados por un fantasma.#!"
  REVEAL_THE_CATENE_PERK_EFFECT: "HACER"
- REVEAL_THE_CATENE_PERK_FLAVOR: "#flavor La nigromante reconoce la marca de ceniza que dejan los muertos en los objetos, lo que le permite distinguir entre juguetes fantasmales y [Fetters|E].#!"
+ REVEAL_THE_CATENE_PERK_FLAVOR: "#flavor La nigromante reconoce la marca de ceniza que dejan los muertos en los objetos, lo que le permite distinguir entre juguetes fantasmales y $pod_Fetters$.#!"
  TREAD_UPON_THE_GRAVE_PERK_EFFECT: "HACER"
  TREAD_UPON_THE_GRAVE_PERK_FLAVOR: "#flavor El nigromante siente cuando está cerca del mundo de los muertos. Un nigromante puede usar su percepción natural, mientras que otro puede adivinar, pero ambos pueden sentir dónde el [underworld|E] toca el mundo de los vivos.#!"
  DEATH_KNELL_PERK_EFFECT: "HACER"
  DEATH_KNELL_PERK_FLAVOR: "#flavor El nigromante siente cuando está cerca del mundo de los muertos. Un nigromante puede usar su percepción natural, mientras que otro puede adivinar, pero ambos pueden sentir dónde el [underworld|E] toca el mundo de los vivos.#!"
  EPHEMERAL_BINDING_PERK_EFFECT: "HACER"
- EPHEMERAL_BINDING_PERK_FLAVOR: "#flavor Al infundir su propia energía cenicienta en un objeto, persona o lugar, el nigromante puede crear uno artificial [Fetters|E] en lugar de tener que depender de encontrar uno por casualidad.#!"
+ EPHEMERAL_BINDING_PERK_FLAVOR: "#flavor Al infundir su propia energía cenicienta en un objeto, persona o lugar, el nigromante puede crear uno artificial $pod_Fetters$ en lugar de tener que depender de encontrar uno por casualidad.#!"
   
   # Potence # 
   
@@ -1227,7 +1227,7 @@
  SENSE_THE_SIN_PERK_EFFECT: "Adéntrate en una mente y amplifica un pecado hasta niveles autodestructivos."
  TORMENTED_ESSENCE_PERK_EFFECT: "Proyecta energía infernal contra tus oponentes en un duelo."
  BLOOD_OF_A_DEMON_PERK_EFFECT: "Obtén una gran cantidad de habilidades relacionadas con el infernalismo: dirige a infernalistas menores, llámalos a la corte o incluso comprométete tú mismo a practicar la adoración oscura."
- AS_BELOW_SO_ABOVE_PERK_EFFECT: "Mejora tu [disciplines|E] social con insidia diabólica, mejorando tus posibilidades de éxito con poderes como entrada o racionalización."
+ AS_BELOW_SO_ABOVE_PERK_EFFECT: "Mejora tu $pod_disciplines$ social con insidia diabólica, mejorando tus posibilidades de éxito con poderes como entrada o racionalización."
  PSYCHOMACHIA_PERK_EFFECT: "Obliga a una persona a luchar con sus pecados amplificados conjurando una entidad de sombra de la psique de la víctima."
  POISONED_VIRTUE_PERK_EFFECT: "Con este poder, puedes amplificar incluso las virtudes a niveles insalubres."
  KNEEL_BEFORE_MY_THRONE_PERK_EFFECT: "Aprende la habilidad de convertir a otros vampiros en infernalistas. Obtén el poder de otorgarte un don oscuro."
@@ -1403,7 +1403,7 @@
  YIN_MANTLE_PERK_EFFECT: "Puedes reclutar a [GetMaA('wraiths').GetName] como [men_at_arms|E].\nComo [character_interaction|E], te permite usar chi para otorgar una bonificación a un artefacto de arma.\nYa no necesitas pagar oro para herir a un espectro/demonio en [single_combat_duel|E].\n#F Te permite canalizar tu energía Yin interna en un animus que te envuelve. Este animus, o manto, es invisible para los mortales, pero para ellos es como una brisa fría en el aire.#!"
  BONE_DANCE_PERK_EFFECT: "Otorga un modificador de [GetModifier('bone_dance_modifier').GetNameWithTooltip] al enemigo [knights|E] en la guerra como comandante o al enemigo en [single_combat_duel|E].\nDesbloquea movimientos de [single_combat_duel|E].\nMás posibilidades de causar una herida grave a un enemigo [knights|E] en la guerra como [knight|E].\n#F Al realizar una serie de posturas complicadas y dolorosas, puedes canalizar la energía Yin en un área, volviendo letárgicos a todos los que se encuentren dentro.#!"
  EIGHTFOLD_YIN_MANTLE_PERK_EFFECT: "Puede reclutar a [GetMaA('shades').GetName] como [men_at_arms|E].\nComo [character_interaction|E], te permite crear un artefacto personalizado.\nComo [character_interaction|E], te permite usar chi para dar una bonificación a un artefacto de armadura de metal.\n#F Al igual que el Manto Yin inicial, solo que la energía Yin se manifiesta como un aura negra crepitante de energía Yin que se puede moldear según los deseos del usuario.#!"
- SEMBLANCE_OF_THE_EBON_DRAGON_PERK_EFFECT: "Ya no es necesario pagar oro para acceder al [yin_world|E] durante los viajes espirituales.\nPosibilidad de quedar atrapado en la Umbra: #P -10%#!\nMonthly Progreso de exploración de la Umbra: [grace_i]#P +5#!\n#F Te permite volverte insustancial a medida que tu masa corporal cambia al [yin_world|E].#!"
+ SEMBLANCE_OF_THE_EBON_DRAGON_PERK_EFFECT: "Ya no es necesario pagar oro para acceder al [yin_world|E] durante los viajes espirituales.\nPosibilidad de quedar atrapado en la Umbra: #P -10%#!\nMonthly Progreso de exploración de la Umbra: $pod_grace_i$#P +5#!\n#F Te permite volverte insustancial a medida que tu masa corporal cambia al [yin_world|E].#!"
  YIN_SHIELD_PERK_EFFECT: "Otorga un modificador de [GetModifier('yin_shield_modifier').GetNameWithTooltip] al aliado [knights|E] en la guerra como comandante o a ti mismo en [single_combat_duel|E].\n#F Formas tu animus Yin en un caparazón protector alrededor de tu cuerpo.#!"
  YIN_NIHILUS_PERK_EFFECT: "Otorga un modificador de [GetModifier('yin_nihilus_modifier').GetNameWithTooltip] al enemigo [knights|E] en la guerra como comandante o al enemigo en [single_combat_duel|E].\nDesbloquea [single_combat_duel|E] movimientos.\nPosibilidad de mutilar a un enemigo [knights|E] en la guerra como [knight|E].\n#F Te permite crear un halo mortal de energía Yin que abrasa a todos los que están cerca del usuario.#!"
  TOUCH_OF_RUST_PERK_EFFECT: "Como [character_interaction|E], te permite hacer que el objetivo pierda todo su oro.\nOportunidad adicional de matar a un enemigo [knights|E] en la guerra como [knight|E].\n#F Puedes hacer que el metal de cualquier tipo se desmorone rápidamente.#!"
@@ -1415,7 +1415,7 @@
  YANG_MANTLE_PERK_EFFECT: "Puede reclutar [GetMaA('materialized_spirits').GetName] como [men_at_arms|E].\nPuede reclutar animales del zodiaco como [men_at_arms|E].\nComo [character_interaction|E], te permite usar chi para dar una bonificación a un artefacto de insignia.\nYa no es necesario pagar oro para herir a un espíritu en [single_combat_duel|E].\n#F Te permite sintonizar tu chi interno con el aura de una persona viva, lo que te hace parecer mucho más amigable y atractivo.#!"
  DRAGON_DANCE_PERK_EFFECT: "Desbloquea [single_combat_duel|E] movimientos.\nPosibilidad adicional de causar una herida grave a un enemigo [knights|E] en la guerra como [knight|E].\n#F A través de una serie de saltos salvajes, katas acrobáticos y posturas yóguicas, entra en un trance de batalla. Capaz de impresionantes hazañas de combate mientras está en este estado.#!"
  EIGHTFOLD_YANG_MANTLE_PERK_EFFECT: "Otorga un modificador de [GetModifier('eightfold_yang_mantle_modifier').GetNameWithTooltip] al aliado [knights|E] en la guerra como comandante o a ti mismo en [single_combat_duel|E].\n#F Como el Manto Yang inicial, solo que la energía Yang se manifiesta como un aura carmesí hirviente de energía Yang que puede moldearse según los deseos del usuario.#!"
- SEMBLANCE_OF_THE_SCALET_QUEEN_PERK_EFFECT: "Ya no es necesario pagar oro para acceder a [yang_world|E] durante los viajes espirituales.\nProbabilidad de quedar atrapado en la Umbra: #P -10%#!\nMonthly Progreso de la exploración de la Umbra: [grace_i]#P +5#!\n#F Te permite volverte insustancial, ya que tu la masa corporal se desplaza hacia [yang_world|E].#!"
+ SEMBLANCE_OF_THE_SCALET_QUEEN_PERK_EFFECT: "Ya no es necesario pagar oro para acceder a [yang_world|E] durante los viajes espirituales.\nProbabilidad de quedar atrapado en la Umbra: #P -10%#!\nMonthly Progreso de la exploración de la Umbra: $pod_grace_i$#P +5#!\n#F Te permite volverte insustancial, ya que tu la masa corporal se desplaza hacia [yang_world|E].#!"
  YANG_SHIELD_PERK_EFFECT: "Otorga un modificador de [GetModifier('yang_shield_modifier').GetNameWithTooltip] al aliado [knights|E] en la guerra como comandante o a ti mismo en [single_combat_duel|E].\n#F Formas tu animus Yang en un aura brillante alrededor de tu cuerpo que te protege.#!"
  YANG_PHOENIX_PERK_EFFECT: "Otorga un modificador de [GetModifier('yang_phoenix_modifier').GetNameWithTooltip] al enemigo [knights|E] en la guerra como comandante o al enemigo en [single_combat_duel|E].\nDesbloquea [single_combat_duel|E] movimientos.\nPosibilidad de mutilar a un enemigo [knights|E] en la guerra como [knight|E].\n#F Te permite crear llamas escarlatas de energía Yang pura que queman a todos los que están cerca del usuario.#!"
  TOUCH_OF_CORRUPTION_PERK_EFFECT: "Otorga a los comandantes enemigos un modificador [GetModifier('touch_of_corruption_modifier').GetNameWithTooltip] cuando estén en guerra como comandante.\nOportunidad adicional de matar a un enemigo [knights|E] en guerra como [knight|E].\n#F Te permite hacer que la madera o cualquier otro material orgánico se descomponga rápidamente, rellenando el tuyo reservorios de chi.#!"
@@ -1452,7 +1452,7 @@
  HAND_OF_DARKNESS_PERK_EFFECT: "Como [character_interaction|E], te permite hacer que un reino enemigo gane un modificador de [GetModifier( 'hand_of_darkness_modifier' ).GetNameWithTooltip|L].\n#F Al dirigir influencias dañinas hacia un área o interferir con el buen feng shui, el Wan-kuei hace que la vida sea realmente difícil para los residentes de esa área.#!"
  INHARMONIOUS_ALIGMENT_PERK_EFFECT: "Otorga al participante de la guerra del lado enemigo un modificador de [GetModifier('inharmonious_aligment_modifier').GetNameWithTooltip] cuando está en la guerra como participante de la guerra.\n#F Interfiere con el Chi ambiental de un área hasta tal punto que otros no puedan extraer Chi ambiental de esa ubicación.#!"
  FENGSHUI_CHI_WARD_PERK_EFFECT: "Como [character_interaction|E], te permite agregar un modificador [GetModifier('chi_ward_modifier').GetNameWithTooltip] sobre el área objetivo.\n#F El Wan-kuei construye una barrera de chi que evita que el shen la cruce.#!"
- BENEFICENT_CELESTIAL_MIRROR_PERK_EFFECT: "Progreso mensual de exploración de Umbra: [grace_i]#P +20#!\n#F El Wan-kuei puede moldear el chi de las Tierras del Espejo para crear un refugio seguro para sí mismo dentro de ellas que pueda usarse como cabeza de playa para una mayor exploración de Umbra.#!"
+ BENEFICENT_CELESTIAL_MIRROR_PERK_EFFECT: "Progreso mensual de exploración de Umbra: $pod_grace_i$#P +20#!\n#F El Wan-kuei puede moldear el chi de las Tierras del Espejo para crear un refugio seguro para sí mismo dentro de ellas que pueda usarse como cabeza de playa para una mayor exploración de Umbra.#!"
  DANCING_SPIRITS_PERK_EFFECT: "Desbloquea [bind_wraith_interaction|E].\nDesbloquea [command_wraith_interaction|E].\nNúmero máximo de espectros atados: #P +1#!.\n#F El Wan-kuei manipula a los espíritus que lo rodean para que cumplan sus órdenes vinculándolos a lugares y objetos.#!"
  VEIL_OF_DEFILEMENT_PERK_EFFECT: "Otorga un modificador [GetModifier('veil_of_defilement_modifier').GetNameWithTooltip] al condado atacado cuando este es atacado.\n#F El Wan-kuei puede cubrir un área con buen Feng Shui para que parezca estéril a los forasteros.#!"
  TRANSCENDEND_PORTAL_PERK_EFFECT: "Obtienes $umbra_yin_portal_name$/$umbra_yang_portal_name$ como opción de efecto de umbra local única.\n#F El Wan-kuei puede abrir un portal hacia [yang_world|E] o [yin_world|E].#!"
@@ -1460,7 +1460,7 @@
   # Chi'iu Muh # 
   
  RASA_PERK_EFFECT: "Recibirás una notificación si alguien intenta asesinar a tus amigos o familiares. Recibirás una notificación si alguien intenta seducir a tu amante o consorte. Tu prisionero tiene menos posibilidades de escapar de tu prisión. #F Echa un vistazo a épocas pasadas y futuras. #!"
- CHI_SIGHT_PERK_EFFECT: "Posibilidad de quedar atrapado en la Umbra: #P -5%#!\nMonthly Progreso de exploración de la Umbra: [grace_i]#P +5#!\n#F Siente el mundo de los espíritus con tanta claridad como el mundo material.#!"
+ CHI_SIGHT_PERK_EFFECT: "Posibilidad de quedar atrapado en la Umbra: #P -5%#!\nMonthly Progreso de exploración de la Umbra: $pod_grace_i$#P +5#!\n#F Siente el mundo de los espíritus con tanta claridad como el mundo material.#!"
  DRAGON_WARD_PERK_EFFECT: "Otorga un modificador de [GetModifier('dragon_ward_modifier').GetNameWithTooltip] al aliado [knights|E] en la guerra como comandante o a ti mismo en [single_combat_duel|E].\nDesbloquea [single_combat_duel|E] movimientos\n#F Te permite crear una barrera de chi que aleja a cualquier atacante.#!"
  PURIFICATION_PERK_EFFECT: "Como [character_interaction|E], te permite otorgar un rasgo de estrés al objetivo.\nComo [character_interaction|E], te permite curar el rasgo de estrés del objetivo.\n#F Este poder, un legado de días más nobles, fue utilizado por los Wan Xian de la antigüedad para limpiar a sus súbditos mortales y dominios de la corrupción demoníaca.#!"
  SPIRIT_EATING_PERK_EFFECT: "Te permite recuperar el dharma perdido del objetivo, obtener un rasgo de personalidad opuesto o devorar el alma objetivo para aumentar tu educación o un atributo a costa del nivel de dharma (a menos que tu fe acepte la diablerie).\nBonificación para causar un ataque brutal al enemigo [knights|E] en la guerra como [knight|E].\n#F Te permite cortar los lazos que unen un alma a su cuerpo para purificarla o devorarla.#!"
@@ -1512,7 +1512,7 @@
  THE_LENS_OF_THE_SELF_PERK_EFFECT: "Como [character_interaction|E], haz que todos los objetivos de tu plan personal ganen o pierdan progreso.\n[espionage|E] Velocidad de progreso: #P +[EmptyScope.ScriptValue('digging_for_dirt_perk_percentage')|0]%#!\n#F El Wan-kuei puede ver el alma de su objetivo y discernir su naturaleza P'o. #!"
  THE_LENS_OF_THE_SELF_PERK_BONUS_VALUE: "[GetPerk('the_lens_of_the_self_perk').GetName(GetPlayer)]"
  PORSDAN_PERK_EFFECT: "Otorga un modificador de [GetModifier('porsdan_modifier').GetNameWithTooltip] al enemigo [knights|E] en la guerra como comandante o al enemigo en [single_combat_duel|E].\n#F También conocido como el "Koan de combate", este poder confronta a su objetivo con una pregunta aparentemente simple o un dilema filosófico a la víctima quien, impactada por los misterios que la declaración insinúa, es incapaz de mantener su concentración en cualquier otra cosa.#!"
- STEPPING_STONES_PERK_EFFECT: "Posibilidad de quedar atrapado en la Umbra: #P -5%#!\nMonthly Progreso de exploración de la Umbra: [grace_i]#P +5#!\n#F Viajar entre los diferentes reinos espirituales dentro de la Telúrica se vuelve más fácil para los Wan-kuei.#!"
+ STEPPING_STONES_PERK_EFFECT: "Posibilidad de quedar atrapado en la Umbra: #P -5%#!\nMonthly Progreso de exploración de la Umbra: $pod_grace_i$#P +5#!\n#F Viajar entre los diferentes reinos espirituales dentro de la Telúrica se vuelve más fácil para los Wan-kuei.#!"
  A_STUMBLE_ON_THE_PATH_PERK_EFFECT: "Como [character_interaction|E], te permite hacer que el objetivo pierda el nivel de dharma.\n#F Este poder le permite a un Wan-kuei hacer que otro Wan-kuei cuestione su rol y propósito en la no vida, atacando su nivel de Dharma.#!"
  RIDDLE_OF_MAYA_PERK_EFFECT: "#F El Wan-kuei revela una verdad confusa al objetivo que mina su fuerza de voluntad.#!"
  VEIL_OF_MAYA_PERK_EFFECT: "#F El Wan-kuei aprende a manipular la ilusión de la realidad, creando potentes espejismos que dejan rastros sensoriales reales.#!"
@@ -1563,7 +1563,7 @@
  CRY_OF_BLOOD_PERK_EFFECT: "Como [character_interaction|E], te permite usar tu voz para herir a todos los caballeros (sin espíritu) del objetivo.\n#F La Voz de Wan-kuei puede dañar la carne.#!"
  TIGERS_ROAR_PERK_EFFECT: "Bonificación a $POD_voice_harm_interaction$ [character_interaction|E], te permite hacer que el objetivo pierda oro.\n#F La voz de Wan-kuei puede dañar objetos inorgánicos.#!"
  CRY_OF_THE_PHANTASM_PERK_EFFECT: "Bonificación a $POD_voice_harm_interaction$ [character_interaction|E], te permite usar tu voz para dañar a los espirituales [knights|E] también.\nMayor probabilidad de éxito en la usurpación de umbra local.\n#F El ataque de voz de Wan-kuei puede afectar a criaturas inmateriales.#!"
- SHOUT_OPENING_THE_WAY_TO_HEAVEN_PERK_EFFECT: "Desbloquea la opción Derribar el Muro en la opción Manipular el Muro del panel de Umbra local.\nPosibilidad de quedar atrapado en la Umbra: #P -10%#!\nMonthly Progreso de exploración de la Umbra: [grace_i]#P +10#!\n#F El grito del Wan-kuei puede perforar una parte del Muro.#!"
+ SHOUT_OPENING_THE_WAY_TO_HEAVEN_PERK_EFFECT: "Desbloquea la opción Derribar el Muro en la opción Manipular el Muro del panel de Umbra local.\nPosibilidad de quedar atrapado en la Umbra: #P -10%#!\nMonthly Progreso de exploración de la Umbra: $pod_grace_i$#P +10#!\n#F El grito del Wan-kuei puede perforar una parte del Muro.#!"
   
   # Hellweaving # 
   
@@ -1575,7 +1575,7 @@
  FLOOD_OF_WICKEDNESS_PERK_EFFECT: "#F Incluso aquellos Kuei-jin que estudian o cultivan activamente su P'o le temen en secreto. La trascendencia del P'o, incluso temporal, representa una pérdida de control y una rendición a la naturaleza y los deseos más bestiales de uno. Sin embargo, algunos akumas poderosos han aprendido a aprovechar su P'o para poder liberarlo más fácilmente que un Kuei-jin típico, para explotar mejor sus poderes.#!"
  YOMI_PORTAL_PERK_EFFECT: "Puede reclutar [GetMaA('generic_servitor').GetName] como [men_at_arms|E]\n#F En este nivel, los Reyes Yama otorgan al akuma el poder de invocar y atar criaturas del Mundo Yomi. Esto proporciona al akuma una fuente de valiosos servidores, asesinos y tropas del terror.#!"
  GIFT_OF_PO_PERK_EFFECT: "Puede reclutar [GetMaA('chih_mei').GetName] como [men_at_arms|E]\nObtiene #V 2#! Yin Chi extra por asesinatos.\n#F Cuando el akuma invoca este poder, llama a un Rey Yama o a su mentor demoníaco para que le conceda almas P'o desnudas del Mundo Yomi. Luego puede usar estas almas para crear sirvientes o simplemente consumirlas para obtener poder.#!"
- THE_RED_BRIDGE_PERK_EFFECT: "Progreso mensual de exploración de Umbra: [grace_i]#P +20#!\nCan Pasa libremente por el Espejo Roto\n#F A veces, los Reyes Yama desean que sus sirvientes más poderosos del Reino Medio vengan a visitarlos y les rindan homenaje. Si es así, les otorgan este poder, que les permite abrir una puerta al Mundo Yomi y un medio para sobrevivir allí.#!"
+ THE_RED_BRIDGE_PERK_EFFECT: "Progreso mensual de exploración de Umbra: $pod_grace_i$#P +20#!\nCan Pasa libremente por el Espejo Roto\n#F A veces, los Reyes Yama desean que sus sirvientes más poderosos del Reino Medio vengan a visitarlos y les rindan homenaje. Si es así, les otorgan este poder, que les permite abrir una puerta al Mundo Yomi y un medio para sobrevivir allí.#!"
   
   # Combo # 
   
@@ -1764,7 +1764,7 @@
  AMULET_OF_CLOUD_WALKING_PERK_EFFECT: "Permite fabricar un [artifact|E] que otorga una bonificación de velocidad de movimiento.\n#F La Momia puede caminar por el aire hasta el nivel de las nubes.#!"
  LESSER_TALISMAN_PERK_EFFECT: "Permite fabricar un [artifact|E] que otorga una bonificación de estadísticas aleatoria.\n#F La Momia crea un Talismán que potencia un Atributo específico.#!"
  LESSER_WARD_PERK_EFFECT: "Permite fabricar un [artifact|E] que otorga una bonificación de resistencia a planes hostiles.\n#F La Momia crea un amuleto simple y más protector diseñado para alejar amenazas específicas.#!"
- PRAYER_OF_THE_AKEN_PERK_EFFECT: "Posibilidad de quedar atrapado en la Umbra: #P -5%#!\nMonthly Progreso de exploración de la Umbra: [grace_i]#P +5#!\n#F La momia llama a uno de los Aken, los asistentes de Anubis, para que la ayuden a navegar por la [underworld|E].#!"
+ PRAYER_OF_THE_AKEN_PERK_EFFECT: "Posibilidad de quedar atrapado en la Umbra: #P -5%#!\nMonthly Progreso de exploración de la Umbra: $pod_grace_i$#P +5#!\n#F La momia llama a uno de los Aken, los asistentes de Anubis, para que la ayuden a navegar por la [underworld|E].#!"
  SCARAB_OF_LIFE_PERK_EFFECT: "Permite fabricar un [artifact|E] que acorta el tiempo para permanecer en [shadow_realm|E] al resucitar.\n#F La Momia forma un escarabajo en miniatura que acorta el tiempo necesario para resucitar.#!"
  METAL_WARD_PERK_EFFECT: "Permite fabricar un [artifact|E] que otorga una bonificación por negación de penalización de salud.\n#F La Momia no puede ser dañada por objetos metálicos.#!"
  MAJOR_WARD_PERK_EFFECT: "Permite fabricar un [artifact|E] que otorga una bonificación de resistencia a planes hostiles.\n#F La Momia crea un amuleto más protector diseñado para alejar amenazas específicas.#!"
@@ -1905,8 +1905,8 @@
   # Necromancy 
   
  BODY_PRESERVATION_PERK_EFFECT: "#F Una momia puede preservar su khat contra la descomposición consumiendo varias mezclas y bañando el cuerpo con aceites y cremas.#!"
- DEATHS_SHROUD_PERK_EFFECT: "Progreso de exploración mensual de Umbra: [grace_i]#P +10#!\n#F La Momia puede enmascarar su alma mientras está en Duat colocando símbolos de protección en su corazón y ojos.#!"
- GHOST_LANTERN_PERK_EFFECT: "Posibilidad de quedar atrapado en la Umbra: #P -5%#!\nMonthly Progreso de exploración de la Umbra: [grace_i]#P +5#!\n#F La Momia transforma a Sekhem en un orbe de luz espectral que lo guía en la [underworld|E].#!"
+ DEATHS_SHROUD_PERK_EFFECT: "Progreso de exploración mensual de Umbra: $pod_grace_i$#P +10#!\n#F La Momia puede enmascarar su alma mientras está en Duat colocando símbolos de protección en su corazón y ojos.#!"
+ GHOST_LANTERN_PERK_EFFECT: "Posibilidad de quedar atrapado en la Umbra: #P -5%#!\nMonthly Progreso de exploración de la Umbra: $pod_grace_i$#P +5#!\n#F La Momia transforma a Sekhem en un orbe de luz espectral que lo guía en la [underworld|E].#!"
  JUDGE_THE_SOUL_PERK_EFFECT: "[espionage|E] Velocidad de progreso: #P +[EmptyScope.ScriptValue('digging_for_dirt_perk_percentage')|0]%#!\n#F La momia puede ver el alma de su objetivo y qué tan cerca está de Ma'at. Las criaturas sobrenaturales también pueden identificarse con este hechizo.#!"
  JUDGE_THE_SOUL_PERK_BONUS_VALUE: "[GetPerk('judge_the_soul_perk').GetName(GetPlayer)]"
  SEPARATE_KA_PERK_EFFECT: "Obtén acceso a [underworld|E].\n#F La Momia puede separar su alma de su cuerpo, lo que le permite escapar al [underworld|E].#!"
@@ -1917,13 +1917,13 @@
  FERTILITY_OF_OSIRIS_PERK_EFFECT: "Como [character_interaction|E], te permite hacer que la mujer objetivo quede embarazada de su esposo muerto.\n#F El ritual permite que un hombre muerto impregne a una mujer mortal viva.#!"
  REVISIT_DEATH_PERK_EFFECT: "Si alguno de tus familiares o amigos es asesinado en circunstancias misteriosas, conocerás a sus asesinos.\n#F Al tocar la piel de un cadáver, la Momia puede revivir las últimas experiencias de este cuerpo.#!"
  SENSE_THE_DEAD_PERK_EFFECT: "Ya no serás perseguido por [GetTrait('wraith').GetName( GetNullCharacter )].\n#F La Momia puede sentir si un espectro la observa o está cerca.#!"
- STORM_SHIELD_PERK_EFFECT: "Progreso mensual de exploración de Umbra: [grace_i]#P +10#!\n#F Al canalizar su Sekhem, la Momia puede erigir protecciones contra las tormentas en el [underworld|E], así como contra Espectros y criaturas similares.#!"
+ STORM_SHIELD_PERK_EFFECT: "Progreso mensual de exploración de Umbra: $pod_grace_i$#P +10#!\n#F Al canalizar su Sekhem, la Momia puede erigir protecciones contra las tormentas en el [underworld|E], así como contra Espectros y criaturas similares.#!"
  BIND_THE_LIVING_PERK_EFFECT: "Desbloquea la opción $EXECUTION_CONVERT_TO_WRAITH$ [execution|E].\n#F La Momia puede lanzar un ritual que asegurará que la persona permanezca como un Espectro.#!"
  DEATHS_HAND_PERK_EFFECT: "Desbloquea [single_combat_duel|E] movimientos.\n#F La Momia puede canalizar el Plasma puro del [underworld|E] contra sus enemigos con un toque.#!"
  MANIFESTATION_PERK_EFFECT: "#F Mientras está en Duat, la Momia puede manifestar su alma como una aparición translúcida en el mundo de los vivos.#!"
  SEPARATE_BA_PERK_EFFECT: "Obtén acceso a [astral_reaches|E] y [spirit_wilds|E] durante los viajes a la Umbra.\n#F La Momia puede entrar en cualquier Umbra que desee.#!"
- SHADOW_PORTAL_PERK_EFFECT: "Posibilidad de quedar atrapado en la Umbra: #P -10%#!\nMonthly Progreso de exploración de la Umbra: [grace_i]#P +10#!\n#F La Momia puede crear una puerta de entrada dentro de la [underworld|E] que permite un movimiento rápido.#!"
- AMENTIS_GRACE_PERK_EFFECT: "Progreso de exploración mensual de Umbra: [grace_i]#P +20#!\n#F Con este ritual, una momia puede crear una protección para formar un [shadow_realm|E].#! temporal."
+ SHADOW_PORTAL_PERK_EFFECT: "Posibilidad de quedar atrapado en la Umbra: #P -10%#!\nMonthly Progreso de exploración de la Umbra: $pod_grace_i$#P +10#!\n#F La Momia puede crear una puerta de entrada dentro de la [underworld|E] que permite un movimiento rápido.#!"
+ AMENTIS_GRACE_PERK_EFFECT: "Progreso de exploración mensual de Umbra: $pod_grace_i$#P +20#!\n#F Con este ritual, una momia puede crear una protección para formar un [shadow_realm|E].#! temporal."
  KHAIBITS_EMBRACE_PERK_EFFECT: "Desbloquea [single_combat_duel|E] movimientos.\n#F La Momia puede sellar un objetivo mortal en un ataúd de ectoplasma negro.#!"
  SEVER_SOUL_PERK_EFFECT: "#F La Momia puede separar la conexión entre una criatura sobrenatural que ha abandonado su cuerpo y el cuerpo mismo.#!"
  SIN_EATING_PERK_EFFECT: "#F La Momia puede absolver a un objetivo de intensos impulsos negativos o incluso de Pasiones Oscuras.#!"
@@ -1943,7 +1943,7 @@
  OPEN_THE_SEBKHET_PERK_EFFECT: "#F La Momia rasga el Sudario, lo que le permite a ella y a otras personas caminar hacia Duat.#!"
  SHADOW_TALISMAN_PERK_EFFECT: "Te permite iniciar la actividad de artesanía incluso en Umbra.\n#F La Momia puede llevarse el Amuleto que creó a través del Amuleto Hekau al [underworld|E].#!"
  SPEAR_OF_ANUBIS_PERK_EFFECT: "Desbloquea [single_combat_duel|E] movimientos.\n#F Al cortarse la palma, la Momia puede manifestar el poder de [oblivion|E] en una lanza oscura que inflige daño agravado y pasa por alto cualquier protección mundana.#!"
- WALKING_IN_THE_SHADOW_OF_ANUBIS_PERK_EFFECT: "Posibilidad de quedar atrapado en la Umbra: #P -20%#!\nMonthly Progreso de exploración de la Umbra: [grace_i]#P +10#!\n#F La Momia puede viajar instantáneamente a través de los diferentes mundos de la Telúrica, siempre que sepa de su existencia.#!"
+ WALKING_IN_THE_SHADOW_OF_ANUBIS_PERK_EFFECT: "Posibilidad de quedar atrapado en la Umbra: #P -20%#!\nMonthly Progreso de exploración de la Umbra: $pod_grace_i$#P +10#!\n#F La Momia puede viajar instantáneamente a través de los diferentes mundos de la Telúrica, siempre que sepa de su existencia.#!"
  CASTING_AWAY_PERK_EFFECT: "Desbloquea la opción $EXECUTION_BANISH_TO_TEMPEST$ [execution|E] para el prisionero [GetTrait('wraith').GetName( GetNullCharacter )].\n#F La Momia puede lanzar a su objetivo a los vientos furiosos del [tempest|E].#!"
  DARK_WALL_OF_HATSHEPSUT_PERK_EFFECT: "Desbloquea la opción Manipular el Sudario en el panel de Umbra.\n#F Desarrollado por Shemsu-Heru Hatshepsut como una variación menor del Rito del Rey Sol, este hechizo crea un muro de Sekhem que impide que cualquier espíritu lo cruce y levanta el Sudario local.#!"
  EMPOWER_BA_PERK_EFFECT: "Permite regresar al Mundo Material más rápidamente al resucitar.\n#F La Momia puede fortalecer su ba para regresar más rápidamente a su cadáver.#!"
@@ -2114,15 +2114,15 @@
  SHELL_PERK_EFFECT: "Inmune a estados mentales hostiles [character_interaction|E]."
  WITHER_LIMB_PERK_EFFECT: "Como [character_interaction|E], te permite mutilar al objetivo."
  PROTEAN_FORM_PERK_EFFECT: "Desbloquea la opción Cambio de forma de forma proteica."
- UMBRAL_BODY_PERK_EFFECT: "Como un espíritu, no puede ser encarcelado, torturado, ejecutado o lastimado físicamente sin algunos poderes específicos.\nProgreso de exploración mensual de Umbra: [grace_i]#P +10#!"
+ UMBRAL_BODY_PERK_EFFECT: "Como un espíritu, no puede ser encarcelado, torturado, ejecutado o lastimado físicamente sin algunos poderes específicos.\nProgreso de exploración mensual de Umbra: $pod_grace_i$#P +10#!"
   
- PART_THE_WALL_PERK_EFFECT: "Progreso mensual de exploración de Umbra: [grace_i]#P +10#!"
+ PART_THE_WALL_PERK_EFFECT: "Progreso mensual de exploración de Umbra: $pod_grace_i$#P +10#!"
   
  STORM_WINDS_SLASH_PERK_EFFECT: "Como [character_interaction|E], te permite infligir heridas a objetivos con una gravedad que depende de tu destreza."
  DARK_OF_NIGHT_PERK_EFFECT: "Otorga un modificador [GetModifier('dark_of_night_perk_modifier').GetNameWithTooltip] al enemigo [knights|E] en la guerra como comandante o al enemigo en [single_combat_duel|E]."
  DIVINE_WIND_PERK_EFFECT: "Como [character_interaction|E], te permite desatar un [GetModifier( 'divine_wind_modifier' ).GetNameWithTooltip|L] sobre reinos enemigos."
   
- UMBRAL_MAP_PERK_EFFECT: "Posibilidad de quedar atrapado en la Umbra: #P -10%#!\nMonthly Progreso de exploración de la Umbra: [grace_i]#P +10#!"
+ UMBRAL_MAP_PERK_EFFECT: "Posibilidad de quedar atrapado en la Umbra: #P -10%#!\nMonthly Progreso de exploración de la Umbra: $pod_grace_i$#P +10#!"
  DANCE_OF_ABANDON_PERK_EFFECT: "Como [character_interaction|E], te permite hacer que el objetivo abandone un plan o incluso una guerra."
  SHADOW_WALK_PERK_EFFECT: "Obtén acceso a [astral_reaches|E], [dreaming|E], [underworld|E] y [deep_umbra|E] durante los viajes espirituales."
  TRICKSTERS_SKIN_PERK_EFFECT: "Desbloquea un [character_interaction|E] para copiar o intercambiar la apariencia de uno."
@@ -2152,7 +2152,7 @@
   # Unity # 
   
  UNITY_LEGACY_1_PERK_EFFECT: "Tendrás más posibilidades de éxito si eliges el enfoque marcial o de administración en Find Lair [journey|E].\n\n#F Pacta clara, boni amici.#!"
- UNITY_LEGACY_2_PERK_EFFECT: "Tu Find Lair [journeys|E] ha aumentado [planning_speed|E].\n\n#F Conveniens homini est hominem servare voluptas.#!"
+ UNITY_LEGACY_2_PERK_EFFECT: "Tu Find Lair $pod_journeys$ ha aumentado [planning_speed|E].\n\n#F Conveniens homini est hominem servare voluptas.#!"
  UNITY_LEGACY_3_PERK_EFFECT: "\n\n#F Beatius est magis dare quam accipere#!."
  UNITY_LEGACY_4_PERK_EFFECT: "La formación de nuevos aprendices será más eficaz.\n\n#F Artificem commendat opus.#!"
  UNITY_LEGACY_5_PERK_EFFECT: "\n\n#F Nulla vis maior pietate vera est.#!"
@@ -2164,7 +2164,7 @@
   #Aspiration legacy # 
   
  #ASPIRATION_LEGACY_2_PERK_EFFECT: "Se reducirá la obligación feudal."
- ASPIRATION_LEGACY_5_PERK_EFFECT: "Mayor probabilidad de heredar [disciplines|E]."
+ ASPIRATION_LEGACY_5_PERK_EFFECT: "Mayor probabilidad de heredar $pod_disciplines$."
   
   #Ventrue legacy # 
   
@@ -2388,7 +2388,7 @@
  NEEDS_COMMUNE_WITH_THE_INCARNA_TEXT: "@warning_icon!#X Debes comunicarte con la Incarna planetaria correspondiente ubicada en [umbra|E] - [spirit_wilds|E] - [aetherial_realm|E] para desbloquear este árbol.#!"
   
  POD_ventrue_bane_notification: "Perdición Ventrue"
- ventrue_clan_bane: "Esta persona está fuera de tu [feeding_restrictions|E], y alimentarte de ella no será nutritivo."
+ ventrue_clan_bane: "Esta persona está fuera de tu $pod_feeding_restrictions$, y alimentarte de ella no será nutritivo."
  ventrue_clan_bane_anim: "Los Ventrue tienen dificultades para encontrar alimento en la sangre de los animales, lo que hace que todo el proceso de drenarlos a veces sea más costoso que útil."
   
  same_o_higher_dharma_header: "@warning_icon!#X Solo con el mismo nivel de dharma o superior puedes comprar este beneficio#!"
@@ -2436,24 +2436,24 @@
  NEEDS_IMPUNDULU_NECROMANCY_PATH_TRAINING: "@warning_icon!#X Necesitas recibir entrenamiento en [GetDynastyByID( '10000023' ).GetBaseName] caminos de nigromancia para obtener esta ventaja.#!"
  NEEDS_NAGARAJA_NECROMANCY_PATH_TRAINING: "@warning_icon!#X Necesitas recibir entrenamiento en [GetDynastyByID( '10000018' ).GetBaseName] caminos de nigromancia para obtener esta ventaja.#!"
   
- masquerade_exposure_increase_effect.tt: "[masquerade_exposure_with_icon|E] aumentará #N #!."
- masquerade_exposure_decrease_effect.tt: "[masquerade_exposure_with_icon|E] disminuirá #P #!."
+ masquerade_exposure_increase_effect.tt: "$pod_masquerade_exposure_with_icon$ aumentará #N #!."
+ masquerade_exposure_decrease_effect.tt: "$pod_masquerade_exposure_with_icon$ disminuirá #P #!."
   
- hunger_increase_effect.tt: "[hunger_with_icon|E] #N aumentará#!."
- hunger_increase_effect.tt.1: "[hunger_with_icon|E] #N aumentará#! en #V;bold 1#!."
- hunger_increase_effect.tt.2: "[hunger_with_icon|E] #N aumentará#! en #V;bold 2#!."
- hunger_increase_effect.tt.3: "[hunger_with_icon|E] #N aumentará#! en #V;bold 3#!."
- hunger_increase_effect.tt.4: "[hunger_with_icon|E] #N aumentará#! en #V;bold 4#!."
- hunger_increase_effect.tt.5: "[hunger_with_icon|E] #N aumentará#! en #V;bold 5#!."
- hunger_increase_effect.hungerless: "Debido a tu suministro ilimitado de sangre, tu [hunger_with_icon|E] no cambiará."
- hunger_decrease_effect.tt: "Tu [hunger_with_icon|E] #P disminuirá#!."
- hunger_decrease_effect.tt.full: "Como ya estás completamente saciado, tu [hunger_with_icon|E] no disminuirá."
- hunger_decrease_effect.tt.0: "Dado que tienes [GetPlayer.Custom('PODBloodPotency')], [hunger_with_icon|E] #N;bold no#! disminuirá."
- hunger_decrease_effect.tt.1: "[hunger_with_icon|E] #P disminuirá#! en #V;bold 1#!."
- hunger_decrease_effect.tt.2: "[hunger_with_icon|E] #P disminuirá#! en #V;bold 2#!."
- hunger_decrease_effect.tt.3: "[hunger_with_icon|E] #P disminuirá#! en #V;bold 3#!."
- hunger_decrease_effect.tt.4: "[hunger_with_icon|E] #P disminuirá#! en #V;bold 4#!."
- hunger_decrease_effect.tt.5: "[hunger_with_icon|E] #P disminuirá#! en #V;bold 5#!."
+ hunger_increase_effect.tt: "$pod_hunger_with_icon$ #N aumentará#!."
+ hunger_increase_effect.tt.1: "$pod_hunger_with_icon$ #N aumentará#! en #V;bold 1#!."
+ hunger_increase_effect.tt.2: "$pod_hunger_with_icon$ #N aumentará#! en #V;bold 2#!."
+ hunger_increase_effect.tt.3: "$pod_hunger_with_icon$ #N aumentará#! en #V;bold 3#!."
+ hunger_increase_effect.tt.4: "$pod_hunger_with_icon$ #N aumentará#! en #V;bold 4#!."
+ hunger_increase_effect.tt.5: "$pod_hunger_with_icon$ #N aumentará#! en #V;bold 5#!."
+ hunger_increase_effect.hungerless: "Debido a tu suministro ilimitado de sangre, tu $pod_hunger_with_icon$ no cambiará."
+ hunger_decrease_effect.tt: "Tu $pod_hunger_with_icon$ #P disminuirá#!."
+ hunger_decrease_effect.tt.full: "Como ya estás completamente saciado, tu $pod_hunger_with_icon$ no disminuirá."
+ hunger_decrease_effect.tt.0: "Dado que tienes [GetPlayer.Custom('PODBloodPotency')], $pod_hunger_with_icon$ #N;bold no#! disminuirá."
+ hunger_decrease_effect.tt.1: "$pod_hunger_with_icon$ #P disminuirá#! en #V;bold 1#!."
+ hunger_decrease_effect.tt.2: "$pod_hunger_with_icon$ #P disminuirá#! en #V;bold 2#!."
+ hunger_decrease_effect.tt.3: "$pod_hunger_with_icon$ #P disminuirá#! en #V;bold 3#!."
+ hunger_decrease_effect.tt.4: "$pod_hunger_with_icon$ #P disminuirá#! en #V;bold 4#!."
+ hunger_decrease_effect.tt.5: "$pod_hunger_with_icon$ #P disminuirá#! en #V;bold 5#!."
   
  POD_killed_victim_by_feeding_tt: "@warning_icon!#X ¡Tu víctima morirá por pérdida de sangre!#!"
   

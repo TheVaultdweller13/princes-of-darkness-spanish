@@ -47,7 +47,7 @@
  kitsune_elemental_gift_perk_name: "Don elemental"
  song_of_the_great_beast_perk_name: "Canción de la gran bestia"
   
- TEN_CHI_PERK_EFFECT: "Progreso mensual de exploración de Umbra: [grace_i]#P +10#!"
+ TEN_CHI_PERK_EFFECT: "Progreso mensual de exploración de Umbra: $pod_grace_i$#P +10#!"
  BLIND_PERK_EFFECT: "Otorga un modificador [GetModifier('blind_modifier').GetNameWithTooltip] al enemigo [knights|E] en la guerra como comandante o al enemigo en [single_combat_duel|E]."
  ELEMENTAL_GIFT_PERK_EFFECT: "Puede reclutar [GetMaA('earth_elemental').GetName], [GetMaA('water_elemental').GetName], [GetMaA('fire_elemental').GetName] y [GetMaA('air_elemental').GetName] como [men_at_arms|E]."
  SONG_OF_THE_GREAT_BEAST_PERK_EFFECT: "Puede reclutar [GetMaA('plesiosaurs').GetName], [GetMaA('pterosaurs').GetName], [GetMaA('carnosaurs').GetName] y [GetMaA('herbosaurs').GetName] como [men_at_arms|E]."
@@ -61,7 +61,7 @@
  imperial_obligation_perk_name: "Obligación imperial"
  marionette_perk_name: "Marioneta"
   
- SCENT_OF_BEYOND_PERK_EFFECT: "Posibilidad de quedar atrapado en la Umbra: #P -15%#!\nMonthly Progreso de exploración de la Umbra: [grace_i]#P +5#!"
+ SCENT_OF_BEYOND_PERK_EFFECT: "Posibilidad de quedar atrapado en la Umbra: #P -15%#!\nMonthly Progreso de exploración de la Umbra: $pod_grace_i$#P +5#!"
  MARIONETTE_PERK_EFFECT: "Como [character_interaction|E], te permite enganchar al objetivo."
   
  blessing_the_blade_perk_name: "Bendiciendo la espada"
@@ -129,4 +129,4 @@
  LABYRINTH_PERK_EFFECT: "Desbloquea una opción de evento cuando un personaje poderoso intenta resistirse a ser encarcelado.\nTus prisioneros tienen menos posibilidades de escapar de tu prisión."
  BANISHMENT_PERK_EFFECT: "Haz que $POD_demon_unearthbound_decision$ [decision|E] sea gratis.\nComo [character_interaction|E], te permite desterrar un personaje espectral al [dark_kingdom|E].\nComo [character_interaction|E], te permite desterrar un personaje demonio al [abyss|E].\nComo [character_interaction|E], te permite desterrar un personaje hada al [arcadia|E]."
  BEAST_SHAPE_PERK_EFFECT: "Permite cambiar de forma a varias formas animales."
- WALK_PERK_EFFECT: "Posibilidad de quedar atrapado en la Umbra: #P -10%#!\nMonthly Progreso de exploración de la Umbra: [grace_i]#P +10#!"
+ WALK_PERK_EFFECT: "Posibilidad de quedar atrapado en la Umbra: #P -10%#!\nMonthly Progreso de exploración de la Umbra: $pod_grace_i$#P +10#!"
