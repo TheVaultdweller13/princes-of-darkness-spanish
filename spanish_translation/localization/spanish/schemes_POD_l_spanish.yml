@@ -118,7 +118,10 @@
   
  diablerize: "Diabolizar"
  diablerize_action: "Diabolizar"
- diablerize_interaction: "[diablerize|E] #weak (Conjura)#!"
+ # TODO: Prueba
+  # diablerize_interaction: "[diablerize|E] #weak (Conjura)#!"
+ diablerize_interaction: "$pod_diablerize$ #weak (Conjura)#!"
+ # ---
  diablerize_desc: "¡Voy a [diablerize|E] a [SCHEME.GetTarget.GetShortUINameNoTooltip] y devoraré su alma!"
  diablerize_desc_general: "La $diablerie$ es un [hostile_scheme|E] para matar a un objetivo [GetTrait('vampire').GetName( GetNullCharacter )] y devorar toda su sangre y alma. Es un [secret_scheme|E] basado en [intrigue|E], que puede reclutar [agents|E].\n\nUna [diablerie|E] exitosa resultará en la [character_death_death|E] del [scheme_target|E]. \n\nUn asesinato que permanezca en secreto le dará al [scheme_owner|E] un [diablerie|E] [secret|E].\n\nSer descubierto intentando [diablerize|E], o diablerizando con éxito a un [GetTrait('vampire').GetName( GetNullCharacter )] es un grave [crime|E] para la mayoría de las [GetTrait('vampire').GetName( GetNullCharacter )] creencias. También llamado 'Amaranto' en honor a la primera víctima de la [diablerie|E], este es el proceso en el cual un [GetTrait('vampire').GetName( GetNullCharacter )] drena a otro [GetTrait('vampire').GetName( GetNullCharacter )] de toda su sangre, incluyendo su alma. Esto permite al [diablerist|E] ganar [bloodpotency|E] e incluso una menor [vampgeneration|E] de su víctima. A menudo tiene un alto precio al fortalecer a la [beast|E] de un [GetTrait('vampire').GetName( GetNullCharacter )]. Representamos esto perdiendo niveles de [piety|E]. La mayoría de los [GetTrait('vampire').GetName( GetNullCharacter )] tienen una mala opinión de #TOOLTIP:GAME_TRAIT,diablerist,[GetNullCharacter] #L Diableristas#!#!."
  scheme_interaction_tt_diablerize_approved: "[diablerize|E] [recipient.GetFirstName]."

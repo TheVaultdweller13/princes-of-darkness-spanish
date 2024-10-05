@@ -1,58 +1,58 @@
 ﻿l_spanish:
- tab_umbra: "#T Umbra#![AddTextIf( No(PlayerGuiIsShown('umbra_expedition_cooldown')), Localizar('tab_umbra_cooldown') )]"
- tab_umbra_cooldown: "\n\n#X @warning_icon! $umbra_cooldown_tt$#!"
- UMBRA: "Umbría"
- UMBRA_WINDOW_TAB_REALMS: "Reinos"
- UMBRA_WINDOW_TAB_DISCOVERIES: "Descubrimientos"
- UMBRA_WINDOW_TAB_EXPLORERS: "Exploradores"
- UMBRA_WINDOW_ACTION_HINT: "#weak Puedes realizar acciones en este [umbra|E] reino.#!"
- UMBRA_WINDOW_GAUNTLET: "Guantelete: #V [GetPlayer.MakeScope.ScriptValue('location_gauntlet_level')|0]#!"
- UMBRA_WINDOW_SHROUD: "Sudario: #V [GetPlayer.MakeScope.ScriptValue('location_shroud_level')|0]#!"
- UMBRA_WINDOW_COMMUNE: "Comuna"
+ tab_umbra: "#T Umbra#![AddTextIf( No(PlayerGuiIsShown('umbra_expedition_cooldown')), Localizar('tab_umbra_cooldown') )]" #NT!
+ tab_umbra_cooldown: "\n\n#X @warning_icon! $umbra_cooldown_tt$#!" #NT!
+ UMBRA: "Umbría" #NT!
+ UMBRA_WINDOW_TAB_REALMS: "Reinos" #NT!
+ UMBRA_WINDOW_TAB_DISCOVERIES: "Descubrimientos" #NT!
+ UMBRA_WINDOW_TAB_EXPLORERS: "Exploradores" #NT!
+ UMBRA_WINDOW_ACTION_HINT: "#weak Puedes realizar acciones en este [umbra|E] reino.#!" #NT!
+ UMBRA_WINDOW_GAUNTLET: "Guantelete: #V [GetPlayer.MakeScope.ScriptValue('location_gauntlet_level')|0]#!" #NT!
+ UMBRA_WINDOW_SHROUD: "Sudario: #V [GetPlayer.MakeScope.ScriptValue('location_shroud_level')|0]#!" #NT!
+ UMBRA_WINDOW_COMMUNE: "Comuna" #NT!
   
- UMBRA_WINDOW_NOT_EXPEDITION: "#weak No hay [Concept('umbra_expedition','Expeditions')|E] disponibles#!"
- UMBRA_WINDOW_NOT_EXPLORER: "#weak No hay exploradores contratados#!"
- UMBRA_WINDOW_DANGER: "@alert_icon! #alert_trial Un explorador estacionado aquí no podrá usar [interactions|E] en otros personajes#!"
- UMBRA_WINDOW_EVENT: "@grace_icon! #I Posibilidad de obtener un evento mensual aleatorio si un explorador estacionado está aquí.#!"
- UMBRA_WINDOW_TEMPEST_TRAP: "@warning_icon! #X El explorador tiene una probabilidad de quedar atrapado y ganar trimestralmente [stress|E] en este reino. #Weak (A menos que tenga [GetPerk('stormwalk_perk').GetName(GetPlayer)] o [GetPerk('stormreader_perk').GetName(GetPlayer)] [perk|E])#!#!"
- UMBRA_WINDOW_OBLIVION_TRAP: "@warning_icon! #X El explorador tiene una probabilidad de quedar atrapado y ganar trimestralmente [stress|E] en este reino. #Weak (A menos que estén sirviendo a Oblivion)#!#!"
- UMBRA_WINDOW_WYRM_TRAP: "@warning_icon! #X El explorador tiene una probabilidad de quedar atrapado y ganar trimestralmente [stress|E] en este reino. #Weak (A menos que estén sirviendo al Wyrm)#!#!"
- UMBRA_WINDOW_DEMON_TRAP: "@warning_icon! #X El explorador tiene una probabilidad de quedar atrapado y ganar trimestralmente [stress|E] en este reino. #Weak (A menos que estén sirviendo a demonios)#!#!"
- UMBRA_WINDOW_YAMA_TRAP: "@warning_icon! #X El explorador tiene una probabilidad de quedar atrapado y ganar trimestralmente [stress|E] en este reino. #Weak (A menos que estén sirviendo a los Reyes Yama)#!#!"
+ UMBRA_WINDOW_NOT_EXPEDITION: "#weak No hay [Concept('umbra_expedition','Expeditions')|E] disponibles#!" #NT!
+ UMBRA_WINDOW_NOT_EXPLORER: "#weak No hay exploradores contratados#!" #NT!
+ UMBRA_WINDOW_DANGER: "@alert_icon! #alert_trial Un explorador estacionado aquí no podrá usar [interactions|E] en otros personajes#!" #NT!
+ UMBRA_WINDOW_EVENT: "@grace_icon! #I Posibilidad de obtener un evento mensual aleatorio si un explorador estacionado está aquí.#!" #NT!
+ UMBRA_WINDOW_TEMPEST_TRAP: "@warning_icon! #X El explorador tiene una probabilidad de quedar atrapado y ganar trimestralmente [stress|E] en este reino. #Weak (A menos que tenga [GetPerk('stormwalk_perk').GetName(GetPlayer)] o [GetPerk('stormreader_perk').GetName(GetPlayer)] [perk|E])#!#!" #NT!
+ UMBRA_WINDOW_OBLIVION_TRAP: "@warning_icon! #X El explorador tiene una probabilidad de quedar atrapado y ganar trimestralmente [stress|E] en este reino. #Weak (A menos que estén sirviendo a Oblivion)#!#!" #NT!
+ UMBRA_WINDOW_WYRM_TRAP: "@warning_icon! #X El explorador tiene una probabilidad de quedar atrapado y ganar trimestralmente [stress|E] en este reino. #Weak (A menos que estén sirviendo al Wyrm)#!#!" #NT!
+ UMBRA_WINDOW_DEMON_TRAP: "@warning_icon! #X El explorador tiene una probabilidad de quedar atrapado y ganar trimestralmente [stress|E] en este reino. #Weak (A menos que estén sirviendo a demonios)#!#!" #NT!
+ UMBRA_WINDOW_YAMA_TRAP: "@warning_icon! #X El explorador tiene una probabilidad de quedar atrapado y ganar trimestralmente [stress|E] en este reino. #Weak (A menos que estén sirviendo a los Reyes Yama)#!#!" #NT!
   
- umbra_action_tooltip: "#T [Localize(Concatenate(Scope.GetFlagName,'_confirm'))]#![Localize('line_break')][ScriptedGui.BuildTooltip(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('explorer', Character.MakeScope).Fin)]"
- umbra_action_cooldown_tooltip: "Ya utilizaste esta acción este mes."
- umbra_action_no_explorer_tooltip: "Necesita un explorador estacionado para habilitar esta acción."
- umbra_action_locked_tooltip: "Debes completar el [umbra_expedition|E] correspondiente para desbloquear esta acción."
+ umbra_action_tooltip: "#T [Localize(Concatenate(Scope.GetFlagName,'_confirm'))]#![Localize('line_break')][ScriptedGui.BuildTooltip(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('explorer', Carácter.MakeScope).Fin)]" #NT!
+ umbra_action_cooldown_tooltip: "Ya utilizaste esta acción este mes." #NT!
+ umbra_action_no_explorer_tooltip: "Necesita un explorador estacionado para habilitar esta acción." #NT!
+ umbra_action_locked_tooltip: "Debes completar el [umbra_expedition|E] correspondiente para desbloquear esta acción." #NT!
   
- umbra_ongoing_tt: "Estás en un [umbra_expedition|E]."
- shadow_realm_tt: "Estás en un [shadow_realm|E]."
+ umbra_ongoing_tt: "Estás en un [umbra_expedition|E]." #NT!
+ shadow_realm_tt: "Estás en un [UmbraGlossary('shadow_realm')]." #NT!
   
- silentstrider_objective_decision_finished: "Terminaste el $silentstrider_objective_decision$ [decision|E]."
- breakdown_the_abyss_objective_decision_finished: "Terminaste el $breakdown_the_abyss_objective_decision$ [decision|E]."
- stationed_on_dreaming_tt: "Está estacionado en [dreaming|E]."
+ silentstrider_objective_decision_finished: "Terminaste el $silentstrider_objective_decision$ [decision|E]." #NT!
+ breakdown_the_abyss_objective_decision_finished: "Terminaste el $breakdown_the_abyss_objective_decision$ [decision|E]." #NT!
+ stationed_on_dreaming_tt: "Está estacionado en [UmbraGlossary('dreaming')]." #NT!
   
- known_neighboring_realm_tt: "Ahora tienes conocimiento de estos reinos vecinos:"
+ known_neighboring_realm_tt: "Ahora tienes conocimiento de estos reinos vecinos:" #NT!
   
- umbra_level_tt: "[AddLocalizationIf( Scope.Var('explorer').IsSet, 'umbra_progress_tt' )]Progreso: [Scope.ScriptValue('umbra_realm_progress')|V0]/[Scope.ScriptValue('umbra_realm_size')|V0] hacia el próximo descubrimiento"
- umbra_progress_tt: "Aumento de progreso mensual: #P +[Scope.Var('explorer').GetCharacter.MakeScope.ScriptValue('umbra_aptitude')|P0]#!\n"
+ umbra_level_tt: "[AddLocalizationIf( Scope.Var('explorer').IsSet, 'umbra_progress_tt' )]Progreso: [Scope.ScriptValue('umbra_realm_progress')|V0]/[Scope.ScriptValue('umbra_realm_size')|V0] hacia el próximo descubrimiento" #NT!
+ umbra_progress_tt: "Aumento de progreso mensual: #P +[Scope.Var('explorer').GetCharacter.MakeScope.ScriptValue('umbra_aptitude')|P0]#!\n" #NT!
   
- umbra_realm_title: "[Localize(Concatenate('game_concept_', Scope.Var('name').GetFlagName))]"
- umbra_realm_desc: "[Localize(Concatenate(Scope.Var('name').GetFlagName ,'_effect_desc'))]"
- umbra_realm_tooltip: "#T [Localize(Concatenate('game_concept_', Scope.Var('name').GetFlagName))]#!\n[Localize(Concatenate(Concatenate('game_concept_', Alcance.Var('nombre').GetFlagName),'_desc'))]"
+ umbra_realm_title: "[Localize(Concatenate('umbra_realm_', Scope.Var('name').GetFlagName))]" #NT!
+ umbra_realm_desc: "[Localize(Concatenate(Scope.Var('name').GetFlagName ,'_effect_desc'))]" #NT!
+ umbra_realm_tooltip: "#T [Localize(Concatenate('umbra_realm_', Scope.Var('name').GetFlagName))]#!\n[Localize(Concatenate(Concatenate('umbra_realm_', Alcance.Var('nombre').GetFlagName),'_desc'))]" #NT!
   
- toggle_realm_with_actions_desc: "Reinos con acciones"
- umbra_filter_all: "Todo"
- umbra_filter_discovery: "Con descubrimientos"
- umbra_filter_clear: "Vecino conocido"
- umbra_filter_unclear: "Vecino desconocido"
- umbra_filter_stationed: "Estacionado"
- umbra_filter_unstationed: "Sin estación"
- umbra_filter_realm: "Reino principal"
- umbra_filter_astral_reaches: "Alcances astrales"
- umbra_filter_spirit_wilds: "Espíritu salvaje"
- umbra_filter_underworld: "Inframundo"
- umbra_filter_dreaming: "Soñando"
- umbra_filter_deep_umbra: "Umbra profunda"
- umbra_filter_penumbra: "Penumbra"
- umbra_filter_zone: "Zona"
+ toggle_realm_with_actions_desc: "Reinos con acciones" #NT!
+ umbra_filter_all: "Todo" #NT!
+ umbra_filter_discovery: "Con descubrimientos" #NT!
+ umbra_filter_clear: "Vecino conocido" #NT!
+ umbra_filter_unclear: "Vecino desconocido" #NT!
+ umbra_filter_stationed: "Estacionado" #NT!
+ umbra_filter_unstationed: "Sin estación" #NT!
+ umbra_filter_realm: "Reino principal" #NT!
+ umbra_filter_astral_reaches: "Alcances astrales" #NT!
+ umbra_filter_spirit_wilds: "Espíritu salvaje" #NT!
+ umbra_filter_underworld: "Inframundo" #NT!
+ umbra_filter_dreaming: "Soñando" #NT!
+ umbra_filter_deep_umbra: "Umbra profunda" #NT!
+ umbra_filter_penumbra: "Penumbra" #NT!
+ umbra_filter_zone: "Zona" #NT!
