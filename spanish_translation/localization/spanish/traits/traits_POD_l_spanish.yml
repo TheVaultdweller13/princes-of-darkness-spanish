@@ -39,13 +39,13 @@
  trait_gaunt: "Demacrado"
  trait_gaunt_desc: "Un Gaunt es un espectro más viejo que ha resuelto uno o más de sus [Fetters|E] y aún los mantiene."
  trait_domem: "Cúpula"
- trait_domem_desc: "Un Domem es un espectro cuyos [Fetters|E] están todos destruidos, lo que les impide permanecer en el [shadowlands|E] durante cualquier período de tiempo; si bien la condición de Domem generalmente implica edad, un espectro puede convertirse en un Domem mientras aún es muy joven, todo lo que requiere es que su [Fetters|E] sea destruido."
+ trait_domem_desc: "Un Domem es un espectro cuyos [Fetters|E] están todos destruidos, lo que les impide permanecer en el [UmbraGlossary('shadowlands')] durante cualquier período de tiempo; si bien la condición de Domem generalmente implica edad, un espectro puede convertirse en un Domem mientras aún es muy joven, todo lo que requiere es que su [Fetters|E] sea destruido."
  trait_enfant: "Niños"
- trait_enfant_desc: "Los espectros conscientes de sí mismos comienzan como Enfants; cuando una persona muere, su alma renace en el [underworld|E] cubierta por una capa de plasma llamada membrana."
+ trait_enfant_desc: "Los espectros conscientes de sí mismos comienzan como Enfants; cuando una persona muere, su alma renace en el [UmbraGlossaryLocalized('shadowlands','Underworld')] cubierta por una capa de plasma llamada membrana."
  trait_track_fetter: "Grillete"
  trait_track_fetter_desc: "$game_concept_Fetter_desc$"
  trait_track_fetter_resolved: "Grillete resuelto"
- trait_track_fetter_resolved_desc: "[Fetters|E] también se puede resolver, lo que significa que un espectro obtiene la fuerza para decir adiós a las cosas y personas que amaba en vida. Un espectro que logra resolver todos sus [Fetters|E] puede permanecer en el [shadowlands|E] indefinidamente, pero si tal éxito otorga este beneficio, es raro hasta el punto de convertirse en un mito."
+ trait_track_fetter_resolved_desc: "[Fetters|E] también se puede resolver, lo que significa que un espectro obtiene la fuerza para decir adiós a las cosas y personas que amaba en vida. Un espectro que logra resolver todos sus [Fetters|E] puede permanecer en el [UmbraGlossary('shadowlands')] indefinidamente, pero si tal éxito otorga este beneficio, es raro hasta el punto de convertirse en un mito."
   
  trait_spirit: "Espíritu"
  trait_spirit_desc: "Los espíritus son entidades incorpóreas que se originan y generalmente habitan en la Umbra; por esa razón, algunos magos los llaman "Umbrood"."
@@ -269,7 +269,7 @@
  trait_mytherceriaadvanced_desc: "Mytherceria es un [discipline|E] que se manifiesta en vampiros de sangre feérica como Kiasyd y Maeghar. Otorga al vampiro sentidos místicos, la capacidad de robar conocimiento y otros poderes atribuidos a las hadas.\n\nMytherceria, una colección de poderes atribuidos a las hadas e inclinada hacia la exposición de nuevos conocimientos, ha llevado a muchas de sus víctimas a la locura parlanchina, o al menos a la frustración."
   
  trait_necromancy: "Nigromancia"
- trait_necromancy_desc: "[necromancy|E] es una forma de [bloodsorcery|E] que trata exclusivamente con el mundo de los muertos: los espectros y los [shadowlands|E]. Así como hay diferentes estilos de [bloodsorcery|E] convencional, hay una variedad de prácticas de [necromancy|E]. Es practicado principalmente por los Giovanni."
+ trait_necromancy_desc: "[necromancy|E] es una forma de [bloodsorcery|E] que trata exclusivamente con el mundo de los muertos: los espectros y los [UmbraGlossary('shadowlands')]. Así como hay diferentes estilos de [bloodsorcery|E] convencional, hay una variedad de prácticas de [necromancy|E]. Es practicado principalmente por los Giovanni."
  trait_necromancy_character_desc: "$necromancy_paths_display$\n\n$trait_necromancy_desc$" #NT!
   
  trait_necromancyadvanced: "Nigromancia avanzada"
@@ -427,10 +427,10 @@
  trait_mortisadvanced_desc: "El [discipline|E] Mortis tiene sus raíces en el control y la manipulación de la muerte. Más específicamente, Mortis es una forma de [bloodsorcery|E] que se ocupa de los cadáveres y sus condiciones después de la muerte. Los Capadocios [Clan|E] son los únicos Vástagos que poseen las afinidades naturales para este [discipline|E]."
   
  trait_nihilistics: "Nihilismo"
- trait_nihilistics_desc: "La nihilística es un [discipline|E] exclusivo de los Nagaraja que les permite penetrar el Sudario y canalizar a [oblivion|E]. Si bien algunos de sus usos se relacionan con los habitantes de [underworld|E], muchos de sus poderes permiten al vampiro atraer a [oblivion|E] al mundo físico."
+ trait_nihilistics_desc: "La nihilística es un [discipline|E] exclusivo de los Nagaraja que les permite penetrar el Sudario y canalizar a [UmbraGlossary('oblivion')]. Si bien algunos de sus usos se relacionan con los habitantes de [UmbraGlossaryLocalized('shadowlands','Underworld')], muchos de sus poderes permiten al vampiro atraer a [UmbraGlossary('oblivion')] al mundo físico."
   
  trait_nihilisticsadvanced: "Nihilista avanzada"
- trait_nihilisticsadvanced_desc: "La nihilística es un [discipline|E] exclusivo de los Nagaraja que les permite penetrar el Sudario y canalizar a [oblivion|E]. Si bien algunos de sus usos se relacionan con los habitantes de [underworld|E], muchos de sus poderes permiten al vampiro atraer a [oblivion|E] al mundo físico."
+ trait_nihilisticsadvanced_desc: "La nihilística es un [discipline|E] exclusivo de los Nagaraja que les permite penetrar el Sudario y canalizar a [UmbraGlossary('oblivion')]. Si bien algunos de sus usos se relacionan con los habitantes de [UmbraGlossaryLocalized('shadowlands','Underworld')], muchos de sus poderes permiten al vampiro atraer a [UmbraGlossary('oblivion')] al mundo físico."
   
  trait_thanatosis: "Tanatosis"
  trait_thanatosis_desc: "La tanatosis es la técnica exclusiva [discipline|E] del linaje Samedi que implica manipular los efectos de la muerte y la descomposición. En algunos aspectos es similar a [necromancy|E]. La [discipline|E] se ocupa de la aparición de la muerte en todas sus formas. Los practicantes están obsesionados con la aparición de la muerte y se ven rechazados por todos, excepto los Vástagos más retorcidos."
@@ -509,7 +509,7 @@
  trait_little_death: "Pequeña muerte"
  trait_little_death_desc: "Durante la Pequeña Muerte, el cuerpo del personaje "muere", pero el alma dual permanece dentro del cadáver. Los Wan Kuei temen a la Pequeña Muerte, ya que es un período desgarrador de visiones y pesadillas, cuando el espíritu es bastante vulnerable a la magia hostil."
  trait_caul: "Caul"
- trait_caul_desc: "Cuando un Quick muere, entra en el [underworld|E] cubierto por un capullo de plasma llamado Caul. Mientras el caul está presente, el Enfant se encuentra en un estado plácido, como de ensueño y generalmente inconsciente de lo que lo rodea."
+ trait_caul_desc: "Cuando un Quick muere, entra en el [UmbraGlossaryLocalized('shadowlands','Underworld')] cubierto por un capullo de plasma llamado Caul. Mientras el caul está presente, el Enfant se encuentra en un estado plácido, como de ensueño y generalmente inconsciente de lo que lo rodea."
  trait_slumber: "Sueño"
  trait_slumber_desc: "Un sueño profundo que los espectros pueden usar para curarse."
  trait_deactivated: "Desactivado"
@@ -598,7 +598,7 @@
  trait_regnant_desc: "Este personaje ha creado un [ghoul|E]."
   
  trait_massregnant: "Regente en masa"
- trait_massregnant_desc: "Este personaje ha creado ghouls en masa. Esto suele ser una infracción de [masquerade|E]."
+ trait_massregnant_desc: "Este personaje ha creado ghouls en masa. Esto suele ser una infracción de [the_masquerade|E]."
   
  trait_unbondable: "No adherible"
  trait_unbondable_desc: "Este personaje no puede tener vínculos de sangre."
@@ -619,7 +619,7 @@
  trait_sire_desc: "Este vampiro ha creado otro de su especie."
   
  trait_masssire: "[Sire|E]"
- trait_masssire_desc: "Este vampiro ha creado una gran cantidad de vampiros. La mayoría de los caminos consideran que esto es una violación de [masquerade|E]."
+ trait_masssire_desc: "Este vampiro ha creado una gran cantidad de vampiros. La mayoría de los caminos consideran que esto es una violación de [the_masquerade|E]."
   
  trait_lamia: "Lamia"
  trait_lamia_desc: "Las Lamia eran un linaje de [cainites|E] dedicadas a defender al [Clan|E] Capadocio, aunque originalmente eran un grupo de cultistas que afirmaban descender de Lilith, la primera esposa de Adán."
@@ -666,7 +666,7 @@ trait_grondr_kinfolk: "Pariente Grondr"
  trait_beatific_desc: "Este personaje, una encarnación ambulante de su Dios elegido, es un hacedor de milagros, un modelo de [true_faith|E] en un mundo de oscuridad. Esto le da acceso a habilidades que algunos podrían considerar antinaturales. Pero cuidado, los individuos pecadores pueden acabar siendo despojados de sus dones divinos."
  trait_beatific_character_desc: "[ROOT.Char.GetFirstNameNoTooltip] es una encarnación ambulante del Dios elegido por [ROOT.Char.GetHerHis] y un hacedor de milagros, un modelo de [true_faith|E] en un mundo de oscuridad. Le otorga a [ROOT.Char.GetHerHim] acceso a habilidades que algunos podrían considerar antinaturales. Pero cuidado, los individuos pecadores pueden acabar siendo despojados de sus dones divinos." #NT!
  trait_track_beatific: "Milagros"
- trait_track_beatific_desc: "#bold Nivel 1:#! Libera $POD_demon_unearthbound_decision$ [decision|E]. Como [character_interaction|E], te permite desterrar un personaje espectro/demonio al [dark_kingdom|E]/[abyss|E]. Desbloquea un edificio especial [GetBuilding('sanctified_area_01').GetName]. \n#bold Nivel 2:#! Como [character_interaction|E], te permite bendecir un artefacto. Obtenga inmunidad contra el asesinato. Obtenga inmunidad al delirio. Ya no puedes ser poseído por #!1.\n#bold Nivel 3:#! Los objetivos siempre aceptarán demandas de conversión de fe.\n#bold Nivel 4:#! Como [character_interaction|E], te permite resolver cada #!7 de un fantasma. Como [character_interaction|E], te permite matar a un sobrenatural con poca piedad. Ya no necesitas un gancho para desterrar un espíritu.\n#bold Nivel 5:#! Como [character_interaction|E], te permite volver a convertir a un vampiro en mortal o alcanzar la Golconda. Puede reclutar a $POD_demon_unearthbound_decision$2 como $POD_demon_unearthbound_decision$3. Te permite gastar fuerza de voluntad en lugar de sufrir heridas. Te permite no morir por las heridas.\n$POD_demon_unearthbound_decision$4 La herramienta más poderosa en manos de los Fieles es el poder de los verdaderos Milagros. Religiones enteras nacen de tales demostraciones de Fe Verdadera.#!"
+ trait_track_beatific_desc: "#bold Nivel 1:#! Libera $POD_demon_unearthbound_decision$ [decision|E]. Como [character_interaction|E], te permite desterrar un personaje espectro/demonio al [dark_kingdom|E]/[UmbraGlossary('abyss')]. Desbloquea un edificio especial [GetBuilding('sanctified_area_01').GetName]. \n#bold Nivel 2:#! Como [character_interaction|E], te permite bendecir un artefacto. Obtenga inmunidad contra el asesinato. Obtenga inmunidad al delirio. Ya no puedes ser poseído por #!1.\n#bold Nivel 3:#! Los objetivos siempre aceptarán demandas de conversión de fe.\n#bold Nivel 4:#! Como [character_interaction|E], te permite resolver cada #!7 de un fantasma. Como [character_interaction|E], te permite matar a un sobrenatural con poca piedad. Ya no necesitas un gancho para desterrar un espíritu.\n#bold Nivel 5:#! Como [character_interaction|E], te permite volver a convertir a un vampiro en mortal o alcanzar la Golconda. Puede reclutar a $POD_demon_unearthbound_decision$2 como $POD_demon_unearthbound_decision$3. Te permite gastar fuerza de voluntad en lugar de sufrir heridas. Te permite no morir por las heridas.\n$POD_demon_unearthbound_decision$4 La herramienta más poderosa en manos de los Fieles es el poder de los verdaderos Milagros. Religiones enteras nacen de tales demostraciones de Fe Verdadera.#!"
   
  trait_holy_seal: "Santo Sello"
  trait_holy_seal_desc: "Reliquias y artefactos de poder divino alojados brutal pero expertamente en las heridas de este miserable individuo impiden que se curen."
@@ -966,33 +966,33 @@ trait_grondr_kinfolk: "Pariente Grondr"
  trait_spectre: "Espectro"
  trait_spectre_desc: "Los espectros son espectros entregados a sus sombras. Cuando un espíritu acumula demasiadas emociones oscuras, su sombra toma el control de forma permanente y se convierte en un espectro."
  trait_track_spectre: "Casta"
- trait_track_spectre_desc: "Los Espectros Espectrales tienen un orden jerárquico definido. Los Mortwights y los Haints son los más bajos de las castas funcionales de los Espectros, ya que entraron al servicio de [oblivion|E] directamente desde [skinlands|E], y han sido los menos tocados por su resplandor. Los Doppelgangers son los siguientes en el orden jerárquico, habiendo soportado las pruebas de su Psique y triunfado a través de su devoción a [oblivion|E]; en este punto, sin embargo, no muestran sus marcas en sus cuerpos. Las Sombras y Apariciones tienen una posición más alta, ya que en ellos han comenzado a mostrarse las marcas de [oblivion|E]. Los Nephwracks son los siguientes porque su exposición constante a [oblivion|E] los ha transformado hasta el punto en que Moliate ya no puede ocultar su naturaleza. Los Onceborn y los Hekatonkhires son las castas más altas que cualquier Espectro que alguna vez fue humano puede alcanzar; aunque fueron devotos de la causa de [oblivion|E], alguna vez vivieron. En la cima del sistema se encuentran los Nunca Nacidos, que surgieron del mismísimo [oblivion|E] en épocas pasadas. Los jóvenes son únicos porque existen fuera del sistema de castas y sirven en casi todos los niveles de [oblivion|E]."
+ trait_track_spectre_desc: "Los Espectros Espectrales tienen un orden jerárquico definido. Los Mortwights y los Haints son los más bajos de las castas funcionales de los Espectros, ya que entraron al servicio de [UmbraGlossary('oblivion')] directamente desde [skinlands|E], y han sido los menos tocados por su resplandor. Los Doppelgangers son los siguientes en el orden jerárquico, habiendo soportado las pruebas de su Psique y triunfado a través de su devoción a [UmbraGlossary('oblivion')]; en este punto, sin embargo, no muestran sus marcas en sus cuerpos. Las Sombras y Apariciones tienen una posición más alta, ya que en ellos han comenzado a mostrarse las marcas de [UmbraGlossary('oblivion')]. Los Nephwracks son los siguientes porque su exposición constante a [UmbraGlossary('oblivion')] los ha transformado hasta el punto en que Moliate ya no puede ocultar su naturaleza. Los Onceborn y los Hekatonkhires son las castas más altas que cualquier Espectro que alguna vez fue humano puede alcanzar; aunque fueron devotos de la causa de [UmbraGlossary('oblivion')], alguna vez vivieron. En la cima del sistema se encuentran los Nunca Nacidos, que surgieron del mismísimo [UmbraGlossary('oblivion')] en épocas pasadas. Los jóvenes son únicos porque existen fuera del sistema de castas y sirven en casi todos los niveles de [UmbraGlossary('oblivion')]."
  trait_stripling: "Mozuelo"
- trait_stripling_desc: "Los Striplings, también llamados los Nunca Vividos, son un tipo de Espectro de aquellos que pasaron a [shadowlands|E] cuando eran niños y finalmente fueron superados por su Sombra. Al igual que otros Espectros, los Striplings pertenecen a una de las castas Espectrales, determinadas por su proximidad a [oblivion|E], pero como la sociedad Espectral establecida no les resulta atractiva, forman sus propios grupos independientes de ella."
+ trait_stripling_desc: "Los Striplings, también llamados los Nunca Vividos, son un tipo de Espectro de aquellos que pasaron a [UmbraGlossary('shadowlands')] cuando eran niños y finalmente fueron superados por su Sombra. Al igual que otros Espectros, los Striplings pertenecen a una de las castas Espectrales, determinadas por su proximidad a [UmbraGlossary('oblivion')], pero como la sociedad Espectral establecida no les resulta atractiva, forman sus propios grupos independientes de ella."
  trait_neverborn: "Nunca nacido"
- trait_neverborn_desc: "Nunca nacidos es el nombre que se les da a los antiguos Malfeanos que dormían en las profundidades del [labyrinth|E]. También se les llama "Primordiales", "Nunca muertos" y "Grotescos"."
+ trait_neverborn_desc: "Nunca nacidos es el nombre que se les da a los antiguos Malfeanos que dormían en las profundidades del [UmbraGlossary('pod_realm_labyrinth')]. También se les llama "Primordiales", "Nunca muertos" y "Grotescos"."
  trait_hekatonkhire: "Hecatónquiro"
- trait_hekatonkhire_desc: "Los hekatonkhire son una antigua raza de espectros, utilizados principalmente por los malfeanos como tanques y arietes en batallas contra espectros enemigos. Se cree que son posibles nacidos de una vez que perdieron la cabeza ante el poder de [oblivion|E] y se convirtieron en poco más que enormes bestias deformadas capaces de atacar a varios adversarios a la vez."
+ trait_hekatonkhire_desc: "Los hekatonkhire son una antigua raza de espectros, utilizados principalmente por los malfeanos como tanques y arietes en batallas contra espectros enemigos. Se cree que son posibles nacidos de una vez que perdieron la cabeza ante el poder de [UmbraGlossary('oblivion')] y se convirtieron en poco más que enormes bestias deformadas capaces de atacar a varios adversarios a la vez."
  trait_onceborn: "Nacido una vez"
  trait_onceborn_desc: "Onceborn es el nombre que se le da a los Malfeanos que alguna vez fueron humanos. También se les llama Oncelived, Plotters y Cabalists."
  trait_nephwrack: "Nephwrack"
- trait_nephwrack_desc: "Los Nephwracks existen desde hace siglos y su constante exposición a [oblivion|E] hace que abandonen su forma humana y se vuelvan retorcidos y deformados. Muchos sirven a los intereses de un amo malfeano y actúan como su presencia visible."
+ trait_nephwrack_desc: "Los Nephwracks existen desde hace siglos y su constante exposición a [UmbraGlossary('oblivion')] hace que abandonen su forma humana y se vuelvan retorcidos y deformados. Muchos sirven a los intereses de un amo malfeano y actúan como su presencia visible."
  trait_shade: "Sombra"
- trait_shade_desc: "Entre los Espectros más poderosos, las Sombras son antiguos espectros que fueron arrojados al [tempest|E], quedaron atrapados en un Maelstrom o Gran Maelstrom, o se perdieron durante un Harrowing. Sus frágiles Psiques son completamente destruidas por [oblivion|E], dejando solo sus Sombras, llenas de odio y Pasiones Oscuras y permanentemente en control. Su método de creación da lugar a su apodo, los Hijos de [oblivion|E]."
+ trait_shade_desc: "Entre los Espectros más poderosos, las Sombras son antiguos espectros que fueron arrojados al [UmbraGlossary('tempest')], quedaron atrapados en un Maelstrom o Gran Maelstrom, o se perdieron durante un Harrowing. Sus frágiles Psiques son completamente destruidas por [UmbraGlossary('oblivion')], dejando solo sus Sombras, llenas de odio y Pasiones Oscuras y permanentemente en control. Su método de creación da lugar a su apodo, los Hijos de [UmbraGlossary('oblivion')]."
  trait_apparition: "Aparición"
- trait_apparition_desc: "Las apariciones son, a falta de un término mejor, la gerencia media de los Espectros: Dopplegangers y Mortwights que han comenzado a evolucionar hacia Nephwracks. Como resultado, es difícil ver a la persona que alguna vez fueron después de la mutación inducida por [oblivion|E]. Dado que esa persona desapareció hace mucho tiempo, el [Corpus|E] refleja el yo."
+ trait_apparition_desc: "Las apariciones son, a falta de un término mejor, la gerencia media de los Espectros: Dopplegangers y Mortwights que han comenzado a evolucionar hacia Nephwracks. Como resultado, es difícil ver a la persona que alguna vez fueron después de la mutación inducida por [UmbraGlossary('oblivion')]. Dado que esa persona desapareció hace mucho tiempo, el [Corpus|E] refleja el yo."
  trait_doppelganger: "Doppelganger"
  trait_doppelganger_desc: "Los dopplegangers, también conocidos como los Devorados por las Sombras, se parecen mucho a los espectros normales, salvo que son más pálidos y delgados. Las marcas de la muerte suelen estropear sus cuerpos, aunque el uso de Moliate puede ocultar esto. La única señal inequívoca es que su Sombra siempre es visible en sus ojos de alguna manera."
  trait_mortwight: "Mortwight"
- trait_mortwight_desc: "Los Mortwights son espíritus de aquellos que murieron de forma extremadamente violenta. Su rabia y enojo por su muerte hace que despierten en el [shadowlands|E] como Espectros, sin existir nunca como fantasmas. Muchos Mortwights tenían una naturaleza oscura desde el principio, y algunos creen que estaban destinados a ser Espectros desde el principio."
+ trait_mortwight_desc: "Los Mortwights son espíritus de aquellos que murieron de forma extremadamente violenta. Su rabia y enojo por su muerte hace que despierten en el [UmbraGlossary('shadowlands')] como Espectros, sin existir nunca como fantasmas. Muchos Mortwights tenían una naturaleza oscura desde el principio, y algunos creen que estaban destinados a ser Espectros desde el principio."
  trait_haint: "Haint"
- trait_haint_desc: "Los Haints entran al [shadowlands|E] con sus Sombras al mando, de forma muy similar a como lo hacen los Mortwights. A diferencia de los Mortwights, los Haints no se definen por su muerte, sino por su vida. Antes de su muerte, habían sido reducidos a un estilo de vida casi inhumano mientras aún estaban entre los Rápidos."
+ trait_haint_desc: "Los Haints entran al [UmbraGlossary('shadowlands')] con sus Sombras al mando, de forma muy similar a como lo hacen los Mortwights. A diferencia de los Mortwights, los Haints no se definen por su muerte, sino por su vida. Antes de su muerte, habían sido reducidos a un estilo de vida casi inhumano mientras aún estaban entre los Rápidos."
   
  trait_dhampyr: "Dhampyr"
  trait_dhampyr_desc: "Los Dhampyrs, también llamados Caminantes de las Sombras o Niños del Crepúsculo, son los hijos de los Kuei-jin."
   
  trait_arcanos_argos: "Argos"
- trait_arcanos_argos_desc: "Los usuarios de Argos pueden manipular, navegar y viajar a través del [tempest|E]."
+ trait_arcanos_argos_desc: "Los usuarios de Argos pueden manipular, navegar y viajar a través del [UmbraGlossary('tempest')]."
   
  trait_arcanos_castigate: "Castigar"
  trait_arcanos_castigate_desc: "Los usuarios de Castigar pueden manipular y controlar la Sombra de un espectro."
@@ -1047,21 +1047,21 @@ trait_grondr_kinfolk: "Pariente Grondr"
  trait_projector: "Proyector"
  trait_projector_desc: "Los proyectores son humanos vivos que, mediante un método u otro, pueden desprenderse de su carne y convertirse en fantasmas."
  trait_ghost: "Fantasma"
- trait_ghost_desc: "Los muertos que no han llegado al [underworld|E]."
+ trait_ghost_desc: "Los muertos que no han llegado al [UmbraGlossaryLocalized('shadowlands','Underworld')]."
  trait_barghest: "barghest"
  trait_barghest_desc: "Los barghests, también llamados sabuesos, son espectros que han sido transformados en formas monstruosas y “lobotomizados” mediante el injerto de un hocico especialmente preparado de hierro estigio en su [Corpus|E]."
  trait_ferryman: "Barquero"
  trait_ferryman_desc: "Mediante el Ritual de Separación, la Sombra y Psique de este personaje se separan permanentemente creando una Pasífae."
  trait_shadow: "Sombra"
- trait_shadow_desc: "Sombra es un término usado para describir el aspecto de la personalidad de un espectro que quiere verlo fracasar, dejar de luchar y sucumbir a [oblivion|E]."
+ trait_shadow_desc: "Sombra es un término usado para describir el aspecto de la personalidad de un espectro que quiere verlo fracasar, dejar de luchar y sucumbir a [UmbraGlossary('oblivion')]."
  trait_pasiphae: "Pasífae"
- trait_pasiphae_desc: "Los Pasífae, llamados Barqueros del [oblivion|E] o Caminantes del [labyrinth|E], a menudo son confundidos con los generales de los Devorados por las Sombras por los ignorantes Buceadores del Infierno y los pocos otros espectros temerarios que se aventuran en el [labyrinth|E]."
+ trait_pasiphae_desc: "Los Pasífae, llamados Barqueros del [UmbraGlossary('oblivion')] o Caminantes del [UmbraGlossary('pod_realm_labyrinth')], a menudo son confundidos con los generales de los Devorados por las Sombras por los ignorantes Buceadores del Infierno y los pocos otros espectros temerarios que se aventuran en el [UmbraGlossary('pod_realm_labyrinth')]."
  trait_khaibit: "Jaibit"
  trait_khaibit_desc: "Un Khaibit separado de la momia para usarlo como sirviente espectral."
  trait_po: "Correos"
  trait_po_desc: "La parte del alma relacionada con los aspectos físicos de la existencia; a menudo denominada el lado "animal" del alma."
  trait_kuei: "Kuei"
- trait_kuei_desc: "Un Kuei es un espectro del [dark_kingdom_of_jade|E] que no ha sido enterrado con los ritos y tradiciones adecuados de la zona. Se convierten, a falta de un término mejor, en Sombras ambulantes. Estos espectros son muy peligrosos y vagan por el [shadowlands|E] sin rumbo, en busca de Pathos como un animal hambriento busca comida."
+ trait_kuei_desc: "Un Kuei es un espectro del [dark_kingdom_of_jade|E] que no ha sido enterrado con los ritos y tradiciones adecuados de la zona. Se convierten, a falta de un término mejor, en Sombras ambulantes. Estos espectros son muy peligrosos y vagan por el [UmbraGlossary('shadowlands')] sin rumbo, en busca de Pathos como un animal hambriento busca comida."
   
   #Trait Groups 
  trait_shapeshifter: "Cambiaformas"
@@ -1073,7 +1073,7 @@ trait_grondr_kinfolk: "Pariente Grondr"
  trait_bastet: "Bastet"
  trait_bastet_desc: "Los hombres gato tienen muchas tribus diferentes, como los Garou, aunque cada una de ellas afirma poseer una especie diferente de felino salvaje. Están obsesionados con el conocimiento secreto y siempre lo buscan y lo atesoran. Muchos son grandes magos, otros son grandes guerreros, pero rara vez son animales de manada y generalmente trabajan solos. Algunas de sus tribus sufrieron mucho durante la Guerra de la Furia."
  trait_track_bastet: "Rango" #NT!
- trait_track_bastet_desc: "#bold Nivel 2:#! Obtén acceso al [spirit_wilds|E] para no Swara.\n#bold Nivel 4:#! [umbra_aptitude|E]: [grace_i]#P +25%#!\n#bold Nivel 5:#! [umbra_aptitude|E]: [grace_i]#P +25%#!\n#bold Nivel 6:#! [umbra_aptitude|E]: [grace_i]#P +35%#!\n#italic Los Bastet reconocen una jerarquía. No denota autoridad absoluta como lo haría entre los Garou, sino más bien una cortesía y un reconocimiento de la experiencia. Los títulos de Bastet siempre tienen un significado social más allá de su rango.#!" #NT!
+ trait_track_bastet_desc: "#bold Nivel 2:#! Obtén acceso al [UmbraGlossary('spirit_wilds')] para no Swara.\n#bold Nivel 4:#! [umbra_aptitude|E]: [grace_i]#P +25%#!\n#bold Nivel 5:#! [umbra_aptitude|E]: [grace_i]#P +25%#!\n#bold Nivel 6:#! [umbra_aptitude|E]: [grace_i]#P +35%#!\n#italic Los Bastet reconocen una jerarquía. No denota autoridad absoluta como lo haría entre los Garou, sino más bien una cortesía y un reconocimiento de la experiencia. Los títulos de Bastet siempre tienen un significado social más allá de su rango.#!" #NT!
  trait_corax: "Corazon"
  trait_corax_desc: "Los hombres cuervo son mensajeros, espías y exploradores de Gaia que patrullan los cielos, siempre atentos al peligro. Son unos terribles charlatanes y contarán lo que han visto a cualquiera que quiera escucharlos. Escaparon de la persecución en la Guerra de la Furia ayudando a los Garou y mantienen las relaciones más cordiales con los hombres lobo de todo Fera."
  trait_track_corax: "Rango" #NT!
@@ -1089,7 +1089,7 @@ trait_grondr_kinfolk: "Pariente Grondr"
  trait_mokole: "Mokolé"
  trait_mokole_desc: "Los hombres cocodrilo recuerdan la era de los Reyes Dragón, cuando terribles reptiles gobernaban la tierra. Recuerdan todo lo que ha sucedido y se guardan ese conocimiento para sí mismos, hablando solo con quienes son debidamente respetuosos. Sus formas de Crinos se parecen más a dinosaurios o dragones que a cocodrilos, lo que a veces los lleva a ser llamados hombres dragón."
  trait_track_mokole: "Rango" #NT!
- trait_track_mokole_desc: "#bold Nivel 2:#! Obtén acceso al [spirit_wilds|E].\n#bold Nivel 4:#! [umbra_aptitude|E]: [grace_i]#P +25%#!\n#bold Nivel 5:#! [umbra_aptitude|E]: [grace_i]#P +25%#!\n#bold Nivel 6:#! [umbra_aptitude|E]: [grace_i]#P +35%#!\n#italic Los mokolé usan el mismo sistema de renombre que los Garou, venerando los principios de honor, sabiduría y gloria. El grado en el que un mokolé individual sigue cada principio está determinado completamente por su aspecto (auspicio).#!" #NT!
+ trait_track_mokole_desc: "#bold Nivel 2:#! Obtén acceso al [UmbraGlossary('spirit_wilds')].\n#bold Nivel 4:#! [umbra_aptitude|E]: [grace_i]#P +25%#!\n#bold Nivel 5:#! [umbra_aptitude|E]: [grace_i]#P +25%#!\n#bold Nivel 6:#! [umbra_aptitude|E]: [grace_i]#P +35%#!\n#italic Los mokolé usan el mismo sistema de renombre que los Garou, venerando los principios de honor, sabiduría y gloria. El grado en el que un mokolé individual sigue cada principio está determinado completamente por su aspecto (auspicio).#!" #NT!
  trait_nagah: "Naga"
  trait_nagah_desc: "Serpientes-hombre que se originaron en la India. La mayoría (si no todas) de las otras razas cambiantes creen que están muertas, pero todavía están muy presentes. Los Nagah, que actúan como los "Jueces de Gea", cumplen el papel de jueces silenciosos y verdugos ocultos de las razas cambiantes."
  trait_track_nagah: "Rango" #NT!
@@ -1105,7 +1105,7 @@ trait_grondr_kinfolk: "Pariente Grondr"
  trait_rokea: "Rokea"
  trait_rokea_desc: "Incluso el mar tiene sus protectores. Los hombres-tiburón patrullan las profundidades del mar y rara vez son vistos por los habitantes de la tierra."
  trait_track_rokea: "Rango" #NT!
- trait_track_rokea_desc: "#bold Nivel 2:#! Obtén acceso al [spirit_wilds|E].\n#bold Nivel 4:#! [umbra_aptitude|E]: [grace_i]#P +25%#!\n#bold Nivel 5:#! [umbra_aptitude|E]: [grace_i]#P +25%#!\n#bold Nivel 6:#! [umbra_aptitude|E]: [grace_i]#P +35%#!\n#italic Los rokea aceptan tres formas de renombre: Valor, que hace referencia a la destreza y el coraje de un hombre tiburón en defensa de una gruta; Armonía, es decir, la capacidad de un hombre tiburón de aceptar su lugar en el mundo y actuar de acuerdo con él, e Innovación, que se otorga a los hombres tiburón que, a través de nuevas ideas, ayudan a la raza a defender el Mar y luchar contra la prole de Qyrl.#!" #NT!
+ trait_track_rokea_desc: "#bold Nivel 2:#! Obtén acceso al [UmbraGlossary('spirit_wilds')].\n#bold Nivel 4:#! [umbra_aptitude|E]: [grace_i]#P +25%#!\n#bold Nivel 5:#! [umbra_aptitude|E]: [grace_i]#P +25%#!\n#bold Nivel 6:#! [umbra_aptitude|E]: [grace_i]#P +35%#!\n#italic Los rokea aceptan tres formas de renombre: Valor, que hace referencia a la destreza y el coraje de un hombre tiburón en defensa de una gruta; Armonía, es decir, la capacidad de un hombre tiburón de aceptar su lugar en el mundo y actuar de acuerdo con él, e Innovación, que se otorga a los hombres tiburón que, a través de nuevas ideas, ayudan a la raza a defender el Mar y luchar contra la prole de Qyrl.#!" #NT!
  trait_apis: "Apis"
  trait_apis_desc: "Los Apis, hombres lobo o "toros lunares", estaban a cargo del cultivo y la agricultura y eran conocidos como los "casamenteros de Gea". Los Garou los llevaron a la extinción en la Guerra de la Furia."
  trait_track_apis: "Rango" #NT!
@@ -1208,11 +1208,11 @@ trait_grondr_kinfolk: "Pariente Grondr"
  TRAIT_FLAG_DESC_can_discover_demons_true_name: "Permite descubrir el nombre celestial de un personaje demonio."
  TRAIT_FLAG_DESC_can_pact_demon: "Permite solicitar pactos de personajes demoníacos o pactos con personajes demoníacos con un nombre celestial conocido."
  trait_track_demonologist: "Demonólogo"
- trait_track_demonologist_desc: "#bold Nivel 3:#! Permite desterrar a un personaje demonio al [abyss|E].\n#italic Alguien que estudia a los demonios. Un demonólogo está interesado en la ciencia teórica, espiritual o intelectual de los demonios, y no necesariamente tiene la intención de invocar a un demonio o interactuar con uno directamente. Sin embargo, cuando la curiosidad o la sed de poder se vuelven abrumadoras, la demonología puede actuar como un punto de partida para el diabolismo.#!"
+ trait_track_demonologist_desc: "#bold Nivel 3:#! Permite desterrar a un personaje demonio al [UmbraGlossary('abyss')].\n#italic Alguien que estudia a los demonios. Un demonólogo está interesado en la ciencia teórica, espiritual o intelectual de los demonios, y no necesariamente tiene la intención de invocar a un demonio o interactuar con uno directamente. Sin embargo, cuando la curiosidad o la sed de poder se vuelven abrumadoras, la demonología puede actuar como un punto de partida para el diabolismo.#!"
  trait_track_diabolist: "Diabolista"
  trait_track_diabolist_desc: "#bold Nivel 2:#! Permite sacrificar prisioneros para ganar [investiture_lifestyle|E] de experiencia.\n#bold Nivel 4:#! Permite hacer sacrificios a demonios mayores para ganar bendiciones.\n#italic Aquel que invoca demonios y busca controlarlos. Este término también puede aplicarse a aquel que adora a los demonios. El diabolista idealmente tiene una sólida formación en demonología, pero no necesariamente, aunque intentar invocar a un demonio poderoso sin el conocimiento adecuado de cómo atarlo podría tener resultados fatales.#!"
  trait_track_thrall: "Esclavo"
- trait_track_thrall_desc: "#bold Nivel 2:#! Permite sacrificar prisionero para ganar [arcana_lifestyle|E] experiencia.\n#bold Nivel 4:#! Permite invocar un demonio del [abyss|E] a un recipiente.\n#italic Uno que sirve a los demonios a través de un pacto hecho directamente con un demonio específico. Un esclavo no necesita ser un diabolista y rara vez tiene conocimientos previos de demonología, aunque pronto puede tener un conocimiento íntimo y de primera mano de la naturaleza de los demonios.#!"
+ trait_track_thrall_desc: "#bold Nivel 2:#! Permite sacrificar prisionero para ganar [arcana_lifestyle|E] experiencia.\n#bold Nivel 4:#! Permite invocar un demonio del [UmbraGlossary('abyss')] a un recipiente.\n#italic Uno que sirve a los demonios a través de un pacto hecho directamente con un demonio específico. Un esclavo no necesita ser un diabolista y rara vez tiene conocimientos previos de demonología, aunque pronto puede tener un conocimiento íntimo y de primera mano de la naturaleza de los demonios.#!"
  trait_demonology_kueijin_desc: "La demonología es la invocación y el dominio de las Perdiciones, Espectros y otros espíritus malignos. Muchos [GetTrait('kueijin').GetName( GetNullCharacter )] practican esto en un grado u otro. Dicha práctica es incluso una de las especialidades del Dharma del Tigre Demonio. Quienes lo consideran una parte natural de su práctica religiosa, y quienes han producido una literatura sobre los aspectos prácticos de este tema tan extensa en su propia forma especializada como las bibliotecas mágicas de Wu Lung y la Orden de Hermes. La demonología es perfectamente legal, aunque a menudo se considera de muy mal gusto fuera de los círculos del Tigre Demonio." #NT!
   
  trait_hun_and_po: "Hun y P'o"

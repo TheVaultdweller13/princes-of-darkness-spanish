@@ -18,7 +18,7 @@
  force_duel_criminals_interaction.death.tt: "Este duelo es a muerte."
   
  POD_werewolves_pack.1.t: "Tu paquete"
- POD_werewolves_pack.1.opening: "Actualmente, tu [coterie_werewolf|E] está compuesto por: \n"
+ POD_werewolves_pack.1.opening: "Actualmente, tu [Concept('coterie','Pack')|E] está compuesto por: \n"
  POD_werewolves_pack.1.packmember_1: "[packmember_1.GetName] \n"
  POD_werewolves_pack.1.packmember_2: "[packmember_2.GetName] \n"
  POD_werewolves_pack.1.packmember_3: "[packmember_3.GetName] \n"
@@ -26,26 +26,26 @@
  POD_werewolves_pack.1.ending: "Como líder de la manada, tienes derecho a elegir cómo entrenar durante los próximos años o en qué actividad concentrarte. Ten en cuenta que, una vez que tu manada esté completa, podrás elegir un tótem de manada para bendecir a tu comunidad."
  POD_werewolves_pack.1.ending.generic: "Como líder, usted tiene derecho a elegir cómo entrenar para los próximos años o en qué actividad centrarse."
  POD_werewolves_pack.1.option.a: "¡Es hora de entrenar!"
- werewolf_pack_prowess_tt: "Tus [coterie_werewolf|E] miembros con una opinión positiva de ti y en rango diplomático también ganarán esta recompensa."
+ werewolf_pack_prowess_tt: "Tus [Concept('coterie','Pack')|E] miembros con una opinión positiva de ti y en rango diplomático también ganarán esta recompensa."
  POD_werewolves_pack.1.option.z: "Nada por ahora"
  POD_werewolves_pack.1.option.b: "Vamos a emprender juntos una búsqueda espiritual."
  POD_werewolves_pack.1.option.c: "Debemos limitar el crecimiento de la humanidad"
   
  ww_pack_rampage_modifier: "Paquete desenfrenado"
  ww_pack_rampage_modifier_desc: "Esta manada de hombres lobo está arrasando la capital de su alfa, sembrando miedo entre los mortales locales."
- werewolf_pack_rampage_tt: "Tu [coterie_werewolf|E] obtendrá el mismo modificador."
+ werewolf_pack_rampage_tt: "Tu [Concept('coterie','Pack')|E] obtendrá el mismo modificador."
   
  POD_werewolves_pack.1.option.d: "¡Debemos prepararnos para la guerra!"
  ww_pack_war_modifier: "Paquete listo para la guerra"
  ww_pack_war_modifier_desc: "Esta manada de hombres lobo está lista para la guerra."
   
- werewolf_pack_totem_tt: "Pedirás un Tótem para tu [coterie_werewolf|E], esta es una elección única para tu personaje."
+ werewolf_pack_totem_tt: "Pedirás un Tótem para tu [Concept('coterie','Pack')|E], esta es una elección única para tu personaje."
  POD_werewolves_pack.1.option.e: "Debemos pedirle a los Espíritus su bendición."
   
  POD_werewolves_pack.2.t: "Protección espiritual"
  POD_werewolves_pack.2.desc: "Entre los Garou y la mayoría de los demás cambiaformas, el tótem es uno de los elementos fundamentales que unen a la manada. Un tótem es un espíritu poderoso que presta su poder a un grupo de individuos con inclinaciones místicas a cambio de algún servicio simbólico o tributo. La elección de un tótem es de extrema importancia para una manada, ya que este espíritu los protegerá en tiempos de necesidad y servirá como una luz guía para que los Garou la sigan. Esta elección funciona como una petición al espíritu del tótem, que luego decide si adopta a los miembros de la manada como sus "hijos"."
  POD_werewolves_pack.2.desc.bastet: "Los Bastet llaman a estos espíritus "Jamak" y aquellos que eligen aliarse con los hombres gato tienden a ser caprichosos, apareciendo de la nada para exigir peticiones aparentemente absurdas. Aun así, otorgan su protección como lo hacen todos los demás tótems espirituales y son respetados como poderosos, aunque difíciles de entender, protectores de los Bastet."
- werewolf_pack_totem_choice_tt: "Tus miembros [coterie_werewolf|E] que aún no tengan un tótem también se beneficiarán de este modificador."
+ werewolf_pack_totem_choice_tt: "Tus miembros [Concept('coterie','Pack')|E] que aún no tengan un tótem también se beneficiarán de este modificador."
   
  POD_werewolves_pack.2.option.a: "El fuerte y noble Halcón"
  falcon_totem_modifier: "Tótem de la manada: Halcón"

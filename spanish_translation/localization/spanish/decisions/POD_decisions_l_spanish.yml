@@ -255,7 +255,7 @@
  restore_setite_effect_tooltip: "Crearás el Imperio Setita [title|E]."
  restore_talmahera: "Restaurando el Tal'mahe'Ra"
  restore_talmahera_tooltip: "Incluso Enoc debe tener un punto de apoyo en la Tierra."
- restore_talmahera_desc: "Aunque todavía gobernamos firmemente en el [underworld|E], no es bueno que se haya cortado nuestra conexión con el reino mortal. Reconquistar nuestros bastiones perdidos es una prioridad."
+ restore_talmahera_desc: "Aunque todavía gobernamos firmemente en el [UmbraGlossaryLocalized('shadowlands','Underworld')], no es bueno que se haya cortado nuestra conexión con el reino mortal. Reconquistar nuestros bastiones perdidos es una prioridad."
  restore_talmahera_confirm: "Abre los portales una vez más."
  restore_talmahera_effect_tooltip: "Crearás el Imperio Tal'mahe'Ra [title|E]."
  restore_obertus: "Restaurando la Orden Obertus"
@@ -1060,7 +1060,7 @@
  forever_indomitable_decision_req1_valid: "La Inquisición ha terminado de enviar sus ejércitos."
  forever_indomitable_decision_req2: "No queda [independent_ruler|E] con [GetTrait('supehunter').GetName(GetNullCharacter)] [trait|E] en el mapa. #help [GetTrait('shih').GetName(GetNullCharacter)] están excluidos de este requisito.#!"
  forever_indomitable_decision_req2_ex: "No queda ningún [independent_ruler|E] con el [GetTrait('supehunter').GetName(GetNullCharacter)] [trait|E] en el mapa. #weak ([example.GetFirstName])#! #help [GetTrait('shih').GetName(GetNullCharacter)] están excluidos de este requisito.#!"
- forever_indomitable_decision_effect: "[masquerade|E] ya no existirá más."
+ forever_indomitable_decision_effect: "[the_masquerade|E] ya no existirá más."
  forever_indomitable_decision_confirm: "Reivindicado al fin"
   
  POD_camarilla_ventrue_membership_decision_effect_tooltip: "[GetTrait('ventrue').GetName( GetPlayer )] se convertirá en un nuevo miembro de la Camarilla."
@@ -1623,13 +1623,13 @@
   
  unhell_objective_decision: "Sella el Yomi"
  unhell_objective_decision_tooltip: "Limpiarás todas las entidades demoníacas de este mundo."
- unhell_objective_decision_desc: "Todos los seres infernales y su corrupción deberían terminar, no más mancha de [yomi|E] bajo tu vigilancia."
+ unhell_objective_decision_desc: "Todos los seres infernales y su corrupción deberían terminar, no más mancha de [UmbraGlossaryLocalized('yomi_wan','Yomi')] bajo tu vigilancia."
  unhell_objective_decision_confirm: "Sellado para siempre."
  unhell_objective_decision_custom1: "No debe haber ningún demonio [independent_ruler|E] en el mapa."
  unhell_objective_decision_custom1_ex: "$unhell_objective_decision_custom1$ #weak ([example.GetFirstName])#!"
  unhell_objective_decision_custom2: "No debe haber ningún [GetTrait('infernalist').GetName( GetNullCharacter )] [independent_ruler|E] en el mapa."
  unhell_objective_decision_custom2_ex: "$unhell_objective_decision_custom2$ #weak ([example.GetFirstName])#!"
- unhell_objective_decision_effect_tooltip: "Se eliminará el acceso a [yomi|E] en [umbra|E]."
+ unhell_objective_decision_effect_tooltip: "Se eliminará el acceso a [UmbraGlossaryLocalized('yomi_wan','Yomi')] en [umbra|E]."
  unhellish_modifier: "Sellador de Yomi"
   
  unkuei_objective_decision: "En busca de una segunda era"
@@ -1641,7 +1641,7 @@
   
  back_to_second_age_objective_decision: "Regreso a la Segunda Edad"
  back_to_second_age_objective_decision_tooltip: "Empujarás la rueda de nuevo hasta [second_age|E]."
- back_to_second_age_objective_decision_desc: "Por fin ha llegado el momento de limpiar el mundo de todo mal y corrupción. Es nuestra última batalla, nuestro último viaje, nuestra última guerra. Desharemos la Separación y purificaremos al Ciempiés. Mataremos a los Reyes Yama y destruiremos a los [yomi|E]. Encontraremos un camino al cielo para todos."
+ back_to_second_age_objective_decision_desc: "Por fin ha llegado el momento de limpiar el mundo de todo mal y corrupción. Es nuestra última batalla, nuestro último viaje, nuestra última guerra. Desharemos la Separación y purificaremos al Ciempiés. Mataremos a los Reyes Yama y destruiremos a los [UmbraGlossaryLocalized('yomi_wan','Yomi')]. Encontraremos un camino al cielo para todos."
  back_to_second_age_objective_decision_confirm: "El final perfecto."
  back_to_second_age: "El Reino Medio regresará al [second_age|E]"
  back_to_second_age_objective_decision_custom1: "Las redes que atrapan al Ciempiés deben ser debilitadas y sus secuaces suprimidos."
@@ -1651,9 +1651,9 @@
   
  free_abel_objective_decision: "Liberen al primer asesinado"
  free_abel_objective_decision_tooltip: "La abuela tiene un prisionero intrigante en su Torre de la Memoria. ¿Quién podría ser?"
- free_abel_objective_decision_desc: "Abuela es el nombre de... algo. Algunos creen que "ella" es la gemela malvada de Dios, otros piensan que "ella" es el remanente de un universo muerto y otros señalan a "ella" como el mismísimo [oblivion|E]. Se rumorea que un prisionero que mantiene en su Torre de la Memoria podría ser la clave para derrotarla."
+ free_abel_objective_decision_desc: "Abuela es el nombre de... algo. Algunos creen que "ella" es la gemela malvada de Dios, otros piensan que "ella" es el remanente de un universo muerto y otros señalan a "ella" como el mismísimo [UmbraGlossary('oblivion')]. Se rumorea que un prisionero que mantiene en su Torre de la Memoria podría ser la clave para derrotarla."
  free_abel_objective_decision_confirm: "El final órfico."
- orpheus_good_ending_tooltip: "Una vez que hayas derrotado a [oblivion|E], tu juego habrá terminado y el mundo que alguna vez conociste habrá cambiado para siempre. Ojalá que para mejor."
+ orpheus_good_ending_tooltip: "Una vez que hayas derrotado a [UmbraGlossary('oblivion')], tu juego habrá terminado y el mundo que alguna vez conociste habrá cambiado para siempre. Ojalá que para mejor."
   
  question_of_horus_objective_decision: "La pregunta de Horus"
  question_of_horus_objective_decision_tooltip: "Debemos volvernos lo suficientemente fuertes para que Horus ceda."

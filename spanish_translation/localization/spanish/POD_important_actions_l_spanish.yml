@@ -6,12 +6,12 @@
   
  action_can_demonic_possess_alert: "Deberías poseer un recipiente"
  action_can_demonic_possess_alert_label: "Deberías poseer un recipiente"
- action_can_demonic_possess_alert_desc: "Debes poseer una nave si no quieres quedar atrapado en el [abyss|E]."
+ action_can_demonic_possess_alert_desc: "Debes poseer una nave si no quieres quedar atrapado en el [UmbraGlossary('abyss')]."
  action_can_demonic_possess_alert_click: "#I Haz clic para poseer tu capital#!"
   
  action_can_fallen_possess_alert: "Debes designar un anfitrión"
  action_can_fallen_possess_alert_label: "Debes designar un anfitrión"
- action_can_fallen_possess_alert_desc: "Debes designar un anfitrión si no quieres quedar atrapado en el [abyss|E]."
+ action_can_fallen_possess_alert_desc: "Debes designar un anfitrión si no quieres quedar atrapado en el [UmbraGlossary('abyss')]."
  action_can_fallen_possess_alert_click: "#I Haz clic para designar a un cultista como anfitrión#!"
   
  action_can_add_herd_alert: "Deberías pastorear a un mortal"
@@ -24,10 +24,10 @@
  action_can_add_dreamer_alert_desc: "Deberías usar un mortal para ganar más experiencia con trucos."
  action_can_add_dreamer_alert_click: "#I Haz clic para elegir a un mortal como tu soñador#!"
   
- action_can_enchant_alert: "Deberías obtener [GetTrait('enchanted').GetName( GetPlayer )]" #NT!
- action_can_enchant_alert_label: "Deberías obtener [GetTrait('enchanted').GetName( GetPlayer )]" #NT!
- action_can_enchant_alert_desc: "Debes obtener [GetTrait('enchanted').GetName( GetPlayer )] para evitar que el tesoro que tienes equipado se deshabilite." #NT!
- action_can_enchant_alert_click: "#I Haz clic para obtener [GetTrait('enchanted').GetName( GetPlayer )]#!" #NT!
+# action_can_enchant_alert: "Deberías obtener [GetTrait('enchanted').GetName( GetPlayer )]" #NT!
+# action_can_enchant_alert_label: "Deberías obtener [GetTrait('enchanted').GetName( GetPlayer )]" #NT!
+# action_can_enchant_alert_desc: "Debes obtener [GetTrait('enchanted').GetName( GetPlayer )] para evitar que el tesoro que tienes equipado se deshabilite." #NT!
+# action_can_enchant_alert_click: "#I Haz clic para obtener [GetTrait('enchanted').GetName( GetPlayer )]#!" #NT!
   
  action_can_call_pet_to_war_alert: "Deberías llamar a tu mascota a la guerra" #NT!
  action_can_call_pet_to_war_alert_label: "Deberías llamar a tu mascota a la guerra" #NT!
@@ -86,7 +86,7 @@
  action_can_buy_alchemy_combined_group_description: "$action_can_buy_alchemy_desc$"
  action_can_buy_alchemy_combined_label: "@mummy_icon! Compra desde [recipient.GetShortUIName]"
   
- action_can_cover_up_masquerade: "@masquerade_icon! Puedes cubrirte [masquerade|E]"
+ action_can_cover_up_masquerade: "@masquerade_icon! Puedes cubrirte [the_masquerade|E]"
  action_can_cover_up_masquerade_label: "@masquerade_icon! Puedes encubrir la Mascarada"
  action_can_cover_up_masquerade_desc: "Como $POD_splat_vampire$, debes mantener tu existencia oculta si no quieres caer presa de $POD_splat_hunter_plural$."
  action_can_cover_up_masquerade_click: "#I Haz clic para abrir el Cover up Masquerade [character_interaction|E].#!"

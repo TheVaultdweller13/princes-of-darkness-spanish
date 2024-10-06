@@ -14,7 +14,7 @@
   
  realm_fae_focus: "Enfoque de hadas"
  realm_fae_focus_modifier: "[GetFocus('realm_fae_focus').GetName]"
- realm_fae_focus_desc: "Los Fae tratan con otros seres del [dreaming|E]. Afectar a otros Changelings, a los Nobles Sidhe, a los Adhene, a las Quimeras o incluso controlar la magia de los Changelings en sí, todo esto cae dentro del ámbito de los Fae."
+ realm_fae_focus_desc: "Los Fae tratan con otros seres del [UmbraGlossary('dreaming')]. Afectar a otros Changelings, a los Nobles Sidhe, a los Adhene, a las Quimeras o incluso controlar la magia de los Changelings en sí, todo esto cae dentro del ámbito de los Fae."
  realm_fae_focus_effect_desc: "Centrándose en las subvenciones de Fae:"
   
  realm_prop_focus: "Enfoque de apoyo"
@@ -250,7 +250,7 @@
  QUICKSILVER_PERK_EFFECT: "#F Permite que un objeto se mueva a una velocidad increíblemente rápida.#!"
  PORTAL_PASSAGE_PERK_EFFECT: "#F Crea una apertura temporal a través de cualquier barrera, lo que permite que se mueva a través de ella.#!"
  WIND_RUNNER_PERK_EFFECT: "#F Permite que un objetivo vuele, elevándose al cielo como si tuviera alas.#!"
- FLICKER_FLASH_PERK_EFFECT: "Como [character_interaction|E], te permite teletransportar a tu ejército a la ubicación de tu objetivo, o teletransportarte a tu próximo destino cuando viajas.\n#F Desaparecer instantáneamente y reaparecer en otro lugar del mundo o en el [dreaming|E].#!"
+ FLICKER_FLASH_PERK_EFFECT: "Como [character_interaction|E], te permite teletransportar a tu ejército a la ubicación de tu objetivo, o teletransportarte a tu próximo destino cuando viajas.\n#F Desaparecer instantáneamente y reaparecer en otro lugar del mundo o en el [UmbraGlossary('dreaming')].#!"
   
   ### Rare Art ### 
   
@@ -372,7 +372,7 @@
   
  kith_arts_dream_craft_focus: "Enfoque en la elaboración de sueños"
  kith_arts_dream_craft_focus_modifier: "[GetFocus('kith_arts_dream_craft_focus').GetName]"
- kith_arts_dream_craft_focus_desc: "Arte de dar forma a las cosas dentro del [dreaming|E]."
+ kith_arts_dream_craft_focus_desc: "Arte de dar forma a las cosas dentro del [UmbraGlossary('dreaming')]."
  kith_arts_dream_craft_focus_effect_desc: "Centrándose en las subvenciones Dream-Craft:"
   
  kith_arts_naming_focus: "Enfoque en la denominación"
@@ -461,14 +461,14 @@
  DREAM_TIME_PERK_EFFECT: "Como [character_interaction|E], te permite otorgar un modificador de velocidad positivo o negativo al personaje o condado objetivo.\n#F Cambia la velocidad del tiempo en un área o para una persona, ya sea haciendo que vaya mucho más rápido de lo que normalmente debería o que se ralentice al mínimo.#!"
  PERMANENCE_PERK_EFFECT: "Como [character_interaction|E], te permite renovar el modificador de truco del objetivo.\n#F Extiende la duración de un Arte lanzado por otro, lo que le permite durar sustancialmente más de lo que el resultado originalmente exigía.#!"
  REVERSA_OF_FORTUNE_PERK_EFFECT: "Como [character_interaction|E], te permite darte [GetModifier( 'reversa_of_fortune_perk_modifier' ).GetNameWithTooltip|L] a ti mismo durante #V 1#! días.\n#F Un arte extremadamente complejo y costoso que permite al usuario revertir los últimos minutos y tomar nuevas decisiones.#!"
- FIND_SILVER_PATH_PERK_EFFECT: "Posibilidad de quedar atrapado en la Umbra: #P -5%#!\nMonthly Progreso de exploración de la Umbra: [grace_i]#P +10#!\n#F Muestra la ubicación del Camino Plateado, el camino que guía a las hadas a lo largo de la [dreaming|E], y otorga información sobre quién o qué se encuentra actualmente en él.#!"
- DETERMINISM_PERK_EFFECT: "Posibilidad de encontrar evento en la Umbra: [grace_i]#P +100%#!\nChance de quedar atrapado en la Umbra: #P -5%#!\nMonthly Progreso de exploración de la Umbra: [grace_i]#P +10#!\n#F Muestra lo que hay al otro lado de un camino, un misterioso sendero del [dreaming|E] en el que el espacio y el tiempo están muy distorsionados.#!"
+ FIND_SILVER_PATH_PERK_EFFECT: "Posibilidad de quedar atrapado en la Umbra: #P -5%#!\nMonthly Progreso de exploración de la Umbra: [grace_i]#P +10#!\n#F Muestra la ubicación del Camino Plateado, el camino que guía a las hadas a lo largo de la [UmbraGlossary('dreaming')], y otorga información sobre quién o qué se encuentra actualmente en él.#!"
+ DETERMINISM_PERK_EFFECT: "Posibilidad de encontrar evento en la Umbra: [grace_i]#P +100%#!\nChance de quedar atrapado en la Umbra: #P -5%#!\nMonthly Progreso de exploración de la Umbra: [grace_i]#P +10#!\n#F Muestra lo que hay al otro lado de un camino, un misterioso sendero del [UmbraGlossary('dreaming')] en el que el espacio y el tiempo están muy distorsionados.#!"
  THE_MERRY_DANCE_PERK_EFFECT: "Probabilidad de encontrar un evento en la Umbra: [grace_i]#P +100%#!\nChance de quedar atrapado en la Umbra: #P -5%#!\nMonthly Progreso de exploración de la Umbra: [grace_i]#P +5#!\n#F El Firchlis es una fuerza poderosa dentro de los Reinos Míticos. El Sueño cambia constantemente, y el Firchlis es una fuente clave de ese cambio. Los duendes expertos pueden, con concentración y preparación, influir en los cambios que trae el Firchlis.#!"
- HOMESTEAD_PERK_EFFECT: "Desbloquea el edificio [GetBuilding('homestead_freehold_01').GetName].\n#F Fija un punto del [dreaming|E] para que, en lugar de cambiar constantemente según los caprichos del Wyld, permanezca como lo pretendía el lanzador.#!"
- ANCHOR_PERK_EFFECT: "[dreaming|E] [building|E] tiempo de desbloqueo: #P -50%#!\n#F Con este truco, un changeling puede "solidificar" el [dreaming|E] hasta cierto punto, lo que le permite establecer una fortaleza permanente dentro del Reino Mítico.#!"
+ HOMESTEAD_PERK_EFFECT: "Desbloquea el edificio [GetBuilding('homestead_freehold_01').GetName].\n#F Fija un punto del [UmbraGlossary('dreaming')] para que, en lugar de cambiar constantemente según los caprichos del Wyld, permanezca como lo pretendía el lanzador.#!"
+ ANCHOR_PERK_EFFECT: "[UmbraGlossary('dreaming')] [building|E] tiempo de desbloqueo: #P -50%#!\n#F Con este truco, un changeling puede "solidificar" el [UmbraGlossary('dreaming')] hasta cierto punto, lo que le permite establecer una fortaleza permanente dentro del Reino Mítico.#!"
  ATTUNEMENT_PERK_EFFECT: "Recibirás una notificación si alguien intenta asesinar a tus amigos o familiares. Recibirás una notificación si alguien intenta seducir a tus amantes o consortes. Tu prisionero tiene menos posibilidades de escapar de tu prisión. #F Vincula a un Kithain a una persona, lugar o cosa, haciendo que, pase lo que pase, el Kithain sea el primero en enterarse. #!"
- DREAM_RIDING_PERK_EFFECT: "Permite interactuar con el [earth|E] mientras se permanece en el [dreaming|E].\nComo [character_interaction|E], te permite obtener la forma de opinión del objetivo.\n#F Este truco permite a un changeling interactuar con un sueño mortal mientras la Estirpe está en el [dreaming|E]. No siempre es una buena idea hacerlo, ya que las interacciones de la Estirpe pueden causar alteraciones extrañas en el sueño en sí. Aunque la interacción es posible, el control real del sueño no lo es.#!"
- DREAM_WEAVING_PERK_EFFECT: "#F Produce una quimera, similar al truco Sombras fantasmales, pero, si bien esa quimera es temporal, esta quimera es permanente, siempre y cuando nunca abandone el [dreaming|E].#!"
+ DREAM_RIDING_PERK_EFFECT: "Permite interactuar con el [earth|E] mientras se permanece en el [UmbraGlossary('dreaming')].\nComo [character_interaction|E], te permite obtener la forma de opinión del objetivo.\n#F Este truco permite a un changeling interactuar con un sueño mortal mientras la Estirpe está en el [UmbraGlossary('dreaming')]. No siempre es una buena idea hacerlo, ya que las interacciones de la Estirpe pueden causar alteraciones extrañas en el sueño en sí. Aunque la interacción es posible, el control real del sueño no lo es.#!"
+ DREAM_WEAVING_PERK_EFFECT: "#F Produce una quimera, similar al truco Sombras fantasmales, pero, si bien esa quimera es temporal, esta quimera es permanente, siempre y cuando nunca abandone el [UmbraGlossary('dreaming')].#!"
  SEEK_N_SPELL_PERK_EFFECT: "#F Ya sea que entiendas el idioma o no, o incluso si el contenido está bloqueado mágicamente, es posible leer cualquier texto.#!"
  RUNE_PERK_EFFECT: "Como [character_interaction|E], te permite actualizar un modificador de artefacto o darle un nuevo modificador.\n#F Inscribe una palabra de poder en un objeto, lo que le permite ser mucho más efectivo para una tarea específica.#!"
  RUNIC_CIRCLE_PERK_EFFECT: "Otorga un modificador [GetModifier('runic_circle_perk_modifier').GetNameWithTooltip] a cada cortesano, consejero, amigo y amante.\n#F Produce un círculo de palabras protectoras, que proporciona resistencia contra fuerzas sobrenaturales que intentan romper el círculo.#!"
@@ -865,4 +865,4 @@
  THE_BENEVOLENT_HAND_OF_JADE_PERK_EFFECT: "#F Este I Chih hace probable lo improbable...#!"
  BACKSIDE_OF_THE_MONKEY_KING_PERK_EFFECT: "#F Este I Chih hace que lo probable sea improbable...#!"
  FORTIFY_THE_WALL_PERK_EFFECT: "Desbloquea la opción Manipular el muro en el panel de sombra.\n#F El portador de la llave puede fortalecer temporalmente el muro de un lugar.#!"
- UNLOCK_THE_JADE_PORTAL_PERK_EFFECT: "Obtén acceso a [astral_reaches|E], [dreaming|E], [spirit_wilds|E], [underworld|E] y [deep_umbra|E] durante los viajes espirituales.\n#F Para desbloquear el Muro y viajar más allá de él.#!"
+ UNLOCK_THE_JADE_PORTAL_PERK_EFFECT: "Obtén acceso a [astral_reaches|E], [UmbraGlossary('dreaming')], [UmbraGlossary('spirit_wilds')], [UmbraGlossaryLocalized('shadowlands','Underworld')] y [UmbraGlossary('deep_umbra')] durante los viajes espirituales.\n#F Para desbloquear el Muro y viajar más allá de él.#!"

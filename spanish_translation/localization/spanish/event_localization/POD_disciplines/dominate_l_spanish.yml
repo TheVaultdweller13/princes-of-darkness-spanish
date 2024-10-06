@@ -64,5 +64,5 @@
  POD_forgetful_mind_opinion: "Quejas olvidadas."
   
  temp_immune_mesmerize: "Debido a un intento fallido anterior, [recipient.GetFirstNameNoTooltip] es inmune a tus intentos de Dominación hasta [GetCurrentDateWithDiff( GetVarTimeRemaining( recipient.MakeScope, 'immune_to_mesmerize_from_actor') )]"
- same_or_highier_gen: "[recipient.GetFirstNameNoTooltip] es el mismo [generation|E] que tú o mayor"
- lower_gen_immune: "Los vampiros de un [generation|E] inferior son inmunes a tu [discipline|E]"
+ same_or_highier_gen: "[recipient.GetFirstNameNoTooltip] es el mismo [vampgeneration|E] que tú o mayor"
+ lower_gen_immune: "Los vampiros de un [vampgeneration|E] inferior son inmunes a tu [discipline|E]"

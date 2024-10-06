@@ -16,21 +16,21 @@
  POD_designate_vessel_interaction_desc: "Designa [recipient.GetFirstName] como tu próxima embarcación para cuando la actual ya no pueda usarse."
   
  POD_possess_host_interaction: "Poseer anfitrión"
- POD_possess_host_interaction_desc: "Posee [recipient.GetFirstName] para poder disfrutar de los placeres mortales o salvarte de ser llamado de nuevo a [abyss|E]."
+ POD_possess_host_interaction_desc: "Posee [recipient.GetFirstName] para poder disfrutar de los placeres mortales o salvarte de ser llamado de nuevo a [UmbraGlossary('abyss')]."
  POD_demonic_possess_artifact_interaction: "Posesión demoníaca #weak (Objeto)#!"
  POD_demonic_possess_title_interaction: "Posesión demoníaca #weak (Lugar)#!"
  POD_demonic_possess_dead_interaction: "Posesión demoníaca #weak (muerto)#!"
- POD_demonic_possess_interaction_desc: "Posee una embarcación para que no termines en el [abyss|E]."
- POD_demonic_possess_interaction.tt: "Posee [recipient.GetFirstName] para que no termines en el [abyss|E]."
+ POD_demonic_possess_interaction_desc: "Posee una embarcación para que no termines en el [UmbraGlossary('abyss')]."
+ POD_demonic_possess_interaction.tt: "Posee [recipient.GetFirstName] para que no termines en el [UmbraGlossary('abyss')]."
  POD_demonic_possess_host_leech.tt: "Tu anfitrión te "proporcionará" algunas de sus fortalezas después de la posesión. (Dependiendo de la suma de [recipient.GetHerHis] [skills|E])"
  POD_demonic_possess_maintenance.tt: "El acto de posesión condenará a [recipient.GetFirstName] a una muerte inevitable y espantosa. ([actor.MakeScope.ScriptValue('host_kill_chance')|V0]% de probabilidad al inicio del año, dependiendo de tu Tormento)"
  POD_demonic_possess_servitor.tt: "Poseer a tus sirvientes no provocará su muerte, pero tampoco obtendrás ninguna bonificación estadística de ellos."
  become_earthbound: "El personaje quedará ligado a la tierra y nunca más podrá caer." #NT!
   
  POD_abandon_vessel_interaction: "Abandonar el recipiente"
- POD_abandon_vessel_interaction_desc: "Abandona tu recipiente actual para entrar en un estado espiritual, con el riesgo de terminar en el [abyss|E] en cualquier momento."
+ POD_abandon_vessel_interaction_desc: "Abandona tu recipiente actual para entrar en un estado espiritual, con el riesgo de terminar en el [UmbraGlossary('abyss')] en cualquier momento."
  POD_abandon_host_interaction: "Abandonar el anfitrión"
- POD_abandon_host_interaction_desc: "Abandona tu cuerpo anfitrión actual, con el riesgo de terminar en el [abyss|E] si no estás ligado a la Tierra."
+ POD_abandon_host_interaction_desc: "Abandona tu cuerpo anfitrión actual, con el riesgo de terminar en el [UmbraGlossary('abyss')] si no estás ligado a la Tierra."
   
  POD_arcana_shapeshift_interaction: "Cambio de forma"
  POD_arcana_shapeshift_interaction_desc: "Usa tus arcanos para cambiar de forma."
@@ -239,14 +239,14 @@
  bound_demon_assist_investiture_modifier: "Aumento de la ganancia por investidura"
   
  POD_summon_demon_character_interaction: "Invocar Demonio #weak (Persona)#!"
- POD_summon_demon_character_interaction_desc: "Invoca a [recipient.GetFirstName] desde [abyss|E] como prisionero."
+ POD_summon_demon_character_interaction_desc: "Invoca a [recipient.GetFirstName] desde [UmbraGlossary('abyss')] como prisionero."
  any_prisoner_can_be_demonic_possesed: "No tienes ningún prisionero que pueda ser poseído por un demonio."
  recipient_secondary_POD_summon_demon_character_interaction: "Prisionero"
  POD_summon_demon_artifact_interaction: "Invocar demonio #weak (Objeto)#!"
- POD_summon_demon_artifact_interaction_desc: "Invoca a [recipient.GetFirstName] desde [abyss|E] en un artefacto."
+ POD_summon_demon_artifact_interaction_desc: "Invoca a [recipient.GetFirstName] desde [UmbraGlossary('abyss')] en un artefacto."
   
  POD_banish_demon_interaction: "Desterrar demonio"
- POD_banish_demon_interaction_desc: "Destierra [recipient.GetFirstName] al [abyss|E]."
+ POD_banish_demon_interaction_desc: "Destierra [recipient.GetFirstName] al [UmbraGlossary('abyss')]."
   
  POD_initiate_demonology_interaction: "Iniciar la demonología"
  POD_initiate_demonology_interaction_desc: "Enseña demonología a [recipient.GetFirstName]."

@@ -59,7 +59,7 @@
  doctrine_parameter_vampirebloodoath_shunned: "Los personajes con [GetTrait('unbondable').GetName( GetPlayer )] [trait|E] son totalmente aceptados. Pierde piedad para [bloodbond|E]."
  doctrine_parameter_vampirebloodoath_accepted: "Los personajes con [GetTrait('unbondable').GetName( GetPlayer )] [trait|E] son [criminals|E]."
   
- doctrine_vampireghouling_name: "[Ghoul|E] Vasallaje"
+ doctrine_vampireghouling_name: "[ghoul|E] Vasallaje"
  doctrine_vampireghouling_evil_name: "Demonio" #NT!
  doctrine_vampireghouling_evil_desc: "No puede haber paz ni negociaciones con los esbirros. Los destruiremos a todos o moriremos en el intento." #NT!
  doctrine_vampireghouling_crime_name: "Delincuente"
@@ -764,7 +764,7 @@
  tenet_isolation_desc: "Lo único que queremos es que nos dejen en paz. Nuestras prácticas son nuestras y no son asunto de nadie más, al igual que las de ellos no son asunto nuestro."
   
  tenet_continued_life_name: "Vida continua"
- tenet_continued_life_desc: "Algunos no-muertos intentan continuar con su vida mortal tanto como sea posible. Si bien esto les ayuda a mantenerse en contacto con su antigua vida mortal, aumenta la exposición de [masquerade|E]. El uso continuo de poderes místicos para parecer vivo también aumentará el hambre."
+ tenet_continued_life_desc: "Algunos no-muertos intentan continuar con su vida mortal tanto como sea posible. Si bien esto les ayuda a mantenerse en contacto con su antigua vida mortal, aumenta la exposición de [the_masquerade|E]. El uso continuo de poderes místicos para parecer vivo también aumentará el hambre."
   
  tenet_vengeance_of_samiel_name: "La venganza de Samiel"
  tenet_vengeance_of_samiel_desc: "Samiel recibió una visita de Miguel, comandante de las huestes celestiales, mientras Saulot estaba ausente. El arcángel le ordenó al rey guerrero que escribiera el Código e incluyera en él los rituales adecuados necesarios para la fortaleza y la sangre de los nuevos guerreros."
@@ -866,10 +866,10 @@
  oblivion_hostility_name: "Olvido Hostilidad" #NT!
  special_doctrine_allied_to_oblivion_hostility_name: "Sirviente del olvido" #NT!
  special_doctrine_allied_to_oblivion_hostility_desc: "El olvido es nuestro señor supremo. Quien no lo obedezca pronto comprenderá o será destruido." #NT!
- doctrine_parameter_hostility_override_special_doctrine_allied_to_oblivion_hostility: "[faiths|E] que siguen a [oblivion|E] se consideran [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]" #NT!
+ doctrine_parameter_hostility_override_special_doctrine_allied_to_oblivion_hostility: "[faiths|E] que siguen a [UmbraGlossary('oblivion')] se consideran [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]" #NT!
  special_doctrine_against_to_oblivion_hostility_name: "Contra el olvido" #NT!
- special_doctrine_against_to_oblivion_hostility_desc: "Cuidado con los aliados del [oblivion|E]. Hay que destruirlos." #NT!
- doctrine_parameter_hostility_override_special_doctrine_against_to_oblivion_hostility: "[faiths|E] que contra [oblivion|E] se consideran [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]" #NT!
+ special_doctrine_against_to_oblivion_hostility_desc: "Cuidado con los aliados del [UmbraGlossary('oblivion')]. Hay que destruirlos." #NT!
+ doctrine_parameter_hostility_override_special_doctrine_against_to_oblivion_hostility: "[faiths|E] que contra [UmbraGlossary('oblivion')] se consideran [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]" #NT!
   
  apophis_hostility_name: "Hostilidad de Apofis"
  special_doctrine_allied_to_apophis_hostility_name: "Siervo de Apofis"
@@ -1169,7 +1169,7 @@
   
  # special_doctrine_hunter_hunting_name: "Cazadores cazando" #NT!
  # special_doctrine_hunter_hunting_desc: "No puede haber paz ni negociaciones con el Gran Enemigo. Los destruiremos a todos o moriremos en el intento." #NT!
- # special_doctrine_ghoul_hunting_name: "[Ghoul|E] Caza" #NT!
+ # special_doctrine_ghoul_hunting_name: "[ghoul|E] Caza" #NT!
  # special_doctrine_ghoul_hunting_desc: "No puede haber paz ni negociaciones con el Gran Enemigo. Los destruiremos a todos o moriremos en el intento." #NT!
  # special_doctrine_hunter_hunting_no_fae_name: "Cazadores cazando" #NT!
  # special_doctrine_hunter_hunting_no_fae_desc: "No puede haber paz ni negociaciones con el Gran Enemigo. Los destruiremos a todos o moriremos en el intento." #NT!
@@ -1196,7 +1196,7 @@
  doctrine_parameter_hostility_override_demons_hostility_doctrine: "[GetTrait('demon').GetName( GetPlayer )] [faiths|E] se consideran [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
  doctrine_parameter_hostility_override_doctrine_demonic_accepted: "Los demoníacos [faiths|E] se consideran [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]" #NT!
   
- doctrine_parameter_access_to_underworld: "Obtén acceso al [underworld|E] cuando viajes por la Umbra."
+ doctrine_parameter_access_to_underworld: "Obtén acceso al [UmbraGlossaryLocalized('shadowlands','Underworld')] cuando viajes por la Umbra."
   
  seasons_time_name: "Tiempo de temporada"
  doctrine_winter_time_name: "Horario de invierno"
@@ -1248,7 +1248,7 @@
  doctrine_fae_morality_seelie_name: "Seelie"
  doctrine_fae_morality_unseelie_name: "Unseelie"
  doctrine_fae_morality_seelie_desc: "Aunque los forasteros e incluso los kithain inexpertos suelen caracterizarla como la corte "buena", la Corte Seelie en realidad se define por las virtudes del honor y el amor. Si bien esto parecería encajar con las nociones de "bien", la caballerosidad caballeresca puede entrar en conflicto con la moral del mundo moderno y la idea feérica del amor cortés a veces está muy alejada de la realidad a la que se enfrentan los mortales. En muchos sentidos, el Código Seelie tiene sus raíces en las tradiciones marciales.\n\nAntes del [shattering|E], las Cortes Seelie gobernaban desde Beltaine hasta Samhain, durante la Primavera y el Verano. El Código Seelie es: la muerte antes que el deshonor, el amor lo conquista todo, la belleza es vida y nunca olvidar una deuda."
- doctrine_fae_morality_unseelie_desc: "Muchos Hadas Seelie ven a la Corte Unseelie como algo maligno, pero esta descripción es demasiado simple. Los Unseelie aceptan el cambio y se burlan de la tradición, sin ver ningún vínculo especial con su pasado o, de hecho, con el [dreaming|E], que parece volverse cada vez más distante. El estilo Unseelie es apasionado y pragmático, satisface deseos y necesidades por igual; los Unseelie no se niegan nada.\n\nAntes del [shattering|E], las Cortes Unseelie gobernaban desde Samhain hasta Beltaine, durante el Otoño y el Invierno. El Código Unseelie es: el cambio es bueno, el glamour es gratis, el honor es una mentira y la pasión antes del deber."
+ doctrine_fae_morality_unseelie_desc: "Muchos Hadas Seelie ven a la Corte Unseelie como algo maligno, pero esta descripción es demasiado simple. Los Unseelie aceptan el cambio y se burlan de la tradición, sin ver ningún vínculo especial con su pasado o, de hecho, con el [UmbraGlossary('dreaming')], que parece volverse cada vez más distante. El estilo Unseelie es apasionado y pragmático, satisface deseos y necesidades por igual; los Unseelie no se niegan nada.\n\nAntes del [shattering|E], las Cortes Unseelie gobernaban desde Samhain hasta Beltaine, durante el Otoño y el Invierno. El Código Unseelie es: el cambio es bueno, el glamour es gratis, el honor es una mentira y la pasión antes del deber."
  doctrine_parameter_fae_morality_seelie_opinion_active: ""
  doctrine_parameter_fae_morality_unseelie_opinion_active: ""
  doctrine_parameter_opinion_of_fae_morality_seelie_opinion_active: "$VALUE|+=0$ [opinion|E] con Seelie [faiths|E]"

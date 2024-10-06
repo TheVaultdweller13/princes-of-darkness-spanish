@@ -210,7 +210,7 @@
  POD_reversa_of_fortune_interaction_desc: "Regreso del futuro."
   
  POD_dream_riding_interaction: "Cabalgando en sueños"
- POD_dream_riding_interaction_desc: "Interactúa con el sueño [recipient.GetFirstNamePossessive] mientras estás en el [dreaming|E]."
+ POD_dream_riding_interaction_desc: "Interactúa con el sueño [recipient.GetFirstNamePossessive] mientras estás en el [UmbraGlossary('dreaming')]."
   
  POD_rune_interaction: "Runa"
  POD_rune_interaction_desc: "Mejora el modificador del artefacto o dale un nuevo modificador."
@@ -259,7 +259,7 @@
  POD_oath_of_secrecy_interaction_tooltip: "[recipient.GetFirstName] se convertirá en [GetTrait('oathbreaker').GetName( GetPlayer )] si [recipient.GetSheHe] expone tu secreto."
  oath_of_secrecy_opinion: "Juramento de secreto"
  oath_of_secrecy_modifier: "Juramento de secreto"
- oath_of_secrecy_modifier_desc: "Así como las Nieblas envuelven las mentes mortales y la puerta de [arcadia|E] permanece incógnita, yo mantendré en secreto y en secreto el conocimiento que obtenga en este momento y lugar. Nunca saldrá de mis labios, de lo contrario la noche podría convertirse en día y todas las cosas ocultas quedarían expuestas.\n#weak El personaje se convertirá en [GetTrait('oathbreaker').GetName( GetPlayer )] si expone el secreto del objetivo del juramento.#!"
+ oath_of_secrecy_modifier_desc: "Así como las Nieblas envuelven las mentes mortales y la puerta de [UmbraGlossary('arcadia')] permanece incógnita, yo mantendré en secreto y en secreto el conocimiento que obtenga en este momento y lugar. Nunca saldrá de mis labios, de lo contrario la noche podría convertirse en día y todas las cosas ocultas quedarían expuestas.\n#weak El personaje se convertirá en [GetTrait('oathbreaker').GetName( GetPlayer )] si expone el secreto del objetivo del juramento.#!"
   
  POD_oath_of_guardianship_interaction: "Juramento de tutela"
  POD_oath_of_guardianship_interaction_desc: "Juramento de proteger a una persona, lugar o cosa."
@@ -507,7 +507,7 @@
  POD_transmute_earth_interaction_desc: "Convierte un puñado de piedras en gemas para mostrar tu prestigio y grandeza."
   
  POD_banish_fae_interaction: "Desterrar a los Fae"
- POD_banish_fae_interaction_desc: "Destierra [recipient.GetFirstName] al [arcadia|E]."
+ POD_banish_fae_interaction_desc: "Destierra [recipient.GetFirstName] al [UmbraGlossary('arcadia')]."
   
  bunk.duel.desc: "[bunk|E]"
   

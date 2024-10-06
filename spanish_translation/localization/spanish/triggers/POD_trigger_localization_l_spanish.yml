@@ -83,8 +83,8 @@
  NOT_HAS_RELATION_NECROMANCER_WITH_TARGET: "¿#Bold no es #! [TARGET_CHARACTER.GetShortUINamePossessive] espectro atado?"
  HAS_RELATION_HERD_OWNER_WITH_TARGET: "¿Es la manada [TARGET_CHARACTER.GetShortUINamePossessive]?"
  NOT_HAS_RELATION_HERD_OWNER_WITH_TARGET: "¿Es #Bold y no #! [TARGET_CHARACTER.GetShortUINamePossessive] manada?"
- HAS_RELATION_GHOUL_DOMITOR_WITH_TARGET: "¿Es [TARGET_CHARACTER.GetShortUINamePossessive] [Ghoul|E] esclavo?"
- NOT_HAS_RELATION_GHOUL_DOMITOR_WITH_TARGET: "¿#Bold no es#! [TARGET_CHARACTER.GetShortUINamePossessive] [Ghoul|E] esclavo?"
+ HAS_RELATION_GHOUL_DOMITOR_WITH_TARGET: "¿Es [TARGET_CHARACTER.GetShortUINamePossessive] [ghoul|E] esclavo?"
+ NOT_HAS_RELATION_GHOUL_DOMITOR_WITH_TARGET: "¿#Bold no es#! [TARGET_CHARACTER.GetShortUINamePossessive] [ghoul|E] esclavo?"
  HAS_RELATION_EFFIGY_CREATOR_WITH_TARGET: "¿Es la efigie [TARGET_CHARACTER.GetShortUINamePossessive]?"
  NOT_HAS_RELATION_EFFIGY_CREATOR_WITH_TARGET: "¿Es #Bold y no #! [TARGET_CHARACTER.GetShortUINamePossessive] Efigie?"
  HAS_RELATION_ANIMANTIS_CREATOR_WITH_TARGET: "Es [TARGET_CHARACTER.GetShortUINamePossessive] Animantis"
@@ -185,11 +185,11 @@
  HAS_TOTAL_PATHOS_RESERVES_FIRST_NOT: "Tienes menos de #bold $VALUE|V0$#! Pathos" #NT!
  HAS_TOTAL_PATHOS_RESERVES_THIRD_NOT: "[CHARACTER.GetShortUIName] tiene menos que #bold $VALUE|V0$#! Pathos" #NT!
   
- HAS_VAMPGENERATION_LESS_OR_EQUAL_TO_GLOBAL: "¿Tiene al menos [generation|E] #bold $VALUE|V0$#!?" #NT!
- HAS_VAMPGENERATION_LESS_OR_EQUAL_TO_FIRST: "Tienes al menos [generation|E] #bold $VALUE|V0$#!" #NT!
- HAS_VAMPGENERATION_LESS_OR_EQUAL_TO_THIRD: "[CHARACTER.GetShortUIName] es al menos [generation|E] #bold $VALUE|V0$#!" #NT!
- HAS_VAMPGENERATION_LESS_OR_EQUAL_TO_GLOBAL_NOT: "Tiene es #R NO#! al menos [generation|E] #bold $VALUE|V0$#!" #NT!
- HAS_VAMPGENERATION_LESS_OR_EQUAL_TO_FIRST_NOT: "Eres #R NO#! al menos [generation|E] #bold $VALUE|V0$#!" #NT!
- HAS_VAMPGENERATION_LESS_OR_EQUAL_TO_THIRD_NOT: "[CHARACTER.GetShortUIName] es #R NO#! al menos [generation|E] #bold $VALUE|V0$#!" #NT!
+ HAS_VAMPGENERATION_LESS_OR_EQUAL_TO_GLOBAL: "¿Tiene al menos [vampgeneration|E] #bold $VALUE|V0$#!?" #NT!
+ HAS_VAMPGENERATION_LESS_OR_EQUAL_TO_FIRST: "Tienes al menos [vampgeneration|E] #bold $VALUE|V0$#!" #NT!
+ HAS_VAMPGENERATION_LESS_OR_EQUAL_TO_THIRD: "[CHARACTER.GetShortUIName] es al menos [vampgeneration|E] #bold $VALUE|V0$#!" #NT!
+ HAS_VAMPGENERATION_LESS_OR_EQUAL_TO_GLOBAL_NOT: "Tiene es #R NO#! al menos [vampgeneration|E] #bold $VALUE|V0$#!" #NT!
+ HAS_VAMPGENERATION_LESS_OR_EQUAL_TO_FIRST_NOT: "Eres #R NO#! al menos [vampgeneration|E] #bold $VALUE|V0$#!" #NT!
+ HAS_VAMPGENERATION_LESS_OR_EQUAL_TO_THIRD_NOT: "[CHARACTER.GetShortUIName] es #R NO#! al menos [vampgeneration|E] #bold $VALUE|V0$#!" #NT!
   
  has_abyssal_mysticism_bloodmagic_trigger_flag: "Debes completar [journey|E] para desbloquear Misticismo Abisal" #NT!

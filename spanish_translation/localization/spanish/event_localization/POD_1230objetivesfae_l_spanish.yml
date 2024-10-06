@@ -45,14 +45,14 @@
   
  prodigal_objective_decision: "Traigan de vuelta a los pródigos"
  prodigal_objective_decision_tooltip: "Les recordarás a los pródigos quiénes son."
- prodigal_objective_decision_desc: "Según las creencias de los Fae, los vampiros, los hombres lobo, los magos, las momias y los fantasmas son razas de hadas que han olvidado sus orígenes en el [dreaming|E]. Si bien los mitos de creación individuales de cada una de estas razas sobrenaturales ciertamente contradicen esta idea, las posibilidades ilimitadas presentes en el Sueño ciertamente significan que podría ser verdad. Los Fae se refieren a estos otros seres sobrenaturales como "Pródigos". Los Pródigos han olvidado sus orígenes en el [dreaming|E], es hora de recordarles quiénes son."
+ prodigal_objective_decision_desc: "Según las creencias de los Fae, los vampiros, los hombres lobo, los magos, las momias y los fantasmas son razas de hadas que han olvidado sus orígenes en el [UmbraGlossary('dreaming')]. Si bien los mitos de creación individuales de cada una de estas razas sobrenaturales ciertamente contradicen esta idea, las posibilidades ilimitadas presentes en el Sueño ciertamente significan que podría ser verdad. Los Fae se refieren a estos otros seres sobrenaturales como "Pródigos". Los Pródigos han olvidado sus orígenes en el [UmbraGlossary('dreaming')], es hora de recordarles quiénes son."
  prodigal_objective_decision_confirm: "Volved a casa, hijos descarriados."
  prodigal_objective_decision_custom: "No debe haber ningún [independent_ruler|E] sin el rasgo de hada con una opinión negativa sobre ti en el mapa"
  prodigal_objective_decision_custom_ex: "$prodigal_objective_decision_custom$ #weak ([example.GetFirstName])#!"
  prodigal_objective_decision_custom1: "Todos los demás seres sobrenaturales serán rebautizados como pródigos."
  prodigal_objective_decision_custom2: "Los sobrenaturales pródigos siempre aceptarán tu oferta de vasallaje."
  prodigal_objective_decision_osiris_flail: "Debes tener el [GetGlobalVariable('osiris_flail_link').Artifact.GetName], que registró todo el historial."
- prodigal_objective_decision_tapestry_of_fate: "Debes tener el [GetGlobalVariable('tapestry_of_fate_link').Artifact.GetName], que contiene todos los nombres verdaderos que existen, así como el destino del [dreaming|E]."
+ prodigal_objective_decision_tapestry_of_fate: "Debes tener el [GetGlobalVariable('tapestry_of_fate_link').Artifact.GetName], que contiene todos los nombres verdaderos que existen, así como el destino del [UmbraGlossary('dreaming')]."
  prodigal_objective_decision_book_of_nod: "Debes reunir el Libro de Nod, que contiene la historia de los Cainitas."
  prodigal_objective_decision_baizetu: "Debes reunir los cinco fragmentos del Bai Ze Tu, un grimorio legendario escrito por el Emperador Amarillo que contiene los secretos de los 11.520 tipos de criaturas sobrenaturales."
  prodigal_objective_decision_ural: "Eres [completely_control|E] el Caern real de la Luna Creciente ([GetTitleByKey('b_voronezh').GetNameNoTier]), fundado durante el Impergium."
@@ -94,18 +94,18 @@
  pod1230objectives_fae.120.a: "¡Más supersticiones!"
   
  pod1230objectives_fae.121.t: "El regreso de los pródigos"
- pod1230objectives_fae.121.desc: "Todos los demás habitantes sobrenaturales del Mundo de Tinieblas son facciones de hadas que han olvidado sus orígenes en el [dreaming|E]. Ahora han recuperado el sentido común."
+ pod1230objectives_fae.121.desc: "Todos los demás habitantes sobrenaturales del Mundo de Tinieblas son facciones de hadas que han olvidado sus orígenes en el [UmbraGlossary('dreaming')]. Ahora han recuperado el sentido común."
  pod1230objectives_fae.121.a: "Bienvenido de nuevo."
   
  POD_fae_maintenance.21.t: "El destrozo"
- POD_fae_maintenance.21.desc: "No pudiste evitar la Profecía.\nFinalmente, los hilos que unían al reino mortal y al [dreaming|E] se tensaron tanto que comenzaron a romperse. Esta ruptura ha traído al [shattering|E]. No solo destrozó los lazos entre [arcadia|E] la Tierra, sino que también destruyó las esperanzas de que pudiera revertirse.\nDebes elegir una forma de lidiar con esto."
+ POD_fae_maintenance.21.desc: "No pudiste evitar la Profecía.\nFinalmente, los hilos que unían al reino mortal y al [UmbraGlossary('dreaming')] se tensaron tanto que comenzaron a romperse. Esta ruptura ha traído al [shattering|E]. No solo destrozó los lazos entre [UmbraGlossary('arcadia')] la Tierra, sino que también destruyó las esperanzas de que pudiera revertirse.\nDebes elegir una forma de lidiar con esto."
  POD_fae_maintenance.21.a: "Adopta el Camino del Cambiante y renuncia a tu inmortalidad."
  POD_fae_maintenance.21.b: "Huye a Arcadia."
  POD_fae_maintenance.21.c: "Secuestro en propiedad absoluta"
  POD_fae_maintenance.21.d: "Encontraste tu propio camino hacia la inmortalidad."
  POD_fae_maintenance.21.d.tt: "La Devastación no tiene ningún impacto en ti, personalmente."
  POD_fae_maintenance.22.t: "El destrozo"
- POD_fae_maintenance.22.desc: "Con el tiempo, los hilos que se habían tensado tanto entre el reino mortal y el [dreaming|E] comenzaron a romperse. Esta ruptura es el [shattering|E]. No solo destrozó los lazos entre [arcadia|E] y la Tierra, sino que también destruyó las esperanzas de que pudiera revertirse."
+ POD_fae_maintenance.22.desc: "Con el tiempo, los hilos que se habían tensado tanto entre el reino mortal y el [UmbraGlossary('dreaming')] comenzaron a romperse. Esta ruptura es el [shattering|E]. No solo destrozó los lazos entre [UmbraGlossary('arcadia')] y la Tierra, sino que también destruyó las esperanzas de que pudiera revertirse."
  POD_fae_maintenance.22.a: "¿Hurra?"
   
  POD_fae_maintenance.31.t: "El interregno" #NT!
@@ -143,7 +143,7 @@
   
  inert_cold_iron_objective_decision: "Hierro frío inerte"
  inert_cold_iron_objective_decision_tooltip: "Alterarás la "realidad" científica, buscando una forma de transmutar o cambiar de otro modo las propiedades del hierro frío para volverlo inerte."
- inert_cold_iron_objective_decision_desc: "Los Fae luchan por entender por qué Cold Iron les hace daño. Puede causar la destrucción permanente de un espíritu Fae. [GetScriptedCharacterByHistoryID('POD_fae_character_04').GetFirstName] dio su vida para intentar romper el frío control del hierro sobre las hadas. Muchos creen que el hierro representa la fuerza de la ruptura; la división filosófica entre la humanidad y la [dreaming|E] incorporada... hecha carne. No se formó por ninguna "cosa", sino como un efecto "natural" cuando la Banalidad alcanzó un nivel crítico. Los Fae deben estudiar Cold Iron y de alguna manera volverlo inerte."
+ inert_cold_iron_objective_decision_desc: "Los Fae luchan por entender por qué Cold Iron les hace daño. Puede causar la destrucción permanente de un espíritu Fae. [GetScriptedCharacterByHistoryID('POD_fae_character_04').GetFirstName] dio su vida para intentar romper el frío control del hierro sobre las hadas. Muchos creen que el hierro representa la fuerza de la ruptura; la división filosófica entre la humanidad y la [UmbraGlossary('dreaming')] incorporada... hecha carne. No se formó por ninguna "cosa", sino como un efecto "natural" cuando la Banalidad alcanzó un nivel crítico. Los Fae deben estudiar Cold Iron y de alguna manera volverlo inerte."
  inert_cold_iron_objective_decision_confirm: "¡Transmutar el paradigma!"
  inert_cold_iron_objective_decision_before_last_date: "La fecha es 1510.1.1 o anterior"
  inert_cold_iron_objective_decision_dougal: "Debes ser de la casa [GetDynastyByID( 'POD_fae_dynasty_dougal' ).GetBaseName]."
@@ -168,7 +168,7 @@
  pod1230objectives_fae.140.t: "Restauración Arcadia"
  pod1230objectives_fae.140.desc: ""
  pod1230objectives_fae.140.a: "Fusionar el Sueño con la Tierra."
- fae_ending_tooltip: "Cuando [arcadia|E] se fusione con la Tierra, tu juego terminará y el mundo que alguna vez conociste cambiará para siempre."
+ fae_ending_tooltip: "Cuando [UmbraGlossary('arcadia')] se fusione con la Tierra, tu juego terminará y el mundo que alguna vez conociste cambiará para siempre."
  pod1230objectives_fae.140.b: "Todavía tengo cosas que hacer."
   
  underbridge_kingdom_objective_decision: "Rey de Underbridge"
@@ -246,7 +246,7 @@
  pod1230objectives_fae.163.a: "Ámame, ámame, di que me amas."
   
  sidhe_house_dominance_gwydion_objective_decision: "El verdadero rey"
- sidhe_house_dominance_gwydion_objective_decision_desc: "Con la Separación, los Tuatha de Danaan abandonaron la Tierra para [arcadia|E]. La Casa Gwydion, acostumbrada desde hacía tiempo al papel de caballero andante, reconoció con la Separación una nueva responsabilidad: liderar a todos los Fae. Ahora era necesario que la Casa Gwydion reclamara tierras como propias y protegiera estas posesiones contra las depredaciones de los perdidos y desesperados. El fabuloso Don Gwydion, sobrino del rey de Venedotia, [GetScriptedCharacterByHistoryID('POD_fae_character_84').GetFirstName], tiene una línea de descendencia clara de Ogma y la propia Danu. Los cuentos dicen que el Señor [GetScriptedCharacterByHistoryID('POD_fae_character_03').GetFirstName] estuvo presente en la coronación del primer Gran Rey que jamás haya gobernado y que le regaló un par de enormes grifos grises al nuevo señor. Afirma: "Si alguna vez la duda se apodera del corazón de tus súbditos, que miren a los grifos, que serán los heraldos del verdadero Gran Rey". Los señores de la Casa Gwydion tienen la valentía, la ambición y el linaje necesarios para liderar a todos los Sidhe Seelie hacia una renovada Edad de Oro. ¿Quién más podría emprender la búsqueda y empuñar el rayo, la Espada de la Luz, la espada del pacificador, [GetGlobalVariable('caliburn_link').Artifact.GetName], sino el Rey Verdadero?" #NT!
+ sidhe_house_dominance_gwydion_objective_decision_desc: "Con la Separación, los Tuatha de Danaan abandonaron la Tierra para [UmbraGlossary('arcadia')]. La Casa Gwydion, acostumbrada desde hacía tiempo al papel de caballero andante, reconoció con la Separación una nueva responsabilidad: liderar a todos los Fae. Ahora era necesario que la Casa Gwydion reclamara tierras como propias y protegiera estas posesiones contra las depredaciones de los perdidos y desesperados. El fabuloso Don Gwydion, sobrino del rey de Venedotia, [GetScriptedCharacterByHistoryID('POD_fae_character_84').GetFirstName], tiene una línea de descendencia clara de Ogma y la propia Danu. Los cuentos dicen que el Señor [GetScriptedCharacterByHistoryID('POD_fae_character_03').GetFirstName] estuvo presente en la coronación del primer Gran Rey que jamás haya gobernado y que le regaló un par de enormes grifos grises al nuevo señor. Afirma: "Si alguna vez la duda se apodera del corazón de tus súbditos, que miren a los grifos, que serán los heraldos del verdadero Gran Rey". Los señores de la Casa Gwydion tienen la valentía, la ambición y el linaje necesarios para liderar a todos los Sidhe Seelie hacia una renovada Edad de Oro. ¿Quién más podría emprender la búsqueda y empuñar el rayo, la Espada de la Luz, la espada del pacificador, [GetGlobalVariable('caliburn_link').Artifact.GetName], sino el Rey Verdadero?" #NT!
  sidhe_house_dominance_gwydion_objective_decision_tooltip: "Debes demostrar a todo el mundo que la Casa Gwydion es conocida en todo el mundo mediante un largo reinado de muchos feudos, asegurando lugares venerados y glamorosos, adquiriendo artefactos maravillosos y haciendo que se cuenten grandes epopeyas sobre tus hazañas, para convencer a todos los Fae de tu legendario esplendor. Finalmente, una misión para encontrar la espada del Verdadero Rey —Excalibur— [GetGlobalVariable('caliburn_link').Artifact.GetName] probará tu innegable majestad."
  sidhe_house_dominance_gwydion_objective_decision_confirm: "¡A la coronación!"
  sidhe_house_dominance_gwydion_objective_decision_custom: "Debes recuperar [GetGlobalVariable('caliburn_link').Artifact.GetName] de [great_chasm|E]"
@@ -354,20 +354,20 @@
  pod1230objectives_fae.175.a: "Son los espíritus de una buena tierra."
   
  sidhe_house_dominance_scathach_objective_decision: "Edictos de los oráculos morfeos"
- sidhe_house_dominance_scathach_objective_decision_desc: "Desde que [GetScriptedCharacterByHistoryID('POD_fae_character_17').GetFirstName] derrotó a Octriallach, el Rey Blanco de los Fomorianos, en la Guerra de los Árboles, los Oráculos Morfeos han sido la fuerza definitoria dentro de la Casa Scathach. Si bien los Edictos de los Oráculos Morfeos no siempre tienen sentido para los miembros de la casa, la casa está unida en seguirlos. Sin embargo, los Oráculos previeron una calamidad si la Espada de Tethra entraba en el Corazón de [dreaming|E], y los Scathach atacaron a los Gwydion intentando moverlos. Durante el derramamiento de sangre que siguió, la espada desapareció en el Ensueño circundante. Las consecuencias políticas de la batalla hicieron que los Scathach se convirtieran en una Casa exiliada y rechazada por los Seelie. Aún así, los miembros de la casa siguen los Edictos de los Oráculos. A pesar de esta unidad, la Casa está dividida entre la tarea de los Changelings de quedarse atrás mientras la mayoría de los Sidhe huyen a [arcadia|E], y [GetScriptedCharacterByHistoryID('POD_fae_character_87').GetFirstName] y sus seguidores Fae primogénitos buscan en [sea_of_silver|E] en [deep_dreaming|E] algo para preservar el Mundo de Otoño y derrotar a los Fomorianos."
+ sidhe_house_dominance_scathach_objective_decision_desc: "Desde que [GetScriptedCharacterByHistoryID('POD_fae_character_17').GetFirstName] derrotó a Octriallach, el Rey Blanco de los Fomorianos, en la Guerra de los Árboles, los Oráculos Morfeos han sido la fuerza definitoria dentro de la Casa Scathach. Si bien los Edictos de los Oráculos Morfeos no siempre tienen sentido para los miembros de la casa, la casa está unida en seguirlos. Sin embargo, los Oráculos previeron una calamidad si la Espada de Tethra entraba en el Corazón de [UmbraGlossary('dreaming')], y los Scathach atacaron a los Gwydion intentando moverlos. Durante el derramamiento de sangre que siguió, la espada desapareció en el Ensueño circundante. Las consecuencias políticas de la batalla hicieron que los Scathach se convirtieran en una Casa exiliada y rechazada por los Seelie. Aún así, los miembros de la casa siguen los Edictos de los Oráculos. A pesar de esta unidad, la Casa está dividida entre la tarea de los Changelings de quedarse atrás mientras la mayoría de los Sidhe huyen a [UmbraGlossary('arcadia')], y [GetScriptedCharacterByHistoryID('POD_fae_character_87').GetFirstName] y sus seguidores Fae primogénitos buscan en [sea_of_silver|E] en [UmbraGlossary('deep_dreaming')] algo para preservar el Mundo de Otoño y derrotar a los Fomorianos."
  sidhe_house_dominance_scathach_objective_decision_tooltip: ""
  sidhe_house_dominance_scathach_objective_decision_confirm: "Sigue el camino"
  sidhe_house_dominance_scathach_objective_decision_custom: "[shattering|E] se evita"
  scathach_victory_modifier: "Edictos de los oráculos morfeos"
   
  pod1230objectives_fae.180.t: "Edictos de los oráculos morfeos"
- pod1230objectives_fae.180.desc.fae: "Si bien los edictos de los oráculos morfeos no siempre tienen sentido para los miembros de la casa, la casa está unida en su acatamiento. Como líder hada primogénita de la Casa Scathach, has realizado misiones en [deep_dreaming|E] y [sea_of_silver|E] para encontrar lo que se profetizó que se encontraría. ¿Será suficiente?"
+ pod1230objectives_fae.180.desc.fae: "Si bien los edictos de los oráculos morfeos no siempre tienen sentido para los miembros de la casa, la casa está unida en su acatamiento. Como líder hada primogénita de la Casa Scathach, has realizado misiones en [UmbraGlossary('deep_dreaming')] y [sea_of_silver|E] para encontrar lo que se profetizó que se encontraría. ¿Será suficiente?"
  pod1230objectives_fae.180.desc.changeling: "Aunque los edictos de los oráculos morfeos no siempre tienen sentido para los miembros de la Casa Scathach, la casa está unida en su acatamiento. Como líder cambiante de la Casa, has seguido estrictamente al comandante de Scathach para permanecer en el Mundo de Otoño incluso frente a la creciente banalidad. ¿Será suficiente?"
  pod1230objectives_fae.180.a: "Como siempre, honramos a los Oráculos Morfeos."
   
  sidhe_house_dominance_danaan_objective_decision: "Guardia soñando"
- sidhe_house_dominance_danaan_objective_decision_desc: "La Casa Danaan recorre los numerosos caminos del [dreaming|E]. Protegen sus pasos y abren nuevos senderos. Guían a los soñadores y, a través de su Juramento del Dragón, obtienen el favor de muchas Quimeras. Un líder de la casa que haya viajado lejos en el [dreaming|E] puede ser capaz de reunir una impresionante horda de Quimeras para desatarlas en el Mundo del Otoño cuando sea el momento adecuado."
- sidhe_house_dominance_danaan_objective_decision_tooltip: "Viaja por el mundo y el [dreaming|E] y aprende sus secretos para construir un ejército de Quimeras."
+ sidhe_house_dominance_danaan_objective_decision_desc: "La Casa Danaan recorre los numerosos caminos del [UmbraGlossary('dreaming')]. Protegen sus pasos y abren nuevos senderos. Guían a los soñadores y, a través de su Juramento del Dragón, obtienen el favor de muchas Quimeras. Un líder de la casa que haya viajado lejos en el [UmbraGlossary('dreaming')] puede ser capaz de reunir una impresionante horda de Quimeras para desatarlas en el Mundo del Otoño cuando sea el momento adecuado."
+ sidhe_house_dominance_danaan_objective_decision_tooltip: "Viaja por el mundo y el [UmbraGlossary('dreaming')] y aprende sus secretos para construir un ejército de Quimeras."
  sidhe_house_dominance_danaan_objective_decision_confirm: "Dos caminos se bifurcaban en la niebla y yo tomé el menos transitado."
  danaan_victory_modifier: "Busca al Guardián del Sueño"
  sidhe_house_dominance_danaan_objective_decision_traits: "Eres un [GetTrait('eshu').GetName( GetPlayer )], [GetTrait('lifestyle_traveler').GetName( GetPlayer )], [GetTrait('pilgrim').GetName( GetPlayer )] o un [GetTrait('adventurer').GetName( GetPlayer )]."
@@ -376,7 +376,7 @@
  sidhe_house_dominance_danaan_objective_decision_artifact: "Tenga un tesoro útil para un viajero: Polvo de rastro, [Select_CString( GetGlobalVariable( 'pegasus_bridle_link' ).IsSet, GetGlobalVariable('pegasus_bridle_link').Artifact.GetName, Localize('artifact_pegasus_bridle_name') )], [GetGlobalVariable('eye_of_opening_link').Artifact.GetName], [GetGlobalVariable('dreamstone_of_madoc_link').Artifact.GetName], [Select_CString( GetGlobalVariable( 'havens_compass_link' ).IsSet, GetGlobalVariable('havens_compass_link').Artifact.GetName, Localize('artifact_havens_compass_name') )], [Select_CString( GetGlobalVariable( 'broach_of_scrying_link' ).IsSet, GetGlobalVariable('broach_of_scrying_link').Artifact.GetName, Localize('artifact_broach_of_scrying_name') )] o [GetGlobalVariable('tapestry_of_fate_link').Artifact.GetName]."
   
  pod1230objectives_fae.181.t: "Guardia soñando"
- pod1230objectives_fae.181.desc: "Como líder de la Casa Danaan, has recorrido los numerosos caminos del [dreaming|E]. Ahora proteges sus pasos y abres nuevos caminos. Has actuado como guía para muchos soñadores. Por tu Juramento al Dragón te has ganado el favor de muchas Quimeras. Has criado una impresionante horda de Quimeras que esperan tus órdenes, dispuestas incluso a invadir el mundo del Otoño si las llamas."
+ pod1230objectives_fae.181.desc: "Como líder de la Casa Danaan, has recorrido los numerosos caminos del [UmbraGlossary('dreaming')]. Ahora proteges sus pasos y abres nuevos caminos. Has actuado como guía para muchos soñadores. Por tu Juramento al Dragón te has ganado el favor de muchas Quimeras. Has criado una impresionante horda de Quimeras que esperan tus órdenes, dispuestas incluso a invadir el mundo del Otoño si las llamas."
  pod1230objectives_fae.181.a: "¡Por la defensa de los Pasos hacia Arcadia!"
   
   

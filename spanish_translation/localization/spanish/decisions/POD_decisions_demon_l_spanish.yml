@@ -9,7 +9,7 @@
  POD_demon_demand_banish_rival_decision_tooltip: "Tu amo exige algo. Debes responder."
  POD_demon_demand_banish_rival_decision_desc: "Los peores enemigos de los demonios son los de su propia especie. Tu maestro exige que un ángel caído rival sea desterrado de este mundo."
  POD_demon_demand_banish_rival_decision_confirm: "Hágase tu voluntad, maestro."
- POD_demon_demand_banish_rival_decision_condition: "Destierra un demonio al [abyss|E]."
+ POD_demon_demand_banish_rival_decision_condition: "Destierra un demonio al [UmbraGlossary('abyss')]."
   
  POD_demon_demand_prepare_bodies_decision: "Demanda: Preparar cuerpos"
  POD_demon_demand_prepare_bodies_decision_tooltip: "Tu amo exige algo. Debes responder."
@@ -38,10 +38,10 @@
  unlock_sin_trait_vassalization: "Permite vasallar a los gobernantes con el pecado [trait|E] correspondiente a su fe."
  breakdown_the_abyss_objective_decision: "Fuga de la prisión abisal"
  breakdown_the_abyss_objective_decision_tooltip: "Abrirás la prisión más importante que existe."
- breakdown_the_abyss_objective_decision_desc: "El [abyss|E], también conocido como el Infierno o el Pozo, es la oscura dimensión de la oscuridad creada por Dios como prisión eterna para los Caídos. Eres uno de los pocos que escaparon, pero ¿qué podría pasar si todos tus pobres hermanos encarcelados hicieran lo mismo?"
+ breakdown_the_abyss_objective_decision_desc: "El [UmbraGlossary('abyss')], también conocido como el Infierno o el Pozo, es la oscura dimensión de la oscuridad creada por Dios como prisión eterna para los Caídos. Eres uno de los pocos que escaparon, pero ¿qué podría pasar si todos tus pobres hermanos encarcelados hicieran lo mismo?"
  breakdown_the_abyss_objective_decision_confirm: "¡Libertad por fin!"
  unlock_final_war_objective_decision: "Desbloquear $final_war_objective_decision$ [decision|E]"
- no_more_abyss_prison: "Ya no quedarás atrapado en el [abyss|E] cuando estés en estado espiritual."
+ no_more_abyss_prison: "Ya no quedarás atrapado en el [UmbraGlossary('abyss')] cuando estés en estado espiritual."
  allow_create_demon: "Podrás fabricar vasijas para otros [GetTrait('demon').GetName( GetPlayer )] y reclutarlos como invitados en tu corte."
   
  final_war_objective_decision: "Guerra final"
@@ -52,7 +52,7 @@
  final_war_cb_modifier: "Guerra final"
   
  POD_nephilim_decision: "Nefilim"
- POD_nephilim_decision_desc: "Los descendientes de demonios y mujeres mortales, resultado de la experimentación realizada por Abaddon y Asmodeus. Fueron perseguidos y asesinados por Lucifer y sus seguidores demoníacos.\n\nSe desconoce si aún sobrevive algún Nephilim. Pero si pudieras encontrar a Abaddon, ahora ubicado en el Norte, o a Asmodeus, en el Este, o mejor, preguntarle a esos Nephilim muertos [GetTrait('ferryman').GetName( GetPlayer )] en el [underworld|E] reuniendo suficientes médiums para iniciar un ritual, entonces tal vez podrías ser el progenitor de una nueva raza de Nephilim..."
+ POD_nephilim_decision_desc: "Los descendientes de demonios y mujeres mortales, resultado de la experimentación realizada por Abaddon y Asmodeus. Fueron perseguidos y asesinados por Lucifer y sus seguidores demoníacos.\n\nSe desconoce si aún sobrevive algún Nephilim. Pero si pudieras encontrar a Abaddon, ahora ubicado en el Norte, o a Asmodeus, en el Este, o mejor, preguntarle a esos Nephilim muertos [GetTrait('ferryman').GetName( GetPlayer )] en el [UmbraGlossaryLocalized('shadowlands','Underworld')] reuniendo suficientes médiums para iniciar un ritual, entonces tal vez podrías ser el progenitor de una nueva raza de Nephilim..."
  POD_nephilim_decision_tooltip: "Encontrarás las pistas necesarias para crear Nephilim de nuevo."
  POD_nephilim_decision_confirm: "Los perdidos regresan..."
  nephilim_decision_modifier: "Progenitor de los Nefilim"

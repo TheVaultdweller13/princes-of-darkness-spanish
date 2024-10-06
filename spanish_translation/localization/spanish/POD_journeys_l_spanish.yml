@@ -47,15 +47,15 @@
   
  werewolf_training_name: "Entrena con tu manada"
  werewolf_training_desc: "Mucho más que simples amigos, tus compañeros de manada son quienes siempre te respaldarán en las situaciones más extremas. Debes estar preparado para todo como equipo."
- werewolf_training_effects: "Revisarás tu [coterie_werewolf|E] y decidirás en qué forma de entrenamiento enfocarte."
- werewolf_training_isvalid: "$EFFECT_LIST_BULLET$Necesitas tener un [coterie_werewolf|E] con al menos #V 1#! otros miembros."
+ werewolf_training_effects: "Revisarás tu [Concept('coterie','Pack')|E] y decidirás en qué forma de entrenamiento enfocarte."
+ werewolf_training_isvalid: "$EFFECT_LIST_BULLET$Necesitas tener un [Concept('coterie','Pack')|E] con al menos #V 1#! otros miembros."
  werewolf_training_tt: "[GetPlayer.GetFaith.HighGodName] tiene necesidad de soldados poderosos."
  werewolf_training_planning_title: "Afilando garras y colmillos"
  werewolf_training_planning_desc: "Los miembros de $POD_player_coterie$ han encontrado el tiempo para reunirse para otra sesión de entrenamiento.\n\nEsto nos ayudará a trabajar mejor como equipo y realizar el trabajo que [GetPlayer.GetFaith.HighGodName] necesita que hagamos."
  werewolf_training_planning_confirm: "¡Empezaremos la sesión de entrenamiento ahora mismo!"
  werewolf_training_planning_decline: "$POD_journey_planning_decline_default$"
- werewolf_training_widget_desc: "¿Continúas entrenando con tu [coterie_werewolf|E]?"
- werewolf_training_widget_tt: "Inmediatamente comenzarás otro [journey|E] para entrenar con tu [coterie_werewolf|E]."
+ werewolf_training_widget_desc: "¿Continúas entrenando con tu [Concept('coterie','Pack')|E]?"
+ werewolf_training_widget_tt: "Inmediatamente comenzarás otro [journey|E] para entrenar con tu [Concept('coterie','Pack')|E]."
   
   # GUI only 
  seek_knowledge_name: "Aprende nuevas habilidades"
@@ -111,7 +111,7 @@
  seek_knowledge_celerity_travel_confirm: "$POD_journey_travel_confirm_seek_knowledge$"
   
  seek_knowledge_dominate_name: "Aprende Disciplina ([GetTrait('dominate').GetName(GetNullCharacter)])"
- seek_knowledge_dominate_desc: "[GetTrait('dominate').GetName(GetNullCharacter)] es el [discipline|E] del Control Mental. Permite al usuario [GetPerk('mesmerize_perk').GetName(GetPlayer)] a otros y dar órdenes que deben ser obedecidas. También puede encubrir infracciones de [masquerade|E] a [GetPerk('the_forgetful_mind_perk').GetName(GetPlayer)]."
+ seek_knowledge_dominate_desc: "[GetTrait('dominate').GetName(GetNullCharacter)] es el [discipline|E] del Control Mental. Permite al usuario [GetPerk('mesmerize_perk').GetName(GetPlayer)] a otros y dar órdenes que deben ser obedecidas. También puede encubrir infracciones de [the_masquerade|E] a [GetPerk('the_forgetful_mind_perk').GetName(GetPlayer)]."
  seek_knowledge_dominate_effects: "Aprenderás la ubicación de un profesor que conoce [GetTrait('dominate').GetName(GetNullCharacter)]. Después de viajar allí, puedes adquirir el [discipline|E] [trait|E], que te permite desbloquear [perks|E] en el [GetTrait('dominate').GetName(GetNullCharacter)] [lifestyle|E]."
  seek_knowledge_dominate_tt: "Los someteré a mi voluntad."
  seek_knowledge_dominate_planning_title: "La búsqueda del dominio"
@@ -159,7 +159,7 @@
  seek_knowledge_potence_travel_confirm: "$POD_journey_travel_confirm_seek_knowledge$"
   
  seek_knowledge_presence_name: "Aprende Disciplina ([GetTrait('presence').GetName(GetNullCharacter)])"
- seek_knowledge_presence_desc: "[GetTrait('presence').GetName(GetNullCharacter)] es el [discipline|E] del encanto sobrenatural. Desbloquea varias habilidades relacionadas con las emociones, como [GetPerk('entrancement_perk').GetName(GetPlayer)] o [GetPerk('lingering_kiss_perk').GetName(GetPlayer)]. También puede encubrir las infracciones de [masquerade|E] a [GetPerk('majesty_perk').GetName(GetPlayer)]."
+ seek_knowledge_presence_desc: "[GetTrait('presence').GetName(GetNullCharacter)] es el [discipline|E] del encanto sobrenatural. Desbloquea varias habilidades relacionadas con las emociones, como [GetPerk('entrancement_perk').GetName(GetPlayer)] o [GetPerk('lingering_kiss_perk').GetName(GetPlayer)]. También puede encubrir las infracciones de [the_masquerade|E] a [GetPerk('majesty_perk').GetName(GetPlayer)]."
  seek_knowledge_presence_effects: "Aprenderás la ubicación de un maestro que conoce [GetTrait('presence').GetName(GetNullCharacter)]. Después de viajar allí, podrás adquirir [discipline|E] [trait|E], que te permite desbloquear [perks|E] en [GetTrait('presence').GetName(GetNullCharacter)] [lifestyle|E]."
  seek_knowledge_presence_tt: "Balanceando corazones y mentes."
  seek_knowledge_presence_planning_title: "La búsqueda de la presencia"
@@ -377,7 +377,7 @@
  seek_knowledge_visceratika_travel_confirm: "$POD_journey_travel_confirm_seek_knowledge$"
   
  seek_knowledge_giovanni_name: "Aprende [GetTrait('necromancy').GetName(GetNullCharacter)] (Giovanni)"
- seek_knowledge_giovanni_desc: "El linaje [GetTrait('giovanni').GetName(GetNullCharacter)] ha desarrollado su propia forma de [GetTrait('necromancy').GetName(GetNullCharacter)], lo que les permite crear y unir a los #TOOLTIP:GAME_TRAIT,wraith,[GetNullCharacter] #L Espectros#!#! para que cumplan sus órdenes e ingresen a los [underworld|E]."
+ seek_knowledge_giovanni_desc: "El linaje [GetTrait('giovanni').GetName(GetNullCharacter)] ha desarrollado su propia forma de [GetTrait('necromancy').GetName(GetNullCharacter)], lo que les permite crear y unir a los #TOOLTIP:GAME_TRAIT,wraith,[GetNullCharacter] #L Espectros#!#! para que cumplan sus órdenes e ingresen a los [UmbraGlossaryLocalized('shadowlands','Underworld')]."
  seek_knowledge_giovanni_effects: "Aprenderás la ubicación de un maestro que conoce a Giovanni [GetTrait('necromancy').GetName(GetNullCharacter)]. Después de viajar allí, podrás aprender sus técnicas secretas. Si aún no tienes el [GetTrait('necromancy').GetName(GetNullCharacter)] [trait|E], también adquirirás el [discipline|E] [trait|E], que te permite desbloquear el [perks|E] en el [GetTrait('necromancy').GetName(GetNullCharacter)] [lifestyle|E]."
  seek_knowledge_giovanni_tt: "Los muertos avanzarán mis ambiciones."
  seek_knowledge_giovanni_planning_title: "La búsqueda de la nigromancia"
@@ -385,7 +385,7 @@
  seek_knowledge_giovanni_planning_confirm: "$POD_journey_planning_confirm_default$"
  seek_knowledge_giovanni_planning_decline: "$POD_journey_planning_decline_default$"
  seek_knowledge_giovanni_travel_title: "$POD_journey_travel_title_seek_knowledge$"
- seek_knowledge_giovanni_travel_desc: "Estoy emocionado por tener la oportunidad de aprender Giovanni [GetTrait('necromancy').GetName(GetNullCharacter)]. Me pregunto si los habitantes de [shadowlands|E] me darán la bienvenida. Bueno, no importa. Me obedecerán, quieran o no."
+ seek_knowledge_giovanni_travel_desc: "Estoy emocionado por tener la oportunidad de aprender Giovanni [GetTrait('necromancy').GetName(GetNullCharacter)]. Me pregunto si los habitantes de [UmbraGlossary('shadowlands')] me darán la bienvenida. Bueno, no importa. Me obedecerán, quieran o no."
  seek_knowledge_giovanni_travel_confirm: "$POD_journey_travel_confirm_seek_knowledge$"
   
  seek_knowledge_cappadocian_name: "Aprende [GetTrait('necromancy').GetName(GetNullCharacter)] (Capadocia)"
@@ -569,7 +569,7 @@
  seek_knowledge_chronos_travel_confirm: "$POD_journey_travel_confirm_seek_knowledge$"
   
  seek_knowledge_dream_craft_name: "Aprende el arte noble (#TOOLTIP:GAME_TRAIT,art_dream_craft,[GetNullCharacter] #L Dream-Craft#!#!)"
- seek_knowledge_dream_craft_desc: "#TOOLTIP:GAME_TRAIT,art_dream_craft,[GetNullCharacter] #L Dream-Craft#!#! es ​​el arte de dar forma a [dreaming|E], otorgando al practicante bonificaciones pasivas como [GetPerk('find_silver_path_perk').GetName(GetPlayer)], [GetPerk('dream_weaving_perk').GetName(GetPlayer)] o [GetPerk('determinism_perk').GetName(GetPlayer)]."
+ seek_knowledge_dream_craft_desc: "#TOOLTIP:GAME_TRAIT,art_dream_craft,[GetNullCharacter] #L Dream-Craft#!#! es ​​el arte de dar forma a [UmbraGlossary('dreaming')], otorgando al practicante bonificaciones pasivas como [GetPerk('find_silver_path_perk').GetName(GetPlayer)], [GetPerk('dream_weaving_perk').GetName(GetPlayer)] o [GetPerk('determinism_perk').GetName(GetPlayer)]."
  seek_knowledge_dream_craft_effects: "Aprenderás la ubicación de un maestro que sabe #TOOLTIP:GAME_TRAIT,art_dream_craft,[GetNullCharacter] #L Dream-Craft#!#!. Después de viajar allí, podrás adquirir el [GetTrait('art_dream_craft').GetName(GetPlayer)] [trait|E], que te permite desbloquear [perks|E] en el #TOOLTIP:GAME_TRAIT,art_dream_craft,[GetNullCharacter] #L Dream-Craft#!#! [lifestyle|E]."
  seek_knowledge_dream_craft_tt: "Seré un escultor de sueños."
  seek_knowledge_dream_craft_planning_title: "La búsqueda de la artesanía de los sueños"
@@ -761,7 +761,7 @@
  seek_knowledge_nei_tan_travel_confirm: "$POD_journey_travel_confirm_seek_knowledge$"
   
  seek_knowledge_lament_name: "Aprende Numina ([GetTrait('lament').GetName(GetNullCharacter)])"
- seek_knowledge_lament_desc: "Un [GetTrait('lament').GetName(GetNullCharacter)] es una técnica que se puede utilizar para separar el espíritu del cuerpo. Un practicante puede entrar en el [underworld|E] y utilizar varias habilidades comúnmente asociadas con los fantasmas, que culminan en poderes como [GetPerk('storm_gloam_perk').GetName(GetPlayer)] o [GetPerk('eschers_corkscrew_perk').GetName(GetPlayer)]."
+ seek_knowledge_lament_desc: "Un [GetTrait('lament').GetName(GetNullCharacter)] es una técnica que se puede utilizar para separar el espíritu del cuerpo. Un practicante puede entrar en el [UmbraGlossaryLocalized('shadowlands','Underworld')] y utilizar varias habilidades comúnmente asociadas con los fantasmas, que culminan en poderes como [GetPerk('storm_gloam_perk').GetName(GetPlayer)] o [GetPerk('eschers_corkscrew_perk').GetName(GetPlayer)]."
  seek_knowledge_lament_effects: "Aprenderás la ubicación de un maestro que conoce a [GetTrait('lament').GetName(GetNullCharacter)]. Después de viajar allí, podrás adquirir el [GetTrait('lament').GetName(GetPlayer)] [trait|E], que te permite desbloquear [perks|E] en el #TOOLTIP:GAME_TRAIT,lament,[GetNullCharacter] #L Horror#!#! [lifestyle|E]."
  seek_knowledge_lament_tt: "Alma y cuerpo, moviéndose en tándem."
  seek_knowledge_lament_planning_title: "La búsqueda de la proyección"
@@ -977,7 +977,7 @@
  # golconda_3_travel_desc: ""
  # golconda_3_travel_confirm: ""
   
- provoke_vatican_warning: "#warning Esta violación sin precedentes de [masquerade|E] tendrá consecuencias enormes que cambiarán el mundo.\n\nSerán [GetTrait('forever_infamous').GetName(GetPlayer)] y [GetModifier( 'prestige_level_0' ).GetNameWithTooltip|L]. Seguramente pasarán a la historia. Casi con toda seguridad, pasarán a la historia, punto.\n\n¿Están dispuestos a correr el riesgo?#!"
+ provoke_vatican_warning: "#warning Esta violación sin precedentes de [the_masquerade|E] tendrá consecuencias enormes que cambiarán el mundo.\n\nSerán [GetTrait('forever_infamous').GetName(GetPlayer)] y [GetModifier( 'prestige_level_0' ).GetNameWithTooltip|L]. Seguramente pasarán a la historia. Casi con toda seguridad, pasarán a la historia, punto.\n\n¿Están dispuestos a correr el riesgo?#!"
   
  provoke_vatican_name: "Revélate al Vaticano"
  provoke_vatican_desc: "Estoy harta de estar siempre acechando en las sombras, siempre acobardada por miedo a los mortales, siempre asegurándome de que nuestra existencia permanezca oculta. ¡Basta ya! Les mostraré que nuestra especie debe ser respetada. Les mostraré a todos..."

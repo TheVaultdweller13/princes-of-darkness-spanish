@@ -461,7 +461,7 @@
  POD_mentoring_disciplines.161.b: "Contratar nuevos."
   
  POD_mentoring_disciplines.170.t: "Ver gente muerta"
- POD_mentoring_disciplines.170.desc: "La nigromancia es la disciplina que intenta comprender, y en ocasiones controlar, la muerte, ya sea física o espiritual. Para aprenderla se requieren algunas prácticas horripilantes, desde acechar cementerios fantasmales hasta intentar comunicarse con los espectros del [underworld|E]. Ya sabes que tus pesadillas en los próximos días estarán llenas de formas fantasmales y otras alucinaciones espectrales."
+ POD_mentoring_disciplines.170.desc: "La nigromancia es la disciplina que intenta comprender, y en ocasiones controlar, la muerte, ya sea física o espiritual. Para aprenderla se requieren algunas prácticas horripilantes, desde acechar cementerios fantasmales hasta intentar comunicarse con los espectros del [UmbraGlossaryLocalized('shadowlands','Underworld')]. Ya sabes que tus pesadillas en los próximos días estarán llenas de formas fantasmales y otras alucinaciones espectrales."
  POD_mentoring_disciplines.170.a: "¿Fantasmas y vampiros?"
  POD_mentoring_disciplines.170.b: "¡No me asustaré!"
   
@@ -616,9 +616,9 @@
  POD_herdify_vampire_interaction: "Añadir al Ganado #weak (Conjura)#!"
  POD_herdify_vampire_interaction_desc: "Conspira para conseguir este Vástago como un recipiente del cual puedas alimentarte con seguridad a voluntad."
   
- POD_ghoul_choose: "Manipular [Ghoul|E]"
- POD_ghoul: "Manipular [Ghoul|E]"
- recipient_secondary_POD_ghoul_choose: "[Ghoul|E] Esclavo"
+ POD_ghoul_choose: "Manipular [ghoul|E]"
+ POD_ghoul: "Manipular [ghoul|E]"
+ recipient_secondary_POD_ghoul_choose: "[ghoul|E] Esclavo"
  POD_ghoul_choose_desc: "Elige qué hacer con tus esclavos [ghoul|E]."
  POD_ghoulthrall_heal_option: "curar esclavo"
  POD_ghoulthrall_goldreward_option: "Recompensa Thrall"
@@ -630,7 +630,7 @@
  POD_ghoulthrall_divorce_option: "Exigir el divorcio"
  POD_ghoulthrall_release_option: "Liberar esclavo"
   
-POD_ghoulify_mortal_interaction_limit: "¡La cantidad de siervos [Ghoul|E] está al límite! (3 más 1 por cada [stewardship_i]#V 8#! de [stewardship|E], más cualquier bonificación de otras fuentes)" 
+POD_ghoulify_mortal_interaction_limit: "¡La cantidad de siervos [ghoul|E] está al límite! (3 más 1 por cada [stewardship_i]#V 8#! de [stewardship|E], más cualquier bonificación de otras fuentes)" 
 POD_ghoulify_mortal_interaction_bp_one: "Los vampiros deben tener una potencia de sangre de al menos uno para crear un [ghoul|E]."
  POD_ghoulify_mortal_interaction: "Crear Ghoul #weak (Conjura) #!"
  POD_ghoulify_mortal_interaction_desc: "Conspira para transformar a este mortal en un esclavo [ghoul|E], un sirviente leal.\nTen en cuenta que los ghouls tienen una resonancia drásticamente reducida y son malos miembros de la manada."
@@ -787,7 +787,7 @@ POD_ghoulify_mortal_interaction_bp_one: "Los vampiros deben tener una potencia d
   
  HAS_HIGH_MASQUERADE_EXPOSURE: "El objetivo tiene una alta exposición a la mascarada."
  POD_enforce_masquerade_interaction: "Imponer la mascarada"
- POD_enforce_masquerade_interaction_desc: "Intenta imponer [masquerade|E] sobre [recipient.GetFirstName]"
+ POD_enforce_masquerade_interaction_desc: "Intenta imponer [the_masquerade|E] sobre [recipient.GetFirstName]"
   
  POD_wisdom_of_hazimel_interaction: "Sabiduría de Hazimel"
  POD_wisdom_of_hazimel_interaction_desc: "Intenta realizar un ritual de sabiduría, al menor costo posible para tu cuerpo."

@@ -76,19 +76,19 @@
  recruit_wyrds_tt: "Puede reclutar a [GetMaA('wyrds').GetName] como [men_at_arms|E]" #NT!
   
  traveling_astral_reaches_modifier: "Viaje al [astral_reaches|E]"
- traveling_spirit_wilds_modifier: "Viaje al [spirit_wilds|E]"
- traveling_underworld_modifier: "Viaje al [underworld|E]"
- traveling_dreaming_modifier: "Viaje al [dreaming|E]"
- traveling_deep_umbra_modifier: "Viaje al [deep_umbra|E]"
+ traveling_spirit_wilds_modifier: "Viaje al [UmbraGlossary('spirit_wilds')]"
+ traveling_underworld_modifier: "Viaje al [UmbraGlossaryLocalized('shadowlands','Underworld')]"
+ traveling_dreaming_modifier: "Viaje al [UmbraGlossary('dreaming')]"
+ traveling_deep_umbra_modifier: "Viaje al [UmbraGlossary('deep_umbra')]"
  trapped_in_paradox_realm_modifier: "Atrapado en el [paradox_realms|E]"
- trapped_in_labyrinth_modifier: "Atrapado en el [labyrinth|E]"
- trapped_in_labyrinth_modifier_desc: "No pudiste orientarte en el sin sentido [labyrinth|E], terminaste en el mismo lugar donde empezaste."
- trapped_in_tempest_modifier: "Atrapado en el [tempest|E]"
- trapped_in_tempest_modifier_desc: "No pudiste orientarte en el siempre cambiante [tempest|E], terminaste en el mismo lugar donde comenzaste."
- trapped_in_malfeas_modifier: "Atrapado en [malfeas|E]" #NT!
+ trapped_in_labyrinth_modifier: "Atrapado en el [UmbraGlossary('pod_realm_labyrinth')]"
+ trapped_in_labyrinth_modifier_desc: "No pudiste orientarte en el sin sentido [UmbraGlossary('pod_realm_labyrinth')], terminaste en el mismo lugar donde empezaste."
+ trapped_in_tempest_modifier: "Atrapado en el [UmbraGlossary('tempest')]"
+ trapped_in_tempest_modifier_desc: "No pudiste orientarte en el siempre cambiante [UmbraGlossary('tempest')], terminaste en el mismo lugar donde comenzaste."
+ trapped_in_malfeas_modifier: "Atrapado en [UmbraGlossary('malfeas')]" #NT!
  trapped_in_abyss_modifier: "Atrapado en el abismo"
  trapped_in_yomi_modifier: "Atrapado en el Yomi"
- trapped_in_arcadia_modifier: "Movido a [arcadia|E]"
+ trapped_in_arcadia_modifier: "Movido a [UmbraGlossary('arcadia')]"
  trapped_in_pattern_web_modifier: "Atrapado en la red de patrones" #NT!
   
  paleontologist_modifier: "Paleontólogo"
@@ -131,7 +131,7 @@
  pegasus_practice_modifier_desc: "Este personaje aprovecha cualquier oportunidad para entrenar a su pegaso."
   
  doomslayer_modifier: "Asesino de la perdición"
- doomslayer_modifier_desc: "Un Doomslayer es un espectro elegido para servir a un grupo especial dedicado a la exploración y la batalla en el [labyrinth|E]. Los Doomslayers pueden tener cualquier cantidad de tareas, desde un simple reconocimiento del [labyrinth|E] hasta capturar un espectro específico."
+ doomslayer_modifier_desc: "Un Doomslayer es un espectro elegido para servir a un grupo especial dedicado a la exploración y la batalla en el [UmbraGlossary('pod_realm_labyrinth')]. Los Doomslayers pueden tener cualquier cantidad de tareas, desde un simple reconocimiento del [UmbraGlossary('pod_realm_labyrinth')] hasta capturar un espectro específico."
   
  umbra_explorer_cost_modifier: "[umbra|E] Salario de Explorador" #NT!
   
@@ -161,14 +161,14 @@
  seat_of_succor_modifier: "Estudiando desde la Sede del Socorro" #NT!
  seat_of_succor_modifier_desc: "El Asiento del Socorro es el palacio de la Dama Sonriente y el cuartel general de la Legión Penitente. Es uno de los pocos palacios que ha sido conquistado por otra Legión, pero muchos afirman que sus debilidades también son sus fortalezas. Existe como una fortificación, pero también es una especie de clínica donde los miembros de la Legión se enfrentan a su locura." #NT!
  seat_of_thorns_modifier: "Estudiando desde el Asiento de Espinas" #NT!
- seat_of_thorns_modifier_desc: "El Asiento de las Espinas es el palacio del Señor Esmeralda y el cuartel general de la Legión Esmeralda. Brilla con el resplandor de miles de cristales de fuego espiritual de color verde brillante en el edificio mismo, lo que lo hace destacar entre los grises y negros lúgubres de Estigia y el [shadowlands|E]. Cada cristal está cargado con suficiente energía para enviar un espectro directamente a un Harrowing. Alrededor de la belleza hay una maraña de espinas sensibles de media milla de espesor que protegen el palacio de los intrusos y forman una gruesa armadura sobre el edificio en caso de un asedio." #NT!
+ seat_of_thorns_modifier_desc: "El Asiento de las Espinas es el palacio del Señor Esmeralda y el cuartel general de la Legión Esmeralda. Brilla con el resplandor de miles de cristales de fuego espiritual de color verde brillante en el edificio mismo, lo que lo hace destacar entre los grises y negros lúgubres de Estigia y el [UmbraGlossary('shadowlands')]. Cada cristal está cargado con suficiente energía para enviar un espectro directamente a un Harrowing. Alrededor de la belleza hay una maraña de espinas sensibles de media milla de espesor que protegen el palacio de los intrusos y forman una gruesa armadura sobre el edificio en caso de un asedio." #NT!
  seat_of_fate_modifier: "Estudiando desde el Asiento del Destino" #NT!
- seat_of_fate_modifier_desc: "La Sede del Destino, una gran mansión de estilo ibérico, logra no obstante permanecer unida a la isla en la que se encuentra. Lo más notable son los árboles que crecen en los numerosos patios del edificio; estos árboles son la única madera que crece en el [dark_kingdom_of_iron|E] y, junto con las cañas a lo largo del [river_of_death|E], son una de las pocas fuentes de papel en el [underworld|E]." #NT!
+ seat_of_fate_modifier_desc: "La Sede del Destino, una gran mansión de estilo ibérico, logra no obstante permanecer unida a la isla en la que se encuentra. Lo más notable son los árboles que crecen en los numerosos patios del edificio; estos árboles son la única madera que crece en el [UmbraGlossary('dark_kingdom_of_iron')] y, junto con las cañas a lo largo del [river_of_death|E], son una de las pocas fuentes de papel en el [UmbraGlossaryLocalized('shadowlands','Underworld')]." #NT!
   
  jade_palace_modifier: "Visitamos el Palacio de Jade" #NT!
- jade_palace_modifier_desc: "El Palacio de Jade es el centro del gobierno imperial en Yellow Springs, ubicado en el corazón de una vorágine perpetua en el [tempest|E]." #NT!
+ jade_palace_modifier_desc: "El Palacio de Jade es el centro del gobierno imperial en Yellow Springs, ubicado en el corazón de una vorágine perpetua en el [UmbraGlossary('tempest')]." #NT!
  memory_tower_modifier: "Visité una Torre de la Memoria" #NT!
- memory_tower_modifier_desc: "Las Torres de Memoria son grandes objetos impenetrables esparcidos por todo el [labyrinth|E]. Los Malfeanos las usan para ocultar información a la Mente Colmena ocultándosela a ellos mismos. Si nadie en la Mente Colmena sabe nada, ese hecho está ausente de la conciencia de toda la Mente Colmena, por lo que el Malfeano puede mantener algo seguro." #NT!
+ memory_tower_modifier_desc: "Las Torres de Memoria son grandes objetos impenetrables esparcidos por todo el [UmbraGlossary('pod_realm_labyrinth')]. Los Malfeanos las usan para ocultar información a la Mente Colmena ocultándosela a ellos mismos. Si nadie en la Mente Colmena sabe nada, ese hecho está ausente de la conciencia de toda la Mente Colmena, por lo que el Malfeano puede mantener algo seguro." #NT!
   
  gods_arrow_modifier: "Siguiendo la flecha de Dios" #NT!
  gods_arrow_modifier_desc: "Muchas Torres de la Memoria contienen tramas, planes y cosas por el estilo, mientras que otras contienen Reliquias que el Malfeano considera demasiado peligrosas o útiles como para permitir que otros las posean o incluso que sepan que existen. La Abuela tiene una Torre de la Memoria que oculta la Flecha de Dios. Los Malfeanos no conocen la naturaleza exacta de la Flecha de Dios, pero sí reconocen que ella no quiere que nadie se acerque a ella.\n#weak Ahora puedes encontrar una misión para la Flecha de Dios al activar un descubrimiento [umbra|E].#!" #NT!

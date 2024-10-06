@@ -40,14 +40,14 @@
  POD_send_to_skinland_character_interaction: "Llamado a Skinlands"
  POD_send_to_skinland_character_interaction_desc: "Llama al [recipient.GetFirstName] al [skinlands|E] para que puedas enviar pedidos al [recipient.GetHerHim]."
  POD_send_to_shadowland_character_interaction: "Enviar a Shadowlands"
- POD_send_to_shadowland_character_interaction_desc: "Envía [recipient.GetFirstName] al [underworld|E] para que puedas dejar de pagar anualmente fuerza de voluntad para mantener a [recipient.GetHerHim] en el mundo mortal."
+ POD_send_to_shadowland_character_interaction_desc: "Envía [recipient.GetFirstName] al [UmbraGlossaryLocalized('shadowlands','Underworld')] para que puedas dejar de pagar anualmente fuerza de voluntad para mantener a [recipient.GetHerHim] en el mundo mortal."
  POD_send_to_dark_kingdom_character_interaction: "Enviar al Reino Oscuro"
  POD_send_to_dark_kingdom_character_interaction_desc: "Envía [recipient.GetFirstName] a cualquier [dark_kingdom|E] para que [recipient.GetFirstName] pueda aprender un nuevo [Arcanoi|E] (con el riesgo de convertirse en un [GetTrait('spectre').GetName( GetNullCharacter )])."
  POD_send_to_dark_kingdom_character_interaction.random.tt: "Como no tienes suficiente conocimiento de [dark_kingdom|E] para saber dónde enviar, [recipient.GetFirstName] tendrá una gran posibilidad de perderse y convertirse en [GetTrait('spectre').GetName( GetNullCharacter )]."
  POD_send_to_yomi_wan_character_interaction: "Enviar a Yomi"
  POD_send_to_yomi_wan_character_interaction_desc: "Envía [recipient.GetFirstName] a [yomi_wan|E] para que [recipient.GetFirstName] pueda regresar como [GetTrait('kueijin').GetName( GetPlayer )]."
  POD_send_to_labyrinth_character_interaction: "Enviar al laberinto"
- POD_send_to_labyrinth_character_interaction_desc: "Envía [recipient.GetFirstName] a [labyrinth|E] para que [recipient.GetFirstName] pueda regresar como [GetModifier('doomslayer_modifier').GetNameWithTooltip]."
+ POD_send_to_labyrinth_character_interaction_desc: "Envía [recipient.GetFirstName] a [UmbraGlossary('pod_realm_labyrinth')] para que [recipient.GetFirstName] pueda regresar como [GetModifier('doomslayer_modifier').GetNameWithTooltip]."
   
  POD_banish_wraith_interaction: "Desterrar espectro"
  POD_banish_wraith_interaction_desc: "Destierra [recipient.GetFirstName] al [dark_kingdom|E]."
@@ -242,10 +242,10 @@
  POD_command_wraith_gift_foolfood_interaction_extra_icon: "$hook_extra_icon$" #NT!
   
  POD_eschers_stair_interaction: "La escalera de Escher"
- POD_eschers_stair_interaction_desc: "Conecta dos puertas u otros portales a través de [labyrinth|E], lo que te permitirá teletransportarte a la ubicación [recipient.GetFirstNamePossessive]."
- fall_into_labyrinth_tooltip: "Estás perdido en el [labyrinth|E]."
+ POD_eschers_stair_interaction_desc: "Conecta dos puertas u otros portales a través de [UmbraGlossary('pod_realm_labyrinth')], lo que te permitirá teletransportarte a la ubicación [recipient.GetFirstNamePossessive]."
+ fall_into_labyrinth_tooltip: "Estás perdido en el [UmbraGlossary('pod_realm_labyrinth')]."
  POD_command_wraith_eschers_stair_interaction: "Escalera de Escher #weak (Comando Espectro)#!"
- POD_command_wraith_eschers_stair_interaction_desc: "Ordena a uno de tus espectros atados que conecte dos puertas u otros portales a través de [labyrinth|E], lo que te permitirá teletransportarte a la ubicación [recipient.GetFirstNamePossessive]."
+ POD_command_wraith_eschers_stair_interaction_desc: "Ordena a uno de tus espectros atados que conecte dos puertas u otros portales a través de [UmbraGlossary('pod_realm_labyrinth')], lo que te permitirá teletransportarte a la ubicación [recipient.GetFirstNamePossessive]."
  actor_secondary_POD_command_wraith_eschers_stair_interaction: "Fantasma"
  POD_command_wraith_eschers_stair_interaction_extra_icon: "$hook_extra_icon$" #NT!
   
@@ -376,7 +376,7 @@
  POD_unleash_maelstrom_interaction_recipient_toast: "Un torbellino de viento se desató en tu capital por [actor.GetFirstName]"
  POD_unleash_maelstrom_interaction_failed_toast: "No podrías liberar un viento vorágine sobre el reino [recipient.GetFirstNamePossessive]"
  maelstrom_winds_modifier: "Dañado por el viento Maelstrom"
- maelstrom_winds_modifier_desc: "Esta área está dañada por un viento maelstrom liberado desde el [tempest|E]."
+ maelstrom_winds_modifier_desc: "Esta área está dañada por un viento maelstrom liberado desde el [UmbraGlossary('tempest')]."
   
  POD_haunted_construction_interaction: "Construcción embrujada"
  POD_haunted_construction_interaction_desc: "Poseer edificios y manipularlos para autoconstruirlos."

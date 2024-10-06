@@ -6,7 +6,7 @@
  POD_hint_masquerade_valid: "#I Haz clic en esta barra para reducir tu [masquerade_exposure_with_icon|E].#!"
  POD_hint_masquerade_invalid_no_masquerade: "#X $no_masquerade$#!"
  POD_hint_masquerade_invalid_cap: "#X $POD_cover_masquerade_interaction_cap$.#!"
- POD_hint_masquerade_invalid_cooldown: "#X La interacción para cubrir [masquerade|E] está actualmente en espera.#!"
+ POD_hint_masquerade_invalid_cooldown: "#X La interacción para cubrir [the_masquerade|E] está actualmente en espera.#!"
   
  POD_hint_chi: "\n\n#I Haz clic en esta barra para mostrar las distintas formas en que puedes regenerar Chi.#!"
  POD_hint_yangvirtue: "\n\nComo tienes [GetPlayer.Custom('PODYangVirtue')], tu Yang Chi no puede superar [GetPlayer.MakeScope.ScriptValue('yang_cap')|V0]."
@@ -82,9 +82,9 @@
  POD_sekhem_window_prisoners_invalid: "#help Actualmente no tienes prisioneros que puedas devorar.#!"
  POD_sekhem_window_prisoners: "Tienes prisioneros.\n#help Quizás puedas devorarlos para recuperar Sekhem.#!"
  POD_sekhem_window_umbra: "[GetPlayer.Custom('PODSekhemHintUmbra')]"
- POD_sekhem_window_umbra_needperk: "Necesitas [underworld_access|E] para llegar al [dark_kingdom_of_sand|E]."
- POD_sekhem_window_umbra_hint: "Puedes regenerar más Sekhem si exploras el [dark_kingdom_of_sand|E] en el [shadowlands|E]."
- POD_sekhem_window_umbra_regen: "Estás regenerando [GetPlayer.MakeScope.ScriptValue('dark_kingdom_of_sand_sekhem_regen')|V0] Sekhem cada 3 meses mientras estés destinado en [dark_kingdom_of_sand|E]."
+ POD_sekhem_window_umbra_needperk: "Necesitas [underworld_access|E] para llegar al [UmbraGlossary('dark_kingdom_of_sand')]."
+ POD_sekhem_window_umbra_hint: "Puedes regenerar más Sekhem si exploras el [UmbraGlossary('dark_kingdom_of_sand')] en el [UmbraGlossary('shadowlands')]."
+ POD_sekhem_window_umbra_regen: "Estás regenerando [GetPlayer.MakeScope.ScriptValue('dark_kingdom_of_sand_sekhem_regen')|V0] Sekhem cada 3 meses mientras estés destinado en [UmbraGlossary('dark_kingdom_of_sand')]."
  POD_sekhem_window_artifacts: "Tienes [artifacts|E] que puede almacenar Sekhem."
   
  POD_resolve_window: "[GetPlayer.Custom('PODResolveHint')]"

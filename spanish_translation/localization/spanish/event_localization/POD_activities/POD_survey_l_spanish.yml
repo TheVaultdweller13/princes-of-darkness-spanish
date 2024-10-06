@@ -122,11 +122,11 @@
  POD_survey_events.12.option.c: "Es hora de reconsiderar tus decisiones de vida."
   
  POD_survey_events.101.t: "La encuesta: regreso sin incidentes"
- POD_survey_events.101.desc: "Después de un pequeño paseo por tu ciudad, regresas a tu refugio sin ningún problema. La actividad nocturna pronto acabará con tu cordura, pero al menos habrá sido refrescante dar un paseo."
+ POD_survey_events.101.desc: "Después de un pequeño paseo por tu ciudad, regresas a tu [ROOT.Char.Custom('PODDomicile')] sin ningún problema. La actividad nocturna pronto acabará con tu cordura, pero al menos habrá sido refrescante dar un paseo."
  POD_survey_events.101.option.a: "Todo salió bien"
   
  POD_survey_events.110.t: "La Encuesta: El Asesino"
- POD_survey_events.110.desc: "Apenas lo ves venir. Mientras regresas a tu refugio, el sonido de una daga desenvainada te hace darte la vuelta, justo a tiempo para ver una figura oscura demasiado cerca de tu cuello para tu comodidad. ¿El agente de un rival? ¿Un rival olvidado hace mucho tiempo? No tienes tiempo para pensarlo mientras tu posible asesino salta hacia ti en un movimiento demasiado rápido para ser el de un simple mortal..."
+ POD_survey_events.110.desc: "Apenas lo ves venir. Mientras regresas a tu [ROOT.Char.Custom('PODDomicile')], el sonido de una daga desenvainada te hace darte la vuelta, justo a tiempo para ver una figura oscura demasiado cerca de tu cuello para tu comodidad. ¿El agente de un rival? ¿Un rival olvidado hace mucho tiempo? No tienes tiempo para pensarlo mientras tu posible asesino salta hacia ti en un movimiento demasiado rápido para ser el de un simple mortal..."
  POD_survey_events.110.option.a: "¡Guardias! ¡A mi!"
  survey_assassin_tooltip: "Tu acompañante completo se encargará de esto."
  POD_survey_events.110.option.b: "Hagámoslo"
@@ -150,7 +150,7 @@
  POD_survey_events.112.option.a: "Mejor que nada"
   
  POD_survey_events.120.t: "La Encuesta: El Incendio"
- POD_survey_events.120.desc: "¿Por qué ahora? ¿Es solo una incompetencia mortal? ¿O un ataque indirecto de uno de tus rivales? No importa quién sea el culpable, un gran incendio ha comenzado a extenderse por tu ciudad y está cerca de rodear tu posición, lo que hace que regresar a tu refugio sea una perspectiva peligrosa. Tu Bestia ya se enfurece dentro de su jaula y corre como loca mientras piensas cuál es la mejor manera de evitar o eliminar a los mortales que gritan y al fuego codicioso. No será fácil."
+ POD_survey_events.120.desc: "¿Por qué ahora? ¿Es solo una incompetencia mortal? ¿O un ataque indirecto de uno de tus rivales? No importa quién sea el culpable, un gran incendio ha comenzado a extenderse por tu ciudad y está cerca de rodear tu posición, lo que hace que regresar a tu [ROOT.Char.Custom('PODDomicile')] sea una perspectiva peligrosa. Tu Bestia ya se enfurece dentro de su jaula y corre como loca mientras piensas cuál es la mejor manera de evitar o eliminar a los mortales que gritan y al fuego codicioso. No será fácil."
  POD_survey_events.120.option.a: "¡Guardias! ¡Abran paso!"
  beast_takeover_survey_tooltip: "Tu Bestia frenética te llevará a un lugar seguro."
  POD_survey_events.120.option.b: "Encontrare una manera..."
@@ -160,7 +160,7 @@
  POD_survey_events.120.option.d: "Deja que la Bestia tome el control"
   
  POD_survey_events.121.t: "La Encuesta: El Fuego II"
- POD_survey_events.121.desc: "Conseguiste evitar lo peor del incendio y los mortales lo están extinguiendo poco a poco. Lamentablemente, tu ruta de escape te ha dejado bastante lejos de tu refugio, demasiado lejos para evitar el sol de la mañana si intentas llegar allí. Como tal, no tienes más remedio que buscar refugio en un lugar indigno hasta que puedas regresar a tu asiento de poder la noche siguiente."
+ POD_survey_events.121.desc: "Conseguiste evitar lo peor del incendio y los mortales lo están extinguiendo poco a poco. Lamentablemente, tu ruta de escape te ha dejado bastante lejos de tu [ROOT.Char.Custom('PODDomicile')], demasiado lejos para evitar el sol de la mañana si intentas llegar allí. Como tal, no tienes más remedio que buscar refugio en un lugar indigno hasta que puedas regresar a tu asiento de poder la noche siguiente."
  POD_survey_events.121.option.a: "¡Es como un viaje de campamento!"
  survey_fire_ending_tooltip: "Regresas a casa la noche siguiente sintiéndote sucio, pero todavía en una pieza."
  POD_survey_events.121.option.b: "Simplemente me fusionaré con la Tierra."
@@ -168,7 +168,7 @@
  POD_survey_events.121.option.c: "Organice un buen alojamiento"
   
  POD_survey_events.130.t: "La Encuesta: Los Cazadores"
- POD_survey_events.130.desc: "¡Una emboscada! En el camino de regreso a tu refugio, un grupo aparentemente bien organizado (e informado) de cazadores de vampiros te ha rodeado. Están bien armados y se acercan con cautela, lo que demuestra que no es su primera cacería. Los mortales no suelen ser una preocupación, pero un grupo así con antorchas, flechas en llamas y probablemente uno o dos verdaderos creyentes es otra historia completamente distinta... Consideras tus opciones."
+ POD_survey_events.130.desc: "¡Una emboscada! En el camino de regreso a tu [ROOT.Char.Custom('PODDomicile')], un grupo aparentemente bien organizado (e informado) de cazadores de vampiros te ha rodeado. Están bien armados y se acercan con cautela, lo que demuestra que no es su primera cacería. Los mortales no suelen ser una preocupación, pero un grupo así con antorchas, flechas en llamas y probablemente uno o dos verdaderos creyentes es otra historia completamente distinta... Consideras tus opciones."
  POD_survey_events.130.option.a: "¡Guardias! ¡Encárguense de ellos!"
  best_bravely_tooltip: "No esperaban que huyeras. Los perderás fácilmente, pero te recordarán."
  POD_survey_events.130.option.b: "¡A la batalla!"
@@ -184,7 +184,7 @@
  POD_survey_events.131.option.c: "Es hora de dar un ejemplo."
   
  POD_survey_events.140.t: "La Encuesta: El Profeta"
- POD_survey_events.140.desc: "Mientras regresas a tu refugio, te acerca un anciano que murmura algo que parece un balbuceo incoherente. Sin embargo, puedes distinguir palabras como "vampiros" y "Dios", que llaman tu atención. Cuando bajas un poco el ritmo, el loco se acerca y comienza a hablar con más entusiasmo que antes. Incluso prestando atención, entender una pizca de lo que está tratando de decir sería toda una hazaña."
+ POD_survey_events.140.desc: "Mientras regresas a tu [ROOT.Char.Custom('PODDomicile')], te acerca un anciano que murmura algo que parece un balbuceo incoherente. Sin embargo, puedes distinguir palabras como "vampiros" y "Dios", que llaman tu atención. Cuando bajas un poco el ritmo, el loco se acerca y comienza a hablar con más entusiasmo que antes. Incluso prestando atención, entender una pizca de lo que está tratando de decir sería toda una hazaña."
  POD_survey_events.140.option.a: "Me quedo un rato y escucho."
  ending_survey_tooltip: "Regresas a casa sin ningún obstáculo más."
  POD_survey_events.140.option.b: "No escucho a ningún loco"

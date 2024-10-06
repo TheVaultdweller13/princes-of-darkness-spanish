@@ -8,7 +8,7 @@
  monthly_arcanoi_lifestyle_xp_gain_mult: "Arcanos mensuales [lifestyle|E] [experience|E]"
   
  thorn_lifestyle_name: "Espina"
- thorn_lifestyle_desc: "Las herramientas que usa la Sombra para obtener el control de Psyche o hacer que Psyche cometa un error y acelere su espiral descendente hacia [oblivion|E]."
+ thorn_lifestyle_desc: "Las herramientas que usa la Sombra para obtener el control de Psyche o hacer que Psyche cometa un error y acelere su espiral descendente hacia [UmbraGlossary('oblivion')]."
  thorn_lifestyle_highlight_desc: "Gracias a tu Catarsis ganas #P 50%#! más [experience|E] en este Estilo de Vida."
  monthly_thorn_lifestyle_xp_gain_mult: "Espina del mes [lifestyle|E] [experience|E]"
   
@@ -18,7 +18,7 @@
  monthly_jade_arcanoi_lifestyle_xp_gain_mult: "Arcanos de Jade Mensuales [lifestyle|E] [experience|E]"
   
  dark_arcanoi_lifestyle_name: "Arcanoi oscuro"
- dark_arcanoi_lifestyle_desc: "Un Arcanos especializado alimentado por Angst y [oblivion|E]."
+ dark_arcanoi_lifestyle_desc: "Un Arcanos especializado alimentado por Angst y [UmbraGlossary('oblivion')]."
  dark_arcanoi_lifestyle_highlight_desc: "Debido a tu casta, ganas #P [GetPlayer.Custom('GetCasteLifestylePercentageBoost')]#! más [experience|E] en este estilo de vida."
  monthly_dark_arcanoi_lifestyle_xp_gain_mult: "Arcanoi oscuros del mes [lifestyle|E] [experience|E]"
   
@@ -29,7 +29,7 @@
   
  arcanos_argos_focus: "Enfoque de Argos"
  arcanos_argos_focus_modifier: "[GetFocus('arcanos_argos_focus').GetName]"
- arcanos_argos_focus_desc: "Manipular, navegar y viajar a través del [tempest|E]."
+ arcanos_argos_focus_desc: "Manipular, navegar y viajar a través del [UmbraGlossary('tempest')]."
  arcanos_argos_focus_effect_desc: "Centrándose en las subvenciones de Argos:"
   
  arcanos_castigate_focus: "Castigar el foco"
@@ -149,12 +149,12 @@
   
  arcanos_contaminate_focus: "Contaminar el foco"
  arcanos_contaminate_focus_modifier: "[GetFocus('arcanos_contaminate_focus').GetName]"
- arcanos_contaminate_focus_desc: "Manipula las sombras de los espectros, acercándolos a [oblivion|E]."
+ arcanos_contaminate_focus_desc: "Manipula las sombras de los espectros, acercándolos a [UmbraGlossary('oblivion')]."
  arcanos_contaminate_focus_effect_desc: "Centrándose en las subvenciones Contaminate:"
   
  arcanos_corruption_focus: "Foco en la corrupción"
  arcanos_corruption_focus_modifier: "[GetFocus('arcanos_corruption_focus').GetName]"
- arcanos_corruption_focus_desc: "Supera la voluntad de uno de los Rápidos, quien luego se acerca a [oblivion|E] a través de las acciones del controlador."
+ arcanos_corruption_focus_desc: "Supera la voluntad de uno de los Rápidos, quien luego se acerca a [UmbraGlossary('oblivion')] a través de las acciones del controlador."
  arcanos_corruption_focus_effect_desc: "Subvenciones centradas en la corrupción:"
   
  arcanos_false_life_focus: "Falso enfoque de vida"
@@ -169,12 +169,12 @@
   
  arcanos_larceny_focus: "Enfoque en el hurto"
  arcanos_larceny_focus_modifier: "[GetFocus('arcanos_larceny_focus').GetName]"
- arcanos_larceny_focus_desc: "Prolonga tu existencia en el [tempest|E] usando [oblivion|E] para fortalecer tu [Corpus|E]."
+ arcanos_larceny_focus_desc: "Prolonga tu existencia en el [UmbraGlossary('tempest')] usando [UmbraGlossary('oblivion')] para fortalecer tu [Corpus|E]."
  arcanos_larceny_focus_effect_desc: "Centrándose en las subvenciones por hurto:"
   
  arcanos_maleficence_focus: "Enfoque en la maleficencia"
  arcanos_maleficence_focus_modifier: "[GetFocus('arcanos_maleficence_focus').GetName]"
- arcanos_maleficence_focus_desc: "Infundir el poder de [oblivion|E] en los seres y permitirles servir a la mente colmena."
+ arcanos_maleficence_focus_desc: "Infundir el poder de [UmbraGlossary('oblivion')] en los seres y permitirles servir a la mente colmena."
  arcanos_maleficence_focus_effect_desc: "Centrándose en las subvenciones de Maleficencia:"
   
  arcanos_shroud_rending_focus: "Enfoque que desgarra el sudario"
@@ -184,7 +184,7 @@
   
  arcanos_tempest_weaving_focus: "Enfoque en el tejido de tempestades"
  arcanos_tempest_weaving_focus_modifier: "[GetFocus('arcanos_tempest_weaving_focus').GetName]"
- arcanos_tempest_weaving_focus_desc: "Manipular el [tempest|E], tanto física como metafísicamente."
+ arcanos_tempest_weaving_focus_desc: "Manipular el [UmbraGlossary('tempest')], tanto física como metafísicamente."
  arcanos_tempest_weaving_focus_effect_desc: "Centrándose en las subvenciones para tejer tempestades:"
   
  arcanos_tempestos_focus: "Enfoque de Tempestos"
@@ -236,7 +236,7 @@
   
  game_concept_dark_arcanoi: "Arcanoi oscuro"
  game_concept_dark_arcanoi_lifestyle: "Arcanoi oscuro"
- game_concept_dark_arcanoi_lifestyle_desc: "El $game_concept_dark_arcanoi_lifestyle$ es adecuado para $POD_splat_wraith_plural$. Un Arcanos Oscuro es un Arcanos especializado alimentado por Angst y [oblivion|E]. Estas habilidades las usan principalmente los Espectros para servir a [oblivion|E] y atormentar tanto a los espectros como a los Rápidos."
+ game_concept_dark_arcanoi_lifestyle_desc: "El $game_concept_dark_arcanoi_lifestyle$ es adecuado para $POD_splat_wraith_plural$. Un Arcanos Oscuro es un Arcanos especializado alimentado por Angst y [UmbraGlossary('oblivion')]. Estas habilidades las usan principalmente los Espectros para servir a [UmbraGlossary('oblivion')] y atormentar tanto a los espectros como a los Rápidos."
   
  game_concept_misc_arcanoi: "Arcanoi varios"
  game_concept_misc_arcanoi_lifestyle: "Arcanoi varios"
@@ -372,14 +372,14 @@
  tempest_riders_canceleer_perk_name: "Cancelador de jinete de tempestad"
  arcanoi_oubliette_perk_name: "Mazmorra secreta"
   
- ENSHROUD_PERK_EFFECT: "Ya no es necesario hacer un sacrificio para acceder al [tempest|E].\n#F Un Heraldo puede manipular la membrana entre el [shadowlands|E] y el [tempest|E], lo que le permite ingresar al [tempest|E] sin abrir un Nihil o usar el [tempest|E] para ocultarse.#!"
- WEATHER_EYE_PERK_EFFECT: "Posibilidad de quedar atrapado en la Umbra: #P -5%#!\nMonthly Progreso de exploración de la Umbra: [grace_i]#P +5#!\n#F Un Heraldo siempre está al tanto de las condiciones actuales en las [tempest|E] ubicaciones cercanas y puede tomar atajos entre dos [shadowlands|E] ubicaciones.#!"
- PHANTOM_WINGS_PERK_EFFECT: "Posibilidad de quedar atrapado en la Umbra: #P -5%#!\nMonthly Progreso de exploración de la Umbra: [grace_i]#P +5#!\n#F Un Heraldo puede desarrollar alas para planear a través de [tempest|E] y [shadowlands|E].#!"
- RETURN_PERK_EFFECT: "Puede acceder al [dark_kingdom|E] correspondiente en el [tempest|E].\n#F Un Heraldo puede viajar desde cualquier lugar en el [tempest|E] hasta su hogar por la ruta más rápida posible.#!"
- FLICKER_PERK_EFFECT: "Posibilidad de quedar atrapado en la Umbra: #P -10%#!\nMonthly Progreso de la exploración de la Umbra: [grace_i]#P +10#!\n#F Un Heraldo puede doblar el [tempest|E] para teletransportarse a otra ubicación.#!"
- STORMREADER_PERK_EFFECT: "Ya no te perderás en [tempest|E].\n#F Un Heraldo obtiene un sentido intuitivo de [tempest|E], lo que le permite reducir los tiempos de viaje cuando viaja hacia o desde una ubicación en [tempest|E], y navegar para evita una vorágine o mitiga sus efectos.#!"
+ ENSHROUD_PERK_EFFECT: "Ya no es necesario hacer un sacrificio para acceder al [UmbraGlossary('tempest')].\n#F Un Heraldo puede manipular la membrana entre el [UmbraGlossary('shadowlands')] y el [UmbraGlossary('tempest')], lo que le permite ingresar al [UmbraGlossary('tempest')] sin abrir un Nihil o usar el [UmbraGlossary('tempest')] para ocultarse.#!"
+ WEATHER_EYE_PERK_EFFECT: "Posibilidad de quedar atrapado en la Umbra: #P -5%#!\nMonthly Progreso de exploración de la Umbra: [grace_i]#P +5#!\n#F Un Heraldo siempre está al tanto de las condiciones actuales en las [UmbraGlossary('tempest')] ubicaciones cercanas y puede tomar atajos entre dos [UmbraGlossary('shadowlands')] ubicaciones.#!"
+ PHANTOM_WINGS_PERK_EFFECT: "Posibilidad de quedar atrapado en la Umbra: #P -5%#!\nMonthly Progreso de exploración de la Umbra: [grace_i]#P +5#!\n#F Un Heraldo puede desarrollar alas para planear a través de [UmbraGlossary('tempest')] y [UmbraGlossary('shadowlands')].#!"
+ RETURN_PERK_EFFECT: "Puede acceder al [dark_kingdom|E] correspondiente en el [UmbraGlossary('tempest')].\n#F Un Heraldo puede viajar desde cualquier lugar en el [UmbraGlossary('tempest')] hasta su hogar por la ruta más rápida posible.#!"
+ FLICKER_PERK_EFFECT: "Posibilidad de quedar atrapado en la Umbra: #P -10%#!\nMonthly Progreso de la exploración de la Umbra: [grace_i]#P +10#!\n#F Un Heraldo puede doblar el [UmbraGlossary('tempest')] para teletransportarse a otra ubicación.#!"
+ STORMREADER_PERK_EFFECT: "Ya no te perderás en [UmbraGlossary('tempest')].\n#F Un Heraldo obtiene un sentido intuitivo de [UmbraGlossary('tempest')], lo que le permite reducir los tiempos de viaje cuando viaja hacia o desde una ubicación en [UmbraGlossary('tempest')], y navegar para evita una vorágine o mitiga sus efectos.#!"
  TEMPEST_RIDERS_CANCELEER_PERK_EFFECT: "#F Un Heraldo puede desarrollar alas negras metálicas, lo que le permite planear, atacar y proteger a otros.#!"
- ARCANOI_OUBLIETTE_PERK_EFFECT: "Desbloquea la opción $EXECUTION_BANISH_TO_TEMPEST$ [execution|E] para el prisionero [GetTrait('wraith').GetName( GetNullCharacter )].\n#F Un Heraldo puede enviar otro espectro directamente al [tempest|E].#!"
+ ARCANOI_OUBLIETTE_PERK_EFFECT: "Desbloquea la opción $EXECUTION_BANISH_TO_TEMPEST$ [execution|E] para el prisionero [GetTrait('wraith').GetName( GetNullCharacter )].\n#F Un Heraldo puede enviar otro espectro directamente al [UmbraGlossary('tempest')].#!"
   
   # Castigate 
  castigate_visible: "Castigar"
@@ -412,14 +412,14 @@
  materialize_perk_name: "Materializar"
  harrow_the_mortal_flesh_perk_name: "Desgarrar la carne mortal"
   
- WHISPERS_PERK_EFFECT: "Permite interactuar con el [skinlands|E] mientras permaneces en [shadowlands|E].\n#F Un Proctor puede susurrar a través del Sudario.#!"
+ WHISPERS_PERK_EFFECT: "Permite interactuar con el [skinlands|E] mientras permaneces en [UmbraGlossary('shadowlands')].\n#F Un Proctor puede susurrar a través del Sudario.#!"
  CACHE_PERK_EFFECT: "Permitir regalar [artifact|E] y oro al Rápido del [skinlands|E].\n#F Un supervisor puede mover temporalmente una reliquia al [skinlands|E].#!"
  PHANTOM_PERK_EFFECT: "#F Un Proctor puede materializarse en una forma borrosa e intangible.#!"
- STATUE_PERK_EFFECT: "Permite que el Quick interactúe con él mientras permanece en el [shadowlands|E].\n#F Un Proctor puede materializarse en una forma sólida, pero no puede moverse mientras está en ella.#!"
+ STATUE_PERK_EFFECT: "Permite que el Quick interactúe con él mientras permanece en el [UmbraGlossary('shadowlands')].\n#F Un Proctor puede materializarse en una forma sólida, pero no puede moverse mientras está en ella.#!"
  LIFE_IN_DEATH_PERK_EFFECT: "#F Un Proctor puede materializarse como una versión aceptable de una persona viva.#!"
  SHROUDGUIDE_PERK_EFFECT: "Puede reclutar a [GetMaA('wraiths').GetName] como [men_at_arms|E].\n#F Un Proctor puede compartir los efectos de las artes de Encarnar que permiten la manifestación en [skinlands|E] con otros espectros.#!"
  MATERIALIZE_PERK_EFFECT: "Desbloquea [GetActivityType('activity_feast').GetName] [activity|E].\n#F Un Proctor puede regresar temporalmente a un estado similar a la vida.#!"
- HARROW_THE_MORTAL_FLESH_PERK_EFFECT: "Permite regalar títulos a otros sobrenaturales.\n#F Un Proctor puede traer a un mortal u otro sobrenatural al [shadowlands|E].#!"
+ HARROW_THE_MORTAL_FLESH_PERK_EFFECT: "Permite regalar títulos a otros sobrenaturales.\n#F Un Proctor puede traer a un mortal u otro sobrenatural al [UmbraGlossary('shadowlands')].#!"
   
   # Fatalism 
  fatalism_visible: "Fatalismo"
@@ -540,9 +540,9 @@
  BREATH_OF_THE_GRAVE_PERK_EFFECT: "#F El Espectro crea una pequeña brisa helada a través del Sudario.#!"
  STONEHAND_PUNCH_PERK_EFFECT: "#F Un Espectro puede aplastar a un objetivo con fuerza emocional pura.#!"
  WINGS_OF_RAGE_PERK_EFFECT: "#F Un Spook puede aumentar sus habilidades atléticas y su velocidad.#!"
- DEATHS_TOUCH_PERK_EFFECT: "Puedes lastimar al Rápido con movimientos físicos en [single_combat_duel|E].\n#F Un Spook puede manipular libremente objetos en [skinlands|E] y proyectar telequinéticamente sus manos en [underworld|E].#!"
+ DEATHS_TOUCH_PERK_EFFECT: "Puedes lastimar al Rápido con movimientos físicos en [single_combat_duel|E].\n#F Un Spook puede manipular libremente objetos en [skinlands|E] y proyectar telequinéticamente sus manos en [UmbraGlossaryLocalized('shadowlands','Underworld')].#!"
  SHROUDSHIELD_PERK_EFFECT: "Permite viajar a [skinlands|E].\n#F Un Espectro puede lanzarse a través del Sudario a la misma velocidad que un proyectil.#!"
- OBLIVIATE_PERK_EFFECT: "Desbloquea la opción $EXECUTION_UNMAKING$ [execution|E].\nPermite recibir [artifact|E] del Rápido del [skinlands|E].\n#F Un Espectro puede dañar a un mortal, espectro o cosa tan gravemente que cae directamente a [oblivion|E]. Cuando se usa en un objeto material habitado por un espectro, se convierte en una reliquia.#!"
+ OBLIVIATE_PERK_EFFECT: "Desbloquea la opción $EXECUTION_UNMAKING$ [execution|E].\nPermite recibir [artifact|E] del Rápido del [skinlands|E].\n#F Un Espectro puede dañar a un mortal, espectro o cosa tan gravemente que cae directamente a [UmbraGlossary('oblivion')]. Cuando se usa en un objeto material habitado por un espectro, se convierte en una reliquia.#!"
  ANGER_ENOUGH_FOR_TWO_WORLDS_PERK_EFFECT: "Desbloquea la opción Derribar el Sudario en la opción Manipular el Sudario del panel de Umbra local.\n#F Un Espectro puede derribar temporalmente el Sudario, con consecuencias potencialmente devastadoras.#!"
   
   # Pandemonium 
@@ -561,7 +561,7 @@
  WEIRDNESS_PERK_EFFECT: "Desbloquea Haunt [character_interaction|E], que le otorga al objetivo un modificador negativo.\n#F Un Haunter puede causar un efecto pequeño y limitado en un objetivo solitario.#!"
  BITE_ME_PERK_EFFECT: "Permitir crear y regalar [GetModifier('foul_food_moifier').GetNameWithTooltip].\n#F Un Haunter puede crear comida de aspecto realista (pero de sabor desagradable) con su [Corpus|E].#!"
  DARK_ETHER_PERK_EFFECT: "Otorga un modificador de [GetModifier('dark_ether_modifier').GetNameWithTooltip] al enemigo [knights|E] en la guerra como comandante o al enemigo en [single_combat_duel|E].\n#F Un Haunter puede alterar la luz o las condiciones climáticas en un área.#!"
- ESCHERS_STAIR_PERK_EFFECT: "Como [character_interaction|E], te permite teletransportar a tu ejército a la ubicación de tu objetivo, con el riesgo de perderte en el [labyrinth|E].\n#F Un Haunter puede conectar dos puertas u otros portales a través del [labyrinth|E].#!"
+ ESCHERS_STAIR_PERK_EFFECT: "Como [character_interaction|E], te permite teletransportar a tu ejército a la ubicación de tu objetivo, con el riesgo de perderte en el [UmbraGlossary('pod_realm_labyrinth')].\n#F Un Haunter puede conectar dos puertas u otros portales a través del [UmbraGlossary('pod_realm_labyrinth')].#!"
  FOUL_HUMOUR_PERK_EFFECT: "Dale a un aliado [knights|E] en la guerra como comandante o a ti mismo [single_combat_duel|E] [GetModifier('foul_humour_modifier').GetNameWithTooltip] en la guerra como comandante.\n#F Un Haunter puede producir un efecto material fuerte a través del Sudario.#!"
  STIGMATA_PERK_EFFECT: "#F Un Haunter puede crear la apariencia de heridas sangrantes en su objetivo.#!"
  FORM_OF_CHAOS_PERK_EFFECT: "Permite fabricar un personaje [GetTrait('automaton').GetName( GetPlayer )].\n#F Un Haunter puede crear una forma humanoide tosca a partir de lo que parecen ser objetos repugnantes (como sangre, gusanos, insectos, etc.)#!"
@@ -658,7 +658,7 @@
  DARK_ALLIES_PERK_EFFECT: "Gana [GetModifier('dark_allies_modifier').GetNameWithTooltip] durante [GetModifier('catharsis_modifier').GetNameWithTooltip].\n#F La Sombra del personaje se comunica regularmente con Espectros específicos y puede invocarlos para pedir ayuda.#!"
  TAINTED_RELIC_PERK_EFFECT: "Como [character_interaction|E], te permite crear un artefacto personalizado durante el [GetModifier('catharsis_modifier').GetNameWithTooltip].\n#F La Sombra tiene una reliquia importante que se manifiesta cuando está en control: un arma o algún otro elemento útil.#!"
  INFAMY_PERK_EFFECT: "Gana [GetModifier('infamy_modifier').GetNameWithTooltip] durante el [GetModifier('catharsis_modifier').GetNameWithTooltip].\n#F Memoria de la Sombra, la infamia es la medida de cuánto miedo y odio el espectro todavía inspira en los vivos.#!"
- DEATHS_SIGIL_PERK_EFFECT: "Gana un modificador [GetModifier('deaths_sigil_modifier').GetNameWithTooltip] cuando no estás en [GetModifier('catharsis_modifier').GetNameWithTooltip].\n#F El Sello de la Muerte es un signo prominente del toque de [oblivion|E] en el personaje que se manifiesta sin importar a dónde vaya.#!"
+ DEATHS_SIGIL_PERK_EFFECT: "Gana un modificador [GetModifier('deaths_sigil_modifier').GetNameWithTooltip] cuando no estás en [GetModifier('catharsis_modifier').GetNameWithTooltip].\n#F El Sello de la Muerte es un signo prominente del toque de [UmbraGlossary('oblivion')] en el personaje que se manifiesta sin importar a dónde vaya.#!"
  SHADOW_TRAITS_PERK_EFFECT: "Gana [GetModifier('shadow_traits_modifier').GetNameWithTooltip] durante [GetModifier('catharsis_modifier').GetNameWithTooltip].\n#F La Sombra puede comprar Habilidad, pero estas Habilidades adicionales solo están disponibles durante la Catarsis.#!"
  NIGHTMARES_PERK_EFFECT: "Gana #N 40#! [stress|E] cada año durante el [GetTrait('torpor').GetName( GetPlayer )].\n#F Cuando la Psique Duerme, una Sombra con esta Espina puede hacer que tenga intensas pesadillas.#!"
  AURA_OF_CORRUPTION_PERK_EFFECT: "Obtienes un modificador de [GetModifier('aura_of_corruption_modifier').GetNameWithTooltip] cuando no estás en [GetModifier('catharsis_modifier').GetNameWithTooltip].\n#F A través de los efectos de esta Espina, la Sombra de alguna manera contamina la presentación que el espectro hace de sí mismo, haciendo que su presencia sea desagradable para otros espectros.#!"
@@ -693,7 +693,7 @@
  ROT_PERK_EFFECT: "#F Un alquimista puede hacer que un objeto pequeño e inerte envejezca rápidamente.#!"
  STRENGTHEN_PERK_EFFECT: "#F Un alquimista puede mejorar la estructura misma de un objeto.#!"
  NON_EUCLIDEAN_MECHANICS_PERK_EFFECT: "#F Un alquimista puede reparar o mejorar una reliquia tecnológica.#!"
- RELIC_DOWSING_PERK_EFFECT: "Gana automáticamente una pieza de artefacto cada #V 5#! años.\n#F Un alquimista puede encontrar reliquias recién formadas en [shadowlands|E].#!"
+ RELIC_DOWSING_PERK_EFFECT: "Gana automáticamente una pieza de artefacto cada #V 5#! años.\n#F Un alquimista puede encontrar reliquias recién formadas en [UmbraGlossary('shadowlands')].#!"
  PUPPET_THEATER_PERK_EFFECT: "#F Un alquimista puede animar varios objetos pequeños a la vez.#!"
  RENDER_RELIC_PERK_EFFECT: "Como [character_interaction|E], te permite destruir un artefacto para obtener Pathos.\n#F Un alquimista puede convertir una reliquia en las emociones que la crearon para proporcionar Pathos, destruyéndola en el proceso.#!"
  AUTOMATON_PERK_EFFECT: "Como [character_interaction|E], te permite obtener estadísticas temporales de tu artefacto equipado.\n#F Un alquimista puede juntar objetos para formar un cuerpo.#!"
@@ -915,8 +915,8 @@
  STEAL_CORPUS_PERK_EFFECT: "#F Esto permite que un Espectro robe [Corpus|E] de otro espectro o espectro.#!"
  EMOTIONAL_INFECTION_PERK_EFFECT: "#F Un Espectro puede implantar Pasiones Oscuras en las mentes de los demás.#!"
  SAVOR_AGONY_PERK_EFFECT: "#F Un Espectro puede obtener Angustia al infligir daño agravado a otra criatura.#!"
- WITHSTAND_OBLIVION_PERK_EFFECT: "#F Un Espectro puede curar el daño infligido por el propio [oblivion|E].#!"
- DEFY_OBLIVION_PERK_EFFECT: "#F El Espectro puede transferir el [oblivion|E] dentro de sí mismo a otro ser.#!"
+ WITHSTAND_OBLIVION_PERK_EFFECT: "#F Un Espectro puede curar el daño infligido por el propio [UmbraGlossary('oblivion')].#!"
+ DEFY_OBLIVION_PERK_EFFECT: "#F El Espectro puede transferir el [UmbraGlossary('oblivion')] dentro de sí mismo a otro ser.#!"
   
   # Maleficence 
  maleficence_visible: "Maleficencia"
@@ -931,7 +931,7 @@
  BENEFICE_PERK_EFFECT: "#F Un Espectro puede invertirse en un Rápido para obtener poderes Espectrales.#!"
  INVESTITURE_PERK_EFFECT: "#F Un Espectro hace que el espíritu de un mortal se descomponga, dándole temporalmente poderes sobrenaturales.#!"
  DISCIPLINE_PERK_EFFECT: "#F Esto permite que un Espectro inflija un dolor severo a un objetivo en el que ha implantado su Ser.#!"
- ARCANOI_CONVERSION_PERK_EFFECT: "#F El Espectro puede transmitir la sensación misma de [oblivion|E] a la audiencia.#!"
+ ARCANOI_CONVERSION_PERK_EFFECT: "#F El Espectro puede transmitir la sensación misma de [UmbraGlossary('oblivion')] a la audiencia.#!"
   
   # Shroud-Rending 
  shroud_rending_visible: "Desgarro del sudario"
@@ -947,7 +947,7 @@
  THRESHOLD_PERK_EFFECT: "#F Un Espectro puede ver imágenes oscurecidas a través del Sudario.#!"
  ECHOES_PERK_EFFECT: "#F Esto permite que un Espectro vea a través del Sudario.#!"
  FLEETING_GLIMPSES_PERK_EFFECT: "#F Un Espectro puede ver claramente un área del [skinlands|E].#!"
- NIGHTMARE_PERK_EFFECT: "#F Un Espectro rasga el Sudario que cubre a un mortal dormido, lo que le permite a [oblivion|E] influir en sus sueños.#!"
+ NIGHTMARE_PERK_EFFECT: "#F Un Espectro rasga el Sudario que cubre a un mortal dormido, lo que le permite a [UmbraGlossary('oblivion')] influir en sus sueños.#!"
  VIRTUALITY_PERK_EFFECT: "#F Los eventos que suceden en el [skinlands|E] ahora se pueden ver y escuchar con claridad.#!"
  LURKING_PRESENCE_PERK_EFFECT: "#F Similar a Pesadilla, pero se puede usar en mortales que estén despiertos.#!"
  TRANSPARENT_MEMORIES_PERK_EFFECT: "#F El Espectro puede usar todos sus sentidos a través del Sudario.#!"
@@ -961,11 +961,11 @@
  favored_flotsom_perk_name: "Flotsom favorito"
  carve_the_chaos_perk_name: "Talla el caos"
   
- WORMHOLE_PERK_EFFECT: "#F Esto permite que un Espectro use nihils para viajar entre [tempest|E] y [shadowlands|E].#!"
+ WORMHOLE_PERK_EFFECT: "#F Esto permite que un Espectro use nihils para viajar entre [UmbraGlossary('tempest')] y [UmbraGlossary('shadowlands')].#!"
  RIDE_THE_SOUL_STORM_PERK_EFFECT: "#F Un Espectro puede aprovechar los vientos de un Maelstrom para viajar.#!"
- GRASP_THE_PASSING_PERK_EFFECT: "#F Un Espectro puede sacar un objeto aleatorio, incluidos recuerdos, del [tempest|E].#!"
+ GRASP_THE_PASSING_PERK_EFFECT: "#F Un Espectro puede sacar un objeto aleatorio, incluidos recuerdos, del [UmbraGlossary('tempest')].#!"
  FAVORED_FLOTSOM_PERK_EFFECT: "#F Similar a Grasp the Passing, excepto que un Espectro puede influenciar el objeto extraído para que le resulte útil.#!"
- CARVE_THE_CHAOS_PERK_EFFECT: "#F El Espectro puede moldear al [tempest|E] en la forma que desee, como crear "conjuntos" para Harrowings.#!"
+ CARVE_THE_CHAOS_PERK_EFFECT: "#F El Espectro puede moldear al [UmbraGlossary('tempest')] en la forma que desee, como crear "conjuntos" para Harrowings.#!"
   
   # Tempestos 
  tempestos_visible: "Tempestades"
@@ -976,10 +976,10 @@
  tempest_fury_perk_name: "Furia de tempestad"
  maelstrom_cauldron_perk_name: "Caldero del Maelstrom"
   
- STORM_SEEKER_PERK_EFFECT: "#F Esto permite que un Espectro quede a la deriva en el [tempest|E] y lo atraiga a la tormenta más cercana.#!"
+ STORM_SEEKER_PERK_EFFECT: "#F Esto permite que un Espectro quede a la deriva en el [UmbraGlossary('tempest')] y lo atraiga a la tormenta más cercana.#!"
  RIDE_THE_NIGHTWIND_PERK_EFFECT: "#F Un Espectro puede volar a la misma velocidad y dirección que los vientos del Maelstrom.#!"
  DUST_DEVIL_PERK_EFFECT: "#F Un espectro puede provocar tormentas menores y Nihils para usarlos como propulsión.#!"
- TEMPEST_FURY_PERK_EFFECT: "#F Los espectros pueden invocar el poder de [tempest|E] para provocar destrucción de forma limitada.#!"
+ TEMPEST_FURY_PERK_EFFECT: "#F Los espectros pueden invocar el poder de [UmbraGlossary('tempest')] para provocar destrucción de forma limitada.#!"
  MAELSTROM_CAULDRON_PERK_EFFECT: "#F El Espectro puede invocar un Maelstrom localizado con toda su potencia.#!"
   
   # Fascinate 

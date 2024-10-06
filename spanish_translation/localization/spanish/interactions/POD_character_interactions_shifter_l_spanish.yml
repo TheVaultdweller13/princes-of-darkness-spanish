@@ -534,7 +534,7 @@
   
   
  POD_ask_spirit_send_to_spirit_wilds_interaction: "Enviar a Spirit Wilds" #NT!
- POD_ask_spirit_send_to_spirit_wilds_interaction_desc: "Pídele a [recipient.GetFirstName] que vaya al [spirit_wilds|E] para aprender nuevo [charm|E]." #NT!
+ POD_ask_spirit_send_to_spirit_wilds_interaction_desc: "Pídele a [recipient.GetFirstName] que vaya al [UmbraGlossary('spirit_wilds')] para aprender nuevo [charm|E]." #NT!
   
  actor_secondary_POD_ask_spirit_absorb_fetish_interaction: "Espíritu" #NT!
  actor_secondary_POD_ask_spirit_acquisition_interaction: "Espíritu" #NT!
@@ -602,9 +602,9 @@
  POD_charm_shapeshift_interaction: "Cambio de forma" #NT!
  POD_charm_shapeshift_interaction_desc: "Usa tu poder para cambiar de forma." #NT!
  POD_spirit_away_interaction: "Desaparecer misteriosamente" #NT!
- POD_spirit_away_interaction_desc: "Lleva [recipient.GetFirstNamePossessive] al [yomi|E]." #NT!
+ POD_spirit_away_interaction_desc: "Lleva [recipient.GetFirstNamePossessive] al [UmbraGlossaryLocalized('yomi_wan','Yomi')]." #NT!
  POD_ask_spirit_spirit_away_interaction: "Espíritu ausente #weak (Pregúntale al Espíritu)#!" #NT!
- POD_ask_spirit_spirit_away_interaction_desc: "Pídele a un compañero espiritual que lleve a [recipient.GetFirstNamePossessive] al [yomi|E]." #NT!
+ POD_ask_spirit_spirit_away_interaction_desc: "Pídele a un compañero espiritual que lleve a [recipient.GetFirstNamePossessive] al [UmbraGlossaryLocalized('yomi_wan','Yomi')]." #NT!
   
  POD_call_fenris_to_war_interaction: "Llama al Gran Fenris" #NT!
  POD_call_fenris_to_war_interaction_desc: "Llama al Gran Fenris a la guerra." #NT!

@@ -1,11 +1,17 @@
 ﻿l_spanish:
   #Vampire Perk Removal 
  animal_perk_removal_decision: "Canaliza el poder de la sangre animal"
- animal_perk_removal_decision_desc: "Canaliza tu exceso de resonancia en poder adicional por un tiempo (Advertencia: esto se utiliza mejor después de haber adquirido todas las habilidades animales o ya no desea adquirir ninguna de dichas habilidades, la bonificación no se acumulará)."
+ animal_perk_removal_decision_desc: "Canaliza tu resonancia excesiva en poder adicional por un tiempo #N (Advertencia: esto es mejor utilizarlo después de haber adquirido todas las habilidades animales o si ya no deseas adquirir más de dichas habilidades, el bono no se acumulará)." 
  animal_perk_removal_decision_tooltip: "Tu poder no tiene límites."
  animal_perk_removal_decision_confirm: "Canaliza tu animal interior"
   
  animal_perk_removal_decision_custom: "Pierdes #V 1#! [animal_lifestyle|E] [perk|E] Desbloquear"
+
+ undo_animal_perk_removal_decision: "Nuevas Técnicas Animales"
+ undo_animal_perk_removal_decision_desc: "¿Algo nuevo que aprender?"
+ undo_animal_perk_removal_decision_tooltip: "Es hora de probar los límites de lo posible"
+ undo_animal_perk_removal_decision_custom: "Ahora puedes ganar experiencia animal nuevamente"
+ undo_animal_perk_removal_decision_confirm: "Es hora de reconsiderar las limitaciones de lo posible"
   
  excessive_animal_modifier: "Sangre animal canalizada"
  excessive_animal_modifier_desc: "Sería una gran exhibición para el zoológico."
@@ -26,6 +32,12 @@
  melancholy_perk_removal_decision_confirm: "Canaliza tu tristeza interior"
   
  melancholy_perk_removal_decision_custom: "Pierdes #V 1#! [melancholy_lifestyle|E] [perk|E] Desbloquear"
+
+ undo_melancholy_perk_removal_decision: "Nuevas Técnicas de Melancolía"
+ undo_melancholy_perk_removal_decision_desc: "¿Algo nuevo que aprender?"
+ undo_melancholy_perk_removal_decision_tooltip: "Es hora de probar los límites de lo posible"
+ undo_melancholy_perk_removal_decision_custom: "Ahora puedes ganar experiencia en melancolía nuevamente"
+ undo_melancholy_perk_removal_decision_confirm: "Es hora de reconsiderar las limitaciones de lo posible"
   
  excessive_melancholy_modifier: "Sangre melancólica canalizada"
  excessive_melancholy_modifier_desc: "Eres desapasionadamente melancólico."
@@ -36,6 +48,13 @@
  phlegmatic_perk_removal_decision_confirm: "Canaliza tu compostura interior"
   
  phlegmatic_perk_removal_decision_custom: "Pierdes #V 1#! [phlegmatic_lifestyle|E] [perk|E] Desbloquear"
+
+ undo_phlegmatic_perk_removal_decision: "Nuevas Técnicas Flemáticas"
+ undo_phlegmatic_perk_removal_decision_desc: "¿Algo nuevo que aprender?"
+ undo_phlegmatic_perk_removal_decision_tooltip: "Es hora de probar los límites de lo posible"
+ undo_phlegmatic_perk_removal_decision_custom: "Ahora puedes ganar experiencia en flema nuevamente"
+ undo_phlegmatic_perk_removal_decision_confirm: "Es hora de reconsiderar las limitaciones de lo posible"
+
   
  excessive_phlegmatic_modifier: "Sangre Flemática Canalizada"
  excessive_phlegmatic_modifier_desc: "Estás imperturbable, absolutamente imperturbable."
@@ -46,6 +65,12 @@
  sanguine_perk_removal_decision_confirm: "Canaliza tu encanto interior"
   
  sanguine_perk_removal_decision_custom: "Pierdes #V 1#! [sanguine_lifestyle|E] [perk|E] Desbloquear"
+
+ undo_sanguine_perk_removal_decision: "Nuevas Técnicas Sanguíneas"
+ undo_sanguine_perk_removal_decision_desc: "¿Algo nuevo que aprender?"
+ undo_sanguine_perk_removal_decision_tooltip: "Es hora de probar los límites de lo posible"
+ undo_sanguine_perk_removal_decision_custom: "Ahora puedes ganar experiencia en sangre nuevamente"
+ undo_sanguine_perk_removal_decision_confirm: "Es hora de reconsiderar las limitaciones de lo posible"
   
  excessive_sanguine_modifier: "Sangre sanguínea canalizada"
  excessive_sanguine_modifier_desc: "Tu encanto no tiene límites."
@@ -70,11 +95,17 @@
   
   #Generic Perk Removal 
  diplomacy_perk_removal_decision: "Diplomáticamente ilustrado"
- diplomacy_perk_removal_decision_desc: "Utilice su iluminación para ir más allá de los límites regulares de lo posible (este bono no se acumulará)."
+ diplomacy_perk_removal_decision_desc: "Utiliza tu iluminación para superar los límites normales de lo posible #N (Advertencia: es mejor usarlo después de haber adquirido todas las habilidades sanguíneas o si ya no deseas adquirir más de dichas habilidades, el bono no se acumulará)."
  diplomacy_perk_removal_decision_tooltip: "Tus habilidades no tienen límites"
  diplomacy_perk_removal_decision_confirm: "Aprovecha los beneficios de la iluminación"
   
  diplomacy_perk_removal_decision_custom: "Pierdes #V 1#! [diplomacy_lifestyle|E] [perk|E] Desbloquear"
+
+ undo_diplomacy_perk_removal_decision: "Nuevas Técnicas Diplomáticas"
+ undo_diplomacy_perk_removal_decision_desc: "¿Algo nuevo por aprender?"
+ undo_diplomacy_perk_removal_decision_tooltip: "Es hora de probar los límites de lo que es posible"
+ undo_diplomacy_perk_removal_decision_custom: "Ahora puedes ganar experiencia en diplomacia nuevamente"
+ undo_diplomacy_perk_removal_decision_confirm: "Es hora de reconsiderar las limitaciones de lo que es posible"
   
  diplomatically_enlightened_modifier: "Diplomáticamente ilustrado"
  diplomatically_enlightened_modifier_desc: "Tu etiqueta está más allá de todo reproche."
@@ -85,6 +116,12 @@
  martial_perk_removal_decision_confirm: "Coseche los beneficios de la iluminación"
   
  martial_perk_removal_decision_custom: "Pierdes #V 1#! [martial_lifestyle|E] [perk|E] Desbloquear"
+
+ undo_martial_perk_removal_decision: "Nuevas Técnicas Marciales"
+ undo_martial_perk_removal_decision_desc: "¿Algo nuevo por aprender?"
+ undo_martial_perk_removal_decision_tooltip: "Es hora de probar los límites de lo que es posible"
+ undo_martial_perk_removal_decision_custom: "Ahora puedes ganar experiencia en artes marciales nuevamente"
+ undo_martial_perk_removal_decision_confirm: "Es hora de reconsiderar las limitaciones de lo que es posible"
   
  martially_enlightened_modifier: "Iluminado marcialmente"
  martially_enlightened_modifier_desc: "Sun Tzu tiene una cosa o dos que aprender de ti"
@@ -95,16 +132,28 @@
  stewardship_perk_removal_decision_confirm: "Coseche los beneficios de la iluminación"
   
  stewardship_perk_removal_decision_custom: "Pierdes #V 1#! [stewardship_lifestyle|E] [perk|E] Desbloquear"
+
+ undo_stewardship_perk_removal_decision: "N nuevas Técnicas de Administración"
+ undo_stewardship_perk_removal_decision_desc: "¿Algo nuevo por aprender?"
+ undo_stewardship_perk_removal_decision_tooltip: "Es hora de probar los límites de lo que es posible"
+ undo_stewardship_perk_removal_decision_custom: "Ahora puedes ganar experiencia en administración nuevamente"
+ undo_stewardship_perk_removal_decision_confirm: "Es hora de reconsiderar las limitaciones de lo que es posible"
   
  enlightened_in_stewardship_modifier: "Iluminados en la administración"
  enlightened_in_stewardship_modifier_desc: "Eres muy bueno con el dinero."
   
  intrigue_perk_removal_decision: "Iluminado en la intriga"
- intrigue_perk_removal_decision_desc: "Utilice su iluminación para ir más allá de los límites regulares de lo posible (este bono no se acumulará)."
+ intrigue_perk_removal_decision_desc: "Utiliza tu iluminación para ir más allá de los límites regulares de lo que es posible #N (Advertencia: esto es mejor utilizarlo después de haber adquirido todas las habilidades sanguíneas o si ya no deseas adquirir más de dichas habilidades; el bono no se acumulará)."
  intrigue_perk_removal_decision_tooltip: "Tus habilidades no tienen límites"
  intrigue_perk_removal_decision_confirm: "Coseche los beneficios de la iluminación"
   
  intrigue_perk_removal_decision_custom: "Pierdes #V 1#! [intrigue_lifestyle|E] [perk|E] Desbloquear"
+
+ undo_intrigue_perk_removal_decision: "N nuevas Técnicas de Intriga"
+ undo_intrigue_perk_removal_decision_desc: "¿Algo nuevo por aprender?"
+ undo_intrigue_perk_removal_decision_tooltip: "Es hora de probar los límites de lo que es posible"
+ undo_intrigue_perk_removal_decision_custom: "Ahora puedes ganar experiencia en intriga nuevamente"
+ undo_intrigue_perk_removal_decision_confirm: "Es hora de reconsiderar las limitaciones de lo que es posible"
   
  enlightened_in_intrigue_modifier: "Iluminado en la intriga"
  enlightened_in_intrigue_modifier_desc: "Eres un maestro de la intriga."
@@ -115,6 +164,12 @@
  learning_perk_removal_decision_confirm: "Aprovecha los beneficios de la iluminación"
   
  learning_perk_removal_decision_custom: "Pierdes #V 1#! [learning_lifestyle|E] [perk|E] Desbloquear"
+
+ undo_learning_perk_removal_decision: "Nuevas Técnicas de Aprendizaje"
+ undo_learning_perk_removal_decision_desc: "¿Algo nuevo por aprender?"
+ undo_learning_perk_removal_decision_tooltip: "Es hora de probar los límites de lo que es posible"
+ undo_learning_perk_removal_decision_custom: "Ahora puedes ganar experiencia de aprendizaje nuevamente"
+ undo_learning_perk_removal_decision_confirm: "Es hora de reconsiderar las limitaciones de lo que es posible"
   
  enlightened_in_learning_modifier: "Iluminado en el aprendizaje"
  enlightened_in_learning_modifier_desc: "Eres muy inteligente"
@@ -125,6 +180,12 @@
  truefaith_perk_removal_decision_confirm: "Coseche los beneficios de la iluminación"
   
  truefaith_perk_removal_decision_custom: "Pierdes #V 1#! [faith_lifestyle|E] [perk|E] Desbloquear"
+
+ undo_truefaith_perk_removal_decision: "Fe Más Fuerte"
+ undo_truefaith_perk_removal_decision_desc: "¿Algo nuevo por aprender?"
+ undo_truefaith_perk_removal_decision_tooltip: "Es hora de probar los límites de lo que es posible"
+ undo_truefaith_perk_removal_decision_custom: "Ahora puedes elevar tu fe"
+ undo_truefaith_perk_removal_decision_confirm: "Es hora de reconsiderar las limitaciones de lo que es posible"
   
  enlightened_in_truefaith_modifier: "Iluminados en la fe"
  enlightened_in_truefaith_modifier_desc: "Uno de los verdaderamente fieles"

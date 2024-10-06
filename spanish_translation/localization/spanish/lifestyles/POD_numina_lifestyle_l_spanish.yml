@@ -140,9 +140,9 @@
  astral_projection_4_perk_name: "Proyección astral 4" #NT!
  astral_projection_5_perk_name: "Proyección astral 5" #NT!
   
- ASTRAL_PROJECTION_1_PERK_EFFECT: "Obtén acceso a [astral_reaches|E] y [deep_umbra|E]\n#weak El psíquico puede separar su espíritu de su cuerpo y vagar por el reino astral.\nEl psíquico puede trasladar sus sentidos al espacio astral, percibiendo el reino como superpuesto al mundo mortal.#!" #NT!
- ASTRAL_PROJECTION_2_PERK_EFFECT: "Obtén acceso a [spirit_wilds|E] y [dreaming|E]\n#weak El psíquico puede abandonar su cuerpo durante unos minutos. Dentro del reino astral, está limitado a la vista.#!" #NT!
- ASTRAL_PROJECTION_3_PERK_EFFECT: "Obtén acceso al [underworld|E]\n#weak El psíquico puede abandonar su cuerpo durante varios minutos. Dentro del reino astral, puede oír y ver y viajar rápidamente lejos de su cuerpo.#!" #NT!
+ ASTRAL_PROJECTION_1_PERK_EFFECT: "Obtén acceso a [astral_reaches|E] y [UmbraGlossary('deep_umbra')]\n#weak El psíquico puede separar su espíritu de su cuerpo y vagar por el reino astral.\nEl psíquico puede trasladar sus sentidos al espacio astral, percibiendo el reino como superpuesto al mundo mortal.#!" #NT!
+ ASTRAL_PROJECTION_2_PERK_EFFECT: "Obtén acceso a [UmbraGlossary('spirit_wilds')] y [UmbraGlossary('dreaming')]\n#weak El psíquico puede abandonar su cuerpo durante unos minutos. Dentro del reino astral, está limitado a la vista.#!" #NT!
+ ASTRAL_PROJECTION_3_PERK_EFFECT: "Obtén acceso al [UmbraGlossaryLocalized('shadowlands','Underworld')]\n#weak El psíquico puede abandonar su cuerpo durante varios minutos. Dentro del reino astral, puede oír y ver y viajar rápidamente lejos de su cuerpo.#!" #NT!
  ASTRAL_PROJECTION_4_PERK_EFFECT: "[umbra_aptitude|E]: [grace_i]#P +25%#!\n#weak El psíquico puede abandonar su cuerpo durante horas, viajando a gran velocidad lejos de él. También puede manifestarse en forma física en forma translúcida, aunque no puede comunicarse verbalmente.#!" #NT!
  ASTRAL_PROJECTION_5_PERK_EFFECT: "[umbra_aptitude|E]: [grace_i]#P +50%#!\n#weak El psíquico puede viajar a cualquier parte del mundo mientras está en el espacio astral, usar toda su gama de sentidos y puede hablar mientras está manifestado.#!" #NT!
   
@@ -166,7 +166,7 @@
   
  NECRO_PSI_1_PERK_EFFECT: "Como [character_interaction|E], puede invocar a un [GetTrait('wraith').GetName( GetNullCharacter )] con el [GetTrait('lament').GetName( GetNullCharacter )] para cortejarlo.\n#weak Necro-Psi, también llamada Canalización, es una habilidad que le permite a un psíquico contactar a los fantasmas de los muertos.\nEl psíquico puede escuchar a cualquier fantasma cercano.#!" #NT!
  NECRO_PSI_2_PERK_EFFECT: "Permite interactuar con un ser del [umbra|E] cuando estás en el Mundo Material.\nDesbloquea [summon_wraith_on_death_interaction|E].\nDesbloquea [bind_wraith_interaction|E].\n#weak El psíquico puede comunicarse con fantasmas de la zona.#!" #NT!
- NECRO_PSI_3_PERK_EFFECT: "Desbloquea [command_wraith_interaction|E].\nComo [character_interaction|E], puedes permitir que un espectro limitado te canalice, lo que aumenta todos los atributos en 2 mientras obtienes [GetTrait('possessed_1').GetName( GetNullCharacter )]\n#weak El psíquico puede ver dentro de [shadowlands|E].#!" #NT!
+ NECRO_PSI_3_PERK_EFFECT: "Desbloquea [command_wraith_interaction|E].\nComo [character_interaction|E], puedes permitir que un espectro limitado te canalice, lo que aumenta todos los atributos en 2 mientras obtienes [GetTrait('possessed_1').GetName( GetNullCharacter )]\n#weak El psíquico puede ver dentro de [UmbraGlossary('shadowlands')].#!" #NT!
  NECRO_PSI_4_PERK_EFFECT: "Como [character_interaction|E], puede permitir que un espectro limitado lo canalice aumentando un atributo en 2 sin ganar [GetTrait('possessed_1').GetName( GetNullCharacter )]\n#weak El psíquico se convierte en un faro para los espíritus, quienes se sienten atraídos por él. Cuando un fantasma lo posee, pueden disputarle el control.#!" #NT!
  NECRO_PSI_5_PERK_EFFECT: "Número máximo de espectros atados: #P +2#!\nCan ser canalizado por dos espectros en lugar de uno por [GetPerk('necro_psi_3_perk').GetName( GetNullCharacter )] y [GetPerk('necro_psi_4_perk').GetName( GetNullCharacter )] [character_interaction|E]\n#weak El psíquico puede comunicarse libremente con fantasmas y canalizar dos a la vez.#!" #NT!
   
@@ -472,7 +472,7 @@
  ENCHANTMENT_6_PERK_EFFECT: "Puede mejorar [artifact|E] agregando un modificador basado en el artefacto y aumentando el atributo #V 3#! en uno, con un costo de #N -20%#! $MOD_STRESS_LOSS_MULT$.\n#flavor El encantador crea un artefacto legendario.#!" #NT!
   
  ephemera_1_perk_name: "Efímera 1" #NT!
- EPHEMERA_1_PERK_EFFECT: "Desbloquea $seek_aid_of_the_spirits_decision$ [decision|E].\n#flavor El Camino de lo Efímero permite al usuario interactuar con los [spirit_wilds|E].\nSiente la actividad de los espíritus detrás de sus Guanteletes.#!" #NT!
+ EPHEMERA_1_PERK_EFFECT: "Desbloquea $seek_aid_of_the_spirits_decision$ [decision|E].\n#flavor El Camino de lo Efímero permite al usuario interactuar con los [UmbraGlossary('spirit_wilds')].\nSiente la actividad de los espíritus detrás de sus Guanteletes.#!" #NT!
  ephemera_2_perk_name: "Efímera 2" #NT!
  EPHEMERA_2_PERK_EFFECT: "Desbloquea $POD_summon_spirit_on_death_interaction$.\n#flavor Aprende a distinguir entre los diferentes tipos de espíritus detrás del Guantelete e intenta traerlos al mundo material.#!" #NT!
  ephemera_3_perk_name: "Efímera 3" #NT!
@@ -482,7 +482,7 @@
  ephemera_5_perk_name: "Efímera 5" #NT!
  EPHEMERA_5_PERK_EFFECT: "#flavor Aprende a ordenar a los espíritus que cumplan tus órdenes.#!" #NT!
  ephemera_6_perk_name: "Efímera 6" #NT!
- EPHEMERA_6_PERK_EFFECT: "Obtén acceso al [spirit_wilds|E].\n#flavor Camina más allá del Guantelete en forma astral.#!" #NT!
+ EPHEMERA_6_PERK_EFFECT: "Obtén acceso al [UmbraGlossary('spirit_wilds')].\n#flavor Camina más allá del Guantelete en forma astral.#!" #NT!
   
  fascination_1_perk_name: "Fascinación 1" #NT!
  FASCINATION_1_PERK_EFFECT: "#flavor La fascinación permite al usuario hacer que un objetivo se enamore de otra persona.\nParece favorable para un objetivo.#!" #NT!
@@ -548,7 +548,7 @@
  MANA_MANIPULATION_6_PERK_EFFECT: "Reduce el coste de los poderes de hechicería.\n#flavor Crea un nexo temporal.#!" #NT!
   
  oneiromancy_1_perk_name: "Oniromancia 1" #NT!
- ONEIROMANCY_1_PERK_EFFECT: "Como [character_interaction|E] da objetivo [GetModifier('sorcery_dreamless_modifier').GetNameWithTooltip]\n#flavor Con el uso de Oniromancia, el usuario puede visitar los sueños de otras personas y [dreaming|E]\nTocar el sueño de otro.#!" #NT!
+ ONEIROMANCY_1_PERK_EFFECT: "Como [character_interaction|E] da objetivo [GetModifier('sorcery_dreamless_modifier').GetNameWithTooltip]\n#flavor Con el uso de Oniromancia, el usuario puede visitar los sueños de otras personas y [UmbraGlossary('dreaming')]\nTocar el sueño de otro.#!" #NT!
  oneiromancy_2_perk_name: "Oniromancia 2" #NT!
  ONEIROMANCY_2_PERK_EFFECT: "A medida que [character_interaction|E] aumenta la opinión que el objetivo tiene de ti, #flavor aprende a convertirte temporalmente en parte del sueño de otro. #!" #NT!
  oneiromancy_3_perk_name: "Oniromancia 3" #NT!
@@ -556,7 +556,7 @@
  oneiromancy_4_perk_name: "Oniromancia 4" #NT!
  ONEIROMANCY_4_PERK_EFFECT: "Mejora [GetModifier('sorcery_bad_dreams_modifier').GetNameWithTooltip], [GetModifier('sorcery_good_dreams_modifier').GetNameWithTooltip] [modifier|E] a [GetModifier('sorcery_bad_dreams_enchanced_modifier').GetNameWithTooltip], [GetModifier('sorcery_good_dreams_enchanced_modifier').GetNameWithTooltip]\n#flavor Aprende a tomar el control del sueño de otro.#!" #NT!
  oneiromancy_5_perk_name: "Oniromancia 5" #NT!
- ONEIROMANCY_5_PERK_EFFECT: "Obtén acceso a [dreaming|E]\n#flavor Aprende a fusionar varios sueños en uno solo.#!" #NT!
+ ONEIROMANCY_5_PERK_EFFECT: "Obtén acceso a [UmbraGlossary('dreaming')]\n#flavor Aprende a fusionar varios sueños en uno solo.#!" #NT!
  oneiromancy_6_perk_name: "Oniromancia 6" #NT!
  ONEIROMANCY_6_PERK_EFFECT: "Como [character_interaction|E] engendro #V 2000#! [GetMaA('monsters').GetName]\n#flavor Haz que una criatura de un sueño sea real por un período de tiempo limitado.#!" #NT!
   
@@ -677,7 +677,7 @@
   
  VIA_GENIORUM_1_PERK_EFFECT: "Desbloquea $seek_aid_of_the_spirits_decision$ [decision|E].\nPuedes interactuar con seres de [umbra|E] cuando estás en el Mundo Material.\n#F Esta Vía se ocupa del reino de los espíritus y lo demoníaco. El conocimiento del verdadero nombre de un espíritu otorga poder sobre él. La Vía Geniorum es una recopilación de rituales específicos de niveles de poder graduados.\nEl Teúrgo no mira dentro de [spirit_world|E], sino que ordena a los seres supernos cercanos que se revelen.#!" #NT!
  VIA_GENIORUM_2_PERK_EFFECT: "Ya no estarás poseído por [GetTrait('wraith').GetName( GetNullCharacter )].\nComo [character_interaction|E], puedes aprender el verdadero nombre de un personaje\n#F El Teúrgo puede dibujar sigilos protectores en objetos portátiles o en un pequeño círculo a su alrededor.#!" #NT!
- VIA_GENIORUM_3_PERK_EFFECT: "Haz que $POD_demon_unearthbound_decision$ [decision|E] sea gratis.\nComo [character_interaction|E], te permite desterrar un personaje demonio a [abyss|E].\nComo [character_interaction|E], te permite desterrar un personaje hada a [arcadia|E].\n#F El Teúrgo puede enviar un espíritu de regreso a su reino nativo.#!" #NT!
+ VIA_GENIORUM_3_PERK_EFFECT: "Haz que $POD_demon_unearthbound_decision$ [decision|E] sea gratis.\nComo [character_interaction|E], te permite desterrar un personaje demonio a [UmbraGlossary('abyss')].\nComo [character_interaction|E], te permite desterrar un personaje hada a [UmbraGlossary('arcadia')].\n#F El Teúrgo puede enviar un espíritu de regreso a su reino nativo.#!" #NT!
  VIA_GENIORUM_4_PERK_EFFECT: "Puede reclutar a [GetMaA('materialized_spirits').GetName] y [GetMaA('imps').GetName] como [men_at_arms|E]\n#F El Teúrgo ahora puede invocar entidades espirituales.#!" #NT!
  VIA_GENIORUM_5_PERK_EFFECT: "Puede reclutar a [GetMaA('jagglings').GetName] y [GetMaA('lucifergia').GetName] como [men_at_arms|E]\n#F El Teúrgo ahora puede obligar a un espíritu a ser servil.#!" #NT!
   
@@ -696,8 +696,8 @@
  VIA_NECROMANTIAE_1_PERK_EFFECT: "Desbloquear [summon_wraith_on_death_interaction|E].\n#F La Vía Necromantiae es una teurgia diseñada para contactar o desterrar a los muertos.\nEl teúrgo puede ordenar a un cadáver recientemente fallecido que despierte.#!" #NT!
  VIA_NECROMANTIAE_2_PERK_EFFECT: "Puedes encarcelar, torturar, ejecutar o herir físicamente a espíritus durante [single_combat_duel_plural|E].\nYa no es necesario pagar [gold|E] para encarcelar, torturar, ejecutar o herir físicamente a un espectro/demonio durante [single_combat_duel_plural|E].\n#F Los teúrgos pueden proteger un área de la intrusión fantasmal.#!" #NT!
  VIA_NECROMANTIAE_3_PERK_EFFECT: "Desbloquea [bind_wraith_interaction|E].\n#F Los teúrgos pueden contactar con los muertos.#!" #NT!
- VIA_NECROMANTIAE_4_PERK_EFFECT: "Desbloquea [command_wraith_interaction|E].\nComo [character_interaction|E], puedes desterrar espectros al [shadowlands|E], desvinculándolos en el proceso.\n#F Los teúrgos pueden expulsar a un fantasma que los acecha.#!" #NT!
- VIA_NECROMANTIAE_5_PERK_EFFECT: "Como [character_interaction|E], puede invocar un espectro aleatorio de [shadowlands|E].\nPuede reclutar a [GetMaA('hidden').GetName], [GetMaA('walker').GetName], [GetMaA('shambler').GetName] y [GetMaA('skeletons').GetName] como [men_at_arms|E].\nNúmero máximo de espectros atados: #P +1#!.\n#F El Teúrgo ahora puede instar a un cadáver a levantarse.#!" #NT!
+ VIA_NECROMANTIAE_4_PERK_EFFECT: "Desbloquea [command_wraith_interaction|E].\nComo [character_interaction|E], puedes desterrar espectros al [UmbraGlossary('shadowlands')], desvinculándolos en el proceso.\n#F Los teúrgos pueden expulsar a un fantasma que los acecha.#!" #NT!
+ VIA_NECROMANTIAE_5_PERK_EFFECT: "Como [character_interaction|E], puede invocar un espectro aleatorio de [UmbraGlossary('shadowlands')].\nPuede reclutar a [GetMaA('hidden').GetName], [GetMaA('walker').GetName], [GetMaA('shambler').GetName] y [GetMaA('skeletons').GetName] como [men_at_arms|E].\nNúmero máximo de espectros atados: #P +1#!.\n#F El Teúrgo ahora puede instar a un cadáver a levantarse.#!" #NT!
   
  VIA_ORACULI_1_PERK_EFFECT: "#F A través de la Vía Oraculi, los Teúrgos pueden vislumbrar el futuro desconocido o ver el pasado invisible.\nEl Teúrgo interpreta señales o advertencias sobre el estado de sus circunstancias inmediatas.#!" #NT!
  VIA_ORACULI_2_PERK_EFFECT: "Si alguno de tus familiares o amigos es asesinado en circunstancias misteriosas, conocerás la identidad de sus asesinos.\n#F El Teúrgo elimina posibles resultados negativos comparándolos de antemano.#!" #NT!

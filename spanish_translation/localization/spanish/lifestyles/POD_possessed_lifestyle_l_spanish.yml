@@ -386,7 +386,7 @@
  SPIRIT_TIES_PERK_EFFECT: "Puede usar fetiches [artifact|E].\nPosibilidad de recuperación de gnosis: #P +100%#!\n#F El personaje tiene una conexión innata con los [spirit_world|E] y puede usar fetiches y talentos.#!" #NT!
  STASIS_COCOON_PERK_EFFECT: "Desbloquea Enter Cocoon [decision|E], lo que te permitirá ingresar a [GetTrait('torpor').GetName( GetNullCharacter )], que te destituirá."
  STASIS_TOUCH_PERK_EFFECT: "Como [character_interaction|E], te permite eliminar el cambio de forma del objetivo.\n#F Con un solo toque, el personaje puede robarle a sus oponentes la capacidad de cambiar de forma.#!" #NT!
- STEP_SIDEWAYS_PERK_EFFECT: "Obtén acceso al [spirit_wilds|E].\n[umbra_sense|E]: [grace_i]#P +5%#!\n[umbra_aptitude|E]: [grace_i]#P +25%#!\n#F El personaje obtiene la habilidad de entrar en el [umbra|E], como lo hacen los Garou.#!" #NT!
+ STEP_SIDEWAYS_PERK_EFFECT: "Obtén acceso al [UmbraGlossary('spirit_wilds')].\n[umbra_sense|E]: [grace_i]#P +5%#!\n[umbra_aptitude|E]: [grace_i]#P +25%#!\n#F El personaje obtiene la habilidad de entrar en el [umbra|E], como lo hacen los Garou.#!" #NT!
  SUCCUBUS_VEIL_PERK_EFFECT: "Desbloquear [GetScheme('PODenthrall').GetTypeName] [scheme|E]."
  TAINT_SUPPRESSION_PERK_EFFECT: "#F El fomor puede anular brevemente los efectos de cualquiera de sus Corrupciones. Las deformidades físicas suprimidas se curan y la piel queda intacta en segundos; los trastornos desaparecen en un estallido de perfecta claridad, etc.#!" #NT!
  TAR_BABY_PERK_EFFECT: "Oportunidad adicional de mutilar a un enemigo [knights|E] en una guerra como [knight|E]."
@@ -593,7 +593,7 @@
  DIVIDE_AND_CONQUER_PERK_EFFECT: "Como [character_interaction|E], te permite crear un clon de ti mismo.\n#F Este amuleto permite que el espíritu se divida en múltiples versiones de sí mismo, dividiendo su Rabia, Gnosis, Fuerza de Voluntad y Poder entre cada nuevo "niño".#!" #NT!
  DRAGON_SIGHT_PERK_EFFECT: "#F La mayoría de los espíritus tienen un sentido natural de las huellas del dragón en el mundo espiritual y pueden viajar sin mucha dificultad.#!" #NT!
  DRAIN_GNOSIS_PERK_EFFECT: "Como [character_interaction|E], te permite obtener combustible de poder de los prisioneros.\n#F El espíritu es capaz de drenar la Gnosis de su objetivo.#!" #NT!
- DREAM_JOURNEY_PERK_EFFECT: "Obtén acceso a [dreaming|E]\n#F Mientras el objetivo está dormido, el espíritu puede inmiscuirse en sus sueños.#!" #NT!
+ DREAM_JOURNEY_PERK_EFFECT: "Obtén acceso a [UmbraGlossary('dreaming')]\n#F Mientras el objetivo está dormido, el espíritu puede inmiscuirse en sus sueños.#!" #NT!
  EASE_PAIN_PERK_EFFECT: "#F Este amuleto permite que un espíritu alivie el dolor de una criatura material.#!" #NT!
  FIELD_SENSE_PERK_EFFECT: "#F El espíritu puede sentir todo lo que ocurre en el campo o campos terrenales que conforman su dominio.#!" #NT!
  FLEE_PERK_EFFECT: "#F Este amuleto le otorga al espíritu una fuerza de voluntad efectiva para escapar de un enemigo.#!" #NT!
@@ -641,7 +641,7 @@
  CHARMS_SIREN_SONG_PERK_EFFECT: "#F Esto es similar al Encantamiento: Sugestión, pero el espíritu solo puede atraer a un objetivo hacia él a través de una canción, sin sugerir ningún otro comando.#!" #NT!
  SNATCH_WIRELESS_PACKET_PERK_EFFECT: "#F [Select_CString( GetScriptedGui('is_modern').IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End), 'The spirit with this Charm can grab cellular and digital packets coming from or going to phones and pagers.', '')]#!" #NT!
  SOLIDIFY_REALITY_PERK_EFFECT: "#F Este amuleto permite al espíritu del Tejedor tejer la Red de Patrones, reforzando así las leyes y reglas del Tejedor sobre los aspectos del [umbra|E].#!" #NT!
- SPIRIT_AWAY_PERK_EFFECT: "Como [character_interaction|E], te permite hacer que un objetivo sufra [GetModifier('trapped_in_yomi_modifier').GetNameWithTooltip], puede regresar como [GetTrait('kueijin').GetName( GetPlayer )].\n#F El temible poder de los peores demonios. Con este encantamiento, un humano puede ser arrebatado del mundo material y llevado directamente al mundo [yomi|E].#!" #NT!
+ SPIRIT_AWAY_PERK_EFFECT: "Como [character_interaction|E], te permite hacer que un objetivo sufra [GetModifier('trapped_in_yomi_modifier').GetNameWithTooltip], puede regresar como [GetTrait('kueijin').GetName( GetPlayer )].\n#F El temible poder de los peores demonios. Con este encantamiento, un humano puede ser arrebatado del mundo material y llevado directamente al mundo [UmbraGlossaryLocalized('yomi_wan','Yomi')].#!" #NT!
  SPIRIT_STATIC_PERK_EFFECT: "Desbloquea la opción Manipular el guantelete en el panel Umbra."
  SUGGESTION_PERK_EFFECT: "#F Esta es una forma menor del encantamiento Corrupción. El espíritu puede transmitir una imagen sensorial y sugerir que el objetivo la persiga.#!" #NT!
  SWIFT_FLIGHT_PERK_EFFECT: "#F El espíritu con este amuleto puede superar fácilmente a la mayoría de los perseguidores, volando a través del [umbra|E] al triple de velocidad.#!" #NT!
