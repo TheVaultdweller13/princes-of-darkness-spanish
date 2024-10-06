@@ -148,7 +148,7 @@
  bs_theft_of_vitae_perk_name: "Robo de vitae"
  bs_cauldron_of_blood_perk_name: "Caldero de sangre"
   
- BS_A_TASTE_FOR_BLOOD_PERK_EFFECT: "Como [bs_spell|E], descubre si tu objetivo es un [diablerist|E].\n#weak Reúne una variedad de información de una muestra de sangre#!"
+ BS_A_TASTE_FOR_BLOOD_PERK_EFFECT: "Como [bs_spell|E], descubre si tu objetivo es un $pod_diablerist$.\n#weak Reúne una variedad de información de una muestra de sangre#!"
  BLOOD_RAGE_PERK_EFFECT: "Como [bs_spell|E], obliga a tu objetivo a usar Oleada de sangre.\n#weak Obliga a un objetivo a gastar su vitae para aumentar los atributos#!"
  BS_BLOOD_OF_POTENCY_PERK_EFFECT: "Como [bs_spell|E], aumenta temporalmente [blood_potency|E] en 1.\n#weak Reduce temporalmente tu generación#!"
  BS_THEFT_OF_VITAE_PERK_EFFECT: "Como [bs_spell|E], roba vitae de otro $POD_splat_vampire$.\n#weak Roba sangre de un objetivo a distancia#!"
@@ -162,9 +162,9 @@
   
  EYES_OF_THE_SEA_PERK_EFFECT: "#weak Vea lo que ha sucedido en, sobre o alrededor de un cuerpo de agua quieta#!"
  PRISON_OF_WATER_PERK_EFFECT: "Como [bs_spell|E], encarcela a tu objetivo en la misma ubicación.\n#weak Usa una gran masa de agua para atar a un objetivo#!"
- BLOOD_TO_WATER_PERK_EFFECT: "Como [bs_spell|E], aumenta el [hunger_with_icon|E] de un $POD_splat_vampire$ en 3. Da como resultado [GetModifier('majorbloodloss_modifier').GetNameWithTooltip] si se lanza sobre un no vampiro.\n#weak Convierte la sangre de un sujeto (o posiblemente otro líquido) en agua#!"
+ BLOOD_TO_WATER_PERK_EFFECT: "Como [bs_spell|E], aumenta el $pod_hunger_with_icon$ de un $POD_splat_vampire$ en 3. Da como resultado [GetModifier('majorbloodloss_modifier').GetNameWithTooltip] si se lanza sobre un no vampiro.\n#weak Convierte la sangre de un sujeto (o posiblemente otro líquido) en agua#!"
  FLOWING_WALL_PERK_EFFECT: "Mejora la probabilidad de éxito del [GetPerk('prison_of_water_perk').GetName(GetPlayer)] [bs_spell|E].\n#weak Crea una barrera de agua casi impermeable a todos los seres#!"
- DEHYDRATE_PERK_EFFECT: "El [GetPerk('blood_to_water_perk').GetName(GetPlayer)] [bs_spell|E] ahora aumenta [hunger_with_icon|E] en 5, o causa [GetModifier('catastrophicbloodloss_modifier').GetNameWithTooltip] en los que no son vampiros.\n#weak Drena agua de una víctima de forma remota#!"
+ DEHYDRATE_PERK_EFFECT: "El [GetPerk('blood_to_water_perk').GetName(GetPlayer)] [bs_spell|E] ahora aumenta $pod_hunger_with_icon$ en 5, o causa [GetModifier('catastrophicbloodloss_modifier').GetNameWithTooltip] en los que no son vampiros.\n#weak Drena agua de una víctima de forma remota#!"
   
  simple_nectar_perk_name: "Néctar simple"
  nectar_perk_name: "Néctar"

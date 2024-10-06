@@ -17,7 +17,7 @@
  POD_assault_lair_interaction_desc: "Sigue un [journey|E] para conocer la ubicación exacta de este demonio. Luego comienza la caza. Obviamente, hay serios riesgos involucrados..."
  POD_assault_lair_interaction_infiltration: "@death_icon!#N;bold Dado que [recipient.GetShortUIName] está en el rango [kingdom|E] o superior, solo puedes cazar [recipient.GetHerHim] en la guarida [Concept('infiltration','infiltrating')] [recipient.GetHerHis] directamente.#!" #NT!
  POD_assault_lair_interaction_effect: "Tendrás que emprender un viaje de [journey|E] para averiguar la ubicación exacta de este demonio. Luego, la caza comenzará. Obviamente, existen serios riesgos involucrados..."
- POD_assault_lair_interaction_monthly: "#help El [planning_speed|E] de este [journey|E] se basa en muchos factores, como la edad de tu objetivo, su rango, [intrigue|E], [masquerade_exposure|E] y otros.#!"
+ POD_assault_lair_interaction_monthly: "#help El [planning_speed|E] de este [journey|E] se basa en muchos factores, como la edad de tu objetivo, su rango, [intrigue|E], $pod_masquerade_exposure$ y otros.#!"
  POD_assault_lair_interaction_instant: "#help Como tienes [GetModifier('tracked_down_modifier').GetNameWithTooltip|L] como objetivo, el [journey|E] se completará instantáneamente.#!"
   
  POD_heist_interaction_hostile_warning: "@death_icon!#N;bold [recipient.GetFirstNamePossessiveNoTooltip] [splat|E] te es hostil. Este [infiltration|E] será mucho más letal de lo normal y, si fallas, terminarás con tu #R ejecución#! en lugar de encarcelamiento.#!" #NT!

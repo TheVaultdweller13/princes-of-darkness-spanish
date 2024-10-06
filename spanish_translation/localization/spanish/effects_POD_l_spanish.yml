@@ -720,7 +720,7 @@
  ANIMAL_DOMINION_PERK_FLAVOR: "Como [character_interaction|E], te permite llamar a tu mascota a la guerra.\nPuedes reclutar varios tipos de animales como [men_at_arms|E].\n#flavor El poder que el vampiro tiene sobre las bestias es ahora lo suficientemente grande como para comandar manadas y rebaños como si fueran extensiones de su propio cuerpo. Con un gesto, los animales dan sus vidas por docenas, incluso por cientos, para apaciguar a su amo#!"
  TONGUE_OF_BEASTS_PERK_FLAVOR: "#flavor Este poder expande los dones de Susurros a la naturaleza. En lugar de poder hablar con un solo animal, el vampiro puede hablar con todos y cada uno de los animales sin establecer contacto visual.#!"
  SEND_THE_EIGHTH_PLAGUE_PERK_EFFECT: "Como [character_interaction|E], puedes lanzar [GetModifier('weather_magic_plague_modifier').GetNameWithTooltip] sobre el reino enemigo."
- SEND_THE_EIGHTH_PLAGUE_PERK_FLAVOR: "#flavor Este es uno de los poderes más destructivos entre todos los [disciplines|E]. Un antiguo Gangrel llamado Valentiniano demostró su inmenso potencial de ruina poco después de la Cuarta Cruzada. Enojado con los Cainitas italianos que invadieron sus tierras, invocó su maestría en Animalismo y provocó el hambre en toda una ciudad comercial.#!"
+ SEND_THE_EIGHTH_PLAGUE_PERK_FLAVOR: "#flavor Este es uno de los poderes más destructivos entre todos los $pod_disciplines$. Un antiguo Gangrel llamado Valentiniano demostró su inmenso potencial de ruina poco después de la Cuarta Cruzada. Enojado con los Cainitas italianos que invadieron sus tierras, invocó su maestría en Animalismo y provocó el hambre en toda una ciudad comercial.#!"
  CRIMSON_FURY_PERK_EFFECT: "Hace que el evento [unconquered_soul|E] sea más probable para los diabolistas que intentan consumir tu alma."
  CRIMSON_FURY_PERK_FLAVOR: "#flavor Este poder es objeto de muchos rumores y conjeturas, ya que tiene muy pocos efectos visibles. Al alcanzar este nivel de maestría, el vampiro puede optar por permitir que su [beast|E] deambule libremente por sus venas. Su sangre provoca frenesí en los mortales y vampiros que la prueban. Si un diabolista consigue consumir el alma del vampiro, es posible que tenga un final espantoso cuando la Bestia del vampiro la devore desde dentro. #!"
  EYES_OF_THE_FOREST_PERK_FLAVOR: "#flavor Este poder imponente es la base de muchos cuentos populares sobre bosques amenazantes y montañas amenazantes. Los animales e incluso los insectos de la zona son los ojos y oídos del vampiro, y le proporcionan un conocimiento íntimo de los acontecimientos nocturnos de su dominio.#!"
@@ -879,7 +879,7 @@
   
   #Grave's Decay Path 
   
- NECROMANCY_ASHES_TO_ASHES_PERK_EFFECT: "Reduce el riesgo de [masquerade_exposure_with_icon|E] y mejora la Mascarada de portada [character_interaction|E]."
+ NECROMANCY_ASHES_TO_ASHES_PERK_EFFECT: "Reduce el riesgo de $pod_masquerade_exposure_with_icon$ y mejora la Mascarada de portada [character_interaction|E]."
  NECROMANCY_ASHES_TO_ASHES_PERK_FLAVOR: "#flavor Mientras que algunos Cainitas matan indiscriminadamente y no temen las consecuencias de sus acciones, otros sienten la necesidad de ser un poco más discretos. El uso de este poder convierte un cadáver humano en una pila de cenizas sin importancia de aproximadamente una quinta parte del peso del cuerpo original.#!"
  RIGOR_MORTIS_PERK_FLAVOR: "#flavor Con este poder, el nigromante puede dejar a cualquier objetivo rígido e inmóvil como un cadáver.#!"
  ASHEN_LADYS_EMBRACE_PERK_EFFECT: "Desbloquea el movimiento Abrazo de la Dama de Ceniza [single_combat_duel|E]"
@@ -923,7 +923,7 @@
   
   #Nightshade Path 
   
- TEND_THE_BODY_GARDEN_PERK_EFFECT: "Reduce el riesgo de [masquerade_exposure_with_icon|E] y mejora la Mascarada de portada [character_interaction|E]"
+ TEND_THE_BODY_GARDEN_PERK_EFFECT: "Reduce el riesgo de $pod_masquerade_exposure_with_icon$ y mejora la Mascarada de portada [character_interaction|E]"
  TEND_THE_BODY_GARDEN_PERK_FLAVOR: "#flavor Un nigromante con este poder puede acelerar o ralentizar el proceso de descomposición, convirtiendo a un mortal muerto en un huésped hinchado para las moscas en segundos o anulando la descomposición de la Muerte Definitiva.#!"
  WITCHS_FRUIT_PERK_EFFECT: "Desbloquea un [character_interaction|E] que te permite envenenar a los mortales con frutas infundidas nigrománticamente."
  WITCHS_FRUIT_PERK_FLAVOR: "#flavor Cada planta depende de la muerte para crecer. Las cosas en descomposición enriquecen el suelo y los árboles, las enredaderas y la hierba absorben ecos necróticos junto con nutrientes vitales. Un nigromante puede despertar esta aura de muerte exponiendo sus frutos a su sangre.#!"
@@ -1227,7 +1227,7 @@
  SENSE_THE_SIN_PERK_EFFECT: "Adéntrate en una mente y amplifica un pecado hasta niveles autodestructivos."
  TORMENTED_ESSENCE_PERK_EFFECT: "Proyecta energía infernal contra tus oponentes en un duelo."
  BLOOD_OF_A_DEMON_PERK_EFFECT: "Obtén una gran cantidad de habilidades relacionadas con el infernalismo: dirige a infernalistas menores, llámalos a la corte o incluso comprométete tú mismo a practicar la adoración oscura."
- AS_BELOW_SO_ABOVE_PERK_EFFECT: "Mejora tu [disciplines|E] social con insidia diabólica, mejorando tus posibilidades de éxito con poderes como entrada o racionalización."
+ AS_BELOW_SO_ABOVE_PERK_EFFECT: "Mejora tu $pod_disciplines$ social con insidia diabólica, mejorando tus posibilidades de éxito con poderes como entrada o racionalización."
  PSYCHOMACHIA_PERK_EFFECT: "Obliga a una persona a luchar con sus pecados amplificados conjurando una entidad de sombra de la psique de la víctima."
  POISONED_VIRTUE_PERK_EFFECT: "Con este poder, puedes amplificar incluso las virtudes a niveles insalubres."
  KNEEL_BEFORE_MY_THRONE_PERK_EFFECT: "Aprende la habilidad de convertir a otros vampiros en infernalistas. Obtén el poder de otorgarte un don oscuro."
@@ -2164,7 +2164,7 @@
   #Aspiration legacy # 
   
  #ASPIRATION_LEGACY_2_PERK_EFFECT: "Se reducirá la obligación feudal."
- ASPIRATION_LEGACY_5_PERK_EFFECT: "Mayor probabilidad de heredar [disciplines|E]."
+ ASPIRATION_LEGACY_5_PERK_EFFECT: "Mayor probabilidad de heredar $pod_disciplines$."
   
   #Ventrue legacy # 
   
@@ -2436,24 +2436,24 @@
  NEEDS_IMPUNDULU_NECROMANCY_PATH_TRAINING: "@warning_icon!#X Necesitas recibir entrenamiento en [GetDynastyByID( '10000023' ).GetBaseName] caminos de nigromancia para obtener esta ventaja.#!"
  NEEDS_NAGARAJA_NECROMANCY_PATH_TRAINING: "@warning_icon!#X Necesitas recibir entrenamiento en [GetDynastyByID( '10000018' ).GetBaseName] caminos de nigromancia para obtener esta ventaja.#!"
   
- masquerade_exposure_increase_effect.tt: "[masquerade_exposure_with_icon|E] aumentará #N #!."
- masquerade_exposure_decrease_effect.tt: "[masquerade_exposure_with_icon|E] disminuirá #P #!."
+ masquerade_exposure_increase_effect.tt: "$pod_masquerade_exposure_with_icon$ aumentará #N #!."
+ masquerade_exposure_decrease_effect.tt: "$pod_masquerade_exposure_with_icon$ disminuirá #P #!."
   
- hunger_increase_effect.tt: "[hunger_with_icon|E] #N aumentará#!."
- hunger_increase_effect.tt.1: "[hunger_with_icon|E] #N aumentará#! en #V;bold 1#!."
- hunger_increase_effect.tt.2: "[hunger_with_icon|E] #N aumentará#! en #V;bold 2#!."
- hunger_increase_effect.tt.3: "[hunger_with_icon|E] #N aumentará#! en #V;bold 3#!."
- hunger_increase_effect.tt.4: "[hunger_with_icon|E] #N aumentará#! en #V;bold 4#!."
- hunger_increase_effect.tt.5: "[hunger_with_icon|E] #N aumentará#! en #V;bold 5#!."
- hunger_increase_effect.hungerless: "Debido a tu suministro ilimitado de sangre, tu [hunger_with_icon|E] no cambiará."
- hunger_decrease_effect.tt: "Tu [hunger_with_icon|E] #P disminuirá#!."
- hunger_decrease_effect.tt.full: "Como ya estás completamente saciado, tu [hunger_with_icon|E] no disminuirá."
- hunger_decrease_effect.tt.0: "Dado que tienes [GetPlayer.Custom('PODBloodPotency')], [hunger_with_icon|E] #N;bold no#! disminuirá."
- hunger_decrease_effect.tt.1: "[hunger_with_icon|E] #P disminuirá#! en #V;bold 1#!."
- hunger_decrease_effect.tt.2: "[hunger_with_icon|E] #P disminuirá#! en #V;bold 2#!."
- hunger_decrease_effect.tt.3: "[hunger_with_icon|E] #P disminuirá#! en #V;bold 3#!."
- hunger_decrease_effect.tt.4: "[hunger_with_icon|E] #P disminuirá#! en #V;bold 4#!."
- hunger_decrease_effect.tt.5: "[hunger_with_icon|E] #P disminuirá#! en #V;bold 5#!."
+ hunger_increase_effect.tt: "$pod_hunger_with_icon$ #N aumentará#!."
+ hunger_increase_effect.tt.1: "$pod_hunger_with_icon$ #N aumentará#! en #V;bold 1#!."
+ hunger_increase_effect.tt.2: "$pod_hunger_with_icon$ #N aumentará#! en #V;bold 2#!."
+ hunger_increase_effect.tt.3: "$pod_hunger_with_icon$ #N aumentará#! en #V;bold 3#!."
+ hunger_increase_effect.tt.4: "$pod_hunger_with_icon$ #N aumentará#! en #V;bold 4#!."
+ hunger_increase_effect.tt.5: "$pod_hunger_with_icon$ #N aumentará#! en #V;bold 5#!."
+ hunger_increase_effect.hungerless: "Debido a tu suministro ilimitado de sangre, tu $pod_hunger_with_icon$ no cambiará."
+ hunger_decrease_effect.tt: "Tu $pod_hunger_with_icon$ #P disminuirá#!."
+ hunger_decrease_effect.tt.full: "Como ya estás completamente saciado, tu $pod_hunger_with_icon$ no disminuirá."
+ hunger_decrease_effect.tt.0: "Dado que tienes [GetPlayer.Custom('PODBloodPotency')], $pod_hunger_with_icon$ #N;bold no#! disminuirá."
+ hunger_decrease_effect.tt.1: "$pod_hunger_with_icon$ #P disminuirá#! en #V;bold 1#!."
+ hunger_decrease_effect.tt.2: "$pod_hunger_with_icon$ #P disminuirá#! en #V;bold 2#!."
+ hunger_decrease_effect.tt.3: "$pod_hunger_with_icon$ #P disminuirá#! en #V;bold 3#!."
+ hunger_decrease_effect.tt.4: "$pod_hunger_with_icon$ #P disminuirá#! en #V;bold 4#!."
+ hunger_decrease_effect.tt.5: "$pod_hunger_with_icon$ #P disminuirá#! en #V;bold 5#!."
   
  POD_killed_victim_by_feeding_tt: "@warning_icon!#X ¡Tu víctima morirá por pérdida de sangre!#!"
   

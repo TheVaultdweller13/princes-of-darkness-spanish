@@ -46,7 +46,7 @@
  bs_target_is_you: "El objetivo es #bold no#! #italic Tú#!" #NT!
   
  POD_bloodmagic_events.3.t: "[Localize(Concatenate3('ritual_',ROOT.Var('current_journey').Var('ritual').GetFlagName,'_name'))]" #NT!
- POD_bloodmagic_events.3.desc: "Incluso después de siglos de experimentación, la miríada de rituales desarrollados por [cainites|E] en todo el mundo se basan en los mismos cimientos. Ya sea que estos ritos provengan de la taumaturgia, la hechicería, la nigromancia o prácticas más extrañas, todos invocan el poder de #R sangre#!.\n\nIn en las profundidades carmesí más profundas de su ser, estos Cainitas encuentran poder: poder puro que espera ser llevado a la superficie. A través de su fuerza de voluntad, estos Cainitas arrastran este poder a patadas y gritos hacia el exterior para realizar hazañas milagrosas. Se han desarrollado rituales para dirigir y enfocar esta nueva fuerza, sin restricciones por la estructura del [disciplines|E] conocido.\n\nSolo una palabra puede describir este poder que ha resonado a lo largo de los siglos:\n\nMagia." #NT!
+ POD_bloodmagic_events.3.desc: "Incluso después de siglos de experimentación, la miríada de rituales desarrollados por $pod_cainites$ en todo el mundo se basan en los mismos cimientos. Ya sea que estos ritos provengan de la taumaturgia, la hechicería, la nigromancia o prácticas más extrañas, todos invocan el poder de #R sangre#!.\n\nIn en las profundidades carmesí más profundas de su ser, estos Cainitas encuentran poder: poder puro que espera ser llevado a la superficie. A través de su fuerza de voluntad, estos Cainitas arrastran este poder a patadas y gritos hacia el exterior para realizar hazañas milagrosas. Se han desarrollado rituales para dirigir y enfocar esta nueva fuerza, sin restricciones por la estructura del $pod_disciplines$ conocido.\n\nSolo una palabra puede describir este poder que ha resonado a lo largo de los siglos:\n\nMagia." #NT!
  POD_bloodmagic_events.3.a: "Despierto mi vitae y comienzo..." #NT!
   ############################################ 
   
@@ -92,7 +92,7 @@
  path_of_blood_tooltip: "Camino de sangre" #NT!
  spell_a_taste_for_blood_name: "[bs_spell|E]: Gusto por la sangre" #NT!
  spell_a_taste_for_blood_cost: "3 @blood_icon!" #NT!
- a_taste_for_blood_script_tooltip: "Si [target.GetShortUINameNotMe] es un [diablerist|E], se le revelará [target.GetHerHis] [secret|E]." #NT!
+ a_taste_for_blood_script_tooltip: "Si [target.GetShortUINameNotMe] es un $pod_diablerist$, se le revelará [target.GetHerHis] [secret|E]." #NT!
  a_taste_for_blood_toast_failure: "[target.GetSheHe|U] no ha cometido Diablerie" #NT!
  spell_blood_rage_name: "[bs_spell|E]: Furia de sangre" #NT!
  spell_blood_rage_cost: "2 @blood_icon!" #NT!
@@ -286,7 +286,7 @@
  ritual_apsu_portal_cost: "250 [gold_i]" #NT!
  ritual_liliths_vengeance_name: "[bs_ritual|E]: La venganza de Lilith" #NT!
  ritual_liliths_vengeance_cost: "250 [gold_i]\n500 [piety_i]\n500 [prestige_i]\n2 @blood_icon!" #NT!
- POD_liliths_vengeance_cast_effect_tt: "Quitar 1 nivel #weak (fila)#! de 5 'estándar' [disciplines|E] #weak (Celeridad, Potencia, Fortaleza, Auspex, Presencia)#!" #NT!
+ POD_liliths_vengeance_cast_effect_tt: "Quitar 1 nivel #weak (fila)#! de 5 'estándar' $pod_disciplines$ #weak (Celeridad, Potencia, Fortaleza, Auspex, Presencia)#!" #NT!
   
  koldunic_rituals_tooltip: "Rituales de brujería koldúnica" #NT!
  ritual_reflections_name: "[bs_ritual|E]: Reflexiones" #NT!

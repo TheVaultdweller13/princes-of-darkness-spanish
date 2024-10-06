@@ -1,7 +1,7 @@
 ﻿l_spanish:
   
  POD_chargen.1.t: "Bienvenido al generador de personajes"
- POD_chargen.1.desc: "Con esta serie de eventos, puedes personalizar tu personaje para el [world_of_darkness|E]. El proceso eliminará todos tus rasgos sobrenaturales existentes. Podrás elegir tu tipo de criatura sobrenatural, tu [Clan|E], tu casa, tu generación, potencialmente tu [Sire|E], tu [disciplines|E], tu camino y tu tipo de depredador.\n\nDependiendo de tu personaje base, es posible que tengas que eliminar algunos parientes heredados."
+ POD_chargen.1.desc: "Con esta serie de eventos, puedes personalizar tu personaje para el [world_of_darkness|E]. El proceso eliminará todos tus rasgos sobrenaturales existentes. Podrás elegir tu tipo de criatura sobrenatural, tu [Clan|E], tu casa, tu generación, potencialmente tu [Sire|E], tu $pod_disciplines$, tu camino y tu tipo de depredador.\n\nDependiendo de tu personaje base, es posible que tengas que eliminar algunos parientes heredados."
  POD_chargen.1.option.a: "Realmente quiero usar el generador de caracteres."
  POD_chargen.1.option.a.tt: "#R ¡ASEGÚRATE DE QUE QUIERES HACERLO! ¡NO HAY VUELTA ATRÁS! ¡ESTO ELIMINARÁ TODOS TUS RASGOS, MODIFICADORES Y SECRETOS SOBRENATURALES EXISTENTES! #!"
  POD_chargen.1.option.b: "No realice cambios y salga del generador de personajes"
@@ -462,8 +462,8 @@
  # POD_chargen.520.option.e: "Quizás no desciendo de [house|E] [house_head.GetHouse.GetBaseName]..."
  # POD_chargen.520.option.e.tt: "Reconsideras mi relación con mi [Sire|E]."
   
- POD_chargen.610.t: "[disciplines|E]"
- POD_chargen.610.desc: "Los poderes de los vampiros se llaman [disciplines|E]. Los diferentes clanes y linajes tienen diferentes [discipline|E] inherentes. [disciplines|E] proporciona bonificaciones pasivas a los atributos, pero algunos también tienen poderes activos que se invocan a través de decisiones o planes. Es probable que invocar disciplinas aumente el hambre de sangre. Ahora confirmarás tu conjunto [Clan|E] y [discipline|E]. Esta es tu última oportunidad de retroceder en la generación de personajes y cambiar tu casa, [Clan|E] o splat."
+ POD_chargen.610.t: "$pod_disciplines$"
+ POD_chargen.610.desc: "Los poderes de los vampiros se llaman $pod_disciplines$. Los diferentes clanes y linajes tienen diferentes [discipline|E] inherentes. $pod_disciplines$ proporciona bonificaciones pasivas a los atributos, pero algunos también tienen poderes activos que se invocan a través de decisiones o planes. Es probable que invocar disciplinas aumente el hambre de sangre. Ahora confirmarás tu conjunto [Clan|E] y [discipline|E]. Esta es tu última oportunidad de retroceder en la generación de personajes y cambiar tu casa, [Clan|E] o splat."
  POD_chargen.610.option.a: "Los guerreros Banu Haqim tienen Quietus, Celerity y Ofuscate."
  POD_chargen.610.option.b: "Los Visires Banu Haqim tienen Auspex, Quietus y Presencia."
  POD_chargen.610.option.c: "Los brujos Banu Haqim tienen Auspex, Quietus y Celerity."
@@ -476,7 +476,7 @@
  POD_chargen.610.option.j: "Impundulu tiene Fortaleza, Nigromancia y Presencia."
  POD_chargen.610.option.k: "Mla Watu tiene Auspex, Fortaleza y Nigromancia."
  POD_chargen.610.option.l: "Nagaraja tiene Auspex, Dominación y Nigromancia."
- POD_chargen.610.option.m: "Caitiff con físico [disciplines|E]: Celeridad, Fortaleza y Potencia."
+ POD_chargen.610.option.m: "Caitiff con físico $pod_disciplines$: Celeridad, Fortaleza y Potencia."
  POD_chargen.610.option.n: "Los Gangrel tienen Animalismo, Fortaleza y Proteano."
  POD_chargen.610.option.o: "Los Gangrel griegos tienen Celeridad, Ofuscación y Proteano."
  POD_chargen.610.option.p: "Los Lhiannan tienen Animalismo, Hechicería de Sangre y Presencia."
@@ -543,7 +543,7 @@
  POD_chargen.650.option.a: "Mi naturaleza sobrenatural está oculta."
   
  POD_chargen.670.t: "El hambre"
- POD_chargen.670.desc: "La Bestia tiene hambre. Los vampiros mantienen su existencia inmortal a través de la sangre. La sangre también alimenta sus poderes sobrenaturales. Usar tus habilidades sobrenaturales como [disciplines|E] o la curación fantástica tiene la posibilidad de aumentar tu hambre. Cuanto más hambriento esté un vampiro, más irracional, desesperado, violento y estresado se volverá. Los vampiros solo se sacian por completo drenando a un humano hasta matarlo. Sin embargo, matar humanos erosiona la humanidad de un vampiro, lo que lo hace más susceptible a las tentaciones de la Bestia. Sucumbir por completo a la Bestia es convertirse en un espectro, una criatura impulsada únicamente por su insaciable sed de sangre. Seguir un camino o sendero ayudará a un vampiro a mantener a raya a la Bestia."
+ POD_chargen.670.desc: "La Bestia tiene hambre. Los vampiros mantienen su existencia inmortal a través de la sangre. La sangre también alimenta sus poderes sobrenaturales. Usar tus habilidades sobrenaturales como $pod_disciplines$ o la curación fantástica tiene la posibilidad de aumentar tu hambre. Cuanto más hambriento esté un vampiro, más irracional, desesperado, violento y estresado se volverá. Los vampiros solo se sacian por completo drenando a un humano hasta matarlo. Sin embargo, matar humanos erosiona la humanidad de un vampiro, lo que lo hace más susceptible a las tentaciones de la Bestia. Sucumbir por completo a la Bestia es convertirse en un espectro, una criatura impulsada únicamente por su insaciable sed de sangre. Seguir un camino o sendero ayudará a un vampiro a mantener a raya a la Bestia."
  POD_chargen.670.option.a: "Estoy hambriento."
   
  POD_chargen.710.t: "El camino"
@@ -883,7 +883,7 @@
  POD_chargen.1160.option.j: "El albino" #NT!
   
  POD_chargen.1300.t: "Revenants"
- POD_chargen.1300.desc: "Los esclavos de sangre consumieron la sangre de sus dominadores vampiros, estos ghouls asumieron una parte del poder de la estirpe. En raras ocasiones, algunos de sus hijos nacieron con sangre de vampiro en las venas. Con un mayor dominio de la sangre, son más poderosos que sus padres. Comúnmente llamados "[revenants|E]", los vástagos [ghoul|E] de los Tzimisce [Clan|E] se llaman 'Zadruga'. ¿De qué linaje de [revenants|E] desciendes?"
+ POD_chargen.1300.desc: "Los esclavos de sangre consumieron la sangre de sus dominadores vampiros, estos ghouls asumieron una parte del poder de la estirpe. En raras ocasiones, algunos de sus hijos nacieron con sangre de vampiro en las venas. Con un mayor dominio de la sangre, son más poderosos que sus padres. Comúnmente llamados "$pod_revenants$", los vástagos [ghoul|E] de los Tzimisce [Clan|E] se llaman 'Zadruga'. ¿De qué linaje de $pod_revenants$ desciendes?"
  POD_chargen.1300.option.a: "Zadruga, los descendientes de los Tzimisce"
  POD_chargen.1300.option.b: "Sirvientes de Tal'mahe'Ra, la Mano Negra"
  POD_chargen.1300.option.c: "Siervos de sangre en Europa"
@@ -938,7 +938,7 @@
  POD_chargen.1340.option.h: "Quizás soy de una dinastía diferente [revenant|E]..."
   
  POD_chargen.1350.t: "Dinastías oscuras de Revenant"
- POD_chargen.1350.desc: "[revenants|E] se encuentran en todo el mundo, potencialmente en cualquier lugar donde los vampiros hayan compartido su sangre con mortales para crear ghouls."
+ POD_chargen.1350.desc: "$pod_revenants$ se encuentran en todo el mundo, potencialmente en cualquier lugar donde los vampiros hayan compartido su sangre con mortales para crear ghouls."
  POD_chargen.1350.option.a: "Bomkazi, los socios de Impundulu"
  POD_chargen.1350.option.b: "Hermandad de Kairuán creada por los Banu Haqim"
  POD_chargen.1350.option.c: "Sirvientes de Anushin-Rawan"
@@ -959,7 +959,7 @@
  POD_chargen.1370.option.a: "Mi naturaleza sobrenatural está oculta."
   
  POD_chargen.1380.t: "El hambre"
- POD_chargen.1380.desc: "La Bestia tiene hambre. $POD_splat_vampire_plural$ mantiene su existencia inmortal a través de la sangre. La sangre también alimenta sus poderes sobrenaturales. Esa sangre aún fluye por las venas de [revenants|E]. Usar sus habilidades sobrenaturales como [disciplines|E] o la curación fantástica tiene la posibilidad de aumentar su hambre de sangre. Cuanto más anhelo tenga un [Revenant|E] por la sangre de vampiro, más irracional, desesperado, violento y estresado se vuelve. Con el tiempo, [revenants|E] transforma parte de su sangre mortal en sangre vampírica... canibalizándose a sí mismo de manera efectiva. [revenants|E] también puede reducir su hambre bebiendo la sangre de los vampiros."
+ POD_chargen.1380.desc: "La Bestia tiene hambre. $POD_splat_vampire_plural$ mantiene su existencia inmortal a través de la sangre. La sangre también alimenta sus poderes sobrenaturales. Esa sangre aún fluye por las venas de $pod_revenants$. Usar sus habilidades sobrenaturales como $pod_disciplines$ o la curación fantástica tiene la posibilidad de aumentar su hambre de sangre. Cuanto más anhelo tenga un [Revenant|E] por la sangre de vampiro, más irracional, desesperado, violento y estresado se vuelve. Con el tiempo, $pod_revenants$ transforma parte de su sangre mortal en sangre vampírica... canibalizándose a sí mismo de manera efectiva. $pod_revenants$ también puede reducir su hambre bebiendo la sangre de los vampiros."
  POD_chargen.1380.option.a: "¿Me atrevo a usar los poderes de mi don oscuro?"
   
  POD_chargen.1400.t: "Las órdenes de la Inquisición"
