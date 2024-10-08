@@ -12,8 +12,8 @@
  POD_remove_cultist_interaction: "Rechazar cultista"
  POD_remove_cultist_interaction_desc: "Rechaza la adoración a [recipient.GetFirstNamePossessive], deja de considerar a [recipient.GetHerHim] como tu cultista."
   
- POD_designate_vessel_interaction: "Designar buque"
- POD_designate_vessel_interaction_desc: "Designa [recipient.GetFirstName] como tu próxima embarcación para cuando la actual ya no pueda usarse."
+ POD_designate_vessel_interaction: "Designar recipinete"
+ POD_designate_vessel_interaction_desc: "Designa [recipient.GetFirstName] como tu próximo recipiente para cuando la actual ya no pueda usarse."
   
  POD_possess_host_interaction: "Poseer anfitrión"
  POD_possess_host_interaction_desc: "Posee [recipient.GetFirstName] para poder disfrutar de los placeres mortales o salvarte de ser llamado de nuevo a [UmbraGlossary('abyss')]."
@@ -271,7 +271,7 @@
  POD_you_stored_resolve: "Almacenaste $VALUE|0V$ obtuviste Resolución"
  POD_they_store_resolve: "[CHARACTER.GetShortUIName] tienda $VALUE|0V$ Resolución ganada"
  POD_they_stored_resolve: "[CHARACTER.GetShortUIName] almacenado $VALUE|0V$ obtenido Resolución"
- resolve_vessel_damaged: "Resolver buque dañado"
+ resolve_vessel_damaged: "Resolver recipiente dañado"
   
  POD_secret_demonology_player: "[AddTextIf( ObjectsEqual(CHARACTER.Self,GetPlayer), Localize('POD_secret_demonology_player_hint') )]"
  POD_secret_demonology_player_hint: "#TOOLTIP:POD_secret_demonology_player_xp #weak;L (ver información sobre herramientas para conocer la experiencia actual)#!#!"
