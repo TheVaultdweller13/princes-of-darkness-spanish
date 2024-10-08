@@ -28,15 +28,15 @@
  POD_heist_interaction_two_keys: "Tu objetivo estará en una bóveda cerrada #N;bold#!. Como es un artefacto valioso, tendrás que encontrar #N;bold dos llaves#! durante el [infiltration|E]."
   
  POD_gold_heist_interaction: "Robar oro"
- POD_gold_heist_interaction_desc: "Ve a [infiltration_mission|E] para robar [gold|E] de [recipient.GetShortUINameNoTooltip]"
+ POD_gold_heist_interaction_desc: "Ve a $pod_infiltration_mission$ para robar [gold|E] de [recipient.GetShortUINameNoTooltip]"
  POD_gold_heist_dont_scout: "Prepárate rápidamente"
  POD_gold_heist_scout: "Explorar a fondo"
  POD_cant_scout_hostile_heist: "No puedes reunir suficiente información sobre tus enemigos mortales." #NT!
- POD_gold_heist_interaction_effect: "Irás a un [infiltration_mission|E] para robarle [gold|E] a [recipient.GetShortUIName]."
+ POD_gold_heist_interaction_effect: "Irás a un $pod_infiltration_mission$ para robarle [gold|E] a [recipient.GetShortUIName]."
  POD_gold_heist_interaction_monthly: "El [journey|E] tendrá un [planning_speed|E] de $twelve_months_monthly_num$ por mes."
  POD_gold_heist_interaction_monthly_scouted: "El [journey|E] tendrá un [planning_speed|E] de $two_years_monthly_num$ por mes."
   
  POD_artifact_heist_interaction: "Robo de artefactos"
- POD_artifact_heist_interaction_desc: "Ve a un [infiltration_mission|E] para robar un [artifact|E] de [recipient.GetShortUINameNoTooltip]"
- POD_artifact_heist_interaction_effect: "Irás a un [infiltration_mission|E] para robarle [target.Custom('ColorizedArtifactName')] a [recipient.GetShortUIName]."
+ POD_artifact_heist_interaction_desc: "Ve a un $pod_infiltration_mission$ para robar un [artifact|E] de [recipient.GetShortUINameNoTooltip]"
+ POD_artifact_heist_interaction_effect: "Irás a un $pod_infiltration_mission$ para robarle [target.Custom('ColorizedArtifactName')] a [recipient.GetShortUIName]."
  POD_artifact_heist_interaction_monthly: "#help El [planning_speed|E] de este [journey|E] se basa en tu [stewardship_skill|E].#!"

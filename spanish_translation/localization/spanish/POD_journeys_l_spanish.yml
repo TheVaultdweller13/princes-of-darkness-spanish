@@ -191,7 +191,7 @@
  seek_knowledge_abombwe_planning_confirm: "$POD_journey_planning_confirm_default$"
  seek_knowledge_abombwe_planning_decline: "$POD_journey_planning_decline_default$"
  seek_knowledge_abombwe_travel_title: "$POD_journey_travel_title_seek_knowledge$"
- seek_knowledge_abombwe_travel_desc: "Estoy emocionado por tener la oportunidad de aprender [GetTrait('abombwe').GetName(GetNullCharacter)]. Todos los $pod_cainites$ están librando una batalla inútil contra [the_beast|E]. Tal vez la mejor estrategia sea no luchar después de todo."
+ seek_knowledge_abombwe_travel_desc: "Estoy emocionado por tener la oportunidad de aprender [GetTrait('abombwe').GetName(GetNullCharacter)]. Todos los $pod_cainites$ están librando una batalla inútil contra $pod_the_beast$. Tal vez la mejor estrategia sea no luchar después de todo."
  seek_knowledge_abombwe_travel_confirm: "$POD_journey_travel_confirm_seek_knowledge$"
   
  seek_knowledge_bardo_name: "Aprende una disciplina poco común ([GetTrait('bardo').GetName(GetNullCharacter)])"
@@ -203,7 +203,7 @@
  seek_knowledge_bardo_planning_confirm: "$POD_journey_planning_confirm_default$"
  seek_knowledge_bardo_planning_decline: "$POD_journey_planning_decline_default$"
  seek_knowledge_bardo_travel_title: "$POD_journey_travel_title_seek_knowledge$"
- seek_knowledge_bardo_travel_desc: "Estoy emocionada por tener la oportunidad de aprender [GetTrait('bardo').GetName(GetNullCharacter)]. [the_beast|E] es implacable. Dale un dedo y te arrancará todo el brazo. Un respiro, aunque sea temporal, es algo que todos los [cainite|E] anhelan."
+ seek_knowledge_bardo_travel_desc: "Estoy emocionada por tener la oportunidad de aprender [GetTrait('bardo').GetName(GetNullCharacter)]. $pod_the_beast$ es implacable. Dale un dedo y te arrancará todo el brazo. Un respiro, aunque sea temporal, es algo que todos los [cainite|E] anhelan."
  seek_knowledge_bardo_travel_confirm: "$POD_journey_travel_confirm_seek_knowledge$"
   
  #  seek_knowledge_bloodsorcery_name: "Aprende una disciplina poco común ([GetTrait('bloodsorcery').GetName(GetNullCharacter)])" #NT!
@@ -449,7 +449,7 @@
  seek_knowledge_nagaraja_travel_confirm: "$POD_journey_travel_confirm_seek_knowledge$"
   
  seek_knowledge_chicanery_name: "Aprende el arte común (#TOOLTIP:GAME_TRAIT,art_chicanery,[GetNullCharacter] #L Trucos#!#!)"
- seek_knowledge_chicanery_desc: "#TOOLTIP:GAME_TRAIT,art_chicanery,[GetNullCharacter] #L Chicanery#!#! es ​​el Arte de la Ilusión, que permite al practicante lanzar [cantrips|E] como [GetPerk('fuddle_perk').GetName(GetPlayer)], [GetPerk('veiled_eyes_perk').GetName(GetPlayer)] o [GetPerk('fugue_perk').GetName(GetPlayer)]."
+ seek_knowledge_chicanery_desc: "#TOOLTIP:GAME_TRAIT,art_chicanery,[GetNullCharacter] #L Chicanery#!#! es ​​el Arte de la Ilusión, que permite al practicante lanzar $pod_cantrips$ como [GetPerk('fuddle_perk').GetName(GetPlayer)], [GetPerk('veiled_eyes_perk').GetName(GetPlayer)] o [GetPerk('fugue_perk').GetName(GetPlayer)]."
  seek_knowledge_chicanery_effects: "Aprenderás la ubicación de un maestro que sabe #TOOLTIP:GAME_TRAIT,art_chicanery,[GetNullCharacter] #L Chicanery#!#!. Después de viajar allí, podrás adquirir el [GetTrait('art_chicanery').GetName(GetNullCharacter)] [trait|E], que te permite desbloquear [perks|E] en el #TOOLTIP:GAME_TRAIT,art_chicanery,[GetNullCharacter] #L Chicanery#!#! [lifestyle|E]."
  seek_knowledge_chicanery_tt: "Hacemos un pequeño engaño."
  seek_knowledge_chicanery_planning_title: "La búsqueda de la artimaña"
@@ -461,7 +461,7 @@
  seek_knowledge_chicanery_travel_confirm: "$POD_journey_travel_confirm_seek_knowledge$"
   
  seek_knowledge_legerdemain_name: "Aprende el arte común (#TOOLTIP:GAME_TRAIT,art_legerdemain,[GetNullCharacter] #L Prestidigitación#!#!)"
- seek_knowledge_legerdemain_desc: "#TOOLTIP:GAME_TRAIT,art_legerdemain,[GetNullCharacter] #L Prestidigitación#!#! es ​​el arte de mover y copiar objetos, permitiendo al practicante lanzar [cantrips|E] como [GetPerk('effigy_perk').GetName(GetPlayer)], [GetPerk('mooch_perk').GetName(GetPlayer)] o [GetPerk('phantom_shadows_perk').GetName(GetPlayer)]."
+ seek_knowledge_legerdemain_desc: "#TOOLTIP:GAME_TRAIT,art_legerdemain,[GetNullCharacter] #L Prestidigitación#!#! es ​​el arte de mover y copiar objetos, permitiendo al practicante lanzar $pod_cantrips$ como [GetPerk('effigy_perk').GetName(GetPlayer)], [GetPerk('mooch_perk').GetName(GetPlayer)] o [GetPerk('phantom_shadows_perk').GetName(GetPlayer)]."
  seek_knowledge_legerdemain_effects: "Aprenderás la ubicación de un maestro que sabe #TOOLTIP:GAME_TRAIT,art_legerdemain,[GetNullCharacter] #L Legerdemain#!#!. Después de viajar allí, podrás adquirir el [GetTrait('art_legerdemain').GetName(GetPlayer)] [trait|E], que te permite desbloquear [perks|E] en el #TOOLTIP:GAME_TRAIT,art_legerdemain,[GetNullCharacter] #L Legerdemain#!#! [lifestyle|E]."
  seek_knowledge_legerdemain_tt: "Robar carteras sin ensuciarme las manos."
  seek_knowledge_legerdemain_planning_title: "La búsqueda de la prestidigitación"
@@ -473,7 +473,7 @@
  seek_knowledge_legerdemain_travel_confirm: "$POD_journey_travel_confirm_seek_knowledge$"
   
  seek_knowledge_primal_name: "Aprende el arte común (#TOOLTIP:GAME_TRAIT,art_primal,[GetNullCharacter] #L Primal#!#!)"
- seek_knowledge_primal_desc: "#TOOLTIP:GAME_TRAIT,art_primal,[GetNullCharacter] #L Primal#!#! es ​​el Arte de manipular las fuerzas de la naturaleza, permitiendo al practicante lanzar [cantrips|E] como [GetPerk('eldritch_prime_perk').GetName(GetPlayer)], [GetPerk('oakenshield_perk').GetName(GetPlayer)] o [GetPerk('elder_form_perk').GetName(GetPlayer)]."
+ seek_knowledge_primal_desc: "#TOOLTIP:GAME_TRAIT,art_primal,[GetNullCharacter] #L Primal#!#! es ​​el Arte de manipular las fuerzas de la naturaleza, permitiendo al practicante lanzar $pod_cantrips$ como [GetPerk('eldritch_prime_perk').GetName(GetPlayer)], [GetPerk('oakenshield_perk').GetName(GetPlayer)] o [GetPerk('elder_form_perk').GetName(GetPlayer)]."
  seek_knowledge_primal_effects: "Aprenderás la ubicación de un maestro que sabe #TOOLTIP:GAME_TRAIT,art_primal,[GetNullCharacter] #L Primal#!#!. Después de viajar allí, podrás adquirir el [GetTrait('art_primal').GetName(GetPlayer)] [trait|E], que te permite desbloquear [perks|E] en el #TOOLTIP:GAME_TRAIT,art_primal,[GetNullCharacter] #L Primal#!#! [lifestyle|E]."
  seek_knowledge_primal_tt: "Mi glamour afectará a los elementos mismos."
  seek_knowledge_primal_planning_title: "La búsqueda de [GetTrait('art_primal').GetNameNoTooltip(GetNullCharacter)]"
@@ -485,7 +485,7 @@
  seek_knowledge_primal_travel_confirm: "$POD_journey_travel_confirm_seek_knowledge$"
   
  seek_knowledge_soothsay_name: "Aprende el arte común (#TOOLTIP:GAME_TRAIT,art_soothsay,[GetNullCharacter] #L Adivinación#!#!)"
- seek_knowledge_soothsay_desc: "#TOOLTIP:GAME_TRAIT,art_soothsay,[GetNullCharacter] #L Adivinación#!#! es ​​el arte de ver el futuro, permitiendo al practicante lanzar [cantrips|E] como [GetPerk('omen_perk').GetName(GetPlayer)], [GetPerk('fate_fire_perk').GetName(GetPlayer)] o [GetPerk('fair_is_foul_foul_is_fair_perk').GetName(GetPlayer)]."
+ seek_knowledge_soothsay_desc: "#TOOLTIP:GAME_TRAIT,art_soothsay,[GetNullCharacter] #L Adivinación#!#! es ​​el arte de ver el futuro, permitiendo al practicante lanzar $pod_cantrips$ como [GetPerk('omen_perk').GetName(GetPlayer)], [GetPerk('fate_fire_perk').GetName(GetPlayer)] o [GetPerk('fair_is_foul_foul_is_fair_perk').GetName(GetPlayer)]."
  seek_knowledge_soothsay_effects: "Aprenderás la ubicación de un maestro que sabe #TOOLTIP:GAME_TRAIT,art_soothsay,[GetNullCharacter] #L Adivinación#!#!.. Después de viajar allí, podrás adquirir el [GetTrait('art_soothsay').GetName(GetPlayer)] [trait|E], que te permite desbloquear [perks|E] en el #TOOLTIP:GAME_TRAIT,art_soothsay,[GetNullCharacter] #L Adivinación#!#! [lifestyle|E]."
  seek_knowledge_soothsay_tt: "Rompiendo el velo del tiempo."
  seek_knowledge_soothsay_planning_title: "La búsqueda de la adivinación"
@@ -509,7 +509,7 @@
  seek_knowledge_wayfare_travel_confirm: "$POD_journey_travel_confirm_seek_knowledge$"
   
  seek_knowledge_aphrodesia_name: "Aprende arte raro (#TOOLTIP:GAME_TRAIT,art_aphrodesia,[GetNullCharacter] #L Afrodesia#!#!)"
- seek_knowledge_aphrodesia_desc: "#TOOLTIP:GAME_TRAIT,art_aphrodesia,[GetNullCharacter] #L Afrodesia#!#! es ​​el arte de la seducción, que permite al practicante lanzar [cantrips|E] como [GetPerk('fancy_perk').GetName(GetPlayer)], [GetPerk('covet_perk').GetName(GetPlayer)] o [GetPerk('crave_perk').GetName(GetPlayer)]."
+ seek_knowledge_aphrodesia_desc: "#TOOLTIP:GAME_TRAIT,art_aphrodesia,[GetNullCharacter] #L Afrodesia#!#! es ​​el arte de la seducción, que permite al practicante lanzar $pod_cantrips$ como [GetPerk('fancy_perk').GetName(GetPlayer)], [GetPerk('covet_perk').GetName(GetPlayer)] o [GetPerk('crave_perk').GetName(GetPlayer)]."
  seek_knowledge_aphrodesia_effects: "Aprenderás la ubicación de un maestro que sabe #TOOLTIP:GAME_TRAIT,art_aphrodesia,[GetNullCharacter] #L Afrodesia#!#!. Después de viajar allí, podrás adquirir el [GetTrait('art_aphrodesia').GetName(GetPlayer)] [trait|E], que te permite desbloquear [perks|E] en el #TOOLTIP:GAME_TRAIT,art_aphrodesia,[GetNullCharacter] #L Afrodesia#!#! [lifestyle|E]."
  seek_knowledge_aphrodesia_tt: "Haré que anhelen."
  seek_knowledge_aphrodesia_planning_title: "La búsqueda de Afrodesia"
@@ -521,7 +521,7 @@
  seek_knowledge_aphrodesia_travel_confirm: "$POD_journey_travel_confirm_seek_knowledge$"
   
  seek_knowledge_kryos_name: "Aprende arte raro (#TOOLTIP:GAME_TRAIT,art_kryos,[GetNullCharacter] #L Kryos#!#!)"
- seek_knowledge_kryos_desc: "#TOOLTIP:GAME_TRAIT,art_kryos,[GetNullCharacter] #L Kryos#!#! es ​​el arte de manipular el hielo, permitiendo al practicante lanzar [cantrips|E] como [GetPerk('frost_facsimile_perk').GetName(GetPlayer)], [GetPerk('crysta_prison_perk').GetName(GetPlayer)] o [GetPerk('coldheart_perk').GetName(GetPlayer)]."
+ seek_knowledge_kryos_desc: "#TOOLTIP:GAME_TRAIT,art_kryos,[GetNullCharacter] #L Kryos#!#! es ​​el arte de manipular el hielo, permitiendo al practicante lanzar $pod_cantrips$ como [GetPerk('frost_facsimile_perk').GetName(GetPlayer)], [GetPerk('crysta_prison_perk').GetName(GetPlayer)] o [GetPerk('coldheart_perk').GetName(GetPlayer)]."
  seek_knowledge_kryos_effects: "Aprenderás la ubicación de un maestro que sabe #TOOLTIP:GAME_TRAIT,art_kryos,[GetNullCharacter] #L Kryos#!#!. Después de viajar allí, podrás adquirir el [GetTrait('art_kryos').GetName(GetPlayer)] [trait|E], que te permite desbloquear [perks|E] en el #TOOLTIP:GAME_TRAIT,art_kryos,[GetNullCharacter] #L Kryos#!#! [lifestyle|E]."
  seek_knowledge_kryos_tt: "Un corazón frío para acciones frías."
  seek_knowledge_kryos_planning_title: "La búsqueda de Kryos"
@@ -533,7 +533,7 @@
  seek_knowledge_kryos_travel_confirm: "$POD_journey_travel_confirm_seek_knowledge$"
   
  seek_knowledge_metamorphosis_name: "Aprende arte raro (#TOOLTIP:GAME_TRAIT,art_metamorphosis,[GetNullCharacter] #L Metamorfosis#!#!)"
- seek_knowledge_metamorphosis_desc: "#TOOLTIP:GAME_TRAIT,art_metamorphosis,[GetNullCharacter] #L Metamorfosis#!#! es ​​el Arte de transformar seres vivos, permitiendo al practicante lanzar [cantrips|E] como [GetPerk('go_ask_alice_perk').GetName(GetPlayer)], [GetPerk('hidden_form_perk').GetName(GetPlayer)] o [GetPerk('mythic_transformation_perk').GetName(GetPlayer)]."
+ seek_knowledge_metamorphosis_desc: "#TOOLTIP:GAME_TRAIT,art_metamorphosis,[GetNullCharacter] #L Metamorfosis#!#! es ​​el Arte de transformar seres vivos, permitiendo al practicante lanzar $pod_cantrips$ como [GetPerk('go_ask_alice_perk').GetName(GetPlayer)], [GetPerk('hidden_form_perk').GetName(GetPlayer)] o [GetPerk('mythic_transformation_perk').GetName(GetPlayer)]."
  seek_knowledge_metamorphosis_effects: "Aprenderás la ubicación de un maestro que sabe #TOOLTIP:GAME_TRAIT,art_metamorphosis,[GetNullCharacter] #L Metamorfosis#!#!. Después de viajar allí, podrás adquirir el [GetTrait('art_metamorphosis').GetName(GetPlayer)] [trait|E], que te permite desbloquear [perks|E] en el #TOOLTIP:GAME_TRAIT,art_metamorphosis,[GetNullCharacter] #L Metamorfosis#!#! [lifestyle|E]."
  seek_knowledge_metamorphosis_tt: "Seré el héroe de las mil caras."
  seek_knowledge_metamorphosis_planning_title: "La búsqueda de la metamorfosis"
@@ -557,7 +557,7 @@
  seek_knowledge_pyretics_travel_confirm: "$POD_journey_travel_confirm_seek_knowledge$"
   
  seek_knowledge_chronos_name: "Aprende el arte noble (#TOOLTIP:GAME_TRAIT,art_chronos,[GetNullCharacter] #L Chronos#!#!)"
- seek_knowledge_chronos_desc: "#TOOLTIP:GAME_TRAIT,art_chronos,[GetNullCharacter] #L Chronos#!#! es ​​el arte de manipular el tiempo, permitiendo al practicante lanzar [cantrips|E] como [GetPerk('dream_time_perk').GetName(GetPlayer)], [GetPerk('permanence_perk').GetName(GetPlayer)] o [GetPerk('reversa_of_fortune_perk').GetName(GetPlayer)]."
+ seek_knowledge_chronos_desc: "#TOOLTIP:GAME_TRAIT,art_chronos,[GetNullCharacter] #L Chronos#!#! es ​​el arte de manipular el tiempo, permitiendo al practicante lanzar $pod_cantrips$ como [GetPerk('dream_time_perk').GetName(GetPlayer)], [GetPerk('permanence_perk').GetName(GetPlayer)] o [GetPerk('reversa_of_fortune_perk').GetName(GetPlayer)]."
  seek_knowledge_chronos_effects: "Aprenderás la ubicación de un maestro que sabe #TOOLTIP:GAME_TRAIT,art_chronos,[GetNullCharacter] #L Chronos#!#!. Después de viajar allí, podrás adquirir el [GetTrait('art_chronos').GetName(GetPlayer)] [trait|E], que te permite desbloquear [perks|E] en el #TOOLTIP:GAME_TRAIT,art_chronos,[GetNullCharacter] #L Chronos#!#! [lifestyle|E]."
  seek_knowledge_chronos_tt: "Y ahora, el tiempo irá de lado."
  seek_knowledge_chronos_planning_title: "La búsqueda de Chronos"
@@ -581,7 +581,7 @@
  seek_knowledge_dream_craft_travel_confirm: "$POD_journey_travel_confirm_seek_knowledge$"
   
  seek_knowledge_naming_name: "Aprende el arte noble (#TOOLTIP:GAME_TRAIT,art_naming,[GetNullCharacter] #L Nombramiento#!#!)"
- seek_knowledge_naming_desc: "#TOOLTIP:GAME_TRAIT,art_naming,[GetNullCharacter] #L Nombrar#!#! es ​​el Arte de los nombres verdaderos, que permite al practicante pronunciar [cantrips|E] como [GetPerk('rune_perk').GetName(GetPlayer)], [GetPerk('saining_perk').GetName(GetPlayer)] o [GetPerk('reweaving_perk').GetName(GetPlayer)]."
+ seek_knowledge_naming_desc: "#TOOLTIP:GAME_TRAIT,art_naming,[GetNullCharacter] #L Nombrar#!#! es ​​el Arte de los nombres verdaderos, que permite al practicante pronunciar $pod_cantrips$ como [GetPerk('rune_perk').GetName(GetPlayer)], [GetPerk('saining_perk').GetName(GetPlayer)] o [GetPerk('reweaving_perk').GetName(GetPlayer)]."
  seek_knowledge_naming_effects: "Aprenderás la ubicación de un maestro que sabe #TOOLTIP:GAME_TRAIT,art_naming,[GetNullCharacter] #L Naming#!#!. Después de viajar allí, podrás adquirir el [GetTrait('art_naming').GetName(GetPlayer)] [trait|E], que te permite desbloquear [perks|E] en el #TOOLTIP:GAME_TRAIT,art_naming,[GetNullCharacter] #L Naming#!#! [lifestyle|E]."
  seek_knowledge_naming_tt: "Las palabras de violencia rompen el silencio."
  seek_knowledge_naming_planning_title: "La búsqueda del nombre"
@@ -593,7 +593,7 @@
  seek_knowledge_naming_travel_confirm: "$POD_journey_travel_confirm_seek_knowledge$"
   
  seek_knowledge_sovereign_name: "Aprende el arte noble (#TOOLTIP:GAME_TRAIT,art_sovereign,[GetNullCharacter] #L Soberano#!#!)"
- seek_knowledge_sovereign_desc: "#TOOLTIP:GAME_TRAIT,art_sovereign,[GetNullCharacter] #L Soberano#!#! es ​​el Arte de gobernar, que permite al practicante lanzar [cantrips|E] como [GetPerk('dictum_perk').GetName(GetPlayer)], [GetPerk('grandeur_perk').GetName(GetPlayer)] o [GetPerk('geas_ban_perk').GetName(GetPlayer)]."
+ seek_knowledge_sovereign_desc: "#TOOLTIP:GAME_TRAIT,art_sovereign,[GetNullCharacter] #L Soberano#!#! es ​​el Arte de gobernar, que permite al practicante lanzar $pod_cantrips$ como [GetPerk('dictum_perk').GetName(GetPlayer)], [GetPerk('grandeur_perk').GetName(GetPlayer)] o [GetPerk('geas_ban_perk').GetName(GetPlayer)]."
  seek_knowledge_sovereign_effects: "Aprenderás la ubicación de un maestro que sabe #TOOLTIP:GAME_TRAIT,art_sovereign,[GetNullCharacter] #L Soberano#!#!. Después de viajar allí, podrás adquirir el [GetTrait('art_sovereign').GetName(GetPlayer)] [trait|E], que te permite desbloquear [perks|E] en el #TOOLTIP:GAME_TRAIT,art_sovereign,[GetNullCharacter] #L Soberano#!#! [lifestyle|E]."
  seek_knowledge_sovereign_tt: "El poder personificado."
  seek_knowledge_sovereign_planning_title: "La búsqueda de la soberanía"
@@ -677,7 +677,7 @@
  seek_knowledge_stratus_travel_confirm: "$POD_journey_travel_confirm_seek_knowledge$"
   
  seek_knowledge_verdage_name: "Aprende Sliver ([GetTrait('art_verdage').GetName(GetNullCharacter)])"
- seek_knowledge_verdage_desc: "[GetTrait('art_verdage').GetName(GetNullCharacter)] es la Astilla de tierra y plantas, practicada por #TOOLTIP:GAME_TRAIT,kubera,[GetNullCharacter] #L Kuberas#!#!. Un practicante puede lanzar [cantrips|E] como [GetPerk('solarium_perk').GetName(GetPlayer)], [GetPerk('coalesce_perk').GetName(GetPlayer)] o [GetPerk('mold_perk').GetName(GetPlayer)]."
+ seek_knowledge_verdage_desc: "[GetTrait('art_verdage').GetName(GetNullCharacter)] es la Astilla de tierra y plantas, practicada por #TOOLTIP:GAME_TRAIT,kubera,[GetNullCharacter] #L Kuberas#!#!. Un practicante puede lanzar $pod_cantrips$ como [GetPerk('solarium_perk').GetName(GetPlayer)], [GetPerk('coalesce_perk').GetName(GetPlayer)] o [GetPerk('mold_perk').GetName(GetPlayer)]."
  seek_knowledge_verdage_effects: "Aprenderás la ubicación de un maestro que conoce [GetTrait('art_verdage').GetName(GetNullCharacter)]. Después de viajar allí, podrás adquirir [GetTrait('art_verdage').GetName(GetPlayer)] [trait|E], que te permite desbloquear [perks|E] en [GetTrait('art_verdage').GetName(GetNullCharacter)] [lifestyle|E]."
  seek_knowledge_verdage_tt: "El bosque me hablará."
  seek_knowledge_verdage_planning_title: "La búsqueda de la verdage"
@@ -846,8 +846,8 @@
  realm_mastery_generic_travel_desc: "He reforzado mi comprensión de la etiqueta cortesana y he preparado lujosos obsequios para el [Select_CString( DidShatteringHappen, 'Lost Ones', 'Nobles' )] de [PlayerJourneyDestination.GetHolding.GetCurrentSpecialBuildingType.GetName]. Espero que sea suficiente, sabiendo lo volubles que pueden ser."
   
  realm_mastery_actor_name: "Lograr [GetTrait('realm_actor').GetName(GetNullCharacter)]"
- realm_mastery_actor_desc: "El #TOOLTIP:GAME_TRAIT,realm_actor,[GetNullCharacter] #L Reino de Actor#!#! es ​​el [fae_realm|E] de los conocidos. Un $POD_splat_fae$ con poco conocimiento de este [fae_realm|E] solo puede lanzar [cantrips|E] sobre personajes que conoce muy bien. Se requiere maestría si uno quiere lanzar [cantrips|E] a sus odiados enemigos."
- realm_mastery_actor_effects: "Viajarás a un feudo y pedirás a [Select_CString( DidShatteringHappen, 'Lost Ones', 'Nobles' )] que te conceda el conocimiento del #TOOLTIP:GAME_TRAIT,realm_actor,[GetNullCharacter] #L Actor#!#! [fae_realm|E]. Si tienes éxito, obtendrás el [GetTrait('realm_actor').GetName(GetNullCharacter)] [trait|E], que te permitirá desbloquear la ventaja final en el #TOOLTIP:GAME_TRAIT,realm_actor,[GetNullCharacter] #L Actor#!#! #TOOLTIP:GAME_TRAIT,realm_actor,[GetNullCharacter]0."
+ realm_mastery_actor_desc: "El #TOOLTIP:GAME_TRAIT,realm_actor,[GetNullCharacter] #L Reino de Actor#!#! es ​​el $pod_fae_realm$ de los conocidos. Un $POD_splat_fae$ con poco conocimiento de este $pod_fae_realm$ solo puede lanzar $pod_cantrips$ sobre personajes que conoce muy bien. Se requiere maestría si uno quiere lanzar $pod_cantrips$ a sus odiados enemigos."
+ realm_mastery_actor_effects: "Viajarás a un feudo y pedirás a [Select_CString( DidShatteringHappen, 'Lost Ones', 'Nobles' )] que te conceda el conocimiento del #TOOLTIP:GAME_TRAIT,realm_actor,[GetNullCharacter] #L Actor#!#! $pod_fae_realm$. Si tienes éxito, obtendrás el [GetTrait('realm_actor').GetName(GetNullCharacter)] [trait|E], que te permitirá desbloquear la ventaja final en el #TOOLTIP:GAME_TRAIT,realm_actor,[GetNullCharacter] #L Actor#!#! #TOOLTIP:GAME_TRAIT,realm_actor,[GetNullCharacter]0."
  realm_mastery_actor_isvalid: "$EFFECT_LIST_BULLET$Tienes el [GetPerk('realm_actor_4_perk').GetName(GetPlayer)] [perk|E]\n$realm_mastery_generic_isvalid$"
  realm_mastery_actor_tt: "Encantaré a mis adversarios."
  realm_mastery_actor_planning_title: "La búsqueda del dominio del actor de reino"
@@ -859,8 +859,8 @@
  realm_mastery_actor_travel_confirm: "$POD_journey_travel_confirm_realm_mastery$"
   
  realm_mastery_fae_name: "Lograr [GetTrait('realm_fae').GetName(GetNullCharacter)]"
- realm_mastery_fae_desc: "El reino de las hadas #TOOLTIP:GAME_TRAIT,realm_fae,[GetNullCharacter] #L#!#! es ​​el [fae_realm|E] de lo sobrenatural. Un $POD_splat_fae$ con poco conocimiento de este [fae_realm|E] solo puede lanzar [cantrips|E] sobre mortales. Se requiere maestría si uno quiere lanzar [cantrips|E] sobre entidades poderosas como $POD_splat_mummy_plural$ o $POD_splat_demon_plural$."
- realm_mastery_fae_effects: "Viajarás a un feudo y pedirás a [Select_CString( DidShatteringHappen, 'Lost Ones', 'Nobles' )] que te conceda el conocimiento de los #TOOLTIP:GAME_TRAIT,realm_fae,[GetNullCharacter] #L Fae#!#! [fae_realm|E]. Si tienes éxito, obtendrás los [GetTrait('realm_fae').GetName(GetNullCharacter)] [trait|E], que te permitirán desbloquear la última ventaja de los #TOOLTIP:GAME_TRAIT,realm_fae,[GetNullCharacter] #L Fae#!#! #TOOLTIP:GAME_TRAIT,realm_fae,[GetNullCharacter]0."
+ realm_mastery_fae_desc: "El reino de las hadas #TOOLTIP:GAME_TRAIT,realm_fae,[GetNullCharacter] #L#!#! es ​​el $pod_fae_realm$ de lo sobrenatural. Un $POD_splat_fae$ con poco conocimiento de este $pod_fae_realm$ solo puede lanzar $pod_cantrips$ sobre mortales. Se requiere maestría si uno quiere lanzar $pod_cantrips$ sobre entidades poderosas como $POD_splat_mummy_plural$ o $POD_splat_demon_plural$."
+ realm_mastery_fae_effects: "Viajarás a un feudo y pedirás a [Select_CString( DidShatteringHappen, 'Lost Ones', 'Nobles' )] que te conceda el conocimiento de los #TOOLTIP:GAME_TRAIT,realm_fae,[GetNullCharacter] #L Fae#!#! $pod_fae_realm$. Si tienes éxito, obtendrás los [GetTrait('realm_fae').GetName(GetNullCharacter)] [trait|E], que te permitirán desbloquear la última ventaja de los #TOOLTIP:GAME_TRAIT,realm_fae,[GetNullCharacter] #L Fae#!#! #TOOLTIP:GAME_TRAIT,realm_fae,[GetNullCharacter]0."
  realm_mastery_fae_isvalid: "$EFFECT_LIST_BULLET$Tienes el [GetPerk('realm_fae_4_perk').GetName(GetPlayer)] [perk|E]\n$realm_mastery_generic_isvalid$"
  realm_mastery_fae_tt: "Ni siquiera los demonios resistirán mi magia."
  realm_mastery_fae_planning_title: "La búsqueda del dominio del reino de las hadas"
@@ -872,8 +872,8 @@
  realm_mastery_fae_travel_confirm: "$POD_journey_travel_confirm_realm_mastery$"
   
  realm_mastery_prop_name: "Lograr [GetTrait('realm_prop').GetName(GetNullCharacter)]"
- realm_mastery_prop_desc: "El reino de objetos #TOOLTIP:GAME_TRAIT,realm_prop,[GetNullCharacter] #L #!#! es ​​el [fae_realm|E] de los objetos creados. Un $POD_splat_fae$ con poco conocimiento de este [fae_realm|E] solo puede lanzar [cantrips|E] sobre [artifacts|E] sin valor. Se requiere maestría si uno quiere lanzar [cantrips|E] sobre tesoros únicos."
- realm_mastery_prop_effects: "Viajarás a un feudo y solicitarás al [Select_CString( DidShatteringHappen, 'Lost Ones', 'Nobles' )] que te conceda el conocimiento de la #TOOLTIP:GAME_TRAIT,realm_prop,[GetNullCharacter] #L Prop#!#! [fae_realm|E]. Si tienes éxito, obtendrás el [GetTrait('realm_prop').GetName(GetNullCharacter)] [trait|E], que te permitirá desbloquear la ventaja final en la #TOOLTIP:GAME_TRAIT,realm_prop,[GetNullCharacter] #L Prop#!#! #TOOLTIP:GAME_TRAIT,realm_prop,[GetNullCharacter]0."
+ realm_mastery_prop_desc: "El reino de objetos #TOOLTIP:GAME_TRAIT,realm_prop,[GetNullCharacter] #L #!#! es ​​el $pod_fae_realm$ de los objetos creados. Un $POD_splat_fae$ con poco conocimiento de este $pod_fae_realm$ solo puede lanzar $pod_cantrips$ sobre [artifacts|E] sin valor. Se requiere maestría si uno quiere lanzar $pod_cantrips$ sobre tesoros únicos."
+ realm_mastery_prop_effects: "Viajarás a un feudo y solicitarás al [Select_CString( DidShatteringHappen, 'Lost Ones', 'Nobles' )] que te conceda el conocimiento de la #TOOLTIP:GAME_TRAIT,realm_prop,[GetNullCharacter] #L Prop#!#! $pod_fae_realm$. Si tienes éxito, obtendrás el [GetTrait('realm_prop').GetName(GetNullCharacter)] [trait|E], que te permitirá desbloquear la ventaja final en la #TOOLTIP:GAME_TRAIT,realm_prop,[GetNullCharacter] #L Prop#!#! #TOOLTIP:GAME_TRAIT,realm_prop,[GetNullCharacter]0."
  realm_mastery_prop_isvalid: "$EFFECT_LIST_BULLET$Tienes el [GetPerk('realm_prop_4_perk').GetName(GetPlayer)] [perk|E]\n$realm_mastery_generic_isvalid$"
  realm_mastery_prop_tt: "Los tesoros de la leyenda en la palma de mi mano."
  realm_mastery_prop_planning_title: "La búsqueda del dominio de los objetos del reino"
@@ -885,8 +885,8 @@
  realm_mastery_prop_travel_confirm: "$POD_journey_travel_confirm_realm_mastery$"
   
  realm_mastery_nature_name: "Lograr [GetTrait('realm_nature').GetName(GetNullCharacter)]"
- realm_mastery_nature_desc: "El Reino de la Naturaleza #TOOLTIP:GAME_TRAIT,realm_nature,[GetNullCharacter] #L#!#! es ​​el [fae_realm|E] de los objetos naturales. Un $POD_splat_fae$ con poco conocimiento de este [fae_realm|E] no puede afectar a los fenómenos naturales en absoluto. Se requiere maestría si uno quiere lanzar [cantrips|E] que creen desastres naturales."
- realm_mastery_nature_effects: "Viajarás a un feudo y pedirás a [Select_CString( DidShatteringHappen, 'Lost Ones', 'Nobles' )] que te conceda el conocimiento de la #TOOLTIP:GAME_TRAIT,realm_nature,[GetNullCharacter] #L Naturaleza#!#! [fae_realm|E]. Si tienes éxito, obtendrás el [GetTrait('realm_nature').GetName(GetNullCharacter)] [trait|E], que te permitirá desbloquear la ventaja final de la #TOOLTIP:GAME_TRAIT,realm_nature,[GetNullCharacter] #L Naturaleza#!#! #TOOLTIP:GAME_TRAIT,realm_nature,[GetNullCharacter]0."
+ realm_mastery_nature_desc: "El Reino de la Naturaleza #TOOLTIP:GAME_TRAIT,realm_nature,[GetNullCharacter] #L#!#! es ​​el $pod_fae_realm$ de los objetos naturales. Un $POD_splat_fae$ con poco conocimiento de este $pod_fae_realm$ no puede afectar a los fenómenos naturales en absoluto. Se requiere maestría si uno quiere lanzar $pod_cantrips$ que creen desastres naturales."
+ realm_mastery_nature_effects: "Viajarás a un feudo y pedirás a [Select_CString( DidShatteringHappen, 'Lost Ones', 'Nobles' )] que te conceda el conocimiento de la #TOOLTIP:GAME_TRAIT,realm_nature,[GetNullCharacter] #L Naturaleza#!#! $pod_fae_realm$. Si tienes éxito, obtendrás el [GetTrait('realm_nature').GetName(GetNullCharacter)] [trait|E], que te permitirá desbloquear la ventaja final de la #TOOLTIP:GAME_TRAIT,realm_nature,[GetNullCharacter] #L Naturaleza#!#! #TOOLTIP:GAME_TRAIT,realm_nature,[GetNullCharacter]0."
  realm_mastery_nature_isvalid: "$EFFECT_LIST_BULLET$Tienes el [GetPerk('realm_nature_4_perk').GetName(GetPlayer)] [perk|E]\n$realm_mastery_generic_isvalid$"
  realm_mastery_nature_tt: "Meteoros, tormentas e inundaciones: ¡Obedeced mi orden!"
  realm_mastery_nature_planning_title: "La búsqueda del dominio de la naturaleza del reino"
@@ -898,8 +898,8 @@
  realm_mastery_nature_travel_confirm: "$POD_journey_travel_confirm_realm_mastery$"
   
  realm_mastery_scene_name: "Lograr [GetTrait('realm_scene').GetName(GetNullCharacter)]"
- realm_mastery_scene_desc: "El reino de la escena #TOOLTIP:GAME_TRAIT,realm_scene,[GetNullCharacter] #L#!#! es ​​el [fae_realm|E] del espacio. Un $POD_splat_fae$ con poco conocimiento de este [fae_realm|E] solo puede lanzar [cantrips|E] sobre objetivos en la misma ubicación que él. Se requiere maestría si uno quiere lanzar [cantrips|E] a distancias globales."
- realm_mastery_scene_effects: "Viajarás a un feudo y pedirás a [Select_CString( DidShatteringHappen, 'Lost Ones', 'Nobles' )] que te conceda el conocimiento de la Escena #TOOLTIP:GAME_TRAIT,realm_scene,[GetNullCharacter] #L#!#! [fae_realm|E]. Si tienes éxito, obtendrás el [GetTrait('realm_scene').GetName(GetNullCharacter)] [trait|E], que te permitirá desbloquear la ventaja final en la Escena #TOOLTIP:GAME_TRAIT,realm_scene,[GetNullCharacter] #L#!#! #TOOLTIP:GAME_TRAIT,realm_scene,[GetNullCharacter]0."
+ realm_mastery_scene_desc: "El reino de la escena #TOOLTIP:GAME_TRAIT,realm_scene,[GetNullCharacter] #L#!#! es ​​el $pod_fae_realm$ del espacio. Un $POD_splat_fae$ con poco conocimiento de este $pod_fae_realm$ solo puede lanzar $pod_cantrips$ sobre objetivos en la misma ubicación que él. Se requiere maestría si uno quiere lanzar $pod_cantrips$ a distancias globales."
+ realm_mastery_scene_effects: "Viajarás a un feudo y pedirás a [Select_CString( DidShatteringHappen, 'Lost Ones', 'Nobles' )] que te conceda el conocimiento de la Escena #TOOLTIP:GAME_TRAIT,realm_scene,[GetNullCharacter] #L#!#! $pod_fae_realm$. Si tienes éxito, obtendrás el [GetTrait('realm_scene').GetName(GetNullCharacter)] [trait|E], que te permitirá desbloquear la ventaja final en la Escena #TOOLTIP:GAME_TRAIT,realm_scene,[GetNullCharacter] #L#!#! #TOOLTIP:GAME_TRAIT,realm_scene,[GetNullCharacter]0."
  realm_mastery_scene_isvalid: "$EFFECT_LIST_BULLET$Tienes el [GetPerk('realm_scene_4_perk').GetName(GetPlayer)] [perk|E]\n$realm_mastery_generic_isvalid$"
  realm_mastery_scene_tt: "Mi magia envolverá al mundo entero."
  realm_mastery_scene_planning_title: "La búsqueda del dominio de la escena del reino"
@@ -911,8 +911,8 @@
  realm_mastery_scene_travel_confirm: "$POD_journey_travel_confirm_realm_mastery$"
   
  realm_mastery_time_name: "Lograr [GetTrait('realm_time').GetName(GetNullCharacter)]"
- realm_mastery_time_desc: "El Reino del Tiempo #TOOLTIP:GAME_TRAIT,realm_time,[GetNullCharacter] #L#!#! es ​​el [fae_realm|E] de la comprensión temporal. Un $POD_splat_fae$ con poco conocimiento de este [fae_realm|E] verá cómo su [cantrips|E] se desvanece en cuestión de meses. Se requiere maestría si uno quiere lanzar [cantrips|E] que duren para siempre."
- realm_mastery_time_effects: "Viajarás a un feudo y pedirás a [Select_CString( DidShatteringHappen, 'Lost Ones', 'Nobles' )] que te conceda el conocimiento del #TOOLTIP:GAME_TRAIT,realm_time,[GetNullCharacter] #L Tiempo#!#! [fae_realm|E]. Si tienes éxito, obtendrás el [GetTrait('realm_time').GetName(GetNullCharacter)] [trait|E], que te permitirá desbloquear la ventaja final en el #TOOLTIP:GAME_TRAIT,realm_time,[GetNullCharacter] #L Tiempo#!#! #TOOLTIP:GAME_TRAIT,realm_time,[GetNullCharacter]0."
+ realm_mastery_time_desc: "El Reino del Tiempo #TOOLTIP:GAME_TRAIT,realm_time,[GetNullCharacter] #L#!#! es ​​el $pod_fae_realm$ de la comprensión temporal. Un $POD_splat_fae$ con poco conocimiento de este $pod_fae_realm$ verá cómo su $pod_cantrips$ se desvanece en cuestión de meses. Se requiere maestría si uno quiere lanzar $pod_cantrips$ que duren para siempre."
+ realm_mastery_time_effects: "Viajarás a un feudo y pedirás a [Select_CString( DidShatteringHappen, 'Lost Ones', 'Nobles' )] que te conceda el conocimiento del #TOOLTIP:GAME_TRAIT,realm_time,[GetNullCharacter] #L Tiempo#!#! $pod_fae_realm$. Si tienes éxito, obtendrás el [GetTrait('realm_time').GetName(GetNullCharacter)] [trait|E], que te permitirá desbloquear la ventaja final en el #TOOLTIP:GAME_TRAIT,realm_time,[GetNullCharacter] #L Tiempo#!#! #TOOLTIP:GAME_TRAIT,realm_time,[GetNullCharacter]0."
  realm_mastery_time_isvalid: "$EFFECT_LIST_BULLET$Tienes el [GetPerk('realm_time_4_perk').GetName(GetPlayer)] [perk|E]\n$realm_mastery_generic_isvalid$"
  realm_mastery_time_tt: "Glamour sin fin."
  realm_mastery_time_planning_title: "La búsqueda del dominio del tiempo en el reino"
@@ -940,7 +940,7 @@
  assemble_artifact_travel_confirm: ""
   
  golconda_1_name: "Aprende a dominar a tu Bestia"
- golconda_1_desc: "Hay rumores de que $POD_splat_vampire_plural$ logró trascender a [the_beast|E] para siempre, llegando a un estado en el que ya no necesita beber sangre. Suena demasiado bueno para ser verdad, pero si hay respuestas, vale la pena encontrarlas."
+ golconda_1_desc: "Hay rumores de que $POD_splat_vampire_plural$ logró trascender a $pod_the_beast$ para siempre, llegando a un estado en el que ya no necesita beber sangre. Suena demasiado bueno para ser verdad, pero si hay respuestas, vale la pena encontrarlas."
  golconda_1_effects: "Aprenderá la ubicación de un maestro que puede orientarlo en el camino correcto."
  golconda_1_tt: "¿Es posible la paz interior?"
  golconda_1_planning_title: "Entendiendo al enemigo interior"
@@ -948,7 +948,7 @@
  golconda_1_planning_confirm: "$POD_journey_planning_confirm_default$"
  golconda_1_planning_decline: "$POD_journey_planning_decline_default$"
  golconda_1_travel_title: "$POD_journey_travel_title_seek_knowledge$"
- golconda_1_travel_desc: "Debe haber algo extraño en las respuestas que busco. ¿No busca todo [cainite|E] un respiro de [the_beast|E]? Entonces, ¿por qué no se conocen más las soluciones a este problema? Supongo que pronto descubriré por qué."
+ golconda_1_travel_desc: "Debe haber algo extraño en las respuestas que busco. ¿No busca todo [cainite|E] un respiro de $pod_the_beast$? Entonces, ¿por qué no se conocen más las soluciones a este problema? Supongo que pronto descubriré por qué."
  golconda_1_travel_confirm: "$POD_journey_travel_confirm_seek_knowledge$"
   
  golconda_2_name: "Haz las paces con tu bestia"
@@ -956,7 +956,7 @@
  golconda_2_effects: "Obtendrás [trait_level_track_xp|E] como [GetTrait('golconda_seeker').GetName(GetPlayer)]. También obtendrás [trait|E] si aún no lo tienes.\n\nCuanto más [trait_level_track_xp|E] tengas, mayores serán tus posibilidades de lograr un avance importante.\n\n#X Todo el progreso en este [journey|E] se pierde al entrar en frenesí o al cometer un asesinato o robo.#!"
  golconda_2_tt: "Un viaje de mil pasos."
  golconda_2_planning_title: "Contemplando al depredador interior"
- golconda_2_planning_desc: "[the_beast|E] ha estado carcomiendo el fondo de mi mente como siempre, y he pasado un buen rato observándolo y tratando de obtener una comprensión más profunda de su comportamiento.\n\nNecesito un tiempo de tranquilidad para pensar más profundamente en lo que he aprendido.\n\nEsto probablemente causará algo de [stress|E]."
+ golconda_2_planning_desc: "$pod_the_beast$ ha estado carcomiendo el fondo de mi mente como siempre, y he pasado un buen rato observándolo y tratando de obtener una comprensión más profunda de su comportamiento.\n\nNecesito un tiempo de tranquilidad para pensar más profundamente en lo que he aprendido.\n\nEsto probablemente causará algo de [stress|E]."
  golconda_2_planning_confirm: "Estoy listo."
  golconda_2_planning_decline: "Debería contemplar esto en un momento menos estresante."
  # golconda_2_travel_title: ""
@@ -966,11 +966,11 @@
  golconda_widget_tt: "Comenzarás inmediatamente otro [journey|E] para obtener información sobre [golconda|E].\nCosto: [piety_i|E] #V 1000#!"
   
  golconda_3_name: "el suspiro"
- golconda_3_desc: "Todos mis preparativos me han llevado a esto. Me enfrentaré a [the_beast|E] de una vez por todas."
+ golconda_3_desc: "Todos mis preparativos me han llevado a esto. Me enfrentaré a $pod_the_beast$ de una vez por todas."
  golconda_3_effects: "Entrarás en lo más profundo de tu alma para la confrontación final.\n\n#X Basado en tu [trait_level_track_xp|E] como [GetTrait('golconda_seeker').GetName(GetPlayer)], tienes un #V [GetPlayer.MakeScope.ScriptValue('suspire_success_chance')]%#! de posibilidades de salir con tu mente intacta.#!"
  golconda_3_tt: "Todo o nada."
  golconda_3_planning_title: "Destino final"
- golconda_3_planning_desc: "Sé lo que tengo que hacer. Dejaré que la vitae fortalezca mis sentidos, de forma similar a usar [GetTrait('auspex').GetName(GetNullCharacter)]. Luego enviaré mi conciencia hacia adentro, al lugar donde reside [the_beast|E].\n\nLo que no sé es lo que me espera.\n\nSolo hay una forma de averiguarlo."
+ golconda_3_planning_desc: "Sé lo que tengo que hacer. Dejaré que la vitae fortalezca mis sentidos, de forma similar a usar [GetTrait('auspex').GetName(GetNullCharacter)]. Luego enviaré mi conciencia hacia adentro, al lugar donde reside $pod_the_beast$.\n\nLo que no sé es lo que me espera.\n\nSolo hay una forma de averiguarlo."
  golconda_3_planning_confirm: "Es hora de un acto de fe."
  golconda_3_planning_decline: "Aún no es momento de dar el salto."
  # golconda_3_travel_title: ""
@@ -1109,14 +1109,14 @@
  #ritual_casting_desc: ""
  #ritual_casting_effects: ""
  ritual_casting_tt: "Preparándose para aprovechar lo oculto." #NT!
- ritual_casting_planning_title: "Lanzando el [bs_ritual|E]" #NT!
- ritual_casting_planning_desc: "Los preparativos requirieron de una gran disciplina y fortaleza mental. Ahora estoy más preparado que nunca.\n\nCon este [bs_ritual|E], mi voluntad se imprimirá en la realidad, utilizando la sangre como medio.\n\nSerá mejor que me asegure de tener todos los reactivos que necesito." #NT!
+ ritual_casting_planning_title: "Lanzando el $pod_bs_ritual$" #NT!
+ ritual_casting_planning_desc: "Los preparativos requirieron de una gran disciplina y fortaleza mental. Ahora estoy más preparado que nunca.\n\nCon este $pod_bs_ritual$, mi voluntad se imprimirá en la realidad, utilizando la sangre como medio.\n\nSerá mejor que me asegure de tener todos los reactivos que necesito." #NT!
  ritual_casting_planning_confirm: "$POD_journey_planning_confirm_default$" #NT!
  ritual_casting_planning_decline: "$POD_journey_planning_decline_default$" #NT!
- ritual_casting_travel_title: "Viaje al [bs_ritual|E]" #NT!
+ ritual_casting_travel_title: "Viaje al $pod_bs_ritual$" #NT!
  ritual_casting_travel_desc: "No importa cuántas veces realice estos ritos, siempre me provocan una sensación distante de terror. Nuestros mayores eruditos están lejos de comprender el gran [beast|E] que duerme en nuestra sangre y que se despierta cada vez que necesitamos sus poderes. Debajo de todo el artificio, todos los procedimientos, ceremonias y teatralidades, no somos más que niños que intentan controlar una fuerza de la naturaleza." #NT!
- #ritual_casting_travel_desc: "A lo largo de siglos de experimentación, los hechiceros de la Estirpe han expandido sus artes de mil maneras diferentes. Con cada paso que dan, se abre ante ellos otro camino tentadoramente, que les indica el camino hacia hazañas mágicas aún mayores. La taumaturgia fue desarrollada por los Vástagos a partir de rituales herméticos para controlar y concentrar estas poderosas fuerzas.\nOtros Vástagos crearon una amplia gama de hechicerías que han extraído de las creencias de los mortales de todo el mundo. Algunos han difuminado la línea entre religión y poder para crear un número cada vez mayor de ritae. Otros incluso han usado su sangre para comandar a los espíritus de los muertos, para hacer contacto con entidades en reinos más allá de la comprensión y para vender sus almas a seres que habitan en los confines más oscuros de toda la creación. Al final, sin embargo, todos los rituales requieren disciplina y fortaleza mental para prepararse. Cualquier error podría ser el último que cometa un hechicero descuidado.\nDespués de una cuidadosa preparación, [bs_ritual|E] finalmente está listo. Ahora solo necesito el momento y lugar adecuado para lanzarlo." #NT!
- ritual_casting_travel_confirm: "Adelante, a la ubicación de [bs_ritual|E]." #NT!
+ #ritual_casting_travel_desc: "A lo largo de siglos de experimentación, los hechiceros de la Estirpe han expandido sus artes de mil maneras diferentes. Con cada paso que dan, se abre ante ellos otro camino tentadoramente, que les indica el camino hacia hazañas mágicas aún mayores. La taumaturgia fue desarrollada por los Vástagos a partir de rituales herméticos para controlar y concentrar estas poderosas fuerzas.\nOtros Vástagos crearon una amplia gama de hechicerías que han extraído de las creencias de los mortales de todo el mundo. Algunos han difuminado la línea entre religión y poder para crear un número cada vez mayor de ritae. Otros incluso han usado su sangre para comandar a los espíritus de los muertos, para hacer contacto con entidades en reinos más allá de la comprensión y para vender sus almas a seres que habitan en los confines más oscuros de toda la creación. Al final, sin embargo, todos los rituales requieren disciplina y fortaleza mental para prepararse. Cualquier error podría ser el último que cometa un hechicero descuidado.\nDespués de una cuidadosa preparación, $pod_bs_ritual$ finalmente está listo. Ahora solo necesito el momento y lugar adecuado para lanzarlo." #NT!
+ ritual_casting_travel_confirm: "Adelante, a la ubicación de $pod_bs_ritual$." #NT!
   
   ################################ 
   ##### Trait-based Journeys ##### 

@@ -141,12 +141,12 @@
  POD_mortal_race_trigger: "[TARGET_CHARACTER.GetFirstName] es #Bold y no #! un sobrenatural."
  NOT_POD_mortal_race_trigger: "[TARGET_CHARACTER.GetFirstName] es algo sobrenatural."
   
- GLOBAL_ANATHEMA_TRIGGER: "Este personaje es considerado [anathema|E] por la Camarilla"
- FIRST_ANATHEMA_TRIGGER: "La Camarilla te considera [anathema|E]"
- THIRD_ANATHEMA_TRIGGER: "[CHARACTER.GetShortUIName] es considerado [anathema|E] por la Camarilla"
- GLOBAL_NOT_ANATHEMA_TRIGGER: "Este personaje es #bold no#! considerado [anathema|E] por la Camarilla"
- FIRST_NOT_ANATHEMA_TRIGGER: "Eres #bold no#! considerado [anathema|E] por la Camarilla"
- THIRD_NOT_ANATHEMA_TRIGGER: "[CHARACTER.GetShortUIName] es #bold no#! considerado [anathema|E] por la Camarilla"
+ GLOBAL_ANATHEMA_TRIGGER: "Este personaje es considerado $pod_anathema$  por la Camarilla"
+ FIRST_ANATHEMA_TRIGGER: "La Camarilla te considera $pod_anathema$ "
+ THIRD_ANATHEMA_TRIGGER: "[CHARACTER.GetShortUIName] es considerado $pod_anathema$  por la Camarilla"
+ GLOBAL_NOT_ANATHEMA_TRIGGER: "Este personaje es #bold no#! considerado $pod_anathema$  por la Camarilla"
+ FIRST_NOT_ANATHEMA_TRIGGER: "Eres #bold no#! considerado $pod_anathema$  por la Camarilla"
+ THIRD_NOT_ANATHEMA_TRIGGER: "[CHARACTER.GetShortUIName] es #bold no#! considerado $pod_anathema$  por la Camarilla"
   
  HAS_TRUE_FAITH_GLOBAL: "Este personaje tiene [true_faith|E]"
  HAS_TRUE_FAITH_FIRST: "Tienes [true_faith|E]"
@@ -171,12 +171,12 @@
  NOT_send_option_selected: "Se debe seleccionar una opción." #NT!
   
   
- HAS_TOTAL_BLOOD_RESERVES_GLOBAL: "Tiene al menos #bold $VALUE|V0$#![hunger_i|E]Blood" #NT!
- HAS_TOTAL_BLOOD_RESERVES_FIRST: "Tienes al menos #bold $VALUE|V0$#![hunger_i|E]Blood" #NT!
- HAS_TOTAL_BLOOD_RESERVES_THIRD: "[CHARACTER.GetShortUIName] tiene al menos #bold $VALUE|V0$#![hunger_i|E]Blood" #NT!
- HAS_TOTAL_BLOOD_RESERVES_GLOBAL_NOT: "Tiene menos de #bold $VALUE|V0$#![hunger_i|E]Blood" #NT!
- HAS_TOTAL_BLOOD_RESERVES_FIRST_NOT: "Tienes menos de #bold $VALUE|V0$#![hunger_i|E]Blood" #NT!
- HAS_TOTAL_BLOOD_RESERVES_THIRD_NOT: "[CHARACTER.GetShortUIName] tiene menos que #bold $VALUE|V0$#![hunger_i|E]Blood" #NT!
+ HAS_TOTAL_BLOOD_RESERVES_GLOBAL: "Tiene al menos #bold $VALUE|V0$#!$pod_hunger_i$Blood" #NT!
+ HAS_TOTAL_BLOOD_RESERVES_FIRST: "Tienes al menos #bold $VALUE|V0$#!$pod_hunger_i$Blood" #NT!
+ HAS_TOTAL_BLOOD_RESERVES_THIRD: "[CHARACTER.GetShortUIName] tiene al menos #bold $VALUE|V0$#!$pod_hunger_i$Blood" #NT!
+ HAS_TOTAL_BLOOD_RESERVES_GLOBAL_NOT: "Tiene menos de #bold $VALUE|V0$#!$pod_hunger_i$Blood" #NT!
+ HAS_TOTAL_BLOOD_RESERVES_FIRST_NOT: "Tienes menos de #bold $VALUE|V0$#!$pod_hunger_i$Blood" #NT!
+ HAS_TOTAL_BLOOD_RESERVES_THIRD_NOT: "[CHARACTER.GetShortUIName] tiene menos que #bold $VALUE|V0$#!$pod_hunger_i$Blood" #NT!
   
  HAS_TOTAL_PATHOS_RESERVES_GLOBAL: "Tiene al menos #bold $VALUE|V0$#! Pathos" #NT!
  HAS_TOTAL_PATHOS_RESERVES_FIRST: "Tienes al menos #bold $VALUE|V0$#! Pathos" #NT!

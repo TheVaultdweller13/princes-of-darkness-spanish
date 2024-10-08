@@ -1204,9 +1204,9 @@ POD_ghoulify_mortal_interaction_bp_one: "Los vampiros deben tener una potencia d
  POD_between_the_ticks_interaction: "Entre las garrapatas"
  POD_between_the_ticks_interaction_desc: "Gana el modificador [GetModifier('POD_between_the_ticks_modifier').GetNameWithTooltip]."
   
- ventrue_bane_warning: "¡Este personaje no cumple con tu Ventrue [feeding_restrictions|E]!"
+ ventrue_bane_warning: "¡Este personaje no cumple con tu Ventrue $pod_feeding_restrictions$!"
  POD_drink_herd_ventrue_weakness.t: "Debilidad de los Ventrue"
- POD_drink_herd_ventrue_weakness_desc: "Este miembro de la manada ahora es incompatible con tu Ventrue [feeding_restrictions|E] y ha sido eliminado automáticamente de tu manada."
+ POD_drink_herd_ventrue_weakness_desc: "Este miembro de la manada ahora es incompatible con tu Ventrue $pod_feeding_restrictions$ y ha sido eliminado automáticamente de tu manada."
  ghoul_herd_warning: "Convertir a un mortal en tu ghoul reducirá drásticamente la cantidad de resonancia que su sangre puede proporcionar."
   
  POD_paradox_perk_interaction: "Paradoja"
@@ -1329,7 +1329,7 @@ POD_ghoulify_mortal_interaction_bp_one: "Los vampiros deben tener una potencia d
  POD_golconda_mentoring_interaction_toast: "Compartiendo conocimientos"
   
  POD_guide_through_suspire_interaction: "Guía a través de Suspire"
- POD_guide_through_suspire_interaction_desc: "Intentarás ayudar a [recipient.GetShortUIName] a alcanzar [enlightenment|E]."
+ POD_guide_through_suspire_interaction_desc: "Intentarás ayudar a [recipient.GetShortUIName] a alcanzar $pod_enlightenment$."
  POD_guide_through_suspire_interaction_toast: "[recipient.GetShortUINamePossessive] Suspira"
   
  POD_nocturne_on_personal_interaction: "Nocturno"

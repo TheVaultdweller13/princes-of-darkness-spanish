@@ -29,7 +29,7 @@
  trait_werewolf: "Hombre-lobo"
  trait_werewolf_desc: "Una criatura sobrenatural que cambia de forma. Se hacen llamar "Garou"."
  trait_track_werewolf: "Rango" #NT!
- trait_track_werewolf_desc: "#bold Nivel 2:#! [umbra_aptitude|E]: [grace_i]#P +25%#!\n#bold Nivel 3:#! [umbra_aptitude|E]: [grace_i]#P +25%#!\n#bold Nivel 4:#! [umbra_aptitude|E]: [grace_i]#P +50%#!\n#bold Nivel 5:#! [umbra_aptitude|E]: [grace_i]#P +50%#!\n#bold Nivel 6:#! [umbra_aptitude|E]: [grace_i]#P +75%#!\n#italic El rango es una parte fundamental de la sociedad Garou, y la manifestación más completa de la naturaleza jerárquica de hombres lobo.#!" #NT!
+ trait_track_werewolf_desc: "#bold Nivel 2:#! [umbra_aptitude|E]: $pod_grace_i$#P +25%#!\n#bold Nivel 3:#! [umbra_aptitude|E]: $pod_grace_i$#P +25%#!\n#bold Nivel 4:#! [umbra_aptitude|E]: $pod_grace_i$#P +50%#!\n#bold Nivel 5:#! [umbra_aptitude|E]: $pod_grace_i$#P +50%#!\n#bold Nivel 6:#! [umbra_aptitude|E]: $pod_grace_i$#P +75%#!\n#italic El rango es una parte fundamental de la sociedad Garou, y la manifestación más completa de la naturaleza jerárquica de hombres lobo.#!" #NT!
   
  trait_mage: "Mago"
  trait_mage_desc: "Humanos con avatares despertados que les permiten ejercer verdadera magia y alterar el tejido de la realidad."
@@ -37,15 +37,15 @@
  trait_wraith: "Fantasma"
  trait_wraith_desc: "Un alma muerta arrastrada de regreso al mundo mortal por magia oscura o por un apego a algo que dejó atrás."
  trait_gaunt: "Demacrado"
- trait_gaunt_desc: "Un Gaunt es un espectro más viejo que ha resuelto uno o más de sus [Fetters|E] y aún los mantiene."
+ trait_gaunt_desc: "Un Gaunt es un espectro más viejo que ha resuelto uno o más de sus $pod_Fetters$ y aún los mantiene."
  trait_domem: "Cúpula"
- trait_domem_desc: "Un Domem es un espectro cuyos [Fetters|E] están todos destruidos, lo que les impide permanecer en el [UmbraGlossary('shadowlands')] durante cualquier período de tiempo; si bien la condición de Domem generalmente implica edad, un espectro puede convertirse en un Domem mientras aún es muy joven, todo lo que requiere es que su [Fetters|E] sea destruido."
+ trait_domem_desc: "Un Domem es un espectro cuyos $pod_Fetters$ están todos destruidos, lo que les impide permanecer en el [UmbraGlossary('shadowlands')] durante cualquier período de tiempo; si bien la condición de Domem generalmente implica edad, un espectro puede convertirse en un Domem mientras aún es muy joven, todo lo que requiere es que su $pod_Fetters$ sea destruido."
  trait_enfant: "Niños"
  trait_enfant_desc: "Los espectros conscientes de sí mismos comienzan como Enfants; cuando una persona muere, su alma renace en el [UmbraGlossaryLocalized('shadowlands','Underworld')] cubierta por una capa de plasma llamada membrana."
  trait_track_fetter: "Grillete"
  trait_track_fetter_desc: "$game_concept_Fetter_desc$"
  trait_track_fetter_resolved: "Grillete resuelto"
- trait_track_fetter_resolved_desc: "[Fetters|E] también se puede resolver, lo que significa que un espectro obtiene la fuerza para decir adiós a las cosas y personas que amaba en vida. Un espectro que logra resolver todos sus [Fetters|E] puede permanecer en el [UmbraGlossary('shadowlands')] indefinidamente, pero si tal éxito otorga este beneficio, es raro hasta el punto de convertirse en un mito."
+ trait_track_fetter_resolved_desc: "$pod_Fetters$ también se puede resolver, lo que significa que un espectro obtiene la fuerza para decir adiós a las cosas y personas que amaba en vida. Un espectro que logra resolver todos sus $pod_Fetters$ puede permanecer en el [UmbraGlossary('shadowlands')] indefinidamente, pero si tal éxito otorga este beneficio, es raro hasta el punto de convertirse en un mito."
   
  trait_spirit: "Espíritu"
  trait_spirit_desc: "Los espíritus son entidades incorpóreas que se originan y generalmente habitan en la Umbra; por esa razón, algunos magos los llaman "Umbrood"."
@@ -367,7 +367,7 @@
  trait_bloodsorcery_desc: "[bloodsorcery|E] se refiere a la magia realizada por vampiros, impulsada por prácticas religiosas u ocultas y el poder de la vitae [cainite|E].\n\nA través de la práctica de [bloodsorcery|E], un [cainite|E] puede invocar fuego, controlar el clima y hacer muchas otras cosas que son antinaturales incluso para los estándares vampíricos."
  trait_bloodsorcery_character_desc: "$bloodmagic_paths_display$\n\n$trait_bloodsorcery_desc$" #NT!
   
- bloodmagic_paths_display: "#medium [ROOT.Char.GetFirstNameNoTooltip] tiene conocimiento de estos [bs_traditions|E]:[AddTextIf(GetScriptedGui('has_thaumaturgy_bloodmagic_sgui').IsShown(GuiScope.SetRoot(ROOT.Char.MakeScope).End),'\n$TAB|q$@tremere_icon! Thaumaturgy')][AddTextIf(GetScriptedGui('has_dur_an_ki_bloodmagic_sgui').IsShown(GuiScope.SetRoot(ROOT.Char.MakeScope).End),'\n$TAB|q$@assamite_icon! Dur-An-Ki')][AddTextIf(GetScriptedGui('has_akhu_bloodmagic_sgui').IsShown(GuiScope.SetRoot(ROOT.Char.MakeScope).End),'\n$TAB|q$@setite_icon! Akhu')][AddTextIf(GetScriptedGui('has_sadhana_bloodmagic_sgui').IsShown(GuiScope.SetRoot(ROOT.Char.MakeScope).End),'\n$TAB|q$@ravnos_icon! Sadhana')][AddTextIf(GetScriptedGui('has_koldunic_bloodmagic_sgui').IsShown(GuiScope.SetRoot(ROOT.Char.MakeScope).End),'\n$TAB|q$@tzimisce_icon! Koldunic')]#!" #NT!
+ bloodmagic_paths_display: "#medium [ROOT.Char.GetFirstNameNoTooltip] tiene conocimiento de estos $pod_bs_traditions$:[AddTextIf(GetScriptedGui('has_thaumaturgy_bloodmagic_sgui').IsShown(GuiScope.SetRoot(ROOT.Char.MakeScope).End),'\n$TAB|q$@tremere_icon! Thaumaturgy')][AddTextIf(GetScriptedGui('has_dur_an_ki_bloodmagic_sgui').IsShown(GuiScope.SetRoot(ROOT.Char.MakeScope).End),'\n$TAB|q$@assamite_icon! Dur-An-Ki')][AddTextIf(GetScriptedGui('has_akhu_bloodmagic_sgui').IsShown(GuiScope.SetRoot(ROOT.Char.MakeScope).End),'\n$TAB|q$@setite_icon! Akhu')][AddTextIf(GetScriptedGui('has_sadhana_bloodmagic_sgui').IsShown(GuiScope.SetRoot(ROOT.Char.MakeScope).End),'\n$TAB|q$@ravnos_icon! Sadhana')][AddTextIf(GetScriptedGui('has_koldunic_bloodmagic_sgui').IsShown(GuiScope.SetRoot(ROOT.Char.MakeScope).End),'\n$TAB|q$@tzimisce_icon! Koldunic')]#!" #NT!
   
  TRAIT_FLAG_DESC_unlock_incorporeal_form: "Puede transformarse en un [GetModifier( 'POD_shapeshift_form_incorporeal_modifier' ).GetNameWithTooltip|L]" #NT!
   
@@ -1016,7 +1016,7 @@ trait_grondr_kinfolk: "Pariente Grondr"
  trait_arcanos_keening_desc: "Aquellos que pueden utilizar las artes del Keening pueden manipular las emociones a través del sonido."
   
  trait_arcanos_lifeweb: "Red de vida"
- trait_arcanos_lifeweb_desc: "Los espectros que conocen Lifeweb pueden usarlo para fortalecer, debilitar o vigilar a [Fetters|E]."
+ trait_arcanos_lifeweb_desc: "Los espectros que conocen Lifeweb pueden usarlo para fortalecer, debilitar o vigilar a $pod_Fetters$."
   
  trait_arcanos_mnemosynis: "Mnemosynis"
  trait_arcanos_mnemosynis_desc: "Los usuarios de Mnemosynis pueden rastrear y leer los recuerdos de otros."
@@ -1069,19 +1069,19 @@ trait_grondr_kinfolk: "Pariente Grondr"
  trait_ajaba: "Ajaba"
  trait_ajaba_desc: "Los hombres-hiena son los guerreros de Gea en África, un continente sin población de lobos. Aunque la Guerra de la Furia no llegó a África, los Ajaba fueron prácticamente destruidos por las luchas internas y su rivalidad con los Bastet."
  trait_track_ajaba: "Rango" #NT!
- trait_track_ajaba_desc: "#bold Nivel 2:#! [umbra_aptitude|E]: [grace_i]#P +25%#!\n#bold Nivel 3:#! [umbra_aptitude|E]: [grace_i]#P +25%#!\n#bold Nivel 4:#! [umbra_aptitude|E]: [grace_i]#P +50%#!\n#bold Nivel 5:#! [umbra_aptitude|E]: [grace_i]#P +50%#!\n#bold Nivel 6:#! [umbra_aptitude|E]: [grace_i]#P +75%#!\n#italic Los Ajaba siempre han reconocido la Astucia y la Ferocidad como formas de renombre, pero también Valor Infamia, algo que a muchos de sus miembros les preocupa por el impacto a largo plazo.#!" #NT!
+ trait_track_ajaba_desc: "#bold Nivel 2:#! [umbra_aptitude|E]: $pod_grace_i$#P +25%#!\n#bold Nivel 3:#! [umbra_aptitude|E]: $pod_grace_i$#P +25%#!\n#bold Nivel 4:#! [umbra_aptitude|E]: $pod_grace_i$#P +50%#!\n#bold Nivel 5:#! [umbra_aptitude|E]: $pod_grace_i$#P +50%#!\n#bold Nivel 6:#! [umbra_aptitude|E]: $pod_grace_i$#P +75%#!\n#italic Los Ajaba siempre han reconocido la Astucia y la Ferocidad como formas de renombre, pero también Valor Infamia, algo que a muchos de sus miembros les preocupa por el impacto a largo plazo.#!" #NT!
  trait_bastet: "Bastet"
  trait_bastet_desc: "Los hombres gato tienen muchas tribus diferentes, como los Garou, aunque cada una de ellas afirma poseer una especie diferente de felino salvaje. Están obsesionados con el conocimiento secreto y siempre lo buscan y lo atesoran. Muchos son grandes magos, otros son grandes guerreros, pero rara vez son animales de manada y generalmente trabajan solos. Algunas de sus tribus sufrieron mucho durante la Guerra de la Furia."
  trait_track_bastet: "Rango" #NT!
- trait_track_bastet_desc: "#bold Nivel 2:#! Obtén acceso al [UmbraGlossary('spirit_wilds')] para no Swara.\n#bold Nivel 4:#! [umbra_aptitude|E]: [grace_i]#P +25%#!\n#bold Nivel 5:#! [umbra_aptitude|E]: [grace_i]#P +25%#!\n#bold Nivel 6:#! [umbra_aptitude|E]: [grace_i]#P +35%#!\n#italic Los Bastet reconocen una jerarquía. No denota autoridad absoluta como lo haría entre los Garou, sino más bien una cortesía y un reconocimiento de la experiencia. Los títulos de Bastet siempre tienen un significado social más allá de su rango.#!" #NT!
+ trait_track_bastet_desc: "#bold Nivel 2:#! Obtén acceso al [UmbraGlossary('spirit_wilds')] para no Swara.\n#bold Nivel 4:#! [umbra_aptitude|E]: $pod_grace_i$#P +25%#!\n#bold Nivel 5:#! [umbra_aptitude|E]: $pod_grace_i$#P +25%#!\n#bold Nivel 6:#! [umbra_aptitude|E]: $pod_grace_i$#P +35%#!\n#italic Los Bastet reconocen una jerarquía. No denota autoridad absoluta como lo haría entre los Garou, sino más bien una cortesía y un reconocimiento de la experiencia. Los títulos de Bastet siempre tienen un significado social más allá de su rango.#!" #NT!
  trait_corax: "Corazon"
  trait_corax_desc: "Los hombres cuervo son mensajeros, espías y exploradores de Gaia que patrullan los cielos, siempre atentos al peligro. Son unos terribles charlatanes y contarán lo que han visto a cualquiera que quiera escucharlos. Escaparon de la persecución en la Guerra de la Furia ayudando a los Garou y mantienen las relaciones más cordiales con los hombres lobo de todo Fera."
  trait_track_corax: "Rango" #NT!
- trait_track_corax_desc: "#bold Nivel 1:#! [umbra_aptitude|E]: [grace_i]#P +25%#!\n#bold Nivel 2:#! [umbra_aptitude|E]: [grace_i]#P +25%#!\n#bold Nivel 3:#! [umbra_aptitude|E]: [grace_i]#P +50%#!\n#bold Nivel 4:#! [umbra_aptitude|E]: [grace_i]#P +50%#!\n#bold Nivel 5:#! [umbra_aptitude|E]: [grace_i]#P +75%#!\n#bold Nivel 6:#! [umbra_aptitude|E]: [grace_i]#P +100%#!\n#italic Los Corax ganan renombre como Garou Ragabash, aunque tienden a favorecer su particular tipo de Sabiduría. La gloria suele ser descuidada por los frágiles Corax.#!" #NT!
+ trait_track_corax_desc: "#bold Nivel 1:#! [umbra_aptitude|E]: $pod_grace_i$#P +25%#!\n#bold Nivel 2:#! [umbra_aptitude|E]: $pod_grace_i$#P +25%#!\n#bold Nivel 3:#! [umbra_aptitude|E]: $pod_grace_i$#P +50%#!\n#bold Nivel 4:#! [umbra_aptitude|E]: $pod_grace_i$#P +50%#!\n#bold Nivel 5:#! [umbra_aptitude|E]: $pod_grace_i$#P +75%#!\n#bold Nivel 6:#! [umbra_aptitude|E]: $pod_grace_i$#P +100%#!\n#italic Los Corax ganan renombre como Garou Ragabash, aunque tienden a favorecer su particular tipo de Sabiduría. La gloria suele ser descuidada por los frágiles Corax.#!" #NT!
  trait_gurahl: "Gurahl"
  trait_gurahl_desc: "Los hombres oso son los sanadores de Gaia, unidos a la Tierra con un vínculo más fuerte que cualquier otro Fera. Muchos Garou creen que los Gurahl están extintos, asesinados durante la Guerra de la Furia cuando no quisieron revelar el secreto de devolver la vida a los muertos."
  trait_track_gurahl: "Rango" #NT!
- trait_track_gurahl_desc: "#bold Nivel 4:#! [umbra_aptitude|E]: [grace_i]#P +25%#!\n#bold Nivel 5:#! [umbra_aptitude|E]: [grace_i]#P +25%#!\n#bold Nivel 6:#! [umbra_aptitude|E]: [grace_i]#P +35%#!\n#italic Los Gurahl reconocen tres tipos de renombre: Honor, por devoción y respeto; Socorro, por actos de sanación, purificación o ayuda a otros; y Sabiduría, por restaurar, preservar o descubrir conocimiento o ganar una comprensión más profunda de uno mismo.#!" #NT!
+ trait_track_gurahl_desc: "#bold Nivel 4:#! [umbra_aptitude|E]: $pod_grace_i$#P +25%#!\n#bold Nivel 5:#! [umbra_aptitude|E]: $pod_grace_i$#P +25%#!\n#bold Nivel 6:#! [umbra_aptitude|E]: $pod_grace_i$#P +35%#!\n#italic Los Gurahl reconocen tres tipos de renombre: Honor, por devoción y respeto; Socorro, por actos de sanación, purificación o ayuda a otros; y Sabiduría, por restaurar, preservar o descubrir conocimiento o ganar una comprensión más profunda de uno mismo.#!" #NT!
  trait_kitsune: "Kitsune"
  trait_kitsune_desc: "Los hombres zorro son magos y políticos que mantienen unida a la sociedad de cambiaformas asiáticos. Únicos entre los Fera, los Kitsune se encuentran solo en las Cortes de las Bestias del Reino Medio, y viven principalmente en China y Japón. Con la bendición de Luna, los Kitsune también actuaron como asesinos de las autoridades corruptas en la sociedad mortal, como magos de la corte y ladrones para proteger el Mandato Celestial."
  trait_track_kitsune: "Cruz"
@@ -1089,39 +1089,39 @@ trait_grondr_kinfolk: "Pariente Grondr"
  trait_mokole: "Mokolé"
  trait_mokole_desc: "Los hombres cocodrilo recuerdan la era de los Reyes Dragón, cuando terribles reptiles gobernaban la tierra. Recuerdan todo lo que ha sucedido y se guardan ese conocimiento para sí mismos, hablando solo con quienes son debidamente respetuosos. Sus formas de Crinos se parecen más a dinosaurios o dragones que a cocodrilos, lo que a veces los lleva a ser llamados hombres dragón."
  trait_track_mokole: "Rango" #NT!
- trait_track_mokole_desc: "#bold Nivel 2:#! Obtén acceso al [UmbraGlossary('spirit_wilds')].\n#bold Nivel 4:#! [umbra_aptitude|E]: [grace_i]#P +25%#!\n#bold Nivel 5:#! [umbra_aptitude|E]: [grace_i]#P +25%#!\n#bold Nivel 6:#! [umbra_aptitude|E]: [grace_i]#P +35%#!\n#italic Los mokolé usan el mismo sistema de renombre que los Garou, venerando los principios de honor, sabiduría y gloria. El grado en el que un mokolé individual sigue cada principio está determinado completamente por su aspecto (auspicio).#!" #NT!
+ trait_track_mokole_desc: "#bold Nivel 2:#! Obtén acceso al [UmbraGlossary('spirit_wilds')].\n#bold Nivel 4:#! [umbra_aptitude|E]: $pod_grace_i$#P +25%#!\n#bold Nivel 5:#! [umbra_aptitude|E]: $pod_grace_i$#P +25%#!\n#bold Nivel 6:#! [umbra_aptitude|E]: $pod_grace_i$#P +35%#!\n#italic Los mokolé usan el mismo sistema de renombre que los Garou, venerando los principios de honor, sabiduría y gloria. El grado en el que un mokolé individual sigue cada principio está determinado completamente por su aspecto (auspicio).#!" #NT!
  trait_nagah: "Naga"
  trait_nagah_desc: "Serpientes-hombre que se originaron en la India. La mayoría (si no todas) de las otras razas cambiantes creen que están muertas, pero todavía están muy presentes. Los Nagah, que actúan como los "Jueces de Gea", cumplen el papel de jueces silenciosos y verdugos ocultos de las razas cambiantes."
  trait_track_nagah: "Rango" #NT!
- trait_track_nagah_desc: "#bold Nivel 4:#! [umbra_aptitude|E]: [grace_i]#P +25%#!\n#bold Nivel 5:#! [umbra_aptitude|E]: [grace_i]#P +25%#!\n#bold Nivel 6:#! [umbra_aptitude|E]: [grace_i]#P +35%#!\n#italic Debido a que los nidos son nómadas, los Nagah tienen que buscar a los Seshas para ganar renombre gracias a ellos. Los Seshas, ​​después de enterarse de las hazañas del nido, deciden qué puntos de renombre se les otorgan. Esto decide el rango y, a su vez, los dones que aprenderá un Nagah. El sistema de renombre utiliza Gloria, Honor y Sabiduría.#!" #NT!
+ trait_track_nagah_desc: "#bold Nivel 4:#! [umbra_aptitude|E]: $pod_grace_i$#P +25%#!\n#bold Nivel 5:#! [umbra_aptitude|E]: $pod_grace_i$#P +25%#!\n#bold Nivel 6:#! [umbra_aptitude|E]: $pod_grace_i$#P +35%#!\n#italic Debido a que los nidos son nómadas, los Nagah tienen que buscar a los Seshas para ganar renombre gracias a ellos. Los Seshas, ​​después de enterarse de las hazañas del nido, deciden qué puntos de renombre se les otorgan. Esto decide el rango y, a su vez, los dones que aprenderá un Nagah. El sistema de renombre utiliza Gloria, Honor y Sabiduría.#!" #NT!
  trait_nuwisha: "Nuwisha"
  trait_nuwisha_desc: "Los hombres coyote son los maestros de Gea, aunque al igual que su tótem, el Viejo Coyote, prefieren enseñar exclusivamente a través de bromas. Gracias a una broma que le hicieron a Luna, ya no tienen Furia, aunque tienen una afinidad más estrecha con Umbra que con cualquier otro Fera."
  trait_track_nuwisha: "Rango" #NT!
- trait_track_nuwisha_desc: "#bold Nivel 1:#! [umbra_aptitude|E]: [grace_i]#P +25%#!\n#bold Nivel 2:#! [umbra_aptitude|E]: [grace_i]#P +25%#!\n#bold Nivel 3:#! [umbra_aptitude|E]: [grace_i]#P +50%#!\n#bold Nivel 4:#! [umbra_aptitude|E]: [grace_i]#P +50%#!\n#bold Nivel 5:#! [umbra_aptitude|E]: [grace_i]#P +75%#!\n#bold Nivel 6:#! [umbra_aptitude|E]: [grace_i]#P +100%#!\n#italic A diferencia de la mayoría de los Fera, que alcanzan el rango a través del honor y el favor de su tribu, los Nuwisha obtienen renombre a través de la enseñanza. En lugar de honor, tienen humor, y cuanto más humorísticos se muestren ante su deidad, una forma de Coyote encarnado, más renombre obtendrán.#!" #NT!
+ trait_track_nuwisha_desc: "#bold Nivel 1:#! [umbra_aptitude|E]: $pod_grace_i$#P +25%#!\n#bold Nivel 2:#! [umbra_aptitude|E]: $pod_grace_i$#P +25%#!\n#bold Nivel 3:#! [umbra_aptitude|E]: $pod_grace_i$#P +50%#!\n#bold Nivel 4:#! [umbra_aptitude|E]: $pod_grace_i$#P +50%#!\n#bold Nivel 5:#! [umbra_aptitude|E]: $pod_grace_i$#P +75%#!\n#bold Nivel 6:#! [umbra_aptitude|E]: $pod_grace_i$#P +100%#!\n#italic A diferencia de la mayoría de los Fera, que alcanzan el rango a través del honor y el favor de su tribu, los Nuwisha obtienen renombre a través de la enseñanza. En lugar de honor, tienen humor, y cuanto más humorísticos se muestren ante su deidad, una forma de Coyote encarnado, más renombre obtendrán.#!" #NT!
  trait_ratkin: "Rata"
  trait_ratkin_desc: "Los hombres rata vigilaban a la humanidad y evitaban que su número se hiciera demasiado grande. Sin embargo, los Garou usurparon ese papel y los Ratkin los odian desde entonces. Luchan firmemente por el Kaos y aprovechan cualquier oportunidad para socavar la tecnología."
  trait_track_ratkin: "Rango" #NT!
- trait_track_ratkin_desc: "#bold Nivel 4:#! [umbra_aptitude|E]: [grace_i]#P +25%#!\n#bold Nivel 5:#! [umbra_aptitude|E]: [grace_i]#P +25%#!\n#bold Nivel 6:#! [umbra_aptitude|E]: [grace_i]#P +35%#!\n#italic Las colonias de Ratkin tienen una estricta jerarquía interna. Un Rey Rata gobierna la colonia, asistido por grupos de cortesanos, generalmente todos rodens Ratkin. Por debajo de los cortesanos, los rodens hombres rata tienen prioridad. Los metis ocupan el terreno intermedio, actuando como guardias y guardianes y con la esperanza de convertirse algún día en cortesanos.#!" #NT!
+ trait_track_ratkin_desc: "#bold Nivel 4:#! [umbra_aptitude|E]: $pod_grace_i$#P +25%#!\n#bold Nivel 5:#! [umbra_aptitude|E]: $pod_grace_i$#P +25%#!\n#bold Nivel 6:#! [umbra_aptitude|E]: $pod_grace_i$#P +35%#!\n#italic Las colonias de Ratkin tienen una estricta jerarquía interna. Un Rey Rata gobierna la colonia, asistido por grupos de cortesanos, generalmente todos rodens Ratkin. Por debajo de los cortesanos, los rodens hombres rata tienen prioridad. Los metis ocupan el terreno intermedio, actuando como guardias y guardianes y con la esperanza de convertirse algún día en cortesanos.#!" #NT!
  trait_rokea: "Rokea"
  trait_rokea_desc: "Incluso el mar tiene sus protectores. Los hombres-tiburón patrullan las profundidades del mar y rara vez son vistos por los habitantes de la tierra."
  trait_track_rokea: "Rango" #NT!
- trait_track_rokea_desc: "#bold Nivel 2:#! Obtén acceso al [UmbraGlossary('spirit_wilds')].\n#bold Nivel 4:#! [umbra_aptitude|E]: [grace_i]#P +25%#!\n#bold Nivel 5:#! [umbra_aptitude|E]: [grace_i]#P +25%#!\n#bold Nivel 6:#! [umbra_aptitude|E]: [grace_i]#P +35%#!\n#italic Los rokea aceptan tres formas de renombre: Valor, que hace referencia a la destreza y el coraje de un hombre tiburón en defensa de una gruta; Armonía, es decir, la capacidad de un hombre tiburón de aceptar su lugar en el mundo y actuar de acuerdo con él, e Innovación, que se otorga a los hombres tiburón que, a través de nuevas ideas, ayudan a la raza a defender el Mar y luchar contra la prole de Qyrl.#!" #NT!
+ trait_track_rokea_desc: "#bold Nivel 2:#! Obtén acceso al [UmbraGlossary('spirit_wilds')].\n#bold Nivel 4:#! [umbra_aptitude|E]: $pod_grace_i$#P +25%#!\n#bold Nivel 5:#! [umbra_aptitude|E]: $pod_grace_i$#P +25%#!\n#bold Nivel 6:#! [umbra_aptitude|E]: $pod_grace_i$#P +35%#!\n#italic Los rokea aceptan tres formas de renombre: Valor, que hace referencia a la destreza y el coraje de un hombre tiburón en defensa de una gruta; Armonía, es decir, la capacidad de un hombre tiburón de aceptar su lugar en el mundo y actuar de acuerdo con él, e Innovación, que se otorga a los hombres tiburón que, a través de nuevas ideas, ayudan a la raza a defender el Mar y luchar contra la prole de Qyrl.#!" #NT!
  trait_apis: "Apis"
  trait_apis_desc: "Los Apis, hombres lobo o "toros lunares", estaban a cargo del cultivo y la agricultura y eran conocidos como los "casamenteros de Gea". Los Garou los llevaron a la extinción en la Guerra de la Furia."
  trait_track_apis: "Rango" #NT!
- trait_track_apis_desc: "#bold Nivel 4:#! [umbra_aptitude|E]: [grace_i]#P +25%#!\n#bold Nivel 5:#! [umbra_aptitude|E]: [grace_i]#P +25%#!\n#bold Nivel 6:#! [umbra_aptitude|E]: [grace_i]#P +35%#!\n#italic Los Apis eran criaturas relativamente sociales que vivían en manadas de entre seis y veinticuatro individuos. Un poderoso toro gobernaba cada manada y defendía su título contra todos los retadores. Este toro estaba a cargo de proteger a la manada y liderarla en la batalla.#!" #NT!
+ trait_track_apis_desc: "#bold Nivel 4:#! [umbra_aptitude|E]: $pod_grace_i$#P +25%#!\n#bold Nivel 5:#! [umbra_aptitude|E]: $pod_grace_i$#P +25%#!\n#bold Nivel 6:#! [umbra_aptitude|E]: $pod_grace_i$#P +35%#!\n#italic Los Apis eran criaturas relativamente sociales que vivían en manadas de entre seis y veinticuatro individuos. Un poderoso toro gobernaba cada manada y defendía su título contra todos los retadores. Este toro estaba a cargo de proteger a la manada y liderarla en la batalla.#!" #NT!
  trait_camazotz: "Camazotz"
  trait_camazotz_desc: "Los Camazotz eran hombres murciélago, mensajeros nocturnos del hemisferio sur de Gaia, contrapartes de los Corax."
  trait_track_camazotz: "Rango" #NT!
- trait_track_camazotz_desc: "#bold Nivel 4:#! [umbra_aptitude|E]: [grace_i]#P +25%#!\n#bold Nivel 5:#! [umbra_aptitude|E]: [grace_i]#P +25%#!\n#bold Nivel 6:#! [umbra_aptitude|E]: [grace_i]#P +35%#!\n#italic Los Camazotz eran una raza muy social que vivía en enjambres igualitarios de entre una docena y un centenar de miembros. A menudo vivían en cavernas junto con sus parientes murciélagos. Aunque eran propensos al secreto, intentaban mantener relaciones amistosas y abiertas con otros cambiaformas.#!" #NT!
+ trait_track_camazotz_desc: "#bold Nivel 4:#! [umbra_aptitude|E]: $pod_grace_i$#P +25%#!\n#bold Nivel 5:#! [umbra_aptitude|E]: $pod_grace_i$#P +25%#!\n#bold Nivel 6:#! [umbra_aptitude|E]: $pod_grace_i$#P +35%#!\n#italic Los Camazotz eran una raza muy social que vivía en enjambres igualitarios de entre una docena y un centenar de miembros. A menudo vivían en cavernas junto con sus parientes murciélagos. Aunque eran propensos al secreto, intentaban mantener relaciones amistosas y abiertas con otros cambiaformas.#!" #NT!
  trait_grondr: "Tierra"
  trait_grondr_desc: "Los hombres jabalí se encontraban en el norte de Europa. Su tarea era limpiar la tierra; se los llamaba los cuidadores de Gea. Los Garou los expulsaron durante la Guerra de la Furia; sus espíritus ancestrales cayeron ante el Wyrm y se convirtieron en los monstruosos Cerdos Calavera."
  trait_track_grondr: "Rango" #NT!
- trait_track_grondr_desc: "#bold Nivel 4:#! [umbra_aptitude|E]: [grace_i]#P +25%#!\n#bold Nivel 5:#! [umbra_aptitude|E]: [grace_i]#P +25%#!\n#bold Nivel 6:#! [umbra_aptitude|E]: [grace_i]#P +35%#!\n#italic Los Grondr eran una raza activa y agresiva. Vivían en grupos similares a manadas llamados Sounders, cada uno liderado por un rey o reina que mantenía su título al derrotar a todos los que los desafiaban en combates rituales. Cada gobernante Sounder era igual a todos los demás; no tenían jerarquía más allá de los Sounders individuales.#!" #NT!
+ trait_track_grondr_desc: "#bold Nivel 4:#! [umbra_aptitude|E]: $pod_grace_i$#P +25%#!\n#bold Nivel 5:#! [umbra_aptitude|E]: $pod_grace_i$#P +25%#!\n#bold Nivel 6:#! [umbra_aptitude|E]: $pod_grace_i$#P +35%#!\n#italic Los Grondr eran una raza activa y agresiva. Vivían en grupos similares a manadas llamados Sounders, cada uno liderado por un rey o reina que mantenía su título al derrotar a todos los que los desafiaban en combates rituales. Cada gobernante Sounder era igual a todos los demás; no tenían jerarquía más allá de los Sounders individuales.#!" #NT!
  #  trait_ananasi: "Ananási" #NT!
  #  trait_ananasi_desc: "Los hombres araña no son hijos de Gea, sino de la reina Ananasa, una poderosa hija espiritual de la Tejedora. Otros Fera los consideran extraños y perturbadores, y no sin razón: su forma animal es una horda de arañas rastreras, no poseen Furia y alimentan sus poderes con sangre robada a los humanos. Su nombre proviene del embaucador/dios de África occidental Anansi." #NT!
  #  trait_track_ananasi: "Rango" #NT!
- #  trait_track_ananasi_desc: "#bold Nivel 4:#! [umbra_aptitude|E]: [grace_i]#P +25%#!\n#bold Nivel 5:#! [umbra_aptitude|E]: [grace_i]#P +25%#!\n#bold Nivel 6:#! [umbra_aptitude|E]: [grace_i]#P +35%#!\n#italic Los ananasi pueden ganar renombre en tres categorías, que corresponden a los tres miembros de la Tríada; intentan seguir a los tres, sin importar su facción, para obtener una comprensión más profunda de la "Gran Red" de la existencia. Las categorías son Astucia (para el Wyrm), Obediencia (para el Tejedor) y Sabiduría (para el Wyld).#!" #NT!
+ #  trait_track_ananasi_desc: "#bold Nivel 4:#! [umbra_aptitude|E]: $pod_grace_i$#P +25%#!\n#bold Nivel 5:#! [umbra_aptitude|E]: $pod_grace_i$#P +25%#!\n#bold Nivel 6:#! [umbra_aptitude|E]: $pod_grace_i$#P +35%#!\n#italic Los ananasi pueden ganar renombre en tres categorías, que corresponden a los tres miembros de la Tríada; intentan seguir a los tres, sin importar su facción, para obtener una comprensión más profunda de la "Gran Red" de la existencia. Las categorías son Astucia (para el Wyrm), Obediencia (para el Tejedor) y Sabiduría (para el Wyld).#!" #NT!
   
  trait_hakken: "Hákken"
  trait_hakken_desc: "Los hombres lobo de Japón, que defienden las filosofías del bushido."
@@ -1232,20 +1232,20 @@ trait_grondr_kinfolk: "Pariente Grondr"
   
  TRAIT_FLAG_DESC_yin_imbalanced: "Le permite devorar más Chi Yin que el límite de Virtud Yin sin efectos negativos"
  TRAIT_FLAG_DESC_yang_imbalanced: "Le permite devorar más Chi Yang que el límite de la Virtud Yang sin efectos negativos"
- TRAIT_FLAG_DESC_umbra_aptitude_15: "[umbra_aptitude|E]: [grace_i]#P +75%#!" #NT!
- TRAIT_FLAG_DESC_umbra_aptitude_10: "Progreso mensual de exploración de Umbra: [grace_i]#P +10#!"
- TRAIT_FLAG_DESC_umbra_aptitude_9: "Progreso mensual de exploración de Umbra: [grace_i]#P +9#!"
- TRAIT_FLAG_DESC_umbra_aptitude_8: "Progreso mensual de exploración de la Umbra: [grace_i]#P +8#!"
- TRAIT_FLAG_DESC_umbra_aptitude_7: "Progreso mensual de exploración de Umbra: [grace_i]#P +7#!"
- TRAIT_FLAG_DESC_umbra_aptitude_6: "Progreso mensual de exploración de Umbra: [grace_i]#P +6#!"
- TRAIT_FLAG_DESC_umbra_aptitude_5: "Progreso mensual de exploración de Umbra: [grace_i]#P +5#!"
- TRAIT_FLAG_DESC_umbra_aptitude_4: "Progreso mensual de exploración de Umbra: [grace_i]#P +4#!"
- TRAIT_FLAG_DESC_umbra_aptitude_3: "Progreso mensual de exploración de Umbra: [grace_i]#P +3#!"
- TRAIT_FLAG_DESC_umbra_aptitude_2: "Progreso mensual de exploración de Umbra: [grace_i]#P +2#!"
- TRAIT_FLAG_DESC_umbra_aptitude_1: "Progreso mensual de exploración de Umbra: [grace_i]#P +1#!"
- TRAIT_FLAG_DESC_umbra_sense_10: "[umbra_sense|E]: [grace_i]#P +10#!" #NT!
- TRAIT_FLAG_DESC_umbra_sense_7: "[umbra_sense|E]: [grace_i]#P +7#!" #NT!
- TRAIT_FLAG_DESC_umbra_sense_5: "[umbra_sense|E]: [grace_i]#P +5#!" #NT!
+ TRAIT_FLAG_DESC_umbra_aptitude_15: "[umbra_aptitude|E]: $pod_grace_i$#P +75%#!" #NT!
+ TRAIT_FLAG_DESC_umbra_aptitude_10: "Progreso mensual de exploración de Umbra: $pod_grace_i$#P +10#!"
+ TRAIT_FLAG_DESC_umbra_aptitude_9: "Progreso mensual de exploración de Umbra: $pod_grace_i$#P +9#!"
+ TRAIT_FLAG_DESC_umbra_aptitude_8: "Progreso mensual de exploración de la Umbra: $pod_grace_i$#P +8#!"
+ TRAIT_FLAG_DESC_umbra_aptitude_7: "Progreso mensual de exploración de Umbra: $pod_grace_i$#P +7#!"
+ TRAIT_FLAG_DESC_umbra_aptitude_6: "Progreso mensual de exploración de Umbra: $pod_grace_i$#P +6#!"
+ TRAIT_FLAG_DESC_umbra_aptitude_5: "Progreso mensual de exploración de Umbra: $pod_grace_i$#P +5#!"
+ TRAIT_FLAG_DESC_umbra_aptitude_4: "Progreso mensual de exploración de Umbra: $pod_grace_i$#P +4#!"
+ TRAIT_FLAG_DESC_umbra_aptitude_3: "Progreso mensual de exploración de Umbra: $pod_grace_i$#P +3#!"
+ TRAIT_FLAG_DESC_umbra_aptitude_2: "Progreso mensual de exploración de Umbra: $pod_grace_i$#P +2#!"
+ TRAIT_FLAG_DESC_umbra_aptitude_1: "Progreso mensual de exploración de Umbra: $pod_grace_i$#P +1#!"
+ TRAIT_FLAG_DESC_umbra_sense_10: "[umbra_sense|E]: $pod_grace_i$#P +10#!" #NT!
+ TRAIT_FLAG_DESC_umbra_sense_7: "[umbra_sense|E]: $pod_grace_i$#P +7#!" #NT!
+ TRAIT_FLAG_DESC_umbra_sense_5: "[umbra_sense|E]: $pod_grace_i$#P +5#!" #NT!
   
  trait_permanent_maimed: "Mutilado permanente"
  trait_permanent_one_eyed: "Tuerto permanente"
@@ -1275,12 +1275,12 @@ trait_grondr_kinfolk: "Pariente Grondr"
  trait_forever_indomitable_character_desc: "[ROOT.GetCharacter.GetFirstNameNoTooltip] ha redimido a [ROOT.GetCharacter.GetHerselfHimself] ante los ojos del mundo sobrenatural al destruir la Inquisición... después de causarla."
   
  trait_golconda: "Golconda"
- trait_golconda_desc: "Este personaje ha alcanzado la paz interior tras convertirse en [enlightened|El] sobre la verdadera naturaleza de [the_beast|E]."
- trait_golconda_character_desc: "[ROOT.GetCharacter.GetFirstNameNoTooltip] ha alcanzado la paz interior después de convertirse en [enlightened|El] sobre la verdadera naturaleza de [the_beast|E]."
+ trait_golconda_desc: "Este personaje ha alcanzado la paz interior tras convertirse en [enlightened|El] sobre la verdadera naturaleza de $pod_the_beast$."
+ trait_golconda_character_desc: "[ROOT.GetCharacter.GetFirstNameNoTooltip] ha alcanzado la paz interior después de convertirse en [enlightened|El] sobre la verdadera naturaleza de $pod_the_beast$."
   
  trait_golconda_seeker: "Buscador de Golconda"
- trait_golconda_seeker_desc: "Este personaje está en el largo camino hacia [enlightenment|E]."
- trait_golconda_seeker_character_desc: "[ROOT.GetCharacter.GetFirstNameNoTooltip] está en el largo camino hacia [enlightenment|E]."
+ trait_golconda_seeker_desc: "Este personaje está en el largo camino hacia $pod_enlightenment$."
+ trait_golconda_seeker_character_desc: "[ROOT.GetCharacter.GetFirstNameNoTooltip] está en el largo camino hacia $pod_enlightenment$."
  trait_track_golconda_seeker: "Conocimiento"
  trait_track_golconda_seeker_desc: "\nTu [trait_level_track_xp|E] representa el porcentaje de éxito durante las etapas finales del [GetTrait('golconda').GetName(GetNullCharacter)] [journey|E].\n\n#X Todo el progreso se pierde al entrar en frenesí, o al cometer asesinato o robo.#!"
   

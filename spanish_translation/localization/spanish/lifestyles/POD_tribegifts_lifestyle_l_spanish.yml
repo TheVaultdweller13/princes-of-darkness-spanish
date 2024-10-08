@@ -109,7 +109,7 @@
  walk_with_hades_perk_name: "Camina con Hades"
   
  STORM_OF_MOTHERS_WRATH_PERK_EFFECT: "Como [character_interaction|E], te permite desatar un [GetModifier( 'storm_of_mothers_wrath_modifier' ).GetNameWithTooltip|L] sobre reinos enemigos."
- WALK_WITH_HADES_PERK_EFFECT: "Obtén acceso al [UmbraGlossaryLocalized('shadowlands','Underworld')] durante los viajes espirituales.\nProgreso mensual de exploración de Umbra: [grace_i]#P +5#!"
+ WALK_WITH_HADES_PERK_EFFECT: "Obtén acceso al [UmbraGlossaryLocalized('shadowlands','Underworld')] durante los viajes espirituales.\nProgreso mensual de exploración de Umbra: $pod_grace_i$#P +5#!"
   
  declamation_perk_name: "Declamación"
  tagalong_perk_name: "Acompañamiento"
@@ -180,7 +180,7 @@
   
  HOWL_OF_HUNGER_PERK_EFFECT: "Otorga a los comandantes enemigos el modificador [GetModifier('howl_of_hunger_perk_modifier').GetNameWithTooltip] cuando estés en guerra como comandante."
  HOWL_OF_DEATH_PERK_EFFECT: "Bonificación para causar un golpe brutal al enemigo [knights|E] en guerra como [knight|E]."
- HOME_IN_ALL_LANDS_PERK_EFFECT: "Progreso mensual de exploración de Umbra: [grace_i]#P +10#!\nAs a [character_interaction|E], te permite teletransportar a tu ejército a la ubicación de tu objetivo, o teletransportarte a tu próximo destino cuando viajes. Esto ignora el alcance diplomático, pero el objetivo debe tener un [development|E] bajo.\n#F Las leyendas entre los Garras Rojas afirman que los lobos con la mayor conexión con el Lobo Progenitor no estaban limitados por la distancia, sino que podían aparecer en cualquier lugar donde hubiera lobos. Durante mucho tiempo se pensó que esto era simplemente una tradición, pero de hecho un Garra Roja anciano con un linaje lo suficientemente fuerte podría aprender a desaparecer de una ubicación y aparecer en cualquier otro lugar del Reino o de la Umbra, siempre que el Progenitor haya estado allí antes que él.#!"
+ HOME_IN_ALL_LANDS_PERK_EFFECT: "Progreso mensual de exploración de Umbra: $pod_grace_i$#P +10#!\nAs a [character_interaction|E], te permite teletransportar a tu ejército a la ubicación de tu objetivo, o teletransportarte a tu próximo destino cuando viajes. Esto ignora el alcance diplomático, pero el objetivo debe tener un [development|E] bajo.\n#F Las leyendas entre los Garras Rojas afirman que los lobos con la mayor conexión con el Lobo Progenitor no estaban limitados por la distancia, sino que podían aparecer en cualquier lugar donde hubiera lobos. Durante mucho tiempo se pensó que esto era simplemente una tradición, pero de hecho un Garra Roja anciano con un linaje lo suficientemente fuerte podría aprender a desaparecer de una ubicación y aparecer en cualquier otro lugar del Reino o de la Umbra, siempre que el Progenitor haya estado allí antes que él.#!"
  HOME_IN_ALL_LANDS_REQUIREMENT: "@warning_icon!#X Debes completar una misión del mismísimo Progenitor Wolf (coloca un explorador en cualquier reino de Umbra para encontrar una pista sobre la ubicación y comienza un [umbra_expedition|E] para llegar a ellos y luego recibir una misión) para desbloquear esta ventaja.#!"
   
  purify_scent_perk_name: "Purificar el aroma"
@@ -249,7 +249,7 @@
  song_of_the_city_beast_perk_name: "Canción de la Bestia de la Ciudad"
  calm_the_flock_perk_name: "Calma al rebaño"
   
- WEB_WALKER_PERK_EFFECT: "Posibilidad de quedar atrapado en la Umbra: #P -10%#!\nMonthly Progreso de exploración de la Umbra: [grace_i]#P +10#!"
+ WEB_WALKER_PERK_EFFECT: "Posibilidad de quedar atrapado en la Umbra: #P -10%#!\nMonthly Progreso de exploración de la Umbra: $pod_grace_i$#P +10#!"
  GIFT_DOPPELGANGER_PERK_EFFECT: "Bonificación a Cambio de Forma [character_interaction|E] para cambiar de apariencia."
   
  bane_protector_perk_name: "Protector de la perdición"

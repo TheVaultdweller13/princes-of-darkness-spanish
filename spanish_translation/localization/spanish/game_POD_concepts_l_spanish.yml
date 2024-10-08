@@ -33,7 +33,7 @@
  game_concept_the_beast: "$game_concept_thebeast$"
  game_concept_thebeast: "La Bestia"
  game_concept_beasts: "Ganado" #NT!
- game_concept_beast_desc: "[the_beast|E] es un término usado por $POD_splat_vampire_plural$ para describir al depredador interno que lucha por controlar su mente. Se opone directamente a su Humanidad y es responsable de muchos de los impulsos degradados que $pod_cainites$ siente cada noche.\n\nEn momentos de extrema angustia, la Bestia puede abrumar a un [GetTrait('vampire').GetName( GetNullCharacter )] obligándolo a entrar en Frenesí, un estado de lucha o huida puramente animal.\n\nEn [princes_of_darkness|E], la Bestia a veces te hablará a ti #R de esta manera#!. Si un [GetTrait('vampire').GetName( GetNullCharacter )] se vuelve negativo en [piety|E], corre el riesgo de caer en un frenesí permanente y convertirse en un [GetTrait('wight').GetName( GetNullCharacter )]. Esto es una abdicación de facto a su $POD_splat_vampire_plural$0."
+ game_concept_beast_desc: "$pod_the_beast$ es un término usado por $POD_splat_vampire_plural$ para describir al depredador interno que lucha por controlar su mente. Se opone directamente a su Humanidad y es responsable de muchos de los impulsos degradados que $pod_cainites$ siente cada noche.\n\nEn momentos de extrema angustia, la Bestia puede abrumar a un [GetTrait('vampire').GetName( GetNullCharacter )] obligándolo a entrar en Frenesí, un estado de lucha o huida puramente animal.\n\nEn [princes_of_darkness|E], la Bestia a veces te hablará a ti #R de esta manera#!. Si un [GetTrait('vampire').GetName( GetNullCharacter )] se vuelve negativo en [piety|E], corre el riesgo de caer en un frenesí permanente y convertirse en un [GetTrait('wight').GetName( GetNullCharacter )]. Esto es una abdicación de facto a su $POD_splat_vampire_plural$0."
   
  game_concept_the_masquerade: "La Mascarada"
  game_concept_masquerade: "La Mascarada"
@@ -69,7 +69,7 @@
  game_concept_torpid: "$game_concept_torpid$"
   
  game_concept_hunger: "Hambre"
- game_concept_hunger_desc: "$game_concept_hunger$ es el deseo de un [GetTrait('vampire').GetName( GetNullCharacter )] de consumir sangre. Es causado por [the_beast|E]. Cuanto mayor sea el $game_concept_bloodpotency$ de un [GetTrait('vampire').GetName( GetNullCharacter )], más sangre necesitará para reducir su $game_concept_hunger$. Aumentar $game_concept_hunger$ tiene impactos positivos pero en gran medida negativos para un [GetTrait('vampire').GetName( GetNullCharacter )]. La única forma de saciar por completo el $game_concept_hunger$ de un [GetTrait('vampire').GetName( GetNullCharacter )] es matando y drenando toda la sangre de una víctima. Incluso esa saciedad de $game_concept_hunger$ es temporal."
+ game_concept_hunger_desc: "$game_concept_hunger$ es el deseo de un [GetTrait('vampire').GetName( GetNullCharacter )] de consumir sangre. Es causado por $pod_the_beast$. Cuanto mayor sea el $game_concept_bloodpotency$ de un [GetTrait('vampire').GetName( GetNullCharacter )], más sangre necesitará para reducir su $game_concept_hunger$. Aumentar $game_concept_hunger$ tiene impactos positivos pero en gran medida negativos para un [GetTrait('vampire').GetName( GetNullCharacter )]. La única forma de saciar por completo el $game_concept_hunger$ de un [GetTrait('vampire').GetName( GetNullCharacter )] es matando y drenando toda la sangre de una víctima. Incluso esa saciedad de $game_concept_hunger$ es temporal."
  game_concept_the_hunger: "El Hambre"
  game_concept_blood_hunger: "Hambre de sangre"
  game_concept_the_thirst: "La sed"
@@ -561,15 +561,15 @@
   
  game_concept_propaganda: "Propaganda"
  game_concept_propaganda_interaction: "Interacción de propaganda"
- game_concept_propaganda_desc: "Un [character_interaction|E] disponible para:\n\n$BULLET_WITH_TAB$#TOOLTIP:GAME_TRAIT,setite,[GetNullCharacter] #L Setitas#!#! que hayan mejorado el #TOOLTIP:BUILDING,rome_setite_03 #L Distrito Setita#!#! de [roma_aeterna|E] al nivel 3\n$BULLET_WITH_TAB$Personajes que hayan mejorado $BULLET_WITH_TAB$0 #L Pasquino#!#! en $BULLET_WITH_TAB$3 al nivel 2\n\nTe permite eliminar uno de tus rasgos criminales a cambio de $BULLET_WITH_TAB$4.\n\n$BULLET_WITH_TAB$5 Para usarlo, haz clic derecho en tu propio personaje.$BULLET_WITH_TAB$6"
+ game_concept_propaganda_desc: "Un [character_interaction|E] disponible para:\n\n$BULLET_WITH_TAB$#TOOLTIP:GAME_TRAIT,setite,[GetNullCharacter] #L Setitas#!#! que hayan mejorado el #TOOLTIP:BUILDING,rome_setite_03 #L Distrito Setita#!#! de $pod_roma_aeterna$ al nivel 3\n$BULLET_WITH_TAB$Personajes que hayan mejorado $BULLET_WITH_TAB$0 #L Pasquino#!#! en $BULLET_WITH_TAB$3 al nivel 2\n\nTe permite eliminar uno de tus rasgos criminales a cambio de $BULLET_WITH_TAB$4.\n\n$BULLET_WITH_TAB$5 Para usarlo, haz clic derecho en tu propio personaje.$BULLET_WITH_TAB$6"
   
  game_concept_assassination: "Asesinato"
  game_concept_assassination_interaction: "Interacción de asesinato"
- game_concept_assassination_desc: "Un [character_interaction|E] disponible para [GetTrait('assamite').GetName(GetNullCharacter)] que hayan mejorado el #TOOLTIP:BUILDING,rome_assamite_03 #L Distrito Banu Haqim#!#! de [roma_aeterna|E] al nivel 3.\n\nTe permite completar instantáneamente tu [GetScheme('murder').GetTypeName()] [schemes|E] a cambio de [prestige|E] y [stress|E].\n\n[GetTrait('assamite').GetName(GetNullCharacter)]0 Para usarlo, haz clic derecho en tu propio personaje.[GetTrait('assamite').GetName(GetNullCharacter)]1"
+ game_concept_assassination_desc: "Un [character_interaction|E] disponible para [GetTrait('assamite').GetName(GetNullCharacter)] que hayan mejorado el #TOOLTIP:BUILDING,rome_assamite_03 #L Distrito Banu Haqim#!#! de $pod_roma_aeterna$ al nivel 3.\n\nTe permite completar instantáneamente tu [GetScheme('murder').GetTypeName()] [schemes|E] a cambio de [prestige|E] y [stress|E].\n\n[GetTrait('assamite').GetName(GetNullCharacter)]0 Para usarlo, haz clic derecho en tu propio personaje.[GetTrait('assamite').GetName(GetNullCharacter)]1"
   
  game_concept_unburden: "Desahogarse"
  game_concept_unburden_interaction: "Interacción para aliviar la carga"
- game_concept_unburden_desc: "Un [character_interaction|E] disponible para [GetTrait('salubri').GetName(GetNullCharacter)] que hayan mejorado el #TOOLTIP:BUILDING,rome_salubri_03 #L Distrito Salubri#!#! de [roma_aeterna|E] al nivel 3.\n\nTe permite cambiar tus rasgos de estrés a cambio de [piety|E].\n\n#I Para usarlo, haz clic derecho en tu propio personaje.#!"
+ game_concept_unburden_desc: "Un [character_interaction|E] disponible para [GetTrait('salubri').GetName(GetNullCharacter)] que hayan mejorado el #TOOLTIP:BUILDING,rome_salubri_03 #L Distrito Salubri#!#! de $pod_roma_aeterna$ al nivel 3.\n\nTe permite cambiar tus rasgos de estrés a cambio de [piety|E].\n\n#I Para usarlo, haz clic derecho en tu propio personaje.#!"
   
  game_concept_journey: "Viaje"
  game_concept_journeys: "Viajes"
@@ -582,7 +582,7 @@
  game_concept_planning_speed_desc: "A diferencia de [schemes|E], el [planning_phase|E] de un [journey|E] progresa a un ritmo constante cada mes, sin aleatoriedad alguna.\n\n#help La información sobre herramientas del número de Velocidad de planificación dará pistas sobre cómo aumentarla aún más.#!"
   
  game_concept_travel_phase: "Fase de viaje"
- game_concept_travel_phase_desc: "Una vez que se completa el [planning_phase|E] de un [journey|E], tu personaje se entera de un [location|E] en el mundo donde puede terminar su misión. Puedes [travel|E] allí de inmediato o pausar el [journey|E] y viajar más tarde.\n\nPuedes invitar a los miembros de tu [coterie|E] para que te acompañen en este viaje.\n\n#help No puedes comenzar un nuevo [journeys|E] ni invitar a nuevos miembros a tu [coterie|E] durante la fase de viaje.#!"
+ game_concept_travel_phase_desc: "Una vez que se completa el [planning_phase|E] de un [journey|E], tu personaje se entera de un [location|E] en el mundo donde puede terminar su misión. Puedes [travel|E] allí de inmediato o pausar el [journey|E] y viajar más tarde.\n\nPuedes invitar a los miembros de tu [coterie|E] para que te acompañen en este viaje.\n\n#help No puedes comenzar un nuevo $pod_journeys$ ni invitar a nuevos miembros a tu [coterie|E] durante la fase de viaje.#!"
   
  game_concept_coterie: "Coterie"
  game_concept_coterie_sabbat: "Manada"
@@ -631,7 +631,7 @@
  game_concept_golconda: "Golconda"
  game_concept_enlightenment: "Iluminación"
  game_concept_enlightened: "Ilustrado"
- game_concept_golconda_desc: "#bold Golconda#! es un estado místico de iluminación en el que un $POD_splat_vampire$ ya no está sujeto a [the_beast|E].\n\nEn [princes_of_darkness|E], [GetTrait('golconda').GetName(GetNullCharacter)] es un [trait|E]. Unos pocos individuos comienzan con él, pero todos los demás solo pueden lograrlo después de un largo [journey|E].\n\n#X Dado que Golconda está estrechamente ligada a tu Humanidad, perderás todo el progreso en este Viaje si cometes un asesinato o un robo, o sucumbes al frenesí.#!"
+ game_concept_golconda_desc: "#bold Golconda#! es un estado místico de iluminación en el que un $POD_splat_vampire$ ya no está sujeto a $pod_the_beast$.\n\nEn [princes_of_darkness|E], [GetTrait('golconda').GetName(GetNullCharacter)] es un [trait|E]. Unos pocos individuos comienzan con él, pero todos los demás solo pueden lograrlo después de un largo [journey|E].\n\n#X Dado que Golconda está estrechamente ligada a tu Humanidad, perderás todo el progreso en este Viaje si cometes un asesinato o un robo, o sucumbes al frenesí.#!"
   
  game_concept_golconda_planning_speed: "Velocidad de planificación de Golconda"
  game_concept_golconda_planning_speed_desc: "La mejor manera de aumentar el [planning_speed|E] de los [golconda|E] [journey|E] es ​​tener un mortal [GetCourtPositionType('touchstones_court_position').GetName()]. Son un [court_position|E] desbloqueado por [faiths|E] con #TOOLTIP:GAME_FAITH_DOCTRINE,doctrine_enlightenment_virtues_conscience_and_selfcontrol #L Conciencia#!#!, y puedes aumentar su [aptitude|E] teniendo un buen [golconda|E]0 con ellos (como [golconda|E]1 o [golconda|E]2).\n\nOtras formas de aumentar la velocidad:\n[golconda|E]3Tener otros personajes con el [golconda|E]4 o [golconda|E]5 [golconda|E]6 en tu [golconda|E]7\n[golconda|E]3Ser un [golconda|E]9, [journey|E]0 o [journey|E]1\n[golconda|E]3Poseer un [journey|E]3 con Golconda Lore"
@@ -682,7 +682,7 @@
  game_concept_infiltration: "Infiltración"
  game_concept_infiltration_mission: "Misión de infiltración"
  game_concept_infiltration_missions: "Misiones de infiltración"
- game_concept_infiltration_desc: "Una Infiltración #bold#! es un tipo de [journey|E] que te permite colarte en la [court|E] de otra persona para cumplir algún objetivo secreto, como robar una [artifact|E].\n\nLas infiltraciones tienen lugar en un mapa por el que puedes caminar libremente. Haz clic en los nodos para viajar entre ellos. Ten en cuenta que al hacerlo puedes aumentar tu [suspicion_with_icon|E].\n\nPara completar una Infiltración, debes regresar a un nodo de salida sin dejar que tu [suspicion_with_icon|E] llegue a [EmptyScope.ScriptValue('suspicion_max')|V0].\n\nCompletar las misiones de Infiltración #V 3#! con éxito otorgará #!0."
+ game_concept_infiltration_desc: "Una Infiltración #bold#! es un tipo de [journey|E] que te permite colarte en la [court|E] de otra persona para cumplir algún objetivo secreto, como robar una [artifact|E].\n\nLas infiltraciones tienen lugar en un mapa por el que puedes caminar libremente. Haz clic en los nodos para viajar entre ellos. Ten en cuenta que al hacerlo puedes aumentar tu $pod_suspicion_with_icon$ .\n\nPara completar una Infiltración, debes regresar a un nodo de salida sin dejar que tu $pod_suspicion_with_icon$  llegue a [EmptyScope.ScriptValue('suspicion_max')|V0].\n\nCompletar las misiones de Infiltración #V 3#! con éxito otorgará #!0."
   
  game_concept_suspicion: "Sospecha"
  game_concept_suspicion_i: "@masquerade_icon:color_dorado_amarillo!"
@@ -701,7 +701,7 @@
   
  game_concept_storyteller_mode: "Modo narrador"
  game_concept_storyteller_mode_with_icon: "@wod_icon! Modo narrador"
- game_concept_storyteller_mode_desc: "Este modo de juego tiene varias restricciones que dificultan acumular poder rápidamente:\n\n$EFFECT_LIST_BULLET$[loyalty_with_icon|E] tiene un requisito de [opinion|E] de #V 50#!\n$EFFECT_LIST_BULLET$[resonancia|E] la experiencia por beber sangre se reduce por cada [discipline|E] que un personaje conoce (más allá de 3)"
+ game_concept_storyteller_mode_desc: "Este modo de juego tiene varias restricciones que dificultan acumular poder rápidamente:\n\n$EFFECT_LIST_BULLET$$pod_loyalty_with_icon$ tiene un requisito de [opinion|E] de #V 50#!\n$EFFECT_LIST_BULLET$[resonancia|E] la experiencia por beber sangre se reduce por cada [discipline|E] que un personaje conoce (más allá de 3)"
   
  game_concept_loyalty: "Lealtad"
  game_concept_loyalty_with_icon: "@knight_icon!Lealtad"
@@ -731,7 +731,7 @@
  game_concept_bloodmagic_spell: "Hechizo de magia de sangre" #NT!
  game_concept_bs_spell: "Hechizo" #NT!
  game_concept_bs_spells: "Hechizos" #NT!
- game_concept_bloodmagic_spell_desc: "#bold Los hechizos#! permiten que un [Concept('bloodsorcery','Blood Sorcerer')] haga cosas que no son naturales ni siquiera para los estándares vampíricos. Cada hechizo está asociado con un [bs_path|E].\n\nLos hechizos pueden tener costos adicionales además de $pod_hunger_with_icon$, como [static_stress|E] o [piety|E].\n\nEn [princes_of_darkness|E], los hechizos se lanzan a través de #V $blood_sorcery_interaction$#! #!1. Su probabilidad de éxito se basa en la distancia al objetivo, la diferencia en #!2 y, si ambos son #!3, su diferencia en #!4." #NT!
+ game_concept_bloodmagic_spell_desc: "#bold Los hechizos#! permiten que un [Concept('bloodsorcery','Blood Sorcerer')] haga cosas que no son naturales ni siquiera para los estándares vampíricos. Cada hechizo está asociado con un $pod_bs_path$.\n\nLos hechizos pueden tener costos adicionales además de $pod_hunger_with_icon$, como [static_stress|E] o [piety|E].\n\nEn [princes_of_darkness|E], los hechizos se lanzan a través de #V $blood_sorcery_interaction$#! #!1. Su probabilidad de éxito se basa en la distancia al objetivo, la diferencia en #!2 y, si ambos son #!3, su diferencia en #!4." #NT!
   
  game_concept_bloodmagic_tradition: "Tradición de magia de sangre" #NT!
  game_concept_bs_tradition: "Tradición" #NT!
@@ -741,9 +741,9 @@
  game_concept_bloodmagic_path: "Camino de la magia de la sangre" #NT!
  game_concept_bs_path: "Camino" #NT!
  game_concept_bs_paths: "Caminos" #NT!
- game_concept_bloodmagic_path_desc: "Un Camino #bold#! es una colección de procedimientos para lograr un tipo de efecto con [bloodsorcery|E], como controlar el clima, manipular enfermedades o invocar demonios.\n\nEn [princes_of_darkness|E], los Caminos son líneas de [perks|E] en la Magia de Sangre [lifestyle|E]. Estas ventajas pueden desbloquear nuevos [bs_spells|E] o mejorar los existentes.\n\nAprender un [bs_tradition|E] dará acceso a sus Caminos asociados. Algunos Caminos también se comparten entre Tradiciones." #NT!
+ game_concept_bloodmagic_path_desc: "Un Camino #bold#! es una colección de procedimientos para lograr un tipo de efecto con [bloodsorcery|E], como controlar el clima, manipular enfermedades o invocar demonios.\n\nEn [princes_of_darkness|E], los Caminos son líneas de [perks|E] en la Magia de Sangre [lifestyle|E]. Estas ventajas pueden desbloquear nuevos $pod_bs_spells$ o mejorar los existentes.\n\nAprender un $pod_bs_tradition$ dará acceso a sus Caminos asociados. Algunos Caminos también se comparten entre Tradiciones." #NT!
   
  game_concept_bloodmagic_ritual: "Ritual de magia de sangre" #NT!
  game_concept_bs_ritual: "Ritual" #NT!
  game_concept_bs_rituals: "Rituales" #NT!
- game_concept_bloodmagic_ritual_desc: "Los rituales #bold#! son poderosos [bs_spells|E]. Suelen tener menos posibilidades de fallar, pero requieren más tiempo y recursos adicionales, como [gold|E] o [piety|E].\n\nLos rituales están vinculados a [bs_traditions|E]. Se desbloquean rituales más poderosos al obtener [perks|E] en cualquier [bs_path|E] de esa tradición.\n\nEn [princes_of_darkness|E], los rituales son [journeys|E]. No puedes obtener #!0 ni participar en #!1 mientras planificas un ritual." #NT!
+ game_concept_bloodmagic_ritual_desc: "Los rituales #bold#! son poderosos $pod_bs_spells$. Suelen tener menos posibilidades de fallar, pero requieren más tiempo y recursos adicionales, como [gold|E] o [piety|E].\n\nLos rituales están vinculados a $pod_bs_traditions$. Se desbloquean rituales más poderosos al obtener [perks|E] en cualquier $pod_bs_path$ de esa tradición.\n\nEn [princes_of_darkness|E], los rituales son $pod_journeys$. No puedes obtener #!0 ni participar en #!1 mientras planificas un ritual." #NT!

@@ -43,7 +43,7 @@
  COMMUTA_PERK_EFFECT: "#weak Cambios simples en la forma de un objeto\nCambios de estado: de sólido a líquido, de líquido a gas, etc.#!"
  CONFORMA_PERK_EFFECT: "Puede mejorar [artifacts|E].\n#weak Cambios complejos en la forma de un objeto\nCambios simples en la forma#!"
  SCINDE_PERK_EFFECT: "Mejora el efecto de [GetPerk('conforma_perk').GetName(GetPlayer)].\n#weak Cambios complicados en la forma de un objeto\nCambios complejos en la forma#!"
- MUTATE_PERK_EFFECT: "Como [bs_spell|E], intercambia 80 [gold|E][gold_i|E] por 120 [gold|E][gold_i|E].\n#weak Pequeños cambios en el número atómico\nCambios importantes en la composición#!"
+ MUTATE_PERK_EFFECT: "Como $pod_bs_spell$, intercambia 80 [gold|E][gold_i|E] por 120 [gold|E][gold_i|E].\n#weak Pequeños cambios en el número atómico\nCambios importantes en la composición#!"
  TRANSMUTATE_PERK_EFFECT: "Mejora [GetPerk('mutate_perk').GetName(GetPlayer)], lo que te permite cambiar 40 [gold|E][gold_i|E] por 140 [gold|E][gold_i|E].\n#weak Cambios importantes en el número atómico\nCambios radicales en la composición#!"
   
  summon_the_simplest_form_perk_name: "Invocar la forma más simple"
@@ -52,11 +52,11 @@
  reverse_conjuration_perk_name: "Conjuración inversa"
  power_over_life_perk_name: "Poder sobre la vida"
   
- SUMMON_THE_SIMPLEST_FORM_PERK_EFFECT: "Como [bs_spell|E], invoca 1 material de elaboración.\n#weak Conjura temporalmente un objeto muy simple (un solo material, sin partes móviles#!"
- BLOOD_PERMANENCY_PERK_EFFECT: "Mejora el [GetPerk('summon_the_simplest_form_perk').GetName(GetPlayer)] [bs_spell|E], lo que te permite invocar 2 materiales de elaboración a la vez.\n#weak Los objetos conjurados pueden adquirir existencia permanente#!"
- MAGIC_OF_THE_SMITH_PERK_EFFECT: "Mejora el [GetPerk('blood_permanency_perk').GetName(GetPlayer)] [bs_spell|E], lo que te permite invocar 4 materiales de elaboración a la vez.\nComo [bs_spell|E], invoca un [artifact|E] común.\n#weak Conjura un objeto complejo (múltiples materiales, partes móviles)#!"
- REVERSE_CONJURATION_PERK_EFFECT: "Disminuye el coste de [bs_spells|E] de este [bloodmagic_path|E].\nMejora el [GetPerk('magic_of_the_smith_perk').GetName(GetPlayer)] [bs_spell|E] invocando una obra maestra [artifact|E] en lugar de una común.\n#weak Destierra objetos conjurados con este camino#!"
- POWER_OVER_LIFE_PERK_EFFECT: "Como [bs_spell|E], invoca un ejército de [men_at_arms|E] aleatorios.\nMejora el [GetPerk('reverse_conjuration_perk').GetName(GetPlayer)] [bs_spell|E] invocando un [artifact|E] famoso en lugar de uno de gran calidad.\n#weak Conjura temporalmente un ser vivo (aunque sin mente)#!"
+ SUMMON_THE_SIMPLEST_FORM_PERK_EFFECT: "Como $pod_bs_spell$, invoca 1 material de elaboración.\n#weak Conjura temporalmente un objeto muy simple (un solo material, sin partes móviles#!"
+ BLOOD_PERMANENCY_PERK_EFFECT: "Mejora el [GetPerk('summon_the_simplest_form_perk').GetName(GetPlayer)] $pod_bs_spell$, lo que te permite invocar 2 materiales de elaboración a la vez.\n#weak Los objetos conjurados pueden adquirir existencia permanente#!"
+ MAGIC_OF_THE_SMITH_PERK_EFFECT: "Mejora el [GetPerk('blood_permanency_perk').GetName(GetPlayer)] $pod_bs_spell$, lo que te permite invocar 4 materiales de elaboración a la vez.\nComo $pod_bs_spell$, invoca un [artifact|E] común.\n#weak Conjura un objeto complejo (múltiples materiales, partes móviles)#!"
+ REVERSE_CONJURATION_PERK_EFFECT: "Disminuye el coste de $pod_bs_spells$ de este [bloodmagic_path|E].\nMejora el [GetPerk('magic_of_the_smith_perk').GetName(GetPlayer)] $pod_bs_spell$ invocando una obra maestra [artifact|E] en lugar de una común.\n#weak Destierra objetos conjurados con este camino#!"
+ POWER_OVER_LIFE_PERK_EFFECT: "Como $pod_bs_spell$, invoca un ejército de [men_at_arms|E] aleatorios.\nMejora el [GetPerk('reverse_conjuration_perk').GetName(GetPlayer)] $pod_bs_spell$ invocando un [artifact|E] famoso en lugar de uno de gran calidad.\n#weak Conjura temporalmente un ser vivo (aunque sin mente)#!"
   
  contradict_perk_name: "Contradecir"
  subvert_perk_name: "Subvertir"
@@ -64,11 +64,11 @@
  addiction_perk_name: "Adicción"
  dependence_perk_name: "Dependencia"
   
- CONTRADICT_PERK_EFFECT: "Como [bs_spell|E], aumenta la opinión que el objetivo tiene de ti.\n#weak Haz que alguien cambie de opinión sobre un curso de acción#!"
- SUBVERT_PERK_EFFECT: "Como [bs_spell|E], hace que el objetivo pierda [prestige|E] y [piety|E].\n#weak Hace que la víctima actúe según sus impulsos oscuros#!"
- DISSOCIATE_PERK_EFFECT: "Como [bs_spell|E], hace que una relación aleatoria del objetivo se deteriore.\n#weak Hace que alguien se distancie de los demás por un tiempo#!"
- ADDICTION_PERK_EFFECT: "Mejora el [GetPerk('subvert_perk').GetName(GetPlayer)] [bs_spell|E], aumentando la pérdida de [prestige|E] y [piety|E].\nMejora el [GetPerk('dissociate_perk').GetName(GetPlayer)] [bs_spell|E], provocando que una relación aleatoria del objetivo desaparezca por completo.\n#weak Provoca que una víctima dependa psicológicamente de una sensación particular#!"
- DEPENDENCE_PERK_EFFECT: "Mejora el [GetPerk('contradict_perk').GetName(GetPlayer)] [bs_spell|E], aumentando aún más la opinión del objetivo y obteniendo un [weak_hook|E].\n#weak Vincula temporalmente a alguien a ti#!"
+ CONTRADICT_PERK_EFFECT: "Como $pod_bs_spell$, aumenta la opinión que el objetivo tiene de ti.\n#weak Haz que alguien cambie de opinión sobre un curso de acción#!"
+ SUBVERT_PERK_EFFECT: "Como $pod_bs_spell$, hace que el objetivo pierda [prestige|E] y [piety|E].\n#weak Hace que la víctima actúe según sus impulsos oscuros#!"
+ DISSOCIATE_PERK_EFFECT: "Como $pod_bs_spell$, hace que una relación aleatoria del objetivo se deteriore.\n#weak Hace que alguien se distancie de los demás por un tiempo#!"
+ ADDICTION_PERK_EFFECT: "Mejora el [GetPerk('subvert_perk').GetName(GetPlayer)] $pod_bs_spell$, aumentando la pérdida de [prestige|E] y [piety|E].\nMejora el [GetPerk('dissociate_perk').GetName(GetPlayer)] $pod_bs_spell$, provocando que una relación aleatoria del objetivo desaparezca por completo.\n#weak Provoca que una víctima dependa psicológicamente de una sensación particular#!"
+ DEPENDENCE_PERK_EFFECT: "Mejora el [GetPerk('contradict_perk').GetName(GetPlayer)] $pod_bs_spell$, aumentando aún más la opinión del objetivo y obteniendo un [weak_hook|E].\n#weak Vincula temporalmente a alguien a ti#!"
   
  readiness_perk_name: "Preparación"
  centering_perk_name: "Centrado"
@@ -76,11 +76,11 @@
  dual_thought_perk_name: "Pensamiento dual"
  perfect_clarity_perk_name: "Claridad perfecta"
   
- READINESS_PERK_EFFECT: "Como [bs_spell|E], otorga al objetivo [GetModifier('readiness_1_modifier').GetNameWithTooltip].\n#weak Gana una reserva de dados para agregar a las tiradas relacionadas con Astucia o iniciativa#!"
- CENTERING_PERK_EFFECT: "Mejora el modificador de [GetPerk('readiness_perk').GetName(GetPlayer)] [bs_spell|E] a [GetModifier('readiness_2_modifier').GetNameWithTooltip].\n#weak Hace que un sujeto ignore cualquier efecto que reduzca las reservas de dados; otorga una bonificación para resistir Frenesí#!"
- ONE_TRACKED_MIND_PERK_EFFECT: "Como [bs_spell|E], dale al objetivo [GetModifier('one_tracked_mind_diplomacy_modifier').GetNameWithTooltip].\n#weak Haz que un sujeto no pueda dividirse y realizar múltiples acciones#!"
- DUAL_THOUGHT_PERK_EFFECT: "Como [bs_spell|E], otorga al objetivo [GetModifier('dual_thought_modifier').GetNameWithTooltip].\n#weak Realiza una acción mental adicional por ronda, incluido otro uso de Disciplina#!"
- PERFECT_CLARITY_PERK_EFFECT: "Mejora el modificador de [GetPerk('dual_thought_perk').GetName(GetPlayer)] [bs_spell|E] a [GetModifier('perfect_clarity_modifier').GetNameWithTooltip].\n#weak Reduce la dificultad de todas las acciones, se vuelve inmune al Frenesí y se vuelve resistente a la influencia mental#!"
+ READINESS_PERK_EFFECT: "Como $pod_bs_spell$, otorga al objetivo [GetModifier('readiness_1_modifier').GetNameWithTooltip].\n#weak Gana una reserva de dados para agregar a las tiradas relacionadas con Astucia o iniciativa#!"
+ CENTERING_PERK_EFFECT: "Mejora el modificador de [GetPerk('readiness_perk').GetName(GetPlayer)] $pod_bs_spell$ a [GetModifier('readiness_2_modifier').GetNameWithTooltip].\n#weak Hace que un sujeto ignore cualquier efecto que reduzca las reservas de dados; otorga una bonificación para resistir Frenesí#!"
+ ONE_TRACKED_MIND_PERK_EFFECT: "Como $pod_bs_spell$, dale al objetivo [GetModifier('one_tracked_mind_diplomacy_modifier').GetNameWithTooltip].\n#weak Haz que un sujeto no pueda dividirse y realizar múltiples acciones#!"
+ DUAL_THOUGHT_PERK_EFFECT: "Como $pod_bs_spell$, otorga al objetivo [GetModifier('dual_thought_modifier').GetNameWithTooltip].\n#weak Realiza una acción mental adicional por ronda, incluido otro uso de Disciplina#!"
+ PERFECT_CLARITY_PERK_EFFECT: "Mejora el modificador de [GetPerk('dual_thought_perk').GetName(GetPlayer)] $pod_bs_spell$ a [GetModifier('perfect_clarity_modifier').GetNameWithTooltip].\n#weak Reduce la dificultad de todas las acciones, se vuelve inmune al Frenesí y se vuelve resistente a la influencia mental#!"
   
  warcry_perk_name: "Grito de guerra"
  strike_true_perk_name: "Golpea con fuerza"
@@ -116,7 +116,7 @@
  CONTORTION_PERK_EFFECT: "Mejora el modificador de [GetPerk('vertigo_perk').GetName(GetPlayer)] a [GetModifier('contortion_modifier').GetNameWithTooltip].\n#weak Hace que la extremidad de la víctima se contraiga y se vuelva inútil#!"
  SEIZURE_PERK_EFFECT: "Mejora el modificador de [GetPerk('vertigo_perk').GetName(GetPlayer)] a [GetModifier('seizure_modifier').GetNameWithTooltip].\n#weak Hace que el cuerpo de la víctima se retuerza y ​​se tense sin control#!"
  BODY_FAILURE_PERK_EFFECT: "Mejora el modificador de [GetPerk('vertigo_perk').GetName(GetPlayer)] a [GetModifier('body_failure_modifier').GetNameWithTooltip].\n#weak Como Seizure, pero más poderoso#!"
- BLOOD_MARIONETTE_PERK_EFFECT: "Como [bs_spell|E], gana un [strong_hook|E] en el objetivo.\n#weak Fuerza al cuerpo de un objetivo a moverse y actuar como desees#!"
+ BLOOD_MARIONETTE_PERK_EFFECT: "Como $pod_bs_spell$, gana un [strong_hook|E] en el objetivo.\n#weak Fuerza al cuerpo de un objetivo a moverse y actuar como desees#!"
   
  control_fog_perk_name: "Control de niebla"
  control_rain_perk_name: "Controlar la lluvia"
@@ -125,8 +125,8 @@
  control_lightning_perk_name: "Controlar los rayos"
   
  CONTROL_FOG_PERK_EFFECT: "Otorga [GetModifier('control_fog_modifier').GetNameWithTooltip] al enemigo [knights|E] cuando actúa como [commander|E] durante [combat_phase|E], o a tu enemigo durante [single_combat_duel_plural|E].\n#weak Control de niebla#!"
- CONTROL_RAIN_PERK_EFFECT: "Como [bs_spell|E], dale [GetModifier('control_rain_modifier').GetNameWithTooltip] a tu ubicación actual.\n#weak Controlar lluvia#!"
- CONTROL_WIND_PERK_EFFECT: "Mejora el modificador de [GetPerk('control_fog_perk').GetName(GetPlayer)] a [GetModifier('control_wind_modifier').GetNameWithTooltip].\nMejora el modificador de [GetPerk('control_rain_perk').GetName(GetPlayer)] [bs_spell|E] a [GetModifier('control_rain_2_modifier').GetNameWithTooltip].\n#weak Control de viento#!"
+ CONTROL_RAIN_PERK_EFFECT: "Como $pod_bs_spell$, dale [GetModifier('control_rain_modifier').GetNameWithTooltip] a tu ubicación actual.\n#weak Controlar lluvia#!"
+ CONTROL_WIND_PERK_EFFECT: "Mejora el modificador de [GetPerk('control_fog_perk').GetName(GetPlayer)] a [GetModifier('control_wind_modifier').GetNameWithTooltip].\nMejora el modificador de [GetPerk('control_rain_perk').GetName(GetPlayer)] $pod_bs_spell$ a [GetModifier('control_rain_2_modifier').GetNameWithTooltip].\n#weak Control de viento#!"
  CONTROL_STORM_PERK_EFFECT: "Mejora [GetModifier('control_wind_modifier').GetNameWithTooltip] a [GetModifier('control_storm_modifier').GetNameWithTooltip].\n#weak Control de tormenta#!"
  CONTROL_LIGHTNING_PERK_EFFECT: "#weak Controlar el rayo#!"
   
@@ -148,10 +148,10 @@
  bs_theft_of_vitae_perk_name: "Robo de vitae"
  bs_cauldron_of_blood_perk_name: "Caldero de sangre"
   
- BS_A_TASTE_FOR_BLOOD_PERK_EFFECT: "Como [bs_spell|E], descubre si tu objetivo es un $pod_diablerist$.\n#weak Reúne una variedad de información de una muestra de sangre#!"
- BLOOD_RAGE_PERK_EFFECT: "Como [bs_spell|E], obliga a tu objetivo a usar Oleada de sangre.\n#weak Obliga a un objetivo a gastar su vitae para aumentar los atributos#!"
- BS_BLOOD_OF_POTENCY_PERK_EFFECT: "Como [bs_spell|E], aumenta temporalmente [blood_potency|E] en 1.\n#weak Reduce temporalmente tu generación#!"
- BS_THEFT_OF_VITAE_PERK_EFFECT: "Como [bs_spell|E], roba vitae de otro $POD_splat_vampire$.\n#weak Roba sangre de un objetivo a distancia#!"
+ BS_A_TASTE_FOR_BLOOD_PERK_EFFECT: "Como $pod_bs_spell$, descubre si tu objetivo es un $pod_diablerist$.\n#weak Reúne una variedad de información de una muestra de sangre#!"
+ BLOOD_RAGE_PERK_EFFECT: "Como $pod_bs_spell$, obliga a tu objetivo a usar Oleada de sangre.\n#weak Obliga a un objetivo a gastar su vitae para aumentar los atributos#!"
+ BS_BLOOD_OF_POTENCY_PERK_EFFECT: "Como $pod_bs_spell$, aumenta temporalmente [blood_potency|E] en 1.\n#weak Reduce temporalmente tu generación#!"
+ BS_THEFT_OF_VITAE_PERK_EFFECT: "Como $pod_bs_spell$, roba vitae de otro $POD_splat_vampire$.\n#weak Roba sangre de un objetivo a distancia#!"
  BS_CAULDRON_OF_BLOOD_PERK_EFFECT: "Otorga [GetModifier('cauldron_of_blood_modifier').GetNameWithTooltip] al enemigo [knights|E] cuando actúa como [commander|E] durante [combat_phase|E], o a tu enemigo durante [single_combat_duel_plural|E].\n#weak Provoca que la sangre de una víctima la queme desde adentro#!"
   
  eyes_of_the_sea_perk_name: "Ojos del mar"
@@ -161,10 +161,10 @@
  dehydrate_perk_name: "Deshidratar"
   
  EYES_OF_THE_SEA_PERK_EFFECT: "#weak Vea lo que ha sucedido en, sobre o alrededor de un cuerpo de agua quieta#!"
- PRISON_OF_WATER_PERK_EFFECT: "Como [bs_spell|E], encarcela a tu objetivo en la misma ubicación.\n#weak Usa una gran masa de agua para atar a un objetivo#!"
- BLOOD_TO_WATER_PERK_EFFECT: "Como [bs_spell|E], aumenta el $pod_hunger_with_icon$ de un $POD_splat_vampire$ en 3. Da como resultado [GetModifier('majorbloodloss_modifier').GetNameWithTooltip] si se lanza sobre un no vampiro.\n#weak Convierte la sangre de un sujeto (o posiblemente otro líquido) en agua#!"
- FLOWING_WALL_PERK_EFFECT: "Mejora la probabilidad de éxito del [GetPerk('prison_of_water_perk').GetName(GetPlayer)] [bs_spell|E].\n#weak Crea una barrera de agua casi impermeable a todos los seres#!"
- DEHYDRATE_PERK_EFFECT: "El [GetPerk('blood_to_water_perk').GetName(GetPlayer)] [bs_spell|E] ahora aumenta $pod_hunger_with_icon$ en 5, o causa [GetModifier('catastrophicbloodloss_modifier').GetNameWithTooltip] en los que no son vampiros.\n#weak Drena agua de una víctima de forma remota#!"
+ PRISON_OF_WATER_PERK_EFFECT: "Como $pod_bs_spell$, encarcela a tu objetivo en la misma ubicación.\n#weak Usa una gran masa de agua para atar a un objetivo#!"
+ BLOOD_TO_WATER_PERK_EFFECT: "Como $pod_bs_spell$, aumenta el $pod_hunger_with_icon$ de un $POD_splat_vampire$ en 3. Da como resultado [GetModifier('majorbloodloss_modifier').GetNameWithTooltip] si se lanza sobre un no vampiro.\n#weak Convierte la sangre de un sujeto (o posiblemente otro líquido) en agua#!"
+ FLOWING_WALL_PERK_EFFECT: "Mejora la probabilidad de éxito del [GetPerk('prison_of_water_perk').GetName(GetPlayer)] $pod_bs_spell$.\n#weak Crea una barrera de agua casi impermeable a todos los seres#!"
+ DEHYDRATE_PERK_EFFECT: "El [GetPerk('blood_to_water_perk').GetName(GetPlayer)] $pod_bs_spell$ ahora aumenta $pod_hunger_with_icon$ en 5, o causa [GetModifier('catastrophicbloodloss_modifier').GetNameWithTooltip] en los que no son vampiros.\n#weak Drena agua de una víctima de forma remota#!"
   
  simple_nectar_perk_name: "Néctar simple"
  nectar_perk_name: "Néctar"
@@ -172,11 +172,11 @@
  high_nectar_perk_name: "Alto Néctar"
  ungodly_nectar_perk_name: "Néctar impío"
   
- SIMPLE_NECTAR_PERK_EFFECT: "Como [bs_spell|E], obliga al objetivo a aprender tus ventajas [discipline|E] hasta 1 punto.\n#weak Al preparar una poción con su propia vitae, el rakta-sadhu puede imbuir al bebedor con un nivel de una disciplina o camino#!"
- NECTAR_PERK_EFFECT: "Aumenta el efecto de [GetPerk('simple_nectar_perk').GetName(GetPlayer)] [bs_spell|E] a 2 puntos.\n#weak Al preparar una poción con su propia vitae, el rakta-sadhu puede imbuir al bebedor con dos niveles de una disciplina o camino#!"
- COMPLEX_NECTAR_PERK_EFFECT: "Aumenta el efecto de [GetPerk('nectar_perk').GetName(GetPlayer)] [bs_spell|E] a 3 puntos.\n#weak Al preparar una poción con su propia vitae, el rakta-sadhu puede imbuir al bebedor con tres niveles de una disciplina o camino#!"
- HIGH_NECTAR_PERK_EFFECT: "Aumenta el efecto de [GetPerk('complex_nectar_perk').GetName(GetPlayer)] [bs_spell|E] a 4 puntos.\n#weak Al preparar una poción con su propia vitae, el rakta-sadhu puede imbuir al bebedor con cuatro niveles de una disciplina o camino#!"
- UNGODLY_NECTAR_PERK_EFFECT: "Aumenta el efecto de [GetPerk('high_nectar_perk').GetName(GetPlayer)] [bs_spell|E] a 5 puntos.\n#weak Al preparar una poción con su propia vitae, el rakta-sadhu puede imbuir al bebedor con cinco niveles de una disciplina o camino#!"
+ SIMPLE_NECTAR_PERK_EFFECT: "Como $pod_bs_spell$, obliga al objetivo a aprender tus ventajas [discipline|E] hasta 1 punto.\n#weak Al preparar una poción con su propia vitae, el rakta-sadhu puede imbuir al bebedor con un nivel de una disciplina o camino#!"
+ NECTAR_PERK_EFFECT: "Aumenta el efecto de [GetPerk('simple_nectar_perk').GetName(GetPlayer)] $pod_bs_spell$ a 2 puntos.\n#weak Al preparar una poción con su propia vitae, el rakta-sadhu puede imbuir al bebedor con dos niveles de una disciplina o camino#!"
+ COMPLEX_NECTAR_PERK_EFFECT: "Aumenta el efecto de [GetPerk('nectar_perk').GetName(GetPlayer)] $pod_bs_spell$ a 3 puntos.\n#weak Al preparar una poción con su propia vitae, el rakta-sadhu puede imbuir al bebedor con tres niveles de una disciplina o camino#!"
+ HIGH_NECTAR_PERK_EFFECT: "Aumenta el efecto de [GetPerk('complex_nectar_perk').GetName(GetPlayer)] $pod_bs_spell$ a 4 puntos.\n#weak Al preparar una poción con su propia vitae, el rakta-sadhu puede imbuir al bebedor con cuatro niveles de una disciplina o camino#!"
+ UNGODLY_NECTAR_PERK_EFFECT: "Aumenta el efecto de [GetPerk('high_nectar_perk').GetName(GetPlayer)] $pod_bs_spell$ a 5 puntos.\n#weak Al preparar una poción con su propia vitae, el rakta-sadhu puede imbuir al bebedor con cinco niveles de una disciplina o camino#!"
   
  a_sending_of_serpents_perk_name: "Un envío de serpientes"
  darkness_of_duat_perk_name: "Oscuridad de Duat"
@@ -185,10 +185,10 @@
  consignment_to_duat_perk_name: "Envío a Duat"
   
  A_SENDING_OF_SERPENTS_PERK_EFFECT: "Otorga [GetModifier('a_sending_of_serpents_modifier').GetNameWithTooltip] al enemigo [knights|E] cuando actúa como [commander|E] durante [combat_phase|E], o a tu enemigo durante [single_combat_duel_plural|E].\n#weak Provoca que un objetivo alucine siendo atacado por serpientes.#!"
- DARKNESS_OF_DUAT_PERK_EFFECT: "Como [bs_spell|E], dale al objetivo [GetTrait('blind').GetName(GetPlayer)] por 5 años.\n#weak Ciego a un sujeto.#!"
- SUFFOCATION_OF_THE_TOMB_PERK_EFFECT: "Como [bs_spell|E], dale al objetivo [GetModifier('suffocation_of_the_tomb_modifier').GetNameWithTooltip] por 1 año.\n#weak Deja a la víctima incapaz de hablar o respirar.#!"
+ DARKNESS_OF_DUAT_PERK_EFFECT: "Como $pod_bs_spell$, dale al objetivo [GetTrait('blind').GetName(GetPlayer)] por 5 años.\n#weak Ciego a un sujeto.#!"
+ SUFFOCATION_OF_THE_TOMB_PERK_EFFECT: "Como $pod_bs_spell$, dale al objetivo [GetModifier('suffocation_of_the_tomb_modifier').GetNameWithTooltip] por 1 año.\n#weak Deja a la víctima incapaz de hablar o respirar.#!"
  THE_NARROW_HOUSE_PERK_EFFECT: "Otorga [GetModifier('the_narrow_house_modifier').GetNameWithTooltip] al enemigo [knights|E] cuando actúa como [commander|E] durante [combat_phase|E], o a tu enemigo durante [single_combat_duel_plural|E]\n#weak Paraliza a un objetivo.#!"
- CONSIGNMENT_TO_DUAT_PERK_EFFECT: "Como [bs_spell|E], mata a un personaje no inmortal o fuerza a un personaje inmortal a [GetTrait('torpor').GetName(GetPlayer)].\n#weak Mata a un mortal o pon a un vampiro en letargo.#!"
+ CONSIGNMENT_TO_DUAT_PERK_EFFECT: "Como $pod_bs_spell$, mata a un personaje no inmortal o fuerza a un personaje inmortal a [GetTrait('torpor').GetName(GetPlayer)].\n#weak Mata a un mortal o pon a un vampiro en letargo.#!"
   
  whispers_of_the_sands_perk_name: "Susurros de la arena"
  tongue_of_the_tempter_perk_name: "Lengua del temperamento"
@@ -197,8 +197,8 @@
  dark_invocation_perk_name: "Invocación oscura"
   
  WHISPERS_OF_THE_SANDS_PERK_EFFECT: "#weak Comunicarse de forma remota con sus hijos o ghouls.#!"
- TONGUE_OF_THE_TEMPTER_PERK_EFFECT: "Como [bs_spell|E], aprende un [secret|E] del objetivo.\n#weak Haz que un sujeto revele un miedo o deseo secreto.#!"
- VOICE_OF_THE_PROPHET_PERK_EFFECT: "Como [bs_spell|E], haz que el objetivo gane una opinión sobre ti y pierda [piety|E] y [prestige|E].\n#weak Entrega un mensaje críptico que habla de los deseos más profundos del oyente.#!"
+ TONGUE_OF_THE_TEMPTER_PERK_EFFECT: "Como $pod_bs_spell$, aprende un [secret|E] del objetivo.\n#weak Haz que un sujeto revele un miedo o deseo secreto.#!"
+ VOICE_OF_THE_PROPHET_PERK_EFFECT: "Como $pod_bs_spell$, haz que el objetivo gane una opinión sobre ti y pierda [piety|E] y [prestige|E].\n#weak Entrega un mensaje críptico que habla de los deseos más profundos del oyente.#!"
  LORD_OF_STORMS_PERK_EFFECT: "Otorga [GetModifier('lord_of_storms_modifier').GetNameWithTooltip] al enemigo [knights|E] cuando actúa como [commander|E] durante [combat_phase|E], o a tu enemigo durante [single_combat_duel_plural|E]\n#weak Invoca una tormenta de arena o una tormenta eléctrica.#!"
  DARK_INVOCATION_PERK_EFFECT: "#weak Colocar una maldición protectora sobre un objeto o lugar.#!"
   
@@ -208,11 +208,11 @@
  hope_dissolves_perk_name: "La esperanza se disuelve"
  thrones_crumble_perk_name: "Los tronos se desmoronan"
   
- BEAUTY_FADES_PERK_EFFECT: "Como [bs_spell|E], dale al objetivo 50 [stress|E].\n#weak Hacer que una obra de arte cause repulsión en quienes la ven.#!"
- TRUST_WITHERS_PERK_EFFECT: "Como [bs_spell|E], el objetivo pierde una relación aleatoria [friend|E] o degrada un [best_friend|E] a un [friend|E].\n#weak El objetivo comienza a creer que un amigo o aliado planea traicionarlo.#!"
- LOVE_DIES_PERK_EFFECT: "Como [bs_spell|E], el objetivo pierde una relación aleatoria [lover|E], o degrada a un [soulmate|E] a un amante potencial.\n#weak Destruye los sentimientos de amor de un sujeto por otro.#!"
- HOPE_DISSOLVES_PERK_EFFECT: "Aumenta la ganancia [stress|E] de [GetPerk('beauty_fades_perk').GetName(GetPlayer)] [bs_spell|E] a 100.\n#weak Provoca que un sujeto se deprima, creyendo que no puede alcanzar sus objetivos.#!"
- THRONES_CRUMBLE_PERK_EFFECT: "Como [bs_spell|E], dale al objetivo [GetModifier('thrones_crumble_modifier').GetNameWithTooltip].\n#weak Crear desconfianza y hostilidad en un sujeto hacia una figura de autoridad.#!"
+ BEAUTY_FADES_PERK_EFFECT: "Como $pod_bs_spell$, dale al objetivo 50 [stress|E].\n#weak Hacer que una obra de arte cause repulsión en quienes la ven.#!"
+ TRUST_WITHERS_PERK_EFFECT: "Como $pod_bs_spell$, el objetivo pierde una relación aleatoria [friend|E] o degrada un [best_friend|E] a un [friend|E].\n#weak El objetivo comienza a creer que un amigo o aliado planea traicionarlo.#!"
+ LOVE_DIES_PERK_EFFECT: "Como $pod_bs_spell$, el objetivo pierde una relación aleatoria [lover|E], o degrada a un [soulmate|E] a un amante potencial.\n#weak Destruye los sentimientos de amor de un sujeto por otro.#!"
+ HOPE_DISSOLVES_PERK_EFFECT: "Aumenta la ganancia [stress|E] de [GetPerk('beauty_fades_perk').GetName(GetPlayer)] $pod_bs_spell$ a 100.\n#weak Provoca que un sujeto se deprima, creyendo que no puede alcanzar sus objetivos.#!"
+ THRONES_CRUMBLE_PERK_EFFECT: "Como $pod_bs_spell$, dale al objetivo [GetModifier('thrones_crumble_modifier').GetNameWithTooltip].\n#weak Crear desconfianza y hostilidad en un sujeto hacia una figura de autoridad.#!"
   
  first_taste_perk_name: "Primer sabor"
  cross_addiction_perk_name: "Adicción cruzada"
@@ -220,11 +220,11 @@
  fatal_compulsion_perk_name: "Compulsión fatal"
  temperance_perk_name: "Templanza"
   
- FIRST_TASTE_PERK_EFFECT: "Como [bs_spell|E], dale al objetivo [GetModifier('first_taste_modifier').GetNameWithTooltip] por 20 años.\n#weak Crea una asociación placentera con una acción menor y repetitiva.#!"
- CROSS_ADDICTION_PERK_EFFECT: "Aumenta la probabilidad de éxito del [GetPerk('first_taste_perk').GetName(GetPlayer)] [bs_spell|E].\n#weak Cambia temporalmente aquello en lo que se fija un adicto.#!"
- THE_JONES_PERK_EFFECT: "Como [bs_spell|E], hace que un objetivo afectado por [GetModifier('first_taste_modifier').GetNameWithTooltip] pierda [piety|E] y [prestige|E].\n#weak Elimina las inhibiciones de un sujeto para satisfacer su adicción.#!"
- FATAL_COMPULSION_PERK_EFFECT: "Como [bs_spell|E], hace que un objetivo afectado por [GetModifier('first_taste_modifier').GetNameWithTooltip] gane [GetModifier('fatal_compulsion_modifier').GetNameWithTooltip] durante 5 años en su lugar.\n#weak Hace que un objetivo sufra daño por no satisfacer su adicción.#!"
- TEMPERANCE_PERK_EFFECT: "Como [bs_spell|E], hace que un objetivo afectado por [GetModifier('first_taste_modifier').GetNameWithTooltip] se convierta en [GetTrait('depressed_1').GetName(GetPlayer)].\n#weak Hace que el sujeto sea incapaz de obtener placer de su adicción.#!"
+ FIRST_TASTE_PERK_EFFECT: "Como $pod_bs_spell$, dale al objetivo [GetModifier('first_taste_modifier').GetNameWithTooltip] por 20 años.\n#weak Crea una asociación placentera con una acción menor y repetitiva.#!"
+ CROSS_ADDICTION_PERK_EFFECT: "Aumenta la probabilidad de éxito del [GetPerk('first_taste_perk').GetName(GetPlayer)] $pod_bs_spell$.\n#weak Cambia temporalmente aquello en lo que se fija un adicto.#!"
+ THE_JONES_PERK_EFFECT: "Como $pod_bs_spell$, hace que un objetivo afectado por [GetModifier('first_taste_modifier').GetNameWithTooltip] pierda [piety|E] y [prestige|E].\n#weak Elimina las inhibiciones de un sujeto para satisfacer su adicción.#!"
+ FATAL_COMPULSION_PERK_EFFECT: "Como $pod_bs_spell$, hace que un objetivo afectado por [GetModifier('first_taste_modifier').GetNameWithTooltip] gane [GetModifier('fatal_compulsion_modifier').GetNameWithTooltip] durante 5 años en su lugar.\n#weak Hace que un objetivo sufra daño por no satisfacer su adicción.#!"
+ TEMPERANCE_PERK_EFFECT: "Como $pod_bs_spell$, hace que un objetivo afectado por [GetModifier('first_taste_modifier').GetNameWithTooltip] se convierta en [GetTrait('depressed_1').GetName(GetPlayer)].\n#weak Hace que el sujeto sea incapaz de obtener placer de su adicción.#!"
   
  burebistas_throne_perk_name: "El trono de Burebista"
  pietrosus_hospitality_perk_name: "La hospitalidad de Pietrosu"
@@ -236,7 +236,7 @@
  PIETROSUS_HOSPITALITY_PERK_EFFECT: "#weak Un viento poderoso y gélido se levanta alrededor del koldun, pero también lo hace inmune al frío y a la fuerza de los vientos.#!"
  THE_BANKS_OF_THE_BASCA_PERK_EFFECT: "Otorga [GetModifier('the_banks_of_the_basca_modifier').GetNameWithTooltip] al enemigo [knights|E] cuando actúa como [commander|E] durante [combat_phase|E], o a tu enemigo durante [single_combat_duel_plural|E].\n#weak Aumenta el flujo de agua corriente, lo que hace que se hinche y avance creando una inundación repentina con vida mágica.#!"
  KUPALAS_EXHALATION_PERK_EFFECT: "Otorga [GetModifier('kupalas_exhalation_modifier').GetNameWithTooltip] al enemigo [knights|E] cuando actúa como [commander|E] durante [combat_phase|E], o a tu enemigo durante [single_combat_duel_plural|E].\n#weak Invoca gases mortales fríos (pero altamente inflamables) desde el suelo.#!"
- RESTLESS_MEDIAS_PERK_EFFECT: "Como [bs_spell|E], dale a tu ubicación actual [GetModifier('weather_magic_earthquake_modifier').GetNameWithTooltip] durante 20 años.\n#weak Al ejercer su fuerza de voluntad, el koldun puede crear un terremoto.#!"
+ RESTLESS_MEDIAS_PERK_EFFECT: "Como $pod_bs_spell$, dale a tu ubicación actual [GetModifier('weather_magic_earthquake_modifier').GetNameWithTooltip] durante 20 años.\n#weak Al ejercer su fuerza de voluntad, el koldun puede crear un terremoto.#!"
   
  danubian_voices_perk_name: "Voces del Danubio"
  grave_of_the_marea_neagra_perk_name: "Tumba de la Marea Neagra"
@@ -246,8 +246,8 @@
   
  DANUBIAN_VOICES_PERK_EFFECT: "#weak Invoca un espíritu del río que puede conversar con los koldun, compartir lo que saben o actuar como mensajero.#!"
  GRAVE_OF_THE_MAREA_NEAGRA_PERK_EFFECT: "#weak Impregna un cuerpo de agua con propiedades protectoras contra la luz solar, el deterioro natural y la detección.#!"
- PONTOS_EUXEINOS_PERK_EFFECT: "Como [bs_spell|E], elimina todas las heridas no permanentes y otros rasgos similares.\n#weak El koldun puede sumergirse en un cuerpo de agua lo suficientemente grande como para curar sus heridas.#!"
- MINIONS_OF_DEEP_MARMORA_PERK_EFFECT: "Como [bs_spell|E], genera un ejército de monstruos [men_at_arms|E].\n#weak Al salpicar su sangre sobre la superficie del agua, el koldun puede invocar extrañas criaturas humanoides, que combinan las características de ranas y peces para realizar una tarea para él.#!"
+ PONTOS_EUXEINOS_PERK_EFFECT: "Como $pod_bs_spell$, elimina todas las heridas no permanentes y otros rasgos similares.\n#weak El koldun puede sumergirse en un cuerpo de agua lo suficientemente grande como para curar sus heridas.#!"
+ MINIONS_OF_DEEP_MARMORA_PERK_EFFECT: "Como $pod_bs_spell$, genera un ejército de monstruos [men_at_arms|E].\n#weak Al salpicar su sangre sobre la superficie del agua, el koldun puede invocar extrañas criaturas humanoides, que combinan las características de ranas y peces para realizar una tarea para él.#!"
  PONTOS_AXEINOS_PERK_EFFECT: "Otorga [GetModifier('pontos_axeinos_modifier').GetNameWithTooltip] al enemigo [knights|E] cuando actúa como [commander|E] durante [combat_phase|E], o a tu enemigo durante [single_combat_duel_plural|E].\n#weak Al dejar caer su sangre en una gran masa de agua, el koldun puede manifestar tormentas, remolinos, nieblas y barricadas rocosas donde antes no las había.#!"
   
  domain_breach_perk_name: "Violación de dominio"
@@ -259,7 +259,7 @@
  DOMAIN_BREACH_PERK_EFFECT: "#weak El koldun se da cuenta inmediatamente si un intruso pone un pie en su dominio.#!"
  FINGERS_OF_BIALOWIEZA_PERK_EFFECT: "#weak El koldun ordena a las plantas que atrapen y obstruyan a los intrusos.#!"
  GRONDRSKAS_IMPASSE_PERK_EFFECT: "#weak El koldun manipula la vegetación para cambiar el camino a través del bosque.#!"
- MOUTH_OF_DJABALEK_PERK_EFFECT: "+5 [planning_speed|E] para cazar en la capital [journeys|E]\n#weak El koldun puede atrapar víctimas bajo tierra y drenar su sangre.#!"
+ MOUTH_OF_DJABALEK_PERK_EFFECT: "+5 [planning_speed|E] para cazar en la capital $pod_journeys$\n#weak El koldun puede atrapar víctimas bajo tierra y drenar su sangre.#!"
  POD_journey_mouth_of_djabalek_perk: "Tienes [GetPerk('mouth_of_djabalek_perk').GetName(GetPlayer)]"
  THE_WHITE_TOWER_PERK_EFFECT: "#weak Crea una torre blanca hecha de hueso para que actúe como un refugio personal y móvil dentro del dominio de los koldun.#!"
   
@@ -269,11 +269,11 @@
  heave_the_host_of_hell_perk_name: "Levantad la hueste del infierno"
  reap_the_well_perk_name: "Cosechar el pozo"
   
- CALL_THE_CHILDREN_PERK_EFFECT: "Como [bs_spell|E], obtienes [GetModifier('demonic_knowledge_1_modifier').GetNameWithTooltip].\n#weak Invoca demonios cuyo poder depende del nivel de la kraina. El demonio no tiene cuerpo físico y no puede existir fuera de un espacio preparado ritualmente.#!"
- HEED_THE_HELL_BOUND_HEART_PERK_EFFECT: "Mejora el modificador de [GetPerk('call_the_children_perk').GetName(GetPlayer)] [bs_spell|E] a [GetModifier('demonic_knowledge_2_modifier').GetNameWithTooltip].\n#weak Permite al koldun sentir cualquier rastro de influencia demoníaca bebiendo de su pozo.#!"
- AEGIS_ALIGHIERI_PERK_EFFECT: "Mejora el modificador de [GetPerk('heed_the_hell_bound_heart_perk').GetName(GetPlayer)] [bs_spell|E] a [GetModifier('demonic_knowledge_3_modifier').GetNameWithTooltip].\n#weak Protege al koldun de los ataques de entidades demoníacas mediante el uso de un amuleto empapado en su propia sangre.#!"
- HEAVE_THE_HOST_OF_HELL_PERK_EFFECT: "Mejora el modificador de [GetPerk('aegis_alighieri_perk').GetName(GetPlayer)] [bs_spell|E] a [GetModifier('demonic_knowledge_4_modifier').GetNameWithTooltip].\nComo [bs_spell], envía [GetTrait('demon').GetName(GetPlayer)] a [UmbraGlossary('abyss')] si el lanzador tiene más aprendizaje y destreza que el objetivo.\n#weak Disipa cualquier rastro de lo infernal dentro del dominio del koldun.#!"
- REAP_THE_WELL_PERK_EFFECT: "Mejora el modificador de [GetPerk('heave_the_host_of_hell_perk').GetName(GetPlayer)] [bs_spell|E] a [GetModifier('demonic_knowledge_5_modifier').GetNameWithTooltip].\nPuede aprender el verdadero nombre de [GetTrait('demon').GetName(GetPlayer)] y atarlos.\n#weak Permite al koldun esclavizar a una entidad demoníaca.#!"
+ CALL_THE_CHILDREN_PERK_EFFECT: "Como $pod_bs_spell$, obtienes [GetModifier('demonic_knowledge_1_modifier').GetNameWithTooltip].\n#weak Invoca demonios cuyo poder depende del nivel de la kraina. El demonio no tiene cuerpo físico y no puede existir fuera de un espacio preparado ritualmente.#!"
+ HEED_THE_HELL_BOUND_HEART_PERK_EFFECT: "Mejora el modificador de [GetPerk('call_the_children_perk').GetName(GetPlayer)] $pod_bs_spell$ a [GetModifier('demonic_knowledge_2_modifier').GetNameWithTooltip].\n#weak Permite al koldun sentir cualquier rastro de influencia demoníaca bebiendo de su pozo.#!"
+ AEGIS_ALIGHIERI_PERK_EFFECT: "Mejora el modificador de [GetPerk('heed_the_hell_bound_heart_perk').GetName(GetPlayer)] $pod_bs_spell$ a [GetModifier('demonic_knowledge_3_modifier').GetNameWithTooltip].\n#weak Protege al koldun de los ataques de entidades demoníacas mediante el uso de un amuleto empapado en su propia sangre.#!"
+ HEAVE_THE_HOST_OF_HELL_PERK_EFFECT: "Mejora el modificador de [GetPerk('aegis_alighieri_perk').GetName(GetPlayer)] $pod_bs_spell$ a [GetModifier('demonic_knowledge_4_modifier').GetNameWithTooltip].\nComo [bs_spell], envía [GetTrait('demon').GetName(GetPlayer)] a [UmbraGlossary('abyss')] si el lanzador tiene más aprendizaje y destreza que el objetivo.\n#weak Disipa cualquier rastro de lo infernal dentro del dominio del koldun.#!"
+ REAP_THE_WELL_PERK_EFFECT: "Mejora el modificador de [GetPerk('heave_the_host_of_hell_perk').GetName(GetPlayer)] $pod_bs_spell$ a [GetModifier('demonic_knowledge_5_modifier').GetNameWithTooltip].\nPuede aprender el verdadero nombre de [GetTrait('demon').GetName(GetPlayer)] y atarlos.\n#weak Permite al koldun esclavizar a una entidad demoníaca.#!"
   
  shroud_of_oblivion_perk_name: "Sudario del olvido"
  spectral_cloak_perk_name: "Capa espectral"
@@ -283,9 +283,9 @@
   
  SHROUD_OF_OBLIVION_PERK_EFFECT: "#weak Despojándose de su propia piel, el koldun puede ocultarse en una pieza portátil del Sudario, disminuyendo los peligros de la luz solar.#!"
  SPECTRAL_CLOAK_PERK_EFFECT: "Puede ingresar físicamente al [UmbraGlossary('shadowlands')], lo que potencialmente lo protege de interacciones hostiles.\nPuede interactuar con personajes del otro lado del Sudario.\n#weak Oculta al koldun dentro de las Tierras Sombrías, lo que lo vuelve invisible para aquellos que no pueden ver fantasmas.#!"
- POND_OF_MALEVOLENT_DREAD_PERK_EFFECT: "Como [bs_spell|E], invoca un ejército de Espectros, con un coste adicional de herir al lanzador.\n#weak Al destriparse a sí mismo, el koldun puede canalizar las profundidades del Mar de las Sombras en un anillo de espectros que gimen para atrapar a cualquiera que esté a su alcance.#!"
- WRATH_OF_THE_TEMPEST_PERK_EFFECT: "Como [bs_spell|E], otorga a tu ubicación actual [GetModifier('mass_harrowing_modifier').GetNameWithTooltip].\n#weak Permite al koldun traer una parte de la Tempestad al mundo viviente, conjurando una violenta tormenta que arroja a cualquiera que quede atrapado dentro a un Desgarrador.#!"
- HUNGER_OF_THE_VOID_PERK_EFFECT: "Como [bs_spell|E], otorga a tu ubicación actual [GetModifier('bs_nihil_modifier').GetNameWithTooltip], con un costo adicional de 200 [stress|E].\n#weak Al extraer su propia alma y atormentarla sin descanso, el koldun la transforma en un Nihil que absorbe todo lo que está a su alrededor.#!"
+ POND_OF_MALEVOLENT_DREAD_PERK_EFFECT: "Como $pod_bs_spell$, invoca un ejército de Espectros, con un coste adicional de herir al lanzador.\n#weak Al destriparse a sí mismo, el koldun puede canalizar las profundidades del Mar de las Sombras en un anillo de espectros que gimen para atrapar a cualquiera que esté a su alcance.#!"
+ WRATH_OF_THE_TEMPEST_PERK_EFFECT: "Como $pod_bs_spell$, otorga a tu ubicación actual [GetModifier('mass_harrowing_modifier').GetNameWithTooltip].\n#weak Permite al koldun traer una parte de la Tempestad al mundo viviente, conjurando una violenta tormenta que arroja a cualquiera que quede atrapado dentro a un Desgarrador.#!"
+ HUNGER_OF_THE_VOID_PERK_EFFECT: "Como $pod_bs_spell$, otorga a tu ubicación actual [GetModifier('bs_nihil_modifier').GetNameWithTooltip], con un costo adicional de 200 [stress|E].\n#weak Al extraer su propia alma y atormentarla sin descanso, el koldun la transforma en un Nihil que absorbe todo lo que está a su alrededor.#!"
   
  genius_loci_1_perk_name: "Los lugares de genio más bajos"
  genius_loci_2_perk_name: "Loci de bajo genio"
@@ -293,11 +293,11 @@
  genius_loci_4_perk_name: "Lugares de alto genio"
  genius_loci_5_perk_name: "Los lugares de genio más elevados"
   
- GENIUS_LOCI_1_PERK_EFFECT: "Aumenta la probabilidad de éxito de todos los [bs_spells|E] de Kraina [bs_paths|E].\n#weak Percibe todo dentro de un radio de cincuenta pies/quince metros.#!"
- GENIUS_LOCI_2_PERK_EFFECT: "Aumenta la probabilidad de éxito de todos los [bs_spells|E] de Kraina [bs_paths|E].\n#weak Percibe todo dentro de un radio de cien yardas/noventa metros.#!"
- GENIUS_LOCI_3_PERK_EFFECT: "Aumenta la probabilidad de éxito de todos los [bs_spells|E] de Kraina [bs_paths|E].\n#weak Percibe todo dentro de un radio de un cuarto de milla/medio kilómetro.#!"
- GENIUS_LOCI_4_PERK_EFFECT: "Aumenta la probabilidad de éxito de todos los [bs_spells|E] de Kraina [bs_paths|E].\n#weak Percibe todo dentro de un radio de una milla/1,5 kilómetros.#!"
- GENIUS_LOCI_5_PERK_EFFECT: "Aumenta la probabilidad de éxito de todos los [bs_spells|E] de Kraina [bs_paths|E].\n#weak Percibe todo dentro de un radio de cinco millas/ocho kilómetros.#!"
+ GENIUS_LOCI_1_PERK_EFFECT: "Aumenta la probabilidad de éxito de todos los $pod_bs_spells$ de Kraina $pod_bs_paths$.\n#weak Percibe todo dentro de un radio de cincuenta pies/quince metros.#!"
+ GENIUS_LOCI_2_PERK_EFFECT: "Aumenta la probabilidad de éxito de todos los $pod_bs_spells$ de Kraina $pod_bs_paths$.\n#weak Percibe todo dentro de un radio de cien yardas/noventa metros.#!"
+ GENIUS_LOCI_3_PERK_EFFECT: "Aumenta la probabilidad de éxito de todos los $pod_bs_spells$ de Kraina $pod_bs_paths$.\n#weak Percibe todo dentro de un radio de un cuarto de milla/medio kilómetro.#!"
+ GENIUS_LOCI_4_PERK_EFFECT: "Aumenta la probabilidad de éxito de todos los $pod_bs_spells$ de Kraina $pod_bs_paths$.\n#weak Percibe todo dentro de un radio de una milla/1,5 kilómetros.#!"
+ GENIUS_LOCI_5_PERK_EFFECT: "Aumenta la probabilidad de éxito de todos los $pod_bs_spells$ de Kraina $pod_bs_paths$.\n#weak Percibe todo dentro de un radio de cinco millas/ocho kilómetros.#!"
   
  confer_with_the_blade_perk_name: "Conferenciar con la espada"
  grasp_of_the_mountain_perk_name: "Agarre de la montaña"
@@ -305,7 +305,7 @@
  razors_shield_perk_name: "Escudo de la Navaja"
  strike_at_the_true_flesh_perk_name: "Golpea la verdadera carne"
   
- CONFER_WITH_THE_BLADE_PERK_EFFECT: "Como [bs_spell|E], obtienes un modificador de Experiencia de [lifestyle|E] basado en la rareza de tu arma equipada actualmente.\n#weak Ver eventos e información que han sucedido en torno a un arma.#!"
+ CONFER_WITH_THE_BLADE_PERK_EFFECT: "Como $pod_bs_spell$, obtienes un modificador de Experiencia de [lifestyle|E] basado en la rareza de tu arma equipada actualmente.\n#weak Ver eventos e información que han sucedido en torno a un arma.#!"
  GRASP_OF_THE_MOUNTAIN_PERK_EFFECT: "#weak Refuerza místicamente el agarre de tu arma#!"
  PIERCE_STEELS_SKIN_PERK_EFFECT: "#weak Dirige tu arma para destruir cualquier medida protectora del enemigo#!"
  RAZORS_SHIELD_PERK_EFFECT: "#weak Permite parar proyectiles#!"
@@ -317,10 +317,10 @@
  nergals_wrath_perk_name: "La ira de Nergal"
  ill_wind_perk_name: "Viento malo"
   
- MASKIMS_TOUCH_PERK_EFFECT: "Como [bs_spell|E], haz que el objetivo sea [GetTrait('ill').GetName(GetPlayer)].\n#weak Provoca síntomas de gripe en un objetivo#!"
- BREATH_OF_ERESHKIGAL_PERK_EFFECT: "Como [bs_spell|E], le da al objetivo una enfermedad aleatoria no sobrenatural.\n#weak Sopla sobre un objetivo, lo que le inflige una enfermedad menor#!"
- NERGALS_BLESSING_PERK_EFFECT: "Como [bs_spell|E], elimina una enfermedad del objetivo.\n#weak Reduce los síntomas de una enfermedad patógena#!"
- NERGALS_WRATH_PERK_EFFECT: "Como [bs_spell|E], le da al objetivo una enfermedad no sobrenatural más grave.\n#weak Inflige una enfermedad de su elección a un objetivo#!"
+ MASKIMS_TOUCH_PERK_EFFECT: "Como $pod_bs_spell$, haz que el objetivo sea [GetTrait('ill').GetName(GetPlayer)].\n#weak Provoca síntomas de gripe en un objetivo#!"
+ BREATH_OF_ERESHKIGAL_PERK_EFFECT: "Como $pod_bs_spell$, le da al objetivo una enfermedad aleatoria no sobrenatural.\n#weak Sopla sobre un objetivo, lo que le inflige una enfermedad menor#!"
+ NERGALS_BLESSING_PERK_EFFECT: "Como $pod_bs_spell$, elimina una enfermedad del objetivo.\n#weak Reduce los síntomas de una enfermedad patógena#!"
+ NERGALS_WRATH_PERK_EFFECT: "Como $pod_bs_spell$, le da al objetivo una enfermedad no sobrenatural más grave.\n#weak Inflige una enfermedad de su elección a un objetivo#!"
  ILL_WIND_PERK_EFFECT: "Al lanzar [GetPerk('nergals_wrath_perk').GetName(GetPlayer)] sobre ti mismo, genera una epidemia en tu ubicación actual.\n#weak Propaga una enfermedad simplemente a través de tu presencia cercana#!"
   
  abyssal_mysticism_level_1_perk_name: "Misticismo abisal 1"
@@ -329,8 +329,8 @@
  abyssal_mysticism_level_4_perk_name: "Misticismo abisal 4"
  abyssal_mysticism_level_5_perk_name: "Misticismo abisal 5"
   
- ABYSSAL_MYSTICISM_LEVEL_1_PERK_EFFECT: "#X @warning_icon! Para obtener este [perk|E] debes sacrificar el nivel [GetTrait('obtenebration').GetName(GetNullCharacter)] #weak (fila) #! mediante un [decision|E]#!\nDesbloquea el nivel 1 [bs_rituals|E] de Misticismo Abisal"
- ABYSSAL_MYSTICISM_LEVEL_2_PERK_EFFECT: "#X @warning_icon! Para obtener este [perk|E] debes sacrificar el nivel [GetTrait('obtenebration').GetName(GetNullCharacter)] #weak (fila) #! mediante un [decision|E]#!\nDesbloquea el nivel 2 [bs_rituals|E] de Misticismo Abisal"
- ABYSSAL_MYSTICISM_LEVEL_3_PERK_EFFECT: "#X @warning_icon! Para obtener este [perk|E] debes sacrificar el nivel [GetTrait('obtenebration').GetName(GetNullCharacter)] #weak (fila) #! mediante un [decision|E]#!\nDesbloquea el nivel 3 [bs_rituals|E] de Misticismo Abisal"
- ABYSSAL_MYSTICISM_LEVEL_4_PERK_EFFECT: "#X @warning_icon! Para obtener este [perk|E] debes sacrificar el nivel [GetTrait('obtenebration').GetName(GetNullCharacter)] #weak (fila) #! mediante un [decision|E]#!\nDesbloquea el nivel 4 [bs_rituals|E] de Misticismo Abisal"
- ABYSSAL_MYSTICISM_LEVEL_5_PERK_EFFECT: "#X @warning_icon! Para obtener este [perk|E] debes sacrificar el nivel [GetTrait('obtenebration').GetName(GetNullCharacter)] #weak (fila) #! mediante un [decision|E]#!\nDesbloquea el nivel 5 [bs_rituals|E] de Misticismo Abisal"
+ ABYSSAL_MYSTICISM_LEVEL_1_PERK_EFFECT: "#X @warning_icon! Para obtener este [perk|E] debes sacrificar el nivel [GetTrait('obtenebration').GetName(GetNullCharacter)] #weak (fila) #! mediante un [decision|E]#!\nDesbloquea el nivel 1 $pod_bs_rituals$ de Misticismo Abisal"
+ ABYSSAL_MYSTICISM_LEVEL_2_PERK_EFFECT: "#X @warning_icon! Para obtener este [perk|E] debes sacrificar el nivel [GetTrait('obtenebration').GetName(GetNullCharacter)] #weak (fila) #! mediante un [decision|E]#!\nDesbloquea el nivel 2 $pod_bs_rituals$ de Misticismo Abisal"
+ ABYSSAL_MYSTICISM_LEVEL_3_PERK_EFFECT: "#X @warning_icon! Para obtener este [perk|E] debes sacrificar el nivel [GetTrait('obtenebration').GetName(GetNullCharacter)] #weak (fila) #! mediante un [decision|E]#!\nDesbloquea el nivel 3 $pod_bs_rituals$ de Misticismo Abisal"
+ ABYSSAL_MYSTICISM_LEVEL_4_PERK_EFFECT: "#X @warning_icon! Para obtener este [perk|E] debes sacrificar el nivel [GetTrait('obtenebration').GetName(GetNullCharacter)] #weak (fila) #! mediante un [decision|E]#!\nDesbloquea el nivel 4 $pod_bs_rituals$ de Misticismo Abisal"
+ ABYSSAL_MYSTICISM_LEVEL_5_PERK_EFFECT: "#X @warning_icon! Para obtener este [perk|E] debes sacrificar el nivel [GetTrait('obtenebration').GetName(GetNullCharacter)] #weak (fila) #! mediante un [decision|E]#!\nDesbloquea el nivel 5 $pod_bs_rituals$ de Misticismo Abisal"

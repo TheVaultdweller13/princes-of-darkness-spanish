@@ -386,7 +386,7 @@
  SPIRIT_TIES_PERK_EFFECT: "Puede usar fetiches [artifact|E].\nPosibilidad de recuperación de gnosis: #P +100%#!\n#F El personaje tiene una conexión innata con los [spirit_world|E] y puede usar fetiches y talentos.#!" #NT!
  STASIS_COCOON_PERK_EFFECT: "Desbloquea Enter Cocoon [decision|E], lo que te permitirá ingresar a [GetTrait('torpor').GetName( GetNullCharacter )], que te destituirá."
  STASIS_TOUCH_PERK_EFFECT: "Como [character_interaction|E], te permite eliminar el cambio de forma del objetivo.\n#F Con un solo toque, el personaje puede robarle a sus oponentes la capacidad de cambiar de forma.#!" #NT!
- STEP_SIDEWAYS_PERK_EFFECT: "Obtén acceso al [UmbraGlossary('spirit_wilds')].\n[umbra_sense|E]: [grace_i]#P +5%#!\n[umbra_aptitude|E]: [grace_i]#P +25%#!\n#F El personaje obtiene la habilidad de entrar en el [umbra|E], como lo hacen los Garou.#!" #NT!
+ STEP_SIDEWAYS_PERK_EFFECT: "Obtén acceso al [UmbraGlossary('spirit_wilds')].\n[umbra_sense|E]: $pod_grace_i$#P +5%#!\n[umbra_aptitude|E]: $pod_grace_i$#P +25%#!\n#F El personaje obtiene la habilidad de entrar en el [umbra|E], como lo hacen los Garou.#!" #NT!
  SUCCUBUS_VEIL_PERK_EFFECT: "Desbloquear [GetScheme('PODenthrall').GetTypeName] [scheme|E]."
  TAINT_SUPPRESSION_PERK_EFFECT: "#F El fomor puede anular brevemente los efectos de cualquiera de sus Corrupciones. Las deformidades físicas suprimidas se curan y la piel queda intacta en segundos; los trastornos desaparecen en un estallido de perfecta claridad, etc.#!" #NT!
  TAR_BABY_PERK_EFFECT: "Oportunidad adicional de mutilar a un enemigo [knights|E] en una guerra como [knight|E]."
@@ -415,7 +415,7 @@
  ENHANCEMENT_PERK_EFFECT: "#F El fomor puede convertirse en la pareja ideal de cualquier criatura viviente, escaneando la mente de su objetivo.#!" #NT!
  EXOSKELETON_PERK_EFFECT: "#F El fomor tiene un crecimiento duro parecido a un caparazón por todo el cuerpo. Por lo general, es muy parecido a un hueso, con muchos nudos, tubos parecidos a venas y formas extrañas. Su coloración varía desde un rojo oxidado y marrón oscuro hasta un negro aceitoso.#!" #NT!
  EXTRA_SPEED_PERK_EFFECT: "#F El fomor puede superar en maniobras a un humano normal.#!" #NT!
- HAND_FROM_BEYOND_PERK_EFFECT: "[umbra_sense|E]: [grace_i]#P +5%#!\n[umbra_aptitude|E]: [grace_i]#P +25%#!\n#F El fomor puede entrar en el [umbra|E] y luego regresar al mundo material para atraer a otros hacia el [spirit_world|E] con él. Puede atraer a más de una persona siempre que todos los objetivos se tomen de la mano.#!" #NT!
+ HAND_FROM_BEYOND_PERK_EFFECT: "[umbra_sense|E]: $pod_grace_i$#P +5%#!\n[umbra_aptitude|E]: $pod_grace_i$#P +25%#!\n#F El fomor puede entrar en el [umbra|E] y luego regresar al mundo material para atraer a otros hacia el [spirit_world|E] con él. Puede atraer a más de una persona siempre que todos los objetivos se tomen de la mano.#!" #NT!
  IMMUNITY_PERK_EFFECT: "#F El fomor puede ignorar los efectos de algunos tipos de cosas potencialmente peligrosas.#!" #NT!
  NIMBLENESS_PERK_EFFECT: "#F El fomor es especialmente ágil y puede mantener fácilmente el equilibrio mientras realiza hazañas que harían caer a otra persona.#!" #NT!
  NOXIOUS_BREATH_PERK_EFFECT: "Otorga [GetModifier('noxious_breath_perk_modifier').GetNameWithTooltip] [modifier|E] al enemigo [knights|E] cuando actúe como [commander|E] durante [combat_phase|E], o a tu enemigo durante [single_combat_duel_plural|E].\n#F El fomor puede liberar gases venenosos en el aire que hacen que quienes se encuentren a veinte metros o menos anhelen fumar cigarrillos. Los gases tienen el aspecto y el olor del humo del cigarrillo. Además, el gas debilita el tejido pulmonar de quienes lo respiran. La exposición repetida al aliento nocivo durante varias semanas o meses provoca el desarrollo de cáncer de pulmón en las víctimas.#!" #NT!
@@ -566,7 +566,7 @@
  ACCESS_CAERN_PERK_EFFECT: "Puede contener caern [building|E].\n#F Este talismán permite al espíritu acceder a la naturaleza fundamental del caern para facilitar otros talismán.#!" #NT!
  ACQUISITION_PERK_EFFECT: "Como [character_interaction|E], te permite acelerar el [GetScheme('steal_back_artifact').GetTypeName] [scheme|E].\n#F Este amuleto permite que un espíritu "tome prestado" un objeto pequeño del mundo físico.#!" #NT!
  AGONY_PERK_EFFECT: "Otorga [GetModifier('agony_perk_modifier').GetNameWithTooltip] [modifier|E] al enemigo [knights|E] cuando actúa como [commander|E] durante [combat_phase|E], o a tu enemigo durante [single_combat_duel_plural|E].\n#F El espíritu puede intentar incapacitar a una criatura magnificando su dolor.#!" #NT!
- AIRT_SENSE_PERK_EFFECT: "[umbra_sense|E]: [grace_i]#P +5#!\n[umbra_aptitude|E]: [grace_i]#P +50%#!\n#F La mayoría de los espíritus tienen un sentido natural de las direcciones del [spirit_world|E], y pueden viajar sin mucha dificultad.#!" #NT!
+ AIRT_SENSE_PERK_EFFECT: "[umbra_sense|E]: $pod_grace_i$#P +5#!\n[umbra_aptitude|E]: $pod_grace_i$#P +50%#!\n#F La mayoría de los espíritus tienen un sentido natural de las direcciones del [spirit_world|E], y pueden viajar sin mucha dificultad.#!" #NT!
  APPEAR_PERK_EFFECT: "Permite interactuar con el [earth|E] mientras permaneces en el [umbra|E].\n#F Un espíritu con este encanto puede manifestarse frente a un observador sin asumir forma material.#!" #NT!
  ARMOR_PERK_EFFECT: "#F Este amuleto otorga a un espíritu una medida de protección.#!" #NT!
  ASSESS_CHARACTER_PERK_EFFECT: "#F Este encanto permite al espíritu evaluar la fuerza general del carácter de un individuo.#!" #NT!
@@ -624,14 +624,14 @@
  OPEN_SKY_BRIDGE_PERK_EFFECT: "Ya no es necesario que la ubicación de destino tenga un edificio caern para usar el puente lunar abierto [character_interaction|E].\n#F Me gusta el encanto: Puente lunar abierto, excepto que abre portales en el cielo.#!" #NT!
  PARALYZE_PERK_EFFECT: "#F El espíritu se concentra, congela al objetivo en su lugar.#!" #NT!
  CHARMS_PARALYZING_STARE_PERK_EFFECT: "#F El espíritu se concentra, congela al objetivo en su lugar.#!" #NT!
- PEEK_PERK_EFFECT: "Te permite interactuar con seres del [umbra|E] cuando estás en el mundo material.\n[umbra_sense|E]: [grace_i]#P +5%#!\n#F Los espíritus con este amuleto pueden espiar a voluntad desde el [penumbra|E] al mundo físico, sin importar dónde se encuentren.#!" #NT!
+ PEEK_PERK_EFFECT: "Te permite interactuar con seres del [umbra|E] cuando estás en el mundo material.\n[umbra_sense|E]: $pod_grace_i$#P +5%#!\n#F Los espíritus con este amuleto pueden espiar a voluntad desde el [penumbra|E] al mundo físico, sin importar dónde se encuentren.#!" #NT!
  CHARMS_POSSESSION_PERK_EFFECT: "Desbloquea Poseer [character_interaction|E], permite obtener un gancho en el objetivo y hacer que obtenga algunos de tus atributos.\n#F El espíritu puede poseer un ser vivo o un objeto inanimado.#!" #NT!
  PROPHESY_PERK_EFFECT: "Recibirás una notificación si alguien tiene la intención de asesinar a tus amigos o familiares. Recibirás una notificación si alguien tiene la intención de seducir a tu amante o consorte. #F El espíritu puede escudriñar el futuro y decirle al interrogador un hecho sobre su futuro cercano. #!" #NT!
  CHARMS_PURIFY_PERK_EFFECT: "#F El espíritu puede eliminar toxinas de seres físicos (como los Garou).#!" #NT!
  CHARMS_QUAKE_PERK_EFFECT: "Como [character_interaction|E], puedes lanzar [GetModifier('weather_magic_earthquake_modifier').GetNameWithTooltip] sobre el reino de un enemigo.\n#F El espíritu puede hacer que el suelo en el mundo físico que corresponde a su ubicación actual en Penumbral retumbe y tiemble.#!" #NT!
  QUIT_REALITY_PERK_EFFECT: "Como [decision|E], puedes ingresar [GetTrait('torpor').GetName( GetNullCharacter )] que te destituirá.\n#F Este extraño encanto permite al espíritu "dar un paso lateral" desde los planos físico y espiritual hacia un tercer lugar desconocido, presumiblemente un Reino de bolsillo.#!" #NT!
  RE_FORM_PERK_EFFECT: "#F Los espíritus pueden disolver sus formas y transportarse a través de [umbra|E] a sus Dominios de origen.#!" #NT!
- REALM_SENSE_PERK_EFFECT: "[umbra_sense|E]: [grace_i]#P +20#!\n[umbra_aptitude|E]: [grace_i]#P +10%#!\n#F El espíritu puede sentir todo lo que ocurre en su Dominio tanto en la [umbra|E] como en la Tierra.#!" #NT!
+ REALM_SENSE_PERK_EFFECT: "[umbra_sense|E]: $pod_grace_i$#P +20#!\n[umbra_aptitude|E]: $pod_grace_i$#P +10%#!\n#F El espíritu puede sentir todo lo que ocurre en su Dominio tanto en la [umbra|E] como en la Tierra.#!" #NT!
  SAP_WILL_PERK_EFFECT: "Como [character_interaction|E], te permite perder estrés usando prisioneros.\n#F El espíritu puede minar la voluntad de una persona en el plano físico.#!" #NT!
  SCALE_PERK_EFFECT: "Coste de entrada al [umbra|E]: [gold_i]#P -100%\n#F Este amuleto permite que un espíritu que no esté directamente al servicio del Tejedor suba a la Red de Patrones sin quedarse atascado, calcificado o alertar a las Arañas de la Red o de Patrones de su presencia.#!" #NT!
  SCENT_OF_SAFETY_PERK_EFFECT: "#F Este amuleto permite que el espíritu se dirija instintivamente al mejor camino hacia el refugio seguro más cercano.#!" #NT!
@@ -648,5 +648,5 @@
  THROW_CRYSTAL_PERK_EFFECT: "#F Este amuleto es similar a Lanzar vidrio, excepto que los fragmentos son dirigidos por el espíritu.#!" #NT!
  TRACKING_PERK_EFFECT: "#F El espíritu puede rastrear a su presa sin fallar.#!" #NT!
  UMBRAQUAKE_PERK_EFFECT: "Desbloquea Derribar el guante en la acción Manipular el guante [umbra|E].\n#F El espíritu puede hacer que el [umbra|E] tiemble con tanta fuerza que todos los que estén de pie sean arrojados al suelo.#!" #NT!
- UMBRASTORM_PERK_EFFECT: "[umbra_sense|E]: [grace_i]#P +10#!\n[umbra_aptitude|E]: [grace_i]#P +20%#!\n#F El espíritu puede provocar un gran aguacero en los alrededores [umbra|E].#!" #NT!
- UPDRAFT_PERK_EFFECT: "[umbra_sense|E]: [grace_i]#P +10#!\n[umbra_aptitude|E]: [grace_i]#P +20%#!\n#F El espíritu puede provocar un gran aguacero en los alrededores [umbra|E].#!" #NT!
+ UMBRASTORM_PERK_EFFECT: "[umbra_sense|E]: $pod_grace_i$#P +10#!\n[umbra_aptitude|E]: $pod_grace_i$#P +20%#!\n#F El espíritu puede provocar un gran aguacero en los alrededores [umbra|E].#!" #NT!
+ UPDRAFT_PERK_EFFECT: "[umbra_sense|E]: $pod_grace_i$#P +10#!\n[umbra_aptitude|E]: $pod_grace_i$#P +20%#!\n#F El espíritu puede provocar un gran aguacero en los alrededores [umbra|E].#!" #NT!
