@@ -7,6 +7,7 @@
  PODbloodbond_scheme_resistance_add: "$PODbloodbond_scheme_resistance_mult$"
  PODbloodbond_scheme_power_mult: "[GetScheme('PODbloodbond').GetTypeName] [scheme_power|E]"
  PODbloodbond_scheme_power_add: "$PODbloodbond_scheme_power_mult$"
+ PODbloodbond_scheme_phase_duration_add: "[GetScheme('PODbloodbond').GetTypeName] [scheme_speed_single|E]"
  vamphunt_scheme_power_mult: "[GetScheme('vamphunt').GetTypeName] [scheme_power|E]"
  vamphunt_scheme_power_add: "$vamphunt_scheme_power_mult$"
  vamphunt_scheme_resistance_mult: "[GetScheme('vamphunt').GetTypeName] [scheme_resistance|E]"
@@ -23,6 +24,10 @@
  steal_back_artifact_scheme_resistance_mult: "[GetScheme('steal_back_artifact').GetTypeName] [scheme_resistance|E]" #NT!
  steal_back_artifact_scheme_resistance_add: "$steal_back_artifact_scheme_resistance_mult$" #NT!
   
+ vamphunt_scheme_phase_duration_add: "[GetScheme('vamphunt').GetTypeName] [scheme_speed|E]" # TODO RTP: obsolete modifier
+ abduct_enemy_scheme_phase_duration_add: "Enemy [GetScheme('abduct').GetTypeName] [scheme_speed|E]"
+ murder_enemy_scheme_phase_duration_add: "Enemy [GetScheme('murder').GetTypeName] [scheme_speed|E]"
+
  claim_throne_scheme_power_add: "$claim_throne_scheme_power_mult$"
  fabricate_hook_scheme_power_mult: "[GetScheme('fabricate_hook').GetTypeName] [scheme_power|E]"
  fabricate_hook_scheme_power_add: "$fabricate_hook_scheme_power_mult$"
