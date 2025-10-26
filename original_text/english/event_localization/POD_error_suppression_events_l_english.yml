@@ -1,11 +1,14 @@
 ﻿l_english:
  
  POD_error_suppression.0002.t: "Better Barbershop"
- POD_error_suppression.0002.desc: "We are noticing that you are using the Better Barbershop mod(formerly Full Screen Barbershop). Please make sure you are using the following load order: Prince of Darkness mod, then Better Barbershop mod, then "POD + Better Barbershop Compatibility Patch" mod (podbb).\nOtherwise, you will miss out on several Princes of Darkness features and all characters will end up muscular or overweight and the scrollable character interactions will not be available. Thanks!"
+ #POD_error_suppression.0002.desc: "We are noticing that you are using the Better Barbershop mod (formerly Full Screen Barbershop). Please make sure you are using the following load order: Prince of Darkness mod, then Better Barbershop mod, then "POD + Better Barbershop Compatibility Patch" mod (podbb).\nOtherwise, you will miss out on several Princes of Darkness features and all characters will end up muscular or overweight and the scrollable character interactions will not be available. Thanks!"
+ POD_error_suppression.0002.desc: "We are noticing that you are using the Better Barbershop mod (formerly Full Screen Barbershop). That mod is currently #N incompatible#! with PoD, and its compatibility patch is outdated. We recommend removing it from the playset for the time being.\n\nOtherwise, you will miss out on several Princes of Darkness features and all characters will end up muscular or overweight and the scrollable character interactions will not be available. Thanks!"
  POD_error_suppression.0002.a: "Understood"
  
  POD_error_suppression.0004.t: "Search & Trade Artifacts"
  POD_error_suppression.0004.desc: "You are using the #bold Search & Trade Artifacts#! mod without its compatibility patch. This will lead to bugs and unintended behavior.\n\nWe recommend downloading the [princes_of_darkness|E] patch from the link below."
- POD_error_suppression.0004.a: "Understood"
  POD_error_suppression.0004.button: "#T Reload textbox#!"
  POD_search_artifacts_steam_link: "https://steamcommunity.com/sharedfiles/filedetails/?id=3108318083"
+
+ POD_error_suppression.0005.t: "Vanilla Trait Warning"
+ POD_error_suppression.0005.desc: "One of your mods is changing vanilla traits, which overwrites the changes made by [princes_of_darkness|E]. This will lead to bugs and unintended behavior.\n\nWe recommend removing other mods until this warning is no longer displayed."

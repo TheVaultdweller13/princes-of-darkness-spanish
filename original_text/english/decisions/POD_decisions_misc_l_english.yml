@@ -1,7 +1,7 @@
 ﻿l_english:
  #Vampire Perk Removal
  animal_perk_removal_decision: "Channel the Power of Animal Blood"
- animal_perk_removal_decision_desc: "Channel your excess resonance into additional power for a time #N (Warning this is best used after you have acquired all the animal skills or no longer wish to acquire any of said skills any more, this also prevents animal experience gain from your herd).#!"
+ animal_perk_removal_decision_desc: "Channel your excess resonance into additional power for a time #N (Warning this is best used after you have acquired all the animal skills or no longer wish to acquire any of said skills any more, this also prevents animal experience gain from your [POD_herd|E]).#!"
  animal_perk_removal_decision_tooltip: "Your power knows no bounds."
  animal_perk_removal_decision_confirm: "Channel your Inner Animal"
  
@@ -17,7 +17,7 @@
  excessive_animal_modifier_desc: "You would make a great zoo exhibit."
  
  choleric_perk_removal_decision: "Channel the Power of Choleric Blood"
- choleric_perk_removal_decision_desc: "Channel your excess resonance into additional power for a time #N (Warning this is best used after you have acquired all the choleric skills or no longer wish to acquire any of said skills any more, this also prevents choleric experience gain from your herd).#!"
+ choleric_perk_removal_decision_desc: "Channel your excess resonance into additional power for a time #N (Warning this is best used after you have acquired all the choleric skills or no longer wish to acquire any of said skills any more, this also prevents choleric experience gain from your [POD_herd|E]).#!"
  choleric_perk_removal_decision_tooltip: "Your power knows no bounds."
  choleric_perk_removal_decision_confirm: "Channel your Inner Confidence"
  
@@ -33,7 +33,7 @@
  excessive_choleric_modifier_desc: "Your ambition rivals that of Alexander the Great."
  
  melancholy_perk_removal_decision: "Channel the Power of Melancholy Blood"
- melancholy_perk_removal_decision_desc: "Channel your excess resonance into additional power for a time #N (Warning this is best used after you have acquired all the melancholy skills or no longer wish to acquire any of said skills any more, this also prevents melancholy experience gain from your herd).#!"
+ melancholy_perk_removal_decision_desc: "Channel your excess resonance into additional power for a time #N (Warning this is best used after you have acquired all the melancholy skills or no longer wish to acquire any of said skills any more, this also prevents melancholy experience gain from your [POD_herd|E]).#!"
  melancholy_perk_removal_decision_tooltip: "Your power knows no bounds."
  melancholy_perk_removal_decision_confirm: "Channel your Inner Sadness"
  
@@ -49,7 +49,7 @@
  excessive_melancholy_modifier_desc: "You are dispassionately melancholic."
  
  phlegmatic_perk_removal_decision: "Channel the Power of Phlegmatic Blood"
- phlegmatic_perk_removal_decision_desc: "Channel your excess resonance into additional power for a time #N (Warning this is best used after you have acquired all the phlegmatic skills or no longer wish to acquire any of said skills any more, this also prevents phlegmatic experience gain from your herd).#!"
+ phlegmatic_perk_removal_decision_desc: "Channel your excess resonance into additional power for a time #N (Warning this is best used after you have acquired all the phlegmatic skills or no longer wish to acquire any of said skills any more, this also prevents phlegmatic experience gain from your [POD_herd|E]).#!"
  phlegmatic_perk_removal_decision_tooltip: "Your power knows no bounds."
  phlegmatic_perk_removal_decision_confirm: "Channel your Inner Composure"
  
@@ -65,7 +65,7 @@
  excessive_phlegmatic_modifier_desc: "You are stolidly unfazed."
  
  sanguine_perk_removal_decision: "Channel the Power of Sanguine Blood"
- sanguine_perk_removal_decision_desc: "Channel your excess resonance into additional power for a time #N (Warning this is best used after you have acquired all the sanguine skills or no longer wish to acquire any of said skills any more, this also prevents sanguine experience gain from your herd).#!"
+ sanguine_perk_removal_decision_desc: "Channel your excess resonance into additional power for a time #N (Warning this is best used after you have acquired all the sanguine skills or no longer wish to acquire any of said skills any more, this also prevents sanguine experience gain from your [POD_herd|E]).#!"
  sanguine_perk_removal_decision_tooltip: "Your power knows no bounds."
  sanguine_perk_removal_decision_confirm: "Channel your Inner Charm"
  
@@ -91,10 +91,14 @@
  visceratika_tremere_decision_tooltip: "Discover your Inner Rock"
  visceratika_tremere_decision_confirm: "Visceratika Unleashed!"
  
- warrior_gargoyles_created: "Created one or more warrior caste gargoyle \n(Example: Gangrel+Tzimisce)"
- scout_gargoyles_created: "Created one or more scout caste gargoyle \n(Example: Gangrel+Nosferatu)"
- sentinel_gargoyles_created: "Created one or more sentinel caste gargoyle \n(Example: Tzimisce+Nosferatu)"
- special_gargoyles_created: "Created one or more non warrior/scout/sentinel gargoyle caste"
+ warrior_gargoyles_created: "Created a Warrior caste Gargoyle #weak (Gangrel + Tzimisce)#!"
+ scout_gargoyles_created: "Created a Scout caste Gargoyle #weak (Gangrel + Nosferatu)#!"
+ sentinel_gargoyles_created: "Created a Sentinel caste Gargoyle #weak (Tzimisce + Nosferatu)#!"
+ kintsugi_gargoyles_created: "Created a Kintsugi caste Gargoyle #weak (Ravnos + Caitiff)#!"
+ rogata_gargoyles_created: "Created a Rogata caste Gargoyle #weak (Caitiff + Tzimisce)#!"
+ totai_gargoyles_created: "Created a Totai caste Gargoyle #weak (Tzimisce + Ravnos)#!"
+ bingmayong_gargoyles_created: "Created a Bingmayong caste Gargoyle #weak (Kuei-Jin + Kuei-Jin)#!"
+ special_gargoyles_created: "Created a Gargoyle of a rare caste #weak (any not covered by the above)#!"
  virstania_bypass: "You are [GetScriptedCharacterByHistoryID('790870').GetFirstName]"
  visceratika_decision_effect_tooltip: "Every [GetTrait('gargoyle').GetName( GetPlayer )] will learn [GetTrait('visceratika').GetName(GetNullCharacter)], and newly created ones will also get it."
  
@@ -243,13 +247,21 @@
  POD_change_predatortype.1.b: "I don't want to change predator type"
  POD_change_predatortype.1.c: "#warning I don't ever want to change predator type#!"
 
- change_house_colors_decision: "Choose the Colors of House [GetPlayer.GetHouse.GetNameNoTooltip]"
- change_house_colors_decision_desc: "[house|E] [GetPlayer.GetHouse.GetName] needs to stand out."
- change_house_colors_decision_tooltip: "Change the color scheme of your [house|E] members' clothes"
+ change_house_colors_decision: "Customize Clothing Colors"
+ change_house_colors_option_personal: "Colors of your own clothing"
+ change_house_colors_option_coterie: "Colors of your [GetPlayer.Custom('PODCoterieNoTooltip')]"
+ change_house_colors_option_house: "Colors of House [GetPlayer.GetHouse.GetNameNoTooltip]"
+ POD_colors_personal_tooltip: "Will override [GetPlayer.Custom('PODCoterie')] and [house|E] colors\n\nCurrent: [GuiScope.AddScope('color_root',GetPlayer.MakeScope).Custom('PODClothingColors')]"
+ POD_colors_coterie_tooltip: "Will override [house|E] colors\n\nCurrent: [GetPlayer.Custom('PODClothingColorsCoterie')]"
+ POD_colors_house_tooltip: "Set a default color scheme for your [house|E]\n\nCurrent: [GuiScope.AddScope('color_root',GetPlayer.GetHouse.MakeScope).Custom('PODClothingColors')]"
+ change_house_colors_decision_desc: "It's time for a makeover."
+ change_house_colors_decision_tooltip: "Change the color scheme of your clothes"
  change_house_colors_decision_confirm: "Fetch me my tailor!"
  change_house_colors_decision_effect_tooltip: "You'll be able to customize the colors of your clothes."
- change_house_colors_decision_effect_tooltip_2: "Every member of [house|E] [GetPlayer.GetHouse.GetName] will use the same color scheme."
- change_house_colors_decision_effect_tooltip_3: "You can change these colors at any time."
+ change_house_colors_decision_effect_tooltip_coterie: "Every member of $POD_player_coterie$ will use the same color scheme. #weak (unless overridden by a personal color scheme)#!"
+ change_house_colors_decision_effect_tooltip_house: "Every member of [house|E] [GetPlayer.GetHouse.GetName] will use the same color scheme. #weak (unless overridden by a personal or [GetPlayer.Custom('PODCoterieNoTooltip')] color scheme)#!"
+ change_house_colors_decision_effect_tooltip_3: "You can change these colors at any time.\n"
+ POD_current_clothing_colors: "Current color scheme: [GuiScope.AddScope('color_root',color_root.MakeScope).Custom('PODClothingColors')]"
  
  # Epidemic
  heal_chulorviosis_decision: "Healing from Chulorviosis"
