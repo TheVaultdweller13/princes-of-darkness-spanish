@@ -1,0 +1,97 @@
+﻿l_spanish:
+ rule_pod_april_fools: "$POD_gamerule$ Inocentadas"
+ setting_pod_april_fools_disabled: "Desactivado"
+ setting_pod_april_fools_disabled_desc: "El mundo es como debería ser."
+ setting_pod_april_fools_2025: "#high La Pesadilla de Goratrix#!"
+ setting_pod_april_fools_2025_desc: "El mundo es un poco más resbaladizo. #weak (Inocentadas 2025)#!"
+ setting_pod_april_fools_2026: "#high El Mago#!"
+ setting_pod_april_fools_2026_desc: "El mundo es un poco más caótico. #weak (Inocentadas 2026)#!"
+
+##### APRIL FOOLS 2025
+
+ Wetrius: "Wetrius"
+ Wetrius_Prime: "Wetrius Prime"
+ Cainetrius: "Cainetrius"
+
+ POD_april_fools.2.t: "Así es como se ve el máximo rendimiento"
+ POD_april_fools.2.desc: "Algo le ha pasado al mundo.\n\nNo puedes saber exactamente qué es. Siempre ha sido así. ¿Verdad?\n\nBueno, probablemente no sea nada importante.\n\nProbablemente."
+ POD_april_fools.2.a: "¿Mis vecinos siempre tuvieron este aspecto?"
+ POD_april_fools.2.tt: "Tienes un nuevo objetivo para llegar al fondo de este asunto."
+
+ POD_april_fools.3.t: "Él Regresa"
+ POD_april_fools.3.desc: "Y he aquí, hubo un trueno. Y de la tierra del mundo abandonado de Dios surge el progenitor de toda la estirpe Wetrius, venido para vengar a sus chiquillos.\n\nNo hay más objetivos después de esto. Nada más que hacer.\n\nRíndete ahora, o persiste en el mundo condenado que has creado."
+ POD_april_fools.3.a: "Bueno, mierda."
+
+ POD_wetrius_objective: "Wetriuspocalipsis"
+ POD_wetrius_objective_desc: "¿Nadie va a poner fin a estos granujas húmedos?\nAlguien tiene que enviarles un mensaje."
+ POD_wetrius_objective_tooltip: "O sea, ¿se cubren de aceite de bebé cada puesta de sol, o qué?"
+ POD_wetrius_objective_confirm: "Largo de aquí, asquerosos"
+ POD_wetrius_objective_is_valid: "Has matado personalmente a [EmptyScope.ScriptValue('POD_wetrius_kill_requirement')|V0] Wetrii #weak (recuento actual: [GetPlayer.MakeScope.ScriptValue('POD_wetrius_killcount')|0])#!"
+ POD_wetrius_objective_is_valid_2: "#V [GetScriptedCharacterByHistoryID('505084').GetFirstName]#! ha muerto"
+ POD_wetrius_objective_effect: "Seguro que pasará algo bueno"
+
+ wetrius_event_troops: "Caballeros del Grial"
+
+
+##### APRIL FOOLS 2026
+
+ MODIFIER_DEFINITION_MARAUDER_MODE: "Aleatorizado de"
+ POD_marauder_mode_diplomacy_modifier: "Diplomacia Paradójica"
+ POD_marauder_mode_martial_modifier: "Marcialidad Paradójica"
+ POD_marauder_mode_stewardship_modifier: "Gestión Paradójica"
+ POD_marauder_mode_intrigue_modifier: "Intriga Paradójica"
+ POD_marauder_mode_learning_modifier: "Aprendizaje Paradójico"
+ POD_marauder_mode_goldform: "Hecho de Oro"
+
+ POD_april_fools.102.t: "Días Paradójicos"
+ POD_april_fools.102.desc: "Todo lo que querías era un momento de tranquilidad. Saliste a dar un paseo, y allí estaba, la primera señal de la locura por venir: un árbol hecho de oro macizo.\n\nAsombrado, alargaste la mano para tocarlo. El árbol estalló en una nube de polillas revoloteando, cada una de ellas gritando \"¡Felicidades! ¡Felicidades! ¡Felicidades!\" mientras orbitaban tu cabeza como el halo más molesto imaginable. Cuando intentaste espantar al enjambre, se dispersó y volvió a formarse en un árbol completamente normal.\n\nRegresaste a toda prisa a tu corte y la encontraste sumida en el caos. Los muebles se derretían, o flotaban, o estaban pegados al techo. La ropa de alguien se había convertido en ciempiés. El aire centelleaba en colores imposibles del arco iris.\n\nSi esto es una ilusión, te estremece pensar quién sería lo suficientemente poderoso como para crear una de esta escala. Pero si no lo es..."
+ POD_april_fools.102.a: "¿Cómo empezaría siquiera a encontrar al responsable?"
+ POD_april_fools.102.tt.1: "Tus [skills|E] se aleatorizarán cada mes."
+ POD_april_fools.102.tt.2: "Tus [personality_traits|E] se aleatorizarán cada año."
+ POD_april_fools.102.tt.3: "Seguro que esto es solo temporal, y deberías esperar a que pase la tormenta."
+
+# reused
+ POD_april_fools.103.desc.intro: "Tu [ROOT.Char.Custom2('RelationToMe', SCOPE.sC('courtier'))] [courtier.GetFirstName] viene a ti con noticias sobre el caos que se está desatando."
+
+ POD_april_fools.103.desc: "\"He encontrado esto. ¿No es un bebé adorable? Debemos cuidarlo bien y criarlo para que sea un miembro adecuado de esta casa.\"\n\nEl \"bebé adorable\" en cuestión es un dragón."
+ POD_april_fools.103.a: "Genial, siempre he querido un dragón."
+
+ POD_april_fools.104.desc: "No es que necesitaras que [courtier.GetHerHim] lo hiciera, porque es obvio lo que ha pasado. [courtier.GetSheHe|U] es de oro. Tú también. Todo el mundo en esta [ROOT.Char.Custom('GetCourt')|l], y todos tus muebles, y todas tus armas."
+ POD_april_fools.104.a: "Podemos sacar provecho de esto, pero lástima por las armas."
+
+ POD_april_fools.105.desc: "\"Estaba revisando nuestras celdas esta mañana y encontré a [prisoner.GetName]. Ni idea de cómo llegó allí [prisoner.GetSheHe]. [prisoner.GetSheHe|U] tampoco lo sabe. Pero a caballo regalado no le mires el dentado, ¿eh?\""
+ POD_april_fools.105.a: "Debería decidir qué hacer con [prisoner.GetHerHim]."
+
+ POD_april_fools.106.desc: "\"Mi pelo ha desaparecido\". Hay una profunda melancolía en los ojos de [courtier.GetHerHis], lo que te pilla por sorpresa. Nunca supiste que a [courtier.GetFirstNameNoTooltip] le importara demasiado su apariencia."
+ POD_april_fools.106.a: "Sí, me he dado cuenta. El mío también ha desaparecido."
+ POD_april_fools.106.a.alreadybald: "Ajá. Debe de ser terrible."
+
+ POD_april_fools.107.desc: "\"Queso\". Negándose a dar más detalles, [courtier.GetSheHe] te entrega el mencionado queso."
+ POD_april_fools.107.a: "Eh... ¿gracias?"
+
+ POD_april_fools.108.desc: "\"Sí, bueno, esto, grandes noticias\". [courtier.GetSheHe|U] se mueve nerviosamente. \"¿Sabes lo de esa enorme explosión del otro día? ¿Esa columna de llama verde que llegaba hasta el cielo, gritando como un coro de almas condenadas?\"\n\nSí, lo viste. Era un poco difícil de ignorar. No es que te importara mucho en ese momento. Con todo lo demás que estaba pasando, parecía un martes cualquiera.\n\n\"Bueno, dejó una gran impresión en los $POD_splat_hunter_plural$ locales. Lo enviaron todo por la cadena de mando y ahora la Santa Sede está movilizando sus recursos para erradicar a los 'demonios entre nosotros'.\"\n\n\"Lo llaman la Inquisición\"."
+ POD_april_fools.108.a: "Como si no tuviéramos ya suficientes problemas."
+ POD_april_fools.108.a.hunter: "Supongo que eso es bueno para nosotros."
+ POD_april_fools.108.a.premature: "¡¡¿OTRA MÁS?!!"
+ POD_april_fools.108.a.premature.hunter: "¿Otra más? Aleluya."
+
+ POD_april_fools.109.desc: "\"Es un manicomio ahí fuera. Los inquisidores se están movilizando y quemando refugios por todas partes. A este paso, nos van a erradicar\".\n\nTe frotas las sienes. \"¿Significa eso que finalmente podemos dejar nuestras diferencias a un lado y unirnos contra un enemigo común?\"\n\n\"¿Qué? No, eso es una locura. Mira, no estás pensando como un emprendedor. Esta es una oportunidad de oro para robar a todo el mundo. Nadie esperará que les apuñalemos por la espalda mientras están ocupados con problemas mayores\"."
+ POD_april_fools.109.desc.hunter: "\"Es un manicomio ahí fuera. Los inquisidores se están movilizando y quemando refugios por todas partes. Los chupasangres se están poniendo nerviosos. Saben que no les queda mucho en este mundo\".\n\nSuspiras. \"¿Sí, y? El Vaticano se está encargando de esto. Podemos quedarnos al margen. No hay necesidad de arriesgar nuestras vidas cuando sus benditos e ungidos hijos de puta en jefe están dispuestos a morir en el frente\".\n\n\"¿Qué? No, eso es una locura. Mira, no estás pensando como un emprendedor. Esta es una oportunidad de oro para robar a todo el mundo. Nadie esperará que les apuñalemos por la espalda mientras están ocupados con otros asuntos\"."
+ POD_april_fools.109.a: "Es la cosa más estúpida que he oído nunca."
+ POD_april_fools.109.tt: "TODO EL MUNDO puede [raid|E] ahora."
+ 
+ POD_april_fools.110.desc: "\"Aboeisrd moieaon kstlbv og. Goob broncpsdz ib? Plib e bib. Zbilbrekwlommbiorbeon aglonmeqwas eorleor ir immnimnim plembaf, nor limnon leqbaf, nor zeblorneqis rirghhb nekbaf. Ya bib?\""
+ POD_april_fools.110.a: "¡Hor hor hor! Sik nempis irliq nempo bib."
+ POD_marauder_mode_tongues: "Hablando el Lenguaje de los Dioses"
+ POD_marauder_mode_tongues_desc: "Ha blemqas nirtuilzvkkir tiglpvnmbonan giruen bib. Giruen? Og pilnis? Hor hor hor."
+ 
+ POD_april_fools.111.desc: "\"Te odio. Solo quería que lo supieras\"."
+ POD_april_fools.111.a: "¿Qué?"
+ 
+ POD_april_fools.112.t: "El Responsable"
+ POD_april_fools.112.desc: "Un zumbido bajo anuncia su llegada. El suelo y el techo se rompen en miles de fragmentos coloridos, para luego reformarse en redes de cristal en espiral. La luz en tus aposentos se dobla en ángulos nauseabundos. La realidad llora y admite su derrota.\n\nEn el nexo de esta tormenta se encuentra un agujero negro, su silueta con forma de hombre. Crees que es un hombre, al menos. No hay rasgos discernibles. La entidad solo es visible por su contorno y la gravedad que ejerce sobre su entorno, como algo que es integral para la existencia de este mundo, pero que no puede existir dentro de él.\n\nHas conseguido sobrevivir tanto tiempo sabiendo cuándo luchar y cuándo retirarte. Esta lucha es una que no puedes ganar. Todo lo que puedes hacer es observar y esperar lo mejor."
+# ellipsis
+ 
+ POD_april_fools.113.t: "Maraudeur"
+ POD_april_fools.113.desc: "La cosa te saluda con un ruido reverberante salido directamente del infierno.\n\nSuena un poco como: \"Bonjour\".\n\nAparte de eso, parece bastante dispuesta a una conversación educada. Se disculpa mucho por todos los problemas que ha causado y te da una larga justificación llena de jerga científica que no puedes ni empezar a entender, sobre \"esferas\", \"instrumentos\" y \"zonas de realidad merodeadora\". Entiendes que está huyendo de \"ese arrugado #italic fils de pute#!\" y que su visita a estos lugares fue \"demasiado pronto\", pero que podrías encontrarte con otros como él algún día, \"cuando sea el momento adecuado\". Luego abre un portal giratorio y se dispone a marcharse.\n\nLlamas a la entidad, todavía confundido. \"¿Quién eres?\"\n\nDice: \"Puedes llamarme Jean\"."
+ POD_april_fools.113.a: "Y supongo que eso es todo."

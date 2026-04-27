@@ -1,0 +1,107 @@
+﻿l_spanish:
+ 
+  POD_divide_interaction: "Dividir"
+  POD_divide_interaction_desc: "Sembrarás la semilla de la discordia en este reino, dejando a los vasallos descontentos con su señor."
+  divide_modifier: "Dividir"
+  divide_modifier_desc: "Todo lo que haces o dices parece ser malinterpretado por tus vasallos. Como si una fuerza maligna retorciera tus palabras de alguna manera..."
+ 
+  POD_inspiration_interaction: "Inspiración"
+  POD_inspiration_interaction_desc: "Como Alfa de esta manada, es tu deber mostrar tu fuerza para inspirar a tus seguidores."
+  werewolf_inspiration_modifier: "Inspiración"
+  werewolf_inspiration_modifier_desc: "Con tu Alfa cerca, tu destreza en combate ha sido mejorada."
+ 
+  POD_primal_song_interaction: "Canción primordial"
+  POD_primal_song_interaction_desc: "Elegirás entre una de las canciones que conoces, ganando varios bonos dependiendo de tu elección."
+  song_siren_modifier: "Canción de la sirena"
+  song_siren_modifier_desc: "Al seguir la llamada, nos hacemos más fuertes."
+ 
+ 
+  POD_break_the_bonds_interaction: "Romper los vínculos"
+  POD_break_the_bonds_interaction_desc: "Usa gnosis para hacer que [recipient.GetFirstName] gaste un gancho que tenga sobre ti."
+ 
+  POD_shared_strength_interaction: "Compartir fuerza"
+  POD_shared_strength_interaction_desc: "Transfiere tu habilidad a [recipient.GetFirstName]."
+  shared_strength_diplomacy_gain_modifier: "Fuerza compartida: Ganancia de diplomacia"
+  shared_strength_diplomacy_loss_modifier: "Fuerza compartida: Pérdida de diplomacia"
+  shared_strength_martial_gain_modifier: "Fuerza compartida: Ganancia de marcialidad"
+  shared_strength_martial_loss_modifier: "Fuerza compartida: Pérdida de marcialidad"
+  shared_strength_stewardship_gain_modifier: "Fuerza compartida: Ganancia de gestión"
+  shared_strength_stewardship_loss_modifier: "Fuerza compartida: Pérdida de gestión"
+  shared_strength_intrigue_gain_modifier: "Fuerza compartida: Ganancia de intriga"
+  shared_strength_intrigue_loss_modifier: "Fuerza compartida: Pérdida de intriga"
+  shared_strength_learning_gain_modifier: "Fuerza compartida: Ganancia de aprendizaje"
+  shared_strength_learning_loss_modifier: "Fuerza compartida: Pérdida de aprendizaje"
+  shared_strength_prowess_gain_modifier: "Fuerza compartida: Ganancia de proeza"
+  shared_strength_prowess_loss_modifier: "Fuerza compartida: Pérdida de proeza"
+ 
+  POD_storyteller_interaction: "Cuentacuentos"
+  POD_storyteller_interaction_desc: "Usa gnosis para tener la oportunidad de que ocurra un evento aleatorio."
+  POD_storyteller_interaction.tt: "25% de probabilidad de que ocurra un evento aleatorio."
+ 
+  POD_unleash_storm_of_mothers_wrath_interaction: "Desatar tormenta de la ira de la Madre"
+  POD_unleash_storm_of_mothers_wrath_interaction_desc: "Desata una tormenta de la ira de la Madre que causará estragos en un área."
+  POD_unleash_storm_of_mothers_wrath_interaction.tt: "Desatarás una tormenta de la ira de la Madre sobre el reino de [recipient.GetFirstNamePossessive]"
+  POD_unleash_storm_of_mothers_wrath_interaction.duel.success: "Causaste la tormenta con éxito"
+  POD_unleash_storm_of_mothers_wrath_interaction.duel.tt.attacker_wins: "El reino de [recipient.GetFirstNamePossessive] se sumerge en una tormenta de la ira de la Madre que causa estragos por donde pasa."
+  POD_unleash_storm_of_mothers_wrath_interaction.duel.failure: "No lograste causar la tormenta"
+  POD_unleash_storm_of_mothers_wrath_interaction.duel.tt.attacker_lost: "Fracasas"
+  POD_unleash_storm_of_mothers_wrath_interaction_actor_toast: "Has desatado con éxito una tormenta de la ira de la Madre sobre el reino de [recipient.GetFirstNamePossessive]"
+  POD_unleash_storm_of_mothers_wrath_interaction_recipient_toast: "[actor.GetFirstName] ha desatado una tormenta de la ira de la Madre sobre tu capital"
+  POD_unleash_storm_of_mothers_wrath_interaction_failed_toast: "No pudiste desatar una tormenta de la ira de la Madre sobre el reino de [recipient.GetFirstNamePossessive]"
+  storm_of_mothers_wrath_modifier: "Dañado por una tormenta de la ira de la Madre"
+  storm_of_mothers_wrath_modifier_desc: "Esta zona está dañada por una temible granizada oscura, que surge incluso con el cielo despejado."
+ 
+  POD_tagalong_interaction: "Acompañante"
+  POD_tagalong_interaction_desc: "Obtén las bendiciones del tótem de [recipient.GetFirstName]."
+ 
+  POD_beg_interaction: "Mendigar"
+  POD_beg_interaction_desc: "Mendiga algunas sobras a [recipient.GetFirstName]."
+ 
+  POD_riot_interaction: "Provocar disturbios"
+  POD_riot_interaction_desc: "Convoca una horda de espíritus malévolos para provocar disturbios violentos entre los habitantes del condado capital de [recipient.GetFirstNamePossessive]."
+ 
+  POD_airitechs_daughters_interaction: "Convertir en hombre lobo Crinos"
+  POD_airitechs_daughters_interaction_desc: "Obliga a [recipient.GetFirstName] a adoptar la apariencia de un hombre lobo Crinos."
+ 
+  POD_shadow_pack_interaction: "Convocar duplicado sombrío"
+  POD_shadow_pack_interaction_desc: "Convoca duplicados sombríos de ti mismo."
+  POD_shadow_pack_interaction.tt: "Intentarás convocar duplicados sombríos de ti mismo."
+ 
+  POD_renew_the_cycle_interaction: "Renovar el ciclo"
+  POD_renew_the_cycle_interaction_desc: "Hace que [recipient.GetFirstName] se reduzca a su estado natural (se convierta en polvo o simplemente pierda su animación)."
+ 
+  POD_thought_form_of_the_twelve_ministers_interaction: "Alcanzar el verdadero equilibrio espiritual"
+  POD_thought_form_of_the_twelve_ministers_interaction_desc: "Mediante un mantra hablado, alcanzas el verdadero equilibrio espiritual por un solo momento."
+ 
+  POD_burning_scars_interaction: "Cicatrices ardientes"
+  POD_burning_scars_interaction_desc: "Comparte el fuego ardiente con [recipient.GetFirstName]." 
+ 
+  POD_dumpster_diving_interaction: "Buceo en la basura"
+  POD_dumpster_diving_interaction_desc: "Viaja de un santuario del Gran Montón de Basura a otro, lo que te permite teletransportarte a la ubicación de [recipient.GetFirstNamePossessive], o a tu próximo destino cuando estés [traveling|E], siempre que la provincia objetivo tenga un alto [development|E]."
+ 
+  POD_home_in_all_lands_perk_interaction: "Aparecer"
+  POD_home_in_all_lands_perk_interaction_desc: "Caminar de lado y aparecer en la ubicación de [recipient.GetFirstNamePossessive] donde se puedan encontrar lobos de forma natural."
+ 
+  POD_storm_winds_slash_interaction: "Tajo de vientos de tormenta"
+  POD_storm_winds_slash_interaction_desc: "Corta el aire y a [recipient.GetFirstName] desde la distancia."
+  POD_storm_winds_slash_interaction_requirement: "Debe tener una Katana equipada"
+ 
+  POD_dark_of_night_interaction: "Oscuridad de la noche"
+  POD_dark_of_night_interaction_desc: "Haz que no vean nada."
+  POD_dark_of_night_interaction_success: "Ceguera"
+ 
+  POD_moon_bridge_interaction: "Puente lunar"
+  POD_moon_bridge_interaction_desc: "Recorre el camino lunar a través de las nieblas de la [umbra|E], lo que te permite teletransportarte a un túmulo en la ubicación de [recipient.GetFirstNamePossessive], o a tu próximo destino cuando estés [traveling|E]."
+ 
+  POD_blooding_fury_interaction: "Furia sangrienta"
+  POD_blooding_fury_interaction_desc: "Dáñate a ti mismo para aumentar tu $POD_energy_gnosis$."
+ 
+  #POD_call_fenris_to_war_interaction: "Llamar al Gran Fenris"
+  #POD_call_fenris_to_war_interaction_desc: "Llamar al Gran Fenris a la guerra."
+  #POD_call_fenris_to_war_interaction_tt: "Ya has llamado a [GetMaA('war_avatar_of_great_fenris').GetName] a la guerra [GetPlayer.MakeScope.GetVariable('fenris_summon').War.GetName]."
+  #POD_call_fenris_to_war_interaction_tooltip: "El Gran Fenris exige un sacrificio por su intervención; normalmente la mano izquierda del invocador."
+  
+  pack_tactics_modifier: "Tácticas de manada"
+  pack_tactics_modifier_desc: "Para el ojo ajeno, tu manada se mueve como uno solo."
+  strength_will_modifier: "Fuerza de voluntad"
+  strength_will_modifier_desc: "Una fuerza imparable, una manada unida con un solo propósito: la destrucción de sus enemigos."

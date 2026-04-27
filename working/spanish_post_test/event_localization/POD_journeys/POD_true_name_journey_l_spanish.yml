@@ -1,0 +1,19 @@
+﻿l_spanish:
+ POD_learn_true_name.1.t: "Nombre Verdadero"
+ POD_learn_true_name.1.desc: "El [Glossary('True Name','podgloss.truename')] de un ser es a la vez su existencia, su historia y su identidad. Un humano podría pensar en él como un plano platónico del ser. Es una palabra que abarca cada parte de su objetivo, desde sus órganos internos hasta su propia alma.\n\nCuanto más inteligente es un ser, más complejo es su [Glossary('True Name','podgloss.truename')]. Los animales tienen Nombres comparativamente simples, mientras que el Nombre de un humano puede cambiar a través de experiencias que alteran la vida.\n\nEncontrar [Glossary('True Names','podgloss.truename')] es una tarea angustiosa en sí misma y exige una profunda comprensión psicológica del objetivo. Si una persona conoce su propio [Glossary('True Name','podgloss.truename')], puede protegerlo contra los magos que lo usarían contra él inscribiéndolo mediante runas arcanas y protecciones mágicas."
+ POD_learn_true_name.1.a: "Y ahora, [PlayerJourneyTarget.GetFirstName] queda al descubierto."
+ 
+ POD_learn_true_name.2.t: "Nombre Verdadero de [Localize(Concatenate('POD_truename_', GetPlayer.MakeScope.Var('true_name_variable').GetFlagKey))]"
+ POD_learn_true_name.2.desc: "Mi contemplación ha dado sus frutos.\n\nHe obtenido la comprensión completa de un nuevo [Glossary('True Name','podgloss.truename')]: #V [Localize(Concatenate('POD_truename_', GetPlayer.MakeScope.Var('true_name_variable').GetFlagKey))]#!."
+ POD_learn_true_name.2.a: "Mi mente se expande. Pero aún no he terminado."
+ POD_learn_true_name.2.a.tt: "Comenzarás inmediatamente otro [journey|E] para aprender un nuevo [Glossary('True Name','podgloss.truename')].\nCoste: [piety_i]250"
+ POD_learn_true_name.2.b: "Mi mente se expande. Y con ella, las posibilidades."
+ 
+ POD_learn_true_name.3.t: "Nombres Verdaderos interiores"
+ POD_learn_true_name.3.desc: "¿Qué [traits|E] quieres estudiar?"
+ POD_learn_true_name.3.a: "Estudiar estos rasgos."
+ POD_learn_true_name.3.b: "No importa."
+ 
+ POD_learn_true_name.4.t: "Perspectivas de [GetPlayer.MakeScope.Var('current_journey').Var('target_trait').Trait.GetName(GetPlayer)]"
+ POD_learn_true_name.4.desc: "Mi contemplación ha dado sus frutos.\n\nHe obtenido la comprensión completa de un nuevo [Glossary('True Name','podgloss.truename')]: [GetPlayer.MakeScope.Var('current_journey').Var('target_trait').Trait.GetName(GetPlayer)]."
+ POD_learn_true_name.4.a: "Mi mente se expande. Y con ella, las posibilidades."

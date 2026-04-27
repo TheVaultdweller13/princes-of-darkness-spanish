@@ -1,0 +1,60 @@
+﻿l_spanish:
+
+
+ urgetaints_lifestyle_name: "Máculas de Impulso"
+ urgetaints_lifestyle_desc: "Estos dones oscuros son otorgados por los Wyrms de Impulso a aquellos que buscan poder, aunque siempre hay un precio."
+ urgetaints_lifestyle_highlight_desc: "Debido a tu [GetModifier('POD_gnosis_5_modifier').GetNameWithTooltip], ganas un #P [GetPlayer.Custom('GetEducationLifestylePercentageBoost')]#! más de [experience|E] en este estilo de vida."
+ monthly_urgetaints_lifestyle_xp_gain_mult: "[experience|E] mensual de [lifestyle|E] de Máculas de Impulso"
+ 
+  
+ urgetaints_physical_visible: "Físico"
+ urgetaints_mental_visible: "Mental"
+ 
+ URGETAINTS_REQ: "@warning_icon!#X La [lifestyle_experience|E] de Máculas de Impulso se gana explorando ciertos reinos dentro de [UmbraGlossary('malfeas')]#!"
+ 
+ 
+ ### Físico
+ malformed_flesh_perk_name: "Carne malformada"
+ MALFORMED_FLESH_PERK_EFFECT: "#flavor La carne se seca y se endurece, formando un caparazón protector.#!"
+ malformed_muscle_perk_name: "Músculo malformado"
+ MALFORMED_MUSCLE_PERK_EFFECT: "#flavor Los músculos crecen desproporcionadamente grandes y poderosos, permitiendo grandes hazañas de fuerza.#!"
+ malformed_bone_perk_name: "Hueso malformado"
+ MALFORMED_BONE_PERK_EFFECT: "#flavor Los huesos crecen fuertes y robustos, un desafío contra los estragos del tiempo.#!"
+ bestial_limbs_perk_name: "Extremidades bestiales"
+ BESTIAL_LIMBS_PERK_EFFECT: "Cambiar de forma a las formas animales naturales de un $glossary_fera$ ya no cuesta $POD_energy_gnosis$.\n#flavor Incluso en forma homínida, tus extremidades conservan su apariencia bestial, habiendo menos que cambiar al transformarse.#!"
+ forked_tongue_perk_name: "Lengua bífida"
+ FORKED_TONGUE_PERK_EFFECT: "Puede aprender #V 1#! [language|E] adicional sin penalizaciones.\n#flavor Nadie puede decir dónde termina una mentira y comienza otra.#!"
+ reversed_eye_perk_name: "Ojo invertido"
+ REVERSED_EYE_PERK_EFFECT: "$countermeasures_unlocks_t2_all_seeing_eye$\n#flavor Con un ojo en la nuca, nada podrá volver a sorprenderte.#!"
+ bane_stomach_perk_name: "Estómago de perdición"
+ BANE_STOMACH_PERK_EFFECT: "Desbloquea la [execution|E] por Canibalismo.\nCanibalizar a un personaje dará [trait_level_track_xp|E] a todos tus [spirit_companions|E] de perdición.\n#flavor La esencia de lo devorado alimentará más que tu propio cuerpo.#!"
+ BANE_STOMACH_REASON: ""$bane_stomach_perk_name$: $VALUE|+=0$""
+ thundering_throat_perk_name: "Garganta atronadora"
+ THUNDERING_THROAT_PERK_EFFECT: "Aceptación de invitación a la [court|E]: #P +10#!\nDa [GetModifier('wyrm_thundering_throat_modifier').GetNameWithTooltip] y #V 30#! de [stress|E] a los [knights|E] y [commanders|E] enemigos cuando actúas como [commander|E] durante la [combat_phase|E], o a tu oponente durante los [single_combat_duel_plural|E] si está [intimidated|E] por ti.\n#flavor Con una voz que sacude la tierra, tu lealtad es escuchada.#!" 
+ THUNDERING_THROAT_INVITE: "[GetPerk('thundering_throat_perk').GetName(GetPlayer)]: $VALUE|=+0$"
+ profaned_lungs_perk_name: "Pulmones profanados"
+ PROFANED_LUNGS_PERK_EFFECT: "Velocidad de [journey|E] de entrenar con la [GetPlayer.Custom('PODCoterieNoTooltip')]: #P +25%#!\n#flavor Con el aire fluyendo hacia tus grandes pulmones se logra una resistencia perfecta, pero no para ti.#!"
+ unholy_heart_perk_name: "Corazón impío"
+ UNHOLY_HEART_PERK_EFFECT: "Casillas de [POD_health_track|E]: #P +1#!\nReduce el tiempo para convertir [POD_aggravated_damage|E] en [POD_superficial_damage|E] en #V 1#! año.\n#flavor Otro recipiente reclamado por el Wyrm.#!"
+ 
+ ### Mental
+ dominance_perk_name: "Dominio"
+ DOMINANCE_PERK_EFFECT: "#flavor Muéstrales por qué eres mejor.#!"
+ indulgence_perk_name: "Indulgencia"
+ INDULGENCE_PERK_EFFECT: "#flavor Adelante, te lo mereces.#!"
+ obsession_perk_name: "Obsesión"
+ OBSESSION_PERK_EFFECT: "Desbloquea la [scheme|E] de [GetScheme('abduct').GetTypeName]\n#flavor Debes tenerlo, cueste lo que cueste.#!"
+ warped_reflection_perk_name: "Reflejo deformado"
+ WARPED_REFLECTION_PERK_EFFECT: "#flavor Tu reflejo se ha vuelto difícil de ver, pero estás seguro de que te ves tan increíble como siempre.#!"
+ dancing_shadows_perk_name: "Sombras danzantes"
+ DANCING_SHADOWS_PERK_EFFECT: "[character_interaction|E]: Inflige #V 1-3#! de [POD_superficial_damage|E] a un personaje.\n#flavor Tu sombra a veces te abandona para atacar a tus enemigos, al menos eso es lo que crees.#!"
+ fragmented_psyche_perk_name: "Psique fragmentada"
+ FRAGMENTED_PSYCHE_PERK_EFFECT: "#flavor Con una psique dividida serías mucho más eficiente logrando tus objetivos, los tuyos propios, por supuesto.#!"
+ splintered_soul_perk_name: "Alma fragmentada"
+ SPLINTERED_SOUL_PERK_EFFECT: "[character_interaction|E]: Crea un clon de ti mismo como [ancestor_spirit|E].\n#flavor El alma toma una forma propia para servir mejor a su maestro.#!"
+ maniacal_mind_perk_name: "Mente maníaca"
+ MANIACAL_MIND_PERK_EFFECT: "[character_interaction|E]: Aumenta la [opinion|E] que un personaje tiene de ti mientras aumenta su [stress|E].\n$countermeasures_unlocks_t3_mental_fortress$\n#flavor La mente está a salvo en sus propios delirios, aislada de la realidad.#!"
+ sanguine_spirit_perk_name: "Espíritu sanguíneo"
+ SANGUINE_SPIRIT_PERK_EFFECT: "Potenciar perdiciones ahora solo te causa #V 1#! de [POD_aggravated_damage|E].\nPuede reclutar [GetMaA('nexus_crawlers').GetName] como [men_at_arms|E].\n#flavor El espíritu brilla con una radiación oscura, atrayendo a espíritus afines.#!"
+ embrace_oblivion_perk_name: "Abrazar el olvido"
+ EMBRACE_OBLIVION_PERK_EFFECT: "[character_interaction|E]: Hace que un $glossary_fera$ [wyrm_tainted|E] caiga plenamente ante el $glossary_wyrm$.\nDesbloquea el [lifestyle|E] de [investiture_lifestyle|E].\n#flavor Otra alma reclamada por el Wyrm.#!"

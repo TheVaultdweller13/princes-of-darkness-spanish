@@ -1,0 +1,64 @@
+﻿l_spanish:
+ 
+ POD_ghoul: "Manipular [ghoul|E]"
+ POD_manipulate_bound_ghouls: "Manipular [ghoul|E]"
+ recipient_secondary_POD_manipulate_bound_ghouls: "Esclavo [ghoul|E]"
+ POD_manipulate_bound_ghouls_desc: "Elige qué hacer con tus esclavos [ghoul|E]."
+ POD_manipulate_bound_ghouls_heal_option: "Curar esclavo"
+ POD_manipulate_bound_ghouls_goldreward_option: "Recompensar esclavo"
+ POD_manipulate_bound_ghouls_demandgold_option: "Exigir oro"
+ POD_manipulate_bound_ghouls_giveblood_option: "Dar sangre"
+ POD_manipulate_bound_ghouls_traindiscipline_option: "Entrenar $pod_discipline$"
+ POD_manipulate_bound_ghouls_divorce_option: "Exigir divorcio"
+ POD_manipulate_bound_ghouls_release_option: "Liberar esclavo"
+ 
+ POD_ghoulify_mortal_interaction_limit: "¡El número de esclavos [ghoul|E] está limitado! (3 más cualquier bonificación de otras fuentes)"
+ POD_ghoulify_mortal_interaction_bp_one: "Los vampiros deben tener una potencia de sangre de al menos uno para crear un [ghoul|E]."
+ POD_ghoulify_mortal_interaction: "Convertir en ghoul #weak (Intriga)#!"
+ POD_ghoulify_mortal_interaction_desc: "Conspira para transformar a este mortal en un esclavo [ghoul|E], un sirviente leal.\nTen en cuenta que los ghouls tienen una resonancia drásticamente reducida y son malos miembros del [POD_herd|E]."
+ POD_ghoul_ghoulify_interaction: "Otorgar el Don de la Vitae #weak (Intriga)#!"
+ POD_ghoul_ghoulify_interaction_desc: "Ofrece a esta persona $pod_vitae$ extraída de un prisionero de su elección."
+ I_have_no_bloodbag: "No hay ningún vampiro en la mazmorra del que extraer sangre."
+ recipient_secondary_POD_ghoul_ghoulify_interaction: "\n \n \n Usar a este prisionero como fuente de vitae."
+ 
+ POD_ghoul_ghoulify_prisoner_interaction: "Otorgar el Don de la Vitae a un prisionero"
+ POD_ghoul_ghoulify_prisoner_interaction_desc: "Convertir por la fuerza a [recipient.GetFirstName] en un ghoul."
+ POD_ghoul_ghoulify_prisoner_interaction.tt: "[recipient.GetFirstName] se convierte en un ghoul."
+ recipient_secondary_POD_ghoul_ghoulify_prisoner_interaction: "Prisionero"
+ 
+ POD_beg_for_vitae_interaction: "Suplicar por el poder de la Vitae"
+ POD_beg_for_vitae_interaction_desc: "Suplica a [recipient.GetShortUIName] que te convierta en su [ghoul|E]. Los requisitos para esta interacción se basan en la [Glossary('Generation','game_concept_vampgeneration_desc')] del vampiro."
+ POD_beg_for_vitae_interaction_needed_total_skills: "La suma de tus [skills|E] (excluyendo [prowess|E]) debe superar [SCOPE.GetValue('needed_total_skills')|0V] #weak ([THIS.Char.MakeScope.ScriptValue('sum_of_all_skills_value')])#!"
+ 
+ POD_consume_vitae_of_prisoner_interaction: "Consumir vitae de prisionero"
+ POD_consume_vitae_of_prisoner_interaction_desc: "Bebe de [recipient.GetShortUIName] para ganar $pod_vitae$. Dependiendo de sus habilidades, podrías arriesgarte a convertirte en su [bound_ghoul|E]"
+ 
+ POD_runaway_from_blood_bond_interaction: "Huir del vínculo de sangre"
+ POD_runaway_from_blood_bond_interaction_desc: "La claridad ha vuelto y puedes ver el estado al que te ha llevado tu 'maestro'. Tienes que huir."
+ 
+ POD_ghoul_mission_bribe_officials_interaction: "Sobornar oficiales"
+ POD_ghoul_mission_bribe_officials_interaction_desc: "Gasta algo de [gold|E] para disminuir la [tyranny|E] y aumentar la [legitimacy|E] de [recipient.GetShortUIName]."
+ 
+ POD_ghoul_mission_indoctrinate_plant_interaction: "Adoctrinar a un contacto"
+ POD_ghoul_mission_indoctrinate_plant_interaction_desc: "Adoctrina a [recipient.GetShortUIName] y envíalo a la guarida de tu maestro."
+ 
+ POD_ghoul_mission_send_desirable_mortal_interaction: "Enviar mortal deseable"
+ POD_ghoul_mission_send_desirable_mortal_interaction_desc: "Envía a [recipient.GetShortUIName] a la guarida de tu maestro."
+ 
+ POD_ghoul_mission_damage_rivals_image_interaction: "Dañar la imagen del rival"
+ POD_ghoul_mission_damage_rivals_image_interaction_desc: "Sacrifica tu imagen para hundir aún más a [recipient.GetShortUIName]."
+ 
+ POD_ghoul_mission_slander_rival_interaction: "Difamar al rival"
+ POD_ghoul_mission_slander_rival_interaction_desc: "Sacrifica tu piedad para hundir aún más a [recipient.GetShortUIName]."
+ 
+ POD_ghoul_mission_give_relative_away_interaction: "Entregar pariente"
+ POD_ghoul_mission_give_relative_away_interaction_desc: "Envía a [recipient.GetShortUIName] a tu maestro, sabiendo que nunca volverás a verle."
+ 
+ POD_help_bound_ghoul_interaction: "Ayudar a ghoul vinculado"
+ POD_help_bound_ghoul_interaction_desc: "Ayuda a un compañero [ghoul|E] a liberarse de su domitor, sin importar si lo desea o no"
+ 
+ POD_request_mission_from_domitor_interaction: "Solicitar una misión"
+ POD_request_mission_from_domitor_interaction_desc: "He completado la [bound_ghoul_mission_with_icon|E] asignada por mi maestro, y me estoy impacientando por no tener una nueva."
+ POD_request_mission_from_domitor_interaction_current_mission: "Ya tienes una [bound_ghoul_mission_with_icon|E]"
+ POD_request_mission_from_domitor_interaction_failure_cooldown: "Has fallado una [bound_ghoul_mission_with_icon|E] en los últimos [EmptyScope.ScriptValue('POD_cooldown_months_after_failing_mission')] meses (no disponible hasta el [GetCurrentDateWithDiff(GetVarTimeRemaining(THIS.Char.MakeScope,'recently_failed_ghoul_mission'))])"
+ POD_request_mission_from_domitor_interaction_effect: "Ganarás una [bound_ghoul_mission_with_icon|E] aleatoria"

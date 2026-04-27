@@ -1,0 +1,57 @@
+﻿l_spanish:
+ POD_fleshcrafting_tutorial: "Cada una de las seis partes del cuerpo tiene dos capas, #bold;clickable @flesh_icon!Carne#! y #bold;clickable @bone_icon!Hueso#!. Cada parte del cuerpo solo puede tener una modificación por capa.\n\nCada modificación tiene un valor de #bold;clickable @vicissitude_icon! Complejidad#!. La probabilidad de éxito al cambiar las modificaciones se determina por la complejidad total de todas las partes del cuerpo frente a tu #bold;clickable [learning_i]Aprendizaje#! y cualquier bonificación adicional que puedas tener.\n\nHaz clic en una de las casillas de la izquierda para comenzar."
+ 
+ # f minúscula para "fleshcrafting" ya que queda mejor con esa fuente específica
+ POD_fleshcrafting_title: "moldeado de carne: #bold [GetPlayer.MakeScope.Var('fleshcraft_target').Char.GetFirstNameNoTooltip]#!"
+ 
+ fc_head: "Cabeza"
+ fc_torso: "Torso"
+ fc_arm_r: "Brazo derecho"
+ fc_arm_l: "Brazo izquierdo"
+ fc_leg_r: "Pierna derecha"
+ fc_leg_l: "Pierna izquierda"
+ fc_arms: "Brazos"
+ fc_legs: "Piernas"
+ 
+ fc_head_flesh: "Cabeza, @flesh_icon!Carne#!"
+ fc_head_bone: "Cabeza, @bone_icon!Hueso#!"
+ fc_torso_flesh: "Torso, @flesh_icon!Carne#!"
+ fc_torso_bone: "Torso, @bone_icon!Hueso#!"
+ fc_arm_r_flesh: "Brazo derecho, @flesh_icon!Carne#!"
+ fc_arm_r_bone: "Brazo derecho, @bone_icon!Hueso#!"
+ fc_arm_l_flesh: "Brazo izquierdo, @flesh_icon!Carne#!"
+ fc_arm_l_bone: "Brazo izquierdo, @bone_icon!Hueso#!"
+ fc_leg_r_flesh: "Pierna derecha, @flesh_icon!Carne#!"
+ fc_leg_r_bone: "Pierna derecha, @bone_icon!Hueso#!"
+ fc_leg_l_flesh: "Pierna izquierda, @flesh_icon!Carne#!"
+ fc_leg_l_bone: "Pierna izquierda, @bone_icon!Hueso#!"
+ 
+ POD_fleshcrafting_flesh_unassigned: "#italic Haz clic para moldear @flesh_icon!Carne#!"
+ POD_fleshcrafting_bone_unassigned: "#italic Haz clic para moldear @bone_icon!Hueso#!"
+ POD_fleshcraft_modify_layer: "#I Haz clic para modificar esta capa\nClic derecho para borrar la selección#!"
+ POD_fleshcrafting_selected_layer: "Modificando: [GetPlayer.MakeScope.Var('fc_selected_layer').GetFlagName]"
+ POD_fleshcrafting_layer_confirm: "Selecciona una modificación para proceder"
+ POD_fleshcrafting_button_clear: "#I Haz clic para borrar todas las modificaciones seleccionadas#!"
+ # viñeta invisible para que el texto esté alineado con las otras viñetas invisibles de los custom_tooltips en POD_fleshcrafting_list_all_perk_effects_on_character
+ # esto es necesario créeme hermano
+ POD_fleshcrafting_button_reset: "#color:{0.0,0.0,0.0,0.0} $EFFECT_LIST_BULLET$#!#I Haz clic para volver a aplicar los moldeados de carne actuales de [GetPlayer.MakeScope.Var('fleshcraft_target').Char.GetFirstNamePossessive]#!\n\n#color:{0.0,0.0,0.0,0.0} [GetScriptedGui('POD_fleshcrafting_trait_tooltip').BuildTooltip( GuiScope.AddScope('character',GetPlayer.MakeScope.Var('fleshcraft_target').Char.MakeScope).End )]#!"
+ 
+ POD_fleshcrafting_perk_name: "[Perk.GetNameNoTooltip( GetPlayer.MakeScope.Var('fleshcraft_target').Char.Self )]: @vicissitude_icon! #bold [EmptyScope.ScriptValue(Concatenate(Scope.GetFlagKey,'_complexity'))|0]#!"
+ POD_fleshcrafting_perk_complexity: "@vicissitude_icon! #bold [EmptyScope.ScriptValue(Concatenate(Scope.GetFlagKey,'_complexity'))|0]#!"
+ 
+ POD_fleshcrafting_total_complexity: "Complejidad total: @vicissitude_icon! [GetPlayer.MakeScope.ScriptValue('POD_fleshcrafting_current_complexity')|0]"
+ # colores interpolados entre rojo -> verde a medida que aumenta la probabilidad de éxito
+ POD_fleshcrafting_success_chance_tt: "Probabilidad de éxito: #color:{[Lerp_CFixedPoint( '(CFixedPoint)1.0', '(CFixedPoint)0.2', GetPlayer.MakeScope.ScriptValue('POD_fleshcrafting_success_chance_decimal') )],[Lerp_CFixedPoint( '(CFixedPoint)0.2', '(CFixedPoint)0.7', GetPlayer.MakeScope.ScriptValue('POD_fleshcrafting_success_chance_decimal') )],0.2} [GetPlayer.MakeScope.ScriptValue('POD_fleshcrafting_success_chance')|0]% #!"
+ 
+ POD_fleshcrafting_success: "En caso de éxito"
+ POD_fleshcrafting_failure: "En caso de fracaso"
+ POD_fleshcrafting_success_message: "Moldeado de carne exitoso"
+ POD_fleshcrafting_failure_message: "Fracaso en el moldeado de carne"
+ POD_fleshcrafting_torture_consequences: "@warning_icon!#X Dado que [TARGET_CHARACTER.GetFirstName] no es tu [ghoul|E], considerará esto como [torture|E]#!"
+ 
+ POD_fleshcrafting_confirm: "Moldear carne"
+ 
+ POD_fleshcrafting_need_to_select_perk: "Necesitas modificar al menos una parte del cuerpo"
+ 
+ POD_fleshcraft_trait_tt_header: "#bold;clickable;glow_color:{0.0,0.0,0.0,1.0} [Localize(SCOPE.GetFlagName('saved_tooltip'))]:#!"
+ POD_fleshcraft_trait_tt_no_perks: "#weak [character.GetFirstNameNoTooltip] no tiene actualmente modificaciones de [fleshcrafting|E]#!"

@@ -1,14 +1,14 @@
 ﻿l_english:
  POD_mummy_resurrection.1.t: "Truly Immortal?"
- POD_mummy_resurrection.1.desc: "When they die, Mummies go into a lengthy (and unpleasant) process where their soul is thrown into a spiritual realm named the [UmbraGlossary('pod_realm_tempest')]. There, They slowly return to [UmbraGlossary('earth')]. Additionally, some types of $POD_splat_mummy_plural$ also will be judged.\nShemsu-heru Mummies go to Amenti, the realm of the Egyptian dead to meet with Anubis and the judges of Ma'at while Cabiri Mummies go to Hades where they have to fend on their own in a more hostile environment."
+ POD_mummy_resurrection.1.desc: "When they die, Mummies go into a lengthy (and unpleasant) process where their soul is thrown into a spiritual realm named the [UmbraGlossary('tempest')]. There, They slowly return to [UmbraGlossary('earth')]. Additionally, some types of $POD_splat_mummy_plural$ also will be judged.\nShemsu-heru Mummies go to Amenti, the realm of the Egyptian dead to meet with Anubis and the judges of Ma'at while Cabiri Mummies go to Hades where they have to fend on their own in a more hostile environment."
  POD_mummy_resurrection.1.a: "Judge me"
  POD_mummy_resurrection.1.a.tt: "After death, you will be judged based on your integrity."
  POD_mummy_resurrection.1.b: "I have lost something important..."
- POD_mummy_resurrection.1.b.tt: "Due to your shaky foundation, you lost part of yourself in the [UmbraGlossary('pod_realm_tempest')]"
+ POD_mummy_resurrection.1.b.tt: "Due to your shaky foundation, you lost part of yourself in the [UmbraGlossary('tempest')]"
  POD_mummy_resurrection.1.c: "Master, I have failed."
- POD_mummy_resurrection.1.c.tt: "Apophis isn't known for his leniency for failures..."
+ POD_mummy_resurrection.1.c.tt: "$glossary_wyrm_apophis$ isn't known for his leniency for failures..."
  POD_mummy_resurrection.1.d: "I will be back"
- POD_mummy_resurrection.1.d.tt: "Due to your strong foundation, you managed to survive in the [UmbraGlossary('pod_realm_tempest')] without losing anything"
+ POD_mummy_resurrection.1.d.tt: "Due to your strong foundation, you managed to survive in the [UmbraGlossary('tempest')] without losing anything"
 
  POD_mummy_resurrection.2.t: "Scales of Ma'at"
  POD_mummy_resurrection.2.desc: "You have been killed, now you find yourself in the [UmbraGlossaryLocalized('shadowlands','Underworld')], and shall pass a judgment to prove you are worth resurrecting.\nIt starts with waiting for Anubis to locate you, which can be a long and stressful process, before being brought before the judges of Ma'at that will assess whether you worked diligently to further the cause of balance in your last life."
@@ -22,7 +22,9 @@
  podmummy.1.homelandandtomb: "[POD_homeland|E] And Tomb"
  podmummy.1.homeland: "[POD_homeland|E]:"
  podmummy.1.tomb: "Due to your tomb:"
-
+ POD_not_in_homelands_tt: "Your are not in your [POD_homeland|E] and thus didn't gain Memory from it."
+ POD_no_tomb_memory_tt: "\nYour tomb didn't provide any Memory."
+ 
  podmummy.1000.t: "Tomb Raiders!"
  podmummy.1000.desc: "Your tomb holds a large number of sentimental possessions of your past lives... which are seen as priceless treasures to the uncouth modern eye. Tomb raiding has been a tradition as far as the tombs themselves existed and a bane to Mummies' existence, often finding themselves missing key mementos when awakening for a new cycle.\nAs such, they have developed cults and traps to protect what is rightfully theirs from the greedy but sometimes even the most carefully built defenses can be broken by sheer luck by these pesky adventurers."
  podmummy.1000.a: "Who dares disturb my sleep?!"

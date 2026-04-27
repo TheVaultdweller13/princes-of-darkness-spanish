@@ -1,0 +1,49 @@
+﻿l_spanish:
+ demon_arts_lifestyle_name: "Artes Demoníacas"
+ demon_arts_lifestyle_desc: "Las Artes Demoníacas son expresiones innatas, casi instintivas, de la bestia interior del [Glossary('Kuei-Jin’s','game_concept_kuei_jin_desc')], el P'o. Son fáciles de aprender, no cuestan esfuerzo ni Chi, y son ilimitadas en términos de maestría potencial, aunque su poder no está exento de consecuencias."
+ monthly_demon_arts_lifestyle_xp_gain_mult: "[experience|E] mensual de [lifestyle|E] de Artes Demoníacas"
+ monthly_demon_arts_lifestyle_xp_gain_add: "[experience|E] mensual de [lifestyle|E] de Artes Demoníacas"
+ 
+ demon_arts_focus: "Enfoque en Artes Demoníacas"
+ demon_arts_focus_modifier: "[GetFocus('demon_arts_focus').GetName]"
+ demon_arts_focus_desc: "Desatando tu P'o."
+ demon_arts_focus_effect_desc: "Centrarse en las Artes Demoníacas otorga:"
+ 
+ devil_fist_visible: "Puño del Diablo"
+ black_wind_visible: "Viento Negro"
+ iron_mountain_visible: "Montaña de Hierro"
+ demon_regalia_visible: "Atuendo Demoníaco"
+ 
+ DEMON_ARTS_STACKING_EFFECT: "#clickable Esta ventaja se puede comprar #V 9#! veces en total#! #weak (quedan [Subtract_CFixedPoint('(CFixedPoint)9','(CFixedPoint)$VALUE|q$')|0])#!"
+ 
+ demon_arts_infernal_might_perk_name: "Poder Infernal #low (Coste: [ROOT.Char.MakeScope.ScriptValue('demon_arts_infernal_might_perk_cost')])#!"
+ demon_arts_devil_fist_perk_name: "Puño del Diablo #low ([ROOT.Char.MakeScope.ScriptValue('demon_arts_devil_fist_modifier_stacks')]/9)#!"
+ 
+ DEMON_ARTS_INFERNAL_MIGHT_PERK_EFFECT: "Como [character_interaction|E], otórgate [GetModifier('demon_arts_infernal_might_modifier').GetNameWithTooltip] durante 10 años a cambio de #V 10#! de [trait_level_track_xp|E] de [Glossary('Dharma','podgloss.dharma')].\n#flavor La culminación del Arte del Puño del Diablo: tu cuerpo se convierte en un arma alimentada por tu dolor y sufrimiento, asegurando que nada se interponga ante ti.#!"
+ DEMON_ARTS_INFERNAL_MIGHT_PERK_COST_EFFECT: "#clickable Esta ventaja cuesta [CHARACTER.MakeScope.ScriptValue('demon_arts_infernal_might_perk_cost')|V0] puntos de ventaja. Cada #high [GetPerk('demon_arts_devil_fist_perk').GetName(CHARACTER.Self)]#! reducirá este coste en #V 1#!#!"
+ DEMON_ARTS_INFERNAL_MIGHT_PERK_COST_WARNING_EFFECT: "#X @warning_icon! ¡No tienes [CHARACTER.MakeScope.ScriptValue('demon_arts_infernal_might_perk_cost')] puntos de [perk|E]!#!" 
+ DEMON_ARTS_DEVIL_FIST_PERK_EFFECT: "#flavor Tus músculos se hinchan; tus nudillos se vuelven como piedras. Aplastarás a tus enemigos hasta convertirlos en una niebla roja, quebrando a los débiles contra tu rodilla como una rama seca.#!"
+ 
+ demon_arts_infernal_speed_perk_name: "Velocidad Infernal #low (Coste: [ROOT.Char.MakeScope.ScriptValue('demon_arts_infernal_speed_perk_cost')])#!"
+ demon_arts_black_wind_perk_name: "Viento Negro #low ([ROOT.Char.MakeScope.ScriptValue('demon_arts_black_wind_modifier_stacks')]/9)#!"
+ 
+ DEMON_ARTS_INFERNAL_SPEED_PERK_EFFECT: "Como [character_interaction|E], otórgate [GetModifier('demon_arts_infernal_speed_modifier').GetNameWithTooltip] durante 10 años a cambio de #V 10#! de [trait_level_track_xp|E] de [Glossary('Dharma','podgloss.dharma')].\n#flavor La culminación del Arte del Viento Negro: tu velocidad supera ahora la del sonido, asegurando que nadie pueda huir de ti.#!"
+ DEMON_ARTS_INFERNAL_SPEED_PERK_COST_EFFECT: "#clickable Esta ventaja cuesta [CHARACTER.MakeScope.ScriptValue('demon_arts_infernal_speed_perk_cost')|V0] puntos de ventaja. Cada #high [GetPerk('demon_arts_black_wind_perk').GetName(CHARACTER.Self)]#! reducirá este coste en #V 1#!#!"
+ DEMON_ARTS_INFERNAL_SPEED_PERK_COST_WARNING_EFFECT: "#X @warning_icon! ¡No tienes [CHARACTER.MakeScope.ScriptValue('demon_arts_infernal_speed_perk_cost')] puntos de [perk|E]!#!" 
+ DEMON_ARTS_BLACK_WIND_PERK_EFFECT: "#flavor Un borrón, luego un géiser de sangre; te mueves como un cable roto, una víbora asesina. En tu danza de violencia, no se desperdicia ni un solo movimiento.#!"
+ 
+ demon_arts_infernal_fortitude_perk_name: "Fortaleza Infernal #low (Coste: [ROOT.Char.MakeScope.ScriptValue('demon_arts_infernal_fortitude_perk_cost')])#!"
+ demon_arts_iron_mountain_perk_name: "Montaña de Hierro #low ([ROOT.Char.MakeScope.ScriptValue('demon_arts_iron_mountain_modifier_stacks')]/9)#!"
+ 
+ DEMON_ARTS_INFERNAL_FORTITUDE_PERK_EFFECT: "Como [character_interaction|E], otórgate [GetModifier('demon_arts_infernal_fortitude_modifier').GetNameWithTooltip] durante 5 años a cambio de #V 10#! de [trait_level_track_xp|E] de [Glossary('Dharma','podgloss.dharma')].\n#flavor La culminación del Arte de la Montaña de Hierro: tu carne se convierte en un muro de hierro impenetrable, asegurando que nada pueda atravesarte.#!"
+ DEMON_ARTS_INFERNAL_FORTITUDE_PERK_COST_EFFECT: "#clickable Esta ventaja cuesta [CHARACTER.MakeScope.ScriptValue('demon_arts_infernal_fortitude_perk_cost')|V0] puntos de ventaja. Cada #high [GetPerk('demon_arts_iron_mountain_perk').GetName(CHARACTER.Self)]#! reducirá este coste en #V 1#!#!"
+ DEMON_ARTS_INFERNAL_FORTITUDE_PERK_COST_WARNING_EFFECT: "#X @warning_icon! ¡No tienes [CHARACTER.MakeScope.ScriptValue('demon_arts_infernal_fortitude_perk_cost')] puntos de [perk|E]!#!" 
+ DEMON_ARTS_IRON_MOUNTAIN_PERK_EFFECT: "#flavor Soportas la llama, el puño, la espada, con una piel tan implacable como el acero. Cuando la lluvia de ataques finalmente chisporrotea y termina, sonríes; ahora es tu turno.#!"
+ 
+ demon_arts_infernal_glory_perk_name: "Gloria Infernal #low (Coste: [ROOT.Char.MakeScope.ScriptValue('demon_arts_infernal_glory_perk_cost')])#!"
+ demon_arts_demon_regalia_perk_name: "Atuendo Demoníaco #low ([ROOT.Char.MakeScope.ScriptValue('demon_arts_demon_regalia_modifier_stacks')]/9)#!"
+ 
+ DEMON_ARTS_INFERNAL_GLORY_PERK_EFFECT: "Como [character_interaction|E], otórgate [GetModifier('demon_arts_infernal_glory_modifier').GetNameWithTooltip] durante 5 años a cambio de #V 10#! de [trait_level_track_xp|E] de [Glossary('Dharma','podgloss.dharma')].\n#flavor La culminación del Arte del Atuendo Demoníaco: te conviertes en un verdadero descendiente de los Diez Mil Guerreros, asegurando que tu mero contacto cause dolor.#!"
+ DEMON_ARTS_INFERNAL_GLORY_PERK_COST_EFFECT: "#clickable Esta ventaja cuesta [CHARACTER.MakeScope.ScriptValue('demon_arts_infernal_glory_perk_cost')|V0] puntos de ventaja. Cada #high [GetPerk('demon_arts_demon_regalia_perk').GetName(CHARACTER.Self)]#! reducirá este coste en #V 1#!#!"
+ DEMON_ARTS_INFERNAL_GLORY_PERK_COST_WARNING_EFFECT: "#X @warning_icon! ¡No tienes [CHARACTER.MakeScope.ScriptValue('demon_arts_infernal_glory_perk_cost')] puntos de [perk|E]!#!" 
+ DEMON_ARTS_DEMON_REGALIA_PERK_EFFECT: "Como [character_interaction|E], cambia de forma a cualquier atuendo demoníaco que hayas recolectado.\nActiva un evento para elegir un nuevo atuendo demoníaco.\n#flavor Horrible pero hermoso; mortal pero glorioso. Malvado, lleva tu corona y tu espada con orgullo.#!"

@@ -1,0 +1,70 @@
+﻿l_spanish:
+ 
+ game_concept_theurgy_lifestyle: "Teúrgia"
+ game_concept_theurgy_lifestyle_desc: "La Teúrgia es similar a la Magia de Senda, pero las supersticiones y sacrificios que potencian este [Glossary('Numinum','game_concept_numina_desc')] seguirán los modismos de la Iglesia Cristiana."
+ 
+ numina_via_geniorum_visible: "Via Geniorum"
+ numina_via_ignis_visible: "Via Ignis"
+ numina_via_medicamenti_visible: "Via Medicamenti"
+ numina_via_necromantiae_visible: "Via Necromantiae"
+ numina_via_oraculi_visible: "Via Oraculi"
+
+ numina_via_geniorum_1_perk_name: "$numina_1_name$ de Geniorum"
+ numina_via_geniorum_2_perk_name: "$numina_2_name$ de Geniorum"
+ numina_via_geniorum_3_perk_name: "$numina_3_name$ de Geniorum"
+ numina_via_geniorum_4_perk_name: "$numina_4_name$ de Geniorum"
+ numina_via_geniorum_5_perk_name: "$numina_5_name$ de Geniorum"
+
+ numina_via_ignis_1_perk_name: "$numina_1_name$ de Ignis"
+ numina_via_ignis_2_perk_name: "$numina_2_name$ de Ignis"
+ numina_via_ignis_3_perk_name: "$numina_3_name$ de Ignis"
+ numina_via_ignis_4_perk_name: "$numina_4_name$ de Ignis"
+ numina_via_ignis_5_perk_name: "$numina_5_name$ de Ignis"
+
+ numina_via_medicamenti_1_perk_name: "$numina_1_name$ de Medicamenti"
+ numina_via_medicamenti_2_perk_name: "$numina_2_name$ de Medicamenti"
+ numina_via_medicamenti_3_perk_name: "$numina_3_name$ de Medicamenti"
+ numina_via_medicamenti_4_perk_name: "$numina_4_name$ de Medicamenti"
+ numina_via_medicamenti_5_perk_name: "$numina_5_name$ de Medicamenti"
+
+ numina_via_necromantiae_1_perk_name: "$numina_1_name$ de Necromantiae"
+ numina_via_necromantiae_2_perk_name: "$numina_2_name$ de Necromantiae"
+ numina_via_necromantiae_3_perk_name: "$numina_3_name$ de Necromantiae"
+ numina_via_necromantiae_4_perk_name: "$numina_4_name$ de Necromantiae"
+ numina_via_necromantiae_5_perk_name: "$numina_5_name$ de Necromantiae"
+
+ numina_via_oraculi_1_perk_name: "$numina_1_name$ de Oraculi"
+ numina_via_oraculi_2_perk_name: "$numina_2_name$ de Oraculi"
+ numina_via_oraculi_3_perk_name: "$numina_3_name$ de Oraculi"
+ numina_via_oraculi_4_perk_name: "$numina_4_name$ de Oraculi"
+ numina_via_oraculi_5_perk_name: "$numina_5_name$ de Oraculi"
+
+ NUMINA_VIA_GENIORUM_1_PERK_EFFECT: "Desbloquea la [decision|E] #V $seek_aid_of_the_spirits_decision$#!.\nTe permite interactuar con seres de la [umbra|E] cuando estás en el mundo material.\n#flavor El Teúrgo no escudriña el [spirit_world|E] tanto como ordena a los seres supernales cercanos que se revelen.#!"
+ NUMINA_VIA_GENIORUM_2_PERK_EFFECT: "Mejora los resultados de la [decision|E] #V $seek_aid_of_the_spirits_decision$#!.\nDesbloquea [men_at_arms|E] de Bygone Menores.\n#flavor El Teúrgo puede dibujar sigilos protectores en objetos de mano o en un pequeño círculo a su alrededor.#!"
+ NUMINA_VIA_GENIORUM_3_PERK_EFFECT: "Mejora los resultados de la [decision|E] #V $seek_aid_of_the_spirits_decision$#!.\nDesbloquea [men_at_arms|E] Demoníacos.\n#flavor El Teúrgo puede enviar a un espíritu de vuelta a su reino nativo.#!"
+ NUMINA_VIA_GENIORUM_4_PERK_EFFECT: "Mejora los resultados de la [decision|E] #V $seek_aid_of_the_spirits_decision$#!.\nDesbloquea [men_at_arms|E] de Bygone Mayores.\n#flavor El Teúrgo ahora puede convocar entidades espirituales.#!"
+ NUMINA_VIA_GENIORUM_5_PERK_EFFECT: "Mejora los resultados de la [decision|E] #V $seek_aid_of_the_spirits_decision$#!.\nPuede usar el [journey|E] 'Aprender nombre verdadero' en $POD_splat_wraith_plural$, $POD_splat_fae_plural$ y $POD_splat_demon_plural$.\nPuede [POD_banish|E] a $POD_splat_wraith_plural$, $POD_splat_fae_plural$ o $POD_splat_demon_plural$ a sus reinos nativos de la [umbra|E].\n#flavor El Teúrgo ahora puede obligar a un espíritu a la servidumbre.#!"
+
+ NUMINA_VIA_IGNIS_1_PERK_EFFECT: "Da [GetModifier('numina_via_ignis_1_modifier').GetNameWithTooltip] a los [knights|E] enemigos cuando actúas como [commander|E] durante la [combat_phase|E], o a tu oponente durante los [single_combat_duel_plural|E].\n#flavor El Teúrgo puede convocar la llama de una vela de Fuego Sagrado.#!"
+ NUMINA_VIA_IGNIS_2_PERK_EFFECT: "Mejora el modificador de [GetPerk('numina_via_ignis_1_perk').GetName(GetPlayer)] a [GetModifier('numina_via_ignis_2_modifier').GetNameWithTooltip].\n#flavor El Teúrgo puede convocar un pequeño Fuego Sagrado.#!"
+ NUMINA_VIA_IGNIS_3_PERK_EFFECT: "Mejora el modificador de [GetPerk('numina_via_ignis_1_perk').GetName(GetPlayer)] a [GetModifier('numina_via_ignis_3_modifier').GetNameWithTooltip].\n#flavor El Teúrgo puede convocar una fogata de Fuego Sagrado.#!"
+ NUMINA_VIA_IGNIS_4_PERK_EFFECT: "Mejora el modificador de [GetPerk('numina_via_ignis_1_perk').GetName(GetPlayer)] a [GetModifier('numina_via_ignis_4_modifier').GetNameWithTooltip].\n#flavor El Teúrgo puede convocar una gran hoguera de Fuego Sagrado.#!"
+ NUMINA_VIA_IGNIS_5_PERK_EFFECT: "Al inicio de la batalla cuando actúas como [commander|E]: Inflige [GetPlayer.MakeScope.ScriptValue('POD_numina_via_ignis_5_damage')] de [POD_aggravated_damage_with_box|E] a todos los [splats|E] que temen al sol.\n#flavor El Teúrgo puede convocar una conflagración de Fuego Sagrado.#!"
+
+ NUMINA_VIA_MEDICAMENTI_1_PERK_EFFECT: "Como [character_interaction|E], da a tu objetivo [GetModifier('numina_via_medicamenti_1_modifier').GetNameWithTooltip].\n#flavor Puedes calmar dolores menores.#!"
+ NUMINA_VIA_MEDICAMENTI_2_PERK_EFFECT: "Mejora la [character_interaction|E] de [GetPerk('numina_via_medicamenti_1_perk').GetName(GetPlayer)] dando también [GetModifier('numina_via_medicamenti_2_modifier').GetNameWithTooltip].\n#flavor Los esguinces y las infecciones menores se curan más rápido bajo tu cuidado.#!"
+ NUMINA_VIA_MEDICAMENTI_3_PERK_EFFECT: "Mejora la [character_interaction|E] de [GetPerk('numina_via_medicamenti_1_perk').GetName(GetPlayer)] curando también [GetPlayer.MakeScope.ScriptValue('POD_numina_via_medicamenti_3_heal')] de [POD_superficial_damage_with_box|E]\n#flavor Todas las heridas hasta Tullido se curan el doble de rápido de lo normal, sin riesgo de infección.#!"
+ NUMINA_VIA_MEDICAMENTI_4_PERK_EFFECT: "Mejora la [character_interaction|E] de [GetPerk('numina_via_medicamenti_3_perk').GetName(GetPlayer)] aumentando la cantidad curada a [GetPlayer.MakeScope.ScriptValue('POD_numina_via_medicamenti_4_heal')].\nMejora la [character_interaction|E] de [GetPerk('numina_via_medicamenti_1_perk').GetName(GetPlayer)] curando también cualquier enfermedad menor.\n#flavor Puedes curar enfermedades crónicas como el asma o la artritis, pero requiere tiempo y esfuerzo.#!"
+ NUMINA_VIA_MEDICAMENTI_5_PERK_EFFECT: "Mejora la [character_interaction|E] de [GetPerk('numina_via_medicamenti_1_perk').GetName(GetPlayer)] convirtiendo también [GetPlayer.MakeScope.ScriptValue('POD_numina_via_medicamenti_5_convert')] de [POD_aggravated_damage_with_box|E] a [POD_superficial_damage_with_box|E].\nMejora la [character_interaction|E] de [GetPerk('numina_via_medicamenti_1_perk').GetName(GetPlayer)] curando también cualquier enfermedad no sobrenatural.\n#flavor Puedes curar incluso condiciones mortales, pero te agota mucho y requiere semanas de tratamiento.#!"
+
+ NUMINA_VIA_NECROMANTIAE_1_PERK_EFFECT: "$POD_can_summon_on_death_trigger_loca$\n$POD_can_summon_wraith_trigger_loca$\n#flavor El Teúrgo puede ordenar a un cadáver recién fallecido que despierte.#!"
+ NUMINA_VIA_NECROMANTIAE_2_PERK_EFFECT: "$POD_can_bind_wraith_trigger_loca$\n#flavor El Teúrgo puede proteger un área de la intrusión fantasmal.#!"
+ NUMINA_VIA_NECROMANTIAE_3_PERK_EFFECT: "$POD_can_weaken_fetter_trigger_loca$\n#flavor El Teúrgo puede contactar con los muertos.#!"
+ NUMINA_VIA_NECROMANTIAE_4_PERK_EFFECT: "Puedes encarcelar, torturar, ejecutar o herir físicamente a los espíritus durante los [single_combat_duel_plural|E].\n$POD_can_command_wraith_trigger_loca$\n#flavor El Teúrgo puede expulsar a un fantasma que acecha.#!"
+ NUMINA_VIA_NECROMANTIAE_5_PERK_EFFECT: "Desbloquea [GetMaA('hidden').GetName], [GetMaA('walker').GetName], [GetMaA('shambler').GetName] y [GetMaA('skeletons').GetName] como [men_at_arms|E].\n#flavor El Teúrgo ahora puede instar a un cadáver a levantarse.#!"
+
+ NUMINA_VIA_ORACULI_1_PERK_EFFECT: "#flavor El Teúrgo interpreta señales o advertencias sobre el estado de sus circunstancias inmediatas.#!"
+ NUMINA_VIA_ORACULI_2_PERK_EFFECT: "#flavor El Teúrgo elimina posibles resultados negativos comparándolos de antemano.#!"
+ NUMINA_VIA_ORACULI_3_PERK_EFFECT: "#flavor El Teúrgo puede sentir patrones de azar que le permiten obtener información a corto plazo tras decisiones específicas.#!"
+ NUMINA_VIA_ORACULI_4_PERK_EFFECT: "#flavor El Teúrgo es capaz de adivinar eventos específicos en el futuro.#!"
+ NUMINA_VIA_ORACULI_5_PERK_EFFECT: "Recibirás una notificación si alguien intenta asesinar a tus amigos o familiares.\n#flavor El Teúrgo gana la capacidad de sentir detalles claros y concretos sobre el futuro y la capacidad de predecir eventos específicos con una certeza fiable.#!"

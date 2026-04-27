@@ -1,0 +1,124 @@
+﻿l_spanish:
+
+
+ recruit_bane_phantasmi_tt: "Puede reclutar [GetMaA('phantasmi').GetName] como [men_at_arms|E]"
+ recruit_bane_bitter_rages_tt: "Puede reclutar [GetMaA('bitter_rages').GetName] como [men_at_arms|E]"
+ recruit_bane_meat_puppets_tt: "Puede reclutar [GetMaA('meat_puppets').GetName] como [men_at_arms|E]"
+ recruit_bane_shade_spiders_tt: "Puede reclutar [GetMaA('shade_spiders').GetName] como [men_at_arms|E]"
+ recruit_bane_gray_masses_tt: "Puede reclutar [GetMaA('gray_masses').GetName] como [men_at_arms|E]"
+ recruit_bane_thinbones_tt: "Puede reclutar [GetMaA('thinbones').GetName] como [men_at_arms|E]"
+ recruit_bane_glutton_worms_tt: "Puede reclutar [GetMaA('glutton_worms').GetName] como [men_at_arms|E]"
+ recruit_bane_liderci_tt: "Puede reclutar [GetMaA('liderci').GetName] como [men_at_arms|E]"
+
+
+ POD_malfeas_give_wyrm_fetish_common: "Ganarás un [fetish|E] del $glossary_wyrm$ #V común#!"
+ POD_malfeas_give_wyrm_fetish_masterwork: "Ganarás un [fetish|E] del $glossary_wyrm$ de #color_dark_green obra maestra#!"
+ POD_malfeas_give_wyrm_fetish_famed: "Ganarás un [fetish|E] del $glossary_wyrm$ #FAMEDBLUE famoso#!"
+ POD_malfeas_give_wyrm_fetish_illustrious: "Ganarás un [fetish|E] del $glossary_wyrm$ #ILLUSTRIOUSPURPLE ilustre#!"
+
+ POD_spawn_bane_lieutenant_effect_tooltip: "Aparecerá un poderoso [GetTrait('spirit').GetName(GetNullCharacter)] de Perdición"
+
+ balefire_health_modifier: "Fuego de Maleficio"
+ wyrm_new_servant_modifier: "Nuevo sirviente del Wyrm"
+ wyrm_new_physical_taint_modifier: "Cuerpo asaltado"
+ wyrm_new_physical_taint_modifier_desc: "Tambaleándose en el borde, frente al abismo..."
+ wyrm_new_mental_taint_modifier: "Mente devastada"
+ wyrm_new_mental_taint_modifier_desc: "La mente no puede esperar resistir tal asalto."
+ wyrm_thundering_throat_modifier: "[battle_modifier|E]: Muerte atronadora"
+ wyrm_splintered_soul_modifier: "Alma drenada"
+ wyrm_room_corruption_debuff_modifier: "Corrupción persistente"
+ wyrm_room_corruption_buff_modifier: "Poder impío"
+ wyrm_bane_lieutenant_modifier: "Teniente de Perdición"
+ wyrm_bane_lieutenant_modifier_desc: "Esta Perdición ha sido un sirviente del $glossary_wyrm$ durante mucho tiempo."
+ wyrm_amnesia_modifier: "Amnesia"
+ wyrm_triat_knowledge_modifier: "Verdadera naturaleza de la $glossary_triat$"
+ wyrm_triat_knowledge_modifier_desc: "El $glossary_wyrm$ te lo contó todo. Cree en el Wyrm. El Wyrm lo sabe todo."
+
+ wyrm_beast_of_war_dynasty_modifier: "Sirvientes de la [Glossary('Guerra','glossary_wyrm_calamity_tt')]"
+ wyrm_eater_of_souls_dynasty_modifier: "Sirvientes del [Glossary('Consumo','glossary_wyrm_consumption_tt')]"
+ wyrm_defiler_wyrm_dynasty_modifier: "Sirvientes del [Glossary('Corruptor','glossary_wyrm_corruption_tt')]"
+ wyrm_servants_hydra_dynasty_modifier: "Sirvientes del $glossary_wyrm_triatic$"
+ wyrm_hydra_warmaster_modifier: "Señor de la guerra de la [Glossary('Hidra','glossary_wyrm_tt')]"
+
+
+
+ POD_maniacal_mind_opinion: "Susurros apremiantes"
+
+
+ POD_wyrm_taint_increasing: "[wyrm_taint|E] creciente"
+ wyrm_taint_value_sins: "[sins|E]"
+ wyrm_taint_value_piety: "[piety_level|E]"
+ wyrm_taint_value_balefire: "[balefire|E]"
+
+ POD_wyrm.1.t: "Comulgando con el Rubí"
+ POD_wyrm.1.desc: "El zumbido del Rubí del Alma aumenta a medida que viertes energía en él. Pronto la voz del Danzante de la Espiral Negra invade tu mente, preguntando qué solicitas a cambio de toda esa energía. Aunque estás seguro de que el espíritu aprecia la energía, suena irritado por su situación actual."
+ POD_wyrm.1.option.a: "¡Dame poder!"
+ POD_wyrm.1.option.b: "Enséñame tu [ancestral_tongue|E]."
+ POD_wyrm.1.option.c: "¡Bendíceme con el poder del $glossary_wyrm$!"
+ POD_wyrm.1.option.d: "Cuéntame más sobre este rubí."
+ POD_wyrm.1.option.e: "Nada por ahora."
+
+ POD_wyrm.101.t: "Esclavizado por el Wyrm"
+ POD_wyrm.101.desc: "Desde el momento en que pudiste entender el mundo, se te enseñó sobre la maldad que es el $glossary_wyrm$. Cada día se te decía que lucharas contra sus esbirros, que tuvieras cuidado con sus agentes y que resistieras su influencia.\nParece que has fracasado espectacularmente.\n\n#I Esos necios estaban equivocados. El $glossary_wyrm$ es la verdad, y tus ojos finalmente se han abierto.#!"
+ POD_wyrm.101.option.a: "Sirvo al Oscuro..."
+
+
+ temple_obscura_rooms_intro: "El Templo Obscura es un templo colosal hecho de mármol oscuro con vetas verdes. El exterior es una mezcla extraña y discordante de símbolos deformados y aberrantes junto con tallas que simbolizan el dolor y la degradación. Dentro del templo, la luz proviene de pequeños fuegos de maleficio montados en candelabros vivientes hechos con los brazos cortados de prisioneros, y del tenue resplandor verde de las vidrieras del techo. El templo en sí consta de nueve salas, dispuestas una tras otra. Cada sala contiene estatuas y murales pertenecientes a los tormentos y pruebas que aguardan a quien se atreva a entrar. Algunos regresan algo lúcidos; muchos mayoritariamente funcionales. Ninguno regresa cuerdo."
+
+ POD_wyrm.501.t: "Sala de los fracasos personales"
+ POD_wyrm.501.desc: "$temple_obscura_rooms_intro$\n\nLa primera sala del templo se encuentra ante ti. Visiones de tu pasado inundan tu mente nada más entrar. Recuerdas cada fracaso, cada mala decisión y cada consecuencia de tus acciones pasadas. Las raíces de la depresión empiezan a afianzarse, pero debes resistir."
+ POD_wyrm.501.option.a: "Recuerdos que intento olvidar..."
+ POD_wyrm.501.option.b: "La debilidad debe ser purgada."
+
+ POD_wyrm.502.t: "Sala de la rabia"
+ POD_wyrm.502.desc: "$temple_obscura_rooms_intro$\n\nAl entrar en la segunda sala, te sientes invadido por la rabia. Si es la tuya propia o los susurros del $glossary_wyrm$, no sabrías decirlo. No entiendes por qué estás aquí, ni por qué estás enfadado, solo que debes destruir."
+ POD_wyrm.502.option.a: "¡Debo romper algo!"
+ POD_wyrm.502.option.list1: "Golpeas uno de los pilares con tus manos"
+ POD_wyrm.502.option.list2: "Atacas un brasero de [balefire|E]"
+
+ POD_wyrm.503.t: "Sala de la angustia"
+ POD_wyrm.503.desc: "$temple_obscura_rooms_intro$\n\nEl dolor te recorre al entrar en la tercera sala. Mientras tu cuerpo soporta el asalto, tu mente se inunda una vez más con visiones de tus fracasos pasados. Solo que esta vez las visiones te revelan que el $glossary_wyrm$ es tu salvación, solo a través de él puedes lograr la victoria."
+ POD_wyrm.503.option.a: "Estas visiones me dan perspicacia."
+ POD_wyrm.503.option.b: "Me comprometo con el gran $glossary_wyrm$."
+ POD_wyrm.503.option.c: "¡El $glossary_wyrm$ me ha bendecido!"
+
+ POD_wyrm.504.t: "Sala de la astucia"
+ POD_wyrm.504.desc: "$temple_obscura_rooms_intro$\n\nEncuentras a una Perdición esperándote en la cuarta sala. Esta Perdición es particularmente astuta y debes derrotarla en una batalla de ingenio antes de que te permita continuar."
+ POD_wyrm.504.option.a: "Mi ingenio contra el tuyo."
+ POD_wyrm.504.option.b: "La verdad es una mentira."
+ POD_wyrm.504.option.list1: "Victoria aplastante"
+ POD_wyrm.504.option.list2: "Apenas victorioso"
+
+ POD_wyrm.505.t: "Sala de la batalla"
+ POD_wyrm.505.desc: "$temple_obscura_rooms_intro$\n\nLos sonidos de la batalla te llegan antes de que logres entrar en la quinta sala. Una legión de Perdiciones, Fomori y otros sirvientes del $glossary_wyrm$ se encuentran ante ti. Está claro lo que debes hacer."
+ POD_wyrm.505.option.a: "¡A la batalla!"
+
+ POD_wyrm.506.t: "Sala de la corrupción"
+ POD_wyrm.506.desc: "$temple_obscura_rooms_intro$\n\nDesde el momento en que entras en la sexta sala, una ola de corrupción te invade. Tus sentidos son bombardeados con pura malicia, tu cuerpo se llena de energía oscura. El $glossary_wyrm$ te otorga su don, ahora solo necesitas sobrevivir."
+ POD_wyrm.506.option.a: "Poder abrumador..."
+
+ POD_wyrm.507.t: "Sala de la lealtad"
+ POD_wyrm.507.desc: "$temple_obscura_rooms_intro$\n\nLa séptima sala no contiene pruebas elaboradas, acertijos ni enemigos. Solo una placa se encuentra en el medio.\nDemuestra tu lealtad al $glossary_wyrm$ mediante un gran sacrificio.\nAhora, ¿qué ofrecerás?"
+ POD_wyrm.507.option.a: "La vida de [sacrifice.GetFirstName]."
+ POD_wyrm.507.option.b: "Mi propia carne."
+ POD_wyrm.507.option.c: "Mi riqueza material."
+ POD_wyrm.507.option.d: "Las vidas de mis súbditos."
+
+ POD_wyrm.508.t: "Sala de los acertijos"
+ POD_wyrm.508.desc: "$temple_obscura_rooms_intro$\n\nLa octava sala está envuelta en la oscuridad. No se puede ver ni oír nada en ella, ni siquiera tus propios pasos. El inquietante silencio solo se rompe por una voz que susurra preguntas en tu mente. Respondes a medida que se hacen más y más preguntas, y lentamente tu conciencia empieza a desvanecerse."
+ POD_wyrm.508.option.a: "Tantas preguntas interesantes..."
+ POD_wyrm.508.option.b: "¡Debo huir!"
+ POD_wyrm.508.tooltip: "@warning_icon!#X Tendrás que volver a intentar esta sala más tarde para progresar a la última sala.#!"
+
+ POD_wyrm.509.t: "Sala del misterio"
+ POD_wyrm.509.desc: "$temple_obscura_rooms_intro$\n\nPor fin, la sala final del templo se encuentra ante ti. Un imponente hombre lobo monta un corcel sombrío en el centro de la sala. Su armadura es de un diseño que parece desafiar la realidad, su espada y su montura inmoladas con los grandes fuegos de maleficio del $glossary_wyrm$. Pronuncia una sola frase antes de cargar contra ti.\n\"No estás preparado\"."
+ POD_wyrm.509.option.a: "Mi prueba final..."
+ POD_wyrm.509.option.b: "No estoy preparado. ¡Corre!"
+ POD_wyrm.509.tooltip: "#help El $glossary_wyrm$ se ríe de tu debilidad.#!\n@warning_icon!#X Tendrás que volver a intentar esta sala más tarde.#!"
+
+ POD_wyrm.510.t: "Danza del fuego de maleficio"
+ POD_wyrm.510.desc.a: "Después de una batalla que pareció durar días, logras finalmente abatir a la monstruosidad. Mientras su cuerpo se desmorona, su corcel se teletransporta a una corta distancia detrás del cadáver. Por un momento piensas que el caballo llameante va a vengar a su maestro. En su lugar, envuelve el cadáver en furiosos fuegos de maleficio y luego se acerca lentamente a ti.\nEste caballo aterrador rebosante del poder del $glossary_wyrm$ parece aceptarte como su nuevo maestro."
+ POD_wyrm.510.desc.b: "Tu oponente dijo la verdad, no estabas preparado. La mayoría de tus ataques fueron ignorados, algunos fallaron por completo. Sus ataques, por otro lado, fueron precisos, poderosos y de lo más devastadores. Tu única esperanza ahora es escapar.\nEl pecado no está en ser superado, sino en no reconocerlo."
+ POD_wyrm.510.option.a: "Ahora yo soy el maestro."
+ POD_wyrm.510.option.b: "No puedo morir aquí..."
+ POD_wyrm.510.tooltip: "@warning_icon!#X Tendrás que volver a intentar esta sala más tarde... si sobrevives.#!"

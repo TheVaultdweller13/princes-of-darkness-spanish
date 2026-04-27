@@ -1,0 +1,42 @@
+﻿l_spanish:
+
+
+ podgrandcity.01.t: "Pagando tu deuda"
+ podgrandcity.01.desc: "No es un secreto para los demás vampiros de París que has financiado la expansión de la Capilla Tremere. Tales actos en la sociedad vampírica nunca se hacen gratuitamente, y tus súbditos son muy conscientes de este hecho.\nLos Tremere se han presentado ante ti con múltiples regalos. En realidad, estos regalos pretenden ser un pago para saldar su deuda contigo. Para ellos es mejor ofrecer lo que tienen, antes que esperar a que tú exijas lo que no tienen."
+ podgrandcity.01.option.a: "Enséñame tus secretos"
+ podgrandcity.01.option.b: "Fomenta mis estudios"
+ podgrandcity.01.option.c: "Muéstrame el poder de la piedra"
+ podgrandcity.01.tooltip: "Aprende a crear tus propios sirvientes [GetTrait('gargoyle').GetName(GetNullCharacter)]\n\n@warning_icon! #N Seguirás necesitando [GetTrait('bloodsorceryadvanced').GetName(GetNullCharacter)]#!"
+
+
+ podgrandcity.02.t: "Enseñanzas de la Corte del Sueño"
+ podgrandcity.02.desc: "Gracias a tus esfuerzos, gran parte del templo ha sido reconstruido. Muchos setitas recorren ahora estos pasillos, susurrando, conspirando y glorificando a Set a su manera.\nSin embargo, por razones que no puedes explicar, muchos de los setitas que vienen aquí olvidan su propósito original y, en su lugar, intentan buscar formas placenteras de entretenerse. Quizás esto también sea una forma de adoración, una que ha empezado a interesarte."
+ podgrandcity.02.option.a: "Los placeres de la carne me liberarán."
+ podgrandcity.02.tooltip.a: "Tu futura fe ganará [GetDoctrine('tenet_carnal_exaltation').GetBaseName]."
+ podgrandcity.02.option.b: "¿Por qué existen estos si no es para la satisfacción personal?"
+ podgrandcity.02.tooltip.b: "Tu futura fe ganará [GetDoctrine('tenet_hedonistic').GetBaseName]."
+ podgrandcity.02.option.c: "¡Cuantos más, mejor!"
+ podgrandcity.02.tooltip.c: "Tu futura fe ganará [GetDoctrine('tenet_ritual_celebrations').GetBaseName]."
+
+ podgrandcity.03.t: "Enseñanzas de la Corte de Polvo y Huesos"
+ podgrandcity.03.desc: "Este templo tiene un nombre muy apropiado, pues ¿qué otra cosa queda sino polvo y huesos cuando se expone a la poderosa magia de sangre? Los muchos tomos que hay aquí hablan de Set, de sus logros y de sus poderes. Un tesoro de conocimiento se encuentra ante ti, solo tienes que tomarlo."
+ podgrandcity.03.option.a: "Set es el Rey."
+ podgrandcity.03.tooltip.a: "Tu futura fe ganará [GetDoctrine('tenet_ashen_faith').GetBaseName]."
+ podgrandcity.03.option.b: "Set es el Tifón."
+ podgrandcity.03.tooltip.b: "Tu futura fe ganará [GetDoctrine('tenet_sacred_shadows').GetBaseName]."
+ podgrandcity.03.option.c: "Set es el Triunfante."
+ podgrandcity.03.tooltip.c: "Tu futura fe ganará [GetDoctrine('tenet_pursuit_of_power').GetBaseName]."
+
+ podgrandcity.04.t: "Enseñanzas del Templo del Cocodrilo"
+ podgrandcity.04.desc: "Aquí yace Sobek, bendito hijo de Set. Se dice que Set convirtió a los Mokolé en una abominación usando poderosos rituales de sangre. Al ser tanto un matusalén como una abominación, Sobek es una de las criaturas más poderosas que existen. Ahora duerme aquí, el aspecto del Hambre misma. Hay fuerza, caos y carnicería en este hambre. Al adorar al Dios Cocodrilo, tal vez se pueda obtener esta fuerza."
+ podgrandcity.04.option.a: "El hambre es una lucha eterna."
+ podgrandcity.04.tooltip.a: "Tu futura fe ganará [GetDoctrine('tenet_struggle_submission').GetBaseName]."
+ podgrandcity.04.option.b: "El sacrificio ritual saciará la sed de sangre."
+ podgrandcity.04.tooltip.b: "Tu futura fe ganará [GetDoctrine('tenet_gruesome_festivals').GetBaseName]."
+ podgrandcity.04.option.c: "A través de la rabia se rompen mis cadenas."
+ podgrandcity.04.tooltip.c: "Tu futura fe ganará [GetDoctrine('tenet_warmonger').GetBaseName]."
+
+ podgrandcity.05.t: "Se revela un nuevo camino"
+ podgrandcity.05.desc: "Los tres templos han sido restaurados. El conocimiento que obtuviste de ellos te da nuevas perspectivas sobre la adoración de Set.\n¿Quizás es hora de que el mundo lo sepa también?\n¿O tal vez estos pensamientos heréticos deberían ser abandonados?"
+ podgrandcity.05.option.a: "Este es el camino."
+ podgrandcity.05.option.b: "Interesante, pero mi camino sigue siendo el mismo."

@@ -1,0 +1,212 @@
+﻿l_spanish:
+ necro_magic_lifestyle_name: "Nigromancia"
+ necro_magic_lifestyle_desc: "Concéntrate en los poderes que usan la magia inherente en la Vitae para controlar la muerte"
+ monthly_necro_magic_lifestyle_xp_gain_mult: "Experiencia mensual de [lifestyle|E] de Nigromancia"
+ 
+ necro_magic_focus: "Enfoque de Nigromancia"
+ necro_magic_focus_modifier: "[GetFocus('necro_magic_focus').GetName]"
+ necro_magic_focus_desc: "Magia Nigromántica"
+ necro_magic_focus_effect_desc: "Concentrarse en la Nigromancia concede:"
+ 
+ necro_magic_sepulchre_path_visible: "Vía del Sepulcro"
+ necro_magic_ash_path_visible: "Vía de la Ceniza"
+ necro_magic_bone_path_visible: "Vía del Hueso"
+ necro_magic_cenotaph_path_visible: "Vía del Cenotafio"
+ necro_magic_corpse_in_the_monster_visible: "Cadáver en el Monstruo"
+ necro_magic_graves_decay_visible: "Decaimiento de la Tumba"
+ necro_magic_vitreous_path_visible: "Vía Vítreo"
+ necro_magic_path_of_the_twilight_garden_visible: "Vía del Jardín del Crepúsculo"
+ necro_magic_skull_path_visible: "Vía del Cráneo"
+ necro_magic_nightshade_path_visible: "Vía de la Belladona"
+ necro_magic_path_of_haunting_visible: "Vía del Acecho"
+ necro_magic_path_of_woe_visible: "Vía de la Desdicha"
+
+ necro_magic_shared_ritual_perk_effect: "Desbloquea [bs_rituals|E] específicos de la [bs_path|E]"
+
+ ns_peering_across_the_shroud_perk_name: "Mirar a través del Velo"
+ ns_summon_soul_perk_name: "Invocar Alma"
+ ns_compel_soul_perk_name: "Compeler Alma"
+ ns_haunting_perk_name: "Acecho"
+ ns_torment_perk_name: "Tormento"
+
+ ns_sepulchre_path_rituals_perk_name: "[bs_rituals|E] de la $necro_magic_sepulchre_path_visible$"
+
+ NS_PEERING_ACROSS_THE_SHROUD_PERK_EFFECT: "Si alguno de tus parientes o amigos es asesinado en circunstancias misteriosas, conocerás la identidad de su asesino.\n#flavor Los muertos caminan entre nosotros, invisibles e inaudibles. Para comandarlos, un nigromante debe ser capaz de percibirlos.#!"
+ NS_SUMMON_SOUL_PERK_EFFECT: "$POD_can_summon_on_death_trigger_loca$\n#flavor Invocar Alma permite a un nigromante traer de vuelta un fantasma desde el [UmbraGlossaryLocalized('shadowlands','Inframundo')].#!"
+ NS_COMPEL_SOUL_PERK_EFFECT: "$POD_can_weaken_fetter_trigger_loca$\n$POD_can_bind_wraith_trigger_loca$\n#flavor Usando este poder, un vampiro puede doblegar a un fantasma a su voluntad por un corto tiempo. Esta habilidad requiere una confianza suprema, ya que un fallo de resolución puede llevar a consecuencias desastrosas para un nigromante.#!"
+ NS_HAUNTING_PERK_EFFECT: "Como un [bs_spell|E], aplica [GetModifier('spell_haunting_modifier').GetNameWithTooltip] a la ubicación actual del objetivo durante 5 años\n#flavor Un nigromante usa el poder de su sangre para atar un fantasma a un objeto o lugar.#!"
+ NS_TORMENT_PERK_EFFECT: "#flavor Con el uso de Tormento, un nigromante puede golpear el cuerpo incorpóreo de un fantasma como si él mismo fuera un fantasma.#!"
+ 
+ NS_SEPULCHRE_PATH_RITUALS_PERK_EFFECT: "$necro_magic_shared_ritual_perk_effect$"
+ 
+ ns_shroudsight_perk_name: "Visión del Velo"
+ ns_tongue_of_the_dark_kingdoms_perk_name: "Lengua de los Reinos Oscuros"
+ ns_touch_of_the_nether_perk_name: "Toque del Inframundo"
+ ns_ex_nihilo_perk_name: "Ex Nihilo"
+ ns_shroud_mastery_perk_name: "Dominio del Velo"
+
+ ns_ash_path_rituals_perk_name: "[bs_rituals|E] de la $necro_magic_ash_path_visible$"
+
+ NS_SHROUDSIGHT_PERK_EFFECT: "$POD_can_summon_wraith_trigger_loca$\n#flavor Visión del Velo permite a un vampiro mirar directamente hacia el [UmbraGlossaryLocalized('shadowlands','Inframundo')].#!"
+ NS_TONGUE_OF_THE_DARK_KINGDOMS_PERK_EFFECT: "$POD_can_command_wraith_trigger_loca$\n#flavor Al pronunciar la Lengua de los [Glossary('Reinos Oscuros','game_concept_dark_kingdom_desc')], un nigromante puede conversar con fantasmas en el [UmbraGlossaryLocalized('shadowlands','Inframundo')].#!"
+ NS_TOUCH_OF_THE_NETHER_PERK_EFFECT: "Te permite interactuar con seres del [umbra|E] cuando estás en el mundo material.\n#flavor Mientras invoca Toque del Inframundo, un nigromante puede estar en ambos lados del Velo; se manifiesta físicamente en el [UmbraGlossaryLocalized('shadowlands','Inframundo')] mientras permanece corpóreo en las tierras de los vivos.#!"
+ NS_EX_NIHILO_PERK_EFFECT: "#flavor Ex Nihilo permite a un nigromante entrar físicamente en el [UmbraGlossaryLocalized('shadowlands','Inframundo')]. Mientras está en el [UmbraGlossaryLocalized('shadowlands','Inframundo')], aparece como un fantasma particularmente sólido.#!"
+ NS_SHROUD_MASTERY_PERK_EFFECT: "Desbloquea la opción Manipular el Velo en el [umbra|E].\n#flavor Con este poder, el nigromante puede ayudar o dificultar en gran medida la capacidad de los fantasmas para funcionar en el mundo de los vivos.#!"
+  
+ NS_ASH_PATH_RITUALS_PERK_EFFECT: "$necro_magic_shared_ritual_perk_effect$"
+ 
+ ns_seal_of_abamixtra_perk_name: "Sello de Abamixtra"
+ ns_awaken_the_homuncular_servant_perk_name: "Despertar al Sirviente Homúnculo"
+ ns_shambling_hordes_perk_name: "Hordas Tambaleantes"
+ ns_baleful_exorcism_perk_name: "Exorcismo Funesto"
+ ns_daemonic_possession_perk_name: "Posesión Demoníaca"
+
+ ns_bone_path_rituals_perk_name: "[bs_rituals|E] de la $necro_magic_bone_path_visible$"
+
+ NS_SEAL_OF_ABAMIXTRA_PERK_EFFECT: "Como un [bs_spell|E], invoca un pequeño ejército de [GetMaA('shambler').GetName] mientras estás en guerra.\n#flavor Al invocar el Sello de Abamixtra, un nigromante puede levantar un cadáver o grupo de cadáveres para realizar una tarea simple.#!"
+ NS_AWAKEN_THE_HOMUNCULAR_SERVANT_PERK_EFFECT: "Mejora el [bs_spell|E] [GetPerk('ns_seal_of_abamixtra_perk').GetName(GetPlayer)] aumentando el número de [GetMaA('shambler').GetName] invocados.\n#flavor Con este poder, un nigromante puede tomar un pequeño trozo de un cadáver y transformarlo en una especie grotesca de familiar.#!"
+ NS_SHAMBLING_HORDES_PERK_EFFECT: "Mejora el [bs_spell|E] [GetPerk('ns_seal_of_abamixtra_perk').GetName(GetPlayer)] aumentando el número de [GetMaA('shambler').GetName] invocados.\n#flavor Con el uso de este poder, un nigromante puede crear un grupo de esbirros muertos vivientes para atacar a sus enemigos.#!"
+ NS_BALEFUL_EXORCISM_PERK_EFFECT: "$POD_can_covert_to_wraith_trigger_loca$\n#flavor Con solo una palabra y un gesto enérgico, un nigromante puede exorcizar el alma de un mortal de su propio cuerpo.#!"
+ NS_DAEMONIC_POSSESSION_PERK_EFFECT: "Como un [bs_spell|E], convierte un [GetTrait('wraith').GetName(GetNullCharacter)] Atado en un [GetTrait('zombu').GetName(GetNullCharacter)].\n#flavor Posesión Demoníaca permite a un nigromante canalizar un alma en un cuerpo recién muerto.#!"
+  
+ NS_BONE_PATH_RITUALS_PERK_EFFECT: "$necro_magic_shared_ritual_perk_effect$"
+ 
+ ns_a_touch_of_death_perk_name: "Un Toque de Muerte"
+ ns_reveal_the_catene_perk_name: "Revelar la Catena"
+ ns_tread_upon_the_grave_perk_name: "Pisar la Tumba"
+ ns_death_knell_perk_name: "Campanada Fúnebre"
+ ns_ephemeral_binding_perk_name: "Vínculo Efímero"
+
+ ns_cenotaph_path_rituals_perk_name: "[bs_rituals|E] de la $necro_magic_cenotaph_path_visible$"
+
+ NS_A_TOUCH_OF_DEATH_PERK_EFFECT: "#flavor El nigromante está sintonizado con la energía residual dejada por el paso o toque de un fantasma, permitiéndole determinar si un objeto, persona o área ha sido tocado o influenciado por un fantasma.#!"
+ NS_REVEAL_THE_CATENE_PERK_EFFECT: "Disminuye el coste de [stress|E] del [GetTrait('wraith').GetName( GetNullCharacter )] atado en el mundo material.\n#flavor El nigromante reconoce la marca cenicienta que dejan los muertos en los objetos, permitiéndole distinguir entre los juguetes de los fantasmas y los [Fetters|E].#!"
+ NS_TREAD_UPON_THE_GRAVE_PERK_EFFECT: "Disminuye el coste de [stress|E] del [GetTrait('wraith').GetName( GetNullCharacter )] atado en el mundo material.\n#flavor El nigromante siente cuando está cerca del mundo de los muertos. Un nigromante podría usar su percepción natural, mientras que otro podría hacer escry, pero ambos pueden sentir dónde el [UmbraGlossaryLocalized('shadowlands','Inframundo')] toca el mundo de los vivos.#!"
+ NS_DEATH_KNELL_PERK_EFFECT: "Si alguno de tus [courtier|E] es asesinado en circunstancias misteriosas, conocerás la identidad de su asesino.\n#flavor El nigromante siente cuando está cerca del mundo de los muertos. Un nigromante podría usar su percepción natural, mientras que otro podría hacer escry, pero ambos pueden sentir dónde el [UmbraGlossaryLocalized('shadowlands','Inframundo')] toca el mundo de los vivos.#!"
+ NS_EPHEMERAL_BINDING_PERK_EFFECT: "El [GetTrait('wraith').GetName( GetNullCharacter )] atado en el mundo material no costará [stress|E] para mantener.\n#flavor Infundiendo un objeto, persona o lugar con su propia energía cenicienta, el nigromante puede crear un [Fetters|E] artificial en lugar de tener que depender de encontrar uno por casualidad.#!"
+  
+ NS_CENOTAPH_PATH_RITUALS_PERK_EFFECT: "$necro_magic_shared_ritual_perk_effect$"
+ 
+ ns_mortuus_in_vultus_perk_name: "Mortuus in Vultus"
+ ns_algor_mortis_perk_name: "Algor Mortis"
+ ns_intimations_of_mortality_perk_name: "Insinuaciones de Mortalidad"
+ ns_benedicto_mortem_perk_name: "Benedicto Mortem"
+ ns_benedicto_vitae_perk_name: "Benedicto Vitae"
+
+ ns_corpse_in_the_monster_rituals_perk_name: "[bs_rituals|E] de $necro_magic_corpse_in_the_monster_visible$"
+
+ NS_MORTUUS_IN_VULTUS_PERK_EFFECT: "#flavor Un Cainita puede hacerse parecer como si fuera un cadáver muerto hace mucho tiempo.#!"
+ NS_ALGOR_MORTIS_PERK_EFFECT: "#flavor Con el uso de Algor Mortis, un vampiro es capaz de transformarse en una criatura fría y melancólica, inmune al dolor mortal o la manipulación emocional.#!"
+ NS_INTIMATIONS_OF_MORTALITY_PERK_EFFECT: "Como un [bs_spell|E], aplica [GetModifier('spell_intimations_of_mortality_modifier').GetNameWithTooltip] al objetivo durante 5 años.\n#flavor Insinuaciones de Mortalidad inflige los aspectos más desagradables e irritantes de la mortalidad sobre un vampiro.#!"
+ NS_BENEDICTO_MORTEM_PERK_EFFECT: "Te vuelves inmune a la luz solar en [schemes|E] de asesinato.\n#flavor Con este poder, un nigromante asume completamente el aspecto de un cadáver y es capaz de librarse de las debilidades de su condición vampírica.#!"
+ NS_BENEDICTO_VITAE_PERK_EFFECT: "Como un [bs_spell|E], aplica [GetModifier('spell_benedicto_vitae_modifier').GetNameWithTooltip] al objetivo durante 10 años, y también obtienes [GetModifier('spell_benedicto_vitae_after_modifier').GetNameWithTooltip] durante 20 años.\n#flavor Con Benedictio Vitae, un Cainita es capaz de disfrutar de muchos de los mejores aspectos de la vida mortal sin renunciar al poder de su naturaleza vampírica.#!"
+  
+ NS_CORPSE_IN_THE_MONSTER_RITUALS_PERK_EFFECT: "$necro_magic_shared_ritual_perk_effect$"
+ 
+ ns_ashes_to_ashes_perk_name: "Cenizas son Cenizas"
+ ns_rigor_mortis_perk_name: "Rigor Mortis"
+ ns_ashen_ladys_embrace_perk_name: "Abrazo de la Dama Cenicienta"
+ ns_gift_of_melancholia_perk_name: "Regalo de Melancolía"
+ ns_dust_to_dust_perk_name: "Polvo al Polvo"
+
+ ns_graves_decay_rituals_perk_name: "[bs_rituals|E] de la $necro_magic_graves_decay_visible$"
+
+ NS_ASHES_TO_ASHES_PERK_EFFECT: "Reduce el riesgo de [masquerade_exposure_with_icon|E] y mejora la interacción [character_interaction|E] Cubrir la Mascarada.\n#flavor Mientras algunos Cainitas masacran indiscriminadamente y no temen consecuencias por sus acciones, otros Cainitas sienten la necesidad de ser un poco más discretos. El uso de este poder convierte un cadáver humano en una pila de ceniza poco notable con aproximadamente un quinto del peso del cuerpo original.#!"
+ NS_RIGOR_MORTIS_PERK_EFFECT: "Cuando se inicia una guerra, el campeón con mayor destreza de tu enemigo será herido.\n#flavor Con este poder, el nigromante puede hacer que cualquier objetivo se ponga tan rígido e inmóvil como un cadáver.#!"
+ NS_ASHEN_LADYS_EMBRACE_PERK_EFFECT: "Como un [bs_spell|E], haz que el objetivo pierda una extremidad aleatoria.\nDesbloquea el movimiento [single_combat_duel|E] Abrazo de la Dama Cenicienta\n#flavor El Abrazo de la Dama Cenicienta hace que una extremidad del objetivo envejezca, se seque y se marchite como uvas dejadas en la vid.#!"
+ NS_GIFT_OF_MELANCHOLIA_PERK_EFFECT: "Como un [bs_spell|E], infecta al objetivo con [GetTrait('gift_of_melancholia').GetName(GetPlayer)] o genera una [epidemic|E] de ella.\n#flavor Este poder inflige una enfermedad debilitante virulenta en mortales y Cainitas por igual.#!"
+ NS_DUST_TO_DUST_PERK_EFFECT: "Mejora el [bs_spell|E] [GetPerk('ns_ashen_ladys_embrace_perk').GetName(GetPlayer)] y el movimiento [single_combat_duel|E].\n#flavor Así como Cenizas son Cenizas afecta a los cadáveres, Polvo al Polvo afecta a los cuerpos de los vampiros. Invocar Polvo al Polvo permite a un nigromante reducir a otro vampiro a una pila de cenizas como si hubiera quedado varado bajo la luz del sol o quemado en la hoguera.#!"
+  
+ NS_GRAVES_DECAY_RITUALS_PERK_EFFECT: "$necro_magic_shared_ritual_perk_effect$"
+ 
+ ns_eyes_of_the_wraith_perk_name: "Ojos del Espectro"
+ ns_aura_of_decay_perk_name: "Aura de Decaimiento"
+ ns_pischachas_feast_perk_name: "Festín de Pischacha"
+ ns_curse_of_the_maelstrom_perk_name: "Maldición del Maelstrom"
+ ns_night_cry_perk_name: "Grito Nocturno"
+
+ ns_vitreous_path_rituals_perk_name: "[bs_rituals|E] de la $necro_magic_vitreous_path_visible$"
+
+ NS_EYES_OF_THE_WRAITH_PERK_EFFECT: "#flavor Al invocar este poder, el nigromante puede ver el mundo de la manera en que lo hacen los Muertos Inquietos.#!"
+ NS_AURA_OF_DECAY_PERK_EFFECT: "Aplica [GetModifier('aura_of_decay_modifier').GetNameWithTooltip] a los [knights|E] enemigos cuando actúan como [commander|E] durante la [combat_phase|E], o a tu oponente durante [single_combat_duel_plural|E].\n#flavor Este poder acelera el destino inevitable de cualquier objeto inanimado atrapado dentro del terrible aura del nigromante, permitiendo al vampiro causar que cualquier objeto se descomponga en un montón ruinoso.#!"
+ NS_PISCHACHAS_FEAST_PERK_EFFECT: "Puede comer [GetTrait('wraith').GetName(GetNullCharacter)].\n#flavor El Festín de Pischacha permite a un vampiro subsistir con las energías ambientales de la entropía que impregnan los lugares encantados del mundo, o alimentarse directamente del [Corpus|E] de un fantasma.#!"
+ NS_CURSE_OF_THE_MAELSTROM_PERK_EFFECT: "Como un [bs_spell|E], hace que la ubicación actual del objetivo pierda 3 de [development|E] además de ganar [GetModifier('spell_curse_of_the_maelstrom_modifier').GetNameWithTooltip] durante 5 años.\n#flavor El nigromante puede maldecir sus alrededores invocando Espectros para causar estragos y destrucción.#!"
+ NS_NIGHT_CRY_PERK_EFFECT: "Aplica [GetModifier('night_cry_enemy_modifier').GetNameWithTooltip] a los [knights|E] enemigos cuando actúan como [commander|E] durante la [combat_phase|E], o a tu oponente durante [single_combat_duel_plural|E].\nAplica [GetModifier('night_cry_ally_modifier').GetNameWithTooltip] a los [knights|E] aliados cuando actúan como [commander|E] durante la [combat_phase|E], o a ti mismo durante [single_combat_duel_plural|E].\n#flavor Con el uso del Grito Nocturno, un nigromante es capaz de mostrar su dominio sobre las fuerzas de la entropía. Puede dirigirla lejos de sus aliados para ayudarlos, o canalizarla directamente hacia sus enemigos para obstaculizarlos.#!"
+  
+ NS_VITREOUS_PATH_RITUALS_PERK_EFFECT: "$necro_magic_shared_ritual_perk_effect$"
+ 
+ ns_whispers_to_the_soul_perk_name: "Susurros al Alma"
+ ns_kiss_of_the_dark_mother_perk_name: "Beso de la Madre Oscura"
+ ns_dark_humors_perk_name: "Humores Oscuros"
+ ns_caul_of_the_neverborn_perk_name: "Membrana del No Nacido"
+ ns_lament_of_dhainu_perk_name: "Lamento de D'hainu"
+
+ ns_path_of_the_twilight_garden_rituals_perk_name: "[bs_rituals|E] de la $necro_magic_path_of_the_twilight_garden_visible$"
+
+ NS_WHISPERS_TO_THE_SOUL_PERK_EFFECT: "Como un [bs_spell|E], inflige 25 de [stress|E] al objetivo.\n#flavor Simplemente escuchar un susurro del verdadero nombre de la Madre Oscura es suficiente para volver locos a los mortales y llenar de terror los corazones de los Cainitas.#!"
+ NS_KISS_OF_THE_DARK_MOTHER_PERK_EFFECT: "El movimiento [single_combat_duel|E] Mordida se vuelve más poderoso.\n#flavor La Lilin se muerde la lengua y llena su boca con una mezcla fétida y acre de bilis negra y $pod_vitae$. Su mordida se vuelve aún más terrible, y puede devorar la vida de sus víctimas con facilidad.#!"
+ NS_DARK_HUMORS_PERK_EFFECT: "#flavor Las Lamias son conocidas por su atletismo y dominio de sus cuerpos. No solo son capaces de realizar hazañas de destreza física increíble, sino que también pueden manipular el equilibrio de los humores en su cuerpo por pura fuerza de voluntad.#!"
+ NS_CAUL_OF_THE_NEVERBORN_PERK_EFFECT: "$POD_can_summon_wraith_trigger_loca$\n#flavor Con el uso de este poder, la Lamia fortalece su conexión con el corazón negro de la Madre Oscura. Dándole tanto una mayor resistencia como la capacidad de ver en las [UmbraGlossary('shadowlands')].#!"
+ NS_LAMENT_OF_DHAINU_PERK_EFFECT: "#flavor La Lamia aúlla de agonía, y la tierra misma tiembla. Una niebla de oscuridad retorcida se eleva del suelo y atrapa a sus enemigos. Atrapados por la oscuridad no están físicamente atados, pero son inmediatamente golpeados con una angustia emocional tan rica y cruda que buscan terminar con sus vidas de la manera más expedita posible.#!"
+  
+ NS_PATH_OF_THE_TWILIGHT_GARDEN_RITUALS_PERK_EFFECT: "$necro_magic_shared_ritual_perk_effect$"
+ 
+ ns_calvaria_emissicius_perk_name: "Calvaria Emissicius"
+ ns_consilium_mortuus_perk_name: "Consilium Mortuus"
+ ns_ammorsus_vicarius_perk_name: "Ammorsus Vicarius"
+ ns_exedo_animus_perk_name: "Exedo Animus"
+ ns_degulo_perk_name: "Degulo"
+
+ NS_CALVARIA_EMISSICIUS_PERK_EFFECT: "#flavor Uno de los secretos más preciados del Clan Capadocio es la capacidad de espiar a través de las cuencas de los ojos de los muertos.#!"
+ NS_CONSILIUM_MORTUUS_PERK_EFFECT: "Velocidad de Progreso de [espionage|E]: #P +[EmptyScope.ScriptValue('digging_for_dirt_perk_percentage')|0]%#!\n#flavor Al conversar con la cabeza decapitada del objetivo fallecido, resulta que extraer una verdad garantizada de los labios en descomposición es bastante posible.#!"
+ NS_AMMORSUS_VICARIUS_PERK_EFFECT: "#flavor Usando este poder, el nigromante puede agarrar la mandíbula y el maxilar del cráneo para usarlo como un arma extraña de combate cuerpo a cuerpo, fijar el cráneo a la punta de una lanza para atacar a distancia, o incluso dejar el cráneo solo, actuando como una trampa.#!"
+ NS_EXEDO_ANIMUS_PERK_EFFECT: "Velocidad de Progreso de [espionage|E]: #P +[EmptyScope.ScriptValue('digging_for_dirt_perk_percentage')|0]%#!\n#flavor Al portar un cráneo, ya sea de un mortal o Cainita, el nigromante forma un vínculo simpático con el antiguo dueño del cráneo.#!"
+ NS_DEGULO_PERK_EFFECT: "Como [character_interaction|E], puedes comer el cráneo de un [prisoner|E] para obtener [perks|E] en la $pod_discipline$ seleccionada.\n#flavor Degulo es el método por el cual un nigromante consume un fragmento de alma y lo retiene para siempre como parte de sí mismo.#!"
+ 
+ ns_tend_the_body_garden_perk_name: "Cuidar el Jardín de Cuerpos"
+ ns_witchs_fruit_perk_name: "Fruto de la Bruja"
+ ns_raise_the_green_one_perk_name: "Alzar al Verde"
+ ns_wails_and_whispers_perk_name: "Lamentos y Susurros"
+ ns_chthonic_womb_perk_name: "Útero Ctónico"
+
+ ns_nightshade_path_rituals_perk_name: "[bs_rituals|E] de la $necro_magic_nightshade_path_visible$"
+
+ NS_TEND_THE_BODY_GARDEN_PERK_EFFECT: "Reduce el riesgo de [masquerade_exposure_with_icon|E] y mejora la interacción [character_interaction|E] Cubrir la Mascarada.\n#flavor Un nigromante con este poder puede acelerar o ralentizar el proceso de descomposición, convirtiendo a un mortal muerto en un anfitrión hinchado para las moscas en segundos o anulando la descomposición de la Muerte Final.#!"
+ NS_WITCHS_FRUIT_PERK_EFFECT: "#flavor Cada planta depende de la muerte para crecer. Las cosas podridas enriquecen el suelo, y los árboles, vides y hierbas absorben los ecos necróticos junto con los nutrientes vitales. Un nigromante puede despertar este aura de muerte exponiendo sus frutos a su sangre.#!"
+ NS_RAISE_THE_GREEN_ONE_PERK_EFFECT: "#flavor Los nigromantes de la Belladona pueden levantar un cadáver atado y fortalecido por materia vegetal. Las hojas cubren su piel y fuertes vides suplementan sus tendones podridos. La cáscara viviente otorga velocidad e instintos de autoconservación no vistos en otros muertos animados.#!"
+ NS_WAILS_AND_WHISPERS_PERK_EFFECT: "#flavor A medida que la comprensión del nigromante se profundiza, explora la barrilla ondulante entre la vida y la muerte. Cuando grita como una banshee, puede atraer un alma a su perdición, aumentando la probabilidad de una lesión fatal.#!"
+ NS_CHTHONIC_WOMB_PERK_EFFECT: "Drenar a un mortal como parte de la alimentación lo levantará como un [GetTrait('wraith').GetName( GetNullCharacter )].\n#flavor En el ápice de esta Vía, un nigromante combina el asesinato y la fertilidad para dar a luz al fantasma de un mortal que ha matado.#!"
+  
+ NS_NIGHTSHADE_PATH_RITUALS_PERK_EFFECT: "$necro_magic_shared_ritual_perk_effect$"
+ 
+ ns_song_of_the_dead_perk_name: "Canción de los Muertos"
+ ns_summon_wisp_perk_name: "Invocar Luzfatuo"
+ ns_harrowing_perk_name: "Inquisición"
+ ns_phantasms_perk_name: "Alucinación"
+ ns_h_torment_perk_name: "Tormento"
+
+ ns_path_of_haunting_rituals_perk_name: "[bs_rituals|E] de la $necro_magic_path_of_haunting_visible$"
+
+ NS_SONG_OF_THE_DEAD_PERK_EFFECT: "Como un [bs_spell|E], inflige 25 de [static_stress|E] al objetivo a costa de [static_stress|E] en ti mismo.\n#flavor El vampiro canta, tejiendo palabras inauditas en la canción e instilando una fascinación poco saludable con la muerte en su oyente.#!"
+ NS_SUMMON_WISP_PERK_EFFECT: "#flavor El vampiro infunde gotas de su sangre con la energía efímera del [UmbraGlossaryLocalized('shadowlands','Inframundo')], invocando una esfera de luces parpadeantes. La luzfatuo puede atraer a mortales desprevenidos a una trampa o proporcionar una distracción inteligente.#!"
+ NS_HARROWING_PERK_EFFECT: "Mejora [GetPerk('ns_song_of_the_dead_perk').GetName(GetNullCharacter)] aumentando el [static_stress|E] del objetivo a 50 y disminuyendo el coste a 13 de [static_stress|E].\n#flavor Inquisición extiende el terror infligido por la Canción de los Muertos al acecharla en su sueño, convirtiendo sus sueños en visiones pesadillescas de su propia muerte.#!"
+ NS_PHANTASMS_PERK_EFFECT: "Mejora [GetPerk('ns_song_of_the_dead_perk').GetName(GetNullCharacter)] aumentando el [static_stress|E] del objetivo a 75.\n#flavor El vampiro esculpe la energía del [UmbraGlossaryLocalized('shadowlands','Inframundo')] en alucinaciones elaboradas que aterrorizan a los vivos.#!"
+ NS_H_TORMENT_PERK_EFFECT: "Mejora [GetPerk('ns_song_of_the_dead_perk').GetName(GetNullCharacter)] aumentando el [static_stress|E] del objetivo a 100.\n#flavor El vampiro rasga el velo entre la vida y el [UmbraGlossaryLocalized('shadowlands','Inframundo')] alrededor de su víctima, invocando fantasmas maliciosos para acecharla.#!"
+  
+ NS_PATH_OF_HAUNTING_RITUALS_PERK_EFFECT: "$necro_magic_shared_ritual_perk_effect$"
+ 
+ ns_finding_the_locus_perk_name: "Encontrar el Locus"
+ ns_expurgate_the_damned_perk_name: "Expurgar al Condenado"
+ ns_blood_scourge_perk_name: "Azote de Sangre"
+ ns_cursed_eucharist_perk_name: "Eucaristía Maldita"
+ ns_purge_the_apostates_soul_perk_name: "Purgar el Alma del Apóstata"
+
+ ns_path_of_woe_rituals_perk_name: "[bs_rituals|E] de la $necro_magic_path_of_woe_visible$"
+
+ NS_FINDING_THE_LOCUS_PERK_EFFECT: "#flavor Determina si un objeto es un Grillete.#!"
+ NS_EXPURGATE_THE_DAMNED_PERK_EFFECT: "#flavor Fuerza a un [GetTrait('wraith').GetName( GetNullCharacter )] a aparecer en una ubicación que el nigromante ha marcado antes.#!"
+ NS_BLOOD_SCOURGE_PERK_EFFECT: "#flavor Usa tu $pod_vitae$ para causar un dolor insoportable a un [GetTrait('wraith').GetName( GetNullCharacter )].#!"
+ NS_CURSED_EUCHARIST_PERK_EFFECT: "Como un [bs_spell|E], usa tu [GetTrait('wraith').GetName( GetNullCharacter )] atado para perder 25 de [stress|E].\n#flavor El nigromante puede intentar alimentarse de un [GetTrait('wraith').GetName( GetNullCharacter )] para recuperar Fuerza de Voluntad.#!"
+ NS_PURGE_THE_APOSTATES_SOUL_PERK_EFFECT: "#flavor Inflige daño agravado a un [GetTrait('wraith').GetName( GetNullCharacter )], produciendo un charco de plasma.#!" 
+ 
+ NS_PATH_OF_WOE_RITUALS_PERK_EFFECT: "$necro_magic_shared_ritual_perk_effect$"

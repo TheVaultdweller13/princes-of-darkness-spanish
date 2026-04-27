@@ -1,0 +1,34 @@
+﻿l_spanish:
+
+
+ breedgifts_lifestyle_name: "Dones de raza"
+ breedgifts_lifestyle_desc: "Céntrate en los dones que vienen con tu forma de raza natural."
+ breedgifts_lifestyle_highlight_desc: "Debido a tu $POD_energy_gnosis$, ganas un #P [GetPlayer.MakeScope.ScriptValue('gnosis_lifestyle_xp_mult')|%0]#! más de [experience|E] en este estilo de vida."
+ monthly_breedgifts_lifestyle_xp_gain_mult: "[experience|E] mensual de [lifestyle|E] de Dones de raza"
+ breedgifts_focus: "Enfoque en Dones de raza"
+ breedgifts_focus_modifier: "[GetFocus('breedgifts_focus').GetName]"
+ breedgifts_focus_desc: "Dones de [GetTrait('homid_born').GetName( GetNullCharacter )] y [GetTrait('beast_born').GetName( GetNullCharacter )]"
+ breedgifts_focus_effect_desc: "Centrarse en los Dones otorga:"
+ homidgifts_visible: "Homínido"
+ beastborngifts_werewolf_visible: "Lupus"
+ homidgifts_bastet_visible: "Dones de homínido"
+ beastborngifts_bastet_visible: "Dones de felino"
+
+
+ NEEDS_HOMIDBORN_TEXT: "@warning_icon!#X Requiere el [traits|E] [GetTrait('homid_born').GetName( GetPlayer )] para comprar ventajas en este árbol.#!"
+ NEEDS_BEASTBORN_TEXT: "@warning_icon!#X Requiere el [traits|E] [GetTrait('beast_born').GetName( GetPlayer )] para comprar ventajas en este árbol.#!"
+
+
+
+
+
+ commongifts_lifestyle_name: "Dones comunes"
+ commongifts_lifestyle_desc: "Céntrate en los dones que vienen con tu raza cambiante."
+ commongifts_lifestyle_highlight_desc: "Debido a tu $POD_energy_gnosis$, ganas un #P [GetPlayer.MakeScope.ScriptValue('gnosis_lifestyle_xp_mult')|%0]#! más de [experience|E] en este estilo de vida."
+ monthly_commongifts_lifestyle_xp_gain_mult: "[experience|E] mensual de [lifestyle|E] de Dones comunes"
+ commongifts_focus: "Enfoque en Dones comunes"
+ commongifts_focus_modifier: "[GetFocus('commongifts_focus').GetName]"
+ commongifts_focus_desc: "Los Dones de los Fera."
+ commongifts_focus_effect_desc: "Centrarse en los Dones comunes otorga:"
+ commongifts_bastet_visible: "Dones de Bastet"
+ commongifts_mokole_visible: "Dones de Mokolé"

@@ -1,0 +1,121 @@
+﻿l_spanish:
+
+
+ cannot_hurt_spirit_tt: "#bold No#! tienes ningún poder para herir a los espíritus."
+ POD_spawn_random_spirit_effect_tooltip: "Aparecerá un [GetTrait('spirit').GetName( GetNullCharacter )]"
+ POD_spawn_friendly_spirit_effect_tooltip: "Aparecerá un [GetTrait('spirit').GetName( GetNullCharacter )] #P amistoso#!"
+ POD_spawn_hostile_spirit_effect_tooltip: "Aparecerá un [GetTrait('spirit').GetName( GetNullCharacter )] #N hostil#!"
+ POD_spawn_gaian_spirit_effect_tooltip: "Aparecerá un [GetTrait('spirit').GetName( GetNullCharacter )] #V Gaiano#!"
+ POD_spawn_ancestor_spirit_effect_tooltip: "Aparecerá un #V [ancestor_spirit|E]#!"
+ POD_spawn_bane_spirit_effect_tooltip: "Aparecerá una [GetTrait('spirit').GetName( GetNullCharacter )] de #N Perdición#!"
+ POD_spawn_elemental_bane_spirit_effect_tooltip: "Aparecerá una #N Perdición Elemental#! [GetTrait('spirit').GetName( GetNullCharacter )]"
+
+
+ spirit_relative_became_ancestor: "[ancestor_spirit.GetName] ha muerto y se ha convertido en un [ancestor_spirit|E]."
+ POD_is_ancestor_spirit_trigger_tooltip: "#bold No#! es un [ancestor_spirit|E]"
+
+
+
+ spirit_message_title: "Espíritus"
+ POD_spawn_spirit_effect_desc: "Ha aparecido un [GetTrait('spirit').GetName( GetNullCharacter )]"
+
+ #Gaian
+ language_harmonys_melody_name: "Melodía de la Armonía"
+ language_conflicts_drum_name: "Tambor del Conflicto"
+ language_artisans_anthem_name: "Himno del Artesano"
+ language_seditions_lullaby_name: "Nana de la Sedición"
+ language_wisdoms_hymn_name: "Himno de la Sabiduría"
+
+ #Banes
+ language_wyrmspeak_name: "Habla del Wyrm"
+ language_corrupting_voice_name: "Voz Corruptora"
+ language_tainted_speech_name: "Discurso Maculado"
+
+ #Ancestors
+ language_ancestor_werewolf_name: "Lengua Primitiva"
+ language_ancestor_bastet_name: "Kheuar"
+ language_ancestor_mokole_name: "Lengua del Dragón"
+
+
+
+
+ spirit_language_cannot_learn_ancestor: "No puedes aprender "
+
+ learn_language_outcome_success.spirits.desc: "Los lenguajes espirituales son tan caprichosos como sus hablantes. Algunos usan patrones reconocibles, otros no. Por suerte, los más extendidos suelen haber pasado por el mismo viaje que los mortales, lo que ha llevado a que se simplifiquen para ser usados por entidades no espirituales.\nDespués de todo, los espíritus necesitan ser entendidos cuando negocian con los visitantes. Aunque es probable que los más astutos también utilicen las complejidades de su lenguaje para intentar llevar la voz cantante en las negociaciones.\nPor eso tomaste precauciones para aprender lo que podría considerarse un vocabulario más especializado, con la esperanza de evitarte el destino de malinterpretar un contrato espiritual en el futuro."
+
+ learn_language_outcome_failure.spirits.desc: "\"Después de mucho trabajo duro... ¡nada! Es #EMP imposible#! aprender este lenguaje espiritual. ¡Por mucho que lo intente, hablo como un bebé recién destetado y balbuceo como un tonto!\n\n¡Bah! Esto ha sido una pérdida de tiempo...\""
+
+ learn_spirit_language_complete: "Has aprendido el [spirit_language|E] de [target.GetShortUINamePossessiveNoTooltip]"
+
+ SPIRIT_LANGUAGE_REASON: "[spirit_language|E]: $VALUE|+=0$"
+ SPIRIT_CORRUPTING_VOICE_REASON: "[target.GetName] habla Voz Corruptora: $VALUE|+=0$"
+ SPIRIT_TAINTED_SPEECH_REASON: "[target.GetName] habla Discurso Maculado: $VALUE|+=0$"
+
+
+ POD_spirit_wyrm_possession_effect_tooltip: "Gana #TOOLTIP:POD_spirit_wyrm_possession_effect_tooltip2 #V;L [spirit.MakeScope.ScriptValue('POD_spirit_wyrm_possession_power')]#!#! puntos de [perk|E] de [possessedpower_lifestyle|E]"
+ POD_spirit_wyrm_possession_effect_tooltip2: "La cantidad de puntos de [perk|E] obtenidos de espíritus de #ONCLICK:FAITH,wyrmbound #TOOLTIP:FAITH,wyrmbound $Bane|L$#!#! depende de lo siguiente:\n$BULLET_WITH_TAB$Rango del espíritu: #P +1#! por rango\n$BULLET_WITH_TAB$La Perdición habla Voz Corruptora: #P +2#!\n$BULLET_WITH_TAB$Es una Perdición Sembradora: #P +1#! adicional por rango de espíritu\n$BULLET_WITH_TAB$La Perdición habla Discurso Maculado: #P +4#!\n$BULLET_WITH_TAB$[core_tenets|E] de la [faith|E]: #P +1/+2#!"
+
+ POD_spirit_possession_rank_desc: "Rango del espíritu"
+ POD_spirit_possession_piety_level_desc: "Tu [piety_level|E]"
+ POD_spirit_possession_corrupting_voice_desc: "[recipient.GetName] habla Voz Corruptora"
+ POD_spirit_possession_tainted_speech_desc: "[recipient.GetName] habla Discurso Maculado"
+
+
+ spirit_short_chiminage_modifier: "Chiminage corto"
+ spirit_medium_chiminage_modifier: "Chiminage"
+ spirit_long_chiminage_modifier: "Chiminage largo"
+
+
+ spirit_very_weak_possession_modifier: "Posesión patética"
+ spirit_weak_possession_modifier: "Posesión débil"
+ spirit_strong_possession_modifier: "Posesión poderosa"
+
+
+ spirit_rabbit_pact_modifier: "Pacto: Conejo"
+ spirit_deer_pact_modifier: "Pacto: Ciervo"
+ spirit_bat_pact_modifier: "Pacto: Murciélago"
+ spirit_rooster_pact_modifier: "Pacto: Gallo"
+ spirit_tiger_pact_modifier: "Pacto: Tigre"
+ spirit_rhino_pact_modifier: "Pacto: Rinoceronte"
+ spirit_bear_pact_modifier: "Pacto: Oso"
+ spirit_porcupine_pact_modifier: "Pacto: Puercoespín"
+ spirit_ant_pact_modifier: "Pacto: Hormiga"
+ spirit_bull_pact_modifier: "Pacto: Toro"
+ spirit_vulture_pact_modifier: "Pacto: Buitre"
+ spirit_stone_pact_modifier: "Pacto: Piedra"
+ spirit_fox_pact_modifier: "Pacto: Zorro"
+ spirit_mouse_pact_modifier: "Pacto: Ratón"
+ spirit_chameleon_pact_modifier: "Pacto: Camaleón"
+ spirit_raccoon_pact_modifier: "Pacto: Mapache"
+ spirit_crow_pact_modifier: "Pacto: Cuervo"
+ spirit_monkey_pact_modifier: "Pacto: Mono"
+ spirit_toad_pact_modifier: "Pacto: Sapo"
+ spirit_tree_pact_modifier: "Pacto: Árbol"
+
+
+ spirit_innocent_pact_modifier: "Pacto: Inocente"
+ spirit_drattosi_pact_modifier: "Pacto: Drattosi"
+ spirit_ooralath_pact_modifier: "Pacto: Ooralath"
+ spirit_nocturna_pact_modifier: "Pacto: Nocturna"
+ spirit_raptor_pact_modifier: "Pacto: Nocturna"
+ spirit_harpy_pact_modifier: "Pacto: Harpía"
+ spirit_rotwalker_pact_modifier: "Pacto: Caminante de la Putrefacción"
+ spirit_seeder_pact_modifier: "Pacto: Sembrador"
+ spirit_seeder_pact_modifier_desc: "Aumenta los puntos de [perk|E] obtenidos de la [possession|E]"
+ spirit_dreammaker_pact_modifier: "Pacto: Creador de Sueños"
+ spirit_nihilach_pact_modifier: "Pacto: Nihilach"
+ spirit_shatteredhart_pact_modifier: "Pacto: Ciervo Destrozado"
+ spirit_smog_pact_modifier: "Pacto: Smog"
+ spirit_smog_pact_modifier_desc: "Puede reclutar [GetMaA('hoglings').GetName] con la fuerza máxima del pacto"
+ spirit_balefire_pact_modifier: "Pacto: Fuego de Maleficio"
+ spirit_balefire_pact_modifier_desc: "Puede reclutar [GetMaA('furmlings').GetName] con la fuerza máxima del pacto"
+ spirit_sludge_pact_modifier: "Pacto: Lodo"
+ spirit_sludge_pact_modifier_desc: "Puede reclutar [GetMaA('hrugglings').GetName] con la fuerza máxima del pacto"
+ spirit_toxin_pact_modifier: "Pacto: Toxina"
+ spirit_toxin_pact_modifier_desc: "Puede reclutar [GetMaA('wakshaani').GetName] con la fuerza máxima del pacto"
+ 
+ spirit_werewolf_pact_modifier: "Pacto: Hombre lobo"
+ spirit_bastet_pact_modifier: "Pacto: Bastet"
+ spirit_mokole_pact_modifier: "Pacto: Mokolé"
+
+ spirit_human_pact_modifier: "Pacto espiritual"

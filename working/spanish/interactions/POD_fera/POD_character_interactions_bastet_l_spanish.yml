@@ -1,0 +1,49 @@
+﻿l_spanish:
+
+
+ POD_freyjas_blessing_interaction: "Bendición de Freyja"
+ POD_freyjas_blessing_interaction_desc: "Invoca un espíritu de fertilidad en ti mismo. Al poner tus manos sobre el vientre de [recipient.GetFirstName], puedes pasar el espíritu a [recipient.GetFirstName]."
+ 
+ POD_withering_stare_interaction: "Mirada marchitante"
+ POD_withering_stare_interaction_desc: "Cruza la mirada con el objetivo e inflige daño a [recipient.GetFirstName]."
+ 
+ POD_deny_the_hungry_perk_interaction: "Negar al hambriento"
+ POD_deny_the_hungry_perk_interaction_desc: "El condado objetivo obtiene [GetModifier( 'deny_the_hungry_perk_modifier' ).GetNameWithTooltip|L]."
+ deny_the_hungry_perk_modifier: "Negar al hambriento"
+ 
+ POD_madness_perk_interaction: "Locura"
+ POD_madness_perk_interaction_desc: "Usa este poder para darle a [recipient.GetFirstName] un rasgo mental negativo."
+ POD_madness_perk_interaction_options_heading: "¿Qué rasgo le daré?"
+ 
+ POD_absorb_disease_interaction: "Absorber enfermedad"
+ POD_absorb_disease_interaction_desc: "Absorbe una enfermedad de [recipient.GetFirstName] para su uso posterior."
+ 
+ POD_release_disease_interaction: "Liberar enfermedad"
+ POD_release_disease_interaction_desc: "Libera una enfermedad que poseas en la corte de [recipient.GetFirstName]."
+ POD_release_disease_interaction_options_heading: "¿Qué enfermedad liberaré?"
+ 
+ POD_ojas_surge_perk_interaction: "Oleada de Ojas"
+ POD_ojas_surge_perk_interaction_desc: "Potencia temporalmente un atributo."
+ POD_ojas_surge_perk_interaction_options_heading: "¿Qué atributo potenciaré?"
+ 
+ POD_shadow_brethren_interaction: "Convocar duplicado sombrío"
+ POD_shadow_brethren_interaction_desc: "Convoca duplicados sombríos de ti mismo."
+ POD_shadow_brethren_interaction.tt: "Intentarás convocar duplicados sombríos de ti mismo."
+ 
+ POD_rallying_challenge_perk_interaction: "Desafío de reunión"
+ POD_rallying_challenge_perk_interaction_desc: "Potencia temporalmente un atributo."
+ POD_rallying_challenge_perk_interaction_options_heading: "¿Qué atributo potenciaré?"
+ 
+ POD_ghost_caress_perk_interaction: "Caricia del fantasma"
+ POD_ghost_caress_perk_interaction_desc: "Causa daño desde lejos a [recipient.GetFirstName]."
+ 
+ POD_mothers_blessing_curse_perk_interaction: "Bendición/Maldición de la Madre"
+ POD_mothers_blessing_curse_perk_interaction_desc: "Da [GetModifier( 'mothers_blessing_perk_modifier' ).GetNameWithTooltip|L] o [GetModifier( 'mothers_curse_perk_modifier' ).GetNameWithTooltip|L] a [recipient.GetFirstName]."
+ mothers_blessing_perk_modifier: "Bendición de la Madre"
+ mothers_curse_perk_modifier: "Maldición de la Madre"
+ 
+ POD_the_madness_of_crowds_interaction: "La locura de las multitudes"
+ POD_the_madness_of_crowds_interaction_desc: "Despierta el lado salvaje de todos los que están cerca para que cumplan las órdenes de [recipient.GetFirstName]."
+ 
+ POD_reveal_scheme_interaction: "Revelar intriga"
+ POD_reveal_scheme_interaction_desc: "Conoce cada intriga de [recipient.GetFirstName]."

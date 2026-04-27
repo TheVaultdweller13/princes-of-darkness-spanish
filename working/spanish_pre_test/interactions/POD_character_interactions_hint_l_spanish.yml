@@ -1,0 +1,27 @@
+﻿l_spanish:
+ POD_hint_fog_of_war_interaction: "#difficulty_hard Personaje desconocido#!"
+ POD_hint_fog_of_war_interaction_desc: "No conoces a este personaje, ni siquiera por su reputación." # TODO: explicar mecánicas de niebla de guerra
+ 
+ POD_hint_dummy_interaction: "#difficulty_hard Guardián del mod#!"
+ POD_hint_dummy_interaction_desc: "[recipient.GetShortUIName] necesita existir para que algunos de los scripts de este mod funcionen. Si [recipient.GetHerHim] ves en tu corte, simplemente sonríe y saluda. Desaparecerá en breve."
+ 
+ POD_hint_apocalyptic_interaction: "#difficulty_hard Sueño eterno#!"
+ POD_hint_apocalyptic_interaction_desc: "Nadie conoce el paradero de [recipient.GetShortUIName]. Está, a todos los efectos, perdid[recipient.GetCustom('ES_O')] para siempre."
+ 
+ POD_hint_torpor_interaction: "#difficulty_hard Durmiente#!"
+ POD_hint_torpor_interaction_desc: "[recipient.GetShortUIName] está en un estado catatónico, lo que hace casi todas las interacciones imposibles."
+ 
+ POD_hint_umbra_trapped_interaction: "#difficulty_hard Atrapad[recipient.GetCustom('ES_O')] en la Umbra#!"
+ POD_hint_umbra_trapped_interaction_desc: "[recipient.GetShortUIName] está atrapad[recipient.GetCustom('ES_O')] en una parte peligrosa de la [umbra|E].\n\nLa comunicación es imposible, a menos que logres sacar[recipient.GetHerHim] de alguna manera."
+ 
+ POD_hint_umbra_interaction: "#difficulty_hard A través del Manto#!"
+ POD_hint_umbra_interaction_desc: O tú o [recipient.GetShortUIName] estáis en la [umbra|E], lo que hace imposible la comunicación.\n\nPodrías eludir esta limitación si ambos tuvierais una forma de comunicaros con seres del otro lado."
+ 
+ POD_hint_wight_interaction: "#difficulty_hard Feral#!"
+ POD_hint_wight_interaction_desc: "[recipient.GetShortUIName] ha perdido completamente la cabeza. Todo lo que puede hacer ahora es actuar por puro instinto animal."
+ 
+ POD_hint_robotic_interaction: "#difficulty_hard Autómata artificial#!"
+ POD_hint_robotic_interaction_desc: "Este ser fue animado mediante alguna forma de magia. Puede realizar tareas sencillas y seguir órdenes, pero poco más."
+ 
+ POD_hint_hostile_splat_interaction: "#difficulty_hard Splat hostil#!"
+ POD_hint_hostile_splat_interaction_desc: "Este personaje considera a tu [splat|E] su enemigo mortal. No tiene interés en tratos diplomáticos con los de tu clase."
