@@ -1085,7 +1085,6 @@
  POD_camarilla_tremere_justicar_right_decision_desc: "The Camarilla needs a [GetTrait('tremere').GetName( GetPlayer )] [Glossary('Justicar','game_concept_justicar_desc')]."
  POD_camarilla_tremere_justicar_right_decision_effect_tooltip: "[GetTrait('tremere').GetName( GetPlayer )] now can have a [Glossary('Justicar','game_concept_justicar_desc')] in the Camarilla."
  POD_camarilla_tremere_justicar_right_decision_confirm: "As it should be"
- 
  POD_camarilla_brujah_membership_decision_effect_tooltip: "[GetTrait('brujah').GetName( GetPlayer )] will become a new Camarilla member."
  POD_camarilla_brujah_membership_decision_custom: "There must be no non Camarilla [GetTrait('brujah').GetName( GetPlayer )] [independent_ruler|E] on the map"
  POD_camarilla_brujah_membership_decision_custom_ex: "$POD_camarilla_brujah_membership_decision_custom$ #weak ([example.GetFirstName])#!"
@@ -1265,7 +1264,6 @@
  POD_camarilla_caitiff_justicar_right_decision_desc: "The Camarilla needs a [GetTrait('caitiff').GetName( GetPlayer )] [Glossary('Justicar','game_concept_justicar_desc')]."
  POD_camarilla_caitiff_justicar_right_decision_effect_tooltip: "[GetTrait('caitiff').GetName( GetPlayer )] now can have a [Glossary('Justicar','game_concept_justicar_desc')] in the Camarilla."
  POD_camarilla_caitiff_justicar_right_decision_confirm: "As it should be"
- 
  POD_camarilla_membership_decision: "Camarilla Membership"
  POD_camarilla_membership_decision_tooltip: "You will accept a new clan as a new Camarilla member."
  POD_camarilla_membership_decision_desc: "I will accept a new clan into the Camarilla."
@@ -1502,7 +1500,6 @@
  POD_camarilla_victory_objective_decision_confirm: "The indomitable Ivory Tower."
  POD_camarilla_victory_objective_decision_custom: "Every $pod_clan$ is a Camarilla member"
  camarilla_victory_modifier: "Ivory Guardian"
- 
  #new_demon_warrior_empire_objective_decision: "The Devil Inside"
  #new_demon_warrior_empire_objective_decision_tooltip: "You will create a new Demon Warrior Empire."
  #new_demon_warrior_empire_objective_decision_desc: "The Demon Warrior Empire was a pre-dharmic society among the recently fallen [Glossary('Wan Kuei','game_concept_kuei_jin_desc')] that stood in opposition to the Five Emperors. They reveled in their new corrupted form and choose to embrace it instead of fighting it."
@@ -1617,7 +1614,7 @@
  #back_to_second_age_objective_decision_confirm: "The perfect ending."
  #back_to_second_age: "The Middle Kingdom will return to the [Glossary('Second Age','game_concept_second_age_desc')]"
  #middle_kingdom_ending_tooltip: "With the [Glossary('Second Age','game_concept_second_age_desc')] returning, your game will be over as the world you once knew will be forever changed."
- 
+
  sacrifice_perk_from_obtenebration_decision: "Sacrifice Obtenebration for Abyss Mysticism"
  sacrifice_perk_from_obtenebration_decision_tooltip: "Progressing in this path requires sacrifices."
  sacrifice_perk_from_obtenebration_decision_desc: "Sacrifice an Obtenebration level to increase your mastery of Abyssal Mysticism, unlocking new [bs_rituals|E]."
