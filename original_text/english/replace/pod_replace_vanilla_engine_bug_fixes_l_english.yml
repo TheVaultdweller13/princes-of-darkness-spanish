@@ -1,0 +1,11 @@
+﻿l_english: 
+ # This file is for temporary fixes for weird vanilla issues (crashes, hash collisions, overflows etc)
+ # They might fix themselves on future updates, so it's worth checking these regularly to see if reverting them is safe now
+
+ # Vanilla fix for crashes when hovering over artifact requirements
+ ARTIFACT_EFFECT_HAS_CAN_BENEFIT: "#S If you fulfill the requirements:#!\n"
+ POD_ARTIFACT_EFFECT_HAS_CAN_BENEFIT: "#L #S Artifact Requirements:#! #weak (see tooltip)#!#!"
+
+ # Vanilla fix for crashes when hovering over court position requirements
+ COURT_POSITION_TOOLTIP_LIEGE_REQUIREMENT_NESTED: "#L Liege Requirements#!"
+ COURT_POSITION_TOOLTIP_EMPLOYEE_REQUIREMENT_NESTED: "#L [CourtPositionType.GetNameNoTooltip] Requirements#!"

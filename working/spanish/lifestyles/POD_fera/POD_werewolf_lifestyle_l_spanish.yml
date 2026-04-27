@@ -1,0 +1,151 @@
+﻿l_spanish:
+ 
+ 
+  #Dones: Homínido
+  persuasion_perk_name: "Persuasión"
+  apecraftsblessings_perk_name: "Bendiciones de la artesanía del simio"
+  divide_perk_name: "Dividir"
+  speech_of_the_world_perk_name: "Habla del mundo"
+  staredown_perk_name: "Duelo de miradas"
+  reshape_objects_perk_name: "Remodelar objetos"
+  assimilation_perk_name: "Asimilación"
+  beyond_human_perk_name: "Más allá de lo humano"
+ 
+  APECRAFTSBLESSINGS_PERK_STATS_EFFECT: "Puedes encargar un artefacto incluso sin un anticuario."
+  DIVIDE_PERK_STATS_EFFECT: "Desbloqueas la [character_interaction|E] 'Dividir' sobre gobernantes extranjeros. Reducirá la opinión de los vasallos sobre su gobernante."
+  RESHAPE_OBJECTS_PERK_STATS_EFFECT: "Financiar las inspiraciones para artefactos o encargar uno es ahora menos costoso."
+ 
+ 
+  #Dones: Lupus
+  predators_arsenal_perk_name: "Arsenal del depredador"
+  axis_mundi_perk_name: "Axis Mundi"
+  wyld_ferocity_perk_name: "Ferocidad del $glossary_wyld$"
+  catfeet_perk_name: "Pies de gato"
+  beast_life_perk_name: "Vida de bestia"
+  terror_direwolf_perk_name: "Terror del lobo terrible"
+  boon_fathers_perk_name: "Don de los Padres Animales"
+  elemental_gift_perk_name: "Don elemental"
+ 
+ 
+  WYLD_FEROCITY_PERK_STATS_EFFECT: "Tras un saqueo exitoso, ahora reducirás un poco el desarrollo de la provincia."
+  TERROR_DIREWOLF_PERK_STATS_EFFECT: "Mejora el efecto de la ventaja Ferocidad del $glossary_wyld$, reduciendo más el desarrollo en la provincia saqueada."
+ 
+ 
+ 
+  lunar_auspicegifts_lifestyle_name: "Dones Lunares"
+  lunar_auspicegifts_lifestyle_desc: "Céntrate en los dones que vienen con tu Auspicio Lunar."
+  lunar_auspicegifts_lifestyle_highlight_desc: "Debido a tu $POD_energy_gnosis$, ganas un #P [GetPlayer.MakeScope.ScriptValue('gnosis_lifestyle_xp_mult')|%0]#! más de [experience|E] en este estilo de vida."
+  monthly_lunar_auspicegifts_lifestyle_xp_gain_mult: "[experience|E] mensual de [lifestyle|E] de Dones de Auspicio Lunar"
+  lunar_auspicegifts_focus: "Enfoque en Dones de Auspicio Lunar"
+  lunar_auspicegifts_focus_modifier: "[GetFocus('lunar_auspicegifts_focus').GetName]"
+  lunar_auspicegifts_focus_desc: "Los Dones de las cinco fases lunares."
+  lunar_auspicegifts_focus_effect_desc: "Centrarse en Dones de Auspicio Lunar otorga:"
+  lunar_auspicegifts_ahroun_visible: "Ahroun"
+  lunar_auspicegifts_galliard_visible: "Galliard"
+  lunar_auspicegifts_ragabash_visible: "Ragabash"
+  lunar_auspicegifts_philodox_visible: "Philodox"
+  lunar_auspicegifts_theurge_visible: "Theurge"
+ 
+ 
+  #Dones: Ahroun
+  battlesense_perk_name: "Sentido de batalla"
+  inspiration_perk_name: "Inspiración"
+  pack_tactics_perk_name: "Tácticas de manada"
+  true_fear_perk_name: "Miedo verdadero"
+  shake_earth_perk_name: "Sacudir la tierra"
+  challenge_combat_perk_name: "Desafío de combate singular"
+  strength_will_perk_name: "Fuerza de voluntad"
+  shared_strength_perk_name: "Fuerza compartida"
+  unstoppable_warrior_perk_name: "Guerrero imparable"
+ 
+  NEEDS_AHROUN_TEXT: "@warning_icon!#X Requiere el [traits|E] [GetTrait('ahroun').GetName( GetPlayer )] para comprar ventajas en este árbol.#!"
+  INSPIRATION_PERK_STATS_EFFECT: "Desbloqueas la [character_interaction|E] 'Inspiración' sobre otros hombres lobo y parientes. Esto aumentará su proeza."
+  PACK_TACTICS_PERK_STATS_EFFECT: "Mejoras la [character_interaction|E] 'Inspiración', añadiendo ventaja a la bonificación otorgada."
+  CHALLENGE_COMBAT_PERK_STATS_EFFECT: "Desbloqueas la interacción 'Castigar criminal', que te permite batirte en duelo con cualquier personaje que consideres un criminal para imponer su castigo." 
+  STRENGTH_WILL_PERK_STATS_EFFECT: "Mejoras la [character_interaction|E] 'Inspiración', añadiendo más proeza a la bonificación otorgada." 
+  SHARED_STRENGTH_PERK_STATS_EFFECT: "Como [character_interaction|E], permite transferir una de tus habilidades al objetivo."
+  UNSTOPPABLE_WARRIOR_PERK_STATS_EFFECT: "#F El hombre lobo con este potente Don puede ignorar incluso las llamas y las garras de su propia especie.#!"
+  UNSTOPPABLE_WARRIOR_REQUIREMENT: "@warning_icon!#X Necesitas terminar una misión del Incarna Guerrero (estaciona a un explorador en cualquier reino de la umbra para encontrar una pista sobre la ubicación e inicia una [umbra_expedition|E] para llegar a ellos y luego recibir una misión) para desbloquear esta ventaja.#!"
+ 
+ 
+ 
+ 
+  #Dones: Galliard
+  primal_song_perk_name: "Canción primordial"
+  howls_night_perk_name: "Aullidos en la noche"
+  mimic_perk_name: "Mímica"
+  song_heroes_perk_name: "Canción de los héroes"
+  veil_mother_perk_name: "Velo de la madre"
+  song_rage_perk_name: "Canción de la rabia"
+  bridge_walker_perk_name: "Caminante de puentes"
+  song_siren_perk_name: "Canción de la sirena"
+  storyteller_perk_name: "Cuentacuentos"
+ 
+  NEEDS_GALLIARD_TEXT: "@warning_icon!#X Requiere el [traits|E] [GetTrait('galliard').GetName( GetPlayer )] para comprar ventajas en este árbol.#!"
+  PRIMAL_SONG_PERK_STATS_EFFECT: "Desbloqueas la [character_interaction|E] 'Canción primordial' sobre ti mismo. Luego puedes elegir una canción para interpretar. Hay canciones adicionales disponibles en el resto de este árbol de estilo de vida."
+  SONG_HEROES_PERK_STATS_EFFECT: "Desbloqueas una canción adicional que se puede interpretar usando la [character_interaction|E] 'Canción primordial'."
+  SONG_RAGE_PERK_STATS_EFFECT: "Desbloqueas una canción adicional que se puede interpretar usando la [character_interaction|E] 'Canción primordial'." 
+  SONG_SIREN_PERK_STATS_EFFECT: "Desbloqueas una canción adicional que se puede interpretar usando la [character_interaction|E] 'Canción primordial'."
+  STORYTELLER_PERK_STATS_EFFECT: "Como [character_interaction|E], permite usar $POD_energy_gnosis$ para tener la oportunidad de que ocurra un evento aleatorio.\n#F En lugar de simplemente contar y volver a contar las historias de antaño, o incluso esperar hasta que los eventos del día se conviertan en las nuevas historias, el Galliard puede cambiar los eventos del drama en curso que se desarrolla a su alrededor. Puede añadir nuevos \"personajes\", alterar cadenas de eventos e incluso cambiar las motivaciones de los participantes principales. Sin embargo, como este Don puede tener literalmente ramificaciones que alteran el mundo, el puñado de Garou en la historia que lo han conocido se han mostrado reacios a usarlo realmente. Nadie sabe qué tipo de espíritu enseña este Don; presumiblemente un avatar de Gaia, pero como tan pocos Garou conocen siquiera la existencia del Don, nadie puede decirlo con certeza.#!" 
+  STORYTELLER_REQUIREMENT: "@warning_icon!#X Necesitas terminar una misión de un avatar de Gaia (estaciona a un explorador en cualquier reino de la umbra para encontrar una pista sobre la ubicación e inicia una [umbra_expedition|E] para llegar a ellos y luego recibir una misión) para desbloquear esta ventaja.#!"
+ 
+ 
+ 
+  #Dones: Philodox
+  truth_gaia_perk_name: "Verdad de Gaia"
+  aura_leadership_perk_name: "Aura de liderazgo"
+  fangs_judgment_perk_name: "Colmillos del juicio"
+  command_gathering_perk_name: "Comandar la asamblea"
+  bonds_us_perk_name: "Vínculos que nos unen"
+  undisputed_ruler_perk_name: "Gobernante indiscutible"
+  scent_beyond_perk_name: "Aroma del más allá"
+  roll_over_perk_name: "Someterse"
+  release_from_bondage_perk_name: "Liberación de la esclavitud"
+ 
+  NEEDS_PHILODOX_TEXT: "@warning_icon!#X Requiere el [traits|E] [GetTrait('philodox').GetName( GetPlayer )] para comprar ventajas en este árbol.#!"
+  AURA_LEADERSHIP_PERK_STATS_EFFECT: "Desbloqueas la decisión menor 'Juez de la Tierra'. Beneficiará a tu capital. Hay beneficios adicionales disponibles en el resto de este árbol de estilo de vida."
+  COMMAND_GATHERING_PERK_STATS_EFFECT: "Desbloqueas una recompensa adicional que se otorgará durante la decisión menor 'Juez de la Tierra'."
+  RELEASE_FROM_BONDAGE_PERK_STATS_EFFECT: "Ganas fuertes defensas mentales, lo que te hace inmune a algunos poderes mentales.\nComo [character_interaction|E], permite usar $POD_energy_gnosis$ para hacer que un objetivo gaste un gancho que tenga sobre ti.\n#F Hay muchas formas de doblegar místicamente la voluntad de otro. Este Don rompe todos esos vínculos, desde la dominación de sangre de un vampiro hasta el control mental de un mago o el geas de un Media Luna. Aquellos que conocen este Don pueden usarlo sobre cualquier ser, incluyéndose a sí mismos. Este Don solo es otorgado por un Incarna o un espíritu igualmente poderoso, normalmente como recompensa por algún gran servicio.#!"
+  RELEASE_FROM_BONDAGE_REQUIREMENT: "@warning_icon!#X Necesitas terminar una misión de un Incarna (estaciona a un explorador en cualquier reino de la umbra para encontrar una pista sobre la ubicación e inicia una [umbra_expedition|E] para llegar a ellos y luego recibir una misión) para desbloquear esta ventaja.#!"
+ 
+  TRUTH_GAIA_PERK_BONUS_VALUE: "[GetPerk('truth_gaia_perk').GetName(GetPlayer)]"
+ 
+ 
+  #Dones: Ragabash
+  liar_face_perk_name: "Rostro de mentiroso"
+  snow_running_perk_name: "Correr por la nieve"
+  obscure_truth_perk_name: "Oscurecer la verdad"
+  peace_counselor_perk_name: "Paz del consejero"
+  sticky_fingers_perk_name: "Dedos pegajosos"
+  deliberate_misinformation_perk_name: "Desinformación deliberada"
+  reynard_lie_perk_name: "La mentira de Reynard"
+  fool_luck_perk_name: "Suerte del tonto"
+  firebringer_perk_name: "Portador del fuego"
+ 
+  NEEDS_RAGABASH_TEXT: "@warning_icon!#X Requiere el [traits|E] [GetTrait('ragabash').GetName( GetPlayer )] para comprar ventajas en este árbol.#!"
+  OBSCURE_TRUTH_PERK_STATS_EFFECT: "Desbloquea la [deceitful_progress_hostile_schemes_decision|E]"
+  STICKY_FINGERS_PERK_STATS_EFFECT: "Desbloquea la [buy_artifact_claim_interaction|E]"
+  DELIBERATE_MISINFORMATION_PERK_STATS_EFFECT: "Desbloquea la [scheme|E] [GetScheme('claim_throne').GetTypeName]"
+  REYNARD_LIE_PERK_STATS_EFFECT: "Desbloquea la [impatient_rushing_all_schemes_decision|E]"
+  FIREBRINGER_PERK_STATS_EFFECT: "Probabilidad de ganar un punto de ventaja de estilo de vida aleatorio por cada ser sobrenatural muerto.\nGana [prestige|E] y [dynasty_prestige|E] cuando realices la [interaction|E] de entrenamiento de estilo de vida.\n#F El Ragabash realiza el truco definitivo, robando un poder sobrenatural y convirtiéndolo en un Don, que a su vez puede ser otorgado a otros como si la Luna Nueva fuera un maestro espiritual. Por desgracia, el Ragabash debe primero sobrevivir a que el poder sea usado sobre él. Coyote u otro Incarna embaucador enseña este Don.#!"
+  FIREBRINGER_REQUIREMENT: "@warning_icon!#X Necesitas terminar una misión de un Incarna embaucador (estaciona a un explorador en cualquier reino de la umbra para encontrar una pista sobre la ubicación e inicia una [umbra_expedition|E] para llegar a ellos y luego recibir una misión) para desbloquear esta ventaja.#!"
+ 
+  
+  #Dones: Theurge
+  spirit_speech_perk_name: "Habla de los espíritus"
+  sense_wyrm_perk_name: "Sentir al $glossary_wyrm$"
+  hear_silence_perk_name: "Oír el silencio"
+  sense_chiminage_perk_name: "Sentir Chiminage"
+  spirit_skin_perk_name: "Piel de espíritu"
+  name_spirit_perk_name: "Nombrar al espíritu"
+  prophetic_vision_perk_name: "Visión profética"
+  spirit_vessel_perk_name: "Receptáculo espiritual"
+  rebirthing_perk_name: "Renacimiento"
+ 
+  NEEDS_THEURGE_TEXT: "@warning_icon!#X Requiere el [traits|E] [GetTrait('theurge').GetName( GetPlayer )] para comprar ventajas en este árbol.#!"
+  SPIRIT_SPEECH_PERK_STATS_EFFECT: "Puede reclutar [GetMaA('jagglings').GetName] como [men_at_arms|E]"
+  HEAR_SILENCE_PERK_STATS_EFFECT: "Desbloquea la decisión menor Meditar en reclusión"
+  NAME_SPIRIT_PERK_STATS_EFFECT: "Desbloquea la decisión menor Pedir ayuda a los espíritus."
+  PROPHETIC_VISION_PERK_STATS_EFFECT: "Desbloquea la [decision|E] Adivinar las estrellas\nRecibirás una notificación si alguien pretende asesinar a tus amigos o familiares.\nRecibirás una notificación si alguien pretende seducir a tus amantes o consortes.\nTu prisionero tiene menos probabilidades de escapar de tu prisión."
+  REBIRTHING_PERK_STATS_EFFECT: "Renacerás como un personaje de #V 1#! año si mueres.\n#F Este, el más sagrado y raro de los Dones de Gaia, permite al Garou, tras su muerte, reencarnarse instantáneamente en el cuerpo de un cachorro recién nacido que viva a menos de 2.000 millas de donde murió el Garou. La reencarnación es casi siempre de la misma raza que el Garou tenía en su vida anterior, pero puede ser en otra raza si el único recién nacido dentro del rango no es de la raza original. Si no hay cachorros recién nacidos en el rango dentro de un giro de la luna desde el momento de la muerte, entonces el Garou no renace y va a donde van todos los Garou tras la muerte.#!"
+  REBIRTHING_REQUIREMENT: "@warning_icon!#X Necesitas terminar una misión de la propia Gaia (estaciona a un explorador en cualquier reino de la umbra para encontrar una pista sobre la ubicación e inicia una [umbra_expedition|E] para llegar a ellos y luego recibir una misión) para desbloquear esta ventaja.#!"

@@ -1,0 +1,53 @@
+﻿l_spanish:
+ POD_demonic_submission_interaction: "Poder tras el Trono"
+ POD_demonic_submission_interaction_desc: "Regala tu título principal a [recipient.GetFirstName] y júrale lealtad."
+ 
+ POD_set_thrall_interaction: "Esclavizar"
+ POD_set_thrall_interaction_desc: "Esclaviza a [recipient.GetFirstName], convirtiéndolo en un [thrall|E] a tu servicio."
+ POD_set_thrall_interaction_extra_icon: "$hook_extra_icon$"
+ 
+ POD_remove_thrall_interaction: "Cancelar pacto"
+ POD_remove_thrall_interaction_desc: "Cancela el pacto, haciendo que [recipient.GetFirstName] deje de ser tu [thrall|E]."
+ POD_enthrall_interaction_limit: "¡El número de esclavos está limitado! (3 más 1 por cada [intrigue_i]#V 8#! de [intrigue|E] más cualquier bonificación de otras fuentes)"
+ 
+ POD_set_cultist_interaction: "Reconocer cultista"
+ POD_set_cultist_interaction_desc: "Reconoce a [recipient.GetFirstName] como tu [cultist|E]."
+ POD_set_cultist_interaction_extra_icon: "$hook_extra_icon$"
+ POD_set_cultist_vassal_requirement: "Debe ser tu [courtier|E], tu [direct_vassal|E] o el [direct_vassal|E] de tu [thrall|E]"
+ POD_set_cultist_interaction_effect: "¡Tu [GetCourtPositionType('cult_leader_court_position').GetName()] ha adoctrinado a un nuevo [cultist|E] en tu culto!"
+ 
+ POD_remove_cultist_interaction: "Rechazar cultista"
+ POD_remove_cultist_interaction_desc: "Rechaza la adoración de [recipient.GetFirstName], deja de considerarlo como tu [cultist|E]."
+ 
+ POD_summon_demon_interaction: "Convocar demonio"
+ POD_summon_demon_interaction_desc: "Convoca a un [GetTrait('demon').GetName( GetPlayer )] en [recipient.GetFirstName]."
+ 
+ SAME_FAITH: "Sois de la misma fe: $VALUE|+0$" 
+  
+ POD_command_thrall_gold_interaction: "Comandar [thrall|E] #weak (Oro)#!"
+ POD_command_thrall_gold_interaction_desc: "Ofrece un don de poder para hacer que [recipient.GetFirstName] te pague oro."
+ POD_command_thrall_gold_interaction_option_minor_gold: "Oro menor"
+ POD_command_thrall_gold_interaction_option_medium_gold: "Oro medio"
+ POD_command_thrall_gold_interaction_option_major_gold: "Oro mayor"
+ POD_command_thrall_gold_interaction_option_massive_gold: "Oro masivo"
+ POD_command_thrall_gold_interaction_option_monumental_gold: "Oro monumental"
+ POD_command_thrall_gold_interaction_option_excessive_gold: "Oro excesivo"
+ POD_command_thrall_gold_interaction_option_omega_gold: "Oro Omega"
+  
+ POD_command_thrall_artifact_interaction: "Comandar [thrall|E] #weak (Artefacto)#!"
+ POD_command_thrall_artifact_interaction_desc: "Ofrece un don de poder para hacer que [recipient.GetFirstName] te regale un artefacto."
+  
+ POD_command_thrall_title_interaction: "Comandar [thrall|E] #weak (Título)#!"
+ POD_command_thrall_title_interaction_desc: "Ofrece un don de poder para hacer que [recipient.GetFirstName] te regale un título (nunca el principal)."
+ 
+ POD_command_thrall_vassal_interaction: "Comandar [thrall|E] #weak (Vasallo)#!"
+ POD_command_thrall_vassal_interaction_desc: "Ofrece un don de poder para hacer que [recipient.GetFirstName] te transfiera un vasallo."
+ recipient_secondary_POD_command_thrall_vassal_interaction: "Vasallo"
+  
+ POD_command_thrall_war_interaction: "Comandar [thrall|E] #weak (Guerra)#!"
+ POD_command_thrall_war_interaction_desc: "Ofrece un don de poder para hacer que [recipient.GetFirstName] inicie una guerra contra un gobernante vecino."
+ recipient_secondary_POD_command_thrall_war_interaction: "Objetivo de guerra"
+ 
+ demon_demand_tt: "Puedes recibir una exigencia de tu maestro demonio al comienzo del año. Una exigencia no cumplida te dará estrés cada #V 3#! meses."
+ POD_demon_demand_unfinished: "Exigencia no cumplida"
+ POD_demon_demand_unfinished.tt: "Ganas estrés debido a una exigencia no cumplida de tu maestro demonio."

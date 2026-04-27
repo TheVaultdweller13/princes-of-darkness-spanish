@@ -1,0 +1,174 @@
+﻿l_spanish:
+ soul_arts_lifestyle_name: "Artes del Alma"
+ soul_arts_lifestyle_desc: "Las Artes del Alma son cultivos extendidos de las Virtudes centrales y la canalización del Chi. Su potencial es enorme, pero alcanzarlo es difícil y lento."
+ soul_arts_lifestyle_highlight_desc: "Debido a tu [Glossary('Dharma','podgloss.dharma')], ganas un #P [GetPlayer.MakeScope.ScriptValue('dharma_lifestyle_xp_mult')|%0]#! más de [experience|E] en este estilo de vida."
+ monthly_soul_arts_lifestyle_xp_gain_mult: "[experience|E] mensual de [lifestyle|E] de Artes del Alma"
+ monthly_soul_arts_lifestyle_xp_gain_add: "[experience|E] mensual de [lifestyle|E] de Artes del Alma"
+
+ soul_arts_focus: "Enfoque en Artes del Alma"
+ soul_arts_focus_modifier: "[GetFocus('soul_arts_focus').GetName]"
+ soul_arts_focus_desc: "Cultivando tu alma."
+ soul_arts_focus_effect_desc: "Centrarse en Artes del Alma otorga:"
+
+ the_ghost_arts_visible: "Las Artes Fantasmales"
+ the_heavenly_arts_visible: "Las Artes Celestiales"
+ the_beast_arts_visible: "Las Artes de la Bestia"
+ the_devil_arts_visible: "Las Artes del Diablo"
+ the_dragon_tear_visible: "La Lágrima del Dragón"
+ the_hell_weaving_visible: "Tejido Infernal"
+
+ soul_arts_ghost_mask_perk_name: "Máscara fantasmal"
+ soul_arts_crippling_sorrows_perk_name: "Pesares paralizantes"
+ soul_arts_death_lines_perk_name: "Líneas de muerte"
+ SOUL_ARTS_GHOST_MASK_PERK_EFFECT: "Te permite interactuar con seres de la [umbra|E] cuando estás en el mundo material.\n#flavor El Hambriento mueve Chi espectral sobre su rostro y cuerpo, dándole la capacidad de mirar más profundamente en el Inframundo y hablar con sus residentes como si estuviera allí con ellos.#!"
+ SOUL_ARTS_CRIPPLING_SORROWS_PERK_PERK_EFFECT: "Como [character_interaction|E], otorga [GetModifier('soul_arts_crippling_sorrows_modifier').GetNameWithTooltip] a tu objetivo durante 5 años.\n#flavor Quien mira al cultivador recuerda, de golpe, todo lo que ha perdido.#!"
+ SOUL_ARTS_DEATH_LINES_PERK_EFFECT: "#flavor El cultivador puede desvelar la fragilidad de la existencia, con qué facilidad las cosas pueden romperse y morir.#!"
+
+ soul_arts_like_a_whisp_perk_name: "Como un fuego fatuo"
+ soul_arts_beacon_of_longing_perk_name: "Faro de anhelo"
+ soul_arts_the_touch_of_ghost_metal_perk_name: "El toque del metal fantasma"
+ SOUL_ARTS_LIKE_A_WHISP_PERK_EFFECT: "Como [character_interaction|E], detén todas las [schemes|E] dirigidas contra ti.\n#flavor El cultivador extiende una capa de Chi similar a la tinta sobre todo su cuerpo, volviéndose verdaderamente invisible a los ojos mortales.#!"
+ SOUL_ARTS_BEACON_OF_LONGING_PERK_EFFECT: "$POD_can_summon_wraith_trigger_loca$\n$POD_can_summon_on_death_trigger_loca$\n#flavor El Chi del Hambriento lo ilumina como una hoguera blanca: invisible para los vivos, pero atrayente para los muertos.#!"
+ SOUL_ARTS_THE_TOUCH_OF_GHOST_METAL_PERK_EFFECT: "#flavor El metal del inframundo está maldito, causando heridas graves a sus habitantes nativos. Esta técnica convierte cualquier metal terrenal en la misma sustancia.#!"
+
+ soul_arts_world_of_quiet_perk_name: "Mundo de silencio"
+ soul_arts_through_the_spider_lily_gate_perk_name: "A través de la puerta del lirio araña"
+ soul_arts_making_love_to_ghosts_perk_name: "Hacer el amor con fantasmas"
+ SOUL_ARTS_WORLD_OF_QUIET_PERK_EFFECT: "Como [character_interaction|E], otorga [GetModifier('soul_arts_world_of_quiet_modifier').GetNameWithTooltip] a tu objetivo durante 10 años.\n#flavor Cuando el cultivador necesita reunirse en privado, esta técnica deja caer un velo sobre él y sus camaradas, o sobre sus víctimas inconscientes.#!"
+ SOUL_ARTS_THROUGH_THE_SPIDER_LILY_GATE_PERK_EFFECT: "#flavor Con esta técnica, todo el inframundo está abierto al cultivador, si uno está dispuesto a caminar.#!"
+ SOUL_ARTS_MAKING_LOVE_TO_GHOSTS_PERK_EFFECT: "$POD_can_bind_wraith_trigger_loca$\n$POD_can_command_wraith_trigger_loca$\n#flavor Los cuentos populares son ciertos: intimar con los muertos es acabar uniéndose a ellos. El Hambriento libera un veneno negro espectral, ya sea rociado directamente desde su boca o como una niebla desde sus poros.#!"
+
+ soul_arts_haunters_rage_perk_name: "Rabia del atormentador"
+ soul_arts_curse_of_ashes_perk_name: "Maldición de las cenizas"
+ SOUL_ARTS_HAUNTERS_RAGE_PERK_EFFECT: "$POD_can_weaken_fetter_trigger_loca$\n#flavor Los fantasmas son criaturas de extremos apasionados, que el cultivador emula canalizando el pandemónium espectral.#!"
+ SOUL_ARTS_CURSE_OF_ASHES_PERK_EFFECT: "Otorga un [GetModifier('soul_arts_curse_of_ashes_modifier').GetNameWithTooltip] a los [knights|E] enemigos cuando actúes como [commander|E] durante la [combat_phase|E], o a tu enemigo durante los [single_combat_duel_plural|E].\n#flavor El Hambriento toca a su objetivo elegido, dejándolo completamente incapaz de saciarse. El hambre, la sed y la lujuria se vuelven insoportables, pero ninguna cantidad de comida o placer ayuda.#!"
+
+ soul_arts_graveyard_song_perk_name: "Canción del cementerio"
+ soul_arts_death_punch_perk_name: "Puñetazo de muerte"
+ SOUL_ARTS_GRAVEYARD_SONG_PERK_EFFECT: "Como [character_interaction|E], otorga [GetModifier('soul_arts_graveyard_song_modifier').GetNameWithTooltip] al [duchy|E] en el que se encuentre tu objetivo.\n#flavor El cultivador encuentra un lugar tranquilo que resuena con los muertos y canta una melodía dulce y resonante: un canto fúnebre o una triste canción de amor, es difícil de decir. Los viejos amantes se reúnen, los familiares muertos comparten sus secretos y, por un momento fugaz, los vivos y los muertos son como uno solo.#!"
+ SOUL_ARTS_DEATH_PUNCH_PERK_EFFECT: "Si un personaje al que has matado resucita, ganará [GetModifier('soul_arts_death_punch_modifier').GetNameWithTooltip] durante 10 años.\n#flavor Con un solo golpe, el cultivador separa la carne y el espíritu, potencialmente para siempre.#!"
+
+
+ soul_arts_mortal_perfection_perk_name: "Perfección mortal"
+ soul_arts_the_scent_of_heavens_favor_perk_name: "El aroma del favor del cielo"
+ SOUL_ARTS_MORTAL_PERFECTION_PERK_EFFECT: "Como [character_interaction|E], otorga [GetModifier('soul_arts_mortal_perfection_modifier').GetNameWithTooltip] a tu objetivo.\n#flavor El Hambriento emite Chi divino, que aparece ante los espiritualmente sensibles como ráfagas de polen brillante desde su piel. Siempre está preparado y siempre es elegante.#!"
+ SOUL_ARTS_THE_SCENT_OF_HEAVENS_FAVOR_PERK_EFFECT: "Como [character_interaction|E], convoca a un [GetTrait('mortal').GetName(GetNullCharacter)] con las [skills|E] de tu elección a tu [court|E].\n#flavor El Hambriento emite Chi divino, que aparece ante los espiritualmente sensibles como ráfagas de polen brillante desde su piel. Siempre está preparado y siempre es elegante.#!"
+
+ soul_arts_waywards_brand_perk_name: "Marca del descarriado"
+ soul_arts_read_destiny_perk_name: "Leer destino"
+ soul_arts_throat_cage_of_heaven_perk_name: "Jaula de garganta del cielo"
+ SOUL_ARTS_WAYWARDS_BRAND_PERK_EFFECT: "Como [character_interaction|E], otorga [GetModifier('soul_arts_waywards_brand_modifier').GetNameWithTooltip] a tu objetivo.\n#flavor El Hambriento toca a alguien, marcándolo como una persona despreciada por los dioses. La gente instintivamente retrocede ante ellos y los rehúye, dejándolos confundidos y desesperados.#!"
+ SOUL_ARTS_READ_DESTINY_PERK_EFFECT: "Recibirás una notificación si alguien pretende asesinar a tus amigos o familiares.\nRecibirás una notificación si alguien pretende seducir a tus amantes o consortes.\n#flavor El cultivador observa el flujo de energía en los Cielos Inferiores, vigilando cuidadosamente dónde se arremolina y se acumula.#!"
+ SOUL_ARTS_THROAT_CAGE_OF_HEAVEN_PERK_EFFECT: "Más probable [imprison|E] a [characters|E] tras un [siege|E] o [raid|E] exitoso.\n#flavor El cultivador deja escapar un zumbido profundo, o canta mientras canaliza sus chakras superiores. Aquellos que oigan la canción se quedarán congelados en el sitio, atados por ligaduras doradas espirituales.#!"
+
+ soul_arts_mantle_of_living_prayer_perk_name: "Manto de oración viva"
+ soul_arts_beloved_champion_perk_name: "Campeón amado"
+ soul_arts_fate_of_one_perk_name: "Destino de uno"
+ soul_arts_the_gods_are_correct_perk_name: "Los dioses tienen razón"
+ SOUL_ARTS_MANTLE_OF_LIVING_PRAYER_PERK_EFFECT: "#flavor Puedes cruzar a los Cielos Inferiores, pero las criaturas de allí solo confían en los suyos, y con esta técnica, puedes engañarlos lo suficiente.#!"
+ SOUL_ARTS_BELOVED_CHAMPION_PERK_EFFECT: "Cuando comienza una guerra, tu campeón con mayor proeza obtendrá [GetModifier('soul_arts_beloved_champion_modifier').GetNameWithTooltip] durante 2 años.\n#flavor El cultivador designa a alguien como su campeón personal, tocando su frente con una mancha de sangre que brilla con un oro vívido e inconfundible en los mundos espirituales.#!"
+ SOUL_ARTS_FATE_OF_ONE_PERK_EFFECT: "#flavor El cultivador crea un signo de suerte, que bendice —o maldice— a quienes están en su presencia.#!"
+ SOUL_ARTS_THE_GODS_ARE_CORRECT_PERK_EFFECT: "Los personajes sin defensas mentales fuertes son más propensos a aceptar tus propuestas de vasallaje.\n#flavor Luciendo un halo dorado que es visible para los espiritualmente sensibles, la cultivadora afirma su autoridad y declara una verdad en la que ella misma cree, y el mundo la sigue.#!"
+
+ soul_arts_dance_of_the_kinnara_perk_name: "Danza de los Kinnara"
+ soul_arts_i_am_your_doom_perk_name: "Yo soy tu perdición"
+ SOUL_ARTS_DANCE_OF_THE_KINNARA_PERK_EFFECT: "Como [character_interaction|E], cambia de forma a [GetModifier('POD_shapeshift_form_divine_bird_modifier').GetNameWithTooltip].\n#flavor Un Hambriento se transforma para la escena en un hermoso híbrido de ave y humano con alas doradas. Esta forma es espiritual, pero rebosa de tal potencia brillante que incluso los humanos mundanos captarán vislumbres momentáneos de la verdad.#!"
+ SOUL_ARTS_I_AM_YOUR_DOOM_PERK_EFFECT: "Como [character_interaction|E], otorga un [modifier|E] que disminuye una [skill|E] elegida en #N 5#! #weak (ej. [GetModifier('soul_arts_i_am_your_doom_diplomacy_modifier').GetNameWithTooltip])#! a tu objetivo.\n#flavor Un enemigo de los dioses no vive mucho: son nombrados por el cultivador, y el destino se mueve en consecuencia.#!"
+
+ soul_arts_divinity_key_perk_name: "Llave de la divinidad"
+ soul_arts_fate_of_houses_perk_name: "Destino de las casas"
+ SOUL_ARTS_DIVINITY_KEY_PERK_EFFECT: "Elimina el coste de entrar en la [umbra|E].\n#flavor Los reinos de la Gran Rueda se abren al maestro. Lo que sorprende a la mayoría de los que logran esta técnica es que en realidad se manifiesta como una llave dorada, que brilla con una luz interna.#!"
+ SOUL_ARTS_FATE_OF_HOUSES_PERK_EFFECT: "Como [character_interaction|E], otorga [GetModifier('joss_modifier').GetNameWithTooltip] a tu objetivo y a toda su [court|E], así como a todos sus [vassals|E].\n#flavor El maestro de la Rectitud tira del destino en una dirección particular, moldeando el futuro de una ubicación específica.#!"
+
+
+
+
+ soul_arts_tea_with_beasts_perk_name: "Té con bestias"
+ soul_arts_at_the_gates_of_wind_and_water_perk_name: "A las puertas del viento y el agua"
+ SOUL_ARTS_TEA_WITH_BEASTS_PERK_EFFECT: "#flavor El habla de los animales, desde la hormiga más humilde hasta la ballena más grande, no es nada para los Muertos Hambrientos.#!"
+ SOUL_ARTS_AT_THE_GATES_OF_WIND_AND_WATER_PERK_EFFECT: "Puede reclutar varios tipos de animales como [men_at_arms|E].\n#flavor Los ojos del Hambriento se arremolinan en azul pálido mientras resuena con el Reino de las Bestias, con los seres salvajes más pequeños acercándose a él como una nube de luciérnagas.#!"
+
+ soul_arts_healing_sleep_perk_name: "Sueño curativo"
+ soul_arts_goblin_cat_perk_name: "Gato trasgo"
+ soul_arts_duke_of_the_wild_perk_name: "Duque de lo salvaje"
+ SOUL_ARTS_HEALING_SLEEP_PERK_EFFECT: "Al comienzo de una batalla, obliga al [knight|E] enemigo con mayor [prowess|E] a abandonar la lucha siempre que no tenga defensas mentales fuertes.\n#flavor Con un toque, el cultivador otorga la hibernación reparadora del invierno convirtiéndose en primavera.#!"
+ SOUL_ARTS_GOBLIN_CAT_PERK_EFFECT: "Como [character_interaction|E], convoca a una mascota.\n#flavor El cultivador puede convertir a cualquier animal en su familiar por la noche, o a un ejército de ellos, si su Alma de Bestia es lo suficientemente grande.#!"
+ SOUL_ARTS_DUKE_OF_THE_WILD_PERK_EFFECT: "#flavor Para aquellos con sentidos espirituales, el cultivador del Alma de Bestia parece ser consumido por un fuego blanco azulado, tras lo cual emerge en la forma aparente de un poderoso ser salvaje: un espíritu de camino descomunal, o un espíritu de buitre de alas gigantes, o lo que sea.#!"
+
+ soul_arts_summon_wilding_spirit_perk_name: "Convocar espíritu salvaje"
+ soul_arts_junkyard_menagerie_perk_name: "Casa de fieras del desguace"
+ soul_arts_running_with_the_wolves_perk_name: "Corriendo con los lobos"
+ SOUL_ARTS_SUMMON_WILDING_SPIRIT_PERK_EFFECT: "#flavor El cultivador hace una llamada a un espíritu nombrado, que es irresistible para sus oídos.#!"
+ SOUL_ARTS_JUNKYARD_MENAGERIE_PERK_EFFECT: "Puede reclutar [GetMaA('jagglings').GetName] como [men_at_arms|E].\n#flavor El Hambriento se toma un turno para soplar una nube de chi azul pálido desde su palma, que se asienta como polvo y despierta a los espíritus salvajes de los objetos inanimados.#!"
+ SOUL_ARTS_RUNNING_WITH_THE_WOLVES_PERK_EFFECT: "#flavor Las bestias de la tierra a menudo ignoran la Celosía de formas que los humanos no pueden, cruzando entre senderos tanto físicos como espirituales.#!"
+
+ soul_arts_god_of_the_glen_perk_name: "Dios de la cañada"
+ soul_arts_one_nights_revival_perk_name: "Renacimiento de una noche"
+ SOUL_ARTS_GOD_OF_THE_GLEN_PERK_EFFECT: "Desbloquea varias opciones de cambio de forma animal.\n#flavor Los Muertos Hambrientos que viajan por los mundos espirituales suelen estar limitados a una aproximación de sus formas físicas, pero no un cultivador del Alma de Bestia.#!"
+ SOUL_ARTS_ONE_NIGHTS_REVIVAL_PERK_EFFECT: "Tus mascotas ya no podrán morir.\n#flavor La ironía de esta técnica no se le escapa a los conocedores del horror. Por una pequeña donación de energía vital, un Hambriento puede vivificar un cadáver humano o animal recientemente muerto, uniendo músculo, hueso y piel y forzando la chispa de la vida.#!"
+
+ soul_arts_spirited_away_perk_name: "El viaje de Chihiro"
+ soul_arts_stone_lion_perk_name: "León de piedra"
+ SOUL_ARTS_SPIRITED_AWAY_PERK_EFFECT: "Cada #V 15#! años, si tu capital tiene un espacio de [duchy_building|E], un Nido de Dragón en él subirá de nivel.\n#flavor En noches de festival y lunas llenas, los humanos pueden tropezar con el otro mundo... y a veces un cultivador forzará la situación, reuniéndolos en una tormenta espiritual masiva.#!"
+ SOUL_ARTS_STONE_LION_PERK_EFFECT: "Desbloquea [GetMaA('stone_lions').GetName] como [men_at_arms|E].\n#flavor Las bestias guardianas de templos y santuarios cobran vida a voluntad del Hambriento.#!"
+
+
+
+ soul_arts_ogres_bearning_perk_name: "Porte de ogro"
+ soul_arts_read_the_inner_darkness_perk_name: "Leer la oscuridad interior"
+ soul_arts_tears_of_hell_perk_name: "Lágrimas del infierno"
+ SOUL_ARTS_OGRES_BEARNING_PERK_EFFECT: "#flavor El cultivador libera un aura de Chi ardiente, apareciendo ante los espiritualmente sensibles como un demonio aterrador envuelto en fuego, pero todos, sensibles o no, sienten el miedo.#!"
+ SOUL_ARTS_READ_THE_INNER_DARKNESS_PERK_EFFECT: "Como [character_interaction|E], descubre un [secret|E] aleatorio de tu objetivo.\n#flavor El cultivador mira a los ojos de alguien y ve algo que preferiría mantener oculto.#!"
+ SOUL_ARTS_TEARS_OF_HELL_PERK_EFFECT: "Como [character_interaction|E], otorga a tu objetivo [stress|E] basado en su cantidad de [traits|E] [sinful|E].\n#flavor El Hambriento llena sus ojos y oídos con chi rojo sangre, que se desborda y gotea. Cualquier cosa marcada por la corrupción o la crueldad es ahora tan clara para ella como las luciérnagas en la noche: espíritus atormentados, Muertos Hambrientos con Sufrimiento, puertas ocultas al infierno y más.#!"
+
+ soul_arts_wrathful_ajna_perk_name: "Ajna iracundo"
+ soul_arts_chainbreaker_meditation_perk_name: "Meditación rompecadenas"
+ SOUL_ARTS_WRATHFUL_AJNA_PERK_EFFECT: "#flavor con esta técnica, la frente del Hambriento se abre para revelar un ojo bermellón humeante, visible para los espiritualmente sensibles. El ojo produce humo negro en presencia de mentiras, y quema a los mentirosos que lo miran.#!"
+ SOUL_ARTS_CHAINBREAKER_MEDITATION_PERK_EFFECT: "Gana fuertes defensas mentales, lo que te hace inmune a algunos poderes mentales.\n#flavor La cultivadora aplasta a sus propios demonios internos con placer.#!"
+
+ soul_arts_killing_shriek_perk_name: "Alarido asesino"
+ soul_arts_jeweled_eyes_perk_name: "Ojos enjoyados"
+ soul_arts_shadow_self_perk_name: "Sombra del yo"
+ SOUL_ARTS_KILLING_SHRIEK_PERK_EFFECT: "Al comienzo de una batalla, obliga al [knight|E] enemigo con mayor [prowess|E] a abandonar la lucha siempre que no tenga defensas mentales fuertes.\n#flavor La voz del Hambriento aúlla con los tormentos del infierno.#!"
+ SOUL_ARTS_JEWELED_EYES_PERK_EFFECT: "#flavor Los rakshasa pueden ser tan hermosos como brutales, si así lo eligen. El cultivador Muerto Hambriento emana una nube espiritual de encanto rosa y carmesí, hasta el punto de que cualquiera que lo mire a los ojos creerá cada una de sus palabras y hará cualquier cosa por él.#!"
+ SOUL_ARTS_SHADOW_SELF_PERK_EFFECT: "Como [character_interaction|E], crea un clon de ti mismo.\n#flavor El Hambriento da vida a su Alma de Diablo, usando chi para animar su sombra y convertirla en un sirviente.#!"
+
+ soul_arts_bloody_foresight_perk_name: "Previsión sangrienta"
+ soul_arts_joyful_spark_of_union_perk_name: "Chispa gozosa de unión"
+ soul_arts_agony_liberation_perk_name: "Liberación por agonía"
+ SOUL_ARTS_BLOODY_FORESIGHT_PERK_EFFECT: "Como [character_interaction|E], gana [GetModifier('soul_arts_bloody_forseight_modifier').GetNameWithTooltip] a un coste de 1 de [POD_aggravated_damage_with_box|E].\n#flavor El cultivador se corta su propia garganta o cae sobre púas, y el futuro se revela con una claridad que sacude la tierra.#!"
+ SOUL_ARTS_JOYFUL_SPARK_OF_UNION_PERK_EFFECT: "#flavor Las Artes Demoníacas son una maldición, y el Sufrimiento un castigo... Pero en el cultivo, hay esperanza.#!"
+ SOUL_ARTS_AGONY_LIBERATION_PERK_EFFECT: "Como [character_interaction|E], cambia tus rasgos de personalidad a un coste de 1 de [POD_aggravated_damage_with_box|E].\n#flavor El diablo iluminado te desencadenará con dolor, pero debes estar dispuesto a morir.#!"
+
+ soul_arts_the_final_diadem_perk_name: "La diadema final"
+ soul_arts_crack_the_tortoise_shell_perk_name: "Agrietar el caparazón de tortuga"
+ SOUL_ARTS_THE_FINAL_DIADEM_PERK_EFFECT: "Como [character_interaction|E], haz de un $POD_splat_wraith$ o $POD_splat_mortal$ vinculado tu discípulo (hijo en términos de juego).\n#flavor El maestro Diablo rompe la roca base de los Mil Infiernos, construyendo un palacio digno de un príncipe infernal.#!"
+ SOUL_ARTS_CRACK_THE_TORTOISE_SHELL_PERK_EFFECT: "Como [character_interaction|E], haz que tu objetivo pierda toda la [piety|E], y si es un $POD_splat_kueijin$, haz que pierda 25 de [trait_level_track_xp|E] de [Glossary('Dharma','podgloss.dharma')].\n#flavor Esta técnica maestra permite al cultivador del Alma de Diablo sacudir los cimientos mismos de la existencia de un Hambriento.#!"
+ 
+
+ SOUL_ARTS_THE_DRAGON_TEAR_REQUIREMENT_EFFECT: "#R ¡Esta [perk|E] requiere todas las demás [perks|E] de nivel $VALUE|0V$ en el [lifestyle|E] de Artes del Alma!#! #weak (con la excepción de Tejido Infernal)#!"
+
+ soul_arts_perfect_eye_of_heaven_perk_name: "Ojo perfecto del cielo"
+ SOUL_ARTS_PERFECT_EYE_OF_HEAVEN_PERK_EFFECT: "Puede desterrar a $POD_splat_wraith_plural$, $POD_splat_fae_plural$ o $POD_splat_demon_plural$ a sus reinos nativos de la [umbra|E] sin necesidad de su nombre verdadero.\n#flavor El cultivador observa todos los reinos de la Gran Rueda con los ojos de un rey.#!"
+
+ soul_arts_dragon_medicine_perk_name: "Medicina del dragón"
+ SOUL_ARTS_DRAGON_MEDICINE_PERK_EFFECT: "Como [character_interaction|E], sana [EmptyScope.ScriptValue('POD_dragon_medicine_aggravated_heal_value')|V0] de [POD_aggravated_damage_with_box|E], [EmptyScope.ScriptValue('POD_dragon_medicine_superficial_heal_value')|V0] de [POD_superficial_damage_with_box|E], y todos los [traits|E] de salud negativos.\n#flavor El cultivador se convierte en un sanador de heridas... o en un instrumento de tormento, si lo desea.#!"
+
+ soul_arts_soul_nursery_perk_name: "Vivero de almas"
+ SOUL_ARTS_SOUL_NURSERY_PERK_EFFECT: "Como [character_interaction|E], haz que un $POD_splat_vampire$ alcance la [GetTrait('golconda').GetName(GetNullCharacter)], que un $POD_splat_wraith$ resuelva todos sus [Fetters|E], o que un $POD_splat_kueijin$ gane 1 nivel de [Glossary('Dharma','podgloss.dharma')] (excluyendo [GetTrait('dharma10').GetName(GetNullCharacter)]).\n#flavor La técnica más temida en el mundo nocturno, esta permite al maestro de la Lágrima del Dragón arrancar un alma como un fruto maduro, tomándola dentro de sí mismo para transformarla o consumirla.#!"
+
+
+
+ soul_arts_flowing_canal_of_hell_perk_name: "Canal fluyente del infierno"
+ SOUL_ARTS_FLOWING_CANAL_OF_HELL_PERK_EFFECT: "Como [character_interaction|E], gana [GetModifier('soul_arts_flowing_canal_of_hell_modifier').GetNameWithTooltip] al coste de @stress_icon!100 de [static_stress|E].\n#flavor Ningún Hambriento pasa mucho tiempo sin experimentar los inconvenientes del Sufrimiento, y todos han deseado en algún momento poder controlar los estallidos de poder demoníaco que surgen. Esta técnica no evita completamente el caos y la destrucción: pase lo que pase, las energías del infierno deben salir. Sin embargo, un Muerto Hambriento astuto puede mitigar o redirigir el flujo de formas útiles.#!"
+
+ soul_arts_wax_seal_of_the_demon_king_perk_name: "Sello de cera del Rey Demonio"
+ SOUL_ARTS_WAX_SEAL_OF_THE_DEMON_KING_PERK_EFFECT: "Desbloquea varios [men_at_arms|E] demoníacos.\n#flavor La ayuda de calidad es difícil de conseguir, especialmente para los Muertos Hambrientos que no tienen el lujo del tiempo para criar hijos Dhampyr. De ahí la popularidad de esta técnica: el tejedor infernal puede convocar a un demonio y tener su lealtad completa. Incluso si el demonio posee después a un humano y se convierte en un Medio Diablo, se aplica la misma lealtad. Sin embargo, si el Sufrimiento del Hambriento cayera alguna vez por debajo de cierto umbral, tendrá que confiar en otras zanahorias y palos para mantener el servicio del demonio después, y este no podrá ser desterrado de vuelta al infierno.#!"
+
+ soul_arts_dark_cultivation_perk_name: "Cultivo oscuro"
+ soul_arts_infernal_road_perk_name: "Camino infernal"
+ SOUL_ARTS_DARK_CULTIVATION_PERK_EFFECT: "#flavor Usar las Artes del Alma normalmente requiere paciencia y previsión: los maestros dicen que es imposible cultivar más de un alma a la vez, y todo el mundo sabe que solo los cultivadores más talentosos pueden moverse rápidamente entre las cuatro almas sin agotarse. Esta técnica, al simular el cultivo a través del Sufrimiento, puede permitir a un tejedor infernal romper esas reglas con una facilidad asombrosa.#!"
+ SOUL_ARTS_INFERNAL_ROAD_PERK_EFFECT: "Como [character_interaction|E], gasta @stress_icon!100 de [static_stress|E] para teletransportar a tu ejército a la ubicación de tu objetivo, o teletransportarte a tu próximo destino cuando viajes.\n#flavor Con esta técnica, el tejedor infernal usa los antiguos senderos del infierno para viajar a cualquier parte del mundo, retorciéndose a través de la distancia y el tiempo en un carro llameante y llegando en segundos. La advertencia es que el tiempo que se omite en el mundo mortal se desarrolla con total normalidad en el infierno, siendo el Hambriento incapaz de abandonar el carro hasta que el viaje se complete. Dependiendo de cuánto tiempo le lleve a un equipo de caballos demonio cruzar la distancia, el tejedor infernal puede necesitar tener varios sobornos listos para los oficiales del infierno, así como algunas 'comidas de viaje' preparadas de antemano.#!"
+
+ soul_arts_breaking_the_dragons_neck_perk_name: "Romper el cuello del dragón"
+ SOUL_ARTS_BREAKING_THE_DRAGONS_NECK_PERK_EFFECT: "Como [character_interaction|E], corrompe un Nido de Dragón existente, asegurando que solo tú u otros [akuma|E] podáis usarlo.\n#flavor Solo hay una razón, salvo la locura o la obsesión espiritual, para corromper un Nido de Dragón y convertirlo en un pequeño trozo de infierno en la tierra: porque quieres tenerlo todo para ti. Los rumores de un 'volumen compañero' perdido del Libro de Hierro, que detalla una versión de esta técnica a una escala mucho mayor, se han intensificado enormemente desde la revelación de la Ciudad Malvada.#!"

@@ -23,11 +23,11 @@
  
  POD_JOURNEY_GET_TT: "[Localize(Concatenate(PlayerJourneyID,'_tt'))]"
  
- POD_journey_name: "[Localize(Concatenate(ROOT.Var('journey_type').GetFlagName,'_name'))]"
+ POD_journey_name: "[Localize(Concatenate(ROOT.Var('journey_type').GetFlagKey,'_name'))]"
  POD_journey_name_targeted: "$POD_journey_name$ [ROOT.Var('target').Char.GetFirstName]"
  POD_journey_name_targeted_trait: "$POD_journey_name$ [ROOT.Var('target_trait').Trait.GetName(GetPlayer)]"
  POD_journey_name_targeted_artifact: "$POD_journey_name$ [ROOT.Var('target_artifact').Artifact.GetName]"
- POD_journey_name_ritual: "[Localize(Concatenate3('ritual_',ROOT.Var('ritual').GetFlagName,'_name'))] on [ROOT.Var('target').Char.GetFirstName]"
+ POD_journey_name_ritual: "[Localize(Concatenate3('ritual_',ROOT.Var('ritual').GetFlagKey,'_name'))] on [ROOT.Var('target').Char.GetFirstName]"
  
  POD_current_journey: "#TOOLTIP:POD_JOURNEY_DESC #V $POD_JOURNEY_GETNAME$#!#!"
  
@@ -39,7 +39,7 @@
  POD_journey_player_desc: "[GetPlayer.GetFirstNameNoTooltip] is in the [GetPlayer.Custom('PODShowJourneyPhase')] of [GetPlayer.GetHerHis|l] [journey|E]."
  
  POD_journey_progress_desc: "Progress: #V;P;bold $POD_JOURNEY_GETPROGRESS$#!"
- POD_journey_planning_speed_desc: "[planning_speed|E]: #V [Localize(Concatenate(GetPlayer.MakeScope.Var('current_journey').Var('progress_value').GetFlagName,'_monthly_num_current'))]#![AddTextIf(Not(PlayerGuiIsShown('POD_current_journey_is_instant')),' #help (see tooltip for details)#!')]"
+ POD_journey_planning_speed_desc: "[planning_speed|E]: #V [Localize(Concatenate(GetPlayer.MakeScope.Var('current_journey').Var('progress_value').GetFlagKey,'_monthly_num_current'))]#![AddTextIf(Not(PlayerGuiIsShown('POD_current_journey_is_instant')),' #help (see tooltip for details)#!')]"
  
  POD_journey_phase_planning: "[planning_phase|E]"
  POD_journey_phase_travel: "[travel_phase|E]"
@@ -61,7 +61,7 @@
  POD_paused_journeys: "Paused Journeys"
  POD_travel_ready_journeys: "Available Journeys in the [travel_phase|E]"
 
- POD_journey_refresh_prompt: "Your save is from an older version of [princes_of_darkness|E].\nClick the button below to refresh your $pod_journeys$."
+ POD_journey_refresh_prompt: "Your save is from an older version of [princes_of_darkness|E].\nClick the button below to refresh your [journeys|E]."
  
  POD_abandon_journey_tt: "#T Abandon Journey#!"
  POD_abandon_journey_confirm_title: "Abandon Journey"
@@ -79,12 +79,12 @@
  
  POD_journey_coterie_checkbox_tt: "Choose whether you want the members of your [GetPlayer.Custom('PODCoterie')] to join you."
  POD_journey_move_camp: "Move your [camp|E] as well?" # TODO RTP: apply PODDomicile customloc
- POD_journey_move_camp_tt: "Spend [provisions|E] to move your [camp|E] to the destination of this [journey|E]."
+ POD_journey_move_camp_tt: "Spend [provisions|E] to move your [camp|E] to the destination when [traveling|El]."
  
  POD_journey_instant: "Instant"
  
  POD_journey_progress_instant: "[planning_speed|E]: $POD_journey_instant$"
- POD_journey_progress: "[planning_speed|E]: [Localize(Concatenate(GetPlayer.MakeScope.Var('journey_detail_window_subtype').Var('progress_value').GetFlagName,'_monthly_num'))] #help (see tooltip for details)#!"
+ POD_journey_progress: "[planning_speed|E]: [Localize(Concatenate(GetPlayer.MakeScope.Var('journey_detail_window_subtype').Var('progress_value').GetFlagKey,'_monthly_num'))] #help (see tooltip for details)#!"
  
  POD_journey_cost_goldprestigepiety: "Cost: $POD_journey_gold$, $POD_journey_prestige$, $POD_journey_piety$"
  POD_journey_cost_goldprestige: "Cost: $POD_journey_gold$, $POD_journey_prestige$"
@@ -112,7 +112,7 @@
  POD_journey_cost_hunt_ashen_prestige: "Cost: [prestige_i|E] [Abs_CFixedPoint(Multiply_CFixedPoint( GetPlayer.MakeScope.ScriptValue('medium_prestige_loss'), EmptyScope.ScriptValue('journey_cost_mult') ))]"
  POD_journey_cost_hunt_ashen_piety: "Cost: [piety_i|E] [Abs_CFixedPoint(Multiply_CFixedPoint( GetPlayer.MakeScope.ScriptValue('medium_piety_loss'), EmptyScope.ScriptValue('journey_cost_mult') ))]"
  
- POD_journey_requirements_breakdown: "[GetScriptedGui(Concatenate(GetPlayer.MakeScope.Var('journey_detail_window_subtype').Var('journey_type').GetFlagName,'_requirements')).IsValidTooltip(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+ POD_journey_requirements_breakdown: "[GetScriptedGui(Concatenate(GetPlayer.MakeScope.Var('journey_detail_window_subtype').Var('journey_type').GetFlagKey,'_requirements')).IsValidTooltip(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
  
  POD_journey_GUI_tooltip: "#help [Localize( Concatenate(ScopedJourneyID,'_tt') )]#!$POD_journey_GUI_pause_hint$$POD_journey_GUI_requirements$$POD_journey_GUI_requirements_generic$"
  POD_paused_journey_GUI_tooltip: "#help [Localize( Concatenate(ScopedJourneyID,'_tt') )]#!$POD_paused_journey_GUI_requirements$$POD_journey_GUI_requirements_generic$"
@@ -168,3 +168,9 @@
  POD_start_trait_study_journey_tt: "You've gained some insight into the [journey_trait.GetName(GetPlayer)] [trait|E]. To fully understand it, you have to study it via the [journey|E] you just unlocked."
  POD_start_anatomy_study_journey_tt: "You'll start a [journey|E] for full understanding of [journey_trait.GetName(GetPlayer)] anatomy."
  POD_start_true_name_study_journey_tt: "You'll start a [journey|E] for the true name of the [journey_trait.GetName(GetPlayer)] [trait|E]."
+ 
+ 
+ ##### Interface messages
+ POD_journey_abandoned_title: "Journey Abandoned"
+ POD_journey_abandoned_desc_trait: "Since you now possess a new ability, all your [journeys|E] for learning it have ended"
+ POD_journey_abandoned_desc_artifact: "You no longer need to go on an [infiltration_mission|E] for [artifact.Custom('ColorizedArtifactName')] since you already own it"

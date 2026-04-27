@@ -1,0 +1,26 @@
+﻿l_spanish:
+ POD_sorcery_events.1000.t: "Más Bestia que Hombre"
+ POD_sorcery_events.1000.desc: "Incluso entre las magias primordiales, la capacidad de transformarse en animal destaca como algo excepcional. Muchos monstruos que acechan en la noche tienen el poder de la transformación, incluidos aquellos que son verdaderos cambiapieles. Los magos de senda que estudian la Senda del Cambio de Forma imitan una cierta cantidad de su poder, transformando primero partes de sí mismos y más tarde todo su cuerpo de formas dramáticas.\n\nTu experiencia en la Senda del Cambio de Forma ha crecido lo suficiente como para que puedas mejorar tu Forma Bestial personal."
+ POD_sorcery_events.1000.a: "Es suficiente."
+ 
+ POD_sorcery_events.1000.no_points: "¡Has maximizado tu Forma Bestial al máximo de tu experiencia actual!"
+
+ POD_sorcery_events.1000.claws: "$POD_shapeshift_bestial_form_claws_modifier$"
+ POD_sorcery_events.1000.claws.upgrade: "Mejorarás [GetModifier('POD_shapeshift_bestial_form_claws_modifier').GetNameWithTooltip] al nivel [SCOPE.GetValue('new_level')|0V]"
+ POD_sorcery_events.1000.claws.buy: "Introducirás [GetModifier('POD_shapeshift_bestial_form_claws_modifier').GetNameWithTooltip] en tu Forma Bestial"
+
+ POD_sorcery_events.1000.horns: "$POD_shapeshift_bestial_form_horns_modifier$"
+ POD_sorcery_events.1000.horns.upgrade: "Mejorarás [GetModifier('POD_shapeshift_bestial_form_horns_modifier').GetNameWithTooltip] al nivel [SCOPE.GetValue('new_level')|0V]"
+ POD_sorcery_events.1000.horns.buy: "Introducirás [GetModifier('POD_shapeshift_bestial_form_horns_modifier').GetNameWithTooltip] en tu Forma Bestial"
+
+ POD_sorcery_events.1000.eyes: "$POD_shapeshift_bestial_form_eyes_modifier$"
+ POD_sorcery_events.1000.eyes.upgrade: "Mejorarás [GetModifier('POD_shapeshift_bestial_form_eyes_modifier').GetNameWithTooltip] al nivel [SCOPE.GetValue('new_level')|0V]"
+ POD_sorcery_events.1000.eyes.buy: "Introducirás [GetModifier('POD_shapeshift_bestial_form_eyes_modifier').GetNameWithTooltip] en tu Forma Bestial"
+
+ POD_sorcery_events.1000.hide: "$POD_shapeshift_bestial_form_hide_modifier$"
+ POD_sorcery_events.1000.hide.upgrade: "Mejorarás [GetModifier('POD_shapeshift_bestial_form_hide_modifier').GetNameWithTooltip] al nivel [SCOPE.GetValue('new_level')|0V]"
+ POD_sorcery_events.1000.hide.buy: "Introducirás [GetModifier('POD_shapeshift_bestial_form_hide_modifier').GetNameWithTooltip] en tu Forma Bestial"
+
+ POD_sorcery_events.1000.wings: "$POD_shapeshift_bestial_form_wings_modifier$"
+ POD_sorcery_events.1000.wings.upgrade: "Mejorarás [GetModifier('POD_shapeshift_bestial_form_wings_modifier').GetNameWithTooltip] al nivel [SCOPE.GetValue('new_level')|0V]"
+ POD_sorcery_events.1000.wings.buy: "Introducirás [GetModifier('POD_shapeshift_bestial_form_wings_modifier').GetNameWithTooltip] en tu Forma Bestial"

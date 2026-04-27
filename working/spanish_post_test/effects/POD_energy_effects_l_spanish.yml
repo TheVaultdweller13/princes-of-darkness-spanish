@@ -1,0 +1,65 @@
+﻿l_spanish:
+# Tipos de energía
+ POD_energy_angst: "@wraith_icon!Angst"
+ POD_energy_pathos: "@wraith_icon!Pathos"
+ POD_energy_blood: "[hunger_i]Sangre"
+ POD_energy_resolve: "@demon_icon!Fe"
+ POD_energy_gnosis: "@gnosis_icon!Gnosis"
+ POD_energy_glamour: "@changeling_icon!Glamour"
+ POD_energy_dread: "[Concept('dread','@dread_icon!Pavor')|E]"
+ POD_energy: "[Concept('static_stress','@stress_loss_icon!Fuerza de Voluntad')|E]"
+
+ POD_energy_angst_icon: "@wraith_icon!"
+ POD_energy_pathos_icon: "@wraith_icon!"
+ POD_energy_blood_icon: "[hunger_i]"
+ POD_energy_resolve_icon: "@demon_icon!"
+ POD_energy_gnosis_icon: "@gnosis_icon!"
+ POD_energy_glamour_icon: "@changeling_icon!"
+ POD_energy_dread_icon: "[Concept('dread','@dread_icon!')]"
+ # usando el icono de ganancia de estrés en lugar del de pérdida, ya que tiene más sentido para los costes de energía
+ POD_energy_icon: "[Concept('static_stress','@stress_gain_icon!')]"
+
+ POD_splat_energy_cost: "$VALUE|0$ [CHARACTER.Custom('PODEnergySplatIcon')]"
+
+# Mantenimiento de recipientes de energía
+ POD_extract_energy_desc: "Se usarán #bold [Multiply_CFixedPoint( SCOPE.GetValue('spent_energy_amount'), this_character.MakeScope.ScriptValue('splat_energy_multiplier') )|V0]#! [this_character.Custom('PODEnergySplat')] almacenados del [this_artifact.Custom('ColorizedArtifactName')]"
+ POD_store_energy_desc: "Se almacenarán #bold [Multiply_CFixedPoint( SCOPE.GetValue('stored_energy_amount'), this_character.MakeScope.ScriptValue('splat_energy_multiplier') )|V0]#! [this_character.Custom('PODEnergySplat')] en el [this_artifact.Custom('ColorizedArtifactName')]"
+ POD_energy_vessel_add_max_effect: "Añadir el máximo posible de [GetPlayer.Custom('PODEnergySplat')] almacenados: [Multiply_CFixedPoint( '(CFixedPoint)$VALUE|q$', GetPlayer.MakeScope.ScriptValue('splat_energy_multiplier') )|V0]"
+
+# loc de custom_description
+# nótese que los colores están invertidos para el ansia (el aumento es malo, la disminución es buena)
+ POD_hunger_change_desc: "El [hunger_with_icon|E] #N aumentará#! en #bold $VALUE|0V$#!"
+ POD_hunger_change_desc_past: "El [hunger_with_icon|E] ha #N aumentado#! en #bold $VALUE|0V$#!"
+ POD_hunger_change_desc_neg: "El [hunger_with_icon|E] #P disminuirá#! en #bold $VALUE|0V$#!"
+ POD_hunger_change_desc_past_neg: "El [hunger_with_icon|E] ha #P disminuido#! en #bold $VALUE|0V$#!"
+
+ POD_angst_change_desc: "El $POD_energy_angst$ #P aumentará#! en #bold $VALUE|0V$#!"
+ POD_angst_change_desc_past: "El $POD_energy_angst$ ha #P aumentado#! en #bold $VALUE|0V$#!"
+ POD_angst_change_desc_neg: "El $POD_energy_angst$ #N disminuirá#! en #bold $VALUE|0V$#!"
+ POD_angst_change_desc_past_neg: "El $POD_energy_angst$ ha #N disminuido#! en #bold $VALUE|0V$#!"
+
+ POD_pathos_change_desc: "El $POD_energy_pathos$ #P aumentará#! en #bold $VALUE|0V$#!"
+ POD_pathos_change_desc_past: "El $POD_energy_pathos$ ha #P aumentado#! en #bold $VALUE|0V$#!"
+ POD_pathos_change_desc_neg: "El $POD_energy_pathos$ #N disminuirá#! en #bold $VALUE|0V$#!"
+ POD_pathos_change_desc_past_neg: "El $POD_energy_pathos$ ha #N disminuido#! en #bold $VALUE|0V$#!"
+
+ POD_resolve_change_desc: "La $POD_energy_resolve$ #P aumentará#! en #bold $VALUE|0V$#!"
+ POD_resolve_change_desc_past: "La $POD_energy_resolve$ ha #P aumentado#! en #bold $VALUE|0V$#!"
+ POD_resolve_change_desc_neg: "La $POD_energy_resolve$ #N disminuirá#! en #bold $VALUE|0V$#!"
+ POD_resolve_change_desc_past_neg: "La $POD_energy_resolve$ ha #N disminuido#! en #bold $VALUE|0V$#!"
+
+ POD_gnosis_change_desc: "La $POD_energy_gnosis$ #P aumentará#! en #bold $VALUE|0V$#!"
+ POD_gnosis_change_desc_past: "La $POD_energy_gnosis$ ha #P aumentado#! en #bold $VALUE|0V$#!"
+ POD_gnosis_change_desc_neg: "La $POD_energy_gnosis$ #N disminuirá#! en #bold $VALUE|0V$#!"
+ POD_gnosis_change_desc_past_neg: "La $POD_energy_gnosis$ ha #N disminuido#! en #bold $VALUE|0V$#!"
+
+ POD_glamour_change_desc: "El $POD_energy_glamour$ #P aumentará#! en #bold $VALUE|0V$#!"
+ POD_glamour_change_desc_past: "El $POD_energy_glamour$ ha #P aumentado#! en #bold $VALUE|0V$#!"
+ POD_glamour_change_desc_neg: "El $POD_energy_glamour$ #N disminuirá#! en #bold $VALUE|0V$#!"
+ POD_glamour_change_desc_past_neg: "El $POD_energy_glamour$ ha #N disminuido#! en #bold $VALUE|0V$#!"
+
+# varios
+ hunger_increase_effect.hungerless: "Debido a tu suministro ilimitado de sangre, tu [hunger_with_icon|E] no cambiará."
+ hunger_decrease_effect.tt.full: "Como ya estás saciado, el [hunger_with_icon|E] no disminuirá."
+ hunger_decrease_effect.tt.nourishment: "@warning_icon!#N Dado que tienes [GetPlayer.Custom('PODBloodPotency')], tomar una cantidad tan pequeña de sangre no es suficiente para saciar tu [hunger_with_icon|E].#!"
+ hunger_decrease_effect.tt.0: "@warning_icon!#N Dado que tienes [GetPlayer.Custom('PODBloodPotency')], tu [hunger_with_icon|E] #bold no#! disminuirá más a menos que drenes a este mortal hasta la muerte.#!"

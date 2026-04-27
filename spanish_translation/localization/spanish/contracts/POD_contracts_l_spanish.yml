@@ -1,0 +1,95 @@
+﻿l_spanish:
+ #####################################
+ ####### Contratos para Cazadores #######
+ #####################################
+ 
+  POD_assault_lair_contract: "Asaltar una guarida expuesta"
+  POD_assault_lair_desc_title: "Se presenta una oportunidad..."
+  POD_assault_lair_desc: "Hemos averiguado la ubicación de un engendro solitario que acecha en este dominio. Si golpeamos rápido, aún podemos sorprenderlo."
+  POD_assault_lair_request: "Este [task_contract|E] requiere que viajes a [TaskContract.GetLocation.GetName]. Entonces podrás usar las habilidades de tu [GetPlayer.Custom('PODCoterie')] para ocuparte de tu presa.\n\n$POD_contract_show_time_remaining$"
+  POD_assault_lair_contract_success_tt: "Ganarás [prestige_i][prestige|E], [piety_i][piety|E], [dynasty_prestige_i][dynasty_prestige|E] y [lifestyle_experience|E] de [Glossary('True Faith','game_concept_true_faith_desc')]. Las recompensas se basan en el [task_contract_tier|E] y en si has tenido éxito en la caza de forma limpia."
+ 
+  task_contract_reward_effect_failure_abandoned_hunt_desc: "#N Abandonas la caza:#!"
+  task_contract_reward_effect_failure_failed_hunt_desc: "#N El engendro te supera:#!"
+ 
+ 
+ ####################################
+ ####### Misiones de Ghoul Vinculado #######
+ ####################################
+ 
+  POD_ghoul_mission_kill_hunter_contract: "Matar cazador"
+  POD_ghoul_mission_kill_hunter_desc_title: "A mi decidido sirviente,"
+  POD_ghoul_mission_kill_hunter_desc: "Un cazador que se hace llamar [TaskContract.MakeScope.Var('target').Char.GetFirstName] está husmeando en nuestro territorio. Ocúpate de [TaskContract.MakeScope.Var('target').Char.GetHerHim] antes de que se convierta en algo más que una molestia."
+  POD_ghoul_mission_kill_hunter_request: "Esta [bound_ghoul_mission_with_icon|E] requiere que mates a [TaskContract.MakeScope.Var('target').Char.GetFirstName] por cualquier medio necesario.\n\n$POD_contract_show_time_remaining$"
+ 
+  POD_ghoul_mission_cover_up_the_masquerade_contract: "Encubrir la Mascarada"
+  POD_ghoul_mission_cover_up_the_masquerade_desc_title: "A mi discreto sirviente,"
+  POD_ghoul_mission_cover_up_the_masquerade_desc: "Si nuestra sociedad ha de prosperar, debemos permanecer en las sombras. Demuestra tu ingenio asegurándote de que el ganado nunca sepa de nuestra existencia."
+  POD_ghoul_mission_cover_up_the_masquerade_request: "Esta [bound_ghoul_mission_with_icon|E] requiere que encubras una [masquerade_exposure_with_icon|E] de [TaskContract.GetEmployer.GetShortUINamePossessive] mediante una [character_interaction|E] dirigida a [TaskContract.GetEmployer.GetHerHim].\n\n$POD_contract_show_time_remaining$"
+ 
+  POD_ghoul_mission_bribe_officials_contract: "Sobornar a funcionarios"
+  POD_ghoul_mission_bribe_officials_desc_title: "A mi ingenioso sirviente,"
+  POD_ghoul_mission_bribe_officials_desc: "Tengo a estos molestos magistrados pisándome los talones y amenazando con auditar mis negocios. Haz que miren para otro lado por mí."
+  POD_ghoul_mission_bribe_officials_request: "Esta [bound_ghoul_mission_with_icon|E] requiere que pagues [gold_i][GetPlayer.MakeScope.ScriptValue('minor_gold_max_value')|0V] mediante una [character_interaction|E] a [TaskContract.GetEmployer.GetShortUIName].\n\n$POD_contract_show_time_remaining$"
+ 
+  POD_ghoul_mission_indoctrinate_plant_contract: "Adoctrinar infiltrado"
+  POD_ghoul_mission_indoctrinate_plant_desc_title: "A mi persuasivo sirviente,"
+  POD_ghoul_mission_indoctrinate_plant_desc: "La información es un recurso inestimable, ¿no estás de acuerdo? Encuéntrame a alguien fiable que pueda servir a nuestra causa como espía."
+  POD_ghoul_mission_indoctrinate_plant_request: "Esta [bound_ghoul_mission_with_icon|E] requiere que adoctrines a cualquier [GetTrait('mortal').GetName(GetNullCharacter)] mediante una [character_interaction|E].\n\n$POD_contract_show_time_remaining$"
+ 
+  POD_ghoul_mission_abduct_desirable_mortal_contract: "Secuestrar mortal deseable"
+  POD_ghoul_mission_abduct_desirable_mortal_desc_title: "A mi astuto sirviente,"
+  POD_ghoul_mission_abduct_desirable_mortal_desc: "Un mortal prometedor llamado [TaskContract.MakeScope.Var('target').Char.GetFirstName] ha llamado mi atención últimamente. Tráemelo discretamente. Y no hagas más preguntas."
+  POD_ghoul_mission_abduct_desirable_mortal_request: "Esta [bound_ghoul_mission_with_icon|E] requiere que traigas a [TaskContract.MakeScope.Var('target').Char.GetFirstName] a tu corte por cualquier medio posible, y lo envíes a [TaskContract.GetEmployer.GetShortUIName] mediante una [character_interaction|E].\n\n$POD_contract_show_time_remaining$"
+ 
+  POD_ghoul_mission_steal_rivals_gold_contract: "Robar el oro de un rival"
+  POD_ghoul_mission_steal_rivals_gold_desc_title: "A mi habilidoso sirviente,"
+  POD_ghoul_mission_steal_rivals_gold_desc: "Nuestros enemigos son muchos. Tomemos la iniciativa y confisquemos sus riquezas para asegurarnos de que no puedan ser usadas contra nosotros."
+  POD_ghoul_mission_steal_rivals_gold_request: "Esta [bound_ghoul_mission_with_icon|E] requiere que realices un #V $POD_gold_heist_interaction$#! mediante una [infiltration_mission|E] a cualquiera de los [rivals|E] de [TaskContract.GetEmployer.GetShortUINamePossessive].\n\n$POD_contract_show_time_remaining$"
+ 
+  POD_ghoul_mission_damage_rivals_image_contract: "Dañar la imagen de un rival"
+  POD_ghoul_mission_damage_rivals_image_desc_title: "A mi astuto sirviente,"
+  POD_ghoul_mission_damage_rivals_image_desc: "Nuestros enemigos son muchos. Debemos darles una lección. Golpea preventivamente y socava su dignidad, para que pierdan el respeto de sus iguales."
+  POD_ghoul_mission_damage_rivals_image_request: "Esta [bound_ghoul_mission_with_icon|E] requiere que sabotees el [prestige|E] de cualquiera de los [rivals|E] de [TaskContract.GetEmployer.GetShortUINamePossessive] mediante una [character_interaction|E].\n\n$POD_contract_show_time_remaining$"
+ 
+  POD_ghoul_mission_slander_rival_contract: "Difamar a un rival"
+  POD_ghoul_mission_slander_rival_desc_title: "A mi astuto sirviente,"
+  POD_ghoul_mission_slander_rival_desc: "Nuestros enemigos son muchos. Difunde rumores sobre sus actividades degradadas y los derribaremos sin mover un dedo."
+  POD_ghoul_mission_slander_rival_request: "Esta [bound_ghoul_mission_with_icon|E] requiere que sabotees la [piety|E] de cualquiera de los [rivals|E] de [TaskContract.GetEmployer.GetShortUINamePossessive] mediante una [character_interaction|E].\n\n$POD_contract_show_time_remaining$"
+ 
+  POD_ghoul_mission_give_relative_away_contract: "Entregar a un pariente"
+  POD_ghoul_mission_give_relative_away_desc_title: "A mi preciado sirviente,"
+  POD_ghoul_mission_give_relative_away_desc: "Ha llegado el momento de que me demuestres tu absoluta lealtad."
+  POD_ghoul_mission_give_relative_away_request: "Esta [bound_ghoul_mission_with_icon|E] requiere que entregues a uno de tus parientes cercanos mediante una [character_interaction|E]. Puede que nunca vuelvas a verlos.\n\n$POD_contract_show_time_remaining$"
+ 
+  POD_ghoul_mission_expand_domain_contract: "Expandir dominio"
+  POD_ghoul_mission_expand_domain_desc_title: "A mi sirviente intransigente,"
+  POD_ghoul_mission_expand_domain_desc: "Confío en tus habilidades en el campo de batalla. Ve y realiza conquistas en mi nombre."
+  POD_ghoul_mission_expand_domain_request: "Esta [bound_ghoul_mission_with_icon|E] requiere que conquistes territorio mediante el [casus_belli|E] #V Instalar nuevo gobernante#! y se lo entregues a [TaskContract.GetEmployer.GetShortUIName]. Alternativamente, puedes entregar uno de tus [counties|E] mediante la [character_interaction|E] #V $grant_titles_interaction$#!.\n\n$POD_contract_show_time_remaining$"
+ 
+ 
+ ##################################
+ ####### Contratos Programados #######
+ ##################################
+ 
+  POD_natural_disaster_contract: "Desastre natural"
+  POD_natural_disaster_desc_title: "[TaskContract.MakeScope.Var('disaster_loc').GetFlagName]"
+  POD_natural_disaster_desc: "Un gran [TaskContract.MakeScope.Var('disaster_type').GetFlagName|l] va a golpear [TaskContract.MakeScope.Var('target_title').Title.GetNameNoTierNoTooltip]. Aún no es demasiado tarde para evitarlo... o tal vez, ¿empeorarlo?"
+  POD_natural_disaster_request: "Este [task_contract|E] requiere que viajes a [TaskContract.GetLocation.GetName]. Entonces podrás decidir qué hacer con el desastre inminente, basándote en las habilidades de tu [GetPlayer.Custom('PODCoterie')].\n\n$POD_contract_show_time_remaining$"
+ 
+  task_contract_reward_effect_success_prevented_disaster_desc: "#P Evitas el desastre:#!"
+  task_contract_reward_effect_success_turned_disaster_into_prosperity_desc: "#P Evitas el desastre #bold y#! mejoras el clima:#!"
+  task_contract_reward_effect_success_provided_relief_desc: "#P Proporcionas ayuda ante el desastre a los mortales:#!"
+  task_contract_reward_effect_success_provided_great_relief_desc: "#P Proporcionas una #bold gran#! ayuda ante el desastre a los mortales:#!"
+  task_contract_reward_effect_success_made_disaster_worse_desc: "#P Haces que el desastre sea#! #N;bold peor:#!"
+  task_contract_reward_effect_failure_do_nothing_desc: "#N No haces nada:#!"
+ 
+  # Opciones de evento
+  POD_accept_contract: "Viajaré allí de inmediato."
+  POD_accept_contract_tt: "Abrirás el planificador de [travel|E] y te dirigirás a [task_contract.GetLocation.GetName]"
+  POD_postpone_contract: "Me lo pensaré."
+  POD_abandon_contract: "No me interesa este contrato."
+  POD_abandon_contract_tt: "Este contrato será abandonado"
+ 
+  # Visualización de variables
+  POD_contract_show_time_remaining: "Este contrato expirará en #bold [GetGameTimeDifferenceForDiffDays(GetVarTimeRemaining(TaskContract.MakeScope,'time_remaining'))]#! #italic ([GetCurrentDateWithDiff(GetVarTimeRemaining(TaskContract.MakeScope,'time_remaining'))])#!"

@@ -1,0 +1,11 @@
+﻿l_spanish:
+ # Este archivo es para correcciones temporales de problemas extraños de vanilla (crashes, colisiones de hash, desbordamientos, etc.)
+ # Es posible que se solucionen solos en futuras actualizaciones, por lo que vale la pena revisarlos regularmente para ver si es seguro revertirlos.
+
+ # Corrección de vanilla para crashes al pasar el ratón sobre los requisitos de artefactos
+ ARTIFACT_EFFECT_HAS_CAN_BENEFIT: "#S Si cumples los requisitos:#!\n"
+ POD_ARTIFACT_EFFECT_HAS_CAN_BENEFIT: "#L #S Requisitos del artefacto:#! #weak (ver descripción emergente)#!#!"
+
+ # Corrección de vanilla para crashes al pasar el ratón sobre los requisitos de cargos en la corte
+ COURT_POSITION_TOOLTIP_LIEGE_REQUIREMENT_NESTED: "#L Requisitos del señor feudal#!"
+ COURT_POSITION_TOOLTIP_EMPLOYEE_REQUIREMENT_NESTED: "#L Requisitos de [CourtPositionType.GetNameNoTooltip]#!"

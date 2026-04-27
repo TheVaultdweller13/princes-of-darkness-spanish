@@ -1,0 +1,166 @@
+﻿l_spanish:
+ chi_arts_lifestyle_name: "Artes del Chi"
+ chi_arts_lifestyle_desc: "Las Artes del Chi son diferentes de otras artes, desarrolladas recientemente como un uso avanzado del Chi puro. También son las más alejadas de la existencia de los $pod_kueijin$; para cultivarlas se requiere un mentor. Aunque teóricamente cada ser sobrenatural puede aprender Artes del Chi, los Muertos Hambrientos son muy protectores con su arte más reciente."
+ monthly_chi_arts_lifestyle_xp_gain_mult: "[experience|E] mensual de [lifestyle|E] de Artes del Chi"
+ monthly_chi_arts_lifestyle_xp_gain_add: "[experience|E] mensual de [lifestyle|E] de Artes del Chi"
+
+ chi_arts_focus: "Enfoque en Artes del Chi"
+ chi_arts_focus_modifier: "[GetFocus('chi_arts_focus').GetName]"
+ chi_arts_focus_desc: "Los poderes del chi."
+ chi_arts_focus_effect_desc: "Centrarse en Artes del Chi otorga:"
+
+ feng_shui_visible: "Feng Shui"
+ obligation_visible: "Obligación"
+ tapestry_visible: "Tapiz"
+ prana_visible: "Prana"
+ kiai_visible: "Kiai"
+ tzu_wei_visible: "Tzu Wei"
+
+ chi_arts_harmonious_dwelling_perk_name: "Viviendas armoniosas"
+ chi_arts_harmonious_travel_perk_name: "Viajes armoniosos"
+ CHI_ARTS_HARMONIOUS_DWELLING_PERK_EFFECT: "#flavor Usando su conocimiento, un cultivador puede diseñar su vivienda de tal manera que garantice una construcción pacífica.#!"
+ CHI_ARTS_HARMONIOUS_TRAVEL_PERK_EFFECT: "#flavor Un cultivador sigue líneas de buena fortuna con la esperanza de tener viajes pacíficos.#!"
+
+ chi_arts_harmonious_ward_perk_name: "Protecciones armoniosas"
+ CHI_ARTS_HARMONIOUS_WARD_PERK_EFFECT: "#flavor Gracias a su conocimiento, un cultivador puede diseñar sus defensas de una manera que aumente sobrenaturalmente su potencia.#!"
+
+ chi_arts_inwards_harmonious_aligment_perk_name: "Alineación armoniosa hacia el interior"
+ chi_arts_outwards_harmonious_aligment_perk_name: "Alineación armoniosa hacia el exterior"
+ CHI_ARTS_INWARDS_HARMONIOUS_ALIGMENT_PERK_EFFECT: "#flavor Un cultivador alinea su chi interno con las líneas del dragón cercanas, lo que le otorga beneficios menores.#!"
+ CHI_ARTS_OUTWARDS_HARMONIOUS_ALIGMENT_PERK_EFFECT: "Desbloquea [GetBuilding('feng_shui_harmonized_area_01').GetName].\n#flavor Un cultivador alinea el chi con la línea del dragón más cercana, asegurando un flujo pacífico de energía.#!"
+
+ chi_arts_chi_ward_perk_name: "Protecciones de Chi"
+ CHI_ARTS_CHI_WARD_PERK_EFFECT: "Desbloquea [GetBuilding('feng_shui_harmonized_area_02').GetName].\n#flavor Un cultivador alinea el flujo de chi de una ciudad con un nido de dragón.#!"
+
+ chi_arts_demon_ward_perk_name: "Protecciones contra demonios"
+ chi_arts_dragon_flow_perk_name: "Flujo del dragón"
+ CHI_ARTS_DEMON_WARD_PERK_EFFECT: "#flavor Un cultivador alinea una ciudad entera con un nido de dragón para purificarla del chi demoníaco.#!"
+ CHI_ARTS_DRAGON_FLOW_PERK_EFFECT: "Desbloquea [GetBuilding('feng_shui_harmonized_area_03').GetName].\n#flavor Un cultivador pacifica el flujo del chi en su ubicación.#!"
+
+ chi_arts_transcendend_aligment_perk_name: "Alineación trascendente"
+ CHI_ARTS_TRANSCENDEND_ALIGMENT_PERK_EFFECT: "Desbloquea [GetBuilding('feng_shui_harmonized_area_04').GetName].\n#flavor Un cultivador alinea una ciudad entera con una puerta del dragón.#!"
+
+
+ chi_arts_evaluate_yin_soul_perk_name: "Escudriñar el alma Yin"
+ chi_arts_evaluate_yang_soul_perk_name: "Escudriñar el alma Yang"
+ CHI_ARTS_EVALUATE_YIN_SOUL_PERK_EFFECT: "#flavor Un cultivador evalúa los espíritus yin locales y cómo usarlos.#!"
+ CHI_ARTS_EVALUATE_YANG_SOUL_PERK_EFFECT: "#flavor Un cultivador evalúa los espíritus yang locales y cómo usarlos.#!"
+
+ chi_arts_soul_bridge_perk_name: "Puente de almas"
+ CHI_ARTS_SOUL_BRIDGE_PERK_EFFECT: "Como [character_interaction|E], gana un [weak_hook|E] sobre tu objetivo al coste de que ellos ganen un [weak_hook|E] sobre ti.\n#flavor Un cultivador vincula su chi con el de otro ser para obtener una comprensión mutua.#!"
+
+ chi_arts_corrupting_yin_soul_perk_name: "Corrupción del alma Yin"
+ chi_arts_taming_yang_soul_perk_name: "Domesticación del alma Yang"
+ CHI_ARTS_CORRUPTING_YIN_SOUL_PERK_EFFECT: "#flavor Un cultivador puede usar espíritus yin locales para ayudar en sus esfuerzos de intriga.#!"
+ CHI_ARTS_TAMING_YANG_SOUL_PERK_EFFECT: "#flavor Un cultivador puede domesticar espíritus yang locales, expandiendo su alma yang y permitiendo así mantener más relaciones.#!"
+ 
+ chi_arts_authority_over_yin_soul_perk_name: "Autoridad sobre las almas Yin"
+ chi_arts_authority_over_yang_soul_perk_name: "Autoridad sobre las almas Yang"
+ CHI_ARTS_AUTHORITY_OVER_YIN_SOUL_PERK_EFFECT: "Mejora [GetPerk('chi_arts_soul_bridge_perk').GetName(GetPlayer)] reemplazando el [weak_hook|E] que ganas por un [strong_hook|E] #italic (solo en objetivos #bold femeninos#!)#!.\n#flavor Cuando un cultivador vincula su alma con el chi yin de un objetivo, obtiene un mayor control sobre él.#!"
+ CHI_ARTS_AUTHORITY_OVER_YANG_SOUL_PERK_EFFECT: "Mejora [GetPerk('chi_arts_soul_bridge_perk').GetName(GetPlayer)] reemplazando el [weak_hook|E] que ganas por un [strong_hook|E] #italic (solo en objetivos #bold masculinos#!)#!.\n#flavor Cuando un cultivador vincula su alma con el chi yang de un objetivo, obtiene un mayor control sobre él.#!"
+
+ chi_arts_soul_shackles_perk_name: "Grilletes del alma"
+ CHI_ARTS_SOUL_SHACKLES_PERK_EFFECT: "Mejora [GetPerk('chi_arts_soul_bridge_perk').GetName(GetPlayer)] eliminando el [weak_hook|E] que el objetivo obtiene sobre ti.\n#flavor Cuando un cultivador vincula su chi con el de un objetivo, puede engañar su parte del acuerdo.#!"
+
+ chi_arts_voice_of_emperor_perk_name: "Voz del Emperador"
+ CHI_ARTS_VOICE_OF_EMPEROR_PERK_EFFECT: "Mejora [GetPerk('chi_arts_soul_bridge_perk').GetName(GetPlayer)] permitiéndote omitir el requisito de [opinion|E] siempre que estés en la misma ubicación que tu objetivo.\n#flavor Un cultivador puede vincular su chi con el de un objetivo solo con la palabra.#!"
+
+
+ chi_arts_dragon_call_perk_name: "Llamada del dragón"
+ chi_arts_chi_nest_perk_name: "Nido de Chi"
+ CHI_ARTS_DRAGON_CALL_PERK_EFFECT: "#flavor Un cultivador puede desviar parte de una línea del dragón hacia su dominio.#!"
+ CHI_ARTS_CHI_NEST_PERK_EFFECT: "#flavor Un cultivador puede desviar una pequeña parte de una línea del dragón hacia su guarida.#!"
+
+ chi_arts_chi_shaping_perk_name: "Moldeado de Chi"
+ CHI_ARTS_CHI_SHAPING_PERK_EFFECT: "Desbloquea [GetBuilding('extended_dragon_nest_01').GetName].\n#flavor Un cultivador puede dar forma a cómo fluye el chi en las líneas del dragón.#!"
+
+ chi_arts_yin_wall_perk_name: "Muro Yin"
+ chi_arts_yang_wall_perk_name: "Muro Yang"
+ CHI_ARTS_YIN_WALL_PERK_EFFECT: "Puede manipular el Manto.\n#flavor Un cultivador puede manipular el chi que separa el mundo Yin del Reino Medio.#!"
+ CHI_ARTS_YANG_WALL_PERK_EFFECT: "Puede manipular el Muro.\n#flavor Un cultivador puede manipular el chi que separa el mundo Yang del Reino Medio.#!"
+
+ chi_arts_dragon_shaping_perk_name: "Moldeado del dragón"
+ CHI_ARTS_DRAGON_SHAPING_PERK_EFFECT: "Desbloquea [GetBuilding('extended_dragon_nest_02').GetName].\n#flavor Un cultivador puede dar forma a cómo fluye una línea del dragón.#!"
+
+ chi_arts_open_dragon_gate_perk_name: "Abrir puerta del dragón"
+ chi_arts_expand_dragon_river_perk_name: "Expandir río del dragón"
+ CHI_ARTS_OPEN_DRAGON_GATE_PERK_EFFECT: "Reduce el requisito de [development|E] de los nidos de dragón en #V 10#!.\n#flavor Un cultivador puede abrir a la fuerza un nido de dragón.#!"
+ CHI_ARTS_EXPAND_DRAGON_RIVER_PERK_EFFECT: "Reduce el requisito de [development|E] de los nidos de dragón en #V 10#!.\n#flavor Un cultivador puede inflar el tamaño de un río del dragón.#!"
+
+ chi_arts_sapping_the_dragon_nest_perk_name: "Drenar el nido de dragón"
+ CHI_ARTS_SAPPING_THE_DRAGON_NEST_PERK_EFFECT: "Como [character_interaction|E], usa un nido de dragón construido para ganar el modificador [GetModifier('chi_arts_sapping_the_dragon_nest_modifier').GetNameWithTooltip], que escala según el nivel del nido de dragón utilizado.\n#flavor Un cultivador puede desviar partes de una puerta del dragón hacia sí mismo, potenciándose enormemente.#!"
+ 
+
+ chi_arts_yin_mantle_perk_name: "Manto Yin"
+ chi_arts_yang_mantle_perk_name: "Manto Yang"
+ CHI_ARTS_YIN_MANTLE_PERK_EFFECT: "#flavor Un cultivador se envuelve en un manto de yin, pareciendo más temible e impresionante.#!"
+ CHI_ARTS_YANG_MANTLE_PERK_EFFECT: "#flavor Un cultivador se envuelve en un manto de yang, pareciendo más atractivo y poderoso.#!"
+
+ chi_arts_accentuate_chi_perk_name: "Acentuar Chi"
+ CHI_ARTS_ACCENTUATE_CHI_PERK_EFFECT: "Como [character_interaction|E], sana [EmptyScope.ScriptValue('POD_base_heal_value')|V0] de [POD_superficial_damage_with_box|E].\n#flavor Un cultivador puede alterar el flujo de chi en el cuerpo del objetivo, sanando heridas.#!"
+
+ chi_arts_eightfold_yin_mantle_perk_name: "Manto Yin óctuple"
+ chi_arts_eightfold_yang_mantle_perk_name: "Manto Yang óctuple"
+ CHI_ARTS_EIGHTFOLD_YIN_MANTLE_PERK_EFFECT: "#flavor Un cultivador se envuelve en un manto de yin puro, apareciendo ante los demás como una nube de puro frío y pesadillas pasivas.#!"
+ CHI_ARTS_EIGHTFOLD_YANG_MANTLE_PERK_EFFECT: "#flavor Un cultivador se envuelve en un manto de yang puro, apareciendo ante los demás como una nube de puro calor y aceptación.#!"
+
+ chi_arts_soothing_soul_perk_name: "Calmar el alma"
+ CHI_ARTS_SOOTHING_SOUL_PERK_EFFECT: "Mejora [GetPerk('chi_arts_accentuate_chi_perk').GetName(GetPlayer)] sanando [Multiply_CFixedPoint(EmptyScope.ScriptValue('POD_base_heal_value'),'(CFixedPoint)2')|V0] de [POD_superficial_damage_with_box|E] a la vez que reduce el [stress|E] del objetivo en 25.\n#flavor Un cultivador calma el alma de un objetivo, disminuyendo el dolor y permitiendo una curación más fácil.#!"
+
+ chi_arts_yin_nihilus_perk_name: "Nihilus Yin"
+ chi_arts_yang_phoenix_perk_name: "Fénix Yang"
+ CHI_ARTS_YIN_NIHILUS_PERK_EFFECT: "Otorga [GetModifier('chi_arts_yin_nihilus_modifier').GetNameWithTooltip] a los [knights|E] enemigos cuando actúes como [commander|E] durante la [combat_phase|E], o a tu enemigo durante los [single_combat_duel_plural|E].\n#flavor Un cultivador puede detonar una 'bomba' de yin puro, afectando a la vida cercana con una rigidez antinatural.#!"
+ CHI_ARTS_YANG_PHOENIX_PERK_EFFECT: "Otorga [GetModifier('chi_arts_yang_phoenix_modifier').GetNameWithTooltip] a los [knights|E] aliados cuando actúes como [commander|E] durante la [combat_phase|E] o a ti mismo durante los [single_combat_duel_plural|E].\n#flavor Un cultivador puede detonar una 'bomba' de yang puro, afectando a la vida cercana con una velocidad antinatural.#!"
+
+ chi_arts_chi_mastery_perk_name: "Maestría del Chi"
+ CHI_ARTS_CHI_MASTERY_PERK_EFFECT: "Como [character_interaction|E], sana [Multiply_CFixedPoint(EmptyScope.ScriptValue('POD_base_heal_value'),'(CFixedPoint)3')|V0] de [POD_superficial_damage_with_box|E].\n#flavor Un cultivador puede manipular libremente el chi en el cuerpo de un objetivo para sanar cualquier herida.#!"
+
+
+ chi_arts_cry_of_yin_perk_name: "Voz infundida de Yin"
+ chi_arts_cry_of_yang_perk_name: "Voz infundida de Yang"
+ CHI_ARTS_CRY_OF_YIN_PERK_EFFECT: "Cuando comienza una guerra, otorga [GetModifier('chi_arts_cry_of_yin_modifier').GetNameWithTooltip] a todos los [knights|E] enemigos durante 3 años.\n#flavor Un cultivador infunde su voz con chi yin, distrayendo a su enemigo con pensamientos de depresión.#!"
+ CHI_ARTS_CRY_OF_YANG_PERK_EFFECT: "Cuando comienza una guerra, otorga [GetModifier('chi_arts_cry_of_yang_modifier').GetNameWithTooltip] a todos los [knights|E] enemigos durante 3 años.\n#flavor Un cultivador infunde su voz con chi yang, distrayendo a su enemigo con pensamientos de hiperactividad.#!"
+
+ chi_arts_battle_cry_perk_name: "Grito de batalla"
+ CHI_ARTS_BATTLE_CRY_PERK_EFFECT: "#flavor Un cultivador puede anunciar el nombre de su próximo ataque, renunciando al elemento sorpresa pero aumentando enormemente su poder.#!"
+
+ chi_arts_roar_of_dragon_perk_name: "Rugido del Dragón de Ébano"
+ chi_arts_roar_of_phoenix_perk_name: "Rugido del Fénix Escarlata"
+ CHI_ARTS_ROAR_OF_DRAGON_PERK_EFFECT: "#flavor Un cultivador imita el rugido del Dragón de Ébano, causando un daño masivo a cualquier cosa inorgánica cercana.#!"
+ CHI_ARTS_ROAR_OF_PHOENIX_PERK_EFFECT: "Probabilidad adicional de mutilar a los [knights|E] enemigos cuando estés en la [combat_phase|E] como [knight|E].\n#flavor Un cultivador imita el rugido del Fénix Escarlata, causando un daño masivo a cualquier cosa orgánica cercana.#!"
+
+ chi_arts_shout_of_inner_pain_perk_name: "Grito de dolor interno"
+ CHI_ARTS_SHOUT_OF_INNER_PAIN_PERK_EFFECT: "Cuando comienza una guerra, otorga 20 de [stress|E] a todos los [knights|E] enemigos.\n#flavor Un cultivador desata su dolor interno, causando tanto dolor a sus enemigos como alivio para sí mismo.#!"
+
+ chi_arts_scream_of_demon_perk_name: "Grito de los Mil Infiernos"
+ chi_arts_silent_scream_perk_name: "Grito silencioso"
+ CHI_ARTS_SCREAM_OF_DEMON_PERK_EFFECT: "Cuando comienza una guerra, otorga 30 de [stress|E] a todos los [knights|E] enemigos con algún tipo de sombra interna como $POD_splat_vampire_plural$, $POD_splat_wraith_plural$ o $POD_splat_kueijin$ sin [GetTrait('dharma10').GetName(GetPlayer)].\n#flavor Un cultivador desata su P'o en un solo grito, haciendo que las criaturas cercanas entren en frenesí.#!"
+ CHI_ARTS_SILENT_SCREAM_PERK_EFFECT: "Probabilidad adicional de mutilar a los [knights|E] enemigos cuando estés en la [combat_phase|E] como [knight|E].\n#flavor Un cultivador puede usar todos los poderes de Kiai anteriores solo con un susurro.#!"
+
+ chi_arts_divine_cry_perk_name: "Grito que perfora los Cielos"
+ CHI_ARTS_DIVINE_CRY_PERK_EFFECT: "Al comienzo de una batalla, obliga a cada [knight|E] enemigo sin defensas mentales fuertes con al menos #N 70#! de [stress|E] a abandonar la batalla.\n#flavor Un cultivador imita el grito de un dios enfurecido, obligando a todos los de mente frágil a huir despavoridos.#!"
+
+
+ chi_arts_joss_weaving_perk_name: "Tejido de Joss"
+ chi_arts_fate_of_star_perk_name: "Destino cruzado por las estrellas"
+ CHI_ARTS_JOSS_WEAVING_PERK_EFFECT: "Desbloquea una interacción de personaje para otorgar un modificador de buena suerte a un objetivo.\n\n#flavor Un cultivador teje la suerte pura según sus deseos.#!"
+ CHI_ARTS_FATE_OF_STAR_PERK_EFFECT: "#flavor Un cultivador puede predecir lo que le sucederá a su objetivo.#!"
+
+ chi_arts_realigning_the_stars_perk_name: "Realinear las estrellas"
+ CHI_ARTS_REALIGNING_THE_STARS_PERK_EFFECT: "Como [character_interaction|E], otorga a tu objetivo uno de los 12 [modifiers|E] basados en un signo del zodiaco.\n#flavor Un cultivador puede usar uno de los 12 horóscopos para que sea su estrella personal, otorgando la bendición correspondiente.#!"
+ 
+ chi_arts_cursing_the_star_perk_name: "Maldecir las estrellas"
+ chi_arts_read_the_stars_perk_name: "Leer las estrellas"
+ CHI_ARTS_CURSING_THE_STAR_PERK_EFFECT: "Como [character_interaction|E], inflige [EmptyScope.ScriptValue('POD_base_wound_damage')|V0] de [POD_superficial_damage_with_box|E].\n#flavor Un cultivador puede maldecir a un objetivo para que tenga mala suerte, lo que resulta en algún tipo de accidente.#!"
+ CHI_ARTS_READ_THE_STARS_PERK_EFFECT: "#flavor Un cultivador puede leer las estrellas, prediciendo el futuro hasta cierto punto.#!"
+
+ chi_arts_reweaving_the_stars_perk_name: "Re-tejer las estrellas"
+ CHI_ARTS_REWEAVING_THE_STARS_PERK_EFFECT: "Mejora [GetPerk('chi_arts_realigning_the_stars_perk').GetName(GetPlayer)] permitiéndote reemplazar el [modifier|E] y aumentando la duración a 10 años.\n#flavor Un cultivador puede manipular su horóscopo mucho más fácilmente y con mayor flexibilidad.#!"
+
+ chi_arts_celestial_curse_perk_name: "Maldición celestial"
+ chi_arts_read_the_twelve_perk_name: "Leer los Doce"
+ CHI_ARTS_CELESTIAL_CURSE_PERK_EFFECT: "Mejora [GetPerk('chi_arts_cursing_the_star_perk').GetName(GetPlayer)] infligiendo [Multiply_CFixedPoint(EmptyScope.ScriptValue('POD_base_wound_damage'),'(CFixedPoint)2')|V0] de [POD_superficial_damage_with_box|E].\n#flavor Un cultivador puede infligir una maldición celestial en todo el horóscopo del objetivo.#!"
+ CHI_ARTS_READ_THE_TWELVE_PERK_EFFECT: "#flavor Un cultivador puede leer el futuro del objetivo con gran precisión usando todo su horóscopo en la adivinación.#!"
+
+ chi_arts_substitution_of_the_twelve_perk_name: "Sustitución de los Doce"
+ CHI_ARTS_SUBSTITUTION_OF_THE_TWELVE_PERK_EFFECT: "Mejora [GetPerk('chi_arts_realigning_the_stars_perk').GetName(GetPlayer)] haciendo que el [modifier|E] dure para siempre mientras no lo cambies manualmente.\n#flavor Un cultivador puede establecer permanentemente un solo horóscopo para que sea su estrella personal en el cielo nocturno.#!"

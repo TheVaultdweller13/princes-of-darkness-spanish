@@ -1,0 +1,54 @@
+﻿l_spanish:
+
+ #### Interacciones comunes ####
+ POD_fera_shapeshift_interaction: "Cambiar de forma"
+ POD_fera_shapeshift_interaction_desc: "Usa $POD_energy_gnosis$ para cambiar tu forma."
+ POD_fera_shapeshift_interaction_options_heading: "¿En qué forma me transformaré?"
+ POD_fera_shapeshift_interaction_homid: "Volver a la forma homínida"
+ POD_fera_shapeshift_interaction_beastform: "[GetPlayer.Custom('PODFeraBeastform')]"
+ POD_fera_shapeshift_interaction_warform: "[GetPlayer.Custom('PODFeraWarform')]"
+ POD_fera_shapeshift_interaction_primalhumanform: "[GetPlayer.Custom('PODFeraPrimalHumanform')]"
+ POD_fera_shapeshift_interaction_primalbeastform: "[GetPlayer.Custom('PODFeraPrimalBeastform')]"
+ POD_shapeshift_form_totem_form: "Forma de tótem"
+ 
+ 
+ 
+ POD_train_gift_interaction: "Entrenar Don"
+ POD_train_gift_interaction_desc: "Enseña a [recipient.GetFirstName] uno de tus Dones"
+ 
+ 
+ 
+ POD_fera_weather_magic_interaction: "Magia climática"
+ POD_fera_weather_magic_interaction_desc: "Desata un desastre natural en el reino de [recipient.GetFirstName]."
+ POD_fera_weather_magic_interaction_options_heading: "¿Qué peligro natural invocaré?"
+ 
+ 
+ 
+ 
+ POD_spawn_flaying_plague_interaction: "Desatar la Plaga del Desollamiento"
+ POD_spawn_flaying_plague_interaction_desc: "Tienes la terrible Plaga del Desollamiento a tu disposición. Con algunos ingredientes específicos para el ritual, podrías desatarla sobre los desprevenidos lupinos una vez más."
+ POD_spawn_flaying_plague_interaction.tt: "Inflige la Plaga del Desollamiento en la ubicación de [recipient.GetFirstName]."
+ POD_spawn_flaying_plague_actor_toast: "La Plaga del Desollamiento campa a sus anchas por la ubicación de [recipient.GetFirstName]."
+ POD_spawn_flaying_plague_actor_toast.desc: "Esperemos que no llegues a arrepentirte de esto"
+ POD_spawn_flaying_plague_failure_toast: "No lograste propagar la Plaga del Desollamiento en la ubicación de [recipient.GetFirstName]"
+ POD_spawn_flaying_plague_failure_toast.desc: "Pero habrá más oportunidades en el futuro..."
+ POD_spawn_flaying_plague_interaction_success: "La Plaga del Desollamiento estallará en la ubicación de [recipient.GetFirstName] y se propagará desde allí con el tiempo."
+ POD_spawn_flaying_plague_interaction_failure: "La Plaga del Desollamiento no logra arraigar."
+ POD_inflict_flaying_plague_interaction: "Infligir la Plaga del Desollamiento"
+ POD_inflict_flaying_plague_interaction_desc: "Infesta a [recipient.GetFirstName] con la Plaga del Desollamiento, debilitando sus defensas. Si es capaz de convertirse en una [GetTrait('abomination').GetName(GetNullCharacter)], esto asegurará el éxito del $pod_Embrace$."
+ 
+ 
+ ### Interacciones de Dones Planetarios
+ POD_ebon_binding_interaction: "Vínculo de ébano"
+ POD_ebon_binding_interaction_desc: "Vincula un castigo adecuado a [recipient.GetFirstName]. [recipient.GetFirstName] sufrirá un dolor paralizante cuando piense en entregarse a la acción prohibida."
+ ebon_binding_modifier: "Vínculo de ébano"
+  
+  
+ POD_savagery_of_the_taloned_hunter_interaction: "Salvajismo del cazador con garras"
+ POD_savagery_of_the_taloned_hunter_interaction_desc: "Gasta 1 de $POD_energy_gnosis$ y fuerza de voluntad para ganar 2 de $POD_energy_gnosis$."
+  
+ POD_burden_of_knowledge_interaction: "Carga del conocimiento"
+ POD_burden_of_knowledge_interaction_desc: "Hace que [recipient.GetFirstName] gane [GetModifier('murderous_frenzy_modifier').GetNameWithTooltip], [GetModifier('change_for_better_modifier').GetNameWithTooltip] o se suicide"
+  
+ POD_essential_transformation_interaction: "Transformación esencial"
+ POD_essential_transformation_interaction_desc: "Aumenta las heridas para ganar $POD_energy_gnosis$."

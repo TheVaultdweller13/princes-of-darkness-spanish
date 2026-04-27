@@ -1,0 +1,40 @@
+﻿l_spanish:
+
+
+ fera_advance_rank_decision: "Aumentar tu Rango"
+ fera_advance_rank_decision_desc: "El Renombre y el Rango son una medida del lugar de un cambiapieles en su sociedad. Cuanto más Renombre tienen, más peso tienen sus palabras. Los diferentes $glossary_fera$ utilizan cada uno un conjunto diferente de tres tipos de renombre.\n\nObtienes Renombre por:\n"
+ fera_advance_rank_decision_tooltip: "Progresar en los rangos Fera requiere tiempo y compromiso."
+ fera_advance_rank_decision_confirm: "¡Mi fama crece!"
+
+ fera_advance_rank_renown_glory: "#clickable $POD_fera_renown_glory$:#!\n#medium $BULLET_WITH_TAB$Ganar guerras contra gobernantes alineados con el Wyrm si eres de fe gaiana.\n$BULLET_WITH_TAB$Ganar guerras contra gobernantes alineados con Gaia si eres de fe del Wyrm.\n$BULLET_WITH_TAB$Matar personajes alineados con el Wyrm si eres de fe gaiana.\n$BULLET_WITH_TAB$Matar personajes alineados con Gaia si eres de fe del Wyrm.#!\n$BULLET_WITH_TAB$Completar [mercenary_task_contracts|E] como [adventurer|E].\n"
+
+ fera_advance_rank_renown_honor: "#clickable $POD_fera_renown_honor$:#!\n#medium $BULLET_WITH_TAB$Abandonar un [grudge|E], terminar una [rivalry|E] o perder un [nemesis|E].\n$BULLET_WITH_TAB$Otorgar [duchies|E] o títulos superiores a otro $glossary_fera$.\n$BULLET_WITH_TAB$Mejorar un Túmulo a su nivel máximo.\n$BULLET_WITH_TAB$Aumentar tu [piety_level|E].#!\n"
+
+ fera_advance_rank_renown_wisdom: "#clickable $POD_fera_renown_wisdom$:#!\n#medium $BULLET_WITH_TAB$Terminar expediciones a la Umbra.\n$BULLET_WITH_TAB$Obtener la última [perk|E] de un árbol de estilo de vida $glossary_fera$.\n$BULLET_WITH_TAB$Terminar un [journey|E] de Búsqueda Espiritual.#!\n"
+
+ fera_advance_rank_renown_power: "#clickable $POD_fera_renown_power$:#!\n#medium $BULLET_WITH_TAB$Ganar guerras.\n$BULLET_WITH_TAB$Ganar duelos.\n$BULLET_WITH_TAB$Aumentar tu [prestige_level|E].#!\n$BULLET_WITH_TAB$Obtener [urgetaints_lifestyle|E] físico.\n"
+
+ fera_advance_rank_renown_cunning: "#clickable $POD_fera_renown_cunning$:#!\n#medium $BULLET_WITH_TAB$Tener éxito en una [infiltration|E].\n$BULLET_WITH_TAB$[blackmailing|E] a otro personaje.\n$BULLET_WITH_TAB$Tener éxito en [schemes|E] de [GetScheme('abduct').GetTypeName].#!\n"
+
+ fera_advance_rank_renown_ferocity: "#clickable $POD_fera_renown_ferocity$:#!\n#medium $BULLET_WITH_TAB$Regresar a tu tierra con al menos #P 50#! de [loot|E] de [raid|E].\n$BULLET_WITH_TAB$Ganar [trait_level_track_xp|E] en cualquier [trait_level_track|E] de [GetTrait('lifestyle_hunter').GetName(GetNullCharacter)].\n$BULLET_WITH_TAB$Entrenar con tu [GetPlayer.Custom('PODCoterie')].#!\n"
+
+ fera_advance_rank_renown_infamy: "#clickable $POD_fera_renown_infamy$:#!\n#medium $BULLET_WITH_TAB$Tener éxito en [schemes|E] de [GetScheme('fabricate_hook').GetTypeName].\n$BULLET_WITH_TAB$Ejecutar a tus propios vasallos de [title_rank|E] de Ducado o superior sin un [execute_reason|E].\n$BULLET_WITH_TAB$Usurpar títulos de [rank|E] de Reino o superior.\n$BULLET_WITH_TAB$Romper treguas.#!\n$BULLET_WITH_TAB$Obtener [urgetaints_lifestyle|E] mental.\n"
+
+
+ fera_advance_rank_renown_bonuses: "\n#clickable Tu [GetPlayer.Custom('PODFeraAuspiceType')] otorga una bonificación a [GetPlayer.Custom('PODFeraAuspiceRenownBoost')].#!"
+
+ POD_fera_advance_to_next_rank_desc: "Asciendes al Rango #bold $VALUE|0V$#! en el [trait|E] [TRAIT.GetName(GetPlayer)]"
+ fera_advance_rank_decision_requirement_tributaries: "Tienes 2 o más [tributaries|E] de al menos [rank|E] de Reino"
+
+
+ fera_recruit_beastborn_decision: "Nutrir a los parientes animales"
+ fera_recruit_beastborn_decision_desc_werewolf: "Los Garou tienen una fuerte relación con sus parientes lobos. Cada tribu, incluso las más ligadas a la ciudad como los Guardianes de los Hombres, vigila cuidadosamente a sus amigos de cuatro patas y busca los signos de un Primer Cambio entre ellos.\nAquellos de los lobos que terminan convirtiéndose en Hombres Lobo suelen necesitar más preparación antes de convertirse en miembros de pleno derecho de la Tribu, ya que los adornos del mundo humano son nuevos para ellos. Como líder local, te corresponde elegir con qué atención quieres supervisar y planificar esta ayuda potencial."
+
+ fera_recruit_beastborn_decision_desc_bubasti: "Hace mucho tiempo, los Bubasti se unieron a Horus en su lucha eterna contra su decadente tío, Set. Aunque la causa era justa y los Bubasti todavía se enorgullecen de su contribución, el resultado fue una derrota terrible. Los triunfantes setitas capturaron a los parientes gatos de los Bubasti, los gatos Kyphur, y los mataron o los alimentaron con sangre para convertirlos en monstruos aberrantes.\nSin embargo, con su reciente victoria y el audaz rescate de los últimos gatos Kyphur, los Bubasti vuelven a prosperar y a vigilar a sus parientes felinos, ayudándoles a reunir fuerzas y a curarse del trauma de la larga servidumbre a los setitas."
+ fera_recruit_beastborn_decision_desc_bastet: "Los Bastet tienen una fuerte relación con sus parientes gatos. Cada tribu vigila cuidadosamente a sus amigos de cuatro patas y busca los signos de un Primer Cambio entre ellos. Al ser los gatos muy territoriales, también significa que las tribus tienden a permanecer en la región donde habitan sus parientes.\nAquellos de los gatos que terminan convirtiéndose en Bastet suelen necesitar más preparación antes de convertirse en miembros de pleno derecho de la Tribu, ya que los adornos del mundo humano son nuevos para ellos. Como líder local, te corresponde elegir con qué atención quieres supervisar y planificar esta ayuda potencial."
+ fera_recruit_beastborn_decision_desc_mokole: "Como uno de los pocos Fera no mamíferos, los Mokolé pueden estar bastante desvinculados del cuidado de sus parientes animales más antisociales. Con el ciclo de vida más rápido de los reptiles, es sencillo tener nidadas especializadas donde los Mokolé ponen sus huevos, donde los Parientes humanos pueden vigilarlos y esperar a los que eclosionan, y que suelen experimentar el Primer Cambio en un par de semanas. Como líder local, es sencillo ir a los huevos y comprobar los desarrollos actuales, para ver si alguna de tus crías ha experimentado el Primer Cambio.\nAquellos de los reptiles que terminan convirtiéndose en Mokolé suelen necesitar más preparación antes de convertirse en miembros de pleno derecho de la Nidada, ya que los adornos del mundo humano son nuevos para ellos. Como líder local, te corresponde elegir con qué atención quieres supervisar y planificar esta ayuda potencial."
+
+ fera_recruit_beastborn_decision_bubasti_requirement: "Se debe haber completado #bold Gato contra Serpiente#!"
+ fera_recruit_beastborn_decision_effect: "Se te ofrecerán opciones para que lleguen a tu corte $glossary_fera$ [GetTrait('beast_born').GetName( GetPlayer )] de tu tribu. Esto probablemente te costará algunos recursos adicionales."
+ fera_recruit_beastborn_decision_tooltip: "Encontrar $glossary_fera$ entre las bestias."
+ fera_recruit_beastborn_decision_confirm: "¡Comenzar la búsqueda!"

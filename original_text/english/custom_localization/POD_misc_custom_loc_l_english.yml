@@ -13,7 +13,8 @@
  THIS_IS_YOU_REDEMPTION: "This is you... but at what cost?"
  THIS_IS_YOU_CRINOS: "This is you, and you are ready for #italic carnage#!"
  THIS_IS_YOU_VICISSITUDE: "This is the perfect version of you"
- THIS_IS_YOU_DEMON: "This is your true form"
+ THIS_IS_YOU_DEMON_HIGH: "This is finally you, all of you"
+ THIS_IS_YOU_DEMON: "This is you, or at least part of you"
  
  
  POD_splat_spirit: "[GetTrait('spirit').GetName(GetNullCharacter)]"
@@ -80,14 +81,19 @@
  POD_domicile_tremere: "chantry"
  POD_domicile_vampire: "haven"
  POD_domicile_werewolf: "caern"
+ POD_domicile_mokole: "wallow"
  POD_domicile_fae: "freehold"
  POD_domicile_mummy: "tomb"
- POD_domicile_generic: "lair"
+ POD_domicile_generic: "hideout"
+
+ POD_domicile_title: "[holder.GetFirstNamePossessiveNoTooltip] [holder.Custom('PODDomicile')|U]"
 
  POD_gamemode_icon_samuel_haight: "#TOOLTIP:POD_gamemode_icon_samuel_haight_tt @haight_icon!#! "
- POD_gamemode_icon_samuel_haight_tt: "$pod_samuel_haight_mode_with_icon$ is active"
+ POD_gamemode_icon_samuel_haight_tt: "[samuel_haight_mode_with_icon|E] is active"
  POD_gamemode_icon_storyteller: "#TOOLTIP:POD_gamemode_icon_storyteller_tt @wod_icon!#! "
- POD_gamemode_icon_storyteller_tt: "$pod_storyteller_mode_with_icon$ is active"
+ POD_gamemode_icon_storyteller_tt: "[storyteller_mode_with_icon|E] is active"
+ POD_gamemode_icon_custom: "#TOOLTIP:POD_gamemode_icon_custom_tt @mage_icon!#! "
+ POD_gamemode_icon_custom_tt: "The rules of this game mode have been customized"
 
  POD_roguelike_icon_lifted_all_curses: "#TOOLTIP:POD_roguelike_icon_lifted_all_curses_tt @prestige_level_5_icon!#! "
  POD_roguelike_icon_lifted_all_curses_tt: "This character lifted all the curses from [roguelike_mode|E]"

@@ -1,0 +1,30 @@
+﻿l_spanish:
+
+ POD_learn_spirit_language_interaction: "Aprender [spirit_language|E]"
+ POD_learn_spirit_language_interaction_desc: "Aprende el [spirit_language|E] de [recipient.GetFirstName]."
+ POD_learn_spirit_language_interaction_req: "No puedes aprender una [ancestral_tongue|E]"
+ 
+ POD_summon_spirit_interaction: "Convocar espíritu"
+ POD_summon_spirit_interaction_desc: "Convoca a un personaje [GetTrait('spirit').GetName( GetNullCharacter )] en tu ubicación."
+ POD_summon_spirit_interaction_random: "Espíritu aleatorio"
+ POD_summon_spirit_interaction_gaian: "Espíritu gaiano"
+ POD_summon_spirit_interaction_bane: "Espíritu de perdición"
+ POD_summon_spirit_interaction_elemental_bane: "Espíritu de perdición elemental"
+ 
+ 
+ POD_spirit_pact_interaction: "Pacto espiritual"
+ POD_spirit_pact_interaction_desc: "Crea un [spirit_pact|E] con [recipient.GetFirstName]."
+ POD_spirit_pact_interaction_tooltip: "[recipient.GetName] ya ha hecho un [spirit_pact|E] con otro [character|E]"
+ POD_spirit_pact_interaction_tooltip2: "Está ocupado"
+ 
+ POD_spirit_chiminage_interaction: "Realizar Chiminage"
+ POD_spirit_chiminage_interaction_desc: "Realizar Chiminage fortalecerá los poderes espirituales de [recipient.GetFirstName] y tu [spirit_pact|E]."
+ POD_spirit_chiminage_interaction_short: "Chiminage corto"
+ POD_spirit_chiminage_interaction_medium: "Chiminage regular"
+ POD_spirit_chiminage_interaction_long: "Chiminage largo"
+ 
+ POD_spirit_bane_empowerment_interaction: "Potenciar perdición"
+ POD_spirit_bane_empowerment_interaction_desc: "Realiza un sacrificio para potenciar al espíritu de perdición"
+ 
+ POD_spirit_possession_interaction: "Someterse a [possession|E]"
+ POD_spirit_possession_interaction_desc: "Permite que [recipient.GetName] te posea, desbloqueando nuevos poderes."

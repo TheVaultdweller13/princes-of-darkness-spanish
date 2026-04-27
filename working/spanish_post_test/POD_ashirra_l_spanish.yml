@@ -1,0 +1,85 @@
+﻿l_spanish:
+ 
+ #### Cargos de la corte ####
+ ashirra_imam_court_position: "Imán"
+ ashirra_imam_court_position_desc: "El Imán es el líder espiritual en cada comunidad Ashirra. Protege a los fieles, garantizando la seguridad y prosperidad de la comunidad, e impone las leyes del Islam. También se encarga de mantener la mezquita para los Ashirra de la ciudad, que es tanto el corazón espiritual de la comunidad como un lugar de santuario donde cualquier cainita puede acudir en paz y hacer oír sus quejas."
+ ashirra_ulama_court_position: "Alim"
+ ashirra_ulama_court_position_desc: "Los 'ulama son estudiosos del Corán y el Hadiz. Sirven como hombres sabios respetados de la comunidad. Los Ashirra que buscan el conocimiento religioso sirven como 'ulama en su propia comunidad nocturna. Muchos de estos Ashirra han memorizado estos textos sagrados y, en algunos casos, han pasado cientos de años contemplando y debatiendo el significado de las enseñanzas del Profeta."
+ ashirra_qadi_court_position: "Qadi"
+ ashirra_qadi_court_position_desc: "Los qadi son los juristas de la fe islámica, que estudian las leyes establecidas por Mahoma e interpretándolas en disputas o crímenes cometidos entre los fieles. Cada juez debe estar versado tanto en la ley establecida en el Corán como en literalmente cientos de juicios y precedentes anteriores establecidos por los juristas a lo largo de la historia del Islam. Este juez asesora al imán, al sultán y a otros vampiros en asuntos relacionados con disputas legales y recomienda castigos adecuados para las violaciones de la ley islámica."
+ ashirra_mullah_court_position: "Mullah"
+ ashirra_mullah_court_position_desc: "Los estudiosos más respetados de los Ashirra son conocidos como mullahs. Aunque cualquier Ashirra puede aspirar a ser un estudioso de los textos sagrados, el título de mullah solo puede obtenerse tras años de estudio devoto y aclimatación por parte de los mullahs actuales de la secta. En todo el mundo musulmán, solo un puñado de vampiros ostenta el título."
+ ashirra_mullah_court_position_requirement_tooltip: "Es un [GetTrait('theologian').GetName(GetNullCharacter)] o [GetTrait('scholar').GetName(GetNullCharacter)]"
+ 
+ 
+ 
+ #### Tareas de cargos de la corte ####
+ POD_imam_sadaqah: "Liderar Sadaqah pública"
+ POD_imam_sadaqah_desc: "Tu $ashirra_imam_court_position$ repartirá limosnas a los pobres e indigentes de tu dominio en tu nombre."
+ POD_imam_sanctuary: "Proporcionar santuario"
+ POD_imam_sanctuary_desc: "El $ashirra_imam_court_position$ dedicará tiempo a escuchar las quejas de los cainitas comunes."
+ POD_qadi_judge: "Dictar sentencias"
+ POD_qadi_judge_desc: "El $ashirra_qadi_court_position$ se centrará en juzgar diversos casos en tu lugar."
+ POD_ulama_teachings: "Asesorar al Sultán"
+ POD_ulama_teachings_desc: "El $ashirra_ulama_court_position$ asesora al Sultán usando su vasto conocimiento académico."
+ POD_ulama_teachings_requirement: "#bold No#! eres un [cultural_head|E]"
+ POD_ulama_learning: "Buscar más conocimiento"
+ POD_ulama_learning_desc: "El camino para convertirse en un $ashirra_mullah_court_position$ es largo. El $ashirra_ulama_court_position$ dedicará su tiempo a intentar convertirse en uno."
+ POD_ulama_learning_tooltip_requirement: "#bold No#! tiene tanto [GetTrait('theologian').GetName(GetNullCharacter)] como [GetTrait('scholar').GetName(GetNullCharacter)]"
+ POD_ulama_learning_tooltip: "Cada año, este personaje tiene una probabilidad de ganar una [perk|El] en el estilo de vida de [learning_lifestyle|E] de [GetTrait('theologian').GetName(GetNullCharacter)] o [GetTrait('scholar').GetName(GetNullCharacter)] hasta que tenga ambos rasgos. Esta probabilidad mejora según su [aptitude|El]."
+ court_ulama_study_theology_title: "El Alim progresa"
+ POD_mullah_warriors: "Convocar a los fieles"
+ POD_mullah_warriors_desc: "Muchos miembros de los [Glossary('Ashirra','game_concept_ashirra_desc')] están listos para luchar contra los enemigos de Alá. No rechazarán la llamada del $ashirra_mullah_court_position$."
+ POD_mullah_zealots: "Liderar a los devotos"
+ POD_mullah_zealots_desc: "Un $ashirra_mullah_court_position$ es muy respetado en los [Glossary('Ashirra','game_concept_ashirra_desc')]. Sus palabras pueden convencer incluso al más cínico de los adoradores. Aquellos que le apoyen te apoyarán a ti también."
+ 
+ 
+ #### Relacionado con El Cairo ####
+ POD_mullah_zealots_cairo_tooltip: "Cada año, este personaje tiene una probabilidad de eliminar [GetTrait('cynical').GetName(GetNullCharacter)] de su [liege|El], de los [courtiers|El] de su señor o de los [vassals|El] de su señor. Esta probabilidad mejora según su [aptitude|El]."
+ court_mullah_zealots_cairo_effect_title: "El Mullah disipa las dudas"
+ cairo_mullah_aptitude_reward_tooltip: "[GetBuilding('cairo_khitta_lama_04').GetName]"
+ 
+ POD_qadi_judge_cairo_tooltip: "Cada año, este personaje tiene una probabilidad de aumentar la [de_jure_drift|E] en el reino. Esta probabilidad mejora según su [aptitude|El]."
+ court_qadi_judge_cairo_effect_title: "El Qadi acelera la integración"
+ cairo_qadi_aptitude_reward_tooltip: "[GetBuilding('cairo_khitta_yashkur_04').GetName]"
+ 
+ POD_imam_sadaqah_cairo_tooltip: "Cada año, este personaje tiene una probabilidad de convertir condados que no sean Ashirra a tu [faith|E]. Esta probabilidad mejora según su [aptitude|El]."
+ court_imam_sadaqah_cairo_effect_title: "El Imán convierte un condado"
+ cairo_imam_aptitude_reward_tooltip: "[GetBuilding('cairo_khitta_hajj_04').GetName]"
+ 
+ POD_ulama_teachings_cairo_tooltip: "Cada año, este personaje tiene una probabilidad de eliminar uno de tus [Concept('fame_trait','rasgos de fama')|E] de [mental_break|E] negativos. Esta probabilidad mejora según su [aptitude|El]."
+ court_ulama_teachings_cairo_effect_title: "El Alim proporciona una nueva perspectiva de la vida"
+ cairo_ulama_aptitude_reward_tooltip: "[GetBuilding('cairo_khitta_fen_04').GetName]"
+ 
+ 
+ 
+ #### Modificadores ####
+ learned_kufr_blood_magic_modifier: "Falso creyente"
+ 
+ #### Varios ####
+ has_only_one_ashirra_court_position_tooltip: "#bold No#! está ya empleado en otro [court_position|E] de los [Glossary('Ashirra','game_concept_ashirra_desc')]"
+ non_sihr_bloodsorcery_learning_penalty_tooltip: "#warning Recibes una penalización debido a los efectos de [GetDoctrine('doctrine_bloodsorcery_kufr').GetBaseName]#!"
+ willing_embrace_cd_tooltip: "No ha rechazado un abrazo en la última década"
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  #### Situación del Lamento ####
+ ### En espera
+ situation_POD_keening: "El Lamento"
+ POD_keening_sub_region_keening_close: "Cerca"
+ POD_keening_sub_region_keening_nearby: "Próximo"
+ POD_keening_sub_region_keening_far: "Lejos"
+ POD_keening_participant_group_keepers_of_keening: "Guardianes del Lamento"
+ POD_keening_participant_group_keepers_of_keening_desc: "TODO"
+ POD_keening_participant_group_ashirra_rulers: "Ashirra"
+ POD_keening_participant_group_ashirra_rulers_desc: "TODO"
+ POD_keening_participant_group_evil_rulers: "Seres impíos"
+ POD_keening_participant_group_evil_rulers_desc: "TODO"
+ POD_keening_participant_group_other_rulers: "Otros"
+ POD_keening_participant_group_other_rulers_desc: "TODO"
