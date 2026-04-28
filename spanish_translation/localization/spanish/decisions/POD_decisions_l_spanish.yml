@@ -1631,7 +1631,7 @@
  daimyos_presence_decision_effect_2: "Si ya has realizado tu elección, también puedes usar esta decisión para cambiarla, siempre que no tengas ningún regimiento de los tipos mencionados anteriormente."
 
  vaulderie_decision: "Realizar la Vaulderie"
- vaulderie_decision_desc: "Al realizar un ritual y beber de una copa llena de la [pod_vitae$] compartida de todos los miembros de [GetPlayer.Custom('PODCoterie')], se puede crear un [Glossary('Vínculo de Sangre','game_concept_bloodbond_desc')] comunal con propiedades especiales. Este vínculo, llamado Vínculo, destruye todos los vínculos de sangre existentes y no se deteriora con el tiempo. Los participantes sentirán un fuerte sentido de lealtad entre ellos, sin el enredo emocional que suele acompañar a los vínculos de sangre."
+ vaulderie_decision_desc: "Al realizar un ritual y beber de una copa llena de la $pod_vitae$ compartida de todos los miembros de [GetPlayer.Custom('PODCoterie')], se puede crear un [Glossary('Vínculo de Sangre','game_concept_bloodbond_desc')] comunal con propiedades especiales. Este vínculo, llamado Vínculo, destruye todos los vínculos de sangre existentes y no se deteriora con el tiempo. Los participantes sentirán un fuerte sentido de lealtad entre ellos, sin el enredo emocional que suele acompañar a los vínculos de sangre."
  vaulderie_decision_tooltip: "Forja un vínculo irrompible con tus compañeros"
  vaulderie_decision_confirm: "Sin cadenas, sin amos"
  vaulderie_decision_is_valid: "Tienes un miembro de [GetPlayer.Custom('PODCoterie')] con sangre vampírica #weak ($POD_splat_vampire$, $POD_splat_ghoul$, $POD_splat_revenant$)#! que aún no ha participado en este ritual"
@@ -1661,7 +1661,7 @@
 
  quest_for_sargon_codex_objective_decision: "Caza del Códice Sargon"
  quest_for_sargon_codex_objective_decision_tooltip: "El Conocimiento Supremo Aguarda"
- quest_for_sargon_codex_objective_decision_desc: "El Códice Sargon es una tablilla de arcilla escrita por Cappadocius durante sus años mortales. Después de su [pod_Embrace$], la pérdida de su Avatar causó caos y destrucción dentro de sus recuerdos. No podía recordar lo que había escrito ni dónde lo había dejado. Después de milenios, el Códice Sargon fue destruido y sus partes dispersadas por todo el mundo. Si alguien lo restaurara, un poder inmenso le aguardaría."
+ quest_for_sargon_codex_objective_decision_desc: "El Códice Sargon es una tablilla de arcilla escrita por Cappadocius durante sus años mortales. Después de su $pod_Embrace$, la pérdida de su Avatar causó caos y destrucción dentro de sus recuerdos. No podía recordar lo que había escrito ni dónde lo había dejado. Después de milenios, el Códice Sargon fue destruido y sus partes dispersadas por todo el mundo. Si alguien lo restaurara, un poder inmenso le aguardaría."
  quest_for_sargon_codex_objective_decision_confirm: "La Sabiduría de los Antiguos está al alcance…"
  quest_for_sargon_codex_objective_decision_at_least_1_shard: "Debes tener al menos 1 Fragmento del Códice Sargon"
  quest_for_sargon_codex_objective_decision_at_effect1: "Desbloquea un [journey|E] para buscar los otros Fragmentos del Códice por todo el mundo"
