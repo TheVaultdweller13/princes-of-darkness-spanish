@@ -45,7 +45,7 @@ def main():
         for clave in sorted(faltantes):
             print(f"  - {clave}")
     else:
-        print("Todas las claves de A están presentes en B.")
+        print("Todas las claves de l_english están presentes en l_spanish.")
 
 if __name__ == "__main__":
     main()
