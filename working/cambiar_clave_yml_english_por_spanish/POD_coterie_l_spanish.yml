@@ -1,0 +1,372 @@
+﻿l_spanish:
+
+ ####################
+ ##### Coterie #####
+ ####################
+ 
+ ##### PESTAÑA DE INTERFAZ DE COTERIE
+ 
+ POD_create_a_new_coterie: "Crear una nueva [GetPlayer.Custom('PODCoterieNoTooltip')]"
+ POD_rename_your_coterie: "Renombrar tu [GetPlayer.Custom('PODCoterieNoTooltip')]"
+ POD_disband_your_coterie: "Disolver [GetPlayer.Custom('PODGetCoterieName')]"
+
+ POD_edit_coterie_coa_tt: "Haz clic para editar el Escudo de Armas de $POD_player_coterie$"
+ 
+ POD_coterie_gui_members: "Miembros #weak ([GuiScope.SetRoot(GetPlayer.MakeScope).ScriptValue('coterie_size')]/[EmptyScope.ScriptValue('coterie_max_size')])#!"
+ 
+ 
+ ##### Modificadores de opinión
+ 
+ kicked_from_coterie_opinion: "Expulsado"
+ 
+ 
+ ##### Descripciones emergentes
+ 
+ POD_player_coterie: "#TOOLTIP:POD_player_coterie_tooltip #E;L [GetPlayer.Custom('PODGetCoterieName')]#!#!"
+ POD_player_coterie_tooltip: "[GetPlayer.Custom('PODGetCoterieBreakdown')]"
+ 
+ POD_COTERIE_BREAKDOWN: "#T [ROOT.Char.Custom('PODCoterie')]: [ROOT.Char.Custom('PODGetCoterieName')]#!\n@skill_diplomacy_icon![diplomacy|E]: [SCOPE.ScriptValue('coterie_diplomacy_gui')]\n@skill_martial_icon![martial|E]: [SCOPE.ScriptValue('coterie_martial_gui')]\n@skill_stewardship_icon![stewardship|E]: [SCOPE.ScriptValue('coterie_stewardship_gui')]\n@skill_intrigue_icon![intrigue|E]: [SCOPE.ScriptValue('coterie_intrigue_gui')]\n@skill_learning_icon![learning|E]: [SCOPE.ScriptValue('coterie_learning_gui')]\n@skill_prowess_icon![prowess|E]: [SCOPE.ScriptValue('coterie_prowess_gui')]"
+ 
+ 
+ ##### Avisos de interfaz
+ 
+ POD_joined_coterie_title: "Se unió a una [GetPlayer.Custom('PODCoterie')]"
+ POD_joined_coterie_tt: "[ROOT.Char.GetFirstNameNicknamed] se ha unido a $POD_player_coterie$"
+ 
+ POD_new_coterie_member_title: "Nuevo miembro de la [GetPlayer.Custom('PODCoterie')]"
+ POD_new_coterie_member_tt: "[new_coterie_member.GetFirstNameNicknamed] se ha unido a $POD_player_coterie$"
+ 
+ POD_coterie_member_left_title: "Un miembro de la [GetPlayer.Custom('PODCoterie')] se marchó"
+ POD_coterie_member_left_tt: "[old_coterie_member.GetFirstNameNicknamed] ya no es miembro de $POD_player_coterie$"
+ 
+ POD_coterie_disbanded_title: "[GetPlayer.Custom('PODCoterie')] disuelta"
+ POD_coterie_disbanded_tt: "Ya no eres miembro de una [GetPlayer.Custom('PODCoterie')]"
+
+
+ ##### Efectos
+
+ POD_leave_coterie_tt: "Dejará de ser miembro de $POD_player_coterie$"
+ POD_leave_coterie_recipient_tt: "Dejará de ser miembro de [recipient.Custom('PODGetCoterieName')]"
+ 
+ 
+ ##### Disparadores de mostrar_solo_fallos
+ 
+ POD_has_coterie_trigger_tt: "Necesitas tener una [GetPlayer.Custom('PODCoterie')]"
+ POD_has_coterie_members_trigger_tt: "Necesitas tener una [GetPlayer.Custom('PODCoterie')] con al menos otro miembro"
+ POD_coterie_disabled_on_travel_phase_tt: "No puedes gestionar tu [GetPlayer.Custom('PODCoterie')] mientras estás en la [travel_phase|E] de tu [journey|E]"
+ 
+ 
+ ##### Texto personalizado
+
+ POD_coterie_concept: "[Concept('coterie',ROOT.Char.Custom('PODCoterieNoTooltip'))|E]"
+ 
+ POD_coterieloc_harem: "Harén"
+ POD_coterieloc_sabbat: "Manada"
+ POD_coterieloc_tmr: "Columna"
+ POD_coterieloc_anarch: "Banda"
+ POD_coterieloc_baali_hyron: "Nido"
+ POD_coterieloc_beastcourts: "Sentai"
+ POD_coterieloc_werewolf: "Manada"
+ POD_coterieloc_nagah: "Nido"
+ POD_coterieloc_kitsune: "Sentai"
+ POD_coterieloc_ratkin: "Banda de Ratas"
+ POD_coterieloc_hunter: "Célula"
+ POD_coterieloc_demon: "Conspiración"
+ POD_coterieloc_mage: "Cábala"
+ POD_coterieloc_redcap: "Corby"
+ POD_coterieloc_fae: "Covey"
+ POD_coterieloc_wraith: "Círculo"
+ POD_coterieloc_spectre: "Manada"
+ POD_coterieloc_kueijin: "Wu"
+ POD_coterieloc_mummy: "Pacto" # fanon
+ POD_coterieloc_baali: "Aquelarre"
+ POD_coterieloc_bastet: "Orgullo"
+ POD_coterieloc_mokole: "Nidada"
+ POD_coterieloc_vampire: "Coterie"
+ POD_coterieloc_entomos: "Enjambre"
+ POD_coterieloc_generic: "Grupo"
+ 
+ POD_coteriename_error: "ERROR DE NOMBRE DE COTERIE"
+ POD_coteriename_custom: "[ROOT.Var('coterie').Var('root_char').Char.GetLocalizedText('POD_coterie_name_text')]"
+ POD_coteriename_canon: "[ROOT.Var('coterie').Var('canon_coterie').GetFlagName]"
+ POD_coteriename_default: "[ROOT.Var('coterie').Var('root_char').Char.GetFirstNamePossessiveNoTooltip] [ROOT.Var('coterie').Var('root_char').Char.Custom('PODCoterieNoTooltip')]"
+ 
+ POD_coteriename_custom_story: "[ROOT.Var('root_char').Char.GetLocalizedText('POD_coterie_name_text')]"
+ POD_coteriename_canon_story: "[ROOT.Var('canon_coterie').GetFlagName]"
+ POD_coteriename_default_story: "[ROOT.Var('root_char').Char.GetFirstNamePossessiveNoTooltip] [ROOT.Var('root_char').Char.Custom('PODCoterieNoTooltip')]"
+ 
+ ##### Karde: aquí es donde se definen los nombres de coterie canónicas en la localización
+ #POD_coteriename_camilla: "Camilla's Party Boys"
+
+ POD_coteriename_camilla: "#TOOLTIP:POD_coteriename_camilla_tt #L Los Primeros Pecadores#!#!"
+ POD_coteriename_mithras: "#TOOLTIP:POD_coteriename_mithras_tt #L Los Pretorianos de Mithras#!#!"
+ POD_coteriename_alencourt: "#TOOLTIP:POD_coteriename_alencourt_tt #L Nobleza de Lyon#!#!"
+ POD_coteriename_eon: "#TOOLTIP:POD_coteriename_eon_tt #L Los Cruzados de Eón#!#!"
+ POD_coteriename_sophoniba: "#TOOLTIP:POD_coteriename_sophoniba_tt #L Renovación de Túnez#!#!"
+ POD_coteriename_augustus: "#TOOLTIP:POD_coteriename_augustus_tt #L Familia Giovanni#!#!"
+ POD_coteriename_hardestadt: "#TOOLTIP:POD_coteriename_hardestadt_tt #L Fundadores de Alemania#!#!"
+ POD_coteriename_julia: "#TOOLTIP:POD_coteriename_julia_tt #L Senadores de Frankfurt#!#!"
+ POD_coteriename_jurgen: "#TOOLTIP:POD_coteriename_jurgen_tt #L Caballeros de la Cruz Negra#!#!"
+ POD_coteriename_silent_fury: "#TOOLTIP:POD_coteriename_silent_fury_tt #L La Furia Silenciosa#!#!"
+ POD_coteriename_nordic_ventrue: "#TOOLTIP:POD_coteriename_nordic_ventrue_tt #L Ventrue Nórdicos#!#!"
+ POD_coteriename_bar_sinister: "#TOOLTIP:POD_coteriename_bar_sinister_tt #L Barra Siniestra#!#!"
+ POD_coteriename_ferals_livonia: "#TOOLTIP:POD_coteriename_ferals_livonia_tt #L Ferales de Livonia#!#!"
+ POD_coteriename_redemption: "#TOOLTIP:POD_coteriename_redemption_tt #L Redención de Praga#!#!"
+ POD_coteriename_andreas: "#TOOLTIP:POD_coteriename_andreas_tt #L La Caravana de Andreas#!#!"
+ POD_coteriename_gabriella: "#TOOLTIP:POD_coteriename_gabriella_tt #L Latinos de Principios#!#!"
+ POD_coteriename_anadja: "#TOOLTIP:POD_coteriename_anadja_tt #L Herederos de Enoc#!#!"
+ POD_coteriename_suleiman: "#TOOLTIP:POD_coteriename_suleiman_tt #L La Primera Ashirra#!#!"
+ POD_coteriename_erinyes: "#TOOLTIP:POD_coteriename_erinyes_tt #L Las Erinias#!#!"
+ POD_coteriename_carnival: "#TOOLTIP:POD_coteriename_carnival_tt #L Carnival Moriendi#!#!"
+ POD_coteriename_fratres: "#TOOLTIP:POD_coteriename_fratres_tt #L Fratres Plaga#!#!"
+ POD_coteriename_red_thor: "#TOOLTIP:POD_coteriename_red_thor_tt #L Tripulación del Thor Rojo#!#!"
+ POD_coteriename_horus: "#TOOLTIP:POD_coteriename_horus_tt #L Khopesh del Vengador#!#!"
+ POD_coteriename_leopold: "#TOOLTIP:POD_coteriename_leopold_tt #L Gladius Dei#!#!"
+ POD_coteriename_field: "#TOOLTIP:POD_coteriename_field_tt #L Campo de Estrellas#!#!"
+ POD_coteriename_crescent: "#TOOLTIP:POD_coteriename_crescent_tt #L Luna Creciente#!#!"
+ POD_coteriename_bright: "#TOOLTIP:POD_coteriename_bright_tt #L Promesa Brillante#!#!"
+ POD_coteriename_sun_glory: "#TOOLTIP:POD_coteriename_sun_glory_tt #L Furia de Helios#!#!"
+ POD_coteriename_ishbara: "#TOOLTIP:POD_coteriename_ishbara_tt #L Guardianes del Töre#!#!"
+ POD_coteriename_yidu: "#TOOLTIP:POD_coteriename_yidu_tt #L El Viento del Oeste#!#!"
+
+ POD_coteriename_camilla_tt: "Tanitbaal-Sahar les mostró el camino. Ni siquiera el colapso de un Imperio pudo hacer tambalear sus convicciones."
+ POD_coteriename_mithras_tt: "Los campeones escogidos de un Dios, partícipes de su confianza y quizás incluso de sus secretos."
+ POD_coteriename_alencourt_tt: "Los lazos familiares pueden soportarlo todo, incluso la muerte."
+ POD_coteriename_eon_tt: "La fe puede esperar un poco, los tesoros y la fama no."
+ POD_coteriename_sophoniba_tt: "Mientras Cartago desaparecía, Túnez florecía bajo la atenta mirada de sus protectores."
+ POD_coteriename_augustus_tt: "La mano derecha e izquierda del Patriarca, tendiéndose hacia los secretos que él ansía."
+ POD_coteriename_hardestadt_tt: "Unidos por un propósito común, buscando rehacer el mundo Cainita a su imagen."
+ POD_coteriename_julia_tt: "El comienzo de un ideal, unido por el carisma de una reliquia."
+ POD_coteriename_jurgen_tt: "La espada de Hardestadt, buscando a menudo liberarse de sus grilletes."
+ POD_coteriename_silent_fury_tt: "De chusma a rebeldes arremetiendo contra un mundo indiferente."
+ POD_coteriename_nordic_ventrue_tt: "Los hombres y mujeres «civilizados» purgando el Norte de sus Viejos Dioses."
+ POD_coteriename_bar_sinister_tt: "Unidos por la codicia y la mezquindad, sin peor enemigo que ellos mismos."
+ POD_coteriename_ferals_livonia_tt: "¿Una heroica última resistencia o una renovación improbable?"
+ POD_coteriename_redemption_tt: "Christoff los unió e incluso su ausencia no puede dividirlos."
+ POD_coteriename_andreas_tt: "Una caravana de exiliados e inadaptados, unidos bajo la benevolente mirada de Set."
+ POD_coteriename_gabriella_tt: "Mientras Constantinopla arde, algunos Latinos intentan extinguir el fuego."
+ POD_coteriename_anadja_tt: "Preparados para el éxito, anhelando un trono de mentiras y malicia."
+ POD_coteriename_suleiman_tt: "Los primeros en escuchar Su palabra y comprenderla verdaderamente."
+ POD_coteriename_erinyes_tt: "Las furias de antaño, desafiando audazmente a sus enemigos a detenerlas."
+ POD_coteriename_carnival_tt: "Todos son bienvenidos a entrar. Pocos son bienvenidos a salir."
+ POD_coteriename_fratres_tt: "Unidos en el estudio de los horrores de la muerte y la enfermedad, propagándolos dondequiera que van."
+ POD_coteriename_red_thor_tt: "Mientras el temido drakkar aún navegue, la Era Vikinga nunca terminará realmente."
+ POD_coteriename_horus_tt: "Los campeones del Vengador, cazando y matando serpientes dondequiera que moren."
+ POD_coteriename_leopold_tt: "Hombres y mujeres de propósito bendecidos por Dios para convertirse en Sus campeones. O quizás Sus mártires."
+ POD_coteriename_field_tt: "Jóvenes Garou impetuosos y audaces, a veces cegados por su celo."
+ POD_coteriename_crescent_tt: "Héroes de una Nación, destinados a no morir jamás realmente."
+ POD_coteriename_bright_tt: "A punto de hacerse añicos, la Promesa aún perdura a pesar de sí misma."
+ POD_coteriename_sun_glory_tt: "La manada más renombrada de Europa Occidental, luchando por lidiar con la partida de un amado líder."
+ POD_coteriename_ishbara_tt: "Los más antiguos de los Erk, dedicados a mantener diligentemente el orden en sus tierras y protegerlas."
+ POD_coteriename_yidu_tt: "Decididos a atacar a los odiados Kuei Jin del Este, no cejarán hasta triunfar o morir."
+ 
+ POD_coteriename_brugge_triumvirate: "#TOOLTIP:POD_coteriename_brugge_triumvirate_tt #L Humanistas de Brujas#!#!"
+ POD_coteriename_brugge_triumvirate_tt: "Siguiendo el orgulloso ejemplo de su mentor Antasiano, las damas de Brujas luchan por la libertad de su pueblo."
+ POD_coteriename_muses: "#TOOLTIP:POD_coteriename_muses_tt #L Musas de Constantinopla#!#!"
+ POD_coteriename_muses_tt: "En su día le amaron y siguieron sus pasos. Ahora salvaguardan su memoria."
+ POD_coteriename_rosae_crucis: "#TOOLTIP:POD_coteriename_rosae_crucis_tt #L Rosae Crucis#!#!"
+ POD_coteriename_rosae_crucis_tt: "Los «Príncipes Píos» son mentores solicitados y enemigos temidos, valorando tanto su independencia como su fe."
+ POD_coteriename_daughters_sun: "#TOOLTIP:POD_coteriename_daughters_sun_tt #L Hijas del Sol#!#!"
+ POD_coteriename_daughters_sun_tt: "Unidas en la locura de su madre, esperan y se preparan para su inevitable y glorioso retorno."
+ POD_coteriename_leper_knights: "#TOOLTIP:POD_coteriename_leper_knights_tt #L Los Caballeros Leprosos#!#!"
+ POD_coteriename_leper_knights_tt: "Los leales seguidores de Malachite han perdido mucho desde 1204. Aun así, su líder sigue ahí para guiarlos y los Nosferatu son todo menos resilientes."
+ POD_coteriename_ashirra_trader: "#TOOLTIP:POD_coteriename_ashirra_trader_tt #L Velo de Noche#!#!"
+ POD_coteriename_ashirra_trader_tt: "Abu Fahim Kateb viaja a través del territorio Ashirra para comerciar con artefactos e información que envía a Alamut y a sus muchos patronos."
+ POD_coteriename_frankokratia: "#TOOLTIP:POD_coteriename_frankokratia_tt #L Frankokratia#!#!"
+ POD_coteriename_frankokratia_tt: "Con Constantinopla de rodillas, solo necesita un collar para ser domada para siempre. Alfonzo está feliz de proporcionarlo."
+ POD_coteriename_kerberos: "#TOOLTIP:POD_coteriename_kerberos_tt #L Coterie Kerberos#!#!"
+ POD_coteriename_kerberos_tt: "Los primeros hijos del demonio Ennamaru planean aumentar su poder incrementando el número de su linaje de sangre."
+ POD_coteriename_bayonne_triumvirate: "#TOOLTIP:POD_coteriename_bayonne_triumvirate_tt #L Triunvirato de Bayona#!#!"
+ POD_coteriename_bayonne_triumvirate_tt: "Las consecuencias de sus acciones se están cerrando rápidamente sobre los líderes de Bayona."
+ POD_coteriename_sower: "#TOOLTIP:POD_coteriename_sower_tt #L Sembradores de la Madre Oscura#!#!"
+ POD_coteriename_sower_tt: "Como antaño hizo la Madre Oscura, crean monstruos para proteger su jardín."
+ POD_coteriename_house_goratrix: "#TOOLTIP:POD_coteriename_house_goratrix_tt #L Casa Goratrix#!#!"
+ POD_coteriename_house_goratrix_tt: "La oposición unida a Etrius y sus partidarios. Dispuestos a hacer tratos con el diablo para obtener el poder para asumir el liderazgo del Clan Tremere."
+ POD_coteriename_nemausus: "#TOOLTIP:POD_coteriename_nemausus_tt #L Consilio Civitatis Nemausus#!#!"
+ POD_coteriename_nemausus_tt: "La antigua ciudad de Augusto ha sido destruida muchas veces pero sigue siendo próspera. Esto ha atraído una atención no deseada para los Cainitas de la ciudad."      
+ POD_coteriename_iskender: "#TOOLTIP:POD_coteriename_iskender_tt #L Los Bandidos de Iskender#!#!"
+ POD_coteriename_iskender_tt: "A pesar de la muerte de su líder, los compañeros de Iskender intentan honrar su memoria y propósito vital."
+ POD_coteriename_alexander: "#TOOLTIP:POD_coteriename_alexander_tt #L El Séquito del Exiliado#!#!"
+ POD_coteriename_alexander_tt: "Un Rey exiliado sigue siendo un Rey y necesita gente que haga el trabajo sucio por él más que nunca."
+ POD_coteriename_rosamund: "#TOOLTIP:POD_coteriename_rosamund_tt #L Los Pétalos de la Rosa#!#!"
+ POD_coteriename_rosamund_tt: "La flor más hermosa de Francia tiene un pequeño pero dedicado séquito asegurándose de que no sea cortada antes de tiempo."
+ POD_coteriename_bezariel: "#TOOLTIP:POD_coteriename_bezariel_tt #L La Conspiración Sangrienta#!#!"
+ POD_coteriename_bezariel_tt: "Bezariel es un maestro manipulador. Como el demonio más poderoso de Rusia, ofrece su «protección» a sus hermanos que aún se tambalean por su estancia en la Prisión Abisal."
+ POD_coteriename_flaying_monkeys: "#TOOLTIP:POD_coteriename_flaying_monkeys_tt #L Los Monos Desolladores#!#!"
+ POD_coteriename_flaying_monkeys_tt: "El [Glossary('Wu','podgloss.wu')] desequilibrado de Piyau Payung es una bofetada en la cara de los tradicionalistas Wan Kuei chinos. Pero es mucho más peligroso para los [akuma|E] que caza con una eficiencia muy impresionante."
+ POD_coteriename_shiva_lingham: "#TOOLTIP:POD_coteriename_shiva_lingham_tt #L El Shiva Lingham#!#!"
+ POD_coteriename_shiva_lingham_tt: "Tres eruditos de la noche, dedicados a enseñar y recibir sabiduría."
+ POD_coteriename_jervais: "#TOOLTIP:POD_coteriename_jervais_tt #L Los Prescindibles de Jervais#!#!"
+ POD_coteriename_jervais_tt: "Ceoris se llevará todo el mérito si ganan y Ceoris ciertamente no llorará si pierden."
+ POD_coteriename_delta: "#TOOLTIP:POD_coteriename_delta_tt #L La Nidada Lejana#!#!"
+ POD_coteriename_delta_tt: "Perdidos en las estepas interminables, el viento a sus espaldas empujándolos hacia un futuro incierto."
+ POD_coteriename_black_winds: "#TOOLTIP:POD_coteriename_black_winds_tt #L Los Vientos Negros#!#!"
+ POD_coteriename_black_winds_tt: "Cazadoras de las estepas, poniendo la mira en presas mucho mayores que sus contrapartidas mortales."
+ POD_coteriename_golden_jade_wu: "#TOOLTIP:POD_coteriename_golden_jade_wu_tt #L Sociedad del Jade Dorado#!#!"
+ POD_coteriename_golden_jade_wu_tt: "Cuando tienes el corazón del mundo, ¿qué más podrías desear aparte del hombre que lo gobierna?"
+ POD_coteriename_horns_ice_wu: "#TOOLTIP:POD_coteriename_horns_ice_wu_tt #L Cuernos de Hielo#!#!"
+ POD_coteriename_horns_ice_wu_tt: "Antaño pilares de la Corte del Tigre Blanco, los Cuernos de Hielo deben reinventarse tras el autoexilio de su fundador."
+ POD_coteriename_demons_zhongdu_wu: "#TOOLTIP:POD_coteriename_demons_zhongdu_wu_tt #L Demonios de Zhongdu#!#!"
+ POD_coteriename_demons_zhongdu_wu_tt: "Entre llamas fueron enviados al infierno, y en cadenas de hierro fueron forjados de nuevo."
+ POD_coteriename_entwined_serpents: "#TOOLTIP:POD_coteriename_entwined_serpents_tt #L Serpientes Entrelazadas#!#!"
+ POD_coteriename_entwined_serpents_tt: "Por la ambición de una pálida serpiente, aquellos despreciados por el mundo aspiran a verlo puesto de rodillas."  
+ POD_coteriename_amber_wren: "#TOOLTIP:POD_coteriename_amber_wren_tt #L Carrizo Ámbar#!#!"
+ POD_coteriename_amber_wren_tt: "Un imperio vive de sus palabras y oídos. Y en la Corte del Emperador Amarillo, la información porta consigo un matiz ámbar."  
+ POD_coteriename_illustrious_scribes: "#TOOLTIP:POD_coteriename_illustrious_scribes_tt #L Ilustres Escribas#!#!"
+ POD_coteriename_illustrious_scribes_tt: "Los preciosos y sacrosantos textos de los Wan Kuei no se escriben solos. Y en todas direcciones, la pluma fluye."  
+ POD_coteriename_bronze_pennant: "#TOOLTIP:POD_coteriename_bronze_pennant_tt #L Gallardete de Bronce#!#!"
+ POD_coteriename_bronze_pennant_tt: "En tiempos difíciles, no hay fin para los condenados y malvados, ni para las causas contra las que enfrentarlos."  
+ POD_coteriename_warriors_hebei: "#TOOLTIP:POD_coteriename_warriors_hebei_tt #L Guerreros de Hebei#!#!"
+ POD_coteriename_warriors_hebei_tt: "Del Norte vienen los Demonios que se esforzarían por hacer añicos a los bastardos de la tierra."  
+ POD_coteriename_fivefold_way: "#TOOLTIP:POD_coteriename_fivefold_way_tt #L Sabios de la Vía Quíntuple#!#!"
+ POD_coteriename_fivefold_way_tt: "Desde el oculto Monasterio Shaolin, los Sabios sin parangón contemplan las verdades ocultas de las enseñanzas de Xue."  
+ POD_coteriename_emerald_bier: "#TOOLTIP:POD_coteriename_emerald_bier_tt #L El Tálamo de Esmeralda#!#!"
+ POD_coteriename_emerald_bier_tt: "Se dice que el camino al infierno está pavimentado de buenas intenciones. Pero sería mejor decir que está pavimentado por el deseo."  
+ POD_coteriename_blissful_ice_daggers: "#TOOLTIP:POD_coteriename_blissful_ice_daggers_tt #L Las Dichosas Dagas de Hielo#!#!"
+ POD_coteriename_blissful_ice_daggers_tt: "Los Eunucos de la Canción tienen un conjunto oculto de maestros, todos ellos antiguos Eunucos."  
+ POD_coteriename_silver_locks: "#TOOLTIP:POD_coteriename_silver_locks_tt #L El Candado de Plata#!#!"
+ POD_coteriename_silver_locks_tt: "Financiar un imperio no es tarea fácil. El Candado de Plata no exige nada menos que la perfección."             
+ POD_coteriename_eternal_ice: "#TOOLTIP:POD_coteriename_eternal_ice_tt #L El Hielo Eterno#!#!"
+ POD_coteriename_eternal_ice_tt: "Respetados intermediarios y diplomáticos, todos surgidos de las circunstancias más atroces. Xue dijo que la luz del Cielo podía alcanzar a todos, y el Hielo Eterno busca probarlo."             
+ POD_coteriename_sovereign_virtue: "#TOOLTIP:POD_coteriename_sovereign_virtue_tt #L Soberanos de la Virtud#!#!"
+ POD_coteriename_sovereign_virtue_tt: "La sangre es más espesa que el agua, pero no tanto como la del pacto. ¿Por qué no hacer que sea ambas cosas?"             
+ POD_coteriename_silver_blade_horsemen: "#TOOLTIP:POD_coteriename_silver_blade_horsemen_tt #L Jinetes de la Espada de Plata#!#!"
+ POD_coteriename_silver_blade_horsemen_tt: "El señor de la guerra redimido lidera a su ejército hacia su última guerra, esperando finalmente romper las Cadenas Puntiagudas."             
+ POD_coteriename_golden_shroud: "#TOOLTIP:POD_coteriename_golden_shroud_tt #L Mortaja Dorada#!#!"
+ POD_coteriename_golden_shroud_tt: "Los paradigmas de la Corte del Fénix Escarlata ocultan una dinámica conflictiva y encontrada tras su fachada heroica."             
+ POD_coteriename_leaping_gibbons: "#TOOLTIP:POD_coteriename_leaping_gibbons_tt #L Gibones Saltarines#!#!"
+ POD_coteriename_leaping_gibbons_tt: "Audacia y competencia en abundante suministro... todo lo que queda es preguntarse cuán alto escalarán... y cuán bajo caerán."             
+ POD_coteriename_eastern_vanguard: "#TOOLTIP:POD_coteriename_eastern_vanguard_tt #L Vanguardia Oriental#!#!"
+ POD_coteriename_eastern_vanguard_tt: "Los mongoles están observando, escrutando la muralla china en busca de cualquier signo de debilidad."             
+ POD_coteriename_bright_forest: "#TOOLTIP:POD_coteriename_bright_forest_tt #L Bosque Brillante#!#!"
+ POD_coteriename_bright_forest_tt: "Construyeron un Imperio juntos. Puede que también destruyan uno juntos."             
+ POD_coteriename_regretful_hunters: "#TOOLTIP:POD_coteriename_regretful_hunters_tt #L Cazadores Arrepentidos#!#!"
+ POD_coteriename_regretful_hunters_tt: "Muchos puentes fueron quemados en el nacimiento de la Corte de la Tortuga Negra. Ahora viven con las consecuencias y buscan la expiación bajo las atentas miradas de los árbitros del Cielo."             
+ POD_coteriename_riders_ashen: "#TOOLTIP:POD_coteriename_riders_ashen_tt #L Jinetes de la Llanura Cenicienta#!#!"
+ POD_coteriename_riders_ashen_tt: "El mundo yace roto tras la Era de las Leyendas. Pero cuando uno asume que hereda un mundo fundamentalmente roto, envenena el pozo de lo que busca restaurar."             
+ POD_coteriename_blackest_night: "#TOOLTIP:POD_coteriename_blackest_night_tt #L La Noche Más Oscura#!#!"
+ POD_coteriename_blackest_night_tt: "No temas lo que te protege en la oscuridad"             
+ POD_coteriename_inoue_clan: "#TOOLTIP:POD_coteriename_inoue_clan_tt #L Espadas de Inoue#!#!"
+ POD_coteriename_inoue_clan_tt: "¿Quién es la espada, el Garou o el acero?"
+ POD_coteriename_outriders_spiked: "#TOOLTIP:POD_coteriename_outriders_spiked_tt #L Vanguardistas de las Cadenas Puntiagudas#!#!"
+ POD_coteriename_outriders_spiked_tt: "A veces, el Infierno no puede esperar por ti. Los Vanguardistas se aseguran de acelerar el proceso."
+ POD_coteriename_riders_ashen_plain: "#TOOLTIP:POD_coteriename_riders_ashen_plain_tt #L Jinetes de la Llanura Cenicienta#!#!"
+ POD_coteriename_riders_ashen_plain_tt: "En su día cabalgaron más rápido que nadie. Pero ahora, es improbable que puedan dejar atrás su propio destino."
+ POD_coteriename_sons_tengri: "#TOOLTIP:POD_coteriename_sons_tengri_tt #L Hijos de Tengri#!#!"
+ POD_coteriename_sons_tengri_tt: "El pilar de las estepas se mantiene. Pero su edad podría ser su perdición."
+ POD_coteriename_barren_winds: "#TOOLTIP:POD_coteriename_barren_winds_tt #L Vientos Estériles#!#!"
+ POD_coteriename_barren_winds_tt: "Una enemistad eterna los ciega a la amenaza a sus espaldas. Los vientos pronto podrían volverse verdaderamente estériles."
+ POD_coteriename_storm_fire: "#TOOLTIP:POD_coteriename_storm_fire_tt #L Tormenta de Fuego#!#!"
+ POD_coteriename_storm_fire_tt: "¿Puede el fuego prender realmente en las estériles estepas?"
+ POD_coteriename_black_hoof_riders: "#TOOLTIP:POD_coteriename_black_hoof_riders_tt #L Jinetes del Casco Negro#!#!"
+ POD_coteriename_black_hoof_riders_tt: "Los jinetes dominan verdaderamente las estepas. ¿Pero sobrevivirá el Casco Negro a los Hijos de Dobrul?"
+ POD_coteriename_silent_glade: "#TOOLTIP:POD_coteriename_silent_glade_tt #L El Claro Silencioso#!#!"
+ POD_coteriename_silent_glade_tt: "Los preciados consortes de Dokhor-Khan, traídos de los confines más lejanos de las tierras que conquistó la Estepa, se han liberado, y por encima de todo quieren ajustar cuentas."
+ POD_coteriename_harbingers_eternal_wind: "#TOOLTIP:POD_coteriename_harbingers_eternal_wind_tt #L Heraldos del Viento Eterno#!#!"
+ POD_coteriename_harbingers_eternal_wind_tt: "La condenación es una llamada a las armas. Respóndela."
+ POD_coteriename_jean_marc_rabble: "#TOOLTIP:POD_coteriename_jean_marc_rabble_tt #L La Chusma de Jean-Marc#!#!"
+ POD_coteriename_jean_marc_rabble_tt: "Mentirosos y estafadores todos y cada uno, unidos en la búsqueda de la ambición."
+ POD_coteriename_strood_salvation: "#TOOLTIP:POD_coteriename_strood_salvation_tt #L La Salvación de Strood#!#!"
+ POD_coteriename_strood_salvation_tt: "Los inquisidores vanidosos y afectados siguen siendo inquisidores."
+ POD_coteriename_protectorate_compostela: "#TOOLTIP:POD_coteriename_protectorate_compostela_tt #L Protectorado de Compostela#!#!"
+ POD_coteriename_protectorate_compostela_tt: "Los defensores de uno de los lugares más sagrados de la Cristiandad son solo superados por Gauthier de Dampierre en fe y diligencia."
+
+
+
+ POD_coterietravel_none: "$EFFECT_LIST_BULLET$$POD_coterietravel_gui_none$"
+ POD_coterietravel_empty: "$EFFECT_LIST_BULLET$$POD_coterietravel_gui_empty$"
+ POD_coterietravel_yes: "$EFFECT_LIST_BULLET$Los miembros de $POD_player_coterie$ se unirán a ti."
+ POD_coterietravel_no: "$EFFECT_LIST_BULLET$Los miembros de $POD_player_coterie$ #bold no#! se unirán a ti."
+ 
+ POD_coterietravel_gui_nodestination: "#X @warning_icon! No se estableció ningún destino. Esto es un bug. Por favor, repórtalo (en Steam o el Discord de PoD).#!"
+ #POD_coterietravel_gui_earthbound: "#X @warning_icon! To start the [travel_phase|E] as an [GetTrait('earthbound').GetName(GetPlayer)], you need to inhabit an [artifact|E] and have at least 1 other [GetPlayer.Custom('PODCoterie')] member.#!"
+ POD_coterietravel_gui_earthbound: "#X @warning_icon! $POD_no_host_earthbound_travel_text$#!"
+ POD_coterietravel_gui_none: "Ya que no tienes una [GetPlayer.Custom('PODCoterie')], viajarás solo."
+ POD_coterietravel_gui_empty: "Ya que eres el único miembro de $POD_player_coterie$, viajarás solo."
+ POD_coterietravel_gui: "¿Viajar con $POD_player_coterie$?"
+ 
+ 
+ #####################################
+ ##### Sabor del evento de inicio de viaje #####
+ #####################################
+ 
+ POD_coterietravel_earthbound_flavor: "Por fin es hora de que $POD_player_coterie$ emprenda este [journey|E]. El [GetPlayer.MakeScope.Var('stone_prison').Artifact.GetName] que habito está escondido a buen recaudo en nuestro carruaje."
+ POD_coterietravel_none_flavor: "Por fin es hora de que emprenda mi [journey|E]."
+ POD_coterietravel_yes_flavor: "Por fin es hora de que $POD_player_coterie$ emprenda este [journey|E]."
+ POD_coterietravel_no_flavor: "Por fin es hora de que emprenda mi [journey|E]. Los otros miembros de $POD_player_coterie$ se han quedado atrás para dejarme ir en esta misión en solitario."
+ 
+ POD_coterieflavor_ambitious_1: "[ROOT.Char.GetFirstNameNicknamed] camina con un vivo sentido de propósito, aparentemente ansioso por superar cualquier obstáculo y enfrentar cualquier desafío en su camino."
+ 
+ POD_coterieflavor_arbitrary_1: "[ROOT.Char.GetFirstNameNicknamed] hace crujir sus nudillos en anticipación de este viaje, listo para romper algunas reglas."
+ 
+ POD_coterieflavor_arrogant_1: "[ROOT.Char.GetFirstNameNicknamed] camina pavoneándose por delante de nuestro grupo, la barbilla en alto, pareciendo como si el éxito de nuestro viaje fuera una conclusión inevitable."
+ POD_coterieflavor_arrogant_2: "[ROOT.Char.GetFirstNameNicknamed] suelta una carcajada. «No pongas esa cara tan triste, [GetPlayer.GetFirstName]», dice. «$POD_player_coterie$ prevalecerá, como siempre hacemos. Somos los mejores, después de todo». [ROOT.Char.GetSheHe|U] guiña un ojo."
+ 
+ POD_coterieflavor_brave_1: "[ROOT.Char.GetFirstNameNicknamed] está al frente de nuestro grupo. [ROOT.Char.GetSheHe|U] se mueve con absoluta confianza, listo para enfrentar cualquier peligro y reírse en su cara."
+ 
+ POD_coterieflavor_callous_1: "[ROOT.Char.GetFirstNameNicknamed] camina junto a nuestro grupo, sin un atisbo de emoción en su rostro."
+ 
+ POD_coterieflavor_calm_1: "[ROOT.Char.GetFirstNameNicknamed] mira hacia adelante con una expresión serena en su rostro. Nunca le he visto alterado, y me pregunto si este viaje será la primera vez."
+ 
+ POD_coterieflavor_chaste_1: "[ROOT.Char.GetFirstNameNicknamed] camina junto a nuestro grupo distraídamente, aparentemente perdido en algún tipo de fantasía. Definitivamente no una sórdida, conociéndole."
+ 
+ POD_coterieflavor_compassionate_1: "[ROOT.Char.GetFirstNameNicknamed] mira al resto de nosotros con genuina calidez en sus ojos, siempre feliz de ayudar a otros en sus empresas."
+ 
+ POD_coterieflavor_content_1: "[ROOT.Char.GetFirstNameNicknamed] camina con el grupo a un ritmo tranquilo. [ROOT.Char.GetSheHe|U] parece realmente feliz de seguir la corriente en todo, ya sea este viaje un éxito o un fracaso."
+ 
+ POD_coterieflavor_craven_1: "[ROOT.Char.GetFirstNameNicknamed] parece un poco tenso ante la perspectiva de emprender este viaje. [ROOT.Char.GetSheHe|U] tiene reputación de cobarde, pero este viaje podría ser una oportunidad para demostrar su valía."
+ 
+ POD_coterieflavor_cynical_1: "[ROOT.Char.GetFirstNameNicknamed] tiene una sonrisa de complicidad en su rostro, listo para participar en cualquier empresa siempre que le dé la oportunidad de escarnecer a los dioses."
+ 
+ POD_coterieflavor_deceitful_1: "[ROOT.Char.GetFirstNameNicknamed] me guiña un ojo conspiratoriamente. Soy muy consciente de su talento para el engaño, y espero que lo dirija contra nuestros enemigos, no contra los otros miembros de $POD_player_coterie$."
+ 
+ POD_coterieflavor_diligent_1: "[ROOT.Char.GetFirstNameNicknamed] lleva un zurrón lleno de equipo, claramente habiendo hecho extensos preparativos para este viaje."
+ 
+ POD_coterieflavor_eccentric_1: "[ROOT.Char.GetFirstNameNicknamed] está silbando una melodía para sí mismo y balanceando la cabeza de un lado a otro, perdido en un mundo propio."
+ 
+ POD_coterieflavor_fickle_1: "[ROOT.Char.GetFirstNameNicknamed] mira hacia unos pájaros en la distancia, distraído como siempre."
+ 
+ POD_coterieflavor_forgiving_1: "[ROOT.Char.GetFirstNameNicknamed] sonríe beatíficamente, viviendo verdaderamente el momento, pase lo que pase."
+ 
+ POD_coterieflavor_generous_1: "[ROOT.Char.GetFirstNameNicknamed] contempla al resto de nuestro grupo con calidez. Espero que no nos topemos con nadie que se aproveche de su generosidad."
+ 
+ POD_coterieflavor_gluttonous_1: "[ROOT.Char.GetFirstNameNicknamed] se palmea la barriga, deseando ya probar las delicias que podrá degustar en este viaje."
+ 
+ POD_coterieflavor_greedy_1: "[ROOT.Char.GetFirstNameNicknamed] palpa la bolsa en su bolsillo, sin duda usando este viaje como un medio para expandir su contenido."
+ 
+ POD_coterieflavor_gregarious_1: "[ROOT.Char.GetFirstNameNicknamed] charla alegremente conmigo sobre esto y aquello, verdaderamente en su elemento cuando está rodeado de gente."
+ 
+ POD_coterieflavor_honest_1: "[ROOT.Char.GetFirstNameNicknamed] mira hacia la distancia con una expresión plácida en su rostro. ¿Será su naturaleza honesta una ventaja en este viaje, o un lastre?"
+ 
+ POD_coterieflavor_humble_1: "[ROOT.Char.GetFirstNameNicknamed] camina con los brazos cruzados tras la espalda. [ROOT.Char.GetSheHe|U] es una parte importante de nuestro grupo, aunque nunca lo admitiría."
+ 
+ POD_coterieflavor_impatient_1: "[ROOT.Char.GetFirstNameNicknamed] tamborilea los pies impacientemente, aparentemente ansioso por ponerse en marcha."
+ POD_coterieflavor_impatient_2: "[ROOT.Char.GetFirstNameNicknamed] está paseándose de un lado a otro. [ROOT.Char.GetSheHe|U] me lanza una mirada acusatoria. «Pongámonos en marcha ya. No deberíamos perder más tiempo del que ya hemos perdido.»"
+ 
+ POD_coterieflavor_just_1: "[ROOT.Char.GetFirstNameNicknamed] parece solemne. Quizás esperaba emprender un tipo diferente de viaje, uno que corrigiera una de las grandes injusticias de este mundo."
+ 
+ POD_coterieflavor_lazy_1: "[ROOT.Char.GetFirstNameNicknamed] deambula en la parte trasera de nuestro grupo a un paso tranquilo, sin una sola preocupación en el mundo."
+ 
+ POD_coterieflavor_lustful_1: "[ROOT.Char.GetFirstNameNicknamed] camina junto a nuestro grupo distraídamente, aparentemente perdido en algún tipo de fantasía. Una sórdida, conociéndole."
+ 
+ POD_coterieflavor_paranoid_1: "Los ojos de [ROOT.Char.GetFirstNameNicknamedPossessive] se mueven de un lado a otro, escrutando ansiosamente nuestro entorno en busca de cualquier posible señal de peligro."
+ 
+ POD_coterieflavor_patient_1: "[ROOT.Char.GetFirstNameNicknamed] contempla al resto de nuestro grupo con un gesto tranquilo, como si tuviera todo el tiempo del mundo para llevar este viaje a buen término."
+ 
+ POD_coterieflavor_sadistic_1: "Los ojos de [ROOT.Char.GetFirstNameNicknamedPossessive] escrutan el horizonte con un hambre reminiscente de un depredador, demasiado ansioso por enfrentar los peligros que se avecinan."
+ 
+ POD_coterieflavor_shy_1: "[ROOT.Char.GetFirstNameNicknamed] camina con cuidado, sus ojos fijos en el suelo. [ROOT.Char.GetSheHe|U] rara vez está de humor para hablar."
+ 
+ POD_coterieflavor_stubborn_1: "[ROOT.Char.GetFirstNameNicknamed] marcha hacia adelante a un ritmo inexorable, como si nada pudiera disuadirle de llevar nuestra empresa hasta el amargo final."
+ 
+ POD_coterieflavor_temperate_1: "[ROOT.Char.GetFirstNameNicknamed] lleva un equipo ligero y eficiente, fiel a su creencia de que la moderación lo es todo."
+ 
+ POD_coterieflavor_trusting_1: "[ROOT.Char.GetFirstNameNicknamed] contempla nuestro entorno con asombro de ojos muy abiertos, ya sea inconsciente o imperturbado por cualquier peligro que pudiéramos enfrentar."
+ 
+ POD_coterieflavor_vengeful_1: "[ROOT.Char.GetFirstNameNicknamed] parece serio. Siempre es difícil saber lo que está pensando. Este viaje podría ser solo un paso más en su plan maestro para acabar con sus enemigos."
+ 
+ POD_coterieflavor_wrathful_1: "[ROOT.Char.GetFirstNameNicknamed] marcha al frente de nuestro grupo, hombros erguidos, pareciendo un resorte listo para saltar. Espero que su legendario temperamento no cause problemas en nuestra empresa."
+ 
+ POD_coterieflavor_zealous_1: "[ROOT.Char.GetFirstNameNicknamed] avanza con determinación, una profunda confianza nacida de su creencia en los ideales de la [ROOT.Char.GetFaith.GetName]."
+ 
+ POD_coterieflavor_generic_1: "[ROOT.Char.GetFirstNameNicknamed] no tiene personalidad. Algo salió mal al generar este personaje."

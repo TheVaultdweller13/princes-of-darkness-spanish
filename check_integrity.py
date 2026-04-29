@@ -31,7 +31,8 @@ def find_files_missing_translation(spanish_dir, english_dir):
 if __name__ == "__main__":
     spanish_dir = r"D:\Princes of Darkness - Traducción\working\spanish"
     english_dir = r"D:\Princes of Darkness - Traducción\original_text\english"
-    
+    print(f"Comparando:\n'{spanish_dir}'\n'{english_dir}'\n")
+
     if not os.path.exists(spanish_dir):
         print(f"ERROR: El directorio no existe: {spanish_dir}")
     elif not os.path.exists(english_dir):
@@ -47,6 +48,6 @@ if __name__ == "__main__":
             for file in sorted(missing):
                 print(f"  FALTA: {file}")
         else:
-            print("\n✅ Todos los archivos tienen su traducción")
+            print("\n✅ Todos los archivos l_english tienen su equivalente l_spanish.")
         
         print("=" * 80)
