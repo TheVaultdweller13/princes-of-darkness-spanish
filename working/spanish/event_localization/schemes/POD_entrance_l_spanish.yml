@@ -8,14 +8,14 @@
  
  POD_entrance.200.t: "Encandilando a [target.GetFirstNameNoTooltip]"
  POD_entrance.200.desc: "Sientes tu energía mística tocando la mente de [target.GetTitledFirstName]. Se está resistiendo al encandilamiento."
- POD_entrance.200.option.a: "Exaltar la sangre para encandilar a [target.GetHerHim]."
+ POD_entrance.200.option.a: "Exaltar la sangre para encandilar[target.GetHerHim]."
  POD_entrance.200.a.tt_fortitude: "[target.GetFirstNameNoTooltip] es expert[target.GetCustom('ES_O')] en la $pod_discipline$ de Fortaleza y es resistente a mis poderes."
  POD_entrance.200.a.tt_willpower: "[target.GetFirstNameNoTooltip] ha ejercido su voluntad para resistir tus poderes."
  POD_entrance.200.a.success.desc: "[target.GetTitledFirstNameNoTooltip] será encandilad[target.GetCustom('ES_O')] para que le gustes"
  POD_entrance.200.a.failure.desc: "[target.GetTitledFirstNameNoTooltip] resistirá tu encandilamiento"
  POD_entrance.200.option.b: "Exaltar la sangre y ejercer mi voluntad. ¡No seré rechazad[GetPlayer.GetCustom('ES_O')]!"
  POD_entrance.200.option.b.tt.beast: "#beast ¡[target.GetSheHe|U] debe amarnos!#!"
- POD_entrance.200.option.c: "Abandonar este empeño, ya no deseo encandilar a [target.GetHerHim]."
+ POD_entrance.200.option.c: "Abandonar este empeño, ya no deseo encandilar[target.GetHerHim]."
  POD_entrance.200.option.c.tt: "El encandilamiento fallará."
  
  POD_entrance.300.t: "[target.GetFirstNameNoTooltip] encandilad[target.GetCustom('ES_O')]"
