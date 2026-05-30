@@ -47,7 +47,7 @@
  hunt_in_capital_planning_decline_tt_2: "No volverás a ver a estos mortales."
  hunt_in_capital_widget_desc: "¿Continuar cazando a #bold [Localize(Concatenate( 'POD_find_mortals_interaction_', GetPlayer.MakeScope.Var('hunt_in_capital_selection').GetFlagKey ))]#!?"
  hunt_in_capital_widget_tt: "Comenzarás inmediatamente otro [journey|E] para cazar a #bold [Localize(Concatenate( 'POD_find_mortals_interaction_', GetPlayer.MakeScope.Var('hunt_in_capital_selection').GetFlagKey ))]#! en tu capital.\n[GetPlayer.Custom('PODShowJourneyCostHunt')]"
- cthonic_womb_widget_desc: "¿Convertir a [EventWindowWidget.GetScope.sC('victim').GetShortUINameNoTooltip] en un [GetTrait('wraith').GetName(GetNullCharacter)] después de matar[lo/a]?"
+ cthonic_womb_widget_desc: "¿Convertir a [EventWindowWidget.GetScope.sC('victim').GetShortUINameNoTooltip] en un [GetTrait('wraith').GetName(GetNullCharacter)] después de matar a [EventWindowWidget.GetScope.sC('victim').GetHerHim]?"
  cthonic_womb_widget_tt: "#help Esto solo funciona si vacías completamente a tu víctima.#!"
  
  fera_training_name: "Entrenar con tu [GetPlayer.Custom('PODCoterieNoTooltip')]"
@@ -450,7 +450,7 @@
  seek_knowledge_visceratika_isvalid: "$EFFECT_LIST_BULLET$Un [GetTrait('gargoyle').GetName(GetNullCharacter)] o [GetTrait('tremere').GetName(GetNullCharacter)] debe haber descubierto esta $pod_discipline$ mediante [decision|E].\n$POD_seek_knowledge_intro$\n$BULLET_WITH_TAB$$POD_seek_knowledge_learning_20$\n$BULLET_WITH_TAB$Eres un [GetTrait('gargoyle').GetName(GetPlayer)]\n$BULLET_WITH_TAB$Tienes [GetTrait('fortitudeadvanced').GetName(GetPlayer)] y [GetTrait('proteanadvanced').GetName(GetPlayer)]\n$BULLET_WITH_TAB$$POD_seek_knowledge_relation$\n$BULLET_WITH_TAB$$POD_seek_knowledge_game_rule$"
  
  seek_knowledge_giovanni_name: "Aprender [GetTrait('necromancy').GetName(GetNullCharacter)] (Giovanni)"
- seek_knowledge_giovanni_desc: "El linaje [GetTrait('giovanni').GetName(GetNullCharacter)] ha desarrollado su propia forma de [GetTrait('necromancy').GetName(GetNullCharacter)], permitiéndoles crear y atar #TOOLTIP:GAME_TRAIT,wraith,[GetNullCharacter] #L Espectros#!#! para que hagan su voluntad, y entrar en la [UmbraGlossaryLocalized('tierras de las sombras','Inframundo')]."
+ seek_knowledge_giovanni_desc: "El linaje [GetTrait('giovanni').GetName(GetNullCharacter)] ha desarrollado su propia forma de [GetTrait('necromancy').GetName(GetNullCharacter)], permitiéndoles crear y atar #TOOLTIP:GAME_TRAIT,wraith,[GetNullCharacter] #L Espectros#!#! para que hagan su voluntad, y entrar en la [UmbraGlossaryLocalized('shadowlands','Inframundo')]."
  seek_knowledge_giovanni_effects: "Aprenderás la ubicación de un maestro que conoce la [GetTrait('necromancy').GetName(GetNullCharacter)] de los Giovanni. Después de viajar allí, puedes aprender sus técnicas secretas. Si aún no tienes el [trait|E] de [GetTrait('necromancy').GetName(GetNullCharacter)], también adquirirás el [trait|E] de la $pod_discipline$, que te permite desbloquear [perks|E] en el [lifestyle|E] de [GetTrait('necromancy').GetName(GetNullCharacter)]."
  seek_knowledge_giovanni_tt: "Los muertos impulsarán mis ambiciones."
  seek_knowledge_giovanni_planning_title: "La Búsqueda de Nigromancia"
@@ -964,7 +964,7 @@
  
  seek_knowledge_demonology_name: "Aprender #TOOLTIP:GAME_TRAIT,demonology,[GetNullCharacter] #L Demonología#!#!"
  seek_knowledge_demonology_desc: "#TOOLTIP:GAME_TRAIT,demonology,[GetNullCharacter] #L Demonología#!#!, en sí misma, es meramente el estudio académico de los $POD_splat_demon_plural$. Por supuesto, la mayoría de los demonólogos no se contentan con la simple teoría, y toman la ruta mucho más drástica de vender su alma — una vía hacia muchas habilidades que algunos consideran antinaturales."
- seek_knowledge_demonology_effects: "Aprenderás la ubicación de un maestro que conoce #TOOLTIP:GAME_TRAIT,demonology,[GetNullCharacter] #L Demonología#!#!. Después de viajar allí, puedes adquirir el [trait|E] [GetTrait('demonology').GetName(GetPlayer)], que abre la posibilidad de convertirte en un [GetTrait('witch').GetName(GetNullCharacter)] — ya sea a través de la difícil tarea de [diabolism_binding|E] a un [GetTrait('demon').GetName(GetNullCharacter)] a tu voluntad, o el camino mucho más fácil de [Concept('convertirte en su esclavo voluntario','esclavitud')|E]..."
+ seek_knowledge_demonology_effects: "Aprenderás la ubicación de un maestro que conoce #TOOLTIP:GAME_TRAIT,demonology,[GetNullCharacter] #L Demonología#!#!. Después de viajar allí, puedes adquirir el [trait|E] [GetTrait('demonology').GetName(GetPlayer)], que abre la posibilidad de convertirte en un [GetTrait('witch').GetName(GetNullCharacter)] — ya sea a través de la difícil tarea de [diabolism_binding|E] a un [GetTrait('demon').GetName(GetNullCharacter)] a tu voluntad, o el camino mucho más fácil de [Concept('convertirte en su esclavo voluntario','thralldom')|E]..."
  seek_knowledge_demonology_isvalid: "$EFFECT_LIST_BULLET$Debes estar en un mundo donde los $POD_splat_demon_plural$ sean uno de los [splats|E] disponibles."
  seek_knowledge_demonology_requirement_date: "Comenzaste en un marcador solo para [GetTrait('vampire').GetName(GetNullCharacter)], donde los $POD_splat_demon_plural$ (y muchos otros [splats|E]) no están disponibles"
  seek_knowledge_demonology_tt: "Pagaré cualquier precio por el verdadero poder."
