@@ -18,7 +18,12 @@
  POD_summon_demon_demonology_interaction_success: "¡La invocación ha sido un éxito!"
   
  POD_bind_demon_interaction: "Vincular demonio"
- POD_bind_demon_interaction_desc: "Vincula a [recipient.GetFirstName] con su [Glossary('True Name','podgloss.truename')]."
+ POD_bind_demon_interaction_desc: "Vincula a [recipient.GetFirstName] en un [artifact|E] con su [Glossary('True Name','podgloss.truename')]."
+ POD_bind_demon_interaction_no_artifact: "No tienes ningún artefacto que pueda ser poseído"
+ POD_bind_demon_interaction_already_bound: "[recipient.GetShortUIName|U] ya está vinculad[recipient.Custom('ES_OA')] al [recipient.MakeScope.Var('bound_demon_artifact').Artifact.Custom('ColorizedArtifactName')], que no posees"
+ POD_bind_demon_interaction_invalid_artifact: "Este artefacto no puede ser poseído"
+ POD_bind_demon_interaction_insufficient_artifact: "Necesitas un artefacto de calidad [Localize(SCOPE.GetFlagName('saved_tooltip'))] o superior para contener a [recipient.GetShortUIName]"
+ POD_bind_demon_interaction_already_bound_wrong_artifact: "Este no es el [recipient.MakeScope.Var('bound_demon_artifact').Artifact.Custom('ColorizedArtifactName')]"
  
  POD_weaken_demon_interaction: "Debilitar demonio"
  POD_weaken_demon_interaction_desc: "Debilita a [recipient.GetShortUIName] evocando sus recuerdos de la Caída."

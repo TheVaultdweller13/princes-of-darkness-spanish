@@ -21,8 +21,8 @@
  rival_attempted_bloodbond: "[TARGET_CHARACTER.GetShortUIName|U] intentó vincular por sangre a [CHARACTER.GetShortUIName]."
  rival_attempted_bloodbond_corresponding: "[CHARACTER.GetShortUIName|U] intentó vincular por sangre a [TARGET_CHARACTER.GetShortUIName]."
  
- rival_infiltration: "[TARGET_CHARACTER.GetShortUIName|U] fue atrapad[TARGET_CHARACTER.GetCustom('ES_O')] infiltrándose en la corte de [CHARACTER.GetShortUIName]."
- rival_infiltration_corresponding: "[CHARACTER.GetShortUIName|U] fue atrapad[CHARACTER.GetCustom('ES_O')] infiltrándose en la corte de [TARGET_CHARACTER.GetShortUIName]."
+ rival_infiltration: "[TARGET_CHARACTER.GetShortUIName|U] fue atrapad[TARGET_CHARACTER.Custom('ES_OA')] infiltrándose en la corte de [CHARACTER.GetShortUIName]."
+ rival_infiltration_corresponding: "[CHARACTER.GetShortUIName|U] fue atrapad[CHARACTER.Custom('ES_OA')] infiltrándose en la corte de [TARGET_CHARACTER.GetShortUIName]."
   
  rival_diablerized_family: "[TARGET_CHARACTER.GetShortUIName|U] consumió el alma de un pariente de [CHARACTER.GetShortUIName]."
  rival_diablerized_family_corresponding: "[CHARACTER.GetShortUIName|U] consumió el alma de un pariente de [TARGET_CHARACTER.GetShortUIName]."
@@ -30,3 +30,5 @@
  rival_diablerized_friend_corresponding: "[CHARACTER.GetShortUIName|U] consumió el alma de un querido amigo de [TARGET_CHARACTER.GetShortUIName]."
  rival_diablerized_lover: "[TARGET_CHARACTER.GetShortUIName|U] consumió el alma de alguien a quien [CHARACTER.GetShortUIName] amaba."
  rival_diablerized_lover_corresponding: "[CHARACTER.GetShortUIName|U] consumió el alma de alguien a quien [TARGET_CHARACTER.GetShortUIName] amaba."
+ rival_diabolist: "[TARGET_CHARACTER.GetShortUIName|U] humilló a [CHARACTER.GetShortUIName] al vincularl[CHARACTER.Custom('ES_OA')] a un artefacto."
+ rival_diabolist_corresponding: "[CHARACTER.GetShortUIName|U] humilló a [TARGET_CHARACTER.GetShortUIName] al vincularl[TARGET_CHARACTER.Custom('ES_OA')] a un artefacto."

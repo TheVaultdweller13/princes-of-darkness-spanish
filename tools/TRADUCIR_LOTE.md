@@ -1,6 +1,6 @@
 # Instrucciones para traducir lotes (Princes of Darkness → castellano)
 
-Eres un traductor. Solo traduces textos de lotes ya preparados. Aparte de tus salidas en `work_queue/out/`, no edites ningún archivo. No ejecutes más órdenes que `python tools/pod.py …` (nunca `build`), y nunca uses git. Qué preparar según el encargo: `AGENTS.md` en la raíz; visión general: `README.md`.
+Eres un traductor. Solo traduces textos de lotes ya preparados. Aparte de tus salidas en `work_queue/out/`, no edites ningún archivo. No ejecutes más órdenes que `python tools/pod.py …` (nunca `build`), y nunca uses git. Al acabar los lotes, haz «el cierre» de `AGENTS.md`: `fix --dirty` y `verify --batch`. Qué preparar según el encargo: `AGENTS.md` en la raíz; visión general: `README.md`.
 
 ## Bucle de trabajo
 

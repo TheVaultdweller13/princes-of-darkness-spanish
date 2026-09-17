@@ -8,7 +8,7 @@ Este repositorio es un mod de traducción. Tu trabajo es traducir o revisar text
 - **Idioma:** castellano de España, con la terminología oficial española de Mundo de Tinieblas (glosario en `tools/glossary.tsv`). Decisiones fijas: Hunger → Ansia (nunca Hambre); wraith → wraith (nunca Espectro); las dinastías no se traducen.
 - **Tu trabajo termina en `working/spanish/`.** Nunca ejecutes `python tools/pod.py build` ni toques `spanish_translation/` (ni su `descriptor.mod`): volcar al mod y subir la versión lo hace el usuario.
 - **Carpetas intocables:** `spanish_translation/`, `simp_chinese/` (ignórala: está desactualizada), `original_text/` (la actualiza el usuario), `working/cambiar_*` (en desuso).
-- **Final de cada encargo:** di qué has hecho, muestra la salida de `python tools/pod.py status` y enumera lo que haya quedado en `work_queue/manual/`.
+- **Final de cada encargo:** haz siempre «el cierre» (`fix --dirty` + `verify`) antes de dar el resumen.
 
 ## Antes de empezar
 
@@ -32,7 +32,7 @@ Prefijos de lote: **U** = actualización · **B** = pendientes · **R** = revisi
 
 ## Qué hacer según el encargo
 
-Ejecuta los comandos desde la raíz del repositorio. En cada receta, «el bucle» es el de `tools/TRADUCIR_LOTE.md` con el prefijo indicado (`python tools/pod.py next --prefix X`). Repítelo hasta `NO QUEDAN LOTES` o hasta el límite que te hayan dado.
+Ejecuta los comandos desde la raíz del repositorio. En cada receta, «el bucle» es el de `tools/TRADUCIR_LOTE.md` con el prefijo indicado (`python tools/pod.py next --prefix X`). Repítelo hasta `NO QUEDAN LOTES` o hasta el límite que te hayan dado. Toda receta termina con **el cierre**, descrito más abajo.
 
 ### «Traduce lo nuevo de la actualización»
 También se pedirá como «los nuevos archivos», «lo nuevo», «la actualización», «la nueva versión» o «los cambios del mod». En todos los casos se traducen los archivos nuevos **y** las claves nuevas o cambiadas en archivos ya existentes.
@@ -59,6 +59,14 @@ También se pedirá como «los nuevos archivos», «lo nuevo», «la actualizaci
 
 ### «Sigue con lo que haya» / sin más contexto
 `python tools/pod.py next` y el bucle con el prefijo del lote que salga.
+
+## El cierre (siempre, al acabar los lotes)
+
+1. `python tools/pod.py fix --dirty` → arreglos mecánicos (dobles espacios, `GetCustom('ES_O')`, `Concept (`, `| E]`, comillas sin cerrar) solo en los archivos que has tocado.
+2. `python tools/pod.py verify --batch` → revisa **solo las claves que has escrito** y, si hay avisos, crea lotes **R** con ellas.
+3. Si ha creado lotes R, pásalos una vez con el bucle (prefijo **R**) y vuelve a `verify`. Si el segundo intento deja los mismos avisos, no insistas: anótalos en el resumen.
+4. `python tools/pod.py status`.
+5. Resumen para el usuario: qué has traducido, qué ha arreglado `fix`, qué avisos quedan y qué hay en `work_queue/manual/`. Recuérdale que `build`, la versión y git son cosa suya.
 
 ## Si eres un modelo orquestador
 

@@ -16,7 +16,9 @@ Solo librería estándar. Ejecutar desde cualquier sitio: python tools/pod.py <o
   check [--files GLOB]       Informe de problemas (tokens, glosario, espacios, ¿¡, Custom ES_...).
   build [--version X] [--sync-supported]
                              Regenera spanish_translation/localization/spanish para publicar.
-  fix [--dry-run]            Arreglos automáticos sin IA en lo traducido (dobles espacios, GetCustom('ES_O'), "| E]").
+  fix [--dry-run] [--dirty] [--files GLOB]
+                             Arreglos automáticos sin IA (dobles espacios, GetCustom('ES_O'), "| E]", "Concept (", comillas sin cerrar).
+  verify [--all] [--batch]   Revisa solo las claves escritas por los lotes ya aplicados (--batch crea lotes R para corregirlas).
   glossary                   Regenera tools/glossary_mod.tsv a partir de los conceptos del mod ya traducidos.
 """
 import argparse, fnmatch, json, re, shutil, subprocess, sys
@@ -754,6 +756,8 @@ def _apply(a):
                 keep.extend(t[1] for t in it["targets"])
         touched, stale = write_values(assign, keep)
         flip_headers(touched)
+        if assign:
+            log_applied(name, assign.keys())
         print(f"{name}: {len(assign)} claves escritas, {len(bad)} rechazadas, {stale} ya no coincidían (omitidas)")
         for d in ("done",):
             shutil.move(str(Q / "todo" / f"{name}.txt"), Q / d / f"{name}.txt") if (Q / "todo" / f"{name}.txt").exists() else None
@@ -782,21 +786,32 @@ def _apply(a):
 
 # ---------------------------------------------------------------- check / revisión
 
-def check_items(files=None, only=None):
+def check_items(files=None, only=None, keys=None):
+    """keys = conjunto de (rel, clave, ocurrencia) al que limitarse (p. ej. lo que acaba de escribir el agente)."""
     full = load_glossary()
     gloss = [g for g in full if "l" in g["flags"]]
     keep_display = {g["en"].lower() for g in full if g["en"].lower() == g["es"].lower()} | {k.lower() for k in CFG["keep_display"]}
     customs = vanilla_es_customs()
-    for rel in en_files():
+    keep = load_keep()
+    rels = sorted({k[0] for k in keys}) if keys is not None else en_files()
+    for rel in rels:
         if files and not match_any(rel, files):
             continue
         en, es = load_pair(rel)
-        if not es or es.header != "l_spanish":
+        if not es or (keys is None and es.header != "l_spanish"):
             continue
         idx = es.index()
         for l in en.kvs():
             e = idx.get((l["key"], l["occ"]))
-            if not e or e["value"] == l["value"]:
+            if keys is not None and (rel, l["key"], l["occ"]) not in keys:
+                continue
+            if not e:
+                if keys is not None:
+                    yield {"rel": rel, "key": l["key"], "occ": l["occ"], "en": l["value"], "es": "", "why": "clave ausente en español"}
+                continue
+            if e["value"] == l["value"]:
+                if keys is not None and translatable(l["value"]) and l["key"] not in keep:
+                    yield {"rel": rel, "key": l["key"], "occ": l["occ"], "en": l["value"], "es": e["value"], "why": "sigue sin traducir"}
                 continue
             ev, sv = l["value"], e["value"]
             why = []
@@ -832,6 +847,73 @@ def check_items(files=None, only=None):
                         break
             if why:
                 yield {"rel": rel, "key": l["key"], "occ": l["occ"], "en": ev, "es": sv, "why": "; ".join(why)}
+
+
+APPLIED_LOG = "applied.jsonl"
+
+
+def log_applied(name, keys):
+    """Registro append-only de lo aplicado, con marca de tiempo (lo usa 'verify')."""
+    import time
+    with open(Q / APPLIED_LOG, "a", encoding="utf-8") as fh:
+        fh.write(json.dumps({"at": time.time(), "batch": name, "keys": sorted(keys)}, ensure_ascii=False) + "\n")
+
+
+def applied_keys(all_=False):
+    """Claves escritas por lotes ya aplicados. Por defecto, solo las nuevas desde la última verificación."""
+    marker = Q / ".verified"
+    since = 0.0
+    if marker.exists() and not all_:
+        try:
+            since = float(marker.read_text(encoding="utf-8").strip() or 0)
+        except ValueError:
+            since = marker.stat().st_mtime
+    keys, lotes = set(), []
+    log = Q / APPLIED_LOG
+    if log.exists():
+        for line in log.read_text(encoding="utf-8").splitlines():
+            if not line.strip():
+                continue
+            rec = json.loads(line)
+            if rec["at"] <= since:
+                continue
+            lotes.append(rec["batch"])
+            keys.update(tuple(k) for k in rec["keys"])
+    else:  # compatibilidad con lotes aplicados antes de existir el registro
+        for f in sorted((Q / "done").glob("*.json")):
+            if f.stat().st_mtime <= since:
+                continue
+            lotes.append(f.stem)
+            for it in json.loads(f.read_text(encoding="utf-8"))["items"].values():
+                keys.update(tuple(t) for t in it["targets"])
+    return keys, sorted(set(lotes))
+
+
+def cmd_verify(a):
+    keys, lotes = applied_keys(a.all)
+    if not keys:
+        print("Nada nuevo que verificar (usa --all para revisar todo lo aplicado).")
+        return
+    probs = list(check_items([a.files] if a.files else None, None, keys))
+    print(f"Verificando {len(keys)} claves de {len(lotes)} lotes ({lotes[0]}…{lotes[-1]}): {len(probs)} con avisos")
+    cnt = Counter()
+    for p in probs:
+        cnt[p["why"].split(":")[0]] += 1
+    for k, v in cnt.most_common():
+        print(f"  {k}: {v}")
+    for p in probs[:20]:
+        print(f"   · {p['rel']} · {p['key']}: {p['why']}")
+        print(f"     EN: {p['en'][:140]}")
+        print(f"     ES: {p['es'][:140]}")
+    if probs and a.batch:
+        gloss = load_glossary()
+        items = [dict(p, targets=[[p["rel"], p["key"], p["occ"]]]) for p in probs if p["es"]]
+        items = [i for i in items if tuple(i["targets"][0]) not in queued_ids()]
+        for ch in chunk(items):
+            write_batch(next_batch_name("R"), "review", ch, gloss, "verificación")
+        print(f"→ lotes de corrección creados: python tools/pod.py next --prefix R")
+    import time
+    (Q / ".verified").write_text(str(time.time()), encoding="utf-8")
 
 
 def cmd_check(a):
@@ -905,19 +987,45 @@ def cmd_build(a):
 FIXES = [
     ("GetCustom('ES_O') → Custom('ES_OA')", re.compile(r"\.GetCustom\('ES_O'\)"), ".Custom('ES_OA')"),
     ("flag con espacio '| E]'", re.compile(r"\|\s+([A-Za-z]+)\]"), r"|\1]"),
+    ("espacio en \"Concept ('\"", re.compile(r"\[(\w+) +\('"), r"[\1('"),
 ]
+
+
+def dirty_rels():
+    """Archivos de working/spanish modificados respecto a HEAD, en claves de inglés."""
+    out = git("status", "--porcelain", "--", CFG["es_dir"]).stdout.splitlines()
+    rels = set()
+    for line in out:
+        p = line[3:].strip().strip('"').split(" -> ")[-1]
+        if p.startswith(CFG["es_dir"] + "/"):
+            rels.add(p[len(CFG["es_dir"]) + 1:].replace("l_spanish", "l_english"))
+    return rels
 
 
 def cmd_fix(a):
     cnt = Counter()
+    only = dirty_rels() if a.dirty else None
+    if a.dirty:
+        print(f"Solo archivos modificados: {len(only)}")
     for rel in en_files():
+        if only is not None and rel not in only:
+            continue
+        if a.files and not match_any(rel, [a.files]):
+            continue
         en, es = load_pair(rel)
         if not es:
             continue
         idx, dirty = es.index(), False
         for l in en.kvs():
             e = idx.get((l["key"], l["occ"]))
-            if not e or e["value"] == l["value"]:
+            if not e:
+                continue
+            if e["unclosed"] and not l["unclosed"]:
+                # falta la comilla de cierre: en el juego se traga la línea siguiente
+                es.set_value(e, e["value"].rstrip())
+                cnt["comilla de cierre que faltaba"] += 1
+                dirty = True
+            if e["value"] == l["value"]:
                 continue
             v = e["value"]
             for name, rx, rep in FIXES:
@@ -954,9 +1062,14 @@ def main():
     s = sp.add_parser("build"); s.add_argument("--version"); s.add_argument("--sync-supported", action="store_true")
     sp.add_parser("glossary")
     s = sp.add_parser("fix"); s.add_argument("--dry-run", action="store_true")
+    s.add_argument("--dirty", action="store_true", help="solo los archivos de working/spanish modificados respecto a HEAD")
+    s.add_argument("--files", help="patrón, p. ej. \"traits/*\"")
+    s = sp.add_parser("verify"); s.add_argument("--all", action="store_true"); s.add_argument("--batch", action="store_true")
+    s.add_argument("--files")
     a = ap.parse_args()
     {"status": cmd_status, "sync": cmd_sync, "batch": cmd_batch, "next": cmd_next, "apply": cmd_apply,
-     "check": cmd_check, "build": cmd_build, "glossary": cmd_glossary, "fix": cmd_fix}[a.cmd](a)
+     "check": cmd_check, "build": cmd_build, "glossary": cmd_glossary, "fix": cmd_fix,
+     "verify": cmd_verify}[a.cmd](a)
 
 
 if __name__ == "__main__":
