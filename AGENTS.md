@@ -6,14 +6,15 @@ Este repositorio es un mod de traducción. Tu trabajo es traducir o revisar text
 
 - **Git:** no hagas `add`, `commit`, `push`, `pull`, `stash`, `reset`, `checkout` ni nada que modifique el repositorio. El usuario se encarga de git. Solo puedes usar `status`, `diff`, `log` y `show`.
 - **Idioma:** castellano de España, con la terminología oficial española de Mundo de Tinieblas (glosario en `tools/glossary.tsv`). Decisiones fijas: Hunger → Ansia (nunca Hambre); wraith → wraith (nunca Espectro); las dinastías no se traducen.
-- **Carpetas intocables:** `simp_chinese/` (ignórala: está desactualizada), `original_text/` (la actualiza el usuario), `working/cambiar_*` (en desuso).
+- **Tu trabajo termina en `working/spanish/`.** Nunca ejecutes `python tools/pod.py build` ni toques `spanish_translation/` (ni su `descriptor.mod`): volcar al mod y subir la versión lo hace el usuario.
+- **Carpetas intocables:** `spanish_translation/`, `simp_chinese/` (ignórala: está desactualizada), `original_text/` (la actualiza el usuario), `working/cambiar_*` (en desuso).
 - **Final de cada encargo:** di qué has hecho, muestra la salida de `python tools/pod.py status` y enumera lo que haya quedado en `work_queue/manual/`.
 
 ## Antes de empezar
 
 - Trabaja desde la raíz del repositorio (la carpeta que contiene este archivo). Hace falta `python` (3.8 o superior, sin dependencias) y `git`.
 - **`AGENTS.md`** (este archivo) dice *qué* hacer; **`tools/TRADUCIR_LOTE.md`** dice *cómo* traducir un lote. Lee los dos antes de traducir.
-- Trabaja de forma autónoma: no pidas confirmación entre lotes. Para solo en estos casos: `original_text` sin commitear, errores de `pod.py` que no entiendas, o preguntas marcadas en las recetas (p. ej. el número de versión).
+- Trabaja de forma autónoma: no pidas confirmación entre lotes. Para solo en estos casos: `original_text` sin commitear, errores de `pod.py` que no entiendas.
 
 ## Mapa
 
@@ -21,7 +22,7 @@ Este repositorio es un mod de traducción. Tu trabajo es traducir o revisar text
 |---|---|
 | `original_text/english/` | Inglés de la PoD de Steam Workshop (fuente) |
 | `working/spanish/` | Traducción de trabajo. Cabecera `l_english` = archivo aún sin traducir |
-| `spanish_translation/` | Mod listo para Steam (se genera con `build`) |
+| `spanish_translation/` | Mod para Steam. **No lo toques**: lo genera el usuario |
 | `tools/pod.py` | Herramienta única: `python tools/pod.py -h` |
 | `tools/TRADUCIR_LOTE.md` | **Cómo traducir un lote** (reglas, marcas del juego, género). Léelo antes de traducir |
 | `README.md` | Explicación completa del flujo (para personas) |
@@ -39,21 +40,18 @@ También se pedirá como «los nuevos archivos», «lo nuevo», «la actualizaci
 2. `python tools/pod.py sync --dry-run` → si no hay cambios y ya existen lotes `U` en la cola, salta al paso 5.
 3. `python tools/pod.py sync`
 4. `python tools/pod.py batch --scope update`
-5. El bucle con prefijo **U**.
-6. `python tools/pod.py build --sync-supported`. Pregunta al usuario el número de versión antes de usar `--version`.
+5. El bucle con prefijo **U**. Terminas cuando no quedan lotes U.
 
 ### «Traduce pendientes» (opcional: de un archivo o carpeta concretos)
 1. `python tools/pod.py status`
 2. `python tools/pod.py batch [--files "traits/*"] [--limit N]`
 3. El bucle con prefijo **B**.
-4. `python tools/pod.py build`
 
 ### «Revisa / mejora lo traducido» (opcional: una regla o unos archivos)
 1. Solo si te lo piden: `python tools/pod.py fix --dry-run` y después `fix`.
 2. `python tools/pod.py check [--rule R] [--files …]`, con R = `tokens`, `custom`, `spaces`, `punct`, `glossary`, `display` o `english`.
 3. `python tools/pod.py batch --mode review --rule R [--files …] [--limit N]`
 4. El bucle con prefijo **R**. Devuelve solo las líneas que cambies.
-5. `python tools/pod.py build`
 
 ### «Adapta los nombres de personajes»
 1. `python tools/pod.py batch --mode names`

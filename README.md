@@ -2,7 +2,7 @@
 
 Mod de traducción al castellano de España de *Princes of Darkness* para Crusader Kings III (Steam Workshop 3303353422).
 
-> **¿Eres un agente o una IA y te han pedido traducir, revisar o actualizar?** Empieza por **[AGENTS.md](AGENTS.md)** (qué hacer según el encargo) y luego lee **[tools/TRADUCIR_LOTE.md](tools/TRADUCIR_LOTE.md)** (cómo traducir un lote). No edites los `.yml` a mano ni uses git para modificar el repositorio.
+> **¿Eres un agente o una IA y te han pedido traducir, revisar o actualizar?** Empieza por **[AGENTS.md](AGENTS.md)** (qué hacer según el encargo) y luego lee **[tools/TRADUCIR_LOTE.md](tools/TRADUCIR_LOTE.md)** (cómo traducir un lote). Tu trabajo termina en `working/spanish`: no edites los `.yml` a mano, no ejecutes `build` ni toques `spanish_translation/`, y no uses git para modificar el repositorio.
 
 ## Documentación
 
@@ -52,12 +52,12 @@ Cada lote solo lleva las entradas del glosario que aparecen en sus textos. Los t
    - Claves que solo existen en español: se dejan y solo se avisa.
    - `--prune` mueve a `work_queue/removed/` los archivos que ya no existen en inglés.
 4. `python tools/pod.py batch --scope update` (solo lo que trajo el `sync`, registrado en `work_queue/last_sync.json`) y el agente procesa los lotes U.
-5. `python tools/pod.py build --version 0.x.y --sync-supported` → carpeta de Steam lista.
-6. Revisas el diff y haces commit (los agentes nunca tocan git).
+5. **(Tú)** Revisas el diff de `working/spanish`.
+6. **(Tú)** `python tools/pod.py build --version 0.x.y --sync-supported` → carpeta de Steam lista, y commit. Los agentes nunca hacen `build` ni tocan git.
 
 ## Modo 2 · Pendientes
 
-`python tools/pod.py status` → `python tools/pod.py batch [--files "traits/*"] [--limit 20]` → agente → `build`.
+`python tools/pod.py status` → `python tools/pod.py batch [--files "traits/*"] [--limit 20]` → agente → (tú) `build`.
 
 Orden por defecto: conceptos → rasgos → interfaz → interacciones → decisiones → … → eventos al final (`priority` en `config.json`). Nombres de personajes: `batch --mode names` (solo se adaptan los que tienen forma española consolidada). Las dinastías no se traducen.
 
@@ -72,7 +72,7 @@ Orden por defecto: conceptos → rasgos → interfaz → interacciones → decis
    - `glossary`: término del glosario no respetado; solo usa las entradas marcadas con `l`.
    - `display`: texto de `Glossary(...)` o `Concept(...)` sin traducir.
    - `english`: palabras inglesas sueltas.
-3. `python tools/pod.py batch --mode review --rule R` → el agente devuelve solo las líneas que corrige.
+3. `python tools/pod.py batch --mode review --rule R` → el agente devuelve solo las líneas que corrige → (tú) `build`.
 
 Los cambios terminológicos globales (p. ej. Hambre → Ansia) se deciden antes y se añaden a `glossary.tsv` con la marca `l`; luego `check --rule glossary` genera los lotes de revisión.
 
@@ -80,7 +80,7 @@ Los cambios terminológicos globales (p. ej. Hambre → Ansia) se deciden antes 
 
 Abre la sesión **en la carpeta del proyecto** (Claude Code carga `AGENTS.md` a través de `CLAUDE.md`) y pide el encargo en lenguaje normal:
 
-- «Traduce lo nuevo de la actualización» → `sync` → `batch --scope update` → lotes **U** → `build`
+- «Traduce lo nuevo de la actualización» → `sync` → `batch --scope update` → lotes **U** (el agente termina en `working/spanish`; `build`, versión y git son cosa tuya)
 - «Traduce los pendientes de traits» → `batch --files "traits/*"` → lotes **B**
 - «Revisa el glosario en los eventos» → `check` / `batch --mode review` → lotes **R**
 - «Adapta los nombres de personajes» → `batch --mode names` → lotes **N**
