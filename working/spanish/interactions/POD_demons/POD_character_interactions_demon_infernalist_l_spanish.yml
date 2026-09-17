@@ -18,7 +18,7 @@
  POD_summon_demon_demonology_interaction_success: "¡La invocación ha sido un éxito!"
   
  POD_bind_demon_interaction: "Vincular demonio"
- POD_bind_demon_interaction_desc: "Vincula a [recipient.GetFirstName] en un [artifact|E] con su [Glossary('True Name','podgloss.truename')]."
+ POD_bind_demon_interaction_desc: "Vincula a [recipient.GetFirstName] en un [artifact|E] con su [Glossary('Nombre Verdadero','podgloss.truename')]."
  POD_bind_demon_interaction_no_artifact: "No tienes ningún artefacto que pueda ser poseído"
  POD_bind_demon_interaction_already_bound: "[recipient.GetShortUIName|U] ya está vinculad[recipient.Custom('ES_OA')] al [recipient.MakeScope.Var('bound_demon_artifact').Artifact.Custom('ColorizedArtifactName')], que no posees"
  POD_bind_demon_interaction_invalid_artifact: "Este artefacto no puede ser poseído"

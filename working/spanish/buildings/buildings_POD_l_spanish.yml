@@ -153,7 +153,7 @@
  building_type_chantry_01_desc: "#F A congregation of undead mages, the Tremere practice their secret arts of blood magic here.#!"
  building_chantry_01: "Respectable Chantry"
  building_chantry_01_desc: "A small chantry lies here, with a single $pod_cainite$ and few sorcerers under your section of the pyramid. It's a start."
- building_chantry_02: "Large Chantry"
+ building_chantry_02: "Casa Grande"
  building_chantry_02_desc: "Numerous $pod_cainites$ and a small sorcerous cult lie here, all bloodbonded to your will. It's perfect."
  building_chantry_03: "Grand Chantry"
  building_chantry_03_desc: "Here, the Elders of the Tremere know and commend your chantry, as you sit at the head of your own, smaller, Pyramid, a glory to the Clan and the House."
@@ -170,7 +170,7 @@
  
  building_type_ashirra_mosque_01: "Ashirra Mosque"
  building_type_ashirra_mosque_01_desc: "#F A mosque is the center of an Ashirra community.#!"
- building_ashirra_mosque_01: "Mosque"
+ building_ashirra_mosque_01: "Mezquita"
  building_ashirra_mosque_01_desc: "Here the local Imam leads the faithful in prayer so that their souls may be redeemed."
  building_ashirra_mosque_02: "Large Mosque"
  building_ashirra_mosque_02_desc: "Many muslims gather here for prayer and to air their greivances."
@@ -255,7 +255,7 @@
  building_lordly_manor_01: "Respectable Manor"
  building_lordly_manor_01_desc: "Where decisions are made, intrigues hatched, and judgments passed. Hopefully, by you."
  building_type_lordly_manor_02_desc: "#F An impressive manor fitting for a lord of the land.#!"
- building_lordly_manor_02: "Large Manor"
+ building_lordly_manor_02: "Solar Grande"
  building_lordly_manor_02_desc: "A respectable home, where your machinations and designs are made, free from prying eyes and ears."
  building_lordly_manor_03: "Grand Manor"
  building_lordly_manor_03_desc: "The palace of knives and poison laced words, here, you sit as the spider at the center of a tremendous web."
@@ -320,10 +320,10 @@
  building_type_rome_01_desc: "#F Rome was as much the center of the $pod_cainite$ world that it was of the human one. Restoring it to undead greatness would be a tremendous achievement.#!"
  building_rome_01: "Mortal Rome"
  building_rome_01_desc: "Holy Men prowl the streets, contesting any direct control attempt over the center of the European world. At this stage, Rome is a prestigious title for her owner, nothing more."
- building_rome_02: "Divided Rome"
- building_rome_02_desc: "Slowly, the faith of Rome is eroded, and Vampires can once again use their subtle influence to the prince's benefit."
- building_rome_03: "Eternal Rome"
- building_rome_03_desc: "Finally, Rome is back in vampiric hands. Holy men cower in the dark as children of Caine sing the praise of the great ruler that has conquered the holy city."
+ building_rome_02: "Roma Dividida"
+ building_rome_02_desc: "Lentamente, la fe de Roma es erosionada, y los Vampiros pueden usar nuevamente su sutil influencia para beneficio del príncipe."
+ building_rome_03: "Roma Eterna"
+ building_rome_03_desc: "Finalmente, Roma está de vuelta en manos vampíricas. Los Hombres Santos se acobardan en la oscuridad mientras los hijos de Caín cantan alabanzas al gran gobernante que ha conquistado la ciudad santa."
  
  building_type_ceoris_01: "Ceoris"
  building_type_ceoris_01_desc: "#F The mighty fortress of the [GetTrait('tremere').GetName(GetNullCharacter)] is both a stronghold and a learning center. It is the best asset of the beleaguered $pod_clan$ of Magi.#!"
@@ -334,7 +334,7 @@
  building_ceoris_03: "Impregnable Ceoris"
  building_ceoris_03_desc: "As long as this powerful fortress stands, $pod_clan$ [GetTrait('tremere').GetName(GetNullCharacter)] can't fall. That is, from the outside at least..."
  
- building_type_carthage_01: "Carthage"
+ building_type_carthage_01: "Cartago"
  building_type_carthage_01_desc: "#F The Dream of the [GetTrait('brujah').GetName(GetNullCharacter)] $pod_clan$ is long dead, buried by the vengeful [GetTrait('ventrue').GetName(GetNullCharacter)]. But can dreams really die?#!"
  building_carthage_01: "Rebuilding Carthage"
  building_carthage_01_desc: "A strong declaration to the world, rebuilding Troile's city will be a costly affair. But the rewards, and the dangers, could both be great."
@@ -816,7 +816,7 @@
  
  building_type_paris_01: "Paris"
  building_type_paris_01_desc: "#F The city of wonders is the center of the Western world, but it is also a difficult place to truly hold.#!"
- building_paris_01: "Free Paris"
+ building_paris_01: "París Libre"
  building_paris_01_desc: "Paris is indomitable, and no one can truly control its spirit, at least for now."
  building_paris_02: "Curtailed Paris"
  building_paris_02_desc: "Piece by piece, Paris is becoming one with its owner, perhaps the center of an ever-growing empire."
@@ -860,7 +860,7 @@
  building_family_worship_03: "Private Temple"
  building_family_worship_03_desc: "Whether it masquerades as a curiously inaccessible church or industrial-sized wine cellar complex, this facility is a testament of your family's devotion."
  
- building_type_family_muscle_01: "Family Muscle"
+ building_type_family_muscle_01: "Músculo de la Familia"
  building_type_family_muscle_01_desc: "#F Existence on the threshold between the world of mortals and the domains of the lords of the night is a dangerous and difficult one. Accomplices of the violent type can help.#!"
  building_family_muscle_01: "Local Ruffians"
  building_family_muscle_01_desc: "Having the neighbourhood thugs and troublemakers in your pocket does not pave the way to great conquests, but is mighty useful in smaller disputes."
@@ -1211,7 +1211,7 @@
  building_inquisition_mendicant_03: "Mendicant Abbey"
  building_inquisition_mendicant_03_desc: "A fortress of compassion on the frontier of indifference. The flock of the land look to this towering structure to remind themselves that there is good in the world.\n$POD_requirements_development_10$" 
  
- building_type_inquisition_cell_01: "Inquisition Cell"
+ building_type_inquisition_cell_01: "Célula de la Inquisición"
  building_type_inquisition_cell_01_desc: "#F Here the vanquishers of inhuman evil of the realm gather to coordinate operations, instruct one another, deposit donations, and keep watch over the land.#!"
  building_inquisition_cell_01: "Budding Inquisition Cell"
  building_inquisition_cell_01_desc: "Do not expect more than fortified doors, a chest containing necessary resources, and the most basic amenities from a newly established hunter cell. Nevertheless, it is still a seed from which hope will sprout."
@@ -1353,7 +1353,7 @@
  building_corrupted_dragon_nest_07: "Control the Corrupted Dragon Gate"
  building_corrupted_dragon_nest_07_desc: "Once the rivergate is controlled, the dragon lines act as an infinite source of power for the residing supernatural. As long as the gate stands obviously, something covetous supernatural neighbors might not tolerate for long.\n$POD_dragon_nest_requirements_development_60$\n\n$building_type_corrupted_dragon_nest_01_general$"
     
- building_type_scarlet_screen_family_01: "Family Scarlet Screen"
+ building_type_scarlet_screen_family_01: "Pantalla Escarlata Familiar"
  building_type_scarlet_screen_family_01_desc: "#F The most important Scarlet Screen. [Glossary('Dharma','podgloss.dharma')] like the Song of the Shadow even have the imperative to safeguard the family. In addition, a [GetTrait('kueijin').GetName( GetNullCharacter )]'s mortal family is often among their most loyal supporters.#!"
  building_scarlet_screen_family_01: "Lesser Family Screen"
  building_scarlet_screen_family_01_desc: "You have laid the groundwork for a Family Scarlet Screen. It's a start, but it needs some work."
@@ -1379,7 +1379,7 @@
  building_scarlet_screen_usagigumi_05: "Celestial Usagigumi Screen"
  building_scarlet_screen_usagigumi_05_desc: "Your Usagigumi could sunder even the armies of the [Glossary('Yama Kings','podgloss.yamaking')] now."
  
- building_type_scarlet_screen_inugumi_01: "Inugumi Scarlet Screen"
+ building_type_scarlet_screen_inugumi_01: "Pantalla Escarlata Inugumi"
  building_type_scarlet_screen_inugumi_01_desc: "#F The "Dog gangs" (inugumi), which are more loyal and sometimes even have contact with the supernatural.#!"
  building_scarlet_screen_inugumi_01: "Lesser Inugumi Screen"
  building_scarlet_screen_inugumi_01_desc: "Your Inugumi have just been laid out. They get the job done for now, but they could do better."
@@ -1392,7 +1392,7 @@
  building_scarlet_screen_inugumi_05: "Celestial Inugumi Screen"
  building_scarlet_screen_inugumi_05_desc: "Your Inugumi have become your eyes and ears everywhere across the region, as your hand stretches ever outwards."
  
- building_type_scarlet_screen_ryugumi_01: "Ryugumi Scarlet Screen"
+ building_type_scarlet_screen_ryugumi_01: "Pantalla Escarlata Ryugumi"
  building_type_scarlet_screen_ryugumi_01_desc: "#F The "Dragon troops" (ryugumi), which are trained exactly for the purpose of combating high threats to their [GetTrait('kueijin').GetName( GetNullCharacter )] master.#!"
  building_scarlet_screen_ryugumi_01: "Lesser Ryugumi Screen"
  building_scarlet_screen_ryugumi_01_desc: "Your Ryugumi are now a potent honor guard. They're only a handful now, but now you can sleep soundly during the day."
@@ -1932,7 +1932,7 @@
  building_sanctified_area_02: "Consecrated Area"
  building_sanctified_area_02_desc: "Blessed by one of the most impressive true believer of their age, this ground is anathema to the Enemy."
  
- building_type_hagia_sophia_02: "Hagia Sophia"
+ building_type_hagia_sophia_02: "Santa Sofía"
  building_type_hagia_sophia_02_desc: "The Hagia Sophia is a true marvel of engineering, with a massive dome standing out as the most impressive feature. Completed in AD 537 by emperor Justinian I, it now houses the Ecumenical Patriarch and stands as a monument to Christianity.\n\nAnd so it will remain for all eternity, for surely nothing could ever topple the might of Rome."
 
  building_type_st_andrew_01: "The Monastery of St. Andrew"

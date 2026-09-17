@@ -56,7 +56,7 @@
  umbra_request: "Request"
  umbra_request_perk: "Perk"
  umbra_request_army: "Army"
- umbra_request_gold: "Gold"
+ umbra_request_gold: "Oro"
  umbra_spawn_army_yuhuang: "You get an army of #V 200#! [GetMaA('soldiers_of_the_emperor').GetName] in [GetPlayer.GetCapitalLocation.GetCounty.GetTitle.GetNameNoTier]"
  umbra_spawn_army_incarna: "You get an army of #V 100#! [GetMaA('jagglings').GetName] in [GetPlayer.GetCapitalLocation.GetCounty.GetTitle.GetNameNoTier]"
  
@@ -149,7 +149,7 @@
  umbra_discovery.elemental_court_armor_expedition4.desc: "$umbra_discovery_finder$ has discovered the fabled $umbra_discovery_region$, more precisely the Elemental Court of Air. An [umbra_expedition|E] to improve your Elemental Armor could be a valid prospect now."
  umbra_discovery_grand_hall_expedition: "Umbral Explorer"
  umbra_discovery.grand_hall_expedition.desc: "While exploring the maze like $umbra_discovery_region$, $umbra_discovery_finder$ has been approached by a friendly spirit offering their services for further exploration. This offer could be worthy of an [umbra_expedition|E]"
- umbra_discovery_heaven_expedition: "Stairway to Heaven"
+ umbra_discovery_heaven_expedition: "Escalera al Cielo"
  umbra_discovery.heaven_expedition.desc: "While exploring the most remote areas of the Deep Umbra, $umbra_discovery_finder$ found a shining gate of molten pearl. A white glow emanated from the barrier, bathing them in comfort beyond words. They were not allowed to enter but perhaps your uncompromising Faith could carry you where they failed? If so an [umbra_expedition|E] to $umbra_discovery_region$ itself is in order."
  umbra_discovery_epiphamies_expedition: "The Fortress to Mankind's Folly"
  umbra_discovery.epiphamies_expedition.desc: "While exploring the $umbra_discovery_region$, the realm of abstract concepts given form, $umbra_discovery_finder$ found a monumental castle resonating with power. While there is an aura of unease around it, it could still be worthy for an [umbra_expedition|E]."
@@ -185,27 +185,27 @@
  umbra_discovery.whistimmu_tindelhounds.desc: "$umbra_discovery_finder$ has seen signs of a Whistimmu in the $umbra_discovery_region$ worthy for an [umbra_expedition|E]"
  umbra_discovery_black_tortoise: "Black Tortoise"
  umbra_discovery.black_tortoise.desc: "$umbra_discovery_finder$ found a clue about Black Tortoise being in the $umbra_discovery_region$ worthy for an [umbra_expedition|E]"
- umbra_discovery_fetish: "Fetish"
+ umbra_discovery_fetish: "Fetiche"
  umbra_discovery.fetish.desc: "$umbra_discovery_finder$ found a fetish in the $umbra_discovery_region$ worthy for an [umbra_expedition|E]"
- umbra_discovery_chicanery: "Chicanery"
+ umbra_discovery_chicanery: "Chicanería"
  umbra_discovery.chicanery.desc: "$umbra_discovery_finder$ found an inspiration for [GetTrait('art_chicanery').GetName( GetPlayer )] in the $umbra_discovery_region$ worthy for an [umbra_expedition|E]"
- umbra_discovery_legerdemain: "Legerdemain"
+ umbra_discovery_legerdemain: "Prestidigitación"
  umbra_discovery.legerdemain.desc: "$umbra_discovery_finder$ found an inspiration for [GetTrait('art_legerdemain').GetName( GetPlayer )] in the $umbra_discovery_region$ worthy for an [umbra_expedition|E]"
- umbra_discovery_primal: "Primal"
+ umbra_discovery_primal: "Primitiva"
  umbra_discovery.primal.desc: "$umbra_discovery_finder$ found an inspiration for [GetTrait('art_primal').GetName( GetPlayer )] in the $umbra_discovery_region$ worthy for an [umbra_expedition|E]"
- umbra_discovery_soothsay: "Soothsay"
+ umbra_discovery_soothsay: "Adivinación"
  umbra_discovery.soothsay.desc: "$umbra_discovery_finder$ found an inspiration for [GetTrait('art_soothsay').GetName( GetPlayer )] in the $umbra_discovery_region$ worthy for an [umbra_expedition|E]"
- umbra_discovery_wayfare: "Wayfare"
+ umbra_discovery_wayfare: "Viaje"
  umbra_discovery.wayfare.desc: "$umbra_discovery_finder$ found an inspiration for [GetTrait('art_wayfare').GetName( GetPlayer )] in the $umbra_discovery_region$ worthy for an [umbra_expedition|E]"
  umbra_discovery_dream_craft: "Dream Craft"
  umbra_discovery.dream_craft.desc: "$umbra_discovery_finder$ found an inspiration for [GetTrait('art_dream_craft').GetName( GetPlayer )] in the $umbra_discovery_region$ worthy for an [umbra_expedition|E]"
- umbra_discovery_aphrodesia: "Aphrodesia"
+ umbra_discovery_aphrodesia: "Afrodisia"
  umbra_discovery.aphrodesia.desc: "$umbra_discovery_finder$ found an inspiration for [GetTrait('art_aphrodesia').GetName( GetPlayer )] in the $umbra_discovery_region$ worthy for an [umbra_expedition|E]"
  umbra_discovery_kryos: "Kryos"
  umbra_discovery.kryos.desc: "$umbra_discovery_finder$ found an inspiration for [GetTrait('art_kryos').GetName( GetPlayer )] in the $umbra_discovery_region$ worthy for an [umbra_expedition|E]"
- umbra_discovery_metamorphosis: "Metamorphosis"
+ umbra_discovery_metamorphosis: "Metamorfosis"
  umbra_discovery.metamorphosis.desc: "$umbra_discovery_finder$ found an inspiration for [GetTrait('art_metamorphosis').GetName( GetPlayer )] in the $umbra_discovery_region$ worthy for an [umbra_expedition|E]"
- umbra_discovery_pyretics: "Pyretics"
+ umbra_discovery_pyretics: "Pirética"
  umbra_discovery.pyretics.desc: "$umbra_discovery_finder$ found an inspiration for [GetTrait('art_pyretics').GetName( GetPlayer )] in the $umbra_discovery_region$ worthy for an [umbra_expedition|E]"
  umbra_discovery_realm_nature: "Realm Nature"
  umbra_discovery.realm_nature.desc: "$umbra_discovery_finder$ found an inspiration for [GetTrait('realm_nature').GetName( GetPlayer )] in the $umbra_discovery_region$ worthy for an [umbra_expedition|E]"
@@ -247,7 +247,7 @@
  umbra_discovery.weaver_possesion_chance.desc: "$umbra_discovery_finder$ found a $glossary_weaver$-spirit in the $umbra_discovery_region$. This could be worthy of an [umbra_expedition|E]."
  umbra_discovery_gaia_possesion_chance: "Gaian Possession"
  umbra_discovery.gaia_possesion_chance.desc: "$umbra_discovery_finder$ found a bridge to Gaia herself in the $umbra_discovery_region$. This could be worthy of an [umbra_expedition|E]."
- umbra_discovery_investments_of_soul: "Investments of Soul"
+ umbra_discovery_investments_of_soul: "Investiduras del Alma"
  umbra_discovery.investments_of_soul.desc: "$umbra_discovery_finder$ found a chance to gain favor from the [Glossary('Yama Kings','podgloss.yamaking')] in the $umbra_discovery_region$. This could be worthy of an [umbra_expedition|E]."
  umbra_discovery_eshtarra_gift: "Eshtarra Gift"
  umbra_discovery.eshtarra_gift.desc: "$umbra_discovery_finder$ found a chance to gain favor from Eshtarra in the $umbra_discovery_region$. This could be worthy of an [umbra_expedition|E]."
@@ -333,7 +333,7 @@
  umbra_discovery.trapped_in_yomi.desc: "$umbra_discovery_finder$ has been trapped in the $umbra_discovery_region$, they need an [umbra_expedition|E] to rescue them or they will be trapped forever!"
  umbra_discovery_trapped_in_labyrinth: "Trapped in Labyrinth"
  umbra_discovery.trapped_in_labyrinth.desc: "$umbra_discovery_finder$ has been trapped in the $umbra_discovery_region$, they need an [umbra_expedition|E] to rescue them or they will be trapped forever (or erased from existence)!"
- umbra_discovery_trapped_in_malfeas: "Trapped in [UmbraGlossary('malfeas')]"
+ umbra_discovery_trapped_in_malfeas: "Atrapado en [UmbraGlossary('malfeas')]"
  umbra_discovery.trapped_in_malfeas.desc: "$umbra_discovery_finder$ has been trapped in the $umbra_discovery_region$, they need an [umbra_expedition|E] to rescue them or they will be trapped forever!"
  umbra_discovery_bane_maa: "Bane Soldiers"
  umbra_discovery.bane_maa.desc: "$umbra_discovery_finder$ has found a gathering of Banes in $umbra_discovery_region$ worthy for an [umbra_expedition|E]"
@@ -577,7 +577,7 @@
  umbra_place_broken_lands_confirm: "Explore the Broken Lands"
  umbra_place_vista_confirm: "View the Vista"
  umbra_place_oblivion_confirm: "Suicide in Oblivion"
- umbra_place_earth_confirm: "Return to Earth"
+ umbra_place_earth_confirm: "Regresar a la Tierra"
  umbra_place_shadowlands_confirm: "Stay in Shadowlands"
  umbra_place_dark_kingdom_confirm: "Return to [Glossary('Dark Kingdom','game_concept_dark_kingdom_desc')]"
  umbra_place_seat_confirm: "Visit the Seats"
@@ -620,22 +620,22 @@
  
  # Umbra Location
  
- umbra_realm_earth: "Earth"
+ umbra_realm_earth: "Tierra"
  umbra_realm_earth_desc: "The material world. Among the worlds of “solid” reality within the Tellurian, Earth is often referred to as “the Realm” implying its primacy. The planet's celestine is, of course, Gaia, and Earth's shadow is called [UmbraGlossary('penumbra')].\n\n$POD_splat_werewolf_plural$ and other shapechangers refer as the "[Glossary('Gaia Realm','game_concept_gaia_realm_desc')]", in honor of Gaia, the spirit of the Earth.\n\n$POD_splat_wraith_plural$ call this realm [Glossary('Skinlands','game_concept_skinlands_desc')], in contrast with the [UmbraGlossary('shadowlands')] (the Dark Penumbra) that connects to the [UmbraGlossaryLocalized('shadowlands','Underworld')] (the Dark Umbra).\n\nIn the Common Parlance of the #TOOLTIP:GAME_TRAIT,fae,[GetNullCharacter] #L Kithain#!#!, the Waking World is Earth... the part of Earth that is not in the Umbras or the [UmbraGlossary('dreaming')]. Also called the Autumn World, the Land of Unfulfilled Dreams, and the World of Flesh."
  earth_effect_desc: ""
 
  umbra_realm_penumbra: "Penumbra"
  umbra_realm_penumbra_desc: "Penumbra, also known as Earth’s Shadow, is the [spirit_world|E] directly surrounding the physical world. Many, but not all, terrain features have reflections there."
  
- umbra_realm_astral_reaches: "Astral Reaches"
+ umbra_realm_astral_reaches: "Confines Astrales"
  game_concept_high_umbra: "High Umbra"
  game_concept_astral_umbra: "Astral Umbra"
  umbra_realm_astral_reaches_desc: "The Astral Reaches, also called the Astral Umbra, the High Umbra, or the Upper Umbra are the realms of thought, of idea, of concept."
  
- umbra_realm_dreaming: "Dreaming"
+ umbra_realm_dreaming: "Ensueño"
  umbra_realm_dreaming_desc: "Like a picture postcard of a vacation, when humanity began to put more faith in cold hard facts (and cold hard iron) over whim and fancy, the mythic parts of the world branched off to an overlapping level of reality called The Dreaming."
 
- umbra_realm_underworld: "Underworld"
+ umbra_realm_underworld: "Inframundo"
  game_concept_yin_world: "Yin World"
  game_concept_dark_umbra: "Dark Umbra"
  umbra_realm_underworld_desc: "The Underworld, also known as the Dark Umbra or the Contrarium, is the domain of the dead and memories."
@@ -905,7 +905,7 @@
  umbra_realm_sunless_sea_desc: "Named because the sky above it is always dark, light in the Sunless Sea from sources such as ships and beacons can be seen for miles because it scatters off the surface of the water."
  sunless_sea_effect_desc: ""
  
- umbra_realm_far_shore: "Far Shore"
+ umbra_realm_far_shore: "Costa Lejana"
  umbra_realm_far_shore_desc: "The Far Shores are a mysterious territory in the [UmbraGlossaryLocalized('shadowlands','Underworld')] controlled by pythian entities called Shining Ones. To modern Stygians, the Far Shores are territories controlled by Heretics, and not to be trusted."
  far_shore_effect_desc: ""
  
@@ -934,7 +934,7 @@
  dark_kingdom_of_ivory_effect_desc: "Unlock an interaction that allows you to send a bound [GetTrait('wraith').GetName( GetNullCharacter )] to this [Glossary('Dark Kingdom','game_concept_dark_kingdom_desc')] so it has a chance of learning new [arcanoi_lifestyle|E].\nIf you are a wraith, gain access to Behest tree of [misc_arcanoi_lifestyle|E]. (as an [umbra_expedition|E])"
  
  umbra_realm_dark_kingdom_of_jade: "Dark Kingdom of Jade"
- umbra_realm_dark_kingdom_of_jade_desc: "The Yellow Springs, also called the [Glossary('Dark Kingdom','game_concept_dark_kingdom_desc')] of Jade, is a part of the [UmbraGlossaryLocalized('shadowlands','Underworld')] dedicated to and controlled by the dead of Asia."
+ umbra_realm_dark_kingdom_of_jade_desc: "Los Manantiales Amarillos, también llamados el [Glossary('Dark Kingdom','game_concept_dark_kingdom_desc')] de Jade, es una parte del [UmbraGlossaryLocalized('shadowlands','Inframundo')] dedicada a y controlada por los muertos de Asia."
  dark_kingdom_of_jade_effect_desc: "Unlock an interaction that allows you to send a bound [GetTrait('wraith').GetName( GetNullCharacter )] to this [Glossary('Dark Kingdom','game_concept_dark_kingdom_desc')] so it has a chance of learning new [arcanoi_lifestyle|E]."
  
  umbra_realm_dark_kingdom_of_obsidian: "Dark Kingdom of Obsidian"
@@ -953,7 +953,7 @@
  umbra_realm_swar_desc: "Swar (or Svarga), the City of Delights, is the city of the dead of India, Swar serves as the head city of Bhuvar, the Indian [UmbraGlossary('shadowlands')]."
  swar_effect_desc: "Unlock an interaction that allows you to send a bound [GetTrait('wraith').GetName( GetNullCharacter )] to this [Glossary('Dark Kingdom','game_concept_dark_kingdom_desc')] so it has a chance of learning new [arcanoi_lifestyle|E]."
  
- umbra_realm_night_markets: "Night Markets"
+ umbra_realm_night_markets: "Mercados Nocturnos"
  umbra_realm_night_markets_desc: "The Night Markets, nominally a part of [UmbraGlossary('swar')], where the Southeast Asian Dead dwell."
  night_markets_effect_desc: "Unlock an interaction that allows you to send a bound [GetTrait('wraith').GetName( GetNullCharacter )] to this [Glossary('Dark Kingdom','game_concept_dark_kingdom_desc')] so it has a chance of learning new [arcanoi_lifestyle|E]."
  
@@ -973,7 +973,7 @@
  umbra_realm_fields_of_aaru_desc: "The Fields of A'aru are the residence of the Judges of Ma'at and are located within the [UmbraGlossaryLocalized('shadowlands','Underworld')] amidst the ruins of the [UmbraGlossary('dark_kingdom_of_sand')]. A'aru can only be found when the bodiless spirit of a mummy is accompained by Anubis or one of his servants, the Aken. It is a place for wraiths that have proven themselves worthy of finding Heaven."
  fields_of_aaru_effect_desc: ""
 
- umbra_realm_isle_of_eurydice: "Isle of Eurydice"
+ umbra_realm_isle_of_eurydice: "Isla de Eurídice"
  umbra_realm_isle_of_eurydice_desc: "The Isle of Eurydice serves as the Seat of Fate, the headquarters for the Legion of Fate, as well as their leaders the Ladies of Fate, and the eminent Lady of Fate. The Isle is unique among the Seats of the Legions as it is the only one not located in Stygia itself."
  isle_of_eurydice_effect_desc: ""
  
@@ -999,7 +999,7 @@
  umbra_realm_sea_of_shadow_desc: "Sea of Shadows is a term used by Wraiths to describe the "bottom" layer of the [UmbraGlossary('tempest')] which flows around and into the [UmbraGlossary('pod_realm_labyrinth')] and [UmbraGlossary('oblivion')]."
  sea_of_shadow_effect_desc: "Allows you to find a random whistimmu as an [umbra_expedition|E].\nGain $POD_plasmic_maa$ as an [umbra_expedition|E], which allows recruiting $POD_plasmic_maa$ as [men_at_arms|E]."
  
- umbra_realm_tempest: "Tempest"
+ umbra_realm_tempest: "Tempestad"
  umbra_realm_tempest_desc: "The Tempest is a perpetually swirling maelstrom of energy, memories and #TOOLTIP:GAME_TRAIT,spectre,[GetNullCharacter] #L Spectres#!#! issuing from the [UmbraGlossary('pod_realm_labyrinth')] and continuously raining plasma and materials on both the [UmbraGlossary('shadowlands')] and [Glossary('Dark Kingdoms','game_concept_dark_kingdom_desc')]."
  tempest_effect_desc: "Allows you to find a random whistimmu as an [umbra_expedition|E].\nGain $POD_plasmic_maa$ as an [umbra_expedition|E], which allows recruiting $POD_plasmic_maa$ as [men_at_arms|E]."
  
@@ -1015,7 +1015,7 @@
  umbra_realm_mirrorlands_desc: "The Mirrorlands are the name for the [UmbraGlossary('shadowlands')] reflections of the Caribbean islands, given to them by the wraiths known as Les Invisibles."
  mirrorlands_effect_desc: ""
  
- umbra_realm_pod_realm_labyrinth: "Labyrinth"
+ umbra_realm_pod_realm_labyrinth: "Laberinto"
  umbra_realm_pod_realm_labyrinth_desc: "The Labyrinth has relatively little structure, and no map could make sense of it; what landmarks do exist are prone to movement."
 
  pod_realm_labyrinth_effect_desc: "Unlock an interaction that allows you to send a bound [GetTrait('wraith').GetName( GetNullCharacter )] to the Labyrinth so it might return as a [GetModifier('doomslayer_modifier').GetNameWithTooltip].\nIf you are a wraith, gain [GetModifier('doomslayer_modifier').GetNameWithTooltip] modifier. (as an [umbra_expedition|E])"
@@ -1024,11 +1024,11 @@
  umbra_realm_well_of_the_void_desc: "The Well of the Void is the physical manifestation of [UmbraGlossary('oblivion')], located at the center and bottom of the [UmbraGlossary('pod_realm_labyrinth')]."
  well_of_the_void_effect_desc: ""
  
- umbra_realm_oblivion: "Oblivion"
+ umbra_realm_oblivion: "Olvido"
  umbra_realm_oblivion_desc: "Oblivion is entropy itself, a constantly churning force of destruction and madness from which there is no return."
  oblivion_effect_desc: "#X Any being who enters here will have their existence erased.#!"
  
- umbra_realm_abyss: "Abyss"
+ umbra_realm_abyss: "Abismo"
  umbra_realm_abyss_desc: "The Abyss, also known as Hell or the Pit, is the murky dimension of darkness created by God as an eternal prison for the Fallen."
 
  abyss_effect_desc: ""
@@ -1037,7 +1037,7 @@
  umbra_realm_dis_desc: "What little organization the Ferrymen have is centered around Dis, a Sargasso Sea of fortresses, caverns, and ships in the [UmbraGlossary('tempest')]. This holds their main gathering places, the headquarters of their archival and fabrication divisions, and their small steering committee."
  dis_effect_desc: ""
 
- umbra_realm_spirit_wilds: "Spirit Wilds"
+ umbra_realm_spirit_wilds: "Tierras Salvajes Espirituales"
  umbra_realm_spirit_wilds_desc: "The Spirit Wilds are another name for the Middle Umbra, particularly the space between the Near Realms. This part of the [umbra|E] reflects the natural environment, both in its pristine state and wounded by civilization one."
 
  spirit_wilds_effect_desc: "$UMBRA_RECRUIT_BYGONE$"
@@ -1290,7 +1290,7 @@
  umbra_realm_wyrm_reaches_desc: "The stars within the Wyrm Reaches have burned-out to lifeless husks or collapsed into black holes that usually lead into [UmbraGlossary('malfeas')]. Nebulas of pollution and balefire swirl around them, obscuring their constellations from anyone who looks at them, making them dark blotches within the Umbral sky."
  wyrm_reaches_effect_desc: ""
  
- umbra_realm_mercury: "Mercury"
+ umbra_realm_mercury: "Mercurio"
  umbra_realm_mercury_desc: "Mercury, according to the consensus, is a barren, airless world pockmarked by thousands of craters.\n\nThe Umbral equivalent is similar difficult to inhabit, thanks to its proximity to the Sun. At one time the Ahl-i-Batin had a Chantry on this world. The Mages had slowed the worlds rotation so that the settlement, which was built in a crater, was always on the edge of twilight."
  mercury_effect_desc: ""
  
@@ -1298,35 +1298,35 @@
  umbra_realm_venus_desc: "In the physical world, Venus is a hot, smothering, sterile world with a crushing atmosphere tainted by sulfuric acid. However, unlike most planets, it has a Penumbra which may reflect an earlier phase of its history. Penumbral Venus is covered in lush tropical jungles and shallow, marshy oceans. Its connection to the Sphere of Life means the environment is rich in every kind of living thing: explorers are at risk of being colonized by moss or fungi if they stand still for too long, and may need to regularly clean and sterilize equipment to prevent mold contamination."
  venus_effect_desc: ""
  
- umbra_realm_mars: "Mars"
+ umbra_realm_mars: "Marte"
  umbra_realm_mars_desc: "Mars was once inhabited, and thus has a Penumbra, where one can easily see the ruins of canals running along old ley lines. Even in the Penumbra, however, the air is thin and severe dust storms are a hazard."
  mars_effect_desc: ""
  
- umbra_realm_jupiter: "Jupiter"
+ umbra_realm_jupiter: "Júpiter"
  umbra_realm_jupiter_desc: "While Jupiter itself is a ball of gas with no surface, its many moons are more amenable to supporting visitors. Here, beyond the Horizon, mages can work extraordinary feats of magic without fear of Paradox. Each of the so-called Gallilean moons is, at present, controlled by a different faction of mages, though footing shifts quickly and frequently. Portals between any two moons of Jupiter or Saturn are easy to open, so heavy fortification is necessary to keep invaders out."
  jupiter_effect_desc: ""
 
- umbra_realm_saturn: "Saturn"
+ umbra_realm_saturn: "Saturno"
  umbra_realm_saturn_desc: "Saturn is a large gas-giant planet in the outer solar system. Like Jupiter, visits to the "surface" of Saturn are not really possible. Its moons, however, are host to a number of bases used by the mages."
  saturn_effect_desc: ""
  
- umbra_realm_uranus: "Uranus"
+ umbra_realm_uranus: "Urano"
  umbra_realm_uranus_desc: "Unlike the Jovian and Saturnine moons, the moons of Uranus are not easily accessible through portals, and the distance from the Horizon makes other forms of travel tedious. The Akashic Brotherhood maintain a Chantry on one of the moons, and Marauders occupy a couple others, but most visitors come to Uranus for the isolation and thus the system is largely unexplored and unoccupied. Its [Glossary('Shade Realm','game_concept_shade_realm_desc')], on the other hand, receives a great deal of traffic."
  uranus_effect_desc: ""
  
- umbra_realm_neptune: "Neptune"
+ umbra_realm_neptune: "Neptuno"
  umbra_realm_neptune_desc: "Like Uranus, there is very little mage activity so far from the Horizon. Several chantries exist on Neptune's various moons, but it is not clear which ones; some of them may be on moons yet unnamed by Sleeper."
  neptune_effect_desc: ""
  
- umbra_realm_pluto: "Pluto"
+ umbra_realm_pluto: "Plutón"
  umbra_realm_pluto_desc: "Pluto is a small, icy world with a proportionately large moon called Charon. There is a large hidden moon called Cerberus where the Euthanatos maintain a chantry in order to study the [Glossary('Shade Realm','game_concept_shade_realm_desc')]. They do not allow outsiders access; they do not hesitate to use force to repel mages who attempt to trespass, and none of the Traditions want to press their luck."
  pluto_effect_desc: ""
  
- umbra_realm_moon: "Moon"
+ umbra_realm_moon: "Luna"
  umbra_realm_moon_desc: "Mages view the Moon as having at least three distinct forms, depending on which side of the Gauntlet one stands on how one approaches it.\n\nThe physical surface of the moon is a barren, rocky wasteland which has been visited rarely.\n\nThe Moon has a Penumbra, but the Penumbral Moon is still devoid of life--though here ruins are visible showing that this wasn't always the case.\n\nThe third form of the Moon is the one known to Garou, and that is the court of Phoebe, or Sokhta, the planetary Incarna of the Moon."
  moon_effect_desc: ""
  
- umbra_realm_sun: "Sun"
+ umbra_realm_sun: "Sol"
  umbra_realm_sun_desc: "The area of the [UmbraGlossary('deep_umbra')] that houses Helios is nothing but heat and brilliant white light. Bridges made up of reddish light similar to solar flares lead across deep chasms filled with superheated atomized elements. Fire elemental Incarnae dwell here, bright and cheerful, yet charged to defend the realm against intruders. They will attack any werewolves who enter the realm, though they welcome the Corax and others who worship Helios. Any surface within Helios’s realm is too hot to stand or remain near for too long. Only flying spirits enter this area of the Deep Umbra, and travelers without the ability to fly burn up in the fire before they have a chance to realize their mistake."
  sun_effect_desc: ""
 
@@ -1478,7 +1478,7 @@
  umbra_realm_far_horizon_desc: "The Far Horizon corresponds roughly to the location of the asteroid belt."
  far_horizon_effect_desc: ""
 
- umbra_realm_deep_umbra: "Deep Umbra"
+ umbra_realm_deep_umbra: "Umbra profunda"
  umbra_realm_deep_umbra_desc: "Deep Umbra, also called the Deep Universe, is a vast realm outside Earth's Umbral space. It is largely an immense void. From the human perspective, the Deep Umbra is deep space, outer space, or the whole of the universe."
  deep_umbra_effect_desc: ""
 
@@ -1531,7 +1531,7 @@
  neter_khertet_effect_desc: ""
 
  umbra_realm_kakuri: "Kakuri"
- umbra_realm_kakuri_desc: "Also known as the Night Realm, Kakuri is a [UmbraGlossaryLocalized('yomi_wan','Yomi Hell')] controlled by the [Glossary('Yama King','podgloss.yamaking')] [Glossary('Emma-O','podgloss.emmao')].\nKakuri is a Yin-aspected domain, a lightless, joyless, honorless void of ice and snow.\nAs the ancestral death domain of the Ainu, Kakuri has a secret way out for [Glossary('Emma-O','podgloss.emmao')]'s original worshipers."
+ umbra_realm_kakuri_desc: "También conocido como el Reino de la Noche, Kakuri es un [UmbraGlossaryLocalized('yomi_wan','Infierno Yomi')] controlado por el [Glossary('Rey Yama','podgloss.yamaking')] [Glossary('Emma-O','podgloss.emmao')].\nKakuri es un dominio de aspecto Yin, un vacío de hielo y nieve sin luz, sin alegría y sin honor.\nComo dominio ancestral de la muerte de los Ainu, Kakuri tiene una salida secreta para los adoradores originales de [Glossary('Emma-O','podgloss.emmao')]."
 
  kakuri_effect_desc: "Can recruit [GetMaA('shikome_assassin').GetName] as [men_at_arms|E]\nCan recruit [GetMaA('kumo_huntress').GetName] as [men_at_arms|E]\n$UMBRA_INVESTMENTS_OF_SOUL$"
 

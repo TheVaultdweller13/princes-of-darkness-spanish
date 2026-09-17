@@ -60,7 +60,16 @@ Cada lote solo lleva las entradas del glosario que aparecen en sus textos. Los t
 
 `python tools/pod.py status` → `python tools/pod.py batch [--files "traits/*"] [--limit 20]` → agente → `build` (usuario).
 
-Orden por defecto: conceptos → rasgos → interfaz → interacciones → decisiones → … → eventos al final (`priority` en `config.json`). Nombres de personajes: `batch --mode names` (solo se adaptan los que tienen forma española consolidada). Las dinastías no se traducen.
+Nombres de personajes: `batch --mode names` (solo se adaptan los que tienen forma española consolidada). Las dinastías no se traducen.
+
+### Orden de prioridad
+
+`batch` emite los lotes con dos criterios, sin que el agente tenga que decidir nada:
+
+1. **Línea de juego** (`splat_priority` en `config.json`): general y compartido → vampiro → hombre lobo → cazadores e inquisición → otras líneas (wraith, fae, momias, kuei-jin, demonios…). Se deduce del nombre del archivo; lo que no encaja en ninguna línea cuenta como general, que es lo que más se ve porque el vampiro es la línea por defecto del mod.
+2. **Tipo de archivo** (`priority`): conceptos → rasgos → interfaz → interacciones → decisiones → … y los eventos largos al final.
+
+`status` y `batch` muestran el reparto de pendientes por línea de juego.
 
 ## Modo 3 · Mejoras
 
@@ -101,7 +110,7 @@ Todas las órdenes se ejecutan desde la raíz del repositorio (`python tools/pod
 
 | Para… | Orden |
 |---|---|
-| Ver el progreso | `python tools/pod.py status --top 25` |
+| Ver el progreso y el reparto por línea de juego | `python tools/pod.py status --top 25` |
 | Simular una actualización | `python tools/pod.py sync --dry-run` |
 | Aplicar una actualización | `python tools/pod.py sync` |
 | Preparar solo lo nuevo | `python tools/pod.py batch --scope update` |

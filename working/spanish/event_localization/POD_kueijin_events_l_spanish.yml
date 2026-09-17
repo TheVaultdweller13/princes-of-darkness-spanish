@@ -8,7 +8,7 @@
  podkueijin.1.c: "We will watch this one's career with great interest."
  podkueijin.1.d: "Only the best prospect will do."
 
- POD_shadow_self.death_management.t: "Losing a part of yourself"
+ POD_shadow_self.death_management.t: "Perdiendo una parte de ti mismo"
  POD_shadow_self.death_management.desc: "Grave news came, your Shadow Self, a part of your own soul, has died. You can feel a terrible emptiness inside. It seems dividing your very being could have consequences after all."
  POD_shadow_self.death_management.option.a: "Another one bites the dust."
  POD_shadow_self.death_management.option.a.tt: "Your Shadow Self has died"
@@ -40,7 +40,7 @@
  
  # Maintance event
 
- podkueijin.200.t: "Mental Break: Imbalance"
+ podkueijin.200.t: "Crisis mental: Desequilibrio"
  podkueijin.200.desc: "[GetTrait('kueijin').GetName( GetNullCharacter )] must regulate their Chi intake carefully, lest they suffer from Chi imbalance. An imbalance of Yin Chi often leads to the vampire becoming more corpselike and inhuman over time; conversely, an imbalance of Yang can lead to the outbreak of various deadly and exceedingly contagious vampiric diseases."
  podkueijin.200.a: "Punishment for excessive focus on the Self." 
  podkueijin.200.a.tt: "Your closeness to Yin made you more ugly and a potential target of witch hunters." 
@@ -56,7 +56,7 @@
  
  podkueijin.210.t: "Lost control"
  podkueijin.210.desc: "You are out of Chi, maybe because you are a Yang Wan-Kuei and feel the hunger more, or maybe you spent all of your Chi and can't use the other aspect Chi because you don't master the flow. So you lost control and rampaged into a crowd to acquire some Chi..."
- podkueijin.210.a: "What a shame."
+ podkueijin.210.a: "Qué lástima."
 
  podkueijin.211.t: "Lack of Chi"
  podkueijin.211.desc: "A [Glossary('Wan Kuei','game_concept_kuei_jin_desc')] with no Chi in their body begins to crumble and rot. Each time you must expend Chi (to activate a $pod_discipline$ or merely animate your corpse), you lose Health instead, until your dual soul flees the body and your existence as a Rising Dead ends."
@@ -69,7 +69,7 @@
  podkueijin.220.c: "First spend: Yin Chi / Yang Chi / #bold Random#!" 
  podkueijin.220.d: "When devouring Chi: #bold No Overdose#! / Overdose" 
  podkueijin.220.e: "When devouring Chi: No Overdose / #bold Overdose#!" 
- podkueijin.220.f: "Confirm" 
+ podkueijin.220.f: "Confirmar" 
 
  # Dharma event
  
@@ -223,7 +223,7 @@
  # Celebration general event
  
  podkueijin.1010.desc: "Why would you accept my invitation only to attend [other_host.GetTitledFirstNamePossessive] celebration instead I do not know, but know that I will remember this."
- podkueijin.1010.a: "Unfortunate."
+ podkueijin.1010.a: "Lamentable."
  
  podkueijin.1011.opening: "[sender.Custom2('AppropriateGreeting', ROOT.Char)]"
  podkueijin.1011.opening_desc: "I hereby invite you to a celebration at my court in [barony.GetNameNoTier]!"
@@ -245,7 +245,7 @@
  
  podkueijin.1021.t: "Celebration: A Cheery Gathering"
  podkueijin.1021.desc: "The guests are gathered in the great hall, honorable ones from the near and far reaches of the realm.\n\nThe mood is bright, and spirits are high as the celebration begins!"
- podkueijin.1021.a: "Welcome, friends!"
+ podkueijin.1021.a: "¡Bienvenidos, amigos!"
  podkueijin.1021.a.tt: "The celebration begins"
  
  podkueijin.1022.t: "A Warm Welcome"
@@ -317,7 +317,7 @@
  podkueijin.1199.desc_fallback: "May you do better next time."
  podkueijin.1199.a: "Very good."
  podkueijin.1199.a.ex: "I will use my [Glossary('Dharma','podgloss.dharma')] knowledge to understand even more!"
- podkueijin.1199.b: "That is enough."
+ podkueijin.1199.b: "Es suficiente."
  podkueijin.1199.b.ex: "I will use my [Glossary('Dharma','podgloss.dharma')] knowledge to gain a conclusion!"
  podkueijin.1199.c: "Better than nothing."
  podkueijin.1199.c.ex: "My [Glossary('Dharma','podgloss.dharma')] knowledge will help me get more."
@@ -364,9 +364,9 @@
  podkueijin.1299.desc_bad_good: "There are some made-up stories about you now, mostly bad ones."
  podkueijin.1299.desc_bad: "Your shameful act has been known far and wide, this will impact your prestige."
  podkueijin.1299.desc_fallback: "For some reason, your action was never recorded..."
- podkueijin.1299.a: "Excellent."
+ podkueijin.1299.a: "Excelente."
  podkueijin.1299.a.ex: "Find some storyteller, everyone should know my legend!"
- podkueijin.1299.b: "Good."
+ podkueijin.1299.b: "Bien."
  podkueijin.1299.b.ex: "No! I must hire someone to speak for me!"
  podkueijin.1299.c: "Fine."
  podkueijin.1299.c.ex: "Well, I always welcome some useful rumor."
@@ -445,7 +445,7 @@
  
  # Art Scheme
  
- kueijin_scheme.100.t: "Spirit Eating"
+ kueijin_scheme.100.t: "Devoración de Espíritus"
  kueijin_scheme.100.desc: "You can actually see the ghostly soul flow from the victim's body and enter your third eye. Now you may decide what to do."
  kueijin_scheme.100.a: "Purge the soul."
  kueijin_scheme.100.b: "Torture the soul."
@@ -549,7 +549,7 @@
  POD_darkling_mirror.001.option.a.desc: "A struggle with your inner demon"
  POD_darkling_mirror.001.option.a.tt.success: "Your P'o is successfully split"
  POD_darkling_mirror.001.option.a.tt.failure: "You fail to split your P'o"
- POD_darkling_mirror.001.option.b: "Now is not the right time"
+ POD_darkling_mirror.001.option.b: "Ahora no es el momento adecuado"
  POD_darkling_mirror.001.option.b.tt: "You will abandon your idea of splitting your P'o"
 
  POD_darkling_mirror.002.t: "Darkling Mirror II"
@@ -559,7 +559,7 @@
 
  POD_darkling_mirror.003.t: "Darkling Mirror II"
  POD_darkling_mirror.003.desc: "Even your mastery of Cultivation is not enough to split your P'o... for now."
- POD_darkling_mirror.003.option.a: "I am not ready yet"
+ POD_darkling_mirror.003.option.a: "Aún no estoy preparado"
  POD_darkling_mirror.003.option.a.tt: "You failed to split your P'o"
 
  POD_darkling_mirror.death_management.t: "Return of P'o"
@@ -604,7 +604,7 @@
  #PODquincunx.260.desc: "After the creation of the Quincunx, the [GetTrait('kueijin').GetName( GetNullCharacter )] attacked the holdings of [Glossary('Dokhor-Khan','podgloss.dokhorkhan')] in the former territories of the Black Tortoise Court, severing him from his input of Tainted Chi, which allowed his rivals, among them Rangda and [Glossary('Tou Mu','podgloss.toumu')], to destroy him and add parts of the former Hell to their own territories."
  #PODquincunx.260.option.a: "The [Glossary('Wheel of Ages','podgloss.wheelofages')] is turning."
  
- POD_demon_regalia.1.t: "Demon Regalia"
+ POD_demon_regalia.1.t: "Atuendo Demoníaco"
  POD_demon_regalia.1.desc: "Demon Regalia takes the form of either monstrous mutations or supernatural weaponry, reflecting the [UmbraGlossaryLocalized('yomi_wan','Yomi Hell')] from which the power springs.\nTake note that while the following features are grouped thematically by Hell, $pod_kueijin$ are not barred from specific features based on where they escaped from. Indeed, as they grow in power, and their karmic debt becomes simultaneously clearer to them and more complex, the Hungry Dead take on features that far surpass the tortures they once experienced."
  POD_demon_regalia.1.demon_regalia_barbed_hide: "[GetModifier('demon_regalia_barbed_hide_modifier').GetNameWithTooltip]"
  POD_demon_regalia.1.demon_regalia_razor_claws: "[GetModifier('demon_regalia_razor_claws_modifier').GetNameWithTooltip]"

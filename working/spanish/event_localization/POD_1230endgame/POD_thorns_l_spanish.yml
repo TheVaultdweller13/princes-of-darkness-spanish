@@ -14,7 +14,7 @@
  choose_independance_effect_message: "Nothing changes for you or your $pod_clan$." 
  PODthorns.0004.t: "Thorns: Camarilla Ventrue"
  PODthorns.0004.desc: "In a not-so-surprising move, the Ventrue have aligned themselves with the nascent Camarilla, probably hoping to take the reins of power while they still can. The Convention continues as the other representatives discuss this move."
- PODthorns.0004.a: "A victory for the Camarilla."
+ PODthorns.0004.a: "Una victoria para la Camarilla."
  PODthorns.0004.b: "I must join them!"
  PODthorns.0005.t: "Thorns: Opposition Ventrue"
  PODthorns.0005.desc: "A Surprising turn of events in the opening stages of the Convention of Thorns, as the Ventrue representative has stormed out of the negotiation table, calling the whole process a sad joke. It seems that $pod_clan$ Ventrue will take no part in the Camarilla and has aligned itself with the Anarch opposition, perhaps hoping to bring order to the so far leaderless movement."
@@ -159,10 +159,10 @@
  PODthorns.2001.b: "Not interested."
  PODthorns.2001.c: "Camarilla and their boring politics."
  
- POD_camarilla.110.title: "Blood Hunt"
+ POD_camarilla.110.title: "Cacería de Sangre"
  POD_camarilla.110.desc: "The traditional legal institution behind the Blood Hunt is the Lextalionis (or Lex Talionis), a legal principle that can be summarized as "an eye for an eye". Such an order is usually given whenever a Kindred has committed a serious offense, such as kinslaying, diablerie, breaching the Masquerade, invasion of domain that has resulted in any of the above offenses, repeated defiance of authority of the Prince, or any other behavior that a Prince deems to be a sufficient threat to the safety of the Masquerade and the Kindred of the city as a whole.\nAny Kindred who hears the order for a Blood Hunt is expected to participate, although this is not officially required. Will you call on your fellow Camarilla neighbors to join this war?"
- POD_camarilla.110.a: "Call them."
- POD_camarilla.110.b: "I hunt alone."
+ POD_camarilla.110.a: "Llamarlos."
+ POD_camarilla.110.b: "Cazo solo."
  
  POD_camarilla.200.title: "Intra Camarilla Warfare"
  POD_camarilla.200.desc: "How could [attacker.GetFirstName] start a war against you, a noble Camarilla [defender.Custom('CamarillaStatus')]? Maybe you should call a conclave and claim [attacker.GetHerHim] as [GetTrait('anathema').GetName( GetPlayer )]!\nThe Camarilla as a whole shuns open warfare between its members as it tends to leave them weakened to external threats like the Sabbat or the Anarch. Each offense is handled separately however, and there is a no small amount of politicking that can be involved to reach the final agreement."
@@ -170,8 +170,8 @@
  POD_camarilla.200.b: "No need."
 
  POD_camarilla.300.opening: "[recipient.Custom2('AppropriateGreeting', actor )]"
- POD_camarilla.300.desc: "My realm is my own and will stay that way until I deem it otherwise. Your authority is acknowledged but your abuse of power is also noted. Your "demand" is refused."
- POD_camarilla.300.a: "I shall have to explore other options..."
+ POD_camarilla.300.desc: "Mi reino es mío y seguirá siéndolo hasta que yo decida lo contrario. Tu autoridad es reconocida pero tu abuso de poder también es notado. Tu \"demanda\" es rechazada."
+ POD_camarilla.300.a: "Tendré que explorar otras opciones..."
 
  POD_camarilla.999.title: "Inner Circle Meeting"
  POD_camarilla.999.desc: "Inner Circle meetings are something that happen every 13 years, and where [Glossary('Justicar','game_concept_justicar_desc')] get changed or keep their position."
@@ -271,10 +271,10 @@
  
  POD_camarilla.1221.title: "Will of the Inner Circle"
  POD_camarilla.1221.desc: "#X Are you sure you want to force [chosen_justicar.GetFirstNameNoTooltip] to become a [Glossary('Justicar','game_concept_justicar_desc')]? #!"
- POD_camarilla.1221.a: "Make it so."
- POD_camarilla.1221.b: "I changed my mind."
+ POD_camarilla.1221.a: "Que así sea."
+ POD_camarilla.1221.b: "Cambié de opinión."
 
- POD_camarilla.1301.title: "Red List"
+ POD_camarilla.1301.title: "Lista Roja"
  POD_camarilla.1301.desc: "The Red List is the listing of those Kindred whom the Camarilla most ardently desires to see purged from the face of the earth. Vampires on the Red List, who are called Anathema, are considered under continual Blood Hunt. The Camarilla usually leaves the hunting and destruction of these Kindred to the Alastors. Traditionally, it contains 13 names.\nThe Red List is smaller than 13 at the moment and thus you could add a new Anathema to it at your convenience."
  POD_camarilla.1301.a: "[red_list_candidate_1.GetFirstNameNoTooltip]"
  POD_camarilla.1301.b: "[red_list_candidate_2.GetFirstNameNoTooltip]"
@@ -283,7 +283,7 @@
  POD_camarilla.1301.e: "[red_list_candidate_5.GetFirstNameNoTooltip]"
  POD_camarilla.1301.f: "Abstention"
 
- POD_camarilla.1400.title: "Change Doctrine"
+ POD_camarilla.1400.title: "Cambiar doctrina"
  POD_camarilla.1400.desc: "Inner Circle Meetings are where the overall politics of the Camarilla are discussed. Shadowy dealings and centuries old boons can lead to drastic changes in the sect's organization.\nDo you want to change a doctrine?"
  POD_camarilla.1400.a: "Yes"
  POD_camarilla.1400.b: "No"
@@ -453,6 +453,6 @@
  POD_camarilla.2215.a: "Good for us."
  POD_camarilla.2215.b: "Good for them."
  
- POD_camarilla.2300.t: "Triumph of the Camarilla"
+ POD_camarilla.2300.t: "Triunfo de la Camarilla"
  POD_camarilla.2300.desc: "For many, the Camarilla has always been the default state of vampiric society. The defenders of status quo, often mirroring very antiquated mortal practices, it has endured many trials and rebellions from the barbaric Sabbat to the hopeless Anarchs. No one truly knows where the Camarilla's strength really comes from though many have suppositions, some darker than others.\nWhatever the case may be, a succession of military and diplomatic victories recently pushed back its rivals to almost complete irrelevance. For many, the Camarilla was once the least bad choice for a society of the Kindred.\nNow? It is the only one."
  POD_camarilla.2300.a: "One big dysfunctional family."

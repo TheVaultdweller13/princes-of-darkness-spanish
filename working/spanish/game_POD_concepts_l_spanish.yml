@@ -44,7 +44,7 @@
  game_concept_resonance: "Resonancia"
  game_concept_resonance_desc: "La sangre tiene cierta calidad basada en la personalidad y emociones de su recipiente. El consumo de sangre otorga poder a los $POD_splat_vampire_plural$ según el carácter de la Resonancia. Obtienes más experiencia en $pod_discipline$ bebiendo sangre de una resonancia particular, ya sea a través del [journey|E] #V $POD_hunt_target_interaction$#!, o pasivamente bebiendo de tu [POD_herd|E]. Las resonancias son:\n$BULLET_WITH_TAB$[choleric_lifestyle|E]\n$BULLET_WITH_TAB$[melancholy_lifestyle|E]\n$BULLET_WITH_TAB$[phlegmatic_lifestyle|E]\n$BULLET_WITH_TAB$[sanguine_lifestyle|E]\n$BULLET_WITH_TAB$[animal_lifestyle|E]"
  
- game_concept_torpor: "Torpor"
+ game_concept_torpor: "Letargo"
  game_concept_torpor_desc: "El Torpor es un estado de animación suspendida para un [GetTrait('vampire').GetName( GetNullCharacter )]. Aunque no pueden moverse, pueden ser conscientes de los eventos que ocurren a su alrededor. Puede ser causado por una estaca en el corazón, suficiente daño corporal, gran hambre o hastío.\nUn personaje con el [trait|E] [GetTrait('torpor').GetName( GetNullCharacter )] está severamente debilitado, no se puede interactuar con la mayoría de las acciones y no puede gobernar. Pueden ser despertados por el [character_interaction|E] especial #V $POD_wake_from_torpor_interaction$#!."
  game_concept_torpid: "torpido"
  
@@ -199,9 +199,9 @@
  game_concept_POD_herd: "Rebaño"
  game_concept_POD_herd_desc: "#X Puedes aumentar tu tamaño máximo de Rebaño por encima de su base de 3 con edificios en tu [Concept('domicile','Escondite')|E]. #!.\n Un rebaño es un grupo de mortales cuyos miembros permiten que un vampiro se alimente de ellos, proporcionando fácil acceso a la comida y liberando sus noches para asuntos más apremiantes."  
  
- game_concept_revenant: "Revenant"
+ game_concept_revenant: "Aparecido"
  game_concept_revenant_desc: "Un $POD_splat_revenant$ es un tipo de criatura híbrida que es tanto similar como diferente a los $POD_splat_mortal_plural$, [ghouls|E] y $POD_splat_vampire_plural$. Algunos dirían que un revenant está a medio camino entre un mortal y un vampiro; otros lo llamarían una corrupción de las criaturas de Dios con la maldición de Caín, mezclando los dos hasta que se vuelven inseparables. No obstante, un revenant tiene muchas cualidades tanto de vampiros como de mortales, y tiene muchas características de los ghouls normales. Los revenants pueden beber la sangre de un vampiro, pero a diferencia de un ghoul no necesitan hacerlo, ya que pueden producir su propia $pod_vitae$, que también retarda su envejecimiento.\nA diferencia de sus amos, y a pesar de su nombre, los revenants son criaturas vivas. Como un mortal, necesitan comer, dormir y respirar. Son capaces de reproducción sexual. A diferencia de un mortal, son más resistentes y tienen acceso a poderes sobrenaturales de la Marca de Caín."
- game_concept_revenants: "revenants"
+ game_concept_revenants: "aparecidos"
  
  game_concept_serpentis: "Serpentis"
  game_concept_serpentis_desc: "Se cree que Serpentis es el legado del propio Set, un regalo para sus hijos. Los Seguidores de Set son muy cuidadosos para guardar los secretos de esta $pod_discipline$, solo enseñando el arte a aquellos que consideran dignos. La mayoría de los vampiros temen a los Setitas por los poderes de Serpentis y su conexión con las serpientes y reptiles."
@@ -230,7 +230,7 @@
  game_concept_hekau_amulets_lifestyle: "Amuletos Hekau"
  game_concept_hekau_amulets_lifestyle_desc: "Los Amuletos Hekau son adecuados para $POD_splat_mummy_plural$. Los amuletos, también conocidos como Meket en egipcio, son talismanes que enfocan el poder mágico, más a menudo para la protección contra el mal, la enfermedad o la hechicería."
  
- game_concept_hekau_celestial_lifestyle: "Celestial Hekau"
+ game_concept_hekau_celestial_lifestyle: "Hekau Celestial"
  game_concept_hekau_celestial_lifestyle_desc: "El Celestial Hekau es adecuado para $POD_splat_mummy_plural$. El Celestial Hekau son las artes mágicas del antiguo Egipto centradas en el destino, el clima y la astrología."
  
  game_concept_hekau_effigy_lifestyle: "Efigie Hekau"
@@ -368,7 +368,7 @@
  game_concept_POD_plasmic_maa: "Plásmico"
  game_concept_POD_plasmic_maa_desc: "Un Plásmico o Entidad Plásmica es una 'forma de vida' del [UmbraGlossaryLocalized('shadowlands','Inframundo')]; específicamente, cualquier criatura independiente que está compuesta de Plasma pero que no es específicamente un wraith o wraith maligno."
  
- game_concept_POD_wraith_maa: "Wraith"
+ game_concept_POD_wraith_maa: "wraith"
  game_concept_POD_wraith_maa_desc: "Un wraith es un fantasma, el alma de una persona que ha muerto insatisfecha y ahora acecha en el [UmbraGlossary('shadowlands')]."
 
  game_concept_POD_vampire_maa: "Vampiro"
@@ -439,7 +439,7 @@
 
  game_concept_eternal_rome: "Roma Eterna"
  game_concept_st_peters_city: "Ciudad de San Pedro"
- game_concept_roma_aeterna: "Roma Aeterna"
+ game_concept_roma_aeterna: "Roma Eterna"
  game_concept_eternal_rome_desc: "La [grand_city|E] de Roma tiene una larga e histórica historia. Hay tres versiones de la ciudad:\n\nCuando está controlada por un [GetTrait('vampire').GetName(GetNullCharacter)], la ciudad se llama #bold Roma Aeterna#!. Sus 13 distritos históricos están divididos entre los [Glossary('Clans','game_concept_Clan_desc')]. Para mejorarlos, necesitarás emplear [primogen|E] hábiles. En el nivel 3, cada distrito desbloqueará #P nuevas habilidades#! para tu personaje.\n\nCuando está controlada por un [GetTrait('supehunter').GetName(GetNullCharacter)] de la Inquisición Sombría, la ciudad se llama #bold Ciudad de San Pedro#!. Un Cazador puede establecerse en el monasterio de San Michele, convirtiéndolo en la sede de la Inquisición. Ayudar a las otras Órdenes de la Inquisición desbloqueará poderosas rutas de mejora para sus edificios.\n\nCuando está controlada por cualquier otro, la ciudad se llama #bold Roma Eterna#!. Sus monumentos históricos pueden ser restaurados por personajes que tienen [traits|E] específicos o personas hábiles en [court_positions|E].$grand_city_incompatible_tooltip$"
  
  game_concept_journey: "Viaje"
@@ -455,7 +455,7 @@
  game_concept_travel_phase: "Fase de Viaje"
  game_concept_travel_phase_desc: "Después de que la [planning_phase|E] de un [journey|E] termine, tu personaje se entera de una [location|E] en el mundo donde puede completar su misión. Puedes [travel|E] allí de inmediato, o pausar el [journey|E] y viajar más tarde.\n\nPuedes invitar a los miembros de tu [coterie|E] a que te acompañen en este viaje.\n\n#help No puedes comenzar nuevos [journeys|E] ni invitar nuevos miembros a tu [coterie|E] durante la Fase de Viaje.#!"
  
- game_concept_coterie: "Coterie"
+ game_concept_coterie: "coterie"
  game_concept_coterie_desc: "Una #bold Coterie#! es un grupo de individuos que realizan [journeys|E] juntos. 'Coterie' es un término utilizado por los $POD_splat_vampire_plural$ — otros [splats|E] pueden tener diferentes nombres para ello.\n\nMientras estás en un [journey|E], las [skills|E] se comparten entre los miembros de la Coterie. Por ejemplo, si una situación durante un [journey|E] exige [diplomacy|E], solo considera la [diplomacy_skill|E] de tu miembro más diplomático de la Coterie.\n\n#help Para revisar tu Coterie, haz clic en el botón #bold $POD_journeys_hud$#! en el lado derecho de tu pantalla y selecciona la segunda pestaña.#!"
  
  game_concept_inner_circle: "Círculo Interno"
@@ -704,8 +704,8 @@
  game_concept_soak_chance: "Probabilidad de Absorber"
  game_concept_soak_damage_desc: "Algunos poderes y [perks|E] pueden darte una probabilidad de absorber el [POD_superficial_damage|E] entrante, lo que significa que el daño no se aplicará.\n\nUsar un [artifact|E] de armadura es la forma más fácil de obtener una probabilidad de absorber, ya que cada nivel de [rarity|E] de la armadura añade #V 10%#!."
  
- game_concept_fetish: "Fetish"
- game_concept_fetishes: "Fetishes"
+ game_concept_fetish: "Fetiche"
+ game_concept_fetishes: "Fetiches"
  game_concept_fetish_artifact_icon: "@gnosis_icon!"
  game_concept_fetish_artifact_wyrm_icon: "@wyrm_icon!"
  game_concept_fetish_desc: "Un Fetish es un [artifact|E] que ha sido imbuido con un espíritu vinculado. Todos los $glossary_fera$ pueden usarlos naturalmente, otros [splats|E] requerirán ventajas o modificadores especiales.\n\nA diferencia de los artefactos normales, los Fetishes requieren mantenimiento para permanecer activos:\n$BULLET_WITH_TAB$$glossary_fera$: 5% de $POD_terrain_gnosis_regen_supply_limit_mult$ cada uno. \n$BULLET_WITH_TAB$Otros: Un [spirit_companion|E] cada uno.\nSi no puedes mantenerlos, todos los artefactos fetish se desactivarán.\n\nPoder equipar fetishes desbloquea automáticamente el nodo de [crafting_forging|E] [fetish_smithing|E]."
@@ -739,7 +739,7 @@
  game_concept_diabolism_bind: "Vincular"
  game_concept_diabolism_binding: "Vinculación"
  game_concept_diabolism_bound: "Vinculado"
- game_concept_diabolism_desc: "#bold El Diabolismo#! es una de las dos formas de ganar [investiture_lifestyle|E] (la otra es [thralldom|E]). No contento con ser un esclavo de los $POD_splat_demon_plural$, el Infernalista usa un ritual de vinculación para invertir esta dinámica y esclavizar a los Demonios en su lugar, tomando su poder por la fuerza.\n\nVincular Demonios requiere conocimiento de [GetTrait('demonology').GetName(GetNullCharacter)], que se puede aprender mediante [journey|E]. La [trait_level_track_xp|E] en Demonología se gana pasivamente cada año. Antes de que puedas intentar la vinculación, también debes aprender el [Glossary('True Name','podgloss.truename')] del Demonio. Por último, necesitas un [artifact|E] lo bastante fuerte como para contener al Demonio. Todo esto hace que el Diabolismo sea un proceso lento.\n\nUna vez que tienes éxito en la vinculación, ganas puntos de [perk|E] de [investiture_lifestyle|E] basados en la suma de las [skills|E] del Demonio.\n\nSi el artefacto cambia de dueño o es destruido, el Demonio #N se libera#!, se convierte en tu [rival|E] y empieza a realizar actos de [demonic_sabotage|E]. También pierdes sus [perks|E] de [investiture_lifestyle|E]."
+ game_concept_diabolism_desc: "#bold El Diabolismo#! es una de las dos formas de ganar [investiture_lifestyle|E] (la otra es [thralldom|E]). No contento con ser un esclavo de los $POD_splat_demon_plural$, el Infernalista usa un ritual de vinculación para invertir esta dinámica y esclavizar a los Demonios en su lugar, tomando su poder por la fuerza.\n\nVincular Demonios requiere conocimiento de [GetTrait('demonology').GetName(GetNullCharacter)], que se puede aprender mediante [journey|E]. La [trait_level_track_xp|E] en Demonología se gana pasivamente cada año. Antes de que puedas intentar la vinculación, también debes aprender el [Glossary('Nombre Verdadero','podgloss.truename')] del Demonio. Por último, necesitas un [artifact|E] lo bastante fuerte como para contener al Demonio. Todo esto hace que el Diabolismo sea un proceso lento.\n\nUna vez que tienes éxito en la vinculación, ganas puntos de [perk|E] de [investiture_lifestyle|E] basados en la suma de las [skills|E] del Demonio.\n\nSi el artefacto cambia de dueño o es destruido, el Demonio #N se libera#!, se convierte en tu [rival|E] y empieza a realizar actos de [demonic_sabotage|E]. También pierdes sus [perks|E] de [investiture_lifestyle|E]."
  
  game_concept_demonic_sabotage: "Sabotaje"
  game_concept_demonic_sabotage_desc: "Los $POD_splat_demon_plural$ resienten estar encadenados por un [diabolist|E], y empezarán a realizar actos de sabotaje si:\n$EFFECT_LIST_BULLET$Has fallado al intentar vincularlos varias veces seguidas (hasta que se conviertan en tu [rival|E])\n$EFFECT_LIST_BULLET$El artefacto en el que estaban vinculados cambia de dueño o es destruido, lo que rompe la vinculación\n\nSe intentará el sabotaje cada año. Si tiene éxito, el Demonio puede infligir un [modifier|E] negativo, causar algo de [POD_superficial_damage|E], quitarte directamente algo de [prestige|E] u [gold|E], o incluso matar a un [courtier|E] aleatorio.\n\nEl sabotaje se detiene si el Demonio está [Concept('POD_banish','Desterrado')|E], [diabolism_bound|E], deja de ser tu [rival|E], o si su resentimiento se desvanece (lo cual lleva mucho tiempo)."

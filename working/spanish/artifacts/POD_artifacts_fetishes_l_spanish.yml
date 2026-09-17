@@ -247,7 +247,7 @@
  artifact_dragons_ichor_name: "[fetish_artifact_wyrm_icon]Dragon's Ichor"
  artifact_dragons_ichor_description: "#bold Can be used to temporarily gain [GetModifier('dragons_ichor_temp_modifier').GetNameWithTooltip].#!\n\nUsually found in small jars or vials, Dragon's Ichor is black blood taken from a powerful Wyrm-creature. If the nearly-congealed gunk is rubbed all over one's body it will cause them to become temporarily immune to all attacks."
  dragons_ichor_temp_modifier: "Black Blood"
- dragons_ichor_temp_modifier_desc: "Can [soak_damage|E] [POD_aggravated_damage_with_box|E]" 
+ dragons_ichor_temp_modifier_desc: "Puede [soak_damage|E] [POD_aggravated_damage_with_box|E]" 
  artifact_baneklaive_name: "[fetish_artifact_wyrm_icon]Baneklaive"
  artifact_baneklaive_description: "#bold Can be used to inflict up to #V [EmptyScope.ScriptValue('POD_double_balefire_damage')|0]#! [balefire|E] damage to a character. Their $POD_energy_gnosis$ will also be drained if they are a $glossary_fera$ or [GetTrait('spirit').GetName(GetNullCharacter)].#!\n\nThe Baneklaive is a sword-length silver blade, engraved with twisted runes and gleaming with Balefire. The blade can steal Gnosis from Fera and Spirits as the Balefires burn them."
  artifact_churjurocs_tusk_name: "[fetish_artifact_wyrm_icon]Churjuroc's Tusk"

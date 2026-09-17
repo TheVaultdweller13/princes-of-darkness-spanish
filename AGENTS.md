@@ -7,7 +7,7 @@ Este repositorio es un mod de traducción. Tu trabajo es traducir o revisar text
 - **Git:** no hagas `add`, `commit`, `push`, `pull`, `stash`, `reset`, `checkout` ni nada que modifique el repositorio. El usuario se encarga de git. Solo puedes usar `status`, `diff`, `log` y `show`.
 - **Idioma:** castellano de España, con la terminología oficial española de Mundo de Tinieblas (glosario en `tools/glossary.tsv`). Decisiones fijas: Hunger → Ansia (nunca Hambre); wraith → wraith (nunca Espectro); las dinastías no se traducen.
 - **Tu trabajo termina en `working/spanish/`.** Nunca ejecutes `python tools/pod.py build` ni toques `spanish_translation/` (ni su `descriptor.mod`): volcar al mod y subir la versión lo hace el usuario.
-- **Carpetas intocables:** `spanish_translation/`, `simp_chinese/` (ignórala: está desactualizada), `original_text/` (la actualiza el usuario), `working/cambiar_*` (en desuso).
+- **Carpetas intocables:** `spanish_translation/`, `simp_chinese/` (ignórala: está desactualizada), `original_text/` (la actualiza el usuario), `working/cambiar_*` (ya borradas).
 - **Final de cada encargo:** haz siempre «el cierre» (`fix --dirty` + `verify`) antes de dar el resumen.
 
 ## Antes de empezar
@@ -29,6 +29,8 @@ Este repositorio es un mod de traducción. Tu trabajo es traducir o revisar text
 | `work_queue/` | Cola de lotes: `todo/` (por hacer), `out/` (tus respuestas), `manual/` (fallidos) |
 
 Prefijos de lote: **U** = actualización · **B** = pendientes · **R** = revisión · **N** = nombres.
+
+**No decidas tú el orden ni qué contenido es más importante.** `batch` ya emite los lotes en el orden acordado: primero lo general y compartido, luego vampiro, hombre lobo, cazadores e inquisición y, por último, el resto de líneas (wraith, fae, momias, kuei-jin, demonios…). Dentro de cada línea van antes los textos de interfaz y los cortos que se ven siempre, y los eventos largos al final. Se configura en `splat_priority` y `priority` de `tools/config.json`; si el usuario quiere otro orden, lo cambia ahí. Tradúcelos tal como salgan.
 
 ## Qué hacer según el encargo
 

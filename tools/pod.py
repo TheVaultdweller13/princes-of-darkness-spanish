@@ -346,6 +346,13 @@ def cmd_status(a):
         if p:
             per.append((p, rel, len(en.kvs())))
     print(f"Claves: {tot}  hechas: {done} ({done / tot:.1%})  pendientes: {tot - done}")
+    por_linea = Counter()
+    for p, rel, _ in per:
+        por_linea[splat_of(rel)[1]] += p
+    if por_linea:
+        print("Pendientes por línea de juego (orden en que se traducirán):")
+        for name, n in sorted(por_linea.items(), key=lambda kv: next((i for i, s2 in enumerate(CFG.get("splat_priority", []), 1) if s2["name"] == kv[0]), 0)):
+            print(f"  {n:6d}  {name}")
     print(f"Archivos con pendientes: {len(per)}  ·  con cabecera l_english (o sin archivo): {hdr_en}")
     per.sort(reverse=True)
     for p, rel, n in per[: a.top]:
@@ -518,16 +525,29 @@ def flip_headers(rels):
 
 # ---------------------------------------------------------------- lotes
 
+def splat_of(rel):
+    """Línea de juego de un archivo, según 'splat_priority' de config.json. 0 = general/compartido."""
+    low = rel.lower()
+    for i, s in enumerate(CFG.get("splat_priority", []), start=1):
+        if re.search(s["match"], low):
+            return i, s["name"]
+    return 0, "general"
+
+
 def batch_order(rel):
-    """Primero los patrones de 'priority' en orden, luego el resto, al final 'priority_last'."""
+    """Ordena por línea de juego (general primero) y, dentro de cada una, por tipo de archivo."""
     n = len(CFG["priority"])
+    cat = n
     for i, p in enumerate(CFG["priority_last"]):
         if fnmatch.fnmatch(rel, p):
-            return n + 1 + i
-    for i, p in enumerate(CFG["priority"]):
-        if fnmatch.fnmatch(rel, p):
-            return i
-    return n
+            cat = n + 1 + i
+            break
+    else:
+        for i, p in enumerate(CFG["priority"]):
+            if fnmatch.fnmatch(rel, p):
+                cat = i
+                break
+    return (splat_of(rel)[0], cat)
 
 
 PREFIX = {"pending": "B", "update": "U", "review": "R", "names": "N"}
@@ -673,6 +693,9 @@ def cmd_batch(a):
         name = next_batch_name(prefix)
         write_batch(name, a.mode, ch, gloss, a.rule or "")
     n = sum(len(c) for c in chunks)
+    if chunks and a.mode == "pending":
+        tiers = Counter(splat_of(it["rel"])[1] for ch in chunks for it in ch)
+        print("Línea de juego: " + " · ".join(f"{k} {v}" for k, v in tiers.most_common()))
     names = [p.stem for p in sorted((Q / "todo").glob(f"{prefix}*.txt"))]
     print(f"{len(chunks)} lotes creados ({n} textos únicos) en work_queue/todo"
           + (f" · lotes {prefix} en cola: {names[0]}…{names[-1]}" if names else ""))

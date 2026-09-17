@@ -131,5 +131,23 @@
     "ES_only_del_GetTitledFirstName",
     "ES_only_el_GetShortUIName",
     "ES_only_el_GetTitledFirstName"
+  ],
+  "splat_priority": [
+    {
+      "name": "vampiro",
+      "match": "vamp|cainite|clan|bloodline|blood_sorcery|tzimisce|tremere|ventrue|lasombra|brujah|malkav|nosferatu|toreador|ravnos|salubri|assamite|banuhaqim|cappadoc|giovanni|setite|baali|ashirra|primogen|coterie|masquerade|diabler|ghoul|domitor|thrall|golconda|camarilla|sabbat|anarch"
+    },
+    {
+      "name": "hombre lobo",
+      "match": "fera|garou|werewolf|umbra|gaia|wyrm|mokole|bastet|corax|ratkin|nuwisha|ananasi|gurahl|rokea|nagah|kitsune|hakken|caern|kinfolk|spirit"
+    },
+    {
+      "name": "cazadores e inquisición",
+      "match": "inquisi|hunter|pope|crusad|leopold|witchhunt"
+    },
+    {
+      "name": "otros (wraith, fae, momias, kuei-jin, demonios…)",
+      "match": "wraith|fae|faerie|changeling|mummy|mumia|kuei|wan_?xian|demon|infernal|possess|numina|sorcer|mage"
+    }
   ]
 }
