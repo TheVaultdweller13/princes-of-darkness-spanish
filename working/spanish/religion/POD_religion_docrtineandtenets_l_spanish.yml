@@ -3,17 +3,17 @@
 # Vampire Doctrines
 
  
- tenet_vengeance_of_lilith_name: "Vengeance of Lilith"
- tenet_vengeance_of_lilith_desc: "Caine's childer destroyed Lilith's garden and murdered her children. Only Toreador and Nosferatu refrained from the destruction, and covered the dead children's faces with veils as a sign of respect. Thus, they are exempt from the vengeance of Lilith's followers."
+ tenet_vengeance_of_lilith_name: "Venganza de Lilith"
+ tenet_vengeance_of_lilith_desc: "Los Chiquillos de Caín destruyeron el jardín de Lilith y asesinaron a sus hijos. Solo los Toreador y los Nosferatu se abstuvieron de la destrucción, y cubrieron los rostros de los hijos muertos con velos como muestra de respeto. Por ello, están exentos de la venganza de los seguidores de Lilith."
  
  #A passage in Revelations of the Dark Mother, which describes how (represented allegorically as the thirteen $pod_clan$ Founders) 
  
  doctrine_vampirethemasquerade_name: "Mascarada"
- doctrine_werewolf_veil_name: "The Veil"
- doctrine_vampirethemasquerade_strict_name: "Strict Masquerade"
- doctrine_werewolf_veil_shall_not_lifted_name: "Shall Not Be Lifted"
- doctrine_vampirethemasquerade_strict_desc: "The Silence of Blood is strictly enforced. Many kindred chafe under such draconian enforcement.\n\nMake not friends among the Poets, they will sing too much of you.\n\nBe not known. Seek shadows.\n\nLet not the priest, poet, or peasant see you feed. Not none of them will leave it be.\n\nWhen the Cross has a point, find your safety."
- doctrine_vampirethemasquerade_lax_name: "Lax Masquerade"
+ doctrine_werewolf_veil_name: "El Velo"
+ doctrine_vampirethemasquerade_strict_name: "Mascarada Estricta"
+ doctrine_werewolf_veil_shall_not_lifted_name: "No Se Alzará"
+ doctrine_vampirethemasquerade_strict_desc: "El Silencio de la Sangre se aplica estrictamente. Muchos Vástagos se rebelan contra tan draconiana imposición.\n\nNo hagas amigos entre los Poetas, cantarán demasiado sobre ti.\n\nNo seas conocido. Busca las sombras.\n\nNo dejes que el sacerdote, el poeta o el campesino te vean alimentarte. Ninguno de ellos lo dejará pasar.\n\nCuando la Cruz señale, busca tu seguridad."
+ doctrine_vampirethemasquerade_lax_name: "Mascarada Laxa"
  doctrine_werewolf_veil_should_not_lifted_name: "Should Not Be Lifted"
  doctrine_vampirethemasquerade_lax_desc: "Enforcement of the Silence of Blood is lax. While Kindred make efforts to conceal their existence, they also sometimes make terrible mistakes that are not punished by their elders."
  doctrine_werewolf_veil_should_not_lifted_desc: "The Veil is poetic term for the false assumption that the supernatural does not exist, which the Delirium reinforces. The Veil was formally instituted through the Concord of nine thousand years ago, which ended the Impergium. The Litany states clearly that 'The Veil Shall Not Be Lifted'. Delirium helps in keeping the Veil in place. Harming or rending the Veil means a great loss of honor among the Garou, while repairing the Veil means the opposite. In practice, the Delirium does most of the work and Garou largely need not trouble themselves about. Some tribes see it more as a guideline than a strict rule to be enforced." 
@@ -1291,7 +1291,7 @@
  
  oath_war_cb_enabled_name: "Oathbreaking: Crime"
  doctrine_parameter_oath_war_cb_enabled: "[rulers|E] have a Oath War [casus_belli|E] against [GetTrait('oathbreaker').GetName( GetPlayer )] rulers"
- masquerade_war_cb_enabled_name: "Strict Masquerade"
+ masquerade_war_cb_enabled_name: "Mascarada Estricta"
  doctrine_parameter_masquerade_war_cb_enabled: "[rulers|E] have a Masquerade War [casus_belli|E] against high masquerade exposure rulers"
  
  doctrine_vices_name: "Vices"

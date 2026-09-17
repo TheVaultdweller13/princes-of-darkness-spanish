@@ -2,12 +2,12 @@
 
 Este repositorio es un mod de traducción. Tu trabajo es traducir o revisar textos con las herramientas de `tools/`. **No traduzcas editando los `.yml` a mano:** usa siempre el flujo de lotes descrito abajo.
 
-## Normas que no se negocian
+## Normas innegociables
 
 - **Git:** no hagas `add`, `commit`, `push`, `pull`, `stash`, `reset`, `checkout` ni nada que modifique el repositorio. El usuario se encarga de git. Solo puedes usar `status`, `diff`, `log` y `show`.
-- **Idioma:** castellano de España, con la terminología oficial española de Mundo de Tinieblas (glosario en `tools/glossary.tsv`). Decisiones fijas: Hunger → Ansia (nunca Hambre); wraith → wraith (nunca Espectro); las dinastías no se traducen.
+- **Idioma:** castellano (España), con la terminología oficial española de Mundo de Tinieblas (glosario en `tools/glossary.tsv`). Decisiones fijas: Hunger → Ansia; wraith → wraith; las dinastías no se traducen excepto casos especiales (nombres históricos, por ejemplo).
 - **Tu trabajo termina en `working/spanish/`.** Nunca ejecutes `python tools/pod.py build` ni toques `spanish_translation/` (ni su `descriptor.mod`): volcar al mod y subir la versión lo hace el usuario.
-- **Carpetas intocables:** `spanish_translation/`, `simp_chinese/` (ignórala: está desactualizada), `original_text/` (la actualiza el usuario), `working/cambiar_*` (ya borradas).
+- **Carpetas intocables:** `spanish_translation/`, `simp_chinese/` (ignórala: está desactualizada), `original_text/` (la actualiza el usuario).
 - **Final de cada encargo:** haz siempre «el cierre» (`fix --dirty` + `verify`) antes de dar el resumen.
 
 ## Antes de empezar
