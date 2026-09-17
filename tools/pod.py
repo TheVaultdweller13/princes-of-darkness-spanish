@@ -1,0 +1,963 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Herramienta única para la traducción de Princes of Darkness (CK3) al castellano.
+Solo librería estándar. Ejecutar desde cualquier sitio: python tools/pod.py <orden>
+
+Órdenes:
+  status                     Progreso real por clave y estado de la cola.
+  sync [--base C] [--dry-run] [--prune]
+                             Aplica una actualización del inglés (original_text) sobre working/spanish:
+                             archivos nuevos, claves nuevas, claves con inglés cambiado, claves borradas.
+  batch [--mode pending|review|names] [--scope all|update] [--rule R] [--files GLOB] [--limit N] [--no-tm]
+                             Crea lotes para el agente traductor en work_queue/todo (y autocompleta con memoria de traducción).
+  next [--prefix U|B|R|N]    Muestra el siguiente lote pendiente (lo que tiene que hacer el agente).
+  apply [LOTE ...|--all]     Valida las salidas de work_queue/out y las escribe en working/spanish.
+  check [--files GLOB]       Informe de problemas (tokens, glosario, espacios, ¿¡, Custom ES_...).
+  build [--version X] [--sync-supported]
+                             Regenera spanish_translation/localization/spanish para publicar.
+  fix [--dry-run]            Arreglos automáticos sin IA en lo traducido (dobles espacios, GetCustom('ES_O'), "| E]").
+  glossary                   Regenera tools/glossary_mod.tsv a partir de los conceptos del mod ya traducidos.
+"""
+import argparse, fnmatch, json, re, shutil, subprocess, sys
+from collections import Counter, defaultdict
+from pathlib import Path
+
+sys.stdout.reconfigure(encoding="utf-8")
+ROOT = Path(__file__).resolve().parent.parent
+TOOLS = ROOT / "tools"
+CFG_PATH = TOOLS / "config.json"
+CFG = json.loads(CFG_PATH.read_text(encoding="utf-8"))
+EN_DIR = ROOT / CFG["en_dir"]
+ES_DIR = ROOT / CFG["es_dir"]
+Q = ROOT / CFG["queue_dir"]
+BOM = "﻿"
+
+# ---------------------------------------------------------------- parseo
+
+KV_RE = re.compile(r'^(\s*)([^\s#:"]+):(\d*)(\s*)"(.*)$')
+HDR_RE = re.compile(r'^\s*(l_\w+):\s*$')
+
+
+class Loc:
+    """Archivo de localización conservando cada línea tal cual."""
+
+    def __init__(self, path, text=None):
+        self.path = path
+        if text is None:
+            text = path.read_bytes().decode("utf-8-sig", errors="replace")
+        text = text.lstrip(BOM)
+        self.eol = "\r\n" if "\r\n" in text else "\n"
+        self.final_eol = text.endswith(("\n", "\r"))
+        self.lines = []  # dicts
+        self.header = None
+        seen = Counter()
+        for raw in text.splitlines():
+            ln = {"raw": raw, "kind": "other"}
+            m = KV_RE.match(raw)
+            h = HDR_RE.match(raw)
+            if h and self.header is None:
+                ln["kind"] = "header"
+                self.header = h.group(1)
+            elif m:
+                rest = m.group(5)
+                value, tail, unclosed = rest, "", True
+                for i in range(len(rest) - 1, -1, -1):
+                    if rest[i] == '"':
+                        after = rest[i + 1:]
+                        if after.strip() == "" or after.lstrip().startswith("#"):
+                            value, tail, unclosed = rest[:i], after, False
+                            break
+                key = m.group(2)
+                ln.update(kind="kv", indent=m.group(1), key=key, ver=m.group(3), sep=m.group(4),
+                          value=value, tail=tail, unclosed=unclosed, occ=seen[key])
+                seen[key] += 1
+            self.lines.append(ln)
+
+    def kvs(self):
+        return [l for l in self.lines if l["kind"] == "kv"]
+
+    def index(self):
+        return {(l["key"], l["occ"]): l for l in self.kvs()}
+
+    @staticmethod
+    def render(ln):
+        if ln["kind"] != "kv" or "dirty" not in ln:
+            return ln["raw"]
+        return f'{ln["indent"]}{ln["key"]}:{ln["ver"]}{ln["sep"]}"{ln["value"]}"{ln["tail"]}'
+
+    def set_value(self, ln, value):
+        ln["value"] = value
+        ln["dirty"] = True
+
+    def set_header(self, lang):
+        for ln in self.lines:
+            if ln["kind"] == "header":
+                ln["raw"] = re.sub(r"l_\w+", lang, ln["raw"], count=1)
+                self.header = lang
+                return
+
+    def text(self):
+        body = self.eol.join(self.render(l) for l in self.lines)
+        return BOM + body + (self.eol if self.final_eol else "")
+
+    def save(self, path=None):
+        path = path or self.path
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_bytes(self.text().encode("utf-8"))
+
+
+def es_rel(en_rel):
+    p = Path(en_rel)
+    return str(p.with_name(p.name.replace("l_english", "l_spanish"))).replace("\\", "/")
+
+
+def en_files():
+    return sorted(str(p.relative_to(EN_DIR)).replace("\\", "/") for p in EN_DIR.rglob("*.yml"))
+
+
+# ---------------------------------------------------------------- tokens y validación
+
+# Funciones con un argumento de texto visible (traducible): nombre → posición del texto
+DISPLAY_ARG = {"Concept": 1, "Glossary": 0, "UmbraGlossaryLocalized": 1}
+TWO_ARG_RE = re.compile(r"\[(\w+)\('([^']*)'\s*,\s*'([^']*)'\)")
+TOKEN_RE = re.compile(r"\[[^\[\]]*\]|\$[^$\s]+\$|@[\w]+!|#![\w]*|#[A-Za-z_][\w;]*|\\n")
+ES_CUSTOM_RE = re.compile(r"\[[\w.:]+\.(Get)?Custom\('(ES_\w+)'\)(\|\w+)?\]")
+# Pronombres ingleses del juego: en español se pueden omitir o añadir libremente
+GENDER_GETTER_RE = re.compile(r"\[[\w.:()']+\.(GetHerHis|GetSheHe|GetHerHim|GetHerselfHimself|GetLadyLord|GetWomanMan|GetHersHis)(\|\w*)?\]")
+
+
+def display_args(s):
+    """Textos visibles dentro de Concept/Glossary/UmbraGlossaryLocalized."""
+    return [m.group(2 + DISPLAY_ARG[m.group(1)]) for m in TWO_ARG_RE.finditer(s) if m.group(1) in DISPLAY_ARG]
+_vanilla_es = None
+
+
+def vanilla_es_customs():
+    global _vanilla_es
+    if _vanilla_es is None:
+        # Copia guardada en config por si el juego no es accesible (p. ej. entorno aislado)
+        _vanilla_es = set(CFG.get("extra_es_customs", [])) | set(CFG.get("es_customs_cache", []))
+        d = Path(CFG["vanilla_custom_loc"])
+        if d.is_dir():
+            for f in d.rglob("*.txt"):
+                _vanilla_es.update(re.findall(r"^\s*(ES_\w+)\s*=", f.read_text(encoding="utf-8-sig", errors="replace"), re.M))
+    return _vanilla_es
+
+
+def norm_token(t):
+    if t.startswith("["):
+        def wild(m):
+            if m.group(1) not in DISPLAY_ARG:
+                return m.group(0)
+            args = [m.group(2), m.group(3)]
+            args[DISPLAY_ARG[m.group(1)]] = "*"
+            return f"[{m.group(1)}('{args[0]}','{args[1]}')"
+        t = TWO_ARG_RE.sub(wild, t)
+        m = re.search(r"\|([A-Za-z]+)\]$", t)
+        if m:
+            flags = "".join(sorted(set(m.group(1)) - set("UuLl")))
+            t = t[: m.start()] + ("|" + flags if flags else "") + "]"
+    return t
+
+
+def tokens(s, es=False):
+    s = GENDER_GETTER_RE.sub("", s)
+    if es:
+        s = ES_CUSTOM_RE.sub("", s)
+    return Counter(norm_token(t) for t in TOKEN_RE.findall(s))
+
+
+def strip_markup(s, repl=" "):
+    return re.sub(r"\s+", " ", TOKEN_RE.sub(repl, s))
+
+
+def translatable(s):
+    return re.search(r"[A-Za-z]{2,}", strip_markup(s)) is not None
+
+
+def token_diff(en, es):
+    te, ts = tokens(en), tokens(es, es=True)
+    if te == ts:
+        return ""
+    msg = "tokens distintos"
+    falta, sobra = list((te - ts).elements()), list((ts - te).elements())
+    if falta:
+        msg += " | faltan: " + " ".join(falta)
+    if sobra:
+        msg += " | sobran: " + " ".join(sobra)
+    return msg
+
+
+def validate(en, es):
+    """Devuelve (texto_corregido, [errores])."""
+    errs = []
+    es = es.strip("\r\n")
+    if len(es) >= 2 and es[0] == es[-1] == '"' and not en.startswith('"'):
+        es = es[1:-1]
+    # espacios: respetar los del inglés en los extremos, quitar dobles que el inglés no tenga
+    if "  " not in en:
+        es = re.sub(r"(?<=\S) {2,}(?=\S)", " ", es)
+    lead = en[: len(en) - len(en.lstrip(" "))]
+    trail = en[len(en.rstrip(" ")):]
+    es = lead + es.strip(" ") + trail
+    if not es.strip() and en.strip():
+        errs.append("traducción vacía")
+    if "\t" in es or "\n" in es:
+        errs.append("contiene tabulador o salto de línea real (usa \\n literal)")
+    d = token_diff(en, es)
+    if d:
+        errs.append(d)
+    bad = [m.group(0) for m in ES_CUSTOM_RE.finditer(es) if m.group(1) or m.group(2) not in vanilla_es_customs()]
+    if bad:
+        errs.append("Custom de género inexistente o mal escrito (usa X.Custom('ES_OA') etc.): " + ", ".join(bad))
+    return es, errs
+
+
+# ---------------------------------------------------------------- glosario y lista de conservar
+
+def load_glossary():
+    """glossary.tsv (oficial, manda) + glossary_mod.tsv (conceptos del mod ya traducidos, generado)."""
+    rows = {}
+    for fname in ("glossary_mod.tsv", "glossary.tsv"):
+        f = TOOLS / fname
+        if not f.exists():
+            continue
+        for line in f.read_text(encoding="utf-8").splitlines():
+            if not line.strip() or line.startswith("#"):
+                continue
+            parts = line.split("\t")
+            if len(parts) < 2:
+                continue
+            en, es = parts[0].strip(), parts[1].strip()
+            flags = parts[2].strip() if len(parts) > 2 else ""
+            note = parts[3].strip() if len(parts) > 3 else ""
+            pat = re.compile(r"(?<![\w'])" + re.escape(en) + r"(?:s|es)?(?![\w])", re.I)
+            rows[en.lower()] = {"en": en, "es": es, "flags": flags, "note": note, "re": pat}
+    return sorted(rows.values(), key=lambda r: -len(r["en"]))
+
+
+def cmd_glossary(a):
+    """Regenera glossary_mod.tsv con los nombres de conceptos del mod ya traducidos."""
+    seen, out = set(), ["# GENERADO por 'pod.py glossary' desde game_POD_concepts. No editar: corrige el concepto o añade la entrada a glossary.tsv."]
+    for rel in CFG["concept_files"]:
+        en, es = load_pair(rel)
+        if not es:
+            continue
+        idx = es.index()
+        for l in en.kvs():
+            e = idx.get((l["key"], l["occ"]))
+            v = l["value"]
+            if (not l["key"].startswith("game_concept_") or l["key"].endswith(("_desc", "_possessive")) or not e
+                    or e["value"] == v or len(v) > 40 or TOKEN_RE.search(v) or v.lower() in seen
+                    or re.search(r"(ing|ed)$", v)):
+                continue
+            seen.add(v.lower())
+            out.append(f"{v}\t{e['value']}\tm\tconcepto del mod")
+    (TOOLS / "glossary_mod.tsv").write_text("\n".join(out) + "\n", encoding="utf-8")
+    print(f"glossary_mod.tsv: {len(out) - 1} términos")
+
+
+def glossary_for(texts, gloss):
+    joined = " ".join(texts)
+    out, blob = [], strip_markup(joined) + " " + " ".join(display_args(joined))
+    for g in gloss:
+        if g["re"].search(blob):
+            out.append(g)
+    return out
+
+
+def load_keep():
+    f = TOOLS / "keep_english.txt"
+    if not f.exists():
+        return set()
+    return {l.strip() for l in f.read_text(encoding="utf-8").splitlines() if l.strip() and not l.startswith("#")}
+
+
+def add_keep(keys):
+    if not keys:
+        return
+    cur = load_keep()
+    new = sorted(set(keys) - cur)
+    if new:
+        with open(TOOLS / "keep_english.txt", "a", encoding="utf-8") as fh:
+            fh.write("\n".join(new) + "\n")
+
+
+def match_any(rel, pats):
+    return any(fnmatch.fnmatch(rel, p) for p in pats)
+
+
+# ---------------------------------------------------------------- estado
+
+def load_pair(rel):
+    en = Loc(EN_DIR / rel)
+    esp = ES_DIR / es_rel(rel)
+    es = Loc(esp) if esp.exists() else None
+    return en, es
+
+
+def pending_items(files=None, keep=None):
+    """Genera (rel, key, occ, en_value) de claves sin traducir."""
+    keep = load_keep() if keep is None else keep
+    for rel in en_files():
+        if files and not match_any(rel, files):
+            continue
+        if match_any(rel, CFG.get("keep_files", [])):
+            continue
+        en, es = load_pair(rel)
+        idx = es.index() if es else {}
+        for l in en.kvs():
+            e = idx.get((l["key"], l["occ"]))
+            if e is None or (e["value"] == l["value"] and translatable(l["value"]) and l["key"] not in keep):
+                yield rel, l["key"], l["occ"], l["value"]
+
+
+def queued_ids():
+    ids = set()
+    for f in (Q / "index").glob("*.json") if (Q / "index").exists() else []:
+        for it in json.loads(f.read_text(encoding="utf-8"))["items"].values():
+            for t in it["targets"]:
+                ids.add(tuple(t))
+    return ids
+
+
+def cmd_status(a):
+    keep = load_keep()
+    tot = done = 0
+    per = []
+    hdr_en = 0
+    for rel in en_files():
+        en, es = load_pair(rel)
+        idx = es.index() if es else {}
+        if es is None or es.header != "l_spanish":
+            hdr_en += 1
+        kf = match_any(rel, CFG.get("keep_files", []))
+        p = 0
+        for l in en.kvs():
+            tot += 1
+            e = idx.get((l["key"], l["occ"]))
+            if e is None or (not kf and e["value"] == l["value"] and translatable(l["value"]) and l["key"] not in keep):
+                p += 1
+            else:
+                done += 1
+        if p:
+            per.append((p, rel, len(en.kvs())))
+    print(f"Claves: {tot}  hechas: {done} ({done / tot:.1%})  pendientes: {tot - done}")
+    print(f"Archivos con pendientes: {len(per)}  ·  con cabecera l_english (o sin archivo): {hdr_en}")
+    per.sort(reverse=True)
+    for p, rel, n in per[: a.top]:
+        print(f"  {p:6d}/{n:<6d} {rel}")
+    todo = sorted((Q / "todo").glob("*.txt")) if (Q / "todo").exists() else []
+    manual = list((Q / "manual").glob("*.txt")) if (Q / "manual").exists() else []
+    print(f"Cola: {len(todo)} lotes pendientes, {len(manual)} para revisión manual")
+
+
+# ---------------------------------------------------------------- sync
+
+def git(*args):
+    return subprocess.run(["git", "-C", str(ROOT), *args], capture_output=True, text=True, encoding="utf-8")
+
+
+def cmd_sync(a):
+    base = a.base or CFG["last_synced_en_commit"]
+    dirty = git("status", "--porcelain", "--", CFG["en_dir"]).stdout.strip()
+    if dirty and not a.dry_run:
+        sys.exit("original_text tiene cambios sin commitear: haz commit antes de sincronizar.")
+    head = git("log", "-1", "--format=%h", "--", CFG["en_dir"]).stdout.strip()
+    print(f"Sincronizando inglés {base} → {head}{'  (simulación)' if a.dry_run else ''}")
+    changed_log = {}
+    upd_files, upd_keys = [], defaultdict(list)
+    stats = Counter()
+    en_now = set(en_files())
+    for rel in sorted(en_now):
+        esp = ES_DIR / es_rel(rel)
+        if not esp.exists():
+            stats["archivos nuevos"] += 1
+            upd_files.append(rel)
+            print(f"  NUEVO  {rel}")
+            if not a.dry_run:
+                esp.parent.mkdir(parents=True, exist_ok=True)
+                shutil.copyfile(EN_DIR / rel, esp)  # conserva cabecera l_english = sin traducir
+            continue
+        r = git("show", f"{base}:{CFG['en_dir']}/{rel}")
+        old = Loc(None, r.stdout) if r.returncode == 0 else None
+        oidx = old.index() if old else {}
+        en = Loc(EN_DIR / rel)
+        es = Loc(esp)
+        eidx = es.index()
+        header_i = next((i for i, l in enumerate(es.lines) if l["kind"] == "header"), -1)
+        pos = {id(l): i for i, l in enumerate(es.lines)}
+        inserts = defaultdict(list)
+        anchor = header_i
+        touched = False
+        for l in en.kvs():
+            kid = (l["key"], l["occ"])
+            e = eidx.get(kid)
+            if e is None:
+                inserts[anchor].append({"raw": l["raw"], "kind": "other"})
+                upd_keys[rel].append(list(kid))
+                stats["claves nuevas"] += 1
+                touched = True
+                continue
+            anchor = pos[id(e)]
+            o = oidx.get(kid)
+            if o is not None and o["value"] != l["value"] and e["value"] != l["value"]:
+                if e["value"] != o["value"]:
+                    changed_log.setdefault(rel, {})[l["key"]] = {"old_en": o["value"], "old_es": e["value"]}
+                es.set_value(e, l["value"])
+                upd_keys[rel].append(list(kid))
+                stats["claves con inglés cambiado"] += 1
+                touched = True
+        drop = set()
+        for kid, e in eidx.items():
+            if kid not in en.index():
+                if kid in oidx:
+                    drop.add(pos[id(e)])
+                    stats["claves borradas"] += 1
+                    touched = True
+                else:
+                    stats["claves solo en español (se dejan)"] += 1
+        if touched:
+            print(f"  CAMBIA {rel}")
+            new_lines = list(inserts.get(-1, []))
+            for i, ln in enumerate(es.lines):
+                if i not in drop:
+                    new_lines.append(ln)
+                new_lines.extend(inserts.get(i, []))
+            es.lines = new_lines
+            if not a.dry_run:
+                es.save()
+    es_expected = {es_rel(r) for r in en_now}
+    for p in sorted(ES_DIR.rglob("*.yml")):
+        rel_es = str(p.relative_to(ES_DIR)).replace("\\", "/")
+        if rel_es not in es_expected:
+            stats["archivos que ya no existen en inglés"] += 1
+            print(f"  SOBRA  {rel_es}{'  → movido a work_queue/removed' if a.prune and not a.dry_run else ''}")
+            if a.prune and not a.dry_run:
+                dst = Q / "removed" / rel_es
+                dst.parent.mkdir(parents=True, exist_ok=True)
+                shutil.move(str(p), dst)
+    for k, v in stats.items():
+        print(f"{k}: {v}")
+    if not a.dry_run:
+        f = Q / "changed.json"
+        Q.mkdir(exist_ok=True)
+        prev = json.loads(f.read_text(encoding="utf-8")) if f.exists() else {}
+        for rel, d in changed_log.items():
+            prev.setdefault(rel, {}).update(d)
+        f.write_text(json.dumps(prev, ensure_ascii=False, indent=1), encoding="utf-8")
+        lf = Q / "last_sync.json"
+        last = json.loads(lf.read_text(encoding="utf-8")) if lf.exists() else {"new_files": [], "keys": {}}
+        last["new_files"] = sorted(set(last["new_files"]) | set(upd_files))
+        for rel, ks in upd_keys.items():
+            last["keys"][rel] = sorted({tuple(k) for k in last["keys"].get(rel, [])} | {tuple(k) for k in ks})
+        last["commits"] = f"{base}..{head}"
+        lf.write_text(json.dumps(last, ensure_ascii=False, indent=1), encoding="utf-8")
+        CFG["last_synced_en_commit"] = head
+        CFG_PATH.write_text(json.dumps(CFG, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+        print(f"Base actualizada a {head} en tools/config.json")
+
+
+# ---------------------------------------------------------------- memoria de traducción
+
+def build_tm():
+    votes = defaultdict(Counter)
+    for rel in en_files():
+        en, es = load_pair(rel)
+        if not es or es.header != "l_spanish":
+            continue
+        idx = es.index()
+        for l in en.kvs():
+            e = idx.get((l["key"], l["occ"]))
+            if e and e["value"] != l["value"] and translatable(l["value"]):
+                votes[l["value"]][e["value"]] += 1
+    return {k: c.most_common(1)[0][0] for k, c in votes.items()}
+
+
+def write_values(assign, keep_keys=()):
+    """assign: {(rel, key, occ): (valor_esperado_actual, nuevo)} → escribe y devuelve archivos tocados."""
+    byfile = defaultdict(list)
+    for (rel, key, occ), v in assign.items():
+        byfile[rel].append((key, occ, *v))
+    touched, stale = [], 0
+    for rel, items in byfile.items():
+        esp = ES_DIR / es_rel(rel)
+        es = Loc(esp)
+        idx = es.index()
+        ok = False
+        for key, occ, expect, new in items:
+            e = idx.get((key, occ))
+            if e is None or e["value"] != expect:
+                stale += 1
+                continue
+            if new != e["value"]:
+                es.set_value(e, new)
+                ok = True
+        if ok:
+            es.save()
+            touched.append(rel)
+    add_keep(keep_keys)
+    return touched, stale
+
+
+def flip_headers(rels):
+    keep = load_keep()
+    for rel in set(rels):
+        esp = ES_DIR / es_rel(rel)
+        es = Loc(esp)
+        if es.header == "l_spanish":
+            continue
+        if not any(True for _ in pending_items([rel], keep)):
+            es.set_header("l_spanish")
+            es.save()
+            print(f"  ✔ archivo completo, cabecera → l_spanish: {rel}")
+
+
+# ---------------------------------------------------------------- lotes
+
+def batch_order(rel):
+    """Primero los patrones de 'priority' en orden, luego el resto, al final 'priority_last'."""
+    n = len(CFG["priority"])
+    for i, p in enumerate(CFG["priority_last"]):
+        if fnmatch.fnmatch(rel, p):
+            return n + 1 + i
+    for i, p in enumerate(CFG["priority"]):
+        if fnmatch.fnmatch(rel, p):
+            return i
+    return n
+
+
+PREFIX = {"pending": "B", "update": "U", "review": "R", "names": "N"}
+
+
+def next_batch_name(prefix="B"):
+    """Prefijos: U = actualización, B = pendientes, R = revisión, N = nombres. Numeración común."""
+    Q.mkdir(exist_ok=True)
+    existing = [int(m.group(1)) for p in Q.rglob("*.*") if (m := re.match(r"[BURN](\d{4})", p.name))]
+    return f"{prefix}{(max(existing) + 1 if existing else 1):04d}"
+
+
+HEAD_PENDING = """# LOTE {name} · MODO TRADUCIR · {n} elementos
+# Lee tools/TRADUCIR_LOTE.md si no lo has leído. Traduce cada EN al castellano de España.
+# Salida: crea work_queue/out/{name}.txt con UNA línea por elemento:  <número> = <traducción>
+# Luego ejecuta:  python tools/pod.py apply {name}
+"""
+HEAD_NAMES = """# LOTE {name} · MODO NOMBRES · {n} elementos
+# Lee tools/TRADUCIR_LOTE.md (sección «Modo NOMBRES»). Casi todos los nombres se quedan igual.
+# Salida: crea work_queue/out/{name}.txt SOLO con los que tengan forma española habitual:  <número> = <nombre en español>
+#         (si no cambias ninguno, escribe una única línea:  # sin cambios)
+# Luego ejecuta:  python tools/pod.py apply {name}
+"""
+HEAD_REVIEW = """# LOTE {name} · MODO REVISAR ({rule}) · {n} elementos
+# Lee tools/TRADUCIR_LOTE.md si no lo has leído. Corrige la traducción ES solo si hace falta.
+# Salida: crea work_queue/out/{name}.txt SOLO con las líneas que cambies:  <número> = <traducción corregida>
+#         (si no cambias nada, escribe una única línea:  # sin cambios)
+# Luego ejecuta:  python tools/pod.py apply {name}
+"""
+
+
+def write_batch(name, mode, items, gloss, rule=""):
+    """items: lista de dicts {en, targets, key, rel, prev_en?, prev_es?, es?, why?}"""
+    for d in ("todo", "index", "out", "done"):
+        (Q / d).mkdir(parents=True, exist_ok=True)
+    head = {"pending": HEAD_PENDING, "review": HEAD_REVIEW, "names": HEAD_NAMES}[mode].format(name=name, n=len(items), rule=rule)
+    g = glossary_for([i["en"] for i in items], gloss) if mode != "names" else []
+    body = [head]
+    if g:
+        body.append("# GLOSARIO OBLIGATORIO (inglés = español):")
+        for r in g:
+            body.append(f"#   {r['en']} = {r['es']}" + (f"   ({r['note']})" if r["note"] else ""))
+    index = {}
+    cur = None
+    for n, it in enumerate(items, 1):
+        if it["rel"] != cur:
+            cur = it["rel"]
+            body.append(f"\n## archivo: {cur}")
+        if mode == "names":
+            body.append(f"{n}: {it['en']}")
+            index[str(n)] = {"en": it["en"], "expect": it["en"], "targets": it["targets"], "tries": it.get("tries", 0)}
+            continue
+        body.append(f"\n{n} | clave: {it['key']}" + (f"  (+{len(it['targets']) - 1} iguales)" if len(it["targets"]) > 1 else ""))
+        if it.get("why"):
+            body.append(f"MOTIVO: {it['why']}")
+        if it.get("prev_en"):
+            body.append(f"EN-ANTIGUO: {it['prev_en']}")
+            body.append(f"ES-ANTIGUO: {it['prev_es']}")
+        body.append(f"EN: {it['en']}")
+        if mode == "review":
+            body.append(f"ES: {it['es']}")
+        index[str(n)] = {"en": it["en"], "expect": it["es"] if mode != "pending" else it["en"],
+                         "targets": it["targets"], "tries": it.get("tries", 0)}
+    (Q / "todo" / f"{name}.txt").write_text("\n".join(body) + "\n", encoding="utf-8")
+    (Q / "index" / f"{name}.json").write_text(json.dumps({"mode": mode, "items": index}, ensure_ascii=False, indent=1), encoding="utf-8")
+
+
+def chunk(items, max_items=None):
+    max_items = max_items or CFG["batch_max_items"]
+    out, cur, size = [], [], 0
+    for it in items:
+        c = len(it["en"]) + len(it.get("es", "")) + len(it.get("prev_es", ""))
+        if cur and (len(cur) >= max_items or size + c > CFG["batch_max_chars"]):
+            out.append(cur)
+            cur, size = [], 0
+        cur.append(it)
+        size += c
+    if cur:
+        out.append(cur)
+    return out
+
+
+def cmd_batch(a):
+    files = [a.files] if a.files else None
+    gloss = load_glossary()
+    if a.mode == "names":
+        busy = queued_ids()
+        groups = {}
+        for rel in en_files():
+            if not match_any(rel, CFG["names_files"]):
+                continue
+            en, es = load_pair(rel)
+            idx = es.index() if es else {}
+            for l in en.kvs():
+                e = idx.get((l["key"], l["occ"]))
+                if not e or e["value"] != l["value"] or not translatable(l["value"]) or (rel, l["key"], l["occ"]) in busy:
+                    continue
+                g = groups.setdefault(l["value"], {"rel": rel, "key": l["key"], "en": l["value"], "es": l["value"], "targets": []})
+                g["targets"].append([rel, l["key"], l["occ"]])
+        items = list(groups.values())
+    elif a.mode == "review":
+        items = [dict(it, targets=[[it["rel"], it["key"], it["occ"]]]) for it in check_items(files, a.rule)]
+        items = [i for i in items if tuple(i["targets"][0]) not in queued_ids()]
+    else:
+        pend = list(pending_items(files))
+        if a.scope == "update":
+            lf = Q / "last_sync.json"
+            if not lf.exists():
+                sys.exit("No hay registro de actualización (work_queue/last_sync.json): ejecuta antes 'sync'.")
+            last = json.loads(lf.read_text(encoding="utf-8"))
+            newf = set(last["new_files"])
+            ks = {(rel, k, o) for rel, lst in last["keys"].items() for k, o in lst}
+            pend = [p for p in pend if p[0] in newf or (p[0], p[1], p[2]) in ks]
+        busy = queued_ids()
+        pend = [p for p in pend if (p[0], p[1], p[2]) not in busy]
+        if not a.no_tm:
+            tm = build_tm()
+            assign = {(r, k, o): (v, tm[v]) for r, k, o, v in pend if v in tm}
+            if assign:
+                touched, _ = write_values(assign)
+                print(f"Memoria de traducción: {len(assign)} claves rellenadas sin IA")
+                flip_headers(touched)
+                pend = [p for p in pend if (p[0], p[1], p[2]) not in assign]
+        changed = json.loads((Q / "changed.json").read_text(encoding="utf-8")) if (Q / "changed.json").exists() else {}
+        groups = {}
+        for rel, key, occ, v in sorted(pend, key=lambda p: batch_order(p[0])):
+            if v in groups:
+                groups[v]["targets"].append([rel, key, occ])
+                continue
+            it = {"rel": rel, "key": key, "en": v, "targets": [[rel, key, occ]]}
+            c = changed.get(rel, {}).get(key)
+            if c:
+                it["prev_en"], it["prev_es"] = c["old_en"], c["old_es"]
+            groups[v] = it
+        items = list(groups.values())
+    if a.limit:
+        items = items[: a.limit * CFG["batch_max_items"]]
+    chunks = chunk(items, CFG["names_batch_max_items"] if a.mode == "names" else None)
+    if a.limit:
+        chunks = chunks[: a.limit]
+    prefix = PREFIX["update" if a.scope == "update" and a.mode == "pending" else a.mode]
+    for ch in chunks:
+        name = next_batch_name(prefix)
+        write_batch(name, a.mode, ch, gloss, a.rule or "")
+    n = sum(len(c) for c in chunks)
+    names = [p.stem for p in sorted((Q / "todo").glob(f"{prefix}*.txt"))]
+    print(f"{len(chunks)} lotes creados ({n} textos únicos) en work_queue/todo"
+          + (f" · lotes {prefix} en cola: {names[0]}…{names[-1]}" if names else ""))
+    if chunks:
+        print(f"Siguiente paso: python tools/pod.py next --prefix {prefix}")
+
+
+def cmd_next(a):
+    todo = sorted((Q / "todo").glob(f"{a.prefix or ''}*.txt")) if (Q / "todo").exists() else []
+    if not todo:
+        print("NO QUEDAN LOTES" + (f" CON PREFIJO {a.prefix}" if a.prefix else ""))
+        return
+    p = todo[0]
+    print(f"SIGUIENTE: {p.relative_to(ROOT).as_posix()}  (quedan {len(todo)})")
+    if a.show:
+        print(p.read_text(encoding="utf-8"))
+
+
+OUT_RE = re.compile(r"^\s*(\d+)\s*=\s?(.*)$")
+
+
+class QueueLock:
+    """Bloqueo entre procesos para que varios agentes puedan aplicar a la vez."""
+
+    def __enter__(self):
+        import os, time
+        Q.mkdir(exist_ok=True)
+        self.p = Q / ".lock"
+        for _ in range(600):
+            try:
+                self.fd = os.open(self.p, os.O_CREAT | os.O_EXCL | os.O_WRONLY)
+                return self
+            except FileExistsError:
+                if time.time() - self.p.stat().st_mtime > 300:
+                    self.p.unlink(missing_ok=True)
+                time.sleep(0.5)
+        sys.exit("No se pudo obtener el bloqueo de work_queue/.lock")
+
+    def __exit__(self, *exc):
+        import os
+        os.close(self.fd)
+        self.p.unlink(missing_ok=True)
+
+
+def cmd_apply(a):
+    with QueueLock():
+        _apply(a)
+
+
+def _apply(a):
+    names = a.names
+    if a.all:
+        names = sorted(p.stem for p in (Q / "out").glob("*.txt"))
+    gloss = load_glossary()
+    for name in names:
+        idxf = Q / "index" / f"{name}.json"
+        outf = Q / "out" / f"{name}.txt"
+        if not idxf.exists() or not outf.exists():
+            print(f"{name}: falta el índice o la salida ({outf.relative_to(ROOT).as_posix()})")
+            continue
+        meta = json.loads(idxf.read_text(encoding="utf-8"))
+        items = meta["items"]
+        got = {}
+        for line in outf.read_text(encoding="utf-8-sig").splitlines():
+            m = OUT_RE.match(line)
+            if m:
+                got[m.group(1)] = m.group(2)
+        assign, keep, bad = {}, [], []
+        for n, it in items.items():
+            if n not in got:
+                if meta["mode"] == "pending":
+                    bad.append((n, it, "falta la línea de este número en la salida"))
+                continue
+            es, errs = validate(it["en"], got[n])
+            if errs:
+                bad.append((n, it, "; ".join(errs), got[n]))
+                continue
+            for t in it["targets"]:
+                assign[tuple(t)] = (it["expect"], es)
+            if meta["mode"] == "pending" and es == it["en"]:
+                keep.extend(t[1] for t in it["targets"])
+        touched, stale = write_values(assign, keep)
+        flip_headers(touched)
+        print(f"{name}: {len(assign)} claves escritas, {len(bad)} rechazadas, {stale} ya no coincidían (omitidas)")
+        for d in ("done",):
+            shutil.move(str(Q / "todo" / f"{name}.txt"), Q / d / f"{name}.txt") if (Q / "todo" / f"{name}.txt").exists() else None
+            shutil.move(str(outf), Q / d / f"{name}.out.txt")
+            shutil.move(str(idxf), Q / d / f"{name}.json")
+        if bad:
+            retry, manual = [], []
+            for b in bad:
+                n, it, why = b[0], b[1], b[2]
+                t0 = it["targets"][0]
+                rec = {"rel": t0[0], "key": t0[1], "en": it["en"], "es": it["expect"], "targets": it["targets"],
+                       "tries": it["tries"] + 1,
+                       "why": f"RECHAZADO ({why})" + (f" · tu texto fue: {b[3]}" if len(b) > 3 else "")}
+                (manual if rec["tries"] >= CFG["max_tries"] else retry).append(rec)
+                print(f"   ✘ {n} {t0[1]}: {why}")
+            if retry:
+                rn = next_batch_name(name[0])
+                write_batch(rn, meta["mode"], retry, gloss, "reintento")
+                print(f"   → reintento en lote {rn}")
+            if manual:
+                (Q / "manual").mkdir(exist_ok=True)
+                mf = Q / "manual" / f"{name}.json"
+                mf.write_text(json.dumps(manual, ensure_ascii=False, indent=1), encoding="utf-8")
+                print(f"   → {len(manual)} para revisión manual en {mf.relative_to(ROOT).as_posix()}")
+
+
+# ---------------------------------------------------------------- check / revisión
+
+def check_items(files=None, only=None):
+    full = load_glossary()
+    gloss = [g for g in full if "l" in g["flags"]]
+    keep_display = {g["en"].lower() for g in full if g["en"].lower() == g["es"].lower()} | {k.lower() for k in CFG["keep_display"]}
+    customs = vanilla_es_customs()
+    for rel in en_files():
+        if files and not match_any(rel, files):
+            continue
+        en, es = load_pair(rel)
+        if not es or es.header != "l_spanish":
+            continue
+        idx = es.index()
+        for l in en.kvs():
+            e = idx.get((l["key"], l["occ"]))
+            if not e or e["value"] == l["value"]:
+                continue
+            ev, sv = l["value"], e["value"]
+            why = []
+            if only in (None, "tokens"):
+                d = token_diff(ev, sv)
+                if d:
+                    why.append(d.replace("|", "·"))
+            if only in (None, "custom"):
+                bad = [m.group(0) for m in ES_CUSTOM_RE.finditer(sv) if m.group(1) or m.group(2) not in customs]
+                if bad:
+                    why.append("Custom inexistente: " + ",".join(bad))
+            if only in (None, "spaces") and ("  " in sv and "  " not in ev or re.search(r"\s[,.;:](?!\.)", strip_markup(sv, "X")) and not re.search(r"\s[,.;:]", strip_markup(ev, "X"))):
+                why.append("espacios sobrantes")
+            if only in (None, "punct"):
+                plain = strip_markup(sv)
+                if plain.count("?") > plain.count("¿") or plain.count("!") > plain.count("¡"):
+                    why.append("falta ¿ o ¡")
+            if only in (None, "glossary"):
+                pe, ps = strip_markup(ev), strip_markup(sv).lower()
+                for g in gloss:
+                    if g["re"].search(pe) and g["es"].lower() not in ps:
+                        why.append(f"glosario: {g['en']} → {g['es']}")
+                        break
+            if only in (None, "display"):
+                same = [d for d in display_args(sv) if d in display_args(ev) and translatable(d) and d.lower() not in keep_display]
+                if same:
+                    why.append("texto de Glossary/Concept sin traducir: " + ", ".join(sorted(set(same))))
+            if only in (None, "english"):
+                ps = strip_markup(sv)
+                for w in CFG["english_leftovers"]:
+                    if re.search(r"(?<![\w'])" + re.escape(w) + r"(?![\w'])", ps):
+                        why.append(f"palabra inglesa: {w}")
+                        break
+            if why:
+                yield {"rel": rel, "key": l["key"], "occ": l["occ"], "en": ev, "es": sv, "why": "; ".join(why)}
+
+
+def cmd_check(a):
+    files = [a.files] if a.files else None
+    cnt = Counter()
+    ex = defaultdict(list)
+    for it in check_items(files, a.rule):
+        for w in it["why"].split("; "):
+            k = w.split(":")[0]
+            cnt[k] += 1
+            if len(ex[k]) < a.examples:
+                ex[k].append(f"{it['rel']} · {it['key']}\n      EN: {it['en'][:150]}\n      ES: {it['es'][:150]}\n      ({w})")
+    for k, v in cnt.most_common():
+        print(f"== {k}: {v}")
+        for e in ex[k]:
+            print("   " + e)
+
+
+# ---------------------------------------------------------------- build
+
+def cmd_build(a):
+    pub = ROOT / CFG["publish_dir"]
+    stats = Counter()
+    wanted = set()
+    for rel in en_files():
+        dst = pub / es_rel(rel)
+        wanted.add(dst.resolve())
+        src = ES_DIR / es_rel(rel)
+        es = Loc(src) if src.exists() else None
+        if es and es.header == "l_spanish":
+            en_idx = Loc(EN_DIR / rel).index()
+            data = es.text()
+            missing = [k for k in en_idx if k not in es.index()]
+            if missing:
+                stats["claves que faltaban (rellenas con inglés)"] += len(missing)
+                es_lines = es.lines + [{"raw": en_idx[k]["raw"], "kind": "other"} for k in missing]
+                es.lines = es_lines
+                data = es.text()
+            stats["traducidos"] += 1
+        else:
+            en = Loc(EN_DIR / rel)
+            en.set_header("l_spanish")
+            data = en.text()
+            stats["en inglés (pendientes)"] += 1
+        dst.parent.mkdir(parents=True, exist_ok=True)
+        if not dst.exists() or dst.read_bytes() != data.encode("utf-8"):
+            dst.write_bytes(data.encode("utf-8"))
+            stats["archivos escritos"] += 1
+    for p in pub.rglob("*.yml"):
+        if p.resolve() not in wanted:
+            stats["sobrantes borrados"] += 1
+            p.unlink()
+    desc = ROOT / CFG["publish_descriptor"]
+    d = desc.read_text(encoding="utf-8")
+    if a.version:
+        d = re.sub(r'^version="[^"]*"', f'version="{a.version}"', d, flags=re.M)
+    if a.sync_supported:
+        wp = Path(CFG["workshop_descriptor"])
+        if wp.exists():
+            sv = re.search(r'supported_version="([^"]*)"', wp.read_text(encoding="utf-8")).group(1)
+            d = re.sub(r'supported_version="[^"]*"', f'supported_version="{sv}"', d)
+        else:
+            print(f"AVISO: no encuentro {wp}; supported_version sin cambiar (díselo al usuario)")
+    desc.write_text(d, encoding="utf-8")
+    for k, v in stats.items():
+        print(f"{k}: {v}")
+    print(re.sub(r"\n\s*", " · ", d.strip()))
+
+
+
+FIXES = [
+    ("GetCustom('ES_O') → Custom('ES_OA')", re.compile(r"\.GetCustom\('ES_O'\)"), ".Custom('ES_OA')"),
+    ("flag con espacio '| E]'", re.compile(r"\|\s+([A-Za-z]+)\]"), r"|\1]"),
+]
+
+
+def cmd_fix(a):
+    cnt = Counter()
+    for rel in en_files():
+        en, es = load_pair(rel)
+        if not es:
+            continue
+        idx, dirty = es.index(), False
+        for l in en.kvs():
+            e = idx.get((l["key"], l["occ"]))
+            if not e or e["value"] == l["value"]:
+                continue
+            v = e["value"]
+            for name, rx, rep in FIXES:
+                v, n = rx.subn(rep, v)
+                cnt[name] += n
+            if "  " not in l["value"]:
+                v, n = re.subn(r"(?<=\S) {2,}(?=\S)", " ", v)
+                cnt["dobles espacios"] += n
+            if v != e["value"]:
+                es.set_value(e, v)
+                dirty = True
+        if dirty and not a.dry_run:
+            es.save()
+    for k, v in cnt.items():
+        print(f"{k}: {v}{'  (simulación)' if a.dry_run else ''}")
+
+
+RULES = ["tokens", "custom", "spaces", "punct", "glossary", "display", "english"]
+
+# ---------------------------------------------------------------- main
+
+def main():
+    ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
+    sp = ap.add_subparsers(dest="cmd", required=True)
+    s = sp.add_parser("status"); s.add_argument("--top", type=int, default=25)
+    s = sp.add_parser("sync"); s.add_argument("--base"); s.add_argument("--dry-run", action="store_true"); s.add_argument("--prune", action="store_true")
+    s = sp.add_parser("batch"); s.add_argument("--mode", choices=["pending", "review", "names"], default="pending")
+    s.add_argument("--rule", choices=RULES)
+    s.add_argument("--files"); s.add_argument("--limit", type=int); s.add_argument("--no-tm", action="store_true")
+    s.add_argument("--scope", choices=["all", "update"], default="all", help="update = solo lo que trajo el último sync")
+    s = sp.add_parser("next"); s.add_argument("--show", action="store_true"); s.add_argument("--prefix", choices=list("BURN"))
+    s = sp.add_parser("apply"); s.add_argument("names", nargs="*"); s.add_argument("--all", action="store_true")
+    s = sp.add_parser("check"); s.add_argument("--files"); s.add_argument("--rule", choices=RULES); s.add_argument("--examples", type=int, default=3)
+    s = sp.add_parser("build"); s.add_argument("--version"); s.add_argument("--sync-supported", action="store_true")
+    sp.add_parser("glossary")
+    s = sp.add_parser("fix"); s.add_argument("--dry-run", action="store_true")
+    a = ap.parse_args()
+    {"status": cmd_status, "sync": cmd_sync, "batch": cmd_batch, "next": cmd_next, "apply": cmd_apply,
+     "check": cmd_check, "build": cmd_build, "glossary": cmd_glossary, "fix": cmd_fix}[a.cmd](a)
+
+
+if __name__ == "__main__":
+    main()
