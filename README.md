@@ -95,6 +95,23 @@ El agente termina siempre con el cierre (`fix --dirty`, `verify` y un resumen) y
 - **Con Haiku:** un máximo de 15 lotes por sesión; para seguir, sesión nueva.
 - **Con un modelo mayor:** puede preparar los lotes y repartir rangos entre subagentes Haiku en paralelo (`apply` bloquea la cola).
 
+### Agente local (Jan)
+
+`tools/local_agent.py` hace el bucle de `TRADUCIR_LOTE.md` con un modelo local, sin que este tenga que ejecutar órdenes: pide el lote con `next`, envía `TRADUCIR_LOTE.md` y el lote al modelo, guarda la respuesta en `work_queue/out/` y ejecuta `apply`. Los rechazos siguen el camino de siempre (reintento → `manual/`).
+
+**Lo más cómodo:** `python tools/menu.py`. Es un menú de consola (Actualizar · Traducir pendientes · Corregir · Seguir con la cola · Estado) que hace los pasos 3 y 4 por ti: prepara los lotes, comprueba que Jan responde, te deja elegir el modelo de una lista (y descarga de Jan los demás que estén cargados, para no ocupar la GPU), lanza el agente y termina con el cierre. Lo de abajo es lo que hace por dentro.
+
+1. **Una vez, en Jan:** en la configuración del modelo (Qwen3-14B), *Context Size* = 16384. En Ajustes → llama.cpp, *Parallel Sequences* = 1 y *Unified KV Cache* activado (Jan reserva un hueco extra para sus tareas internas y, sin caché unificada, cada petición solo tendría la mitad del contexto).
+2. **Arrancar:** activa Ajustes → Local API Server (127.0.0.1:1337). Con el menú no hace falta cargar el modelo a mano. Sin el menú, carga uno (y solo uno): el script usa el que esté cargado y se niega a seguir si hay varios, porque Jan carga cualquier modelo que se le pida aunque ya haya otro en marcha.
+3. **Preparar lotes:** igual que siempre (`sync` / `batch`, ver arriba).
+4. **Traducir:** `python tools/local_agent.py --prefix B --limit 10 --close`
+   - `--dry-run`: traduce el siguiente lote y lo muestra sin guardar nada.
+   - `--close`: hace «el cierre» (`fix --dirty`, `verify --batch`, una pasada R y `status`).
+   - `--model`: forzar un modelo concreto de Jan. `--url`: otro servidor compatible con OpenAI.
+5. **(Usuario)** Revisa el diff de `working/spanish` con más cuidado que con Claude: un modelo de 14B acierta el formato, pero comete más errores de estilo, de concordancia y de terminología.
+
+Si un lote no cabe en el contexto, el script se detiene con el error del servidor y el lote se queda en `todo/`.
+
 ## Guía de uso rápida
 
 Todas las órdenes se ejecutan desde la raíz del repositorio (`python tools/pod.py -h` para la ayuda).

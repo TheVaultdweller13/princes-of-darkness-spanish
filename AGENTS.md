@@ -24,6 +24,7 @@ Este repositorio es un mod de traducción. Tu trabajo es traducir o revisar text
 | `working/spanish/` | Traducción de trabajo. Cabecera `l_english` = archivo aún sin traducir |
 | `spanish_translation/` | Mod para Steam. **No lo toques**: lo genera el usuario |
 | `tools/pod.py` | Herramienta única: `python tools/pod.py -h` |
+| `tools/local_agent.py`, `tools/menu.py` | Bucle de lotes con un modelo local (Jan) y su menú. Los lanza el usuario; tú no los necesitas |
 | `tools/TRADUCIR_LOTE.md` | **Cómo traducir un lote** (reglas, marcas del juego, género). Léelo antes de traducir |
 | `README.md` | Explicación completa del flujo (para personas) |
 | `work_queue/` | Cola de lotes: `todo/` (por hacer), `out/` (tus respuestas), `manual/` (fallidos) |
