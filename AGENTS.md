@@ -5,7 +5,7 @@ Este repositorio es un mod de traducción. Tu trabajo es traducir o revisar text
 ## Normas innegociables
 
 - **Git:** no hagas `add`, `commit`, `push`, `pull`, `stash`, `reset`, `checkout` ni nada que modifique el repositorio. El usuario se encarga de git. Solo puedes usar `status`, `diff`, `log` y `show`.
-- **Idioma:** castellano (España), con la terminología oficial española de Mundo de Tinieblas (glosario en `tools/glossary.tsv`). Decisiones fijas: Hunger → Ansia; wraith → wraith; las dinastías no se traducen excepto casos especiales (nombres históricos, por ejemplo).
+- **Idioma:** castellano (España), con la terminología oficial española de Mundo de Tinieblas (glosario en `tools/glossary.tsv`). Decisiones fijas: el Hunger vampírico (la necesidad de sangre) → Ansia; wraith → wraith (Spectre, que es otra criatura, sí es Espectro); nombres de personajes y dinastías sin traducir, salvo los históricos con forma castellana asentada.
 - **Tu trabajo termina en `working/spanish/`.** Nunca ejecutes `python tools/pod.py build` ni toques `spanish_translation/` (ni su `descriptor.mod`): volcar al mod y subir la versión lo hace el usuario.
 - **Carpetas intocables:** `spanish_translation/`, `simp_chinese/` (ignórala: está desactualizada), `original_text/` (la actualiza el usuario).
 - **Final de cada encargo:** haz siempre «el cierre» (`fix --dirty` + `verify`) antes de dar el resumen.
@@ -46,7 +46,7 @@ También se pedirá como «los nuevos archivos», «lo nuevo», «la actualizaci
 
 ### «Traduce pendientes» (opcional: de un archivo o carpeta concretos)
 1. `python tools/pod.py status`
-2. `python tools/pod.py batch [--files "traits/*"] [--limit N]`
+2. `python tools/pod.py batch [--limit N]`. Usa `--files "<patrón>"` solo si el usuario nombra una zona concreta; si no, deja que `batch` siga el orden de prioridad.
 3. El bucle con prefijo **B**.
 
 ### «Revisa / mejora lo traducido» (opcional: una regla o unos archivos)
@@ -55,7 +55,7 @@ También se pedirá como «los nuevos archivos», «lo nuevo», «la actualizaci
 3. `python tools/pod.py batch --mode review --rule R [--files …] [--limit N]`
 4. El bucle con prefijo **R**. Devuelve solo las líneas que cambies.
 
-### «Adapta los nombres de personajes»
+### «Adapta los nombres de personajes y dinastías»
 1. `python tools/pod.py batch --mode names`
 2. El bucle con prefijo **N** (sección «Modo NOMBRES» de `tools/TRADUCIR_LOTE.md`).
 
@@ -72,4 +72,4 @@ También se pedirá como «los nuevos archivos», «lo nuevo», «la actualizaci
 
 ## Si eres un modelo orquestador
 
-Puedes preparar los lotes (pasos de `sync`, `batch` y `check`) y repartir el bucle entre subagentes baratos, asignando rangos concretos de lotes (p. ej. `U0001`–`U0010`). `apply` bloquea la cola, así que pueden trabajar en paralelo. Lo que acabe en `work_queue/manual/` resuélvelo tú editando y aplicando un lote de reintento, o déjalo anotado para el usuario.
+Puedes preparar los lotes (pasos de `sync`, `batch` y `check`) y repartir el bucle entre subagentes baratos, asignando rangos concretos de lotes (p. ej. `U0001`–`U0010`). `apply` bloquea la cola, así que pueden trabajar en paralelo. El cierre hazlo tú, una sola vez, cuando hayan terminado todos. Lo que acabe en `work_queue/manual/` (JSON con el texto, el motivo del rechazo y el intento fallido) no se reintenta solo: resúmelo para el usuario.

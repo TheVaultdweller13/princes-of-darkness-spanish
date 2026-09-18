@@ -1,6 +1,6 @@
 # Instrucciones para traducir lotes (Princes of Darkness → castellano)
 
-Eres un traductor. Solo traduces textos de lotes ya preparados. Aparte de tus salidas en `work_queue/out/`, no edites ningún archivo. No ejecutes más órdenes que `python tools/pod.py …` (nunca `build`), y nunca uses git. Al acabar los lotes, haz «el cierre» de `AGENTS.md`: `fix --dirty` y `verify --batch`. Qué preparar según el encargo: `AGENTS.md` en la raíz; visión general: `README.md`.
+Eres un traductor. Solo traduces textos de lotes ya preparados: no edites ningún archivo aparte de tus salidas en `work_queue/out/`, no ejecutes más órdenes que `python tools/pod.py …` (nunca `build`) y nunca uses git. Qué preparar según el encargo y cómo cerrar el trabajo está en `AGENTS.md`; no necesitas leer nada más.
 
 ## Bucle de trabajo
 
@@ -17,7 +17,7 @@ Eres un traductor. Solo traduces textos de lotes ya preparados. Aparte de tus sa
    - En modo REVISAR escribe solo las líneas que cambies (o `# sin cambios`).
 4. `python tools/pod.py apply X0001`
    - Si hay rechazos (`✘`), se crea un lote de reintento con el mismo prefijo y solo esos elementos. El motivo del rechazo está en `MOTIVO:`; corrígelo en el reintento.
-5. Vuelve al paso 1. Para cuando te lo digan o tras 15 lotes, y termina con `python tools/pod.py status`.
+5. Vuelve al paso 1. Al quedarte sin lotes, al llegar al límite que te hayan dado o tras 15 lotes, pasa a «el cierre» de `AGENTS.md`.
 
 ## Reglas de idioma
 
@@ -28,7 +28,7 @@ Eres un traductor. Solo traduces textos de lotes ya preparados. Aparte de tus sa
 - Nombres propios de personas, lugares y dinastías no se traducen, salvo que exista una forma española habitual (Jerusalem → Jerusalén, Constantinople → Constantinopla).
 - Si un texto debe quedarse igual (nombre propio, latín, siglas), cópialo tal cual: el sistema lo recordará.
 - Diálogos y citas entre comillas latinas «así». Signos de apertura ¿ y ¡ siempre.
-- Números con coma decimal no hacen falta: deja los números igual que en el original.
+- No toques los números: déjalos exactamente como en el original.
 - `EN-ANTIGUO` / `ES-ANTIGUO` indican que el inglés ha cambiado. Reutiliza la traducción antigua y cambia solo lo que haya cambiado.
 
 ## Marcas del juego: cópialas EXACTAMENTE igual
@@ -72,10 +72,11 @@ Si no sabes a qué personaje se refiere, redacta la frase de forma neutra en vez
 
 ## Modo NOMBRES
 
-Lotes con nombres de personajes. Por defecto NO se traducen. Devuelve solo los que tienen una forma española consolidada, normalmente personajes históricos, míticos o bíblicos:
+Lotes con nombres de personajes y de dinastías. Por defecto NO se traducen. Devuelve solo los que tienen una forma española consolidada, normalmente personajes históricos, míticos o bíblicos:
 - `Helena of Troy` → `Helena de Troya` · `Menelaus` → `Menelao` · `Charlemagne` → `Carlomagno` · `Justinian` → `Justiniano` · `Cain` → `Caín`
 - Traduce también los epítetos y los «of X» con lugar conocido: `Helen of Genoa` → `Helena de Génova`.
 - NO adaptes nombres corrientes sin fama propia (`Hadmar`, `Aliu`, `Fakhr al-Din`), ni nombres de vampiros inventados por el mod, aunque exista el equivalente español (no pongas `Juan` por `John`).
+- Dinastías: igual criterio. Solo las históricas con forma castellana asentada (`Komnenos` → `Comneno`, `Plantagenet` → `Plantagenet`, `Capet` → `Capeto`); las inventadas por el mod se quedan como están.
 - Si dudas, déjalo igual (no lo escribas).
 
 ## Ejemplos

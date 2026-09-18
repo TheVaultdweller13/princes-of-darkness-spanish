@@ -2,17 +2,17 @@
 
 Mod de traducción al castellano de España de *Princes of Darkness* para Crusader Kings III (Steam Workshop 3303353422).
 
-> **¿Eres un agente o una IA y te han pedido traducir, revisar o actualizar?** Empieza por **[AGENTS.md](AGENTS.md)** (qué hacer según el encargo) y luego lee **[tools/TRADUCIR_LOTE.md](tools/TRADUCIR_LOTE.md)** (cómo traducir un lote). Tu trabajo termina en `working/spanish`: no edites los `.yml` a mano, no ejecutes `build` ni toques `spanish_translation/`, y no uses git para modificar el repositorio.
+> **Para agentes e IA:** el punto de partida es **[AGENTS.md](AGENTS.md)** (qué hacer según el encargo) y, para traducir, **[tools/TRADUCIR_LOTE.md](tools/TRADUCIR_LOTE.md)**. El trabajo de un agente termina en `working/spanish`: nada de editar `.yml` a mano, ejecutar `build`, tocar `spanish_translation/` ni modificar el repositorio con git.
 
 ## Documentación
 
 | Archivo | Para quién | Contenido |
 |---|---|---|
-| `README.md` | Personas | Este documento: el flujo completo |
-| `AGENTS.md` (+ `CLAUDE.md`, que lo importa) | Agentes | **Qué** hacer: normas y una receta por encargo |
+| `README.md` | Personas | Este documento: el flujo completo y la guía de uso |
+| `AGENTS.md` (y `CLAUDE.md`, que lo importa) | Agentes | **Qué** hacer: normas y una receta por encargo |
 | `tools/TRADUCIR_LOTE.md` | Agente traductor | **Cómo** traducir un lote: bucle, idioma, marcas del juego, género, nombres |
 
-## Flujo
+## Cómo funciona
 
 Los scripts hacen todo lo mecánico y el modelo barato (Haiku) solo traduce textos sueltos. Un script valida cada respuesta antes de escribirla, así que un error del modelo nunca rompe un archivo.
 
@@ -23,86 +23,77 @@ original_text/english ──sync──► working/spanish ──batch──► w
 working/spanish ──build──► spanish_translation (Steam)
 ```
 
-Se mantiene la convención de siempre: un archivo con cabecera `l_english` dentro de `working/spanish` está sin traducir. `apply` la cambia a `l_spanish:` cuando el archivo queda completo. Las carpetas `working/cambiar_sufijo…` y `working/cambiar_clave…` ya no hacen falta (`sync` y `build` hacen su trabajo).
+- **Marca de «sin traducir»:** un archivo de `working/spanish` con nombre `_l_spanish.yml` y cabecera `l_english` está pendiente. `apply` cambia la cabecera a `l_spanish:` cuando el archivo queda completo.
+- **Prefijos de lote:** **U** = actualización · **B** = pendientes · **R** = revisión · **N** = nombres.
+- **Ahorro:** cada lote lleva solo las entradas del glosario que aparecen en sus textos; los textos repetidos se traducen una vez, y lo que ya está traducido en otra clave con el mismo texto se rellena sin IA (memoria de traducción).
+- **Rechazos:** lo que no pasa la validación vuelve en un lote de reintento con el motivo; si falla dos veces, va a `work_queue/manual/`.
 
-Prefijos de lote: **U** = actualización · **B** = pendientes · **R** = revisión · **N** = nombres.
-
-## Piezas
-
-| Archivo | Qué es |
+| Pieza | Qué es |
 |---|---|
 | `tools/pod.py` | Script único (solo biblioteca estándar). `python tools/pod.py -h` |
-| `tools/config.json` | Rutas, tamaño de lote, prioridades, archivos que no se traducen, último commit sincronizado |
+| `tools/config.json` | Rutas, tamaño de lote, orden de prioridad, archivos que no se traducen, último commit sincronizado |
 | `tools/glossary.tsv` | Glosario oficial (VEO20 / CK3 / pendiente de verificar). Se edita a mano |
-| `tools/glossary_mod.tsv` | Generado con `pod.py glossary` desde los conceptos ya traducidos del mod |
+| `tools/glossary_mod.tsv` | Generado con `pod.py glossary` a partir de los conceptos ya traducidos del mod |
 | `tools/keep_english.txt` | Claves que se quedan en inglés; `apply` lo amplía solo |
-| `work_queue/` | Cola de lotes (no se versiona): `todo/`, `out/`, `index/`, `done/`, `manual/`, `changed.json`, `last_sync.json` |
-
-Cada lote solo lleva las entradas del glosario que aparecen en sus textos. Los textos repetidos se traducen una sola vez. Lo que ya está traducido en otra clave con el mismo texto se rellena sin IA (memoria de traducción).
+| `work_queue/` | Cola de lotes y registros de trabajo (no se versiona) |
 
 ## Modo 1 · Actualización de PoD
 
 1. **(Usuario)** Copia el inglés de la PoD de Workshop a `original_text/english` y hace commit.
 2. `python tools/pod.py sync --dry-run` → muestra qué va a cambiar.
-3. `python tools/pod.py sync` → hace lo siguiente:
-   - Archivos nuevos: se copian con cabecera `l_english`.
+3. `python tools/pod.py sync`:
+   - Archivos nuevos: se copian a `working/spanish` renombrados y con cabecera `l_english`.
    - Claves nuevas: se insertan en su sitio, en inglés.
-   - Claves cuyo inglés ha cambiado: se ponen en inglés y la traducción antigua se guarda en `changed.json`, para que el agente la reutilice.
-   - Claves borradas en origen: se eliminan.
-   - Claves que solo existen en español: se dejan y solo se avisa.
-   - `--prune` mueve a `work_queue/removed/` los archivos que ya no existen en inglés.
-4. `python tools/pod.py batch --scope update` (solo lo que trajo el `sync`, registrado en `work_queue/last_sync.json`) y el agente procesa los lotes U.
-5. El agente cierra con `fix --dirty` y `verify --batch`: arregla lo mecánico en los archivos que ha tocado y revisa solo las claves que ha escrito, corrigiendo en lotes R lo que salga.
-6. **(Usuario)** Revisa el diff de `working/spanish`.
-7. **(Usuario)** `python tools/pod.py build --version 0.x.y --sync-supported` → carpeta de Steam lista, y commit. Los agentes nunca hacen `build` ni tocan git.
+   - Claves cuyo inglés ha cambiado: se ponen en inglés y la traducción antigua se guarda para que el agente la reutilice.
+   - Claves borradas en origen: se eliminan. Las que solo existen en español se dejan y se avisa.
+   - Con `--prune`, los archivos que ya no existen en inglés se mueven a `work_queue/removed/`.
+4. `python tools/pod.py batch --scope update` → lotes **U** solo con lo que trajo el `sync`.
+5. El agente traduce los lotes y cierra con `fix --dirty` y `verify --batch` (ver «El cierre» en `AGENTS.md`).
+6. **(Usuario)** Revisa el diff de `working/spanish`, ejecuta `build` con la versión nueva y hace commit.
 
 ## Modo 2 · Pendientes
 
-`python tools/pod.py status` → `python tools/pod.py batch [--files "traits/*"] [--limit 20]` → agente → `build` (usuario).
+`python tools/pod.py status` → `python tools/pod.py batch [--limit N]` → agente → `build` (usuario).
 
-Nombres de personajes: `batch --mode names` (solo se adaptan los que tienen forma española consolidada). Las dinastías no se traducen.
+**Orden de prioridad.** `batch` emite los lotes ordenados sin que el agente tenga que decidir nada:
 
-### Orden de prioridad
-
-`batch` emite los lotes con dos criterios, sin que el agente tenga que decidir nada:
-
-1. **Línea de juego** (`splat_priority` en `config.json`): general y compartido → vampiro → hombre lobo → cazadores e inquisición → otras líneas (wraith, fae, momias, kuei-jin, demonios…). Se deduce del nombre del archivo; lo que no encaja en ninguna línea cuenta como general, que es lo que más se ve porque el vampiro es la línea por defecto del mod.
+1. **Línea de juego** (`splat_priority` en `config.json`): general y compartido → vampiro → hombre lobo → cazadores e inquisición → otras líneas (wraith, fae, momias, kuei-jin, demonios…). Se deduce del nombre del archivo; lo que no encaja en ninguna cuenta como general, que es la mayor parte porque el vampiro es la línea por defecto del mod.
 2. **Tipo de archivo** (`priority`): conceptos → rasgos → interfaz → interacciones → decisiones → … y los eventos largos al final.
 
-`status` y `batch` muestran el reparto de pendientes por línea de juego.
+`--files "<carpeta>/*"` fuerza una zona concreta y se salta ese orden.
+
+**Nombres de personajes y dinastías.** Quedan fuera de los lotes normales. `batch --mode names` los prepara en lotes **N** de 200, y el agente devuelve solo los que tienen forma castellana asentada (Helena de Troya, Menelao, Comneno…); el resto se queda igual.
 
 ## Modo 3 · Mejoras
 
-1. `python tools/pod.py fix --dry-run` y después `fix`: arreglos seguros sin IA (dobles espacios, `GetCustom('ES_O')`, `Concept (`, `| E]`, comillas sin cerrar). Con `--dirty` se limita a los archivos modificados y con `--files` a un patrón.
-2. `python tools/pod.py check [--rule R] [--files …]` → informe. Reglas:
-   - `tokens`: marcas del juego perdidas o cambiadas.
+1. `python tools/pod.py fix --dry-run` y después `fix`: arreglos seguros sin IA (dobles espacios, `GetCustom('ES_O')`, `Concept (`, `| E]`, comillas sin cerrar). `--dirty` lo limita a los archivos modificados y `--files` a un patrón.
+2. `python tools/pod.py check [--rule R] [--files …]` → informe de defectos. Reglas:
+   - `tokens`: marcas del juego perdidas o cambiadas (la más importante).
    - `custom`: funciones de género inexistentes.
    - `spaces`: espacios sobrantes.
    - `punct`: faltan ¿ o ¡.
-   - `glossary`: término del glosario no respetado; solo usa las entradas marcadas con `l`.
+   - `glossary`: término del glosario no respetado (solo entradas marcadas con `l`).
    - `display`: texto de `Glossary(...)` o `Concept(...)` sin traducir.
    - `english`: palabras inglesas sueltas.
-3. `python tools/pod.py batch --mode review --rule R` → el agente devuelve solo las líneas que corrige → `build` (usuario).
+3. `python tools/pod.py batch --mode review --rule R` → lotes **R**; el agente devuelve solo las líneas que corrige → `build` (usuario).
 
-`python tools/pod.py verify [--all] [--batch]` revisa solo las claves escritas por los lotes ya aplicados (desde la última verificación, o todas con `--all`). Es el paso de cierre de los agentes y sirve para auditar su trabajo sin que se mezclen los defectos antiguos del archivo.
+`check` mira archivos completos, defectos antiguos incluidos. `verify` mira solo las claves escritas por los lotes aplicados (desde la última verificación, o todas con `--all`): sirve para auditar el trabajo de un agente sin mezclarlo con lo anterior.
 
-Los cambios terminológicos globales (p. ej. Hambre → Ansia) se deciden antes y se añaden a `glossary.tsv` con la marca `l`; luego `check --rule glossary` genera los lotes de revisión.
+Los cambios terminológicos globales (p. ej. Hambre → Ansia) se deciden antes y se añaden a `glossary.tsv` con la marca `l`; luego `check --rule glossary` localiza lo que hay que revisar.
 
-## Cómo lanzar el agente
+## Trabajar con un agente
 
-Abre la sesión **en la carpeta del proyecto** (Claude Code carga `AGENTS.md` a través de `CLAUDE.md`) y pide el encargo en lenguaje normal:
+La sesión se abre **en la carpeta del proyecto**: así Claude Code carga `AGENTS.md` a través de `CLAUDE.md` (otros agentes, como Cursor o Codex, leen `AGENTS.md` directamente). Basta con una de estas frases:
 
-- «Traduce lo nuevo de la actualización» → `sync` → `batch --scope update` → lotes **U** (el agente termina en `working/spanish`; `build`, la versión y git los hace el usuario)
-- «Traduce los pendientes de traits» → `batch --files "traits/*"` → lotes **B**
-- «Revisa el glosario en los eventos» → `check` / `batch --mode review` → lotes **R**
-- «Adapta los nombres de personajes» → `batch --mode names` → lotes **N**
+1. **Actualización:** «Ha salido una actualización de Princes of Darkness y ya he commiteado el inglés nuevo en `original_text`. Traduce lo nuevo de la actualización siguiendo `AGENTS.md`. No toques git.»
+2. **Pendientes:** «Traduce pendientes siguiendo `AGENTS.md`. Máximo 15 lotes. No toques git.» Para forzar una zona: «…pendientes de `<carpeta>/*`…».
+3. **Mejoras:** «Revisa y mejora lo traducido siguiendo `AGENTS.md`: ejecuta `fix` y luego la revisión con la regla `glossary`. Máximo 15 lotes. No toques git.»
+4. **Nombres:** «Adapta los nombres de personajes y dinastías siguiendo `AGENTS.md`. No toques git.»
 
-Formas de trabajar:
-- **Sesión con Haiku:** no pases de 15 lotes por sesión y abre una nueva para seguir.
-- **Sesión con un modelo mayor:** prepara los lotes y reparte rangos entre subagentes Haiku. Pueden trabajar en paralelo porque `apply` bloquea la cola.
-- **Otros agentes** (Cursor, Codex…): leen `AGENTS.md` directamente.
+El agente termina siempre con el cierre (`fix --dirty`, `verify` y un resumen) y nunca ejecuta `build` ni toca git.
 
-Lo que falla dos veces va a `work_queue/manual/`.
+- **Con Haiku:** un máximo de 15 lotes por sesión; para seguir, sesión nueva.
+- **Con un modelo mayor:** puede preparar los lotes y repartir rangos entre subagentes Haiku en paralelo (`apply` bloquea la cola).
 
 ## Guía de uso rápida
 
@@ -114,8 +105,9 @@ Todas las órdenes se ejecutan desde la raíz del repositorio (`python tools/pod
 | Simular una actualización | `python tools/pod.py sync --dry-run` |
 | Aplicar una actualización | `python tools/pod.py sync` |
 | Preparar solo lo nuevo | `python tools/pod.py batch --scope update` |
-| Preparar pendientes | `python tools/pod.py batch --files "traits/*" --limit 5` |
-| Preparar nombres de personajes | `python tools/pod.py batch --mode names` |
+| Preparar pendientes (en orden de prioridad) | `python tools/pod.py batch --limit 5` |
+| Preparar pendientes de una zona concreta | `python tools/pod.py batch --files "<carpeta>/*" --limit 5` |
+| Preparar nombres de personajes y dinastías | `python tools/pod.py batch --mode names` |
 | Ver el siguiente lote | `python tools/pod.py next --show` |
 | Aplicar la traducción de un lote | `python tools/pod.py apply B0001` |
 | Limpiar sin IA (simulación) | `python tools/pod.py fix --dry-run` |
@@ -128,22 +120,8 @@ Todas las órdenes se ejecutan desde la raíz del repositorio (`python tools/pod
 
 Notas:
 
-- Un lote son 40 textos; `--limit` cuenta lotes, no textos.
-- Reglas de `check` y de `batch --mode review`: `tokens` (marcas del juego rotas, la más importante), `custom` (funciones de género inexistentes), `spaces`, `punct` (falta ¿ o ¡), `glossary`, `display` (textos de `Glossary(...)` sin traducir) y `english`. Sin `--rule` se pasan todas.
+- Un lote son 40 textos (200 en el modo nombres); `--limit` cuenta lotes, no textos.
+- Sin `--rule`, `check` y `batch --mode review` pasan todas las reglas.
 - Para traducir un lote a mano: `next --show`, escribir `work_queue/out/<LOTE>.txt` con una línea `1 = texto` por elemento y aplicar con `apply <LOTE>`. Un lote solo sale de la cola cuando se aplica su salida.
-- Las claves nuevas que mete `sync` se quedan en inglés hasta que alguien las traduzca, y `apply` cambia la cabecera a `l_spanish` cuando el archivo queda completo.
-- `verify` solo mira las claves recién escritas; `check` mira todo el archivo, incluidos defectos antiguos.
-
-### Pedir el trabajo a un agente
-
-Con una sesión abierta en esta carpeta (que carga `AGENTS.md` mediante `CLAUDE.md`), basta con una de estas frases:
-
-1. **Actualización:** «Ha salido una actualización de Princes of Darkness y ya he commiteado el inglés nuevo en `original_text`. Traduce lo nuevo de la actualización siguiendo `AGENTS.md`. No toques git.»
-2. **Pendientes:** «Traduce pendientes de `traits/*` siguiendo `AGENTS.md`. Máximo 15 lotes. No toques git.»
-3. **Mejoras:** «Revisa y mejora lo traducido siguiendo `AGENTS.md`: ejecuta `fix` y luego la revisión con la regla `glossary`. Máximo 15 lotes. No toques git.»
-
-## Volumen (septiembre de 2026)
-
-- Pendiente: ~29 600 textos únicos, ~3,6 M caracteres en inglés (~0,9 M tokens), ~830 lotes de 40 textos.
-- La memoria de traducción rellenó 1 707 claves sin coste.
-- Revisión inicial: ~500 líneas con marcas rotas, ~960 avisos de glosario, ~530 textos de Glossary sin traducir, 50 Custom de género rotos.
+- Las claves nuevas que mete `sync` se quedan en inglés hasta que se traducen; `build` las publica en inglés entretanto, sin romper nada.
+- Las cifras actuales (claves hechas, pendientes y reparto) las da `status`.
