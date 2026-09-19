@@ -1035,7 +1035,7 @@ def cmd_build(a):
             update_readme_base_version(base)
         else:
             print(f"AVISO: no encuentro {CFG['workshop_descriptor']}; supported_version y README sin cambiar")
-    desc.write_text(d, encoding="utf-8")
+    desc.write_bytes(d.encode("utf-8"))  # LF, como lo escribe el launcher (ver .gitattributes)
     for k, v in stats.items():
         print(f"{k}: {v}")
     print(re.sub(r"\n\s*", " · ", d.strip()))

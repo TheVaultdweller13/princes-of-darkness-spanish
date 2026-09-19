@@ -1,0 +1,9 @@
+# Finales de línea
+# El resto de archivos sigue la configuración de git (core.autocrlf).
+# Los descriptores de mod los reescribe el launcher de CK3 con LF al subir el mod:
+# se fijan en LF para que git no los vea modificados después de cada subida.
+*.mod text eol=lf
+
+# Binarios
+*.pdf binary
+*.png binary
