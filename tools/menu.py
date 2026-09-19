@@ -206,12 +206,23 @@ def status():
     pod("status")
 
 
+def clean():
+    title("Limpiar la cola")
+    pod("clean", "--dry-run")
+    if yes("¿Aplicar la limpieza?", True):
+        pod("clean")
+    manual = ROOT / "work_queue" / "manual"
+    if any(manual.glob("*.json")) and yes("¿Devolver a la cola lo que sigue en manual/ para traducirlo otra vez?"):
+        pod("clean", "--requeue")
+
+
 MENU = [
     ("Actualizar (traducir lo nuevo de una versión de PoD)", update),
     ("Traducir pendientes", pending),
     ("Corregir lo traducido", review),
     ("Seguir con la cola (lotes ya preparados)", resume),
     ("Ver estado", status),
+    ("Limpiar la cola", clean),
 ]
 
 

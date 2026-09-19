@@ -8,7 +8,7 @@ Este repositorio es un mod de traducción. Tu trabajo es traducir o revisar text
 - **Idioma:** castellano (España), con la terminología oficial española de Mundo de Tinieblas (glosario en `tools/glossary.tsv`). Decisiones fijas: el Hunger vampírico (la necesidad de sangre) → Ansia; wraith → wraith (Spectre, que es otra criatura, sí es Espectro); nombres de personajes y dinastías sin traducir, salvo los históricos con forma castellana asentada.
 - **Tu trabajo termina en `spanish/`.** Nunca ejecutes `python tools/pod.py build` ni toques `mod/` (ni su `descriptor.mod`): volcar al mod y subir la versión lo hace el usuario.
 - **Carpetas intocables:** `mod/` y `english/` (las actualiza el usuario).
-- **Final de cada encargo:** haz siempre «el cierre» (`fix --dirty` + `verify`) antes de dar el resumen.
+- **Final de cada encargo:** haz siempre «el cierre» (`fix --dirty`, `verify` y `clean`) antes de dar el resumen.
 
 ## Antes de empezar
 
@@ -31,7 +31,7 @@ Este repositorio es un mod de traducción. Tu trabajo es traducir o revisar text
 
 Prefijos de lote: **U** = actualización · **B** = pendientes · **R** = revisión · **N** = nombres.
 
-**No decidas tú el orden ni qué contenido es más importante.** `batch` ya emite los lotes en el orden acordado: primero lo general y compartido, luego vampiro, hombre lobo, cazadores e inquisición y, por último, el resto de líneas (wraith, fae, momias, kuei-jin, demonios…). Dentro de cada línea van antes los textos de interfaz y los cortos que se ven siempre, y los eventos largos al final. Se configura en `splat_priority` y `priority` de `tools/config.json`; si el usuario quiere otro orden, lo cambia ahí. Tradúcelos tal como salgan.
+**No decidas tú el orden ni qué contenido es más importante.** `batch` ya emite los lotes en este orden: primero lo general y compartido, luego vampiro, hombre lobo, cazadores e inquisición y, por último, el resto de líneas (wraith, fae, momias, kuei-jin, demonios…). Dentro de cada línea van antes los textos de interfaz y los cortos que se ven siempre, y los eventos largos al final. Se configura en `splat_priority` y `priority` de `tools/config.json`; si el usuario quiere otro orden, lo cambia ahí. Tradúcelos tal como salgan.
 
 ## Qué hacer según el encargo
 
@@ -68,9 +68,10 @@ También se pedirá como «los nuevos archivos», «lo nuevo», «la actualizaci
 1. `python tools/pod.py fix --dirty` → arreglos mecánicos (dobles espacios, `GetCustom('ES_O')`, `Concept (`, `| E]`, comillas sin cerrar) solo en los archivos que has tocado.
 2. `python tools/pod.py verify --batch` → revisa **solo las claves que has escrito** y, si hay avisos, crea lotes **R** con ellas.
 3. Si ha creado lotes R, pásalos una vez con el bucle (prefijo **R**) y vuelve a `verify`. Si el segundo intento deja los mismos avisos, no insistas: anótalos en el resumen.
-4. `python tools/pod.py status`.
-5. Resumen para el usuario: qué has traducido, qué ha arreglado `fix`, qué avisos quedan y qué hay en `work_queue/manual/`. Recuérdale que `build`, la versión y git son cosa suya.
+4. `python tools/pod.py clean` → quita de la cola lo ya resuelto y lo caducado; nunca toca lotes pendientes.
+5. `python tools/pod.py status`.
+6. Resumen para el usuario: qué has traducido, qué ha arreglado `fix`, qué avisos quedan y qué hay en `work_queue/manual/`. Recuérdale que `build`, la versión y git son cosa suya.
 
-## Si eres un modelo orquestador
+## Trabajo en paralelo
 
-Puedes preparar los lotes (pasos de `sync`, `batch` y `check`) y repartir el bucle entre subagentes baratos, asignando rangos concretos de lotes (p. ej. `U0001`–`U0010`). `apply` bloquea la cola, así que pueden trabajar en paralelo. El cierre hazlo tú, una sola vez, cuando hayan terminado todos. Lo que acabe en `work_queue/manual/` (JSON con el texto, el motivo del rechazo y el intento fallido) no se reintenta solo: resúmelo para el usuario.
+Varias sesiones pueden procesar la cola a la vez si cada una se ocupa de un rango distinto de lotes (p. ej. `U0001`–`U0010`): `apply` bloquea la cola mientras escribe. En ese caso, el cierre se hace una sola vez, cuando hayan terminado todas. Lo que acabe en `work_queue/manual/` (JSON con el texto, el motivo del rechazo y el intento fallido) no se reintenta solo: resúmelo para el usuario.

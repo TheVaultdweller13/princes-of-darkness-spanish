@@ -1199,7 +1199,7 @@
  building_cairo_temple_bast_03_desc: "Junto con la maldición, los viles Setitas capturaron a los parientes felinos de los Bubasti, los gatos Kyphur, y los mataron o les dieron sangre para convertirlos en monstruos aberrantes."
  building_cairo_temple_bast_04: "Gran Templo de Bast"
  building_cairo_temple_bast_04_desc: "Con El Cairo reclamado y los Setitas repelidos, los gatos Kyphur son libres una vez más. Ahora los Bubasti luchan contra los Setitas con renovada furia."
- POD_cairo_temple_bast_bonus: "#help Si eres un $glossary_fera$:#!\nComienza con [EmptyScope.ScriptValue('infiltration_small_perk_suspicion_offset')|V0] de [suspicion_with_icon|E] durante [infiltration_missions|E]\n\n#help Si no lo eres:#!\nDesbloquea una decisión para criar [GetTrait('beast_born').GetName (GetNullCharacter)] [GetTrait('bastet').GetName(GetNullCharacter)]"
+ POD_cairo_temple_bast_bonus: "#help Si eres un $glossary_fera$:#!\nComienza con [EmptyScope.ScriptValue('infiltration_small_perk_suspicion_offset')|V0] de [suspicion_with_icon|E] durante [infiltration_missions|E]\n\n#help Si no lo eres:#!\nDesbloquea una decisión para criar [GetTrait('beast_born').GetName(GetNullCharacter)] [GetTrait('bastet').GetName(GetNullCharacter)]"
  
  building_type_cairo_temple_sobek_01: "Templo de Sobek"
  building_type_cairo_temple_sobek_01_desc: "#F Sobek, Dios de los Cocodrilos. Jefe de los Mokolé del Nilo y guardián de los dioses.#!"
@@ -1211,7 +1211,7 @@
  building_cairo_temple_sobek_03_desc: "El gran Sobek fue corrompido por los rituales de sangre de Set, convirtiéndose en el primer y único Mokolé Abominación."
  building_cairo_temple_sobek_04: "Gran Templo de Sobek"
  building_cairo_temple_sobek_04_desc: "Ahora Sobek yace dormido rodeado de cocodrilos ghoulizados, una burla de su antiguo estatus divino. Sin embargo, el Dios Cocodrilo no está más allá de la esperanza y puede regresar a Ma'at una vez más."
- POD_cairo_temple_sobek_bonus: "#help Si ya tienes acceso o puedes aprender Magia del Clima:#!\nReemplaza ([GetModifier('weather_magic_flood_modifier'). GetNameWithTooltip]) con ([GetModifier('weather_magic_greater_flood_modifier').GetNameWithTooltip])\n\n#help Si no:#!\nObtén acceso a ([GetModifier('weather_magic_flood_modifier').GetNameWithTooltip]) a nivel de [duchy|E]"
+ POD_cairo_temple_sobek_bonus: "#help Si ya tienes acceso o puedes aprender Magia del Clima:#!\nReemplaza ([GetModifier('weather_magic_flood_modifier').GetNameWithTooltip]) con ([GetModifier('weather_magic_greater_flood_modifier').GetNameWithTooltip])\n\n#help Si no:#!\nObtén acceso a ([GetModifier('weather_magic_flood_modifier').GetNameWithTooltip]) a nivel de [duchy|E]"
  
  building_type_cairo_caern_wind_01: "Caern del Viento Etesio"
  building_type_cairo_caern_wind_01_desc: "#F Los Pasos Silenciosos han existido desde los días del propio Osiris. Este antiguo Caern contiene los Puentes de Luna más numerosos de todo Egipto.#!"
@@ -1260,7 +1260,7 @@
  building_cairo_canton_djedi_03_desc: "$building_cairo_canton_djedi_01_desc$"
  building_cairo_canton_djedi_04: "Cantón Masivo de los Alegres"
  building_cairo_canton_djedi_04_desc: "$building_cairo_canton_djedi_01_desc$"
- POD_cairo_canton_djedi_bonus: "Puede pedir a [friends|E] que se conviertan en [best_friends|E]\n\nGana [GetModifier('cairo_canton_djedi_modifier'). GetNameWithTooltip] si tienes un [best_friend|E]"
+ POD_cairo_canton_djedi_bonus: "Puede pedir a [friends|E] que se conviertan en [best_friends|E]\n\nGana [GetModifier('cairo_canton_djedi_modifier').GetNameWithTooltip] si tienes un [best_friend|E]"
  
  building_type_cairo_canton_eshu_01: "Cantón de los Errantes"
  building_type_cairo_canton_eshu_01_desc: "#F Un cantón construido para los Eshu.\nEstos Fae errantes se han unido a los Osirianos y su cruzada, no como guerreros sino como mensajeros y exploradores.#!"
@@ -1332,7 +1332,7 @@
  building_cairo_khitta_lama_03_desc: "$building_cairo_khitta_lama_01_desc$"
  building_cairo_khitta_lama_04: "Khitta Banu al-Lam'a Masiva"
  building_cairo_khitta_lama_04_desc: "$building_cairo_khitta_lama_01_desc$"
- POD_cairo_khitta_lama_bonus: "#help Si eres miembro de los [Glossary('Ashirra','game_concept_ashirra_desc')]:#!\nAumenta la [aptitude|El] de tu [GetCourtPositionType('ashirra_mullah_court_position').GetName()] y mejora su [court_position_task|E] [GetCourtPositionTaskType('POD_mullah_zealots'). GetName] permitiéndole eliminar [GetTrait('cynical').GetName(GetNullCharacter)] de otros"
+ POD_cairo_khitta_lama_bonus: "#help Si eres miembro de los [Glossary('Ashirra','game_concept_ashirra_desc')]:#!\nAumenta la [aptitude|El] de tu [GetCourtPositionType('ashirra_mullah_court_position').GetName()] y mejora su [court_position_task|E] [GetCourtPositionTaskType('POD_mullah_zealots').GetName] permitiéndole eliminar [GetTrait('cynical').GetName(GetNullCharacter)] de otros"
  
  building_type_cairo_khitta_yashkur_01: "Banu Yashkur"
  building_type_cairo_khitta_yashkur_01_desc: "#F Una $glossary_khitta$ alineada con los Ashirra.\n\nUno de los dominios vampíricos más antiguos de El Cairo. Los Assamitas aquí son respetuosos con los mortales y protegen ferozmente su dominio de otros vampiros.#!"
@@ -1368,7 +1368,7 @@
  building_cairo_khitta_fen_03_desc: "$building_cairo_khitta_fen_01_desc$"
  building_cairo_khitta_fen_04: "Khitta Banu al-Fen Masiva"
  building_cairo_khitta_fen_04_desc: "$building_cairo_khitta_fen_01_desc$"
- POD_cairo_khitta_fen_bonus: "#help Si eres miembro de los [Glossary('Ashirra','game_concept_ashirra_desc')]:#!\nAumenta la [aptitude|El] de tu [GetCourtPositionType('ashirra_ulama_court_position').GetName()] y mejora su [court_position_task|E] [GetCourtPositionTaskType('POD_ulama_teachings'). GetName] permitiéndole eliminar tus [Concept('fame_trait','rasgos de fama')|E] negativos de [mental_break|E]"
+ POD_cairo_khitta_fen_bonus: "#help Si eres miembro de los [Glossary('Ashirra','game_concept_ashirra_desc')]:#!\nAumenta la [aptitude|El] de tu [GetCourtPositionType('ashirra_ulama_court_position').GetName()] y mejora su [court_position_task|E] [GetCourtPositionTaskType('POD_ulama_teachings').GetName] permitiéndole eliminar tus [Concept('fame_trait','rasgos de fama')|E] negativos de [mental_break|E]"
  
  building_type_cairo_khitta_raya_01: "Banu Ahl ar-Raya"
  building_type_cairo_khitta_raya_01_desc: "#F Una de las nueve $glossary_khittas$ de El Cairo.\n\nEl dominio vampírico más antiguo está habitado por los Brujah Verdaderos. Estos eruditos guerreros han estado aquí desde los días del comienzo del Islam. Mientras el resto de El Cairo avanza, ellos permanecen igual. Una cápsula de vida ascética tradicional, congelada para siempre en el tiempo.#!"
@@ -1380,7 +1380,7 @@
  building_cairo_khitta_raya_03_desc: "$building_cairo_khitta_raya_01_desc$"
  building_cairo_khitta_raya_04: "Khitta Banu Ahl ar-Raya Masiva"
  building_cairo_khitta_raya_04_desc: "$building_cairo_khitta_raya_01_desc$"
- POD_cairo_khitta_raya_bonus: "Da acceso y mejora la [aptitude|El] del [court_position|E] [GetCourtPositionType('brujah_warmaster_court_position').GetName ()]"
+ POD_cairo_khitta_raya_bonus: "Da acceso y mejora la [aptitude|El] del [court_position|E] [GetCourtPositionType('brujah_warmaster_court_position').GetName()]"
  uses_cairo_brujah_reward_tooltip: "Posees [GetBuilding('cairo_khitta_raya_04').GetName]"
  
  building_type_cairo_khitta_saidi_01: "Banu al-as-Sa'idi"

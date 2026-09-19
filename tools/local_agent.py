@@ -117,7 +117,7 @@ def pick_model():
 LINE_RE = re.compile(r"^\s*(\d+)\s*=\s?(.*)$")
 THINK_RE = re.compile(r"<think>.*?</think>", re.S)
 
-PREAMBLE = """Eres un traductor profesional de videojuegos del inglés al castellano de España.
+PREAMBLE = """Eres un traductor profesional de videojuegos del inglés al castellano (España).
 Traduces la localización del mod «Princes of Darkness» (Crusader Kings III, Mundo de Tinieblas).
 
 FORMATO DE RESPUESTA (obligatorio):
@@ -154,7 +154,7 @@ def chat(a, system, user):
         print(f"Modelo: {a.model}")
     url =a.url.rstrip("/") + "/chat/completions"
     # Temperatura baja: fidelidad y marcas del juego intactas antes que creatividad. top_k, repeat_penalty
-    # y chat_template_kwargs (sin razonamiento previo de Qwen3) son extensiones de llama.cpp.
+    # y chat_template_kwargs (desactiva el razonamiento previo en los modelos que lo tienen) son extensiones de llama.cpp.
     body = {"model": a.model, "stream": False, "temperature": 0.3, "top_p": 0.8, "top_k": 20, "repeat_penalty": 1.05,
             "chat_template_kwargs": {"enable_thinking": False},
             "messages": [{"role": "system", "content": system}, {"role": "user", "content": user}]}
@@ -213,7 +213,7 @@ def run_batches(a, prefix, limit, system):
 
 
 def close(a, system):
-    """«El cierre» de AGENTS.md: fix --dirty, verify --batch, una pasada R y status."""
+    """«El cierre» de AGENTS.md: fix --dirty, verify --batch, una pasada R, clean y status."""
     print("── cierre: fix --dirty")
     print(pod("fix", "--dirty").rstrip())
     before = {p.stem for p in (Q / "todo").glob("R*.txt")}
@@ -224,6 +224,8 @@ def close(a, system):
         print(f"── cierre: {len(new)} lotes R de verify")
         run_batches(a, "R", len(new), system)
         print(pod("verify").rstrip())
+    print("── cierre: clean")
+    print(pod("clean").rstrip())
     print(pod("status").rstrip())
 
 

@@ -19,10 +19,10 @@
  POD_lore_world_manipulate_inertia_interaction_relation: "¡El objetivo no tiene ninguna relación que pueda ser destruida!"
  
  POD_lore_world_manipulate_cohesion_personality_interaction: "Manipular cohesión: Personalidad"
- POD_lore_world_manipulate_cohesion_personality_interaction_desc: "Manipula las estructuras que conforman el sentido del yo de [recipient.GetShortUIName]"
+ POD_lore_world_manipulate_cohesion_personality_interaction_desc: "Manipula las estructuras que conforman el sentido del yo de [recipient.GetShortUINamePossessive]"
   
  POD_lore_world_manipulate_cohesion_sexuality_interaction: "Manipular cohesión: Sexualidad"
- POD_lore_world_manipulate_cohesion_sexuality_interaction_desc: "Manipula las estructuras que conforman las relaciones de [recipient.GetShortUIName] con los demás"
+ POD_lore_world_manipulate_cohesion_sexuality_interaction_desc: "Manipula las estructuras que conforman las relaciones de [recipient.GetShortUINamePossessive] con los demás"
  
  POD_lore_world_fade_interaction: "Desvanecer"
  POD_lore_world_fade_interaction_desc: "Haz que [recipient.GetShortUIName] se desvanezca en la oscuridad"
@@ -32,7 +32,7 @@
  POD_lore_corrupption_summon_outsider_interaction_effect: "Destruye todos los edificios en tu ubicación actual convocando a una entidad blasfema de fuera de la Creación"
  
  POD_lore_the_mark_of_the_celesitals_interaction: "Marca de los Celestiales"
- POD_lore_the_mark_of_the_celesitals_interaction_desc: "Manipula el destino de [recipient.GetShortUIName] con una bendición o una maldición"
+ POD_lore_the_mark_of_the_celesitals_interaction_desc: "Manipula el destino de [recipient.GetShortUINamePossessive] con una bendición o una maldición"
  POD_lore_the_mark_of_the_celesitals_interaction_good: "Recompensa"
  POD_lore_the_mark_of_the_celesitals_interaction_bad: "Castigo"
  
@@ -40,13 +40,13 @@
  POD_lore_revelation_interaction_desc: "Revela los secretos e intrigas de [recipient.GetShortUIName]"
  
  POD_lore_cleanse_interaction: "Limpiar" 
- POD_lore_cleanse_interaction_desc: "Limpia todas las dolencias de [recipient.GetShortUIName]"
+ POD_lore_cleanse_interaction_desc: "Limpia todas las dolencias de [recipient.GetShortUINamePossessive]"
  
  POD_lore_restore_life_interaction: "Restaurar vida"
  POD_lore_restore_life_interaction_desc: "Devuelve a [recipient.GetShortUIName] a la vida como un [GetTrait('mortal').GetName(recipient)]"
  
  POD_lore_teleport_interaction: "Teletransporte"
- POD_lore_teleport_interaction_desc: "Teletranspórtate a la ubicación de [recipient.GetShortUIName], o a tu próximo destino cuando estés [traveling|E]"
+ POD_lore_teleport_interaction_desc: "Teletranspórtate a la ubicación de [recipient.GetShortUINamePossessive], o a tu próximo destino cuando estés [traveling|E]"
  
  POD_lore_manipulate_weather_interaction: "Manipular clima"
  POD_lore_manipulate_weather_interaction_desc: "Manipula el clima en tu ubicación actual"

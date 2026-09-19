@@ -20,6 +20,9 @@ Solo librería estándar. Ejecutar desde cualquier sitio: python tools/pod.py <o
                              Arreglos automáticos sin IA (dobles espacios, GetCustom('ES_O'), "| E]", "Concept (", comillas sin cerrar).
   verify [--all] [--batch]   Revisa solo las claves escritas por los lotes ya aplicados (--batch crea lotes R para corregirlas).
   glossary                   Regenera tools/glossary_mod.tsv a partir de los conceptos del mod ya traducidos.
+  clean [--dry-run] [--requeue]
+                             Limpia work_queue: quita de manual/ lo ya corregido, lotes obsoletos y huérfanos,
+                             lotes terminados antiguos y registros caducados. --requeue devuelve manual/ a la cola.
 """
 import argparse, fnmatch, json, re, shutil, subprocess, sys
 from collections import Counter, defaultdict
@@ -567,7 +570,7 @@ def next_batch_name(prefix="B"):
 
 
 HEAD_PENDING = """# LOTE {name} · MODO TRADUCIR · {n} elementos
-# Lee tools/TRADUCIR_LOTE.md si no lo has leído. Traduce cada EN al castellano de España.
+# Lee tools/TRADUCIR_LOTE.md si no lo has leído. Traduce cada EN al castellano (España).
 # Salida: crea work_queue/out/{name}.txt con UNA línea por elemento:  <número> = <traducción>
 # Luego ejecuta:  python tools/pod.py apply {name}
 """
@@ -1076,6 +1079,147 @@ def cmd_fix(a):
 
 RULES = ["tokens", "custom", "spaces", "punct", "glossary", "display", "english"]
 
+# ---------------------------------------------------------------- limpieza de la cola
+
+def cmd_clean(a):
+    """Limpia work_queue sin tocar trabajo pendiente: solo borra lo resuelto, lo huérfano o lo antiguo ya verificado."""
+    import time
+    with QueueLock():
+        _clean(a, time.time())
+
+
+def _clean(a, now):
+    dry = a.dry_run
+    cfg = CFG.get("clean", {})
+    keep_done = cfg.get("keep_done_days", 7) * 86400
+    keep_log = cfg.get("keep_log_days", 60) * 86400
+    cnt = Counter()
+    cache = {}
+
+    def current(rel, key, occ):
+        """(valor español, valor inglés) actuales de una clave; None si no existe."""
+        if rel not in cache:
+            cache[rel] = load_pair(rel) if (EN_DIR / rel).exists() else (None, None)
+        en, es = cache[rel]
+        e = es.index().get((key, occ)) if es else None
+        l = en.index().get((key, occ)) if en else None
+        return (e["value"] if e else None), (l["value"] if l else None)
+
+    def resolved(targets, expect):
+        """Ya no hace falta: la clave cambió desde que se registró, o ya no existe en inglés."""
+        for rel, key, occ in targets:
+            es_v, en_v = current(rel, key, occ)
+            if en_v is not None and es_v == expect:
+                return False
+        return True
+
+    def rm(p):
+        if p.exists():
+            cnt["archivos borrados"] += 1
+            if not dry:
+                p.unlink()
+
+    # 1. manual/: quitar lo que ya se corrigió; con --requeue, devolver el resto a la cola
+    requeue = []
+    for f in sorted((Q / "manual").glob("*.json")) if (Q / "manual").exists() else []:
+        items = json.loads(f.read_text(encoding="utf-8"))
+        left = [it for it in items if not resolved(it["targets"], it["es"])]
+        cnt["manual: resueltos quitados"] += len(items) - len(left)
+        if a.requeue:
+            requeue.extend(left)
+            left = []
+        if not left:
+            rm(f)
+        elif len(left) < len(items) and not dry:
+            f.write_text(json.dumps(left, ensure_ascii=False, indent=1), encoding="utf-8")
+        cnt["manual: sin resolver"] += len(left)
+    if requeue:
+        gloss = load_glossary()
+        for mode in ("pending", "review"):
+            its = [dict(it, tries=0) for it in requeue if (it["es"] == it["en"]) == (mode == "pending")]
+            for ch in chunk(its):
+                cnt[f"manual: devueltos a la cola ({PREFIX[mode]})"] += len(ch)
+                if not dry:
+                    write_batch(next_batch_name(PREFIX[mode]), mode, ch, gloss, "manual")
+
+    # 2. todo/ index/ out/: lotes obsoletos (todo su contenido ya cambió) y archivos huérfanos
+    todo, index, out = (Q / "todo"), (Q / "index"), (Q / "out")
+    names = {p.stem for d in (todo, index) if d.exists() for p in d.glob("*.*")}
+    names |= {p.stem for p in out.glob("*.txt")} if out.exists() else set()
+    for n in sorted(names):
+        t, i, o = todo / f"{n}.txt", index / f"{n}.json", out / f"{n}.txt"
+        if not i.exists():
+            if t.exists() or o.exists():
+                cnt["lotes huérfanos (sin índice)"] += 1
+                rm(t); rm(o)
+            continue
+        if not t.exists() and not o.exists():
+            cnt["índices huérfanos"] += 1
+            rm(i)
+            continue
+        items = json.loads(i.read_text(encoding="utf-8"))["items"].values()
+        if not o.exists() and all(resolved(it["targets"], it["expect"]) for it in items):
+            cnt["lotes obsoletos (ya resueltos por otra vía)"] += 1
+            rm(t); rm(i)
+
+    # 3. done/: lotes aplicados, ya verificados y más antiguos que keep_done_days
+    marker = Q / ".verified"
+    try:
+        verified = float(marker.read_text(encoding="utf-8").strip() or 0) if marker.exists() else 0.0
+    except ValueError:
+        verified = marker.stat().st_mtime
+    log = Q / APPLIED_LOG
+    records = [json.loads(l) for l in log.read_text(encoding="utf-8").splitlines() if l.strip()] if log.exists() else []
+    applied_at = {}
+    for r in records:
+        applied_at[r["batch"]] = max(applied_at.get(r["batch"], 0), r["at"])
+    for p in sorted((Q / "done").glob("*")) if (Q / "done").exists() else []:
+        name = p.name.split(".")[0]
+        at = applied_at.get(name, p.stat().st_mtime)
+        if at <= verified and now - at > keep_done:
+            rm(p)
+
+    # 4. applied.jsonl: registros ya verificados y más antiguos que keep_log_days
+    keep = [r for r in records if r["at"] > verified or now - r["at"] <= keep_log]
+    if len(keep) < len(records):
+        cnt["registros de applied.jsonl quitados"] += len(records) - len(keep)
+        if not dry:
+            log.write_text("".join(json.dumps(r, ensure_ascii=False) + "\n" for r in keep), encoding="utf-8")
+
+    # 5. changed.json y last_sync.json: solo lo que sigue pendiente
+    pend = {(r, k, o) for r, k, o, _ in pending_items()}
+    f = Q / "changed.json"
+    if f.exists():
+        ch = json.loads(f.read_text(encoding="utf-8"))
+        new = {rel: {k: v for k, v in d.items() if (rel, k, 0) in pend} for rel, d in ch.items()}
+        new = {rel: d for rel, d in new.items() if d}
+        cnt["changed.json: entradas quitadas"] += sum(map(len, ch.values())) - sum(map(len, new.values()))
+        if new != ch and not dry:
+            f.write_text(json.dumps(new, ensure_ascii=False, indent=1), encoding="utf-8")
+    f = Q / "last_sync.json"
+    if f.exists():
+        ls = json.loads(f.read_text(encoding="utf-8"))
+        pend_files = {r for r, _, _ in pend}
+        keys = {rel: [k for k in v if (rel, k[0], k[1]) in pend] for rel, v in ls["keys"].items()}
+        keys = {rel: v for rel, v in keys.items() if v}
+        new = dict(ls, keys=keys, new_files=[r for r in ls["new_files"] if r in pend_files])
+        cnt["last_sync.json: claves quitadas"] += sum(map(len, ls["keys"].values())) - sum(map(len, keys.values()))
+        if new != ls and not dry:
+            f.write_text(json.dumps(new, ensure_ascii=False, indent=1), encoding="utf-8")
+
+    removed = list((Q / "removed").rglob("*.yml")) if (Q / "removed").exists() else []
+    tag = "  (simulación)" if dry else ""
+    for k, v in cnt.items():
+        if v:
+            print(f"{k}: {v}{tag}")
+    if not any(cnt.values()):
+        print("Nada que limpiar.")
+    if cnt["manual: sin resolver"]:
+        print(f"→ {cnt['manual: sin resolver']} textos siguen en work_queue/manual/: corrígelos a mano o "
+              f"devuélvelos a la cola con 'clean --requeue' para que los traduzca otro agente.")
+    if removed:
+        print(f"→ {len(removed)} archivos en work_queue/removed/ (ya no existen en inglés): revísalos y bórralos a mano.")
+
 # ---------------------------------------------------------------- main
 
 def main():
@@ -1097,10 +1241,12 @@ def main():
     s.add_argument("--files", help="patrón, p. ej. \"traits/*\"")
     s = sp.add_parser("verify"); s.add_argument("--all", action="store_true"); s.add_argument("--batch", action="store_true")
     s.add_argument("--files")
+    s = sp.add_parser("clean"); s.add_argument("--dry-run", action="store_true")
+    s.add_argument("--requeue", action="store_true", help="devuelve a la cola lo que siga en manual/")
     a = ap.parse_args()
     {"status": cmd_status, "sync": cmd_sync, "batch": cmd_batch, "next": cmd_next, "apply": cmd_apply,
      "check": cmd_check, "build": cmd_build, "glossary": cmd_glossary, "fix": cmd_fix,
-     "verify": cmd_verify}[a.cmd](a)
+     "verify": cmd_verify, "clean": cmd_clean}[a.cmd](a)
 
 
 if __name__ == "__main__":

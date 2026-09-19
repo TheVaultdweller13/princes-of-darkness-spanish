@@ -1764,7 +1764,7 @@
  keeping_the_roots_safe_objective_decision_desc: "Nosotros nos originamos en #ONCLICK:CULTURE,[GetCultureByKey('ancient_egyptian').GetID] #TOOLTIP:CULTURE,[GetCultureByKey('ancient_egyptian').GetID] #L el Antiguo Egipto#!#!#!, y no debemos olvidar nuestras raíces. Pero con cada año que pasa, lo que una vez fue la civilización más grandiosa se pierde lentamente entre las arenas del tiempo. No podemos permitirlo, porque nuestros recuerdos son lo que nos hace humanos."
  keeping_the_roots_safe_objective_decision_tooltip: "Manteniendo nuestros corazones vivos"
  keeping_the_roots_safe_objective_decision_confirm: "Salvando las Raíces"
- keeping_the_roots_safe_objective_decision_custom1: "Debe haber al menos #V 10#! condados con [cultura|E] [GetCultureByKey('ancient_egyptian').GetName]"
+ keeping_the_roots_safe_objective_decision_custom1: "Debe haber al menos #V 10#! condados con cultura [culture|E] [GetCultureByKey('ancient_egyptian').GetName]"
  keeping_the_roots_safe_objective_decision_effect1: "Los $POD_splat_mummy_plural$ de [GetFaithByKey('ishmaelite').GetName] resucitarán el doble de rápido #weak (5 años en lugar de 10)#!"
  keeping_the_roots_safe_objective_decision_effect2: "Los requisitos para todos los demás objetivos de $POD_splat_mummy$ se reducirán"
 
@@ -1807,7 +1807,7 @@
  last_meal_before_midnight_objective_decision_desc: "Después de eliminar a las ilusas Momias de la ecuación, [UmbraGlossary('oblivion')] está casi listo para su última comida. Pero eso no es suficiente, lo que queda de las fuerzas de Horus dificulta nuestra tarea. La solución es simple, solo tenemos que matarlos a todos."
  last_meal_before_midnight_objective_decision_tooltip: "La Última Cena Antes de la Medianoche"
  last_meal_before_midnight_objective_decision_confirm: "El fin está aquí"
- last_meal_before_midnight_objective_decision_custom1: "No debe haber ningún [character|E] [landed|E] que sea [GetFaithDoctrine('special_doctrine_against_to_apophis_hostility').GetBaseName]"
+ last_meal_before_midnight_objective_decision_custom1: "No debe haber ningún [landed|E] [characters|E] que sea [GetFaithDoctrine('special_doctrine_against_to_apophis_hostility').GetBaseName]"
  last_meal_before_midnight_objective_decision_custom1_ex: "$last_meal_before_midnight_objective_decision_custom1$ #weak ([example.GetFirstName])#!"
  last_meal_before_midnight_objective_decision_effect1: "[UmbraGlossary('oblivion')] devorará el mundo. #X La partida ha terminado, pues el mundo que conocías se desvanece en la nada.#!"
 
@@ -1856,7 +1856,7 @@
  secure_hades_objective_decision_effect1: "Todos los $POD_splat_mummy_plural$ [GetTrait('cabiri').GetName(GetNullCharacter)] ya no recibirán Pérdida de Memoria doble tras la muerte"
 
  contunuing_greek_tradition_decision: "Desde la Hélade hasta Egipto"
- contunuing_greek_tradition_decision_desc: "[GetScriptedCharacterByHistoryID('792600').GetFirstName] es de [cultura|E] [GetCultureByKey('mycenean').GetName] y, por lo tanto, no está en contacto directo con la Tierra de la Fe egipcia, una fuente intensa de Pneuma. Si controláramos esta área, probablemente podríamos reconfigurar estas energías para que sirvieran a nuestro propósito."
+ contunuing_greek_tradition_decision_desc: "[GetScriptedCharacterByHistoryID('792600').GetFirstName] es [GetCultureByKey('mycenean').GetName], y por lo tanto, no está en contacto directo con la Tierra de la Fe egipcia, una fuente intensa de Pneuma. Si controláramos esta zona, probablemente podríamos reconfigurar estas energías para que sirvieran a nuestro propósito."
  contunuing_greek_tradition_decision_tooltip: "Como hizo Alejandro"
  contunuing_greek_tradition_decision_confirm: "Dos civilizaciones ancestrales se encuentran"
  contunuing_greek_tradition_decision_effect1: "Todos los $POD_splat_mummy_plural$ [GetTrait('cabiri').GetName(GetNullCharacter)] ganarán un recuerdo adicional de $POD_splat_mummy_plural$ cada año mientras vivan en [GetGeographicalRegion('pod_lands_of_faith').GetName]"

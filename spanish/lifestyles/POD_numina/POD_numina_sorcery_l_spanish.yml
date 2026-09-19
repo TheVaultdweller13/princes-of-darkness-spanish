@@ -5,16 +5,16 @@
  
  sorcery_lifestyle_name: "Hechicería"
  sorcery_lifestyle_desc: "Concéntrate en los poderes que provienen de la magia lineal."
- sorcery_lifestyle_highlight_desc: "Debido a tu rasgo místico, ganas #P 50%#! más experiencia en este Estilo de Vida."
- monthly_sorcery_lifestyle_xp_gain_mult: "Experiencia mensual del Estilo de Vida Hechicería"
+ sorcery_lifestyle_highlight_desc: "Debido a tu [trait|E] místico, ganas #P 50%#! más [experience|E] en este Estilo de vida."
+ monthly_sorcery_lifestyle_xp_gain_mult: "[experience|E] mensual del [lifestyle|E] Hechicería"
   
  sorcery_focus: "Enfoque de Hechicería"
  sorcery_focus_modifier: "[GetFocus('sorcery_focus').GetName]"
  sorcery_focus_desc: "Sendas lineales de magia de tapadillo."
  sorcery_focus_effect_desc: "Centrarse en la Hechicería otorga:"
  
- GAINS_SORCERY_LIFESTYLE_XP: "Gana $VALUE|V0$ de Experiencia de Hechicería"
- GAINED_SORCERY_LIFESTYLE_XP: "Ganó $VALUE|V0$ de Experiencia de Hechicería"
+ GAINS_SORCERY_LIFESTYLE_XP: "Gana $VALUE|V0$ de experiencia de [sorcery_lifestyle|E]"
+ GAINED_SORCERY_LIFESTYLE_XP: "Ganó $VALUE|V0$ de experiencia de [sorcery_lifestyle|E]"
  I_GAIN_SORCERY_LIFESTYLE_XP: "Ganas $VALUE|V0$ de Experiencia de Hechicería"
  I_GAINED_SORCERY_LIFESTYLE_XP: "Ganaste $VALUE|V0$ de Experiencia de Hechicería"
  TARGET_GAINS_SORCERY_LIFESTYLE_XP: "[CHARACTER.GetShortUIName] gana $VALUE|V0$ de Experiencia de Hechicería"

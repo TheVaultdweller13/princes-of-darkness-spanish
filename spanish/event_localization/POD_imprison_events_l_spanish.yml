@@ -31,7 +31,7 @@
  OD_imprison.002.option.f.desc: "Uso del arte sagrado Lágrimas del Mártir"
 
  POD_imprison.002.option.a.tt.attacker_wins: "¡Domino a [targetdefender.GetFirstName]!"
- POD_imprison.002.option.a.tt.attacker_lost: "La voluntad de [targetdefender.GetFirstName] es demasiado fuerte para dominarla."
+ POD_imprison.002.option.a.tt.attacker_lost: "La voluntad de [targetdefender.GetFirstNamePossessive] es demasiado fuerte para la Dominación."
  POD_imprison.002.option.b.tt.attacker_wins: "¡Encandilo a [targetdefender.GetFirstName]!"
  POD_imprison.002.option.b.tt.attacker_lost: "[targetdefender.GetFirstName] es inmune a mis encantos." 
  POD_imprison.002.option.c.tt.attacker_wins: "¡Derroto a [targetdefender.GetFirstName] en combate personal!"
@@ -47,7 +47,7 @@
  POD_imprison.002.option.h.tt: "[targetdefender.GetFirstName] será incapaz de resistirse a ser sellad[targetdefender.Custom('ES_OA')] perpetuamente en tu grieta"
 
  POD_imprison.102.title: "Nuevo prisionero"
- POD_imprison.102.desc.dominate: "Has logrado doblegar con éxito la mente de [targetdefender.GetFirstName] a tu propia voluntad, ahora entrará en tu prisión sin objeciones"
+ POD_imprison.102.desc.dominate: "Has logrado doblegar con éxito la mente de [targetdefender.GetFirstNamePossessive] a tu propia voluntad; ahora [targetdefender.GetSheHe] entrará en tu prisión sin objeciones."
  POD_imprison.102.desc.presence: "Has logrado con éxito que [targetdefender.GetFirstName] quiera entrar en su nueva celda de prisión solo para complacerte."
  POD_imprison.102.desc.prowess: "Has ganado. [targetdefender.GetFirstName] ya no puede resistirse a ti. Esto debería enseñar a todos lo que les sucede a quienes se te oponen."
  POD_imprison.102.desc.marshal: "[attacker_marshal.GetFirstName] ha derrotado a [targetdefender.GetFirstName]. Esto enseñará a todos a no oponerse a tu autoridad."

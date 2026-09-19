@@ -1,23 +1,23 @@
 ﻿l_spanish:
 
  POD_drain_the_life.001.t: "Drenar la vida"
- POD_drain_the_life.001.desc: "Con tu nivel actual de Obtenebración puedes cubrir la capital de [target.GetFirstName] en oscuridad. Pero tal poder tiene un coste."
+ POD_drain_the_life.001.desc: "Con tu nivel actual de Obtenebración puedes cubrir la capital de [target.GetFirstNamePossessive] en oscuridad. Pero tal poder tiene un coste."
  POD_drain_the_life.001.desc.ahrimans_demesne: "Eres el maestro de la oscuridad. Con tu gran maestría del Abismo, puedes cubrir todo el reino que controla [target.GetFirstName] en una oscuridad que devora todo lo que toca. Tal poder tiene un coste, y [target.GetFirstName] no estará complacido."
  POD_drain_the_life.001.option.a: "¡Con mi inmenso control sobre el Abismo, cubriré su reino de oscuridad!"
  POD_drain_the_life.001.option.a.tt: "Intentarás lanzar el poder Drenar la vida sobre el reino de [target.GetFirstName]; este poder afectará a cada condado sobre el que tenga control, incluso las tierras que controlan sus vasallos"
  POD_drain_the_life.001.option.a.desc: "Desafío oscuro"
  POD_drain_the_life.001.option.a.success: "Usas con éxito el poder Drenar la vida"
- POD_drain_the_life.001.option.a.tt.attacker_wins: "El reino de [target.GetFirstName] se sumerge en una oscuridad que devora todo lo que toca"
+ POD_drain_the_life.001.option.a.tt.attacker_wins: "El reino de [target.GetFirstNamePossessive] se sumerge en una oscuridad que devora todo lo que toca"
  POD_drain_the_life.001.option.a.failure: "No logras usar el poder Drenar la vida"
  POD_drain_the_life.001.option.a.tt.attacker_lost: "Fracasas"
- POD_drain_the_life.001.option.b: "Pronto, la capital de [target.GetFirstName] quedará envuelta en tinieblas"
- POD_drain_the_life.001.option.b.tt: "Lanzas el poder Drenar la vida sobre el condado de la capital de [target.GetFirstName]"
+ POD_drain_the_life.001.option.b: "Pronto, la capital de [target.GetFirstNamePossessive] quedará envuelta en tinieblas"
+ POD_drain_the_life.001.option.b.tt: "Lanzas el poder Drenar la vida sobre el condado capital de [target.GetFirstNamePossessive]"
  POD_drain_the_life.001.option.c: "No es el momento adecuado"
- POD_drain_the_life.001.option.c.tt: "Dejarás de intentar lanzar Drenar la vida sobre el dominio de [target.GetFirstName]"
+ POD_drain_the_life.001.option.c.tt: "Dejarás de intentar lanzar Drenar la vida sobre el dominio de [target.GetFirstNamePossessive]"
 
  POD_whole_realm_was_drained_toast: "[attacker.GetFirstName] ha lanzado una oscuridad horrible sobre tu reino"
- POD_drained_enemy_realm_toast: "Has lanzado con éxito una oscuridad horrible sobre el reino de [target.GetFirstName]"
- POD_drain_the_life_failed_toast: "No pudiste lanzar una oscuridad horrible sobre el reino de [target.GetFirstName]"
+ POD_drained_enemy_realm_toast: "Has lanzado con éxito una oscuridad horrible sobre el reino de [target.GetFirstNamePossessive]"
+ POD_drain_the_life_failed_toast: "No pudiste lanzar una oscuridad horrible sobre el reino de [target.GetFirstNamePossessive]"
  POD_capital_county_drained_toast: "[attacker.GetFirstName] ha lanzado una oscuridad horrible sobre tu capital"
 
 

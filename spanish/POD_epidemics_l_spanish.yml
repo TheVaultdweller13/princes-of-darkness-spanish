@@ -54,7 +54,7 @@
   POD_epidemic.1201.a: "¡Oh, [ROOT.Char.GetFaith.HealthGodName]! ¡Sálvame de esta pesadilla!"
  
   POD_epidemic.1202.t: "[SCOPE.Custom('EventTitleDisease')]: Contra todo pronóstico"
-  POD_epidemic.1202.desc: "Parece como si la Muerte hubiera pasado por mi puerta, se hubiera demorado junto a mi cama, pero al final hubiera decidido dejarme vivir. Nunca olvidaré los tormentos del toque de [ROOT.Char.GetFaith.DeathDeityName], pero me ha abierto los ojos al milagro del presente.\n\nLa plaga demoníaca se ha cobrado muchas almas, pero yo no seré una de ellas."
+  POD_epidemic.1202.desc: "Parece como si la Muerte hubiera pasado por mi puerta, se hubiera demorado junto a mi cama, pero al final hubiera decidido dejarme vivir. Nunca olvidaré los tormentos de [ROOT.Char.GetFaith.DeathDeityHerHis|U] toque, pero [ROOT.Char.GetFaith.DeathDeitySheHe|U] ha abierto mis ojos al milagro del presente.\n\n La plaga demoníaca se ha cobrado muchas almas, pero yo no seré una de ellas."
   POD_epidemic.1202.a: "¡Alabado sea [ROOT.Char.GetFaith.HealthGodName] por este milagro!"
   POD_epidemic.1202.a.tt: "Ahora soy inmune a la [GetTrait('demonic_plague').GetName( GetNullCharacter )]"
   
@@ -85,7 +85,7 @@
   POD_epidemic.1401.a: "¡Oh, [ROOT.Char.GetFaith.HealthGodName]! ¡Sálvame de esta pesadilla!"
  
   POD_epidemic.1402.t: "[SCOPE.Custom('EventTitleDisease')]: Contra todo pronóstico"
-  POD_epidemic.1402.desc: "Parece como si [ROOT.Char.GetFaith.DeathDeityName] hubiera pasado por mi puerta, se hubiera demorado junto a mi cama, pero al final hubiera decidido dejarme vivir. Nunca olvidaré los tormentos del toque de [ROOT.Char.GetFaith.DeathDeityName], pero me ha abierto los ojos al milagro de la vida.\n\nLa plaga se ha cobrado muchas almas, pero yo no seré una de ellas."
+  POD_epidemic.1402.desc: "Parece como si [ROOT.Char.GetFaith.DeathDeityName] hubiera pasado por mi puerta, se hubiera demorado junto a mi cama, pero al final hubiera decidido dejarme vivir. Nunca olvidaré los tormentos de [ROOT.Char.GetFaith.DeathDeityHerHis|U] toque, pero [ROOT.Char.GetFaith.DeathDeitySheHe|U] ha abierto mis ojos al milagro de la vida.\n\n La plaga se ha cobrado muchas almas, pero yo no seré una de ellas."
   POD_epidemic.1402.a: "¡Alabado sea [ROOT.Char.GetFaith.HealthGodName] por este milagro!"
   POD_epidemic.1402.a.tt: "Ahora soy inmune a la [GetTrait('flaying_plague').GetName( GetNullCharacter )]"
   
@@ -99,7 +99,7 @@
   POD_epidemic.1501.a: "Solo necesito recostarme un poco..."
  
   POD_epidemic.1502.t: "[SCOPE.Custom('EventTitleDisease')]: Contra todo pronóstico"
-  POD_epidemic.1502.desc: "Parece como si [ROOT.Char.GetFaith.DeathDeityName] hubiera pasado por mi puerta, se hubiera demorado junto a mi cama, pero al final hubiera decidido dejarme vivir. Nunca olvidaré los tormentos del toque de [ROOT.Char.GetFaith.DeathDeityName], pero me ha abierto los ojos al milagro de la vida.\n\nEl Azote se ha cobrado muchas almas directa o indirectamente, pero yo no seré una de ellas."
+  POD_epidemic.1502.desc: "Parece como si [ROOT.Char.GetFaith.DeathDeityName] hubiera pasado por mi puerta, se hubiera demorado junto a mi cama, pero al final hubiera decidido dejarme vivir. Nunca olvidaré los tormentos de [ROOT.Char.GetFaith.DeathDeityHerHis|U] toque, pero [ROOT.Char.GetFaith.DeathDeitySheHe|U] ha abierto mis ojos al milagro de la vida.\n\n El Azote se ha cobrado muchas almas directa o indirectamente, pero yo no seré una de ellas."
   POD_epidemic.1502.a: "¡Alabado sea [ROOT.Char.GetFaith.HealthGodName] por este milagro!"
   POD_epidemic.1502.a.tt: "Ahora soy inmune al [GetTrait('scourge').GetName( GetNullCharacter )]"
  
