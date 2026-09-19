@@ -19,7 +19,7 @@
  POD_assault_lair_interaction_monthly: "#help La [planning_speed|E] de este [journey|E] se basa en muchos factores, como la edad de tu objetivo, su rango, [intrigue|E], [masquerade_exposure|E] y otros.#!"
  POD_assault_lair_interaction_instant: "#help Debido a que has [GetModifier('tracked_down_modifier').GetNameWithTooltip|L] a tu objetivo, el [journey|E] se completará instantáneamente.#!"
 
- POD_heist_interaction_hostile_warning: "@death_icon!#N;bold El [splat|E] de [recipient.GetFirstName] es hostil hacia ti. Esta [infiltration|E] será mucho más mortal de lo normal, y el fracaso terminará en tu #R ejecución#! en lugar de en prisión.#!"
+ POD_heist_interaction_hostile_warning: "@death_icon!#N;bold El [splat|E] de [recipient.GetFirstNamePossessiveNoTooltip] es hostil hacia ti. Esta [infiltration|E] será mucho más mortal de lo normal, y el fracaso terminará en tu #R ejecución#! en lugar de en prisión.#!"
  POD_heist_interaction_wary: "@warning_icon! #X [recipient.GetShortUINameNoTooltip] está [GetModifier('wary_of_infiltrators_modifier').GetNameWithTooltip]#!"
  POD_heist_interaction_dont_scout: "El mapa #N;bold no#! será revelado de antemano."
  POD_heist_interaction_scout: "El mapa #P;bold sí#! será revelado, pero la [planning_phase|E] tardará tres veces más."

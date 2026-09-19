@@ -19,7 +19,7 @@
  POD_contagion_mastery_interaction_desc: "Infecta a [recipient.GetShortUIName] con una enfermedad"
  
  POD_healing_touch_interaction: "Toque curativo"
- POD_healing_touch_interaction_desc: "Cura una de las dolencias de [recipient.GetShortUIName]"
+ POD_healing_touch_interaction_desc: "Cura una de las dolencias de [recipient.GetShortUINamePossessive]"
  POD_healing_touch_interaction_no_damage: "¡No hay nada que curar!"
  
  POD_read_the_mind_interaction: "Leer la mente"
@@ -32,7 +32,7 @@
  POD_command_the_ethereal_soul_interaction_desc: "Obliga a [recipient.GetShortUIName] a someterse"
  
  POD_portal_mastery_interaction: "Maestría de portales"
- POD_portal_mastery_interaction_desc: "Teletranspórtate a la ubicación de [recipient.GetShortUIName], o a tu próximo destino cuando estés [traveling|E]"
+ POD_portal_mastery_interaction_desc: "Teletranspórtate a la ubicación de [recipient.GetShortUINamePossessive], o a tu próximo destino cuando estés [traveling|E]"
  
  POD_raise_the_dead_interaction: "Alzar a los muertos"
  POD_raise_the_dead_interaction_desc: "Convierte a [recipient.GetShortUIName] en un [GetTrait('risen').GetName(recipient)]"

@@ -10,7 +10,7 @@
  game_concept_POD_personal_coa: "Armas Personales"
  game_concept_POD_personal_coa_desc: "Las $game_concept_POD_personal_coa$ son un conjunto de armas heráldicas propiedad del individuo en lugar de la [house|e].\n\nUn jugador puede personalizar sus propias armas personales a su gusto."
  PERSONAL_ARMS_COOLTIP: "Armas Personales"
- coa_new_name: "Armas Personales de [GetGlobalVariable('coa_new_name').Char.GetFirstName]"
+ coa_new_name: "Armas Personales de [GetGlobalVariable('coa_new_name').Char.GetFirstNamePossessive]"
  pod_personal_coa_slave: "Poseedor de Armas Personales"
  agot_dylan_house_name_key: "[GetGlobalVariable('coa_new_name').Char.GetDynastyNameNoTooltip]"
  #COA_TOOLTIP_HOLDER: "[GetPlayer.Custom2_Title( 'TitleRelationToMe', TITLE.Self )][TITLE.GetLeaseInfo][holder|E]: [TITLE.GetHolder.GetFullNameNicknamed]\n[SelectLocalization(DataModelHasItems(TITLE.GetLineOfSuccession), 'COA_LINE_OF_SUCCESSION', '')][TITLE.GetLineOfSuccessionDesc]\n"

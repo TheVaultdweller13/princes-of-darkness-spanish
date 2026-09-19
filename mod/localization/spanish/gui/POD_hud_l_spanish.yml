@@ -26,7 +26,7 @@
  POD_hunger_window_herdify_invalid: "[GetPlayer.Custom('PODHerdifyHint')]"
 
  POD_hunger_window_herdify_dhampir: "#help Como [GetTrait('dhampir').GetName(GetPlayer)], puedes añadir $POD_splat_vampire_plural$ a tu [POD_herd|E].\n\n$POD_hunger_window_herdify_suffix$#!"
- POD_hunger_window_herdify_suffix: "Selecciona a cualquier $POD_splat_vampire$ sin tierras e inicia el plan de rebaño mediante [character_interaction|E]."
+ POD_hunger_window_herdify_suffix: "Selecciona a cualquier $POD_splat_vampire$ sin tierras e inicia el [scheme|E] de rebaño mediante [character_interaction|E]."
  POD_hunger_window_herdify_vampire: "#help No hay miembros potenciales para tu [POD_herd|E] en tu corte. Intenta cazar mortales en tu capital.#!"
 
  POD_hunger_window_prisoners_invalid: "#help Actualmente no tienes prisioneros a los que puedas exanguinar o añadir a tu rebaño.#!"
@@ -34,7 +34,7 @@
 
  POD_hunger_window_ghoul_bound: "Como eres un [bound_ghoul|E], tu única forma de perder [hunger_with_icon|E] es completando [bound_ghoul_missions_with_icon|E] de tu $ghoul_domitor$."
 
- POD_hunger_window_ghoul_independent_hunt: "Como [masterless_ghoul|E], puedes emprender un [journey|E] para cazar $POD_splat_vampire_plural$ usando la interacción #V $POD_hunt_target_interaction$#! contra un personaje sin tierras."
+ POD_hunger_window_ghoul_independent_hunt: "Como [masterless_ghoul|E], puedes emprender un [journey|E] para cazar $POD_splat_vampire_plural$ usando la [character_interaction|E] #V $POD_hunt_target_interaction$#! contra un [character|E] sin tierras."
  POD_hunger_window_ghoul_independent_prison: "Tienes un $POD_splat_vampire$ en tu [prison|E] del que puedes beber"
  POD_hunger_window_ghoul_independent_prison_safe: "¡No hay ningún $POD_splat_vampire$ seguro del que beber en tu [prison|E]!\n#weak;underline [masterless_ghoul_imprisoned_drinking|E]#!"
  POD_hunger_window_ghoul_independent_prison_none: "No tienes ningún $POD_splat_vampire_plural$ en tu [prison|E]."
@@ -47,7 +47,7 @@
  POD_glamour_window_regen_building: "#help Tienes una probabilidad del #V [GetPlayer.MakeScope.ScriptValue('chance_for_extra_glamour_regen')]%#! de regenerar Glamour extra de los edificios #TOOLTIP:BUILDING,glade_freehold_01 #L Claro#!#! en tu capital.#!"
  POD_glamour_window_dreamer: "Puedes añadir a uno de tus [courtiers|E] como Soñador."
  POD_glamour_window_dreamer_help: "#help Los Soñadores te otorgarán [lifestyle_experience|E] y tienen una pequeña probabilidad de regenerar tu Glamour.#!"
- POD_glamour_window_reverie: "Ganas #V 2#! de Glamour mediante Ensoñación cada vez que completas un plan de [GetScheme('sway').GetTypeName()], [GetScheme('befriend').GetTypeName()], o [GetScheme('courting').GetTypeName()]."
+ POD_glamour_window_reverie: "Ganas #V 2#! de Glamour mediante Ensoñación cada vez que completas un [scheme|E] de [GetScheme('sway').GetTypeName()], [GetScheme('befriend').GetTypeName()] o [GetScheme('courting').GetTypeName()]."
  POD_glamour_window_artifacts: "Tienes [artifacts|E] que pueden almacenar Glamour."
 
 #  POD_resolve_window: "[GetPlayer.Custom('PODResolveHint')]"

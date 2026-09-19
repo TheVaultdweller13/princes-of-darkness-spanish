@@ -170,7 +170,7 @@
  POD_provoke_vatican.18.desc.nocoterie: "Por suerte, reacciono lo bastante rápido como para desviar la estaca dirigida a mi corazón.\n\n"
  POD_provoke_vatican.18.desc: "Un [GetTrait('supehunter').GetName(GetNullCharacter)] se había acercado sigilosamente por detrás e intentó eliminarme. De repente, hay muchos de ellos alrededor. ¿Siempre estuvieron ahí?\n\n"
  POD_provoke_vatican.18.desc.end.coterie: "Los ojos de [bishop.GetFirstNamePossessive] arden con celo mientras grita: \"¡TRAS ELLOS!\"\n\nIntento reprimir mi decepción por cómo ha ido esta reunión mientras $POD_player_coterie$ se dan a la fuga."
- POD_provoke_vatican.18.desc.end.nocoterie: "Los ojos de [bishop.GetFirstNamePossessive] arden con celo mientras grita: \"¡TRAS [Select_CString(ROOT.Char.IsFemale,'ELLA','ÉL')]\"\n\nIntento reprimir mi decepción por cómo ha ido esta reunión mientras me doy a la fuga."
+ POD_provoke_vatican.18.desc.end.nocoterie: "Los ojos de [bishop.GetFirstNamePossessive] arden con celo mientras grita: «¡TRAS [Select_CString(ROOT.Char.IsFemale,'HER','HIM')]!»\n\nIntento reprimir mi decepción por cómo ha ido esta reunión mientras me doy a la fuga."
  POD_provoke_vatican.18.option.a: "¡Hora de correr!"
  POD_provoke_vatican.18.option.a.tt: "Intentarás escapar de la ciudad... con una horda de Inquisidores pisándote los talones."
 
@@ -217,8 +217,8 @@
  POD_provoke_vatican.30.option.a: "Desenfundo mi arma y me preparo para lo peor..."
 
  POD_provoke_vatican.31.t: "#TOOLTIP:NICKNAME,nick_vatican_hunter4,[hunter4.GetID] #L El Cordero#!#!"
- POD_provoke_vatican.31.desc.coterie: "Los otros miembros de $POD_player_coterie$ yacen muertos en un montón. En medio de ellos se alza un [Select_CString(hunter4.IsFemale,'Inquisitriz','Inquisidor')], enmarcado en un halo de luz diurna insoportable, semejante a una visión del apocalipsis.\n\n"
- POD_provoke_vatican.31.desc.nocoterie: "El interior de mi [ROOT.Char.Custom('PODDomicile')] es una ruina humeante. En medio de ella se alza un [Select_CString(hunter4.IsFemale,'Inquisitriz','Inquisidor')], enmarcado en un halo de luz diurna insoportable, semejante a una visión del apocalipsis.\n\n"
+ POD_provoke_vatican.31.desc.coterie: "Los otros miembros de $POD_player_coterie$ yacen muertos en un montón. En medio de ellos se alza un [Select_CString(hunter4.IsFemale,'Inquisitrix','Inquisitor')], enmarcado en un halo de luz diurna insoportable, semejante a una visión del apocalipsis.\n\n"
+ POD_provoke_vatican.31.desc.nocoterie: "El interior de mi [ROOT.Char.Custom('PODDomicile')] es una ruina humeante. En medio de ella se alza un [Select_CString(hunter4.IsFemale,'Inquisitrix','Inquisitor')], enmarcado en un halo de luz diurna insoportable, semejante a una visión del apocalipsis.\n\n"
  POD_provoke_vatican.31.desc.vampire: "[hunter4.GetSheHe|U] no reza.\n[hunter4.GetSheHe|U] no habla.\n[hunter4.GetSheHe|U] da un paso al frente, y mi sangre aúlla en agonía.\n\nRevelaciones de culpa me invaden. El peso de todos los pecados de mis antepasados, remontándose hasta [ROOT.Char.Custom('PODProgenitor')], asaltándome como fantasmas hambrientos, cortando mi mente como cuchillos.\n\nArde.\n\n"
  POD_provoke_vatican.31.desc.notvampire: "[hunter4.GetSheHe|U] no reza.\n[hunter4.GetSheHe|U] no habla.\n[hunter4.GetSheHe|U] da un paso al frente, y la fe de [hunter4.GetHerHis] retumba como un trueno.\n\nRevelaciones de culpa me invaden. El peso de todos los pecados de mis antepasados, amenazando con aniquilarme, asaltándome como fantasmas hambrientos, cortando mi mente como cuchillos.\n\nArde.\n\n"
  POD_provoke_vatican.31.desc.end: "Quiero gritar, pero ningún sonido escapa de mis labios."

@@ -1020,7 +1020,7 @@
  POD_chargen.1500.desc: "No todos los cazadores son parte de la Inquisición Sombría. Muchos mortales se enteran de los monstruos del mundo de tinieblas, y con coraje y determinación eligen luchar. Algunos cazadores fueron una vez miembros de la Inquisición Sombría, pero encontraron los requisitos de la Iglesia demasiado engorrosos y abandonaron las órdenes; pero continúan cazando a los no-muertos. No todos los cazadores que persiguen a los no vivientes lo hacen por razones nobles.\nEn 1230, ser un cazador que no pertenece a la Inquisición Sombría es una situación más difícil."
  POD_chargen.1500.option.a: "Un cazador independiente con verdadera fe"
  POD_chargen.1500.option.b: "Un cazador independiente sin verdadera fe"
- POD_chargen.1500.option.c: "Un [Glossary('Shih','game_concept_shih_desc')], los cazadores orientales"
+ POD_chargen.1500.option.c: "Un [GetTrait('shih').GetName( GetPlayer )], los cazadores orientales"
  POD_chargen.1500.option.d: "Regresar a la Inquisición Sombría"
  POD_chargen.1500.option.e: "Quizás no soy un cazador"
 

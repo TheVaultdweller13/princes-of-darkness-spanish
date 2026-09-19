@@ -1,6 +1,8 @@
 # Princes of Darkness · Traducción al castellano
 
-Mod de traducción al castellano de España de *Princes of Darkness* para Crusader Kings III (Steam Workshop 3303353422).
+Mod de traducción al castellano (España) de *Princes of Darkness* para Crusader Kings III ([Steam Workshop 3303353422](https://steamcommunity.com/sharedfiles/filedetails/?id=3303353422)).
+
+Versión de [Princes of Darkness](https://steamcommunity.com/workshop/filedetails/?id=2216659254) para la que está hecha: <!-- base-version -->1.19.0.6 «Descent of the Dragons»<!-- /base-version -->.
 
 > **Para agentes e IA:** el punto de partida es **[AGENTS.md](AGENTS.md)** (qué hacer según el encargo) y, para traducir, **[tools/TRADUCIR_LOTE.md](tools/TRADUCIR_LOTE.md)**. El trabajo de un agente termina en `spanish/`: nada de editar `.yml` a mano, ejecutar `build`, tocar `mod/` ni modificar el repositorio con git.
 
@@ -14,7 +16,7 @@ Mod de traducción al castellano de España de *Princes of Darkness* para Crusad
 
 ## Cómo funciona
 
-Los scripts hacen todo lo mecánico y el modelo barato (Haiku) solo traduce textos sueltos. Un script valida cada respuesta antes de escribirla, así que un error del modelo nunca rompe un archivo.
+Los scripts hacen todo lo mecánico y el modelo de IA solo traduce textos sueltos. Un script valida cada respuesta antes de escribirla, así que un error del modelo nunca rompe un archivo.
 
 ```
 english/ ──sync──► spanish/ ──batch──► work_queue/todo/U0001.txt
@@ -51,7 +53,7 @@ spanish/ ──build──► mod/  (se sube a Steam)
    - Claves borradas en origen: se eliminan. Las que solo existen en español se dejan y se avisa.
    - Con `--prune`, los archivos que ya no existen en inglés se mueven a `work_queue/removed/`.
 4. `python tools/pod.py batch --scope update` → lotes **U** solo con lo que trajo el `sync`.
-5. El agente traduce los lotes y cierra con `fix --dirty` y `verify --batch` (ver «El cierre» en `AGENTS.md`).
+5. El agente traduce los lotes y cierra con `fix --dirty`, `verify --batch` y `clean` (ver «El cierre» en `AGENTS.md`).
 6. **(Usuario)** Revisa el diff de `spanish/`, ejecuta `build` con la versión nueva y hace commit.
 
 ## Modo 2 · Pendientes
@@ -84,6 +86,23 @@ spanish/ ──build──► mod/  (se sube a Steam)
 
 Los cambios terminológicos globales (p. ej. Hambre → Ansia) se deciden antes y se añaden a `glossary.tsv` con la marca `l`; luego `check --rule glossary` localiza lo que hay que revisar.
 
+## Limpieza de la cola
+
+`work_queue/` acumula restos: lotes terminados, textos apartados en `manual/`, registros… `python tools/pod.py clean` los limpia sin tocar nunca trabajo pendiente. El cierre de los agentes lo ejecuta siempre; a mano, `--dry-run` muestra antes qué haría.
+
+| Qué | Cuándo se borra |
+|---|---|
+| `manual/` | Los textos que ya se han corregido por otra vía (a mano, con otro agente o en otro lote). Lo que sigue sin resolver se queda y se avisa |
+| `todo/` e `index/` | Lotes cuyo contenido entero ya está resuelto por otra vía, y archivos huérfanos (sin su pareja). Un lote con salida pendiente de aplicar no se toca |
+| `done/` | Lotes aplicados, ya verificados y con más de `keep_done_days` días (7 por defecto) |
+| `applied.jsonl` | Registros ya verificados y con más de `keep_log_days` días (60 por defecto) |
+| `changed.json`, `last_sync.json` | Las claves que ya no están pendientes |
+| `removed/` | Nunca: son archivos que desaparecieron del inglés y conviene revisarlos a mano |
+
+Los plazos se cambian en `clean` de `config.json`.
+
+**Lo que se queda en `manual/`** (textos que fallaron dos veces la validación) se puede corregir a mano en `spanish/`, y el siguiente `clean` lo quita de la lista. También se puede devolver a la cola con `clean --requeue`: se convierten en lotes normales (B o R) y otro agente los traduce por el flujo normal, con validación incluida.
+
 ## Trabajar con un agente
 
 La sesión se abre **en la carpeta del proyecto**: así Claude Code carga `AGENTS.md` a través de `CLAUDE.md` (otros agentes, como Cursor o Codex, leen `AGENTS.md` directamente). Basta con una de estas frases:
@@ -93,25 +112,24 @@ La sesión se abre **en la carpeta del proyecto**: así Claude Code carga `AGENT
 3. **Mejoras:** «Revisa y mejora lo traducido siguiendo `AGENTS.md`: ejecuta `fix` y luego la revisión con la regla `glossary`. Máximo 15 lotes. No toques git.»
 4. **Nombres:** «Adapta los nombres de personajes y dinastías siguiendo `AGENTS.md`. No toques git.»
 
-El agente termina siempre con el cierre (`fix --dirty`, `verify` y un resumen) y nunca ejecuta `build` ni toca git.
+El agente termina siempre con el cierre (`fix --dirty`, `verify`, `clean` y un resumen) y nunca ejecuta `build` ni toca git.
 
-- **Con Haiku:** un máximo de 15 lotes por sesión; para seguir, sesión nueva.
-- **Con un modelo mayor:** puede preparar los lotes y repartir rangos entre subagentes Haiku en paralelo (`apply` bloquea la cola).
+Varias sesiones pueden trabajar a la vez si cada una se ocupa de un rango distinto de lotes: `apply` bloquea la cola mientras escribe.
 
 ### Agente local (Jan)
 
-`tools/local_agent.py` hace el bucle de `TRADUCIR_LOTE.md` con un modelo local, sin que este tenga que ejecutar órdenes: pide el lote con `next`, envía `TRADUCIR_LOTE.md` y el lote al modelo, guarda la respuesta en `work_queue/out/` y ejecuta `apply`. Los rechazos siguen el camino de siempre (reintento → `manual/`).
+`tools/local_agent.py` hace el bucle de `TRADUCIR_LOTE.md` con un modelo local, sin que este tenga que ejecutar órdenes: pide el lote con `next`, envía `TRADUCIR_LOTE.md` y el lote al modelo, guarda la respuesta en `work_queue/out/` y ejecuta `apply`. Los rechazos siguen el mismo camino (reintento → `manual/`).
 
-**Lo más cómodo:** `python tools/menu.py`. Es un menú de consola (Actualizar · Traducir pendientes · Corregir · Seguir con la cola · Estado) que hace los pasos 3 y 4 por ti: prepara los lotes, comprueba que Jan responde, te deja elegir el modelo de una lista (y descarga de Jan los demás que estén cargados, para no ocupar la GPU), lanza el agente y termina con el cierre. Lo de abajo es lo que hace por dentro.
+**Menú:** `python tools/menu.py` ofrece Actualizar · Traducir pendientes · Corregir · Seguir con la cola · Estado · Limpiar la cola. Hace los pasos 3 y 4: prepara los lotes, comprueba que Jan responde, permite elegir el modelo de una lista (y descarga de Jan los demás que estén cargados, para no ocupar la GPU), lanza el agente y termina con el cierre. Los pasos siguientes describen lo que hace por dentro.
 
-1. **Una vez, en Jan:** en la configuración del modelo (Qwen3-14B), *Context Size* = 16384. En Ajustes → llama.cpp, *Parallel Sequences* = 1 y *Unified KV Cache* activado (Jan reserva un hueco extra para sus tareas internas y, sin caché unificada, cada petición solo tendría la mitad del contexto).
-2. **Arrancar:** activa Ajustes → Local API Server (127.0.0.1:1337). Con el menú no hace falta cargar el modelo a mano. Sin el menú, carga uno (y solo uno): el script usa el que esté cargado y se niega a seguir si hay varios, porque Jan carga cualquier modelo que se le pida aunque ya haya otro en marcha.
-3. **Preparar lotes:** igual que siempre (`sync` / `batch`, ver arriba).
+1. **Una vez, en Jan:** en la configuración del modelo, *Context Size* = 16384. En Ajustes → llama.cpp, *Parallel Sequences* = 1 y *Unified KV Cache* activado (Jan reserva un hueco extra para sus tareas internas y, sin caché unificada, cada petición solo tendría la mitad del contexto).
+2. **Arrancar:** activar Ajustes → Local API Server (127.0.0.1:1337). Con el menú no hace falta cargar el modelo a mano; sin el menú, hay que cargar uno (y solo uno): el script usa el que esté cargado y se niega a seguir si hay varios, porque Jan carga cualquier modelo que se le pida aunque ya haya otro en marcha.
+3. **Preparar lotes:** con `sync` / `batch`, como en los modos anteriores.
 4. **Traducir:** `python tools/local_agent.py --prefix B --limit 10 --close`
    - `--dry-run`: traduce el siguiente lote y lo muestra sin guardar nada.
-   - `--close`: hace «el cierre» (`fix --dirty`, `verify --batch`, una pasada R y `status`).
+   - `--close`: hace «el cierre» (`fix --dirty`, `verify --batch`, una pasada R, `clean` y `status`).
    - `--model`: forzar un modelo concreto de Jan. `--url`: otro servidor compatible con OpenAI.
-5. **(Usuario)** Revisa el diff de `spanish/` con más cuidado que con Claude: un modelo de 14B acierta el formato, pero comete más errores de estilo, de concordancia y de terminología.
+5. **(Usuario)** Revisa el diff de `spanish/`, con especial atención al estilo, la concordancia y la terminología.
 
 Si un lote no cabe en el contexto, el script se detiene con el error del servidor y el lote se queda en `todo/`.
 
@@ -135,7 +153,9 @@ Todas las órdenes se ejecutan desde la raíz del repositorio (`python tools/pod
 | Buscar defectos | `python tools/pod.py check --rule tokens --examples 3` |
 | Preparar la corrección de esos defectos | `python tools/pod.py batch --mode review --rule tokens` |
 | Auditar lo que hizo un agente | `python tools/pod.py verify --all` |
-| Volcar el mod y subir versión | `python tools/pod.py build --version 0.3.17 --sync-supported` |
+| Limpiar la cola | `python tools/pod.py clean` (`--dry-run` para simular) |
+| Devolver a la cola lo que quedó en `manual/` | `python tools/pod.py clean --requeue` |
+| Volcar el mod y subir versión | `python tools/pod.py build --version X.Y.Z --sync-supported` (también actualiza la versión de PoD de este README) |
 | Regenerar el glosario del mod | `python tools/pod.py glossary` |
 
 Notas:

@@ -454,7 +454,7 @@
  game_concept_iberian_reclamation:0 "Reclamación"
  game_concept_iberian_reclaiming:0 "Reclamando"
  game_concept_iberian_reclamations:0 "Reclamaciones"
- game_concept_iberian_reclamation_desc:2 "Este es un tipo especial de [war|E] disponible para los [rulers|E] [struggle_involved|E].\n\nEl atacante busca conquistar un [duchy|E] que contenga cualquier [county|E] [struggle_involved|E] poseído por un [ruler|E] [struggle_interloper|E] o [struggle_uninvolved|E], o [vassalize|E]arlos si no poseen tierras fuera de ese Ducado."
+ game_concept_iberian_reclamation_desc:2 "Este es un tipo especial de [war|E] disponible para los [rulers|E] [struggle_involved|E].\n\nEl atacante busca conquistar un [duchy|E] que contenga cualquier [counties|E] [struggle_involved|E] poseído por un [ruler|E] [struggle_interloper|E] o [struggle_uninvolved|E], o [vassalize|E]arlos si no poseen tierras fuera de ese Ducado."
  fp2_struggle_compromise_house_reward_modifier_desc:0 "Esta casa lideró su reino fuera de la lucha."
 
  # BP3
@@ -534,12 +534,12 @@
  calculating_schemes_boilerplate.tt: "\n$BULLET_WITH_TAB$[GetScheme('murder').GetTypeName]\n$BULLET_WITH_TAB$[GetScheme('abduct').GetTypeName]\n$BULLET_WITH_TAB$[GetScheme('diablerize').GetTypeName]"
 
  #refer to vanilla buildings 
- camp_purpose_mercenaries_effects: "$EFFECT_LIST_BULLET$Encuentra más [task_contracts|E] de [mercenary_task_contracts|E]\n$EFFECT_LIST_BULLET$Encuentra más [task_contracts|E] de [prowess|E] y [martial|E]\n\n#WEAK Los mercenarios ganan su dinero ante todo con la espada. Normalmente legalmente, pero cuando los tiempos son difíciles y solo tienes un hacha...#!"
+ camp_purpose_mercenaries_effects: "$EFFECT_LIST_BULLET$Encuentra más [mercenary_task_contracts|E]\n$EFFECT_LIST_BULLET$Encuentra más [prowess|E] y [martial|E] [task_contracts|E]\n\n#WEAK Los mercenarios ganan su dinero ante todo con la espada. Normalmente legalmente, pero cuando los tiempos son difíciles y solo tienes un hacha...#!"
  camp_purpose_wanderers_effects: "$EFFECT_LIST_BULLET$Igualdad de oportunidades para encontrar [task_contracts|E] de cualquier tipo\n$EFFECT_LIST_BULLET$Puede cambiar a cualquier otro $camp_purpose$ sin pagar un elevado costo de [prestige|E]\n\n#WEAK El camino abierto ofrece una libertad como ninguna otra: ¿por qué mancharla con un nicho innecesario?#!"
  camp_purpose_scholars_effects: "$EFFECT_LIST_BULLET$Encuentra más [task_contracts|E] de [learning|E] y [stewardship|E]\n$EFFECT_LIST_BULLET$Encuentra ligeramente más [task_contracts|E] de [diplomacy|E]\n\n#WEAK Un libro guardado en una biblioteca está inquieto, una idea retenida en una sola mente está desperdiciada.#!"
- camp_purpose_brigands_effects: "$EFFECT_LIST_BULLET$Encuentra más [task_contracts|E] [criminal_task_contracts|E] de todo tipo\n$EFFECT_LIST_BULLET$Encuentra más [task_contracts|E] de [prowess|E] y [intrigue|E]\n\n#WEAK "Brigante" es un término tan feo — no hay nada malo en ser decidido y práctico, especialmente si puedes obtener una buena ganancia al mismo tiempo.#!"
+ camp_purpose_brigands_effects: "$EFFECT_LIST_BULLET$Encuentra más [criminal_task_contracts|E] de todo tipo\n$EFFECT_LIST_BULLET$Encuentra más [prowess|E] y [intrigue|E] [task_contracts|E]\n\n#WEAK «Brigante» es un término tan feo — no hay nada malo en ser decidido y práctico, especialmente si puedes obtener una buena ganancia al mismo tiempo.#!"
  camp_purpose_legitimists_effects: "$EFFECT_LIST_BULLET$Igualdad de oportunidades para encontrar [task_contracts|E] de cualquier tipo\n$EFFECT_LIST_BULLET$Puede usar la Interacción $request_laamp_legitimist_support$ sobre Reyes y Emperadores\n$EFFECT_LIST_BULLET$Puede usar el [casus_belli|E] $claim_cb$\n$EFFECT_LIST_BULLET$Encuentra [task_contract|E] único de $laamp_legitimist_support_contract$\n\n#WEAK Una reclamación, la llaman. Una mera reclamación. No es solo una reclamación, es una carta de deuda, una declaración de intenciones y una clara señal de la recuperación que está por venir.#!"
- ep3_can_have_legitimists_camp_purpose_trigger.tt.explanation: "Debes tener una [pressed_claim|E] sobre al menos un [title|E] de rango [kingdom|E]"
+ ep3_can_have_legitimists_camp_purpose_trigger.tt.explanation: "Debes tener una [pressed_claim|E] sobre al menos un [title|E] de rango [kingdom|E]-[title_tier|E]"
  declared_major_religious_war_flag_tt: "Solo puedes declarar una guerra religiosa mayor cada 50 años."
 
  game_concept_levies: "Chusma Mortal"

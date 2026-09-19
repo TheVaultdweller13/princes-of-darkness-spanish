@@ -19,7 +19,7 @@
  
  
  POD_fera_weather_magic_interaction: "Magia climática"
- POD_fera_weather_magic_interaction_desc: "Desata un desastre natural en el reino de [recipient.GetFirstName]."
+ POD_fera_weather_magic_interaction_desc: "Desata un desastre natural en el Señorío de [recipient.GetFirstNamePossessive]."
  POD_fera_weather_magic_interaction_options_heading: "¿Qué peligro natural invocaré?"
  
  
@@ -27,12 +27,12 @@
  
  POD_spawn_flaying_plague_interaction: "Desatar la Plaga del Desollamiento"
  POD_spawn_flaying_plague_interaction_desc: "Tienes la terrible Plaga del Desollamiento a tu disposición. Con algunos ingredientes específicos para el ritual, podrías desatarla sobre los desprevenidos lupinos una vez más."
- POD_spawn_flaying_plague_interaction.tt: "Inflige la Plaga del Desollamiento en la ubicación de [recipient.GetFirstName]."
- POD_spawn_flaying_plague_actor_toast: "La Plaga del Desollamiento campa a sus anchas por la ubicación de [recipient.GetFirstName]."
+ POD_spawn_flaying_plague_interaction.tt: "Inflige la Plaga del Desollamiento en la ubicación de [recipient.GetFirstNamePossessive]."
+ POD_spawn_flaying_plague_actor_toast: "La Plaga del Desollamiento campa a sus anchas por la ubicación de [recipient.GetFirstNamePossessive]."
  POD_spawn_flaying_plague_actor_toast.desc: "Esperemos que no llegues a arrepentirte de esto"
- POD_spawn_flaying_plague_failure_toast: "No lograste propagar la Plaga del Desollamiento en la ubicación de [recipient.GetFirstName]"
+ POD_spawn_flaying_plague_failure_toast: "No lograste propagar la Plaga del Desollamiento en la ubicación de [recipient.GetFirstNamePossessive]"
  POD_spawn_flaying_plague_failure_toast.desc: "Pero habrá más oportunidades en el futuro..."
- POD_spawn_flaying_plague_interaction_success: "La Plaga del Desollamiento estallará en la ubicación de [recipient.GetFirstName] y se propagará desde allí con el tiempo."
+ POD_spawn_flaying_plague_interaction_success: "La Plaga del Desollamiento estallará en la ubicación de [recipient.GetFirstNamePossessive] y se propagará desde allí con el tiempo."
  POD_spawn_flaying_plague_interaction_failure: "La Plaga del Desollamiento no logra arraigar."
  POD_inflict_flaying_plague_interaction: "Infligir la Plaga del Desollamiento"
  POD_inflict_flaying_plague_interaction_desc: "Infesta a [recipient.GetFirstName] con la Plaga del Desollamiento, debilitando sus defensas. Si es capaz de convertirse en una [GetTrait('abomination').GetName(GetNullCharacter)], esto asegurará el éxito del $pod_Embrace$."

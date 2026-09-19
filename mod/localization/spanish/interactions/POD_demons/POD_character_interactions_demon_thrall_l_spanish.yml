@@ -17,7 +17,7 @@
  POD_set_cultist_interaction_effect: "¡Tu [GetCourtPositionType('cult_leader_court_position').GetName()] ha adoctrinado a un nuevo [cultist|E] en tu culto!"
  
  POD_remove_cultist_interaction: "Rechazar cultista"
- POD_remove_cultist_interaction_desc: "Rechaza la adoración de [recipient.GetFirstName], deja de considerarlo como tu [cultist|E]."
+ POD_remove_cultist_interaction_desc: "Rechaza la adoración de [recipient.GetFirstNamePossessive], deja de considerarlo como tu [cultist|E]."
  
  POD_summon_demon_interaction: "Convocar demonio"
  POD_summon_demon_interaction_desc: "Convoca a un [GetTrait('demon').GetName( GetPlayer )] en [recipient.GetFirstName]."

@@ -39,7 +39,7 @@
  POD_journey_player_desc: "[GetPlayer.GetFirstNameNoTooltip] está en la [GetPlayer.Custom('PODShowJourneyPhase')] de [GetPlayer.GetHerHis|l] [journey|E]."
  
  POD_journey_progress_desc: "Progreso: #V;P;bold $POD_JOURNEY_GETPROGRESS$#!"
- POD_journey_planning_speed_desc: "[planning_speed|E]: #V [Localize(Concatenate(GetPlayer.MakeScope.Var('current_journey').Var('progress_value').GetFlagKey,'_monthly_num_current'))]#![AddTextIf(Not(PlayerGuiIsShown('POD_current_journey_is_instant')),' #help (ver descripción en la información adicional)#!')]"
+ POD_journey_planning_speed_desc: "[planning_speed|E]: #V [Localize(Concatenate(GetPlayer.MakeScope.Var('current_journey').Var('progress_value').GetFlagKey,'_monthly_num_current'))]#![AddTextIf(Not(PlayerGuiIsShown('POD_current_journey_is_instant')),' #help (see tooltip for details)#!')]"
  
  POD_journey_phase_planning: "[planning_phase|E]"
  POD_journey_phase_travel: "[travel_phase|E]"

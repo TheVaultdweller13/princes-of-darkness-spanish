@@ -51,7 +51,7 @@
  POD_summon.500.desc.summon_botch: "\n\n#X No podrás intentar convocar a [target.GetFirstNameNoTooltip] durante 50 años.#!"
  
  POD_summon.600.t: "Convocatoria resistida"
- POD_summon.600.desc: "Ya no sientes la llamada de [schemer.GetTitledFirstName]." 
+ POD_summon.600.desc: "Ya no sientes que [schemer.GetTitledFirstNamePossessive] te llama." 
  POD_summon.600.option.a: "¡Fuera de mi mente!"
  
  temp_immune_summon: "Debido a un intento fallido previo, [recipient.GetFirstNameNoTooltip] es inmune a tus intentos de Convocar hasta el [GetCurrentDateWithDiff( GetVarTimeRemaining( recipient.MakeScope, 'immune_to_summon_from_actor') )]"
