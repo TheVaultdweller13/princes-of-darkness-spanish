@@ -71,7 +71,7 @@ working/spanish ──build──► spanish_translation (Steam)
    - `tokens`: marcas del juego perdidas o cambiadas (la más importante).
    - `custom`: funciones de género inexistentes.
    - `spaces`: espacios sobrantes.
-   - `punct`: faltan ¿ o ¡.
+   - `punct`: faltan ¿ o ¡, o sobran («¡» añadido por confundir el cierre `#!` con una exclamación).
    - `glossary`: término del glosario no respetado (solo entradas marcadas con `l`).
    - `display`: texto de `Glossary(...)` o `Concept(...)` sin traducir.
    - `english`: palabras inglesas sueltas.

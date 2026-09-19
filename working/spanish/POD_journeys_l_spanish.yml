@@ -1536,7 +1536,7 @@
  seek_knowledge_abyssal_mysticism_travel_confirm: "$POD_journey_travel_confirm_seek_knowledge$"
  seek_knowledge_abyssal_mysticism_isvalid: "$POD_seek_knowledge_intro$\n$BULLET_WITH_TAB$$POD_seek_knowledge_learning_25$\n$BULLET_WITH_TAB$Tienes [GetTrait('bloodsorceryadvanced').GetName(GetNullCharacter)]\n$BULLET_WITH_TAB$$POD_seek_knowledge_relation$\n$BULLET_WITH_TAB$$POD_seek_knowledge_game_rule$"
 
- thaumaturgy_sihr_incompatible: "#warning ¡La Taumaturgia y el Sihr son incompatibles!#!"
+ thaumaturgy_sihr_incompatible: "#warning La Taumaturgia y el Sihr son incompatibles#!"
  can_learn_sihr_bloodmagic_trigger_ashirra_tooltip: "#warning Solo los vampiros que siguen una [faith|El] [GetReligionByKey('ashirra_religion').GetName] o la [GetFaithByKey('tariqelhaqim').GetName] pueden aprender Sihr#!"
  disciplines_learning_thaumaturgy_tt: "$EFFECT_LIST_BULLET$#bold No#! sabe Sihr\n$POD_seek_knowledge_intro$\n$BULLET_WITH_TAB$$POD_seek_knowledge_learning_20$\n$BULLET_WITH_TAB$Eres un #TOOLTIP:GAME_TRAIT,lifestyle_mystic,[GetPlayer] #L Místico#!#! con #V 100#! de [trait_level_track_xp|E]\n$BULLET_WITH_TAB$$POD_seek_knowledge_relation$\n$BULLET_WITH_TAB$$POD_seek_knowledge_game_rule$"
  disciplines_learning_sielanic_tt: "$EFFECT_LIST_BULLET$#bold No#! sabe Sihr\n$POD_seek_knowledge_intro$\n$BULLET_WITH_TAB$$POD_seek_knowledge_learning_25$\n$BULLET_WITH_TAB$Tu [capital|E] está en #ONCLICK:GEOGRAPHICAL_REGION,custom_eastern_baltic #TOOLTIP:GEOGRAPHICAL_REGION,custom_eastern_baltic #L los Países Bálticos#!#!#!\n$BULLET_WITH_TAB$Eres un [GetTrait('theologian').GetName(GetPlayer)] con [GetTrait('bloodsorceryadvanced').GetName(GetNullCharacter)]\n$BULLET_WITH_TAB$$POD_seek_knowledge_relation$\n$BULLET_WITH_TAB$$POD_seek_knowledge_game_rule$"

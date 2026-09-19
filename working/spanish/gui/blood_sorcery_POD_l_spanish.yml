@@ -5,7 +5,7 @@
  blood_sorcery_interaction_desc: "Abre el menú de hechicería de sangre con tu objetivo como sujeto del hechizo."
  caster_loc: "Lanzador"
  target_loc: "Objetivo"
- execute_loc: "#glow_color:{0,0,0,1} ¡Lanzar#!"
+ execute_loc: "#glow_color:{0,0,0,1} Lanzar#!"
 
  has_1_level_of_thaumaturgy_trigger: "Debes tener cualquier ventaja de nivel #weak (fila)#! 1 en un [bs_path|E] de Taumaturgia"
  has_2_level_of_thaumaturgy_trigger: "Debes tener cualquier ventaja de nivel #weak (fila)#! 2 en un [bs_path|E] de Taumaturgia"
@@ -129,7 +129,7 @@
  path_neptunes_might_tooltip: "Camino del Poder de Neptuno"
  spell_prison_of_water_name: "[bs_spell|E]: Prisión de Agua"
  spell_prison_of_water_cost: "[PlayerBloodValue('bs_prison_of_water_cost')]\n500 @prestige_icon!"
- prison_of_water_increased_cost_tooltip: "@warning_icon! #X ¡Este hechizo es más caro cuando se dirige a [rulers|E]#!"
+ prison_of_water_increased_cost_tooltip: "@warning_icon! #X Este hechizo es más caro cuando se dirige a [rulers|E]#!"
  spell_blood_to_water_name: "[bs_spell|E]: Sangre a Agua"
  spell_blood_to_water_cost: "[PlayerBloodValue('bs_blood_to_water_cost')]"
 
@@ -381,7 +381,7 @@
  ritual_linked_soul_elixir_cost: "250 [gold_i]"
  ritual_scorpions_sending_name: "[bs_ritual|E]: Envío de Escorpiones"
  ritual_scorpions_sending_cost: "250 [gold_i]\n40 [stress_i]"
- POD_bloodmagic_require_ritual_inscribe_the_book_of_set_modifier: "@warning_icon! #N ¡Este [bs_ritual|E] requiere [GetModifier('ritual_inscribe_the_book_of_set_modifier').GetNameWithTooltip]#!"
+ POD_bloodmagic_require_ritual_inscribe_the_book_of_set_modifier: "@warning_icon! #N Este [bs_ritual|E] requiere [GetModifier('ritual_inscribe_the_book_of_set_modifier').GetNameWithTooltip]#!"
  ritual_severing_sand_name: "[bs_ritual|E]: Arena Cortante"
  ritual_severing_sand_cost: "250 [gold_i]"
  ritual_summon_sebau_name: "[bs_ritual|E]: Invocar Sebau"
@@ -481,7 +481,7 @@
  ritual_warded_womb_name: "[bs_ritual|E]: Vientre Protegido"
  ritual_warded_womb_cost: "200 [stress_i]\n250 [gold_i]"
  ritual_transcendentally_satisfying_body_filling_name: "[bs_ritual|E]: Relleno Corporal Trascendentalmente Satisfactorio"
- ritual_transcendentally_satisfying_body_filling_cost: "#R ¡Vida de un $POD_splat_mortal$#!"
+ ritual_transcendentally_satisfying_body_filling_cost: "#R Vida de un $POD_splat_mortal$#!"
 
 
  sihr_rituals_tooltip: "Rituales de Sihr"

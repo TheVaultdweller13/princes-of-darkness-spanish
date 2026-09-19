@@ -852,6 +852,8 @@ def check_items(files=None, only=None, keys=None):
                 plain = strip_markup(sv)
                 if plain.count("?") > plain.count("¿") or plain.count("!") > plain.count("¡"):
                     why.append("falta ¿ o ¡")
+                elif plain.count("¡") > strip_markup(ev).count("!"):
+                    why.append("¡ que no está en el inglés (¿confusión con el cierre #!?)")
             if only in (None, "glossary"):
                 pe, ps = strip_markup(ev), strip_markup(sv).lower()
                 for g in gloss:
