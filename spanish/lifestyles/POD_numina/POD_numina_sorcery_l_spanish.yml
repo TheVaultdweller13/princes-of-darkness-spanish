@@ -15,17 +15,17 @@
  
  GAINS_SORCERY_LIFESTYLE_XP: "Gana $VALUE|V0$ de experiencia de [sorcery_lifestyle|E]"
  GAINED_SORCERY_LIFESTYLE_XP: "Ganó $VALUE|V0$ de experiencia de [sorcery_lifestyle|E]"
- I_GAIN_SORCERY_LIFESTYLE_XP: "Ganas $VALUE|V0$ de Experiencia de Hechicería"
- I_GAINED_SORCERY_LIFESTYLE_XP: "Ganaste $VALUE|V0$ de Experiencia de Hechicería"
- TARGET_GAINS_SORCERY_LIFESTYLE_XP: "[CHARACTER.GetShortUIName] gana $VALUE|V0$ de Experiencia de Hechicería"
- TARGET_GAINED_SORCERY_LIFESTYLE_XP: "[CHARACTER.GetShortUIName] ganó $VALUE|V0$ de Experiencia de Hechicería"
+ I_GAIN_SORCERY_LIFESTYLE_XP: "Ganas $VALUE|V0$ de Experiencia de [sorcery_lifestyle|E]"
+ I_GAINED_SORCERY_LIFESTYLE_XP: "Ganaste $VALUE|V0$ de Experiencia de [sorcery_lifestyle|E]"
+ TARGET_GAINS_SORCERY_LIFESTYLE_XP: "[CHARACTER.GetShortUIName] gana $VALUE|V0$ de Experiencia de [sorcery_lifestyle|E]"
+ TARGET_GAINED_SORCERY_LIFESTYLE_XP: "[CHARACTER.GetShortUIName] ganó $VALUE|V0$ de Experiencia de [sorcery_lifestyle|E]"
 
- GAINS_A_SORCERY_LIFESTYLE_PERKPOINT: "Gana $VALUE|V0$ Puntos de Ventaja de Hechicería"
- GAINED_A_SORCERY_LIFESTYLE_PERKPOINT: "Ganó $VALUE|V0$ Puntos de Ventaja de Hechicería"
- I_GAIN_A_SORCERY_LIFESTYLE_PERKPOINT: "Ganas $VALUE|V0$ Puntos de Ventaja de Hechicería"
- I_GAINED_A_SORCERY_LIFESTYLE_PERKPOINT: "Ganaste $VALUE|V0$ Puntos de Ventaja de Hechicería"
- TARGET_GAINS_A_SORCERY_LIFESTYLE_PERKPOINT: "[CHARACTER.GetShortUIName] gana $VALUE|V0$ Puntos de Ventaja de Hechicería"
- TARGET_GAINED_A_SORCERY_LIFESTYLE_PERKPOINT: "[CHARACTER.GetShortUIName] ganó $VALUE|V0$ Puntos de Ventaja de Hechicería"
+ GAINS_A_SORCERY_LIFESTYLE_PERKPOINT: "Desbloquea $VALUE|V0$ [perk|E] de [sorcery_lifestyle|E]"
+ GAINED_A_SORCERY_LIFESTYLE_PERKPOINT: "Desbloqueó $VALUE|V0$ [perk|E] de [sorcery_lifestyle|E]"
+ I_GAIN_A_SORCERY_LIFESTYLE_PERKPOINT: "Desbloqueas $VALUE|V0$ [perk|E] de [sorcery_lifestyle|E]"
+ I_GAINED_A_SORCERY_LIFESTYLE_PERKPOINT: "Desbloqueaste $VALUE|V0$ [perk|E] de [sorcery_lifestyle|E]"
+ TARGET_GAINS_A_SORCERY_LIFESTYLE_PERKPOINT: "[CHARACTER.GetShortUIName] desbloquea $VALUE|V0$ [perk|E] de [sorcery_lifestyle|E]"
+ TARGET_GAINED_A_SORCERY_LIFESTYLE_PERKPOINT: "[CHARACTER.GetShortUIName] desbloqueó $VALUE|V0$ [perk|E] de [sorcery_lifestyle|E]"
 
  numina_alchemy_visible: "Alquimia"
  numina_conjuration_visible: "Conjuración"
@@ -45,10 +45,10 @@
  numina_shapeshifting_visible: "Cambio de Forma"
  numina_weather_control_visible: "Control Climático"
 
- POD_NUMINA_SORCERY_PERK_POINT_CHECK: "#X @warning_icon! ¡No tienes suficientes puntos de ventaja para desbloquear una nueva senda!#! #V ($VALUE|V0$)#!"
- POD_NUMINA_SORCERY_PERK_POINT_CHECK_2: "#X ¡Esta ventaja costará $VALUE|V0$ puntos de ventaja para desbloquearse!#!"
- NUMINA_REQUIRE_5TH_PERK: "#X @warning_icon! ¡Primero debes desbloquear la ventaja anterior de esta senda!#!"
- NUMINA_DISABLED_6TH_PERK: "#X @warning_icon! ¡Tienes una Regla de Juego que desactiva todas las 6ª ventajas de las sendas de hechicería!#!"
+ POD_NUMINA_SORCERY_PERK_POINT_CHECK: "#X @warning_icon! ¡No tienes suficientes puntos de [perk|E] para desbloquear una nueva senda!#! #V ($VALUE|V0$)#!"
+ POD_NUMINA_SORCERY_PERK_POINT_CHECK_2: "#X ¡Esta [perk|E] costará $VALUE|V0$ puntos de [perk|E] para desbloquearse!#!"
+ NUMINA_REQUIRE_5TH_PERK: "#X @warning_icon! ¡Primero debes desbloquear la [perk|E] anterior de esta senda!#!"
+ NUMINA_DISABLED_6TH_PERK: "#X @warning_icon! ¡Tienes una Regla de Juego que desactiva todas las 6ª [perks|E] de las sendas de hechicería!#!"
 
  sorcery_unlocked_rank_6_flag_tt: "Ahora puedes desbloquear [GetPerk(SCOPE.GetFlagName('saved_tooltip')).GetName(GetPlayer)]"
 
@@ -68,11 +68,11 @@
  numina_alchemy_common_description: "#flavor El estudio de la transformación y la purificación, la Alquimia es un arte y una ciencia ancestrales. Sus practicantes recurren a prácticas dispares, tanto mágicas como científicas, para comprender las propiedades ocultas de la materia y el alma. El objetivo más tradicional de la alquimia no es la más famosa transformación de la materia base en contrapartidas más 'nobles' —como plomo en oro—, sino más bien la perfección del alquimista.#!"
  
  NUMINA_ALCHEMY_1_PERK_EFFECT: "$unlock_brewing_node$ [GetModifier('alchemy_antidepresants_1_modifier').GetNameWithTooltip]\n$unlock_brewing_node$ [GetModifier('alchemy_aphrodisiac_1_modifier').GetNameWithTooltip]\n$unlock_brewing_node$ [GetModifier('alchemy_poison_1_modifier').GetNameWithTooltip]\n$unlock_brewing_node$ [GetModifier('alchemy_antibiotics_1_modifier').GetNameWithTooltip]\n$numina_alchemy_common_description$"
- NUMINA_ALCHEMY_2_PERK_EFFECT: "Mejora todos los nodos de fabricación de [GetPerk('numina_alchemy_1_perk').GetName(GetPlayer)]\n$unlock_brewing_node$ Añade un modificador que aumenta una habilidad aleatoria en 1 ([GetModifier('alchemy_stimulant_diplomacy_modifier').GetNameWithTooltip])\n$numina_alchemy_common_description$"
- NUMINA_ALCHEMY_3_PERK_EFFECT: "Mejora todos los nodos de fabricación de [GetPerk('numina_alchemy_2_perk').GetName(GetPlayer)]\n$numina_alchemy_common_description$"
- NUMINA_ALCHEMY_4_PERK_EFFECT: "Mejora todos los nodos de fabricación de [GetPerk('numina_alchemy_3_perk').GetName(GetPlayer)]\n$unlock_brewing_node$ [GetModifier('alchemy_health_booster_1_modifier').GetNameWithTooltip]\n$numina_alchemy_common_description$"
- NUMINA_ALCHEMY_5_PERK_EFFECT: "Mejora todos los nodos de fabricación de [GetPerk('numina_alchemy_4_perk').GetName(GetPlayer)]\n$unlock_brewing_node$ #TOOLTIP:GAME_TRAIT,immortal,[GetNullCharacter] #L Inmortalidad#!\n$unlock_brewing_node$ #TOOLTIP:GAME_TRAIT,vampire,[GetNullCharacter] #L Vampirismo#!\nDuración del efecto de la poción: #P +1#!\n$numina_alchemy_common_description$"
- NUMINA_ALCHEMY_6_PERK_EFFECT: "Mejora todos los nodos de fabricación de [GetPerk('numina_alchemy_5_perk').GetName(GetPlayer)]\n$unlock_brewing_node$ Aumenta una habilidad seleccionada en #P 1#! sacrificando un personaje con esa habilidad por encima de #bold [EmptyScope.ScriptValue('POD_numina_sorcery_alchemy_skill_potion_requirement')]#!\nDuración del efecto de la poción: #P +2#!\n$numina_alchemy_common_description$"
+ NUMINA_ALCHEMY_2_PERK_EFFECT: "Mejora todos los [crafting_nodes|E] de [GetPerk('numina_alchemy_1_perk').GetName(GetPlayer)]\n$unlock_brewing_node$ Añade un [modifier|E] que aumenta una [skill|E] aleatoria en 1 ([GetModifier('alchemy_stimulant_diplomacy_modifier').GetNameWithTooltip])\n$numina_alchemy_common_description$"
+ NUMINA_ALCHEMY_3_PERK_EFFECT: "Mejora todos los [crafting_nodes|E] de [GetPerk('numina_alchemy_2_perk').GetName(GetPlayer)]\n$numina_alchemy_common_description$"
+ NUMINA_ALCHEMY_4_PERK_EFFECT: "Mejora todos los [crafting_nodes|E] de [GetPerk('numina_alchemy_3_perk').GetName(GetPlayer)]\n$unlock_brewing_node$ [GetModifier('alchemy_health_booster_1_modifier').GetNameWithTooltip]\n$numina_alchemy_common_description$"
+ NUMINA_ALCHEMY_5_PERK_EFFECT: "Mejora todos los [crafting_nodes|E] de [GetPerk('numina_alchemy_4_perk').GetName(GetPlayer)]\n$unlock_brewing_node$ #TOOLTIP:GAME_TRAIT,immortal,[GetNullCharacter] #L Inmortalidad#!\n$unlock_brewing_node$ #TOOLTIP:GAME_TRAIT,vampire,[GetNullCharacter] #L Vampirismo#!\nPotion effect duration: #P +1#!\n$numina_alchemy_common_description$"
+ NUMINA_ALCHEMY_6_PERK_EFFECT: "Mejora todos los [crafting_nodes|E] de [GetPerk('numina_alchemy_5_perk').GetName(GetPlayer)]\n$unlock_brewing_node$ Aumenta un [skill|E] seleccionado en #P 1#! sacrificando a un [character|E] con ese [skill|E] por encima de #bold [EmptyScope.ScriptValue('POD_numina_sorcery_alchemy_skill_potion_requirement')]#!\nDuración del efecto de la poción: #P +2#!\n$numina_alchemy_common_description$"
 
  NUMINA_ALCHEMY_6_PERK_FLAG_REQUIREMENT: "#X @warning_icon! Primero debes completar el [journey|E] #v Estudiar Archimaestría de los Setos: Alquimia#!#!"
  
@@ -87,9 +87,9 @@
  NUMINA_CONJURATION_1_PERK_EFFECT: "$numina_conjuration_common_description$"
  NUMINA_CONJURATION_2_PERK_EFFECT: "$numina_conjuration_common_description$"
  NUMINA_CONJURATION_3_PERK_EFFECT: "@sorcerer_icon![bs_spell|E]: Invoca una mascota aleatoria.\n$numina_conjuration_common_description$"
- NUMINA_CONJURATION_4_PERK_EFFECT: "@sorcerer_icon![bs_spell|E]: Invoca un artefacto #color_dark_green Obra Maestra#! aleatorio.\n$numina_conjuration_common_description$"
- NUMINA_CONJURATION_5_PERK_EFFECT: "@sorcerer_icon![bs_spell|E]: Invoca un objetivo [GetTrait('mortal').GetName(GetPlayer)] o sobrenatural voluntario.\nMejora el @sorcerer_icon![bs_spell|E] de [GetPerk('numina_conjuration_4_perk').GetName(GetPlayer)] invocando en su lugar un artefacto #FAMEDBLUE Afamado#!.\n$numina_conjuration_common_description$"
- NUMINA_CONJURATION_6_PERK_EFFECT: "@sorcerer_icon![bs_spell|E]: Invoca un [GetTrait('demon').GetName(GetPlayer)] del Abismo. Selecciónate a ti mismo para invocar un Demonio aleatorio, o selecciona un personaje [GetTrait('demon').GetName(GetPlayer)] que tenga [GetModifier('trapped_in_abyss_modifier').GetNameWithTooltip] para invocarlo específicamente.\nMejora el @sorcerer_icon![bs_spell|E] de [GetPerk('numina_conjuration_4_perk').GetName(GetPlayer)] invocando en su lugar un artefacto #ILLUSTRIOUSPURPLE Ilustre#!.\nMejora el @sorcerer_icon![bs_spell|E] de [GetPerk('numina_conjuration_5_perk').GetName(GetPlayer)] eliminando el requisito de opinión.\n$numina_conjuration_common_description$"
+ NUMINA_CONJURATION_4_PERK_EFFECT: "@sorcerer_icon![bs_spell|E]: Invoca una #color_dark_green Obra Maestra#! [artifact|E] aleatoria.\n$numina_conjuration_common_description$"
+ NUMINA_CONJURATION_5_PERK_EFFECT: "@sorcerer_icon![bs_spell|E]: Invoca a un [GetTrait('mortal').GetName(GetPlayer)] o a un objetivo sobrenatural dispuesto.\nMejora el @sorcerer_icon![bs_spell|E] de [GetPerk('numina_conjuration_4_perk').GetName(GetPlayer)] invocando en su lugar un [artifact|E] #FAMEDBLUE Famoso#!.\n$numina_conjuration_common_description$"
+ NUMINA_CONJURATION_6_PERK_EFFECT: "@sorcerer_icon![bs_spell|E]: Invoca a un [GetTrait('demon').GetName(GetPlayer)] del Abismo. Elige como objetivo a ti mismo para invocar a un Demonio aleatorio, o elige a un personaje [GetTrait('demon').GetName(GetPlayer)] que esté [GetModifier('trapped_in_abyss_modifier').GetNameWithTooltip] para invocarlo específicamente.\nMejora el @sorcerer_icon![bs_spell|E] de [GetPerk('numina_conjuration_4_perk').GetName(GetPlayer)] invocando en su lugar un [artifact|E] #ILLUSTRIOUSPURPLE Ilustre#!.\nMejora el @sorcerer_icon![bs_spell|E] de [GetPerk('numina_conjuration_5_perk').GetName(GetPlayer)] eliminando el requisito de opinión.\n$numina_conjuration_common_description$"
 
  NUMINA_CONJURATION_6_PERK_FLAG_REQUIREMENT: "#X @warning_icon! Primero debes completar el [journey|E] #V Estudiar Archimaestría de los Setos: Conjuración#!#!"
  
@@ -119,11 +119,11 @@
  numina_divination_common_description: "#flavor Leer hojas de té, lanzar runas o huesos, estudiar el cielo nocturno — todos estos son ejemplos de prácticas tradicionales de Adivinación, cuyas variantes abarcan multitud de culturas. Desde que existe el concepto de futuro, ha habido gente queriendo saber lo que les deparaba. Un mago de tapadillo que realiza actos de Adivinación intenta predecir el futuro. Sin embargo, el futuro es un embrollo siempre cambiante y confuso. Un hechicero puede usar la Adivinación para encontrar pistas sobre los resultados más probables, pero el vidente sabio conoce el valor de interpretar con precisión el simbolismo impreciso y onírico para juzgar los cambios probables de probabilidad.#!"
  
  NUMINA_DIVINATION_1_PERK_EFFECT: "$countermeasures_unlocks_t1_all_seeing_eye$\n$numina_divination_common_description$"
- NUMINA_DIVINATION_2_PERK_EFFECT: "@sorcerer_icon![bs_spell|E]: Descubre un secreto aleatorio del objetivo.\n$numina_divination_common_description$"
+ NUMINA_DIVINATION_2_PERK_EFFECT: "@sorcerer_icon![bs_spell|E]: Descubre un [secret|E] aleatorio del objetivo.\n$numina_divination_common_description$"
  NUMINA_DIVINATION_3_PERK_EFFECT: "$countermeasures_unlocks_t2_all_seeing_eye$\n$numina_divination_common_description$"
- NUMINA_DIVINATION_4_PERK_EFFECT: "@sorcerer_icon![bs_spell|E]: Descubre un plan aleatorio del objetivo.\nRecibirás una notificación si alguien intenta asesinar a tus amigos o familiares.\n$numina_divination_common_description$"
- NUMINA_DIVINATION_5_PERK_EFFECT: "@sorcerer_icon![bs_spell|E]: Descubre un plan aleatorio que tenga como objetivo al objetivo.\n$countermeasures_unlocks_t3_all_seeing_eye$\n$numina_divination_common_description$"
- NUMINA_DIVINATION_6_PERK_EFFECT: "Mejora el @sorcerer_icon![bs_spell|E] de [GetPerk('numina_divination_5_perk').GetName(GetPlayer)] deteniendo también el plan descubierto.\n$countermeasures_unlocks_t4_all_seeing_eye$\n$numina_divination_common_description$"
+ NUMINA_DIVINATION_4_PERK_EFFECT: "@sorcerer_icon![bs_spell|E]: Descubre una [scheme|E] aleatoria del objetivo.\nRecibirás una notificación si alguien tiene la intención de asesinar a tus amigos o familiares.\n$numina_divination_common_description$"
+ NUMINA_DIVINATION_5_PERK_EFFECT: "@sorcerer_icon![bs_spell|E]: Descubre una [scheme|E] aleatoria dirigida al objetivo.\n$countermeasures_unlocks_t3_all_seeing_eye$\n$numina_divination_common_description$"
+ NUMINA_DIVINATION_6_PERK_EFFECT: "Mejora el @sorcerer_icon![bs_spell|E] de [GetPerk('numina_divination_5_perk').GetName(GetPlayer)] al detener también la [scheme|E] descubierta.\n$countermeasures_unlocks_t4_all_seeing_eye$\n$numina_divination_common_description$"
 
  NUMINA_DIVINATION_6_PERK_FLAG_REQUIREMENT: "#X @warning_icon! Primero debes completar el [journey|E] #V Estudiar Archimaestría de los Setos: Adivinación#!#!"
  
@@ -135,12 +135,12 @@
  numina_enchantment_6_perk_name: "Encantamiento $numina_6_name$"
  numina_enchantment_common_description: "#flavor La Senda del Encantamiento recompensa la paciencia y la previsión más que ninguna otra Senda. No hay hechizos en esta Senda, solo rituales, incluyendo los largos y difíciles rituales de creación de objetos mágicos llamados Artefactos. Cada uno de estos Artefactos debe ser cuidadosamente elaborado por el Encantador. El primer paso es crear el objeto base mundano. Usualmente estos son fabricados a mano por el Encantador, llevando sus habilidades mundanas al límite para hacer justo el recipiente adecuado para su magia. A veces, sin embargo, el recipiente adecuado puede encontrarse en forma de un objeto raro o antiguo. Una vez que el recipiente ha sido hecho o encontrado, el Encantador puede pasar al proceso de infundir el objeto con energía mágica para ser usada más tarde.#!"
 
- NUMINA_ENCHANTMENT_1_PERK_EFFECT: "Mejora los nodos de fabricación básicos\n$numina_enchantment_common_description$"
- NUMINA_ENCHANTMENT_2_PERK_EFFECT: "Mejora los nodos de fabricación básicos\nDesbloquea versiones más débiles de los nodos de fabricación básicos para mejorar\n$numina_enchantment_common_description$"
- NUMINA_ENCHANTMENT_3_PERK_EFFECT: "Mejora los nodos de fabricación básicos y sus versiones de mejora\n$numina_enchantment_common_description$"
- NUMINA_ENCHANTMENT_4_PERK_EFFECT: "Mejora los nodos de fabricación básicos y sus versiones de mejora\n$unlock_forging_node$ Añade un modificador que aumenta una habilidad aleatoria ([GetModifier('enchantment_attribute_diplomacy_modifier').GetNameWithTooltip]) con un límite de 1 nodo de fabricación por sesión de artesanía\n$numina_enchantment_common_description$"
- NUMINA_ENCHANTMENT_5_PERK_EFFECT: "Mejora los nodos de fabricación básicos y sus versiones de mejora\nCambia el límite de [GetPerk('numina_enchantment_4_perk').GetName(GetPlayer)] de 1 a 2\n$numina_enchantment_common_description$"
- NUMINA_ENCHANTMENT_6_PERK_EFFECT: "Mejora los nodos de fabricación básicos y sus versiones de mejora\nElimina el límite de [GetPerk('numina_enchantment_4_perk').GetName(GetPlayer)] para forja, y lo aumenta para mejora\n$numina_enchantment_common_description$"
+ NUMINA_ENCHANTMENT_1_PERK_EFFECT: "Mejora los [crafting_nodes|E] básicos\n$numina_enchantment_common_description$"
+ NUMINA_ENCHANTMENT_2_PERK_EFFECT: "Mejora los [crafting_nodes|E] básicos\nDesbloquea versiones más débiles de los [crafting_nodes|E] básicos para [crafting_enhancing|E]\n$numina_enchantment_common_description$"
+ NUMINA_ENCHANTMENT_3_PERK_EFFECT: "Mejora los [crafting_nodes|E] básicos y sus versiones [crafting_enhancing|E]\n$numina_enchantment_common_description$"
+ NUMINA_ENCHANTMENT_4_PERK_EFFECT: "Mejora los [crafting_nodes|E] básicos y sus versiones [crafting_enhancing|E]\n$unlock_forging_node$ Añade un [modifier|E] que aumente un [skill|E] aleatorio ([GetModifier('enchantment_attribute_diplomacy_modifier').GetNameWithTooltip]) con un límite de 1 [crafting_node|E] por sesión de artesanía\n$numina_enchantment_common_description$"
+ NUMINA_ENCHANTMENT_5_PERK_EFFECT: "Mejora los [crafting_nodes|E] básicos y sus versiones [crafting_enhancing|E]\nCambia el límite de [GetPerk('numina_enchantment_4_perk').GetName(GetPlayer)] de 1 a 2\n$numina_enchantment_common_description$"
+ NUMINA_ENCHANTMENT_6_PERK_EFFECT: "Mejora los [crafting_nodes|E] básicos y sus versiones [crafting_enhancing|E]\nElimina el límite de [GetPerk('numina_enchantment_4_perk').GetName(GetPlayer)] para [crafting_forging|E] y lo aumenta para [crafting_enhancing|E]\n$numina_enchantment_common_description$"
 
  NUMINA_ENCHANTMENT_6_PERK_FLAG_REQUIREMENT: "#X @warning_icon! Primero debes completar el [journey|E] #V Estudiar Archimaestría de los Setos: Encantamiento#!#!"
  
@@ -153,11 +153,11 @@
  numina_ephemera_common_description: "#flavor Algunos magos —aquellos que se centran en la Senda de la Nigromancia— comandan espíritus. Aquellos que siguen la Senda de lo Efímero buscan una relación de mayor familiaridad con ellos. Para los magos que usan la Senda de lo Efímero, su relación con los espíritus es más como familia y amigos que amo y sirviente. Cuando llaman a un espíritu, es una invitación, no una citación. En lugar de atar y comandar espíritus, la Senda de lo Efímero permite al mago negociar con ellos.#!"
 
  NUMINA_EPHEMERA_1_PERK_EFFECT: "Puede interactuar con personajes al otro lado de la Barrera.\n$numina_ephemera_common_description$"
- NUMINA_EPHEMERA_2_PERK_EFFECT: "Puede aprender #V 1#! idioma adicional sin penalizaciones.\n$numina_ephemera_common_description$"
- NUMINA_EPHEMERA_3_PERK_EFFECT: "Puede reclutar [GetMaA('jagglings').GetName] como hombres de armas.\n$numina_ephemera_common_description$"
+ NUMINA_EPHEMERA_2_PERK_EFFECT: "Puede aprender #V 1#! [language|E] adicional sin penalizaciones.\n$numina_ephemera_common_description$"
+ NUMINA_EPHEMERA_3_PERK_EFFECT: "Puede reclutar [GetMaA('jagglings').GetName] como [men_at_arms|E].\n$numina_ephemera_common_description$"
  NUMINA_EPHEMERA_4_PERK_EFFECT: "$numina_ephemera_common_description$"
- NUMINA_EPHEMERA_5_PERK_EFFECT: "@sorcerer_icon![bs_spell|E]: Realiza una quiminaje falsa para aumentar ligeramente el rango de un compañero espiritual #ONCLICK:FAITH,velvet_brood #TOOLTIP:FAITH,velvet_brood $Gaiano|L$#!#!.\n$numina_ephemera_common_description$"
- NUMINA_EPHEMERA_6_PERK_EFFECT: "Mejora el @sorcerer_icon![bs_spell|E] de [GetPerk('numina_ephemera_5_perk').GetName(GetPlayer)] duplicando su efecto.\nElimina el coste de entrar en las [UmbraGlossary('spirit_wilds')].\nObtienes el rasgo #V [GetTrait('immortal').GetName(GetPlayer)]#!.\n$numina_ephemera_common_description$"
+ NUMINA_EPHEMERA_5_PERK_EFFECT: "@sorcerer_icon![bs_spell|E]: Realiza un falso chiminaje para aumentar ligeramente el rango de un [spirit_companion|E] #ONCLICK:FAITH,velvet_brood #TOOLTIP:FAITH,velvet_brood $Gaian|L$#!#!.\n$numina_ephemera_common_description$"
+ NUMINA_EPHEMERA_6_PERK_EFFECT: "Mejora el @sorcerer_icon![bs_spell|E] de [GetPerk('numina_ephemera_5_perk').GetName(GetPlayer)] duplicando su efecto.\nElimina el coste de entrar en las [UmbraGlossary('spirit_wilds')].\nObtienes el rasgo #V [GetTrait('immortal').GetName(GetPlayer)]#! [trait|E]\n$numina_ephemera_common_description$"
 
  NUMINA_EPHEMERA_6_PERK_FLAG_REQUIREMENT: "#X @warning_icon! Primero debes completar el [journey|E] #V Estudiar Archimaestría de los Setos: Efímero#!#!"
  
@@ -171,13 +171,13 @@
  
  NUMINA_FASCINATION_1_PERK_EFFECT: "$numina_fascination_common_description$"
  NUMINA_FASCINATION_1_PERK_REASON: "[GetPerk('numina_fascination_1_perk').GetName(GetPlayer)]: $VALUE|0+=$"
- NUMINA_FASCINATION_2_PERK_EFFECT: "Desbloquea el plan [GetScheme('befriend').GetTypeName].\n$numina_fascination_common_description$"
- NUMINA_FASCINATION_3_PERK_EFFECT: "Los personajes son menos propensos a iniciar o unirse a facciones y a unirse a planes como agentes.\n$numina_fascination_common_description$"
+ NUMINA_FASCINATION_2_PERK_EFFECT: "Desbloquea el plan [GetScheme('befriend').GetTypeName] [scheme|E].\n$numina_fascination_common_description$"
+ NUMINA_FASCINATION_3_PERK_EFFECT: "Los [characters|E] son menos propensos a iniciar o unirse a [factions|E] y a unirse a [schemes|E] como agentes.\n$numina_fascination_common_description$"
  NUMINA_FASCINATION_3_PERK_REASON: "[GetPerk('numina_fascination_3_perk').GetName(GetPlayer)]: $VALUE|0+=$"
- NUMINA_FASCINATION_4_PERK_EFFECT: "@sorcerer_icon![bs_spell|E]: Obtén un favor débil sobre el objetivo.\nTus amigos y mejores amigos a veces intentarán iniciar el plan [GetScheme('murder').GetTypeName] contra tus rivales.\n$numina_fascination_common_description$"
- NUMINA_FASCINATION_5_PERK_EFFECT: "Mejora el @sorcerer_icon![bs_spell|E] de [GetPerk('numina_fascination_4_perk').GetName(GetPlayer)] obteniendo un favor fuerte en su lugar.\nTus amantes a veces intentarán iniciar el plan [GetScheme('murder').GetTypeName] contra tus rivales.\nObtienes fuertes defensas mentales.\n$numina_fascination_common_description$"
+ NUMINA_FASCINATION_4_PERK_EFFECT: "@sorcerer_icon![bs_spell|E]: Obtén un [weak_hook|E] sobre el objetivo.\nTus [friends|E] y [best_friends|E] a veces intentarán iniciar [GetScheme('murder').GetTypeName] [scheme|E] contra tus [rivals|E].\n$numina_fascination_common_description$"
+ NUMINA_FASCINATION_5_PERK_EFFECT: "Mejora el @sorcerer_icon![bs_spell|E] de [GetPerk('numina_fascination_4_perk').GetName(GetPlayer)] obteniendo un [strong_hook|E] en su lugar.\nTus [lovers|E] a veces intentarán iniciar [GetScheme('murder').GetTypeName] [scheme|E] contra tus [rivals|E].\nObtienes fuertes defensas mentales.\n$numina_fascination_common_description$"
  NUMINA_FASCINATION_5_PERK_REASON: "[GetPerk('numina_fascination_5_perk').GetName(GetPlayer)]: $VALUE|0+=$"
- NUMINA_FASCINATION_6_PERK_EFFECT: "@sorcerer_icon![bs_spell|E]: Disuelve todas las facciones y planes dirigidos contra el objetivo siempre que sus dueños no tengan fuertes defensas mentales.\n$numina_fascination_common_description$"
+ NUMINA_FASCINATION_6_PERK_EFFECT: "@sorcerer_icon![bs_spell|E]: Disuelve todas las [factions|E] y [schemes|E] dirigidas contra el objetivo siempre que sus dueños no tengan fuertes defensas mentales.\n$numina_fascination_common_description$"
  NUMINA_FASCINATION_6_PERK_REASON: "[GetPerk('numina_fascination_6_perk').GetName(GetPlayer)]: $VALUE|0+=$"
 
  NUMINA_FASCINATION_6_PERK_FLAG_REQUIREMENT: "#X @warning_icon! Primero debes completar el [journey|E] #V Estudiar Archimaestría de los Setos: Fascinación#!#!"
@@ -191,11 +191,11 @@
  numina_fortune_common_description: "#flavor El destino es voluble, incluso antes de tener en cuenta las manipulaciones de los magos. La Senda de la Fortuna les permite esgrimir la suerte como un arma, abatiendo a sus enemigos con maldiciones o fortaleciendo a sus aliados con bendiciones. Aunque los métodos y las explicaciones pueden variar, desde el Mal de Ojo, hasta la Mano de Dios, pasando por la manipulación de probabilidades, la Senda de la Fortuna nunca hace que suceda lo verdaderamente imposible, solo lo extremadamente improbable. También es una de las Sendas menos precisas: Aunque el mago de tapadillo pone la Fortuna en movimiento y controla la magnitud y el rango general de resultados potenciales, los efectos de esta Senda a menudo les sorprenden o desaparecen en el ruido de la vida diaria.#!"
  
  NUMINA_FORTUNE_1_PERK_EFFECT: "$numina_fortune_common_description$"
- NUMINA_FORTUNE_2_PERK_EFFECT: "@sorcerer_icon![bs_spell|E]: Maldice a un objetivo de tipo mortal (ej. [GetTrait('ghoul').GetName(GetNullCharacter)], [GetTrait('revenant').GetName(GetNullCharacter)], [GetTrait('kinfolk').GetName(GetNullCharacter)]) para que resulte herido.\n@sorcerer_icon![bs_spell|E]: Bendice a tu objetivo otorgando [GetModifier('numina_fortune_2_bless_modifier').GetNameWithTooltip].\n$numina_fortune_common_description$"
+ NUMINA_FORTUNE_2_PERK_EFFECT: "@sorcerer_icon![bs_spell|E]: Maldice a un [splat|E] de tipo mortal (ej. [GetTrait('ghoul').GetName(GetNullCharacter)], [GetTrait('revenant').GetName(GetNullCharacter)], [GetTrait('kinfolk').GetName(GetNullCharacter)]) para que resulte herido.\n@sorcerer_icon![bs_spell|E]: Bendice a tu objetivo otorgando [GetModifier('numina_fortune_2_bless_modifier').GetNameWithTooltip].\n$numina_fortune_common_description$"
  NUMINA_FORTUNE_3_PERK_EFFECT: "@sorcerer_icon![bs_spell|E]: Realiza un ritual de zahorí para ganar [gold_i]#V 50#!.\nMejora el @sorcerer_icon![bs_spell|E] de #TOOLTIP:PERK,numina_fortune_2_perk #L Maldecir#!#! empeorando las heridas causadas.\nMejora el @sorcerer_icon![bs_spell|E] de #TOOLTIP:PERK,numina_fortune_2_perk #L Bendecir#!#! otorgando en su lugar [GetModifier('numina_fortune_3_bless_modifier').GetNameWithTooltip].\n$numina_fortune_common_description$"
  NUMINA_FORTUNE_4_PERK_EFFECT: "Mejora el @sorcerer_icon![bs_spell|E] de #TOOLTIP:PERK,numina_fortune_2_perk #L Maldecir#!#! mutilando al objetivo.\nMejora el @sorcerer_icon![bs_spell|E] de #TOOLTIP:PERK,numina_fortune_2_perk #L Bendecir#!#! otorgando en su lugar [GetModifier('numina_fortune_4_bless_modifier').GetNameWithTooltip].\nMejora el @sorcerer_icon![bs_spell|E] de #TOOLTIP:PERK,numina_fortune_3_perk #L Zahorí#!#! aumentando el rendimiento a [gold_i]#V 100#!.\n$numina_fortune_common_description$"
- NUMINA_FORTUNE_5_PERK_EFFECT: "Mejora el @sorcerer_icon![bs_spell|E] de #TOOLTIP:PERK,numina_fortune_2_perk #L Maldecir#!#! permitiendo que afecte a cualquier tipo corpóreo menor de #V 500#! años.\nMejora el @sorcerer_icon![bs_spell|E] de #TOOLTIP:PERK,numina_fortune_2_perk #L Bendecir#!#! otorgando en su lugar [GetModifier('numina_fortune_5_bless_modifier').GetNameWithTooltip].\nMejora el @sorcerer_icon![bs_spell|E] de #TOOLTIP:PERK,numina_fortune_3_perk #L Zahorí#!#! aumentando el rendimiento a [gold_i]#V 150#!.\n$numina_fortune_common_description$"
- NUMINA_FORTUNE_6_PERK_EFFECT: "Mejora el [bs_spell|E] de #TOOLTIP:PERK,numina_fortune_2_perk #L Maldecir#!#! permitiendo que afecte a cualquier tipo.\nMejora el @sorcerer_icon![bs_spell|E] de #TOOLTIP:PERK,numina_fortune_2_perk #L Bendecir#!#! otorgando en su lugar [GetModifier('numina_fortune_6_bless_modifier').GetNameWithTooltip].\nMejora el @sorcerer_icon![bs_spell|E] de #TOOLTIP:PERK,numina_fortune_3_perk #L Zahorí#!#! aumentando el rendimiento a [gold_i]#V 200#!.\n$numina_fortune_common_description$"
+ NUMINA_FORTUNE_5_PERK_EFFECT: "Mejora el @sorcerer_icon![bs_spell|E] de #TOOLTIP:PERK,numina_fortune_2_perk #L Maldecir#!#! permitiendo que afecte a cualquier [splat|E] corpóreo menor de #V 500#! años.\nMejora el @sorcerer_icon![bs_spell|E] de #TOOLTIP:PERK,numina_fortune_2_perk #L Bendecir#!#! otorgando en su lugar [GetModifier('numina_fortune_5_bless_modifier').GetNameWithTooltip].\nMejora el @sorcerer_icon![bs_spell|E] de #TOOLTIP:PERK,numina_fortune_3_perk #L Zahorí#!#! aumentando el rendimiento a [gold_i]#V 150#!.\n$numina_fortune_common_description$"
+ NUMINA_FORTUNE_6_PERK_EFFECT: "Mejora el [bs_spell|E] de #TOOLTIP:PERK,numina_fortune_2_perk #L Maldecir#!#! permitiendo que afecte a cualquier [splat|E].\nMejora el @sorcerer_icon![bs_spell|E] de #TOOLTIP:PERK,numina_fortune_2_perk #L Bendecir#!#! otorgando en su lugar [GetModifier('numina_fortune_6_bless_modifier').GetNameWithTooltip].\nMejora el @sorcerer_icon![bs_spell|E] de #TOOLTIP:PERK,numina_fortune_3_perk #L Zahorí#!#! aumentando el rendimiento a [gold_i]#V 200#!.\n$numina_fortune_common_description$"
 
  NUMINA_FORTUNE_6_PERK_FLAG_REQUIREMENT: "#X @warning_icon! Primero debes completar el [journey|E] #V Estudiar Archimaestría de los Setos: Fortuna#!#!"
  
@@ -211,8 +211,8 @@
  NUMINA_HEALING_2_PERK_EFFECT: "@sorcerer_icon![bs_spell|E]: Cura una enfermedad trivial como [GetTrait('ill').GetName(GetPlayer)] o [GetTrait('sickly').GetName(GetPlayer)].\n@sorcerer_icon![bs_spell|E]: Sana [EmptyScope.ScriptValue('POD_numina_sorcery_healing_2_heal')|V0] [POD_superficial_damage_with_box|E].\n$numina_healing_common_description$"
  NUMINA_HEALING_3_PERK_EFFECT: "Mejora el @sorcerer_icon![bs_spell|E] de #TOOLTIP:PERK,numina_healing_2_perk #L Sanar#!#! curando también [GetTrait('disfigured').GetName(GetPlayer)].\n$numina_healing_common_description$"
  NUMINA_HEALING_4_PERK_EFFECT: "Mejora el @sorcerer_icon![bs_spell|E] de #TOOLTIP:PERK,numina_healing_2_perk #L Curar#!#! curando también enfermedades más graves como [GetTrait('pneumonic').GetName(GetPlayer)], [GetTrait('consumption').GetName(GetPlayer)], etc.\n$numina_healing_common_description$"
- NUMINA_HEALING_5_PERK_EFFECT: "Mejora el @sorcerer_icon![bs_spell|E] de #TOOLTIP:PERK,numina_healing_2_perk #L Sanar#!#! aumentando la cantidad sanada a [EmptyScope.ScriptValue('POD_numina_sorcery_healing_5_heal')|V0] [POD_superficial_damage_with_box|E] y [EmptyScope.ScriptValue('POD_numina_sorcery_healing_5_aggravated_heal')|V0] [POD_aggravated_damage_with_box|E]. También cura rasgos de mutilación como [GetTrait('one_eyed').GetName(GetPlayer)], [GetTrait('maimed').GetName(GetPlayer)], etc.\nMejora el @sorcerer_icon![bs_spell|E] de #TOOLTIP:PERK,numina_healing_2_perk #L Curar#!#! curando también enfermedades incurables como [GetTrait('cancer').GetName(GetPlayer)] o [GetTrait('infirm').GetName(GetPlayer)].\n$numina_healing_common_description$"
- NUMINA_HEALING_6_PERK_EFFECT: "Casillas de salud: #P +1#!\nMejora el @sorcerer_icon![bs_spell|E] de #TOOLTIP:PERK,numina_healing_2_perk #L Sanar#!#! aumentando la cantidad sanada a [EmptyScope.ScriptValue('POD_numina_sorcery_healing_6_heal')|V0] [POD_superficial_damage_with_box|E] y [EmptyScope.ScriptValue('POD_numina_sorcery_healing_6_aggravated_heal')|V0] [POD_aggravated_damage_with_box|E].\nMejora el @sorcerer_icon![bs_spell|E] de #TOOLTIP:PERK,numina_healing_2_perk #L Curar#!#! curando también enfermedades sobrenaturales como [GetTrait('chulorviosis').GetName(GetPlayer)] o [GetTrait('crimson_fever').GetName(GetPlayer)].\nObtienes el rasgo #V [GetTrait('immortal').GetName(GetPlayer)]#!.\n$numina_healing_common_description$"
+ NUMINA_HEALING_5_PERK_EFFECT: "Mejora el #TOOLTIP:PERK,numina_healing_2_perk #L Sanar#!#! @sorcerer_icon![bs_spell|E] aumentando la cantidad sanada a [EmptyScope.ScriptValue('POD_numina_sorcery_healing_5_heal')|V0] [POD_superficial_damage_with_box|E] y [EmptyScope.ScriptValue('POD_numina_sorcery_healing_5_aggravated_heal')|V0] [POD_aggravated_damage_with_box|E]. También cura [traits|E] de mutilación como [GetTrait('one_eyed').GetName(GetPlayer)], [GetTrait('maimed').GetName(GetPlayer)], etc.\nMejora el #TOOLTIP:PERK,numina_healing_2_perk #L Curar#!#! @sorcerer_icon![bs_spell|E] curando también enfermedades incurables como [GetTrait('cancer').GetName(GetPlayer)] o [GetTrait('infirm').GetName(GetPlayer)].\n$numina_healing_common_description$"
+ NUMINA_HEALING_6_PERK_EFFECT: "[POD_health_track|E] casillas: #P +1#!\nMejora el #TOOLTIP:PERK,numina_healing_2_perk #L Sanar#!#! @sorcerer_icon![bs_spell|E] aumentando la cantidad sanada a [EmptyScope.ScriptValue('POD_numina_sorcery_healing_6_heal')|V0] [POD_superficial_damage_with_box|E] y [EmptyScope.ScriptValue('POD_numina_sorcery_healing_6_aggravated_heal')|V0] [POD_aggravated_damage_with_box|E].\nMejora el #TOOLTIP:PERK,numina_healing_2_perk #L Curar#!#! @sorcerer_icon![bs_spell|E] curando también enfermedades sobrenaturales como [GetTrait('chulorviosis').GetName(GetPlayer)] o [GetTrait('crimson_fever').GetName(GetPlayer)].\nObtienes el rasgo #V [GetTrait('immortal').GetName(GetPlayer)]#! [trait|E]\n$numina_healing_common_description$"
 
  NUMINA_HEALING_6_PERK_FLAG_REQUIREMENT: "#X @warning_icon! Primero debes completar el [journey|E] #V Estudiar Archimaestría de los Setos: Curación#!#!"
  
@@ -228,8 +228,8 @@
  NUMINA_HELLFIRE_2_PERK_EFFECT: "$numina_hellfire_common_description$"
  NUMINA_HELLFIRE_3_PERK_EFFECT: "$numina_hellfire_common_description$"
  NUMINA_HELLFIRE_4_PERK_EFFECT: "$numina_hellfire_common_description$"
- NUMINA_HELLFIRE_5_PERK_EFFECT: "Al inicio de la batalla cuando actúas como comandante: Inflige [EmptyScope.ScriptValue('POD_numina_hellfire_5_damage')|V0] [POD_aggravated_damage_with_box|E].\n$numina_hellfire_common_description$"
- NUMINA_HELLFIRE_6_PERK_EFFECT: "Mejora el daño de [GetPerk('numina_hellfire_5_perk').GetName(GetPlayer)] a [EmptyScope.ScriptValue('POD_numina_hellfire_6_damage')|V0] [POD_aggravated_damage_with_box|E].\n$numina_hellfire_common_description$"
+ NUMINA_HELLFIRE_5_PERK_EFFECT: "Al inicio de la batalla cuando actúas como [commander|E]: Inflige [EmptyScope.ScriptValue('POD_numina_hellfire_5_damage')|V0] [POD_aggravated_damage_with_box|E].\n$numina_hellfire_common_description$"
+ NUMINA_HELLFIRE_6_PERK_EFFECT: "Mejora el [POD_damage|E] de [GetPerk('numina_hellfire_5_perk').GetName(GetPlayer)]: el [POD_damage|E] pasa a ser de [EmptyScope.ScriptValue('POD_numina_hellfire_6_damage')|V0] [POD_aggravated_damage_with_box|E].\n$numina_hellfire_common_description$"
 
  NUMINA_HELLFIRE_6_PERK_FLAG_REQUIREMENT: "#X @warning_icon! Primero debes completar el [journey|E] #V Estudiar Archimaestría de los Setos: Fuego Infernal#!#!"
  
@@ -241,12 +241,12 @@
  numina_illusion_6_perk_name: "Ilusión $numina_6_name$"
  numina_illusion_common_description: "#flavor Una de las magias más fundamentales es el poder de engañar a otros para que crean lo que el mago quiere. La Senda de la Ilusión confunde los sentidos, haciendo que sus objetivos perciban cosas que no están ahí o alterando su percepción de lo que sí está. La mayoría de la gente confía en sus sentidos. 'Ver para creer', pero cuando un ilusionista está cerca, este viejo adagio puede matarte.#!"
 
- NUMINA_ILLUSION_1_PERK_EFFECT: "Aumenta la probabilidad de éxito de la decisión [GetDecision('escape_from_prison_decision').GetName].\n$numina_illusion_common_description$"
- NUMINA_ILLUSION_2_PERK_EFFECT: "Al inicio de una guerra, invoca un ejército de #V 100#! [GetMaA('illusionary_combatants').GetName] durante la duración de dicha guerra.\n$countermeasures_unlocks_t1_obfuscated_court$\n$numina_illusion_common_description$"
+ NUMINA_ILLUSION_1_PERK_EFFECT: "Aumenta la probabilidad de éxito para la [decision|E] de [GetDecision('escape_from_prison_decision').GetName].\n$numina_illusion_common_description$"
+ NUMINA_ILLUSION_2_PERK_EFFECT: "Al inicio de una [war|E], invoca un [army|E] de #V 100#! [GetMaA('illusionary_combatants').GetName] durante la duración de dicha [war|E].\n$countermeasures_unlocks_t1_obfuscated_court$\n$numina_illusion_common_description$"
  NUMINA_ILLUSION_3_PERK_EFFECT: "Mejora [GetPerk('numina_illusion_2_perk').GetName(GetPlayer)] aumentando el número de [GetMaA('illusionary_combatants').GetName] invocados a #V 250#!.\n$countermeasures_unlocks_t2_obfuscated_court$\n$numina_illusion_common_description$"
  NUMINA_ILLUSION_4_PERK_EFFECT: "Mejora [GetPerk('numina_illusion_2_perk').GetName(GetPlayer)] aumentando el número de [GetMaA('illusionary_combatants').GetName] invocados a #V 500#!.\n$numina_illusion_common_description$"
  NUMINA_ILLUSION_5_PERK_EFFECT: "Mejora [GetPerk('numina_illusion_2_perk').GetName(GetPlayer)] aumentando el número de [GetMaA('illusionary_combatants').GetName] invocados a #V 1000#!.\n$countermeasures_unlocks_t3_obfuscated_court$\n$numina_illusion_common_description$"
- NUMINA_ILLUSION_6_PERK_EFFECT: "Aumenta enormemente la probabilidad de éxito de la decisión [GetDecision('escape_from_prison_decision').GetName].\n$countermeasures_unlocks_t4_obfuscated_court$\n$numina_illusion_common_description$"
+ NUMINA_ILLUSION_6_PERK_EFFECT: "Aumenta enormemente la probabilidad de éxito para la [decision|E] de [GetDecision('escape_from_prison_decision').GetName].\n$countermeasures_unlocks_t4_obfuscated_court$\n$numina_illusion_common_description$"
 
  NUMINA_ILLUSION_6_PERK_FLAG_REQUIREMENT: "#X @warning_icon! Primero debes completar el [journey|E] #V Estudiar Archimaestría de los Setos: Ilusión#!#!"
  
@@ -260,8 +260,8 @@
  
  NUMINA_NECROMANCY_1_PERK_EFFECT: "Puede interactuar con personajes al otro lado del Velo.\n$POD_can_summon_on_death_trigger_loca$\n$numina_necromancy_common_description$"
  NUMINA_NECROMANCY_2_PERK_EFFECT: "$POD_can_weaken_fetter_trigger_loca$\n$POD_can_bind_wraith_trigger_loca$\n$numina_necromancy_common_description$"
- NUMINA_NECROMANCY_3_PERK_EFFECT: "Desbloquea [GetMaA('hidden').GetName], [GetMaA('walker').GetName], [GetMaA('shambler').GetName] y [GetMaA('skeletons').GetName] como hombres de armas.\n$POD_can_command_wraith_trigger_loca$\n$numina_necromancy_common_description$"
- NUMINA_NECROMANCY_4_PERK_EFFECT: "$unlock_forging_node$ Sacrifica un prisionero $POD_splat_wraith$ para mejorar el artefacto basado en los rasgos del sacrificio\n$numina_necromancy_common_description$"
+ NUMINA_NECROMANCY_3_PERK_EFFECT: "Desbloquea [GetMaA('hidden').GetName], [GetMaA('walker').GetName], [GetMaA('shambler').GetName] y [GetMaA('skeletons').GetName] como [men_at_arms|E].\n$POD_can_command_wraith_trigger_loca$\n$numina_necromancy_common_description$"
+ NUMINA_NECROMANCY_4_PERK_EFFECT: "$unlock_forging_node$ Sacrifica un [prisoner|E] $POD_splat_wraith$ para mejorar el [artifact|E] basado en los [traits|E] del sacrificio\n$numina_necromancy_common_description$"
  NUMINA_NECROMANCY_5_PERK_EFFECT: "$numina_necromancy_common_description$"
  NUMINA_NECROMANCY_6_PERK_EFFECT: "$numina_necromancy_common_description$"
 
@@ -276,11 +276,11 @@
  numina_oneiromancy_common_description: "#flavor Los magos que aprenden la Senda de la Oniromancia aprenden a caminar dentro de los sueños de otros. Una vez allí, intentan tomar el control, y pueden recabar información o alterar los sueños en beneficio o perjuicio del soñador. En la cima de su poder, los oniromantes pueden incluso reunir a varias personas en un sueño compartido. Según la leyenda, algunos pueden incluso hacer los sueños realidad o volverse capaces de entrar físicamente en los sueños.#!"
  
  NUMINA_ONEIROMANCY_1_PERK_EFFECT: "$numina_oneiromancy_common_description$"
- NUMINA_ONEIROMANCY_2_PERK_EFFECT: "@sorcerer_icon![bs_spell|E]: Inflige [stress_i]#V 15#! de estrés al objetivo. El objetivo también tiene una probabilidad del #V 5%#! de ganar un mecanismo de afrontamiento negativo aleatorio y una probabilidad del #V 2.5%#! de sufrir una enfermedad mental aleatoria.\n$numina_oneiromancy_common_description$"
- NUMINA_ONEIROMANCY_3_PERK_EFFECT: "Mejora el @sorcerer_icon![bs_spell|E] de [GetPerk('numina_oneiromancy_2_perk').GetName(GetPlayer)] aumentando el estrés a [stress_i]#V 25#!, la probabilidad de un mecanismo de afrontamiento negativo al #V 10%#!, y la probabilidad de una enfermedad mental al #V 5%#!.\n$numina_oneiromancy_common_description$"
- NUMINA_ONEIROMANCY_4_PERK_EFFECT: "Mejora el @sorcerer_icon![bs_spell|E] de [GetPerk('numina_oneiromancy_2_perk').GetName(GetPlayer)] aumentando el estrés a [stress_i]#V 50#!, la probabilidad de un mecanismo de afrontamiento negativo al #V 20%#!, y la probabilidad de una enfermedad mental al #V 10%#!.\n$numina_oneiromancy_common_description$"
- NUMINA_ONEIROMANCY_5_PERK_EFFECT: "Mejora el @sorcerer_icon![bs_spell|E] de [GetPerk('numina_oneiromancy_2_perk').GetName(GetPlayer)] aumentando el estrés a [stress_i]#V 75#!, la probabilidad de un mecanismo de afrontamiento negativo al #V 30%#!, y la probabilidad de una enfermedad mental al #V 15%#!.\n$numina_oneiromancy_common_description$"
- NUMINA_ONEIROMANCY_6_PERK_EFFECT: "Mejora el @sorcerer_icon![bs_spell|E] de [GetPerk('numina_oneiromancy_2_perk').GetName(GetPlayer)] aumentando el estrés a [stress_i]#V 100#!, la probabilidad de un mecanismo de afrontamiento negativo al #V 50%#!, y la probabilidad de una enfermedad mental al #V 25%#!.\nDesbloquea [GetMaA('night_elves').GetName], [GetMaA('goblins').GetName], [GetMaA('duergar').GetName] y [GetMaA('nuckelavee').GetName] como hombres de armas.\n$numina_oneiromancy_common_description$"
+ NUMINA_ONEIROMANCY_2_PERK_EFFECT: "@sorcerer_icon![bs_spell|E]: Inflige [stress_i]#V 15#! de [stress|E] al objetivo. El objetivo también tiene una probabilidad del #V 5%#! de ganar un mecanismo de afrontamiento negativo aleatorio y una probabilidad del #V 2.5%#! de sufrir una enfermedad mental aleatoria.\n$numina_oneiromancy_common_description$"
+ NUMINA_ONEIROMANCY_3_PERK_EFFECT: "Mejora el @sorcerer_icon![bs_spell|E] de [GetPerk('numina_oneiromancy_2_perk').GetName(GetPlayer)] aumentando el [stress|E] a [stress_i]#V 25#!, la probabilidad de un mecanismo de afrontamiento negativo al #V 10%#! y la probabilidad de una enfermedad mental al #V 5%#!.\n$numina_oneiromancy_common_description$"
+ NUMINA_ONEIROMANCY_4_PERK_EFFECT: "Mejora el @sorcerer_icon![bs_spell|E] de [GetPerk('numina_oneiromancy_2_perk').GetName(GetPlayer)] aumentando el [stress|E] a [stress_i]#V 50#!, la probabilidad de un mecanismo de afrontamiento negativo al #V 20%#! y la probabilidad de una enfermedad mental al #V 10%#!.\n$numina_oneiromancy_common_description$"
+ NUMINA_ONEIROMANCY_5_PERK_EFFECT: "Mejora el @sorcerer_icon![bs_spell|E] de [GetPerk('numina_oneiromancy_2_perk').GetName(GetPlayer)] aumentando el [stress|E] a [stress_i]#V 75#!, la probabilidad de un mecanismo de afrontamiento negativo al #V 30%#! y la probabilidad de una enfermedad mental al #V 15%#!.\n$numina_oneiromancy_common_description$"
+ NUMINA_ONEIROMANCY_6_PERK_EFFECT: "Mejora el @sorcerer_icon![bs_spell|E] de [GetPerk('numina_oneiromancy_2_perk').GetName(GetPlayer)] aumentando el [stress|E] a [stress_i]#V 100#!, la probabilidad de un mecanismo de afrontamiento negativo al #V 50%#! y la probabilidad de una enfermedad mental al #V 25%#!.\nDesbloquea [GetMaA('night_elves').GetName], [GetMaA('goblins').GetName], [GetMaA('duergar').GetName] y [GetMaA('nuckelavee').GetName] como [men_at_arms|E].\n$numina_oneiromancy_common_description$"
 
  NUMINA_ONEIROMANCY_6_PERK_FLAG_REQUIREMENT: "#X @warning_icon! Primero debes completar el [journey|E] #V Estudiar Archimaestría de los Setos: Oniromancia#!#!"
  
@@ -292,12 +292,12 @@
  numina_quintessence_manipulation_6_perk_name: "Manipulación de la Quintaesencia $numina_6_name$"
  numina_quintessence_manipulation_common_description: "#flavor Casi todos los hechiceros pueden estar de acuerdo en un hecho. Hay un flujo de poder que alimenta sus obras. El nombre de ese poder ha adoptado multitud de rostros y filosofías: maná, qi, gnosis, shakti, sekhem y muchos otros. Cada mago puede describir el flujo de energía mientras imponen su voluntad sobre la realidad. Surcándolos como carga a través de un cable eléctrico, puede sentirse, y para algunos puede ser directamente aprovechado.#!"
  
- NUMINA_QUINTESSENCE_MANIPULATION_1_PERK_EFFECT: "Puede usar artefactos fetiche\nInflige el modificador [GetModifier('numina_sorcery_quintessence_manipulation_malus_modifier').GetNameWithTooltip] a los caballeros enemigos [GetTrait('werewolf').GetName(GetPlayer)] cuando actúas como comandante durante la fase de combate, o a tu adversario durante duelos singulares.\n$numina_quintessence_manipulation_common_description$"
- NUMINA_QUINTESSENCE_MANIPULATION_2_PERK_EFFECT: "Puede usar artefactos de Chi\nInflige el modificador [GetModifier('numina_sorcery_quintessence_manipulation_malus_modifier').GetNameWithTooltip] a los caballeros enemigos [GetTrait('kueijin').GetName(GetPlayer)] cuando actúas como comandante durante la fase de combate, o a tu adversario durante duelos singulares.\n$numina_quintessence_manipulation_common_description$"
- NUMINA_QUINTESSENCE_MANIPULATION_3_PERK_EFFECT: "Puede usar artefactos demoníacos\nInflige el modificador [GetModifier('numina_sorcery_quintessence_manipulation_malus_modifier').GetNameWithTooltip] a los caballeros enemigos [GetTrait('demon').GetName(GetPlayer)] cuando actúas como comandante durante la fase de combate, o a tu adversario durante duelos singulares.\n$numina_quintessence_manipulation_common_description$"
- NUMINA_QUINTESSENCE_MANIPULATION_4_PERK_EFFECT: "Puede usar artefactos Feéricos\nInflige el modificador [GetModifier('numina_sorcery_quintessence_manipulation_malus_modifier').GetNameWithTooltip] a los caballeros enemigos [GetTrait('fae').GetName(GetPlayer)] cuando actúas como comandante durante la fase de combate, o a tu adversario durante duelos singulares.\n$numina_quintessence_manipulation_common_description$"
- NUMINA_QUINTESSENCE_MANIPULATION_5_PERK_EFFECT: "Puede usar artefactos de Magia\nInflige el modificador [GetModifier('numina_sorcery_quintessence_manipulation_malus_modifier').GetNameWithTooltip] a los caballeros enemigos [GetTrait('mage').GetName(GetPlayer)] cuando actúas como comandante durante la fase de combate, o a tu adversario durante duelos singulares.\n$numina_quintessence_manipulation_common_description$"
- NUMINA_QUINTESSENCE_MANIPULATION_6_PERK_EFFECT: "Inflige el modificador [GetModifier('numina_sorcery_quintessence_manipulation_6_malus_modifier').GetNameWithTooltip] a los caballeros enemigos cuando actúas como comandante durante la fase de combate, o a tu adversario durante duelos singulares.\n$numina_quintessence_manipulation_common_description$"
+ NUMINA_QUINTESSENCE_MANIPULATION_1_PERK_EFFECT: "Puede usar [artifacts|E] fetiche\nInflige el [modifier|E] [GetModifier('numina_sorcery_quintessence_manipulation_malus_modifier').GetNameWithTooltip] a los [knights|E] enemigos [GetTrait('werewolf').GetName(GetPlayer)] cuando actúas como [commander|E] durante la [combat_phase|E], o a tu adversario durante [single_combat_duel_plural|E].\n$numina_quintessence_manipulation_common_description$"
+ NUMINA_QUINTESSENCE_MANIPULATION_2_PERK_EFFECT: "Puede usar [artifacts|E] potenciados por el Chi\nInflige el [modifier|E] [GetModifier('numina_sorcery_quintessence_manipulation_malus_modifier').GetNameWithTooltip] a los [knights|E] enemigos [GetTrait('kueijin').GetName(GetPlayer)] cuando actúas como [commander|E] durante la [combat_phase|E], o a tu adversario durante [single_combat_duel_plural|E].\n$numina_quintessence_manipulation_common_description$"
+ NUMINA_QUINTESSENCE_MANIPULATION_3_PERK_EFFECT: "Puede usar [artifacts|E] demoníacos\nInflige el [modifier|E] [GetModifier('numina_sorcery_quintessence_manipulation_malus_modifier').GetNameWithTooltip] a los [knights|E] enemigos [GetTrait('demon').GetName(GetPlayer)] cuando actúas como [commander|E] durante la [combat_phase|E], o a tu adversario durante [single_combat_duel_plural|E].\n$numina_quintessence_manipulation_common_description$"
+ NUMINA_QUINTESSENCE_MANIPULATION_4_PERK_EFFECT: "Puede usar [artifacts|E] de las hadas\nInflige el [modifier|E] [GetModifier('numina_sorcery_quintessence_manipulation_malus_modifier').GetNameWithTooltip] a los [knights|E] enemigos [GetTrait('fae').GetName(GetPlayer)] cuando actúas como [commander|E] durante la [combat_phase|E], o a tu adversario durante [single_combat_duel_plural|E].\n$numina_quintessence_manipulation_common_description$"
+ NUMINA_QUINTESSENCE_MANIPULATION_5_PERK_EFFECT: "Puede usar [artifacts|E]\nInflige el modificador [GetModifier('numina_sorcery_quintessence_manipulation_malus_modifier').GetNameWithTooltip] [modifier|E] a los [knights|E] enemigos [GetTrait('mage').GetName(GetPlayer)] cuando actúas como [commander|E] durante la [combat_phase|E], o a tu adversario durante [single_combat_duel_plural|E].\n$numina_quintessence_manipulation_common_description$"
+ NUMINA_QUINTESSENCE_MANIPULATION_6_PERK_EFFECT: "Inflige el modificador [GetModifier('numina_sorcery_quintessence_manipulation_6_malus_modifier').GetNameWithTooltip] [modifier|E] a los [knights|E] enemigos cuando actúas como [commander|E] durante la [combat_phase|E], o a tu adversario durante [single_combat_duel_plural|E].\n$numina_quintessence_manipulation_common_description$"
 
  NUMINA_QUINTESSENCE_MANIPULATION_6_PERK_FLAG_REQUIREMENT: "#X @warning_icon! Primero debes completar el [journey|E] #V Estudiar Archimaestría de los Setos: Manipulación de la Quintaesencia#!#!"
  
@@ -310,11 +310,11 @@
  numina_shadows_common_description: "#flavor El poder sobre la oscuridad es un cliché al que algunos hechiceros no tienen problema en aferrarse por alegría irónica o creencia genuina. Uno no andaría desacertado al suponer la Senda de las Sombras como la fuente del concepto de que las fuerzas oscuras potencian las artes místicas, dado lo a menudo que los charlatanes hacen tal afirmación. Independientemente de su reputación, la Senda conlleva un aire amenazador e intimidante, ya que da forma y desplaza la sustancia del miedo instintivo — las sombras y la oscuridad.#!"
  
  NUMINA_SHADOWS_1_PERK_EFFECT: "$numina_shadows_common_description$"
- NUMINA_SHADOWS_2_PERK_EFFECT: "Inflige el modificador [GetModifier('numina_shadows_2_modifier').GetNameWithTooltip] durante #V 6 meses#! a los caballeros enemigos cuando actúas como comandante durante la fase de combate, o a tu adversario durante duelos singulares.\n$numina_shadows_common_description$"
- NUMINA_SHADOWS_3_PERK_EFFECT: "Mejora el modificador de [GetPerk('numina_shadows_2_perk').GetName(GetPlayer)] a [GetModifier('numina_shadows_3_modifier').GetNameWithTooltip].\n$numina_shadows_common_description$"
- NUMINA_SHADOWS_4_PERK_EFFECT: "Mejora el modificador de [GetPerk('numina_shadows_2_perk').GetName(GetPlayer)] a [GetModifier('numina_shadows_4_modifier').GetNameWithTooltip].\n$numina_shadows_common_description$"
- NUMINA_SHADOWS_5_PERK_EFFECT: "Mejora el modificador de [GetPerk('numina_shadows_2_perk').GetName(GetPlayer)] a [GetModifier('numina_shadows_5_modifier').GetNameWithTooltip].\n$numina_shadows_common_description$"
- NUMINA_SHADOWS_6_PERK_EFFECT: "Mejora el modificador de [GetPerk('numina_shadows_2_perk').GetName(GetPlayer)] a [GetModifier('numina_shadows_6_modifier').GetNameWithTooltip].\n$numina_shadows_common_description$"
+ NUMINA_SHADOWS_2_PERK_EFFECT: "Inflige el modificador [GetModifier('numina_shadows_2_modifier').GetNameWithTooltip] [modifier|E] durante #V 6 meses#! a los [knights|E] enemigos cuando actúas como [commander|E] durante la [combat_phase|E], o a tu adversario durante [single_combat_duel_plural|E].\n$numina_shadows_common_description$"
+ NUMINA_SHADOWS_3_PERK_EFFECT: "Mejora el [modifier|E] de [GetPerk('numina_shadows_2_perk').GetName(GetPlayer)] a [GetModifier('numina_shadows_3_modifier').GetNameWithTooltip].\n$numina_shadows_common_description$"
+ NUMINA_SHADOWS_4_PERK_EFFECT: "Mejora el [modifier|E] de [GetPerk('numina_shadows_2_perk').GetName(GetPlayer)] a [GetModifier('numina_shadows_4_modifier').GetNameWithTooltip].\n$numina_shadows_common_description$"
+ NUMINA_SHADOWS_5_PERK_EFFECT: "Mejora el [modifier|E] de [GetPerk('numina_shadows_2_perk').GetName(GetPlayer)] a [GetModifier('numina_shadows_5_modifier').GetNameWithTooltip].\n$numina_shadows_common_description$"
+ NUMINA_SHADOWS_6_PERK_EFFECT: "Mejora el [modifier|E] de [GetPerk('numina_shadows_2_perk').GetName(GetPlayer)] a [GetModifier('numina_shadows_6_modifier').GetNameWithTooltip].\n$numina_shadows_common_description$"
 
  NUMINA_SHADOWS_6_PERK_FLAG_REQUIREMENT: "#X @warning_icon! Primero debes completar el [journey|E] #V Estudiar Archimaestría de los Setos: Sombras#!#!"
  
@@ -326,12 +326,12 @@
  numina_shapeshifting_6_perk_name: "Cambio de Forma $numina_6_name$"
  numina_shapeshifting_common_description: "#flavor Incluso entre las magias primigenias, la capacidad de transformarse en un animal destaca como excepcional. Muchos monstruos que acechan la noche tienen el poder de la transformación, incluyendo aquellos que son auténticos cambiaformas. Los magos de tapadillo que estudian la Senda del Cambio de Forma imitan una cierta cantidad de su poder, transformando primero partes de sí mismos y más tarde todo su cuerpo de maneras dramáticas.#!"
  
- NUMINA_SHAPESHIFTING_1_PERK_EFFECT: "Opción de cambio de forma: Cambia tus rasgos faciales.\nOpción de cambio de forma: Cambia tu edad visual (si eres inmortal).\n$numina_shapeshifting_common_description$"
- NUMINA_SHAPESHIFTING_2_PERK_EFFECT: "Opción de cambio de forma: Transfórmate en tu #V Forma Bestial#!.\nOpción de cambio de forma: Compra hasta #V 2#! partes animales para incorporar a tu #V Forma Bestial#!, o mejora una parte existente.\n$numina_shapeshifting_common_description$"
- NUMINA_SHAPESHIFTING_3_PERK_EFFECT: "Obtén #V 2#! partes animales adicionales para incorporar a tu #V Forma Bestial#!.\nOpción de cambio de forma: Transfórmate en varias formas animales.\n$numina_shapeshifting_common_description$"
+ NUMINA_SHAPESHIFTING_1_PERK_EFFECT: "[shapeshift|EU] Opción: Cambia tus rasgos faciales.\n[shapeshift|EU] Opción: Cambia tu edad visual (si eres inmortal).\n$numina_shapeshifting_common_description$"
+ NUMINA_SHAPESHIFTING_2_PERK_EFFECT: "[shapeshift|EU] Opción: Transfórmate en tu #V Forma Bestial#!.\n[shapeshift|EU] Opción: Compra hasta #V 2#! partes animales para incorporar a tu #V Forma Bestial#!, o mejora una parte existente.\n$numina_shapeshifting_common_description$"
+ NUMINA_SHAPESHIFTING_3_PERK_EFFECT: "Obtén #V 2#! partes animales adicionales para incorporar a tu #V Forma Bestial#!.\n[shapeshift|EU] Opción: Transfórmate en varias formas animales.\n$numina_shapeshifting_common_description$"
  NUMINA_SHAPESHIFTING_4_PERK_EFFECT: "Obtén #V 4#! partes animales adicionales para incorporar a tu #V Forma Bestial#!.\n$numina_shapeshifting_common_description$"
  NUMINA_SHAPESHIFTING_5_PERK_EFFECT: "Obtén #V 2#! partes animales adicionales para incorporar a tu #V Forma Bestial#!.\n$numina_shapeshifting_common_description$"
- NUMINA_SHAPESHIFTING_6_PERK_EFFECT: "Obtén #V 5#! partes animales adicionales para incorporar a tu #V Forma Bestial#!.\nOpción de cambio de forma: Transfórmate en criaturas míticas.\nOpción de cambio de forma: Cambia tus rasgos físicos.\n$numina_shapeshifting_common_description$"
+ NUMINA_SHAPESHIFTING_6_PERK_EFFECT: "Obtén #V 5#! partes animales adicionales para incorporar a tu #V Forma Bestial#!.\n[shapeshift|EU] Opción: Transfórmate en criaturas míticas.\n[shapeshift|EU] Opción: Cambia tus [physical_traits|E].\n$numina_shapeshifting_common_description$"
 
  NUMINA_SHAPESHIFTING_6_PERK_FLAG_REQUIREMENT: "#X @warning_icon! Primero debes completar el [journey|E] #V Estudiar Archimaestría de los Setos: Cambio de Forma#!#!"
  

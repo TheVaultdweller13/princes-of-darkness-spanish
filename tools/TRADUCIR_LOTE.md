@@ -44,7 +44,8 @@ El validador rechaza la línea si falta, sobra o cambia cualquiera de estas marc
 | Concepto con texto | `[Concept('domicile','Hideout')|E]` | traduce SOLO el segundo texto: `[Concept('domicile','Escondite')|E]` |
 | Glosario con texto | `[Glossary('Disciplines','game_concept_discipline_desc')]` | traduce SOLO el PRIMER texto: `[Glossary('Disciplinas','game_concept_discipline_desc')]` |
 | Umbra con texto | `[UmbraGlossaryLocalized('shadowlands','Underworld')]` | traduce SOLO el segundo texto: `[UmbraGlossaryLocalized('shadowlands','Inframundo')]` |
-| Formato | `#V 15#!`, `#bold texto#!`, `#F …#!` | copiar `#V`, `#bold`, `#!`; traducir el texto de dentro. `#!` solo cierra el formato: **no es una exclamación**, no añadas «¡» ni «!» por él |
+| Texto según condición | `[Select_CString(CHARACTER.IsFemale,'Queen','King')]`, `[AddTextIf( Not(X.IsAdult), ' child' )]` | traduce los textos entre comillas y deja igual la condición: `[Select_CString(CHARACTER.IsFemale,'Reina','Rey')]`, `[AddTextIf( Not(X.IsAdult), ' niño' )]`. Lo que empieza por `(` o lleva `$` es código: cópialo igual |
+| Formato | `#V 15#!`, `#bold texto#!`, `#F …#!` | copiar `#V`, `#bold`, `#!`; traducir el texto de dentro. `#!` solo cierra el formato: **no es una exclamación**, no añadas «¡» ni «!» por él. Si lleva una palabra pegada detrás (`#!Shows`), esa palabra se traduce (`#!Muestra`) |
 | Iconos | `@sorcerer_icon!` | copiar igual |
 | Salto de línea | `\n` | copiar igual, mismo número de veces |
 

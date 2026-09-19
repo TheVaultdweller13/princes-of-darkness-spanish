@@ -126,10 +126,12 @@ def en_files():
 # Funciones con un argumento de texto visible (traducible): nombre → posición del texto
 DISPLAY_ARG = {"Concept": 1, "Glossary": 0, "UmbraGlossaryLocalized": 1}
 TWO_ARG_RE = re.compile(r"\[(\w+)\('([^']*)'\s*,\s*'([^']*)'\)")
-TOKEN_RE = re.compile(r"\[[^\[\]]*\]|\$[^$\s]+\$|@[\w]+!|#![\w]*|#[A-Za-z_][\w;]*|\\n")
+# «#!» solo cierra el formato: la palabra que pueda ir pegada detrás («#!Shows») es texto normal
+TOKEN_RE = re.compile(r"\[[^\[\]]*\]|\$[^$\s]+\$|@[\w]+!|#!|#[A-Za-z_][\w;]*|\\n")
 ES_CUSTOM_RE = re.compile(r"\[[\w.:]+\.(Get)?Custom\('(ES_\w+)'\)(\|\w+)?\]")
 # Pronombres ingleses del juego: en español se pueden omitir o añadir libremente
-GENDER_GETTER_RE = re.compile(r"\[[\w.:()']+\.(GetHerHis|GetSheHe|GetHerHim|GetHerselfHimself|GetLadyLord|GetWomanMan|GetHersHis)(\|\w*)?\]")
+# (\s* tolera el espacio de más que trae a veces el mod original: [CHARACTER. GetHerHim])
+GENDER_GETTER_RE = re.compile(r"\[[\w.:()']+\.\s*(GetHerHis|GetSheHe|GetHerHim|GetHerselfHimself|GetLadyLord|GetWomanMan|GetHersHis)(\|\w*)?\]")
 
 
 def display_args(s):
@@ -150,7 +152,20 @@ def vanilla_es_customs():
     return _vanilla_es
 
 
+# Funciones que eligen un texto visible según una condición: sus textos entre comillas se traducen
+TEXT_CHOICE_RE = re.compile(r"\b(Select_CString|AddTextIf)\s*\(")
+QUOTED_ARG_RE = re.compile(r"(,\s*)'([^']*)'")
+
+
+def _is_text_literal(v):
+    """Texto para el jugador, no código: sin paréntesis inicial, variables, barras ni guiones bajos."""
+    return not (v.startswith("(") or "$" in v or "|" in v or "_" in v)
+
+
 def norm_token(t):
+    if t.startswith("[") and TEXT_CHOICE_RE.search(t):
+        t = QUOTED_ARG_RE.sub(lambda m: m.group(1) + ("'*'" if _is_text_literal(m.group(2)) else f"'{m.group(2)}'"), t)
+        t = re.sub(r"\s+", "", t)  # los espacios dentro de estas funciones no cambian nada en el juego
     if t.startswith("["):
         def wild(m):
             if m.group(1) not in DISPLAY_ARG:
