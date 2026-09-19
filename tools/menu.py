@@ -8,7 +8,6 @@ pod.py y lanza tools/local_agent.py, que termina con «el cierre».
 build, la versión y git siguen siendo cosa del usuario.
 Solo librería estándar.
 """
-import json
 import subprocess
 import sys
 import urllib.request
@@ -21,7 +20,6 @@ ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "tools"))
 from local_agent import JAN_URL, jan_models, unload_others  # noqa: E402
 
-EN_DIR = json.loads((ROOT / "tools" / "config.json").read_text(encoding="utf-8"))["en_dir"]
 TODO = ROOT / "work_queue" / "todo"
 RULES = [
     ("tokens", "marcas del juego perdidas o cambiadas (la más importante)"),
@@ -117,7 +115,7 @@ def agent(prefix=None):
     n = len(list(manual.glob("*.json"))) if manual.exists() else 0
     if n:
         print(f"\n⚠ Hay {n} textos en work_queue/manual/ que el modelo no ha sabido traducir: revísalos a mano.")
-    print("\nRevisa el diff de spanish/. build, la versión y git son cosa tuya.")
+    print("\nRevisa el diff de working/spanish. build, la versión y git son cosa tuya.")
 
 
 # ── opciones del menú ───────────────────────────────────────────────────────
@@ -127,16 +125,16 @@ def update():
     if queued("U") and yes(f"Ya hay {len(queued('U'))} lotes U en la cola. ¿Traducirlos sin volver a sincronizar?", True):
         return agent("U")
     try:
-        r = subprocess.run(["git", "status", "--porcelain", "--", EN_DIR], cwd=ROOT,
+        r = subprocess.run(["git", "status", "--porcelain", "--", "original_text"], cwd=ROOT,
                            capture_output=True, text=True, encoding="utf-8")
     except FileNotFoundError:
-        print(f"✘ No encuentro git: hace falta para saber qué ha cambiado en {EN_DIR}/.")
+        print("✘ No encuentro git: hace falta para saber qué ha cambiado en original_text.")
         return
     if r.returncode:
         print(f"✘ git ha fallado:\n{r.stderr}")
         return
     if r.stdout.strip():
-        print(f"✘ {EN_DIR}/ tiene cambios sin commitear. Haz commit del inglés nuevo y vuelve a intentarlo.")
+        print("✘ original_text tiene cambios sin commitear. Haz commit del inglés nuevo y vuelve a intentarlo.")
         return
     print("Esto es lo que cambiaría (simulación):\n")
     if not pod("sync", "--dry-run"):

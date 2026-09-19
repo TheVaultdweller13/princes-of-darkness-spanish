@@ -7,15 +7,15 @@ Solo librería estándar. Ejecutar desde cualquier sitio: python tools/pod.py <o
 Órdenes:
   status                     Progreso real por clave y estado de la cola.
   sync [--base C] [--dry-run] [--prune]
-                             Aplica una actualización del inglés (english/) sobre spanish/:
+                             Aplica una actualización del inglés (original_text) sobre working/spanish:
                              archivos nuevos, claves nuevas, claves con inglés cambiado, claves borradas.
   batch [--mode pending|review|names] [--scope all|update] [--rule R] [--files GLOB] [--limit N] [--no-tm]
                              Crea lotes para el agente traductor en work_queue/todo (y autocompleta con memoria de traducción).
   next [--prefix U|B|R|N]    Muestra el siguiente lote pendiente (lo que tiene que hacer el agente).
-  apply [LOTE ...|--all]     Valida las salidas de work_queue/out y las escribe en spanish/.
+  apply [LOTE ...|--all]     Valida las salidas de work_queue/out y las escribe en working/spanish.
   check [--files GLOB]       Informe de problemas (tokens, glosario, espacios, ¿¡, Custom ES_...).
   build [--version X] [--sync-supported]
-                             Regenera mod/localization/spanish para publicar.
+                             Regenera spanish_translation/localization/spanish para publicar.
   fix [--dry-run] [--dirty] [--files GLOB]
                              Arreglos automáticos sin IA (dobles espacios, GetCustom('ES_O'), "| E]", "Concept (", comillas sin cerrar).
   verify [--all] [--batch]   Revisa solo las claves escritas por los lotes ya aplicados (--batch crea lotes R para corregirlas).
@@ -372,10 +372,8 @@ def cmd_sync(a):
     base = a.base or CFG["last_synced_en_commit"]
     dirty = git("status", "--porcelain", "--", CFG["en_dir"]).stdout.strip()
     if dirty and not a.dry_run:
-        sys.exit(f"{CFG['en_dir']} tiene cambios sin commitear: haz commit antes de sincronizar.")
+        sys.exit("original_text tiene cambios sin commitear: haz commit antes de sincronizar.")
     head = git("log", "-1", "--format=%h", "--", CFG["en_dir"]).stdout.strip()
-    if not head:
-        sys.exit(f"git no tiene ningún commit con {CFG['en_dir']}/: haz commit de la carpeta antes de sincronizar.")
     print(f"Sincronizando inglés {base} → {head}{'  (simulación)' if a.dry_run else ''}")
     changed_log = {}
     upd_files, upd_keys = [], defaultdict(list)
@@ -391,11 +389,7 @@ def cmd_sync(a):
                 esp.parent.mkdir(parents=True, exist_ok=True)
                 shutil.copyfile(EN_DIR / rel, esp)  # conserva cabecera l_english = sin traducir
             continue
-        # el inglés del commit base puede estar en una ruta anterior (carpetas renombradas)
-        for d in [CFG["en_dir"]] + CFG.get("en_dir_previous", []):
-            r = git("show", f"{base}:{d}/{rel}")
-            if r.returncode == 0:
-                break
+        r = git("show", f"{base}:{CFG['en_dir']}/{rel}")
         old = Loc(None, r.stdout) if r.returncode == 0 else None
         oidx = old.index() if old else {}
         en = Loc(EN_DIR / rel)
@@ -1023,7 +1017,7 @@ FIXES = [
 
 
 def dirty_rels():
-    """Archivos de spanish/ modificados respecto a HEAD, en claves de inglés."""
+    """Archivos de working/spanish modificados respecto a HEAD, en claves de inglés."""
     out = git("status", "--porcelain", "--", CFG["es_dir"]).stdout.splitlines()
     rels = set()
     for line in out:
@@ -1093,7 +1087,7 @@ def main():
     s = sp.add_parser("build"); s.add_argument("--version"); s.add_argument("--sync-supported", action="store_true")
     sp.add_parser("glossary")
     s = sp.add_parser("fix"); s.add_argument("--dry-run", action="store_true")
-    s.add_argument("--dirty", action="store_true", help="solo los archivos de spanish/ modificados respecto a HEAD")
+    s.add_argument("--dirty", action="store_true", help="solo los archivos de working/spanish modificados respecto a HEAD")
     s.add_argument("--files", help="patrón, p. ej. \"traits/*\"")
     s = sp.add_parser("verify"); s.add_argument("--all", action="store_true"); s.add_argument("--batch", action="store_true")
     s.add_argument("--files")
