@@ -57,6 +57,8 @@
 
 
  POD_terrain_energy_vessel_min_combat_roll: "[Artifact.GetOwner.Custom('PODEnergySplat')] almacenada: #bold;P [Multiply_CFixedPoint( Artifact.MakeScope.Var('energy_stored').GetValue, Artifact.GetOwner.MakeScope.ScriptValue('splat_energy_multiplier') )|0]/[Multiply_CFixedPoint( Artifact.MakeScope.Var('max_energy_stored').GetValue, Artifact.GetOwner.MakeScope.ScriptValue('splat_energy_multiplier') )|0]#!"
+ POD_terrain_bound_demon_artifact_min_combat_roll: "Contiene al [Concept('diabolism','@demon_icon!Demonio Vinculado')|E] [Artifact.MakeScope.Var('artifact_bound_demon').Char.GetFirstName|V]"
+ POD_bound_demon_artifact_suffix: " @infernalist_icon![investiture_lifestyle|E] [perks|E]"
 
  POD_terrain_artifact_advantage: "Coste de [buy_claim_interaction|E] y [buy_artifact_claim_interaction|E]"
 

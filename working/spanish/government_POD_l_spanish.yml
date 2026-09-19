@@ -1,7 +1,7 @@
 ﻿l_english:
- traditions_government: "Traditions"
+ traditions_government: "Tradiciones"
  traditions_government_with_icon: "@vampire_icon! $traditions_government$"
- traditions_government_adjective: "Traditions"
+ traditions_government_adjective: "Tradiciones"
  traditions_government_realm: "$pod_cainite$ Realm"
  traditions_government_vassals_label: "$pod_cainite$ [obligations|E] are based on each [vassal|E]'s [vassal_contract|E]"
  traditions_government_desc: "The vast majority of Vampire realms follow the Traditions of Caine, a somewhat rough code of conduct on how to behave yourself around mortals and other kindred."
@@ -10,7 +10,7 @@
 
  inquisition_government: "Inquisition Order"
  inquisition_government_with_icon: "@supehunter_icon! $inquisition_government$"
- inquisition_government_adjective: "Inquisition"
+ inquisition_government_adjective: "Inquisición"
  inquisition_government_realm: "Inquisition Order"
  inquisition_government_vassals_label: "Inquisitor [obligations|E] are based on [opinion|E]"
  inquisition_government_desc: "A cell of Inquisitors, destroying supernatural influence wherever they find it."
@@ -19,7 +19,7 @@
 
  august_court_government: "August Court"
  august_court_government_with_icon: "@kueijin_icon! $august_court_government$"
- august_court_government_adjective: "August"
+ august_court_government_adjective: "Augusto"
  august_court_government_realm: "August Court"
  august_court_government_vassals_label: "August Court [obligations|E] are based on each [vassal|E]'s [vassal_contract|E]"
  august_court_government_desc: "The earliest organized social structures of the Wan-Kuei in the Middle Kingdom."
@@ -37,7 +37,7 @@
 
  cell_government: "Hunter Cell"
  cell_government_with_icon: "@supehunter_icon! $cell_government$"
- cell_government_adjective: "Hunter"
+ cell_government_adjective: "Cazador"
  cell_government_realm: "Hunter Cell"
  cell_government_vassals_label: "Hunter [obligations|E] are based on [opinion|E]"
  cell_government_desc: "A cell of hunters, destroying supernatural influence wherever they find it."
@@ -143,12 +143,12 @@
  fera_tribe_government_filter_option: "$fera_tribe_government$"
  fera_tribe_government_filter_option_desc: "Only show characters with [GetGovernment( 'fera_tribe_government' ).GetName] [government|E]"
 
- dark_kingdom_government: "Dark Kingdom"
+ dark_kingdom_government: "Reino Oscuro"
  dark_kingdom_government_with_icon: "@wraith_icon! $dark_kingdom_government$"
- dark_kingdom_government_adjective: "Dark Kingdom"
- dark_kingdom_government_realm: "Dark Kingdom"
+ dark_kingdom_government_adjective: "Reino Oscuro"
+ dark_kingdom_government_realm: "Reino Oscuro"
  dark_kingdom_government_vassals_label: "[Glossary('Dark Kingdom','game_concept_dark_kingdom_desc')] [obligations|E] are based on each [vassal|E]'s [vassal_contract|E]"
- dark_kingdom_government_desc: "Dark Kingdoms are pockets of stable reality within the [UmbraGlossary('tempest')] of the [UmbraGlossaryLocalized('shadowlands','Underworld')]. Each of these kingdoms claim dominion over the Wraiths of a particular geographical region."
+ dark_kingdom_government_desc: "Los Reinos Oscuros son bolsas de realidad estable dentro de la [UmbraGlossary('tempest')] del [UmbraGlossaryLocalized('shadowlands','Inframundo')]. Cada uno de estos reinos reclama dominio sobre los Espectros de una región geográfica particular."
  dark_kingdom_government_filter_option: "$dark_kingdom_government$"
  dark_kingdom_government_filter_option_desc: "Only show characters with [GetGovernment( 'dark_kingdom_government' ).GetName] [government|E]"
 
@@ -215,7 +215,7 @@
  POD_tributary_tax_collector_flavor_desc: "#flavor This vassal barely acknowledges your rule. Your grasp on their land is tenuous at best.#!"
  
  POD_hard_control_tax_collector: "Absolute Control"
- POD_hard_control_tax_collector_desc: "#emphasis #bold Vassals can't declare any wars without a hook on their liege.#!#!"
+ POD_hard_control_tax_collector_desc: "#emphasis #bold Los vasallos no pueden declarar ninguna guerra sin tener una ventaja sobre su señor.#!#!"
  POD_hard_control_tax_collector_flavor_desc: "#flavor They will pay. They will provide troops. They will obey. They have no other choice.#!"
   
  #vampire_tax_collector_court_position: "Satrap"
@@ -224,7 +224,7 @@
  rose_treaty: "Rose Treaty"
  rose_treaty_granted_desc: "#emphasis #bold [vassal|E] Privileges:#!#!\nThe [liege|E] can not [demand_conversion|E] of the [vassal|E]\nThe [liege|E] can not use [convert_county|E] in the [vassals|E]' lands\n\n #flavor Signed in 1215, the Rose treaty gave Mithras a unified empire to rule, and gave his subjects a framework to operate under. It is one of the first vampiric governance system relying on feudalism to administrate a realm.#!"
  rose_treaty_granted: "Accepted Rose Treaty"
- rose_treaty_granted_short: "Accepted"
+ rose_treaty_granted_short: "Aceptado"
  rose_treaty_none: "Denied Rose Treaty"
  rose_treaty_none_short: "Denied"
 
@@ -276,10 +276,10 @@
  #the_pyramid_tax_collector_flavor_desc: "#flavor The Tremere will only survive if ruthless discipline is enforced. All resources must be brought back to the top of the Pyramid.#!"
  #vassal_should_have_pyramid_tt: "The vassal must have the Pyramid tenet in their faith."
 
- pyramid_contract: "The Pyramid"
+ pyramid_contract: "La Pirámide"
  pyramid_contract_granted_desc: "#flavor The Tremere will only survive if ruthless discipline is enforced. All resources must be brought back to the top of the Pyramid.#!"
  pyramid_contract_granted: "Pyramidal Contract"
- pyramid_contract_granted_short: "Pyramidal"
+ pyramid_contract_granted_short: "Piramidal"
  pyramid_contract_none: "Regular Contract"
  pyramid_contract_none_short: "Regular"
    
@@ -320,7 +320,7 @@
  eternal_senate_contract: "Eternal Senator"
  eternal_senate_contract_granted_desc: "#flavor Antasia's Eternal Senate makes everyone pay their dues like any other political organization. A Senatorial Chair is a prestigious title for a vassal, but also a costly one.#!"
  eternal_senate_contract_granted: "Eternal Senator"
- eternal_senate_contract_granted_short: "Senator"
+ eternal_senate_contract_granted_short: "Senador"
  eternal_senate_contract_none: "Plebeian"
  eternal_senate_contract_none_short: "Plebeian"
   
@@ -416,7 +416,7 @@
  POD_infernal_pact: "Infernal Pact"
  POD_infernal_pact_granted_desc: "#flavor You own them. Their subservience is your strength.#!"
  POD_infernal_pact_granted: "Infernal Pact"
- POD_infernal_pact_granted_short: "Pact"
+ POD_infernal_pact_granted_short: "Pacto"
  POD_infernal_pact_none: "No Infernal Pact"
  POD_infernal_pact_none_short: "No Pact"
       
@@ -426,7 +426,7 @@
  POD_faith_pact: "Soul Pact"
  POD_faith_pact_granted_desc: "#flavor Their faith gives you power. A small remainder of days long gone, when humanity heeded your call and looked upon you in wonder.#!"
  POD_faith_pact_granted: "Soul Pact"
- POD_faith_pact_granted_short: "Pact"
+ POD_faith_pact_granted_short: "Pacto"
  POD_faith_pact_none: "No Soul Pact"
  POD_faith_pact_none_short: "No Pact"
      
@@ -437,7 +437,7 @@
  POD_obedience_pact: "Obedience Pact"
  POD_obedience_pact_granted_desc: "#emphasis #bold Vassals can't declare any wars without a hook on their liege.#!#! \n\n #flavor They can't move a finger without asking for your permission. As it should be with all of humanity.#!"
  POD_obedience_pact_granted: "Obedience Pact"
- POD_obedience_pact_granted_short: "Pact"
+ POD_obedience_pact_granted_short: "Pacto"
  POD_obedience_pact_none: "No Obedience Pact"
  POD_obedience_pact_none_short: "No Pact"
     
@@ -447,7 +447,7 @@
  POD_iron_pact: "Iron Pact"
  POD_iron_pact_granted_desc: "#flavor They will fight and die for you. And they will consider themselves blessed during all of it.#!"
  POD_iron_pact_granted: "Iron Pact"
- POD_iron_pact_granted_short: "Pact"
+ POD_iron_pact_granted_short: "Pacto"
  POD_iron_pact_none: "No Iron Pact"
  POD_iron_pact_none_short: "No Pact"
   
@@ -457,7 +457,7 @@
  POD_gold_pact: "Gold Pact"
  POD_gold_pact_granted_desc: "#flavor It seems, in fact, that you should serve both God and mammon.#!"
  POD_gold_pact_granted: "Gold Pact"
- POD_gold_pact_granted_short: "Pact"
+ POD_gold_pact_granted_short: "Pacto"
  POD_gold_pact_none: "No Gold Pact"
  POD_gold_pact_none_short: "No Pact"
 
@@ -467,7 +467,7 @@
  POD_glory_pact: "Glory Pact"
  POD_glory_pact_granted_desc: "#flavor They sing your praises and raise your name to the Heavens in defiance of the One who abandoned us all.#!"
  POD_glory_pact_granted: "Glory Pact"
- POD_glory_pact_granted_short: "Pact"
+ POD_glory_pact_granted_short: "Pacto"
  POD_glory_pact_none: "No Glory Pact"
  POD_glory_pact_none_short: "No Pact"
    
@@ -536,13 +536,13 @@
  POD_nomarch_oversight_none: "No Nomarch Oversight"
  POD_nomarch_oversight_none_short: "No Oversight"
  
- dark_kingdom_vassal: "Dark Kingdom"
+ dark_kingdom_vassal: "Reino Oscuro"
  dark_kingdom_vassal_desc: ""
  POD_clan_vassal: "Duties and Obligations"
  POD_clan_vassal_desc: ""
  POD_household_vassal: "Household"
  POD_household_vassal_desc: ""
- POD_inquisition_vassal: "Inquisition"
+ POD_inquisition_vassal: "Inquisición"
  POD_inquisition_vassal_desc: ""
  POD_kueijin_vassal: "Kuei-Jin"
  POD_kueijin_vassal_desc: ""
@@ -550,6 +550,6 @@
  POD_infernal_court_vassal_desc: ""
  POD_mummy_cult_vassal: "Immortal Cult"
  POD_mummy_cult_vassal_desc: ""
- POD_traditions_vassal: "Traditions"
+ POD_traditions_vassal: "Tradiciones"
  POD_traditions_vassal_desc: ""
  

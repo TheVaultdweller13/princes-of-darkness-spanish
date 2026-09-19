@@ -110,7 +110,8 @@
  #Sunny day is too sunny
  warhorse.1101.t: "El hermoso caballo de [ROOT.Char.Custom('WarhorseStoryName')|U]: Noche Hermosa"
  warhorse.1101.b: "¡La noche es demasiado hermosa para no apreciarla como se merece!"
- bp1_yearly.7100.desc: "Un momento estaba disfrutando de un agradable paseo por [owned_county.GetName] y al siguiente estoy cubierto de excremento y revolcándome en el barro. Después de limpiarme furiosamente la suciedad de [ROOT.Char.Custom('EyeEyes')], encuentro al culpable con facilidad.\n\n"[potential_nemesis.GetTitledFirstName] envía [potential_nemesis.GetHerHis] saludos!" El campesino asomado a la ventana grita antes de huir de la escena.\n\nPatéticamente, intento lavar una piel que particularmente atesoro en un arroyo cercano, pero está claro que está más allá de toda salvación."
+ bp1_yearly.7100.desc: "Un momento estaba disfrutando de un agradable paseo por [owned_county.GetName] y al siguiente estoy cubierto de excremento y revolcándome en el barro. Después de limpiarme furiosamente la suciedad de [ROOT.Char.Custom('EyeEyes')], encuentro al culpable con facilidad.\n\n"¡[potential_nemesis.GetTitledFirstName] envía [potential_nemesis.GetHerHis] saludos!" El campesino asomado a la ventana grita antes de huir de la escena.\n\nPatéticamente, intento lavar una piel que particularmente atesoro en un arroyo cercano, pero está claro que está más allá de toda salvación."
+ LOCKED_ACCOLADE_SLOT_INFO: "Los Galardones están desactivados en [princes_of_darkness|E]"
  
  #Accolade succession is disabled but scripted in UI
  find_suitable_accolade_successor_interaction_desc: "Tu personaje no puede buscar un sucesor para la distinción automáticamente."
@@ -130,8 +131,8 @@
  trait_historical_character: "Gran Personaje"
 
  #Drunk stuff
- bp1_yearly.9010.desc.drunk: ", claramente sin sentirse bien. [bp1_yearly_9007_doppelganger.GetSheHe|U] tambalea hacia mí con furia en [bp1_yearly_9007_doppelganger.GetHerHis] ojos.\n\n"¡Impostor! ¡Ese *#EMP hipo#!*"
- bp1_yearly.9010.desc.stoner: ", claramente sin sentirse bien. Los sangrientos ojos errantes de [bp1_yearly_9007_doppelganger.GetHerHis|U] miran con desprecio la zona alrededor de mi cabeza mientras [bp1_yearly_9007_doppelganger.GetSheHe] tambalea perezosamente hacia mí, riendo como un loco[a] todo el camino.\n\n"¡Impostor! ¡Ese *#EMP tos#!*"
+ bp1_yearly.9010.desc.drunk: ", claramente sin sentirse bien. [bp1_yearly_9007_doppelganger.GetSheHe|U] tambalea hacia mí con furia en [bp1_yearly_9007_doppelganger.GetHerHis] ojos.\n\n"¡Impostor! Ese *#EMP hip#!*"
+ bp1_yearly.9010.desc.stoner: ", claramente sin sentirse bien. Sus sangrientos ojos errantes miran con desprecio la zona alrededor de mi cabeza mientras [bp1_yearly_9007_doppelganger.GetSheHe] tambalea perezosamente hacia mí, riendo como un[bp1_yearly_9007_doppelganger.Custom('ES_XA')] loc[bp1_yearly_9007_doppelganger.Custom('ES_OA')] todo el camino.\n\n"¡Impostor! Ese *#EMP cof#!*"
  bp1_yearly.9010.desc.outro: "¡El [ROOT.Char.Custom('InsultAdjective')] [ROOT.Char.Custom('InsultNoun')] no es [ROOT.Char.GetNameNoTooltip]! ¡Yo soy el verdadero [ROOT.Char.GetNameNoTooltip]!"\n\nAunque es una mentira obvia, ¡mi corte parece de alguna manera muy divertida de que mi verdadera identidad sea puesta en duda! Mientras [bp1_yearly_9007_doppelganger.GetNameNoTooltip] desenvaina [bp1_yearly_9007_doppelganger.GetHerHis] arma, queda claro que la violencia es la única respuesta."
  
  # Grand City stuff

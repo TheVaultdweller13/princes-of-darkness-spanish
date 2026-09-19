@@ -77,7 +77,7 @@
  arcanos_pandemonium_focus_desc: "Use of the powers of chaos."
  arcanos_pandemonium_focus_effect_desc: "Focusing on Pandemonium grants:"
  
- phantasm_visible: "Phantasm"
+ phantasm_visible: "Fantasma"
  arcanos_phantasm_focus: "Phantasm Focus"
  arcanos_phantasm_focus_modifier: "[GetFocus('arcanos_phantasm_focus').GetName]"
  arcanos_phantasm_focus_desc: "Manipulate dreams and create illusions."
@@ -374,7 +374,7 @@
  flicker_perk_name: "Flicker"
  stormreader_perk_name: "Stormreader"
  tempest_riders_canceleer_perk_name: "Tempest-Rider's Canceler"
- arcanoi_oubliette_perk_name: "Oubliette"
+ arcanoi_oubliette_perk_name: "Mazmorra"
 
  ENSHROUD_PERK_EFFECT: "No longer needed to make a sacrifice to access the [UmbraGlossary('tempest')].\n#F A Harbinger can manipulate the membrane between the [UmbraGlossary('shadowlands')] and [UmbraGlossary('tempest')], allowing them to enter the [UmbraGlossary('tempest')] without opening a [GetModifier('nihil_modifier').GetNameWithTooltip] or use the [UmbraGlossary('tempest')] for concealment.#!"
  WEATHER_EYE_PERK_EFFECT: "Allow predicting natural hazards.\n#F A Harbinger is always aware of current conditions in the nearby [UmbraGlossary('tempest')], and can take shortcuts between two [UmbraGlossary('shadowlands')] locations.#!"
@@ -407,10 +407,10 @@
  # Embody
  embody_visible: "Embody" 
  
- whispers_perk_name: "Whisper"
+ whispers_perk_name: "Susurro"
  cache_perk_name: "Cache"
  phantom_perk_name: "Phantom"
- statue_perk_name: "Statue"
+ statue_perk_name: "Estatua"
  life_in_death_perk_name: "Life-in-Death"
  shroudguide_perk_name: "Shroudguide"
  materialize_perk_name: "Materialize"
@@ -456,7 +456,7 @@
  sympathy_perk_name: "Sympathy"
  smiths_tenacity_perk_name: "Smith's Tenacity"
  empower_perk_name: "Empower"
- impress_perk_name: "Impress"
+ impress_perk_name: "Imprimir"
 
  LIGHTNINGS_BITE_PERK_EFFECT: "#F An Artificer can charge a small metal object with electricity that will discharge into the next people who touch it.#!"
  FORGE_AFFINITY_PERK_EFFECT: "Soulforge craft will have a better outcome.\n#F An Artificer's soulforging is permanently improved.#!"
@@ -466,7 +466,7 @@
  IMPRESS_PERK_EFFECT: "$unlock_enhancing_node$ Sacrifice a $POD_splat_wraith$ [prisoner|E] to improve the [artifact|E] based on the sacrifice's [traits|E]\n#F An Artificer may place the memories and personality of a wraith into a non-living item.#!"
  
  # Keening
- keening_visible: "Keening"
+ keening_visible: "El Lamento"
  
  hearing_voices_perk_name: "Hearing Voices"
  mood_music_perk_name: "Mood Music"
@@ -533,7 +533,7 @@
  breath_of_the_grave_perk_name: "Breath of the Grave"
  stonehand_punch_perk_name: "Stonehand Punch"
  wings_of_rage_perk_name: "Wings of Rage"
- deaths_touch_perk_name: "Death's Touch"
+ deaths_touch_perk_name: "Toque de la muerte"
  wyldfire_perk_name: "Shroudshield"
  obliviate_perk_name: "Obliviate"
  anger_enough_for_two_worlds_perk_name: "Anger Enough for Two Worlds"
@@ -574,7 +574,7 @@
  lingua_perk_name: "Lingua"
  dream_sequence_perk_name: "Dream Sequence"
  morphean_embrace_perk_name: "Morphean Embrace"
- incubus_perk_name: "Incubus"
+ incubus_perk_name: "Íncubo"
  agon_perk_name: "Agon"
  oneirataxia_perk_name: "Oneirataxia"
 
@@ -590,7 +590,7 @@
  puppetry_visible: "Puppetry" 
  
  skinride_perk_name: "Skinride"
- twitch_perk_name: "Twitch"
+ twitch_perk_name: "Contracción"
  control_creature_perk_name: "Control Creature"
  masters_voice_perk_name: "Master's Voice"
  rein_in_the_mind_perk_name: "Rein in the Mind"
@@ -624,28 +624,28 @@
  thorn_visible: "Thorn"
  thorn_lifestyle_perks: "[thorn_lifestyle|E] [perks|E]: $NUM|0$"
  
- spectre_prestige_perk_name: "Spectre Prestige"
- dark_allies_perk_name: "Dark Allies"
+ spectre_prestige_perk_name: "Prestigio de espectro"
+ dark_allies_perk_name: "Aliados oscuros"
  tainted_relic_perk_name: "Tainted Relic"
- infamy_perk_name: "Infamy"
- deaths_sigil_perk_name: "Death's Sigil"
+ infamy_perk_name: "Infamia"
+ deaths_sigil_perk_name: "Sigilo de la muerte"
  shadow_traits_perk_name: "Shadow Traits"
- nightmares_perk_name: "Nightmares"
- aura_of_corruption_perk_name: "Aura of Corruption"
- mirror_mirror_perk_name: "Mirror, Mirror"
- shadow_call_perk_name: "Shadow Call"
+ nightmares_perk_name: "Pesadillas"
+ aura_of_corruption_perk_name: "Aura de corrupción"
+ mirror_mirror_perk_name: "Espejito, espejito"
+ shadow_call_perk_name: "Llamada de la Sombra"
  pact_of_doom_perk_name: "Pact of Doom"
- trick_of_the_light_perk_name: "Trick of the Light"
- bad_luck_perk_name: "Bad Luck"
- shadowed_face_perk_name: "Shadowed Face"
+ trick_of_the_light_perk_name: "Truco de la luz"
+ bad_luck_perk_name: "Mala suerte"
+ shadowed_face_perk_name: "Rostro sombreado"
  honeyed_tongue_perk_name: "Honeyed Tongue"
- tainted_touch_perk_name: "Tainted Touch"
+ tainted_touch_perk_name: "Toque maculado"
  thorn_shadowplay_perk_name: "Shadowplay"
  shadow_familiar_perk_name: "Shadow Familiar"
- freudian_slip_perk_name: "Freudian Slip"
+ freudian_slip_perk_name: "Desliz freudiano"
  shadow_life_perk_name: "Shadow Life"
  thorn_whispers_perk_name: "Whispers"
- thorn_manifestation_perk_name: "Manifestation"
+ thorn_manifestation_perk_name: "Manifestación"
  devils_dare_perk_name: "Devil’s Dare"
  vampiric_nature_perk_name: "Vampiric Nature"
  
@@ -678,7 +678,7 @@
  flux_visible: "Flux"
  
  rot_perk_name: "Rot"
- strengthen_perk_name: "Strengthen"
+ strengthen_perk_name: "Fortalecer"
  non_euclidean_mechanics_perk_name: "Non Euclidean Mechanics"
  relic_dowsing_perk_name: "Relic Dowsing"
  puppet_theater_perk_name: "Puppet Theater"
@@ -700,8 +700,8 @@
  arcanoi_know_thyself_perk_name: "Know Thyself"
  launch_a_thousand_ships_perk_name: "Launch a Thousand Ships"
  unfold_the_animal_heart_perk_name: "Unfold the Animal Heart"
- apple_of_discord_perk_name: "Apple of Discord"
- ignite_perk_name: "Ignite"
+ apple_of_discord_perk_name: "Manzana de la discordia"
+ ignite_perk_name: "Ignición"
  a_single_thread_perk_name: "A Single Thread"
  adrestias_communion_perk_name: "Adrestia's Communion"
  
@@ -722,7 +722,7 @@
  further_reflection_perk_name: "Further Reflection"
  tabula_rasa_perk_name: "Tabula Rasa"
  casting_the_scene_perk_name: "Casting the Scene"
- phantom_pain_perk_name: "Phantom Pain"
+ phantom_pain_perk_name: "Dolor fantasma"
  gray_man_perk_name: "Gray Man"
 
  ERASURE_PERK_EFFECT: "As a [character_interaction|E], allows erase memory to reduce stress.\n#F A Mnemos may wipe a memory from their mind.#!"
@@ -735,11 +735,11 @@
 
  # Jade Arcanoi
  
- emperor_visible: "Emperor"
- scholar_visible: "Scholar"
- farmer_visible: "Farmer"
+ emperor_visible: "Emperador"
+ scholar_visible: "Erudito"
+ farmer_visible: "Granjero"
  artisan_visible: "Artisan"
- merchant_visible: "Merchant"
+ merchant_visible: "Mercader"
  soul_visible: "Soul"
 
  brilliance_perk_name: "Brilliance"
@@ -760,7 +760,7 @@
  shape_true_jade_perk_name: "Shape True Jade"
  remembrance_perk_name: "Remembrance"
  rework_relics_perk_name: "Rework Relics"
- empower_jade_perk_name: "Empower Jade"
+ empower_jade_perk_name: "Potenciar Jade"
  create_white_jade_perk_name: "Create White Jade"
  transfer_perk_name: "Transfer"
  cash_money_perk_name: "Cash Money"
@@ -836,7 +836,7 @@
  CALL_THE_SHADOW_PERK_EFFECT: "Bonus to Contaminate [character_interaction|E], allow to make target personality trait invert.\n#F The Spectre can help a wraith's Shadow overcome their Psyche.#!"
  
  # Corruption
- corruption_visible: "Corruption"
+ corruption_visible: "Corrupción"
  
  lurid_visions_perk_name: "Lurid Visions"
  unbidden_hands_perk_name: "Unbidden Hands"
@@ -874,13 +874,13 @@
  recall_the_known_perk_name: "Recall the Known"
  broadcast_perk_name: "Broadcast"
  hive_awareness_perk_name: "Hive Awareness"
- arcanoi_taming_the_beast_perk_name: "Taming the Beast"
+ arcanoi_taming_the_beast_perk_name: "Domar a la Bestia"
  recall_the_unknown_perk_name: "Recall the Unknown"
  bid_perk_name: "Bid"
  collective_oracle_perk_name: "Collective Oracle"
  pack_wisdom_perk_name: "Pack Wisdom"
  racial_memory_perk_name: "Racial Memory"
- arcanoi_compel_perk_name: "Compel"
+ arcanoi_compel_perk_name: "Compeler"
  unity_of_being_perk_name: "Unity of Being"
  
  SILENT_WHISPERS_PERK_EFFECT: "#F A Spectre can telepathically send a message to another Spectre in sight.#!"
@@ -916,11 +916,11 @@
  # Maleficence
  maleficence_visible: "Maleficence"
  
- arcanoi_black_whispers_perk_name: "Black Whispers"
+ arcanoi_black_whispers_perk_name: "Susurros negros"
  benefice_perk_name: "Benefice"
- investiture_perk_name: "Investiture"
- discipline_perk_name: "Discipline"
- arcanoi_conversion_perk_name: "Conversion"
+ investiture_perk_name: "Investidura"
+ discipline_perk_name: "Disciplina"
+ arcanoi_conversion_perk_name: "Conversión"
  
  ARCANOI_BLACK_WHISPERS_PERK_EFFECT: "#F A Spectre may communicate directly with the mind of one of the living.#!"
  BENEFICE_PERK_EFFECT: "#F A Spectre can invest themselves into a Quick in order to give them Spectral powers.#!"
@@ -1012,11 +1012,11 @@
  
  delve_perk_name: "Delve"
  trance_perk_name: "Trance"
- arcanoi_scry_perk_name: "Scry"
- divine_perk_name: "Divine"
- arcanoi_twitch_perk_name: "Twitch"
- murmur_perk_name: "Murmur"
- veer_perk_name: "Veer"
+ arcanoi_scry_perk_name: "Escrutar"
+ divine_perk_name: "Divino"
+ arcanoi_twitch_perk_name: "Contracción"
+ murmur_perk_name: "Murmullo"
+ veer_perk_name: "Viraje"
  
  DELVE_PERK_EFFECT: "[espionage|E] Progress Speed: #P +[EmptyScope.ScriptValue('digging_for_dirt_perk_percentage')|0]%#!\n#F A Moriman can enter a trance and experience what a target has recently been through.#!" 
  DELVE_PERK_BONUS_VALUE: "[GetPerk('delve_perk').GetName(GetPlayer)]"

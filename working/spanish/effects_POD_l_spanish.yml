@@ -863,7 +863,7 @@
  HAUNTING_PERK_EFFECT: "Makes it easier to bind a [GetTrait('wraith').GetName( GetNullCharacter )] via the Bind Wraith [character_interaction|E]."
  HAUNTING_PERK_FLAVOR: "#flavor A necromancer uses the power of her blood to bind a ghost into an object or location.#!"
  TORMENT_PERK_EFFECT: "You can imprison, torture, execute or physically hurt spirits during [single_combat_duel_plural|E]."
- TORMENT_PERK_FLAVOR: "#flavor With use of Torment, a necromancer may strike at a ghost’s incorporeal body as if he himself were a ghost.#!"
+ TORMENT_PERK_FLAVOR: "#flavor Con el uso de Tormento, un nigromante puede golpear el cuerpo incorpóreo de un fantasma como si él mismo fuera un fantasma.#!"
 
  #Bone Path
 
@@ -884,13 +884,13 @@
  TOUCH_THE_NETHER_PERK_EFFECT: "Allows you to interact with beings of [umbra|E] when you are in the material world."
  TOUCH_THE_NETHER_PERK_FLAVOR: "#flavor While invoking Touch the Nether, a necromancer may stand on both sides of the Shroud; she manifests physically in the [UmbraGlossaryLocalized('shadowlands','Underworld')] while remaining corporeal in the lands of the living.#!"
  EX_NIHILO_PERK_EFFECT: "Gain access to the [UmbraGlossaryLocalized('shadowlands','Underworld')] during spiritual travels."
- EX_NIHILO_PERK_FLAVOR: "#flavor Ex Nihilo allows a necromancer to physically enter the [UmbraGlossaryLocalized('shadowlands','Underworld')]. While in the [UmbraGlossaryLocalized('shadowlands','Underworld')], she appears as a particularly solid ghost.#!"
+ EX_NIHILO_PERK_FLAVOR: "#flavor Ex Nihilo permite a un nigromante entrar físicamente en el [UmbraGlossaryLocalized('shadowlands','Inframundo')]. Mientras está en el [UmbraGlossaryLocalized('shadowlands','Inframundo')], aparece como un fantasma particularmente sólido.#!"
  SHROUD_MASTERY_PERK_EFFECT: "Unlock Manipulate the Shroud option in [umbra|E] panel."
  SHROUD_MASTERY_PERK_FLAVOR: "#flavor With this power, the necromancer can greatly aid or hinder the ability of ghosts to function in the living world.#!"
 
  #Grave's Decay Path
 
- NECROMANCY_ASHES_TO_ASHES_PERK_EFFECT: "Reduces the risk of [masquerade_exposure_with_icon|E] and improves the Cover Masquerade [character_interaction|E]."
+ NECROMANCY_ASHES_TO_ASHES_PERK_EFFECT: "Reduce el riesgo de [masquerade_exposure_with_icon|E] y mejora la [character_interaction|E] de Encubrir Mascarada."
  NECROMANCY_ASHES_TO_ASHES_PERK_FLAVOR: "#flavor While some Cainites slaughter indiscriminately and fear no consequences for their actions, other Cainites feel the need to be a bit more discreet. Use of this power turns a human corpse into a pile of unremarkable ash roughly one-fifth the weight of the original body.#!"
  RIGOR_MORTIS_PERK_FLAVOR: "#flavor With this power, the necromancer can make any target as stiff and still as a corpse.#!"
  ASHEN_LADYS_EMBRACE_PERK_EFFECT: "Unlocks Ashen Lady's Embrace [single_combat_duel|E] move"
@@ -902,8 +902,8 @@
 
  #Corpse in the Monster Path
 
- MORTUUS_IN_VULTUS_PERK_FLAVOR: "#flavor A Cainite can make herself appear as if she was a long-dead corpse.#!"
- ALGOR_MORTIS_PERK_FLAVOR: "#flavor With the use of Algor Mortis, a vampire is able to transform herself into a cool, melancholy creature, unmoved by mortal pain or emotional manipulation.#!"
+ MORTUUS_IN_VULTUS_PERK_FLAVOR: "#flavor Un Cainita puede hacerse parecer como si fuera un cadáver muerto hace mucho tiempo.#!"
+ ALGOR_MORTIS_PERK_FLAVOR: "#flavor Con el uso de Algor Mortis, un vampiro es capaz de transformarse en una criatura fría y melancólica, inmune al dolor mortal o la manipulación emocional.#!"
  INTIMATIONS_OF_MORTALITY_PERK_EFFECT: "As a [character_interaction|E] you can increase a vampire's susceptibility to stress while also preventing them from using Blood Surge to boost their stats."
  INTIMATIONS_OF_MORTALITY_PERK_FLAVOR: "#flavor Intimations of Mortality inflicts the more unpleasant and irritating aspects of mortality upon a vampire.#!"
  BENEDICTIO_MORTEM_PERK_FLAVOR: "#flavor With this power, a necromancer fully assumes the aspect of a corpse and is able to slough off the weaknesses of his vampiric condition.#!"
@@ -911,11 +911,11 @@
 
  #Path of Skulls
 
- CALVARIA_EMISSIUS_PERK_FLAVOR: "#flavor One of Clan Cappadocian’s most prized secrets is the ability to spy via the eye-sockets of the dead.#!"
+ CALVARIA_EMISSIUS_PERK_FLAVOR: "#flavor Uno de los secretos más preciados del Clan Capadocio es la capacidad de espiar a través de las cuencas de los ojos de los muertos.#!"
  CONSILIUM_MORTUUS_PERK_EFFECT: "[espionage|E] Progress Speed: #P +[EmptyScope.ScriptValue('digging_for_dirt_perk_percentage')|0]%#!"
  CONSILIUM_MORTUUS_PERK_BONUS_VALUE: "[GetPerk('consilium_mortuus_perk').GetName(GetPlayer)]"
  CONSILIUM_MORTUUS_PERK_FLAVOR: "#flavor By conversing with the decapitated head of the departed target, it transpires that prying a guaranteed truth from decayed lips is quite possible.#!"
- AMMORSUS_VICARIUS_PERK_FLAVOR: "#flavor Using this power, the necromancer can grip the mandible and maxillae of the skull to use as a bizarre close-quarters weapon, affix the skull to a spear-point to attack from distance, or even leave the skull alone, to act as a trap.#!"
+ AMMORSUS_VICARIUS_PERK_FLAVOR: "#flavor Usando este poder, el nigromante puede agarrar la mandíbula y el maxilar del cráneo para usarlo como un arma extraña de combate cuerpo a cuerpo, fijar el cráneo a la punta de una lanza para atacar a distancia, o incluso dejar el cráneo solo, actuando como una trampa.#!"
  EXEDO_ANIMUS_PERK_EFFECT: "[espionage|E] Progress Speed: #P +[EmptyScope.ScriptValue('digging_for_dirt_perk_percentage')|0]%#!"
  EXEDO_ANIMUS_PERK_BONUS_VALUE: "[GetPerk('exedo_animus_perk').GetName(GetPlayer)]"
  EXEDO_ANIMUS_PERK_FLAVOR: "#flavor By bearing a skull — either from a mortal or Cainite — the necromancer forms a sympathetic bond with the skull’s former owner.#!"
@@ -927,27 +927,27 @@
  WHISPERS_OF_THE_SOUL_PERK_FLAVOR: "#flavor Merely hearing a whisper of the true name of the Dark Mother is enough to drive mortals mad, and fill the hearts of the Cainites with terror#!"
  KISS_OF_THE_DARK_MOTHER_PERK_EFFECT: "The Bite [single_combat_duel|E] move becomes more powerful."
  KISS_OF_THE_DARK_MOTHER_PERK_FLAVOR: "#flavor The Lilin bites her tongue and fills her mouth with a foul, acrid mix of black bile and $pod_vitae$. Her bite becomes even more terrible, and she can devour the life from her victims with ease#!"
- DARK_HUMOURS_PERK_FLAVOR: "#flavor The Lamiae are known for their athleticism and mastery of their bodies. Not only are they able to perform feats of incredible physical prowess, but they can also manipulate the balance of humors in their body by sheer force of will.#!"
+ DARK_HUMOURS_PERK_FLAVOR: "#flavor Las Lamias son conocidas por su atletismo y dominio de sus cuerpos. No solo son capaces de realizar hazañas de destreza física increíble, sino que también pueden manipular el equilibrio de los humores en su cuerpo por pura fuerza de voluntad.#!"
  CAUL_OF_THE_NEVERBORN_PERK_EFFECT: "Unlocks the Find Wraith [character_interaction|E]"
  CAUL_OF_THE_NEVERBORN_PERK_FLAVOR: "#flavor With the use of this power, the Lamia strengthens her connection to the black heart of the Dark Mother. Giving her both increased resilience and the ability to see into the [UmbraGlossary('shadowlands')].#!"
- LAMENT_OF_DHAINU_PERK_FLAVOR: "#flavor The Lamia howls in agony, and the very earth trembles. A miasma of writhing darkness rises from the ground and ensnares her enemies. Those caught by the darkness are not physically bound, but are immediately stricken with emotional anguish so rich and raw that they seek to end their lives in the most expedient way possible.#!"
+ LAMENT_OF_DHAINU_PERK_FLAVOR: "#flavor La Lamia aúlla de agonía, y la tierra misma tiembla. Una niebla de oscuridad retorcida se eleva del suelo y atrapa a sus enemigos. Atrapados por la oscuridad no están físicamente atados, pero son inmediatamente golpeados con una angustia emocional tan rica y cruda que buscan terminar con sus vidas de la manera más expedita posible.#!"
 
  #Nightshade Path
 
  TEND_THE_BODY_GARDEN_PERK_EFFECT: "Reduces the risk of [masquerade_exposure_with_icon|E] and improves the Cover Masquerade [character_interaction|E]"
  TEND_THE_BODY_GARDEN_PERK_FLAVOR: "#flavor A necromancer with this power can speed up or slow the process of decay, turning a dead mortal into a bloated host for flies in seconds or nullifying the decay of Final Death.#!"
  WITCHS_FRUIT_PERK_EFFECT: "Unlocks a [character_interaction|E] that allows you to poison mortals with necromantically infused fruit."
- WITCHS_FRUIT_PERK_FLAVOR: "#flavor Every plant relies on death to grow. Rotting things enrich the soil, and the trees, vines, and grasses drink up necrotic echoes along with vital nutrients. A necromancer can awaken this death aura by exposing their fruits to her blood.#!"
+ WITCHS_FRUIT_PERK_FLAVOR: "#flavor Cada planta depende de la muerte para crecer. Las cosas podridas enriquecen el suelo, y los árboles, vides y hierbas absorben los ecos necróticos junto con los nutrientes vitales. Un nigromante puede despertar este aura de muerte exponiendo sus frutos a su sangre.#!"
  RAISE_THE_GREEN_ONE_PERK_EFFECT: "Unlocks the ability to raise a Green One as a [character_interaction|E]."
- RAISE_THE_GREEN_ONE_PERK_FLAVOR: "#flavor Nightshade necromancers can raise a corpse bound and strengthened by plant matter. Leaves cover its skin and strong vines supplement its rotted sinews. The living shell grants speed and self-preservation instincts not seen in other animated dead.#!"
+ RAISE_THE_GREEN_ONE_PERK_FLAVOR: "#flavor Los nigromantes de la Belladona pueden levantar un cadáver atado y fortalecido por materia vegetal. Las hojas cubren su piel y fuertes vides suplementan sus tendones podridos. La cáscara viviente otorga velocidad e instintos de autoconservación no vistos en otros muertos animados.#!"
  WAILS_AND_WHISPERS_PERK_EFFECT: "Unlocks the ability to make a target vulnerable to murder schemes as a [character_interaction|E]"
- WAILS_AND_WHISPERS_PERK_FLAVOR: "#flavor As the necromancer’s understanding deepens, she explores the wavering barrier between life and death. When she screams like a banshee, she can lure a soul to its demise, increasing the chance of a fatal injury.#!"
+ WAILS_AND_WHISPERS_PERK_FLAVOR: "#flavor A medida que la comprensión del nigromante se profundiza, explora la barrilla ondulante entre la vida y la muerte. Cuando grita como una banshee, puede atraer un alma a su perdición, aumentando la probabilidad de una lesión fatal.#!"
  CTHONIC_WOMB_PERK_EFFECT: "Draining a mortal as part of feeding will raise them as a [GetTrait('wraith').GetName( GetNullCharacter )]"
  CTHONIC_WOMB_PERK_FLAVOR: "#flavor At the apex of this Path, a necromancer combines murder and fertility to give birth to the ghost of a mortal she has slain.#!"
 
  #Vitreous Path
 
- EYES_OF_THE_WRAITH_PERK_FLAVOR: "#flavor By invoking this power, the necromancer can see the world the way that the Restless Dead do.#!"
+ EYES_OF_THE_WRAITH_PERK_FLAVOR: "#flavor Al invocar este poder, el nigromante puede ver el mundo de la manera en que lo hacen los Muertos Inquietos.#!"
  AURA_OF_DECAY_PERK_FLAVOR: "#flavor This power hastens the inevitable fate of any inanimate object caught within the necromancer’s dreadful aura, allowing the vampire to cause any object to decay into a ruined heap.#!"
  SOUL_FEASTING_PERK_EFFECT: "Enables the Soul Feasting [character_interaction|E] which allows you to drain a bound [GetTrait('wraith').GetName( GetNullCharacter )] to sate your hunger."
  SOUL_FEASTING_PERK_FLAVOR: "#flavor Pischacha’s Feast allows a vampire to subsist on the ambient energies of entropy that permeate the haunted places of the world, or feed directly on the [Corpus|E] of a ghost.#!"
@@ -959,7 +959,7 @@
 
  SONG_OF_THE_DEAD_PERK_EFFECT: "Unlocks the ability to cause stress to an enemy as a [character_interaction|E]"
  SONG_OF_THE_DEAD_PERK_FLAVOR: "#flavor The vampire chants, weaving unheard words into the song and instilling an unhealthy fascination with death in his listener.#!"
- SUMMON_WISP_PERK_FLAVOR: "#flavor The vampire infuses droplets of his blood with the ephemeral energy of the [UmbraGlossaryLocalized('shadowlands','Underworld')], summoning a sphere of flickering lights. The wisp may lure unsuspecting mortals into a trap or provide a clever distraction.#!"
+ SUMMON_WISP_PERK_FLAVOR: "#flavor El vampiro infunde gotas de su sangre con la energía efímera del [UmbraGlossaryLocalized('shadowlands','Inframundo')], invocando una esfera de luces parpadeantes. La luzfatuo puede atraer a mortales desprevenidos a una trampa o proporcionar una distracción inteligente.#!"
  HARROWING_PERK_EFFECT: "Improves the Song of the Dead [character_interaction|E]"
  HARROWING_PERK_FLAVOR: "#flavor Harrowing extends the terror inflicted by Song of the Dead by haunting her in her sleep, turning her dreams to nightmarish visions of her own death#!"
  PHANTASMS_PERK_FLAVOR: "#flavor The vampire sculpts the energy of the [UmbraGlossaryLocalized('shadowlands','Underworld')] into elaborate hallucinations that terrorize the living.#!"
@@ -969,7 +969,7 @@
  #Cenotaph Path
 
  TOUCH_OF_DEATH_PERK_EFFECT: "TODO"
- TOUCH_OF_DEATH_PERK_FLAVOR: "#flavor The necromancer is attuned to the residual energy left by a ghost’s passage or touch, allowing her to determine if an object, person, or area had been touched or influenced by a ghost.#!"
+ TOUCH_OF_DEATH_PERK_FLAVOR: "#flavor El nigromante está sintonizado con la energía residual dejada por el paso o toque de un fantasma, permitiéndole determinar si un objeto, persona o área ha sido tocado o influenciado por un fantasma.#!"
  REVEAL_THE_CATENE_PERK_EFFECT: "TODO"
  REVEAL_THE_CATENE_PERK_FLAVOR: "#flavor The necromancer recognizes the ashen mark left on objects by the dead, allowing her to distinguish between ghostly playthings and [Fetters|E].#!"
  TREAD_UPON_THE_GRAVE_PERK_EFFECT: "TODO"
@@ -1064,7 +1064,7 @@
  EYES_OF_THE_ABYSS_PERK_EFFECT: "As a [shapeshift|E] option, gain [GetModifier('POD_shapeshift_form_abysseyes_modifier').GetNameWithTooltip].\n#F The Vampire's eyes become black. They ignore all darkness penalties, even those brought on by supernatural darkness, and can see ghosts.#!"
  SHADOW_PLAY_PERK_EFFECT: "#F While this ability does not allow characters to create shadows that do not already exist, it allows one to manipulate, move, and animate ambient shadows. This can grant social effects, such as using shadows to make yourself more imposing, or shape an environment to suit your needs, creating areas of shadow in which to hide a person or object.#!"
  NOCTURNE_PERK_EFFECT: "As a [character_interaction|E], toggle [GetModifier('nocturne_power_modifier').GetNameWithTooltip].\nWhile it is active, inflict [GetModifier('nocturne_drained_stamina_modifier').GetNameWithTooltip] on enemy [knights|E] when acting as a [commander|E] during the [combat_phase|E], or on your foe during [single_combat_duel_plural|E].\nThis costs #N 10#![piety_i] per affected enemy.\n#F By concentrating on summoning forth darkness, Lasombra with this ability can summon a writhing cloud of supernatural darkness to engulf an area and obscure all sources of light. The darkness is a manifestation of the Abyss that muffles sound and sight and smothers the life out of the weak.#!"
- NIGHT_SHADES_PERK_EFFECT: "Can recruit [GetMaA('shades').GetName] as [men_at_arms|E]"
+ NIGHT_SHADES_PERK_EFFECT: "Puede reclutar [GetMaA('shades').GetName] como [men_at_arms|E]"
  ARMS_OF_AHRIMAN_PERK_EFFECT: "#F With this ability, a Lasombra shapes the darkness into tentacles that can attack, restrain, and grapple foes.#!"
  TENEBROUS_AVATAR_PERK_EFFECT: "As a [shapeshift|E] option, transform into [GetModifier('POD_shapeshift_form_shadow_modifier').GetNameWithTooltip].\n#F The vampire's mastery of darkness is so extensive that they may physically become it. Upon activation of this power, the vampire becomes an inky, amoeboid patch of shadow.#!"
  THE_DARKNESS_WITHIN_PERK_EFFECT: "Improves the modifier from [GetPerk('nocturne_perk').GetName(GetPlayer)] to [GetModifier('darkness_within_drained_stamina_modifier').GetNameWithTooltip].\nIn addition, you also drain #V 1#! $POD_energy_blood$ from affected targets.\nThis costs #N 15#![piety_i] per affected enemy."
@@ -1554,7 +1554,7 @@
  # Ashen Nobles #
  
  ASHEN_NOBLES_LEGACY_1_PERK_EFFECT: "Unlocks [GetBuilding('ashen_court_01').GetName] building"
- ASHEN_NOBLES_LEGACY_2_PERK_EFFECT: "Unlocks a special childe education event"
+ ASHEN_NOBLES_LEGACY_2_PERK_EFFECT: "Desbloquea un evento especial de educación de Chiquillos"
  ASHEN_NOBLES_LEGACY_3_PERK_EFFECT: "Unlocks [GetBuilding('ashen_court_02').GetName] building"
  ASHEN_NOBLES_LEGACY_4_PERK_EFFECT: "Unlocks a special option for the Hunt in your Capital [journey|E]"
  ASHEN_NOBLES_LEGACY_5_PERK_EFFECT: "Unlocks a special [decision|E] to invite Ashen Prospect and [GetBuilding('ashen_court_03').GetName] building"
@@ -1562,7 +1562,7 @@
  # Ashen Knights #
  
  ASHEN_KNIGHTS_LEGACY_1_PERK_EFFECT: "Unlocks [GetBuilding('ashen_commandery_01').GetName] building"
- ASHEN_KNIGHTS_LEGACY_2_PERK_EFFECT: "Unlocks a special childe education event"
+ ASHEN_KNIGHTS_LEGACY_2_PERK_EFFECT: "Desbloquea un evento especial de educación de Chiquillos"
  ASHEN_KNIGHTS_LEGACY_3_PERK_EFFECT: "Unlocks [GetBuilding('ashen_commandery_02').GetName] building"
  ASHEN_KNIGHTS_LEGACY_4_PERK_EFFECT: "Unlocks a special option for the Hunt in your Capital [journey|E]"
  ASHEN_KNIGHTS_LEGACY_5_PERK_EFFECT: "Unlocks a special [decision|E] to invite Ashen Prospect and [GetBuilding('ashen_commandery_03').GetName] building"
@@ -1570,7 +1570,7 @@
  # Ashen seneschals #
  
  ASHEN_SENESCHALS_LEGACY_1_PERK_EFFECT: "Unlocks [GetBuilding('ashen_office_01').GetName] building"
- ASHEN_SENESCHALS_LEGACY_2_PERK_EFFECT: "Unlocks a special childe education event"
+ ASHEN_SENESCHALS_LEGACY_2_PERK_EFFECT: "Desbloquea un evento especial de educación de Chiquillos"
  ASHEN_SENESCHALS_LEGACY_3_PERK_EFFECT: "Unlocks [GetBuilding('ashen_office_02').GetName] building"
  ASHEN_SENESCHALS_LEGACY_4_PERK_EFFECT: "Unlocks a special option for the Hunt in your Capital [journey|E]"
  ASHEN_SENESCHALS_LEGACY_5_PERK_EFFECT: "Unlocks a special [decision|E] to invite Ashen Prospect and [GetBuilding('ashen_office_03').GetName] building"
@@ -1578,7 +1578,7 @@
  # Ashen Thieves #
  
  ASHEN_THIEVES_LEGACY_1_PERK_EFFECT: "Unlocks [GetBuilding('ashen_ring_01').GetName] building"
- ASHEN_THIEVES_LEGACY_2_PERK_EFFECT: "Unlocks a special childe education event"
+ ASHEN_THIEVES_LEGACY_2_PERK_EFFECT: "Desbloquea un evento especial de educación de Chiquillos"
  ASHEN_THIEVES_LEGACY_3_PERK_EFFECT: "Unlocks [GetBuilding('ashen_ring_02').GetName] building"
  ASHEN_THIEVES_LEGACY_4_PERK_EFFECT: "Unlocks a special option for the Hunt in your Capital [journey|E]"
  ASHEN_THIEVES_LEGACY_5_PERK_EFFECT: "Unlocks a special [decision|E] to invite Ashen Prospect and [GetBuilding('ashen_ring_03').GetName] building"
@@ -1586,7 +1586,7 @@
  # Ashen Cults #
  
  ASHEN_CULTS_LEGACY_1_PERK_EFFECT: "Unlocks [GetBuilding('ashen_cult_site_01').GetName] building"
- ASHEN_CULTS_LEGACY_2_PERK_EFFECT: "Unlocks a special childe education event"
+ ASHEN_CULTS_LEGACY_2_PERK_EFFECT: "Desbloquea un evento especial de educación de Chiquillos"
  ASHEN_CULTS_LEGACY_3_PERK_EFFECT: "Unlocks [GetBuilding('ashen_cult_site_02').GetName] building"
  ASHEN_CULTS_LEGACY_4_PERK_EFFECT: "Unlocks a special option for the Hunt in your Capital [journey|E]"
  ASHEN_CULTS_LEGACY_5_PERK_EFFECT: "Unlocks a special [decision|E] to invite Ashen Prospect and [GetBuilding('ashen_cult_site_03').GetName] building"
@@ -1891,7 +1891,7 @@
  POD_dark_passion_lose: "Lose [Localize(SCOPE.GetFlagName('dark_passion_flag'))] Dark Passion"
 
  dark_passion_war: "Start a war"
- dark_passion_steal: "Steal"
+ dark_passion_steal: "Robar"
  dark_passion_kill: "Commit a murder"
  dark_passion_cruelity: "Be cruel"
 
@@ -1924,7 +1924,7 @@
  POD_REMOVE_RANDOM_RELATION_EFFECT_FIRST: "You will lose a random [relation|E]"
  POD_REMOVE_RANDOM_RELATION_EFFECT_THIRD: "[CHARACTER.GetShortUIName] will lose a random [relation|E]"
 
- POD_damage_immunity_title: "Damage Immunity"
+ POD_damage_immunity_title: "Inmunidad al daño"
  POD_damage_immunity_tt: "#P No#! [POD_damage|E] is taken because of an immunity to this type of damage"
  POD_damage_soaked_title: "Damage Soaked"
  POD_damage_soaked_tt: "[SCOPE.GetValue('final_damage')|0+] [POD_damage|E] gets [soaked|E]"
@@ -1961,22 +1961,22 @@
  POD_weather_magic_general_effect: "Unleash #V [Localize(SCOPE.GetFlagName('weather_type'))]#! over [target_title.GetName]"
  POD_weather_magic_continent_effect: "Unleash #V [Localize(SCOPE.GetFlagName('weather_type'))]#! over [GetGeographicalRegion(SCOPE.GetFlagName('continent_loca')).GetName]"
  POD_weather_magic_general_effect_ex: "[SCOPE.GetValue('num_of_targets')|V0] counties will receive the following effects:"
- pod_weather_flow: "Flow"
- pod_weather_meteor_shower: "Meteor Shower"
- pod_weather_storm: "Storm"
- pod_weather_earthquake: "Earthquake"
- pod_weather_plague: "Plague"
- pod_weather_flood: "Flood"
- pod_weather_greater_flood: "Greater Flood"
- pod_weather_nourishing_tide: "Nourishing Tide"
- pod_weather_nourishing_tide_no_dev: "Nourishing Tide"
- pod_weather_drought: "Drought"
+ pod_weather_flow: "Flujo"
+ pod_weather_meteor_shower: "Lluvia de Meteoros"
+ pod_weather_storm: "Tormenta"
+ pod_weather_earthquake: "Terremoto"
+ pod_weather_plague: "Plaga"
+ pod_weather_flood: "Inundación"
+ pod_weather_greater_flood: "Gran Inundación"
+ pod_weather_nourishing_tide: "Marea Nutricia"
+ pod_weather_nourishing_tide_no_dev: "Marea Nutricia"
+ pod_weather_drought: "Sequía"
  pod_weather_cold_wave: "Cold Wave"
  pod_weather_early_apocalypse: "Early Apocalypse"
  pod_weather_sand_storm: "Sand Storm"
- pod_weather_cycle_of_ra: "Cycle of Ra"
- pod_weather_fertile_land: "Fertile Land"
- pod_weather_blizzard: "Blizzard"
+ pod_weather_cycle_of_ra: "Ciclo de Ra"
+ pod_weather_fertile_land: "Tierra Fértil"
+ pod_weather_blizzard: "Ventisca"
 
  POD_LEARN_TRUE_NAME_OF_TRAIT_EFFECT: "Learns the [Glossary('True Name','podgloss.truename')] of [TRAIT.GetName(GetPlayer)]"
  POD_FORGET_TRUE_NAME_OF_TRAIT_EFFECT: "Forgets the [Glossary('True Name','podgloss.truename')] of [TRAIT.GetName(GetPlayer)]"
@@ -1990,23 +1990,23 @@
  POD_truename_tree: "Tree"
  POD_truename_mushroom: "Mushroom"
 
- POD_truename_wolf: "Wolf"
+ POD_truename_wolf: "Lobo"
  POD_truename_snake: "Snake"
- POD_truename_rat: "Rat"
+ POD_truename_rat: "Rata"
  POD_truename_scorpion: "Scorpion"
  POD_truename_crocodile: "Crocodile"
- POD_truename_bear: "Bear"
- POD_truename_lion: "Lion"
- POD_truename_tiger: "Tiger"
- POD_truename_horse: "Horse"
+ POD_truename_bear: "Oso"
+ POD_truename_lion: "León"
+ POD_truename_tiger: "Tigre"
+ POD_truename_horse: "Caballo"
  POD_truename_boar: "Boar"
- POD_truename_cat: "Cat"
+ POD_truename_cat: "Gato"
  POD_truename_fox: "Fox"
 
  POD_truename_tn_stone: "Stone"
- POD_truename_tn_gold: "Gold"
+ POD_truename_tn_gold: "Oro"
  POD_truename_tn_silver: "Silver"
- POD_truename_tn_iron: "Iron"
+ POD_truename_tn_iron: "de Hierro"
 
  POD_mummy_memory_check_effect_tt: "As you are below the required $POD_splat_mummy$ memory level, you pay extra [static_stress|E]"
  POD_mummy_tan_check_effect: "Getting this [perk|E] will make the perks in the other Tan tree cost an extra 50 [static_stress|E] #X This action is not reversible#!"
@@ -2032,8 +2032,10 @@
  POD_cannot_remove_witch: "#N Try as you might, the stain on your soul from #TOOLTIP:GAME_TRAIT,witch,[GetNullCharacter] #L Infernalism#!#! will never fade.#!"
  POD_infernalist_lost_true_faith: "The taint of hell withers your [Glossary('Faith','game_concept_true_faith_desc')]"
 
- POD_bind_demon_effect: "You bind [demon.GetFirstName], gaining [SCOPE.GetValue('perk_points_gained')|0V] [investiture_lifestyle|E] [perk|E] points and officially starting on the road to [diabolism|E]"
+ POD_bind_demon_effect: "Vinculas a [demon.GetFirstName] al [artifact.Custom('ColorizedArtifactName')], ganando [SCOPE.GetValue('perk_points_gained')|0V] puntos de [perk|E] de [investiture_lifestyle|E] y comenzando oficialmente el camino hacia el [diabolism|E]"
+ POD_refund_investiture_effect: "Se reembolsan tus [perks|E] de [investiture_lifestyle|E]"
  POD_demon_sabotage: "[demonic_sabotage|E]"
+ POD_bound_demon_died: "Un demonio vinculado fue aniquilado"
 
  POD_create_pact_effect: "\n#font:TitleFont;size:18;glow_color:{0.5,0,0,1} A Pact with [TARGET_CHARACTER.GetFirstName] is inscribed on your soul#!"
  POD_create_pact_effect_obligation: "[demonic_pact_obligation|E]: [Localize(Concatenate('POD_obligation_', SCOPE.GetFlagName('obligation_flag')))]"

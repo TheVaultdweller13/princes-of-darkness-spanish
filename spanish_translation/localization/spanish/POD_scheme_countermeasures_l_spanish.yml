@@ -9,11 +9,14 @@
  scheme_countermeasure_type_all_seeing_eye_t2_desc: "$scheme_countermeasure_type_all_seeing_eye_desc$"
  scheme_countermeasure_type_all_seeing_eye_t3: "$scheme_countermeasure_type_all_seeing_eye$"
  scheme_countermeasure_type_all_seeing_eye_t3_desc: "$scheme_countermeasure_type_all_seeing_eye_desc$"
+ scheme_countermeasure_type_all_seeing_eye_t4: "$scheme_countermeasure_type_all_seeing_eye$"
+ scheme_countermeasure_type_all_seeing_eye_t4_desc: "$scheme_countermeasure_type_all_seeing_eye_desc$"
  
  countermeasures_unlocks_t1_all_seeing_eye: "Desbloquea la [scheme_countermeasure_countermeasure|E] #V $scheme_countermeasure_type_all_seeing_eye$#! #weak (Nivel 1)#!"
  countermeasures_unlocks_t2_all_seeing_eye: "Desbloquea la [scheme_countermeasure_countermeasure|E] #V $scheme_countermeasure_type_all_seeing_eye$#! #weak (Nivel 2)#!"
  countermeasures_unlocks_t3_all_seeing_eye: "Desbloquea la [scheme_countermeasure_countermeasure|E] #V $scheme_countermeasure_type_all_seeing_eye$#! #weak (Nivel 3)#!"
  countermeasures_unlocks_t4_all_seeing_eye: "Desbloquea la [scheme_countermeasure_countermeasure|E] #V $scheme_countermeasure_type_all_seeing_eye$#! #weak (Nivel 4)#!"
+ countermeasures.desc.all_seeing_eye: "$EFFECT_LIST_BULLET$Nueva [scheme_countermeasure_countermeasure|E]: $scheme_countermeasure_type_all_seeing_eye$\n$EFFECT_LIST_BULLET$[secrecy|E] reducida"
  countermeasures_desc_all_seeing_eye: "$EFFECT_LIST_BULLET$Nueva [scheme_countermeasure_countermeasure|E]: $scheme_countermeasure_type_all_seeing_eye$\n$EFFECT_LIST_BULLET$[secrecy|E] reducida"
  
  scheme_countermeasure_type_mental_fortress: "Fortaleza mental"
@@ -25,11 +28,14 @@
  scheme_countermeasure_type_mental_fortress_t2_desc: "$scheme_countermeasure_type_mental_fortress_desc$"
  scheme_countermeasure_type_mental_fortress_t3: "$scheme_countermeasure_type_mental_fortress$"
  scheme_countermeasure_type_mental_fortress_t3_desc: "$scheme_countermeasure_type_mental_fortress_desc$"
+ scheme_countermeasure_type_mental_fortress_t4: "$scheme_countermeasure_type_mental_fortress$"
+ scheme_countermeasure_type_mental_fortress_t4_desc: "$scheme_countermeasure_type_mental_fortress_desc$"
  
  countermeasures_unlocks_t1_mental_fortress: "Desbloquea la [scheme_countermeasure_countermeasure|E] #V $scheme_countermeasure_type_mental_fortress$#! #weak (Nivel 1)#!"
  countermeasures_unlocks_t2_mental_fortress: "Desbloquea la [scheme_countermeasure_countermeasure|E] #V $scheme_countermeasure_type_mental_fortress$#! #weak (Nivel 2)#!"
  countermeasures_unlocks_t3_mental_fortress: "Desbloquea la [scheme_countermeasure_countermeasure|E] #V $scheme_countermeasure_type_mental_fortress$#! #weak (Nivel 3)#!"
  countermeasures_unlocks_t4_mental_fortress: "Desbloquea la [scheme_countermeasure_countermeasure|E] #V $scheme_countermeasure_type_mental_fortress$#! #weak (Nivel 4)#!"
+ countermeasures.desc.mental_fortress: "$EFFECT_LIST_BULLET$Nueva [scheme_countermeasure_countermeasure|E]: $scheme_countermeasure_type_mental_fortress$\n[success_chance|E] reducida para la mayoría de las [schemes|E]"
  countermeasures_desc_mental_fortress: "$EFFECT_LIST_BULLET$Nueva [scheme_countermeasure_countermeasure|E]: $scheme_countermeasure_type_mental_fortress$\n[success_chance|E] reducida para la mayoría de las [schemes|E]"
  
  scheme_countermeasure_type_supernatural_high_alert: "Alerta máxima sobrenatural"
@@ -41,11 +47,14 @@
  scheme_countermeasure_type_supernatural_high_alert_t2_desc: "$scheme_countermeasure_type_supernatural_high_alert_desc$"
  scheme_countermeasure_type_supernatural_high_alert_t3: "$scheme_countermeasure_type_supernatural_high_alert$"
  scheme_countermeasure_type_supernatural_high_alert_t3_desc: "$scheme_countermeasure_type_supernatural_high_alert_desc$"
+ scheme_countermeasure_type_supernatural_high_alert_t4: "$scheme_countermeasure_type_supernatural_high_alert$"
+ scheme_countermeasure_type_supernatural_high_alert_t4_desc: "$scheme_countermeasure_type_supernatural_high_alert_desc$"
  
  countermeasures_unlocks_t1_supernatural_high_alert: "Desbloquea la [scheme_countermeasure_countermeasure|E] #V $scheme_countermeasure_type_supernatural_high_alert$#! #weak (Nivel 1)#!"
  countermeasures_unlocks_t2_supernatural_high_alert: "Desbloquea la [scheme_countermeasure_countermeasure|E] #V $scheme_countermeasure_type_supernatural_high_alert$#! #weak (Nivel 2)#!"
  countermeasures_unlocks_t3_supernatural_high_alert: "Desbloquea la [scheme_countermeasure_countermeasure|E] #V $scheme_countermeasure_type_supernatural_high_alert$#! #weak (Nivel 3)#!"
  countermeasures_unlocks_t4_supernatural_high_alert: "Desbloquea la [scheme_countermeasure_countermeasure|E] #V $scheme_countermeasure_type_supernatural_high_alert$#! #weak (Nivel 4)#!"
+ countermeasures.desc.supernatural_high_alert: "$EFFECT_LIST_BULLET$Nueva [scheme_countermeasure_countermeasure|E]: $scheme_countermeasure_type_supernatural_high_alert$\n[success_chance|E] reducida para [GetScheme('murder').GetTypeName], [GetScheme('abduct').GetTypeName] e [schemes|E] directamente hostiles similares"
  countermeasures_desc_supernatural_high_alert: "$EFFECT_LIST_BULLET$Nueva [scheme_countermeasure_countermeasure|E]: $scheme_countermeasure_type_supernatural_high_alert$\n[success_chance|E] reducida para [GetScheme('murder').GetTypeName], [GetScheme('abduct').GetTypeName] e [schemes|E] directamente hostiles similares"
  
  scheme_countermeasure_type_obfuscated_court: "Corte ofuscada"
@@ -57,11 +66,14 @@
  scheme_countermeasure_type_obfuscated_court_t2_desc: "$scheme_countermeasure_type_obfuscated_court_desc$"
  scheme_countermeasure_type_obfuscated_court_t3: "$scheme_countermeasure_type_obfuscated_court$"
  scheme_countermeasure_type_obfuscated_court_t3_desc: "$scheme_countermeasure_type_obfuscated_court_desc$"
+ scheme_countermeasure_type_obfuscated_court_t4: "$scheme_countermeasure_type_obfuscated_court$"
+ scheme_countermeasure_type_obfuscated_court_t4_desc: "$scheme_countermeasure_type_obfuscated_court_desc$"
  
  countermeasures_unlocks_t1_obfuscated_court: "Desbloquea la [scheme_countermeasure_countermeasure|E] #V $scheme_countermeasure_type_obfuscated_court$#! #weak (Nivel 1)#!"
  countermeasures_unlocks_t2_obfuscated_court: "Desbloquea la [scheme_countermeasure_countermeasure|E] #V $scheme_countermeasure_type_obfuscated_court$#! #weak (Nivel 2)#!"
  countermeasures_unlocks_t3_obfuscated_court: "Desbloquea la [scheme_countermeasure_countermeasure|E] #V $scheme_countermeasure_type_obfuscated_court$#! #weak (Nivel 3)#!"
  countermeasures_unlocks_t4_obfuscated_court: "Desbloquea la [scheme_countermeasure_countermeasure|E] #V $scheme_countermeasure_type_obfuscated_court$#! #weak (Nivel 4)#!"
+ countermeasures.desc.obfuscated_court: "$EFFECT_LIST_BULLET$Nueva [scheme_countermeasure_countermeasure|E]: $scheme_countermeasure_type_obfuscated_court$\n[success_chance|E] reducida para [GetScheme('seduce').GetTypeName], [GetScheme('PODbloodbond').GetTypeName] e [schemes|E] sutiles similares"
  countermeasures_desc_obfuscated_court: "$EFFECT_LIST_BULLET$Nueva [scheme_countermeasure_countermeasure|E]: $scheme_countermeasure_type_obfuscated_court$\n[success_chance|E] reducida para [GetScheme('seduce').GetTypeName], [GetScheme('PODbloodbond').GetTypeName] e [schemes|E] sutiles similares"
  
  scheme_countermeasure_parameter_success_chance_vs_calculated_schemes_bonus_very_minor: "[EmptyScope.ScriptValue('countermeasure_scheme_category_success_chance_bonus_against_minor_value')|=/P%0] de [success_chance|E] para [schemes|E] opuestas como:$calculating_schemes_boilerplate.tt$"
