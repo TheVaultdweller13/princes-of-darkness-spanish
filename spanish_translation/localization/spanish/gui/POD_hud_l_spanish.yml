@@ -44,7 +44,7 @@
  POD_glamour_window_regen: "[GetPlayer.Custom('PODGlamourRegenHint')]"
  POD_glamour_window_regen_fae: "Como eres un [GetTrait('fae').GetName(GetPlayer)], regeneras #V 1#! de Glamour por mes."
  POD_glamour_window_regen_changeling: "Como eres un [GetTrait('changeling').GetName(GetPlayer)], regeneras #V 1#! de Glamour por mes."
- POD_glamour_window_regen_building: "#help ¡Tienes una probabilidad del #V [GetPlayer.MakeScope.ScriptValue('chance_for_extra_glamour_regen')]%#! de regenerar Glamour extra de los edificios #TOOLTIP:BUILDING,glade_freehold_01 #L Claro#!#! en tu capital.#!"
+ POD_glamour_window_regen_building: "#help Tienes una probabilidad del #V [GetPlayer.MakeScope.ScriptValue('chance_for_extra_glamour_regen')]%#! de regenerar Glamour extra de los edificios #TOOLTIP:BUILDING,glade_freehold_01 #L Claro#!#! en tu capital.#!"
  POD_glamour_window_dreamer: "Puedes añadir a uno de tus [courtiers|E] como Soñador."
  POD_glamour_window_dreamer_help: "#help Los Soñadores te otorgarán [lifestyle_experience|E] y tienen una pequeña probabilidad de regenerar tu Glamour.#!"
  POD_glamour_window_reverie: "Ganas #V 2#! de Glamour mediante Ensoñación cada vez que completas un plan de [GetScheme('sway').GetTypeName()], [GetScheme('befriend').GetTypeName()], o [GetScheme('courting').GetTypeName()]."

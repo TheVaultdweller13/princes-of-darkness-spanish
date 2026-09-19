@@ -14,7 +14,7 @@
  POD_worldgen.2.option.a: "Vampiros"
  POD_worldgen.2.option.b: "Hombres lobo"
  POD_worldgen.2.option.c: "Magos"
- POD_worldgen.2.option.d: "Fae"
+ POD_worldgen.2.option.d: "Hadas"
  POD_worldgen.2.option.e: "Demonios"
  POD_worldgen.2.option.f: "Cazadores"
  POD_worldgen.2.option.g: "Vampiros y hombres lobo luchan por el dominio"
@@ -43,11 +43,11 @@
  POD_maintenance.24.a: "Parece que los sueños realmente mueren."
  
  POD_maintenance.25.t: "Soñando de nuevo"
- POD_maintenance.25.desc: "Bizancio ha cambiado de manos muchas veces desde sus humildes comienzos como aldea comercial. Cada cultura mortal que ocupó este lugar dejó su propia huella en la historia de la ciudad y hoy no es diferente. Con tu reciente cambio de perspectiva, podrías fomentar otro giro de la rueda para Constantinopla, promoviendo tus nuevos objetivos entre sus habitantes. Por supuesto, también podrías simplemente dejar que la historia continúe su curso inalterada.\n #N ¡Elegir cambiar restablecerá Constantinopla a un nuevo tipo de Gran Ciudad, eliminando tus edificios actuales en el proceso!#!"
+ POD_maintenance.25.desc: "Bizancio ha cambiado de manos muchas veces desde sus humildes comienzos como aldea comercial. Cada cultura mortal que ocupó este lugar dejó su propia huella en la historia de la ciudad y hoy no es diferente. Con tu reciente cambio de perspectiva, podrías fomentar otro giro de la rueda para Constantinopla, promoviendo tus nuevos objetivos entre sus habitantes. Por supuesto, también podrías simplemente dejar que la historia continúe su curso inalterada.\n #N Elegir cambiar restablecerá Constantinopla a un nuevo tipo de Gran Ciudad, eliminando tus edificios actuales en el proceso.#!"
  POD_maintenance.25.a: "No interferiré."
  POD_maintenance.25.b: "Hora de cambiar."
  
  POD_maintenance.28.t: "Nosferatu artesanales"
  POD_maintenance.28.desc: "Tras el $pod_Embrace$, cada [GetTrait('nosferatu').GetName(GetNullCharacter)] queda horriblemente deformado gracias a la maldición de su $pod_clan$.\n\n[ROOT.Char.GetTitledFirstName] proviene del Diseñador de Personajes, por lo que se ha librado de este destino... por ahora. Pero no puede escapar de él.\n\nAhora puedes dejar que el juego añada algunos aspectos Nosferatu #bold aleatorios#! automáticamente. O, si estás satisfecho con el aspecto de este personaje, puedes saltarte este paso."
  POD_maintenance.28.a: "Hacer a [ROOT.Char.GetFirstNameNoTooltip] más horrible."
- POD_maintenance.28.b: "[ROOT.Char.GetFirstNameNoTooltip] es perfect[ROOT.Char.GetCustom('ES_O')] tal como es."
+ POD_maintenance.28.b: "[ROOT.Char.GetFirstNameNoTooltip] es perfect[ROOT.Char.Custom('ES_OA')] tal como es."

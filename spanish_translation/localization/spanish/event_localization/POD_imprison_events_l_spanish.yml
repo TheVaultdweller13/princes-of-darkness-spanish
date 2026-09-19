@@ -35,7 +35,7 @@
  POD_imprison.002.option.b.tt.attacker_wins: "¡Encandilo a [targetdefender.GetFirstName]!"
  POD_imprison.002.option.b.tt.attacker_lost: "[targetdefender.GetFirstName] es inmune a mis encantos." 
  POD_imprison.002.option.c.tt.attacker_wins: "¡Derroto a [targetdefender.GetFirstName] en combate personal!"
- POD_imprison.002.option.c.tt.attacker_lost: "Soy derrotad[GetPlayer.GetCustom('ES_O')] por [targetdefender.GetFirstName] en combate personal."
+ POD_imprison.002.option.c.tt.attacker_lost: "Soy derrotad[GetPlayer.Custom('ES_OA')] por [targetdefender.GetFirstName] en combate personal."
  POD_imprison.002.option.d.tt.attacker_wins: "¡[attacker_marshal.GetFirstName] derrota a [targetdefender.GetFirstName] en combate personal!"
  POD_imprison.002.option.d.tt.attacker_lost: "[attacker_marshal.GetFirstName] es derrotado por [targetdefender.GetFirstName] en combate personal."
  POD_imprison.002.option.coterie.tt.attacker_wins: "¡[prowess_duelist.GetFirstName] derrota a [targetdefender.GetFirstName] en combate personal!"
@@ -44,7 +44,7 @@
  POD_imprison.002.option.e.tt.attacker_lost: "[targetdefender.GetFirstName] escapa"
  POD_imprison.002.option.f.tt: "[targetdefender.GetFirstName] verá en tus ojos la profundidad de su culpa reflejada con una claridad abrumadora."
  POD_imprison.002.option.g.tt: "Dejarás de intentar encarcelar a [targetdefender.GetFirstName]."
- POD_imprison.002.option.h.tt: "[targetdefender.GetFirstName] será incapaz de resistirse a ser sellad[targetdefender.GetCustom('ES_O')] perpetuamente en tu grieta"
+ POD_imprison.002.option.h.tt: "[targetdefender.GetFirstName] será incapaz de resistirse a ser sellad[targetdefender.Custom('ES_OA')] perpetuamente en tu grieta"
 
  POD_imprison.102.title: "Nuevo prisionero"
  POD_imprison.102.desc.dominate: "Has logrado doblegar con éxito la mente de [targetdefender.GetFirstName] a tu propia voluntad, ahora entrará en tu prisión sin objeciones"
@@ -53,11 +53,11 @@
  POD_imprison.102.desc.marshal: "[attacker_marshal.GetFirstName] ha derrotado a [targetdefender.GetFirstName]. Esto enseñará a todos a no oponerse a tu autoridad."
  POD_imprison.102.desc.coterie: "[prowess_duelist.GetFirstName] ha derrotado a [targetdefender.GetFirstName]. Esto enseñará a todos a no oponerse a la $POD_player_coterie$."
  POD_imprison.102.desc.hunter: "[attacker_marshal.GetFirstName] ha logrado usar las debilidades del vampiro para atrapar a una bestia impía, [targetdefender.GetFirstName]. Esto enseñará a cada engendro del infierno a no oponerse a ti."
- POD_imprison.102.desc.tears: "Mientras [targetdefender.GetFirstName] permanece paralizad[targetdefender.GetCustom('ES_O')] frente a ti, obligad[targetdefender.GetCustom('ES_O')] a recordar sus muchos pecados, tus hombres se posicionan cuidadosamente para someter[targetdefender.GetHerHim]. Antes de que recupere totalmente la conciencia, su cuerpo es envuelto fuertemente en cadenas y estacas de madera apuntando al corazón están listas para golpear al menor movimiento."
+ POD_imprison.102.desc.tears: "Mientras [targetdefender.GetFirstName] permanece paralizad[targetdefender.Custom('ES_OA')] frente a ti, obligad[targetdefender.Custom('ES_OA')] a recordar sus muchos pecados, tus hombres se posicionan cuidadosamente para someter[targetdefender.GetHerHim]. Antes de que recupere totalmente la conciencia, su cuerpo es envuelto fuertemente en cadenas y estacas de madera apuntando al corazón están listas para golpear al menor movimiento."
  POD_imprison.102.desc.rift: "[targetdefender.GetFirstName] no puede escapar de tu grieta. Esto debería enseñar a todos lo que les sucede a quienes se te oponen."
  POD_imprison.102.option.a: "Ahora, ¿qué haré contigo?"
 
- POD_imprison.103.desc: "Mientras [targetdefender.GetFirstName] permanece paralizad[targetdefender.GetCustom('ES_O')] frente a ti, obligad[targetdefender.GetCustom('ES_O')] a recordar sus muchos pecados, tus hombres se posicionan cuidadosamente para someter[targetdefender.GetHerHim]. Antes de que recupere totalmente la conciencia, su cuerpo es envuelto fuertemente en cadenas y estacas de madera apuntando al corazón están listas para golpear al menor movimiento."
+ POD_imprison.103.desc: "Mientras [targetdefender.GetFirstName] permanece paralizad[targetdefender.Custom('ES_OA')] frente a ti, obligad[targetdefender.Custom('ES_OA')] a recordar sus muchos pecados, tus hombres se posicionan cuidadosamente para someter[targetdefender.GetHerHim]. Antes de que recupere totalmente la conciencia, su cuerpo es envuelto fuertemente en cadenas y estacas de madera apuntando al corazón están listas para golpear al menor movimiento."
  POD_imprison.103.option.a: "Ahora llega el juicio."
 
 

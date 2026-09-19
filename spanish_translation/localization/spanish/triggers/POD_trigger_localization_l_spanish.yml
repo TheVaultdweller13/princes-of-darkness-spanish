@@ -203,7 +203,7 @@
  NOT_IS_SEA_TRIGGER: "#bold No está#! en el mar."
 
  POD_KNOWS_TRUE_NAME_OF_TRAIT_TRIGGER: "Debes conocer el [Glossary('Nombre Verdadero','podgloss.truename')] para [TRAIT.GetName(GetNullCharacter)]"
- POD_KNOWS_TRUE_NAME_OF_TRIGGER: "¡Debes conocer el [Glossary('Nombre Verdadero','podgloss.truename')] para #V [Localize(Concatenate('POD_truename_', SCOPE.GetFlagName('true_name_scope')))]#!"
+ POD_KNOWS_TRUE_NAME_OF_TRIGGER: "Debes conocer el [Glossary('Nombre Verdadero','podgloss.truename')] para #V [Localize(Concatenate('POD_truename_', SCOPE.GetFlagName('true_name_scope')))]#!"
  POD_know_all_nonstandard_true_names_trigger: "Conoces los [Glossary('Nombres Verdaderos','podgloss.truename')] de [EmptyScope.ScriptValue('total_nonstandard_true_names_number')|V0] Flora, Animales y Metales #weak ([GetPlayer.MakeScope.ScriptValue('known_nonstandard_true_names_number')])#!"
 
  PROVINCE_IS_IN_MIDDLE_KINGDOM: "[PROVINCE.GetName] debe estar dentro del Reino Medio, o ese límite debe haber sido levantado"

@@ -1,7 +1,7 @@
-version="0.3.16"
+version="0.4.0"
 tags={
 	"Translation"
 }
 name="Princes of Darkness - Traducción al castellano"
-supported_version="1.19.0.3"
+supported_version="1.19.0.6"
 remote_file_id="3303353422"

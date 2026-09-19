@@ -9,7 +9,7 @@
  POD_mesmerize.200.t: "Dominando a [target.GetFirstNameNoTooltip]"
  POD_mesmerize.200.desc: "Mi voluntad ordena a [target.GetTitledFirstName]. ¡Pero [target.GetSheHe] se me resiste!\nTendrás que superar su voluntad si quieres proceder. Los individuos de voluntad fuerte son más difíciles de quebrar y este enfoque intenso de tus poderes mentales podría resultar en una experiencia estresante para ti también."
  POD_mesmerize.200.option.a: "Exaltar la sangre para dominar a [target.GetHerHim]."
- POD_mesmerize.200.a.tt_fortitude: "[target.GetFirstNameNoTooltip] es expert[target.GetCustom('ES_O')] en la $pod_discipline$ de Fortaleza y es resistente a tus poderes."
+ POD_mesmerize.200.a.tt_fortitude: "[target.GetFirstNameNoTooltip] es expert[target.Custom('ES_OA')] en la $pod_discipline$ de Fortaleza y es resistente a tus poderes."
  POD_mesmerize.200.a.tt_willpower: "[target.GetFirstNameNoTooltip] ha ejercido su voluntad para resistir tus poderes."
  POD_mesmerize.200.a.success.desc: "[target.GetTitledFirstNameNoTooltip] te concederá un favor"
  POD_mesmerize.200.a.failure.desc: "[target.GetTitledFirstNameNoTooltip] resistirá tu dominación y existe la posibilidad de que malogres el intento y no puedas Dominar a [target.GetHerHim] durante 10 años"
@@ -18,7 +18,7 @@
  POD_mesmerize.200.option.c: "Esto es una pérdida de tiempo, ya no deseo dominar a [target.GetHerHim]."
  POD_mesmerize.200.option.c.tt: "La dominación fallará."
  
- POD_mesmerize.300.t: "[target.GetFirstNameNoTooltip] dominad[target.GetCustom('ES_O')]"
+ POD_mesmerize.300.t: "[target.GetFirstNameNoTooltip] dominad[target.Custom('ES_OA')]"
  POD_mesmerize.300.desc: "Mediante el uso de mi $pod_discipline$ de Dominación, [target.GetTitledFirstName] seguirá mis órdenes. \n\n #X Para usar tu orden, usa la [character_interaction|E] Comandar marioneta.\nAlgunas órdenes requerirán que un objetivo sea marcado, lo cual puede hacerse como la [character_interaction|E] Marcar objetivo secundario.#!"
  POD_mesmerize.300.desc.short_term: "\n\n Como no tienes la ventaja de Directiva sumergida, solo tienes unos pocos días para usar tu orden."
  POD_mesmerize.300.option.a: "Ahora, ¿qué quiero que haga?"
