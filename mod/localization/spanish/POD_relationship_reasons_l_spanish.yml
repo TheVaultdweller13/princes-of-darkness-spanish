@@ -21,8 +21,8 @@
  rival_attempted_bloodbond: "[TARGET_CHARACTER.GetShortUIName|U] intentó vincular por sangre a [CHARACTER.GetShortUIName]."
  rival_attempted_bloodbond_corresponding: "[CHARACTER.GetShortUIName|U] intentó vincular por sangre a [TARGET_CHARACTER.GetShortUIName]."
  
- rival_infiltration: "[TARGET_CHARACTER.GetShortUIName|U] fue atrapad[TARGET_CHARACTER.Custom('ES_OA')] infiltrándose en la corte de [CHARACTER.GetShortUIName]."
- rival_infiltration_corresponding: "[CHARACTER.GetShortUIName|U] fue atrapad[CHARACTER.Custom('ES_OA')] infiltrándose en la corte de [TARGET_CHARACTER.GetShortUIName]."
+ rival_infiltration: "[TARGET_CHARACTER.GetShortUIName|U] fue atrapad[TARGET_CHARACTER.Custom('ES_OA')] infiltrándose en la corte de [CHARACTER.GetShortUINamePossessive]."
+ rival_infiltration_corresponding: "[CHARACTER.GetShortUIName|U] fue atrapad[CHARACTER.Custom('ES_OA')] infiltrándose en la corte de [TARGET_CHARACTER.GetShortUINamePossessive]."
   
  rival_diablerized_family: "[TARGET_CHARACTER.GetShortUIName|U] consumió el alma de un pariente de [CHARACTER.GetShortUIName]."
  rival_diablerized_family_corresponding: "[CHARACTER.GetShortUIName|U] consumió el alma de un pariente de [TARGET_CHARACTER.GetShortUIName]."

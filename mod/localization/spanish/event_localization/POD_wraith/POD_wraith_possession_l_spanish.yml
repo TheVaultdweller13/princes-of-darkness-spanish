@@ -12,7 +12,7 @@
  POD_wraith_possession.200.a.tt_willpower: "[recipient.GetFirstNameNoTooltip] ha ejercido su voluntad para resistir tu intrusión."
  POD_wraith_possession.200.a.tt_fortitude: "[recipient.GetFirstNameNoTooltip] es expert[recipient.Custom('ES_OA')] en la $pod_discipline$ de Fortaleza y es resistente a tu manipulación."
  POD_wraith_possession.200.a.success.desc: "Victoria"
- POD_wraith_possession.200.a.tt_success: "¡Su cuerpo será mío!"
+ POD_wraith_possession.200.a.tt_success: "¡[recipient.GetTitledFirstNamePossessive] cuerpo será mío!"
  POD_wraith_possession.200.a.failure.desc: "Derrota"
  POD_wraith_possession.200.a.tt_failure: "[recipient.GetTitledFirstName] se resistió a mi intento de [possess|E] a [actor.GetHerHim]."
  
@@ -22,7 +22,7 @@
 
  
  POD_wraith_possession.300.t: "Cuerpo de [recipient.GetFirstNameNoTooltip] poseído"
- POD_wraith_possession.300.desc: "Has fortalecido tu control sobre el cuerpo de [recipient.GetTitledFirstName]. Esta marioneta ahora te pertenece."
+ POD_wraith_possession.300.desc: "Has fortalecido tu control sobre el cuerpo de [recipient.GetTitledFirstNamePossessive]. Esta marioneta ahora te pertenece."
  POD_wraith_possession.300.option.a: "Es como debe ser."
 
 

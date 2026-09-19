@@ -229,7 +229,7 @@
  POD_torture_all_prisoners_decision_effect: "[GetPlayer.MakeScope.ScriptValue('mass_torture_num_of_prisoners')|V0] [prisoners|E] serán torturados. No descubriréis ningún [secrets|E] de esta manera."
  POD_torture_all_prisoners_decision_effect_stress_sadistic: "Como sois [GetTrait('sadistic').GetName(GetPlayer)], perderéis [stress|E]."
  POD_torture_all_prisoners_decision_effect_stress_zealous: "Como sois [GetTrait('zealous').GetName(GetPlayer)], perderéis [stress|E] por cada infiel que torturéis."
- POD_torture_all_prisoners_decision_effect_stress_gain: "Podríais ganar una cantidad masiva de [stress|E] ya que tenéis una personalidad benévola #weak (rasgos [GetTrait('compassionate').GetName(GetNullCharacter)], [GetTrait('craven').GetName(GetNullCharacter)], [GetTrait('just').GetName(GetNullCharacter)], [GetTrait('forgiving').GetName(GetNullCharacter)], [GetTrait('generous').GetName(GetNullCharacter)], [GetTrait('trusting').GetName(GetNullCharacter)], o [GetTrait('content').GetName(GetNullCharacter)])#!"
+ POD_torture_all_prisoners_decision_effect_stress_gain: "Podríais ganar una cantidad masiva de [stress|E] ya que tenéis una personalidad benévola #weak ([GetTrait('compassionate').GetName(GetNullCharacter)], [GetTrait('craven').GetName(GetNullCharacter)], [GetTrait('just').GetName(GetNullCharacter)], [GetTrait('forgiving').GetName(GetNullCharacter)], [GetTrait('generous').GetName(GetNullCharacter)], [GetTrait('trusting').GetName(GetNullCharacter)], o [GetTrait('content').GetName(GetNullCharacter)] [traits|E])#!"
  POD_torture_all_prisoners_decision_effect_piety: "Vuestra [piety|E] cambiará en [piety_i|E][GetPlayer.MakeScope.ScriptValue('mass_torture_piety_gain')|V0]"
  
  #Change Predator Type Decision
