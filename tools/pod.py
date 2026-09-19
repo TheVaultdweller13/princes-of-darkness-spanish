@@ -376,8 +376,17 @@ def cmd_status(a):
     for p, rel, n in per[: a.top]:
         print(f"  {p:6d}/{n:<6d} {rel}")
     todo = sorted((Q / "todo").glob("*.txt")) if (Q / "todo").exists() else []
-    manual = list((Q / "manual").glob("*.txt")) if (Q / "manual").exists() else []
-    print(f"Cola: {len(todo)} lotes pendientes, {len(manual)} para revisión manual")
+    manual = sum(len(json.loads(f.read_text(encoding="utf-8")))
+                 for f in (Q / "manual").glob("*.json")) if (Q / "manual").exists() else 0
+    print(f"Cola: {len(todo)} lotes pendientes, {manual} textos para revisión manual")
+    base = base_mod_info()
+    if base:
+        readme = ROOT / "README.md"
+        m = re.search(r"<!-- base-version -->(.*?)<!-- /base-version -->", readme.read_text(encoding="utf-8")) if readme.exists() else None
+        print(f"Princes of Darkness instalado: {base_version_text(base)}")
+        if m and not m.group(1).startswith(base["version"] + " ") and m.group(1) != base["version"]:
+            print(f"→ El README dice {m.group(1)}: parece que PoD se ha actualizado. "
+                  f"Copia su inglés a {CFG['en_dir']}/, haz commit y ejecuta sync.")
 
 
 # ---------------------------------------------------------------- sync
@@ -1019,17 +1028,52 @@ def cmd_build(a):
     d = desc.read_text(encoding="utf-8")
     if a.version:
         d = re.sub(r'^version="[^"]*"', f'version="{a.version}"', d, flags=re.M)
+    base = base_mod_info() if a.sync_supported else None
     if a.sync_supported:
-        wp = Path(CFG["workshop_descriptor"])
-        if wp.exists():
-            sv = re.search(r'supported_version="([^"]*)"', wp.read_text(encoding="utf-8")).group(1)
-            d = re.sub(r'supported_version="[^"]*"', f'supported_version="{sv}"', d)
+        if base:
+            d = re.sub(r'supported_version="[^"]*"', f'supported_version="{base["supported"]}"', d)
+            update_readme_base_version(base)
         else:
-            print(f"AVISO: no encuentro {wp}; supported_version sin cambiar (díselo al usuario)")
+            print(f"AVISO: no encuentro {CFG['workshop_descriptor']}; supported_version y README sin cambiar")
     desc.write_text(d, encoding="utf-8")
     for k, v in stats.items():
         print(f"{k}: {v}")
     print(re.sub(r"\n\s*", " · ", d.strip()))
+    if base:
+        print(f"Mod base: {base_version_text(base)}")
+
+
+def base_mod_info():
+    """Versión del Princes of Darkness instalado desde el Workshop: descriptor y registro de cambios."""
+    wp = Path(CFG["workshop_descriptor"])
+    if not wp.exists():
+        return None
+    t = wp.read_text(encoding="utf-8", errors="replace")
+    info = {"version": re.search(r'^version="([^"]*)"', t, re.M).group(1),
+            "supported": re.search(r'supported_version="([^"]*)"', t).group(1), "name": "", "date": ""}
+    log = wp.parent / CFG.get("base_changelog", "POD_change_log.info")
+    if log.exists():
+        # primera cabecera: # Princes of Darkness, "Descent of the Dragons", Version 1.19.0.6, 6/24/2026
+        m = re.search(r'^#\s*[^,\n]*,\s*"([^"]+)",\s*Version\s+([\w.]+),\s*([\d/]+)', log.read_text(encoding="utf-8", errors="replace"), re.M)
+        if m and m.group(2) == info["version"]:
+            info["name"], info["date"] = m.group(1), m.group(3)
+    return info
+
+
+def base_version_text(b):
+    return b["version"] + (f" «{b['name']}»" if b["name"] else "")
+
+
+def update_readme_base_version(b):
+    """Actualiza en README.md el texto entre <!-- base-version --> y <!-- /base-version -->."""
+    p = ROOT / "README.md"
+    if not p.exists():
+        return
+    s = p.read_text(encoding="utf-8")
+    new = re.sub(r"(<!-- base-version -->).*?(<!-- /base-version -->)", lambda m: m.group(1) + base_version_text(b) + m.group(2), s)
+    if new != s:
+        p.write_text(new, encoding="utf-8")
+        print(f"README: versión del mod base → {base_version_text(b)}")
 
 
 

@@ -1,6 +1,8 @@
 # Princes of Darkness · Traducción al castellano
 
-Mod de traducción al castellano (España) de *Princes of Darkness* para Crusader Kings III (Steam Workshop 3303353422).
+Mod de traducción al castellano (España) de *Princes of Darkness* para Crusader Kings III ([Steam Workshop 3303353422](https://steamcommunity.com/sharedfiles/filedetails/?id=3303353422)).
+
+Versión de [Princes of Darkness](https://steamcommunity.com/workshop/filedetails/?id=2216659254) para la que está hecha: <!-- base-version -->1.19.0.6 «Descent of the Dragons»<!-- /base-version -->.
 
 > **Para agentes e IA:** el punto de partida es **[AGENTS.md](AGENTS.md)** (qué hacer según el encargo) y, para traducir, **[tools/TRADUCIR_LOTE.md](tools/TRADUCIR_LOTE.md)**. El trabajo de un agente termina en `spanish/`: nada de editar `.yml` a mano, ejecutar `build`, tocar `mod/` ni modificar el repositorio con git.
 
@@ -153,7 +155,7 @@ Todas las órdenes se ejecutan desde la raíz del repositorio (`python tools/pod
 | Auditar lo que hizo un agente | `python tools/pod.py verify --all` |
 | Limpiar la cola | `python tools/pod.py clean` (`--dry-run` para simular) |
 | Devolver a la cola lo que quedó en `manual/` | `python tools/pod.py clean --requeue` |
-| Volcar el mod y subir versión | `python tools/pod.py build --version X.Y.Z --sync-supported` |
+| Volcar el mod y subir versión | `python tools/pod.py build --version X.Y.Z --sync-supported` (también actualiza la versión de PoD de este README) |
 | Regenerar el glosario del mod | `python tools/pod.py glossary` |
 
 Notas:
