@@ -131,7 +131,7 @@ Varias sesiones pueden trabajar a la vez si cada una se ocupa de un rango distin
    - `--model`: forzar un modelo concreto de Jan. `--url`: otro servidor compatible con OpenAI.
 5. **(Usuario)** Revisa el diff de `spanish/`, con especial atención al estilo, la concordancia y la terminología.
 
-Si un lote no cabe en el contexto, el script se detiene con el error del servidor y el lote se queda en `todo/`.
+**Si un lote falla entero** (no cabe en el contexto, el modelo no devuelve líneas `N = …`, se agota el tiempo), el script no se detiene: divide el lote en dos mitades y las prueba enseguida; si falla un único texto, lo manda a `work_queue/manual/` (`pod.py setaside` hace este apartado). Se detiene solo en dos casos: si Jan no responde (el lote se queda intacto en `todo/`) o si fallan 8 lotes seguidos sin ningún acierto entre medias, señal de un problema general del modelo o del servidor.
 
 ## Guía de uso rápida
 

@@ -20,6 +20,8 @@ Solo librería estándar. Ejecutar desde cualquier sitio: python tools/pod.py <o
                              Arreglos automáticos sin IA (dobles espacios, GetCustom('ES_O'), "| E]", "Concept (", comillas sin cerrar).
   verify [--all] [--batch]   Revisa solo las claves escritas por los lotes ya aplicados (--batch crea lotes R para corregirlas).
   glossary                   Regenera tools/glossary_mod.tsv a partir de los conceptos del mod ya traducidos.
+  setaside LOTE [--split] [--reason R]
+                             Aparta un lote que ha fallado entero: lo divide en dos (--split) o lo manda a manual/.
   clean [--dry-run] [--requeue]
                              Limpia work_queue: quita de manual/ lo ya corregido, lotes obsoletos y huérfanos,
                              lotes terminados antiguos y registros caducados. --requeue devuelve manual/ a la cola.
@@ -1138,6 +1140,39 @@ def cmd_fix(a):
 
 RULES = ["tokens", "custom", "spaces", "punct", "glossary", "display", "english"]
 
+# ---------------------------------------------------------------- lotes que fallan enteros
+
+def cmd_setaside(a):
+    """Aparta un lote que el agente no ha podido procesar: lo divide en dos o, si es de un solo texto, va a manual/."""
+    with QueueLock():
+        idxf = Q / "index" / f"{a.name}.json"
+        if not idxf.exists():
+            sys.exit(f"No existe el lote {a.name} en la cola.")
+        meta = json.loads(idxf.read_text(encoding="utf-8"))
+        items = []
+        for it in meta["items"].values():
+            rel, key, _ = it["targets"][0]
+            items.append({"rel": rel, "key": key, "en": it["en"], "es": it["expect"], "targets": it["targets"],
+                          "tries": it.get("tries", 0), "why": f"LOTE APARTADO ({a.reason})"})
+        if a.split and len(items) > 1:
+            half = (len(items) + 1) // 2
+            gloss = load_glossary()
+            names = []
+            for part in (items[:half], items[half:]):
+                n = next_batch_name(a.name[0])
+                write_batch(n, meta["mode"], [dict(i, why="") for i in part], gloss, "dividido")
+                names.append(n)
+            print(f"{a.name}: dividido en {names[0]} y {names[1]} ({a.reason})")
+        else:
+            (Q / "manual").mkdir(exist_ok=True)
+            mf = Q / "manual" / f"{a.name}.json"
+            prev = json.loads(mf.read_text(encoding="utf-8")) if mf.exists() else []
+            mf.write_text(json.dumps(prev + items, ensure_ascii=False, indent=1), encoding="utf-8")
+            print(f"{a.name}: {len(items)} textos a work_queue/manual/ ({a.reason})")
+        for p in (Q / "todo" / f"{a.name}.txt", idxf, Q / "out" / f"{a.name}.txt"):
+            if p.exists():
+                p.unlink()
+
 # ---------------------------------------------------------------- limpieza de la cola
 
 def cmd_clean(a):
@@ -1300,12 +1335,14 @@ def main():
     s.add_argument("--files", help="patrón, p. ej. \"traits/*\"")
     s = sp.add_parser("verify"); s.add_argument("--all", action="store_true"); s.add_argument("--batch", action="store_true")
     s.add_argument("--files")
+    s = sp.add_parser("setaside"); s.add_argument("name"); s.add_argument("--reason", default="fallo del agente")
+    s.add_argument("--split", action="store_true", help="dividir en dos lotes en vez de mandarlo a manual/")
     s = sp.add_parser("clean"); s.add_argument("--dry-run", action="store_true")
     s.add_argument("--requeue", action="store_true", help="devuelve a la cola lo que siga en manual/")
     a = ap.parse_args()
     {"status": cmd_status, "sync": cmd_sync, "batch": cmd_batch, "next": cmd_next, "apply": cmd_apply,
      "check": cmd_check, "build": cmd_build, "glossary": cmd_glossary, "fix": cmd_fix,
-     "verify": cmd_verify, "clean": cmd_clean}[a.cmd](a)
+     "verify": cmd_verify, "clean": cmd_clean, "setaside": cmd_setaside}[a.cmd](a)
 
 
 if __name__ == "__main__":
