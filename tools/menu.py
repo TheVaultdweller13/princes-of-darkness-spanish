@@ -213,9 +213,29 @@ def review():
             print("\nNo hay nada que corregir con esa regla.")
 
 
+def style():
+    title("Naturalizar y mejorar el estilo")
+    print("Pasada literaria sobre textos YA traducidos y correctos: quitar calcos del inglés, soltar")
+    print("la frase y darle el registro de la ambientación. No corrige errores (eso es la opción 3)")
+    print("ni toca rótulos ni textos cortos: solo los largos, donde la prosa se nota.")
+    if queued("S"):
+        print(f"\nYa hay {len(queued('S'))} lotes S en la cola.")
+        if not yes("¿Preparar además lotes nuevos?"):
+            return agent("S", ask_limit("S"))
+    n = ask_int("\n¿Cuántos lotes preparar? (unos 40 s cada uno)", 10)
+    zone = ask("Zona concreta, p. ej. event_localization/* (Intro = todo, en el orden de prioridad)")
+    largo = ask_int("Longitud mínima del texto en caracteres (menos = más textos, más cortos)", 180)
+    if pod("batch", "--mode", "style", "--limit", str(n), "--min-chars", str(largo),
+           *(["--files", zone] if zone else [])):
+        if queued("S"):
+            agent("S", ask_limit("S", n))
+        else:
+            print("\nNo hay textos que mejorar con esos criterios.")
+
+
 def resume():
     title("Seguir con la cola")
-    if not any(queued(p) for p in "UBRNM"):
+    if not any(queued(p) for p in "UBRNMS"):
         print("La cola está vacía.")
         return
     agent(None, ask_limit(None))
@@ -254,6 +274,7 @@ MENU = [
     ("Actualizar (traducir lo nuevo de una versión de PoD)", update),
     ("Traducir pendientes", pending),
     ("Corregir lo traducido", review),
+    ("Naturalizar y mejorar el estilo", style),
     ("Seguir con la cola (lotes ya preparados)", resume),
     ("Ver estado", status),
     ("Traducir lo apartado en manual/", manual),

@@ -26,9 +26,10 @@ spanish/ ──build──► mod/  (se sube a Steam)
 ```
 
 - **Marca de «sin traducir»:** un archivo de `spanish/` con nombre `_l_spanish.yml` y cabecera `l_english` está pendiente. `apply` cambia la cabecera a `l_spanish:` cuando el archivo queda completo.
-- **Prefijos de lote:** **U** = actualización · **B** = pendientes · **R** = revisión · **N** = nombres · **M** = textos devueltos de `manual/`.
+- **Prefijos de lote:** **U** = actualización · **B** = pendientes · **R** = revisión · **N** = nombres · **S** = estilo · **M** = textos devueltos de `manual/`.
 - **Ahorro:** cada lote lleva solo las entradas del glosario que aparecen en sus textos; los textos repetidos se traducen una vez, y lo que ya está traducido en otra clave con el mismo texto se rellena sin IA (memoria de traducción).
-- **Rechazos:** lo que no pasa la validación vuelve en un lote de reintento con el motivo; si falla dos veces, va a `work_queue/manual/`.
+- **Rechazos:** lo que no pasa la validación vuelve en un lote de reintento con el motivo; si falla dos veces, va a `work_queue/manual/`. En los lotes de estilo no hay reintento: se conserva el texto que ya había.
+- **Archivos bloqueados:** si un `.yml` de `spanish/` no se deja escribir (abierto en el editor, antivirus, nube), `apply` lo reintenta, avisa con el nombre del archivo y **conserva el lote** en `work_queue/out/` para aplicarlo luego con `apply --all`. La escritura es atómica: un archivo nunca se queda a medias.
 
 | Carpeta o pieza | Qué es |
 |---|---|
@@ -93,6 +94,8 @@ Se queda solo con los términos que aparecen en `english/`, descarta las palabra
    - `display`: texto de `Glossary(...)` o `Concept(...)` sin traducir.
    - `english`: palabras inglesas sueltas.
 3. `python tools/pod.py batch --mode review --rule R` → lotes **R**; el agente devuelve solo las líneas que corrige → `build` (usuario).
+
+**Pasada de estilo (lotes S).** `python tools/pod.py batch --mode style` no busca defectos: coge textos **ya traducidos y correctos** y pide al agente que los suelte —quitar calcos del inglés, ordenar la frase como se diría en castellano, afinar el registro literario y sombrío— sin cambiar lo que dicen. Como no hay chequeo capaz de detectar una prosa sosa, el filtro es la longitud: solo entran los textos de `style_min_chars` caracteres o más (180 por defecto, `--min-chars` lo cambia), porque en un rótulo de interfaz no hay nada que ganar y sí una marca que perder. Cada texto se propone una sola vez: si el agente lo deja igual, queda anotado en `reviewed.tsv` con la regla `style`. Y como el original ya era correcto, una mejora que no pase la validación **no se reintenta**: se descarta, el texto se queda como estaba y se da por revisado. Además, `apply` rechaza las reescrituras que se parecen menos de un `style_min_similarity` (0,5) al texto actual: eso no es pulir, es re-traducir. Conviene acotar con `--files` y `--limit`: a 180 caracteres hay casi 10.000 textos candidatos.
 
 **Lo revisado no se repite.** Cuando un agente mira un aviso y decide que el texto está bien, `apply` lo anota en `tools/reviewed.tsv` con una huella de ese texto, y ni `check` ni los lotes de revisión vuelven a proponerlo. Si el texto cambia después, la huella deja de coincidir y vuelve a revisarse. El registro va en `tools/`, versionado, así que sobrevive a la cola y a cualquier sesión nueva. Lo mismo vale para los nombres que se dejan sin adaptar.
 
@@ -167,6 +170,7 @@ Todas las órdenes se ejecutan desde la raíz del repositorio (`python tools/pod
 | Aplicar una actualización | `python tools/pod.py sync` |
 | Preparar solo lo nuevo | `python tools/pod.py batch --scope update` |
 | Preparar pendientes (en orden de prioridad) | `python tools/pod.py batch --limit 5` |
+| Preparar una pasada de estilo | `python tools/pod.py batch --mode style --limit 5` |
 | Preparar pendientes de una zona concreta | `python tools/pod.py batch --files "<carpeta>/*" --limit 5` |
 | Preparar nombres de personajes y dinastías | `python tools/pod.py batch --mode names` |
 | Ver el siguiente lote | `python tools/pod.py next --show` |

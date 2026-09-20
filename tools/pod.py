@@ -27,7 +27,7 @@ Solo librería estándar. Ejecutar desde cualquier sitio: python tools/pod.py <o
                              y revisiones cuyo texto ya cambió. done/ y applied.jsonl (el historial) solo se
                              vacían con --purge-done. --requeue devuelve manual/ a la cola.
 """
-import argparse, fnmatch, hashlib, json, re, shutil, subprocess, sys
+import argparse, difflib, fnmatch, hashlib, json, os, re, shutil, subprocess, sys, time
 from collections import Counter, defaultdict
 from pathlib import Path
 
@@ -110,9 +110,36 @@ class Loc:
         return BOM + body + (self.eol if self.final_eol else "")
 
     def save(self, path=None):
+        """Escritura atómica y con reintentos. En Windows es fácil que el .yml esté bloqueado un
+        instante (abierto en un editor, antivirus, sincronización en la nube) y no hay por qué
+        perder el lote por eso: se reintenta y, si no hay manera, se avisa con un mensaje claro."""
         path = path or self.path
         path.parent.mkdir(parents=True, exist_ok=True)
-        path.write_bytes(self.text().encode("utf-8"))
+        data = self.text().encode("utf-8")
+        tmp = path.with_name(path.name + ".pod-tmp")
+        ultimo = None
+        for intento in range(4):
+            try:
+                tmp.write_bytes(data)
+                os.replace(tmp, path)
+                return
+            except OSError as e:
+                ultimo = e
+                try:
+                    tmp.unlink(missing_ok=True)
+                except OSError:
+                    pass
+                time.sleep(0.5 * (intento + 1))
+        raise NoSePuedeEscribir(path, ultimo)
+
+
+class NoSePuedeEscribir(OSError):
+    """Un archivo de spanish/ no se deja escribir: bloqueado por otro programa, de solo lectura,
+    sin espacio… Nunca es culpa del lote, así que el lote se conserva para reintentarlo."""
+
+    def __init__(self, path, err):
+        self.path, self.err = path, err
+        super().__init__(f"no he podido escribir {path}: {err}")
 
 
 def es_rel(en_rel):
@@ -318,6 +345,16 @@ def match_any(rel, pats):
     return any(fnmatch.fnmatch(rel, p) for p in pats)
 
 
+def kept_key(rel, key):
+    """True si esta clave queda fuera de la traducción por 'keep_files'.
+    keep_files aparta archivos de nombres propios, pero esos archivos traen
+    también lemas de dinastía (*_motto), que son frases y sí se traducen:
+    'keep_files_except' lista los patrones de clave que nunca se apartan."""
+    if not match_any(rel, CFG.get("keep_files", [])):
+        return False
+    return not any(fnmatch.fnmatch(key, p) for p in CFG.get("keep_files_except", []))
+
+
 # ---------------------------------------------------------------- estado
 
 def load_pair(rel):
@@ -333,14 +370,47 @@ def pending_items(files=None, keep=None):
     for rel in en_files():
         if files and not match_any(rel, files):
             continue
-        if match_any(rel, CFG.get("keep_files", [])):
-            continue
         en, es = load_pair(rel)
         idx = es.index() if es else {}
         for l in en.kvs():
+            if kept_key(rel, l["key"]):
+                continue
             e = idx.get((l["key"], l["occ"]))
             if e is None or (e["value"] == l["value"] and translatable(l["value"]) and l["key"] not in keep):
                 yield rel, l["key"], l["occ"], l["value"]
+
+
+def style_items(files=None, min_chars=None):
+    """Candidatos a una pasada de estilo: textos ya traducidos y lo bastante largos como para que
+    la prosa importe. No hay chequeo que detecte un texto soso, así que el criterio es el tamaño:
+    los rótulos y las frases de interfaz no ganan nada con esto y sí se arriesgan a perder el tono.
+
+    Cada texto se propone una sola vez: si el agente lo deja igual, `apply` lo anota en reviewed.tsv
+    con la regla 'style' y no vuelve a salir mientras no cambie."""
+    min_chars = CFG.get("style_min_chars", 180) if min_chars is None else min_chars
+    revisado = load_reviewed()
+    busy = queued_ids()
+    for rel in sorted(en_files(), key=batch_order):
+        if files and not match_any(rel, files):
+            continue
+        en, es = load_pair(rel)
+        if not es or es.header != "l_spanish":
+            continue
+        idx = es.index()
+        for l in en.kvs():
+            e = idx.get((l["key"], l["occ"]))
+            if not e:
+                continue
+            sv = e["value"]
+            if sv == l["value"] or not translatable(sv):
+                continue  # sin traducir, o a propósito igual que el inglés
+            if len(strip_markup(sv)) < min_chars:
+                continue
+            if (rel, l["key"], l["occ"]) in busy:
+                continue
+            if revisado.get((rel, l["key"], l["occ"], "style")) in (huella(sv), ALWAYS_REVIEWED):
+                continue
+            yield {"rel": rel, "key": l["key"], "occ": l["occ"], "en": l["value"], "es": sv, "rules": ["style"]}
 
 
 def queued_ids():
@@ -362,12 +432,11 @@ def cmd_status(a):
         idx = es.index() if es else {}
         if es is None or es.header != "l_spanish":
             hdr_en += 1
-        kf = match_any(rel, CFG.get("keep_files", []))
         p = 0
         for l in en.kvs():
             tot += 1
             e = idx.get((l["key"], l["occ"]))
-            if e is None or (not kf and e["value"] == l["value"] and translatable(l["value"]) and l["key"] not in keep):
+            if e is None or (not kept_key(rel, l["key"]) and e["value"] == l["value"] and translatable(l["value"]) and l["key"] not in keep):
                 p += 1
             else:
                 done += 1
@@ -533,11 +602,12 @@ def build_tm():
 
 
 def write_values(assign, keep_keys=()):
-    """assign: {(rel, key, occ): (valor_esperado_actual, nuevo)} → escribe y devuelve archivos tocados."""
+    """assign: {(rel, key, occ): (valor_esperado_actual, nuevo)} → escribe y devuelve
+    (archivos tocados, claves que ya no coincidían, archivos que no se han podido escribir)."""
     byfile = defaultdict(list)
     for (rel, key, occ), v in assign.items():
         byfile[rel].append((key, occ, *v))
-    touched, stale = [], 0
+    touched, stale, fallidos = [], 0, []
     for rel, items in byfile.items():
         esp = ES_DIR / es_rel(rel)
         es = Loc(esp)
@@ -552,10 +622,13 @@ def write_values(assign, keep_keys=()):
                 es.set_value(e, new)
                 ok = True
         if ok:
-            es.save()
-            touched.append(rel)
+            try:
+                es.save()
+                touched.append(rel)
+            except NoSePuedeEscribir as e:
+                fallidos.append((rel, e))
     add_keep(keep_keys)
-    return touched, stale
+    return touched, stale, fallidos
 
 
 def flip_headers(rels):
@@ -598,8 +671,8 @@ def batch_order(rel):
     return (splat_of(rel)[0], cat)
 
 
-PREFIX = {"pending": "B", "update": "U", "review": "R", "names": "N", "manual": "M"}
-PREFIXES = "BURNM"  # B pendientes · U actualización · R revisión · N nombres · M devueltos de manual/
+PREFIX = {"pending": "B", "update": "U", "review": "R", "names": "N", "manual": "M", "style": "S"}
+PREFIXES = "BURNMS"  # B pendientes · U actualización · R revisión · N nombres · M devueltos de manual/ · S estilo
 
 
 def next_batch_name(prefix="B"):
@@ -620,6 +693,19 @@ HEAD_NAMES = """# LOTE {name} · MODO NOMBRES · {n} elementos
 #         (si no cambias ninguno, escribe una única línea:  # sin cambios)
 # Luego ejecuta:  python tools/pod.py apply {name}
 """
+HEAD_STYLE = """# LOTE {name} · MODO ESTILO · {n} elementos
+# Lee tools/TRADUCIR_LOTE.md (sección «Modo ESTILO»). La traducción ES ya es CORRECTA y está dada
+# por buena: no la re-traduzcas, no cambies lo que dice y no la reescribas solo para que suene
+# distinto. El texto que devuelvas sustituye a uno que ya valía: si no es mejor, es peor.
+#
+# NO CAMBIAR ES LA RESPUESTA NORMAL. Devuelve una línea solo si al leerla ves un defecto concreto
+# que puedas nombrar: calco del inglés, orden de frase forzado, repetición, registro flojo. Si la
+# mejora no se te ocurre a la primera, es que el texto está bien: déjalo y pasa al siguiente.
+#
+# Salida: crea work_queue/out/{name}.txt SOLO con las líneas que mejores:  <número> = <texto mejorado>
+#         Lo normal es cambiar pocas o ninguna; si no cambias nada, escribe:  # sin cambios
+# Luego ejecuta:  python tools/pod.py apply {name}
+"""
 HEAD_REVIEW = """# LOTE {name} · MODO REVISAR ({rule}) · {n} elementos
 # Lee tools/TRADUCIR_LOTE.md si no lo has leído. Corrige la traducción ES solo si hace falta.
 # Salida: crea work_queue/out/{name}.txt SOLO con las líneas que cambies:  <número> = <traducción corregida>
@@ -632,7 +718,8 @@ def write_batch(name, mode, items, gloss, rule=""):
     """items: lista de dicts {en, targets, key, rel, prev_en?, prev_es?, es?, why?}"""
     for d in ("todo", "index", "out", "done"):
         (Q / d).mkdir(parents=True, exist_ok=True)
-    head = {"pending": HEAD_PENDING, "review": HEAD_REVIEW, "names": HEAD_NAMES}[mode].format(name=name, n=len(items), rule=rule)
+    head = {"pending": HEAD_PENDING, "review": HEAD_REVIEW, "names": HEAD_NAMES,
+            "style": HEAD_STYLE}[mode].format(name=name, n=len(items), rule=rule)
     g = glossary_for([i["en"] for i in items], gloss) if mode != "names" else []
     body = [head]
     if g:
@@ -656,7 +743,7 @@ def write_batch(name, mode, items, gloss, rule=""):
             body.append(f"EN-ANTIGUO: {it['prev_en']}")
             body.append(f"ES-ANTIGUO: {it['prev_es']}")
         body.append(f"EN: {it['en']}")
-        if mode == "review":
+        if mode in ("review", "style"):
             body.append(f"ES: {it['es']}")
         index[str(n)] = {"en": it["en"], "expect": it["es"] if mode != "pending" else it["en"],
                          "targets": it["targets"], "tries": it.get("tries", 0),
@@ -699,6 +786,9 @@ def _batch(a):
             en, es = load_pair(rel)
             idx = es.index() if es else {}
             for l in en.kvs():
+                # los lemas de dinastía viven en estos archivos pero no son nombres: van por el flujo normal
+                if any(fnmatch.fnmatch(l["key"], p) for p in CFG.get("names_exclude", [])):
+                    continue
                 e = idx.get((l["key"], l["occ"]))
                 if not e or e["value"] != l["value"] or not translatable(l["value"]) or (rel, l["key"], l["occ"]) in busy:
                     continue
@@ -707,8 +797,9 @@ def _batch(a):
                 g = groups.setdefault(l["value"], {"rel": rel, "key": l["key"], "en": l["value"], "es": l["value"], "targets": []})
                 g["targets"].append([rel, l["key"], l["occ"]])
         items = list(groups.values())
-    elif a.mode == "review":
-        items = [dict(it, targets=[[it["rel"], it["key"], it["occ"]]]) for it in check_items(files, a.rule)]
+    elif a.mode in ("review", "style"):
+        crudos = check_items(files, a.rule) if a.mode == "review" else style_items(files, a.min_chars)
+        items = [dict(it, targets=[[it["rel"], it["key"], it["occ"]]]) for it in crudos]
         items = [i for i in items if tuple(i["targets"][0]) not in queued_ids()]
     else:
         pend = list(pending_items(files))
@@ -726,7 +817,9 @@ def _batch(a):
             tm = build_tm()
             assign = {(r, k, o): (v, tm[v]) for r, k, o, v in pend if v in tm}
             if assign:
-                touched, _ = write_values(assign)
+                touched, _, fallidos = write_values(assign)
+                for rel, e in fallidos:
+                    print(f"   ✘ {e}")
                 print(f"Memoria de traducción: {len(assign)} claves rellenadas sin IA")
                 flip_headers(touched)
                 pend = [p for p in pend if (p[0], p[1], p[2]) not in assign]
@@ -822,13 +915,25 @@ def _apply(a):
             m = OUT_RE.match(line)
             if m:
                 got[m.group(1)] = m.group(2)
-        assign, keep, bad, revisadas = {}, [], [], []
+        assign, keep, bad, revisadas, descartados = {}, [], [], [], []
 
         def dar_por_revisado(it):
             """El agente ha mirado el texto y no lo cambia: se anota para no volver a proponerlo."""
             for rel, key, occ in it["targets"]:
                 for regla in it.get("rules") or (["names"] if meta["mode"] == "names" else ["*"]):
                     revisadas.append((rel, key, occ, regla, huella(it["expect"])))
+
+        def rechaza(n, it, why, texto=None):
+            """Una mejora de estilo que no pasa la validación no se reintenta: el texto actual ya era
+            correcto, así que se queda como está y se anota como revisado. En los demás modos, el
+            texto sí hace falta, y el elemento va a un lote de reintento."""
+            if meta["mode"] == "style":
+                descartados.append((n, it, why))
+                dar_por_revisado(it)
+            elif texto is None:
+                bad.append((n, it, why))
+            else:
+                bad.append((n, it, why, texto))
 
         for n, it in items.items():
             if n not in got:
@@ -839,24 +944,48 @@ def _apply(a):
                 continue
             es, errs = validate(it["en"], got[n])
             if errs:
-                bad.append((n, it, "; ".join(errs), got[n]))
+                rechaza(n, it, "; ".join(errs), got[n])
                 continue
             if meta["mode"] != "pending" and es == it["expect"]:
                 dar_por_revisado(it)
                 continue
+            if meta["mode"] == "style":
+                # el modo estilo pule; si el texto vuelve irreconocible es que lo ha re-traducido,
+                # y eso cambia el sentido tanto como lo mejora: se rechaza y se le explica por qué
+                parecido = difflib.SequenceMatcher(None, strip_markup(it["expect"]), strip_markup(es)).ratio()
+                if parecido < CFG.get("style_min_similarity", 0.5):
+                    rechaza(n, it, f"reescritura excesiva (solo {parecido:.0%} en común con el texto actual): "
+                                   "el modo estilo pule la frase, no la re-traduce", es)
+                    continue
             for t in it["targets"]:
                 assign[tuple(t)] = (it["expect"], es)
             if meta["mode"] == "pending" and es == it["en"]:
                 keep.extend(t[1] for t in it["targets"])
-        if revisadas and meta["mode"] in ("review", "names"):
+        if revisadas and meta["mode"] in ("review", "names", "style"):
             n_rev = add_reviewed(revisadas)
             if n_rev:
                 print(f"{name}: {n_rev} revisiones anotadas en tools/{REVIEWED}")
-        touched, stale = write_values(assign, keep)
+        touched, stale, fallidos = write_values(assign, keep)
         flip_headers(touched)
-        if assign:
-            log_applied(name, assign.keys())
-        print(f"{name}: {len(assign)} claves escritas, {len(bad)} rechazadas, {stale} ya no coincidían (omitidas)")
+        # lo que no se ha podido escribir no cuenta como aplicado: el lote se conserva entero y se
+        # reintenta, y las claves de los archivos que sí se escribieron quedan protegidas por el
+        # control de «ya no coincidían» de la siguiente pasada
+        rotos = {rel for rel, _ in fallidos}
+        escritas = {k: v for k, v in assign.items() if k[0] not in rotos}
+        if escritas:
+            log_applied(name, escritas.keys())
+        print(f"{name}: {len(escritas)} claves escritas, {len(bad)} rechazadas, {stale} ya no coincidían (omitidas)"
+              + (f", {len(descartados)} mejoras descartadas" if descartados else ""))
+        for n, it, why in descartados:
+            print(f"   ~ {n} {it['targets'][0][1]}: {why}\n     → se queda el texto que ya había")
+        if fallidos:
+            for rel, e in fallidos:
+                print(f"   ✘ {e}")
+            print(f"   El lote {name} NO se da por hecho: sigue en work_queue/out/ y se reintenta con\n"
+                  f"     python tools/pod.py apply {name}\n"
+                  "   Si se repite: cierra el archivo en el editor, mira si el antivirus o la sincronización\n"
+                  "   en la nube lo están tocando, y asegúrate de no tener dos sesiones del menú a la vez.")
+            continue
         for d in ("done",):
             shutil.move(str(Q / "todo" / f"{name}.txt"), Q / d / f"{name}.txt") if (Q / "todo" / f"{name}.txt").exists() else None
             shutil.move(str(outf), Q / d / f"{name}.out.txt")
@@ -944,7 +1073,7 @@ def check_items(files=None, only=None, keys=None):
             if only in (None, "glossary"):
                 pe, ps = strip_markup(ev), strip_markup(sv).lower()
                 for g in gloss:
-                    if g["re"].search(pe) and g["es"].lower() not in ps:
+                    if g["re"].search(pe) and not any(alt.strip().lower() in ps for alt in g["es"].split("|")):
                         anota(why, reglas, 'glossary', f"glosario: {g['en']} → {g['es']}")
                         break
             if only in (None, "display"):
@@ -1481,7 +1610,8 @@ def main():
     sp = ap.add_subparsers(dest="cmd", required=True)
     s = sp.add_parser("status"); s.add_argument("--top", type=int, default=25)
     s = sp.add_parser("sync"); s.add_argument("--base"); s.add_argument("--dry-run", action="store_true"); s.add_argument("--prune", action="store_true")
-    s = sp.add_parser("batch"); s.add_argument("--mode", choices=["pending", "review", "names"], default="pending")
+    s = sp.add_parser("batch"); s.add_argument("--mode", choices=["pending", "review", "names", "style"], default="pending")
+    s.add_argument("--min-chars", type=int, help="modo estilo: longitud mínima del texto español (180 por defecto)")
     s.add_argument("--rule", choices=RULES)
     s.add_argument("--files"); s.add_argument("--limit", type=int); s.add_argument("--no-tm", action="store_true")
     s.add_argument("--scope", choices=["all", "update"], default="all", help="update = solo lo que trajo el último sync")
@@ -1504,9 +1634,16 @@ def main():
     s.add_argument("--requeue", action="store_true", help="devuelve a la cola lo que siga en manual/")
     s.add_argument("--purge-done", action="store_true", help="vacía done/ y applied.jsonl (el historial de lo hecho)")
     a = ap.parse_args()
-    {"status": cmd_status, "sync": cmd_sync, "batch": cmd_batch, "next": cmd_next, "apply": cmd_apply,
-     "check": cmd_check, "build": cmd_build, "glossary": cmd_glossary, "fix": cmd_fix,
-     "verify": cmd_verify, "clean": cmd_clean, "setaside": cmd_setaside}[a.cmd](a)
+    try:
+        {"status": cmd_status, "sync": cmd_sync, "batch": cmd_batch, "next": cmd_next, "apply": cmd_apply,
+         "check": cmd_check, "build": cmd_build, "glossary": cmd_glossary, "fix": cmd_fix,
+         "verify": cmd_verify, "clean": cmd_clean, "setaside": cmd_setaside}[a.cmd](a)
+    except NoSePuedeEscribir as e:
+        # un archivo bloqueado no es un error del programa: mensaje claro en vez de traza
+        sys.exit(f"✘ {e}\n"
+                 "  Ciérralo en el editor, comprueba el antivirus o la sincronización en la nube,\n"
+                 "  y que no haya dos sesiones del menú trabajando a la vez. Nada se ha perdido:\n"
+                 "  vuelve a ejecutar la misma orden.")
 
 
 if __name__ == "__main__":

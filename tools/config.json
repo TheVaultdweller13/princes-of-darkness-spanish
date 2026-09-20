@@ -12,6 +12,8 @@
   "batch_max_chars": 9000,
   "max_tries": 2,
   "max_review_rounds": 3,
+  "style_min_chars": 180,
+  "style_min_similarity": 0.5,
   "concept_files": [
     "game_POD_concepts_l_english.yml"
   ],
@@ -19,10 +21,16 @@
     "names/character_names_POD_l_english.yml",
     "dynasties/POD_dynasty_names_l_english.yml"
   ],
+  "names_exclude": [
+    "*_motto"
+  ],
   "names_batch_max_items": 200,
   "keep_files": [
     "names/character_names_POD_l_english.yml",
     "dynasties/POD_dynasty_names_l_english.yml"
+  ],
+  "keep_files_except": [
+    "*_motto"
   ],
   "priority": [
     "game_POD_concepts_l_english.yml",

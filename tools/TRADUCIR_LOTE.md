@@ -72,6 +72,23 @@ Para adjetivos o artículos que dependen del sexo de un personaje, puedes AÑADI
 
 Si no sabes a qué personaje se refiere, redacta la frase de forma neutra en vez de adivinar.
 
+## Modo ESTILO
+
+Lotes de textos **ya traducidos y correctos**. No es una revisión de errores ni una nueva traducción: es la pasada de estilo, para que dejen de sonar a traducción y suenen a novela.
+
+- **Regla de oro: dejarlo como está es la respuesta normal.** Estos textos ya valen. Léelos una vez: si no ves *de inmediato* un defecto concreto que puedas nombrar (un calco, un orden forzado, una repetición, un registro flojo), el texto está bien; no lo incluyas en la salida y quedará anotado como bueno. No busques mejoras a la fuerza, no reescribas «por si acaso» ni para que suene distinto: lo que devuelves sustituye a algo que ya era correcto, así que si no es claramente mejor, es peor. Un lote con dos cambios de ocho es un buen lote; uno con ocho de ocho significa que estás re-traduciendo, y se rechazará.
+- **No cambies lo que dice.** Mismo contenido, mismos datos, mismo tono del inglés. Si para mejorar la frase tienes que cambiar el sentido, déjala como está.
+- **Respeta el glosario y las marcas del juego** igual que siempre: los `[...]`, `$...$`, `#bold ... #!` y `
+` se copian exactos. Un texto de estilo que pierde una marca se rechaza.
+- Qué arreglar, por orden de importancia:
+  - **Calcos del inglés:** posesivos de más («se llevó la mano a su espada» → «se llevó la mano a la espada»), gerundios ingleses («siendo un vampiro, sabes…» → «como vampiro, sabes…»), «el hecho de que», pasivas que en castellano piden activa o impersonal («la ciudad fue atacada por los Tzimisce» → «los Tzimisce atacaron la ciudad»).
+  - **Orden de la frase:** en castellano el verbo no espera al final; reparte las subordinadas y rompe las frases kilométricas en dos si se leen mal.
+  - **Repeticiones y muletillas:** «entonces», «realmente», «ciertamente», el mismo verbo tres veces en dos líneas.
+  - **Registro:** literario y sombrío, no coloquial ni burocrático. «Consigues información sobre…» → «Averiguas…». Nada de anacronismos modernos.
+  - **Naturalidad del diálogo:** que suene a alguien hablando, no a subtítulo.
+- **Si ya suena bien, no lo toques.** Devolver un texto reescrito solo por reescribirlo es peor que dejarlo: cada cambio es riesgo. Un lote donde solo mejoras tres de ocho textos es un buen lote.
+- Los textos que dejes fuera se anotan como revisados y no se te volverán a proponer mientras no cambien.
+
 ## Modo NOMBRES
 
 Lotes con nombres de personajes y de dinastías. Por defecto NO se traducen. Devuelve solo los que tienen una forma española consolidada, normalmente personajes históricos, míticos o bíblicos:
@@ -79,7 +96,11 @@ Lotes con nombres de personajes y de dinastías. Por defecto NO se traducen. Dev
 - Traduce también los epítetos y los «of X» con lugar conocido: `Helen of Genoa` → `Helena de Génova`.
 - NO adaptes nombres corrientes sin fama propia (`Hadmar`, `Aliu`, `Fakhr al-Din`), ni nombres de vampiros inventados por el mod, aunque exista el equivalente español (no pongas `Juan` por `John`).
 - Dinastías: igual criterio. Solo las históricas con forma castellana asentada (`Komnenos` → `Comneno`, `Plantagenet` → `Plantagenet`, `Capet` → `Capeto`); las inventadas por el mod se quedan como están.
+- **Nombres formados con nombres comunes ingleses SÍ se traducen**, aunque el personaje o la dinastía sean inventados: son descripciones, no nombres propios. `Sisters of St-John` → `Hermanas de San Juan` · `Blood Flowers` → `Flores de Sangre` · `The White Lady` → `La Dama Blanca` · `Silver-Howl` → `Aullido-de-Plata` · `Kills-the-Weak` → `Mata-a-los-Débiles`.
+- En los «X of Lugar», cambia siempre `of` por `de` (en español `of` chirría) y pon el topónimo en su forma española si la tiene: `Friedrich of Munich` → `Friedrich de Múnich` · `Robert of Edinburgh` → `Robert de Edimburgo`. El nombre de pila solo se adapta si el personaje es célebre (`Anthony of Padua` → `Antonio de Padua`).
+- Antes de adaptar un nombre, mira cómo lo escribe ya el resto de la traducción (`grep`); si el repositorio usa mayoritariamente la forma inglesa, respétala.
 - Si dudas, déjalo igual (no lo escribas).
+- Los lemas de dinastía (`*_motto`) no salen en estos lotes: son frases y van por el flujo normal de pendientes.
 
 ## Ejemplos
 
