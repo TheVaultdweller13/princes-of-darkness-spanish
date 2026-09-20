@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""Genera tools/glossary_books.tsv a partir de los glosarios oficiales en PDF de la raíz.
+"""Genera tools/glossary_books.tsv a a partir de los glosarios oficiales en PDF en docs/".
 
 Necesita `pdftotext` (poppler) en el PATH. Se ejecuta solo cuando se añade o cambia un PDF:
 
@@ -99,7 +99,7 @@ def main():
     a = ap.parse_args()
 
     libros = {}
-    for pdf in sorted(ROOT.glob("Glosario *.pdf")):
+    for pdf in sorted(ROOT.glob("**/Glosario *.pdf")):
         fuente = pdf.stem.replace("Glosario ", "").replace(" Ampliado", "").replace(" Básico", "")
         n = 0
         for en, es in pares(texto_pdf(pdf)):

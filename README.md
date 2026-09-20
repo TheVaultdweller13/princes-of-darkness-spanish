@@ -39,7 +39,7 @@ spanish/ ──build──► mod/  (se sube a Steam)
 | `tools/config.json` | Rutas, tamaño de lote, orden de prioridad, archivos que no se traducen, último commit sincronizado |
 | `tools/glossary.tsv` | Glosario del proyecto: manda sobre los demás. Se edita a mano |
 | `tools/glossary_mod.tsv` | Generado con `pod.py glossary` a partir de los conceptos ya traducidos del mod |
-| `tools/glossary_books.tsv` | Generado con `tools/extract_glossaries.py` desde los glosarios oficiales en PDF de la raíz |
+| `tools/glossary_books.tsv` | Generado con `tools/extract_glossaries.py` desde los glosarios oficiales ubicados en docs/ |
 | `tools/keep_english.txt` | Claves que se quedan en inglés; `apply` lo amplía solo |
 | `work_queue/` | Cola de lotes y registros de trabajo (no se versiona) |
 
