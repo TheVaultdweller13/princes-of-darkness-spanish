@@ -20,6 +20,8 @@ Solo librería estándar. Ejecutar desde cualquier sitio: python tools/pod.py <o
                              Arreglos automáticos sin IA (dobles espacios, GetCustom('ES_O'), "| E]", "Concept (", comillas sin cerrar).
   verify [--all] [--batch]   Revisa solo las claves escritas por los lotes ya aplicados (--batch crea lotes R para corregirlas).
   glossary                   Regenera tools/glossary_mod.tsv a partir de los conceptos del mod ya traducidos.
+  setaside LOTE [--split] [--reason R]
+                             Aparta un lote que ha fallado entero: lo divide en dos (--split) o lo manda a manual/.
   clean [--dry-run] [--requeue]
                              Limpia work_queue: quita de manual/ lo ya corregido, lotes obsoletos y huérfanos,
                              lotes terminados antiguos y registros caducados. --requeue devuelve manual/ a la cola.
@@ -237,9 +239,10 @@ def validate(en, es):
 # ---------------------------------------------------------------- glosario y lista de conservar
 
 def load_glossary():
-    """glossary.tsv (oficial, manda) + glossary_mod.tsv (conceptos del mod ya traducidos, generado)."""
+    """De menor a mayor prioridad: glossary_books.tsv (glosarios oficiales en PDF),
+    glossary_mod.tsv (conceptos del mod ya traducidos) y glossary.tsv (el nuestro, manda)."""
     rows = {}
-    for fname in ("glossary_mod.tsv", "glossary.tsv"):
+    for fname in ("glossary_books.tsv", "glossary_mod.tsv", "glossary.tsv"):
         f = TOOLS / fname
         if not f.exists():
             continue
@@ -284,6 +287,12 @@ def glossary_for(texts, gloss):
     for g in gloss:
         if g["re"].search(blob):
             out.append(g)
+    # Tope por lote: primero lo nuestro y lo verificado, y dentro de eso los términos más largos,
+    # que son los que un modelo tiene menos posibilidades de acertar por su cuenta.
+    tope = CFG.get("glossary_max_per_batch", 30)
+    if len(out) > tope:
+        out.sort(key=lambda g: ("b" in g["flags"], -len(g["en"])))
+        out = out[:tope]
     return out
 
 
@@ -396,6 +405,11 @@ def git(*args):
 
 
 def cmd_sync(a):
+    with QueueLock():
+        _sync(a)
+
+
+def _sync(a):
     base = a.base or CFG["last_synced_en_commit"]
     dirty = git("status", "--porcelain", "--", CFG["en_dir"]).stdout.strip()
     if dirty and not a.dry_run:
@@ -583,13 +597,14 @@ def batch_order(rel):
     return (splat_of(rel)[0], cat)
 
 
-PREFIX = {"pending": "B", "update": "U", "review": "R", "names": "N"}
+PREFIX = {"pending": "B", "update": "U", "review": "R", "names": "N", "manual": "M"}
+PREFIXES = "BURNM"  # B pendientes · U actualización · R revisión · N nombres · M devueltos de manual/
 
 
 def next_batch_name(prefix="B"):
     """Prefijos: U = actualización, B = pendientes, R = revisión, N = nombres. Numeración común."""
     Q.mkdir(exist_ok=True)
-    existing = [int(m.group(1)) for p in Q.rglob("*.*") if (m := re.match(r"[BURN](\d{4})", p.name))]
+    existing = [int(m.group(1)) for p in Q.rglob("*.*") if (m := re.match(rf"[{PREFIXES}](\d{{4}})", p.name))]
     return f"{prefix}{(max(existing) + 1 if existing else 1):04d}"
 
 
@@ -664,6 +679,11 @@ def chunk(items, max_items=None):
 
 
 def cmd_batch(a):
+    with QueueLock():
+        _batch(a)
+
+
+def _batch(a):
     files = [a.files] if a.files else None
     gloss = load_glossary()
     if a.mode == "names":
@@ -1096,6 +1116,11 @@ def dirty_rels():
 
 
 def cmd_fix(a):
+    with QueueLock():
+        _fix(a)
+
+
+def _fix(a):
     cnt = Counter()
     only = dirty_rels() if a.dirty else None
     if a.dirty:
@@ -1137,6 +1162,39 @@ def cmd_fix(a):
 
 
 RULES = ["tokens", "custom", "spaces", "punct", "glossary", "display", "english"]
+
+# ---------------------------------------------------------------- lotes que fallan enteros
+
+def cmd_setaside(a):
+    """Aparta un lote que el agente no ha podido procesar: lo divide en dos o, si es de un solo texto, va a manual/."""
+    with QueueLock():
+        idxf = Q / "index" / f"{a.name}.json"
+        if not idxf.exists():
+            sys.exit(f"No existe el lote {a.name} en la cola.")
+        meta = json.loads(idxf.read_text(encoding="utf-8"))
+        items = []
+        for it in meta["items"].values():
+            rel, key, _ = it["targets"][0]
+            items.append({"rel": rel, "key": key, "en": it["en"], "es": it["expect"], "targets": it["targets"],
+                          "tries": it.get("tries", 0), "why": f"LOTE APARTADO ({a.reason})"})
+        if a.split and len(items) > 1:
+            half = (len(items) + 1) // 2
+            gloss = load_glossary()
+            names = []
+            for part in (items[:half], items[half:]):
+                n = next_batch_name(a.name[0])
+                write_batch(n, meta["mode"], [dict(i, why="") for i in part], gloss, "dividido")
+                names.append(n)
+            print(f"{a.name}: dividido en {names[0]} y {names[1]} ({a.reason})")
+        else:
+            (Q / "manual").mkdir(exist_ok=True)
+            mf = Q / "manual" / f"{a.name}.json"
+            prev = json.loads(mf.read_text(encoding="utf-8")) if mf.exists() else []
+            mf.write_text(json.dumps(prev + items, ensure_ascii=False, indent=1), encoding="utf-8")
+            print(f"{a.name}: {len(items)} textos a work_queue/manual/ ({a.reason})")
+        for p in (Q / "todo" / f"{a.name}.txt", idxf, Q / "out" / f"{a.name}.txt"):
+            if p.exists():
+                p.unlink()
 
 # ---------------------------------------------------------------- limpieza de la cola
 
@@ -1197,9 +1255,9 @@ def _clean(a, now):
         for mode in ("pending", "review"):
             its = [dict(it, tries=0) for it in requeue if (it["es"] == it["en"]) == (mode == "pending")]
             for ch in chunk(its):
-                cnt[f"manual: devueltos a la cola ({PREFIX[mode]})"] += len(ch)
+                cnt["manual: devueltos a la cola (M)"] += len(ch)
                 if not dry:
-                    write_batch(next_batch_name(PREFIX[mode]), mode, ch, gloss, "manual")
+                    write_batch(next_batch_name("M"), mode, ch, gloss, "manual")
 
     # 2. todo/ index/ out/: lotes obsoletos (todo su contenido ya cambió) y archivos huérfanos
     todo, index, out = (Q / "todo"), (Q / "index"), (Q / "out")
@@ -1290,7 +1348,7 @@ def main():
     s.add_argument("--rule", choices=RULES)
     s.add_argument("--files"); s.add_argument("--limit", type=int); s.add_argument("--no-tm", action="store_true")
     s.add_argument("--scope", choices=["all", "update"], default="all", help="update = solo lo que trajo el último sync")
-    s = sp.add_parser("next"); s.add_argument("--show", action="store_true"); s.add_argument("--prefix", choices=list("BURN"))
+    s = sp.add_parser("next"); s.add_argument("--show", action="store_true"); s.add_argument("--prefix", choices=list(PREFIXES))
     s = sp.add_parser("apply"); s.add_argument("names", nargs="*"); s.add_argument("--all", action="store_true")
     s = sp.add_parser("check"); s.add_argument("--files"); s.add_argument("--rule", choices=RULES); s.add_argument("--examples", type=int, default=3)
     s = sp.add_parser("build"); s.add_argument("--version"); s.add_argument("--sync-supported", action="store_true")
@@ -1300,12 +1358,14 @@ def main():
     s.add_argument("--files", help="patrón, p. ej. \"traits/*\"")
     s = sp.add_parser("verify"); s.add_argument("--all", action="store_true"); s.add_argument("--batch", action="store_true")
     s.add_argument("--files")
+    s = sp.add_parser("setaside"); s.add_argument("name"); s.add_argument("--reason", default="fallo del agente")
+    s.add_argument("--split", action="store_true", help="dividir en dos lotes en vez de mandarlo a manual/")
     s = sp.add_parser("clean"); s.add_argument("--dry-run", action="store_true")
     s.add_argument("--requeue", action="store_true", help="devuelve a la cola lo que siga en manual/")
     a = ap.parse_args()
     {"status": cmd_status, "sync": cmd_sync, "batch": cmd_batch, "next": cmd_next, "apply": cmd_apply,
      "check": cmd_check, "build": cmd_build, "glossary": cmd_glossary, "fix": cmd_fix,
-     "verify": cmd_verify, "clean": cmd_clean}[a.cmd](a)
+     "verify": cmd_verify, "clean": cmd_clean, "setaside": cmd_setaside}[a.cmd](a)
 
 
 if __name__ == "__main__":

@@ -113,10 +113,11 @@ def agent(prefix=None):
         return
     title("Traduciendo con el agente local (Ctrl+C para parar; el lote en curso no se pierde)")
     run("local_agent.py", *(["--prefix", prefix] if prefix else []), "--model", model, "--close")
-    manual = ROOT / "work_queue" / "manual"
-    n = len(list(manual.glob("*.json"))) if manual.exists() else 0
+    mdir = ROOT / "work_queue" / "manual"
+    n = sum(len(json.loads(f.read_text(encoding="utf-8"))) for f in mdir.glob("*.json")) if mdir.exists() else 0
     if n:
-        print(f"\n⚠ Hay {n} textos en work_queue/manual/ que el modelo no ha sabido traducir: revísalos a mano.")
+        print(f"\n⚠ Hay {n} textos en work_queue/manual/ que no han pasado la validación: usa la opción"
+              "\n  «Traducir lo apartado en manual/» (van como lotes M, aparte del resto) o revísalos a mano.")
     print("\nRevisa el diff de spanish/. build, la versión y git son cosa tuya.")
 
 
@@ -195,7 +196,7 @@ def review():
 
 def resume():
     title("Seguir con la cola")
-    if not any(queued(p) for p in "UBRN"):
+    if not any(queued(p) for p in "UBRNM"):
         print("La cola está vacía.")
         return
     agent()
@@ -204,6 +205,20 @@ def resume():
 def status():
     title("Estado")
     pod("status")
+
+
+def manual():
+    title("Traducir lo apartado en manual/")
+    n = sum(len(json.loads(f.read_text(encoding="utf-8"))) for f in (ROOT / "work_queue" / "manual").glob("*.json"))
+    if not n and not queued("M"):
+        print("No hay nada en work_queue/manual/.")
+        return
+    if n:
+        print(f"{n} textos apartados. Se devuelven a la cola como lotes M, aparte de los demás,")
+        print("para que esto no se cruce con otro agente que esté traduciendo.")
+        if not yes("¿Devolverlos a la cola?", True) or not pod("clean", "--requeue"):
+            return
+    agent("M")
 
 
 def clean():
@@ -222,6 +237,7 @@ MENU = [
     ("Corregir lo traducido", review),
     ("Seguir con la cola (lotes ya preparados)", resume),
     ("Ver estado", status),
+    ("Traducir lo apartado en manual/", manual),
     ("Limpiar la cola", clean),
 ]
 

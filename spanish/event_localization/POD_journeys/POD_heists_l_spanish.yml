@@ -1,318 +1,318 @@
-﻿l_english:
+﻿l_spanish:
 
  ###################
  ####### GUI #######
  ###################
 
- POD_heist_setup_suspicion_tt: "You will start an [infiltration|E] mission in [GetPlayer.GetCurrentLocation.GetCounty.GetTitle.GetNameNoTier]"
+ POD_heist_setup_suspicion_tt: "Comenzarás una misión de [infiltration|E] en [GetPlayer.GetCurrentLocation.GetCounty.GetTitle.GetNameNoTier]"
 
  POD_heist_suspicion: "[suspicion_with_icon|E]: [CurrentHeist.Var('suspicion').GetValue]"
- POD_heist_coterie: "Your [GetPlayer.Custom('PODCoterie')]: $POD_player_coterie$"
- POD_heist_coterie_member_absent: "@warning_icon!#X [Scope.Char.GetFirstNameNicknamed] is #bold not#! present at this [infiltration|E]#!"
+ POD_heist_coterie: "Tu [GetPlayer.Custom('PODCoterie')]: $POD_player_coterie$"
+ POD_heist_coterie_member_absent: "@warning_icon!#X [Scope.Char.GetFirstNameNicknamed] #bold no#! está presente en esta [infiltration|E]#!"
 
- POD_heist_raise_suspicion_desc: "[suspicion_with_icon|E] will #N rise#! by $VALUE|V0$"
- POD_heist_raise_suspicion_desc_past: "[suspicion_with_icon|E] #N rose#! by $VALUE|V0$"
- POD_heist_trigger_suspicion_event_desc: "@warning_icon!#X A complication will occur at #bold $VALUE|V0$#! Suspicion#!"
- POD_heist_trigger_suspicion_event_desc_past: "#N Because [suspicion_with_icon|E] has reached #bold $VALUE|V0$#!, a complication has occured.#!"
- POD_heist_trigger_suspicion_event_hint: "#N Future [skill|E] checks during this [infiltration|E] will be more difficult.#!"
- POD_heist_maximum_suspicion_desc: "@warning_icon!#X You will fail this Infiltration at #bold [EmptyScope.ScriptValue('suspicion_max')|V0]#! Suspicion#!"
- POD_heist_maximum_suspicion_desc_past: "#N Because [suspicion_with_icon|E] has reached #bold [EmptyScope.ScriptValue('suspicion_max')|V0]#!, you have failed this [infiltration|E].#!"
+ POD_heist_raise_suspicion_desc: "La [suspicion_with_icon|E] #N aumentará#! en $VALUE|V0$"
+ POD_heist_raise_suspicion_desc_past: "La [suspicion_with_icon|E] #N aumentó#! en $VALUE|V0$"
+ POD_heist_trigger_suspicion_event_desc: "@warning_icon!#X Ocurrirá una complicación con #bold $VALUE|V0$#! de Sospecha#!"
+ POD_heist_trigger_suspicion_event_desc_past: "#N Debido a que la [suspicion_with_icon|E] ha alcanzado el #bold $VALUE|V0$#! de Sospecha, ha surgido una complicación.#!"
+ POD_heist_trigger_suspicion_event_hint: "#N Las futuras comprobaciones de [skill|E] durante esta [infiltration|E] serán más difíciles.#!"
+ POD_heist_maximum_suspicion_desc: "@warning_icon!#X Fallarás esta Infiltración al alcanzar el #bold [EmptyScope.ScriptValue('suspicion_max')|V0]#! de Sospecha#!"
+ POD_heist_maximum_suspicion_desc_past: "#N Debido a que la [suspicion_with_icon|E] ha alcanzado el #bold [EmptyScope.ScriptValue('suspicion_max')|V0]#!, has fallado esta [infiltration|E].#!"
 
- POD_heist_resource_deltas_tt: "Net expenditures during this [infiltration|E]:"
+ POD_heist_resource_deltas_tt: "Gastos netos durante esta [infiltration|E]:"
 
- POD_heist_unexplored_node_tt: "Unexplored Location"
- POD_heist_node_location_tt: "This is your current location"
- POD_heist_node_effect_tt: "When you enter this location:"
- POD_heist_heist_paused_tt: "You can't move while a situation demands your attention"
- POD_heist_node_isvalid_tt: "You can't reach this place from your current location"
+ POD_heist_unexplored_node_tt: "Ubicación sin explorar"
+ POD_heist_node_location_tt: "Esta es tu ubicación actual"
+ POD_heist_node_effect_tt: "Cuando entres en este lugar:"
+ POD_heist_heist_paused_tt: "No puedes moverte mientras una situación requiera tu atención"
+ POD_heist_node_isvalid_tt: "No puedes llegar a este lugar desde tu ubicación actual"
 
- POD_heist_option_exit: "Exit the mission."
- POD_heist_option_exit_tt: "You will leave the [infiltration|E] with whatever riches you managed to gather."
+ POD_heist_option_exit: "Salir de la misión."
+ POD_heist_option_exit_tt: "Abandonarás la [infiltration|E] con todas las riquezas que hayas logrado reunir."
  #POD_heist_option_exit_isvalid: "You are not at an exit!"
- POD_heist_option_vault: "Gather as much gold as you can."
- POD_heist_option_vault_empty: "@warning_icon!#X [CurrentHeist.Var('gold_owner').Char.GetFirstNameNicknamed] has no gold anymore#!"
+ POD_heist_option_vault: "Reúne todo el oro que puedas."
+ POD_heist_option_vault_empty: "@warning_icon!#X [CurrentHeist.Var('gold_owner').Char.GetFirstNameNicknamed] ya no tiene oro#!"
  POD_heist_option_money: "$POD_heist_option_vault$"
- POD_heist_option_fame: "Spread some rumors about yourself."
- POD_heist_option_gossip: "Search the documents."
- POD_heist_option_destress: "Relax for a while."
- POD_heist_option_prisoners: "Release one of the prisoners."
- POD_heist_option_prisoners_empty: "@warning_icon!#X [CurrentHeistTarget.GetFirstNameNicknamed] has no prisoners#!"
+ POD_heist_option_fame: "Difunde algunos rumores sobre ti mismo."
+ POD_heist_option_gossip: "Registrar los documentos."
+ POD_heist_option_destress: "Relajarse un rato."
+ POD_heist_option_prisoners: "Liberar a uno de los prisioneros."
+ POD_heist_option_prisoners_empty: "@warning_icon!#X [CurrentHeistTarget.GetFirstNameNicknamed] no tiene prisioneros#!"
 
- POD_heist_wounded_toast: "You got wounded"
- POD_heist_stress_toast: "A stressful experience"
+ POD_heist_wounded_toast: "Has resultado herido"
+ POD_heist_stress_toast: "Una experiencia estresante"
 
- POD_heist_title_node_exit: "You are at an Exit"
- POD_heist_desc_node_exit: "This is where you can enter and leave.\nOnce you have achieved the objective of this [infiltration|E], you'll still have to return to an exit so you can leave safely."
+ POD_heist_title_node_exit: "Estás en una Salida"
+ POD_heist_desc_node_exit: "Este es el lugar por donde puedes entrar y salir.\nUna vez que hayas logrado el objetivo de esta [infiltration|E], aún tendrás que regresar a una salida para poder marcharte a salvo."
 
- POD_heist_title_node_empty: "A Hidden Passage!"
- POD_heist_desc_node_empty: "This corridor is completely empty.\nYou can pass through here without fear of arousing [suspicion|E]."
+ POD_heist_title_node_empty: "¡Un pasaje oculto!"
+ POD_heist_desc_node_empty: "Este pasillo está completamente vacío.\nPuedes pasar por aquí sin temor a despertar la [suspicion|E]."
 
- POD_heist_title_node_scramble: "Wait and See"
- POD_heist_desc_node_scramble: "You can lay low and wait in this hidden nook.\nThings will blow over, guards will move, and you'll hopefully gain some new opportunities."
- POD_heist_effect_node_scramble: "Most of the nodes in this [infiltration|E] will be replaced with new ones."
+ POD_heist_title_node_scramble: "Esperar y ver"
+ POD_heist_desc_node_scramble: "Puedes mantener un perfil bajo y esperar en este rincón oculto.\nLas cosas se calmarán, los guardias se moverán y, con suerte, obtendrás nuevas oportunidades."
+ POD_heist_effect_node_scramble: "La mayoría de los nodos de esta [infiltration|E] serán reemplazados por otros nuevos."
 
- POD_heist_title_node_key: "The Key to the Vault"
- POD_heist_desc_node_key: "This room contains a key.\nIt will unlock the room where the most precious valuables are kept."
+ POD_heist_title_node_key: "La llave de la cámara acorazada"
+ POD_heist_desc_node_key: "Esta sala contiene una llave.\nAbrirá la sala donde se guardan las pertenencias más valiosas."
 
- POD_heist_title_node_key_half: "A Key to the Vault"
- POD_heist_desc_node_key_half: "This room contains a key.\nYou need #bold two#! of these to unlock the room where the most precious valuables are kept."
+ POD_heist_title_node_key_half: "Una llave para la cámara acorazada"
+ POD_heist_desc_node_key_half: "Esta sala contiene una llave.\nNecesitas #bold dos#! de estas para abrir la sala donde se guardan las pertenencias más valiosas."
 
- POD_heist_node_key_empty: "#weak You already found the key in this location#!"
+ POD_heist_node_key_empty: "#weak Ya has encontrado la llave en este lugar#!"
 
- POD_heist_gain_key_toast: "Key found"
- POD_heist_found_key_desc: "You'll have $VALUE|V0$ out of [CurrentHeist.Var('keys_required').GetValue|V0] keys required to open the vault"
- POD_heist_found_key_desc_past: "You now have $VALUE|V0$ out of [CurrentHeist.Var('keys_required').GetValue|V0] keys required to open the vault"
- POD_heist_found_all_keys_desc: "You'll be able to unlock the vault"
- POD_heist_found_all_keys_desc_past: "You can now unlock the vault"
+ POD_heist_gain_key_toast: "Llave encontrada"
+ POD_heist_found_key_desc: "Tendrás $VALUE|V0$ de las [CurrentHeist.Var('keys_required').GetValue|V0] llaves necesarias para abrir la cámara acorazada"
+ POD_heist_found_key_desc_past: "Ahora tienes $VALUE|V0$ de las [CurrentHeist.Var('keys_required').GetValue|V0] llaves necesarias para abrir la cámara acorazada"
+ POD_heist_found_all_keys_desc: "Podrás abrir la cámara acorazada"
+ POD_heist_found_all_keys_desc_past: "Ahora puedes abrir la cámara acorazada"
 
  POD_heist_vault_no_key: "@warning_icon!#X $POD_heist_vault_no_key_basic$#!"
- POD_heist_vault_no_key_basic: "You have [CurrentHeist.Var('keys_found').GetValue|V0] out of [CurrentHeist.Var('keys_required').GetValue|V0] keys required to open this vault"
+ POD_heist_vault_no_key_basic: "Tienes [CurrentHeist.Var('keys_found').GetValue|V0] de las [CurrentHeist.Var('keys_required').GetValue|V0] llaves necesarias para abrir esta cámara acorazada"
  
- POD_heist_title_node_artifact: "A Priceless Treasure"
- POD_heist_desc_node_artifact: "There it is.\nYou find the [artifact|E] you came here to steal.\nNow you just have to get out..."
- POD_heist_gain_artifact_toast: "You find the [artifact|E]"
- POD_heist_gain_artifact_desc: "[CurrentHeist.Var('target_artifact').Artifact.Custom('ColorizedArtifactName')] will be added to your loot"
- POD_heist_gain_artifact_desc_past: "[CurrentHeist.Var('target_artifact').Artifact.Custom('ColorizedArtifactName')] has been added to your loot"
- POD_heist_gain_artifact_hint: "You gain all of your loot once you exit the [infiltration|E]"
+ POD_heist_title_node_artifact: "Un tesoro incalculable"
+ POD_heist_desc_node_artifact: "Ahí está.\nHas encontrado el [artifact|E] que venías a robar.\nAhora solo tienes que salir..."
+ POD_heist_gain_artifact_toast: "Has encontrado el [artifact|E]"
+ POD_heist_gain_artifact_desc: "[CurrentHeist.Var('target_artifact').Artifact.Custom('ColorizedArtifactName')] se añadirá a tu botín"
+ POD_heist_gain_artifact_desc_past: "[CurrentHeist.Var('target_artifact').Artifact.Custom('ColorizedArtifactName')] se ha añadido a tu botín"
+ POD_heist_gain_artifact_hint: "Obtendrás todo tu botín una vez que salgas de la [infiltration|E]"
 
- POD_heist_title_node_vault: "A Massive Vault"
- POD_heist_desc_node_vault: "A room filled with piles of gold. This is what you came here for.\nBeware: the more time you spend collecting it, the more your [suspicion|E] will increase."
- POD_heist_treasury_amount_desc: "\n#I [CHARACTER.GetShortUINameNoTooltipNoFormat] has [gold_i|E][CHARACTER.GetGold|V0] left#!"
+ POD_heist_title_node_vault: "Una cámara acorazada masiva"
+ POD_heist_desc_node_vault: "Una sala llena de montones de oro. Esto es lo que venías a buscar.\nCuidado: cuanto más tiempo pases recogiéndolo, más aumentará tu [suspicion|E]."
+ POD_heist_treasury_amount_desc: "\n#I [CHARACTER.GetShortUINameNoTooltipNoFormat] le quedan [gold_i|E][CHARACTER.GetGold|V0]#!"
 
- POD_heist_title_node_event: "Something Unexpected Will Happen"
- POD_heist_desc_node_event: "Someone is beckoning you over, looking to talk with you.\nWhat do they want? Only one way to find out..."
- POD_heist_effect_node_event: "A random event... maybe good, maybe bad."
+ POD_heist_title_node_event: "Ocurrirá algo inesperado"
+ POD_heist_desc_node_event: "Alguien te hace señas, con la intención de hablar contigo.\n¿Qué querrán? Solo hay una forma de saberlo..."
+ POD_heist_effect_node_event: "Un evento aleatorio... tal vez bueno, tal vez malo."
 
- POD_heist_title_node_diplomacy: "Smooth Talkers Needed"
- POD_heist_desc_node_diplomacy: "A courtier insists that they've seen you before.\nYou better convince them otherwise, or this could prove troublesome."
- POD_heist_effect_node_diplomacy_success: "Your charm is unparalleled"
- POD_heist_effect_node_diplomacy_fail: "Your charm has some parallels"
- POD_heist_effect_node_diplomacy_critfail: "A perfect example of what NOT to do"
+ POD_heist_title_node_diplomacy: "Se necesitan conversadores hábiles"
+ POD_heist_desc_node_diplomacy: "Un cortesano insiste en que ya te ha visto antes.\nMás vale que le convenzas de lo contrario, o esto podría resultar problemático."
+ POD_heist_effect_node_diplomacy_success: "Tu encanto no tiene parangón"
+ POD_heist_effect_node_diplomacy_fail: "Tu encanto tiene sus semejantes"
+ POD_heist_effect_node_diplomacy_critfail: "Un ejemplo perfecto de lo que NO se debe hacer"
 
- POD_heist_title_node_martial: "Troop Movements"
- POD_heist_desc_node_martial: "Many guards are here, doing some kind of exercise.\nKnowledge of strategy will let you predict and avoid them."
- POD_heist_effect_node_martial_success: "Clearly, you studied Sun Tzu"
- POD_heist_effect_node_martial_fail: "Sun who?"
- POD_heist_effect_node_martial_critfail: "You knew neither the enemy nor yourself"
+ POD_heist_title_node_martial: "Movimientos de tropas"
+ POD_heist_desc_node_martial: "Hay muchos guardias aquí, realizando algún tipo de ejercicio.\nEl conocimiento de la estrategia te permitirá predecirlos y evitarlos."
+ POD_heist_effect_node_martial_success: "Claramente, estudiaste a Sun Tzu"
+ POD_heist_effect_node_martial_fail: "¿Sun quién?"
+ POD_heist_effect_node_martial_critfail: "No conocías ni al enemigo ni a ti mismo"
 
- POD_heist_title_node_stewardship: "Bribes May Be Necessary"
- POD_heist_desc_node_stewardship: "Some courtiers catch you sneaking around.\nThey are willing to keep their mouths shut... for a price."
- POD_heist_effect_node_stewardship_success: "The bribe was successful"
- POD_heist_effect_node_stewardship_fail: "The courtiers are unimpressed"
- POD_heist_effect_node_stewardship_critfail: "You got scammed"
+ POD_heist_title_node_stewardship: "Puede que los sobornos sean necesarios"
+ POD_heist_desc_node_stewardship: "Algunos cortesanos te han pillado merodeando.\nEstán dispuestos a cerrar la boca... por un precio."
+ POD_heist_effect_node_stewardship_success: "El soborno ha funcionado"
+ POD_heist_effect_node_stewardship_fail: "Los cortesanos no han quedado impresionados"
+ POD_heist_effect_node_stewardship_critfail: "Te han estafado"
 
- POD_heist_title_node_intrigue: "The Subtle Approach"
- POD_heist_desc_node_intrigue: "The guard patrol in this area hasn't spotted you.\nYet.\nTime to put your stealth skills to the test."
- POD_heist_effect_node_intrigue_success: "You're like a shadow"
- POD_heist_effect_node_intrigue_fail: "You're like a rather noisy shadow"
- POD_heist_effect_node_intrigue_critfail: "You're as subtle as a Sabbat plot"
+ POD_heist_title_node_intrigue: "El enfoque sutil"
+ POD_heist_desc_node_intrigue: "La patrulla de guardias en esta zona no te ha visto.\nTodavía.\nEs hora de poner a prueba tus habilidades de sigilo."
+ POD_heist_effect_node_intrigue_success: "Eres como una sombra"
+ POD_heist_effect_node_intrigue_fail: "Eres como una sombra bastante ruidosa"
+ POD_heist_effect_node_intrigue_critfail: "Eres tan sutil como una trama del Sabbat"
 
- POD_heist_title_node_learning: "Inconspicuous Traps"
- POD_heist_desc_node_learning: "This corridor is lined with traps.\nA bit of ingenuity and knowledge of construction will help in avoiding them."
- POD_heist_effect_node_learning_success: "Heh. Child's play"
- POD_heist_effect_node_learning_fail: "The traps graze you a little"
- POD_heist_effect_node_learning_critfail: "YOWCH"
+ POD_heist_title_node_learning: "Trampas discretas"
+ POD_heist_desc_node_learning: "Este pasillo está lleno de trampas.\nUn poco de ingenio y conocimiento de la construcción te ayudarán a evitarlas."
+ POD_heist_effect_node_learning_success: "Je. Pan comido"
+ POD_heist_effect_node_learning_fail: "Las trampas te rozan un poco"
+ POD_heist_effect_node_learning_critfail: "# sin cambios"
 
- POD_heist_title_node_prowess: "Guards!"
- POD_heist_desc_node_prowess: "You are caught by a patrol. Too late to run.\nThe guards are no match for you, but can you defeat them quickly enough not to attract any attention?"
- POD_heist_effect_node_prowess_success: "Like a hot knife through butter"
- POD_heist_effect_node_prowess_fail: "Your scuffle makes some noise"
- POD_heist_effect_node_prowess_critfail: "SMASH those guards like an earthquake"
+ POD_heist_title_node_prowess: "¡Guardias!"
+ POD_heist_desc_node_prowess: "Una patrulla te ha atrapado. Es demasiado tarde para huir.\nLos guardias no son rival para ti, pero ¿podrás derrotarlos lo suficientemente rápido como para no atraer la atención?"
+ POD_heist_effect_node_prowess_success: "Como un cuchillo caliente a través de la mantequilla"
+ POD_heist_effect_node_prowess_fail: "Tu pelea hace algo de ruido"
+ POD_heist_effect_node_prowess_critfail: "# sin cambios"
 
- POD_heist_title_node_fight_elite: "A Dangerous Fight"
- POD_heist_desc_node_fight_elite: "You see one of [CurrentHeistTarget.GetFirstNamePossessive] [CurrentHeistTarget.Custom('KnightCulturePlural')].\nDeal with them quickly, and you can make it through without raising [suspicion|E]."
- POD_heist_effect_node_fight_elite: "You will start a duel to the @death_icon!#N;bold death#!."
- POD_heist_fight_elite_error_toast: "The knight disappeared..."
+ POD_heist_title_node_fight_elite: "Una lucha peligrosa"
+ POD_heist_desc_node_fight_elite: "Ves a uno de los [CurrentHeistTarget.Custom('KnightCulturePlural')] de [CurrentHeistTarget.GetFirstNamePossessive].\nLidiar con ellos rápidamente te permitirá salir sin levantar [suspicion|E]."
+ POD_heist_effect_node_fight_elite: "Comenzarás un duelo hasta la @death_icon!#N;bold muerte#!."
+ POD_heist_fight_elite_error_toast: "El caballero ha desaparecido..."
 
- POD_heist_title_node_fight_hunt: "The Target Of Your Mission"
- POD_heist_desc_node_fight_hunt: "This must be the fiend's hiding place.\nThe hunter has found its prey. But who's to say which of you is which?"
- POD_heist_effect_node_fight_hunt: "You confront [CurrentHeist.Var('hunt_target').Char.GetShortUIName]. Once you do, there is no backing out."
- POD_heist_effect_node_fight_hunt_invalid: "#weak [CurrentHeist.Var('hunt_target').Char.GetShortUIName] has already been defeated#!"
+ POD_heist_title_node_fight_hunt: "El objetivo de tu Misión"
+ POD_heist_desc_node_fight_hunt: "Este debe ser el escondite del engendro.\nEl Cazador ha encontrado a su presa. Pero, ¿quién puede asegurar quién es quién?"
+ POD_heist_effect_node_fight_hunt: "Te enfrentas a [CurrentHeist.Var('hunt_target').Char.GetShortUIName]. Una vez que lo hagas, no habrá vuelta atrás."
+ POD_heist_effect_node_fight_hunt_invalid: "#weak [CurrentHeist.Var('hunt_target').Char.GetShortUIName] ya ha sido derrotad[X.Custom('ES_OA')]#!"
 
- POD_heist_title_node_money: "An Unlocked Vault!"
- POD_heist_desc_node_money: "This room is filled with piles of gold.\nYou could spend some time gathering it up, but doing so will raise your [suspicion|E]."
+ POD_heist_title_node_money: "¡Una cámara acorazada abierta!"
+ POD_heist_desc_node_money: "Esta sala está llena de montones de oro.\nPuedes dedicar algo de tiempo a recogerlo, pero hacerlo aumentará tu [suspicion|E]."
 
- POD_heist_title_node_fame: "An Opportunity to Impress"
- POD_heist_desc_node_fame: "Some courtiers are sharing stories about famous [coteries|E].\nYou could gain [prestige|E] by talking about your own accomplishments, but doing so will raise your [suspicion|E]."
+ POD_heist_title_node_fame: "Una oportunidad para impresionar"
+ POD_heist_desc_node_fame: "Algunos cortesanos comparten historias sobre [coteries|E] famosas.\nPodrías ganar [prestige|E] hablando de tus propios logros, pero hacerlo aumentará tu [suspicion|E]."
 
- POD_heist_title_node_gossip: "Secret Documents"
- POD_heist_desc_node_gossip: "This room contains letters, ledgers, and other written evidence of misdeeds.\nYou could spend some time searching them and gain [secrets|E] or [hooks|E], but doing so will raise your [suspicion|E]."
- POD_heist_effect_node_gossip: "You learn a [secret|E] or gain a [hook|E] on a subject of [CurrentHeist.Var('court_owner').Char.GetFirstNameNicknamed]."
+ POD_heist_title_node_gossip: "Documentos secretos"
+ POD_heist_desc_node_gossip: "Esta sala contiene cartas, libros de contabilidad y otras pruebas escritas de malas acciones.\nPuedes dedicar algo de tiempo a buscarlos y ganar [secrets|E] o [hooks|E], pero hacerlo aumentará tu [suspicion|E]."
+ POD_heist_effect_node_gossip: "Aprendes un [secret|E] o ganas un [hook|E] sobre un asunto de [CurrentHeist.Var('court_owner').Char.GetFirstNameNicknamed]."
 
- POD_heist_title_node_destress: "Enjoy some Hospitality"
- POD_heist_desc_node_destress: "This is a lounge with amenities for guests of the court.\nYou could spend some time relaxing and losing [stress|E], but doing so will raise your [suspicion|E]."
+ POD_heist_title_node_destress: "Disfrutar de algo de hospitalidad"
+ POD_heist_desc_node_destress: "Esta es una sala de estar con comodidades para los invitados de la corte.\nPuedes dedicar algo de tiempo a relajarte y perder [stress|E], pero hacerlo aumentará tu [suspicion|E]."
 
- POD_heist_title_node_map: "Blueprints and Maps"
- POD_heist_desc_node_map: "This room contains not just a map of this [CurrentHeistTarget.Custom('PODDomicile')], but also schedules for guards and courtiers.\nThis is a great boon for your [infiltration|E], once you've taken the time to read everything."
- POD_heist_effect_node_map: "You will uncover every node in this [infiltration|E]."
+ POD_heist_title_node_map: "Planos y mapas"
+ POD_heist_desc_node_map: "Esta sala contiene no solo un mapa de este [CurrentHeistTarget.Custom('PODDomicile')], sino también horarios de guardias y cortesanos.\nEsto es una gran ventaja para tu [infiltration|E], una vez que te hayas tomado el tiempo de leerlo todo."
+ POD_heist_effect_node_map: "Descubrirás cada punto de esta [infiltration|E]."
 
- POD_heist_title_node_prisoners: "The Prison"
- POD_heist_desc_node_prisoners: "The prisoners of [CurrentHeistTarget.GetFirstNameNicknamed] are kept here.\nYou can release them if you so wish, but doing so will raise your [suspicion|E]."
- POD_heist_release_prisoner_desc: "You will approach the prison cell of [CHARACTER.GetNameNicknamed] and decide what to do with [CHARACTER.GetHerHim]."
+ POD_heist_title_node_prisoners: "La prisión"
+ POD_heist_desc_node_prisoners: "Los prisioneros de [CurrentHeistTarget.GetFirstNameNicknamed] se custodian aquí.\nPuedes liberarlos si así lo deseas, pero hacerlo aumentará tu [suspicion|E]."
+ POD_heist_release_prisoner_desc: "Te acercarás a la celda de la prisión de [CHARACTER.GetNameNicknamed] y decidirás qué hacer con [CHARACTER.GetHerHim]."
 
 
  ######################
  ####### Events #######
  ######################
 
- POD_heist_arrival_title: "The Infiltration Begins"
- POD_heist_arrival_confirm: "This will be a night to remember."
- POD_heist_arrival_decline: "I've changed my mind. Let's turn back."
+ POD_heist_arrival_title: "Comienza la Infiltración"
+ POD_heist_arrival_confirm: "Esta será una noche inolvidable."
+ POD_heist_arrival_decline: "He cambiado de opinión. Volvamos."
 
- POD_heists.1.desc.hostile.coterie: "We arrive.\n\nThere is no sound, save for the muffled footsteps of $POD_player_coterie$. We've taken great care to stay hidden and attract no attention, because once we're in this place, it's #bold;N kill on sight#!. This is our enemies' turf.\n\nNow all we need to do is get the key to the vault, find the [PlayerJourneyArtifact.GetName] and grab it without anyone spotting us."
- POD_heists.1.desc.hostile.nocoterie: "I arrive.\n\nThere is no sound, save for my muffled footsteps. I've taken great care to stay hidden and attract no attention, because once I'm in this place, it's #bold;N kill on sight#!. This is my enemies' turf.\n\nNow all I need to do is get the key to the vault, find the [PlayerJourneyArtifact.GetName] and grab it without anyone spotting me."
- POD_heists.1.desc.coterie: "We arrive.\n\nThe guards of [PlayerJourneyArtifact.GetOwner.GetShortUINamePossessive] [PlayerJourneyArtifact.GetOwner.Custom('PODDomicile')] wave $POD_player_coterie$ inside, and with that, we're in. Of course we were meant to be here. No reason to think otherwise.\n\nNone at all.\n\nNow all we need to do is get the key to the vault, find the [PlayerJourneyArtifact.GetName] and grab it without making a fuss."
- POD_heists.1.desc.nocoterie: "I arrive.\n\nThe guards of [PlayerJourneyArtifact.GetOwner.GetShortUINamePossessive] [PlayerJourneyArtifact.GetOwner.Custom('PODDomicile')] wave me inside, and with that, I'm in. Of course I was meant to be here. No reason to think otherwise.\n\nNone at all.\n\nNow all I need to do is get the key to the vault, find the [PlayerJourneyArtifact.GetName] and grab it without making a fuss."
+ POD_heists.1.desc.hostile.coterie: "Hemos llegado.\n\nNo hay sonido, salvo por los pasos amortiguados de $POD_player_coterie$. Nos hemos asegurado de permanecer ocultos y no llamar la atención, porque una vez que estemos en este lugar, será #bold;N matar a la vista#!. Este es el territorio de nuestros enemigos.\n\nAhora lo único que tenemos que hacer es conseguir la llave de la cámara acorazada, encontrar el [PlayerJourneyArtifact.GetName] y agarrarlo sin que nadie nos vea."
+ POD_heists.1.desc.hostile.nocoterie: "He llegado.\n\nNo hay sonido, salvo por mis pasos amortiguados. Me he asegurado de permanecer oculto y no llamar la atención, porque una vez que esté en este lugar, será #bold;N matar a la vista#!. Este es el territorio de mis enemigos.\n\nAhora lo único que tengo que hacer es conseguir la llave de la cámara acorazada, encontrar el [PlayerJourneyArtifact.GetName] y agarrarlo sin que nadie me vea."
+ POD_heists.1.desc.coterie: "Hemos llegado.\n\nLos guardias de [PlayerJourneyArtifact.GetOwner.GetShortUINamePossessive] [PlayerJourneyArtifact.GetOwner.Custom('PODDomicile')] nos hacen pasar a $POD_player_coterie$, y con eso, ya estamos dentro. Por supuesto que debíamos estar aquí. No hay razón para pensar lo contrario.\n\nNinguna en absoluto.\n\nAhora todo lo que tenemos que hacer es conseguir la llave de la bóveda, encontrar el [PlayerJourneyArtifact.GetName] y agarrarlo sin causar alboroto."
+ POD_heists.1.desc.nocoterie: "He llegado.\n\nLos guardias de [PlayerJourneyArtifact.GetOwner.Custom('PODDomicile')] de [PlayerJourneyArtifact.GetOwner.GetShortUINamePossessive] me dan la bienvenida, y con eso, ya estoy dentro. Por supuesto que debía estar aquí. No hay razón para pensar lo contrario.\n\nNinguna en absoluto.\n\nAhora lo único que tengo que hacer es conseguir la llave de la cámara acorazada, encontrar el [PlayerJourneyArtifact.GetName] y agarrarlo sin armar un escándalo."
 
- POD_heists.2.desc.hostile.coterie: "We arrive.\n\nThere is no sound, save for the muffled footsteps of $POD_player_coterie$. We've taken great care to stay hidden and attract no attention, because once we're in this place, it's #bold;N kill on sight#!. This is our enemies' turf.\n\nNow all we need to do is get the key, find [PlayerJourneyTarget.GetFirstNamePossessiveNoTooltip] vault and stuff our pockets without anyone spotting us."
- POD_heists.2.desc.hostile.nocoterie: "I arrive.\n\nThere is no sound, save for my muffled footsteps. I've taken great care to stay hidden and attract no attention, because once I'm in this place, it's #bold;N kill on sight#!. This is my enemies' turf.\n\nNow all I need to do is get the key, find [PlayerJourneyTarget.GetFirstNamePossessiveNoTooltip] vault and stuff my pockets without anyone spotting me."
- POD_heists.2.desc.coterie: "We arrive.\n\nThe guards of [PlayerJourneyTarget.GetShortUINamePossessive] [PlayerJourneyTarget.Custom('PODDomicile')] wave $POD_player_coterie$ inside, and with that, we're in. Of course we were meant to be here. No reason to think otherwise.\n\nNone at all.\n\nNow all we need to do is get the key, find [PlayerJourneyTarget.GetFirstNamePossessiveNoTooltip] vault and stuff our pockets without making a fuss."
- POD_heists.2.desc.nocoterie: "I arrive.\n\nThe guards of [PlayerJourneyTarget.GetShortUINamePossessive] [PlayerJourneyTarget.Custom('PODDomicile')] wave me inside, and with that, I'm in. Of course I was meant to be here. No reason to think otherwise.\n\nNone at all.\n\nNow all I need to do is get the key, find [PlayerJourneyTarget.GetFirstNamePossessiveNoTooltip] vault and stuff my pockets without making a fuss."
+ POD_heists.2.desc.hostile.coterie: "Hemos llegado.\n\nNo hay sonido, salvo por los pasos amortiguados de $POD_player_coterie$. Nos hemos asegurado de permanecer ocultos y no llamar la atención, porque una vez que estemos en este lugar, será #bold;N matar a la vista#!. Este es el territorio de nuestros enemigos.\n\nAhora lo único que tenemos que hacer es conseguir la llave, encontrar la cámara acorazada de [PlayerJourneyTarget.GetFirstNamePossessiveNoTooltip] y llenar nuestros bolsillos sin que nadie nos vea."
+ POD_heists.2.desc.hostile.nocoterie: "He llegado.\n\nNo hay sonido, salvo por mis pasos amortiguados. Me he asegurado de permanecer oculto y no llamar la atención, porque una vez que esté en este lugar, será #bold;N matar a la vista#!. Este es el territorio de mis enemigos.\n\nAhora lo único que tengo que hacer es conseguir la llave, encontrar la cámara acorazada de [PlayerJourneyTarget.GetFirstNamePossessiveNoTooltip] y llenar mis bolsillos sin que nadie me vea."
+ POD_heists.2.desc.coterie: "Hemos llegado.\n\nThe guardias de [PlayerJourneyTarget.GetShortUINamePossessive] [PlayerJourneyTarget.Custom('PODDomicile')] nos hacen pasar a $POD_player_coterie$, y con eso, ya estamos dentro. Por supuesto que debíamos estar aquí. No hay razón para pensar lo contrario.\n\nNinguna en absoluto.\n\nAhora todo lo que tenemos que hacer es conseguir la llave, encontrar la bóveda de [PlayerJourneyTarget.GetFirstNamePossessiveNoTooltip] y llenarnos los bolsillos sin causar alboroto."
+ POD_heists.2.desc.nocoterie: "He llegado.\n\nThe guardias de [PlayerJourneyTarget.Custom('PODDomicile')] de [PlayerJourneyTarget.GetShortUINamePossessive] me dan la bienvenida, y con eso, ya estoy dentro. Por supuesto que debía estar aquí. No hay razón para pensar lo contrario.\n\nNinguna en absoluto.\n\nAhora lo único que tengo que hacer es conseguir la llave, encontrar la cámara acorazada de [PlayerJourneyTarget.GetFirstNamePossessiveNoTooltip] y llenar mis bolsillos sin armar un escándalo."
 
- POD_heists.3.t: "Into the Lion's Den"
- POD_heists.3.desc.coterie: "We arrive.\n\nThere is no sound, save for the muffled footsteps of $POD_player_coterie$. We've taken great care to stay hidden and attract no attention, because once we're in this place, it's #bold;N kill on sight#!. This is our enemies' turf.\n\nNow we must quickly find the hiding spot of [PlayerJourneyTarget.GetShortUIName] and end [PlayerJourneyTarget.GetHerHim], lest we alert [PlayerJourneyTarget.GetHerHis] lackeys to our presence."
- POD_heists.3.desc.nocoterie: "I arrive.\n\nThere is no sound, save for my muffled footsteps. I've taken great care to stay hidden and attract no attention, because once I'm in this place, it's #bold;N kill on sight#!. This is my enemies' turf.\n\nNow I must quickly find the hiding spot of [PlayerJourneyTarget.GetShortUIName] and end [PlayerJourneyTarget.GetHerHim], lest I alert [PlayerJourneyTarget.GetHerHis] lackeys to my presence."
- POD_heists.3.a: "The hunt is on."
+ POD_heists.3.t: "En la guarida del león"
+ POD_heists.3.desc.coterie: "Hemos llegado.\n\nNo hay sonido, salvo por los pasos amortiguados de $POD_player_coterie$. Nos hemos asegurado de permanecer ocultos y no llamar la atención, porque una vez que estemos en este lugar, será #bold;N matar a la vista#!. Este es el territorio de nuestros enemigos.\n\nAhora debemos encontrar rápidamente el escondite de [PlayerJourneyTarget.GetShortUIName] y acabar con [PlayerJourneyTarget.GetHerHim], no sea que alertemos a sus lacayos de nuestra presencia."
+ POD_heists.3.desc.nocoterie: "He llegado.\n\nNo hay sonido, salvo por mis pasos amortiguados. Me he asegurado de permanecer oculto y no llamar la atención, porque una vez que esté en este lugar, será #bold;N matar a la vista#!. Este es el territorio de mis enemigos.\n\nAhora debo encontrar rápidamente el escondite de [PlayerJourneyTarget.GetShortUIName] y acabar con [PlayerJourneyTarget.GetHerHim], no sea que alerte a sus lacayos de mi presencia."
+ POD_heists.3.a: "La caza ha comenzado."
 
- POD_heists.100.t: "Successful Escape"
- POD_heists.100.desc.coterie: "We leave the court of [CurrentHeistTarget.GetShortUIName]. Free at last.\n\n"
- POD_heists.100.desc.nocoterie: "I leave the court of [CurrentHeistTarget.GetShortUIName]. Free at last.\n\n"
- POD_heists.100.desc.artifact: "The [displayed_artifact.GetName] is safe within my pack. No one saw me take it. A resounding success, as far as I'm concerned."
- POD_heists.100.desc.noartifact: "I didn't manage to get the [CurrentHeist.Var('target_artifact').Artifact.GetName]. This time. A disappointment for sure, but next time I'll be more prepared."
- POD_heists.100.desc.hunt: "[CurrentHeist.Var('hunt_target').Char.GetShortUIName] has been defeated. One less monster in this world. A cause for celebration, to be sure, but more monsters yet remain in the night.\n\nThe work of a hunter is never done."
- POD_heists.100.desc.nohunt: "[CurrentHeist.Var('hunt_target').Char.GetShortUIName] is still at large. This hunt has failed. Regardless, I can consider myself blessed in that I am still alive, and able to hunt another day.\n\nThe work of a hunter is never done."
- POD_heists.100.desc.gold: "[CurrentHeistTarget.GetHerHis|U] treasury is [gold_i|E][CurrentHeist.Var('stolen_gold').GetValue|V0] lighter, thanks to my efforts. Not a bad outing."
- POD_heists.100.desc.nogold: "This time, I didn't manage to steal any [gold|E]. A disappointment for sure, but next time I'll be more prepared."
- POD_heists.100.a.success.coterie: "Another win for $POD_player_coterie$."
- POD_heists.100.a.success.nocoterie: "Another notch on my belt."
- POD_heists.100.a.failure: "I'm already plotting my next move..."
+ POD_heists.100.t: "Escape exitoso"
+ POD_heists.100.desc.coterie: "Hemos abandonado la corte de [CurrentHeistTarget.GetShortUIName]. Por fin somos libres.\n\n"
+ POD_heists.100.desc.nocoterie: "He abandonado la corte de [CurrentHeistTarget.GetShortUIName]. Por fin soy libre.\n\n"
+ POD_heists.100.desc.artifact: "El/la [displayed_artifact.GetName] está a salvo en mi morral. Nadie me vio tomarlo. Un éxito rotundo, en lo que a mí respecta."
+ POD_heists.100.desc.noartifact: "No he logrado conseguir el/la [CurrentHeist.Var('target_artifact').Artifact.GetName]. Esta vez no. Una decepción, sin duda, pero la próxima vez estaré más preparado."
+ POD_heists.100.desc.hunt: "[CurrentHeist.Var('hunt_target').Char.GetShortUIName] ha sido derrotad[ROOT.Char.Custom('ES_OA')]. Un monstruo menos en este mundo. Una causa de celebración, desde luego, pero aún quedan más monstruos en la noche.\n\nLa labor de un Cazador nunca termina."
+ POD_heists.100.desc.nohunt: "[CurrentHeist.Var('hunt_target').Char.GetShortUIName] sigue suelto/a. Esta caza ha fracasado. Sea como sea, puedo considerarme afortunad[ROOT.Char.Custom('ES_OA')] de seguir con vida y poder cazar otro día.\n\nLa labor de un Cazador nunca termina."
+ POD_heists.100.desc.gold: "Su tesorería es [gold_i|E][CurrentHeist.Var('stolen_gold').GetValue|V0] más ligera, gracias a mis esfuerzos. Una salida nada mala."
+ POD_heists.100.desc.nogold: "Esta vez no he logrado robar nada de [gold|E]. Una decepción, sin duda, pero la próxima vez estaré más preparado."
+ POD_heists.100.a.success.coterie: "Otra victoria para $POD_player_coterie$."
+ POD_heists.100.a.success.nocoterie: "Otra medalla en mi historial."
+ POD_heists.100.a.failure: "Ya estoy planeando mi próximo movimiento..."
 
- POD_heist_levelup_hint_desc: "If you successfully finish $VALUE|V0$ more [Concept( 'infiltration', SelectLocalization( EqualTo_int32( '(int32)1', '(int32)$VALUE|0q$' ), 'game_concept_infiltration_mission', 'game_concept_infiltration_missions' ) )|E], you will gain [GetModifier('infiltration_experience_modifier').GetNameWithTooltip]."
+ POD_heist_levelup_hint_desc: "Si completas con éxito $VALUE|V0$ [Concept( 'infiltration', SelectLocalization( EqualTo_int32( '(int32)1', '(int32)$VALUE|0q$' ), 'game_concept_infiltration_mission', 'game_concept_infiltration_missions' ) )|E], ganarás [GetModifier('infiltration_experience_modifier').GetNameWithTooltip]."
 
- POD_heists.101.t: "And So It Ends"
- POD_heists.101.desc: "You pushed your luck. It was bound to run out eventually.\n\nThe retinue of [heist_imprisoner.GetFirstNameNicknamed] surrounds you. Nowhere to run. There is no fanfare as you are escorted to a prison cell.\n\nSitting behind lock and key, it occurs to you that you're unlikely to get a fair trial."
- POD_heists.101.desc.spirit: "You pushed your luck. It was bound to run out eventually.\n\nThe retinue of [heist_imprisoner.GetFirstNameNicknamed] surrounds you. Nowhere to run. There is no fanfare as you are escorted to a prison cell.\n\nNo mundane cell can hold a spirit like you, of course. In a flash, you're already out and about. But the damage to your reputation won't be solved as easily."
- POD_heists.101.desc.landless: "You pushed your luck. It was bound to run out eventually.\n\nThe retinue of [heist_imprisoner.GetFirstNameNicknamed] surrounds you. Nowhere to run. There is no fanfare as you are escorted outside.\n\nYou're lucky that this [heist_imprisoner.Custom('PODDomicile')] doesn't have a prison cell, otherwise you'd be in it right now. But regardless, rumors about your untrustworthiness are sure to spread quickly after this."
- POD_heists.101.a: "Only a temporary setback, surely."
+ POD_heists.101.t: "Y así termina"
+ POD_heists.101.desc: "Has forzado la suerte. Era inevitable que se agotara tarde o temprano.\n\nEl séquito de [heist_imprisoner.GetFirstNameNicknamed] te rodea. No hay escapatoria. No hay fanfarria mientras te escoltan a una celda de prisión.\n\nSentad[ROOT.Char.Custom('ES_OA')] tras los barrotes, te das cuenta de que es poco probable que tengas un juicio justo."
+ POD_heists.101.desc.spirit: "Has forzado la suerte. Era inevitable que se agotara tarde o temprano.\n\nEl séquito de [heist_imprisoner.GetFirstNameNicknamed] te rodea. No hay escapatoria. No hay fanfarria mientras te escoltan a una celda de prisión.\n\nUna celda mundana no puede retener a un Espíritu como tú, por supuesto. En un instante, ya estás fuera. Pero el daño a tu reputación no se solucionará tan fácilmente."
+ POD_heists.101.desc.landless: "Has forzado la suerte. Era inevitable que se agotara tarde o temprano.\n\nEl séquito de [heist_imprisoner.GetFirstNameNicknamed] te rodea. No hay escapatoria. No hay fanfarria mientras te escoltan fuera.\n\nTienes suerte de que este/a [heist_imprisoner.Custom('PODDomicile')] no tenga una celda de prisión; de lo contrario, estarías en ella ahora mismo. Pero, de cualquier modo, es seguro que los rumores sobre tu falta de fiabilidad se extenderán rápidamente tras esto."
+ POD_heists.101.a: "Solo un contratiempo temporal, seguramente."
 
- POD_heists.103.desc: "You pushed your luck. It was bound to run out eventually.\n\nThe retinue of [heist_imprisoner.GetFirstNameNicknamed] surrounds you. Nowhere to run. There is no fanfare and no trial, just the contemptuous glare of the [heist_imprisoner.Custom('PODSplat')] as [heist_imprisoner.GetSheHe] puts you to the sword.\n\nAt least [heist_imprisoner.GetSheHe] got it over with quickly."
- POD_heists.103.a.resurrection: "I'll be back, mark my words..."
+ POD_heists.103.desc: "Has forzado la suerte. Era inevitable que se agotara tarde o temprano.\n\nEl séquito de [heist_imprisoner.GetFirstNameNicknamed] te rodea. No hay escapatoria. No hay fanfarria ni juicio, solo la mirada despectiva del/de la [heist_imprisoner.Custom('PODSplat')] mientras [heist_imprisoner.GetSheHe] te pasa por la espada.\n\nAl menos [heist_imprisoner.GetSheHe] lo terminó rápido."
+ POD_heists.103.a.resurrection: "Volveré, acuérdate de lo que te digo..."
 
- POD_heist_legitimacy_loss_tt: "Because you were caught stealing from a [vassal|E], you lost [legitimacy_i][EmptyScope.ScriptValue('major_legitimacy_loss')|V0] [legitimacy|E]"
+ POD_heist_legitimacy_loss_tt: "Debido a que te atraparon robando a un/a [vassal|E], has perdido [legitimacy_i][EmptyScope.ScriptValue('major_legitimacy_loss')|V0] de [legitimacy|E]"
 
- POD_heists.200.t: "What to do with you?"
- POD_heists.200.t.relation: "Reunited"
- POD_heists.200.desc: "Going through the prison cells of [CurrentHeistTarget.GetShortUIName], I encounter my [GetPlayer.Custom2('RelationToMeShort', SCOPE.sC('prisoner_to_release'))], [prisoner_to_release.GetShortUIName]. [prisoner_to_release.GetSheHe|U] is visibly relieved at seeing me."
- POD_heists.200.desc.stranger: "Going through the prison cells of [CurrentHeistTarget.GetShortUIName], I encounter [prisoner_to_release.GetShortUIName]."
- POD_heists.200.desc.hostile: "Going through the prison cells of [CurrentHeistTarget.GetShortUIName], I encounter [prisoner_to_release.GetShortUIName].\n\nI don't have much use for a loathsome [prisoner_to_release.Custom('PODSplat')] like [prisoner_to_release.GetHerHim], but maybe I can get some value out of [prisoner_to_release.GetHerHim] another way."
- POD_heists.200.a: "Let's get you out of here."
- POD_heists.200.b: "I'll get you out... for a price."
- POD_heists.200.c: "Would you like to join my court?"
- POD_heists.200.d: "I could kill you right here, and no one would know..."
+ POD_heists.200.t: "¿Qué hacer contigo?"
+ POD_heists.200.t.relation: "Reencuentro"
+ POD_heists.200.desc: "Al recorrer las celdas de la prisión de [CurrentHeistTarget.GetShortUIName], me encuentro con mi/a [GetPlayer.Custom2('RelationToMeShort', SCOPE.sC('prisoner_to_release'))], [prisoner_to_release.GetShortUIName]. [prisoner_to_release.GetSheHe|U] se muestra visiblemente aliviad[ROOT.Char.Custom('ES_OA')] de verme."
+ POD_heists.200.desc.stranger: "Al recorrer las celdas de la prisión de [CurrentHeistTarget.GetShortUIName], me encuentro con [prisoner_to_release.GetShortUIName]."
+ POD_heists.200.desc.hostile: "Al recorrer las celdas de la prisión de [CurrentHeistTarget.GetShortUIName], me encuentro con [prisoner_to_release.GetShortUIName].\n\nNo le tengo mucha utilidad a un/a despreciable [prisoner_to_release.Custom('PODSplat')] como [prisoner_to_release.GetHerHim], pero quizá pueda sacar provecho de [prisoner_to_release.GetHerHim] de otra manera."
+ POD_heists.200.a: "Vamos, salgamos de aquí."
+ POD_heists.200.b: "Te sacaré de aquí... por un precio."
+ POD_heists.200.c: "¿Te gustaría unirte a mi corte?"
+ POD_heists.200.d: "Podría matarte aquí mismo y nadie se enteraría..."
 
- POD_heists.202.t: "A Hard-Fought Victory"
- POD_heists.202.desc: "[sc_loser.GetShortUIName] can't stand in my way anymore.\n\nWhat should I do with [sc_loser.GetHerHim]?"
- POD_heists.202.a: "Now die."
- POD_heists.202.a.dead: "Not much, since [sc_loser.GetSheHe] already died during the struggle."
- POD_heists.202.b: "Subdue [sc_loser.GetHerHim] and take [sc_loser.GetHerHim] to my prison."
- POD_heists.202.c: "Letting [sc_loser.GetHerHim] go would be suitably humiliating."
+ POD_heists.202.t: "Una victoria muy disputada"
+ POD_heists.202.desc: "[sc_loser.GetShortUIName] ya no puede interponerse en mi camino.\n\n¿Qué debería hacer con/con [sc_loser.GetHerHim]?"
+ POD_heists.202.a: "Muere de una vez."
+ POD_heists.202.a.dead: "No mucho, ya que [sc_loser.GetSheHe] murió durante la Contienda."
+ POD_heists.202.b: "Someter a/a [sc_loser.GetHerHim] y llevarlo/la a mi prisión."
+ POD_heists.202.c: "Dejar ir a/a [sc_loser.GetHerHim] sería una humillación adecuada."
 
- POD_heists.203.t: "Last Light"
- POD_heists.203.desc.rational: "[adversary.GetFirstName] looks unperturbed by my arrival, [adversary.GetHerHis] eyes radiating an icy cold intelligence that seems utterly in command of any situation. This one is not to be underestimated."
- POD_heists.203.desc.irrational: "Even for a fiend, [adversary.GetFirstName] seems deranged and unpredictable. Whatever happens next, it's going to get messy."
- POD_heists.203.desc.compassionate: "[adversary.GetFirstName] almost looks sad as I enter with my weapon drawn, as if to say: a shame it had to come to this. But we both know there is no other way."
- POD_heists.203.desc.callous: "Right away, it is clear that [adversary.GetFirstName] has no humanity left in [adversary.GetHerHim]. This is the most dangerous kind of foe: one who places no value in [adversary.GetHerHis] fellows, except as pieces on a gameboard, or perhaps meat."
- POD_heists.203.desc.honorable: "[adversary.GetFirstName] meets my eyes with determination, never losing [adversary.GetHerHis] poise and knightly bearing."
- POD_heists.203.desc.dishonorable: "As I enter, [adversary.GetFirstNamePossessive] eyes dart around the room, as if looking for an escape route, a hidden trap, or something to sneakily bludgeon me with. I should count myself lucky that [adversary.GetSheHe] came up short."
- POD_heists.203.desc.coterie: "\n\n$POD_player_coterie$ only has a split second to decide on a course of action."
- POD_heists.203.desc.nocoterie: "\n\nThere is nowhere to escape. Only one course of action."
- POD_heists.203.a: "I'm here to end you."
- POD_heists.203.a.tt: "You will fight [adversary.GetShortUIName] one-on-one."
- POD_heists.203.b: "[prowess_duelist.GetFirstName], take the initiative."
- POD_heists.203.b.success: "A decisive victory"
- POD_heists.203.b.failure: "One wrong move, and we all perish"
+ POD_heists.203.t: "Última luz"
+ POD_heists.203.desc.rational: "[adversary.GetFirstName] parece imperturbad[ROOT.Char.Custom('ES_OA')] por mi llegada, con sus ojos irradiando una inteligencia gélida que parece tener el control absoluto de cualquier situación. A este no hay que subestimarlo/a."
+ POD_heists.203.desc.irrational: "Incluso para un engendro, [adversary.GetFirstName] parece trastornad[ROOT.Char.Custom('ES_OA')] e impredecible. Pase lo que pase después, esto se va a complicar."
+ POD_heists.203.desc.compassionate: "[adversary.GetFirstName] casi parece triste cuando entro con mi arma desenvainada, como diciendo: «es una lástima que haya tenido que llegar a esto». Pero ambos sabemos que no hay otra manera."
+ POD_heists.203.desc.callous: "Desde el primer momento, está claro que a [adversary.GetFirstName] no le queda nada de Humanidad. Este es el tipo de enemigo más peligroso: aquel que no valora a sus semejantes, excepto como piezas en un tablero de juego o, tal vez, como carne."
+ POD_heists.203.desc.honorable: "[adversary.GetFirstName] me mira a los ojos con determinación, sin perder nunca su compostura y porte caballeresco."
+ POD_heists.203.desc.dishonorable: "Al entrar, los ojos de [adversary.GetFirstNamePossessive] recorren la habitación como si buscaran una ruta de escape, una trampa oculta o algo con lo que golpearme sigilosamente. Debería considerarme afortunad[ROOT.Char.Custom('ES_OA')] de que [adversary.GetSheHe] se haya quedado corto."
+ POD_heists.203.desc.coterie: "\n\n$POD_player_coterie$ solo tiene un segundo para decidir qué curso de acción tomar."
+ POD_heists.203.desc.nocoterie: "\n\nNo hay lugar donde escapar. Solo queda una opción."
+ POD_heists.203.a: "He venido a acabar contigo."
+ POD_heists.203.a.tt: "Lucharás contra [adversary.GetShortUIName] en un duelo singular."
+ POD_heists.203.b: "[prowess_duelist.GetFirstName], toma la iniciativa."
+ POD_heists.203.b.success: "Una victoria decisiva"
+ POD_heists.203.b.failure: "Un movimiento en falso y todos pereceremos"
 
- POD_heists.205.desc: "My grim work is done. The fiend [sc_loser.GetFirstName] has been defeated.\n\nMercy was never an option."
+ POD_heists.205.desc: "Mi sombrío trabajo ha terminado. El engendro [sc_loser.GetFirstName] ha sido derrotado.\n\nLa piedad nunca fue una opción."
 
- POD_heists.206.t: "Too Slow"
- POD_heists.206.desc.coterie: "This only could've worked if we had seized the initiative. We failed.\n\n[adversary.GetFirstName|U] fends off our blows easily, and when the door busts open and guards surround our group, I realize [adversary.GetSheHe] was just stalling for time.\n\nHopelessly outmatched, they cut us down one by one.\n\nMy [GetPlayer.Custom2('RelationToMeShort', SCOPE.sC('friend'))] [friend.GetFirstName], my brave comrade-in-arms, turns to me pleadingly one last time before [friend.GetSheHe] perishes like the rest.\n\nI doomed them. I doomed them all."
- POD_heists.206.desc.nocoterie: "This only could've worked if I had seized the initiative. I failed.\n\n[adversary.GetFirstName|U] fends off my blows easily, and when the door busts open and guards surround me, I realize [adversary.GetSheHe] was just stalling for time.\n\nNow I'm hopelessly outmatched.\n\nThe guards know this too, and nick me with one superficial wound after another. Contemptuous. Like they're playing with their food. But I know it's only a matter of time before they tire of this.\n\nWhat was I thinking, coming here all by myself?"
- POD_heists.206.a: "WAIT! Don't kill me! I can serve you as a ghoul."
- POD_heists.206.b: "WAIT! Don't kill me! I can serve you as a thrall." # unused
- POD_heists.206.c: "I will face my death with dignity."
+ POD_heists.206.t: "Demasiado lento"
+ POD_heists.206.desc.coterie: "Esto solo podría haber funcionado si hubiéramos tomado la iniciativa. Hemos fallado.\n\n[adversary.GetFirstName|U] esquiva nuestros golpes con facilidad y, cuando la puerta se abre de golpe y los guardias rodean nuestro grupo, me doy cuenta de que [adversary.GetSheHe] solo estaba ganando tiempo.\n\nSin ninguna posibilidad de ganar, nos aniquilan uno a uno.\n\nMi [GetPlayer.Custom2('RelationToMeShort', SCOPE.sC('friend'))] [friend.GetFirstName], mi valiente camarada de armas, me mira suplicante una última vez antes de que [friend.GetSheHe] perezca como los demás.\n\nLos he condenado. Los he condenado a todos."
+ POD_heists.206.desc.nocoterie: "Esto solo podría haber funcionado si yo hubiera tomado la iniciativa. He fallado.\n\n[adversary.GetFirstName|U] esquiva mis golpes con facilidad y, cuando la puerta se abre de golpe y los guardias me rodean, me doy cuenta de que [adversary.GetSheHe] solo estaba ganando tiempo.\n\nAhora no tengo ninguna posibilidad de ganar.\n\nLos guardias también lo saben y me infligen una herida superficial tras otra. Con desprecio. Como si estuvieran jugando con su comida. Pero sé que es solo cuestión de tiempo antes de que se cansen de esto.\n\n¿En qué estaba pensando al venir aquí yo solo?"
+ POD_heists.206.a: "¡ESPERA! ¡No me mates! Puedo servirte como Ghoul."
+ POD_heists.206.b: "¡ESPERA! ¡No me mates! Puedo servirte como Esclavo." # unused
+ POD_heists.206.c: "Afrontaré mi muerte con dignidad."
 
- POD_heists.207.t: "The First Hit is Free"
- POD_heists.207.desc.rational: "[adversary.GetFirstNameNoTooltip|U] seems lost in thought. To [adversary.GetHerHis] credit, [adversary.GetSheHe] gives my offer serious consideration. Then, a curt nod. \"Yes, this is agreeable.\"\n\n[adversary.GetSheHe|U] produces a knife and cuts [adversary.GetHerHis] wrist matter-of-factly. \"Your former allies will hunt you for this. You do have an exit strategy, yes? If not, formulate one. I expect a degree of initiative from my subordinates.\"\n\nI can see what this is to [adversary.GetHerHim]. A transaction. Nothing more, nothing less.\n\nNow all I need to do is drink [adversary.GetHerHis] blood, and sign myself away."
- POD_heists.207.desc.irrational: "[adversary.GetFirstNameNoTooltip|U] stops dead in [adversary.GetHerHis] tracks. Just for once, this unhinged bloodsucker is caught by surprise. [adversary.GetHerHis|U] face contorts back and forth, going through an entire journey's worth of expressions before settling on a big grin. It's meant to be friendly. I think.\n\n\"Yes, of #italic course#! we can be friends. Let bygones be bygones, eh? Come, come. Let's celebrate our new friendship with a snack.\"\n\n[adversary.GetSheHe|U] means [adversary.GetHerHis] blood. Naturally."
- POD_heists.207.desc.compassionate: "[adversary.GetFirstNameNoTooltip|U] smiles at my words. \"I'm relieved to hear you say that. It would be a shame to rid the world of such a remarkable [ROOT.Char.Custom('WomanManGirlBoy')]. Even if we started out as enemies.\"\n\n[adversary.GetSheHe|U] hesitates for a moment. \"I had to make sure you did this of your own free will. Once you partake of my blood, your will is no longer your own. I do not take this lightly.\"\n\nWith no small amount of gravitas, [adversary.GetSheHe] cuts [adversary.GetHerHis] wrist and lets [adversary.GetHerHis] blood well forth."
- POD_heists.207.desc.callous: "As the words leave my mouth, I wonder if I have made the biggest mistake of my life. [adversary.GetFirstNameNoTooltip|U] slowly circles me and looks me up and down, like a predatory animal who knows its prey can't escape.\n\nNo. [adversary.GetSheHe|U]'s something else. An animal would blink, or breathe, or show emotion, or any other sign of life. [adversary.GetFirstNameNoTooltip|U] simply observes, [adversary.GetHerHis] face a mask.\n\nSlowly, [adversary.GetSheHe] takes a dagger and slices open his wrist. Blood pools around the blade's tip. [adversary.GetSheHe|U] never breaks eye contact.\n\n\"Yes\", [adversary.GetSheHe] finally speaks.\n\n\"You'll do nicely.\""
- POD_heists.207.desc.honorable: "\"Remarkable. After all that transpired tonight, knowing you had planned to hunt me down like an animal, you'd still look me in the eye and appeal to my sense of honor. I could execute you right here, and I would be justified in doing so.\"\n\n[adversary.GetFirstNameNoTooltip|U] sighs. A theatric gesture for a being that doesn't need to breathe.\n\n\"But I will not. You are right, I do have a sense of honor. But you have incurred a great debt to me tonight. Show me that you are willing to repay it. Swear this oath on my blood.\"\n\n[adversary.GetSheHe|U] cuts [adversary.GetHerHis] wrist and bids me to drink."
- POD_heists.207.desc.dishonorable: "\"What?\" [adversary.GetFirstNameNoTooltip] blurts out. \"Is this a trick? What sort of buffoon do you take me for?\"\n\n[adversary.GetSheHe|U] looks indignant for a moment, but quickly calms [adversary.GetHerselfHimself] down.\n\n\"No, of course not. You're just trying to save your own hide. I can respect that. You'd even go so far as to willingly become my pawn.\"\n\n\"To answer your question... yes, I will gladly accept a new pawn. Obviously.\" [adversary.GetSheHe|U] bites into [adversary.GetHerHis] wrist and thrusts it towards me, like [adversary.GetSheHe] can't wait to get this over with. \"Drink and get out of my face. I'll have work for you soon enough.\""
- POD_heists.207.a: "I drink from the offered wrist, and my fate is sealed..."
+ POD_heists.207.t: "El primer golpe es gratis"
+ POD_heists.207.desc.rational: "[adversary.GetFirstNameNoTooltip|U] parece absort[ROOT.Char.Custom('ES_OA')] en sus pensamientos. Para su crédito, [adversary.GetSheHe] considera seriamente mi oferta. Luego, asiente con brusquedad. «Sí, esto es aceptable».\n\n[adversary.GetSheHe|U] saca un cuchillo y se corta la muñeca con naturalidad. «Tus antiguos aliados te perseguirán por esto. Tienes una estrategia de escape, ¿verdad? Si no es así, formula una. Espero cierto grado de iniciativa de mis subordinados».\n\nPuedo ver lo que esto significa para [adversary.GetHerHim]. Una transacción. Nada más, nada menos.\n\nAhora todo lo que tengo que hacer es beber su sangre y entregarme."
+ POD_heists.207.desc.irrational: "[adversary.GetFirstNameNoTooltip|U] se detiene en seco. Por una vez, este desquiciado chupasangre se ha llevado una sorpresa. Su rostro se contorsiona de un lado a otro, pasando por todo un Viaje de expresiones antes de asentarse en una gran sonrisa. Se supone que es amistosa. Creo.\n\n«Sí, por #italic supuesto#! podemos ser amigos. Dejemos las cosas en el pasado, ¿eh? Vamos, vamos. Celebremos nuestra nueva amistad con un bocado».\n\n[adversary.GetSheHe|U] se refiere a su sangre. Naturalmente."
+ POD_heists.207.desc.compassionate: "[adversary.GetFirstNameNoTooltip|U] sonríe ante mis palabras. «Me alivia oír eso. Sería una lástima librar al mundo de un/a [ROOT.Char.Custom('WomanManGirlBoy')] tan notable. Aunque hayamos empezado como enemigos».\n\n[adversary.GetSheHe|U] vacila un momento. «Tenía que asegurarme de que lo hicieras por tu propia voluntad. Una vez que pruebes mi sangre, tu voluntad dejará de ser tuya. No me tomo esto a la ligera».\n\nCon una gran solemnidad, [adversary.GetSheHe] se corta la muñeca y deja que su sangre brote."
+ POD_heists.207.desc.callous: "Mientras las palabras salen de mi boca, me pregunto si he cometido el mayor error de mi vida. [adversary.GetFirstNameNoTooltip|U] me rodea lentamente y me mira de arriba abajo, como un animal depredador que sabe que su presa no puede escapar.\n\nNo. [adversary.GetSheHe|U] es algo distinto. Un animal parpadearía, o respiraría, o mostraría emoción, o cualquier otra señal de vida. [adversary.GetFirstNameNoTooltip|U] simplemente observa, con el rostro como una máscara.\n\nLentamente, [adversary.GetSheHe] toma una daga y se abre la muñeca. La sangre se acumula alrededor de la punta de la hoja. [adversary.GetSheHe|U] nunca rompe el contacto visual.\n\n«Sí», dice finalmente [adversary.GetSheHe].\n\n«Te vendrás bien»."
+ POD_heists.207.desc.honorable: "«Impresionante. Después de todo lo que ha transcurrido esta noche, sabiendo que habías planeado cazarme como a un animal, todavía me miras a los ojos y apelas a mi sentido del honor. Podría ejecutarte aquí mismo, y estaría justificado al hacerlo».\n\n[adversary.GetFirstNameNoTooltip|U] suspira. Un gesto teatral para un ser que no necesita respirar.\n\n«Pero no lo haré. Tienes razón, tengo sentido del honor. Pero me has contraído una gran deuda esta noche. Demuéstrame que estás dispuesto a pagarla. Jura este juramento sobre mi sangre».\n\n[adversary.GetSheHe] se corta la muñeca y me ordena que beba."
+ POD_heists.207.desc.dishonorable: "«¿Qué?», suelta [adversary.GetFirstNameNoTooltip]. «¿Es una trampa? ¿Por qué clase de bufón me tomas?»\n\n[adversary.GetSheHe|U] parece indignad[ROOT.Char.Custom('ES_OA')] por un momento, pero se tranquiliza rápidamente.\n\n«No, por supuesto que no. Solo intentas salvar tu propio pellejo. Puedo respetar eso. Incluso llegarías al extremo de convertirte voluntariamente en mi peón».\n\n«Para responder a tu pregunta... sí, aceptaré encantad[ROOT.Char.Custom('ES_OA')] un nuevo peón. Obviamente». [adversary.GetSheHe|U] muerde su muñeca y me la acerca, como si no pudiera esperar a terminar con esto. «Bebe y lárgate de mi vista. Tendré trabajo para ti muy pronto»."
+ POD_heists.207.a: "Bebo de la muñeca ofrecida y mi destino queda sellado..."
 
 # unused event: demon thrall version
 # not implemented since demon hunts don't have a heist version currently
- POD_heists.208.t: "The Devil You Know..."
- POD_heists.208.desc: "\"Excellent!\" [adversary.GetFirstNameNoTooltip] says, looking mighty pleased. \"Since you consented, this will only take a moment.\" [adversary.GetSheHe|U] presses [adversary.GetHerHis] finger to my forehead, and #italic TWISTS#!.\n\n#italic Eons pass by in an instant.#!\n\n#italic in lakes of fire my skin is flayed and I see the end of all things all creation quakes before the Lord and we are His unrepentant children and when His righteous anger is revealed He will#!\n\n\"There you go!\" [adversary.GetFirstNameNoTooltip] beams as [adversary.GetSheHe] removes [adversary.GetHerHis] finger from my forehead. \"Now, if you'll excuse me, I have some other sinners to get to. You're a sinner now, by the way. Toodles!\"\n\n[adversary.GetSheHe|U] strolls away and leaves me alone with my thoughts."
- POD_heists.208.a: "I can't help but feel like I lost something important."
+ POD_heists.208.t: "El diablo que conoces..."
+ POD_heists.208.desc: "«¡Excelente!», dice [adversary.GetFirstNameNoTooltip], con aspecto muy satisfecho. «Como has consentido, esto solo llevará un momento». [adversary.GetSheHe|U] presiona su dedo contra mi frente y #italic LO GIRA#!.\n\n#italic Los eones pasan en un instante.#!\n\n#italic en lagos de fuego mi piel es desollada y veo el fin de todas las cosas, toda la creación tiembla ante el Señor y somos Sus hijos impenitentes y cuando Su justa ira se revele, Él#!\n\n«¡Ahí lo tienes!», exclama [adversary.GetFirstNameNoTooltip] radiante mientras [adversary.GetSheHe] retira su dedo de mi frente. «Ahora, si me disculpas, tengo otros pecadores a los que atender. Por cierto, ahora tú también eres un pecador. ¡Chao!».\n\n[adversary.GetSheHe|U] se aleja tranquilamente y me deja solo con mis pensamientos."
+ POD_heists.208.a: "No puedo evitar sentir que he perdido algo importante."
 
  ####### Suspicion Events
 
  # Chancellor route (Vassal opinion) [Dee]
 
- POD_heists.1001.t: "Complication: Too Popular"
- POD_heists.1001.desc.coterie: "Our [infiltration|E] has been going well so far... a little too well, in fact. No one has doubted our cover story of being on a "diplomatic mission", so we're having to answer a lot of questions on foreign relations."
- POD_heists.1001.desc.nocoterie: "My [infiltration|E] has been going well so far... a little too well, in fact. No one has doubted my cover story of being on a "diplomatic mission", so I'm having to answer a lot of questions on foreign relations."
- POD_heists.1001.desc.end: "\n\n[diplomacy_courtier.GetFirstNameNicknamed] clears [diplomacy_courtier.GetHerHis] throat. \"What do you propose should be done in response to the growing threat of [flavortext_realm.GetAdjective] expansionism?\""
- POD_heists.1001.a: "It's simple. Let me explain..."
- POD_heists.1001.a.success: "Your cover story holds up"
- POD_heists.1001.a.failure: "There are some inconsistencies"
- POD_heists.1001.b.coterie: "Excuse us for a moment."
- POD_heists.1001.b.nocoterie: "Excuse me for a moment."
+ POD_heists.1001.t: "Complicación: Demasiado popular"
+ POD_heists.1001.desc.coterie: "Nuestra [infiltration|E] ha ido bien hasta ahora... demasiado bien, de hecho. Nadie ha dudado de nuestra historia de cobertura de estar en una «misión diplomática», así que estamos teniendo que responder a muchas preguntas sobre relaciones exteriores."
+ POD_heists.1001.desc.nocoterie: "Mi [infiltration|E] ha ido bien hasta ahora... demasiado bien, de hecho. Nadie ha dudado de mi historia de cobertura de estar en una «misión diplomática», así que estoy teniendo que responder a muchas preguntas sobre relaciones exteriores."
+ POD_heists.1001.desc.end: "\n\n[diplomacy_courtier.GetFirstNameNicknamed] se aclara [diplomacy_courtier.GetHerHis] garganta. «¿Qué propones que se haga en respuesta a la creciente amenaza del expansionismo [flavortext_realm.GetAdjective]?»"
+ POD_heists.1001.a: "Es sencillo. Déjame explicarlo..."
+ POD_heists.1001.a.success: "Tu historia de cobertura se mantiene"
+ POD_heists.1001.a.failure: "Hay algunas inconsistencias"
+ POD_heists.1001.b.coterie: "Discúlpennos un momento."
+ POD_heists.1001.b.nocoterie: "Discúlpame un momento."
 
- POD_heists.1002.t: "Complication: The [chancellor.GetCouncilTitle]"
- POD_heists.1002.t.target: "Complication: The [chancellor.Custom('WomanManGirlBoy')] [chancellor.GetHerselfHimself]"
- POD_heists.1002.desc.coterie: "We managed to duck away from the buzzing swarm of courtiers, but it looks like our antics caught someone's eye.\n\n"
- POD_heists.1002.desc.nocoterie: "I managed to duck away from the buzzing swarm of courtiers, but it looks like my antics caught someone's eye.\n\n"
- POD_heists.1002.desc: "It's [CurrentHeistTarget.GetFirstNamePossessive] [chancellor.GetCouncilTitle], [chancellor.GetFirstNameNicknamed].\n\n"
- POD_heists.1002.desc.target: "It's [chancellor.GetFirstNameNicknamed], none other than the person in charge.\n\n"
- POD_heists.1002.desc.end.coterie: "[chancellor.GetSheHe|U] invites us to have a more in-depth conversation on matters of political import, as would befit diplomats of our station."
- POD_heists.1002.desc.end.nocoterie: "[chancellor.GetSheHe|U] invites me to have a more in-depth conversation on matters of political import, as would befit a diplomat of my station."
- POD_heists.1002.desc.end: "\n\nDoes [chancellor.GetSheHe] suspect something? [chancellor.GetHerHis|U] face is unreadable."
- POD_heists.1002.a.coterie: "Of course. We shall join you."
- POD_heists.1002.a.nocoterie: "Of course. I shall join you."
- POD_heists.1002.a.success: "You have a lovely chat"
- POD_heists.1002.a.failure: "You manage to look shifty"
- POD_heists.1002.b.coterie: "We must decline."
- POD_heists.1002.b.nocoterie: "I must decline."
+ POD_heists.1002.t: "Complicación: El [chancellor.GetCouncilTitle]"
+ POD_heists.1002.t.target: "Complicación: El/la [chancellor.Custom('WomanManGirlBoy')] [chancellor.GetHerselfHimself]"
+ POD_heists.1002.desc.coterie: "Logramos escabullirnos de la bulliciosa multitud de cortesanos, pero parece que nuestras andanzas han llamado la atención de alguien.\n\n"
+ POD_heists.1002.desc.nocoterie: "Logré escabullirme de la bulliciosa multitud de cortesanos, pero parece que mis andanzas han llamado la atención de alguien.\n\n"
+ POD_heists.1002.desc: "Es [chancellor.GetCouncilTitle] de [CurrentHeistTarget.GetFirstNamePossessive], [chancellor.GetFirstNameNicknamed].\n\n"
+ POD_heists.1002.desc.target: "Es [chancellor.GetFirstNameNicknamed], nadie menos que la persona a cargo.\n\n"
+ POD_heists.1002.desc.end.coterie: "[chancellor.GetSheHe|U] nos invita a mantener una conversación más profunda sobre asuntos de importancia política, como convendría a diplomáticos de nuestra posición."
+ POD_heists.1002.desc.end.nocoterie: "[chancellor.GetSheHe|U] me invita a mantener una conversación más profunda sobre asuntos de importancia política, como convendría a un diplomático de mi posición."
+ POD_heists.1002.desc.end: "\n\n¿Sospecha [chancellor.GetSheHe] algo? [chancellor.GetHerHis|U] rostro es inexpresivo."
+ POD_heists.1002.a.coterie: "Por supuesto. Nos uniremos a vos."
+ POD_heists.1002.a.nocoterie: "Por supuesto. Me uniré a vos."
+ POD_heists.1002.a.success: "Habéis tenido una charla encantadora"
+ POD_heists.1002.a.failure: "Habéis logrado parecer sospechosos"
+ POD_heists.1002.b.coterie: "Debemos declinar."
+ POD_heists.1002.b.nocoterie: "Debo declinar."
 
- POD_heists.1003.t: "Complication: Just One More Thing..."
- POD_heists.1003.desc.coterie: "[chancellor.GetFirstNameNicknamed] crosses our path once more, trying to make it look so utterly casual that it crosses back into parody."
- POD_heists.1003.desc.nocoterie: "[chancellor.GetFirstNameNicknamed] crosses my path once more, trying to make it look so utterly casual that it crosses back into parody."
- POD_heists.1003.desc.end: "\n\n\"Oh, listen, there's one other thing I wanted to ask you about\", [chancellor.GetSheHe] begins. \"A servant tells me they saw you spend an awful lot of time in places that are off-limits to visitors. Sounds silly, I know. At any rate, I just wanted to double-check your credentials, a small formality really...\""
- POD_heists.1003.a: "Oh, I can clear up this simple misunderstanding."
- POD_heists.1003.a.success: "Turns out you can"
- POD_heists.1003.a.failure: "Turns out you can't"
- POD_heists.1003.b: "Just get out of my way."
+ POD_heists.1003.t: "Complicación: Solo una cosa más..."
+ POD_heists.1003.desc.coterie: "[chancellor.GetFirstNameNicknamed] se cruza en nuestro camino una vez más, intentando que parezca algo tan sumamente casual que raya en la parodia."
+ POD_heists.1003.desc.nocoterie: "[chancellor.GetFirstNameNicknamed] se cruza en mi camino una vez más, intentando que parezca algo tan sumamente casual que raya en la parodia."
+ POD_heists.1003.desc.end: "\n\n«Oh, escuchad, hay otra cosa que quería preguntaros», comienza [chancellor.GetSheHe]. «Un sirviente me dice que os ha visto pasar demasiado tiempo en lugares prohibidos para los visitantes. Suena absurdo, lo sé. En cualquier caso, solo quería verificar vuestras credenciales, un pequeño trámite, en realidad...»"
+ POD_heists.1003.a: "Oh, puedo aclarar este simple malentendido."
+ POD_heists.1003.a.success: "Resulta que puedes"
+ POD_heists.1003.a.failure: "Resulta que no puedes"
+ POD_heists.1003.b: "Quítate de mi camino."
 
 
  # Spymaster route (Rivalries) [Dee]
 
- POD_heists.1011.t: "Complication: Knives Out"
- POD_heists.1011.desc.coterie: "We had picked the worst possible time to infiltrate [GetPlayer.GetCurrentLocation.GetCounty.GetTitle.GetNameNoTier]. "
- POD_heists.1011.desc.nocoterie: "I had picked the worst possible time to infiltrate [GetPlayer.GetCurrentLocation.GetCounty.GetTitle.GetNameNoTier]. "
- POD_heists.1011.desc: "Some territorial dispute got this court in an uproar. There's talk of war.\n\nThe tension is so thick, you could cut it with a knife. Everyone here is just looking for an excuse to slit someone's throat. "
- POD_heists.1011.desc.end.coterie: "And as newcomers to this court, we're fair game.\n\n[potential_rival.GetFirstNameNicknamed] calls out to us. \"Are you with us? Or are you against us?\""
- POD_heists.1011.desc.end.nocoterie: "And as a newcomer to this court, I'm fair game.\n\n[potential_rival.GetFirstNameNicknamed] calls out to me. \"Are you with us? Or are you against us?\""
- POD_heists.1011.a.coterie: "We're with you."
- POD_heists.1011.a.nocoterie: "I'm with you."
- POD_heists.1011.a.success: "Your show of solidarity looks earnest"
- POD_heists.1011.a.failure: "Not very convincing"
- POD_heists.1011.b: "I try to change the subject."
- POD_heists.1011.b.success: "Your sleight of hand works"
- POD_heists.1011.b.failure: "Critical fumble"
- POD_heists.1011.c.coterie: "You dare question us?"
- POD_heists.1011.c.nocoterie: "You dare question me?"
+ POD_heists.1011.t: "# sin cambios"
+ POD_heists.1011.desc.coterie: "Habíamos elegido el peor momento posible para infiltrarnos en [GetPlayer.GetCurrentLocation.GetCounty.GetTitle.GetNameNoTier]. "
+ POD_heists.1011.desc.nocoterie: "Había elegido el peor momento posible para infiltrarme en [GetPlayer.GetCurrentLocation.GetCounty.GetTitle.GetNameNoTier]. "
+ POD_heists.1011.desc: "Alguna disputa territorial ha sumido a esta corte en el caos. Se habla de guerra.\n\nLa tensión es tan densa que podrías cortarla con un cuchillo. Todo el mundo aquí solo busca una excusa para degollar a alguien. "
+ POD_heists.1011.desc.end.coterie: "Y como recién llegados a esta corte, somos presas fáciles.\n\n[potential_rival.GetFirstNameNicknamed] nos interpela: «¿Estáis con nosotros? ¿O estáis contra nosotros?»."
+ POD_heists.1011.desc.end.nocoterie: "Y como recién llegada a esta corte, soy presa fácil.\n\n[potential_rival.GetFirstNameNicknamed] me interpela: «¿Estás con nosotros? ¿O estás contra nosotros?»."
+ POD_heists.1011.a.coterie: "Estamos con vos."
+ POD_heists.1011.a.nocoterie: "Estoy con vos."
+ POD_heists.1011.a.success: "Vuestra muestra de solidaridad parece sincera"
+ POD_heists.1011.a.failure: "No es muy convincente"
+ POD_heists.1011.b: "Intento cambiar de tema."
+ POD_heists.1011.b.success: "Vuestro juego de manos funciona"
+ POD_heists.1011.b.failure: "Error crítico"
+ POD_heists.1011.c.coterie: "¿Os atrevéis a cuestionarnos?"
+ POD_heists.1011.c.nocoterie: "¿Te atreves a cuestionarme?"
 
 #  POD_heists.1011.t: "Complication: Method Acting"
 #  POD_heists.1011.desc: "The key to a successful [infiltration|E] is to look non-threatening and forgettable. A clueless, backwater [GetPlayer.Custom('PODSplat')] does not draw suspicion. So that's who I pretend to be.\n\nI realize that my \"country bumpkin\" routine might've gone a little too far when [potential_rival.GetTitledFirstNamePossessive] face darkens in response to one of my comments. \"What did you just say about me, you uncouth swine?\""
@@ -324,89 +324,89 @@
 #  POD_heists.1011.b.failure: "Critical fumble"
 #  POD_heists.1011.c: "Yeah. You heard what I said."
  
- POD_heists.1012.t.spymaster: "Complication: The [spymaster.GetCouncilTitle]"
- POD_heists.1012.t.rando: "Complication: The Schemer"
- POD_heists.1012.desc.coterie: "The militant atmosphere of this court has complicated our plans. We duck into a side hallway, wanting to regroup and talk about our next steps. But we are not alone.\n\n"
- POD_heists.1012.desc.nocoterie: "The militant atmosphere of this court has complicated my plans. I duck into a side hallway, wanting to think about my next steps in a quiet place. But I am not alone.\n\n"
- POD_heists.1012.desc.spymaster: "[spymaster.GetFirstNamePossessive] smile is barely visible from the shadows. What a coincidence, to run into [CurrentHeistTarget.GetFirstNamePossessive] [spymaster.GetCouncilTitle] here.\n\n"
- POD_heists.1012.desc.rando: "[spymaster.GetFirstNamePossessive] smile is barely visible from the shadows. What a coincidence, to run into the most prolific schemer of this realm here.\n\n"
- POD_heists.1012.desc.end: "\"Don't mind me\", [spymaster.GetSheHe] says. \"Just making the rounds, keeping watch for threats to the crown.\""
- POD_heists.1012.a.coterie: "We have no quarrel with you."
- POD_heists.1012.a.nocoterie: "I have no quarrel with you."
- POD_heists.1012.a.success: "[spymaster.GetFirstName] is satisfied"
- POD_heists.1012.a.failure: "[spymaster.GetFirstName] will keep a closer eye on you"
- POD_heists.1012.b: "You should worry more about the rest of this court."
- POD_heists.1012.b.success: "You successfully divert [spymaster.GetHerHis] attention"
- POD_heists.1012.b.failure: "Exactly what someone guilty would say"
- POD_heists.1012.c: "Go skulk somewhere else."
+ POD_heists.1012.t.spymaster: "Complicación: El/la [spymaster.GetCouncilTitle]"
+ POD_heists.1012.t.rando: "Complicación: El intrigante"
+ POD_heists.1012.desc.coterie: "La atmósfera militarista de esta corte ha complicado nuestros planes. Nos escabullimos por un pasillo lateral, queriendo reagruparnos y hablar sobre nuestros próximos pasos. Pero no estamos solos.\n\n"
+ POD_heists.1012.desc.nocoterie: "La atmósfera militarista de esta corte ha complicado mis planes. Me escabullo por un pasillo lateral, queriendo pensar en mis próximos pasos en un lugar tranquilo. Pero no estoy solo/a.\n\n"
+ POD_heists.1012.desc.spymaster: "La sonrisa de [spymaster.GetFirstNamePossessive] apenas es visible desde las sombras. Qué coincidencia encontrarnos aquí con [CurrentHeistTarget.GetFirstNamePossessive] [spymaster.GetCouncilTitle].\n\n"
+ POD_heists.1012.desc.rando: "La sonrisa de [spymaster.GetFirstNamePossessive] apenas es visible desde las sombras. Qué coincidencia encontrarnos aquí con el intrigante más prolífico de este Señorío.\n\n"
+ POD_heists.1012.desc.end: "«No me prestéis atención», dice [spymaster.GetSheHe]. «Solo estoy haciendo ronda, vigilando posibles amenazas para la corona»."
+ POD_heists.1012.a.coterie: "No tenemos ningún problema contigo."
+ POD_heists.1012.a.nocoterie: "No tengo ningún problema contigo."
+ POD_heists.1012.a.success: "[spymaster.GetFirstName] está satisfecho/a"
+ POD_heists.1012.a.failure: "[spymaster.GetFirstName] te vigilará más de cerca"
+ POD_heists.1012.b: "Deberías preocuparte más por el resto de esta corte."
+ POD_heists.1012.b.success: "Has logrado desviar [spymaster.GetHerHis] atención con éxito"
+ POD_heists.1012.b.failure: "Exactamente lo que diría alguien culpable"
+ POD_heists.1012.c: "Vete a acechar a otra parte."
 
- POD_heists.1013.t: "Complication: The Main Antagonist"
- POD_heists.1013.desc: "And now [court_owner.GetFirstNameNicknamed] has taken a personal interest as well. [court_owner.GetSheHe|U]'s watching the proceedings at court like a hawk, "
- POD_heists.1013.desc.coterie: "[court_owner.GetHerHis] eyes lingering on us more often than not.\n\nWe need to do something about [court_owner.GetHerHim], if this [infiltration|E] is to continue."
- POD_heists.1013.desc.nocoterie: "[court_owner.GetHerHis] eyes lingering on me more often than not.\n\nI need to do something about [court_owner.GetHerHim], if this [infiltration|E] is to continue."
- POD_heists.1013.a.coterie: "We pretend to support [court_owner.GetHerHis] rule."
- POD_heists.1013.a.nocoterie: "I pretend to support [court_owner.GetHerHis] rule."
- POD_heists.1013.a.success: "Flattery always works"
- POD_heists.1013.a.failure: "Flattery always works, except when it doesn't"
- POD_heists.1013.b.coterie: "We try to hide in the crowd."
- POD_heists.1013.b.nocoterie: "I try to hide in the crowd."
- POD_heists.1013.b.success: "You disappear"
- POD_heists.1013.b.failure: "You draw even more attention"
- POD_heists.1013.c: "[court_owner.GetSheHe|U] can think what [court_owner.GetSheHe] wants."
+ POD_heists.1013.t: "Complicación: El antagonista principal"
+ POD_heists.1013.desc: "Y ahora [court_owner.GetFirstNameNicknamed] también se ha interesado personalmente. [court_owner.GetSheHe|U] está vigilando los acontecimientos de la corte como un halcón, "
+ POD_heists.1013.desc.coterie: "con [court_owner.GetHerHis] ojos posándose en nosotros más a menudo de lo habitual.\n\nTenemos que hacer algo con respecto a [court_owner.GetHerHim], si esta [infiltration|E] ha de continuar."
+ POD_heists.1013.desc.nocoterie: "con [court_owner.GetHerHis] ojos posándose en mí más a menudo de lo habitual.\n\nTengo que hacer algo con respecto a [court_owner.GetHerHim], si esta [infiltration|E] ha de continuar."
+ POD_heists.1013.a.coterie: "Fingimos apoyar el mandato de [court_owner.GetHerHis]."
+ POD_heists.1013.a.nocoterie: "Fingo apoyar el mandato de [court_owner.GetHerHis]."
+ POD_heists.1013.a.success: "Los halagos siempre funcionan"
+ POD_heists.1013.a.failure: "Los halagos siempre funcionan, excepto cuando no es así"
+ POD_heists.1013.b.coterie: "Intentamos escondernos entre la multitud."
+ POD_heists.1013.b.nocoterie: "Intento esconderme entre la multitud."
+ POD_heists.1013.b.success: "Desapareces"
+ POD_heists.1013.b.failure: "Llamas aún más la atención"
+ POD_heists.1013.c: "[court_owner.GetSheHe|U] puede pensar lo que quiera."
 
 
  # Coterie opinion route [Dee]
 
- POD_heists.1021.t: "Complication: Strife"
- POD_heists.1021.desc: "Something about this outing is bringing out the worst in $POD_player_coterie$.\n\nWe bicker about trivial things. Then, about non-trivial things. No matter what, we can't agree on how this [infiltration|E] ought to be run. Polite disagreements are turning into venomous barbs.\n\nThis doesn't bode well for the success of our mission."
- POD_heists.1021.a: "We have to stay rational and focused."
- POD_heists.1021.a.success: "Sounds convincing"
- POD_heists.1021.a.failure: "Sounds insulting"
- POD_heists.1021.b: "Stick to the plan."
- POD_heists.1021.b.success: "You're a born leader"
- POD_heists.1021.b.failure: "No way"
- POD_heists.1021.c: "I guess they need to blow off some steam."
+ POD_heists.1021.t: "Complicación: Discordia"
+ POD_heists.1021.desc: "Algo en esta salida está sacando lo peor de $POD_player_coterie$.\n\nDiscutimos por nimiedades. Luego, por cosas importantes. Pase lo que pase, no logramos ponernos de acuerdo sobre cómo debería llevarse a cabo esta [infiltration|E]. Los desacuerdos corteses se están convirtiendo en dardos venenosos.\n\nEsto no augura nada bueno para el éxito de nuestra misión."
+ POD_heists.1021.a: "Tenemos que mantenernos racionales y concentrados."
+ POD_heists.1021.a.success: "Suena convincente"
+ POD_heists.1021.a.failure: "Suena insultante"
+ POD_heists.1021.b: "Ciñámonos al plan."
+ POD_heists.1021.b.success: "Eres un líder nato"
+ POD_heists.1021.b.failure: "Ni hablar"
+ POD_heists.1021.c: "Supongo que necesitan desahogarse un poco."
 
- POD_heists.1022.t: "Complication: The Door"
- POD_heists.1022.desc: "We have found our match.\n\nIt's a door.\n\nFor half an hour now, we've been arguing over how best to open its lock. Or whether to destroy it. Or circumvent it. Or unlock it after all. Half an hour! This is absurd."
- POD_heists.1022.a: "If we put our heads together, we can overcome this challenge."
- POD_heists.1022.a.success: "Wisdom prevails"
- POD_heists.1022.a.failure: "What wisdom?"
- POD_heists.1022.b: "Just follow my lead."
- POD_heists.1022.b.success: "Your leadership skills prevail"
- POD_heists.1022.b.failure: "What leadership skills?"
- POD_heists.1022.c: "Break the damn thing open."
+ POD_heists.1022.t: "Complicación: La puerta"
+ POD_heists.1022.desc: "Hemos encontrado nuestro rival.\n\nEs una puerta.\n\nLlevamos media hora discutiendo sobre cuál es la mejor forma de abrir su cerradura. O si debemos destruirla. O rodearla. O abrirla después de todo. ¡Media hora! Esto es absurdo."
+ POD_heists.1022.a: "Si unimos fuerzas, podremos superar este desafío."
+ POD_heists.1022.a.success: "La sabiduría prevalece"
+ POD_heists.1022.a.failure: "¿Qué sabiduría?"
+ POD_heists.1022.b: "Solo seguidme la corriente."
+ POD_heists.1022.b.success: "Tus dotes de mando prevalecen"
+ POD_heists.1022.b.failure: "¿Qué dotes de mando?"
+ POD_heists.1022.c: "Romped la maldita cosa."
 
- POD_heists.1023.t: "Complication: A Lesson Learned?"
- POD_heists.1023.desc: "Strife can bring people closer. When disagreements are worked through, it leads to deeper camaraderie. Tonight, we have learned the value of such team-building experiences.\n\nJust kidding. $POD_player_coterie$ is still fighting.\n\nAt this rate, one of us will let something incriminating slip."
- POD_heists.1023.a: "I still think this could be a learning experience."
- POD_heists.1023.a.success: "Your [GetPlayer.Custom('PODCoterieNoTooltip')] agrees"
- POD_heists.1023.a.failure: "You completely failed to read the room"
- POD_heists.1023.b: "Cooperation is in our best interest."
- POD_heists.1023.b.success: "Turns out you're good at herding cats"
- POD_heists.1023.b.failure: "Those cats don't enjoy being herded"
- POD_heists.1023.c: "SHUT UP! All of you."
+ POD_heists.1023.t: "Complicación: ¿Una lección aprendida?"
+ POD_heists.1023.desc: "El conflicto puede unir a la gente. Cuando se resuelven los desacuerdos, surge una camaradería más profunda. Esta noche, hemos aprendido el valor de este tipo de experiencias de cohesión de equipo.\n\nEs broma. $POD_player_coterie$ sigue peleándose.\n\nA este paso, uno de nosotros acabará soltando algo incriminatorio."
+ POD_heists.1023.a: "Sigo pensando que esto podría ser una experiencia de aprendizaje."
+ POD_heists.1023.a.success: "Tu [GetPlayer.Custom('PODCoterieNoTooltip')] está de acuerdo"
+ POD_heists.1023.a.failure: "Has fracasado estrepitosamente al no saber leer la situación"
+ POD_heists.1023.b: "La cooperación es lo más conveniente para nosotros."
+ POD_heists.1023.b.success: "Resulta que se te da bien arrear gatos"
+ POD_heists.1023.b.failure: "Esos gatos no disfrutan que los arreen"
+ POD_heists.1023.c: "¡CERRAD LA BOCA! Todos vosotros."
 
 
  # Chaplain route (Stress) [karde]
 
- POD_heists.1031.t: "Complication: Let Us Pray"
- POD_heists.1031.desc.coterie: "The court we're infiltrating tonight is apparently in a theological mood.\n\n[court_chaplain.GetFirstNameNicknamed] is giving a lengthy sermon about the intricacies of their faith. Everyone seems to be gathered here, at least for the start of the sermon, which means we can't try to sneak away without looking suspicious.\n\nWell, time to stay a while and listen it seems."
- POD_heists.1031.desc.nocoterie: "The court I'm infiltrating tonight is apparently in a theological mood.\n\n[court_chaplain.GetFirstNameNicknamed] is giving a lengthy sermon about the intricacies of their faith. Everyone seems to be gathered here, at least for the start of the sermon, which means I can't try to sneak away without looking suspicious.\n\nWell, time to stay a while and listen it seems."
- POD_heists.1031.a: "I hope it's not too boring."
- POD_heists.1031.b: "Long winded speeches! My only weakness."
+ POD_heists.1031.t: "Complicación: Oremos"
+ POD_heists.1031.desc.coterie: "Al parecer, la corte en la que nos infiltramos esta noche está en un estado de ánimo teológico.\n\n[court_chaplain.GetFirstNameNicknamed] está dando un largo sermón sobre las complejidades de su fe. Todo el mundo parece estar reunido aquí, al menos para el inicio del sermón, lo que significa que no podemos intentar escabullirnos sin parecer sospechosos.\n\nBueno, parece que toca quedarse un rato y escuchar."
+ POD_heists.1031.desc.nocoterie: "Al parecer, la corte en la que me infiltro esta noche está en un estado de ánimo teológico.\n\n[court_chaplain.GetFirstNameNicknamed] está dando un largo sermón sobre las complejidades de su fe. Todo el mundo parece estar reunido aquí, al menos para el inicio del sermón, lo que significa que no puedo intentar escabullirme sin parecer sospechoso.\n\nBueno, parece que toca quedarse un rato y escuchar."
+ POD_heists.1031.a: "Espero que no sea demasiado aburrido."
+ POD_heists.1031.b: "¡Discursos interminables! Mi única debilidad."
 
- POD_heists.1032.t: "Complication: Praying Fervor"
- POD_heists.1032.desc.coterie: "Well, turns out the sermon was way lengthier than we anticipated. In fact, we are still there, having found no way to excuse ourselves without potentially alerting this apparently very pious court.\n\nI have long lost track of [court_chaplain.GetFirstNamePossessive] story, something about mythical people doing mythical things and what have you.\n\nThey will stop at some point, right?\n\nRight?"
- POD_heists.1032.desc.nocoterie: "Well, turns out the sermon was way lengthier than I anticipated. In fact, I'm still there, having found no way to excuse myself without potentially alerting this apparently very pious court.\n\nI have long lost track of [court_chaplain.GetFirstNamePossessive] story, something about mythical people doing mythical things and what have you.\n\nThey will stop at some point, right?\n\nRight?"
- POD_heists.1032.a: "Riveting stuff..."
- POD_heists.1032.b: "My patience has its limits."
+ POD_heists.1032.t: "Complicación: Fervor religioso"
+ POD_heists.1032.desc.coterie: "Bueno, resulta que el sermón ha sido mucho más largo de lo que anticipábamos. De hecho, seguimos allí, sin haber encontrado forma de excusarnos sin alertar potencialmente a esta corte, aparentemente muy piadosa.\n\nHace tiempo que perdí el hilo de la historia de [court_chaplain.GetFirstNamePossessive], algo sobre gente mítica haciendo cosas míticas y demás.\n\nSe detendrán en algún momento, ¿verdad?\n\n¿Verdad?"
+ POD_heists.1032.desc.nocoterie: "Bueno, resulta que el sermón ha sido mucho más largo de lo que anticipé. De hecho, sigo allí, sin haber encontrado forma de excusarme sin alertar potencialmente a esta corte, aparentemente muy piadosa.\n\nHace tiempo que perdí el hilo de la historia de [court_chaplain.GetFirstNamePossessive], algo sobre gente mítica haciendo cosas míticas y demás.\n\nSe detendrán en algún momento, ¿verdad?\n\n¿Verdad?"
+ POD_heists.1032.a: "Fascinante..."
+ POD_heists.1032.b: "Mi paciencia tiene un límite."
 
- POD_heists.1033.t: "Complication: Praying Madness"
- POD_heists.1033.desc.coterie: "It's still going.\n\nWe've been close to dozing off a few times now, only jolted back to attention by a sudden outburst of [court_chaplain.GetFirstName] when [court_chaplain.GetSheHe] gets to the more "epic" part of [court_chaplain.GetHerHis] sermon. How [court_chaplain.GetSheHe] manages to spin an interesting tale into such a dreadfully long slog will stay a mystery for the ages.\n\nClearly though, we only have to wait a little longer before [court_chaplain.GetSheHe] stops and we can resume our mission. Any moment now.\n\nWait, is [court_chaplain.GetSheHe] starting a new chapter?!"
- POD_heists.1033.desc.nocoterie: "It's still going.\n\nI've been close to dozing off a few times now, only jolted back to attention by a sudden outburst of [court_chaplain.GetFirstName] when [court_chaplain.GetSheHe] gets to the more "epic" part of [court_chaplain.GetHerHis] sermon. How [court_chaplain.GetSheHe] manages to spin an interesting tale into such a and dreadfully long slog will stay a mystery for the ages.\n\nClearly though, I only have to wait a little longer before [court_chaplain.GetSheHe] stops and we can resume our mission. Any moment now.\n\nWait, is [court_chaplain.GetSheHe] starting a new chapter?!"
- POD_heists.1033.a: "I wanna go home."
- POD_heists.1033.b: "No treasure is worth more of that!"
+ POD_heists.1033.t: "Complicación: Locura de oración"
+ POD_heists.1033.desc.coterie: "Sigue igual.\n\nHemos estado a punto de quedarnos dormidos varias veces, solo despertados por un repentino arrebato de [court_chaplain.GetFirstName] cuando [court_chaplain.GetSheHe] llega a la parte más «épica» de [court_chaplain.GetHerHis] sermón. Cómo [court_chaplain.GetSheHe] consigue convertir un relato interesante en un tostón tan terriblemente largo seguirá siendo un misterio para los siglos venideros.\n\nAunque está claro que solo tenemos que esperar un poco más antes de que [court_chaplain.GetSheHe] pare y podamos reanudar nuestra misión. En cualquier momento.\n\nEspera, ¿[court_chaplain.GetSheHe] está empezando un capítulo nuevo?"
+ POD_heists.1033.desc.nocoterie: "Sigue igual.\n\nHe estado a punto de quedarme dormido varias veces, solo despertado por un repentino arrebato de [court_chaplain.GetFirstName] cuando [court_chaplain.GetSheHe] llega a la parte más «épica» de [court_chaplain.GetHerHis] sermón. Cómo [court_chaplain.GetSheHe] consigue convertir un relato interesante en un tostón tan terriblemente largo seguirá siendo un misterio para los siglos venideros.\n\nAunque está claro que solo tengo que esperar un poco más antes de que [court_chaplain.GetSheHe] pare y podamos reanudar nuestra misión. En cualquier momento.\n\nEspera, ¿[court_chaplain.GetSheHe] está empezando un capítulo nuevo?"
+ POD_heists.1033.a: "Quiero irme a casa."
+ POD_heists.1033.b: "¡Ningún tesoro vale tanto como esto!"
 
 
  # Knight route [karde] WIP
@@ -435,21 +435,21 @@
 
  # Easy route [Dee]
 
- POD_heists.1051.t: "Complication: This is Easy"
- POD_heists.1051.desc: "Not always does a plan come together this smoothly.\n\nTruly, the [GetPlayer.Custom('PODCoterie')] of $POD_player_coterie$ is in its element tonight. We're running circles around this oblivious court. The fools! No one's suspecting a thing.\n\n[coterie_member.GetFirstNameNicknamed] winks at me, clearly enjoying this as much as I do."
- POD_heists.1051.a: "We can let our guard down, this time."
- POD_heists.1051.b: "Let's not push our luck."
+ POD_heists.1051.t: "Complicación: Esto es pan comido"
+ POD_heists.1051.desc: "No siempre un plan sale tan bien.\n\nVerdaderamente, el [GetPlayer.Custom('PODCoterie')] de $POD_player_coterie$ está en su elemento esta noche. Estamos dando vueltas alrededor de esta corte que no sospecha nada. ¡Qué necios! Nadie sospecha ni una palabra.\n\n[coterie_member.GetFirstNameNicknamed] me guiña un ojo, disfrutando claramente de esto tanto como yo."
+ POD_heists.1051.a: "Podemos bajar la guardia, esta vez."
+ POD_heists.1051.b: "No tentemos a la suerte."
 
- POD_heists.1052.t: "Complication: A Thrill"
- POD_heists.1052.desc: "The pressure mounts around $POD_player_coterie$, but that just makes things more exciting. Does the court of [GetPlayer.GetCurrentLocation.GetCounty.GetTitle.GetNameNoTier] suspect that something is afoot? Does it matter? They'll never catch us anyway.\n\nPerformances like this are what'll cement $POD_player_coterie$ as a [GetPlayer.Custom('PODCoterie')] worthy of legend."
- POD_heists.1052.a: "They'll tell stories of our legerdemain back home."
- POD_heists.1052.b: "Better to stay humble and keep it on the down-low."
+ POD_heists.1052.t: "Complicación: Una emoción"
+ POD_heists.1052.desc: "La presión aumenta en torno a $POD_player_coterie$, pero eso solo hace que las cosas sean más emocionantes. ¿Sospecha la corte de [GetPlayer.GetCurrentLocation.GetCounty.GetTitle.GetNameNoTier] que algo ocurre? ¿Qué importa? Nunca nos atraparán.\n\nActuaciones como esta son las que consolidarán a $POD_player_coterie$ como un [GetPlayer.Custom('PODCoterie')] digno de leyenda."
+ POD_heists.1052.a: "Contarán historias de nuestra prestidigitación en casa."
+ POD_heists.1052.b: "Mejor mantener la humildad y pasar desapercibidos."
 
- POD_heists.1053.t: "Complication: Suffering From Success"
- POD_heists.1053.desc: "[court_owner.GetFirstNameNicknamed], too, arrives to pay witness to this spectacle.\n\nBut, alas! [court_owner.GetSheHe|U] doesn't even realize a spectacle is happening in the first place. The finesse of $POD_player_coterie$ is so great that it will have to remain unappreciated.\n\nBut does it have to be? An insane plan forms in my head..."
- POD_heists.1053.a: "\"Hey! Did you know someone has infiltrated your court?\""
- POD_heists.1053.b: "I'm not THAT mad."
- POD_heists.1053.b.mad: "I may be mad, but not THAT mad."
+ POD_heists.1053.t: "Complicación: Sufrir por el éxito"
+ POD_heists.1053.desc: "[court_owner.GetFirstNameNicknamed], también, llega para presenciar este espectáculo.\n\nPero, ¡ay! [court_owner.GetSheHe|U] ni siquiera se da cuenta de que está ocurriendo un espectáculo. La destreza de $POD_player_coterie$ es tan grande que tendrá que permanecer sin ser apreciada.\n\n¿Pero tiene por qué ser así? Un plan demencial se forma en mi cabeza..."
+ POD_heists.1053.a: "«¡Oye! ¿Sabías que alguien se ha infiltrado en tu corte?»"
+ POD_heists.1053.b: "No estoy TAN loco."
+ POD_heists.1053.b.mad: "Puede que esté loco, pero no TAN loco."
 
  
 # # Marshal route [karde] WIP
@@ -647,147 +647,147 @@
 
  # MGS1 route [karde]
   
- POD_heists.2001.t: "Complication: Encounter"
- POD_heists.2001.desc.coterie: "This court is well-secured.\n\nWe have already noticed several patrols following strict schedules covering almost the entirety of the area.\n\nWe'll have to proceed with caution if we don't want to alert the guards."
- POD_heists.2001.desc.nocoterie: "This court is well-secured.\n\nI have already noticed several patrols following strict schedules covering almost the entirety of the area.\n\nI'll have to proceed with caution if I don't want to alert the guards."
- POD_heists.2001.a: "From shadow to shadow." #intrigue static duel
- POD_heists.2001.a.success: "Continuing the mission" 
+ POD_heists.2001.t: "Complicación: Encuentro"
+ POD_heists.2001.desc.coterie: "Esta corte está bien vigilada.\n\nYa hemos notado varias patrullas siguiendo horarios estrictos que cubren casi la totalidad de la zona.\n\nTendremos que proceder con cautela si no queremos alertar a los guardias."
+ POD_heists.2001.desc.nocoterie: "Esta corte está bien vigilada.\n\nYa he notado varias patrullas siguiendo horarios estrictos que cubren casi la totalidad de la zona.\n\nTendré que proceder con cautela si no quiero alertar a los guardias."
+ POD_heists.2001.a: "De sombra a sombra." #intrigue static duel
+ POD_heists.2001.a.success: "Continuando la Misión" 
  POD_heists.2001.a.failure: "!" # suspicion
  #secret option if eccentric/lunatic
- POD_heists.2001.b: "I can hide in that barrel!" #lose stress, continue heist
+ POD_heists.2001.b: "¡Puedo esconderme en ese barril!" #lose stress, continue heist
 
- POD_heists.2002.t: "Complication: Duel"
- POD_heists.2002.desc.coterie: "We are making steady progress. The next hurdle seems to be a solid fellow guarding a critical door.\n\nI'm unsure of his supernatural capabilities (if any) but taking him head on seems like the only solution.\n\nWe have a time constraint as well, since the clamor of battle is likely to draw unwanted attention pretty quickly."
- POD_heists.2002.desc.nocoterie: "I am making steady progress. The next hurdle seems to be a solid fellow guarding a critical door.\n\nI'm unsure of his supernatural capabilities (if any) but taking him head on seems like the only solution.\n\nI have a time constraint as well, since the clamor of battle is likely to draw unwanted attention pretty quickly."
- POD_heists.2002.a.coterie: "[prowess_duelist.GetFirstName] can take him down." #prowess duel
- POD_heists.2002.a.nocoterie: "I can take him down." #prowess duel
- POD_heists.2002.a.success: "Threat eliminated" #just continue
- POD_heists.2002.a.failure: "Critical failure" # get sent to liege (likely death)
- POD_heists.2002.b: "There must be another way in, even if it takes a big detour..." # add stress + suspicion
+ POD_heists.2002.t: "Complicación: Duelo"
+ POD_heists.2002.desc.coterie: "Estamos progresando de forma constante. El siguiente obstáculo parece ser un tipo robusto que custodia una puerta crítica.\n\nNo estoy seguro de sus capacidades sobrenaturales (si es que tiene), pero enfrentarlo directamente parece la única solución.\n\nTambién tenemos el tiempo en nuestra contra, ya que el clamor de la batalla probablemente atraerá atención no deseada muy pronto."
+ POD_heists.2002.desc.nocoterie: "Estoy progresando de forma constante. El siguiente obstáculo parece ser un tipo robusto que custodia una puerta crítica.\n\nNo estoy seguro de sus capacidades sobrenaturales (si es que tiene), pero enfrentarlo directamente parece la única solución.\n\nTambién tengo el tiempo en mi contra, ya que el clamor de la batalla probablemente atraerá atención no deseada muy pronto."
+ POD_heists.2002.a.coterie: "[prowess_duelist.GetFirstName] puede acabar con él." #prowess duel
+ POD_heists.2002.a.nocoterie: "Puedo acabar con él." #prowess duel
+ POD_heists.2002.a.success: "Amenaza eliminada" #just continue
+ POD_heists.2002.a.failure: "Fallo crítico" # get sent to liege (likely death)
+ POD_heists.2002.b: "Debe haber otra forma de entrar, aunque suponga un gran desvío..." # add stress + suspicion
 
- POD_heists.2003.t: "Complication: Escape"
- POD_heists.2003.desc.coterie: "Well, we made a mistake.\n\nWe don't really have time to dwell on it at the moment, as we are being pursued by a host of angry guards shouting with enough strength to wake the dead. Alerted by the sound, new ones are also appearing from every corner, forcing us to barely dodge them.\n\nWe have to lose them quickly."
- POD_heists.2003.desc.nocoterie: "Well, I made a mistake.\n\nI don't really have time to dwell on it at the moment, as I am being pursued by a host of angry guards shouting with enough strength to wake the dead. Alerted by the sound, new ones are also appearing from every corner, forcing me to barely dodge them.\n\nI have to lose them quickly."
- POD_heists.2003.a: "I can make it..." #martial contest, representing an improvised escape instead of a brawl
- POD_heists.2003.a.success: "A close call." #just continue
- POD_heists.2003.a.failure: "Now, in front of you, I can finally die." #death
+ POD_heists.2003.t: "Complicación: Escape"
+ POD_heists.2003.desc.coterie: "Bueno, hemos cometido un error.\n\nNo tenemos tiempo para lamentarnos en este momento, ya que nos persigue una horda de guardias enfurecidos gritando con la fuerza suficiente como para despertar a los muertos. Alertados por el sonido, otros nuevos aparecen de cada rincón, obligándonos a esquivarlos a duras penas.\n\nTenemos que perderlos pronto."
+ POD_heists.2003.desc.nocoterie: "Bueno, he cometido un error.\n\nNo tengo tiempo para lamentarme en este momento, ya que me persigue una horda de guardias enfurecidos gritando con la fuerza suficiente como para despertar a los muertos. Alertados por el sonido, otros nuevos aparecen de cada rincón, obligándome a esquivarlos a duras penas.\n\nTengo que perderlos pronto."
+ POD_heists.2003.a: "Puedo lograrlo..." #martial contest, representing an improvised escape instead of a brawl
+ POD_heists.2003.a.success: "Por poco." #just continue
+ POD_heists.2003.a.failure: "Ahora, frente a ti, finalmente puedo morir." #death
 
 
  # MGS3 route [karde]
   
- POD_heists.2011.t: "Complication: Grass Eater"
- POD_heists.2011.desc.coterie: "To get to the objective of our [infiltration|E], we have concluded that the private garden of the domain was the safest way through. This luxurious environment, ripe with vegetation, gives us a lot of opportunities to progress while staying hidden.\n\nWe are currently crawling through tall grass when I notice a stray dog coming our way. If this uninvited guest starts barking, things could get ugly very fast..."
- POD_heists.2011.desc.nocoterie: "To get to the objective of my [infiltration|E], I have concluded that the private garden of the domain was the safest way through. This luxurious environment, ripe with vegetation, gives me a lot of opportunities to progress while staying hidden.\n\nI am currently crawling through tall grass when I notice a stray dog coming my way. If this uninvited guest starts barking, things could get ugly very fast..."
- POD_heists.2011.a: "Shoo, away!"
- POD_heists.2011.b: "Don't move a muscle..."
- POD_heists.2011.c: "Mind looking the other way pal?"
+ POD_heists.2011.t: "Complicación: Devorador de hierba"
+ POD_heists.2011.desc.coterie: "Para alcanzar el objetivo de nuestra [infiltration|E], hemos concluido que el jardín privado del dominio era la vía más segura. Este entorno lujoso, rebosante de vegetación, nos ofrece muchas oportunidades para progresar mientras permanecemos ocultos.\n\nEstamos avanzando entre la hierba alta cuando noto que un perro callejero se acerca hacia nosotros. Si este invitado no deseado empieza a ladrar, las cosas podrían ponerse feas muy rápido..."
+ POD_heists.2011.desc.nocoterie: "Para alcanzar el objetivo de mi [infiltration|E], he concluido que el jardín privado del dominio era la vía más segura. Este entorno lujoso, rebosante de vegetación, me ofrece muchas oportunidades para progresar mientras permanezco oculto.\n\nEstoy avanzando entre la hierba alta cuando noto que un perro callejero se acerca hacia mí. Si este invitado no deseado empieza a ladrar, las cosas podrían ponerse feas muy rápido..."
+ POD_heists.2011.a: "¡Fuera, vete!"
+ POD_heists.2011.b: "No te muevas ni un músculo..."
+ POD_heists.2011.c: "¿Podrías mirar para otro lado, colega?"
 
- POD_heists.2012.t: "Complication: Chameleon of Darkness"
- POD_heists.2012.desc.coterie: "This garden is more like a forest it seems. I'm pretty sure we got lost several times already and, annoyingly enough, it also happens to be well-patrolled by several guards.\n\nAn idea comes to my mind. Our clothes are sticking out like a sore thumb in this very green environment. Perhaps using some earth and grass to dull the colors could help avoid undue attention?"
- POD_heists.2012.desc.nocoterie: "This garden is more like a forest it seems. I'm pretty sure I got lost several times already and, annoyingly enough, it also happens to be well-patrolled by several guards.\n\nAn idea comes to my mind. My clothes are sticking out like a sore thumb in this very green environment. Perhaps using some earth and grass to dull the colors could help avoid undue attention?"
- POD_heists.2012.a: "If I must..."
- POD_heists.2012.b: "That's crossing a line!"
+ POD_heists.2012.t: "Complicación: Camaleón de la Oscuridad"
+ POD_heists.2012.desc.coterie: "Parece que este jardín es más bien un bosque. Estoy bastante segura de que ya nos hemos perdido varias veces y, por desgracia, también resulta que está muy vigilado por varios guardias.\n\nSe me ocurre una idea. Nuestra ropa desentona demasiado en este entorno tan verde. ¿Quizás usar algo de tierra y hierba para atenuar los colores ayudaría a evitar una atención indebida?"
+ POD_heists.2012.desc.nocoterie: "Parece que este jardín es más bien un bosque. Estoy bastante segura de que ya me he perdido varias veces y, por desgracia, también resulta que está muy vigilado por varios guardias.\n\nSe me ocurre una idea. Mi ropa desentona demasiado en este entorno tan verde. ¿Quizás usar algo de tierra y hierba para atenuar los colores ayudaría a evitar una atención indebida?"
+ POD_heists.2012.a: "Si debo hacerlo..."
+ POD_heists.2012.b: "¡Eso es cruzar la línea!"
 
- POD_heists.2013.t: "Complication: Burn It All"
- POD_heists.2013.desc: "Enough is enough. Going through this "garden" was a terrible idea. I have no clue about my current location, my clothes are dirty and I smell like a peasant. It is time to rethink this whole thing.\n\nI have the strong impulse of finding the closest torch and burning the whole thing down but this might just be overreacting.\n\nOr is it?"
- POD_heists.2013.a: "Scorched earth tactic!"
- POD_heists.2013.a.success: "I use the chaos to prevail!"
- POD_heists.2013.a.failure: "Wait. FIRE?!"
- POD_heists.2013.b: "I hate nature."
+ POD_heists.2013.t: "Complicación: Quemarlo todo"
+ POD_heists.2013.desc: "Ya es suficiente. Pasar por este «jardín» fue una idea terrible. No tengo ni idea de dónde estoy, mi ropa está sucia y huelo como un campesino. Es hora de replanteárselo todo.\n\nTengo el fuerte impulso de buscar la antorcha más cercana y quemarlo todo, pero esto podría ser una reacción exagerada.\n\n¿O no lo es?"
+ POD_heists.2013.a: "¡Táctica de tierra quemada!"
+ POD_heists.2013.a.success: "¡Uso el caos para prevalecer!"
+ POD_heists.2013.a.failure: "Espera. ¿¡FUEGO!?"
+ POD_heists.2013.b: "Odio la naturaleza."
 
 
  # Assassin's Creed route [karde]
   
- POD_heists.2031.t: "Complication: Rooftop Adventure"
- POD_heists.2031.desc.coterie: "Our preliminary study of our target has lead me to conclude that the best approach would be an aerial one. We could get to an advantageous position by climbing a nearby tower, then jumping from rooftop to rooftop to avoid most of the defenses.\n\nA perfect plan really, I just have to not fall."
- POD_heists.2031.desc.nocoterie: "My preliminary study of my target has lead me to conclude that the best approach would be an aerial one. I could get to an advantageous position by climbing a nearby tower, then jumping from rooftop to rooftop to avoid most of the defenses.\n\nA perfect plan really, I just have to not fall."
- POD_heists.2031.a: "Don't look below..." #prowess duel
- POD_heists.2031.a.success: "Hop, hop, hop..." #continue
- POD_heists.2031.a.failure: "...I slipped" #lose prestige, gain minor wound, gain suspicion
+ POD_heists.2031.t: "Complicación: Aventura en las azoteas"
+ POD_heists.2031.desc.coterie: "Mi estudio preliminar de nuestro objetivo me ha llevado a concluir que el mejor enfoque sería uno aéreo. Podríamos alcanzar una posición ventajosa escalando una torre cercana y luego saltando de tejado en tejado para evitar la mayoría de las defensas.\n\nUn plan perfecto, de verdad; solo tengo que no caerme."
+ POD_heists.2031.desc.nocoterie: "Mi estudio preliminar de mi objetivo me ha llevado a concluir que el mejor enfoque sería uno aéreo. Podría alcanzar una posición ventajosa escalando una torre cercana y luego saltando de tejado en tejado para evitar la mayoría de las defensas.\n\nUn plan perfecto, de verdad; solo tengo que no caerme."
+ POD_heists.2031.a: "No mires abajo..." #prowess duel
+ POD_heists.2031.a.success: "Salto, salto, salto..." #continue
+ POD_heists.2031.a.failure: "...Me resbalé" #lose prestige, gain minor wound, gain suspicion
 
- POD_heists.2032.t: "Complication: Death from Above"
- POD_heists.2032.desc.coterie: "We are closing in on our target. According to our plan, we now have to go to ground level for a short while before climbing back up. I take a peek before starting the descent and quickly notice a guard stationed there.\n\nWe're in an advantageous position to just get the jump on him, literally.\n\nA perfect way to dispatch of a threat efficiently. And look cool as hell while doing it."
- POD_heists.2032.desc.nocoterie: "I am closing in on my target. According to my plan, I now have to go to ground level for a short while before climbing back up. I take a peek before starting the descent and quickly notice a guard stationed there.\n\nI'm in an advantageous position to just get the jump on him, literally.\n\nA perfect way to dispatch of a threat efficiently. And look cool as hell while doing it."
- POD_heists.2032.a: "One, two and..." #prowess duel
- POD_heists.2032.a.success: "...three!" #continue, gain prestige
- POD_heists.2032.a.failure: "...ouch!" #continue, gain wound, lose prestige
+ POD_heists.2032.t: "Complicación: Muerte desde arriba"
+ POD_heists.2032.desc.coterie: "Nos estamos acercando a nuestro objetivo. Según nuestro plan, ahora tenemos que bajar al nivel del suelo durante un breve tiempo antes de volver a subir. Echan un vistazo antes de comenzar el descenso y rápidamente notan a un guardia apostado allí.\n\nEstamos en una posición ventajosa para lanzarnos sobre él, literalmente.\n\nA forma perfecta de deshacerse de una amenaza de manera eficiente. Y lucir increíble mientras lo hacemos."
+ POD_heists.2032.desc.nocoterie: "Me estoy acercando a mi objetivo. Según mi plan, ahora tengo que bajar al nivel del suelo durante un breve tiempo antes de volver a subir. Echan un vistazo antes de comenzar el descenso y rápidamente noto a un guardia apostado allí.\n\nEstoy en una posición ventajosa para lanzarme sobre él, literalmente.\n\nA forma perfecta de deshacerme de una amenaza de manera eficiente. Y lucir increíble mientras lo hago."
+ POD_heists.2032.a: "Uno, dos y..." #prowess duel
+ POD_heists.2032.a.success: "...¡tres!" #continue, gain prestige
+ POD_heists.2032.a.failure: "...¡ay!" #continue, gain wound, lose prestige
  
- POD_heists.2033.t: "Complication: Leap of Faith"
- POD_heists.2033.desc: "One of the last hurdles to be cleared is a jump. A big jump from the top of a tower, landing (hopefully) in a cart of hay very conveniently placed here.\n\nThere isn't much to think about. I won't miss the target.\n\nRight?"
- POD_heists.2033.a: "I can hear an eagle screaming!" #prowess duel (representing athletic and such)
- POD_heists.2033.a.success: "Damn, I'm cool" #continue heist, gain prestige
- POD_heists.2033.a.failure: "Future generations will think you committed suicide" #death
+ POD_heists.2033.t: "Complicación: Salto de fe"
+ POD_heists.2033.desc: "Uno de los últimos obstáculos que hay que superar es un salto. Un gran salto desde lo alto de una torre, aterrizando (con suerte) en un carro de heno colocado muy convenientemente aquí.\n\nNo hay mucho en qué pensar. No fallaré el objetivo.\n\n¿Verdad?"
+ POD_heists.2033.a: "¡Puedo oír el grito de un águila!" #prowess duel (representing athletic and such)
+ POD_heists.2033.a.success: "Maldición, soy genial" #continue heist, gain prestige
+ POD_heists.2033.a.failure: "Las futuras generaciones pensarán que te suicidaste" #death
  #secret option if fortitude advanced
- POD_heists.2033.b: "I can target the ground no problem." #continue heist
+ POD_heists.2033.b: "Puedo apuntar al suelo sin problemas." #continue heist
  
 
  # Dungeon Keeper route [karde]
   
- POD_heists.2041.t: "Complication: Traps?"
- POD_heists.2041.desc.coterie: "We have been progressing prudently in our heist so far, wary of unwanted attention and it seems it has paid off for another reason. A mundane corridor reveals tiny holes on its walls after a closer inspection.\n\nWe have to go through here, so we'll need to find a way to disarm or avoid this mechanism."
- POD_heists.2041.desc.nocoterie: "I have been progressing prudently in my heist so far, wary of unwanted attention and it seems it has paid off for another reason. A mundane corridor reveals tiny holes on its walls after a closer inspection.\n\nI have to go through here, so I'll need to find a way to disarm or avoid this mechanism."
- POD_heists.2041.a.coterie: "Perhaps [learning_duelist.GetFirstName] can disarm the trigger?" #learning duel
- POD_heists.2041.a.nocoterie: "Perhaps I can disarm the trigger?" #learning duel
- POD_heists.2041.a.success: "...and voila" #continue
- POD_heists.2041.a.failure: "Wait, that's not right!" #gain stress, gain minor wound
- POD_heists.2041.b: "Maybe if I'm fast enough?" #prowess duel
- POD_heists.2041.b.success: "Easy!" #continue
- POD_heists.2041.b.failure: "Ouch!" #gain stress, gain minor wound
+ POD_heists.2041.t: "Complicación: ¿Trampas?"
+ POD_heists.2041.desc.coterie: "Hemos estado progresando prudentemente en nuestro atraco hasta ahora, cautelosos ante la atención no deseada, y parece que ha valido la pena por otra razón. Un pasillo mundano revela diminutos agujeros en sus paredes tras una inspección más cercana.\n\nTenemos que pasar por aquí, así que tendremos que encontrar la forma de desactivar o evitar este mecanismo."
+ POD_heists.2041.desc.nocoterie: "He estado progresando prudentemente en mi atraco hasta ahora, cauteloso ante la atención no deseada, y parece que ha valido la pena por otra razón. Un pasillo mundano revela diminutos agujeros en sus paredes tras una inspección más cercana.\n\nTengo que pasar por aquí, así que tendré que encontrar la forma de desactivar o evitar este mecanismo."
+ POD_heists.2041.a.coterie: "¿Quizás [learning_duelist.GetFirstName] pueda desactivar el detonador?" #learning duel
+ POD_heists.2041.a.nocoterie: "¿Quizás yo pueda desactivar el detonador?" #learning duel
+ POD_heists.2041.a.success: "...y listo" #continue
+ POD_heists.2041.a.failure: "¡Espera, eso no está bien!" #gain stress, gain minor wound
+ POD_heists.2041.b: "¿Tal vez si soy lo suficientemente rápido?" #prowess duel
+ POD_heists.2041.b.success: "¡Fácil!" #continue
+ POD_heists.2041.b.failure: "¡Ay!" #gain stress, gain minor wound
 
- POD_heists.2042.t: "Complication: Traps"
- POD_heists.2042.desc.coterie: "Now wary of more nasty \"surprises\" waiting for us, we're even more prudent in our approach. The next challenge in front of us seems to be an uneven floor that I suspect might open on something unpleasant, like a pit full of spikes.\n\nAs I would prefer to avoid a spiky end, I consider my options."
- POD_heists.2042.desc.nocoterie: "Now wary of more nasty \"surprises\" waiting for me, I'm even more prudent in my approach. The next challenge in front of me seems to be an uneven floor that I suspect might open on something unpleasant, like a pit full of spikes.\n\nAs I would prefer to avoid a spiky end, I consider my options."
- POD_heists.2042.a.coterie: "We just have to avoid the trapped tiles." #learning duel
- POD_heists.2042.a.nocoterie: "I just have to avoid the trapped tiles." #learning duel
+ POD_heists.2042.t: "Complicación: Trampas"
+ POD_heists.2042.desc.coterie: "Ahora, cautelosos ante más «sorpresas» desagradables que nos esperan, somos aún más prudentes en nuestro enfoque. El siguiente desafío que tenemos delante parece ser un suelo irregular que sospecho que podría abrirse sobre algo desagradable, como un foso lleno de picas.\n\nComo preferiría evitar un final lleno de picas, considero mis opciones."
+ POD_heists.2042.desc.nocoterie: "Ahora, cauteloso ante más «sorpresas» desagradables que me esperan, soy aún más prudente en mi enfoque. El siguiente desafío que tengo delante parece ser un suelo irregular que sospecho que podría abrirse sobre algo desagradable, como un foso lleno de picas.\n\nComo preferiría evitar un final lleno de picas, considero mis opciones."
+ POD_heists.2042.a.coterie: "Solo tenemos que evitar las losas con trampa." #learning duel
+ POD_heists.2042.a.nocoterie: "Solo tengo que evitar las losas con trampa." #learning duel
  #Same end duel loca as above, failure kills you here however. Spikes.
  #POD_heists.XXXX.a.success:0 "...and voila." #continue
  #POD_heists.XXXX.a.failure:0 "Wait, that's not right!" #death
- POD_heists.2042.b: "There is a number pattern at play here..." #stewardship duel
+ POD_heists.2042.b: "Hay un patrón numérico en juego aquí..." #stewardship duel
  #Same results and loca as above
 
- POD_heists.2043.t: "Complication: Traps!"
- POD_heists.2043.desc: "The [infiltration|E] has reached a critical stage. Due to past experiences, I expect the worst traps to be here. However, I don't seem to notice anything out of the ordinary at first glance, which fails to ease my nerves. It's much more likely that something is very well hidden instead of nothing being there at all."
- POD_heists.2043.a: "Let's double check everything..." #intrigue duel
- POD_heists.2043.a.success: "Ha! Got you!" #continue
- POD_heists.2043.a.failure: "Is that a... BOULDER?!" #death
- POD_heists.2043.b: "Where could the ambush be?" #martial duel
+ POD_heists.2043.t: "¡Complicación: Trampas!"
+ POD_heists.2043.desc: "La [infiltration|E] ha llegado a una etapa crítica. Debido a experiencias pasadas, espero que las peores trampas estén aquí. Sin embargo, no parezco notar nada fuera de lo común a primera vista, lo que no logra calmar mis nervios. Es mucho más probable que algo esté muy bien oculto a que no haya nada en absoluto."
+ POD_heists.2043.a: "Comprobemos todo dos veces..." #intrigue duel
+ POD_heists.2043.a.success: "¡Ja! ¡Te tengo!" #continue
+ POD_heists.2043.a.failure: "# sin cambios" #death
+ POD_heists.2043.b: "¿Dónde podría estar la emboscada?" #martial duel
  #Same results and loca keys as above
 
 
  # Inside Help route [karde]
 
- POD_heists.2061.t: "Complication: Inside Man"
- POD_heists.2061.desc.coterie:0 "To succeed in our [infiltration|E], we have chosen an indirect approach. Every man has his weakness and we found out which type of bribe worked best for the guard at the rear entrance.\n\nAs the man lets us enter as agreed, I dearly hope that I haven't misjudged him and am not walking into an ambush."
- POD_heists.2061.desc.nocoterie: "To succeed in my [infiltration|E], I have chosen an indirect approach. Every man has his weakness and I found out which type of bribe worked best for the guard at the rear entrance.\n\nAs the man lets me enter as agreed, I dearly hope that I haven't misjudged him and am not walking into an ambush."
- POD_heists.2061.a: "You will be well-compensated." # lodsamonee
- POD_heists.2061.b: "I'm recognizing your worth." #diplomacy duel
- POD_heists.2061.b.success: "As agreed" #continue, lose gold
- POD_heists.2061.b.failure: "Why are you locking the door behind?!" #imprison
- POD_heists.2061.c: "Your forbidden dreams are close." #intrigue duel
+ POD_heists.2061.t: "Complicación: El infiltrado"
+ POD_heists.2061.desc.coterie:0 "Para tener éxito en nuestra [infiltration|E], hemos elegido un enfoque indirecto. Todo hombre tiene su debilidad y descubrimos qué tipo de soborno funcionaba mejor con el guardia de la entrada trasera.\n\nComo el hombre nos deja entrar según lo acordado, espero fervientemente no haberlo juzgado mal y no estar caminando hacia una emboscada."
+ POD_heists.2061.desc.nocoterie: "Para tener éxito en mi [infiltration|E], he elegido un enfoque indirecto. Todo hombre tiene su debilidad y descubrí qué tipo de soborno funcionaba mejor con el guardia de la entrada trasera.\n\nComo el hombre me deja entrar según lo acordado, espero fervientemente no haberlo juzgado mal y no estar caminando hacia una emboscada."
+ POD_heists.2061.a: "Serás bien recompensado." # lodsamonee
+ POD_heists.2061.b: "Reconozco tu valor." #diplomacy duel
+ POD_heists.2061.b.success: "Según lo acordado" #continue, lose gold
+ POD_heists.2061.b.failure: "¡¿Por qué cierras la puerta tras nosotros?!" #imprison
+ POD_heists.2061.c: "Tus sueños prohibidos están cerca." #intrigue duel
  #Same loca and results for the duel
 
- POD_heists.2062.t: "Complication: Unreliable Guide"
- POD_heists.2062.desc.coterie: "Our inside man hasn't been as useful as I would have hoped so far. Their apparent lack of knowledge of the more secluded parts of the domain has cost us valuable time and has been close to getting us caught several times.\n\nStill, despite my suspicions, I can't deny that we are making progress.\n\nI'll just make a mental note of double checking everything he says."
- POD_heists.2062.desc.nocoterie: "My inside man hasn't been as useful as I would have hoped so far. Their apparent lack of knowledge of the more secluded parts of the domain has cost me valuable time and has been close to getting me caught several times.\n\nStill, despite my suspicions, I can't deny that I am making progress.\n\nI'll just make a mental note of double checking everything he says."
- POD_heists.2062.a: "Something is amiss, but let's continue." #gain suspicion
- POD_heists.2062.b.coterie: "We should leave while we still can." #gain stress
- POD_heists.2062.b.nocoterie: "I should leave while I still can." #gain stress
+ POD_heists.2062.t: "Complicación: Guía poco fiable"
+ POD_heists.2062.desc.coterie: "Nuestro infiltrado no ha sido tan útil como esperaba hasta ahora. Su aparente falta de conocimiento sobre las partes más recónditas del dominio nos ha costado tiempo valioso y nos ha estado a punto de delatar varias veces.\n\nAun así, pese a mis sospechas, no puedo negar que estamos progresando.\n\nMe tomaré la molestia de comprobar todo lo que diga."
+ POD_heists.2062.desc.nocoterie: "Mi infiltrado no ha sido tan útil como esperaba hasta ahora. Su aparente falta de conocimiento sobre las partes más recónditas del dominio me ha costado tiempo valioso y me ha estado a punto de delatar varias veces.\n\nAun así, pese a mis sospechas, no puedo negar que estoy progresando.\n\nMe tomaré la molestia de comprobar todo lo que diga."
+ POD_heists.2062.a: "Algo va mal, pero continuemos." #gain suspicion
+ POD_heists.2062.b.coterie: "Deberíamos irnos mientras aún podamos." #gain stress
+ POD_heists.2062.b.nocoterie: "Debería irme mientras aún pueda." #gain stress
 
- POD_heists.2063.t: "Complication: Expected Betrayal"
- POD_heists.2063.desc.coterie: "As our [infiltration|E] reaches a critical stage, our guide leads $POD_player_coterie$ to a new room. Before we can react, the door is locked and I hear swords being unsheathed and crossbows being drawn.\n\nI was right to be wary of our inside man, but apparently not prudent enough not to be cornered into a well-prepared ambush.\n\nTime to see if we are strong enough to brush aside this mistake."
- POD_heists.2063.desc.nocoterie: "As my [infiltration|E] reaches a critical stage, my guide leads me to a new room. Before I can react, the door is locked and I hear swords being unsheathed and crossbows being drawn.\n\nI was right to be wary of our inside man, but apparently not prudent enough not to be cornered into a well-prepared ambush.\n\nTime to see if I am strong enough to brush aside this mistake."
- POD_heists.2063.a: "This is not over yet." #very difficult prowess challenge. They are prepared, they have been warned in advance and you had options to back out before
- POD_heists.2063.a.success: "A cornered rat, fighting like a lion" #continue
- POD_heists.2063.a.failure: "One mistake too many" #death
-
-
- POD_heists.6001.t: "An Early End"
- POD_heists.6001.desc: "Death is only a minor setback for me.\n\nUnfortunately, due to the nature of my resurrection ability, my new body appeared somewhere far away from the location of my [infiltration_mission|E].\n\nIf I want to try again, I'll have to start from the beginning."
- POD_heists.6001.a: "Still beats being mortal."
- POD_heists.6001.a.tt: "Your [infiltration_mission|E] has ended prematurely due to your death."
+ POD_heists.2063.t: "Complicación: Traición esperada"
+ POD_heists.2063.desc.coterie: "A medida que nuestra [infiltration|E] alcanza una etapa crítica, nuestro guía conduce a $POD_player_coterie$ a una nueva sala. Antes de que podamos reaccionar, la puerta se cierra con llave y oigo el sonido de espadas siendo desenvainadas y ballestas siendo tensadas.\n\nHice bien en desconfiar de nuestro infiltrado, pero aparentemente no fui lo bastante prudente para no verme acorralad[ROOT.Char.Custom('ES_OA')] en una emboscada bien preparada.\n\nEs hora de ver si somos lo suficientemente fuertes como para dejar atrás este error."
+ POD_heists.2063.desc.nocoterie: "Mientras mi [infiltration|E] alcanza una etapa crítica, mi guía me conduce a una nueva sala. Antes de que pueda reaccionar, la puerta se cierra con llave y oigo el sonido de espadas desenvainándose y ballestas siendo tensadas.\n\nHice bien en desconfiar de nuestro infiltrado, pero aparentemente no fui lo bastante prudente para no verme acorralad[ROOT.Char.Custom('ES_OA')] en una emboscada bien preparada.\n\nEs hora de ver si soy lo suficientemente fuerte como para dejar atrás este error."
+ POD_heists.2063.a: "Esto aún no ha terminado." #very difficult prowess challenge. They are prepared, they have been warned in advance and you had options to back out before
+ POD_heists.2063.a.success: "Una rata acorralada, luchando como un león" #continue
+ POD_heists.2063.a.failure: "Un error demasiado" #death
 
 
- POD_heists.7777.t: "Revenge on the Storyteller"
- POD_heists.7777.desc: "You're about to try stealing the [charon_artifact.Custom('ColorizedArtifactName')] from [GetScriptedCharacterByHistoryID('POD_wraith_01').GetFirstNameNicknamed].\n\nDoes this sound like a good idea?"
- POD_heists.7777.a: "Yeah, totally."
- POD_heists.7777.b: "Not really..."
+ POD_heists.6001.t: "Un final prematuro"
+ POD_heists.6001.desc: "La muerte es solo un pequeño contratiempo para mí.\n\nDesafortunadamente, debido a la naturaleza de mi habilidad de resurrección, mi nuevo cuerpo ha aparecido en algún lugar muy alejado de la ubicación de mi [infiltration_mission|E].\n\nSi quiero intentarlo de nuevo, tendré que empezar desde el principio."
+ POD_heists.6001.a: "Sigue siendo mejor que ser mortal."
+ POD_heists.6001.a.tt: "Tu [infiltration_mission|E] ha terminado prematuramente debido a tu muerte."
+
+
+ POD_heists.7777.t: "Venganza contra el Narrador"
+ POD_heists.7777.desc: "Estás a punto de intentar robar el [charon_artifact.Custom('ColorizedArtifactName')] de [GetScriptedCharacterByHistoryID('POD_wraith_01').GetFirstNameNicknamed].\n\n¿Te parece una buena idea?"
+ POD_heists.7777.a: "Sí, totalmente."
+ POD_heists.7777.b: "No realmente..."

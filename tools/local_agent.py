@@ -146,6 +146,22 @@ def system_prompt():
     return PREAMBLE + "\n" + rules
 
 
+class ServerDown(Exception):
+    """Jan no responde: no tiene sentido seguir ni apartar lotes."""
+
+
+class BatchFailed(Exception):
+    """Fallo propio de un lote (no cabe en el contexto, respuesta inservible, tiempo agotado…)."""
+
+
+def server_alive(a):
+    try:
+        with urllib.request.urlopen(a.url.rstrip("/") + "/models", timeout=15):
+            return True
+    except Exception:
+        return False
+
+
 def chat(a, system, user):
     if not a.model:  # se decide con la primera petición: con la cola vacía no hace falta modelo
         a.model, why = pick_model()
@@ -162,11 +178,21 @@ def chat(a, system, user):
     try:
         with urllib.request.urlopen(req, timeout=a.timeout) as r:
             data = json.loads(r.read().decode("utf-8"))
+        return THINK_RE.sub("", data["choices"][0]["message"]["content"])
     except urllib.error.HTTPError as e:
-        sys.exit(f"El servidor ha respondido {e.code}: {e.read().decode('utf-8', 'replace')[:500]}")
+        raise BatchFailed(f"el servidor ha respondido {e.code}: {e.read().decode('utf-8', 'replace')[:300]}")
     except urllib.error.URLError as e:
-        sys.exit(f"No se puede conectar con {url} ({e.reason}). ¿Está arrancado el Local API Server de Jan?")
-    return THINK_RE.sub("", data["choices"][0]["message"]["content"])
+        if isinstance(e.reason, TimeoutError) or "timed out" in str(e.reason):
+            raise BatchFailed("tiempo de espera agotado")
+        raise ServerDown(f"no se puede conectar con {url} ({e.reason}). ¿Está arrancado el Local API Server de Jan?")
+    except TimeoutError:
+        raise BatchFailed("tiempo de espera agotado")
+    except OSError as e:  # conexión cortada a mitad: ¿se ha caído Jan o solo este lote?
+        if server_alive(a):
+            raise BatchFailed(f"conexión interrumpida ({e})")
+        raise ServerDown(f"Jan ha dejado de responder ({e})")
+    except (ValueError, KeyError, IndexError, TypeError) as e:
+        raise BatchFailed(f"respuesta del servidor ilegible ({e})")
 
 
 def parse(reply):
@@ -180,27 +206,61 @@ def parse(reply):
     return lines
 
 
+# Fallos seguidos sin ningún éxito entre medias. Dividir un lote de 40 hasta llegar a 1 texto son 6;
+# más que esto apunta a un problema general (modelo, servidor), no a un lote concreto.
+MAX_CONSECUTIVE_FAILURES = 8
+
+
 def run_batches(a, prefix, limit, system):
-    done = 0
-    while limit is None or done < limit:
-        nxt = pod("next", *(["--prefix", prefix] if prefix else []))
-        m = re.search(r"SIGUIENTE:\s*(\S+\.txt)", nxt)
-        if not m:
-            print(nxt.strip())
-            break
-        todo = ROOT / m.group(1)
+    """Procesa lotes hasta el límite o hasta vaciar la cola. Un lote que falla entero se aparta
+    (se divide en dos, o va a manual/ si es de un solo texto) y se sigue: las mitades van primero."""
+    done = attempts = failures_in_a_row = 0
+    halves = []  # mitades de un lote dividido: se prueban antes que el resto de la cola
+    while limit is None or attempts < limit:
+        while halves and not (Q / "todo" / f"{halves[0]}.txt").exists():
+            halves.pop(0)
+        if halves:
+            todo = Q / "todo" / f"{halves.pop(0)}.txt"
+        else:
+            nxt = pod("next", *(["--prefix", prefix] if prefix else []))
+            m = re.search(r"SIGUIENTE:\s*(\S+\.txt)", nxt)
+            if not m:
+                print(nxt.strip())
+                break
+            todo = ROOT / m.group(1)
         name = todo.stem
         batch = todo.read_text(encoding="utf-8")
-        n_items = len(re.findall(r"^EN:", batch, re.M))
+        n_items = len(re.findall(r"^(EN:|\d+: )", batch, re.M))
+        attempts += 1
         t0 = time.time()
-        lines = []
-        for attempt in (1, 2):
-            lines = parse(chat(a, system, batch))
-            if lines:
+        try:
+            lines = []
+            for attempt in (1, 2):
+                lines = parse(chat(a, system, batch))
+                if lines:
+                    break
+                print(f"{name}: respuesta sin líneas «N = …», reintentando ({attempt}/2)")
+            if not lines:
+                raise BatchFailed("el modelo no ha devuelto nada utilizable")
+        except ServerDown as e:
+            a.server_down = True
+            print(f"✘ {e}\n  Me detengo: el lote {name} sigue intacto en work_queue/todo.")
+            break
+        except BatchFailed as e:
+            if a.dry_run:
+                print(f"✘ {name}: {e}")
                 break
-            print(f"{name}: respuesta sin líneas «N = …», reintentando ({attempt}/2)")
-        if not lines:
-            sys.exit(f"{name}: el modelo no ha devuelto nada utilizable; lote sin tocar en work_queue/todo")
+            failures_in_a_row += 1
+            print(f"✘ {name}: {e}")
+            out = pod("setaside", name, "--reason", str(e)[:120], *(["--split"] if n_items > 1 else [])).rstrip()
+            print(out)
+            halves = re.findall(r"\b([UBRNM]\d{4})\b", out.split("dividido en", 1)[1])[:2] + halves if "dividido en" in out else halves
+            a.set_aside = getattr(a, "set_aside", 0) + 1
+            if failures_in_a_row >= MAX_CONSECUTIVE_FAILURES:
+                print(f"✘ {failures_in_a_row} lotes seguidos han fallado: parece un problema general, no de un lote. Me detengo.")
+                break
+            continue
+        failures_in_a_row = 0
         print(f"{name}: {len(lines)}/{n_items} líneas en {time.time() - t0:.0f} s")
         if a.dry_run:
             print("\n".join(lines))
@@ -220,7 +280,9 @@ def close(a, system):
     print("── cierre: verify --batch")
     print(pod("verify", "--batch").rstrip())
     new = sorted({p.stem for p in (Q / "todo").glob("R*.txt")} - before)
-    if new:
+    if new and getattr(a, "server_down", False):
+        print(f"── cierre: {len(new)} lotes R quedan en la cola (Jan no responde)")
+    elif new:
         print(f"── cierre: {len(new)} lotes R de verify")
         run_batches(a, "R", len(new), system)
         print(pod("verify").rstrip())
@@ -231,7 +293,7 @@ def close(a, system):
 
 def main():
     p = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    p.add_argument("--prefix", choices=["U", "B", "R", "N"], help="prefijo de los lotes (por defecto, el siguiente que haya)")
+    p.add_argument("--prefix", choices=["U", "B", "R", "N", "M"], help="prefijo de los lotes (por defecto, el siguiente que haya)")
     p.add_argument("--limit", type=int, help="máximo de lotes en esta ejecución")
     p.add_argument("--close", action="store_true", help="hacer «el cierre» de AGENTS.md al terminar")
     p.add_argument("--dry-run", action="store_true", help="traduce el siguiente lote y lo muestra, sin guardar ni aplicar")
@@ -246,7 +308,9 @@ def main():
         n = run_batches(a, a.prefix, a.limit, system)
         if a.close and not a.dry_run:
             close(a, system)
-        print(f"Lotes procesados: {n}. Recuerda: build, versión y git los haces tú.")
+        apartados = getattr(a, "set_aside", 0)
+        print(f"Lotes procesados: {n}" + (f" · lotes apartados por fallo: {apartados}" if apartados else "") +
+              ". Recuerda: build, versión y git los haces tú.")
     finally:
         # Pase lo que pase (fin, error o Ctrl+C), no dejar modelos ocupando la GPU.
         # El servidor de Jan sigue en marcha: solo se descargan los modelos.
