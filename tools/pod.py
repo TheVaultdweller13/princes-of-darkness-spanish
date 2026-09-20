@@ -1073,7 +1073,7 @@ def check_items(files=None, only=None, keys=None):
             if only in (None, "glossary"):
                 pe, ps = strip_markup(ev), strip_markup(sv).lower()
                 for g in gloss:
-                    if g["re"].search(pe) and g["es"].lower() not in ps:
+                    if g["re"].search(pe) and not any(alt.strip().lower() in ps for alt in g["es"].split("|")):
                         anota(why, reglas, 'glossary', f"glosario: {g['en']} → {g['es']}")
                         break
             if only in (None, "display"):

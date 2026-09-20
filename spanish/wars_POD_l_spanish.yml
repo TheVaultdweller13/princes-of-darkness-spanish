@@ -155,6 +155,6 @@
  POD_dismantle_anda_horde_name: "$ORDER$ Guerra de [ATTACKER.GetFirstNamePossessive] para la destrucción de [GetTitleByKey('e_anda').GetNameNoTier]"
  POD_dismantle_anda_horde_name_base: "[ATTACKER.GetFirstName][DEFENDER.GetPrimaryTitle.GetName]"
  POD_dismantle_anda_horde: "Desmantelar [GetTitleByKey('e_anda').GetNameNoTier]"
- POD_dismantle_anda_horde_victory_desc: "[GetTitleByKey('e_anda').GetNameNoTier] será desmantelado, todos los vampiros y [akuma|E] en su interior serán [deposed|E], y la Rueda de las Eras girará hacia la [Glossary('First Age','game_concept_first_age_desc')]."
+ POD_dismantle_anda_horde_victory_desc: "[GetTitleByKey('e_anda').GetNameNoTier] será desmantelado, todos los vampiros y [akuma|E] en su interior serán [deposed|E], y la Rueda de las Eras girará hacia la [Glossary('Primera Era','game_concept_first_age_desc')]."
  POD_dismantle_anda_horde_defeat_desc: "[GetTitleByKey('e_anda').GetNameNoTier] no será desmantelado, el atacante perderá [piety|E] y la [Glossary('Rueda de las Eras','podgloss.wheelofages')] girará hacia la [Glossary('Sexta Era','game_concept_sixth_age_desc')]."
  msg_POD_dismantle_anda_horde_invalidated_message: "La [war.GetName] ha terminado: [defender.GetShortUIName] ya no controla el título de [GetTitleByKey('e_anda').GetNameNoTier]."
