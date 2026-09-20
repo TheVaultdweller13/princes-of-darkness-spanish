@@ -1,4 +1,4 @@
-﻿l_english:
+﻿l_spanish:
  # Umbra gui
  UMBRA_HEAD: "$line_break$#S Efecto:#!"
  UMBRA_BREAK: "$line_break$$BULLET_WITH_TAB$"
@@ -849,7 +849,7 @@
  winterweir_effect_desc: ""
  
  umbra_realm_forest_of_lies: "Bosque de Mentiras"
- umbra_realm_forest_of_lies_desc: "El Bosque de Mentiras es parte del [UmbraGlossary('great_dream_forest')] y uno de los relativamente [Glossary('Stable Points','game_concept_stable_point_desc')] del [UmbraGlossary('far_dreaming')].\n\nEl Bosque de Mentiras sigue patrones demasiado complejos para que la mayoría los comprenda. Siempre limita con la división entre el [UmbraGlossary('far_dreaming')] y el [UmbraGlossary('deep_dreaming')]. Fue en el Bosque de Mentiras donde Asterlan y su séquito lucharon contra las arañas del Abismo Susurrante. No hay nada bueno dentro del Bosque de Mentiras. Todo aquí es oscuro y sombrío, probablemente nacido de los miedos humanos al bosque primigenio. Los frutos que dan los antiguos y nudosos árboles del bosque son amargos y a menudo venenosos para los Kithain. Los animales de aquí son todos depredadores, y la mayoría alcanza tamaños que harían dudar incluso a un ejército de trolls."
+ umbra_realm_forest_of_lies_desc: "El Bosque de Mentiras es parte del [UmbraGlossary('great_dream_forest')] y uno de los relativamente pocos [Glossary('Stable Points','game_concept_stable_point_desc')] del [UmbraGlossary('far_dreaming')].\n\nEl Bosque de Mentiras sigue patrones demasiado complejos para que la mayoría los comprenda. Siempre limita con la división entre el [UmbraGlossary('far_dreaming')] y el [UmbraGlossary('deep_dreaming')]. Fue en el Bosque de Mentiras donde Asterlan y su séquito lucharon contra las arañas del Abismo Susurrante. No hay nada bueno dentro del Bosque de Mentiras. Todo aquí es oscuro y sombrío, probablemente nacido de los miedos humanos al bosque primigenio. Los frutos que dan los antiguos y nudosos árboles del bosque son amargos y a menudo venenosos para los Kithain. Los animales de aquí son todos depredadores, y la mayoría alcanza tamaños que harían dudar incluso a un ejército de trolls."
  forest_of_lies_effect_desc: ""
  
  umbra_realm_maharaurava: "Mahâraurava"
@@ -930,7 +930,7 @@
  dark_kingdom_of_clay_effect_desc: "Desbloquea una interacción que te permite enviar un [GetTrait('wraith').GetName( GetNullCharacter )] vinculado a este [Glossary('Dark Kingdom','game_concept_dark_kingdom_desc')] para que tenga la oportunidad de aprender nuevos [arcanoi_lifestyle|E]."
  
  umbra_realm_dark_kingdom_of_ivory: "Reino Oscuro de Marfil"
- umbra_realm_dark_kingdom_of_ivory_desc: "El Monte de los Fantasmas, que también se conoce como el [Glossary('Dark Kingdom','game_concept_dark_kingdom_desc')] de Marfil, es las [UmbraGlossary('shadowlands')] para los abambo, o los wraiths de África."
+ umbra_realm_dark_kingdom_of_ivory_desc: "El Monte de los Fantasmas, que también se conoce como el [Glossary('Dark Kingdom','game_concept_dark_kingdom_desc')] de Marfil, es el [UmbraGlossary('shadowlands')] para los abambo, o los wraiths de África."
  dark_kingdom_of_ivory_effect_desc: "Desbloquea una interacción que te permite enviar un [GetTrait('wraith').GetName( GetNullCharacter )] vinculado a este [Glossary('Dark Kingdom','game_concept_dark_kingdom_desc')] para que tenga la oportunidad de aprender nuevos [arcanoi_lifestyle|E].\nSi eres un wraith, gana acceso al árbol de Behest de [misc_arcanoi_lifestyle|E]. (como una [umbra_expedition|E])"
  
  umbra_realm_dark_kingdom_of_jade: "Reino Oscuro de Jade"
@@ -942,11 +942,11 @@
  dark_kingdom_of_obsidian_effect_desc: "Desbloquea una interacción que te permite enviar un [GetTrait('wraith').GetName( GetNullCharacter )] vinculado a este [Glossary('Dark Kingdom','game_concept_dark_kingdom_desc')] para que tenga la oportunidad de aprender nuevos [arcanoi_lifestyle|E]."
  
  umbra_realm_dark_kingdom_of_wire: "Reino Oscuro de Alambre"
- umbra_realm_dark_kingdom_of_wire_desc: "El [Glossary('Dark Kingdom','game_concept_dark_kingdom_desc')] de Alambre es la región de las [UmbraGlossaryLocalized('shadowlands','Underworld')] de Europa que es el hogar de los dybbuk, wraiths asesinados en el Holocausto. Aunque no es un verdadero [Glossary('Dark Kingdom','game_concept_dark_kingdom_desc')], es independiente del [UmbraGlossary('dark_kingdom_of_iron')] que gobierna a la mayoría de los muertos de Europa."
+ umbra_realm_dark_kingdom_of_wire_desc: "El [Glossary('Dark Kingdom','game_concept_dark_kingdom_desc')] de Alambre es la región de las [UmbraGlossaryLocalized('shadowlands','Inframundo')] de Europa que es el hogar de los dybbuk, wraiths asesinados en el Holocausto. Aunque no es un verdadero [Glossary('Dark Kingdom','game_concept_dark_kingdom_desc')], es independiente del [UmbraGlossary('dark_kingdom_of_iron')] que gobierna a la mayoría de los muertos de Europa."
  dark_kingdom_of_wire_effect_desc: "Desbloquea una interacción que te permite enviar un [GetTrait('wraith').GetName( GetNullCharacter )] vinculado a este [Glossary('Dark Kingdom','game_concept_dark_kingdom_desc')] para que tenga la oportunidad de aprender nuevos [arcanoi_lifestyle|E]."
  
  umbra_realm_dark_kingdom_of_sand: "Reino Oscuro de Arena"
- umbra_realm_dark_kingdom_of_sand_desc: "Amenti, el [Glossary('Dark Kingdom','game_concept_dark_kingdom_desc')] de Arena, es el [Glossary('Dark Kingdom','game_concept_dark_kingdom_desc')] de los Inmortales en el [UmbraGlossaryLocalized('shadowlands','Underworld')]. No está poblado por wraiths, sino por Inmortales que murieron y se encontraron de nuevo en las [UmbraGlossary('shadowlands')]."
+ umbra_realm_dark_kingdom_of_sand_desc: "Amenti, el [Glossary('Dark Kingdom','game_concept_dark_kingdom_desc')] de Arena, es el [Glossary('Dark Kingdom','game_concept_dark_kingdom_desc')] de los Inmortales en el [UmbraGlossaryLocalized('shadowlands','Inframundo')]. No está poblado por wraiths, sino por Inmortales que murieron y se encontraron de nuevo en las [UmbraGlossary('shadowlands')]."
  dark_kingdom_of_sand_effect_desc: "Desbloquea una interacción que te permite enviar un [GetTrait('wraith').GetName( GetNullCharacter )] vinculado a este [Glossary('Dark Kingdom','game_concept_dark_kingdom_desc')] para que tenga la oportunidad de aprender nuevos [arcanoi_lifestyle|E]."
  
  umbra_realm_swar: "Swar"
@@ -970,7 +970,7 @@
  feng_tu_effect_desc: ""
 
  umbra_realm_fields_of_aaru: "Campos de A'aru"
- umbra_realm_fields_of_aaru_desc: "Los Campos de A'aru son la residencia de los Jueces de Ma'at y se encuentran dentro de las [UmbraGlossaryLocalized('shadowlands','Underworld')] entre las ruinas del [UmbraGlossary('dark_kingdom_of_sand')]. A'aru solo puede encontrarse cuando el espíritu incorpóreo de una momia es acompañado por Anubis o uno de sus sirvientes, los Aken. Es un lugar para los wraiths que han demostrado ser dignos de encontrar el Cielo."
+ umbra_realm_fields_of_aaru_desc: "Los Campos de A'aru son la residencia de los Jueces de Ma'at y se encuentran dentro de las [UmbraGlossaryLocalized('shadowlands','Inframundo')] entre las ruinas del [UmbraGlossary('dark_kingdom_of_sand')]. A'aru solo puede encontrarse cuando el espíritu incorpóreo de una momia es acompañado por Anubis o uno de sus sirvientes, los Aken. Es un lugar para los wraiths que han demostrado ser dignos de encontrar el Cielo."
  fields_of_aaru_effect_desc: ""
 
  umbra_realm_isle_of_eurydice: "Isla de Eurídice"
@@ -1026,7 +1026,7 @@
  
  umbra_realm_oblivion: "Olvido"
  umbra_realm_oblivion_desc: "El Olvido es la entropía misma, una fuerza de destrucción y locura en constante agitación de la que no hay retorno."
- oblivion_effect_desc: "#X ¡Cualquier ser que entre aquí verá su existencia borrada!#!"
+ oblivion_effect_desc: "#X Cualquier ser que entre aquí verá su existencia borrada.#!"
  
  umbra_realm_abyss: "Abismo"
  umbra_realm_abyss_desc: "El Abismo, también conocido como el Infierno o el Foso, es la turbia dimensión de oscuridad creada por Dios como una prisión eterna para los Caídos."
@@ -1327,7 +1327,7 @@
  moon_effect_desc: ""
  
  umbra_realm_sun: "Sol"
- umbra_realm_sun_desc: "El área de la [UmbraGlossary('deep_umbra')] que alberga a Helios no es más que calor y una brillante luz blanca. Puentes hechos de luz rojiza, similares a las llamaradas solares, cruzan profundos abismos llenos de elementos atomizados y sobrecalentados. Aquí habitan Incarnae elementales del fuego, brillantes y alegres, pero encargados de defender el señorío contra los intrusos. Atacarán a cualquier hombre lobo que entre en el señorío, aunque dan la bienvenida a los Corax y a otros que adoran a Helios. Cualquier superficie dentro del señorío de Helios es demasiado caliente para estar de pie o permanecer cerca durante mucho tiempo. Solo los espíritus voladores entran en esta área de la Umbra Profunda, y los viajeros sin la capacidad de volar se consumen en el fuego antes de tener la oportunidad de darse cuenta de su error."
+ umbra_realm_sun_desc: "El área de la [UmbraGlossary('deep_umbra')] que alberga a Helios no es más que calor y una brillante luz blanca. Puentes hechos de luz rojiza, similares a las llamaradas solares, cruzan profundos abismos llenos de elementos atomizados y sobrecalentados. Aquí habitan Incarnae elementales del fuego, brillantes y alegres, pero encargados de defender el Señorío contra los intrusos. Atacarán a cualquier hombre lobo que entre en el Señorío, aunque dan la bienvenida a los Corax y a otros que adoran a Helios. Cualquier superficie dentro del Señorío de Helios es demasiado caliente para estar de pie o permanecer cerca durante mucho tiempo. Solo los espíritus voladores entran en esta área de la Umbra Profunda, y los viajeros sin la capacidad de volar se consumen en el fuego antes de tener la oportunidad de darse cuenta de su error."
  sun_effect_desc: ""
 
  umbra_realm_shard_realm_of_prime: "Reino Astilla de Prime"
@@ -1339,234 +1339,234 @@
  darkside_moon_base_effect_desc: ""
 
  umbra_realm_victoria_station: "Estación Victoria"
- umbra_realm_victoria_station_desc: "Victoria Station was an Etherite space station located in the Moon's Penumbra. Originally a train station from Victorian London, it served as a forward base for many Ethernauts exploring the [UmbraGlossary('deep_umbra')]."
+ umbra_realm_victoria_station_desc: "La estación Victoria era una estación espacial de Eterita situada en la Penumbra de la Luna. Originalmente una estación de tren del Londres victoriano, servía como base avanzada para muchos Ethernautas que exploraban el [UmbraGlossary('deep_umbra')]."
  victoria_station_effect_desc: ""
 
- umbra_realm_shard_realm_of_infinity: "Shard Realm of Infinity"
- umbra_realm_shard_realm_of_infinity_desc: "[Glossary('Shard Realm','game_concept_shard_realm_desc')] connected to Sol."
+ umbra_realm_shard_realm_of_infinity: "Reino Astilla de la Infinito"
+ umbra_realm_shard_realm_of_infinity_desc: "[Glossary('Reino Astilla','game_concept_shard_realm_desc')] conectado con el Sol."
  shard_realm_of_infinity_effect_desc: ""
 
- umbra_realm_shard_realm_of_correspondence: "Shard Realm of Correspondence"
- umbra_realm_shard_realm_of_correspondence_desc: "[Glossary('Shard Realm','game_concept_shard_realm_desc')] connected to Mercury."
+ umbra_realm_shard_realm_of_correspondence: "Reino Astilla de la Correspondencia"
+ umbra_realm_shard_realm_of_correspondence_desc: "[Glossary('Reino Astilla','game_concept_shard_realm_desc')] conectado con Mercurio."
  shard_realm_of_correspondence_effect_desc: ""
 
  umbra_realm_mus: "Mus"
- umbra_realm_mus_desc: "Mus was the only moon of Mercury, a tiny gray rock rendered invisible to Earth-based observers by powerful magick."
+ umbra_realm_mus_desc: "Mus era la única luna de Mercurio, una pequeña roca gris que la poderosa Magia hacía invisible para los observadores de la Tierra."
  mus_effect_desc: ""
 
  umbra_realm_fors_collegis_mercuris: "Fors Collegis Mercuris"
- umbra_realm_fors_collegis_mercuris_desc: "Fors Collegis Mercuris, "The Accidental College of Mercury", was a secret magical school for neophyte mages of the Order of Hermes. It was originally constructed outside Genoa, Italy in 1190 by mages of House Bonisagus. In 1450, under increasing pressure from assaults by the Order of Reason, the college was transported to the Horizon Realm of Mus, the invisible moon of Mercury."
+ umbra_realm_fors_collegis_mercuris_desc: "Fors Collegis Mercuris, «La Escuela Accidental de Mercurio», era una escuela mágica secreta para magos neófitos de la Orden de Hermes. Fue construida originalmente a las afueras de Génova, Italia, en 1190 por magos de la Casa Bonisagus. En 1450, bajo la creciente presión de los asaltos de la Orden de la Razón, la escuela fue transportada al Reino del Horizonte de Mus, la luna invisible de Mercurio."
  fors_collegis_mercuris_effect_desc: ""
 
- umbra_realm_shard_realm_of_life: "Shard Realm of Life"
- umbra_realm_shard_realm_of_life_desc: "[Glossary('Shard Realm','game_concept_shard_realm_desc')] connected to Venus."
+ umbra_realm_shard_realm_of_life: "Reino Astilla de la Vida"
+ umbra_realm_shard_realm_of_life_desc: "[Glossary('Reino Astilla','game_concept_shard_realm_desc')] conectado con Venus."
  shard_realm_of_life_effect_desc: ""
 
- umbra_realm_seasonal_realms: "Seasonal Realms"
- umbra_realm_seasonal_realms_desc: "The Seasonal Realms or the Verbena Seasonal Realms are four seperate Realms within the [UmbraGlossary('shard_realm_of_life')], otherwise known as the Umbral reflection of the planet Venus."
+ umbra_realm_seasonal_realms: "Reinos Estacionales"
+ umbra_realm_seasonal_realms_desc: "Los Reinos Estacionales o los Reinos Estacionales de la Verbena son cuatro Señoríos distintos dentro del [UmbraGlossary('shard_realm_of_life')], también conocido como el reflejo Umbral del planeta Venus."
  seasonal_realms_effect_desc: ""
 
- umbra_realm_shard_realm_of_forces: "Shard Realm of Forces"
- umbra_realm_shard_realm_of_forces_desc: "[Glossary('Shard Realm','game_concept_shard_realm_desc')] connected to Mars."
+ umbra_realm_shard_realm_of_forces: "Reino Astilla de las Fuerzas"
+ umbra_realm_shard_realm_of_forces_desc: "[Glossary('Reino Astilla','game_concept_shard_realm_desc')] conectado con Marte."
  shard_realm_of_forces_effect_desc: ""
 
- umbra_realm_shard_realm_of_matter: "Shard Realm of Matter"
- umbra_realm_shard_realm_of_matter_desc: "[Glossary('Shard Realm','game_concept_shard_realm_desc')] connected to Jupiter."
+ umbra_realm_shard_realm_of_matter: "Reino Astilla de la Materia"
+ umbra_realm_shard_realm_of_matter_desc: "[Glossary('Reino Astilla','game_concept_shard_realm_desc')] conectado con Júpiter."
  shard_realm_of_matter_effect_desc: ""
 
- umbra_realm_shard_realm_of_time: "Shard Realm of Time"
- umbra_realm_shard_realm_of_time_desc: "[Glossary('Shard Realm','game_concept_shard_realm_desc')] connected to Saturn."
+ umbra_realm_shard_realm_of_time: "Reino Astilla del Tiempo"
+ umbra_realm_shard_realm_of_time_desc: "[Glossary('Reino Astilla','game_concept_shard_realm_desc')] conectado con Saturno."
  shard_realm_of_time_effect_desc: ""
 
- umbra_realm_shard_realm_of_spirit: "Shard Realm of Spirit"
- umbra_realm_shard_realm_of_spirit_desc: "[Glossary('Shard Realm','game_concept_shard_realm_desc')] connected to Uranus."
+ umbra_realm_shard_realm_of_spirit: "Reino Astilla del Espíritu"
+ umbra_realm_shard_realm_of_spirit_desc: "[Glossary('Reino Astilla','game_concept_shard_realm_desc')] conectado con Urano."
  shard_realm_of_spirit_effect_desc: ""
 
- umbra_realm_shard_realm_of_mind: "Shard Realm of Mind"
- umbra_realm_shard_realm_of_mind_desc: "[Glossary('Shard Realm','game_concept_shard_realm_desc')] connected to Neptune."
+ umbra_realm_shard_realm_of_mind: "Reino Astilla de la Mente"
+ umbra_realm_shard_realm_of_mind_desc: "[Glossary('Reino Astilla','game_concept_shard_realm_desc')] conectado con Neptuno."
  shard_realm_of_mind_effect_desc: ""
 
- umbra_realm_shard_realm_of_entropy: "Shard Realm of Entropy"
- umbra_realm_shard_realm_of_entropy_desc: "[Glossary('Shard Realm','game_concept_shard_realm_desc')] connected to Pluto."
+ umbra_realm_shard_realm_of_entropy: "Reino Astilla de la Entropía"
+ umbra_realm_shard_realm_of_entropy_desc: "[Glossary('Reino Astilla','game_concept_shard_realm_desc')] conectado con Plutón."
  shard_realm_of_entropy_effect_desc: ""
 
- umbra_realm_cerberus: "Cerberus"
- umbra_realm_cerberus_desc: "Cerberus is the name of a Plutonian moon in the solar system. It is not visible from Earth and has thus never been identified by Sleeper."
+ umbra_realm_cerberus: "Cerbero"
+ umbra_realm_cerberus_desc: "Cerbero es el nombre de una luna plutoniana en el sistema solar. No es visible desde la Tierra y, por tanto, nunca ha sido identificada por los Durmientes."
  cerberus_effect_desc: ""
 
- umbra_realm_shade_realm_of_correspondence: "Shade Realm of Correspondence"
- umbra_realm_shade_realm_of_correspondence_desc: "[Glossary('Shade Realm','game_concept_shade_realm_desc')] connected to Mercury. This [Glossary('Shade Realm','game_concept_shade_realm_desc')] cannot be directly reached from Earth, and those who do manage to get there find themselves moving though omnidimensional space according to unfathomable geometries."
+ umbra_realm_shade_realm_of_correspondence: "Reino Sombra de la Correspondencia"
+ umbra_realm_shade_realm_of_correspondence_desc: "[Glossary('Reino Sombra','game_concept_shade_realm_desc')] conectado con Mercurio. Este [Glossary('Reino Sombra','game_concept_shade_realm_desc')] no puede alcanzarse directamente desde la Tierra, y quienes logran llegar se encuentran moviéndose a través de un espacio omnidimensional según geometrías insondables."
  shade_realm_of_correspondence_effect_desc: ""
 
- umbra_realm_shade_realm_of_life: "Shade Realm of Life"
- umbra_realm_shade_realm_of_life_desc: "[Glossary('Shade Realm','game_concept_shade_realm_desc')] connected to Venus. This Realm is a lush, ever-changing jungle. Its relative accessibility from Earth has made it a frequent battleground in the Ascension War."
+ umbra_realm_shade_realm_of_life: "Reino Sombra de la Vida"
+ umbra_realm_shade_realm_of_life_desc: "[Glossary('Reino Sombra','game_concept_shade_realm_desc')] conectado con Venus. Este Señorío es una selva exuberante y siempre cambiante. Su accesibilidad relativa desde la Tierra lo ha convertido en un frecuente campo de batalla en la Guerra de la Ascensión."
  shade_realm_of_life_effect_desc: ""
 
- umbra_realm_shade_realm_of_forces: "Shade Realm of Forces"
- umbra_realm_shade_realm_of_forces_desc: "[Glossary('Shade Realm','game_concept_shade_realm_desc')] connected to Mars. The Shade Realm of Forces is a never-ending tempest with only rare, isolated spots of relative calm. [doissetep|E] occupied one of those calm spots, at least until its destruction. Like the Shade Realm of Life, its is a frequent (if dangerous) host to mage battles."
+ umbra_realm_shade_realm_of_forces: "Reino Sombra de las Fuerzas"
+ umbra_realm_shade_realm_of_forces_desc: "[Glossary('Reino Sombra','game_concept_shade_realm_desc')] conectado con Marte. El Reino Sombra de las Fuerzas es una tempestad interminable con solo raros y aislados puntos de calma relativa. [doissetep|E] ocupó uno de esos puntos de calma, al menos hasta su destrucción. Al igual que el Reino Sombra de la Vida, es un frecuente (aunque peligroso) escenario para batallas de magos."
  shade_realm_of_forces_effect_desc: ""
 
- umbra_realm_shade_realm_of_matter: "Shade Realm of Matter"
- umbra_realm_shade_realm_of_matter_desc: "[Glossary('Shade Realm','game_concept_shade_realm_desc')] connected to Jupiter. This Realm may be connected to Hollow Earth, or may be similar but on a far vaster scale — an empire of dinosaurs, lost civilizations and other things that no longer exist."
+ umbra_realm_shade_realm_of_matter: "Reino Sombra de la Materia"
+ umbra_realm_shade_realm_of_matter_desc: "[Glossary('Reino Sombra','game_concept_shade_realm_desc')] conectado con Júpiter. Este Señorío puede estar conectado con la Tierra Hueca, o puede ser similar pero a una escala mucho mayor: un imperio de dinosaurios, civilizaciones perdidas y otras cosas que ya no existen."
  shade_realm_of_matter_effect_desc: ""
 
- umbra_realm_shade_realm_of_time: "Shade Realm of Time"
- umbra_realm_shade_realm_of_time_desc: "[Glossary('Shade Realm','game_concept_shade_realm_desc')] connected to Saturn. Any visitors to the Shade Realm of Time are taking a serious risk, as even the slightest movement results in temporal distortions and uncontrolled time travel."
+ umbra_realm_shade_realm_of_time: "Reino Sombra del Tiempo"
+ umbra_realm_shade_realm_of_time_desc: "[Glossary('Reino Sombra','game_concept_shade_realm_desc')] conectado con Saturno. Cualquier visitante al Reino Sombra del Tiempo se arriesga seriamente, ya que incluso el más mínimo movimiento provoca distorsiones temporales y viajes en el tiempo incontrolados."
  shade_realm_of_time_effect_desc: ""
 
- umbra_realm_shade_realm_of_spirit: "Shade Realm of Spirit"
- umbra_realm_shade_realm_of_spirit_desc: "[Glossary('Shade Realm','game_concept_shade_realm_desc')] connected to Uranus. There is no Gauntlet in the Shade Realm of Spirit: spirits and mortals can interact directly. It is also possible for a mage's Avatar to manifest corporeally here and converse with them."
+ umbra_realm_shade_realm_of_spirit: "Reino Sombra del Espíritu"
+ umbra_realm_shade_realm_of_spirit_desc: "[Glossary('Reino Sombra','game_concept_shade_realm_desc')] conectado con Urano. No hay Celosía en el Reino Sombra del Espíritu: los espíritus y los mortales pueden interactuar directamente. También es posible que el Avatar de un mago se manifieste corpóreamente aquí y converse con ellos."
  shade_realm_of_spirit_effect_desc: ""
 
- umbra_realm_shade_realm_of_mind: "Shade Realm of Mind"
- umbra_realm_shade_realm_of_mind_desc: "[Glossary('Shade Realm','game_concept_shade_realm_desc')] connected to Neptune. The nature of the Shade Realm of Mind is, as one might expect, defined by what one expects to find there. It reflects back the visitor's own thoughts and feelings, much like a mirror."
+ umbra_realm_shade_realm_of_mind: "Reino Sombra de la Mente"
+ umbra_realm_shade_realm_of_mind_desc: "[Glossary('Shade Realm','game_concept_shade_realm_desc')] conectado con Neptuno. La naturaleza del Reino Sombra de la Mente es, como cabría esperar, definida por lo que uno espera encontrar allí. Refleja los propios pensamientos y sentimientos del visitante, de forma muy similar a un espejo."
  shade_realm_of_mind_effect_desc: ""
 
- umbra_realm_shade_realm_of_entropy: "Shade Realm of Entropy"
- umbra_realm_shade_realm_of_entropy_desc: "[Glossary('Shade Realm','game_concept_shade_realm_desc')] connected to Pluto. Supposedly here the Great Karmic Wheel of the Universe is laid bare, and it may even have a direct connection to the [UmbraGlossary('shadowlands')]."
+ umbra_realm_shade_realm_of_entropy: "Reino Sombra de la Entropía"
+ umbra_realm_shade_realm_of_entropy_desc: "[Glossary('Shade Realm','game_concept_shade_realm_desc')] conectado con Plutón. Supuestamente aquí la Gran Rueda Kármica del Universo queda al descubierto, e incluso puede tener una conexión directa con el [UmbraGlossary('shadowlands')]."
  shade_realm_of_entropy_effect_desc: ""
 
- umbra_realm_first_horizon: "First Horizon"
- umbra_realm_first_horizon_desc: "The First Horizon lies at the edge of Earth's atmosphere and is studded with Horizon Realms, including the [Glossary('Shade Realm','game_concept_shade_realm_desc')]."
+ umbra_realm_first_horizon: "Primer Horizonte"
+ umbra_realm_first_horizon_desc: "El Primer Horizonte se encuentra en el límite de la atmósfera terrestre y está salpicado de Reinos del Horizonte, incluyendo el [Glossary('Shade Realm','game_concept_shade_realm_desc')]."
  first_horizon_effect_desc: ""
 
- umbra_realm_true_horizon: "True Horizon"
- umbra_realm_true_horizon_desc: "The True Horizon is a vast expanse of the [umbra|E] located between the Near Umbra and Far Umbra. To Sleepers, it manifests as the space between the Sun and the asteroid belt."
+ umbra_realm_true_horizon: "Horizonte Verdadero"
+ umbra_realm_true_horizon_desc: "El Horizonte Verdadero es una vasta extensión de la [umbra|E] situada entre la Umbra Cercana y la Umbra Lejana. Para los Durmientes, se manifiesta como el espacio entre el Sol y el cinturón de asteroides."
  true_horizon_effect_desc: ""
 
  umbra_realm_autochthonia: "Autochthonia"
- umbra_realm_autochthonia_desc: "Autochthonia, referred to as the Realm of Binding by Hermetics, is a Shenti of Stasis controlled by the Technocracy, a gigantic manifestation of the Weaver. Autochthonia exists far into the [UmbraGlossary('true_horizon')], circling the Sun in direct opposition to Earth."
+ umbra_realm_autochthonia_desc: "Autochthonia, conocida como el Reino de la Vinculación por los Herméticos, es un Shenti de la Estasis controlado por la Tecnocracia, una manifestación gigantesca de la Tejedora. Autochthonia existe en las profundidades del [UmbraGlossary('true_horizon')], orbitando el Sol en oposición directa a la Tierra."
  autochthonia_effect_desc: ""
 
  umbra_realm_balador: "Balador"
- umbra_realm_balador_desc: "Balador was a Horizon Realm chantry controlled by the Cult of Ecstasy, where members of the Tradition and their honored guests could engage in a variety of mind-altering pleasures.\n\nThe history of Balador is somewhat hazy, but it existed at the time of the Grand Convocation, when it shocked visitors from other Traditions who only saw the debauchery without the discipline. The only major law on Balador is "As it harm none, do as thou wilt"; a more detailed code of conduct was drafted after one too many visitors violated the first clause of this basic principle."
+ umbra_realm_balador_desc: "Balador era una capilla del Reino del Horizonte controlada por el Culto del Éxtasis, donde los miembros de la Tradición y sus invitados de honor podían entregarse a una variedad de placeres que alteraban la mente.\n\nLa historia de Balador es algo difusa, pero existió en la época de la Gran Convocación, cuando conmocionó a los visitantes de otras Tradiciones que solo veían la libertinaje sin la disciplina. La única ley importante en Balador es «Si no daña a nadie, haz lo que quieras»; se redactó un código de conducta más detallado después de que demasiados visitantes violaran la primera cláusula de este principio básico."
  balador_effect_desc: ""
 
- umbra_realm_gernsback_continuum: "Gernsback Continuum"
- umbra_realm_gernsback_continuum_desc: "The Gernsback Continuum is a Horizon Realm built by the Etherites as an idealized expression of their Paradigm.\n\nThe Realm appears as a glittering, Art Deco city filled with the wonders of science and technology. Moving sidewalks, jetpacks, and angular glass buildings are all features of the Realm. At night, celestial bodies can be seen magnified in the sky."
+ umbra_realm_gernsback_continuum: "Continuo Gernsback"
+ umbra_realm_gernsback_continuum_desc: "El Continuo Gernsback es un Reino del Horizonte construido por los Eteritas como una expresión idealizada de su paradigma.\n\nEl Reino aparece como una reluciente ciudad Art Déco llena de las maravillas de la ciencia y la tecnología. Pasillos móviles, propulsores de reacción y edificios de cristal angulares son características del Reino. Por la noche, se pueden ver los cuerpos celestes magnificados en el cielo."
  gernsback_continuum_effect_desc: ""
 
- umbra_realm_midrealm: "Midrealm"
- umbra_realm_midrealm_desc: "Midrealm is an Umbral Realm at the center of the [umbra|E]. It contains the Alder Bole, a primordial World Tree that formed the Tellurian, and has a lodge where Umbrood of all kinds may meet in peace.\n\nMidrealm is not only very center of the [umbra|E], but also may be the center of Reality. Some scholars believe that it may even be Mount Qaf and/or Correspondence Point."
+ umbra_realm_midrealm: "Entrerreino"
+ umbra_realm_midrealm_desc: "El Entrerreino es un Reino Umbral en el centro de la [umbra|E]. Contiene el Alder Bole, un Árbol del Mundo primordial que formó la Teluria, y tiene una logia donde los Umbroles de todo tipo pueden reunirse en paz.\n\nEl Entrerreino no es solo el centro mismo de la [umbra|E], sino que también puede ser el centro de la Realidad. Algunos estudiosos creen que incluso podría ser el Monte Qaf y/o el Punto de Correspondencia."
  midrealm_effect_desc: ""
 
  umbra_realm_moreauvia: "Moreauvia"
- umbra_realm_moreauvia_desc: "Moreauvia AKA Research Plantation No. 4: Construct Mooreauvia is a Progenitors Horizon Realm Construct wherein the Convention genetically engineers slaves."
+ umbra_realm_moreauvia_desc: "Moreauvia, también conocida como Plantación de Investigación n.º 4: Constructo Moreauvia, es un Reino del Horizonte de los Progenitores donde la Convención realiza ingeniería genética de esclavos."
  moreauvia_effect_desc: ""
 
  umbra_realm_red_donjon: "Red Donjon"
- umbra_realm_red_donjon_desc: "The Auld Covenant of mages has been in existence for nearly 600 years. Although this cabal maintains a sizable Horizon Realm, called the Red Donjon, the mages spend most of their time in and around Edinburgh."
+ umbra_realm_red_donjon_desc: "La Antigua Alianza de magos ha existido durante casi 600 años. Aunque esta cábala mantiene un considerable Reino del Horizonte, llamado Red Donjon, los magos pasan la mayor parte de su tiempo en Edimburgo y sus alrededores."
  red_donjon_effect_desc: ""
  
  umbra_realm_yenosia: "Yenosia"
- umbra_realm_yenosia_desc: "Yenosia is a Horizon Realm. Originally called the Land of Dreams, it hosted a mage chantry called Arcosia consisting mostly of Chœur Céleste pacifists."
+ umbra_realm_yenosia_desc: "Yenosia es un Reino del Horizonte. Originalmente llamada la Tierra de los Sueños, albergaba una capilla de magos llamada Arcosia, compuesta principalmente por pacifistas del Chœur Céleste."
  yenosia_effect_desc: ""
  
  umbra_realm_null_b: "Null-B"
- umbra_realm_null_b_desc: "Null-B was a Construct of the Technocratic Union. It was located at the center of [UmbraGlossary('yenosia')], a Horizon Realm."
+ umbra_realm_null_b_desc: "Null-B era un Constructo de la Unión Tecnocrática. Se encontraba en el centro de [UmbraGlossary('yenosia')], un Reino del Horizonte."
  null_b_effect_desc: ""
  
- umbra_realm_horizon: "Horizon"
- umbra_realm_horizon_desc: "Horizon was the greatest stronghold of the Council of Nine Mystic Traditions, a Horizon Realm where the culture and paradigm of each Tradition existed in relative harmony with the others."
+ umbra_realm_horizon: "Horizonte"
+ umbra_realm_horizon_desc: "Horizonte era la fortaleza más grande del Concilio de las Nueve Tradiciones Místicas, un Reino del Horizonte donde la cultura y el paradigma de cada Tradición existían en relativa armonía con los demás."
  horizon_effect_desc: ""
  
  umbra_realm_concordia: "Concordia"
- umbra_realm_concordia_desc: "Concordia is the main city of [UmbraGlossary('horizon')], and the location of the Council Chamber for the Council of Nine Mystic Traditions."
+ umbra_realm_concordia_desc: "Concordia es la ciudad principal de [UmbraGlossary('horizon')], y la ubicación de la Cámara del Concilio para el Concilio de las Nueve Tradiciones Místicas."
  concordia_effect_desc: ""
  
- umbra_realm_far_horizon: "Far Horizon"
- umbra_realm_far_horizon_desc: "The Far Horizon corresponds roughly to the location of the asteroid belt."
+ umbra_realm_far_horizon: "Horizonte Lejano"
+ umbra_realm_far_horizon_desc: "El Horizonte Lejano corresponde aproximadamente a la ubicación del cinturón de asteroides."
  far_horizon_effect_desc: ""
 
  umbra_realm_deep_umbra: "Umbra profunda"
- umbra_realm_deep_umbra_desc: "Deep Umbra, also called the Deep Universe, is a vast realm outside Earth's Umbral space. It is largely an immense void. From the human perspective, the Deep Umbra is deep space, outer space, or the whole of the universe."
+ umbra_realm_deep_umbra_desc: "La Umbra Profunda, también llamada el Universo Profundo, es un vasto reino fuera del espacio Umbral de la Tierra. Es, en gran medida, un vacío inmenso. Desde la perspectiva humana, la Umbra Profunda es el espacio profundo, el espacio exterior o la totalidad del universo."
  deep_umbra_effect_desc: ""
 
  umbra_realm_malfeas: "Malfeas"
- umbra_realm_malfeas_desc: "Malfeas is the mad Shenti realm of the Wyrm located in the [UmbraGlossary('deep_umbra')]. This is a hellish nightmare world full of every horrible thing imaginable, and a few things so horrible that simply trying to imagine them would drive people insane."
+ umbra_realm_malfeas_desc: "Malfeas es el loco reino Shenti del Wyrm situado en la [UmbraGlossary('deep_umbra')]. Este es un mundo de pesadilla infernal lleno de todas las cosas horribles imaginables, y algunas tan horribles que el simple hecho de intentar imaginarlas volvería loca a la gente."
 
- umbra_realm_central_duchy: "Central Duchy"
- umbra_realm_central_duchy_desc: "A raised circular stone inscribed with a spiral sits in the center of this large, irregularly shaped area. Hugely elaborate and menacing buildings surround the courtyard, each more than a mile high. One of these large structures is the massive Grand Cathedral, with an enormous stained glass window depicting tentacled monstrosities erupting from beneath the earth. This cathedral is dedicated to all of the heads of the Hydra and is the only place in all of [UmbraGlossary('malfeas')] that openly welcomes those loyal to any of these heads."
- central_duchy_effect_desc: "@wyrm_icon![umbra_expedition|E]: Sequentially explore the nine rooms of the Temple Obscura"
+ umbra_realm_central_duchy: "Ducado Central"
+ umbra_realm_central_duchy_desc: "Una piedra circular elevada inscrita con una espiral se encuentra en el centro de esta zona grande e irregularmente formada. Edificios enormemente elaborados y amenazantes rodean el patio, cada uno de más de un kilómetro de altura. Una de estas grandes estructuras es la enorme Gran Catedral, con un inmenso vitral que representa monstruosidades tentaculares surgiendo de debajo de la tierra. Esta catedral está dedicada a todas las cabezas de la Hydra y es el único lugar en todo [UmbraGlossary('malfeas')] que da la bienvenida abiertamente a aquellos leales a cualquiera de estas cabezas."
+ central_duchy_effect_desc: "@wyrm_icon![umbra_expedition|E]: Explora secuencialmente las nueve salas del Templo Obscura"
  
- umbra_realm_maeljin_duchies: "Maeljin Duchies"
- umbra_realm_maeljin_duchies_desc: "A massive wall made of stone and fossilized bone guards the [UmbraGlossary('central_duchy')], and the domains of each of the Maeljin Incarna all adjoin this wall, surrounding it on all sides. The wall around the Central Duchy has treacherous razor sharp iron spikes on top, regularly decorated with the bodies of any who has particularly displeased the Maeljin Incarna whose domain that section of the wall adjoins."
- maeljin_duchies_effect_desc: "@wyrm_icon![umbra_expedition|E]: Obtain [urgetaints_lifestyle|E] [lifestyle_experience|E] if you have the [lifestyle|E]"
+ umbra_realm_maeljin_duchies: "Ducados de Maeljin"
+ umbra_realm_maeljin_duchies_desc: "Un muro masivo hecho de piedra y hueso fosilizado custodia el [UmbraGlossary('central_duchy')], y los dominios de cada uno de los Incarna Maeljin colindan con este muro, rodeándolo por todos lados. El muro que rodea el Ducado Central tiene traicioneras puntas de hierro afiladas como cuchillas en la parte superior, decoradas regularmente con los cuerpos de cualquiera que haya desagradado particularmente al Incarna Maeljin cuyo dominio colinda esa sección del muro."
+ maeljin_duchies_effect_desc: "@wyrm_icon![umbra_expedition|E]: Obtén [urgetaints_lifestyle|E] [lifestyle_experience|E] si tienes el [lifestyle|E]"
 
- umbra_realm_border_duchies: "Border Duchies"
- umbra_realm_border_duchies_desc: "Some portions of [UmbraGlossary('malfeas')] that lie between the [UmbraGlossary('maeljin_duchies')] appear to be barren wastelands, but appearances can be deceptive. These wastelands are actually two other Duchies belonging to Maeljin Incarna who avoid interacting with others of their kind."
- border_duchies_effect_desc: "@wyrm_icon![umbra_expedition|E]: Discover Bane [men_at_arms|E]"
+ umbra_realm_border_duchies: "Ducados Fronterizos"
+ umbra_realm_border_duchies_desc: "Algunas porciones de [UmbraGlossary('malfeas')] que se encuentran entre los [UmbraGlossary('maeljin_duchies')] parecen ser páramos yermos, pero las apariencias pueden engañar. Estos páramos son en realidad otros dos Ducados pertenecientes a Incarna Maeljin que evitan interactuar con otros de su especie."
+ border_duchies_effect_desc: "@wyrm_icon![umbra_expedition|E]: Descubrir un [men_at_arms|E] de la Maldición"
  
- umbra_realm_earth_pit: "Earth Pit"
- umbra_realm_earth_pit_desc: "For werewolves, one of the most dangerous locations in all of [UmbraGlossary('malfeas')] is the Earth Pit. Located in a canyon between one of Knight Entropy's swamps and the desert of the Nameless Angel of Despair, the Earth Pit is a wide region that duplicates the overall features of many of Earth's most pristine and thriving landscapes, but as a poisoned and toxic parody of the originals."
- earth_pit_effect_desc: "@wyrm_icon![umbra_expedition|E]: Find a $glossary_wyrm$ [fetish|E]"
+ umbra_realm_earth_pit: "Foso de la Tierra"
+ umbra_realm_earth_pit_desc: "Para los hombres lobo, uno de los lugares más peligrosos de todo [UmbraGlossary('malfeas')] es el Foso de la Tierra. Situado en un cañón entre uno de los pantanos de Knight Entropía y el desierto del Ángel Sin Nombre de la Desesperación, el Foso de la Tierra es una región vasta que duplica las características generales de muchos de los paisajes más prístinos y prósperos de la Tierra, pero como una parodia envenenada y tóxica de los originales."
+ earth_pit_effect_desc: "@wyrm_icon![umbra_expedition|E]: Encontrar un $glossary_wyrm$ [fetish|E]"
  
- umbra_realm_elemental_duchies: "Elemental Duchies"
- umbra_realm_elemental_duchies_desc: "The outmost edges of [UmbraGlossary('malfeas')] contain the four Elemental Duchies of smog, balefire, sludge, and toxin.\n\nThe palaces of the four elemental Maeljin sit near the center of each Duchy. Destroying one of these castles of corruption might weaken the element, especially if the Garou also permanently destroy the elemental Maeljin."
- elemental_duchies_effect_desc: "@wyrm_icon![umbra_expedition|E]: Find an Elemental Bane Spirit"
+ umbra_realm_elemental_duchies: "Ducados Elementales"
+ umbra_realm_elemental_duchies_desc: "Los confines más remotos de [UmbraGlossary('malfeas')] contienen los cuatro Ducados Elementales de la niebla, el Fuego Infernal, el lodo y la toxina.\n\nLos palacios de los cuatro Maeljin elementales se encuentran cerca del centro de cada Ducado. Destruir uno de estos castillos de corrupción podría debilitar al elemento, especialmente si los Garou también destruyen permanentemente al Maeljin elemental."
+ elemental_duchies_effect_desc: "@wyrm_icon![umbra_expedition|E]: Encontrar un Espíritu de la Maldición Elemental"
  
- umbra_realm_black_spiral_labyrinth: "Black Spiral Labyrinth"
- umbra_realm_ebon_maze: "Ebon Maze"
- umbra_realm_black_spiral_labyrinth_desc: "The Black Spiral Labyrinth, also called the Ebon Maze in the Middle Kingdom, is a spiral labyrinth within the realm of [UmbraGlossary('malfeas')] containing unimaginable horrors of the Wyrm."
- black_spiral_labyrinth_effect_desc: "@wyrm_icon![umbra_expedition|E]: Find a $glossary_wyrm$ [fetish|E]"
+ umbra_realm_black_spiral_labyrinth: "Laberinto de la Espiral Negra"
+ umbra_realm_ebon_maze: "Laberinto de Ébano"
+ umbra_realm_black_spiral_labyrinth_desc: "El Laberinto de la Espiral Negra, también llamado el Laberinto de Ébano en el Reino Medio, es un laberinto en espiral dentro del señorío de [UmbraGlossary('malfeas')] que contiene horrores inimaginables del Wyrm."
+ black_spiral_labyrinth_effect_desc: "@wyrm_icon![umbra_expedition|E]: Encontrar un $glossary_wyrm$ [fetish|E]"
  
- umbra_realm_copernicus_research_center: "Copernicus Research Center"
- umbra_realm_copernicus_research_center_desc: "Copernicus Research Center ("The Cop") is a massive, translucent Dyson sphere controlled by the Void Engineers. It surrounds one of the stars of Alpha Centauri and extends to one AU in radius."
+ umbra_realm_copernicus_research_center: "Centro de Investigación Copérnico"
+ umbra_realm_copernicus_research_center_desc: "El Centro de Investigación Copérnico («The Cop») es una enorme esfera de Dyson translúcida controlada por los Ingenieros del Vacío. Rodea a una de las estrellas de Alfa Centauri y se extiende hasta una UA de radio."
  copernicus_research_center_effect_desc: ""
  
- umbra_realm_first_city: "First City"
- umbra_realm_first_city_desc: "The First City, also known as The City of Enoch among other names, is recognized by Noddist scholars to be the first city of Cainite mythology as documented by the Book of Nod."
- first_city_effect_desc: "Stationed character gains minor [prestige|E] every #V 3#! months."
+ umbra_realm_first_city: "Primera Ciudad"
+ umbra_realm_first_city_desc: "La Primera Ciudad, también conocida como la Ciudad de Enoc entre otros nombres, es reconocida por los eruditos nodistas como la primera ciudad de la mitología Cainita, tal como se documenta en el Libro de Nod."
+ first_city_effect_desc: "El personaje estacionado gana un poco de [prestige|E] cada #V 3#! meses."
  
- umbra_realm_mirror_zone: "Mirror Zone"
- umbra_realm_mirror_zone_desc: "The mysterious Mirror Zone is fond of showing its "guests" what could have been."
+ umbra_realm_mirror_zone: "Zona Espejo"
+ umbra_realm_mirror_zone_desc: "La misteriosa Zona Espejo disfruta mostrando a sus «huéspedes» lo que podría haber sido."
  mirror_zone_effect_desc: "[umbra_aptitude|E]: [grace_i]#P +25%#!"
  
- umbra_realm_null_zone: "Paths of the Wyck"
- umbra_realm_null_zone_desc: "The Paths of the Wyck are a maze of small roads leading to most realms of the [umbra|E]. Orientation here is difficult, as the roads are always shifting and all look the same."
+ umbra_realm_null_zone: "Caminos de Wyck"
+ umbra_realm_null_zone_desc: "Los Caminos de Wyck son un laberinto de pequeños senderos que conducen a la mayoría de los señoríos de la [umbra|E]. Orientarse aquí es difícil, ya que los caminos siempre están cambiando y todos parecen iguales."
  null_zone_effect_desc: "[umbra_aptitude|E]: [grace_i]#P +25%#!"
 
  umbra_realm_neter_khertet: "Neter-khertet"
- umbra_realm_neter_khertet_desc: "Before the foundation of the [UmbraGlossary('dark_kingdom_of_sand')], the Egyptian dead dwelt within Neter-Khertet, the "divine subterranean place"."
+ umbra_realm_neter_khertet_desc: "Antes de la fundación del [UmbraGlossary('dark_kingdom_of_sand')], los muertos egipcios habitaban en Neter-Khertet, el «lugar subterráneo divino»."
  neter_khertet_effect_desc: ""
 
  umbra_realm_kakuri: "Kakuri"
  umbra_realm_kakuri_desc: "También conocido como el Reino de la Noche, Kakuri es un [UmbraGlossaryLocalized('yomi_wan','Infierno Yomi')] controlado por el [Glossary('Rey Yama','podgloss.yamaking')] [Glossary('Emma-O','podgloss.emmao')].\nKakuri es un dominio de aspecto Yin, un vacío de hielo y nieve sin luz, sin alegría y sin honor.\nComo dominio ancestral de la muerte de los Ainu, Kakuri tiene una salida secreta para los adoradores originales de [Glossary('Emma-O','podgloss.emmao')]."
 
- kakuri_effect_desc: "Can recruit [GetMaA('shikome_assassin').GetName] as [men_at_arms|E]\nCan recruit [GetMaA('kumo_huntress').GetName] as [men_at_arms|E]\n$UMBRA_INVESTMENTS_OF_SOUL$"
+ kakuri_effect_desc: "Puede reclutar a [GetMaA('shikome_assassin').GetName] como [men_at_arms|E]\nPuede reclutar a [GetMaA('kumo_huntress').GetName] como [men_at_arms|E]\n$UMBRA_INVESTMENTS_OF_SOUL$"
 
- umbra_realm_wicked_city: "Wicked City"
- umbra_realm_wicked_city_desc: "The Wicked City is a nightmare of cyberpunk, demented Feng Shui and soulcrushing management theories.\nIt is a place where all the worst elements of greed and capitalism meet in Yomi's atmosphere of corruption. It is also one of the fastest growing Hells within Yomi Wan."
- wicked_city_effect_desc: "Can recruit [GetMaA('shinjuku_undercity_scavengers').GetName] as [men_at_arms|E]\nCan recruit [GetMaA('mikaboshis_demons_of_iron_and_violence').GetName] as [men_at_arms|E]\n$UMBRA_INVESTMENTS_OF_SOUL$"
+ umbra_realm_wicked_city: "Ciudad Perversa"
+ umbra_realm_wicked_city_desc: "La Ciudad Perversa es una pesadilla de cyberpunk, Feng Shui demencial y teorías de gestión que te destrozan el alma.\nEs un lugar donde todos los peores elementos de la codicia y el capitalismo se encuentran en la atmósfera de corrupción de Yomi. Es también uno de los Infiernos de más rápido crecimiento dentro de Yomi Wan."
+ wicked_city_effect_desc: "Puede reclutar a [GetMaA('shinjuku_undercity_scavengers').GetName] como [men_at_arms|E]\nPuede reclutar a [GetMaA('mikaboshis_demons_of_iron_and_violence').GetName] como [men_at_arms|E]\n$UMBRA_INVESTMENTS_OF_SOUL$"
 
- umbra_realm_hell_of_burrowing_maggots: "Hell of Burrowing Maggots"
- umbra_realm_hell_of_burrowing_maggots_desc: "The Hell of Burrowing Maggots. Controlled by Rangda, mistress of pestilence. The Hell of Burrowing Maggots is pretty much what it sounds like. It's a hell. It's got Maggots. Lots of 'em. All shapes and sizes. You're lunch."
- hell_of_burrowing_maggots_effect_desc: "Can recruit [GetMaA('raksha_of_ravana').GetName] as [men_at_arms|E]\n$UMBRA_INVESTMENTS_OF_SOUL$"
+ umbra_realm_hell_of_burrowing_maggots: "Infierno de las Larvas Cavadoras"
+ umbra_realm_hell_of_burrowing_maggots_desc: "El Infierno de las Larvas Cavadoras. Controlado por Rangda, señora de la pestilencia. El Infierno de las Larvas Cavadoras es básicamente lo que parece. Es un infierno. Tiene larvas. Muchísimas. De todas las formas y tamaños. Tú eres el almuerzo."
+ hell_of_burrowing_maggots_effect_desc: "Puede reclutar a [GetMaA('raksha_of_ravana').GetName] como [men_at_arms|E]\n$UMBRA_INVESTMENTS_OF_SOUL$"
 
- umbra_realm_hell_of_being_skinned_alive: "Hell of Being Skinned Alive"
- umbra_realm_hell_of_being_skinned_alive_desc: "The Hell of Being Skinned Alive. The domain of [Glossary('Tou Mu','podgloss.toumu')]. The Hell of Being Skinned Alive is a desert enduring constant winds of fast, fine, lacerating sand. Unprotected beings are flensed in minutes. [Glossary('Tou Mu','podgloss.toumu')] herself rules from a palace in low orbit decorated with the impaled (and living) bodies of those who have annoyed her."
- hell_of_being_skinned_alive_effect_desc: "Can recruit [GetMaA('the_children_of_tou_mou').GetName] as [men_at_arms|E]\n$UMBRA_INVESTMENTS_OF_SOUL$"
+ umbra_realm_hell_of_being_skinned_alive: "Infierno de ser Desollado Vivo"
+ umbra_realm_hell_of_being_skinned_alive_desc: "El Infierno de ser Desollado Vivo. El dominio de [Glossary('Tou Mu','podgloss.toumu')]. El Infierno de ser Desollado Vivo es un desierto que soporta vientos constantes de arena fina, rápida y lacerante. Los seres desprotegidos son desollados en cuestión de minutos. La propia [Glossary('Tou Mu','podgloss.toumu')] gobierna desde un palacio en órbita baja decorado con los cuerpos empalados (y vivos) de aquellos que la han molestado."
+ hell_of_being_skinned_alive_effect_desc: "Puede reclutar a [GetMaA('the_children_of_tou_mou').GetName] como [men_at_arms|E]\n$UMBRA_INVESTMENTS_OF_SOUL$"
 
- umbra_realm_hell_of_boiling_oil: "Hell of Boiling Oil"
- umbra_realm_hell_of_boiling_oil_desc: "The Hell of Boiling Oil. Actually it's fat. Deliciously rendered human fat."
- hell_of_boiling_oil_effect_desc: "Can recruit [GetMaA('fat_striders_of_the_hell_of_boiling_oil').GetName] as [men_at_arms|E]\n$UMBRA_INVESTMENTS_OF_SOUL$"
+ umbra_realm_hell_of_boiling_oil: "Infierno del Aceite Hirviendo"
+ umbra_realm_hell_of_boiling_oil_desc: "El Infierno del Aceite Hirviendo. En realidad es grasa. Grasa humana deliciosamente clarificada."
+ hell_of_boiling_oil_effect_desc: "Puede reclutar a [GetMaA('fat_striders_of_the_hell_of_boiling_oil').GetName] como [men_at_arms|E]\n$UMBRA_INVESTMENTS_OF_SOUL$"
 
- umbra_realm_hell_of_bitter_truth: "Hell of Bitter Truth"
- umbra_realm_hell_of_bitter_truth_desc: "The Hell of Bitter Truth is the destination for religious zealots. While the Hell of Bitter Truth offers no physical torments, for these religious people, the idea that they were unworthy of Heaven or -even worse- that their religion was wrong, serves as a constant source of misery. Hen Tian's demon servants remind the inmates regularly that they were unworthy of witnessing the gods, and sometimes offer a soul ways to "redeem" themselves to reach the domain of their deities. Naturally, all of these quests are tricks that often involve service to the [Glossary('Yama King','podgloss.yamaking')], spiralling the victims even deeper into despair once they learn the truth."
+ umbra_realm_hell_of_bitter_truth: "Infierno de la Verdad Amarga"
+ umbra_realm_hell_of_bitter_truth_desc: "El Infierno de la Verdad Amarga es el destino para los fanáticos religiosos. Aunque el Infierno de la Verdad Amarga no ofrece tormentos físicos, para estas personas religiosas, la idea de que no fueron dignas del Cielo o —peor aún— que su religión era errónea, sirve como una fuente constante de miseria. Los sirvientes demoníacos de Hen Tian recuerdan regularmente a los internos que no fueron dignos de presenciar a los dioses, y a veces ofrecen a las almas formas de «redimirse» para alcanzar el dominio de sus deidades. Naturalmente, todas estas misiones son trampas que a menudo implican servir al [Glossary('Yama King','podgloss.yamaking')], hundiendo a las víctimas aún más profundamente en la desesperación una vez que conocen la verdad."
  hell_of_bitter_truth_effect_desc: "$UMBRA_INVESTMENTS_OF_SOUL$"
 
- umbra_realm_hell_of_spiked_chains: "Hell of Spiked Chains"
- umbra_realm_hell_of_spiked_chains_desc: "The Hell of Spiked Chains was a vast, flat plain inhabited by the souls of mortals that had died in the steppes. Each of these souls were assigned to a tribe at random by the [Glossary('Yama King','podgloss.yamaking')], who periodically chose one of these tribes as his favoured. All other tribes were stricken of one of their senses (or limbs) and had to obey the favoured tribe in all things. If they disobeyed, or one of the Favoured felt like it, they were put to the tortures of the Spiked Chain. Victims were bound with [UmbraGlossaryLocalized('yomi_wan','Yomi Hell')]-forged thorned iron chains and hung from the stalactites of a great cave for a unspecified period of time. Each time the victims struggled, the thorns would bite themselves deeper into their essence, feeding the [Glossary('Yama King','podgloss.yamaking')]."
+ umbra_realm_hell_of_spiked_chains: "Infierno de las Cadenas con Púas"
+ umbra_realm_hell_of_spiked_chains_desc: "El Infierno de las Cadenas con Púas era una vasta llanura habitada por las almas de los mortales que habían muerto en las estepas. Cada una de estas almas era asignada a una tribu al azar por el [Glossary('Yama King','podgloss.yamaking')], quien periódicamente elegía a una de estas tribus como su favorita. Todas las demás tribus eran privadas de uno de sus sentidos (o extremidades) y debían obedecer a la tribu favorecida en todo. Si desobedecían, o si a uno de los Favorecidos le apetecía, eran sometidos a las torturas de la Cadena con Púas. Las víctimas eran atadas con cadenas de hierro con espinas forjadas en el [UmbraGlossaryLocalized('yomi_wan','Yomi Hell')] y colgadas de las estalactitas de una gran cueva durante un periodo de tiempo indeterminado. Cada vez que las víctimas forcejeaban, las espinas se clavaban más profundamente en su esencia, alimentando al [Glossary('Yama King','podgloss.yamaking')]."
  hell_of_spiked_chains_effect_desc: "$UMBRA_INVESTMENTS_OF_SOUL$"
 
- umbra_realm_qlippoth: "Qlippoth"
- umbra_realm_qlippoth_desc: "The Qlippoth are rejected worlds that contain a half-made universe inhabited by creatures from before the creation of Tapestry.\n\nThe essence of a Qlippah is not necessarily evil, but dangerous to mankind and the universe they have grown accustomed to. Some Qlippoth contain absolute aspects of God, which would render free will impossible and would allow no evolution of life, while others contain even more esoteric concepts that are too alien for the human mind to grasp."
+ umbra_realm_qlippoth: "Qlifot"
+ umbra_realm_qlippoth_desc: "Los Qlifot son mundos rechazados que contienen un universo a medio hacer habitado por criaturas de antes de la creación del Tapiz.\n\nLa Esencia de un Qlippah no es necesariamente malvada, pero sí peligrosa para la humanidad y el universo al que se han acostumbrado. Algunos Qlifot contienen aspectos absolutos de Dios, lo que haría imposible el libre albedrío y no permitiría la evolución de la vida, mientras que otros contienen conceptos aún más esotéricos que resultan demasiado ajenos para que la mente humana pueda comprenderlos."
  qlippoth_effect_desc: ""
 
  umbra_realm_doissetep: "Doissetep"
- umbra_realm_doissetep_desc: "Doissetep is a massive castle up to a mile in diameter and thirty stories tall. Over its many centuries of existence new wings, levels, and additions have been made, giving it an eclectic appearance. Countless chambers and hallways comprise the upper portion of the chantry, while below a twisted nest of tunnels lead to various catacombs in the mountain. Secret passageways link many of the rooms, enabling knowledgeable residents to travel unnoticed. The central part is a cyclopean structure with oriental features."
+ umbra_realm_doissetep_desc: "Doissetep es un castillo masivo de hasta una milla de diámetro y treinta pisos de altura. A lo largo de sus muchos siglos de existencia se han añadido nuevas alas, niveles y ampliaciones, dándole un aspecto ecléctico. Innumerables cámaras y pasillos conforman la parte superior de la Capilla, mientras que debajo, un retorcido nido de túneles conduce a varias catacumbas en la montaña. Pasadizos secretos conectan muchas de las habitaciones, permitiendo que los residentes conocedores se desplacen sin ser vistos. La parte central es una estructura ciclópea con rasgos orientales."
  doissetep_effect_desc: ""
 
- umbra_realm_hive_realm: "Hive Realm"
- umbra_realm_hive_realm_desc: "Hive Realms are the result of the Avatar Storm. The Storm ripped some Realms along the membrane with it and fused them to new, disturbing Realms that dot the [umbra|E]. Every mage who tries to access a Realm has good chances of contacting a Hive Realm instead. Most are comprised of blood-red, crumbling stone and have a very thin atmosphere that makes breathing hard."
+ umbra_realm_hive_realm: "Señorío Colmena"
+ umbra_realm_hive_realm_desc: "Los Señoríos Colmena son el resultado de la Tormenta de Avatares. La Tormenta desgarró algunos Señoríos junto con la membrana y los fusionó con nuevos y perturbadores Señoríos que salpican la [umbra|E]. Cada mago que intenta acceder a un Señorío tiene buenas probabilidades de contactar con un Señorío Colmena en su lugar. La mayoría está compuesta por piedra carmesí y desmoronada, y tiene una atmósfera muy tenue que dificulta la respiración."
  hive_realm_effect_desc: ""
