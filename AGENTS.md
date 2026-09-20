@@ -30,7 +30,7 @@ Este repositorio es un mod de traducción. Tu trabajo es traducir o revisar text
 | `README.md` | Explicación completa del flujo (para personas) |
 | `work_queue/` | Cola de lotes: `todo/` (por hacer), `out/` (tus respuestas), `manual/` (fallidos) |
 
-Prefijos de lote: **U** = actualización · **B** = pendientes · **R** = revisión · **N** = nombres · **M** = textos devueltos de `manual/`.
+Prefijos de lote: **U** = actualización · **B** = pendientes · **R** = revisión · **N** = nombres · **S** = estilo · **M** = textos devueltos de `manual/`.
 
 **No decidas tú el orden ni qué contenido es más importante.** `batch` ya emite los lotes en este orden: primero lo general y compartido, luego vampiro, hombre lobo, cazadores e inquisición y, por último, el resto de líneas (wraith, fae, momias, kuei-jin, demonios…). Dentro de cada línea van antes los textos de interfaz y los cortos que se ven siempre, y los eventos largos al final. Se configura en `splat_priority` y `priority` de `tools/config.json`; si el usuario quiere otro orden, lo cambia ahí. Tradúcelos tal como salgan.
 
@@ -56,6 +56,11 @@ También se pedirá como «los nuevos archivos», «lo nuevo», «la actualizaci
 2. `python tools/pod.py check [--rule R] [--files …]`, con R = `tokens`, `custom`, `spaces`, `punct`, `glossary`, `display` o `english`.
 3. `python tools/pod.py batch --mode review --rule R [--files …] [--limit N]`
 4. El bucle con prefijo **R**. Devuelve solo las líneas que cambies: lo que dejes igual se anota como revisado y no se te volverá a proponer mientras ese texto no cambie.
+
+### «Naturaliza el texto» / «mejora el estilo»
+Pasada literaria sobre textos **ya traducidos y correctos**: quitar calcos del inglés, soltar la frase y afinar el registro. No busca errores (eso es la revisión) y solo entran los textos largos, donde la prosa se nota.
+1. `python tools/pod.py batch --mode style [--files "<patrón>"] [--min-chars N] [--limit N]`
+2. El bucle con prefijo **S** (sección «Modo ESTILO» de `tools/TRADUCIR_LOTE.md`). Devuelve solo las líneas que mejores; lo que dejes igual se anota como revisado y no vuelve a salir. Ante la duda, no toques: cada cambio arriesga una marca del juego.
 
 ### «Adapta los nombres de personajes y dinastías»
 1. `python tools/pod.py batch --mode names`

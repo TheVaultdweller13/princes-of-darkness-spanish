@@ -353,6 +353,39 @@ def pending_items(files=None, keep=None):
                 yield rel, l["key"], l["occ"], l["value"]
 
 
+def style_items(files=None, min_chars=None):
+    """Candidatos a una pasada de estilo: textos ya traducidos y lo bastante largos como para que
+    la prosa importe. No hay chequeo que detecte un texto soso, así que el criterio es el tamaño:
+    los rótulos y las frases de interfaz no ganan nada con esto y sí se arriesgan a perder el tono.
+
+    Cada texto se propone una sola vez: si el agente lo deja igual, `apply` lo anota en reviewed.tsv
+    con la regla 'style' y no vuelve a salir mientras no cambie."""
+    min_chars = CFG.get("style_min_chars", 180) if min_chars is None else min_chars
+    revisado = load_reviewed()
+    busy = queued_ids()
+    for rel in sorted(en_files(), key=batch_order):
+        if files and not match_any(rel, files):
+            continue
+        en, es = load_pair(rel)
+        if not es or es.header != "l_spanish":
+            continue
+        idx = es.index()
+        for l in en.kvs():
+            e = idx.get((l["key"], l["occ"]))
+            if not e:
+                continue
+            sv = e["value"]
+            if sv == l["value"] or not translatable(sv):
+                continue  # sin traducir, o a propósito igual que el inglés
+            if len(strip_markup(sv)) < min_chars:
+                continue
+            if (rel, l["key"], l["occ"]) in busy:
+                continue
+            if revisado.get((rel, l["key"], l["occ"], "style")) in (huella(sv), ALWAYS_REVIEWED):
+                continue
+            yield {"rel": rel, "key": l["key"], "occ": l["occ"], "en": l["value"], "es": sv, "rules": ["style"]}
+
+
 def queued_ids():
     ids = set()
     for f in (Q / "index").glob("*.json") if (Q / "index").exists() else []:
@@ -607,8 +640,8 @@ def batch_order(rel):
     return (splat_of(rel)[0], cat)
 
 
-PREFIX = {"pending": "B", "update": "U", "review": "R", "names": "N", "manual": "M"}
-PREFIXES = "BURNM"  # B pendientes · U actualización · R revisión · N nombres · M devueltos de manual/
+PREFIX = {"pending": "B", "update": "U", "review": "R", "names": "N", "manual": "M", "style": "S"}
+PREFIXES = "BURNMS"  # B pendientes · U actualización · R revisión · N nombres · M devueltos de manual/ · S estilo
 
 
 def next_batch_name(prefix="B"):
@@ -629,6 +662,14 @@ HEAD_NAMES = """# LOTE {name} · MODO NOMBRES · {n} elementos
 #         (si no cambias ninguno, escribe una única línea:  # sin cambios)
 # Luego ejecuta:  python tools/pod.py apply {name}
 """
+HEAD_STYLE = """# LOTE {name} · MODO ESTILO · {n} elementos
+# Lee tools/TRADUCIR_LOTE.md (sección «Modo ESTILO»). La traducción ES ya es correcta: no la
+# re-traduzcas ni cambies lo que dice. Solo suéltala: quita calcos del inglés, ordena la frase
+# como se diría en castellano y dale el registro literario y sombrío de la ambientación.
+# Salida: crea work_queue/out/{name}.txt SOLO con las líneas que mejores:  <número> = <texto mejorado>
+#         (lo que ya suene natural, déjalo fuera; si no cambias nada:  # sin cambios)
+# Luego ejecuta:  python tools/pod.py apply {name}
+"""
 HEAD_REVIEW = """# LOTE {name} · MODO REVISAR ({rule}) · {n} elementos
 # Lee tools/TRADUCIR_LOTE.md si no lo has leído. Corrige la traducción ES solo si hace falta.
 # Salida: crea work_queue/out/{name}.txt SOLO con las líneas que cambies:  <número> = <traducción corregida>
@@ -641,7 +682,8 @@ def write_batch(name, mode, items, gloss, rule=""):
     """items: lista de dicts {en, targets, key, rel, prev_en?, prev_es?, es?, why?}"""
     for d in ("todo", "index", "out", "done"):
         (Q / d).mkdir(parents=True, exist_ok=True)
-    head = {"pending": HEAD_PENDING, "review": HEAD_REVIEW, "names": HEAD_NAMES}[mode].format(name=name, n=len(items), rule=rule)
+    head = {"pending": HEAD_PENDING, "review": HEAD_REVIEW, "names": HEAD_NAMES,
+            "style": HEAD_STYLE}[mode].format(name=name, n=len(items), rule=rule)
     g = glossary_for([i["en"] for i in items], gloss) if mode != "names" else []
     body = [head]
     if g:
@@ -665,7 +707,7 @@ def write_batch(name, mode, items, gloss, rule=""):
             body.append(f"EN-ANTIGUO: {it['prev_en']}")
             body.append(f"ES-ANTIGUO: {it['prev_es']}")
         body.append(f"EN: {it['en']}")
-        if mode == "review":
+        if mode in ("review", "style"):
             body.append(f"ES: {it['es']}")
         index[str(n)] = {"en": it["en"], "expect": it["es"] if mode != "pending" else it["en"],
                          "targets": it["targets"], "tries": it.get("tries", 0),
@@ -719,8 +761,9 @@ def _batch(a):
                 g = groups.setdefault(l["value"], {"rel": rel, "key": l["key"], "en": l["value"], "es": l["value"], "targets": []})
                 g["targets"].append([rel, l["key"], l["occ"]])
         items = list(groups.values())
-    elif a.mode == "review":
-        items = [dict(it, targets=[[it["rel"], it["key"], it["occ"]]]) for it in check_items(files, a.rule)]
+    elif a.mode in ("review", "style"):
+        crudos = check_items(files, a.rule) if a.mode == "review" else style_items(files, a.min_chars)
+        items = [dict(it, targets=[[it["rel"], it["key"], it["occ"]]]) for it in crudos]
         items = [i for i in items if tuple(i["targets"][0]) not in queued_ids()]
     else:
         pend = list(pending_items(files))
@@ -860,7 +903,7 @@ def _apply(a):
                 assign[tuple(t)] = (it["expect"], es)
             if meta["mode"] == "pending" and es == it["en"]:
                 keep.extend(t[1] for t in it["targets"])
-        if revisadas and meta["mode"] in ("review", "names"):
+        if revisadas and meta["mode"] in ("review", "names", "style"):
             n_rev = add_reviewed(revisadas)
             if n_rev:
                 print(f"{name}: {n_rev} revisiones anotadas en tools/{REVIEWED}")
@@ -1493,7 +1536,8 @@ def main():
     sp = ap.add_subparsers(dest="cmd", required=True)
     s = sp.add_parser("status"); s.add_argument("--top", type=int, default=25)
     s = sp.add_parser("sync"); s.add_argument("--base"); s.add_argument("--dry-run", action="store_true"); s.add_argument("--prune", action="store_true")
-    s = sp.add_parser("batch"); s.add_argument("--mode", choices=["pending", "review", "names"], default="pending")
+    s = sp.add_parser("batch"); s.add_argument("--mode", choices=["pending", "review", "names", "style"], default="pending")
+    s.add_argument("--min-chars", type=int, help="modo estilo: longitud mínima del texto español (180 por defecto)")
     s.add_argument("--rule", choices=RULES)
     s.add_argument("--files"); s.add_argument("--limit", type=int); s.add_argument("--no-tm", action="store_true")
     s.add_argument("--scope", choices=["all", "update"], default="all", help="update = solo lo que trajo el último sync")

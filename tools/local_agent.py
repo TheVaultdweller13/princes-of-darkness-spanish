@@ -124,7 +124,7 @@ FORMATO DE RESPUESTA (obligatorio):
 - Responde SOLO con líneas «<número> = <texto>», una por elemento, en el orden del lote.
 - Nada más: sin explicaciones, sin comillas alrededor, sin bloques de código, sin repetir el inglés.
 - Cada traducción en UNA sola línea: los saltos de línea del juego se escriben literalmente como \\n.
-- En MODO REVISAR o MODO NOMBRES escribe solo las líneas que cambies; si no cambias ninguna, responde «# sin cambios».
+- En MODO REVISAR, MODO ESTILO o MODO NOMBRES escribe solo las líneas que cambies; si no cambias ninguna, responde «# sin cambios».
 - Si el lote trae «MOTIVO: RECHAZADO», corrige exactamente lo que dice el motivo.
 
 A continuación, las reglas del proyecto:
@@ -266,7 +266,7 @@ def run_batches(a, prefix, limit, system, only=None):
             out = pod("setaside", name, "--reason", str(e)[:120], *(["--split"] if n_items > 1 else [])).rstrip()
             print(out)
             if "dividido en" in out:
-                pendientes = re.findall(r"\b([UBRNM]\d{4})\b", out.split("dividido en", 1)[1])[:2] + pendientes
+                pendientes = re.findall(r"\b([UBRNMS]\d{4})\b", out.split("dividido en", 1)[1])[:2] + pendientes
             a.set_aside = getattr(a, "set_aside", 0) + 1
             if failures_in_a_row >= MAX_CONSECUTIVE_FAILURES:
                 print(f"✘ {failures_in_a_row} lotes seguidos han fallado: parece un problema general, no de un lote. Me detengo.")
@@ -283,7 +283,7 @@ def run_batches(a, prefix, limit, system, only=None):
         print(aplicado)
         # los reintentos de líneas rechazadas son continuación de este lote: se hacen ahora, no se
         # quedan en la cola engordándola para la próxima ejecución
-        pendientes += re.findall(r"reintento en lote ([UBRNM]\d{4})", aplicado)
+        pendientes += re.findall(r"reintento en lote ([UBRNMS]\d{4})", aplicado)
         done += 1
     return done
 
@@ -311,7 +311,7 @@ def close(a, system):
 
 def main():
     p = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    p.add_argument("--prefix", choices=["U", "B", "R", "N", "M"], help="prefijo de los lotes (por defecto, el siguiente que haya)")
+    p.add_argument("--prefix", choices=["U", "B", "R", "N", "M", "S"], help="prefijo de los lotes (por defecto, el siguiente que haya)")
     p.add_argument("--limit", type=int, help="máximo de lotes en esta ejecución")
     p.add_argument("--close", action="store_true", help="hacer «el cierre» de AGENTS.md al terminar")
     p.add_argument("--close-limit", type=int, default=10, help="máximo de lotes de corrección que puede crear el cierre")

@@ -72,6 +72,22 @@ Para adjetivos o artículos que dependen del sexo de un personaje, puedes AÑADI
 
 Si no sabes a qué personaje se refiere, redacta la frase de forma neutra en vez de adivinar.
 
+## Modo ESTILO
+
+Lotes de textos **ya traducidos y correctos**. No es una revisión de errores ni una nueva traducción: es la pasada de estilo, para que dejen de sonar a traducción y suenen a novela.
+
+- **No cambies lo que dice.** Mismo contenido, mismos datos, mismo tono del inglés. Si para mejorar la frase tienes que cambiar el sentido, déjala como está.
+- **Respeta el glosario y las marcas del juego** igual que siempre: los `[...]`, `$...$`, `#bold ... #!` y `
+` se copian exactos. Un texto de estilo que pierde una marca se rechaza.
+- Qué arreglar, por orden de importancia:
+  - **Calcos del inglés:** posesivos de más («se llevó la mano a su espada» → «se llevó la mano a la espada»), gerundios ingleses («siendo un vampiro, sabes…» → «como vampiro, sabes…»), «el hecho de que», pasivas que en castellano piden activa o impersonal («la ciudad fue atacada por los Tzimisce» → «los Tzimisce atacaron la ciudad»).
+  - **Orden de la frase:** en castellano el verbo no espera al final; reparte las subordinadas y rompe las frases kilométricas en dos si se leen mal.
+  - **Repeticiones y muletillas:** «entonces», «realmente», «ciertamente», el mismo verbo tres veces en dos líneas.
+  - **Registro:** literario y sombrío, no coloquial ni burocrático. «Consigues información sobre…» → «Averiguas…». Nada de anacronismos modernos.
+  - **Naturalidad del diálogo:** que suene a alguien hablando, no a subtítulo.
+- **Si ya suena bien, no lo toques.** Devolver un texto reescrito solo por reescribirlo es peor que dejarlo: cada cambio es riesgo. Un lote donde solo mejoras tres de ocho textos es un buen lote.
+- Los textos que dejes fuera se anotan como revisados y no se te volverán a proponer mientras no cambien.
+
 ## Modo NOMBRES
 
 Lotes con nombres de personajes y de dinastías. Por defecto NO se traducen. Devuelve solo los que tienen una forma española consolidada, normalmente personajes históricos, míticos o bíblicos:
