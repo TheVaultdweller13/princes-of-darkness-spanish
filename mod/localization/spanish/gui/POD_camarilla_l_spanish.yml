@@ -27,8 +27,8 @@
   NOT_I_HAVE_HIGHER_CAMARILLA_STATUS_TRIGGER: "Tu #bold no#! tienes un estatus superior al de [TARGET_CHARACTER.GetFirstName] ([TARGET_CHARACTER.Custom('CamarillaStatus')])."
   IS_IN_RED_LIST_TRIGGER: "Estás en la Lista Roja."
   IS_NOT_IN_RED_LIST_TRIGGER: "#bold No#! estás en la Lista Roja."
-  IS_IN_INNER_CIRCLE_TRIGGER: "Eres miembro del [Glossary('Inner Circle','game_concept_inner_circle_desc')]."
-  IS_NOT_IN_INNER_CIRCLE_TRIGGER: "#bold No#! eres miembro del [Glossary('Inner Circle','game_concept_inner_circle_desc')]."
+  IS_IN_INNER_CIRCLE_TRIGGER: "Eres miembro del [Glossary('Círculo Interno','game_concept_inner_circle_desc')]."
+  IS_NOT_IN_INNER_CIRCLE_TRIGGER: "#bold No#! eres miembro del [Glossary('Círculo Interno','game_concept_inner_circle_desc')]."
   IS_JUSTICAR_TRIGGER: "Eres un [Glossary('Justicar','game_concept_justicar_desc')]."
   IS_NOT_JUSTICAR_TRIGGER: "#bold No#! eres un [Glossary('Justicar','game_concept_justicar_desc')]."
   
@@ -57,4 +57,4 @@
   set_justicar_notification: "Nuevo Justicar"
   set_justicar_notification_tooltip: "[new_justicar.GetShortUIName|U] obtuvo el estatus de [Glossary('Justicar','game_concept_justicar_desc')]."
   set_inner_circle_notification: "Nuevo Círculo Interior"
-  set_inner_circle_notification_tooltip: "[new_inner_circle.GetShortUIName|U] obtuvo el estatus de miembro del [Glossary('Inner Circle','game_concept_inner_circle_desc')]."
+  set_inner_circle_notification_tooltip: "[new_inner_circle.GetShortUIName|U] obtuvo el estatus de miembro del [Glossary('Círculo Interno','game_concept_inner_circle_desc')]."

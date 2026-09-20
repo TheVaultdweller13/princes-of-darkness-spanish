@@ -23,8 +23,8 @@
  monthly_dark_arcanoi_lifestyle_xp_gain_mult: "[experience|E] mensual de Arcanos Oscuros [lifestyle|E]"
  
  misc_arcanoi_lifestyle_name: "Arcanos misceláneos"
- misc_arcanoi_lifestyle_desc: "Centrarse en las habilidades utilizadas por los Resurgidos, o wraiths que han logrado regresar a sus antiguos cuerpos, y en los Arcanos de los wraiths de otros [Glossary('Dark Kingdom','game_concept_dark_kingdom_desc')]."
- misc_arcanoi_lifestyle_highlight_desc: "Debido a tu [Glossary('Dark Kingdom','game_concept_dark_kingdom_desc')] [government|E], ganas un #P 50%#! más de [experience|E] en este Estilo de vida."
+ misc_arcanoi_lifestyle_desc: "Centrarse en las habilidades utilizadas por los Resurgidos, o wraiths que han logrado regresar a sus antiguos cuerpos, y en los Arcanos de los wraiths de otros [Glossary('Reino Oscuro','game_concept_dark_kingdom_desc')]."
+ misc_arcanoi_lifestyle_highlight_desc: "Debido a tu [Glossary('Reino Oscuro','game_concept_dark_kingdom_desc')] [government|E], ganas un #P 50%#! más de [experience|E] en este Estilo de vida."
  monthly_misc_arcanoi_lifestyle_xp_gain_mult: "[experience|E] mensual de Arcanos misceláneos [lifestyle|E]"
  
  arcanos_argos_focus: "Enfoque de Argos"
@@ -95,7 +95,7 @@
  
  arcanos_flux_focus: "Enfoque de Flujo"
  arcanos_flux_focus_modifier: "[GetFocus('arcanos_flux_focus').GetName]"
- arcanos_flux_focus_desc: "Afecta a la estructura y reacción de la materia en las [Glossary('Skinlands','game_concept_skinlands_desc')], y también afecta al funcionamiento de las reliquias de los wraiths."
+ arcanos_flux_focus_desc: "Afecta a la estructura y reacción de la materia en las [Glossary('Tierras de Piel','game_concept_skinlands_desc')], y también afecta al funcionamiento de las reliquias de los wraiths."
  arcanos_flux_focus_effect_desc: "Centrarse en el Flujo otorga:"
  
  arcanos_intimation_focus: "Enfoque de Insinuación"
@@ -160,7 +160,7 @@
  
  arcanos_false_life_focus: "Enfoque de Falsa Vida"
  arcanos_false_life_focus_modifier: "[GetFocus('arcanos_false_life_focus').GetName]"
- arcanos_false_life_focus_desc: "Crea ilusiones poderosas de las [Glossary('Skinlands','game_concept_skinlands_desc')]."
+ arcanos_false_life_focus_desc: "Crea ilusiones poderosas de las [Glossary('Tierras de Piel','game_concept_skinlands_desc')]."
  arcanos_false_life_focus_effect_desc: "Centrarse en Falsa Vida otorga:"
  
  arcanos_hive_mind_focus: "Enfoque de Mente de Colmena"
@@ -180,7 +180,7 @@
  
  arcanos_shroud_rending_focus: "Enfoque de Desgarro del Manto"
  arcanos_shroud_rending_focus_modifier: "[GetFocus('arcanos_shroud_rending_focus').GetName]"
- arcanos_shroud_rending_focus_desc: "Ver las [Glossary('Skinlands','game_concept_skinlands_desc')] y a los Quick a través del Manto."
+ arcanos_shroud_rending_focus_desc: "Ver las [Glossary('Tierras de Piel','game_concept_skinlands_desc')] y a los Quick a través del Manto."
  arcanos_shroud_rending_focus_effect_desc: "Centrarse en el Desgarro del Manto otorga:"
  
  arcanos_tempest_weaving_focus: "Enfoque de Tejido de Tempestades"
@@ -241,7 +241,7 @@
 
  game_concept_misc_arcanoi: "Arcanos misceláneos"
  game_concept_misc_arcanoi_lifestyle: "Arcanos misceláneos"
- game_concept_misc_arcanoi_lifestyle_desc: "El $game_concept_misc_arcanoi_lifestyle$ es adecuado para los $POD_splat_wraith_plural$. Habilidades utilizadas por los Resurgidos, o wraiths que han logrado regresar a sus antiguos cuerpos, y Arcanos de los wraiths del otro [Glossary('Dark Kingdom','game_concept_dark_kingdom_desc')]."
+ game_concept_misc_arcanoi_lifestyle_desc: "El $game_concept_misc_arcanoi_lifestyle$ es adecuado para los $POD_splat_wraith_plural$. Habilidades utilizadas por los Resurgidos, o wraiths que han logrado regresar a sus antiguos cuerpos, y Arcanos de los wraiths del otro [Glossary('Reino Oscuro','game_concept_dark_kingdom_desc')]."
 
  GAINS_ARCANOI_LIFESTYLE_XP: "Gana $VALUE|V0$ de experiencia de [arcanoi_lifestyle|E]"
  GAINED_ARCANOI_LIFESTYLE_XP: "Ganó $VALUE|V0$ de experiencia de [arcanoi_lifestyle|E]"
@@ -416,13 +416,13 @@
  materialize_perk_name: "Materializarse"
  harrow_the_mortal_flesh_perk_name: "Atormentar la carne mortal"
  
- WHISPERS_PERK_EFFECT: "Como [character_interaction|E], obtén la habilidad de interactuar con las [Glossary('Skinlands','game_concept_skinlands_desc')] durante 5 años, a costa de 3 de pathos.\n#F Un Preceptor puede susurrar a través del Manto.#!"
- CACHE_PERK_EFFECT: "Permite regalar [artifact|E] y oro a los Rápidos de las [Glossary('Skinlands','game_concept_skinlands_desc')].\n#F Un Preceptor puede trasladar temporalmente una reliquia a las [Glossary('Skinlands','game_concept_skinlands_desc')].#!"
+ WHISPERS_PERK_EFFECT: "Como [character_interaction|E], obtén la habilidad de interactuar con las [Glossary('Tierras de Piel','game_concept_skinlands_desc')] durante 5 años, a costa de 3 de pathos.\n#F Un Preceptor puede susurrar a través del Manto.#!"
+ CACHE_PERK_EFFECT: "Permite regalar [artifact|E] y oro a los Rápidos de las [Glossary('Tierras de Piel','game_concept_skinlands_desc')].\n#F Un Preceptor puede trasladar temporalmente una reliquia a las [Glossary('Tierras de Piel','game_concept_skinlands_desc')].#!"
  PHANTOM_PERK_EFFECT: "Disminuye el coste de la [character_interaction|E] de [GetPerk('whispers_perk').GetName(GetPlayer)] de 3 a 2 de pathos\n#F Un Preceptor puede materializarse en una forma brumosa e intangible.#!"
  STATUE_PERK_EFFECT: "Disminuye el coste de la [character_interaction|E] de [GetPerk('whispers_perk').GetName(GetPlayer)] de 2 a 1 de pathos\n#F Un Preceptor puede materializarse en una forma sólida, pero no puede moverse mientras esté en ella.#!"
  LIFE_IN_DEATH_PERK_EFFECT: "Disminuye el coste de la [character_interaction|E] de [GetPerk('whispers_perk').GetName(GetPlayer)] de 1 a 0 de pathos\n#F Un Preceptor puede materializarse como una versión transitoria de una persona viva.#!"
- SHROUDGUIDE_PERK_EFFECT: "#F Un Preceptor puede compartir los efectos de las artes de Encarnar que permiten la manifestación en las [Glossary('Skinlands','game_concept_skinlands_desc')] con otros wraiths.#!"
- MATERIALIZE_PERK_EFFECT: "Puede viajar a las [Glossary('Skinlands','game_concept_skinlands_desc')], mientras gana un cuerpo «material».\n#F Un Preceptor puede volver temporalmente a un estado similar al de los vivos.#!"
+ SHROUDGUIDE_PERK_EFFECT: "#F Un Preceptor puede compartir los efectos de las artes de Encarnar que permiten la manifestación en las [Glossary('Tierras de Piel','game_concept_skinlands_desc')] con otros wraiths.#!"
+ MATERIALIZE_PERK_EFFECT: "Puede viajar a las [Glossary('Tierras de Piel','game_concept_skinlands_desc')], mientras gana un cuerpo «material».\n#F Un Preceptor puede volver temporalmente a un estado similar al de los vivos.#!"
  HARROW_THE_MORTAL_FLESH_PERK_EFFECT: "Permite regalar títulos a otros seres sobrenaturales.\n#F Un Preceptor puede llevar a un mortal u otro ser sobrenatural al [UmbraGlossary('shadowlands')].#!"
  
  # Fatalism
@@ -538,13 +538,13 @@
  obliviate_perk_name: "Obliviar"
  anger_enough_for_two_worlds_perk_name: "Ira suficiente para dos mundos"
  
- WRAITHGRASP_PERK_EFFECT: "Permite recibir oro de los Rápidos de las [Glossary('Skinlands','game_concept_skinlands_desc')].\n#F Una aparición puede levantar objetos en las [Glossary('Skinlands','game_concept_skinlands_desc')].#!"
+ WRAITHGRASP_PERK_EFFECT: "Permite recibir oro de los Rápidos de las [Glossary('Tierras de Piel','game_concept_skinlands_desc')].\n#F Una aparición puede levantar objetos en las [Glossary('Tierras de Piel','game_concept_skinlands_desc')].#!"
  BREATH_OF_THE_GRAVE_PERK_EFFECT: "#F La aparición crea una pequeña brisa gélida a través del Manto.#!"
  STONEHAND_PUNCH_PERK_EFFECT: "#F Una aparición puede aplastar a un objetivo con pura fuerza emocional.#!"
  WINGS_OF_RAGE_PERK_EFFECT: "#F Una aparición puede potenciar su atletismo y velocidad.#!"
- DEATHS_TOUCH_PERK_EFFECT: "#F Una aparición puede manipular libremente objetos en las [Glossary('Skinlands','game_concept_skinlands_desc')] y proyectar sus manos telequinéticamente en el [underworld|E].#!"
+ DEATHS_TOUCH_PERK_EFFECT: "#F Una aparición puede manipular libremente objetos en las [Glossary('Tierras de Piel','game_concept_skinlands_desc')] y proyectar sus manos telequinéticamente en el [underworld|E].#!"
  WYLDFIRE_PERK_EFFECT: "#F Una aparición puede conjurar fuego de tumba.#!"
- OBLIVIATE_PERK_EFFECT: "Desbloquea la opción de [execution|E] $EXECUTION_UNMAKING$.\nPermite recibir [artifact|E] de los Rápidos de las [Glossary('Skinlands','game_concept_skinlands_desc')].\n#F Una aparición puede dañar a un mortal, wraith o cosa de forma tan severa que caiga directamente al [UmbraGlossary('oblivion')]. Cuando se usa en un objeto material habitado por un wraith, este se convierte en una reliquia.#!"
+ OBLIVIATE_PERK_EFFECT: "Desbloquea la opción de [execution|E] $EXECUTION_UNMAKING$.\nPermite recibir [artifact|E] de los Rápidos de las [Glossary('Tierras de Piel','game_concept_skinlands_desc')].\n#F Una aparición puede dañar a un mortal, wraith o cosa de forma tan severa que caiga directamente al [UmbraGlossary('oblivion')]. Cuando se usa en un objeto material habitado por un wraith, este se convierte en una reliquia.#!"
  ANGER_ENOUGH_FOR_TWO_WORLDS_PERK_EFFECT: "Desbloquea la opción Destruir el Manto en la acción Manipular el Manto [umbra|E].\n#F Una aparición puede rasgar temporalmente el Manto, con consecuencias potencialmente devastadoras.#!"
  
  # Pandemonium
@@ -863,7 +863,7 @@
  SOUND_OF_LIFE_PERK_EFFECT: "#F El Espectro conjura sonidos que solo el objetivo puede oír.#!"
  DANGEROUS_DISTRACTION_PERK_EFFECT: "#F El Espectro crea una ilusión compleja de olor, vista y tacto.#!"
  LOVES_CARESS_PERK_EFFECT: "#F El objetivo cree que está en presencia de una persona u objeto que ama profundamente.#!"
- HOMECOMING_PERK_EFFECT: "#F El objetivo experimenta una ilusión totalmente inmersiva de un lugar de las [Glossary('Skinlands','game_concept_skinlands_desc')] que es preciado para él.#!"
+ HOMECOMING_PERK_EFFECT: "#F El objetivo experimenta una ilusión totalmente inmersiva de un lugar de las [Glossary('Tierras de Piel','game_concept_skinlands_desc')] que es preciado para él.#!"
  
  # Hive-Mind
  hive_mind_visible: "Mente Colmena"
@@ -941,9 +941,9 @@
  
  THRESHOLD_PERK_EFFECT: "#F Un Espectro puede ver imágenes ocultas a través del Manto.#!"
  ECHOES_PERK_EFFECT: "#F Esto permite a un Espectro ver a través del Manto.#!"
- FLEETING_GLIMPSES_PERK_EFFECT: "#F Un Espectro puede ver claramente una zona de las [Glossary('Skinlands','game_concept_skinlands_desc')].#!"
+ FLEETING_GLIMPSES_PERK_EFFECT: "#F Un Espectro puede ver claramente una zona de las [Glossary('Tierras de Piel','game_concept_skinlands_desc')].#!"
  NIGHTMARE_PERK_EFFECT: "#F Un Espectro desgarra el Manto sobre un mortal dormido, permitiendo que el [UmbraGlossary('oblivion')] influya en sus sueños.#!"
- VIRTUALITY_PERK_EFFECT: "#F Los sucesos que ocurren en las [Glossary('Skinlands','game_concept_skinlands_desc')] ahora pueden verse y oírse con claridad.#!"
+ VIRTUALITY_PERK_EFFECT: "#F Los sucesos que ocurren en las [Glossary('Tierras de Piel','game_concept_skinlands_desc')] ahora pueden verse y oírse con claridad.#!"
  LURKING_PRESENCE_PERK_EFFECT: "#F Similar a Pesadilla, pero puede usarse en mortales que están despiertos.#!"
  TRANSPARENT_MEMORIES_PERK_EFFECT: "#F El Espectro puede usar todos sus sentidos a través del Manto.#!"
  
@@ -1042,7 +1042,7 @@
  RELER_BAKA_PERK_EFFECT: "Puede reclutar [GetMaA('spectres').GetName] como [men_at_arms|E].\n#F Un Baka puede ser convocado por un Serviteur.#!"
  RENVOYER_BAKA_PERK_EFFECT: "Puede reclutar [GetMaA('shades').GetName] como [men_at_arms|E].\n#F Un Serviteur utiliza este arte para ahuyentar al Baka.#!"
  ENGAGEMENT_PERK_EFFECT: "#F La mente de un Baka puede ser manipulada mediante sugerencias sutiles.#!"
- RENFORCER_LES_CHAVEAUX_PERK_EFFECT: "#F Un Serviteur puede otorgar temporalmente a un mortal cualquier Arcano que posea y que afecte a las [Glossary('Skinlands','game_concept_skinlands_desc')], así como Potencia, Celeridad o Fortaleza.#!"
+ RENFORCER_LES_CHAVEAUX_PERK_EFFECT: "#F Un Serviteur puede otorgar temporalmente a un mortal cualquier Arcano que posea y que afecte a las [Glossary('Tierras de Piel','game_concept_skinlands_desc')], así como Potencia, Celeridad o Fortaleza.#!"
  RELER_MYSTERE_PERK_EFFECT: "#F Un Loa puede acceder a la vasta red de información custodiada por Les Mysteres.#!"
  RETIRER_DEN_BAS_DE_LEAU_PERK_EFFECT: "#F Un Serviteur puede crear un nuevo [Fetter|E] permanente en conjunción con un houngan mortal.#!"
  MARRER_BAKA_PERK_EFFECT: "No perderá la vinculación de un [GetTrait('wraith').GetName( GetNullCharacter )] vinculado cuando se convierta en [GetTrait('spectre').GetName( GetNullCharacter )].\n#F Un Serviteur puede capturar y controlar a un Baka solo mediante la voluntad.#!"

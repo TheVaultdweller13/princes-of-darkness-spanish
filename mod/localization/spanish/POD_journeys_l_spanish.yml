@@ -865,7 +865,7 @@
  seek_knowledge_feng_shui_travel_confirm: "$POD_journey_travel_confirm_seek_knowledge$"
  
  seek_knowledge_obligation_name: "Aprender Arte del Chi ([GetTrait('chi_art_obligation').GetName(GetNullCharacter)])"
- seek_knowledge_obligation_desc: "Obligación es un arte que permite a un $pod_kueijin$ ejercer control sobre los demás. Es un recordatorio de la gloria de los antiguos Wan Xian y su autoridad que emanaba de un mandato de la [Glossary('Augusta Persona de Jade','podgloss.augustpersonageofjade')] misma. Aunque han perdido este favor, algunos aún logran inspirar o dominar a los espíritus que los rodean."
+ seek_knowledge_obligation_desc: "Obligación es un arte que permite a un $pod_kueijin$ ejercer control sobre los demás. Es un recordatorio de la gloria de los antiguos Wan Xian y su autoridad que emanaba de un mandato del [Glossary('August Personage of Jade','podgloss.augustpersonageofjade')] mismo. Aunque han perdido este favor, algunos aún logran inspirar o dominar a los espíritus que los rodean."
  seek_knowledge_obligation_effects: "Aprenderás la ubicación de un maestro que conoce [GetTrait('chi_art_obligation').GetName(GetNullCharacter)]. Después de viajar allí, puedes adquirir el [trait|E] [GetTrait('chi_art_obligation').GetName(GetPlayer)], que te permite desbloquear [perks|E] en el [lifestyle|E] de [GetTrait('chi_art_obligation').GetName(GetNullCharacter)]."
  seek_knowledge_obligation_tt: "Habla suavemente y lleva un gran garrote."
  seek_knowledge_obligation_planning_title: "La Búsqueda de Obligación"
@@ -1295,7 +1295,7 @@
  ritual_necromagic_casting_planning_confirm: "$POD_journey_planning_confirm_default$"
  ritual_necromagic_casting_planning_decline: "$POD_journey_planning_decline_default$"
  ritual_necromagic_casting_travel_title: "Viaje hacia el [bs_ritual|E]"
- ritual_necromagic_casting_travel_desc: "No importa cuántas veces realice estos ritos, siempre evocan una sensación distante de pavor. Nuestros más grandes eruditos están lejos de comprender a la gran [Glossary('Beast','game_concept_beast_desc')] que yace en letargo en nuestra sangre, despertándose cada vez que necesitamos sus poderes. Bajo todo el artificio, todos los procedimientos, ceremonias y teatralidades, no somos más que niños intentando controlar una fuerza de la naturaleza."
+ ritual_necromagic_casting_travel_desc: "No importa cuántas veces realice estos ritos, siempre evocan una sensación distante de pavor. Nuestros más grandes eruditos están lejos de comprender a la gran [Glossary('Bestia','game_concept_beast_desc')] que yace en letargo en nuestra sangre, despertándose cada vez que necesitamos sus poderes. Bajo todo el artificio, todos los procedimientos, ceremonias y teatralidades, no somos más que niños intentando controlar una fuerza de la naturaleza."
  #ritual_casting_travel_desc: "A lo largo de siglos de experimentación, los hechiceros Vástagos han expandido sus artes en una miríada de formas diferentes. Con cada paso que dan, otro camino se abre tentadoramente ante ellos, señalando el camino hacia proezas mágicas aún mayores. La Taumaturgia fue desarrollada por Vástagos a partir de rituales Herméticos para controlar y enfocar estas poderosas fuerzas.\nOtros Vástagos crearon una amplia gama de Hechicerías que han extraído de las creencias de los mortales de todo el mundo. Algunos han difuminado la línea entre la religión y el poder para crear un número cada vez mayor de ritos. Otros incluso han usado su sangre para comandar a los espíritus de los muertos, para contactar con entidades en reinos más allá de toda comprensión, y para vender sus almas a seres que habitan en los rincones más oscuros de toda la creación. Al final, sin embargo, todos los rituales requieren disciplina y fortaleza mental para prepararse. Cualquier error podría ser el último que cometa un hechicero descuidado.\nDespués de una cuidadosa preparación, el [bs_ritual|E] está finalmente listo. Ahora solo necesito el momento y lugar adecuados para lanzarlo." 
  ritual_necromagic_casting_travel_confirm: "Adelante, hacia la ubicación del [bs_ritual|E]." 
 
@@ -1543,7 +1543,7 @@
 
  azhi_dahaka_1_name: "Sendero del Dragón"
  azhi_dahaka_1_desc: "Azhi Dahaka es persa para el dragón de tres cabezas del demonio Ahriman. Para los [GetTrait('tzimisce').GetName(GetNullCharacter)], es el Santo Grial del Metamorfosista, un estado del ser iluminado y último, provocado por el uso extensivo de [GetTrait('vicissitude').GetName(GetPlayer)].\n\nTus estudios han confirmado tu primera impresión, no hay una sola forma de llegar a Azhi Dahaka sino muchas. Tendrás que forjar tu camino a través del estudio riguroso y la extensa experimentación."
- azhi_dahaka_1_effects: "Ganarás [trait_level_track_xp|E] en [GetTrait('azhi_dahaka_scholar').GetName(GetPlayer)] al final del [journey|E]. La cantidad de [trait_level_track_xp|E] ganada escala con tu [learning|E] y [Glossary('Generation','game_concept_vampgeneration_desc')]."
+ azhi_dahaka_1_effects: "Ganarás [trait_level_track_xp|E] en [GetTrait('azhi_dahaka_scholar').GetName(GetPlayer)] al final del [journey|E]. La cantidad de [trait_level_track_xp|E] ganada escala con tu [learning|E] y [Glossary('Generación','game_concept_vampgeneration_desc')]."
  azhi_dahaka_1_tt: "El Cambio Eterno."
  azhi_dahaka_1_planning_title: "Sendero del Dragón"
  azhi_dahaka_1_planning_desc: "Solo puedo dedicar una cantidad limitada de tiempo a la búsqueda de Azhi Dahaka, el estancamiento nunca será el camino a seguir. Necesito evaluar mi progreso actual desde otra perspectiva."
@@ -2053,20 +2053,20 @@
  shih_training_hunt_travel_confirm: "$shih_training_knowledge_travel_confirm$"
  
  study_true_name_journey_name: "Estudiar Nombres Verdaderos"
- study_true_name_journey_desc: "Los [Glossary('True Names','podgloss.truename')] son, al menos para algunos, el fundamento de la realidad, y conocer el nombre verdadero de algo es tener control total sobre ello. Sin embargo, los nombres verdaderos siempre cambian, lo que hace que aprenderlos sea un proceso largo y arduo."
- study_true_name_journey_effects: "Aprenderás el [Glossary('True Name','podgloss.truename')] de un material, animal o planta aleatorio."
+ study_true_name_journey_desc: "Los [Glossary('Nombres Verdaderos','podgloss.truename')] son, al menos para algunos, el fundamento de la realidad, y conocer el nombre verdadero de algo es tener control total sobre ello. Sin embargo, los nombres verdaderos siempre cambian, lo que hace que aprenderlos sea un proceso largo y arduo."
+ study_true_name_journey_effects: "Aprenderás el [Glossary('Nombre Verdadero','podgloss.truename')] de un material, animal o planta aleatorio."
  study_true_name_journey_isvalid: ""
  study_true_name_journey_tt: "Nombrando nuestra realidad."
  
  study_true_name_trait_journey_name: "Estudiar el Nombre Verdadero de"
- study_true_name_trait_journey_desc: "Los [Glossary('True Names','podgloss.truename')] son, al menos para algunos, el fundamento de la realidad, y conocer el nombre verdadero de algo es tener control total sobre ello. Sin embargo, los nombres verdaderos siempre cambian, lo que hace que aprenderlos sea un proceso largo y arduo."
- study_true_name_trait_journey_effects: "Aprenderás el [Glossary('True Name','podgloss.truename')] de un material, animal o planta aleatorio."
+ study_true_name_trait_journey_desc: "Los [Glossary('Nombres Verdaderos','podgloss.truename')] son, al menos para algunos, el fundamento de la realidad, y conocer el nombre verdadero de algo es tener control total sobre ello. Sin embargo, los nombres verdaderos siempre cambian, lo que hace que aprenderlos sea un proceso largo y arduo."
+ study_true_name_trait_journey_effects: "Aprenderás el [Glossary('Nombre Verdadero','podgloss.truename')] de un material, animal o planta aleatorio."
  study_true_name_trait_journey_isvalid: ""
  study_true_name_trait_journey_tt: "Nombrando nuestra realidad."
 
  breaking_the_blond_bond_name: "Rompiendo el Vínculo de Sangre"
  breaking_the_blond_bond_desc: "Estás [Glossary('Blood Bound','game_concept_bloodbond_desc')], lo que significa que la mera idea de #italic rebelión#! es difícil de concebir, superada por el amor fabricado que corre por la sangre.\n\nPero incluso ese amor no puede evitar que tu ser interior vea lo que está sucediendo y acoja la idea perdida hace tiempo de la libertad."
- breaking_the_blond_bond_effects: "Comenzarás un largo [journey|E] para disminuir lentamente tu [Glossary('Blood Bond','game_concept_bloodbond_desc')] a un nivel donde sea posible huir o actuar contra tu [Glossary('Domitor','game_concept_domitor_desc')]. Ten en cuenta que este proceso requiere toda tu fuerza de voluntad y cualquier [mental_break|E] hará fracasar este empeño instantáneamente. Además, completar cualquier [bound_ghoul_mission_with_icon|E] revertirá tu progreso en un #N 10%#!."
+ breaking_the_blond_bond_effects: "Comenzarás un largo [journey|E] para disminuir lentamente tu [Glossary('Vínculo de Sangre','game_concept_bloodbond_desc')] a un nivel donde sea posible huir o actuar contra tu [Glossary('Domitor','game_concept_domitor_desc')]. Ten en cuenta que este proceso requiere toda tu fuerza de voluntad y cualquier [mental_break|E] hará fracasar este empeño instantáneamente. Además, completar cualquier [bound_ghoul_mission_with_icon|E] revertirá tu progreso en un #N 10%#!."
  breaking_the_blond_bond_tt: "Incluso los Vínculos no son eternos."
  breaking_the_blond_bond_planning_title: "Cerca, pero no lo suficiente"
  breaking_the_blond_bond_planning_desc: "Estás cerca, puedes sentir que tu amor se degrada a una simple obsesión. Sin embargo, todavía necesitas un último empujón para ser verdaderamente libre."

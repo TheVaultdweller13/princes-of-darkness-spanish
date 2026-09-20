@@ -429,7 +429,7 @@
  POD_charjoin_choose_ghoulbrosmentor_interaction_desc: "Quieres que [recipient.GetFirstName] se convierta en tu mentor."
  
  POD_charjoin_become_vampire_interaction: "Pedir Abrazo"
- POD_charjoin_become_vampire_interaction_desc: "Quieres que [recipient.GetFirstName] se convierta en tu Sire."
+ POD_charjoin_become_vampire_interaction_desc: "Quieres que [recipient.GetFirstName] se convierta en tu [Glossary('Sire','game_concept_Sire_desc')]."
  
  grant_title_to_ghouls_warning: "Como vampiro, otorgar cualquier cosa que no sea una baronía a un [ghoul|E] se considera muy impropio. Después de todo, son tus subordinados." 
 
@@ -1173,7 +1173,7 @@
  POD_study_anatomy_interaction: "Estudiar anatomía"
  POD_study_anatomy_interaction_desc: "Realizar experimentos con [recipient.GetFirstName] para profundizar tu conocimiento de la Vicisitud."
  POD_study_anatomy_interaction_trait_requirement: "[recipient.GetShortUIName] #bold no#! tiene ningún rasgo físico que puedas aprender"
- POD_study_anatomy_interaction_select_traits_tt: "Podrás elegir cuáles de los rasgos de [recipient.GetShortUINamePossessive] estudiar"
+ POD_study_anatomy_interaction_select_traits_tt: "Podrás elegir cuáles de los rasgos de [recipient.GetShortUINamePossessive] [traits|E] estudiar"
 
  POD_transmogrify_interaction: "Transmogrificar"
  POD_transmogrify_interaction_desc: "TODO Tzimisce"

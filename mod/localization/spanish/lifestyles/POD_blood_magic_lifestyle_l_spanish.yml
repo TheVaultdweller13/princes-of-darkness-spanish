@@ -215,7 +215,7 @@
  lord_of_storms_perk_name: "Señor de las Tormentas"
  dark_invocation_perk_name: "Invocación Oscura"
 
- WHISPERS_OF_THE_SANDS_PERK_EFFECT: "#weak Comunica a distancia con los vástagos o ghouls de uno.#!"
+ WHISPERS_OF_THE_SANDS_PERK_EFFECT: "#weak Comunica a distancia con sus chiquillos o ghouls.#!"
  TONGUE_OF_THE_TEMPTER_PERK_EFFECT: "Como [bs_spell|E], aprende un [secret|E] del objetivo.\n#weak Hace que un sujeto revele un miedo o deseo secreto.#!"
  VOICE_OF_THE_PROPHET_PERK_EFFECT: "Como [bs_spell|E], hace que el objetivo gane opinión hacia ti y pierda [piety|E] y [prestige|E].\n#weak Entrega un mensaje críptico que habla de los deseos más profundos de un oyente.#!"
  LORD_OF_STORMS_PERK_EFFECT: "Otorga [GetModifier('lord_of_storms_modifier').GetNameWithTooltip] a los [knights|E] enemigos cuando actúas como [commander|E] durante la [combat_phase|E], o a tu oponente durante [single_combat_duel_plural|E]\n#weak Invoca una tormenta de arena o una tormenta eléctrica.#!"
@@ -249,7 +249,7 @@
 ##Koldunic
 #Kraina de Transilvania
  burebistas_throne_perk_name: "Trono de Burebista"
- BUREBISTAS_THRONE_PERK_EFFECT: "#flavor El rey Burebista, que aterrorizó a los griegos durante siglos, construyó un gran trono en la cima de una montaña desde el que podía contemplar todas sus tierras y enemigos. Burebista ya no necesitaba su trono y se lo pasó a su vástago Koldun.#!"
+ BUREBISTAS_THRONE_PERK_EFFECT: "#flavor El rey Burebista, que aterrorizó a los griegos durante siglos, construyó un gran trono en la cima de una montaña desde el que podía contemplar todas sus tierras y enemigos. Burebista ya no necesitaba su trono y se lo pasó a sus chiquillos Koldun.#!"
  pietrosus_hospitality_perk_name: "Hospitalidad de Pietrosu"
  PIETROSUS_HOSPITALITY_PERK_EFFECT: "#flavor Los vientos cortantes y las temperaturas gélidas del Monte Pietrosu matarán a un hombre desprotegido en cuestión de momentos. El Koldun convoca estos poderosos y gélidos vientos para que lo rodeen, dañando a todos los que están cerca. Esto también lo hace inmune al frío y a la fuerza de los vientos.#!"
  the_banks_of_the_basca_perk_name: "Las Orillas del Basca"
@@ -280,7 +280,7 @@
  grondrskas_impasse_perk_name: "El Callejón sin Salida de Grondrska"
  GRONDRSKAS_IMPASSE_PERK_EFFECT: "#flavor El cuento habla de un cazador furtivo que se adentró en tierras Tzimisce. No pasó mucho tiempo antes de que huyera en un pánico terrible. Creía conocer el bosque, pero los árboles se movían a su alrededor, cortándole la salida, conduciéndolo directamente hacia el Koldun que lo esperaba.#!"
  mouth_of_djabalek_perk_name: "Boca de Djabalek"
- MOUTH_OF_DJABALEK_PERK_EFFECT: "Al comienzo de la batalla, elimina al [knight|E] enemigo de menor [prowess|E] de la batalla y aliméntate de él.\n\n#flavor Djabelek es un terrorífico Tzimisce enterrado en algún lugar del Bosque de Białowieża. Se dice que de alguna manera continúa alimentándose a pesar de su estado de letargo, abriendo la boca mientras sueña, consumiendo lo que sea que caiga en ella. El Koldun abre la tierra bajo su víctima, enviándola a alimentar a Djabelek.#!"
+ MOUTH_OF_DJABALEK_PERK_EFFECT: "Al comienzo de la batalla, elimina al [knight|E] enemigo de menor [prowess|E] de la batalla y aliméntate de él.\n\n#flavor Djabelek es un terrorífico Tzimisce enterrado en algún lugar del Bosque de Białowieża. Se dice que de alguna manera continúa alimentándose a pesar de su estado aletargado, abriendo la boca mientras sueña, consumiendo lo que sea que caiga en ella. El Koldun abre la tierra bajo su víctima, enviándola a alimentar a Djabelek.#!"
  the_white_tower_perk_name: "La Torre Blanca"
  THE_WHITE_TOWER_PERK_EFFECT: "#flavor La Torre Blanca es el regalo proporcionado por los demonios de la tierra con los que Djabelek una vez hizo su pacto. Los huesos de todas las víctimas de la kraina de Białowieża emergen por la fuerza de la tierra y envuelven al Koldun en una torre de tierra y huesos.#!"
 
@@ -555,7 +555,7 @@
  see_the_dead_perk_name: "Ver a los Muertos"
  SEE_THE_DEAD_PERK_EFFECT: "$POD_can_summon_wraith_trigger_loca$\n#flavor Los fantasmas de los muertos pueden ser vistos y reconocidos por el usuario.#!"
  repel_the_angry_dead_perk_name: "Repeler a los Muertos Enfadados"
- REPEL_THE_ANGRY_DEAD_PERK_EFFECT: "Puede [POD_banish|E] a $POD_splat_wraith_plural$\nOtorga [GetModifier('repel_the_angry_dead_modifier').GetNameWithTooltip] a los [knights|E] enemigos cuando actúas como [commander|E] durante la [combat_phase|E], o a tu oponente durante [single_combat_duel_plural|E] si son un [GetTrait('wraith').GetName(GetPlayer)].\n#flavor Con este poder, los fantasmas y espectros hostiles pueden ser desterrados del área.#!"
+ REPEL_THE_ANGRY_DEAD_PERK_EFFECT: "Puede [POD_banish|E] $POD_splat_wraith_plural$\nOtorga [GetModifier('repel_the_angry_dead_modifier').GetNameWithTooltip] a los [knights|E] enemigos cuando actúas como [commander|E] durante la [combat_phase|E], o a tu oponente durante [single_combat_duel_plural|E] si es un [GetTrait('wraith').GetName(GetPlayer)].\n#flavor Con este poder, los fantasmas y wraiths hostiles pueden ser desterrados del área.#!"
  command_the_freshly_dead_perk_name: "Comandar a los Recién Muertos"
  COMMAND_THE_FRESHLY_DEAD_PERK_EFFECT: "$POD_can_weaken_fetter_trigger_loca$\n$POD_can_bind_wraith_trigger_loca$\n$POD_can_command_wraith_trigger_loca$\n#flavor El usuario puede ordenar a cualquier fantasma que pueda ver que lo obedezca.#!"
  army_of_souls_perk_name: "Ejército de Almas"

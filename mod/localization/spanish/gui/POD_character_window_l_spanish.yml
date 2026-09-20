@@ -1,7 +1,7 @@
 ﻿l_spanish:
  HERD: "[herd|E]"
  GHOULS: "Ghouls"
- WRAITHS: "Espectros"
+ WRAITHS: "wraith"
  MINIONS_tab: "Esbirros"
  AGE_VANILLA: "[ROOT.Char.GetAge]"
  AGE_VANILLA_TT: "[ROOT.Char.GetDeathOrBirthDateInfo][ROOT.Char.Custom('PODCharacterVisualAge')]"
@@ -66,7 +66,7 @@
  bound_wraiths_row_header: "Wraiths vinculados #weak ([GetDataModelSize(CharacterWindow.GetRelationsOfType( GetRelation( 'bound_wraith' ) ))]/[CharacterWindow.GetCharacter.MakeScope.ScriptValue('max_wraith_cap')|0])#!"
  thrall_row_header: "Esclavos #weak ([GetDataModelSize(CharacterWindow.GetRelationsOfType( GetRelation( 'demonic_thrall' ) ))]/[CharacterWindow.GetCharacter.MakeScope.ScriptValue('max_thrall_cap')|0])#!"
  bound_demons_row_header: "Demonios vinculados #weak ([GetDataModelSize(CharacterWindow.GetRelationsOfType( GetRelation( 'bound_demon' ) ))])#!"
- known_true_names_row_header: "Nombres verdaderos conocidos #weak ([GetDataModelSize(CharacterWindow.GetRelationsOfType( GetRelation( 'known_true_name' ) ))])#!"
+ known_true_names_row_header: "Nombres Verdaderos conocidos #weak ([GetDataModelSize(CharacterWindow.GetRelationsOfType( GetRelation( 'known_true_name' ) ))])#!"
  possessed_targets_row_header: "Cuerpo poseído #weak ([GetDataModelSize(CharacterWindow.GetRelationsOfType( GetRelation( 'possessed_target' ) ))])#!"
  dominate_targets_row_header: "Marionetas de Dominación #weak ([GetDataModelSize(CharacterWindow.GetRelationsOfType( GetRelation( 'dominate_target' ) ))])#!"
  fascinate_targets_row_header: "Marionetas de Presencia #weak ([GetDataModelSize(CharacterWindow.GetRelationsOfType( GetRelation( 'fascinate_target' ) ))])#!"
