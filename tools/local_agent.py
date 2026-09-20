@@ -254,7 +254,7 @@ def run_batches(a, prefix, limit, system):
             print(f"✘ {name}: {e}")
             out = pod("setaside", name, "--reason", str(e)[:120], *(["--split"] if n_items > 1 else [])).rstrip()
             print(out)
-            halves = re.findall(r"\b([UBRN]\d{4})\b", out.split("dividido en", 1)[1])[:2] + halves if "dividido en" in out else halves
+            halves = re.findall(r"\b([UBRNM]\d{4})\b", out.split("dividido en", 1)[1])[:2] + halves if "dividido en" in out else halves
             a.set_aside = getattr(a, "set_aside", 0) + 1
             if failures_in_a_row >= MAX_CONSECUTIVE_FAILURES:
                 print(f"✘ {failures_in_a_row} lotes seguidos han fallado: parece un problema general, no de un lote. Me detengo.")
@@ -293,7 +293,7 @@ def close(a, system):
 
 def main():
     p = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    p.add_argument("--prefix", choices=["U", "B", "R", "N"], help="prefijo de los lotes (por defecto, el siguiente que haya)")
+    p.add_argument("--prefix", choices=["U", "B", "R", "N", "M"], help="prefijo de los lotes (por defecto, el siguiente que haya)")
     p.add_argument("--limit", type=int, help="máximo de lotes en esta ejecución")
     p.add_argument("--close", action="store_true", help="hacer «el cierre» de AGENTS.md al terminar")
     p.add_argument("--dry-run", action="store_true", help="traduce el siguiente lote y lo muestra, sin guardar ni aplicar")

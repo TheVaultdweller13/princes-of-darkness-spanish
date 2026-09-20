@@ -24,12 +24,13 @@ Este repositorio es un mod de traducción. Tu trabajo es traducir o revisar text
 | `spanish/` | Traducción de trabajo. Cabecera `l_english` = archivo aún sin traducir |
 | `mod/` | Mod para Steam. **No lo toques**: lo genera el usuario |
 | `tools/pod.py` | Herramienta única: `python tools/pod.py -h` |
+| `tools/glossary*.tsv` | Glosarios. Cada lote ya trae los términos que necesita: no hace falta abrirlos |
 | `tools/local_agent.py`, `tools/menu.py` | Bucle de lotes con un modelo local (Jan) y su menú. Los lanza el usuario; tú no los necesitas |
 | `tools/TRADUCIR_LOTE.md` | **Cómo traducir un lote** (reglas, marcas del juego, género). Léelo antes de traducir |
 | `README.md` | Explicación completa del flujo (para personas) |
 | `work_queue/` | Cola de lotes: `todo/` (por hacer), `out/` (tus respuestas), `manual/` (fallidos) |
 
-Prefijos de lote: **U** = actualización · **B** = pendientes · **R** = revisión · **N** = nombres.
+Prefijos de lote: **U** = actualización · **B** = pendientes · **R** = revisión · **N** = nombres · **M** = textos devueltos de `manual/`.
 
 **No decidas tú el orden ni qué contenido es más importante.** `batch` ya emite los lotes en este orden: primero lo general y compartido, luego vampiro, hombre lobo, cazadores e inquisición y, por último, el resto de líneas (wraith, fae, momias, kuei-jin, demonios…). Dentro de cada línea van antes los textos de interfaz y los cortos que se ven siempre, y los eventos largos al final. Se configura en `splat_priority` y `priority` de `tools/config.json`; si el usuario quiere otro orden, lo cambia ahí. Tradúcelos tal como salgan.
 
@@ -60,6 +61,11 @@ También se pedirá como «los nuevos archivos», «lo nuevo», «la actualizaci
 1. `python tools/pod.py batch --mode names`
 2. El bucle con prefijo **N** (sección «Modo NOMBRES» de `tools/TRADUCIR_LOTE.md`).
 
+### «Traduce lo que quedó en manual/»
+Son los textos que no pasaron la validación dos veces.
+1. `python tools/pod.py clean --requeue` → vuelven a la cola como lotes **M**, aparte del resto.
+2. El bucle con prefijo **M**. Cada lote trae en `MOTIVO:` por qué se rechazó: corrige exactamente eso.
+
 ### «Sigue con lo que haya» / sin más contexto
 `python tools/pod.py next` y el bucle con el prefijo del lote que salga.
 
@@ -74,4 +80,4 @@ También se pedirá como «los nuevos archivos», «lo nuevo», «la actualizaci
 
 ## Trabajo en paralelo
 
-Varias sesiones pueden procesar la cola a la vez si cada una se ocupa de un rango distinto de lotes (p. ej. `U0001`–`U0010`): `apply` bloquea la cola mientras escribe. En ese caso, el cierre se hace una sola vez, cuando hayan terminado todas. Lo que acabe en `work_queue/manual/` (JSON con el texto, el motivo del rechazo y el intento fallido) no se reintenta solo: resúmelo para el usuario.
+Varias sesiones pueden trabajar a la vez si cada una usa un prefijo distinto (p. ej. una con **B** y otra con **M**): `pod.py` bloquea la cola mientras escribe, así que no se pisan. Con el mismo prefijo, en cambio, las dos cogerían el mismo lote y una de ellas traduciría para nada. En ese caso, el cierre se hace una sola vez, cuando hayan terminado todas. Lo que acabe en `work_queue/manual/` (JSON con el texto, el motivo del rechazo y el intento fallido) no se reintenta solo: resúmelo para el usuario.

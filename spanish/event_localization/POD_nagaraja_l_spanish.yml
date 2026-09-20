@@ -1,24 +1,24 @@
-﻿l_english:
+﻿l_spanish:
  
  # Nickname
- nick_scourge_of_sutekh: "the Scourge of Sutekh"
+ nick_scourge_of_sutekh: "el Azote de Sutekh"
 
  # Character Interaction
- podnagaraja_send_childe_to_enoch_interaction: "Send to Enoch"
- podnagaraja_send_childe_to_enoch_interaction_desc: "Send this Nagaraja dynasty member on a one-way journey to the ghost-city of Enoch in the Underworld, where they will serve our clan's interests from beyond the Shroud."
- send_childe_to_enoch_effect_tooltip: "Your childe will depart for the Underworld, never to return. You will gain a modifier and dynasty prestige."
- send_childe_to_enoch_not_primary_heir: "Cannot send your primary heir to Enoch"
+ podnagaraja_send_childe_to_enoch_interaction: "Enviar a Enoch"
+ podnagaraja_send_childe_to_enoch_interaction_desc: "Envía a este miembro de la dinastía Nagaraja en un viaje sin retorno a la ciudad fantasma de Enoch en el Inframundo, donde servirá a los intereses de nuestro clan desde más allá del Velo."
+ send_childe_to_enoch_effect_tooltip: "Tu chiquillo partirá hacia el Inframundo, sin regresar jamás. Ganarás un modificador y prestigio dinástico."
+ send_childe_to_enoch_not_primary_heir: "No puedes enviar a tu heredero principal a Enoch"
 
  # ============================
  # Feature 1 Events
  # ============================
 
- podnagaraja.1.t: "Purge of the Serpent"
- podnagaraja.1.desc: "It is done. The last of the Daitya and their Setite cousins have been driven from the courts of India and the highlands of Tibet. No longer will the children of Sutekh whisper their lies in the ears of the subcontinent's rulers. A new age dawns for the Nagaraja -- one where we stand as the undisputed masters of the night in our ancestral homeland."
- podnagaraja.1.a: "Let them speak of this victory for centuries to come."
+ podnagaraja.1.t: "Purga de la Serpiente"
+ podnagaraja.1.desc: "Está hecho. Los últimos de los Daitya y sus primos Setitas han sido expulsados de las cortes de la India y de las tierras altas del Tíbet. Los hijos de Sutekh ya no susurrarán sus mentiras al oído de los gobernantes del subcontinente. Una nueva era despunta para los Nagaraja, una en la que nos erigimos como los dueños indiscutibles de la noche en nuestra Tierra Natal ancestral."
+ podnagaraja.1.a: "Que hablen de esta victoria durante los siglos venideros."
 
- podnagaraja.2.desc: "Word has reached you that a Nagaraja ruler has driven the last of the Setite and Daitya influences from India and Tibet. The balance of power in the region has shifted dramatically."
- podnagaraja.2.a: "The nights are changing."
+ podnagaraja.2.desc: "Te ha llegado la noticia de que un gobernante Nagaraja ha expulsado los últimos vestigios de la influencia Setita y Daitya de la India y el Tíbet. El equilibrio de poder en la región ha cambiado drásticamente."
+ podnagaraja.2.a: "Las noches están cambiando."
 
  # ============================
  # Feature 2 Events (Journey)
@@ -26,226 +26,226 @@
  # ============================
 
  # --- Event 10: Arrival/Setup ---
- podnagaraja.10.t: "The Shroud Parts"
- podnagaraja.10.desc: "The rituals are complete, the preparations made. As the Shroud parts before you like a curtain of cold mist, the Underworld opens its maw. The air grows thick with whispers and the temperature drops to something far beyond cold. The path to Enoch lies ahead -- treacherous, unknowable, and filled with things that even a Nagaraja should fear."
- podnagaraja.10.a: "Begin the descent."
- podnagaraja.10.a.tt: "Your pilgrimage through the Underworld begins..."
+ podnagaraja.10.t: "El Velo se desgarra"
+ podnagaraja.10.desc: "Los rituales se han completado, los preparativos están hechos. Mientras el Velo se desgarra ante ti como un telón de niebla fría, el Inframundo abre sus fauces. El aire se vuelve denso con susurros y la temperatura desciende a niveles que van mucho más allá del frío. El camino hacia Enoch yace ante ti: traicionero, incognoscible y lleno de cosas que incluso un Nagaraja debería temer."
+ podnagaraja.10.a: "Comenzar el descenso."
+ podnagaraja.10.a.tt: "Tu peregrinaje por el Inframundo comienza..."
 
  # --- Event 12: Entering the Shadowlands (Pool) ---
- podnagaraja.12.t: "Entering the Shadowlands"
- podnagaraja.12.desc: "The [UmbraGlossary('shadowlands')] stretch before you -- a grey mirror of the world you left behind, populated by the restless dead and things far worse. The boundary between the living world and the deeper Underworld is thin here. Your Nagaraja blood sings in recognition."
- podnagaraja.12.a: "Focus on the path."
- podnagaraja.12.b: "Open my senses to the dead."
- podnagaraja.12.b.success: "Your senses expand. The dead whisper useful truths"
- podnagaraja.12.b.failure: "The flood of spectral sensation overwhelms you momentarily"
+ podnagaraja.12.t: "Entrando en las Tierras de las Sombras"
+ podnagaraja.12.desc: "Las [UmbraGlossary('shadowlands')] se extienden ante ti: un espejo gris del mundo que dejaste atrás, poblado por los muertos inquietos y cosas mucho peores. La frontera entre el mundo de los vivos y las profundidades del Inframundo es delgada aquí. Tu sangre Nagaraja canta en reconocimiento."
+ podnagaraja.12.a: "Concéntrate en el camino."
+ podnagaraja.12.b: "Abro mis sentidos a los muertos."
+ podnagaraja.12.b.success: "Tus sentidos se expanden. Los muertos susurran verdades útiles"
+ podnagaraja.12.b.failure: "El torrente de sensaciones espectrales te abruma momentáneamente"
 
  # --- Event 13: The Tempest (Pool) ---
- podnagaraja.13.t: "The Tempest"
- podnagaraja.13.desc: "Between the [UmbraGlossary('shadowlands')] and the deeper reaches of the Underworld lies the [UmbraGlossary('tempest')] -- a howling maelstrom of spectral energy that has consumed countless souls. It batters you with winds that carry the screams of the damned. There are ways through, but none of them are pleasant."
- podnagaraja.13.a: "Press through with discipline."
- podnagaraja.13.a.success: "You force your way through the worst of the storm"
- podnagaraja.13.a.failure: "The Tempest batters you mercilessly"
- podnagaraja.13.b: "Use necromancy to calm the dead winds."
- podnagaraja.13.b.tt: "Advanced Necromancy guarantees success"
- podnagaraja.13.b.success: "Your mastery of the dead quiets the storm around you."
- podnagaraja.13.b.failure: "Your necromantic skill is insufficient to tame the Tempest."
- podnagaraja.13.c: "Wait for it to pass."
+ podnagaraja.13.t: "La Tempestad"
+ podnagaraja.13.desc: "Entre las [UmbraGlossary('shadowlands')] y los confines más profundos del Inframundo se encuentra la [UmbraGlossary('tempest')]: un torbellino aullante de energía espectral que ha consumido incontables almas. Te azota con vientos que portan los gritos de los condenados. Hay formas de atravesarlo, pero ninguna es agradable."
+ podnagaraja.13.a: "Avanzar con disciplina."
+ podnagaraja.13.a.success: "Logras abrirte paso a través de lo peor de la tormenta"
+ podnagaraja.13.a.failure: "La Tempestad te azota sin piedad"
+ podnagaraja.13.b: "Usa la necromancia para calmar los vientos de los muertos."
+ podnagaraja.13.b.tt: "La Necromancia avanzada garantiza el éxito"
+ podnagaraja.13.b.success: "Tu maestría sobre los muertos aquieta la tormenta a tu alrededor."
+ podnagaraja.13.b.failure: "Tu habilidad necromántica es insuficiente para domar la Tempestad."
+ podnagaraja.13.c: "Esperar a que pase."
 
  # --- Event 14: Whispers of the Drowned (Pool) ---
- podnagaraja.14.t: "Whispers of the Drowned"
- podnagaraja.14.desc: "Spectres gather at the edges of your perception, drawn by the warmth of your stolen life-force. Ghosts of those consumed by the Nagaraja over centuries -- they remember what was done to them. They offer knowledge, warnings, lies. It is impossible to tell which is which."
- podnagaraja.14.a: "Command them to guide me."
- podnagaraja.14.a.success: "The spectres bend to your will and reveal useful paths"
- podnagaraja.14.a.failure: "The spectres resist your commands with spite"
- podnagaraja.14.b: "Ignore them and walk on."
- podnagaraja.14.c: "Devour their ectoplasm for strength."
- podnagaraja.14.c.tt: "Sate your hunger on spectral essence"
+ podnagaraja.14.t: "Susurros de los Ahogados"
+ podnagaraja.14.desc: "Los Espectros se reúnen en los límites de tu percepción, atraídos por el calor de tu fuerza vital robada. Fantasmas de aquellos consumidos por los Nagaraja a lo largo de los siglos: recuerdan lo que se les hizo. Ofrecen conocimiento, advertencias, mentiras. Es imposible distinguir cuál es cuál."
+ podnagaraja.14.a: "Ordénnales que me guíen."
+ podnagaraja.14.a.success: "Los Espectros se doblegan ante tu voluntad y revelan caminos útiles"
+ podnagaraja.14.a.failure: "Los Espectros resisten tus órdenes con rencor"
+ podnagaraja.14.b: "Ignóralos y sigue adelante."
+ podnagaraja.14.c: "Devora su ectoplasma para ganar fuerzas."
+ podnagaraja.14.c.tt: "Sacia tu Ansia con esencia espectral"
 
  # --- Event 15: The False Necropolis (Pool) ---
- podnagaraja.15.t: "The False Necropolis"
- podnagaraja.15.desc: "A vast city rises from the spectral fog -- towers, walls, gates that look impossibly ancient. For a moment, your blood surges with recognition. Enoch? No. Something is wrong. The proportions are subtly off, the architecture a convincing forgery. This is a trap, built to ensnare pilgrims who do not know the true city."
- podnagaraja.15.a: "Investigate cautiously -- there may be useful salvage."
- podnagaraja.15.a.success: "Among the debris, you find a journal left by a previous pilgrim"
- podnagaraja.15.a.failure: "The false city's defenses catch you off guard"
- podnagaraja.15.b: "Avoid it entirely."
- podnagaraja.15.c: "Destroy it so no other Nagaraja falls for this trick."
+ podnagaraja.15.t: "La Falsa Necrópolis"
+ podnagaraja.15.desc: "Una vasta ciudad surge de la niebla espectral: torres, murallas y puertas que parecen increíblemente antiguas. Por un momento, tu sangre late con reconocimiento. ¿Enoch? No. Algo va mal. Las proporciones son sutilmente erróneas, la arquitectura una falsificación convincente. Esto es una trampa, construida para atrapar a los peregrinos que no conocen la verdadera ciudad."
+ podnagaraja.15.a: "Investigar con cautela; puede haber restos útiles."
+ podnagaraja.15.a.success: "Entre los escombros, encuentras un diario dejado por un peregrino anterior"
+ podnagaraja.15.a.failure: "Las defensas de la ciudad falsa te pillan desprevenido"
+ podnagaraja.15.b: "Evitarla por completo."
+ podnagaraja.15.c: "Destruirla para que ningún otro Nagaraja caiga en este truco."
 
  # --- Event 16: A Spectral Anomaly (Pool) ---
- podnagaraja.16.t: "A Spectral Anomaly"
- podnagaraja.16.desc: "A pocket of raw Underworld energy blocks the path ahead -- a churning vortex of spectral force that warps the very fabric of the Shadowlands around it. The dead avoid this place. Even wraiths give it a wide berth."
- podnagaraja.16.a: "Go through it."
- podnagaraja.16.a.success: "The energy scours you but leaves you stronger"
- podnagaraja.16.a.failure: "The anomaly tears at your essence"
- podnagaraja.16.b: "Go around."
- podnagaraja.16.c: "Study the anomaly from a safe distance."
- podnagaraja.16.c.success: "You glean insights into the nature of the Underworld"
- podnagaraja.16.c.failure: "The anomaly defies comprehension"
+ podnagaraja.16.t: "Una Anomalía Espectral"
+ podnagaraja.16.desc: "Una bolsa de energía pura del Inframundo bloquea el camino; un vórtice agitado de fuerza espectral que deforma el tejido mismo de las Tierras de las Sombras a su alrededor. Los muertos evitan este lugar. Incluso los wraiths le dan una amplia distancia."
+ podnagaraja.16.a: "Atravesarlo."
+ podnagaraja.16.a.success: "La energía te sacude, pero te deja más fuerte"
+ podnagaraja.16.a.failure: "La anomalía desgarra tu esencia"
+ podnagaraja.16.b: "Da la vuelta."
+ podnagaraja.16.c: "Estudia la anomalía desde una distancia segura."
+ podnagaraja.16.c.success: "Obtienes información sobre la naturaleza del Inframundo"
+ podnagaraja.16.c.failure: "La anomalía desafía toda comprensión"
 
  # --- Event 17: The Wraith Market (Pool) ---
- podnagaraja.17.t: "The Wraith Market"
- podnagaraja.17.desc: "A gathering of wraiths are trading among themselves in a hollow between the Tempest winds. They deal in memories, regrets, and fragments of the living world. Some of them have been here since before the fall of Rome. They eye you with a mixture of fear and hunger -- the Nagaraja are known to the dead."
- podnagaraja.17.a: "Trade gold for intelligence."
- podnagaraja.17.b: "Devour one of them."
- podnagaraja.17.b.tt: "Sate your hunger, but the dead will remember"
- podnagaraja.17.c: "Ignore them and press on."
+ podnagaraja.17.t: "El Mercado de los wraiths"
+ podnagaraja.17.desc: "Una reunión de wraiths comercian entre ellos en un vacío entre los vientos de la Tempestad. Negocian con recuerdos, remordimientos y fragmentos del mundo de los vivos. Algunos de ellos han estado aquí desde antes de la caída de Roma. Te observan con una mezcla de miedo y Ansia; los Nagaraja son conocidos por los muertos."
+ podnagaraja.17.a: "Cambia oro por información."
+ podnagaraja.17.b: "Devora a uno de ellos."
+ podnagaraja.17.b.tt: "Sacia tu Ansia, pero los muertos lo recordarán"
+ podnagaraja.17.c: "Ignóralos y sigue adelante."
 
  # --- Event 18: Echoes of the Silk Road (Pool) ---
- podnagaraja.18.t: "Echoes of the Silk Road"
- podnagaraja.18.desc: "The path passes through the spectral echo of a destroyed Silk Road city. Ghostly merchants still ply their wares in an endless loop, unaware that they and their city perished centuries ago. The buildings shimmer with faded grandeur, and somewhere deep in the ruins, something old waits."
- podnagaraja.18.a: "Search the ruins for hidden knowledge."
- podnagaraja.18.a.success: "You uncover forgotten lore among the spectral ruins"
- podnagaraja.18.a.failure: "The ruins yield nothing but dust and disappointment"
- podnagaraja.18.b: "Investigate the ghostly inhabitants."
- podnagaraja.18.b.success: "The ghosts share memories of dynasties long forgotten"
- podnagaraja.18.b.failure: "The ghosts recoil from your presence"
- podnagaraja.18.c: "Record what I see and move on."
+ podnagaraja.18.t: "Ecos de la Ruta de la Seda"
+ podnagaraja.18.desc: "El Camino pasa por el eco espectral de una ciudad destruida de la Ruta de la Seda. Mercaderes fantasmales siguen ofreciendo sus mercancías en un bucle infinito, sin saber que ellos y su ciudad perecieron hace siglos. Los edificios brillan con una grandeza desvanecida y, en algún lugar profundo de las ruinas, algo antiguo aguarda."
+ podnagaraja.18.a: "Busca conocimiento oculto entre las ruinas."
+ podnagaraja.18.a.success: "Descubres saberes olvidados entre las ruinas espectrales"
+ podnagaraja.18.a.failure: "Las ruinas no ofrecen más que polvo y decepción"
+ podnagaraja.18.b: "Investiga a los habitantes fantasmales."
+ podnagaraja.18.b.success: "Los fantasmas comparten recuerdos de dinastías olvidadas hace mucho tiempo"
+ podnagaraja.18.b.failure: "Los fantasmas retroceden ante tu Presencia"
+ podnagaraja.18.c: "Registraré lo que vea y seguiré adelante."
 
  # --- Event 19: A Fellow Traveler (Pool) ---
- podnagaraja.19.t: "A Fellow Traveler"
- podnagaraja.19.desc: "A figure emerges from the spectral fog -- another Nagaraja, returning from Enoch on a Tal'Mahe'Ra mission. She is gaunt, her eyes hollow from the journey, but she carries herself with the quiet confidence of one who has survived the deep Underworld. She offers to share intelligence."
- podnagaraja.19.a: "Share intelligence freely -- we are kin."
- podnagaraja.19.a.tt: "There is a small risk she may not be what she seems"
- podnagaraja.19.b: "Trade information for information."
- podnagaraja.19.b.success: "A fair exchange. You learn things of value"
- podnagaraja.19.b.failure: "She gives you nothing useful"
- podnagaraja.19.c: "Decline her company -- I travel alone."
- podnagaraja.19.d: "She looks hungry -- offer to share my Viscus supplies."
- podnagaraja.19.d.tt: "Your generosity will be remembered by the clan"
+ podnagaraja.19.t: "Una compañera de Viaje"
+ podnagaraja.19.desc: "Una figura emerge de la niebla espectral: otra Nagaraja que regresa de Enoch en una Misión de la Tal'Mahe'Ra. Está demacrada, con los ojos hundidos por el Viaje, pero se desenvuelve con la serena confianza de quien ha sobrevivido a las profundidades del Inframundo. Se ofrece a compartir información."
+ podnagaraja.19.a: "Compartir información libremente; somos parientes."
+ podnagaraja.19.a.tt: "Existe un pequeño riesgo de que no sea lo que parece"
+ podnagaraja.19.b: "Intercambia información por información."
+ podnagaraja.19.b.success: "Un intercambio justo. Aprendes cosas de valor"
+ podnagaraja.19.b.failure: "No te da nada útil"
+ podnagaraja.19.c: "Rechaza su compañía; viajo solo."
+ podnagaraja.19.d: "Parece tener Ansia; ofrécele compartir mis suministros de Viscus."
+ podnagaraja.19.d.tt: "Tu generosidad será recordada por el clan"
 
  # --- Event 20: Gates of Enoch (Final) ---
- podnagaraja.20.t: "The Gates of Enoch"
- podnagaraja.20.desc: "Before you rise the impossibly ancient gates of Enoch, the First City, now a ghost of its former glory deep within the Underworld. The air thrums with a power older than recorded history. This is a place where the boundaries between life and death, knowledge and madness, all dissolve. You stand at the threshold of the greatest mystery the Nagaraja have ever known. The Del'Roh's servants watch from the shadows, measuring your worth."
- podnagaraja.20.a: "Enter and pay respects to the Del'Roh."
- podnagaraja.20.a.tt: "You will gain the Pilgrim of Enoch trait, prestige, and dynasty prestige"
- podnagaraja.20.b: "Enter and study the libraries of Brujah."
- podnagaraja.20.c: "Remain in Enoch and serve."
- podnagaraja.20.c.tt: "You will enter torpor, gain the Pilgrim of Enoch trait, and earn great dynasty prestige"
+ podnagaraja.20.t: "Las Puertas de Enoch"
+ podnagaraja.20.desc: "Ante ti se alzan las puertas imposiblemente antiguas de Enoch, la Primera Ciudad, ahora un fantasma de su antigua gloria en las profundidades del Inframundo. El aire vibra con un poder más antiguo que la historia registrada. Este es un lugar donde los límites entre la vida y la muerte, el conocimiento y la locura, se disuelven por completo. Te encuentras ante el umbral del mayor misterio que los Nagaraja han conocido jamás. Los siervos del Del'Roh observan desde las sombras, midiendo tu valía."
+ podnagaraja.20.a: "Entra y rinde respeto al Del'Roh."
+ podnagaraja.20.a.tt: "Ganarás el rasgo Peregrino de Enoch, prestigio y prestigio dinástico"
+ podnagaraja.20.b: "Entra y estudia las bibliotecas de Brujah."
+ podnagaraja.20.c: "Permanece en Enoch y sirve."
+ podnagaraja.20.c.tt: "Entrarás en Letargo, ganarás el rasgo Peregrino de Enoch y obtendrás un gran prestigio dinástico"
 
  # --- Event 21: Fellow Traveler Spy Follow-up ---
- podnagaraja.21.t: "A Betrayal in the Shadows"
- podnagaraja.21.desc: "Something is wrong. Intelligence you shared with the fellow traveler has surfaced in places it should not have. Either she was not who she claimed, or she traded your secrets to others. The damage may already be done."
- podnagaraja.21.a: "Investigate the betrayal."
- podnagaraja.21.a.success: "You detect the deception before real harm is done"
- podnagaraja.21.a.failure: "Your secrets have already spread. The damage is real"
- podnagaraja.21.b: "Let it go -- some information is expendable."
+ podnagaraja.21.t: "Una traición en las sombras"
+ podnagaraja.21.desc: "Algo va mal. La información que compartiste con la compañera de Viaje ha aparecido en lugares donde no debería haber estado. O bien ella no era quien decía ser, o bien vendió tus secretos a otros. El Daño puede estar ya hecho."
+ podnagaraja.21.a: "Investiga la traición."
+ podnagaraja.21.a.success: "Detectas el engaño antes de que se cause un daño real"
+ podnagaraja.21.a.failure: "Tus secretos ya se han difundido. El daño es real"
+ podnagaraja.21.b: "Déjalo pasar; algo de información es prescindible."
 
  # ============================
  # Feature 4 Events
  # ============================
 
- podnagaraja.100.t: "Preparations"
- podnagaraja.100.desc: "The Silent Conclave requires careful preparation. Messages must be sent through channels that even other vampires cannot trace, ritual materials gathered from the [UmbraGlossaryLocalized('shadowlands','Underworld')], and a secure location identified. The work is tedious but necessary."
- podnagaraja.100.a: "Begin the preparations."
- podnagaraja.100.a.tt: "The conclave will gather in one month"
+ podnagaraja.100.t: "Preparativos"
+ podnagaraja.100.desc: "El Cónclave Silencioso requiere una preparación cuidadosa. Se deben enviar mensajes a través de canales que ni siquiera otros vampiros puedan rastrear, reunir materiales rituales del [UmbraGlossaryLocalized('shadowlands','Inframundo')] e identificar un lugar seguro. La tarea es tediosa pero necesaria."
+ podnagaraja.100.a: "Comenzar los preparativos."
+ podnagaraja.100.a.tt: "El cónclave se reunirá en un mes"
 
- podnagaraja.101.t: "The Gathering"
- podnagaraja.101.desc: "They arrive one by one, emerging from shadows and stepping through the Shroud itself. Your fellow Nagaraja, each carrying secrets and knowledge from their own domains. The Silent Conclave is convened. The question is: what shall be its focus?"
- podnagaraja.101.a: "Focus on matters of intrigue and protection."
- podnagaraja.101.a.tt: "The conclave will discuss methods of defense and subterfuge"
- podnagaraja.101.b: "Focus on necromantic studies and rituals."
- podnagaraja.101.b.tt: "The conclave will explore deeper mysteries of death"
+ podnagaraja.101.t: "La Reunión"
+ podnagaraja.101.desc: "Llegan uno a uno, emergiendo de las sombras y cruzando el Velo mismo. Tus compañeros Nagaraja, cada uno portando secretos y conocimientos de sus propios dominios. El Cónclave Silencioso ha sido convocado. La pregunta es: ¿cuál será su objetivo?"
+ podnagaraja.101.a: "Centrarse en asuntos de intriga y protección."
+ podnagaraja.101.a.tt: "El cónclave discutirá métodos de defensa y subterfugio"
+ podnagaraja.101.b: "Centrarse en estudios nigrománticos y rituales."
+ podnagaraja.101.b.tt: "El cónclave explorará misterios más profundos de la muerte"
 
- podnagaraja.102.t: "The Offering"
- podnagaraja.102.desc: "At the heart of every Silent Conclave lies the Offering -- a ritual that taps into the Nagaraja's unique connection to the Underworld. Flesh must be offered to fuel the rite, as is the way of our clan."
- podnagaraja.102.a: "Offer freely and generously."
- podnagaraja.102.b: "Make only a token offering."
+ podnagaraja.102.t: "La Ofrenda"
+ podnagaraja.102.desc: "En el corazón de cada Cónclave Silencioso reside la Ofrenda: un ritual que aprovecha la conexión única de los Nagaraja con el Inframundo. Se debe ofrecer carne para alimentar el rito, como es la costumbre de nuestro clan."
+ podnagaraja.102.a: "Ofrecer libre y generosamente."
+ podnagaraja.102.b: "Hacer solo una ofrenda simbólica."
 
  podnagaraja.103.t: "Descubrimiento"
- podnagaraja.103.desc: "The conclave drew attention. Someone -- mortal or otherwise -- has noticed the gathering and may have witnessed things that should remain hidden. The evidence must be dealt with before the Masquerade is compromised further."
- podnagaraja.103.a: "Pay to cover our tracks."
- podnagaraja.103.a.tt: "Spend gold to eliminate the evidence"
- podnagaraja.103.b: "Scatter and hope for the best."
+ podnagaraja.103.desc: "El cónclave ha llamado la atención. Alguien —mortal o de otro tipo— ha notado la reunión y puede haber presenciado cosas que deberían permanecer ocultas. Se debe lidiar con las pruebas antes de que la Mascarada se vea más comprometida."
+ podnagaraja.103.a: "Pagar para cubrir nuestros rastros."
+ podnagaraja.103.a.tt: "Gastar oro para eliminar las pruebas"
+ podnagaraja.103.b: "Dispersarse y esperar lo mejor."
 
  # ============================
  # Feature 6 Events
  # ============================
 
- podnagaraja.200.t: "The Itarajana Practitioner"
- podnagaraja.200.desc: "Word of your search for an Itarajana sorcerer has borne fruit. A practitioner of the ancient Hindu blood sorcery tradition has been located and brought before you. [new_sorcerer.GetHerHis|U] knowledge of mystical arts native to the subcontinent could prove invaluable."
- podnagaraja.200.a: "Welcome [new_sorcerer.GetHerHim] into our service."
- podnagaraja.200.a.tt: "[new_sorcerer.GetShortUIName|U] will be bound as your [ghoul|E] and join your court"
+ podnagaraja.200.t: "El Practicante Itarajana"
+ podnagaraja.200.desc: "Las noticias sobre tu búsqueda de un hechicero Itarajana han dado frutos. Se ha localizado a un practicante de la antigua tradición de Hechicería de Sangre hindú y se le ha traído ante ti. [new_sorcerer.GetHerHis|U] conocimiento de las artes místicas nativas del subcontinente podría resultar invaluable."
+ podnagaraja.200.a: "Dar la bienvenida a [new_sorcerer.GetHerHim] a nuestro servicio."
+ podnagaraja.200.a.tt: "[new_sorcerer.GetShortUIName|U] será [new_sorcerer.GetHerHis|U] vinculado como tu [ghoul|E] y se unirá a tu corte"
 
- podnagaraja.201.t: "The Sorcerer's Research"
- podnagaraja.201.desc: "Your Itarajana sorcerer [sorcerer.GetFirstName] has been conducting research at your court, delving into the intersection of Hindu mysticism and the necromantic arts. [sorcerer.GetSheHe|U] approaches you with [sorcerer.GetHerHis] findings."
- podnagaraja.201.a: "Encourage [sorcerer.GetHerHis] continued research."
- podnagaraja.201.b: "Exploit [sorcerer.GetHerHis] knowledge for immediate gain."
+ podnagaraja.201.t: "La investigación del hechicero"
+ podnagaraja.201.desc: "Tu hechicero Itarajana, [sorcerer.GetFirstName], ha estado realizando investigaciones en tu corte, profundizando en la intersección entre el misticismo hindú y las artes nigrománticas. [sorcerer.GetSheHe|U] se acerca a ti con [sorcerer.GetHerHis] hallazgos."
+ podnagaraja.201.a: "Fomentar [sorcerer.GetHerHis] investigación continua."
+ podnagaraja.201.b: "Explotar [sorcerer.GetHerHis] conocimiento para obtener beneficios inmediatos."
 
  # ============================
  # Feature 3 Events
  # ============================
 
- podnagaraja.300.t: "A Journey Beyond Return"
- podnagaraja.300.desc: "You stand before [recipient.GetFirstNameNoTooltip], your childe, prepared to send them on the most solemn of duties -- a one-way pilgrimage to the ghost-city of Enoch. There, they will serve the clan's interests from beyond the Shroud, maintaining connections that the living cannot."
- podnagaraja.300.a: "Go forth and serve our clan in the world beyond."
- podnagaraja.300.a.tt: "[recipient.GetFirstNameNoTooltip] will depart for the Underworld, never to return. You will gain prestige and be honored by your dynasty."
+ podnagaraja.300.t: "Un Viaje sin Retorno"
+ podnagaraja.300.desc: "Te encuentras ante [recipient.GetFirstNameNoTooltip], tu chiquillo, preparado para enviarle al cumplimiento del deber más solemne: una peregrinación de ida a la ciudad fantasma de Enoch. Allí, servirá los intereses del clan desde el otro lado del Velo, manteniendo conexiones que los vivos no pueden."
+ podnagaraja.300.a: "Ve y sirve a nuestro clan en el mundo de ultratumba."
+ podnagaraja.300.a.tt: "[recipient.GetFirstNameNoTooltip] partirá hacia el Inframundo, para no volver jamás. Ganarás prestigio y serás honrado por tu dinastía."
  podnagaraja.300.b: "He cambiado de opinión."
- podnagaraja.300.b.tt: "[recipient.GetFirstNameNoTooltip] remains at your court"
+ podnagaraja.300.b.tt: "[recipient.GetFirstNameNoTooltip] permanece en tu corte"
 
  # ============================
  # Feature 5 Events
  # ============================
 
- podnagaraja.400.t: "The Flesh-Eater's Risk"
- podnagaraja.400.desc: "The hunger gnaws. Not the mere thirst for blood that afflicts lesser vampires, but the deeper, more terrible craving that defines the Nagaraja -- the need for living flesh. The curse demands to be sated, and the longer you resist, the more dangerous the eventual feeding becomes."
- podnagaraja.400.a: "Feed carefully, stalking a victim with precision."
- podnagaraja.400.b: "Feed recklessly and sate the hunger fully."
- podnagaraja.400.b.tt: "There is a risk that evidence of your feeding will be discovered"
- podnagaraja.400.c: "Feed on one of my ghouls instead."
- podnagaraja.400.c.tt: "Safe, but your ghoul will not appreciate it"
- podnagaraja.400.d: "Endure the hunger through sheer will."
+ podnagaraja.400.t: "El riesgo del devorador de carne"
+ podnagaraja.400.desc: "El Ansia corroe. No es la mera sed de sangre que aflige a los vampiros menores, sino el deseo más profundo y terrible que define a los Nagaraja: la necesidad de carne viva. La maldición exige ser saciada, y cuanto más te resistas, más peligroso será el festín final."
+ podnagaraja.400.a: "Alimentarse con cuidado, acechando a una víctima con precisión."
+ podnagaraja.400.b: "Alimentarse imprudentemente y saciar el Ansia por completo."
+ podnagaraja.400.b.tt: "Existe el riesgo de que se descubran las pruebas de tu festín"
+ podnagaraja.400.c: "Aliméntate de uno de mis ghouls en su lugar."
+ podnagaraja.400.c.tt: "Seguro, pero tu Ghoul no lo agradecerá"
+ podnagaraja.400.d: "Soporta el Ansia mediante pura fuerza de voluntad."
 
- podnagaraja.401.t: "Evidence Discovered"
- podnagaraja.401.desc: "Your reckless feeding has left traces. Someone has found evidence -- perhaps remains, perhaps witnesses, perhaps something worse. The evidence threatens to expose your monstrous nature to those who should never know."
- podnagaraja.401.a: "Pay to have the evidence destroyed."
- podnagaraja.401.a.tt: "Spend gold to make the problem go away"
- podnagaraja.401.b: "Ignore it and move on."
- podnagaraja.401.c: "Frame someone else for the deed."
- podnagaraja.401.c.success: "You successfully frame someone else"
- podnagaraja.401.c.failure: "Your attempt to frame someone else fails"
+ podnagaraja.401.t: "Pruebas descubiertas"
+ podnagaraja.401.desc: "Tu imprudente alimentación ha dejado rastros. Alguien ha encontrado pruebas; tal vez restos, tal vez testigos, tal vez algo peor. Las pruebas amenazan con exponer tu naturaleza monstruosa ante aquellos que nunca deberían saberlo."
+ podnagaraja.401.a: "Paga para que destruyan las pruebas."
+ podnagaraja.401.a.tt: "Gasta oro para hacer desaparecer el problema"
+ podnagaraja.401.b: "Ignóralo y sigue adelante."
+ podnagaraja.401.c: "Culpa a alguien más por el acto."
+ podnagaraja.401.c.success: "Has logrado culpar con éxito a otra persona"
+ podnagaraja.401.c.failure: "Tu intento de culpar a otra persona ha fallado"
 
 
  # ============================
  # Feature 1: Purge the Serpent
  # ============================
 
- purge_serpent_india_decision: "Purge the Serpent from India"
- purge_serpent_india_decision_tooltip: "Drive all Setite and Daitya rulers from the courts of India and Tibet to claim dominance over the subcontinent"
- purge_serpent_india_decision_desc: "The followers of Sutekh -- the Setites and the Daitya -- have long coiled their influence through the courts of India and the monasteries of Tibet. As a Nagaraja, it falls to us to cleanse our homeland of their corrupting presence and establish our dominance over the subcontinent."
- purge_serpent_india_decision_confirm: "The Daitya will know fear"
- purge_serpent_capital_requirement: "Your capital must be in [GetGeographicalRegion('world_india').GetName] or [GetGeographicalRegion('world_tibet').GetName]"
- purge_serpent_no_setite_india: "No Setite or Daitya may hold a county or higher title in [GetGeographicalRegion('world_india').GetName]"
- purge_serpent_no_setite_tibet: "No Setite or Daitya may hold a county or higher title in [GetGeographicalRegion('world_tibet').GetName]"
- purge_serpent_effect_tooltip: "You will be hailed as the Scourge of Sutekh and receive great rewards"
+ purge_serpent_india_decision: "Purga la Serpiente de la India"
+ purge_serpent_india_decision_tooltip: "Expulsa a todos los gobernantes Setita y Daitya de las cortes de la India y el Tíbet para reclamar el dominio sobre el subcontinente"
+ purge_serpent_india_decision_desc: "Los seguidores de Sutekh —los Setitas y los Daitya— han entrelazado su influencia durante mucho tiempo en las cortes de la India y los monasterios del Tíbet. Como Nagaraja, nos corresponde limpiar nuestra Tierra Natal de su presencia corruptora y establecer nuestro dominio sobre el subcontinente."
+ purge_serpent_india_decision_confirm: "Los Daitya conocerán el miedo"
+ purge_serpent_capital_requirement: "Tu capital debe estar en [GetGeographicalRegion('world_india').GetName] o en [GetGeographicalRegion('world_tibet').GetName]"
+ purge_serpent_no_setite_india: "Ningún Setita o Daitya puede poseer un condado o un título de mayor rango en [GetGeographicalRegion('world_india').GetName]"
+ purge_serpent_no_setite_tibet: "Ningún Setita o Daitya puede poseer un condado o un título de mayor rango en [GetGeographicalRegion('world_tibet').GetName]"
+ purge_serpent_effect_tooltip: "Serás aclamado como el Azote de Sutekh y recibirás grandes recompensas"
 
  # ============================
  # Feature 2: Pilgrimage to Enoch
  # ============================
 
  pilgrimage_to_enoch_decision: "Peregrinaje a Enoc"
- pilgrimage_to_enoch_decision_tooltip: "Journey through the Shadowlands to the ghost-city of Enoch and return with forbidden knowledge"
- pilgrimage_to_enoch_decision_desc: "The ghost-city of Enoch lies deep within the [UmbraGlossaryLocalized('shadowlands','Underworld')], a place of terrible power and forbidden knowledge. With mastery of Necromancy and the backing of a loyal [coterie|E], you can make the perilous journey there and return with wisdom beyond mortal comprehension."
- pilgrimage_to_enoch_decision_confirm: "Into the Shadowlands"
- pilgrimage_to_enoch_effect_tooltip: "Begin a [journey|E] to the ghost-city of Enoch in the Underworld"
+ pilgrimage_to_enoch_decision_tooltip: "Viaja a través de las Tierras de las Sombras hasta la ciudad fantasma de Enoch y regresa con conocimientos prohibidos"
+ pilgrimage_to_enoch_decision_desc: "La ciudad fantasma de Enoch se encuentra en lo profundo del [UmbraGlossaryLocalized('shadowlands','Inframundo')], un lugar de poder terrible y conocimiento prohibido. Con el dominio de la Necromancia y el apoyo de una [coterie|E] leal, puedes realizar el peligroso viaje hasta allí y regresar con una sabiduría que escapa a la comprensión mortal."
+ pilgrimage_to_enoch_decision_confirm: "Hacia las Tierras de las Sombras"
+ pilgrimage_to_enoch_effect_tooltip: "Comienza un [journey|E] a la ciudad fantasma de Enoch en el Inframundo"
 
  # ============================
  # Feature 4: Silent Conclave
  # ============================
 
- convene_silent_conclave_decision: "Convene a Silent Conclave"
- convene_silent_conclave_decision_tooltip: "Host a secret gathering of Nagaraja elders to exchange knowledge and perform dark rituals"
- convene_silent_conclave_decision_desc: "The Silent Conclave is a secret gathering of Nagaraja, where forbidden knowledge is exchanged and dark rituals performed in service of the clan. Such gatherings are rare, dangerous, and supremely valuable."
- convene_silent_conclave_decision_confirm: "Let us gather"
- convene_silent_conclave_effect_tooltip: "Host a secret gathering of Nagaraja to exchange knowledge and perform dark rituals"
+ convene_silent_conclave_decision: "Convoca un Cónclave Silencioso"
+ convene_silent_conclave_decision_tooltip: "Organiza una reunión secreta de Antiguos Nagaraja para intercambiar conocimientos y realizar rituales oscuros"
+ convene_silent_conclave_decision_desc: "El Cónclave Silencioso es una reunión secreta de Nagaraja, donde se intercambian conocimientos prohibidos y se realizan rituales oscuros al servicio del clan. Tales reuniones son raras, peligrosas y sumamente valiosas."
+ convene_silent_conclave_decision_confirm: "Reunámonos"
+ convene_silent_conclave_effect_tooltip: "Organiza una reunión secreta de Nagaraja para intercambiar conocimientos y realizar rituales oscuros"
 
  # ============================
  # Feature 6: Recruit Sorcerer
  # ============================
 
- recruit_itarajana_sorcerer_decision: "Recruit an Itarajana Sorcerer"
- recruit_itarajana_sorcerer_decision_tooltip: "Seek out a practitioner of Itarajana blood sorcery and bind them as a ghoul in your service"
- recruit_itarajana_sorcerer_decision_desc: "The Itarajana tradition of blood sorcery draws upon Hindu mystical practices and is native to the Indian subcontinent. A skilled practitioner, properly bound as a ghoul, could prove an invaluable asset to our court."
- recruit_itarajana_sorcerer_decision_confirm: "Their knowledge will serve us"
- recruit_itarajana_region_requirement: "Your capital must be in [GetGeographicalRegion('world_india').GetName], [GetGeographicalRegion('world_tibet').GetName], the [GetGeographicalRegion('world_middle_east').GetName], or the [GetGeographicalRegion('world_steppe').GetName]"
- recruit_itarajana_max_cap: "You cannot have more than 3 #TOOLTIP:GAME_TRAIT,itarajana_sorcerer,[GetNullCharacter] #L Itarajana Sorcerers#!#! at your court"
- recruit_itarajana_ghoul_cap: "You already have the maximum amount of [Concept('ghoul','Ghouls')|E] ([SCOPE.GetValue('ghoul_amount')|0])"
- recruit_itarajana_effect_tooltip: "A [GetTrait('ghoul').GetName(GetNullCharacter)] practitioner of #TOOLTIP:GAME_TRAIT,itarajana_sorcerer,[GetNullCharacter] #L Itarajana Sorcery#!#! will join your court"
+ recruit_itarajana_sorcerer_decision: "Recluta a un Hechicero Itarajana"
+ recruit_itarajana_sorcerer_decision_tooltip: "Busca a un practicante de la Hechicería de Sangre Itarajana y vincúlalo como un Ghoul a tu servicio"
+ recruit_itarajana_sorcerer_decision_desc: "La tradición Itarajana de Hechicería de Sangre se nutre de las prácticas místicas hindúes y es nativa del subcontinente indio. Un practicante hábil, debidamente vinculado como Ghoul, podría resultar un activo invaluable para nuestra corte."
+ recruit_itarajana_sorcerer_decision_confirm: "Su conocimiento nos servirá"
+ recruit_itarajana_region_requirement: "Tu capital debe estar en [GetGeographicalRegion('world_india').GetName], [GetGeographicalRegion('world_tibet').GetName], en el [GetGeographicalRegion('world_middle_east').GetName] o en el [GetGeographicalRegion('world_steppe').GetName]"
+ recruit_itarajana_max_cap: "No puedes tener más de 3 #TOOLTIP:GAME_TRAIT,itarajana_sorcerer,[GetNullCharacter] #L Hechiceros Itarajana#!#! en tu corte"
+ recruit_itarajana_ghoul_cap: "Ya tienes la cantidad máxima de [Concept('ghoul','Ghouls')|E] ([SCOPE.GetValue('ghoul_amount')|0])"
+ recruit_itarajana_effect_tooltip: "Un [GetTrait('ghoul').GetName(GetNullCharacter)] practicante de #TOOLTIP:GAME_TRAIT,itarajana_sorcerer,[GetNullCharacter] #L Hechicería Itarajana#!#! se unirá a tu corte"

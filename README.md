@@ -26,7 +26,7 @@ spanish/ ──build──► mod/  (se sube a Steam)
 ```
 
 - **Marca de «sin traducir»:** un archivo de `spanish/` con nombre `_l_spanish.yml` y cabecera `l_english` está pendiente. `apply` cambia la cabecera a `l_spanish:` cuando el archivo queda completo.
-- **Prefijos de lote:** **U** = actualización · **B** = pendientes · **R** = revisión · **N** = nombres.
+- **Prefijos de lote:** **U** = actualización · **B** = pendientes · **R** = revisión · **N** = nombres · **M** = textos devueltos de `manual/`.
 - **Ahorro:** cada lote lleva solo las entradas del glosario que aparecen en sus textos; los textos repetidos se traducen una vez, y lo que ya está traducido en otra clave con el mismo texto se rellena sin IA (memoria de traducción).
 - **Rechazos:** lo que no pasa la validación vuelve en un lote de reintento con el motivo; si falla dos veces, va a `work_queue/manual/`.
 
@@ -37,10 +37,21 @@ spanish/ ──build──► mod/  (se sube a Steam)
 | `mod/` | Mod listo para Steam (descriptor y `localization/spanish`); lo genera `build` |
 | `tools/pod.py` | Script único (solo biblioteca estándar). `python tools/pod.py -h` |
 | `tools/config.json` | Rutas, tamaño de lote, orden de prioridad, archivos que no se traducen, último commit sincronizado |
-| `tools/glossary.tsv` | Glosario oficial (VEO20 / CK3 / pendiente de verificar). Se edita a mano |
+| `tools/glossary.tsv` | Glosario del proyecto: manda sobre los demás. Se edita a mano |
 | `tools/glossary_mod.tsv` | Generado con `pod.py glossary` a partir de los conceptos ya traducidos del mod |
+| `tools/glossary_books.tsv` | Generado con `tools/extract_glossaries.py` desde los glosarios oficiales en PDF de la raíz |
 | `tools/keep_english.txt` | Claves que se quedan en inglés; `apply` lo amplía solo |
 | `work_queue/` | Cola de lotes y registros de trabajo (no se versiona) |
+
+**Los tres glosarios**, de menor a mayor prioridad: los libros, los conceptos del mod y el del proyecto. Solo las entradas de `glossary.tsv` marcadas con `l` se comprueban con `check --rule glossary`; las de los libros son orientativas y llegan al agente en la cabecera de cada lote.
+
+Para regenerar el de los libros, tras añadir o cambiar un PDF (necesita `pdftotext`):
+
+```bash
+python tools/extract_glossaries.py
+```
+
+Se queda solo con los términos que aparecen en `english/`, descarta las palabras corrientes (frecuentes en la localización inglesa del CK3) y no repite lo que ya está en los otros dos.
 
 ## Modo 1 · Actualización de PoD
 
@@ -101,7 +112,9 @@ Los cambios terminológicos globales (p. ej. Hambre → Ansia) se deciden antes 
 
 Los plazos se cambian en `clean` de `config.json`.
 
-**Lo que se queda en `manual/`** (textos que fallaron dos veces la validación) se puede corregir a mano en `spanish/`, y el siguiente `clean` lo quita de la lista. También se puede devolver a la cola con `clean --requeue`: se convierten en lotes normales (B o R) y otro agente los traduce por el flujo normal, con validación incluida.
+**Lo que se queda en `manual/`** (textos que fallaron dos veces la validación) se puede corregir a mano en `spanish/`, y el siguiente `clean` lo quita de la lista. También se puede devolver a la cola con `clean --requeue`: vuelven como lotes **M** y se traducen por el flujo normal, con validación incluida.
+
+Los lotes M van aparte a propósito: **un agente puede ocuparse de `manual/` mientras otro traduce pendientes**, uno con `--prefix M` y otro con `--prefix B`. Las órdenes que escriben (`apply`, `fix`, `batch`, `sync`, `clean`, `setaside`) se turnan mediante un bloqueo, así que no se pisan. Lo que no conviene es lanzar dos agentes **con el mismo prefijo**: ambos cogerían el mismo lote y uno traduciría para nada.
 
 ## Trabajar con un agente
 
@@ -154,7 +167,7 @@ Todas las órdenes se ejecutan desde la raíz del repositorio (`python tools/pod
 | Preparar la corrección de esos defectos | `python tools/pod.py batch --mode review --rule tokens` |
 | Auditar lo que hizo un agente | `python tools/pod.py verify --all` |
 | Limpiar la cola | `python tools/pod.py clean` (`--dry-run` para simular) |
-| Devolver a la cola lo que quedó en `manual/` | `python tools/pod.py clean --requeue` |
+| Devolver a la cola lo que quedó en `manual/` | `python tools/pod.py clean --requeue` (vuelven como lotes **M**) |
 | Volcar el mod y subir versión | `python tools/pod.py build --version X.Y.Z --sync-supported` (también actualiza la versión de PoD de este README) |
 | Regenerar el glosario del mod | `python tools/pod.py glossary` |
 

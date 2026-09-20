@@ -239,9 +239,10 @@ def validate(en, es):
 # ---------------------------------------------------------------- glosario y lista de conservar
 
 def load_glossary():
-    """glossary.tsv (oficial, manda) + glossary_mod.tsv (conceptos del mod ya traducidos, generado)."""
+    """De menor a mayor prioridad: glossary_books.tsv (glosarios oficiales en PDF),
+    glossary_mod.tsv (conceptos del mod ya traducidos) y glossary.tsv (el nuestro, manda)."""
     rows = {}
-    for fname in ("glossary_mod.tsv", "glossary.tsv"):
+    for fname in ("glossary_books.tsv", "glossary_mod.tsv", "glossary.tsv"):
         f = TOOLS / fname
         if not f.exists():
             continue
@@ -286,6 +287,12 @@ def glossary_for(texts, gloss):
     for g in gloss:
         if g["re"].search(blob):
             out.append(g)
+    # Tope por lote: primero lo nuestro y lo verificado, y dentro de eso los términos más largos,
+    # que son los que un modelo tiene menos posibilidades de acertar por su cuenta.
+    tope = CFG.get("glossary_max_per_batch", 30)
+    if len(out) > tope:
+        out.sort(key=lambda g: ("b" in g["flags"], -len(g["en"])))
+        out = out[:tope]
     return out
 
 
@@ -398,6 +405,11 @@ def git(*args):
 
 
 def cmd_sync(a):
+    with QueueLock():
+        _sync(a)
+
+
+def _sync(a):
     base = a.base or CFG["last_synced_en_commit"]
     dirty = git("status", "--porcelain", "--", CFG["en_dir"]).stdout.strip()
     if dirty and not a.dry_run:
@@ -585,13 +597,14 @@ def batch_order(rel):
     return (splat_of(rel)[0], cat)
 
 
-PREFIX = {"pending": "B", "update": "U", "review": "R", "names": "N"}
+PREFIX = {"pending": "B", "update": "U", "review": "R", "names": "N", "manual": "M"}
+PREFIXES = "BURNM"  # B pendientes · U actualización · R revisión · N nombres · M devueltos de manual/
 
 
 def next_batch_name(prefix="B"):
     """Prefijos: U = actualización, B = pendientes, R = revisión, N = nombres. Numeración común."""
     Q.mkdir(exist_ok=True)
-    existing = [int(m.group(1)) for p in Q.rglob("*.*") if (m := re.match(r"[BURN](\d{4})", p.name))]
+    existing = [int(m.group(1)) for p in Q.rglob("*.*") if (m := re.match(rf"[{PREFIXES}](\d{{4}})", p.name))]
     return f"{prefix}{(max(existing) + 1 if existing else 1):04d}"
 
 
@@ -666,6 +679,11 @@ def chunk(items, max_items=None):
 
 
 def cmd_batch(a):
+    with QueueLock():
+        _batch(a)
+
+
+def _batch(a):
     files = [a.files] if a.files else None
     gloss = load_glossary()
     if a.mode == "names":
@@ -1098,6 +1116,11 @@ def dirty_rels():
 
 
 def cmd_fix(a):
+    with QueueLock():
+        _fix(a)
+
+
+def _fix(a):
     cnt = Counter()
     only = dirty_rels() if a.dirty else None
     if a.dirty:
@@ -1232,9 +1255,9 @@ def _clean(a, now):
         for mode in ("pending", "review"):
             its = [dict(it, tries=0) for it in requeue if (it["es"] == it["en"]) == (mode == "pending")]
             for ch in chunk(its):
-                cnt[f"manual: devueltos a la cola ({PREFIX[mode]})"] += len(ch)
+                cnt["manual: devueltos a la cola (M)"] += len(ch)
                 if not dry:
-                    write_batch(next_batch_name(PREFIX[mode]), mode, ch, gloss, "manual")
+                    write_batch(next_batch_name("M"), mode, ch, gloss, "manual")
 
     # 2. todo/ index/ out/: lotes obsoletos (todo su contenido ya cambió) y archivos huérfanos
     todo, index, out = (Q / "todo"), (Q / "index"), (Q / "out")
@@ -1325,7 +1348,7 @@ def main():
     s.add_argument("--rule", choices=RULES)
     s.add_argument("--files"); s.add_argument("--limit", type=int); s.add_argument("--no-tm", action="store_true")
     s.add_argument("--scope", choices=["all", "update"], default="all", help="update = solo lo que trajo el último sync")
-    s = sp.add_parser("next"); s.add_argument("--show", action="store_true"); s.add_argument("--prefix", choices=list("BURN"))
+    s = sp.add_parser("next"); s.add_argument("--show", action="store_true"); s.add_argument("--prefix", choices=list(PREFIXES))
     s = sp.add_parser("apply"); s.add_argument("names", nargs="*"); s.add_argument("--all", action="store_true")
     s = sp.add_parser("check"); s.add_argument("--files"); s.add_argument("--rule", choices=RULES); s.add_argument("--examples", type=int, default=3)
     s = sp.add_parser("build"); s.add_argument("--version"); s.add_argument("--sync-supported", action="store_true")
