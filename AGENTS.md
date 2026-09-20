@@ -5,7 +5,7 @@ Este repositorio es un mod de traducción. Tu trabajo es traducir o revisar text
 ## Normas innegociables
 
 - **Git:** no hagas `add`, `commit`, `push`, `pull`, `stash`, `reset`, `checkout` ni nada que modifique el repositorio. El usuario se encarga de git. Solo puedes usar `status`, `diff`, `log` y `show`.
-- **Idioma:** castellano (España), con la terminología oficial española de Mundo de Tinieblas (glosario en `tools/glossary.tsv`). Decisiones fijas: el Hunger vampírico (la necesidad de sangre) → Ansia; wraith → wraith (Spectre, que es otra criatura, sí es Espectro); nombres de personajes y dinastías sin traducir, salvo los históricos con forma castellana asentada.
+- **Idioma:** castellano (España), con la terminología oficial española de Mundo de Tinieblas (glosario en `tools/glossary.tsv`). Decisiones fijas: el Hunger vampírico (la necesidad de sangre) → Ansia; wraith → wraith (Spectre, que es otra criatura, sí es Espectro); nombres propios de personajes y dinastías sin traducir, salvo los históricos con forma castellana asentada. En cambio **sí se traducen** los lemas de dinastía (`*_motto`, que son frases) y los nombres formados con nombres comunes ingleses (`Sisters of St-John` → `Hermanas de San Juan`, `Silver-Howl` → `Aullido-de-Plata`).
 - **Tu trabajo termina en `spanish/`.** Nunca ejecutes `python tools/pod.py build` ni toques `mod/` (ni su `descriptor.mod`): volcar al mod y subir la versión lo hace el usuario.
 - **Carpetas intocables:** `mod/` y `english/` (las actualiza el usuario).
 - **Final de cada encargo:** haz siempre «el cierre» (`fix --dirty`, `verify` y `clean`) antes de dar el resumen.

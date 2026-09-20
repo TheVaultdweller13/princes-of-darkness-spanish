@@ -318,6 +318,16 @@ def match_any(rel, pats):
     return any(fnmatch.fnmatch(rel, p) for p in pats)
 
 
+def kept_key(rel, key):
+    """True si esta clave queda fuera de la traducción por 'keep_files'.
+    keep_files aparta archivos de nombres propios, pero esos archivos traen
+    también lemas de dinastía (*_motto), que son frases y sí se traducen:
+    'keep_files_except' lista los patrones de clave que nunca se apartan."""
+    if not match_any(rel, CFG.get("keep_files", [])):
+        return False
+    return not any(fnmatch.fnmatch(key, p) for p in CFG.get("keep_files_except", []))
+
+
 # ---------------------------------------------------------------- estado
 
 def load_pair(rel):
@@ -333,11 +343,11 @@ def pending_items(files=None, keep=None):
     for rel in en_files():
         if files and not match_any(rel, files):
             continue
-        if match_any(rel, CFG.get("keep_files", [])):
-            continue
         en, es = load_pair(rel)
         idx = es.index() if es else {}
         for l in en.kvs():
+            if kept_key(rel, l["key"]):
+                continue
             e = idx.get((l["key"], l["occ"]))
             if e is None or (e["value"] == l["value"] and translatable(l["value"]) and l["key"] not in keep):
                 yield rel, l["key"], l["occ"], l["value"]
@@ -362,12 +372,11 @@ def cmd_status(a):
         idx = es.index() if es else {}
         if es is None or es.header != "l_spanish":
             hdr_en += 1
-        kf = match_any(rel, CFG.get("keep_files", []))
         p = 0
         for l in en.kvs():
             tot += 1
             e = idx.get((l["key"], l["occ"]))
-            if e is None or (not kf and e["value"] == l["value"] and translatable(l["value"]) and l["key"] not in keep):
+            if e is None or (not kept_key(rel, l["key"]) and e["value"] == l["value"] and translatable(l["value"]) and l["key"] not in keep):
                 p += 1
             else:
                 done += 1
@@ -699,6 +708,9 @@ def _batch(a):
             en, es = load_pair(rel)
             idx = es.index() if es else {}
             for l in en.kvs():
+                # los lemas de dinastía viven en estos archivos pero no son nombres: van por el flujo normal
+                if any(fnmatch.fnmatch(l["key"], p) for p in CFG.get("names_exclude", [])):
+                    continue
                 e = idx.get((l["key"], l["occ"]))
                 if not e or e["value"] != l["value"] or not translatable(l["value"]) or (rel, l["key"], l["occ"]) in busy:
                     continue

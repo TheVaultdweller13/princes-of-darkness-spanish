@@ -79,7 +79,11 @@ Lotes con nombres de personajes y de dinastías. Por defecto NO se traducen. Dev
 - Traduce también los epítetos y los «of X» con lugar conocido: `Helen of Genoa` → `Helena de Génova`.
 - NO adaptes nombres corrientes sin fama propia (`Hadmar`, `Aliu`, `Fakhr al-Din`), ni nombres de vampiros inventados por el mod, aunque exista el equivalente español (no pongas `Juan` por `John`).
 - Dinastías: igual criterio. Solo las históricas con forma castellana asentada (`Komnenos` → `Comneno`, `Plantagenet` → `Plantagenet`, `Capet` → `Capeto`); las inventadas por el mod se quedan como están.
+- **Nombres formados con nombres comunes ingleses SÍ se traducen**, aunque el personaje o la dinastía sean inventados: son descripciones, no nombres propios. `Sisters of St-John` → `Hermanas de San Juan` · `Blood Flowers` → `Flores de Sangre` · `The White Lady` → `La Dama Blanca` · `Silver-Howl` → `Aullido-de-Plata` · `Kills-the-Weak` → `Mata-a-los-Débiles`.
+- En los «X of Lugar», cambia siempre `of` por `de` (en español `of` chirría) y pon el topónimo en su forma española si la tiene: `Friedrich of Munich` → `Friedrich de Múnich` · `Robert of Edinburgh` → `Robert de Edimburgo`. El nombre de pila solo se adapta si el personaje es célebre (`Anthony of Padua` → `Antonio de Padua`).
+- Antes de adaptar un nombre, mira cómo lo escribe ya el resto de la traducción (`grep`); si el repositorio usa mayoritariamente la forma inglesa, respétala.
 - Si dudas, déjalo igual (no lo escribas).
+- Los lemas de dinastía (`*_motto`) no salen en estos lotes: son frases y van por el flujo normal de pendientes.
 
 ## Ejemplos
 
