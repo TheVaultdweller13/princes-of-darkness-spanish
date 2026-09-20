@@ -22,11 +22,12 @@ Solo librería estándar. Ejecutar desde cualquier sitio: python tools/pod.py <o
   glossary                   Regenera tools/glossary_mod.tsv a partir de los conceptos del mod ya traducidos.
   setaside LOTE [--split] [--reason R]
                              Aparta un lote que ha fallado entero: lo divide en dos (--split) o lo manda a manual/.
-  clean [--dry-run] [--requeue]
+  clean [--dry-run] [--requeue] [--purge-done]
                              Limpia work_queue: quita de manual/ lo ya corregido, lotes obsoletos y huérfanos,
-                             lotes terminados antiguos y registros caducados. --requeue devuelve manual/ a la cola.
+                             y revisiones cuyo texto ya cambió. done/ y applied.jsonl (el historial) solo se
+                             vacían con --purge-done. --requeue devuelve manual/ a la cola.
 """
-import argparse, fnmatch, json, re, shutil, subprocess, sys
+import argparse, fnmatch, hashlib, json, re, shutil, subprocess, sys
 from collections import Counter, defaultdict
 from pathlib import Path
 
@@ -658,7 +659,9 @@ def write_batch(name, mode, items, gloss, rule=""):
         if mode == "review":
             body.append(f"ES: {it['es']}")
         index[str(n)] = {"en": it["en"], "expect": it["es"] if mode != "pending" else it["en"],
-                         "targets": it["targets"], "tries": it.get("tries", 0)}
+                         "targets": it["targets"], "tries": it.get("tries", 0),
+                         # reglas que motivaron el aviso: si el agente no cambia nada, se dan por revisadas
+                         "rules": it.get("rules", [])}
     (Q / "todo" / f"{name}.txt").write_text("\n".join(body) + "\n", encoding="utf-8")
     (Q / "index" / f"{name}.json").write_text(json.dumps({"mode": mode, "items": index}, ensure_ascii=False, indent=1), encoding="utf-8")
 
@@ -688,6 +691,7 @@ def _batch(a):
     gloss = load_glossary()
     if a.mode == "names":
         busy = queued_ids()
+        revisado = load_reviewed()
         groups = {}
         for rel in en_files():
             if not match_any(rel, CFG["names_files"]):
@@ -698,6 +702,8 @@ def _batch(a):
                 e = idx.get((l["key"], l["occ"]))
                 if not e or e["value"] != l["value"] or not translatable(l["value"]) or (rel, l["key"], l["occ"]) in busy:
                     continue
+                if revisado.get((rel, l["key"], l["occ"], "names")) == huella(e["value"]):
+                    continue  # ya se miró y se dejó tal cual
                 g = groups.setdefault(l["value"], {"rel": rel, "key": l["key"], "en": l["value"], "es": l["value"], "targets": []})
                 g["targets"].append([rel, l["key"], l["occ"]])
         items = list(groups.values())
@@ -816,20 +822,36 @@ def _apply(a):
             m = OUT_RE.match(line)
             if m:
                 got[m.group(1)] = m.group(2)
-        assign, keep, bad = {}, [], []
+        assign, keep, bad, revisadas = {}, [], [], []
+
+        def dar_por_revisado(it):
+            """El agente ha mirado el texto y no lo cambia: se anota para no volver a proponerlo."""
+            for rel, key, occ in it["targets"]:
+                for regla in it.get("rules") or (["names"] if meta["mode"] == "names" else ["*"]):
+                    revisadas.append((rel, key, occ, regla, huella(it["expect"])))
+
         for n, it in items.items():
             if n not in got:
                 if meta["mode"] == "pending":
                     bad.append((n, it, "falta la línea de este número en la salida"))
+                else:
+                    dar_por_revisado(it)
                 continue
             es, errs = validate(it["en"], got[n])
             if errs:
                 bad.append((n, it, "; ".join(errs), got[n]))
                 continue
+            if meta["mode"] != "pending" and es == it["expect"]:
+                dar_por_revisado(it)
+                continue
             for t in it["targets"]:
                 assign[tuple(t)] = (it["expect"], es)
             if meta["mode"] == "pending" and es == it["en"]:
                 keep.extend(t[1] for t in it["targets"])
+        if revisadas and meta["mode"] in ("review", "names"):
+            n_rev = add_reviewed(revisadas)
+            if n_rev:
+                print(f"{name}: {n_rev} revisiones anotadas en tools/{REVIEWED}")
         touched, stale = write_values(assign, keep)
         flip_headers(touched)
         if assign:
@@ -869,6 +891,7 @@ def check_items(files=None, only=None, keys=None):
     keep_display = {g["en"].lower() for g in full if g["en"].lower() == g["es"].lower()} | {k.lower() for k in CFG["keep_display"]}
     customs = vanilla_es_customs()
     keep = load_keep()
+    revisado = load_reviewed()
     rels = sorted({k[0] for k in keys}) if keys is not None else en_files()
     for rel in rels:
         if files and not match_any(rel, files):
@@ -890,41 +913,90 @@ def check_items(files=None, only=None, keys=None):
                     yield {"rel": rel, "key": l["key"], "occ": l["occ"], "en": l["value"], "es": e["value"], "why": "sigue sin traducir"}
                 continue
             ev, sv = l["value"], e["value"]
-            why = []
+            why, reglas = [], []
+            h = huella(sv)
+
+            def anota(_why, _reglas, regla, texto):
+                """Guarda el aviso salvo que ya se revisara este mismo texto con esa regla."""
+                if revisado.get((rel, l["key"], l["occ"], regla)) == h or revisado.get((rel, l["key"], l["occ"], "*")) == h:
+                    return
+                _why.append(texto)
+                _reglas.append(regla)
             if only in (None, "tokens"):
                 d = token_diff(ev, sv)
                 if d:
-                    why.append(d.replace("|", "·"))
+                    anota(why, reglas, 'tokens', d.replace("|", "·"))
             if only in (None, "custom"):
                 bad = [m.group(0) for m in ES_CUSTOM_RE.finditer(sv) if m.group(1) or m.group(2) not in customs]
                 if bad:
-                    why.append("Custom inexistente: " + ",".join(bad))
+                    anota(why, reglas, 'custom', "Custom inexistente: " + ",".join(bad))
             if only in (None, "spaces") and ("  " in sv and "  " not in ev or re.search(r"\s[,.;:](?!\.)", strip_markup(sv, "X")) and not re.search(r"\s[,.;:]", strip_markup(ev, "X"))):
-                why.append("espacios sobrantes")
+                anota(why, reglas, 'spaces', "espacios sobrantes")
             if only in (None, "punct"):
                 plain = strip_markup(sv)
                 if plain.count("?") > plain.count("¿") or plain.count("!") > plain.count("¡"):
-                    why.append("falta ¿ o ¡")
+                    anota(why, reglas, 'punct', "falta ¿ o ¡")
                 elif plain.count("¡") > strip_markup(ev).count("!"):
-                    why.append("¡ que no está en el inglés (¿confusión con el cierre #!?)")
+                    anota(why, reglas, 'punct', "¡ que no está en el inglés (¿confusión con el cierre #!?)")
             if only in (None, "glossary"):
                 pe, ps = strip_markup(ev), strip_markup(sv).lower()
                 for g in gloss:
                     if g["re"].search(pe) and g["es"].lower() not in ps:
-                        why.append(f"glosario: {g['en']} → {g['es']}")
+                        anota(why, reglas, 'glossary', f"glosario: {g['en']} → {g['es']}")
                         break
             if only in (None, "display"):
                 same = [d for d in display_args(sv) if d in display_args(ev) and translatable(d) and d.lower() not in keep_display]
                 if same:
-                    why.append("texto de Glossary/Concept sin traducir: " + ", ".join(sorted(set(same))))
+                    anota(why, reglas, 'display', "texto de Glossary/Concept sin traducir: " + ", ".join(sorted(set(same))))
             if only in (None, "english"):
                 ps = strip_markup(sv)
                 for w in CFG["english_leftovers"]:
                     if re.search(r"(?<![\w'])" + re.escape(w) + r"(?![\w'])", ps):
-                        why.append(f"palabra inglesa: {w}")
+                        anota(why, reglas, 'english', f"palabra inglesa: {w}")
                         break
             if why:
-                yield {"rel": rel, "key": l["key"], "occ": l["occ"], "en": ev, "es": sv, "why": "; ".join(why)}
+                yield {"rel": rel, "key": l["key"], "occ": l["occ"], "en": ev, "es": sv,
+                       "why": "; ".join(why), "rules": reglas}
+
+
+REVIEWED = "reviewed.tsv"  # en tools/, versionado: decisiones de revisión que sobreviven a la cola
+
+
+def huella(texto):
+    """Identifica la versión exacta del texto español revisado."""
+    return hashlib.sha1(texto.encode("utf-8")).hexdigest()[:10]
+
+
+def load_reviewed():
+    """{(rel, clave, ocurrencia, regla): huella} de lo ya revisado y dado por bueno."""
+    f = TOOLS / REVIEWED
+    out = {}
+    if not f.exists():
+        return out
+    for line in f.read_text(encoding="utf-8").splitlines():
+        if not line.strip() or line.startswith("#"):
+            continue
+        c = line.split("\t")
+        if len(c) >= 5:
+            out[(c[0], c[1], int(c[2]), c[3])] = c[4]
+    return out
+
+
+def add_reviewed(filas):
+    """filas: (rel, clave, ocurrencia, regla, huella). Añade solo lo que no estuviera ya igual."""
+    ya = load_reviewed()
+    nuevas = [f for f in filas if ya.get(f[:4]) != f[4]]
+    if not nuevas:
+        return 0
+    import time
+    hoy = time.strftime("%Y-%m-%d")
+    f = TOOLS / REVIEWED
+    cab = "" if f.exists() else (
+        "# Revisiones dadas por buenas: no se vuelven a proponer mientras el texto no cambie.\n"
+        "# archivo\tclave\tocurrencia\tregla\thuella del texto español\tfecha\n")
+    with open(f, "a", encoding="utf-8") as fh:
+        fh.write(cab + "".join("\t".join(map(str, x)) + f"\t{hoy}\n" for x in nuevas))
+    return len(nuevas)
 
 
 APPLIED_LOG = "applied.jsonl"
@@ -1208,7 +1280,6 @@ def cmd_clean(a):
 def _clean(a, now):
     dry = a.dry_run
     cfg = CFG.get("clean", {})
-    keep_done = cfg.get("keep_done_days", 7) * 86400
     keep_log = cfg.get("keep_log_days", 60) * 86400
     cnt = Counter()
     cache = {}
@@ -1279,7 +1350,7 @@ def _clean(a, now):
             cnt["lotes obsoletos (ya resueltos por otra vía)"] += 1
             rm(t); rm(i)
 
-    # 3. done/: lotes aplicados, ya verificados y más antiguos que keep_done_days
+    # 3. done/ y applied.jsonl son el historial de lo hecho: solo se vacían si se pide
     marker = Q / ".verified"
     try:
         verified = float(marker.read_text(encoding="utf-8").strip() or 0) if marker.exists() else 0.0
@@ -1287,16 +1358,39 @@ def _clean(a, now):
         verified = marker.stat().st_mtime
     log = Q / APPLIED_LOG
     records = [json.loads(l) for l in log.read_text(encoding="utf-8").splitlines() if l.strip()] if log.exists() else []
-    applied_at = {}
-    for r in records:
-        applied_at[r["batch"]] = max(applied_at.get(r["batch"], 0), r["at"])
-    for p in sorted((Q / "done").glob("*")) if (Q / "done").exists() else []:
-        name = p.name.split(".")[0]
-        at = applied_at.get(name, p.stat().st_mtime)
-        if at <= verified and now - at > keep_done:
-            rm(p)
+    if a.purge_done:
+        for p in sorted((Q / "done").glob("*")) if (Q / "done").exists() else []:
+            cnt["lotes terminados borrados de done/"] += 1
+            if not dry:
+                p.unlink()
+        if records:
+            cnt["registros de applied.jsonl quitados"] += len(records)
+            if not dry:
+                log.write_text("", encoding="utf-8")
+            records = []
 
-    # 4. applied.jsonl: registros ya verificados y más antiguos que keep_log_days
+    # 4. tools/reviewed.tsv: quitar las revisiones de textos que han cambiado desde entonces
+    rev = load_reviewed()
+    if rev:
+        vivos, cache = {}, {}
+        for (rel, key, occ, regla), h in rev.items():
+            if rel not in cache:
+                cache[rel] = load_pair(rel)[1] if (EN_DIR / rel).exists() else None
+            es = cache[rel]
+            e = es.index().get((key, occ)) if es else None
+            if e and huella(e["value"]) == h:
+                vivos[(rel, key, occ, regla)] = h
+        if len(vivos) < len(rev):
+            cnt["revisiones caducadas (el texto cambió)"] += len(rev) - len(vivos)
+            if not dry:
+                import time as _t
+                hoy = _t.strftime("%Y-%m-%d")
+                (TOOLS / REVIEWED).write_text(
+                    "# Revisiones dadas por buenas: no se vuelven a proponer mientras el texto no cambie.\n"
+                    "# archivo\tclave\tocurrencia\tregla\thuella del texto español\tfecha\n"
+                    + "".join(f"{r}\t{k}\t{o}\t{g}\t{h}\t{hoy}\n" for (r, k, o, g), h in sorted(vivos.items())),
+                    encoding="utf-8")
+
     keep = [r for r in records if r["at"] > verified or now - r["at"] <= keep_log]
     if len(keep) < len(records):
         cnt["registros de applied.jsonl quitados"] += len(records) - len(keep)
@@ -1331,6 +1425,9 @@ def _clean(a, now):
             print(f"{k}: {v}{tag}")
     if not any(cnt.values()):
         print("Nada que limpiar.")
+    if not a.purge_done and (Q / "done").exists() and any((Q / "done").iterdir()):
+        print(f"→ done/ guarda {len(list((Q / 'done').glob('*.json')))} lotes terminados (historial). "
+              f"Para vaciarlo: clean --purge-done")
     if cnt["manual: sin resolver"]:
         print(f"→ {cnt['manual: sin resolver']} textos siguen en work_queue/manual/: corrígelos a mano o "
               f"devuélvelos a la cola con 'clean --requeue' para que los traduzca otro agente.")
@@ -1362,6 +1459,7 @@ def main():
     s.add_argument("--split", action="store_true", help="dividir en dos lotes en vez de mandarlo a manual/")
     s = sp.add_parser("clean"); s.add_argument("--dry-run", action="store_true")
     s.add_argument("--requeue", action="store_true", help="devuelve a la cola lo que siga en manual/")
+    s.add_argument("--purge-done", action="store_true", help="vacía done/ y applied.jsonl (el historial de lo hecho)")
     a = ap.parse_args()
     {"status": cmd_status, "sync": cmd_sync, "batch": cmd_batch, "next": cmd_next, "apply": cmd_apply,
      "check": cmd_check, "build": cmd_build, "glossary": cmd_glossary, "fix": cmd_fix,
