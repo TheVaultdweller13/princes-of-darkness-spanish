@@ -55,7 +55,7 @@ También se pedirá como «los nuevos archivos», «lo nuevo», «la actualizaci
 1. Solo si te lo piden: `python tools/pod.py fix --dry-run` y después `fix`.
 2. `python tools/pod.py check [--rule R] [--files …]`, con R = `tokens`, `custom`, `spaces`, `punct`, `glossary`, `display` o `english`.
 3. `python tools/pod.py batch --mode review --rule R [--files …] [--limit N]`
-4. El bucle con prefijo **R**. Devuelve solo las líneas que cambies.
+4. El bucle con prefijo **R**. Devuelve solo las líneas que cambies: lo que dejes igual se anota como revisado y no se te volverá a proponer mientras ese texto no cambie.
 
 ### «Adapta los nombres de personajes y dinastías»
 1. `python tools/pod.py batch --mode names`
@@ -72,9 +72,9 @@ Son los textos que no pasaron la validación dos veces.
 ## El cierre (siempre, al acabar los lotes)
 
 1. `python tools/pod.py fix --dirty` → arreglos mecánicos (dobles espacios, `GetCustom('ES_O')`, `Concept (`, `| E]`, comillas sin cerrar) solo en los archivos que has tocado.
-2. `python tools/pod.py verify --batch` → revisa **solo las claves que has escrito** y, si hay avisos, crea lotes **R** con ellas.
-3. Si ha creado lotes R, pásalos una vez con el bucle (prefijo **R**) y vuelve a `verify`. Si el segundo intento deja los mismos avisos, no insistas: anótalos en el resumen.
-4. `python tools/pod.py clean` → quita de la cola lo ya resuelto y lo caducado; nunca toca lotes pendientes.
+2. `python tools/pod.py verify --batch --limit 10` → revisa **solo las claves que has escrito** y, si hay avisos, crea como mucho 10 lotes **R** con ellas (el resto saldrá en la siguiente verificación; las claves que ya han dado 3 vueltas de revisión se aparcan solas en `tools/reviewed.tsv`).
+3. Si ha creado lotes R, pasa **esos lotes concretos** una vez con el bucle (no la cola entera: puede arrastrar lotes R de otras sesiones) y vuelve a `verify`. Si el segundo intento deja los mismos avisos, no insistas: anótalos en el resumen.
+4. `python tools/pod.py clean` → quita de la cola lo ya resuelto y lo caducado; nunca toca lotes pendientes ni el historial de `done/`.
 5. `python tools/pod.py status`.
 6. Resumen para el usuario: qué has traducido, qué ha arreglado `fix`, qué avisos quedan y qué hay en `work_queue/manual/`. Recuérdale que `build`, la versión y git son cosa suya.
 

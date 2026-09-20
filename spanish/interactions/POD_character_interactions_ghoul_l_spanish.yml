@@ -28,7 +28,7 @@
  recipient_secondary_POD_ghoul_ghoulify_prisoner_interaction: "Prisionero"
  
  POD_beg_for_vitae_interaction: "Suplicar por el poder de la Vitae"
- POD_beg_for_vitae_interaction_desc: "Suplica a [recipient.GetShortUIName] que te convierta en su [ghoul|E]. Los requisitos para esta interacción se basan en la [Glossary('Generation','game_concept_vampgeneration_desc')] del vampiro."
+ POD_beg_for_vitae_interaction_desc: "Suplica a [recipient.GetShortUIName] que te convierta en su [ghoul|E]. Los requisitos para esta interacción se basan en la [Glossary('Generación','game_concept_vampgeneration_desc')] del vampiro."
  POD_beg_for_vitae_interaction_needed_total_skills: "La suma de tus [skills|E] (excluyendo [prowess|E]) debe superar [SCOPE.GetValue('needed_total_skills')|0V] #weak ([THIS.Char.MakeScope.ScriptValue('sum_of_all_skills_value')])#!"
  
  POD_consume_vitae_of_prisoner_interaction: "Consumir vitae de prisionero"

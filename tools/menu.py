@@ -68,7 +68,23 @@ def ask_int(prompt, default):
 
 
 def queued(prefix):
-    return sorted(TODO.glob(f"{prefix}*.txt")) if TODO.exists() else []
+    return sorted(TODO.glob(f"{prefix or ''}*.txt")) if TODO.exists() else []
+
+
+def ask_limit(prefix, sugerido=None):
+    """Cuántos lotes debe traducir el agente en esta tanda. None = toda la cola.
+
+    La cola puede arrastrar lotes de ejecuciones anteriores, así que el número de lotes recién
+    preparados no dice cuánto trabajo hay: se pregunta siempre."""
+    n = len(queued(prefix))
+    if not n:
+        return None
+    d = min(sugerido or 25, n)  # por defecto, una tanda manejable; «todos» sigue estando a mano
+    print(f"\nHay {n} lotes{f' {prefix}' if prefix else ''} en la cola (unos 40 s cada uno).")
+    v = ask(f"¿Cuántos traducir ahora? («todos» = {n})", str(d))
+    if v.lower().startswith("tod"):
+        return None
+    return int(v) if v.isdigit() and int(v) > 0 else d
 
 
 def title(t):
@@ -106,13 +122,16 @@ def choose_model():
     return model
 
 
-def agent(prefix=None):
-    """Lanza el agente local sobre la cola (con el prefijo dado) y hace el cierre."""
+def agent(prefix=None, limit=None):
+    """Lanza el agente local sobre la cola (con el prefijo dado) y hace el cierre.
+
+    `limit` es el máximo de lotes de esta tanda; None = hasta vaciar la cola."""
     model = choose_model()
     if not model:
         return
     title("Traduciendo con el agente local (Ctrl+C para parar; el lote en curso no se pierde)")
-    run("local_agent.py", *(["--prefix", prefix] if prefix else []), "--model", model, "--close")
+    run("local_agent.py", *(["--prefix", prefix] if prefix else []),
+        *(["--limit", str(limit)] if limit else []), "--model", model, "--close")
     mdir = ROOT / "work_queue" / "manual"
     n = sum(len(json.loads(f.read_text(encoding="utf-8"))) for f in mdir.glob("*.json")) if mdir.exists() else 0
     if n:
@@ -126,7 +145,7 @@ def agent(prefix=None):
 def update():
     title("Actualización de Princes of Darkness")
     if queued("U") and yes(f"Ya hay {len(queued('U'))} lotes U en la cola. ¿Traducirlos sin volver a sincronizar?", True):
-        return agent("U")
+        return agent("U", ask_limit("U"))
     try:
         r = subprocess.run(["git", "status", "--porcelain", "--", EN_DIR], cwd=ROOT,
                            capture_output=True, text=True, encoding="utf-8")
@@ -146,7 +165,7 @@ def update():
         return
     if pod("sync") and pod("batch", "--scope", "update"):
         if queued("U"):
-            agent("U")
+            agent("U", ask_limit("U"))
         else:
             print("\nNo hay nada nuevo que traducir.")
 
@@ -157,11 +176,11 @@ def pending():
     if queued("B"):
         print(f"\nYa hay {len(queued('B'))} lotes B en la cola.")
         if not yes("¿Preparar además lotes nuevos?"):
-            return agent("B")
+            return agent("B", ask_limit("B"))
     n = ask_int("\n¿Cuántos lotes preparar? (unos 30 s cada uno)", 10)
     zone = ask("Zona concreta, p. ej. traits/* (Intro = todo, en el orden de prioridad)")
     if pod("batch", "--limit", str(n), *(["--files", zone] if zone else [])):
-        agent("B")
+        agent("B", ask_limit("B", n))
 
 
 def review():
@@ -189,7 +208,7 @@ def review():
     n = ask_int("¿Cuántos lotes como máximo?", 10)
     if pod("batch", "--mode", "review", "--rule", rule, "--limit", str(n), *files):
         if queued("R"):
-            agent("R")
+            agent("R", ask_limit("R", n))
         else:
             print("\nNo hay nada que corregir con esa regla.")
 
@@ -199,7 +218,7 @@ def resume():
     if not any(queued(p) for p in "UBRNM"):
         print("La cola está vacía.")
         return
-    agent()
+    agent(None, ask_limit(None))
 
 
 def status():
@@ -218,7 +237,7 @@ def manual():
         print("para que esto no se cruce con otro agente que esté traduciendo.")
         if not yes("¿Devolverlos a la cola?", True) or not pod("clean", "--requeue"):
             return
-    agent("M")
+    agent("M", ask_limit("M"))
 
 
 def clean():

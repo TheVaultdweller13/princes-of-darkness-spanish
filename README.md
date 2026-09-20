@@ -41,6 +41,7 @@ spanish/ ──build──► mod/  (se sube a Steam)
 | `tools/glossary_mod.tsv` | Generado con `pod.py glossary` a partir de los conceptos ya traducidos del mod |
 | `tools/glossary_books.tsv` | Generado con `tools/extract_glossaries.py` desde los glosarios oficiales ubicados en docs/ |
 | `tools/keep_english.txt` | Claves que se quedan en inglés; `apply` lo amplía solo |
+| `tools/reviewed.tsv` | Revisiones dadas por buenas; `apply` lo amplía solo. Evita repetir revisiones en cada pasada |
 | `work_queue/` | Cola de lotes y registros de trabajo (no se versiona) |
 
 **Los tres glosarios**, de menor a mayor prioridad: los libros, los conceptos del mod y el del proyecto. Solo las entradas de `glossary.tsv` marcadas con `l` se comprueban con `check --rule glossary`; las de los libros son orientativas y llegan al agente en la cabecera de cada lote.
@@ -93,6 +94,12 @@ Se queda solo con los términos que aparecen en `english/`, descarta las palabra
    - `english`: palabras inglesas sueltas.
 3. `python tools/pod.py batch --mode review --rule R` → lotes **R**; el agente devuelve solo las líneas que corrige → `build` (usuario).
 
+**Lo revisado no se repite.** Cuando un agente mira un aviso y decide que el texto está bien, `apply` lo anota en `tools/reviewed.tsv` con una huella de ese texto, y ni `check` ni los lotes de revisión vuelven a proponerlo. Si el texto cambia después, la huella deja de coincidir y vuelve a revisarse. El registro va en `tools/`, versionado, así que sobrevive a la cola y a cualquier sesión nueva. Lo mismo vale para los nombres que se dejan sin adaptar.
+
+**Los textos que dan vueltas se aparcan.** Si el modelo cambia un texto y el cambio sigue sin contentar al chequeo, el aviso vuelve con una huella nueva y el texto se reencolaría sin fin. Por eso `verify --batch` cuenta cuántas veces un lote R ha reescrito cada clave (`applied.jsonl`) y, pasadas `max_review_rounds` (3 en `config.json`), la anota en `tools/reviewed.tsv` con huella `*`: dada por buena pase lo que pase. Para volver a intentarlo, se borra su línea.
+
+Para una segunda pasada exhaustiva, borrando esas decisiones, basta con vaciar `tools/reviewed.tsv`.
+
 `check` mira archivos completos, defectos antiguos incluidos. `verify` mira solo las claves escritas por los lotes aplicados (desde la última verificación, o todas con `--all`): sirve para auditar el trabajo de un agente sin mezclarlo con lo anterior.
 
 Los cambios terminológicos globales (p. ej. Hambre → Ansia) se deciden antes y se añaden a `glossary.tsv` con la marca `l`; luego `check --rule glossary` localiza lo que hay que revisar.
@@ -105,9 +112,10 @@ Los cambios terminológicos globales (p. ej. Hambre → Ansia) se deciden antes 
 |---|---|
 | `manual/` | Los textos que ya se han corregido por otra vía (a mano, con otro agente o en otro lote). Lo que sigue sin resolver se queda y se avisa |
 | `todo/` e `index/` | Lotes cuyo contenido entero ya está resuelto por otra vía, y archivos huérfanos (sin su pareja). Un lote con salida pendiente de aplicar no se toca |
-| `done/` | Lotes aplicados, ya verificados y con más de `keep_done_days` días (7 por defecto) |
-| `applied.jsonl` | Registros ya verificados y con más de `keep_log_days` días (60 por defecto) |
+| `done/` | Nunca por su cuenta: es el historial de lotes terminados. Solo con `clean --purge-done` |
+| `applied.jsonl` | Registros ya verificados y con más de `keep_log_days` días (60), o todos con `--purge-done` |
 | `changed.json`, `last_sync.json` | Las claves que ya no están pendientes |
+| `tools/reviewed.tsv` | Las revisiones cuyo texto ha cambiado desde que se dieron por buenas (las de huella `*` se conservan) |
 | `removed/` | Nunca: son archivos que desaparecieron del inglés y conviene revisarlos a mano |
 
 Los plazos se cambian en `clean` de `config.json`.
@@ -140,7 +148,9 @@ Varias sesiones pueden trabajar a la vez si cada una se ocupa de un rango distin
 3. **Preparar lotes:** con `sync` / `batch`, como en los modos anteriores.
 4. **Traducir:** `python tools/local_agent.py --prefix B --limit 10 --close`
    - `--dry-run`: traduce el siguiente lote y lo muestra sin guardar nada.
-   - `--close`: hace «el cierre» (`fix --dirty`, `verify --batch`, una pasada R, `clean` y `status`).
+   - `--limit N`: máximo de lotes de esta tanda. Los lotes derivados de uno ya empezado (mitades de un lote dividido, reintentos de líneas rechazadas) van primero y no gastan el límite.
+   - `--close`: hace «el cierre» (`fix --dirty`, `verify --batch`, una pasada R sobre esos lotes y solo esos, `clean` y `status`).
+   - `--close-limit N` (10 por defecto): máximo de lotes de corrección que el cierre puede crear. El resto sale en la siguiente verificación, para que el cierre no encole más trabajo del que hace.
    - `--model`: forzar un modelo concreto de Jan. `--url`: otro servidor compatible con OpenAI.
 5. **(Usuario)** Revisa el diff de `spanish/`, con especial atención al estilo, la concordancia y la terminología.
 
@@ -166,9 +176,10 @@ Todas las órdenes se ejecutan desde la raíz del repositorio (`python tools/pod
 | Buscar defectos | `python tools/pod.py check --rule tokens --examples 3` |
 | Preparar la corrección de esos defectos | `python tools/pod.py batch --mode review --rule tokens` |
 | Auditar lo que hizo un agente | `python tools/pod.py verify --all` |
+| Verificar encolando como mucho N lotes de corrección | `python tools/pod.py verify --batch --limit 5` |
 | Limpiar la cola | `python tools/pod.py clean` (`--dry-run` para simular) |
 | Devolver a la cola lo que quedó en `manual/` | `python tools/pod.py clean --requeue` (vuelven como lotes **M**) |
-| Volcar el mod y subir versión | `python tools/pod.py build --version X.Y.Z --sync-supported` (también actualiza la versión de PoD de este README) |
+| Volcar el mod y subir versión | `python tools/pod.py build --version X.Y.Z` (copia también `supported_version` del mod base; `--no-sync-supported` lo desactiva)` (también actualiza la versión de PoD de este README) |
 | Regenerar el glosario del mod | `python tools/pod.py glossary` |
 
 Notas:

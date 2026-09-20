@@ -211,16 +211,27 @@ def parse(reply):
 MAX_CONSECUTIVE_FAILURES = 8
 
 
-def run_batches(a, prefix, limit, system):
-    """Procesa lotes hasta el límite o hasta vaciar la cola. Un lote que falla entero se aparta
-    (se divide en dos, o va a manual/ si es de un solo texto) y se sigue: las mitades van primero."""
+def run_batches(a, prefix, limit, system, only=None):
+    """Procesa lotes hasta el límite (en lotes de la cola) o hasta vaciarla. Con `only`, se limita a
+    esa lista de lotes y no toca el resto de la cola. Un lote que falla entero se aparta (se divide
+    en dos, o va a manual/ si es de un solo texto) y se sigue.
+
+    `pendientes` son lotes derivados de los que ya se han empezado —mitades de uno dividido y
+    reintentos de líneas rechazadas—: van primero y no gastan el límite, porque son la otra mitad
+    del trabajo ya contado."""
     done = attempts = failures_in_a_row = 0
-    halves = []  # mitades de un lote dividido: se prueban antes que el resto de la cola
-    while limit is None or attempts < limit:
-        while halves and not (Q / "todo" / f"{halves[0]}.txt").exists():
-            halves.pop(0)
-        if halves:
-            todo = Q / "todo" / f"{halves.pop(0)}.txt"
+    pendientes = list(only or [])
+    while True:
+        while pendientes and not (Q / "todo" / f"{pendientes[0]}.txt").exists():
+            pendientes.pop(0)
+        if pendientes:
+            todo = Q / "todo" / f"{pendientes.pop(0)}.txt"
+        elif only is not None:
+            break  # la lista se ha agotado: el resto de la cola no es cosa nuestra
+        elif limit is not None and attempts >= limit:
+            quedan = len(list((Q / "todo").glob(f"{prefix or ''}*.txt")))
+            print(f"Límite de {limit} lotes alcanzado" + (f" · quedan {quedan} en la cola" if quedan else ""))
+            break
         else:
             nxt = pod("next", *(["--prefix", prefix] if prefix else []))
             m = re.search(r"SIGUIENTE:\s*(\S+\.txt)", nxt)
@@ -254,7 +265,8 @@ def run_batches(a, prefix, limit, system):
             print(f"✘ {name}: {e}")
             out = pod("setaside", name, "--reason", str(e)[:120], *(["--split"] if n_items > 1 else [])).rstrip()
             print(out)
-            halves = re.findall(r"\b([UBRNM]\d{4})\b", out.split("dividido en", 1)[1])[:2] + halves if "dividido en" in out else halves
+            if "dividido en" in out:
+                pendientes = re.findall(r"\b([UBRNM]\d{4})\b", out.split("dividido en", 1)[1])[:2] + pendientes
             a.set_aside = getattr(a, "set_aside", 0) + 1
             if failures_in_a_row >= MAX_CONSECUTIVE_FAILURES:
                 print(f"✘ {failures_in_a_row} lotes seguidos han fallado: parece un problema general, no de un lote. Me detengo.")
@@ -267,7 +279,11 @@ def run_batches(a, prefix, limit, system):
             break
         (Q / "out").mkdir(exist_ok=True)
         (Q / "out" / f"{name}.txt").write_text("\n".join(lines) + "\n", encoding="utf-8")
-        print(pod("apply", name).rstrip())
+        aplicado = pod("apply", name).rstrip()
+        print(aplicado)
+        # los reintentos de líneas rechazadas son continuación de este lote: se hacen ahora, no se
+        # quedan en la cola engordándola para la próxima ejecución
+        pendientes += re.findall(r"reintento en lote ([UBRNM]\d{4})", aplicado)
         done += 1
     return done
 
@@ -278,13 +294,15 @@ def close(a, system):
     print(pod("fix", "--dirty").rstrip())
     before = {p.stem for p in (Q / "todo").glob("R*.txt")}
     print("── cierre: verify --batch")
-    print(pod("verify", "--batch").rstrip())
+    print(pod("verify", "--batch", "--limit", str(a.close_limit)).rstrip())
     new = sorted({p.stem for p in (Q / "todo").glob("R*.txt")} - before)
     if new and getattr(a, "server_down", False):
         print(f"── cierre: {len(new)} lotes R quedan en la cola (Jan no responde)")
     elif new:
+        # una sola pasada y solo sobre los lotes que acaba de crear verify: si tirásemos de la cola
+        # cogeríamos los R viejos y estos se quedarían para siempre esperando
         print(f"── cierre: {len(new)} lotes R de verify")
-        run_batches(a, "R", len(new), system)
+        run_batches(a, "R", None, system, only=new)
         print(pod("verify").rstrip())
     print("── cierre: clean")
     print(pod("clean").rstrip())
@@ -296,6 +314,7 @@ def main():
     p.add_argument("--prefix", choices=["U", "B", "R", "N", "M"], help="prefijo de los lotes (por defecto, el siguiente que haya)")
     p.add_argument("--limit", type=int, help="máximo de lotes en esta ejecución")
     p.add_argument("--close", action="store_true", help="hacer «el cierre» de AGENTS.md al terminar")
+    p.add_argument("--close-limit", type=int, default=10, help="máximo de lotes de corrección que puede crear el cierre")
     p.add_argument("--dry-run", action="store_true", help="traduce el siguiente lote y lo muestra, sin guardar ni aplicar")
     p.add_argument("--url", default=JAN_URL, help="API compatible con OpenAI (por defecto, Jan)")
     p.add_argument("--model", help="id del modelo en Jan (por defecto, el único que esté cargado)")

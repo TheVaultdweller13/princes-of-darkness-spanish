@@ -396,7 +396,7 @@
  umbra_gain_commander_trait_sucess: "Puedes elegir un nuevo rasgo de comandante."
  umbra_collect_artifact_pieces_start_confirm: "Iniciar aventura en los torbellinos"
  umbra_collect_artifact_pieces_end_confirm: "Finalizar aventura en los torbellinos"
- umbra_collect_artifact_pieces_tooltip: "Los torbellinos brotan del [UmbraGlossary('pod_realm_labyrinth')] y pueden alcanzar cualquier lugar que la [UmbraGlossary('tempest')] toque, desde las [UmbraGlossary('shadowlands')] hasta el [Glossary('Dark Kingdom','game_concept_dark_kingdom_desc')]. Los torbellinos están compuestos por la materia del [UmbraGlossaryLocalized('shadowlands','Inframundo')]: reliquias, espectros y la propia materia de la Tempestad, que varía desde lluvias de plasma hasta tormentas de fuego espiritual. La Tempestad es una fuente de memoria, y un recolector con suerte puede encontrar a veces un objeto útil oculto entre la Barcia."
+ umbra_collect_artifact_pieces_tooltip: "Los torbellinos brotan del [UmbraGlossary('pod_realm_labyrinth')] y pueden alcanzar cualquier lugar que la [UmbraGlossary('tempest')] toque, desde las [UmbraGlossary('shadowlands')] hasta el [Glossary('Reino Oscuro','game_concept_dark_kingdom_desc')]. Los torbellinos están compuestos por la materia del [UmbraGlossaryLocalized('shadowlands','Inframundo')]: reliquias, espectros y la propia materia de la Tempestad, que varía desde lluvias de plasma hasta tormentas de fuego espiritual. La Tempestad es una fuente de memoria, y un recolector con suerte puede encontrar a veces un objeto útil oculto entre la Barcia."
  umbra_diplomacy_train_start_confirm: "Iniciar entrenamiento de diplomacia"
  umbra_martial_train_start_confirm: "Iniciar entrenamiento marcial"
  umbra_stewardship_train_start_confirm: "Iniciar entrenamiento de administración"
@@ -470,7 +470,7 @@
  dreaming_access_desc: "Los personajes pueden viajar al [UmbraGlossary('dreaming')] si poseen alguno de estos:\n$BULLET_WITH_TAB$[GetTrait('fae').GetName( GetNullCharacter )] [trait|E]\n$BULLET_WITH_TAB$[GetPerk('visit_faerieland_perk').GetName( GetNullCharacter )] [perk|E] #Weak ([melancholy_lifestyle|E])#!\n$BULLET_WITH_TAB$[GetPerk('soul_arts_mantle_of_living_prayer_perk').GetName( GetNullCharacter )] [perk|E] #Weak ([soul_arts_lifestyle|E])#!\n$BULLET_WITH_TAB$[GetPerk('unlock_the_jade_portal_perk').GetName( GetNullCharacter )] [perk|E] #Weak ([wu_tan_lifestyle|E])#!\n$BULLET_WITH_TAB$[GetPerk('separate_ba_perk').GetName( GetNullCharacter )] [perk|E] #Weak ([hekau_necromancy_lifestyle|E])#!\n$BULLET_WITH_TAB$[GetPerk('see_the_lands_of_the_spirit_perk').GetName( GetNullCharacter )] [perk|E] #Weak ([tan_lifestyle|E])#!\n$BULLET_WITH_TAB$[GetPerk('investiture_journey_to_the_spirit_realm_perk').GetName( GetNullCharacter )] [perk|E] #Weak ([investiture_lifestyle|E])#!\n$BULLET_WITH_TAB$[GetPerk('arcana_step_between_perk').GetName( GetNullCharacter )] [perk|E] #Weak ([arcana_lifestyle|E])#!\n$BULLET_WITH_TAB$[GetPerk('lore_step_beyond_the_veil_perk').GetName( GetNullCharacter )] [perk|E] #Weak ([lore_lifestyle|E])#!\n$BULLET_WITH_TAB$[GetPerk('numina_oneiromancy_5_perk').GetName( GetNullCharacter )] [perk|E] #Weak ([sorcery_lifestyle|E])#!\n$BULLET_WITH_TAB$[GetPerk('astral_projection_2_perk').GetName( GetNullCharacter )] [perk|E] #Weak ([psi_lifestyle|E])#!\n$BULLET_WITH_TAB$[GetReligionByKey('stargazer_religion').GetName] [religion|E]"
 
  skinlands_access: "#TOOLTIP:skinlands_access_desc #L Acceso a las Tierras de Piel#!#!"
- skinlands_access_desc: "Los personajes pueden viajar a las [Glossary('Skinlands','game_concept_skinlands_desc')] si poseen alguno de estos:\n$BULLET_WITH_TAB$#bold No#! [GetTrait('ferryman').GetName(GetNullCharacter)] [trait|E]\n$BULLET_WITH_TAB$#bold No#! [GetTrait('wraith').GetName( GetNullCharacter )] o [GetTrait('spirit').GetName( GetNullCharacter )] [trait|E]\n$BULLET_WITH_TAB$[GetTrait('risen').GetName( GetNullCharacter )] [trait|E]\n$BULLET_WITH_TAB$[GetPerk('materialize_perk').GetName( GetNullCharacter )] [perk|E]"
+ skinlands_access_desc: "Los personajes pueden viajar a las [Glossary('Tierras de Piel','game_concept_skinlands_desc')] si poseen alguno de estos:\n$BULLET_WITH_TAB$#bold No#! [GetTrait('ferryman').GetName(GetNullCharacter)] [trait|E]\n$BULLET_WITH_TAB$#bold No#! [GetTrait('wraith').GetName( GetNullCharacter )] o [GetTrait('spirit').GetName( GetNullCharacter )] [trait|E]\n$BULLET_WITH_TAB$[GetTrait('risen').GetName( GetNullCharacter )] [trait|E]\n$BULLET_WITH_TAB$[GetPerk('materialize_perk').GetName( GetNullCharacter )] [perk|E]"
 
  deep_umbra_access: "#TOOLTIP:deep_umbra_access_desc #L Acceso a la Umbra Profunda#!#!"
  deep_umbra_access_desc: "Los personajes pueden viajar a la [UmbraGlossary('deep_umbra')] si tienen alguno de estos:\n$BULLET_WITH_TAB$[GetTrait('spirit').GetName( GetNullCharacter )] [trait|E]\n$BULLET_WITH_TAB$[GetTrait('mage').GetName( GetNullCharacter )] [trait|E]\n$BULLET_WITH_TAB$[GetTrait('werewolf').GetName( GetNullCharacter )] [trait|E]\n$BULLET_WITH_TAB$[GetPerk('psychic_projection_perk').GetName( GetNullCharacter )] [perk|E] #Weak ([phlegmatic_lifestyle|E])#!\n$BULLET_WITH_TAB$[GetPerk('soul_arts_mantle_of_living_prayer_perk').GetName( GetNullCharacter )] [perk|E] #Weak ([soul_arts_lifestyle|E])#!\n$BULLET_WITH_TAB$[GetPerk('unlock_the_jade_portal_perk').GetName( GetNullCharacter )] [perk|E] #Weak ([wu_tan_lifestyle|E])#!\n$BULLET_WITH_TAB$[GetPerk('separate_ba_perk').GetName( GetNullCharacter )] [perk|E] #Weak ([hekau_necromancy_lifestyle|E])#!\n$BULLET_WITH_TAB$[GetPerk('see_the_lands_of_the_spirit_perk').GetName( GetNullCharacter )] [perk|E] #Weak ([tan_lifestyle|E])#!\n$BULLET_WITH_TAB$[GetPerk('investiture_journey_to_the_spirit_realm_perk').GetName( GetNullCharacter )] [perk|E] #Weak ([investiture_lifestyle|E])#!\n$BULLET_WITH_TAB$[GetPerk('arcana_step_between_perk').GetName( GetNullCharacter )] [perk|E] #Weak ([arcana_lifestyle|E])#!\n$BULLET_WITH_TAB$[GetPerk('lore_step_beyond_the_veil_perk').GetName( GetNullCharacter )] [perk|E] #Weak ([lore_lifestyle|E])#!\n$BULLET_WITH_TAB$[GetPerk('astral_projection_1_perk').GetName( GetNullCharacter )] [perk|E] #Weak ([psi_lifestyle|E])#!\n$BULLET_WITH_TAB$[GetPerk('numina_ephemera_5_perk').GetName( GetNullCharacter )] [perk|E] #Weak ([sorcery_lifestyle|E])#!\n$BULLET_WITH_TAB$[GetPerk('mokole_walking_between_worlds_perk').GetName(GetNullCharacter)] [perk|E] #Weak ([commongifts_lifestyle|E])#!\nEl [GetDoctrine('tenet_hypnotic_serpent').GetBaseName] [core_tenet|E]"
@@ -579,14 +579,14 @@
  umbra_place_oblivion_confirm: "Suicidarse en el Olvido"
  umbra_place_earth_confirm: "Regresar a la Tierra"
  umbra_place_shadowlands_confirm: "Quedarse en las Tierras de las Sombras"
- umbra_place_dark_kingdom_confirm: "Volver al [Glossary('Dark Kingdom','game_concept_dark_kingdom_desc')]"
+ umbra_place_dark_kingdom_confirm: "Volver al [Glossary('Reino Oscuro','game_concept_dark_kingdom_desc')]"
  umbra_place_seat_confirm: "Visitar los Tronos"
  umbra_place_seat_of_fate_confirm: "Visitar el Trono del Destino"
  umbra_place_jade_palace_confirm: "Visitar el Palacio de Jade"
  
- umbra_place_earth_tooltip: "Los [GetTrait('wraith').GetName( GetNullCharacter )] sin ataduras que no sean [GetTrait('risen').GetName( GetPlayer )] ganan #N 40#! de [stress|E] cada año para mantenerse en las [Glossary('Skinlands','game_concept_skinlands_desc')]."
+ umbra_place_earth_tooltip: "Los [GetTrait('wraith').GetName( GetNullCharacter )] sin ataduras que no sean [GetTrait('risen').GetName( GetPlayer )] ganan #N 40#! de [stress|E] cada año para mantenerse en las [Glossary('Tierras de Piel','game_concept_skinlands_desc')]."
  umbra_place_shadowlands_tooltip: "Un [GetTrait('wraith').GetName( GetNullCharacter )] sin [Fetters|E] gana una cantidad media de [stress|E] cada año para mantenerse en las [UmbraGlossary('shadowlands')]. (10 % de probabilidad por cada [Fetter|E] no asignada o perdida)"
- umbra_place_dark_kingdom_tooltip: "Quedarse en el [Glossary('Dark Kingdom','game_concept_dark_kingdom_desc')] para no ganar [stress|E] debido a la falta de [Fetters|E]"
+ umbra_place_dark_kingdom_tooltip: "Quedarse en el [Glossary('Reino Oscuro','game_concept_dark_kingdom_desc')] para no ganar [stress|E] debido a la falta de [Fetters|E]"
  
  broken_mirror_valid_tooltip: "Tu ubicación ([GetPlayer.GetCurrentLocation.GetName]) #bold no#! tiene [GetBuilding('wyrm_taint_01').GetName] ni una [faith|E] que acepte el infernalismo."
  labyrinth_progress_effect_tooltip: "Ganas #V 100#! de progreso de exploración en el [UmbraGlossary('pod_realm_labyrinth')] (si estás estacionado)."
@@ -621,7 +621,7 @@
  # Umbra Location
  
  umbra_realm_earth: "Tierra"
- umbra_realm_earth_desc: "El mundo material. Entre los mundos de realidad «sólida» dentro del Teluria, la Tierra se denomina a menudo «el Señorío», lo que implica su primacía. La celestina del planeta es, por supuesto, Gaia, y la sombra de la Tierra se llama [UmbraGlossary('penumbra')].\n\n$POD_splat_werewolf_plural$ y otros cambiaformas se refieren a ella como el «[Glossary('Gaia Realm','game_concept_gaia_realm_desc')]», en honor a Gaia, el espíritu de la Tierra.\n\n$POD_splat_wraith_plural$ llaman a este reino [Glossary('Skinlands','game_concept_skinlands_desc')], en contraste con las [UmbraGlossary('shadowlands')] (la Penumbra Oscura) que conectan con el [UmbraGlossaryLocalized('shadowlands','Underworld')] (la Umbra Oscura).\n\nEn el lenguaje común de los #TOOLTIP:GAME_TRAIT,hadas,[GetNullCharacter] #L Kithain#!#!, el Mundo Despierto es la Tierra... la parte de la Tierra que no está en las Umbras ni en el [UmbraGlossary('dreaming')]. También llamado Mundo de Otoño, la Tierra de los Sueños Incumplidos y el Mundo de la Carne."
+ umbra_realm_earth_desc: "El mundo material. Entre los mundos de realidad «sólida» dentro del Teluria, la Tierra se denomina a menudo «el Señorío», lo que implica su primacía. La celestina del planeta es, por supuesto, Gaia, y la sombra de la Tierra se llama [UmbraGlossary('penumbra')].\n\n$POD_splat_werewolf_plural$ y otros cambiaformas se refieren a ella como el «[Glossary('Reino de Gaia','game_concept_gaia_realm_desc')]», en honor a Gaia, el espíritu de la Tierra.\n\n$POD_splat_wraith_plural$ llaman a este reino [Glossary('Tierras de Piel','game_concept_skinlands_desc')], en contraste con las [UmbraGlossary('shadowlands')] (la Penumbra Oscura) que conectan con el [UmbraGlossaryLocalized('shadowlands','Inframundo')] (la Umbra Oscura).\n\nEn el lenguaje común de los #TOOLTIP:GAME_TRAIT,hadas,[GetNullCharacter] #L Kithain#!#!, el Mundo Despierto es la Tierra... la parte de la Tierra que no está en las Umbras ni en el [UmbraGlossary('dreaming')]. También llamado Mundo de Otoño, la Tierra de los Sueños Incumplidos y el Mundo de la Carne."
  earth_effect_desc: ""
 
  umbra_realm_penumbra: "Penumbra"
@@ -721,15 +721,15 @@
  fields_behind_effect_desc: ""
  
  umbra_realm_bullydale_wastes: "Páramos de Bullydale"
- umbra_realm_bullydale_wastes_desc: "Los Páramos de Bullydale son un [Glossary('Nightmare Realm','game_concept_nightmare_realm_desc')] en el [UmbraGlossary('dreaming')].\n\nPasado el [UmbraGlossary('fields_behind')], los pasos se vuelven traicioneros, pareciéndose menos a caminos y más a sendas de cabras o rastros de caza. Las aldeas de hadas se vuelven más pequeñas y menos comunes, escaseando hasta que el viajero se encuentra solo, salvo por alguna cabaña tosca de vez en cuando. Los propios habitantes de las cabañas se vuelven cada vez más extraños, y esta es una región de caníbales, invertidos, bandidos y brujas."
+ umbra_realm_bullydale_wastes_desc: "Los Páramos de Bullydale son un [Glossary('Reino de Pesadilla','game_concept_nightmare_realm_desc')] en el [UmbraGlossary('dreaming')].\n\nPasado el [UmbraGlossary('fields_behind')], los pasos se vuelven traicioneros, pareciéndose menos a caminos y más a sendas de cabras o rastros de caza. Las aldeas de hadas se vuelven más pequeñas y menos comunes, escaseando hasta que el viajero se encuentra solo, salvo por alguna cabaña tosca de vez en cuando. Los propios habitantes de las cabañas se vuelven cada vez más extraños, y esta es una región de caníbales, invertidos, bandidos y brujas."
  bullydale_wastes_effect_desc: ""
  
  umbra_realm_low_dukedoms: "Bajos Ducados"
- umbra_realm_low_dukedoms_desc: "Los Bajos Ducados de Quox y Mux son [Glossary('Dream Realms','game_concept_dream_realm_desc')] cerca del [UmbraGlossary('vale_of_mists')].\n\nHacia los límites de los [UmbraGlossary('bullydale_wastes')], el egoísmo mezquino y la violencia se vuelven más irracionales; los conjuros, cada vez más escandalosos. Las reglas habituales se deforman y finalmente colapsan en el absurdo. Una vez que el comportamiento totalmente absurdo es la norma, entonces el viajero ha llegado a los Bajos Ducados, el corazón del engaño y la comedia física en el [UmbraGlossary('dreaming')]."
+ umbra_realm_low_dukedoms_desc: "Los Bajos Ducados de Quox y Mux son [Glossary('Reinos de Sueño','game_concept_dream_realm_desc')] cerca del [UmbraGlossary('vale_of_mists')].\n\nHacia los límites de los [UmbraGlossary('bullydale_wastes')], el egoísmo mezquino y la violencia se vuelven más irracionales; los conjuros, cada vez más escandalosos. Las reglas habituales se deforman y finalmente colapsan en el absurdo. Una vez que el comportamiento totalmente absurdo es la norma, entonces el viajero ha llegado a los Bajos Ducados, el corazón del engaño y la comedia física en el [UmbraGlossary('dreaming')]."
  low_dukedoms_effect_desc: ""
  
  umbra_realm_blotkeldur: "Blotkeldur"
- umbra_realm_blotkeldur_desc: "Blotkeldur es un [Glossary('Nightmare Realm','game_concept_nightmare_realm_desc')] en el [UmbraGlossary('near_dreaming')].\n\nLos acheri nómadas nunca han tenido un [Glossary('Home Realm','game_concept_home_realm_desc')], pero si lo tuvieran, algunos dicen que Blotkeldur les vendría bien. Frío, húmedo y lúgubre, Blotkeldur es una ciénaga interminable de pantanos envenenados, ríos poco profundos y serpenteantes y matorrales enfermizos. En las regiones más oscuras del reino se encuentran vastas ciudades ciclópeas construidas con los huesos de marfil desnudados de behemots extintos hace mucho tiempo en todo excepto en el [UmbraGlossary('dreaming')] más profundo."
+ umbra_realm_blotkeldur_desc: "Blotkeldur es un [Glossary('Reino de Pesadilla','game_concept_nightmare_realm_desc')] en el [UmbraGlossary('near_dreaming')].\n\nLos acheri nómadas nunca han tenido un [Glossary('Home Realm','game_concept_home_realm_desc')], pero si lo tuvieran, algunos dicen que Blotkeldur les vendría bien. Frío, húmedo y lúgubre, Blotkeldur es una ciénaga interminable de pantanos envenenados, ríos poco profundos y serpenteantes y matorrales enfermizos. En las regiones más oscuras del reino se encuentran vastas ciudades ciclópeas construidas con los huesos de marfil desnudados de behemots extintos hace mucho tiempo en todo excepto en el [UmbraGlossary('dreaming')] más profundo."
  blotkeldur_effect_desc: ""
  
  umbra_realm_wastelands: "Tierras Baldías"
@@ -898,7 +898,7 @@
  shadowlands_effect_desc: "Desbloquea una interacción que te permite enviar un [GetTrait('wraith').GetName( GetNullCharacter )] vinculado a las Tierras de las Sombras para que no cause más estrés mantenerlo."
  
  umbra_realm_river_of_death: "Río de la Muerte"
- umbra_realm_river_of_death_desc: "El Río de la Muerte es una vía fluvial en la [UmbraGlossary('tempest')] que sirve como el principal Derrotero desde Estigia hasta las [UmbraGlossary('shadowlands')] y otros [Glossary('Dark Kingdoms','game_concept_dark_kingdom_desc')]."
+ umbra_realm_river_of_death_desc: "El Río de la Muerte es una vía fluvial en la [UmbraGlossary('tempest')] que sirve como el principal Derrotero desde Estigia hasta las [UmbraGlossary('shadowlands')] y otros [Glossary('Reinos Oscuros','game_concept_dark_kingdom_desc')]."
  river_of_death_effect_desc: ""
  
  umbra_realm_sunless_sea: "Mar sin Sol"
@@ -923,46 +923,46 @@
  
  umbra_realm_dark_kingdom_of_iron: "Reino Oscuro de Hierro"
  umbra_realm_dark_kingdom_of_iron_desc: "Estigia es la capital de los muertos occidentales, una ciudad increíblemente enorme situada en la [UmbraGlossary('isle_of_sorrows')] en lo profundo de la [UmbraGlossary('tempest')]. Es la ubicación de las principales sedes de las diversas organizaciones de wraiths occidentales."
- dark_kingdom_of_iron_effect_desc: "Desbloquea una interacción que te permite enviar un [GetTrait('wraith').GetName( GetNullCharacter )] vinculado a este [Glossary('Dark Kingdom','game_concept_dark_kingdom_desc')] para que tenga la oportunidad de aprender nuevos [arcanoi_lifestyle|E]."
+ dark_kingdom_of_iron_effect_desc: "Desbloquea una interacción que te permite enviar un [GetTrait('wraith').GetName( GetNullCharacter )] vinculado a este [Glossary('Reino Oscuro','game_concept_dark_kingdom_desc')] para que tenga la oportunidad de aprender nuevos [arcanoi_lifestyle|E]."
  
  umbra_realm_dark_kingdom_of_clay: "Reino Oscuro de Arcilla"
- umbra_realm_dark_kingdom_of_clay_desc: "Karta, conocida por los forasteros como el [Glossary('Dark Kingdom','game_concept_dark_kingdom_desc')] de Arcilla, es el señorío en la [UmbraGlossary('tempest')] que pertenece a los pueblos aborígenes de Australia."
- dark_kingdom_of_clay_effect_desc: "Desbloquea una interacción que te permite enviar un [GetTrait('wraith').GetName( GetNullCharacter )] vinculado a este [Glossary('Dark Kingdom','game_concept_dark_kingdom_desc')] para que tenga la oportunidad de aprender nuevos [arcanoi_lifestyle|E]."
+ umbra_realm_dark_kingdom_of_clay_desc: "Karta, conocida por los forasteros como el [Glossary('Reino Oscuro','game_concept_dark_kingdom_desc')] de Arcilla, es el señorío en la [UmbraGlossary('tempest')] que pertenece a los pueblos aborígenes de Australia."
+ dark_kingdom_of_clay_effect_desc: "Desbloquea una interacción que te permite enviar un [GetTrait('wraith').GetName( GetNullCharacter )] vinculado a este [Glossary('Reino Oscuro','game_concept_dark_kingdom_desc')] para que tenga la oportunidad de aprender nuevos [arcanoi_lifestyle|E]."
  
  umbra_realm_dark_kingdom_of_ivory: "Reino Oscuro de Marfil"
- umbra_realm_dark_kingdom_of_ivory_desc: "El Monte de los Fantasmas, que también se conoce como el [Glossary('Dark Kingdom','game_concept_dark_kingdom_desc')] de Marfil, es el [UmbraGlossary('shadowlands')] para los abambo, o los wraiths de África."
- dark_kingdom_of_ivory_effect_desc: "Desbloquea una interacción que te permite enviar un [GetTrait('wraith').GetName( GetNullCharacter )] vinculado a este [Glossary('Dark Kingdom','game_concept_dark_kingdom_desc')] para que tenga la oportunidad de aprender nuevos [arcanoi_lifestyle|E].\nSi eres un wraith, gana acceso al árbol de Behest de [misc_arcanoi_lifestyle|E]. (como una [umbra_expedition|E])"
+ umbra_realm_dark_kingdom_of_ivory_desc: "El Monte de los Fantasmas, que también se conoce como el [Glossary('Reino Oscuro','game_concept_dark_kingdom_desc')] de Marfil, es el [UmbraGlossary('shadowlands')] para los abambo, o los wraiths de África."
+ dark_kingdom_of_ivory_effect_desc: "Desbloquea una interacción que te permite enviar un [GetTrait('wraith').GetName( GetNullCharacter )] vinculado a este [Glossary('Reino Oscuro','game_concept_dark_kingdom_desc')] para que tenga la oportunidad de aprender nuevos [arcanoi_lifestyle|E].\nSi eres un wraith, gana acceso al árbol de Behest de [misc_arcanoi_lifestyle|E]. (como una [umbra_expedition|E])"
  
  umbra_realm_dark_kingdom_of_jade: "Reino Oscuro de Jade"
- umbra_realm_dark_kingdom_of_jade_desc: "Los Manantiales Amarillos, también llamados el [Glossary('Dark Kingdom','game_concept_dark_kingdom_desc')] de Jade, es una parte del [UmbraGlossaryLocalized('shadowlands','Inframundo')] dedicada a y controlada por los muertos de Asia."
- dark_kingdom_of_jade_effect_desc: "Desbloquea una interacción que te permite enviar un [GetTrait('wraith').GetName( GetNullCharacter )] vinculado a este [Glossary('Dark Kingdom','game_concept_dark_kingdom_desc')] para que tenga la oportunidad de aprender nuevos [arcanoi_lifestyle|E]."
+ umbra_realm_dark_kingdom_of_jade_desc: "Los Manantiales Amarillos, también llamados el [Glossary('Reino Oscuro','game_concept_dark_kingdom_desc')] de Jade, es una parte del [UmbraGlossaryLocalized('shadowlands','Inframundo')] dedicada a y controlada por los muertos de Asia."
+ dark_kingdom_of_jade_effect_desc: "Desbloquea una interacción que te permite enviar un [GetTrait('wraith').GetName( GetNullCharacter )] vinculado a este [Glossary('Reino Oscuro','game_concept_dark_kingdom_desc')] para que tenga la oportunidad de aprender nuevos [arcanoi_lifestyle|E]."
  
  umbra_realm_dark_kingdom_of_obsidian: "Reino Oscuro de Obsidiana"
- umbra_realm_dark_kingdom_of_obsidian_desc: "Las Tierras Desolladas es el nombre del reino de los muertos que dominaba América Central, parte del poderoso [Glossary('Dark Kingdom','game_concept_dark_kingdom_desc')] de Obsidiana."
- dark_kingdom_of_obsidian_effect_desc: "Desbloquea una interacción que te permite enviar un [GetTrait('wraith').GetName( GetNullCharacter )] vinculado a este [Glossary('Dark Kingdom','game_concept_dark_kingdom_desc')] para que tenga la oportunidad de aprender nuevos [arcanoi_lifestyle|E]."
+ umbra_realm_dark_kingdom_of_obsidian_desc: "Las Tierras Desolladas es el nombre del reino de los muertos que dominaba América Central, parte del poderoso [Glossary('Reino Oscuro','game_concept_dark_kingdom_desc')] de Obsidiana."
+ dark_kingdom_of_obsidian_effect_desc: "Desbloquea una interacción que te permite enviar un [GetTrait('wraith').GetName( GetNullCharacter )] vinculado a este [Glossary('Reino Oscuro','game_concept_dark_kingdom_desc')] para que tenga la oportunidad de aprender nuevos [arcanoi_lifestyle|E]."
  
  umbra_realm_dark_kingdom_of_wire: "Reino Oscuro de Alambre"
- umbra_realm_dark_kingdom_of_wire_desc: "El [Glossary('Dark Kingdom','game_concept_dark_kingdom_desc')] de Alambre es la región de las [UmbraGlossaryLocalized('shadowlands','Inframundo')] de Europa que es el hogar de los dybbuk, wraiths asesinados en el Holocausto. Aunque no es un verdadero [Glossary('Dark Kingdom','game_concept_dark_kingdom_desc')], es independiente del [UmbraGlossary('dark_kingdom_of_iron')] que gobierna a la mayoría de los muertos de Europa."
- dark_kingdom_of_wire_effect_desc: "Desbloquea una interacción que te permite enviar un [GetTrait('wraith').GetName( GetNullCharacter )] vinculado a este [Glossary('Dark Kingdom','game_concept_dark_kingdom_desc')] para que tenga la oportunidad de aprender nuevos [arcanoi_lifestyle|E]."
+ umbra_realm_dark_kingdom_of_wire_desc: "El [Glossary('Reino Oscuro','game_concept_dark_kingdom_desc')] de Alambre es la región de las [UmbraGlossaryLocalized('shadowlands','Inframundo')] de Europa que es el hogar de los dybbuk, wraiths asesinados en el Holocausto. Aunque no es un verdadero [Glossary('Reino Oscuro','game_concept_dark_kingdom_desc')], es independiente del [UmbraGlossary('dark_kingdom_of_iron')] que gobierna a la mayoría de los muertos de Europa."
+ dark_kingdom_of_wire_effect_desc: "Desbloquea una interacción que te permite enviar un [GetTrait('wraith').GetName( GetNullCharacter )] vinculado a este [Glossary('Reino Oscuro','game_concept_dark_kingdom_desc')] para que tenga la oportunidad de aprender nuevos [arcanoi_lifestyle|E]."
  
  umbra_realm_dark_kingdom_of_sand: "Reino Oscuro de Arena"
- umbra_realm_dark_kingdom_of_sand_desc: "Amenti, el [Glossary('Dark Kingdom','game_concept_dark_kingdom_desc')] de Arena, es el [Glossary('Dark Kingdom','game_concept_dark_kingdom_desc')] de los Inmortales en el [UmbraGlossaryLocalized('shadowlands','Inframundo')]. No está poblado por wraiths, sino por Inmortales que murieron y se encontraron de nuevo en las [UmbraGlossary('shadowlands')]."
- dark_kingdom_of_sand_effect_desc: "Desbloquea una interacción que te permite enviar un [GetTrait('wraith').GetName( GetNullCharacter )] vinculado a este [Glossary('Dark Kingdom','game_concept_dark_kingdom_desc')] para que tenga la oportunidad de aprender nuevos [arcanoi_lifestyle|E]."
+ umbra_realm_dark_kingdom_of_sand_desc: "Amenti, el [Glossary('Reino Oscuro','game_concept_dark_kingdom_desc')] de Arena, es el [Glossary('Reino Oscuro','game_concept_dark_kingdom_desc')] de los Inmortales en el [UmbraGlossaryLocalized('shadowlands','Inframundo')]. No está poblado por wraiths, sino por Inmortales que murieron y se encontraron de nuevo en las [UmbraGlossary('shadowlands')]."
+ dark_kingdom_of_sand_effect_desc: "Desbloquea una interacción que te permite enviar un [GetTrait('wraith').GetName( GetNullCharacter )] vinculado a este [Glossary('Reino Oscuro','game_concept_dark_kingdom_desc')] para que tenga la oportunidad de aprender nuevos [arcanoi_lifestyle|E]."
  
  umbra_realm_swar: "Swar"
  umbra_realm_swar_desc: "Swar (o Svarga), la Ciudad de los Deleites, es la ciudad de los muertos de la India; Swar sirve como la ciudad principal de Bhuvar, las [UmbraGlossary('shadowlands')] indias."
- swar_effect_desc: "Desbloquea una interacción que te permite enviar un [GetTrait('wraith').GetName( GetNullCharacter )] vinculado a este [Glossary('Dark Kingdom','game_concept_dark_kingdom_desc')] para que tenga la oportunidad de aprender nuevos [arcanoi_lifestyle|E]."
+ swar_effect_desc: "Desbloquea una interacción que te permite enviar un [GetTrait('wraith').GetName( GetNullCharacter )] vinculado a este [Glossary('Reino Oscuro','game_concept_dark_kingdom_desc')] para que tenga la oportunidad de aprender nuevos [arcanoi_lifestyle|E]."
  
  umbra_realm_night_markets: "Mercados Nocturnos"
  umbra_realm_night_markets_desc: "Los Mercados Nocturnos, nominalmente parte de [UmbraGlossary('swar')], donde habitan los muertos del sudeste asiático."
- night_markets_effect_desc: "Desbloquea una interacción que te permite enviar un [GetTrait('wraith').GetName( GetNullCharacter )] vinculado a este [Glossary('Dark Kingdom','game_concept_dark_kingdom_desc')] para que tenga la oportunidad de aprender nuevos [arcanoi_lifestyle|E]."
+ night_markets_effect_desc: "Desbloquea una interacción que te permite enviar un [GetTrait('wraith').GetName( GetNullCharacter )] vinculado a este [Glossary('Reino Oscuro','game_concept_dark_kingdom_desc')] para que tenga la oportunidad de aprender nuevos [arcanoi_lifestyle|E]."
  
  umbra_realm_mantaqat_khayal: "Mantaqat Khayal"
  umbra_realm_mantaqat_khayal_desc: "Mantaqat Khayal, las [UmbraGlossary('shadowlands')] de Oriente Medio. Se sabe poco de esta tierra, excepto que el lamento la ha envuelto en una tormenta de arena perpetua desde al menos el amanecer del Islam. Solo las Necropolis ofrecen refugio contra esta tormenta de arena, y solo es atravesada por mercaderes, peregrinos y nómadas."
- mantaqat_khayal_effect_desc: "Desbloquea una interacción que te permite enviar un [GetTrait('wraith').GetName( GetNullCharacter )] vinculado a este [Glossary('Dark Kingdom','game_concept_dark_kingdom_desc')] para que tenga la oportunidad de aprender nuevos [arcanoi_lifestyle|E]."
+ mantaqat_khayal_effect_desc: "Desbloquea una interacción que te permite enviar un [GetTrait('wraith').GetName( GetNullCharacter )] vinculado a este [Glossary('Reino Oscuro','game_concept_dark_kingdom_desc')] para que tenga la oportunidad de aprender nuevos [arcanoi_lifestyle|E]."
 
  umbra_realm_islands_of_flint: "Islas de Pedernal"
- umbra_realm_islands_of_flint_desc: "Las Islas de Pedernal, conocidas por los cartógrafos estigios como el [Glossary('Dark Kingdom','game_concept_dark_kingdom_desc')] de Pedernal, son el dominio de los wraiths nativos de América del Norte."
+ umbra_realm_islands_of_flint_desc: "Las Islas de Pedernal, conocidas por los cartógrafos estigios como el [Glossary('Reino Oscuro','game_concept_dark_kingdom_desc')] de Pedernal, son el dominio de los wraiths nativos de América del Norte."
  islands_of_flint_effect_desc: ""
 
  umbra_realm_feng_tu: "Feng-tu"
@@ -1000,7 +1000,7 @@
  sea_of_shadow_effect_desc: "Permite encontrar un whistimmu aleatorio como una [umbra_expedition|E].\nGana $POD_plasmic_maa$ como una [umbra_expedition|E], lo que permite reclutar $POD_plasmic_maa$ como [men_at_arms|E]."
  
  umbra_realm_tempest: "Tempestad"
- umbra_realm_tempest_desc: "La Tempestad es un torbellino perpetuo de energía, recuerdos y #TOOLTIP:GAME_TRAIT,spectre,[GetNullCharacter] #L Espectros#!#! que emana del [UmbraGlossary('pod_realm_labyrinth')] y llueve continuamente plasma y materiales tanto en el [UmbraGlossary('shadowlands')] como en los [Glossary('Dark Kingdoms','game_concept_dark_kingdom_desc')]."
+ umbra_realm_tempest_desc: "La Tempestad es un torbellino perpetuo de energía, recuerdos y #TOOLTIP:GAME_TRAIT,spectre,[GetNullCharacter] #L Espectros#!#! que emana del [UmbraGlossary('pod_realm_labyrinth')] y llueve continuamente plasma y materiales tanto en el [UmbraGlossary('shadowlands')] como en los [Glossary('Reinos Oscuros','game_concept_dark_kingdom_desc')]."
  tempest_effect_desc: "Permite encontrar un whistimmu aleatorio como una [umbra_expedition|E].\nGana $POD_plasmic_maa$ como una [umbra_expedition|E], lo que permite reclutar $POD_plasmic_maa$ como [men_at_arms|E]."
  
  umbra_realm_stormwall: "Muralla de Tormentas"
@@ -1419,15 +1419,15 @@
  shade_realm_of_spirit_effect_desc: ""
 
  umbra_realm_shade_realm_of_mind: "Reino Sombra de la Mente"
- umbra_realm_shade_realm_of_mind_desc: "[Glossary('Shade Realm','game_concept_shade_realm_desc')] conectado con Neptuno. La naturaleza del Reino Sombra de la Mente es, como cabría esperar, definida por lo que uno espera encontrar allí. Refleja los propios pensamientos y sentimientos del visitante, de forma muy similar a un espejo."
+ umbra_realm_shade_realm_of_mind_desc: "[Glossary('Reino Sombra','game_concept_shade_realm_desc')] conectado con Neptuno. La naturaleza del Reino Sombra de la Mente es, como cabría esperar, definida por lo que uno espera encontrar allí. Refleja los propios pensamientos y sentimientos del visitante, de forma muy similar a un espejo."
  shade_realm_of_mind_effect_desc: ""
 
  umbra_realm_shade_realm_of_entropy: "Reino Sombra de la Entropía"
- umbra_realm_shade_realm_of_entropy_desc: "[Glossary('Shade Realm','game_concept_shade_realm_desc')] conectado con Plutón. Supuestamente aquí la Gran Rueda Kármica del Universo queda al descubierto, e incluso puede tener una conexión directa con el [UmbraGlossary('shadowlands')]."
+ umbra_realm_shade_realm_of_entropy_desc: "[Glossary('Reino Sombra','game_concept_shade_realm_desc')] conectado con Plutón. Supuestamente aquí la Gran Rueda Kármica del Universo queda al descubierto, e incluso puede tener una conexión directa con el [UmbraGlossary('shadowlands')]."
  shade_realm_of_entropy_effect_desc: ""
 
  umbra_realm_first_horizon: "Primer Horizonte"
- umbra_realm_first_horizon_desc: "El Primer Horizonte se encuentra en el límite de la atmósfera terrestre y está salpicado de Reinos del Horizonte, incluyendo el [Glossary('Shade Realm','game_concept_shade_realm_desc')]."
+ umbra_realm_first_horizon_desc: "El Primer Horizonte se encuentra en el límite de la atmósfera terrestre y está salpicado de Reinos del Horizonte, incluyendo el [Glossary('Reino Sombra','game_concept_shade_realm_desc')]."
  first_horizon_effect_desc: ""
 
  umbra_realm_true_horizon: "Horizonte Verdadero"

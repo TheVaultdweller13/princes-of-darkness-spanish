@@ -53,8 +53,8 @@
  
  tapestry_of_fate_decision: "El Tapiz del Destino"
  tapestry_of_fate_decision_tooltip: "¡Conocimiento infinito!"
- tapestry_of_fate_decision_desc: "El Tapiz del Destino contiene cada uno de los [Glossary('True Name','podgloss.truename')]. Vale mucho la pena estudiarlo."
- tapestry_of_fate_decision_effect_tooltip: "Podrás aprender nuevos [Glossary('True Names','podgloss.truename')] a partir del Tapiz." 
+ tapestry_of_fate_decision_desc: "El Tapiz del Destino contiene cada uno del [Glossary('Nombre Verdadero','podgloss.truename')]. Vale mucho la pena estudiarlo."
+ tapestry_of_fate_decision_effect_tooltip: "Podrás aprender nuevos [Glossary('Nombres Verdaderos','podgloss.truename')] a partir del Tapiz." 
  tapestry_of_fate_decision_confirm: "¡Nuevos nombres!"
  
  eye_of_hazimel_decision: "El Ojo de Hazimel"
@@ -332,7 +332,7 @@
  POD_canon_artifacts.1000.physical: "Físico"
  
  POD_canon_artifacts.1011.t: "$learning_true_names_head$ Nuevo Nombre Verdadero descubierto"
- POD_canon_artifacts.1011.desc: "Has aprendido con éxito el [Glossary('True Name','podgloss.truename')] de [trait.GetName( GetPlayer.Self )]; ahora puedes usarlo para nombrar conjuros menores."
+ POD_canon_artifacts.1011.desc: "Has aprendido con éxito el [Glossary('Nombre Verdadero','podgloss.truename')] de [trait.GetName( GetPlayer.Self )]; ahora puedes usarlo para nombrar conjuros menores."
  POD_canon_artifacts.1011.a: "Continuaré estudiando."
  
  POD_canon_artifacts.1012.t: "$learning_true_names_head$ No hay Nombre Verdadero que descubrir"
