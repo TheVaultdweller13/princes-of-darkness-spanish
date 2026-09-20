@@ -179,7 +179,7 @@ Todas las órdenes se ejecutan desde la raíz del repositorio (`python tools/pod
 | Verificar encolando como mucho N lotes de corrección | `python tools/pod.py verify --batch --limit 5` |
 | Limpiar la cola | `python tools/pod.py clean` (`--dry-run` para simular) |
 | Devolver a la cola lo que quedó en `manual/` | `python tools/pod.py clean --requeue` (vuelven como lotes **M**) |
-| Volcar el mod y subir versión | `python tools/pod.py build --version X.Y.Z --sync-supported` (también actualiza la versión de PoD de este README) |
+| Volcar el mod y subir versión | `python tools/pod.py build --version X.Y.Z` (copia también `supported_version` del mod base; `--no-sync-supported` lo desactiva)` (también actualiza la versión de PoD de este README) |
 | Regenerar el glosario del mod | `python tools/pod.py glossary` |
 
 Notas:

@@ -14,7 +14,7 @@ Solo librería estándar. Ejecutar desde cualquier sitio: python tools/pod.py <o
   next [--prefix U|B|R|N]    Muestra el siguiente lote pendiente (lo que tiene que hacer el agente).
   apply [LOTE ...|--all]     Valida las salidas de work_queue/out y las escribe en spanish/.
   check [--files GLOB]       Informe de problemas (tokens, glosario, espacios, ¿¡, Custom ES_...).
-  build [--version X] [--sync-supported]
+  build [--version X] [--no-sync-supported]
                              Regenera mod/localization/spanish para publicar.
   fix [--dry-run] [--dirty] [--files GLOB]
                              Arreglos automáticos sin IA (dobles espacios, GetCustom('ES_O'), "| E]", "Concept (", comillas sin cerrar).
@@ -1488,7 +1488,9 @@ def main():
     s = sp.add_parser("next"); s.add_argument("--show", action="store_true"); s.add_argument("--prefix", choices=list(PREFIXES))
     s = sp.add_parser("apply"); s.add_argument("names", nargs="*"); s.add_argument("--all", action="store_true")
     s = sp.add_parser("check"); s.add_argument("--files"); s.add_argument("--rule", choices=RULES); s.add_argument("--examples", type=int, default=3)
-    s = sp.add_parser("build"); s.add_argument("--version"); s.add_argument("--sync-supported", action="store_true")
+    s = sp.add_parser("build"); s.add_argument("--version")
+    s.add_argument("--no-sync-supported", dest="sync_supported", action="store_false")  # por defecto se sincroniza supported_version y el README con el mod base
+    s.add_argument("--sync-supported", dest="sync_supported", action="store_true", help=argparse.SUPPRESS)  # compatibilidad: ya es lo normal
     sp.add_parser("glossary")
     s = sp.add_parser("fix"); s.add_argument("--dry-run", action="store_true")
     s.add_argument("--dirty", action="store_true", help="solo los archivos de spanish/ modificados respecto a HEAD")
