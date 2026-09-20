@@ -60,7 +60,7 @@ También se pedirá como «los nuevos archivos», «lo nuevo», «la actualizaci
 ### «Naturaliza el texto» / «mejora el estilo»
 Pasada literaria sobre textos **ya traducidos y correctos**: quitar calcos del inglés, soltar la frase y afinar el registro. No busca errores (eso es la revisión) y solo entran los textos largos, donde la prosa se nota.
 1. `python tools/pod.py batch --mode style [--files "<patrón>"] [--min-chars N] [--limit N]`
-2. El bucle con prefijo **S** (sección «Modo ESTILO» de `tools/TRADUCIR_LOTE.md`). Devuelve solo las líneas que mejores; lo que dejes igual se anota como revisado y no vuelve a salir. Ante la duda, no toques: cada cambio arriesga una marca del juego.
+2. El bucle con prefijo **S** (sección «Modo ESTILO» de `tools/TRADUCIR_LOTE.md`). **No cambiar es la respuesta normal:** devuelve solo los textos con un defecto que puedas nombrar; lo que dejes igual se anota como revisado y no vuelve a salir. Nada de re-traducir desde el inglés: `apply` rechaza las reescrituras que se parezcan poco al texto actual, y en este modo un rechazo no se reintenta (se conserva el texto que había).
 
 ### «Adapta los nombres de personajes y dinastías»
 1. `python tools/pod.py batch --mode names`

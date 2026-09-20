@@ -76,6 +76,7 @@ Si no sabes a qué personaje se refiere, redacta la frase de forma neutra en vez
 
 Lotes de textos **ya traducidos y correctos**. No es una revisión de errores ni una nueva traducción: es la pasada de estilo, para que dejen de sonar a traducción y suenen a novela.
 
+- **Regla de oro: dejarlo como está es la respuesta normal.** Estos textos ya valen. Léelos una vez: si no ves *de inmediato* un defecto concreto que puedas nombrar (un calco, un orden forzado, una repetición, un registro flojo), el texto está bien; no lo incluyas en la salida y quedará anotado como bueno. No busques mejoras a la fuerza, no reescribas «por si acaso» ni para que suene distinto: lo que devuelves sustituye a algo que ya era correcto, así que si no es claramente mejor, es peor. Un lote con dos cambios de ocho es un buen lote; uno con ocho de ocho significa que estás re-traduciendo, y se rechazará.
 - **No cambies lo que dice.** Mismo contenido, mismos datos, mismo tono del inglés. Si para mejorar la frase tienes que cambiar el sentido, déjala como está.
 - **Respeta el glosario y las marcas del juego** igual que siempre: los `[...]`, `$...$`, `#bold ... #!` y `
 ` se copian exactos. Un texto de estilo que pierde una marca se rechaza.

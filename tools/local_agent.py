@@ -125,6 +125,7 @@ FORMATO DE RESPUESTA (obligatorio):
 - Nada más: sin explicaciones, sin comillas alrededor, sin bloques de código, sin repetir el inglés.
 - Cada traducción en UNA sola línea: los saltos de línea del juego se escriben literalmente como \\n.
 - En MODO REVISAR, MODO ESTILO o MODO NOMBRES escribe solo las líneas que cambies; si no cambias ninguna, responde «# sin cambios».
+- En MODO ESTILO no cambiar es la respuesta normal: el texto español ya es correcto. Devuelve solo los que tengan un defecto concreto que sepas nombrar, y nunca los re-traduzcas desde el inglés.
 - Si el lote trae «MOTIVO: RECHAZADO», corrige exactamente lo que dice el motivo.
 
 A continuación, las reglas del proyecto:
@@ -219,7 +220,7 @@ def run_batches(a, prefix, limit, system, only=None):
     `pendientes` son lotes derivados de los que ya se han empezado —mitades de uno dividido y
     reintentos de líneas rechazadas—: van primero y no gastan el límite, porque son la otra mitad
     del trabajo ya contado."""
-    done = attempts = failures_in_a_row = 0
+    done = attempts = failures_in_a_row = sin_escribir = 0
     pendientes = list(only or [])
     while True:
         while pendientes and not (Q / "todo" / f"{pendientes[0]}.txt").exists():
@@ -284,6 +285,17 @@ def run_batches(a, prefix, limit, system, only=None):
         # los reintentos de líneas rechazadas son continuación de este lote: se hacen ahora, no se
         # quedan en la cola engordándola para la próxima ejecución
         pendientes += re.findall(r"reintento en lote ([UBRNMS]\d{4})", aplicado)
+        # si spanish/ no se deja escribir, seguir traduciendo es tirar el tiempo: el lote se guarda,
+        # pero nada llega al disco. Se avisa y se para tras unos cuantos seguidos.
+        if "NO se da por hecho" in aplicado:
+            sin_escribir += 1
+            if sin_escribir >= 3:
+                print(f"✘ {sin_escribir} lotes seguidos sin poder escribir en spanish/: me detengo.\n"
+                      "  Están guardados en work_queue/out/. Cuando el archivo esté libre, aplícalos con:\n"
+                      "    python tools/pod.py apply --all")
+                break
+            continue
+        sin_escribir = 0
         done += 1
     return done
 

@@ -27,7 +27,7 @@ Solo librería estándar. Ejecutar desde cualquier sitio: python tools/pod.py <o
                              y revisiones cuyo texto ya cambió. done/ y applied.jsonl (el historial) solo se
                              vacían con --purge-done. --requeue devuelve manual/ a la cola.
 """
-import argparse, fnmatch, hashlib, json, re, shutil, subprocess, sys
+import argparse, difflib, fnmatch, hashlib, json, os, re, shutil, subprocess, sys, time
 from collections import Counter, defaultdict
 from pathlib import Path
 
@@ -110,9 +110,36 @@ class Loc:
         return BOM + body + (self.eol if self.final_eol else "")
 
     def save(self, path=None):
+        """Escritura atómica y con reintentos. En Windows es fácil que el .yml esté bloqueado un
+        instante (abierto en un editor, antivirus, sincronización en la nube) y no hay por qué
+        perder el lote por eso: se reintenta y, si no hay manera, se avisa con un mensaje claro."""
         path = path or self.path
         path.parent.mkdir(parents=True, exist_ok=True)
-        path.write_bytes(self.text().encode("utf-8"))
+        data = self.text().encode("utf-8")
+        tmp = path.with_name(path.name + ".pod-tmp")
+        ultimo = None
+        for intento in range(4):
+            try:
+                tmp.write_bytes(data)
+                os.replace(tmp, path)
+                return
+            except OSError as e:
+                ultimo = e
+                try:
+                    tmp.unlink(missing_ok=True)
+                except OSError:
+                    pass
+                time.sleep(0.5 * (intento + 1))
+        raise NoSePuedeEscribir(path, ultimo)
+
+
+class NoSePuedeEscribir(OSError):
+    """Un archivo de spanish/ no se deja escribir: bloqueado por otro programa, de solo lectura,
+    sin espacio… Nunca es culpa del lote, así que el lote se conserva para reintentarlo."""
+
+    def __init__(self, path, err):
+        self.path, self.err = path, err
+        super().__init__(f"no he podido escribir {path}: {err}")
 
 
 def es_rel(en_rel):
@@ -575,11 +602,12 @@ def build_tm():
 
 
 def write_values(assign, keep_keys=()):
-    """assign: {(rel, key, occ): (valor_esperado_actual, nuevo)} → escribe y devuelve archivos tocados."""
+    """assign: {(rel, key, occ): (valor_esperado_actual, nuevo)} → escribe y devuelve
+    (archivos tocados, claves que ya no coincidían, archivos que no se han podido escribir)."""
     byfile = defaultdict(list)
     for (rel, key, occ), v in assign.items():
         byfile[rel].append((key, occ, *v))
-    touched, stale = [], 0
+    touched, stale, fallidos = [], 0, []
     for rel, items in byfile.items():
         esp = ES_DIR / es_rel(rel)
         es = Loc(esp)
@@ -594,10 +622,13 @@ def write_values(assign, keep_keys=()):
                 es.set_value(e, new)
                 ok = True
         if ok:
-            es.save()
-            touched.append(rel)
+            try:
+                es.save()
+                touched.append(rel)
+            except NoSePuedeEscribir as e:
+                fallidos.append((rel, e))
     add_keep(keep_keys)
-    return touched, stale
+    return touched, stale, fallidos
 
 
 def flip_headers(rels):
@@ -663,11 +694,16 @@ HEAD_NAMES = """# LOTE {name} · MODO NOMBRES · {n} elementos
 # Luego ejecuta:  python tools/pod.py apply {name}
 """
 HEAD_STYLE = """# LOTE {name} · MODO ESTILO · {n} elementos
-# Lee tools/TRADUCIR_LOTE.md (sección «Modo ESTILO»). La traducción ES ya es correcta: no la
-# re-traduzcas ni cambies lo que dice. Solo suéltala: quita calcos del inglés, ordena la frase
-# como se diría en castellano y dale el registro literario y sombrío de la ambientación.
+# Lee tools/TRADUCIR_LOTE.md (sección «Modo ESTILO»). La traducción ES ya es CORRECTA y está dada
+# por buena: no la re-traduzcas, no cambies lo que dice y no la reescribas solo para que suene
+# distinto. El texto que devuelvas sustituye a uno que ya valía: si no es mejor, es peor.
+#
+# NO CAMBIAR ES LA RESPUESTA NORMAL. Devuelve una línea solo si al leerla ves un defecto concreto
+# que puedas nombrar: calco del inglés, orden de frase forzado, repetición, registro flojo. Si la
+# mejora no se te ocurre a la primera, es que el texto está bien: déjalo y pasa al siguiente.
+#
 # Salida: crea work_queue/out/{name}.txt SOLO con las líneas que mejores:  <número> = <texto mejorado>
-#         (lo que ya suene natural, déjalo fuera; si no cambias nada:  # sin cambios)
+#         Lo normal es cambiar pocas o ninguna; si no cambias nada, escribe:  # sin cambios
 # Luego ejecuta:  python tools/pod.py apply {name}
 """
 HEAD_REVIEW = """# LOTE {name} · MODO REVISAR ({rule}) · {n} elementos
@@ -781,7 +817,9 @@ def _batch(a):
             tm = build_tm()
             assign = {(r, k, o): (v, tm[v]) for r, k, o, v in pend if v in tm}
             if assign:
-                touched, _ = write_values(assign)
+                touched, _, fallidos = write_values(assign)
+                for rel, e in fallidos:
+                    print(f"   ✘ {e}")
                 print(f"Memoria de traducción: {len(assign)} claves rellenadas sin IA")
                 flip_headers(touched)
                 pend = [p for p in pend if (p[0], p[1], p[2]) not in assign]
@@ -877,13 +915,25 @@ def _apply(a):
             m = OUT_RE.match(line)
             if m:
                 got[m.group(1)] = m.group(2)
-        assign, keep, bad, revisadas = {}, [], [], []
+        assign, keep, bad, revisadas, descartados = {}, [], [], [], []
 
         def dar_por_revisado(it):
             """El agente ha mirado el texto y no lo cambia: se anota para no volver a proponerlo."""
             for rel, key, occ in it["targets"]:
                 for regla in it.get("rules") or (["names"] if meta["mode"] == "names" else ["*"]):
                     revisadas.append((rel, key, occ, regla, huella(it["expect"])))
+
+        def rechaza(n, it, why, texto=None):
+            """Una mejora de estilo que no pasa la validación no se reintenta: el texto actual ya era
+            correcto, así que se queda como está y se anota como revisado. En los demás modos, el
+            texto sí hace falta, y el elemento va a un lote de reintento."""
+            if meta["mode"] == "style":
+                descartados.append((n, it, why))
+                dar_por_revisado(it)
+            elif texto is None:
+                bad.append((n, it, why))
+            else:
+                bad.append((n, it, why, texto))
 
         for n, it in items.items():
             if n not in got:
@@ -894,11 +944,19 @@ def _apply(a):
                 continue
             es, errs = validate(it["en"], got[n])
             if errs:
-                bad.append((n, it, "; ".join(errs), got[n]))
+                rechaza(n, it, "; ".join(errs), got[n])
                 continue
             if meta["mode"] != "pending" and es == it["expect"]:
                 dar_por_revisado(it)
                 continue
+            if meta["mode"] == "style":
+                # el modo estilo pule; si el texto vuelve irreconocible es que lo ha re-traducido,
+                # y eso cambia el sentido tanto como lo mejora: se rechaza y se le explica por qué
+                parecido = difflib.SequenceMatcher(None, strip_markup(it["expect"]), strip_markup(es)).ratio()
+                if parecido < CFG.get("style_min_similarity", 0.5):
+                    rechaza(n, it, f"reescritura excesiva (solo {parecido:.0%} en común con el texto actual): "
+                                   "el modo estilo pule la frase, no la re-traduce", es)
+                    continue
             for t in it["targets"]:
                 assign[tuple(t)] = (it["expect"], es)
             if meta["mode"] == "pending" and es == it["en"]:
@@ -907,11 +965,27 @@ def _apply(a):
             n_rev = add_reviewed(revisadas)
             if n_rev:
                 print(f"{name}: {n_rev} revisiones anotadas en tools/{REVIEWED}")
-        touched, stale = write_values(assign, keep)
+        touched, stale, fallidos = write_values(assign, keep)
         flip_headers(touched)
-        if assign:
-            log_applied(name, assign.keys())
-        print(f"{name}: {len(assign)} claves escritas, {len(bad)} rechazadas, {stale} ya no coincidían (omitidas)")
+        # lo que no se ha podido escribir no cuenta como aplicado: el lote se conserva entero y se
+        # reintenta, y las claves de los archivos que sí se escribieron quedan protegidas por el
+        # control de «ya no coincidían» de la siguiente pasada
+        rotos = {rel for rel, _ in fallidos}
+        escritas = {k: v for k, v in assign.items() if k[0] not in rotos}
+        if escritas:
+            log_applied(name, escritas.keys())
+        print(f"{name}: {len(escritas)} claves escritas, {len(bad)} rechazadas, {stale} ya no coincidían (omitidas)"
+              + (f", {len(descartados)} mejoras descartadas" if descartados else ""))
+        for n, it, why in descartados:
+            print(f"   ~ {n} {it['targets'][0][1]}: {why}\n     → se queda el texto que ya había")
+        if fallidos:
+            for rel, e in fallidos:
+                print(f"   ✘ {e}")
+            print(f"   El lote {name} NO se da por hecho: sigue en work_queue/out/ y se reintenta con\n"
+                  f"     python tools/pod.py apply {name}\n"
+                  "   Si se repite: cierra el archivo en el editor, mira si el antivirus o la sincronización\n"
+                  "   en la nube lo están tocando, y asegúrate de no tener dos sesiones del menú a la vez.")
+            continue
         for d in ("done",):
             shutil.move(str(Q / "todo" / f"{name}.txt"), Q / d / f"{name}.txt") if (Q / "todo" / f"{name}.txt").exists() else None
             shutil.move(str(outf), Q / d / f"{name}.out.txt")
@@ -1560,9 +1634,16 @@ def main():
     s.add_argument("--requeue", action="store_true", help="devuelve a la cola lo que siga en manual/")
     s.add_argument("--purge-done", action="store_true", help="vacía done/ y applied.jsonl (el historial de lo hecho)")
     a = ap.parse_args()
-    {"status": cmd_status, "sync": cmd_sync, "batch": cmd_batch, "next": cmd_next, "apply": cmd_apply,
-     "check": cmd_check, "build": cmd_build, "glossary": cmd_glossary, "fix": cmd_fix,
-     "verify": cmd_verify, "clean": cmd_clean, "setaside": cmd_setaside}[a.cmd](a)
+    try:
+        {"status": cmd_status, "sync": cmd_sync, "batch": cmd_batch, "next": cmd_next, "apply": cmd_apply,
+         "check": cmd_check, "build": cmd_build, "glossary": cmd_glossary, "fix": cmd_fix,
+         "verify": cmd_verify, "clean": cmd_clean, "setaside": cmd_setaside}[a.cmd](a)
+    except NoSePuedeEscribir as e:
+        # un archivo bloqueado no es un error del programa: mensaje claro en vez de traza
+        sys.exit(f"✘ {e}\n"
+                 "  Ciérralo en el editor, comprueba el antivirus o la sincronización en la nube,\n"
+                 "  y que no haya dos sesiones del menú trabajando a la vez. Nada se ha perdido:\n"
+                 "  vuelve a ejecutar la misma orden.")
 
 
 if __name__ == "__main__":
