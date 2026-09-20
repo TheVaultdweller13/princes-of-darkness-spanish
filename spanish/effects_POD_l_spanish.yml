@@ -682,45 +682,45 @@
  YOU_LOST_FETTER: "Perdiste a [TARGET_CHARACTER.GetShortUIName] como tu [Fetter|E]"
  THEY_LOST_FETTER: "[CHARACTER.GetShortUIName|U] ya no eran el/la [TARGET_CHARACTER.GetShortUINamePossessive] [Fetter|E]"
  
- GET_TRUE_NAME: "Aprende el [Glossary('True Name','podgloss.truename')] de [TARGET_CHARACTER.GetShortUIName]"
- YOU_GET_TRUE_NAME: "Aprendes el [Glossary('True Name','podgloss.truename')] de [TARGET_CHARACTER.GetShortUIName]"
- THEY_GET_TRUE_NAME: "[CHARACTER.GetShortUIName|U] aprende el [Glossary('True Name','podgloss.truename')] de [TARGET_CHARACTER.GetShortUINamePossessive]"
- YOU_GOT_TRUE_NAME: "Aprendiste el [Glossary('True Name','podgloss.truename')] de [TARGET_CHARACTER.GetShortUIName]"
- THEY_GOT_RUE_NAME: "[CHARACTER.GetShortUIName|U] aprendió el [Glossary('True Name','podgloss.truename')] de [TARGET_CHARACTER.GetShortUINamePossessive]"
+ GET_TRUE_NAME: "Aprende el [Glossary('Nombre Verdadero','podgloss.truename')] de [TARGET_CHARACTER.GetShortUIName]"
+ YOU_GET_TRUE_NAME: "Aprendes el [Glossary('Nombre Verdadero','podgloss.truename')] de [TARGET_CHARACTER.GetShortUIName]"
+ THEY_GET_TRUE_NAME: "[CHARACTER.GetShortUIName|U] aprende el [Glossary('Nombre Verdadero','podgloss.truename')] de [TARGET_CHARACTER.GetShortUINamePossessive]"
+ YOU_GOT_TRUE_NAME: "Aprendiste el [Glossary('Nombre Verdadero','podgloss.truename')] de [TARGET_CHARACTER.GetShortUIName]"
+ THEY_GOT_RUE_NAME: "[CHARACTER.GetShortUIName|U] aprendió el [Glossary('Nombre Verdadero','podgloss.truename')] de [TARGET_CHARACTER.GetShortUINamePossessive]"
  
- LOSE_TRUE_NAME: "Olvida el [Glossary('True Name','podgloss.truename')] de [TARGET_CHARACTER.GetShortUIName]"
- YOU_LOSE_TRUE_NAME: "Olvidas el [Glossary('True Name','podgloss.truename')] de [TARGET_CHARACTER.GetShortUIName]"
- THEY_LOSE_TRUE_NAME: "[CHARACTER.GetShortUIName|U] olvida el [Glossary('True Name','podgloss.truename')] de [TARGET_CHARACTER.GetShortUINamePossessive]"
- YOU_LOST_TRUE_NAME: "Olvidaste el [Glossary('True Name','podgloss.truename')] de [TARGET_CHARACTER.GetShortUIName]"
- THEY_LOST_TRUE_NAME: "[CHARACTER.GetShortUIName|U] olvidó el [Glossary('True Name','podgloss.truename')] de [TARGET_CHARACTER.GetShortUINamePossessive]"
+ LOSE_TRUE_NAME: "Olvida el [Glossary('Nombre Verdadero','podgloss.truename')] de [TARGET_CHARACTER.GetShortUIName]"
+ YOU_LOSE_TRUE_NAME: "Olvidas el [Glossary('Nombre Verdadero','podgloss.truename')] de [TARGET_CHARACTER.GetShortUIName]"
+ THEY_LOSE_TRUE_NAME: "[CHARACTER.GetShortUIName|U] olvida el [Glossary('Nombre Verdadero','podgloss.truename')] de [TARGET_CHARACTER.GetShortUINamePossessive]"
+ YOU_LOST_TRUE_NAME: "Olvidaste el [Glossary('Nombre Verdadero','podgloss.truename')] de [TARGET_CHARACTER.GetShortUIName]"
+ THEY_LOST_TRUE_NAME: "[CHARACTER.GetShortUIName|U] olvidó el [Glossary('Nombre Verdadero','podgloss.truename')] de [TARGET_CHARACTER.GetShortUINamePossessive]"
 
  POD_CAN_OBTAIN_DISCIPLINE_OF_LEVEL_ELDER_ADVANCED_EFFECT: "@warning_icon!#X Esta [elder_perk|E] requiere [TRAIT.GetName(GetPlayer)]#!"
  POD_CAN_OBTAIN_DISCIPLINE_OF_LEVEL_GHOUL_EFFECT: "@warning_icon!#X El nivel de esta [perk|E] #weak ($VALUE|0$)#! está por encima de lo que tu [ghoul_greatest_vitae_ingested|E] permite para#! #weak ([GetPlayer.MakeScope.ScriptValue('POD_allowed_discipline_level_for_ghouls_or_revenants')])#!"
- POD_CAN_OBTAIN_DISCIPLINE_OF_LEVEL_REVENANT_EFFECT: "POD_CAN_OBTAIN_DISCIPLINE_OF_LEVEL_REVENANT_EFFECT: @warning_icon!#X Como [Glossary('Revenant','game_concept_revenant_desc')], no puedes obtener rasgos de [Glossary('Discipline','game_concept_discipline_desc')] Avanzada#!"
+ POD_CAN_OBTAIN_DISCIPLINE_OF_LEVEL_REVENANT_EFFECT: "POD_CAN_OBTAIN_DISCIPLINE_OF_LEVEL_REVENANT_EFFECT: @warning_icon!#X Como [Glossary('Aparecido','game_concept_revenant_desc')], no puedes obtener rasgos de [Glossary('Disciplina','game_concept_discipline_desc')] Avanzada#!"
  POD_CAN_OBTAIN_DISCIPLINE_OF_LEVEL_VAMPIRE_EFFECT: "@warning_icon!#X Necesitas ser al menos [GetTrait('vampgeneration$VALUE|0q$').GetName(GetNullCharacter)] o haber alcanzado el [golconda|E] para elegir esta [elder_perk|E]#!"
 
  # Animalism # 
  
  BOND_FAMULUS_PERK_EFFECT: "Como [character_interaction|E], puedes #V $POD_bind_famulus$#!, realizando un Vínculo de Sangre con un animal y formando un vínculo mental con él."
  BOND_FAMULUS_PERK_FLAVOR: "#flavor Solo la muerte libera a un familiar una vez vinculado. Mientras reciba sangre de vampiro de forma regular, el familiar no envejecerá#!"
- SENSE_THE_BEAST_PERK_FLAVOR: "$countermeasures_unlocks_t1_supernatural_high_alert$\n#flavor El vampiro puede sentir la [Glossary('Beast','game_concept_beast_desc')] presente en mortales, vampiros y otros seres sobrenaturales, obteniendo una percepción de su naturaleza, ansia y hostilidad#!"
+ SENSE_THE_BEAST_PERK_FLAVOR: "$countermeasures_unlocks_t1_supernatural_high_alert$\n#flavor El vampiro puede sentir la [Glossary('Bestia','game_concept_beast_desc')] presente en mortales, vampiros y otros seres sobrenaturales, obteniendo una percepción de su naturaleza, ansia y hostilidad#!"
  FERAL_WHISPERS_PERK_FLAVOR: "#flavor El vampiro puede comulgar con las bestias de la naturaleza y de la ciudad. Susurros Ferales permite la comunicación bidireccional con los animales. Puede que un gato no esté interesado en debatir los méritos de las escrituras eclesiásticas, pero hablará encantado sobre la falta de presas alrededor de la catedral local.#!"
  ANIMAL_SUCCULENCE_PERK_FLAVOR: "#flavor Los vampiros suelen considerar que la sangre de un animal carece de sustento. Tiene un sabor repulsivo y apenas nutre las venas de un no-muerto. Algunos Antiguos practicantes de Animalismo, sin embargo, han desarrollado una afinidad suficiente por la sangre de las bestias como para sustentarse eficazmente en la naturaleza.#!"
- QUELL_THE_BEAST_PERK_FLAVOR: "QUELL_THE_BEAST_PERK_FLAVOR: #flavor Al cruzar la mirada con un objetivo, el vampiro somete su [Glossary('Beast','game_concept_beast_desc')] interna a un letargo temporal. Los mortales afectados se vuelven apáticos, incapaces de realizar cualquier acción que no sea mantenerse con vida, mientras que los impulsos bestiales de los vampiros amainan temporalmente, para bien o para mal#!"
+ QUELL_THE_BEAST_PERK_FLAVOR: "QUELL_THE_BEAST_PERK_FLAVOR: #flavor Al cruzar la mirada con un objetivo, el vampiro somete su [Glossary('Bestia','game_concept_beast_desc')] interna a un letargo temporal. Los mortales afectados se vuelven apáticos, incapaces de realizar cualquier acción que no sea mantenerse con vida, mientras que los impulsos bestiales de los vampiros amainan temporalmente, para bien o para mal#!"
  CALL_OF_THE_WILD_PERK_EFFECT: "Desbloquea la capacidad de reclutar a [GetMaA('POD_controlled_animals').GetName] como [men_at_arms|E]. Empezarán siendo débiles, solo puedes tener un regimiento de estos y su tamaño es independiente de las innovaciones que poseas."
- CALL_OF_THE_WILD_PERK_FLAVOR: "CALL_OF_THE_WILD_PERK_FLAVOR: #flavor Con este poder, la [Glossary('Beast','game_concept_beast_desc')] imbuye la voz del vampiro con una profunda afinidad por un animal determinado. Aúlla, chilla, grazna o imita de otro modo el sonido de un animal. Cualquier animal de la especie elegida que esté al alcance del oído es convocado hacia el vampiro, y algunos vendrán, dependiendo de la capacidad bruta del vampiro#!"
+ CALL_OF_THE_WILD_PERK_FLAVOR: "CALL_OF_THE_WILD_PERK_FLAVOR: #flavor Con este poder, la [Glossary('Bestia','game_concept_beast_desc')] imbuye la voz del vampiro con una profunda afinidad por un animal determinado. Aúlla, chilla, grazna o imita de otro modo el sonido de un animal. Cualquier animal de la especie elegida que esté al alcance del oído es convocado hacia el vampiro, y algunos vendrán, dependiendo de la capacidad bruta del vampiro#!"
  SUBSUME_THE_SPIRIT_PERK_FLAVOR: "#flavor El vampiro puede transferir completamente su mente al cuerpo de un animal. Puede controlar al animal y usar sus sentidos libremente, incluso durante el día si logra permanecer despierto.#!"
  UNLIVING_HIVE_PERK_FLAVOR: "#flavor Visto con mayor frecuencia entre los Nosferatu, este inquietante poder permite al usuario extender su influencia animal a enjambres de insectos como moscas o cucarachas.#!"
  DRAWING_OUT_THE_BEAST_PERK_EFFECT: "$countermeasures_unlocks_t2_supernatural_high_alert$"
- DRAWING_OUT_THE_BEAST_PERK_FLAVOR: "DRAWING_OUT_THE_BEAST_PERK_FLAVOR: #flavor El vampiro puede proyectar su [Glossary('Beast','game_concept_beast_desc')] en un momento de terror o frenesí de furia, transfiriéndola a un sujeto cercano, ya sea mortal o vampiro. Esa persona experimentará inmediatamente el frenesí en su lugar, entrando en un frenesí despiadado o huyendo despavorida según el detonante#!"
+ DRAWING_OUT_THE_BEAST_PERK_FLAVOR: "DRAWING_OUT_THE_BEAST_PERK_FLAVOR: #flavor El vampiro puede proyectar su [Glossary('Bestia','game_concept_beast_desc')] en un momento de terror o frenesí de furia, transfiriéndola a un sujeto cercano, ya sea mortal o vampiro. Esa persona experimentará inmediatamente el frenesí en su lugar, entrando en un frenesí despiadado o huyendo despavorida según el detonante#!"
  ANIMAL_DOMINION_PERK_FLAVOR: "Como una [character_interaction|E], te permite llamar a tu mascota a la guerra.\nPuede reclutar varios tipos de animales como [men_at_arms|E].\n#flavor El poder que el vampiro ejerce sobre las bestias es ahora lo suficientemente grande como para comandar manadas y jaurías como si fueran extensiones de su propio cuerpo. Con un gesto, los animales entregan sus vidas por docenas, incluso cientos, para complacer a su amo#!"
  TONGUE_OF_BEASTS_PERK_FLAVOR: "#flavor Este poder expande los dones de Susurros a la Naturaleza. En lugar de poder hablar con un solo animal, el vampiro puede hablar con todos y cada uno de los animales sin necesidad de establecer contacto visual.#!"
  SEND_THE_EIGHTH_PLAGUE_PERK_EFFECT: "Como una [character_interaction|E], puedes lanzar [GetModifier('weather_magic_plague_modifier').GetNameWithTooltip] sobre el señorío enemigo."
  SEND_THE_EIGHTH_PLAGUE_PERK_FLAVOR: "#flavor Este es uno de los poderes más destructivos entre todas las [Glossary('Disciplines','game_concept_discipline_desc')]. Un Antiguo Gangrel llamado Valentinian demostró su inmenso potencial de ruina poco después de la Cuarta Cruzada. Enfadado por la intrusión de los Cainitas italianos en sus tierras, apeló a su maestría en Animalismo y trajo la hambruna sobre toda una ciudad comercial.#!"
  CRIMSON_FURY_PERK_EFFECT: "$countermeasures_unlocks_t3_supernatural_high_alert$\nMuestra el evento [unconquered_soul|E] con más frecuencia para los diableristas que intenten consumir tu alma."
- CRIMSON_FURY_PERK_FLAVOR: "CRIMSON_FURY_PERK_FLAVOR: #flavor Este poder es objeto de muchos rumores y conjeturas, ya que tiene muy poco efecto visible. Al alcanzar este nivel de maestría, el vampiro puede optar por permitir que su [Glossary('Beast','game_concept_beast_desc')] deambule libremente por sus venas. Su sangre provoca frenesí en los mortales y vampiros que la prueban. Si un diablerista logra consumir el alma del vampiro, bien podría encontrarse con un final atroz cuando la Bestia del vampiro lo devore desde dentro#!"
+ CRIMSON_FURY_PERK_FLAVOR: "CRIMSON_FURY_PERK_FLAVOR: #flavor Este poder es objeto de muchos rumores y conjeturas, ya que tiene muy poco efecto visible. Al alcanzar este nivel de maestría, el vampiro puede optar por permitir que su [Glossary('Bestia','game_concept_beast_desc')] deambule libremente por sus venas. Su sangre provoca frenesí en los mortales y vampiros que la prueban. Si un diablerista logra consumir el alma del vampiro, bien podría encontrarse con un final atroz cuando la Bestia del vampiro lo devore desde dentro#!"
  EYES_OF_THE_FOREST_PERK_FLAVOR: "#flavor Este poder asombroso es la raíz de muchos cuentos populares sobre bosques sombríos y montañas prohibidas. Los animales e incluso los insectos de la zona sirven como ojos y oídos del vampiro, proporcionándole un conocimiento íntimo de los acontecimientos nocturnos de su dominio#!"
- PLAGUE_OF_BEASTS_PERK_FLAVOR: "PLAGUE_OF_BEASTS_PERK_FLAVOR: #flavor Un Matusalén maestro de Animalismo puede provocar plagas de proporciones bíblicas. Expandiendo Llamar a la Naturaleza, el vampiro convoca a los animales hacia sí. Sin embargo, en lugar de llamar con la lengua de un solo animal, la propia [Glossary('Beast','game_concept_beast_desc')] clama a lo largo de kilómetros. Esto convoca a cada animal para que se agolpe alrededor del Cainita, causando un caos absoluto#!"
+ PLAGUE_OF_BEASTS_PERK_FLAVOR: "PLAGUE_OF_BEASTS_PERK_FLAVOR: #flavor Un Matusalén maestro de Animalismo puede provocar plagas de proporciones bíblicas. Expandiendo Llamar a la Naturaleza, el vampiro convoca a los animales hacia sí. Sin embargo, en lugar de llamar con la lengua de un solo animal, la propia [Glossary('Bestia','game_concept_beast_desc')] clama a lo largo de kilómetros. Esto convoca a cada animal para que se agolpe alrededor del Cainita, causando un caos absoluto#!"
 
  # Auspex # 
  
@@ -742,7 +742,7 @@
  SUPERNAL_AWARENESS_PERK_EFFECT: "$countermeasures_unlocks_t4_all_seeing_eye$ \nRecibirás una notificación si alguien tiene la intención de asesinar a tus amigos o familiares.\nRecibirás una notificación si alguien tiene la intención de seducir a tus amantes o consortes.\nTus prisioneros tienen menos probabilidades de escapar de tu prisión.\n#F Percibe eventos y hazañas en cualquier lugar del mundo.#!"
  OMNISCIENCE_PERK_EFFECT: "Como [character_interaction|E], permite conocer cada secreto del objetivo.\n#F Conoce las personalidades e identidades de todas las criaturas que te rodean.#!"
  MASTER_OF_THE_DOM_PERK_EFFECT: "Genera automáticamente (o mejora) un edificio gratuito en cada provincia de tu condado capital cada #V 5#! años.\n#F Fusiónate con una tierra y conoce todo lo que transcurre en ella mientras ganas poder sobre la tierra y sus residentes.#!"
- MASTER_OF_THE_DOM_PERK_WARNING_EFFECT: "MASTER_OF_THE_DOM_PERK_WARNING_EFFECT: @warning_icon!#X ¡Esto no funciona en edificios de una [grand_city|E]!#!" 
+ MASTER_OF_THE_DOM_PERK_WARNING_EFFECT: "@warning_icon!#X Esto no funciona en edificios de una [grand_city|E].#!" 
  
  # Blood Sorcery #
 
@@ -880,7 +880,7 @@
  SHROUDSIGHT_PERK_EFFECT: "Desbloquea la interacción de Buscar wraith [character_interaction|E]"
  SHROUDSIGHT_PERK_FLAVOR: "#flavor La Visión del Velo permite a un vampiro mirar directamente al [UmbraGlossaryLocalized('shadowlands','Inframundo')].#!"
  LIFELESS_TONGUES_PERK_EFFECT: "Desbloquea la interacción [command_wraith_interaction|E].\nNúmero máximo de $POD_splat_wraith_plural$ vinculados: #P +1#!."
- LIFELESS_TONGUES_PERK_FLAVOR: "#flavor Al pronunciar la Lengua del [Glossary('Dark Kingdoms','game_concept_dark_kingdom_desc')], un nigromante puede conversar con fantasmas en el [UmbraGlossaryLocalized('shadowlands','Inframundo')].#!"
+ LIFELESS_TONGUES_PERK_FLAVOR: "#flavor Al pronunciar la Lengua de los [Glossary('Reinos Oscuros','game_concept_dark_kingdom_desc')], un nigromante puede conversar con fantasmas en el [UmbraGlossaryLocalized('shadowlands','Inframundo')].#!"
  TOUCH_THE_NETHER_PERK_EFFECT: "Te permite interactuar con seres de la [umbra|E] cuando estás en el mundo material."
  TOUCH_THE_NETHER_PERK_FLAVOR: "#flavor Mientras invoca el Toque del Inframundo, un nigromante puede situarse en ambos lados del Velo; se manifiesta físicamente en el [UmbraGlossaryLocalized('shadowlands','Inframundo')] mientras permanece corpóreo en las tierras de los vivos.#!"
  EX_NIHILO_PERK_EFFECT: "Accede al [UmbraGlossaryLocalized('shadowlands','Inframundo')] durante los viajes espirituales."
@@ -1284,7 +1284,7 @@
  HORRID_BLADE_OF_THE_DEMONS_PERK_EFFECT: "$unlock_forging_node$ [GetModifier('artifact_prowess_2_modifier').GetNameWithTooltip]\n#F Crea un arma peligrosa de la nada.#!"
  MASS_HORROR_PERK_EFFECT: "Inflige a cada gobernante del bando contrario [GetModifier('mass_horror_perk_modifier').GetNameWithTooltip] al iniciar una [war|E] como atacante o defensor principal.\n#F Como Horrid Reality, pero afecta a múltiples personas.#!"
  AID_OF_THE_GANDHARVAS_PERK_EFFECT: "#F Hace que todo en una habitación parezca lujoso y espléndido.#!"
- MIRROS_VISAGE_PERK_EFFECT: "Como [character_interaction|E], te permite crear un clon de ti mism[X.Custom('ES_OA')].\n#F Crea duplicados de uno mism[X.Custom('ES_OA')]!#!"
+ MIRROS_VISAGE_PERK_EFFECT: "Como [character_interaction|E], te permite crear un clon de ti mism[X.Custom('ES_OA')].\n#F Crea duplicados de ti mism[X.Custom('ES_OA')].#!"
  PSEUDO_BLINDNESS_PERK_EFFECT: "#F Ver a través de casi todas las falsedades, incluidos los espejismos de las hadas#!"
  SENSORY_DEPRIVATION_PERK_EFFECT: "Como [character_interaction|E], permite que la víctima sufra [GetTrait('blind').GetName( GetPlayer )], [GetModifier('sensory_deprivation_deaf_modifier').GetNameWithTooltip]...\n#F Hace que una víctima sea incapaz de usar cualquiera de sus sentidos, aislándola del mundo#!"
  
@@ -1687,7 +1687,7 @@
  victim_has_resurrected_toast: "La víctima ha resucitado"
  
  POD_wraith_maintenance: "Mantenimiento de wraiths"
- POD_wraith_maintenance.tt: "Pagas el coste de mantener un alma en las [Glossary('Skinlands','game_concept_skinlands_desc')]."
+ POD_wraith_maintenance.tt: "Pagas el coste de mantener un alma en las [Glossary('Tierras de Piel','game_concept_skinlands_desc')]."
  POD_host_possession: "Posesión del anfitrión"
  POD_investiture_maintenance: "Inversión demoníaca"
  POD_investiture_maintenance.tt: "Has recibido algo de inversión demoníaca. (Dependiendo de la opinión de los demonios relacionados)"
@@ -1978,10 +1978,10 @@
  pod_weather_fertile_land: "Tierra Fértil"
  pod_weather_blizzard: "Ventisca"
 
- POD_LEARN_TRUE_NAME_OF_TRAIT_EFFECT: "Aprende el [Glossary('True Name','podgloss.truename')] de [TRAIT.GetName(GetPlayer)]"
- POD_FORGET_TRUE_NAME_OF_TRAIT_EFFECT: "Olvida el [Glossary('True Name','podgloss.truename')] de [TRAIT.GetName(GetPlayer)]"
- POD_LEARN_TRUE_NAME_OF_NONSTANDARD_EFFECT: "Aprende el [Glossary('True Name','podgloss.truename')] de #V [Localize(Concatenate('POD_truename_', SCOPE.GetFlagName('true_name_scope')))]#!"
- POD_FORGET_TRUE_NAME_OF_NONSTANDARD_EFFECT_GLOBAL: "Olvida el [Glossary('True Name','podgloss.truename')] de #V [Localize(Concatenate('POD_truename_', SCOPE.GetFlagName('true_name_scope')))]#!"
+ POD_LEARN_TRUE_NAME_OF_TRAIT_EFFECT: "Aprende el [Glossary('Nombre Verdadero','podgloss.truename')] de [TRAIT.GetName(GetPlayer)]"
+ POD_FORGET_TRUE_NAME_OF_TRAIT_EFFECT: "Olvida el [Glossary('Nombre Verdadero','podgloss.truename')] de [TRAIT.GetName(GetPlayer)]"
+ POD_LEARN_TRUE_NAME_OF_NONSTANDARD_EFFECT: "Aprende el [Glossary('Nombre Verdadero','podgloss.truename')] de #V [Localize(Concatenate('POD_truename_', SCOPE.GetFlagName('true_name_scope')))]#!"
+ POD_FORGET_TRUE_NAME_OF_NONSTANDARD_EFFECT_GLOBAL: "Olvida el [Glossary('Nombre Verdadero','podgloss.truename')] de #V [Localize(Concatenate('POD_truename_', SCOPE.GetFlagName('true_name_scope')))]#!"
 
  POD_truename_crop: "Cultivo"
  POD_truename_weed: "Maleza"
@@ -2009,13 +2009,13 @@
  POD_truename_tn_iron: "de Hierro"
 
  POD_mummy_memory_check_effect_tt: "Como te encuentras por debajo del nivel de memoria $POD_splat_mummy$ requerido, pagas un [static_stress|E] adicional"
- POD_mummy_tan_check_effect: "Obtener este [perk|E] hará que las ventajas del otro árbol Tan cuesten 50 [static_stress|E] adicionales #X ¡Esta acción no es reversible!#!"
+ POD_mummy_tan_check_effect: "Obtener este [perk|E] hará que las ventajas del otro árbol Tan cuesten 50 [static_stress|E] adicionales #X Esta acción no es reversible#!"
 
  POD_can_summon_on_death_trigger_loca: "Como [character_interaction|E], obliga a tu objetivo a convertirse en un $POD_splat_wraith$ si muere en #V 10#! años."
  POD_can_weaken_fetter_trigger_loca: "Como [character_interaction|E], debilita un [Fetter|E] aleatorio no resuelto de un $POD_splat_wraith$."
  POD_can_bind_wraith_trigger_loca: "Como [character_interaction|E], vincula a un $POD_splat_wraith$ usando uno de sus [Fetters|E] no asignados."
  POD_can_command_wraith_trigger_loca: "Como [character_interaction|E], ordena a tus $POD_splat_wraith_plural$ vinculados que obstaculicen o ayuden a un objetivo."
- POD_can_summon_wraith_trigger_loca: "Como [character_interaction|E], genera un nuevo $POD_splat_wraith$ en tu [court|E], o invoca a uno existente a las [Glossary('Skinlands','game_concept_skinlands_desc')]."
+ POD_can_summon_wraith_trigger_loca: "Como [character_interaction|E], genera un nuevo $POD_splat_wraith$ en tu [court|E], o invoca a uno existente a las [Glossary('Tierras de Piel','game_concept_skinlands_desc')]."
  POD_can_covert_to_wraith_trigger_loca: "Desbloquea la opción de [execution|E] #italic $EXECUTION_CONVERT_TO_WRAITH$#!."
 
  POD_GIVE_SEMI_PERMANENT_INJURY: "[TRAIT.GetName(GetPlayer)] no será curable durante los próximos $VALUE|0V$ años."
@@ -2037,7 +2037,7 @@
  POD_demon_sabotage: "[demonic_sabotage|E]"
  POD_bound_demon_died: "Un demonio vinculado fue aniquilado"
 
- POD_create_pact_effect: "\n#font:TitleFont;size:18;glow_color:{0.5,0,0,1} ¡Un Pacto con [TARGET_CHARACTER.GetFirstName] queda inscrito en tu alma!#!"
+ POD_create_pact_effect: "\n#font:TitleFont;size:18;glow_color:{0.5,0,0,1} Un Pacto con [TARGET_CHARACTER.GetFirstName] queda inscrito en tu alma#!"
  POD_create_pact_effect_obligation: "[demonic_pact_obligation|E]: [Localize(Concatenate('POD_obligation_', SCOPE.GetFlagName('obligation_flag')))]"
  POD_create_pact_effect_frequency: "[demonic_pact_frequency|E]: Cada [SCOPE.GetValue('frequency')|0V] años"
  POD_create_pact_effect_consequence: "Si #X rompes#! el [demonic_pact|E]: #medium "

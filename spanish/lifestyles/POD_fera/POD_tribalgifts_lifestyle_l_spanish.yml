@@ -138,7 +138,7 @@
  FOG_ON_THE_MOOR_PERK_EFFECT: "Permite realizar un Cambio de Forma en [GetModifier( 'POD_shapeshift_form_mist_modifier' ).GetNameWithTooltip|L]."
  FORMS_OF_CERNUNNOS_PERK_EFFECT: "Permite realizar un Cambio de Forma en varias formas animales."
  SLEEP_OF_THE_HERO_PERK_EFFECT: "Ganarás [GetTrait('torpor').GetName( GetPlayer )] y serás depuesto si mueres por causas antinaturales.\n#F Este poderoso Don ha sido invocado muchas veces en la historia de los Fianna. Cuando un gran héroe muere en batalla, los Fianna toman el cuerpo y lo dedican a la tierra. Este Don forma un vínculo entre los Fianna, la tierra y el espíritu del héroe. La vida del campeón regresa, pero permanece en un sueño profundo, sin despertar hasta el Apocalipsis. El objetivo debe colocarse en algún lugar de la tierra, como una cueva o dentro de un túmulo funerario. Durante este sueño, el héroe no se ve afectado por los elementos y no necesita respirar.#!"
- SLEEP_OF_THE_HERO_REQUIREMENT: "@warning_icon!#X ¡Necesitas completar una misión de los Espíritus Ancestrales de los Fianna (estaciona a un explorador en cualquier Señorío de la [umbra|E] para encontrar una pista sobre la ubicación e inicia una [umbra_expedition|E] para llegar a ellos y recibir una misión) para desbloquear esta ventaja!#!"
+ SLEEP_OF_THE_HERO_REQUIREMENT: "@warning_icon!#X Necesitas completar una misión de los Espíritus Ancestrales de los Fianna (estaciona a un explorador en cualquier Señorío de la [umbra|E] para encontrar una pista sobre la ubicación e inicia una [umbra_expedition|E] para llegar a ellos y recibir una misión) para desbloquear esta ventaja.#!"
  
  safe_haven_perk_name: "Refugio seguro"
  visage_of_fenris_perk_name: "Visage de Fenris"
@@ -152,7 +152,7 @@
 
  STRENGTH_OF_THE_ANCESTORS_PERK_EFFECT: "Cada progenitor, abuelo y bisabuelo [GetTrait('werewolf').GetName( GetPlayer )] añade: [GetModifier( 'strength_of_the_ancestors_perk_modifier' ).GetNameWithTooltip|L]."
  CALL_GREAT_FENRIS_PERK_EFFECT: "Permite reclutar [GetMaA('war_avatar_of_great_fenris').GetName] [men_at_arms|E].\n#F Como la expresión máxima del Pacto entre la tribu y el Tótem, los héroes más grandes de la Camada pueden invocar al avatar de guerra de su Tótem tribal para que les ayude en su hora de necesidad. El avatar se une al combate, aniquilando a todo aquel que no sea de la Camada de Fenris o esté bajo su protección. Sin embargo, el Gran Fenris exige un sacrificio por su intervención; normalmente la mano izquierda del invocador. Se dice que si el avatar de guerra es llamado sin una buena razón, devorará por completo al invocador antes de marcharse.#!"
- CALL_GREAT_FENRIS_REQUIREMENT: "@warning_icon!#X ¡Necesitas completar una misión del propio Gran Fenris (estaciona a un explorador en cualquier Señorío de la [umbra|E] para encontrar una pista sobre la ubicación e inicia una [umbra_expedition|E] para llegar a ellos y recibir una misión) para desbloquear esta ventaja!#!"
+ CALL_GREAT_FENRIS_REQUIREMENT: "@warning_icon!#X Necesitas completar una misión del propio Gran Fenris (estaciona a un explorador en cualquier Señorío de la [umbra|E] para encontrar una pista sobre la ubicación e inicia una [umbra_expedition|E] para llegar a ellos y recibir una misión) para desbloquear esta ventaja.#!"
  
  howl_to_the_pack_perk_name: "Aullar a la manada"
  wolf_at_the_door_perk_name: "El lobo a la puerta"
@@ -167,7 +167,7 @@
  HOWL_OF_HUNGER_PERK_EFFECT: "Otorga a los [commanders|E] enemigos el modificador [GetModifier('howl_of_hunger_perk_modifier').GetNameWithTooltip] [modifier|E] cuando actúen como [commander|E] durante la [combat_phase|E]."
  HOWL_OF_DEATH_PERK_EFFECT: "Bono para causar un destrozo brutal a los [knights|E] enemigos cuando estés en [combat_phase|E] como [knight|E]."
  HOME_IN_ALL_LANDS_PERK_EFFECT: "Como [character_interaction|E], permite teletransportar a tu ejército a la ubicación de tu objetivo, o teletransportarte a tu próximo destino al viajar. Esto ignora el alcance diplomático, pero el objetivo debe tener un bajo [development|E].\n#F Las Leyendas entre las Garras Rojas afirman que los lobos con mayor conexión con el Lobo Progenitor no estaban limitados por la distancia, sino que podían aparecer en cualquier lugar donde se encontraran lobos. Durante mucho tiempo se pensó que esto era simple folclore, pero de hecho, un Garra Roja Antiguo con un linaje lo suficientemente fuerte bien podría aprender a desvanecerse de un lugar y aparecer en cualquier otro punto del Señorío o de la [umbra|E], siempre que el Progenitor haya estado allí antes que él.#!"
- HOME_IN_ALL_LANDS_REQUIREMENT: "@warning_icon!#X ¡Necesitas completar una misión del propio Lobo Progenitor (estaciona a un explorador en cualquier Señorío de la [umbra|E] para encontrar una pista sobre la ubicación e inicia una [umbra_expedition|E] para llegar a ellos y recibir una misión) para desbloquear esta ventaja!#!"
+ HOME_IN_ALL_LANDS_REQUIREMENT: "@warning_icon!#X Necesitas completar una misión del propio Lobo Progenitor (estaciona a un explorador en cualquier Señorío de la [umbra|E] para encontrar una pista sobre la ubicación e inicia una [umbra_expedition|E] para llegar a ellos y recibir una misión) para desbloquear esta ventaja.#!"
  
  purify_scent_perk_name: "Purificar el rastro"
  aura_of_confidence_perk_name: "Aura de confianza"
@@ -280,7 +280,7 @@
  TOTEM_FORM_PERK_EFFECT: "Desbloquea una forma de Cambio de Forma de Tótem que corresponda a tu [pack_totem|E].\n#flavor Este poderoso Don permite a un Espiral Negra adoptar la apariencia —y gran parte del poder— del tótem Bane de su manada.#!"
  prelude_to_apocalypse_perk_name: "Preludio al Apocalipsis"
  PRELUDE_TO_APOCALYPSE_PERK_EFFECT: "Desbloquea «Derribar la Celosía» en la acción Manipular la Celosía en el [umbra|E].\n#flavor La Danzante puede desgarrar durante un breve tiempo las obras de eones de la $glossary_weaver$. Este Don rompe la Celosía por completo, fusionando los mundos de la carne y el espíritu tal como eran en los días de leyenda. Además, esta región reparada actúa como un faro brillante para los espíritus del Wyrm, llamando a una oleada de Banes para asistir a la Danzante.#!"
- PRELUDE_TO_APOCALYPSE_REQUIREMENT: "@warning_icon!#X ¡Necesitas completar una misión de un Incarna Maeljin (estacionar a un explorador en el [UmbraGlossary('black_spiral_labyrinth')] y comenzar una [umbra_expedition|E] para llegar a ellos y luego recibir una misión) para desbloquear este rasgo!#!"
+ PRELUDE_TO_APOCALYPSE_REQUIREMENT: "@warning_icon!#X Necesitas completar una misión de un Incarna Maeljin (estaciona a un explorador en el [UmbraGlossary('black_spiral_labyrinth')] e inicia una [umbra_expedition|E] para llegar a ellos y luego recibir una misión) para desbloquear esta ventaja.#!"
 
 
 #Hakken

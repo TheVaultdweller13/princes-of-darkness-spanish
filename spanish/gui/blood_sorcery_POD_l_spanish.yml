@@ -57,7 +57,7 @@
  has_4_level_of_sihr_trigger: "Debes tener cualquier ventaja de nivel #weak (fila)#! 4 en un [bs_path|E] de Sihr"
  has_5_level_of_sihr_trigger: "Debes tener cualquier ventaja de nivel #weak (fila)#! 5 en un [bs_path|E] de Sihr"
 
- POD_START_CASTING_RITUAL: "#!Comenzarás un [journey|E] para prepararte para este [bs_ritual|E].\n@warning_icon! #X ¡Si no tienes los recursos necesarios una vez que este [journey|E] termine, el [bs_ritual|E] fallará!#!\n"
+ POD_START_CASTING_RITUAL: "#!Comenzarás un [journey|E] para prepararte para este [bs_ritual|E].\n@warning_icon! #X Si no tienes los recursos necesarios una vez que este [journey|E] termine, el [bs_ritual|E] fallará.#!\n"
  POD_bloodmagic_ritual_start_tt: "Una vez que las preparaciones del [bs_ritual|E] estén hechas: #g " # Este #g es para espacio
  POD_is_casting_ritual: "Actualmente estás lanzando un [bs_ritual|E]. Abandona o pausa el [journey|E] del [bs_ritual|E], o espera hasta que termine."
  POD_bloodmagic_ritual_fail: "#R ¡Este [bs_ritual|E] ha fallado porque te faltaban los recursos cuando se completaron las preparaciones!#!"
@@ -357,7 +357,7 @@
  POD_sculpting_the_perfect_servant_cast_effect: "Abre una interfaz para crear un nuevo personaje."
  ritual_severed_hand_name: "[bs_ritual|E]: Mano Cortada"
  ritual_severed_hand_cost: "[PlayerBloodValue('bs_ritual_severed_hand_cost')]"
- severed_hand_isvalid_tooltip: "Necesitas una [Glossary('Generation','game_concept_vampgeneration_desc')] menor o igual que la del objetivo"
+ severed_hand_isvalid_tooltip: "Necesitas una [Glossary('Generación','game_concept_vampgeneration_desc')] menor o igual que la del objetivo"
  ritual_stone_of_the_true_form_name: "[bs_ritual|E]: Piedra de la Verdadera Forma"
  ritual_stone_of_the_true_form_cost: "[PlayerBloodValue('bs_ritual_stone_of_the_true_form_cost')]"
 
