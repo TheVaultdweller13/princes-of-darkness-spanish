@@ -917,8 +917,11 @@ def check_items(files=None, only=None, keys=None):
             h = huella(sv)
 
             def anota(_why, _reglas, regla, texto):
-                """Guarda el aviso salvo que ya se revisara este mismo texto con esa regla."""
-                if revisado.get((rel, l["key"], l["occ"], regla)) == h or revisado.get((rel, l["key"], l["occ"], "*")) == h:
+                """Guarda el aviso salvo que ya se revisara este mismo texto con esa regla.
+                Una huella '*' es una revisión permanente (aparcada por dar vueltas): vale para
+                cualquier versión del texto."""
+                if revisado.get((rel, l["key"], l["occ"], regla)) in (h, ALWAYS_REVIEWED) \
+                        or revisado.get((rel, l["key"], l["occ"], "*")) in (h, ALWAYS_REVIEWED):
                     return
                 _why.append(texto)
                 _reglas.append(regla)
@@ -960,6 +963,7 @@ def check_items(files=None, only=None, keys=None):
 
 
 REVIEWED = "reviewed.tsv"  # en tools/, versionado: decisiones de revisión que sobreviven a la cola
+ALWAYS_REVIEWED = "*"      # huella especial: dado por bueno pase lo que pase (clave aparcada)
 
 
 def huella(texto):
@@ -1007,6 +1011,25 @@ def log_applied(name, keys):
     import time
     with open(Q / APPLIED_LOG, "a", encoding="utf-8") as fh:
         fh.write(json.dumps({"at": time.time(), "batch": name, "keys": sorted(keys)}, ensure_ascii=False) + "\n")
+
+
+def review_rounds():
+    """{(rel, clave, ocurrencia): veces que un lote de revisión (R) ha reescrito esa clave}.
+    Sirve para aparcar los textos que dan vueltas: el modelo los cambia, el cambio sigue sin
+    contentar al chequeo, y volverían a encolarse para siempre."""
+    cnt = Counter()
+    log = Q / APPLIED_LOG
+    if not log.exists():
+        return cnt
+    for line in log.read_text(encoding="utf-8").splitlines():
+        if not line.strip():
+            continue
+        rec = json.loads(line)
+        if not rec["batch"].startswith("R"):
+            continue
+        for k in rec["keys"]:
+            cnt[tuple(k)] += 1
+    return cnt
 
 
 def applied_keys(all_=False):
@@ -1059,9 +1082,26 @@ def cmd_verify(a):
         gloss = load_glossary()
         items = [dict(p, targets=[[p["rel"], p["key"], p["occ"]]]) for p in probs if p["es"]]
         items = [i for i in items if tuple(i["targets"][0]) not in queued_ids()]
-        for ch in chunk(items):
+        # 1. aparcar las claves que ya han pasado por demasiadas rondas de revisión sin quedar limpias
+        rondas = review_rounds()
+        tope = CFG.get("max_review_rounds", 3)
+        vueltas = [i for i in items if rondas.get(tuple(i["targets"][0]), 0) >= tope]
+        if vueltas:
+            filas = [(i["rel"], i["key"], i["occ"], r, ALWAYS_REVIEWED) for i in vueltas for r in i.get("rules") or ["*"]]
+            add_reviewed(filas)
+            aparcadas = {id(i) for i in vueltas}
+            items = [i for i in items if id(i) not in aparcadas]
+            print(f"   {len(vueltas)} claves aparcadas tras {tope} rondas sin quedar limpias "
+                  f"(anotadas en tools/{REVIEWED}; quita su línea para volver a intentarlo)")
+        # 2. no encolar más de lo que se puede procesar de una sentada
+        chunks = chunk(items)
+        if a.limit and len(chunks) > a.limit:
+            print(f"   {len(chunks) - a.limit} lotes no encolados (límite {a.limit}): saldrán en la próxima verificación")
+            chunks = chunks[: a.limit]
+        for ch in chunks:
             write_batch(next_batch_name("R"), "review", ch, gloss, "verificación")
-        print(f"→ lotes de corrección creados: python tools/pod.py next --prefix R")
+        if chunks:
+            print(f"→ {len(chunks)} lotes de corrección creados: python tools/pod.py next --prefix R")
     import time
     (Q / ".verified").write_text(str(time.time()), encoding="utf-8")
 
@@ -1378,7 +1418,7 @@ def _clean(a, now):
                 cache[rel] = load_pair(rel)[1] if (EN_DIR / rel).exists() else None
             es = cache[rel]
             e = es.index().get((key, occ)) if es else None
-            if e and huella(e["value"]) == h:
+            if e and (h == ALWAYS_REVIEWED or huella(e["value"]) == h):
                 vivos[(rel, key, occ, regla)] = h
         if len(vivos) < len(rev):
             cnt["revisiones caducadas (el texto cambió)"] += len(rev) - len(vivos)
@@ -1455,6 +1495,7 @@ def main():
     s.add_argument("--files", help="patrón, p. ej. \"traits/*\"")
     s = sp.add_parser("verify"); s.add_argument("--all", action="store_true"); s.add_argument("--batch", action="store_true")
     s.add_argument("--files")
+    s.add_argument("--limit", type=int, help="máximo de lotes R que puede crear --batch")
     s = sp.add_parser("setaside"); s.add_argument("name"); s.add_argument("--reason", default="fallo del agente")
     s.add_argument("--split", action="store_true", help="dividir en dos lotes en vez de mandarlo a manual/")
     s = sp.add_parser("clean"); s.add_argument("--dry-run", action="store_true")

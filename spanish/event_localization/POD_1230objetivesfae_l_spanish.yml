@@ -1,6 +1,6 @@
 ﻿l_spanish:
  black_death_prevented: "El evento de la Peste Negra no ocurrirá en el futuro."
- shattering_prevented: "El evento del [Glossary('Shattering','game_concept_shattering_desc')] no ocurrirá en el futuro."
+ shattering_prevented: "El evento de la [Glossary('Fractura','game_concept_shattering_desc')] no ocurrirá en el futuro."
  prevent_black_death_objective_decision_before_last_date: "La fecha es 1347.1.1 o anterior"
 
  prevent_black_death_rat_objective_decision: "Conjuras de los Ratkin"
@@ -98,18 +98,18 @@
  pod1230objectives_fae.121.a: "Bienvenido de vuelta."
  
  POD_fae_maintenance.21.t: "El Quebranto"
- POD_fae_maintenance.21.desc: "No pudiste evitar la Profecía.\nCon el tiempo, los hilos se tensaron tanto entre el reino mortal y el [UmbraGlossary('dreaming')] que empezaron a romperse. Esta ruptura ha traído el [Glossary('Shattering','game_concept_shattering_desc')]. No solo ha roto los vínculos entre [UmbraGlossary('arcadia')] y la Tierra, sino que también ha desvanecido las esperanzas de que pudiera revertirse.\nDebes elegir una forma de lidiar con esto."
+ POD_fae_maintenance.21.desc: "No pudiste evitar la Profecía.\nCon el tiempo, los hilos se tensaron tanto entre el reino mortal y el [UmbraGlossary('dreaming')] que empezaron a romperse. Esta ruptura ha traído la [Glossary('Fractura','game_concept_shattering_desc')]. No solo ha roto los vínculos entre [UmbraGlossary('arcadia')] y la Tierra, sino que también ha desvanecido las esperanzas de que pudiera revertirse.\nDebes elegir una forma de lidiar con esto."
  POD_fae_maintenance.21.a: "Adopta el Camino del Changeling y renuncia a tu inmortalidad."
  POD_fae_maintenance.21.b: "Huye a Arcadia."
  POD_fae_maintenance.21.c: "Refúgiate en un Feudo" #Become a Lost One.
  POD_fae_maintenance.21.d: "Has encontrado tu propio camino hacia la inmortalidad."
  POD_fae_maintenance.21.d.tt: "El Quebranto no tiene ningún impacto en ti, personalmente."
  POD_fae_maintenance.22.t: "El Quebranto"
- POD_fae_maintenance.22.desc: "Con el tiempo, los hilos que se tensaron tanto entre el reino mortal y el [UmbraGlossary('dreaming')] empezaron a romperse. Esta ruptura es el [Glossary('Shattering','game_concept_shattering_desc')]. No solo ha roto los vínculos entre [UmbraGlossary('arcadia')] y la Tierra, sino que también ha desvanecido las esperanzas de que pudiera revertirse."
+ POD_fae_maintenance.22.desc: "Con el tiempo, los hilos que se tensaron tanto entre el reino mortal y el [UmbraGlossary('dreaming')] empezaron a romperse. Esta ruptura es la [Glossary('Fractura','game_concept_shattering_desc')]. No solo ha roto los vínculos entre [UmbraGlossary('arcadia')] y la Tierra, sino que también ha desvanecido las esperanzas de que pudiera revertirse."
  POD_fae_maintenance.22.a: "¿Qué alegría?"
  
  POD_fae_maintenance.31.t: "El Interregno"
- POD_fae_maintenance.31.desc: "El período sin sidhe ni Hadas Verdaderas en la Tierra, con los 'diluidos' cambiaformas restantes teniendo que valerse por sí mismos después de las convulsiones finales de la [Glossary('Shattering','game_concept_shattering_desc')] alrededor del 1400 d. C. es el Interregno, ya que los cambiaformas tuvieron que tratar de descubrir cómo sobrevivir por sí mismos."
+ POD_fae_maintenance.31.desc: "El período sin sidhe ni Hadas Verdaderas en la Tierra, con los «diluidos» changelings restantes teniendo que valerse por sí mismos después de las convulsiones finales de la [Glossary('Fractura','game_concept_shattering_desc')] alrededor del 1400 d. C. es el Interregno, ya que los changelings tuvieron que tratar de descubrir cómo sobrevivir por sí mismos."
  POD_fae_maintenance.31.a: "Nuestro tiempo se ha ido."
  POD_fae_maintenance.31.b: "Nuestro tiempo ha llegado."
  
@@ -356,7 +356,7 @@
  sidhe_house_dominance_scathach_objective_decision_desc: "Desde que [GetScriptedCharacterByHistoryID('POD_fae_character_17').GetFirstName] derrotó a Octriallach, el Rey Blanco de los Fomorianos, en la Guerra de los Árboles, los Oráculos Morfeanos han sido la fuerza determinante dentro de la Casa Scathach. Aunque los Edictos de los Oráculos Morfeanos no siempre tienen sentido para los miembros de la casa, esta se mantiene unida al seguirlos. Sin embargo, los Oráculos predijeron la calamidad si la Espada de Tethra entraba en el Corazón del [UmbraGlossary('dreaming')], y los Scathach atacaron a Gwydion cuando intentaba moverla. Durante la sangre derramada, la hoja desapareció en el Sueño circundante. Las consecuencias políticas de la batalla provocaron que los Scathach se convirtieran en una Casa exiliada y repudiada por los Luminosos. Aun así, los miembros de la casa siguen los Edictos de los Oráculos. A pesar de esta unidad, la Casa está dividida entre los changelings encargados de quedarse mientras la mayoría de los Sidhe huyen a [UmbraGlossary('arcadia')], y [GetScriptedCharacterByHistoryID('POD_fae_character_87').GetFirstName] y sus seguidores hadas primogénitos buscan en el [UmbraGlossary('sea_of_silver')] del [UmbraGlossary('deep_dreaming')] algo que preserve tanto el Mundo de Otoño como la derrota de los Fomorianos."
  sidhe_house_dominance_scathach_objective_decision_tooltip: ""
  sidhe_house_dominance_scathach_objective_decision_confirm: "Mantenerse en el Camino"
- sidhe_house_dominance_scathach_objective_decision_custom: "Se evita el [Glossary('Shattering','game_concept_shattering_desc')]"
+ sidhe_house_dominance_scathach_objective_decision_custom: "Se evita la [Glossary('Fractura','game_concept_shattering_desc')]"
  scathach_victory_modifier: "Edictos de los Oráculos Morfeanos"
  
  pod1230objectives_fae.180.t: "Edictos de los Oráculos Morfeanos"

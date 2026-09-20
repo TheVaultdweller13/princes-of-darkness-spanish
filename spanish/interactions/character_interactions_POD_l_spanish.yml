@@ -21,7 +21,7 @@
  EXECUTION_DIABLERIE: "$pod_diablerie$"
  EXECUTION_EXSANGUINATION: "Exanguinación"
  EXECUTION_SPIRIT_EATING: "Devoración de Espíritus"
- EXECUTION_CONVERT_TO_WRAITH: "Convertir en Espectro"
+ EXECUTION_CONVERT_TO_WRAITH: "Convertir en wraith"
  EXECUTION_BANISH_TO_TEMPEST: "Desterrar a la [GetPlayer.Custom( 'tempest_custom_name' )]"
  EXECUTION_UNMAKING: "Borrar de la Existencia"
  EXECUTION_FILL_JARS: "Llenar Vasos Canopos"
@@ -257,7 +257,7 @@
 
  impundulu_knowledge_exchange_decision: "Intercambiar Conocimiento Nigromántico"
  impundulu_knowledge_exchange_decision_tooltip: "Busca a un vampiro nigromante dispuesto a intercambiar secretos de la tumba"
- impundulu_knowledge_exchange_decision_desc: "Los Impundulu siempre han viajado buscando el conocimiento de la muerte que poseen otros linajes. Busca a un vampiro nigromante dispuesto a intercambiar secretos de la tumba."
+ impundulu_knowledge_exchange_decision_desc: "Los Impundulu siempre han viajado buscando el conocimiento de la muerte que poseen otras Líneas de Sangre. Busca a un vampiro nigromante dispuesto a intercambiar secretos de la tumba."
  impundulu_knowledge_exchange_decision_confirm: "Comenzar la búsqueda"
  impundulu_requires_exchange_target_tt: "Hay al menos un gobernante $POD_splat_vampire$ que tiene una opinión positiva de ti y conoce una senda de [GetTrait('necromancy').GetName(GetNullCharacter)] de la que careces"
  impundulu_knowledge_exchange_toast_title: "La búsqueda comienza"
@@ -275,7 +275,7 @@
  POD_impundulu.2001.c: "Nuestros propios secretos. Las sendas del Cenotafio y del Acecho."
  POD_impundulu_exchange_offer_gold_tt: "Pagarás 200 de oro por el conocimiento nigromántico."
  POD_impundulu_exchange_offer_favor_tt: "Les deberás un favor a cambio del conocimiento."
- POD_impundulu_exchange_offer_secrets_tt: "Compartirás secretos de nigromancia Impundulu a cambio. Ellos obtienen acceso a las sendas Cenotafio/Acecho."
+ POD_impundulu_exchange_offer_secrets_tt: "Compartirás secretos de Nigromancia Impundulu a cambio. Ellos obtienen acceso a las sendas Cenotafio/Acecho."
 
  ### Evento 2: El Resultado
  POD_impundulu.2002.t: "Conocimiento Intercambiado"

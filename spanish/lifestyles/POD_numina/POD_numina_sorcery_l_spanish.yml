@@ -38,7 +38,7 @@
  numina_healing_visible: "Curación"
  numina_hellfire_visible: "Fuego Infernal"
  numina_illusion_visible: "Ilusión"
- numina_necromancy_visible: "Nigromancia"
+ numina_necromancy_visible: "Necromancia"
  numina_oneiromancy_visible: "Oniromancia"
  numina_quintessence_manipulation_visible: "Manipulación de la Quintaesencia"
  numina_shadows_visible: "Sombras"
@@ -150,7 +150,7 @@
  numina_ephemera_4_perk_name: "Efímero $numina_4_name$"
  numina_ephemera_5_perk_name: "Efímero $numina_5_name$"
  numina_ephemera_6_perk_name: "Efímero $numina_6_name$"
- numina_ephemera_common_description: "#flavor Algunos magos —aquellos que se centran en la Senda de la Nigromancia— comandan espíritus. Aquellos que siguen la Senda de lo Efímero buscan una relación de mayor familiaridad con ellos. Para los magos que usan la Senda de lo Efímero, su relación con los espíritus es más como familia y amigos que amo y sirviente. Cuando llaman a un espíritu, es una invitación, no una citación. En lugar de atar y comandar espíritus, la Senda de lo Efímero permite al mago negociar con ellos.#!"
+ numina_ephemera_common_description: "#flavor Algunos magos —aquellos que se centran en el Camino de la Necromancia— comandan espíritus. Aquellos que siguen el Camino de la Efímera buscan una relación de mayor familiaridad con ellos. Para los magos que usan el Camino de la Efímera, su relación con los espíritus es más como familia y amigos que amo y sirviente. Cuando llaman a un espíritu, es una invitación, no una citación. En lugar de atar y comandar espíritus, el Camino de la Efímera permite al mago negociar con ellos.#!"
 
  NUMINA_EPHEMERA_1_PERK_EFFECT: "Puede interactuar con personajes al otro lado de la Barrera.\n$numina_ephemera_common_description$"
  NUMINA_EPHEMERA_2_PERK_EFFECT: "Puede aprender #V 1#! [language|E] adicional sin penalizaciones.\n$numina_ephemera_common_description$"
@@ -250,13 +250,13 @@
 
  NUMINA_ILLUSION_6_PERK_FLAG_REQUIREMENT: "#X @warning_icon! Primero debes completar el [journey|E] #V Estudiar Archimaestría de los Setos: Ilusión#!#!"
  
- numina_necromancy_1_perk_name: "Nigromancia $numina_1_name$"
- numina_necromancy_2_perk_name: "Nigromancia $numina_2_name$"
- numina_necromancy_3_perk_name: "Nigromancia $numina_3_name$"
- numina_necromancy_4_perk_name: "Nigromancia $numina_4_name$"
- numina_necromancy_5_perk_name: "Nigromancia $numina_5_name$"
- numina_necromancy_6_perk_name: "Nigromancia $numina_6_name$"
- numina_necromancy_common_description: "#flavor Algunas cosas deberían permanecer enterradas. La principal entre ellas: los muertos. Pero aquellos que siguen la Senda de la Nigromancia ven las cosas de manera un poco diferente. Como el Fuego Infernal, la Nigromancia tiene reputación de ser vil, practicada solo por los peores de los peores. A diferencia del Fuego Infernal, esta reputación está al menos algo merecida.#!"
+ numina_necromancy_1_perk_name: "Necromancia $numina_1_name$"
+ numina_necromancy_2_perk_name: "Necromancia $numina_2_name$"
+ numina_necromancy_3_perk_name: "Necromancia $numina_3_name$"
+ numina_necromancy_4_perk_name: "Necromancia $numina_4_name$"
+ numina_necromancy_5_perk_name: "Necromancia $numina_5_name$"
+ numina_necromancy_6_perk_name: "Necromancia $numina_6_name$"
+ numina_necromancy_common_description: "#flavor Algunas cosas deberían permanecer enterradas. La principal entre ellas: los muertos. Pero aquellos que siguen el Camino de la Necromancia ven las cosas de manera un poco diferente. Como el Fuego Infernal, la Necromancia tiene reputación de ser vil, practicada solo por los peores de los peores. A diferencia del Fuego Infernal, esta reputación está al menos algo merecida.#!"
  
  NUMINA_NECROMANCY_1_PERK_EFFECT: "Puede interactuar con personajes al otro lado del Velo.\n$POD_can_summon_on_death_trigger_loca$\n$numina_necromancy_common_description$"
  NUMINA_NECROMANCY_2_PERK_EFFECT: "$POD_can_weaken_fetter_trigger_loca$\n$POD_can_bind_wraith_trigger_loca$\n$numina_necromancy_common_description$"
