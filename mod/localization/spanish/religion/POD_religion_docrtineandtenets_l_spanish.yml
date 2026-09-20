@@ -860,11 +860,11 @@
  against_to_anda_opinion_active_county_opinion_name: "La Invasión Mongola"
  
  yomi_wan_hostility_name: "Hostilidad de Yomi Wan"
- special_doctrine_allied_to_yomi_wan_hostility_name: "Sirvientes de los [Glossary('Yama Kings','podgloss.yamaking')]"
- special_doctrine_allied_to_yomi_wan_hostility_desc: "Los [Glossary('Yama Kings','podgloss.yamaking')] son nuestros señores. Quienes no les obedezcan serán destruidos."
- doctrine_parameter_hostility_override_special_doctrine_allied_to_yomi_wan_hostility: "Las [faiths|E] que siguen a los [Glossary('Yama Kings','podgloss.yamaking')] se consideran [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
- special_doctrine_against_to_yomi_wan_hostility_name: "Contra los [Glossary('Yama Kings','podgloss.yamaking')]"
- special_doctrine_against_to_yomi_wan_hostility_desc: "Cuidado con los aliados de los [Glossary('Yama Kings','podgloss.yamaking')]. Deben ser destruidos con extrema diligencia."
+ special_doctrine_allied_to_yomi_wan_hostility_name: "Sirvientes de los [Glossary('Reyes Yama','podgloss.yamaking')]"
+ special_doctrine_allied_to_yomi_wan_hostility_desc: "Los [Glossary('Reyes Yama','podgloss.yamaking')] son nuestros señores. Quienes no les obedezcan serán destruidos."
+ doctrine_parameter_hostility_override_special_doctrine_allied_to_yomi_wan_hostility: "Las [faiths|E] que siguen a los [Glossary('Reyes Yama','podgloss.yamaking')] se consideran [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
+ special_doctrine_against_to_yomi_wan_hostility_name: "Contra los [Glossary('Reyes Yama','podgloss.yamaking')]"
+ special_doctrine_against_to_yomi_wan_hostility_desc: "Cuidado con los aliados de los [Glossary('Reyes Yama','podgloss.yamaking')]. Deben ser destruidos con extrema diligencia."
  doctrine_parameter_hostility_override_special_doctrine_against_to_yomi_wan_hostility: "Las [faiths|E] que se oponen a [UmbraGlossary('yomi_wan')] se consideran [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
  doctrine_parameter_hostility_override_wutian_hostility_doctrine: "Las [faiths|E] $trait_wutian$ se consideran [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
  doctrine_parameter_wutian_illegal: "Los personajes con el [trait|E] [GetTrait('wutian').GetName( GetPlayer )] son [criminals|E]"
@@ -1408,7 +1408,7 @@
 
  unproven_dharma_name: "[Glossary('Dharma','podgloss.dharma')] No Demostrado"
  special_doctrine_unproven_dharma_name: "[Glossary('Dharma','podgloss.dharma')] No Demostrado"
- special_doctrine_unproven_dharma_desc: "No todos los [Glossary('Dharma','podgloss.dharma')] han demostrado ser un camino hacia las [Glossary('Hundred Clouds','podgloss.hundredclouds')]. Para aquellos que nunca tuvieron una ascensión registrada, el temor de estar en un callejón sin salida siempre es una preocupación."
+ special_doctrine_unproven_dharma_desc: "No todos los [Glossary('Dharma','podgloss.dharma')] han demostrado ser un camino hacia las [Glossary('Cien Nubes','podgloss.hundredclouds')]. Para aquellos que nunca tuvieron una ascensión registrada, el temor de estar en un callejón sin salida siempre es una preocupación."
  doctrine_parameter_unproven_dharma_parameter: ""
  
  tenet_obeisance_to_devils_name: "Homenaje a los Diablos"

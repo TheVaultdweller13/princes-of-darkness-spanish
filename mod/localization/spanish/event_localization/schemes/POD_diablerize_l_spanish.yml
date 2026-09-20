@@ -108,7 +108,7 @@
  POD_diablerize.350.desc.success: "Al mirar a [defender.GetHerHis] ojos, me asombra lo maravilloso[ROOT.Char.Custom('ES_XA')] que es [defender.GetFirstName]. Realmente me agrada. Jamás podría hacer nada para herir[ROOT.Char.Custom('ES_AlAla')] [defender.GetHerHim]. ¿Por qué estoy aquí, si no es para deleitarme en la gloria de [defender.GetHerHis]?"
  POD_diablerize.350.desc.failure: "[defender.GetFirstName] intentó seducirme, pero mi mente no es tan débil como para caer ante un truco tan burdo. ¡Tendré su sangre!"
  POD_diablerize.350.option.a.success: "Te quiero muchísimo."
- POD_diablerize.350.option.a.success.tt: "Mientras esté enajenad[ROOT.Char.Custom('ES_OA')] por [defender.GetFirstName], no podré intentar [Glossary('Diablerize','game_concept_diablerie_desc')] a [defender.GetHerHim] de nuevo."
+ POD_diablerize.350.option.a.success.tt: "Mientras esté enajenad[ROOT.Char.Custom('ES_OA')] por [defender.GetFirstName], no podré intentar [Glossary('Diablerizar','game_concept_diablerie_desc')] a [defender.GetHerHim] de nuevo."
  POD_diablerize.350.option.a.failure: "Tus encantos no me impresionan."
 
 #375 entrance duel notify defender
@@ -116,7 +116,7 @@
  POD_diablerize.375.desc.success: "Con mi $pod_discipline$ de Presencia, he enajenado a [attacker.GetFirstName]. Mientras esté seducid[ROOT.Char.Custom('ES_OA')], [attacker.GetSheHe] no es una amenaza para mí."
  POD_diablerize.375.desc.failure: "Intento captar la mirada de [attacker.GetFirstName] y irradiar mi Presencia hacia [attacker.GetHerHim] para volverle pasiv[ROOT.Char.Custom('ES_OA')]. Con la velocidad y la ira con la que [attacker.GetSheHe] se aproxima a mí, parece que he fallado."
  POD_diablerize.375.option.a.success: "Sí, así es. Yo soy a quien adoras."
- POD_diablerize.375.option.a.success.tt: "Mientras [attacker.GetFirstName] esté enajenad[ROOT.Char.Custom('ES_OA')] por mí, [attacker.GetSheHe] no podrá intentar [Glossary('Diablerize','game_concept_diablerie_desc')] a mí de nuevo."
+ POD_diablerize.375.option.a.success.tt: "Mientras [attacker.GetFirstName] esté enajenad[ROOT.Char.Custom('ES_OA')] por mí, [attacker.GetSheHe] no podrá intentar [Glossary('Diablerizar','game_concept_diablerie_desc')] a mí de nuevo."
  POD_diablerize.375.option.a.failure: "¡Por qué [attacker.GetSheHe] no me ama!"
 
 # Dominate Duel
@@ -216,7 +216,7 @@
  POD_diablerize.600.option.a: "¡Devora el alma de [victim.GetTitledFirstNamePossessive]!"
  POD_diablerize.600.option.a.tt: "¡[victim.GetTitledFirstName] ha sido destruido/a!"  
  POD_diablerize.600.option.a.tt.beast: "#beast ¡SÍ! ¡HAZLO!#!"   
- POD_diablerize.600.option.b: "No [Glossary('Diablerize','game_concept_diablerie_desc')] a [victim.GetFirstName]."
+ POD_diablerize.600.option.b: "No [Glossary('Diablerizar','game_concept_diablerie_desc')] a [victim.GetFirstName]."
  POD_diablerize.600.option.b.tt.beast: "#beast ¡No los dejes ir! ¡[victim.GetSheHe] no merece la sangre! ¡Nosotros sí!#!"    
  POD_diablerize.600.option.c: "Solo mátalos, la Diablerie es demasiado peligrosa."
  POD_diablerize.600.option.c.tt.beast: "Un simple y normal asesinato, sin riesgo para tu alma con esa opción. Pero tampoco hay aumento de poder."    
@@ -278,7 +278,7 @@
  POD_diablerize.810.desc: "[unconquered_soul.GetFirstName] lucha por el control de tu cuerpo más que nunca. Su interferencia ha debilitado gravemente tu influencia sobre partes de tu señorío, haciendo que pierdas algo de oro valioso que invertiste allí.\nTiene que parar... de una forma u otra. Todavía hay una gran posibilidad de que puedas resistir los cambios más... permanentes y salir con tu sentido de la identidad casi intacto. Or tal vez la batalla ya haya desgastado tu Fuerza de Voluntad lo suficiente como para que estés listo para renacer en el cuerpo de aquel lo suficientemente necio como para pensar que te había matado.\nLa única pregunta real sigue siendo la misma: ¿quién eres?"   
       
  POD_diablerize.4000.t: "¡Conjura de Diablerie frustrada!"
- POD_diablerize.4000.desc: "Por algún giro del destino, mi conjura para [Glossary('Diablerize','game_concept_diablerie_desc')] a [defender.GetFirstName] ha fallado."  
+ POD_diablerize.4000.desc: "Por algún giro del destino, mi conjura para [Glossary('Diablerizar','game_concept_diablerie_desc')] a [defender.GetFirstName] ha fallado."  
  POD_diablerize.4000.option.a: "¡Maldición! ¡Una noche más, [defender.GetFirstName], tu sangre será mía!"
  
  POD_diablerize.250.option.a.tt.defender_wins: "¡El defensor escapó!"
