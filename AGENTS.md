@@ -78,7 +78,13 @@ Son los textos que no pasaron la validación dos veces.
 
 1. `python tools/pod.py fix --dirty` → arreglos mecánicos (dobles espacios, `GetCustom('ES_O')`, `Concept (`, `| E]`, comillas sin cerrar) solo en los archivos que has tocado.
 2. `python tools/pod.py verify --batch --limit 10` → revisa **solo las claves que has escrito** y, si hay avisos, crea como mucho 10 lotes **R** con ellas (el resto saldrá en la siguiente verificación; las claves que ya han dado 3 vueltas de revisión se aparcan solas en `tools/reviewed.tsv`).
-3. Si ha creado lotes R, pasa **esos lotes concretos** una vez con el bucle (no la cola entera: puede arrastrar lotes R de otras sesiones) y vuelve a `verify`. Si el segundo intento deja los mismos avisos, no insistas: anótalos en el resumen.
+3. Si ha creado lotes R, pasa **esos lotes concretos** una vez con el bucle (no la cola entera: puede arrastrar lotes R de otras sesiones) y vuelve a `verify`.
+3b. **Sanea lo que quede** (avisos repetidos, claves aparcadas, lotes cerrados por error) si es sencillo:
+   - **Falsos positivos** (exclamaciones que sí están en el inglés, nombres propios dentro de `Glossary('…')` como Mikaboshi, Kakuri, Emma-O, Tou Mu, Shikome, Penangallan): ciérralos con `# sin cambios`; quedan anotados como revisados.
+   - **Defectos reales mecánicos** (p. ej. términos de `Glossary` sin traducir que ya tienen forma establecida en el repositorio: comprueba con `grep -rhoE "Glossary\('[^']*','podgloss\.X'" spanish | sort | uniq -c` y usa la forma mayoritaria): corrígelos con un script en el scratchpad que lea el lote de `work_queue/todo/` y escriba `work_queue/out/`, nunca editando `spanish/`. Ejecuta el script **antes** de `apply` (que borra el lote) y con `PYTHONUTF8=1` si lees texto con tildes por stdin.
+   - **Si un lote se cerró por error** (p. ej. `# sin cambios` cuando había arreglos) o una clave quedó aparcada y sí tenía defecto: borra su línea de `tools/reviewed.tsv` y vuelve a lanzar `batch --mode review --files "<archivo>"`; después aplícale la corrección.
+   - Antes de cerrar, revisa que `work_queue/out/` tenga contenido correcto: un script que no encuentra el texto **no** debe acabar escribiendo `# sin cambios`; comprueba que el número de cambios es el esperado.
+   Si algo no es sencillo o no lo entiendes, no insistas: anótalo en el resumen.
 4. `python tools/pod.py clean` → quita de la cola lo ya resuelto y lo caducado; nunca toca lotes pendientes ni el historial de `done/`.
 5. `python tools/pod.py status`.
 6. Resumen para el usuario: qué has traducido, qué ha arreglado `fix`, qué avisos quedan y qué hay en `work_queue/manual/`. Recuérdale que `build`, la versión y git son cosa suya.

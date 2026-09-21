@@ -477,14 +477,14 @@
  
  seek_knowledge_harbinger_name: "Aprender [GetTrait('necromancy').GetName(GetNullCharacter)] (Presagio)"
  seek_knowledge_harbinger_desc: "Los [GetDynastyHouseByID('house_harbingersofskulls').GetName] han desarrollado su propia forma de [GetTrait('necromancy').GetName(GetNullCharacter)], otorgándoles varias mejoras a los [schemes|E] y el misterioso poder de robar conocimiento de entidades muertas."
- seek_knowledge_harbinger_effects: "Aprenderás la ubicación de un maestro que conoce la [GetTrait('necromancy').GetName(GetNullCharacter)] de los Presagios. Después de viajar allí, puedes aprender sus técnicas secretas. Si aún no tienes el [trait|E] de [GetTrait('necromancy').GetName(GetNullCharacter)], también adquirirás el [trait|E] de la $pod_discipline$, que te permite desbloquear [perks|E] en el [lifestyle|E] de [GetTrait('necromancy').GetName(GetNullCharacter)]."
+ seek_knowledge_harbinger_effects: "Aprenderás la ubicación de un maestro que conoce la [GetTrait('necromancy').GetName(GetNullCharacter)] de los Heraldos. Después de viajar allí, puedes aprender sus técnicas secretas. Si aún no tienes el [trait|E] de [GetTrait('necromancy').GetName(GetNullCharacter)], también adquirirás el [trait|E] de la $pod_discipline$, que te permite desbloquear [perks|E] en el [lifestyle|E] de [GetTrait('necromancy').GetName(GetNullCharacter)]."
  seek_knowledge_harbinger_tt: "Arrancaré los secretos de sus huesos."
  seek_knowledge_harbinger_planning_title: "La Búsqueda de la Necromancia"
- seek_knowledge_harbinger_planning_desc: "He despertado mi sangre y me he preparado lo mejor que he podido, pero los detalles más finos de la [GetTrait('necromancy').GetName(GetNullCharacter)] de los Presagios aún se me escapan.\n\nSi quiero dominar esta $pod_discipline$ por completo, necesitaré un maestro.\n\nAfortunadamente, mis exploradores me han dicho dónde se puede encontrar a esa persona."
+ seek_knowledge_harbinger_planning_desc: "He despertado mi sangre y me he preparado lo mejor que he podido, pero los detalles más finos de la [GetTrait('necromancy').GetName(GetNullCharacter)] de los Heraldos aún se me escapan.\n\nSi quiero dominar esta $pod_discipline$ por completo, necesitaré un maestro.\n\nAfortunadamente, mis exploradores me han dicho dónde se puede encontrar a esa persona."
  seek_knowledge_harbinger_planning_confirm: "$POD_journey_planning_confirm_default$"
  seek_knowledge_harbinger_planning_decline: "$POD_journey_planning_decline_default$"
  seek_knowledge_harbinger_travel_title: "$POD_journey_travel_title_seek_knowledge$"
- seek_knowledge_harbinger_travel_desc: "Estoy emocionado por la oportunidad de aprender la [GetTrait('necromancy').GetName(GetNullCharacter)] de los Presagios. Se sabe muy poco sobre esta forma de magia de sangre. ¿Cuánto estoy dispuesto a pagar para aprender los secretos de los muertos?"
+ seek_knowledge_harbinger_travel_desc: "Estoy emocionado por la oportunidad de aprender la [GetTrait('necromancy').GetName(GetNullCharacter)] de los Heraldos. Se sabe muy poco sobre esta forma de magia de sangre. ¿Cuánto estoy dispuesto a pagar para aprender los secretos de los muertos?"
  seek_knowledge_harbinger_travel_confirm: "$POD_journey_travel_confirm_seek_knowledge$"
  seek_knowledge_harbinger_isvalid: "$POD_seek_knowledge_intro$\n$BULLET_WITH_TAB$$POD_seek_knowledge_learning_20$\n$BULLET_WITH_TAB$Tienes [GetTrait('fortitudeadvanced').GetName(GetPlayer)] y [GetTrait('necromancyadvanced').GetName(GetPlayer)]\n$BULLET_WITH_TAB$$POD_seek_knowledge_relation$\n$BULLET_WITH_TAB$$POD_seek_knowledge_game_rule$"
  
