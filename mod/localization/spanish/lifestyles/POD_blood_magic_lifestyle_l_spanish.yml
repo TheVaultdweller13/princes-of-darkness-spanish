@@ -341,9 +341,9 @@
  breeze_of_lethargy_perk_name: "Brisa de Letargo"
  BREEZE_OF_LETHARGY_PERK_EFFECT: "Otorga [GetModifier('breeze_of_lethargy_modifier').GetNameWithTooltip] a los [knights|E] enemigos cuando actúas como [commander|E] durante la [combat_phase|E], o a tu oponente durante [single_combat_duel_plural|E].\n\n#flavor Aunque no pueden inducir el sueño inmediato, los vientos evocados por este poder traen un cansancio creciente y un agotamiento entumecedor a través de cada músculo.#!"
  ride_the_tempest_perk_name: "Cabalgar la Tempestad"
- RIDE_THE_TEMPEST_PERK_EFFECT: "#flavor Un Koldun que emplea este poder se mueve a velocidades increíbles cabalgando sobre los vientos. Infundiendo miedo mientras aparecen repentinamente en los diferentes pueblos de su dominio.#!"
+ RIDE_THE_TEMPEST_PERK_EFFECT: "#flavor Un Koldun que emplea este poder se mueve a velocidades increíbles cabalgando sobre los vientos, infundiendo miedo al aparecer de repente en los distintos pueblos de su dominio.#!"
  fury_of_the_night_sky_perk_name: "Furia del Cielo Nocturno"
- FURY_OF_THE_NIGHT_SKY_PERK_EFFECT: "[bs_spell|E]: Invoca un [GetModifier('weather_magic_storm_modifier').GetNameWithTooltip] en una ubicación.\n\n#flavor Aplicando furia magnificada por la sangre y la voluntad, un Koldun puede proyectar toda la medida de su ira en el cielo nocturno. Nubes grises arremolinadas borran estrellas y luna, desatando ráfagas en espiral y un aguacero torrencial de lluvia helada y relámpagos.#!"
+ FURY_OF_THE_NIGHT_SKY_PERK_EFFECT: "[bs_spell|E]: Invoca un [GetModifier('weather_magic_storm_modifier').GetNameWithTooltip] en una ubicación.\n\n#flavor Al aplicar una furia magnificada por la sangre y la voluntad, un Koldun puede proyectar toda la medida de su ira en el cielo nocturno. Nubes grises arremolinadas borran estrellas y luna, desatando ráfagas en espiral y un aguacero torrencial de lluvia helada y relámpagos.#!"
 
 #Camino del Agua
  pool_of_lies_perk_name: "Estanque de Mentiras"
@@ -365,7 +365,7 @@
  wall_of_magma_perk_name: "Muro de Magma"
  WALL_OF_MAGMA_PERK_EFFECT: "#flavor El Koldun levanta la mano y la tierra se parte, rociando un muro de magma brillante que se endurece rápidamente en cualquier forma deseada.#!"
  bs_heat_wave_perk_name: "Ola de Calor"
- BS_HEAT_WAVE_PERK_EFFECT: "Inflige #V [EmptyScope.ScriptValue('POD_base_fire_damage')|V0] de daño de fuego#! a los [knights|E] y [commanders|E] enemigos cuando actúas como [commander|E] durante la [combat_phase|E], o a tu oponente durante [single_combat_duel_plural|E].\n\n#flavor Actuando como un conducto para los géiseres de vapor, el Koldun canaliza una explosión de aire desecante hacia una víctima dentro de la línea de visión.#!"
+ BS_HEAT_WAVE_PERK_EFFECT: "Inflige #V [EmptyScope.ScriptValue('POD_base_fire_damage')|V0] de daño de fuego#! a los [knights|E] y [commanders|E] enemigos cuando actúas como [commander|E] durante la [combat_phase|E], o a tu oponente durante [single_combat_duel_plural|E].\n\n#flavor Como conducto para los géiseres de vapor, el Koldun canaliza una explosión de aire desecante hacia una víctima dentro de la línea de visión.#!"
  volcanic_blast_perk_name: "Explosión Volcánica"
  VOLCANIC_BLAST_PERK_EFFECT: "#flavor La lava explota del suelo en un enorme géiser por orden del Koldun. La roca fundida brota a lo largo de una amplia franja antes de estrellarse contra la tierra y fluir en todas direcciones.#!"
 
@@ -429,7 +429,7 @@
  WEAVE_OF_THE_FUTURE_PERK_EFFECT: "Como [bs_spell|E], otorga al objetivo [GetModifier('weave_of_the_future_modifier').GetNameWithTooltip] durante 5 años\n#flavor Recibe presagios de eventos por venir#!"
  CERTAIN_FATE_PERK_EFFECT: "Como [bs_spell|E], otorga al objetivo [GetModifier('certain_fate_modifier').GetNameWithTooltip] durante 5 años\n#flavor Recibe una visión cierta de un evento futuro#!"
  PAST_LIVES_PERK_EFFECT: "Como [bs_spell|E], otorga al objetivo un [modifier|E] que otorga +4 a una [skill|E] aleatoria ([GetModifier('past_lives_diplomacy_modifier').GetNameWithTooltip]) durante 10 años\n#flavor Recibe una biografía moderadamente detallada de tu encarnación anterior#!"
- MASTER_OF_SAMSARA_PERK_EFFECT: "Como [bs_spell|E], aumenta una [skill|E] aleatoria en 1 con el coste de un [modifier|E] permanente ([GetModifier('master_of_samsara_penality_modifier').GetNameWithTooltip])\nCuando te maten, otorga a tu asesino [GetModifier('master_of_samsara_modifier').GetNameWithTooltip] durante 50 años\n#flavor Obtén poder limitado sobre la futura encarnación de un objetivo#!"
+ MASTER_OF_SAMSARA_PERK_EFFECT: "Como [bs_spell|E], aumenta una [skill|E] aleatoria en 1 a costa de un [modifier|E] permanente ([GetModifier('master_of_samsara_penality_modifier').GetNameWithTooltip])\nCuando te maten, otorga a tu asesino [GetModifier('master_of_samsara_modifier').GetNameWithTooltip] durante 50 años\n#flavor Obtén poder limitado sobre la futura encarnación de un objetivo#!"
 
  hand_of_ptah_perk_name: "Mano de Ptah"
  hand_of_khnum_perk_name: "Mano de Knum"

@@ -16,7 +16,7 @@
  mithras_victory_custom_decision2: "Ningún otro Ventrue aparte de ti mismo o [GetScriptedCharacterByHistoryID('505071').GetFirstName] puede tener un [title|E] de Imperio. A menos que ellos mismos sean miembros del Culto de Mitras"
  toreador_victory_objective_decision: "Soñando de Nuevo"
  toreador_victory_objective_decision_tooltip: "Una ocasión trascendental que resonará en toda la Historia $pod_cainite$."
- toreador_victory_objective_decision_desc: "En 1204, ocurrió lo impensable, Miguel, Patriarca del Sueño de Constantinopla, murió mientras su ciudad ardía. Desde ese momento fatídico, numerosos seguidores del difunto Arcángel han intentado recrear esta santísima utopía."
+ toreador_victory_objective_decision_desc: "En 1204 ocurrió lo impensable: Miguel, Patriarca del Sueño de Constantinopla, murió mientras su ciudad ardía. Desde ese momento fatídico, numerosos seguidores del difunto Arcángel han intentado recrear esta santísima utopía."
  toreador_victory_objective_decision_confirm: "Espero que Miguel esté mirando"
  toreador_victory_objective_decision_effect_tooltip: "Se te presentará una opción entre renovar la fe del Arcángel o simplemente disfrutar de las recompensas materiales." 
  shadow_reconquista_objective_decision: "Sombra Reconquista"
@@ -27,7 +27,7 @@
  shadow_reconquista_objective_decision_custom: "No debe haber fieles [Glossary('Ashirra','game_concept_ashirra_desc')] en tu reino. Los Barones no cuentan" 
  einherjar_victory_objective_decision: "Derrotando al Ragnarök"
  einherjar_victory_objective_decision_tooltip: "Más allá del Ragnarök yace la posibilidad de un futuro para tu pueblo."
- einherjar_victory_objective_decision_desc: "Los Hijos de Canarl están siendo acosados por la llegada del cristianismo. Odín está ausente y su propia gente se vuelve contra ellos con horcas y fuego. Como los Ventrue alemanes ya han asegurado ciudades en el sur de Escandinavia, parece que el tiempo de los [Glossary('Einherjar','game_concept_einherjar_desc')] ha terminado."
+ einherjar_victory_objective_decision_desc: "La llegada del cristianismo acosa a los Hijos de Canarl. Odín está ausente y su propia gente se vuelve contra ellos con horcas y fuego. Como los Ventrue alemanes ya han asegurado ciudades en el sur de Escandinavia, parece que el tiempo de los [Glossary('Einherjar','game_concept_einherjar_desc')] ha terminado."
  einherjar_victory_objective_decision_confirm: "El Valhalla está asegurado"
  einherjar_victory_objective_decision_effect_tooltip: "Utilizarás tus tremenda e inesperadas victorias para revitalizar la fe [Glossary('Einherjar','game_concept_einherjar_desc')] y llevarla a esta nueva era." 
  ashirra_deconquista_objective_decision: "Iberia después de la Medianoche"
@@ -755,7 +755,7 @@
  POD_convert_government_decision_tooltip: "Estás usando un tipo de gobierno que no está destinado a tu personaje. Esta decisión te permite cambiarlo.\nCambia el tipo de [government|E] usando un [government|E] que se adapte a tu personaje."
  POD_convert_government_decision_confirm: "Adoptar el Camino Correcto"
  restore_celestial_army_objective_decision: "Restaurar el Ejército Celestial"
- restore_celestial_army_objective_decision_desc: "Hace cien años, muchos [GetTrait('shih').GetName( GetPlayer )] eligieron seguir un camino más grandioso: Llamándose a sí mismos el 'Ejército Celestial', estos cazadores de demonios buscaban destruir a los shen dondequiera que habitaran, incluso cuando no había necesidad de que actuaran. Muchos [GetTrait('shih').GetName( GetPlayer )] denunciaron a este Ejército Celestial, horrorizados por la violación de uno de los mandamientos principales de Yi. Finalmente, los [GetTrait('shih').GetName( GetPlayer )] se volvieron orgullosos y desterraron a todos los cazadores de demonios que no pertenecían al Ejército Celestial. Fue entonces cuando su cuartel general fue destruido durante un terremoto, dejando solo a los vagabundos atrás."
+ restore_celestial_army_objective_decision_desc: "Hace cien años, muchos [GetTrait('shih').GetName( GetPlayer )] eligieron seguir un camino más grandioso: Bajo el nombre de 'Ejército Celestial', estos cazadores de demonios buscaban destruir a los shen dondequiera que habitaran, incluso cuando no había necesidad de que actuaran. Muchos [GetTrait('shih').GetName( GetPlayer )] denunciaron a este Ejército Celestial, horrorizados por la violación de uno de los mandamientos principales de Yi. Finalmente, los [GetTrait('shih').GetName( GetPlayer )] se volvieron orgullosos y desterraron a todos los cazadores de demonios que no pertenecían al Ejército Celestial. Fue entonces cuando su cuartel general fue destruido durante un terremoto, y solo quedaron los vagabundos."
  restore_celestial_army_objective_decision_tooltip: "La escuela más grande del Ejército Celestial fue construida en las Montañas Kun Lun, recupérala y luego decide qué camino quieres seguir"
  restore_celestial_army_objective_decision_confirm: "¿El Nuevo Cuartel General?"
  shih_peace_decision: "Acción Reflexiva"
@@ -767,7 +767,7 @@
  learning_kaja_decision_tooltip: "Aprenderás Kaja y recibirás ventaja de ello."
  learning_kaja_decision_confirm: "¡Tan complejo!"
  meng_huo_you_supply_decision: "Suministro de Meng Huo You"
- meng_huo_you_supply_decision_desc: "Meng Huo You, laca de piedra, aceite de roca o simplemente petróleo, se utiliza como arma incendiaria en la guerra desde la Dinastía Han. Una vez parte del tributo pagado por una pequeña dinastía mortal en Vietnam al emperador chino en ese momento, es posible que puedas tomar esta arma para ti para equipar a otros cazadores."
+ meng_huo_you_supply_decision_desc: "Meng Huo You, laca de piedra, aceite de roca o simplemente petróleo, se utiliza como arma incendiaria en la guerra desde la Dinastía Han. Una vez parte del tributo pagado por una pequeña dinastía mortal en Vietnam al emperador chino en ese momento, es posible que puedas hacerte con esta arma para equipar a otros cazadores."
  meng_huo_you_supply_decision_tooltip: "Tomarás el suministro de petróleo de Chiêm Thành."
  meng_huo_you_supply_decision_confirm: "¡Prende fuego!"
  
@@ -807,7 +807,7 @@
 
  stealing_wistom_objective_decision: "Robando Sabiduría"
  stealing_wistom_objective_decision_tooltip: "Robarás el conocimiento de la Perla del Dragón, como te ordenó tu antepasado."
- stealing_wistom_objective_decision_desc: "El nombre Saulot es desconocido para los [Glossary('Wan Kuei','game_concept_kuei_jin_desc')], ellos conocen a Zao-Lat, un estudiante de [GetScriptedCharacterByHistoryID('791111').GetFirstName], un ladrón, una criatura despreciable que se benefició de la compasión de [GetScriptedCharacterByHistoryID('791111').GetFirstName], aprendió Ch'iuh Muh, se sentó a los pies del maestro y robó su sabiduría.\n¿Podrás hacer lo mismo?"
+ stealing_wistom_objective_decision_desc: "El nombre Saulot es desconocido para los [Glossary('Wan Kuei','game_concept_kuei_jin_desc')]; ellos conocen a Zao-Lat, un estudiante de [GetScriptedCharacterByHistoryID('791111').GetFirstName], un ladrón, una criatura despreciable que se benefició de la compasión de [GetScriptedCharacterByHistoryID('791111').GetFirstName], aprendió Ch'iuh Muh, se sentó a los pies del maestro y robó su sabiduría.\n¿Podrás hacer lo mismo?"
 #  stealing_wistom_objective_decision_custom: "Has capturado #V 3#! [GetTrait('kueijin').GetName( GetPlayer )] [Glossary('Bodhisattva','podgloss.bodhisattva')] ([GetTrait('dharma9').GetName( GetPlayer )]) o que aspiran a serlo ([GetTrait('dharma8').GetName( GetPlayer )])"
  stealing_wistom_objective_decision_custom: "Has capturado #V 3#! [GetTrait('kueijin').GetName( GetPlayer )] [GetTrait('dharma4').GetName( GetPlayer )]+"
  stealing_wistom_objective_decision_confirm: "El Robo Perfecto"
@@ -877,7 +877,7 @@
 
  shepherds_islam_victory_objective_decision: "Pastoreando a los Fieles"
  shepherds_islam_victory_objective_decision_tooltip: "Los fieles necesitan guardianes inmortales."
- shepherds_islam_victory_objective_decision_desc: "Estuvimos junto al propio Profeta, sus palabras permanecen con nosotros. Los mortales mueren, y el mensaje del Profeta será malrecordado o, peor, corrompido. Los mortales no pueden liderar el Islam, solo nosotros podemos."
+ shepherds_islam_victory_objective_decision_desc: "Estuvimos junto al propio Profeta, sus palabras permanecen con nosotros. Los mortales mueren, y el mensaje del Profeta será mal recordado o, peor, corrompido. Los mortales no pueden liderar el Islam, solo nosotros podemos."
  shepherds_islam_victory_objective_decision_confirm: "Ellos verán."
  shepherds_islam_victory_objective_decision_tooltip2: "O controlas tú el [GetTitleByKey('e_ashirra').GetNameNoTier], o nadie lo hace"
 
@@ -1022,7 +1022,7 @@
   
  awake_hun_and_po_objective_decision: "Despertar tu Hun y P'o"
  awake_hun_and_po_objective_decision_tooltip: "Despertarás tu Hun y P'o para convertirte en un [Glossary('Wan Kuei','game_concept_kuei_jin_desc')] en toda regla"
- awake_hun_and_po_objective_decision_desc: "Los Salubri reciben una bienvenida fría pero esencialmente cortés por parte de los [Glossary('Wan Kuei','game_concept_kuei_jin_desc')] interesados en estudiar la difusión de su saber. Las Disciplinas Salubri son perversiones (o transformaciones) fascinantes de la herencia [Glossary('Wan Kuei','game_concept_kuei_jin_desc')], por lo que los [Glossary('Muertos Hambrientos','game_concept_kuei_jin_desc')] de inclinación académica encuentran mucho de interés. Se rumorea que uno o más Salubri realmente despertaron su Hun y P'o, pero el proceso en sí es misterioso, por decir lo menos."
+ awake_hun_and_po_objective_decision_desc: "Los Salubri reciben una bienvenida fría pero esencialmente cortés por parte de los [Glossary('Wan Kuei','game_concept_kuei_jin_desc')] interesados en estudiar la difusión de su saber. Las Disciplinas Salubri son perversiones (o transformaciones) fascinantes de la herencia [Glossary('Wan Kuei','game_concept_kuei_jin_desc')], por lo que los [Glossary('Muertos Hambrientos','game_concept_kuei_jin_desc')] de inclinación académica encuentran mucho de interés. Se rumorea que uno o más Salubri realmente despertaron su Hun y P'o, pero el proceso en sí es misterioso, por no decir más."
  awake_hun_and_po_objective_decision_confirm: "El rumor era cierto"
 #  awake_hun_and_po_objective_decision_custom1: "Has capturado #V 6#! [GetTrait('kueijin').GetName( GetPlayer )] [Glossary('Bodhisattva','podgloss.bodhisattva')] ([GetTrait('dharma9').GetName( GetPlayer )])"
 #  awake_hun_and_po_objective_decision_custom2: "Tiene #V 5#! [GetTrait('kueijin').GetName( GetPlayer )] [Glossary('Bodhisattva','podgloss.bodhisattva')] ([GetTrait('dharma9').GetName( GetPlayer )]) cortesanos"
@@ -1484,7 +1484,7 @@
  has_supernatural_race_trigger_tt: "es sobrenatural"
  
  pet_dragon_decision: "Mascota [ROOT.Char.Custom('DragonStoryName')]"
- pet_dragon_decision_desc: "Es hora de respirar hondo y encontrar a mi fiel compañero de cuatro patas [ROOT.Char.Custom('DragonStoryName')]. Algunas personas dicen que los dragones son criaturas de temperamento difícil, pero sin importar lo dura que se ponga la vida, sé que [ROOT.Char.Custom('DragonStorySheHe')] ¡siempre estará ahí para mí!"
+ pet_dragon_decision_desc: "Es hora de respirar hondo y encontrar a mi fiel compañero de cuatro patas [ROOT.Char.Custom('DragonStoryName')]. Algunas personas dicen que los dragones son criaturas de temperamento difícil, pero por dura que se ponga la vida, sé que [ROOT.Char.Custom('DragonStorySheHe')] ¡siempre estará ahí para mí!"
  pet_dragon_decision_tooltip: "¡Escamoso!"
  pet_dragon_decision_confirm: "¿Quién es un buen dragón? ¡Tú lo eres!"
  
@@ -1569,7 +1569,7 @@
 
  little_god_reinstatement_objective_decision: "Restituir a los Pequeños Dioses"
  little_god_reinstatement_objective_decision_tooltip: "Pondrás fin al exilio de los Hsien."
- little_god_reinstatement_objective_decision_desc: "Los burócratas celestiales fueron derrocados durante los días turbulentos que siguieron a la caída en desgracia de los $pod_kueijin$. Ahora forzados a vivir como mortales, han abandonado su lugar en el orden de las cosas.\nEmpujarlos a aceptar nuevamente su tarea divinamente mandatada, y obligar a otros a acatar su autoridad cuando sea necesario, contribuiría enormemente a reparar el debilitado orden celestial."
+ little_god_reinstatement_objective_decision_desc: "Los burócratas celestiales fueron derrocados durante los días turbulentos que siguieron a la caída en desgracia de los $pod_kueijin$. Obligados ahora a vivir como mortales, han abandonado su lugar en el orden de las cosas.\nEmpujarlos a aceptar nuevamente su tarea divinamente mandatada, y obligar a otros a acatar su autoridad cuando sea necesario, contribuiría enormemente a reparar el debilitado orden celestial."
  little_god_reinstatement_objective_decision_confirm: "Una nueva era (pequeñamente) divina."
  hsien_fae: "Cada hsien perderá el rasgo [GetTrait('changeling').GetName( GetPlayer )] y ganará el rasgo [GetTrait('fae').GetName( GetPlayer )]."
  best_mediator_modifier: "Mediador Celestial"
@@ -1641,7 +1641,7 @@
  POD_vinculum_modifier_desc: "No puede estar [Glossary('Vinculado por la Sangre','game_concept_bloodbond_desc')]."
 
  overwork_capital_decision: "Sobreexplotar la Capital"
- overwork_capital_decision_desc: "La ciudad aún duerme. Sueña débilmente con su potencial no realizado.\nDespiértala, oh Buscador. Tráela a la vida. Las calles serán venas, y las grandes edificaciones se calcificarán como huesos, y cada alma se convertirá en una terminación nerviosa, siendo testigo del organismo hambriento de la industria."
+ overwork_capital_decision_desc: "La ciudad aún duerme. Sueña débilmente con su potencial no realizado.\nDespiértala, oh Buscador. Tráela a la vida. Las calles serán venas, y las grandes edificaciones se calcificarán como huesos, y cada alma se convertirá en una terminación nerviosa, testigo del organismo hambriento de la industria."
  overwork_capital_decision_tooltip: "Impulsa a los mortales de tu reino a realizar tu visión"
  overwork_capital_decision_confirm: "Los trabajadores sangrarán por mí"
  POD_county_overworked_modifier: "Sobrecargados"
@@ -1661,7 +1661,7 @@
 
  quest_for_sargon_codex_objective_decision: "Caza del Códice Sargon"
  quest_for_sargon_codex_objective_decision_tooltip: "El Conocimiento Supremo Aguarda"
- quest_for_sargon_codex_objective_decision_desc: "El Códice Sargon es una tablilla de arcilla escrita por Cappadocius durante sus años mortales. Después de su $pod_Embrace$, la pérdida de su Avatar causó caos y destrucción dentro de sus recuerdos. No podía recordar lo que había escrito ni dónde lo había dejado. Después de milenios, el Códice Sargon fue destruido y sus partes dispersadas por todo el mundo. Si alguien lo restaurara, un poder inmenso le aguardaría."
+ quest_for_sargon_codex_objective_decision_desc: "El Códice de Sargón es una tablilla de arcilla escrita por Cappadocius durante sus años mortales. Después de su $pod_Embrace$, la pérdida de su Avatar causó caos y destrucción dentro de sus recuerdos. No podía recordar lo que había escrito ni dónde lo había dejado. Después de milenios, el Códice de Sargón fue destruido y sus partes dispersadas por todo el mundo. Si alguien lo restaurara, un poder inmenso le aguardaría."
  quest_for_sargon_codex_objective_decision_confirm: "La Sabiduría de los Antiguos está al alcance…"
  quest_for_sargon_codex_objective_decision_at_least_1_shard: "Debes tener al menos 1 Fragmento del Códice Sargon"
  quest_for_sargon_codex_objective_decision_at_effect1: "Desbloquea un [journey|E] para buscar los otros Fragmentos del Códice por todo el mundo"
@@ -1779,7 +1779,7 @@
  ending_the_snake_objective_decision_effect2: "Todos los Setitas restantes verán su autoridad quebrantada."
 
  land_of_faith_objective_decision: "La Tierra de la Fe"
- land_of_faith_objective_decision_desc: "La Tierra de la Fe se refiere tradicionalmente a las líneas de poder del Antiguo Egipto que se extendieron hacia afuera a lo largo de los siglos. Este es un lugar donde el Sekhem es más fácil de usar y recolectar. Controláramos este río de energía pura, podríamos lograr lo imposible."
+ land_of_faith_objective_decision_desc: "La Tierra de la Fe se refiere tradicionalmente a las líneas de poder del Antiguo Egipto que se extendieron hacia afuera a lo largo de los siglos. Este es un lugar donde el Sekhem es más fácil de usar y recolectar. Si controláramos este río de energía pura, podríamos lograr lo imposible."
  land_of_faith_objective_decision_tooltip: "Red de la Vida"
  land_of_faith_objective_decision_confirm: "Desde Egipto y más allá"
  land_of_faith_objective_decision_custom1: "No debe haber personajes [landed|E] 'malvados' independientes, ej. $POD_splat_vampire_plural$, $POD_splat_demon_plural$, etc., en la [region|E] [GetGeographicalRegion('pod_lands_of_faith').GetName] #weak (a menos que su fe sea [GetFaithDoctrine('special_doctrine_against_to_apophis_hostility').GetBaseName])#!"
@@ -1788,7 +1788,7 @@
  land_of_faith_objective_decision_custom2_ex: "$land_of_faith_objective_decision_custom2$ #weak ([example.GetFirstName])#!"
 
  ending_the_serpent_objective_decision: "El Antagonista Principal: $glossary_wyrm_apophis$"
- ending_the_serpent_objective_decision_desc: "Nuestro objetivo más fundamental, restaurar el Ma'at (el concepto del Antiguo Egipto de un equilibrio justo), se consideraba imposible debido a la existencia de [UmbraGlossary('oblivion')] corrompiendo y perturbando constantemente el universo. Con la fuerza vital casi infinita de la Tierra de la Fe, podemos intentar destruir finalmente el concepto mismo de [UmbraGlossary('oblivion')]."
+ ending_the_serpent_objective_decision_desc: "Nuestro objetivo más fundamental, restaurar el Ma'at (el concepto del Antiguo Egipto de un equilibrio justo), se consideraba imposible debido a que [UmbraGlossary('oblivion')] corrompe y perturba constantemente el universo. Con la fuerza vital casi infinita de la Tierra de la Fe, podemos intentar destruir finalmente el concepto mismo de [UmbraGlossary('oblivion')]."
  ending_the_serpent_objective_decision_tooltip: "La última batalla de $glossary_wyrm_apophis$"
  ending_the_serpent_objective_decision_confirm: "El triunfo del Ma'at"
  ending_the_serpent_objective_decision_custom1: "Todas #TOOLTIP:GAME_TRAIT,banemummy,[GetNullCharacter] #L las Momias Azote#!#! deben estar muertas"
@@ -1863,14 +1863,14 @@
 
 
  protecting_knowledge_objective_decision: "Protegiendo el Conocimiento"
- protecting_knowledge_objective_decision_desc: "El mundo se encamina lentamente hacia el [Glossary('Sexta Edad','game_concept_sixth_age_desc')]. Aunque el escenario ideal sería evitarlo, debemos pensar de manera realista. Eso significa que debemos prepararnos para lo peor, debemos proteger cualquier conocimiento que otros después de nosotros puedan usar en los difíciles tiempos venideros."
+ protecting_knowledge_objective_decision_desc: "El mundo se encamina lentamente hacia la [Glossary('Sexta Era','game_concept_sixth_age_desc')]. Aunque el escenario ideal sería evitarlo, debemos pensar de manera realista. Eso significa que debemos prepararnos para lo peor y proteger cualquier conocimiento que otros después de nosotros puedan usar en los difíciles tiempos venideros."
  protecting_knowledge_objective_decision_tooltip: "Conocimiento durante la Edad del Mal"
  protecting_knowledge_objective_decision_confirm: "Protegiendo una tenue luz"
  protecting_knowledge_objective_decision_custom1: "Necesitas tener al menos #V 3#! [courtiers|E] con una [skill|E] de [learning|E] superior a #V 30#! o el [trait|E] [GetTrait('scholar').GetName(GetPlayer)]"
  protecting_knowledge_objective_decision_custom2: "Necesitas tener al menos #V 2#! [artifacts|E] de Libro #ILLUSTRIOUSPURPLE Insigne#!"
 
  protecting_people_objective_decision: "Protegiendo a las Personas"
- protecting_people_objective_decision_desc: "El mundo se encamina lentamente hacia el [Glossary('Sexta Edad','game_concept_sixth_age_desc')]. Aunque el escenario ideal sería evitarlo, debemos pensar de manera realista. Eso significa que debemos prepararnos para lo peor, debemos proteger a los mortales virtuosos que lucharán contra el [Glossary('Emperador Demonio','podgloss.demonemperor')] en los difíciles tiempos venideros."
+ protecting_people_objective_decision_desc: "El mundo se encamina lentamente hacia la [Glossary('Sexta Era','game_concept_sixth_age_desc')]. Aunque el escenario ideal sería evitarlo, debemos pensar de manera realista. Eso significa que debemos prepararnos para lo peor y proteger a los mortales virtuosos que lucharán contra el [Glossary('Emperador Demonio','podgloss.demonemperor')] en los difíciles tiempos venideros."
  protecting_people_objective_decision_tooltip: "Héroes durante la Edad del Mal"
  protecting_people_objective_decision_confirm: "Mentoreando a la próxima generación"
  protecting_people_objective_decision_extra1: "Solo los [characters|E] [landed|E] pueden hacer este objetivo"
@@ -1879,7 +1879,7 @@
  protecting_people_objective_decision_custom3: "Cada [county|E] en tu [realm|E] debe tener #V 100#! [county_control|E]"
 
  protecting_shen_objective_decision: "Protegiendo a los Shen"
- protecting_shen_objective_decision_desc: "El mundo se encamina lentamente hacia el [Glossary('Sexta Edad','game_concept_sixth_age_desc')]. Aunque el escenario ideal sería evitarlo, debemos pensar de manera realista. Eso significa que debemos prepararnos para lo peor, debemos proteger a los sobrenaturales virtuosos restantes, para que aún puedan prosperar y proteger a la humanidad contra el [Glossary('Emperador Demonio','podgloss.demonemperor')]."
+ protecting_shen_objective_decision_desc: "El mundo se encamina lentamente hacia la [Glossary('Sexta Era','game_concept_sixth_age_desc')]. Aunque el escenario ideal sería evitarlo, debemos pensar de manera realista. Eso significa que debemos prepararnos para lo peor y proteger a los sobrenaturales virtuosos restantes, para que aún puedan prosperar y proteger a la humanidad contra el [Glossary('Emperador Demonio','podgloss.demonemperor')]."
  protecting_shen_objective_decision_tooltip: "Sobrenatural durante la Edad del Mal"
  protecting_shen_objective_decision_confirm: "Héroes de un mundo condenado"
  protecting_shen_objective_decision_custom1: "Debes tener al menos #V 2#! [vassals|E] $POD_splat_kueijin$ con #P +50#! [opinion|E] hacia ti."
@@ -1887,7 +1887,7 @@
  protecting_shen_objective_decision_custom3: "Debes tener al menos #V 2#! [vassals|E] [GetTrait('shih').GetName(GetPlayer)] con #P +50#! [opinion|E] hacia ti."
 
  protecting_middle_kingdom_objective_decision: "Protegiendo el Reino Medio"
- protecting_middle_kingdom_objective_decision_desc: "El mundo se encamina lentamente hacia el [Glossary('Sexta Edad','game_concept_sixth_age_desc')]. Aunque el escenario ideal sería evitarlo, debemos pensar de manera realista. Si el [Glossary('Emperador Demonio','podgloss.demonemperor')] ha de surgir en el Reino Medio como se profetizó, podríamos ralentizar su llegada protegiendo estas tierras sagradas."
+ protecting_middle_kingdom_objective_decision_desc: "El mundo se encamina lentamente hacia la [Glossary('Sexta Era','game_concept_sixth_age_desc')]. Aunque el escenario ideal sería evitarlo, debemos pensar de manera realista. Si el [Glossary('Emperador Demonio','podgloss.demonemperor')] ha de surgir en el Reino Medio como se profetizó, podríamos ralentizar su llegada protegiendo estas tierras sagradas."
  protecting_middle_kingdom_objective_decision_tooltip: "Ganando tiempo precioso"
  protecting_middle_kingdom_objective_decision_confirm: "Un valioso respiro"
  #protecting_middle_kingdom_objective_decision_custom1: "El Reino Medio no debe estar en el [Glossary('Sexta Edad','game_concept_sixth_age_desc')]"
@@ -1902,7 +1902,7 @@
  achieve_ra_hekau_objective_decision_custom1: "Conoces los [Glossary('Nombres Verdaderos','podgloss.truename')] de #V 25#! [traits|E] #weak ([GetPlayer.MakeScope.ScriptValue('known_trait_true_names_number')])#!"
 
  POD_shih_summon_decision: "Llamar a Aliados Shih"
- POD_shih_summon_decision_desc: "El objetivo de los [GetTrait('shih').GetName(GetNullCharacter)] de eliminar a los sobrenaturales que ponen en peligro a la humanidad se alinea con el nuestro de prepararlos para la Sexta Edad. Aunque no son verdaderos \"aliados\", aún podemos recurrir a ellos de vez en cuando y esperar recibir una respuesta positiva."
+ POD_shih_summon_decision_desc: "El objetivo de los [GetTrait('shih').GetName(GetNullCharacter)] de eliminar a los sobrenaturales que ponen en peligro a la humanidad se alinea con el nuestro de prepararlos para la Sexta Era. Aunque no son verdaderos \"aliados\", aún podemos recurrir a ellos de vez en cuando y esperar recibir una respuesta positiva."
  POD_shih_summon_decision_confirm: "Convocar a un Shih"
  POD_shih_summon_decision_tooltip: "Juntos contra Yomi"
  POD_shih_summon_decision_effect: "Convocarás a un [GetTrait('shih').GetName(GetNullCharacter)] a tu [court|E]."
