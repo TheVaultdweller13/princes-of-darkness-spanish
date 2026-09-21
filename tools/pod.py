@@ -952,7 +952,10 @@ def _apply(a):
             if meta["mode"] == "style":
                 # el modo estilo pule; si el texto vuelve irreconocible es que lo ha re-traducido,
                 # y eso cambia el sentido tanto como lo mejora: se rechaza y se le explica por qué
-                parecido = difflib.SequenceMatcher(None, strip_markup(it["expect"]), strip_markup(es)).ratio()
+                # autojunk=False: con textos de más de 200 caracteres, el autojunk descarta como «basura» los
+                # caracteres frecuentes (espacios, vocales) y da parecidos falsos del 20 % por una sola palabra
+                parecido = difflib.SequenceMatcher(None, strip_markup(it["expect"]), strip_markup(es),
+                                                   autojunk=False).ratio()
                 if parecido < CFG.get("style_min_similarity", 0.5):
                     rechaza(n, it, f"reescritura excesiva (solo {parecido:.0%} en común con el texto actual): "
                                    "el modo estilo pule la frase, no la re-traduce", es)

@@ -1092,7 +1092,7 @@
 
 
  tenet_banepossession_name: "Posesión de Bane"
- tenet_banepossession_desc: "Los Banes son espíritus malignos al servicio del Wyrm. Los Banes abarcan toda la gama, desde débiles y relativamente inofensivos hasta criaturas horriblemente poderosas capaces de desgarrar la realidad a su alrededor. Los Banes débiles se usan con frecuencia para infectar a humanos y Animales, convirtiéndolos en fomori. Encontrar anfitriones para los Banes se considera una tarea sagrada por los cultos del Wyrm."
+ tenet_banepossession_desc: "Los Banes son espíritus malignos al servicio del Wyrm. Los Banes abarcan toda la gama, desde débiles y relativamente inofensivos hasta criaturas horriblemente poderosas capaces de desgarrar la realidad a su alrededor. Los Banes débiles se usan con frecuencia para infectar a humanos y Animales, convirtiéndolos en fomori. Los cultos del Wyrm consideran una tarea sagrada encontrar anfitriones para los Banes."
  
  past_lives_name: "Vidas Pasadas"
  past_lives_doctrine_name: "Vidas Pasadas"
@@ -1468,7 +1468,7 @@
  doctrine_parameter_reduces_flood_weather_cost: "Reduce el coste de la Magia del Clima #V Inundación#!."
 
  tenet_dragon_princes_name: "Príncipes Dragón"
- tenet_dragon_princes_desc: "Los Wani son los Príncipes Dragón de Zhong Guo, gobernando las nubes y el ascenso y descenso del agua, y presidiendo las casas reales de la humanidad. Los Zhong Lung, con su forma dracónica Archid, son los hijos de los Wani. Este hecho a veces es disputado por las otras razas, hasta que un rayo les hace reconsiderarlo."
+ tenet_dragon_princes_desc: "Los Wani son los Príncipes Dragón de Zhong Guo, gobernando las nubes y el ascenso y descenso del agua, y presidiendo las casas reales de la humanidad. Los Zhong Lung, con su forma dracónica Archid, son los hijos de los Wani. Las otras razas a veces lo discuten, hasta que un rayo les hace reconsiderarlo."
  doctrine_parameter_can_learn_galliard_gifts: "Puede aprender Dones de [GetTrait('galliard').GetName( GetPlayer )] del [lifestyle|E] [lunar_auspicegifts_lifestyle|E]."
 
  tenet_outlast_world_name: "Sobrevivir al Mundo"
@@ -1563,7 +1563,7 @@
  doctrine_fera_pact_group_name: "Pactos Fera"
 
  doctrine_fera_werewolf_pact_name: "Pactos Garou"
- doctrine_fera_werewolf_pact_desc: "Por una razón u otra, los adherentes de esta fe han formado vínculos estrechos con los #TOOLTIP:GAME_TRAIT,werewolf,[GetNullCharacter] #L Garou#!. Las tribus salvajes y brutales no son fáciles de entablar amistad, pero cuando lo hacen, se toman sus juramentos muy en serio."
+ doctrine_fera_werewolf_pact_desc: "Por una razón u otra, los adherentes de esta fe han formado vínculos estrechos con los #TOOLTIP:GAME_TRAIT,werewolf,[GetNullCharacter] #L Garou#!. Entablar amistad con las tribus salvajes y brutales no es fácil, pero, cuando lo consiguen, se toman sus juramentos muy en serio."
  doctrine_parameter_hostility_override_doctrine_fera_werewolf_pact: "Las [faiths|E] con [GetFaithDoctrine('doctrine_fera_werewolf_pact').GetBaseName] se consideran [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
 
  doctrine_fera_bastet_pact_name: "Pactos Bastet"
