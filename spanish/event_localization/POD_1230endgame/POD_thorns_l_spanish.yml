@@ -59,7 +59,7 @@
  PODthorns.0024.t: "Espinas: Camarilla Tremere"
  PODthorns.0024.desc: "Como la mayoría de los asistentes a la convención esperaba, los Tremere han jurado lealtad a la Camarilla. Muchos ya los ven como el verdadero poder tras el trono en esta naciente secta."
  PODthorns.0025.t: "Thorns: Oposición Tremere"
- PODthorns.0025.desc: "Un giro sorprendente de los acontecimientos en la Convención, ya que los Tremere han anunciado su apoyo al Movimiento Anarquista. ¿Es esto un fallo en su pirámide o parte de un conjura mayor?"
+ PODthorns.0025.desc: "Un giro sorprendente de los acontecimientos en la Convención, ya que los Tremere han anunciado su apoyo al Movimiento Anarquista. ¿Es esto un fallo en su pirámide o parte de una conjura mayor?"
  PODthorns.0026.t: "Thorns: Tremere neutral"
  PODthorns.0026.desc: "Parece que los Magos no se inclinarán ante nadie más que ante los suyos, ya que su representante ha anunciado su neutralidad en el conflicto actual. Sin duda, sus servicios como hechiceros mercenarios serán muy solicitados."
  PODthorns.0027.t: "Thorns: Los Tzimisce"
@@ -117,7 +117,7 @@
  PODthorns.0053.t: "Thorns: Salubri de la oposición"
  PODthorns.0053.desc: "La retribución es el nombre del momento para el $pod_clan$ Salubri. Quieren venganza por todos los horrores que soportaron y han encontrado nuevos aliados en el movimiento Anarquista. Quizás su sufrimiento común los ha unido."
  PODthorns.0054.t: "Thorns: Salubri neutrales"
- PODthorns.0054.desc: "Su lucha por la supervivencia ha costado mucho a los $pod_clan$ Salubri. Es hora de que sanen, tanto el alma como el cuerpo. Con estas palabras, su representante confirma la neutralidad del $pod_clan$ en la crisis actual."
+ PODthorns.0054.desc: "Su lucha por la supervivencia ha costado mucho al $pod_clan$ Salubri. Es hora de que sanen, tanto el alma como el cuerpo. Con estas palabras, su representante confirma la neutralidad del $pod_clan$ en la crisis actual."
  PODthorns.0055.t: "Thorns: Los Ravnos"
  PODthorns.0055.desc: "Los Ravnos siempre han sido forasteros para los $pod_cainites$ occidentales, pero esta situación está cambiando rápidamente a medida que el $pod_clan$ indio está cada vez más presente en Europa. Como guiño a esta nueva fuerza, han sido invitados a la Convención, aunque la mayoría piensa que mantendrán una cautelosa neutralidad en la guerra actual."
  PODthorns.0056.t: "Thorns: Ravnos de la Camarilla"
@@ -145,7 +145,7 @@
  PODthorns.1001.b: "No me importan los detalles."
  PODthorns.1001.b.tt: "La Camarilla mantendrá sus preceptos y doctrinas predeterminados actuales."
  PODthorns.1002.t: "Mecánica de las votaciones: Preceptos"
- PODthorns.1002.desc: "Se ha elegido un procedimiento para la votación sobre qué debería ser exactamente la Camarilla. Como siempre con las Cainitas, esto implica mucha política y acuerdos entre bastidores. Nada fuera de lo común para ti.\n #R En la nueva ventana que aparecerá, la primera pestaña enumerará todos los preceptos en disputa sobre los que se puede votar. La segunda pestaña enumerará tus votos actuales que puedes cambiar libremente.\nLos tres preceptos con más votos se mantendrán y se convertirán en el núcleo de la Camarilla. Si algunos preceptos tienen el mismo número de votos, se elegirá uno al azar.\nPuedes usar la [character_interaction|E] negociar para hacer que el objetivo vote por un precepto que hayas elegido o hacer que retire todos sus votos actuales (absteniéndose así).\nCuantos más preceptos elijan los electores, más querrán unirse a la Camarilla al final.#!"
+ PODthorns.1002.desc: "Se ha elegido un procedimiento para la votación sobre qué debería ser exactamente la Camarilla. Como siempre con los Cainitas, esto implica mucha política y acuerdos entre bastidores. Nada fuera de lo común para ti.\n #R En la nueva ventana que aparecerá, la primera pestaña enumerará todos los preceptos en disputa sobre los que se puede votar. La segunda pestaña enumerará tus votos actuales que puedes cambiar libremente.\nLos tres preceptos con más votos se mantendrán y se convertirán en el núcleo de la Camarilla. Si algunos preceptos tienen el mismo número de votos, se elegirá uno al azar.\nPuedes usar la [character_interaction|E] negociar para hacer que el objetivo vote por un precepto que hayas elegido o hacer que retire todos sus votos actuales (absteniéndose así).\nCuantos más preceptos elijan los electores, más querrán unirse a la Camarilla al final.#!"
  PODthorns.1002.a: "Entendido."
  PODthorns.1002.a.tt: "La ventana de votación de preceptos aparecerá ahora."
  PODthorns.1003.t: "Mecánica de las votaciones: Doctrinas"
@@ -165,7 +165,7 @@
  POD_camarilla.110.b: "Cazo solo."
  
  POD_camarilla.200.title: "Guerra interna en la Camarilla"
- POD_camarilla.200.desc: "¿Cómo ha podido [attacker.GetFirstName] iniciar una guerra contra ti, un noble [defender.Custom('CamarillaStatus')] de la Camarilla? ¡Quizá deberías convocar un cónclave y reclamar a [attacker.GetHerHim] como [GetTrait('anathema').GetName( GetPlayer )]!\nThe Camarilla en su conjunto rehúye la guerra abierta entre sus miembros, ya que tiende a debilitarlos ante amenazas externas como el Sabbat o los Anarquistas. Sin embargo, cada ofensa se trata por separado, y no hay poca intriga política de por medio para alcanzar el acuerdo final."
+ POD_camarilla.200.desc: "¿Cómo ha podido [attacker.GetFirstName] iniciar una guerra contra ti, un noble [defender.Custom('CamarillaStatus')] de la Camarilla? ¡Quizá deberías convocar un cónclave y reclamar a [attacker.GetHerHim] como [GetTrait('anathema').GetName( GetPlayer )]!\nLa Camarilla en su conjunto rehúye la guerra abierta entre sus miembros, ya que tiende a debilitarlos ante amenazas externas como el Sabbat o los Anarquistas. Sin embargo, cada ofensa se trata por separado, y no hay poca intriga política de por medio para alcanzar el acuerdo final."
  POD_camarilla.200.a: "Convócala."
  POD_camarilla.200.b: "No es necesario."
 
@@ -275,7 +275,7 @@
  POD_camarilla.1221.b: "Cambié de opinión."
 
  POD_camarilla.1301.title: "Lista Roja"
- POD_camarilla.1301.desc: "La Lista Roja es el listado de aquellos Vástagos a quienes la Camarilla desea ver purgados con mayor fervor de la faz de la tierra. Los vampiros en la Lista Roja, conocidos como Anatema, son considerados bajo una Caza de Sangre continua. La Camarilla suele dejar la caza y destrucción de estos Vástagos en manos de los Alastors. Tradicionalmente, contiene 13 nombres.\nLa Lista Roja es más pequeña que 13 en este momento y, por tanto, podrías añadir un nuevo Anatema a tu conveniencia."
+ POD_camarilla.1301.desc: "La Lista Roja es el listado de aquellos Vástagos a quienes la Camarilla desea ver purgados con mayor fervor de la faz de la tierra. Los vampiros en la Lista Roja, conocidos como Anatema, son considerados bajo una Caza de Sangre continua. La Camarilla suele dejar la caza y destrucción de estos Vástagos en manos de los Alastors. Tradicionalmente, contiene 13 nombres.\nActualmente la Lista Roja tiene menos de 13 nombres y, por tanto, podrías añadir un nuevo Anatema a tu conveniencia."
  POD_camarilla.1301.a: "[red_list_candidate_1.GetFirstNameNoTooltip]"
  POD_camarilla.1301.b: "[red_list_candidate_2.GetFirstNameNoTooltip]"
  POD_camarilla.1301.c: "[red_list_candidate_3.GetFirstNameNoTooltip]"
@@ -388,7 +388,7 @@
  POD_camarilla.2209.b: "Bien por ellos."
  
  POD_camarilla.2010.t: "Ravnos aceptado"
- POD_camarilla.2010.desc: "Has aceptado a los Ravnos en la Camarilla; su representante, [ravnos_justicar_candidate_1.GetFirstNameNoTooltip], te agradece su apoyo y promete el apoyo eterno de su clan a la secta.\nPalabras bonitas que, al menos, no cuestan mucho decir."
+ POD_camarilla.2010.desc: "Has aceptado a los Ravnos en la Camarilla; su representante, [ravnos_justicar_candidate_1.GetFirstNameNoTooltip], te agradece tu apoyo y promete el apoyo eterno de su clan a la secta.\nPalabras bonitas que, al menos, no cuestan mucho decir."
  POD_camarilla.2010.a: "Bienvenido al bando ganador."
  POD_camarilla.2110.t: "Ravnos de la Camarilla"
  POD_camarilla.2110.desc: "Como principal representante de los Ravnos, se te invita a ser el nuevo miembro del [Glossary('Círculo Interno','game_concept_inner_circle_desc')] para tu clan. Un gran honor que te convierte en una de las figuras principales de la secta más poderosa que existe."
@@ -399,7 +399,7 @@
  POD_camarilla.2210.b: "Bien por ellos."
  
  POD_camarilla.2011.t: "Capadocio aceptado"
- POD_camarilla.2011.desc: "Has aceptado a los Capadocio en la Camarilla; su representante, [cappadocian_justicar_candidate_1.GetFirstNameNoTooltip], te agradece su apoyo y promete el apoyo eterno de su clan a la secta.\nPalabras bonitas que, al menos, no cuestan mucho decir."
+ POD_camarilla.2011.desc: "Has aceptado a los Capadocio en la Camarilla; su representante, [cappadocian_justicar_candidate_1.GetFirstNameNoTooltip], te agradece tu apoyo y promete el apoyo eterno de su clan a la secta.\nPalabras bonitas que, al menos, no cuestan mucho decir."
  POD_camarilla.2011.a: "Bienvenido al bando ganador."
  POD_camarilla.2111.t: "Capadocio de la Camarilla"
  POD_camarilla.2111.desc: "Como principal representante de los Capadocio, se te invita a ser el nuevo miembro del [Glossary('Círculo Interno','game_concept_inner_circle_desc')] para tu clan. Un gran honor que te convierte en una de las figuras principales de la secta más poderosa que existe."
@@ -410,7 +410,7 @@
  POD_camarilla.2211.b: "Bien por ellos."
  
  POD_camarilla.2012.t: "Setita aceptada"
- POD_camarilla.2012.desc: "Has aceptado a los Setita en la Camarilla; su representante, [setite_justicar_candidate_1.GetFirstNameNoTooltip], te agradece su apoyo y promete el apoyo eterno de su clan a la secta.\nPalabras bonitas que, al menos, no cuestan mucho decir."
+ POD_camarilla.2012.desc: "Has aceptado a los Setita en la Camarilla; su representante, [setite_justicar_candidate_1.GetFirstNameNoTooltip], te agradece tu apoyo y promete el apoyo eterno de su clan a la secta.\nPalabras bonitas que, al menos, no cuestan mucho decir."
  POD_camarilla.2012.a: "Bienvenido al bando ganador."
  POD_camarilla.2112.t: "Setita de la Camarilla"
  POD_camarilla.2112.desc: "Como principal representante de los Setita, se te invita a ser el nuevo miembro del [Glossary('Círculo Interno','game_concept_inner_circle_desc')] para tu clan. Un gran honor que te convierte en una de las figuras principales de la secta más poderosa que existe."
@@ -421,7 +421,7 @@
  POD_camarilla.2212.b: "Bien por ellos."
  
  POD_camarilla.2013.t: "Assamita aceptado"
- POD_camarilla.2013.desc: "Has aceptado a los Assamita en la Camarilla; su representante, [assamite_justicar_candidate_1.GetFirstNameNoTooltip], te agradece su apoyo y promete el apoyo eterno de su clan a la secta.\nPalabras bonitas que, al menos, no cuestan mucho decir."
+ POD_camarilla.2013.desc: "Has aceptado a los Assamita en la Camarilla; su representante, [assamite_justicar_candidate_1.GetFirstNameNoTooltip], te agradece tu apoyo y promete el apoyo eterno de su clan a la secta.\nPalabras bonitas que, al menos, no cuestan mucho decir."
  POD_camarilla.2013.a: "Bienvenido al bando ganador."
  POD_camarilla.2113.t: "Assamita de la Camarilla"
  POD_camarilla.2113.desc: "Como principal representante de los Assamita, se te invita a ser el nuevo miembro del [Glossary('Círculo Interno','game_concept_inner_circle_desc')] para tu clan. Un gran honor que te convierte en una de las figuras principales de la secta más poderosa que existe."
@@ -432,7 +432,7 @@
  POD_camarilla.2213.b: "Bien por ellos."
  
  POD_camarilla.2014.t: "Salubri aceptado"
- POD_camarilla.2014.desc: "Has aceptado a los Salubri en la Camarilla; su representante, [salubri_justicar_candidate_1.GetFirstNameNoTooltip], te agradece su apoyo y promete el apoyo eterno de su clan a la secta.\nPalabras bonitas que, al menos, no cuestan mucho decir."
+ POD_camarilla.2014.desc: "Has aceptado a los Salubri en la Camarilla; su representante, [salubri_justicar_candidate_1.GetFirstNameNoTooltip], te agradece tu apoyo y promete el apoyo eterno de su clan a la secta.\nPalabras bonitas que, al menos, no cuestan mucho decir."
  POD_camarilla.2014.a: "Bienvenido al bando ganador."
  POD_camarilla.2114.t: "Salubri de la Camarilla"
  POD_camarilla.2114.desc: "Como principal representante de los Salubri, se te invita a ser el nuevo miembro del [Glossary('Círculo Interno','game_concept_inner_circle_desc')] para tu clan. Un gran honor que te convierte en una de las figuras principales de la secta más poderosa que existe."
@@ -443,7 +443,7 @@
  POD_camarilla.2214.b: "Bien por ellos."
  
  POD_camarilla.2015.t: "Caitiff aceptado"
- POD_camarilla.2015.desc: "Has aceptado a los Caitiff en la Camarilla; su representante, [caitiff_justicar_candidate_1.GetFirstNameNoTooltip], te agradece su apoyo y promete el apoyo eterno de su clan a la secta.\nPalabras bonitas que, al menos, no cuestan mucho decir."
+ POD_camarilla.2015.desc: "Has aceptado a los Caitiff en la Camarilla; su representante, [caitiff_justicar_candidate_1.GetFirstNameNoTooltip], te agradece tu apoyo y promete el apoyo eterno de su clan a la secta.\nPalabras bonitas que, al menos, no cuestan mucho decir."
  POD_camarilla.2015.a: "Bienvenido al bando ganador."
  POD_camarilla.2115.t: "Caitiff de la Camarilla"
  POD_camarilla.2115.desc: "Como principal representante de los Caitiff, se te invita a ser el nuevo miembro del [Glossary('Círculo Interno','game_concept_inner_circle_desc')] para tu clan. Un gran honor que te convierte en una de las figuras principales de la secta más poderosa que existe."
