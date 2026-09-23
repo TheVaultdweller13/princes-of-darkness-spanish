@@ -72,6 +72,18 @@ Para adjetivos o artículos que dependen del sexo de un personaje, puedes AÑADI
 
 Si no sabes a qué personaje se refiere, redacta la frase de forma neutra en vez de adivinar.
 
+### Concordancia con variables
+
+Las variables (`$pod_clan$`, `[doctrine|E]`, `[Glossary('Anda',…)]`, `[GetTrait('vampire').GetName(…)]`, `[UmbraGlossary('shadowlands')]`…) se ven en el juego como una palabra con su propio género y número, que puede no coincidir con el inglés ni con la palabra que tú usarías. El artículo o el adjetivo que escribes al lado tiene que concordar con **lo que se ve**. La cabecera del lote lo indica en `CÓMO SE VEN LAS VARIABLES EN EL JUEGO`:
+
+- `[doctrine|E]` = «Doctrina» (femenino singular) → `la [doctrine|E]`, `una nueva [doctrine|E]`, nunca `el [doctrine|E]`.
+- `[UmbraGlossary('shadowlands')]` = «Tierras de las Sombras» (femenino plural) → `las [UmbraGlossary('shadowlands')]`, `de las …`.
+- Si la variable ya empieza por artículo («La Mascarada»), no pongas otro delante.
+- Si la variable es singular y la frase pide plural (`the [GetTrait('vampire').GetName(…)]s`), no pongas «los» delante de «Vampiro»: busca un giro (`los que son [GetTrait…]`, `todo [GetTrait…]`) o usa la variable en plural si existe (`[Fetters|E]`).
+- Los femeninos con a- tónica llevan «el/un» en singular (el alma, el arma): eso está bien.
+
+En modo REVISAR, un `MOTIVO: concordancia con variable` dice qué artículo o adjetivo no concuerda y qué palabra muestra la variable: corrige solo eso. Si el aviso es falso (el artículo se refiere a otra palabra, o es un pronombre: «los [Glossary('Abrazó',…)]» = «los abrazó»), deja la línea igual.
+
 ## Modo ESTILO
 
 Lotes de textos **ya traducidos y correctos**. No es una revisión de errores ni una nueva traducción: es la pasada de estilo, para que dejen de sonar a traducción y suenen a novela.

@@ -21,7 +21,7 @@
  necro_magic_path_of_haunting_visible: "Vía del Acecho"
  necro_magic_path_of_woe_visible: "Vía de la Desdicha"
 
- necro_magic_shared_ritual_perk_effect: "Desbloquea [bs_rituals|E] específicos de la [bs_path|E]"
+ necro_magic_shared_ritual_perk_effect: "Desbloquea [bs_rituals|E] específicos del [bs_path|E]"
 
  ns_peering_across_the_shroud_perk_name: "Mirar a través del Velo"
  ns_summon_soul_perk_name: "Invocar Alma"
@@ -49,9 +49,9 @@
 
  NS_SHROUDSIGHT_PERK_EFFECT: "$POD_can_summon_wraith_trigger_loca$\n#flavor Visión del Velo permite a un vampiro mirar directamente hacia el [UmbraGlossaryLocalized('shadowlands','Inframundo')].#!"
  NS_TONGUE_OF_THE_DARK_KINGDOMS_PERK_EFFECT: "$POD_can_command_wraith_trigger_loca$\n#flavor Al pronunciar la Lengua de los [Glossary('Reinos Oscuros','game_concept_dark_kingdom_desc')], un nigromante puede conversar con fantasmas en el [UmbraGlossaryLocalized('shadowlands','Inframundo')].#!"
- NS_TOUCH_OF_THE_NETHER_PERK_EFFECT: "Te permite interactuar con seres del [umbra|E] cuando estás en el mundo material.\n#flavor Mientras invoca Toque del Inframundo, un nigromante puede estar en ambos lados del Velo; se manifiesta físicamente en el [UmbraGlossaryLocalized('shadowlands','Inframundo')] mientras permanece corpóreo en las tierras de los vivos.#!"
+ NS_TOUCH_OF_THE_NETHER_PERK_EFFECT: "Te permite interactuar con seres de la [umbra|E] cuando estás en el mundo material.\n#flavor Mientras invoca Toque del Inframundo, un nigromante puede estar en ambos lados del Velo; se manifiesta físicamente en el [UmbraGlossaryLocalized('shadowlands','Inframundo')] mientras permanece corpóreo en las tierras de los vivos.#!"
  NS_EX_NIHILO_PERK_EFFECT: "#flavor Ex Nihilo permite a un nigromante entrar físicamente en el [UmbraGlossaryLocalized('shadowlands','Inframundo')]. Mientras está en el [UmbraGlossaryLocalized('shadowlands','Inframundo')], aparece como un fantasma particularmente sólido.#!"
- NS_SHROUD_MASTERY_PERK_EFFECT: "Desbloquea la opción Manipular el Velo en el [umbra|E].\n#flavor Con este poder, el nigromante puede ayudar o dificultar en gran medida la capacidad de los fantasmas para funcionar en el mundo de los vivos.#!"
+ NS_SHROUD_MASTERY_PERK_EFFECT: "Desbloquea la opción Manipular el Velo en la [umbra|E].\n#flavor Con este poder, el nigromante puede ayudar o dificultar en gran medida la capacidad de los fantasmas para funcionar en el mundo de los vivos.#!"
   
  NS_ASH_PATH_RITUALS_PERK_EFFECT: "$necro_magic_shared_ritual_perk_effect$"
  
@@ -80,10 +80,10 @@
  ns_cenotaph_path_rituals_perk_name: "[bs_rituals|E] de la $necro_magic_cenotaph_path_visible$"
 
  NS_A_TOUCH_OF_DEATH_PERK_EFFECT: "#flavor El nigromante está sintonizado con la energía residual dejada por el paso o toque de un fantasma, permitiéndole determinar si un objeto, persona o área ha sido tocado o influenciado por un fantasma.#!"
- NS_REVEAL_THE_CATENE_PERK_EFFECT: "Disminuye el coste de [stress|E] del [GetTrait('wraith').GetName( GetNullCharacter )] atado en el mundo material.\n#flavor El nigromante reconoce la marca cenicienta que dejan los muertos en los objetos, permitiéndole distinguir entre los juguetes de los fantasmas y los [Fetters|E].#!"
+ NS_REVEAL_THE_CATENE_PERK_EFFECT: "Disminuye el coste de [stress|E] del [GetTrait('wraith').GetName( GetNullCharacter )] atado en el mundo material.\n#flavor El nigromante reconoce la marca cenicienta que dejan los muertos en los objetos, permitiéndole distinguir entre los juguetes de los fantasmas y las [Fetters|E].#!"
  NS_TREAD_UPON_THE_GRAVE_PERK_EFFECT: "Disminuye el coste de [stress|E] del [GetTrait('wraith').GetName( GetNullCharacter )] atado en el mundo material.\n#flavor El nigromante siente cuando está cerca del mundo de los muertos. Un nigromante podría usar su percepción natural, mientras que otro podría hacer escry, pero ambos pueden sentir dónde el [UmbraGlossaryLocalized('shadowlands','Inframundo')] toca el mundo de los vivos.#!"
- NS_DEATH_KNELL_PERK_EFFECT: "Si alguno de tus [courtier|E] es asesinado en circunstancias misteriosas, conocerás la identidad de su asesino.\n#flavor El nigromante siente cuando está cerca del mundo de los muertos. Un nigromante podría usar su percepción natural, mientras que otro podría hacer escry, pero ambos pueden sentir dónde el [UmbraGlossaryLocalized('shadowlands','Inframundo')] toca el mundo de los vivos.#!"
- NS_EPHEMERAL_BINDING_PERK_EFFECT: "El [GetTrait('wraith').GetName( GetNullCharacter )] atado en el mundo material no costará [stress|E] para mantener.\n#flavor Al infundir un objeto, una persona o un lugar con su propia energía cenicienta, el nigromante puede crear un [Fetters|E] artificial en lugar de tener que depender de encontrar uno por casualidad.#!"
+ NS_DEATH_KNELL_PERK_EFFECT: "Si alguno de tus [courtier|E]s es asesinado en circunstancias misteriosas, conocerás la identidad de su asesino.\n#flavor El nigromante siente cuando está cerca del mundo de los muertos. Un nigromante podría usar su percepción natural, mientras que otro podría hacer escry, pero ambos pueden sentir dónde el [UmbraGlossaryLocalized('shadowlands','Inframundo')] toca el mundo de los vivos.#!"
+ NS_EPHEMERAL_BINDING_PERK_EFFECT: "El [GetTrait('wraith').GetName( GetNullCharacter )] atado en el mundo material no costará [stress|E] para mantener.\n#flavor Al infundir un objeto, una persona o un lugar con su propia energía cenicienta, el nigromante puede crear unas [Fetters|E] artificiales en lugar de tener que depender de encontrar unas por casualidad.#!"
   
  NS_CENOTAPH_PATH_RITUALS_PERK_EFFECT: "$necro_magic_shared_ritual_perk_effect$"
  
@@ -109,7 +109,7 @@
  ns_gift_of_melancholia_perk_name: "Regalo de Melancolía"
  ns_dust_to_dust_perk_name: "Polvo al Polvo"
 
- ns_graves_decay_rituals_perk_name: "[bs_rituals|E] de la $necro_magic_graves_decay_visible$"
+ ns_graves_decay_rituals_perk_name: "[bs_rituals|E] del $necro_magic_graves_decay_visible$"
 
  NS_ASHES_TO_ASHES_PERK_EFFECT: "Reduce el riesgo de [masquerade_exposure_with_icon|E] y mejora la interacción [character_interaction|E] Cubrir la Mascarada.\n#flavor Mientras algunos Cainitas masacran indiscriminadamente y no temen consecuencias por sus acciones, otros Cainitas sienten la necesidad de ser un poco más discretos. El uso de este poder convierte un cadáver humano en una pila de ceniza poco notable con aproximadamente un quinto del peso del cuerpo original.#!"
  NS_RIGOR_MORTIS_PERK_EFFECT: "Cuando se inicia una guerra, el campeón con mayor destreza de tu enemigo será herido.\n#flavor Con este poder, el nigromante puede hacer que cualquier objetivo se ponga tan rígido e inmóvil como un cadáver.#!"
@@ -189,9 +189,9 @@
 
  NS_SONG_OF_THE_DEAD_PERK_EFFECT: "Como un [bs_spell|E], inflige 25 de [static_stress|E] al objetivo a costa de [static_stress|E] en ti mismo.\n#flavor El vampiro canta, tejiendo palabras inauditas en la canción e instilando una fascinación poco saludable con la muerte en su oyente.#!"
  NS_SUMMON_WISP_PERK_EFFECT: "#flavor El vampiro infunde gotas de su sangre con la energía efímera del [UmbraGlossaryLocalized('shadowlands','Inframundo')], invocando una esfera de luces parpadeantes. El fuego fatuo puede atraer a mortales desprevenidos a una trampa o proporcionar una distracción inteligente.#!"
- NS_HARROWING_PERK_EFFECT: "Mejora [GetPerk('ns_song_of_the_dead_perk').GetName(GetNullCharacter)] aumentando el [static_stress|E] del objetivo a 50 y disminuyendo el coste a 13 de [static_stress|E].\n#flavor El Tormento extiende el terror infligido por la Canción de los Muertos al acecharla en su sueño, convirtiendo sus sueños en visiones pesadillescas de su propia muerte.#!"
- NS_PHANTASMS_PERK_EFFECT: "Mejora [GetPerk('ns_song_of_the_dead_perk').GetName(GetNullCharacter)] aumentando el [static_stress|E] del objetivo a 75.\n#flavor El vampiro esculpe la energía del [UmbraGlossaryLocalized('shadowlands','Inframundo')] en alucinaciones elaboradas que aterrorizan a los vivos.#!"
- NS_H_TORMENT_PERK_EFFECT: "Mejora [GetPerk('ns_song_of_the_dead_perk').GetName(GetNullCharacter)] aumentando el [static_stress|E] del objetivo a 100.\n#flavor El vampiro rasga el velo entre la vida y el [UmbraGlossaryLocalized('shadowlands','Inframundo')] alrededor de su víctima, invocando fantasmas maliciosos para acecharla.#!"
+ NS_HARROWING_PERK_EFFECT: "Mejora [GetPerk('ns_song_of_the_dead_perk').GetName(GetNullCharacter)] aumentando la [static_stress|E] del objetivo a 50 y disminuyendo el coste a 13 de [static_stress|E].\n#flavor El Tormento extiende el terror infligido por la Canción de los Muertos al acecharla en su sueño, convirtiendo sus sueños en visiones pesadillescas de su propia muerte.#!"
+ NS_PHANTASMS_PERK_EFFECT: "Mejora [GetPerk('ns_song_of_the_dead_perk').GetName(GetNullCharacter)] aumentando la [static_stress|E] del objetivo a 75.\n#flavor El vampiro esculpe la energía del [UmbraGlossaryLocalized('shadowlands','Inframundo')] en alucinaciones elaboradas que aterrorizan a los vivos.#!"
+ NS_H_TORMENT_PERK_EFFECT: "Mejora [GetPerk('ns_song_of_the_dead_perk').GetName(GetNullCharacter)] aumentando la [static_stress|E] del objetivo a 100.\n#flavor El vampiro rasga el velo entre la vida y el [UmbraGlossaryLocalized('shadowlands','Inframundo')] alrededor de su víctima, invocando fantasmas maliciosos para acecharla.#!"
   
  NS_PATH_OF_HAUNTING_RITUALS_PERK_EFFECT: "$necro_magic_shared_ritual_perk_effect$"
  

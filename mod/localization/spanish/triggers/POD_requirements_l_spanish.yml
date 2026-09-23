@@ -59,7 +59,7 @@
  POD_requirements_isis: "El [holder|E] debe ser [GetTrait('mummy').GetName( GetPlayer )] o [GetScriptedCharacterByHistoryID('790512').GetFirstName]"
  POD_requirements_ceoris: "El [holder|E] debe ser [GetTrait('demon').GetName( GetPlayer )], [GetTrait('tremere').GetName( GetPlayer )], [GetTrait('banpaia').GetName( GetPlayer )] o [GetTrait('mage').GetName( GetPlayer )]"
  POD_requirements_iglesia: "El [holder|E] debe ser [GetTrait('demon').GetName( GetPlayer )] o [GetTrait('lasombra').GetName( GetPlayer )]"
- POD_requirements_influence_animals: "El [holder|E] debe tener la [perk|E] [GetPerk( 'call_of_the_wild_perk' ).GetName( GetPlayer )], [GetPerk( 'master_of_snakes_perk' ).GetName( GetPlayer )] o [GetPerk( 'mother_of_monsters_perk' ).GetName( GetPlayer )] o la [dynasty|E] del [holder|E] debe tener la [dynasty_perk|E] [GetDynastyPerk('gangrel_legacy_1').GetName], [GetDynastyPerk('nosferatu_legacy_1').GetName] o [GetDynastyPerk('ravnos_legacy_1').GetName]."
+ POD_requirements_influence_animals: "El [holder|E] debe tener el [perk|E] [GetPerk( 'call_of_the_wild_perk' ).GetName( GetPlayer )], [GetPerk( 'master_of_snakes_perk' ).GetName( GetPlayer )] o [GetPerk( 'mother_of_monsters_perk' ).GetName( GetPlayer )] o la [dynasty|E] del [holder|E] debe tener el [dynasty_perk|E] [GetDynastyPerk('gangrel_legacy_1').GetName], [GetDynastyPerk('nosferatu_legacy_1').GetName] o [GetDynastyPerk('ravnos_legacy_1').GetName]."
  
  POD_requirements_has_POD_vamp_blood_trigger: "El [holder|E] debe ser [GetTrait('vampire').GetName( GetPlayer )], [GetTrait('ghoul').GetName( GetPlayer )] o [GetTrait('revenant').GetName( GetPlayer )]"
  POD_requirements_vampire: "El [holder|E] debe ser [GetTrait('vampire').GetName( GetPlayer )]"

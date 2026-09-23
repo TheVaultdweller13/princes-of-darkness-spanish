@@ -18,7 +18,7 @@
 #trait_infernalist_desc: "This character has thrown their lot in with dark gods, demons, creatures from the outer void and God only knows what else."
  trait_infernalist_desc: "Este personaje ha contactado con $POD_splat_demon_plural$ para obtener sus poderes de [investiture_lifestyle|E]. Una práctica vil que mancha el alma, considerada malvada incluso según los estándares del $pod_wod$."
  trait_infernalist_diabolism_desc: "[ROOT.Char.GetFirstNameNoTooltip] sigue el camino del [diabolism|E]."
- trait_infernalist_thralldom_desc: "[ROOT.Char.GetFirstNameNoTooltip] sigue el camino del [thralldom|E]."
+ trait_infernalist_thralldom_desc: "[ROOT.Char.GetFirstNameNoTooltip] sigue el camino de la [thralldom|E]."
  
  trait_ghoul: "Ghoul"
  trait_ghoul_desc: "Un mortal que ha consumido sangre de vampiro, lo que provoca una necesidad de más, convirtiéndose (la mayoría de las veces) en un Esclavo voluntario de su amo."
@@ -46,13 +46,13 @@
  trait_gaunt: "Gaunt"
  trait_gaunt_desc: "Un Gaunt es un wraith de mayor edad que ha resuelto una o más de sus [Fetters|E] y aún las conserva."
  trait_domem: "Domem"
- trait_domem_desc: "Un Domem es un wraith cuyas [Fetters|E] han sido todas destruidas, lo que le impide permanecer en el [UmbraGlossary('shadowlands')] durante ningún periodo de tiempo. Aunque la condición de Domem suele implicar edad, un wraith puede convertirse en Domem siendo aún muy joven; lo único que se requiere es que sus [Fetters|E] sean destruidas."
+ trait_domem_desc: "Un Domem es un wraith cuyas [Fetters|E] han sido todas destruidas, lo que le impide permanecer en las [UmbraGlossary('shadowlands')] durante ningún periodo de tiempo. Aunque la condición de Domem suele implicar edad, un wraith puede convertirse en Domem siendo aún muy joven; lo único que se requiere es que sus [Fetters|E] sean destruidas."
  trait_enfant: "Enfants"
  trait_enfant_desc: "Los wraiths con consciencia de sí mismos comienzan como Enfants; cuando una persona muere, su alma renace en el [UmbraGlossaryLocalized('shadowlands','Inframundo')] cubierta por una capa de plasma llamada caul."
  trait_track_fetter: "Atadura"
  trait_track_fetter_desc: "$game_concept_Fetter_desc$"
  trait_track_fetter_resolved: "Atadura Resuelta"
- trait_track_fetter_resolved_desc: "Las [Fetters|E] también pueden resolverse, lo que significa que un wraith gana la fuerza necesaria para despedirse de las cosas y personas que amó en vida. Un wraith que logra Resolver todas sus [Fetters|E] puede permanecer en el [UmbraGlossary('shadowlands')] indefinidamente, pero semejante logro, de conceder este beneficio, es tan raro que roza el mito."
+ trait_track_fetter_resolved_desc: "Las [Fetters|E] también pueden resolverse, lo que significa que un wraith gana la fuerza necesaria para despedirse de las cosas y personas que amó en vida. Un wraith que logra Resolver todas sus [Fetters|E] puede permanecer en las [UmbraGlossary('shadowlands')] indefinidamente, pero semejante logro, de conceder este beneficio, es tan raro que roza el mito."
  
  
  trait_wight: "Wight"
@@ -334,7 +334,7 @@
  trait_mytherceriaadvanced_desc: "Mythercería es una $pod_discipline$ que se manifiesta en vampiros de sangre feérica como los Kiasyd y los Maeghar. Otorga al vampiro sentidos místicos, la capacidad de robar conocimiento y otros poderes atribuidos a las hadas.\n\nMythercería, un conjunto de poderes atribuidos a las hadas e inclinados hacia la revelación de conocimientos nuevos, ha llevado a muchas de sus víctimas a una locura balbuceante, o al menos a la frustración."
  
  trait_necromancy: "Necromancia"
- trait_necromancy_desc: "La [necromancy|E] es una forma de [bloodsorcery|E] que trata exclusivamente con el mundo de los muertos: los wraiths y el [UmbraGlossary('shadowlands')]. Del mismo modo que existen diferentes estilos de [bloodsorcery|E] convencional, hay una variedad de prácticas de [necromancy|E]. La practican principalmente los Giovanni."
+ trait_necromancy_desc: "La [necromancy|E] es una forma de [bloodsorcery|E] que trata exclusivamente con el mundo de los muertos: los wraiths y las [UmbraGlossary('shadowlands')]. Del mismo modo que existen diferentes estilos de [bloodsorcery|E] convencional, hay una variedad de prácticas de [necromancy|E]. La practican principalmente los Giovanni."
  trait_necromancy_character_desc: "$necromancy_paths_display$\n\n$trait_necromancy_desc$"
  
  trait_necromancyadvanced: "Necromancia Avanzada"
@@ -446,7 +446,7 @@
  trait_bloodsorcery_desc: "La [bloodsorcery|E] se refiere a la magia practicada por los vampiros, alimentada por prácticas religiosas u ocultas y el poder de la $pod_vitae$ $pod_cainite$.\n\nA través de la práctica de la [bloodsorcery|E], un $pod_cainite$ puede invocar fuego, controlar el clima y hacer muchas otras cosas que resultan antinaturales incluso para los estándares vampíricos."
  trait_bloodsorcery_character_desc: "$bloodmagic_paths_display$\n\n$trait_bloodsorcery_desc$"
 
- bloodmagic_paths_display: "#medium [ROOT.Char.GetFirstNameNoTooltip] tiene conocimiento de estos [bs_traditions|E]:[AddTextIf(GetScriptedGui('has_thaumaturgy_bloodmagic_sgui').IsShown(GuiScope.SetRoot(ROOT.Char.MakeScope).End),'\n$TAB|q$@tremere_icon! Thaumaturgy')][AddTextIf(GetScriptedGui('has_sielanic_thaumaturgy_bloodmagic_sgui').IsShown(GuiScope.SetRoot(ROOT.Char.MakeScope).End),'\n$TAB|q$@tremere_icon! Sielanic Thaumaturgy')][AddTextIf(GetScriptedGui('has_dur_an_ki_bloodmagic_sgui').IsShown(GuiScope.SetRoot(ROOT.Char.MakeScope).End),'\n$TAB|q$@assamite_icon! Dur-An-Ki')][AddTextIf(GetScriptedGui('has_akhu_bloodmagic_sgui').IsShown(GuiScope.SetRoot(ROOT.Char.MakeScope).End),'\n$TAB|q$@setite_icon! Akhu')][AddTextIf(GetScriptedGui('has_sadhana_bloodmagic_sgui').IsShown(GuiScope.SetRoot(ROOT.Char.MakeScope).End),'\n$TAB|q$@ravnos_icon! Sadhana')][AddTextIf(GetScriptedGui('has_koldunic_bloodmagic_sgui').IsShown(GuiScope.SetRoot(ROOT.Char.MakeScope).End),'\n$TAB|q$@tzimisce_icon! Koldunic')][AddTextIf(GetScriptedGui('has_sihr_bloodmagic_sgui').IsShown(GuiScope.SetRoot(ROOT.Char.MakeScope).End),'\n$TAB|q$@sihr_icon! Sihr')][AddTextIf(GetScriptedGui('has_abyssal_mysticism_bloodmagic_sgui').IsShown(GuiScope.SetRoot(ROOT.Char.MakeScope).End),'\n$TAB|q$@lasombra_icon! Abyssal Mysticism')]#!"
+ bloodmagic_paths_display: "#medium [ROOT.Char.GetFirstNameNoTooltip] tiene conocimiento de estas [bs_traditions|E]:[AddTextIf(GetScriptedGui('has_thaumaturgy_bloodmagic_sgui').IsShown(GuiScope.SetRoot(ROOT.Char.MakeScope).End),'\n$TAB|q$@tremere_icon! Thaumaturgy')][AddTextIf(GetScriptedGui('has_sielanic_thaumaturgy_bloodmagic_sgui').IsShown(GuiScope.SetRoot(ROOT.Char.MakeScope).End),'\n$TAB|q$@tremere_icon! Sielanic Thaumaturgy')][AddTextIf(GetScriptedGui('has_dur_an_ki_bloodmagic_sgui').IsShown(GuiScope.SetRoot(ROOT.Char.MakeScope).End),'\n$TAB|q$@assamite_icon! Dur-An-Ki')][AddTextIf(GetScriptedGui('has_akhu_bloodmagic_sgui').IsShown(GuiScope.SetRoot(ROOT.Char.MakeScope).End),'\n$TAB|q$@setite_icon! Akhu')][AddTextIf(GetScriptedGui('has_sadhana_bloodmagic_sgui').IsShown(GuiScope.SetRoot(ROOT.Char.MakeScope).End),'\n$TAB|q$@ravnos_icon! Sadhana')][AddTextIf(GetScriptedGui('has_koldunic_bloodmagic_sgui').IsShown(GuiScope.SetRoot(ROOT.Char.MakeScope).End),'\n$TAB|q$@tzimisce_icon! Koldunic')][AddTextIf(GetScriptedGui('has_sihr_bloodmagic_sgui').IsShown(GuiScope.SetRoot(ROOT.Char.MakeScope).End),'\n$TAB|q$@sihr_icon! Sihr')][AddTextIf(GetScriptedGui('has_abyssal_mysticism_bloodmagic_sgui').IsShown(GuiScope.SetRoot(ROOT.Char.MakeScope).End),'\n$TAB|q$@lasombra_icon! Abyssal Mysticism')]#!"
 
  TRAIT_FLAG_DESC_unlock_incorporeal_form: "Puede cambiar de forma a [GetModifier( 'POD_shapeshift_form_incorporeal_modifier' ).GetNameWithTooltip|L]"
 
@@ -677,7 +677,7 @@
  trait_regnant_desc: "Este personaje ha creado un [ghoul|E]."
  
  trait_massregnant: "Regente Masivo"
- trait_massregnant_desc: "Este personaje ha creado Ghouls en masa. Esto suele ser una violación de la [the_masquerade|E]."
+ trait_massregnant_desc: "Este personaje ha creado Ghouls en masa. Esto suele ser una violación de [the_masquerade|E]."
  
  trait_unbondable: "Invulnerable al Vínculo"
  trait_unbondable_desc: "Este personaje no puede ser vinculado por la sangre."
@@ -698,7 +698,7 @@
  trait_sire_desc: "Este vampiro ha creado a otro de su especie."
  
  trait_masssire: "[Glossary('Sire','game_concept_Sire_desc')]"
- trait_masssire_desc: "Este vampiro ha creado un gran número de vampiros. La mayoría de los Caminos consideran esto una violación de la [the_masquerade|E]."
+ trait_masssire_desc: "Este vampiro ha creado un gran número de vampiros. La mayoría de los Caminos consideran esto una violación de [the_masquerade|E]."
  
  trait_lamia: "Lamia"
  trait_lamia_desc: "Los Lamia fueron una Línea de Sangre de $pod_cainites$ dedicada a defender al $pod_clan$ Capadocio, aunque originalmente fueron un grupo de Cultistas que afirmaban descender de Lilith, la primera esposa de Adán."
@@ -767,7 +767,7 @@
  trait_salubri_caste: "Casta Salubri"
  
  trait_salubri_healer: "Sanador Salubri"
- trait_salubri_healer_desc: "Casta de sanadores, forma el grueso de la Línea de Sangre «normal»; su propósito es sanar y enseñar el [golconda|E]"
+ trait_salubri_healer_desc: "Casta de sanadores, forma el grueso de la Línea de Sangre «normal»; su propósito es sanar y enseñar la [golconda|E]"
  
  trait_salubri_warrior: "Guerrero Salubri"
  trait_salubri_warrior_desc: "Casta de guerreros, fundada tras las Guerras Baali por Samiel. Los guerreros son errantes, siempre buscando el mal para destruirlo allá donde pueda crecer. Cada miembro de la casta guerrera recibe un nombre angélico tras un ritual de iniciación"
@@ -1140,7 +1140,7 @@
  trait_asekh_sen_desc: "No son inmortales plenos; estos seres suelen parecer cadáveres tambaleantes poseídos por un Bane que llena al ser reanimado de un odio hirviente hacia toda forma de vida."
  
  trait_integrity: "Integridad"
- trait_integrity_desc: "La Integridad es una medida general de cuán bien se alinea una Momia con los deseos de sus jueces. Las Momias con baja Integridad pueden ser juzgadas con gran severidad (o algo peor) cuando entran en el [UmbraGlossary('shadowlands')] para prepararse para su siguiente vida."
+ trait_integrity_desc: "La Integridad es una medida general de cuán bien se alinea una Momia con los deseos de sus jueces. Las Momias con baja Integridad pueden ser juzgadas con gran severidad (o algo peor) cuando entran en las [UmbraGlossary('shadowlands')] para prepararse para su siguiente vida."
  trait_track_integrity: "Integridad"
  trait_track_integrity_desc: "#medium La Integridad es un sistema de tipo virtud.\n\n#bold Ganas Integridad por:#!\n$BULLET_WITH_TAB$Matar con un motivo válido: #P +1#!\n$BULLET_WITH_TAB$Hacer regalos: #P +2#!\n$BULLET_WITH_TAB$Sanar: #P +3#!\n\n#bold Pierdes Integridad por:#!\n$BULLET_WITH_TAB$Matar sin un motivo válido: #N -3#!\n$BULLET_WITH_TAB$Cometer un acto atroz (p. ej. tortura): #N -2#!\n$BULLET_WITH_TAB$Cometer un robo: #N -1#!#!"
  
@@ -1307,8 +1307,8 @@
  trait_kami_desc: "Este personaje ha sido tocado por la mismísima Gaia."
  
  trait_methuselahs_thirst: "La Sed del Matusalén"
- trait_methuselahs_thirst_desc: "El personaje ya no es capaz de beber sangre mortal para sustentarse, independientemente de su Potencia de Sangre. Debe alimentarse del $pod_vitae$ de otros Vástagos."
- trait_methuselahs_thirst_character_desc: "[ROOT.GetCharacter.GetFirstNameNoTooltip] ya no es capaz de beber sangre mortal para sustentarse, independientemente de su Potencia de Sangre. Debe alimentarse del $pod_vitae$ de otros Vástagos."
+ trait_methuselahs_thirst_desc: "El personaje ya no es capaz de beber sangre mortal para sustentarse, independientemente de su Potencia de Sangre. Debe alimentarse de la $pod_vitae$ de otros Vástagos."
+ trait_methuselahs_thirst_character_desc: "[ROOT.GetCharacter.GetFirstNameNoTooltip] ya no es capaz de beber sangre mortal para sustentarse, independientemente de su Potencia de Sangre. Debe alimentarse de la $pod_vitae$ de otros Vástagos."
 
  trait_hun_and_po: "Hun y P'o"
  trait_hun_and_po_desc: "Se rumorea que uno o más Salubri en realidad despertaron su Hun y su Po para convertirse en [Glossary('Wan Kuei','game_concept_kuei_jin_desc')] de pleno derecho... aunque esto es cuestionado y ampliamente ridiculizado por los propios $pod_kueijin$.\nSi resultara ser cierto, sin embargo, podría existir una forma de que los $pod_cainites$ aprendan los poderes de sus primos orientales."
@@ -1364,7 +1364,7 @@
  TRAIT_FLAG_DESC_immune_to_frenzy_flag: "Nunca entrará en [Glossary('Frenesí','game_concept_beast_desc')]"
  TRAIT_FLAG_DESC_perks_for_piety_flag: "Puede intercambiar [piety|E] por [perks|E] de [resonance|E]"
  TRAIT_FLAG_DESC_humanity_feast_flag: "Puede organizar #TOOLTIP:ACTIVITY_TYPE,activity_feast #L Banquetes#!#! y ganar [piety|E] por ello"
- TRAIT_FLAG_DESC_golconda_mentoring_flag: "Puede guiar a otros en el camino hacia el [golconda|E]"
+ TRAIT_FLAG_DESC_golconda_mentoring_flag: "Puede guiar a otros en el camino hacia la [golconda|E]"
  TRAIT_FLAG_DESC_warning_golconda_flag: "\n#X Este rasgo se pierde al cometer un asesinato o un robo#!"
  TRAIT_FLAG_DESC_warning_golconda_seeker_flag: "\n#X Se pierde toda la [trait_level_track_xp|E] al entrar en Frenesí, o al cometer un asesinato o un robo#!"
  
@@ -1382,7 +1382,7 @@
  trait_flaying_plague: "Plaga desolladora"
  trait_flaying_plague_desc: "Una terrible plaga que afecta tanto a la Parentela como a los Garou. Al principio parece una extraña variante de la tisis, después aparecen las llagas, y por último la piel se desprende de los huesos entre agonías."
  trait_scourge: "Azote"
- trait_scourge_desc: "El Azote es una plaga específica de los vampiros que infecta la Sangre. Esta enfermedad es una cepa mutada de lepra cruzada con la peste bubónica que ataca directamente el $pod_vitae$ del vampiro. Una vez infectada, la víctima debe gastar más sangre cada vez que consume $pod_vitae$. Esto empeora con cada noche que la víctima sufre el Azote. En algunos casos, la víctima también padece una dolencia desfigurante que afecta a su apariencia, pero que no pone en peligro su vida."
+ trait_scourge_desc: "El Azote es una plaga específica de los vampiros que infecta la Sangre. Esta enfermedad es una cepa mutada de lepra cruzada con la peste bubónica que ataca directamente la $pod_vitae$ del vampiro. Una vez infectada, la víctima debe gastar más sangre cada vez que consume $pod_vitae$. Esto empeora con cada noche que la víctima sufre el Azote. En algunos casos, la víctima también padece una dolencia desfigurante que afecta a su apariencia, pero que no pone en peligro su vida."
  trait_track_scourge: "Gravedad"
  trait_track_scourge_desc: "Gravedad del Azote"
  trait_entoban_plague: "Plaga entobánica"
@@ -1397,7 +1397,7 @@
  
  TRAIT_FLAG_DESC_capture_immunity: "Ya no puedes ser encarcelado durante [sieges|E] o [raids|E]"
  TRAIT_FLAG_DESC_avoid_combat_wound: "Menos probabilidades de sufrir heridas o morir en combate."
- TRAIT_FLAG_DESC_strong_mental_defenses: "Inmune a las [character_interaction|E] mentales hostiles."
+ TRAIT_FLAG_DESC_strong_mental_defenses: "Inmune a la [character_interaction|E] mental hostil."
 
  TRAIT_FLAG_DESC_cannot_shapeshift: "#X @warning_icon! No puede cambiar de forma#!"
 

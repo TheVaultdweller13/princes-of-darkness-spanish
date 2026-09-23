@@ -235,7 +235,7 @@
  
  weaponize_flaying_plague_decision: "Convertir la Peste de la Desollación en arma"
  weaponize_flaying_plague_decision_tooltip: "¿El arma definitiva contra los hombres lobo?"
- weaponize_flaying_plague_decision_desc: "Los $POD_splat_werewolf_plural$ y sus familias, los [GetTrait('kinfolk').GetName(GetNullCharacter)], se han visto afectados recientemente por una enfermedad muy letal: la Peste de la Desollación. Claramente están trabajando duro para encontrar una solución pero, hasta entonces, este raro método para romper las defensas de un lupino presenta una oportunidad."
+ weaponize_flaying_plague_decision_desc: "Los $POD_splat_werewolf_plural$ y su familia, la [GetTrait('kinfolk').GetName(GetNullCharacter)], se han visto afectados recientemente por una enfermedad muy letal: la Peste de la Desollación. Claramente están trabajando duro para encontrar una solución pero, hasta entonces, este raro método para romper las defensas de un lupino presenta una oportunidad."
  weaponize_flaying_plague_decision_effect_tooltip: "Podrás propagar la Peste de la Desollación como una interacción." 
  weaponize_flaying_plague_decision_effect_tooltip_2: "Al usar la Peste de la Desollación en un prisionero, puedes tener cierto éxito al abrazarlo y convertirlo en una [GetTrait('abomination').GetName(GetNullCharacter)] (excepto los $glossary_fera$ que no pueden convertirse en abominación en absoluto)." 
  weaponize_flaying_plague_decision_confirm: "¡Mi arma secreta perfeccionada!"
@@ -409,7 +409,7 @@
 
  mokole_mbembe_spear_objective_decision: "Encontrar la Lanza"
  mokole_mbembe_spear_objective_decision_tooltip: "A través de una astuta diplomacia y explorando lugares perdidos, se puede encontrar una reliquia sagrada."
- mokole_mbembe_spear_objective_decision_desc: "La lanza de [GetScriptedCharacterByHistoryID('795111').GetFirstName] se ha perdido en los tiempos. Se vio por última vez en el [umbra|E], pero con los [innocents|E] merodeando, muchos Mokolé no se arriesgan a buscarla. Nuestros [spirit_companions|E], por otro lado, están mucho mejor capacitados para la tarea."
+ mokole_mbembe_spear_objective_decision_desc: "La lanza de [GetScriptedCharacterByHistoryID('795111').GetFirstName] se ha perdido en los tiempos. Se vio por última vez en la [umbra|E], pero con los [innocents|E] merodeando, muchos Mokolé no se arriesgan a buscarla. Nuestros [spirit_companions|E], por otro lado, están mucho mejor capacitados para la tarea."
  mokole_mbembe_spear_objective_decision_confirm: "De vuelta en manos de los Mokolé."
  mokole_mbembe_spear_objective_decision_requirement: "[GetBuilding('umbral_lake_tele_03').GetName] debe estar completamente construido"
  mokole_mbembe_spear_objective_decision_requirement2: "Obtener [GetModifier('paleontologist_modifier').GetNameWithTooltip] de [UmbraGlossary('pangaea')]"
@@ -462,7 +462,7 @@
  gaias_memory_objective_decision_desc: "Los Mokolé son la memoria de Gaia; es hora de que cumplamos nuestro deber. Ya sea la historia de la $glossary_fera$, el giro de la [Glossary('Wheel of Ages','podgloss.wheelofages')] o el mundo mortal, lo hemos visto todo. Ahora simplemente necesitamos recordarlo."
  gaias_memory_objective_decision_confirm: "Recuerda el principio."
  gaias_memory_objective_decision_requirement: "Tu [GetPlayer.Custom('PODCoterie')] debe tener al menos otros dos $glossary_fera$ de Rango 4"
- gaias_memory_objective_decision_requirement2: "Obtén el #ILLUSTRIOUSPURPLE Eco de las Eras#! en la [journey|E] Búsqueda del Espíritu"
+ gaias_memory_objective_decision_requirement2: "Obtén el #ILLUSTRIOUSPURPLE Eco de las Eras#! en el [journey|E] Búsqueda del Espíritu"
  gaias_memory_objective_decision_requirement3: "Un [GetTrait('kueijin').GetName(GetNullCharacter)] debe ser tu [friend|E], [best_friend|E], [lover|E] o [soulmate|E]"
  pod1230objectives_fera.55.t: "Memoria eterna"
  pod1230objectives_fera.55.desc: "Mnesis siempre ha sido una presencia contradictoria para los Mokolé. Como Memoria de Gaia, todos los Mokolé pueden deslizarse en sus sueños compartidos, pero la mayoría solo puede extraer fragmentos y retazos rotos. Pero eso no es algo con lo que te conformes. A través de una estrecha discusión con los guardianes del mundo y la búsqueda de conocimientos olvidados, aún podrías sumergirte en las profundidades de la memoria y descubrir verdades perdidas hace mucho tiempo. Todo lo que tienes que hacer ahora es atreverte a hacerlo."
@@ -521,7 +521,7 @@
 
  beast_of_war_objective_decision: "La Bestia de Guerra"
  beast_of_war_objective_decision_tooltip: "Cuánta muerte."
- beast_of_war_objective_decision_desc: "El $glossary_wyrm_calamity$ desea la destrucción. A través de la calamidad y la carnicería seremos fortalecidos, para así llevar la gloria al $glossary_wyrm$."
+ beast_of_war_objective_decision_desc: "La $glossary_wyrm_calamity$ desea la destrucción. A través de la calamidad y la carnicería seremos fortalecidos, para así llevar la gloria al $glossary_wyrm$."
  beast_of_war_objective_decision_confirm: "¡Llega la calamidad!"
  beast_of_war_objective_decision_requirement: "Todos vuestros [powerful_vassals|E] deben estar [intimidated|E] o [cowed|E] ante vos"
 
@@ -544,5 +544,5 @@
  wyrm_hydra_objective_decision_confirm: "Ahora estoy completo."
  wyrm_hydra_objective_decision_effect: "Ganarás el [GetTitleByKey('h_wyrm').GetNameNoTier] [title|E], que incluirá cualquier [empires|E] que poseas"
  pod1230objectives_fera.61.t: "El Wyrm Ascendente"
- pod1230objectives_fera.61.desc: "El poder del $glossary_wyrm_triatic$ es ahora absoluto. El $glossary_triat$ se ha debilitado. Ahora el mundo aguarda, sin saber que su fin se aproxima.\n\nNo habrá refugio para vuestra furia. Sus armas y armaduras no significarán nada, y su fe mucho menos. Verán cómo el mundo llega a su fin. Muchos resistirán, con una tenacidad admirable pero inútil, pues el mundo ya cabalga hacia las fauces del Apocalipsis. ¡No hay esperanza, no hay futuro, toda la vida está condenada!"
+ pod1230objectives_fera.61.desc: "El poder del $glossary_wyrm_triatic$ es ahora absoluto. La $glossary_triat$ se ha debilitado. Ahora el mundo aguarda, sin saber que su fin se aproxima.\n\nNo habrá refugio para vuestra furia. Sus armas y armaduras no significarán nada, y su fe mucho menos. Verán cómo el mundo llega a su fin. Muchos resistirán, con una tenacidad admirable pero inútil, pues el mundo ya cabalga hacia las fauces del Apocalipsis. ¡No hay esperanza, no hay futuro, toda la vida está condenada!"
  pod1230objectives_fera.61.a: "¡Yo soy el fin de todas las cosas!"

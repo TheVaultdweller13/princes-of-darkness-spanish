@@ -248,7 +248,7 @@
  umbra_discovery_gaia_possesion_chance: "Posesión gaiana"
  umbra_discovery.gaia_possesion_chance.desc: "$umbra_discovery_finder$ ha encontrado un puente hacia la propia Gaia en $umbra_discovery_region$. Esto podría ser digno de una [umbra_expedition|E]."
  umbra_discovery_investments_of_soul: "Investiduras del Alma"
- umbra_discovery.investments_of_soul.desc: "$umbra_discovery_finder$ ha encontrado una oportunidad para ganarse el favor de los [Glossary('Yama Kings','podgloss.yamaking')] en $umbra_discovery_region$. Esto podría ser digno de una [umbra_expedition|E]."
+ umbra_discovery.investments_of_soul.desc: "$umbra_discovery_finder$ ha encontrado una oportunidad para ganarse el favor de los [Glossary('Reyes Yama','podgloss.yamaking')] en $umbra_discovery_region$. Esto podría ser digno de una [umbra_expedition|E]."
  umbra_discovery_eshtarra_gift: "Regalo de Eshtarra"
  umbra_discovery.eshtarra_gift.desc: "$umbra_discovery_finder$ ha encontrado una oportunidad para ganarse el favor de Eshtarra en $umbra_discovery_region$. Esto podría ser digno de una [umbra_expedition|E]."
  umbra_discovery_sokhta_gift: "Regalo de Sokhta"
@@ -369,8 +369,8 @@
  umbra_gaia_possesion_tooltip: "Invoca a Gaia para que te reforme como una extensión de su voluntad."
  umbra_weaver_possesion_confirm: "Invocar espíritu de la $glossary_weaver$"
  umbra_weaver_possesion_tooltip: "Invocar a un espíritu de la $glossary_weaver$ para que te posea."
- umbra_wyld_possesion_confirm: "Invocar espíritu de la $glossary_wyld$"
- umbra_wyld_possesion_tooltip: "Invocar a un espíritu de la $glossary_wyld$ para que te posea."
+ umbra_wyld_possesion_confirm: "Invocar espíritu del $glossary_wyld$"
+ umbra_wyld_possesion_tooltip: "Invocar a un espíritu del $glossary_wyld$ para que te posea."
  umbra_eternal_grace_of_eshtarras_confirm: "Solicitar fetiche de Incarna"
  umbra_shining_klaive_of_sokhta_confirm: "Solicitar fetiche de Incarna"
  umbra_radiant_blade_of_katanka_sonnak_confirm: "Solicitar fetiche de Incarna"
@@ -559,7 +559,7 @@
  spirit_travel_arrived_title: "Has llegado a la [umbra|E]"
  spirit_travel_arrived_desc: "Has llegado a la [umbra|E]."
  
- shadowlands_fetter_maintenance_tooltip: "Pagas el coste de permanecer en el [UmbraGlossary('shadowlands')] sin [Fetters|E]."
+ shadowlands_fetter_maintenance_tooltip: "Pagas el coste de permanecer en las [UmbraGlossary('shadowlands')] sin [Fetters|E]."
  
  is_in_umbra_tooltip: "Estás en la [umbra|E]."
  is_in_dreaming_tooltip: "Estás en el [UmbraGlossary('dreaming')]."
@@ -597,7 +597,7 @@
  onyx_tower_desc: "La Torre de Ónice es la morada de Caronte, el pasado y futuro Emperador de Estigia. El edificio más alto de Estigia, representa el poder de Caronte y su capacidad para supervisar el [UmbraGlossary('dark_kingdom_of_iron')]."
  periphery_desc: "La Periferia, a veces llamada también la «Penumbra Suave», es un lugar —o un estado mental, como señalarían muchos $glossary_fera$— entre la [UmbraGlossary('penumbra')] y el Mundo Material."
  broken_mirror_desc: "Los Espejos Rotos son lugares donde los límites entre el Mundo Material y el [UmbraGlossary('yomi_wan')] se han debilitado debido a cantidades masivas de sufrimiento mortal, Chi Corrupto y espíritus desolados."
- blight_desc: "Una Plaga es un área de la [UmbraGlossary('penumbra')] dañada por la contienda entre la $glossary_weaver$ y la $glossary_wyrm$. Estas zonas urbanas están densas de Banes y asfixiadas por las redes de la Tejedora; en cierto modo, representan todos los aspectos negativos de una ciudad, reificados y comprimidos en un área pequeña."
+ blight_desc: "Una Plaga es un área de la [UmbraGlossary('penumbra')] dañada por la contienda entre la $glossary_weaver$ y el $glossary_wyrm$. Estas zonas urbanas están densas de Banes y asfixiadas por las redes de la Tejedora; en cierto modo, representan todos los aspectos negativos de una ciudad, reificados y comprimidos en un área pequeña."
  broken_lands_desc: "Una Tierra Rota es algo sacado de un cuento de hadas. Se oye hablar de gente que encuentra una bifurcación en un sendero donde antes no la había, o una cueva abriéndose en un acantilado que hace dos días era sólido. Los caballos no quieren seguir ese camino y se ponen muy nerviosos cuanto más se acercan. A veces el sendero conduce a una extraña zona de naturaleza salvaje donde los animales no se comportan correctamente: liebres que cazan coyotes, arañas que tejen redes de plata o buitres que devoran los huesos de los cadáveres sin dañar la carne. Puede que el sol no salga durante días, o que la luna brille de color verde o rojo."
  vista_desc: "Las Vistas son áreas dentro de la [umbra|E] que abren una especie de representación que refleja uno de cuatro temas: Muerte, Estasis, Caos u Origen.\n\nNo se puede interactuar con las Vistas; simplemente muestran a la entidad que las encuentra una visión de algún estado alternativo cuando o donde sea informado por uno de sus temas. Las escenas representadas muestran un mundo donde ha ocurrido algo trascendental, como la creación del universo o niveles estupefacientes de orden. Estos paisajes escénicos umbríos se extienden por todo tu campo de visión, como si lo que estuviera ocurriendo estuviera justo delante de ti. Parecen más eventos que teatros y afectan a todos los sentidos del viajero."
  
@@ -677,7 +677,7 @@
  arcadia_effect_desc: ""
  
  umbra_realm_kingdom_of_dan: "Reino de Dán"
- umbra_realm_kingdom_of_dan_desc: "El Reino de [Glossary('Dán','game_concept_dan_desc')] es uno de los [Glossary('Reino Onírico','game_concept_oneiric_realm_desc')] del [UmbraGlossary('deep_dreaming')].\n\nEn un mundo sin fronteras constantes, existen dos líneas hipotéticas mediante las cuales algunos cartógrafos de sueños miden la extensión del conocido [UmbraGlossary('dreaming')]: El Eje y el Ecuatorial. El primero mide el [UmbraGlossary('dreaming')] de arriba abajo. El segundo atraviesa la mediana horizontal del [UmbraGlossary('dreaming')], actuando como un ecuador aproximado. Como ocurre con cualquier medición en el [UmbraGlossary('dreaming')], esto es en gran medida un artificio intelectual diseñado para dar algo de orden a un universo que, de otro modo, sería caótico. En la cima de este Eje ficticio se encuentra el Reino de [Glossary('Dán','game_concept_dan_desc')]."
+ umbra_realm_kingdom_of_dan_desc: "El Reino de [Glossary('Dán','game_concept_dan_desc')] es un [Glossary('Reino Onírico','game_concept_oneiric_realm_desc')] del [UmbraGlossary('deep_dreaming')].\n\nEn un mundo sin fronteras constantes, existen dos líneas hipotéticas mediante las cuales algunos cartógrafos de sueños miden la extensión del conocido [UmbraGlossary('dreaming')]: El Eje y el Ecuatorial. El primero mide el [UmbraGlossary('dreaming')] de arriba abajo. El segundo atraviesa la mediana horizontal del [UmbraGlossary('dreaming')], actuando como un ecuador aproximado. Como ocurre con cualquier medición en el [UmbraGlossary('dreaming')], esto es en gran medida un artificio intelectual diseñado para dar algo de orden a un universo que, de otro modo, sería caótico. En la cima de este Eje ficticio se encuentra el Reino de [Glossary('Dán','game_concept_dan_desc')]."
  kingdom_of_dan_effect_desc: ""
  
  umbra_realm_kureksarra: "Kureksarra"
@@ -721,7 +721,7 @@
  fields_behind_effect_desc: ""
  
  umbra_realm_bullydale_wastes: "Páramos de Bullydale"
- umbra_realm_bullydale_wastes_desc: "Los Páramos de Bullydale son un [Glossary('Reino de Pesadilla','game_concept_nightmare_realm_desc')] en el [UmbraGlossary('dreaming')].\n\nPasado el [UmbraGlossary('fields_behind')], los pasos se vuelven traicioneros, pareciéndose menos a caminos y más a sendas de cabras o rastros de caza. Las aldeas de hadas se vuelven más pequeñas y menos comunes, escaseando hasta que el viajero se encuentra solo, salvo por alguna cabaña tosca de vez en cuando. Los propios habitantes de las cabañas se vuelven cada vez más extraños, y esta es una región de caníbales, invertidos, bandidos y brujas."
+ umbra_realm_bullydale_wastes_desc: "Los Páramos de Bullydale son un [Glossary('Reino de Pesadilla','game_concept_nightmare_realm_desc')] en el [UmbraGlossary('dreaming')].\n\nPasado los [UmbraGlossary('fields_behind')], los pasos se vuelven traicioneros, pareciéndose menos a caminos y más a sendas de cabras o rastros de caza. Las aldeas de hadas se vuelven más pequeñas y menos comunes, escaseando hasta que el viajero se encuentra solo, salvo por alguna cabaña tosca de vez en cuando. Los propios habitantes de las cabañas se vuelven cada vez más extraños, y esta es una región de caníbales, invertidos, bandidos y brujas."
  bullydale_wastes_effect_desc: ""
  
  umbra_realm_low_dukedoms: "Bajos Ducados"
@@ -761,7 +761,7 @@
  discordant_woods_effect_desc: ""
  
  umbra_realm_sea_of_sorrow: "Mar de la Aflicción"
- umbra_realm_sea_of_sorrow_desc: "El Mar de la Aflicción es un [Glossary('Puntos Estables','game_concept_stable_point_desc')] del [UmbraGlossary('far_dreaming')].\n\nLejos del Gran Bosque se encuentra un lugar donde arena fina como el polvo sopla a través de una tierra yerma y engulle a todos los que se atreven a intentar cruzar su extensión. Hay un paso que serpentea a través de este océano de polvo, extendiendo su Camino de Plata a través de la turbulencia constante que a menudo engulle el paso por completo, antes de permitirle brillar de nuevo. Se dice que las grandes olas de arena desgarran la carne con facilidad, dejando tan poco atrás que incluso los buitres no pueden encontrar bocado que valga la pena. El Mar de la Aflicción guarda bien sus secretos. Nadie ha seguido jamás el Camino de Plata a través de este páramo y ha regresado para contar qué descansa al otro lado."
+ umbra_realm_sea_of_sorrow_desc: "El Mar de la Aflicción es uno de los [Glossary('Puntos Estables','game_concept_stable_point_desc')] del [UmbraGlossary('far_dreaming')].\n\nLejos del Gran Bosque se encuentra un lugar donde arena fina como el polvo sopla a través de una tierra yerma y engulle a todos los que se atreven a intentar cruzar su extensión. Hay un paso que serpentea a través de este océano de polvo, extendiendo su Camino de Plata a través de la turbulencia constante que a menudo engulle el paso por completo, antes de permitirle brillar de nuevo. Se dice que las grandes olas de arena desgarran la carne con facilidad, dejando tan poco atrás que incluso los buitres no pueden encontrar bocado que valga la pena. El Mar de la Aflicción guarda bien sus secretos. Nadie ha seguido jamás el Camino de Plata a través de este páramo y ha regresado para contar qué descansa al otro lado."
  sea_of_sorrow_effect_desc: ""
  
  umbra_realm_great_chasm: "Gran Abismo"
@@ -793,7 +793,7 @@
  splintered_mountains_effect_desc: ""
  
  umbra_realm_middlemarch: "Middlemarch"
- umbra_realm_middlemarch_desc: "Middlemarch es un Señorío de los [UmbraGlossary('near_dreaming')].\n\nLas estribaciones de las grandes [UmbraGlossary('splintered_mountains')], las áridas tierras pedregosas de Middlemarch constituyen algunos de los reinos más duros del [UmbraGlossary('near_dreaming')]."
+ umbra_realm_middlemarch_desc: "Middlemarch es un Señorío del [UmbraGlossary('near_dreaming')].\n\nLas estribaciones de las grandes [UmbraGlossary('splintered_mountains')], las áridas tierras pedregosas de Middlemarch constituyen algunos de los reinos más duros del [UmbraGlossary('near_dreaming')]."
  middlemarch_effect_desc: ""
  
  umbra_realm_chakravada: "Chakravada"
@@ -805,7 +805,7 @@
  goblin_market_effect_desc: ""
  
  umbra_realm_distant_cities: "Ciudades Distantes"
- umbra_realm_distant_cities_desc: "Las Ciudades Distantes son un fenómeno de los [UmbraGlossary('near_dreaming')].\n\nUn fenómeno común en los [UmbraGlossary('near_dreaming')] se denomina Ciudades Distantes. Estos lugares extraños son inevitablemente hermosos y casi siempre inalcanzables. Son lugares que se ven en el horizonte, lugares de maravilla y gloria que brillan tanto como el sol en el primer día verdadero de la primavera. A veces parecen estar a solo unas pocas millas de distancia, y otras veces parecen estar a cien leguas. Pero siempre son fascinantes, llenas de torres cristalinas y puentes de oro, estandartes coloridos y música que habita en la región de los susurros. Incluso a kilómetros de distancia, la gente ve a los habitantes de las Ciudades Distantes y anhela conocerlos, pues seguramente cualquiera que sea así de hermoso debe conocer el camino a [UmbraGlossary('arcadia')]."
+ umbra_realm_distant_cities_desc: "Las Ciudades Distantes son un fenómeno del [UmbraGlossary('near_dreaming')].\n\nUn fenómeno común en el [UmbraGlossary('near_dreaming')] se denomina Ciudades Distantes. Estos lugares extraños son inevitablemente hermosos y casi siempre inalcanzables. Son lugares que se ven en el horizonte, lugares de maravilla y gloria que brillan tanto como el sol en el primer día verdadero de la primavera. A veces parecen estar a solo unas pocas millas de distancia, y otras veces parecen estar a cien leguas. Pero siempre son fascinantes, llenas de torres cristalinas y puentes de oro, estandartes coloridos y música que habita en la región de los susurros. Incluso a kilómetros de distancia, la gente ve a los habitantes de las Ciudades Distantes y anhela conocerlos, pues seguramente cualquiera que sea así de hermoso debe conocer el camino a [UmbraGlossary('arcadia')]."
  distant_cities_effect_desc: ""
  
  umbra_realm_fin_bheara: "Fin Bheara"
@@ -914,7 +914,7 @@
  weeping_bay_effect_desc: ""
  
  umbra_realm_sea_of_souls: "Mar de las Ánimas"
- umbra_realm_sea_of_souls_desc: "El muro marino protector construido alrededor de Estigia y el [UmbraGlossary('isle_of_sorrows')]. Su nombre proviene de los desafortunados wraiths que han sido forjados o encadenados en la estructura del muro."
+ umbra_realm_sea_of_souls_desc: "El muro marino protector construido alrededor de Estigia y la [UmbraGlossary('isle_of_sorrows')]. Su nombre proviene de los desafortunados wraiths que han sido forjados o encadenados en la estructura del muro."
  sea_of_souls_effect_desc: ""
  
  umbra_realm_isle_of_sorrows: "Isla de las Penas"
@@ -930,7 +930,7 @@
  dark_kingdom_of_clay_effect_desc: "Desbloquea una interacción que te permite enviar un [GetTrait('wraith').GetName( GetNullCharacter )] vinculado a este [Glossary('Reino Oscuro','game_concept_dark_kingdom_desc')] para que tenga la oportunidad de aprender nuevos [arcanoi_lifestyle|E]."
  
  umbra_realm_dark_kingdom_of_ivory: "Reino Oscuro de Marfil"
- umbra_realm_dark_kingdom_of_ivory_desc: "El Monte de los Fantasmas, que también se conoce como el [Glossary('Reino Oscuro','game_concept_dark_kingdom_desc')] de Marfil, es el [UmbraGlossary('shadowlands')] para los abambo, o los wraiths de África."
+ umbra_realm_dark_kingdom_of_ivory_desc: "El Monte de los Fantasmas, que también se conoce como el [Glossary('Reino Oscuro','game_concept_dark_kingdom_desc')] de Marfil, son las [UmbraGlossary('shadowlands')] para los abambo, o los wraiths de África."
  dark_kingdom_of_ivory_effect_desc: "Desbloquea una interacción que te permite enviar un [GetTrait('wraith').GetName( GetNullCharacter )] vinculado a este [Glossary('Reino Oscuro','game_concept_dark_kingdom_desc')] para que tenga la oportunidad de aprender nuevos [arcanoi_lifestyle|E].\nSi eres un wraith, gana acceso al árbol de Behest de [misc_arcanoi_lifestyle|E]. (como una [umbra_expedition|E])"
  
  umbra_realm_dark_kingdom_of_jade: "Reino Oscuro de Jade"
@@ -942,7 +942,7 @@
  dark_kingdom_of_obsidian_effect_desc: "Desbloquea una interacción que te permite enviar un [GetTrait('wraith').GetName( GetNullCharacter )] vinculado a este [Glossary('Reino Oscuro','game_concept_dark_kingdom_desc')] para que tenga la oportunidad de aprender nuevos [arcanoi_lifestyle|E]."
  
  umbra_realm_dark_kingdom_of_wire: "Reino Oscuro de Alambre"
- umbra_realm_dark_kingdom_of_wire_desc: "El [Glossary('Reino Oscuro','game_concept_dark_kingdom_desc')] de Alambre es la región de las [UmbraGlossaryLocalized('shadowlands','Inframundo')] de Europa que es el hogar de los dybbuk, wraiths asesinados en el Holocausto. Aunque no es un verdadero [Glossary('Reino Oscuro','game_concept_dark_kingdom_desc')], es independiente del [UmbraGlossary('dark_kingdom_of_iron')] que gobierna a la mayoría de los muertos de Europa."
+ umbra_realm_dark_kingdom_of_wire_desc: "El [Glossary('Reino Oscuro','game_concept_dark_kingdom_desc')] de Alambre es la región del [UmbraGlossaryLocalized('shadowlands','Inframundo')] de Europa que es el hogar de los dybbuk, wraiths asesinados en el Holocausto. Aunque no es un verdadero [Glossary('Reino Oscuro','game_concept_dark_kingdom_desc')], es independiente del [UmbraGlossary('dark_kingdom_of_iron')] que gobierna a la mayoría de los muertos de Europa."
  dark_kingdom_of_wire_effect_desc: "Desbloquea una interacción que te permite enviar un [GetTrait('wraith').GetName( GetNullCharacter )] vinculado a este [Glossary('Reino Oscuro','game_concept_dark_kingdom_desc')] para que tenga la oportunidad de aprender nuevos [arcanoi_lifestyle|E]."
  
  umbra_realm_dark_kingdom_of_sand: "Reino Oscuro de Arena"
@@ -970,7 +970,7 @@
  feng_tu_effect_desc: ""
 
  umbra_realm_fields_of_aaru: "Campos de A'aru"
- umbra_realm_fields_of_aaru_desc: "Los Campos de A'aru son la residencia de los Jueces de Ma'at y se encuentran dentro de las [UmbraGlossaryLocalized('shadowlands','Inframundo')] entre las ruinas del [UmbraGlossary('dark_kingdom_of_sand')]. A'aru solo puede encontrarse cuando el espíritu incorpóreo de una momia es acompañado por Anubis o uno de sus sirvientes, los Aken. Es un lugar para los wraiths que han demostrado ser dignos de encontrar el Cielo."
+ umbra_realm_fields_of_aaru_desc: "Los Campos de A'aru son la residencia de los Jueces de Ma'at y se encuentran dentro del [UmbraGlossaryLocalized('shadowlands','Inframundo')] entre las ruinas del [UmbraGlossary('dark_kingdom_of_sand')]. A'aru solo puede encontrarse cuando el espíritu incorpóreo de una momia es acompañado por Anubis o uno de sus sirvientes, los Aken. Es un lugar para los wraiths que han demostrado ser dignos de encontrar el Cielo."
  fields_of_aaru_effect_desc: ""
 
  umbra_realm_isle_of_eurydice: "Isla de Eurídice"
@@ -1000,7 +1000,7 @@
  sea_of_shadow_effect_desc: "Permite encontrar un whistimmu aleatorio como una [umbra_expedition|E].\nGana $POD_plasmic_maa$ como una [umbra_expedition|E], lo que permite reclutar $POD_plasmic_maa$ como [men_at_arms|E]."
  
  umbra_realm_tempest: "Tempestad"
- umbra_realm_tempest_desc: "La Tempestad es un torbellino perpetuo de energía, recuerdos y #TOOLTIP:GAME_TRAIT,spectre,[GetNullCharacter] #L Espectros#!#! que emana del [UmbraGlossary('pod_realm_labyrinth')] y llueve continuamente plasma y materiales tanto en el [UmbraGlossary('shadowlands')] como en los [Glossary('Reinos Oscuros','game_concept_dark_kingdom_desc')]."
+ umbra_realm_tempest_desc: "La Tempestad es un torbellino perpetuo de energía, recuerdos y #TOOLTIP:GAME_TRAIT,spectre,[GetNullCharacter] #L Espectros#!#! que emana del [UmbraGlossary('pod_realm_labyrinth')] y llueve continuamente plasma y materiales tanto en las [UmbraGlossary('shadowlands')] como en los [Glossary('Reinos Oscuros','game_concept_dark_kingdom_desc')]."
  tempest_effect_desc: "Permite encontrar un whistimmu aleatorio como una [umbra_expedition|E].\nGana $POD_plasmic_maa$ como una [umbra_expedition|E], lo que permite reclutar $POD_plasmic_maa$ como [men_at_arms|E]."
  
  umbra_realm_stormwall: "Muralla de Tormentas"
@@ -1008,11 +1008,11 @@
  stormwall_effect_desc: "Permite encontrar un whistimmu aleatorio como una [umbra_expedition|E].\nGana $POD_plasmic_maa$ como una [umbra_expedition|E], lo que permite reclutar $POD_plasmic_maa$ como [men_at_arms|E]."
  
  umbra_realm_island_below_the_sea: "Isla Bajo el Mar"
- umbra_realm_island_below_the_sea_desc: "En medio del [UmbraGlossary('abyss')], entre los [UmbraGlossary('mirrorlands')] y el [UmbraGlossary('oblivion')], se encuentra la Isla Bajo el Mar, que sirve como hogar de Les Mystéres y base de operaciones para los Loa."
+ umbra_realm_island_below_the_sea_desc: "En medio del [UmbraGlossary('abyss')], entre las [UmbraGlossary('mirrorlands')] y el [UmbraGlossary('oblivion')], se encuentra la Isla Bajo el Mar, que sirve como hogar de Les Mystéres y base de operaciones para los Loa."
  island_below_the_sea_effect_desc: "Si eres un wraith, gana acceso al árbol de Connaissance de [misc_arcanoi_lifestyle|E]. (como una [umbra_expedition|E])"
  
  umbra_realm_mirrorlands: "Tierras Espejo"
- umbra_realm_mirrorlands_desc: "Las Tierras Espejo es el nombre que los wraiths conocidos como Les Invisibles dieron a los reflejos en el [UmbraGlossary('shadowlands')] de las islas del Caribe."
+ umbra_realm_mirrorlands_desc: "Las Tierras Espejo es el nombre que los wraiths conocidos como Les Invisibles dieron a los reflejos en las [UmbraGlossary('shadowlands')] de las islas del Caribe."
  mirrorlands_effect_desc: ""
  
  umbra_realm_pod_realm_labyrinth: "Laberinto"
@@ -1038,7 +1038,7 @@
  dis_effect_desc: ""
 
  umbra_realm_spirit_wilds: "Tierras Salvajes Espirituales"
- umbra_realm_spirit_wilds_desc: "Las Tierras Salvajes Espirituales son otro nombre para el Umbra Medio, particularmente el espacio entre los Reinos Cercanos. Esta parte del [umbra|E] refleja el entorno natural, tanto en su estado prístino como en el herido por la civilización."
+ umbra_realm_spirit_wilds_desc: "Las Tierras Salvajes Espirituales son otro nombre para el Umbra Medio, particularmente el espacio entre los Reinos Cercanos. Esta parte de la [umbra|E] refleja el entorno natural, tanto en su estado prístino como en el herido por la civilización."
 
  spirit_wilds_effect_desc: "$UMBRA_RECRUIT_BYGONE$"
  
@@ -1339,7 +1339,7 @@
  darkside_moon_base_effect_desc: ""
 
  umbra_realm_victoria_station: "Estación Victoria"
- umbra_realm_victoria_station_desc: "La estación Victoria era una estación espacial de Eterita situada en la Penumbra de la Luna. Originalmente una estación de tren del Londres victoriano, servía como base avanzada para muchos Ethernautas que exploraban el [UmbraGlossary('deep_umbra')]."
+ umbra_realm_victoria_station_desc: "La estación Victoria era una estación espacial de Eterita situada en la Penumbra de la Luna. Originalmente una estación de tren del Londres victoriano, servía como base avanzada para muchos Ethernautas que exploraban la [UmbraGlossary('deep_umbra')]."
  victoria_station_effect_desc: ""
 
  umbra_realm_shard_realm_of_infinity: "Reino Astilla de la Infinito"
@@ -1423,7 +1423,7 @@
  shade_realm_of_mind_effect_desc: ""
 
  umbra_realm_shade_realm_of_entropy: "Reino Sombra de la Entropía"
- umbra_realm_shade_realm_of_entropy_desc: "[Glossary('Reino Sombra','game_concept_shade_realm_desc')] conectado con Plutón. Supuestamente aquí la Gran Rueda Kármica del Universo queda al descubierto, e incluso puede tener una conexión directa con el [UmbraGlossary('shadowlands')]."
+ umbra_realm_shade_realm_of_entropy_desc: "[Glossary('Reino Sombra','game_concept_shade_realm_desc')] conectado con Plutón. Supuestamente aquí la Gran Rueda Kármica del Universo queda al descubierto, e incluso puede tener una conexión directa con las [UmbraGlossary('shadowlands')]."
  shade_realm_of_entropy_effect_desc: ""
 
  umbra_realm_first_horizon: "Primer Horizonte"
@@ -1556,7 +1556,7 @@
  hell_of_bitter_truth_effect_desc: "$UMBRA_INVESTMENTS_OF_SOUL$"
 
  umbra_realm_hell_of_spiked_chains: "Infierno de las Cadenas con Púas"
- umbra_realm_hell_of_spiked_chains_desc: "El Infierno de las Cadenas con Púas era una vasta llanura habitada por las almas de los mortales que habían muerto en las estepas. Cada una de estas almas era asignada a una tribu al azar por el [Glossary('Yama King','podgloss.yamaking')], quien periódicamente elegía a una de estas tribus como su favorita. Todas las demás tribus eran privadas de uno de sus sentidos (o extremidades) y debían obedecer a la tribu favorecida en todo. Si desobedecían, o si a uno de los Favorecidos le apetecía, eran sometidos a las torturas de la Cadena con Púas. Las víctimas eran atadas con cadenas de hierro con espinas forjadas en el [UmbraGlossaryLocalized('yomi_wan','Yomi Hell')] y colgadas de las estalactitas de una gran cueva durante un periodo de tiempo indeterminado. Cada vez que las víctimas forcejeaban, las espinas se clavaban más profundamente en su esencia, alimentando al [Glossary('Yama King','podgloss.yamaking')]."
+ umbra_realm_hell_of_spiked_chains_desc: "El Infierno de las Cadenas con Púas era una vasta llanura habitada por las almas de los mortales que habían muerto en las estepas. Cada una de estas almas era asignada a una tribu al azar por el [Glossary('Rey Yama','podgloss.yamaking')], quien periódicamente elegía a una de estas tribus como su favorita. Todas las demás tribus eran privadas de uno de sus sentidos (o extremidades) y debían obedecer a la tribu favorecida en todo. Si desobedecían, o si a uno de los Favorecidos le apetecía, eran sometidos a las torturas de la Cadena con Púas. Las víctimas eran atadas con cadenas de hierro con espinas forjadas en el [UmbraGlossaryLocalized('yomi_wan','Yomi Hell')] y colgadas de las estalactitas de una gran cueva durante un periodo de tiempo indeterminado. Cada vez que las víctimas forcejeaban, las espinas se clavaban más profundamente en su esencia, alimentando al [Glossary('Rey Yama','podgloss.yamaking')]."
  hell_of_spiked_chains_effect_desc: "$UMBRA_INVESTMENTS_OF_SOUL$"
 
  umbra_realm_qlippoth: "Qlifot"

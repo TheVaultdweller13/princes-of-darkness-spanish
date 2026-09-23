@@ -1,8 +1,8 @@
 ﻿l_spanish:
- action_can_set_fetter_alert: "Tienes un [Fetter|E] sin asignar"
- action_can_set_fetter_alert_label: "Tienes un [Fetter|E] sin asignar"
- action_can_set_fetter_alert_desc: "Debes asignar un [Fetter|E] si no quieres ganar [stress|E] cada mes."
- action_can_set_fetter_alert_click: "#I Haz clic para asignar un [Fetter|E] sobre un [title|E] de tu propiedad#!"
+ action_can_set_fetter_alert: "Tienes una [Fetter|E] sin asignar"
+ action_can_set_fetter_alert_label: "Tienes una [Fetter|E] sin asignar"
+ action_can_set_fetter_alert_desc: "Debes asignar una [Fetter|E] si no quieres ganar [stress|E] cada mes."
+ action_can_set_fetter_alert_click: "#I Haz clic para asignar una [Fetter|E] sobre un [title|E] de tu propiedad#!"
  
  action_can_demonic_possess_alert: "Deberías poseer un recipiente"
  action_can_demonic_possess_alert_label: "Deberías poseer un recipiente"
@@ -61,7 +61,7 @@
  
  action_can_return_to_earth: "Deberías regresar a la Tierra"
  action_can_return_to_earth_label: "Deberías regresar a la Tierra"
- action_can_return_to_earth_desc: "Deberías regresar a la Tierra para no quedarte en el [umbra|E]."
+ action_can_return_to_earth_desc: "Deberías regresar a la Tierra para no quedarte en la [umbra|E]."
  action_can_return_to_earth_click: "#I Haz clic para regresar a la Tierra#!"
  POD_return_to_earth_interaction: "Regresar a la Tierra"
  POD_return_to_earth_interaction_desc: "Regresar a la Tierra"
@@ -142,9 +142,9 @@
 
  pod_alert_can_train_with_pack: "#T Puedes ir a una Aventura#!\nComo eres un $glossary_fera$, puedes #bold $fera_training_name$#! para mejorar tanto tus propias habilidades como las de [GetPlayer.Custom('PODCoterie')], u otras recompensas.\n\n#I Haz clic para abrir la ventana de [journey|E].#!\n$RIGHT_CLICK_DISMISS$"
 
- pod_alert_can_go_on_umbra_expedition: "#T Puedes ir a una [umbra_expedition|E]#!\nExplorar las profundidades del [umbra|E] puede ser tanto peligroso como gratificante.\n\n#I Haz clic para abrir la ventana del [umbra|E].#!\n$RIGHT_CLICK_DISMISS$"
+ pod_alert_can_go_on_umbra_expedition: "#T Puedes ir a una [umbra_expedition|E]#!\nExplorar las profundidades de la [umbra|E] puede ser tanto peligroso como gratificante.\n\n#I Haz clic para abrir la ventana de la [umbra|E].#!\n$RIGHT_CLICK_DISMISS$"
 
- pod_alert_has_umbra_crisis: "#T Tienes una Crisis en la Umbra sin resolver#!\nDebes resolver la Crisis en la Umbra si no quieres que ocurra algo malo al final.\n\n#I Haz clic para abrir la ventana del [umbra|E].#!\n$RIGHT_CLICK_DISMISS$"
+ pod_alert_has_umbra_crisis: "#T Tienes una Crisis en la Umbra sin resolver#!\nDebes resolver la Crisis en la Umbra si no quieres que ocurra algo malo al final.\n\n#I Haz clic para abrir la ventana de la [umbra|E].#!\n$RIGHT_CLICK_DISMISS$"
  
  ### Advanced fancy tutorial
  
@@ -200,19 +200,19 @@
  action_reactive_advice_fetters_and_passions_click: "$click_to_open_lesson$"
  fetters_and_passions: "Ataduras, Pasiones y [oblivion_pull|E]"
  lesson_fetters_and_passions: "Ataduras, Pasiones y [oblivion_pull|E]"
- lesson_fetters_and_passions_desc: "Lo primero que debes saber es la existencia del [oblivion_pull|E] que debes monitorear de cerca para no caer ante el [GetTrait('shadow').GetName(GetNullCharacter)]. Para disminuirlo necesitas [Fetters|E], cada punto de [Fetter|E] no asignado significa un [stress|E] adicional cada mes."
+ lesson_fetters_and_passions_desc: "Lo primero que debes saber es la existencia de la [oblivion_pull|E] que debes monitorear de cerca para no caer ante la [GetTrait('shadow').GetName(GetNullCharacter)]. Para disminuirla necesitas [Fetters|E], cada punto de [Fetter|E] no asignado significa un [stress|E] adicional cada mes."
  
  fetters_and_passions2: "Perder Estrés"
  lesson_fetters_and_passions2: "Perder Estrés"
- lesson_fetters_and_passions2_desc: "Los $POD_splat_wraith_plural$ no pueden perder [stress|E] excepto al activar una pasión. Para activar una pasión necesitas realizar acciones específicas detalladas en la descripción del modificador de [Fetter|E]. Cada tipo de [Fetter|E] tiene desencadenantes diferentes, como 'ODIO' que se activa después de cometer un asesinato y 'AMOR' que se activa cada año que un personaje elegido permanece con vida.\n\nEl nivel de un [Fetter|E] es una medida importante para las pasiones, ya que es un factor de cuánto estrés podrás perder usándolo y cuánto Pathos ganarás."
+ lesson_fetters_and_passions2_desc: "Los $POD_splat_wraith_plural$ no pueden perder [stress|E] excepto al activar una pasión. Para activar una pasión necesitas realizar acciones específicas detalladas en la descripción del modificador de [Fetter|E]. Cada tipo de [Fetter|E] tiene desencadenantes diferentes, como 'ODIO' que se activa después de cometer un asesinato y 'AMOR' que se activa cada año que un personaje elegido permanece con vida.\n\nEl nivel de una [Fetter|E] es una medida importante para las pasiones, ya que es un factor de cuánto estrés podrás perder usándolo y cuánto Pathos ganarás."
  
  fetters_and_passions3: "Crisis Mentales"
  lesson_fetters_and_passions3: "Crisis Mentales"
- lesson_fetters_and_passions3_desc: "Para un [GetTrait('wraith').GetName(GetNullCharacter)], sufrir una crisis mental es muy peligroso, ya que cada crisis fortalece al [GetTrait('shadow').GetName(GetNullCharacter)] otorgándote [perk|E] aleatorios del [lifestyle|E] de [thorn_lifestyle|E] que harán el juego más difícil.\nEn #N nivel de crisis mental 2#!, el [GetTrait('shadow').GetName(GetNullCharacter)] intentará derrocarte como personalidad principal. Si tiene éxito en este empeño, te convertirás en un [GetTrait('shadow').GetName(GetNullCharacter)] con todo lo que eso conlleva.\nEn #N nivel de crisis mental 3#!, tu [GetTrait('shadow').GetName(GetNullCharacter)] intentará borrarte de la existencia. Si tiene éxito, te convertirás en un [GetTrait('spectre').GetName(GetNullCharacter)] y tu partida habrá terminado."
+ lesson_fetters_and_passions3_desc: "Para un [GetTrait('wraith').GetName(GetNullCharacter)], sufrir una crisis mental es muy peligroso, ya que cada crisis fortalece a la [GetTrait('shadow').GetName(GetNullCharacter)] otorgándote [perk|E] aleatorios del [lifestyle|E] de [thorn_lifestyle|E] que harán el juego más difícil.\nEn #N nivel de crisis mental 2#!, la [GetTrait('shadow').GetName(GetNullCharacter)] intentará derrocarte como personalidad principal. Si tiene éxito en este empeño, te convertirás en una [GetTrait('shadow').GetName(GetNullCharacter)] con todo lo que eso conlleva.\nEn #N nivel de crisis mental 3#!, tu [GetTrait('shadow').GetName(GetNullCharacter)] intentará borrarte de la existencia. Si tiene éxito, te convertirás en un [GetTrait('spectre').GetName(GetNullCharacter)] y tu partida habrá terminado."
  
  fetters_and_passions4: "Arcanoi"
  lesson_fetters_and_passions4: "Arcanoi"
- lesson_fetters_and_passions4_desc: "A pesar de no sentirse cómodos en el mundo de los vivos, un [GetTrait('wraith').GetName(GetNullCharacter)] no está indefenso, ya que tiene acceso a [arcanoi_lifestyle|E], los poderes de los muertos.\n\nPara usarlos necesitarás aprenderlos; hay dos formas de hacerlo: la primera es aprenderlos de un [friend|E] u otra relación positiva. La segunda es, mientras exploras el [umbra|E], encontrar a otro [GetTrait('wraith').GetName(GetNullCharacter)] dispuesto a enseñarte uno de ellos.\n\nCada arcanoi requiere Pathos para usarse, y el pathos se obtiene mediante pasiones, como se explicó antes.\n\nCada arcanoi también desbloquea [domicile_building|E] que otorgan más bonificaciones."
+ lesson_fetters_and_passions4_desc: "A pesar de no sentirse cómodos en el mundo de los vivos, un [GetTrait('wraith').GetName(GetNullCharacter)] no está indefenso, ya que tiene acceso a [arcanoi_lifestyle|E], los poderes de los muertos.\n\nPara usarlos necesitarás aprenderlos; hay dos formas de hacerlo: la primera es aprenderlos de un [friend|E] u otra relación positiva. La segunda es, mientras exploras la [umbra|E], encontrar a otro [GetTrait('wraith').GetName(GetNullCharacter)] dispuesto a enseñarte uno de ellos.\n\nCada arcanoi requiere Pathos para usarse, y el pathos se obtiene mediante pasiones, como se explicó antes.\n\nCada arcanoi también desbloquea [domicile_building|E] que otorga más bonificaciones."
 
  action_can_craft_alert: "¡El tiempo de reutilización de Artesanía ha terminado!"
  action_can_craft_alert_desc: "¡El tiempo de reutilización para crear objetos ha terminado!"
@@ -225,7 +225,7 @@
 
  action_ghoul_can_drink_safety_from_vampire_alert: "Puedes beber de un [prisoner|E]"
  action_ghoul_can_drink_safety_from_vampire_alert_label: "Puedes beber de un [prisoner|E]"
- action_ghoul_can_drink_safety_from_vampire_alert_desc: "El vínculo de sangre de uno de tus [prisoner|E] $POD_splat_vampire$ ha expirado; puedes beber de él más seguramente ahora. ¡Recuerda que si tienen una [Glossary('Disciplina','game_concept_discipline_desc')] mental, el peligro aún existe!"
+ action_ghoul_can_drink_safety_from_vampire_alert_desc: "El vínculo de sangre de tu [prisoner|E] $POD_splat_vampire$ ha expirado; puedes beber de él más seguramente ahora. ¡Recuerda que si tiene una [Glossary('Disciplina','game_concept_discipline_desc')] mental, el peligro aún existe!"
  action_ghoul_can_drink_safety_from_vampire_alert_click: "#I ¡Haz clic para beber de un vampiro sin vínculo de sangre!#!"
 
  action_ghoul_dangerous_vitae_level_alert: "¡Nivel peligrosamente bajo de Vitae!"

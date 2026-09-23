@@ -46,8 +46,8 @@
  numina_weather_control_visible: "Control Climático"
 
  POD_NUMINA_SORCERY_PERK_POINT_CHECK: "#X @warning_icon! ¡No tienes suficientes puntos de [perk|E] para desbloquear una nueva senda!#! #V ($VALUE|V0$)#!"
- POD_NUMINA_SORCERY_PERK_POINT_CHECK_2: "#X ¡Esta [perk|E] costará $VALUE|V0$ puntos de [perk|E] para desbloquearse!#!"
- NUMINA_REQUIRE_5TH_PERK: "#X @warning_icon! ¡Primero debes desbloquear la [perk|E] anterior de esta senda!#!"
+ POD_NUMINA_SORCERY_PERK_POINT_CHECK_2: "#X ¡Este [perk|E] costará $VALUE|V0$ puntos de [perk|E] para desbloquearse!#!"
+ NUMINA_REQUIRE_5TH_PERK: "#X @warning_icon! ¡Primero debes desbloquear el [perk|E] anterior de esta senda!#!"
  NUMINA_DISABLED_6TH_PERK: "#X @warning_icon! ¡Tienes una Regla de Juego que desactiva todas las 6ª [perks|E] de las sendas de hechicería!#!"
 
  sorcery_unlocked_rank_6_flag_tt: "Ahora puedes desbloquear [GetPerk(SCOPE.GetFlagName('saved_tooltip')).GetName(GetPlayer)]"
@@ -72,7 +72,7 @@
  NUMINA_ALCHEMY_3_PERK_EFFECT: "Mejora todos los [crafting_nodes|E] de [GetPerk('numina_alchemy_2_perk').GetName(GetPlayer)]\n$numina_alchemy_common_description$"
  NUMINA_ALCHEMY_4_PERK_EFFECT: "Mejora todos los [crafting_nodes|E] de [GetPerk('numina_alchemy_3_perk').GetName(GetPlayer)]\n$unlock_brewing_node$ [GetModifier('alchemy_health_booster_1_modifier').GetNameWithTooltip]\n$numina_alchemy_common_description$"
  NUMINA_ALCHEMY_5_PERK_EFFECT: "Mejora todos los [crafting_nodes|E] de [GetPerk('numina_alchemy_4_perk').GetName(GetPlayer)]\n$unlock_brewing_node$ #TOOLTIP:GAME_TRAIT,immortal,[GetNullCharacter] #L Inmortalidad#!\n$unlock_brewing_node$ #TOOLTIP:GAME_TRAIT,vampire,[GetNullCharacter] #L Vampirismo#!\nPotion effect duration: #P +1#!\n$numina_alchemy_common_description$"
- NUMINA_ALCHEMY_6_PERK_EFFECT: "Mejora todos los [crafting_nodes|E] de [GetPerk('numina_alchemy_5_perk').GetName(GetPlayer)]\n$unlock_brewing_node$ Aumenta un [skill|E] seleccionado en #P 1#! sacrificando a un [character|E] con ese [skill|E] por encima de #bold [EmptyScope.ScriptValue('POD_numina_sorcery_alchemy_skill_potion_requirement')]#!\nDuración del efecto de la poción: #P +2#!\n$numina_alchemy_common_description$"
+ NUMINA_ALCHEMY_6_PERK_EFFECT: "Mejora todos los [crafting_nodes|E] de [GetPerk('numina_alchemy_5_perk').GetName(GetPlayer)]\n$unlock_brewing_node$ Aumenta una [skill|E] seleccionada en #P 1#! sacrificando a un [character|E] con esa [skill|E] por encima de #bold [EmptyScope.ScriptValue('POD_numina_sorcery_alchemy_skill_potion_requirement')]#!\nDuración del efecto de la poción: #P +2#!\n$numina_alchemy_common_description$"
 
  NUMINA_ALCHEMY_6_PERK_FLAG_REQUIREMENT: "#X @warning_icon! Primero debes completar el [journey|E] #v Estudiar Archimaestría de los Setos: Alquimia#!#!"
  
@@ -138,7 +138,7 @@
  NUMINA_ENCHANTMENT_1_PERK_EFFECT: "Mejora los [crafting_nodes|E] básicos\n$numina_enchantment_common_description$"
  NUMINA_ENCHANTMENT_2_PERK_EFFECT: "Mejora los [crafting_nodes|E] básicos\nDesbloquea versiones más débiles de los [crafting_nodes|E] básicos para [crafting_enhancing|E]\n$numina_enchantment_common_description$"
  NUMINA_ENCHANTMENT_3_PERK_EFFECT: "Mejora los [crafting_nodes|E] básicos y sus versiones [crafting_enhancing|E]\n$numina_enchantment_common_description$"
- NUMINA_ENCHANTMENT_4_PERK_EFFECT: "Mejora los [crafting_nodes|E] básicos y sus versiones [crafting_enhancing|E]\n$unlock_forging_node$ Añade un [modifier|E] que aumente un [skill|E] aleatorio ([GetModifier('enchantment_attribute_diplomacy_modifier').GetNameWithTooltip]) con un límite de 1 [crafting_node|E] por sesión de artesanía\n$numina_enchantment_common_description$"
+ NUMINA_ENCHANTMENT_4_PERK_EFFECT: "Mejora los [crafting_nodes|E] básicos y sus versiones [crafting_enhancing|E]\n$unlock_forging_node$ Añade un [modifier|E] que aumente una [skill|E] aleatoria ([GetModifier('enchantment_attribute_diplomacy_modifier').GetNameWithTooltip]) con un límite de 1 [crafting_node|E] por sesión de artesanía\n$numina_enchantment_common_description$"
  NUMINA_ENCHANTMENT_5_PERK_EFFECT: "Mejora los [crafting_nodes|E] básicos y sus versiones [crafting_enhancing|E]\nCambia el límite de [GetPerk('numina_enchantment_4_perk').GetName(GetPlayer)] de 1 a 2\n$numina_enchantment_common_description$"
  NUMINA_ENCHANTMENT_6_PERK_EFFECT: "Mejora los [crafting_nodes|E] básicos y sus versiones [crafting_enhancing|E]\nElimina el límite de [GetPerk('numina_enchantment_4_perk').GetName(GetPlayer)] para [crafting_forging|E] y lo aumenta para [crafting_enhancing|E]\n$numina_enchantment_common_description$"
 

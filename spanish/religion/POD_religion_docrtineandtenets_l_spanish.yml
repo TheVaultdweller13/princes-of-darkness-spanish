@@ -789,40 +789,40 @@
  
  special_doctrine_three_pillars_kindred_name: "Tres Pilares"
  special_doctrine_three_pillars_kindred_desc: "La base de la sociedad feudal es el castillo, la iglesia y el pueblo. La sociedad de los Vástagos refleja esto con el Camino de los Reyes, el Camino del Cielo y el Camino de la Humanidad conviviendo en tolerancia mutua."
- doctrine_parameter_hostility_override_special_doctrine_three_pillars_kindred: "Otras [faiths|E] de Vástagos que tengan el [doctrine|E] [GetFaithDoctrine('special_doctrine_three_pillars_kindred').GetBaseName] se consideran [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V] en lugar de $hostility_hostile_tooltippable$" 
+ doctrine_parameter_hostility_override_special_doctrine_three_pillars_kindred: "Otras [faiths|E] de Vástagos que tengan la [doctrine|E] [GetFaithDoctrine('special_doctrine_three_pillars_kindred').GetBaseName] se consideran [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V] en lugar de $hostility_hostile_tooltippable$" 
 
  special_doctrine_sin_pillars_kindred_name: "Pilares del Deseo"
  special_doctrine_sin_pillars_kindred_desc: "Los estudiantes de Sahar siguieron cada uno su propio camino tras su desaparición, pero siguen siendo hermanos y hermanas en la fe."
- doctrine_parameter_hostility_override_special_doctrine_sin_pillars_kindred: "Otras [faiths|E] de Vástagos que tengan el [doctrine|E] [GetFaithDoctrine('special_doctrine_sin_pillars_kindred').GetBaseName] se consideran [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V] en lugar de $hostility_hostile_tooltippable$" 
+ doctrine_parameter_hostility_override_special_doctrine_sin_pillars_kindred: "Otras [faiths|E] de Vástagos que tengan la [doctrine|E] [GetFaithDoctrine('special_doctrine_sin_pillars_kindred').GetBaseName] se consideran [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V] en lugar de $hostility_hostile_tooltippable$" 
 
  special_doctrine_set_pillars_kindred_name: "Pilares de Set"
  special_doctrine_set_pillars_kindred_desc: "Set tiene muchas formas, muchos nombres y muchas historias de origen. Pero, al final, sigue siendo el Gran Liberador."
- doctrine_parameter_hostility_override_special_doctrine_set_pillars_kindred: "Otras [faiths|E] de Vástagos que tengan el [doctrine|E] [GetFaithDoctrine('special_doctrine_set_pillars_kindred').GetBaseName] se consideran [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V] en lugar de $hostility_hostile_tooltippable$" 
+ doctrine_parameter_hostility_override_special_doctrine_set_pillars_kindred: "Otras [faiths|E] de Vástagos que tengan la [doctrine|E] [GetFaithDoctrine('special_doctrine_set_pillars_kindred').GetBaseName] se consideran [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V] en lugar de $hostility_hostile_tooltippable$" 
 
  special_doctrine_ashirra_pillars_kindred_name: "Pilares Ashirra"
  special_doctrine_ashirra_pillars_kindred_desc: "Aunque quienes siguieron los primeros pasos del Islam venían de clanes y trasfondos muy distintos, todos creían en algo más grande que ellos mismos."
- doctrine_parameter_hostility_override_special_doctrine_ashirra_pillars_kindred: "Otras [faiths|E] de Vástagos que tengan el [doctrine|E] [GetFaithDoctrine('special_doctrine_ashirra_pillars_kindred').GetBaseName] se consideran [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V] en lugar de $hostility_evil_tooltippable$"
- doctrine_parameter_ashirra_khitta_building_province_bonuses: "Los $glossary_khittas$ alineados con los Ashirra en [holy_cairo|E] proporcionan impuestos adicionales si El Cairo sigue esta fe"
- doctrine_parameter_ashirra_khitta_building_character_bonuses: "Los $glossary_khittas$ alineados con los Ashirra en [holy_cairo|E] proporcionan piedad si el titular sigue esta fe"
+ doctrine_parameter_hostility_override_special_doctrine_ashirra_pillars_kindred: "Otras [faiths|E] de Vástagos que tengan la [doctrine|E] [GetFaithDoctrine('special_doctrine_ashirra_pillars_kindred').GetBaseName] se consideran [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V] en lugar de $hostility_evil_tooltippable$"
+ doctrine_parameter_ashirra_khitta_building_province_bonuses: "Las $glossary_khittas$ alineadas con los Ashirra en [holy_cairo|E] proporcionan impuestos adicionales si El Cairo sigue esta fe"
+ doctrine_parameter_ashirra_khitta_building_character_bonuses: "Las $glossary_khittas$ alineadas con los Ashirra en [holy_cairo|E] proporcionan piedad si el titular sigue esta fe"
 
  special_doctrine_lilith_pillars_kindred_name: "Pilares Lilim"
  special_doctrine_lilith_pillars_kindred_desc: "Lilith busca venganza contra los hijos de Caín. Pero aceptará conversos entusiastas, o peones útiles, cuando sea necesario."
- doctrine_parameter_hostility_override_special_doctrine_lilith_pillars_kindred: "Otras [faiths|E] de Vástagos que tengan el [doctrine|E] [GetFaithDoctrine('special_doctrine_lilith_pillars_kindred').GetBaseName] se consideran [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V] en lugar de $hostility_evil_tooltippable$" 
+ doctrine_parameter_hostility_override_special_doctrine_lilith_pillars_kindred: "Otras [faiths|E] de Vástagos que tengan la [doctrine|E] [GetFaithDoctrine('special_doctrine_lilith_pillars_kindred').GetBaseName] se consideran [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V] en lugar de $hostility_evil_tooltippable$" 
 
  special_doctrine_heretical_paradox_name: "Ciclo Roto"
  special_doctrine_heretical_paradox_desc: "Los Ravnos orientales (y muchos otros Vástagos) consideran esta rama como herética y una mera excusa para el robo, la Diablerie y otros crímenes contra la sociedad. Se han intentado muchas veces purgar este Camino, aunque ninguna ha tenido éxito hasta ahora."
- doctrine_parameter_hostility_override_tenet_svadharma: "Otras [faiths|E] de Vástagos que tengan el [doctrine|E] [GetFaithDoctrine('tenet_svadharma').GetBaseName] consideran esta fe [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]." 
+ doctrine_parameter_hostility_override_tenet_svadharma: "Otras [faiths|E] de Vástagos que tengan la [doctrine|E] [GetFaithDoctrine('tenet_svadharma').GetBaseName] consideran esta fe [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]." 
 
  special_doctrine_main_paradox_name: "Entender el Ciclo"
  special_doctrine_main_paradox_desc: "El Camino de la Paradoja debe mucho a ciertos preceptos del hinduismo y es ampliamente aceptado como un precepto respetable entre los vampiros indios. Su versión occidental bastardizada, en cambio, no lo es."
- doctrine_parameter_hostility_override_special_doctrine_heretical_paradox: "Otras [faiths|E] de Vástagos que tengan el [doctrine|E] [GetFaithDoctrine('special_doctrine_heretical_paradox').GetBaseName] se consideran [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]." 
+ doctrine_parameter_hostility_override_special_doctrine_heretical_paradox: "Otras [faiths|E] de Vástagos que tengan la [doctrine|E] [GetFaithDoctrine('special_doctrine_heretical_paradox').GetBaseName] se consideran [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]." 
     
 
    
  
  special_doctrine_ecumenical_hunters_name: "Cazadores Ecuménicos"
  special_doctrine_ecumenical_hunters_desc: "Aunque los Cazadores provienen de trasfondos y fes muy variados, reconocen un vínculo común en la lucha contra los horrores sobrenaturales del Mundo de Tinieblas."
- doctrine_parameter_hostility_override_special_doctrine_ecumenical_hunters: "Otras [faiths|E] de Cazadores que tengan el [doctrine|E] [GetFaithDoctrine('special_doctrine_ecumenical_hunters').GetBaseName] se consideran [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V] en lugar de $hostility_hostile_tooltippable$" 
+ doctrine_parameter_hostility_override_special_doctrine_ecumenical_hunters: "Otras [faiths|E] de Cazadores que tengan la [doctrine|E] [GetFaithDoctrine('special_doctrine_ecumenical_hunters').GetBaseName] se consideran [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V] en lugar de $hostility_hostile_tooltippable$" 
 
  special_doctrine_heretical_hunters_name: "Cazadores Heréticos"
  special_doctrine_heretical_hunters_desc: "Estos Cazadores, en opinión de los demás, se han aliado con el enemigo y deben ser cazados con el mismo prejuicio."
@@ -834,7 +834,7 @@
  
  special_doctrine_fivefold_path_kindred_name: "Camino Quíntuple"
  special_doctrine_fivefold_path_kindred_desc: "Los cinco [Glossary('Dharma','podgloss.dharma')] tradicionales creados por el primer [Glossary('Arhat','podgloss.arhat')], [GetScriptedCharacterByHistoryID('791111').GetFirstName]. Forman el núcleo tradicional de la sociedad $pod_kueijin$.\nLos seguidores del Camino Quíntuple ven a los [Glossary('Dharma','podgloss.dharma')] heréticos como dolorosamente engañados o como traidores peligrosos que deben ser eliminados para siempre."
- doctrine_parameter_hostility_override_special_doctrine_fivefold_path_kindred: "Las [faiths|E] de [GetTrait('kueijin').GetName( GetNullCharacter )] que tengan el [doctrine|E] [GetFaithDoctrine('special_doctrine_fivefold_path_kindred').GetBaseName] se consideran [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]" 
+ doctrine_parameter_hostility_override_special_doctrine_fivefold_path_kindred: "Las [faiths|E] de [GetTrait('kueijin').GetName( GetNullCharacter )] que tengan la [doctrine|E] [GetFaithDoctrine('special_doctrine_fivefold_path_kindred').GetBaseName] se consideran [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]" 
  
  anda_hostility_name: "Hostilidad de los [Glossary('Anda','podgloss.anda')]"
  special_doctrine_is_anda_faith_name: "[Glossary('Anda','podgloss.anda')]"
@@ -847,15 +847,15 @@
  special_doctrine_allied_to_anda_hostility_name: "Aliados Oportunistas"
  special_doctrine_allied_to_anda_hostility_desc: "Los [akuma|E] ven a los [Glossary('Anda','podgloss.anda')] como un terreno fértil para la Infiltración y la ayuda indirecta para desestabilizar las Cortes tradicionales."
  doctrine_parameter_allied_to_anda_opinion_active: "" # Make loca empty to hidden this like vanilla
- doctrine_parameter_opinion_of_allied_to_anda_opinion_active: "$VALUE|+=0$ de bonificación de [opinion|E] con las [faiths|E] que tengan el [doctrine|E] [GetFaithDoctrine('special_doctrine_allied_to_anda_hostility').GetBaseName]"
- doctrine_parameter_hostility_override_special_doctrine_allied_to_anda_hostility: "Las [faiths|E] que tengan el [doctrine|E] [GetFaithDoctrine('special_doctrine_allied_to_anda_hostility').GetBaseName] se consideran [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V] en lugar de $hostility_hostile_tooltippable$"
+ doctrine_parameter_opinion_of_allied_to_anda_opinion_active: "$VALUE|+=0$ de bonificación de [opinion|E] con las [faiths|E] que tengan la [doctrine|E] [GetFaithDoctrine('special_doctrine_allied_to_anda_hostility').GetBaseName]"
+ doctrine_parameter_hostility_override_special_doctrine_allied_to_anda_hostility: "Las [faiths|E] que tengan la [doctrine|E] [GetFaithDoctrine('special_doctrine_allied_to_anda_hostility').GetBaseName] se consideran [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V] en lugar de $hostility_hostile_tooltippable$"
  allied_to_anda_opinion_active_county_opinion_name: "Camarada"
  allied_to_anda_opinion_active_opinion_name: "Esbirro"
  special_doctrine_against_to_anda_hostility_name: "[Glossary('Wan Kuei','game_concept_kuei_jin_desc')] Vengativos"
  special_doctrine_against_to_anda_hostility_desc: "Cuando las tribus mongolas se unieron, los [Glossary('Anda','podgloss.anda')] las siguieron como una tormenta, arrasando los territorios [Glossary('Wan Kuei','game_concept_kuei_jin_desc')] y comenzando una vendetta que solo terminaría con la muerte de uno de ellos."
  doctrine_parameter_against_to_anda_opinion_active: "" # Make loca empty to hidden this like vanilla
- doctrine_parameter_opinion_of_against_to_anda_opinion_active: "$VALUE|+=0$ de penalización de [opinion|E] con las [faiths|E] que tengan el [doctrine|E] [GetFaithDoctrine('special_doctrine_against_to_anda_hostility').GetBaseName]"
- doctrine_parameter_hostility_override_special_doctrine_against_to_anda_hostility: "Las [faiths|E] que tengan el [doctrine|E] [GetFaithDoctrine('special_doctrine_against_to_anda_hostility').GetBaseName] se consideran [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V] en lugar de $hostility_hostile_tooltippable$"
+ doctrine_parameter_opinion_of_against_to_anda_opinion_active: "$VALUE|+=0$ de penalización de [opinion|E] con las [faiths|E] que tengan la [doctrine|E] [GetFaithDoctrine('special_doctrine_against_to_anda_hostility').GetBaseName]"
+ doctrine_parameter_hostility_override_special_doctrine_against_to_anda_hostility: "Las [faiths|E] que tengan la [doctrine|E] [GetFaithDoctrine('special_doctrine_against_to_anda_hostility').GetBaseName] se consideran [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V] en lugar de $hostility_hostile_tooltippable$"
  against_to_anda_opinion_active_opinion_name: "Cordero de Dos Patas"
  against_to_anda_opinion_active_county_opinion_name: "La Invasión Mongola"
  
@@ -982,7 +982,7 @@
 
  tenet_mercy_for_vanquished_name: "Piedad para los Vencidos"
  tenet_mercy_for_vanquished_desc: "Una vez que un enemigo se rinde, debe ser tratado con la dignidad y el respeto propios de su condición. Si el cautivo o su familia no pueden pagar el rescate, deben ser liberados por piedad.\n\nUn enemigo en batalla debe ser matado, pero un enemigo derrotado debe ser tratado con toda cortesía, con la esperanza de que algún día encuentre su camino hacia las filas de los fieles.\n\nNo sirve de nada detenerse en lo que pudo haber sido ni atormentarse por hechos pasados. El guerrero solo mira hacia la próxima batalla, y espera desenvolverse bien en ella."
- doctrine_parameter_frequent_kingdom_holy_wars: "Los [holy_wars|E] contra Reinos pueden declararse cada 25 años en lugar de cada 50"
+ doctrine_parameter_frequent_kingdom_holy_wars: "Las [holy_wars|E] contra Reinos pueden declararse cada 25 años en lugar de cada 50"
  doctrine_parameter_house_arrest_only: "Los [prisoners|E] solo pueden ponerse bajo [house_arrest|E]"
  house_arrest_only_tooltip: "Esta fe solo permite el [house_arrest|E]"
  doctrine_parameter_piety_from_releasing: "Ganas [piety|El] al liberar sin exigencias a personajes $hostility_hostile_tooltippable$ o $hostility_evil_tooltippable$"
@@ -1149,7 +1149,7 @@
  doctrine_parameter_hostility_override_demons_hostility_doctrine: "Las [faiths|E] [GetTrait('demon').GetName( GetPlayer )] se consideran [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
  doctrine_parameter_hostility_override_doctrine_demonic_accepted: "Las [faiths|E] Demoníacas se consideran [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
  
- doctrine_parameter_access_to_underworld: "Obtienes acceso al [UmbraGlossaryLocalized('shadowlands','Inframundo')] al viajar por el [umbra|E]."
+ doctrine_parameter_access_to_underworld: "Obtienes acceso al [UmbraGlossaryLocalized('shadowlands','Inframundo')] al viajar por la [umbra|E]."
  
  seasons_time_name: "Tiempo de Estación"
  doctrine_winter_time_name: "Tiempo de Invierno"
@@ -1170,7 +1170,7 @@
  doctrine_fae_agenda_humanist_name: "Humanista"
  doctrine_fae_agenda_humanist_desc: "La facción Humanista no necesariamente aboga por la amabilidad y la tolerancia al tratar con el Señorío humano, sino que abraza una ética centrada sobre todo en comprender a la humanidad. Los humanos poseen ahora un número y un poder que superan a los de las propias hadas. Los Humanistas creen que ha llegado el momento de reunir información sobre los humanos, tratar con ellos, forjar nuevos juramentos y, en todo caso, buscar un equilibrio entre las dos razas antes de que sea demasiado tarde. Desean alcanzar un nivel de codependencia con los humanos, en el que se reconozca de nuevo a las hadas y se las valore y respete... o simplemente se las valore y tema."
  doctrine_fae_agenda_constantinian_name: "Constantiniano"
- doctrine_fae_agenda_constantinian_desc: "Los Constantinianos también pueden usar el [hostile_scheme|E] [GetScheme('inquihunt').GetTypeName] de [GetTrait('supehunter').GetName( GetPlayer )] contra un [GetTrait('vampire').GetName( GetPlayer )].\n\n$tenet_constantinian_desc$"
+ doctrine_fae_agenda_constantinian_desc: "Los Constantinianos también pueden usar la [hostile_scheme|E] [GetScheme('inquihunt').GetTypeName] de [GetTrait('supehunter').GetName( GetPlayer )] contra un [GetTrait('vampire').GetName( GetPlayer )].\n\n$tenet_constantinian_desc$"
  doctrine_fae_agenda_none_name: "Indeciso"
  doctrine_fae_agenda_none_desc: "Ninguna agenda en particular parece atractiva. Los Militantes, los Portadores de la Tregua, los Humanistas y los Constantinianos tienen todos argumentos válidos, y muchas hadas aún no han decidido cuál es el camino a seguir." 
  doctrine_parameter_fae_agenda_militant_opinion_active: ""
@@ -1230,14 +1230,14 @@
  fae_agenda_hostility_desc: ""
  fae_pacts_hostility_name: ""
  fae_pacts_hostility_desc: ""
- doctrine_parameter_hostility_override_special_doctrine_fae_trucebearers_hostility: "Otras [faiths|E] de Hadas que tengan el [doctrine|E] [GetFaithDoctrine('special_doctrine_fae_trucebearers_hostility').GetBaseName] se consideran [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
- doctrine_parameter_hostility_override_special_doctrine_fae_constantinians_hostility: "Otras [faiths|E] de Hadas que tengan el [doctrine|E] [GetFaithDoctrine('special_doctrine_fae_constantinians_hostility').GetBaseName] se consideran [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]" 
- doctrine_parameter_hostility_override_special_doctrine_fae_militants_hostility: "Otras [faiths|E] de Hadas que tengan el [doctrine|E] [GetFaithDoctrine('special_doctrine_fae_militants_hostility').GetBaseName] se consideran [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
- doctrine_parameter_hostility_override_special_doctrine_fae_humanists_hostility: "Otras [faiths|E] de Hadas que tengan el [doctrine|E] [GetFaithDoctrine('special_doctrine_fae_humanists_hostility').GetBaseName] se consideran [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
- doctrine_parameter_hostility_override_special_doctrine_fae_undecided_hostility: "Otras [faiths|E] de Hadas que tengan el [doctrine|E] [GetFaithDoctrine('special_doctrine_fae_undecided_hostility').GetBaseName] se consideran [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
- doctrine_parameter_hostility_override_doctrine_fae_agenda_constantinian: "Las [faiths|E] que tengan el [doctrine|E] [GetFaithDoctrine('doctrine_fae_agenda_constantinian').GetBaseName] se consideran [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
- doctrine_parameter_hostility_override_tenet_constantinian: "Las [faiths|E] que tengan el [doctrine|E] [GetFaithDoctrine('tenet_constantinian').GetBaseName] se consideran [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
- doctrine_parameter_hostility_override_special_doctrine_constantinian_catechism: "Las [faiths|E] que tengan el [doctrine|E] [GetFaithDoctrine('special_doctrine_constantinian_catechism').GetBaseName] se consideran [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
+ doctrine_parameter_hostility_override_special_doctrine_fae_trucebearers_hostility: "Otras [faiths|E] de Hadas que tengan la [doctrine|E] [GetFaithDoctrine('special_doctrine_fae_trucebearers_hostility').GetBaseName] se consideran [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
+ doctrine_parameter_hostility_override_special_doctrine_fae_constantinians_hostility: "Otras [faiths|E] de Hadas que tengan la [doctrine|E] [GetFaithDoctrine('special_doctrine_fae_constantinians_hostility').GetBaseName] se consideran [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]" 
+ doctrine_parameter_hostility_override_special_doctrine_fae_militants_hostility: "Otras [faiths|E] de Hadas que tengan la [doctrine|E] [GetFaithDoctrine('special_doctrine_fae_militants_hostility').GetBaseName] se consideran [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
+ doctrine_parameter_hostility_override_special_doctrine_fae_humanists_hostility: "Otras [faiths|E] de Hadas que tengan la [doctrine|E] [GetFaithDoctrine('special_doctrine_fae_humanists_hostility').GetBaseName] se consideran [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
+ doctrine_parameter_hostility_override_special_doctrine_fae_undecided_hostility: "Otras [faiths|E] de Hadas que tengan la [doctrine|E] [GetFaithDoctrine('special_doctrine_fae_undecided_hostility').GetBaseName] se consideran [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
+ doctrine_parameter_hostility_override_doctrine_fae_agenda_constantinian: "Las [faiths|E] que tengan la [doctrine|E] [GetFaithDoctrine('doctrine_fae_agenda_constantinian').GetBaseName] se consideran [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
+ doctrine_parameter_hostility_override_tenet_constantinian: "Las [faiths|E] que tengan la [doctrine|E] [GetFaithDoctrine('tenet_constantinian').GetBaseName] se consideran [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
+ doctrine_parameter_hostility_override_special_doctrine_constantinian_catechism: "Las [faiths|E] que tengan la [doctrine|E] [GetFaithDoctrine('special_doctrine_constantinian_catechism').GetBaseName] se consideran [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
  special_doctrine_wyrm_to_unseelie_hostility_name: "Pactos $glossary_wyrm$-Unseelie"
  special_doctrine_unseelie_to_wyrm_hostility_name: "Pactos Unseelie-$glossary_wyrm$"
  special_doctrine_unseelie_splat_hostility_name: "Pactos Unseelie-Pródigo"
@@ -1265,23 +1265,23 @@
  special_doctrine_gaia_church_pact_hostility_name: "Pactos Constantiniano-Pródigo"
  special_doctrine_gaia_church_pact_hostility_desc: "Pactos Constantiniano-Pródigo"
  
- doctrine_parameter_hostility_override_special_doctrine_wyrm_to_unseelie_hostility: "Otras [faiths|E] de Garou que tengan el [doctrine|E] [GetFaithDoctrine('special_doctrine_wyrm_to_unseelie_hostility').GetBaseName] se consideran [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
- doctrine_parameter_hostility_override_special_doctrine_unseelie_to_wyrm_hostility: "Otras [faiths|E] de Hadas que tengan el [doctrine|E] [GetFaithDoctrine('special_doctrine_unseelie_to_wyrm_hostility').GetBaseName] se consideran [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
- doctrine_parameter_hostility_override_special_doctrine_unseelie_splat_hostility: "Otras [faiths|E] de Hadas que tengan el [doctrine|E] [GetFaithDoctrine('special_doctrine_unseelie_splat_hostility').GetBaseName] se consideran [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
- doctrine_parameter_hostility_override_special_doctrine_garou_to_seelie_hostility: "Otras [faiths|E] de Garou que tengan el [doctrine|E] [GetFaithDoctrine('special_doctrine_garou_to_seelie_hostility').GetBaseName] se consideran [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
- doctrine_parameter_hostility_override_special_doctrine_seelie_to_garou_hostility: "Otras [faiths|E] de Hadas que tengan el [doctrine|E] [GetFaithDoctrine('special_doctrine_seelie_to_garou_hostility').GetBaseName] se consideran [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
- doctrine_parameter_hostility_override_special_doctrine_unseelie_blood_pact_hostility: "Otras [faiths|E] de Hadas que tengan el [doctrine|E] [GetFaithDoctrine('special_doctrine_unseelie_blood_pact_hostility').GetBaseName] se consideran [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
- doctrine_parameter_hostility_override_special_doctrine_vampire_blood_pact_hostility: "Otras [faiths|E] de Vástagos que tengan el [doctrine|E] [GetFaithDoctrine('special_doctrine_vampire_blood_pact_hostility').GetBaseName] se consideran [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
- doctrine_parameter_hostility_override_special_doctrine_fianna_fiona_pact_hostility: "Otras [faiths|E] de Garou que tengan el [doctrine|E] [GetFaithDoctrine('special_doctrine_fianna_fiona_pact_hostility').GetBaseName] se consideran [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
- doctrine_parameter_hostility_override_special_doctrine_fiona_fianna_pact_hostility: "Otras [faiths|E] de Hadas que tengan el [doctrine|E] [GetFaithDoctrine('special_doctrine_fiona_fianna_pact_hostility').GetBaseName] se consideran [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
- doctrine_parameter_hostility_override_special_doctrine_gaia_trucebearer_pact_hostility: "Otras [faiths|E] de Garou que tengan el [doctrine|E] [GetFaithDoctrine('special_doctrine_gaia_trucebearer_pact_hostility').GetBaseName] se consideran [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
- doctrine_parameter_hostility_override_special_doctrine_trucebearer_gaia_pact_hostility: "Otras [faiths|E] de Hadas que tengan el [doctrine|E] [GetFaithDoctrine('special_doctrine_trucebearer_gaia_pact_hostility').GetBaseName] se consideran [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
- doctrine_parameter_hostility_override_special_doctrine_gaia_church_pact_hostility: "Otras [faiths|E] de Garou que tengan el [doctrine|E] [GetFaithDoctrine('special_doctrine_gaia_church_pact_hostility').GetBaseName] se consideran [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
- doctrine_parameter_hostility_override_special_doctrine_seelie_splat_hostility: "Otras [faiths|E] de Hadas que tengan el [doctrine|E] [GetFaithDoctrine('special_doctrine_seelie_splat_hostility').GetBaseName] se consideran [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
+ doctrine_parameter_hostility_override_special_doctrine_wyrm_to_unseelie_hostility: "Otras [faiths|E] de Garou que tengan la [doctrine|E] [GetFaithDoctrine('special_doctrine_wyrm_to_unseelie_hostility').GetBaseName] se consideran [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
+ doctrine_parameter_hostility_override_special_doctrine_unseelie_to_wyrm_hostility: "Otras [faiths|E] de Hadas que tengan la [doctrine|E] [GetFaithDoctrine('special_doctrine_unseelie_to_wyrm_hostility').GetBaseName] se consideran [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
+ doctrine_parameter_hostility_override_special_doctrine_unseelie_splat_hostility: "Otras [faiths|E] de Hadas que tengan la [doctrine|E] [GetFaithDoctrine('special_doctrine_unseelie_splat_hostility').GetBaseName] se consideran [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
+ doctrine_parameter_hostility_override_special_doctrine_garou_to_seelie_hostility: "Otras [faiths|E] de Garou que tengan la [doctrine|E] [GetFaithDoctrine('special_doctrine_garou_to_seelie_hostility').GetBaseName] se consideran [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
+ doctrine_parameter_hostility_override_special_doctrine_seelie_to_garou_hostility: "Otras [faiths|E] de Hadas que tengan la [doctrine|E] [GetFaithDoctrine('special_doctrine_seelie_to_garou_hostility').GetBaseName] se consideran [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
+ doctrine_parameter_hostility_override_special_doctrine_unseelie_blood_pact_hostility: "Otras [faiths|E] de Hadas que tengan la [doctrine|E] [GetFaithDoctrine('special_doctrine_unseelie_blood_pact_hostility').GetBaseName] se consideran [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
+ doctrine_parameter_hostility_override_special_doctrine_vampire_blood_pact_hostility: "Otras [faiths|E] de Vástagos que tengan la [doctrine|E] [GetFaithDoctrine('special_doctrine_vampire_blood_pact_hostility').GetBaseName] se consideran [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
+ doctrine_parameter_hostility_override_special_doctrine_fianna_fiona_pact_hostility: "Otras [faiths|E] de Garou que tengan la [doctrine|E] [GetFaithDoctrine('special_doctrine_fianna_fiona_pact_hostility').GetBaseName] se consideran [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
+ doctrine_parameter_hostility_override_special_doctrine_fiona_fianna_pact_hostility: "Otras [faiths|E] de Hadas que tengan la [doctrine|E] [GetFaithDoctrine('special_doctrine_fiona_fianna_pact_hostility').GetBaseName] se consideran [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
+ doctrine_parameter_hostility_override_special_doctrine_gaia_trucebearer_pact_hostility: "Otras [faiths|E] de Garou que tengan la [doctrine|E] [GetFaithDoctrine('special_doctrine_gaia_trucebearer_pact_hostility').GetBaseName] se consideran [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
+ doctrine_parameter_hostility_override_special_doctrine_trucebearer_gaia_pact_hostility: "Otras [faiths|E] de Hadas que tengan la [doctrine|E] [GetFaithDoctrine('special_doctrine_trucebearer_gaia_pact_hostility').GetBaseName] se consideran [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
+ doctrine_parameter_hostility_override_special_doctrine_gaia_church_pact_hostility: "Otras [faiths|E] de Garou que tengan la [doctrine|E] [GetFaithDoctrine('special_doctrine_gaia_church_pact_hostility').GetBaseName] se consideran [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
+ doctrine_parameter_hostility_override_special_doctrine_seelie_splat_hostility: "Otras [faiths|E] de Hadas que tengan la [doctrine|E] [GetFaithDoctrine('special_doctrine_seelie_splat_hostility').GetBaseName] se consideran [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
  
  special_doctrine_conspiracy_of_rebels_kindred_name: "Conspiración de Rebeldes"
  special_doctrine_conspiracy_of_rebels_kindred_desc: "Unidos en solidaridad contra el orden establecido de la sociedad de los Vástagos, estos rebeldes conspiran para derrocar a los Antiguos."
- doctrine_parameter_hostility_override_special_doctrine_conspiracy_of_rebels_kindred: "Otras [faiths|E] de Vástagos que tengan el [doctrine|E] [GetFaithDoctrine('special_doctrine_conspiracy_of_rebels_kindred').GetBaseName] se consideran [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V] en lugar de $hostility_hostile_tooltippable$" 
+ doctrine_parameter_hostility_override_special_doctrine_conspiracy_of_rebels_kindred: "Otras [faiths|E] de Vástagos que tengan la [doctrine|E] [GetFaithDoctrine('special_doctrine_conspiracy_of_rebels_kindred').GetBaseName] se consideran [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V] en lugar de $hostility_hostile_tooltippable$" 
  
  tenet_philosophical_combat_name: "Combate Filosófico"
  tenet_philosophical_combat_desc: "Perder un debate en el foro puede ser tan mortal como perder una batalla."
@@ -1413,11 +1413,11 @@
  
  tenet_obeisance_to_devils_name: "Homenaje a los Diablos"
  tenet_obeisance_to_devils_desc: "Existimos por debajo de los Dioses Menores. Debemos permanecer inadvertidos, fuera del escrutinio, no sea que provoquemos nuestra aniquilación."
- doctrine_parameter_hostility_override_tenet_obeisance_to_devils: "Las [faiths|E] que tengan el [doctrine|E] [GetFaithDoctrine('tenet_obeisance_to_devils').GetBaseName] se consideran [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V] en lugar de #V Hostiles#!" 
+ doctrine_parameter_hostility_override_tenet_obeisance_to_devils: "Las [faiths|E] que tengan la [doctrine|E] [GetFaithDoctrine('tenet_obeisance_to_devils').GetBaseName] se consideran [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V] en lugar de #V Hostiles#!" 
 
 
  tenet_fera_innovative_name: "Innovador"
- tenet_fera_innovative_desc: "El progreso tecnológico es la ventaja más importante que se puede tener. Aunque la mayoría de los Garou son escépticos ante la innovación, en el mejor de los casos, algunos seguidores del $glossary_weaver$ impulsan abiertamente la innovación, no solo para su propia adopción, sino para la humanidad en general."
+ tenet_fera_innovative_desc: "El progreso tecnológico es la ventaja más importante que se puede tener. Aunque la mayoría de los Garou son escépticos ante la innovación, en el mejor de los casos, algunos seguidores de la $glossary_weaver$ impulsan abiertamente la innovación, no solo para su propia adopción, sino para la humanidad en general."
 
  tenet_one_blade_name: "Uno con la Hoja"
  tenet_one_blade_desc: "Los Hakken son los principales guerreros y protectores de los Hengeyokai. Con este fin, muchos de ellos dedican su vida a dominar la hoja."
@@ -1494,7 +1494,7 @@
  tenet_twisted_memories_name: "Recuerdos Retorcidos"
  tenet_twisted_memories_desc: "Los recuerdos son cosas maleables, fáciles de cambiar, fáciles de retorcer."
  doctrine_parameter_remove_relation_torture: "Elimina una [relation|E] aleatoria de tu víctima durante la [torture|E]"
- doctrine_parameter_mokole_wyrm_taint_torture: "Aumenta enormemente el [wyrm_taint|E] infligido a los [GetTrait('mokole').GetName(GetNullCharacter)] durante la [torture|E]"
+ doctrine_parameter_mokole_wyrm_taint_torture: "Aumenta enormemente la [wyrm_taint|E] infligida a los [GetTrait('mokole').GetName(GetNullCharacter)] durante la [torture|E]"
 
 
  doctrine_fera_wyrm_taint_visible_name: ""
@@ -1508,11 +1508,11 @@
  doctrine_fera_triat_alignment_group_name: "Alineamiento Triat"
  
  doctrine_fera_triat_alignment_balanced_name: "Equilibrado"
- doctrine_fera_triat_alignment_balanced_desc: "Aunque el $glossary_triat$ ya no está en equilibrio, muchos $glossary_fera$ siguen creyendo en el viejo orden."
+ doctrine_fera_triat_alignment_balanced_desc: "Aunque la $glossary_triat$ ya no está en equilibrio, muchos $glossary_fera$ siguen creyendo en el viejo orden."
  doctrine_parameter_hostility_override_doctrine_fera_triat_alignment_balanced: "Las [faiths|E] con [GetFaithDoctrine('doctrine_fera_triat_alignment_balanced').GetBaseName] se consideran [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
 
  doctrine_fera_triat_alignment_wyld_name: "Salvaje"
- doctrine_fera_triat_alignment_wyld_desc: "Como resultado de la amenaza tanto de la $glossary_weaver$ como del $glossary_wyrm$, la mayoría de los $glossary_fera$ veneran al $glossary_wyld$ por encima de los demás miembros del $glossary_triat$, viéndolo a él y a Gaia como necesitados de protección."
+ doctrine_fera_triat_alignment_wyld_desc: "Como resultado de la amenaza tanto de la $glossary_weaver$ como del $glossary_wyrm$, la mayoría de los $glossary_fera$ veneran al $glossary_wyld$ por encima de los demás miembros de la $glossary_triat$, viéndolo a él y a Gaia como necesitados de protección."
 
  doctrine_fera_triat_alignment_weaver_name: "Tejedora"
  doctrine_fera_triat_alignment_weaver_desc: "El crecimiento de la $glossary_weaver$ nunca se detendrá mientras exista la humanidad."
@@ -1525,7 +1525,7 @@
  doctrine_parameter_can_recruit_wyrm_maa: "Puede reclutar a [GetMaA('scrags').GetName] y [GetMaA('skull_pigs').GetName] como [men_at_arms|E]"
 
  doctrine_fera_triat_alignment_triatic_wyrm_name: "Wyrm Triádico"
- doctrine_fera_triat_alignment_triatic_wyrm_desc: "El $glossary_wyrm_triatic$ es una burla del $glossary_triat$ original. Las tres cabezas del Wyrm dotan a sus siervos más cercanos de un gran poder impío."
+ doctrine_fera_triat_alignment_triatic_wyrm_desc: "El $glossary_wyrm_triatic$ es una burla de la $glossary_triat$ original. Las tres cabezas del Wyrm dotan a sus siervos más cercanos de un gran poder impío."
  doctrine_parameter_hostility_override_doctrine_fera_triat_alignment_triatic_wyrm: "Las [faiths|E] con [GetFaithDoctrine('doctrine_fera_triat_alignment_triatic_wyrm').GetBaseName] se consideran [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
 
 
@@ -1590,7 +1590,7 @@
  bastet_nation_tolerance_name: ""
  special_doctrine_bastet_nation_name: "Nación Bastet"
  special_doctrine_bastet_nation_desc: "La Madre Seline observa con orgullo cómo sus amados hijos felinos por fin se unen como uno solo."
- doctrine_parameter_hostility_override_special_doctrine_bastet_nation: "Otras [faiths|E] que tengan el [doctrine|E] [GetFaithDoctrine('special_doctrine_bastet_nation').GetBaseName] se consideran [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V] en lugar de [faith_astray|V]"  
+ doctrine_parameter_hostility_override_special_doctrine_bastet_nation: "Otras [faiths|E] que tengan la [doctrine|E] [GetFaithDoctrine('special_doctrine_bastet_nation').GetBaseName] se consideran [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V] en lugar de [faith_astray|V]"  
 
  zhong_guo_reward_doctrine_name: ""
  special_zhong_guo_reward_doctrine_name: "Guiados por Dragones"

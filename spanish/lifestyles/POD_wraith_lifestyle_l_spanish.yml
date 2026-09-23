@@ -23,7 +23,7 @@
  monthly_dark_arcanoi_lifestyle_xp_gain_mult: "[experience|E] mensual de Arcanos Oscuros [lifestyle|E]"
  
  misc_arcanoi_lifestyle_name: "Arcanos misceláneos"
- misc_arcanoi_lifestyle_desc: "Centrarse en las habilidades utilizadas por los Resurgidos, o wraiths que han logrado regresar a sus antiguos cuerpos, y en los Arcanos de los wraiths de otros [Glossary('Reino Oscuro','game_concept_dark_kingdom_desc')]."
+ misc_arcanoi_lifestyle_desc: "Centrarse en las habilidades utilizadas por los Resurgidos, o wraiths que han logrado regresar a sus antiguos cuerpos, y en los Arcanos de los wraiths de otros [Glossary('Reinos Oscuros','game_concept_dark_kingdom_desc')]."
  misc_arcanoi_lifestyle_highlight_desc: "Debido a tu [Glossary('Reino Oscuro','game_concept_dark_kingdom_desc')] [government|E], ganas un #P 50%#! más de [experience|E] en este Estilo de vida."
  monthly_misc_arcanoi_lifestyle_xp_gain_mult: "[experience|E] mensual de Arcanos misceláneos [lifestyle|E]"
  
@@ -59,7 +59,7 @@
  
  arcanos_lifeweb_focus: "Enfoque de Red Vital"
  arcanos_lifeweb_focus_modifier: "[GetFocus('arcanos_lifeweb_focus').GetName]"
- arcanos_lifeweb_focus_desc: "Fortalecer, debilitar o vigilar los [Fetters|E]."
+ arcanos_lifeweb_focus_desc: "Fortalecer, debilitar o vigilar las [Fetters|E]."
  arcanos_lifeweb_focus_effect_desc: "Centrarse en la Red Vital otorga:"
  
  arcanos_moliate_focus: "Enfoque de Moliar"
@@ -376,10 +376,10 @@
  tempest_riders_canceleer_perk_name: "Cancelador del Jinete de la Tempestad"
  arcanoi_oubliette_perk_name: "Mazmorra"
 
- ENSHROUD_PERK_EFFECT: "Ya no es necesario realizar un sacrificio para acceder a la [UmbraGlossary('tempest')].\n#F Un Heraldo puede manipular la membrana entre los [UmbraGlossary('shadowlands')] y la [UmbraGlossary('tempest')], permitiéndole entrar en la [UmbraGlossary('tempest')] sin abrir un [GetModifier('nihil_modifier').GetNameWithTooltip] o usar la [UmbraGlossary('tempest')] para ocultarse.#!"
- WEATHER_EYE_PERK_EFFECT: "Permite predecir peligros naturales.\n#F Un Heraldo siempre es consciente de las condiciones actuales en la [UmbraGlossary('tempest')] cercana y puede tomar atajos entre dos ubicaciones de los [UmbraGlossary('shadowlands')].#!"
- PHANTOM_WINGS_PERK_EFFECT: "#F Un Heraldo puede desarrollar alas para planear a través de la [UmbraGlossary('tempest')] y los [UmbraGlossary('shadowlands')].#!"
- RETURN_PERK_EFFECT: "Como [character_interaction|E], puede teletransportarse a los [UmbraGlossary('shadowlands')]\n#F Un Heraldo puede viajar desde cualquier ubicación en la [UmbraGlossary('tempest')] hasta su hogar por la ruta más rápida posible.#!"
+ ENSHROUD_PERK_EFFECT: "Ya no es necesario realizar un sacrificio para acceder a la [UmbraGlossary('tempest')].\n#F Un Heraldo puede manipular la membrana entre las [UmbraGlossary('shadowlands')] y la [UmbraGlossary('tempest')], permitiéndole entrar en la [UmbraGlossary('tempest')] sin abrir un [GetModifier('nihil_modifier').GetNameWithTooltip] o usar la [UmbraGlossary('tempest')] para ocultarse.#!"
+ WEATHER_EYE_PERK_EFFECT: "Permite predecir peligros naturales.\n#F Un Heraldo siempre es consciente de las condiciones actuales en la [UmbraGlossary('tempest')] cercana y puede tomar atajos entre dos ubicaciones de las [UmbraGlossary('shadowlands')].#!"
+ PHANTOM_WINGS_PERK_EFFECT: "#F Un Heraldo puede desarrollar alas para planear a través de la [UmbraGlossary('tempest')] y las [UmbraGlossary('shadowlands')].#!"
+ RETURN_PERK_EFFECT: "Como [character_interaction|E], puede teletransportarse a las [UmbraGlossary('shadowlands')]\n#F Un Heraldo puede viajar desde cualquier ubicación en la [UmbraGlossary('tempest')] hasta su hogar por la ruta más rápida posible.#!"
  FLICKER_PERK_EFFECT: "#F Un Heraldo puede doblegar la [UmbraGlossary('tempest')] para teletransportarse a otra ubicación.#!"
  STORMREADER_PERK_EFFECT: "Ya no te perderás en la [UmbraGlossary('tempest')].\n#F Un Heraldo gana un sentido intuitivo de la [UmbraGlossary('tempest')], lo que le permite reducir los tiempos de viaje al viajar hacia o desde una ubicación en la [UmbraGlossary('tempest')], y navegar para evitar un Maelstrom o mitigar sus efectos.#!"
  TEMPEST_RIDERS_CANCELEER_PERK_EFFECT: "#F Un Heraldo puede desarrollar alas negras metálicas, permitiéndole planear, atacar y proteger a otros.#!"
@@ -423,7 +423,7 @@
  LIFE_IN_DEATH_PERK_EFFECT: "Disminuye el coste de la [character_interaction|E] de [GetPerk('whispers_perk').GetName(GetPlayer)] de 1 a 0 de pathos\n#F Un Preceptor puede materializarse como una versión transitoria de una persona viva.#!"
  SHROUDGUIDE_PERK_EFFECT: "#F Un Preceptor puede compartir los efectos de las artes de Encarnar que permiten la manifestación en las [Glossary('Tierras de Piel','game_concept_skinlands_desc')] con otros wraiths.#!"
  MATERIALIZE_PERK_EFFECT: "Puede viajar a las [Glossary('Tierras de Piel','game_concept_skinlands_desc')], mientras gana un cuerpo «material».\n#F Un Preceptor puede volver temporalmente a un estado similar al de los vivos.#!"
- HARROW_THE_MORTAL_FLESH_PERK_EFFECT: "Permite regalar títulos a otros seres sobrenaturales.\n#F Un Preceptor puede llevar a un mortal u otro ser sobrenatural al [UmbraGlossary('shadowlands')].#!"
+ HARROW_THE_MORTAL_FLESH_PERK_EFFECT: "Permite regalar títulos a otros seres sobrenaturales.\n#F Un Preceptor puede llevar a un mortal u otro ser sobrenatural a las [UmbraGlossary('shadowlands')].#!"
  
  # Fatalism
  fatalism_visible: "Fatalism"
@@ -496,14 +496,14 @@
  walk_the_web_perk_name: "Caminar por la Red"
  souls_interwoven_perk_name: "Almas entrelazadas"
 
- SENSE_STRAND_PERK_EFFECT: "Desbloquea el modo de mapa [Fetter|E].\n#F Un Monitor siempre es consciente de la ubicación de sus [Fetters|E], y puede extender sus sentidos a las inmediaciones de un [Fetters|E].#!"
+ SENSE_STRAND_PERK_EFFECT: "Desbloquea el modo de mapa [Fetter|E].\n#F Un Monitor siempre es consciente de la ubicación de sus [Fetters|E], y puede extender sus sentidos a las inmediaciones de unas [Fetters|E].#!"
  LIFELINE_PERK_EFFECT: "Permite usar la interacción $POD_manipulate_fetters_interaction$ [character_interaction|E] en [GetTrait('wraith').GetName( GetNullCharacter )] con más de 75 de opinión.\n#F Un Monitor puede crear un «pseudo-[Fetter|E]» entre dos wraiths que les permite trabajar juntos.#!"
- STRAND_CHANNEL_PERK_EFFECT: "Permite interactuar con tus [Fetters|E] desde cualquier lugar de la [umbra|E].\n#F Un Monitor puede hablar a través de un [Fetter|E], o usar sus Arcanos a través de un [Fetter|E].#!"
- SPLICE_STRAND_PERK_EFFECT: "Bono a la interacción $POD_manipulate_fetters_interaction$ [character_interaction|E], permite asignar un punto de [Fetter|E] gratuito a unos [Fetters|E] ya existentes.\nDesbloquea la interacción $POD_manipulate_fetter_interaction$ [character_interaction|E], permite crear un [Fetter|E] temporal.\n#F Un Monitor puede crear un [Fetter|E] temporal.#!"
+ STRAND_CHANNEL_PERK_EFFECT: "Permite interactuar con tus [Fetters|E] desde cualquier lugar de la [umbra|E].\n#F Un Monitor puede hablar a través de una [Fetter|E], o usar sus Arcanos a través de una [Fetter|E].#!"
+ SPLICE_STRAND_PERK_EFFECT: "Bono a la interacción $POD_manipulate_fetters_interaction$ [character_interaction|E], permite asignar un punto de [Fetter|E] gratuito a unas [Fetters|E] ya existentes.\nDesbloquea la interacción $POD_manipulate_fetter_interaction$ [character_interaction|E], permite crear una [Fetter|E] temporal.\n#F Un Monitor puede crear una [Fetter|E] temporal.#!"
  EARLY_WARNING_PERK_EFFECT: "Recibirás una notificación cuando tus [Fetters|E] vayan a morir por causas naturales.\n#F Un Monitor puede marcar a un mortal para que le alerte si el Quick está a punto de morir.#!"
- SEVER_STRAND_PERK_EFFECT: "Bono a la interacción $POD_manipulate_fetters_interaction$ [character_interaction|E], permite disminuir el nivel de un [Fetter|E] así como destruir [Fetters|E] de nivel 1.\n#F Un Monitor puede despojar de su [Fetter|E] a otro wraith.#!"
- WALK_THE_WEB_PERK_EFFECT: "Como [character_interaction|E], te permite teletransportarte a la ubicación de un [Fetter|E].\n#F Un Monitor puede viajar rápidamente hasta un [Fetter|E].#!"
- SOULS_INTERWOVEN_PERK_EFFECT: "Desbloquea la interacción $POD_sprout_fetter_seed_character_interaction$ [character_interaction|E] para plantar una semilla de [Fetter|E] en [GetTrait('mortal').GetName(GetNullCharacter)].\n#F Un Monitor puede tomar a un mortal dispuesto (o a un sobrenatural vivo/no-muerto) como un [Fetter|E], y a cambio este puede comunicarse con el Monitor cuando quiera, independientemente de dónde se encuentre cualquiera de los dos.#!"
+ SEVER_STRAND_PERK_EFFECT: "Bono a la interacción $POD_manipulate_fetters_interaction$ [character_interaction|E], permite disminuir el nivel de una [Fetter|E] así como destruir [Fetters|E] de nivel 1.\n#F Un Monitor puede despojar de su [Fetter|E] a otro wraith.#!"
+ WALK_THE_WEB_PERK_EFFECT: "Como [character_interaction|E], te permite teletransportarte a la ubicación de una [Fetter|E].\n#F Un Monitor puede viajar rápidamente hasta una [Fetter|E].#!"
+ SOULS_INTERWOVEN_PERK_EFFECT: "Desbloquea la interacción $POD_sprout_fetter_seed_character_interaction$ [character_interaction|E] para plantar una semilla de [Fetter|E] en [GetTrait('mortal').GetName(GetNullCharacter)].\n#F Un Monitor puede tomar a un mortal dispuesto (o a un sobrenatural vivo/no-muerto) como una [Fetter|E], y a cambio este puede comunicarse con el Monitor cuando quiera, independientemente de dónde se encuentre cualquiera de los dos.#!"
  
  # Moliate
  moliate_visible: "Moliate"
@@ -523,8 +523,8 @@
  CALCIFY_PERK_EFFECT: "#F Un Masquer puede usar esto para endurecer el plasm en una forma más duradera.#!"
  ARMORY_PERK_EFFECT: "Desbloquea las opciones de Cambio de Forma [GetModifier('POD_shapeshift_form_limb_weapon_modifier').GetNameWithTooltip] y [GetModifier('POD_shapeshift_form_skin_armor_modifier').GetNameWithTooltip].\n#F Un Masquer puede transformar temporalmente sus extremidades en armas cuerpo a cuerpo, o su piel en armadura.#!"
  VOLLEY_PERK_EFFECT: "#F Un Masquer puede dar forma y lanzar proyectiles para defenderse.#!"
- REND_PERK_EFFECT: "Hiere a los [knights|E] enemigos cuando actúes como [commander|E] durante la [combat_phase|E], o a tu oponente durante un [single_combat_duel_plural|E].\n#F Un Masquer puede despedazar el [Corpus|E] de otro wraith.#!"
- BODYSHAPE_PERK_EFFECT: "Como [character_interaction|E], te permite modificar tus propios [physical_trait|E].\n#F Un Masquer puede alterar su [Corpus|E] a lo que desee.#!"
+ REND_PERK_EFFECT: "Hiere a los [knights|E] enemigos cuando actúes como [commander|E] durante la [combat_phase|E], o a tu oponente durante unos [single_combat_duel_plural|E].\n#F Un Masquer puede despedazar el [Corpus|E] de otro wraith.#!"
+ BODYSHAPE_PERK_EFFECT: "Como [character_interaction|E], te permite modificar tu propio [physical_trait|E].\n#F Un Masquer puede alterar su [Corpus|E] a lo que desee.#!"
  
  # Outrage
  outrage_visible: "Outrage" 
@@ -562,9 +562,9 @@
 
  WEIRDNESS_PERK_EFFECT: "Desbloquea Morada [character_interaction|E], que otorga al objetivo un modificador negativo.\n#F Un habitante puede causar un efecto pequeño y limitado en un objetivo solitario.#!"
  BITE_ME_PERK_EFFECT: "#F Un habitante puede crear comida de aspecto realista (pero de sabor asqueroso) con su [Corpus|E].#!"
- DARK_ETHER_PERK_EFFECT: "Otorga [GetModifier('dark_ether_modifier').GetNameWithTooltip] [modifier|E] a los [knights|E] enemigos cuando actúes como [commander|E] durante la [combat_phase|E], o a tu oponente durante un [single_combat_duel_plural|E].\n#F Un habitante puede alterar las condiciones de luz o el clima en un área.#!"
+ DARK_ETHER_PERK_EFFECT: "Otorga [GetModifier('dark_ether_modifier').GetNameWithTooltip] [modifier|E] a los [knights|E] enemigos cuando actúes como [commander|E] durante la [combat_phase|E], o a tu oponente durante unos [single_combat_duel_plural|E].\n#F Un habitante puede alterar las condiciones de luz o el clima en un área.#!"
  ESCHERS_STAIR_PERK_EFFECT: "Como [character_interaction|E], te permite teletransportar a tu ejército a la ubicación de tu objetivo, con el riesgo de perderse en el [UmbraGlossary('pod_realm_labyrinth')].\n#F Un habitante puede vincular dos puertas u otros portales a través del [UmbraGlossary('pod_realm_labyrinth')].#!"
- FOUL_HUMOUR_PERK_EFFECT: "Otorga a los [knights|E] aliados cuando actúes como [commander|E] durante la [combat_phase|E], o a ti mismo durante un [single_combat_duel_plural|E], [GetModifier('foul_humour_modifier').GetNameWithTooltip] [modifier|E] cuando actúes como [commander|E] durante la [combat_phase|E].\n#F Un espectro puede producir un efecto material y fuerte a través del Manto.#!"
+ FOUL_HUMOUR_PERK_EFFECT: "Otorga a los [knights|E] aliados cuando actúes como [commander|E] durante la [combat_phase|E], o a ti mismo durante unos [single_combat_duel_plural|E], [GetModifier('foul_humour_modifier').GetNameWithTooltip] [modifier|E] cuando actúes como [commander|E] durante la [combat_phase|E].\n#F Un espectro puede producir un efecto material y fuerte a través del Manto.#!"
  STIGMATA_PERK_EFFECT: "#F Un habitante puede crear la apariencia de heridas sangrantes en su objetivo.#!"
  FORM_OF_CHAOS_PERK_EFFECT: "Permite fabricar un personaje [GetTrait('automaton').GetName( GetPlayer )].\n#F Un habitante puede crear una forma humanoide tosca a partir de lo que parecen ser objetos asquerosos (como sangre, gusanos, insectos, etc.).#!"
  TEMPUS_FUGIT_PERK_EFFECT: "Otorga [GetModifier('tempus_fugit_modifier').GetNameWithTooltip] [modifier|E] a los [commanders|E] aliados cuando actúes como [commander|E] durante la [combat_phase|E].\n#F Un habitante puede manipular la distancia y el tiempo de forma limitada.#!"
@@ -651,7 +651,7 @@
  
  SPECTRE_PRESTIGE_PERK_EFFECT: "Durante la Catarsis, obtienes [GetModifier('spectre_prestige_modifier').GetNameWithTooltip].\n#F La Sombra es respetada por los Espectros y acudirán en ayuda del wraith durante la Catarsis.#!"
  DARK_ALLIES_PERK_EFFECT: "Durante la Catarsis, obtienes [GetModifier('dark_allies_modifier').GetNameWithTooltip].\n#F La Sombra del personaje se comunica regularmente con Espectros específicos y puede llamarlos para pedirles ayuda.#!"
- TAINTED_RELIC_PERK_EFFECT: "Aumenta el coste de [static_stress|E] por mantener un [Fetter|E] en la Catarsis.\n#F La Sombra posee una reliquia importante que se manifiesta cuando toma el control: un arma o algún otro objeto útil.#!"
+ TAINTED_RELIC_PERK_EFFECT: "Aumenta el coste de [static_stress|E] por mantener una [Fetter|E] en la Catarsis.\n#F La Sombra posee una reliquia importante que se manifiesta cuando toma el control: un arma o algún otro objeto útil.#!"
  INFAMY_PERK_EFFECT: "Durante la Catarsis, obtienes [GetModifier('infamy_modifier').GetNameWithTooltip].\n#F Como memoria para la Sombra, la Infamia es la medida de cuánto miedo y odio inspira el wraith aún en los vivos.#!"
  DEATHS_SIGIL_PERK_EFFECT: "Cada 5 años, un 25 % de probabilidad de obtener [GetModifier('deaths_sigil_modifier').GetNameWithTooltip].\n#F El Sigilo de la Muerte es una señal prominente del toque del [UmbraGlossary('oblivion')] en el personaje, que se manifiesta sin importar a dónde vaya.#!"
  SHADOW_TRAITS_PERK_EFFECT: "Disminuye la probabilidad de éxito al recuperar el control sobre tu Sombra.\n#F La Sombra puede comprar Habilidades, pero estas Habilidades extra solo están disponibles durante la Catarsis.#!"
@@ -706,7 +706,7 @@
  adrestias_communion_perk_name: "Comunión de Adrestia"
  
  THE_GLEAMING_PERK_EFFECT: "Como [character_interaction|E], haz que el artefacto del objetivo elegido gane el modificador [GetModifier('intimation_the_gleaming_modifier').GetNameWithTooltip].\n#F Un Solicitor puede hacer que un objeto parezca más deseable de lo que realmente es.#!"
- ARCANOI_KNOW_THYSELF_PERK_EFFECT: "Inmune a las [character_interaction|E] mentales hostiles.\n#F Un Solicitor puede resistir el intento de otro de usar Insinuación, y también puede resistir Castigar y Contaminación hasta cierto punto.#!"
+ ARCANOI_KNOW_THYSELF_PERK_EFFECT: "Inmune a la [character_interaction|E] mental hostil.\n#F Un Solicitor puede resistir el intento de otro de usar Insinuación, y también puede resistir Castigar y Contaminación hasta cierto punto.#!"
  LAUNCH_A_THOUSAND_SHIPS_PERK_EFFECT: "#F Un Solicitor puede convertirse en un objeto de deseo.#!"
  UNFOLD_THE_ANIMAL_HEART_PERK_EFFECT: "#F Un Solicitor puede leer todos los deseos y sueños más profundos de un wraith.#!"
  APPLE_OF_DISCORD_PERK_EFFECT: "Mejora la [character_interaction] de [GetPerk('the_gleaming_perk').GetName(GetPlayer)], sustituyendo el modificador [GetModifier('intimation_the_gleaming_modifier').GetNameWithTooltip] por el modificador [GetModifier('intimation_apple_of_discord_modifier').GetNameWithTooltip].\n#F Un Solicitor puede hacer que un objeto sea tan deseable que cualquiera que lo vea se obsesione con él.#!"
@@ -799,8 +799,8 @@
  RETURNING_THE_FAVOR_PERK_EFFECT: "Como [character_interaction|E], te permite obtener [dynasty_prestige|E] del pathos.\n#F Un Mercader puede enviar Pathos a un pariente vivo.#!"
  MINT_MONEY_PERK_EFFECT: "Como [character_interaction|E], te permite obtener oro del pathos.\n#F Un Mercader puede convertir su Pathos en forma física, como fichas, monedas o papel moneda.#!"
  ARCANOI_COAX_PERK_EFFECT: "Ya no obtienes [stress|E] al Resistir la Catarsis.\n#F Un Médico puede recurrir a su [GetTrait('shadow').GetName( GetPlayer )] con un riesgo reducido.#!"
- NULLIFY_THORNS_PERK_EFFECT: "Pequeña probabilidad de no recibir Pasión Oscura y pequeña probabilidad de no recibir el [decision|E] Desafío del Diablo.\n#F Un Médico puede evitar que su [GetTrait('shadow').GetName( GetPlayer )] use una de sus Espinas.#!"
- GIVE_HIGHER_PASSIONS_PERK_EFFECT: "Como [character_interaction|E], permite eliminar una Pasión Oscura [decision|E].\n#F Un Médico puede intentar reemplazar la Pasión Oscura de un [GetTrait('shadow').GetName( GetPlayer )] con una de sus propias Pasiones.#!"
+ NULLIFY_THORNS_PERK_EFFECT: "Pequeña probabilidad de no recibir Pasión Oscura y pequeña probabilidad de no recibir la [decision|E] Desafío del Diablo.\n#F Un Médico puede evitar que su [GetTrait('shadow').GetName( GetPlayer )] use una de sus Espinas.#!"
+ GIVE_HIGHER_PASSIONS_PERK_EFFECT: "Como [character_interaction|E], permite eliminar una Pasión Oscura [decision|E].\n#F Un Médico puede intentar reemplazar la Pasión Oscura de una [GetTrait('shadow').GetName( GetPlayer )] con una de sus propias Pasiones.#!"
  ALTER_DEMEANOR_PERK_EFFECT: "Como [character_interaction|E], permite recuperar tu personalidad Hun durante la Catarsis.\n#F Un Médico puede alterar el Arquetipo de su [GetTrait('shadow').GetName( GetPlayer )], incluyendo tanto los regulares como los basados en la Sombra.#!"
  INNER_PEACE_PERK_EFFECT: "Obtén acceso al modificador de Espina incluso sin Catarsis.\n#F Un Médico puede unirse a su [GetTrait('shadow').GetName( GetPlayer )] y actuar como uno solo.#!"
  
@@ -847,7 +847,7 @@
  LURID_VISIONS_PERK_EFFECT: "#F Un Espectro puede crear visiones breves y violentas en el objetivo al que está habitando mediante Skinriding.#!"
  UNBIDDEN_HANDS_PERK_EFFECT: "#F Un Espectro puede obligar a un cuerpo a realizar una acción mientras el objetivo está distraído.#!"
  URGES_PERK_EFFECT: "#F Esto permite a un Espectro superar la Fuerza de Voluntad de un objetivo y obligarlo a realizar una acción.#!"
- FETTER_RAPE_PERK_EFFECT: "Permite convertir a un [GetTrait('wraith').GetName( GetNullCharacter )] en un [GetTrait('risen').GetName( GetPlayer )].\n#F Un Espectro puede corromper los fragmentos de alma que quedan en un [Fetter|E] muerto para convertirlos brevemente en un [GetTrait('risen').GetName( GetPlayer )].#!"
+ FETTER_RAPE_PERK_EFFECT: "Permite convertir a un [GetTrait('wraith').GetName( GetNullCharacter )] en un [GetTrait('risen').GetName( GetPlayer )].\n#F Un Espectro puede corromper los fragmentos de alma que quedan en una [Fetter|E] muerta para convertirlos brevemente en un [GetTrait('risen').GetName( GetPlayer )].#!"
  BLISSFUL_UNITY_PERK_EFFECT: "#F El Espectro se convierte en la entidad dominante en un alma sin aniquilarla.#!"
  
  # False Life
@@ -1003,7 +1003,7 @@
  
  FORTUITOUS_WANDERING_PERK_EFFECT: "En cada pulso de pasión, tiene un 10 % de probabilidad de activarse de nuevo.\n#F Un Resurgido puede descubrir pistas que le guíen hacia una de sus Pasiones.#!"
  FLASHBACK_PERK_EFFECT: "#F Un Resurgido puede conjurar una imagen de algo importante que haya ocurrido cerca o con uno de sus [Fetters|E].#!"
- THE_FACE_IN_THE_CROWD_PERK_EFFECT: "Mejora la [perk|E] de [GetPerk('fortuitous_wandering_perk').GetName(GetPlayer)], cambiando la probabilidad de activarse de nuevo del 10 % al 20 %\n#F Un Resurgido puede saber si una persona está conectada con una de sus Pasiones o [Fetters|E].#!"
+ THE_FACE_IN_THE_CROWD_PERK_EFFECT: "Mejora el [perk|E] de [GetPerk('fortuitous_wandering_perk').GetName(GetPlayer)], cambiando la probabilidad de activarse de nuevo del 10 % al 20 %\n#F Un Resurgido puede saber si una persona está conectada con una de sus Pasiones o [Fetters|E].#!"
  FORTUITOUS_MEETING_PERK_EFFECT: "Aceptación para invitar a [court|E]: #P +20#!\n#F Un Resurgido puede retorcer el Destino para permitirle conocer a alguien con quien quiera hablar o visitar.#!"
  THE_COINCIDENTAL_GATHERING_PERK_EFFECT: "Aceptación para invitar a [court|E]: #P +40#!\n#F Un Resurgido puede reunir a varias personas en un encuentro «coincidente».#!"
  
@@ -1044,7 +1044,7 @@
  ENGAGEMENT_PERK_EFFECT: "#F La mente de un Baka puede ser manipulada mediante sugerencias sutiles.#!"
  RENFORCER_LES_CHAVEAUX_PERK_EFFECT: "#F Un Serviteur puede otorgar temporalmente a un mortal cualquier Arcano que posea y que afecte a las [Glossary('Tierras de Piel','game_concept_skinlands_desc')], así como Potencia, Celeridad o Fortaleza.#!"
  RELER_MYSTERE_PERK_EFFECT: "#F Un Loa puede acceder a la vasta red de información custodiada por Les Mysteres.#!"
- RETIRER_DEN_BAS_DE_LEAU_PERK_EFFECT: "#F Un Serviteur puede crear un nuevo [Fetter|E] permanente en conjunción con un houngan mortal.#!"
+ RETIRER_DEN_BAS_DE_LEAU_PERK_EFFECT: "#F Un Serviteur puede crear una nueva [Fetter|E] permanente en conjunción con un houngan mortal.#!"
  MARRER_BAKA_PERK_EFFECT: "No perderá la vinculación de un [GetTrait('wraith').GetName( GetNullCharacter )] vinculado cuando se convierta en [GetTrait('spectre').GetName( GetNullCharacter )].\n#F Un Serviteur puede capturar y controlar a un Baka solo mediante la voluntad.#!"
  BONTE_ABYSSALE_PERK_EFFECT: "Ganas acceso a un eco aleatorio de un artefacto histórico cada #V 3#! años.\n#F Un Serviteur forma un pacto con Les Mysteres que le permite invocar una Reliquia o un Artefacto de la Isla Bajo el Mar.#!"
 

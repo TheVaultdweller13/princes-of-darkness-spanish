@@ -13,7 +13,8 @@ Solo librería estándar. Ejecutar desde cualquier sitio: python tools/pod.py <o
                              Crea lotes para el agente traductor en work_queue/todo (y autocompleta con memoria de traducción).
   next [--prefix U|B|R|N]    Muestra el siguiente lote pendiente (lo que tiene que hacer el agente).
   apply [LOTE ...|--all]     Valida las salidas de work_queue/out y las escribe en spanish/.
-  check [--files GLOB]       Informe de problemas (tokens, glosario, espacios, ¿¡, Custom ES_...).
+  check [--files GLOB]       Informe de problemas (tokens, glosario, espacios, ¿¡, Custom ES_...,
+                             concordancia de artículos con lo que muestran las variables).
   build [--version X] [--no-sync-supported]
                              Regenera mod/localization/spanish para publicar.
   fix [--dry-run] [--dirty] [--files GLOB]
@@ -726,6 +727,12 @@ def write_batch(name, mode, items, gloss, rule=""):
         body.append("# GLOSARIO OBLIGATORIO (inglés = español):")
         for r in g:
             body.append(f"#   {r['en']} = {r['es']}" + (f"   ({r['note']})" if r["note"] else ""))
+    if mode in ("pending", "review"):
+        vars_ = concord_hints([i["en"] for i in items] + [i.get("es", "") for i in items])
+        if vars_:
+            body.append("# CÓMO SE VEN LAS VARIABLES EN EL JUEGO (artículos y adjetivos deben concordar):")
+            for tok, texto, gn in vars_[:25]:
+                body.append(f"#   {tok} = «{texto}» ({gn})")
     index = {}
     cur = None
     for n, it in enumerate(items, 1):
@@ -1014,6 +1021,271 @@ def _apply(a):
                 print(f"   → {len(manual)} para revisión manual en {mf.relative_to(ROOT).as_posix()}")
 
 
+# ---------------------------------------------------------------- concordancia con variables
+
+# Una variable del juego ($pod_clan$, [trait|E], [Glossary('X',…)], [GetTrait('x').GetName(…)],
+# [UmbraGlossary('x')]…) se ve en el juego como una palabra con su género y número; el artículo
+# o el adjetivo que la acompaña está escrito a mano y tiene que concordar con ella.
+# Determinante → (género, número); None = vale para los dos.
+DETERMINANTES = {}
+for _g, _formas in (("m", "el un del al este ese aquel nuestro vuestro otro ningún algún todo mucho poco cuyo dicho mismo propio primer"),
+                    ("f", "la una esta esa aquella nuestra vuestra otra ninguna alguna toda mucha poca cuya dicha misma propia primera")):
+    for _w in _formas.split():
+        DETERMINANTES[_w] = (_g, "s")
+for _g, _formas in (("m", "los unos estos esos aquellos nuestros vuestros otros algunos todos muchos pocos cuyos dichos mismos propios"),
+                    ("f", "las unas estas esas aquellas nuestras vuestras otras algunas todas muchas pocas cuyas dichas mismas propias")):
+    for _w in _formas.split():
+        DETERMINANTES[_w] = (_g, "p")
+DETERMINANTES.update({"su": (None, "s"), "sus": (None, "p"), "mi": (None, "s"), "mis": (None, "p"),
+                      "tu": (None, "s"), "tus": (None, "p")})
+# Formas masculinas que también van con femeninos que empiezan por a- tónica (el alma, un ansia)
+DET_A_TONICA = {"el", "un", "del", "al", "algún", "ningún"}
+# Adjetivos que van delante del nombre («un nuevo [X]»); con cualquier otra palabra en medio
+# («la raza $pod_cainite$») la variable hace de adjetivo y no se comprueba
+PRENOMINALES = set("""nuevo nueva nuevos nuevas antiguo antigua antiguos antiguas viejo vieja viejos viejas
+    poderoso poderosa poderosos poderosas único única únicos únicas verdadero verdadera verdaderos verdaderas
+    pequeño pequeña pequeños pequeñas joven jóvenes segundo segunda tercer tercero tercera último última
+    últimos últimas próximo próxima próximos próximas auténtico auténtica temible terrible supuesto supuesta
+    buen buena buenos buenas mal mala malos malas""".split())
+GENERO_TXT = {"m": "masculino", "f": "femenino"}
+NUMERO_TXT = {"s": "singular", "p": "plural"}
+# Variable resoluble: $clave$, [concepto|E], funciones con texto o con clave conocida
+VAR_RE = re.compile(r"\$([A-Za-z_][\w.]*)(?:\|\w+)?\$"
+                    r"|\[(?:Concept|Glossary|UmbraGlossaryLocalized)\('[^']*'\s*,\s*'[^']*'\)(?:\|\w+)?\]"
+                    r"|\[UmbraGlossary\('\w+'\)(?:\|\w+)?\]"
+                    r"|\[GetTrait\('\w+'\)\.GetName\([^\]]*\)(?:\|\w+)?\]"
+                    r"|\[[A-Za-z_]\w*(?:\|\w+)?\]")
+# Las dos palabras justo antes de la variable: «la [X]» o «la antigua [X]»
+ANTES_RE = re.compile(r"(?:(?<![\wáéíóúñü])([A-Za-zÁÉÍÓÚÑáéíóúñü]+) )?(?<![\wáéíóúñü])([A-Za-zÁÉÍÓÚÑáéíóúñü]+) $")
+_es_terms = None
+_generos = None
+
+
+def vanilla_loc_dir():
+    if CFG.get("vanilla_loc"):
+        return Path(CFG["vanilla_loc"])
+    return Path(CFG["vanilla_custom_loc"]).parent.parent / "localization" / "spanish"
+
+
+def es_terms():
+    """{clave: texto español} de todo lo que puede verse a través de una variable: las claves
+    de spanish/ ya traducidas y, del juego base, los conceptos y rasgos (con copia en work_queue/
+    por si el juego no está accesible)."""
+    global _es_terms
+    if _es_terms is not None:
+        return _es_terms
+    base = {}
+    cache = Q / ".vanilla_es_terms.json"
+    d = vanilla_loc_dir()
+    if d.is_dir():
+        pat = re.compile(r'^\s*((?:game_concept_|trait_)[\w.]+):\d*\s*"(.*)"\s*(?:#.*)?$', re.M)
+        for f in d.rglob("*.yml"):
+            base.update(pat.findall(f.read_text(encoding="utf-8-sig", errors="replace")))
+        try:
+            Q.mkdir(parents=True, exist_ok=True)
+            cache.write_text(json.dumps(base, ensure_ascii=False), encoding="utf-8")
+        except OSError:
+            pass
+    elif cache.exists():
+        base = json.loads(cache.read_text(encoding="utf-8"))
+    for p in ES_DIR.rglob("*.yml"):
+        loc = Loc(p)
+        if loc.header == "l_spanish":
+            base.update((l["key"], l["value"]) for l in loc.kvs())
+    _es_terms = base
+    return base
+
+
+def var_text(tok, depth=0):
+    """Texto español que muestra el juego en lugar de la variable, o None si no se sabe."""
+    t = es_terms()
+    m = re.match(r"\$([A-Za-z_][\w.]*)(?:\|\w+)?\$$", tok)
+    if m:
+        v = t.get(m.group(1))
+        return render_vars(v, depth + 1) if v is not None else None
+    m = TWO_ARG_RE.match(tok)
+    if m and m.group(1) in DISPLAY_ARG:
+        return m.group(2 + DISPLAY_ARG[m.group(1)])
+    m = re.match(r"\[UmbraGlossary\('(\w+)'\)", tok)
+    if m:
+        v = t.get("umbra_realm_" + m.group(1))
+        return render_vars(v, depth + 1) if v is not None else None
+    m = re.match(r"\[GetTrait\('(\w+)'\)\.GetName", tok)
+    if m:
+        v = t.get("trait_" + m.group(1))
+        return render_vars(v, depth + 1) if v is not None else None
+    m = re.match(r"\[([A-Za-z_]\w*)(?:\|\w+)?\]$", tok)
+    if m:
+        v = t.get("game_concept_" + m.group(1), t.get("game_concept_" + m.group(1).lower()))
+        return render_vars(v, depth + 1) if v is not None else None
+    return None
+
+
+def render_vars(s, depth=0):
+    """Sustituye las variables de un texto por lo que se ve en el juego (None si alguna no se sabe)."""
+    if depth > 5:
+        return None
+    out, fallo = [], False
+
+    def sub(m):
+        nonlocal fallo
+        tok = m.group(0)
+        if tok.startswith("[") or tok.startswith("$"):
+            v = var_text(tok, depth)
+            if v is None:
+                fallo = True
+                return " "
+            return v
+        return " "  # formato, iconos, saltos de línea
+    r = TOKEN_RE.sub(sub, s)
+    return None if fallo else re.sub(r"\s+", " ", r).strip()
+
+
+def a_tonica(w):
+    """Femeninos que llevan «el»/«un» en singular: alma, ansia, águila, hacha…"""
+    w = w.lower()
+    if re.match(r"h?á", w):
+        return True
+    return bool(re.match(r"h?a[^aeiouáéíóú]*[aeiou]s?$|h?a[^aeiouáéíóú]*[iu][aeo]s?$", w))
+
+
+def genero_morfologia(w):
+    """Género por la terminación, solo donde no admite dudas (con lo demás manda el uso)."""
+    sing = re.sub(r"(?<=[dnrz])es$|s$", "", w.lower())
+    if re.search(r"(ción|sión|dad|tud|umbre)$", sing):
+        return "f"
+    if re.search(r"(miento|aje|ismo)$", sing):
+        return "m"
+    return None
+
+
+def generos_corpus():
+    """{palabra en minúsculas: Counter((género, número))} según los determinantes que llevan
+    delante en el texto español ya traducido (sin contar variables: es lo que se comprueba)."""
+    global _generos
+    if _generos is not None:
+        return _generos
+    cnt = defaultdict(Counter)
+    pat = re.compile(r"(?<![\wáéíóúñ])(" + "|".join(sorted(DETERMINANTES, key=len, reverse=True))
+                     + r") ([A-Za-zÁÉÍÓÚÑáéíóúñü-]+)", re.I)
+    for p in ES_DIR.rglob("*.yml"):
+        loc = Loc(p)
+        if loc.header != "l_spanish":
+            continue
+        for l in loc.kvs():
+            for m in pat.finditer(TOKEN_RE.sub(" | ", l["value"])):
+                det, w = m.group(1).lower(), m.group(2).lower()
+                g, n = DETERMINANTES[det]
+                if det in DET_A_TONICA and a_tonica(w):
+                    g = None  # «el alma», «el Anda»: no dice nada del género
+                cnt[w][(g, n)] += 1
+    _generos = cnt
+    return cnt
+
+
+def genero_de(w):
+    """(género, número) de la palabra, None donde no hay certeza. Primero lo que diga config.json
+    en «concord_overrides» (género m/f/- y número s/p/-: {"Kuei-Jin": "--", "Dharma": "ms"}),
+    luego el uso de la palabra en el texto ya traducido y, sin uso, la terminación."""
+    ov = {k.lower(): v for k, v in CFG.get("concord_overrides", {}).items()}
+    if w.lower() in ov:
+        v = ov[w.lower()]
+        return (v[0] if v[:1] in ("m", "f") else None), (v[1] if v[1:2] in ("s", "p") else None)
+    epiceno = re.search(r"(ista|ita|ígena|cida)s?$", w.lower())  # «el/la Cainita», «el/la herborista»
+    mg = genero_morfologia(w)
+    usos = generos_corpus().get(w.lower(), Counter())
+    g, n = Counter(), Counter()
+    for (ug, un), k in usos.items():
+        if ug:
+            g[ug] += k
+        n[un] += k
+
+    def decide(c, morf):
+        tot = sum(c.values())
+        if not tot:
+            return morf
+        (top, k), resto = c.most_common(1)[0], tot - c.most_common(1)[0][1]
+        if not morf and not re.search(r"[oa]s?$", w.lower()):
+            # sin terminación de género (Penangallan, Arhat, Don): solo con uso abundante y unánime
+            return top if tot >= 5 and not resto else None
+        if tot < 3:
+            return top if not resto and morf in (None, top) else None
+        # se usa de las dos maneras: epiceno (el/la Tremere) o invariable (el/los Anda)
+        return None if resto >= 2 and resto / tot >= 0.05 else top
+    if w.lower().endswith("s") and not w.lower().endswith("ss"):
+        # «los duelos» sí, pero «el cantacuentos», «todo Malfeas»: plural solo si se usa como plural y nunca como singular
+        num = "p" if n["p"] and not n["s"] else None
+    else:
+        # sin -s nunca es plural en castellano; «los Anda», «los Shih»: invariables
+        num = "s" if n["s"] and not n["p"] else None
+    return (None if epiceno else decide(g, mg)), num
+
+
+def concord_issues(es):
+    """Avisos de artículos o adjetivos que no concuerdan con la palabra que muestra una variable."""
+    out = []
+    for m in VAR_RE.finditer(es):
+        ant = ANTES_RE.search(es[: m.start()])
+        if not ant:
+            continue
+        det, adj = ant.group(2), None
+        if det.lower() not in DETERMINANTES:
+            det, adj = ant.group(1), ant.group(2)
+            if not det or det.lower() not in DETERMINANTES or adj.lower() not in PRENOMINALES:
+                continue
+        dg, dn = DETERMINANTES.get(det.lower(), (None, None))
+        if dn is None:
+            continue
+        texto = var_text(m.group(0))
+        if not texto:
+            continue
+        palabras = re.findall(r"[A-Za-zÁÉÍÓÚÑáéíóúñü-]+", texto)
+        if not palabras:
+            continue
+        if palabras[0].lower() in ("el", "la", "los", "las"):
+            out.append(f"«{det} {m.group(0)}»: la variable ya lleva artículo («{texto}»)")
+            continue
+        head = palabras[1] if palabras[0].lower() in ("gran", "primer", "buen", "mal") and len(palabras) > 1 else palabras[0]
+        vg, vn = genero_de(head)
+        if vn == "s" and any(re.search(r"[^aeiouáéíóú]s$", p) and p[0].isupper() for p in palabras[1:]):
+            vn = None  # «Yama Kings», «Hundred Clouds»: texto inglés, el núcleo va al final
+        despues = es[m.end():]
+        coordinado = re.match(r"\s*(,|y |e |o |u )", despues)  # «los [X] y [Y]»: plural por la suma
+        mal = []
+        if vg and dg and dg != vg and not (dg == "m" and vg == "f" and vn != "p"
+                                           and det.lower() in DET_A_TONICA and a_tonica(head)):
+            mal.append(GENERO_TXT[vg])
+        if vn and dn != vn and not (dn == "p" and coordinado):
+            mal.append(NUMERO_TXT[vn])
+        if adj and vg and not mal and re.search(r"[oa]s?$", adj):
+            if ("f" if re.search(r"as?$", adj) else "m") != vg:
+                mal.append(GENERO_TXT[vg])
+        if mal:
+            antes = det + (" " + adj if adj else "")
+            out.append(f"«{antes} {m.group(0)}»: se ve «{texto}» ({' '.join(mal)})")
+    return out
+
+
+def concord_hints(texts):
+    """Lo que muestran en el juego las variables de estos textos, con su género y número
+    (para la cabecera de los lotes). Solo las que se sabe cómo se ven."""
+    vistos, out = set(), []
+    for s in texts:
+        for m in VAR_RE.finditer(s):
+            tok = m.group(0)
+            if tok in vistos or TWO_ARG_RE.match(tok):
+                continue  # las de texto a la vista ya se leen en la propia línea
+            vistos.add(tok)
+            texto = var_text(tok)
+            palabras = re.findall(r"[A-Za-zÁÉÍÓÚÑáéíóúñü-]+", texto or "")
+            if not palabras:
+                continue
+            g, n = genero_de(palabras[0])
+            if g or n:
+                out.append((tok, texto, " ".join(x for x in (GENERO_TXT.get(g), NUMERO_TXT.get(n)) if x)))
+    return out
+
+
 # ---------------------------------------------------------------- check / revisión
 
 def check_items(files=None, only=None, keys=None):
@@ -1083,6 +1355,10 @@ def check_items(files=None, only=None, keys=None):
                 same = [d for d in display_args(sv) if d in display_args(ev) and translatable(d) and d.lower() not in keep_display]
                 if same:
                     anota(why, reglas, 'display', "texto de Glossary/Concept sin traducir: " + ", ".join(sorted(set(same))))
+            if only in (None, "concord"):
+                mal = concord_issues(sv)
+                if mal:
+                    anota(why, reglas, 'concord', "concordancia con variable: " + " · ".join(mal))
             if only in (None, "english"):
                 ps = strip_markup(sv)
                 for w in CFG["english_leftovers"]:
@@ -1405,7 +1681,7 @@ def _fix(a):
         print(f"{k}: {v}{'  (simulación)' if a.dry_run else ''}")
 
 
-RULES = ["tokens", "custom", "spaces", "punct", "glossary", "display", "english"]
+RULES = ["tokens", "custom", "spaces", "punct", "glossary", "display", "english", "concord"]
 
 # ---------------------------------------------------------------- lotes que fallan enteros
 
