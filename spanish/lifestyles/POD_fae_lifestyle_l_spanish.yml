@@ -227,7 +227,7 @@
  flicker_flash_perk_name: "Destello Fugaz"
  
  FUDDLE_PERK_EFFECT: "Como [character_interaction|E], permite otorgar [GetModifier( 'fuddle_perk_positive_modifier' ).GetNameWithTooltip|L] o [GetModifier( 'fuddle_perk_negative_modifier' ).GetNameWithTooltip|L] al objetivo.\n#F Altera una percepción existente de forma sutil, como cambiar un sonido fuerte por otro, o fingir invisibilidad bajo una cobertura de sombras.#!"
- VEILED_EYES_PERK_EFFECT: "Como [character_interaction|E], permite obtener una tregua del objetivo o detener todos los conjuros dirigidos a él.\n#F Hace que un objeto pase desapercibido; aunque no sea verdaderamente invisible, los observadores no pensarán en notar el objeto.#!"
+ VEILED_EYES_PERK_EFFECT: "Como [character_interaction|E], permite obtener una tregua del objetivo o detener todas las conjuras dirigidas a él.\n#F Hace que un objeto pase desapercibido; aunque no sea verdaderamente invisible, los observadores no pensarán en notar el objeto.#!"
  FUGUE_PERK_EFFECT: "Como [character_interaction|E], permite que un secreto conocido no pueda ser expuesto por el objetivo, eliminar una pretensión del objetivo sobre ti, o gastar un anzuelo que el objetivo posea sobre ti.\nComo [character_interaction|E], permite que un rasgo criminal vuelva a ser un secreto.\n#F Elimina un recuerdo de la mente de una persona, o hace que un momento específico destaque y oculte otros.#!"
  HAUNTED_HEART_PERK_EFFECT: "Desbloquea el [scheme|E] [GetScheme('PODsoul_bridge').GetTypeName].\n#F Evoca algún tipo de emoción fantasmagórica en un sujeto, al reavivar una emoción sentida en el pasado.#!"
  CAPTIVE_HEART_PERK_EFFECT: "Otorga [GetModifier('captive_heart_perk_commander_modifier').GetNameWithTooltip] [modifier|E] a los [commanders|E] aliados cuando actúes como [commander|E] durante la [combat_phase|E].\nOtorga [GetModifier('captive_heart_perk_knight_modifier').GetNameWithTooltip] [modifier|E] a los [knights|E] aliados cuando actúes como [commander|E] durante la [combat_phase|E] o a ti mismo durante el [single_combat_duel_plural|E].\n#F Usa la emoción como una fuerza de control, haciendo que una persona crea cosas sobre sí misma que podrían no haber sido ciertas nunca.#!"
@@ -245,7 +245,7 @@
  FAIR_IS_FOUL_FOUL_IS_FAIR_PERK_EFFECT: "Como [character_interaction|E], te permite gastar experiencia de Arte común para que el objetivo gane o pierda oro y prestigio.\n#F Interviene ligeramente en los asuntos del destino, otorgando un poco de buena suerte a un aliado o una pizca de mala suerte al enemigo.#!"
  TATTLETALE_PERK_EFFECT: "Como [character_interaction|E], te permite otorgar [GetModifier('artifact_tattletale_modifier').GetNameWithTooltip] al artefacto del objetivo.\n#F Mira el mundo desde la perspectiva de un objeto que el usuario ha encontrado en el pasado, o cuyo Nombre Verdadero conoce.#!"
  AUGURY_PERK_EFFECT: "Como [character_interaction|E], te permite tener una probabilidad de que ocurra un evento aleatorio para el objetivo.\n#F Determina un evento que ocurrirá en el futuro; pase lo que pase, ese evento se producirá, aunque la verdad sobre cómo ocurre pueda ser terriblemente inesperada.#!"
- FATE_FIRE_PERK_EFFECT: "Como [character_interaction|E], te permite aumentar el progreso de un conjura.\n#F Un encantamiento extraño y complicado; este acelera los estragos del karma, haciendo que lo que sea que le aguarda a alguien, ya sea bueno o malo, le alcance mucho más rápido de lo esperado.#!"
+ FATE_FIRE_PERK_EFFECT: "Como [character_interaction|E], te permite aumentar el progreso de una conjura.\n#F Un encantamiento extraño y complicado; este acelera los estragos del karma, haciendo que lo que sea que le aguarda a alguien, ya sea bueno o malo, le alcance mucho más rápido de lo esperado.#!"
  HOPSCOTCH_PERK_EFFECT: "#F Produce un salto imposible, ya sea hacia arriba o hacia abajo, sin sufrir daño por la colisión resultante.#!"
  QUICKSILVER_PERK_EFFECT: "#F Permite que un objeto se mueva a una velocidad increíblemente rápida.#!"
  PORTAL_PASSAGE_PERK_EFFECT: "#F Crea una apertura temporal a través de cualquier barrera, permitiendo atravesarla.#!"
@@ -277,10 +277,10 @@
  rare_arts_metamorphosis_focus_desc: "El Arte común de cambiar de forma, tamaño y apariencia."
  rare_arts_metamorphosis_focus_effect_desc: "Centrarse en Metamorfosis otorga:"
  
- rare_arts_pyretics_focus: "Enfoque en Piréticas"
+ rare_arts_pyretics_focus: "Enfoque en Pirética"
  rare_arts_pyretics_focus_modifier: "[GetFocus('rare_arts_pyretics_focus').GetName]"
  rare_arts_pyretics_focus_desc: "El peligroso Arte de la manipulación del calor y la llama."
- rare_arts_pyretics_focus_effect_desc: "Centrarse en Piréticas otorga:"
+ rare_arts_pyretics_focus_effect_desc: "Centrarse en Pirética otorga:"
  
  GAINS_RARE_ARTS_LIFESTYLE_XP: "Gana $VALUE|V0$ de experiencia de [rare_arts_lifestyle|E]"
  GAINED_RARE_ARTS_LIFESTYLE_XP: "Ganó $VALUE|V0$ de experiencia de [rare_arts_lifestyle|E]"
@@ -302,7 +302,7 @@
  full_aphrodesia_tooltip: "Has obtenido el árbol completo del Arte de Aphrodesia."
  full_kryos_tooltip: "Obtienes el árbol completo de la Arte de Kryos."
  full_metamorphosis_tooltip: "Obtienes el árbol completo de la Arte de Metamorfosis."
- full_pyretics_tooltip: "Obtienes el árbol completo de la Arte de Piréticas."
+ full_pyretics_tooltip: "Obtienes el árbol completo de la Arte de Pirética."
  
  aphrodesia_visible: "Afrodisia"
  kryos_visible: "Kryos"

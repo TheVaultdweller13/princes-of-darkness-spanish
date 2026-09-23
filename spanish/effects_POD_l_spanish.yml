@@ -1096,14 +1096,14 @@
  THE_HEART_OF_DARKNESS_PERK_EFFECT: "Como una [character_interaction|E], extráete el propio corazón y gana [GetModifier('heart_of_darkness_modifier').GetNameWithTooltip].\n#flavor El Vampiro realiza un ritual en el que se extrae su propio corazón, volviéndose menos emocional y siendo inmune a la $pod_diablerie$ y a las estacas.#!"
  COBRA_FANGS_PERK_EFFECT: "#flavor Los colmillos del vampiro se vuelven venenosos.#!"
  APOPHIS_PERK_EFFECT: "Mejora el modificador de [GetPerk('typhonic_avatar_perk').GetName(GetPlayer)] a [GetModifier('POD_shapeshift_form_apophis_modifier').GetNameWithTooltip]."
- HEART_THIEF_PERK_EFFECT: "Ahora puedes robar corazones de otros personajes mediante un conjura o de prisioneros como una simple [character_interaction|E]. Si tienes el corazón de alguien, es fácil matarlo o forzarlo al Letargo."
+ HEART_THIEF_PERK_EFFECT: "Ahora puedes robar corazones de otros personajes mediante una conjura o de prisioneros como una simple [character_interaction|E]. Si tienes el corazón de alguien, es fácil matarlo o forzarlo al Letargo."
  TEMPTATION_PERK_EFFECT: "#flavor El vampiro se vuelve extremadamente difícil de resistir.#!"
  BREATH_OF_THE_BASILISK_PERK_EFFECT: "#flavor El vampiro puede exhalar una niebla corrosiva y venenosa.#!"
  GODHEAD_PERK_EFFECT: "Como opción de [shapeshift|E], transfórmate en [GetModifier('POD_shapeshift_form_godhead_modifier').GetNameWithTooltip].\n#flavor Esta temible habilidad otorga al vampiro el manto de un dios. Mientras que la mayoría de los Setitas manifiestan este poder adoptando la cabeza de una bestia similar a los dioses egipcios, cada vampiro manifiesta la Divinidad de forma distinta. Algunos crecen un metro de altura. Otros adoptan una piel dorada y reluciente. Independientemente de la manifestación, siempre es obvia y siempre inspira asombro.#!"
 
  # Visceratika #
  
- SKINOFCHAMELEON_PERK_EFFECT: "$countermeasures_unlocks_t1_obfuscated_court$ \n Como opción de [shapeshift|E], transmuta tu piel para mimetizarte con el entorno, ofreciendo bonificaciones al conjura y a la resistencia al conjura."
+ SKINOFCHAMELEON_PERK_EFFECT: "$countermeasures_unlocks_t1_obfuscated_court$ \n Como opción de [shapeshift|E], transmuta tu piel para mimetizarte con el entorno, ofreciendo bonificaciones a la conjura y a la resistencia a la conjura."
  SCRYTHEHEARTHSTONE_PERK_EFFECT: "#flavor Conoce la ubicación de los individuos dentro de una estructura. #!"
  BONDWITHTHEMOUNTAIN_PERK_EFFECT: "#flavor Fusiónate parcialmente con la piedra. #!"
  ARMOROFTERRA_PERK_EFFECT: "#flavor Endurece tu piel para absorber el daño mucho más fácilmente. #!"
@@ -1271,7 +1271,7 @@
  HELL_BORN_INVESTITURE_PERK_EFFECT: "Como [character_interaction|E], corrompe tu alma con gran maldad para obtener acceso al [investiture_lifestyle|E] y #V 6#! puntos de [perk|E] a un coste.\n#flavor El Baali toma su lugar legítimo como un Señor del Infierno.#!"
  BRING_THE_PLAGUE_PERK_EFFECT: "Como [character_interaction|E], convoca una [GetTrait('demonic_plague').GetName(GetPlayer)] en la ubicación del objetivo.\n#flavor El Baali propaga una plaga mortal que afecta tanto a mortales como a Cainitas por igual.#!"
  THE_RE_EMBRACE_PERK_EFFECT: "Como [character_interaction|E], vuelve a dar el Abrazo a un vampiro prisionero para integrarlo en tu $pod_clan$ sin cambiar su [Glossary('Generación','game_concept_vampgeneration_desc')].\n#flavor Cuando se invoca el Re-Abrazo, el Sire toma a sus posibles chiquillos por la garganta y los desangra en cuatro cuencos inscritos con runas antiguas y demoníacas. El Sire llena entonces otros cuatro cuencos con su propia sangre, rodeando a los chiquillos con ellos de forma alternada. Mientras el iniciado yace en el suelo, sangrando y acercándose cada vez más a su Muerte Definitiva, el Sire convoca un fragmento de alma del demonio más poderoso de las Líneas de Sangre, Namtaru, y lo combina con el alma del chiquillo para corromperla y acercar su espíritu al de un Baali.#!"
- ADRAMELECHS_WRATH_PERK_EFFECT: "Desbloquea un movimiento de [single_combat_duel|E].\nWera a los [knights|E] y [commanders|E] enemigos cuando actúes como [commander|E] durante la [combat_phase|E], o a tu oponente durante [single_combat_duel_plural|E] si es un $POD_splat_vampire$.\n#flavor El Baali hace que un Cainita arda como si el mismísimo sol brillara sobre él.#!"
+ ADRAMELECHS_WRATH_PERK_EFFECT: "Desbloquea un movimiento de [single_combat_duel|E].\nHiere a los [knights|E] y [commanders|E] enemigos cuando actúes como [commander|E] durante la [combat_phase|E], o a tu oponente durante [single_combat_duel_plural|E] si es un $POD_splat_vampire$.\n#flavor El Baali hace que un Cainita arda como si el mismísimo sol brillara sobre él.#!"
  SPEW_WIDE_THE_PIT_PERK_EFFECT: "Tras morir, otorga [GetModifier('spew_wide_the_pit_modifier').GetNameWithTooltip] a todos los [counties|E] del [duchy|E] por el que moriste durante 100 años.\n#flavor El Baali se sacrifica para que uno de los Dioses Antiguos pueda entrar en el mundo.#!"
 
  # Chimerstry #
@@ -1334,7 +1334,7 @@
  
  SUNDER_PERK_EFFECT: "Como [character_interaction|E], te permite dar [GetModifier( 'endo_holyweapon_modifier' ).GetNameWithTooltip|L] al objetivo.\n#F Este poder otorga a un arma una energía propia, permitiéndole golpear con venganza sagrada cualquier cosa que toque#!"
  CENSURE_PERK_EFFECT: "#F Por medio de este poder, el inquisidor puede frustrar a una criatura para que cometa un error estúpido ridiculizándola en nombre de todo lo que es sagrado#!"
- GODS_ARMOUR_PERK_EFFECT: "Más probable recuperarse de las heridas, y menos probable recibirlas durante el viaje de Buscar Escondite [journey|E].\n#F Este perk mejora drásticamente la recuperación de las heridas sufridas en batalla#!"
+ GODS_ARMOUR_PERK_EFFECT: "Mayor probabilidad de recuperarte de las heridas, y menor probabilidad de recibirlas durante el viaje de Buscar Escondite [journey|E].\n#F Esta ventaja mejora drásticamente la recuperación de las heridas sufridas en batalla#!"
  ROD_AND_STAFF_PERK_EFFECT: "Como [character_interaction|E], permite que tus [knights|E] no puedan recibir heridas, pero tú seas más propenso a ellas en la [combat_phase|E] como [commander|E].\n#F Blandiendo este poder, el inquisidor se convierte en un baluarte sagrado contra las fuerzas del mal, evitando que cualquier daño alcance a quienes le siguen, mientras permanezca firme.#!"
  WRATH_OF_GOD_PERK_EFFECT: "Como [character_interaction|E], permite herir o matar al personaje objetivo.\n#F El inquisidor invoca la justicia del Señor en su forma más inmediata y violenta.#!"
  
@@ -1364,7 +1364,7 @@
  
  
  UMBRAL_MAP_PERK_EFFECT: ""
- DANCE_OF_ABANDON_PERK_EFFECT: "Como [character_interaction|E], permite que el objetivo abandone un conjura o incluso una guerra."
+ DANCE_OF_ABANDON_PERK_EFFECT: "Como [character_interaction|E], permite que el objetivo abandone una conjura o incluso una guerra."
  SHADOW_WALK_PERK_EFFECT: ""
  TRICKSTERS_SKIN_PERK_EFFECT: "Desbloquea una [character_interaction|E] para copiar o intercambiar la apariencia propia."
  COYOTES_MASK_PERK_EFFECT: "Como [character_interaction|E], permite otorgarte a ti mismo [GetModifier( 'extra_life_1_modifier' ).GetNameWithTooltip|L]."
@@ -1491,7 +1491,7 @@
  #Lasombra legacy#
  
  LASOMBRA_LEGACY_1_PERK_EFFECT: "#F La hija repudiada trama su venganza. Contra las sombras usará el fuego definitivo.#!"
- LASOMBRA_LEGACY_2_PERK_EFFECT: "Desbloquea un rasgo de comandante especial para cada miembro de la dinastía con educación marcial.\n#F La Reconquista de las Sombras tendrá éxito, pero su vencedor definitivo podría no ser el más obvio.#!"
+ LASOMBRA_LEGACY_2_PERK_EFFECT: "Desbloquea un rasgo de comandante especial para cada miembro de la dinastía con educación marcial.\n#F La Reconquista en la Sombra tendrá éxito, pero su vencedor definitivo podría no ser el más obvio.#!"
  LASOMBRA_LEGACY_3_PERK_EFFECT: "#F Verdaderamente, el Más Misericordioso trasciende incluso la muerte.#!"
  LASOMBRA_LEGACY_4_PERK_EFFECT: "#F Cada Lasombra siente el llamado del mar, para ser parte de la sombra más profunda que existe en lo más profundo de todo.#!"
  LASOMBRA_LEGACY_5_PERK_EFFECT: "#F Constantinopla tuvo su amarga venganza mientras Venecia ardía con ella.#!"
@@ -1593,9 +1593,9 @@
  
  # KJ legacy #
  
- FUXI_LEGACY_PERK_EFFECT: "#F Fuxi, el primero de los Tres Soberanos, enseñó a su pueblo a pescar y cazar, cómo criar ganado y gusanos de seda y cómo construir viviendas permanentes. Fuxi también creó los ocho trigramas utilizados para la adivinación con el I Ching#!"
- SHENNONG_LEGACY_PERK_EFFECT: "#F Shennong, el segundo de los Tres Soberanos, mostró a su pueblo el arado y el tejido y cómo dejar las ofrendas adecuadas para los poderes del Cielo. Shennong fue también el primer médico#!"
- HUANGTI_LEGACY_PERK_EFFECT: "#F Huang-ti fue el tercero de los Tres Soberanos. Fue el primer alquimista y el primer constructor de barcos. También desarrolló armaduras y los primeros ejércitos para suprimir a las tribus bárbaras que amenazaban a su pueblo#!" 
+ FUXI_LEGACY_PERK_EFFECT: "#F Fuxi, el primero de los Tres Soberanos, enseñó a su pueblo a pescar y cazar, cómo criar ganado y gusanos de seda y cómo construir viviendas permanentes. Fuxi también creó los ocho trigramas utilizados para la adivinación con el I Ching.#!"
+ SHENNONG_LEGACY_PERK_EFFECT: "#F Shennong, el segundo de los Tres Soberanos, mostró a su pueblo el arado y el tejido y cómo dejar las ofrendas adecuadas para los poderes del Cielo. Shennong fue también el primer médico.#!"
+ HUANGTI_LEGACY_PERK_EFFECT: "#F Huang-ti fue el tercero de los Tres Soberanos. Fue el primer alquimista y el primer constructor de barcos. También desarrolló armaduras y los primeros ejércitos para suprimir a las tribus bárbaras que amenazaban a su pueblo.#!" 
  
  # Misc tooltip #
  NEEDS_DISCIPLINE_TEXT: "@warning_icon!#X Requiere el [trait|E] base de $pod_discipline$ para comprar ventajas en este árbol#!"
@@ -1789,7 +1789,7 @@
  RED_FORGE_PERK_TEXT: "#flavor Santifica el proceso de forja de un arma para producir armamento bendecido.#!"
  SISTERS_LUX_PERK_TEXT: "$countermeasures_unlocks_t1_supernatural_high_alert$ \n #flavor Haciendo eco de las palabras del Padre, el inquisidor proclama: «¡Que se haga la luz!» y un suave nimbo de luz blanca aparece a su alrededor, iluminando a las criaturas sobrenaturales tal como son.#!"
  SISTERS_HOSANNA_PERK_TEXT: "Desbloquea un movimiento de duelo.\n#flavor Los Inquisidores usan este poder para capturar la «longitud de onda» espiritual del Canto del Cielo, usando su poder para fomentar la Gloria de Dios.#!"
- SISTERS_ORATORIO_PERK_TEXT: "Desbloquea un movimiento de duelo.\n#flavor Permite a la Hermana alzar la voz en un canto y llenar a los oyentes con la brillante radiancia de su fe, lo cual es una experiencia devastadora para los esclavos del pecado. #!"
+ SISTERS_ORATORIO_PERK_TEXT: "Desbloquea un movimiento de duelo.\n#flavor Permite a la Hermana alzar la voz en un canto y llenar a los oyentes con el brillante resplandor de su fe, lo cual es una experiencia devastadora para los esclavos del pecado. #!"
  MURNAU_KNOWLEDGE_PERK_TEXT: "$countermeasures_unlocks_t1_supernatural_high_alert$ \n #flavor La familia Von Murnau ha sido plagada (o bendecida) con una familiaridad innata y la capacidad de sentir toda clase de corrupción durante generaciones.#!"
  MURNAU_WREATHED_PERK_TEXT: "#flavor El dominio del lado oscuro de la propia naturaleza de los Murnau que les permite afectarla en otros. «Aunque camine por el valle de la sombra de muerte...» #!"
  MURNAU_ARCANA_PERK_TEXT: "Desbloquea un movimiento de duelo.\n#flavor La capacidad de obstaculizar, desviar o evitar las acciones de los engendros del infierno. Esta habilidad suele tener un precio para el alma del Inquisidor, pero permite reflejar los poderes sobrenaturales contra el usuario cuando se domina.#!"
