@@ -15,7 +15,7 @@
  craft_creator_window: "Creador"
  CRAFT_CREATOR: "Creador"
  CRAFT_CREATOR_WINDOW_CURRENTLY_APPOINTED: "Creador Actualmente Elegido"
- CRAFT_WINDOW_NOT_CREATOR: "#weak No hay ningún [courtiers|E] que conozca un oficio#!"
+ CRAFT_WINDOW_NOT_CREATOR: "#weak No hay [courtiers|E] que conozcan un oficio#!"
 
  CRAFT_RECIPE_TOGGLE: "¿Ocultar desconocidas?"
  
@@ -385,7 +385,7 @@
  POD_craft_thin_blood_origin: "#TOOLTIP:POD_craft_thin_blood_origin_tt @thin_blood_icon!#! "
  POD_craft_thin_blood_origin_tt: "Esta receta proviene de la alquimia de sangre diluida, una Disciplina [GetTrait('vampire').GetName( GetNullCharacter )]."
  POD_craft_sorcerer_origin: "#TOOLTIP:POD_craft_sorcerer_origin_tt @sorcerer_icon!#! "
- POD_craft_sorcerer_origin_tt: "Esta receta proviene de un Camino de hechicería disponible para los [GetTrait('sorcerer').GetName( GetNullCharacter )]"
+ POD_craft_sorcerer_origin_tt: "Esta receta proviene de un Camino de hechicería disponible para los [GetTrait('sorcerer').GetName( GetNullCharacter )]s"
  POD_craft_wraith_origin: "#TOOLTIP:POD_craft_wraith_origin_tt @wraith_icon!#! "
  POD_craft_wraith_origin_tt: "Esta receta proviene de un Arcanos [GetTrait('wraith').GetName( GetNullCharacter )]."
  POD_craft_fae_origin: "#TOOLTIP:POD_craft_fae_origin_tt @fae_icon!#! "
@@ -711,18 +711,18 @@
  POD_forging_armor_tooltip: "Los resultados de calidad de la armadura se basan en la [martial|E] y la [prowess|E] de [GetPlayer.MakeScope.GetVariable('character_material').GetCharacter.GetFirstName]"
  POD_forging_weapon_tooltip: "Los resultados de calidad del arma se basan en la [martial|E] y la [prowess|E] de [GetPlayer.MakeScope.GetVariable('character_material').GetCharacter.GetFirstName]"
  POD_forging_smith_tooltip: "Los resultados de calidad de las baratijas se basan en la [stewardship|E], la [diplomacy|E] y la [prowess|E] de [GetPlayer.MakeScope.GetVariable('character_material').GetCharacter.GetFirstName]"
- POD_forging_book_tooltip: "Los resultados de calidad del libro se basan en la [learning|E] de [GetPlayer.MakeScope.GetVariable('character_material').GetCharacter.GetFirstName]"
+ POD_forging_book_tooltip: "Los resultados de calidad del libro se basan en el [learning|E] de [GetPlayer.MakeScope.GetVariable('character_material').GetCharacter.GetFirstName]"
  POD_forging_weaver_tooltip: "Los resultados de calidad del mobiliario se basan en la [diplomacy|E] de [GetPlayer.MakeScope.GetVariable('character_material').GetCharacter.GetFirstName]"
  POD_forging_artisan_tooltip: "Los resultados de calidad de la baratija se basan en la [stewardship|E] de [GetPlayer.MakeScope.GetVariable('character_material').GetCharacter.GetFirstName]"
- POD_forging_mount_tooltip: "Los resultados de calidad de la montura se basan en la [prowess|E], la [diplomacy|E] y la [learning|E] de [GetPlayer.MakeScope.GetVariable('character_material').GetCharacter.GetFirstName]"
+ POD_forging_mount_tooltip: "Los resultados de calidad de la montura se basan en la [prowess|E], la [diplomacy|E] y el [learning|E] de [GetPlayer.MakeScope.GetVariable('character_material').GetCharacter.GetFirstName]"
  
  POD_summoning_armor_tooltip: "Los resultados de calidad de la armadura se basan en la [martial|E] y la [prowess|E] de [GetPlayer.MakeScope.GetVariable('craft_creator').GetCharacter.GetFirstName]"
  POD_summoning_weapon_tooltip: "Los resultados de calidad del arma se basan en la [martial|E] y la [prowess|E] de [GetPlayer.MakeScope.GetVariable('craft_creator').GetCharacter.GetFirstName]"
  POD_summoning_smith_tooltip: "Los resultados de calidad de las baratijas se basan en la [stewardship|E], la [diplomacy|E] y la [prowess|E] de [GetPlayer.MakeScope.GetVariable('craft_creator').GetCharacter.GetFirstName]"
- POD_summoning_book_tooltip: "Los resultados de calidad del libro se basan en la [learning|E] de [GetPlayer.MakeScope.GetVariable('craft_creator').GetCharacter.GetFirstName]"
+ POD_summoning_book_tooltip: "Los resultados de calidad del libro se basan en el [learning|E] de [GetPlayer.MakeScope.GetVariable('craft_creator').GetCharacter.GetFirstName]"
  POD_summoning_weaver_tooltip: "Los resultados de calidad del mobiliario se basan en la [diplomacy|E] de [GetPlayer.MakeScope.GetVariable('craft_creator').GetCharacter.GetFirstName]"
  POD_summoning_artisan_tooltip: "Los resultados de calidad de la baratija se basan en la [stewardship|E] de [GetPlayer.MakeScope.GetVariable('craft_creator').GetCharacter.GetFirstName]"
- POD_summoning_mount_tooltip: "Los resultados de calidad de la montura se basan en la [prowess|E], la [diplomacy|E] y la [learning|E] de [GetPlayer.MakeScope.GetVariable('craft_creator').GetCharacter.GetFirstName]"
+ POD_summoning_mount_tooltip: "Los resultados de calidad de la montura se basan en la [prowess|E], la [diplomacy|E] y el [learning|E] de [GetPlayer.MakeScope.GetVariable('craft_creator').GetCharacter.GetFirstName]"
  
  GAINS_COMMON_ARTIFACT_PIECES: "Gana $VALUE|+0$ Fragmento de Artefacto #weak (Común)#!"
  GAINED_COMMON_ARTIFACT_PIECES: "Ganó $VALUE|+0$ Fragmento de Artefacto #weak (Común)#!"
@@ -1039,7 +1039,7 @@
  custom_edge_of_the_sun_artifact_name: "[fetish_artifact_icon]Filo del Sol"
  custom_edge_of_the_sun_artifact_desc: "Es un arma mortífera que portan los Mokolé para duelos rituales y ejecuciones. «Morir bajo el oro» es una expresión que designa el mal final de un infractor de la ley. El machete está forjado en oro macizo y decorado con joyas. Para crear una hoja así, el oro debe fundirse al amanecer y moldearse en la hoja, encantado para tener la dureza del acero; después deben engastarse joyas en el mango de madera de teca, y todo ello imbuirse con un espíritu de Guerra."
  custom_blade_of_the_kings_artifact_name: "[fetish_artifact_icon]Hoja de los Reyes"
- custom_blade_of_the_kings_artifact_desc: "#bold Convierte todo el Daño en [POD_aggravated_damage|E] contra personajes con [prowess|E] inferior a la [artifact_power_with_icon|E] de esta hoja.#!\n\nUna espada ancestral empuñada por los Mokolé de antaño. Los Antiguos Reyes Lagarto dormían el Sueño del Dragón con un arma así a su lado. La hoja cambia de forma para adaptarse a quien la empuña; cuando el Mokolé cambia a Archid, la Hoja de los Reyes cambia para adaptarse a la nueva forma corpulenta de su portador. Estas armas se fabrican vinculando un espíritu cambiaformas, como Mariposa o Pulpo, al arma mientras se elabora. Con cada golpe que da forma al metal o la piedra de la hoja, el creador debe pronunciar el nombre del espíritu."
+ custom_blade_of_the_kings_artifact_desc: "#bold Convierte todo el Daño en [POD_aggravated_damage|E] contra personajes con [prowess|E] inferior al [artifact_power_with_icon|E] de esta hoja.#!\n\nUna espada ancestral empuñada por los Mokolé de antaño. Los Antiguos Reyes Lagarto dormían el Sueño del Dragón con un arma así a su lado. La hoja cambia de forma para adaptarse a quien la empuña; cuando el Mokolé cambia a Archid, la Hoja de los Reyes cambia para adaptarse a la nueva forma corpulenta de su portador. Estas armas se fabrican vinculando un espíritu cambiaformas, como Mariposa o Pulpo, al arma mientras se elabora. Con cada golpe que da forma al metal o la piedra de la hoja, el creador debe pronunciar el nombre del espíritu."
 
 
  custom_fetish_artifact_name: "[fetish_artifact_icon][artifact.GetOwner.GetTitledFirstNamePossessive] [artifact.GetType]"

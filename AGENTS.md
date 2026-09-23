@@ -53,7 +53,7 @@ También se pedirá como «los nuevos archivos», «lo nuevo», «la actualizaci
 
 ### «Revisa / mejora lo traducido» (opcional: una regla o unos archivos)
 1. Solo si te lo piden: `python tools/pod.py fix --dry-run` y después `fix`.
-2. `python tools/pod.py check [--rule R] [--files …]`, con R = `tokens`, `custom`, `spaces`, `punct`, `glossary`, `display` o `english`.
+2. `python tools/pod.py check [--rule R] [--files …]`, con R = `tokens`, `custom`, `spaces`, `punct`, `glossary`, `display`, `english` o `concord` (artículos y adjetivos que no concuerdan con el género o número de la palabra que muestra una variable: `el [doctrine|E]` → «el Doctrina»).
 3. `python tools/pod.py batch --mode review --rule R [--files …] [--limit N]`
 4. El bucle con prefijo **R**. Devuelve solo las líneas que cambies: lo que dejes igual se anota como revisado y no se te volverá a proponer mientras ese texto no cambie.
 

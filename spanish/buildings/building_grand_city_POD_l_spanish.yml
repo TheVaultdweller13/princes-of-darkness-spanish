@@ -92,7 +92,7 @@
  building_rome_lasombra_04_desc: "Un distrito histórico de [roma_aeterna|E] confiado a un poderoso [primogen|E] [GetTrait('lasombra').GetName(GetNullCharacter)].\n\n$POD_rome_lasombra_desc$"
  
  POD_rome_nosferatu_desc: "Esta región lleva el nombre de la basílica en honor a San Eustaquio. En la superficie, no parece haber nada notable en este lugar... lo que le viene bien a los Nosferatu."
- POD_rome_nosferatu_bonus: "#P Ser propietario de este distrito desbloquea el [scheme|E] [GetScheme('fabricate_hook').GetTypeName()].#!"
+ POD_rome_nosferatu_bonus: "#P Ser propietario de este distrito desbloquea la [scheme|E] [GetScheme('fabricate_hook').GetTypeName()].#!"
  building_type_rome_nosferatu_01: "Sancte Eustachii et Vinea Teudemarii"
  building_type_rome_nosferatu_01_desc: "Un distrito histórico de [roma_aeterna|E] confiado al Clan [GetTrait('nosferatu').GetName(GetNullCharacter)].\n\n$POD_rome_nosferatu_desc$"
  building_rome_nosferatu_01: "Sancte Eustachii et Vinea Teudemarii"
@@ -131,7 +131,7 @@
  building_rome_toreador_04_desc: "Un distrito histórico de [roma_aeterna|E] confiado a un poderoso [primogen|E] [GetTrait('toreador').GetName(GetNullCharacter)].\n\n$POD_rome_toreador_desc$"
  
  POD_rome_cappadocian_desc: "El Panteón es la estructura más notable de esta región. Los mortales lo convirtieron en una iglesia dedicada a María y los Mártires, y trasladaron cientos de cuerpos de catacumbas para su reenterramiento."
- POD_rome_cappadocian_bonus: "#P El propietario de este distrito puede entrar en el [UmbraGlossary('shadowlands')] y manipular el Sudario en esta ubicación.#!"
+ POD_rome_cappadocian_bonus: "#P El propietario de este distrito puede entrar en las [UmbraGlossary('shadowlands')] y manipular el Sudario en esta ubicación.#!"
  building_type_rome_cappadocian_01: "Pinee et Sancte Marci"
  building_type_rome_cappadocian_01_desc: "Un distrito histórico de [roma_aeterna|E] confiado al Clan [GetTrait('cappadocian').GetName(GetNullCharacter)].\n\n$POD_rome_cappadocian_desc$"
  building_rome_cappadocian_01: "Pinee et Sancte Marci"
@@ -1187,7 +1187,7 @@
  building_cairo_temple_thoth_03_desc: "Después de pasar muchos meses enseñando a las hermanas, Thoth partió y dejó su legado de conocimiento. Pero nunca se fue realmente."
  building_cairo_temple_thoth_04: "Gran Templo de Thoth"
  building_cairo_temple_thoth_04_desc: "Después de que Isis huyera con su hijo, Thoth se le apareció en un sueño. Allí le enseñó cómo resucitar al desmembrado Osiris. Las enseñanzas de Thoth, junto con las magias de Isis, formaron la base de muchos de los caminos de Hekau estudiados tanto por el Culto de Isis como por Amenti."
- POD_cairo_temple_thoth_bonus: "#help Si eres un [GetTrait('mummy').GetName(GetNullCharacter)] o [GetTrait('bastet').GetName(GetNullCharacter)]:#!\nReduce los costos de [gold|E] de fabricación en un 25%\n\n#help Si no lo eres:#!\nDesbloquea un [crafting_node|E] de mejora que añade un [modifier|E] que aumenta una [skill|E] aleatoria ([GetModifier('enchantment_attribute_diplomacy_modifier').GetNameWithTooltip])"
+ POD_cairo_temple_thoth_bonus: "#help Si eres una [GetTrait('mummy').GetName(GetNullCharacter)] o [GetTrait('bastet').GetName(GetNullCharacter)]:#!\nReduce los costos de [gold|E] de fabricación en un 25%\n\n#help Si no lo eres:#!\nDesbloquea un [crafting_node|E] de mejora que añade un [modifier|E] que aumenta una [skill|E] aleatoria ([GetModifier('enchantment_attribute_diplomacy_modifier').GetNameWithTooltip])"
  
  building_type_cairo_temple_bast_01: "Templo de Bast"
  building_type_cairo_temple_bast_01_desc: "#F Bast, Diosa de los hombres gato Bubasti. Madre gentil y protectora furiosa de Egipto.#!"
@@ -1223,7 +1223,7 @@
  building_cairo_caern_wind_03_desc: "Durante la derrota de Set, los maldijo, separando a la tribu de sus espíritus ancestrales y desterrándolos de las tierras de Khem."
  building_cairo_caern_wind_04: "Caern Imponente del Viento Etesio"
  building_cairo_caern_wind_04_desc: "Aunque nunca podrán regresar verdaderamente a Khem, los Pasos de cabeza de chacal siguen siendo poderosos campeones de Ma'at."
- POD_cairo_caern_wind_bonus: "#help Si eres un [GetTrait('werewolf').GetName(GetNullCharacter)]:#!\nReduce el costo de los [artifacts|E] Planetarios del [umbra|E] en 500[grace_i]\n\n#help Si no lo eres:#!\nObtén acceso al [character_interaction|E] Puente de Luna"
+ POD_cairo_caern_wind_bonus: "#help Si eres un [GetTrait('werewolf').GetName(GetNullCharacter)]:#!\nReduce el costo de los [artifacts|E] Planetarios de la [umbra|E] en 500[grace_i]\n\n#help Si no lo eres:#!\nObtén acceso a la [character_interaction|E] Puente de Luna"
  
  building_type_cairo_canton_children_01: "Cantón de los Fieles"
  building_type_cairo_canton_children_01_desc: "#F Un cantón construido para los Hijos de Osiris.\nEsta Línea de Sangre de vampiros fue iniciada por el propio Osiris. Son los creadores del Bardo y sirvientes de Ma'at.#!"
@@ -1235,7 +1235,7 @@
  building_cairo_canton_children_03_desc: "$building_cairo_canton_children_01_desc$"
  building_cairo_canton_children_04: "Cantón Masivo de los Fieles"
  building_cairo_canton_children_04_desc: "$building_cairo_canton_children_01_desc$"
- POD_cairo_canton_children_bonus: "#help Si tienes [GetTrait('bardo').GetName(GetNullCharacter)]:#!\nAumenta masivamente la probabilidad de éxito del [character_interaction|E] [GetPerk('mummification_ritual_perk').GetName(GetPlayer)].\n\n#help Si no:#!\nObtén acceso al [character_interaction|E] [GetPerk('mummification_ritual_perk').GetName(GetPlayer)]."
+ POD_cairo_canton_children_bonus: "#help Si tienes [GetTrait('bardo').GetName(GetNullCharacter)]:#!\nAumenta masivamente la probabilidad de éxito de la [character_interaction|E] [GetPerk('mummification_ritual_perk').GetName(GetPlayer)].\n\n#help Si no:#!\nObtén acceso a la [character_interaction|E] [GetPerk('mummification_ritual_perk').GetName(GetPlayer)]."
  building_requirement_cairo_children_no_vamps: "#TOOLTIP:GAME_TRAIT,vampire,[GetNullCharacter] #L Vampiros#! no son considerados [criminals|El] en tu [faith|El]"
  
  building_type_cairo_canton_disciples_01: "Cantón de los Vengativos"

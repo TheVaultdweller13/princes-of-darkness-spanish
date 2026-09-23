@@ -670,13 +670,13 @@
  THEY_LOST_FASCINATE_TARGET: "[CHARACTER.GetShortUIName|U] ya no era la marioneta de Fascinación de [TARGET_CHARACTER.GetShortUINamePossessive]"
   
  
- GET_FETTER: "Se convierte en el [Fetter|E] de [TARGET_CHARACTER.GetShortUINamePossessive]"
+ GET_FETTER: "Se convierte en la [Fetter|E] de [TARGET_CHARACTER.GetShortUINamePossessive]"
  YOU_GET_FETTER: "Ganas a [TARGET_CHARACTER.GetShortUIName] como tu [Fetter|E]"
- THEY_GET_FETTER: "[CHARACTER.GetShortUIName|U] se convierte en el [Fetter|E] de [TARGET_CHARACTER.GetShortUINamePossessive]"
+ THEY_GET_FETTER: "[CHARACTER.GetShortUIName|U] se convierte en la [Fetter|E] de [TARGET_CHARACTER.GetShortUINamePossessive]"
  YOU_GOT_FETTER: "Ganaste a [TARGET_CHARACTER.GetShortUIName] como tu [Fetter|E]"
- THEY_GOT_FETTER: "[CHARACTER.GetShortUIName|U] se convirtió en el [Fetter|E] de [TARGET_CHARACTER.GetShortUINamePossessive]"
+ THEY_GOT_FETTER: "[CHARACTER.GetShortUIName|U] se convirtió en la [Fetter|E] de [TARGET_CHARACTER.GetShortUINamePossessive]"
  
- LOSE_FETTER: "Ya no es el [Fetter|E] de [TARGET_CHARACTER.GetShortUINamePossessive]"
+ LOSE_FETTER: "Ya no es la [Fetter|E] de [TARGET_CHARACTER.GetShortUINamePossessive]"
  YOU_LOSE_FETTER: "Pierdes a [TARGET_CHARACTER.GetShortUIName] como tu [Fetter|E]"
  THEY_LOSE_FETTER: "[CHARACTER.GetShortUIName|U] ya no es el/la [TARGET_CHARACTER.GetShortUINamePossessive] [Fetter|E]"
  YOU_LOST_FETTER: "Perdiste a [TARGET_CHARACTER.GetShortUIName] como tu [Fetter|E]"
@@ -695,9 +695,9 @@
  THEY_LOST_TRUE_NAME: "[CHARACTER.GetShortUIName|U] olvidó el [Glossary('Nombre Verdadero','podgloss.truename')] de [TARGET_CHARACTER.GetShortUINamePossessive]"
 
  POD_CAN_OBTAIN_DISCIPLINE_OF_LEVEL_ELDER_ADVANCED_EFFECT: "@warning_icon!#X Esta [elder_perk|E] requiere [TRAIT.GetName(GetPlayer)]#!"
- POD_CAN_OBTAIN_DISCIPLINE_OF_LEVEL_GHOUL_EFFECT: "@warning_icon!#X El nivel de esta [perk|E] #weak ($VALUE|0$)#! está por encima de lo que tu [ghoul_greatest_vitae_ingested|E] permite para#! #weak ([GetPlayer.MakeScope.ScriptValue('POD_allowed_discipline_level_for_ghouls_or_revenants')])#!"
+ POD_CAN_OBTAIN_DISCIPLINE_OF_LEVEL_GHOUL_EFFECT: "@warning_icon!#X El nivel de este [perk|E] #weak ($VALUE|0$)#! está por encima de lo que tu [ghoul_greatest_vitae_ingested|E] permite para#! #weak ([GetPlayer.MakeScope.ScriptValue('POD_allowed_discipline_level_for_ghouls_or_revenants')])#!"
  POD_CAN_OBTAIN_DISCIPLINE_OF_LEVEL_REVENANT_EFFECT: "POD_CAN_OBTAIN_DISCIPLINE_OF_LEVEL_REVENANT_EFFECT: @warning_icon!#X Como [Glossary('Aparecido','game_concept_revenant_desc')], no puedes obtener rasgos de [Glossary('Disciplina','game_concept_discipline_desc')] Avanzada#!"
- POD_CAN_OBTAIN_DISCIPLINE_OF_LEVEL_VAMPIRE_EFFECT: "@warning_icon!#X Necesitas ser al menos [GetTrait('vampgeneration$VALUE|0q$').GetName(GetNullCharacter)] o haber alcanzado el [golconda|E] para elegir esta [elder_perk|E]#!"
+ POD_CAN_OBTAIN_DISCIPLINE_OF_LEVEL_VAMPIRE_EFFECT: "@warning_icon!#X Necesitas ser al menos [GetTrait('vampgeneration$VALUE|0q$').GetName(GetNullCharacter)] o haber alcanzado la [golconda|E] para elegir esta [elder_perk|E]#!"
 
  # Animalism # 
  
@@ -752,18 +752,18 @@
 #  CAULDRON_OF_BLOOD_PERK: "Unlocks a [single_combat_duel|E] move."
 #  BLOOD_OF_POTENCY_PERK_STATS_EFFECT: "Unlock a thaumaturgy power allowing you to potentially increase your Blood Potency."
 
- ARCANE_KNOWLEDGE_1_PERK_EFFECT: "Aumenta la probabilidad de éxito de los [bs_spell|E] de [bloodsorcery|E] en un 15\nDisminuye la probabilidad de éxito de los [bs_spell|E] hostiles de [bloodsorcery|E] en un 10"
- ARCANE_KNOWLEDGE_2_PERK_EFFECT: "Aumenta la probabilidad de éxito de los [bs_spell|E] de [bloodsorcery|E] en un 15\nDisminuye la probabilidad de éxito de los [bs_spell|E] hostiles de [bloodsorcery|E] en un 10"
- ARCANE_KNOWLEDGE_3_PERK_EFFECT: "Aumenta la probabilidad de éxito de los [bs_spell|E] de [bloodsorcery|E] en un 15\nDisminuye la probabilidad de éxito de los [bs_spell|E] hostiles de [bloodsorcery|E] en un 10"
- ARCANE_KNOWLEDGE_4_PERK_EFFECT: "Aumenta la probabilidad de éxito de los [bs_spell|E] de [bloodsorcery|E] en un 15\nDisminuye la probabilidad de éxito de los [bs_spell|E] hostiles de [bloodsorcery|E] en un 10"
+ ARCANE_KNOWLEDGE_1_PERK_EFFECT: "Aumenta la probabilidad de éxito del [bs_spell|E] de [bloodsorcery|E] en un 15\nDisminuye la probabilidad de éxito del [bs_spell|E] hostil de [bloodsorcery|E] en un 10"
+ ARCANE_KNOWLEDGE_2_PERK_EFFECT: "Aumenta la probabilidad de éxito del [bs_spell|E] de [bloodsorcery|E] en un 15\nDisminuye la probabilidad de éxito del [bs_spell|E] hostil de [bloodsorcery|E] en un 10"
+ ARCANE_KNOWLEDGE_3_PERK_EFFECT: "Aumenta la probabilidad de éxito del [bs_spell|E] de [bloodsorcery|E] en un 15\nDisminuye la probabilidad de éxito del [bs_spell|E] hostil de [bloodsorcery|E] en un 10"
+ ARCANE_KNOWLEDGE_4_PERK_EFFECT: "Aumenta la probabilidad de éxito del [bs_spell|E] de [bloodsorcery|E] en un 15\nDisminuye la probabilidad de éxito del [bs_spell|E] hostil de [bloodsorcery|E] en un 10"
 
- ARCANE_MASTERY_1_PERK_EFFECT: "Aumenta la velocidad de los [bs_ritual|E] de [bloodsorcery|E] en un 10%"
+ ARCANE_MASTERY_1_PERK_EFFECT: "Aumenta la velocidad del [bs_ritual|E] de [bloodsorcery|E] en un 10%"
  ARCANE_MASTERY_1_PERK_BONUS_VALUE: "[GetPerk('arcane_mastery_1_perk').GetName(GetPlayer)]"
- ARCANE_MASTERY_2_PERK_EFFECT: "Aumenta la velocidad de los [bs_ritual|E] de [bloodsorcery|E] en un 10%"
+ ARCANE_MASTERY_2_PERK_EFFECT: "Aumenta la velocidad del [bs_ritual|E] de [bloodsorcery|E] en un 10%"
  ARCANE_MASTERY_2_PERK_BONUS_VALUE: "[GetPerk('arcane_mastery_2_perk').GetName(GetPlayer)]"
- ARCANE_MASTERY_3_PERK_EFFECT: "Aumenta la velocidad de los [bs_ritual|E] de [bloodsorcery|E] en un 10%"
+ ARCANE_MASTERY_3_PERK_EFFECT: "Aumenta la velocidad del [bs_ritual|E] de [bloodsorcery|E] en un 10%"
  ARCANE_MASTERY_3_PERK_BONUS_VALUE: "[GetPerk('arcane_mastery_3_perk').GetName(GetPlayer)]"
- ARCANE_MASTERY_4_PERK_EFFECT: "Aumenta la velocidad de los [bs_ritual|E] de [bloodsorcery|E] en un 10%"
+ ARCANE_MASTERY_4_PERK_EFFECT: "Aumenta la velocidad del [bs_ritual|E] de [bloodsorcery|E] en un 10%"
  ARCANE_MASTERY_4_PERK_BONUS_VALUE: "[GetPerk('arcane_mastery_4_perk').GetName(GetPlayer)]"
  
  # Celerity # 
@@ -929,7 +929,7 @@
  KISS_OF_THE_DARK_MOTHER_PERK_FLAVOR: "#flavor La Lilin se muerde la lengua y llena su boca con una mezcla fétida y acre de bilis negra y $pod_vitae$. Su mordisco se vuelve aún más terrible, y puede devorar la vida de sus víctimas con facilidad.#!"
  DARK_HUMOURS_PERK_FLAVOR: "#flavor Las Lamias son conocidas por su atletismo y dominio de sus cuerpos. No solo son capaces de realizar hazañas de destreza física increíble, sino que también pueden manipular el equilibrio de los humores en su cuerpo por pura fuerza de voluntad.#!"
  CAUL_OF_THE_NEVERBORN_PERK_EFFECT: "Desbloquea la interacción de Buscar wraith [character_interaction|E]"
- CAUL_OF_THE_NEVERBORN_PERK_FLAVOR: "#flavor Mediante el uso de este poder, la Lamia fortalece su conexión con el corazón negro de la Madre Oscura, otorgándole tanto una mayor resistencia como la capacidad de ver en el [UmbraGlossary('shadowlands')].#!"
+ CAUL_OF_THE_NEVERBORN_PERK_FLAVOR: "#flavor Mediante el uso de este poder, la Lamia fortalece su conexión con el corazón negro de la Madre Oscura, otorgándole tanto una mayor resistencia como la capacidad de ver en las [UmbraGlossary('shadowlands')].#!"
  LAMENT_OF_DHAINU_PERK_FLAVOR: "#flavor La Lamia aúlla de agonía, y la tierra misma tiembla. Una niebla de oscuridad retorcida se eleva del suelo y atrapa a sus enemigos. Atrapados por la oscuridad no están físicamente atados, pero son inmediatamente golpeados con una angustia emocional tan rica y cruda que buscan terminar con sus vidas de la manera más expedita posible.#!"
 
  #Nightshade Path
@@ -977,7 +977,7 @@
  DEATH_KNELL_PERK_EFFECT: "TODO"
  DEATH_KNELL_PERK_FLAVOR: "#flavor El nigromante siente cuando está cerca del mundo de los muertos. Un nigromante podría usar su percepción natural, mientras que otro podría realizar una adivinación, pero ambos pueden sentir dónde el [UmbraGlossaryLocalized('shadowlands','Inframundo')] toca el mundo de los vivos.#!"
  EPHEMERAL_BINDING_PERK_EFFECT: "TODO"
- EPHEMERAL_BINDING_PERK_FLAVOR: "#flavor Al infundir un objeto, persona o lugar con su propia energía cenicienta, el nigromante puede crear un [Fetters|E] artificial en lugar de tener que confiar en encontrar uno por casualidad.#!"
+ EPHEMERAL_BINDING_PERK_FLAVOR: "#flavor Al infundir un objeto, persona o lugar con su propia energía cenicienta, el nigromante puede crear unas [Fetters|E] artificiales en lugar de tener que confiar en encontrar unas por casualidad.#!"
 
  # Potence # 
  
@@ -985,12 +985,12 @@
  DRAUGHT_OF_MIGHT_PERK_EFFECT: "Como opción de [Glossary('Draught','game_concept_blood_draught_desc')] [character_interaction|E], puedes dotar a alguien de tu fuerza sobrenatural.\n#flavor Tu sangre se satura con el poder de la Potencia, transmitiendo parte de tu poder a cualquiera que beba de ella.#!"
  EARTHSHOCK_PERK_EFFECT: "#flavor Tu fuerza se convierte en una fuerza elemental. Puedes golpear el suelo con el puño o el pie, creando una onda de choque que derriba a los oponentes y destroza edificios.#!"
  FISTS_OF_CAINE_PERK_EFFECT: "Ganas una mayor probabilidad de herir gravemente a los [knights|E] enemigos en [combat_phase|E] como un [knight|E].\n#flavor Tus manos desnudas pueden infligir heridas gravísimas, letales tanto para mortales como para otros vampiros. Pueden desmembrar, perforar, empalar, decapitar e incluso arrancar un corazón del pecho.#!"
- LETHAL_BODY_PERK_EFFECT: "Ganas una mayor probabilidad de herir a los [knights|E] enemigos durante un [combat_phase|E] como un [knight|E].\n#flavor Al usar este poder, eres capaz de causar un daño horrendo, desgarrando la piel y rompiendo huesos con las manos desnudas.#!"
+ LETHAL_BODY_PERK_EFFECT: "Ganas una mayor probabilidad de herir a los [knights|E] enemigos durante una [combat_phase|E] como un [knight|E].\n#flavor Al usar este poder, eres capaz de causar un daño horrendo, desgarrando la piel y rompiendo huesos con las manos desnudas.#!"
  PROWESS_PERK_EFFECT: "#flavor Los vampiros con Potencia obtienen una fuerza mucho mayor de su Sangre que aquellos que carecen de ella.#!"
  SOARING_LEAP_PERK_EFFECT: "#flavor Poseyendo una fuerza impía que va más allá de los brazos y los puños, puedes saltar mucho más alto y más lejos que cualquier mortal.#!"
  UNCANNY_GRIP_PERK_EFFECT: "$countermeasures_unlocks_t3_redouble_guards$ \n #flavor Al concentrar tu fuerza sobrenatural en los dedos de los pies y las manos, tu agarre te permite hundir tus extremidades en casi cualquier superficie, permitiéndote escalar e incluso colgarte de paredes y techos sin apoyo alguno.#!"
  RELENTLESS_PURSUIT_PERK_EFFECT: "#F El Vástago realiza saltos extraordinarios por el aire.#!"
- CRUSH_PERK_EFFECT: "Otorga [GetModifier('crush_perk_knight_modifier').GetNameWithTooltip] [modifier|E] a los [knights|E] enemigos cuando actúes como un [commander|E] durante la [combat_phase|E], o a tu enemigo durante un [single_combat_duel_plural|E].\nInflige [GetModifier('crush_perk_ruler_modifier').GetNameWithTooltip] a cada gobernante del bando contrario al unirse a una [war|E].\n#F El Vástago que realiza un ataque exitoso contra un objeto lo destruye automáticamente.#!"
+ CRUSH_PERK_EFFECT: "Otorga [GetModifier('crush_perk_knight_modifier').GetNameWithTooltip] [modifier|E] a los [knights|E] enemigos cuando actúes como un [commander|E] durante la [combat_phase|E], o a tu enemigo durante unos [single_combat_duel_plural|E].\nInflige [GetModifier('crush_perk_ruler_modifier').GetNameWithTooltip] a cada gobernante del bando contrario al unirse a una [war|E].\n#F El Vástago que realiza un ataque exitoso contra un objeto lo destruye automáticamente.#!"
  FIST_OF_THE_TITANS_PERK_EFFECT: "Como una [character_interaction|E], te permite herir a todos los caballeros del objetivo.\n#F El Vástago ataca o lanza a alguien telequinéticamente.#!"
  THE_FORGERS_HAMMER_PERK_EFFECT: "$unlock_enhancing_node$ [GetModifier('artifact_prowess_1_modifier').GetNameWithTooltip]\n#F El Vástago crea armas que infligen daño adicional.#!"
  LEND_THE_SUPERNATURAL_VIGOR_PERK_EFFECT: "Como una [character_interaction|E], te permite otorgar tu destreza al objetivo.\n#F El Vástago concede su increíble fuerza a otro.#!"
@@ -1001,10 +1001,10 @@
  AWE_PERK_EFFECT: "Desbloquea el [GetScheme('befriend').GetTypeName] [scheme|E].\n#F Cualquiera en presencia del vampiro siente que su atención es atraída por él de forma inexplicable. Aquellos que escuchen hablar al vampiro podrían, de repente, estar de acuerdo en temas en los que antes mantenían opiniones distintas.#!"
  DAUNT_PERK_EFFECT: "#F En lugar de atraer a la gente, el vampiro usa la Presencia para repeler. Con este poder, el usuario parece amenazante y emana un aura de hostilidad lo suficientemente poderosa como para que la mayoría de los mortales eviten su atención e incluso los vampiros se lo piensen dos veces antes de actuar contra él.#!"
  DREAD_GAZE_PERK_EFFECT: "#F Al exponer brevemente su naturaleza vampírica, el usuario infunde un terror absoluto en un solo sujeto.#!"
- ENTRANCEMENT_PERK_EFFECT: "Permite el [scheme|E] de [GetScheme('PODentrance').GetTypeName].\n#F El vampiro concentra su encanto sobrenatural en una sola persona, infundiéndole una fascinación o embelesamiento similar a enamorarse perdidamente o conocer al ídolo de toda una vida.#!"
+ ENTRANCEMENT_PERK_EFFECT: "Permite la [scheme|E] de [GetScheme('PODentrance').GetTypeName].\n#F El vampiro concentra su encanto sobrenatural en una sola persona, infundiéndole una fascinación o embelesamiento similar a enamorarse perdidamente o conocer al ídolo de toda una vida.#!"
  LINGERING_KISS_PERK_EFFECT: "Cuando cazas, puedes optar por añadir a tus víctimas a tu [POD_herd|E].\n#F El Beso de un vampiro induce un estado cercano al éxtasis en los mortales, pero este poder deja a otros Besos en la sombra. Los mortales alimentados por el usuario se vuelven adictos al Beso, obsesionándose con él e incluso buscando al vampiro para alimentarse repetidamente.#!"
  MAJESTY_PERK_EFFECT: "$countermeasures_unlocks_t4_strengthen_sentries$ \n Desbloqueas una mejor opción para la [character_interaction|E] de cubrir la Mascarada.\n#F En la cúspide de esta $pod_discipline$, el vampiro puede amplificar su semblante hasta niveles sobrenaturales. Experimentar la Majestad es estar en presencia de lo divino, o de lo infernal.#!"
- SUMMON_PERK_EFFECT: "Permite el [scheme|E] de [GetScheme('PODsummon').GetTypeName].\n#F El vampiro puede llamar a sí mismo a cualquier persona, mortal o vampiro, sobre quien haya usado previamente el Asombro, el Embelesamiento o la Majestad, o que haya probado su Sangre al menos una vez.#!"
+ SUMMON_PERK_EFFECT: "Permite la [scheme|E] de [GetScheme('PODsummon').GetTypeName].\n#F El vampiro puede llamar a sí mismo a cualquier persona, mortal o vampiro, sobre quien haya usado previamente el Asombro, el Embelesamiento o la Majestad, o que haya probado su Sangre al menos una vez.#!"
  IRONCLAD_COMMAND_PERK_EFFECT: "Mejora la probabilidad de éxito de las facultades de Presencia anteriores."
  COOPERATION_PERK_EFFECT: "$countermeasures_unlocks_t4_bounties_for_whispers$ \n Aceptación de [peace|E]: #P +[EmptyScope.ScriptValue('cooperation_value')|0]#!"
  PHOBIA_PERK_EFFECT: "Ganas [GetModifier('phobia_5_modifier').GetNameWithTooltip] cuando actúas como [commander|E] durante la [combat_phase|E].\nLa fuerza de este modificador se basa en tu [dread|E] actual."
@@ -1018,7 +1018,7 @@
  FOCUSED_STRIKE_PERK_EFFECT: "#F Al estilo de los golpes de precisión de un artista marcial, puedes concentrar tu poder interior en un único y poderoso golpe, lanzándolo con la fuerza suficiente como para enviar a los enemigos por los aires.#!"
  HONORABLE_ELIXIR_PERK_EFFECT: "#F Tu sangre se convierte en una sustancia espiritual que hace que quienes la beban actúen con honor o sufran las consecuencias.#!"
  SHIELD_FROM_FIRE_PERK_EFFECT: "Otorga protección contra el fuego.\n#F Puedes concentrar tu fuerza interior en un escudo que te proteja de aquellos que busquen dañarte e incluso protegerte del fuego.#!"
- DAIMYOS_LAW_PERK_EFFECT: "Desbloquea el [scheme|E] de [GetScheme('abduct').GetTypeName] y te permite comprar derechos sobre artefactos con un 15 % de descuento.\n#F Puedes forzar a alguien a sentirse obligado a realizar una tarea por ti.#!"
+ DAIMYOS_LAW_PERK_EFFECT: "Desbloquea la [scheme|E] de [GetScheme('abduct').GetTypeName] y te permite comprar derechos sobre artefactos con un 15 % de descuento.\n#F Puedes forzar a alguien a sentirse obligado a realizar una tarea por ti.#!"
  KAI_ELDER_1_PERK_EFFECT: "La variante de [prowess|E] de Oleada de Sangre otorga 5 puntos de Destreza adicionales.\n#F Al concentrar tu sangre en el combate, esta infunde un estado de trance vertiginoso en el que luchas con la furia y el honor que corresponden a un verdadero daimyo.#!"
  KAI_ELDER_2_PERK_EFFECT: "Otorga una decisión para desbloquear un nuevo regimiento de [men_at_arms|E] entre estas opciones:\n$BULLET_WITH_TAB$[GetMaA('POD_ronin_hatamoto').GetName]\n$BULLET_WITH_TAB$[GetMaA('POD_ronin').GetName]\n$BULLET_WITH_TAB$[GetMaA('POD_yumihiki').GetName]\n$BULLET_WITH_TAB$[GetMaA('POD_yumihiki_riders').GetName]\n$BULLET_WITH_TAB$[GetMaA('POD_sojutsuka').GetName]\n$BULLET_WITH_TAB$[GetMaA('POD_sojutsuka_riders').GetName]\n#F La mera presencia de tu sangre provoca efectos similares a la ley del daimyo; sin embargo, este poder, cuando se enfoca en un estilo de combate específico del que surgen las raíces de la disciplina, tiene un efecto inusual y sustancial en los mortales, haciendo que adopten estilos de combate nativos de las tierras donde se originó, además de otorgarles notablemente capacidades sobrenaturales y hacer que te honren en combate.#!"
  KAI_ELDER_3_PERK_EFFECT: "Otorga fuertes defensas mentales.\n#F Con poder de voluntad puedes luchar ferozmente hasta el amargo final y, con tu mente concentrada, puedes rechazar fácilmente los intentos de engaño mental.#!"
@@ -1035,9 +1035,9 @@
  PASSING_THE_INNER_REALM_PERK_EFFECT: "Como una [character_interaction|E], gana o pierde [GetModifier('passing_the_inner_realm_modifier').GetNameWithTooltip].\n#F Puedes desaparecer por completo entrando en tu grieta y trasladarte a una nueva ubicación que puedas ver. Sin embargo, aunque esto ignore los obstáculos, no es instantáneo, ya que requiere que recorras la misma distancia en tu grieta que viajando allí sin ella.\nUsar la Grieta en combate es muy efectivo, permitiéndote esquivar golpes que serían inevitables para la mayoría, aunque usarla eficazmente en combate requiere un uso frecuente que resulta bastante estresante para la mente.#!"
  RIFT_COLLECTION_PERK_EFFECT: "Permite comprar derechos sobre artefactos con un #V 15 %#! de descuento.\n#F Ahora puedes enviar objetos inanimados a tu grieta con un solo toque, o reclamarlos a voluntad.#!"
  RIFT_TRANSPORT_PERK_EFFECT: "#F Puedes tocar un objeto para trasladarlo a un lugar a la vista (la distancia varía según las capacidades de la Grieta del usuario).#!"
- EYES_OF_A_THIEF_PERK_EFFECT: "80 % más rápido el [planning_speed|E] para el Atraco de Artefactos en [infiltration_missions|E].\n#F Similar a la recolección y al transporte, sin embargo, ya no necesitas tocar los objetos para enviarlos a una grieta; solo necesitas verlos.#!"
+ EYES_OF_A_THIEF_PERK_EFFECT: "80 % más rápida la [planning_speed|E] para el Atraco de Artefactos en [infiltration_missions|E].\n#F Similar a la recolección y al transporte, sin embargo, ya no necesitas tocar los objetos para enviarlos a una grieta; solo necesitas verlos.#!"
  DOORWAY_TO_HELL_PERK_EFFECT: "Como una [character_interaction|E], teletranspórtate de vuelta a tu capital cuando estés viajando o liderando un ejército.\n#F Esto es diferente a otros usos de la Grieta, ya que permite establecer una ubicación de grieta permanente a la que puedes vincular temporalmente tu grieta, y en la cual cualquiera puede entrar.\nEs similar a un eco de tu grieta pesadillesca que permite un viaje casi instantáneo, permitiendo que otros te sigan. No puedes mantenerla indefinidamente, no puedes viajar a través de la puerta para volver a donde estabas anteriormente y solo puede haber una puerta activa a la vez.\nCualquiera que no seas tú sufrirá efectos idénticos a [GetPerk('glimpse_of_the_pain_perk').GetName(GetPlayer)].#!"
- TOUCH_OF_SIN_PERK_EFFECT: "Desbloquea el [scheme|E] de [GetScheme('abduct').GetTypeName].\n#F Ahora puedes forzar a los individuos a entrar en tu grieta habitual agarrándolos.#!"
+ TOUCH_OF_SIN_PERK_EFFECT: "Desbloquea la [scheme|E] de [GetScheme('abduct').GetTypeName].\n#F Ahora puedes forzar a los individuos a entrar en tu grieta habitual agarrándolos.#!"
  RIFT_GATEWAY_PERK_EFFECT: "Mejora el modificador de [GetPerk('passing_the_inner_realm_perk').GetName(GetPlayer)] a [GetModifier('rift_gateway_modifier').GetNameWithTooltip].\n#F El Portal te permite enviar a un individuo a través de tu grieta al tocarlo de una manera similar a [GetPerk('passing_the_inner_realm_perk').GetName(GetPlayer)].\nTen cuidado con los usuarios de la Grieta que contemplen el cielo nocturno, miren fijamente un fuego rugiente o algún otro peligro, ya que podrías encontrarte cayendo del cielo nocturno o quemado hasta quedar carbonizado momentos después.#!"
  RIFT_IMPRISON_PERK_EFFECT: "Tus prisioneros prácticamente no tienen posibilidad de escapar. También desbloquea una nueva opción cuando un personaje intenta resistirse a ser encarcelado.\n#F Ahora puedes mantener a la gente en tu grieta indefinidamente, de la cual es virtualmente imposible escapar, ya sea por medios mundanos o sobrenaturales.\nSolo los más afortunados tienen alguna posibilidad de escape si logran encontrar un portal que funcione.#!"
 
@@ -1063,7 +1063,7 @@
  
  EYES_OF_THE_ABYSS_PERK_EFFECT: "Como opción de [shapeshift|E], obtén [GetModifier('POD_shapeshift_form_abysseyes_modifier').GetNameWithTooltip].\n#F Los ojos del vampiro se vuelven negros. Ignoran todas las penalizaciones por oscuridad, incluso aquellas causadas por la oscuridad sobrenatural, y pueden ver fantasmas.#!"
  SHADOW_PLAY_PERK_EFFECT: "#F Aunque esta habilidad no permite a los personajes crear sombras que no existan ya, les permite manipular, mover y animar las sombras ambientales. Esto puede otorgar efectos sociales, como usar las sombras para resultar más imponente, o dar forma a un entorno según tus necesidades, creando áreas de sombra en las que esconder a una persona u objeto.#!"
- NOCTURNE_PERK_EFFECT: "Como [character_interaction|E], activa o desactiva [GetModifier('nocturne_power_modifier').GetNameWithTooltip].\nMientras esté activa, inflige [GetModifier('nocturne_drained_stamina_modifier').GetNameWithTooltip] a los [knights|E] enemigos cuando actúes como [commander|E] durante la [combat_phase|E], o a tu oponente durante un [single_combat_duel_plural|E].\nEsto cuesta #N 10#![piety_i] por cada enemigo afectado.\n#F Al concentrarse en convocar la oscuridad, los Lasombra con esta habilidad pueden invocar una nube retorcida de oscuridad sobrenatural para envolver un área y oscurecer todas las fuentes de luz. La oscuridad es una manifestación del Abismo que amortigua el sonido y la vista, y sofoca la vida de los débiles.#!"
+ NOCTURNE_PERK_EFFECT: "Como [character_interaction|E], activa o desactiva [GetModifier('nocturne_power_modifier').GetNameWithTooltip].\nMientras esté activa, inflige [GetModifier('nocturne_drained_stamina_modifier').GetNameWithTooltip] a los [knights|E] enemigos cuando actúes como [commander|E] durante la [combat_phase|E], o a tu oponente durante unos [single_combat_duel_plural|E].\nEsto cuesta #N 10#![piety_i] por cada enemigo afectado.\n#F Al concentrarse en convocar la oscuridad, los Lasombra con esta habilidad pueden invocar una nube retorcida de oscuridad sobrenatural para envolver un área y oscurecer todas las fuentes de luz. La oscuridad es una manifestación del Abismo que amortigua el sonido y la vista, y sofoca la vida de los débiles.#!"
  NIGHT_SHADES_PERK_EFFECT: "Puede reclutar [GetMaA('shades').GetName] como [men_at_arms|E]"
  ARMS_OF_AHRIMAN_PERK_EFFECT: "#F Con esta habilidad, un Lasombra da forma a la oscuridad convirtiéndola en tentáculos que pueden atacar, retener y luchar cuerpo a cuerpo con sus enemigos.#!"
  TENEBROUS_AVATAR_PERK_EFFECT: "Como opción de [shapeshift|E], transfórmate en [GetModifier('POD_shapeshift_form_shadow_modifier').GetNameWithTooltip].\n#F El dominio de la oscuridad del vampiro es tan extenso que puede llegar a convertirse físicamente en ella. Al activar este poder, el vampiro se convierte en una mancha de sombra viscosa y ameboide.#!"
@@ -1107,7 +1107,7 @@
  SCRYTHEHEARTHSTONE_PERK_EFFECT: "#flavor Conoce la ubicación de los individuos dentro de una estructura. #!"
  BONDWITHTHEMOUNTAIN_PERK_EFFECT: "#flavor Fusiónate parcialmente con la piedra. #!"
  ARMOROFTERRA_PERK_EFFECT: "#flavor Endurece tu piel para absorber el daño mucho más fácilmente. #!"
- FLOWWITHTHEMOUNTAIN_PERK_EFFECT: "Aumenta la probabilidad de éxito del [decision|E] Escapar de la prisión.\n#flavor Atraviesa la piedra. #!"
+ FLOWWITHTHEMOUNTAIN_PERK_EFFECT: "Aumenta la probabilidad de éxito de la [decision|E] Escapar de la prisión.\n#flavor Atraviesa la piedra. #!"
  DARKSTATUE_PERK_EFFECT: "Inmunidad a los métodos de asesinato por fuego y luz solar.\n#flavor No te ves afectado físicamente por la luz solar mientras no te muevas.#!"
  ROCKHEART_PERK_EFFECT: "Ahora eres inmune a las estacas.\n#flavor Tus entrañas se calcifican, reduciendo el daño por perforación y haciendo que las estacas sean casi imposibles.#!"
  CRAWLINGCHAMBER_PERK_EFFECT: "#flavor Puedes animar, dotar de una conciencia limitada y comandar (hasta cierto punto) un volumen de 10 pies cúbicos de piedra.#!"
@@ -1115,8 +1115,8 @@
  # Temporis #
  
  TIME_SENSE_PERK_EFFECT: "#F Tener un reloj interno perfecto#!"
- INTERNAL_RECURSION_PERK_EFFECT: "Otorga [GetModifier('internal_recursion_perk_modifier').GetNameWithTooltip] [modifier|E] a los [knights|E] enemigos cuando actúes como [commander|E] durante la [combat_phase|E], o a tu oponente durante un [single_combat_duel_plural|E].\n#F Provoca que un objetivo repita una serie de acciones una y otra vez#!"
- RAMBLE_ON_PERK_EFFECT: "Otorga [GetModifier('ramble_on_perk_modifier').GetNameWithTooltip] [modifier|E] a los [knights|E] enemigos cuando actúes como [commander|E] durante la [combat_phase|E], o a tu oponente durante un [single_combat_duel_plural|E].\n#F Provoca que un objetivo repita sin saberlo una acción simple#!"
+ INTERNAL_RECURSION_PERK_EFFECT: "Otorga [GetModifier('internal_recursion_perk_modifier').GetNameWithTooltip] [modifier|E] a los [knights|E] enemigos cuando actúes como [commander|E] durante la [combat_phase|E], o a tu oponente durante unos [single_combat_duel_plural|E].\n#F Provoca que un objetivo repita una serie de acciones una y otra vez#!"
+ RAMBLE_ON_PERK_EFFECT: "Otorga [GetModifier('ramble_on_perk_modifier').GetNameWithTooltip] [modifier|E] a los [knights|E] enemigos cuando actúes como [commander|E] durante la [combat_phase|E], o a tu oponente durante unos [single_combat_duel_plural|E].\n#F Provoca que un objetivo repita sin saberlo una acción simple#!"
  LAPSE_PERK_EFFECT: "Otorga a los [commanders|E] enemigos [GetModifier('lapse_perk_modifier').GetNameWithTooltip] [modifier|E] cuando actúes como [commander|E] durante la [combat_phase|E].\n#F Provoca que un objetivo se mueva más lento en el tiempo#!"
  COWALKER_PERK_EFFECT: "#F Detén el tiempo por un momento para aparecer en dos lugares a la vez#!"
  SUBJECTIVE_SUSPENSION_PERK_EFFECT: "Otorga a los [commanders|E] enemigos [GetModifier('subjective_suspension_perk_modifier').GetNameWithTooltip] [modifier|E] cuando actúes como [commander|E] durante la [combat_phase|E].\n#F Suspende temporalmente un objeto fuera del tiempo#!"
@@ -1154,7 +1154,7 @@
  SIRENS_BECKONING_PERK_EFFECT: "Bono a la Melpomenia [character_interaction|E], permite otorgar un trastorno de estrés aleatorio al objetivo.\n#F Vuelve loco a alguien con tu canción#!"
  MOSH_PIT_PERK_EFFECT: "Bono a la Melpomenia [character_interaction|E], permite otorgar el modificador [GetModifier('murderous_frenzy_modifier').GetNameWithTooltip] al objetivo.\n#F Inspira a un objetivo a entrar en Frenesí con tu canción#!"
  PRIMAL_SCREAM_PERK_EFFECT: "Bono a la Melpomenia [character_interaction|E], permite otorgar el modificador [GetModifier('POD_frenzy_terrified_populace_modifier').GetNameWithTooltip] a la ubicación del objetivo.\n#F Inspira a un objetivo a entrar en Rötschreck con tu canción#!"
- BLESSED_AUDIENCE_PERK_EFFECT: "Otorga un trastorno de estrés aleatorio a los [knights|E] y [commanders|E] enemigos cuando actúes como [commander|E] durante la [combat_phase|E], o a tu enemigo durante el [single_combat_duel_plural|E].\n#F Usa [GetPerk('sirens_beckoning_perk').GetName(GetPlayer)] en muchas personas a la vez#!"
+ BLESSED_AUDIENCE_PERK_EFFECT: "Otorga un trastorno de estrés aleatorio a los [knights|E] y [commanders|E] enemigos cuando actúes como [commander|E] durante la [combat_phase|E], o a tu enemigo durante los [single_combat_duel_plural|E].\n#F Usa [GetPerk('sirens_beckoning_perk').GetName(GetPlayer)] en muchas personas a la vez#!"
  SHATTERING_CRESCENDO_PERK_EFFECT: "#F Daña a personas u objetos con un grito de alta frecuencia#!"
  PERSISTENT_ECHO_PERK_EFFECT: "Probabilidad de éxito de Melpomenia [character_interaction|E] #P +100%#!.\n#F Suspende tu voz o tus poderes de Melpomenia para alguien que llegue más tarde#!"
  HAUNTING_MELODY_PERK_EFFECT: "Bono a la Melpomenia [character_interaction|E], permite otorgar el modificador [GetModifier('haunting_melody_perk_modifier').GetNameWithTooltip] al objetivo.\n#F Deja una melodía en un lugar determinado que provoque un desvarío a quienes la escuchen#!"
@@ -1210,7 +1210,7 @@
  HEAVENS_GATE_PERK_EFFECT: "Crear Ghouls también les otorgará ahora el rasgo [GetTrait('revenant').GetName( GetNullCharacter )].\n#F Resucita a un mortal recientemente asesinado como un [GetTrait('revenant').GetName( GetNullCharacter )]#!"
  BLISSFUL_AGONY_PERK_EFFECT: "#F Provoca que la víctima sienta un dolor continuo que puede causar daño o llevarla al Frenesí#!"
  SWORD_OF_THE_RIGHTEOUS_PERK_EFFECT: "$unlock_enhancing_node$ [GetModifier('sword_of_the_righteous_modifier').GetNameWithTooltip]\n#F Hace que una hoja bañada en tu $pod_vitae$ arda con fuego celestial y cause Daño Agravado#!"
- SONG_OF_THE_BLOODED_PERK_EFFECT: "Otorga [GetModifier('song_of_the_blooded_perk_commander_negative_modifier').GetNameWithTooltip] [modifier|E] a los [commanders|E] enemigos cuando actúes como [commander|E] durante la [combat_phase|E].\nOtorga [GetModifier('song_of_the_blooded_perk_knight_negative_modifier').GetNameWithTooltip] [modifier|E] a los [knights|E] enemigos cuando actúes como [commander|E] durante la [combat_phase|E], o a tu oponente durante el [single_combat_duel_plural|E].\nOtorga [GetModifier('song_of_the_blooded_perk_commander_positive_modifier').GetNameWithTooltip] [modifier|E] a los [commanders|E] aliados cuando actúes como [commander|E] durante la [combat_phase|E].\nOtorga [GetModifier('song_of_the_blooded_perk_knight_positive_modifier').GetNameWithTooltip] [modifier|E] a los [knights|E] aliados cuando actúes como [commander|E] durante la [combat_phase|E] o a ti mismo durante el [single_combat_duel_plural|E].\n#F El vampiro entra en un trance de batalla, aumentando su destreza física, rodeándose de un halo resplandeciente que ciega a los espectadores y volviéndolo inmune a cualquier Disciplina de influencia mental#!"
+ SONG_OF_THE_BLOODED_PERK_EFFECT: "Otorga [GetModifier('song_of_the_blooded_perk_commander_negative_modifier').GetNameWithTooltip] [modifier|E] a los [commanders|E] enemigos cuando actúes como [commander|E] durante la [combat_phase|E].\nOtorga [GetModifier('song_of_the_blooded_perk_knight_negative_modifier').GetNameWithTooltip] [modifier|E] a los [knights|E] enemigos cuando actúes como [commander|E] durante la [combat_phase|E], o a tu oponente durante los [single_combat_duel_plural|E].\nOtorga [GetModifier('song_of_the_blooded_perk_commander_positive_modifier').GetNameWithTooltip] [modifier|E] a los [commanders|E] aliados cuando actúes como [commander|E] durante la [combat_phase|E].\nOtorga [GetModifier('song_of_the_blooded_perk_knight_positive_modifier').GetNameWithTooltip] [modifier|E] a los [knights|E] aliados cuando actúes como [commander|E] durante la [combat_phase|E] o a ti mismo durante los [single_combat_duel_plural|E].\n#F El vampiro entra en un trance de batalla, aumentando su destreza física, rodeándose de un halo resplandeciente que ciega a los espectadores y volviéndolo inmune a cualquier Disciplina de influencia mental#!"
  SAFE_PASSAGE_PERK_EFFECT: "Menos riesgo de ser el objetivo de una facción de la Inquisición.\n#F Recibe hospitalidad y ayuda sin importar la cultura local, y dificulta que los Cazadores te encuentren.#!"
  AVERSION_PERK_EFFECT: "Mejora la Caricia del Paria [character_interaction|E], permitiéndote otorgar el modificador [GetModifier('aversion_perk_modifier').GetNameWithTooltip] al objetivo, con la posibilidad de que este pierda todo su prestigio.\n#F Potencia la [GetPerk('pariahs_caress_perk').GetName(GetPlayer)], haciendo que otros detesten y ostracicen enormemente a un individuo, o se vuelvan hostiles contra él#!"
  WATCHER_PURIFICATION_PERK_EFFECT: "Como [character_interaction|E], te permite eliminar rasgos infames del objetivo.\n#F Expulsa o exorciza un espíritu o un demonio, y vincúlalo a tu servicio#!"
@@ -1219,12 +1219,12 @@
  # Quietus #
  
  SORCERER_SILENCE_OF_DEATH_PERK_EFFECT: "#F Como la Habilidad de Guerrero, pero se puede oír la propia voz del Hechicero#!"
- SCORPIONS_CURSE_PERK_EFFECT: "Otorga [GetModifier('scorpions_curse_perk_modifier').GetNameWithTooltip] [modifier|E] a tu enemigo durante el [single_combat_duel_plural|E].\n#F Coloca una trampa en una superficie sólida que activa la habilidad de Guerrero al ser tocada#!"
+ SCORPIONS_CURSE_PERK_EFFECT: "Otorga [GetModifier('scorpions_curse_perk_modifier').GetNameWithTooltip] [modifier|E] a tu enemigo durante los [single_combat_duel_plural|E].\n#F Coloca una trampa en una superficie sólida que activa la habilidad de Guerrero al ser tocada#!"
  SORCERER_DAGONS_CALL_PERK_EFFECT: "Como [character_interaction|E], te permite infligir al objetivo una herida cuya gravedad depende de tu destreza.\n#F Causa daño desde la distancia a la mente de una persona a la que hayas tocado en la última hora#!"
  SORCERER_BAALS_CARESS_PERK_EFFECT: "Desbloquea la decisión $seek_aid_of_the_spirits_decision$ [decision|E].\n#F Percibe a los seres de los Espíritus#!"
  TASTE_OF_DEATH_PERK_EFFECT: "#F Escupe sangre ácida que daña a las criaturas inmateriales#!"
  WARRIOR_SILENCE_OF_DEATH_PERK_EFFECT: "#F Deja el área a tu alrededor completamente en silencio#!"
- BLOOD_ESSENCE_PERK_EFFECT: "#P 20%#! de probabilidad de matar a un [knights|E] enemigo cuando resulte mutilado o herido en la [combat_phase|E] como [commander|E].\n#F Extrae la sangre del corazón de un objetivo exsangüeado y debilitado#!"
+ BLOOD_ESSENCE_PERK_EFFECT: "#P 20%#! de probabilidad de matar a los [knights|E] enemigos cuando resulten mutilados o heridos en la [combat_phase|E] como [commander|E].\n#F Extrae la sangre del corazón de un objetivo exsangüeado y debilitado#!"
  WARRIOR_SCORPIONS_TOUCH_PERK_EFFECT: "Cuando se inicia una guerra, el campeón con menor destreza de tu enemigo resultará herido.\n#F Crea un veneno de contacto que debilita enormemente físicamente a la víctima#!"
  WARRIOR_DAGONS_CALL_PERK_EFFECT: "Como [character_interaction|E], te permite infligir al objetivo una herida cuya gravedad depende de tu destreza.\n#F Causa daño desde la distancia a una persona a la que hayas tocado en la última hora#!"
  WARRIOR_BAALS_CARESS_PERK_EFFECT: "Mejora el Toque del Escorpión: cuando se inicia una guerra, los dos campeones con menor destreza de tu enemigo resultarán heridos.\n#F Crea un veneno que puede aplicarse en las armas para hacerlas más peligrosas#!"
@@ -1268,7 +1268,7 @@
  PSYCHOMACHIA_PERK_EFFECT: "Como [character_interaction|E], convoca la peor pesadilla del objetivo a la realidad, otorgándole un [modifier|E] basado en su personalidad.\n#flavor El Baali convoca una aparición del mayor miedo o trauma de la víctima.#!"
  CONDEMNATION_PERK_EFFECT: "Como [character_interaction|E], otorga a un objetivo [GetModifier('POD_condemnation_modifier').GetNameWithTooltip] durante 5 años.\n#flavor El Baali impone una maldición debilitante sobre un objetivo.#!"
  LURE_DIABOLIK_PERK_EFFECT: "Como [decision|E], convoca a un infernalista a tu [court|E].\n#flavor El Baali ordena a los infernalistas cercanos que le sirvan.#!"
- HELL_BORN_INVESTITURE_PERK_EFFECT: "Como [character_interaction|E], corrompe tu alma con gran maldad para obtener acceso al [investiture_lifestyle|E] y #V 6#! puntos de [perk|E] a un coste.\n#flavor El Baali toma su lugar legítimo como un Señor del Infierno.#!"
+ HELL_BORN_INVESTITURE_PERK_EFFECT: "Como [character_interaction|E], corrompe tu alma con gran maldad para obtener acceso a la [investiture_lifestyle|E] y #V 6#! puntos de [perk|E] a un coste.\n#flavor El Baali toma su lugar legítimo como un Señor del Infierno.#!"
  BRING_THE_PLAGUE_PERK_EFFECT: "Como [character_interaction|E], convoca una [GetTrait('demonic_plague').GetName(GetPlayer)] en la ubicación del objetivo.\n#flavor El Baali propaga una plaga mortal que afecta tanto a mortales como a Cainitas por igual.#!"
  THE_RE_EMBRACE_PERK_EFFECT: "Como [character_interaction|E], vuelve a dar el Abrazo a un vampiro prisionero para integrarlo en tu $pod_clan$ sin cambiar su [Glossary('Generación','game_concept_vampgeneration_desc')].\n#flavor Cuando se invoca el Re-Abrazo, el Sire toma a sus posibles chiquillos por la garganta y los desangra en cuatro cuencos inscritos con runas antiguas y demoníacas. El Sire llena entonces otros cuatro cuencos con su propia sangre, rodeando a los chiquillos con ellos de forma alternada. Mientras el iniciado yace en el suelo, sangrando y acercándose cada vez más a su Muerte Definitiva, el Sire convoca un fragmento de alma del demonio más poderoso de las Líneas de Sangre, Namtaru, y lo combina con el alma del chiquillo para corromperla y acercar su espíritu al de un Baali.#!"
  ADRAMELECHS_WRATH_PERK_EFFECT: "Desbloquea un movimiento de [single_combat_duel|E].\nHiere a los [knights|E] y [commanders|E] enemigos cuando actúes como [commander|E] durante la [combat_phase|E], o a tu oponente durante [single_combat_duel_plural|E] si es un $POD_splat_vampire$.\n#flavor El Baali hace que un Cainita arda como si el mismísimo sol brillara sobre él.#!"
@@ -1328,7 +1328,7 @@
  
  PRY_OPEN_PERK_EFFECT: "#F Sé testigo de los pensamientos y deseos del objetivo. Ayuda a construir una conexión#!"
  UNWAVERING_VISION_PERK_EFFECT: "Como [character_interaction|E], te permite dar [GetModifier( 'POD_ha_disrupted_contacts_modifier' ).GetNameWithTooltip|L] sobre los señoríos enemigos.\n#F Descubre los contactos del objetivo entre los hombres mortales, permitiéndote lisiar su influencia#!"
- UNEARTH_PERK_EFFECT: "Mucho más probable que [imprison|E] a [characters|E] tras un [siege|E] o una [raid|E] exitosos.\n#F Revela eventos que tuvieron lugar en un lugar determinado; útil para rastrear objetivos que escapan#!"
+ UNEARTH_PERK_EFFECT: "Mucho más probable que [imprison|E] a [characters|E] tras un [siege|E] o un [raid|E] exitosos.\n#F Revela eventos que tuvieron lugar en un lugar determinado; útil para rastrear objetivos que escapan#!"
  LIFTING_THE_VEIL_PERK_EFFECT: "Como [character_interaction|E], te permite dar [GetModifier( 'tracked_down_modifier' ).GetNameWithTooltip|L] al objetivo prisionero, lo que te permite completar instantáneamente el viaje de Buscar Escondite [journey|E] en su señor una vez que sea liberado.\n#F Convierte los intentos de engaño del objetivo en algo inútil, dando lugar a un interrogatorio fructífero#!"
  REVELATION_PERK_EFFECT: "Como [character_interaction|E], te permite hacer que el objetivo obtenga una Célula de la Inquisición [factions|E].\n#F Expón la naturaleza impura del objetivo ante el Rebaño y déjalo sometido a su juicio#!"
  
@@ -1340,7 +1340,7 @@
  
  TEARS_OF_THE_MARTYR_PERK_EFFECT: "Desbloquea una opción de evento cuando un personaje poderoso intente resistirse a ser encarcelado.\n#F Los ojos piadosos del inquisidor se convierten en un espejo para el alma de cualquiera que los mire, provocando un arrepentimiento y una duda paralizantes en los esclavos del pecado.#!"
  TOUCH_OF_PEACE_PERK_EFFECT: "Como [character_interaction|E], permite curar rasgos de estrés.\n#F El toque sagrado del inquisidor es capaz de curar todos los males del alma.#!"
- AURA_OF_SANCTITY_PERK_EFFECT: "Hiere a los [knights|E] enemigos cuando actúes como [commander|E] durante la [combat_phase|E], o a tu oponente durante un [single_combat_duel_plural|E], si son seres sobrenaturales.\n#F La teúrga concentra su fe en una ráfaga de energía sagrada que inflige daño a las criaturas impías que encuentra en la batalla.#!"
+ AURA_OF_SANCTITY_PERK_EFFECT: "Hiere a los [knights|E] enemigos cuando actúes como [commander|E] durante la [combat_phase|E], o a tu oponente durante unos [single_combat_duel_plural|E], si son seres sobrenaturales.\n#F La teúrga concentra su fe en una ráfaga de energía sagrada que inflige daño a las criaturas impías que encuentra en la batalla.#!"
  RESTORATION_PERK_EFFECT: "Como [character_interaction|E], permite curar heridas y rasgos mentales negativos. Si ya puedes hacerlo por otra fuente, reduce el coste en su lugar.\n#F La inquisidora ha alcanzado una afinidad particular con el milagro de la curación; puede poner sus manos sobre compañeros enfermos con más frecuencia y a un menor coste.#!"
  JUDGEMENT_OF_HEAVEN_PERK_EFFECT: "Como [character_interaction|E], permite [imprison|E] al objetivo.\n#F El inquisidor puede confinar a una criatura sobrenatural al reino terrenal, donde no podrá conocer escape de su juicio final.#!"
 
@@ -1375,12 +1375,12 @@
  HATHORS_BLESSING_PERK_EFFECT: "Como [character_interaction|E], permite otorgar [GetModifier( 'hathors_blessing_perk_modifier' ).GetNameWithTooltip|L] al objetivo."
  MERCY_FOR_THE_MISBEGOTTEN_PERK_EFFECT: "Como [character_interaction|E], permite otorgar [GetModifier( 'mercy_for_the_misbegotten_perk_modifier' ).GetNameWithTooltip|L] al objetivo, y también eliminar [GetTrait('eunuch').GetName( GetPlayer )] y [GetTrait('infertile').GetName( GetPlayer )]."
  
- BATS_SHRIEK_PERK_EFFECT: "Otorga [GetModifier('bats_shriek_perk_modifier').GetNameWithTooltip] [modifier|E] a los [knights|E] enemigos cuando actúes como [commander|E] durante la [combat_phase|E], o a tu oponente durante un [single_combat_duel_plural|E]."
- BLINDING_SPITTLE_PERK_EFFECT: "Otorga [GetModifier('blinding_spittle_perk_modifier').GetNameWithTooltip] [modifier|E] a los [knights|E] enemigos cuando actúes como [commander|E] durante la [combat_phase|E], o a tu oponente durante un [single_combat_duel_plural|E]."
+ BATS_SHRIEK_PERK_EFFECT: "Otorga [GetModifier('bats_shriek_perk_modifier').GetNameWithTooltip] [modifier|E] a los [knights|E] enemigos cuando actúes como [commander|E] durante la [combat_phase|E], o a tu oponente durante unos [single_combat_duel_plural|E]."
+ BLINDING_SPITTLE_PERK_EFFECT: "Otorga [GetModifier('blinding_spittle_perk_modifier').GetNameWithTooltip] [modifier|E] a los [knights|E] enemigos cuando actúes como [commander|E] durante la [combat_phase|E], o a tu oponente durante unos [single_combat_duel_plural|E]."
  THOUSAND_WINGS_FORM_PERK_EFFECT: ""
  READING_THE_DARK_HEART_PERK_EFFECT: "Como [character_interaction|E], permite conocer cada secreto y conjura del objetivo."
  
- TAINT_EVAPORATION_PERK_EFFECT: "Hiere a los [knights|E] y [commanders|E] enemigos cuando actúes como [commander|E] durante la [combat_phase|E], o a tu oponente durante un [single_combat_duel_plural|E], si sirven al $glossary_wyrm$."
+ TAINT_EVAPORATION_PERK_EFFECT: "Hiere a los [knights|E] y [commanders|E] enemigos cuando actúes como [commander|E] durante la [combat_phase|E], o a tu oponente durante unos [single_combat_duel_plural|E], si sirven al $glossary_wyrm$."
  
  # Meritocracy #
  
@@ -1392,7 +1392,7 @@
  
  # Unity #
  
- UNITY_LEGACY_1_PERK_EFFECT: "Tendrás una mejor probabilidad de éxito al elegir el enfoque marcial o de administración en la [journey|E] Buscar Guarida.\n#F Pacta clara, boni amici.#!"
+ UNITY_LEGACY_1_PERK_EFFECT: "Tendrás una mejor probabilidad de éxito al elegir el enfoque marcial o de administración en el [journey|E] Buscar Guarida.\n#F Pacta clara, boni amici.#!"
  UNITY_LEGACY_2_PERK_EFFECT: "Tus [journeys|E] de Buscar Guarida tienen una mayor [planning_speed|E].\n#F Conveniens homini est hominem servare voluptas.#!"
  UNITY_LEGACY_3_PERK_EFFECT: "#F Beatius est magis dare quam accipere#!."
  UNITY_LEGACY_4_PERK_EFFECT: "Entrenar nuevos aprendices será más efectivo.\n#F Artificem commendat opus.#!"
@@ -1418,7 +1418,7 @@
  #Setite legacy #
  
  SETITE_LEGACY_1_PERK_EFFECT: "$SNAKES_LEGACY_PERK_UNLOCK_DESC$\n#F El primer hijo, el más devoto, es un ejemplo para todos los Setitas.#!"
- SETITE_LEGACY_2_PERK_EFFECT: "Desbloquea el [scheme|E] de [GetScheme('befriend').GetTypeName].\n#F No hay vergüenza en comer el fruto prohibido en buena compañía.#!"
+ SETITE_LEGACY_2_PERK_EFFECT: "Desbloquea la [scheme|E] de [GetScheme('befriend').GetTypeName].\n#F No hay vergüenza en comer el fruto prohibido en buena compañía.#!"
  SETITE_LEGACY_3_PERK_EFFECT: "#F Siempre hay redención en el Abrazo de Set, incluso para los «Vampiros» más obstinados.#!"
  SETITE_LEGACY_4_PERK_EFFECT: "Desbloquea la construcción especial [GetBuilding('founding_temple_01').GetName].\n#F Regocijaos en Su gloria y orad, pues Él volverá para salvarnos a todos.#!"
  SETITE_LEGACY_5_PERK_EFFECT: "#F La hija perdida, la maldita, la Gran Enemiga... se enfrentará al castigo.#!"
@@ -1604,7 +1604,7 @@
  NEEDS_ART_FOR_FOCUS_TEXT: "@warning_icon!#X Necesitas el [trait|E] de Artes correspondiente para elegir este enfoque#!\n"
  NEEDS_CHI_ART_TEXT: "@warning_icon!#X Requiere el [trait|E] base de Arte de Chi para comprar ventajas en este árbol#!"
  
- NEEDS_COMMUNE_WITH_THE_INCARNA_TEXT: "@warning_icon!#X Si tienes acceso a [planetarygifts_lifestyle|E], necesitarás comulgar con la Incarna Planetaria correspondiente ubicada en la región del [UmbraGlossary('aetherial_realm')] en los [UmbraGlossary('spirit_wilds')] para desbloquear esta ventaja.#!"
+ NEEDS_COMMUNE_WITH_THE_INCARNA_TEXT: "@warning_icon!#X Si tienes acceso a [planetarygifts_lifestyle|E], necesitarás comulgar con la Incarna Planetaria correspondiente ubicada en la región del [UmbraGlossary('aetherial_realm')] en las [UmbraGlossary('spirit_wilds')] para desbloquear esta ventaja.#!"
  
  POD_ventrue_bane_notification: "Maldición de los Ventrue"
  ventrue_clan_bane: "Esta persona está fuera de tus [feeding_restrictions|E] y alimentarse de ella no te nutrirá."
@@ -1625,15 +1625,15 @@
  MURNAU_ONLY_TEXT: "@warning_icon!#X Tu dinastía no tiene [GetModifier('support_from_von_murnau_modifier').GetNameWithTooltip] y no es la dinastía Von Murnau#!"
  OCULI_ONLY_TEXT: "@warning_icon!#X Tu dinastía no tiene [GetModifier('support_from_oculi_dei_modifier').GetNameWithTooltip] ni [GetModifier('custom_lay_order_modifier').GetNameWithTooltip], y no es la dinastía Oculi Dei#!"
  
- POD_will_lose_elder_perks: "Pierdes todos los [elder_perks|E] para los que no cumplas los requisitos"
- POD_lose_inaccessible_discipline_perks_effect: "Pierdes todos los [Glossary('Disciplinas','game_concept_discipline_desc')] [perks|E] para los que no cumplas los requisitos"
+ POD_will_lose_elder_perks: "Pierdes todas las [elder_perks|E] para las que no cumplas los requisitos"
+ POD_lose_inaccessible_discipline_perks_effect: "Pierdes todos los [perks|E] de [Glossary('Disciplinas','game_concept_discipline_desc')] para los que no cumplas los requisitos"
  POD_masterless_ghoul_lost_all_vitae_message: "El [masterless_ghoul|E] no le quedaba $pod_vitae$"
  
- POD_elder_perk7: "@warning_icon!#X Necesitas ser al menos de 7.ª [Glossary('Generación','game_concept_vampgeneration_desc')] o haber alcanzado el [golconda|E] para elegir este [elder_perk|E].#!"
- POD_elder_perk6: "@warning_icon!#X Necesitas ser al menos de 6.ª [Glossary('Generación','game_concept_vampgeneration_desc')] o haber alcanzado el [golconda|E] para elegir este [elder_perk|E].#!"
- POD_elder_perk5: "@warning_icon!#X Necesitas ser al menos de 5.ª [Glossary('Generación','game_concept_vampgeneration_desc')] o haber alcanzado el [golconda|E] para elegir este [elder_perk|E].#!"
- POD_elder_perk4: "@warning_icon!#X Necesitas ser al menos de 4.ª [Glossary('Generación','game_concept_vampgeneration_desc')] o haber alcanzado el [golconda|E] para elegir este [elder_perk|E].#!" 
- POD_elder_perk3: "@warning_icon!#X Necesitas ser al menos de 3.ª [Glossary('Generación','game_concept_vampgeneration_desc')] o haber alcanzado el [golconda|E] para elegir este [elder_perk|E].#!"
+ POD_elder_perk7: "@warning_icon!#X Necesitas ser al menos de 7.ª [Glossary('Generación','game_concept_vampgeneration_desc')] o haber alcanzado la [golconda|E] para elegir esta [elder_perk|E].#!"
+ POD_elder_perk6: "@warning_icon!#X Necesitas ser al menos de 6.ª [Glossary('Generación','game_concept_vampgeneration_desc')] o haber alcanzado la [golconda|E] para elegir esta [elder_perk|E].#!"
+ POD_elder_perk5: "@warning_icon!#X Necesitas ser al menos de 5.ª [Glossary('Generación','game_concept_vampgeneration_desc')] o haber alcanzado la [golconda|E] para elegir esta [elder_perk|E].#!"
+ POD_elder_perk4: "@warning_icon!#X Necesitas ser al menos de 4.ª [Glossary('Generación','game_concept_vampgeneration_desc')] o haber alcanzado la [golconda|E] para elegir esta [elder_perk|E].#!" 
+ POD_elder_perk3: "@warning_icon!#X Necesitas ser al menos de 3.ª [Glossary('Generación','game_concept_vampgeneration_desc')] o haber alcanzado la [golconda|E] para elegir esta [elder_perk|E].#!"
  
  has_1_possessed_perks_unlocked: "@warning_icon!#X #bold No#! tienes desbloqueados más de: #V 1#! [possessedpower_lifestyle|E] [perks|E]#!#"
  has_2_possessed_perks_unlocked: "@warning_icon!#X #bold No#! tienes desbloqueados más de: #V 2#! [possessedpower_lifestyle|E] [perks|E]#!#"
@@ -1707,11 +1707,11 @@
  full_warrior_quietus_tooltip: "Ganas el árbol completo de #bold Guerrero Extinción#!."
  full_vizier_quietus_tooltip: "Ganas el árbol completo de #bold Vizconde Extinción#!"
 
- POD_golconda_murder_alert: "@warning_icon!#X ¡Un asesinato te hará caer del [golconda|E]!#!"
- POD_golconda_theft_alert: "@warning_icon!#X ¡Un robo te hará caer del [golconda|E]!#!"
- POD_golconda_frenzy_alert: "@warning_icon!#X ¡Sucumbir al Frenesí te hará caer del [golconda|E]!#!"
- POD_golconda_diablerie_alert: "@warning_icon!#X ¡La Diablerie te hará caer del [golconda|E]!#!"
- POD_golconda_heinous_act_alert: "@warning_icon!#X ¡Los actos atroces te harán caer del [golconda|E]!#!"
+ POD_golconda_murder_alert: "@warning_icon!#X ¡Un asesinato te hará caer de la [golconda|E]!#!"
+ POD_golconda_theft_alert: "@warning_icon!#X ¡Un robo te hará caer de la [golconda|E]!#!"
+ POD_golconda_frenzy_alert: "@warning_icon!#X ¡Sucumbir al Frenesí te hará caer de la [golconda|E]!#!"
+ POD_golconda_diablerie_alert: "@warning_icon!#X ¡La Diablerie te hará caer de la [golconda|E]!#!"
+ POD_golconda_heinous_act_alert: "@warning_icon!#X ¡Los actos atroces te harán caer de la [golconda|E]!#!"
 
  POD_REQUIRE_DHARMA_TOOLTIP_EFFECT: "#X @warning_icon! No tienes [GetTrait('dharma$VALUE|0q$').GetName(GetPlayer)] o superior#!"
  POD_remove_dharma_xp_effect_tt: "#X Esto es un Diao, un momento de ceguera en el que un ser iluminado pierde su camino y da un paso atrás en el camino hacia las [Glossary('Hundred Clouds','podgloss.hundredclouds')].#!"
@@ -1880,12 +1880,12 @@
 
  POD_cursed_artifact_toast: "Artefacto maldito"
  
- POD_create_full_fetter_text: "Crear un nuevo [Fetter|E]"
+ POD_create_full_fetter_text: "Crear una nueva [Fetter|E]"
  POD_create_empty_fetter_text: "Crear semilla de [Fetter|E]"
- POD_destroy_fetter_text: "¡El [Fetter|E] será destruido!"
+ POD_destroy_fetter_text: "¡La [Fetter|E] será destruida!"
 
  POD_passion_fulfilled: "Pasión cumplida: [Localize(SCOPE.GetFlagName('fetter_loca'))]"
- POD_fetter_seed_gained: "Has ganado un [Fetter|E] de [Localize(SCOPE.GetFlagName('fetter_loca'))]"
+ POD_fetter_seed_gained: "Has ganado una [Fetter|E] de [Localize(SCOPE.GetFlagName('fetter_loca'))]"
 
  POD_dark_passion_fulfilled: "Pasión oscura cumplida: [Localize(SCOPE.GetFlagName('dark_passion_flag'))]"
  POD_dark_passion_lose: "Perder la Pasión oscura: [Localize(SCOPE.GetFlagName('dark_passion_flag'))]"
@@ -1913,7 +1913,7 @@
  POD_add_curia_support_global_past: "Ganó $VALUE|V0$ de [curia_support|E]"
  POD_add_curia_support_global_past_neg: "Perdió $VALUE|V0$ de [curia_support|E]"
 
- POD_need_perk: "#x @warning_icon!Para desbloquear esta [perk|E] necesitas tener ya [GetPerk(SCOPE.GetFlagName('perk_loca')).GetName(GetPlayer)]#!"
+ POD_need_perk: "#x @warning_icon!Para desbloquear este [perk|E] necesitas tener ya [GetPerk(SCOPE.GetFlagName('perk_loca')).GetName(GetPlayer)]#!"
 
  POD_increase_durability_effect: "Aumenta la durabilidad máxima de [ARTIFACT.GetName] en $VALUE|P0$."
  POD_decrease_durability_effect: "Disminuye la durabilidad máxima de [ARTIFACT.GetName] en $VALUE|N0$."
@@ -2008,11 +2008,11 @@
  POD_truename_tn_silver: "Plata"
  POD_truename_tn_iron: "de Hierro"
 
- POD_mummy_memory_check_effect_tt: "Como te encuentras por debajo del nivel de memoria $POD_splat_mummy$ requerido, pagas un [static_stress|E] adicional"
+ POD_mummy_memory_check_effect_tt: "Como te encuentras por debajo del nivel de memoria $POD_splat_mummy$ requerido, pagas una [static_stress|E] adicional"
  POD_mummy_tan_check_effect: "Obtener este [perk|E] hará que las ventajas del otro árbol Tan cuesten 50 [static_stress|E] adicionales #X Esta acción no es reversible#!"
 
  POD_can_summon_on_death_trigger_loca: "Como [character_interaction|E], obliga a tu objetivo a convertirse en un $POD_splat_wraith$ si muere en #V 10#! años."
- POD_can_weaken_fetter_trigger_loca: "Como [character_interaction|E], debilita un [Fetter|E] aleatorio no resuelto de un $POD_splat_wraith$."
+ POD_can_weaken_fetter_trigger_loca: "Como [character_interaction|E], debilita una [Fetter|E] aleatoria no resuelta de un $POD_splat_wraith$."
  POD_can_bind_wraith_trigger_loca: "Como [character_interaction|E], vincula a un $POD_splat_wraith$ usando uno de sus [Fetters|E] no asignados."
  POD_can_command_wraith_trigger_loca: "Como [character_interaction|E], ordena a tus $POD_splat_wraith_plural$ vinculados que obstaculicen o ayuden a un objetivo."
  POD_can_summon_wraith_trigger_loca: "Como [character_interaction|E], genera un nuevo $POD_splat_wraith$ en tu [court|E], o invoca a uno existente a las [Glossary('Tierras de Piel','game_concept_skinlands_desc')]."
@@ -2067,7 +2067,7 @@
  POD_stipulation_pact_of_non_aggression: "@retreat_icon! Pacto de no agresión"
  POD_obligation_pact_of_non_aggression: "Nunca declares la guerra a ningún $POD_splat_demon_plural$"
  POD_stipulation_soul_of_glass: "@scheme_icon! Alma de cristal"
- POD_obligation_soul_of_glass: "Nunca inicies ningún [schemes|E] contra $POD_splat_demon_plural$"
+ POD_obligation_soul_of_glass: "Nunca inicies [schemes|E] contra $POD_splat_demon_plural$"
 
  POD_stipulation_sacrifice_of_blood: "@murder_icon! Sacrificio de sangre"
  POD_obligation_sacrifice_of_blood: "Mata a un [character|E]"
@@ -2122,7 +2122,7 @@
  POD_complete_ghoul_mission_effect: "Has #P completado#! tu [bound_ghoul_mission_with_icon|E]: #V [task_contract.GetType.GetName]#!"
  POD_complete_ghoul_mission_effect_paused_breaking_bond_abandon: "#X ¡Cualquier [journey|E] de #V $breaking_the_blond_bond_name$#! pausada será abandonada!#!"
  POD_fail_ghoul_mission_effect: "Has #N fallado#! en tu [bound_ghoul_mission_with_icon|E]: #V [task_contract.GetType.GetName]#!"
- POD_fail_ghoul_mission_effect_risk: "¡Tu señor tiene una [opinion|E] negativa de ti! Si cae por debajo de #bold -25#!, ¡morirás tras el próximo [bound_ghoul_mission_with_icon|E] #N fallado#!!"
+ POD_fail_ghoul_mission_effect_risk: "¡Tu señor tiene una [opinion|E] negativa de ti! Si cae por debajo de #bold -25#!, ¡morirás tras la próxima [bound_ghoul_mission_with_icon|E] #N fallada#!!"
 
  PODCurrentGhoulMission_X: "#underline;TOOLTIP:PODCurrentGhoulMission_tooltip_X Y#!"
  PODCurrentGhoulMission_tooltip_X: "Z"
@@ -2152,13 +2152,13 @@
  PODCurrentGhoulMission_tooltip_slander_rival: "Sacrifica tu [piety|E] usando #V $POD_ghoul_mission_slander_rival_interaction$#! con cualquier [rival|E] de tu señor."
 
  PODCurrentGhoulMission_give_relative_away: "#underline;TOOLTIP:PODCurrentGhoulMission_tooltip_give_relative_away Entregar a un pariente#!"
- PODCurrentGhoulMission_tooltip_give_relative_away: "Envía a uno de tus [close_family|E] a tu señor. No volverás a verle."
+ PODCurrentGhoulMission_tooltip_give_relative_away: "Envía a alguien de tu [close_family|E] a tu señor. No volverás a verle."
 
  POD_GHOUL_SET_MAX_GENERATION_INGESTED: "Has ingerido $pod_vitae$ de [GetTrait('vampgeneration$VALUE|0q$').GetName(GetNullCharacter)], que se convertirá en tu nuevo [ghoul_greatest_vitae_ingested|E]"
  POD_ghoul_drink_from_vampire_effect_unbondable: "Tienes el rasgo [GetTrait('unbondable').GetName(GetPlayer)] [trait|E], lo que te hace inmune a crear un vínculo de sangre. Por ello, no puedes convertirte en un [bound_ghoul|E]"
 
 
- POD_change_wyrm_taint: "El [wyrm_taint|E] #N aumentará#! en #bold $VALUE|0V$#!"
- POD_change_wyrm_taint_past: "El [wyrm_taint|E] ha #N aumentado#! en #bold $VALUE|0V$#!"
- POD_change_wyrm_taint_neg: "El [wyrm_taint|E] #P disminuirá#! en #bold $VALUE|0V$#!"
- POD_change_wyrm_taint_past_neg: "El [wyrm_taint|E] ha #P disminuido#! en #bold $VALUE|0V$#!"
+ POD_change_wyrm_taint: "La [wyrm_taint|E] #N aumentará#! en #bold $VALUE|0V$#!"
+ POD_change_wyrm_taint_past: "La [wyrm_taint|E] ha #N aumentado#! en #bold $VALUE|0V$#!"
+ POD_change_wyrm_taint_neg: "La [wyrm_taint|E] #P disminuirá#! en #bold $VALUE|0V$#!"
+ POD_change_wyrm_taint_past_neg: "La [wyrm_taint|E] ha #P disminuido#! en #bold $VALUE|0V$#!"

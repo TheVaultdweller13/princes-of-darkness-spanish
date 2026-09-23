@@ -203,7 +203,7 @@
  POD_drink_herd_choose_desc: "Elige cuánta sangre beber y de qué recipiente. Ten cuidado, ya que cualquier mortal solo tiene una cantidad limitada de sangre, y alimentarlo en exceso puede herir o matar a tu [POD_herd|E]."
  POD_drink_herd: "Manipular recipiente"
  POD_drink_herd_desc: "Elige cuánta sangre beber de tu recipiente. Ten cuidado, ya que cualquier mortal solo tiene una cantidad limitada de sangre, y alimentarlo en exceso puede herir o matar a tu recipiente."
- POD_drink_herd_pause_warning: "La alimentación automática de los [POD_herd|E] se pausará mientras el miembro del [POD_herd|E] experimente una mayor pérdida de sangre"
+ POD_drink_herd_pause_warning: "La alimentación automática de los [POD_herd|E]s se pausará mientras el miembro del [POD_herd|E] experimente una mayor pérdida de sangre"
  POD_drink_herd_sip_option: "Toma solo un sorbo de la sangre de tu recipiente."
  POD_drink_herd_drink_option: "Toma un trago de la sangre de tu recipiente."
  POD_drink_herd_alot_option: "¡Toma una cantidad significativa de la sangre de tu recipiente!"
@@ -225,9 +225,9 @@
  POD_drink_herd_increase_intensity_to_intense.tt: "La [resonance|E] de [victim.GetFirstNamePossessive] aumenta a intensa."
  POD_drink_herd_increase_intensity_to_fleeting.tt: "La [resonance|E] de [victim.GetFirstNamePossessive] aumenta a fugaz."
  POD_drink_herd_increase_intensity_to_negligible.tt: "La [resonance|E] de [victim.GetFirstNamePossessive] disminuye a insignificante."
- POD_drink_herd_release.tt: "[victim.GetFirstName] es liberad[X.Custom('ES_OA')] de la [POD_herd|E]."
+ POD_drink_herd_release.tt: "[victim.GetFirstName] es liberad[X.Custom('ES_OA')] del [POD_herd|E]."
  
- POD_drink_herd_summary: "Resumen de alimentación de la [POD_herd|E]"
+ POD_drink_herd_summary: "Resumen de alimentación del [POD_herd|E]"
  POD_drink_herd_summary.tt: "Has ganado [ROOT.Var('resonance_earned').GetValue|V0] de exp. de [resonance|E] por la alimentación automática este año."
  #POD_drink_herd_over_capacity: "Too many herd members"
  #POD_drink_herd_over_capacity.tt: "You are over your herd limit and have received #V $VALUE|0$%#! less xp from each individual herd member to compensate."
@@ -242,7 +242,7 @@
 
  POD_resonance_gain_multiplier_tt: "#weak Experiencia reducida en un #V $VALUE|0$%#! debido al [storyteller_mode|E]#!"
  
- POD_herdify_interaction_limit: "¡El tamaño de la [POD_herd|E] tiene un límite! (3 más cualquier bonificación de otras fuentes)"
+ POD_herdify_interaction_limit: "¡El tamaño del [POD_herd|E] tiene un límite! (3 más cualquier bonificación de otras fuentes)"
  POD_herdify_mortal_interaction: "Herdificar #weak (Conjura)#!"
  POD_herdify_mortal_interaction_desc: "Tramar cómo conseguir a este mortal como recipiente para poder alimentarte de él con seguridad cuando desees."
  POD_herdify_vampire_interaction: "Herdificar #weak (Conjura)#!"
@@ -332,7 +332,7 @@
  POD_trial_by_war_interaction_desc: "Hora de enseñar a este ser quién es el verdadero Voivoda aquí."
     
  POD_etrius_abuse_interaction: "Política Tremere"
- POD_etrius_abuse_interaction_desc: "Como mano derecha del propio Tremere, es hora de usar tu poder dentro de los $pod_clan$."
+ POD_etrius_abuse_interaction_desc: "Como mano derecha del propio Tremere, es hora de usar tu poder dentro del $pod_clan$."
      
  POD_maatkare_interaction: "Seducir"
  POD_maatkare_interaction_desc: "Ayuda a este $pod_cainite$ extraviado a conocer la verdad sobre la gloria de Set."
@@ -446,7 +446,7 @@
  POD_ghoulify_prisoner_interaction_desc: "Convierte a la fuerza a [recipient.GetFirstName] en tu Esclavo inmortal."
  POD_ghoulify_prisoner_interaction.tt: "[recipient.GetFirstName] se convierte en tu [ghoul|E]."
 
- POD_herdify_prisoner_interaction: "Prisionero de la [POD_herd|E]"
+ POD_herdify_prisoner_interaction: "Prisionero del [POD_herd|E]"
  POD_herdify_prisoner_interaction_desc: "Convierte a la fuerza a [recipient.GetFirstName] en tu [POD_herd|E]."
  POD_herdify_prisoner_interaction.tt: "[recipient.GetFirstName] se convierte en tu [POD_herd|E]."
 

@@ -30,6 +30,7 @@ RULES = [
     ("display", "texto de Glossary(...) o Concept(...) sin traducir"),
     ("punct", "faltan ¿ o ¡"),
     ("custom", "funciones de género inexistentes"),
+    ("concord", "artículos que no concuerdan con la palabra de una variable ($x$, [x|E], GetTrait…)"),
     ("spaces", "espacios sobrantes"),
 ]
 

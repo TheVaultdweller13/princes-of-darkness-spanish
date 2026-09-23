@@ -215,7 +215,7 @@
  POD_sorcery_legendary_studying_progress_mystic: "No tienes #V 100#! de [GetTrait('lifestyle_mystic').GetName(GetPlayer)] [trait_level_track_xp|E]"
  POD_sorcery_legendary_studying_progress_pod_crafter: "No tienes #V 100#! de [GetTrait('pod_crafter').GetName(GetPlayer)] [trait_level_track_xp|E] en ninguna rama"
  POD_sorcery_legendary_studying_progress_spirit_friend: "No tienes ningún [friend|E] $POD_splat_spirit$ u otra [relation|E] similar"
- POD_sorcery_legendary_studying_progress_friend_5: "No tienes 5 [friend|E] u otras [relation|E] similares"
+ POD_sorcery_legendary_studying_progress_friend_5: "No tienes 5 [friend|E] u otra [relation|E] similar"
  POD_sorcery_legendary_studying_progress_learning_30: "No tienes [learning|E] superior a 30"
  POD_sorcery_legendary_studying_progress_exelent_physician: "Tu [GetCourtPositionType('court_physician_court_position').GetName()] no tiene una [aptitude|E] excelente"
  POD_sorcery_legendary_studying_progress_demon_buddy: "No tienes ningún [friend|E] $POD_splat_demon$, Maestro u otra [relation|E] similar"
@@ -343,7 +343,7 @@
  POD_journey_progress_target_rank_kingdom: "[PlayerJourneyTarget.GetFirstName] gobierna un [kingdom|E]"
  POD_journey_progress_target_rank_duchy: "[PlayerJourneyTarget.GetFirstName] gobierna un [duchy|E]"
  POD_journey_progress_target_rank_county: "[PlayerJourneyTarget.GetFirstName] gobierna un [county|E]"
- POD_journey_progress_target_rank_barony: "[PlayerJourneyTarget.GetFirstName] solo gobierna un [barony|E]"
+ POD_journey_progress_target_rank_barony: "[PlayerJourneyTarget.GetFirstName] solo gobierna una [barony|E]"
  POD_journey_progress_target_rank_unlanded: "[PlayerJourneyTarget.GetFirstName] es [unlanded|E]"
  
  POD_journey_progress_target_age_1000: "[PlayerJourneyTarget.GetFirstName] tiene más de #V 1000#! años"
@@ -358,8 +358,8 @@
  
  POD_journey_progress_target_obfuscate: "[PlayerJourneyTarget.GetFirstName] conoce la [GetTrait('obfuscate').GetName(GetNullCharacter)]"
  POD_journey_progress_target_obfuscateadvanced: "[PlayerJourneyTarget.GetFirstName] conoce la [GetTrait('obfuscateadvanced').GetName(GetNullCharacter)]"
- POD_journey_progress_target_chimerstry: "[PlayerJourneyTarget.GetFirstName] conoce la [GetTrait('chimerstry').GetName(GetNullCharacter)]"
- POD_journey_progress_target_chimerstryadvanced: "[PlayerJourneyTarget.GetFirstName] conoce la [GetTrait('chimerstryadvanced').GetName(GetNullCharacter)]"
+ POD_journey_progress_target_chimerstry: "[PlayerJourneyTarget.GetFirstName] conoce el [GetTrait('chimerstry').GetName(GetNullCharacter)]"
+ POD_journey_progress_target_chimerstryadvanced: "[PlayerJourneyTarget.GetFirstName] conoce el [GetTrait('chimerstryadvanced').GetName(GetNullCharacter)]"
  
  POD_journey_progress_unity_2: "[GetPlayer.GetDynasty.GetName] posee #TOOLTIP:DYNASTY_PERK,unity_legacy_2 #L $unity_legacy_2_name$#!#!"
  POD_journey_progress_san_michele_cloisters: "Posees el #TOOLTIP:BUILDING,rome_san_michele_cloisters_03 #L $building_rome_san_michele_cloisters_03$#!#!"

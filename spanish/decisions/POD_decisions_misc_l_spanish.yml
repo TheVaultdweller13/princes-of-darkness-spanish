@@ -226,7 +226,7 @@
  POD_torture_all_prisoners_decision_desc: "$POD_torture_all_prisoners_decision_tooltip$.\n#weak Esta decisión tiene los mismos resultados que la [character_interaction|E] de torturar. Debido a limitaciones técnicas, no se muestran todos los efectos.#!"
  POD_torture_all_prisoners_decision_tooltip: "Torturarás a todos los que estén en tu [prison|E]"
  POD_torture_all_prisoners_decision_confirm: "Tenía que hacerse"
- POD_torture_all_prisoners_decision_effect: "[GetPlayer.MakeScope.ScriptValue('mass_torture_num_of_prisoners')|V0] [prisoners|E] serán torturados. No descubrirás ningún [secrets|E] de esta manera."
+ POD_torture_all_prisoners_decision_effect: "[GetPlayer.MakeScope.ScriptValue('mass_torture_num_of_prisoners')|V0] [prisoners|E] serán torturados. No descubrirás [secrets|E] de esta manera."
  POD_torture_all_prisoners_decision_effect_stress_sadistic: "Como eres [GetTrait('sadistic').GetName(GetPlayer)], perderás [stress|E]."
  POD_torture_all_prisoners_decision_effect_stress_zealous: "Como eres [GetTrait('zealous').GetName(GetPlayer)], perderás [stress|E] por cada infiel que tortures."
  POD_torture_all_prisoners_decision_effect_stress_gain: "Podrías ganar una cantidad masiva de [stress|E] ya que tienes una personalidad benévola #weak ([GetTrait('compassionate').GetName(GetNullCharacter)], [GetTrait('craven').GetName(GetNullCharacter)], [GetTrait('just').GetName(GetNullCharacter)], [GetTrait('forgiving').GetName(GetNullCharacter)], [GetTrait('generous').GetName(GetNullCharacter)], [GetTrait('trusting').GetName(GetNullCharacter)], o [GetTrait('content').GetName(GetNullCharacter)] [traits|E])#!"
@@ -274,7 +274,7 @@
  
  # Epidemic
  heal_chulorviosis_decision: "Curación de la Chulorviosis"
- heal_chulorviosis_decision_desc: "La Chulorviosis es una enfermedad terrible, claramente sobrenatural. La criatura parásita te está controlando lentamente, dejándote con muy pocas opciones para sobrevivir.\nPuedes curaros si eres beatífico o esclavo, o si te posee un espíritu del $glossary_triat$ o de Gaia. Tener un amigo o amante beatífico o demonio que te cure también funcionará."
+ heal_chulorviosis_decision_desc: "La Chulorviosis es una enfermedad terrible, claramente sobrenatural. La criatura parásita te está controlando lentamente, dejándote con muy pocas opciones para sobrevivir.\nPuedes curaros si eres beatífico o esclavo, o si te posee un espíritu de la $glossary_triat$ o de Gaia. Tener un amigo o amante beatífico o demonio que te cure también funcionará."
  heal_chulorviosis_decision_tooltip: "El tiempo se agota."
  heal_chulorviosis_decision_confirm: "¡Fuera de mi cabeza!"
  heal_chulorviosis_decision_custom: "Tiene algún [friend|E] [GetTrait('beatific').GetName( GetPlayer )] o [GetTrait('demon').GetName( GetPlayer )]"
