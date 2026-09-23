@@ -37,13 +37,13 @@
  archid_gecko_pads_modifier: "Archid: Almohadillas de gecko"
 
  archid_bladed_tail_modifier: "Archid: Cola de hoja"
- archid_bladed_tail_modifier_desc: "Probabilidad basada en la [prowess|E] de infligir 1 [POD_superficial_damage_with_box|E] a los [knights|E] y [commanders|E] enemigos al actuar como [commander|E] durante la [combat_phase|E], o a tu oponente durante el [single_combat_duel_plural|E]."
+ archid_bladed_tail_modifier_desc: "Probabilidad basada en la [prowess|E] de infligir 1 [POD_superficial_damage_with_box|E] a los [knights|E] y [commanders|E] enemigos al actuar como [commander|E] durante la [combat_phase|E], o a tu oponente durante los [single_combat_duel_plural|E]."
 
  archid_constricting_coils_modifier: "Archid: Espirales constrictoras"
  archid_constricting_coils_modifier_desc: "Más probabilidades de [imprison|E] a [characters|E] tras un [siege|E] o [raid|E] exitoso."
 
  archid_poison_sacs_modifier: "Archid: Sacos de veneno"
- archid_poison_sacs_modifier_desc: "Otorga [GetModifier('POD_mokole_poison_sacs_battle_modifier').GetNameWithTooltip] (acumulable) a los [knights|E] y [commanders|E] enemigos al actuar como [commander|E] durante la [combat_phase|E], o a tu oponente durante el [single_combat_duel_plural|E]."
+ archid_poison_sacs_modifier_desc: "Otorga [GetModifier('POD_mokole_poison_sacs_battle_modifier').GetNameWithTooltip] (acumulable) a los [knights|E] y [commanders|E] enemigos al actuar como [commander|E] durante la [combat_phase|E], o a tu oponente durante los [single_combat_duel_plural|E]."
  POD_mokole_poison_sacs_battle_modifier: "[battle_modifier|E]: Sacos de veneno"
 
  archid_predators_roar_modifier: "Archid: Rugido del depredador"
@@ -51,7 +51,7 @@
  POD_mokole_predators_roar_modifier: "[battle_modifier|E]: Rugido del depredador"
 
  archid_hinged_jaw_modifier: "Archid: Mandíbula articulada"
- archid_hinged_jaw_modifier_desc: "Probabilidad basada en la [prowess|E] de infligir [GetTrait('one_legged').GetName(GetNullCharacter)] a los [knights|E] y [commanders|E] al actuar como [commander|E] durante la [combat_phase|E], o a tu oponente durante el [single_combat_duel_plural|E]."
+ archid_hinged_jaw_modifier_desc: "Probabilidad basada en la [prowess|E] de infligir [GetTrait('one_legged').GetName(GetNullCharacter)] a los [knights|E] y [commanders|E] al actuar como [commander|E] durante la [combat_phase|E], o a tu oponente durante los [single_combat_duel_plural|E]."
 
 
  archid_sharp_claws_modifier: "Archid: Garras afiladas"
@@ -64,7 +64,7 @@
  archid_ancient_strength_modifier_desc: "Convierte todo tu [POD_superficial_damage|E] en [POD_aggravated_damage|E] contra personajes vulnerables a la plata o al oro"
  archid_undying_flesh_modifier: "Archid: Carne inmortal"
  archid_prehistoric_terror_modifier: "Archid: Terror prehistórico"
- archid_prehistoric_terror_modifier_desc: "Otorga [GetModifier('POD_mokole_primal_fear_modifier').GetNameWithTooltip] a los [knights|E] y [commanders|E] enemigos al actuar como [commander|E] durante la [combat_phase|E], o a tu oponente durante el [single_combat_duel_plural|E]."
+ archid_prehistoric_terror_modifier_desc: "Otorga [GetModifier('POD_mokole_primal_fear_modifier').GetNameWithTooltip] a los [knights|E] y [commanders|E] enemigos al actuar como [commander|E] durante la [combat_phase|E], o a tu oponente durante los [single_combat_duel_plural|E]."
  POD_mokole_primal_fear_modifier: "[battle_modifier|E]: Miedo primario"
 
  POD_mokole_song_debuff_1_modifier: "Canto de la Gran Bestia: Asombro"

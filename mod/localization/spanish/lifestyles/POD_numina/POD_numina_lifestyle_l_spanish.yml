@@ -1,7 +1,7 @@
 ﻿l_spanish:
 
  game_concept_numina: "Numina"
- game_concept_numina_desc: "#bold Numina#! es un término genérico para los poderes sobrenaturales que están al alcance de los mortales y los Durmientes. Los tres grupos principales de Numina son el [sorcery_lifestyle|E], el [psi_lifestyle|E] y la [Glossary('Fe Verdadera','game_concept_true_faith_desc')]."
+ game_concept_numina_desc: "#bold Numina#! es un término genérico para los poderes sobrenaturales que están al alcance de los mortales y los Durmientes. Los tres grupos principales de Numina son la [sorcery_lifestyle|E], los [psi_lifestyle|E] y la [Glossary('Fe Verdadera','game_concept_true_faith_desc')]."
 
  game_concept_psi_lifestyle: "Fenómenos Psíquicos"
  game_concept_psi_lifestyle_desc: "Una categoría de [Glossary('Numina','game_concept_numina_desc')]. La capacidad de alterar (u observar remotamente) la realidad, directamente ligada a la mente/cerebro del personaje."
@@ -187,7 +187,7 @@
  ECTOPLASMIC_GENERATION_2_PERK_EFFECT: "#weak El psíquico puede convertir el plasma en una forma similar a la niebla.#!"
  ECTOPLASMIC_GENERATION_3_PERK_EFFECT: "$unlock_forging_node$ Permitir que el dueño del artefacto hiera a espíritus\n#weak El psíquico puede endurecer la niebla ectoplásmica a voluntad y darle forma manualmente.#!"
  ECTOPLASMIC_GENERATION_4_PERK_EFFECT: "Mejora el [artifact|E] creado por [GetPerk('ectoplasmic_generation_3_perk').GetName( GetNullCharacter )] añadiendo también un [modifier|E] basado en el tipo de [artifact|E]\n#weak El psíquico puede dar forma a sus constructos ectoplásmicos con su mente en el momento de su creación.#!"
- ECTOPLASMIC_GENERATION_5_PERK_EFFECT: "Mejora el [artifact|E] creado por [GetPerk('ectoplasmic_generation_4_perk').GetName( GetNullCharacter )] añadiendo también un [modifier|E] basado en el tipo de [artifact|E]\n$unlock_forging_node$ Sacrifica un $POD_splat_wraith$ [prisoner|E] para mejorar un [artifact|E] basado en los [traits|E] del sacrificio\nObtén acceso a la mayoría de los $POD_plasmic_maa$ [men_at_arms|E]\n#weak El psíquico puede crear un constructo rudimentario inteligente de ectoplasma que obedece su voluntad.#!"
+ ECTOPLASMIC_GENERATION_5_PERK_EFFECT: "Mejora el [artifact|E] creado por [GetPerk('ectoplasmic_generation_4_perk').GetName( GetNullCharacter )] añadiendo también un [modifier|E] basado en el tipo de [artifact|E]\n$unlock_forging_node$ Sacrifica un $POD_splat_wraith$ [prisoner|E] para mejorar un [artifact|E] basado en los [traits|E] del sacrificio\nObtén acceso a la mayoría de $POD_plasmic_maa$ [men_at_arms|E]\n#weak El psíquico puede crear un constructo rudimentario inteligente de ectoplasma que obedece su voluntad.#!"
 
  empathic_healing_1_perk_name: "Calmar el Espíritu"
  empathic_healing_2_perk_name: "Tejer la Carne"

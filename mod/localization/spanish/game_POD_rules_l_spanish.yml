@@ -73,7 +73,7 @@
 
  rule_pod_sorcery_availability: "$POD_gamerule$ Disponibilidad de #TOOLTIP:GAME_TRAIT,sorcerer,[GetNullCharacter] #L Hechicería#!#!"
  setting_pod_sorcery_availability_restricted: "Restringido"
- setting_pod_sorcery_availability_restricted_desc: "Solo los $POD_splat_bastet$ y los [splats|E] de tipo humano como los $POD_splat_hunter_plural$, $POD_splat_ghoul_plural$ o los [GetTrait('kinfolk').GetName(GetNullCharacter)] pueden aprender #TOOLTIP:GAME_TRAIT,sorcerer,[GetNullCharacter] #L Hechicería#!#!.\nTras el $pod_Embrace$, se convierte en [GetTrait('bloodsorcery').GetName(GetNullCharacter)]."
+ setting_pod_sorcery_availability_restricted_desc: "Solo los $POD_splat_bastet$ y los [splats|E] de tipo humano como los $POD_splat_hunter_plural$, $POD_splat_ghoul_plural$ o la [GetTrait('kinfolk').GetName(GetNullCharacter)] pueden aprender #TOOLTIP:GAME_TRAIT,sorcerer,[GetNullCharacter] #L Hechicería#!#!.\nTras el $pod_Embrace$, se convierte en [GetTrait('bloodsorcery').GetName(GetNullCharacter)]."
  setting_pod_sorcery_availability_unrestricted: "#high @haight_icon! Sin restricciones#!"
  setting_pod_sorcery_availability_unrestricted_desc: "Cualquier [splat|E] puede aprender #TOOLTIP:GAME_TRAIT,sorcerer,[GetNullCharacter] #L Hechicería#!#!.\nEl rasgo se mantiene tras el $pod_Embrace$."
 
@@ -191,7 +191,7 @@
 
  rule_pod_flaying_plague: "$POD_gamerule$ Plaga Desolladora"
  setting_pod_flaying_plague_enabled: "Activado"
- setting_pod_flaying_plague_enabled_desc: "En los marcadores donde los $POD_splat_werewolf_plural$ están presentes, una plaga mortal asolará el mundo, poniendo en peligro las vidas de los $glossary_fera$ y sus [GetTrait('kinfolk').GetName(GetNullCharacter)]."
+ setting_pod_flaying_plague_enabled_desc: "En los marcadores donde los $POD_splat_werewolf_plural$ están presentes, una plaga mortal asolará el mundo, poniendo en peligro las vidas de los $glossary_fera$ y su [GetTrait('kinfolk').GetName(GetNullCharacter)]."
  setting_pod_flaying_plague_disabled: "#high Desactivado#!"
  setting_pod_flaying_plague_disabled_desc: "La Plaga Desolladora no ocurrirá."
 
@@ -417,11 +417,11 @@
   
  rule_pod_ai_levy_discount: "$POD_gamerule$ Descuento de [levy|E] para la IA"
  setting_pod_ai_levy_discount_disabled: "Desactivado"
- setting_pod_ai_levy_discount_disabled_desc: "Los personajes de la IA pagan la cantidad normal de mantenimiento por las [levies|E]."
+ setting_pod_ai_levy_discount_disabled_desc: "Los personajes de la IA pagan la cantidad normal de mantenimiento por la [levies|E]."
  setting_pod_ai_levy_discount_50: "#high 50% de descuento#!"
- setting_pod_ai_levy_discount_50_desc: "El mantenimiento de las [levy|E] es un #V 50%#! más barato para la IA."
+ setting_pod_ai_levy_discount_50_desc: "El mantenimiento de la [levy|E] es un #V 50%#! más barato para la IA."
  setting_pod_ai_levy_discount_90: "#high 90% de descuento#!"
- setting_pod_ai_levy_discount_90_desc: "El mantenimiento de las [levy|E] es un #V 90%#! más barato para la IA."
+ setting_pod_ai_levy_discount_90_desc: "El mantenimiento de la [levy|E] es un #V 90%#! más barato para la IA."
  
  # Overwritten vanilla game rules
   rule_POD_conquerors_frequency: "$rule_conquerors_frequency$"

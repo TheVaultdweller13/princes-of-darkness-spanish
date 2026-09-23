@@ -13,7 +13,7 @@
  
  investments_of_soul_focus: "Enfoque en Investiduras del Alma"
  investments_of_soul_focus_modifier: "[GetFocus('investments_of_soul_focus').GetName]"
- investments_of_soul_focus_desc: "Favores de los [Glossary('Yama Kings','podgloss.yamaking')]."
+ investments_of_soul_focus_desc: "Favores de los [Glossary('Reyes Yama','podgloss.yamaking')]."
  investments_of_soul_focus_effect_desc: "Centrarse en Investiduras del Alma otorga:"
  
  GAINS_INVESTITURE_LIFESTYLE_XP: "Gana $VALUE|V0$ de experiencia de [investiture_lifestyle|E]"
@@ -38,9 +38,9 @@
   
  demonic_investment_visible: "Investiduras Demoníacas"
 
- INVESTITURE_COST_EFFECT: "#clickable Esta [perk|E] cuesta $VALUE|V0$ [Select_CString( EqualTo_CFixedPoint( '(CFixedPoint)$VALUE|q$', '(CFixedPoint)1' ), 'punto', 'puntos' )] de ventaja#!"
- INVESTITURE_STACKING_EFFECT: "#clickable Esta [perk|E] se puede comprar muchas veces.#!"
- INVESTITURE_VISUAL_CHANGE_EFFECT: "#N ¡Esta [perk|E] cambiará permanentemente tu apariencia!#!"
+ INVESTITURE_COST_EFFECT: "#clickable Este [perk|E] cuesta $VALUE|V0$ [Select_CString( EqualTo_CFixedPoint( '(CFixedPoint)$VALUE|q$', '(CFixedPoint)1' ), 'punto', 'puntos' )] de ventaja#!"
+ INVESTITURE_STACKING_EFFECT: "#clickable Este [perk|E] se puede comprar muchas veces.#!"
+ INVESTITURE_VISUAL_CHANGE_EFFECT: "#N ¡Este [perk|E] cambiará permanentemente tu apariencia!#!"
 
  investiture_armor_perk_name: "Armadura #low ([ROOT.Char.MakeScope.ScriptValue('POD_investiture_armor_perk_modifier_stacks')])#!"
  investiture_backgrounds_perk_name: "Trasfondos #low ([ROOT.Char.MakeScope.ScriptValue('POD_investiture_backgrounds_perk_modifier_stacks')])#!"
@@ -129,7 +129,7 @@
 
  investments_of_soul_visible: "Investiduras del Alma"
 
- NEEDS_COMMUNE_WITH_THE_YAMA_KINGS_TEXT: "@warning_icon!#X Necesitas comulgar con los [Glossary('Yama Kings','podgloss.yamaking')] situados en la [umbra|E] - [UmbraGlossary('yomi_wan')] para desbloquear esta ventaja.#!"
+ NEEDS_COMMUNE_WITH_THE_YAMA_KINGS_TEXT: "@warning_icon!#X Necesitas comulgar con los [Glossary('Reyes Yama','podgloss.yamaking')] situados en la [umbra|E] - [UmbraGlossary('yomi_wan')] para desbloquear esta ventaja.#!"
  NEEDS_BE_CHI_USER_FOR_FOCUS_TEXT: "@warning_icon!#X Necesitas ser un usuario de chi para elegir este enfoque#!\n"
  
  mask_of_yomi_perk_name: "La Máscara de Yomi"
@@ -140,16 +140,16 @@
  union_of_oppositions_perk_name: "La Unión de Oposiciones"
  iron_hands_perk_name: "Las Manos de Hierro"
  breath_of_knowledge_perk_name: "El Aliento del Conocimiento"
- touch_of_yama_kings_perk_name: "El Toque de los [Glossary('Yama Kings','podgloss.yamaking')]"
+ touch_of_yama_kings_perk_name: "El Toque de los [Glossary('Reyes Yama','podgloss.yamaking')]"
  unfolding_scarlet_lotus_perk_name: "Loto Escarlata Desplegándose"
 
  MASK_OF_YOMI_PERK_EFFECT: "El rasgo [GetTrait('witch').GetName( GetPlayer )] se ocultará automáticamente al ser expuesto\nRevierte todos los cambios de apariencia forzados por la investidura\n#F Las Investiduras del personaje ya no exhiben señales reveladoras. Ninguna cantidad de sondeo mental, visión del alma o detección de la verdad puede asegurar que el personaje es un [akuma|E] o forzarla a traicionar sus actividades injustas.#!"
- BLACK_WHISPERS_PERK_EFFECT: "Como [character_interaction|E], te permite conocer cada secreto e intriga del objetivo.\n#F Los espías de los [Glossary('Yama Kings','podgloss.yamaking')] están en todas partes, y lo que sus [akuma|E] no ven ni oyen, sus esbirros espirituales lo aprenden.#!"
+ BLACK_WHISPERS_PERK_EFFECT: "Como [character_interaction|E], te permite conocer cada secreto e intriga del objetivo.\n#F Los espías de los [Glossary('Reyes Yama','podgloss.yamaking')] están en todas partes, y lo que sus [akuma|E] no ven ni oyen, sus esbirros espirituales lo aprenden.#!"
  EBON_FOUNTAIN_PERK_EFFECT: "Pierdes 10 de [stress|E] cada mes\n#F El P'o del personaje está conectado a un manantial de poder demoníaco.#!"
  LUCK_OF_YOMI_PERK_EFFECT: "Como [decision|E], te permite gastar puntos de investidura para ganar oro y prestigio. Si ya has desbloqueado la decisión, recompensará con más oro.\n#F Los Reyes Yama alteran el joss del personaje, y la fortuna sonríe al [akuma|E] como resultado.#!"
  SAVAGE_KISS_PERK_EFFECT: "#F El alma del personaje es sometida a las caricias de los Mukade.#!"
- UNION_OF_OPPOSITIONS_PERK_EFFECT: "#F Los [Glossary('Yama Kings','podgloss.yamaking')] ponen sus manos sobre el personaje y este es remodelado.#!"
- IRON_HANDS_PERK_EFFECT: "#F El personaje ahora se mueve con el poder de los [Glossary('Yama Kings','podgloss.yamaking')] tras ella.#!"
- BREATH_OF_KNOWLEDGE_PERK_EFFECT: "#F Los [Glossary('Yama Kings','podgloss.yamaking')] susurran su conocimiento a los oídos del personaje, y este arde en su cerebro como hierro al rojo vivo.#!"
+ UNION_OF_OPPOSITIONS_PERK_EFFECT: "#F Los [Glossary('Reyes Yama','podgloss.yamaking')] ponen sus manos sobre el personaje y este es remodelado.#!"
+ IRON_HANDS_PERK_EFFECT: "#F El personaje ahora se mueve con el poder de los [Glossary('Reyes Yama','podgloss.yamaking')] tras ella.#!"
+ BREATH_OF_KNOWLEDGE_PERK_EFFECT: "#F Los [Glossary('Reyes Yama','podgloss.yamaking')] susurran su conocimiento a los oídos del personaje, y este arde en su cerebro como hierro al rojo vivo.#!"
  TOUCH_OF_YAMA_KINGS_PERK_EFFECT: "#F El toque del [UmbraGlossaryLocalized('yomi_wan','Infierno Yomi')] está sobre el personaje.#!"
  UNFOLDING_SCARLET_LOTUS_PERK_EFFECT: "Ignora el requisito de nivel de [Glossary('Dharma','podgloss.dharma')] para elegir ventajas de arte.\n#F Las Perdiciones susurran al personaje los secretos de su estado exaltado.#!"
