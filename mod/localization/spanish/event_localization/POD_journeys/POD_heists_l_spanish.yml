@@ -111,13 +111,13 @@
  POD_heist_desc_node_learning: "Este pasillo está lleno de trampas.\nUn poco de ingenio y conocimiento de la construcción te ayudarán a evitarlas."
  POD_heist_effect_node_learning_success: "Je. Pan comido"
  POD_heist_effect_node_learning_fail: "Las trampas te rozan un poco"
- POD_heist_effect_node_learning_critfail: "# sin cambios"
+ POD_heist_effect_node_learning_critfail: "AY"
 
  POD_heist_title_node_prowess: "¡Guardias!"
  POD_heist_desc_node_prowess: "Una patrulla te ha atrapado. Es demasiado tarde para huir.\nLos guardias no son rival para ti, pero ¿podrás derrotarlos lo suficientemente rápido como para no atraer la atención?"
  POD_heist_effect_node_prowess_success: "Como un cuchillo caliente a través de la mantequilla"
  POD_heist_effect_node_prowess_fail: "Tu pelea hace algo de ruido"
- POD_heist_effect_node_prowess_critfail: "# sin cambios"
+ POD_heist_effect_node_prowess_critfail: "APLASTAS a esos guardias como un terremoto"
 
  POD_heist_title_node_fight_elite: "Una lucha peligrosa"
  POD_heist_desc_node_fight_elite: "Ves a uno de los [CurrentHeistTarget.Custom('KnightCulturePlural')] de [CurrentHeistTarget.GetFirstNamePossessive].\nLidiar con ellos rápidamente te permitirá salir sin levantar [suspicion|E]."
@@ -298,7 +298,7 @@
 
  # Spymaster route (Rivalries) [Dee]
 
- POD_heists.1011.t: "# sin cambios"
+ POD_heists.1011.t: "Complicación: Cuchillos fuera"
  POD_heists.1011.desc.coterie: "Habíamos elegido el peor momento posible para infiltrarnos en [GetPlayer.GetCurrentLocation.GetCounty.GetTitle.GetNameNoTier]. "
  POD_heists.1011.desc.nocoterie: "Había elegido el peor momento posible para infiltrarme en [GetPlayer.GetCurrentLocation.GetCounty.GetTitle.GetNameNoTier]. "
  POD_heists.1011.desc: "Alguna disputa territorial ha sumido a esta corte en el caos. Se habla de guerra.\n\nLa tensión es tan densa que podrías cortarla con un cuchillo. Todo el mundo aquí solo busca una excusa para degollar a alguien. "
@@ -749,7 +749,7 @@
  POD_heists.2043.desc: "La [infiltration|E] ha llegado a una etapa crítica. Debido a experiencias pasadas, espero que las peores trampas estén aquí. Sin embargo, no parezco notar nada fuera de lo común a primera vista, lo que no logra calmar mis nervios. Es mucho más probable que algo esté muy bien oculto a que no haya nada en absoluto."
  POD_heists.2043.a: "Comprobemos todo dos veces..." #intrigue duel
  POD_heists.2043.a.success: "¡Ja! ¡Te tengo!" #continue
- POD_heists.2043.a.failure: "# sin cambios" #death
+ POD_heists.2043.a.failure: "¡¿Eso es una... ROCA?!" #death
  POD_heists.2043.b: "¿Dónde podría estar la emboscada?" #martial duel
  #Same results and loca keys as above
 
