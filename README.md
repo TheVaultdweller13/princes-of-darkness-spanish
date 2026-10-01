@@ -2,7 +2,7 @@
 
 Mod de traducción al castellano (España) de *Princes of Darkness* para Crusader Kings III ([Steam Workshop 3303353422](https://steamcommunity.com/sharedfiles/filedetails/?id=3303353422)).
 
-Versión de [Princes of Darkness](https://steamcommunity.com/workshop/filedetails/?id=2216659254) para la que está hecha: <!-- base-version -->1.19.0.6 «Descent of the Dragons»<!-- /base-version -->.
+Versión de [Princes of Darkness](https://steamcommunity.com/workshop/filedetails/?id=2216659254) para la que está hecha: <!-- base-version -->1.20.0.3 «Live by the Sword»<!-- /base-version -->.
 
 > **Para agentes e IA:** el punto de partida es **[AGENTS.md](AGENTS.md)** (qué hacer según el encargo) y, para traducir, **[tools/TRADUCIR_LOTE.md](tools/TRADUCIR_LOTE.md)**. El trabajo de un agente termina en `spanish/`: nada de editar `.yml` a mano, ejecutar `build`, tocar `mod/` ni modificar el repositorio con git.
 
