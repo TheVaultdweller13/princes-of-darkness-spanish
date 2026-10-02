@@ -29,7 +29,7 @@
   
  childofgaia_objective_decision: "La unidad de Gaia"
  childofgaia_objective_decision_tooltip: "Demostrar que la unidad no es una debilidad es un desafío interminable."
- childofgaia_objective_decision_desc: "Siempre nos esforzamos por la unidad entre la Nación Garou, pero las tribus más belicosas aún nos rechazan. Solo a través de la fuerza que deben respetar, o fomentando relaciones que no puedan ignorar, podrá comenzar la unificación."
+ childofgaia_objective_decision_desc: "Siempre hemos buscado la unidad entre la Nación Garou, pero las tribus más belicosas aún nos rehúyen. Solo mediante una fuerza que deban respetar, o fomentando relaciones que no puedan ignorar, puede comenzar la unificación."
  childofgaia_objective_decision_effect_tooltip: "Obtendrás el Imperio de los Hijos de Gaia [title|E], una poderosa reliquia de tu tribu, y estarás un paso más cerca de unir a los Garou." 
  childofgaia_objective_decision_confirm: "Reuníos y escuchad"
  childofgaia_decision_custom: "El Túmulo del Mar Blanco, en [GetTitleByKey('b_kem').GetNameNoTier], debe estar completamente construido"
@@ -52,6 +52,15 @@
  pod1230objectives_fera.7.desc: "Aunque son muy respetados por su destreza en combate y sus famosos narradores, los Fianna suelen ser considerados demasiado indisciplinados por las otras tribus. Esta falta de disciplina les ha hecho sufrir importantes reveses en las Islas, llevándolos a estar cada vez más aislados del resto de la Nación Garou.\nSin embargo, eso se acabó, ya que una sólida sucesión de gobernantes y un renovado sentido de propósito han visto a los Fianna ascender una vez más como los señores de Britania. Mientras ya se están componiendo canciones para inmortalizar esta gran hazaña, los Fianna empezarán ahora a mirar hacia el exterior, quizás para brindar su ayuda al resto de la Nación.\n...Después de recuperarse del banquete más épico que jamás hayan organizado."
  pod1230objectives_fera.7.a: "...me duele la cabeza."
  pod1230objectives_fera.8.b: "Los celtas vienen."
+ whitehowler_objective_decision: "Aullar de Nuevo"
+ whitehowler_objective_decision_tooltip: "Nos hemos redimido ante Gaia."
+ whitehowler_objective_decision_desc: "Se creía que nuestra tribu estaba perdida ante el $glossary_wyrm$, pero con gran esfuerzo y la ayuda de los espíritus podemos restaurarla." 
+ whitehowler_objective_decision_effect_tooltip: "Obtén acceso al legado de los Aulladores Blancos para tu dinastía y acércate un paso más a unir a los Garou" 
+ whitehowler_objective_decision_confirm: "¡Nos mantenemos junto a la Nación Garou una vez más!"
+ pod1230objectives_fera.62.t: "Aullar de Nuevo"
+ pod1230objectives_fera.62.desc: "Hasta ahora, los Aulladores Blancos no eran más que una tribu perdida, que había caído ante la Wyrm y se había convertido en los infames Bailarines de la Espiral Negra hacía siglos. Nadie esperaba que unos Garou ronin de ascendencia picta surgieran y reclamaran su herencia largamente perdida.\nContra todo pronóstico, se aventuraron en la Umbra en busca de conocimiento de los espíritus de sus antepasados sobre sus hermanos caídos, mientras daban caza y eliminaban a muchos de sus parientes corruptos por todo el mundo y recuperaban en el proceso las tierras ancestrales de Pictland. En apoyo a sus esfuerzos, León dio un paso al frente como Incarna y los bendijo, convirtiéndose de nuevo en su Tótem Tribal.\nLo que la mayoría de los Garou creía imposible parece haberse hecho realidad: los Aulladores Blancos han vuelto, un faro de esperanza para toda la Nación Garou."
+ pod1230objectives_fera.62.a: "Los Aulladores Blancos regresan a la Causa de Gaia."
+ pod1230objectives_fera.63.b: "De algún modo los Aulladores Blancos han vuelto..."
    
  get_fenris_objective_decision: "Berserkers de Gaia"
  get_fenris_objective_decision_tooltip: "La camada de Odín sigue viva. ¡Una afrenta para todos los guerreros del Gran Fenris!"
@@ -59,7 +68,7 @@
  get_fenris_objective_decision_effect_tooltip: "Obtendrás el Imperio de la Camada de Fenris [title|E], una poderosa reliquia de tu tribu, y estarás un paso más cerca de unir a los Garou." 
  get_fenris_objective_decision_confirm: "¡Derribaremos el Valhalla!"
  get_fenris_decision_custom: "El Túmulo del Invierno Fimbul, en [GetTitleByKey('b_biton').GetNameNoTier], debe estar completamente construido"
- get_fenris_decision_custom_a: "El Estado Libre y el imperio de Midgard no existen o están bajo tu control."
+ get_fenris_decision_custom_a: "El Estado Libre (Finlandia) y el imperio de Midgard (Escandinavia) no existen o los posees tú."
  
  pod1230objectives_fera.9.t: "Berserkers de Gaia"
  pod1230objectives_fera.9.desc: "Los Camada de Fenris son combatientes absolutamente temibles y nadie en la Nación Garou lo niega. Pero sus métodos violentos, que rozan lo abusivo, los mantienen enfrentados al resto de las tribus. Pero los tiempos han cambiado.\nCon el crecimiento desenfrenado de la civilización y las sanguijuelas que la controlan, los Camada de Fenris abogan por la unidad de la Nación Garou bajo su liderazgo como Alfas indiscutibles. Con la exitosa recuperación de su Tierra Natal sueca, presentan argumentos sólidos a su favor y muchos ya están acudiendo en masa a sus estandartes.\nLa sangre y la violencia derribarán a los enemigos de Gaia, y si eso no es suficiente, aún más derramamiento de sangre debería bastar..."
@@ -75,7 +84,7 @@
  redtalon_decision_requirement: "Debes tener un [spirit_companion|E] de [GetFaithByKey('velvet_brood').GetName] con rango máximo." 
  
  pod1230objectives_fera.11.t: "Ira de Gaia"
- pod1230objectives_fera.11.desc: "Las Garras Rojas nunca cedieron ante el Impergium, esa purga de la humanidad que consideran necesaria. Mientras las otras tribus abandonaban la idea, se vieron cada vez más aisladas. Pero las Garras Rojas no son nada si no es paciencia.\nRetirándose a las estepas aún salvajes, se aseguraron de purgar la zona de cualquier forastero no deseado y esperaron su momento. Mientras las otras tribus caen presa del crecimiento de la humanidad y los vampiros que la acompaña, las Garras Rojas prosperan. Y ahora, son la fuerza más poderosa que queda en la Nación Garou y sus aullidos se harán oír.\nEl Impergium seguirá según lo previsto y Gaia será salvada con la sangre de la humanidad, les guste o no."
+ pod1230objectives_fera.11.desc: "Las Garras Rojas nunca cedieron en el Impergium, esa matanza de la humanidad que consideran necesaria. Al abandonar las demás tribus la idea, se encontraron cada vez más aisladas. Pero las Garras Rojas son, ante todo, pacientes.\nRetirados a la estepa aún salvaje, se aseguraron de purgar la zona de cualquier forastero no deseado y aguardaron su momento. Mientras las demás tribus sucumben al crecimiento de la humanidad y a los vampiros que llegan con él, las Garras Rojas prosperan. Y ahora son la fuerza más fuerte que queda en la Nación Garou y se oirán sus aullidos.\nEl Impergium seguirá según lo previsto y Gaia se salvará en la sangre de la humanidad, quiera esta o no."
  pod1230objectives_fera.11.a: "Volverán a temer a los lobos."
  pod1230objectives_fera.12.b: "El hombre contra la naturaleza, otra vez"
   
@@ -88,7 +97,7 @@
  warderofmen_decision_custom_a: "Posees al menos 5 libros, diarios o artefactos de inventario similares."
  
  pod1230objectives_fera.13.t: "Resiliencia de Gaia"
- pod1230objectives_fera.13.desc: "Los Protectores de los Hombres son rápidamente descartados por otras tribus como «amantes de la humanidad», pero al Protector no le importa. Al igual que su tótem espiritual, la cucaracha, se esfuerzan y sobreviven a todo. La humanidad y la civilización son ahora ascendentes, y el Protector lo sabe. Su profundo conocimiento de la inevitabilidad de la victoria de la humanidad es lo que les ha llevado a la posición de fuerza en la que se encuentran hoy.\nMientras las otras tribus intentan aferrarse a eras pretéritas, los Protectores allanan el camino hacia adelante, confiados en la racionalidad de sus planes. Al igual que ellos, la Nación Garou perdurará y evolucionará pero, lo más importante, sobrevivirá."
+ pod1230objectives_fera.13.desc: "Los Guardianes de los Hombres son rápidamente descartados por las otras tribus como «amantes de la humanidad», pero a los Guardianes no les importa. Como su espíritu tótem, la cucaracha, se esfuerzan y sobreviven a todo. La humanidad y la civilización están ahora en ascenso, y los Guardianes lo saben. Su profunda comprensión de lo ineluctable de la victoria de la humanidad es lo que los ha llevado a la posición de fuerza en que se hallan hoy.\nMientras las demás tribus intentan aferrarse a épocas pasadas, los Guardianes allanan el camino hacia delante, confiados en la racionalidad de sus planes. Como ellos, la Nación Garou perdurará y evolucionará, pero, sobre todo, sobrevivirá."
  pod1230objectives_fera.13.a: "Sobrevivir, perdurar, prosperar."
  pod1230objectives_fera.14.b: "¿Lobos de las ciudades?"
   
@@ -140,7 +149,7 @@
  silverfang_decision_custom: "El Túmulo de la Luna Creciente, en [GetTitleByKey('b_voronezh').GetNameNoTier], debe estar completamente construido"
  
  pod1230objectives_fera.19.t: "El regreso del rey"
- pod1230objectives_fera.19.desc: "Desde la época de Roma, los Colmillos Plateados han sido los líderes tradicionales de la Nación Garou. Con la caída del Imperio y el gradual desplazamiento de la tribu hacia un enfoque más oriental, esta tradición ha sido cuestionada. Tribus como los Señores de la Sombra o las Garras Rojas han surgido en el vacío de poder para socavar la autoridad de los Colmillos Plateados, mientras que otras como los Caminantes Silenciosos o los Fianna simplemente se han perdido debido a la distancia geográfica.\nSin embargo, con su reciente éxito en Rusia, los Colmillos Plateados están demostrando que solo han trasladado su sede de poder y no han perdido las capacidades que los hicieron tan respetados en primer lugar. No todas las tribus están fallando en su línea todavía, pero la nobleza de los hombres lobo se está acercando a reafirmar sus derechos naturales."
+ pod1230objectives_fera.19.desc: "Desde la época de Roma, los Colmillos de Plata han sido los líderes tradicionales de la Nación Garou. Con la caída del Imperio y el gradual desplazamiento de la tribu hacia un enfoque más oriental, esta tradición ha sido cuestionada. Tribus como los Señores de las Sombras o las Garras Rojas se han lanzado al vacío de poder para erosionar la autoridad de los Colmillos de Plata y otras, como los Caminantes Silenciosos o los Fianna, simplemente se han perdido por la distancia geográfica.\nCon su reciente éxito en Rusia, sin embargo, los Colmillos de Plata demuestran que solo han trasladado su sede de poder y no han perdido las capacidades que los hicieron tan respetados en primer lugar. No todas las tribus se ponen aún en fila, pero la nobleza de los hombres lobo está cerca de reafirmar sus derechos naturales."
  pod1230objectives_fera.19.a: "¡Salve a los Reyes!"
  pod1230objectives_fera.20.b: "Conservan su trono... por ahora"
     
@@ -170,7 +179,7 @@
     
  blackspiraldancer_objective_decision: "Nietos adorados"
  blackspiraldancer_objective_decision_tooltip: "¡La Yaya espera que seamos amables!"
- blackspiraldancer_objective_decision_desc: "La Bruja, Baba Yaga, es una de las servidoras más fieles de nuestro amo. Si la complacemos destruyendo a sus enemigos, ¡ciertamente nos recompensará!"
+ blackspiraldancer_objective_decision_desc: "La Bruja, Baba Yaga, es una de las siervas más fiables de nuestro amo. Si la complacemos destruyendo a sus enemigos, ¡seguramente nos recompensará!"
  blackspiraldancer_objective_decision_effect_tooltip: "Baba Yaga te otorgará la inmortalidad, en cierto modo." 
  blackspiraldancer_objective_decision_confirm: "¿Estás feliz, Yaya?"
  blackspiraldancer_victory_objective_decision_custom: "El [title|E] de [GetTitleByKey('k_crescent_moon').GetNameNoTier] debe ser destruido o controlado por ti"
@@ -185,22 +194,8 @@
  become_abomination_tt: "Como Abominación, tienes acceso total a los poderes de los vampiros excepto al Abrazo. Sin embargo, ya no eres un hombre lobo, pero mantienes el acceso a los dones de Raza y Auspicio, así como la opción de Cambio de Forma."
  become_abomination_holdings_tt: "Tus dominios cambiarán de tribales a castillos, perdiendo en el proceso sus edificios actuales, que ahora resultan incompatibles."
  
- storyteller_quest_decision: "Gran misión de Gaia"
- storyteller_quest_decision_desc: "Los hombres lobo viven (y a menudo mueren) por misiones épicas concedidas por entidades espirituales. Emprender una te reportaría grandes recompensas si logras tener éxito.\nRecopilar libros legendarios sería un esfuerzo que valdría la pena para Gaia."
- storyteller_quest_decision_tooltip: "Gana el don legendario."
- storyteller_quest_decision_confirm: "¡Por Gaia!"
  
- release_from_bondage_quest_decision: "Gran misión de la Incarna Maeljin"
- release_from_bondage_quest_decision_desc: "Los hombres lobo viven (y a menudo mueren) por misiones épicas concedidas por entidades espirituales. Emprender una te reportaría grandes recompensas si logras tener éxito.\nDestruir el opresivo Velo de Sombras ciertamente complacería a la Incarna."
- release_from_bondage_quest_decision_tooltip: "Gana el don legendario."
- release_from_bondage_quest_decision_confirm: "Abajo el muro"
- release_from_bondage_quest_decision_custom: "El título [GetTitleByKey('e_shadow_curtain').GetNameNoTier] debe ser destruido"
  
- firebringer_quest_decision: "Gran misión de Coyote"
- firebringer_quest_decision_desc: "Los hombres lobo viven (y a menudo mueren) por misiones épicas concedidas por entidades espirituales. Emprender una te reportaría grandes recompensas si logras tener éxito.\nEl bromista Coyote ciertamente estaría complacido con una misión caprichosa."
- firebringer_quest_decision_tooltip: "Gana el don legendario."
- firebringer_quest_decision_confirm: "Eso debería ser suficiente, espero"
- firebringer_quest_decision_custom: "Conceder un [title|E] de [empire|E]"
  
  prelude_to_apocalypse_quest_decision: "Gran misión de la Incarna Maeljin"
  prelude_to_apocalypse_quest_decision_desc: "Los hombres lobo viven (y a menudo mueren) por misiones épicas concedidas por entidades espirituales. Emprender una te reportaría grandes recompensas si logras tener éxito.\nPara complacer a la Maeljin, debes traer la destrucción a la tierra y demostrar tu maestría sobre las fuerzas de la corrupción."
@@ -215,10 +210,6 @@
  coruroc_quest_decision_custom: "No debe haber ningún [ruler|E] que siga la religión [religion|E] de los [GetReligionByKey('blackspiraldancer_religion').GetName] en el mapa"
  coruroc_quest_decision_custom_ex: "$coruroc_quest_decision_custom$ #weak ([example.GetFirstName])#!"      
  
- aidan_farwatcher_quest_decision: "Misión personal de Aidan Farwatcher"
- aidan_farwatcher_quest_decision_desc: "Impulsado por la venganza por su tribu traicionada, Aidan Farwatcher te ha pedido que mates a los Danzantes de la Espiral Negra."
- aidan_farwatcher_quest_decision_tooltip: "¿La Espiral deshecha?"
- aidan_farwatcher_quest_decision_confirm: "Una venganza sangrienta"
  
  stop_flaying_plague_decision: "Detener la Plaga de la Desollación"
  stop_flaying_plague_decision_tooltip: "¡Debe haber una solución!"
@@ -228,7 +219,7 @@
  stop_flaying_plague_decision_custom: "Necesitas 10 o más en cada atributo, excepto en Destreza, donde se necesitan 40 o más. Los atributos de los miembros de tu manada también pueden servir."
  
  pod1230objectives_fera.27.t: "Acabar con una enfermedad"
- pod1230objectives_fera.27.desc: "Gracias a las habilidades de tu manada y de tu séquito, has logrado descubrir pistas sobre la verdad respecto a la Plaga de la Desollación. Esta terrible enfermedad era, en efecto, de origen sobrenatural, aparentemente creada por un grupo de magos dedicados al $glossary_wyrm$ que se hacían llamar el Círculo del Rojo.\nEstos necios ya estaban detrás de varios ataques descarados contra Túmulos orientales, especialmente en Sofía, y aunque intentaron borrar sus huellas, no lo han hecho bien ni con suficiente rapidez.\nAl asaltar su guarida, has sentido una gran satisfacción al abrirte paso a tajos entre estos cultistas corrompidos por el Wyrm hasta que sus círculos rituales quedaron rojos con su propia sangre.\nAunque la amenaza de la Plaga de la Desollación ha quedado atrás, aún quedan dudas sobre los detalles de su creación: algunas pistas apuntan a un misterioso vampiro y otras a un demonio. Esto podría merecer la pena investigarlo en el futuro pero, al menos por ahora, tu deber con Gaia se ha cumplido."
+ pod1230objectives_fera.27.desc: "Gracias a las habilidades de tu manada y de tu séquito, has logrado descubrir pistas sobre la verdad de la Plaga Desolladora. Esta terrible enfermedad era, en efecto, de origen sobrenatural, creada al parecer por un grupo de magos devotos del $glossary_wyrm$ que se hacían llamar el Círculo de Rojo.\nEstos necios ya estaban detrás de varios ataques descarados contra Túmulos orientales, sobre todo en Sofía, y aunque intentaron borrar sus huellas, no lo hicieron bien ni con la suficiente rapidez.\nAl asaltar su guarida, has sentido gran satisfacción al abrirte paso a zarpazos entre estos cultistas infestados por la Wyrm hasta que sus círculos rituales quedaron rojos de su propia sangre.\nAunque la amenaza de la Plaga Desolladora ya ha quedado atrás, aún quedan dudas sobre los detalles de su creación, con algunas pistas que apuntan a un misterioso vampiro y otras a un demonio. Quizá valga la pena investigarlo en el futuro pero, por ahora al menos, tu deber hacia Gaia está cumplido."
  pod1230objectives_fera.27.a: "¡Un triunfo legendario!"
  pod1230objectives_fera.28.a: "Es bueno para los lobos, supongo."
  pod1230objectives_fera.28.b: "¡Finalmente!"
@@ -255,7 +246,7 @@
  gaian_church_objective_decision_confirm: "Guíanos, Madre"
  gaian_church_objective_decision_custom1: "Los $POD_splat_hunter_plural$ dejarán de ver a los Garou como un enemigo incompatible. En su lugar, los Garou serán considerados guardianes, protectores, hacedores de milagros o encargados de una misión divina.\nEsto resultará en que sus fes puedan cooperar con mayor facilidad."
 
- pod1230objectives_fera.125.desc: "Mientras que la mayoría de los hombres lobo se horrorizaron ante el ascenso del cristianismo, unos pocos vieron una oportunidad, y menos aún vieron un indicio de Gaia en la reverencia de los mortales hacia María. Aunque al principio fueron facciones marginales, utilizaron bien el rápido crecimiento del poder de la Iglesia e influyeron sutilmente en los debates teológicos para favorecer el culto a María siempre que fue posible.\nHa pasado mucho tiempo y muchos intentos fallidos, pero los resultados empiezan a verse. Con esta influencia aparentemente sutil, la «Iglesia de Gaia» ha logrado crear un efecto de cascada que culmina en que la Iglesia Católica desvíe silenciosamente su atención de los hombres lobo hacia otras preocupaciones."
+ pod1230objectives_fera.125.desc: "Aunque la mayoría de los hombres lobo se horrorizaron ante el auge del cristianismo, unos pocos vieron una oportunidad y menos aún vieron un atisbo de Gaia en la reverencia de los mortales por María. Aunque al principio eran marginales, estas facciones aprovecharon bien el rápido crecimiento del poder de la Iglesia e influyeron sutilmente en los debates teológicos para favorecer el culto a María siempre que fue posible.\nHa llevado mucho tiempo y muchos intentos fallidos, pero los resultados empiezan a verse. Con esta influencia en apariencia sutil, la «Iglesia de Gaia» ha logrado crear un efecto en cascada que culmina en que la Iglesia católica aparta discretamente su atención de los hombres lobo y la dirige más hacia otras preocupaciones."
  pod1230objectives_fera.125.a: "Todos bajo una sola Madre"
  gaiachurch_objective_decision_custom_roma: "El poseedor de [GetTitleByKey('c_roma').GetNameNoTier] debe ser un [GetFaithDoctrine('special_doctrine_ecumenical_hunters').GetBaseName] o de tu fe."
  
@@ -267,7 +258,7 @@
  bagheera_objective_decision_custom: "Necesitas 10 o más en cada atributo, excepto en Destreza, donde se necesitan 40 o más. Los atributos de los miembros de tu manada también pueden servir."
   
  pod1230objectives_fera.31.desc: "Según sus leyendas, los Bagheera fueron creados una vez como los jueces de la estirpe felina. Aunque este papel fue abandonado hace mucho tiempo, han conservado la curiosidad natural y el carisma amistoso que ello conllevaba. Como suelen decir, son la encarnación más pura del espíritu felino: sabiduría, amor e ira, todo fundido en uno solo. De forma única entre las fracturadas tribus Bastet, los Bagheera lograron mantener una relación cordial con todos sus primos y, con su reciente ascenso a la fama, ha nacido la idea de que tal vez es hora de que las panteras lobo aprovechen esta fuerza y presionen para la unificación de la dividida Nación Bastet.\nAunque las otras tribus se muestran escépticas en el mejor de los casos, el actual y talentoso liderazgo de los Bagheera ha logrado, al menos, sentarlos en la mesa de negociación. Ahora queda por ver si las carismáticas panteras llevarán este esfuerzo hasta una conclusión satisfactoria."
- pod1230objectives_fera.31.a: "¡Todos somos hijos de Seline!"
+ pod1230objectives_fera.31.a: "¡Todos somos hijos de $glossary_luna_seline$!"
 
  bubasti_objective_decision: "Gato contra Serpiente"
  bubasti_objective_decision_tooltip: "Somos pacientes. Esperaremos nuestra venganza triunfal."
@@ -285,13 +276,13 @@
  ceilican_objective_decision_effect_tooltip: "Liberarás a tus hermanos y hermanas capturados, quienes entonces se unirán a tu corte.\nTambién desbloquearás una cadena de eventos que te pondrá en el camino para unir la Nación Bastet." 
  ceilican_objective_decision_confirm: "Otro tipo de danza..."
    
- pod1230objectives_fera.33.desc: "Que alguna vez fueron despreocupados y vivieron una vida de hedonismo, los Ceilican han sido traicionados por el señor Faerie Samhach, quien los cazó con tanta eficiencia que casi los lleva a la extinción. Sin embargo, los «gatos volubles» no estaban dispuestos a rendirse y, bajo tu diligente liderazgo, lograron protagonizar un sorprendente regreso, asaltando la corte Faerie del señor Samhach y liberando a sus hermanos cautivos.\nMientras los victoriosos Ceilican bailan y celebran entre las ruinas de la corte del odiado traidor, el resto de la Nación Bastet nota este desconcertante acontecimiento. Considerados extintos alguna vez, parece que ahora será el momento de dar la bienvenida de nuevo a los Ceilican entre sus hermanos felinos, ¿quizás una señal de la voluntad de la Madre Seline para que sus hijos finalmente dejen atrás sus rencores personales y se unan bajo una sola bandera?"
+ pod1230objectives_fera.33.desc: "Antaño despreocupados y entregados al hedonismo, los Ceilican fueron traicionados por el señor feérico Samhach, que los cazó con tanta eficacia que casi los llevó a la extinción. Los «gatos veleidosos» no estaban listos para rendirse, sin embargo, y, bajo tu diligente liderazgo, lograron un regreso sorprendente, asaltando la corte feérica de Lord Samhach y liberando a sus hermanos cautivos.\nMientras los victoriosos Ceilican bailan y festejan en las ruinas de la corte del odiado traidor, el resto de la Nación Bastet toma nota de este desconcertante giro. Antaño dados por extintos, parece que ahora será hora de dar la bienvenida a los Ceilican entre sus hermanos felinos, ¿quizá una señal de la voluntad de la Madre $glossary_luna_seline$ de que sus hijos por fin superen sus rencores personales y se unan bajo una sola bandera?"
  pod1230objectives_fera.33.a: "¡La fiesta no ha terminado!"
 
  khan_objective_decision_judgment_hammer: "Debes recuperar el [GetPODArtifact('judgment_hammer').GetName], el arma más preciada del Khan y, posiblemente, la más poderosa de todo el Bastet."
  khan_objective_decision: "Tigres sabios y feroces"
  khan_objective_decision_tooltip: "Al alcanzar el equilibrio perfecto, mostraremos el camino para la Nación Bastet."
- khan_objective_decision_desc: "Cazadores regios, guerreros y Mentores, los Khan son la verdadera nobleza del Bastet a pesar de lo que los tiránicos Simba puedan afirmar. Al perfeccionarse, podrán demostrar a la estirpe felina que son verdaderamente elegidos por la Madre Seline para guiarlos hacia un futuro glorioso."
+ khan_objective_decision_desc: "Cazadores, guerreros y mentores regios, los Khan son la verdadera nobleza de las Bastet, pese a lo que puedan alegar los tiránicos Simba. Perfeccionándose, pueden mostrar a la estirpe felina que son de verdad los escogidos por la Madre $glossary_luna_seline$ para guiarlos a un futuro glorioso."
  khan_objective_decision_effect_tooltip: "Esto mejorará el Martillo del Juicio.\nTambién desbloquearás una cadena de eventos que te pondrá en el camino para unificar la Nación Bastet." 
  khan_objective_decision_confirm: "Pasión, vigor y sabiduría."
   
@@ -300,7 +291,7 @@
 
  simba_objective_decision: "Los tiranos leones"
  simba_objective_decision_tooltip: "El león es el rey de la naturaleza. Es hora de recordárselo."
- simba_objective_decision_desc: "Los Simba son los legítimos gobernantes de la estirpe felina. Sin embargo, los momentos de debilidad y las acusaciones de «gobierno tiránico» han erosionado este derecho. Es hora de recordar a las otras tribus quién manda."
+ simba_objective_decision_desc: "Los Simba son los gobernantes legítimos de la estirpe felina. Los momentos de debilidad y las acusaciones de «gobierno tiránico» han erosionado sin embargo esa pretensión. Es hora de recordar a las demás tribus quién manda."
  simba_objective_decision_effect_tooltip: "También desbloquearás una cadena de eventos que te pondrá en el camino para unificar la Nación Bastet." 
  simba_objective_decision_confirm: "Larga vida a los reyes."
   
@@ -310,19 +301,19 @@
  pod1230objectives_fera.35.a: "Un verdadero rey busca lo que puede tomar."
  
  swara_spiritual_guardians_modifier: "Espíritu de Damaa"
- swara_spiritual_guardians_modifier_desc: "Gracias a sus estrechos vínculos con el mundo espiritual, los Swara pueden confiar en la ayuda de otros mundos con mucha más facilidad que las demás tribus del Bastet."
+ swara_spiritual_guardians_modifier_desc: "Gracias a sus estrechos lazos con el mundo espiritual, los Swara pueden recurrir a la ayuda de otro mundo con mucha más facilidad que otras tribus Bastet."
  swara_objective_decision: "Guardianes de los lugares puros"
- swara_objective_decision_tooltip: "Mientras los demás discuten, nosotros cumplimos el trabajo que la Madre Seline nos confió."
+ swara_objective_decision_tooltip: "Mientras los demás se pelean, nosotros hacemos el trabajo que la Madre $glossary_luna_seline$ nos encomendó."
  swara_objective_decision_desc: "Los Swara son los guardianes de los lugares cargados espiritualmente. Mientras otras tribus del Bastet los descartan como cobardes y solitarios, defienden secretamente la pureza de África con un celo que incluso un Khan envidiaría."
  swara_objective_decision_effect_tooltip: "También desbloquearás una cadena de eventos que te pondrá en el camino para unificar la Nación Bastet." 
  swara_objective_decision_confirm: "Hacemos lo que debe hacerse."
  swara_objective_decision_caern_tooltip: "Necesitas tener un Túmulo de cada tipo al máximo (Edificios ducales de nivel 5, Túmulo de la Voluntad, Furia, Liderazgo, Sabiduría y Enigmas)"
 
- pod1230objectives_fera.36.desc: "Los werecheetah son misteriosos para las otras tribus. Muchos los descartan como cobardes, que aparentemente siempre huyen sin rumbo de un lugar a otro evitando el conflicto. Nada está más lejos de la realidad. Los Swara son defensores diligentes de la pureza de la tierra y luchan con tanta dureza como cualquier león cuando su deber sagrado se ve amenazado.\nAunque no lo han estado pregonando, su trabajo ha empezado a ganar reconocimiento entre la Nación Bastet últimamente. Las otras tribus guardan silencio, contemplando que estuvieron discutiendo u obsesionándose con preocupaciones triviales mientras los Swara cumplían las órdenes de la Madre Seline. Esto ha generado un impulso sorprendente que los sitúa a la vanguardia del renovado llamado a la unidad del Bastet. Queda por ver si el habitualmente aislacionista Pueblo de Plata atenderá ese llamado en el futuro."
+ pod1230objectives_fera.36.desc: "Los hombres guepardo son misteriosos para las otras tribus. Muchos los desprecian como cobardes, que corren siempre al parecer sin rumbo de un lugar a otro y evitan el conflicto. Esto no podría estar más lejos de la verdad. Los Swara son diligentes defensores de la pureza de la tierra y luchan tan duro como cualquier león cuando su sagrado deber está amenazado.\nAunque no lo han proclamado a gritos, su trabajo ha empezado a ganar reconocimiento entre la Nación Bastet en los últimos tiempos. Las demás tribus callan, contemplando que estaban discutiendo u obsesionándose con preocupaciones menores mientras los Swara cumplían el mandato de la Madre $glossary_luna_seline$. Esto ha dado un impulso sorprendente que los coloca a la vanguardia del renovado llamamiento a la unidad Bastet. Está por ver si el habitualmente aislacionista «Pueblo de Plata» atenderá ese llamamiento en el futuro."
  pod1230objectives_fera.36.a: "¿Están empezando a comprenderlo?"
  
  pod1230objectives_fera.37.t: "Unificación de la Nación Bastet"
- pod1230objectives_fera.37.desc: "Con tu reciente éxito al situar a tu tribu a la vanguardia del Bastet, la idea de consolidar las tribus dispersas en un todo cohesivo ha resurgido una vez más. La mayoría de las leyendas de la estirpe felina coinciden en que la Madre Seline pretendía originalmente que trabajaran juntos y que la división ocurrida en los primeros días fue la causa principal de su derrota contra los hombres lobo durante la Guerra de la Rabia.\nAun así, a pesar de este hecho aceptado, será una tarea muy difícil reunir de nuevo a la estirpe felina. Cada tribu tendrá que ser convencida, y los gatos no son más que criaturas tercas y volubles al mismo tiempo."
+ pod1230objectives_fera.37.desc: "Con tu reciente éxito, que sitúa a tu tribu a la vanguardia de las Bastet, la idea de consolidar las tribus dispersas en un todo cohesionado ha resurgido una vez más. La mayoría de las leyendas de la estirpe felina coinciden en que la Madre $glossary_luna_seline$ os concibió en su día para trabajar juntos y en que la división que se produjo en los primeros tiempos fue la principal causa de vuestra derrota frente a los hombres lobo durante la Guerra de la Rabia.\nAun así, a pesar de este hecho consensuado, será una tarea muy difícil volver a unir a la estirpe felina. Habrá que convencer a cada tribu, y los gatos son, ante todo, criaturas tercas y veleidosas a la vez."
  pod1230objectives_fera.37.a: "Escuchemos su punto de vista."
  
  pod1230objectives_fera.38.desc: "Los Bagheera están totalmente de acuerdo con tu plan para restaurar la Nación Bastet. Después de todo, han abogado por ello durante siglos. Sin embargo, los jueces de la estirpe felina no quieren que se repitan los errores del pasado y quieren estar seguros de que eres apto para guiar a tus hermanos hacia un futuro próspero.\nPretenden observar cómo trabajas y cómo te rodeas como gobernante antes de comprometerse plenamente con la causa. Para ayudar en este asunto, han ofrecido las enseñanzas de uno de sus Mentores más sabios para trabajar en tus debilidades mientras mejoras tus fortalezas."
@@ -341,7 +332,7 @@
  pod1230objectives_fera.39.a: "Nuestra causa es la vuestra."
  pod1230objectives_fera.39.b: "¿Has dicho magia?"
  pod1230objectives_fera.39.c: "Estoy seguro de que podemos convencerles para que lo reconsideren."
- used_bagheera_joker_tooltip: "Usarás tu «joker», una oportunidad única para reunir directamente a esta tribu en tu causa en lugar de tener que cumplir su petición."
+ used_bagheera_joker_tooltip: "Usarás tu «comodín», una oportunidad única de reunir directamente a esta tribu para tu causa en lugar de tener que cumplir su petición."
  
  bubasti_knight_help_modifier: "Ayudando a los Bubasti"
  bubasti_knight_help_modifier_desc: "Muchos de tus mejores campeones se encuentran actualmente lejos, ayudando a los Bubasti a planificar la liberación de su parentela de los Seguidores de Set."
@@ -351,14 +342,14 @@
  bubasti_nation_objective_decision_confirm: "Eso debería ser suficiente."
   
  ceilican_nation_objective_decision: "La Nación Bastet: los Ceilican"
- pod1230objectives_fera.40.desc: "Un invitado inesperado ha conmocionado a los representantes reunidos de la Bastet al afirmar que es miembro de los Ceilican. Se pensaba desde hacía mucho tiempo que los «gatos mercuriales» del folclore celta habían muerto, pero un puñado de ellos logró esconderse y sobrevivir. Al enterarse del renovado esfuerzo por unificar la Bastet, han venido a solicitar humildemente tu asistencia para liberar a sus supervivientes del alcance de su némesis.\nComo posible gobernante de todos los Hijos de Seline, te resultaría difícil rechazar tal súplica de ayuda."
+ pod1230objectives_fera.40.desc: "Un invitado inesperado conmocionó a los representantes reunidos de las Bastet al afirmar ser miembro de los Ceilican. Los «gatos veleidosos» del folclore celta llevaban mucho tiempo dados por muertos por el resto de la estirpe felina. Este individuo explica que los Ceilican han sido cazados casi hasta la extinción por un señor Fae, pero unos pocos lograron esconderse y sobrevivir. Al oír del renovado esfuerzo por unificar a las Bastet, han venido a pedir humildemente tu ayuda para liberar a sus supervivientes de las garras de su némesis.\nComo aspirante a gobernante de todos los Hijos de $glossary_luna_seline$, te costaría negarte a semejante petición de ayuda."
  pod1230objectives_fera.40.b: "¿Escondiéndose tanto tiempo? Debes conocer algún truco o dos."  
  ceilican_nation_objective_decision_tooltip: "Primos olvidados que regresan a la familia."
  ceilican_nation_objective_decision_confirm: "¡Una victoria digna del nuevo gobernante de la Bastet!"
  any_knight_ceilican_tooltip: "Debes tener 5 o más caballeros con al menos 45 de Destreza."
  
  khan_nation_objective_decision: "La Nación Bastet: los Khan"
- pod1230objectives_fera.41.desc: "Los poderosos hombres-tigre siempre han sido considerados candidatos fuertes para el liderazgo de la nación Bastet; su fuerza inigualable y su conducta honorable les hacen respetados por los demás. Aun así, han aceptado con benevolencia dejar un segundo plano a tus propias ambiciones, reconociendo tu impresionante éxito hasta ahora. Los Khan, sin embargo, te han planteado un desafío para demostrar que eres, en efecto, el elegido de Seline que pretendes ser. Incluso se han ofrecido a someterte a su prueba tradicional para la nobleza Khan, un ejercicio despiadado y difícil muy conocido. Aunque no sería suficiente para ganar su lealtad, esto ciertamente mejoraría tu legitimidad ante la Bastet en su conjunto."
+ pod1230objectives_fera.41.desc: "Los poderosos hombres tigre siempre fueron considerados un fuerte candidato al liderazgo de la nación Bastet, y su fuerza sin igual y su conducta honorable les granjearon el respeto de los demás. Aun así, han aceptado con gracia dejar paso a tus ambiciones, reconociendo tu impresionante éxito hasta ahora. Los Khan, sin embargo, te han lanzado un desafío para que demuestres que eres en verdad el escogido de $glossary_luna_seline$ que afirmas ser. Incluso se ofrecieron a someterte a su prueba tradicional para la nobleza Khan, un ejercicio bien conocido por despiadado y difícil. Aunque no bastaría para ganarte su vasallaje, sin duda mejoraría tu legitimidad ante las Bastet en conjunto."
  pod1230objectives_fera.41.a: "Escucharé vuestra petición."
  pod1230objectives_fera.41.b: "Sobre esa prueba..."
  khan_nation_objective_decision_desc: "Cazadores regios, guerreros y Mentores, los Khan son la verdadera nobleza de la Bastet a pesar de lo que pueda afirmar el tiránico Simba. No aceptarán a un gobernante que no muestre la misma perfección tanto en cuerpo como en mente."
@@ -366,7 +357,7 @@
  khan_nation_objective_decision_confirm: "Soy el Khan de los Khans."
    
  simba_nation_objective_decision: "La Nación Bastet: los Simba"
- pod1230objectives_fera.42.desc: "Como reyes autoproclamados de la nación Bastet, los orgullosos y arrogantes hombres-león siempre han alardeado de que ellos deberían gobernar, llegando a menudo a las manos con otros Bastet para defender su derecho si fuera necesario.\nDe algún modo, ha ido incluso peor.\nHa hecho falta mucho esfuerzo para someter a los delegados Simba y evitar que se lanzaran sobre ti con las garras por delante para «castigarte por tu impudencia». Todavía están gritando desesperadamente mientras son arrastrados fuera de la sala y te dejan solo para considerar tu siguiente movimiento. Está quedando claro que los leones solo serán sometidos si demuestras tu poder en su propio territorio: África."
+ pod1230objectives_fera.42.desc: "Como autoproclamados reyes de la nación Bastet, los orgullosos y arrogantes hombres león siempre han alardeado de que deberían gobernar, y a menudo han llegado a las manos con otras Bastet para defender su pretensión si hacía falta. Esperabas que tu propuesta de unir a la estirpe felina bajo tu liderazgo les sentara bastante mal.\nDe algún modo, sentó aún peor.\nHizo falta mucho esfuerzo para someter a los delegados Simba e impedir que se lanzaran sobre ti con las garras por delante para «castigar tu impudicia». Aún gritan a pleno pulmón mientras los sacan arrastrados de la sala y a ti te toca considerar tu siguiente movimiento. Se va aclarando que los leones solo se someterán si demuestras tu poderío en su propio territorio: África."
  pod1230objectives_fera.42.a: "Es hora de domesticarlos."
  pod1230objectives_fera.42.b: "Necesitamos una cabeza de puente para comenzar nuestra invasión."
  simba_nation_objective_decision_desc: "Los Simba son los legítimos gobernantes de la estirpe felina... al menos según ellos mismos. No renunciarán a este derecho hasta que sus tierras ancestrales sean conquistadas por alguien dispuesto a desafiarlos en su propio territorio."
@@ -375,7 +366,7 @@
  POD_simba_heartlands: "Tierras ancestrales de los Simba: Hausaland, Igbo-Benue, Yorubaland y Borgu"  
    
  swara_nation_objective_decision: "La Nación Bastet: los Swara"
- pod1230objectives_fera.43.desc: "Como prueba de su respeto, los aislacionistas Swara te han invitado a uno de sus señoríos para discutir tu propuesta de reunificar la Nación Bastet. Los hombres-guepardo no tienen intención de interponerse en tu camino ni de cuestionar tu derecho, pero te recuerdan el deber sagrado de los Hijos de Seline: proteger las tierras puras. Si puedes demostrar tu compromiso con este deber ancestral, se unirán plenamente a la causa. De lo contrario, seguirán a su aire, lejos de las intrigas del resto de la estirpe felina, como siempre lo han hecho.\nA juzgar por algunas debilidades estructurales que has notado en este señorío específico, crees que podrías hacer una donación para ayudarles a mejorar sus defensas aquí, demostrando que te tomas su petición muy en serio."
+ pod1230objectives_fera.43.desc: "Como prueba de su respeto, los Swara aislacionistas te han invitado a uno de sus reinos-guarida para hablar de tu propuesta de reunificar la Nación Bastet. Los hombres guepardo no pretenden estorbarte ni disputar tu pretensión, pero te recuerdan el deber sagrado de los Hijos de $glossary_luna_seline$: proteger las tierras puras. Si puedes demostrar tu compromiso con este deber ancestral, se unirán por completo al redil. De lo contrario, seguirán a lo suyo, lejos de las intrigas del resto de la estirpe felina, como han hecho hasta ahora.\nA juzgar por algunas debilidades estructurales que has notado en este reino-guarida concreto, crees que podrías hacer una donación para ayudarlos a mejorar sus defensas aquí, demostrando que te tomas muy en serio su petición."
  pod1230objectives_fera.43.a: "Consideraré vuestra petición."
  pod1230objectives_fera.43.b: "Una tarea importante. Permíteme ayudar ahora mismo."
  swara_nation_objective_decision_desc: "Los Swara son los guardianes de los lugares con carga espiritual. Quieren ver tu compromiso con su causa antes de unirse plenamente a tu proyecto de reconstrucción de la Nación Bastet."
@@ -383,9 +374,9 @@
  swara_nation_objective_decision_confirm: "Una gran hazaña para un gran gobernante."
  
  pod1230objectives_fera.44.t: "La Nación Bastet"
- pod1230objectives_fera.44.desc: "Con astuta diplomacia, fuerza de voluntad y una no pequeña cantidad de persuasión más «directa», finalmente has reunido a todas las tribus bajo tu estandarte. Una por una vienen a reconocer tu triunfo y el nuevo gobernante de la Nación Bastet unida. Toda la estirpe felina trabaja finalmente como una sola, algo nunca visto desde los tiempos de las Leyendas, mucho antes de la guerra perdida contra los tiránicos Garou.\nAlgunos de tus nuevos «súbditos» esperan que caigas rápidamente, mientras que otros creen sinceramente en ti y en el futuro que prometiste. Al final, no importa realmente. Te has ganado esta victoria.\nAhora guiarás a tus semejantes felinos hacia un futuro brillante. La era del gato finalmente está cerca."
- pod1230objectives_fera.44.a: "Desde la luna, la Madre Seline sonríe."
- blessed_seline_modifier: "Bendecid[ROOT.Char.Custom('ES_OA')] por Seline"
+ pod1230objectives_fera.44.desc: "Con diplomacia astuta, fuerza de voluntad y no poca persuasión más «directa», has reunido por fin a todas las tribus bajo tu estandarte. Una a una vienen a reconocer tu triunfo y al nuevo gobernante de la Nación Bastet unida. Toda la estirpe felina trabaja por fin como una sola, algo que no se veía desde la época de las leyendas, mucho antes de la guerra perdida contra los tiránicos Garou.\nAlgunos de tus nuevos «súbditos» esperan que caigas pronto, mientras otros creen sinceramente en ti y en el futuro que prometiste. Al final, no importa de verdad. Te has ganado esta victoria.\nAhora guiarás a tus compañeros felinos hacia un futuro brillante. La era del gato está por fin a la mano."
+ pod1230objectives_fera.44.a: "Desde la luna, la Madre $glossary_luna_seline$ sonríe."
+ blessed_seline_modifier: "Bendecido por $glossary_luna_seline$"
  blessed_seline_modifier_desc: "La Madre de la estirpe felina sonríe a su campeona elegida."
  bastet_nation_unifier_tooltip: "Mientras ostentes el título de Nación Bastet, tendrás acceso a todos los hombres en armas Bastet."
  
@@ -398,11 +389,11 @@
  entoban_objective_decision_desc: "Aquí en Entoban, el corazón del mundo es donde despertamos al principio de la Edad del Sueño. Aquí guiamos a las razas más jóvenes mientras llegaban a existir. Y es aquí donde fuimos traicionados por los #TOOLTIP:GAME_TRAIT,werewolf,[GetNullCharacter] #L Rompehuevos#! cuando asesinaron a nuestros parientes y aliados. Entoban volverá a ser nuestro, y los hombres lobo no podrán detenernos."
  entoban_objective_decision_confirm: "Nuestro hogar primigenio."
  entoban_objective_decision_requirement_example: "$entoban_objective_decision_requirement$ #weak ([example.GetName])#!"
- entoban_objective_decision_requirement: "Ningún #TOOLTIP:GAME_TRAIT,werewolf,[GetNullCharacter] #L Garou#! o su [GetTrait('kinfolk').GetName(GetNullCharacter)] posee tierras en [GetGeographicalRegion('world_africa').GetName]"
+ entoban_objective_decision_requirement: "Ningún $POD_splat_garou$ ni su [GetTrait('kinfolk').GetName(GetNullCharacter)] posee tierras en [GetGeographicalRegion('world_africa').GetName]"
  entoban_objective_decision_effect: "Ganarás el [GetTitleByKey('h_entoban').GetNameNoTier] [title|E] que abarca todo [GetGeographicalRegion('world_africa').GetName]"
  entoban_objective_decision_effect2: "Los $glossary_fera$ con capitales en [GetGeographicalRegion('world_africa').GetName] tendrán una mayor probabilidad de aceptar la vasallización"
  pod1230objectives_fera.50.t: "Entoban"
- pod1230objectives_fera.50.desc: "En eras pasadas, las tierras conocidas como África para la humanidad fueron una vez el corazón de una civilización global. Aquí hubo ciudades del tamaño de naciones hechas de maravillas y posibilidades, donde todos los estilos de vida prosperaron mucho antes de la Era de los Mamíferos. Pero ese tiempo llegó a su fin y Entoban quedó dividida. En nuestros eones de Hibernación, se fracturó y se rompió en nuestra ausencia. Pero eso fue una lástima del pasado. Ahora, mientras dejas tu Cenagal y contemplas el horizonte, todo lo que está bajo la mirada del sol es parte de un solo todo. Esas eras de glorias y maravillas perdidas aún podrían ser reclamadas. Este es el primer paso en un Camino para alcanzar las mismas alturas de grandeza que la Edad de los Reyes. Hay mucho trabajo por hacer. Pero ya has asegurado que habrá un punto de apoyo para las generaciones venideras."
+ pod1230objectives_fera.50.desc: "En eras muy lejanas, las tierras conocidas como África por la Humanidad fueron en su día el corazón de una civilización global. Allí hubo ciudades del tamaño de naciones hechas de maravilla y posibilidad, donde prosperaban todas las condiciones de vida mucho antes de la Era de los Mamíferos. Pero ese tiempo llegó a su fin y Entoban quedó dividido. En nuestros eones de letargo, se fracturó y quedó roto en nuestra ausencia. Pero eso fue una vergüenza del pasado. Ahora, al salir de tu Revolcadero y mirar el horizonte, todo lo que queda bajo la mirada del sol forma parte de un todo único. Esas eras de glorias y maravillas perdidas aún pueden recuperarse. Este es el primer paso en un camino hacia las mismas cotas de grandeza que la Era de los Reyes. Hay mucho trabajo por hacer. Pero ya has asegurado que habrá un punto de apoyo para las generaciones venideras."
  pod1230objectives_fera.50.a: "Como los Reyes Dragón de antaño, toma tu trono en el Corazón del Mundo."
  entoban_vassal_acceptance: "Entoban: $VALUE|=+0$"
 
@@ -416,7 +407,7 @@
  mokole_mbembe_spear_objective_decision_requirement3: "Tienes un [spirit_companion|E] en rango máximo" 
  mokole_mbembe_spear_objective_decision_requirement4: "Tienes dos [spirit_companions|E] en rango máximo"
  pod1230objectives_fera.51.t: "Lanza del Primero"
- pod1230objectives_fera.51.desc: "Mientras atraviesas Pangea, los espíritus te guían hacia un claro olvidado, oculto bajo el cuerpo de un colosal y muerto Rey Dragón. Bajo su vientre, en una caverna formada en sus costillas, hay una única y poderosa lanza clavada profundamente en un corazón de piedra. A pesar de los restos fosilizados del Rey, la lanza sigue siendo perfecta e ilustre dentro de su corazón, manteniéndose fuerte y decidida contra los estragos del tiempo. Para una criatura de tu fuerza, es un asunto sencillo liberarla. Al retirar la lanza, el antiguo Rey se disuelve en polvo, y este rincón oculto desaparece de todo excepto de tu memoria. El peso de las eras recae sobre ti mientras la Lanza acepta a su nuevo portador."
+ pod1230objectives_fera.51.desc: "Mientras avanzas por Pangea, los espíritus te guían a un claro olvidado, oculto bajo el cuerpo de un colosal Rey Dragón caído hace mucho. Bajo su vientre, en una caverna formada entre sus costillas, hay una única y poderosa lanza clavada hasta lo hondo en un corazón de piedra. A pesar de los restos fosilizados del Rey, la lanza sigue perfecta e ilustre en su corazón, firme y resuelta frente a los estragos del tiempo. Para una criatura de tu fuerza, sacarla es cosa sencilla. Al retirarse la lanza, el antiguo Rey se disuelve en polvo y esta alcoba oculta desaparece de todo salvo de tu memoria. El peso de las eras pende sobre ti mientras la Lanza acepta a su nuevo portador."
  pod1230objectives_fera.51.a: "Un arma poderosa digna de un Rey."
 
 
@@ -425,9 +416,9 @@
  tkash_objective_decision_desc: "Las viles criaturas de la noche amenazan a Rta, el Orden Cósmico. Deben ser consumidas por el fuego antes de que su impureza se extienda por nuestras selvas."
  tkash_objective_decision_confirm: "El Equilibrio ha sido restaurado"
  tkash_objective_decision_effect: "Ganarás el [GetTitleByKey('h_tkash').GetNameNoTier] [title|E] que abarca todo [GetGeographicalRegion('world_india').GetName]"
- tkash_objective_decision_effect2: "Todas las $POD_splat_vampire_plural$ y [GetTrait('kueijin').GetName(GetNullCharacter)] con tierras en la India sufrirán #V 5#! de daño por fuego"
+ tkash_objective_decision_effect2: "Todos los $POD_splat_vampire_plural$ y [GetTrait('kueijin').GetName(GetNullCharacter)] con tierras en la India sufrirán #V 5#! de daño de [fire_damage_short_with_icon|E]"
  pod1230objectives_fera.52.t: "Selva Primigenia"
- pod1230objectives_fera.52.desc: "Durante milenios, esta tierra ha sido un campo de batalla. Entre las guerras de las Sanguijuelas y los Demonios Escapados, agravadas por el descuido de los Khans y la locura de los bastardos del $glossary_wyld$, a pesar de las defensas naturales de esta tierra, ha sido el epicentro de una guerra nocturna interminable desde que llegó el Demonio de Sangre. Pero, finalmente, ya no. Tu control sobre la tierra conocida por tu pueblo como T'kash es ahora absoluto, ya que ninguno de ellos esperaba tu ascenso. La miríada de inmortales está ahora dispersa y escondida. Pero no pueden escapar de la ira de tu pueblo. Como parte de una gran coronación, la luz de Helios comienza a impregnar la propia selva, esperando el momento adecuado. Mientras los Weresuchids reunidos proclaman tu nombre y la restauración de este antiguo imperio, la corona brilla mientras los Antiguos la colocan sobre tu frente. La Furia de Helios no conocerá límites cuando la luz que emana comience a arder y la luz solar, en un breve destello, bañe la India. El propio Helios ha reconocido tu derecho a gobernar. La Guerra Eterna finalmente ha terminado."
+ pod1230objectives_fera.52.desc: "Durante milenios, esta tierra ha sido un campo de batalla. Entre las guerras de las Sanguijuelas y los Diablos Escapados, agravadas por el abandono de los Khan y la locura de los bastardos del $glossary_wyld$, a pesar de las defensas naturales de esta tierra, ha sido el epicentro de una guerra nocturna sin fin desde que llegó el Demonio de Sangre. Pero, por fin, ya no. Tu dominio de la tierra conocida por tu pueblo como T'kash es ahora absoluto, pues ninguno de ellos esperaba tu ascenso. Los innumerables inmortales están ahora dispersos y escondidos. Pero no pueden escapar a la ira de tu pueblo. Como parte de una gran coronación, la luz de $glossary_helios$ empieza a impregnar las propias junglas, esperando el momento oportuno. Mientras los Weresuchids reunidos proclaman tu nombre y la restauración de este antiguo imperio, la corona resplandece al colocártela los Ancianos sobre la frente. La ira de Helios no conocerá límites, pues su luz empieza a arder y la luz del sol, en un breve destello, baña la India. El propio Helios ha reconocido tu derecho a gobernar. La Guerra Eterna ha terminado por fin."
  pod1230objectives_fera.52.a: "T'kash es libre; será verdaderamente eterna."
 
 
@@ -515,15 +506,15 @@
  pod1230objectives_fera.59.t: "El tiempo sigue su marcha..."
  pod1230objectives_fera.59.desc: "A menudo, los Mokolé sueñan con eras pasadas, anhelando su regreso. Negar las obras de la modernidad y obsesionarse con el pasado. Y con demasiada frecuencia, se pudren y se corrompen en ese deseo, ciegos al mundo que les rodea. Vosotros, sin embargo, no os habéis permitido perderos en esa misma desesperación. Con el tiempo, los recuerdos de vuestra Generación serán Mnesis. Y donde otros se esconden egoístamente en sus propios recuerdos, vosotros habéis optado por crear los vuestros. Gran parte de la belleza del mundo moderno se ha sumado ahora a los recuerdos de quienes sigan vuestros pasos. Para los que vengan después de vosotros, tendrán recuerdos de las maravillas, tragedias y majestades de la humanidad y de las criaturas del mundo nocturno. Los armaréis con recuerdos modernos, frescos con todo lo que puedan necesitar no solo para sobrevivir, sino para prosperar. Un legado que el tiempo no puede borrar. Uno que perdurará y sobrevivirá a las arenas del tiempo."
  pod1230objectives_fera.59.a: "Y, sin embargo, queda mucho más por ver..."
+ fera_objective_decision_caern_tooltip: "Debes poseer un [duchy_building|E] de Túmulo de cualquier tipo completamente mejorado" 
 
- garou_objective_decision_caern_tooltip: "Necesitas tener un Túmulo de cualquier tipo al máximo (Edificios ducales de nivel 5, Túmulo de la Voluntad, la Furia, el Liderazgo, la Sabiduría o los Enigmas)." 
 
 
  beast_of_war_objective_decision: "La Bestia de Guerra"
  beast_of_war_objective_decision_tooltip: "Cuánta muerte."
  beast_of_war_objective_decision_desc: "La $glossary_wyrm_calamity$ desea la destrucción. A través de la calamidad y la carnicería seremos fortalecidos, para así llevar la gloria al $glossary_wyrm$."
  beast_of_war_objective_decision_confirm: "¡Llega la calamidad!"
- beast_of_war_objective_decision_requirement: "Todos vuestros [powerful_vassals|E] deben estar [intimidated|E] o [cowed|E] ante vos"
+ beast_of_war_objective_decision_requirement: "Todos tus [powerful_vassals|E] deben estar [intimidated|E], [cowed|E] o [imprisoned|E] por ti"
 
  eater_of_souls_objective_decision: "El Devora Almas"
  eater_of_souls_objective_decision_tooltip: "Mi cuerpo y sus almas."
@@ -540,9 +531,22 @@
 
  wyrm_hydra_objective_decision: "Devoción a la Hidra"
  wyrm_hydra_objective_decision_tooltip: "La verdadera Tríada asciende."
- wyrm_hydra_objective_decision_desc: "Nuestra dinastía ha servido bien al $glossary_wyrm$. Estamos preparados para dar paso a una nueva era bajo el liderazgo de los más fuertes. Entonces el mundo conocerá el verdadero miedo."
+ wyrm_hydra_objective_decision_desc: "Nuestra dinastía ha servido bien al $glossary_wyrm$. Estamos listos para inaugurar una nueva era bajo el liderazgo de nuestro más fuerte.\nEntonces el mundo conocerá el verdadero miedo."
  wyrm_hydra_objective_decision_confirm: "Ahora estoy completo."
  wyrm_hydra_objective_decision_effect: "Ganarás el [GetTitleByKey('h_wyrm').GetNameNoTier] [title|E], que incluirá cualquier [empires|E] que poseas"
  pod1230objectives_fera.61.t: "El Wyrm Ascendente"
  pod1230objectives_fera.61.desc: "El poder del $glossary_wyrm_triatic$ es ahora absoluto. La $glossary_triat$ se ha debilitado. Ahora el mundo aguarda, sin saber que su fin se aproxima.\n\nNo habrá refugio para vuestra furia. Sus armas y armaduras no significarán nada, y su fe mucho menos. Verán cómo el mundo llega a su fin. Muchos resistirán, con una tenacidad admirable pero inútil, pues el mundo ya cabalga hacia las fauces del Apocalipsis. ¡No hay esperanza, no hay futuro, toda la vida está condenada!"
  pod1230objectives_fera.61.a: "¡Yo soy el fin de todas las cosas!"
+ whitehowler_revival_objective_decision: "Aullido del Tejedor de Sueños"
+ whitehowler_revival_objective_decision_tooltip: "Un poderoso enemigo al que derrotar y viejos amigos a los que rescatar."
+ whitehowler_revival_objective_decision_desc: "La operación del Círculo Rojo en el lago Pavin crece cada día. Dejar que desaten al Tejedor de Sueños queda descartado, pero son poderosos y están bien fortificados. Si quieres triunfar y, potencialmente, salvar a los espíritus de los Aulladores Blancos atrapados, tu ataque tendría que estar bien preparado."
+ whitehowler_revival_objective_decision_confirm: "¡Por Gaia! ¡Por los Aulladores!"
+ whitehowler_revival_objective_decision_valid_1: "El Círculo Rojo se hace más fuerte con el paso del tiempo; necesitarás [knights|E] de mayor calidad y en mayor número a medida que pase el tiempo. El siguiente aumento se produce en #V 1260#!."
+ whitehowler_revival_objective_decision_valid_2: "El Círculo Rojo se hace más fuerte con el paso del tiempo; necesitarás [knights|E] de mayor calidad y en mayor número a medida que pase el tiempo. El siguiente aumento se produce en #V 1280#!."
+ whitehowler_revival_objective_decision_valid_3: "El Círculo Rojo se hace más fuerte con el paso del tiempo; necesitarás [knights|E] de mayor calidad y en mayor número a medida que pase el tiempo. El siguiente aumento se produce en #V 1300#!."
+ whitehowler_revival_objective_decision_valid_4: "El Círculo Rojo se hace más fuerte con el paso del tiempo; necesitarás [knights|E] de mayor calidad y en mayor número a medida que pase el tiempo. El siguiente aumento se produce en #V 1259#!."
+ whitehowler_revival_objective_decision_valid_5: "El Círculo Rojo se hace más fuerte con el paso del tiempo; necesitarás [knights|E] de mayor calidad y en mayor número a medida que pase el tiempo. #N Esta es tu última oportunidad.#!" 
+ whitehowler_revival_objective_decision_effect_tooltip: "La tribu de los Aulladores Blancos revividos enviará a algunos de sus nuevos miembros más prometedores. También tendrás la oportunidad de convertirte tú mismo en [GetFaithByKey('whitehowler').GetName]."
+ pod1230objectives_fera.64.desc: "Posiblemente el suceso más dañino de la historia de la Nación Garou, la caída de los Aulladores Blancos se creyó durante mucho tiempo algo que nunca podría sanarse. Incontables expediciones a la Umbra y consultas a los espíritus no condujeron a pistas aprovechables y, irónicamente, fue una jugada del Enemigo lo que hizo posible la victoria de hoy.\nEl Círculo Rojo descubrió la prisión del Tejedor de Sueños y la vio como una fuente de poder, además de la destrucción potencial que causaría al desatar a la criatura. Poco sabían, o les importaba, de los espíritus de los Aulladores Blancos atrapados que se sacrificaron hace mucho para contener al Tejedor de Sueños. Cuando los Garou locales los encontraron, la noticia se extendió por puentes lunares hasta todos los rincones de la Nación. Era una gran oportunidad para una Búsqueda como ninguna otra: derrotar a un poderoso siervo de la Wyrm y, de paso, rescatar potencialmente a los Aulladores perdidos.\n\nMuchas manadas lo intentaron, o al menos hablaron de intentarlo, pero los poderosos y bien atrincherados cultistas del Círculo Rojo resultaron un enemigo demasiado fuerte. Fue tu manada la que por fin cargó a una batalla gloriosa y salió victoriosa, aullando su triunfo a la Madre Gaia.\n\nMientras los Ahroun celebraban su victoria y los Galliard registraban el suceso, los Theurge ya trabajaban a fondo para liberar y guiar a salvo a los espíritus cautivos de los Aulladores Blancos. Hicieron bien su trabajo y los heroicos Aulladores fueron recibidos con los brazos abiertos por el orgulloso espíritu de León, ansioso por reinstaurar con su ayuda a su antaño gloriosa tribu.\n\nLa sangre de los dementes del Círculo Rojo alimenta el suelo, el Tejedor de Sueños ya no es una amenaza y la Tribu Perdida ya no está perdida. Es, de veras, un día glorioso para Gaia."
+ pod1230objectives_fera.64.a: "¡Bienvenidos de nuevo, hijos de León!"
+ pod1230objectives_fera.64.b: "¡El renovado León me ofrece su patronazgo!"

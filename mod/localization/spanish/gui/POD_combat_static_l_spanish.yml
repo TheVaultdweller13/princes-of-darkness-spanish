@@ -1,0 +1,1308 @@
+﻿l_spanish:
+
+ ##############################################################################
+ ###### POD COMBAT - STATIC LOCALIZATION
+ ##############################################################################
+ # Shared combat UI, log, help and rule text.
+ # Per-move names and flavor live in POD_combat_moves_l_english.yml.
+
+ ##############################################################################
+
+ ##############################
+ ###### MOVE CONFIG WINDOW
+ ##############################
+
+ pod_combat_moves_title: "#bold MOVIMIENTOS#! DE COMBATE"
+ pod_combat_equipped_label: "Equipado"
+ pod_combat_configure_moves: "Configurar Movimientos de Combate"
+ pod_combat_configure_moves_desc: "Elige qué [pod_combat_moves|E] llevar a tu próxima pelea."
+ pod_combat_configure_moves_tooltip: "Elige qué [pod_combat_moves|E] equipar para la batalla."
+ pod_combat_configure_moves_tt: "Abre el editor de equipamiento de [pod_combat_move|E], donde puedes equipar hasta [EmptyScope.ScriptValue('pod_combat_max_equipped')|V0] movimientos para usar durante [pod_combat_encounters_with_icon|E]."
+ pod_combat_configure_moves_confirm: "Abrir"
+
+ ##############################
+ ###### GUI LABELS
+ ##############################
+
+ pod_combat_window_title: "#bold [GetPlayer.Custom('PODCombatTitle')]:#! [GetScriptedGui('pod_combat_display_team_name').BuildTooltip(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('is_enemy',MakeScopeValue('(CFixedPoint)0')).End)] contra [GetScriptedGui('pod_combat_display_team_name').BuildTooltip(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('is_enemy',MakeScopeValue('(CFixedPoint)1')).End)]"
+ pod_combat_round: "Ronda #V [GetPlayer.MakeScope.ScriptValue('pod_combat_round_value')|0]#!"
+ pod_combat_ap_label: "#bold [pod_combat_action_points|E]:#!"
+ pod_combat_end_turn: "Terminar Turno"
+ pod_combat_end_turn_desc: "Termina tu turno y deja que actúe el oponente."
+ pod_combat_advance_turn_label: "Avanzar"
+ pod_combat_advance_turn_tt: "Resuelve el turno del siguiente combatiente y luego hace una pausa para que puedas leer el tablero. Se muestra mientras actúa una IA; marca #bold Avance automático de turnos#! para resolver toda la ronda con un solo clic."
+ pod_combat_auto_advance_label: "Avance automático de turnos"
+ pod_combat_auto_advance_tt: "#bold Marcado:#! los turnos de la IA se resuelven automáticamente y se avanza directamente hasta tu siguiente turno.\n#bold Desmarcado:#! se avanza un combatiente por clic, con una pausa entre los turnos de la IA para que puedas leer el tablero."
+ pod_combat_end_combat: "Terminar Combate"
+ pod_combat_auto_resolve: "Resolución Automática"
+ # Keep wounds qualitative: the damage and soak rolls have not happened yet.
+ pod_combat_auto_resolve_desc: "Omite el resto del combate. El ganador se determina comparando la destreza.\n\nTodos los que sigan en pie corren el riesgo de sufrir una herida en el forcejeo final, en proporción a cómo se decidió la pelea: un ganador claro sale casi indemne y el bando derrotado se lleva lo peor. Los combates de práctica quedan exentos.[GetPlayer.Custom('PODCombatAutoResolveVerdict')]"
+ pod_combat_auto_resolve_forced_loss_tt: "\n\n@warning_icon!#X Tu bando no tiene forma de dañar a un espíritu incorpóreo, así que resolver automáticamente aquí equivale a ceder la pelea y tu gente sufrirá las peores consecuencias.#!"
+ pod_combat_auto_resolve_forced_win_tt: "\n\n#P Tus enemigos no tienen forma de dañar tu forma incorpórea, así que resolver automáticamente aquí gana la pelea.#!"
+ pod_combat_help_button: "Ayuda"
+ pod_combat_help_tooltip: "Abre la Visión General del Sistema de Combate como referencia rápida de las reglas."
+ pod_combat_allies_label: "ALIADOS"
+ pod_combat_enemies_label: "ENEMIGOS"
+
+ pod_combat_status_guard_tt: "Guardia: bloquea el siguiente ataque que de otro modo impactaría"
+ pod_combat_status_dodge_tt: "Esquiva: anula el siguiente ataque"
+ pod_combat_status_stealth_tt: "Sigilo: +[GuiScope.ScriptValue('pod_combat_stealth_hit_bonus')|0]% de probabilidad de impacto mientras está activo; se consume con tu siguiente movimiento de salud o de contacto hostil, o cuando evitas un ataque"
+ pod_combat_status_retaliation_tt: "[GuiScope.SetRoot(Scope.Story.MakeScope).AddScope('slot', Scope.Story.MakeScope).Custom('PODCombatStatusRetaliationText')]"
+ # Use complete per-kind keys; nested Custom calls fail from the story root.
+ pod_combat_status_retaliation_tt_hit_hp:      "Represalia preparada: contraataca al contacto con #bold -[ROOT.Var('slot_retaliate_hit').GetValue|0]#! $superficial$"
+ pod_combat_status_retaliation_tt_hit_agg:     "Represalia preparada: contraataca al contacto con #bold -[ROOT.Var('slot_retaliate_hit').GetValue|0]#! $aggravated$"
+ pod_combat_status_retaliation_tt_hit_morale:  "Represalia preparada: contraataca al contacto con #bold -[ROOT.Var('slot_retaliate_hit').GetValue|0]#! [pod_combat_morale_icon|E]"
+ pod_combat_status_retaliation_tt_hit_source:  "Represalia preparada: contraataca al contacto con #bold -[ROOT.Var('slot_retaliate_hit').GetValue|0] [ROOT.Var('slot_retaliate_hit_kind').GetFlagName]#! $aggravated$"
+ pod_combat_status_retaliation_tt_miss_hp:     "Represalia preparada: contraataca al esquivar con #bold -[ROOT.Var('slot_retaliate_miss').GetValue|0]#! $superficial$"
+ pod_combat_status_retaliation_tt_miss_agg:    "Represalia preparada: contraataca al esquivar con #bold -[ROOT.Var('slot_retaliate_miss').GetValue|0]#! $aggravated$"
+ pod_combat_status_retaliation_tt_miss_morale: "Represalia preparada: contraataca al esquivar con #bold -[ROOT.Var('slot_retaliate_miss').GetValue|0]#! [pod_combat_morale_icon|E]"
+ pod_combat_status_retaliation_tt_miss_source: "Represalia preparada: contraataca al esquivar con #bold -[ROOT.Var('slot_retaliate_miss').GetValue|0] [ROOT.Var('slot_retaliate_miss_kind').GetFlagName]#! $aggravated$"
+ pod_combat_status_retaliation_tt_any_hp:      "Represalia preparada: contraataca a cualquier ataque, acierte o falle, con #bold -[ROOT.Var('slot_retaliate_any').GetValue|0]#! $superficial$"
+ pod_combat_status_retaliation_tt_any_agg:     "Represalia preparada: contraataca a cualquier ataque, acierte o falle, con #bold -[ROOT.Var('slot_retaliate_any').GetValue|0]#! $aggravated$"
+ pod_combat_status_retaliation_tt_any_morale:  "Represalia preparada: contraataca a cualquier ataque, acierte o falle, con #bold -[ROOT.Var('slot_retaliate_any').GetValue|0]#! [pod_combat_morale_icon|E]"
+ pod_combat_status_retaliation_tt_any_source:  "Represalia preparada: contraataca a cualquier ataque, acierte o falle, con #bold -[ROOT.Var('slot_retaliate_any').GetValue|0] [ROOT.Var('slot_retaliate_any_kind').GetFlagName]#! $aggravated$"
+ # Multi-charge tooltips show amounts only; their branches precede single-charge types.
+ pod_combat_status_retaliation_tt_both:        "Represalia preparada: al contacto #bold -[ROOT.Var('slot_retaliate_hit').GetValue|0]#!, al esquivar #bold -[ROOT.Var('slot_retaliate_miss').GetValue|0]#!"
+ pod_combat_status_retaliation_tt_any_hit:     "Represalia preparada: al contacto #bold -[ROOT.Var('slot_retaliate_hit').GetValue|0]#!, a cualquier otro ataque #bold -[ROOT.Var('slot_retaliate_any').GetValue|0]#!"
+ pod_combat_status_retaliation_tt_any_miss:    "Represalia preparada: al esquivar #bold -[ROOT.Var('slot_retaliate_miss').GetValue|0]#!, a cualquier otro ataque #bold -[ROOT.Var('slot_retaliate_any').GetValue|0]#!"
+ pod_combat_status_retaliation_tt_all:         "Represalia preparada: al contacto #bold -[ROOT.Var('slot_retaliate_hit').GetValue|0]#!, al esquivar #bold -[ROOT.Var('slot_retaliate_miss').GetValue|0]#!, a cualquier otro ataque #bold -[ROOT.Var('slot_retaliate_any').GetValue|0]#!"
+ # Triggerless fallback for PODCombatStatusRetaliationText
+ pod_combat_status_retaliation_tt_none:      ""
+ # Stance lines (colored element concept). tt_hit/miss_source remains
+ # a defensive GetFlagName fallback for an unrecognized source.
+ pod_combat_status_retaliation_tt_hit_elemental:  "Represalia preparada: contraataca al contacto con #bold -[ROOT.Var('slot_retaliate_hit').GetValue|0]#! [Localize( Concatenate( 'pod_combat_elemmark_', slot.MakeScope.Var('slot_retaliate_hit_kind').GetFlagKey ) )]"
+ pod_combat_status_retaliation_tt_miss_elemental: "Represalia preparada: contraataca al esquivar con #bold -[ROOT.Var('slot_retaliate_miss').GetValue|0]#! [Localize( Concatenate( 'pod_combat_elemmark_', slot.MakeScope.Var('slot_retaliate_miss_kind').GetFlagKey ) )]"
+ pod_combat_status_retaliation_tt_any_elemental:  "Represalia preparada: contraataca a cualquier ataque, acierte o falle, con #bold -[ROOT.Var('slot_retaliate_any').GetValue|0]#! [Localize( Concatenate( 'pod_combat_elemmark_', slot.MakeScope.Var('slot_retaliate_any_kind').GetFlagKey ) )]"
+ # DoT types share pod_combat_dot_tt_pre/post for amount and duration.
+ pod_combat_status_dot_tt: "[GuiScope.SetRoot(Scope.Story.MakeScope).AddScope('slot', Scope.Story.MakeScope).Custom('PODCombatStatusDoTText')]"
+ pod_combat_status_daze_tt: "[GuiScope.SetRoot(Scope.Story.MakeScope).AddScope('slot', Scope.Story.MakeScope).Custom('PODCombatStatusDazeText')]"
+ pod_combat_status_daze_tt_stunned: "Aturdido: empieza su siguiente turno con 0 PA; los movimientos de 0 PA elegibles siguen siendo utilizables"
+ pod_combat_status_daze_tt_dazed: "Atontado: pierde #bold [ROOT.Var('slot_ap_drain').GetValue|0]#! PA al comienzo de su siguiente turno"
+ pod_combat_status_control_tt: "Dominado: su siguiente turno sirve al enemigo"
+ pod_combat_dot_tt_pre:  "#bold -[ROOT.Var('slot_dot_amount').GetValue|0]#!"
+ pod_combat_dot_tt_post: " por ronda · quedan #bold [ROOT.Var('slot_dot_rounds').GetValue|0]#! rondas"
+ pod_combat_status_dot_tt_morale:     "$pod_combat_dot_tt_pre$ [pod_combat_morale|E]$pod_combat_dot_tt_post$"
+ pod_combat_status_dot_tt_superficial: "$pod_combat_dot_tt_pre$ $superficial$ de salud$pod_combat_dot_tt_post$"
+ pod_combat_status_dot_tt_aggravated: "$pod_combat_dot_tt_pre$ $aggravated$ de salud$pod_combat_dot_tt_post$"
+ pod_combat_status_dot_tt_elemental:  "$pod_combat_dot_tt_pre$ [Localize( Concatenate( 'pod_combat_elemmark_', slot.MakeScope.Var('slot_dot_kind').GetFlagKey ) )] de salud$pod_combat_dot_tt_post$"
+ # Disabled-button tooltips for the move-execution targeting gate.
+ pod_combat_targeting_need_enemy_tt:    "Selecciona un objetivo enemigo"
+ pod_combat_targeting_need_ally_tt:     "Selecciona un objetivo aliado"
+ pod_combat_targeting_need_pc_alive_tt: "El personaje jugador debe estar vivo"
+ POD_combat_controlled_animal_name: "Animal Controlado"
+ POD_combat_controlled_animal_swarm_name: "Plaga de Bestias"
+ POD_combat_wolf_name: "Lobo"
+ pod_combat_cant_summon_team_full_tt:   "El bando de destino de la invocación ya está a plena fuerza"
+ pod_combat_cant_summon_duel_barred_tt: "Los términos de este duelo prohíben pedir ayuda externa"
+ pod_combat_cant_heal_already_full_desc: "Sin efecto: ya tiene la salud y la moral al máximo"
+ ###### MOVE-BAR BLOCK REASONS (pod_combat_move_usability_tt SGUI)
+ # Phrase these as equip/execute failure reasons. Resource fragments include a leading
+ # space and icon. PoD's reserve check supplies the energy failure text.
+ pod_combat_usable_fight_over_tt:       "La pelea ha terminado"
+ pod_combat_usable_not_your_turn_tt:    "No es tu turno"
+ pod_combat_usable_actor_down_tt:       "Este combatiente está [pod_combat_knocked_out|E]"
+ pod_combat_usable_need_ap_tt:          "No hay suficientes [pod_combat_ap|E]"
+ pod_combat_usable_need_gold_tt:        "No puedes permitírtelo[story.Custom('PODCombatGoldCostInline')]"
+ pod_combat_usable_need_piety_tt:       "No puedes permitírtelo[story.Custom('PODCombatPietyCostInline')]"
+ pod_combat_usable_need_prestige_tt:    "No puedes permitírtelo[story.Custom('PODCombatPrestigeCostInline')]"
+ pod_combat_usable_used_this_round_tt:  "Ya usado esta ronda"
+ pod_combat_usable_used_this_combat_tt: "Ya usado en esta pelea"
+ pod_combat_usable_condition_unmet_tt:  "No se cumple su condición en este momento"
+ pod_combat_usable_not_unlocked_tt:     "Este combatiente no cumple los requisitos de este movimiento"
+
+ ###### AI DECISION TRACE (debug-gated; emitted via debug_log, not shown in UI)
+ # Keep the pod_combat_trace prefix, key=value format and field order stable for parsers.
+ # Read the host through GetPlayer.MakeScope; ROOT varies by call site. Numeric reads
+ # use GetValue|0; flags use GetFlagKey and must be set when emitted.
+ # Target records use numeric teams (1 = player, 2 = enemy), since flags may be unset.
+ # Compare pick records' th_* settings before comparing decisions across logs.
+ pod_combat_trace_pick:0 "pod_combat_trace pick round=[GetPlayer.MakeScope.ScriptValue('pod_combat_round_value')|0] action=[PODCombatFight.Var('pod_combat_ai_trace_actions').GetValue|0] actor_team=[PODCombatFight.Var('pod_combat_current_actor_team').GetFlagKey] actor_pos=[PODCombatFight.Var('pod_combat_current_actor_position').GetValue|0] ap=[PODCombatFight.Var('pod_combat_current_ap').GetValue|0] eligible=[PODCombatFight.Var('pod_combat_ai_trace_eligible').GetValue|0] intent=[PODCombatFight.Var('pod_combat_ai_intent').GetFlagKey] intent_n=[PODCombatFight.Var('pod_combat_ai_intent_n').GetValue|0] emg=[PODCombatFight.Var('pod_combat_ai_intent_emg').GetValue|0] locked=[PODCombatFight.Var('pod_combat_ai_intent_locked').GetValue|0] b_atk=[PODCombatFight.Var('pod_combat_actor_char').Var('pod_combat_pers_bias_atk').GetValue|0] b_def=[PODCombatFight.Var('pod_combat_actor_char').Var('pod_combat_pers_bias_def').GetValue|0] n_pre=[PODCombatFight.Var('pod_combat_ai_usable_pressure_n').GetValue|0] n_brk=[PODCombatFight.Var('pod_combat_ai_usable_break_n').GetValue|0] n_set=[PODCombatFight.Var('pod_combat_ai_usable_setup_n').GetValue|0] n_stab=[PODCombatFight.Var('pod_combat_ai_usable_stabilize_n').GetValue|0] hp=[GetPlayer.MakeScope.ScriptValue('pod_combat_actor_hp_value')|0] score=[PODCombatFight.Var('pod_combat_ai_trace_move').Var('pod_combat_ai_score').GetValue|0] smax=[PODCombatFight.Var('pod_combat_ai_score_max').GetValue|0] bfloor=[PODCombatFight.Var('pod_combat_ai_band_floor').GetValue|0] adm=[PODCombatFight.Var('pod_combat_ai_admitted_n').GetValue|0] min_cost=[PODCombatFight.Var('pod_combat_ai_min_ap_cost').GetValue|0] floor=[PODCombatFight.Var('pod_combat_ai_ap_strand_floor').GetValue|0] max_dmg=[PODCombatFight.Var('pod_combat_ai_trace_max_dmg').GetValue|0] move=[PODCombatFight.Var('pod_combat_ai_trace_move').Var('skill_key').GetFlagKey] ap_cost=[PODCombatFight.Var('pod_combat_ai_trace_move').Var('ap_cost').GetValue|0] targeting=[PODCombatFight.Var('pod_combat_ai_trace_move').Var('targeting').GetFlagKey] tgt_team=[PODCombatFight.Var('pod_combat_selected_target_team').GetFlagKey] tgt_pos=[PODCombatFight.Var('pod_combat_selected_target_position').GetValue|0] tgt_soak=[PODCombatFight.Var('pod_combat_target_soak').GetValue|0] tgt_morale=[PODCombatFight.Var('pod_combat_target_morale').GetValue|0] act_hit=[PODCombatFight.Var('pod_combat_current_hit_chance').GetValue|0] base_hit=[PODCombatFight.Var('pod_combat_actor_base_hit_chance').GetValue|0] own_pw=[PODCombatFight.Var('pod_combat_actor_prowess').GetValue|0] tgt_pw=[PODCombatFight.Var('pod_combat_target_prowess').GetValue|0] tgt_hit=[PODCombatFight.Var('pod_combat_target_hit_chance').GetValue|0] finishable=[PODCombatFight.Var('pod_combat_ai_enemy_finishable').GetValue|0] pend_drain=[PODCombatFight.Var('pod_combat_ai_tgt_ap_drain').GetValue|0] pend_ctrl=[PODCombatFight.Var('pod_combat_ai_tgt_controlled').GetValue|0] pend_dot=[PODCombatFight.Var('pod_combat_ai_tgt_dot_amount').GetValue|0] pend_dot_r=[PODCombatFight.Var('pod_combat_ai_tgt_dot_rounds').GetValue|0] pend_dot_mor=[PODCombatFight.Var('pod_combat_ai_tgt_dot_morale').GetValue|0] pend_init=[PODCombatFight.Var('pod_combat_ai_tgt_init_bonus').GetValue|0] tgt_hp=[PODCombatFight.Var('pod_combat_ai_tgt_hp').GetValue|0] fin_hp=[PODCombatFight.Var('pod_combat_ai_enemy_finishable_hp').GetValue|0] fin_mor=[PODCombatFight.Var('pod_combat_ai_enemy_finishable_mor').GetValue|0] ctf=[PODCombatFight.Var('pod_combat_ai_cur_target_finishable').GetValue|0] fin_n=[PODCombatFight.Var('pod_combat_ai_fin_n').GetValue|0] fin_team_n=[PODCombatFight.Var('pod_combat_ai_fin_team_n').GetValue|0] fin_pos=[PODCombatFight.Var('pod_combat_ai_fin_pos').GetValue|0] kg_hp=[PODCombatFight.Var('pod_combat_ai_can_dmg_hp').GetValue|0] kg_mor=[PODCombatFight.Var('pod_combat_ai_can_dmg_mor').GetValue|0] th_hp=[GetPlayer.MakeScope.ScriptValue('pod_combat_ai_hp_finish_threshold')|0] th_mor=[GetPlayer.MakeScope.ScriptValue('pod_combat_ai_morale_finish_threshold')|0] th_kill=[GetPlayer.MakeScope.ScriptValue('pod_combat_ai_kill_priority_boxes')|0] th_mor_kill=[GetPlayer.MakeScope.ScriptValue('pod_combat_ai_morale_kill_priority')|0] snap=[PODCombatFight.Var('pod_combat_ai_snap_done').GetValue|0]"
+ pod_combat_trace_target:0 "pod_combat_trace target round=[GetPlayer.MakeScope.ScriptValue('pod_combat_round_value')|0] actor_t=[PODCombatFight.Var('pod_combat_ai_trace_sel_actor_t').GetValue|0] actor_pos=[PODCombatFight.Var('pod_combat_current_actor_position').GetValue|0] ctx=[PODCombatFight.Var('pod_combat_ai_trace_sel_ctx').GetValue|0] cand=[PODCombatFight.Var('pod_combat_ai_trace_sel_cand').GetValue|0] kb_hp=[PODCombatFight.Var('pod_combat_ai_trace_sel_kb_hp').GetValue|0] kb_mor=[PODCombatFight.Var('pod_combat_ai_trace_sel_kb_mor').GetValue|0] picked=[PODCombatFight.Var('pod_combat_ai_trace_sel_picked').GetValue|0] sel_team=[PODCombatFight.Var('pod_combat_ai_trace_sel_team').GetValue|0] sel_pos=[PODCombatFight.Var('pod_combat_ai_trace_sel_pos').GetValue|0] sel_hp=[PODCombatFight.Var('pod_combat_ai_trace_sel_hp').GetValue|0] sel_mor=[PODCombatFight.Var('pod_combat_ai_trace_sel_mor').GetValue|0] kg_hp=[PODCombatFight.Var('pod_combat_ai_can_dmg_hp').GetValue|0] kg_mor=[PODCombatFight.Var('pod_combat_ai_can_dmg_mor').GetValue|0]"
+ pod_combat_trace_turn:0 "pod_combat_trace turn round=[GetPlayer.MakeScope.ScriptValue('pod_combat_round_value')|0] actor_team=[PODCombatFight.Var('pod_combat_current_actor_team').GetFlagKey] actor_pos=[PODCombatFight.Var('pod_combat_current_actor_position').GetValue|0] actions=[PODCombatFight.Var('pod_combat_ai_trace_actions').GetValue|0] ap_left=[PODCombatFight.Var('pod_combat_current_ap').GetValue|0] last_eligible=[PODCombatFight.Var('pod_combat_ai_trace_eligible').GetValue|0] soaked=[PODCombatFight.Var('pod_combat_ai_trace_soaked').GetValue|0] landed=[PODCombatFight.Var('pod_combat_ai_trace_landed').GetValue|0] hits=[PODCombatFight.Var('pod_combat_ai_trace_hits').GetValue|0] stop=[PODCombatFight.Var('pod_combat_ai_trace_stop').GetValue|0]"
+ pod_combat_move_redundant_tt: "Todos los efectos de este movimiento ya están activos con igual o mayor intensidad"
+ # Scope is the slot story. ROOT is not the datamodel row, and GetPlayer would give
+ # every combatant the player's morale ceiling.
+ pod_combat_slot_morale_tt: "[pod_combat_morale|E]: #bold [Scope.Var('slot_morale').GetValue|0]#! / #weak [Scope.ScriptValue('pod_combat_slot_max_morale_value')|0]#!"
+ # ── Per-slot Hit display dispatch ──────────────────────────────────
+ pod_combat_slot_hit_npc_buff:   "#P +[ROOT.ScriptValue('pod_combat_slot_hit_net_mod_value')|0]%#!"
+ pod_combat_slot_hit_npc_debuff: "#N [ROOT.ScriptValue('pod_combat_slot_hit_net_mod_value')|0]%#!"
+ pod_combat_slot_hit_npc_neutral: "#weak —#!"
+ # ── Top-row PC target / hit readout ────────────────────────────────
+ pod_combat_pc_target_display:     "#bold Objetivo:#! [GetPlayer.MakeScope.Var('pod_combat_my_control_slot').Var('slot_target_char').GetCharacter.GetFirstNameNoTooltip|V] #weak ·#! [pod_combat_hit|E]: #bold;V [GetPlayer.MakeScope.Var('pod_combat_my_control_slot').Var('slot_hit_chance').GetValue|0]%#!"
+ pod_combat_pc_hit_breakdown_tt:   "#bold [pod_combat_hit_chance|E]#!\n#weak [prowess|E]#!: tú #bold [PODCombatFight.Var('pod_combat_pc_hit_own_prowess').GetValue|0]#! contra el objetivo #bold [PODCombatFight.Var('pod_combat_pc_hit_target_prowess').GetValue|0]#!\n#weak Base (según la Destreza)#!: #bold [GetPlayer.MakeScope.Var('pod_combat_my_control_slot').Var('slot_base_hit_chance').GetValue|0]%#!\n#weak [pod_combat_stealth|E]#!: [GetPlayer.MakeScope.ScriptValue('pod_combat_pc_stealth_bonus_value')|0]%\n#weak Mejoras / penalizaciones de combate#!: [GetPlayer.MakeScope.ScriptValue('pod_combat_pc_hit_net_mod_value')|0]%\n#bold = [GetPlayer.MakeScope.Var('pod_combat_my_control_slot').Var('slot_hit_chance').GetValue|0]%#! #weak (limitado a [GetPlayer.MakeScope.ScriptValue('pod_combat_hit_chance_min')|0]-[GetPlayer.MakeScope.ScriptValue('pod_combat_hit_chance_max')|0]%)#!"
+ # -- Per-slot focus-target readout (who this AI is going after) --
+ pod_combat_slot_focus_none:       ""
+ pod_combat_slot_focus_target:     "#weak Atacando a:#! #bold [ROOT.Var('slot_char').GetCharacter.MakeScope.Var('pod_combat_ai_focus_char').GetCharacter.GetFirstNameNoTooltip]#!"
+
+ ##############################
+ ###### SLOT CARD + STATS TOOLTIP
+ ##############################
+
+ # Slot-card and stats-tooltip text; Scope is the slot story.
+ pod_combat_card_health_label:  "#medium Salud#!"
+ pod_combat_card_morale_label:  "#medium Moral#!"
+ pod_combat_card_knocked_out:   "FUERA DE COMBATE"
+ pod_combat_card_prowess_label: "#medium Destreza:#! [Scope.ScriptValue('pod_combat_slot_prowess_value')|0]"
+ pod_combat_card_hit_label:     "#medium Impacto:#! [GuiScope.SetRoot(Scope.Story.MakeScope).Custom('PODCombatSlotHitDisplay')]"
+ pod_combat_card_soak_label:    "#medium Absorber:#! [Scope.ScriptValue('pod_combat_slot_soak_value')|0]%"
+
+ pod_combat_mod_scope_round:  "(ronda)"
+ pod_combat_mod_scope_combat: "(combate)"
+ pod_combat_stats_tt_title:               "#bold ESTADÍSTICAS#! DE COMBATE: [Character.GetFirstNameNoTooltip]"
+ pod_combat_stats_tt_health:              "#bold [POD_health_track|E]#!: #italic [Subtract_CFixedPoint( Scope.Var('slot_mirror_maxhp').GetValue, Scope.Var('slot_mirror_total').GetValue )]/[Scope.Var('slot_mirror_maxhp').GetValue]#!"
+ pod_combat_stats_tt_morale:              "#bold [pod_combat_morale|E]#!: #italic [Scope.Var('slot_morale').GetValue|0]/[Scope.ScriptValue('pod_combat_slot_max_morale_value')|0]#!"
+ pod_combat_stats_tt_hit:                 "[pod_combat_hit_chance|E]: #bold [GuiScope.SetRoot(Scope.Story.MakeScope).Custom('PODCombatSlotHitDisplay')]#!"
+ pod_combat_stats_tt_hit_buff_round:      "#P +[Scope.ScriptValue('pod_combat_slot_hit_buff_round_mag_sv')|0]% $pod_combat_mod_scope_round$#!"
+ pod_combat_stats_tt_hit_buff_combat:     "#P +[Scope.ScriptValue('pod_combat_slot_hit_buff_combat_mag_sv')|0]% $pod_combat_mod_scope_combat$#!"
+ pod_combat_stats_tt_hit_debuff_round:    "#N -[Scope.ScriptValue('pod_combat_slot_hit_debuff_round_mag_sv')|0]% $pod_combat_mod_scope_round$#!"
+ pod_combat_stats_tt_hit_debuff_combat:   "#N -[Scope.ScriptValue('pod_combat_slot_hit_debuff_combat_mag_sv')|0]% $pod_combat_mod_scope_combat$#!"
+ pod_combat_stats_tt_soak:                "[soak_damage|E]: #bold [Scope.ScriptValue('pod_combat_slot_soak_value')|0]%#!"
+ pod_combat_stats_tt_soak_buff_round:     "#P +[Scope.ScriptValue('pod_combat_slot_soak_buff_round_mag_sv')|0]% $pod_combat_mod_scope_round$#!"
+ pod_combat_stats_tt_soak_buff_combat:    "#P +[Scope.ScriptValue('pod_combat_slot_soak_buff_combat_mag_sv')|0]% $pod_combat_mod_scope_combat$#!"
+ pod_combat_stats_tt_soak_debuff_round:   "#N -[Scope.ScriptValue('pod_combat_slot_soak_debuff_round_mag_sv')|0]% $pod_combat_mod_scope_round$#!"
+ pod_combat_stats_tt_soak_debuff_combat:  "#N -[Scope.ScriptValue('pod_combat_slot_soak_debuff_combat_mag_sv')|0]% $pod_combat_mod_scope_combat$#!"
+ pod_combat_stats_tt_compound_note:       "las mejoras se componen, no se suman"
+ pod_combat_stats_tt_initiative:          "[pod_combat_initiative|E]: #bold [Scope.ScriptValue('pod_combat_slot_initiative_value')|0]#!"
+ pod_combat_stats_tt_turn_order:          "[pod_combat_turn_order|E]: #bold [Scope.Var('slot_turn_order').GetValue|0]#!"
+
+ ##############################
+ ###### FLAVORIZED LABELS
+ ##############################
+
+ pod_combat_title_default: "COMBATE"
+ pod_combat_title_1v1: "DUELO"
+ pod_combat_title_1v1_mage: "CERTÁMEN"
+ pod_combat_title_custom: "[GetPlayer.MakeScope.Var('pod_combat_session').Var('custom_title').GetFlagName]"
+
+ pod_combat_title_debug: "COMBATE DE DEPURACIÓN"
+ pod_combat_debug_proxy_interaction:0 "Depuración: combate delegado"
+ pod_combat_debug_proxy_desc:0 "Dirige una pelea en la que no participas: los cortesanos luchan en tu bando y tú manejas al principal. No puedes resultar herido; tu delegado puede morir."
+
+ ##############################
+ ###### CUSTOM_DESCRIPTIONS
+ ##############################
+
+ POD_COMBAT_CUSTOM_PLAYER_TEAM_NAME: "[GetPlayer.MakeScope.Var('pod_combat_session').Var('player_team_name').GetFlagName]"
+ POD_COMBAT_CUSTOM_ENEMY_TEAM_NAME: "[GetPlayer.MakeScope.Var('pod_combat_session').Var('enemy_team_name').GetFlagName]"
+
+ ##############################
+ ###### MESSAGES
+ ##############################
+ 
+ pod_combat_apply_morale_strain_title: "Estrés por moral perdida"
+ pod_combat_apply_morale_strain_desc: "#italic Cada punto de [pod_combat_morale|E] que falte al final del combate supone [GuiScope.ScriptValue('pod_combat_morale_stress_multiplier')|V0] [stress_gain_i][static_stress|E].#!"
+
+ ##############################
+ ###### HELP / OVERVIEW EVENT
+ ##############################
+
+ pod_combat.0001.t: "Visión General del Sistema de Combate"
+ pod_combat.0001.desc: "Los [pod_combat_encounters_with_icon|E] son por turnos: cada combatiente gasta [pod_combat_action_points|E] en [pod_combat_moves|E], y tú eliges entre el equipamiento que has preparado de antemano. Ganas cuando todos los enemigos están [pod_combat_knocked_out|E]. A menos que eso ocurra antes, pierdes en cuanto cae tu personaje, aunque queden aliados. Cada etiqueta azul de la ventana de combate tiene una información emergente: úsalas siempre que necesites un recordatorio.\n\nElige un tema a continuación para ver los detalles. Puedes volver a abrir este menú en cualquier momento con el botón #bold Ayuda#!."
+ pod_combat.0001.a: "» Turnos y Selección de Objetivo"
+ pod_combat.0001.b: "» Interpretar el Combate"
+ pod_combat.0001.c: "» Ataque, Defensa y Efectos"
+ pod_combat.0001.d: "» Resultados y Controles"
+ pod_combat_help_back: "« Volver a los temas"
+ pod_combat_help_close: "Cerca"
+ pod_combat.0100.t: "Turnos y Selección de Objetivo"
+ pod_combat.0100.desc: "#bold TU TURNO#!\nCada ronda empiezas con #bold [GuiScope.ScriptValue('pod_combat_base_ap')|0]#! [pod_combat_action_points|E] (más o menos si algo los ha mejorado, drenado o devuelto). Gasta PA en los movimientos de tu barra; los que no puedes pagar aparecen atenuados. Pulsa #bold Terminar Turno#! cuando acabes: los PA no gastados se pierden.\n\nMuchos movimientos cuestan además #bold energía sobrenatural#!: Sangre para los vampiros, Gnosis para los cambiaformas, Pathos o Angustia para los wraiths, Glamour para los changelings, etcétera. Se paga de la reserva habitual de tu splat, así que abusar de las Disciplinas costosas te desgasta durante la pelea y te deja agotado después. Unos pocos movimientos cuestan también Oro, Piedad, Prestigio o [static_stress|E].\n\nPara elegir qué hay en tu barra, abre la [decision|E] [GetDecision('pod_combat_configure_moves').GetName|V] antes del combate. Estás limitado a cuatro movimientos por categoría (#color_red ATQ#! / #color_light_blue DEF#! / #color_porple CTL#! / #color_pwr_orange PDR#!). Activa #bold Mostrar todos los movimientos#! allí para examinar los que aún no has desbloqueado: cada movimiento bloqueado indica exactamente qué rasgos, poderes o ventajas te faltan.\n\n#bold ELEGIR OBJETIVO#!\nHaz clic en la #bold tarjeta#! de un aliado o enemigo (o en su retrato de la tira del orden de turnos) para marcarlo como objetivo actual; su tarjeta muestra una insignia @check_icon! #bold Objetivo#!, y tu objetivo y tu [pod_combat_hit_chance|E] contra él aparecen en la parte superior de la ventana. Los movimientos ofensivos se lanzan contra tu objetivo enemigo, los de apoyo (curaciones, mejoras) contra tu objetivo aliado, y los movimientos solo para ti ignoran la selección. Algunos movimientos son #bold de área#!: golpean a todos los enemigos o a todos los aliados a la vez, sea cual sea tu selección. Cambiar de objetivo recalcula tu Probabilidad de Impacto a partir de tu [prowess|E] frente a la suya, tus modificadores de Impacto activos y tu propia bonificación de [pod_combat_stealth_with_icon|E]. La [pod_combat_guard_with_icon|E], la [pod_combat_dodge_with_icon|E], el [pod_combat_stealth_with_icon|E] y la [soak_damage|E] del objetivo se resuelven por separado y no alteran ese porcentaje.\n\n#bold A QUIÉN BUSCA LA IA#!\nLa tarjeta de cada combatiente de la IA tiene una línea #bold Atacando a#! que indica a quién fue a por último, tanto en enemigos como en tus aliados de la IA (tu objetivo es el indicador de arriba). Es el rival en quien se están #italic concentrando#!: una fuerte tendencia, pues los combatientes suelen seguir golpeando a la misma víctima, pero no una garantía: la IA cambiará de objetivo para rematar a uno casi caído. La línea está en blanco antes de que un combatiente haya jugado su primer turno y mientras está #bold dominado#! (su concentración se borra ese turno). Léela para detectar a quién están a punto de acorralar y para sacar a un aliado frágil de la línea de fuego.\n\n#bold ORDEN DE TURNOS#!\nEn peleas de tres o más, una #bold tira de orden de turnos#! con retratos recorre la parte superior: el orden de actuación, de izquierda a derecha. Cada combatiente tira [pod_combat_initiative|E] una sola vez al entrar en la pelea y la conserva, así que el orden se mantiene durante toda la refriega y puedes planear varios turnos por adelantado; solo una penalización de iniciativa lo altera, y solo durante una ronda. El actor actual aparece resaltado en dorado; los retratos se atenúan cuando ya han actuado o han caído, y la tira se desplaza lateralmente cuando la refriega se llena. Pueden unirse combatientes a una pelea ya en marcha (un nigromante que alza a un aliado wraith, refuerzos que llegan) y se integran en el orden a partir de la siguiente ronda."
+ pod_combat.0101.t: "Interpretar el Combate"
+ pod_combat.0101.desc: "#bold LAS TARJETAS DE LOS COMBATIENTES#!\nLa tarjeta de cada combatiente muestra:\n• [POD_health_track|E]: casillas de herida; se llena a medida que reciben golpes.\n• [pod_combat_morale|E]: compostura mental, independiente de la salud. Los ataques mentales directos la reducen; cada casilla de herida que un golpe inflige realmente tras Absorber también quita #bold [GuiScope.ScriptValue('pod_combat_morale_from_hp_base_ratio')|0]#! de Moral.\n• [prowess|E] / [pod_combat_hit|E] / [soak_damage|E]: cifras ofensivas y defensivas.\nPasa el cursor sobre cualquier tarjeta para ver el desglose completo, incluidos la [pod_combat_init|E] de ese combatiente y su número de [pod_combat_turn|E] en el orden.\nLos iconos de estado del borde inferior de la tarjeta señalan las posturas y aflicciones activas (Guardia, Esquiva, Sigilo, Represalia, ardiendo, aturdimiento, dominación); pasa el cursor sobre cualquiera de ellos para ver los detalles.\n\n#bold EL REGISTRO DE COMBATE#!\nEl panel desplazable bajo la barra de movimientos recoge por orden todos los sucesos relevantes, el más reciente arriba. Cada fila muestra quién actuó, el movimiento, el objetivo y todo lo que hizo el movimiento: daño, curación, drenajes, aflicciones, retroceso y contraataques, además de los fallos, bloqueos y absorciones que los detuvieron. Los aliados aparecen teñidos de dorado y los enemigos de rojo, de modo que un rápido vistazo atrás te da el ritmo de la pelea.\n\nAlgunos patrones de fila que conviene reconocer:\n• Los ataques #bold de área#! añaden #bold una fila por objetivo#! para que veas exactamente quién recibió qué (p. ej., «Mithras → Todos los enemigos (Steve)»).\n• Cuando se activa una postura como Represalia, la fila que la provocó muestra un añadido #bold + Contraataque#! junto al resultado principal.\n• Unos marcadores enmarcan la pelea: «— Comienza el combate —» abajo, «— Comienza la ronda 2 —» en cada cambio de ronda, y «— Fin del combate · Victoria —» o «— Fin del combate · Derrota —» arriba cuando termina."
+ pod_combat.0102.t: "Ataque, Defensa y Efectos"
+ pod_combat.0102.desc: "#bold ACERTAR UN GOLPE#!\nLa información emergente de un movimiento indica qué fases defensivas omite. Un ataque físico normal debe poder afectar primero a un espíritu incorpóreo. Después, el [pod_combat_stealth_with_icon|E] o la [pod_combat_dodge_with_icon|E] pueden evadirlo, su tirada de [pod_combat_hit_chance|E] puede fallar, y la [pod_combat_guard_with_icon|E] puede bloquear un golpe que de otro modo impactaría. Luego la [soak_damage|E] se tira por separado contra cada punto de daño, de modo que un golpe fuerte suele reducirse en vez de detenerse del todo.\n\n#bold Sin tirada de Impacto#! omite solo la tirada porcentual; #bold Inesquivable#! ignora la Esquiva y el Sigilo; #bold Afecta a espíritus incorpóreos#! siempre golpea a los espíritus aunque de otro modo no pudieras; y #bold Ignora la Guardia#! impacta a través de ella. #bold Rompe la Guardia#! o #bold Elimina Esquiva / Sigilo#! borra esa postura antes de que se resuelvan los demás efectos del movimiento. Los ataques sobrenaturales y mentales normalmente omiten la tirada de Impacto y la Guardia, pero la Esquiva y el Sigilo aún pueden evadirlos.\n\n#bold TIPOS DE DAÑO#!\n• [Concept('POD_superficial_damage','Superficial')|E]: absorbible punto por punto, se cura entre combates.\n• [Concept('POD_aggravated_damage','Agravado')|E]: inabsorbible por defecto, se cura despacio. Los ataques elementales ([fire_damage_short|E], [cold_damage_short|E], [lightning_damage_short|E], [sun_damage_short|E], [silver_damage_short|E], [gold_damage_short|E], [holy_damage_short|E], [balefire_damage_short|E], [poison_damage_short|E] y [cold_iron_damage_short|E]) son agravados solo contra los splats vulnerables a ellos, y algunos splats son directamente #bold inmunes#!: pasa el cursor sobre el tipo de daño para ver el desglose de estas vulnerabilidades.\nUnos pocos movimientos son #bold ataques drenadores#! que te curan, pero solo si el ataque inflige Daño a la salud tras Absorber. Unos pocos #bold te hieren a ti#! al usarlos: ataques temerarios a todo o nada que sacrifican parte de tu propia salud por un golpe más pesado.\n\n#bold JUEGO DEFENSIVO#!\nPuedes acumular defensas por adelantado: permanecen activas hasta que algo las pone a prueba. Un buen turno suele preparar una defensa en lugar de atacar:\n• [pod_combat_guard_with_icon|E]: bloquea el siguiente ataque que comprueba la Guardia y que de otro modo impactaría.\n• [pod_combat_dodge_with_icon|E]: anula el siguiente ataque que comprueba la Esquiva; los movimientos Inesquivables la dejan lista.\n• [pod_combat_stealth_with_icon|E]: +[GuiScope.ScriptValue('pod_combat_stealth_hit_bonus')|0]% de Impacto mientras está activo; se consume con tu siguiente movimiento de salud o de contacto hostil, o cuando evitas un ataque.\n• #bold Represalia al Impactar / al Fallar#!: contraataca a quien te pone a prueba. La información emergente del movimiento indica el contraataque exacto y si es superficial o agravado.\n\n#bold MEJORAS Y PENALIZACIONES#!\nLos efectos temporales de Impacto y Absorber vienen en niveles pequeño, medio y grande. Las mejoras y penalizaciones de Impacto, y las penalizaciones de Absorber, suman o restan #bold 10 / 20 / 30#! puntos porcentuales. Las mejoras de Absorber, en cambio, reducen en #bold 10 / 20 / 30%#! el daño restante tras el Absorber existente, así que su beneficio mostrado depende del Absorber actual del combatiente.\n\nLas versiones de ronda y de combate ocupan ranuras distintas, igual que las mejoras y las penalizaciones, por lo que pueden coexistir. Dentro de la misma estadística, dirección y duración, solo un nivel estrictamente superior sustituye al actual; un nivel igual o inferior no añade nada. Una mejora de ronda expira cuando empieza el siguiente turno de su portador, mientras que una penalización de ronda dura durante el siguiente turno de su portador y expira al final de ese turno. Los efectos de duración de combate duran hasta que termina la pelea.\n\n#bold AFLICCIONES Y CONTROL#!\nAlgunos movimientos dejan algo más que una herida:\n• #bold Daño con el tiempo#!: se activa al final de cada ronda durante unas cuantas rondas, y cada efecto se marca con el icono de su tipo de daño. Las aflicciones mentales reducen en cambio la [pod_combat_morale|E]; las de tipo indefinido simplemente hieren. Un icono de estado en la tarjeta de la víctima lo señala; pasa el cursor para ver el daño y las rondas restantes.\n• #bold Aturdimiento y atontamiento#!: algunos ataques drenan los Puntos de Acción del objetivo para su siguiente turno. Un drenaje total hace que ese turno empiece con #bold 0 PA#!; los movimientos elegibles de 0 PA siguen siendo utilizables.\n• #bold Dominación#!: unos pocos poderes mentales roban el siguiente turno de un combatiente y lo vuelven contra su propio bando. Las defensas mentales fuertes lo ignoran salvo que el lanzador pueda atravesarlas, y #bold tu#! personaje nunca puede ser manipulado."
+ pod_combat.0103.t: "Resultados y Controles"
+ pod_combat.0103.desc: "#bold QUEDAR FUERA DE COMBATE#!\nUn combatiente queda fuera de la pelea cuando ocurre cualquiera de estas cosas:\n• Su [POD_health_track|E] se llena por completo.\n• Su [pod_combat_morale|E] llega a cero.\n• Muere, queda #N Incapacitado#!, entra en letargo o queda atrapado en el Reino de las Sombras o en el Abismo.\nCada caída sacude a los supervivientes: cada compañero que queda pierde #bold [GuiScope.ScriptValue('pod_combat_ally_down_morale_penalty')|0]#! de [pod_combat_morale|E], pero este shock nunca puede dejarlos por debajo de 1 de Moral. #bold Ganas#! en cuanto no queda ningún enemigo. En caso contrario, si #bold tu personaje#! queda fuera de combate, pierdes de inmediato aunque queden aliados.\n\n#bold TRAS LA PELEA#!\nFuera de los combates de Práctica, cada combatiente vivo recibe #bold [GuiScope.ScriptValue('pod_combat_morale_stress_multiplier')|0]#! de [static_stress|E] por cada punto de [pod_combat_morale|E] que aún falte cuando acaba el combate. Restaurar Moral antes reduce este coste duradero. Las heridas persisten según el modo de duelo, y la energía sobrenatural u otros recursos gastados en movimientos siguen gastados. Tu equipamiento de movimientos se conserva entre combates.\n\n#bold MODOS DE DUELO#!\nEl evento que desencadenó la pelea decide las reglas de letalidad:\n• #bold Letal#!: las heridas persisten y se aplican las reglas normales de heridas, muerte y supervivencia específicas de cada splat de PoD. Algunos eventos iniciadores garantizan que el perdedor muera.\n• #bold No letal#!: las heridas se aplican con normalidad y pueden dejar fuera de combate a los combatientes, pero se bloquean las muertes por heridas. Al terminar el combate, un seguimiento de heridas completamente lleno se cura hasta dejar una casilla vacía.\n• #bold Práctica#!: el daño, la curación y la Moral funcionan durante el combate de entrenamiento y determinan quién cae, pero después se restauran todos los seguimientos de heridas previos a la pelea y la Moral que falte no genera Tensión Mental duradera. Se siguen pagando los costes normales de los movimientos, y las ganancias condicionales de energía pueden persistir.\n\n#bold BOTONES DE LA VENTANA#!\n• #bold Terminar Turno#!: confirma tu turno y pasa al siguiente combatiente por orden de iniciativa. Los PA no gastados se pierden.\n• #bold Resolución Automática#!: omite el resto del combate. Se suma la [prowess|E] en directo de cada equipo superviviente y luego este recibe una bonificación aleatoria de cero hasta ese total; gana la puntuación más alta, y los empates favorecen a tu bando. La Moral del líder perdedor cae a cero, lo que genera la máxima Tensión Mental basada en Moral fuera de la Práctica si ese líder sobrevive.\n  Omitir la pelea no sale gratis. En el forcejeo final todo combatiente que siga en pie resulta herido, incluidos los ganadores, en proporción a lo decisivamente que se resolvió la pelea: un resultado ajustado perjudica a ambos bandos por igual, y una derrota total deja casi intactos a los ganadores y malheridos a los perdedores. La [soak_damage|E] se tira con normalidad, así que un combatiente duro puede ignorarlo por completo. Los combates de práctica quedan exentos.\n  Una cosa anula esa tirada: si sigue en pie un enemigo al que #bold no tienes forma de dañar#! (un espíritu incorpóreo al que nadie de tu bando puede tocar), no hay total que gane, así que la Resolución Automática cede en lugar de tirar. El botón sigue disponible precisamente porque esa pelea no tiene otra salida, y su información emergente te avisa antes de pulsarlo. Lo inverso también se cumple, pero solo cuando #bold tu propio personaje#! es el intocable: un aliado incorpóreo no te salva, ya que pierdes en el momento en que cae tu personaje.\n• #bold Terminar Combate#!: cierra la ventana una vez resuelta la pelea (sustituye a Terminar Turno / Resolución Automática tras la victoria o la derrota).\n• Casilla #bold Avance automático#!: cuando está activada, todos los turnos de la IA de una ronda se resuelven con un solo clic en lugar de uno a uno.\n• #bold Ayuda#!: vuelve a abrir esta guía en cualquier momento.\n\nUna vez decidido el vencedor, aparece una opción #bold $pod_combat.9995.a$#!, y al elegirla vuelves al evento que exigió la pelea. No se puede abandonar un duelo a medias: llévalo hasta el final o deja que la Resolución Automática lo zanje."
+
+ ##############################
+ ###### FIRST-FIGHT INTRO EVENT
+ ##############################
+
+ # Intro for characters who have not opened Configure Moves or acknowledged it.
+ pod_combat.0200.t: "Conócete a Ti Mismo, Conoce a tu Enemigo"
+ pod_combat.0200.desc: "Está a punto de comenzar un [pod_combat_encounter_with_icon|E] por turnos. Cada ronda gastas [pod_combat_action_points|E] en los [pod_combat_moves|E] que tienes equipados, y termina cuando todos los enemigos #italic (o tú)#! están [pod_combat_knocked_out|E]. Para más información sobre las mecánicas, hay un botón #bold Ayuda#! en la ventana de combate.\n\nComo aún no has cambiado tu equipamiento de [pod_combat_move|E] con este personaje, se recomienda hacerlo ahora. Si no, puedes acceder a la [decision|E] [GetDecision('pod_combat_configure_moves').GetName] siempre que estés fuera de combate."
+ pod_combat.0200.a: "Repasar primero tus movimientos."
+ pod_combat_intro_review_tt: "Abre la ventana de [pod_combat_moves|E]. La pelea espera hasta que decidas empezar."
+ pod_combat.0200.b: "Comenzar la pelea con los movimientos predeterminados."
+
+ pod_combat.0201.t: "LA #bold PELEA#! TE ESPERA"
+ pod_combat.0201.desc: "#italic Elige los movimientos que quieres equipar y empieza cuando estés listo.#!"
+ pod_combat.0201.a: "#bold Comenzar#! la pelea"
+
+ ##############################
+ ###### GROUP COMBAT LABELS
+ ##############################
+
+ pod_combat_already_targeted_ally:  "Este #bold aliado#! es tu objetivo actual."
+ pod_combat_already_targeted_enemy: "Este #bold enemigo#! es tu objetivo actual."
+ pod_combat_select_target_ally:  "Haz clic para elegir a este #bold aliado#! como objetivo."
+ pod_combat_select_target_enemy: "Haz clic para elegir a este #bold enemigo#! como objetivo."
+ pod_combat_select_target_rightclick: "Clic derecho para abrir la ventana del personaje."
+
+ ##############################
+ ###### DUEL LAUNCH
+ ##############################
+
+ # Keep launch text neutral across fatality modes, sides and weapons.
+ pod_combat_duel_begins_tt: "#bold Comienza un [pod_combat_encounter_with_icon|E].#!"
+
+ ##############################
+ ###### DUEL SHELL CARD
+ ##############################
+
+ # The shell appears after resolution. Wording must cover every fatality mode without implying death.
+ pod_combat.9995.t: "EL #bold DUELO#! ESTÁ DECIDIDO"
+ pod_combat.9995.desc: "Las hojas callan. Vuelve al asunto que puso todo esto en marcha."
+ pod_combat.9995.a: "Concluir la pelea"
+ pod_combat_shell_conclude_tt: "Deja que el resultado se mantenga y retoma la disputa donde se quedó."
+ # Shown only on a card that outlived its fight (host died mid-fight).
+ pod_combat_shell_status_stale: "#weak Este combate ya ha seguido su curso.#!"
+
+ ##############################
+ ###### RESULT TOASTS
+ ##############################
+
+ pod_combat_result_victory_toast: "¡Victoria!"
+ pod_combat_result_defeat_toast: "Derrota."
+
+ ##############################
+ ###### GAME RULE
+ ##############################
+
+ rule_pod_combat_system: "$POD_gamerule$ [pod_combat_encounters_with_icon|E]"
+ setting_pod_combat_enabled: "Activado"
+ setting_pod_combat_enabled_desc: "Los duelos usan el minijuego de [pod_combat_encounter_with_icon|E]."
+ setting_pod_combat_disabled: "Desactivado"
+ setting_pod_combat_disabled_desc: "Los duelos usan el sistema del juego base (basado en eventos)."
+
+ ##############################
+ ###### DEBUG INTERACTION
+ ##############################
+
+ interaction_debug_combat: "#D DEPURACIÓN: #BER Minijuego de Combate#!#!"
+
+ pod_combat_debug_tuning_interaction: "DEPURACIÓN: Ventana de Ajuste de Combate"
+ pod_combat_debug_tuning_desc: "Activa o desactiva la ventana de equilibrado en tiempo de ejecución de [pod_combat_encounter_with_icon|E] (economía de PA, moral, límites de equipamiento, iniciativa, cálculo de impacto, niveles, umbrales de la IA)."
+ pod_combat_debug_1v1_interaction: "Combate 1 contra 1"
+ pod_combat_debug_1v1_desc: "Depuración: inicia un [pod_combat_encounter_with_icon|E] de 1 contra 1 con este personaje."
+ pod_combat_debug_1vn_interaction: "Combate 1 contra N"
+ pod_combat_debug_1vn_desc: "Depuración: lucha tú solo contra este personaje y sus caballeros."
+ pod_combat_debug_nv1_interaction: "Combate N contra 1"
+ pod_combat_debug_nv1_desc: "Depuración: lucha contra este personaje con tu coterie."
+ pod_combat_debug_nvn_interaction: "Combate N contra N"
+ pod_combat_debug_nvn_desc: "Depuración: tu coterie contra este personaje y sus caballeros."
+ pod_combat_debug_practice_interaction: "Combate de Práctica"
+ pod_combat_debug_practice_desc: "Depuración: duelo de práctica 1 contra 1; no se registran heridas."
+ pod_combat_debug_nonfatal_interaction: "Combate No Letal"
+ pod_combat_debug_nonfatal_desc: "Depuración: duelo no letal 1 contra 1; se aplican las heridas pero el seguimiento de salud de nadie se llena por completo."
+ pod_combat_debug_nosummon_interaction: "Combate Sin Invocaciones"
+ pod_combat_debug_nosummon_desc: "Depuración: duelo 1 contra 1 con las invocaciones prohibidas; todos los movimientos de invocación quedan desactivados para ambos bandos."
+ pod_combat_debug_victory_toast: "Combate de Depuración: ¡Victoria!"
+ pod_combat_debug_defeat_toast: "Combate de Depuración: Derrota."
+ pod_combat_debug_invalid_toast: "Combate de Depuración: duelo no válido (¿mismo atacante y defensor?)."
+ pod_combat_debug_draw_toast: "Combate de Depuración: sin vencedor decisivo (empate / KO mutuo)."
+ pod_combat_debug_big_interaction: "Combate de Gran Pelea"
+ pod_combat_debug_big_desc: "Depuración: monta una gran pelea (tú y tus vasallos contra este personaje y los suyos, hasta el tamaño elegido por bando) para someter a prueba tamaños de equipo arbitrarios. A los combatientes que pasan de las primeras filas se llega desplazando los paneles de aliados y enemigos."
+ pod_combat_debug_big_size_8: "Tamaño de equipo: 8 por bando"
+ pod_combat_debug_big_size_12: "Tamaño de equipo: 12 por bando"
+ pod_combat_debug_big_size_20: "Tamaño de equipo: 20 por bando"
+ pod_combat_debug_reinforce_interaction: "Combate con Refuerzos"
+ pod_combat_debug_reinforce_desc: "Depuración: 1 contra 1 con este personaje; luego se une un aliado (tu vasallo) en la ronda 2 y un enemigo (su vasallo) en la ronda 3, para probar los refuerzos diferidos."
+
+ ##############################
+ ###### MANUAL / SUMMON MOVES
+ ##############################
+ pod_combat_log_system_combatant_joins: "#italic — [entry.MakeScope.Var('actor').GetCharacter.GetFirstName] se une a la refriega —#!"
+ pod_combat_log_system_ally_down_shock: "#italic — La caída de [entry.MakeScope.Var('actor').GetCharacter.GetFirstName] sacude al equipo: los aliados pierden #bold [GuiScope.ScriptValue('pod_combat_ally_down_morale_penalty')|0]#! de Moral —#!"
+ # An all-immune roster emits only form_shifted; delirium_struck is per affected victim.
+ pod_combat_log_system_form_shifted:    "#italic — [entry.MakeScope.Var('actor').GetCharacter.GetFirstName] adopta una nueva forma —#!"
+ pod_combat_log_system_delirium_struck: "#italic — [entry.MakeScope.Var('actor').GetCharacter.GetFirstName] es presa del [delirium|E] —#!"
+ # Tick rows report actual wound class and protection results; application rows stay class-neutral.
+ pod_combat_log_system_dot_tick:         "#italic — [entry.MakeScope.Var('actor').GetCharacter.GetFirstName] sufre #bold [entry.MakeScope.Var('dot_tick_amount').GetValue|0]#! de salud $superficial$ —#!"
+ pod_combat_log_system_dot_tick_morale:  "#italic — La voluntad de [entry.MakeScope.Var('actor').GetCharacter.GetFirstName] se deshilacha en #bold [entry.MakeScope.Var('dot_tick_amount').GetValue|0]#! de [pod_combat_morale|E] —#!"
+ pod_combat_log_system_dot_tick_agg:     "#italic — [entry.MakeScope.Var('actor').GetCharacter.GetFirstName] sufre #bold [entry.MakeScope.Var('dot_tick_amount').GetValue|0]#! de salud $aggravated$ —#!"
+ pod_combat_log_system_dot_tick_immune:  "#italic — [entry.MakeScope.Var('actor').GetCharacter.GetFirstName] es inmune a la aflicción @pod_combat_dot_icon! —#!"
+ pod_combat_log_system_dot_tick_blocked: "#italic — [entry.MakeScope.Var('actor').GetCharacter.GetFirstName] no recibe daño de la aflicción @pod_combat_dot_icon! —#!"
+ # Auto-resolve rows report actual added wounds, including zero after full soak.
+ pod_combat_log_system_auto_resolve_wound:     "#italic — [entry.MakeScope.Var('actor').GetCharacter.GetFirstName] recibe #bold [entry.MakeScope.Var('dot_tick_amount').GetValue|0]#! de salud $superficial$ en el forcejeo final —#!"
+ pod_combat_log_system_auto_resolve_wound_agg: "#italic — [entry.MakeScope.Var('actor').GetCharacter.GetFirstName] recibe #bold [entry.MakeScope.Var('dot_tick_amount').GetValue|0]#! de salud $aggravated$ en el forcejeo final —#!"
+ pod_combat_log_system_auto_resolve_unharmed:  "#italic — [entry.MakeScope.Var('actor').GetCharacter.GetFirstName] sale indemne del forcejeo final —#!"
+ pod_combat_log_system_dot_applied:      "#italic — [entry.MakeScope.Var('actor').GetCharacter.GetFirstName] sufre una aflicción: #bold [entry.MakeScope.Var('dot_tick_amount').GetValue|0]#! de salud @pod_combat_dot_icon! por ronda durante #bold [entry.MakeScope.Var('dot_applied_rounds').GetValue|0]#! rondas —#!"
+ pod_combat_log_system_dazed:        "#italic — [entry.MakeScope.Var('actor').GetCharacter.GetFirstName] sufre atontamiento: pierde #bold [entry.MakeScope.Var('dot_tick_amount').GetValue|0]#! PA —#!"
+ pod_combat_log_system_stunned:      "#italic — [entry.MakeScope.Var('actor').GetCharacter.GetFirstName] sufre aturdimiento: empieza este turno con #bold 0#! PA —#!"
+ pod_combat_log_system_mind_seized:     "#italic — ¡La voluntad de [entry.MakeScope.Var('actor').GetCharacter.GetFirstName] es capturada! —#!"
+ pod_combat_log_system_mind_resisted:   "#italic — [entry.MakeScope.Var('actor').GetCharacter.GetFirstName] resiste la dominación —#!"
+ pod_combat_log_system_mind_betrayal:   "#italic — ¡[entry.MakeScope.Var('actor').GetCharacter.GetFirstName] se vuelve contra sus aliados! —#!"
+ pod_combat_log_system_mind_fizzle:     "#italic — El turno robado de [entry.MakeScope.Var('actor').GetCharacter.GetFirstName] no encuentra objetivo —#!"
+ pod_combat_log_system_dot_applied_morale: "#italic — La voluntad de [entry.MakeScope.Var('actor').GetCharacter.GetFirstName] empieza a deshilacharse: #bold [entry.MakeScope.Var('dot_tick_amount').GetValue|0]#! de [pod_combat_morale|E] por ronda durante #bold [entry.MakeScope.Var('dot_applied_rounds').GetValue|0]#! rondas —#!"
+
+ ##############################
+ ###### LOADOUT EDITOR
+ ##############################
+
+ pod_combat_loadout_equipped_header: "Movimientos equipados"
+ pod_combat_loadout_show_all:       "Mostrar todos los movimientos"
+ pod_combat_loadout_show_other_splats: "Mostrar otros splats"
+ pod_combat_loadout_hint_title:     "Consejo"
+ pod_combat_loadout_hint_desc:      "Haz clic en un movimiento equipado de la izquierda para desequiparlo. Activa #bold $pod_combat_loadout_show_all$#! para previsualizar los movimientos bloqueados que tu especie aún puede aprender; cada uno indica los requisitos que te faltan. Añade #bold $pod_combat_loadout_show_other_splats$#! para examinar todos los movimientos del juego, una lista mucho más larga."
+
+ pod_combat_loadout_atk_full_tt: "Ranuras de ataque llenas: [GetPlayer.MakeScope.ScriptValue('pod_combat_atk_count')|0] / [GetPlayer.MakeScope.ScriptValue('pod_combat_max_per_category')|0]"
+ pod_combat_loadout_def_full_tt: "Ranuras de defensa llenas: [GetPlayer.MakeScope.ScriptValue('pod_combat_def_count')|0] / [GetPlayer.MakeScope.ScriptValue('pod_combat_max_per_category')|0]"
+ pod_combat_loadout_ctl_full_tt: "Ranuras de control llenas: [GetPlayer.MakeScope.ScriptValue('pod_combat_ctl_count')|0] / [GetPlayer.MakeScope.ScriptValue('pod_combat_max_per_category')|0]"
+ pod_combat_loadout_pwr_full_tt: "Ranuras de poder llenas: [GetPlayer.MakeScope.ScriptValue('pod_combat_pwr_count')|0] / [GetPlayer.MakeScope.ScriptValue('pod_combat_max_per_category')|0]"
+ # Total-cap feedback matters when tuned category caps no longer sum to the total cap.
+ pod_combat_loadout_total_full_tt: "Todas las ranuras de movimientos llenas: [GetPlayer.MakeScope.ScriptValue('pod_combat_equipped_count')|0] / [GetPlayer.MakeScope.ScriptValue('pod_combat_max_equipped')|0]"
+
+ pod_combat_cat_atk_header:         "#italic;color_red Ataque#!"
+ pod_combat_cat_def_header:         "#italic;color_light_blue Defensa#!"
+ pod_combat_cat_ctl_header:         "#italic;color_porple Control#!"
+ pod_combat_cat_pwr_header:         "#italic;color_pwr_orange Poder#!"
+
+ pod_combat_filter_atk_btn:         "ATQ: [GetPlayer.MakeScope.ScriptValue('pod_combat_atk_count')|0] / [GetPlayer.MakeScope.ScriptValue('pod_combat_max_per_category')|0]"
+ pod_combat_filter_def_btn:         "DEF: [GetPlayer.MakeScope.ScriptValue('pod_combat_def_count')|0] / [GetPlayer.MakeScope.ScriptValue('pod_combat_max_per_category')|0]"
+ pod_combat_filter_ctl_btn:         "CTL: [GetPlayer.MakeScope.ScriptValue('pod_combat_ctl_count')|0] / [GetPlayer.MakeScope.ScriptValue('pod_combat_max_per_category')|0]"
+ pod_combat_filter_pwr_btn:         "PDR: [GetPlayer.MakeScope.ScriptValue('pod_combat_pwr_count')|0] / [GetPlayer.MakeScope.ScriptValue('pod_combat_max_per_category')|0]"
+ pod_combat_filter_total_btn:       "#weak Total: [GetPlayer.MakeScope.ScriptValue('pod_combat_equipped_count')|0] / [GetPlayer.MakeScope.ScriptValue('pod_combat_max_equipped')|0]#!"
+
+ pod_combat_filter_atk_tt:          "Muestra solo los movimientos de #bold;color_red Ataque#! en la lista de Disponibles. Haz clic de nuevo para quitar el filtro. Pueden estar activas varias categorías a la vez."
+ pod_combat_filter_def_tt:          "Muestra solo los movimientos de #bold;color_light_blue Defensa#! en la lista de Disponibles. Haz clic de nuevo para quitar el filtro. Pueden estar activas varias categorías a la vez."
+ pod_combat_filter_ctl_tt:          "Muestra solo los movimientos de #bold;color_porple Control#! en la lista de Disponibles. Haz clic de nuevo para quitar el filtro. Pueden estar activas varias categorías a la vez."
+ pod_combat_filter_pwr_tt:          "Muestra solo los movimientos de #bold;color_pwr_orange Poder#! en la lista de Disponibles. Haz clic de nuevo para quitar el filtro. Pueden estar activas varias categorías a la vez."
+ pod_combat_filter_total_tt:        "Borra todos los filtros de categoría y muestra todos los movimientos disponibles."
+
+ ##############################
+ ###### DYNAMIC MOVE TOOLTIP (pod_combat_move_desc SGUI)
+ ##############################
+ # Tooltip values read saved scope story. 
+ # each key must restore an explicit color with #medium;outline or equivalent.
+ # A trailing $EFFECT_LIST_BULLET$ balances the hidden leading bullet for centering.
+
+ # Capability callouts describe runtime behavior; their SGUI gates test absent capability flags.
+ pod_combat_desc_always_hits:   "#medium;outline [Concept('pod_combat_hit_chance','No Hit roll')|E]#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_undodgeable:   "#medium;outline Inesquivable: ignora la [pod_combat_dodge_with_icon|E] y el [pod_combat_stealth_with_icon|E]#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_hits_spirits:  "#medium;outline Afecta a espíritus incorpóreos#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_uses_weapon:   "#medium;outline Usa tu [artifact|E] de arma #weak (si tiene bonificaciones para los [pod_combat_moves|E])#!#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_uses_weapon_armed: "#medium;outline Usa tu [artifact|E] de arma ([pod_weapon.GetNameNoTooltip])#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_weapon_empowered: "#medium;outline Usa #bold [pod_weapon.GetNameNoTooltip]#!:$pod_weapon_ovr_line$#! $EFFECT_LIST_BULLET$"
+ # Cost fragments include a leading space; energy text is splat-aware.
+ pod_combat_costline_energy:       " [GetPlayer.Custom('PODEnergySplatIcon')]#bold [Multiply_CFixedPoint( ROOT.Var('energy_cost').GetValue, GetPlayer.MakeScope.ScriptValue('pod_combat_energy_cost_display_multiplier') )|V0]#! #V [GetPlayer.Custom('PODEnergySplatWord')]#!"
+ pod_combat_costline_gold:         " @gold_icon!#bold [ROOT.Var('gold_cost').GetValue|V0]#! de oro"
+ pod_combat_costline_piety:        " @piety_icon!#bold [ROOT.Var('piety_cost').GetValue|V0]#! de piedad"
+ pod_combat_costline_prestige:     " @prestige_icon!#bold [ROOT.Var('prestige_cost').GetValue|V0]#! de prestigio"
+ pod_combat_costline_stress:       " @stress_icon!#bold [ROOT.Var('stress_cost').GetValue|V0]#! de estrés"
+ pod_combat_desc_costs:            "#medium;outline Coste:[story.Custom('PODCombatEnergyCostInline')][story.Custom('PODCombatGoldCostInline')][story.Custom('PODCombatPietyCostInline')][story.Custom('PODCombatPrestigeCostInline')][story.Custom('PODCombatStressCostInline')]#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_steal_gold:        "#medium;outline Roba #bold [story.MakeScope.Var('steal_gold').GetValue|V0]#! de oro al enemigo#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_gain_dread:        "#medium;outline Obtén #bold [story.MakeScope.Var('gain_dread').GetValue|V0]#! de temor#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_once_per_round:     "#medium;outline Se puede usar una vez por ronda#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_once_per_combat:    "#medium;outline Se puede usar una vez por combate#! $EFFECT_LIST_BULLET$"
+
+ # Dispatch elements to namespaced keys to avoid vanilla flag-loc collisions.
+ # Omit |E on colored concepts so the element color takes precedence over concept blue.
+ pod_combat_desc_hp_damage_basic:        "#medium;outline #N Inflige#! #bold [story.MakeScope.Var('hp_damage').GetValue|V0]#! [story.MakeScope.Var('damage_type').GetFlagName] #N de Daño#! a [story.MakeScope.Var('targeting').GetFlagName]#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_hp_damage_elemental:    "#medium;outline #N Inflige#! #bold [story.MakeScope.Var('hp_damage').GetValue|V0]#! [Localize( Concatenate( 'pod_combat_damage_type_', story.MakeScope.Var('damage_type').GetFlagKey ) )] #N de Daño#! a [story.MakeScope.Var('targeting').GetFlagName]#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_morale_damage:     "#medium;outline #N Inflige#! #bold [story.MakeScope.Var('morale_damage').GetValue|V0]#! de [pod_combat_morale|E] #N de Daño#! a [story.MakeScope.Var('targeting').GetFlagName]#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_morale_damage_on_hp_damage: "#medium;outline #N Inflige#! #bold [story.MakeScope.Var('morale_damage').GetValue|V0]#! de [pod_combat_morale|E] #N de Daño#! a [story.MakeScope.Var('targeting').GetFlagName], pero solo si el ataque inflige Daño a la salud tras Absorber#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_morale_damage_on_contact:   "#medium;outline #N Inflige#! #bold [story.MakeScope.Var('morale_damage').GetValue|V0]#! de [pod_combat_morale|E] #N de Daño#! a [story.MakeScope.Var('targeting').GetFlagName], pero solo si el ataque hace contacto (incluido un golpe bloqueado o totalmente absorbido)#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_morale_damage_on_miss:      "#medium;outline #N Inflige#! #bold [story.MakeScope.Var('morale_damage').GetValue|V0]#! de [pod_combat_morale|E] #N de Daño#! a [story.MakeScope.Var('targeting').GetFlagName], pero solo si el ataque falla o es evadido#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_self_damage:       "#medium;outline Recibes #bold [story.MakeScope.Var('self_damage').GetValue|V0]#! de autodaño#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_self_damage_on_hp_damage: "#medium;outline Recibes #bold [story.MakeScope.Var('self_damage').GetValue|V0]#! de autodaño, pero solo si el ataque inflige Daño a la salud tras Absorber#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_self_damage_on_contact:   "#medium;outline Recibes #bold [story.MakeScope.Var('self_damage').GetValue|V0]#! de autodaño, pero solo si el ataque hace contacto (incluido un golpe bloqueado o totalmente absorbido)#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_self_damage_on_miss:      "#medium;outline Recibes #bold [story.MakeScope.Var('self_damage').GetValue|V0]#! de autodaño, pero solo si el ataque falla o es evadido#! $EFFECT_LIST_BULLET$"
+ # POD_combat_move_set_hp_heal always sets heal_type for the wound-box lookup.
+ pod_combat_desc_hp_heal:           "#medium;outline #P Restaura#! #bold [story.MakeScope.Var('hp_heal').GetValue|V0]#! [story.MakeScope.Var('heal_type').GetFlagName] a [story.MakeScope.Var('targeting').GetFlagName]#! $EFFECT_LIST_BULLET$"
+ # Drain wording must require actual post-soak HP damage.
+ pod_combat_desc_drain:             "#medium;outline #P Drena#! #bold [story.MakeScope.Var('hp_heal').GetValue|V0]#! [story.MakeScope.Var('heal_type').GetFlagName] del objetivo, pero solo si el ataque inflige Daño a la salud tras Absorber#! $EFFECT_LIST_BULLET$"
+ # Combine damage and drain on one line. The standalone drain key covers moves without hp_damage.
+ pod_combat_desc_hp_damage_basic_drain:        "#medium;outline #N Inflige#! #bold [story.MakeScope.Var('hp_damage').GetValue|V0]#! [story.MakeScope.Var('damage_type').GetFlagName] #N de Daño#! a [story.MakeScope.Var('targeting').GetFlagName], #P drena#! #bold [story.MakeScope.Var('hp_heal').GetValue|V0]#! [story.MakeScope.Var('heal_type').GetFlagName] si el ataque inflige Daño a la salud tras Absorber#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_hp_damage_elemental_drain:    "#medium;outline #N Inflige#! #bold [story.MakeScope.Var('hp_damage').GetValue|V0]#! [Localize( Concatenate( 'pod_combat_damage_type_', story.MakeScope.Var('damage_type').GetFlagKey ) )] #N de Daño#! a [story.MakeScope.Var('targeting').GetFlagName], #P drena#! #bold [story.MakeScope.Var('hp_heal').GetValue|V0]#! [story.MakeScope.Var('heal_type').GetFlagName] si el ataque inflige Daño a la salud tras Absorber#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_morale_heal:       "#medium;outline #P Restaura#! #bold [story.MakeScope.Var('morale_heal').GetValue|V0]#! de [pod_combat_morale|E] a [story.MakeScope.Var('targeting').GetFlagName]#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_energy_gain:       "#medium;outline #P Restaura#! #bold [Multiply_CFixedPoint( story.MakeScope.Var('energy_gain').GetValue, GetPlayer.MakeScope.ScriptValue('splat_energy_multiplier') )|V0]#! [GetPlayer.Custom('PODEnergySplatIcon')] #V [GetPlayer.Custom('PODEnergySplatWord')]#!#! $EFFECT_LIST_BULLET$"
+
+ pod_combat_desc_soak_buff_round:    "#medium;outline #P +[soak_damage|E]#! (nivel [story.MakeScope.Var('soak_buff_round_tier').GetValue|V0]) hasta que empiece tu siguiente turno#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_soak_buff_combat:   "#medium;outline #P +[soak_damage|E]#! (nivel [story.MakeScope.Var('soak_buff_combat_tier').GetValue|V0]) durante el resto del combate#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_soak_debuff_round:  "#medium;outline #N -[soak_damage|E]#! (nivel [story.MakeScope.Var('soak_debuff_round_tier').GetValue|V0]) a [story.MakeScope.Var('targeting').GetFlagName] durante el siguiente turno del objetivo#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_soak_debuff_combat: "#medium;outline #N -[soak_damage|E]#! (nivel [story.MakeScope.Var('soak_debuff_combat_tier').GetValue|V0]) a [story.MakeScope.Var('targeting').GetFlagName] durante el resto del combate#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_hit_buff_round:     "#medium;outline #P +[pod_combat_hit_chance|E]#! (nivel [story.MakeScope.Var('hit_buff_round_tier').GetValue|V0]) hasta que empiece tu siguiente turno#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_hit_buff_combat:    "#medium;outline #P +[pod_combat_hit_chance|E]#! (nivel [story.MakeScope.Var('hit_buff_combat_tier').GetValue|V0]) durante el resto del combate#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_hit_debuff_round:   "#medium;outline #N -[pod_combat_hit_chance|E]#! (nivel [story.MakeScope.Var('hit_debuff_round_tier').GetValue|V0]) a [story.MakeScope.Var('targeting').GetFlagName] durante el siguiente turno del objetivo#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_hit_debuff_combat:  "#medium;outline #N -[pod_combat_hit_chance|E]#! (nivel [story.MakeScope.Var('hit_debuff_combat_tier').GetValue|V0]) a [story.MakeScope.Var('targeting').GetFlagName] durante el resto del combate#! $EFFECT_LIST_BULLET$"
+ # Use ally wording only when targeting diverts the buff from the actor.
+ pod_combat_desc_soak_buff_round_other:  "#medium;outline #P +[soak_damage|E]#! (nivel [story.MakeScope.Var('soak_buff_round_tier').GetValue|V0]) a [story.MakeScope.Var('targeting').GetFlagName] hasta que empiece el siguiente turno del receptor#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_soak_buff_combat_other: "#medium;outline #P +[soak_damage|E]#! (nivel [story.MakeScope.Var('soak_buff_combat_tier').GetValue|V0]) a [story.MakeScope.Var('targeting').GetFlagName] durante el resto del combate#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_hit_buff_round_other:   "#medium;outline #P +[pod_combat_hit_chance|E]#! (nivel [story.MakeScope.Var('hit_buff_round_tier').GetValue|V0]) a [story.MakeScope.Var('targeting').GetFlagName] hasta que empiece el siguiente turno del receptor#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_hit_buff_combat_other:  "#medium;outline #P +[pod_combat_hit_chance|E]#! (nivel [story.MakeScope.Var('hit_buff_combat_tier').GetValue|V0]) a [story.MakeScope.Var('targeting').GetFlagName] durante el resto del combate#! $EFFECT_LIST_BULLET$"
+
+ pod_combat_desc_set_guard:         "#medium;outline Adopta la postura de [pod_combat_guard_with_icon|E]#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_dodge:             "#medium;outline Adopta la postura de [pod_combat_dodge_with_icon|E]#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_stealth:           "#medium;outline Entra en [pod_combat_stealth_with_icon|E]#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_set_guard_other:   "#medium;outline Concede la postura de [pod_combat_guard_with_icon|E] a [story.MakeScope.Var('targeting').GetFlagName]#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_dodge_other:       "#medium;outline Concede la postura de [pod_combat_dodge_with_icon|E] a [story.MakeScope.Var('targeting').GetFlagName]#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_stealth_other:     "#medium;outline Concede [pod_combat_stealth_with_icon|E] a [story.MakeScope.Var('targeting').GetFlagName]#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_bypass_guard:      "#medium;outline Ignora la [pod_combat_guard_with_icon|E] de [story.MakeScope.Var('targeting').GetFlagName]#! $EFFECT_LIST_BULLET$"
+ # Stance removal persists for later attacks; bypassing a stance leaves it intact.
+ pod_combat_desc_bypass_dodge:      "#medium;outline Elimina la [pod_combat_dodge_with_icon|E] de [story.MakeScope.Var('targeting').GetFlagName]#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_bypass_stealth:    "#medium;outline Elimina el [pod_combat_stealth_with_icon|E] de [story.MakeScope.Var('targeting').GetFlagName]#! $EFFECT_LIST_BULLET$"
+ ###### STATE-CONDITION DISPLAY (pod_combat_move_desc gate + bonus dispatch)
+ # Share condition clauses between gate and bonus wording.
+ # -- shared condition clauses --
+ pod_combat_cond_phrase_first_round: "es la primera ronda"
+ pod_combat_cond_phrase_round_min: "es la ronda [story.MakeScope.Var('cond_threshold').GetValue|V0] o posterior"
+ pod_combat_cond_phrase_undamaged_user: "estás con la salud al máximo"
+ pod_combat_cond_phrase_undamaged_target: "el enemigo está con la salud al máximo"
+ pod_combat_cond_phrase_hp_missing_user: "te faltan [story.MakeScope.Var('cond_threshold').GetValue|V0] o más de salud"
+ pod_combat_cond_phrase_hp_missing_target: "al enemigo le faltan [story.MakeScope.Var('cond_threshold').GetValue|V0] o más de salud"
+ pod_combat_cond_phrase_full_morale_user: "estás con la [pod_combat_morale|E] al máximo"
+ pod_combat_cond_phrase_full_morale_target: "el enemigo está con la [pod_combat_morale|E] al máximo"
+ pod_combat_cond_phrase_morale_missing_user: "te faltan [story.MakeScope.Var('cond_threshold').GetValue|V0] o más de [pod_combat_morale|E]"
+ pod_combat_cond_phrase_morale_missing_target: "al enemigo le faltan [story.MakeScope.Var('cond_threshold').GetValue|V0] o más de [pod_combat_morale|E]"
+ pod_combat_cond_phrase_has_guard_user: "estás en [pod_combat_guarding_with_icon|E]"
+ pod_combat_cond_phrase_has_guard_target: "el enemigo está en [pod_combat_guarding_with_icon|E]"
+ pod_combat_cond_phrase_has_dodge_user: "estás en [pod_combat_dodging_with_icon|E]"
+ pod_combat_cond_phrase_has_dodge_target: "el enemigo está en [pod_combat_dodging_with_icon|E]"
+ pod_combat_cond_phrase_has_stealth_user: "estás en [pod_combat_stealthed_with_icon|E]"
+ pod_combat_cond_phrase_has_stealth_target: "el enemigo está en [pod_combat_stealthed_with_icon|E]"
+ pod_combat_cond_phrase_prestige_level_min_user: "tienes fama [story.MakeScope.Var('cond_threshold').GetValue|V0] o más"
+ pod_combat_cond_phrase_prestige_level_min_target: "el enemigo tiene fama [story.MakeScope.Var('cond_threshold').GetValue|V0] o más"
+ pod_combat_cond_phrase_piety_level_min_user: "tienes devoción [story.MakeScope.Var('cond_threshold').GetValue|V0] o más"
+ pod_combat_cond_phrase_piety_level_min_target: "el enemigo tiene devoción [story.MakeScope.Var('cond_threshold').GetValue|V0] o más"
+ pod_combat_cond_phrase_dread_min_user: "tienes temor [story.MakeScope.Var('cond_threshold').GetValue|V0] o más"
+ pod_combat_cond_phrase_dread_min_target: "el enemigo tiene temor [story.MakeScope.Var('cond_threshold').GetValue|V0] o más"
+ pod_combat_cond_phrase_relation_positive: "el enemigo te cae bien"
+ pod_combat_cond_phrase_relation_negative: "el enemigo te cae mal"
+ pod_combat_cond_phrase_outnumbered: "tu bando está en inferioridad numérica"
+ pod_combat_cond_phrase_ally_knocked_out: "un aliado ha quedado fuera de combate"
+ pod_combat_cond_phrase_alive_enemies_min: "siguen en pie [story.MakeScope.Var('cond_threshold').GetValue|V0] o más enemigos"
+ pod_combat_cond_phrase_alive_enemies_max: "siguen en pie no más de [story.MakeScope.Var('cond_threshold').GetValue|V0] enemigos"
+ pod_combat_cond_phrase_alive_allies_min: "siguen en pie a tu lado [story.MakeScope.Var('cond_threshold').GetValue|V0] o más aliados"
+ pod_combat_cond_phrase_alive_allies_max: "siguen en pie a tu lado no más de [story.MakeScope.Var('cond_threshold').GetValue|V0] aliados"
+ pod_combat_cond_phrase_has_weapon_artifact_user: "empuñas un arma artefacto"
+ pod_combat_cond_phrase_has_weapon_artifact_target: "el enemigo empuña un arma artefacto"
+ pod_combat_cond_phrase_has_armor_artifact_user: "llevas una armadura artefacto"
+ pod_combat_cond_phrase_has_armor_artifact_target: "el enemigo lleva una armadura artefacto"
+ pod_combat_cond_phrase_has_trait_user: "tienes el rasgo #bold [story.MakeScope.Var('cond_param_trait').Trait.GetName(GetNullCharacter)]#!"
+ pod_combat_cond_phrase_has_trait_target: "el enemigo tiene el rasgo #bold [story.MakeScope.Var('cond_param_trait').Trait.GetName(GetNullCharacter)]#!"
+ pod_combat_cond_phrase_has_modifier_user: "estás bajo los efectos de #bold [GetModifier(story.MakeScope.Var('cond_param').GetFlagKey).GetNameWithTooltip]#!"
+ pod_combat_cond_phrase_has_modifier_target: "el objetivo está bajo los efectos de #bold [GetModifier(story.MakeScope.Var('cond_param').GetFlagKey).GetNameWithTooltip]#!"
+ pod_combat_cond_phrase_has_perk_user: "tienes la ventaja #bold [GetPerk(story.MakeScope.Var('cond_param').GetFlagKey).GetName(GetNullCharacter)]#!"
+ pod_combat_cond_phrase_has_perk_target: "el enemigo tiene la ventaja #bold [GetPerk(story.MakeScope.Var('cond_param').GetFlagKey).GetName(GetNullCharacter)]#!"
+ pod_combat_cond_phrase_target_known_secret: "conoces un secreto del enemigo"
+ pod_combat_cond_phrase_fera_form: "en #bold [story.Custom('PODCombatFeraFormName')]#!"
+ pod_combat_cond_phrase_wyrm_servant_user: "eres un #bold Servidor del Wyrm#!"
+ pod_combat_cond_phrase_wyrm_servant_target: "el enemigo es un #bold Servidor del Wyrm#!"
+ pod_combat_warform: "Forma [GetPlayer.Custom('PODFeraWarform')]"
+ pod_combat_primalhuman: "Forma [GetPlayer.Custom('PODFeraPrimalHumanform')]"
+ pod_combat_primalbeast: "Forma [GetPlayer.Custom('PODFeraPrimalBeastform')]"
+ pod_combat_beast: "Forma [GetPlayer.Custom('PODFeraBeastform')]"
+ pod_combat_cond_phrase_is_fera_user: "eres un $glossary_fera$"
+ pod_combat_cond_phrase_is_fera_target: "el enemigo es un $glossary_fera$"
+ # -- gate framing (cond_mode = gate) --
+ pod_combat_desc_cond_first_round: "#medium;outline Solo se puede usar si $pod_combat_cond_phrase_first_round$#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_cond_round_min: "#medium;outline Solo se puede usar si $pod_combat_cond_phrase_round_min$#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_cond_undamaged_user: "#medium;outline Solo se puede usar si $pod_combat_cond_phrase_undamaged_user$#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_cond_undamaged_target: "#medium;outline Solo se puede usar si $pod_combat_cond_phrase_undamaged_target$#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_cond_hp_missing_user: "#medium;outline Solo se puede usar si $pod_combat_cond_phrase_hp_missing_user$#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_cond_hp_missing_target: "#medium;outline Solo se puede usar si $pod_combat_cond_phrase_hp_missing_target$#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_cond_full_morale_user: "#medium;outline Solo se puede usar si $pod_combat_cond_phrase_full_morale_user$#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_cond_full_morale_target: "#medium;outline Solo se puede usar si $pod_combat_cond_phrase_full_morale_target$#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_cond_morale_missing_user: "#medium;outline Solo se puede usar si $pod_combat_cond_phrase_morale_missing_user$#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_cond_morale_missing_target: "#medium;outline Solo se puede usar si $pod_combat_cond_phrase_morale_missing_target$#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_cond_has_guard_user: "#medium;outline Solo se puede usar si $pod_combat_cond_phrase_has_guard_user$#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_cond_has_guard_target: "#medium;outline Solo se puede usar si $pod_combat_cond_phrase_has_guard_target$#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_cond_has_dodge_user: "#medium;outline Solo se puede usar si $pod_combat_cond_phrase_has_dodge_user$#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_cond_has_dodge_target: "#medium;outline Solo se puede usar si $pod_combat_cond_phrase_has_dodge_target$#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_cond_has_stealth_user: "#medium;outline Solo se puede usar si $pod_combat_cond_phrase_has_stealth_user$#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_cond_has_stealth_target: "#medium;outline Solo se puede usar si $pod_combat_cond_phrase_has_stealth_target$#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_cond_prestige_level_min_user: "#medium;outline Solo se puede usar si $pod_combat_cond_phrase_prestige_level_min_user$#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_cond_prestige_level_min_target: "#medium;outline Solo se puede usar si $pod_combat_cond_phrase_prestige_level_min_target$#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_cond_piety_level_min_user: "#medium;outline Solo se puede usar si $pod_combat_cond_phrase_piety_level_min_user$#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_cond_piety_level_min_target: "#medium;outline Solo se puede usar si $pod_combat_cond_phrase_piety_level_min_target$#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_cond_dread_min_user: "#medium;outline Solo se puede usar si $pod_combat_cond_phrase_dread_min_user$#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_cond_dread_min_target: "#medium;outline Solo se puede usar si $pod_combat_cond_phrase_dread_min_target$#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_cond_relation_positive: "#medium;outline Solo se puede usar si $pod_combat_cond_phrase_relation_positive$#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_cond_relation_negative: "#medium;outline Solo se puede usar si $pod_combat_cond_phrase_relation_negative$#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_cond_outnumbered: "#medium;outline Solo se puede usar si $pod_combat_cond_phrase_outnumbered$#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_cond_ally_knocked_out: "#medium;outline Solo se puede usar si $pod_combat_cond_phrase_ally_knocked_out$#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_cond_alive_enemies_min: "#medium;outline Solo se puede usar si $pod_combat_cond_phrase_alive_enemies_min$#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_cond_alive_enemies_max: "#medium;outline Solo se puede usar si $pod_combat_cond_phrase_alive_enemies_max$#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_cond_alive_allies_min: "#medium;outline Solo se puede usar si $pod_combat_cond_phrase_alive_allies_min$#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_cond_alive_allies_max: "#medium;outline Solo se puede usar si $pod_combat_cond_phrase_alive_allies_max$#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_cond_has_weapon_artifact_user: "#medium;outline Solo se puede usar si $pod_combat_cond_phrase_has_weapon_artifact_user$#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_cond_has_weapon_artifact_target: "#medium;outline Solo se puede usar si $pod_combat_cond_phrase_has_weapon_artifact_target$#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_cond_has_armor_artifact_user: "#medium;outline Solo se puede usar si $pod_combat_cond_phrase_has_armor_artifact_user$#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_cond_has_armor_artifact_target: "#medium;outline Solo se puede usar si $pod_combat_cond_phrase_has_armor_artifact_target$#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_cond_has_trait_user: "#medium;outline Solo se puede usar si $pod_combat_cond_phrase_has_trait_user$#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_cond_has_trait_target: "#medium;outline Solo se puede usar si $pod_combat_cond_phrase_has_trait_target$#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_cond_has_modifier_user: "#medium;outline Solo se puede usar si $pod_combat_cond_phrase_has_modifier_user$#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_cond_has_modifier_target: "#medium;outline Solo se puede usar si $pod_combat_cond_phrase_has_modifier_target$#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_cond_has_perk_user: "#medium;outline Solo se puede usar si $pod_combat_cond_phrase_has_perk_user$#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_cond_has_perk_target: "#medium;outline Solo se puede usar si $pod_combat_cond_phrase_has_perk_target$#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_cond_target_known_secret: "#medium;outline Solo se puede usar si $pod_combat_cond_phrase_target_known_secret$#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_cond_fera_form: "#medium;outline Solo se puede usar $pod_combat_cond_phrase_fera_form$#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_cond_wyrm_servant_user: "#medium;outline Solo se puede usar si $pod_combat_cond_phrase_wyrm_servant_user$#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_cond_wyrm_servant_target: "#medium;outline Solo se puede usar si $pod_combat_cond_phrase_wyrm_servant_target$#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_cond_is_fera_user: "#medium;outline Solo se puede usar si $pod_combat_cond_phrase_is_fera_user$#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_cond_is_fera_target: "#medium;outline Solo se puede usar si $pod_combat_cond_phrase_is_fera_target$#! $EFFECT_LIST_BULLET$"
+ # Scope-free bonus effect text shared by clause displays.
+ pod_combat_desc_bonus_self_heal: "#medium;outline #P Restaura #bold [story.MakeScope.Var('bonus_value').GetValue|V0]#! de salud#!#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_bonus_heal_target: "#medium;outline #P Restaura #bold [story.MakeScope.Var('bonus_value').GetValue|V0]#! de salud al objetivo#!#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_bonus_morale_damage: "#medium;outline #bold;N [story.MakeScope.Var('bonus_value').GetValue|V0]#! de daño a la [pod_combat_morale|E]#!#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_bonus_self_morale_heal: "#medium;outline #P Restaura #bold [story.MakeScope.Var('bonus_value').GetValue|V0]#! de [pod_combat_morale|E]#!#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_bonus_damage: "#medium;outline #bold;N +[story.MakeScope.Var('bonus_value').GetValue|V0]#! $superficial$ #N de daño#!#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_bonus_damage_agg: "#medium;outline #bold;N +[story.MakeScope.Var('bonus_value').GetValue|V0]#! $aggravated$ #N de daño#!#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_bonus_damage_plain: "#medium;outline #bold;N +[story.MakeScope.Var('bonus_value').GetValue|V0]#! #N de daño#!#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_bonus_change_type: "#medium;outline #N inflige#! [POD_aggravated_box] #N de daño#!#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_bonus_stance_guard: "#medium;outline #P Obtén#! [pod_combat_guard_with_icon|E]#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_bonus_stance_dodge: "#medium;outline #P Obtén#! [pod_combat_dodge_with_icon|E]#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_bonus_stance_stealth: "#medium;outline #P Obtén#! [pod_combat_stealth_with_icon|E]#! $EFFECT_LIST_BULLET$"
+ # Keep drain previews resource-neutral: the target determines the pool and is not yet selected.
+ ###### PER-CLAUSE BONUS DISPLAY (pod_combat_move_desc clause walk)
+ # Clause keys read pod_clause; gate keys read story. Render clauses separately:
+ # totals would reveal hide_if_unmet bonuses or change as conditions are reevaluated.
+ pod_combat_desc_clause_separator: "#medium;outline $EFFECT_LIST_BULLET$ $EFFECT_LIST_BULLET$ $EFFECT_LIST_BULLET$#! $EFFECT_LIST_BULLET$"
+ # -- clause-bound condition clauses (only the 22 that read the story) --
+ pod_combat_clause_phrase_round_min: "es la ronda [pod_clause.MakeScope.Var('cond_threshold').GetValue|V0] o posterior"
+ pod_combat_clause_phrase_hp_missing_user: "te faltan [pod_clause.MakeScope.Var('cond_threshold').GetValue|V0] o más de salud"
+ pod_combat_clause_phrase_hp_missing_target: "al enemigo le faltan [pod_clause.MakeScope.Var('cond_threshold').GetValue|V0] o más de salud"
+ pod_combat_clause_phrase_morale_missing_user: "te faltan [pod_clause.MakeScope.Var('cond_threshold').GetValue|V0] o más de [pod_combat_morale|E]"
+ pod_combat_clause_phrase_morale_missing_target: "al enemigo le faltan [pod_clause.MakeScope.Var('cond_threshold').GetValue|V0] o más de [pod_combat_morale|E]"
+ pod_combat_clause_phrase_prestige_level_min_user: "tienes fama [pod_clause.MakeScope.Var('cond_threshold').GetValue|V0] o más"
+ pod_combat_clause_phrase_prestige_level_min_target: "el enemigo tiene fama [pod_clause.MakeScope.Var('cond_threshold').GetValue|V0] o más"
+ pod_combat_clause_phrase_piety_level_min_user: "tienes devoción [pod_clause.MakeScope.Var('cond_threshold').GetValue|V0] o más"
+ pod_combat_clause_phrase_piety_level_min_target: "el enemigo tiene devoción [pod_clause.MakeScope.Var('cond_threshold').GetValue|V0] o más"
+ pod_combat_clause_phrase_dread_min_user: "tienes temor [pod_clause.MakeScope.Var('cond_threshold').GetValue|V0] o más"
+ pod_combat_clause_phrase_dread_min_target: "el enemigo tiene temor [pod_clause.MakeScope.Var('cond_threshold').GetValue|V0] o más"
+ pod_combat_clause_phrase_alive_enemies_min: "siguen en pie [pod_clause.MakeScope.Var('cond_threshold').GetValue|V0] o más enemigos"
+ pod_combat_clause_phrase_alive_enemies_max: "siguen en pie no más de [pod_clause.MakeScope.Var('cond_threshold').GetValue|V0] enemigos"
+ pod_combat_clause_phrase_alive_allies_min: "siguen en pie a tu lado [pod_clause.MakeScope.Var('cond_threshold').GetValue|V0] o más aliados"
+ pod_combat_clause_phrase_alive_allies_max: "siguen en pie a tu lado no más de [pod_clause.MakeScope.Var('cond_threshold').GetValue|V0] aliados"
+ pod_combat_clause_phrase_has_trait_user: "tienes el rasgo #bold [pod_clause.MakeScope.Var('cond_param_trait').Trait.GetName(GetNullCharacter)]#!"
+ pod_combat_clause_phrase_has_trait_target: "el enemigo tiene el rasgo #bold [pod_clause.MakeScope.Var('cond_param_trait').Trait.GetName(GetNullCharacter)]#!"
+ pod_combat_clause_phrase_has_modifier_user: "estás bajo los efectos de #bold [GetModifier(pod_clause.MakeScope.Var('cond_param').GetFlagKey).GetNameWithTooltip]#!"
+ pod_combat_clause_phrase_has_modifier_target: "el objetivo está bajo los efectos de #bold [GetModifier(pod_clause.MakeScope.Var('cond_param').GetFlagKey).GetNameWithTooltip]#!"
+ pod_combat_clause_phrase_has_perk_user: "tienes la ventaja #bold [GetPerk(pod_clause.MakeScope.Var('cond_param').GetFlagKey).GetName(GetNullCharacter)]#!"
+ pod_combat_clause_phrase_has_perk_target: "el enemigo tiene la ventaja #bold [GetPerk(pod_clause.MakeScope.Var('cond_param').GetFlagKey).GetName(GetNullCharacter)]#!"
+ pod_combat_clause_phrase_fera_form: "en #bold [pod_clause.Custom('PODCombatFeraFormName')]#!"
+ pod_combat_clause_phrase_wyrm_servant_user: "eres un #bold Servidor del Wyrm#!"
+ pod_combat_clause_phrase_wyrm_servant_target: "el enemigo es un #bold Servidor del Wyrm#!"
+ # -- clause condition framing; the 20 scope-free phrases stay shared --
+ pod_combat_desc_clause_cond_first_round: "#medium;outline;italic Bonificación si $pod_combat_cond_phrase_first_round$:#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_clause_cond_round_min: "#medium;outline;italic Bonificación si $pod_combat_clause_phrase_round_min$:#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_clause_cond_undamaged_user: "#medium;outline;italic Bonificación si $pod_combat_cond_phrase_undamaged_user$:#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_clause_cond_undamaged_target: "#medium;outline;italic Bonificación si $pod_combat_cond_phrase_undamaged_target$:#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_clause_cond_hp_missing_user: "#medium;outline;italic Bonificación si $pod_combat_clause_phrase_hp_missing_user$:#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_clause_cond_hp_missing_target: "#medium;outline;italic Bonificación si $pod_combat_clause_phrase_hp_missing_target$:#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_clause_cond_full_morale_user: "#medium;outline;italic Bonificación si $pod_combat_cond_phrase_full_morale_user$:#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_clause_cond_full_morale_target: "#medium;outline;italic Bonificación si $pod_combat_cond_phrase_full_morale_target$:#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_clause_cond_morale_missing_user: "#medium;outline;italic Bonificación si $pod_combat_clause_phrase_morale_missing_user$:#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_clause_cond_morale_missing_target: "#medium;outline;italic Bonificación si $pod_combat_clause_phrase_morale_missing_target$:#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_clause_cond_has_guard_user: "#medium;outline;italic Bonificación si $pod_combat_cond_phrase_has_guard_user$:#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_clause_cond_has_guard_target: "#medium;outline;italic Bonificación si $pod_combat_cond_phrase_has_guard_target$:#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_clause_cond_has_dodge_user: "#medium;outline;italic Bonificación si $pod_combat_cond_phrase_has_dodge_user$:#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_clause_cond_has_dodge_target: "#medium;outline;italic Bonificación si $pod_combat_cond_phrase_has_dodge_target$:#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_clause_cond_has_stealth_user: "#medium;outline;italic Bonificación si $pod_combat_cond_phrase_has_stealth_user$:#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_clause_cond_has_stealth_target: "#medium;outline;italic Bonificación si $pod_combat_cond_phrase_has_stealth_target$:#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_clause_cond_prestige_level_min_user: "#medium;outline;italic Bonificación si $pod_combat_clause_phrase_prestige_level_min_user$:#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_clause_cond_prestige_level_min_target: "#medium;outline;italic Bonificación si $pod_combat_clause_phrase_prestige_level_min_target$:#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_clause_cond_piety_level_min_user: "#medium;outline;italic Bonificación si $pod_combat_clause_phrase_piety_level_min_user$:#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_clause_cond_piety_level_min_target: "#medium;outline;italic Bonificación si $pod_combat_clause_phrase_piety_level_min_target$:#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_clause_cond_dread_min_user: "#medium;outline;italic Bonificación si $pod_combat_clause_phrase_dread_min_user$:#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_clause_cond_dread_min_target: "#medium;outline;italic Bonificación si $pod_combat_clause_phrase_dread_min_target$:#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_clause_cond_relation_positive: "#medium;outline;italic Bonificación si $pod_combat_cond_phrase_relation_positive$:#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_clause_cond_relation_negative: "#medium;outline;italic Bonificación si $pod_combat_cond_phrase_relation_negative$:#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_clause_cond_outnumbered: "#medium;outline;italic Bonificación si $pod_combat_cond_phrase_outnumbered$:#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_clause_cond_ally_knocked_out: "#medium;outline;italic Bonificación si $pod_combat_cond_phrase_ally_knocked_out$:#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_clause_cond_alive_enemies_min: "#medium;outline;italic Bonificación si $pod_combat_clause_phrase_alive_enemies_min$:#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_clause_cond_alive_enemies_max: "#medium;outline;italic Bonificación si $pod_combat_clause_phrase_alive_enemies_max$:#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_clause_cond_alive_allies_min: "#medium;outline;italic Bonificación si $pod_combat_clause_phrase_alive_allies_min$:#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_clause_cond_alive_allies_max: "#medium;outline;italic Bonificación si $pod_combat_clause_phrase_alive_allies_max$:#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_clause_cond_has_weapon_artifact_user: "#medium;outline;italic Bonificación si $pod_combat_cond_phrase_has_weapon_artifact_user$:#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_clause_cond_has_weapon_artifact_target: "#medium;outline;italic Bonificación si $pod_combat_cond_phrase_has_weapon_artifact_target$:#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_clause_cond_has_armor_artifact_user: "#medium;outline;italic Bonificación si $pod_combat_cond_phrase_has_armor_artifact_user$:#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_clause_cond_has_armor_artifact_target: "#medium;outline;italic Bonificación si $pod_combat_cond_phrase_has_armor_artifact_target$:#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_clause_cond_has_trait_user: "#medium;outline;italic Bonificación si $pod_combat_clause_phrase_has_trait_user$:#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_clause_cond_has_trait_target: "#medium;outline;italic Bonificación si $pod_combat_clause_phrase_has_trait_target$:#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_clause_cond_has_modifier_user: "#medium;outline;italic Bonificación si $pod_combat_clause_phrase_has_modifier_user$:#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_clause_cond_has_modifier_target: "#medium;outline;italic Bonificación si $pod_combat_clause_phrase_has_modifier_target$:#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_clause_cond_has_perk_user: "#medium;outline;italic Bonificación si $pod_combat_clause_phrase_has_perk_user$:#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_clause_cond_has_perk_target: "#medium;outline;italic Bonificación si $pod_combat_clause_phrase_has_perk_target$:#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_clause_cond_target_known_secret: "#medium;outline;italic Bonificación si $pod_combat_cond_phrase_target_known_secret$:#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_clause_cond_fera_form: "#medium;outline;italic Bonificación si $pod_combat_clause_phrase_fera_form$:#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_clause_cond_wyrm_servant_user: "#medium;outline;italic Bonificación si $pod_combat_clause_phrase_wyrm_servant_user$:#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_clause_cond_wyrm_servant_target: "#medium;outline;italic Bonificación si $pod_combat_clause_phrase_wyrm_servant_target$:#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_clause_cond_is_fera_user: "#medium;outline;italic Bonificación si $pod_combat_cond_phrase_is_fera_user$:#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_clause_cond_is_fera_target: "#medium;outline;italic Bonificación si $pod_combat_cond_phrase_is_fera_target$:#! $EFFECT_LIST_BULLET$"
+ # Reuse scope-free change_type and stance keys from pod_combat_desc_bonus_*.
+ pod_combat_desc_clause_self_heal: "#medium;outline #P Restaura #bold [pod_clause.MakeScope.Var('bonus_value').GetValue|V0]#! [POD_superficial_box]#!#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_clause_heal_target: "#medium;outline #P Restaura #bold [pod_clause.MakeScope.Var('bonus_value').GetValue|V0]#! [POD_superficial_box] al objetivo#!#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_clause_morale_damage: "#medium;outline #bold;N [pod_clause.MakeScope.Var('bonus_value').GetValue|V0]#! de daño a la [pod_combat_morale|E]#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_clause_self_morale_heal: "#medium;outline #P Restaura #bold [pod_clause.MakeScope.Var('bonus_value').GetValue|V0]#! de [pod_combat_morale|E]#!#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_clause_damage: "#medium;outline #bold;N +[pod_clause.MakeScope.Var('bonus_value').GetValue|V0]#! $superficial$ #N de daño#!#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_clause_damage_agg: "#medium;outline #bold;N +[pod_clause.MakeScope.Var('bonus_value').GetValue|V0]#! $aggravated$ #N de daño#!#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_clause_damage_plain: "#medium;outline #bold;N +[pod_clause.MakeScope.Var('bonus_value').GetValue|V0]#! #N de daño#!#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_clause_damage_typed: "#medium;outline #bold;N +[pod_clause.MakeScope.Var('bonus_value').GetValue|V0]#! [Localize( Concatenate( 'pod_combat_damage_type_', pod_clause.MakeScope.Var('bonus_param').GetFlagKey ) )] #N de daño#!#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_clause_change_class: "#medium;outline #N inflige#! [Localize( Concatenate( 'pod_combat_damage_type_', pod_clause.MakeScope.Var('bonus_param').GetFlagKey ) )] #N de daño#!#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_clause_hit: "#medium;outline #bold;P +[pod_clause.MakeScope.Var('bonus_value').GetValue|V0]#! [pod_combat_hit_chance|E]#! $EFFECT_LIST_BULLET$"
+ # bonus_value is the tier number here, not its magnitude.
+ pod_combat_desc_clause_hit_buff_round:      "#medium;outline #P +[pod_combat_hit_chance|E]#! (nivel [pod_clause.MakeScope.Var('bonus_value').GetValue|V0]) hasta que empiece tu siguiente turno#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_clause_hit_buff_round_other: "#medium;outline #P +[pod_combat_hit_chance|E]#! (nivel [pod_clause.MakeScope.Var('bonus_value').GetValue|V0]) a [story.MakeScope.Var('targeting').GetFlagName] hasta que empiece el siguiente turno del receptor#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_clause_hit_debuff_round:    "#medium;outline #N -[pod_combat_hit_chance|E]#! (nivel [pod_clause.MakeScope.Var('bonus_value').GetValue|V0]) a [story.MakeScope.Var('targeting').GetFlagName] durante el siguiente turno del objetivo#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_clause_soak_buff_round:     "#medium;outline #P +[soak_damage|E]#! (nivel [pod_clause.MakeScope.Var('bonus_value').GetValue|V0]) hasta que empiece tu siguiente turno#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_clause_soak_buff_round_other: "#medium;outline #P +[soak_damage|E]#! (nivel [pod_clause.MakeScope.Var('bonus_value').GetValue|V0]) a [story.MakeScope.Var('targeting').GetFlagName] hasta que empiece el siguiente turno del receptor#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_clause_soak_debuff_round:   "#medium;outline #N -[soak_damage|E]#! (nivel [pod_clause.MakeScope.Var('bonus_value').GetValue|V0]) a [story.MakeScope.Var('targeting').GetFlagName] durante el siguiente turno del objetivo#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_clause_hit_buff_combat: "#medium;outline #P +[pod_combat_hit_chance|E]#! (nivel [pod_clause.MakeScope.Var('bonus_value').GetValue|V0]) durante el resto del combate#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_clause_hit_buff_combat_other: "#medium;outline #P +[pod_combat_hit_chance|E]#! (nivel [pod_clause.MakeScope.Var('bonus_value').GetValue|V0]) a [story.MakeScope.Var('targeting').GetFlagName] durante el resto del combate#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_clause_hit_debuff_combat: "#medium;outline #N -[pod_combat_hit_chance|E]#! (nivel [pod_clause.MakeScope.Var('bonus_value').GetValue|V0]) a [story.MakeScope.Var('targeting').GetFlagName] durante el resto del combate#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_clause_soak_buff_combat: "#medium;outline #P +[soak_damage|E]#! (nivel [pod_clause.MakeScope.Var('bonus_value').GetValue|V0]) durante el resto del combate#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_clause_soak_buff_combat_other: "#medium;outline #P +[soak_damage|E]#! (nivel [pod_clause.MakeScope.Var('bonus_value').GetValue|V0]) a [story.MakeScope.Var('targeting').GetFlagName] durante el resto del combate#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_clause_soak_debuff_combat: "#medium;outline #N -[soak_damage|E]#! (nivel [pod_clause.MakeScope.Var('bonus_value').GetValue|V0]) a [story.MakeScope.Var('targeting').GetFlagName] durante el resto del combate#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_clause_ap_refund: "#medium;outline Devuelve #bold;P [pod_clause.MakeScope.Var('bonus_value').GetValue|V0]#! PA#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_clause_ap_drain: "#medium;outline Drena #bold;N [pod_clause.MakeScope.Var('bonus_value').GetValue|V0]#! PA al enemigo #weak;italic en su siguiente turno#!#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_clause_energy_gain: "#medium;outline #P Restaura #bold [Multiply_CFixedPoint( pod_clause.MakeScope.Var('bonus_value').GetValue, GetPlayer.MakeScope.ScriptValue('splat_energy_multiplier') )|V0]#! [GetPlayer.Custom('PODEnergySplatIcon')] [GetPlayer.Custom('PODEnergySplatWord')]#!#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_clause_energy_drain: "#medium;outline Drena #bold;N [pod_clause.MakeScope.Var('bonus_value').GetValue|V0]#! de energía al objetivo#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_clause_dot: "#medium;outline #N Inflige #bold [pod_clause.MakeScope.Var('bonus_value').GetValue|V0]#! de daño por ronda durante 2 rondas#!#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_clause_morale_dot: "#medium;outline #N Inflige #bold [pod_clause.MakeScope.Var('bonus_value').GetValue|V0]#! de daño a la [pod_combat_morale|E] por ronda durante 2 rondas#!#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_clause_retaliate_boost: "#medium;outline #P Tu contraataque inflige #bold +[pod_clause.MakeScope.Var('bonus_value').GetValue|V0]#! más de daño#!#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_remove_guard:      "#medium;outline Rompe la [pod_combat_guard_with_icon|E] de [story.MakeScope.Var('targeting').GetFlagName]#! $EFFECT_LIST_BULLET$"
+ # Match arming precedence: morale > retaliate_agg > elemental class > superficial.
+ # Amount fallback: retaliate_damage > hp_damage > 1. Element keys avoid vanilla flag-loc collisions.
+ pod_combat_desc_retaliate_if_hit_explicit_sup:    "#medium;outline #N Contraataca con#! #bold [story.MakeScope.Var('retaliate_damage').GetValue|V0]#! $superficial$ #N de Daño#! al ser golpeado#!"
+ pod_combat_desc_retaliate_if_hit_explicit_agg:    "#medium;outline #N Contraataca con#! #bold [story.MakeScope.Var('retaliate_damage').GetValue|V0]#! $aggravated$ #N de Daño#! al ser golpeado#!"
+ pod_combat_desc_retaliate_if_hit_explicit_morale: "#medium;outline #N Contraataca con#! #bold [story.MakeScope.Var('retaliate_damage').GetValue|V0]#! de [pod_combat_morale|E] #N al ser golpeado#!#!"
+ pod_combat_desc_retaliate_if_hit_explicit_elemental: "#medium;outline #N Contraataca con#! #bold [story.MakeScope.Var('retaliate_damage').GetValue|V0]#! [Localize( Concatenate( 'pod_combat_damage_type_', story.MakeScope.Var('damage_type').GetFlagKey ) )] #N de Daño#! al ser golpeado#!"
+
+ pod_combat_desc_retaliate_if_hit_reuse_sup:       "#medium;outline #N Contraataca con#! #bold [story.MakeScope.Var('hp_damage').GetValue|V0]#! $superficial$ #N de Daño#! al ser golpeado#!"
+ pod_combat_desc_retaliate_if_hit_reuse_agg:       "#medium;outline #N Contraataca con#! #bold [story.MakeScope.Var('hp_damage').GetValue|V0]#! $aggravated$ #N de Daño#! al ser golpeado#!"
+
+ pod_combat_desc_retaliate_if_missed_explicit_sup: "#medium;outline #N Contraataca con#! #bold [story.MakeScope.Var('retaliate_damage').GetValue|V0]#! $superficial$ #N de Daño#! cuando el ataque falla#!"
+ pod_combat_desc_retaliate_if_missed_explicit_agg: "#medium;outline #N Contraataca con#! #bold [story.MakeScope.Var('retaliate_damage').GetValue|V0]#! $aggravated$ #N de Daño#! cuando el ataque falla#!"
+ pod_combat_desc_retaliate_if_missed_explicit_morale: "#medium;outline #N Contraataca con#! #bold [story.MakeScope.Var('retaliate_damage').GetValue|V0]#! de [pod_combat_morale|E] #N cuando el ataque falla#!#!"
+ pod_combat_desc_retaliate_if_missed_explicit_elemental: "#medium;outline #N Contraataca con#! #bold [story.MakeScope.Var('retaliate_damage').GetValue|V0]#! [Localize( Concatenate( 'pod_combat_damage_type_', story.MakeScope.Var('damage_type').GetFlagKey ) )] #N de Daño#! cuando el ataque falla#!"
+
+ pod_combat_desc_retaliate_if_missed_reuse_sup:    "#medium;outline #N Contraataca con#! #bold [story.MakeScope.Var('hp_damage').GetValue|V0]#! $superficial$ #N de Daño#! cuando el ataque falla#!"
+ pod_combat_desc_retaliate_if_missed_reuse_agg:    "#medium;outline #N Contraataca con#! #bold [story.MakeScope.Var('hp_damage').GetValue|V0]#! $aggravated$ #N de Daño#! cuando el ataque falla#!"
+
+ pod_combat_desc_retaliate_if_attacked_explicit_sup: "#medium;outline #N Contraataca con#! #bold [story.MakeScope.Var('retaliate_damage').GetValue|V0]#! $superficial$ #N de Daño#! al ser atacado, acierte o falle#!"
+ pod_combat_desc_retaliate_if_attacked_explicit_agg: "#medium;outline #N Contraataca con#! #bold [story.MakeScope.Var('retaliate_damage').GetValue|V0]#! $aggravated$ #N de Daño#! al ser atacado, acierte o falle#!"
+ pod_combat_desc_retaliate_if_attacked_explicit_morale: "#medium;outline #N Contraataca con#! #bold [story.MakeScope.Var('retaliate_damage').GetValue|V0]#! de [pod_combat_morale|E] #N al ser atacado, acierte o falle#!#!"
+ pod_combat_desc_retaliate_if_attacked_explicit_elemental: "#medium;outline #N Contraataca con#! #bold [story.MakeScope.Var('retaliate_damage').GetValue|V0]#! [Localize( Concatenate( 'pod_combat_damage_type_', story.MakeScope.Var('damage_type').GetFlagKey ) )] #N de Daño#! al ser atacado, acierte o falle#!"
+ 
+ pod_combat_desc_retaliate_if_attacked_reuse_sup:    "#medium;outline #N Contraataca con#! #bold [story.MakeScope.Var('hp_damage').GetValue|V0]#! $superficial$ #N de Daño#! al ser atacado, acierte o falle#!"
+ pod_combat_desc_retaliate_if_attacked_reuse_agg:    "#medium;outline #N Contraataca con#! #bold [story.MakeScope.Var('hp_damage').GetValue|V0]#! $aggravated$ #N de Daño#! al ser atacado, acierte o falle#!"
+ pod_combat_desc_retaliate_if_hit:                "#medium;outline Contraataca al ser golpeado#!"
+ pod_combat_desc_retaliate_if_missed:             "#medium;outline Contraataca cuando el ataque falla#!"
+ pod_combat_desc_retaliate_if_attacked:           "#medium;outline Contraataca al ser atacado, acierte o falle#!"
+
+ pod_combat_desc_ap_gain:           "#medium;outline Obtén #bold [story.MakeScope.Var('ap_gain').GetValue|V0]#! PA#! $EFFECT_LIST_BULLET$"
+ # AP drain and initiative debuffs affect only the workspace target, even on team_enemy moves.
+ pod_combat_desc_ap_drain:          "#medium;outline Drena #bold [story.MakeScope.Var('ap_drain').GetValue|V0]#! PA al objetivo en su siguiente turno#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_initiative_debuff: "#medium;outline -[story.MakeScope.Var('initiative_debuff').GetValue|V0] de [pod_combat_initiative|E] del objetivo la próxima ronda#! $EFFECT_LIST_BULLET$"
+
+ single_enemy: "un enemigo"
+ single_ally:  "un aliado"
+ single_pc:    "el personaje jugador"
+ self:         "tú mismo"
+ team_enemy:   "todos los enemigos"
+ team_ally:    "todos los aliados"
+ team_all:     "todos, tú incluido"
+
+
+ ##############################
+ ###### MOVE BUTTON DATAMODEL LOC
+ ##############################
+ # Move-button keys use the datamodel move story as Scope.
+
+ # Buttons omit the AP unit beside the pip header; detached tooltips include it.
+ POD_combat_move_title:         "#bold;V [Scope.Var('decision').DecisionType.GetTitleForPlayer]#! (#bold;V [Scope.Var('ap_cost').GetValue|0]#!)"
+ POD_combat_move_title_tooltip: "#bold;V [Scope.Var('decision').DecisionType.GetTitleForPlayer]#! (#bold;V [Scope.Var('ap_cost').GetValue|0]#! PA)"
+ POD_combat_move_title_plain:   "[Scope.Var('decision').DecisionType.GetTitleForPlayer] ([Scope.Var('ap_cost').GetValue|0])"
+ POD_combat_move_name:          "#bold;V [Scope.Var('decision').DecisionType.GetTitleForPlayer]#!"
+ # Tooltip body = dynamic stats + flavor; AP is in the title.
+ # PODCombatMoveFlavor resolves the generated skill_key tooltip directly.
+ # GetCommandDescForPlayer supplies locked-row requirements, not flavor.
+ POD_combat_move_tooltip:    "[PODCombatMoveEffect(Scope.Story.MakeScope)|h][AddLine( PODCombatMoveFlavor(Scope.Story.MakeScope) )]"
+
+ # Log tooltips read entry.var:move; datamodel Scope is the log entry.
+ POD_combat_log_move_title:   "#bold;V [Scope.Var('move').Story.MakeScope.Var('decision').DecisionType.GetTitleForPlayer]#! (#bold;V [Scope.Var('move').Story.MakeScope.Var('ap_cost').GetValue|0]#! PA)"
+ # Use the Static card for another actor's move so viewer-relative hiding does not omit its bonuses.
+ POD_combat_log_move_tooltip: "[PODCombatMoveEffectStatic(Scope.Var('move').Story.MakeScope)|h][AddLine( PODCombatMoveFlavor(Scope.Var('move').Story.MakeScope) )]"
+
+ ##############################
+ ###### MOVE LINKS
+ ##############################
+
+
+ # Usage: [PODCombatMove('POD_combat_move_majesty')]
+ POD_combat_move_inline_link: "#TOOLTIP:[SCOPE.GetFlagName('flag')]_desc #L;V [Localize(SCOPE.GetFlagName('flag'))]#!#!"
+ # Usage: [PODUnlocksCombatMove('POD_combat_move_majesty')]
+ POD_unlocks_combat_move: "Desbloquea el [pod_combat_move|E] $POD_combat_move_inline_link$"
+ POD_improves_combat_move: "Mejora el [pod_combat_move|E] $POD_combat_move_inline_link$"
+
+ ##############################
+ ###### SKILL INLINE TOOLTIP (customizable_localization body)
+ ##############################
+
+ # Bullet bookends balance containers that prepend their own bullet.
+ # See the dynamic-tooltip section for the |h color contract.
+
+ POD_combat_move_inline_tooltip: "#size:17  #!\n#h $EFFECT_LIST_BULLET$#!#V;outline;size:20;FONT:PODGrotesque #bold [story.MakeScope.Var('decision').DecisionType.GetTitleForPlayer]#! (#bold [story.MakeScope.Var('ap_cost').GetValue|0]#! PA)#!\n[PODCombatMoveEffect(story.MakeScope)|h]\n#h $EFFECT_LIST_BULLET$#!#weak;outline [story.MakeScope.Var('decision').DecisionType.GetShortDescForPlayer]#!\n"
+
+ ##############################
+ ###### DAMAGE TYPE LABELS
+ ##############################
+ # GetFlagName resolves superficial/aggravated to wound icons. Elements use namespaced
+
+ superficial:  "[POD_superficial_box]"
+ aggravated:   "[POD_aggravated_box]"
+
+ pod_combat_damage_type_superficial: "$superficial$"
+ pod_combat_damage_type_aggravated:  "$aggravated$"
+
+ # Element labels already include icons. Do not add pod_combat_elemmark_* or
+ # pod_combat_damage_source_* at the same site.
+ pod_combat_damage_type_fire:      "[fire_damage_short_with_icon]"
+ pod_combat_damage_type_cold:      "[cold_damage_short_with_icon]"
+ pod_combat_damage_type_lightning: "[lightning_damage_short_with_icon]"
+ pod_combat_damage_type_sun:       "[sun_damage_short_with_icon]"
+ pod_combat_damage_type_silver:    "[silver_damage_short_with_icon]"
+ pod_combat_damage_type_gold:      "[gold_damage_short_with_icon]"
+ pod_combat_damage_type_holy:      "[holy_damage_short_with_icon]"
+ pod_combat_damage_type_balefire:  "[balefire_damage_short_with_icon]"
+ pod_combat_damage_type_poison:    "[poison_damage_short_with_icon]"
+ pod_combat_damage_type_cold_iron: "[cold_iron_damage_short_with_icon]"
+
+ # Log wound-class labels use words because the segment already supplies the wound box.
+ pod_combat_log_typed_class_superficial: "superficial"
+ pod_combat_log_typed_class_aggravated:  "agravado"
+ pod_combat_log_typed_class_fire:      "$pod_combat_damage_type_fire$"
+ pod_combat_log_typed_class_cold:      "$pod_combat_damage_type_cold$"
+ pod_combat_log_typed_class_lightning: "$pod_combat_damage_type_lightning$"
+ pod_combat_log_typed_class_sun:       "$pod_combat_damage_type_sun$"
+ pod_combat_log_typed_class_silver:    "$pod_combat_damage_type_silver$"
+ pod_combat_log_typed_class_gold:      "$pod_combat_damage_type_gold$"
+ pod_combat_log_typed_class_balefire:  "$pod_combat_damage_type_balefire$"
+ pod_combat_log_typed_class_holy:      "$pod_combat_damage_type_holy$"
+ pod_combat_log_typed_class_poison:    "$pod_combat_damage_type_poison$"
+ pod_combat_log_typed_class_cold_iron: "$pod_combat_damage_type_cold_iron$"
+
+ # Icon-only element keys omit the log variants' leading space for centered cells.
+ pod_combat_elemmark_fire:      "[fire_damage_icon]"
+ pod_combat_elemmark_cold:      "[cold_damage_icon]"
+ pod_combat_elemmark_lightning: "[lightning_damage_icon]"
+ pod_combat_elemmark_sun:       "[sun_damage_icon]"
+ pod_combat_elemmark_silver:    "[silver_damage_icon]"
+ pod_combat_elemmark_gold:      "[gold_damage_icon]"
+ pod_combat_elemmark_holy:      "[holy_damage_icon]"
+ pod_combat_elemmark_balefire:  "[balefire_damage_icon]"
+ pod_combat_elemmark_poison:    "[poison_damage_icon]"
+ pod_combat_elemmark_cold_iron: "[cold_iron_damage_icon]"
+
+ pod_combat_dot_type_morale:      "daño a la [pod_combat_morale|E]"
+ pod_combat_dot_type_superficial: "daño [Concept('POD_superficial_damage','Superficial')|E] a la salud"
+ pod_combat_dot_type_aggravated:  "daño [Concept('POD_aggravated_damage','Agravado')|E] a la salud"
+ pod_combat_dot_type_elemental:   "daño [Localize( Concatenate( 'pod_combat_damage_type_', ROOT.Var('damage_type').GetFlagKey ) )] a la salud"
+ pod_combat_desc_dot:             "#medium;outline #N Daño con el tiempo:#! #bold [story.MakeScope.Var('dot_amount').GetValue|V0]#! de [story.Custom('PODCombatMoveDoTType')] al final de cada ronda durante #bold [story.MakeScope.Var('dot_rounds').GetValue|V0]#! rondas#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_mind_control:         "#medium;outline #N Control mental:#! roba el siguiente turno del objetivo #weak;italic (lo resisten las defensas mentales fuertes; los jugadores son inmunes)#!#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_summon:               "#medium;outline #P Invocar:#! llama a un nuevo combatiente a la batalla#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_marker_modifier:      "#medium;outline #P Aplica [GetModifier(story.MakeScope.Var('marker_modifier').GetFlagKey).GetNameWithTooltip]:#! una marca sobre ti en la que pueden apoyarse otros movimientos#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_remove_marker: "#medium;outline #N Elimina [GetModifier(story.MakeScope.Var('remove_marker').GetFlagKey).GetNameWithTooltip]#!#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_remove_marker_target: "#medium;outline #N Arranca [GetModifier(story.MakeScope.Var('remove_marker').GetFlagKey).GetNameWithTooltip]#! a [story.MakeScope.Var('targeting').GetFlagName]#! $EFFECT_LIST_BULLET$"
+ pod_combat_marker_unnamed:            "un efecto de combate"
+
+ ##############################
+ ###### CHARACTER MODIFIERS
+ ##############################
+
+ pod_combat_duel_active:      "En Combate"
+ pod_combat_duel_active_desc: "Este personaje está actualmente inmerso en un [pod_combat_encounter_with_icon|E]."
+
+
+ pod_combat_anima_flare:      "Llamarada de Ánima"
+ pod_combat_anima_flare_desc: "El ánima de este personaje arde con fuerza, haciendo que sus técnicas disciplinadas fluyan con mayor rapidez."
+ pod_combat_predator_focus:      "Concentración del Depredador"
+ pod_combat_predator_focus_desc: "Este personaje ha preparado una apertura depredadora para un golpe decisivo."
+ pod_combat_kai_focus:      "Enfoque en Kai"
+ pod_combat_kai_focus_desc: "Este personaje ha reunido su fuerza interior para un golpe concentrado."
+
+ ##############################
+ ###### GAME CONCEPTS - general
+ ##############################
+
+ game_concept_pod_combat_encounter: "Encuentro de Combate"
+ game_concept_pod_combat_encounter_with_icon: "@pod_combat_encounter_icon!Encuentro de Combate"
+ game_concept_pod_combat_encounters: "Encuentros de Combate"
+ game_concept_pod_combat_encounters_with_icon: "@pod_combat_encounter_icon!Encuentros de Combate"
+ game_concept_pod_combat_encounter_desc: "Un minijuego de combate táctico por turnos en el que dos o más personajes zanjan sus diferencias con violencia.\n\nLos combatientes se turnan para gastar [pod_combat_action_points|E] en [pod_combat_moves|E] hasta que el enemigo queda [pod_combat_knocked_out|E].\n\nSe puede desbloquear una gran variedad de [pod_combat_moves|E] a partir de rasgos de [splat|E], ventajas y otras fuentes. Pueden infligir daño al [POD_health_track|E] o a la [pod_combat_morale|E], aplicar mejoras y penalizaciones, adoptar posturas como [pod_combat_guard_with_icon|E], [pod_combat_dodge_with_icon|E] o [pod_combat_stealth_with_icon|E], y más.\n\nLa [prowess_i][prowess|E] es un factor importante durante el combate, ya que determina la [pod_combat_hit_chance|E] y la [pod_combat_initiative|E].\n\n#I Para una explicación más detallada de las mecánicas de combate, pulsa el botón #bold Ayuda#! de la interfaz de combate.#!"
+
+ game_concept_pod_combat_move: "Movimiento de Combate"
+ game_concept_pod_combat_moves: "Movimientos de Combate"
+ game_concept_pod_combat_move_desc: "#I Usa la [decision|E] #bold [SelectLocalization(IsInGame,'pod_combat_configure_moves_link_ingame','pod_combat_configure_moves')]#! para elegir un equipamiento de movimientos antes de la batalla.#!\n\nLas habilidades que se usan durante los [pod_combat_encounters_with_icon|E]. Los Movimientos de Combate se dividen en cuatro categorías:\n\n#color_red;bold ATQ (Ataque):#! Infligen daño al [POD_health_track|E]. Algunos movimientos tienen [POD_damage_types|E], como [fire_damage_short_with_icon] o [silver_damage_short_with_icon].\n\n#color_light_blue;bold DEF (Defensa):#! Curan, mejoran la [soak_damage|E] o la [pod_combat_hit_chance|E], o adoptan posturas como [pod_combat_guard_with_icon|E], [pod_combat_dodge_with_icon|E] o [pod_combat_stealth_with_icon|E].\n\n#color_porple;bold CTL (Control):#! Infligen daño a la [pod_combat_morale|E], penalizan la [soak_damage|E] o la [pod_combat_hit_chance|E] del enemigo, o drenan sus [pod_combat_ap|E].\n\n#color_pwr_orange;bold PDR (Poder):#! Poderosos movimientos finales que suelen venir con limitaciones.\n\nPuedes tener equipados #bold [EmptyScope.ScriptValue('pod_combat_max_per_category_base')|V0]#! movimientos de cada categoría, hasta un total de #bold [EmptyScope.ScriptValue('pod_combat_max_equipped_base')|V0]#!.\n\nLos Movimientos de Combate usan [pod_combat_action_points|E] #V (PA)#! y pueden tener costes adicionales como [hunger_with_icon|E] u [gold_i][gold|E]."
+ 
+ pod_combat_configure_moves_link_ingame: "[GetDecision('pod_combat_configure_moves').GetName]"
+ 
+ game_concept_pod_combat_action_points: "Puntos de Acción"
+ game_concept_pod_combat_ap: "PA"
+ game_concept_pod_combat_action_points_desc: "#bold Los Puntos de Acción (PA)#! son el recurso principal que se usa durante los [pod_combat_encounters_with_icon|E].\n\nPor defecto empiezas con [EmptyScope.ScriptValue('pod_combat_base_ap_base')|V0] Puntos de Acción cada ronda. Algunos [pod_combat_moves|E] pueden mejorar, drenar o devolver PA.\n\nLos PA no gastados se pierden al final de tu turno."
+ 
+ game_concept_pod_combat_knocked_out: "Fuera de Combate"
+ game_concept_pod_combat_knocked_out_desc: "Un combatiente queda #bold Fuera de Combate#! y es retirado de un [pod_combat_encounter_with_icon|E] cuando ocurre cualquiera de estas cosas:\n$BULLET_WITH_TAB$Su [POD_health_track|E] se llena por completo\n$BULLET_WITH_TAB$Su [pod_combat_morale|E] llega a #N cero#!\n$BULLET_WITH_TAB$Muere, queda #N Incapacitado#!, entra en $pod_torpor$ o queda atrapado en el Reino de las Sombras o en el Abismo\n\nGanas cuando todos los enemigos quedan fuera de combate. Pierdes si quedas fuera de combate tú, aunque sigan en pie algunos aliados."
+
+ ##############################
+ ###### GAME CONCEPTS - combat minigame stats
+ ##############################
+
+ game_concept_pod_combat_morale: "Moral"
+ game_concept_pod_combat_morale_icon: "@stress_icon!"
+ game_concept_pod_combat_morale_desc: "La #bold resiliencia mental#! de un combatiente durante los [pod_combat_encounters_with_icon|E]. La Moral suele empezar llena y cae con los ataques mentales directos, la intimidación y otras presiones. Cada casilla de herida que un golpe inflige realmente tras [soak_damage|E] también quita #N [EmptyScope.ScriptValue('pod_combat_morale_from_hp_base_ratio')|0]#! de Moral.\n\nCuando un combatiente queda [pod_combat_knocked_out|E], cada compañero superviviente pierde #N [EmptyScope.ScriptValue('pod_combat_ally_down_morale_penalty')|0]#! de Moral por la impresión. Esta pérdida se detiene en 1 de Moral, de modo que el shock no puede dejar fuera de combate a nadie por sí solo.\n\nFuera de la Práctica, cada combatiente vivo recibe #N [EmptyScope.ScriptValue('pod_combat_morale_base_stress_multiplier')|0]#! de [static_stress|E] al final del combate por cada punto de Moral que aún falte. Restaurar Moral antes de que termine la pelea reduce esta tensión duradera. El combate de práctica no aplica Tensión Mental duradera."
+
+ game_concept_pod_combat_hit_chance: "Probabilidad de Impacto"
+ game_concept_pod_combat_hit: "Impacto"
+ game_concept_pod_combat_accuracy: "Precisión"
+ game_concept_pod_combat_hit_chance_desc: "En los [pod_combat_moves|E] que requieren una #bold tirada de Impacto#!, la Probabilidad de Impacto es el porcentaje de probabilidad de superar esa tirada. Su base parte de [EmptyScope.ScriptValue('pod_combat_hit_chance_base_base')|0]% y se desplaza en la mitad de la diferencia entre tu [prowess|E] y la Destreza del objetivo elegido; luego se aplican tus mejoras y penalizaciones de Impacto activas y la bonificación de +[EmptyScope.ScriptValue('pod_combat_stealth_hit_base_bonus')|0]% del [pod_combat_stealth_with_icon|E].\n\nLa [pod_combat_dodge_with_icon|E] y el [pod_combat_stealth_with_icon|E] se resuelven antes de la tirada de Impacto, mientras que la [pod_combat_guard_with_icon|E] puede bloquear un ataque que de otro modo impactaría. La [soak_damage|E] y la capacidad de afectar a espíritus incorpóreos son también fases independientes. Ninguna de estas defensas cambia el porcentaje mostrado.\n\nUna Probabilidad de Impacto tirada queda limitada entre el [EmptyScope.ScriptValue('pod_combat_hit_chance_min_base')|0]% y el [EmptyScope.ScriptValue('pod_combat_hit_chance_max_base')|0]%. Los movimientos marcados como #bold Sin tirada de Impacto#! omiten solo esa tirada; cualquier defensa independiente que no ignoren aún puede detenerlos."
+
+ ##############################
+ ###### GAME CONCEPTS - combat stances
+ ##############################
+
+ game_concept_pod_combat_guard: "Guardia"
+ game_concept_pod_combat_guard_with_icon: "@pod_combat_guard_icon!Guardia"
+ game_concept_pod_combat_guarding: "En Guardia"
+ game_concept_pod_combat_guarding_with_icon: "@pod_combat_guard_icon!En Guardia"
+ game_concept_pod_combat_guarded: "Guardado"
+ game_concept_pod_combat_guarded_with_icon: "@pod_combat_guard_icon!Guardado"
+ game_concept_pod_combat_guard_desc: "Una #bold postura defensiva#!. Cuando un ataque que comprueba la Guardia impactaría de otro modo, se convierte en un golpe bloqueado y no inflige daño al [POD_health_track|E]. La Guardia se consume al bloquear ese ataque.\n\n#weak Un movimiento que ignora la Guardia puede impactar sin consumirla.#!"
+
+ game_concept_pod_combat_dodge: "Esquiva"
+ game_concept_pod_combat_dodge_with_icon: "@pod_combat_dodge_icon!Esquiva"
+ game_concept_pod_combat_dodging: "Esquivando"
+ game_concept_pod_combat_dodging_with_icon: "@pod_combat_dodge_icon!Esquivando"
+ game_concept_pod_combat_dodged: "Esquivado"
+ game_concept_pod_combat_dodged_with_icon: "@pod_combat_dodge_icon!Esquivado"
+ game_concept_pod_combat_dodge_desc: "Una #bold postura evasiva#!. Cuando un ataque comprueba la Esquiva, falla automáticamente sin importar la [pod_combat_hit_chance|E] del atacante, y la Esquiva se consume.\n\n#weak Un movimiento Inesquivable ignora la Esquiva sin consumirla; un movimiento que Elimina la Esquiva rompe la postura antes de resolverse.#!"
+
+ game_concept_pod_combat_stealth: "Sigilo"
+ game_concept_pod_combat_stealth_with_icon: "@pod_combat_stealth_icon!Sigilo"
+ game_concept_pod_combat_stealthed: "Oculto"
+ game_concept_pod_combat_stealthed_with_icon: "@pod_combat_stealth_icon!Oculto"
+ game_concept_pod_combat_stealth_desc: "Una #bold postura oculta#! que añade +[EmptyScope.ScriptValue('pod_combat_stealth_hit_base_bonus')|0]% de [pod_combat_hit_chance|E] mientras está activa. El Sigilo termina con lo que ocurra primero:\n$TAB$- Quien lo posee realiza un ataque de salud o un movimiento de contacto hostil\n$TAB$- Un ataque entrante comprueba el Sigilo y falla automáticamente\n\nLos ataques de pura Moral no consumen el Sigilo del atacante.\n\n#weak Un movimiento Inesquivable ignora el Sigilo sin consumirlo, mientras que un movimiento que Elimina el Sigilo rompe la postura antes de resolver sus demás efectos.#!"
+
+
+ game_concept_pod_combat_initiative: "Iniciativa"
+ game_concept_pod_combat_init: "Inic."
+ game_concept_pod_combat_initiative_desc: "Una tirada que determina el [pod_combat_turn_order|E]. Quien tiene mayor iniciativa actúa antes.\n\nCada combatiente tira una sola vez, al entrar en la pelea, y conserva ese resultado durante el resto: una pelea tiene un único orden continuo, no uno nuevo cada ronda. La tirada se nutre de la [prowess|E] y del splat del combatiente; las ventajas y los rasgos la ajustan. Los combatientes más rápidos (Disciplinas de velocidad sobrenatural, rasgos de rapidez) pueden abrir con su ataque antes de que los enemigos más lentos siquiera reaccionen.\n\nLas penalizaciones de iniciativa aplicadas por movimientos alteran el resultado durante #bold una sola ronda#! y luego se disipan, de modo que una bien calculada te da exactamente un turno de ventaja sobre un rival más rápido."
+
+ game_concept_pod_combat_turn_order: "Orden de Turnos"
+ game_concept_pod_combat_turn: "Turno"
+ game_concept_pod_combat_turn_order_desc: "El orden resuelto en el que actúan los combatientes, numerado de 1 (primero) a N (último). Lo determina la [pod_combat_initiative|E] de cada combatiente.\n\nEl orden se fija al comenzar la pelea y se mantiene durante toda ella, de modo que puedes planear varios turnos por adelantado. Solo cambia cuando algo altera la iniciativa de un combatiente: una penalización de iniciativa hace caer a su objetivo durante una ronda, y un combatiente que se une a mitad de pelea se integra en la siguiente ronda.\n\nEn peleas de tres o más, el orden se muestra como una tira de retratos en la parte superior de la ventana de combate: el actor actual aparece resaltado, y los retratos se atenúan cuando ya han actuado o han caído. El número de cada combatiente figura en su línea de [pod_combat_initiative|E] en la información emergente de su tarjeta."
+
+
+ ##############################
+ ###### GAME CONCEPTS - damage types
+ ##############################
+ # Describe player-visible outcomes; avoid internal variable, trigger and death-reason names.
+
+ # ── Elemental damage flavors ──
+
+ game_concept_fire_damage: "Daño por Fuego"
+ game_concept_fire_damage_icon: "@pod_combat_fire_icon!"
+ game_concept_fire_damage_short: "#L;color:{1.00,0.55,0.20} Fuego#!"
+ game_concept_fire_damage_short_with_icon: "$game_concept_fire_damage_icon$$game_concept_fire_damage_short$"
+ game_concept_fire_damage_desc: "$BULLET_WITH_TAB$[POD_aggravated_damage_with_box|E] contra #bold cualquier [splat|E] con cuerpo.#! Las heridas de fuego no se curan de la noche a la mañana.\n$BULLET_WITH_TAB$[POD_superficial_damage_with_box|E] contra #bold $POD_splat_wraith_plural_with_icon$#! y #bold $POD_splat_spirit_plural_with_icon$#!, que son incorpóreos.\n$BULLET_WITH_TAB$#bold [GetTrait('bushi').GetName(GetNullCharacter)]#! reciben #bold el doble de daño#! por su $glossary_clan_curse$.\n$BULLET_WITH_TAB$Algunas ventajas poco comunes pueden conferir #bold inmunidad#! al daño por fuego.\n\n#weak La herramienta más antigua de la humanidad aleja la oscuridad, literal y metafóricamente. Hasta un campesino puede blandir una antorcha para defenderse de los monstruos.#!"
+
+ game_concept_cold_damage: "Daño por Frío"
+ game_concept_cold_damage_icon: "@pod_combat_cold_icon!"
+ game_concept_cold_damage_short: "#L;color:{0.55,0.85,1.00} Frío#!"
+ game_concept_cold_damage_short_with_icon: "$game_concept_cold_damage_icon$$game_concept_cold_damage_short$"
+ game_concept_cold_damage_desc: "$BULLET_WITH_TAB$[POD_aggravated_damage_with_box|E] contra #bold $POD_splat_mortal_plural_with_icon$#!, cuya carne no soporta el frío cortante.\n$BULLET_WITH_TAB$[POD_superficial_damage_with_box|E] contra los demás [splats|E].\n$BULLET_WITH_TAB$Sin multiplicadores de daño adicionales ni inmunidades.\n\n#weak Este elemento golpea con especial dureza a los mortales, pero ni siquiera los no-muertos son inmunes a que unos cristales de hielo afilados les desgarren la carne.#!"
+
+ game_concept_lightning_damage: "Daño por Rayo"
+ game_concept_lightning_damage_icon: "@pod_combat_lightning_icon!"
+ game_concept_lightning_damage_short: "#L;color:{1.00,0.95,0.35} Rayo#!"
+ game_concept_lightning_damage_short_with_icon: "$game_concept_lightning_damage_icon$$game_concept_lightning_damage_short$"
+ game_concept_lightning_damage_desc: "$BULLET_WITH_TAB$[POD_aggravated_damage_with_box|E] contra #bold todo [splat|E]#!. La carne viva, la carne muerta y la materia espiritual conducen por igual.\n$BULLET_WITH_TAB$Sin multiplicadores de daño adicionales ni inmunidades.\n\n#weak El arma predilecta de Susanowo, el Dios de las Tormentas. Sea el rayo sobrenatural o corriente, nada puede resistir su poder destructivo.#!"
+
+ game_concept_sun_damage: "Daño por Luz Solar"
+ game_concept_sun_damage_icon: "@pod_combat_sun_icon!"
+ game_concept_sun_damage_short: "#L;color:{1.00,0.92,0.50} Luz solar#!"
+ game_concept_sun_damage_short_with_icon: "$game_concept_sun_damage_icon$$game_concept_sun_damage_short$"
+ game_concept_sun_damage_desc: "$BULLET_WITH_TAB$[POD_aggravated_damage_with_box|E] contra #bold $POD_splat_vampire_plural_with_icon$#!, #bold $POD_splat_abomination_plural_with_icon$#! y #bold $POD_splat_kueijin_plural_with_icon$#!, los malditos por el sol. Unos pocos [Glossary('Dharmas','podgloss.dharma')] de los $POD_splat_kueijin_plural$ lo ignoran como daño superficial.\n$BULLET_WITH_TAB$Los demás [splats|E] son #bold inmunes#!, pues la luz del sol simplemente no hiere a los vivos ni a los no malditos.\n$BULLET_WITH_TAB$#bold #TOOLTIP:GAME_TRAIT,setite,[GetNullCharacter] #L Los Setitas#!#! y [GetTrait('bushi').GetName(GetNullCharacter)]#! reciben #bold el doble de daño#! por su $glossary_clan_curse$.\n\n#weak El sol esparce el calor de Dios por toda Su creación. Qué apropiado, pues, que los que Él maldijo ya no puedan recibirlo.#!"
+
+ game_concept_silver_damage: "Daño por Plata"
+ game_concept_silver_damage_icon: "@pod_combat_silver_icon!"
+ game_concept_silver_damage_short: "#L;color:{0.85,0.85,0.95} Plata#!"
+ game_concept_silver_damage_short_with_icon: "$game_concept_silver_damage_icon$$game_concept_silver_damage_short$"
+ game_concept_silver_damage_desc: "$BULLET_WITH_TAB$[POD_aggravated_damage_with_box|E] contra #bold $POD_splat_werewolf_plural_with_icon$#! y la mayoría de los demás #bold $glossary_fera$#!, cuyo poder de regeneración flaquea al ser heridos por #italic «el Metal de $glossary_luna$»#!.\n$BULLET_WITH_TAB$[POD_superficial_damage_with_box|E] contra los demás [splats|E].\n$BULLET_WITH_TAB$Sin multiplicadores de daño adicionales ni inmunidades.\n\n#weak Un arma de plata puede nivelar el campo de juego frente a un hombre lobo, pero que no te quepa duda: aun con su regeneración detenida, siguen siendo las mayores máquinas de matar de Gaia.#!"
+
+ game_concept_gold_damage: "Daño por Oro"
+ game_concept_gold_damage_icon: "@pod_combat_gold_icon!"
+ game_concept_gold_damage_short: "#L;color:{1.00,0.75,0.20} Oro#!"
+ game_concept_gold_damage_short_with_icon: "$game_concept_gold_damage_icon$$game_concept_gold_damage_short$"
+ game_concept_gold_damage_desc: "$BULLET_WITH_TAB$[POD_aggravated_damage_with_box|E] contra #bold $POD_splat_mokole_plural_with_icon$#! y #bold $POD_splat_corax_plural_with_icon$#!, singularmente débiles al metal solar.\n$BULLET_WITH_TAB$[POD_superficial_damage_with_box|E] contra los demás [splats|E].\n$BULLET_WITH_TAB$Sin multiplicadores de daño adicionales ni inmunidades.\n\n#weak Los Mokolé se han asegurado de que su debilidad al metal de Helios sea un secreto bien guardado. Solo pueden esperar que los Corax, tan parlanchines, hagan lo mismo.#!"
+
+ game_concept_holy_damage: "Daño Sagrado"
+ game_concept_holy_damage_icon: "@pod_combat_holy_icon!"
+ game_concept_holy_damage_short: "#L;color:{1.00,0.95,0.65} Sagrado#!"
+ game_concept_holy_damage_short_with_icon: "$game_concept_holy_damage_icon$$game_concept_holy_damage_short$"
+ game_concept_holy_damage_desc: "$BULLET_WITH_TAB$[POD_aggravated_damage_with_box|E] contra #bold $POD_splat_vampire_plural_with_icon$#!, #bold $POD_splat_abomination_plural_with_icon$#!, #bold $POD_splat_demon_plural_with_icon$#!, #bold $POD_splat_kueijin_plural_with_icon$#!, #bold $POD_splat_wraith_plural_with_icon$#! y #bold $POD_splat_fae_plural_with_icon$#!, que retroceden ante las muestras de [Glossary('Fe Verdadera','game_concept_true_faith_desc')].\n$BULLET_WITH_TAB$[POD_superficial_damage_with_box|E] contra #bold $POD_splat_changeling_plural_with_icon$#!.\n$BULLET_WITH_TAB$Los demás [splats|E] son #bold inmunes#!.\n\n#weak He aquí que el nombre de Jehová viene de lejos; su rostro encendido, y la carga es grave; sus labios llenos de indignación, y su lengua como fuego que consume.#!" # Isaiah 30:27 KJV
+
+ game_concept_poison_damage: "Daño por Veneno"
+ game_concept_poison_damage_icon: "@pod_combat_poison_icon!"
+ game_concept_poison_damage_short: "#L;color:{0.55,0.80,0.30} Veneno#!"
+ game_concept_poison_damage_short_with_icon: "$game_concept_poison_damage_icon$$game_concept_poison_damage_short$"
+ game_concept_poison_damage_desc: "$BULLET_WITH_TAB$[POD_aggravated_damage_with_box|E] contra #bold $POD_splat_mortal_plural_with_icon$#!, cuya carne viva pudre el veneno.\n$BULLET_WITH_TAB$#bold $POD_splat_vampire_plural_with_icon$#! y #bold $POD_splat_kueijin_plural_with_icon$#! son #bold inmunes#!, ya que los no-muertos no tienen un cuerpo vivo que envenenar.\n$BULLET_WITH_TAB$[POD_superficial_damage_with_box|E] contra los demás [splats|E].\n\n#weak El arma predilecta de Lady Yul, Maeljin de las Toxinas. A menudo se la tacha de herramienta de traidores y cobardes. Pero ¿de qué sirve el honor cuando tu vida está en juego?#!"
+
+ game_concept_cold_iron_damage: "Daño por Hierro Frío"
+ game_concept_cold_iron_damage_icon: "@pod_combat_cold_iron_icon!"
+ game_concept_cold_iron_damage_short: "#L;color:{0.65,0.70,0.78} Hierro frío#!"
+ game_concept_cold_iron_damage_short_with_icon: "$game_concept_cold_iron_damage_icon$$game_concept_cold_iron_damage_short$"
+ game_concept_cold_iron_damage_desc: "$BULLET_WITH_TAB$[POD_aggravated_damage_with_box|E] contra #bold $POD_splat_fae_plural_with_icon$#! y #bold $POD_splat_changeling_plural_with_icon$#!, que sufren horribles heridas humeantes por la [banality|E] del metal.\n$BULLET_WITH_TAB$[POD_superficial_damage_with_box|E] contra los demás [splats|E].\n$BULLET_WITH_TAB$Sin multiplicadores de daño adicionales ni inmunidades.\n\n#weak Armas creadas mediante un proceso arcaico de hierro forjado. Son más pesadas y quebradizas que el acero, pero es esta naturaleza rudimentaria la que puede traer la muerte al alma feérica.#!"
+
+
+
+ ##############################
+ ###### COMBAT LOG - COLUMN HEADERS + EMPTY STATE
+ ##############################
+ pod_combat_log_empty:         "#italic A la espera de tus órdenes.#!"
+
+
+ ##############################
+ ###### COMBAT LOG - RESULT TEXT
+ ##############################
+ # Result amounts are captured on the log entry. See COMBAT_REFERENCE.info section 4.
+ pod_combat_log_result_text_hp_damage:               "#bold;N -[entry.MakeScope.Var('damage').GetValue|0]#! [POD_superficial_box]"
+ pod_combat_log_result_text_hp_damage_aggravated:    "#bold;N -[entry.MakeScope.Var('damage').GetValue|0]#! [POD_aggravated_box]"
+ pod_combat_log_result_text_hp_damage_partial_soak:            "#bold;N -[entry.MakeScope.Var('damage').GetValue|0]#! [POD_superficial_box] #weak;italic [entry.MakeScope.Var('soaked_count').GetValue|0] absorbidos#!"
+ pod_combat_log_result_text_hp_damage_aggravated_partial_soak: "#bold;N -[entry.MakeScope.Var('damage').GetValue|0]#! [POD_aggravated_box] #weak;italic [entry.MakeScope.Var('soaked_count').GetValue|0] absorbidos#!"
+ pod_combat_log_result_text_guard_blocked:           "#bold Bloqueado#!"
+ pod_combat_log_result_text_soaked:                  "#bold Absorbido#!"
+ pod_combat_log_result_text_immune:                  "#bold Inmune#!"
+ pod_combat_log_result_text_missed:                  "#bold Fallado#!"
+ pod_combat_log_result_text_dodged:                  "#bold Esquivado#!"
+ pod_combat_log_result_text_stealthed:               "#bold Oculto#!"
+ # Typed bonus packets keep independent wound classes and soak results.
+ # Slot order matches execution phase 6.
+ pod_combat_log_typed_bonus_damage_1: "#bold;N -[entry.MakeScope.Var('typed_bonus_damage_1').GetValue|0]#! [POD_superficial_box] #weak;italic bonificación [Localize( Concatenate( 'pod_combat_log_typed_class_', entry.MakeScope.Var('typed_bonus_damage_class_1').GetFlagKey ) )]#!"
+ pod_combat_log_typed_bonus_damage_1_aggravated: "#bold;N -[entry.MakeScope.Var('typed_bonus_damage_1').GetValue|0]#! [POD_aggravated_box] #weak;italic bonificación [Localize( Concatenate( 'pod_combat_log_typed_class_', entry.MakeScope.Var('typed_bonus_damage_class_1').GetFlagKey ) )]#!"
+ pod_combat_log_typed_bonus_damage_1_partial_soak: "#bold;N -[entry.MakeScope.Var('typed_bonus_damage_1').GetValue|0]#! [POD_superficial_box] #weak;italic bonificación [Localize( Concatenate( 'pod_combat_log_typed_class_', entry.MakeScope.Var('typed_bonus_damage_class_1').GetFlagKey ) )], [entry.MakeScope.Var('typed_bonus_soaked_count_1').GetValue|0] absorbidos#!"
+ pod_combat_log_typed_bonus_damage_1_aggravated_partial_soak: "#bold;N -[entry.MakeScope.Var('typed_bonus_damage_1').GetValue|0]#! [POD_aggravated_box] #weak;italic bonificación [Localize( Concatenate( 'pod_combat_log_typed_class_', entry.MakeScope.Var('typed_bonus_damage_class_1').GetFlagKey ) )], [entry.MakeScope.Var('typed_bonus_soaked_count_1').GetValue|0] absorbidos#!"
+ pod_combat_log_typed_bonus_damage_1_soaked: "#weak;italic bonificación [Localize( Concatenate( 'pod_combat_log_typed_class_', entry.MakeScope.Var('typed_bonus_damage_class_1').GetFlagKey ) )]#! #bold Absorbida#!"
+ pod_combat_log_typed_bonus_damage_1_immune: "#weak;italic bonificación [Localize( Concatenate( 'pod_combat_log_typed_class_', entry.MakeScope.Var('typed_bonus_damage_class_1').GetFlagKey ) )]#! #bold Inmune#!"
+ pod_combat_log_typed_bonus_damage_2: "#bold;N -[entry.MakeScope.Var('typed_bonus_damage_2').GetValue|0]#! [POD_superficial_box] #weak;italic bonificación [Localize( Concatenate( 'pod_combat_log_typed_class_', entry.MakeScope.Var('typed_bonus_damage_class_2').GetFlagKey ) )]#!"
+ pod_combat_log_typed_bonus_damage_2_aggravated: "#bold;N -[entry.MakeScope.Var('typed_bonus_damage_2').GetValue|0]#! [POD_aggravated_box] #weak;italic bonificación [Localize( Concatenate( 'pod_combat_log_typed_class_', entry.MakeScope.Var('typed_bonus_damage_class_2').GetFlagKey ) )]#!"
+ pod_combat_log_typed_bonus_damage_2_partial_soak: "#bold;N -[entry.MakeScope.Var('typed_bonus_damage_2').GetValue|0]#! [POD_superficial_box] #weak;italic bonificación [Localize( Concatenate( 'pod_combat_log_typed_class_', entry.MakeScope.Var('typed_bonus_damage_class_2').GetFlagKey ) )], [entry.MakeScope.Var('typed_bonus_soaked_count_2').GetValue|0] absorbidos#!"
+ pod_combat_log_typed_bonus_damage_2_aggravated_partial_soak: "#bold;N -[entry.MakeScope.Var('typed_bonus_damage_2').GetValue|0]#! [POD_aggravated_box] #weak;italic bonificación [Localize( Concatenate( 'pod_combat_log_typed_class_', entry.MakeScope.Var('typed_bonus_damage_class_2').GetFlagKey ) )], [entry.MakeScope.Var('typed_bonus_soaked_count_2').GetValue|0] absorbidos#!"
+ pod_combat_log_typed_bonus_damage_2_soaked: "#weak;italic bonificación [Localize( Concatenate( 'pod_combat_log_typed_class_', entry.MakeScope.Var('typed_bonus_damage_class_2').GetFlagKey ) )]#! #bold Absorbida#!"
+ pod_combat_log_typed_bonus_damage_2_immune: "#weak;italic bonificación [Localize( Concatenate( 'pod_combat_log_typed_class_', entry.MakeScope.Var('typed_bonus_damage_class_2').GetFlagKey ) )]#! #bold Inmune#!"
+ pod_combat_log_typed_bonus_damage_3: "#bold;N -[entry.MakeScope.Var('typed_bonus_damage_3').GetValue|0]#! [POD_superficial_box] #weak;italic bonificación [Localize( Concatenate( 'pod_combat_log_typed_class_', entry.MakeScope.Var('typed_bonus_damage_class_3').GetFlagKey ) )]#!"
+ pod_combat_log_typed_bonus_damage_3_aggravated: "#bold;N -[entry.MakeScope.Var('typed_bonus_damage_3').GetValue|0]#! [POD_aggravated_box] #weak;italic bonificación [Localize( Concatenate( 'pod_combat_log_typed_class_', entry.MakeScope.Var('typed_bonus_damage_class_3').GetFlagKey ) )]#!"
+ pod_combat_log_typed_bonus_damage_3_partial_soak: "#bold;N -[entry.MakeScope.Var('typed_bonus_damage_3').GetValue|0]#! [POD_superficial_box] #weak;italic bonificación [Localize( Concatenate( 'pod_combat_log_typed_class_', entry.MakeScope.Var('typed_bonus_damage_class_3').GetFlagKey ) )], [entry.MakeScope.Var('typed_bonus_soaked_count_3').GetValue|0] absorbidos#!"
+ pod_combat_log_typed_bonus_damage_3_aggravated_partial_soak: "#bold;N -[entry.MakeScope.Var('typed_bonus_damage_3').GetValue|0]#! [POD_aggravated_box] #weak;italic bonificación [Localize( Concatenate( 'pod_combat_log_typed_class_', entry.MakeScope.Var('typed_bonus_damage_class_3').GetFlagKey ) )], [entry.MakeScope.Var('typed_bonus_soaked_count_3').GetValue|0] absorbidos#!"
+ pod_combat_log_typed_bonus_damage_3_soaked: "#weak;italic bonificación [Localize( Concatenate( 'pod_combat_log_typed_class_', entry.MakeScope.Var('typed_bonus_damage_class_3').GetFlagKey ) )]#! #bold Absorbida#!"
+ pod_combat_log_typed_bonus_damage_3_immune: "#weak;italic bonificación [Localize( Concatenate( 'pod_combat_log_typed_class_', entry.MakeScope.Var('typed_bonus_damage_class_3').GetFlagKey ) )]#! #bold Inmune#!"
+ # retal_agg records the victim's actual wound class, not the armed counter kind.
+ pod_combat_log_retal_rider:            " #bold;N -[entry.MakeScope.Var('retal_damage').GetValue|0]#! [POD_superficial_box] #weak;italic contraataque#!"
+ pod_combat_log_retal_rider_aggravated: " #bold;N -[entry.MakeScope.Var('retal_damage').GetValue|0]#! [POD_aggravated_box] #weak;italic contraataque#!"
+ pod_combat_log_retal_rider_soaked:     " #weak;italic contraataque#! #bold Absorbida#!"
+ pod_combat_log_retal_rider_morale:     " #bold;N -[entry.MakeScope.Var('retal_damage').GetValue|0]#! [pod_combat_morale_icon|E] #weak;italic contraataque#!"
+ # Utility has no primary text; its result is rendered entirely by riders.
+ pod_combat_log_result_text_utility:             ""
+ pod_combat_log_result_text_morale_damage:       "#bold;N -[entry.MakeScope.Var('morale_damage_amount').GetValue|0]#! [pod_combat_morale|E]"
+ pod_combat_log_result_text_hp_healed:           "#bold;P +[entry.MakeScope.Var('heal_amount').GetValue|0]#! [POD_superficial_box]"
+ pod_combat_log_result_text_hp_healed_aggravated: "#bold;P +[entry.MakeScope.Var('heal_amount').GetValue|0]#! [POD_aggravated_box]"
+ pod_combat_log_result_text_morale_healed:       "#bold;P +[entry.MakeScope.Var('morale_heal_amount').GetValue|0]#! [pod_combat_morale|E]"
+ pod_combat_log_result_text_unknown:       "#weak —#!"
+
+ # Avoid literal square brackets in system messages; localization parses them as bindings.
+ pod_combat_log_system_combat_started:        "#italic — Comienza el combate —#!"
+ pod_combat_log_system_combat_ended_victory:  "#bold;P — Fin del combate · Victoria —#!"
+ pod_combat_log_system_combat_ended_defeat:   "#bold;N — Fin del combate · Derrota —#!"
+ # Use the entry's captured round so later turns do not change this row.
+ pod_combat_log_system_round_begins:          "#italic — Comienza la ronda #bold [entry.MakeScope.Var('round').GetValue|0]#! —#!"
+ pod_combat_log_system_unknown:               "#weak —#!"
+
+ # ──────────────────────────────────────────────────────────────────
+ # Result riders. The GUI supplies separators; empty dispatch results use pod_combat_log_blank.
+ pod_combat_log_blank:                  ""
+
+ # Numeric riders read applied amounts from the entry, including capped heals.
+ pod_combat_log_heal_rider:             " #bold;P +[entry.MakeScope.Var('heal_amount').GetValue|0]#! [POD_superficial_box]"
+ pod_combat_log_heal_rider_aggravated:  " #bold;P +[entry.MakeScope.Var('heal_amount').GetValue|0]#! [POD_aggravated_box]"
+ pod_combat_log_morale_damage_rider:    " #bold;N -[entry.MakeScope.Var('morale_damage_amount').GetValue|0]#! [pod_combat_morale|E]"
+ pod_combat_log_morale_heal_rider:      " #bold;P +[entry.MakeScope.Var('morale_heal_amount').GetValue|0]#! [pod_combat_morale|E]"
+
+ # Keep polarity signs outside concept links so their colors remain independent.
+ pod_combat_log_buff_set_guard:          "→ [pod_combat_guard_with_icon|E]"
+ pod_combat_log_buff_dodge:              "→ [pod_combat_dodge_with_icon|E]"
+ pod_combat_log_buff_stealth:            "→ [pod_combat_stealth_with_icon|E]"
+ pod_combat_log_buff_remove_guard:       "[pod_combat_guard_with_icon|E] #weak;italic rota#!"
+ pod_combat_log_buff_soak_buff:          " #bold;P +[move.MakeScope.ScriptValue('pod_combat_move_soak_buff_mag_value')|0]%#! [soak_damage|E]"
+ pod_combat_log_buff_soak_debuff:        " #bold;N -[move.MakeScope.ScriptValue('pod_combat_move_soak_debuff_mag_value')|0]%#! [soak_damage|E]"
+ pod_combat_log_buff_hit_buff:           " #bold;P +[move.MakeScope.ScriptValue('pod_combat_move_hit_buff_mag_value')|0]%#! [pod_combat_hit|E]"
+ pod_combat_log_buff_hit_debuff:         " #bold;N -[move.MakeScope.ScriptValue('pod_combat_move_hit_debuff_mag_value')|0]%#! [pod_combat_hit|E]"
+ # AP gain reads the move; AP drain reads the applied entry amount, including bonuses.
+ # Initiative debuff is a fixed flag, so it has no magnitude.
+ pod_combat_log_buff_ap_gain:            " #bold;P +[move.MakeScope.Var('ap_gain').GetValue|0] PA#!"
+ pod_combat_log_seg_ap_drain:            " #bold;N -[entry.MakeScope.Var('ap_drain').GetValue|0] PA#! #weak;italic siguiente turno#!"
+ pod_combat_log_buff_retaliate:          " → #weak;italic Represalia#!"
+ pod_combat_log_seg_retal_armed_morale:  " → #weak;italic Represalia#!$pod_combat_damage_source_morale$"
+ pod_combat_log_seg_retal_armed_agg:     " → #weak;italic Represalia#! $aggravated$"
+ pod_combat_log_seg_retal_armed_elemental: " → #weak;italic Represalia#! [Localize( Concatenate( 'pod_combat_elemmark_', move.MakeScope.Var('damage_type').GetFlagKey ) )]"
+ pod_combat_log_seg_stun:                " #bold;N 0 PA#! #weak;italic objetivo en su siguiente turno#!"
+ pod_combat_log_seg_recoil:              " #bold;N -[entry.MakeScope.Var('self_damage').GetValue|0]#! $superficial$ #weak;italic retroceso#!"
+ pod_combat_log_buff_initiative_debuff:  " #bold;N -#![pod_combat_init|E] #weak;italic próxima ronda#!"
+ # Energy amounts are already scaled. Use the entry's actor for gains and target for drains,
+ # not the viewer's resource.
+ pod_combat_log_seg_energy_gain:         " #bold;P +[entry.MakeScope.Var('energy_gain').GetValue|0]#! [entry.MakeScope.Var('actor').GetCharacter.Custom('PODEnergySplatIcon')]#V [entry.MakeScope.Var('actor').GetCharacter.Custom('PODEnergySplatWord')]#!"
+ pod_combat_log_seg_energy_drain:        " #bold;N -[entry.MakeScope.Var('energy_drain').GetValue|0]#! [entry.MakeScope.Var('target').GetCharacter.Custom('PODEnergySplatIcon')]#N [entry.MakeScope.Var('target').GetCharacter.Custom('PODEnergySplatWord')]#! #weak;italic drenado#!"
+ pod_combat_log_seg_ap_refund:           " #bold;P +[entry.MakeScope.Var('ap_refund').GetValue|0] PA#! #weak;italic devueltos#!"
+ pod_combat_log_seg_marker:              " #bold;P [GetModifier(move.MakeScope.Var('marker_modifier').GetFlagKey).GetNameWithTooltip]#! #weak;italic aplicado#!"
+ pod_combat_log_seg_marker_removed:      " #bold;N [GetModifier(move.MakeScope.Var('remove_marker').GetFlagKey).GetNameWithTooltip]#! #weak;italic eliminado#!"
+
+ # ──────────────────────────────────────────────────────────────────
+ # Element icons include a leading space to separate them from wound boxes.
+ pod_combat_damage_source_fire:         " [fire_damage_icon]"
+ pod_combat_damage_source_cold:         " [cold_damage_icon]"
+ pod_combat_damage_source_lightning:    " [lightning_damage_icon]"
+ pod_combat_damage_source_sun:          " [sun_damage_icon]"
+ pod_combat_damage_source_silver:       " [silver_damage_icon]"
+ pod_combat_damage_source_gold:         " [gold_damage_icon]"
+ pod_combat_damage_source_holy:         " [holy_damage_icon]"
+ pod_combat_damage_source_balefire:     " [balefire_damage_icon]"
+ pod_combat_damage_source_poison:       " [poison_damage_icon]"
+ pod_combat_damage_source_cold_iron:    " [cold_iron_damage_icon]"
+ pod_combat_damage_source_morale:       " [pod_combat_morale_icon]"
+
+ ###### Actor-to-target text
+ # Self and targetless rows emit no arrow. All other variants include their own separator.
+ pod_combat_log_target_aoe_enemies: "  #F →#! #bold Todos los enemigos#!"
+ pod_combat_log_target_aoe_allies:  "  #F →#! #bold Todos los aliados#!"
+ pod_combat_log_target_aoe_all:     "  #F →#! #bold Todos#!"
+ pod_combat_log_target_aoe_enemies_per_target: "  #F →#! #bold Todos los enemigos#! #weak;italic ([entry.MakeScope.Var('target').GetCharacter.GetFirstNameNoTooltip])#!"
+ pod_combat_log_target_aoe_allies_per_target:  "  #F →#! #bold Todos los aliados#! #weak;italic ([entry.MakeScope.Var('target').GetCharacter.GetFirstNameNoTooltip])#!"
+ pod_combat_log_target_aoe_all_per_target:     "  #F →#! #bold Todos#! #weak;italic ([entry.MakeScope.Var('target').GetCharacter.GetFirstNameNoTooltip])#!"
+ pod_combat_log_target_self:        ""
+ pod_combat_log_target_single:      "  #F →#! #bold [entry.MakeScope.Var('target').GetCharacter.GetFirstNameNoTooltip]#!"
+ pod_combat_log_target_none:        ""
+
+ #### Saved loadout presets ####
+ pod_combat_preset_open: "Guardar Equipamientos de Movimientos"
+ pod_combat_preset_open_tt: "Guarda o carga tu selección actual de movimientos en uno de los cuatro equipamientos preestablecidos."
+ pod_combat_preset_window_title: "Equipamientos de Movimientos Guardados"
+ pod_combat_preset_close: "X"
+ pod_combat_preset_slot_1: "Equipamiento A"
+ pod_combat_preset_slot_2: "Equipamiento B"
+ pod_combat_preset_slot_3: "Equipamiento C"
+ pod_combat_preset_slot_4: "Equipamiento D"
+ # Skill count beside each preset slot. 
+ pod_combat_preset_count_1: "[GetPlayer.MakeScope.ScriptValue('pod_combat_saved_loadout_1_count')|0] movimientos"
+ pod_combat_preset_count_2: "[GetPlayer.MakeScope.ScriptValue('pod_combat_saved_loadout_2_count')|0] movimientos"
+ pod_combat_preset_count_3: "[GetPlayer.MakeScope.ScriptValue('pod_combat_saved_loadout_3_count')|0] movimientos"
+ pod_combat_preset_count_4: "[GetPlayer.MakeScope.ScriptValue('pod_combat_saved_loadout_4_count')|0] movimientos"
+ pod_combat_preset_save: "Guardar"
+ pod_combat_preset_save_tt: "Sobrescribe esta ranura con tu selección actual de movimientos."
+ pod_combat_preset_load: "Cargar"
+ pod_combat_preset_load_tt: "Sustituye tus movimientos actuales por este conjunto guardado. Se omiten los movimientos para los que ya no cumples los requisitos."
+ pod_combat_preset_clear: "Vaciar"
+
+ #### Move sheet (spreadsheet pool view) ####
+ pod_combat_pool_view_detailed_l: "Detallada"
+ pod_combat_pool_view_compact_l: "Compacta"
+ pod_combat_pool_view_sheet_l: "Hoja"
+ pod_combat_pool_view_tt: "Cambia el modo en que se muestran los movimientos. La vista de hoja presenta cada movimiento en una tabla ordenable y filtrable."
+ pod_combat_sheet_h_name: "Movimiento"
+ pod_combat_sheet_h_cat: "Gato"
+ pod_combat_sheet_h_ap: "PA"
+ pod_combat_sheet_h_energy: "[GetPlayer.Custom('PODEnergySplatWord')]"
+ pod_combat_sheet_h_dmg: "Daño"
+ pod_combat_sheet_h_type: "Tipo"
+ pod_combat_sheet_h_heal: "Cura"
+ pod_combat_sheet_h_mor: "Mor"
+ pod_combat_sheet_h_dot: "DcT"
+ pod_combat_sheet_h_apswing: "PA+/-"
+ pod_combat_sheet_h_target: "Objetivo"
+ pod_combat_sheet_h_hit: "Impacto"
+ pod_combat_sheet_h_use: "Uso"
+ pod_combat_sheet_h_fx: "Efec"
+ pod_combat_sheet_sort_tt: "Ordena por esta columna. Haz clic de nuevo para invertir el sentido. Los movimientos sin este atributo se hunden al final."
+ pod_combat_sheet_no_sort_tt: "Las columnas de texto no se pueden ordenar."
+ pod_combat_sheet_h_type_tt: "Clase de daño. Un icono de elemento marca una fuente especial de daño, [POD_aggravated_box] marca un daño siempre agravado, y un guion significa daño superficial corriente o ninguno en absoluto.\n\n#weak Las columnas de texto no se pueden ordenar.#!"
+ pod_combat_sheet_h_use_tt: "Límite de uso. #bold 1/ronda#! es una vez por ronda, #bold 1/comb#! es una vez durante toda la pelea.\n\n#weak Las columnas de texto no se pueden ordenar.#!"
+ pod_combat_sheet_h_apswing_tt: "Variación de Puntos de Acción. #P +N#! te concede PA adicionales este turno, #N -N#! drena los PA del objetivo en su siguiente turno, y #N 0 PA#! significa que un drenaje total hace que el siguiente turno del objetivo empiece en cero. Los movimientos elegibles de 0 PA siguen siendo utilizables.\n\nOrdena por esta columna. Haz clic de nuevo para invertir el sentido. Los movimientos que no alteran los PA se hunden al final."
+ pod_combat_sheet_h_fx_tt: "Añadidos extra que lleva el movimiento:\n[Concept('pod_combat_guard','@pod_combat_guard_icon!')] adopta Guardia   [Concept('pod_combat_dodge','@pod_combat_dodge_icon!')] adopta Esquiva   [Concept('pod_combat_stealth','@pod_combat_stealth_icon!')] adopta Sigilo\n@pod_combat_retaliate_icon! contraataca al ser golpeado o al fallar el atacante\n#N si#! solo se puede usar bajo una condición   #P si+#! efecto extra bajo una condición\n#V CM#! control mental   #V INV#! invoca a un combatiente   #V ARM#! blande tu arma equipada\n\n#weak Pasa el cursor sobre el nombre de un movimiento para ver la lista completa de efectos. Las columnas de texto no se pueden ordenar.#!"
+ pod_combat_sheet_filters_open: "Filtros"
+ pod_combat_sheet_filters_open_tt: "Filtra qué movimientos aparecen en la hoja."
+ pod_combat_sheet_filters_title: "Filtros de la Hoja"
+ pod_combat_sheet_f_cats_l: "Categorías (compartidas con los botones de filtro de la cabecera)"
+ pod_combat_sheet_f_equipped_l: "Solo los equipados"
+ pod_combat_sheet_f_damage_l: "Inflige daño"
+ pod_combat_sheet_f_heal_l: "Cura"
+ pod_combat_sheet_f_energy_l: "Cuesta [GetPlayer.Custom('PODEnergySplatWord')]"
+ pod_combat_sheet_f_agg_l: "Daño agravado"
+ pod_combat_sheet_f_elemental_l: "Daño elemental"
+ pod_combat_sheet_f_elemental_tt: "Cualquier fuente especial de daño: fuego, frío, rayo, sol, plata, oro, sagrado, fuego infernal, veneno o hierro frío."
+ pod_combat_sheet_f_conditional_l: "Tiene una condición"
+ pod_combat_sheet_tgt_single_enemy_l: "Enemigo"
+ pod_combat_sheet_tgt_single_ally_l: "Aliado"
+ pod_combat_sheet_tgt_single_pc_l: "Jugador"
+ pod_combat_sheet_tgt_self_l: "Uno mismo"
+ pod_combat_sheet_tgt_team_enemy_l: "Todos los enemigos"
+ pod_combat_sheet_tgt_team_ally_l: "Todos los aliados"
+ pod_combat_sheet_tgt_team_all_l: "Todos"
+ pod_combat_sheet_reset: "Restablecer"
+ pod_combat_sheet_reset_tt: "Borra los filtros exclusivos de la hoja y devuelve la ordenación a PA, ascendente. Los filtros de categoría, $pod_combat_loadout_show_all$ y $pod_combat_loadout_show_other_splats$ afectan a todo el editor y se quedan como están."
+ pod_combat_sheet_empty: "Ningún movimiento coincide con los filtros actuales."
+ pod_combat_sheet_hit_roll: "tirada"
+ pod_combat_sheet_hit_auto: "auto"
+ pod_combat_sheet_cell_dash: "#weak -#!"
+ pod_combat_sheet_type_agg: "[POD_aggravated_box]"
+ pod_combat_sheet_use_rnd: "#weak 1/ronda#!"
+ pod_combat_sheet_use_cbt: "#weak 1/comb#!"
+ pod_combat_sheet_apswing_gain: "#P +[ROOT.Var('ap_gain').GetValue|0]#!"
+ pod_combat_sheet_apswing_stun: "#N 0 PA#!"
+ pod_combat_sheet_apswing_drain: "#N -[ROOT.Var('ap_drain').GetValue|0]#!"
+ pod_combat_sheet_apswing_drain_cond: "#N -[ROOT.Var('sheet_ap_drain').GetValue|0]#!"
+ # Keep the leading space so condition and MC/SUM markers do not run together.
+ pod_combat_sheet_fx_line: "[story.Custom('PODCombatSheetFxGuard')][story.Custom('PODCombatSheetFxDodge')][story.Custom('PODCombatSheetFxStealth')][story.Custom('PODCombatSheetFxCounter')][story.Custom('PODCombatSheetFxCond')][story.Custom('PODCombatSheetFxMisc')][story.Custom('PODCombatSheetFxWeapon')]"
+ pod_combat_sheet_fx_guard: "[Concept('pod_combat_guard','@pod_combat_guard_icon!')]"
+ pod_combat_sheet_fx_dodge: "[Concept('pod_combat_dodge','@pod_combat_dodge_icon!')]"
+ pod_combat_sheet_fx_stealth: "[Concept('pod_combat_stealth','@pod_combat_stealth_icon!')]"
+ pod_combat_sheet_fx_counter: "@pod_combat_retaliate_icon!"
+ pod_combat_sheet_fx_cond_gate: "#N si#!"
+ pod_combat_sheet_fx_cond_bonus: "#P si+#!"
+ pod_combat_sheet_fx_cond_both: "#N si#! #P si+#!"
+ pod_combat_sheet_fx_mc: " #V CM#!"
+ pod_combat_sheet_fx_summon: " #V INV#!"
+ pod_combat_sheet_fx_weapon: " #V ARM#!"
+ pod_combat_sheet_fx_marker: " #V MRC#!"
+ pod_combat_sheet_mor_dmg: "[ROOT.ScriptValue('pod_combat_sheet_morale_cell_value')|0]"
+ pod_combat_sheet_mor_heal: "#P +[ROOT.Var('morale_heal').GetValue|0]#!"
+ pod_combat_sheet_mor_both: "[ROOT.ScriptValue('pod_combat_sheet_morale_cell_value')|0]#weak /#!#P +[ROOT.Var('morale_heal').GetValue|0]#!"
+ pod_combat_sheet_energy_cost: "[Multiply_CFixedPoint( ROOT.ScriptValue('pod_combat_sheet_energy_cell_value'), GetPlayer.MakeScope.ScriptValue('pod_combat_energy_cost_display_multiplier') )|0]"
+ pod_combat_sheet_energy_gain: "#P +[Multiply_CFixedPoint( ROOT.Var('energy_gain').GetValue, GetPlayer.MakeScope.ScriptValue('splat_energy_multiplier') )|0]#!"
+ pod_combat_sheet_energy_both: "[Multiply_CFixedPoint( ROOT.ScriptValue('pod_combat_sheet_energy_cell_value'), GetPlayer.MakeScope.ScriptValue('pod_combat_energy_cost_display_multiplier') )|0]#weak /#!#P +[Multiply_CFixedPoint( ROOT.Var('energy_gain').GetValue, GetPlayer.MakeScope.ScriptValue('splat_energy_multiplier') )|0]#!"
+ pod_combat_sheet_heal_agg: "[ROOT.ScriptValue('pod_combat_sheet_heal_cell_value')|0][POD_aggravated_box]"
+ pod_combat_sheet_heal_plain: "[ROOT.ScriptValue('pod_combat_sheet_heal_cell_value')|0]"
+ #### To-the-death duel aftermath (pod_combat.9990) ####
+ pod_combat_death_duel_toast: "[sc_victor.GetFirstNameNoTooltip] ha matado a [sc_loser.GetFirstNameNoTooltip]"
+ pod_combat_sheet_name_atk: "#color_red;bold [ROOT.Var('decision').DecisionType.GetTitleForPlayer]#!"
+ pod_combat_sheet_name_def: "#color_light_blue;bold [ROOT.Var('decision').DecisionType.GetTitleForPlayer]#!"
+ pod_combat_sheet_name_ctl: "#color_porple;bold [ROOT.Var('decision').DecisionType.GetTitleForPlayer]#!"
+ pod_combat_sheet_name_pwr: "#color_pwr_orange;bold [ROOT.Var('decision').DecisionType.GetTitleForPlayer]#!"
+ pod_combat_sheet_cat_atk: "#color_red;bold ATQ#!"
+ pod_combat_sheet_cat_def: "#color_light_blue;bold DEF#!"
+ pod_combat_sheet_cat_ctl: "#color_porple;bold CTL#!"
+ pod_combat_sheet_cat_pwr: "#color_pwr_orange;bold PDR#!"
+ pod_combat_sheet_cat_total: "TOTAL"
+ #### Compact-card feature line (PODCombatCL* segments) ####
+ pod_combat_compact_ap_cost: "#bold;V [Scope.Story.MakeScope.Var('ap_cost').GetValue|0] #weak PA#!#!"
+ pod_combat_compact_line: "[story.Custom('PODCombatCLDamage')][story.Custom('PODCombatCLSource')][story.Custom('PODCombatCLAutoHit')][story.Custom('PODCombatCLWeapon')][story.Custom('PODCombatCLHeal')][story.Custom('PODCombatCLDrain')][story.Custom('PODCombatCLSelfDamage')][story.Custom('PODCombatCLMoraleDamage')][story.Custom('PODCombatCLMoraleHeal')][story.Custom('PODCombatCLEnergyGain')][story.Custom('PODCombatCLDot')][story.Custom('PODCombatCLStance')][story.Custom('PODCombatCLStripGuard')][story.Custom('PODCombatCLStripDodge')][story.Custom('PODCombatCLStripStealth')][story.Custom('PODCombatCLHitBuff')][story.Custom('PODCombatCLHitDebuff')][story.Custom('PODCombatCLSoakBuff')][story.Custom('PODCombatCLSoakDebuff')][story.Custom('PODCombatCLApGain')][story.Custom('PODCombatCLApDrain')][story.Custom('PODCombatCLRetaliate')][story.Custom('PODCombatCLGold')][story.Custom('PODCombatCLStress')][story.Custom('PODCombatCLPrestige')][story.Custom('PODCombatCLPiety')][story.Custom('PODCombatCLStealGold')][story.Custom('PODCombatCLDread')][story.Custom('PODCombatCLOncePer')][story.Custom('PODCombatCLCond')][story.Custom('PODCombatCLMisc')]"
+ pod_combat_cl_damage_agg: "  #weak Inflige#! #bold;N [ROOT.Var('hp_damage').GetValue|0]#![POD_aggravated_box]"
+ pod_combat_cl_damage: "  #weak Inflige#! #bold;N [ROOT.Var('hp_damage').GetValue|0]#![POD_superficial_box]"
+ pod_combat_cl_damage_plain: "  #weak Inflige#! #bold;N [ROOT.Var('hp_damage').GetValue|0]#!"
+ pod_combat_cl_auto: "  #weak;italic impacto automático#!"
+ pod_combat_cl_weapon: "  #weak;italic arma#!"
+ pod_combat_cl_heal_agg: "  #weak Cura#! #bold;P +[ROOT.Var('hp_heal').GetValue|0]#![POD_aggravated_box]"
+ pod_combat_cl_heal: "  #weak Cura#! #bold;P +[ROOT.Var('hp_heal').GetValue|0]#![POD_superficial_box]"
+ pod_combat_cl_drain: "  #weak;italic solo después de que el Daño a la salud supere el Absorber#!"
+ pod_combat_cl_self: "  #bold;N -[ROOT.Var('self_damage').GetValue|0]#! #weak de autodaño#!"
+ pod_combat_cl_self_on_hp_damage: "  #bold;N -[ROOT.Var('self_damage').GetValue|0]#! #weak de autodaño tras el Daño a la salud posterior a Absorber#!"
+ pod_combat_cl_self_on_contact: "  #bold;N -[ROOT.Var('self_damage').GetValue|0]#! #weak de autodaño al hacer contacto#!"
+ pod_combat_cl_self_on_miss: "  #bold;N -[ROOT.Var('self_damage').GetValue|0]#! #weak de autodaño al fallar o ser evadido#!"
+ pod_combat_cl_mor_dmg: "  #bold;N -[ROOT.Var('morale_damage').GetValue|0]#! [pod_combat_morale|E]"
+ pod_combat_cl_mor_dmg_on_hp_damage: "  #bold;N -[ROOT.Var('morale_damage').GetValue|0]#! [pod_combat_morale|E] #weak tras el Daño a la salud posterior a Absorber#!"
+ pod_combat_cl_mor_dmg_on_contact: "  #bold;N -[ROOT.Var('morale_damage').GetValue|0]#! [pod_combat_morale|E] #weak al hacer contacto#!"
+ pod_combat_cl_mor_dmg_on_miss: "  #bold;N -[ROOT.Var('morale_damage').GetValue|0]#! [pod_combat_morale|E] #weak al fallar o ser evadido#!"
+ pod_combat_cl_mor_heal: "  #bold;P +[ROOT.Var('morale_heal').GetValue|0]#! [pod_combat_morale|E]"
+ pod_combat_cl_energy_gain: "  #bold;P +[Multiply_CFixedPoint( ROOT.Var('energy_gain').GetValue, GetPlayer.MakeScope.ScriptValue('splat_energy_multiplier') )|0]#! [GetPlayer.Custom('PODEnergySplatIcon')]"
+ pod_combat_cl_dot_mor: "  #weak Daño con el tiempo#! #bold;N [ROOT.Var('dot_amount').GetValue|0]x[ROOT.Var('dot_rounds').GetValue|0]#!@pod_combat_dot_icon! [pod_combat_morale|E]"
+ pod_combat_cl_dot_agg: "  #weak Daño con el tiempo#! #bold;N [ROOT.Var('dot_amount').GetValue|0]x[ROOT.Var('dot_rounds').GetValue|0]#!@pod_combat_dot_icon! $aggravated$ de salud"
+ pod_combat_cl_dot_hp: "  #weak Daño con el tiempo#! #bold;N [ROOT.Var('dot_amount').GetValue|0]x[ROOT.Var('dot_rounds').GetValue|0]#!@pod_combat_dot_icon! de salud"
+ pod_combat_cl_dot: "  #weak Daño con el tiempo#! #bold;N [ROOT.Var('dot_amount').GetValue|0]x[ROOT.Var('dot_rounds').GetValue|0]#!@pod_combat_dot_icon! $superficial$ de salud"
+ pod_combat_cl_st_guard: "  #weak Adoptar#! [pod_combat_guard_with_icon|E]"
+ pod_combat_cl_st_dodge: "  #weak Adoptar#! [pod_combat_dodge_with_icon|E]"
+ pod_combat_cl_st_stealth: "  #weak Adoptar#! [pod_combat_stealth_with_icon|E]"
+ pod_combat_cl_strip_guard: "  #weak Romper#! [pod_combat_guard_with_icon|E]"
+ pod_combat_cl_strip_dodge: "  #weak Romper#! [pod_combat_dodge_with_icon|E]"
+ pod_combat_cl_strip_stealth: "  #weak Romper#! [pod_combat_stealth_with_icon|E]"
+ pod_combat_cl_hit_buff_rnd: "  #bold;P +[ROOT.ScriptValue('pod_combat_move_hit_buff_mag_value')|0]%#! [pod_combat_hit|E] #weak;italic hasta que empiece el siguiente turno del portador#!"
+ pod_combat_cl_hit_buff_cbt: "  #bold;P +[ROOT.ScriptValue('pod_combat_move_hit_buff_mag_value')|0]%#! [pod_combat_hit|E] #weak;italic combate#!"
+ pod_combat_cl_hit_debuff_rnd: "  #bold;N -[ROOT.ScriptValue('pod_combat_move_hit_debuff_mag_value')|0]%#! [pod_combat_hit|E] #weak;italic durante el siguiente turno del portador#!"
+ pod_combat_cl_hit_debuff_cbt: "  #bold;N -[ROOT.ScriptValue('pod_combat_move_hit_debuff_mag_value')|0]%#! [pod_combat_hit|E] #weak;italic combate#!"
+ pod_combat_cl_soak_buff_rnd: "  #bold;P +[ROOT.ScriptValue('pod_combat_move_soak_buff_mag_value')|0]%#! [soak_damage|E] #weak;italic hasta que empiece el siguiente turno del portador#!"
+ pod_combat_cl_soak_buff_cbt: "  #bold;P +[ROOT.ScriptValue('pod_combat_move_soak_buff_mag_value')|0]%#! [soak_damage|E] #weak;italic combate#!"
+ pod_combat_cl_soak_debuff_rnd: "  #bold;N -[ROOT.ScriptValue('pod_combat_move_soak_debuff_mag_value')|0]%#! [soak_damage|E] #weak;italic durante el siguiente turno del portador#!"
+ pod_combat_cl_soak_debuff_cbt: "  #bold;N -[ROOT.ScriptValue('pod_combat_move_soak_debuff_mag_value')|0]%#! [soak_damage|E] #weak;italic combate#!"
+ pod_combat_cl_ap_gain: "  #weak Obtén#! #bold;P +[ROOT.Var('ap_gain').GetValue|0] PA#!"
+ pod_combat_cl_stun: "  #bold;N 0 PA#! #weak;italic objetivo en su siguiente turno#!"
+ pod_combat_cl_ap_drain: "  #bold;N -[ROOT.Var('ap_drain').GetValue|0] PA#! #weak;italic siguiente turno#!"
+ pod_combat_cl_ap_drain_cond: "  #bold;N -[ROOT.Var('sheet_ap_drain').GetValue|0] PA#! #weak;italic siguiente turno#!"
+ pod_combat_cl_energy: "[GetPlayer.Custom('PODEnergySplatIcon')]#bold;V [Multiply_CFixedPoint( ROOT.Var('energy_cost').GetValue, GetPlayer.MakeScope.ScriptValue('pod_combat_energy_cost_display_multiplier') )|0]#!"
+ pod_combat_cl_gold_cost: "  @gold_icon!#bold;V [ROOT.Var('gold_cost').GetValue|0]#! #weak de oro#!"
+ pod_combat_cl_stress_cost: "  @stress_icon!#bold;V [ROOT.Var('stress_cost').GetValue|0]#! #weak de estrés#!"
+ pod_combat_cl_prestige_cost: "  @prestige_icon!#bold;V [ROOT.Var('prestige_cost').GetValue|0]#! #weak de prestigio#!"
+ pod_combat_cl_piety_cost: "  @piety_icon!#bold;V [ROOT.Var('piety_cost').GetValue|0]#! #weak de piedad#!"
+ pod_combat_cl_steal: "  #weak Roba#! #bold;P [ROOT.Var('steal_gold').GetValue|0]#!@gold_icon!"
+ pod_combat_cl_dread: "  #bold;P +[ROOT.Var('gain_dread').GetValue|0]#! #weak de temor#!"
+ pod_combat_cl_counter_own_hit: "  #weak Contraataque#! #bold;N [ROOT.Var('retaliate_damage').GetValue|0]#! #weak;italic al ser golpeado#!"
+ pod_combat_cl_counter_own_miss: "  #weak Contraataque#! #bold;N [ROOT.Var('retaliate_damage').GetValue|0]#! #weak;italic cuando el ataque falla#!"
+ pod_combat_cl_counter_reuse_hit: "  #weak Contraataque#! #bold;N [ROOT.Var('hp_damage').GetValue|0]#! #weak;italic al ser golpeado#!"
+ pod_combat_cl_counter_reuse_miss: "  #weak Contraataque#! #bold;N [ROOT.Var('hp_damage').GetValue|0]#! #weak;italic cuando el ataque falla#!"
+ pod_combat_cl_counter_bare_hit: "  #weak;italic contraataque al ser golpeado#!"
+ pod_combat_cl_counter_bare_miss: "  #weak;italic contraataque cuando el ataque falla#!"
+ pod_combat_cl_counter_own_any: "  #weak Contraataque#! #bold;N [ROOT.Var('retaliate_damage').GetValue|0]#! #weak;italic al ser atacado#!"
+ pod_combat_cl_counter_reuse_any: "  #weak Contraataque#! #bold;N [ROOT.Var('hp_damage').GetValue|0]#! #weak;italic al ser atacado#!"
+ pod_combat_cl_counter_bare_any: "  #weak;italic contraataque al ser atacado#!"
+ pod_combat_cl_once_rnd: "  #weak;italic una vez por ronda#!"
+ pod_combat_cl_once_cbt: "  #weak;italic una vez por combate#!"
+ pod_combat_cl_cond_gate: "  #weak;italic solo si...#!"
+ pod_combat_cl_cond_bonus: "  #weak;italic bonificación si...#!"
+ pod_combat_cl_cond_both: "  #weak;italic solo si... y bonificación si...#!"
+ pod_combat_cl_mc: "  #weak;italic control mental#!"
+ pod_combat_cl_summon: "  #weak;italic invocación#!"
+ pod_combat_cl_marker: "  #weak;italic marca#!"
+
+ # Aggravated and immunity customizable localization share these marks; the parent row supplies color.
+ # Keep icon and name together, with a trailing space between marks.
+ pod_combat_suscmark_fire:  "[fire_damage_icon]Fuego "
+ pod_combat_suscmark_cold:  "[cold_damage_icon]Frío "
+ pod_combat_suscmark_lightning:  "[lightning_damage_icon]Rayo "
+ pod_combat_suscmark_sun:  "[sun_damage_icon]Sol "
+ pod_combat_suscmark_silver:  "[silver_damage_icon]Plata "
+ pod_combat_suscmark_gold:  "[gold_damage_icon]Oro "
+ pod_combat_suscmark_holy:  "[holy_damage_icon]Sagrado "
+ pod_combat_suscmark_balefire:  "[balefire_damage_icon]Fuego Infernal "
+ pod_combat_suscmark_poison:  "[poison_damage_icon]Veneno "
+ pod_combat_suscmark_cold_iron:  "[cold_iron_damage_icon]Hierro Frío "
+ # Localization rows require subject. Add each new damage type to both rows.
+ pod_combat_susc_agg_row: "[Concept('POD_aggravated_damage','Aggravated')|E]: #N [subject.Custom('PODCombatSuscAgg_fire')][subject.Custom('PODCombatSuscAgg_cold')][subject.Custom('PODCombatSuscAgg_lightning')][subject.Custom('PODCombatSuscAgg_sun')][subject.Custom('PODCombatSuscAgg_silver')][subject.Custom('PODCombatSuscAgg_gold')][subject.Custom('PODCombatSuscAgg_holy')][subject.Custom('PODCombatSuscAgg_balefire')][subject.Custom('PODCombatSuscAgg_poison')][subject.Custom('PODCombatSuscAgg_cold_iron')]#!"
+ pod_combat_susc_imm_row: "[Concept('POD_damage_immunity','Immune')|E]: #weak [subject.Custom('PODCombatSuscImm_fire')][subject.Custom('PODCombatSuscImm_cold')][subject.Custom('PODCombatSuscImm_lightning')][subject.Custom('PODCombatSuscImm_sun')][subject.Custom('PODCombatSuscImm_silver')][subject.Custom('PODCombatSuscImm_gold')][subject.Custom('PODCombatSuscImm_holy')][subject.Custom('PODCombatSuscImm_balefire')][subject.Custom('PODCombatSuscImm_poison')][subject.Custom('PODCombatSuscImm_cold_iron')]#!"
+
+ ###### WEAPON ARTIFACT OVERRIDES ######
+ # Weapon override segments each include a leading line break. Append the block at
+ # widget level: artifact description localization has no Artifact datacontext.
+ pod_weapon_ovr_retype_fire: "\nLos golpes con el arma infligen daño de Fuego $pod_combat_elemmark_fire$"
+ pod_weapon_ovr_retype_cold: "\nLos golpes con el arma infligen daño de Frío $pod_combat_elemmark_cold$"
+ pod_weapon_ovr_retype_lightning: "\nLos golpes con el arma infligen daño de Rayo $pod_combat_elemmark_lightning$"
+ pod_weapon_ovr_retype_sun: "\nLos golpes con el arma infligen daño de Sol $pod_combat_elemmark_sun$"
+ pod_weapon_ovr_retype_silver: "\nLos golpes con el arma infligen daño de Plata $pod_combat_elemmark_silver$"
+ pod_weapon_ovr_retype_gold: "\nLos golpes con el arma infligen daño de Oro $pod_combat_elemmark_gold$"
+ pod_weapon_ovr_retype_holy: "\nLos golpes con el arma infligen daño Sagrado $pod_combat_elemmark_holy$"
+ pod_weapon_ovr_retype_balefire: "\nLos golpes con el arma infligen daño de Fuego Infernal $pod_combat_elemmark_balefire$"
+ pod_weapon_ovr_retype_poison: "\nLos golpes con el arma infligen daño de Veneno $pod_combat_elemmark_poison$"
+ pod_weapon_ovr_retype_cold_iron: "\nLos golpes con el arma infligen daño de Hierro Frío $pod_combat_elemmark_cold_iron$"
+ pod_weapon_ovr_bonus:   "\nLos golpes con el arma infligen #P +[ROOT.Var('artifact_weapon_bonus_damage').GetValue|V0]#! de daño"
+ pod_weapon_ovr_undodge: "\nLos golpes con el arma no pueden esquivarse"
+ pod_weapon_ovr_agg:     "\nLos golpes con el arma infligen [POD_aggravated_damage|E]"
+ pod_weapon_ovr_blade_kings: "\nLos golpes con el arma infligen [POD_aggravated_damage|E] a los enemigos cuya [prowess|E] sea igual o inferior al [artifact_power_with_icon|E] de esta hoja, de #P [ROOT.Var('artifact_power').GetValue|V0]#!"
+ pod_weapon_ovr_aggvs_vampire: "\nLos golpes con el arma infligen [POD_aggravated_damage|E] a $POD_splat_vampire_plural$ y $POD_splat_abomination_plural$"
+ pod_weapon_ovr_aggvs_werewolf: "\nLos golpes con el arma infligen [POD_aggravated_damage|E] a $POD_splat_werewolf_plural$"
+ pod_weapon_ovr_aggvs_demon: "\nLos golpes con el arma infligen [POD_aggravated_damage|E] a $POD_splat_demon_plural$"
+ pod_weapon_ovr_aggvs_fera: "\nLos golpes con el arma infligen [POD_aggravated_damage|E] a $glossary_fera$"
+ pod_weapon_ovr_aggvs_wyrm_tainted: "\nLos golpes con el arma infligen [POD_aggravated_damage|E] a los siervos del $glossary_wyrm$"
+ pod_weapon_ovr_aggvs_except_werewolf: "\nLos golpes con el arma infligen [POD_aggravated_damage|E] a todo salvo a $POD_splat_werewolf_plural$"
+ pod_weapon_ovr_lifesteal: "\nLos golpes con el arma restauran #P +[ROOT.Var('artifact_weapon_heal_on_damage').GetValue|V0]#! de salud cuando hacen sangre"
+ pod_weapon_ovr_energy:  "\nLos golpes con el arma restauran #P +[Multiply_CFixedPoint( ROOT.Var('artifact_weapon_energy_on_damage').GetValue, GetPlayer.MakeScope.ScriptValue('splat_energy_multiplier') )|V0]#! [GetPlayer.Custom('PODEnergySplatIcon')]#V [GetPlayer.Custom('PODEnergySplatWord')]#! cuando hacen sangre"
+ pod_weapon_ovr_soakpen: "\nLos golpes con el arma destrozan #P [ROOT.Var('artifact_weapon_soak_penalty').GetValue|V0]#! puntos de absorción"
+ pod_weapon_ovr_line:    "[pod_weapon.Custom('PODWeaponOvrRetype')][pod_weapon.Custom('PODWeaponOvrBonus')][pod_weapon.Custom('PODWeaponOvrUndodge')][pod_weapon.Custom('PODWeaponOvrAgg')][pod_weapon.Custom('PODWeaponOvrBladeKings')][pod_weapon.Custom('PODWeaponOvrAggVsVampire')][pod_weapon.Custom('PODWeaponOvrAggVsWerewolf')][pod_weapon.Custom('PODWeaponOvrAggVsDemon')][pod_weapon.Custom('PODWeaponOvrAggVsFera')][pod_weapon.Custom('PODWeaponOvrAggVsWyrmTainted')][pod_weapon.Custom('PODWeaponOvrAggExceptWerewolf')][pod_weapon.Custom('PODWeaponOvrLifesteal')][pod_weapon.Custom('PODWeaponOvrEnergy')][pod_weapon.Custom('PODWeaponOvrSoakPen')]"
+ pod_weapon_ovr_header: "#bold Al empuñarla:#!"
+ pod_weapon_ovr_footer: "\n\n"
+ pod_weapon_ovr_artifact_block: "[pod_weapon.Custom('PODWeaponOvrHeader')]$pod_weapon_ovr_line$[pod_weapon.Custom('PODWeaponOvrFooter')]"
+ pod_artifact_desc_and_weapon_override: "[PODWeaponOverrideSelfText][Artifact.GetDesc]"

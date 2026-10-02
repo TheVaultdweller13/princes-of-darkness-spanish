@@ -1,4 +1,5 @@
 ﻿l_spanish:
+ POD_splat_garou: "#TOOLTIP:GAME_TRAIT,werewolf,[GetNullCharacter] #L Garou#!#!"
 
  # Archivo para localización común de Fera
 
@@ -90,6 +91,7 @@
  POD_gnosis_regen_artifacts: "De [artifacts|E]"
  POD_gnosis_regen_modifiers: "De [modifiers|E]"
  POD_gnosis_regen_spirit_ties: "[GetPerk('fomori_spirit_ties_perk').GetName(GetPlayer)]"
+ POD_gnosis_regen_primal_song: "[GetPerk('primal_song_perk').GetName(GetPlayer)]"
  POD_gnosis_regen_thousand_cranes: "[GetPerk('dream_of_a_thousand_cranes_perk').GetName(GetPlayer)]"
  POD_gnosis_regen_sleep_of_the_dragon: "[GetPerk('sleep_of_the_dragon_perk').GetName(GetPlayer)]"
  POD_gnosis_regen_fools_luck: "[GetPerk('fools_luck').GetName(GetPlayer)]"
@@ -104,3 +106,4 @@
 
  POD_fera_remove_pack_totem_tooltip: "#warning Tu espíritu de [pack_totem|E] te abandona.#!#"
  POD_fera_remove_planetary_gifts_effect_tooltip: "#warning Los Incarna Planetarios retiran todos sus [planetarygifts_lifestyle|E].#!#"
+ POD_fera_coterie_has_wyrm_totem_tooltip: "Tu [GetPlayer.Custom('PODCoterie')] debe tener un [pack_totem|E] del $glossary_wyrm$"

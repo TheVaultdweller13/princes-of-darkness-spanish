@@ -1,0 +1,92 @@
+﻿l_spanish:
+
+ # A Curious Investigation - 0205
+ POD_asakku.0205.t: "Una curiosa investigación"
+ POD_asakku.0205.desc: "Tu maestro de espías te trae noticia de un forastero que hace preguntas en las cortes cercanas a Bakú. Preguntas concretas. De las que solo haría quien sabe qué buscar. Ha estado preguntando por la [GetTrait('vicissitude').GetName(GetNullCharacter)]."
+ POD_asakku.0205.a: "Encontrarlo."
+ POD_asakku.0205.b: "Organizar un accidente."
+ POD_asakku_reveal_elioud_tt: "Se revelarán la identidad y el paradero del Elioud más cercano."
+ POD_asakku_assassinate_elioud_tt: "Puedes iniciar una conjura contra el Elioud más cercano."
+
+ # The Phalanx - Warning (0210)
+ POD_asakku.0210.t: "La Falange: advertencia"
+ POD_asakku.0210.desc: "Vienen en número. No un asesino, sino un equipo. Tu maestro de espías cuenta al menos tres, que se mueven juntos con la disciplina de quien lleva toda la vida haciendo este trabajo. Saben dónde está tu refugio y, lo que es más importante, saben lo que eres. Entre tus informantes surge un nombre: un cazador [GetTrait('POD_asakku_elioud').GetName(GetNullCharacter)] que tu red ya había señalado.\n\nPaciente. Metódico. Peligroso."
+ POD_asakku.0210.a: "Prepararse para ellos."
+
+ # The Phalanx - Assault (0211)
+ POD_asakku.0211.t: "La Falange: el asalto"
+ POD_asakku.0211.desc: "Golpean el refugio en la hora previa al alba. El cazador [GetTrait('POD_asakku_elioud').GetName(GetNullCharacter)] va al frente, con la marca de quien cree en lo que hace. Los demás guardan las salidas.\n\nTienes unos segundos para decidir cómo afrontarlo."
+ POD_asakku.0211.a: "Recibirlos con todo lo que tienes. #weak (Destreza)#!"
+ POD_asakku.0211.a.success: "Su líder cede primero. Los demás se dispersan. Te yergues entre los restos de tu propio refugio y sientes, extrañamente, algo parecido a la satisfacción, aunque ya no estás seguro de que sea tuya."
+ POD_asakku.0211.a.success.desc: "Su líder cede. Los demás se dispersan"
+ POD_asakku.0211.a.wounded: "Los haces retroceder, pero el cazador saca sangre antes de retirarse. Volverán. Esta noche, sin embargo, sobreviviste."
+ POD_asakku.0211.a.wounded.desc: "Los haces retroceder"
+ POD_asakku.0211.a.grave: "Casi te atrapan. El cazador Elioud se marcha con algo que mostrar por su esfuerzo. Estás vivo, pero el precio fue severo."
+ POD_asakku.0211.a.grave.desc: "Casi te atrapan"
+ POD_asakku.0211.b: "Usar la red contra ellos. #weak (Intriga)#!"
+ POD_asakku.0211.b.success: "Filtras información falsa a través de los infectados, atraes a los kamut al refugio equivocado y desapareces antes de que se den cuenta. Para cuando se reagrupan, estás a tres calles de distancia, viéndolos explicarse unos a otros qué salió mal."
+ POD_asakku.0211.b.success.desc: "El engaño surte efecto"
+ POD_asakku.0211.b.failure: "El engaño se derrumba. El cazador ya ha visto esto antes, o algo parecido. Escapas, pero por muy poco, y ahora saben exactamente cómo piensas."
+ POD_asakku.0211.b.failure.desc: "El engaño se derrumba"
+ POD_asakku.0211.c: "Desaparecer. Que no encuentren nada. #weak (Huir)#!"
+ POD_asakku_phalanx_vanish_tt: "Abandonas el refugio y desapareces. Sobrevivirás, pero los Elioud sabrán que huiste y la conexión con los Asakku se deshilacha bajo el peso del miedo. Pierdes 5 de Profundidad y obtienes el modificador Acosado."
+
+ # The Phalanx - Aftermath (0212)
+ POD_asakku.0212.t: "La Falange: secuelas"
+ POD_asakku.0212.desc.fight_clean: "La Falange vino. Sobreviviste. Te sientas e intentas aprender de lo sucedido. Sabían qué buscaban. Tenían nombres para ello, protocolos, años de práctica en identificar aquello que cabalga en la sangre de otros. Vinieron a por ti en concreto, y fueron competentes, pero aun así perdieron.\n\nUno de ellos, agonizante, te miró sin odio. No sin miedo, pero con algo más parecido al agotamiento. Para ellos esto era trabajo. Trabajo necesario. La pregunta, cuando llegó, no fue una acusación.\n\n«¿Sigues siendo tú ahí dentro?»\n\nNo respondiste. Temes lo que habría sido la respuesta."
+ POD_asakku.0212.desc.fight_wounded: "La Falange vino. La hiciste retroceder. Te sientas a solas con lo que te costó la noche. Sabían qué buscaban. Tenían nombres para ello, protocolos, años de práctica. Sacaron sangre antes de retirarse, y pasaste las horas previas al alba evaluando el daño, preguntándote qué se perdió, qué sanaría y qué quizá no.\n\nA la entidad que llevas dentro nada de eso la inquietó. Quizá estaba convencida de tu victoria final. O quizá no le importaba."
+ POD_asakku.0212.desc.fight_grave: "La Falange vino. Sobreviviste por los pelos. Te sientas, y te desligas poco a poco de la tempestad para calibrar qué ocurrió de verdad. Sabían qué buscaban. Tenían nombres para ello, protocolos, años de práctica. Casi te atraparon.\n\nEn los momentos previos a que la marea cambiara hubo un lapso que no puedes explicar. Un vacío en el que algo más manejaba el cuerpo que llamas tuyo. Estás vivo. No estás del todo seguro de a cuál de los dos agradecérselo. Quizá deberías preocuparte por esto más de lo que acabas haciéndolo."
+ POD_asakku.0212.desc.outmaneuvered: "La Falange vino. Sobreviviste, y más que sobrevivir. Te sientas y te preguntas qué reveló la noche sobre ellos y, sobre todo, sobre ti. Sabían qué buscaban. Vinieron a por ti en concreto, con nombres, protocolos y años de práctica.\n\nLes filtraste información falsa a través de los infectados. Atacaron el refugio equivocado, no hallaron nada y pasaron buena parte de una hora intentando comprender qué había salido mal. Sentiste cómo la atención de la entidad se afilaba junto con la tuya, sin dirigirte, pero observando. Interesada.\n\nTambién crees que los resultados te complacieron. ¿O fue a ella a quien complacieron? Te preguntas dónde se traza hoy la línea, si es que aún existe."
+ POD_asakku.0212.desc.intrigue_failed: "La Falange vino. Sobreviviste, pero no como pretendías. Te sientas, con tu escapada por los pelos al fin terminada, que te da tiempo de (mentalmente) respirar. Sabían qué buscaban. Tenían nombres para ello, protocolos, años de práctica. Esta noche añadieron algo nuevo a esa lista: tu manera de pensar.\n\nEl engaño se derrumbó más deprisa de lo debido. Escapaste, pero por muy poco, y cuando abandonaste el refugio comprendiste qué había cambiado. Ahora saben cómo piensas. Saben cómo se mueve la entidad a través de ti, cómo usa tus conexiones, cómo encauza la información. Ese saber no caduca. Lo usarán."
+ POD_asakku.0212.desc.fled: "La Falange vino. Sobreviviste a un precio cuya cuenta aún no ha terminado. Te sientas con lo que se fue y los recuerdos de los sucesos de esta noche. Sabían qué buscaban. Tenían nombres para ello, protocolos, años de práctica en identificar aquello que cabalga en la sangre de otros. Esta noche no les diste nada que encontrar.\n\nAbandonaste el refugio y te moviste deprisa, sin sentimentalismos, sin mirar atrás. La voz de tu sangre guardó silencio todo el tiempo. Ni aprobaba la decisión ni se oponía a ella. Presente, sencillamente, como lo está una marea. Paciente de un modo que nada tiene que ver con el perdón. Para alguien que quizá presenció el comienzo de todas las cosas, tu mezquina «inmortalidad» es una gota en un océano."
+ POD_asakku.0212.a: "Sigo siendo yo. En su mayor parte."
+ POD_asakku.0212.b: "Ganamos. Aún estoy decidiendo si esa es la palabra adecuada."
+ POD_asakku.0212.c: "Ahora saben cómo pienso. Ella también."
+ POD_asakku.0212.d: "Tomé la decisión correcta."
+
+ # Eastern Shadows (0215)
+ POD_asakku.0215.t: "Sombras orientales"
+ POD_asakku.0215.desc.base: "Los dominios occidentales están quebrados. Los kamut que te dieron caza por toda la cristiandad han sido silenciados. Pero la entidad que llevas dentro no descansa y no te permite el consuelo de creer que la obra ha concluido. Queda el este, donde todo empezó. El escriba traidor que una vez te detuvo, la tradición de Yamadanda no murió con él. Fue heredada, refinada, afilada por manos que nunca conocieron al herrero original pero comprendían el propósito de la hoja.\n\nDos nombres emergen de la información que lleva tu sangre. Figuras que operan en los confines orientales de la Mano Verdadera, cada una peligrosa de un modo en que no lo fueron los cazadores occidentales. Los Elioud occidentales eran soldados. Estos son otra cosa. Saben que son el último muro ante algo terrible, quizá aún más terrible que la Gehena.\n\nAnte ti."
+ POD_asakku.0215.desc.mokhadaji: "\n\nEl primero es Mokhadaji Ranpur. Un príncipe Nagaraja de las estribaciones de Bengala que ha pasado dos siglos compilando expedientes sobre los corrompidos. Donde los Elioud occidentales golpeaban con hierro y fuego, Mokhadaji trabaja con tinta y paciencia. Cataloga. Coteja. Traza el mapa de tu infección a través de cortes y líneas de sangre con la precisión de un erudito que anota una escritura sagrada. Nunca ha alzado un arma contra ti. Ha hecho algo peor: te comprende.\nEl primer traidor, Yamadanda, era escriba también. Sabes demasiado bien que no hay que subestimar a estos hombres de la palabra."
+ POD_asakku.0215.desc.nattadevi: "\n\nLa segunda es Nattadevi. La llaman el Dedo Rojo en los dominios orientales. Donde Mokhadaji traza mapas, ella corta. Una agente de campo cuya interferencia en tus operaciones ha sido quirúrgica, certera y exasperantemente eficaz. No compila expedientes. Actúa, y se mueve por tu red con la seguridad de quien sabe exactamente dónde se conecta cada hebra."
+ POD_asakku.0215.a: "Ahora conozco sus nombres."
+
+ # The Final Accounting (0220)
+ POD_asakku.0220.t: "El ajuste de cuentas final"
+ POD_asakku.0220.desc.base: "Llega noticia desde Enoc. El Del'Roh ha emitido una directiva. El lenguaje es clínico: se ha identificado un «contagio espiritual» en el Cáucaso. No te nombran.\n\nNo hace falta."
+ POD_asakku.0220.desc.pietro_asakku: "Uno de los kamut que han designado ya no está disponible. Sabes dónde está: en tu corte, mirando con otros ojos. Un enemigo convertido en aliado, como acabarán siéndolo todos."
+ POD_asakku.0220.a: "Que vengan."
+
+ # Objective Phase Events
+ POD_asakku.0401.t: "Fase completada: la infección del alma"
+ POD_asakku.0401.desc: "Las semillas están plantadas. La infección avanza por la Vicisitud como el fuego por la leña seca. Tu corte alberga portadores. Tu red alberga portadores. Como la enfermedad que quizá sea, has empezado a perder la cuenta de cuántos pueden estar o no infectados.\n\nLa voz que llevas dentro está complacida, aunque «complacida» implica una emoción que no llega a poseer. Lo que tiene es reconocimiento: esta etapa de la obra está completa. La voz ya ha hecho esto antes, quizá, en cortes, salas y siglos que han pasado más allá de tu memoria pero no, sospechas, de la suya.\n\nYa no estás solo en la obra. En verdad, hace mucho que no estás solo en nada."
+ POD_asakku.0401.a: "Hundir las raíces."
+ POD_asakku.0401.b: "Extenderse más."
+ POD_asakku_phase1_deepen_tt: "La conexión con los Asakku se intensifica. Obtienes #bold 5 de Profundidad#!."
+ POD_asakku_phase1_spread_tt: "La infección se acelera. Obtienes el modificador #bold Extenderse más#! durante 10 años, que aumenta la probabilidad de éxito de las conjuras y reduce el riesgo de ser descubierto."
+
+ POD_asakku.0402.t: "Fase completada: la mancha que se extiende"
+ POD_asakku.0402.desc: "Los Elioud vinieron a por ti y fracasaron. Cualquiera que fuera el coste, medido en refugios quemados, en vasallos que no sobrevivieron a la noche, en planes que hubo que rehacer en la oscuridad. Sigues en pie. El kamut que el Visir eligió para tu destrucción está muerto, disperso o luciendo tu rostro en sus informes.\n\nLa Inducción de Sangre te ha dado conversos. Manos en cortes que no has visitado. Ojos en salas que nunca has visto. Bocas que hablan con tu voz cuando hablan de algo que importa y con la suya cuando hablan de algo que no.\n\nLa entidad recompensa la lealtad en la única moneda que entiende: más de sí misma. Quizá hayas empezado a sospechar que el regateo fue una cortesía."
+ POD_asakku.0402.a: "Consolidar la red."
+ POD_asakku.0402.b: "Aprovechar la ventaja."
+ POD_asakku_phase2_consolidate_tt: "Fortalece tu posición. Obtienes el modificador #bold Red consolidada#!, que reduce el éxito de las conjuras enemigas y ralentiza las operaciones hostiles contra ti."
+ POD_asakku_phase2_press_tt: "Golpea mientras vacilan. Obtienes el modificador #bold Aprovechar la ventaja#!, que aumenta el poder de las conjuras hostiles y reduce el riesgo de ser descubierto."
+ POD_asakku_war_forms_unlocked_tt: "Desbloquea las #bold Formas de Guerra Asakku#! como regimiento reclutable de Hombres de armas. Ghouls de carne esculpida moldeados por la voluntad de la entidad."
+
+ POD_asakku.0403.t: "Purga de los Usurpadores Occidentales"
+ POD_asakku.0403.desc: "El alcance occidental de la Cruzada de las Sombras ha terminado. Los kamut que te dieron caza desde Constantinopla hasta Zaragoza y el Cáucaso, los refugios que usaron, los dominios que los informaron, las cadenas de inteligencia que les proporcionaban objetivos: todo ha desaparecido. Muertos, donde matar era eficaz. Cambiados, donde cambiar era útil. Vaciados y mantenidos en sus antiguos papeles, donde el engaño prometía más de lo que habría ofrecido la muerte.\n\nLa Del'roh ha hecho las paces con la pérdida de la manera que ella llame paz. Los dominios orientales se mueven con renovada urgencia. La Mano Verdadera continúa. La Mano siempre continúa.\n\nTú también continúas, con la voz guiándote hacia un triunfo que llegará en esta vida o en la siguiente."
+ POD_asakku.0403.a: "Hacia el este."
+
+ POD_asakku.0404.t: "La voz del Vigilante"
+ POD_asakku.0404.desc: "Ya no estás seguro de cuándo tuviste por última vez un pensamiento enteramente tuyo. La incertidumbre no es, como habría sido antaño, angustiosa. Es simplemente el estado de las cosas. Lo que había en aquel pozo está contigo desde que el León Suspirante volvió la proa hacia el mundo de arriba, y has llegado a comprender que «posesión» no es la palabra adecuada para lo ocurrido en los siglos transcurridos.\n\nLos Tzimisce que te Abrazaron lo entendían, a su modo. Los koldun de sus torres lo vislumbraron a veces. La entidad siempre ha sido partícipe de la disciplina que llaman Vicisitud, quizá la partícipe original, quizá la única cuya participación importa de verdad, y esa participación no es en realidad depredación. Es coautoría. El autor se ha limitado a ser paciente a la hora de atribuirse el mérito.\n\nNo te perdiste a ti mismo. Te convertiste en algo que contiene a ambos. La costura donde os encontráis se ha disuelto, y esa disolución no es, como temiste una vez, la muerte de una de las partes. Es el devenir de una tercera.\n\nEn algún rincón de tus pensamientos aguarda un nombre. Llevas mil años fingiendo que no lo oyes. En este momento, el fingimiento no parece poder sostenerse mucho más. Pero esta no es la noche en que lo pronunciarás. Todavía no."
+ POD_asakku.0404.a: "Todavía no. Pero pronto."
+
+ POD_asakku.0405.t: "El Ajuste de Cuentas Oriental"
+ POD_asakku.0405.desc.base: "El este ha terminado. La tradición de Yamadanda acaba aquí, no con eruditos, agujas de hierro y herederos cuidadosamente elegidos, sino con fuego o sangre y con tu victoria. Los dominios orientales del Visir han sido silenciados. Las células que cultivó se han disuelto por el simple expediente de no quedar nadie ante quien informar. Las bibliotecas de Enoc aún guardan sus escritos, pero ya no queda nadie que los lea.\n\nLos Elioud han desaparecido. La Mano Verdadera continúa, la Mano siempre continúa, pero continúa mermada, perpleja como no lo estaba desde la Larga Noche, y le faltan miembros que no sabe explicar. \n\nLo que queda es el Vigilante. Lo que queda es la obra. La obra está al borde. Tú estás al borde. Hay un largo camino desde los altos pastos sobre el templo donde aprendiste la manera adecuada de separar la carne del hueso, pero lo llevas recorriendo desde antes de comprender que caminabas."
+ POD_asakku.0405.desc.both_converted: "Mokhadaji y Nattadevi. El príncipe Nagaraja de las estribaciones que lleva dos siglos compilando expedientes sobre ti. El Dedo Rojo que ha interferido en tus operaciones. Ahora se sientan en tu corte, los dos, mirando con ojos que no son del todo suyos. Escuchan la voz que lleva tu sangre, la parte que recibe sus instrucciones en los huecos entre tus palabras.\n\nFueron tus enemigos más pacientes. Ahora son, quizá, tus instrumentos más útiles. Yamadanda, dondequiera que haya ido, lo hallaría magnífico o insoportable. Ya no está en posición de elegir entre ambas cosas."
+ POD_asakku.0405.a: "Ha terminado."
+
+ # What Remains - 0406 (Yamadanda coda, fires 6 months after 0405)
+ POD_asakku.0406.t: "Lo que queda"
+ POD_asakku.0406.desc: "Te sientas en las horas pequeñas de la madrugada y te descubres pensando en el propio fundador. [yamadanda.GetName] se fue hace al menos mil años. El registro oficial no menciona ni destrucción ni la digna letargia de un Antiguo que ha decidido dejar el mundo a un lado durante un tiempo.\n\nLos Elioud que desolló y reconstruyó no eran más que un medio para un fin. Con la mano rota, el fin permanece. Las bibliotecas de Enoc aún guardan sus recitaciones. Los protocolos aún circulan, aunque no quede célula alguna que los ejecute. Y en algún lugar, en alguna cámara o en algún largo y callado laberinto de la Tempestad, el propio mago. El yamasattva, el alma atada a un cuerpo más antiguo que la mayoría de los imperios, sigue escuchando.\n\nNo sabes si la destrucción de sus Elioud lo alcanzará. Pero la voz de tu sangre está alerta como no lo estaba desde que llegó la Falange. Ha advertido algo. Aún no te dirá qué.\n\nHas cerrado la herida oriental. Quizá no hayas cerrado el libro."
+ POD_asakku.0406.a: "Entonces Nosotros también esperaremos."
