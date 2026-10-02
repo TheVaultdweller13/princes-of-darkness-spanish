@@ -13,7 +13,7 @@
  POD_heist_raise_suspicion_desc: "La [suspicion_with_icon|E] #N aumentará#! en $VALUE|V0$"
  POD_heist_raise_suspicion_desc_past: "La [suspicion_with_icon|E] #N aumentó#! en $VALUE|V0$"
  POD_heist_trigger_suspicion_event_desc: "@warning_icon!#X Ocurrirá una complicación con #bold $VALUE|V0$#! de Sospecha#!"
- POD_heist_trigger_suspicion_event_desc_past: "#N Debido a que la [suspicion_with_icon|E] ha alcanzado el #bold $VALUE|V0$#! de Sospecha, ha surgido una complicación.#!"
+ POD_heist_trigger_suspicion_event_desc_past: "#N Como [suspicion_with_icon|E] ha alcanzado #bold $VALUE|V0$#!, ha surgido una complicación.#!"
  POD_heist_trigger_suspicion_event_hint: "#N Las futuras comprobaciones de [skill|E] durante esta [infiltration|E] serán más difíciles.#!"
  POD_heist_maximum_suspicion_desc: "@warning_icon!#X Fallarás esta Infiltración al alcanzar el #bold [EmptyScope.ScriptValue('suspicion_max')|V0]#! de Sospecha#!"
  POD_heist_maximum_suspicion_desc_past: "#N Debido a que la [suspicion_with_icon|E] ha alcanzado el #bold [EmptyScope.ScriptValue('suspicion_max')|V0]#!, has fallado esta [infiltration|E].#!"
@@ -149,6 +149,8 @@
  POD_heist_title_node_prisoners: "La prisión"
  POD_heist_desc_node_prisoners: "Los prisioneros de [CurrentHeistTarget.GetFirstNameNicknamed] se custodian aquí.\nPuedes liberarlos si así lo deseas, pero hacerlo aumentará tu [suspicion|E]."
  POD_heist_release_prisoner_desc: "Te acercarás a la celda de la prisión de [CHARACTER.GetNameNicknamed] y decidirás qué hacer con [CHARACTER.GetHerHim]."
+ POD_combat_title_heist_elite: "UN ASALTO CLANDESTINO"
+ POD_combat_title_heist_hunt: "COMIENZA LA CACERÍA"
 
 
  ######################
@@ -261,8 +263,8 @@
  # Chancellor route (Vassal opinion) [Dee]
 
  POD_heists.1001.t: "Complicación: Demasiado popular"
- POD_heists.1001.desc.coterie: "Nuestra [infiltration|E] ha ido bien hasta ahora... demasiado bien, de hecho. Nadie ha dudado de nuestra historia de cobertura de estar en una «misión diplomática», así que estamos teniendo que responder a muchas preguntas sobre relaciones exteriores."
- POD_heists.1001.desc.nocoterie: "Mi [infiltration|E] ha ido bien hasta ahora... demasiado bien, de hecho. Nadie ha dudado de mi historia de cobertura de estar en una «misión diplomática», así que estoy teniendo que responder a muchas preguntas sobre relaciones exteriores."
+ POD_heists.1001.desc.coterie: "Nuestra [infiltration|E] ha ido bien hasta ahora... demasiado bien, de hecho. Nadie ha dudado de nuestra tapadera de estar en una «misión diplomática», así que tenemos que responder a muchas preguntas sobre relaciones exteriores."
+ POD_heists.1001.desc.nocoterie: "Mi [infiltration|E] ha ido bien hasta ahora... demasiado bien, de hecho. Nadie ha dudado de mi tapadera de estar en una «misión diplomática», así que tengo que responder a muchas preguntas sobre relaciones exteriores."
  POD_heists.1001.desc.end: "\n\n[diplomacy_courtier.GetFirstNameNicknamed] se aclara [diplomacy_courtier.GetHerHis] garganta. «¿Qué propones que se haga en respuesta a la creciente amenaza del expansionismo [flavortext_realm.GetAdjective]?»"
  POD_heists.1001.a: "Es sencillo. Déjame explicarlo..."
  POD_heists.1001.a.success: "Tu historia de cobertura se mantiene"
@@ -403,8 +405,8 @@
  POD_heists.1032.b: "Mi paciencia tiene un límite."
 
  POD_heists.1033.t: "Complicación: Locura de oración"
- POD_heists.1033.desc.coterie: "Sigue igual.\n\nHemos estado a punto de quedarnos dormidos varias veces, solo despertados por un repentino arrebato de [court_chaplain.GetFirstName] cuando [court_chaplain.GetSheHe] llega a la parte más «épica» de [court_chaplain.GetHerHis] sermón. Cómo [court_chaplain.GetSheHe] consigue convertir un relato interesante en un tostón tan terriblemente largo seguirá siendo un misterio para los siglos venideros.\n\nAunque está claro que solo tenemos que esperar un poco más antes de que [court_chaplain.GetSheHe] pare y podamos reanudar nuestra misión. En cualquier momento.\n\nEspera, ¿[court_chaplain.GetSheHe] está empezando un capítulo nuevo?"
- POD_heists.1033.desc.nocoterie: "Sigue igual.\n\nHe estado a punto de quedarme dormido varias veces, solo despertado por un repentino arrebato de [court_chaplain.GetFirstName] cuando [court_chaplain.GetSheHe] llega a la parte más «épica» de [court_chaplain.GetHerHis] sermón. Cómo [court_chaplain.GetSheHe] consigue convertir un relato interesante en un tostón tan terriblemente largo seguirá siendo un misterio para los siglos venideros.\n\nAunque está claro que solo tengo que esperar un poco más antes de que [court_chaplain.GetSheHe] pare y podamos reanudar nuestra misión. En cualquier momento.\n\nEspera, ¿[court_chaplain.GetSheHe] está empezando un capítulo nuevo?"
+ POD_heists.1033.desc.coterie: "Sigue sin acabar.\n\nHemos estado a punto de quedarnos dormidos varias veces, y solo nos ha devuelto la atención un repentino arrebato de [court_chaplain.GetFirstName] cuando [court_chaplain.GetSheHe] llega a la parte más «épica» de [court_chaplain.GetHerHis] sermón. Cómo [court_chaplain.GetSheHe] consigue convertir un relato interesante en un tostón tan espantosamente largo seguirá siendo un misterio para los siglos.\n\nAunque está claro que solo tenemos que esperar un poco más antes de que [court_chaplain.GetSheHe] pare y podamos reanudar nuestra misión. En cualquier momento.\n\nEspera, ¡¿[court_chaplain.GetSheHe] está empezando un capítulo nuevo?!"
+ POD_heists.1033.desc.nocoterie: "Sigue sin acabar.\n\nHe estado a punto de quedarme dormido varias veces, y solo me ha devuelto la atención un repentino arrebato de [court_chaplain.GetFirstName] cuando [court_chaplain.GetSheHe] llega a la parte más «épica» de [court_chaplain.GetHerHis] sermón. Cómo [court_chaplain.GetSheHe] consigue convertir un relato interesante en un tostón tan espantosamente largo seguirá siendo un misterio para los siglos.\n\nAunque está claro que solo tengo que esperar un poco más antes de que [court_chaplain.GetSheHe] pare y podamos reanudar nuestra misión. En cualquier momento.\n\nEspera, ¡¿[court_chaplain.GetSheHe] está empezando un capítulo nuevo?!"
  POD_heists.1033.a: "Quiero irme a casa."
  POD_heists.1033.b: "¡Ningún tesoro vale tanto como esto!"
 
@@ -689,7 +691,7 @@
  POD_heists.2012.b: "¡Eso es cruzar la línea!"
 
  POD_heists.2013.t: "Complicación: Quemarlo todo"
- POD_heists.2013.desc: "Ya es suficiente. Pasar por este «jardín» fue una idea terrible. No tengo ni idea de dónde estoy, mi ropa está sucia y huelo como un campesino. Es hora de replanteárselo todo.\n\nTengo el fuerte impulso de buscar la antorcha más cercana y quemarlo todo, pero esto podría ser una reacción exagerada.\n\n¿O no lo es?"
+ POD_heists.2013.desc: "Ya es suficiente. Pasar por este «jardín» fue una idea terrible. No tengo ni idea de dónde estoy, mi ropa está sucia y huelo como un campesino. Es hora de replantearlo todo.\n\nTengo el fuerte impulso de buscar la antorcha más cercana y quemarlo todo, pero quizá sea exagerar.\n\n¿O no?"
  POD_heists.2013.a: "¡Táctica de tierra quemada!"
  POD_heists.2013.a.success: "¡Uso el caos para prevalecer!"
  POD_heists.2013.a.failure: "Espera. ¿¡FUEGO!?"

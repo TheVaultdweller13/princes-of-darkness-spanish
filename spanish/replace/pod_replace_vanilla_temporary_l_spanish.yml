@@ -4,3 +4,6 @@
 
  # Subencabezado genérico para personajes marcados (si no se han establecido subencabezados)
  BOOKMARK_CHARACTER_SUBHEADING_AND_GOVERNMENT: "$BOOKMARK_SUBHEADING_DEFAULT$ #low [BookmarkCharacter.GetGovernmentType.GetNameWithIcon]#!"
+ NOT_THEY_HAVE_OPINION: "[CHARACTER.GetShortUIName|U] tiene menos de $NUM|V$ de [opinion|E] sobre [TARGET_CHARACTER.GetShortUIName]"
+ REMOVE_PERK_EFFECT: "[CHARACTER.GetShortUIName|U] pierde el don [PERK.GetName(CHARACTER.Self)|V]"
+ REMOVE_PERK_PAST_EFFECT: "[CHARACTER.GetShortUIName|U] perdió el don [PERK.GetName(CHARACTER.Self)|V]"

@@ -26,7 +26,7 @@
  POD_fera_requirements_development_below_t5_ducal: "\n\n#help Este nivel requiere #bold;L 5 o menos#! de [development|E] para ser construido.#!$POD_requirements_fera_development_exception$"
 
  POD_requirements_fera_development_exception: "\n#help Este requisito se ignora si alguna de estas #TOOLTIP:POD_requirements_fera_development_exception_list #L condiciones#!#! es verdadera.#!"
- POD_requirements_fera_development_exception_list: "$BULLET_WITH_TAB$Tu fe tiene la [doctrine|E] [GetFaithDoctrine('doctrine_fera_triat_alignment_weaver').GetBaseName]\n$BULLET_WITH_TAB$Tu fe tiene la [doctrine|E] [GetFaithDoctrine('doctrine_fera_beast_courts').GetBaseName]\n$BULLET_WITH_TAB$La [holding|E] es una [grand_city|E]\n$BULLET_WITH_TAB$Eres un [GetTrait('bastet').GetName(GetNullCharacter)]"
+ POD_requirements_fera_development_exception_list: "$BULLET_WITH_TAB$Tu fe tiene la [doctrine|E] [GetFaithDoctrine('doctrine_fera_triat_alignment_weaver').GetBaseName]\n$BULLET_WITH_TAB$Tu fe tiene la [doctrine|E] [GetFaithDoctrine('doctrine_fera_beast_courts').GetBaseName]\n$BULLET_WITH_TAB$La [holding|E] es una [grand_city|E]\n$BULLET_WITH_TAB$Eres un [GetTrait('bastet').GetName(GetNullCharacter)]\n$BULLET_WITH_TAB$Eres una [GetTrait('abomination').GetName(GetNullCharacter)]"
 
 
  is_POD_christian_religion_tt: "El poseedor debe seguir una [christian_derived_faith|E]"
@@ -80,6 +80,9 @@
  POD_requirements_mokole: "El [holder|E] debe ser [GetTrait('mokole').GetName( GetPlayer )] o un [GetTrait('kinfolk').GetName( GetPlayer )] de raza Mokolé"
  POD_requirements_caern: "El [holder|E] debe ser un [GetTrait('werewolf').GetName( GetPlayer )], [GetTrait('bastet').GetName( GetPlayer )] o su [GetTrait('kinfolk').GetName( GetPlayer )]"
  POD_requirements_kinfolk: "El [holder|E] debe ser [GetTraitGroup('fera').GetName()] o [GetTrait('kinfolk').GetName( GetPlayer )]"
+ POD_requirements_court_position: "El [holder|E] necesita emplear a un [GetCourtPositionType(SCOPE.GetFlagName('saved_tooltip')).GetName()]"
+ POD_requirements_court_position_level: "El [holder|E] necesita emplear a un [GetCourtPositionType(SCOPE.GetFlagName('saved_tooltip')).GetName()] con [aptitude|E] [GetAptitudeString(SCOPE.GetValue('aptitude_level'))][AddTextIf( LessThanOrEqualTo_CFixedPoint( SCOPE.GetValue('aptitude_level'), '(CFixedPoint)3' ), ' o superior' )]"
+ POD_requirements_unique_caern: "El [holder|E] debe ser un $glossary_fera$ o un [GetTrait('kinfolk').GetName( GetPlayer )]"
  
  POD_requirements_rome_ventrue_02: "El [holder|E] necesita emplear a un [ventrue_primogen|E]"
  POD_requirements_rome_ventrue_03: "El [holder|E] necesita emplear a un [ventrue_primogen|E] con [aptitude|E] buena o superior"
@@ -128,7 +131,7 @@
  POD_requirements_rome_san_michele_cloisters_03: "El [holder|E] debe haber prestado su apoyo al Oculi Dei mediante una [decision|E]"
  
  POD_requirements_rome_colosseum_02: "El [holder|E] necesita ser un [GetTrait('august').GetName(GetNullCharacter)] o emplear a un [GetCourtPositionType('seneschal_court_position').GetName()] con [aptitude|E] excelente"
- POD_requirements_rome_hadrianstomb_02: "El [holder|E] necesita ser un [GetTrait('scholar').GetName(GetNullCharacter)] o emplear a un [GetCourtPositionType('antiquarian_court_position').GetName()] con [aptitude|E] excelente"
+ POD_requirements_rome_hadrianstomb_02: "El [holder|E] necesita ser [GetTrait('erudite').GetName(GetNullCharacter)] o emplear a un [GetCourtPositionType('antiquarian_court_position').GetName()] con [aptitude|E] excelente"
  POD_requirements_rome_aqueduct_02: "El [holder|E] necesita ser un [GetTrait('architect').GetName(GetNullCharacter)] o emplear a un [GetCourtPositionType('royal_architect_court_position').GetName()] con [aptitude|E] excelente"
  POD_requirements_rome_pasquino_02: "El [holder|E] necesita ser un [GetTrait('schemer').GetName(GetNullCharacter)] o tener a un [spymaster|E] con al menos 20 de [intrigue|E] sentado en el [council|E]"
  

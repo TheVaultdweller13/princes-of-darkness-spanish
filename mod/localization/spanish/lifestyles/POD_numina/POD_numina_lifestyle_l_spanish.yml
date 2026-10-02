@@ -99,11 +99,11 @@
  anti_psi_4_perk_name: "Anti Psi/Escudos Mentales 4"
  anti_psi_5_perk_name: "Anti Psi/Escudos Mentales 5"
 
- ANTI_PSI_1_PERK_EFFECT: "#P +10#! de probabilidad de defenderse contra efectos que alteran la mente\nAumenta en un 25% el coste de cualquier [character_interaction|E] de [GetTrait('psychic').GetName( GetPlayer )] dirigido contra ti\n#weak Anti Psi es la rara capacidad de anular otros numina psíquicos.\nEl psíquico puede erigir defensas mentales contra intrusiones sobrenaturales.\nEl psíquico suprime otras habilidades psíquicas en un radio de cinco metros alrededor del usuario#!"
+ ANTI_PSI_1_PERK_EFFECT: "#P +10#! de probabilidad de defenderse contra efectos que alteran la mente\nAumenta en un 25% el coste de cualquier [character_interaction|E] de [GetTrait('psychic').GetName( GetPlayer )] dirigida contra ti\n[PODUnlocksCombatMove('POD_combat_move_psychic_mind_shield')]\n#weak Anti Psi es la rara capacidad de anular otros numina psíquicos.\nEl psíquico puede erigir defensas mentales contra la intrusión sobrenatural.\nEl psíquico suprime otras habilidades psíquicas en un radio de cinco metros alrededor del usuario#!"
  ANTI_PSI_2_PERK_EFFECT: "#P +10#! de probabilidad de defenderse contra efectos que alteran la mente\nAumenta en un 25% el coste de cualquier [character_interaction|E] de [GetTrait('psychic').GetName( GetPlayer )] dirigido contra ti\n#weak El psíquico suprime otras habilidades psíquicas en un radio de diez metros alrededor del usuario#!"
- ANTI_PSI_3_PERK_EFFECT: "#P +10#! de probabilidad de defenderse contra efectos que alteran la mente\nAumenta en un 25% el coste de cualquier [character_interaction|E] de [GetTrait('psychic').GetName( GetPlayer )] dirigido contra ti\n#weak El psíquico suprime otras habilidades psíquicas en un radio de quince metros alrededor del usuario#!"
+ ANTI_PSI_3_PERK_EFFECT: "#P +10#! de probabilidad de defenderse contra efectos que alteran la mente\nAumenta en un 25% el coste de cualquier [character_interaction|E] de [GetTrait('psychic').GetName( GetPlayer )] dirigida contra ti\n[PODUnlocksCombatMove('POD_combat_move_psychic_interference')]\n#weak El psíquico suprime otras habilidades psíquicas en un radio de quince metros alrededor del usuario#!"
  ANTI_PSI_4_PERK_EFFECT: "#P +10#! de probabilidad de defenderse contra efectos que alteran la mente\nInmunidad contra cualquier [character_interaction|E] de [GetTrait('psychic').GetName( GetPlayer )]\n#weak El psíquico suprime otras habilidades psíquicas en un radio de veinte metros alrededor del usuario#!"
- ANTI_PSI_5_PERK_EFFECT: "#P +10#! de probabilidad de defenderse contra efectos que alteran la mente\nFuertes Defensas Mentales\n#weak El psíquico suprime otras habilidades psíquicas en un radio de veinticinco metros alrededor del usuario#!"
+ ANTI_PSI_5_PERK_EFFECT: "#P +10#! de probabilidad de defenderse contra efectos que alteran la mente\nFuertes Defensas Mentales\n[PODUnlocksCombatMove('POD_combat_move_psychic_null_field')]\n#weak El psíquico suprime otras habilidades psíquicas en un radio de veinticinco metros alrededor del usuario#!"
 
  astral_projection_1_perk_name: "Proyección Astral 1"
  astral_projection_2_perk_name: "Proyección Astral 2"
@@ -123,11 +123,11 @@
  biocontrol_4_perk_name: "Ignorar la Respuesta al Dolor"
  biocontrol_5_perk_name: "Mente sobre Materia"
 
- BIOCONTROL_1_PERK_EFFECT: "Desbloquea la [character_interaction|E] de Cambiaformas.\nDesbloquea opciones de cambio de forma cosmético.\n#weak El psíquico puede controlar su propio cuerpo.\nEl psíquico puede controlar funciones menores de su cuerpo, como contener la respiración, entrando en trance.#!"
+ BIOCONTROL_1_PERK_EFFECT: "Desbloquea la [character_interaction|E] de Transformación.\nDesbloquea opciones cosméticas de transformación.\n[PODUnlocksCombatMove('POD_combat_move_psychic_biocontrol_mindfulness')]\n#weak El psíquico puede dominar su propio cuerpo.\nEl psíquico puede controlar funciones menores de su cuerpo, como contener la respiración, al entrar en trance.#!"
  BIOCONTROL_2_PERK_EFFECT: "Como [character_interaction|E], puede curar instantáneamente [GetTrait('ill').GetName( GetNullCharacter )].\n#weak El psíquico puede acelerar su propio proceso de curación a través de la meditación.#!"
- BIOCONTROL_3_PERK_EFFECT: "Como [character_interaction|E], puede curar heridas instantáneamente.\n#weak Al tomar el control de sus glándulas suprarrenales, el psíquico puede entrar en un período de fuerza y velocidad mejoradas.#!"
- BIOCONTROL_4_PERK_EFFECT: "Como [character_interaction|E], puede curar instantáneamente enfermedades mortales.\n#weak El psíquico puede bloquear el dolor de su conciencia.#!"
- BIOCONTROL_5_PERK_EFFECT: "Como [character_interaction|E], puede curar instantáneamente cualquier enfermedad.\n#weak El psíquico puede ordenar a su propio corazón que se detenga si es necesario, regular directamente su sistema inmunológico y contorsionar su cuerpo en posiciones antinaturales.#!"
+ BIOCONTROL_3_PERK_EFFECT: "Como [character_interaction|E], puede curar heridas al instante.\n[PODUnlocksCombatMove('POD_combat_move_psychic_biocontrol_adrenal_surge')]\n#weak Al tomar el control de sus glándulas suprarrenales, el psíquico puede entrar en un período de fuerza y velocidad aumentadas.#!"
+ BIOCONTROL_4_PERK_EFFECT: "Como [character_interaction|E], puede curar enfermedades mortales al instante.\n[PODUnlocksCombatMove('POD_combat_move_psychic_biocontrol_toggle_nerves')]\n#weak El psíquico puede borrar el dolor de su conciencia.#!"
+ BIOCONTROL_5_PERK_EFFECT: "Como [character_interaction|E], puede curar cualquier enfermedad al instante.\n[PODUnlocksCombatMove('POD_combat_move_psychic_biocontrol_biological_mastery')]\n#weak El psíquico puede ordenar a su propio corazón que se detenga si es necesario, regular directamente su sistema inmunitario y contorsionar su cuerpo en posturas antinaturales.#!"
 
  necro_psi_1_perk_name: "Necro Psi 1"
  necro_psi_2_perk_name: "Necro Psi 2"
@@ -135,11 +135,11 @@
  necro_psi_4_perk_name: "Necro Psi 4"
  necro_psi_5_perk_name: "Necro Psi 5"
 
- NECRO_PSI_1_PERK_EFFECT: "Como [character_interaction|E], puede invocar un [GetTrait('wraith').GetName( GetNullCharacter )] a tu corte.\n#weak Necro Psi, también llamado Canalización, es una habilidad que permite al psíquico contactar con los fantasmas de los muertos.\nEl psíquico puede oír cualquier fantasma cercano.#!"
- NECRO_PSI_2_PERK_EFFECT: "Te permite interactuar con seres de la [umbra|E] cuando estás en el mundo material.\n$POD_can_summon_on_death_trigger_loca$\n$POD_can_weaken_fetter_trigger_loca$\n$POD_can_bind_wraith_trigger_loca$\n#weak El psíquico puede comunicarse con fantasmas en la zona.#!"
- NECRO_PSI_3_PERK_EFFECT: "$POD_can_command_wraith_trigger_loca$\nComo [character_interaction|E], puede permitir que un wraith vinculado te canalice, aumentando todos los atributos en 2 mientras ganas [GetTrait('possessed_1').GetName( GetNullCharacter )]\n#weak El psíquico puede ver dentro de las [UmbraGlossary('shadowlands')].#!"
+ NECRO_PSI_1_PERK_EFFECT: "Como [character_interaction|E], puede convocar a un [GetTrait('wraith').GetName( GetNullCharacter )] a tu corte.\n[PODUnlocksCombatMove('POD_combat_move_psychic_channeling_borrowed_battlecraft')]\n#weak Necro-Psi, también llamado Canalización, es una habilidad que permite a un psíquico contactar con los fantasmas de los muertos.\nEl psíquico puede oír a cualquier fantasma cercano.#!"
+ NECRO_PSI_2_PERK_EFFECT: "Te permite interactuar con seres de la [umbra|E] cuando estás en el mundo material.\n$POD_can_summon_on_death_trigger_loca$\n$POD_can_bind_wraith_trigger_loca$\n#weak El psíquico puede comunicarse con los fantasmas de la zona.#!"
+ NECRO_PSI_3_PERK_EFFECT: "$POD_can_command_wraith_trigger_loca$\nComo [character_interaction|E], puede permitir que un wraith atado te canalice, aumentando todos los atributos en 2 mientras obtienes [GetTrait('possessed_1').GetName( GetNullCharacter )]\n[PODUnlocksCombatMove('POD_combat_move_psychic_channeling_dead_masters_guard')]\n#weak El psíquico puede ver en las [UmbraGlossary('shadowlands')].#!"
  NECRO_PSI_4_PERK_EFFECT: "Como [character_interaction|E], puede permitir que un wraith vinculado te canalice, aumentando un solo atributo en 2 sin ganar [GetTrait('possessed_1').GetName( GetNullCharacter )]\n#weak El psíquico se convierte en un faro para los espíritus, que se sienten atraídos hacia él. Cuando un fantasma le posee, puede disputarle el control.#!"
- NECRO_PSI_5_PERK_EFFECT: "Puede ser canalizado por dos wraiths en lugar de uno mediante la [character_interaction|E] de [GetPerk('necro_psi_3_perk').GetName( GetNullCharacter )] y [GetPerk('necro_psi_4_perk').GetName( GetNullCharacter )]\n#weak El psíquico puede comunicarse libremente con los fantasmas y canalizar a dos a la vez.#!"
+ NECRO_PSI_5_PERK_EFFECT: "Puede ser canalizado por dos wraiths en lugar de uno mediante la [character_interaction|E] de [GetPerk('necro_psi_3_perk').GetName( GetNullCharacter )] y [GetPerk('necro_psi_4_perk').GetName( GetNullCharacter )]\n[PODUnlocksCombatMove('POD_combat_move_psychic_channeling_legion_of_dead_masters')]\n#weak El psíquico puede comunicarse libremente con los fantasmas y canalizar a dos a la vez.#!"
 
  clairvoyance_1_perk_name: "Clarividencia 1"
  clairvoyance_2_perk_name: "Clarividencia 2"
@@ -149,7 +149,7 @@
 
  CLAIRVOYANCE_1_PERK_EFFECT: "#weak El psíquico puede proyectar sus sentidos manteniendo su conciencia dentro de su cuerpo.\nEl psíquico ve cosas en el edificio en el que se encuentra a través de una neblina onírica.#!"
  CLAIRVOYANCE_2_PERK_EFFECT: "#weak El psíquico puede ver eventos en un radio de ochenta kilómetros a su alrededor, con sonidos amortiguados y distorsionados.#!"
- CLAIRVOYANCE_3_PERK_EFFECT: "#weak El psíquico puede ver y oír claramente a distancia, ganando la capacidad de experimentar el tacto. El radio se expande a 400 kilómetros.#!"
+ CLAIRVOYANCE_3_PERK_EFFECT: "[PODUnlocksCombatMove('POD_combat_move_psychic_clairvoyance_sight_beyond_sight')]\n#weak El psíquico puede ver y oír con claridad a distancia, con la capacidad añadida de experimentar el tacto. El radio se amplía a 400 kilómetros.#!"
  CLAIRVOYANCE_4_PERK_EFFECT: "#weak El psíquico puede experimentar el tacto, la vista y el oído, junto con una vaga sensación del olfato. El radio se expande a 3200 kilómetros.#!"
  CLAIRVOYANCE_5_PERK_EFFECT: "#weak El psíquico puede usar los cinco sentidos mientras se proyecta teóricamente por todo el mundo.#!"
  
@@ -183,10 +183,10 @@
  ectoplasmic_generation_4_perk_name: "Moldeador de Sueños"
  ectoplasmic_generation_5_perk_name: "Tulpa"
 
- ECTOPLASMIC_GENERATION_1_PERK_EFFECT: "#weak El psíquico puede crear plasma como una sustancia pegajosa que se evapora tras varios minutos de vuelta al Inframundo.\nEl psíquico crea unas pocas hebras de plasma de sus orificios que puede aplicar manualmente.#!"
- ECTOPLASMIC_GENERATION_2_PERK_EFFECT: "#weak El psíquico puede convertir el plasma en una forma similar a la niebla.#!"
- ECTOPLASMIC_GENERATION_3_PERK_EFFECT: "$unlock_forging_node$ Permitir que el dueño del artefacto hiera a espíritus\n#weak El psíquico puede endurecer la niebla ectoplásmica a voluntad y darle forma manualmente.#!"
- ECTOPLASMIC_GENERATION_4_PERK_EFFECT: "Mejora el [artifact|E] creado por [GetPerk('ectoplasmic_generation_3_perk').GetName( GetNullCharacter )] añadiendo también un [modifier|E] basado en el tipo de [artifact|E]\n#weak El psíquico puede dar forma a sus constructos ectoplásmicos con su mente en el momento de su creación.#!"
+ ECTOPLASMIC_GENERATION_1_PERK_EFFECT: "[PODUnlocksCombatMove('POD_combat_move_psychic_ectoplasm_spirit_wrapped_blow')]\n#weak El psíquico puede crear plasma como una sustancia pegajosa que se evapora tras varios minutos de vuelta al Inframundo.\nEl psíquico crea unas pocas hebras de plasma por sus orificios que puede aplicar manualmente.#!"
+ ECTOPLASMIC_GENERATION_2_PERK_EFFECT: "[PODUnlocksCombatMove('POD_combat_move_psychic_ectoplasm_shroud')]\n#weak El psíquico puede condensar plasma en una forma similar a la niebla.#!"
+ ECTOPLASMIC_GENERATION_3_PERK_EFFECT: "$unlock_forging_node$ Permite al dueño del artefacto dañar espíritus\n[PODUnlocksCombatMove('POD_combat_move_psychic_ectoplasm_solid_fog')]\n#weak El psíquico puede endurecer a voluntad la niebla ectoplásmica y darle forma manualmente.#!"
+ ECTOPLASMIC_GENERATION_4_PERK_EFFECT: "Mejora el [artifact|E] creado por [GetPerk('ectoplasmic_generation_3_perk').GetName( GetNullCharacter )] añadiendo además un [modifier|E] según el tipo de [artifact|E]\n[PODUnlocksCombatMove('POD_combat_move_psychic_ectoplasm_bulwark')]\n#weak El psíquico puede dar forma con la mente a sus construcciones ectoplásmicas en el momento de crearlas.#!"
  ECTOPLASMIC_GENERATION_5_PERK_EFFECT: "Mejora el [artifact|E] creado por [GetPerk('ectoplasmic_generation_4_perk').GetName( GetNullCharacter )] añadiendo también un [modifier|E] basado en el tipo de [artifact|E]\n$unlock_forging_node$ Sacrifica un $POD_splat_wraith$ [prisoner|E] para mejorar un [artifact|E] basado en los [traits|E] del sacrificio\nObtén acceso a la mayoría de $POD_plasmic_maa$ [men_at_arms|E]\n#weak El psíquico puede crear un constructo rudimentario inteligente de ectoplasma que obedece su voluntad.#!"
 
  empathic_healing_1_perk_name: "Calmar el Espíritu"
@@ -209,9 +209,9 @@
 
  PSYCHIC_HEALING_1_PERK_EFFECT: "#weak El psíquico puede curar heridas y otras lesiones con el poder de su mente.\nEl psíquico puede sentir lo que le falta al paciente.#!"
  PSYCHIC_HEALING_2_PERK_EFFECT: "Permite dar a un objetivo [GetModifier('psi_treatment').GetNameWithTooltip] como [character_interaction|E]\n#weak El psíquico puede acelerar el proceso de curación natural de su paciente, enviándolo a un sueño tras el cual la mayoría de las enfermedades menores se curan.#!"
- PSYCHIC_HEALING_3_PERK_EFFECT: "Permite curar cicatrices y desfiguraciones como [character_interaction|E]\nPermite dar a un objetivo [GetModifier('psi_good_treatment').GetNameWithTooltip] como [character_interaction|E]\n#weak El psíquico puede reparar heridas y desterrar enfermedades más persistentes.#!"
+ PSYCHIC_HEALING_3_PERK_EFFECT: "Permite curar cicatrices y desfiguraciones como [character_interaction|E]\nPermite dar a un objetivo [GetModifier('psi_good_treatment').GetNameWithTooltip] como [character_interaction|E]\n[PODUnlocksCombatMove('POD_combat_move_psychic_healing_urgent_care')]\n#weak El psíquico puede reparar heridas y desterrar enfermedades más obstinadas.#!"
  PSYCHIC_HEALING_4_PERK_EFFECT: "Permite curar heridas y enfermedades como [character_interaction|E]\n#weak El psíquico puede reparar huesos rotos y desterrar enfermedades más graves.#!"
- PSYCHIC_HEALING_5_PERK_EFFECT: "Permite curar enfermedades y rasgos físicos negativos como [character_interaction|E]\n#weak El psíquico puede eliminar cáncer o infecciones.#!"
+ PSYCHIC_HEALING_5_PERK_EFFECT: "Permite curar enfermedades y rasgos físicos negativos como [character_interaction|E]\n[PODUnlocksCombatMove('POD_combat_move_psychic_healing_psychic_surgery')]\n#weak El psíquico puede eliminar el cáncer o las infecciones.#!"
 
  precognition_1_perk_name: "Intuición"
  precognition_2_perk_name: "Perspicacia"
@@ -220,10 +220,10 @@
  precognition_5_perk_name: "Visión Clara"
 
  PRECOGNITION_1_PERK_EFFECT: "#weak El psíquico puede obtener destellos del giro más probable de los acontecimientos y a veces incluso ver el futuro.\nLa predicción del psíquico para eventos aleatorios, como una tirada de dados, se vuelve más precisa.#!"
- PRECOGNITION_2_PERK_EFFECT: "Tus prisioneros tienen menos probabilidades de escapar de tu prisión.\n#weak El psíquico puede meditar para recibir visiones de un futuro posible. Estas visiones son vagas y metafóricas y dependen de mucha interpretación para ser útiles.#!"
- PRECOGNITION_3_PERK_EFFECT: "Recibirás una notificación si alguien intenta asesinar a tus amigos o familiares.\nRecibirás una notificación si alguien intenta seducir a tus amantes o consortes.\n#weak El psíquico puede sentir cuando está en peligro.#!"
- PRECOGNITION_4_PERK_EFFECT: "#weak El psíquico puede ver qué reacción inmediata tendría una acción.#!"
- PRECOGNITION_5_PERK_EFFECT: "Como [character_interaction|E], puede descubrir cada plan hostil dirigido contra ti, y frustrar aquellos ya descubiertos.\n#weak El psíquico puede ver el futuro más probable en el momento.#!"
+ PRECOGNITION_2_PERK_EFFECT: "Tus prisioneros tienen menos probabilidades de escapar de tu prisión.\n#weak El psíquico puede meditar para recibir visiones de un posible futuro. Estas visiones son vagas y metafóricas y requieren mucha interpretación para ser útiles.#!"
+ PRECOGNITION_3_PERK_EFFECT: "Recibirás una notificación si alguien pretende asesinar a tus amigos o familiares.\nRecibirás una notificación si alguien pretende seducir a tus amantes o consortes.\n[PODUnlocksCombatMove('POD_combat_move_psychic_precognition_danger_sense')]\n#weak El psíquico puede percibir cuándo está en peligro.#!"
+ PRECOGNITION_4_PERK_EFFECT: "[PODUnlocksCombatMove('POD_combat_move_psychic_precognition_clarity')]\n#weak El psíquico puede ver qué reacción inmediata tendría una acción.#!"
+ PRECOGNITION_5_PERK_EFFECT: "Como [character_interaction|E], puede descubrir todos los planes hostiles dirigidos contra ti y frustrar los ya descubiertos.\n[PODUnlocksCombatMove('POD_combat_move_psychic_precognition_roads_of_time')]\n#weak El psíquico puede ver el futuro más probable en el momento actual.#!"
 
  psychic_hypnosis_1_perk_name: "Estado de Trance"
  psychic_hypnosis_2_perk_name: "Sugestión de Feria"
@@ -234,7 +234,7 @@
  PSYCHIC_HYPNOSIS_1_PERK_EFFECT: "Como [character_interaction|E] da a un objetivo [GetModifier('psi_hypnosis_stress_buff').GetNameWithTooltip] durante 5 años. Disponible solo si el objetivo tiene una opinión de #V 0+#! del psíquico y está en la misma localización.\n#weak El psíquico puede implantar órdenes y sugestiones en su objetivo enviándolo a un trance y luego hipnotizándolo.\nEl psíquico puede enviar a un objetivo a un trance hipnótico.#!"
  PSYCHIC_HYPNOSIS_2_PERK_EFFECT: "La [character_interaction|E] de [GetPerk('psychic_hypnosis_1_perk').GetName( GetNullCharacter )] ahora también te permite aumentar la opinión del objetivo sobre ti con un duelo de diplomacia.\n#weak El psíquico puede hacer una sugestión menor mientras el objetivo está en trance.#!"
  PSYCHIC_HYPNOSIS_3_PERK_EFFECT: "La [character_interaction|E] de [GetPerk('psychic_hypnosis_1_perk').GetName( GetNullCharacter )] ahora también te permite curar malos hábitos de estrés o ganar un favor débil tras ganar un duelo de diplomacia.\n#weak El psíquico puede hacer sugestiones que permanecen incluso después de que el trance haya terminado.#!"
- PSYCHIC_HYPNOSIS_4_PERK_EFFECT: "La [character_interaction|E] de [GetPerk('psychic_hypnosis_1_perk').GetName( GetNullCharacter )] ahora también te permite curar la mayoría de los problemas mentales.\nAumenta la probabilidad de éxito en la hipnosis.\n#weak El psíquico puede enviar a un objetivo a un trance con una simple mirada.#!"
+ PSYCHIC_HYPNOSIS_4_PERK_EFFECT: "La [character_interaction|E] de [GetPerk('psychic_hypnosis_1_perk').GetName( GetNullCharacter )] ahora también te permite curar la mayoría de los problemas mentales.\nAumenta la probabilidad de éxito de la hipnosis.\n[PODUnlocksCombatMove('POD_combat_move_psychic_hypnosis_fast_trance')]\n#weak El psíquico puede sumir a un objetivo en trance con una mera mirada.#!"
  PSYCHIC_HYPNOSIS_5_PERK_EFFECT: "Puede usar la [character_interaction|E] de [GetPerk('psychic_hypnosis_1_perk').GetName( GetNullCharacter )] sin que el objetivo tenga una opinión de 0+ sobre ti. Aumenta la probabilidad de éxito y puede mejorar el favor obtenido por hipnosis a un favor fuerte.\n#weak El psíquico puede programar profundamente a un objetivo mientras está en trance, afectando incluso a su memoria.#!"
 
  psychic_invisibility_1_perk_name: "Esconderse"
@@ -243,11 +243,11 @@
  psychic_invisibility_4_perk_name: "Invisibilidad Selectiva"
  psychic_invisibility_5_perk_name: "Olvida que me Viste"
 
- PSYCHIC_INVISIBILITY_1_PERK_EFFECT: "#weak Similar a la Disciplina vampírica de Ofuscación, el psíquico puede enmascarar su presencia, no registrándose ante los ojos de los espectadores.\nEl psíquico no es notado mientras permanezca perfectamente quieto.#!"
- PSYCHIC_INVISIBILITY_2_PERK_EFFECT: "#weak El psíquico no es notado mientras se mueva lo suficientemente despacio.#!"
+ PSYCHIC_INVISIBILITY_1_PERK_EFFECT: "#weak Similar a la Disciplina vampírica de Ofuscación, el psíquico puede enmascarar su presencia y no registrarse a los ojos de los observadores.\nEl psíquico no es notado mientras permanezca perfectamente inmóvil.#!"
+ PSYCHIC_INVISIBILITY_2_PERK_EFFECT: "[PODUnlocksCombatMove('POD_combat_move_psychic_invisibility_slink')]\n#weak El psíquico no es notado mientras se mueva lo bastante despacio.#!"
  PSYCHIC_INVISIBILITY_3_PERK_EFFECT: "#weak El psíquico puede volverse invisible y moverse siempre que no le estén mirando cuando active ese poder.#!"
  PSYCHIC_INVISIBILITY_4_PERK_EFFECT: "#weak El psíquico puede hacer que ciertas personas le vean mientras está oculto.#!"
- PSYCHIC_INVISIBILITY_5_PERK_EFFECT: "Como [character_interaction|E], puedes ralentizar cualquier plan hostil dirigido contra ti en 2 fases.\n#weak El psíquico puede volverse invisible justo delante de alguien.#!"
+ PSYCHIC_INVISIBILITY_5_PERK_EFFECT: "Como [character_interaction|E], puedes ralentizar 2 etapas cualquier plan hostil dirigido contra ti.\n[PODUnlocksCombatMove('POD_combat_move_psychic_invisibility_never_here')]\n#weak El psíquico puede volverse invisible justo delante de alguien.#!"
 
  psychic_vampirism_1_perk_name: "Subidón"
  psychic_vampirism_2_perk_name: "Minar la Voluntad"
@@ -255,10 +255,10 @@
  psychic_vampirism_4_perk_name: "Sanguijuela Vital"
  psychic_vampirism_5_perk_name: "Vórtice Emocional"
 
- PSYCHIC_VAMPIRISM_1_PERK_EFFECT: "Como [character_interaction|E], puedes disminuir tu estrés 'comiéndote' las emociones de alguien. Requiere que el objetivo esté en la misma localización que tú, y tenga #V 0#! de [stress|E] o [stress_level|E] #V 3#!.\n#weak El psíquico puede drenar de más de una persona.\nEl psíquico puede drenar emociones fuertes para experimentarlas él mismo.#!"
- PSYCHIC_VAMPIRISM_2_PERK_EFFECT: "Mejora la [character_interaction|E] de [GetPerk('psychic_vampirism_1_perk').GetName( GetNullCharacter )] aumentando la pérdida de estrés y cambiando los requisitos a #V 0#! de [stress|E] o [stress_level|E] #V 2#!.\n#weak El psíquico puede drenar Fuerza de Voluntad de un objetivo para reponer la suya propia.#!"
- PSYCHIC_VAMPIRISM_3_PERK_EFFECT: "Mejora la [character_interaction|E] de [GetPerk('psychic_vampirism_1_perk').GetName( GetNullCharacter )] ganando también una acumulación de [GetModifier('psi_vampirism_health').GetNameWithTooltip] durante 20 años.\n#weak El psíquico puede drenar fuerza vital para curar heridas menores.#!"
- PSYCHIC_VAMPIRISM_4_PERK_EFFECT: "Mejora la [character_interaction|E] de [GetPerk('psychic_vampirism_1_perk').GetName( GetNullCharacter )] reduciendo el tiempo de recarga de 5 a 2 años\n#weak El psíquico puede drenar aún más fuerza vital para curar heridas mayores.#!"
+ PSYCHIC_VAMPIRISM_1_PERK_EFFECT: "Como [character_interaction|E], puedes reducir tu estrés «comiéndote» las emociones de alguien. Requiere que el objetivo esté en la misma ubicación que tú y tenga #V 0#! de [stress|E] o [stress_level|E] #V 3#!.\n[PODUnlocksCombatMove('POD_combat_move_psychic_vampirism_tap_energy')]\n#weak El psíquico puede drenar a más de una persona.\nEl psíquico puede drenar emociones fuertes para experimentarlas él mismo.#!"
+ PSYCHIC_VAMPIRISM_2_PERK_EFFECT: "Mejora la [character_interaction|E] de [GetPerk('psychic_vampirism_1_perk').GetName( GetNullCharacter )] aumentando la pérdida de estrés y cambiando los requisitos a #V 0#! de [stress|E] o [stress_level|E] #V 2#!.\n[PODUnlocksCombatMove('POD_combat_move_psychic_vampirism_invigorate')]\n#weak El psíquico puede drenar Fuerza de Voluntad de un objetivo para reponer la propia.#!"
+ PSYCHIC_VAMPIRISM_3_PERK_EFFECT: "Mejora la [character_interaction|E] de [GetPerk('psychic_vampirism_1_perk').GetName( GetNullCharacter )] obteniendo además una acumulación de [GetModifier('psi_vampirism_health').GetNameWithTooltip] durante 20 años.\n[PODUnlocksCombatMove('POD_combat_move_psychic_vampirism_leech_vitality')]\n#weak El psíquico puede drenar fuerza vital para curar heridas leves.#!"
+ PSYCHIC_VAMPIRISM_4_PERK_EFFECT: "Mejora la [character_interaction|E] de [GetPerk('psychic_vampirism_1_perk').GetName( GetNullCharacter )] reduciendo el enfriamiento de 5 a 2 años\n[PODUnlocksCombatMove('POD_combat_move_psychic_vampirism_essence_feast')]\n#weak El psíquico puede drenar aún más fuerza vital para curar heridas graves.#!"
  PSYCHIC_VAMPIRISM_5_PERK_EFFECT: "Elimina el requisito de localización de [GetPerk('psychic_vampirism_1_perk').GetName( GetNullCharacter )] si previamente has drenado la fuerza vital del objetivo.\n#weak El psíquico puede drenar de más de una persona.#!"
 
  psychokinesis_1_perk_name: "Psicoquinesis 1"
@@ -268,10 +268,10 @@
  psychokinesis_5_perk_name: "Psicoquinesis 5"
 
  PSYCHOKINESIS_1_PERK_EFFECT: "#weak La Psicoquinesis, también llamada telequinesis, permite al psíquico mover objetos sin tocarlos.\nEl psíquico puede levantar medio kilogramo.#!"
- PSYCHOKINESIS_2_PERK_EFFECT: "#weak El psíquico puede levantar 10 kilogramos.#!"
- PSYCHOKINESIS_3_PERK_EFFECT: "#weak El psíquico puede levantar 100 kilogramos.#!"
- PSYCHOKINESIS_4_PERK_EFFECT: "#weak El psíquico puede levantar 250 kilogramos.#!"
- PSYCHOKINESIS_5_PERK_EFFECT: "#weak El psíquico puede levantar 500 kilogramos.#!"
+ PSYCHOKINESIS_2_PERK_EFFECT: "[PODUnlocksCombatMove('POD_combat_move_psychic_psychokinesis_hurl_object')]\n#weak El psíquico puede levantar 10 kilogramos.#!"
+ PSYCHOKINESIS_3_PERK_EFFECT: "[PODUnlocksCombatMove('POD_combat_move_psychic_psychokinesis_kinetic_blow')]\n#weak El psíquico puede levantar 100 kilogramos.#!"
+ PSYCHOKINESIS_4_PERK_EFFECT: "[PODUnlocksCombatMove('POD_combat_move_psychic_psychokinesis_levitation')]\n#weak El psíquico puede levantar 250 kilogramos.#!"
+ PSYCHOKINESIS_5_PERK_EFFECT: "[PODUnlocksCombatMove('POD_combat_move_psychic_psychokinesis_lethal_force')]\n#weak El psíquico puede levantar 500 kilogramos.#!"
 
  psychometry_1_perk_name: "Psicometría 1"
  psychometry_2_perk_name: "Psicometría 2"
@@ -291,10 +291,10 @@
  psychoportation_4_perk_name: "Salto Muy Largo"
  psychoportation_5_perk_name: "Salto a Ciegas"
 
- PSYCHOPORTATION_1_PERK_EFFECT: "#weak Usando su mente, el psíquico puede teleportarse a corta distancia.\nEl psíquico puede teleportarse a una distancia corta dentro de su campo de visión.#!"
+ PSYCHOPORTATION_1_PERK_EFFECT: "[PODUnlocksCombatMove('POD_combat_move_psychic_psychoportation_short_hop')]\n#weak Con la mente, el psíquico puede teletransportarse a poca distancia.\nEl psíquico puede teletransportarse a poca distancia dentro de su campo visual.#!"
  PSYCHOPORTATION_2_PERK_EFFECT: "Como [character_interaction|E], te permite teleportar tu ejército a la localización de tu objetivo, o teleportarte a tu siguiente destino al viajar. La distancia máxima equivale a un reino pequeño (ejemplo: de Gales de arriba a abajo)\n#weak El psíquico puede teleportarse a través de distancias mayores.#!"
- PSYCHOPORTATION_3_PERK_EFFECT: "Aumenta la distancia máxima de [GetPerk('psychoportation_2_perk').GetName( GetNullCharacter )] a un reino grande (ejemplo: de Francia de arriba a abajo)\n#weak El psíquico puede teleportarse a través de distancias considerables.#!"
- PSYCHOPORTATION_4_PERK_EFFECT: "Aumenta la distancia máxima de [GetPerk('psychoportation_2_perk').GetName( GetNullCharacter )] a un reino masivo (ejemplo: del Sacro Imperio Romano de izquierda a derecha)\n#weak El psíquico puede teleportarse a través de distancias aún mayores.#!"
+ PSYCHOPORTATION_3_PERK_EFFECT: "Aumenta la distancia máxima de [GetPerk('psychoportation_2_perk').GetName( GetNullCharacter )] a un reino grande (por ejemplo: Francia de punta a punta)\n[PODUnlocksCombatMove('POD_combat_move_psychic_psychoportation_rescue_jump')]\n#weak El psíquico puede teletransportarse a grandes distancias.#!"
+ PSYCHOPORTATION_4_PERK_EFFECT: "Aumenta la distancia máxima de [GetPerk('psychoportation_2_perk').GetName( GetNullCharacter )] a un reino enorme (por ejemplo: el Sacro Imperio Romano de izquierda a derecha)\n[PODUnlocksCombatMove('POD_combat_move_psychic_psychoportation_forced_dislocation')]\n#weak El psíquico puede teletransportarse a distancias aún mayores.#!"
  PSYCHOPORTATION_5_PERK_EFFECT: "Elimina el límite de distancia de [GetPerk('psychoportation_2_perk').GetName( GetNullCharacter )]\n#weak El psíquico ya no necesita ver el destino para su teleportación.#!"
 
  pyrokinesis_1_perk_name: "Cerillas"
@@ -303,11 +303,11 @@
  pyrokinesis_4_perk_name: "Pirotécnia"
  pyrokinesis_5_perk_name: "Infierno"
 
- PYROKINESIS_1_PERK_EFFECT: "#weak El psíquico puede invocar fuego.\nEl psíquico puede producir una pequeña llama suficiente para encender una vela o un cigarrillo.#!"
- PYROKINESIS_2_PERK_EFFECT: "#weak El psíquico puede hacer que objetos inflamables ardan.#!"
- PYROKINESIS_3_PERK_EFFECT: "#weak El psíquico puede producir pequeñas ráfagas de llamas de la nada.#!"
+ PYROKINESIS_1_PERK_EFFECT: "[PODUnlocksCombatMove('POD_combat_move_psychic_pyrokinesis_spark')]\n#weak El psíquico puede hacer surgir fuego.\nEl psíquico puede producir una diminuta llama que basta para encender una vela o un cigarrillo.#!"
+ PYROKINESIS_2_PERK_EFFECT: "[PODUnlocksCombatMove('POD_combat_move_psychic_pyrokinesis_combustion')]\n#weak El psíquico puede hacer arder objetos inflamables.#!"
+ PYROKINESIS_3_PERK_EFFECT: "[PODUnlocksCombatMove('POD_combat_move_psychic_pyrokinesis_suns_fury')]\n#weak El psíquico puede producir pequeñas llamaradas de la nada.#!"
  PYROKINESIS_4_PERK_EFFECT: "#weak El psíquico puede dar a las llamas invocadas una dirección general.#!"
- PYROKINESIS_5_PERK_EFFECT: "#weak El psíquico puede provocar llamaradas más grandes y dirigirlas a voluntad.#!"
+ PYROKINESIS_5_PERK_EFFECT: "[PODUnlocksCombatMove('POD_combat_move_psychic_pyrokinesis_inferno')]\n#weak El psíquico puede provocar brotes de llama mayores y dirigirlos a voluntad.#!"
 
  soulstealing_1_perk_name: "Invasión Onírica"
  soulstealing_2_perk_name: "Minar la Voluntad"
@@ -339,8 +339,8 @@
  telepathy_4_perk_name: "Telepatía 4"
  telepathy_5_perk_name: "Telepatía 5"
 
- TELEPATHY_1_PERK_EFFECT: "#weak La Telepatía es el talento de dominar la mente de otro con la del psíquico.\nEl psíquico puede sentir emociones básicas de un objetivo, enviarle un impulso menor o hacer que se contraiga.#!"
+ TELEPATHY_1_PERK_EFFECT: "[PODUnlocksCombatMove('POD_combat_move_psychic_telepathy_read_intent')]\n#weak La telepatía es el talento de dominar la mente ajena con la del psíquico.\nEl psíquico puede percibir las emociones básicas de un objetivo, enviarle un impulso menor o provocarle un tic.#!"
  TELEPATHY_2_PERK_EFFECT: "#weak El psíquico puede leer pensamientos superficiales, transmitir una sola idea o provocar una breve noción.#!"
- TELEPATHY_3_PERK_EFFECT: "Como [character_interaction|E], inicia un duelo de diplomacia contra el objetivo para obtener un favor débil sobre él.\n#weak El psíquico puede leer recuerdos recientes o planes futuros, transmitir emociones o ideas complejas o provocar una acción inusual.#!"
+ TELEPATHY_3_PERK_EFFECT: "Como [character_interaction|E], inicia un duelo de diplomacia contra el objetivo para obtener un gancho débil sobre él.\n[PODUnlocksCombatMove('POD_combat_move_psychic_telepathy_deep_probe')]\n#weak El psíquico puede leer recuerdos recientes o planes futuros, transmitir emociones o ideas complejas o provocar una acción inusual.#!"
  TELEPATHY_4_PERK_EFFECT: "Nueva opción para la [character_interaction|E] de Telepatía para obtener un favor fuerte en lugar de uno débil.\n#weak El psíquico puede leer pensamientos profundos, enviar varias frases o tomar temporalmente el control del cuerpo del objetivo.#!"
- TELEPATHY_5_PERK_EFFECT: "Nueva opción para la [character_interaction|E] de Telepatía para obtener un favor fuerte perpetuo.\n#weak El psíquico puede leer los secretos subconscientes más profundos de un objetivo, mantener una conversación con él o tomar control completo de su cuerpo, incluyendo la reescritura de recuerdos.#!"
+ TELEPATHY_5_PERK_EFFECT: "Nueva opción de la [character_interaction|E] de Telepatía para obtener un gancho fuerte perpetuo.\n[PODUnlocksCombatMove('POD_combat_move_psychic_telepathy_implanted_impulse')]\n#weak El psíquico puede leer los secretos subconscientes más profundos de un objetivo, mantener una conversación con él o tomar el control completo de su cuerpo, incluida la reescritura de recuerdos.#!"

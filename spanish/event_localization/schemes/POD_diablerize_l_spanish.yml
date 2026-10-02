@@ -56,7 +56,7 @@
  POD_diablerize.200.option.d: "¡Mesmerizar!"
  POD_diablerize.200.option.d.desc: "Un conflicto de dominación"
  POD_diablerize.200.option.d.tt.beast: "#beast ¡[attacker.GetSheHe|U] obedecerá!#!"
- POD_diablerize.200.option.d.tt: "Un duelo de Administración determinará si puedes usar la $pod_discipline$ de Dominación para ordenar a [attacker.GetFirstName] que detenga su ataque."
+ POD_diablerize.200.option.d.tt: "Un duelo de administración determinará si puedes usar la $pod_discipline$ de dominación para ordenar a [attacker.GetFirstName] que detenga [attacker.GetHerHis] ataque."
  POD_diablerize.200.option.d.tt.mesmerize: "Puedo mesmerizar mentes inferiores."
  POD_diablerize.200.option.d.tt.rationalize: "Puedo hacer que los Esclavos racionalicen mis órdenes como si fueran suyas."
  POD_diablerize.200.option.d.tt.submerged_directive: "Puedo submerge las directrices para convertir a los débiles en mis peones."
@@ -85,7 +85,7 @@
  POD_diablerize.275.desc.success: "He logrado escapar de [attacker.GetFirstName]. [attacker.GetSheHe|U] se ha quedado muy atrás, fuera de mi vista."
  POD_diablerize.275.desc.failure: "He corrido, pero no lo suficientemente rápido. [attacker.GetFirstName] me ha atrapado."
  POD_diablerize.275.option.a.success: "Debo mantenerme lejos de [attacker.GetHerHim]."
- POD_diablerize.275.option.a.failure: "¡Es su vida o la mía!"
+ POD_diablerize.275.option.a.failure: "¡Es [attacker.GetHerHim] o yo!"
 
 # Hide Duel
 #300 hide duel notify atacker
@@ -100,13 +100,13 @@
  POD_diablerize.325.desc.success: "Ha estado cerca. He logrado esconderme de [attacker.GetFirstName]. Ahora, si tan solo puedo moverme con suficiente sigilo sin atraer la atención, lograré alejarme de [attacker.GetHerHim]."
  POD_diablerize.325.desc.failure: "Intenté esconderme, pero [attacker.GetFirstName] me encontró."
  POD_diablerize.325.option.a.success: "Necesito cubrir mis huellas."
- POD_diablerize.325.option.a.failure: "¡Es su vida o la mía!"
+ POD_diablerize.325.option.a.failure: "¡Es [attacker.GetHerHim] o yo!"
  
 # Negotiate Presence Duel
 #350 entrance duel notify atacker
  POD_diablerize.350.t: "Diablerie: ¡Enajenación!"
- POD_diablerize.350.desc.success: "Al mirar a [defender.GetHerHis] ojos, me asombra lo maravilloso[ROOT.Char.Custom('ES_XA')] que es [defender.GetFirstName]. Realmente me agrada. Jamás podría hacer nada para herir[ROOT.Char.Custom('ES_AlAla')] [defender.GetHerHim]. ¿Por qué estoy aquí, si no es para deleitarme en la gloria de [defender.GetHerHis]?"
- POD_diablerize.350.desc.failure: "[defender.GetFirstName] intentó seducirme, pero mi mente no es tan débil como para caer ante un truco tan burdo. ¡Tendré su sangre!"
+ POD_diablerize.350.desc.success: "Al mirar a [defender.GetHerHis] ojos, me asombra lo maravilloso que es [defender.GetFirstName]. Me gusta de verdad. Jamás podría hacer nada que le hiciera daño a [defender.GetHerHim]. ¿Para qué estoy aquí, si no es para bañarme en [defender.GetHerHis] gloria?"
+ POD_diablerize.350.desc.failure: "[defender.GetFirstName] intentó embaucarme, pero mi mente no es tan débil como para caer en una artimaña tan descarada. ¡Tendré [defender.GetHerHis] sangre!"
  POD_diablerize.350.option.a.success: "Te quiero muchísimo."
  POD_diablerize.350.option.a.success.tt: "Mientras esté enajenad[ROOT.Char.Custom('ES_OA')] por [defender.GetFirstName], no podré intentar [Glossary('Diablerizar','game_concept_diablerie_desc')] a [defender.GetHerHim] de nuevo."
  POD_diablerize.350.option.a.failure: "Tus encantos no me impresionan."
@@ -114,7 +114,7 @@
 #375 entrance duel notify defender
  POD_diablerize.375.t: "Enajenar al enemigo"
  POD_diablerize.375.desc.success: "Con mi $pod_discipline$ de Presencia, he enajenado a [attacker.GetFirstName]. Mientras esté seducid[ROOT.Char.Custom('ES_OA')], [attacker.GetSheHe] no es una amenaza para mí."
- POD_diablerize.375.desc.failure: "Intento captar la mirada de [attacker.GetFirstName] y irradiar mi Presencia hacia [attacker.GetHerHim] para volverle pasiv[ROOT.Char.Custom('ES_OA')]. Con la velocidad y la ira con la que [attacker.GetSheHe] se aproxima a mí, parece que he fallado."
+ POD_diablerize.375.desc.failure: "Intento captar la mirada de [attacker.GetFirstName] e irradiar mi presencia hacia [attacker.GetHerHim] para volverle pasivo. Por la rapidez y la ira con que [attacker.GetSheHe] se me acerca, parece que he fracasado."
  POD_diablerize.375.option.a.success: "Sí, así es. Yo soy a quien adoras."
  POD_diablerize.375.option.a.success.tt: "Mientras [attacker.GetFirstName] esté enajenad[ROOT.Char.Custom('ES_OA')] por mí, [attacker.GetSheHe] no podrá intentar [Glossary('Diablerizar','game_concept_diablerie_desc')] a mí de nuevo."
  POD_diablerize.375.option.a.failure: "¡Por qué [attacker.GetSheHe] no me ama!"
@@ -123,7 +123,7 @@
 
 #425 dominate duel notify defender 
  POD_diablerize.425.t: "Hipnotizar al enemigo"
- POD_diablerize.425.desc.success: "Con mi $pod_discipline$ de Dominación, doblego su voluntad como un alfarero dobla la arcilla. Primero obligo a [attacker.GetHerHim] a que diga «¡Detente!». Ahora, unas órdenes más interesantes."
+ POD_diablerize.425.desc.success: "Con mi $pod_discipline$ de dominación, doblego [attacker.GetHerHis] voluntad como un alfarero dobla la arcilla. Primero le obligo a «¡Detente!». Ahora, algunas órdenes más interesantes."
  POD_diablerize.425.desc.failure: "Intento alcanzar la mente de [attacker.GetHerHis]. Es como una fortaleza que no puedo penetrar. [attacker.GetSheHe|U] es sordo[ROOT.Char.Custom('ES_OA')] a mis repetidas órdenes."
  POD_diablerize.425.option.a: "Abandona este lugar. No regreses."
  POD_diablerize.425.option.a.tt: "La conjura de $pod_diablerie$ de [attacker.GetFirstNamePossessive] contra ti termina."
@@ -163,8 +163,8 @@
  
 #475 shapeshift duel notify defender
  POD_diablerize.475.t: "Forma cambiante"
- POD_diablerize.475.desc.success: "Me concentro en mi $pod_discipline$ y me transformo en una forma intangible. Se completa antes de que [attacker.GetFirstName] pueda alcanzarme. Luego escapo con facilidad."
- POD_diablerize.475.desc.failure: "Comienzo el proceso para transformarme en una forma intangible. No puedo hacerlo lo suficientemente rápido antes de que [attacker.GetFirstName] se abalance sobre mí."
+ POD_diablerize.475.desc.success: "Concentro mi $pod_discipline$ y me transformo en una forma intangible. Está completa antes de que [attacker.GetFirstName] pueda alcanzarme. Después escapo con facilidad."
+ POD_diablerize.475.desc.failure: "Comienzo el proceso de transformarme en una forma intangible. No logro hacerlo con la rapidez suficiente antes de que [attacker.GetFirstName] esté sobre mí."
  POD_diablerize.475.option.a.success: "Este no será el último truco que me salve."
  POD_diablerize.475.option.a.failure: "¡Carne contra carne!"
  
@@ -196,7 +196,7 @@
  POD_diablerize.525.t: "¡La lucha!"
  POD_diablerize.525.desc.success: "La Destreza de combate de [attacker.GetFirstNamePossessive] es demasiado para superarla. He sido derrotado."
  POD_diablerize.525.desc.failure: "La batalla es brutal pero también rápida. Soy victorioso y [attacker.GetFirstName] yace a mis pies."
- POD_diablerize.525.option.a.failure: "Destruye a [attacker.GetFirstName]. Es la Muerte Definitiva para [attacker.GetHerHim]." #Kill
+ POD_diablerize.525.option.a.failure: "Destruir a [attacker.GetFirstName]. Es la Muerte Definitiva para [attacker.GetHerHim]." #Kill
  POD_diablerize.525.option.b.failure: "[attacker.GetSheHe] es ahora mi prisionero/a." #Stake & Imprison
  POD_diablerize.525.option.c.failure: "Simplemente me marcharé, la victoria es lo suficientemente dulce." #Release
  POD_diablerize.525.option.d.failure: "¡Tendré la sangre de su corazón!" #Diaberlize! 
@@ -207,7 +207,7 @@
  POD_diablerize.550.desc.destruction: "He sido destruido/a por [defender.GetFirstName]."
  POD_diablerize.550.desc.imprisonment: "He sido encarcelado/a por [defender.GetFirstName]."
  POD_diablerize.550.desc.release: "[defender.GetFirstName] me dejó ir. No lo entiendo..."
- POD_diablerize.550.desc.diablerie: "Los colmillos de [defender.GetFirstName] se hunden en mi carne. [defender.GetSheHe] bebe toda mi sangre. Yo iba a ser el cazador, pero yo era la presa."
+ POD_diablerize.550.desc.diablerie: "Los colmillos de [defender.GetFirstNamePossessive] se hunden en mi carne. [defender.GetSheHe] bebe toda mi sangre. Yo debía ser el cazador, pero fui la presa."
  POD_diablerize.550.option.a: "Así es como termina."
 
 # Getting to the Yum Yum!
@@ -255,10 +255,10 @@
  POD_diablerize.803.option.a: "¡Todos viven y mueren cuando a mí me plazca!"
  unconquered_soul_in_progress_tt: "#N Tu crimen de $pod_diablerie$ está volviendo para atormentarte...#!"
 
- POD_diablerize.804.desc: "Algo va muy mal contigo. Lo has estado sospechando desde hace tiempo, pero ya no queda duda en tu mente. Tu comportamiento ha sido errático, por decir lo menos, pasando de insultar a tus vasallos a concederles favores (¡a veces ambos al mismo tiempo!) aparentemente sin razón ni sentido.\nEs como si alguien más estuviera tomando el control de tus pensamientos y siguiendo su propia agenda, muy distinta a la tuya, resultando en estos lapsos de juicio.\nTienes un creciente sentimiento de temor de que podrías haber subestimado la Fuerza de Voluntad de [unconquered_soul.GetFirstName]..."   
+ POD_diablerize.804.desc: "Algo va muy mal contigo. Llevas un tiempo sospechándolo, pero ya no te queda ninguna duda. Tu comportamiento ha sido, por decir algo, errático: pasas de insultar a los vasallos a hacerles favores (¡a veces ambas cosas a la vez!) al parecer sin ton ni son.\nEs como si alguien más estuviera tomando el control de tus pensamientos y siguiendo su propia agenda, bastante distinta de la tuya, lo que causa estos lapsos de juicio.\nTienes una sensación creciente de pavor: quizá hayas subestimado la fuerza de voluntad de [unconquered_soul.GetFirstName]..."   
  POD_diablerize.804.option.a: "¡Ganaré ahora como gané entonces!"
 
- POD_diablerize.805.desc: "La situación empeora.\nTe has sorprendido rompiendo tu propio código moral una y otra vez, aparentemente sin siquiera pensarlo. Quizás incluso peor, has estado actuando de forma distinta en su conjunto, como si estuvieras siguiendo un nuevo conjunto de reglas. Ha quedado absolutamente claro que tu propio ser está bajo el ataque del alma vengativa de [unconquered_soul.GetFirstName], que intenta asegurarse de que sigas el camino «adecuado»."   
+ POD_diablerize.805.desc: "La situación empeora.\nTe has sorprendido quebrantando tu propio código moral una y otra vez, al parecer sin siquiera pensarlo. Quizá peor aún, has estado actuando de forma distinta en conjunto, como si siguieras un nuevo conjunto de reglas. Ha quedado más que claro que tu propio ser está bajo el ataque del alma vengativa de [unconquered_soul.GetFirstName], que intenta asegurarse de que sigas el camino «correcto»."   
  POD_diablerize.805.option.a: "¡No me dejaré engañar tan fácilmente!"
  
  complete_same_faith_generic_debuff_modifier: "Blasfemo creativo"
@@ -270,12 +270,12 @@
  POD_diablerize.807.option.a: "Puede rectificarse."
    
  POD_diablerize.808.t: "El Alma Inconquistada: Final"   
- POD_diablerize.808.desc: "[unconquered_soul.GetFirstName] lucha por el control de tu cuerpo más que nunca. Su interferencia ha desorganizado completamente tu ejército; las órdenes contradictorias que emanan de «ambos» han dejado a tus campeones confundidos y tu influencia sobre las milicias mortales locales hecha pedazos.\nTiene que parar... de una forma u otra. Todavía hay una gran posibilidad de que puedas resistir los cambios más... permanentes y salir con tu sentido de la identidad casi intacto. O tal vez la batalla ya haya desgastado tu Fuerza de Voluntad lo suficiente como para que estés listo para renacer en el cuerpo de aquel lo suficientemente necio como para pensar que te había matado.\nLa única pregunta real sigue siendo la misma: ¿quién eres?"   
+ POD_diablerize.808.desc: "[unconquered_soul.GetFirstName] lucha por el control de tu cuerpo más que nunca. Su interferencia ha desorganizado por completo a tu ejército: las órdenes contradictorias de «los dos» dejan confundidos a tus campeones y tu influencia sobre las milicias mortales locales, hecha jirones.\nTiene que acabar... de un modo u otro. Aún hay una gran probabilidad de que puedas resistir los cambios más... permanentes y salir con tu sentido de ti mismo casi intacto. O quizá la batalla ya haya desgastado tu fuerza de voluntad lo bastante como para estar listo para renacer de nuevo en el cuerpo de quien fue lo bastante necio para creer que te mató.\nLa única pregunta verdadera sigue siendo la misma: ¿quién eres?"   
  POD_diablerize.808.option.a: "¡Lárgate! ¡Ya te derroté!"
- POD_diablerize.808.option.b: "#italic ¡He renacido! #!"
+ POD_diablerize.808.option.b: "#italic ¡Renazco!#!"
 
- POD_diablerize.809.desc: "[unconquered_soul.GetFirstName] lucha por el control de tu cuerpo más que nunca. Su interferencia te ha hecho cometer algunos errores críticos en tu gestión nocturna, haciendo que parezcas un necio mientras alertas a las autoridades mortales de tu presencia.\nTiene que parar... de una forma u otra. Todavía hay una gran posibilidad de que puedas resistir los cambios más... permanentes y salir con tu sentido de la identidad casi intacto. O tal vez la batalla ya haya desgastado tu Fuerza de Voluntad lo suficiente como para que estés listo para renacer en el cuerpo de aquel lo suficientemente necio como para pensar que te había matado.\nLa única pregunta real sigue siendo la misma: ¿quién eres?"   
- POD_diablerize.810.desc: "[unconquered_soul.GetFirstName] lucha por el control de tu cuerpo más que nunca. Su interferencia ha debilitado gravemente tu influencia sobre partes de tu señorío, haciendo que pierdas algo de oro valioso que invertiste allí.\nTiene que parar... de una forma u otra. Todavía hay una gran posibilidad de que puedas resistir los cambios más... permanentes y salir con tu sentido de la identidad casi intacto. Or tal vez la batalla ya haya desgastado tu Fuerza de Voluntad lo suficiente como para que estés listo para renacer en el cuerpo de aquel lo suficientemente necio como para pensar que te había matado.\nLa única pregunta real sigue siendo la misma: ¿quién eres?"   
+ POD_diablerize.809.desc: "[unconquered_soul.GetFirstName] lucha por el control de tu cuerpo más que nunca. Su interferencia te ha hecho cometer algunos errores críticos en tu gestión noche a noche, lo que te hace parecer un necio y alerta a las autoridades mortales de tu presencia.\nTiene que acabar... de un modo u otro. Aún hay una gran probabilidad de que puedas resistir los cambios más... permanentes y salir con tu sentido de ti mismo casi intacto. O quizá la batalla ya haya desgastado tu fuerza de voluntad lo bastante como para estar listo para renacer de nuevo en el cuerpo de quien fue lo bastante necio para creer que te mató.\nLa única pregunta verdadera sigue siendo la misma: ¿quién eres?"   
+ POD_diablerize.810.desc: "[unconquered_soul.GetFirstName] lucha por el control de tu cuerpo más que nunca. Su interferencia ha debilitado gravemente tu influencia sobre partes de tu reino, haciéndote perder algo del valioso oro que invertiste allí.\nTiene que acabar... de un modo u otro. Aún hay una gran probabilidad de que puedas resistir los cambios más... permanentes y salir con tu sentido de ti mismo casi intacto. O quizá la batalla ya haya desgastado tu fuerza de voluntad lo bastante como para estar listo para renacer de nuevo en el cuerpo de quien fue lo bastante necio para creer que te mató.\nLa única pregunta verdadera sigue siendo la misma: ¿quién eres?"   
       
  POD_diablerize.4000.t: "¡Conjura de Diablerie frustrada!"
  POD_diablerize.4000.desc: "Por algún giro del destino, mi conjura para [Glossary('Diablerizar','game_concept_diablerie_desc')] a [defender.GetFirstName] ha fallado."  
@@ -293,7 +293,7 @@
  POD_diablerize.250.option.a.toast: "¡Escapó!"
 
  POD_diablerize.1000.t: "Diablerie: El Duelo"
- POD_diablerize.1000.desc: "Se acabaron los juegos, es hora de terminar con esto de una vez por todas. Solo uno de vosotros saldrá vivo de esto.\nUno busca el poder mientras el otro busca proteger su alma, pero no hay causas dignas en el Mundo de Tinieblas. El más fuerte, o el más astuto, ganará."  
+ POD_diablerize.1000.desc: "Se acabaron los juegos, es hora de terminar esto de una vez por todas. Solo uno de vosotros saldrá de esta.\nUno de vosotros busca poder mientras el otro busca proteger su alma, pero no hay causas dignas en el $pod_wod$. Ganará el más fuerte, o el más astuto."  
  POD_diablerize.1000.option.a: "Ya no hay vuelta atrás."
   
  POD_diablerize.601.t: "Diablerie: ¡Victoria!"
@@ -301,7 +301,7 @@
  POD_diablerize.601.option.a: "Seré misericordioso y te mataré rápidamente."
   
  POD_diablerize.251.t: "Diablerie: ¡Esconderse!"
- POD_diablerize.251.desc: "¡[defender.GetFirstName] intenta escapar de mí! Probablemente se esconda en algún lugar cercano, o use sus poderes para confundir mis sentidos... Debo estar atento a cada pequeño detalle para atrapar a este cobarde."
+ POD_diablerize.251.desc: "¡[defender.GetFirstName] intenta escapar de mí! Se esconde cerca, probablemente, o usa poderes para engañar a mis sentidos... Tengo que estar atento a cada pequeño detalle para atrapar a este cobarde."
  POD_diablerize.251.option.a: "¡Que comience la persecución!"
  POD_diablerize.251.option.b: "No merece la pena el esfuerzo en este punto."
  POD_diablerize.251.option.a.tt.attacker_wins: "¡Has encontrado al cobarde!"

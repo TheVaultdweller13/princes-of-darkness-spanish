@@ -1593,7 +1593,6 @@ def base_mod_info():
             "supported": re.search(r'supported_version="([^"]*)"', t).group(1), "name": "", "date": ""}
     log = wp.parent / CFG.get("base_changelog", "POD_change_log.info")
     if log.exists():
-        # primera cabecera: # Princes of Darkness, "Descent of the Dragons", Version 1.19.0.6, 6/24/2026
         m = re.search(r'^#\s*[^,\n]*,\s*"([^"]+)",\s*Version\s+([\w.]+),\s*([\d/]+)', log.read_text(encoding="utf-8", errors="replace"), re.M)
         if m and m.group(2) == info["version"]:
             info["name"], info["date"] = m.group(1), m.group(3)

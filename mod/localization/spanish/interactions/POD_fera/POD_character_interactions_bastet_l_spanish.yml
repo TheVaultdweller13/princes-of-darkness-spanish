@@ -8,23 +8,23 @@
  POD_withering_stare_interaction_desc: "Cruza la mirada con el objetivo e inflige daño a [recipient.GetFirstName]."
  
  POD_deny_the_hungry_perk_interaction: "Negar al hambriento"
- POD_deny_the_hungry_perk_interaction_desc: "El condado objetivo obtiene [GetModifier( 'deny_the_hungry_perk_modifier' ).GetNameWithTooltip|L]."
- deny_the_hungry_perk_modifier: "Negar al hambriento"
+ POD_deny_the_hungry_perk_interaction_desc: "Ninguna fuerza de voluntad puede vencer a un cuerpo que se rinde."
  
  POD_madness_perk_interaction: "Locura"
- POD_madness_perk_interaction_desc: "Usa este poder para darle a [recipient.GetFirstName] un rasgo mental negativo."
- POD_madness_perk_interaction_options_heading: "¿Qué rasgo le daré?"
+ POD_madness_perk_interaction_desc: "Tambaleándote, jadeando, llevado al borde de la locura."
+ POD_madness_perk_interaction_success: "¡Locura!"
  
- POD_absorb_disease_interaction: "Absorber enfermedad"
- POD_absorb_disease_interaction_desc: "Absorbe una enfermedad de [recipient.GetFirstName] para su uso posterior."
  
- POD_release_disease_interaction: "Liberar enfermedad"
- POD_release_disease_interaction_desc: "Libera una enfermedad que poseas en la corte de [recipient.GetFirstNamePossessive]."
- POD_release_disease_interaction_options_heading: "¿Qué enfermedad liberaré?"
  
  POD_ojas_surge_perk_interaction: "Oleada de Ojas"
  POD_ojas_surge_perk_interaction_desc: "Potencia temporalmente un atributo."
  POD_ojas_surge_perk_interaction_options_heading: "¿Qué atributo potenciaré?"
+ shared_strength_diplomacy_gain_modifier: "Fuerza Compartida: Ganancia de Diplomacia"
+ shared_strength_martial_gain_modifier: "Fuerza Compartida: Ganancia de Guerra"
+ shared_strength_stewardship_gain_modifier: "Fuerza Compartida: Ganancia de Administración"
+ shared_strength_intrigue_gain_modifier: "Fuerza Compartida: Ganancia de Intriga"
+ shared_strength_learning_gain_modifier: "Fuerza Compartida: Ganancia de Saber"
+ shared_strength_prowess_gain_modifier: "Fuerza Compartida: Ganancia de Destreza"
  
  POD_shadow_brethren_interaction: "Convocar duplicado sombrío"
  POD_shadow_brethren_interaction_desc: "Convoca duplicados sombríos de ti mismo."
@@ -45,5 +45,3 @@
  POD_the_madness_of_crowds_interaction: "La locura de las multitudes"
  POD_the_madness_of_crowds_interaction_desc: "Despierta el lado salvaje de todos los que están cerca para que cumplan las órdenes de [recipient.GetFirstName]."
  
- POD_reveal_scheme_interaction: "Revelar intriga"
- POD_reveal_scheme_interaction_desc: "Conoce cada intriga de [recipient.GetFirstName]."

@@ -12,7 +12,7 @@
  POD_chargen.2.option.b: "$glossary_fera$"
 
  POD_chargen_which_lineage: "¿A qué casa reclamas linaje?"
- POD_chargen_clan_tt: "Podrás elegir entre los siguientes [Glossary('Clans','game_concept_Clan_desc')]:"
+ POD_chargen_clan_tt: "Podrás elegir entre los siguientes $pod_clans$:"
 
  POD_chargen.3.t: "La Primera Generación" 
  POD_chargen.3.desc: "¿Quién es el progenitor de los vampiros?"
@@ -344,7 +344,7 @@
  POD_chargen.27.option.a: "Brahmins, la casta sacerdotal"
  POD_chargen.27.option.b: "Kshatriya, la casta guerrera"
  POD_chargen.27.option.c: "Vaishya, la casta de mercaderes y artesanos"
- POD_chargen.27.option.d: "Shudra, la casta de trabajadores"
+ POD_chargen.27.option.d: "Shudra, la casta de los trabajadores"
  POD_chargen.27.option.e: "Chandalas, los intocables"
  POD_chargen.27.option.f: "Quizás no soy un descendiente de los pitri de la India..."
 
@@ -356,7 +356,7 @@
  POD_chargen.28.option.d: "Wu Zao, Brahmins de la Golconda"
  POD_chargen.28.option.f: "Brahina, oráculos y lunáticos."
 
- POD_chargen.29.t: "Los Kshartriya"
+ POD_chargen.29.t: "Los Kshatriya"
  POD_chargen.29.desc: "Guerreros de los Rakta-sadhu, ¿cuál es tu $pod_clan$?"
  POD_chargen.29.option.a: "Ravnos, Clan líder de la India" 
  POD_chargen.29.option.b: "Kartariya, los metamorfos de múltiples brazos (Szlachta indios)" 
@@ -564,7 +564,7 @@
  #POD_chargen.610.option.zz: "Reconsideras a qué casa unirte." 
  
  POD_chargen.620.t: "Potencia de Sangre"
- POD_chargen.620.desc: "La Potencia de Sangre determina la fuerza de tus poderes vampíricos, así como cuánta sangre necesitas para satisfacer tu Ansia. La potencia de sangre está definida inicialmente por la generación y limitada por la generación. La potencia de sangre crece muy lentamente con el tiempo, pero también puede aumentar a través de la $pod_diablerie$. Entrar en $pod_torpor$ reducirá lentamente tu potencia de sangre."
+ POD_chargen.620.desc: "La Potencia de Sangre determina la fuerza de tus poderes vampíricos, así como cuánta sangre necesitas para satisfacer tu Ansia. La Potencia de Sangre está definida inicialmente por la generación y limitada por esta. Crece muy lentamente con el tiempo, pero también puede aumentar mediante la $pod_diablerie$. Entrar en $pod_torpor$ reducirá poco a poco tu Potencia de Sangre."
  POD_chargen.620.option.a: "Mi potencia de sangre está establecida"
  
  POD_chargen.650.t: "La Mascarada"
@@ -727,6 +727,7 @@
  POD_chargen.830.option.g: "Mil Susurros"
  POD_chargen.830.option.h: "Camino Interior"
  POD_chargen.830.option.i: "Camino de los Diez Mil Gritos"
+ POD_chargen.830.option.j: "Conservar tu [Glossary('Dharma','podgloss.dharma')] actual"
  
  POD_chargen.840.t: "Tal'Mahe'Ra: La Mano Negra"
  POD_chargen.840.desc: "¿Qué camino de la Mano Negra sigues?"
@@ -779,7 +780,7 @@
  POD_chargen.1010.option.a: "Animales"
  POD_chargen.1010.option.a.tt: "Intento cazar solo animales, no personas."
  POD_chargen.1010.option.b: "Humanos"
- POD_chargen.1010.option.b.tt: "Yo, los mortales."
+ POD_chargen.1010.option.b.tt: "Cazo al ganado."
  POD_chargen.1010.option.c: "Vampiros"
  POD_chargen.1010.option.c.tt: "Cazo a los cazadores."
 
@@ -813,7 +814,7 @@
  POD_chargen.1040.option.d: "Creo que tengo un enfoque diferente..."
 
  POD_chargen.1050.t: "Lo que necesitas entender es..."
- POD_chargen.1050.desc: "[GetTrait('predatortype_cenobite').GetName(GetNullCharacter)] - Un vampiro que tiene un [POD_herd|E] en una institución religiosa como un monasterio.\n\n[GetTrait('predatortype_phlebotomist').GetName(GetNullCharacter)] - Un vampiro que adquiere $pod_vitae$ bajo la apariencia de un médico realizando sangrías.\n\n[GetTrait('predatortype_graverobber').GetName(GetNullCharacter)] - Un vampiro que puede ser encontrado merodeando por cementerios y criptas en busca de cadáveres frescos o dolientes.\n\n[GetTrait('predatortype_bedlamite').GetName(GetNullCharacter)] - Un vampiro que se alimenta de los locos. Puede que también esté loco o no."
+ POD_chargen.1050.desc: "[GetTrait('predatortype_cenobite').GetName(GetNullCharacter)]: un vampiro que tiene un [POD_herd|E] en una institución religiosa, como un monasterio.\n\n[GetTrait('predatortype_phlebotomist').GetName(GetNullCharacter)]: un vampiro que obtiene $pod_vitae$ bajo la apariencia de un médico que practica sangrías.\n\n[GetTrait('predatortype_graverobber').GetName(GetNullCharacter)]: un vampiro al que se puede encontrar merodeando por cementerios y criptas en busca de cadáveres frescos o de dolientes.\n\n[GetTrait('predatortype_bedlamite').GetName(GetNullCharacter)]: un vampiro que se alimenta de los locos. Puede que él mismo esté loco, o puede que no."
  POD_chargen.1050.option.a: "Cenobita"
  POD_chargen.1050.option.a.herd: "Un hombre de fe local se une a tu corte para que te alimentes."
  POD_chargen.1050.option.b: "Flebotomista"
@@ -917,7 +918,7 @@
  POD_chargen.1200.d: "Quizás no soy un ghoul..."
  
  POD_chargen.1300.t: "Aparecidos"
- POD_chargen.1300.desc: "Los esclavos de sangre consumieron la sangre de sus domitores vampiros, estos ghouls asumieron una parte del poder del kindred. Raramente, algunos de sus hijos nacieron con sangre de vampiro en sus venas. Con un mayor dominio de la sangre, son más poderosos que sus padres. Comúnmente llamados '[Glossary('Aparecidos','game_concept_revenant_desc')]', los vástagos [ghoul|E] del $pod_clan$ Tzimisce se llaman 'Zadruga'. ¿De qué línea de [Glossary('Aparecidos','game_concept_revenant_desc')] desciendes?"
+ POD_chargen.1300.desc: "Los esclavos de sangre consumieron la sangre de sus domitores vampiros y estos Ghouls asumieron una parte del poder de los Vástagos. En raras ocasiones, algunos de sus hijos nacieron con sangre de vampiro en las venas. Con un mayor dominio de la sangre, son más poderosos que sus padres. Comúnmente llamados «[Glossary('Aparecidos','game_concept_revenant_desc')]», los vástagos [ghoul|E] del $pod_clan$ Tzimisce se llaman «Zadruga». ¿De qué línea de [Glossary('Aparecidos','game_concept_revenant_desc')] desciendes?"
  POD_chargen.1300.option.a: "Zadruga, los Vástagos de los Tzimisce"
  POD_chargen.1300.option.b: "Sirvientes de la Tal'mahe'Ra, la Mano Negra"
  POD_chargen.1300.option.c: "Siervos de sangre en Europa"
@@ -952,7 +953,7 @@
  POD_chargen.1330.t: "Sirvientes de la Tal'maHe'Ra"
  POD_chargen.1330.desc: "La Manus Nigrum tiene familias de [Glossary('Aparecido','game_concept_revenant_desc')] comprometidas con su servicio desde tiempos antiguos. ¿Qué dinastía sirve a la Mano Negra?"
  POD_chargen.1330.option.a: "Rafastio, Brujas del Valle del Po"
- POD_chargen.1330.option.b: "Enrathi, Esclavizadores etruscos de Chatterlings"
+ POD_chargen.1330.option.b: "Enrathi, esclavizadores etruscos de Chatterlings"
  POD_chargen.1330.option.c: "Marijava, el Verdadero Culto de la Muerte Thugee"
  POD_chargen.1330.option.d: "Lidero una casa cadete de los Rafastio"
  POD_chargen.1330.option.e: "Lidero una casa cadete de los Enrathi"
@@ -1023,6 +1024,11 @@
  POD_chargen.1500.option.c: "Un [GetTrait('shih').GetName( GetPlayer )], los cazadores orientales"
  POD_chargen.1500.option.d: "Regresar a la Inquisición de las Sombras"
  POD_chargen.1500.option.e: "Quizás no soy un cazador"
+ POD_chargen.1500.option.f: "Un Ikhwan al-Safa, los cazadores musulmanes."
+ POD_chargen.1500.option.g: "Un Guerrero de Dazbog, los cazadores eslavos."
+ POD_chargen.1500.option.h: "Un Juez, los cazadores judíos."
+ POD_chargen.1500.option.i: "Un Akritai, los cazadores ortodoxos."
+ POD_chargen.1500.option.j: "Un Baghatur de Qorjin, los cazadores mongoles."
 
  POD_chargen.1620.t: "Asuntos de la Corte"
  POD_chargen.1620.desc: "Una Corte es el organismo rector de los [GetTrait('kueijin').GetName( GetNullCharacter )] en una región. Muchas cortes utilizan sociedades secretas, bandas y subordinados burocráticos como peones y cortinas de humo, conocidos colectivamente como Pantallas Escarlata.\n\nTradicionalmente, las cortes principales se conocen como las Cinco Cortes Augustas. El Tigre Blanco abarca el Tíbet, Tarim y el Himalaya, el Fénix Escarlata reclama dominio sobre el Sudeste Asiático, el Emperador Amarillo sobre China, la Tortuga Negra cabalga en las estepas mientras el Dragón Azul administra Corea y Japón.\nExisten muchas más cortes menores que imitan a sus pares más prestigiosas. Incluso aquellos que rechazan la primacía de las Cinco tienden a estar organizados de manera similar, tan grande es la influencia cultural que han tenido sobre los $pod_kueijin$ a lo largo de los siglos."
@@ -1085,6 +1091,7 @@
  POD_chargen.2100.option.g: "Legión de los Pobres"
  POD_chargen.2100.option.h: "Legión del Destino"
  POD_chargen.2100.option.i: "Quizás no soy de la Jerarquía"
+ POD_chargen.2100.option.j: "Conservar mi Legión actual"
  
  POD_chargen.2200.t: "Gremios"
  POD_chargen.2200.desc: "En la sociedad stygia, el dominio de los Arcanoi estaba tradicionalmente controlado por los Gremios Stygios. Estas organizaciones promovían el uso, estudio y regulación de cada Arcanos."
@@ -1105,12 +1112,14 @@
  POD_chargen.2200.option.o: "Mnemoi"
  POD_chargen.2200.option.p: "Solicitadores"
  POD_chargen.2200.option.q: "Quizás no soy de los Gremios"
+ POD_chargen.2100.option.r: "Conservar mi Gremio actual"
  
  POD_chargen.2300.t: "Costa Lejana"
  POD_chargen.2300.desc: "Hay muchas [UmbraGlossaryLocalized('far_shore','Costas Lejanas')] dirigidas por Seres Brillantes caídos, o por locos que vieron a los caídos y pensaron que tenían algo bueno. La más notoria de estas, el Paraíso de los Pescadores, es una visión cristiana primitiva del Cielo que todos los demás ven como una puerta de entrada al Infierno."
  POD_chargen.2300.option.a: "Seres Brillantes"
  POD_chargen.2300.option.b: "Pescadores"
  POD_chargen.2300.option.f: "Quizás no soy de la Costa Lejana"
+ POD_chargen.2300.option.g: "Conservar mi fe actual"
  
  POD_chargen.2400.t: "Renegados"
  POD_chargen.2400.desc: "Los Renegados se pueden dividir aproximadamente en cuatro grupos, aunque a veces sus objetivos se superponen con otros tipos de grupos."
@@ -1119,6 +1128,7 @@
  POD_chargen.2400.option.c: "Forajidos"
  POD_chargen.2400.option.d: "Protestantes"
  POD_chargen.2400.option.e: "Quizás no soy de los Renegados"
+ POD_chargen.2400.option.g: "Conservar mi fe actual"
  
  POD_chargen.2500.t: "Wraith de Otra Parte"
  POD_chargen.2500.desc: "La [UmbraGlossary('tempest')] es un 'mar' en el [UmbraGlossaryLocalized('shadowlands','Inframundo')], y los [Glossary('Reinos Oscuros','game_concept_dark_kingdom_desc')] son islas en ese mar. Cada [Glossary('Reino Oscuro','game_concept_dark_kingdom_desc')] es una hipóstasis para los muertos de una cultura particular."
@@ -1156,9 +1166,11 @@
  POD_chargen.2612.option.g: "Señor de la Sombra"
  POD_chargen.2612.option.h: "Caminante Silencioso"
  POD_chargen.2612.option.i: "Colmillo de Plata"
- POD_chargen.2612.option.j: "Mira Estrellas"
- POD_chargen.2612.option.k: "Guardián de Hombres"
- POD_chargen.2612.option.l: "Danzante de la Espiral Negra"
+ POD_chargen.2612.option.j: "Uktena"
+ POD_chargen.2612.option.k: "Mira Estrellas"
+ POD_chargen.2612.option.l: "Guardián de Hombres"
+ POD_chargen.2612.option.m: "Danzante de la Espiral Negra"
+ POD_chargen.2612.option.n: "Conservar mi Tribu actual"
 
 
  POD_chargen.2620.t: "Raza"
@@ -1242,8 +1254,8 @@
  POD_chargen.3300.option.f: "Quizás no soy un Jinn."
  
  POD_chargen.3400.t: "Kith Africanos"
- POD_chargen.3400.desc: "Kiths indígenas de África."
- POD_chargen.3400.option.f: "Quizás no soy un Kith Africano."
+ POD_chargen.3400.desc: "Linajes indígenas de África."
+ POD_chargen.3400.option.f: "Quizá no soy de los Linajes africanos."
  
  POD_chargen.3500.t: "Kwannon-jin"
  POD_chargen.3500.desc: "Kwannon-jin es el término preferido por los shinma orientales."
@@ -1251,13 +1263,28 @@
  
  POD_chargen.3600.t: "Phyla"
  POD_chargen.3600.desc: "Phyla es el término para los tipos de Inanimae."
- POD_chargen.3600.option.f: "Quizás no soy un Inanimae."
+ POD_chargen.3600.option.f: "Quizá no soy un Inanimae."
  
  POD_chargen.3700.t: "Cortes"
  POD_chargen.3700.desc: "Las Cortes son divisiones más grandes de las Hadas. Diferentes hadas en diferentes partes del mundo se dividen de manera diferente mientras usan el mismo término o uno análogo."
+ POD_chargen.3700.a: "Conservar mi Corte actual"
  
  POD_chargen.3800.t: "El Animal en Todos Nosotros"
  POD_chargen.3800.desc: "Lo que algunos llaman caos, otros llaman variedad o diversidad. Los Pooka vienen en todas las formas y tamaños. Mitad humanos y mitad animales, viven en cuerpos mortales como los otros kith, pero también pueden transformarse en las formas de sus animales particulares.\n\nLos Pooka tienen una habilidad que ningún otro kith tiene: pueden cambiar de forma incluso en su apariencia mortal. Cuando un pooka se transforma en su forma animal, lo hacen tan completamente que se convierte en ese animal tanto a los ojos mortales como a los ojos de las hadas. El poder implicado en esta habilidad desconcierta a muchos changelings que prefieren pensar en los pooka como inútiles, impotentes alborotadores. Los Pooka lo toman con calma."
+ POD_chargen.3900.t: "La profecía de la Rata"
+ POD_chargen.3900.desc: "A comienzos del siglo XIII, los inviernos se alargaron y se enfriaron, y las lluvias cayeron con una duración propia de los monzones. Las cosechas se ahogaron. Los caminos quedaron reducidos a cenagales de barro. El hambre y el frío hicieron su parte para llenar los cementerios. Hay sueños proféticos sobre un suceso cataclísmico futuro que mata a millones de soñadores. Los detalles son vagos, pero parece implicar hordas de ratas que vienen del amanecer, montones de cadáveres ardiendo, esqueletos danzantes, dedos de manos y pies ennegrecidos. Algunas hadas están convencidas de que los Ratkin y sus enfermos aliados de la Sierpe deben ser destruidos.\nTu Vidente ha hablado y dice haber visto un futuro oscuro, peor que la Escisión: la Profecía de la Rata. Deberías centrarte en la curación durante el próximo siglo para asegurarte de que no ocurra."
+ POD_chargen.3900.a: "¡Los Ratkin y sus cómplices!"
+ POD_chargen.3900.b: "¡Para detener a las ratas, necesitamos gatos!"
+ POD_chargen.3900.c: "¡La horda mongola tiene la culpa!"
+ unlock_convert_to_catlover_scheme: "Desbloquea la [interaction|E] $POD_convert_to_catlover_interaction$."
+ POD_chargen.3901.t: "Cuarta Era"
+ POD_chargen.3901.desc: "Antaño siervos de los dioses más poderosos de la jerarquía celestial, los Hsien se encargaban de atender las plegarias de los mortales conforme a los deseos de sus superiores. Durante los terribles sucesos de la Guerra del Río del Dragón, a comienzos de la [fourth_age|E], y la caída de los $pod_wan_xian$ en la [third_age|E], muchos Shinma se rebelaron contra su posición en la Burocracia Celestial, ya fuera para ayudar a los mortales o para volverse contra ellos. Como resultado, fueron castigados por el Augusto Personaje. Los que se atrevieron a ocupar el lugar de los $pod_wan_xian$ fueron expulsados y obligados a vivir entre los mortales del Reino Medio."
+ POD_chargen.3901.a: "¿Me equivoco?"
+ POD_chargen.3901.a.t: "Te ves obligado a ser un changeling y obtendrás automáticamente un heredero clon tras tu muerte natural. Completa tu objetivo para volver a ser hada."
+ POD_chargen.3910.t: "El nacimiento de las hadas"
+ POD_chargen.3910.desc: "Toda Hada, por joven que sea, conoce las artes. ¿Cuáles son tus poderes de nacimiento?"
+ POD_chargen.3910.effect: "Este evento se repetirá hasta que tengas #V 2#! artes"
+ POD_chargen.3910.a: "Con eso basta."
   
  POD_charjoin.100.t: "¿Convertirte en vampiro?"
  POD_charjoin.100.desc: "¿Estás seguro de que quieres estar relacionado con [vampiresire.GetFirstName]?\n\nNo hay vuelta atrás desde las dos primeras opciones."
@@ -1282,16 +1309,16 @@
  POD_charjoin.201.desc: "¿Cuál es tu generación?"
  
  POD_charjoin.300.t: "¿Unirte a esta orden?"
- POD_charjoin.300.desc: "¿Estás seguro de que quieres unirte a esta orden con la recomendación de [huntermentor.GetFirstName]?\n\nNo hay vuelta atrás desde la primera opción."
+ POD_charjoin.300.desc: "¿Seguro que quieres unirte a esta orden con la recomendación de [huntermentor.GetFirstNamePossessive]?\n\nNo hay vuelta atrás desde la primera opción."
  
  POD_charjoin.310.t: "¿Unirte a esta orden?"
- POD_charjoin.310.desc: "Para unirte a esta orden, necesitarás hacer un voto de celibato. ¿Estás seguro de que quieres unirte a esta orden con la recomendación de [huntermentor.GetFirstName]?\n\nNo hay vuelta atrás desde la primera opción."
+ POD_charjoin.310.desc: "Para unirte a esta orden, deberás proclamar un voto de celibato. ¿Seguro que quieres unirte a esta orden con la recomendación de [huntermentor.GetFirstNamePossessive]? \n\nNo hay vuelta atrás desde la primera opción."
  
  POD_charjoin.400.t: "¿Unirte a esta orden?"
- POD_charjoin.400.desc: "¿Estás seguro de que quieres unirte a esta orden con la recomendación de [huntermentor.GetFirstName]?\n\nNo hay vuelta atrás desde la primera opción."
+ POD_charjoin.400.desc: "¿Seguro que quieres unirte a esta orden con la recomendación de [huntermentor.GetFirstNamePossessive]?\n\nNo hay vuelta atrás desde la primera opción."
  
  POD_charjoin.410.t: "¿Unirte a esta orden?"
- POD_charjoin.410.desc: "Para unirte a esta orden, necesitarás hacer un voto de celibato. ¿Estás seguro de que quieres unirte a esta orden con la recomendación de [huntermentor.GetFirstName]?\n\nNo hay vuelta atrás desde la primera opción."
+ POD_charjoin.410.desc: "Para unirte a esta orden, deberás proclamar un voto de celibato. ¿Seguro que quieres unirte a esta orden con la recomendación de [huntermentor.GetFirstNamePossessive]? \n\nNo hay vuelta atrás desde la primera opción."
  
  POD_charjoin.500.t: "¿Unirte a este [Glossary('Wu','podgloss.wu')]?"
  POD_charjoin.500.desc: "¿Estás seguro de que quieres estar relacionado con [kueijinsifu.GetFirstName]?\n\nNo hay vuelta atrás desde la primera opción."
@@ -1302,7 +1329,7 @@
  POD_charjoin.510.option.b: "No me importa mi reputación."
  
  POD_charjoin.600.t: "¿Unirte a los Abandonados?"
- POD_charjoin.600.desc: "¿Estás seguro de que quieres unirte a los Abandonados con la recomendación de [ghoulbrosmentor.GetFirstName]?\n\nNo hay vuelta atrás desde la primera opción." 
+ POD_charjoin.600.desc: "¿Seguro que quieres unirte a los Abandonados con la recomendación de [ghoulbrosmentor.GetFirstNamePossessive]?\n\nNo hay vuelta atrás desde la primera opción." 
 
  POD_charjoin.700.t: "Tu Sifu"
  POD_charjoin.700.option.a: "Sí, ¡y [vampiresire.GetSheHe] es mi Sifu!"
@@ -1332,6 +1359,7 @@
  chargen_fae_tt: "El tercer marcador, Edad Oscura: Hadas, es recomendado para jugar este [splat|E]."
  chargen_mage_tt: "El cuarto marcador, Edad Oscura: Mago, es recomendado para jugar este [splat|E]."
  chargen_mummy_tt: "Ten en cuenta que no se recomienda jugar Momias fuera de la Tierra de la Fe (África del Norte, África Oriental, Medio Oriente y la Antigua Persia), ya que carecerás de la forma principal de restaurar tus poderes."
+ chargen_changeling_tt: "Ten en cuenta que no se recomienda a los jugadores nuevos en el [splat|E] de las Hadas jugar como changeling. Los changelings son un estado de fracaso y un último intento de supervivencia, ¡no un punto de partida!"
  
  POD_chargen.6000.t: "Selección de Fe"
  POD_chargen.6000.desc: "Aquí puedes elegir una [faith|E] de la [religion|E] [GetPlayer.MakeScope.Var('chargen_religion').Religion.GetName].\n\nHaz clic en una de las casillas de verificación para hacer tu selección.\n\nHacer clic en uno de los botones abrirá la ventana de [faith|E] con una vista previa."

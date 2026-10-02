@@ -7,15 +7,15 @@
  sword_of_nul_warning: "Este camino es, obviamente, muy peligroso..."
 
  POD_canon_artifacts.101.t: "La espada llama II"
- POD_canon_artifacts.101.desc: "Al responder a su atracción, te das cuenta rápidamente de que a la Espada de Nul no le importa en absoluto tu bienestar. Te empuja implacablemente hacia el lugar de descanso de su amo, intentando incluso mantenerte despierto durante el día. Como tal, vas de peligro en peligro, ya sean bosques oscuros, la falta de sangre o la dificultad de encontrar un lugar de descanso en tierras extrañas.\nA este ritmo, te unirás a la larga lista de víctimas de la Espada; necesitas reducir el ritmo y planear un curso de acción antes de que sea demasiado tarde."
+ POD_canon_artifacts.101.desc: "Al responder a su llamada, te das cuenta enseguida de que a la Espada de Nul no le importa en absoluto tu bienestar. Te empuja sin descanso hacia el lugar de reposo de su amo e incluso intenta mantenerte despierto durante el día. Así, vas de peligro en peligro, ya sean bosques oscuros, la falta de sangre o la dificultad de hallar un lugar donde descansar en tierras extrañas.\nA este ritmo, te sumarás a la larga lista de víctimas de la Espada; debes aminorar el paso y planear un curso de acción antes de que sea demasiado tarde."
  POD_canon_artifacts.101.a: "Déjame preparar una guía de viaje..."
  POD_canon_artifacts.101.b: "¡Pagar por guías y una escolta armada!"
  POD_canon_artifacts.101.effect.success.desc: "Evitando el peligro"
  POD_canon_artifacts.101.critical.failure.effect.desc: "Otra víctima de la espada..." 
- POD_canon_artifacts.101.critical.failure: "Otra víctima más..."
+ POD_canon_artifacts.101.critical.failure: "Otro muerde el polvo..."
  
  POD_canon_artifacts.102.t: "La espada llama III"
- POD_canon_artifacts.102.desc: "Finalmente estás cerca del lugar de descanso de Drakonskyr y casi puedes sentir la Espada de Nul rebosante de anticipación. Sin embargo, hay un pequeño problema: el demonio descansa en un laberinto lleno de trampas para disuadir a cualquier intruso no deseado.\nObviamente, tienes la Espada, así que puedes simplemente «seguir» su dirección para evitar la mayoría de los peligros que hay allí. Pero siempre existe el riesgo de dar un giro equivocado... Aunque ya no hay vuelta atrás, puesto que estás casi seguro de que la Espada te atacará si das un paso atrás en este punto."
+ POD_canon_artifacts.102.desc: "Por fin estás cerca del lugar de reposo de Drakonskyr y casi puedes sentir la Espada de Nul rebosante de expectación. Hay, sin embargo, un pequeño problema: el demonio reposa en un laberinto lleno de trampas para disuadir a cualquier intruso no deseado.\nPor supuesto, tienes la Espada, así que puedes «seguir» su guía para evitar la mayoría de los peligros de allí dentro. Pero siempre existe el riesgo de un giro equivocado... Ya no hay vuelta atrás, sin embargo, pues estás casi seguro de que la Espada te atacará si das un paso atrás en este punto."
  POD_canon_artifacts.102.a: "Cuidado, cuidado..."
  POD_canon_artifacts.102.effect.success.desc: "¡Lo he logrado!"
  POD_canon_artifacts.102.critical.failure.effect.desc: "¿Qué hace esa roca ahí?" 
@@ -102,7 +102,7 @@
  ankaran_sarcophagus_warning: "Este camino es, obviamente, potencialmente peligroso..."
  
  POD_canon_artifacts.401.t: "El Sarcófago de Ankaran II"
- POD_canon_artifacts.401.desc: "Bueno, eso ha sido un desencanto.\nA pesar de toda la aura de misterio que rodea a este sarcófago, resulta que solo contenía una momia mundana, aunque bien conservada. Probablemente un rey mortal de algún tipo, nadie realmente importante para ti. A pesar de esta decepción, aún puede serte útil, ya que nadie más conoce la verdad. Podrías atrapar el sarcófago para ladrones descuidados en tu dominio o vender el derecho a verlo a eruditos curiosos. O incluso, siendo más audaz, ¡contar la verdad! ...solo a unos pocos aliados de confianza, por supuesto. ¿Cómo aprovecharás este descubrimiento?"
+ POD_canon_artifacts.401.desc: "Bueno, eso ha sido un chasco.\nPese a toda el aura de misterio que rodeaba a este sarcófago, resulta que solo contenía una momia corriente, aunque bien conservada. Probablemente un rey mortal de algún tipo, nadie realmente importante para ti. A pesar de esta decepción, aún puede serte útil, pues nadie más conoce la verdad. Podrías llenar de trampas el sarcófago para ladrones descuidados de tu dominio o vender el derecho a verlo a eruditos inquisitivos. O, incluso con más audacia, ¡contar la verdad sobre él! ...solo a unos pocos aliados de confianza, por supuesto. ¿Cómo sacarás partido a este descubrimiento?"
  POD_canon_artifacts.401.a: "Estudiar la momia con mayor detalle"
  POD_canon_artifacts.401.b: "¡Meterle serpientes! Las serpientes son divertidas"
  POD_canon_artifacts.401.c: "Decir la verdad a algunos «amigos» que pronto te estarán agradecidos"
@@ -158,6 +158,10 @@
  truefaith_decision_tooltip: "La fe es un arma poderosa"
  truefaith_decision_desc: "Tienes un poderoso artefacto sagrado a tu disposición. Aprovechar su poder te daría un gran conocimiento sobre las bendiciones de los fieles."
  truefaith_decision_confirm: "Bendecido por lo Divino"
+ truefaith_jewish_decision: "$truefaith_decision$"
+ truefaith_jewish_decision_tooltip: "$truefaith_decision_tooltip$"
+ truefaith_jewish_decision_desc: "$truefaith_decision_desc$"
+ truefaith_jewish_decision_confirm: "$truefaith_decision_confirm$"
      
  obfuscate_decision: "Artefacto sombrío"
  obfuscate_decision_tooltip: "Nos adentramos en la oscuridad"
@@ -216,7 +220,7 @@
  drink_grail_tt: "Tu alma y tu personalidad están siendo puestas a prueba."
 
  POD_canon_artifacts.702.t: "El demonio del aspirante al Cáliz"
- POD_canon_artifacts.702.desc: "El último obstáculo en tu empeño por reclamar el Cáliz eres... tú, al parecer. Te enfrentas a una visión grotesca de ti mismo, más feroz que mortal, que te gruñe y parece desafiarte a intentar terminar esta bebida.\nLa Bestia, esta Maldición Impía en el alma de cada Cainita, se siente amenazada por esta repentina intrusión de lo Sagrado en tu maldito cuerpo. No se rendirá sin una terrible lucha mental, intentando ya imponer su control sobre ti."
+ POD_canon_artifacts.702.desc: "El último obstáculo en tu empeño por reclamar el Grial eres... tú, al parecer. Te enfrentas a una visión grotesca de ti mismo, más feral que mortal, que te gruñe y parece desafiarte a intentar terminar esta bebida.\nLa Bestia, esa Maldición Impía en el alma de todo Cainita, se siente amenazada por esta repentina intrusión de lo Sagrado en tu cuerpo condenado. No cederá sin una terrible lucha mental y ya intenta imponer su control sobre ti."
  POD_canon_artifacts.702.a: "¡Yo tengo el control!"
  drink_grail_tt2: "¿Es tu Bestia más fuerte que tu voluntad?"
 
@@ -250,6 +254,7 @@
  spear_orthia_decision_desc: "La Lanza de Artemisa Orthia se hizo añicos cuando ella asaltó valientemente las murallas de Cartago. Con la ayuda de un hábil herrero sobrenatural, podría ser reconstruida."
  spear_orthia_decision_confirm: "¡Un arma de leyenda!"
  shattered_spear_decision_custom: "[TARGET_CHARACTER.GetFirstName] debe ser tu [friend|E], miembro de tu [coterie|E] o tu [soulmate|E]" 
+ broken_blade_michael_decision_custom: "[TARGET_CHARACTER.GetFirstName] debe ser tu [friend|E], miembro de tu [coterie|E] o [soulmate|E], o estar sujeto a un [strong_hook|E]" 
  
  artifact_spear_orthia_name: "Lanza de Artemisa Orthia"
  artifact_spear_orthia_description: "Un arma legendaria empuñada antaño por una guerrera legendaria. Se dice que Artemisa Orthia, la amada del propio Ventrue, cargó valientemente contra la locura de Cartago como se esperaba de una diosa espartana. Aunque su lanza se hizo añicos durante la lucha, ahora ha sido reforjada para recuperar su antigua gloria."
@@ -261,7 +266,7 @@
  truth_saulot_decision_confirm: "Empecemos a leer"
  
  POD_canon_artifacts.800.t: "¿La Verdad sobre Saulot?"
- POD_canon_artifacts.800.desc: "Finalmente has desbloqueado el diario de Javaniel y su contenido es... inquietante.\nJavaniel fue un Salubri activo hace mucho tiempo, compañero de Saulot y Samiel durante las Guerras Baali. Su relato de los hechos describe a Saulot como una mente maestra despiadada, si no directamente malvada, tras la creación de los infernalistas Baali, lejos de su imagen de mentor santo. Las Tablillas de Marfil que también posees confirman este hecho, afirmando que Saulot está dispuesto a quemar el mundo entero si eso significa reinar sobre él durante «el próximo giro de la Rueda».\nJavaniel murió hace mucho tiempo, aparentemente asesinado por el propio Saulot para ocultar la verdad, así que tú eres el único con pruebas concretas de este lado menos conocido del amado Antediluviano. Si lo revelaras, el clan Salubri quedaría conmocionado hasta sus cimientos y sus enemigos se sentirían envalentonados."
+ POD_canon_artifacts.800.desc: "Por fin has abierto el diario de Javaniel y su contenido es... perturbador.\nJavaniel fue un Salubri activo hace mucho tiempo, compañero de Saulot y de Samiel durante las Guerras Baali. Su relato de los hechos retrata a Saulot como una mente maestra despiadada, si no abiertamente malvada, tras la creación de los infernalistas Baali, muy lejos de su imagen de mentor santo. Las Tablillas de Marfil que también tienes en tu poder lo confirman, y afirman que Saulot está dispuesto a quemar el mundo entero si eso significa reinar sobre él durante el «próximo giro de la Rueda».\nJavaniel murió hace mucho, al parecer a manos del propio Saulot para ocultar la verdad, de modo que eres el único con pruebas concretas de este lado menos conocido del querido Antediluviano. Si lo revelaras, el Clan Salubri se estremecería hasta los cimientos y sus enemigos cobrarían ánimos."
  POD_canon_artifacts.800.a: "Las reliquias vampíricas me sirven de poco, aparte para la investigación académica."
  POD_canon_artifacts.800.b: "¡El mundo debe conocer la verdad!" 
  POD_canon_artifacts.800.custom: "Los Salubri perderán mucho prestigio y ganarán una cantidad masiva de estrés.\nLos Tremere ganarán algo de prestigio y perderán algo de estrés al mismo tiempo."
@@ -295,7 +300,7 @@
  POD_canon_artifacts.900.c: "Puedo convencer a un wraith. Probablemente."
  POD_canon_artifacts.900.effect.success.desc: "¡Titia abre el libro!"  
  POD_canon_artifacts.900.critical.failure.effect.desc: "Titia se niega a abrir el libro..."
- codex_mortis_fail_tt: "El códice te rechaza, dejándote con un libro vacío e inútil."
+ codex_mortis_fail_tt: "El códice te rechaza y te deja con un libro vacío e inútil."
  
  broken_blade_michael_decision: "Reforjar la Espada de Miguel"
  broken_blade_michael_decision_tooltip: "¿Un símbolo de valentía forjado de nuevo?"
@@ -344,14 +349,14 @@
  POD_canon_artifacts.1020.b: "Solo historias... ¿verdad?"
 
  POD_canon_artifacts.1021.t: "Indigno"
- POD_canon_artifacts.1021.desc: "Tatsuko Sayo te ha estado proporcionando inmensos poderes desde que decidiste conservarla, pero puedes sentir que el alma en su interior está... insatisfecha con tu falta de ambición. Después de todo, alguna vez fue propiedad de alguien que desafió a todo el reino de los dioses.\nTras una batalla reciente, puedes sentir que de repente se niega a ser envainada... o más exactamente, intenta envainarse en tu torso. Como cuentan las historias, aquel que sea considerado indigno será, en efecto, descartado por la katana.\n\nSe dice que algunos de sus antiguos dueños lograron encontrar rituales y preparaciones para imponer su voluntad a la hoja y evitar este fatídico destino. Esperemos que tus conocimientos al respecto sean suficientes."
+ POD_canon_artifacts.1021.desc: "Tatsuko Sayo te ha proporcionado inmensos poderes desde que decidiste quedártela, pero percibes que el alma que alberga está... insatisfecha con tu falta de ambición. Al fin y al cabo, perteneció en su día a alguien que desafió a todo el reino de los dioses.\nTras una batalla reciente, sientes que de pronto se niega a ser envainada... o, más exactamente, intenta envainarse en tu torso. Como cuentan las historias, a quien se considera indigno la katana lo descarta, en efecto.\n\nSe dice que algunos de sus antiguos dueños lograron hallar rituales y preparativos para imponer su voluntad a la hoja y evitar ese sombrío destino. Esperemos que tu conocimiento de ellos baste."
  POD_canon_artifacts.1021.a: "¡Yo mando aquí!"
  POD_canon_artifacts.1021.b: "Deshazte de la hoja."
  POD_canon_artifacts.1021.effect.success.desc: "Luchas por el control de la hoja"
  POD_canon_artifacts.1021.critical.failure: "Indigno, en efecto."
  
  POD_canon_artifacts.1022.t: "Isamu Harujiro"
- POD_canon_artifacts.1022.desc: "Aunque pensabas que finalmente habías logrado controlar Tatsuko Sayo para siempre, la amarga verdad se revela pronto. La hoja ha estado latente porque se ha impresionado por tu reciente muestra de Fuerza de Voluntad. En resumen, has sido considerado digno de ser habitado por el alma del espadero.\n\nObviamente, tú no tienes voz ni voto en este asunto.\n\nSúbitamente sumergido en el mundo Yin, te enfrentas a la verdadera forma de la katana: el Espectro de Isamu Harujiro. Si logras triunfar aquí, su alma será finalmente purgada de la katana para siempre. Si fallas, sin embargo... bueno, al menos serás un buen cuerpo para el vengativo espadero.\nEs hora de poner a prueba tu temple contra alguien que sacudió los cielos hace mucho tiempo.\n\nSin presiones."
+ POD_canon_artifacts.1022.desc: "Aunque creías haber logrado por fin el control de Tatsuko Sayo para siempre, la amarga verdad no tarda en revelarse. La hoja ha estado latente porque la ha impresionado tu reciente muestra de Fuerza de Voluntad. En resumen, has sido considerado digno de ser habitado por el alma del espadero.\n\nPor supuesto, no tienes voz ni voto en el asunto.\n\nSumergido de pronto en el Mundo Yin, te enfrentas a la verdadera forma de la katana, el Espectro de Isamu Harujiro. Si logras triunfar aquí, su alma será por fin purgada de la katana para siempre. Si fallas, sin embargo... bueno, al menos serás un buen cuerpo para el vengativo espadero.\nEs hora de poner a prueba tu temple frente a quien sacudió los cielos hace mucho.\n\nSin presión."
  POD_canon_artifacts.1022.a: "Lamento mis decisiones de vida."
  POD_canon_artifacts.1022.effect.success.desc: "¡Un triunfo!"
  POD_canon_artifacts.1022.critical.failure.effect.desc: "¡Un triunfo! Pero no para ti." 
@@ -361,14 +366,14 @@
  POD_canon_artifacts.1023.a: " #italic Un elegante envainado de tu katana #! "
 
  POD_canon_artifacts.1024.t: "Bienvenido de nuevo, maestro"
- POD_canon_artifacts.1024.desc: "Mientras el necio que intentó domar Tatsuko Sayo yace muriendo lentamente a tus pies, te preguntas si la katana ha elegido bien a su nuevo huésped. ¿Sería mejor simplemente acabar con este debilucho y buscar a alguien mejor?\nNo, ha pasado demasiado tiempo desde que te recuperaste en la hoja y es poco probable que encuentres una oportunidad mejor durante un tiempo. Este necio servirá para tu renacimiento.\n\nSí, les vendrá bien."
+ POD_canon_artifacts.1024.desc: "Mientras el necio que intentó domar a Tatsuko Sayo yace agonizando lentamente a tus pies, te preguntas si la katana ha elegido bien a su nuevo anfitrión. ¿No sería mejor acabar sin más con este debilucho y buscar a alguien mejor?\nNo, ha pasado demasiado tiempo desde que te recuperas en la hoja y es poco probable que encuentres una oportunidad mejor en una temporada. Este necio servirá para tu renacimiento.\n\nSí, les valdrá."
  POD_canon_artifacts.1024.a: "Mi guerra no ha terminado."
 
  nick_vengeful_spectre: "el Espectro Vengativo"
  nick_vengeful_spectre_desc: "Incluso la muerte fue solo un contratiempo para aquel que hizo llorar a los Cielos."
  Isamu_Harujiro: "Isamu Harujiro"
  isamu_modifier: "Portador del Dolor"
- isamu_modifier_desc: "El mundo sabe que estás en guerra con cada uno de ellos. No importa, Tatsuko Sayo tiene sed por siempre."
+ isamu_modifier_desc: "El mundo sabe que estás en guerra con todos y cada uno de ellos. No importa, Tatsuko Sayo tiene sed para siempre."
 
  robe_golden_mandarin_decision: "Túnicas del Mandarín Dorado"
  robe_golden_mandarin_decision_tooltip: "Una maldición dorada"

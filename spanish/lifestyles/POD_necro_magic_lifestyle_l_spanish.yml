@@ -33,7 +33,7 @@
 
  NS_PEERING_ACROSS_THE_SHROUD_PERK_EFFECT: "Si alguno de tus parientes o amigos es asesinado en circunstancias misteriosas, conocerás la identidad de su asesino.\n#flavor Los muertos caminan entre nosotros, invisibles e inaudibles. Para comandarlos, un nigromante debe ser capaz de percibirlos.#!"
  NS_SUMMON_SOUL_PERK_EFFECT: "$POD_can_summon_on_death_trigger_loca$\n#flavor Invocar Alma permite a un nigromante traer de vuelta un fantasma desde el [UmbraGlossaryLocalized('shadowlands','Inframundo')].#!"
- NS_COMPEL_SOUL_PERK_EFFECT: "$POD_can_weaken_fetter_trigger_loca$\n$POD_can_bind_wraith_trigger_loca$\n#flavor Con este poder, un vampiro puede doblegar a un fantasma a su voluntad por un corto tiempo. Esta habilidad requiere una confianza suprema, ya que un fallo de resolución puede llevar a consecuencias desastrosas para un nigromante.#!"
+ NS_COMPEL_SOUL_PERK_EFFECT: "$POD_can_bind_wraith_trigger_loca$\n[PODUnlocksCombatMove('POD_combat_move_compelled_soul')].\n#flavor Con este poder, un vampiro puede doblegar a un fantasma a su voluntad durante un breve tiempo. Esta habilidad exige una confianza absoluta, pues un fallo de determinación puede acarrear consecuencias desastrosas para un nigromante.#!"
  NS_HAUNTING_PERK_EFFECT: "Como un [bs_spell|E], aplica [GetModifier('spell_haunting_modifier').GetNameWithTooltip] a la ubicación actual del objetivo durante 5 años\n#flavor Un nigromante usa el poder de su sangre para atar un fantasma a un objeto o lugar.#!"
  NS_TORMENT_PERK_EFFECT: "#flavor Con el uso de Tormento, un nigromante puede golpear el cuerpo incorpóreo de un fantasma como si él mismo fuera un fantasma.#!"
  
@@ -112,10 +112,10 @@
  ns_graves_decay_rituals_perk_name: "[bs_rituals|E] del $necro_magic_graves_decay_visible$"
 
  NS_ASHES_TO_ASHES_PERK_EFFECT: "Reduce el riesgo de [masquerade_exposure_with_icon|E] y mejora la interacción [character_interaction|E] Cubrir la Mascarada.\n#flavor Mientras algunos Cainitas masacran indiscriminadamente y no temen consecuencias por sus acciones, otros Cainitas sienten la necesidad de ser un poco más discretos. El uso de este poder convierte un cadáver humano en una pila de ceniza poco notable con aproximadamente un quinto del peso del cuerpo original.#!"
- NS_RIGOR_MORTIS_PERK_EFFECT: "Cuando se inicia una guerra, el campeón con mayor destreza de tu enemigo será herido.\n#flavor Con este poder, el nigromante puede hacer que cualquier objetivo se ponga tan rígido e inmóvil como un cadáver.#!"
- NS_ASHEN_LADYS_EMBRACE_PERK_EFFECT: "Como un [bs_spell|E], haz que el objetivo pierda una extremidad aleatoria.\nDesbloquea el movimiento [single_combat_duel|E] Abrazo de la Dama Cenicienta\n#flavor El Abrazo de la Dama Cenicienta hace que una extremidad del objetivo envejezca, se seque y se marchite como uvas dejadas en la vid.#!"
+ NS_RIGOR_MORTIS_PERK_EFFECT: "Cuando se inicia una guerra, el campeón con mayor destreza de tu enemigo resultará herido.\n[PODUnlocksCombatMove('POD_combat_move_rigor_mortis')].\n#flavor Con este poder, el nigromante puede dejar a cualquier objetivo tan rígido e inmóvil como un cadáver.#!"
+ NS_ASHEN_LADYS_EMBRACE_PERK_EFFECT: "Como [bs_spell|E], haz que el objetivo pierda una extremidad aleatoria.\n#flavor El Abrazo de la Dama Pálida hace que una extremidad del objetivo envejezca, se seque y se marchite como uvas olvidadas en la vid.#!"
  NS_GIFT_OF_MELANCHOLIA_PERK_EFFECT: "Como un [bs_spell|E], infecta al objetivo con [GetTrait('gift_of_melancholia').GetName(GetPlayer)] o genera una [epidemic|E] de ella.\n#flavor Este poder inflige una enfermedad debilitante virulenta en mortales y Cainitas por igual.#!"
- NS_DUST_TO_DUST_PERK_EFFECT: "Mejora el [bs_spell|E] [GetPerk('ns_ashen_ladys_embrace_perk').GetName(GetPlayer)] y el movimiento [single_combat_duel|E].\n#flavor Así como Cenizas son Cenizas afecta a los cadáveres, Polvo al Polvo afecta a los cuerpos de los vampiros. Invocar Polvo al Polvo permite a un nigromante reducir a otro vampiro a una pila de cenizas como si hubiera quedado varado bajo la luz del sol o quemado en la hoguera.#!"
+ NS_DUST_TO_DUST_PERK_EFFECT: "Mejora el [bs_spell|E] [GetPerk('ns_ashen_ladys_embrace_perk').GetName(GetPlayer)].\n[PODUnlocksCombatMove('POD_combat_move_dust_to_dust')].\n#flavor Así como Cenizas a las Cenizas afecta a los cadáveres, Polvo al Polvo afecta a los cuerpos de los vampiros. Invocar Polvo al Polvo permite a un nigromante reducir a otro vampiro a un montón de cenizas, como si hubiera quedado atrapado bajo la luz del sol o ardido en la hoguera.#!"
   
  NS_GRAVES_DECAY_RITUALS_PERK_EFFECT: "$necro_magic_shared_ritual_perk_effect$"
  
@@ -131,7 +131,7 @@
  NS_AURA_OF_DECAY_PERK_EFFECT: "Aplica [GetModifier('aura_of_decay_modifier').GetNameWithTooltip] a los [knights|E] enemigos cuando actúan como [commander|E] durante la [combat_phase|E], o a tu oponente durante [single_combat_duel_plural|E].\n#flavor Este poder acelera el destino inevitable de cualquier objeto inanimado atrapado dentro del terrible aura del nigromante, permitiendo al vampiro causar que cualquier objeto se descomponga en un montón ruinoso.#!"
  NS_PISCHACHAS_FEAST_PERK_EFFECT: "Puede comer [GetTrait('wraith').GetName(GetNullCharacter)].\n#flavor El Festín de Pischacha permite a un vampiro subsistir con las energías ambientales de la entropía que impregnan los lugares encantados del mundo, o alimentarse directamente del [Corpus|E] de un fantasma.#!"
  NS_CURSE_OF_THE_MAELSTROM_PERK_EFFECT: "Como un [bs_spell|E], hace que la ubicación actual del objetivo pierda 3 de [development|E] además de ganar [GetModifier('spell_curse_of_the_maelstrom_modifier').GetNameWithTooltip] durante 5 años.\n#flavor El nigromante puede maldecir sus alrededores invocando Espectros para causar estragos y destrucción.#!"
- NS_NIGHT_CRY_PERK_EFFECT: "Aplica [GetModifier('night_cry_enemy_modifier').GetNameWithTooltip] a los [knights|E] enemigos cuando actúan como [commander|E] durante la [combat_phase|E], o a tu oponente durante [single_combat_duel_plural|E].\nAplica [GetModifier('night_cry_ally_modifier').GetNameWithTooltip] a los [knights|E] aliados cuando actúan como [commander|E] durante la [combat_phase|E], o a ti mismo durante [single_combat_duel_plural|E].\n#flavor Con el uso del Grito Nocturno, un nigromante es capaz de mostrar su dominio sobre las fuerzas de la entropía. Puede dirigirla lejos de sus aliados para ayudarlos, o canalizarla directamente hacia sus enemigos para obstaculizarlos.#!"
+ NS_NIGHT_CRY_PERK_EFFECT: "Aplica [GetModifier('night_cry_enemy_modifier').GetNameWithTooltip] a los [knights|E] enemigos cuando actúan como [commander|E] durante la [combat_phase|E], o a tu oponente durante los [single_combat_duel_plural|E].\nAplica [GetModifier('night_cry_ally_modifier').GetNameWithTooltip] a los [knights|E] aliados cuando actúan como [commander|E] durante la [combat_phase|E], o a ti mismo durante los [single_combat_duel_plural|E].\n[PODUnlocksCombatMove('POD_combat_move_night_cry')].\n#flavor Con el Grito Nocturno, una nigromante muestra su dominio sobre las fuerzas de la entropía. Puede apartarlas de sus aliados para ayudarlos, o canalizarlas directamente hacia sus enemigos para entorpecerlos.#!"
   
  NS_VITREOUS_PATH_RITUALS_PERK_EFFECT: "$necro_magic_shared_ritual_perk_effect$"
  
@@ -147,7 +147,7 @@
  NS_KISS_OF_THE_DARK_MOTHER_PERK_EFFECT: "El movimiento [single_combat_duel|E] Mordida se vuelve más poderoso.\n#flavor La Lilin se muerde la lengua y llena su boca con una mezcla fétida y acre de bilis negra y $pod_vitae$. Su mordida se vuelve aún más terrible, y puede devorar la vida de sus víctimas con facilidad.#!"
  NS_DARK_HUMORS_PERK_EFFECT: "#flavor Las Lamias son conocidas por su atletismo y dominio de sus cuerpos. No solo son capaces de realizar hazañas de destreza física increíble, sino que también pueden manipular el equilibrio de los humores en su cuerpo por pura fuerza de voluntad.#!"
  NS_CAUL_OF_THE_NEVERBORN_PERK_EFFECT: "$POD_can_summon_wraith_trigger_loca$\n#flavor Con el uso de este poder, la Lamia fortalece su conexión con el corazón negro de la Madre Oscura. Dándole tanto una mayor resistencia como la capacidad de ver en las [UmbraGlossary('shadowlands')].#!"
- NS_LAMENT_OF_DHAINU_PERK_EFFECT: "#flavor La Lamia aúlla de agonía, y la tierra misma tiembla. Una niebla de oscuridad retorcida se eleva del suelo y atrapa a sus enemigos. Atrapados por la oscuridad no están físicamente atados, pero son inmediatamente golpeados con una angustia emocional tan rica y cruda que buscan terminar con sus vidas de la manera más expedita posible.#!"
+ NS_LAMENT_OF_DHAINU_PERK_EFFECT: "[PODUnlocksCombatMove('POD_combat_move_lament_of_dhainu')].\n#flavor La Lamia aúlla de agonía y la tierra misma tiembla. Un miasma de oscuridad retorcida se alza del suelo y apresa a sus enemigos. Quienes caen en esa oscuridad no quedan atados físicamente, pero los asalta al instante una angustia emocional tan intensa y desgarrada que buscan poner fin a su vida de la manera más rápida posible.#!"
   
  NS_PATH_OF_THE_TWILIGHT_GARDEN_RITUALS_PERK_EFFECT: "$necro_magic_shared_ritual_perk_effect$"
  
@@ -159,7 +159,7 @@
 
  NS_CALVARIA_EMISSICIUS_PERK_EFFECT: "#flavor Uno de los secretos más preciados del Clan Capadocio es la capacidad de espiar a través de las cuencas de los ojos de los muertos.#!"
  NS_CONSILIUM_MORTUUS_PERK_EFFECT: "Velocidad de Progreso de [espionage|E]: #P +[EmptyScope.ScriptValue('digging_for_dirt_perk_percentage')|0]%#!\n#flavor Al conversar con la cabeza decapitada del objetivo fallecido, resulta que extraer una verdad garantizada de los labios en descomposición es bastante posible.#!"
- NS_AMMORSUS_VICARIUS_PERK_EFFECT: "#flavor Con este poder, el nigromante puede agarrar la mandíbula y el maxilar del cráneo para usarlo como un arma extraña de combate cuerpo a cuerpo, fijar el cráneo a la punta de una lanza para atacar a distancia, o incluso dejar el cráneo solo, actuando como una trampa.#!"
+ NS_AMMORSUS_VICARIUS_PERK_EFFECT: "[PODUnlocksCombatMove('POD_combat_move_ammorsus_vicarius')].\n#flavor Con este poder, el nigromante puede aferrar la mandíbula y el maxilar de un cráneo para usarlo como un extraño arma cuerpo a cuerpo, fijarlo a la punta de una lanza para atacar a distancia o incluso dejarlo en el suelo, como trampa.#!"
  NS_EXEDO_ANIMUS_PERK_EFFECT: "Velocidad de Progreso de [espionage|E]: #P +[EmptyScope.ScriptValue('digging_for_dirt_perk_percentage')|0]%#!\n#flavor Al portar un cráneo, ya sea de un mortal o Cainita, el nigromante forma un vínculo simpático con el antiguo dueño del cráneo.#!"
  NS_DEGULO_PERK_EFFECT: "Como [character_interaction|E], puedes comer el cráneo de un [prisoner|E] para obtener [perks|E] en la $pod_discipline$ seleccionada.\n#flavor Degulo es el método por el cual un nigromante consume un fragmento de alma y lo retiene para siempre como parte de sí mismo.#!"
  
@@ -187,7 +187,7 @@
 
  ns_path_of_haunting_rituals_perk_name: "[bs_rituals|E] de la $necro_magic_path_of_haunting_visible$"
 
- NS_SONG_OF_THE_DEAD_PERK_EFFECT: "Como un [bs_spell|E], inflige 25 de [static_stress|E] al objetivo a costa de [static_stress|E] en ti mismo.\n#flavor El vampiro canta, tejiendo palabras inauditas en la canción e instilando una fascinación poco saludable con la muerte en su oyente.#!"
+ NS_SONG_OF_THE_DEAD_PERK_EFFECT: "Como [bs_spell|E], inflige 25 de [static_stress|E] al objetivo a costa de [static_stress|E] en ti mismo.\n[PODUnlocksCombatMove('POD_combat_move_song_of_the_dead')].\n#flavor El vampiro entona un cántico en el que teje palabras inaudibles e infunde en su oyente una insana fascinación por la muerte.#!"
  NS_SUMMON_WISP_PERK_EFFECT: "#flavor El vampiro infunde gotas de su sangre con la energía efímera del [UmbraGlossaryLocalized('shadowlands','Inframundo')], invocando una esfera de luces parpadeantes. El fuego fatuo puede atraer a mortales desprevenidos a una trampa o proporcionar una distracción inteligente.#!"
  NS_HARROWING_PERK_EFFECT: "Mejora [GetPerk('ns_song_of_the_dead_perk').GetName(GetNullCharacter)] aumentando la [static_stress|E] del objetivo a 50 y disminuyendo el coste a 13 de [static_stress|E].\n#flavor El Tormento extiende el terror infligido por la Canción de los Muertos al acecharla en su sueño, convirtiendo sus sueños en visiones pesadillescas de su propia muerte.#!"
  NS_PHANTASMS_PERK_EFFECT: "Mejora [GetPerk('ns_song_of_the_dead_perk').GetName(GetNullCharacter)] aumentando la [static_stress|E] del objetivo a 75.\n#flavor El vampiro esculpe la energía del [UmbraGlossaryLocalized('shadowlands','Inframundo')] en alucinaciones elaboradas que aterrorizan a los vivos.#!"
@@ -203,10 +203,10 @@
 
  ns_path_of_woe_rituals_perk_name: "[bs_rituals|E] de la $necro_magic_path_of_woe_visible$"
 
- NS_FINDING_THE_LOCUS_PERK_EFFECT: "#flavor Determina si un objeto es un Grillete.#!"
- NS_EXPURGATE_THE_DAMNED_PERK_EFFECT: "#flavor Fuerza a un [GetTrait('wraith').GetName( GetNullCharacter )] a aparecer en una ubicación que el nigromante ha marcado antes.#!"
- NS_BLOOD_SCOURGE_PERK_EFFECT: "#flavor Usa tu $pod_vitae$ para causar un dolor insoportable a un [GetTrait('wraith').GetName( GetNullCharacter )].#!"
- NS_CURSED_EUCHARIST_PERK_EFFECT: "Como un [bs_spell|E], usa tu [GetTrait('wraith').GetName( GetNullCharacter )] atado para perder 25 de [stress|E].\n#flavor El nigromante puede intentar alimentarse de un [GetTrait('wraith').GetName( GetNullCharacter )] para recuperar Fuerza de Voluntad.#!"
+ NS_FINDING_THE_LOCUS_PERK_EFFECT: "#flavor Determina si un objeto es una Atadura#!"
+ NS_EXPURGATE_THE_DAMNED_PERK_EFFECT: "[PODUnlocksCombatMove('POD_combat_move_expurgate_the_damned')].\n#flavor Obliga a un [GetTrait('wraith').GetName( GetNullCharacter )] a aparecer en un lugar que el nigromante haya marcado antes#!"
+ NS_BLOOD_SCOURGE_PERK_EFFECT: "[PODUnlocksCombatMove('POD_combat_move_blood_scourge')].\n#flavor Usa tu $pod_vitae$ para causar un dolor atroz a un [GetTrait('wraith').GetName( GetNullCharacter )]#!"
+ NS_CURSED_EUCHARIST_PERK_EFFECT: "Como [bs_spell|E], usa tu [GetTrait('wraith').GetName( GetNullCharacter )] vinculado para perder 25 de [stress|E].\n[PODUnlocksCombatMove('POD_combat_move_cursed_eucharist')].\n#flavor El nigromante puede intentar alimentarse de un [GetTrait('wraith').GetName( GetNullCharacter )] para recuperar Fuerza de Voluntad#!"
  NS_PURGE_THE_APOSTATES_SOUL_PERK_EFFECT: "#flavor Inflige daño agravado a un [GetTrait('wraith').GetName( GetNullCharacter )], produciendo un charco de plasma.#!" 
  
  NS_PATH_OF_WOE_RITUALS_PERK_EFFECT: "$necro_magic_shared_ritual_perk_effect$"

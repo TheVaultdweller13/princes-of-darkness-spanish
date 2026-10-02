@@ -34,7 +34,7 @@
  POD_fleshcrafting_button_clear: "#I Haz clic para borrar todas las modificaciones seleccionadas#!"
  # viñeta invisible para que el texto esté alineado con las otras viñetas invisibles de los custom_tooltips en POD_fleshcrafting_list_all_perk_effects_on_character
  # esto es necesario créeme hermano
- POD_fleshcrafting_button_reset: "#color:{0.0,0.0,0.0,0.0} $EFFECT_LIST_BULLET$#!#I Haz clic para volver a aplicar los moldeados de carne actuales de [GetPlayer.MakeScope.Var('fleshcraft_target').Char.GetFirstNamePossessive]#!\n\n#color:{0.0,0.0,0.0,0.0} [GetScriptedGui('POD_fleshcrafting_trait_tooltip').BuildTooltip( GuiScope.AddScope('character',GetPlayer.MakeScope.Var('fleshcraft_target').Char.MakeScope).End )]#!"
+ POD_fleshcrafting_button_reset: "#h $EFFECT_LIST_BULLET$#!#I Haz clic para volver a aplicar los moldeados de carne actuales de [GetPlayer.MakeScope.Var('fleshcraft_target').Char.GetFirstNamePossessive]#!\n\n#h [GetScriptedGui('POD_fleshcrafting_trait_tooltip').BuildTooltip( GuiScope.AddScope('character',GetPlayer.MakeScope.Var('fleshcraft_target').Char.MakeScope).End )]#!"
  
  POD_fleshcrafting_perk_name: "[Perk.GetNameNoTooltip( GetPlayer.MakeScope.Var('fleshcraft_target').Char.Self )]: @vicissitude_icon! #bold [EmptyScope.ScriptValue(Concatenate(Scope.GetFlagKey,'_complexity'))|0]#!"
  POD_fleshcrafting_perk_complexity: "@vicissitude_icon! #bold [EmptyScope.ScriptValue(Concatenate(Scope.GetFlagKey,'_complexity'))|0]#!"
@@ -53,5 +53,5 @@
  
  POD_fleshcrafting_need_to_select_perk: "Necesitas modificar al menos una parte del cuerpo"
  
- POD_fleshcraft_trait_tt_header: "#bold;clickable;glow_color:{0.0,0.0,0.0,1.0} [Localize(SCOPE.GetFlagName('saved_tooltip'))]:#!"
+ POD_fleshcraft_trait_tt_header: "#bold;clickable;outline [Localize(SCOPE.GetFlagName('saved_tooltip'))]:#!"
  POD_fleshcraft_trait_tt_no_perks: "#weak [character.GetFirstNameNoTooltip] no tiene actualmente modificaciones de [fleshcrafting|E]#!"

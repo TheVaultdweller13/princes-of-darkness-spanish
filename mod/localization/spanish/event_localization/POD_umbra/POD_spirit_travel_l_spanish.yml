@@ -10,7 +10,7 @@
  POD_umbra_pass.101.c: "No importa."
  
  POD_umbra_pass.103.t: "Deja de merodear"
- POD_umbra_pass.103.desc: "No estás vinculado al mundo de los vivos en absoluto y puedes realizar un viaje sin retorno al [UmbraGlossaryLocalized('shadowlands','Inframundo')] cuando quieras. La única razón por la que sigues aquí es porque quieres estarlo, no porque tengas que hacerlo como la mayoría de las apariciones. ¿Estás seguro de querer realizar este viaje ahora?"
+ POD_umbra_pass.103.desc: "No estás ligado al mundo de los vivos en absoluto y puedes hacer un viaje de ida al [UmbraGlossaryLocalized('shadowlands','Inframundo')] siempre que quieras. La única razón por la que sigues por aquí es que quieres estar, no que tengan que caerte bien la mayoría de los espectros. ¿Seguro que quieres hacer este viaje ahora?"
  POD_umbra_pass.103.a: "Es hora de cruzar la [UmbraGlossary('tempest')]."
  POD_umbra_pass.103.b: "Aún tengo cosas que hacer."
  
@@ -48,10 +48,10 @@
  POD_umbra_pass.207.a.duel.desc: "Quiero jurarte un juramento."
  
  POD_umbra_pass.208.t: "Caminar hacia el Sol"
- POD_umbra_pass.208.desc: "El área de la [UmbraGlossary('deep_umbra')] que alberga a Helios no es más que calor y una brillante luz blanca. Cualquier superficie dentro del Señorío de Helios es demasiado caliente para estar de pie o permanecer cerca por mucho tiempo. Solo los espíritus voladores entran en esta zona de la [UmbraGlossary('deep_umbra')], y los viajeros sin la capacidad de volar se consumen en el fuego antes de que tengan la oportunidad de darse cuenta de su error.\n\n¿Estás seguro de que quieres tocar el sol mismo?"
+ POD_umbra_pass.208.desc: "La zona de la [UmbraGlossary('deep_umbra')] que alberga a $glossary_helios$ no es más que calor y luz blanca brillante. Cualquier superficie en el reino de Helios está demasiado caliente para pisarla o permanecer cerca mucho tiempo. Solo los espíritus voladores entran en esta zona de la [UmbraGlossary('deep_umbra')], y los viajeros sin capacidad de volar arden en el fuego antes de tener ocasión de darse cuenta de su error.\n\n¿Seguro que quieres tocar el sol mismo?"
  POD_umbra_pass.208.a: "¡Oh, sí, tocaré el sol mismo! ¡Es una idea excelente!"
  POD_umbra_pass.208.b: "Helios protegerá mi alma."
- POD_umbra_pass.208.c: "Verdaderamente grande es el Señor Sol."
+ POD_umbra_pass.208.c: "Verdaderamente grande es $glossary_helios_lord_sun$."
  POD_umbra_pass.208.d: "¡Corre!"
  
  ########
@@ -97,13 +97,13 @@
  POD_umbra_martial.desc: "Te detiene un acertijo en forma de juego de guerra. Es hora de demostrar lo bueno que eres en ello. Sin embargo, jugar con piezas de «acción real» en forma de espíritus Vinculados es bastante difícil de asimilar al principio, lo que convierte esto en una experiencia perturbadora y surrealista."
  POD_umbra_stewardship.success: "Desafío de Administración: Éxito"
  POD_umbra_stewardship.fail: "Desafío de Administración: Fallo"
- POD_umbra_stewardship.desc: "Un acertijo en forma de ecuación te detiene, ¿eres bueno con las matemáticas? Tendrás que descifrar primero los números utilizados por los espíritus embaucadores, lo que hace que el problema sea aún más difícil de resolver."
+ POD_umbra_stewardship.desc: "Te detiene un acertijo en forma de ecuación, ¿se te dan bien las matemáticas? Primero tendrás que descifrar los números que usan los espíritus embaucadores, lo que hace el problema aún más difícil de resolver"
  POD_umbra_intrigue.success: "Desafío de Intriga: Éxito"
  POD_umbra_intrigue.fail: "Desafío de Intriga: Fallo"
  POD_umbra_intrigue.desc: "Te encuentras con un poderoso espíritu guardián en tu camino, ¿quizá puedas distraerle con algún truco? Que sea convincente, pues no parece nada amigable."
  POD_umbra_learning.success: "Desafío de Aprendizaje: Éxito"
  POD_umbra_learning.fail: "Desafío de Aprendizaje: Fallo"
- POD_umbra_learning.desc: "Un rompecabezas te detiene, ¿puedes resolverlo? Siendo la [umbra|E] una versión retorcida del mundo «real», puedes encontrar algunos patrones e indicios que tengan, al menos, un mínimo de sentido para ti."
+ POD_umbra_learning.desc: "Te detiene un rompecabezas, ¿puedes resolverlo? Como la [umbra|E] es una versión retorcida del mundo «real», puedes encontrar algunos patrones y pistas que al menos tienen un mínimo de sentido para ti"
  POD_umbra_prowess.success: "Desafío de Destreza: Éxito"
  POD_umbra_prowess.fail: "Desafío de Destreza: Fallo"
  POD_umbra_prowess.desc: "Un espíritu te detiene, quizá puedas luchar contra él y saquearle."
@@ -117,6 +117,8 @@
  umbra_expedition_challange_spirit: "Has comenzado un [single_combat_duel|E] con un espíritu."
  umbra_expedition_challange_spirit.win: "Ganas una bendición [modifier|E] o [prestige|E]."
  umbra_expedition_challange_spirit.lose: "#bold Podrías#! @death_icon!Morir."
+ POD_combat_title_umbra_generic: "ENCUENTRO"
+ POD_enemy_team_umbra_generic: "una entidad malévola"
  
  POD_umbra_expedition.101.t: "Victoria espiritual"
  POD_umbra_expedition.101.desc: "Elige una bendición."
@@ -132,37 +134,11 @@
  
  # Legendary Gift
  
- POD_umbra_expedition.300.t: "Encuentro con el Incarna Guerrero"
- POD_umbra_expedition.300.desc: "El Incarna es un término utilizado por los $glossary_fera$ para describir a una cierta clase de espíritus; más débiles que los Celestes, pero aun así espíritus superiores en cualquier medida. Los Incarnae tienen un propósito y una esfera de influencia definidos, pero son lo suficientemente poderosos como para existir en múltiples niveles de la realidad.\nSiguiendo la pista, has encontrado con éxito al Incarna Guerrero; promete enseñarte el legendario don del guerrero imparable si puedes completar una misión: matar al gobernante de los Wyrm más poderoso del mundo."
- POD_umbra_expedition.300.a: "Desafío aceptado."
- POD_umbra_expedition.302.t: "Guerrero imparable"
- POD_umbra_expedition.302.desc: "Has llegado a la ubicación del enemigo predestinado por tu misión, es hora de un duelo a muerte."
- POD_umbra_expedition.302.a: "¡Aquí estoy!"
- POD_umbra_expedition.304.t: "La recompensa"
- POD_umbra_expedition.304.desc: "Has demostrado tu valía, el Incarna Guerrero te enseña el don. Has alcanzado la cúspide de la Destreza de combate de los hombres lobo."
- POD_umbra_expedition.304.a: "¡Un triunfo para la historia!"
  
- POD_umbra_expedition.399.t: "Pensándolo bien"
- POD_umbra_expedition.399.desc: "¿Quizá no sea buena idea que un adorador del $glossary_wyrm$ se reúna con un poderoso espíritu gaiano?"
- POD_umbra_expedition.399.a: "¡Corre!"
- POD_umbra_expedition.399.b: "Qué va."
  
- POD_umbra_expedition.400.t: "Encuentro con el Avatar de Gaia"
- POD_umbra_expedition.400.desc: "Gaia es superior a un Celeste y uno de los espíritus más poderosos que se sabe que existen; posiblemente la primera y la más poderosa. Se le atribuye la creación de los Garou y de la mayoría de los $glossary_fera$ para que sirvan como sus guerreros y agentes tanto en el mundo material como en los [spirit_worlds|E].\nSiguiendo la pista, has encontrado con éxito al Avatar de Gaia; promete enseñarte el legendario don del cuentacuentos si puedes completar una misión: recolectar libros raros e importantes."
- POD_umbra_expedition.400.a: "Desafío aceptado."
  
- POD_umbra_expedition.500.t: "Encuentro con un espíritu poderoso"
- POD_umbra_expedition.500.desc: "Los espíritus y el [spirit_world|E] son un aspecto fundamental de la vida y las culturas de los Garou y de las otras Razas Cambiantes. En particular, los Teúrgos son especialistas en negociar con los espíritus mediante la chiminaje y en vincularlos mediante Dones y ritos.\nSiguiendo la pista, has encontrado con éxito un espíritu especialmente poderoso; promete enseñarte el legendario don de la liberación de las ataduras si puedes completar una misión: destruir la Cortina de Sombras infestada por el $glossary_wyrm$."
- POD_umbra_expedition.500.a: "Desafío aceptado."
  
- POD_umbra_expedition.600.t: "Encuentro con Coyote"
- POD_umbra_expedition.600.desc: "El embaucador definitivo, más Ragabash que Ragabash, Coyote es un avatar del caos. Totalmente impredecible, a menudo insensato, pero sin duda brillante, Coyote es tanto un maestro del engaño como un guerrero muy astuto.\nSiguiendo la pista, has encontrado con éxito un avatar del embaucador Coyote; promete enseñarte el legendario don del portador del fuego si puedes completar una misión: entregar un imperio a otra persona. Solo Coyote sabe por qué pediría algo así."
- POD_umbra_expedition.600.a: "Desafío aceptado."
  
- POD_umbra_expedition.700.t: "Encuentro con Gaia"
- POD_umbra_expedition.700.desc: "Gaia es superior a un Celeste y uno de los espíritus más poderosos que se sabe que existen; posiblemente la primera y la más poderosa. Se le atribuye la creación de los Garou y de la mayoría de los $glossary_fera$ para que sirvan como sus guerreros y agentes tanto en el mundo material como en los [spirit_worlds|E].\nSiguiendo la pista, has encontrado a la propia Gaia; promete enseñarte el legendario don del renacimiento si puedes unir a la Nación Garou. Conociendo la naturaleza fracturada de tus hermanos, esta podría ser la misión más difícil de todas."
- POD_umbra_expedition.700.a: "Volveré cuando esté hecho, madre."
- POD_umbra_expedition.700.b: "¡Lo he logrado!"
  
  POD_umbra_expedition.800.t: "Encuentro con los Espíritus Ancestrales Fianna"
  POD_umbra_expedition.800.desc: "Los Fianna son conocidos entre los Garou por su pasión por el placer de la vida, sus habilidades y ferocidad en batalla, y como guardianes de la música, las historias y el saber de los Garou. Sus espíritus ancestrales suelen ser algunos de los más sabios de todos.\nSiguiendo la pista, has encontrado con éxito algunos espíritus ancestrales Fianna; prometen enseñarte el legendario don si puedes completar el objetivo Héroes de Gaia."
@@ -170,12 +146,12 @@
  POD_umbra_expedition.800.b: "¡Lo he logrado!"
  
  POD_umbra_expedition.900.t: "Encuentro con el Gran Fenris"
- POD_umbra_expedition.900.desc: "Las leyendas nórdicas hablan del voraz Dios-Lobo Fenris, la bestia que devorará el sol al final de los días. Fenris es poderoso, sanguinario y nunca concede ni espera cuartel. El espíritu patrón de la Camada de Fenris es un tótem de guerrero, interesado solo en las manadas de Garou que derramen la sangre de sus enemigos con frecuencia.\nSiguiendo la pista, has encontrado al propio Gran Fenris; promete enseñarte el legendario don si puedes completar el objetivo Berserkers de Gaia."
+ POD_umbra_expedition.900.desc: "Las leyendas nórdicas hablan del voraz Dios-Lobo Fenris, la bestia que se comerá el sol al final de los días. Fenris es poderoso, sanguinario y nunca da ni espera cuartel. El espíritu patrón de los Get de Fenris es un tótem guerrero, interesado solo en manadas de Garou que derramen con frecuencia la sangre de sus enemigos.\nSiguiendo la pista, has encontrado con éxito al propio Gran Fenris; promete enseñarte el don legendario si puedes completar el objetivo de los Berserkers de Gaia."
  POD_umbra_expedition.900.a: "Volveré cuando esté hecho, Gran Fenris."
  POD_umbra_expedition.900.b: "¡Lo he logrado!"
  
  POD_umbra_expedition.1000.t: "Encuentro con el Lobo Progenitor"
- POD_umbra_expedition.1000.desc: "Los Talones cuentan que su Tribu se formó directamente de Gaia y que siguieron siendo los Garou más puros que mantuvieron el contacto con su forma original. Como tales, veneran a los primeros lobos de la historia más que a las otras tribus.\nSiguiendo la pista, has encontrado al propio Lobo Progenitor; promete enseñarte el legendario don si puedes completar el objetivo Ira de Gaia."
+ POD_umbra_expedition.1000.desc: "Las Garras cuentan que su Tribu se formó directamente de Gaia y que siguieron siendo los Garou más puros, los que mantuvieron el contacto con su forma original. Por ello veneran a los primeros lobos de la historia más que las otras tribus.\nSiguiendo la pista, has encontrado con éxito al propio Lobo Progenitor; promete enseñarte el don legendario si puedes completar el objetivo de la Ira de Gaia."
  POD_umbra_expedition.1000.a: "Volveré cuando esté hecho, Progenitor."
  POD_umbra_expedition.1000.b: "¡Lo he logrado!"
  
@@ -203,7 +179,7 @@
  POD_umbra_expedition.1500.a: "Desafío aceptado."
  
  POD_umbra_expedition.1600.t: "Encuentro con el Gran Abuelo"
- POD_umbra_expedition.1600.desc: "Según su tradición, los Gurahl son los protectores originales de Gaia, creados para repeler el poder destructivo del «Destructor de Patrones».\nSiguiendo la pista, habéis encontrado con éxito al Gran Abuelo, uno de los espíritus patrón originales de los Gurahl; él promete enseñaros el legendario don si podéis completar una misión."
+ POD_umbra_expedition.1600.desc: "Según su saber, los Gurahl son los protectores originales de Gaia, creados para conjurar el poder destructivo del «Rompedor de Patrones».\nSiguiendo la pista, has encontrado con éxito al Gran Abuelo, uno de los espíritus patrones originales de los Gurahl; promete enseñarte el don legendario si puedes completar una búsqueda."
  POD_umbra_expedition.1600.a: "Desafío aceptado."
  
  POD_umbra_expedition.1700.t: "Encuentro con Wani"
@@ -217,7 +193,7 @@
  # crisis
  
  POD_umbra_crisis.101.t: "Demasiado tarde"
- POD_umbra_crisis.101.desc: "El ritual wyrmish ha terminado; un poderoso espíritu wyrm ha sido invocado en [crisis_location.GetName] y ha devastado la región."
+ POD_umbra_crisis.101.desc: "El ritual de la Wyrm ha terminado: un poderoso espíritu de la Wyrm ha sido invocado en [crisis_location.GetName] y ha devastado la región."
  POD_umbra_crisis.101.a: "¡Maldición!"
  POD_umbra_crisis.101.a.tt: "Todos los edificios en [crisis_location.GetName] son eliminados."
  
@@ -276,13 +252,9 @@
  POD_umbra_gp.101.a: "¿Cuál es vuestro deseo, último de vuestra tribu?"
  POD_umbra_gp.101.b: "No tengo tiempo."
  
- POD_umbra_gp.102.t: "Enfrentarse al único Espíritu Ancestral Aullador Blanco"
- POD_umbra_gp.102.desc: "Aidan Farwatcher fue un Homid Galliard Aullador Blanco durante el 31 a. C. Bajo el Rito de la Persecución Imperecedera, el espíritu de Aidan persiguió al Rey Ahogado incluso después de su muerte. En el año 200, Aidan poseyó a un guía Aullador Blanco conocido como «Bone-Whittler», un Teúrgo del Sept de Loch de Mil Profundidades. Aidan estuvo presente para ver la perdición de su tribu, pereciendo noblemente luchando contra los primeros Danzantes de la Espiral Negra, pero no pudo hacer nada para evitarlo. Entonces se convirtió en el único Espíritu Ancestral superviviente de la perdida tribu de los Aulladores Blancos.\nÉl os ofrece su servicio si podéis completar su misión (y puede enseñaros Dones de los Aulladores Blancos si sois un hombre lobo)."
- POD_umbra_gp.102.a: "Os escucharé, sabio Anciano."
- POD_umbra_gp.102.b: "No tengo tiempo."
  
  POD_umbra_gp.103.t: "Aristóteles"
- POD_umbra_gp.103.desc: "Aristóteles fue un filósofo y polímata de la Antigua Grecia. Sus escritos abarcan una amplia gama de temas que van desde las ciencias naturales, la filosofía, la lingüística, la economía, la política, la psicología y las artes. Como fundador de la escuela peripatética en el Liceo de Atenas, inició la más amplia tradición aristotélica que le siguió, la cual sentó las bases para el desarrollo de la ciencia moderna. La etapa final de la vida de Aristóteles se vio empañada por su cada vez peor relación con su antiguo discípulo, Alejandro. Forzado a huir de su hogar en Atenas, su muerte fue poco gloriosa para un monumento tan venerado del pensamiento filosófico, lo que podría haber sido la causa de su partida al reino de Caronte tras su muerte.\nEste wraith específico que afirma ser el propio Aristóteles es dudoso. Parece poco probable que el famoso filósofo no hubiera sucumbido ya a su sombra o no hubiera alcanzado la trascendencia. Es bastante común que estas entidades espectrales suplanten a tales grandes figuras (incluso creyendo verdaderamente que lo son). En cualquier caso, este wraith es ciertamente muy culto y podría servir para un propósito en vuestra corte.\nInteresado por el mundo mortal como suelen ser la mayoría de los wraiths, le habéis convencido fácilmente para que visite vuestro dominio."
+ POD_umbra_gp.103.desc: "Aristóteles fue un filósofo y polímata de la Antigua Grecia. Sus escritos abarcan una amplia gama de temas que van desde las ciencias naturales, la filosofía, la lingüística, la economía, la política, la psicología y las artes. Como fundador de la escuela peripatética de filosofía en el Liceo de Atenas, inició la amplia tradición aristotélica posterior, que sentó las bases para el desarrollo de la ciencia moderna. La vida posterior de Aristóteles estuvo empañada por el empeoramiento de su relación con su antiguo pupilo, Alejandro. Obligado a huir de su hogar en Atenas, su muerte fue poco gloriosa para un monumento tan venerado del pensamiento filosófico, lo que quizá fue la causa de su partida al reino de Caronte tras su muerte.\nLas afirmaciones de este espectro concreto de ser el propio Aristóteles son dudosas. Parece improbable que el famoso filósofo no hubiera sucumbido ya a su sombra o alcanzado la trascendencia. Es bastante común que estas entidades espectrales suplanten a grandes figuras (a veces incluso creyendo de verdad que lo son). En cualquier caso, este espectro es en efecto muy erudito y podría tener una utilidad en tu corte.\nInteresado por el mundo mortal, como suelen estar la mayoría de los espectros, lo has convencido con facilidad de que visite tu dominio."
  POD_umbra_gp.103.a: "¿Podrías convertirme en el próximo Alejandro Magno?"
  POD_umbra_gp.103.b: "No me interesa."
  
@@ -292,7 +264,7 @@
  POD_umbra_gp.104.b: "No me interesa."
  
  POD_umbra_gp.105.t: "Mahfuz Alam"
- POD_umbra_gp.105.desc: "Mahfuz Alam, un guerrero musulmán que murió gloriosamente defendiendo Jerusalén de los caballeros europeos de las cruzadas, lidera un grupo de wraiths Renegados. Su lugar en el Cielo estaba asegurado mediante su martirio, y la llamada Necrópolis de Jerusalén es para él una burla vil. Ha oído demasiadas historias falsas sobre las [UmbraGlossaryLocalized('far_shore','Sotaventos')], a través del gran [UmbraGlossary('sunless_sea')], como para creer que se puede llegar al Paraíso con mero esfuerzo físico.\nEn consecuencia, Alam y sus aliados (menos de una docena, pero en aumento) desean desalojar a los miles de Legionarios Estigios que ocupan la Necrópolis de Jerusalén y establecer un reino musulmán en el más allá, para desafiar la supremacía de los Pescadores (como se llama a los cristianos) y de los obviamente indignos Estigios.\nFrente al guerrero musulmán, le habéis convencido de que enfrentarse a Estigia con su fuerza actual sería similar al [UmbraGlossary('oblivion')]. Trabajar con vos por ahora mientras reúne fuerzas será más adecuado para sus planes."
+ POD_umbra_gp.105.desc: "Mahfuz Alam, un guerrero musulmán que murió gloriosamente defendiendo Jerusalén de los caballeros europeos cruzados, dirige a un grupo de espectros Renegados. Su lugar en el Cielo estaba asegurado por su martirio y la llamada Necrópolis de Jerusalén es para él una vil burla. Ha oído demasiadas historias falsas de las [UmbraGlossaryLocalized('far_shore','Orillas Lejanas')], al otro lado del gran [UmbraGlossary('sunless_sea')], para creer que se pueda llegar al Paraíso con un mero esfuerzo físico.\nPor ello, Alam y sus aliados (menos de una docena, pero en aumento) desean desalojar a los miles de Legionarios Estigios que ocupan la Necrópolis de Jerusalén y establecer un reino musulmán en el más allá para desafiar la supremacía de los Pescadores (como llaman a los cristianos) y de los obviamente indignos Estigios.\nAnte el guerrero musulmán, lo has convencido de que enfrentarse a Estigia con su fuerza actual equivaldría al [UmbraGlossary('oblivion')]. Trabajar contigo por ahora, mientras reúne fuerzas, se ajustará mejor a sus planes."
  POD_umbra_gp.105.a: "Creceremos juntos."
  POD_umbra_gp.105.b: "No me interesa."
 
@@ -302,7 +274,7 @@
  POD_umbra_gp.107.b: "Las Musas del Modo, analíticas y filosóficas."
 
  POD_umbra_gp.108.t: "Las Musas de los Medios de Comunicación"
- POD_umbra_gp.108.desc: "Calíope, Musa de la Voz. Originalmente la Musa del Canto Épico, el ámbito de Calíope se ha expandido para incluir todos los usos de la voz: cantar, anunciar, dar conferencias, narrar historias y cualquier tipo de actuación donde solo se escuche la voz.\nClío, Musa de la Palabra Escrita. Originalmente la Musa de la Historia, Clío ahora inspira todas las formas de escritura, sea cual sea el estilo, el tema o la intención.\nEuterpe, Musa de la Música. Originalmente la Musa del Canto Lírico, Euterpe ha cambiado su ámbito para incluir toda la música, excepto la producida por la voz humana, que es el dominio de Calíope.\nTerpsícore, Musa de la Danza. Terpsícore es, como siempre ha sido, la Musa de la Danza, pero ha expandido su dominio para incluir a todos aquellos para quienes el movimiento del cuerpo es el hecho central de su oficio.\nArquiope, Musa de la Arquitectura. Una nueva Musa, el ámbito de Arquiope es el del cerramiento y la demarcación espacial (normalmente refugios permanentes, aunque las tiendas y los cobertizos también entran en su jurisdicción).\nTamaraponme, Musa del Atuendo. Otra nueva Musa es Tamaraponme, cuyo dominio incluye todos los aspectos externos de la apariencia individual y la presentación personal.\nEudore, Musa del Drama. El ámbito de Eudore es la proyección física de un personaje pretendido, ya sea el propio, el de otra persona o el de una persona totalmente ficticia.\nFidia, Musa de la Escultura. Al ser mortal, la destreza de Fidias para dar forma a la piedra impresionó tanto a los dioses que fue invitado a convertirse en la Musa de la Escultura.\nXerops, Musa de la Pintura. Xerops es la nueva Musa de las imágenes bidimensionales, tanto representativas como abstractas, y gobierna la pintura y el dibujo en el sentido clásico."
+ POD_umbra_gp.108.desc: "Calíope, Musa de la Voz. Originalmente la Musa del Canto Épico, el ámbito de Calíope se ha ampliado hasta incluir todos los usos de la voz: cantar, anunciar, dar conferencias, contar historias y cualquier tipo de actuación donde solo se oiga la voz.\nClío, Musa de la Palabra Escrita. Originalmente la Musa de la Historia, Clío inspira ahora todas las formas de escritura, sea cual sea el estilo, el tema o la intención.\nEuterpe, Musa de la Música. Originalmente la Musa del Canto Lírico, Euterpe ha cambiado su ámbito para incluir toda la música salvo la producida por la voz humana, que es el dominio de Calíope.\nTerpsícore, Musa de la Danza. Terpsícore es, como siempre ha sido, la Musa del Baile, pero ha ampliado su dominio para incluir a todos aquellos para quienes el movimiento del cuerpo es el hecho central de su oficio.\nArquíope, Musa de la Arquitectura. Una Musa nueva, el ámbito de Arquíope es el del cerramiento y la delimitación del espacio (normalmente refugios permanentes, aunque las tiendas y los cobertizos también caen dentro de su jurisdicción).\nTamaraponme, Musa del Vestir. Otra Musa nueva es Tamaraponme, cuyo dominio incluye todos los aspectos externos de la apariencia individual y la presentación personal.\nEudore, Musa del Drama. El ámbito de Eudore es la proyección física de un personaje que se pretende, ya sea el propio, el de otra persona o el de una persona totalmente ficticia.\nFidia, Musa de la Escultura. Antaño mortal, la destreza de Fidias para dar forma a la piedra impresionó tanto a los dioses que fue invitado a convertirse en la Musa de la Escultura.\nXerops, Musa de la Pintura. Xerops es la nueva Musa de las imágenes bidimensionales, tanto figurativas como abstractas, y gobierna la pintura y el dibujo en el sentido clásico."
  POD_umbra_gp.108.a: "Pasar tiempo con Calíope."
  POD_umbra_gp.108.b: "Pasar tiempo con Clío."
  POD_umbra_gp.108.c: "Pasar time con Euterpe."
@@ -314,7 +286,7 @@
  POD_umbra_gp.108.i: "Pasar tiempo con Xerops."
 
  POD_umbra_gp.109.t: "Las Musas del Modo"
- POD_umbra_gp.109.desc: "Erato, Musa del Romance. Originalmente la Musa de la poesía erótica, Erato se ocupa de las pasiones abrumadoras de la vida, especialmente aquellas que unen a las personas, como el amor y el deseo. Prefiere los finales felices, pero puede llevar a sus filiales a través de tribulaciones interminables para lograrlos.\nMelpómene, Musa de la Tragedia. Melpómene sigue siendo la Musa de la Tragedia, pues el dolor que los mortales se infligen unos a otros ha cambiado muy poco en los últimos miles de años. No se deleita en este dolor, sino que intenta guiar a las personas a través de él hacia la comprensión de por qué ha ocurrido y qué podría hacerse para evitarlo en el futuro.\nPolimnia, Musa de la Religión. Polimnia era la Musa de los cantos sagrados, y ahora presta su guía a quienes siguen un camino espiritual y buscan comprender los misterios del alma.\nTalía, Musa de la Comedia. Talía fue y sigue siendo la Musa de la Comedia, siempre sensible a las absurdidades inherentes de la vida, señalando el humor de cualquier situación.\nUrania, Musa de la Ciencia. Urania era la Musa de la astronomía, y ahora extiende su dominio a toda la Ciencia, siempre dispuesta para quienes buscan descubrir y comprender.\nArquíloco, Musa de la Acción. Se le atribuye ser uno de los primeros poetas satíricos de la tierra; el ingenio de Arquíloco se ejercía con una beligerancia tan inquebrantable que a menudo tenía que defender sus versos mediante el combate real. Así se ha convertido en la Musa de la Acción.\nSolón, Musa de la Justicia. Solón de Atenas fue identificado con la conciencia moral de la raza humana, enfatizando la igualdad y el juego limpio en la ejecución de la ley, y por ello es ahora la Musa de la Justicia.\nPseudolos, Musa de la Intriga. Siendo en realidad un personaje ficticio de las obras de Plauto, Pseudolos recibió vida Umbral como la Musa de la Intriga debido a todo el esquema, la conspiración y los tratos sucios que ocurren en el mundo.\nLenore, Musa del Horror. Se cree que la Musa del Horror ha estado con la humanidad desde los primeros indicios de la conciencia, aunque pocos se atreven a mencionar su nombre."
+ POD_umbra_gp.109.desc: "Érato, Musa del Romance. Originalmente la Musa de la poesía erótica, Érato se ocupa de las pasiones abrumadoras de la vida, en especial de las que unen a las personas, como el amor y el deseo. Prefiere los finales felices, pero puede llevar a sus filiales por tribulaciones interminables para llegar a ellos.\nMelpómene, Musa de la Tragedia. Melpómene sigue siendo la Musa de la Tragedia, pues el dolor que los mortales se infligen entre sí ha cambiado poco en los últimos miles de años. No se deleita en este dolor, sino que trata de guiar a las personas a través de él hacia una comprensión de por qué ha ocurrido y qué podría hacerse para evitarlo en el futuro.\nPolimnia, Musa de la Religión. Polimnia fue la Musa de los cantos sagrados y ahora presta su guía a quienes siguen un camino espiritual y buscan comprender los misterios del alma.\nTalía, Musa de la Comedia. Talía fue y sigue siendo la Musa de la Comedia, siempre sensible a los absurdos inherentes de la vida, señalando el humor de cualquier situación.\nUrania, Musa de la Ciencia. Urania fue la Musa de la astronomía y ahora extiende su dominio a toda la Ciencia, siempre a mano para quienes buscan descubrir y comprender.\nArquíloco, Musa de la Acción. Considerado uno de los primeros poetas satíricos de la tierra, el ingenio de Arquíloco se esgrimía con tal beligerancia inflexible que a menudo tenía que defender sus versos con un combate real. Así se ha convertido en la Musa de la Acción.\nSolón, Musa de la Justicia. Solón de Atenas fue identificado con la conciencia moral de la raza humana, haciendo hincapié en la igualdad y el juego limpio en la ejecución de la ley, y por eso es ahora la Musa de la Justicia.\nPseudolos, Musa de la Intriga. En realidad un personaje de ficción de las obras de Plauto, Pseudolos recibió vida Umbral como Musa de la Intriga por todas las maquinaciones, conjuras y tratos sucios que se dan en el mundo.\nLenore, Musa del Horror. Algunos creen que la Musa del Horror ha estado con la humanidad desde los primeros albores de la conciencia, aunque pocos se atreven a mencionar su nombre."
  POD_umbra_gp.109.a: "Pasar tiempo con Erato."
  POD_umbra_gp.109.b: "Pasar tiempo con Melpómene."
  POD_umbra_gp.109.c: "Pasar tiempo con Polimnia."
@@ -326,7 +298,7 @@
  POD_umbra_gp.109.i: "Pasar tiempo con Lenore."
  
  artifact_elemental_armor_name: "Armadura Elemental"
- artifact_elemental_armor_description: "Una misteriosa armadura hallada en la Corte Elemental de la Tierra. Parece resonar con el poder de las cuatro Cortes Elementales, utilizándolo para fortalecerse si se le da la oportunidad."
+ artifact_elemental_armor_description: "Una misteriosa armadura hallada en la Corte Elemental de la Tierra. Parece resonar con el poder de las cuatro Cortes Elementales y lo usa para fortalecerse si se le da la oportunidad."
  POD_umbra_gp.110.t: "La Armadura Elemental"
  POD_umbra_gp.110.desc: "Las Cortes de los Elementos se encuentran a mitad de una Aguja, antes de que un viajero alcance las Cinco Puertas, con cada Elemento representado por un Señorío que expresa su naturaleza intrínseca. Hallados principalmente en la cara norte de una Aguja, los señoríos de la Tierra no siempre son distinguibles de inmediato de la sustancia de la propia Aguja hasta que se presentan o se examinan con sentidos mágicos, apareciendo como cuevas o extrañas formaciones rocosas. La tangibilidad efímera de estos señoríos y sus residentes corresponde a la materia en su estado sólido, manteniendo una forma y volumen distintos a menos que actúen fuerzas externas.\nEl viaje es algo arduo pero, gracias al exhaustivo reconocimiento previo del área, logras localizar el objetivo de tu expedición: una extraña armadura (obviamente mágica). Un rápido examen revela que no es una armadura muy impresionante, considerando todo, a pesar de que parece absorber la energía de la Corte Elemental. Sin embargo, no hay daño en llevártela, así que lo haces. Puede que haya formas de mejorar su potencial en el futuro."
  POD_umbra_gp.110.a: "Continuará, supongo."
@@ -341,14 +313,14 @@
  Theotime: "Theotime"
  skilled_umbra_explorer_modifier: "Explorador[X.Custom('ES_OA')] experto en la [umbra|E]"
  POD_umbra_gp.114.t: "El Explorador Umbral"
- POD_umbra_gp.114.desc: "Aparte de sus bancos, su fuente y sus puertas, el Gran Salón está vacío. En ocasiones extrañas, un viajero podría encontrarse con otro; sin embargo, el tráfico es lo suficientemente ligero como para que puedas vagar por el Salón durante días sin cruzar el camino de otro ser. Los pasillos se dirigen en todas las direcciones, ramificándose ocasionalmente en tramos de escaleras, pozos y nichos. El loco diseño de los pasillos infinitos frustra cualquier intento de «hacer trampas» y usar alguna forma de magia para encontrar el camino correcto.\nComo tal, no es de extraña que el Gran Salón atraiga al tipo más curioso de entidades umbrales: aquellas que se dedican al espíritu de la aventura y la exploración. El que quería contactar contigo te dice que se está aburriendo de viajar por el Gran Salón y que le gustaría convertirse en tu Explorador Umbral oficial. Parece bastante hábil en su oficio y podría ser una ventaja para el posterior cartografiado de la [umbra|E], lo que lo convierte en una perspectiva tentadora."
+ POD_umbra_gp.114.desc: "Aparte de sus bancos, su fuente y sus puertas, el Gran Salón está vacío. En ocasiones raras, un viajero puede encontrarse con otro; el tráfico es, sin embargo, lo bastante escaso como para poder vagar por el Salón durante días sin cruzarse con ningún otro ser. Los corredores conducen en todas direcciones y de vez en cuando se ramifican en escaleras, pozos y alcobas. La disposición demente de los pasillos infinitos desbarata cualquier intento de «hacer trampa» y usar alguna forma de magia para hallar el camino correcto.\nPor ello, no sorprende que el Gran Salón atraiga al tipo más curioso de entidades umbrales, aquellos que se dedican al espíritu de aventura y exploración. Quien quería contactar contigo te dice que se está aburriendo de recorrer el Gran Salón y que le gustaría convertirse en tu Explorador Umbral oficial. Parece muy hábil en su oficio y podría ser un activo para seguir cartografiando la [umbra|E], lo que hace de esto una perspectiva tentadora."
  POD_umbra_gp.114.a: "Estáis contratados."
  POD_umbra_gp.114.b: "No lo eres."
  POD_umbra_gp.115.t: "Fe perfeccionada"
  POD_umbra_gp.115.desc: "Todos los cielos existen en este Señorío: Paraísos surgidos de la tradición africana, la doctrina islámica, el ethos cristiano y las esperanzas de los nativos americanos. Los victoriosos guerreros nórdicos se dan un festín en el Valhalla mientras las almas de la Antigua Grecia compiten en los Campos Elíseos. Se dice que cada fe tiene su mejor reflejo en el Paraíso, y cada una se contenta con dejar en paz a las demás. Solo los muertos dignos, los no nacidos o los verdaderamente fieles pueden entrar y, si alguno se atreviera a amenazar el Señorío, encontraría a los ángeles y héroes más poderosos alineados contra él.\nTu guía es una mujer (aparentemente) joven llamada Kalina y, con ella liderando el camino, atraviesas la Ciudad del Crepúsculo. Edificios de todas las fes, desde mezquitas hasta templos, catedrales y simples logias, bordean las grandes avenidas por las que caminas, y los signos terrenales de la vida urbana —la miseria, el comercio, el vicio y la decadencia— no se ven por ninguna parte. La ciudad parece existir solo con dos propósitos: impresionar la vista y elevar el corazón.\nLuego te guía a través de la Gran Montaña, el Océano Infinito, el Santuario de los Animales... y te maravillas ante la belleza de todo ello.\nEste reino podría ser solo una sombra de una gloria demasiado expansiva para que la mente humana la comprenda; una sombra moldeada a partir de lo que las mentes mortales imaginan que es el Paraíso, pero cuando llegue el momento de marcharte, te sentirás revitalizado[ROOT.Char.Custom('ES_OA')] y más convencido de tu fe de lo que jamás estuviste."
  POD_umbra_gp.115.a: "Perfección."
  POD_umbra_gp.116.t: "La Fortaleza del Gobierno"
- POD_umbra_gp.116.desc: "Sobre una extensión de roca yerma y árboles raquíticos se alza la Fortaleza de las locuras de la humanidad. Un castillo monumental de madera y piedra, el baluarte de la sabiduría, la fuerza y la codicia, rodea una montaña de mierda. En lo alto de la apestosa pila, a cientos de metros a la redonda, se erige un perfecto arbusto de rosas blancas. ¿Valen las flores el esfuerzo de alcanzarlas? ¿Es necesaria la Fortaleza? ¿Quién recogería las rosas si pudiera?, y ¿qué pasaría si lo hiciera? Los hombres han debatido estas cuestiones durante milenios. Y, sospechas, siempre lo harán."
+ POD_umbra_gp.116.desc: "Sobre una extensión de roca árida y árboles raquíticos se alza la Fortaleza de las locuras de la humanidad. Un castillo monumental de madera y piedra, la fortificación de la sabiduría, la fuerza y la codicia rodea una montaña de mierda. Sobre el montón apestoso, a cientos de metros a la redonda, se alza un rosal blanco perfecto. ¿Valen las flores el esfuerzo de alcanzarlas? ¿Hace falta la Fortaleza? ¿Quién cogería las rosas si pudiera y qué ocurriría si lo hiciera? Los hombres llevan milenios discutiendo estas preguntas. Y, sospechas, siempre lo harán."
  POD_umbra_gp.116.a: "La Fortaleza y las rosas están unidas."
  POD_umbra_gp.116.b: "La Fortaleza nos protege de las rosas."
  POD_umbra_gp.116.c: "La Fortaleza nos protege de nosotros."
@@ -392,7 +364,7 @@
  POD_umbra_kj.1001.a: "¡Es increíble!"
  
  POD_umbra_kj.1002.t: "Enseñanzas de los Espíritus"
- POD_umbra_kj.1002.desc_opening: "Entraste en el [spirit_world|E], tan profundo como pudiste, y entonces recibiste instrucciones de"
+ POD_umbra_kj.1002.desc_opening: "Entraste en el [spirit_world|E], tan hondo como pudiste, y luego recibiste instrucciones de"
  POD_umbra_kj.1002.desc_high: "un antiguo y legendario [Glossary('Wan Kuei','game_concept_kuei_jin_desc')], un Gran Ancestro"
  POD_umbra_kj.1002.desc_yin: "a [Glossary('Rey Yama','podgloss.yamaking')]"
  POD_umbra_kj.1002.desc_yang: "un poderoso espíritu"
@@ -403,7 +375,7 @@
  # Action event
  
  POD_umbra_action.1001.t: "Campo de Batalla"
- POD_umbra_action.1001.desc: "El Campo de Batalla es un reino dedicado a la violencia y la furia, donde reina el caos mientras los ejércitos se mezclan: soldados Qin que terminan luchando contra legiones romanas y cruzados que se alían con bárbaros vikingos contra tropas mayas. Mientras no se entre en uno de los conflictos, el visitante camina por una «vía» apropiada para la batalla que presencia (un barco para una batalla naval, un camino romano para un conflicto durante las guerras púnicas, etc.). Mientras no se salgan de la vía, no serán atacados directamente.\nEsta es una excelente manera de aprender nuevas (o antiguas) estrategias que podrían ser relevantes para tu era de alguna forma."
+ POD_umbra_action.1001.desc: "El Campo de Batalla es un reino dedicado a la violencia y la ira, y en él reina el caos, pues los ejércitos se mezclan y soldados Qin acaban luchando contra legiones romanas y los Cruzados se alían con bárbaros vikingos contra tropas mayas. Mientras no entre en uno de los conflictos, un visitante camina por un «sendero» adecuado a la batalla que presencia (un barco para una batalla naval, una calzada romana para un conflicto durante las guerras púnicas, etc.). Mientras no se salga del sendero, no será atacado directamente.\nEs una gran manera de aprender estrategias nuevas (o antiguas) que podrían ser relevantes para tu época de algún modo."
  
  POD_umbra_action.1101.t: "Sede"
  POD_umbra_action.1101.desc: "Seat es el palacio del señor de la muerte y el cuartel general de la Legión, ¿cuál quieres visitar?"
@@ -438,15 +410,15 @@
  
  # Great Maelstrom event
  POD_great_maelstrom.2.t: "Segundo Gran Maelstrom"
- POD_great_maelstrom.2.desc: "Una violenta supertormenta ocurrió recientemente dentro de la [UmbraGlossary('tempest')] causada por la Peste Negra, trayendo una muerte y un sufrimiento incalculables por todo el mundo. Todas las ubicaciones del [UmbraGlossaryLocalized('shadowlands','Inframundo')] son peligrosas de explorar durante #V 15#! años."
+ POD_great_maelstrom.2.desc: "Una violenta supertormenta ha ocurrido hace poco dentro de la [UmbraGlossary('tempest')], causada por la Peste Negra, que trajo muerte y sufrimiento indecibles a todo el mundo. Todas las localizaciones del [UmbraGlossaryLocalized('shadowlands','Inframundo')] son peligrosas de explorar durante #V 15#! años."
  POD_great_maelstrom.3.t: "Tercer Gran Maelstrom"
- POD_great_maelstrom.3.desc: "Una violenta supertormenta ocurrió recientemente dentro de las [UmbraGlossary('shadowlands')] causada por las guerras y enfermedades traídas por los invasores europeos a las civilizaciones americanas. Todas las ubicaciones del [UmbraGlossaryLocalized('shadowlands','Inframundo')] son peligrosas de explorar durante #V 15#! años."
+ POD_great_maelstrom.3.desc: "Una violenta supertormenta ha ocurrido hace poco dentro de las [UmbraGlossary('shadowlands')], causada por las guerras y enfermedades que trajeron los invasores europeos a las civilizaciones americanas. Todas las localizaciones del [UmbraGlossaryLocalized('shadowlands','Inframundo')] son peligrosas de explorar durante #V 15#! años."
  POD_great_maelstrom.4.t: "Cuarto Gran Maelstrom"
- POD_great_maelstrom.4.desc: "Una violenta supertormenta ocurrió recientemente dentro de las [UmbraGlossary('shadowlands')] causada por los horrores desatados por la Primera Guerra Mundial y la gripe española. Todas las ubicaciones del [UmbraGlossaryLocalized('shadowlands','Inframundo')] son peligrosas de explorar durante #V 15#! años."
+ POD_great_maelstrom.4.desc: "Una violenta supertormenta ha ocurrido hace poco dentro de las [UmbraGlossary('shadowlands')], causada por los horrores desatados por la Primera Guerra Mundial y la gripe española. Todas las localizaciones del [UmbraGlossaryLocalized('shadowlands','Inframundo')] son peligrosas de explorar durante #V 15#! años."
  POD_great_maelstrom.5.t: "Quinto Gran Maelstrom"
- POD_great_maelstrom.5.desc: "Una violenta supertormenta ocurrió recientemente dentro de las [UmbraGlossary('shadowlands')] causada por el dolor y el sufrimiento desatados por la Segunda Guerra Mundial. Todas las ubicaciones del [UmbraGlossaryLocalized('shadowlands','Inframundo')] son peligrosas de explorar durante #V 15#! años."
+ POD_great_maelstrom.5.desc: "Una violenta supertormenta ha ocurrido hace poco dentro de las [UmbraGlossary('shadowlands')], causada por el dolor y el sufrimiento desatados por la Segunda Guerra Mundial. Todas las localizaciones del [UmbraGlossaryLocalized('shadowlands','Inframundo')] son peligrosas de explorar durante #V 15#! años."
  POD_great_maelstrom.6.t: "Sexto Gran Maelstrom"
- POD_great_maelstrom.6.desc: "Una violenta supertormenta ocurrió recientemente dentro de las [UmbraGlossary('shadowlands')] cuando la Semana de las Pesadillas azotó al mundo entero. Todas las ubicaciones del [UmbraGlossaryLocalized('shadowlands','Inframundo')] son peligrosas de explorar durante #V 15#! años."
+ POD_great_maelstrom.6.desc: "Una violenta supertormenta ha ocurrido hace poco dentro de las [UmbraGlossary('shadowlands')] cuando la Semana de las Pesadillas golpeó al mundo entero. Todas las localizaciones del [UmbraGlossaryLocalized('shadowlands','Inframundo')] son peligrosas de explorar durante #V 15#! años."
  
  #############
  # Pet event #
@@ -470,11 +442,11 @@
  POD_umbra_pet.111.a: "¡Incluso los dragones me obedecen!"
  
  POD_umbra_pet.112.t: "[ROOT.Char.Custom('DragonStoryName')]: Vasallo encantado"
- POD_umbra_pet.112.desc: "Me encuentro con mi [ROOT.Char.Custom2('RelationToMe', SCOPE.sC('vassal'))] [vassal.GetTitledFirstName] admirando a mi dragón, [ROOT.Char.Custom('DragonStoryName')].\n\n«¡Esta maravillosa bestia es incluso más impresionante de lo que cuentan las historias, mi [ROOT.Char.GetLadyLord]!». Parece que mi inusual mascota está causando una gran impresión, como era de esperar, en mis vasallos."
+ POD_umbra_pet.112.desc: "Me topo con mi [ROOT.Char.Custom2('RelationToMe', SCOPE.sC('vassal'))] [vassal.GetTitledFirstName] admirando a mi dragón [ROOT.Char.Custom('DragonStoryName')].\n\n«¡Esta maravillosa bestia es aún más impresionante que las historias que se cuentan, mi [ROOT.Char.GetLadyLord]!» Parece que mi inusual mascota causa una gran impresión, como era de esperar, en mis vasallos."
  POD_umbra_pet.112.a: "¡Un símbolo de mi poder!"
  
  POD_umbra_pet.113.t: "[ROOT.Char.Custom('DragonStoryName')]: Aliento de dragón"
- POD_umbra_pet.113.desc: "«[ROOT.Char.GetFirstNameNoTooltip], ¡esta bestia tiene que irse!»\n\nMi sirviente señala a [ROOT.Char.Custom('DragonStoryName')]. «[ROOT.Char.Custom('DragonStorySheHe')] ha estado lanzando fuego mientras no mirabas, ¡[ROOT.Char.Custom('DragonStorySheHe')] es peligrosa de tener cerca!»\n\n¿Podría ser que incluso estas majestuosas bestias son engañosas por naturaleza? ¿O es simplemente que sus instintos naturales se imponen cuando tú no estás para controlarlos?"
+ POD_umbra_pet.113.desc: "«¡[ROOT.Char.GetFirstNameNoTooltip], esta bestia tiene que irse!»\n\nMi sirviente señala a [ROOT.Char.Custom('DragonStoryName')]. «¡[ROOT.Char.Custom('DragonStorySheHe')] ha estado esparciendo fuego mientras no mirabas, y [ROOT.Char.Custom('DragonStorySheHe')] es peligroso tenerlo cerca!»\n\n¿Será que incluso estas majestuosas bestias son traicioneras por naturaleza? ¿O son simplemente sus instintos naturales, que toman el control mientras no estás para frenarlos?"
  POD_umbra_pet.113.a: "¡Eso... eso debe haber sido un error!"
  POD_umbra_pet.113.b: "¡Tú, #EMP beast#!!"
 
@@ -482,13 +454,13 @@
  POD_umbra_pet.201.desc: "Mientras admiro al unicornio que ahora sigue cada uno de mis comandos, reflexiono sobre cómo llamar a [ROOT.Char.Custom('PegasusStoryHerHim')]..."
  
  POD_umbra_pet.211.t: "[ROOT.Char.Custom('UnicornStoryName')|U]: Fiel unicornio"
- POD_umbra_pet.211.desc: "Un renombrado entrenador se ha acercado a mí tras oír rumores sobre mi poderoso unicornio [ROOT.Char.Custom('UnicornStoryName')], y ofrece [ROOT.Char.Custom('RandomHerHis')] servicios.\n\n«Todo lo que pido a cambio es una pequeña compensación»."
+ POD_umbra_pet.211.desc: "Un renombrado adiestrador se me ha acercado tras oír rumores de mi poderoso unicornio [ROOT.Char.Custom('UnicornStoryName')] y ofrece [ROOT.Char.Custom('RandomHerHis')] servicios.\n\n«Lo único que pido a cambio es una pequeña compensación.»"
  POD_umbra_pet.211.a: "[ROOT.Char.Custom('UnicornStorySheHe')|U] necesita ser más fuerte."
  POD_umbra_pet.211.b: "Aprender a moverse con mayor rapidez es algo que [ROOT.Char.Custom('UnicornStorySheHe')] necesita aprender."
  POD_umbra_pet.211.c: "[ROOT.Char.Custom('UnicornStorySheHe')|U] necesita trabajar [ROOT.Char.Custom('UnicornStoryHerHis')] resistencia."
  POD_umbra_pet.211.d: "¡Si hay algo de lo que [ROOT.Char.Custom('UnicornStorySheHe')] carece es de ferocidad!"
  POD_umbra_pet.211.e: "No me interesa."
- POD_umbra_pet.211.e.tt: "#F «¡[THIS.Char.Custom('UnicornStoryName')] no necesita a ningún otro entrenador que no sea yo!»#!"
+ POD_umbra_pet.211.e.tt: "#F «¡[THIS.Char.Custom('UnicornStoryName')] no necesita otro adiestrador que yo!»#!"
  POD_umbra_pet.211.f: "¡Para eso pago a un $master_of_horse_court_position$!"
  POD_umbra_pet.211.f.tt: "Tu $master_of_horse_court_position$ comienza el entrenamiento de [THIS.Char.Custom('UnicornStoryName')]"
  POD_umbra_pet.211.f.failure: "Sobreestimaste a tu $master_of_horse_court_position$"
@@ -500,7 +472,7 @@
  POD_umbra_pet.212.b: "¡El tiempo es demasiado bueno como para no disfrutarlo debidamente!"
 
  POD_umbra_pet.213.t: "[ROOT.Char.Custom('UnicornStoryName')|U]: Entusiasta de los caballos"
- POD_umbra_pet.213.desc: "[horse_vassal.Custom2('MyCharacterIntroduction', ROOT.Char)|U] observa a [ROOT.Char.Custom('UnicornStoryName')] de arriba abajo, asintiendo con aprobación.\n\n«¡Tiene usted un unicornio magnífico aquí, mi [ROOT.Char.GetTitleTierName]! Si me permitiera dar un paseo con [ROOT.Char.Custom('UnicornStoryHerHim')], se lo agradecería mucho»."
+ POD_umbra_pet.213.desc: "[horse_vassal.Custom2('MyCharacterIntroduction', ROOT.Char)|U] mira de arriba abajo a [ROOT.Char.Custom('UnicornStoryName')] y asiente con aprobación.\n\n«¡Es un unicornio magnífico el que tenéis aquí, mi [ROOT.Char.GetTitleTierName]! Si me permitierais llevar a [ROOT.Char.Custom('UnicornStoryHerHim')] a dar un paseo, os estaría muy agradecido.»"
  POD_umbra_pet.213.a: "¡Disfruta!"
  POD_umbra_pet.213.a.tt: "[THIS.Char.Custom('UnicornStoryName')] es una montura feroz, y [horse_vassal.GetFirstNameNoTooltip] no es conocido por su Destreza; ¿le irá bien a [horse_vassal.GetSheHe]?"
  POD_umbra_pet.213.b: "¡Nadie monta a [ROOT.Char.Custom('UnicornStoryName')] excepto yo!"
@@ -513,13 +485,13 @@
  POD_umbra_pet.301.desc: "Mientras admiro al pegaso que ahora sigue cada uno de mis mandatos, reflexiono sobre cómo llamar a [ROOT.Char.Custom('PegasusStoryHerHim')]..."
 
  POD_umbra_pet.311.t: "[ROOT.Char.Custom('PegasusStoryName')|U]: Fiel Pegaso"
- POD_umbra_pet.311.desc: "Un renombrado entrenador se ha acercado a mí tras oír rumores sobre mi poderoso pegaso [ROOT.Char.Custom('PegasusStoryName')], y ofrece [ROOT.Char.Custom('RandomHerHis')] servicios.\n\n«Todo lo que pido a cambio es una pequeña compensación»."
+ POD_umbra_pet.311.desc: "Un renombrado adiestrador se me ha acercado tras oír rumores de mi poderoso pegaso [ROOT.Char.Custom('PegasusStoryName')] y ofrece [ROOT.Char.Custom('RandomHerHis')] servicios.\n\n«Lo único que pido a cambio es una pequeña compensación.»"
  POD_umbra_pet.311.a: "[ROOT.Char.Custom('PegasusStorySheHe')|U] necesita ser más fuerte."
  POD_umbra_pet.311.b: "Aprender a moverse con mayor rapidez es algo que [ROOT.Char.Custom('PegasusStorySheHe')] necesita aprender."
  POD_umbra_pet.311.c: "[ROOT.Char.Custom('PegasusStorySheHe')|U] necesita trabajar [ROOT.Char.Custom('PegasusStoryHerHis')] resistencia."
  POD_umbra_pet.311.d: "¡Si hay algo de lo que [ROOT.Char.Custom('PegasusStorySheHe')] carece es de ferocidad!"
  POD_umbra_pet.311.e: "No me interesa."
- POD_umbra_pet.311.e.tt: "#F «¡[THIS.Char.Custom('PegasusStoryName')] no necesita a ningún otro entrenador que no sea yo!»#!"
+ POD_umbra_pet.311.e.tt: "#F «¡[THIS.Char.Custom('PegasusStoryName')] no necesita otro adiestrador que yo!»#!"
  POD_umbra_pet.311.f: "¡Para eso pago a un $master_of_horse_court_position$!"
  POD_umbra_pet.311.f.tt: "Tu $master_of_horse_court_position$ comienza el entrenamiento de [THIS.Char.Custom('PegasusStoryName')]"
  POD_umbra_pet.311.f.failure: "Sobreestimaste a tu $master_of_horse_court_position$"
@@ -531,7 +503,7 @@
  POD_umbra_pet.312.b: "¡El tiempo es demasiado bueno como para no disfrutarlo debidamente!"
 
  POD_umbra_pet.313.t: "[ROOT.Char.Custom('PegasusStoryName')|U]: Entusiasta de los caballos"
- POD_umbra_pet.313.desc: "[horse_vassal.Custom2('MyCharacterIntroduction', ROOT.Char)|U] observa a [ROOT.Char.Custom('PegasusStoryName')] de arriba abajo, asintiendo con aprobación.\n\n«¡Tiene usted un pegaso magnífico aquí, mi [ROOT.Char.GetTitleTierName]! Si me permitiera dar un paseo con [ROOT.Char.Custom('PegasusStoryHerHim')], se lo agradecería mucho»."
+ POD_umbra_pet.313.desc: "[horse_vassal.Custom2('MyCharacterIntroduction', ROOT.Char)|U] mira de arriba abajo a [ROOT.Char.Custom('PegasusStoryName')] y asiente con aprobación.\n\n«¡Es un pegaso magnífico el que tenéis aquí, mi [ROOT.Char.GetTitleTierName]! Si me permitierais llevar a [ROOT.Char.Custom('PegasusStoryHerHim')] a dar un paseo, os estaría muy agradecido.»"
  POD_umbra_pet.313.a: "¡Disfruta!"
  POD_umbra_pet.313.a.tt: "[THIS.Char.Custom('PegasusStoryName')] es una montura feroz, y [horse_vassal.GetFirstNameNoTooltip] no es conocido por su Destreza; ¿le irá bien a [horse_vassal.GetSheHe]?"
  POD_umbra_pet.313.b: "¡Nadie monta al [ROOT.Char.Custom('PegasusStoryName')] excepto yo!"

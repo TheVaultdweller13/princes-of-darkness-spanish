@@ -16,14 +16,14 @@
  doctrine_vampirethemasquerade_lax_name: "Mascarada Laxa"
  doctrine_werewolf_veil_should_not_lifted_name: "No Debe Levantarse"
  doctrine_vampirethemasquerade_lax_desc: "El cumplimiento del Silencio de la Sangre es laxo. Aunque los Vástagos se esfuerzan por ocultar su existencia, a veces también cometen errores terribles que sus Antiguos no castigan."
- doctrine_werewolf_veil_should_not_lifted_desc: "El Velo es un término poético para la falsa creencia de que lo sobrenatural no existe, que el Delirio refuerza. El Velo se instituyó formalmente mediante el Concordato de hace nueve mil años, que puso fin al Impergium. La Letanía afirma con claridad que «El Velo No Debe Levantarse». El Delirio ayuda a mantener el Velo en pie. Dañar o rasgar el Velo supone una gran pérdida de honor entre los Garou, mientras que repararlo supone lo contrario. En la práctica, el Delirio hace la mayor parte del trabajo y los Garou apenas necesitan preocuparse por ello. Algunas tribus lo ven más como una directriz que como una norma estricta que hacer cumplir." 
+ doctrine_werewolf_veil_should_not_lifted_desc: "El Velo es un término poético para la falsa suposición de que lo sobrenatural no existe, algo que el Delirio refuerza. El Velo se instituyó formalmente mediante el Concordato de hace nueve mil años, que puso fin al Impergium. $glossary_werewolf_litany$ afirma con claridad que «El Velo no debe alzarse». El Delirio ayuda a mantener el Velo en su sitio. Dañar o rasgar el Velo supone una gran pérdida de honor entre los Garou, mientras que repararlo supone lo contrario. En la práctica, el Delirio hace casi todo el trabajo y los Garou apenas necesitan preocuparse. Algunas tribus lo ven más como una pauta que como una norma estricta que hacer cumplir." 
  doctrine_vampirethemasquerade_none_name: "Sin Mascarada"
  doctrine_werewolf_veil_should_does_not_matter_name: "No Importa"
  doctrine_vampirethemasquerade_none_desc: "Los vampiros actúan sin preocuparse por el secreto ante el ganado.\nCon este precepto es más difícil reducir tu exposición, pero un mayor Temor reducirá los riesgos de una revuelta provincial de una Célula de Inquisidores."
- doctrine_parameter_harder_masquerade_reduction: "[masquerade_exposure|E] es más difícil de reducir"
+ doctrine_parameter_harder_masquerade_reduction: "Para los personajes con la mecánica de la Mascarada, la [masquerade_exposure|E] es más difícil de reducir"
  doctrine_parameter_no_masquerade_penalty: "Muchas acciones que tienen posibilidades de #N aumentar#! [masquerade_exposure|E] ahora siempre tendrán éxito"
  
- doctrine_werewolf_veil_should_does_not_matter_desc: "El Velo es un término poético para la falsa creencia de que lo sobrenatural no existe, que el Delirio refuerza. El Velo se instituyó formalmente mediante el Concordato de hace nueve mil años, que puso fin al Impergium. La Letanía afirma con claridad que «El Velo No Debe Levantarse». El Delirio ayuda a mantener el Velo en pie. Dañar o rasgar el Velo supone una gran pérdida de honor entre los Garou, mientras que repararlo supone lo contrario. Algunos hombres lobo consideran que el Velo es una idea obsoleta que ya no importa. Algunos incluso trabajan activamente para derribar el Velo, de modo que los hombres lobo puedan restablecer el Impergium y volver a aterrorizar abiertamente a toda la humanidad."
+ doctrine_werewolf_veil_should_does_not_matter_desc: "El Velo es un término poético para la falsa suposición de que lo sobrenatural no existe, algo que el Delirio refuerza. El Velo se instituyó formalmente mediante el Concordato de hace nueve mil años, que puso fin al Impergium. $glossary_werewolf_litany$ afirma con claridad que «El Velo no debe alzarse». El Delirio ayuda a mantener el Velo en su sitio. Dañar o rasgar el Velo supone una gran pérdida de honor entre los Garou, mientras que repararlo supone lo contrario. Algunos hombres lobo consideran que el Velo es una idea obsoleta que ya no importa. Algunos incluso trabajan activamente para derribarlo, de modo que los hombres lobo puedan restablecer el Impergium y aterrorizar abiertamente a toda la humanidad."
  doctrine_vampirethemasquerade_consent_name: "Alimentarse Solo de los Dispuestos"
  doctrine_vampirethemasquerade_consent_desc: "Los vampiros, aunque se ocultan de la sociedad en general, deben buscar el consentimiento de sus «donantes»." 
  doctrine_vampirethemasquerade_cult_name: "Culto de Sangre"
@@ -34,8 +34,8 @@
  doctrine_parameter_vampirethemasquerade_lax: "Los personajes con los [traits|E] [GetTrait('predatortype_consensualist').GetName( GetPlayer )], [GetTrait('predatortype_cultist').GetName( GetPlayer )] o [GetTrait('predatortype_familias').GetName( GetPlayer )] son [shunned|E]"
 
  doctrine_parameter_vampirethemasquerade_family: "Los personajes con los [traits|E] [GetTrait('predatortype_alleycat').GetName( GetPlayer )], [GetTrait('predatortype_bedlamite').GetName( GetPlayer )], [GetTrait('predatortype_farmer').GetName( GetPlayer )], [GetTrait('predatortype_footpad').GetName( GetPlayer )] o [GetTrait('predatortype_graverobber').GetName( GetPlayer )] son [shunned|E]. Los personajes con el [trait|E] [GetTrait('predatortype_familias').GetName( GetPlayer )] son plenamente aceptados"
- doctrine_parameter_vampirethemasquerade_cult: "Los personajes con los [traits|E] [GetTrait('predatortype_consensualist').GetName( GetPlayer )] o [GetTrait('predatortype_familias').GetName( GetPlayer )] son [shunned|E]. Los personajes con el [trait|E] [GetTrait('predatortype_cultist').GetName( GetPlayer )] son aceptados." 
- doctrine_parameter_vampirethemasquerade_consent: "Los personajes con el [trait|E] [GetTrait('predatortype_alleycat').GetName( GetPlayer )] son [criminals|E]. Los personajes con los [traits|E] [GetTrait('predatortype_cauchemar').GetName( GetPlayer )] o [GetTrait('predatortype_extortionist').GetName( GetPlayer )] son [shunned|E]. Los personajes con el [trait|E] [GetTrait('predatortype_consensualist').GetName( GetPlayer )] son elogiados. Todos los demás tipos de depredador son aceptados."  
+ doctrine_parameter_vampirethemasquerade_cult: "Los personajes con los [traits|E] [GetTrait('predatortype_consensualist').GetName( GetPlayer )] o [GetTrait('predatortype_familias').GetName( GetPlayer )] son [shunned|E]. Los personajes con el [trait|E] [GetTrait('predatortype_cultist').GetName( GetPlayer )] son aceptados" 
+ doctrine_parameter_vampirethemasquerade_consent: "Los personajes con el [trait|E] [GetTrait('predatortype_alleycat').GetName( GetPlayer )] son [criminals|E]. Los personajes con los [traits|E] [GetTrait('predatortype_cauchemar').GetName( GetPlayer )] o [GetTrait('predatortype_extortionist').GetName( GetPlayer )] son [shunned|E]. Los personajes con el [trait|E] [GetTrait('predatortype_consensualist').GetName( GetPlayer )] son elogiados. Todos los demás tipos de depredador son aceptados"  
  
 # Oaths and Oathbreaking
 
@@ -52,14 +52,14 @@
  
  doctrine_vampirebloodoath_name: "Juramentos de Sangre"
  doctrine_vampirebloodoath_crime_name: "Criminal"
- doctrine_vampirebloodoath_crime_desc: "Estar Vinculado por Sangre es peor que estar esclavizado, porque encadena el corazón y la mente además del cuerpo."
+ doctrine_vampirebloodoath_crime_desc: "Estar vinculado por la sangre es peor que estar esclavizado, porque encadena el corazón y la mente además del cuerpo."
  doctrine_vampirebloodoath_shunned_name: "Rechazado"
  doctrine_vampirebloodoath_shunned_desc: "Los Juramentos de Sangre pueden ser tanta carga para el regente como para el esclavo; elígelos con cuidado, si es que los usas. Recuerda los proverbios. Un sorbo de Sangre, lo tomo. Dos sorbos, lo acepto. Tres sorbos, lo rechazo."
  doctrine_vampirebloodoath_accepted_name: "Aceptado"
  doctrine_vampirebloodoath_accepted_desc: "El Juramento de Sangre es la base de nuestra sociedad. Los juramentos de fidelidad deben reforzarse con algún grado de vasallaje de sangre."
- doctrine_parameter_vampirebloodoath_illegal: "Los personajes con el [trait|E] [GetTrait('unbondable').GetName( GetPlayer )] son plenamente aceptados. Pierden piedad por [Glossary('Vínculo de Sangre','game_concept_bloodbond_desc')]."
- doctrine_parameter_vampirebloodoath_shunned: "Los personajes con el [trait|E] [GetTrait('unbondable').GetName( GetPlayer )] son plenamente aceptados. Pierden piedad por [Glossary('Vínculo de Sangre','game_concept_bloodbond_desc')]."
- doctrine_parameter_vampirebloodoath_accepted: "Los personajes con el [trait|E] [GetTrait('unbondable').GetName( GetPlayer )] son [criminals|E]."
+ doctrine_parameter_vampirebloodoath_illegal: "Los personajes con el [trait|E] [GetTrait('unbondable').GetName( GetPlayer )] son plenamente aceptados. Pierden piedad por [Glossary('Vínculo de Sangre','game_concept_bloodbond_desc')]"
+ doctrine_parameter_vampirebloodoath_shunned: "Los personajes con el [trait|E] [GetTrait('unbondable').GetName( GetPlayer )] son plenamente aceptados. Pierden piedad por [Glossary('Vínculo de Sangre','game_concept_bloodbond_desc')]"
+ doctrine_parameter_vampirebloodoath_accepted: "Los personajes con el [trait|E] [GetTrait('unbondable').GetName( GetPlayer )] son [criminals|E]"
 
  doctrine_vampireghouling_name: "Vasallaje de [ghoul|E]"
  doctrine_vampireghouling_evil_name: "Mal"
@@ -72,10 +72,10 @@
  doctrine_vampireghouling_accepted_desc: "El lugar del ganado es servirnos, y son mejores vasallos cuando están atados por un Juramento de Sangre.\n\nDe Aquellos que Sirven\n\nA quienes elijas bendecir con la Potencia de Caín, permíteles vivir en tu casa, para protegerte; que nadie $pod_Embrace$ a estos guardianes, que se les dé sangre en el momento oportuno: que su Fuerza sea tu Fuerza, Fuerza que no mengua con el sol. Que sus Ojos sean tus Ojos, Ojos que pueden ver de día. Que sus Oídos sean tus Oídos, Oídos que pueden oír mientras duermes."
  doctrine_vampireghouling_mass_name: "Conversión Masiva en Ghouls Aceptada"
  doctrine_vampireghouling_mass_desc: "La sangre de los Vástagos puede formar legiones.\n\nDe Aquellos que Sirven\n\nA quienes elijas bendecir con la Potencia de Caín, permíteles vivir en tu casa, para protegerte; que nadie $pod_Embrace$ a estos guardianes, que se les dé sangre en el momento oportuno: que su Fuerza sea tu Fuerza, Fuerza que no mengua con el sol. Que sus Ojos sean tus Ojos, Ojos que pueden ver de día. Que sus Oídos sean tus Oídos, Oídos que pueden oír mientras duermes." 
- doctrine_parameter_vampireghouling_illegal: "Los personajes con los [traits|E] [GetTrait('ghoul').GetName( GetPlayer )], [GetTrait('regnant').GetName( GetPlayer )] o [GetTrait('massregnant').GetName( GetPlayer )] son [criminals|E]."
- doctrine_parameter_vampireghouling_shunned: "Los personajes con los [traits|E] [GetTrait('ghoul').GetName( GetPlayer )] o [GetTrait('regnant').GetName( GetPlayer )] son [shunned|E]. Los personajes con [GetTrait('massregnant').GetName( GetPlayer )] son [criminals|E]."
- doctrine_parameter_vampireghouling_accepted: "Los personajes con los [traits|E] [GetTrait('ghoul').GetName( GetPlayer )] o [GetTrait('regnant').GetName( GetPlayer )] son plenamente aceptados. Los personajes con [GetTrait('massregnant').GetName( GetPlayer )] son [criminals|E]."
- doctrine_parameter_vampireghouling_mass: "Puede reclutar [GetMaA('massghouls_maa').GetName] como [men_at_arms|E].\nLos personajes con los [traits|E] [GetTrait('ghoul').GetName( GetPlayer )], [GetTrait('regnant').GetName( GetPlayer )] o [GetTrait('massregnant').GetName( GetPlayer )] son plenamente aceptados." 
+ doctrine_parameter_vampireghouling_illegal: "Los personajes con los [traits|E] [GetTrait('ghoul').GetName( GetPlayer )], [GetTrait('regnant').GetName( GetPlayer )] o [GetTrait('massregnant').GetName( GetPlayer )] son [criminals|E]"
+ doctrine_parameter_vampireghouling_shunned: "Los personajes con los [traits|E] [GetTrait('ghoul').GetName( GetPlayer )] o [GetTrait('regnant').GetName( GetPlayer )] son [shunned|E]. Los personajes con el [trait|E] [GetTrait('massregnant').GetName( GetPlayer )] son [criminals|E]"
+ doctrine_parameter_vampireghouling_accepted: "Los personajes con los [traits|E] [GetTrait('ghoul').GetName( GetPlayer )] o [GetTrait('regnant').GetName( GetPlayer )] son plenamente aceptados. Los personajes con el [trait|E] [GetTrait('massregnant').GetName( GetPlayer )] son [criminals|E]"
+ doctrine_parameter_vampireghouling_mass: "Puede reclutar [GetMaA('massghouls_maa').GetName] como [men_at_arms|E].\nLos personajes con los [traits|E] [GetTrait('ghoul').GetName( GetPlayer )], [GetTrait('regnant').GetName( GetPlayer )] o [GetTrait('massregnant').GetName( GetPlayer )] son plenamente aceptados" 
  doctrine_parameter_majordomo_court_position_unlock: "Puede emplear a un [GetCourtPositionType('majordomo_court_position').GetName()]"
  majordomo_court_position_unlock_name: ""Puede emplear a un Mayordomo"" #intentional double quotes
 
@@ -92,7 +92,7 @@
  doctrine_parameter_bloodsorcery_shunned: "Los personajes con el [trait|E] [GetTrait('bloodsorcery').GetName( GetPlayer )] son [shunned|E]"
  doctrine_parameter_bloodsorcery_accepted: "Los personajes con el [trait|E] [GetTrait('bloodsorcery').GetName( GetPlayer )] son plenamente aceptados"
  doctrine_parameter_bloodsorcery_kufr: "Los personajes con el [trait|E] [GetTrait('bloodsorcery').GetName( GetPlayer )] son plenamente aceptados"
- doctrine_parameter_non_sihr_bloodsorcery_learning_penalty: "Aprender cualquier [bloodmagic_path|E] que no sea Sihr costará piedad y conllevará penalizaciones adicionales."
+ doctrine_parameter_non_sihr_bloodsorcery_learning_penalty: "Aprender cualquier [bloodmagic_path|E] que no sea Sihr costará piedad y conllevará penalizaciones adicionales"
  
  doctrine_demonology_name: "Demonología"
  doctrine_demonology_crime_name: "Criminal"
@@ -166,9 +166,9 @@
  doctrine_vampirism_shunned_desc: "Compadece a estos pobres desdichados que ya no pueden contemplar un amanecer."
  doctrine_vampirism_accepted_name: "Aceptado"
  doctrine_vampirism_accepted_desc: "Los Vástagos son aceptados."
- doctrine_parameter_vampirism_illegal: "Los personajes con el [trait|E] [GetTrait('vampire').GetName( GetPlayer )] son [criminals|E]"
- doctrine_parameter_vampirism_shunned: "Los personajes con el [trait|E] [GetTrait('vampire').GetName( GetPlayer )] son [shunned|E]"
- doctrine_parameter_vampirism_accepted: "Los personajes con el [trait|E] [GetTrait('vampire').GetName( GetPlayer )] son plenamente aceptados" 
+ doctrine_parameter_vampirism_illegal: "Los personajes con los [traits|E] [GetTrait('vampire').GetName( GetPlayer )] o [GetTrait('abomination').GetName(GetNullCharacter)] son [criminals|E]"
+ doctrine_parameter_vampirism_shunned: "Los personajes con los [traits|E] [GetTrait('vampire').GetName( GetPlayer )] o [GetTrait('abomination').GetName(GetNullCharacter)] son [shunned|E]"
+ doctrine_parameter_vampirism_accepted: "Los personajes con los [traits|E] [GetTrait('vampire').GetName( GetPlayer )] o [GetTrait('abomination').GetName(GetNullCharacter)] son plenamente aceptados" 
  
  doctrine_fera_name: "Fera"
  doctrine_fera_evil_name: "Mal"
@@ -189,7 +189,7 @@
  doctrine_magicraft_crime_name: "Criminal"
  doctrine_magicraft_crime_desc: "Los Magos deben ser destruidos.\n\nDe los Iluminados\n\nLa Madre del Poder, la oscura Lilith, es la más grande de ellos, pero hay otros, y aún vendrán más. No bebas de su sangre, pues te atraparán; ten cuidado con ellos, son astutos. Conocen el saber de Adán y la sabiduría de Eva; son los portadores del fuego, los labradores de la tierra, los pastores de animales, los portadores de la escritura, son los Hijos del Sol, las Estrellas Nacientes. Buscarán involucrarte en su Viaje, ¡Resiste! ¡Resiste! Su Camino desprecia el hambre, la sangre y el cuerpo. No confíes en quienes tienen los ojos brillantes hacia el alba. Recuerda siempre: es el Amanecer lo que trae tu muerte."
  doctrine_magicraft_shunned_name: "Rechazado"
- doctrine_magicraft_shunned_desc: "Aunque sobrenaturales como nosotros, los magos no son como nosotros. En absoluto.\n\nDe los Iluminados\n\nLa Madre del Poder, la oscura Lilith, es la más grande de ellos, pero hay otros, y aún vendrán más. No bebas de su sangre, pues te atraparán; ten cuidado con ellos, son astutos. Conocen el saber de Adán y la sabiduría de Eva; son los portadores del fuego, los labradores de la tierra, los pastores de animales, los portadores de la escritura, son los Hijos del Sol, las Estrellas Nacientes. Buscarán involucrarte en su Viaje, ¡Resiste! ¡Resiste! Su Camino desprecia el hambre, la sangre y el cuerpo. No confíes en quienes tienen los ojos brillantes hacia el alba. Recuerda siempre: es el Amanecer lo que trae tu muerte."
+ doctrine_magicraft_shunned_desc: "Aunque sobrenaturales como nosotros, los magos no son como nosotros. En absoluto.\n\nDe los Iluminados\n\nLa Madre del Poder, la oscura Lilith, es la más grande de ellos, pero hay otros, y aún vendrán más. No bebas de su sangre, pues te atraparán; desconfía de ellos, son astutos. Conocen el saber de Adán y la sabiduría de Eva; son los portadores del fuego, los labradores de la tierra, los pastores de animales, los portadores de la escritura, son los Hijos del Sol, las Estrellas Nacientes. Intentarán implicarte en su Viaje. ¡Resiste! ¡Resiste! Su Camino desprecia el Ansia, la sangre y el cuerpo. No confíes en quienes miran al alba con ojos brillantes. Recuerda siempre: es el Amanecer lo que trae tu muerte."
  doctrine_magicraft_accepted_name: "Aceptado"
  doctrine_magicraft_accepted_desc: "Los Magos son aceptados."
  doctrine_parameter_magicraft_illegal: "Los personajes con el [trait|E] [GetTrait('mage').GetName( GetPlayer )] o [GetTrait('sorcerer').GetName( GetPlayer )] son [criminals|E]"
@@ -202,7 +202,7 @@
  doctrine_haunting_crime_name: "Criminal"
  doctrine_haunting_crime_desc: "Los fantasmas deben permanecer al otro lado del velo.\n\nDe Aquellos Espíritus de los Muertos\n\nMarca bien esto: hay un lugar más allá del espíritu, más allá de la vida, que es Oscuridad, Sombra, y allí habitan las Sombras. Una isla, una fortaleza, una tierra de los Muertos; he viajado allí por un sendero de perdición y he presenciado al temido rey de la Ciudad Estigia sentado en su corte. He visto a los encapuchados sin rostro cruzar el río Estigia. Se agolpan en torno a nosotros como moscas sobre un cadáver en putrefacción y, como nosotros, se alimentan de miedo, éxtasis e ira. Muertos están, pero no-muertos, y están más cerca de nosotros de lo que jamás sabremos."
  doctrine_haunting_shunned_name: "Rechazado"
- doctrine_haunting_shunned_desc: "Los fantasmas son almas separadas de sus cuerpos. Pueden intentar poseer nuestros cuerpos.\n\nDe Aquellos Espíritus de los Muertos\n\nMarca bien esto: hay un lugar más allá del espíritu, más allá de la vida, que es Oscuridad, Sombra, y allí habitan las Sombras. Una isla, una fortaleza, una tierra de los Muertos; he viajado allí por un sendero de perdición y he presenciado al temido rey de la Ciudad Estigia sentado en su corte. He visto a los encapuchados sin rostro cruzar el río Estigia. Se agolpan en torno a nosotros como moscas sobre un cadáver en putrefacción y, como nosotros, se alimentan de miedo, éxtasis e ira. Muertos están, pero no-muertos, y están más cerca de nosotros de lo que jamás sabremos."
+ doctrine_haunting_shunned_desc: "Los fantasmas son almas separadas de sus cadáveres. Pueden intentar poseer nuestros cuerpos.\n\nDe esos Espíritus de los Muertos\n\nMarca bien esto: hay un lugar más allá del espíritu, más allá de la vida, que es Oscuridad, Sombra, y allí habitan las Sombras. Una isla, una fortaleza, una tierra de los Muertos; he viajado allí por un sendero de perdición y he presenciado al temible rey de la Ciudad Estigia sentado en su corte. He visto a los encapuchados sin rostro cruzar el río Estigia. Se agolpan en torno a nosotros como moscas sobre un cadáver en putrefacción y, como nosotros, se alimentan de miedo, éxtasis e ira. Muertos están, pero no-muertos, y están más cerca de nosotros de lo que jamás sabremos."
  doctrine_haunting_accepted_name: "Aceptado"
  doctrine_haunting_accepted_desc: "Los wraiths pueden ser útiles. Quienes conocen las artes de invocar y atar wraiths pueden usarlos para todo tipo de fines.\n\nDe Aquellos Espíritus de los Muertos\n\nMarca bien esto: hay un lugar más allá del espíritu, más allá de la vida, que es Oscuridad, Sombra, y allí habitan las Sombras. Una isla, una fortaleza, una tierra de los Muertos; he viajado allí por un sendero de perdición y he presenciado al temido rey de la Ciudad Estigia sentado en su corte. He visto a los encapuchados sin rostro cruzar el río Estigia. Se agolpan en torno a nosotros como moscas sobre un cadáver en putrefacción y, como nosotros, se alimentan de miedo, éxtasis e ira. Muertos están, pero no-muertos, y están más cerca de nosotros de lo que jamás sabremos."
  doctrine_parameter_haunting_illegal: "Los personajes con el [trait|E] [GetTrait('wraith').GetName( GetNullCharacter )] son [criminals|E]. Los personajes con los [traits|E] [GetTrait('necromancy').GetName( GetPlayer )] o [GetTrait('oblivion').GetName( GetPlayer )] son [shunned|E]"
@@ -631,6 +631,7 @@
  #Vampiric Tenets
  tenet_vampiremasquerade_name: "Mascarada"
  tenet_vampiremasquerade_desc: "El Silencio de la Sangre. No revelarás tu verdadera naturaleza a quienes no sean de la Sangre. Hacerlo supondrá renunciar a tus derechos de Sangre."
+ tenet_cover_masquerade_bonus: "Al encubrir la Mascarada, siempre lograrás reducir la sospecha en varios niveles."
  
  tenet_vampireprogeny_name: "Progenie"
  tenet_vampireprogeny_desc: "Solo [Glossary('engendrarás','game_concept_Sire_desc')] a otro con el permiso de tu Antiguo. Si creas a otro sin el permiso de tu Antiguo, tanto tú como tu Progenie seréis ejecutados."
@@ -639,7 +640,7 @@
  tenet_vampiredestruction_desc: "Te está prohibido destruir a otro de tu especie. El derecho de destrucción pertenece solo a tu Antiguo. Solo el más Antiguo entre vosotros podrá convocar la Caza de Sangre."
 
  tenet_vampiretouchstone_name: "Piedra de Toque"
- tenet_vampiretouchstone_desc: "Un Vástago puede elegir a un mortal como piedra de toque para ayudar a mantener su conexión con la humanidad. El Vástago gana entonces piedad. Existen más eventos relacionados con la piedra de toque."
+ tenet_vampiretouchstone_desc: "Un Vástago puede elegir a un mortal como piedra de toque para ayudarse a conservar su vínculo con la humanidad. El Vástago gana entonces piedad. Existen más eventos relacionados con la piedra de toque."
  
  tenet_vampireremorse_name: "Remordimiento"
  tenet_vampireremorse_desc: "Los Vástagos reflexionan sobre sus actos y sienten arrepentimiento por su comportamiento monstruoso, ganando piedad." 
@@ -670,38 +671,41 @@
  
  tenet_pleasure_name: "Placer"
  tenet_pleasure_desc: "La búsqueda hedonista del éxtasis"
- doctrine_parameter_reveler_from_elysium: "Obtienes experiencia de [GetTrait('lifestyle_reveler').GetName(GetNullCharacter)] y [GetTrait('lifestyle_reveler').GetName(GetNullCharacter)] del elíseo."
+ doctrine_parameter_reveler_from_elysium: "Obtienes el [trait|E] [GetTrait('lifestyle_reveler').GetName(GetNullCharacter)] y [trait_level_track_xp|E] gracias a la [decision|E] [GetDecision('host_elysium_decision').GetName]"
  
  tenet_cruelty_name: "Crueldad"
  tenet_cruelty_desc: "El placer obtenido al infligir dolor"
  
  tenet_quiritare_name: "Quiritare"
  tenet_quiritare_desc: "Resistir a la Bestia o intentar aplacarla es imposible, así que entrégate a ella por completo, cumpliendo su voluntad." 
+ doctrine_parameter_tenet_exaltation_of_pain_wound_courtier_interaction_sf: "La [interaction|E] #V $exaltation_of_pain_wound_courtier_interaction$#! ahora otorga @spiritual_fulfillment_icon![spiritual_fulfillment|E]"
   
  tenet_legacyoftrinity_name: "Legado de la Trinidad"
- tenet_legacyoftrinity_desc: "El Códice dicta la superioridad de los tres clanes principales: Toreador, Tzimisce y Ventrue. Los miembros de otros clanes deben pedir permiso a los Quaesitori para [Glossary('engendrar','game_concept_Sire_desc')] Chiquillos; los miembros de los tres clanes principales pueden [Glossary('engendrar','game_concept_Sire_desc')] a quien deseen. Solo los miembros de los tres clanes principales pueden legar un dominio a otro vampiro, y cada vampiro dentro de ese dominio tiene el deber de hacer cumplir el Códice."
+ tenet_legacyoftrinity_desc: "\"De Tres\" es la regla de Constantinopla. Solo esos Tres pueden expresar sus preocupaciones y añadir nuevas leyes a este Códice; también es responsabilidad de los Tres velar por que se escuchen las inquietudes de los vástagos."
+ doctrine_parameter_confession_unlock: "Desbloquea la [decision|E] [GetDecision('pam_decision_confession').GetName] #weak (si tienes el DLC By God Alone)#!"
+ tenet_legacyofFounding_name: "Legado de la Fundación"
+ tenet_legacyofFounding_desc: "Solo los Tres pueden legar un dominio, igual que los Tres Primeros fundaron la ciudad. Los Cainitas reciben un dominio con el Abrazo, si es que reciben alguno, y son responsables de que el Códice de los Legados se cumpla en sus dominios."
  
- tenet_legacyofashes_name: "Legado de las Cenizas"
- tenet_legacyofashes_desc: "El Códice dicta que quien mate a un miembro de los tres clanes principales sufrirá una Caza de Sangre."
 
- tenet_legacyofshadow_name: "Legado de la Sombra"
- tenet_legacyofshadow_desc: "El Códice dicta que los Cainitas no revelen su verdadera naturaleza a quienes no sean de la Sangre. Hacerlo supondrá renunciar a sus derechos de Sangre." 
+ tenet_legacyofshadow_name: "Legado de las Sombras"
+ tenet_legacyofshadow_desc: "Los Tres son señores de la noche y, por ello, deben gobernar en la oscuridad. Han de ser reverenciados como divinidades, pero jamás debe revelarse su verdadera naturaleza; así como se ignora la naturaleza del Padre, el Hijo y el Espíritu Santo, así debe ignorarse la de la Trinidad." 
+ doctrine_parameter_legacy_of_shadows_unlock_bonus: "El [GetBuilding('open_rule_04').GetName] mejora con unos ingresos mensuales adicionales"
+ doctrine_parameter_legacy_of_trinity_unlock: "Puede emplear dos cargos de corte de [GetCourtPositionType('triumvir_court_position').GetName()]"
+ doctrine_parameter_legacy_of_shadows_unlock: "Desbloquea el edificio de capital [GetBuilding('open_rule_04').GetName], un cuarto nivel de la cadena de Gobierno Abierto"
  
  tenet_oaths_name: "Ligados por Juramento"
- tenet_oaths_desc: "Nuestras leyes son los mandatos de nuestros Antiguos, y los mandatos de Caín sobre todos ellos. Los juramentos son la base del orden feudal." 
+ tenet_oaths_desc: "Nuestras leyes son los mandatos de nuestros ancianos, y los mandatos de Caín sobre todos ellos. Los juramentos son la base del orden feudal." 
  #A sworn oath is the most sacred bond a lord can make. An oathbreaker lord threatens all society as they degenerate to the Beast." 
  #The oathsworn have casus belli to make war upon the forsworn and strip them of their titles."
- tenet_werewolf_oaths_desc: "Un juramento hecho es el vínculo más sagrado que se puede contraer. Un líder que rompe juramentos no tiene honor y amenaza con arrastrar a todos a su corrupción."
+ tenet_werewolf_oaths_desc: "Un juramento hecho es el vínculo más sagrado que se puede contraer. Un líder que rompe juramentos carece de honor y amenaza con arrastrar a todos a su corrupción."
  
  
  tenet_vampirehighclans_name: "Altos Clanes"
  tenet_vampirehighclans_desc: "Los Altos Clanes son superiores a los Bajos Clanes. Los Bajos Clanes son degenerados que acabarán sucumbiendo a la Bestia. No están bien dotados para gobernar ni para la buena sociedad."
+ doctrine_parameter_elysium_decision_legitimacy: "Celebrar un Elíseo ahora te otorga más [legitimacy_i][legitimacy|E]"
  
- tenet_vampireselectivefeeding_name: "Alimentación Selectiva"
- tenet_vampireselectivefeeding_desc: "No te alimentarás de las Bestias de la Luna, los Salvajes, los enfermos, los locos ni los ebrios."
  #\n\nThe Moon-Beasts, the one-who-change, they are the Oldest of all, before my father they roamed the lands. Tarry not in the path of them, avoid them, they are set upon us like wolves in the sheepfold. For we are of one kind, and they another. Beware of their sacred ground, walk softly through their wilderness. Their bite is as our bite, their claws are as our claws, tarry not in the path of them, they are of one kind, and we are another.\n\nOf the mad ones, the wild ones, I say, first, drink not of their blood! But watch them, for they are beautiful in their wilderness, they are enchanting in their mystery, they are deadly in their war skills. Alone among the creatures of the night, they kept me company in the earth and brought me water when I was thirsty and could still breathe. Like Me, they were cast out, Like My Children, they are homeless, Like My Children's Children, they wander, Like my Mother and Father, they know too much, but they keep their own counsel, and, of them, I say mark me well, keep silent! Say nothing. Watch, and learn."
  #doctrine_parameter_vampireselectivefeeding: ""
- doctrine_parameter_vampireselectivefeeding: ""
  
  tenet_enkrateia_reie_sophrosyne_name: "Enkrateia Reie Sophrosyne"
  tenet_enkrateia_reie_sophrosyne_desc: "Un enfoque intelectual de la no-vida, el Camino se centra en tres conceptos fundamentales que se consideraban características esenciales buscadas en la posible progenie Brujah en las noches de Cartago: enkrateia, reie y sophrosyne. Enkrateia se refiere a la fortaleza interior. Reie se refiere al valor moral. Sophrosyne significa el control de uno mismo y representa la meta idealizada de todos los Filósofos: el dominio de la Furia Brujah."
@@ -711,6 +715,7 @@
  
  tenet_cold_mind_name: "Mente Fría"
  tenet_cold_mind_desc: "La Mente Fría es un estado mental esencial para la Canción de la Sombra. En esencia, describe un enfoque del mundo que la rodea desprovisto de emociones, completamente calmado y controlado, pero la mayor parte de su significado está envuelto en acertijos y Koans, por lo que el sentido pleno de la Mente Fría se comprende mejor en contexto."
+ doctrine_parameter_unlock_extort_subjects: "Desbloquea la [decision|E] [GetDecision('extort_subjects_decision').GetName]"
  
  tenet_intellectual_detachement_name: "Desapego Intelectual"
  tenet_intellectual_detachement_desc: "Los Eruditos no temen a la muerte; de hecho, les fascina. La ven como una fuerza poderosa que estudiar, diseccionar y racionalizar para comprender mejor su propia existencia."
@@ -738,17 +743,16 @@
  doctrine_enlightenment_virtues_conviction_and_instinct_desc: "No pierdes piedad por herir gravemente o matar a víctimas mortales. No pierdes piedad por entrar en Frenesí."
  doctrine_enlightenment_virtues_conscience_and_instinct_name: "Conciencia e Instinto"
  doctrine_enlightenment_virtues_conscience_and_instinct_desc: "Pierdes piedad por herir gravemente o matar a víctimas mortales. No pierdes piedad por entrar en Frenesí."
- doctrine_parameter_hurt_mortal_lose_piety: "Pierdes [piety_i][piety|E] al herir gravemente o matar a víctimas mortales."
- doctrine_parameter_east_building_parameter: "Los [Glossary('Dharma','podgloss.dharma')] del Este obtienen bonificación relacionada con el desarrollo y la resistencia a epidemias en los edificios ducales del Nido del Dragón."
- doctrine_parameter_south_building_parameter: "Los [Glossary('Dharma','podgloss.dharma')] del Sur obtienen bonificación relacionada con la guerra en los edificios ducales del Nido del Dragón."
- doctrine_parameter_west_building_parameter: "Los [Glossary('Dharma','podgloss.dharma')] del Oeste obtienen bonificación relacionada con las intrigas en los edificios ducales del Nido del Dragón."
- doctrine_parameter_north_building_parameter: "Los [Glossary('Dharma','podgloss.dharma')] del Norte obtienen bonificación relacionada con la legitimidad en los edificios ducales del Nido del Dragón."
- doctrine_parameter_center_building_parameter: "Los [Glossary('Dharma','podgloss.dharma')] del Centro obtienen bonificación relacionada con la experiencia de estilo de vida en los edificios ducales del Nido del Dragón."
+ doctrine_parameter_hurt_mortal_lose_piety: "Pierdes [piety_i][piety|E] al herir gravemente o matar a víctimas mortales"
 
- doctrine_parameter_frenzy_lose_piety: "Pierdes [piety_i][piety|E] al entrar en Frenesí."
- doctrine_parameter_can_hire_touchstones: "Puede contratar a [GetCourtPositionType('touchstones_court_position').GetName()]."
+ doctrine_parameter_frenzy_lose_piety: "Pierdes [piety_i][piety|E] al entrar en [Glossary('Frenesí','game_concept_beast_desc')]"
+ doctrine_parameter_can_hire_touchstones: "Puede contratar a [GetCourtPositionType('touchstones_court_position').GetName()]"
  doctrine_enlightenment_virtues_orun_and_aye_name: "Orun y Aye"
  doctrine_enlightenment_virtues_orun_and_aye_desc: "Los Laibon forjan sus vidas en torno a dos Caminos separados de Moralidad: Aye, que es su moralidad hacia la humanidad, y Orun, que es su moralidad hacia lo sobrenatural." 
+ doctrine_enlightenment_virtues_aye_name: "Centrado en Aye"
+ doctrine_enlightenment_virtues_aye_desc: "Los Laibon forjan su vida en torno a dos sendas separadas de Moralidad: Aye, su moral hacia la humanidad, y Orun, su moral hacia lo sobrenatural. Esta fe favorece a Aye." 
+ doctrine_enlightenment_virtues_orun_name: "Centrado en Orun"
+ doctrine_enlightenment_virtues_orun_desc: "Los Laibon forjan su vida en torno a dos sendas separadas de Moralidad: Aye, su moral hacia la humanidad, y Orun, su moral hacia lo sobrenatural. Esta fe favorece a Orun." 
  tenet_orun_and_aye_name: "Orun y Aye"
  tenet_orun_and_aye_desc: "Los Laibon forjan sus vidas en torno a dos Caminos separados de Moralidad: Aye, que es su moralidad hacia la humanidad, y Orun, que es su moralidad hacia lo sobrenatural." 
  #Depending on where they stand on these two scales, their appearance and supernatural power fluctuates. This fundamental difference forever separates the Laibon from the 'typical' $pod_cainite$."
@@ -758,9 +762,9 @@
  doctrine_enlightenment_virtues_direction_east_name: "Este"
  doctrine_enlightenment_virtues_direction_east_desc: "Considerados comúnmente los más cómodos entre los humanos, los [GetTrait('kueijin').GetName( GetNullCharacter )] de aspecto este son vistos como granjeros, cultivando pantallas escarlata y cuidando de su rebaño mortal." 
  doctrine_enlightenment_virtues_direction_south_name: "Sur"
- doctrine_enlightenment_virtues_direction_south_desc: "Conocidos por sus temperamentos violentos, los [GetTrait('kueijin').GetName( GetNullCharacter )] de aspecto sur son los motores de la sociedad, desafiando viejas creencias y manteniendo el Quincunce al día. Aunque sus semejantes a menudo los consideran insufribles, sus Antiguos los toleran por su formidable intelecto y destreza en el combate." 
+ doctrine_enlightenment_virtues_direction_south_desc: "Conocidos por su temperamento feroz, los [GetTrait('kueijin').GetName( GetNullCharacter )] de aspecto sur son los motores de la sociedad: desafían viejas creencias y mantienen al día la sociedad de los [GetTrait('kueijin').GetName( GetNullCharacter )]. Aunque sus semejantes suelen considerarlos insufribles, sus Antiguos los toleran por su formidable intelecto y su destreza en el combate." 
  doctrine_enlightenment_virtues_direction_west_name: "Oeste"
- doctrine_enlightenment_virtues_direction_west_desc: "Actuando como emisarios ante los [spirit_worlds|E] del Reino Medio y ocasionalmente como asesinos para los Mandarines, los [GetTrait('kueijin').GetName( GetNullCharacter )] de aspecto oeste suelen ser mal vistos por sus semejantes. Son conocidos por no mostrar piedad y cumplir cualquier tarea que se les encomiende —ya sea de un espíritu, un wraith o un mandarín— con absoluta precisión."
+ doctrine_enlightenment_virtues_direction_west_desc: "Actuando como emisarios ante los [spirit_worlds|E] del Reino Medio y, en ocasiones, como asesinos de los Mandarines, los [GetTrait('kueijin').GetName( GetNullCharacter )] de aspecto oeste suelen ser mal vistos por sus semejantes. Son célebres por no conocer la piedad y por cumplir toda tarea que se les encomiende —ya sea de un espíritu, un wraith o un mandarín— con absoluta precisión."
  doctrine_enlightenment_virtues_direction_center_name: "Centro"
  doctrine_enlightenment_virtues_direction_center_desc: "Los [GetTrait('kueijin').GetName( GetNullCharacter )] de aspecto centro suelen encargarse de guiar a los Catayanos más jóvenes en las sutilezas de su sociedad, pero muchos prefieren explorar su propia alma, dedicándose a la iluminación dhármica."  
 
@@ -768,16 +772,16 @@
  tenet_vanilla_pursuit_of_knowledge_desc: "Obsesión con la búsqueda del conocimiento. Los pecados incluyen: no estudiar cuando se tiene la oportunidad de hacerlo, negarse a realizar experimentos, negarse a compartir ideas con otros en el Camino."
   
  tenet_greed_is_good_name: "La Avaricia es Buena"
- tenet_greed_is_good_desc: "El oro es poder, así que usan la acumulación de riqueza para ganar influencia y así saciar a su Bestia."
+ tenet_greed_is_good_desc: "El oro es poder, y por eso usan la acumulación de riqueza para ganar influencia y así saciar a su Bestia."
  
  tenet_scorched_heart_name: "Corazón Vacío"
  tenet_scorched_heart_desc: "Desarrollado por Rathmonicus, se controla a la Bestia erradicando sistemáticamente toda emoción del corazón del vampiro."
  
- tenet_isolation_name: "Aislamiento"
- tenet_isolation_desc: "Todo lo que queremos es que nos dejen en paz. Nuestras prácticas son solo nuestras, y no incumben a nadie más de lo que las suyas nos incumben a nosotros."
 
  tenet_continued_life_name: "Vida Continuada"
  tenet_continued_life_desc: "Algunos no-muertos intentan continuar su vida mortal en la mayor medida posible. Aunque esto les ayuda a mantener el contacto con su antigua vida mortal, aumenta la exposición de [the_masquerade|E]. Usar poderes místicos de forma continua para parecer vivos también aumenta el Ansia." 
+ doctrine_parameter_monument_expeditions_sf: "Obtienes @spiritual_fulfillment_icon![spiritual_fulfillment|E] al terminar [GetActivityType('activity_journey').GetTextIcon][GetActivityType('activity_journey').GetName]"
+ doctrine_parameter_golconda_2_progress: "Aumenta en #P +20%#! la [planning_speed|E] del [journey|E] de la [golconda|E]"
  
  tenet_vengeance_of_samiel_name: "Venganza de Samiel"
  tenet_vengeance_of_samiel_desc: "Samiel recibió una visita de Miguel, comandante de las Huestes Celestiales, mientras Saulot estaba ausente. El arcángel ordenó al rey guerrero que escribiera el Código y que incluyera en él los rituales adecuados necesarios para la fuerza y el linaje de sangre de los nuevos guerreros."
@@ -802,8 +806,8 @@
  special_doctrine_ashirra_pillars_kindred_name: "Pilares Ashirra"
  special_doctrine_ashirra_pillars_kindred_desc: "Aunque quienes siguieron los primeros pasos del Islam venían de clanes y trasfondos muy distintos, todos creían en algo más grande que ellos mismos."
  doctrine_parameter_hostility_override_special_doctrine_ashirra_pillars_kindred: "Otras [faiths|E] de Vástagos que tengan la [doctrine|E] [GetFaithDoctrine('special_doctrine_ashirra_pillars_kindred').GetBaseName] se consideran [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V] en lugar de $hostility_evil_tooltippable$"
- doctrine_parameter_ashirra_khitta_building_province_bonuses: "Las $glossary_khittas$ alineadas con los Ashirra en [holy_cairo|E] proporcionan impuestos adicionales si El Cairo sigue esta fe"
- doctrine_parameter_ashirra_khitta_building_character_bonuses: "Las $glossary_khittas$ alineadas con los Ashirra en [holy_cairo|E] proporcionan piedad si el titular sigue esta fe"
+ doctrine_parameter_ashirra_khitta_building_province_bonuses: "Las $glossary_khittas$ alineadas con los Ashirra en [victorious_cairo|E] proporcionan impuestos adicionales si El Cairo sigue esta fe"
+ doctrine_parameter_ashirra_khitta_building_character_bonuses: "Las $glossary_khittas$ alineadas con los Ashirra en [victorious_cairo|E] proporcionan piedad si el titular sigue esta fe"
 
  special_doctrine_lilith_pillars_kindred_name: "Pilares Lilim"
  special_doctrine_lilith_pillars_kindred_desc: "Lilith busca venganza contra los hijos de Caín. Pero aceptará conversos entusiastas, o peones útiles, cuando sea necesario."
@@ -811,11 +815,11 @@
 
  special_doctrine_heretical_paradox_name: "Ciclo Roto"
  special_doctrine_heretical_paradox_desc: "Los Ravnos orientales (y muchos otros Vástagos) consideran esta rama como herética y una mera excusa para el robo, la Diablerie y otros crímenes contra la sociedad. Se han intentado muchas veces purgar este Camino, aunque ninguna ha tenido éxito hasta ahora."
- doctrine_parameter_hostility_override_tenet_svadharma: "Otras [faiths|E] de Vástagos que tengan la [doctrine|E] [GetFaithDoctrine('tenet_svadharma').GetBaseName] consideran esta fe [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]." 
+ doctrine_parameter_hostility_override_tenet_svadharma: "Otras [faiths|E] de Vástagos que tengan la [doctrine|E] [GetFaithDoctrine('tenet_svadharma').GetBaseName] consideran esta fe [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]" 
 
  special_doctrine_main_paradox_name: "Entender el Ciclo"
  special_doctrine_main_paradox_desc: "El Camino de la Paradoja debe mucho a ciertos preceptos del hinduismo y es ampliamente aceptado como un precepto respetable entre los vampiros indios. Su versión occidental bastardizada, en cambio, no lo es."
- doctrine_parameter_hostility_override_special_doctrine_heretical_paradox: "Otras [faiths|E] de Vástagos que tengan la [doctrine|E] [GetFaithDoctrine('special_doctrine_heretical_paradox').GetBaseName] se consideran [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]." 
+ doctrine_parameter_hostility_override_special_doctrine_heretical_paradox: "Otras [faiths|E] de Vástagos que tengan la [doctrine|E] [GetFaithDoctrine('special_doctrine_heretical_paradox').GetBaseName] se consideran [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]" 
     
 
    
@@ -829,8 +833,8 @@
   
  special_doctrine_ignorance_name: "No Llamar la Atención"
  special_doctrine_ignorance_desc: "Los mortales no tienen conocimiento de lo sobrenatural en el Mundo de Tinieblas. Debemos mantenerlo así."
- doctrine_parameter_hostility_override_special_doctrine_ignorance: "Las [faiths|E] de la Ignorancia, como la Inocencia de los mortales, hacen que no supongan una amenaza para los seres sobrenaturales del Mundo de Tinieblas. Las fes que desean mantener a los mortales en la ignorancia los consideran [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V] en lugar de $hostility_hostile_tooltippable$ o $hostility_evil_tooltippable$."  
- doctrine_parameter_hostility_override_ignorance_hostility_doctrine: "Las [faiths|E] de la Ignorancia, como la Inocencia de los mortales, hacen que no supongan una amenaza para los seres sobrenaturales del Mundo de Tinieblas. Las fes que desean mantener a los mortales en la ignorancia los consideran [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V] en lugar de $hostility_hostile_tooltippable$ o $hostility_evil_tooltippable$."
+ doctrine_parameter_hostility_override_special_doctrine_ignorance: "Las [faiths|E] de la Ignorancia, como la Inocencia de los mortales, hacen que estos no supongan una amenaza para los seres sobrenaturales del Mundo de Tinieblas. Las fes que desean mantener a los mortales en la ignorancia los consideran [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V] en lugar de $hostility_hostile_tooltippable$ o $hostility_evil_tooltippable$"  
+ doctrine_parameter_hostility_override_ignorance_hostility_doctrine: "Las [faiths|E] de la Ignorancia, como la Inocencia de los mortales, hacen que estos no supongan una amenaza para los seres sobrenaturales del Mundo de Tinieblas. Las fes que desean mantener a los mortales en la ignorancia los consideran [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V] en lugar de $hostility_hostile_tooltippable$ o $hostility_evil_tooltippable$"
  
  special_doctrine_fivefold_path_kindred_name: "Camino Quíntuple"
  special_doctrine_fivefold_path_kindred_desc: "Los cinco [Glossary('Dharma','podgloss.dharma')] tradicionales creados por el primer [Glossary('Arhat','podgloss.arhat')], [GetScriptedCharacterByHistoryID('791111').GetFirstName]. Forman el núcleo tradicional de la sociedad $pod_kueijin$.\nLos seguidores del Camino Quíntuple ven a los [Glossary('Dharma','podgloss.dharma')] heréticos como dolorosamente engañados o como traidores peligrosos que deben ser eliminados para siempre."
@@ -841,7 +845,7 @@
  special_doctrine_is_anda_faith_desc: "Las [faiths|E] [Glossary('Anda','podgloss.anda')], aliadas de los [akuma|E] de la corte de la Tortuga Negra, son enemigas de los [Glossary('Wan Kuei','game_concept_kuei_jin_desc')] leales."
  doctrine_parameter_hostility_override_special_doctrine_is_anda_faith: "Las [faiths|E] [Glossary('Anda','podgloss.anda')] se consideran [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
  doctrine_parameter_is_anda_faith_opinion_active: "" # Make loca empty to hidden this like vanilla
- doctrine_parameter_opinion_of_is_anda_faith_opinion_active: "[opinion|E] hacia las [faiths|E] [Glossary('Anda','podgloss.anda')]: $VALUE|+=0$"
+ doctrine_parameter_opinion_of_is_anda_faith_opinion_active: "[opinion|E] de las [faiths|E] [Glossary('Anda','podgloss.anda')]: $VALUE|+=0$"
  is_anda_faith_opinion_active_county_opinion_name: "[Glossary('Anda','podgloss.anda')]"
  is_anda_faith_opinion_active_opinion_name: "La Invasión Mongola"
  special_doctrine_allied_to_anda_hostility_name: "Aliados Oportunistas"
@@ -852,7 +856,7 @@
  allied_to_anda_opinion_active_county_opinion_name: "Camarada"
  allied_to_anda_opinion_active_opinion_name: "Esbirro"
  special_doctrine_against_to_anda_hostility_name: "[Glossary('Wan Kuei','game_concept_kuei_jin_desc')] Vengativos"
- special_doctrine_against_to_anda_hostility_desc: "Cuando las tribus mongolas se unieron, los [Glossary('Anda','podgloss.anda')] las siguieron como una tormenta, arrasando los territorios [Glossary('Wan Kuei','game_concept_kuei_jin_desc')] y comenzando una vendetta que solo terminaría con la muerte de uno de ellos."
+ special_doctrine_against_to_anda_hostility_desc: "Cuando las tribus mongolas se unieron, los [Glossary('Anda','podgloss.anda')] las siguieron como una tormenta, arrasando los territorios [Glossary('Wan Kuei','game_concept_kuei_jin_desc')] y desatando una vendetta que solo terminará con la muerte de uno de ellos."
  doctrine_parameter_against_to_anda_opinion_active: "" # Make loca empty to hidden this like vanilla
  doctrine_parameter_opinion_of_against_to_anda_opinion_active: "$VALUE|+=0$ de penalización de [opinion|E] con las [faiths|E] que tengan la [doctrine|E] [GetFaithDoctrine('special_doctrine_against_to_anda_hostility').GetBaseName]"
  doctrine_parameter_hostility_override_special_doctrine_against_to_anda_hostility: "Las [faiths|E] que tengan la [doctrine|E] [GetFaithDoctrine('special_doctrine_against_to_anda_hostility').GetBaseName] se consideran [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V] en lugar de $hostility_hostile_tooltippable$"
@@ -897,7 +901,7 @@
  doctrine_parameter_osirian_maa: "Puede reclutar a [GetMaA('disciples_anubis_maa').GetName], [GetMaA('daggers_nut_maa').GetName], [GetMaA('warriors_ubastet').GetName] y [GetMaA('army_aten').GetName] como [men_at_arms|E]"
   
  cabiri_hostility_doctrine_name: "Cabiri"
- cabiri_hostility_doctrine_desc: "Practican los mismos ritos y Hekau que sus hermanos egipcios, luchando contra los esbirros de $glossary_wyrm_apophis$, pero también contra la opresión de los Shemsu-Heru."
+ cabiri_hostility_doctrine_desc: "Practican los mismos ritos y Hekau que sus hermanos egipcios y combaten a los esbirros de $glossary_wyrm_apophis$, pero también la opresión de los Shemsu-Heru."
  doctrine_cabiri_name: "[GetTrait('cabiri').GetName( GetNullCharacter )]"
  doctrine_cabiri_evil_name: "Mal"
  doctrine_cabiri_evil_desc: "No puede haber paz ni negociaciones con la Progenie de Cabirus. La destruiremos por completo, o moriremos en el intento."
@@ -913,6 +917,23 @@
  doctrine_parameter_cabiri_illegal: "Los personajes con el [trait|E] [GetTrait('cabiri').GetName( GetPlayer )] son [criminals|E]"
  doctrine_parameter_cabiri_shunned: "Los personajes con el [trait|E] [GetTrait('cabiri').GetName( GetPlayer )] son [shunned|E]"
  doctrine_parameter_cabiri_accepted: "Los personajes con el [trait|E] [GetTrait('cabiri').GetName( GetPlayer )] son plenamente aceptados"
+ custom_mummy_dynasty_hostility_doctrine_name: "Dinastía Joven"
+ custom_mummy_dynasty_hostility_doctrine_desc: "En raras ocasiones surge una nueva Dinastía de momias."
+ doctrine_custom_mummy_dynasty_name: "[GetTrait('custom_mummy_dynasty').GetName( GetNullCharacter )]"
+ doctrine_custom_mummy_dynasty_evil_name: "Mal"
+ doctrine_custom_mummy_dynasty_evil_desc: "No puede haber paz ni negociación con una Dinastía advenediza. La destruiremos entera, o moriremos en el intento."
+ doctrine_custom_mummy_dynasty_crime_name: "Criminal"
+ doctrine_custom_mummy_dynasty_crime_desc: "Hay que destruir a [GetTrait('custom_mummy_dynasty').GetName( GetPlayer )]."
+ doctrine_custom_mummy_dynasty_shunned_name: "Rechazado"
+ doctrine_custom_mummy_dynasty_shunned_desc: "[GetTrait('custom_mummy_dynasty').GetName( GetPlayer )] son rechazados."
+ doctrine_custom_mummy_dynasty_accepted_name: "Aceptado"
+ doctrine_custom_mummy_dynasty_accepted_desc: "[GetTrait('custom_mummy_dynasty').GetName( GetPlayer )] son aceptados."
+ doctrine_parameter_hostility_override_doctrine_custom_mummy_dynasty_accepted: "Las [faiths|E] que apoyan a las Dinastías Jóvenes se consideran [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
+ doctrine_parameter_hostility_override_doctrine_custom_mummy_dynasty_crime: "Las [faiths|E] que se oponen a las Dinastías Jóvenes se consideran [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
+ doctrine_parameter_hostility_override_custom_mummy_dynasty_hostility_doctrine: "Las [faiths|E] de las Dinastías Jóvenes se consideran [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
+ doctrine_parameter_custom_mummy_dynasty_illegal: "Los personajes con el [trait|E] [GetTrait('custom_mummy_dynasty').GetName( GetPlayer )] son [criminals|E]"
+ doctrine_parameter_custom_mummy_dynasty_shunned: "Los personajes con el [trait|E] [GetTrait('custom_mummy_dynasty').GetName( GetPlayer )] son [shunned|E]"
+ doctrine_parameter_custom_mummy_dynasty_accepted: "Los personajes con el [trait|E] [GetTrait('custom_mummy_dynasty').GetName( GetPlayer )] son plenamente aceptados"
  
  shemsuheru_hostility_doctrine_name: "Shemsu-heru"
  shemsuheru_hostility_doctrine_desc: ""
@@ -968,21 +989,20 @@
  tenet_apotheosis_desc: ""
  
  tenet_bloodcommunion_name: "Comunión de Sangre"
- tenet_bloodcommunion_desc: "La Comunión de Sangre de los Adherentes de la Apoteosis es una versión impía de los rituales de comunión mortales. Dentro de la fe, cumple muchas de las mismas funciones. La sangre, por supuesto, no es simbólica: proviene de un sacrificio humano."
+ tenet_bloodcommunion_desc: "La Comunión de Sangre de los Adherentes de la Apoteosis es una versión impía de los rituales de comunión de los mortales. Dentro de la fe, cumple muchas de las mismas funciones. La sangre, por supuesto, no es simbólica: procede de un sacrificio humano."
 
- tenet_exaltedideals_name: "Ideales Exaltados"
- tenet_exaltedideals_desc: "La perfección en el intelecto, el cuerpo y la belleza es el ideal, mientras que lo contrario es un crimen. La perfección no es solo un estado mental, sino una razón para hacer la guerra a los inferiores." 
  
  tenet_willing_embrace_name: "Abrazo Voluntario"
  tenet_willing_embrace_desc: "Sumir a otra alma en la condenación eterna no es un asunto trivial. El candidato potencial al $pod_Embrace$ debe saber perfectamente a qué se compromete." 
- doctrine_parameter_willing_embrace: "Antes de cualquier $pod_Embrace$, tendrás que convencer a la víctima de convertirse en vampiro."
+ doctrine_parameter_willing_embrace: "Antes de cualquier $pod_Embrace$, tendrás que convencer a la víctima de que se convierta en vampiro"
  doctrine_parameter_ashirra_second_embrace: "Desbloquea un evento especial de educación de Chiquillos"
  doctrine_parameter_cannot_embrace_prisoners: "No puede $pod_Embrace$ a [prisoners|E]"
- doctrine_parameter_willing_embrace_restrictions: "No puede $pod_Embrace$ a #TOOLTIP:GAME_TRAIT,supehunter,[GetNullCharacter] #L Cazadores#!, #TOOLTIP:GAME_TRAIT,ghoul,[GetNullCharacter] #L Ghouls#!, ni a #TOOLTIP:GAME_TRAIT,changeling,[GetNullCharacter] #L changelings#!"
+ doctrine_parameter_willing_embrace_restrictions: "No se puede dar el $pod_Embrace$ a #TOOLTIP:GAME_TRAIT,supehunter,[GetNullCharacter] #L Cazadores#!#!, #TOOLTIP:GAME_TRAIT,ghoul,[GetNullCharacter] #L Ghouls#!#! ni #TOOLTIP:GAME_TRAIT,changeling,[GetNullCharacter] #L changelings#!#!"
+ doctrine_parameter_willing_embrace_fulfillment: "Cuando un candidato al Abrazo voluntario acepta tu oferta, obtienes @spiritual_fulfillment_icon![spiritual_fulfillment|E]"
 
  tenet_mercy_for_vanquished_name: "Piedad para los Vencidos"
  tenet_mercy_for_vanquished_desc: "Una vez que un enemigo se rinde, debe ser tratado con la dignidad y el respeto propios de su condición. Si el cautivo o su familia no pueden pagar el rescate, deben ser liberados por piedad.\n\nUn enemigo en batalla debe ser matado, pero un enemigo derrotado debe ser tratado con toda cortesía, con la esperanza de que algún día encuentre su camino hacia las filas de los fieles.\n\nNo sirve de nada detenerse en lo que pudo haber sido ni atormentarse por hechos pasados. El guerrero solo mira hacia la próxima batalla, y espera desenvolverse bien en ella."
- doctrine_parameter_frequent_kingdom_holy_wars: "Las [holy_wars|E] contra Reinos pueden declararse cada 25 años en lugar de cada 50"
+ doctrine_parameter_frequent_kingdom_holy_wars: "Las [holy_wars|E] contra Reinos pueden declararse cada #V 25#! años en lugar de cada #V 50#!"
  doctrine_parameter_house_arrest_only: "Los [prisoners|E] solo pueden ponerse bajo [house_arrest|E]"
  house_arrest_only_tooltip: "Esta fe solo permite el [house_arrest|E]"
  doctrine_parameter_piety_from_releasing: "Ganas [piety|El] al liberar sin exigencias a personajes $hostility_hostile_tooltippable$ o $hostility_evil_tooltippable$"
@@ -995,28 +1015,29 @@
 
  tenet_ashen_faith_name: "Fe de Cenizas"
  tenet_ashen_faith_desc: "La mayoría de los Caminos vampíricos son sobre todo filosofías, ligadas solo al individuo. Pero tu fe no lo es: traes la salvación a todos los $pod_cainites$ y la palabra debe difundirse." 
- doctrine_parameter_ashen_faith: "La [character_interaction|E] de Exigir Conversión tiene más probabilidades de tener éxito. Desbloquea la obligación de vasallo de Influencia del Culto."
+ doctrine_parameter_ashen_faith: "La [character_interaction|E] #V Exigir conversión#! tiene más probabilidades de éxito. Desbloquea la obligación de vasallo de Influencia del Culto"
  ASHEN_FAITH: "Precepto de la Fe de Cenizas $VALUE|=+0$"
 
  tenet_the_pyramid_name: "La Pirámide"
  tenet_the_pyramid_desc: "Asediados por todos lados por enemigos poderosos, la principal defensa de los Tremere es su total obediencia a un orden jerárquico muy estricto." 
- doctrine_parameter_the_pyramid: "Los Vasallos no pueden declarar guerras contra otros Vasallos sin un Anzuelo sobre su Señor."
+ doctrine_parameter_the_pyramid: "Los Vasallos no pueden declarar guerras a otros Vasallos sin un Anzuelo sobre su Señor"
+ doctrine_parameter_bloodbond_on_embrace: "Obtienes un [hook|E] de [Glossary('Vínculo de Sangre','game_concept_bloodbond_desc')] sobre tu Chiquillo tras el $pod_Embrace$"
   
  tenet_feral_vampires_name: "Vampiros Salvajes"
  tenet_feral_vampires_desc: "Las tierras salvajes son nuestros cazaderos, y nuestros guardianes del saber se aseguran de que nuestro legado sea escuchado." 
- doctrine_parameter_feral_lorekeepers: "Puede usar la decisión de Encargar Obra Épica sin ninguna ventaja, pero siempre resultará en una canción."
- doctrine_parameter_can_hunt: "Puede usar la decisión de Cazar, incluso siendo vampiro."
+ doctrine_parameter_feral_lorekeepers: "Puede usar la [decision|E] [GetDecision('commission_epic_decision').GetName] sin la ventaja, pero siempre dará como resultado una canción"
+ doctrine_parameter_can_hunt: "Puede usar la [activity|E] [GetActivityType('activity_hunt').GetTextIcon][GetActivityType('activity_hunt').GetName], incluso siendo vampiro"
  can_hunt_name: "Puede cazar"
- doctrine_parameter_city_aversion: "Pierde el acceso a los edificios que representan influencia en los asuntos de la ciudad, recibiendo en su lugar variantes rurales."
+ doctrine_parameter_city_aversion: "Pierde el acceso a los edificios que representan influencia en los asuntos de la ciudad y recibe en su lugar variantes rurales"
  
  tenet_old_ways_name: "Viejas Costumbres"
  tenet_old_ways_desc: "Han pasado siglos desde que el Norte mortal veneraba y seguía a los saqueadores más audaces por encima de los ricos mercaderes y los nobles taimados. Muchos vampiros lo ven como un desarrollo de lo más lamentable." 
     
  tenet_sanctioned_diableries_name: "Diablerie Sancionada"
  tenet_sanctioned_diableries_desc: "Los Hijos de Haqim deben reclamar la sangre de los indignos, pero cuidado con el juez precipitado." 
- doctrine_parameter_sanctioned_diableries: "Durante una $pod_diablerie$, si tu víctima es cobarde, arbitraria o de una religión Malvada, el coste de piedad se reducirá. Si la víctima es valiente, justa o de una religión Justa, el coste aumentará."
+ doctrine_parameter_sanctioned_diableries: "Durante una $pod_diablerie$, si tu víctima es [GetTrait('craven').GetName(GetNullCharacter)], [GetTrait('arbitrary').GetName(GetNullCharacter)] o de una [faith|E] $hostility_evil_tooltippable$, el coste de @piety_icon![piety|E] se reducirá. Si la víctima es [GetTrait('brave').GetName(GetNullCharacter)], [GetTrait('just').GetName(GetNullCharacter)] o de una [faith|E] $hostility_righteous_tooltippable$, el coste aumentará"
  
- COURT_CHAPLAIN_CONVERSION_SECRET_CULT_PENALTY: "Penalización por tener el precepto de Culto Secreto."
+ COURT_CHAPLAIN_CONVERSION_SECRET_CULT_PENALTY: "Penalización por tener el precepto de Culto Secreto"
 
  tenet_secret_cult_name: "Culto Secreto"
  tenet_secret_cult_desc: "Esta fe se organiza como una especie de conspiración en las sombras. Pocos conocen realmente su existencia, y así les gusta." 
@@ -1025,37 +1046,27 @@
  tenet_noblesse_oblige_desc: "Los gobernantes se toman la responsabilidad de los señores hacia sus vasallos muy en serio. Administrar el sistema de vasallaje con justicia debería dar como resultado vasallos felices. Vasallos felices significan un señor de éxito."
 
  tenet_knowledge_above_all_name: "El Conocimiento Ante Todo"
- tenet_knowledge_above_all_desc: "El gran misterio es demasiado importante para dejarse limitar por mezquinas preocupaciones morales." 
- doctrine_parameter_experiments_on_prisoners: "Da acceso a un método especial de ejecución."
+ tenet_knowledge_above_all_desc: "El gran misterio es demasiado importante para dejarse frenar por mezquinas preocupaciones morales." 
+ doctrine_parameter_experiments_on_prisoners: "Da acceso a un método especial de ejecución que recompensa con experiencia del estilo de vida de [learning_i][learning|E]"
  EXECUTION_EXPERIMENTS: "Experimenta con Ellos"
  
  tenet_moments_of_truth_name: "Momentos de Verdad"
  tenet_moments_of_truth_desc: "¿Un destello de inspiración? ¿Un mensaje de los poderes superiores? En cualquier caso, un acontecimiento tan trascendental puede cambiar a cualquier persona hasta la médula." 
- doctrine_parameter_moments_of_truth: "Da acceso a una forma especial de aliviar el estrés que te permite cambiar tus rasgos."
  
- stress_threshold.7001.t: "Crisis Mental: Momento de Verdad"
- stress_threshold.7001.desc: "Has recibido una revelación. Tus problemas actuales han sido una prueba del Todopoderoso para evaluar tu valía. Un momento tan raro de claridad podría ser la ocasión para que hagas un voto.\nSin duda, hay defectos en tu personalidad en los que podrías trabajar, con la esperanza de acercarte más a lo Divino en el proceso."
- stress_threshold.7001.a: "¡La justicia es cosa de débiles!"
- stress_threshold.7001.b: "¿He perdido mi Humanidad?"
- stress_threshold.7001.c: "Debo mantenerme concentrado."
- stress_threshold.7001.d: "¡Necesito más!"
- stress_threshold.7001.e: "¡Todos están aquí para atraparme!"
- stress_threshold.7001.f: "¿Y si no todos están aquí para atraparme?"
 
  tenet_honor_and_bravery_name: "Honor y Valentía"
  tenet_honor_and_bravery_desc: "¡Un verdadero gobernante de la noche lidera desde el frente, abriéndose paso sin temor a través de cualquier enemigo lo bastante necio como para interponerse en su noble propósito!" 
- doctrine_parameter_battle_winning_prestige: "Ganas más prestigio al ganar batallas."
+ doctrine_parameter_battle_winning_prestige: "Ganas más [prestige_i][prestige|E] al ganar batallas"
  
- tenet_community_name: "Comunidad"
+ tenet_community_name: "Pastor Invisible"
  tenet_community_desc: "El buen pastor cuida de su rebaño. Que se multiplique y crezca, y que ningún depredador se le acerque." 
- doctrine_parameter_access_to_develop_capital: "Tienes acceso a la decisión de Desarrollar la Capital, y cuesta menos estrés."
  
  tenet_svadharma_name: "Svadharma"
  tenet_svadharma_desc: "Los adherentes de este Camino creen que han caído fuera del ciclo de reencarnaciones. La única forma de enmendarlo es seguir un nuevo conjunto de deberes, ayudando a otros a encontrar su propio camino, les guste o no." 
- doctrine_parameter_access_to_improve_scheme: "Tienes acceso a la decisión de Mejorar Conjuras."
+ doctrine_parameter_access_to_improve_scheme: "Tienes acceso a la [decision|E] [GetDecision('deceitful_progress_hostile_schemes_decision').GetName]"
  
  tenet_lilithmaid_name: "Lilith, la Doncella"
- tenet_lilithmaid_desc: "La Doncella se enfurece y maldice contra el destino trazado ante ella. No será propiedad de ningún hombre, nación, ni siquiera de Dios." 
+ tenet_lilithmaid_desc: "La Doncella se enfurece y maldice el destino que se le ha trazado. No será propiedad de ningún hombre, ninguna nación ni siquiera de Dios." 
  
  tenet_lilithmother_name: "Lilith, la Madre"
  tenet_lilithmother_desc: "La Doncella se convierte en la Madre a través del dolor y finalmente comprende que es lo único constante en este mundo." 
@@ -1065,13 +1076,15 @@
    
  tenet_aphrodisiac_saturnalia_name: "Afrodisíaco y Saturnales"
  tenet_aphrodisiac_saturnalia_desc: "Los rituales de Primavera e Invierno son pilares de la vida de esta fe. Ser elegido organizador de esos eventos es un gran honor." 
- doctrine_parameter_aphrodisiac_saturnalia: "Tienes acceso a dos nuevos puestos en la corte: el Señor del Desgobierno y el Celebrante Afrodisíaco."
+ doctrine_parameter_aphrodisiac_saturnalia: "Tienes acceso a dos nuevos [court_positions|E]: el [GetCourtPositionType('lord_of_misrule_court_position').GetName] y el [GetCourtPositionType('aphrodisiac_celebrant_court_position').GetName]"
   
  tenet_fire_fury_name: "Fuego y Furia"
  tenet_fire_fury_desc: "Todo el sistema político vampírico está corrupto y debe ser derribado. Y las negociaciones pacíficas ya no son una opción." 
+ tenet_blood_between_us_name: "Sangre entre nosotros"
+ tenet_blood_between_us_desc: "Unidos colectivamente por los caminos de Orun y Aye, los Vástagos que han llegado a dominar África, aun compartiendo sus innumerables desacuerdos y conflictos, siguen unidos en una dinámica y compleja sociedad de medianoche."
  
  tenet_helios_truth_name: "La Verdad de Helios"
- tenet_helios_truth_desc: "Helios enseña a los Garou a templar su instinto y su Furia con pensamiento y lógica. Así, quienes lo siguen a menudo se convierten en hábiles diplomáticos y negociadores. A menudo, el mayor problema para lograr una tregua, un tratado o una alianza es conseguir que la otra parte escuche el argumento que plantea el personaje. Helios valora la verdad y la justicia. Helios aporta razón y tacto a los hombres lobo que lo honran."
+ tenet_helios_truth_desc: "$glossary_helios$ enseña a los Garou a templar su instinto y su $glossary_rage$ con pensamiento y lógica. Por eso, quienes lo siguen suelen convertirse en hábiles diplomáticos y negociadores. A menudo, el mayor problema para lograr una tregua, un tratado o una alianza es conseguir que la otra parte escuche el argumento que plantea el personaje. Helios valora la verdad y la justicia. Helios aporta razón y tacto a los hombres lobo que lo honran."
  
  tenet_summer_festivals_name: "Festivales de Verano"
  tenet_summer_festivals_desc: "La Corte de Verano se enorgullece de su adhesión a la tradición y la estructura, y de su estricta observancia de la disciplina. Parte de estas Tradiciones son los populares festivales durante la parte más calurosa del verano, que encarnan la risa, la alegría y la libertad. Ofrecen una excusa para reunir tanto Glamour como sea posible de los sueños de calor de los humanos, y mientras dura el festival, las hadas tienen permitido jugar con cualquier mortal que encuentren. Las festividades del Pleno Verano de los Seelie les permiten, durante un breve día, usar a los mortales sin vergüenza como juguetes, y entregarse a bromas y travesuras."
@@ -1084,7 +1097,7 @@
  
  tenet_vengeance_of_nut_name: "Venganza de Nut"
  tenet_vengeance_of_nut_desc: "Aquellos que buscan venganza por Nut se dedican a la destrucción de vampiros. Vengan una Tierra Natal perdida y a los suyos perdidos. Los Dagas actúan como asesinos allá donde vagan, seleccionando en silencio a una Sanguijuela o tres para su extinción. Son expertos en 'Encontrar la Guarida' de los no-muertos."
- doctrine_parameter_find_the_lair_active: "Desbloquea el [journey|E] de Encontrar la Guarida."
+ doctrine_parameter_find_the_lair_active: "Desbloquea el [journey|E] de Encontrar la Guarida"
  
  tenet_way_of_zhong_kuei_name: "Camino de Zhong Kuei"
  tenet_way_of_zhong_kuei_desc: "La metodología para sofocar demonios no-muertos desarrollada por Zhong Kuei. Quienes siguen este Camino son expertos en 'Encontrar la Guarida' de los vampiros."
@@ -1103,11 +1116,7 @@
  wyrm_tainted_doctrine_desc: "Muchos $glossary_fera$ que veneran a Gaia tienen un don que les permite sentir la mácula del $glossary_wyrm$ en otros. Esta mácula puede tomar muchas formas. Una mácula común son los Caminos vampíricos y los Caminos de Iluminación, considerados tan corruptos que sus seguidores son intrínsecamente vistos como manchados por el Wyrm."
  doctrine_parameter_hostility_override_wyrm_tainted_doctrine: "Las [faiths|E] con [GetFaithDoctrine('wyrm_tainted_doctrine').GetBaseName] se consideran [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
 
- tenet_bacchanal_name: "Bacanal"
- tenet_bacchanal_desc: "Dedicado a las juergas de borrachera, este precepto hace que la reducción de estrés de la decisión de beber sea el doble de efectiva. Algunos considerarían el consumo de tales tóxicos una peligrosa adicción."  
  
- tenet_neter_sentra_name: "Neter Sentra"
- tenet_neter_sentra_desc: "El aliento de lo divino: las plegarias son llevadas a los cielos por el humo. El culto del humo divino ha adoptado la novedosa innovación de no solo comer pasteles de hachís, sino fumarlos. Experimentan con una variedad de exóticos inciensos y humos potencialmente peligrosos. Este precepto hace que la reducción de estrés de la decisión hashishiyah sea el doble de efectiva."  
  
  tenet_paranoia_name: "Paranoia"
  tenet_paranoia_desc: "¡Que seas paranoico no significa que no vayan a por ti!" 
@@ -1115,8 +1124,6 @@
  tenet_advocatus_diaboli_name: "Advocatus Diaboli"
  tenet_advocatus_diaboli_desc: "Satán y sus esbirros poseen formidables poderes de persuasión, una asombrosa capacidad para engañar a otros y hacer que actúen en favor de sus fines demoníacos." 
  
- tenet_collectivism_name: "Colectivismo"
- tenet_collectivism_desc: "Originado en el antiguo uniformitarismo chino, se dedica a construir un colectivo similar a un Leviatán, creando un concepto colectivo del cuerpo erudito mediante un adoctrinamiento flexible y leyes estrictas, hasta crear finalmente una voluntad colectiva unificada."
  
 
  
@@ -1140,6 +1147,7 @@
  doctrine_parameter_hunter_hunting_wraith: "#N -100#! de penalización de [opinion|E] hacia los personajes con el [trait|E] [GetTrait('wraith').GetName( GetPlayer )]"
  doctrine_parameter_hunter_hunting_bane: "#N -100#! de penalización de [opinion|E] hacia los personajes con el [trait|E] [GetTrait('banemummy').GetName( GetPlayer )]"
  doctrine_parameter_hunter_hunting_cabiri: "#N -100#! de penalización de [opinion|E] hacia los personajes con el [trait|E] [GetTrait('cabiri').GetName( GetPlayer )]"
+ doctrine_parameter_hunter_hunting_custom_mummy_dynasty: "#N -100#! de [opinion|E] hacia los personajes con el [trait|E] [GetTrait('custom_mummy_dynasty').GetName( GetPlayer )]"
  doctrine_parameter_hunter_hunting_ghoul: "#N -100#! de penalización de [opinion|E] hacia los personajes con el [trait|E] [ghoul|E]"
  doctrine_parameter_hunter_hunting_fae: "#N -100#! de penalización de [opinion|E] hacia los personajes con el [trait|E] [GetTrait('fae').GetName( GetPlayer )] o [GetTrait('changeling').GetName( GetPlayer )]"
  hunter_hunting_name: "Cazadores Cazando"
@@ -1149,7 +1157,7 @@
  doctrine_parameter_hostility_override_demons_hostility_doctrine: "Las [faiths|E] [GetTrait('demon').GetName( GetPlayer )] se consideran [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
  doctrine_parameter_hostility_override_doctrine_demonic_accepted: "Las [faiths|E] Demoníacas se consideran [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
  
- doctrine_parameter_access_to_underworld: "Obtienes acceso al [UmbraGlossaryLocalized('shadowlands','Inframundo')] al viajar por la [umbra|E]."
+ doctrine_parameter_access_to_underworld: "Obtienes acceso al [UmbraGlossaryLocalized('shadowlands','Inframundo')] al viajar por la [umbra|E]"
  
  seasons_time_name: "Tiempo de Estación"
  doctrine_winter_time_name: "Tiempo de Invierno"
@@ -1170,9 +1178,13 @@
  doctrine_fae_agenda_humanist_name: "Humanista"
  doctrine_fae_agenda_humanist_desc: "La facción Humanista no necesariamente aboga por la amabilidad y la tolerancia al tratar con el Señorío humano, sino que abraza una ética centrada sobre todo en comprender a la humanidad. Los humanos poseen ahora un número y un poder que superan a los de las propias hadas. Los Humanistas creen que ha llegado el momento de reunir información sobre los humanos, tratar con ellos, forjar nuevos juramentos y, en todo caso, buscar un equilibrio entre las dos razas antes de que sea demasiado tarde. Desean alcanzar un nivel de codependencia con los humanos, en el que se reconozca de nuevo a las hadas y se las valore y respete... o simplemente se las valore y tema."
  doctrine_fae_agenda_constantinian_name: "Constantiniano"
- doctrine_fae_agenda_constantinian_desc: "Los Constantinianos también pueden usar la [hostile_scheme|E] [GetScheme('inquihunt').GetTypeName] de [GetTrait('supehunter').GetName( GetPlayer )] contra un [GetTrait('vampire').GetName( GetPlayer )].\n\n$tenet_constantinian_desc$"
+ doctrine_fae_agenda_constantinian_desc: "$tenet_constantinian_desc$"
  doctrine_fae_agenda_none_name: "Indeciso"
  doctrine_fae_agenda_none_desc: "Ninguna agenda en particular parece atractiva. Los Militantes, los Portadores de la Tregua, los Humanistas y los Constantinianos tienen todos argumentos válidos, y muchas hadas aún no han decidido cuál es el camino a seguir." 
+ doctrine_parameter_hostility_override_doctrine_fae_agenda_trucebearer: "Las [faiths|E] que tengan la [doctrine|E] [GetFaithDoctrine('doctrine_fae_agenda_trucebearer').GetBaseName] se consideran [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
+ doctrine_parameter_hostility_override_doctrine_fae_agenda_militant: "Las [faiths|E] que tengan la [doctrine|E] [GetFaithDoctrine('doctrine_fae_agenda_militant').GetBaseName] se consideran [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
+ doctrine_parameter_hostility_override_doctrine_fae_agenda_humanist: "Las [faiths|E] que tengan la [doctrine|E] [GetFaithDoctrine('doctrine_fae_agenda_humanist').GetBaseName] se consideran [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
+ doctrine_parameter_hostility_override_doctrine_fae_agenda_none: "Las [faiths|E] que tengan la [doctrine|E] [GetFaithDoctrine('doctrine_fae_agenda_none').GetBaseName] se consideran [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
  doctrine_parameter_fae_agenda_militant_opinion_active: ""
  fae_agenda_militant_opinion_active_opinion_name: "Agenda Militante de las Hadas"
  fae_agenda_militant_opinion_active_county_opinion_name: "Condado de Agenda Militante de las Hadas"
@@ -1193,9 +1205,6 @@
  doctrine_parameter_opinion_of_fae_agenda_humanist_opinion_active: "$VALUE|+=0$ de [opinion|E] con las [faiths|E] Humanistas"
  doctrine_parameter_opinion_of_fae_agenda_constantinian_opinion_active: "$VALUE|+=0$ de [opinion|E] con las [faiths|E] Constantinianas"
  doctrine_parameter_opinion_of_fae_agenda_trucebearer_opinion_active: "$VALUE|+=0$ de [opinion|E] con las [faiths|E] Portadoras de la Tregua" 
- doctrine_parameter_patron_council_illegal: "Los personajes con los [traits|E] [GetTrait('patron_council_seeker').GetName( GetPlayer )], [GetTrait('patron_council_vanguard').GetName( GetPlayer )], o [GetTrait('patron_council_austere_conclave').GetName( GetPlayer )] son [criminals|E]"
- doctrine_parameter_patron_council_shunned: "Los personajes con los [traits|E] [GetTrait('patron_council_seeker').GetName( GetPlayer )], [GetTrait('patron_council_vanguard').GetName( GetPlayer )], o [GetTrait('patron_council_austere_conclave').GetName( GetPlayer )] son [shunned|E]"
- doctrine_parameter_patron_council_accepted: "Los personajes con los [traits|E] [GetTrait('patron_council_seeker').GetName( GetPlayer )], [GetTrait('patron_council_vanguard').GetName( GetPlayer )], o [GetTrait('patron_council_austere_conclave').GetName( GetPlayer )] son plenamente aceptados"
 
  doctrine_fae_morality_name: "Moralidad de las Hadas"
  doctrine_fae_morality_seelie_name: "Seelie"
@@ -1204,8 +1213,8 @@
  doctrine_fae_morality_unseelie_desc: "Muchas hadas Seelie ven a la Corte Unseelie como de algún modo malvada, pero esta descripción es demasiado simplista. Los Unseelie abrazan el cambio y desdeñan la tradición, sin ver ningún vínculo especial con su pasado ni, de hecho, con el [UmbraGlossary('dreaming')], que parece hacerse cada vez más distante. La forma de ser Unseelie es apasionada y pragmática, satisfaciendo tanto el deseo como la necesidad; los Unseelie no se niegan nada a sí mismos.\n\nAntes de la [Glossary('Fractura','game_concept_shattering_desc')], las Cortes Unseelie gobernaban desde Samhain hasta Beltane, a través del Otoño y el Invierno. El Código Unseelie es: el cambio es bueno, el glamour es libre, el honor es una mentira y la pasión antes que el deber."
  doctrine_parameter_fae_morality_seelie_opinion_active: ""
  doctrine_parameter_fae_morality_unseelie_opinion_active: ""
- doctrine_parameter_opinion_of_fae_morality_seelie_opinion_active: "$VALUE|+=0$ de [opinion|E] con las [faiths|E] Seelie"
- doctrine_parameter_opinion_of_fae_morality_unseelie_opinion_active: "$VALUE|+=0$ de [opinion|E] con las [faiths|E] Unseelie"
+ doctrine_parameter_opinion_of_fae_morality_seelie_opinion_active_opinion_active: "$VALUE|+=0$ de [opinion|E] con las [faiths|E] Luminosas"
+ doctrine_parameter_opinion_of_fae_morality_unseelie_opinion_active_opinion_active: "$VALUE|+=0$ de [opinion|E] con las [faiths|E] Oscuras"
  doctrine_fae_morality_neutral_name: "Neutral"
  doctrine_fae_morality_neutral_desc: ""
 
@@ -1214,27 +1223,8 @@
  fae_morality_unseelie_opinion_active_opinion_name: "Unseelie"
  fae_morality_unseelie_opinion_active_county_opinion_name: "Unseelie"
  
- special_doctrine_fae_militants_hostility_name: "Facción Militante"
- special_doctrine_fae_militants_hostility_desc: "Los militantes desean descartar la Tregua Jurada y renovar la Guerra de las Estaciones"
- special_doctrine_fae_trucebearers_hostility_name: "Facción Portadora de la Tregua"
- special_doctrine_fae_trucebearers_hostility_desc: "Los Portadores de la Tregua esperan mantener la Tregua Jurada y que las Cortes Estacionales gobiernen por turnos."
- special_doctrine_fae_humanists_hostility_name: "Facción Humanista"
- special_doctrine_fae_humanists_hostility_desc: "Los Humanistas están obsesionados con la humanidad, ya sea para amarla o para controlarla."
- special_doctrine_fae_constantinians_hostility_name: "Facción Constantiniana"
- special_doctrine_fae_constantinians_hostility_desc: "Sobrecogidos por el creciente poder de la Iglesia, los Constantinianos intentan hacerse un lugar dentro de ella."
- special_doctrine_fae_undecided_hostility_name: "Facción Indecisa"
- special_doctrine_fae_undecided_hostility_desc: "Ambiguos respecto a la reanudación de la Guerra de las Estaciones, los indecisos aún no han elegido un camino en la renovación del conflicto entre las Cortes de las Hadas."
- fae_hostility_name: ""
- fae_hostility_desc: ""
- fae_agenda_hostility_name: ""
- fae_agenda_hostility_desc: ""
  fae_pacts_hostility_name: ""
  fae_pacts_hostility_desc: ""
- doctrine_parameter_hostility_override_special_doctrine_fae_trucebearers_hostility: "Otras [faiths|E] de Hadas que tengan la [doctrine|E] [GetFaithDoctrine('special_doctrine_fae_trucebearers_hostility').GetBaseName] se consideran [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
- doctrine_parameter_hostility_override_special_doctrine_fae_constantinians_hostility: "Otras [faiths|E] de Hadas que tengan la [doctrine|E] [GetFaithDoctrine('special_doctrine_fae_constantinians_hostility').GetBaseName] se consideran [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]" 
- doctrine_parameter_hostility_override_special_doctrine_fae_militants_hostility: "Otras [faiths|E] de Hadas que tengan la [doctrine|E] [GetFaithDoctrine('special_doctrine_fae_militants_hostility').GetBaseName] se consideran [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
- doctrine_parameter_hostility_override_special_doctrine_fae_humanists_hostility: "Otras [faiths|E] de Hadas que tengan la [doctrine|E] [GetFaithDoctrine('special_doctrine_fae_humanists_hostility').GetBaseName] se consideran [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
- doctrine_parameter_hostility_override_special_doctrine_fae_undecided_hostility: "Otras [faiths|E] de Hadas que tengan la [doctrine|E] [GetFaithDoctrine('special_doctrine_fae_undecided_hostility').GetBaseName] se consideran [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
  doctrine_parameter_hostility_override_doctrine_fae_agenda_constantinian: "Las [faiths|E] que tengan la [doctrine|E] [GetFaithDoctrine('doctrine_fae_agenda_constantinian').GetBaseName] se consideran [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
  doctrine_parameter_hostility_override_tenet_constantinian: "Las [faiths|E] que tengan la [doctrine|E] [GetFaithDoctrine('tenet_constantinian').GetBaseName] se consideran [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
  doctrine_parameter_hostility_override_special_doctrine_constantinian_catechism: "Las [faiths|E] que tengan la [doctrine|E] [GetFaithDoctrine('special_doctrine_constantinian_catechism').GetBaseName] se consideran [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
@@ -1318,13 +1308,7 @@
  constantinian_catechism_name: "Catecismo Constantiniano"
  constantinian_catechism_desc: ""
  special_doctrine_constantinian_catechism_name: "Catecismo Constantiniano"
- special_doctrine_constantinian_catechism_desc: ""
- holy_fae: "¡Santa Hada!" # opinion modifier
- holy_fae_name: "Hada Sagrada" # special doctrine
- holy_fae_desc: ""
- special_doctrine_holy_fae_name: "Hada Sagrada"
- special_doctrine_holy_fae_desc: ""
- doctrine_parameter_holy_fae: "#P 100#! de bonificación de [opinion|E] hacia los personajes con el [trait|E] [GetTrait('fae').GetName( GetPlayer )] o [GetTrait('changeling').GetName( GetPlayer )]"
+ special_doctrine_constantinian_catechism_desc: "Y el ángel les dijo: No temáis, pues he aquí que os traigo buenas nuevas de gran alegría, que serán para todo el pueblo."
  
  changeling_rebirth_name: "Renacimiento Changeling"
  changeling_rebirth_doctrine_name: "Renacimiento Changeling"
@@ -1360,7 +1344,7 @@
  
  doctrine_parameter_oathtruce_alliances_active: "A los Portadores de la Tregua les resulta más fácil hacer alianzas"
 
- doctrine_parameter_can_perform_vaulderie: "Puede realizar la Vaulderie con miembros de [coterie|E] mediante [decision|E]"
+ doctrine_parameter_can_perform_vaulderie: "Puede realizar la [GetDecision('vaulderie_decision').GetName] con miembros de [coterie|E] mediante [decision|E]"
  doctrine_parameter_overwork_capital_unlocked: "Desbloquea la [decision|E] #V $overwork_capital_decision$#!, aumentando el [development|E] a cambio de [prestige|E] y [masquerade_exposure_with_icon|E]"
 
  stygia_hostility_name: "Hostilidad de Stygia"
@@ -1382,24 +1366,30 @@
  
  tenet_eyes_of_gaia_name: "Ojos de Gaia"
  tenet_eyes_of_gaia_desc: "En lugar de recibir un propósito específico, cada tribu Bastet intenta llenar un vacío donde otros no supieron actuar. Los Garou (y algunos otros) los llaman los Ojos de Gaia por su amor al conocimiento secreto."
- doctrine_parameter_access_rush_schemes: "Obtienes acceso a la decisión menor de Acelerar Conjuras."
- tenet_kind_warriors_name: "Guerreros Amables"
- tenet_kind_warriors_desc: "Los Gurahl son defensores y sanadores entre las Razas Cambiantes y los protectores originales de Gaia. Aunque conocidos por ser gentiles y lentos para enfadarse, ni siquiera la muerte puede impedirles cumplir con su deber."
+ doctrine_parameter_access_rush_schemes: "Obtienes acceso a la [decision|E] [GetDecision('impatient_rushing_all_schemes_decision').GetName]"
  doctrine_parameter_raiding_forbidden: "No puede [raid|E]"
  
  tenet_amakusa_rite_name: "Rito de Amakusa"
  tenet_amakusa_rite_desc: "Mediante la mezcla de $pod_vitae$ en un cuenco compartido y fortalecida con los ritos y respetos adecuados, las Pócimas que rompen la opresión e igualan a todos bajo la noche pueden liberar a la Tribu de Sangre, para que su revolución eterna pueda seguir librándose sin temor al Vínculo de Sangre ni carecer de medios para hacerlo."
+ doctrine_parameter_cheaper_vaulderie: "El coste de la [decision|E] [GetDecision('vaulderie_decision').GetName] se reduce a la mitad"
  
  tenet_cruelty_of_stars_name: "Crueldad de las Estrellas"
  tenet_cruelty_of_stars_desc: "Detrás de cada gran fortuna hay un crimen aún mayor. Los mortales son carne, y el demonio de sangre es el consumidor. La Iluminación es un juego de pobres. Empújalos, quiébralos, róbales, y oblígalos a ganárselo de vuelta mientras los convences de que fue un buen trato. Deja que te llamen Infernalista. Tienes dinero que ganar."
  
  tenet_physical_ascension_name: "Ascensión de la Carne"
- tenet_physical_ascension_desc: "El objetivo de todos los Buscadores es hacer ascender su carne mortal a un estado conocido como [GetTrait('azhi_dahaka').GetName(GetPlayer)]. Un estado en el que se separan por completo de la Creación, para ser una voluntad autosuficiente en un universo que ya no tiene poder sobre el ego."
+ tenet_physical_ascension_desc: "El objetivo de todos los Buscadores es elevar su carne mortal a un estado conocido como [GetTrait('azhi_dahaka').GetName(GetPlayer)]. Un estado en el que se separan por completo de la Creación para ser una voluntad autosuficiente en un universo que ya no tiene poder sobre el ego."
  doctrine_parameter_azhi_dahaka_journey_bonus: "Aumenta la [planning_speed|E] del [journey|E] #bold Búsqueda de Azhi Dahaka#! en #P +25%#!"
 
  tenet_burn_the_inferno_name: "Quema el Infierno"
  tenet_burn_the_inferno_desc: "Las armas de los [akuma|E] se volverán contra ellos. Ningún sacrificio es demasiado grande, ninguna traición demasiado pequeña."
  doctrine_parameter_recruit_deviltiger_banes: "Puede reclutar a [GetMaA('rat_headed_dragonfly_demon').GetName], [GetMaA('sleeper_seducing_bane').GetName] y [GetMaA('face_robe_demon').GetName] como [men_at_arms|E]"
+ tenet_sanbenito_creed_name: "Camino de la Misericordia"
+ tenet_sanbenito_creed_desc: "Nuestra misión debe ser la de la misericordia, no la del odio."
+ doctrine_parameter_find_the_lair_disabled_on_vampires: "Desactiva el [journey|E] de Encontrar la Guarida para $POD_splat_vampire_plural$"
+ doctrine_parameter_hostility_override_roadofhumanity_hostility_doctrine: "Los $POD_splat_vampire_plural$ con una [faith|E] [GetReligionByKey('roadofhumanity_religion').GetName] se consideran [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V] y se puede interactuar con ellos"
+ doctrine_parameter_increased_truefaith_xp_from_interactions: "#P +100%#! de Experiencia de [faith_lifestyle|E] por [Concept('character_interaction','Interacciones de personaje')|E]"
+ doctrine_parameter_tenet_sanbenito_creed_warning: "#X Solo se puede adoptar si no hay ningún #V $POD_splat_vampire_plural$#! en tu lista de víctimas#!"
+ doctrine_parameter_hostility_override_tenet_sanbenito_creed: ""
 
 
  land_of_faith_controlled_name: "La Tierra de la Fe"
@@ -1413,7 +1403,7 @@
  
  tenet_obeisance_to_devils_name: "Homenaje a los Diablos"
  tenet_obeisance_to_devils_desc: "Existimos por debajo de los Dioses Menores. Debemos permanecer inadvertidos, fuera del escrutinio, no sea que provoquemos nuestra aniquilación."
- doctrine_parameter_hostility_override_tenet_obeisance_to_devils: "Las [faiths|E] que tengan la [doctrine|E] [GetFaithDoctrine('tenet_obeisance_to_devils').GetBaseName] se consideran [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V] en lugar de #V Hostiles#!" 
+ doctrine_parameter_hostility_override_tenet_obeisance_to_devils: "Las [faiths|E] que tengan la [doctrine|E] [GetFaithDoctrine('tenet_obeisance_to_devils').GetBaseName] se consideran [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V] en lugar de $hostility_hostile_tooltippable$" 
 
 
  tenet_fera_innovative_name: "Innovador"
@@ -1429,11 +1419,11 @@
  tenet_wolves_of_sable_desc: "Sable es la cazadora invisible en las ventiscas; cavilando en silencio, esperando con paciencia, atacando sin previo aviso y desapareciendo de nuevo en el hielo, la nieve y el viento, dejando solo una o dos gotas de sangre como prueba de que alguna vez estuvo allí. Es la pequeña superviviente, fortalecida por su entorno y templada por su soledad. Representa a la cazadora inesperada y la supervivencia del más apto contra las peores adversidades. Los Hijos de Sable son considerados aliados por los espíritus del viento y pueden invocarlos y hablarles libremente. Sable confía en sus hijos para proteger sus tierras siberianas. Halcón considera a todos los Hijos de Sable salvajes deshonrados y mestizos, y bajo ninguna circunstancia tolerará Halcón la pertenencia de un Siberakh a una manada que él haya elegido como propia." 
 
  tenet_soldiers_of_the_wyrm_name: "Soldados del Wyrm"
- tenet_soldiers_of_the_wyrm_desc: "Somos los soldados del $glossary_wyrm$, no de sus siervos inferiores. Nuestra gloria será vista, nuestra fe recompensada."
- doctrine_parameter_reduced_urgetaints_xp: "Reduce la [lifestyle_experience|E] de [urgetaints_lifestyle|E] obtenida en #N -25%#!"
+ tenet_soldiers_of_the_wyrm_desc: "Somos los soldados del $glossary_wyrm$, no de sus siervos inferiores, que se disputan sus propios intereses. Nuestra gloria será vista, nuestra fe recompensada."
+ doctrine_parameter_reduced_maeljingifts_xp: "Reduce en #N -25%#! la [lifestyle_experience|E] de [maeljingifts_lifestyle|E] obtenida"
 
  tenet_secrets_of_flesh_name: "Secretos de la Carne"
- tenet_secrets_of_flesh_desc: "Mucha sabiduría yace latente en la carne. La Letanía ya no nos lo negará."
+ tenet_secrets_of_flesh_desc: "Mucha sabiduría yace latente en la carne. La $glossary_werewolf_litany$ ya no nos la negará."
  doctrine_parameter_wyrm_education_lifestyle_xp_from_cannibalism: "Ganas [lifestyle_experience|E] equivalente a tu [education|E] al devorar a otros personajes, escalando con la edad de la víctima"
  doctrine_parameter_infamy_renown_from_cannibalism: "Ganas $POD_fera_renown_infamy$ de Renombre $glossary_fera$ al devorar a personajes mayores de 200 años"
 
@@ -1443,15 +1433,18 @@
 
  tenet_wyrm_seekers_name: "Buscadores del Wyrm"
  tenet_wyrm_seekers_desc: "El $glossary_wyrm$ posee mucho conocimiento y poder; solo hay que buscarlo."
- doctrine_parameter_increased_urgetaints_xp: "Aumenta la [lifestyle_experience|E] de [urgetaints_lifestyle|E] obtenida en #P +25%#!"
+ doctrine_parameter_increased_maeljingifts_xp: "Aumenta en #P +25%#! la [lifestyle_experience|E] de [maeljingifts_lifestyle|E] obtenida"
 
  tenet_channel_darkness_name: "Canaliza la Oscuridad"
  tenet_channel_darkness_desc: "Somos uno con la oscuridad, meros fantasmas en la noche. Nos movemos sin ser vistos hasta que nuestras sombras descienden sobre los necios que se interponen en nuestro camino."
  doctrine_parameter_unlock_shadow_shapeshift: "Desbloquea la opción de Cambio de Forma [GetModifier('POD_shapeshift_form_shadow_modifier').GetNameWithTooltip]"
+ tenet_howling_lion_name: "Leones Aulladores"
+ tenet_howling_lion_desc: "Los hijos de León fallaron una vez; no volverán a hacerlo."
+ doctrine_parameter_unlock_lion_totem: "Puede elegir [GetModifier('lion_totem_modifier').GetNameWithTooltip] como [pack_totem|E]"
 
  tenet_hypnotic_serpent_name: "Encanto de la Serpiente Hipnótica"
  tenet_hypnotic_serpent_desc: "[Glossary('Cahlash', 'glossary_wyrm_tt')] nos llama y responderemos. Pronto, los demás también aprenderán a hacerlo."
- doctrine_parameter_learn_secrets_from_seduction: "Las [schemes|E] de [GetScheme('seduce').GetTypeName] exitosas revelan todos los [secrets|E] que conoce el objetivo, incluidos los suyos propios."
+ doctrine_parameter_learn_secrets_from_seduction: "Las [schemes|E] de [GetScheme('seduce').GetTypeName] exitosas revelan todos los [secrets|E] que conoce el objetivo, incluidos los suyos propios"
 
 
  tenet_vengence_sobek_name: "Venganza por Sobek"
@@ -1459,17 +1452,17 @@
 
  tenet_flames_agni_name: "Llamas de Agni"
  tenet_flames_agni_desc: "Aunque todos los Mokolé veneran al Dragón, los seguidores del Orden Cósmico se refieren a él como Agni, el Dios del Fuego, el Portador de Ofrendas y el Portavoz del Wani. Agni es fuerte y sabio a la vez; sus llamas protegen a sus seguidores y queman a sus enemigos.\nUna llama eterna arde dentro de cada uno de sus hijos elegidos; solo necesitan encenderla."
- doctrine_parameter_unlock_agni_totem: "Puede elegir [GetModifier('agni_totem_modifier').GetNameWithTooltip] en lugar de [GetModifier('dragon_totem_modifier').GetNameWithTooltip] como Tótem de [GetPlayer.Custom('PODCoterie')]."
- doctrine_parameter_gain_fire_immunity: "Ganas inmunidad al Daño de fuego."
+ doctrine_parameter_unlock_agni_totem: "Puede elegir [GetModifier('agni_totem_modifier').GetNameWithTooltip] en lugar de [GetModifier('dragon_totem_modifier').GetNameWithTooltip] como [pack_totem|E]."
+ doctrine_parameter_gain_fire_immunity: "Obtienes inmunidad al [fire_damage_short_with_icon|E]."
 
  tenet_lords_rivers_name: "Señores de los Ríos"
  tenet_lords_rivers_desc: "Muchos Zhong Lung eligen vivir junto a los grandes ríos de Zhong Guo. La Corriente de Agua ejerce un dominio aterrador sobre los ríos; un Mokolé joven normalmente tendría dificultades para controlar un pequeño arroyo, mientras que un Dragón movería un río entero.\nLos Dragones se contienen en gran medida al ejercer estos poderes, pues de lo contrario tendría consecuencias catastróficas para la tierra."
- doctrine_parameter_gnosis_from_river_provinces: "Los [counties|E] Ribereños poseídos de esta fe otorgan Regeneración de $POD_energy_gnosis$: #P 2.5%#!."
- doctrine_parameter_reduces_flood_weather_cost: "Reduce el coste de la Magia del Clima #V Inundación#!."
+ doctrine_parameter_gnosis_from_river_provinces: "Los [counties|E] ribereños de tu propiedad que sigan esta fe otorgan Regeneración de $POD_energy_gnosis$: #P 2.5%#!"
+ doctrine_parameter_reduces_flood_weather_cost: "Reduce el coste de la Magia del Clima de #V Inundación#!"
 
  tenet_dragon_princes_name: "Príncipes Dragón"
  tenet_dragon_princes_desc: "Los Wani son los Príncipes Dragón de Zhong Guo, gobernando las nubes y el ascenso y descenso del agua, y presidiendo las casas reales de la humanidad. Los Zhong Lung, con su forma dracónica Archid, son los hijos de los Wani. Las otras razas a veces lo discuten, hasta que un rayo les hace reconsiderarlo."
- doctrine_parameter_can_learn_galliard_gifts: "Puede aprender Dones de [GetTrait('galliard').GetName( GetPlayer )] del [lifestyle|E] [lunar_auspicegifts_lifestyle|E]."
+ doctrine_parameter_can_learn_galliard_gifts: "Puede aprender Dones de [GetTrait('galliard').GetName( GetPlayer )] del [lifestyle|E] [lunar_auspicegifts_lifestyle|E]"
 
  tenet_outlast_world_name: "Sobrevivir al Mundo"
  tenet_outlast_world_desc: "No necesitamos a nadie más que a nosotros mismos. Nuestras pieles son gruesas, y nuestros Espíritus fuertes. El mundo puede quebrarse, pero nosotros seguiremos en pie."
@@ -1485,8 +1478,8 @@
  doctrine_parameter_pack_training_coterie_xp: "Entrenar con tu [GetPlayer.Custom('PODCoterie')] otorga Renombre $glossary_fera$ de $POD_fera_renown_wisdom$ a todos los miembros"
 
 
- tenet_sun_blessed_name: "Bendecidos por el Sol"
- tenet_sun_blessed_desc: "El Celestino Helios ha otorgado su favor solo a dos de los $glossary_fera$, los [GetTrait('mokole').GetName(GetNullCharacter)] y los [GetTrait('corax').GetName(GetNullCharacter)].\nEl calor del sol vigoriza el cuerpo y calma el alma. El sol es un cuerpo maravilloso, como un padre magnífico."
+ tenet_sun_blessed_name: "Bendecidos por Helios"
+ tenet_sun_blessed_desc: "$glossary_helios$ ha concedido su favor solo a dos de los $glossary_fera$: los [GetTrait('mokole').GetName(GetNullCharacter)] y los [GetTrait('corax').GetName(GetNullCharacter)].\nEl calor del sol vigoriza el cuerpo y calma el alma. El sol es un cuerpo maravilloso, como un padre magnífico."
 
  tenet_eastern_mokole_name: "Mokolé de Oriente"
  tenet_eastern_mokole_desc: "Los Mokolé de Asia han aprendido a adaptarse a las numerosas creencias mortales y sobrenaturales que impregnan las tierras. Aunque siguen creyendo que su propia fe es muy superior, están dispuestos a considerar las creencias de las razas más jóvenes."
@@ -1537,19 +1530,19 @@
  doctrine_fera_litany_group_name: "Leyes Fera"
 
  doctrine_fera_werewolf_litany_name: "Letanía"
- doctrine_fera_werewolf_litany_desc: "Las leyes del Pueblo son antiguas. Sus tradiciones varían de tribu a tribu, pero todos los Garou deben recordar y respetar el código legal central llamado la Letanía. En su forma completa, es tanto un poema épico como un código legal. Aunque hacen falta los mayores eruditos para dominar la Letanía por entero, la mayoría de los hombres lobo la aprenden en forma de sus preceptos básicos. Cada precepto tiene una base práctica, pero no todos se consideran universalmente morales sin cuestionamiento."
+ doctrine_fera_werewolf_litany_desc: "Las leyes del Pueblo son antiguas. Sus tradiciones varían de tribu a tribu, pero todos los Garou deben recordar y respetar el código legal central llamado $glossary_werewolf_litany$. En su forma completa, es tanto un poema épico como un código legal. Aunque hacen falta los mayores eruditos para dominar la Letanía por entero, la mayoría de los hombres lobo la aprenden en forma de sus preceptos básicos. Cada precepto tiene una base práctica, pero no todos se consideran universalmente morales, sin discusión."
  doctrine_parameter_hostility_override_doctrine_fera_werewolf_litany: "Las [faiths|E] con [GetFaithDoctrine('doctrine_fera_werewolf_litany').GetBaseName] se consideran [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
 
  doctrine_fera_werewolf_dark_litany_name: "Letanía Oscura"
- doctrine_fera_werewolf_dark_litany_desc: "La Letanía Oscura es la Letanía del $glossary_wyrm$, seguida por los Danzantes de la Espiral Negra. Sirve a la Voluntad del Wyrm. Respeta la Fuerza del Poderoso. Todo lo que no está Prohibido está Permitido. Entrégate a tus Deseos. A pesar de la percepción de las Espirales Negras como una tribu de caos sin ley, su Letanía a menudo se cumple con más rigor que la de las Naciones Garou."
+ doctrine_fera_werewolf_dark_litany_desc: "El $glossary_werewolf_dark_litany$ es la $glossary_werewolf_litany$ del $glossary_wyrm$, seguida por los Danzantes de la Espiral Negra. A pesar de que se vea a las Espirales Negras como una tribu de caos sin ley, su Letanía suele cumplirse con más rigor que la de las Naciones Garou."
  doctrine_parameter_hostility_override_doctrine_fera_werewolf_dark_litany: "Las [faiths|E] con [GetFaithDoctrine('doctrine_fera_werewolf_dark_litany').GetBaseName] se consideran [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]" 
 
  doctrine_fera_bastet_karoush_name: "Karoush"
- doctrine_fera_bastet_karoush_desc: "El Karoush es el código de leyes de los hombres gato, similar a la Letanía de los Garou. Transmitidas por sus antepasados, estas leyes son más grandes que cualquier Bastet y superiores a cualquier rango o título. Son sus códigos de honor, y los Bastet creen que los separan de la humanidad, protegiéndolos de los errores humanos. El Karoush es el código creado por sus antepasados, la Ley de la Luna y el Sol, la Ley de la Forja de los Secretos y la Ley del Cambio: Hónrate a Ti Mismo, Honra tu Palabra, Honra a los Tuyos y a tu Especie, Honra tu Tierra y Honra tu Silencio."
+ doctrine_fera_bastet_karoush_desc: "$glossary_bastet_karoush$ es el código de leyes de los hombres gato, similar a la $glossary_werewolf_litany$ de los Garou. Transmitidas por sus antepasados, estas leyes son más grandes que cualquier Bastet y superiores a cualquier rango o título. Son sus códigos de honor, y los Bastet creen que los separan de la humanidad y los protegen de los errores humanos. El Karoush es el código que crearon sus antepasados: la Ley de la Luna y el Sol, la Ley de la Forja de los Secretos y la Ley del Cambio."
  doctrine_parameter_hostility_override_doctrine_fera_bastet_karoush: "Las [faiths|E] con [GetFaithDoctrine('doctrine_fera_bastet_karoush').GetBaseName] se consideran [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
 
  doctrine_fera_mokole_duties_name: "Los Deberes"
- doctrine_fera_mokole_duties_desc: "Helios ha dado a sus Hijos una serie de imperativos morales y personales por los que regir sus vidas. Llamados los Deberes, son el precursor Mokolé de la Letanía Garou. Cada Deber está vinculado a un auspicio solar, aunque todos los Mokolé están sujetos a ellos. Las violaciones de los Deberes merecen reprimendas, pérdida de estatus y otros castigos. Los infractores graves son devorados. Los Soles de Mediodía hacen cumplir las leyes, aunque incluso los Soles de Medianoche reprenderán a un Mokolé negligente. "
+ doctrine_fera_mokole_duties_desc: "$glossary_helios$ ha dado a sus Hijos una serie de imperativos morales y personales por los que regir su vida. Llamados $glossary_mokole_duties$, son el precursor mokolé de la $glossary_werewolf_litany$ garou. Cada Deber está ligado a un auspicio solar, aunque todos los Mokolé están sujetos a ellos. Quebrantar los Deberes merece reprimendas, pérdida de estatus y otros castigos. A los infractores graves se los devora. Los Soles de Mediodía hacen cumplir las leyes, aunque incluso los Soles de Medianoche reprenderán a un Mokolé negligente. "
  doctrine_parameter_hostility_override_doctrine_fera_mokole_duties: "Las [faiths|E] con [GetFaithDoctrine('doctrine_fera_mokole_duties').GetBaseName] se consideran [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
 
 
@@ -1563,11 +1556,11 @@
  doctrine_fera_pact_group_name: "Pactos Fera"
 
  doctrine_fera_werewolf_pact_name: "Pactos Garou"
- doctrine_fera_werewolf_pact_desc: "Por una razón u otra, los adherentes de esta fe han formado vínculos estrechos con los #TOOLTIP:GAME_TRAIT,werewolf,[GetNullCharacter] #L Garou#!. Entablar amistad con las tribus salvajes y brutales no es fácil, pero, cuando lo consiguen, se toman sus juramentos muy en serio."
+ doctrine_fera_werewolf_pact_desc: "Por una razón u otra, los adherentes de esta fe han estrechado lazos con los $POD_splat_garou$. Las tribus salvajes y brutales no son fáciles de ganar como amigas, pero, cuando lo consiguen, se toman sus juramentos muy en serio."
  doctrine_parameter_hostility_override_doctrine_fera_werewolf_pact: "Las [faiths|E] con [GetFaithDoctrine('doctrine_fera_werewolf_pact').GetBaseName] se consideran [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
 
  doctrine_fera_bastet_pact_name: "Pactos Bastet"
- doctrine_fera_bastet_pact_desc: "Por una razón u otra, los adherentes de esta fe han formado vínculos estrechos con los [GetTrait('bastet').GetName( GetPlayer )]. La naturaleza inquisitiva de los hombres gato les ha granjeado muchos amigos inesperados... aunque algunos resultaron no ser nada fiables."
+ doctrine_fera_bastet_pact_desc: "Por una razón u otra, los adherentes de esta fe han estrechado lazos con los [GetTrait('bastet').GetName( GetPlayer )]. La naturaleza inquisitiva de los hombres gato les ha granjeado muchos amigos inesperados... aunque algunos resultaron no ser nada de fiar."
  doctrine_parameter_hostility_override_doctrine_fera_bastet_pact: "Las [faiths|E] con [GetFaithDoctrine('doctrine_fera_bastet_pact').GetBaseName] se consideran [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
 
 
@@ -1589,7 +1582,7 @@
 
  bastet_nation_tolerance_name: ""
  special_doctrine_bastet_nation_name: "Nación Bastet"
- special_doctrine_bastet_nation_desc: "La Madre Seline observa con orgullo cómo sus amados hijos felinos por fin se unen como uno solo."
+ special_doctrine_bastet_nation_desc: "La Madre $glossary_luna_seline$ observa con orgullo cómo sus amados hijos felinos por fin se unen como uno solo."
  doctrine_parameter_hostility_override_special_doctrine_bastet_nation: "Otras [faiths|E] que tengan la [doctrine|E] [GetFaithDoctrine('special_doctrine_bastet_nation').GetBaseName] se consideran [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V] en lugar de [faith_astray|V]"  
 
  zhong_guo_reward_doctrine_name: ""
@@ -1609,11 +1602,16 @@
  masterless_ghoul_order_of_st_panteleimon_doctrine_name: ""
  special_masterless_ghoul_order_of_st_panteleimon_doctrine_name: "Aliados con la Orden de San Panteleimón"
  special_masterless_ghoul_order_of_st_panteleimon_doctrine_desc: "El que fuera brazo burocrático de la Iglesia de Caín sigue siendo, en cierto modo, hereje, pero ahora son nuestros herejes."
- doctrine_parameter_masterless_ghoul_order_of_st_panteleimon_parametr: "Tu [court_chaplain|E] es #P 100%#! más rápido en la [councillor_task|E] de [convert_county|E]."
+ doctrine_parameter_masterless_ghoul_order_of_st_panteleimon_parametr: "Tu [court_chaplain|E] es #P 100%#! más rápido en la [councillor_task|E] de [convert_county|E]"
 
  masterless_ghoul_haqims_assassins_doctrine_name: ""
  special_masterless_ghoul_haqims_assassins_doctrine_name: "Aliados con los "Falsos" Asesinos de Haqim"
  special_masterless_ghoul_haqims_assassins_doctrine_desc: "Sea por suerte o por habilidad, está claro que queremos tener de nuestro lado a alguien que logró frustrar a los Assamitas durante tanto tiempo."
+ doctrine_parameter_conquest_wars_forbidden: "No puede declarar Guerras de [GetCasusBelliType('county_conquest_cb').GetName]"
+ doctrine_parameter_pod_access_hostile_holy_wars: "Pueden declararse [holy_wars|E] contra fes $hostility_hostile_tooltippable$ además de contra las $hostility_evil_tooltippable$"
+ doctrine_category_splat: "Tolerancias de [splat|E]"
+ doctrine_category_vampire: "Doctrinas de la Sangre"
+ doctrine_category_subsplat: "Tolerancias de [subsplat|E]"
  
  #fury_of_the_wyld_doctrine_name: ""
  #special_fury_of_the_wyld_doctrine_name: "Fury of the Wyld"

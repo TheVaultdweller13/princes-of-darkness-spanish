@@ -3,7 +3,7 @@
  
   epidemic_crimson_fever: "Fiebre carmesí"
   disease_crimson_fever: "fiebre carmesí."
-  health.2101.crimson_fever_outbreak.desc: "Una enfermedad sobrenatural que se manifiesta en los Catayanos cuyos aspectos Yang se han desequilibrado. Aunque es una enfermedad bastante rara, se rumorea que es extremadamente contagiosa. Su rareza también significa que las curas potenciales nunca han sido exploradas realmente, lo que la convierte en una perspectiva temible de tratar.\n\nUn caso peligroso de lo que parece ser fiebre carmesí se ha infiltrado en tu corte. Erupciones, tos y fiebre acosan a los afligidos y podría ser solo el principio."
+  health.2101.crimson_fever_outbreak.desc: "Una enfermedad sobrenatural que se manifiesta en los Cataínos cuyos aspectos Yang se han desequilibrado. Aunque es una enfermedad bastante rara, se rumorea que es extremadamente contagiosa. Su rareza implica también que nunca se han explorado de verdad posibles curas, lo que la convierte en una perspectiva temible de afrontar.\n\nUn caso peligroso de lo que parece ser fiebre carmesí se ha infiltrado en tu corte. Erupciones, tos y fiebre azotan a los afligidos, y podría ser solo el principio."
   health.2101.crimson_fever_spreads.desc: "Otro caso de fiebre carmesí ha asomado su fea cabeza."
   
   POD_epidemic.1001.t: "[SCOPE.Custom('EventTitleDisease')]: Fiebre carmesí"
@@ -54,12 +54,12 @@
   POD_epidemic.1201.a: "¡Oh, [ROOT.Char.GetFaith.HealthGodName]! ¡Sálvame de esta pesadilla!"
  
   POD_epidemic.1202.t: "[SCOPE.Custom('EventTitleDisease')]: Contra todo pronóstico"
-  POD_epidemic.1202.desc: "Parece como si la Muerte hubiera pasado por mi puerta, se hubiera demorado junto a mi cama, pero al final hubiera decidido dejarme vivir. Nunca olvidaré los tormentos de [ROOT.Char.GetFaith.DeathDeityHerHis|U] toque, pero [ROOT.Char.GetFaith.DeathDeitySheHe|U] ha abierto mis ojos al milagro del presente.\n\n La plaga demoníaca se ha cobrado muchas almas, pero yo no seré una de ellas."
+  POD_epidemic.1202.desc: "Parece como si la Muerte hubiera pasado por mi puerta y se hubiera demorado junto a mi cama, pero al final hubiera decidido dejarme vivir. Nunca olvidaré los tormentos de [ROOT.Char.GetFaith.DeathDeityHerHis|U] toque, pero [ROOT.Char.GetFaith.DeathDeitySheHe|U] ha abierto mis ojos al milagro del presente.\n\nLa plaga demoníaca se ha cobrado muchas almas, pero yo no seré una de ellas."
   POD_epidemic.1202.a: "¡Alabado sea [ROOT.Char.GetFaith.HealthGodName] por este milagro!"
   POD_epidemic.1202.a.tt: "Ahora soy inmune a la [GetTrait('demonic_plague').GetName( GetNullCharacter )]"
   
   epidemic_gift_of_melancholia: "Don de la melancolía"
-  disease_gift_of_melancholia: "don de la melancolía"
+  disease_gift_of_melancholia: "don de la melancolía."
   health.2101.gift_of_melancholia_outbreak.desc: "El Don de la Melancolía inflige una virulenta enfermedad debilitante tanto a mortales como a cainitas. Ambos se ven afectados por una dolencia que causa mareos, debilidad, malestar y náuseas. La enfermedad es altamente contagiosa entre los mortales, que pueden propagarla entre sí por mera proximidad. Un vampiro debe ser el objetivo directo del poder o alimentarse de un mortal infectado para contraerla. Un vampiro infectado, sin embargo, propagará la plaga a todos aquellos de los que se alimente hasta que se cure.\n\nRecientemente se ha descubierto un caso en tu reino."
   health.2101.gift_of_melancholia_spreads.desc: "Otra alma más ha sido maldita con la enfermedad."
   
@@ -76,16 +76,16 @@
   
   epidemic_flaying_plague: "Plaga desolladora"
   disease_flaying_plague: "plaga desolladora."
-  health.2101.flaying_plague_outbreak.desc: "No todos los enemigos de los Garou pueden ser combatidos con colmillos y garras. En el invierno de 1229, los hombres lobo de Lituania fueron víctimas de una fiebre. Al principio parecía una extraña variante de la tisis, luego aparecieron los forúnculos, después la piel se desprendió, agónicamente, de los huesos. Toda la población Garou de la región murió y la enfermedad empezó a extenderse hacia el oeste. Cientos de Garou y parientes mueren a su paso mientras los Teúrgos apenas parecen capaces de contenerla.\n\nY ahora, ha venido a reclamar su tributo en tu reino."
+  health.2101.flaying_plague_outbreak.desc: "No todos los enemigos de los Garou pueden combatirse con colmillos y garras. En el invierno de 1229, los hombres lobo de Lituania fueron víctimas de unas fiebres. Al principio parecía una extraña variante de la tisis; luego aparecieron los forúnculos y después la piel se desprendió, agónicamente, de los huesos. Toda la población Garou de la región murió y la enfermedad empezó a extenderse hacia el oeste. Cientos de Garou y de Parentela mueren a su paso mientras los Teúrgos apenas parecen capaces de contenerla.\n\nY ahora ha venido a reclamar su tributo en tu señorío."
   health.2101.flaying_plague_spreads.desc: "¡Debemos encontrar la causa!"
  
   POD_epidemic.1401.t: "[SCOPE.Custom('EventTitleDisease')]: El toque del Diablo"
-  POD_epidemic.1401.desc: "No todos los enemigos de los Garou pueden ser combatidos con colmillos y garras. En el invierno de 1229, los hombres lobo de Lituania fueron víctimas de una fiebre. Al principio parecía una extraña variante de la tisis, luego aparecieron los forúnculos, después la piel se desprendió, agónicamente, de los huesos. Toda la población Garou de la región murió y la enfermedad empezó a extenderse hacia el oeste. Cientos de Garou y parientes mueren a su paso mientras los Teúrgos apenas parecen capaces de contenerla.\n\nPero la plaga ya no es solo una historia de miedo. Con cuidado, presiono mis dedos contra el bulto en mi axila. Una fuerza oscura y mortal está mancillando mi carne, consumiéndome mientras aún respiro."
+  POD_epidemic.1401.desc: "No todos los enemigos de los Garou pueden combatirse con colmillos y garras. En el invierno de 1229, los hombres lobo de Lituania fueron víctimas de unas fiebres. Al principio parecía una extraña variante de la tisis; luego aparecieron los forúnculos y después la piel se desprendió, agónicamente, de los huesos. Toda la población Garou de la región murió y la enfermedad empezó a extenderse hacia el oeste. Cientos de Garou y de Parentela mueren a su paso mientras los Teúrgos apenas parecen capaces de contenerla.\n\nPero la plaga ya no es solo una historia de miedo. Con cuidado, presiono los dedos contra el bulto de mi axila. Una fuerza oscura y mortal me mancilla la carne y me consume mientras aún respiro."
   POD_epidemic.1401.court_physician.desc: "\n\n\"Mi [ROOT.Char.GetLadyLord], haré todo lo que esté en mi mano, pero podría ser sabio prepararse para lo peor...\""
   POD_epidemic.1401.a: "¡Oh, [ROOT.Char.GetFaith.HealthGodName]! ¡Sálvame de esta pesadilla!"
  
   POD_epidemic.1402.t: "[SCOPE.Custom('EventTitleDisease')]: Contra todo pronóstico"
-  POD_epidemic.1402.desc: "Parece como si [ROOT.Char.GetFaith.DeathDeityName] hubiera pasado por mi puerta, se hubiera demorado junto a mi cama, pero al final hubiera decidido dejarme vivir. Nunca olvidaré los tormentos de [ROOT.Char.GetFaith.DeathDeityHerHis|U] toque, pero [ROOT.Char.GetFaith.DeathDeitySheHe|U] ha abierto mis ojos al milagro de la vida.\n\n La plaga se ha cobrado muchas almas, pero yo no seré una de ellas."
+  POD_epidemic.1402.desc: "Parece como si [ROOT.Char.GetFaith.DeathDeityName] hubiera pasado por mi puerta y se hubiera demorado junto a mi cama, pero al final hubiera decidido dejarme vivir. Nunca olvidaré los tormentos de [ROOT.Char.GetFaith.DeathDeityHerHis|U] toque, pero [ROOT.Char.GetFaith.DeathDeitySheHe|U] ha abierto mis ojos al milagro de la vida.\n\nLa plaga se ha cobrado muchas almas, pero yo no seré una de ellas."
   POD_epidemic.1402.a: "¡Alabado sea [ROOT.Char.GetFaith.HealthGodName] por este milagro!"
   POD_epidemic.1402.a.tt: "Ahora soy inmune a la [GetTrait('flaying_plague').GetName( GetNullCharacter )]"
   

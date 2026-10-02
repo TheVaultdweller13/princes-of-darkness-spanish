@@ -1,0 +1,132 @@
+﻿l_spanish:
+ game_concept_slivers_lifestyle: "Fragmentos"
+ game_concept_slivers_lifestyle_desc: "Los Inanimae empuñan Fragmentos en lugar de Artes. A diferencia de las Artes Kithain, que pueden ser algo ordenadas y estructuradas mediante cantrips, solo es posible Desatar Fragmentos. Aprender un Fragmento concreto significa que el personaje obtiene una comprensión de lo que supone pertenecer a ese Imperio y puede obtener una recompensa de él."
+ 
+ slivers_lifestyle_name: "$game_concept_slivers_lifestyle$"
+ slivers_lifestyle_desc: "$game_concept_slivers_lifestyle_desc$"
+ slivers_lifestyle_highlight_desc: ""
+ monthly_slivers_lifestyle_xp_gain_mult: "[experience|E] mensual del [lifestyle|E] de Fragmentos"
+ 
+ slivers_aquis_focus: "Enfoque en Aquis"
+ slivers_aquis_focus_modifier: "[GetFocus('slivers_aquis_focus').GetName]"
+ slivers_aquis_focus_desc: "El Arte del agua y sus propiedades reparadoras."
+ slivers_aquis_focus_effect_desc: "Centrarse en Aquis otorga:"
+ 
+ slivers_petros_focus: "Enfoque en Petros"
+ slivers_petros_focus_modifier: "[GetFocus('slivers_petros_focus').GetName]"
+ slivers_petros_focus_desc: "El Arte de la tierra y la destreza física."
+ slivers_petros_focus_effect_desc: "Centrarse en Petros otorga:"
+ 
+ slivers_pyros_focus: "Enfoque en Pyros"
+ slivers_pyros_focus_modifier: "[GetFocus('slivers_pyros_focus').GetName]"
+ slivers_pyros_focus_desc: "El Arte del fuego y la pasión."
+ slivers_pyros_focus_effect_desc: "Centrarse en Pyros otorga:"
+ 
+ slivers_stratus_focus: "Enfoque en Stratus"
+ slivers_stratus_focus_modifier: "[GetFocus('slivers_stratus_focus').GetName]"
+ slivers_stratus_focus_desc: "El Arte del viento y la velocidad desinhibida."
+ slivers_stratus_focus_effect_desc: "Centrarse en Stratus otorga:"
+ 
+ slivers_verdage_focus: "Enfoque en Verdage"
+ slivers_verdage_focus_modifier: "[GetFocus('slivers_verdage_focus').GetName]"
+ slivers_verdage_focus_desc: "El Arte de los árboles y la comunicación."
+ slivers_verdage_focus_effect_desc: "Centrarse en Verdage otorga:"
+ 
+ GAINS_SLIVERS_LIFESTYLE_XP: "Obtiene $VALUE|V0$ de Experiencia de $slivers_lifestyle$"
+ GAINED_SLIVERS_LIFESTYLE_XP: "Obtuvo $VALUE|V0$ de Experiencia de $slivers_lifestyle$"
+ I_GAIN_SLIVERS_LIFESTYLE_XP: "Obtienes $VALUE|V0$ de Experiencia de $slivers_lifestyle$"
+ I_GAINED_SLIVERS_LIFESTYLE_XP: "Obtuviste $VALUE|V0$ de Experiencia de $slivers_lifestyle$"
+ TARGET_GAINS_SLIVERS_LIFESTYLE_XP: "[CHARACTER.GetShortUIName] obtiene $VALUE|V0$ de Experiencia de $slivers_lifestyle$"
+ TARGET_GAINED_SLIVERS_LIFESTYLE_XP: "[CHARACTER.GetShortUIName] obtuvo $VALUE|V0$ de Experiencia de $slivers_lifestyle$"
+
+ GAINS_A_SLIVERS_LIFESTYLE_PERKPOINT: "Obtiene $VALUE|V0$ desbloqueo de [perk|E] de $slivers_lifestyle$"
+ GAINED_A_SLIVERS_LIFESTYLE_PERKPOINT: "Obtuvo $VALUE|V0$ desbloqueo de [perk|E] de $slivers_lifestyle$"
+ I_GAIN_A_SLIVERS_LIFESTYLE_PERKPOINT: "Obtienes $VALUE|V0$ desbloqueo de [perk|E] de $slivers_lifestyle$"
+ I_GAINED_A_SLIVERS_LIFESTYLE_PERKPOINT: "Obtuviste $VALUE|V0$ desbloqueo de [perk|E] de $slivers_lifestyle$"
+ TARGET_GAINS_A_SLIVERS_LIFESTYLE_PERKPOINT: "[CHARACTER.GetShortUIName] obtiene $VALUE|V0$ desbloqueo de [perk|E] de $slivers_lifestyle$"
+ TARGET_GAINED_A_SLIVERS_LIFESTYLE_PERKPOINT: "[CHARACTER.GetShortUIName] obtuvo $VALUE|V0$ desbloqueo de [perk|E] de $slivers_lifestyle$"
+ 
+ SLIVERS_LIFESTYLE_PERK_POINTS_TRIGGER: "Puntos de ventaja del estilo de vida de Fragmentos: $NUM|V0$"
+ SLIVERS_LIFESTYLE_XP_TRIGGER: "Experiencia del estilo de vida de Fragmentos: $NUM|V0$"
+ 
+ aquis_visible: "Aquis"
+ petros_visible: "Petros"
+ pyros_visible: "Pyros"
+ stratus_visible: "Stratus"
+ verdage_visible: "Verdage"
+
+ sliver_1_name: "Descontrolado"
+ sliver_2_name: "Inestable"
+ sliver_3_name: "Semiestable"
+ sliver_4_name: "Estable"
+ sliver_5_name: "Perfecto"
+
+ slivers_aquis_uncontrolled_perk_name: "Aquis $sliver_1_name$"
+ slivers_aquis_unstable_perk_name: "Aquis $sliver_2_name$"
+ slivers_aquis_semi_stable_perk_name: "Aquis $sliver_3_name$"
+ slivers_aquis_stable_perk_name: "Aquis $sliver_4_name$"
+ slivers_aquis_perfect_perk_name: "Aquis $sliver_5_name$"
+
+ sliver_aquis_flavor: "El agua es vida. Es necesaria para sostener a mortales, animales y plantas. Divide y unifica, y su forma nunca es constante, siempre cambia para adaptarse a lo que (y si algo) la contiene. A través de Aquis, los inanimae pueden infundir esperanza mientras la duda se lava, o evocar el duelo por perder a alguien en el mar. Pueden curar con las lágrimas creadas por este hechizo y herir ahogando a sus víctimas. Les permite romper ilusiones y espejismos y dejar la verdad al desnudo ante todos. A través de los reflejos en el agua, ven el pasado y los sucesos lejanos mientras ocurren. Los Aquis controlan las aguas: las alzan, las dividen, las congelan, las funden e incluso las evaporan. Se alza en defensa para empujar a los enemigos hacia atrás y aplastarlos contra el suelo y oculta el movimiento tras la bruma. Cura heridas agravadas en el Ensueño Profundo y calma las emociones intensificadas por Pyros."
+
+ SLIVERS_AQUIS_UNCONTROLLED_PERK_EFFECT: "Mejora los [cantrips|E] [GetTrait('art_aquis').GetName(GetPlayer)] reduciendo en #P 1#! tanto la dificultad de su [bunk|E] como el coste de Glamour #weak (coste mínimo de 1 de Glamour)#!\nMejora el [passive_cantrip|E] [GetTrait('art_aquis').GetName(GetPlayer)] otorgando en su lugar [GetModifier('cantrip_uncontrolled_aquis_modifier').GetNameWithTooltip].\n#flavor $sliver_aquis_flavor$#!"
+ SLIVERS_AQUIS_UNSTABLE_PERK_EFFECT: "Mejora los [cantrips|E] [GetTrait('art_aquis').GetName(GetPlayer)] reduciendo en #P 1#! tanto la dificultad de su [bunk|E] como el coste de Glamour #weak (coste mínimo de 1 de Glamour)#!\nMejora el [passive_cantrip|E] [GetTrait('art_aquis').GetName(GetPlayer)] otorgando en su lugar [GetModifier('cantrip_unstable_aquis_modifier').GetNameWithTooltip].\n[PODUnlocksCombatMove('POD_combat_move_fae_aquis_hold')].\n#flavor $sliver_aquis_flavor$#!"
+ SLIVERS_AQUIS_SEMI_STABLE_PERK_EFFECT: "Mejora los [cantrips|E] [GetTrait('art_aquis').GetName(GetPlayer)] reduciendo en #P 1#! tanto la dificultad de su [bunk|E] como el coste de Glamour #weak (coste mínimo de 1 de Glamour)#!\nMejora el [passive_cantrip|E] [GetTrait('art_aquis').GetName(GetPlayer)] otorgando en su lugar [GetModifier('cantrip_semi_stable_aquis_modifier').GetNameWithTooltip].\n[PODUnlocksCombatMove('POD_combat_move_fae_aquis_tempus_fugit')].\n#flavor $sliver_aquis_flavor$#!"
+ SLIVERS_AQUIS_STABLE_PERK_EFFECT: "Mejora los [cantrips|E] [GetTrait('art_aquis').GetName(GetPlayer)] reduciendo en #P 1#! tanto la dificultad de su [bunk|E] como el coste de Glamour #weak (coste mínimo de 1 de Glamour)#!\nMejora el [passive_cantrip|E] [GetTrait('art_aquis').GetName(GetPlayer)] otorgando en su lugar [GetModifier('cantrip_stable_aquis_modifier').GetNameWithTooltip].\n#flavor $sliver_aquis_flavor$#!"
+ SLIVERS_AQUIS_PERFECT_PERK_EFFECT: "Mejora los [cantrips|E] [GetTrait('art_aquis').GetName(GetPlayer)] reduciendo en #P 1#! tanto la dificultad de su [bunk|E] como el coste de Glamour #weak (coste mínimo de 1 de Glamour)#!\nMejora el [passive_cantrip|E] [GetTrait('art_aquis').GetName(GetPlayer)] otorgando en su lugar [GetModifier('cantrip_perfect_aquis_modifier').GetNameWithTooltip].\n[PODUnlocksCombatMove('POD_combat_move_fae_aquis_healing_waters')].\n#flavor $sliver_aquis_flavor$#!"
+
+ slivers_petros_uncontrolled_perk_name: "Petros $sliver_1_name$"
+ slivers_petros_unstable_perk_name: "Petros $sliver_2_name$"
+ slivers_petros_semi_stable_perk_name: "Petros $sliver_3_name$"
+ slivers_petros_stable_perk_name: "Petros $sliver_4_name$"
+ slivers_petros_perfect_perk_name: "Petros $sliver_5_name$"
+
+ sliver_petros_flavor: "Los Petros aportan la resistencia, la firmeza, la durabilidad y la fuerza que existen en las rocas y en la propia tierra. Solo con las manos, el lanzador es capaz de esculpir rocas en estatuas de tamaño natural en unas pocas horas, de cambiar la esencia misma del tipo de suelo o roca que es algo y hasta de transmutar minerales (pero nunca en hierro). Crea armaduras de minerales y cambia la masa y la forma de la tierra, haciendo que se alce del suelo como muros. Petros conecta a su usuario con los tiempos antiguos, lo que permite acceder a saberes e información largamente perdidos para ayudar en apuros actuales. Los Glomes suelen usar el Fragmento para imponer juramentos y contratos, atándolos con la durabilidad de la propia piedra y haciendo que los haga cumplir el Ensueño. Aunque no puede crear otras emociones, Petros es capaz de infundir devoción en otros, lo que lo convierte en una magia excelente para líderes de toda clase."
+
+ SLIVERS_PETROS_UNCONTROLLED_PERK_EFFECT: "Mejora los [cantrips|E] [GetTrait('art_petros').GetName(GetPlayer)] reduciendo en #P 1#! tanto la dificultad de su [bunk|E] como el coste de Glamour #weak (coste mínimo de 1 de Glamour)#!, además de mejorar los [modifiers|E] y el [gold|E] obtenidos.\nMejora los [crafting_nodes|E] básicos de [crafting_forging|E].\n#flavor $sliver_petros_flavor$#!"
+ SLIVERS_PETROS_UNSTABLE_PERK_EFFECT: "Mejora los [cantrips|E] [GetTrait('art_petros').GetName(GetPlayer)] reduciendo en #P 1#! tanto la dificultad de su [bunk|E] como el coste de Glamour #weak (coste mínimo de 1 de Glamour)#!, además de mejorar los [modifiers|E] y el [gold|E] obtenidos.\nMejora los [crafting_nodes|E] básicos de [crafting_forging|E].\n[PODUnlocksCombatMove('POD_combat_move_fae_petros_stoneskin')].\n#flavor $sliver_petros_flavor$#!"
+ SLIVERS_PETROS_SEMI_STABLE_PERK_EFFECT: "Mejora los [cantrips|E] [GetTrait('art_petros').GetName(GetPlayer)] reduciendo en #P 1#! tanto la dificultad de su [bunk|E] como el coste de Glamour #weak (coste mínimo de 1 de Glamour)#!, además de mejorar los [modifiers|E] y el [gold|E] obtenidos.\nMejora los [crafting_nodes|E] básicos de [crafting_forging|E].\n[PODUnlocksCombatMove('POD_combat_move_fae_petros_ironarm')].\n#flavor $sliver_petros_flavor$#!"
+ SLIVERS_PETROS_STABLE_PERK_EFFECT: "Mejora los [cantrips|E] [GetTrait('art_petros').GetName(GetPlayer)] reduciendo en #P 1#! tanto la dificultad de su [bunk|E] como el coste de Glamour #weak (coste mínimo de 1 de Glamour)#!, además de mejorar los [modifiers|E] y el [gold|E] obtenidos.\nMejora los [crafting_nodes|E] básicos de [crafting_forging|E].\n#flavor $sliver_petros_flavor$#!"
+ SLIVERS_PETROS_PERFECT_PERK_EFFECT: "Casillas de [POD_health_track|E]: #P +1#!.\nMejora los [cantrips|E] [GetTrait('art_petros').GetName(GetPlayer)] reduciendo en #P 1#! tanto la dificultad de su [bunk|E] como el coste de Glamour #weak (coste mínimo de 1 de Glamour)#!, además de mejorar los [modifiers|E] y el [gold|E] obtenidos.\nMejora los [crafting_nodes|E] básicos de [crafting_forging|E].\n[PODUnlocksCombatMove('POD_combat_move_fae_petros_quake')].\n#flavor $sliver_petros_flavor$#!"
+
+ slivers_pyros_uncontrolled_perk_name: "Pyros $sliver_1_name$"
+ slivers_pyros_unstable_perk_name: "Pyros $sliver_2_name$"
+ slivers_pyros_semi_stable_perk_name: "Pyros $sliver_3_name$"
+ slivers_pyros_stable_perk_name: "Pyros $sliver_4_name$"
+ slivers_pyros_perfect_perk_name: "Pyros $sliver_5_name$"
+
+ sliver_pyros_flavor: "El fuego arde. Esa es su naturaleza y, cuando lo hace sin control, ofrece una intensidad, una luz y un calor extremos. Pyros revela las mentiras por el desvío y el subterfugio que son, arrojando luz sobre las sombras de la vida. Crea fuego, lo controla y lo redirige, pero nunca sofoca las llamas, pues el fuego debe arder. Envuelve los puños y hace que los nudillos desnudos infligan daño letal, y realza el Glamour de los Tesoros, convirtiendo su daño en agravado. Las llamas se alzan para defender a su portador y cegar a los oponentes, dificultándoles acertar sus objetivos o facilitando escapar tras ser detectado. La intensidad del fuego arde en el corazón de todo lo vivo (e incluso de algunos Pródigos no-muertos), y Pyros realza el odio y el amor hasta alturas tales que acaba consumiendo al objetivo e infundiéndole paranoia o miedo al rechazo. Nunca trata zonas grises emocionales y lleva siempre los efectos al extremo, o causa un entumecimiento completo, como si la llama del interior del alma parpadeara y muriera."
+ 
+ SLIVERS_PYROS_UNCONTROLLED_PERK_EFFECT: "Mejora los [cantrips|E] [GetTrait('art_pyros').GetName(GetPlayer)] reduciendo en #P 1#! tanto la dificultad de su [bunk|E] como el coste de Glamour #weak (coste mínimo de 1 de Glamour)#!\n[PODUnlocksCombatMove('POD_combat_move_fae_pyros_flame')].\n#flavor $sliver_pyros_flavor$#!"
+ SLIVERS_PYROS_UNSTABLE_PERK_EFFECT: "Mejora los [cantrips|E] [GetTrait('art_pyros').GetName(GetPlayer)] reduciendo en #P 1#! tanto la dificultad de su [bunk|E] como el coste de Glamour #weak (coste mínimo de 1 de Glamour)#!\n[PODUnlocksCombatMove('POD_combat_move_fae_pyros_tortured_heart')].\n#flavor $sliver_pyros_flavor$#!"
+ SLIVERS_PYROS_SEMI_STABLE_PERK_EFFECT: "Mejora los [cantrips|E] [GetTrait('art_pyros').GetName(GetPlayer)] reduciendo en #P 1#! tanto la dificultad de su [bunk|E] como el coste de Glamour #weak (coste mínimo de 1 de Glamour)#!\n#flavor $sliver_pyros_flavor$#!"
+ SLIVERS_PYROS_STABLE_PERK_EFFECT: "Mejora los [cantrips|E] [GetTrait('art_pyros').GetName(GetPlayer)] reduciendo en #P 1#! tanto la dificultad de su [bunk|E] como el coste de Glamour #weak (coste mínimo de 1 de Glamour)#!\n#flavor $sliver_pyros_flavor$#!"
+ SLIVERS_PYROS_PERFECT_PERK_EFFECT: "$passive_cantrip_fae$ Inflige [GetPlayer.MakeScope.ScriptValue('slivers_pyros_perfect_perk_damage')] de [POD_aggravated_damage_with_box|E] a todos los [knights|E] enemigos.\nMejora los [cantrips|E] [GetTrait('art_pyros').GetName(GetPlayer)] reduciendo en #P 1#! tanto la dificultad de su [bunk|E] como el coste de Glamour #weak (coste mínimo de 1 de Glamour)#!\n[PODUnlocksCombatMove('POD_combat_move_fae_pyros_inferno')].\n#flavor $sliver_pyros_flavor$#!"
+
+ slivers_stratus_uncontrolled_perk_name: "Stratus $sliver_1_name$"
+ slivers_stratus_unstable_perk_name: "Stratus $sliver_2_name$"
+ slivers_stratus_semi_stable_perk_name: "Stratus $sliver_3_name$"
+ slivers_stratus_stable_perk_name: "Stratus $sliver_4_name$"
+ slivers_stratus_perfect_perk_name: "Stratus $sliver_5_name$"
+
+ sliver_stratus_flavor: "Stratus es la esencia del aire. Brisas tranquilas o tormentas rabiosas, nubes oscuras o cielos despejados, lluvia suave o tormentas eléctricas: todo cae en el dominio de esta magia. Al mismo tiempo, el viento también lleva mensajes para entregar o para escuchar a escondidas. Los susurros destinados a un individuo cobran fuerza como si se transmitieran por altavoces y los gritos se ahogan al instante cuando el aire se niega a transmitir sus ondas sonoras. Moverse puede ser una experiencia lenta o extremadamente rápida según cómo el phylum que Desata este Fragmento aplique su efecto mientras sus aliados atacan a sus enemigos. También crea ilusiones temporales, persuadiendo a las sombras para que oculten el movimiento y desvíen la atención y así permanecer ocultos con éxito cuando haga falta. Aunque puede crear Portales Salvajes si las cosas salen mal, Stratus también permite el teletransporte a distancias breves (como dentro de una ciudad o un rascacielos)."
+
+ SLIVERS_STRATUS_UNCONTROLLED_PERK_EFFECT: "Mejora los [cantrips|E] [GetTrait('art_stratus').GetName(GetPlayer)] reduciendo en #P 1#! tanto la dificultad de su [bunk|E] como el coste de Glamour #weak (coste mínimo de 1 de Glamour)#!\nMejora el [passive_cantrip|E] [GetTrait('art_stratus').GetName(GetPlayer)] otorgando en su lugar [GetModifier('cantrip_uncontrolled_stratus_modifier').GetNameWithTooltip].\n#flavor $sliver_stratus_flavor$#!"
+ SLIVERS_STRATUS_UNSTABLE_PERK_EFFECT: "Mejora los [cantrips|E] [GetTrait('art_stratus').GetName(GetPlayer)] reduciendo en #P 1#! tanto la dificultad de su [bunk|E] como el coste de Glamour #weak (coste mínimo de 1 de Glamour)#!\nMejora el [passive_cantrip|E] [GetTrait('art_stratus').GetName(GetPlayer)] otorgando en su lugar [GetModifier('cantrip_unstable_stratus_modifier').GetNameWithTooltip].\n[PODUnlocksCombatMove('POD_combat_move_fae_stratus_conceal_confuse')].\n#flavor $sliver_stratus_flavor$#!"
+ SLIVERS_STRATUS_SEMI_STABLE_PERK_EFFECT: "Mejora los [cantrips|E] [GetTrait('art_stratus').GetName(GetPlayer)] reduciendo en #P 1#! tanto la dificultad de su [bunk|E] como el coste de Glamour #weak (coste mínimo de 1 de Glamour)#!\nMejora el [passive_cantrip|E] [GetTrait('art_stratus').GetName(GetPlayer)] otorgando en su lugar [GetModifier('cantrip_semi_stable_stratus_modifier').GetNameWithTooltip].\n[PODUnlocksCombatMove('POD_combat_move_fae_stratus_flight')].\n#flavor $sliver_stratus_flavor$#!"
+ SLIVERS_STRATUS_STABLE_PERK_EFFECT: "Mejora los [cantrips|E] [GetTrait('art_stratus').GetName(GetPlayer)] reduciendo en #P 1#! tanto la dificultad de su [bunk|E] como el coste de Glamour #weak (coste mínimo de 1 de Glamour)#!\nMejora el [passive_cantrip|E] [GetTrait('art_stratus').GetName(GetPlayer)] otorgando en su lugar [GetModifier('cantrip_stable_stratus_modifier').GetNameWithTooltip].\n#flavor $sliver_stratus_flavor$#!"
+ SLIVERS_STRATUS_PERFECT_PERK_EFFECT: "Mejora los [cantrips|E] [GetTrait('art_stratus').GetName(GetPlayer)] reduciendo en #P 1#! tanto la dificultad de su [bunk|E] como el coste de Glamour #weak (coste mínimo de 1 de Glamour)#!\nMejora el [passive_cantrip|E] [GetTrait('art_stratus').GetName(GetPlayer)] otorgando en su lugar [GetModifier('cantrip_perfect_stratus_modifier').GetNameWithTooltip].\n#flavor $sliver_stratus_flavor$#!"
+
+ slivers_verdage_uncontrolled_perk_name: "Verdage $sliver_1_name$"
+ slivers_verdage_unstable_perk_name: "Verdage $sliver_2_name$"
+ slivers_verdage_semi_stable_perk_name: "Verdage $sliver_3_name$"
+ slivers_verdage_stable_perk_name: "Verdage $sliver_4_name$"
+ slivers_verdage_perfect_perk_name: "Verdage $sliver_5_name$"
+
+ sliver_verdage_flavor: "Verdage implica el control de la naturaleza viva, que abarca desde plantas hasta animales e incluso objetos hechos de materiales naturales (sin tratamientos químicos, etc.). Mediante este Fragmento, los usuarios crean y curan venenos naturales, localizan rastros del movimiento de su objetivo, despejan terreno cubierto de maleza y adivinan el futuro mirando los hilos del destino como las raíces de la propia vida. Verdage invoca fauna salvaje y quimeras nacidas a su imagen y hace posible comunicarse con ellas, infundiendo una sensación de familiaridad entre usuario y objetivo. Además, crea plantas, vuelve el suelo fértil o infértil, mueve el crecimiento incipiente y hace que florezca. Con todo, a pesar de su capacidad de animar plantas, no puede crear inteligencia. El Fragmento también permite a los lanzadores crear objetos con recursos de la naturaleza imaginándolos en su mente, así como transmutar sustancias orgánicas de una a otra."
+
+ SLIVERS_VERDAGE_UNCONTROLLED_PERK_EFFECT: "Mejora todos los [crafting_nodes|E] de [GetTrait('art_verdage').GetName(GetPlayer)].\n[PODUnlocksCombatMove('POD_combat_move_fae_verdage_solarium')].\n#flavor $sliver_verdage_flavor$#!"
+ SLIVERS_VERDAGE_UNSTABLE_PERK_EFFECT: "Mejora todos los [crafting_nodes|E] de [GetTrait('art_verdage').GetName(GetPlayer)].\n#flavor $sliver_verdage_flavor$#!"
+ SLIVERS_VERDAGE_SEMI_STABLE_PERK_EFFECT: "Mejora todos los [crafting_nodes|E] de [GetTrait('art_verdage').GetName(GetPlayer)].\n[PODUnlocksCombatMove('POD_combat_move_fae_verdage_coalesce')].\n#flavor $sliver_verdage_flavor$#!"
+ SLIVERS_VERDAGE_STABLE_PERK_EFFECT: "Mejora todos los [crafting_nodes|E] de [GetTrait('art_verdage').GetName(GetPlayer)].\n#flavor $sliver_verdage_flavor$#!"
+ SLIVERS_VERDAGE_PERFECT_PERK_EFFECT: "Mejora todos los [crafting_nodes|E] de [GetTrait('art_verdage').GetName(GetPlayer)].\n#flavor $sliver_verdage_flavor$#!"

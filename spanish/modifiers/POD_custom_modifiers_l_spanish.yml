@@ -31,6 +31,7 @@
  POD_terrain_health_min_combat_roll: "Probabilidad de [soak_damage|E]"
  POD_terrain_health_cancel_negative_supply: "No puede morir por heridas"
  POD_terrain_health_superficial_into_aggravated_cancel_negative_supply: "Todo el [POD_superficial_damage_with_box|E] que inflijas se convierte en [POD_aggravated_damage_with_box|E] en su lugar"
+ POD_terrain_health_supply_limit_mult: "Probabilidad de [soak_damage|E] del enemigo"
 
 
 
@@ -40,10 +41,21 @@
 
  POD_terrain_spirit_quest_journey_speed_advantage: "Velocidad de [journey|E] de Búsqueda Espiritual"
  POD_terrain_spirit_quest_journey_speed_supply_limit_mult: "Velocidad de [journey|E] de Búsqueda Espiritual"
+ POD_terrain_pack_training_journey_speed_supply_limit_mult: "Velocidad de [journey|E] de @fera_icon!Entrenamiento de Manada"
 
 
  POD_terrain_heist_suspicion_advantage: "[suspicion_with_icon|E] inicial durante [infiltration_missions|E]"
  POD_terrain_heist_journey_speed_advantage: "Velocidad de [journey|E] de Robo de Artefacto"
+ POD_terrain_heist_journey_speed_supply_limit_mult: "Velocidad de [journey|E] de Robo de Artefacto"
+ POD_terrain_jerusalem_christian_development_growth: "[Localize('POD_christian_influence')] pasiva anual"
+ POD_terrain_jerusalem_christian_supply_limit_mult: "Obtención de [Localize('POD_christian_influence')]"
+ POD_terrain_jerusalem_christian_attrition_mult: "Coste de [Localize('POD_christian_influence')]"
+ POD_terrain_jerusalem_muslim_development_growth: "[Localize('POD_muslim_influence')] pasiva anual"
+ POD_terrain_jerusalem_muslim_supply_limit_mult: "Obtención de [Localize('POD_muslim_influence')]"
+ POD_terrain_jerusalem_muslim_attrition_mult: "Coste de [Localize('POD_muslim_influence')]"
+ POD_terrain_jerusalem_jewish_development_growth: "[Localize('POD_jewish_influence')] pasiva anual"
+ POD_terrain_jerusalem_jewish_supply_limit_mult: "Obtención de [Localize('POD_jewish_influence')]"
+ POD_terrain_jerusalem_jewish_attrition_mult: "Coste de [Localize('POD_jewish_influence')]"
 
 
  POD_terrain_umbra_aptitude_advantage: "@grace_icon![umbra_aptitude|E]"
@@ -76,6 +88,10 @@
  #Fera
  POD_terrain_gnosis_regen_supply_limit_mult: "Regeneración de $POD_energy_gnosis$"
  POD_terrain_wyrm_taint_advantage: "[wyrm_taint|E] anual @wyrm_icon!"
+ POD_terrain_delirium_cancel_negative_supply: "@fera_icon!Induce [delirium|E]"
+ POD_terrain_reduced_delirium_cancel_negative_supply: "@fera_icon!Induce [reduced_delirium|E]"
+ POD_terrain_bypass_delirium_cancel_negative_supply: "@fera_icon!Elude la inmunidad al [delirium|E]"
+ POD_terrain_immunity_delirium_cancel_negative_supply: "@fera_icon!Inmunidad al [delirium|E]"
 
 
  #Kueijin
@@ -100,30 +116,45 @@
  POD_terrain_mummy_levy_size_suffix: " puntos de [skill|E]"
  POD_terrain_mummy_travel_danger: "Tiempo para resucitar"
  POD_terrain_mummy_travel_danger_suffix: " años"
+ POD_terrain_no_memory_cost_cancel_negative_supply: "Puede ignorar los costes del seguimiento de Memoria de $POD_splat_mummy$"
+ POD_terrain_asekh_sen_cancel_negative_supply: "Puede crear diversos #TOOLTIP:GAME_TRAIT,vampire,[GetNullCharacter] #L Seres#!#! #TOOLTIP:GAME_TRAIT,asekh_sen,[GetNullCharacter] #L similares a momias#!#!"
+ POD_terrain_flawed_bane_mummy_cancel_negative_supply: "Puede crear #TOOLTIP:GAME_TRAIT,banemummy,[GetNullCharacter] #L Momias Bane#!#! [GetModifier('flawed_bane_mummies_modifier').GetNameWithTooltip]"
+ POD_terrain_bane_mummy_cancel_negative_supply: "Puede crear #TOOLTIP:GAME_TRAIT,banemummy,[GetNullCharacter] #L Momias Bane#!#!"
+ POD_terrain_true_mummy_cancel_negative_supply: "Puede crear #TOOLTIP:GAME_TRAIT,mummy,[GetNullCharacter] #L Momias Verdaderas#!#!"
+ POD_terrain_ghostly_immortals_cancel_negative_supply: "Puede crear #TOOLTIP:GAME_TRAIT,kueijin,[GetNullCharacter] #L Inmortales Fantasmales#!#!"
+ POD_terrain_human_immortals_cancel_negative_supply: "Puede crear #TOOLTIP:GAME_TRAIT,immortal,[GetNullCharacter] #L Inmortales Humanos#!#!"
+ POD_terrain_earthly_immortals_cancel_negative_supply: "Puede crear #TOOLTIP:GAME_TRAIT,immortal,[GetNullCharacter] #L Inmortales#!#! #TOOLTIP:STATIC_MODIFIER,POD_enhanced_immortal_modifier #P;L Terrenales#!#!"
+ POD_terrain_corpseuntied_immortals_cancel_negative_supply: "Puede crear #TOOLTIP:GAME_TRAIT,wukuei,[GetNullCharacter] #L Inmortales Desatados del Cadáver#!#!"
+ POD_terrain_spirit_immortals_cancel_negative_supply: "Puede crear #TOOLTIP:GAME_TRAIT,wutian,[GetNullCharacter] #L Inmortales Celestiales#!#! o #TOOLTIP:GAME_TRAIT,wukuei,[GetNullCharacter] #L Inmortales Desatados del Cadáver#!#! #TOOLTIP:STATIC_MODIFIER,POD_super_wukuei_modifier #P;L Potenciados#!#!"
 
 
 
  #Espíritus
- POD_terrain_can_damage_spirit_cancel_negative_supply: "Puede dañar espíritus"
- POD_terrain_can_summon_random_spirit_cancel_negative_supply: "Puede convocar espíritus aleatorios"
- POD_terrain_can_summon_gaian_spirit_cancel_negative_supply: "Puede convocar espíritus $Gaian|L$ #ONCLICK:FAITH,velvet_brood #TOOLTIP:FAITH,velvet_brood #!#!"
- POD_terrain_can_summon_bane_spirit_cancel_negative_supply: "Puede convocar espíritus de $Bane|L$ #ONCLICK:FAITH,wyrmbound #TOOLTIP:FAITH,wyrmbound #!#!"
- POD_terrain_can_summon_elemental_bane_spirit_cancel_negative_supply: "Puede convocar espíritus de $Elemental Bane|L$ #ONCLICK:FAITH,wyrmbound #TOOLTIP:FAITH,wyrmbound #!#!"
- POD_terrain_summoned_spirit_strength_advantage: "Fuerza del espíritu convocado"
- POD_terrain_spirit_companion_pact_strength_advantage: "Fuerza del [spirit_pact|E]"
- POD_terrain_spirit_companion_pact_acceptance_advantage: "Aceptación del [spirit_pact|E]"
- POD_terrain_spirit_companion_chiminage_supply_limit_mult: "Eficiencia del Chiminage espiritual"
+ POD_terrain_can_damage_spirit_cancel_negative_supply: "@spirit_icon!Puede dañar a los espíritus"
+ POD_terrain_can_summon_random_spirit_cancel_negative_supply: "@spirit_icon!Puede invocar espíritus aleatorios"
+ POD_terrain_can_summon_gaian_spirit_cancel_negative_supply: "@spirit_icon!Puede invocar espíritus #ONCLICK:FAITH,velvet_brood #TOOLTIP:FAITH,velvet_brood $Gaian|L$#!#!"
+ POD_terrain_can_summon_bane_spirit_cancel_negative_supply: "@spirit_icon!Puede invocar espíritus #ONCLICK:FAITH,wyrmbound #TOOLTIP:FAITH,wyrmbound $Bane|L$#!#!"
+ POD_terrain_can_summon_elemental_bane_spirit_cancel_negative_supply: "@spirit_icon!Puede invocar espíritus #ONCLICK:FAITH,wyrmbound #TOOLTIP:FAITH,wyrmbound $Elemental Bane|L$#!#!"
+ POD_terrain_summoned_spirit_strength_advantage: "@spirit_icon!Fuerza del espíritu invocado"
+ POD_terrain_spirit_companion_pact_strength_advantage: "@spirit_icon!Fuerza del [spirit_pact|E]"
+ POD_terrain_spirit_companion_pact_acceptance_advantage: "@spirit_icon!Aceptación del [spirit_pact|E]"
+ POD_terrain_spirit_companion_chiminage_supply_limit_mult: "@spirit_icon!Eficiencia del Chiminage espiritual"
 
  #Vampiros
  POD_terrain_vampire_advantage: "Multiplicador de experiencia de [resonance|E]"
  POD_terrain_ghoul_limit_advantage: "Límite de [ghoul|E] @ghoul_icon!"
  POD_terrain_herd_limit_advantage: "Límite de [POD_herd|E] @vampire_icon!"
  POD_terrain_fleshcrafting_advantage: "Éxito de [fleshcrafting|E] @vicissitude_icon!"
+ POD_terrain_bloodmagic_success_advantage: "Probabilidad de éxito de la [bloodsorcery|E]"
+ POD_terrain_necromagic_success_advantage: "Probabilidad de éxito de la [necromancy|E]"
+ POD_terrain_fae_advantage: "Probabilidad de fallo del [bunk_with_icon|E]"
+ POD_terrain_fae_max_combat_roll: "Obtención de [banality_with_icon|E]"
+ POD_terrain_fae_min_combat_roll: "Pérdida de [banality_with_icon|E]"
+ POD_terrain_fae_cancel_negative_supply: "Quedará deshecho #weak (@death_icon!Muerte)#!"
 
  #Wraiths
  POD_terrain_wraith_monthly_stress_gain_advantage: "[oblivion_pull|E]"
  POD_terrain_necromancy_wraith_advantage: "Número máximo de $POD_splat_wraith_plural$ vinculados"
- POD_terrain_necromancy_wraith_max_combat_roll: "Probabilidad de debilitar [Fetter|E]"
  POD_terrain_necromancy_wraith_min_combat_roll: "Probabilidad de vinculación de $POD_splat_wraith$"
  POD_terrain_necromancy_wraith_development_growth: "[stress|E] mensual por mantener $POD_splat_wraith_plural$ en las [Glossary('Tierras de Piel','game_concept_skinlands_desc')]"
  POD_terrain_necromancy_wraith_development_growth_factor: "Calidad del $POD_splat_wraith$ enviado"
@@ -132,6 +163,7 @@
  POD_terrain_scheme_advantage: "Aceptación general de agentes de [scheme|E]"
  POD_terrain_scheme_development_growth: "Aceptación de agentes de [scheme|E] hostil"
  POD_terrain_scheme_development_growth_factor: "Aceptación de agentes de [scheme|E] de asesinato"
+ POD_terrain_court_position_aptitude_advantage: "Aceptación del agente hostil enemigo de la [scheme|E]"
  POD_terrain_misc_advantage: "Límite de [Concept('friend', 'Trabar amistad')|E]"
 
  #Demonología

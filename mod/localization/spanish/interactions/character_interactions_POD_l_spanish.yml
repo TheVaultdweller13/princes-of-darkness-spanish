@@ -107,6 +107,8 @@
  COMPEL_INVITE: "[GetPerk('compel_perk').GetName(GetPlayer)]: $VALUE|=+0$"
  FORTUITOUS_MEETING_INVITE: "[GetPerk('fortuitous_meeting_perk').GetName(GetPlayer)]: $VALUE|=+0$"
  THE_COINCIDENTAL_GATHERING_INVITE: "[GetPerk('the_coincidental_gathering_perk').GetName(GetPlayer)]: $VALUE|=+0$"
+ POD_recall_to_court_interaction: "Reclamar a la Corte"
+ POD_recall_to_court_interaction_desc: "Haz regresar a un compañero a tu corte desde cualquier distancia."
 
  POD_mass_demand_payment_interaction: "Exigir Pago por todos los Favores"
  POD_mass_demand_payment_interaction_desc: "Extrae el pago de todos aquellos sobre los que tengas un [hook|E]."
@@ -127,7 +129,11 @@
  POD_copy_clothing_colors_interaction_personal: "Colores personales"
 
  POD_expose_your_own_secret_interaction: "$expose_secret_interaction$"
- POD_expose_your_own_secret_interaction_desc: "Revelar uno de tus propios [secrets|E]"
+ POD_expose_your_own_secret_interaction_desc: "Elige uno de tus propios [secrets|E] para revelarlo"
+ POD_interface.100.t: "Revelar un Secreto"
+ POD_interface.100.desc: "Elige un [secret|E] para revelarlo."
+ POD_interface.100.a: "Revelar el secreto elegido."
+ POD_interface.100.b: "Volver sin revelar nada."
 
  POD_end_friendship_interaction: "Terminar Amistad"
  POD_end_friendship_interaction_desc: "Dejar de ser [friends|E] con [recipient.GetShortUINameNoTooltip]"
@@ -208,6 +214,7 @@
  FERA_IS_CRIME: "[GetTraitGroup('fera').GetName()] es Crimen: $VALUE|+0$"
 
  VOICE_OF_COMMAND_REASON: "$voice_of_command_perk_name$: $VALUE|+=0$"
+ NOT_KNOWS_SPIRIT_LANGUAGE: "No conoces el lenguaje espiritual: $VALUE|+=0$"
  NUMINA_EPHEMERA_2_REASON: "$numina_ephemera_2_perk_name$: $VALUE|+=0$"
  NUMINA_EPHEMERA_3_REASON: "$numina_ephemera_3_perk_name$: $VALUE|+=0$"
  NUMINA_EPHEMERA_4_REASON: "$numina_ephemera_4_perk_name$: $VALUE|+=0$"
@@ -244,7 +251,7 @@
  POD_learn_true_name_interaction_desc: "Inicia un [journey|E] para aprender el [Glossary('Nombre Verdadero','podgloss.truename')] de [recipient.GetShortUIName]."
  POD_learn_true_name_interaction_tt: "El [journey|E] tendrá una [planning_speed|E] basada en tu [learning|E], la suma de las [skills|E] de tu objetivo y ciertas [perks|E] en ambos personajes."
 
- POD_study_true_name_trait_interaction: "Estudiar Nombres Verdaderos"
+ POD_study_true_name_trait_interaction: "Estudiar los Nombres Verdaderos de los Rasgos"
  POD_study_true_name_trait_interaction_desc: "Usa tu conocimiento del [Glossary('Nombre Verdadero','podgloss.truename')] de [recipient.GetFirstNamePossessive] para estudiar sus [traits|E]."
  POD_study_true_name_trait_interaction_requirement: "[recipient.GetShortUIName] #bold no#! tiene un [trait|E] cuyo [Glossary('Nombre Verdadero','podgloss.truename')] puedas aprender"
  POD_study_true_name_trait_interaction_select_traits_tt: "Podrás elegir cuáles de los [traits|E] de [recipient.GetShortUINamePossessive] estudiar"

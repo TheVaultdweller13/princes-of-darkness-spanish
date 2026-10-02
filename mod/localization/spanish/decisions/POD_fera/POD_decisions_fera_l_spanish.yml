@@ -2,7 +2,7 @@
 
 
  fera_advance_rank_decision: "Aumentar tu Rango"
- fera_advance_rank_decision_desc: "El Renombre y el Rango son una medida del lugar de un cambiapieles en su sociedad. Cuanto más Renombre tienen, más peso tienen sus palabras. Los diferentes $glossary_fera$ utilizan cada uno un conjunto diferente de tres tipos de renombre.\n\nObtienes Renombre por:\n"
+ fera_advance_rank_decision_desc: "El Renombre y el Rango son una medida del lugar de un $glossary_fera$ en su sociedad. Cuanto más Renombre tienen, más peso tienen sus palabras. Cada $glossary_fera$ usa un conjunto distinto de tres tipos de renombre.\n\nGanas Renombre con:\n"
  fera_advance_rank_decision_tooltip: "Progresar en los rangos Fera requiere tiempo y compromiso."
  fera_advance_rank_decision_confirm: "¡Mi fama crece!"
 
@@ -12,13 +12,13 @@
 
  fera_advance_rank_renown_wisdom: "#clickable $POD_fera_renown_wisdom$:#!\n#medium $BULLET_WITH_TAB$Terminar expediciones a la Umbra.\n$BULLET_WITH_TAB$Obtener el último [perk|E] de un árbol de estilo de vida $glossary_fera$.\n$BULLET_WITH_TAB$Terminar un [journey|E] de Búsqueda Espiritual.#!\n"
 
- fera_advance_rank_renown_power: "#clickable $POD_fera_renown_power$:#!\n#medium $BULLET_WITH_TAB$Ganar guerras.\n$BULLET_WITH_TAB$Ganar duelos.\n$BULLET_WITH_TAB$Aumentar tu [prestige_level|E].#!\n$BULLET_WITH_TAB$Obtener [urgetaints_lifestyle|E] físico.\n"
+ fera_advance_rank_renown_power: "#clickable $POD_fera_renown_power$:#!\n#medium $BULLET_WITH_TAB$Ganar guerras.\n$BULLET_WITH_TAB$Ganar [pod_combat_encounters|E].\n$BULLET_WITH_TAB$Aumentar tu [prestige_level|E].#!\n$BULLET_WITH_TAB$Obtener [maeljingifts_lifestyle|E] de tipo Físico.\n"
 
  fera_advance_rank_renown_cunning: "#clickable $POD_fera_renown_cunning$:#!\n#medium $BULLET_WITH_TAB$Tener éxito en una [infiltration|E].\n$BULLET_WITH_TAB$[blackmailing|E] a otro personaje.\n$BULLET_WITH_TAB$Tener éxito en [schemes|E] de [GetScheme('abduct').GetTypeName].#!\n"
 
  fera_advance_rank_renown_ferocity: "#clickable $POD_fera_renown_ferocity$:#!\n#medium $BULLET_WITH_TAB$Regresar a tu tierra con al menos #P 50#! de [loot|E] de [raid|E].\n$BULLET_WITH_TAB$Ganar [trait_level_track_xp|E] en cualquier [trait_level_track|E] de [GetTrait('lifestyle_hunter').GetName(GetNullCharacter)].\n$BULLET_WITH_TAB$Entrenar con tu [GetPlayer.Custom('PODCoterie')].#!\n"
 
- fera_advance_rank_renown_infamy: "#clickable $POD_fera_renown_infamy$:#!\n#medium $BULLET_WITH_TAB$Tener éxito en [schemes|E] de [GetScheme('fabricate_hook').GetTypeName].\n$BULLET_WITH_TAB$Ejecutar a tus propios vasallos de [title_rank|E] de Ducado o superior sin un [execute_reason|E].\n$BULLET_WITH_TAB$Usurpar títulos de [rank|E] de Reino o superior.\n$BULLET_WITH_TAB$Romper treguas.#!\n$BULLET_WITH_TAB$Obtener [urgetaints_lifestyle|E] mental.\n"
+ fera_advance_rank_renown_infamy: "#clickable $POD_fera_renown_infamy$:#!\n#medium $BULLET_WITH_TAB$Tener éxito en [schemes|E] de [GetScheme('fabricate_hook').GetTypeName].\n$BULLET_WITH_TAB$Ejecutar a tus propios vasallos de [title_rank|E] de Ducado o superior sin un [execute_reason|E].\n$BULLET_WITH_TAB$Usurpar títulos de [rank|E] de Reino o superior.\n$BULLET_WITH_TAB$Romper treguas.#!\n$BULLET_WITH_TAB$Obtener [maeljingifts_lifestyle|E] de tipo Mental.\n"
 
 
  fera_advance_rank_renown_bonuses: "\n#clickable Tu [GetPlayer.Custom('PODFeraAuspiceType')] otorga una bonificación a [GetPlayer.Custom('PODFeraAuspiceRenownBoost')].#!"

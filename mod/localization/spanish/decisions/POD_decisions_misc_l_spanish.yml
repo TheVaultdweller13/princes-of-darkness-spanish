@@ -206,9 +206,9 @@
  challenge_house_head_decision_confirm: "¡Ahora mando yo!"
  challenge_house_head_decision_effect_tooltip: "Dependiendo del paradero actual del cabeza de vuestra casa, se os presentarán varias opciones para usurpar su posición." 
  
- POD_diarchy_events.0005.desc: "Algunos clanes vampíricos están más interesados en su linaje que otros, como los Ventrue, pero todos conceden al menos cierto respeto a este concepto. Al fin y al cabo, esto se convierte fácilmente en un hecho cuando los ancianos de tu \"familia\" suelen tener siglos (o más) de antigüedad y son mucho más poderosos que los jóvenes neonatos que se revuelven en la base.\nAun así, no es inaudito que miembros más jóvenes tomen las riendas de los asuntos de su linaje. Quizás sus ancianos se han aburrido o actúan en una esfera de influencia completamente diferente a las maquinaciones políticas nocturnas de los condenados. Sin embargo, es raro que uno ceda voluntariamente la elevada posición de cabeza de casa sin al menos algún tipo de prueba o compensación.\nLas cenizas de los advenedizos que han subestimado a sus mayores podrían cubrir una zona bastante extensa."
- POD_diarchy_events.0005.a: "¡Soy más capaz que alguna bella durmiente!"
- challenge_house_head_torpor: "El cabeza de vuestra casa está en letargo. El único obstáculo para reclamar el liderazgo de la casa será el desprecio y la envidia de vuestros compañeros de casa."
+ POD_diarchy_events.0005.desc: "Algunos clanes vampíricos están más interesados en su linaje que otros, siendo los [GetTrait('ventrue').GetName(GetNullCharacter)] un ejemplo destacado, pero todos conceden al menos cierto respeto a este concepto. Al fin y al cabo, esto se convierte fácilmente en un hecho cuando los ancianos de tu «familia» suelen tener siglos de antigüedad (o más) y son mucho más poderosos que los jóvenes neonatos que se revuelven en la base.\nAun así, no es del todo inaudito que miembros más jóvenes tomen las riendas de los asuntos de su linaje. Quizá sus ancianos se han aburrido o actúan en una esfera de influencia completamente distinta de las maquinaciones políticas nocturnas de los condenados. Sin embargo, es raro que alguien ceda voluntariamente la elevada posición de cabeza de casa sin al menos alguna prueba o compensación.\nLas cenizas de los advenedizos que subestimaron a sus mayores podrían cubrir una zona bastante extensa."
+ POD_diarchy_events.0005.a: "¿Qué va a hacer [challenged_house_head.Custom('ES_ElElla')]? No puede detenerme."
+ challenge_house_head_torpor: "El cabeza de tu casa está indispuesto. El único obstáculo para reclamar el liderazgo de la casa será el desprecio y la envidia de tus compañeros de casa."
  POD_diarchy_events.0005.b: "Pensándolo mejor..."
  POD_diarchy_events.0005.c: "¿Queréis un favor? Bueno..."
  POD_diarchy_events.0005.d: "¡En garde!"
@@ -279,3 +279,4 @@
  heal_chulorviosis_decision_confirm: "¡Fuera de mi cabeza!"
  heal_chulorviosis_decision_custom: "Tiene algún [friend|E] [GetTrait('beatific').GetName( GetPlayer )] o [GetTrait('demon').GetName( GetPlayer )]"
  heal_chulorviosis_decision_custom2: "Tiene algún [lover|E] [GetTrait('beatific').GetName( GetPlayer )] o [GetTrait('demon').GetName( GetPlayer )]"
+ set_de_jure_capital_hold_current_capital_gc_restriction_tooltip: "La [de_jure_capital|E] actual de [current_de_jure.GetName] #weak (#color_white [title_check.GetName]#!)#! #bold no#! es una [grand_city|E]"

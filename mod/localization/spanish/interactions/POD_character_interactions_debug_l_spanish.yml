@@ -51,8 +51,14 @@
  POD_debug_add_halfsplat_interaction: "Añadir Medio-Splat"
  POD_debug_add_halfsplat_interaction_desc: "Otorga a [recipient.GetShortUIName] un rasgo de Medio-[splat|E], junto con los efectos de inicialización necesarios"
 
- POD_debug_teach_spell_of_life_interaction: "Enseñar el Hechizo de Vida"
- POD_debug_teach_spell_of_life_interaction_desc: "Enseña a [recipient.GetShortUIName] el Hechizo de Vida, que permite crear $POD_splat_mummy_plural$"
+ POD_debug_teach_spell_of_life_interaction: "Enseñar un Medio de Renacimiento Eterno"
+ POD_debug_teach_spell_of_life_interaction_desc: "Enseña a [recipient.GetShortUIName] un medio de renacimiento eterno, que permite crear $POD_splat_mummy_plural$"
+ POD_debug_spell_of_life_interaction_shemsuheru: "Crear [GetTrait('shemsuheru').GetName( GetNullCharacter )]"
+ POD_debug_spell_of_life_interaction_ishmaelite: "Crear [GetFaithByKey('ishmaelite').GetName]"
+ POD_debug_spell_of_life_interaction_cabiri: "Crear [GetTrait('cabiri').GetName( GetNullCharacter )]"
+ POD_debug_spell_of_life_interaction_custom: "Crear [GetTrait('custom_mummy_dynasty').GetName( GetNullCharacter )]"
+ POD_debug_spell_of_life_interaction_wutian: "Crear [GetTrait('wutian').GetName( GetNullCharacter )]"
+ POD_debug_spell_of_life_interaction_wukuei: "Crear [GetTrait('wukuei').GetName( GetNullCharacter )]"
 
  POD_debug_umbra_adventure_interaction: "Prototipo de Generación de Mapa de la Umbra"
 
