@@ -48,7 +48,7 @@
  POD_wyrm_taint_increasing: "[wyrm_taint|E] creciente"
  wyrm_taint_value_sins: "[sins|E]"
  wyrm_taint_value_piety: "[piety_level|E]"
- wyrm_taint_value_balefire: "[balefire|E]"
+ wyrm_taint_value_balefire: "[balefire_damage_short_with_icon|E]"
 
  POD_wyrm.1.t: "Comulgando con el Rubí"
  POD_wyrm.1.desc: "El zumbido del Rubí del Alma aumenta a medida que viertes energía en él. Pronto la voz del Danzante de la Espiral Negra invade tu mente, preguntando qué solicitas a cambio de toda esa energía. Aunque estás seguro de que el espíritu aprecia la energía, suena irritado por su situación actual."
@@ -63,10 +63,10 @@
  POD_wyrm.101.option.a: "Sirvo al Oscuro..."
 
 
- temple_obscura_rooms_intro: "El Templo Obscura es un templo colosal hecho de mármol oscuro con vetas verdes. El exterior es una mezcla extraña y discordante de símbolos deformados y aberrantes junto con tallas que simbolizan el dolor y la degradación. Dentro del templo, la luz proviene de pequeños fuegos de maleficio montados en candelabros vivientes hechos con los brazos cortados de prisioneros, y del tenue resplandor verde de las vidrieras del techo. El templo en sí consta de nueve salas, dispuestas una tras otra. Cada sala contiene estatuas y murales pertenecientes a los tormentos y pruebas que aguardan a quien se atreva a entrar. Algunos regresan algo lúcidos; muchos mayoritariamente funcionales. Ninguno regresa cuerdo."
+ temple_obscura_rooms_intro: "El Templo Obscura es un templo colosal de mármol oscuro con vetas verdes. El exterior es una extraña y discordante mezcla de símbolos deformes y aberrantes junto con tallas que simbolizan el dolor y la degradación. En el interior del templo, la luz procede de pequeños fuegos malignos montados en candelabros vivos hechos con los brazos cercenados de prisioneros y del tenue resplandor verde de las vidrieras del techo. El templo en sí consta de nueve salas, dispuestas una tras otra. Cada sala contiene estatuas y murales relativos a los tormentos y pruebas que aguardan a quien se atreva a entrar. Algunos regresan algo lúcidos; muchos, funcionales en su mayoría. Ninguno regresa cuerdo."
 
  POD_wyrm.501.t: "Sala de los fracasos personales"
- POD_wyrm.501.desc: "$temple_obscura_rooms_intro$\n\nLa primera sala del templo se encuentra ante ti. Visiones de tu pasado inundan tu mente nada más entrar. Recuerdas cada fracaso, cada mala decisión y cada consecuencia de tus acciones pasadas. Las raíces de la depresión empiezan a afianzarse, pero debes resistir."
+ POD_wyrm.501.desc: "$temple_obscura_rooms_intro$\n\nLa primera sala del templo se extiende ante ti. Visiones de tu pasado inundan tu mente en cuanto entras. Recuerdas cada fracaso, cada mala decisión y cada consecuencia de tus actos pasados. Las raíces de la depresión empiezan a arraigar, pero debes resistir."
  POD_wyrm.501.option.a: "Recuerdos que intento olvidar..."
  POD_wyrm.501.option.b: "La debilidad debe ser purgada."
 
@@ -83,7 +83,7 @@
  POD_wyrm.503.option.c: "¡El $glossary_wyrm$ me ha bendecido!"
 
  POD_wyrm.504.t: "Sala de la astucia"
- POD_wyrm.504.desc: "$temple_obscura_rooms_intro$\n\nEncuentras a una Perdición esperándote en la cuarta sala. Esta Perdición es particularmente astuta y debes derrotarla en una batalla de ingenio antes de que te permita continuar."
+ POD_wyrm.504.desc: "$temple_obscura_rooms_intro$\n\nEn la cuarta sala te espera un Perverso. Este Perverso es particularmente astuto y debes derrotarlo en una batalla de ingenio antes de que te permita continuar."
  POD_wyrm.504.option.a: "Mi ingenio contra el tuyo."
  POD_wyrm.504.option.b: "La verdad es una mentira."
  POD_wyrm.504.option.list1: "Victoria aplastante"
@@ -111,7 +111,7 @@
  POD_wyrm.508.tooltip: "@warning_icon!#X Tendrás que volver a intentar esta sala más tarde para progresar a la última sala.#!"
 
  POD_wyrm.509.t: "Sala del misterio"
- POD_wyrm.509.desc: "$temple_obscura_rooms_intro$\n\nPor fin, la sala final del templo se encuentra ante ti. Un imponente hombre lobo monta un corcel sombrío en el centro de la sala. Su armadura es de un diseño que parece desafiar la realidad, su espada y su montura inmoladas con los grandes fuegos de maleficio del $glossary_wyrm$. Pronuncia una sola frase antes de cargar contra ti.\n\"No estás preparado\"."
+ POD_wyrm.509.desc: "$temple_obscura_rooms_intro$\n\nPor fin la última sala del templo se extiende ante ti. Un imponente hombre lobo está sentado sobre una montura sombría en el centro de la sala. Su armadura es de un diseño que parece desafiar la realidad; su espada y su montura están inmoladas con los grandes fuegos malignos del $glossary_wyrm$. Pronuncia una única frase antes de cargar contra ti.\n«No estás preparado.»"
  POD_wyrm.509.option.a: "Mi prueba final..."
  POD_wyrm.509.option.b: "No estoy preparado. ¡Corre!"
  POD_wyrm.509.tooltip: "#help El $glossary_wyrm$ se ríe de tu debilidad.#!\n@warning_icon!#X Tendrás que volver a intentar esta sala más tarde.#!"

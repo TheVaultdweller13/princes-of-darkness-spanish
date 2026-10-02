@@ -42,7 +42,7 @@
  INVESTITURE_STACKING_EFFECT: "#clickable Este [perk|E] se puede comprar muchas veces.#!"
  INVESTITURE_VISUAL_CHANGE_EFFECT: "#N ¡Este [perk|E] cambiará permanentemente tu apariencia!#!"
 
- investiture_armor_perk_name: "Armadura #low ([ROOT.Char.MakeScope.ScriptValue('POD_investiture_armor_perk_modifier_stacks')])#!"
+ investiture_armor_perk_name: "Armadura #low ([ROOT.Char.MakeScope.ScriptValue('POD_investiture_armor_perk_modifier_stacks')]/10)#!"
  investiture_backgrounds_perk_name: "Trasfondos #low ([ROOT.Char.MakeScope.ScriptValue('POD_investiture_backgrounds_perk_modifier_stacks')])#!"
  investiture_demonic_strength_perk_name: "Fuerza demoníaca #low ([ROOT.Char.MakeScope.ScriptValue('POD_investiture_demonic_strength_perk_modifier_stacks')])#!"
  investiture_longevity_perk_name: "Longevidad #low ([ROOT.Char.MakeScope.ScriptValue('POD_investiture_longevity_perk_modifier_stacks')])#!"
@@ -86,7 +86,7 @@
  investiture_master_of_the_domain_perk_name: "Maestro del dominio"
 
  INVESTITURE_DEVILS_EYES_PERK_EFFECT: "Como [character_interaction|E], genera una [epidemic|E] en la ubicación actual del objetivo.\n#flavor Con una mirada, un Infernalista puede agriar la leche, pudrir el grano y enfermar a los niños. Aunque el poder de los Ojos es inútil contra los adultos (que se sienten incómodos bajo su influencia, no obstante), puede diezmar una aldea destruyendo sus reservas de comida justo antes del invierno.#!"
- INVESTITURE_APPORTATION_PERK_EFFECT: "Como [character_interaction|E], roba el [artifact|E] de un objetivo al coste de 2 puntos de [perk|E] de [investiture_lifestyle|E].\n#flavor Con este 'don', el buscador del infierno puede encantar un solo objeto, vinculándolo a sí mismo. Desde el momento del encantamiento en adelante, puede invocar ese objeto desde cualquier lugar del mundo mortal (pero no a través de la Celosía). El objeto debe ser lo suficientemente pequeño y ligero como para caber en una mano, pero puede ser cualquier cosa, mágica o no.#!"
+ INVESTITURE_APPORTATION_PERK_EFFECT: "Como [character_interaction|E], roba el [artifact|E] reclamado de un objetivo al coste de 2 puntos de [perk|E] de [investiture_lifestyle|E].\n#flavor Con este 'don', el buscador del infierno puede encantar un solo objeto y vincularlo a sí mismo. Desde ese momento, puede invocar el objeto desde cualquier lugar del mundo mortal (pero no a través de la Celosía). El objeto debe ser lo bastante pequeño y ligero para caber en una mano, pero puede ser cualquier cosa, mágica o no.#!"
  INVESTITURE_AWARENESS_PERK_EFFECT: "#flavor Con un choque que destroza la mente, el demonio abre de par en par las puertas de la percepción oculta, otorgando a un Infernalista un conocimiento instintivo de los secretos que le rodean.#!"
  INVESTITURE_LUCIFERIAN_CHARM_PERK_EFFECT: "#flavor Literalmente un diablo encantador, un Infernalista con esta Investidura puede salirse con la suya en casi cualquier cosa. No importa lo que diga o haga, asombra a todos los que conoce.#!"
  INVESTITURE_MASTER_OF_THE_DOMAIN_PERK_EFFECT: "#flavor El Patrón de un Infernalista le otorga un 'don' que le permite saber siempre lo que está sucediendo a 500 pies dentro de su dominio como si estuviera observando desde arriba.#!"
@@ -143,7 +143,7 @@
  touch_of_yama_kings_perk_name: "El Toque de los [Glossary('Reyes Yama','podgloss.yamaking')]"
  unfolding_scarlet_lotus_perk_name: "Loto Escarlata Desplegándose"
 
- MASK_OF_YOMI_PERK_EFFECT: "El rasgo [GetTrait('witch').GetName( GetPlayer )] se ocultará automáticamente al ser expuesto\nRevierte todos los cambios de apariencia forzados por la investidura\n#F Las Investiduras del personaje ya no exhiben señales reveladoras. Ninguna cantidad de sondeo mental, visión del alma o detección de la verdad puede asegurar que el personaje es un [akuma|E] o forzarla a traicionar sus actividades injustas.#!"
+ MASK_OF_YOMI_PERK_EFFECT: "Revierte todos los cambios de apariencia forzados por la investidura\n#F Las Investiduras del personaje ya no exhiben señales reveladoras. Ningún sondeo mental, visión del alma o detección de la verdad puede asegurar que el personaje es un [akuma|E] ni forzarla a traicionar sus actividades injustas.#!"
  BLACK_WHISPERS_PERK_EFFECT: "Como [character_interaction|E], te permite conocer cada secreto e intriga del objetivo.\n#F Los espías de los [Glossary('Reyes Yama','podgloss.yamaking')] están en todas partes, y lo que sus [akuma|E] no ven ni oyen, sus esbirros espirituales lo aprenden.#!"
  EBON_FOUNTAIN_PERK_EFFECT: "Pierdes 10 de [stress|E] cada mes\n#F El P'o del personaje está conectado a un manantial de poder demoníaco.#!"
  LUCK_OF_YOMI_PERK_EFFECT: "Como [decision|E], te permite gastar puntos de investidura para ganar oro y prestigio. Si ya has desbloqueado la decisión, recompensará con más oro.\n#F Los Reyes Yama alteran el joss del personaje, y la fortuna sonríe al [akuma|E] como resultado.#!"
@@ -152,4 +152,4 @@
  IRON_HANDS_PERK_EFFECT: "#F El personaje ahora se mueve con el poder de los [Glossary('Reyes Yama','podgloss.yamaking')] tras ella.#!"
  BREATH_OF_KNOWLEDGE_PERK_EFFECT: "#F Los [Glossary('Reyes Yama','podgloss.yamaking')] susurran su conocimiento a los oídos del personaje, y este arde en su cerebro como hierro al rojo vivo.#!"
  TOUCH_OF_YAMA_KINGS_PERK_EFFECT: "#F El toque del [UmbraGlossaryLocalized('yomi_wan','Infierno Yomi')] está sobre el personaje.#!"
- UNFOLDING_SCARLET_LOTUS_PERK_EFFECT: "Ignora el requisito de nivel de [Glossary('Dharma','podgloss.dharma')] para elegir ventajas de arte.\n#F Las Perdiciones susurran al personaje los secretos de su estado exaltado.#!"
+ UNFOLDING_SCARLET_LOTUS_PERK_EFFECT: "Ignora el requisito de nivel de [Glossary('Dharma','podgloss.dharma')] para elegir ventajas de arte.\nLos Wu Kuei consideran [GetGeographicalRegion('POD_region_middle_kingdom').GetName] su [POD_homeland|E]\n#F Las Perdiciones susurran al personaje los secretos de su estado exaltado.#!"

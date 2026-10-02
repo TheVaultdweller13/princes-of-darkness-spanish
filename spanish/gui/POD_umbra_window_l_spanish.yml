@@ -11,6 +11,7 @@
 
  PLAYER_UMBRA_APTITUDE_MULT: "[GetPlayer.MakeScope.ScriptValue('umbra_aptitude_mult')|P0%]"
  PLAYER_UMBRA_SENSE: "[GetPlayer.MakeScope.ScriptValue('umbra_sense_value')|P0]%"
+ buildings_umbra_aptitude_trod: "[duchy_building|E] de Sendas"
 
  BASE_PROGRESS_VALUE: "Progreso base"
  BASE_APTITUDE_VALUE: "Aptitud base"
@@ -93,16 +94,6 @@
  umbra_discovery.neighboring_realm.desc: "$umbra_discovery_finder$ encontró caminos hacia todos los señoríos vecinos en el $umbra_discovery_region$ dignos de una [umbra_expedition|E]"
  umbra_discovery_grace: "Ingratiar"
  umbra_discovery.grace.desc: "$umbra_discovery_finder$ consiguió una audiencia con el gobernante local de la [umbra|E] por ti en el $umbra_discovery_region$ digno de una [umbra_expedition|E]"
- umbra_discovery_unstoppable_warrior: "Incarna Guerrero"
- umbra_discovery.unstoppable_warrior.desc: "$umbra_discovery_finder$ encontró una pista sobre la presencia de un Incarna Guerrero en el $umbra_discovery_region$ digno de una [umbra_expedition|E]"
- umbra_discovery_storyteller: "Avatar de Gaia"
- umbra_discovery.storyteller.desc: "$umbra_discovery_finder$ encontró una pista sobre la presencia del Avatar de Gaia en el $umbra_discovery_region$ digno de una [umbra_expedition|E]"
- umbra_discovery_release_from_bondage: "Espíritu poderoso"
- umbra_discovery.release_from_bondage.desc: "$umbra_discovery_finder$ encontró una pista sobre la presencia de un Incarna o un espíritu igualmente poderoso en el $umbra_discovery_region$ digno de una [umbra_expedition|E]"
- umbra_discovery_firebringer: "Incarna Bromista"
- umbra_discovery.firebringer.desc: "$umbra_discovery_finder$ encontró una pista sobre la presencia de un Incarna bromista (¿o quizás el mismísimo Coyote?) en el $umbra_discovery_region$ digno de una [umbra_expedition|E]"
- umbra_discovery_rebirthing: "Gaia"
- umbra_discovery.rebirthing.desc: "$umbra_discovery_finder$ encontró una pista sobre la presencia de la propia Gaia en el $umbra_discovery_region$ digno de una [umbra_expedition|E]"
  umbra_discovery_sleep_of_the_hero: "Espíritus Ancestrales Fianna"
  umbra_discovery.sleep_of_the_hero.desc: "$umbra_discovery_finder$ encontró una pista sobre la presencia de algunos Espíritus Ancestrales Fianna en el $umbra_discovery_region$ digno de una [umbra_expedition|E]"
  umbra_discovery_call_great_fenris: "Gran Fenris"
@@ -197,16 +188,14 @@
  umbra_discovery.soothsay.desc: "$umbra_discovery_finder$ encontró inspiración para [GetTrait('art_soothsay').GetName( GetPlayer )] en el $umbra_discovery_region$, digno de una [umbra_expedition|E]"
  umbra_discovery_wayfare: "Viaje"
  umbra_discovery.wayfare.desc: "$umbra_discovery_finder$ encontró inspiración para [GetTrait('art_wayfare').GetName( GetPlayer )] en el $umbra_discovery_region$, digno de una [umbra_expedition|E]"
- umbra_discovery_dream_craft: "Oficio de sueños"
- umbra_discovery.dream_craft.desc: "$umbra_discovery_finder$ encontró inspiración para [GetTrait('art_dream_craft').GetName( GetPlayer )] en el $umbra_discovery_region$, digno de una [umbra_expedition|E]"
- umbra_discovery_aphrodesia: "Afrodisia"
- umbra_discovery.aphrodesia.desc: "$umbra_discovery_finder$ encontró inspiración para [GetTrait('art_aphrodesia').GetName( GetPlayer )] en el $umbra_discovery_region$, digno de una [umbra_expedition|E]"
- umbra_discovery_kryos: "Kryos"
- umbra_discovery.kryos.desc: "$umbra_discovery_finder$ encontró inspiración para [GetTrait('art_kryos').GetName( GetPlayer )] en el $umbra_discovery_region$, digno de una [umbra_expedition|E]"
+ umbra_discovery_oneiromancy: "Oneiromancia"
+ umbra_discovery.oneiromancy.desc: "$umbra_discovery_finder$ ha encontrado una inspiración para [GetTrait('art_umbra_discovery_oneiromancy').GetName( GetPlayer )] en $umbra_discovery_region$ digna de una [umbra_expedition|E]"
  umbra_discovery_metamorphosis: "Metamorfosis"
  umbra_discovery.metamorphosis.desc: "$umbra_discovery_finder$ encontró inspiración para [GetTrait('art_metamorphosis').GetName( GetPlayer )] en el $umbra_discovery_region$, digno de una [umbra_expedition|E]"
  umbra_discovery_pyretics: "Pirética"
  umbra_discovery.pyretics.desc: "$umbra_discovery_finder$ encontró inspiración para [GetTrait('art_pyretics').GetName( GetPlayer )] en el $umbra_discovery_region$, digno de una [umbra_expedition|E]"
+ umbra_discovery_skycraft: "Arte del Cielo"
+ umbra_discovery.skycraft.desc: "$umbra_discovery_finder$ ha encontrado una inspiración para [GetTrait('art_skycraft').GetName( GetPlayer )] en $umbra_discovery_region$ digna de una [umbra_expedition|E]"
  umbra_discovery_realm_nature: "Naturaleza del Señorío"
  umbra_discovery.realm_nature.desc: "$umbra_discovery_finder$ encontró inspiración para [GetTrait('realm_nature').GetName( GetPlayer )] en el $umbra_discovery_region$, digno de una [umbra_expedition|E]"
  umbra_discovery_pet_dragon: "Huevo de dragón"
@@ -341,8 +330,8 @@
  umbra_discovery.elemental_bane.desc: "$umbra_discovery_finder$ ha encontrado un Azote Elemental en $umbra_discovery_region$, digno de una [umbra_expedition|E]."
  umbra_discovery_wyrm_fetish: "Fetiche del Wyrm"
  umbra_discovery.wyrm_fetish.desc: "$umbra_discovery_finder$ ha encontrado un fetiche del Wyrm en $umbra_discovery_region$, digno de una [umbra_expedition|E]."
- umbra_discovery_urgetaints_xp: "Favor de Maeljin"
- umbra_discovery.urgetaints_xp.desc: "$umbra_discovery_finder$ ha encontrado una oportunidad para ganar el favor de los Maeljin en $umbra_discovery_region$, digna de una [umbra_expedition|E]"
+ umbra_discovery_maeljingifts_xp: "Favor de los Maeljin"
+ umbra_discovery.maeljingifts_xp.desc: "$umbra_discovery_finder$ ha encontrado una oportunidad de ganarse el favor de los Maeljin en $umbra_discovery_region$ digna de una [umbra_expedition|E]"
  umbra_discovery_temple_obscura: "El Templo Obscura"
  umbra_discovery.temple_obscura.desc: "$umbra_discovery_finder$ ha encontrado el camino hacia la siguiente estancia del Templo Obscura en $umbra_discovery_region$, digna de una [umbra_expedition|E]"
 
@@ -540,7 +529,7 @@
  has_anger_enough_for_two_worlds_perk_tooltip: "@warning_icon!#X #bold no#! tienes el [perk|E]: [GetPerk('anger_enough_for_two_worlds_perk').GetName( GetPlayer )]#!"
  
  # Umbra Tooltip
- paying_for_spirit_travel_toast: "Has pagado oro para comprar un [Glossary('True Jade','game_concept_true_jade_desc')]"
+ paying_for_spirit_travel_toast: "Has pagado oro para comprar un [Glossary('Jade Verdadero','game_concept_true_jade_desc')]"
  stepping_sideways_toast: "Paso lateral"
  stepping_sideways_tooltip: "Gastas $POD_energy_gnosis$ para entrar en la [umbra|E]."
  passing_gauntlet_toast: "Cruzar la Celosía"
@@ -595,7 +584,7 @@
  hellhole_desc: "Una Cloaca es un área de la [UmbraGlossary('penumbra')] saturada con energías de la Wyrm, generalmente debido a algo particularmente destructivo o tóxico que existe en el lado material de la Celosía. Las Cloacas son profundamente destructivas para todo lo que las rodea y son criaderos de Banes poderosos."
  veinous_stair_desc: "La Escalera Venosa es un pasaje desde Estigia directamente hacia el [UmbraGlossary('pod_realm_labyrinth')]. Siendo el lugar más estable de las [UmbraGlossary('shadowlands')], la Escalera está compuesta por una piedra negra de tipo desconocido."
  onyx_tower_desc: "La Torre de Ónice es la morada de Caronte, el pasado y futuro Emperador de Estigia. El edificio más alto de Estigia, representa el poder de Caronte y su capacidad para supervisar el [UmbraGlossary('dark_kingdom_of_iron')]."
- periphery_desc: "La Periferia, a veces llamada también la «Penumbra Suave», es un lugar —o un estado mental, como señalarían muchos $glossary_fera$— entre la [UmbraGlossary('penumbra')] y el Mundo Material."
+ periphery_desc: "La Periferia, a veces llamada también la «Umbra Blanda», es un lugar —o un estado mental, como señalarían muchos $glossary_fera$— entre la [UmbraGlossary('penumbra')] y el Mundo Material."
  broken_mirror_desc: "Los Espejos Rotos son lugares donde los límites entre el Mundo Material y el [UmbraGlossary('yomi_wan')] se han debilitado debido a cantidades masivas de sufrimiento mortal, Chi Corrupto y espíritus desolados."
  blight_desc: "Una Plaga es un área de la [UmbraGlossary('penumbra')] dañada por la contienda entre la $glossary_weaver$ y el $glossary_wyrm$. Estas zonas urbanas están densas de Banes y asfixiadas por las redes de la Tejedora; en cierto modo, representan todos los aspectos negativos de una ciudad, reificados y comprimidos en un área pequeña."
  broken_lands_desc: "Una Tierra Rota es algo sacado de un cuento de hadas. Se oye hablar de gente que encuentra una bifurcación en un sendero donde antes no la había, o una cueva abriéndose en un acantilado que hace dos días era sólido. Los caballos no quieren seguir ese camino y se ponen muy nerviosos cuanto más se acercan. A veces el sendero conduce a una extraña zona de naturaleza salvaje donde los animales no se comportan correctamente: liebres que cazan coyotes, arañas que tejen redes de plata o buitres que devoran los huesos de los cadáveres sin dañar la carne. Puede que el sol no salga durante días, o que la luna brille de color verde o rojo."
@@ -621,7 +610,7 @@
  # Umbra Location
  
  umbra_realm_earth: "Tierra"
- umbra_realm_earth_desc: "El mundo material. Entre los mundos de realidad «sólida» dentro del Teluria, la Tierra se denomina a menudo «el Señorío», lo que implica su primacía. La celestina del planeta es, por supuesto, Gaia, y la sombra de la Tierra se llama [UmbraGlossary('penumbra')].\n\n$POD_splat_werewolf_plural$ y otros cambiaformas se refieren a ella como el «[Glossary('Reino de Gaia','game_concept_gaia_realm_desc')]», en honor a Gaia, el espíritu de la Tierra.\n\n$POD_splat_wraith_plural$ llaman a este reino [Glossary('Tierras de Piel','game_concept_skinlands_desc')], en contraste con las [UmbraGlossary('shadowlands')] (la Penumbra Oscura) que conectan con el [UmbraGlossaryLocalized('shadowlands','Inframundo')] (la Umbra Oscura).\n\nEn el lenguaje común de los #TOOLTIP:GAME_TRAIT,hadas,[GetNullCharacter] #L Kithain#!#!, el Mundo Despierto es la Tierra... la parte de la Tierra que no está en las Umbras ni en el [UmbraGlossary('dreaming')]. También llamado Mundo de Otoño, la Tierra de los Sueños Incumplidos y el Mundo de la Carne."
+ umbra_realm_earth_desc: "El mundo material. Entre los mundos de realidad «sólida» dentro de la Telúrica, la Tierra se denomina a menudo «el Reino», lo que implica su primacía. El celestino del planeta es, por supuesto, Gaia, y la sombra de la Tierra se llama [UmbraGlossary('penumbra')].\n\n$POD_splat_werewolf_plural$ y otros cambiaformas se refieren a él como el «[Glossary('Reino de Gaia','game_concept_gaia_realm_desc')]», en honor de Gaia, el espíritu de la Tierra.\n\n$POD_splat_wraith_plural$ llaman a este reino [Glossary('Tierras de Piel','game_concept_skinlands_desc')], en contraste con las [UmbraGlossary('shadowlands')] (la Penumbra Oscura) que conecta con el [UmbraGlossaryLocalized('shadowlands','Inframundo')] (la Umbra Oscura).\n\nEn el Habla Común de los #TOOLTIP:GAME_TRAIT,fae,[GetNullCharacter] #L Kithain#!#!, el Mundo Despierto es la Tierra... la parte de la Tierra que no está en las Umbras ni en el [UmbraGlossary('dreaming')]. También llamado el Mundo Otoñal, la Tierra de los Sueños Incumplidos y el Mundo de la Carne."
  earth_effect_desc: ""
 
  umbra_realm_penumbra: "Penumbra"
@@ -709,7 +698,7 @@
  the_tunnels_effect_desc: ""
  
  umbra_realm_balloon: "Globo"
- umbra_realm_balloon_desc: "Globo es un [Glossary('Reino Hogar','game_concept_home_realm_desc')] de los Pooka.\n\nHay varias entradas en Globo, cada una con trampas de prueba a lo largo del camino y un frecuente tráfico de visitantes que van y vienen. Casi todo el mundo es bienvenido, excepto las personas de tendencia más violenta (un redcap Oscuro que entre en Globo buscando cena probablemente sea humillado, magullado y finalmente expulsado a botes, con el cuerpo golpeado en mil lugares, si es que sobrevive al rebote). Incluso los sidhe son bienvenidos y a veces aceptados si no intentan dominar a todos los que ven y mantienen un aire de «diversión». Por supuesto, ninguna de las trampas de la entrada ni las bromas sociales habituales pueden hacer que un sidhe parezca ridículo, pero eso no impide que la mayoría de los habitantes de Globo lo intenten."
+ umbra_realm_balloon_desc: "Balloon es un [Glossary('Reino Hogar','game_concept_home_realm_desc')] de los Pooka.\n\nHay varias entradas a Balloon, cada una con trampas de prueba por el camino y un frecuente tráfico de visitantes que van y vienen. Casi todo el mundo es bienvenido, salvo los individuos de talante más violento (un gorro rojo Unseelie que entre en Balloon buscando cena probablemente será humillado, magullado y por último expulsado, con el cuerpo molido en mil sitios, si sobrevive a la expulsión). Incluso los sidhe son bienvenidos y a veces aceptados si no intentan dominar a todos los que ven y mantienen un aire de «diversión». Por supuesto, ninguna de las trampas de entrada ni las bromas sociales habituales pueden hacer parecer ridículo a ningún sidhe, pero eso no impide que la mayoría de los habitantes de Balloon lo intenten."
  balloon_effect_desc: ""
  
  umbra_realm_vale_of_mists: "Valle de las Nieblas"
@@ -733,11 +722,11 @@
  blotkeldur_effect_desc: ""
  
  umbra_realm_wastelands: "Tierras Baldías"
- umbra_realm_wastelands_desc: "Las Tierras Baldías son un [Glossary('Reino de Pesadilla','game_concept_nightmare_realm_desc')] en el [UmbraGlossary('deep_dreaming')] y el hogar del Pozo de las Penas Contadas.\n\nLas Tierras Baldías son un lugar oscuro y miserable donde las pesadillas ejercen un dominio eterno. En este [Glossary('Reino de Pesadilla','game_concept_nightmare_realm_desc')] interminable, las pasiones y miedos más retorcidos de los mortales se pudren y crecen. Bosques de hongos y valles llenos de líquenes húmedos y venenosos cubren tierras que alguna vez albergaron palacios capaces de rivalizar con [UmbraGlossary('arcadia')]. En este lugar, la oscuridad es total y los Thallain ejercen un reinado innegable sobre la tierra. Ningún changeling cuerdo se atrevería a visitar este lugar, salvo por un simple hecho: el Pozo de las Penas Contadas descansa en el centro de las Tierras Baldías. Se dice que el Pozo revela todo el pasado a cualquiera que pueda soportar contemplar sus profundidades. Muchos changelings en los Reinos Profundos afirman haber tenido visiones del Pozo. Puede que no sea más que una mentira creada por los gobernantes de los [Glossary('Reinos de Pesadilla','game_concept_nightmare_realm_desc')], o puede que sea algo más. Algunos afirman que es una posible vía para todos los Kithain."
+ umbra_realm_wastelands_desc: "Los Páramos son un [Glossary('Reino de Pesadilla','game_concept_nightmare_realm_desc')] en el [UmbraGlossary('deep_dreaming')] y hogar de la Poza de las Penas Contadas.\n\nLos Páramos son un lugar oscuro y miserable donde las pesadillas ejercen un dominio eterno. En este [Glossary('Reino de Pesadilla','game_concept_nightmare_realm_desc')] sin fin, las pasiones y los miedos más retorcidos de los mortales se enconan y crecen. Bosques de setas venenosas y valles llenos de líquenes húmedos y ponzoñosos cubren tierras que en su día albergaron palacios capaces de rivalizar con [UmbraGlossary('arcadia')]. En este lugar, la oscuridad es completa y los Thallain ejercen un dominio innegable sobre la tierra. Ningún changeling cuerdo se atrevería a visitar este lugar, salvo por un simple hecho: la Poza de las Penas Contadas reposa en el centro de los Páramos. Se dice que la Poza revela todo el pasado a quien sea capaz de soportar mirar en sus profundidades. Muchos changelings de los Reinos Profundos aseguran tener visiones de la Poza. Puede que sea solo una mentira creada por los gobernantes de los [Glossary('Reinos de Pesadilla','game_concept_nightmare_realm_desc')], o puede que sea algo más. Algunos afirman que es un posible camino a seguir para todos los Kithain."
  wastelands_effect_desc: ""
  
  umbra_realm_hieronymus_continuum: "Continuo de Hieronymus"
- umbra_realm_hieronymus_continuum_desc: "El Continuo de Hieronymus es un [Glossary('Reino de Sueño','game_concept_dream_realm_desc')] en el Lejano o, según algunos, en el [UmbraGlossary('deep_dreaming')], el lugar de nacimiento de los Nockers.\n\nLa apariencia y dimensiones reales del reino son objeto de gran debate entre los físicos nocker. Algunas leyendas sostienen que los primeros nockers vinieron de este Reino de Sueño y viajaron a la Tierra en un huevo mecánico gigante. Pocos nockers apoyan este relato, reconociendo en privado a [UmbraGlossary('arcadia')] como su verdadero hogar, pero casi todos ellos sacarán el cuento como una navaja automática en una discusión como «prueba» de su superioridad sobre los demás hadas. Algunos afirman que el continuo es más que otro reino de sueño, sino que es parte de una dimensión totalmente diferente que existe fuera del [UmbraGlossary('dreaming')] en un pliegue del continuo espacio-tiempo. Los nockers que han llegado a este reino y han regresado siempre lo hacen con profundos conocimientos sobre la invención. La única forma conocida de llegar es a través de anomalías de grietas en el [UmbraGlossary('far_dreaming')] y con un Casco de Onda Delta."
+ umbra_realm_hieronymus_continuum_desc: "El Continuo Hieronymus es un [Glossary('Reino de Sueño','game_concept_dream_realm_desc')] del Lejano o [UmbraGlossary('deep_dreaming')] que algunos dicen que es el lugar de nacimiento de los Nockers.\n\nEl aspecto y las dimensiones reales del reino son objeto de mucho debate entre los físicos Nocker. Algunas leyendas sostienen que los primeros Nockers procedían de este Reino de Sueño y viajaron a la Tierra en un huevo mecánico gigante. Pocos Nockers respaldan este relato, pues en privado reconocen a [UmbraGlossary('arcadia')] como su verdadero hogar, pero casi todos lo sacarán a relucir como una navaja en una discusión, como «prueba» de su superioridad sobre los demás fae. Algunos afirman que el continuo es más que otro Reino de Sueño y forma parte de una dimensión completamente distinta que existe fuera del [UmbraGlossary('dreaming')], en un pliegue del continuo espacio-tiempo. Los Nockers que han llegado a este reino y han regresado siempre lo hacen con profundas ideas sobre el invento. La única forma conocida de llegar es mediante anomalías de grieta en el [UmbraGlossary('far_dreaming')] y con un Casco de Ondas Delta."
  hieronymus_continuum_effect_desc: ""
  
  umbra_realm_wyldweir: "Wyldweir"
@@ -753,7 +742,7 @@
  arawns_forge_effect_desc: ""
  
  umbra_realm_great_dream_forest: "Gran Bosque de Sueño"
- umbra_realm_great_dream_forest_desc: "El Gran Bosque de Sueño, también llamado el Bosque de [Glossary('Dán','game_concept_dan_desc')] o el Milderwood, es el bosque que es todos los bosques en el [UmbraGlossary('far_dreaming')].\n\nSolo hay un Bosque en el [UmbraGlossary('far_dreaming')]. Antiguo, majestuoso y a menudo lleno de peligros, el Gran Bosque abarca áreas más grandes que cualquier continente del mundo despierto. Cada tipo imaginable de árbol, tanto «real» como de otro tipo, existe aquí. El Gran Bosque incluso se extiende bajo los [UmbraGlossary('slumbering_oceans')] y hacia otras tierras mucho más allá de la vista de la mayoría de los Kithain."
+ umbra_realm_great_dream_forest_desc: "El Gran Bosque del Sueño, también llamado el Bosque de [Glossary('Dán','game_concept_dan_desc')] o el Milderwood, es el bosque que es todos los bosques en el [UmbraGlossary('far_dreaming')].\n\nSolo hay un Bosque en el [UmbraGlossary('far_dreaming')]. Antiguo, majestuoso y a menudo lleno de peligro, el Gran Bosque abarca zonas mayores que cualquier continente del mundo despierto. Todo tipo imaginable de árbol, tanto «real» como de otro tipo, existe aquí. El Gran Bosque llega incluso por debajo de los [UmbraGlossary('slumbering_oceans')] y hasta otras tierras muy lejos del alcance de la vista de la mayoría de los Kithain."
  great_dream_forest_effect_desc: ""
  
  umbra_realm_discordant_woods: "Bosques Discordantes"
@@ -825,7 +814,7 @@
  madness_realm_effect_desc: ""
  
  umbra_realm_meridianus: "Meridianus"
- umbra_realm_meridianus_desc: "Meridianus es un reino similar al vacío, de vientos violentos y chimera de sombras, dejado por los Tuatha de Danaan para proteger contra los Habitantes.\n\nLos Habitantes que realizan el viaje hacia el Mundo de Otoño descubren rápidamente que llegar a la Tierra es mucho más fácil que regresar. La Tierra ejerce una oscura y pesada succión psíquica de la que a los efímeros parientes oscuros les resulta difícil escapar. Esta «succión» se manifiesta de varias formas. La más importante de ellas es una región del [UmbraGlossary('near_dreaming')] que existe justo más allá de las Nieblas. Llamada Meridianus, esta región es una antigua defensa dejada por los Tuatha para ayudar a imponer la Prohibición de Plata. Un reino de tormentas aullantes y poca sustancia, es casi imposible de navegar y está acechado por peligrosas chimera. Llamadas Sombras de Sueño, estas masas negras y sombrías atacan a cualquier pariente oscuro que las visite, disolviendo su sustancia quimérica. Los Habitantes solo encuentran este extraño aspecto de la región al salir del mundo despierto, no al entrar en él."
+ umbra_realm_meridianus_desc: "Meridianus es un reino parecido a un vacío, de vientos violentos y quimeras de sombra, dejado por los Tuatha de Danaan para protegerse de los Moradores.\n\nLos Moradores que emprenden el viaje al Mundo Otoñal descubren pronto que llegar a la Tierra es mucho más fácil que volver. La Tierra ejerce una resaca psíquica oscura y pesada de la que a los efímeros Dark-Kin les cuesta escapar. Esta «resaca» se manifiesta de varias maneras. La más importante es una región del [UmbraGlossary('near_dreaming')] que existe justo más allá de las Brumas. Llamada Meridianus, esta región es una antigua defensa que dejaron los Tuatha para ayudar a hacer cumplir la Prohibición de Plata. Un reino de tormentas aulladoras y poca sustancia, es casi imposible de recorrer y está habitado por peligrosas quimeras. Llamadas Sombras de Sueño, estas masas negras y sombrías atacan a cualquier Dark-kin visitante y disuelven su sustancia quimérica. Los Moradores solo se topan con este extraño aspecto de la región al salir del mundo despierto, no al entrar en él."
  meridianus_effect_desc: ""
  
  umbra_realm_sea_of_silver: "Mar de Plata"
@@ -833,7 +822,7 @@
  sea_of_silver_effect_desc: ""
  
  umbra_realm_snail_graveyards: "Cementerios de Caracoles"
- umbra_realm_snail_graveyards_desc: "Los Cementerios de Caracoles son seis lugares conocidos en el [UmbraGlossary('dreaming')] hacia los que viajan los caracoles cuando se dan cuenta de que están muriendo.\n\nDebido a que el camino es difícil y los caracoles moribundos viajan lentamente, la mayoría nunca llega a los cementerios y muere en algún lugar del trayecto. De hecho, una de las formas más fáciles para que un changeling encuentre el camino al Cementerio de Caracoles más cercano es seguir el rastro fragmentado de conchas de caracol bajo sus pies. A medida que avanzas, las conchas se vuelven gradualmente más gruesas en el suelo y, finalmente, te encuentras en un Cementerio de Caracoles. Los caracoles más viejos y fuertes van a [UmbraGlossary('arike')] para morir."
+ umbra_realm_snail_graveyards_desc: "Los Cementerios de Caracoles son seis lugares conocidos del [UmbraGlossary('dreaming')] a los que viajan los caracoles cuando se dan cuenta de que están muriendo.\n\nComo el camino es difícil y los caracoles moribundos viajan despacio, la mayoría nunca llega a los cementerios y muere por el camino. De hecho, una de las maneras más fáciles para que un changeling encuentre el camino al Cementerio de Caracoles más cercano es seguir el rastro fragmentario de conchas de caracol bajo los pies. A medida que uno se acerca, las conchas se vuelven poco a poco más espesas en el suelo y al final se encuentra en un Cementerio de Caracoles. Los caracoles más viejos y fuertes van a [UmbraGlossary('arike')] a morir."
  snail_graveyards_effect_desc: ""
  
  umbra_realm_spawning_fields: "Campos de Procreación"
@@ -881,7 +870,7 @@
  inventium_effect_desc: "La acción Buscar Invención ya no dará estrés al fallar (como una [umbra_expedition|E])\nLa acción Buscar Invención dará oro al fallar (como una [umbra_expedition|E])\nLa acción Buscar Innovación ya no dará estrés al fallar (como una [umbra_expedition|E])"
 
  umbra_realm_epiphamy: "Epifamia"
- umbra_realm_epiphamy_desc: "Las Epifamias encarnan conceptos de abstracción completa, como «Las leyes de la naturaleza» o «El amor verdadero». Se manifiestan como nubes coloridas en el cielo umbrío del [UmbraGlossary('vulgate')] que pueden dar al visitante pistas sobre el concepto que encarnan."
+ umbra_realm_epiphamy_desc: "Las Epifanías encarnan conceptos de abstracción completa, como las «Leyes de la Naturaleza» o el «Amor Verdadero». Se marcan como nubes de colores en el cielo umbral de la [UmbraGlossary('vulgate')] que pueden dar al visitante pistas sobre el concepto que encarnan."
  epiphamy_effect_desc: "Mayor recompensa/requisito para desbloquear el entrenamiento del Estilo de vida de Administración."
 
  umbra_realm_elemental_courts: "Cortes Elementales"
@@ -954,7 +943,7 @@
  swar_effect_desc: "Desbloquea una interacción que te permite enviar un [GetTrait('wraith').GetName( GetNullCharacter )] vinculado a este [Glossary('Reino Oscuro','game_concept_dark_kingdom_desc')] para que tenga la oportunidad de aprender nuevos [arcanoi_lifestyle|E]."
  
  umbra_realm_night_markets: "Mercados Nocturnos"
- umbra_realm_night_markets_desc: "Los Mercados Nocturnos, nominalmente parte de [UmbraGlossary('swar')], donde habitan los muertos del sudeste asiático."
+ umbra_realm_night_markets_desc: "Los Mercados Nocturnos son nominalmente parte de [UmbraGlossary('swar')], donde moran los Muertos del sudeste asiático."
  night_markets_effect_desc: "Desbloquea una interacción que te permite enviar un [GetTrait('wraith').GetName( GetNullCharacter )] vinculado a este [Glossary('Reino Oscuro','game_concept_dark_kingdom_desc')] para que tenga la oportunidad de aprender nuevos [arcanoi_lifestyle|E]."
  
  umbra_realm_mantaqat_khayal: "Mantaqat Khayal"
@@ -996,7 +985,7 @@
  yomi_wan_effect_desc: "Desbloquea una interacción que te permite enviar a un [GetTrait('wraith').GetName( GetNullCharacter )] vinculado al [UmbraGlossary('yomi_wan')] para que regrese como un [GetTrait('kueijin').GetName( GetPlayer )]."
  
  umbra_realm_sea_of_shadow: "Mar de las Sombras"
- umbra_realm_sea_of_shadow_desc: "El Mar de Sombras es un término utilizado por los wraiths para describir la capa «inferior» de la [UmbraGlossary('tempest')], que fluye alrededor y hacia el [UmbraGlossary('pod_realm_labyrinth')] y el [UmbraGlossary('oblivion')]."
+ umbra_realm_sea_of_shadow_desc: "Mar de Sombras es un término que usan los Espectros para describir la capa «inferior» de la [UmbraGlossary('tempest')] que fluye alrededor y dentro del [UmbraGlossary('pod_realm_labyrinth')] y [UmbraGlossary('oblivion')]."
  sea_of_shadow_effect_desc: "Permite encontrar un whistimmu aleatorio como una [umbra_expedition|E].\nGana $POD_plasmic_maa$ como una [umbra_expedition|E], lo que permite reclutar $POD_plasmic_maa$ como [men_at_arms|E]."
  
  umbra_realm_tempest: "Tempestad"
@@ -1055,7 +1044,7 @@
  the_homeland_of_the_children_of_gaia_effect_desc: "$UMBRA_DISCOVERY_FETISH$\n$UMBRA_RECRUIT_BYGONE$"
  
  umbra_realm_the_homeland_of_the_fianna: "La Tierra Natal de los Fianna"
- umbra_realm_the_homeland_of_the_fianna_desc: "La tierra natal de los Fianna es un paisaje verde de colinas, valles y cañadas que parecen sacados de las tradiciones de las novelas de fantasía histórica. Las hadas juegan en los bosques y espíritus ciervo recorren la tierra bajo la guía del Ciervo como la «Cacería Salvaje», protegiendo la tierra natal de los intrusos. Las celebraciones espontáneas son comunes en la tierra natal y suelen atraer a cualquiera que esté cerca."
+ umbra_realm_the_homeland_of_the_fianna_desc: "La patria de los Fianna es un paisaje verde de colinas, valles y vaguadas que parece sacado de las tradiciones de las novelas de fantasía histórica. Las hadas juegan en los bosques y los espíritus de ciervo recorren la tierra bajo la guía de Ciervo como la «Cacería Salvaje», protegiendo la patria de intrusos. Las celebraciones espontáneas son comunes en la patria y tienden a reunir a todo el que esté al alcance del oído."
  the_homeland_of_the_fianna_effect_desc: "$UMBRA_DISCOVERY_FETISH$\n$UMBRA_RECRUIT_BYGONE$"
  
  umbra_realm_the_homeland_of_the_get_of_fenris: "La Tierra Natal de la Camada de Fenris"
@@ -1084,7 +1073,7 @@
  the_homeland_of_the_silver_fangs_effect_desc: "$UMBRA_DISCOVERY_FETISH$\n$UMBRA_RECRUIT_BYGONE$"
  
  umbra_realm_the_homeland_of_the_corax: "La Tierra Natal de los Corax"
- umbra_realm_the_homeland_of_the_corax_desc: "La tierra natal de los Corax es un árbol gigantesco con innumerables ramas extendidas llenas de recovecos ideales para anidar. Helios brilla perpetuamente sobre el árbol, que está conectado con casi todos los señoríos umbrales, lo que permite a los hombres cuervo un paso rápido."
+ umbra_realm_the_homeland_of_the_corax_desc: "La patria de los Corax es un árbol gigantesco de incontables ramas extendidas, llenas de rincones ideales para anidar. $glossary_helios$ brilla perpetuamente sobre el árbol, que está conectado con casi todos los reinos umbrales y permite un paso rápido a los hombres cuervo."
  the_homeland_of_the_corax_effect_desc: "$UMBRA_RECRUIT_BYGONE$"
  
  umbra_realm_the_homeland_of_the_nuwisha: "La Tierra Natal de los Nuwisha"
@@ -1145,11 +1134,11 @@
  cyberrealm_effect_desc: "$UMBRA_RECRUIT_BYGONE$"
 
  umbra_realm_digital_web: "Red Digital"
- umbra_realm_digital_web_desc: "La Red Digital es una Zona basada enteramente en la realidad virtual, y el hogar no oficial de los Adeptos Virtuales. Ha de ser el fundamento de la iniciativa «Realidad 2.0» de los Adeptos, que traslada a la humanidad a un mundo mejor, libre de los problemas de la realidad material en la Tierra. Del mismo modo que Internet es una especie de «espacio» virtual que no guarda relación con una ubicación real, la Red Digital es en teoría un importante Punto de Correspondencia. También puede tener algún tipo de conexión con el Monte Qaf de los Ahl-i-Batin."
+ umbra_realm_digital_web_desc: "La Red Digital es una Zona basada por completo en la realidad virtual y el hogar extraoficial de los Adeptos Virtuales. Ha de ser el cimiento de la iniciativa «Realidad 2.0» de los Adeptos, que lleva a la humanidad a un mundo mejor, libre de los problemas de la realidad material de la Tierra. Igual que Internet es una especie de «espacio» virtual que no guarda relación con ningún lugar real, la Red Digital es teóricamente un importante Punto de Correspondencia. También puede tener algún tipo de conexión con el Monte Qaf de los Ahl-i-Batin."
  digital_web_effect_desc: ""
 
  umbra_realm_hollow_worlds: "Mundos Huecos"
- umbra_realm_hollow_worlds_desc: "No una, sino una serie de versiones de la teoría de la existencia de una Tierra Hueca. Superficialmente similares a los tipos de señoríos que se ven en la Umbra Media, los Mundos Huecos destacan porque los humanos corrientes pueden alcanzarlos mediante ciertos pasajes subterráneos, pozos de mina y ascensores anodinos. Además, algunos sostienen que los Mundos Huecos constituyen un tipo de [umbra|E] completamente distinto, y lo llaman la «Umbra Interna», afirmando que si la Tierra es un teatro y el mundo más allá del vestíbulo es la [umbra|E], la zona entre bastidores es donde pueden hallarse los Mundos Huecos. En cualquier caso, los intentos de cruzar la Celosía hacia los Mundos Huecos fracasan invariablemente, lo que desconcierta a la mayoría de los teóricos de la topografía umbral."
+ umbra_realm_hollow_worlds_desc: "No una, sino una serie de versiones de la teoría de la existencia de una Tierra Hueca. Superficialmente similares a los tipos de reinos que se ven en la Umbra Media, los Mundos Huecos son dignos de mención porque los humanos corrientes pueden llegar a ellos mediante ciertos pasajes subterráneos, pozos de mina y ascensores anodinos. Además, algunos sostienen que los Mundos Huecos constituyen un tipo de [umbra|E] completamente distinto, y la llaman la «Umbra Interior», alegando que, si la Tierra es un teatro y el mundo más allá del vestíbulo es la [umbra|E], la zona entre bastidores es donde se encuentran los Mundos Huecos. En cualquier caso, los intentos de cruzar el Gauntlet hacia los Mundos Huecos fracasan invariablemente, lo que desconcierta a la mayoría de los teóricos de la topografía umbral."
  hollow_worlds_effect_desc: ""
 
  umbra_realm_erebus: "Erebus"
@@ -1209,7 +1198,7 @@
  umbra_realm_court_of_sokhta: "Corte de Sokhta"
  umbra_realm_court_of_sokhta_desc: "$umbra_realm_sokhta_desc$"
  umbra_realm_sokhta: "Sokhta"
- umbra_realm_sokhta_desc: "Sokhta es un aspecto de Luna, la Celeste que es patrona de los Garou y de muchas otras Razas Cambiantes, y su corte alberga a muchas Lúnulas y otros espíritus simpatizantes de la Nación Garou."
+ umbra_realm_sokhta_desc: "Sokhta es un aspecto de $glossary_luna$, la $glossary_celestine$ que es la patrona de los Garou y de muchos otros $glossary_fera$, y su corte alberga a muchos Lunes y otros espíritus afines a la Nación Garou."
  court_of_sokhta_effect_desc: "Puede obtener los beneficios de don planetario correspondientes como una [umbra_expedition|E] [GetPlayer.Custom('PlanetarygiftsAddicionalChance')]"
 
  umbra_realm_court_of_katanka_sonnak: "Corte de Katanka-Sonnak"
@@ -1283,7 +1272,7 @@
  weaver_reaches_effect_desc: ""
 
  umbra_realm_wyld_reaches: "Límites Kaóticos"
- umbra_realm_wyld_reaches_desc: "Los Límites Kaóticos son un lugar de caos. Planetas y cometas danzan unos alrededor de otros, colisionando según leyes en constante cambio. Soles de frío ardiente que congelan todo a su alrededor y otros que lo repelen todo con ondas de antigravedad orbitan entre ellos."
+ umbra_realm_wyld_reaches_desc: "Los Confines del Wyld son un lugar de caos. Planetas y cometas danzan unos alrededor de otros sin chocar según leyes en perpetuo cambio. Entre ellos circulan soles fríos abrasadores que congelan todo a su alrededor y otros que lo repelen todo con ondas antigravitatorias."
  wyld_reaches_effect_desc: "$UMBRA_DISCOVERY_FETISH$"
 
  umbra_realm_wyrm_reaches: "Límites Wyrmianos"
@@ -1307,7 +1296,7 @@
  jupiter_effect_desc: ""
 
  umbra_realm_saturn: "Saturno"
- umbra_realm_saturn_desc: "Saturno es un gran planeta gigante gaseoso en el sistema solar exterior. Al igual que Júpiter, las visitas a la «superficie» de Saturno no son realmente posibles. Sus lunas, sin embargo, albergan una serie de bases utilizadas por los magos."
+ umbra_realm_saturn_desc: "Saturno es un gran planeta gigante gaseoso del sistema solar exterior. Como en Júpiter, las visitas a la «superficie» de Saturno no son realmente posibles. Sus lunas, sin embargo, albergan varias bases que usan los magos."
  saturn_effect_desc: ""
  
  umbra_realm_uranus: "Urano"
@@ -1331,11 +1320,11 @@
  sun_effect_desc: ""
 
  umbra_realm_shard_realm_of_prime: "Reino Astilla de Prime"
- umbra_realm_shard_realm_of_prime_desc: "[Glossary('Reino Astilla','game_concept_shard_realm_desc')] conectado a la Tierra y a Luna."
+ umbra_realm_shard_realm_of_prime_desc: "[Glossary('Reino Fragmento','game_concept_shard_realm_desc')] conectado con la Tierra y $glossary_luna$."
  shard_realm_of_prime_effect_desc: ""
 
  umbra_realm_darkside_moon_base: "Base Lunar del Lado Oscuro"
- umbra_realm_darkside_moon_base_desc: "La Base Lunar del Lado Oscuro es una Construcción de los Ingenieros del Vacío situada en el cráter Daedalus, en el «lado oscuro» de la Luna. Se describe como un lugar oscuro y depresivo para vivir y trabajar."
+ umbra_realm_darkside_moon_base_desc: "La Base Lunar del Lado Oscuro es una Construcción de los Ingenieros del Vacío situada en el cráter Dédalo, en la «cara oculta» de la Luna. Se la describe como un lugar oscuro y deprimente para vivir y trabajar."
  darkside_moon_base_effect_desc: ""
 
  umbra_realm_victoria_station: "Estación Victoria"
@@ -1355,7 +1344,7 @@
  mus_effect_desc: ""
 
  umbra_realm_fors_collegis_mercuris: "Fors Collegis Mercuris"
- umbra_realm_fors_collegis_mercuris_desc: "Fors Collegis Mercuris, «La Escuela Accidental de Mercurio», era una escuela mágica secreta para magos neófitos de la Orden de Hermes. Fue construida originalmente a las afueras de Génova, Italia, en 1190 por magos de la Casa Bonisagus. En 1450, bajo la creciente presión de los asaltos de la Orden de la Razón, la escuela fue transportada al Reino del Horizonte de Mus, la luna invisible de Mercurio."
+ umbra_realm_fors_collegis_mercuris_desc: "Fors Collegis Mercuris, «el Colegio Accidental de Mercurio», fue una escuela mágica secreta para magos neófitos de la Orden de Hermes. Fue construida originalmente a las afueras de Génova, Italia, en 1190, por magos de la Casa Bonisagus. En 1450, ante la creciente presión de los asaltos de la Orden de la Razón, el colegio fue trasladado al Reino del Horizonte de Mus, la luna invisible de Mercurio."
  fors_collegis_mercuris_effect_desc: ""
 
  umbra_realm_shard_realm_of_life: "Reino Astilla de la Vida"
@@ -1439,7 +1428,7 @@
  autochthonia_effect_desc: ""
 
  umbra_realm_balador: "Balador"
- umbra_realm_balador_desc: "Balador era una capilla del Reino del Horizonte controlada por el Culto del Éxtasis, donde los miembros de la Tradición y sus invitados de honor podían entregarse a una variedad de placeres que alteraban la mente.\n\nLa historia de Balador es algo difusa, pero existió en la época de la Gran Convocación, cuando conmocionó a los visitantes de otras Tradiciones que solo veían la libertinaje sin la disciplina. La única ley importante en Balador es «Si no daña a nadie, haz lo que quieras»; se redactó un código de conducta más detallado después de que demasiados visitantes violaran la primera cláusula de este principio básico."
+ umbra_realm_balador_desc: "Balador fue una capilla del Reino del Horizonte controlada por el Culto del Éxtasis, donde los miembros de la Tradición y sus invitados de honor podían entregarse a una variedad de placeres que alteraban la mente.\n\nLa historia de Balador es algo confusa, pero existía en la época de la Gran Convocatoria, cuando escandalizó a visitantes de otras Tradiciones que solo veían el libertinaje sin la disciplina. La única ley importante en Balador es «Si a nadie dañas, haz lo que desees»; se redactó un código de conducta más detallado después de que demasiados visitantes violaran la primera cláusula de este principio básico."
  balador_effect_desc: ""
 
  umbra_realm_gernsback_continuum: "Continuo Gernsback"
@@ -1451,7 +1440,7 @@
  midrealm_effect_desc: ""
 
  umbra_realm_moreauvia: "Moreauvia"
- umbra_realm_moreauvia_desc: "Moreauvia, también conocida como Plantación de Investigación n.º 4: Constructo Moreauvia, es un Reino del Horizonte de los Progenitores donde la Convención realiza ingeniería genética de esclavos."
+ umbra_realm_moreauvia_desc: "Moreauvia, alias Plantación de Investigación n.º 4: la Construcción Moreauvia es una Construcción del Reino del Horizonte de los Progenitores en la que la Convención modifica genéticamente a esclavos."
  moreauvia_effect_desc: ""
 
  umbra_realm_red_donjon: "Red Donjon"
@@ -1491,7 +1480,7 @@
  
  umbra_realm_maeljin_duchies: "Ducados de Maeljin"
  umbra_realm_maeljin_duchies_desc: "Un muro masivo hecho de piedra y hueso fosilizado custodia el [UmbraGlossary('central_duchy')], y los dominios de cada uno de los Incarna Maeljin colindan con este muro, rodeándolo por todos lados. El muro que rodea el Ducado Central tiene traicioneras puntas de hierro afiladas como cuchillas en la parte superior, decoradas regularmente con los cuerpos de cualquiera que haya desagradado particularmente al Incarna Maeljin cuyo dominio colinda esa sección del muro."
- maeljin_duchies_effect_desc: "@wyrm_icon![umbra_expedition|E]: Obtén [urgetaints_lifestyle|E] [lifestyle_experience|E] si tienes el [lifestyle|E]"
+ maeljin_duchies_effect_desc: "@wyrm_icon![umbra_expedition|E]: Obtén [lifestyle_experience|E] de [maeljingifts_lifestyle|E] si tienes el [lifestyle|E]"
 
  umbra_realm_border_duchies: "Ducados Fronterizos"
  umbra_realm_border_duchies_desc: "Algunas porciones de [UmbraGlossary('malfeas')] que se encuentran entre los [UmbraGlossary('maeljin_duchies')] parecen ser páramos yermos, pero las apariencias pueden engañar. Estos páramos son en realidad otros dos Ducados pertenecientes a Incarna Maeljin que evitan interactuar con otros de su especie."
@@ -1511,7 +1500,7 @@
  black_spiral_labyrinth_effect_desc: "@wyrm_icon![umbra_expedition|E]: Encontrar un $glossary_wyrm$ [fetish|E]"
  
  umbra_realm_copernicus_research_center: "Centro de Investigación Copérnico"
- umbra_realm_copernicus_research_center_desc: "El Centro de Investigación Copérnico («The Cop») es una enorme esfera de Dyson translúcida controlada por los Ingenieros del Vacío. Rodea a una de las estrellas de Alfa Centauri y se extiende hasta una UA de radio."
+ umbra_realm_copernicus_research_center_desc: "El Centro de Investigación Copérnico («el Cop») es una esfera de Dyson masiva y translúcida controlada por los Ingenieros del Vacío. Rodea una de las estrellas de Alfa Centauri y se extiende hasta un radio de una UA."
  copernicus_research_center_effect_desc: ""
  
  umbra_realm_first_city: "Primera Ciudad"
@@ -1519,7 +1508,7 @@
  first_city_effect_desc: "El personaje estacionado gana un poco de [prestige|E] cada #V 3#! meses."
  
  umbra_realm_mirror_zone: "Zona Espejo"
- umbra_realm_mirror_zone_desc: "La misteriosa Zona Espejo disfruta mostrando a sus «huéspedes» lo que podría haber sido."
+ umbra_realm_mirror_zone_desc: "La misteriosa Zona Espejo es aficionada a mostrar a sus «invitados» lo que podría haber sido."
  mirror_zone_effect_desc: "[umbra_aptitude|E]: [grace_i]#P +25%#!"
  
  umbra_realm_null_zone: "Caminos de Wyck"
@@ -1527,7 +1516,7 @@
  null_zone_effect_desc: "[umbra_aptitude|E]: [grace_i]#P +25%#!"
 
  umbra_realm_neter_khertet: "Neter-khertet"
- umbra_realm_neter_khertet_desc: "Antes de la fundación del [UmbraGlossary('dark_kingdom_of_sand')], los muertos egipcios habitaban en Neter-Khertet, el «lugar subterráneo divino»."
+ umbra_realm_neter_khertet_desc: "Antes de la fundación del [UmbraGlossary('dark_kingdom_of_sand')], los muertos egipcios moraban en Neter-Khertet, el «lugar subterráneo divino»."
  neter_khertet_effect_desc: ""
 
  umbra_realm_kakuri: "Kakuri"
@@ -1552,7 +1541,7 @@
  hell_of_boiling_oil_effect_desc: "Puede reclutar a [GetMaA('fat_striders_of_the_hell_of_boiling_oil').GetName] como [men_at_arms|E]\n$UMBRA_INVESTMENTS_OF_SOUL$"
 
  umbra_realm_hell_of_bitter_truth: "Infierno de la Verdad Amarga"
- umbra_realm_hell_of_bitter_truth_desc: "El Infierno de la Verdad Amarga es el destino para los fanáticos religiosos. Aunque el Infierno de la Verdad Amarga no ofrece tormentos físicos, para estas personas religiosas, la idea de que no fueron dignas del Cielo o —peor aún— que su religión era errónea, sirve como una fuente constante de miseria. Los sirvientes demoníacos de Hen Tian recuerdan regularmente a los internos que no fueron dignos de presenciar a los dioses, y a veces ofrecen a las almas formas de «redimirse» para alcanzar el dominio de sus deidades. Naturalmente, todas estas misiones son trampas que a menudo implican servir al [Glossary('Rey Yama','podgloss.yamaking')], hundiendo a las víctimas aún más profundamente en la desesperación una vez que conocen la verdad."
+ umbra_realm_hell_of_bitter_truth_desc: "El Infierno de la Amarga Verdad es el destino de los fanáticos religiosos. Aunque el Infierno de la Amarga Verdad no ofrece tormentos físicos, para estos religiosos la idea de que no eran dignos del Cielo o, aún peor, de que su religión estaba equivocada, es una fuente constante de miseria. Los sirvientes demonio de Hen Tian recuerdan con regularidad a los reclusos que no eran dignos de contemplar a los dioses y a veces ofrecen a un alma maneras de «redimirse» para llegar al dominio de sus deidades. Naturalmente, todas estas búsquedas son engaños que a menudo implican servir al [Glossary('Rey Yama','podgloss.yamaking')] y que hunden a las víctimas aún más en la desesperación cuando descubren la verdad."
  hell_of_bitter_truth_effect_desc: "$UMBRA_INVESTMENTS_OF_SOUL$"
 
  umbra_realm_hell_of_spiked_chains: "Infierno de las Cadenas con Púas"

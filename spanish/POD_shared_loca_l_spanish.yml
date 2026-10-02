@@ -11,6 +11,7 @@
  POD_shared_loca_failure: "¡Fracaso!"
  POD_shared_loca_critical_success: "¡Éxito crítico!"
  POD_shared_loca_critical_failure: "¡Fracaso crítico!"
+ summoned_army: "Ejército invocado"
 
 
 # Definiciones de modificadores
@@ -25,7 +26,7 @@
 # Decisiones
  POD_unlocks_next_objective: "Desbloquea el siguiente objetivo"
  POD_unlocks_next_objectives: "Desbloquea los siguientes objetivos"
- POD_unlocked_empire_ghw: "Desbloqueas la [GetPlayer.GetFaith.Custom('GHWName')] para el [casus_belli|E] de [empire|E]."
+ POD_unlocked_empire_ghw: "Desbloqueas la [GetPlayer.GetFaith.GHWName] para el [casus_belli|E] de [empire|E]."
 
 
 # Opciones de interacción de personajes
@@ -100,6 +101,8 @@
 
  # Descripciones personalizadas útiles
  TARGET_CHARACTER_GETFIRSTNAME: "[TARGET_CHARACTER.GetFirstName]"
+ TARGET_CHARACTER_GETFIRSTNAMENOTOOLTIP: "[TARGET_CHARACTER.GetFirstNameNoTooltip]"
+ TARGET_CHARACTER_COTERIENAME: "[TARGET_CHARACTER.Custom('PODGetCoterieName')]"
  CHARACTER_GETFIRSTNAMENICKNAMED: "[CHARACTER.GetFirstNameNicknamed]"
  POD_NUMBER_CUSTOMDESC: "$VALUE|0$"
  ADDITIONAL_PERK_COST_EFFECT: "#clickable Esta ventaja cuesta $VALUE|V0$ [Select_CString( EqualTo_CFixedPoint( '(CFixedPoint)$VALUE|q$', '(CFixedPoint)1' ), 'punto', 'puntos' )] de ventaja#!"
@@ -113,3 +116,4 @@
  POD_weather_magic.duel.tt.attacker_lost: "No pudiste desatar el peligro natural seleccionado sobre la región objetivo"
  POD_weather_magic_from_enemy_toast: "¡Peligro!"
  POD_weather_magic_from_enemy.tt: "[actor.GetFirstName] ha desatado un peligro natural en tu reino"
+ POD_clean_interaction: "Eliminar [modifiers|E]"

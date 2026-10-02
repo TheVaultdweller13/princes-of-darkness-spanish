@@ -50,7 +50,7 @@
  rule_pod_seek_knowledge_limits: "$POD_gamerule$ Requisitos para aprender $pod_disciplines$ raras"
  setting_pod_seek_knowledge_limits_enabled: "Activado"
  setting_pod_seek_knowledge_limits_enabled_desc: "Las $pod_disciplines$ vampíricas raras requerirán que cumplas algunos de sus requisitos previos antes de poder aprenderlas."
- setting_pod_seek_knowledge_limits_disabled: "Desactivado"
+ setting_pod_seek_knowledge_limits_disabled: "#high Desactivado#!"
  setting_pod_seek_knowledge_limits_disabled_desc: "Las $pod_disciplines$ vampíricas raras no requerirán que cumplas sus requisitos previos antes de poder aprenderlas."
 
  rule_pod_splat_hostility: "$POD_gamerule$ Hostilidad entre Tipos de Criatura"
@@ -73,9 +73,18 @@
 
  rule_pod_sorcery_availability: "$POD_gamerule$ Disponibilidad de #TOOLTIP:GAME_TRAIT,sorcerer,[GetNullCharacter] #L Hechicería#!#!"
  setting_pod_sorcery_availability_restricted: "Restringido"
- setting_pod_sorcery_availability_restricted_desc: "Solo los $POD_splat_bastet$ y los [splats|E] de tipo humano como los $POD_splat_hunter_plural$, $POD_splat_ghoul_plural$ o la [GetTrait('kinfolk').GetName(GetNullCharacter)] pueden aprender #TOOLTIP:GAME_TRAIT,sorcerer,[GetNullCharacter] #L Hechicería#!#!.\nTras el $pod_Embrace$, se convierte en [GetTrait('bloodsorcery').GetName(GetNullCharacter)]."
+ setting_pod_sorcery_availability_restricted_desc: "Solo los $POD_splat_bastet$ y los [mortal_like_splats|E] pueden aprender #TOOLTIP:GAME_TRAIT,sorcerer,[GetNullCharacter] #L Hechicería#!#!.\nTras el $pod_Embrace$, esta se convierte en [GetTrait('bloodsorcery').GetName(GetNullCharacter)]."
  setting_pod_sorcery_availability_unrestricted: "#high @haight_icon! Sin restricciones#!"
  setting_pod_sorcery_availability_unrestricted_desc: "Cualquier [splat|E] puede aprender #TOOLTIP:GAME_TRAIT,sorcerer,[GetNullCharacter] #L Hechicería#!#!.\nEl rasgo se mantiene tras el $pod_Embrace$."
+ rule_pod_sol_decision_requirements: "$POD_gamerule$ Disponibilidad de #TOOLTIP:GAME_TRAIT,eternal_rebirth_seeker,[GetNullCharacter] #L Buscador del Renacimiento Eterno#!#!"
+ setting_pod_sol_decision_requirements_st_mode: "#high @wod_icon! Conflicto Imperecedero#!"
+ setting_pod_sol_decision_requirements_st_mode_desc: "Solo las #TOOLTIP:GAME_TRAIT,mummy,[GetNullCharacter] #L Momias#!#! y sus enemigos declarados pueden buscar el renacimiento eterno."
+ setting_pod_sol_decision_requirements_default: "Cruzada Eterna"
+ setting_pod_sol_decision_requirements_default_desc: "Solo las #TOOLTIP:GAME_TRAIT,mummy,[GetNullCharacter] #L Momias#!#!, sus aliados y sus enemigos pueden buscar el renacimiento eterno."
+ setting_pod_sol_decision_requirements_haight_mode: "#high @haight_icon! Gran Guerra#!"
+ setting_pod_sol_decision_requirements_haight_mode_desc: "Las #TOOLTIP:GAME_TRAIT,mummy,[GetNullCharacter] #L Momias#!#!, sus aliados, sus enemigos y quienes tengan interés en estos asuntos pueden buscar el renacimiento eterno."
+ setting_pod_sol_decision_requirements_unrestricted: "#high @mage_icon! Contienda Universal#!"
+ setting_pod_sol_decision_requirements_unrestricted_desc: "Todo el que tenga un [learning_i] [learning|E] alto puede buscar el renacimiento eterno."
 
  rule_pod_splat_mixing: "$POD_gamerule$ Mezcla de Tipos de Criatura"
  setting_pod_splat_mixing_default: "Predeterminado"
@@ -213,9 +222,9 @@
 
  rule_baybars_purge_difficulty: "$POD_gamerule$ Crisis de la Purga de Baybars"
  setting_baybars_purge_difficulty_none: "#high Sin Purga#!"
- setting_baybars_purge_difficulty_none_desc: "La purga de Baybars de la crisis sobrenatural egipcia no ocurrirá."
+ setting_baybars_purge_difficulty_none_desc: "La purga de Baybars contra los sobrenaturales egipcios no ocurrirá."
  setting_baybars_purge_difficulty_default: "Purga de Baybars Predeterminada"
- setting_baybars_purge_difficulty_default_desc: "La purga de Baybars de la crisis sobrenatural egipcia ocurrirá."
+ setting_baybars_purge_difficulty_default_desc: "La purga de Baybars contra los sobrenaturales egipcios ocurrirá."
 
  rule_pod_patreon_characters: "$POD_gamerule$ Personajes de Patreon"
  setting_pod_patreon_characters_enabled: "Activado"
@@ -422,6 +431,16 @@
  setting_pod_ai_levy_discount_50_desc: "El mantenimiento de la [levy|E] es un #V 50%#! más barato para la IA."
  setting_pod_ai_levy_discount_90: "#high 90% de descuento#!"
  setting_pod_ai_levy_discount_90_desc: "El mantenimiento de la [levy|E] es un #V 90%#! más barato para la IA."
+ rule_POD_scaling_discipline_mastery: "$POD_gamerule$ Maestría de $pod_discipline$ escalable"
+ setting_POD_scaling_discipline_mastery_disabled: "Desactivado"
+ setting_POD_scaling_discipline_mastery_disabled_desc: "Todos los dones de $pod_discipline$ tienen el mismo coste."
+ setting_POD_scaling_discipline_mastery_enabled: "#high Activado#!"
+ setting_POD_scaling_discipline_mastery_enabled_desc: "Los dones de $pod_discipline$ de nivel superior cuestan progresivamente más puntos de don."
+ rule_POD_clan_affinity: "$POD_gamerule$ Afinidad de $pod_discipline$ del $pod_clan$"
+ setting_POD_clan_affinity_disabled: "Desactivado"
+ setting_POD_clan_affinity_disabled_desc: "Todos los dones de $pod_discipline$ cuestan lo mismo, sea cual sea el $pod_clan$."
+ setting_POD_clan_affinity_enabled: "#high Activado#!"
+ setting_POD_clan_affinity_enabled_desc: "Los dones de $pod_discipline$ ajenos al $pod_clan$ cuestan #V 1 #!punto de don más. Los del propio $pod_clan$ cuestan #V 1#! menos (con un coste mínimo de 1). Los Caitiff, los sangre débil y las líneas de sangre personalizadas no se ven afectados."
  
  # Overwritten vanilla game rules
   rule_POD_conquerors_frequency: "$rule_conquerors_frequency$"

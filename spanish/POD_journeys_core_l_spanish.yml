@@ -25,6 +25,7 @@
  
  POD_journey_name: "[Localize(Concatenate(ROOT.Var('journey_type').GetFlagKey,'_name'))]"
  POD_journey_name_targeted: "$POD_journey_name$ [ROOT.Var('target').Char.GetFirstName]"
+ POD_journey_name_targeted_no_suffix: "$POD_journey_name$"
  POD_journey_name_targeted_trait: "$POD_journey_name$ [ROOT.Var('target_trait').Trait.GetName(GetPlayer)]"
  POD_journey_name_targeted_artifact: "$POD_journey_name$ [ROOT.Var('target_artifact').Artifact.GetName]"
  POD_journey_name_ritual: "[Localize(Concatenate3('ritual_',ROOT.Var('ritual').GetFlagKey,'_name'))] sobre [ROOT.Var('target').Char.GetFirstName]"
@@ -162,8 +163,12 @@
  POD_journey_not_implemented_yet: "Este [journey|E] aún no está implementado"
 
  POD_new_journey_starts_paused_tt: "Dado que tu [journey|E] actual está en la [travel_phase|E], el nuevo [journey|E] se iniciará pausado."
+ POD_energy_restoration_disabled_combat: "No puedes restaurar tu energía de este modo mientras estás en un [pod_combat_encounter_with_icon|E]"
+ POD_energy_restoration_disabled_journey: "No puedes restaurar tu energía de este modo mientras estás en un [journey|E]"
+ POD_energy_restoration_disabled_umbra: "No puedes restaurar tu energía de este modo mientras estás en la [umbra|E]"
+ POD_energy_restoration_disabled_heist: "No puedes restaurar tu energía de este modo mientras estás en una [infiltration_mission|E]"
+ POD_energy_restoration_disabled_travel: "No puedes restaurar tu energía de este modo mientras estás [traveling|E]"
  
- POD_journey_exsanguination_disabled: "¡No puedes drenar a tus prisioneros mientras estás fuera de casa!"
  
  POD_start_trait_study_journey_tt: "Has obtenido una idea del [trait|E] [journey_trait.GetName(GetPlayer)]. Para entenderlo completamente, debes estudiarlo mediante el [journey|E] que acabas de desbloquear."
  POD_start_anatomy_study_journey_tt: "Comenzarás un [journey|E] para la comprensión completa de la anatomía de [journey_trait.GetName(GetPlayer)]."

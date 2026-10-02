@@ -7,7 +7,7 @@
  POD_weaken_fetter_interaction_need_fetter: "Debe haber una [Fetter|E] que debilitar en primer lugar. Ten en cuenta que no todas las [Fetters|E] pueden ser debilitadas."
  POD_weaken_fetter_interaction.success: "¡Tu manipulación tendrá éxito!"
  POD_weaken_fetter_interaction.failure: "¡Tu manipulación fallará!"
- POD_weaken_fetter_interaction_effect: "Una [Fetter|E] aleatoria será debilitada, o incluso destruida."
+ POD_weaken_fetter_interaction_effect: "Un [Fetter|E] aleatorio se debilita o se destruye."
  
  POD_bind_interaction: "Vincular wraith"
  POD_bind_interaction_desc: "Vincula a un ente con magias oscuras y pura voluntad. Es poco probable que disfrute siendo vinculado y es probable que te guarde un gran rencor por ello. Los intentos repetidos pueden fortalecer la vinculación."
@@ -29,12 +29,9 @@
  command_wraith_interaction.release: "Desvincular"
  POD_not_in_possession: "#bold No#! posee a ningún personaje."
  
- POD_command_wraith_recall_interaction: "Llamar"
- POD_command_wraith_recall_interaction_desc: "[recipient.GetTitledFirstName] se trasladará a tu corte."
- POD_command_wraith_recall_interaction_extra_icon: "$hook_extra_icon$"
  
  POD_summon_wraith_on_death_interaction: "Invocación de wraith al morir"
- POD_summon_wraith_on_death_interaction_desc: "Si [recipient.GetFirstNamePossessive] muere en un plazo de 10 años, invoca a [recipient.GetHerHim] a tu corte cuando [recipient.GetSheHe] muera, convirtiéndose en un [GetTrait('wraith').GetName( GetNullCharacter )] en el proceso."
+ POD_summon_wraith_on_death_interaction_desc: "Si [recipient.GetFirstName] muere en un plazo de 10 años, invócalo a tu corte cuando [recipient.GetSheHe] muera, convirtiéndose en [GetTrait('wraith').GetName( GetNullCharacter )] en el proceso."
  marked_wraith_has_arrive: "El wraith marcado ha llegado"
 
  POD_summon_wraith_interaction: "Invocar wraith"

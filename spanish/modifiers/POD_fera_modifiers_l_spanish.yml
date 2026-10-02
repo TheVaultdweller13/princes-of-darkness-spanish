@@ -7,9 +7,9 @@
  POD_gnosis_4_modifier: "Gnosis: 4" 
  POD_gnosis_5_modifier: "Gnosis: 5" 
 
- POD_delirium_modifier: "[battle_modifier|E]: Delirio" 
+ POD_delirium_modifier: "Delirio" 
  POD_delirium_modifier_desc: "El Delirio es el miedo instintivo y abrumador que afecta a los seres humanos que ven a hombres lobo y a algunos otros $glossary_fera$ en sus formas de guerra." 
- POD_reduced_delirium_modifier: "[battle_modifier|E]: Delirio reducido" 
+ POD_reduced_delirium_modifier: "Delirio reducido" 
  POD_reduced_delirium_modifier_desc: "El Delirio es el miedo instintivo y abrumador que afecta a los seres humanos que ven a hombres lobo y a algunos otros $glossary_fera$ en sus formas de guerra." 
 
 
@@ -18,7 +18,7 @@
  #################
  
  POD_werewolf_form_crinos_modifier: "Forma Crinos"
- POD_werewolf_form_crinos_modifier_desc: "La «forma de guerra», un híbrido aterrador de humano y lobo con fuerza y velocidad superiores.\n#weak Otorga [GetModifier('POD_delirium_modifier').GetNameWithTooltip] [modifier|E] a los [knights|E] enemigos cuando actúes como [commander|E] durante la [combat_phase|E], o a tu oponente durante unos [single_combat_duel_plural|E]#!"
+ POD_werewolf_form_crinos_modifier_desc: "La «Forma de Guerra», un aterrador híbrido de humano y lobo con fuerza y velocidad superiores."
  POD_werewolf_form_glabro_modifier: "Forma Glabro"
  POD_werewolf_form_glabro_modifier_desc: "Se asemeja vagamente a un humano, pero tiene demasiados rasgos bestiales para serlo."
  POD_werewolf_form_hispo_modifier: "Forma Hispo"
@@ -27,7 +27,7 @@
  POD_werewolf_form_lupus_modifier_desc: "Indistinguible de un lobo normal, pero con una velocidad superior."
  
  POD_ajaba_form_crinos_modifier: "Forma Crinos"
- POD_ajaba_form_crinos_modifier_desc: "La forma de guerra; ligeramente más pequeña y menos poderosa que la de los Garou, pero también un poco más resistente.\n#weak Otorga [GetModifier('POD_delirium_modifier').GetNameWithTooltip] [modifier|E] a los [knights|E] enemigos cuando actúes como [commander|E] durante la [combat_phase|E], o a tu oponente durante unos [single_combat_duel_plural|E]#!"
+ POD_ajaba_form_crinos_modifier_desc: "La forma de guerra; algo más pequeña y menos poderosa que la de los Garou, pero también un poco más resistente."
  POD_ajaba_form_anthros_modifier: "Forma Anthros"
  POD_ajaba_form_anthros_modifier_desc: "Forma casi humana."
  POD_ajaba_form_crocas_modifier: "Forma Crocas"
@@ -43,7 +43,7 @@
  POD_ananasi_form_pithus_modifier_desc: ""
  
  POD_bastet_form_crinos_modifier: "Forma Crinos"
- POD_bastet_form_crinos_modifier_desc: "Un imponente híbrido humano-felino, una combinación peligrosa de fuerza y astucia.\n#weak Otorga [GetModifier('POD_delirium_modifier').GetNameWithTooltip] [modifier|E] a los [knights|E] enemigos cuando actúes como [commander|E] durante la [combat_phase|E], o a tu oponente durante unos [single_combat_duel_plural|E]#!"
+ POD_bastet_form_crinos_modifier_desc: "Híbrido corpulento de humano y gato, una peligrosa combinación de fuerza y astucia."
  POD_bastet_form_sokto_modifier: "Forma Sokto"
  POD_bastet_form_sokto_modifier_desc: "Casi humano."
  POD_bastet_form_chatro_modifier: "Forma Chatro"
@@ -52,12 +52,12 @@
  POD_bastet_form_feline_modifier_desc: "Gato normal." 
  
  POD_corax_form_crinos_modifier: "Forma Crinos"
- POD_corax_form_crinos_modifier_desc: "La forma Crinos es una criatura mitad aviar muy torpe. Los Corax generalmente solo usan esta forma para repeler enemigos el tiempo suficiente para escapar, y solo en momentos en los que se han quedado sin alternativa.\n#weak Otorga [GetModifier('POD_reduced_delirium_modifier').GetNameWithTooltip] [modifier|E] a los [knights|E] enemigos cuando actúe como [commander|E] durante la [combat_phase|E], o a tu oponente durante unos [single_combat_duel_plural|E]#!"
+ POD_corax_form_crinos_modifier_desc: "La forma Crinos es una criatura semiaviar muy torpe. Los Corax solo suelen usar esta forma para repeler a los enemigos el tiempo suficiente para escapar, y únicamente cuando no les queda alternativa."
  POD_corax_form_corvid_modifier: "Forma Corvid"
  POD_corax_form_corvid_modifier_desc: "La forma Corvid es esencialmente la de un cuervo común, aunque los Corax son aves particularmente grandes que tienen un tamaño más cercano al de las águilas."
  
  POD_gurahl_form_crinos_modifier: "Forma Crinos"
- POD_gurahl_form_crinos_modifier_desc: "La forma de guerra. Extraordinariamente fuerte y resistente, por no hablar de enorme: entre 10 y 16 pies de altura, y con un peso de hasta 1200 kg.\n#weak Otorga [GetModifier('POD_reduced_delirium_modifier').GetNameWithTooltip] [modifier|E] a los [knights|E] enemigos cuando actúe como [commander|E] durante la [combat_phase|E], o a tu oponente durante unos [single_combat_duel_plural|E]#!"
+ POD_gurahl_form_crinos_modifier_desc: "La forma de guerra. Extraordinariamente fuerte y resistente, además de enorme: de entre 3 y casi 5 metros de altura, y con un peso de hasta 1200 kg."
  POD_gurahl_form_arthren_modifier: "Forma Arthren"
  POD_gurahl_form_arthren_modifier_desc: "Forma casi humana. Considerablemente más fuerte y resistente que la forma glabro de los hombres lobo, se cree que los Gurahl en forma Arthren inspiraron las leyendas del Sasquatch y criaturas similares."
  POD_gurahl_form_bjornen_modifier: "Forma Bjornen"
@@ -75,22 +75,22 @@
  POD_kitsune_form_kyubi_modifier_desc: "Zorro común."
  
  POD_mokole_form_archid_modifier: "Forma Archid"
- POD_mokole_form_archid_modifier_desc: "La forma de guerra se considera la «forma verdadera» de cualquier individuo Mokolé. A través de la Mnesis, sueñan con los reptiles, aves y dinosaurios del pasado, lo que determina las características de la forma Archid.\n#weak Otorga [GetModifier('POD_delirium_modifier').GetNameWithTooltip] [modifier|E] a los [knights|E] enemigos cuando actúe como [commander|E] durante la [combat_phase|E], o a tu oponente durante unos [single_combat_duel_plural|E]#!"
+ POD_mokole_form_archid_modifier_desc: "La forma de guerra se considera la «verdadera forma» de cualquier Mokolé individual. A través de la Mnesis, sueñan con los reptiles, aves y dinosaurios del pasado, lo que determina las características de la forma Árquida."
 
 
 
  
  POD_nagah_form_azhi_dahaka_modifier: "Forma Azhi Dahaka"
- POD_nagah_form_azhi_dahaka_modifier_desc: "La forma de combate varía de un Nagah a otro, pero todos tienen una capucha masiva como una cobra, muchos se hacen cicatrices para ser más perceptibles en esta forma, son capaces de desencajar sus mandíbulas y tienen branquias (son totalmente anfibios en esta forma). La masa del Nagah aumenta, pero se debe a una cola de 16 a 20 pies para la mitad inferior del cuerpo; sus brazos se vuelven similares a los de una serpiente al desarrollar vértebras en lugar de huesos normales, lo que les permite luchar cuerpo a cuerpo con mayor facilidad. Las manos del hombre serpiente desarrollan garras tan terribles como las de cualquier Garou, y sus escamas y osteodermos adquieren una resistencia sobrenatural. Cualquier cicatriz que el Nagah haya recibido destaca significativamente en esta forma, a menudo como patrones en las escamas del Azhi Dahaka. El Nagah provoca el efecto completo del Delirio en esta forma; pocos humanos pueden soportar mirar tal encarnación de su miedo primario a las serpientes.\n#weak Otorga [GetModifier('POD_delirium_modifier').GetNameWithTooltip] [modifier|E] a los [knights|E] enemigos cuando actúe como [commander|E] durante la [combat_phase|E], o a tu oponente durante unos [single_combat_duel_plural|E]#!"
+ POD_nagah_form_azhi_dahaka_modifier_desc: "La forma de combate difiere de un Nagah a otro, pero todos tienen una enorme capucha como la de una cobra, muchos se hacen cicatrices para ser más llamativos en esta forma, pueden desencajar las mandíbulas y tienen branquias (son completamente anfibios en esta forma). La masa del Nagah aumenta, pero se debe a una cola de entre 5 y 6 metros que ocupa la mitad inferior del cuerpo; sus brazos se vuelven serpentinos, pues en lugar de huesos normales les crecen vértebras, lo que les permite agarrar más fácilmente. Las manos de los hombres serpiente echan garras tan terribles como las de cualquier Garou y sus escamas y escudos adquieren una resiliencia sobrenatural. Cualquier escarificación que haya recibido el Nagah destaca de forma notable en esta forma, a menudo como dibujos en las escamas del Azhi Dahaka."
  POD_nagah_form_silkaram_modifier: "Forma Silkaram"
- POD_nagah_form_silkaram_modifier_desc: "De apariencia casi humana, pero el pelo y la piel son reemplazados por pequeñas escamas, el rostro se aplana y los ojos se vuelven más serpentinos, los dientes se fusionan excepto por dos colmillos que se retraen como los de una cobra. En esta forma, obtienen un veneno peligroso para los mortales e incluso para los no-muertos."
+ POD_nagah_form_silkaram_modifier_desc: "De aspecto casi humano, pero el pelo y la piel se sustituyen por pequeñas escamas, el rostro se aplana y los ojos se vuelven más como los de una serpiente, los dientes se funden salvo dos colmillos que se retraen como los de una cobra. En esta forma adquieren un veneno peligroso para los mortales e incluso para los no-muertos."
  POD_nagah_form_kali_dahaka_modifier: "Forma Kali Dahaka"
  POD_nagah_form_kali_dahaka_modifier_desc: "Se asemeja a una serpiente gigante con dos diferencias; son mucho más grandes que cualquier cobra normal y tienen grandes colmillos venenosos. Con un impulso primario, pueden desarrollar un conjunto de brazos esbeltos. Esta forma también tiene branquias y puede respirar bajo el agua."
  POD_nagah_form_vasuki_modifier: "Forma Vasuki"
  POD_nagah_form_vasuki_modifier_desc: "Indistinguible de una cobra normal, una serpiente de cascabel, una boca de algodón u otra forma de raza."
  
  POD_nuwisha_form_manabozho_modifier: "Forma Manabozho"
- POD_nuwisha_form_manabozho_modifier_desc: "La forma de guerra, un híbrido de humano y coyote.\n#weak Otorga [GetModifier('POD_reduced_delirium_modifier').GetNameWithTooltip] [modifier|E] a los [knights|E] enemigos cuando actúe como [commander|E] durante la [combat_phase|E], o a tu oponente durante unos [single_combat_duel_plural|E]#!"
+ POD_nuwisha_form_manabozho_modifier_desc: "La forma de guerra, un híbrido de humano y coyote."
  POD_nuwisha_form_tsitsu_modifier: "Forma Tsitsu"
  POD_nuwisha_form_tsitsu_modifier_desc: "Forma casi humana."
  POD_nuwisha_form_sendeh_modifier: "Forma Sendeh"
@@ -100,16 +100,16 @@
  
 
  POD_ratkin_form_crinos_modifier: "Forma Crinos"
- POD_ratkin_form_crinos_modifier_desc: "La forma de guerra, un híbrido de humano y rata.\n#weak Otorga [GetModifier('POD_reduced_delirium_modifier').GetNameWithTooltip] [modifier|E] a los [knights|E] enemigos cuando actúe como [commander|E] durante la [combat_phase|E], o a tu oponente durante unos [single_combat_duel_plural|E]#!"
+ POD_ratkin_form_crinos_modifier_desc: "La forma de guerra, un híbrido de humano y rata."
  POD_ratkin_form_rodens_modifier: "Forma Rodens"
  POD_ratkin_form_rodens_modifier_desc: "Una rata de tamaño variable."
  
  POD_rokea_form_gladius_modifier: "Forma Gladius"
- POD_rokea_form_gladius_modifier_desc: "Llamada «Mandíbulas Erguidas» por los hombres tiburón, el Gladius es una criatura bípede con forma de tiburón de diez pies de altura. Al igual que la Crinos, las Mandíbulas Erguidas combinan el poder de un tiburón con la versatilidad de la forma humana. Esta forma incita un Delirio parcial en los humanos.\n#weak Otorga [GetModifier('POD_delirium_modifier').GetNameWithTooltip] [modifier|E] a los [knights|E] enemigos cuando actúe como [commander|E] durante la [combat_phase|E], o a tu oponente durante unos [single_combat_duel_plural|E]#!"
+ POD_rokea_form_gladius_modifier_desc: "Llamada «Mandíbulas Erguidas» por los hombres tiburón, la Gladius es una criatura bípeda de tiburón de tres metros. Similar a la Crinos, las Mandíbulas Erguidas combinan el poder de un tiburón con la versatilidad de una forma humana."
  POD_rokea_form_grabrus_modifier: "Forma Grabrus"
- POD_rokea_form_grabrus_modifier_desc: "También conocida como «Espalda Redonda», esta forma suele ser conocida solo por los Rokea terrestres; los hombres-tiburón que habitan en el océano tienen poco uso de ella. El Rokea pierde todo el vello corporal y se vuelve aún más feo que su forma homínida. Él o ella duplica su masa muscular y la espalda se ensancha a medida que la aleta dorsal comienza a formarse.\n#weak Otorga [GetModifier('POD_reduced_delirium_modifier').GetNameWithTooltip] [modifier|E] a los [knights|E] enemigos cuando actúe como [commander|E] durante la [combat_phase|E], o a tu oponente durante [single_combat_duel_plural|E]#!"
+ POD_rokea_form_grabrus_modifier_desc: "También conocida como «Lomo Redondo», esta forma suele ser conocida solo por los Rokea que viven en tierra firme; los hombres tiburón que viven en el océano apenas le encuentran utilidad. El Rokea pierde todo el vello y se vuelve aún más feo que en su forma homínida. Dobla su masa muscular y la espalda se ensancha mientras empieza a formarse la aleta dorsal."
  POD_rokea_form_chasmus_modifier: "Forma Chasmus"
- POD_rokea_form_chasmus_modifier_desc: "La forma que los Rokea llaman «Mandíbulas Luchadoras» es una pesadilla prehistórica que incita un Delirio total en los humanos. El Rokea se convierte en una versión gigante de su forma de raza, creciendo el doble de largo que su forma Squamus. Los Rokea realizan sus combates submarinos con esta forma.\n#weak Otorga [GetModifier('POD_delirium_modifier').GetNameWithTooltip] [modifier|E] a los [knights|E] enemigos cuando actúe como [commander|E] durante la [combat_phase|E], o a tu oponente durante [single_combat_duel_plural|E]#!"
+ POD_rokea_form_chasmus_modifier_desc: "La forma que los Rokea llaman «Mandíbulas de Combate» es una pesadilla prehistórica. El Rokea se convierte en una versión gigante de su forma de raza y crece hasta una vez y media la longitud de su forma Squamus. Los Rokea combaten bajo el agua en esta forma."
  POD_rokea_form_squamus_modifier: "Forma Squamus"
  POD_rokea_form_squamus_modifier_desc: "También denominada «Mandíbulas Nadadoras», esta forma es indistinguible de un tiburón normal de la especie del Rokea."
  
@@ -119,7 +119,7 @@
  POD_apis_form_aurochs_modifier_desc: "La forma animal"
  
  POD_camazotz_form_crinos_modifier: "Forma Crinos"
- POD_camazotz_form_crinos_modifier_desc: "La forma de guerra de los Camazotz, un híbrido de humano y murciélago.\n#weak Otorga [GetModifier('POD_delirium_modifier').GetNameWithTooltip] [modifier|E] a los [knights|E] enemigos cuando actúe como [commander|E] durante la [combat_phase|E], o a tu oponente durante [single_combat_duel_plural|E]#!"
+ POD_camazotz_form_crinos_modifier_desc: "La forma de guerra de los Camazotz, un híbrido de humano y murciélago."
  POD_camazotz_form_apterous_modifier: "Forma Apterous"
  POD_camazotz_form_apterous_modifier_desc: "Casi humano, incapaz de volar pero capaz de trepar excepcionalmente bien."
  POD_camazotz_form_megachiroptera_modifier: "Forma Megachiroptera"
@@ -147,9 +147,9 @@
 
 
  POD_shapeshift_form_shiva_modifier: "Shiva el Destructor"
- POD_shapeshift_form_shiva_modifier_desc: "En un estallido de luz sagrada, el Bastet se convierte en una forma Crinos de 3,6 metros de altura y seis brazos, un pantera de las sombras que empuña armas flamígeras. Hasta que el suelo quede sembrado de cadáveres, esta máquina de ira divina despedaza todo a su paso —enemigo o no— en jirones sangrientos."
+ POD_shapeshift_form_shiva_modifier_desc: "En un estallido de luz sagrada, el Bastet se convierte en un hombre pantera en forma Crinos de casi cuatro metros de altura y seis brazos que empuña armas llameantes. Hasta que el suelo queda sembrado de cuerpos, esta máquina de ira felina descuartiza todo lo que la rodea, enemigos o no, hasta convertirlo en sangrientas menudencias."
  POD_shapeshift_form_kali_modifier: "Kali la Madre Oscura"
- POD_shapeshift_form_kali_modifier_desc: "En un estallido de luz sagrada, el Bastet se convierte en una forma Crinos de 3,6 metros de altura y seis brazos, un pantera de las sombras que empuña armas flamígeras. Hasta que el suelo quede sembrado de cadáveres, esta máquina de ira divina despedaza todo a su paso —enemigo o no— en jirones sangrientos."
+ POD_shapeshift_form_kali_modifier_desc: "En un estallido de luz sagrada, el Bastet se convierte en un hombre pantera en forma Crinos de casi cuatro metros de altura y seis brazos que empuña armas llameantes. Hasta que el suelo queda sembrado de cuerpos, esta máquina de ira felina descuartiza todo lo que la rodea, enemigos o no, hasta convertirlo en sangrientas menudencias."
 
 
  #################
@@ -173,8 +173,6 @@
  protean_form_arms_coated_in_shark_teeth_modifier: "Brazos cubiertos de dientes de tiburón"
  protean_form_extra_legs_modifier: "Patas adicionales"
  protean_form_vestigial_wings_modifier: "Alas vestigiales"
- haunting_howl_perk_modifier: "[battle_modifier|E]: Aullido inquietante"
- pain_strength_perk_modifier: "Fuerza del dolor"
  maddening_howl_perk_modifier: "[battle_modifier|E]: Aullido enloquecedor"
  the_white_howl_modifier_ally: "[battle_modifier|E]: Aullido blanco"
  the_white_howl_modifier_enemy: "[battle_modifier|E]: Aullido blanco"
@@ -219,7 +217,7 @@
  raven_totem_modifier: "Tótem de Manada: Cuervo"
  raven_totem_modifier_desc: "El insaciable hambre de comida, conocimiento y riqueza del cuervo impulsa a sus hijos hacia adelante."
  rat_totem_modifier: "Tótem de Manada: Rata"
- rat_totem_modifier_desc: "La rata tiene un ejército a su disposición. Pocos, si es que alguno, pueden igualar a su innumerable infantería."
+ rat_totem_modifier_desc: "Rata tiene un ejército a su disposición. Pocos, si acaso alguno, pueden igualar a sus incontables soldados de a pie."
  bonyscrap_totem_modifier: "Tótem de Manada: Bonyscrap"
  bonyscrap_totem_modifier_desc: "El espíritu del buitre es un tipo desagradable, pero pocos pueden carroñear como él."
  hatii_totem_modifier: "Tótem de Manada: Hatii"
@@ -257,7 +255,9 @@
  tsukiyomi_totem_modifier: "Tótem de Manada: Tsuki-yomi"
  tsukiyomi_totem_modifier_desc: "La Diosa de la Luna iluminará tu camino, pero las mareas rugen con las lunas cambiantes."
  susanowo_totem_modifier: "Tótem de Manada: Susanowo"
- susanowo_totem_modifier_desc: "El Dios de las Tormentas responde a tu Furia con la suya propia.\nUsar magia climática de #V Tormenta#! inflige 1 de Rayo [POD_aggravated_damage|E] a tu objetivo y a todos sus [knights|E] si están en guerra contigo."
+ susanowo_totem_modifier_desc: "El Dios de las Tormentas responde a tu $glossary_rage$ con la suya.\nUsar Magia Climática de #V Tormenta#! inflige 1 de daño de [lightning_damage_short_with_icon|E] a tu objetivo y a todos sus [knights|E] si está en guerra contigo."
+ lion_totem_modifier: "Tótem de Manada: León"
+ lion_totem_modifier_desc: "Los inmensos rugidos y las poderosas fauces de León solo se igualan a su propio orgullo."
 
  #Wyrm
  whippoorwill_totem_modifier: "Tótem de Manada: Chotacabras"
@@ -265,7 +265,7 @@
  kirijama_totem_modifier: "Tótem de Manada: Kirijama"
  kirijama_totem_modifier_desc: "La existencia de Kirijama el Oculto está envuelta en misterio."
  greendragon_totem_modifier: "Tótem de Manada: Dragón Verde"
- greendragon_totem_modifier_desc: "Una vez protector de los Aulladores Blancos, el Dragón Verde sintió la caída de la Gracia tan duramente como ellos y sigue bendiciendo a sus hijos corruptos hasta el día de hoy."
+ greendragon_totem_modifier_desc: "En su día protector de los Aulladores Blancos, el Dragón Verde cayó en desgracia tan duramente como ellos y aún hoy sigue bendiciendo a sus hijos corruptos."
  bat_totem_modifier: "Tótem de Manada: Murciélago"
  bat_totem_modifier_desc: "La mitad de locura del murciélago aún sirve a su amo caído."
  hakaken_totem_modifier: "Tótem de Manada: Hakaken"

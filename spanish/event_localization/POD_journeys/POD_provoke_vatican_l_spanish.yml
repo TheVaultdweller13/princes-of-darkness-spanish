@@ -75,7 +75,7 @@
  POD_provoke_vatican.4.t: "Cortado en Seco"
  POD_provoke_vatican.4.desc: "Mi visión da vueltas. ¿En qué momento salió todo mal? Todo lo que quería era liberarnos de la esclavitud. "
  POD_provoke_vatican.4.desc.caelestius: "Mi visión da vueltas. ¿En qué momento salió todo mal? Todo lo que quería era una bendición. "
- POD_provoke_vatican.4.desc.end: "¿Por qué [adversary.GetFirstName] no puede entenderlo? ¿Por qué nadie puede entenderlo...?\n\nMi adversario niega con la cabeza. \"Esta noche, le hago un favor al mundo. Este es el mejor desenlace posible para tu búsqueda, [ROOT.Char.GetFirstNameNoTooltip]: contigo muerto, y tu nombre borrado de todos los registros, para que nadie se sienta jamás inspirado a intentar un plan tan desacertado de nuevo\".\n\nEl destello del arma de [adversary.GetHerHis] es lo último que veo antes de que todo termine."
+ POD_provoke_vatican.4.desc.end: "¿Por qué no lo entiende [adversary.GetFirstName]? ¿Por qué nadie lo entiende...?\n\nMi adversario niega con la cabeza [adversary.GetHerHis]. «Esta noche le hago un favor al mundo. Este es el mejor desenlace posible para tu búsqueda, [ROOT.Char.GetFirstNameNoTooltip]: contigo muerto y tu nombre borrado de todos los registros, para que nadie vuelva a sentirse inspirado a intentar una conjura tan desacertada.»\n\nEl destello del arma de [adversary.GetHerHis] es lo último que veo antes de que todo termine."
  POD_provoke_vatican.4.option.a: "Pero yo quería hacer historia..."
  POD_provoke_vatican.4.option.a.caelestius: "Pero aún no he hablado con el Papa..."
 
@@ -224,6 +224,7 @@
  POD_provoke_vatican.31.desc.end: "Quiero gritar, pero ningún sonido escapa de mis labios."
  POD_provoke_vatican.31.option.a: "¿Me quieres a mí? Entonces ven a buscarme."
  POD_provoke_vatican.31.option.a.tt: "Una sensación de finalidad te invade mientras preparas tu espada una última vez..."
+ POD_combat_title_vatican_lamb: "EL COMBATE FINAL"
 
  POD_provoke_vatican.32.t: "Cenizas a las Cenizas"
  POD_provoke_vatican.32.desc: "Cuando mi arma golpea el corazón del [GetTrait('supehunter').GetName(hunter4)], las visiones apocalípticas se desvanecen. La luz del día también retrocede. ¿Era eso también una alucinación?\n\nMe siento entre los escombros de lo que solía ser mi [ROOT.Char.Custom('PODDomicile')] y reflexiono sobre los acontecimientos de este viaje.\n\n"

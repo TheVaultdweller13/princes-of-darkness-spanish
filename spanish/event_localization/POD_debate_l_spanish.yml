@@ -1,0 +1,17 @@
+﻿l_spanish:
+
+ POD_CHANGE_CHARACTER_DEBATE_FORCE_ADD: "#P Ganas#! $VALUE|0V$ de Fuerza de debate"
+ POD_CHANGE_CHARACTER_DEBATE_FORCE_SUBTRACT: "#N Pierdes#! $VALUE|0V$ de Fuerza de debate"
+ POD_CHANGE_OPPONENTS_DEBATE_FORCE_ADD: "La oposición #N gana#! $VALUE|0V$ de Fuerza de debate"
+ POD_CHANGE_OPPONENTS_DEBATE_FORCE_SUBTRACT: "La oposición #P pierde#! $VALUE|0V$ de Fuerza de debate"
+
+ POD_debate_debate_strength_header: "#clickable Tu Fuerza de debate actual es [GetPlayer.MakeScope.GetVariable('character_debate_force').GetValue|V0]\nSe estima que la Fuerza de debate de la oposición es [GetPlayer.MakeScope.GetVariable('opponents_debate_force').GetValue|V0]#!\n\n"
+ POD_debate_debate_explanation_footer: "$POD_debate_debate_explanation_footer_description$$POD_debate_debate_explanation_footer_initial_score$"
+ POD_debate_debate_explanation_footer_description: "\n\n#R Estos debates usan una puntuación llamada Fuerza de debate. Esta puntuación se calcula al principio a partir de tu diplomacia y la de tu canciller, junto con tus rasgos, tu fama, tu piedad y tu relación con la oposición. Aumentará o disminuirá durante el propio debate según la fuerza de tus argumentos.#!"
+ POD_debate_debate_explanation_footer_initial_score: "\n#R Tu Fuerza de debate inicial es [GetPlayer.MakeScope.GetVariable('character_debate_force').GetValue|0].#!"
+ POD_debate_argument.effect.success.desc: "Tu argumento es convincente"
+ POD_debate_argument.critical.failure.effect.desc: "Tu argumento no logra convencerlos"
+
+ POD_debate_select_opponent: "Seleccionado como oponente de debate"
+ POD_debate_select_opponent_from_dynasty: "Selecciona a tus oponentes de debate de entre tu dinastía #weak ([GetPlayer.GetDynasty.GetBaseName])#!"
+ POD_debate_select_opponent_from_faith: "Selecciona a tus oponentes de debate de entre tu fe #weak ([GetPlayer.GetFaith.GetName])#!"

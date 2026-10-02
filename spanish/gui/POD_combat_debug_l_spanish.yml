@@ -1,0 +1,96 @@
+﻿l_spanish:
+
+ ##############################################################################
+ ###### POD COMBAT - DEBUG TUNING WINDOW
+ ##############################################################################
+ # Labels and tooltips for pod_combat_tuning_window.gui, the runtime balancing
+ # panel opened by pod_combat_debug_tuning_interaction (debug builds only).
+ #
+ # TRANSLATORS: this file is OPTIONAL. Nothing here is reachable in normal
+ # play - it is a developer tool for tuning combat numbers, and the text is
+ # dense jargon about internal mechanics. The player-facing combat  UI 
+ # is in POD_combat_static_l_english.yml.
+ #
+ # Each knob is a pair: _label for the row, _tt for its hover text. Checkbox
+ # rows add a _cb_tt for the box itself, and the two clearable knobs add a
+ # _clear_tt for their X button.
+ ##############################################################################
+
+ ###### Window chrome
+ pod_combat_tune_window_title: "#high;bold Ajuste de combate (depuración)#!"
+ pod_combat_tune_reset_all:    "Restablecer todo"
+ pod_combat_tune_reset_all_tt: "Elimina todos los ajustes manuales y vuelve a los valores predeterminados"
+ pod_combat_tune_footer:       "#weak * = ajuste manual (se conserva en la partida guardada). Los ajustes de PA / iniciativa / impacto / nivel se aplican desde el siguiente turno o tirada; la moral inicial, desde el siguiente combate; los límites de equipamiento, en el editor.#!"
+
+ ###### AP economy
+ pod_combat_tune_base_ap_label:             "Límite máx. de PA"
+ pod_combat_tune_base_ap_tt:                "Máximo de PA por turno (la barra completa). Se aplica desde el siguiente turno. La tira de marcas muestra 6 como máximo."
+ pod_combat_tune_ap_regen_label:            "Regen. de PA / ronda"
+ pod_combat_tune_ap_regen_tt:               "PA que se recuperan cada turno; los PA no gastados se acumulan en la ranura, hasta el límite de PA. Sin definir = se rellena la barra completa. El primer turno de un combatiente siempre empieza completo."
+ pod_combat_tune_ap_regen_clear_tt:         "Borrar: vuelve a rellenar la barra completa cada turno"
+ pod_combat_tune_ap_cap_start_label:        "Límite de PA inicial (ronda 1)"
+ pod_combat_tune_ap_cap_start_tt:           "Límite creciente: el límite de PA en la ronda 1. Solo importa mientras esté definido el aumento del límite de PA por ronda."
+ pod_combat_tune_ap_cap_increment_label:    "Límite de PA +/ronda"
+ pod_combat_tune_ap_cap_increment_tt:       "Límite creciente: el límite de PA aumenta esta cantidad cada ronda (inicial + N por ronda) hasta alcanzar el límite máx. de PA. Borrar = desactivado."
+ pod_combat_tune_ap_cap_increment_clear_tt: "Borrar: sin límite creciente"
+
+ ###### Morale
+ pod_combat_tune_starting_morale_label:    "Moral inicial"
+ pod_combat_tune_starting_morale_tt:       "Moral con la que entra en el combate cada combatiente (los anzuelos de cada personaje se suman a esto; mínimo de 1). Surte efecto en el siguiente combate."
+ pod_combat_tune_max_morale_label:         "Límite de moral (6 casillas)"
+ pod_combat_tune_max_morale_tt:            "Techo de moral para un combatiente de 6 casillas (vampiro, kuei-jin, resucitado). Cada casilla de herida por encima o por debajo de 6 desplaza en 5 el techo propio de ese combatiente, de modo que esto mueve toda la escala en lugar de fijar un único límite. Determina las curaciones y el déficit de tensión al final del combate. En directo."
+ pod_combat_tune_morale_stress_mult_label: "Moral->estrés (mult.)"
+ pod_combat_tune_morale_stress_mult_tt:    "Estrés infligido por cada punto de déficit de moral al final del combate (Tensión Mental, aplicada una sola vez al terminar el combate)."
+
+ ###### Loadout caps
+ pod_combat_tune_max_per_category_label: "Equipamiento / categoría"
+ pod_combat_tune_max_per_category_tt:    "Límite de equipamiento por categoría (ATQ / DEF / CTL / PDR). Se aplica en el editor de equipamiento; las tiras de marcas siguen mostrando 4. La ventana de combate se ensancha para dar cabida a 5 o más movimientos por fila; pasados 5, puede sobrepasar una pantalla de 1920 de ancho."
+ pod_combat_tune_max_equipped_label:     "Equipamiento total"
+ pod_combat_tune_max_equipped_tt:        "Límite total de equipamiento entre todas las categorías. Se aplica en el editor de equipamiento."
+
+ ###### Initiative
+ pod_combat_tune_init_reroll_label:           "Iniciativa: repetir cada ronda"
+ pod_combat_tune_init_reroll_tt:              "Vuelve a tirar la iniciativa de cada combatiente al comienzo de cada ronda, en lugar de conservar la tirada con la que entraron en el combate. Desactivado por defecto. Los penalizadores de iniciativa duran una ronda en ambos casos."
+ pod_combat_tune_init_reroll_cb_tt:           "Vuelve a tirar la iniciativa cada ronda en lugar de conservar la tirada con la que entró cada combatiente"
+ pod_combat_tune_init_decouple_prowess_label: "Iniciativa: desvincular destreza"
+ pod_combat_tune_init_decouple_prowess_tt:    "Usa una base fija en lugar de la destreza como punto de partida de la iniciativa de cada combatiente. La base es el ajuste de base de iniciativa que figura más abajo (20 por defecto). Las bases se tiran una sola vez por combatiente, así que esto se aplica al siguiente combate (o a un combatiente que se una a uno), salvo que esté activada la repetición en cada ronda."
+ pod_combat_tune_init_decouple_prowess_cb_tt: "Usa la base fija de iniciativa en lugar de la destreza como punto de partida de la iniciativa"
+ pod_combat_tune_init_base_label:             "Base de iniciativa"
+ pod_combat_tune_init_base_tt:                "Punto de partida fijo de la iniciativa que se usa EN LUGAR de la destreza mientras esté activada la desvinculación de destreza (se ignora en caso contrario). Las bases se tiran una sola vez por combatiente, así que esto se aplica al siguiente combate (o a un combatiente que se una a uno), salvo que esté activada la repetición en cada ronda."
+ pod_combat_tune_init_roll_max_label:         "Tirada máx. de iniciativa"
+ pod_combat_tune_init_roll_max_tt:            "Parte aleatoria de la iniciativa: una tirada de 1 a N que se suma a la base (destreza, o la base fija si está desvinculada). 1 = casi determinista (decide la base). Las bases se tiran una sola vez por combatiente, así que esto se aplica al siguiente combate (o a un combatiente que se una a uno), salvo que esté activada la repetición en cada ronda."
+ pod_combat_tune_init_celerity_bonus_label:   "Iniciativa / ventaja de velocidad"
+ pod_combat_tune_init_celerity_bonus_tt:      "Iniciativa por cada ventaja poseída en el árbol de velocidad de Celeridad (Vampiro) o Viento Negro (Kuei-jin) (0 = desactivado). Se incorpora a la base, que se tira una sola vez por combatiente, así que esto se aplica al siguiente combate (o a un combatiente que se una a uno), salvo que esté activada la repetición en cada ronda."
+
+ ###### Hit chance
+ pod_combat_tune_hit_base_label: "Base de prob. de impacto"
+ pod_combat_tune_hit_base_tt:    "Probabilidad base de impacto antes de la diferencia de destreza. Se aplica desde el siguiente recálculo de la probabilidad de impacto."
+ pod_combat_tune_hit_min_label:  "Prob. de impacto mín."
+ pod_combat_tune_hit_min_tt:     "Límite inferior de la probabilidad de impacto en directo."
+ pod_combat_tune_hit_max_label:  "Prob. de impacto máx."
+ pod_combat_tune_hit_max_tt:     "Límite superior de la probabilidad de impacto en directo (también limita el impacto adicional condicional)."
+
+ ###### Buff / debuff tiers
+ pod_combat_tune_tier_small_label:    "Magnitud de nivel pequeño"
+ pod_combat_tune_tier_small_tt:       "Magnitud de las mejoras y penalizaciones de nivel 1 (tanto de absorción como de impacto). En directo mediante los recálculos."
+ pod_combat_tune_tier_medium_label:   "Magnitud de nivel medio"
+ pod_combat_tune_tier_medium_tt:      "Magnitud de las mejoras y penalizaciones de nivel 2."
+ pod_combat_tune_tier_large_label:    "Magnitud de nivel grande"
+ pod_combat_tune_tier_large_tt:       "Magnitud de las mejoras y penalizaciones de nivel 3."
+ pod_combat_tune_stealth_bonus_label: "Bonif. de impacto por Sigilo"
+ pod_combat_tune_stealth_bonus_tt:    "Bonificación de probabilidad de impacto mientras se está oculto (se consume en el siguiente ataque). Los textos de ayuda seguirán diciendo +30 hasta que se promocione el valor."
+
+ ###### AI behaviour
+ pod_combat_tune_ai_trace_label:         "Rastreo de decisiones de la IA"
+ pod_combat_tune_ai_trace_tt:            "Registra en debug.log una línea por cada movimiento elegido por la IA y por cada turno de la IA (busca 'pod_combat_trace'). Anota lo que eligió la IA y el estado desde el que lo eligió, además de por qué terminó cada turno. Solo para depuración: mientras está activo, duplica aproximadamente el trabajo de selección por acción."
+ pod_combat_tune_ai_trace_cb_tt:         "Emite el rastreo de decisiones de la IA a debug.log (cuesta rendimiento mientras está activo)"
+ pod_combat_tune_ai_hp_finish_label:     "Umbral de remate de la IA"
+ pod_combat_tune_ai_hp_finish_tt:        "Casillas de herida vacías, igual o por debajo de las cuales la IA considera rematable a un enemigo; determina su contención a la hora de curarse en emergencia. Se aplica de inmediato. Por defecto 1."
+ pod_combat_tune_ai_band_width_label:    "Anchura de la banda superior de la IA"
+ pod_combat_tune_ai_band_width_tt:       "Cuánto por debajo del movimiento de MEJOR puntuación puede puntuar un movimiento y seguir considerándose. Más bajo = más preciso y predecible; 0 significa que la IA siempre elige su movimiento de mayor puntuación (más los empates). Súbelo por encima de ~100 y la banda deja de tener efecto. Dentro de la banda, la IA sigue eligiendo proporcionalmente según la puntuación."
+ pod_combat_tune_ai_kill_priority_label: "Casillas de prioridad de muerte de la IA"
+ pod_combat_tune_ai_kill_priority_tt:    "Casillas de herida vacías, igual o por debajo de las cuales el selector de objetivos de la IA triplica el peso de un objetivo (concentrarse en los casi muertos). Se aplica de inmediato. Por defecto 2."
+ pod_combat_tune_ai_mor_finish_label:    "Umbral de remate por moral de la IA"
+ pod_combat_tune_ai_mor_finish_tt:       "Moral del enemigo igual o inferior a la cual la IA lo considera rematable mediante daño de moral. Alimenta la marca de rematable y, a través de ella, las bonificaciones de muerte del sorteo de intención y la contención de un actor moribundo a la hora de curarse en lugar de rematar. La SELECCIÓN de objetivo corresponde a la fila de prioridad de muerte por moral de más abajo, no a esta. Se aplica de inmediato. Por defecto 2."
+ pod_combat_tune_ai_mor_kill_label:      "Prioridad de muerte por moral de la IA"
+ pod_combat_tune_ai_mor_kill_tt:         "Moral del enemigo igual o inferior a la cual el selector de objetivos de la IA triplica el peso de ese objetivo, para un actor que realmente pueda infligir daño de moral. Es el gemelo de moral de las casillas de prioridad de muerte. Mantenlo igual o por encima del umbral de remate por moral, o la IA se centrará en enemigos que no puede rematar. Se aplica de inmediato. Por defecto 3."
